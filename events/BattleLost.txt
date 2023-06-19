@@ -1,0 +1,3220 @@
+#Battle of the Bzura
+province_event = {
+	id = 6100
+	title = "Did you know?"
+	desc = "EVTDESC700"
+	picture = "Bzura"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1982
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Kobryn
+province_event = {
+	id = 6101
+	title = "Did you know?"
+	desc = "EVTDESC701"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2044
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Tomaszow Lubelski
+province_event = {
+	id = 6102
+	title = "Did you know?"
+	desc = "EVTDESC702"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2332
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Kock
+province_event = {
+	id = 6103
+	title = "Did you know?"
+	desc = "EVTDESC703"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2158
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Stalingrad
+province_event = {
+	id = 6104
+	title = "Did you know?"
+	desc = "EVTDESC704"
+	picture = "Stalingrad"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2857
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Bialystok–Minsk
+province_event = {
+	id = 6105
+	title = "Did you know?"
+	desc = "EVTDESC705"
+	picture = "Bialystok_Minsk"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id =  1694
+			province_id = 1810
+			}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Raseiniai
+province_event = {
+	id = 6106
+	title = "Did you know?"
+	desc = "EVTDESC706"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1397
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Dubna
+province_event = {
+	id = 6107
+	title = "Did you know?"
+	desc = "EVTDESC707"
+	subtitle = "EVTSUB700"
+	picture = "airdrop"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1274
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Kursk
+province_event = {
+	id = 6108
+	title = "Did you know?"
+	desc = "EVTDESC708"
+	picture = "Kursk"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2113
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Smolensk
+province_event = {
+	id = 6109
+	title = "Did you know?"
+	desc = "EVTDESC709"
+	subtitle = "EVTSUB700"
+	picture = "resupply"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1494
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Uman
+province_event = {
+	id = 6110
+	title = "Did you know?"
+	desc = "EVTDESC710"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2837
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Moskva
+province_event = {
+	id = 6111
+	title = "Did you know?"
+	desc = "EVTDESC711"
+	picture = "moscow_offensive"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1409
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Murmansk
+province_event = {
+	id = 6112
+	title = "Did you know?"
+	desc = "EVTDESC712"
+	picture = "silverfox"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 46
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Brest-Litovsk
+province_event = {
+	id = 6113
+	title = "Did you know?"
+	desc = "EVTDESC713"
+	picture = "BrestFortress"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1986
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Mlawa
+province_event = {
+	id = 6114
+	title = "Did you know?"
+	desc = "EVTDESC714"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1868
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Warszawa
+province_event = {
+	id = 6115
+	title = "Did you know?"
+	desc = "EVTDESC715"
+	picture = "Warsaw"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1928
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Den Haag
+province_event = {
+	id = 6116
+	title = "Did you know?"
+	desc = "EVTDESC716"
+	picture = "bombing_eastern"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2022
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#The Rotterdam Blitz
+province_event = {
+	id = 6117
+	title = "Did you know?"
+	desc = "EVTDESC717"
+	picture = "rotterdam"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2081
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#The Battle for Caen
+province_event = {
+	id = 6118
+	title = "Did you know?"
+	desc = "EVTDESC718"
+	picture = "Caen"
+	subtitle = "EVTSUB700"
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2482
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Carentan
+province_event = {
+	id = 6119
+	title = "Did you know?"
+	desc = "EVTDESC719"
+	picture = "Carentan"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2481
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Cherbourg
+province_event = {
+	id = 6120
+	title = "Did you know?"
+	desc = "EVTDESC720"
+	picture = "Cherbourg"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2422
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Dodacanese
+province_event = {
+	id = 6121
+	title = "Did you know?"
+	desc = "EVTDESC721"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	subtitle = "EVTSUB700"
+	
+	trigger = {
+		province_id = 10731
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Groningen
+province_event = {
+	id = 6122
+	title = "Did you know?"
+	desc = "EVTDESC722"
+	picture = "groningen"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1673
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of San Marino
+province_event = {
+	id = 6123
+	title = "Did you know?"
+	desc = "EVTDESC723"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4109
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Maastricht
+province_event = {
+	id = 6124
+	title = "Did you know?"
+	desc = "EVTDESC724"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2140
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Arnhem
+province_event = {
+	id = 6125
+	title = "Did you know?"
+	desc = "EVTDESC725"
+	picture = "Arnhem"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2025
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Metz
+province_event = {
+	id = 6126
+	title = "Did you know?"
+	desc = "EVTDESC726"
+	picture = "Metz"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2618
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Monte Castello
+province_event = {
+	id = 6127
+	title = "Did you know?"
+	desc = "EVTDESC727"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3828
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Rovaniemi
+province_event = {
+	id = 6128
+	title = "Did you know?"
+	desc = "EVTDESC728"
+	picture = "Rovaniemi"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 161
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Lille
+province_event = {
+	id = 6129
+	title = "Did you know?"
+	desc = "EVTDESC729"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2309
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Ulm
+province_event = {
+	id = 6130
+	title = "Did you know?"
+	desc = "EVTDESC730"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2884
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Aachen
+province_event = {
+	id = 6131
+	title = "Did you know?"
+	desc = "EVTDESC731"
+	subtitle = "EVTSUB700"
+	picture = "aachen"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2256
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Monte Cassino
+province_event = {
+	id = 6132
+	title = "Did you know?"
+	desc = "EVTDESC732"
+	picture = "MonteCassino"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4660
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Nancy
+province_event = {
+	id = 6133
+	title = "Did you know?"
+	desc = "EVTDESC733"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2683
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Bastogne
+province_event = {
+	id = 6134
+	title = "Did you know?"
+	desc = "EVTDESC734"
+	subtitle = "EVTSUB700"
+	picture = "Bastogne"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2370
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Debrecen
+province_event = {
+	id = 6135
+	title = "Did you know?"
+	desc = "EVTDESC735"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3300
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#First Battle of El Alamain
+province_event = {
+	id = 6136
+	title = "Did you know?"
+	desc = "EVTDESC736"
+	picture = "ElAlamein1"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5609
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Second Battle of El Alamain
+province_event = {
+	id = 6137
+	title = "Did you know?"
+	desc = "EVTDESC737"
+	picture = "Elalamein2"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5609
+		has_province_flag = first_alamain
+		NOT = {
+			ENG = {
+				controls = 5609
+			}
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Malaya
+province_event = {
+	id = 6138
+	title = "Did you know?"
+	desc = "EVTDESC738"
+	picture = "Malaya"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6378
+		ENG = {
+			controls = 6378 #Kuala Lampur, Malay does not exist in HoI3
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Luzon
+province_event = {
+	id = 6139
+	title = "Did you know?"
+	desc = "EVTDESC739"
+	picture = "Luzon"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6101
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Guadalcanal
+province_event = {
+	id = 6140
+	title = "Did you know?"
+	desc = "EVTDESC740"
+	picture = "Guadalcanal"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6545
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Saipan
+province_event = {
+	id = 6141
+	title = "Did you know?"
+	desc = "EVTDESC741"
+	picture = "Saipan"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5966
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Bryanskaja
+province_event = {
+	id = 6142
+	title = "Did you know?"
+	desc = "EVTDESC742"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1819
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#First Battle of Kharkov
+province_event = {
+	id = 6143
+	title = "Did you know?"
+	desc = "EVTDESC743"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2401
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+}
+
+#Second Battle of Kharkov
+province_event = {
+	id = 6144
+	title = "Did you know?"
+	desc = "EVTDESC744"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2401
+		has_province_flag = kharkov_first
+		NOT = {
+			SOV = {
+				controls = 2401
+			}
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+		
+	}
+}
+
+#Third Battle of Kharkov
+province_event = {
+	id = 6145
+	title = "Did you know?"
+	desc = "EVTDESC745"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2401
+		has_province_flag = second_kharkov
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+}
+
+#Battle of Odessa
+province_event = {
+	id = 6146
+	title = "Did you know?"
+	desc = "EVTDESC746"
+	picture = "odessa"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3309
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Bautzen
+province_event = {
+	id = 6147
+	title = "Did you know?"
+	desc = "EVTDESC747"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2265
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Orsha
+province_event = {
+	id = 6148
+	title = "Did you know?"
+	desc = "EVTDESC748"
+	picture = "bulge"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1535
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Belgorod
+province_event = {
+	id = 6149
+	title = "Did you know?"
+	desc = "EVTDESC749"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2286
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Halbe
+province_event = {
+	id = 6150
+	title = "Did you know?"
+	desc = "EVTDESC750"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2031 #Halberstadt
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Narva
+province_event = {
+	id = 6151
+	title = "Did you know?"
+	desc = "EVTDESC751"
+	picture = "eastern5"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 820
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Hanko
+province_event = {
+	id = 6152
+	title = "Did you know?"
+	desc = "EVTDESC752"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 779
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Ilomantsi
+province_event = {
+	id = 6153
+	title = "Did you know?"
+	desc = "EVTDESC753"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 403
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Ancona
+province_event = {
+	id = 6154
+	title = "Did you know?"
+	desc = "EVTDESC754"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4170
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Bologna
+province_event = {
+	id = 6155
+	title = "Did you know?"
+	desc = "EVTDESC755"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3903
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Ortona
+province_event = {
+	id = 6156
+	title = "Did you know?"
+	desc = "EVTDESC756"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4490
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Rimini
+province_event = {
+	id = 6157
+	title = "Did you know?"
+	desc = "EVTDESC757"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4043
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Breslau
+province_event = {
+	id = 6158
+	title = "Did you know?"
+	desc = "EVTDESC758"
+	picture = "Breslau"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2268
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Borodino
+province_event = {
+	id = 6159
+	title = "Did you know?"
+	desc = "EVTDESC759"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 8245
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Budapest
+province_event = {
+	id = 6160
+	title = "Did you know?"
+	desc = "EVTDESC760"
+	picture = "budapest2"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3231
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Kerch
+province_event = {
+	id = 6161
+	title = "Did you know?"
+	desc = "EVTDESC761"
+	picture = "Kerch_Peninsula"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3449
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Kolberg
+province_event = {
+	id = 6162
+	title = "Did you know?"
+	desc = "EVTDESC762"
+	picture = "Kolberg"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1683
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Sevastopol
+province_event = {
+	id = 6163
+	title = "Did you know?"
+	desc = "EVTDESC763"
+	picture = "Sevastopol"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 3581
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle for Velikie Luki
+province_event = {
+	id = 6164
+	title = "Did you know?"
+	desc = "EVTDESC764"
+	picture = "moscow_offensive"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1314
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Voronez
+province_event = {
+	id = 6165
+	title = "Did you know?"
+	desc = "EVTDESC765"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2117
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Calais
+province_event = {
+	id = 6166
+	title = "Did you know?"
+	desc = "EVTDESC766"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2194
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Gazala
+province_event = {
+	id = 6167
+	title = "Did you know?"
+	desc = "EVTDESC767"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		controller = {
+			faction = axis
+		}
+		province_id = 5511
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Kassel
+province_event = {
+	id = 6168
+	title = "Did you know?"
+	desc = "EVTDESC768"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2260
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"	}
+   
+}
+
+#Battle of Tornio
+province_event = {
+	id = 6169
+	title = "Did you know?"
+	desc = "EVTDESC769"
+	picture = "Tornio"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 179
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Malta
+province_event = {
+	id = 6170
+	title = "Did you know?"
+	desc = "EVTDESC770"
+	picture = "Malta"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5359
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Grudziadz
+province_event = {
+	id = 6171
+	title = "Did you know?"
+	desc = "EVTDESC771"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1746
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Jaroslaw
+province_event = {
+	id = 6172
+	title = "Did you know?"
+	desc = "EVTDESC772"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2447
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Kaluszyn
+province_event = {
+	id = 6173
+	title = "Did you know?"
+	desc = "EVTDESC773"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1984
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Lodz
+province_event = {
+	id = 6174
+	title = "Did you know?"
+	desc = "EVTDESC774"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2040
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Lwow
+province_event = {
+	id = 6175
+	title = "Did you know?"
+	desc = "EVTDESC775"
+	picture = "lviv"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2509
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Radom
+province_event = {
+	id = 6176
+	title = "Did you know?"
+	desc = "EVTDESC776"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 2157
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Hong Kong
+province_event = {
+	id = 6177
+	title = "Did you know?"
+	desc = "EVTDESC777"
+	picture = "hongkong"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5868
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Ambon
+province_event = {
+	id = 6178
+	title = "Did you know?"
+	desc = "EVTDESC778"
+	picture = "okinawa_airbattle"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 7780
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Balikpapan
+province_event = {
+	id = 6179
+	title = "Did you know?"
+	desc = "EVTDESC779"
+	picture = "Balikpapan"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6434
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Beirut
+province_event = {
+	id = 6180
+	title = "Did you know?"
+	desc = "EVTDESC780"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5299
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Kranj
+province_event = {
+	id = 6181
+	title = "Did you know?"
+	desc = "EVTDESC781"
+	picture = "Kranji"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6394
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Wau
+province_event = {
+	id = 6182
+	title = "Did you know?"
+	desc = "EVTDESC782"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6526
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Singapore
+province_event = {
+	id = 6183
+	title = "Did you know?"
+	desc = "EVTDESC783"
+	picture = "Singapore"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6394
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Tarakan
+province_event = {
+	id = 6184
+	title = "Did you know?"
+	desc = "EVTDESC784"
+	picture = "Tarakan"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6380
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle in Berlin
+province_event = {
+	id = 6185
+	title = "Did you know?"
+	desc = "EVTDESC785"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1861
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Pegu
+province_event = {
+	id = 6186
+	title = "Did you know?"
+	desc = "EVTDESC786"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6055
+		war_with = JAP
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Tampere
+province_event = {
+	id = 6187
+	title = "Did you know?"
+	desc = "EVTDESC787"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 537
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Wilno
+province_event = {
+	id = 6188
+	title = "Did you know?"
+	desc = "EVTDESC788"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1579
+		OR = {
+			POL = {
+				controls = 1579
+			}
+			SOV = {
+				controls = 1532
+			}
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Palmyra
+province_event = {
+	id = 6189
+	title = "Did you know?"
+	desc = "EVTDESC789"
+	picture = "aus_lebanon"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 7397
+		OR = {
+			FRA = {
+				controls = 7397
+			}
+			VIC = {
+				controls = 7397
+			}
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Leningrad
+province_event = {
+	id = 6190
+	title = "Did you know?"
+	desc = "EVTDESC790"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 782
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Iwo Jima
+province_event = {
+	id = 6191
+	title = "Did you know?"
+	desc = "EVTDESC791"
+	picture = "Iwo_Jima"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10642
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Dakar
+province_event = {
+	id = 6192
+	title = "Did you know?"
+	desc = "EVTDESC792"
+	picture = "french_africa"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 9741
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#Battle of Nanchang
+province_event = {
+	id = 6193
+	title = "Did you know?"
+	desc = "EVTDESC793"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5681
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#First Battle of Guam
+province_event = {
+	id = 6194
+	title = "Did you know?"
+	desc = "EVTDESC794"
+	picture = "Guam1"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6119
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+		NOT = {
+			has_province_flag = guam_first
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+}
+
+#Second Battle of Guam
+province_event = {
+	id = 6195
+	title = "Did you know?"
+	desc = "EVTDESC795"
+	picture = "Guam2"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6119
+		has_province_flag = guam_first
+		JAP = {
+			controls = 6119
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+	
+}
+
+#Battle of Rabaul
+province_event = {
+	id = 6196
+	title = "Did you know?"
+	desc = "EVTDESC796"
+	picture = "landing"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6467
+		war_with = JAP
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+   
+}
+
+#First Battle of Changsha
+province_event = {
+	id = 6197
+	title = "Did you know?"
+	desc = "EVTDESC797"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5777
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+}
+
+#Second Battle of Changsha
+province_event = {
+	id = 6198
+	title = "Did you know?"
+	desc = "EVTDESC798"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5777
+		has_province_flag = changsha_first
+		JAP = {
+			controls = 5777
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+}
+
+#Third Battle of Changsha
+province_event = {
+	id = 6199
+	title = "Did you know?"
+	desc = "EVTDESC799"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5777
+		has_province_flag = changsha_second
+		NOT = {
+			CGX = {
+				controls = 5777
+			}
+			JAP = {
+				controls = 5777
+			}
+		}
+		OR = {
+			last_battle_winner_losses = 1000
+			last_battle_loser_losses = 1000
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA700"
+	}
+}
+
+
+# Generic battle events
+# IDs starting from 6635
+
+# Huge losses
+province_event = {
+	id = 6635
+	title = "Lost battle"
+	desc = "We have lost a lot of men in this battle, leaving widows and orphans behind them. We can't afford to have too many such battles!"
+	picture = "huge_losses"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		last_battle_loser_losses = 1000
+		not = { last_battle_loser_losses = 5000 }
+		not = { last_battle_winner_losses = 1000 }
+		not = { manpower = 500 }
+	}
+	
+	option = {
+		name = "That's horrible!"
+		war_exhaustion = 0.05
+	}
+}
+province_event = {
+	id = 6636
+	title = "High losses"
+	desc = "We have lost a lot of men in this battle, leaving widows and orphans behind them. We can't afford to have too many such battles!"
+	picture = "huge_losses"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		last_battle_loser_losses = 5000
+		not = { last_battle_loser_losses = 10000 }
+		not = { last_battle_winner_losses = 5000 }
+		not = { manpower = 1000 }
+	}
+	
+	option = {
+		name = "That's horrible!"
+		war_exhaustion = 0.25
+	}
+}
+province_event = {
+	id = 6637
+	title = "Huge losses"
+	desc = "We have lost a lot of men in this battle, leaving widows and orphans behind them. We can't afford to have too many such battles!"
+	picture = "huge_losses"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		last_battle_loser_losses = 10000
+		not = { last_battle_loser_losses = 25000 }
+		not = { last_battle_winner_losses = 10000 }
+		not = { manpower = 2000 }
+	}
+	
+	option = {
+		name = "That's horrible!"
+		war_exhaustion = 0.5
+	}
+}
+province_event = {
+	id = 6638
+	title = "Immense losses"
+	desc = "We have lost a lot of men in this battle, leaving widows and orphans behind them. We can't afford to have too many such battles!"
+	picture = "huge_losses"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		last_battle_loser_losses = 25000
+		not = { last_battle_loser_losses = 50000 }
+		not = { last_battle_winner_losses = 25000 }
+		not = { manpower = 5000 }
+	}
+	
+	option = {
+		name = "That's horrible!"
+		war_exhaustion = 1.00
+	}
+}
+province_event = {
+	id = 6639
+	title = "A true massacre"
+	desc = "We have lost thousands of men in this battle! We really can't afford to suffer such high casualties!"
+	picture = "huge_losses"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		last_battle_loser_losses = 50000
+		not = { last_battle_winner_losses = 50000 }
+		not = { manpower = 10000 }
+	}
+	
+	option = {
+		name = "That's horrible!"
+		war_exhaustion = 2.00
+	}
+}
+
+# Capital cities lost
+# Berlin
+province_event = {
+	id = 6640
+	title = "Berlin lost"
+	desc = "Despite the valiant efforts of our soldiers, Berlin was lost."
+	picture = "berlin"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 1861
+		1861 = { owned_by = THIS }
+		or = {
+			tag = GER
+			tag = DDR
+			tag = DFR
+		}
+		not = { has_global_flag = "fall_of_berlin" }
+		last_battle_loser_losses = 5000
+	}
+
+	option = {
+		name = "Our soldiers fought bravely!"
+		war_exhaustion = -1.00
+		national_unity = 10
+	}
+}
+country_event = {
+	id = 6641
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "Berlin lost"
+	desc = "Berlin is lost. Germany is soon to follow."
+	picture = "fire"
+	
+	option = {
+		name = "Oh no!..."
+		national_unity = -30
+		war_exhaustion = 2.00
+	}
+}
+# Paris
+province_event = {
+	id = 6642
+	title = "Paris lost"
+	desc = "Despite the valiant efforts of our soldiers, Paris was lost."
+	picture = "paris"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 2613
+		2613 = { owned_by = THIS }
+		tag = FRA
+		not = { has_global_flag = "fall_of_berlin" }
+		last_battle_loser_losses = 5000
+	}
+
+	option = {
+		name = "Our soldiers fought bravely!"
+		war_exhaustion = -1.00
+		national_unity = 5
+	}
+}
+country_event = {
+	id = 6643
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The fall of Paris"
+	desc = "When Paris fell to foreign hands, most of France (along with some in the other nations of their faction) were already convinced that the war was lost, and the enemy is undefeatable."
+	picture = "bitter_peace"
+
+	option = {
+		name = "Oh no..."
+		set_global_flag = "fall_of_paris"
+		national_unity = -15
+		war_exhaustion = 2.00
+	}
+}
+# Oslo
+province_event = {
+	id = 6644
+	title = "Oslo lost"
+	desc = "Despite the valiant efforts of our soldiers, Oslo was lost."
+	picture = "oslo"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 812
+		812 = { owned_by = THIS }
+		tag = NOR
+		not = { has_global_flag = "fall_of_oslo" }
+		last_battle_loser_losses = 5000
+	}
+
+	option = {
+		name = "Our soldiers fought bravely!"
+		war_exhaustion = -1.00
+		national_unity = 10
+	}
+}
+country_event = {
+	id = 6645
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The fall of Oslo"
+	desc = "When Oslo fell to foreign hands, most of Norway (along with some in the other nations of their faction) were ready to surrender."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "Oh no!..."
+		national_unity = -10
+		war_exhaustion = 2.00
+	}
+}
+# London
+province_event = {
+	id = 6646
+	title = "London lost"
+	desc = "Despite the valiant efforts of our soldiers, London was lost."
+	picture = "london"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 1964
+		1964 = { owned_by = THIS }
+		tag = ENG
+		not = { has_global_flag = "fall_of_london" }
+		last_battle_loser_losses = 5000
+	}
+
+	option = {
+		name = "Our soldiers fought bravely!"
+		war_exhaustion = -1.00
+		national_unity = 10
+	}
+}
+country_event = {
+	id = 6647
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The fall of London"
+	desc = "When London fell to foreign hands, the British Empire has all but collapsed."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "Oh no!..."
+		national_unity = -20
+		war_exhaustion = 2.00
+	}
+}
+# Moscow
+province_event = {
+	id = 6648
+	title = "Moscow lost"
+	desc = "Despite the valiant efforts of our soldiers, Moscow was lost."
+	picture = "moscow"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 1409
+		1409 = { owned_by = THIS }
+		tag = SOV
+		not = { has_global_flag = "fall_of_moscow" }
+		last_battle_loser_losses = 5000
+	}
+
+	option = {
+		name = "Our soldiers fought bravely!"
+		war_exhaustion = -1.00
+		national_unity = 10
+	}
+}
+country_event = {
+	id = 6649
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The fall of Moscow"
+	desc = "When Moscow fell to foreign hands, the Soviet Union is on the verge of collapse."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "Oh no!..."
+		national_unity = -20
+		war_exhaustion = 2.00
+	}
+}
+# Tokyo
+province_event = {
+	id = 6650
+	title = "Tokyo lost"
+	desc = "Despite the valiant efforts of our soldiers, Tokyo was lost."
+	picture = "tokyo"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 5315
+		5315 = { owned_by = THIS }
+		tag = JAP
+		not = { has_global_flag = "fall_of_tokyo" }
+		last_battle_loser_losses = 5000
+	}
+
+	option = {
+		name = "Our soldiers fought bravely!"
+		war_exhaustion = -1.00
+		national_unity = 10
+	}
+}
+country_event = {
+	id = 6651
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The fall of Tokyo"
+	desc = "After Tokyo and the Imperial Palace fell to foreign hands, the Empire of Japan was sure to follow."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "Oh no!..."
+		national_unity = -20
+		war_exhaustion = 2.00
+	}
+}
+# Rome
+province_event = {
+	id = 6652
+	title = "Rome lost"
+	desc = "Despite the valiant efforts of our soldiers, Rome was lost."
+	picture = "rome"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 4549
+		4549 = { owned_by = THIS }
+		tag = ITA
+		not = { has_global_flag = "fall_of_rome" }
+		last_battle_loser_losses = 5000
+	}
+
+	option = {
+		name = "Our soldiers fought bravely!"
+		war_exhaustion = -1.00
+		national_unity = 10
+	}
+}
+country_event = {
+	id = 6653
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The fall of Rome"
+	desc = "With Rome fallen to foreign hands, the days of the Kingdom of Italy were numbered."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "Oh no!..."
+		national_unity = -20
+		war_exhaustion = 2.00
+	}
+}
+# Washington D.C.
+province_event = {
+	id = 6654
+	title = "Washington lost"
+	desc = "Despite the valiant efforts of our soldiers, Washington was lost."
+	picture = "rome"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 4530
+		4530 = { owned_by = THIS }
+		tag = USA
+		not = { has_global_flag = "fall_of_washington" }
+		last_battle_loser_losses = 5000
+	}
+
+	option = {
+		name = "Our soldiers fought bravely!"
+		war_exhaustion = -1.00
+		national_unity = 10
+	}
+}
+country_event = {
+	id = 6655
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The fall of Washington"
+	desc = "With Washington fallen to foreign hands, the United States was soon to crumble to dust, bringing the American Dream with it."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "Oh no!..."
+		national_unity = -20
+		war_exhaustion = 2.00
+	}
+}
+# Major cities lost
+# Leningrad
+province_event = {
+	id = 6660
+	title = "Leningrad lost"
+	desc = "Despite the valiant efforts of our soldiers, Leningrad was lost."
+	picture = "leningrad"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 782
+		782 = { owned_by = THIS }
+		tag = SOV
+		not = { has_global_flag = "fall_of_leningrad" }
+		last_battle_loser_losses = 3000
+	}
+
+	option = {
+		name = "Our soldiers fought bravely!"
+		war_exhaustion = -0.50
+	}
+}
+country_event = {
+	id = 6661
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The fall of Leningrad"
+	desc = "Leningrad, the former capital of the Russian Empire has fallen to enemy hands."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "Oh no!..."
+		war_exhaustion = 1.00
+	}
+}
+# Leningrad
+province_event = {
+	id = 6662
+	title = "Stalingrad lost"
+	desc = "Despite the valiant efforts of our soldiers, Stalingrad was lost."
+	picture = "stalingrad"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 2857
+		2857 = { owned_by = THIS }
+		tag = SOV
+		not = { has_global_flag = "fall_of_stalingrad" }
+		last_battle_loser_losses = 3000
+	}
+
+	option = {
+		name = "Our soldiers fought bravely!"
+		war_exhaustion = -0.50
+	}
+}
+country_event = {
+	id = 6663
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The fall of Stalingrad"
+	desc = "Stalingrad, bearing the name of our Great Leader has fallen to enemy hands."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "Oh no!..."
+		war_exhaustion = 1.00
+	}
+}
+# Port Said
+province_event = {
+	id = 6664
+	title = "Port Said lost"
+	desc = "Despite the valiant efforts of our soldiers, Port Said was lost."
+	picture = "port_said"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 5563
+		5563 = { owned_by = THIS }
+		tag = ENG
+		not = { has_global_flag = "fall_of_port_said" }
+		last_battle_loser_losses = 3000
+	}
+
+	option = {
+		name = "Our soldiers fought bravely!"
+		war_exhaustion = -0.50
+	}
+}
+country_event = {
+	id = 6665
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The fall of Port Said"
+	desc = "Port Said, and with it, the control of the Suez Canal has fallen to enemy hands."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "Oh no!..."
+		war_exhaustion = 1.00
+	}
+}
+# Gibraltar
+province_event = {
+	id = 6666
+	title = "Gibraltar lost"
+	desc = "Despite the valiant efforts of our soldiers, Gibraltar was lost."
+	picture = "gibraltar"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 5191
+		5191 = { owned_by = THIS }
+		tag = ENG
+		not = { has_global_flag = "fall_of_gibraltar" }
+		last_battle_loser_losses = 3000
+	}
+
+	option = {
+		name = "Our soldiers fought bravely!"
+		war_exhaustion = -0.50
+	}
+}
+country_event = {
+	id = 6667
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The fall of Gibraltar"
+	desc = "Gibraltar, and with it, the entrence to the Mediterranean has fallen to enemy hands."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "Oh no!..."
+		war_exhaustion = 1.00
+	}
+}
+# Singapore
+province_event = {
+	id = 6668
+	title = "Singapore lost"
+	desc = "Despite the valiant efforts of our soldiers, Singapore was lost."
+	picture = "singapore"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 6394
+		6394 = { owned_by = THIS }
+		tag = ENG
+		not = { has_global_flag = "fall_of_singapore" }
+		last_battle_loser_losses = 3000
+	}
+
+	option = {
+		name = "Our soldiers fought bravely!"
+		war_exhaustion = -0.50
+	}
+}
+country_event = {
+	id = 6669
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The fall of Singapore"
+	desc = "Singapore, Crown Jewel of the British Empire has fallen to enemy hands."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "Oh no!..."
+		war_exhaustion = 1.00
+	}
+}
+# Hong Kong
+province_event = {
+	id = 6670
+	title = "Hong Kong lost"
+	desc = "Despite the valiant efforts of our soldiers, Hong Kong was lost."
+	picture = "hong_kong"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 5868
+		5868 = { owned_by = THIS }
+		tag = ENG
+		not = { has_global_flag = "fall_of_hong_kong" }
+		last_battle_loser_losses = 3000
+	}
+
+	option = {
+		name = "Our soldiers fought bravely!"
+		war_exhaustion = -0.50
+	}
+}
+country_event = {
+	id = 6671
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The fall of Hong Kong"
+	desc = "Hong Kong, our most important Asian port has fallen to enemy hands."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "Oh no!..."
+		war_exhaustion = 1.00
+	}
+}
+# Vladivostok
+province_event = {
+	id = 6672
+	title = "Vladivostok lost"
+	desc = "Despite the valiant efforts of our soldiers, Vladivostok was lost."
+	picture = "vladivostok"
+	subtitle = "EVTSUB700"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		province_id = 4390
+		4390 = { owned_by = THIS }
+		tag = SOV
+		not = { has_global_flag = "fall_of_vladivostok" }
+		last_battle_loser_losses = 3000
+	}
+
+	option = {
+		name = "Our soldiers fought bravely!"
+		war_exhaustion = -0.50
+	}
+}
+country_event = {
+	id = 6673
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The fall of Vladivostok"
+	desc = "Vladivostok, our most important Asian port has fallen to enemy hands."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "Oh no!..."
+		war_exhaustion = 1.00
+	}
+}

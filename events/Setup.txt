@@ -1,0 +1,671 @@
+country_event = {
+
+	id = 1
+	
+	is_triggered_only = yes
+
+	title = "Setup"
+	desc = "This is a setup event, to set some values that can't be properly modified otherwise."
+	picture = "furios_hitler"
+
+	option = {
+		name = "Let's get this started!"
+		set_global_flag = "setup"
+		
+		USA = { country_event = 1050 }
+		
+		JAP = { set_variable = { which = "jap_army_navy_struggle" value = 5 } }	# The Japanese Army-Navy power struggle starts from a neutral position
+		
+		# Impassable Terrain
+		any_country = {
+			any_owned = {
+				limit = { not = { infra = 2 } }
+				add_province_modifier = {
+					name = "impassable_terrain"
+					duration = -1
+				}
+			}
+		}
+		any_owned = {
+			limit = { not = { infra = 2 } }
+			add_province_modifier = {
+				name = "impassable_terrain"
+				duration = -1
+			}
+		}
+		# Abysmal Infrastructure
+		any_country = {
+			any_owned = {
+				limit = { not = { infra = 3 } }
+				limit = { infra = 2 }
+				add_province_modifier = {
+					name = "infra_level_2"
+					duration = -1
+				}
+			}
+		}
+		# Poor Infrastructure
+		any_country = {
+			any_owned = {
+				limit = { not = { infra = 4 } }
+				limit = { infra = 3 }
+				add_province_modifier = {
+					name = "infra_level_3"
+					duration = -1
+				}
+			}
+		}
+		# Bad Infrastructure
+		any_country = {
+			any_owned = {
+				limit = { not = { infra = 5 } }
+				limit = { infra = 4 }
+				add_province_modifier = {
+					name = "infra_level_4"
+					duration = -1
+				}
+			}
+		}
+		
+		any_country = {
+			limit = { forward_air_control = 1 }
+			set_country_flag = "forward_air_control"
+		}
+		
+		any_country = {
+			limit = { battlefield_interdiction = 1 }
+			set_country_flag = "battlefield_interdiction"
+		}
+		
+		any_country = {
+			limit = { fighter_targerting_focus = 1 }
+			set_country_flag = "fighter_targerting_focus"
+		}
+		
+		any_country = {
+			limit = { bomber_targerting_focus = 1 }
+			set_country_flag = "bomber_targerting_focus"
+		}
+		
+		any_country = {
+			limit = {
+				or = {
+					conscription_law = two_year_draft
+					conscription_law = three_year_draft
+				}
+			}
+			set_country_flag = "drafted_army"
+		}
+		
+		any_country = {
+			limit = {
+				or = {
+					conscription_law = one_year_draft
+					conscription_law = volunteer_army
+				}
+			}
+			set_country_flag = "standing_army"
+		}
+		
+		any_country = { limit = { agriculture = 1 } set_country_flag = "agriculture_1" }
+		any_country = { limit = { agriculture = 2 } set_country_flag = "agriculture_2" }
+		any_country = { limit = { agriculture = 3 } set_country_flag = "agriculture_3" }
+		any_country = { limit = { agriculture = 4 } set_country_flag = "agriculture_4" }
+		any_country = { limit = { agriculture = 5 } set_country_flag = "agriculture_5" }
+		any_country = { limit = { agriculture = 6 } set_country_flag = "agriculture_6" }
+		
+		any_country = {
+			limit = {
+				or = {
+					government = constitutional_monarchy
+					government = social_conservatism
+					government = social_democracy
+					government = election
+					government = soc_dem_election
+					government = soc_cons_election
+					government = cons_mon_election
+				}
+			}
+			set_country_flag = "holds_elections"
+		}
+		
+		# Global manpower-buff
+		
+		any_country = {
+			add_country_modifier = {
+				name = "global_manpower_buff"
+				duration = -1
+			}
+		}
+
+		# Nation-specific values
+
+		# Chinese manpower
+		
+		CHI = {		# Starts too low.
+			manpower = 1000
+		}
+		CXB = {		# Starts too low.
+			manpower = 200
+		}
+		CHC = {		# That's a lot, but represents the amount of support the Commies had throughout China.
+			manpower = 500
+		}
+		CGX = {		# They start with 400 manpower.
+			manpower = -200
+		}
+		
+		
+		# The following nations shouldn't build too much military, so they won't have much manpower.
+		IND = {		# They start with 876 manpower. That's a bit too much.
+			manpower = -700
+		}
+		ENG = {		# The UK will get some of that manpower.
+			manpower = 350
+		}
+		EGY = {		# They start with 110 manpower.
+			manpower = -100
+		}
+		IDC = {		# They start with 110 manpower.
+			manpower = -80
+		}
+		FRA = {		# France will get some of that manpower.
+			manpower = 50
+		}
+
+		# Set the treaty flags to bypass how the game engine acts
+		# when a nation has units that have been deactivated via
+		# at the start
+		ENG = { set_country_flag = "washington_treaty" }
+		ENG = { set_country_flag = "london_treaty" }
+		FRA = { set_country_flag = "washington_treaty" }
+		FRA = { set_country_flag = "london_treaty" }
+		USA = { set_country_flag = "washington_treaty" }
+		USA = { set_country_flag = "london_treaty" }
+		ITA = { set_country_flag = "washington_treaty" }
+		ITA = { set_country_flag = "london_treaty" }
+		JAP = { set_country_flag = "washington_treaty" }
+		JAP = { set_country_flag = "london_treaty" }
+		
+		# Give 10% chance for Germany to go for the Soviets first!
+		random_list = {
+			10 = { set_global_flag = "SovietsFirst" }
+			90 = { clr_global_flag = "SovietsFirst" }
+		}
+	}
+}
+
+country_event = {
+
+	id = 3
+	
+	is_triggered_only = yes
+	
+	title = "War with our friends"
+	desc = "stop_silly_wars_event_desc"
+	picture = "law"
+	
+	option = {
+		name = "Stop this madness!"
+		ai_chance = { factor = 100 }
+		end_war = FROM
+	}
+	
+	option = {
+		name = "No, it was intentional!"
+		ai_chance = { factor = 0 }
+		set_country_flag = "untrustworthy"
+	}
+
+}
+
+country_event = {
+
+	id = 20
+	
+	is_triggered_only = yes
+	
+	title = "The end of the game"
+	desc = "You have reached the end-date. You can continue playing, but some functions will stop working."
+	picture = "law"
+	
+	option = {
+		name = "OK"
+	}
+}
+
+country_event = {
+
+	id = 50
+	
+	trigger = {
+		tag = GOD
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		modifier = { factor = 100 has_country_modifier = "maintenance_cooldown" }
+	}
+	
+	#major = yes
+	
+	title = "Maintenance"
+	desc = "This event is used for maintenance tasks, like checking if a faction no longer exists."
+	picture = ""
+	
+	option = {
+		name = "Then let's do it!"
+		add_country_modifier = {
+			name = "maintenance_cooldown"
+			duration = 7
+		}
+		set_global_flag = "allies_extinct"
+		set_global_flag = "axis_extinct"
+		set_global_flag = "comintern_extinct"
+		any_country = {
+			limit = { faction = allies or = { tag = USA tag = ENG tag = FRA tag = SOV tag = GER tag = JAP tag = ITA total_ic = 75 } }
+			clr_global_flag = "allies_extinct"
+		}
+		any_country = {
+			limit = { faction = axis or = { tag = USA tag = ENG tag = FRA tag = SOV tag = GER tag = JAP tag = ITA total_ic = 75 } }
+			clr_global_flag = "axis_extinct"
+		}
+		any_country = {
+			limit = { faction = comintern or = { tag = USA tag = ENG tag = FRA tag = SOV tag = GER tag = JAP tag = ITA total_ic = 75 } }
+			clr_global_flag = "comintern_extinct"
+		}
+		country_event = 52
+		country_event = 53
+		country_event = 54
+		
+		# Separating democracies from autocracies (even temporal autocracies!)
+		any_country = {
+			limit = {
+				or = {
+					government = constitutional_monarchy
+					government = social_conservatism
+					government = social_democracy
+					government = election
+					government = soc_dem_election
+					government = soc_cons_election
+					government = cons_mon_election
+				}
+			}
+			set_country_flag = "holds_elections"
+		}
+		any_country = {
+			limit = {
+				not = {
+					or = {
+						government = constitutional_monarchy
+						government = social_conservatism
+						government = social_democracy
+						government = election
+						government = soc_dem_election
+						government = soc_cons_election
+						government = cons_mon_election
+					}
+				}
+			}
+			clr_country_flag = "holds_elections"
+		}
+		
+		# Bad Infrastructure
+		any_country = {
+			any_owned = {
+				remove_province_modifier = "impassable_terrain"
+				remove_province_modifier = "infra_level_2"
+				remove_province_modifier = "infra_level_3"
+				remove_province_modifier = "infra_level_4"
+			}
+			any_owned = { limit = { not = { infra = 2 } } add_province_modifier = { name = "impassable_terrain" duration = -1 } }
+			any_owned = { limit = { not = { infra = 3 } infra = 2 } add_province_modifier = { name = "infra_level_2" duration = -1 } }
+			any_owned = { limit = { not = { infra = 4 } infra = 3 } add_province_modifier = { name = "infra_level_3" duration = -1 } }
+			any_owned = { limit = { not = { infra = 5 } infra = 4 } add_province_modifier = { name = "infra_level_4" duration = -1 } }
+		}
+		# Doctrine flags - In case they don't get set properly.
+		# Infantry Doctrine
+		any_country = { limit = { not = { has_country_flag = "firepower_30" } firepower_1930 = 1 } set_country_flag = "firepower_30" }
+		any_country = { limit = { not = { has_country_flag = "firepower_37" } firepower_1937 = 1 } set_country_flag = "firepower_37" }
+		any_country = { limit = { not = { has_country_flag = "firepower_40" } firepower_1940 = 1 } set_country_flag = "firepower_40" }
+		any_country = { limit = { not = { has_country_flag = "firepower_43" } firepower_1943 = 1 } set_country_flag = "firepower_43" }
+		any_country = { limit = { not = { has_country_flag = "firepower_46" } firepower_1946 = 1 } set_country_flag = "firepower_46" }
+		
+		any_country = { limit = { not = { has_country_flag = "shock_30" } shock_1930 = 1 } set_country_flag = "shock_30" }
+		any_country = { limit = { not = { has_country_flag = "shock_37" } shock_1937 = 1 } set_country_flag = "shock_37" }
+		any_country = { limit = { not = { has_country_flag = "shock_40" } shock_1940 = 1 } set_country_flag = "shock_40" }
+		any_country = { limit = { not = { has_country_flag = "shock_43" } shock_1943 = 1 } set_country_flag = "shock_43" }
+		any_country = { limit = { not = { has_country_flag = "shock_46" } shock_1946 = 1 } set_country_flag = "shock_46" }
+		
+		any_country = { limit = { not = { has_country_flag = "infilitration_30" } infilitration_1930 = 1 } set_country_flag = "infilitration_30" }
+		any_country = { limit = { not = { has_country_flag = "infilitration_37" } infilitration_1937 = 1 } set_country_flag = "infilitration_37" }
+		any_country = { limit = { not = { has_country_flag = "infilitration_40" } infilitration_1940 = 1 } set_country_flag = "infilitration_40" }
+		any_country = { limit = { not = { has_country_flag = "infilitration_43" } infilitration_1943 = 1 } set_country_flag = "infilitration_43" }
+		any_country = { limit = { not = { has_country_flag = "infilitration_46" } infilitration_1946 = 1 } set_country_flag = "infilitration_46" }
+		
+		# Tank Doctrine
+		any_country = { limit = { not = { has_country_flag = "infantry_support_role_30" } infantry_support_role_1930 = 1 } set_country_flag = "infantry_support_role_30" }
+		any_country = { limit = { not = { has_country_flag = "infantry_support_role_37" } infantry_support_role_1937 = 1 } set_country_flag = "infantry_support_role_37" }
+		any_country = { limit = { not = { has_country_flag = "infantry_support_role_40" } infantry_support_role_1940 = 1 } set_country_flag = "infantry_support_role_40" }
+		any_country = { limit = { not = { has_country_flag = "infantry_support_role_43" } infantry_support_role_1943 = 1 } set_country_flag = "infantry_support_role_43" }
+		any_country = { limit = { not = { has_country_flag = "infantry_support_role_46" } infantry_support_role_1946 = 1 } set_country_flag = "infantry_support_role_46" }
+		
+		any_country = { limit = { not = { has_country_flag = "schwerpunkt_30" } schwerpunkt_1930 = 1 } set_country_flag = "schwerpunkt_30" }
+		any_country = { limit = { not = { has_country_flag = "schwerpunkt_37" } schwerpunkt_1937 = 1 } set_country_flag = "schwerpunkt_37" }
+		any_country = { limit = { not = { has_country_flag = "schwerpunkt_40" } schwerpunkt_1940 = 1 } set_country_flag = "schwerpunkt_40" }
+		any_country = { limit = { not = { has_country_flag = "schwerpunkt_43" } schwerpunkt_1943 = 1 } set_country_flag = "schwerpunkt_43" }
+		any_country = { limit = { not = { has_country_flag = "schwerpunkt_46" } schwerpunkt_1946 = 1 } set_country_flag = "schwerpunkt_46" }
+		
+		any_country = { limit = { not = { has_country_flag = "combined_arms_30" } combined_arms_1930 = 1 } set_country_flag = "combined_arms_30" }
+		any_country = { limit = { not = { has_country_flag = "combined_arms_37" } combined_arms_1937 = 1 } set_country_flag = "combined_arms_37" }
+		any_country = { limit = { not = { has_country_flag = "combined_arms_40" } combined_arms_1940 = 1 } set_country_flag = "combined_arms_40" }
+		any_country = { limit = { not = { has_country_flag = "combined_arms_43" } combined_arms_1943 = 1 } set_country_flag = "combined_arms_43" }
+		any_country = { limit = { not = { has_country_flag = "combined_arms_46" } combined_arms_1946 = 1 } set_country_flag = "combined_arms_46" }
+		
+		# Operational Doctrine
+		any_country = { limit = { not = { has_country_flag = "grand_battle_plan_30" } grand_battle_plan_1930 = 1 } set_country_flag = "grand_battle_plan_30" }
+		any_country = { limit = { not = { has_country_flag = "grand_battle_plan_37" } grand_battle_plan_1937 = 1 } set_country_flag = "grand_battle_plan_37" }
+		any_country = { limit = { not = { has_country_flag = "grand_battle_plan_40" } grand_battle_plan_1940 = 1 } set_country_flag = "grand_battle_plan_40" }
+		any_country = { limit = { not = { has_country_flag = "grand_battle_plan_43" } grand_battle_plan_1943 = 1 } set_country_flag = "grand_battle_plan_43" }
+		any_country = { limit = { not = { has_country_flag = "grand_battle_plan_46" } grand_battle_plan_1946 = 1 } set_country_flag = "grand_battle_plan_46" }
+		
+		any_country = { limit = { not = { has_country_flag = "superior_firepower_30" } superior_firepower_1930 = 1 } set_country_flag = "superior_firepower_30" }
+		any_country = { limit = { not = { has_country_flag = "superior_firepower_37" } superior_firepower_1937 = 1 } set_country_flag = "superior_firepower_37" }
+		any_country = { limit = { not = { has_country_flag = "superior_firepower_40" } superior_firepower_1940 = 1 } set_country_flag = "superior_firepower_40" }
+		any_country = { limit = { not = { has_country_flag = "superior_firepower_43" } superior_firepower_1943 = 1 } set_country_flag = "superior_firepower_43" }
+		any_country = { limit = { not = { has_country_flag = "superior_firepower_46" } superior_firepower_1946 = 1 } set_country_flag = "superior_firepower_46" }
+		
+		any_country = { limit = { not = { has_country_flag = "blitzkrieg_30" } blitzkrieg_1930 = 1 } set_country_flag = "blitzkrieg_30" }
+		any_country = { limit = { not = { has_country_flag = "blitzkrieg_37" } blitzkrieg_1937 = 1 } set_country_flag = "blitzkrieg_37" }
+		any_country = { limit = { not = { has_country_flag = "blitzkrieg_40" } blitzkrieg_1940 = 1 } set_country_flag = "blitzkrieg_40" }
+		any_country = { limit = { not = { has_country_flag = "blitzkrieg_43" } blitzkrieg_1943 = 1 } set_country_flag = "blitzkrieg_43" }
+		any_country = { limit = { not = { has_country_flag = "blitzkrieg_46" } blitzkrieg_1946 = 1 } set_country_flag = "blitzkrieg_46" }
+		
+		any_country = { limit = { not = { has_country_flag = "human_wave_30" } human_wave_1930 = 1 } set_country_flag = "human_wave_30" }
+		any_country = { limit = { not = { has_country_flag = "human_wave_37" } human_wave_1937 = 1 } set_country_flag = "human_wave_37" }
+		any_country = { limit = { not = { has_country_flag = "human_wave_40" } human_wave_1940 = 1 } set_country_flag = "human_wave_40" }
+		any_country = { limit = { not = { has_country_flag = "human_wave_43" } human_wave_1943 = 1 } set_country_flag = "human_wave_43" }
+		any_country = { limit = { not = { has_country_flag = "human_wave_46" } human_wave_1946 = 1 } set_country_flag = "human_wave_46" }
+
+		any_country = { limit = { not = { has_country_flag = "mechanized_wave_42" } mechanized_wave_1942 = 1 } set_country_flag = "mechanized_wave_42" }
+		any_country = { limit = { not = { has_country_flag = "mechanized_wave_45" } mechanized_wave_1945 = 1 } set_country_flag = "mechanized_wave_45" }
+		
+		# Stop in-faction wars!
+		
+		any_country = {
+			limit = { is_in_any_faction = yes war = yes }
+			country_event = 55
+		}
+		
+		any_country = {
+			any_owned = {
+				limit = {
+					has_province_modifier = "two_year_draft"
+					not = { controlled_by = owner }
+				}
+				remove_province_modifier = "two_year_draft"
+			}
+		}
+		
+		any_country = {
+			any_owned = {
+				limit = {
+					has_province_modifier = "one_year_draft"
+					not = { controlled_by = owner }
+				}
+				remove_province_modifier = "one_year_draft"
+			}
+		}
+		
+		any_country = {
+			any_owned = {
+				limit = {
+					has_province_modifier = "three_year_draft"
+					not = { controlled_by = owner }
+				}
+				remove_province_modifier = "three_year_draft"
+			}
+		}
+		
+		any_country = {
+			any_owned = {
+				limit = {
+					has_province_modifier = "service_by_requirement"
+					not = { controlled_by = owner }
+				}
+				remove_province_modifier = "service_by_requirement"
+			}
+		}
+		
+		clr_global_flag = "strong_jap_navy_influence"
+		clr_global_flag = "jap_navy_influence"
+		clr_global_flag = "strong_jap_army_influence"
+		clr_global_flag = "jap_army_influence"
+		
+		any_country = { limit = { tag = JAP not = { check_variable = { which = "jap_army_navy_struggle" value = 2 } } } set_global_flag = "strong_jap_army_influence" }
+		any_country = { limit = { tag = JAP not = { check_variable = { which = "jap_army_navy_struggle" value = 4 } } } set_global_flag = "jap_army_influence" }
+		any_country = { limit = { tag = JAP 		check_variable = { which = "jap_army_navy_struggle" value = 7 } } set_global_flag = "jap_navy_influence" }
+		any_country = { limit = { tag = JAP 		check_variable = { which = "jap_army_navy_struggle" value = 9 } } set_global_flag = "strong_jap_navy_influence" }
+		
+		# Clear previous law-flags
+		# any_country = {
+			# limit = { war = yes }
+			# clr_country_flag = "open_society" clr_country_flag = "limited_restrictions" clr_country_flag = "legalistic_restrictions" clr_country_flag = "repression" clr_country_flag = "totalitarian_system"
+			# clr_country_flag = "free_press" clr_country_flag = "censored_press" clr_country_flag = "state_press" clr_country_flag = "propaganda_press"
+			# clr_country_flag = "full_civilian_economy" clr_country_flag = "basic_mobilisation" clr_country_flag = "full_mobilisation" clr_country_flag = "war_economy" clr_country_flag = "total_economic_mobilisation"
+			# clr_country_flag = "consumer_product_orientation" clr_country_flag = "mixed_industry" clr_country_flag = "heavy_industry_emphasis"
+			# clr_country_flag = "negligible_taxes" clr_country_flag = "small_taxes" clr_country_flag = "acceptable_taxes" clr_country_flag = "high_taxes" clr_country_flag = "exploitive_taxes"
+			# clr_country_flag = "volunteer_army" clr_country_flag = "one_year_draft" clr_country_flag = "two_year_draft" clr_country_flag = "three_year_draft" clr_country_flag = "service_by_requirement"
+			# clr_country_flag = "minimal_training" clr_country_flag = "basic_training" clr_country_flag = "advanced_training" clr_country_flag = "specialist_training"
+			# clr_country_flag = "undeveloped_minor" clr_country_flag = "developed_medium" clr_country_flag = "regional_power" clr_country_flag = "major_power" clr_country_flag = "great_power" clr_country_flag = "superpower"
+		# }
+		
+		# Set law-flags to restore laws after the war
+		# any_country = { limit = { war = yes civil_law = open_society 			set_country_flag = "open_society" }
+		# any_country = { limit = { war = yes civil_law = limited_restrictions 	set_country_flag = "limited_restrictions" }
+		# any_country = { limit = { war = yes civil_law = legalistic_restrictions set_country_flag = "legalistic_restrictions" }
+		# any_country = { limit = { war = yes civil_law = repression 				set_country_flag = "repression" }
+		# any_country = { limit = { war = yes civil_law = totalitarian_system 	set_country_flag = "totalitarian_system" }
+		
+		# any_country = { limit = { war = yes press_laws = free_press 		set_country_flag = "free_press" }
+		# any_country = { limit = { war = yes press_laws = censored_press 	set_country_flag = "censored_press" }
+		# any_country = { limit = { war = yes press_laws = state_press 		set_country_flag = "state_press" }
+		# any_country = { limit = { war = yes press_laws = propaganda_press 	set_country_flag = "propaganda_press" }
+		
+		# any_country = { limit = { war = yes economic_law = full_civilian_economy 		set_country_flag = "full_civilian_economy" }
+		# any_country = { limit = { war = yes economic_law = basic_mobilisation 			set_country_flag = "basic_mobilisation" }
+		# any_country = { limit = { war = yes economic_law = full_mobilisation 			set_country_flag = "full_mobilisation" }
+		# any_country = { limit = { war = yes economic_law = war_economy 					set_country_flag = "war_economy" }
+		# any_country = { limit = { war = yes economic_law = total_economic_mobilisation 	set_country_flag = "total_economic_mobilisation" }
+		
+		# any_country = { limit = { war = yes industrial_policy_laws = consumer_product_orientation 	set_country_flag = "consumer_product_orientation" }
+		# any_country = { limit = { war = yes industrial_policy_laws = mixed_industry 				set_country_flag = "mixed_industry" }
+		# any_country = { limit = { war = yes industrial_policy_laws = heavy_industry_emphasis 		set_country_flag = "heavy_industry_emphasis" }
+		
+		# any_country = { limit = { war = yes taxation_law = negligible_taxes set_country_flag = "negligible_taxes" }
+		# any_country = { limit = { war = yes taxation_law = small_taxes 		set_country_flag = "small_taxes" }
+		# any_country = { limit = { war = yes taxation_law = acceptable_taxes set_country_flag = "acceptable_taxes" }
+		# any_country = { limit = { war = yes taxation_law = high_taxes 		set_country_flag = "high_taxes" }
+		# any_country = { limit = { war = yes taxation_law = exploitive_taxes set_country_flag = "exploitive_taxes" }
+		
+		# any_country = { limit = { war = yes conscription_law = volunteer_army 			set_country_flag = "volunteer_army" }
+		# any_country = { limit = { war = yes conscription_law = one_year_draft 			set_country_flag = "one_year_draft" }
+		# any_country = { limit = { war = yes conscription_law = two_year_draft 			set_country_flag = "two_year_draft" }
+		# any_country = { limit = { war = yes conscription_law = three_year_draft 		set_country_flag = "three_year_draft" }
+		# any_country = { limit = { war = yes conscription_law = service_by_requirement 	set_country_flag = "service_by_requirement" }
+		
+		# any_country = { limit = { war = yes training_laws = minimal_training 	set_country_flag = "minimal_training" }
+		# any_country = { limit = { war = yes training_laws = basic_training 		set_country_flag = "basic_training" }
+		# any_country = { limit = { war = yes training_laws = advanced_training 	set_country_flag = "advanced_training" }
+		# any_country = { limit = { war = yes training_laws = specialist_training set_country_flag = "specialist_training" }
+		
+		# any_country = { limit = { war = yes international_status = undeveloped_minor 	set_country_flag = "undeveloped_minor" }
+		# any_country = { limit = { war = yes international_status = developed_medium 	set_country_flag = "developed_medium" }
+		# any_country = { limit = { war = yes international_status = regional_power 		set_country_flag = "regional_power" }
+		# any_country = { limit = { war = yes international_status = major_power 			set_country_flag = "major_power" }
+		# any_country = { limit = { war = yes international_status = great_power 			set_country_flag = "great_power" }
+		# any_country = { limit = { war = yes international_status = superpower 			set_country_flag = "superpower" }
+		
+		country_event = 56	# Threat decay
+	}
+}
+
+country_event = {
+
+	id = 51
+	
+	is_triggered_only = yes
+	
+	title = "Delete stuck rebels."
+	desc = "If this event happened to you, please, report it as a bug! It shouldn't!"
+	picture = ""
+	
+	option = {
+		name = "This is madness!"
+		GOD = { split_troops = 1.0 }
+		GOD = { inherit = GOD }
+	}
+	
+}
+
+country_event = {
+
+	id = 52
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = "allies_extinct"
+		not = { has_global_flag = "allies_dissolved" }
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Dissolution of the Allies"
+	desc = "With no major nation in the Allies, the faction can no longer function as a major player in world-politics, and is hereby dissolved."
+	picture = "law"
+	
+	option = {
+		name = "Good ridance!"
+		set_global_flag = "allies_dissolved"
+		any_country = {
+			limit = { faction = allies }
+			leave_faction = allies
+		}
+	}
+	
+}
+
+country_event = {
+
+	id = 53
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = "axis_extinct"
+		not = { has_global_flag = "axis_dissolved" }
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Dissolution of the Axis"
+	desc = "With no major nation in the Axis, the faction can no longer function as a major player in world-politics, and is hereby dissolved."
+	picture = "law"
+	
+	option = {
+		name = "Good ridance!"
+		set_global_flag = "axis_dissolved"
+		any_country = {
+			limit = { faction = axis }
+			leave_faction = axis
+		}
+	}
+	
+}
+
+country_event = {
+
+	id = 54
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = "comintern_extinct"
+		not = { has_global_flag = "comintern_dissolved" }
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Dissolution of the Comintern"
+	desc = "With no major nation in the Comintern, the faction can no longer function as a major player in world-politics, and is hereby dissolved."
+	picture = "law"
+	
+	option = {
+		name = "Good ridance!"
+		set_global_flag = "comintern_dissolved"
+		any_country = {
+			limit = { faction = comintern }
+			leave_faction = comintern
+		}
+	}
+	
+}
+
+country_event = {
+
+	id = 55
+	
+	trigger = {
+		any_neighbor_country = {
+			faction = THIS
+			war_with = THIS
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Ending in-faction wars"
+	desc = "Our defence-pact does not allow us to be at war with other members with our faction."
+	picture = "constitutional"
+	
+	option = {
+		name = "Stop this madness!"
+		any_country = {
+			limit = { faction = THIS war_with = THIS }
+			end_war = THIS
+		}
+	}
+	
+}
+
+country_event = {
+
+	id = 56
+	
+	#major = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		not = { has_country_modifier = "threat_decay" }
+	}
+	
+	title = "Threat decay"
+	desc = "Threat is decaying over time, although at different pacec, depending on the neutrality of the country."
+	picture = "constitutional"
+	
+	option = {
+		name = "OK"
+		add_country_modifier = {
+			name = "threat_decay"		# This event will only fire about every three months.
+			duration = 90
+		}
+		any_country = { limit = { war = no base_neutrality = 100 } threat = { who = all value = -1 } }	# They will get all of the below, too!
+		any_country = { limit = { war = no base_neutrality =  90 } threat = { who = all value = -1 } }
+		any_country = { limit = { war = no base_neutrality =  80 } threat = { who = all value = -1 } }
+		any_country = { limit = { war = no base_neutrality =  70 } threat = { who = all value = -1 } }
+		any_country = { limit = { war = no base_neutrality =  60 } threat = { who = all value = -1 } }
+	}
+
+}

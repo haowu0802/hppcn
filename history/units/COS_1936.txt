@@ -1,0 +1,44 @@
+theatre = {
+	name = "Alto Mando de Costa Rica"
+	location = 7721
+	regiment = { type = hq_brigade name = "San José HQ" historical_model = 0 }
+	division = {
+		name = "Ejercito de Costa Rica"
+		location = 7721
+		is_reserve = yes
+		regiment = { type = garrison_brigade name = "1. Brigada de Infantería" experience = 0 historical_model = 1 }
+		regiment = { type = garrison_brigade name = "2. Brigada de Infantería" experience = 0 historical_model = 1 }
+		regiment = { type = garrison_brigade name = "3. Brigada de Infantería" experience = 0 historical_model = 1 }
+		
+	}
+}
+
+convoy_construction=
+{
+	country = COS
+	id=
+	{
+		id=15310
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = COS
+	id=
+	{
+		id=15311
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort	
+}
+

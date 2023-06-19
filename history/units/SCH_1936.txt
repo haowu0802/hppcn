@@ -1,0 +1,274 @@
+theatre = {
+	name = "Schweizer Oberkommando des Heeres"
+	location = 3422
+	regiment = { type = hq_brigade name = "Bern HQ" historical_model = 0 }	
+	corps = {
+		name = "I Armeekorps"
+		location = 3555
+		regiment = { type = hq_brigade name = "I Armeekorps HQ" historical_model = 0 }
+		division= {
+			name = "1. Infanterie-Division"
+			location = 3491
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 2" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 3" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 7" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 1" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "2. Infanterie-Division"
+			location = 3690
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 1" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 8" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 13" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 2" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "3. Gebirgsjäger-Division"
+			location = 3219
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 14" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 15" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 16" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 3" experience = 5 historical_model = 3 }
+		}
+		division= {
+			name = "10. Gebirgsjäger-Division"
+			location = 3219
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 5" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 6" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 10" experience = 5 historical_model = 3 }			
+		}
+		division= {
+			name = "1. Leichte-Kavallerie-Division"
+			location = 3555
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "Leichte-Kavallerie-Regiment 1" experience = 5 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "Leichte-Kavallerie-Regiment 2" experience = 5 historical_model = 3 }		
+		}		
+	}	
+	corps = {
+		name = "II Armeekorps"
+		location = 3285
+		regiment = { type = hq_brigade name = "II Armeekorps HQ" historical_model = 0 }
+		division= {
+			name = "4. Infanterie-Division"
+			location = 3219
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 11" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 21" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 22" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 4" experience = 5 historical_model = 3 }
+		}
+		division= {
+			name = "5. Infanterie-Division"
+			location = 3151
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 4" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 23" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 24" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 5" experience = 5 historical_model = 3 }
+		}
+		division= {
+			name = "9. Gebirgsjäger-Division"
+			location = 3219
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 9" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 12" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 29" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 11" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "11. Gebirgsjäger-Division"
+			location = 3219
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 10" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 17" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 18" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 13" experience = 5 historical_model = 1 }
+		}	
+		division= {
+			name = "2. Leichte-Kavallerie-Division"
+			location = 3285
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "Leichte-Kavallerie-Regiment 3" experience = 5 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "Leichte-Kavallerie-Regiment 4" experience = 5 historical_model = 3 }		
+		}		
+	}
+	corps = {
+		name = "III Armeekorps"
+		location = 3422
+		regiment = { type = hq_brigade name = "III Corpa di Armata HQ" historical_model = 0 }
+		division= {
+			name = "6. Infanterie-Division"
+			location = 3217
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 25" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 26" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 27" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 28" experience = 5 historical_model = 3 }			
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 6" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "7. Infanterie-Division"
+			location = 3283
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 31" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 33" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 34" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 7" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "8. Gebirgsjäger-Division"
+			location = 3352
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 9" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 20" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 37" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 8" experience = 5 historical_model = 3 }
+		}
+		division= {
+			name = "12. Gebirgsjäger-Division"
+			location = 3352
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 35" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Gebirgsjäger-Regiment 36" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 14" experience = 5 historical_model = 3 }
+		}	
+		division= {
+			name = "3. Leichte-Kavallerie-Division"
+			location = 3422
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "Leichte-Kavallerie-Regiment 5" experience = 5 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "Leichte-Kavallerie-Regiment 6" experience = 5 historical_model = 3 }		
+		}			
+	}
+	corps = {
+		name = "I Grenzsoldat Armeekorps"
+		location = 3555
+		regiment = { type = hq_brigade name = "I Grenzsoldat Armeekorps HQ" historical_model = 0 }	
+		division= {
+			name = "1. Grenzsoldat-Division"
+			location = 3491
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 41" experience = 5 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 42" experience = 5 historical_model = 3 }
+		}	
+		division= {
+			name = "2. Grenzsoldat-Division"
+			location = 3690
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 43" experience = 5 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 44" experience = 5 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 45" experience = 5 historical_model = 3 }			
+		}	
+		division= {
+			name = "3. Grenzsoldat-Division"
+			location = 3690
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 46" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Grenzgebirge Infanterieregiment 67" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Grenzgebirge Infanterieregiment 68" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 12" experience = 5 historical_model = 3 }			
+		}	
+		division= {
+			name = "Genf-Division"
+			location = 3554
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "Territorial-Infanterie-Regiment 71" experience = 5 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "Territorial-Infanterie-Regiment 86" experience = 5 historical_model = 3 }			
+		}			
+	}	
+	corps = {
+		name = "II Grenzsoldat Armeekorps"
+		location = 3285
+		regiment = { type = hq_brigade name = "II Grenzsoldat Armeekorps HQ" historical_model = 0 }	
+		division= {
+			name = "4. Grenzsoldat-Division"
+			location = 3219
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 47" experience = 5 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 48" experience = 5 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 49" experience = 5 historical_model = 3 }	
+		}	
+		division= {
+			name = "5. Grenzsoldat-Division"
+			location = 3151
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 50" experience = 5 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 51" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Grenzgebirge Infanterieregiment 66" experience = 5 historical_model = 3 }			
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 24" experience = 5 historical_model = 3 }
+		}	
+		division= {
+			name = "9. Grenzsoldat-Division"
+			location = 3219
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 79" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Grenzgebirge Infanterieregiment 63" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Grenzgebirge Infanterieregiment 64" experience = 5 historical_model = 3 }
+		}
+		division= {
+			name = "Basel-Division"
+			location = 3217
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "Territorial-Infanterie-Regiment 73" experience = 5 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "Territorial-Infanterie-Regiment 87" experience = 5 historical_model = 3 }			
+		}			
+	}	
+	corps = {
+		name = "III Grenzsoldat Armeekorps"
+		location = 3422
+		regiment = { type = hq_brigade name = "III Grenzsoldat Armeekorps HQ" historical_model = 0 }	
+		division= {
+			name = "6. Grenzsoldat-Division"
+			location = 3217
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 52" experience = 5 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 53" experience = 5 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 54" experience = 5 historical_model = 3 }	
+		}	
+		division= {
+			name = "7. Grenzsoldat-Division"
+			location = 3283
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 55" experience = 5 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 56" experience = 5 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "Territorial-Infanterie-Regiment 57" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 14" experience = 5 historical_model = 1 }			
+		}
+		division= {
+			name = "8. Grenzsoldat-Division"
+			location = 3283
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 58" experience = 5 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 59" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 25" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "9. Grenzsoldat-Division"
+			location = 3219
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "Grenzsoldaten-Regiment 79" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Grenzgebirge Infanterieregiment 63" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Grenzgebirge Infanterieregiment 64" experience = 5 historical_model = 3 }		
+		}		
+		division= {
+			name = "12. Grenzsoldat-Division"
+			location = 3283
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "Territorial-Infanterie-Regiment 77" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Grenzgebirge Infanterieregiment 60" experience = 5 historical_model = 3 }			
+			regiment = { type = bergsjaeger_brigade name = "Grenzgebirge Infanterieregiment 61" experience = 5 historical_model = 3 }			
+			regiment = { type = bergsjaeger_brigade name = "Grenzgebirge Infanterieregiment 62" experience = 5 historical_model = 3 }			
+		}		
+	}		
+	air = {
+		name = "Heeren Luftwaffe Abteilung 1"
+		base = 3422
+		location = 3422
+		wing = { type = cas name = "Sturzkampfgeschwader 1" experience = 5 historical_model = 0 }
+	}
+}

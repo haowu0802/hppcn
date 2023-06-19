@@ -1,0 +1,119 @@
+country_event = {
+
+	id = 1020
+	
+	is_triggered_only = yes
+	
+	title = "$FROMCOUNTRY$ wants to sign the Anti-Comintern Pact"
+	desc = "Do we want to accept $FROMCOUNTRY$'s offer to join the Anti-Comintern Pact to fight Communism together?"
+	picture = "anti_commintern_pact"
+	
+	option = {
+		name = "But of course!"
+		ai_chance = {
+			factor = 95
+			modifier = { factor = 0.1 not = { FROM = { total_ic = 25 } } }
+		}
+		FROM = { set_country_flag = "anti_comintern" }
+		relation = { who = FROM value = 25 }
+		any_country = {
+			limit = { has_country_flag = "anti_comintern" }
+			relation = { who = FROM value = 25 }
+		}
+		clr_country_flag = "signator_pending"
+	}
+	option = {
+		name = "Not with them!"
+		ai_chance = {
+			factor = 5
+			modifier = { factor = 0.0 FROM = { faction = axis } }
+		}
+		FROM = {
+			relation = { who = THIS value = -15 }
+			set_country_flag = "anti_comintern_pact_declined"
+		}
+		clr_country_flag = "signator_pending"
+	}
+}
+
+country_event = {
+
+	id = 1021
+	
+	is_triggered_only = yes
+	
+	title = "The Berlin-Rome Axis"
+	desc = "The Rome-Berlin Axis was proposed in 1936. The agreement formulated by Italy’s foreign minister would informally link the two fascist countries and could lead to a more permanent alliance."
+	picture = "anti_comintern_pact"
+	
+	option = {
+		name = "An excellent proposition!"
+		neutrality = -5
+		ai_chance = {
+			factor = 80
+		}
+		ITA = {
+			relation = { who = GER value = 25 }
+			country_event = 1022
+		}
+	}
+	option = {
+		name = "We don't need you."
+		ai_chance = {
+			factor = 20
+		}
+		ITA = {
+			relation = { who = GER value = -25 }
+			relation = { who = FRA value = 25 }
+			relation = { who = ENG value = 25 }
+			country_event = 1023
+		}
+	}
+}
+
+country_event = {
+
+	id = 1022
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "Germany accepted our proposition!"
+	desc = "Our proposition for a Rome-Berlin Axis was accepted by our German partners! May it bring much prestige for both of our great nations!"
+	picture = "treaty_signed"
+	
+	option = {
+		name = "Excellent!"
+		relation = { who = GER value = 25 }
+		end_guarantee = AUS
+		add_country_modifier = {
+			name = "berlin_rome_axis"
+			duration = 720
+		}
+	}
+}
+
+country_event = {
+
+	id = 1023
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "Germany declined our proposition!"
+	desc = "Our proposition for a Rome-Berlin Axis was declined by our German partners! It becomes clear that we will need to find allies elsewhere!"
+	picture = "furios_hitler"
+	
+	option = {
+		name = "We didn't really want to associate with you anyway"
+		relation = { who = GER value = -50 }
+		relation = { who = FRA value = 25 }
+		relation = { who = ENG value = 25 }
+		add_country_modifier = {
+			name = "no_berlin_rome_axis"
+			duration = 720
+		}
+	}
+}

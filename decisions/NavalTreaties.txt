@@ -1,0 +1,80 @@
+diplomatic_decisions = {
+
+#	starting_treaties = {
+#		potential = {
+#			tag = REB
+#		}
+#		allow = {
+#		}
+#		effect = {
+#			GER = { set_country_flag = "versailles_treaty" }
+#			ENG = { set_country_flag = "washington_treaty" }
+#			ENG = { set_country_flag = "london_treaty" }
+#			FRA = { set_country_flag = "washington_treaty" }
+#			FRA = { set_country_flag = "london_treaty" }
+#			USA = { set_country_flag = "washington_treaty" }
+#			USA = { set_country_flag = "london_treaty" }
+#			ITA = { set_country_flag = "washington_treaty" }
+#			ITA = { set_country_flag = "london_treaty" }
+#			JAP = { set_country_flag = "washington_treaty" }
+#			JAP = { set_country_flag = "london_treaty" }
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}	
+#	}
+	
+	back_out_from_the_treaties = {
+		major = yes
+		potential = {
+			or = {
+				has_country_flag = "washington_treaty"
+				has_country_flag = "london_treaty"
+				has_country_flag = "second_london_treaty"
+				has_country_flag = "escalator_clause_invoked"
+			}
+		}
+		allow = {
+			or = {
+				has_country_flag = "great_war"
+				GER = { war_with = ENG }
+				and = {
+					not = { ideology_group = democracy }
+					not = { base_neutrality = 60 }
+				}
+				and = {
+					ideology_group = democracy
+					not = { base_neutrality = 60 }
+					organisation = 50
+				}
+			}
+		}
+		effect = {
+			clr_country_flag = "washington_treaty"
+			clr_country_flag = "london_treaty"
+			clr_country_flag = "second_london_treaty"
+			clr_country_flag = "escalator_clause_invoked"
+			any_country = {
+				limit = {
+					not = {
+						or = {
+							THIS = { has_country_flag = "great_war" }
+							GER = { war_with = ENG }
+						}
+					}
+					or = {
+						has_country_flag = "washington_treaty"
+						has_country_flag = "london_treaty"
+						has_country_flag = "second_london_treaty"
+						has_country_flag = "escalator_clause_invoked"
+					}
+				}
+				relation = { who = THIS value = -50 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+	
+}

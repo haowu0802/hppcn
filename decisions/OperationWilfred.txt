@@ -1,0 +1,69 @@
+diplomatic_decisions = {
+
+	operation_wilfred = {
+		major = yes
+		potential = {
+			tag = ENG
+			faction = allies
+			war_with = GER
+			exists = NOR
+			not = { war_with = NOR }
+			NOR = { is_in_any_faction = no }
+			GER = { has_country_flag = "swedish_iron" }
+			not = { has_country_flag = "operation_wilfred" }
+		}
+		allow = {
+			month = 3
+			not = { month = 11 }
+		}
+		effect = {
+			neutrality = -3
+			set_country_flag = "operation_wilfred"
+			NOR = { country_event = 1351 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# Only partially connected, but still!
+	
+	norwegian_surrender = {
+		major = yes
+		potential = {
+			tag = NOR
+			faction = allies
+			war_with = GER
+			exists = ENG
+			government_in_exile = no
+			ENG = {
+				government_in_exile = no
+				war_with = GER
+			}
+			# Germany has invaded!
+			any_owned_province = {
+				controlled_by = GER
+			}
+			not = { has_country_flag = "norway_capitulates" }
+			surrender_progress = 5
+		}
+		allow = {
+			812 = { controller = { war_with = NOR } }
+			any_owned_province = {
+				naval_base = 1
+				controlled_by = THIS
+			}
+			surrender_progress = 25
+		}
+		effect = {
+			set_country_flag = "norway_capitulates"
+			popularity = -15
+			organisation = -25
+			GER = { country_event = 3021 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

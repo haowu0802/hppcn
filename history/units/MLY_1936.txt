@@ -1,0 +1,41 @@
+theatre = {
+	name = "Royal Malayan High Command"
+	location = 10014
+	regiment = { type = hq_brigade name = "Borneo HQ" historical_model = 0 }
+	division = {
+		name = "Malayan Colonial Army"
+		expeditionary_owner = ENG
+		location = 10014
+		regiment = { type = militia_brigade name = "1st Malay Infantry Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = militia_brigade name = "2nd Malay Infantry Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = militia_brigade name = "3rd Malay Infantry Brigade" experience = 0 historical_model = 3 }
+	}
+}
+convoy_construction=
+{
+	country = MLY
+	id=
+	{
+		id=15910
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = MLY
+	id=
+	{
+		id=15911
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

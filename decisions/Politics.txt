@@ -1,0 +1,501 @@
+diplomatic_decisions = {
+
+	outlaw_national_socialist = {
+		potential = {
+			has_country_flag = "steps_against_national_socialist"
+			not = { has_country_flag = "national_socialist_outlawed" }
+			not = { civil_law = open_society }
+			not = { civil_law = limited_restrictions }
+			not = { ideology = national_socialist }
+		}
+		allow = {
+			or = {
+				and = {
+					civil_law = totalitarian_system
+					organisation = 33
+				}
+				and = {
+					civil_law = repression
+					organisation = 50
+				}
+				and = {
+					civil_law = legalistic_restrictions
+					organisation = 66
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "national_socialist_outlawed"
+			national_unity = -2
+			popularity = -2
+			organisation = 5
+			national_socialist = { organisation = -50 popularity = 5 }
+			any_country = {
+				limit = { ideology_group = fascism }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology = national_socialist }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	outlaw_fascistic = {
+		potential = {
+			has_country_flag = "steps_against_fascistic"
+			not = { has_country_flag = "fascistic_outlawed" }
+			not = { civil_law = open_society }
+			not = { civil_law = limited_restrictions }
+			not = { ideology = fascistic }
+		}
+		allow = {
+			or = {
+				and = {
+					civil_law = totalitarian_system
+					organisation = 33
+				}
+				and = {
+					civil_law = repression
+					organisation = 50
+				}
+				and = {
+					civil_law = legalistic_restrictions
+					organisation = 66
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "fascistic_outlawed"
+			national_unity = -2
+			popularity = -2
+			organisation = 5
+			fascistic = { organisation = -50 popularity = 5 }
+			any_country = {
+				limit = { ideology_group = fascism }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology = fascistic }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	outlaw_paternal_autocrat = {
+		potential = {
+			has_country_flag = "steps_against_paternal_autocrat"
+			not = { has_country_flag = "paternal_autocrat_outlawed" }
+			not = { civil_law = open_society }
+			not = { civil_law = limited_restrictions }
+			not = { ideology = paternal_autocrat }
+		}
+		allow = {
+			or = {
+				and = {
+					civil_law = totalitarian_system
+					organisation = 33
+				}
+				and = {
+					civil_law = repression
+					organisation = 50
+				}
+				and = {
+					civil_law = legalistic_restrictions
+					organisation = 66
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "paternal_autocrat_outlawed"
+			national_unity = -2
+			popularity = -2
+			organisation = 5
+			paternal_autocrat = { organisation = -50 popularity = 5 }
+			any_country = {
+				limit = { ideology_group = fascism }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology = paternal_autocrat }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	outlaw_social_conservative = {
+		potential = {
+			has_country_flag = "steps_against_social_conservative"
+			not = { has_country_flag = "social_conservative_outlawed" }
+			not = { civil_law = open_society }
+			not = { civil_law = limited_restrictions }
+			not = { ideology = social_conservative }
+		}
+		allow = {
+			or = {
+				and = {
+					civil_law = totalitarian_system
+					organisation = 33
+				}
+				and = {
+					civil_law = repression
+					organisation = 50
+				}
+				and = {
+					civil_law = legalistic_restrictions
+					organisation = 66
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "social_conservative_outlawed"
+			national_unity = -2
+			popularity = -2
+			organisation = 5
+			social_conservative = { organisation = -50 popularity = 5 }
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology = social_conservative }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	outlaw_market_liberal = {
+		potential = {
+			has_country_flag = "steps_against_market_liberal"
+			not = { has_country_flag = "market_liberal_outlawed" }
+			not = { civil_law = open_society }
+			not = { civil_law = limited_restrictions }
+			not = { ideology = market_liberal }
+		}
+		allow = {
+			or = {
+				and = {
+					civil_law = totalitarian_system
+					organisation = 33
+				}
+				and = {
+					civil_law = repression
+					organisation = 50
+				}
+				and = {
+					civil_law = legalistic_restrictions
+					organisation = 66
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "market_liberal_outlawed"
+			national_unity = -2
+			popularity = -2
+			organisation = 5
+			market_liberal = { organisation = -50 popularity = 5 }
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology = market_liberal }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	outlaw_social_liberal = {
+		potential = {
+			has_country_flag = "steps_against_social_liberal"
+			not = { has_country_flag = "social_liberal_outlawed" }
+			not = { civil_law = open_society }
+			not = { civil_law = limited_restrictions }
+			not = { ideology = social_liberal }
+		}
+		allow = {
+			or = {
+				and = {
+					civil_law = totalitarian_system
+					organisation = 33
+				}
+				and = {
+					civil_law = repression
+					organisation = 50
+				}
+				and = {
+					civil_law = legalistic_restrictions
+					organisation = 66
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "social_liberal_outlawed"
+			national_unity = -2
+			popularity = -2
+			organisation = 5
+			social_liberal = { organisation = -50 popularity = 5 }
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology = social_liberal }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	outlaw_social_democrat = {
+		potential = {
+			has_country_flag = "steps_against_social_democrat"
+			not = { has_country_flag = "social_democrat_outlawed" }
+			not = { civil_law = open_society }
+			not = { civil_law = limited_restrictions }
+			not = { ideology = social_democrat }
+		}
+		allow = {
+			or = {
+				and = {
+					civil_law = totalitarian_system
+					organisation = 33
+				}
+				and = {
+					civil_law = repression
+					organisation = 50
+				}
+				and = {
+					civil_law = legalistic_restrictions
+					organisation = 66
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "social_democrat_outlawed"
+			national_unity = -2
+			popularity = -2
+			organisation = 5
+			social_democrat = { organisation = -50 popularity = 5 }
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology = social_democrat }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	outlaw_left_wing_radical = {
+		potential = {
+			has_country_flag = "steps_against_left_wing_radical"
+			not = { has_country_flag = "left_wing_radical_outlawed" }
+			not = { civil_law = open_society }
+			not = { civil_law = limited_restrictions }
+			not = { ideology = left_wing_radical }
+		}
+		allow = {
+			or = {
+				and = {
+					civil_law = totalitarian_system
+					organisation = 33
+				}
+				and = {
+					civil_law = repression
+					organisation = 50
+				}
+				and = {
+					civil_law = legalistic_restrictions
+					organisation = 66
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "left_wing_radical_outlawed"
+			national_unity = -2
+			popularity = -2
+			organisation = 5
+			left_wing_radical = { organisation = -50 popularity = 5 }
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology = left_wing_radical }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	outlaw_leninist = {
+		potential = {
+			has_country_flag = "steps_against_leninist"
+			not = { has_country_flag = "leninist_outlawed" }
+			not = { civil_law = open_society }
+			not = { civil_law = limited_restrictions }
+			not = { ideology = leninist }
+		}
+		allow = {
+			or = {
+				and = {
+					civil_law = totalitarian_system
+					organisation = 33
+				}
+				and = {
+					civil_law = repression
+					organisation = 50
+				}
+				and = {
+					civil_law = legalistic_restrictions
+					organisation = 66
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "leninist_outlawed"
+			national_unity = -2
+			popularity = -2
+			organisation = 5
+			leninist = { organisation = -50 popularity = 5 }
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology = leninist }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	outlaw_stalinist = {
+		potential = {
+			has_country_flag = "steps_against_stalinist"
+			not = { has_country_flag = "stalinist_outlawed" }
+			not = { civil_law = open_society }
+			not = { civil_law = limited_restrictions }
+			not = { ideology = stalinist }
+		}
+		allow = {
+			or = {
+				and = {
+					civil_law = totalitarian_system
+					organisation = 33
+				}
+				and = {
+					civil_law = repression
+					organisation = 50
+				}
+				and = {
+					civil_law = legalistic_restrictions
+					organisation = 66
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "stalinist_outlawed"
+			national_unity = -2
+			popularity = -2
+			organisation = 5
+			stalinist = { organisation = -50 popularity = 5 }
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology = stalinist }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	prohibit_new_parties = {
+		potential = {
+			not = { has_country_flag = "new_parties_prohibited" }
+			or = {
+				civil_law = repression
+				civil_law = totalitarian_system
+			}
+			or = {		# At least one party is already outlawed.
+				has_country_flag = "national_socialist_outlawed"
+				has_country_flag = "fascistic_outlawed"
+				has_country_flag = "paternal_autocrat_outlawed"
+				has_country_flag = "social_conservative_outlawed"
+				has_country_flag = "market_liberak_outlawed"
+				has_country_flag = "social_liberal_outlawed"
+				has_country_flag = "social_democrat_outlawed"
+				has_country_flag = "left_wing_radical_outlawed"
+				has_country_flag = "leninist_outlawed"
+				has_country_flag = "stalinist_outlawed"
+			}
+			not = { ideology_group = democracy }
+		}
+		allow = {
+			or = {
+				and = {
+					civil_law = totalitarian_system
+					organisation = 40
+				}
+				and = {
+					civil_law = repression
+					organisation = 55
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "new_parties_prohibited"
+			national_unity = -15
+			organisation = 40
+			national_socialist 		= { organisation = -25 }
+			fascistic 				= { organisation = -25 }
+			paternal_autocrat 		= { organisation = -25 }
+			social_conservative 	= { organisation = -25 }
+			market_liberal 			= { organisation = -25 }
+			social_liberal 			= { organisation = -25 }
+			social_democrat 		= { organisation = -25 }
+			left_wing_radical 		= { organisation = -25 }
+			leninist 				= { organisation = -25 }
+			stalinist 				= { organisation = -25 }
+			threat = { who = all value = 10 }
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

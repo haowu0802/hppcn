@@ -1,0 +1,34 @@
+diplomatic_decisions = {
+
+	resistance_is_futile = {
+		major = yes
+		potential = {
+			tag = DEN
+			war_with = GER
+			is_in_any_faction = yes
+			government_in_exile = no
+			not = { has_country_flag = "denmark_capitulates" }
+		}
+		allow = {
+			any_owned_province = {
+				not = { controlled_by = THIS }
+				controller = { faction = axis }
+			}
+		}
+		effect = {
+			set_country_flag = "denmark_capitulates"
+			popularity = -15
+			organisation = -25
+			random_owned = {
+				limit = { controller = { faction = axis } }
+				controller = {
+					country_event = 3012
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

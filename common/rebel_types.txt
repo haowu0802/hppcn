@@ -1,0 +1,416 @@
+###################################
+# Hoi3 Partisans
+###################################
+partisans = {
+	ideology = any					# No special preference
+	area = nation 					# Stays within the nation
+	defection = none				# Does not defect
+	independence = none				# Does not strive for independence
+	unit = partisan_brigade
+	
+	resilient = yes
+	reinforcing = yes				
+	smart = yes
+	auto_convert = yes
+	
+	
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 10
+		modifier = {
+			factor = 0.0
+			controlled_by = owner
+		}
+		modifier = {
+			factor = 0.0
+			has_building = underground
+			not = { infra = 2 }
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+	}
+	
+ 	# Province Scope
+ 	siege_won_trigger = {
+		infra = 2
+ 	}
+	siege_won_effect = {
+		random = {
+			chance = 25
+			partisan_brigade = current
+		}
+	}
+	
+	
+	# Country scope
+	can_enforce_trigger = {
+	}
+	
+	demands_enforced_effect = {
+	}
+}
+
+
+
+organized_partisans = {
+	ideology = any					# No special preference
+	area = nation 					# Stays within the nation
+	defection = none				# Does not defect
+	independence = none				# Does not strive for independence
+	unit = partisan_brigade
+	
+	resilient = no
+	reinforcing = yes				
+	smart = yes
+	auto_convert = yes
+	is_triggered_only = yes
+	
+	
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 10
+		modifier = {
+			factor = 0.0
+			controlled_by = owner
+		}
+		modifier = {
+			factor = 10.0
+			has_building = underground
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+	}
+	
+ 	# Province Scope
+ 	siege_won_trigger = {
+ 	}
+	siege_won_effect = {
+
+	}
+	
+	
+	# Country scope
+	can_enforce_trigger = {
+	}
+	
+	demands_enforced_effect = {
+	}
+}
+
+
+####################################
+# Nationalist rebels. Freedom!!!
+####################################
+nationalist_rebels = {	
+	area = nation 				# Stays within provinces of their culture
+	defection = none
+	ideology = any				# No special preference
+	independence = any
+	defect_delay = 12
+	unit_transfer = yes			# Units switch allegiance after enforcing demands.
+	unit = infantry_brigade
+	
+	resilient = yes
+	reinforcing = yes
+	smart = yes
+	auto_convert = yes
+	
+
+	spawn_chance = {
+		factor = 10
+		modifier = {
+			factor = 0.0
+			NOT = { controlled_by = owner }		# Only for owned and controlled provinces
+		}
+		modifier = {
+			factor = 0.0
+			is_core = owner						# Only for non-cores!
+		}
+		modifier = {
+			factor = 0.0
+			not = { infra = 2 }
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 2
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 4
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 6
+		}
+		modifier = {
+			factor = 5.0
+			is_core = REB
+		}
+	}
+ 
+ 	# Province Scope
+ 	siege_won_trigger = {
+		infra = 2
+ 	}
+	siege_won_effect = {
+		random = {
+			chance = 25
+			infantry_brigade = current
+		}
+	}
+	
+
+	
+	# Country scope
+	can_enforce_trigger = {
+		always = yes
+	}
+	
+
+	# Country scope
+	demands_enforced_effect = {
+	}
+}
+
+##########################################################
+# Patriots, yearning for a return to their mother nation.
+##########################################################
+patriot_rebels = {	
+	area = nation			# Stays within cultural borders
+	ideology = any			# No special preference
+	defection = any
+	defect_delay = 6
+	independence = any
+	unit_transfer = yes
+	unit = militia_brigade
+	
+	resilient = yes
+	reinforcing = yes
+	smart = yes
+
+
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 10
+		modifier = {
+			factor = 0.0
+			controlled_by = owner		# Only for occupied provinces
+		}
+		modifier = {
+			factor = 0.0
+			is_core = controller		# Only for non-cores!
+		}
+		modifier = {
+			factor = 0.0
+			not = { infra = 2 }
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 2
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 4
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 6
+		}
+		modifier = {
+			factor = 5.0
+			is_core = REB
+		}		
+	}
+ 
+ 	# Province Scope
+ 	siege_won_trigger = {
+		infra = 2
+ 	}
+	siege_won_effect = {
+		random = {
+			chance = 25
+			militia_brigade = current
+		}
+	}
+	
+	
+	# Country scope
+	can_enforce_trigger = {
+	}
+	
+
+	
+	# Country scope
+	demands_enforced_effect = {
+	}
+}
+
+
+##########################################################
+# Disgruntled Rabble
+##########################################################
+disgruntled_rabble = {	
+	area = nation			# Stays within cultural borders
+	ideology = any			# No special preference
+	defection = none
+	independence = none
+	unit = militia_brigade
+	
+	resilient = no
+	reinforcing = no
+	smart = no
+
+
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 5
+		modifier = {
+			factor = 0.0
+			NOT = { controlled_by = owner }
+		}
+		modifier = {
+			factor = 0.0
+			NOT = { is_core = owner }
+		}
+		modifier = {
+			factor = 0.0
+			not = { infra = 2 }
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 2
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 4
+		}
+		modifier = {
+			factor = 1.5
+			revolt_risk = 6
+		}
+		modifier = {
+			factor = 5.0
+			is_core = REB
+		}		
+	}
+ 
+ 	# Province Scope
+ 	siege_won_trigger = {
+ 	}
+	siege_won_effect = {
+	}
+	
+	
+	# Country scope
+	can_enforce_trigger = {
+	}
+	
+
+	
+	# Country scope
+	demands_enforced_effect = {
+	}
+}
+##########################################################
+# Natives
+##########################################################
+natives = {	
+	area = nation			# Stays within cultural borders
+	ideology = any			# No special preference
+	defection = none
+	independence = none
+	unit = partisan_brigade
+	
+	resilient = no
+	reinforcing = no
+	smart = no
+
+
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 1
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 0
+	}
+ 
+ 	# Province Scope
+ 	siege_won_trigger = {
+ 	}
+	siege_won_effect = {
+	}
+	
+	
+	# Country scope
+	can_enforce_trigger = {
+	}
+	
+
+	
+	# Country scope
+	demands_enforced_effect = {
+	}
+}

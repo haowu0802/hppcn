@@ -1,0 +1,59 @@
+color = { 255  255  255 }
+graphical_culture = generic
+
+
+
+default_templates = {
+	binary_infantry = {
+		infantry_brigade
+		infantry_brigade
+	}
+	binary_milita = {
+		militia_brigade
+		militia_brigade
+	}
+	binary_armoured = {
+		armor_brigade
+		motorized_brigade
+	}
+	binary_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+	}	
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
+	}	
+}
+
+unit_names = {
+}
+
+
+ministers = {
+	9999999 = {
+		name = "God"
+		ideology = paternal_autocrat
+		loyalty = 1.0
+		picture = M32001
+		start_date = 1936.1.1
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless			
+	}
+}

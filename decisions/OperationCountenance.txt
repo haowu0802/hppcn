@@ -1,0 +1,36 @@
+diplomatic_decisions = {
+
+	operation_countenance = {
+		major = yes
+		potential = {
+			not = { has_country_flag = "su_signs_peace" }
+			or = {
+				tag = SOV
+				tag = ENG
+			}
+			SOV = { not = { war_with = PER } }
+			ENG = { not = { war_with = PER } }
+			GER = {
+				war_with = ENG
+				war_with = SOV
+			}
+			PER = {
+				is_in_any_faction = no
+				not = { alliance_with = SOV }
+				not = { alliance_with = ENG }
+			}
+			not = { has_global_flag = "operation_countenance" }
+		}
+		allow = {
+			PER = { is_subject = no }
+		}
+		effect = {
+			set_global_flag = "operation_countenance"
+			PER = { country_event = 1871 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

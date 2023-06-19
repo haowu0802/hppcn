@@ -1,0 +1,881 @@
+########################
+# The Treaty of Munich #
+########################
+# Czechoslovakia - Reaction Event
+country_event = {
+
+	id = 1201
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1201"
+	desc = "EVTDESC1201"
+	picture = "Munich"
+
+	option = {
+		name = "Protest in the UK!"		# Protest in the UK!
+		ai_chance = {
+			factor = 89
+			modifier = {
+				factor = 0.5
+				national_socialist = { organisation = 10 popularity = 15 }
+			}
+			modifier = {
+				factor = 0.25
+				national_socialist = { organisation = 20 popularity = 25  }
+			}
+			modifier = {
+				factor = 0.1
+				national_socialist = { organisation = 33 popularity = 40  }
+			}
+		}
+		neutrality = -20
+		ENG = { country_event = 1203 }
+	}
+	option = {
+		name = "Agree to secede."
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				national_socialist = { organisation = 10 popularity = 15  }
+			}
+			modifier = {
+				factor = 4
+				national_socialist = { organisation = 20 popularity = 25  }
+			}
+			modifier = {
+				factor = 9
+				national_socialist = { organisation = 33 popularity = 40 }
+			}
+			modifier = {
+				factor = 0.0
+				or = {
+					and = {
+						is_in_any_faction = yes
+						not = { faction = axis }
+					}
+					guarantee = FRA
+					alliance_with = FRA
+					guarantee = SOV
+					alliance_with = SOV
+					guarantee = ENG
+					alliance_with = ENG
+					guarantee = ITA
+					alliance_with = ITA
+				}
+			}
+		}
+		sudetenland = { secede_province = GER }
+		relation = { who = GER value = 10 }
+		relation = { who = ENG value = -10 }
+		relation = { who = FRA value = -10 }
+		neutrality = -10
+		dissent = 25
+		GER = { country_event = 1202 }
+	}
+	option = {
+		name = "This means WAR!"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				national_socialist = { organisation = 10 }
+			}
+		}
+		war = {
+			target = GER
+			attacker_goal = { casus_belli = concede_defeat }
+			defender_goal = { casus_belli = conquer }
+		}
+	}
+}
+
+# Germany gets Sudetenland
+country_event = {
+
+	id = 1202
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1202"
+	desc = "EVTDESC1202"
+	picture = "Sudetenland"
+
+	option = {
+		name = "EVTOPTA1202"				# Ok
+		threat = { who = all value = 5 }
+		threat = { who = CZE value = 10 }
+		organisation = 5
+		popularity = 5
+		dissent = 5
+		manpower = 200
+	}
+}
+
+# UK gets CZE protest
+country_event = {
+
+	id = 1203
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	title = "EVTNAME1201"
+	desc = "EVTDESC1201"
+	picture = "Munich"
+
+	option = {
+		name = "We can't afford another Great War!"
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.1
+				head_of_government = 1038	# Churchill is PM
+			}
+			modifier = {
+				factor = 100.0
+				head_of_state = 1031		# Edward VIII is king
+			}
+		}
+		CZE = { country_event = 1204 }		# CZE needs to secede
+		end_guarantee = CZE
+		any_country = {
+			limit = { faction = allies }
+			end_guarantee = CZE
+		}
+		relation = { who = CZE value = -25 }
+	}
+	option = {
+		name = "Protest against German expansionism!"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 10.0
+				head_of_government = 1038	# Churchill is PM
+			}
+			modifier = {
+				factor = 0.1
+				head_of_state = 1031		# Edward VIII is king
+			}
+		}
+		dissent = 10
+		relation = { who = CZE value = 10 }
+		CZE = { country_event = 1205 }		# CZE still needs to secede
+	}
+}
+
+# UK won't help CZE
+country_event = {
+
+	id = 1204
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1204"
+	desc = "EVTDESC1204"
+	picture = "Munich"
+
+	option = {
+		name = "They won't help!"
+		dissent = 15						# 25 dissent overall
+		sudetenland = { secede_province = GER }
+		neutrality = -20
+		relation = { who = ENG value = -10 }
+		GER = { country_event = 1202 }		# Original event
+	}
+}
+
+# CZE gets UK support
+country_event = {
+
+	id = 1205
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1204"
+	desc = "EVTDESC1204"
+	picture = "Munich"
+
+	option = {
+		name = "Thanks for nothing..."
+		ai_chance = {
+			factor = 66
+			modifier = {
+				factor = 0.0
+				or = {
+					and = {
+						is_in_any_faction = yes
+						not = { faction = axis }
+					}
+					guarantee = FRA
+					alliance_with = FRA
+					guarantee = SOV
+					alliance_with = SOV
+					guarantee = ENG
+					alliance_with = ENG
+					guarantee = ITA
+					alliance_with = ITA
+				}
+			}
+		}
+		set_country_flag = "uk_protests"
+		sudetenland = { secede_province = GER }
+		dissent = 10
+		relation = { who = ENG value = 10 }
+		GER = { country_event = 1206 }		# Higher threat for Germany, but still secede
+	}
+	option = {
+		name = "Then we might have a chance!"
+		ai_chance = {
+			factor = 33
+		}
+		national_unity = 5
+		set_country_flag = "uk_protests"
+		GER = { country_event = 1207 }
+	}
+}
+
+# Germany gets reluctant Sudetenland
+country_event = {
+
+	id = 1206
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1202"
+	desc = "EVTDESC1202"
+	picture = "Sudetenland"
+
+	option = {
+		name = "EVTOPTA1202"				# Ok
+		threat = { who = all value = 10 }
+		threat = { who = CZE value = 10 }
+		organisation = 5
+		popularity = 2
+		dissent = 10
+		manpower = 100
+	}
+}
+
+# Germany gets war
+country_event = {
+
+	id = 1207
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "The Czechs are ready to go to war!"
+	desc = "Czechoslovakia decided that they rather face war than lose territory to us! This is our last chance to back down."
+	picture = "czechs_fight"
+
+	option = {
+		name = "If war is what they want..."
+		ai_chance = {
+			factor = 99
+		}
+		threat = { who = all value = 10 }
+		threat = { who = CZE value = 10 }
+		organisation = 5
+		popularity = 1
+		CZE = {
+			war = {
+				target = GER
+				attacker_goal = { casus_belli = concede_defeat }
+				defender_goal = { casus_belli = conquer }
+			}
+		}
+		CZE = { threat = { who = all value = -10 } }	# A justified war.
+	}
+	option = {
+		name = "Whoa, back down!"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 20.0
+				or = {
+					and = {
+						is_in_any_faction = yes
+						not = { faction = axis }
+					}
+					guarantee = FRA
+					alliance_with = FRA
+					guarantee = SOV
+					alliance_with = SOV
+					guarantee = ENG
+					alliance_with = ENG
+					guarantee = ITA
+					alliance_with = ITA
+				}
+			}
+		}
+		threat = { who = all value = -10 }	# 10 threat overall
+		neutrality = 10
+		popularity = -15
+		organisation = -10
+		dissent = 5
+		CZE = {
+			dissent = -15
+			organisation = 10
+			popularity = 10
+		}
+	}
+}
+
+######################
+# First Vienna Award #
+######################
+country_event = {
+
+	id = 1208
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		exists = HUN
+		HUN = {
+			not = { faction = allies }
+			not = { faction = comintern }
+		}
+	}
+	
+	title = "The First Vienna Award"
+	desc = "Czechoslovakia lived past its usefullness. What should we do with them?"
+	picture = "austria_alliance"
+	
+	option = {
+		name = "Historical"
+		ai_chance = {
+			factor = 95
+			
+			modifier = { factor = 0.0 HUN = { vassal_of = THIS } }
+		}
+		CZE = { country_event = 1210 }
+	}
+	
+	option = {
+		name = "Keep it all!"
+		ai_chance = { factor = 0 }
+		neutrality = -3
+		dissent = 2
+		threat = { who = all value = 10 }
+		CZE = { country_event = 1215 }
+	}
+	
+	option = {
+		name = "Give Slovakia to Hungary!"
+		ai_chance = {
+			factor = 5
+			
+			modifier = { factor = 2.0 HUN = { total_ic = 30 } }
+			modifier = { factor = 3.5 HUN = { total_ic = 50 } }
+			modifier = { factor = 5.0 HUN = { total_ic = 75 } }
+			
+			modifier = { factor = 1.5 HUN = { total_amount_of_brigades = 100 } }
+			modifier = { factor = 2.5 HUN = { total_amount_of_brigades = 175 } }
+			modifier = { factor = 5.0 HUN = { total_amount_of_brigades = 250 } }
+			
+			modifier = { factor = 1.2 relation = { who = HUN value = 50 } }
+			modifier = { factor = 1.5 relation = { who = HUN value = 100 } }
+			modifier = { factor = 2.0 relation = { who = HUN value = 150 } }
+			modifier = { factor = 3.0 relation = { who = HUN value = 200 } }
+		}
+		threat = { who = all value = 5 }
+		CZE = { country_event = 1217 }
+	}
+
+}
+country_event = {
+
+	id = 1209
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		or = {
+			not = { exists = HUN }
+			HUN = { faction = allies }
+			HUN = { faction = comintern }
+		}
+	}
+	
+	title = "The First Vienna Award"
+	desc = "Czechoslovakia lived past its usefullness. What should we do with them?"
+	picture = "austria_alliance"
+	
+	option = {
+		name = "Historical"
+		ai_chance = { factor = 95 }
+		CZE = { country_event = 1211 }
+	}
+	
+	option = {
+		name = "Keep it all!"
+		ai_chance = { factor = 5 }
+		neutrality = -3
+		dissent = 2
+		threat = { who = all value = 10 }
+		CZE = { country_event = 1215 }
+	}
+
+}
+
+# Czechoslovakia - Reaction Event (Hungary exists)
+country_event = {
+
+	id = 1210
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1205"
+	desc = "EVTDESC1205"
+	picture = "CZE_Partition"
+
+	option = {
+		name = "EVTOPTA1205"			# Accept the inevitable
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.5
+				has_country_flag = "uk_protests"
+			}
+			modifier = {
+				factor = 0.0
+				or = {
+					and = {
+						is_in_any_faction = yes
+						not = { faction = axis }
+					}
+					guarantee = FRA
+					alliance_with = FRA
+					guarantee = SOV
+					alliance_with = SOV
+					guarantee = ENG
+					alliance_with = ENG
+					guarantee = ITA
+					alliance_with = ITA
+				}
+			}
+		}
+		any_owned = {
+			limit = { or = { is_core = UKR is_core = HUN } }
+			secede_province = HUN
+		}
+		POL = { country_event = 1223 }
+		release = SLO
+		Slovakia = { secede_province = SLO }
+		SLO = { split_troops = 0.2 }
+		GER = { split_troops = 0.2 }
+		GER = { country_event = 1212 }
+		HUN = { country_event = 1213 }
+	}
+	option = {
+		name = "EVTOPTB1205"			# Fight!
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5.5
+				has_country_flag = "uk_protests"
+			}
+		}
+		neutrality = -20
+		dissent = 30
+		relation = { who = GER value = -50 }
+		GER = { country_event = 1214 }
+	}
+}
+
+# Czechoslovakia - Reaction Event (Hungary does not exist)
+country_event = {
+
+	id = 1211
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1205"
+	desc = "EVTDESC1205"
+	picture = "czechs_annexed"
+	
+	option = {
+		name = "EVTOPTA1205"			# Accept the inevitable
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.5
+				has_country_flag = "uk_protests"
+			}
+			modifier = {
+				factor = 0.0
+				or = {
+					and = {
+						is_in_any_faction = yes
+						not = { faction = axis }
+					}
+					guarantee = FRA
+					alliance_with = FRA
+					guarantee = SOV
+					alliance_with = SOV
+					guarantee = ENG
+					alliance_with = ENG
+					guarantee = ITA
+					alliance_with = ITA
+				}
+			}
+		}
+		POL = { country_event = 1223 }
+		release = SLO
+		SLO = { split_troops = 0.5 }
+		GER = { country_event = 1212 }
+	}
+	option = {
+		name = "EVTOPTB1205"			# Fight!
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5.5
+				has_country_flag = "uk_protests"
+			}
+		}
+		neutrality = -20
+		dissent = 30
+		relation = { who = GER value = -50 }
+		GER = { country_event = 1214 }
+	}
+}
+
+# Response to Germany - Czechoslovakia agrees to Annexation
+country_event = {
+	
+	id = 1212
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1207"
+	desc = "EVTDESC1207"
+	picture = "czechs_annexed"
+
+	option = {
+		name = "EVTOPTA1207"			# Bohemia and Moravia to Germany
+		create_vassal = SLO
+		SLO = {
+			head_of_state = 31002
+			head_of_government = 31003
+			foreign_minister = 31037
+			armament_minister = 31005
+			minister_of_security = 31033
+			minister_of_intelligence = 31055
+			chief_of_staff = 31007 
+			chief_of_army = 31008
+			chief_of_navy = 31066
+			chief_of_air = 31069
+			manpower = 50
+			supplies = 2000
+			metal = 500
+			energy = 1000
+			rare_materials = 250
+			crude_oil = 500
+			fuel = 1000
+			money = 100
+		}
+		organisation = 5
+		popularity = 3
+		manpower = 100
+		inherit = CZE
+		set_country_flag = "czechoslovakia_annexed"
+	}
+}
+
+# Inform Hungary - Ruthenia is ceded to Hungary
+country_event = {
+
+	id = 1213
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1209"
+	desc = "EVTDESC1209"
+	picture = "ruthenia_ceded"
+
+	option = {
+		name = "EVTOPTA1209"			# Ok
+		neutrality = -5
+		dissent = -5
+		relation = { who = SLO value = 5 }
+		relation = { who = GER value = 25 }
+	}
+}
+
+# Response to Germany - Czechoslovakia decides to fight
+country_event = {
+
+	id = 1214
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1208"
+	desc = "EVTDESC1208"
+	picture = "czechs_fight"
+
+	option = {
+		name = "We will get what we want!"
+		ai_chance = { factor = 99 }
+		threat = { who = all value = 10 }
+		organisation = 5
+		popularity = 1
+		war = {
+			target = CZE
+			attacker_goal = { casus_belli = conquer }
+		}
+	}
+	option = {
+		name = "Whoa, that's too much! We back down..."
+		ai_chance = { factor = 1 }
+		dissent = 10
+		neutrality = 15
+		organisation = -15
+		popularity = -10
+	}
+}
+
+# Germany wants total annexation!
+country_event = {
+
+	id = 1215
+	
+	is_triggered_only = yes
+	
+	title = "Germany wants total annexation!"
+	desc = "This is an outrage! Germany wants to completely annex what's left of Czechoslovakia! We can't let that happen, and neither will the international community!"
+	picture = "czechs_fight"
+
+	option = {
+		name = "We won't stand down!"
+		ai_chance = { factor = 40 }
+		dissent = -20
+		national_unity = 10
+		FROM = { country_event = 1214 }
+	}
+	option = {
+		name = "We have no choice..."
+		ai_chance = { factor = 60 }
+		FROM = { country_event = 1216 }
+	}
+}
+
+# Response to Germany - Czechoslovakia agrees to total annexation
+country_event = {
+	
+	id = 1216
+
+	is_triggered_only = yes
+
+	title = "Czechoslovakia agreed"
+	desc = "The Czechoslovakian government agreed to our demand of complete annexation! A joyfull day!"
+	picture = "czechs_annexed"
+
+	option = {
+		name = "Czechoslovakia is fully annexed"
+		organisation = 5
+		popularity = 5
+		manpower = 150
+		inherit = CZE
+		threat = { who = all value = 3 }
+		dissent = 3
+		set_country_flag = "czechoslovakia_annexed"
+	}
+}
+
+# Germany wants to secede Slovakia to Hungary
+country_event = {
+
+	id = 1217
+	
+	is_triggered_only = yes
+	
+	title = "Germany wants partition"
+	desc = "Germany wants us to be partitioned between them and Hungary! Can we fight on two fronts at once?"
+	picture = "czechs_fight"
+
+	option = {
+		name = "We won't stand down!"
+		ai_chance = { factor = 65 }
+		dissent = -5
+		national_unity = 3
+		FROM = { country_event = 1214 }
+		HUN = { country_event = 1220 }
+	}
+	option = {
+		name = "We have no choice..."
+		ai_chance = { factor = 35 }
+		FROM = { country_event = 1218 }
+	}
+}
+
+# Response to Germany - Czechoslovakia agrees to partition
+country_event = {
+	
+	id = 1218
+
+	is_triggered_only = yes
+
+	title = "Czechoslovakia agreed"
+	desc = "The Czechoslovakian government agreed to the partition plan! A joyfull day!"
+	picture = "czechs_annexed"
+
+	option = {
+		name = "Czechoslovakia is partitioned"
+		manpower = 100
+		any_country = {
+			# Needed because of the 'exists = POL' condition...
+			limit = { tag = CZE exists = POL 2697 = { owned_by = CZE } }
+			2697 = { secede_province = POL }
+		}
+		CZE = {
+			any_owned = {
+				limit = { exists = HUN or = { is_core = SLO is_core = HUN } }
+				secede_province = HUN
+			}
+		}
+		organisation = 5
+		popularity = 1
+		HUN = { country_event = 1219 }
+		inherit = CZE
+		set_country_flag = "czechoslovakia_annexed"
+	}
+}
+
+# Inform Hungary - Ruthenia is ceded to Hungary
+country_event = {
+
+	id = 1219
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1209"
+	desc = "EVTDESC1209"
+	picture = "ruthenia_ceded"
+
+	option = {
+		name = "EVTOPTA1209"			# Ok
+		join_faction = axis
+		neutrality = -5
+		dissent = -5
+		relation = { who = GER value = 25 }
+	}
+}
+
+# Inform Hungary - Ruthenia is promised to Hungary
+country_event = {
+
+	id = 1220
+	
+	trigger = {
+		exists = HUN
+		not = { alliance_with = CZE }
+		not = { CZE = { faction = THIS } }
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Czechoslovakia fights German demands"
+	desc = "Germany sent an ultimatum to Czechoslovakia, in which they demanded the annexation of Bohemia and Moravia, while the Ruthenia and Slovakia would become our territory. Czechoslovakia didn't accept the demands. What should we do?"
+	picture = "czechs_fight"
+
+	option = {
+		name = "Offer help to Germany!"
+		ai_chance = {
+			factor = 90
+			modifier = { factor = 10.0 alliance_with = GER }
+			modifier = { factor = 10.0 GER = { faction = THIS } }
+		}
+		relation = { who = GER value = 25 }
+		neutrality = -5
+		war = {
+			target = CZE
+			attacker_goal = { casus_belli = aquire_territory region = Ruthenia }
+			attacker_goal = { casus_belli = aquire_territory region = Slovakia }
+		}
+		GER = { country_event = 1221 }
+	}
+	option = {
+		name = "Stay neutral!"
+		ai_chance = { factor = 5 }
+		neutrality = 5
+	}
+	option = {
+		name = "Offer help to Czechoslovakia!"
+		ai_chance = {
+			factor = 5
+			modifier = { factor = 0.0 alliance_with = GER }
+		}
+		relation = { who = GER value = 25 }
+		neutrality = -5
+		dissent = 5
+		war = {
+			target = GER
+			attacker_goal = { casus_belli = concede_defeat }
+		}
+		CZE = { country_event = 1222 }
+	}
+}
+
+# Hungary offers help to Germany
+country_event = {
+
+	id = 1221
+	
+	is_triggered_only = yes
+	
+	title = "Hungary offers help!"
+	desc = "We have declared war on Czechoslovakia, and Hungary offered to join our invasion!"
+	picture = "czechs_fight"
+
+	option = {
+		name = "Why not?"
+		ai_chance = { factor = 5 }
+		relation = { who = HUN value = 20 }
+		create_alliance = HUN
+	}
+	option = {
+		name = "That would be very helpful!"
+		ai_chance = { factor = 95 }
+		HUN = { join_faction = axis }
+	}
+	option = {
+		name = "Why should we care?..."
+		ai_chance = { factor = 5 }
+		relation = { who = HUN value = -20 }
+	}
+}
+
+# Hungary offers help to Czechoslovakia
+country_event = {
+
+	id = 1222
+	
+	is_triggered_only = yes
+	
+	title = "Hungary offers help!"
+	desc = "Germany declared war on us, and Hungary offered to join us against the invasion!"
+	picture = "czechs_fight"
+
+	option = {
+		name = "That would be very helpful!"
+		ai_chance = { factor = 99 }
+		national_unity = 3
+		create_alliance = HUN
+		relation = { who = HUN value = 20 }
+	}
+	option = {
+		name = "We don't need your help!"
+		ai_chance = { factor = 1 }
+		relation = { who = HUN value = -20 }
+	}
+}

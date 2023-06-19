@@ -1,0 +1,19 @@
+diplomatic_decisions = {
+
+	introduction = {
+		potential = {
+			ai = no
+			not = { date = 1936.1.5 }
+		}
+		allow = {
+			not = { date = 1936.1.5 }
+		}
+		effect = {
+			country_event = 9000
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

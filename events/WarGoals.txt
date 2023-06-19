@@ -1,0 +1,510 @@
+# Events triggered by War Goals
+
+# Concede Defeat
+country_event = {
+
+	is_triggered_only = yes
+
+	id = 800
+	
+	major = yes
+	
+	title = "The war is over"
+	desc = "We have been beaten by $FROMCOUNTRY$. We may continue our existence as an independent nation though."
+	picture = "constitutional"
+	
+	option = {
+		name = "We were beaten."
+		relation = { who = FROM value = -400 }	# Set relations to 50
+		relation = { who = FROM value = 250 }
+		non_aggression_pact = FROM				# Form a Non-Aggression Pact
+		leave_faction = axis					# Kick them out of any alliance they might have had
+		leave_faction = allies
+		leave_faction = comintern
+		any_country = {
+			end_military_access = THIS
+			end_guarantee = THIS
+			end_non_aggression_pact = THIS
+			leave_alliance = THIS
+		}
+		any_country = {
+			limit = {
+				war_with = THIS
+				or = {
+					vassal_of = FROM
+					alliance_with = FROM
+					faction = FROM
+				}
+			}
+			end_war = THIS
+		}
+		FROM = { end_war = THIS }
+	}
+}
+
+
+# Puppet
+country_event = {
+
+	is_triggered_only = yes
+	
+	id = 801
+	
+	major = yes
+	
+	title = "The war is over"
+	desc = "We have been beaten by $FROMCOUNTRY$. We will continue our existence as their puppet."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "The war is over."
+		leave_faction = axis
+		leave_faction = allies
+		leave_faction = comintern
+		any_country = {
+			end_military_access = THIS
+			end_guarantee = THIS
+			end_non_aggression_pact = THIS
+			leave_alliance = THIS
+		}
+		any_country = {
+			limit = {
+				war_with = THIS
+				or = {
+					vassal_of = FROM
+					alliance_with = FROM
+					faction = FROM
+				}
+			}
+			end_war = THIS
+		}
+		coup_by = FROM
+		FROM = { create_vassal = THIS }
+		relation = { who = FROM value = 400 }
+	}
+}
+
+
+# Civil War
+country_event = {
+
+	# trigger = {
+		# exists = THIS
+	# }
+
+	is_triggered_only = yes
+
+	id = 802
+	
+	title = "The Civil War is over!"
+	desc = "The long and bloody Civil War is finally over. Life can return to normal now."
+	picture = "constitutional"
+	
+	option = {
+		name = "The Civil War is over!"
+		FROM = { split_troops = 0.75 }
+		FROM = { inherit = THIS }
+	}
+
+}
+
+# Cut Down to Size
+country_event = {
+
+	is_triggered_only = yes
+
+	id = 803
+	
+	title = "We are defeated"
+	desc = "We are defeated and will be split up to multiple countries."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "It's over..."
+		
+		FROM = {
+			add_country_modifier = {
+				name = "liberator"
+				duration = 1
+			}
+		}
+		
+		# Korea
+		
+		# Only Non-Communists will force the release of Korea.
+		any_owned = {
+			limit = { not = { exists = KOR } is_core = KOR FROM = { not = { ideology_group = communism } } not = { THIS = { tag = PRK } } }
+			 KOR = { country_event = 804 }
+		}
+		# Only Communists will force the release of the PRK.
+		any_owned = {
+			limit = { not = { exists = PRK } is_core = PRK FROM = { ideology_group = communism } not = { THIS = { tag = KOR } } }
+			 PRK = { country_event = 804 }
+		}
+		
+		# China
+		
+		any_owned = { limit = { not = { exists = SIK } is_core = SIK } SIK = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = TIB } is_core = TIB } TIB = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = TAN } is_core = TAN } TAN = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = MAN } is_core = MAN } MAN = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = MEN } is_core = MEN } MEN = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = MON } is_core = MON } MON = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = CGX } is_core = CGX } CGX = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = CSX } is_core = CSX } CSX = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = CXB } is_core = CXB } CXB = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = CYN } is_core = CYN } CYN = { country_event = 804 } }
+		# Only Communists will force the release of the PRC.
+		any_owned = {
+			limit = { not = { exists = CHC } is_core = CHC FROM = { ideology_group = communism } not = { THIS = { tag = CHI } } }
+			 CHC = { country_event = 804 }
+		}
+		# Only Non-Communists will force the release of the RoC.
+		any_owned = {
+			limit = { not = { exists = CHI } is_core = CHI FROM = { not = { ideology_group = communism } } not = { THIS = { tag = CHC } } }
+			 CHI = { country_event = 804 }
+		}
+		
+		# India, Oceania
+		
+		any_owned = { limit = { not = { exists = PAK } is_core = PAK } PAK = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = CEY } is_core = CEY } CEY = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = BBU } is_core = BBU } BBU = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = MLY } is_core = MLY } MLY = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = IDC } is_core = IDC } IDC = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = INO } is_core = INO } INO = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = PHL } is_core = PHL } PHL = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = SIA } is_core = SIA } SIA = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = AFG } is_core = AFG } AFG = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = BHU } is_core = BHU } BHU = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = NEP } is_core = NEP } NEP = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = IND } is_core = IND } IND = { country_event = 804 } }
+		
+		# Africa and Middle-East
+		
+		any_owned = { limit = { not = { exists = LBY } is_core = LBY } LBY = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = ALG } is_core = ALG } ALG = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = TUN } is_core = TUN } TUN = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = MAD } is_core = MAD } MAD = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = MOR } is_core = MOR } MOR = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = CYP } is_core = CYP } CYP = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = MTA } is_core = MTA } MTA = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = KWT } is_core = KWT } KWT = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = EGY } is_core = EGY } EGY = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = LIB } is_core = LIB } LIB = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = ETH } is_core = ETH } ETH = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = IRQ } is_core = IRQ } IRQ = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = ISR } is_core = ISR } ISR = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = JOR } is_core = JOR } JOR = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = LEB } is_core = LEB } LEB = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = OMN } is_core = OMN } OMN = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = PAL } is_core = PAL } PAL = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = PER } is_core = PER } PER = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = SAU } is_core = SAU } SAU = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = SYR } is_core = SYR } SYR = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = TUR } is_core = TUR } TUR = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = YEM } is_core = YEM } YEM = { country_event = 804 } }
+		
+		# South America
+		
+		any_owned = { limit = { not = { exists = ARG } is_core = ARG } ARG = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = BOL } is_core = BOL } BOL = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = BRA } is_core = BRA } BRA = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = CHL } is_core = CHL } CHL = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = COL } is_core = COL } COL = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = ECU } is_core = ECU } ECU = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = GUY } is_core = GUY } GUY = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = PAR } is_core = PAR } PAR = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = PRU } is_core = PRU } PRU = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = URU } is_core = URU } URU = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = VEN } is_core = VEN } VEN = { country_event = 804 } }
+		
+		# Central and North America
+		
+		any_owned = { limit = { not = { exists = JAM } is_core = JAM } JAM = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = CUB } is_core = CUB } CUB = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = COS } is_core = COS } COS = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = DOM } is_core = DOM } DOM = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = GUA } is_core = GUA } GUA = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = HAI } is_core = HAI } HAI = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = HON } is_core = HON } HON = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = MEX } is_core = MEX } MEX = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = NIC } is_core = NIC } NIC = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = PNM } is_core = PNM } PNM = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = SAL } is_core = SAL } SAL = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = CAL } is_core = CAL } CAL = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = CSA } is_core = CSA } CSA = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = SIU } is_core = SIU } SIU = { country_event = 804 } }
+		
+		# Commonwealth
+		
+		any_owned = { limit = { not = { exists = AST } is_core = AST } AST = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = NZL } is_core = NZL } NZL = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = SAF } is_core = SAF } SAF = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = CAN } is_core = CAN } CAN = { country_event = 804 } }
+		
+		# Post-Soviet States
+		
+		any_owned = { limit = { not = { exists = RUS } is_core = RUS } RUS = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = ARM } is_core = ARM } ARM = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = AZB } is_core = AZB } AZB = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = BLR } is_core = BLR } BLR = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = GEO } is_core = GEO } GEO = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = UKR } is_core = UKR } UKR = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = KAZ } is_core = KAZ } KAZ = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = KYG } is_core = KYG } KYG = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = TRK } is_core = TRK } TRK = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = TAJ } is_core = TAJ } TAJ = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = UZB } is_core = UZB } UZB = { country_event = 804 } }
+		
+		# Europe
+		
+		any_owned = { limit = { not = { exists = MAC } is_core = MAC } MAC = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = BOS } is_core = BOS } BOS = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = MTN } is_core = MTN } MTN = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = SER } is_core = SER } SER = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = SLV } is_core = SLV } SLV = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = ICL } is_core = ICL } ICL = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = DEN } is_core = DEN } DEN = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = EST } is_core = EST } EST = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = FIN } is_core = FIN } FIN = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = LAT } is_core = LAT } LAT = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = LIT } is_core = LIT } LIT = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = NOR } is_core = NOR } NOR = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = SWE } is_core = SWE } SWE = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = IRE } is_core = IRE } IRE = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = LUX } is_core = LUX } LUX = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = AUS } is_core = AUS } AUS = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = CZE } is_core = CZE } CZE = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = CRO } is_core = CRO } CRO = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = POL } is_core = POL } POL = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = ROM } is_core = ROM } ROM = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = SLO } is_core = SLO } SLO = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = SCH } is_core = SCH } SCH = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = POR } is_core = POR } POR = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = ALB } is_core = ALB } ALB = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = BUL } is_core = BUL } BUL = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = GRE } is_core = GRE } GRE = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = YUG } is_core = YUG } YUG = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = BEL } is_core = BEL } BEL = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = HOL } is_core = HOL } HOL = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = HUN } is_core = HUN } HUN = { country_event = 804 } }
+		
+		# Only Fascists will force the release of the Spanish State.
+		any_owned = {
+			limit = { not = { exists = SPA } is_core = SPA FROM = { ideology_group = fascism } not = { THIS = { tag = SPR } } }
+			 SPA = { country_event = 804 }
+		}
+		# Only Non-Fascists will force the release of the Spanish Republic.
+		any_owned = {
+			limit = { not = { exists = SPR } is_core = SPR FROM = { not = { ideology_group = fascism } } not = { THIS = { tag = SPA } } }
+			 SPR = { country_event = 804 }
+		}
+		
+		# Majors
+		
+		any_owned = { limit = { not = { exists = ENG } is_core = ENG } ENG = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = USA } is_core = USA } USA = { country_event = 804 } }
+		any_owned = { limit = { not = { exists = JAP } is_core = JAP } JAP = { country_event = 804 } }
+		# Only Communists will force the release of the Soviet Union.
+		any_owned = {
+			limit = { not = { exists = SOV } is_core = SOV FROM = { ideology_group = communism } not = { THIS = { tag = RUS } } }
+			 SOV = { country_event = 804 }
+		}
+		# Only Non-Fascists will force the release of the French Republic.
+		any_owned = {
+			limit = { not = { exists = FRA } is_core = FRA FROM = { not = { ideology_group = fascism } } not = { THIS = { tag = VIC } } }
+			 FRA = { country_event = 804 }
+		}
+		# Only Fascists will force the release of the French State.
+		any_owned = {
+			limit = { not = { exists = VIC } is_core = VIC FROM = { ideology_group = fascism } not = { THIS = { tag = FRA } } }
+			 VIC = { country_event = 804 }
+		}
+		# Only Non-Fascists will force the release of the Republic of Italy.
+		any_owned = {
+			limit = { not = { exists = RSI } is_core = RSI FROM = { not = { ideology_group = fascism } } not = { THIS = { tag = ITA } } }
+			 RSI = { country_event = 804 }
+		}
+		# Only Fascists will force the release of Fascistic Italy.
+		any_owned = {
+			limit = { not = { exists = ITA } is_core = ITA FROM = { ideology_group = fascism } not = { THIS = { tag = RSI } } }
+			 ITA = { country_event = 804 }
+		}
+		# Only Fascists will force the release of Nazi Germany. And even then, the others won't.
+		any_owned = {
+			limit = { not = { exists = GER } is_core = GER FROM = { ideology_group = fascism } not = { tag = DDR } not = { THIS = { tag = DFR } } }
+			 GER = { country_event = 804 }
+		}
+		# Only Communists will force the release of the DDR.
+		any_owned = {
+			limit = { not = { exists = DDR } is_core = DDR FROM = { ideology_group = communism } not = { tag = GER } not = { THIS = { tag = DFR } } }
+			 DDR = { country_event = 804 }
+		}
+		# Only Democrats will force the release of the DFR.
+		any_owned = {
+			limit = { not = { exists = DFR } is_core = DFR FROM = { ideology_group = democracy } not = { tag = DDR } not = { THIS = { tag = GER } } }
+			 DFR = { country_event = 804 }
+		}
+	}
+}
+
+country_event = {
+
+	id = 804
+
+	is_triggered_only = yes
+	
+	title = "Freedom at last!"
+	desc = "After a long time of foreign oppression we are finally free again!"
+	picture = "law"
+	
+	option = {
+		name = "This shall be a national holiday!"
+		FROM = { any_owned = { limit = { is_core = THIS } secede_province = THIS } }
+		any_country = { limit = { has_country_modifier = "liberator" } relation = { who = THIS value = 100 } }
+	}
+}
+
+# Liberate Puppets
+country_event = {
+
+	id = 805
+	
+	is_triggered_only = yes
+	
+	title = "We are defeated"
+	desc = "As per the peace terms, we will have to release our puppets."
+	picture = "FRA_liberated"
+	
+	option = {
+		name = "So long..."
+		any_country = {
+			limit = { vassal_of = THIS }
+			country_event = 7201
+		}
+	}
+}
+
+# Force Ideology
+country_event = {
+
+	id = 806
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { ideology_group = democracy }
+	}
+	
+	title = "The regime resigns"
+	desc = "After being utterly defeated in this war, the government has no choice but to resign."
+	picture = "politics1"
+	
+	option = {
+		name = "Oh well..."
+		organisation = -100		# The current party will be removed, no matter what!
+		popularity = -100
+		government = election	# This is required to make sure the election replaces the cabinet!
+		do_election = THIS
+		country_event = 809
+	}	
+}
+
+country_event = {
+
+	id = 807
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		or = {
+			FROM = { ideology_group = fascism }
+			FROM = { ideology_group = communism }
+		}
+	}
+	
+	title = "The regime falls"
+	desc = "After being utterly defeated in this war, the government has no choice but to resign."
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Oh well..."
+		# First of all, exterminate the current ruling party!
+		organisation = -75
+		# This will be a bit complicated due to engine limitations.
+		coup_by = FROM			# Put in place the appropriate party
+		popularity = 100		# Make sure the party has enough popularity to win an election right away!
+		government = election	# This is required to make sure the election replaces the cabinet!
+		do_election = THIS		# Do elections to replace the cabinet!
+		coup_by = FROM			# Put back the appropriate party regardless of anything and also the appropriate government type!
+		country_event = 808		# This event will take care of the political power and make the country completely independent
+	}
+}
+
+country_event = {
+
+	id = 808
+	
+	is_triggered_only = yes
+	
+	title = "The new government forms"
+	desc = "The new government is formed based on foreign support. This gives them a lot of political strength but leaves them with little to no popular support."
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "At least we are in power..."
+		organisation = 50
+		popularity = -90
+		GOD = { split_troops = 1.0 }
+		GOD = { country_event = 7202 }
+	}
+}
+
+country_event = {
+
+	id = 809
+	
+	is_triggered_only = yes
+	
+	title = "The new government forms"
+	desc = "With free elections held, the new government will have a strong popular support, despite of them being helped into power by foreign intervention."
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Hurray!"
+		organisation = 50
+		GOD = { split_troops = 1.0 }
+		GOD = { country_event = 7202 }
+	}
+}
+
+country_event = {
+	
+	id = 810
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		exists = USA
+		not = { tag = USA }
+		any_owned_province = {
+			is_capital = yes
+			or = {
+				continent = north_america
+				continent = south_america
+				continent = Central_America
+				continent = Caribbean
+			} 
+		}
+	}
+	
+	title = "USA angered"
+	desc = "Too bad..."
+	picture = "politician"
+	
+	option = {
+		name = "This can't be good..."
+		threat = { who = USA value = 25 }
+	}
+}

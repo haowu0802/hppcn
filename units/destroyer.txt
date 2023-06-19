@@ -1,0 +1,49 @@
+destroyer = {
+	type = naval
+	sprite = Destroyer
+	active = no
+	
+	hull = 1
+	
+	#Size Definitions
+	max_strength = 100
+	default_organisation = 30
+	default_morale = 0.30
+	officers = 25
+
+	#Building Costs
+	build_cost_ic = 4.50
+	build_cost_manpower = 1.00
+	build_time = 200
+
+	#Misc Abilities
+	maximum_speed = 32.00
+	transport_capability = 0.00
+	supply_consumption = 0.25
+	fuel_consumption = 0.56
+	range = 2500.00
+	distance = 0.12
+	radio_strength = 1
+
+	#Detection Abilities
+	surface_detection = 3.00
+	air_detection = 1.00
+	sub_detection = 5.00
+	visibility = 50.00
+
+	#Defensive Abilities
+	sea_defence = 15.00
+	air_defence = 3.00
+
+	#Offensive Abilities
+	convoy_attack = 0.50
+	sea_attack = 3.00
+	sub_attack = 5.00
+	air_attack = 1.50
+	shore_bombardment = 0.00
+
+	completion_size = 0.5
+	on_completion = destroyer_practical
+	
+	priority = 4
+}

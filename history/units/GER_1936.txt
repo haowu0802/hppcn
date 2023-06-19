@@ -1,0 +1,477 @@
+theatre = {
+	name = "Oberkommando Ost"
+	location = 1861
+	regiment = { type = hq_brigade name = "Oberkommando Ost HQ" historical_model = 1 }
+	army = {	
+		name = "1 Wehrmachtgruppenkommando"
+		location = 1861
+		regiment = { type = hq_brigade name = "1 Wehrmachtgruppenkommando HQ" historical_model = 1 }
+		corps = {
+			name = "II. Armeekorps"
+			location = 1742
+			regiment = { type = hq_brigade name = "II. Armeekorps HQ" historical_model = 1 }
+			division= {
+				name = "2. Infanterie-Division"
+				location = 1742
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 5" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 25" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 92" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 2" experience = 10 historical_model = 3 }			
+			}
+			division= {
+				name = "12. Infanterie-Division"
+				location = 1742
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 27" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 48" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 89" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 12" experience = 10 historical_model = 2 }	
+			}
+		}
+		corps = {
+			name = "III. Armeekorps"
+			location = 1977
+			regiment = { type = hq_brigade name = "III. Armeekorps HQ" historical_model = 1 }
+			division= {
+				name = "3. Infanterie-Division"
+				location = 1977
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 8" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 29" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 50" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 3" experience = 10 historical_model = 2 }			
+			}
+			division= {
+				name = "23. Infanterie-Division"
+				location = 1920
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 9" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 67" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 68" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 23" experience = 10 historical_model = 3 }
+			}
+		}
+		corps = {
+			name = "Panzertruppenkommando"
+			location = 1861
+			regiment = { type = hq_brigade name = "Panzertruppenkommando HQ" historical_model = 1 }
+			division= {
+				name = "1. Panzer-Division"
+				location = 1861
+				regiment = { type = light_armor_brigade name = "Panzer-Regiment 1" experience = 10 historical_model = 1 }
+				regiment = { type = light_armor_brigade name = "Panzer-Regiment 2" experience = 10 historical_model = 1 }
+				regiment = { type = motorized_brigade name = "Schützen-Regiment 1" experience = 10 historical_model = 0 }
+				regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 73" experience = 10 historical_model = 2 }
+			}
+			division= {
+				name = "2. Panzer-Division"
+				location = 1861
+				regiment = { type = light_armor_brigade name = "Panzer-Regiment 3" experience = 10 historical_model = 1 }
+				regiment = { type = light_armor_brigade name = "Panzer-Regiment 4" experience = 10 historical_model = 1 }
+				regiment = { type = motorized_brigade name = "Schützen-Regiment 2" experience = 10 historical_model = 0 }
+				regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 74" experience = 10 historical_model = 2 }
+			}
+			division= {
+				name = "3. Panzer-Division"
+				location = 1861
+				regiment = { type = light_armor_brigade name = "Panzer-Regiment 5 'Wünsdorf'" experience = 10 historical_model = 2 }
+				regiment = { type = light_armor_brigade name = "Panzer-Regiment 6 'Neuruppin'" experience = 10 historical_model = 2 }
+				regiment = { type = motorized_brigade name = "Schützen-Regiment 3 'Eberswalde'" experience = 10 historical_model = 0 }
+				regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 75" experience = 10 historical_model = 2 }
+			}
+		}
+		division= {		
+			name = "Waffen-SS Standarte"	
+			location = 1861	
+			regiment = { type = motorized_brigade name = "SS Infanterie-Regiment (mot) 'LAH'" experience = 45 historical_model = 0 }	
+			regiment = { type = motorized_brigade name = "SS Infanterie-Regiment (mot) 'Germania'" experience = 45 historical_model = 0 }	
+			regiment = { type = motorized_brigade name = "SS Infanterie-Regiment (mot) 'Deutschland'" experience = 45 historical_model = 0 }	
+		}		
+	}
+	army = {	
+		name = "3 Wehrmachtgruppenkommando"
+		location = 2208
+		regiment = { type = hq_brigade name = "3 Wehrmachtgruppenkommando HQ" historical_model = 1 }
+		corps = {
+			name = "IV. Armeekorps"
+			location = 2208
+			regiment = { type = hq_brigade name = "IV. Armeekorps HQ" historical_model = 1 }
+			division= {
+				name = "4. Infanterie-Division"
+				location = 2208
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 10" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 52" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 103" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 4" experience = 10 historical_model = 3 }
+			}
+			division= {
+				name = "14. Infanterie-Division"
+				location = 2207
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 11" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 53" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 101" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 14" experience = 10 historical_model = 2 }
+			}
+			division= {
+				name = "24. Infanterie-Division"
+				location = 2264
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 31" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 32" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 102" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 24" experience = 10 historical_model = 3 }
+			}
+		}
+		corps = {
+			name = "VIII. Armeekorps"
+			location = 2153
+			regiment = { type = hq_brigade name = "VIII. Armeekorps HQ" historical_model = 1 }
+			division= {
+				name = "8. Infanterie-Division"
+				location = 2385
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 28" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 38" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 84" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 8" experience = 10 historical_model = 2 }		
+			}
+			division= {
+				name = "18. Infanterie-Division"
+				location = 2095
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 30" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 51" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 54" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 18" experience = 10 historical_model = 3 }			
+			}	
+		}
+	}
+	corps = {
+		name = "I. Armeekorps"
+		location = 1527
+		regiment = { type = hq_brigade name = "I. Armeekorps HQ" historical_model = 1 }
+		division= {
+			name = "1. Infanterie-Division"
+			location = 1527
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 1" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 22" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 43" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 1" experience = 10 historical_model = 2 }		
+		}
+		division= {
+			name = "11. Infanterie-Division"
+			location = 1748
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 2" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 23" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 44" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 11" experience = 10 historical_model = 3 }
+		}
+		division= {
+			name = "21. Infanterie-Division"
+			location = 1627
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 3" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 24" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 45" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 21" experience = 10 historical_model = 2 }
+		}
+	}	
+	navy = {
+		name = "Ostsee Flotte"
+		base = 1527
+		location = 1527
+		ship = { type = battleship name = "KMS Schleswig-Holstein" experience = 10 historical_model = 0 }
+		ship = { type = battleship name = "KMS Schlesien" experience = 10 historical_model = 0 }
+		ship = { type = light_cruiser name = "KMS Königsberg" experience = 10 historical_model = 5 }
+		ship = { type = light_cruiser name = "KMS Karlsruhe" experience = 10 historical_model = 5 }
+		ship = { type = destroyer name = "1. Zerstörergeschwader" experience = 10 historical_model = 0 }
+		ship = { type = destroyer name = "2. Zerstörergeschwader" experience = 10 historical_model = 4 }
+		ship = { type = destroyer name = "3. Zerstörergeschwader" experience = 10 historical_model = 4 }
+	}
+	navy = {
+		name = "Truppentransporterflotte"
+		base = 1742
+		location = 1742
+		ship = { type = transport_ship name = "1. Truppentransporterflotille" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "2. Truppentransporterflotille" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "3. Truppentransporterflotille" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "4. Truppentransporterflotille" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "I. Fliegerkorps"
+		base = 1861
+		location = 1861
+		wing = { type = interceptor name = "JG 26 'Schlageter'" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "Luftflotte II"
+		base = 1861
+		location = 1861
+		wing = { type = tactical_bomber name = "KG 2 'Holzhammer'" experience = 10 historical_model = 0 }
+		wing = { type = tactical_bomber name = "KG 3 'Blitz'" experience = 10 historical_model = 0 }
+		wing = { type = tactical_bomber name = "Sturzkampfgeschwader 51" experience = 10 historical_model = 0 }
+		wing = { type = interceptor name = "JG 2 'Richthofen'" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "Luftflotte III"
+		base = 2153
+		location = 2153
+		wing = { type = tactical_bomber name = "KG 53 'Legion Condor'" experience = 10 historical_model = 2 }
+		wing = { type = tactical_bomber name = "Kampfgeschwader 25" experience = 10 historical_model = 2 }
+		wing = { type = tactical_bomber name = "KG 30 'Adler'" experience = 10 historical_model = 2 }
+	}
+}	
+theatre = {
+	name = "Oberkommando Nordwest"
+	location = 1857
+	regiment = { type = hq_brigade name = "Oberkommando Nordwest HQ" historical_model = 1 }
+	army = {	
+		name = "2 Wehrmachtgruppenkommando"
+		location = 2145 # Kassel
+		regiment = { type = hq_brigade name = "2 Wehrmachtgruppenkommando HQ" historical_model = 1 }	
+		corps = {
+			name = "VI. Armeekorps"
+			location = 1914
+			regiment = { type = hq_brigade name = "VI. Armeekorps HQ" historical_model = 1 }
+			division= {
+				name = "6. Infanterie-Division"
+				location = 1970
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 18" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 37" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 58" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 6" experience = 10 historical_model = 2 }
+			}
+			division= {
+				name = "16. Infanterie-Division"
+				location = 1914
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 60" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 64" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 79" experience = 10 historical_model = 2 }
+				regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 16" experience = 10 historical_model = 3 }
+			}
+		}
+		corps = {
+			name = "IX. Armeekorps"
+			location = 2374
+			regiment = { type = hq_brigade name = "IX. Armeekorps HQ" historical_model = 1 }
+			division= {
+				name = "9. Infanterie-Division"
+				location = 2317
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 36" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 57" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 116" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 9" experience = 10 historical_model = 3 }
+			}
+			division= {
+				name = "15. Infanterie-Division"
+				location = 2434
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 81" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 88" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 106" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 15" experience = 10 historical_model = 2 }
+			}
+			division= {
+				name = "29. Infanterie-Division"
+				location = 2374
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 15" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 29" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 71" experience = 10 historical_model = 2 }
+				regiment = { type = truck_towed_support_brigade name = "Artillerie-Regiment 29" experience = 10 historical_model = 2 }
+			}
+		}		
+		corps = {
+			name = "X. Armeekorps"
+			location = 1737
+			regiment = { type = hq_brigade name = "X. Armeekorps HQ" historical_model = 1 }
+			division= {
+				name = "19. Infanterie-Division"
+				location = 1857
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 59" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 73" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 74" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 19" experience = 10 historical_model = 3 }
+			}			
+			division= {
+				name = "20. Infanterie-Division"
+				location = 1737
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 69" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 76" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 90" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 20" experience = 10 historical_model = 2 }
+			}
+			division= {
+				name = "22. Infanterie-Division"
+				location = 1736
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 16" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 47" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "Infanterie-Regiment 65" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 22" experience = 10 historical_model = 3 }
+			}
+		}		
+		division= {
+			name = "13. Infanterie-Division"
+			location = 2145
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 33" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 66" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 93" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 13" experience = 10 historical_model = 2 }
+		}
+	}
+	corps = {
+		name = "V. Armeekorps"
+		location = 2687
+		regiment = { type = hq_brigade name = "V. Armeekorps HQ" historical_model = 1 }
+		division= {
+			name = "5. Infanterie-Division"
+			location = 2884
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 14" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 56" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 75" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 5" experience = 10 historical_model = 3 }
+		}
+		division= {
+			name = "25. Infanterie-Division"
+			location = 2687
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 13" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 35" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 119" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 25" experience = 10 historical_model = 2 }
+		}
+	}
+	corps = {
+		name = "VII. Armeekorps"
+		location = 2952
+		regiment = { type = hq_brigade name = "VII. Armeekorps HQ" historical_model = 1 }
+		division= {
+			name = "7. Infanterie-Division"
+			location = 2952
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 19" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 61" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 62" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 7" experience = 10 historical_model = 3 }
+		}
+		division= {
+			name = "10. Infanterie-Division"
+			location = 2690
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 20" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 41" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 85" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 10" experience = 10 historical_model = 2 }
+		}
+		division= {
+			name = "17. Infanterie-Division"
+			location = 2558
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 21" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 55" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "Infanterie-Regiment 95" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "Artillerie-Regiment 17" experience = 10 historical_model = 3 }
+		}
+	}
+	navy = {
+		name = "Kriegsmarine"
+		base = 1570
+		location = 1570
+		ship = { type = heavy_cruiser name = "KMS Deutschland" experience = 10 historical_model = 6 }
+		ship = { type = heavy_cruiser name = "KMS Admiral Scheer" experience = 10 historical_model = 6 }
+		ship = { type = light_cruiser name = "KMS Nürnberg" experience = 10 historical_model = 6 }
+		ship = { type = light_cruiser name = "KMS Leipzig" experience = 10 historical_model = 6 }
+		ship = { type = light_cruiser name = "KMS Emden" experience = 10 historical_model = 4 }		
+		ship = { type = light_cruiser name = "KMS Köln" experience = 10 historical_model = 5 }
+		ship = { type = destroyer name = "4. Zerstörergeschwader" experience = 10 historical_model = 4 }
+	}
+	navy = {
+		name = "I. Unterseebootsflotte 'Weddigen'"
+		base = 1572
+		location = 1572
+		ship = { type = submarine name = "1. Unterseebootsflottille" experience = 10 historical_model = 9 }
+	}
+	navy = {
+		name = "II. Unterseebootsflotte 'Saltzwede'"
+		base = 1570
+		location = 1570
+		ship = { type = submarine name = "2. Unterseebootsflottille" experience = 10 historical_model = 10 }
+		ship = { type = submarine name = "3. Unterseebootsflottille" experience = 10 historical_model = 10 }
+	}	
+	air = {
+		name = "Luftflotte IV"
+		base = 2145
+		location = 2145
+		wing = { type = cas name = "Sturzkampfgeschwader 54" experience = 10 historical_model = 0 }
+		wing = { type = cas name = "Sturzkampfgeschwader 55" experience = 10 historical_model = 0 }
+		wing = { type = tactical_bomber name = "KG 1 'Hindenburg'" experience = 10 historical_model = 1 }
+		wing = { type = interceptor name = "JG 3 'Udet'" experience = 10 historical_model = 1 }
+	}
+	air = {
+		name = "Luftflotte V"
+		base = 2952
+		location = 2952
+		wing = { type = tactical_bomber name = "KG 4 'General Wever'" experience = 10 historical_model = 1 }
+		wing = { type = cas name = "Sturzkampfgeschwader 51" experience = 10 historical_model = 0 }
+		wing = { type = cas name = "Sturzkampfgeschwader 52" experience = 10 historical_model = 0 }
+		wing = { type = cas name = "Sturzkampfgeschwader 53" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "Luftflotte VI"
+		base = 2952
+		location = 2952
+		wing = { type = naval_bomber name = "Seeaufklärungsgruppe 125" experience = 10 historical_model = 0 }
+		wing = { type = naval_bomber name = "Seeaufklärungsgruppe 126" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "Luftflotte VII"
+		base = 2952
+		location = 2952
+		wing = { type = transport_plane name = "Kampfgeschwader zbV 1" experience = 10 historical_model = 1 }
+		wing = { type = transport_plane name = "Kampfgeschwader zbV 2" experience = 10 historical_model = 1 }
+		wing = { type = transport_plane name = "Kampfgeschwader zbV 3" experience = 10 historical_model = 1 }
+	}	
+}
+military_construction = {
+	country = GER
+	heavy_cruiser = {
+		name = "KMS Admiral Graf Spee"
+		historical_model = 6
+	}
+	cost = 5.60
+	progress = 99
+	duration = 6
+}
+military_construction = {
+	country = GER
+	destroyer = {
+		name = "5. Zerstörergeschwader"
+		historical_model = 7
+	}
+	cost = 2.00
+	progress = 6
+	duration = 499
+}
+military_construction = {
+	country = GER
+	submarine = {
+		name = "4. Unterseebootsflottille"
+		historical_model = 10
+	}
+	cost = 1.60
+	progress = 99
+	duration = 18
+}

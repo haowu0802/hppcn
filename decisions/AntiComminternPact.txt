@@ -1,0 +1,96 @@
+diplomatic_decisions = {
+
+	berlin_rome_axis = {
+		major = yes
+		potential = {
+			tag = ITA
+			is_in_any_faction = no
+			exists = GER
+			not = { alliance_with = GER }	# Wouldn't be any reason to do it then.
+			date = 1936.10.1
+			not = { has_country_flag = "berlin_rome_axis" }
+		}
+		allow = {
+			not = { date = 1937.10.1 }	# There's a time limit! ;)
+			relation = { who = GER value = 0 }
+		}
+		effect = {
+			set_country_flag = "berlin_rome_axis"
+			neutrality = -5
+			GER = { country_event = 1021 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	propose_the_anti_comintern_pact = {
+		major = yes
+		potential = {
+			tag = GER
+			not = { has_country_flag = "anti_comintern" }
+			not = { has_global_flag = "anti_comintern_proposed" }
+			exists = SOV
+			date = 1936.10.1
+		}
+		allow = {
+			war = no
+			or = {
+				relation = { who = ITA value = 75 }
+				relation = { who = JAP value = 75 }
+			}
+		}
+		effect = {
+			set_country_flag = "anti_comintern"
+			set_global_flag = "anti_comintern_proposed"
+			neutrality = -5
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = -10 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sign_the_anti_comintern_pact = {
+		major = yes
+		potential = {
+			exists = GER
+			not = { tag = GER }
+			GER = { has_country_flag = "anti_comintern" }
+			not = { GER = { has_country_flag = "signator_pending" } }
+			not = { has_country_flag = "anti_comintern_offered" }
+			or = {
+				and = {
+					not = { base_neutrality = 75 }
+					ideology_group = fascism
+					is_subject = no	# Only Axis-puppets can sign!
+				}
+				faction = axis		# Axis members can also sign
+			}
+		}
+		allow = {
+			or = {
+				faction = axis
+				relation = { who = GER value = 75 }
+			}
+		}
+		effect = {
+			set_country_flag = "anti_comintern_offered"
+			GER = { set_country_flag = "signator_pending" }
+			neutrality = -5
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = -10 }
+			}
+			GER = { country_event = 1020 }
+			end_guarantee = AUS # Necessary because of the Italian Guarantee of Austria, to avoid a war between Italy and Germany.
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

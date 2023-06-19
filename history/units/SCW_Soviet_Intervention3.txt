@@ -1,0 +1,16 @@
+division= {
+	name = "2. Brigados Soviéticos"
+	location = 4862
+	is_reserve = yes
+	regiment = { type = light_armor_brigade name = "2. Blindada Soviéticos" builder = "SOV" historical_model = 2 }
+	regiment = { type = motorized_brigade name = "6. Infantería Soviéticos" builder = "SOV" historical_model = 0 }
+	regiment = { type = motorized_brigade name = "7. Infantería Soviéticos" builder = "SOV" historical_model = 0 }
+	regiment = { type = truck_towed_support_brigade name = "2. Vehículos Blindados Soviéticos" builder = "SOV" historical_model = 3 }
+}
+air = {
+	name = "Cazas Soviéticos"
+	base = 4862
+	location = 4862
+	wing = { type = interceptor name = "Cazas Soviéticos 2" historical_model = 1 }
+	wing = { type = interceptor name = "Cazas Soviéticos 3" historical_model = 1 }
+}

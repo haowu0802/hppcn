@@ -1,0 +1,138 @@
+theatre = {
+	name = "Shanxi Zuigao Tongshuai Bu"
+	location = 5174
+	regiment = { type = hq_brigade name = "Taiyuan HQ" historical_model = 0 }
+	army = {
+			name = "2. Jun"
+			location = 5017
+			regiment = { type = hq_brigade name = "2. Jun HQ" historical_model = 0 }			
+			corps = {
+				name = "7. Juntuán"
+				location = 5017
+				regiment = { type = hq_brigade name = "7. Juntuán HQ" historical_model = 0 }		
+				division= {
+					name = "11. Bubing Shi"
+					location = 5017
+					is_reserve = yes
+					regiment = { type = militia_brigade name = "3. Mínbing Tuán" experience = 5 historical_model = 0 }
+					regiment = { type = militia_brigade name = "4. Mínbing Tuán" experience = 5 historical_model = 0 }
+				}
+				division= {
+					name = "12. Bubing Shi"
+					location = 5017
+					is_reserve = yes
+					regiment = { type = militia_brigade name = "5. Mínbing Tuán" experience = 5 historical_model = 0 }
+					regiment = { type = militia_brigade name = "6. Mínbing Tuán" experience = 5 historical_model = 0 }
+				}
+			}			
+		}
+	corps = {
+				name = "9. Juntuán"
+				location = 7385
+				regiment = { type = hq_brigade name = "9. Juntuán HQ" historical_model = 0 }		
+				division= {
+					name = "15. Bubing Shi"
+					location = 7385
+					is_reserve = yes
+					regiment = { type = militia_brigade name = "11. Mínbing Tuán" experience = 5 historical_model = 0 }
+					regiment = { type = militia_brigade name = "12. Mínbing Tuán" experience = 5 historical_model = 0 }
+				}
+				division= {
+					name = "16. Bubing Shi"
+					location = 7385
+					is_reserve = yes
+					regiment = { type = militia_brigade name = "13. Mínbing Tuán" experience = 5 historical_model = 0 }
+					regiment = { type = militia_brigade name = "14. Mínbing Tuán" experience = 5 historical_model = 0 }
+				}				
+			}	
+	corps = {
+				name = "8. Juntuán"
+				location = 7378
+				regiment = { type = hq_brigade name = "8. Juntuán HQ" historical_model = 0 }		
+				division= {
+					name = "13. Bubing Shi"
+					location = 7378
+					is_reserve = yes
+					regiment = { type = militia_brigade name = "7. Mínbing Tuán" experience = 5 historical_model = 0 }
+					regiment = { type = militia_brigade name = "8. Mínbing Tuán" experience = 5 historical_model = 0 }
+				}
+				division= {
+					name = "14. Bubing Shi"
+					location = 7378
+					is_reserve = yes
+					regiment = { type = militia_brigade name = "9. Mínbing Tuán" experience = 5 historical_model = 0 }
+					regiment = { type = militia_brigade name = "10. Mínbing Tuán" experience = 5 historical_model = 0 }
+				}				
+			}
+	corps = {
+		name = "Shanxi Jingbei Guófáng Juntuán"
+		location = 5174
+		regiment = { type = hq_brigade name = "Shanxi Jingbei Guófáng Juntuán HQ" historical_model = 0 }
+		division= {
+			name = "1. Guófáng Shi"
+			location = 5174
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "1. Zhujun Mou Tuán" experience = 5 historical_model = 0 }
+			regiment = { type = garrison_brigade name = "2. Zhujun Mou Tuán" experience = 5 historical_model = 0 }
+		}
+		division= {
+			name = "2. Guófáng Shi"
+			location = 5174
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "3. Zhujun Mou Tuán" experience = 5 historical_model = 0 }
+			regiment = { type = garrison_brigade name = "4. Zhujun Mou Tuán" experience = 5 historical_model = 0 }
+		}
+		division= {
+			name = "3. Guófáng Shi"
+			location = 5141
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "5. Zhujun Mou Tuán" experience = 5 historical_model = 0 }
+			regiment = { type = garrison_brigade name = "6. Zhujun Mou Tuán" experience = 5 historical_model = 0 }
+		}
+		division= {
+			name = "4. Guófáng Shi"
+			location = 5206
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "7. Zhujun Mou Tuán" experience = 5 historical_model = 0 }
+			regiment = { type = garrison_brigade name = "8. Zhujun Mou Tuán" experience = 5 historical_model = 0 }
+		}		
+	}
+	corps = {
+		name = "1. Shanxi Juntuán"
+		location = 5271
+		regiment = { type = hq_brigade name = "1. Shanxi Juntuán HQ" historical_model = 0 }
+		division= {
+			name = "Chahar Jingbei Shi"
+			location = 5174
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "1. Mínbing Tuán" experience = 5 historical_model = 0 }
+			regiment = { type = militia_brigade name = "2. Mínbing Tuán" experience = 5 historical_model = 0 }
+		}		
+		division= {
+			name = "Hebei Jingbei Shi"
+			location = 5206
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "3. Mínbing Tuán" experience = 5 historical_model = 0 }
+			regiment = { type = militia_brigade name = "4. Mínbing Tuán" experience = 5 historical_model = 0 }
+		}
+	}	
+	corps = {
+		name = "2. Shanxi Juntuán"
+		location = 7418
+		regiment = { type = hq_brigade name = "2. Shanxi Juntuán HQ" historical_model = 0 }		
+		division= {
+			name = "Suiyuan Jingbei Shi"
+			location = 7418
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "5. Mínbing Tuán" experience = 5 historical_model = 0 }
+			regiment = { type = militia_brigade name = "6. Mínbing Tuán" experience = 5 historical_model = 0 }
+		}
+		division = {
+			name = "Shanxi Baoantui Shi"
+			location = 7418
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "7. Mínbing Tuán" experience = 5 historical_model = 0 }
+			regiment = { type = militia_brigade name = "8. Mínbing Tuán" experience = 5 historical_model = 0 }
+		}
+	}
+}

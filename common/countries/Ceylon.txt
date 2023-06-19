@@ -1,0 +1,610 @@
+color = { 255  191  0 }
+graphical_culture = Generic			
+			
+
+
+default_templates = {			
+	ENG_infantry = {
+		infnatry_brigade
+		infnatry_brigade
+		infnatry_brigade
+	}
+	ENG_motorized = {
+		motorized_brigade
+		motorized_brigade
+		motorized_brigade		
+	}
+	ENG_armoured_1936 = {
+		light_armor_brigade
+		light_armor_brigade
+		motorized_brigade
+	}
+	ENG_armoured_1940 = {
+		armor_brigade
+		armor_brigade
+		motorized_brigade
+	}
+	ENG_airborne = {
+		paratrooper_brigade
+		paratrooper_brigade
+		paratrooper_brigade
+	}
+	ENG_marine = {
+		marine_brigade
+		marine_brigade
+		marine_brigade		
+	}
+	ENG_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}	
+	ENG_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade		
+	}
+	ENG_militia = {
+		militia_brigade
+		militia_brigade
+		militia_brigade		
+	}			
+}			
+			
+			
+unit_names = {			
+	infantry_brigade = {		
+		"1st Infantry Division" "2nd Infantry Division" "3rd Infantry Division" "4th Infantry Division" "5th Infantry Division" "6th Infantry Division" "7th Infantry Division" "8th Infantry Division" "9th Infantry Division" "10th Infantry Division" "11th Infantry Division" "12th Infantry Division" "13th Infantry Division" "14th Infantry Division" "15th Infantry Division" "16th Infantry Division" "17th Infantry Division" "18th Infantry Division" "19th Infantry Division" "20th Infantry Division"
+	}		
+	cavalry_brigade = {		
+		"1st Cavalry Division" "2nd Cavalry Division" "3rd Cavalry Division" "4th Cavalry Division" "5th Cavalry Division" "6th Cavalry Division" "7th Cavalry Division" "8th Cavalry Division" "9th Cavalry Division" "10th Cavalry Division"
+	}		
+	motorized_brigade = {		
+		"1st Motorized Inf. Div." "2nd Motorized Inf. Div." "3rd Motorized Inf. Div." "4th Motorized Inf. Div." "5th Motorized Inf. Div." "6th Motorized Inf. Div." "7th Motorized Inf. Div." "8th Motorized Inf. Div." "9th Motorized Inf. Div." "10th Motorized Inf. Div." "11th Motorized Inf. Div." "12th Motorized Inf. Div." "13th Motorized Inf. Div." "14th Motorized Inf. Div." "15th Motorized Inf. Div."
+	}		
+	mechanized_brigade = {		
+		"1st Half-Track Inf. Div." "2nd Half-Track Inf. Div." "3rd Half-Track Inf. Div." "4th Half-Track Inf. Div." "5th Half-Track Inf. Div." "6th Half-Track Inf. Div." "7th Half-Track Inf. Div." "8th Half-Track Inf. Div." "9th Half-Track Inf. Div." "10th Half-Track Inf. Div." "11th Half-Track Inf. Div." "12th Half-Track Inf. Div." "13th Half-Track Inf. Div." "14th Half-Track Inf. Div." "15th Half-Track Inf. Div."
+	}		
+	light_armor_brigade = {		
+		"6th Armoured Division" "1st Armoured Division" "2nd Armoured Division" "3rd Armoured Division" "4th Armoured Division" "5th Armoured Division" "6th Armoured Division" "7th Armoured Division" "8th Armoured Division" "9th Armoured Division" "10th Armoured Division"
+			}
+	armor_brigade = {		
+		"6th Armoured Division" "1st Armoured Division" "2nd Armoured Division" "3rd Armoured Division" "4th Armoured Division" "5th Armoured Division" "6th Armoured Division" "7th Armoured Division" "8th Armoured Division" "9th Armoured Division" "10th Armoured Division"
+			}
+	paratrooper_brigade = {		
+		"1st Airborne Commando Division" "2nd Airborne Commando Division" "3rd Airborne Commando Division" "4th Airborne Commando Division" "5th Airborne Commando Division" "6th Airborne Commando Division" "7th Airborne Commando Division" "8th Airborne Commando Division" "9th Airborne Commando Division" "10th Airborne Commando Division"
+	}		
+	marine_brigade = {		
+		"1st Marine Commando Division" "2nd Marine Commando Division" "3rd Marine Commando Division" "4th Marine Commando Division" "5th Marine Commando Division" "6th Marine Commando Division" "7th Marine Commando Division" "8th Marine Commando Division" "9th Marine Commando Division" "10th Marine Commando Division"
+	}		
+	bergsjaeger_brigade = {		
+		"1st Mountain Rangers Div." "2nd Mountain Rangers Div." "3rd Mountain Rangers Div." "4th Mountain Rangers Div." "5th Mountain Rangers Div." "6th Mountain Rangers Div." "7th Mountain Rangers Div." "8th Mountain Rangers Div." "9th Mountain Rangers Div." "10th Mountain Rangers Div." "11th Mountain Rangers Div."	"12th Mountain Rangers Div." "13th Mountain Rangers Div." "14th Mountain Rangers Div." "15th Mountain Rangers Div."
+	}		
+	garrison_brigade = {		
+		"1st Infantry Division" "2nd Infantry Division" "3rd Infantry Division" "4th Infantry Division" "5th Infantry Division" "6th Infantry Division" "7th Infantry Division" "8th Infantry Division" "9th Infantry Division" "10th Infantry Division" "11th Infantry Division" "12th Infantry Division" "13th Infantry Division" "14th Infantry Division" "15th Infantry Division" "16th Infantry Division" "17th Infantry Division" "18th Infantry Division" "19th Infantry Division" "20th Infantry Division"
+	}		
+	hq_brigade = {		
+		"Active Citizen Force" "Ceylonese Mobile Field Force" "1st Ceylonese Army" "2nd Ceylonese Army" "1st Ceylonese Army Group" "3rd Ceylonese Army" "4th Ceylonese Army" "2nd Ceylonese Army Group"
+	}		
+	militia_brigade = {		
+		"1st Active Citizen Force" "2nd Active Citizen Force" "3rd Active Citizen Force" "4th Active Citizen Force" "5th Active Citizen Force" "6th Active Citizen Force" "7th Active Citizen Force" "8th Active Citizen Force" "9th Active Citizen Force" "10th Active Citizen Force" "11th Active Citizen Force" "12th Active Citizen Force" "13th Active Citizen Force" "14th Active Citizen Force" "15th Active Citizen Force" "16th Active Citizen Force" "17th Active Citizen Force" "18th Active Citizen Force" "19th Active Citizen Force" "20th Active Citizen Force"
+	}		
+	multi_role = {		
+		"No.1 CAF Fighter Group" "No.2 CAF Fighter Group" "No.3 CAF Fighter Group" "No.4 CAF Fighter Group" "No.5 CAF Fighter Group" "No.7 CAF Fighter Group" "No.8 CAF Fighter Group" "No.9 CAF Fighter Group" "No.10 CAF Fighter Group" "No.11 CAF Fighter Group" "No.12 CAF Fighter Group" "No.13 CAF Fighter Group" "No.14 CAF Fighter Group" "No.15 CAF Fighter Group" "No.16 CAF Fighter Group" "No.17 CAF Fighter Group" "No.18 CAF Fighter Group" "No.19 CAF Fighter Group" "No.20 CAF Fighter Group"
+	}		
+	interceptor = {		
+		"No.1 CAF Fighter Group" "No.2 CAF Fighter Group" "No.3 CAF Fighter Group" "No.4 CAF Fighter Group" "No.5 CAF Fighter Group" "No.7 CAF Fighter Group" "No.8 CAF Fighter Group" "No.9 CAF Fighter Group" "No.10 CAF Fighter Group" "No.11 CAF Fighter Group" "No.12 CAF Fighter Group" "No.13 CAF Fighter Group" "No.14 CAF Fighter Group" "No.15 CAF Fighter Group" "No.16 CAF Fighter Group" "No.17 CAF Fighter Group" "No.18 CAF Fighter Group" "No.19 CAF Fighter Group" "No.20 CAF Fighter Group"
+	}		
+	jet_int = {		
+		"No.1 CAF Fighter Group" "No.2 CAF Fighter Group" "No.3 CAF Fighter Group" "No.4 CAF Fighter Group" "No.5 CAF Fighter Group" "No.7 CAF Fighter Group" "No.8 CAF Fighter Group" "No.9 CAF Fighter Group" "No.10 CAF Fighter Group" "No.11 CAF Fighter Group" "No.12 CAF Fighter Group" "No.13 CAF Fighter Group" "No.14 CAF Fighter Group" "No.15 CAF Fighter Group" "No.16 CAF Fighter Group" "No.17 CAF Fighter Group" "No.18 CAF Fighter Group" "No.19 CAF Fighter Group" "No.20 CAF Fighter Group"
+	}		
+	jet_mr = {		
+		"No.1 CAF Fighter Group" "No.2 CAF Fighter Group" "No.3 CAF Fighter Group" "No.4 CAF Fighter Group" "No.5 CAF Fighter Group" "No.7 CAF Fighter Group" "No.8 CAF Fighter Group" "No.9 CAF Fighter Group" "No.10 CAF Fighter Group" "No.11 CAF Fighter Group" "No.12 CAF Fighter Group" "No.13 CAF Fighter Group" "No.14 CAF Fighter Group" "No.15 CAF Fighter Group" "No.16 CAF Fighter Group" "No.17 CAF Fighter Group" "No.18 CAF Fighter Group" "No.19 CAF Fighter Group" "No.20 CAF Fighter Group"
+	}		
+	strategic_bomber = {		
+		"No.1 CAF Strategic Bomb Group" "No.2 CAF Strategic Bomb Group" "No.6 CAF Strategic Bomb Group" "No.3 CAF Strategic Bomb Group" "No.4 CAF Strategic Bomb Group" "No.7 CAF Strategic Bomb Group" "No.8 CAF Strategic Bomb Group" "No.9 CAF Strategic Bomb Group" "No.10 CAF Strategic Bomb Group" "No.11 CAF Strategic Bomb Group" "No.12 CAF Strategic Bomb Group" "No.13 CAF Strategic Bomb Group" "No.14 CAF Strategic Bomb Group" "No.15 CAF Strategic Bomb Group" "No.16 CAF Strategic Bomb Group" "No.17 CAF Strategic Bomb Group" "No.18 CAF Strategic Bomb Group" "No.19 CAF Strategic Bomb Group" "No.20 CAF Strategic Bomb Group"
+	}		
+	tactical_bomber = {		
+		"No.1 CAF Tactical Bomb Group" "No.2 CAF Tactical Bomb Group" "No.6 CAF Tactical Bomb Group" "No.3 CAF Tactical Bomb Group" "No.4 CAF Tactical Bomb Group" "No.7 CAF Tactical Bomb Group" "No.8 CAF Tactical Bomb Group" "No.9 CAF Tactical Bomb Group" "No.10 CAF Tactical Bomb Group" "No.11 CAF Tactical Bomb Group" "No.12 CAF Tactical Bomb Group"	"No.13 CAF Tactical Bomb Group" "No.14 CAF Tactical Bomb Group" "No.15 CAF Tactical Bomb Group" "No.16 CAF Tactical Bomb Group" "No.17 CAF Tactical Bomb Group" "No.18 CAF Tactical Bomb Group" "No.19 CAF Tactical Bomb Group" "No.20 CAF Tactical Bomb Group"	
+	}		
+	jet_bomber = {		
+		"No.1 CAF Tactical Bomb Group" "No.2 CAF Tactical Bomb Group" "No.6 CAF Tactical Bomb Group" "No.3 CAF Tactical Bomb Group" "No.4 CAF Tactical Bomb Group" "No.7 CAF Tactical Bomb Group" "No.8 CAF Tactical Bomb Group" "No.9 CAF Tactical Bomb Group" "No.10 CAF Tactical Bomb Group" "No.11 CAF Tactical Bomb Group" "No.12 CAF Tactical Bomb Group"	"No.13 CAF Tactical Bomb Group" "No.14 CAF Tactical Bomb Group" "No.15 CAF Tactical Bomb Group" "No.16 CAF Tactical Bomb Group" "No.17 CAF Tactical Bomb Group" "No.18 CAF Tactical Bomb Group" "No.19 CAF Tactical Bomb Group" "No.20 CAF Tactical Bomb Group"	
+	}		
+	naval_bomber = {		
+		"No.1 CAF Marine Bomb Group" "No.2 CAF Marine Bomb Group" "No.3 CAF Marine Bomb Group" "No.4 CAF Marine Bomb Group" "No.5 CAF Marine Bomb Group" "No.7 CAF Marine Bomb Group" "No.8 CAF Marine Bomb Group" "No.9 CAF Marine Bomb Group" "No.10 CAF Marine Bomb Group" "No.11 CAF Marine Bomb Group" "No.12 CAF Marine Bomb Group" "No.13 CAF Marine Bomb Group" "No.14 CAF Marine Bomb Group" "No.15 CAF Marine Bomb Group" "No.16 CAF Marine Bomb Group" "No.17 CAF Marine Bomb Group" "No.18 CAF Marine Bomb Group" "No.19 CAF Marine Bomb Group" "No.20 CAF Marine Bomb Group" "No.1 CAF Torpedo Attack Group" "No.2 CAF Torpedo Attack Group" "No.3 CAF Torpedo Attack Group" "No.4 CAF Torpedo Attack Group" "No.5 CAF Torpedo Attack Group" "No.7 CAF Torpedo Attack Group" "No.8 CAF Torpedo Attack Group" "No.9 CAF Torpedo Attack Group" "No.10 CAF Torpedo Attack Group" "No.11 CAF Torpedo Attack Group" "No.12 CAF Torpedo Attack Group" "No.13 CAF Torpedo Attack Group" "No.14 CAF Torpedo Attack Group" "No.15 CAF Torpedo Attack Group" "No.16 CAF Torpedo Attack Group" "No.17 CAF Torpedo Attack Group" "No.18 CAF Torpedo Attack Group" "No.19 CAF Torpedo Attack Group" "No.20 CAF Torpedo Attack Group"
+	}		
+	cas = {		
+		"No.1 CAF Dive Bomb Group" "No.2 CAF Dive Bomb Group" "No.3 CAF Dive Bomb Group" "No.4 CAF Dive Bomb Group" "No.6 CAF Dive Bomb Group" "No.7 CAF Dive Bomb Group" "No.8 CAF Dive Bomb Group" "No.9 CAF Dive Bomb Group" "No.10 CAF Dive Bomb Group" "No.11 CAF Dive Bomb Group" "No.12 CAF Dive Bomb Group"	"No.13 CAF Dive Bomb Group" "No.14 CAF Dive Bomb Group" "No.15 CAF Dive Bomb Group" "No.16 CAF Dive Bomb Group" "No.17 CAF Dive Bomb Group" "No.18 CAF Dive Bomb Group" "No.19 CAF Dive Bomb Group" "No.20 CAF Dive Bomb Group"
+	}		
+	transport_plane = {		
+		"No.1 CAF Army Transport" "No.2 CAF Army Transport" "No.3 CAF Army Transport" "No.4 CAF Army Transport" "No.5 CAF Army Transport" "No.7 CAF Army Transport" "No.8 CAF Army Transport" "No.9 CAF Army Transport" "No.10 CAF Army Transport"
+	}		
+	battleship = {		
+		"HMS Colombo" "HMS Indian Ocean" "HMS Nil Mahanel" "HMS King Solomon" "HMS Trincomalee" "HMS Kandy" "HMS Galle" 
+	}		
+	light_cruiser = {		
+		"HMS Colombo" "HMS Indian Ocean" "HMS Nil Mahanel" "HMS King Solomon" "HMS Trincomalee" "HMS Kandy" "HMS Galle" 
+			}
+	heavy_cruiser = {		
+		"HMS Colombo" "HMS Indian Ocean" "HMS Nil Mahanel" "HMS King Solomon" "HMS Trincomalee" "HMS Kandy" "HMS Galle"	
+			}
+	battlecruiser = {		
+		"HMS Colombo" "HMS Indian Ocean" "HMS Nil Mahanel" "HMS King Solomon" "HMS Trincomalee" "HMS Kandy" "HMS Galle" 	
+	}		
+	destroyer = {		
+		"1st Destroyer Flotilla" "2nd Destroyer Flotilla" "3rd Destroyer Flotilla" "4th Destroyer Flotilla" "5th Destroyer Flotilla" "6th Destroyer Flotilla" "7th Destroyer Flotilla" "8th Destroyer Flotilla" "9th Destroyer Flotilla" "10th Destroyer Flotilla" "11th Destroyer Flotilla"	"12th Destroyer Flotilla" "13th Destroyer Flotilla" "14th Destroyer Flotilla" "15th Destroyer Flotilla" "16th Destroyer Flotilla" "17th Destroyer Flotilla" "18th Destroyer Flotilla" "19th Destroyer Flotilla" "20th Destroyer Flotilla"
+	}		
+	carrier = {		
+		"HMS Colombo" "HMS Indian Ocean" "HMS Nil Mahanel" "HMS King Solomon" "HMS Trincomalee" "HMS Kandy" "HMS Galle" 	
+	}		
+	escort_carrier = {		
+		"HMS Colombo" "HMS Indian Ocean" "HMS Nil Mahanel" "HMS King Solomon" "HMS Trincomalee" "HMS Kandy" "HMS Galle"	
+	}		
+	submarine = {		
+		"1st Submarine Flotilla" "2nd Submarine Flotilla" "3rd Submarine Flotilla" "4th Submarine Flotilla" "5th Submarine Flotilla" "6th Submarine Flotilla" "7th Submarine Flotilla" "8th Submarine Flotilla" "9th Submarine Flotilla" "10th Submarine Flotilla" "11th Submarine Flotilla"	"12th Submarine Flotilla" "13th Submarine Flotilla" "14th Submarine Flotilla" "15th Submarine Flotilla"	
+	}		
+	transport_ship = {		
+		"1st Transport Flotilla" "2nd Transport Flotilla" "3rd Transport Flotilla" "4th Transport Flotilla" "5th Transport Flotilla" "6th Transport Flotilla" "7th Transport Flotilla" "8th Transport Flotilla" "9th Transport Flotilla" "10th Transport Flotilla" "11th Transport Flotilla"	"12th Transport Flotilla" "13th Transport Flotilla" "14th Transport Flotilla" "15th Transport Flotilla"
+	}		
+			
+}			
+			
+			
+ministers = {			
+	904150 = {
+	 name = "Sir Oliver Goonetilleke"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 chief_of_staff = school_of_defence
+	 chief_of_army = guns_and_butter_doctrine
+	 chief_of_air = army_aviation_doctrine
+	 head_of_state = autocratic_charmer
+	 start_date = 1936.1.1
+	 picture = CEY_M_Sir_Oliver_Goonetilleke
+}
+904151 = {
+	 name = "Augustus Agar"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 chief_of_navy = decisive_naval_battle_doctrine
+	 start_date = 1936.1.1
+	 picture = CEY_M_Augustus_Agar
+}
+904152 = {
+	 name = "B. R. Heyn"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 chief_of_army = elastic_defence_doctrine
+	 start_date = 1948.1.1
+	 picture = CEY_M_BR_Heyn
+}
+904153 = {
+	 name = "Colvin R. de Silva"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 minister_of_security = crime_fighter
+	 start_date = 1936.1.1
+	 picture = CEY_M_Colvin_de_Silva
+}
+904154 = {
+	 name = "Don Philip Gunawardena"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 head_of_state = die_hard_reformer
+	 foreign_minister = ideological_crusader
+	 start_date = 1936.1.1
+	 picture = CEY_M_Philip_Gunawardena
+}
+904155 = {
+	 name = "Don Stephen Senanayake"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 head_of_government = flamboyant_tough_guy
+	 foreign_minister = great_compromiser
+	 start_date = 1936.1.1
+	 picture = CEY_M_Don_Stephen_Senanayake
+}
+904156 = {
+	 name = "Doreen Wickremasinghe"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 minister_of_intelligence = technical_specialist
+	 start_date = 1936.1.1
+	 picture = CEY_M_Doreen_Wickremasinghe
+}
+904157 = {
+	 name = "Dudley Senanayake"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 head_of_government = happy_amateur
+	 start_date = 1952.1.1
+	 picture = CEY_M_Dudley_Senanayake
+}
+904158 = {
+	 name = "E. Rohan Amarasekera"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 chief_of_air = air_superiority_doctrine
+	 start_date = 1936.1.1
+	 picture = CEY_M_E_Rohan_Amarasekera
+}
+904159 = {
+	 name = "E.P. Wickremasinghe"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 chief_of_navy = base_control_doctrine
+	 start_date = 1936.1.1
+	 picture = CEY_M_EP_Wickremasinghe
+}
+904160 = {
+	 name = "Edmund Samarakkody"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 foreign_minister = biased_intellectual
+	 start_date = 1936.1.1
+	 picture = CEY_M_Edmund_Samarakkody
+}
+904161 = {
+	 name = "Ganapathipillai Gangaser Ponnambalam"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 minister_of_security = silent_lawyer
+	 start_date = 1936.1.1
+	 picture = CEY_M_Ganapathipillai_Gangaser_Ponnambalam
+}
+904162 = {
+	 name = "Geoffrey Layton"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 chief_of_navy = decisive_naval_battle_doctrine
+	 start_date = 1936.1.1
+	 picture = CEY_M_Geoffrey_Layton
+}
+904163 = {
+	 name = "Graham Bladon"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 chief_of_air = army_aviation_doctrine
+	 start_date = 1936.1.1
+	 picture = CEY_M_Graham_Bladon
+}
+904164 = {
+	 name = "Hedi Stadlen"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 armament_minister = military_entrepreneur
+	 start_date = 1940.1.1
+	 picture = CEY_M_Hedi_Stadlen
+}
+904165 = {
+	 name = "Herwald Ramsbotham"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 head_of_state = insignificant_layman
+	 start_date = 1949.1.1
+	 picture = CEY_M_Herwald_Ramsbotham
+}
+904166 = {
+	 name = "I.J. Wickrema"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 head_of_state = die_hard_reformer
+	 head_of_government = ambitious_union_boss
+	 start_date = 1950.1.1
+	 picture = CEY_M_IJ_Wickrema
+}
+904167 = {
+	 name = "James Roderick Sinclair"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 chief_of_army = armoured_spearhead_doctrine
+	 start_date = 1948.1.1
+	 picture = CEY_M_James_Roderick_Sinclair
+}
+904168 = {
+	 name = "James Somerville"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 minister_of_intelligence = naval_intelligence_specialist
+	 chief_of_navy = power_projection_doctrine
+	 start_date = 1941.1.1
+	 picture = CEY_M_James_Somerville
+}
+904169 = {
+	 name = "John Kotelawala"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 head_of_government = old_general
+	 start_date = 1953.1.1
+	 picture = CEY_M_John_Kotelawala
+}
+904170 = {
+	 name = "John Lindsay Barker"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 chief_of_air = army_aviation_doctrine
+	 start_date = 1948.1.1
+	 picture = CEY_M_John_Lindsay_Barker
+}
+904171 = {
+	 name = "Junius Richard Jayewardene"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 armament_minister = laissez_faires_capitalist
+	 minister_of_intelligence = industrial_specialist
+	 minister_of_security = silent_lawyer
+	 start_date = 1936.1.1
+	 picture = CEY_M_Junius_Richard_Jayewardene
+}
+904172 = {
+	 name = "Pieter Keuneman"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 armament_minister = resource_industrialist
+	 start_date = 1940.1.1
+	 picture = CEY_M_Pieter_Keuneman
+}
+904173 = {
+	 name = "N. M. Perera"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 head_of_government = backroom_backstabber
+	 armament_minister = resource_industrialist
+	 start_date = 1936.1.1
+	 picture = CEY_M_NM_Perera
+}
+904174 = {
+	 name = "Patrick de Silva Kularatne"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 foreign_minister = great_compromiser
+	 start_date = 1936.1.1
+	 picture = CEY_M_Patrick_de_Silva_Kularatne
+}
+904175 = {
+	 name = "S. A. Wickremasinghe"
+	 ideology = leninist
+	 loyalty = 1.00
+	 head_of_state = die_hard_reformer
+	 start_date = 1941.1.1
+	 picture = CEY_M_SA_Wickremasinghe
+}
+904176 = {
+	 name = "Senaka Bibile"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 minister_of_security = man_of_the_people
+	 start_date = 1950.1.1
+	 picture = CEY_M_Senaka_Bibile
+}
+904177 = {
+	 name = "Sir Andrew Caldecott"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 head_of_state = autocratic_charmer
+	 start_date = 1937.1.1
+	 picture = CEY_M_Sir_Andrew_Caldecott
+}
+904178 = {
+	 name = "Sir Ernest De Silva"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 minister_of_security = compassionate_gentleman
+	 start_date = 1936.1.1
+	 picture = CEY_M_Sir_Ernest_De_Silva
+}
+904179 = {
+	 name = "Sir Harry Wetherall"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 chief_of_staff = school_of_psychology
+	 chief_of_army = guns_and_butter_doctrine
+	 start_date = 1943.1.1
+	 picture = CEY_M_Sir_Harry_Wetherall
+}
+904180 = {
+	 name = "Sir Henry Monck-Mason Moore"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 head_of_state = resigned_generalissimo
+	 minister_of_intelligence = logistics_specialist
+	 start_date = 1944.1.1
+	 picture = CEY_M_Sir_Henry_Monck-Mason_Moore
+}
+904181 = {
+	 name = "Anil Moonesinghe"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 armament_minister = administrative_genius
+	 start_date = 1954.1.1
+	 picture = CEY_M_Anil_Moonesinghe
+}
+904182 = {
+	 name = "Sir Reginald Edward Stubbs"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 head_of_state = ruthless_powermonger
+	 start_date = 1936.1.1
+	 picture = CEY_M_Sir_Reginald_Edward_Stubbs
+}
+904183 = {
+	 name = "Sirimavo Bandaranaike"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 head_of_government = happy_amateur
+	 minister_of_security = prince_of_terror
+	 start_date = 1960.1.1
+	 picture = CEY_M_Sirimavo_Bandaranaike
+}
+904184 = {
+	 name = "Solomon Bandaranaike"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 head_of_government = naive_optimist
+	 minister_of_security = efficient_sociopath
+	 start_date = 1936.1.1
+	 picture = CEY_M_Solomon_Bandaranaike
+}
+904185 = {
+	 name = "Wijeyananda Dahanayake"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 head_of_government = ambitious_union_boss
+	 start_date = 1969.1.1
+	 picture = CEY_M_Wijeyananda_Dahanayake
+}
+904186 = {
+	 name = "William Gopallawa"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 head_of_state = popular_figurehead
+	 start_date = 1962.1.1
+	 picture = CEY_M_William_Gopallawa
+	}		
+	# Generic dummy ministers
+	95159 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95160 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95161 = {
+		name = "Nameless Clerk"
+		ideology = paternal_autocrat
+		loyalty = 1.0
+		picture = MPaternalAutocrat
+		head_of_government = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95162 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		start_date = 1936.1.1
+	}
+	95163 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95164 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95165 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		start_date = 1936.1.1
+	}
+	95166 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95167 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95168 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+}			

@@ -1,0 +1,377 @@
+diplomatic_decisions = {
+	
+#########################
+# Necessery Soviet Buff #
+#########################
+
+	soviet_resource_nerf = {
+		potential = {
+			tag = SOV
+			not = { has_country_flag = "soviet_resource_nerf" }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = "soviet_resource_nerf"
+			add_country_modifier = {
+				name = "soviet_resource_nerf"
+				duration = 1800
+			}
+			add_country_modifier = {
+				name = "soviet_manpower_nerf"
+				duration = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#############################
+# Industry Moved to Siberia #
+#############################
+
+	# Transfer Some of the Industry to Siberia
+	industry_moved_to_siberia_v1 = {
+		major = yes
+		potential = {
+			tag = SOV
+			not = { has_country_flag = "industry_transfered_to_siberia_v1" }
+			not = { has_country_flag = "su_signs_peace" }
+			year = 1938
+			war_with = GER
+		}
+		allow = {
+			soviet_industry_transfer_region = { controlled_by = THIS }
+			any_owned_province = {
+				controller = { faction = axis }
+			}
+		}
+		effect = {
+			set_country_flag = "industry_transfered_to_siberia_v1"
+			set_country_flag = "great_war"
+			
+			manpower = 75
+			# Delete 6 factories in the west
+			 989 = { industry = -1 }	# Pskov
+			1492 = { industry = -1 }	# Vitsyebsk
+			1694 = { industry = -1 }	# Minsk
+			2222 = { industry = -1 }	# Olevsk
+			2394 = { industry = -1 }	# Zythomyr
+			2641 = { industry = -1 }	# Vinnytsya
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# Transfer Most of the Industry to Siberia
+	industry_moved_to_siberia_v2 = {
+		major = yes
+		potential = {
+			tag = SOV
+			has_country_flag = "industry_transfered_to_siberia_v1"
+			not = { has_country_flag = "industry_transfered_to_siberia_v2" }
+			not = { has_country_flag = "su_signs_peace" }
+			year = 1938
+			war_with = GER
+			2338 = { controller = { faction = axis } } # Kyiv
+			1694 = { controller = { faction = axis } } # Minsk
+		}
+		allow = {
+			soviet_industry_transfer_region = { controlled_by = THIS }
+		}
+		effect = {
+			set_country_flag = "industry_transfered_to_siberia_v2"
+			remove_country_modifier = "the_great_purge_1"
+			remove_country_modifier = "the_great_purge_2"
+			remove_country_modifier = "the_great_purge_3"
+			
+			manpower = 100
+			# Delete 9 factories in the west
+			1494 = { industry = -1 }	# Smolensk
+			1696 = { industry = -1 }	# Mogilev
+			1819 = { industry = -1 }	# Bryansk
+			1937 = { industry = -1 }	# Gomel
+			2167 = { industry = -1 }	# Chernigov
+			2517 = { industry = -1 }	# Cherkasy
+			2519 = { industry = -1 }	# Poltava
+			3176 = { industry = -1 }	# Nova Odesa
+			3309 = { industry = -1 }	# Odesa
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Complete Transfer of Industry to Siberia
+	industry_moved_to_siberia_v3 = {
+		major = yes
+		potential = {
+			tag = SOV
+			has_country_flag = "industry_transfered_to_siberia_v2"
+			not = { has_country_flag = "industry_transfered_to_siberia_v3" }
+			not = { has_country_flag = "su_signs_peace" }
+			year = 1938
+			war_with = GER
+			2401 = { any_neighbor_province = { controller = { war_with = THIS } } } # Kharkov
+		}
+		allow = {
+			soviet_industry_transfer_region = { controlled_by = THIS }
+		}
+		effect = {
+			set_country_flag = "industry_transfered_to_siberia_v3"
+			manpower = 250
+			# Delete 22 factories in the west
+			 782 = { industry = -3 }	# Leningrad
+			1409 = { industry = -6 }	# Moscow
+			2286 = { industry = -1 }	# Belgorod
+			2401 = { industry = -2 }	# Kharkov
+			7150 = { industry = -6 }	# T'bilisi
+			2781 = { industry = -1 }	# Stalino
+			7249 = { industry = -3 }	# Yerevan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+###########################
+# The Great Officer Purge #
+###########################
+
+	the_great_officer_purge = {
+		major = yes
+		potential = {
+			tag = SOV
+			not = { has_country_flag = "the_great_officer_purge" }
+			or = {
+				has_country_modifier = "soviet_political_turmoil"
+				has_country_modifier = "soviet_opposition"
+			}
+		}
+		allow = {
+			head_of_government = 4002		# Iosif Stalin
+			year = 1937
+		}
+		effect = {
+			set_country_flag = "the_great_officer_purge"
+			dissent = 5
+			remove_country_modifier = "soviet_political_turmoil"
+			remove_country_modifier = "soviet_opposition"
+			organisation = 15
+			popularity = -10
+			national_unity = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#########################
+# Germany in our Sphere #
+#########################
+
+	german_attack = {
+		major = yes
+		potential = {
+			tag = SOV
+			not = { war_with = GER }
+			not = { has_country_flag = "su_signs_peace" }
+			not = { non_aggression_pact = GER }		# We have no pact, yet Germany
+			or = {									# attacks our sphere of influence!
+				GER = { war_with = LIT }
+				GER = { war_with = LAT }
+				GER = { war_with = EST }
+				GER = { war_with = FIN }
+				GER = { war_with = POL }
+
+				LIT = { vassal_of = GER }
+				LAT = { vassal_of = GER }
+				EST = { vassal_of = GER }
+				FIN = { vassal_of = GER }
+				POL = { vassal_of = GER }
+			}
+			not = { has_country_modifier = "soviet_opposition" }
+			not = { has_country_flag = "resist_german_expansionism" }
+		}
+		allow = {
+		}
+		effect = {
+			# We should also expand now!
+		
+			set_country_flag = "resist_german_expansionism"
+			
+			# Stop the Purge!
+			
+			set_country_flag = "the_great_purge_1"
+			set_country_flag = "the_great_purge_2"
+			set_country_flag = "the_great_purge_3"
+			
+			# Relations worsen.
+			
+			GER = { threat = { who = SOV value = 50 } }
+			relation = { who = GER value = -200 }
+			GER = { country_event = 1527 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+#########################
+# The End of Tannu Tuva #
+#########################
+
+	end_of_tannu_tuva = {
+		major = yes
+		potential = {
+			tag = SOV
+			year = 1944
+			exists = TAN
+			TAN = { vassal_of = SOV }
+		}
+		allow = {
+		}
+		effect = {
+			TAN = { country_event = 2101 }
+			relation = { who = CHI value = -100 }
+			dissent = -1
+			money = 100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	
+	
+	}
+
+##########################
+# Molotov Defensive Line #
+##########################
+
+	molotov_line_1 = {
+		major = yes
+		potential = {
+			tag = SOV
+			year = 1940
+			NOT = { exists = LIT }
+			eastern_poland = { controlled_by = SOV }
+			not = { molotov_line_region = { not = { controlled_by = SOV } } }
+			not = { has_country_flag = "molotov_line_level_1" }
+		}
+		allow = {
+			# None of the provinces has any land_forts yet
+			not = { molotov_line_region = { land_fort = 1 } }
+		}
+		effect = {
+			set_country_flag = "molotov_line_level_1"
+			country_event = 2121
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	molotov_line_2 = {
+		major = yes
+		potential = {
+			tag = SOV
+			year = 1940
+			NOT = { exists = LIT }
+			eastern_poland = { controlled_by = SOV }
+			not = { molotov_line_region = { not = { controlled_by = SOV } } }
+			has_country_flag = "molotov_line_level_1"
+			not = { has_country_flag = "molotov_line_level_2" }
+		}
+		allow = {
+			# None of the provinces has level two land_forts, but all have level one
+			# Except Brzesc-Litewski
+			not = { molotov_line_region = { not = { land_fort = 1 } } }
+			not = { molotov_line_region = { land_fort = 2 } }
+		}
+		effect = {
+			set_country_flag = "molotov_line_level_2"
+			country_event = 2121
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	molotov_line_3 = {
+		major = yes
+		potential = {
+			tag = SOV
+			year = 1940
+			NOT = { exists = LIT }
+			eastern_poland = { controlled_by = SOV }
+			not = { molotov_line_region = { not = { controlled_by = SOV } } }
+			has_country_flag = "molotov_line_level_2"
+			not = { has_country_flag = "molotov_line_level_3" }
+		}
+		allow = {
+			# None of the provinces has level two land_forts, but all have level one
+			not = { molotov_line_region = { not = { land_fort = 2 } } }
+			not = { molotov_line_region = { land_fort = 3 } }
+		}
+		effect = {
+			set_country_flag = "molotov_line_level_3"
+			country_event = 2121
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	molotov_line_4 = {
+		major = yes
+		potential = {
+			tag = SOV
+			year = 1940
+			NOT = { exists = LIT }
+			eastern_poland = { controlled_by = SOV }
+			not = { molotov_line_region = { not = { controlled_by = SOV } } }
+			has_country_flag = "molotov_line_level_3"
+			not = { has_country_flag = "molotov_line_level_4" }
+		}
+		allow = {
+			# None of the provinces has level two land_forts, but all have level one
+			not = { molotov_line_region = { not = { land_fort = 3 } } }
+			not = { molotov_line_region = { land_fort = 4 } }
+		}
+		effect = {
+			set_country_flag = "molotov_line_level_4"
+			country_event = 2121
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	molotov_line_5 = {
+		major = yes
+		potential = {
+			tag = SOV
+			year = 1940
+			NOT = { exists = LIT }
+			eastern_poland = { controlled_by = SOV }
+			not = { molotov_line_region = { not = { controlled_by = SOV } } }
+			has_country_flag = "molotov_line_level_4"
+			not = { has_country_flag = "molotov_line_level_5" }
+		}
+		allow = {
+			# None of the provinces has level two land_forts, but all have level one
+			not = { molotov_line_region = { not = { land_fort = 4 } } }
+			not = { molotov_line_region = { land_fort = 5 } }
+		}
+		effect = {
+			set_country_flag = "molotov_line_level_5"
+			country_event = 2121
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

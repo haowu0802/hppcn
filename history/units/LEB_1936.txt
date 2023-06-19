@@ -1,0 +1,28 @@
+theatre = {
+	name = "Haut Commandement d'Libanais"
+	location = 5299
+	regiment = { type = hq_brigade name = "Beirut HQ" historical_model = 0 }
+	division= {
+		name = "Armée Libanais"
+		location = 5299
+		is_reserve = yes
+		regiment = { type = militia_brigade name = "1er Régiment d'Infanterie" experience = 0 historical_model = 2 }
+		regiment = { type = militia_brigade name = "2e Régiment d'Infanterie" experience = 0 historical_model = 2 }
+	}
+}
+convoy_construction=
+{
+	country = LEB
+	id=
+	{
+		id=15442
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+
+

@@ -1,0 +1,43 @@
+diplomatic_decisions = {
+
+	belgium_joins_the_allies = {
+		potential = {
+			tag = BEL
+			is_in_any_faction = no
+			not = { war_with = FRA }
+			not = { war_with = ENG }
+			not = { war_with = GER }
+			or = {
+				not = { exists = HOL }
+				HOL = { government_in_exile = yes }
+				GER = { war_with = HOL }
+			}
+			HOL = {
+				any_owned_province = { controlled_by = GER }
+			}
+			exists = FRA
+			FRA = { faction = allies }
+			FRA = { government_in_exile = no }
+			not = { has_country_flag = "germany_is_threatening" }
+		}
+		allow = {
+			or = {
+				not = { exists = HOL }
+				HOL = { lost_national = 0.95 }
+				and = {
+					1910 = { owned_by = HOL not = { controlled_by = HOL } }
+					2081 = { owned_by = HOL not = { controlled_by = HOL } }
+					2198 = { owned_by = HOL not = { controlled_by = HOL } }
+					HOL = { lost_national = 0.5 }
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "germany_is_threatening"
+			ENG = { country_event = 7301 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

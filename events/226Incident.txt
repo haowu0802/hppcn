@@ -1,0 +1,363 @@
+###################
+# 2-2-6 Indcident #
+###################
+country_event = {
+	
+	id = 3313
+
+	trigger = {
+		tag = JAP
+		date = 1936.2.26
+		not = { has_country_flag = "226_incident" }
+	}
+
+	title = "The 2-2-6 Incident"
+	desc = "2_2_6_incident_info"
+	picture = "226"
+
+	option = {
+		name = "Emperor Hirohito crushes the Coup (historical)"
+		ai_chance = { factor = 90 }
+		load_oob = "repression.txt"
+		load_oob = "propaganda_press.txt"
+		fascistic = { organisation = 30 popularity = 10 }
+		head_of_government = 5003
+		dissent = 1
+		threat = { who = all value = 5 }
+		threat = { who = CHI value = 10 }
+		set_country_flag = "226_incident"
+		set_country_flag = "226_crushed"
+	}
+	option = {
+		name = "The rebels gain the Emperor's support"
+		ai_chance = { factor = 9 }
+		paternal_autocrat = { organisation = 25 popularity = 25 }
+		load_oob = "state_press.txt"
+		remove_minister = 5002
+		set_country_flag = "5002_removed"
+		remove_minister = 5037
+		set_country_flag = "5037_removed"
+		set_country_flag = "226_incident"
+		set_country_flag = "226_success"
+	}
+	option = {
+		name = "Let the people decide!"
+		ai_chance = { factor = 1 }
+		load_oob = "open_society.txt"
+		load_oob = "censored_press.txt"
+		government = constitutional_monarchy
+		do_election	= THIS
+		threat = { who = all value = -10 }
+		set_country_flag = "226_incident"
+		set_country_flag = "holds_elections"
+	}
+}
+
+country_event = {
+	
+	id = 3315
+
+	trigger = {
+		tag = JAP
+		year = 1937
+		exists = CHI
+		ideology = paternal_autocrat
+		head_of_government = 5003
+		or = {
+			dissent = 1
+			not = { national_unity = 75 }
+			not = { organisation = 35 }
+			not = { popularity = 30 }
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 3
+	}
+
+	title = "Crisis of the Hirota Cabinet"
+	desc = "Koki Hirota's government has been unable to deal with the problems facing Japan, he should be replaced."
+	picture = "hirohito"
+
+	option = {
+		name = "Appoint Hayashi"
+		paternal_autocrat = { organisation = 5 }
+		head_of_government = 5033
+		threat = { who = CHI value = 10 }
+	}
+	option = {
+		name = "Give him another chance!"
+		dissent = 1
+	}
+}
+
+country_event = {
+	
+	id = 3316
+
+	trigger = {
+		tag = JAP
+		year = 1937
+		exists = CHI
+		ideology = paternal_autocrat
+		head_of_government = 5033
+		or = {
+			dissent = 1
+			not = { national_unity = 75 }
+			not = { organisation = 35 }
+			not = { popularity = 30 }
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 3
+	}
+
+	title = "Crisis of the Hayashi Cabinet"
+	desc = "Senjuro Hayashi's government has been unable to deal with the problems facing Japan, he should be replaced."
+	picture = "hirohito"
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = "Appoint Konoe"
+		paternal_autocrat = { organisation = 5 }
+		head_of_government = 5034
+		threat = { who = CHI value = 10 }
+	}
+	option = {
+		name = "Give him another chance!"
+		dissent = 1
+	}
+}
+
+country_event = {
+	
+	id = 3317
+
+	trigger = {
+		tag = JAP
+		year = 1939
+		exists = CHI
+		war_with = CHI
+		ideology = paternal_autocrat
+		head_of_government = 5034
+		or = {
+			dissent = 1
+			not = { national_unity = 75 }
+			not = { organisation = 35 }
+			not = { popularity = 30 }
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 3
+	}
+
+	title = "Crisis of the Konoe Cabinet"
+	desc = "Konoe Fumimaro's government has been unable to deal with the problems facing Japan, he should be replaced."
+	picture = "hirohito"
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = "Appoint Hiranuma"
+		paternal_autocrat = { organisation = 5 }
+		head_of_government = 5041
+	}
+	option = {
+		name = "Give him another chance!"
+		dissent = 1
+	}
+}
+
+country_event = {
+	
+	id = 3318
+
+	trigger = {
+		tag = JAP
+		year = 1939
+		exists = CHI
+		war_with = CHI
+		ideology = paternal_autocrat
+		head_of_government = 5041
+		or = {
+			dissent = 1
+			not = { national_unity = 75 }
+			not = { organisation = 35 }
+			not = { popularity = 30 }
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 3
+	}
+
+	title = "Crisis of the Kiichiro Cabinet"
+	desc = "Hiranuma Kiichiro's government has been unable to deal with the problems facing Japan, he should be replaced."
+	picture = "hirohito"
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = "Appoint Abe"			# OK
+		paternal_autocrat = { organisation = 5 }
+		head_of_government = 5035
+		dissent = 1
+	}
+	option = {
+		name = "Give him another chance!"
+		dissent = 1
+	}
+}
+
+country_event = {
+	
+	id = 3319
+
+	trigger = {
+		tag = JAP
+		year = 1940
+		exists = CHI
+		war_with = CHI
+		ideology = paternal_autocrat
+		head_of_government = 5035
+		or = {
+			dissent = 1
+			not = { national_unity = 75 }
+			not = { organisation = 35 }
+			not = { popularity = 30 }
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 3
+	}
+
+	title = "Crisis of the Abe Cabinet"
+	desc = "Abe Nobuyuki's government has been unable to deal with the problems facing Japan, he should be replaced."
+	picture = "hirohito"
+
+	option = {
+		ai_chance = { factor = 80 }
+		name = "Appoint Yonai"			# OK
+		head_of_government = 5036
+		paternal_autocrat = { organisation = 5 }
+		relation = { who = ENG value = 25 }
+		relation = { who = USA value = 25 }
+		relation = { who = ITA value = -5 }
+		relation = { who = GER value = -10 }
+	}
+	option = {
+		ai_chance = { factor = 20 }
+		name = "It is time for Japan to take a new direction..."
+		paternal_autocrat = { organisation = -20 }
+		social_conservative = { organisation = -10 }
+		market_liberal = { organisation = -10 }
+		fascistic = { organisation = 30 }
+		load_oob = "fascistic.txt"
+		dissent = 5
+		relation = { who = ENG value = -25 }
+		relation = { who = USA value = -25 }
+		relation = { who = ITA value = 5 }
+		relation = { who = GER value = 10 }
+		threat = { who = USA value = 20 }
+		threat = { who = ENG value = 20 }
+		head_of_government = 5034
+	}
+}
+
+country_event = {
+	
+	id = 3320
+	
+	major = yes
+
+	trigger = {
+		tag = JAP
+		year = 1940
+		exists = CHI
+		war_with = CHI
+		head_of_government = 5036
+		ideology = paternal_autocrat
+		or = {
+			dissent = 1
+			not = { national_unity = 75 }
+			not = { organisation = 35 }
+			not = { popularity = 30 }
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 3
+	}
+
+	title = "Crisis of the Yonai Cabinet"
+	desc = "Yonai's government lacks support from the Armed forces, who are calling for his immediate resignation."
+	picture = "hirohito"
+
+	option = {
+		name = "We have waited long enough!"
+		ai_chance = { factor = 100 }
+		paternal_autocrat = { organisation = -20 }
+		social_conservative = { organisation = -10 }
+		market_liberal = { organisation = -10 }
+		fascistic = { organisation = 30 }
+		load_oob = "fascistic.txt"
+		dissent = 5
+		relation = { who = ENG value = -25 }
+		relation = { who = USA value = -25 }
+		relation = { who = ITA value = 5 }
+		relation = { who = GER value = 10 }
+		threat = { who = USA value = 20 }
+		threat = { who = ENG value = 20 }
+		head_of_government = 5034
+	}
+	option = {
+		name = "Give him another chance!"
+		dissent = 1
+	}
+}
+
+country_event = {
+	
+	id = 3322
+	
+	major = yes
+
+	trigger = {
+		tag = JAP
+		has_country_flag = "war_government"
+		year = 1941
+		exists = CHI
+		war_with = CHI
+		ideology = fascistic
+		head_of_government = 5034
+		or = {
+			dissent = 1
+			not = { national_unity = 75 }
+			not = { organisation = 35 }
+			not = { popularity = 30 }
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 3
+	}
+
+	title = "Tojo for Prime Minister!"
+	desc = "War with the west seems all but inevitable now, and General Tojo is the strongest candidate to become Prime Minister."
+	picture = "tojo"
+
+	option = {
+		name = "Tojo forms his new government"
+		head_of_government = 5042
+		foreign_minister = 5065
+		armament_minister = 5091
+		minister_of_security = 5122
+		minister_of_intelligence = 5144
+		chief_of_staff = 5042
+		chief_of_army = 5042
+		chief_of_navy = 5010
+		chief_of_air = 5193
+		neutrality = -10
+	}
+}

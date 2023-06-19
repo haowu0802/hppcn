@@ -1,0 +1,82 @@
+theatre = {
+	name = "Royal Thai Military Command"
+	location = 6148
+	regiment = { type = hq_brigade name = "Bangkok HQ" historical_model = 0 }	
+	corps = {
+		name = "Royal Thai Army"
+		location = 6175
+		regiment = { type = hq_brigade name = "Royal Thai Army HQ" historical_model = 0 }
+		division= {
+			name = "1. Thai Infantry Div."
+			location = 6175
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "1st Infantry Regiment" experience = 0 historical_model = 3 }
+			regiment = { type = militia_brigade name = "2nd Infantry Regiment" experience = 0 historical_model = 3 }
+			regiment = { type = militia_brigade name = "12nd Infantry Regiment" experience = 0 historical_model = 3 }
+		}
+		division= {
+			name = "2. Thai Infantry Div."
+			location = 6175
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "4th Infantry Regiment" experience = 0 historical_model = 3 }
+			regiment = { type = militia_brigade name = "5th Infantry Regiment" experience = 0 historical_model = 3 }
+			regiment = { type = militia_brigade name = "13rd Infantry Regiment" experience = 0 historical_model = 3 }
+		}
+		division= {
+			name = "3. Thai Infantry Div."
+			location = 6175
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "7th Infantry Regiment" experience = 0 historical_model = 3 }
+			regiment = { type = militia_brigade name = "8th Infantry Regiment" experience = 0 historical_model = 3 }
+			regiment = { type = militia_brigade name = "9rd Infantry Regiment" experience = 0 historical_model = 3 }
+		}		
+	}
+	division = {
+		name = "Royal Thai Police Force"
+		location = 6148
+		regiment = { type = garrison_brigade name = "1st Royal Police Regiment" experience = 0 historical_model = 3 }
+		regiment = { type = garrison_brigade name = "2nd Royal Police Regiment" experience = 0 historical_model = 3 }
+		regiment = { type = garrison_brigade name = "3rd Royal Police Regiment" experience = 0 historical_model = 3 }
+	}
+	navy = {
+		name = "Royal Thai Navy"
+		base = 6175
+		location = 6175
+		ship = { type = destroyer name = "1. Phû Sanghár Flotille" experience = 0 historical_model = 0 }
+	}
+	air = {
+		name = "Royal Thai Airforce"
+		base = 6175
+		location = 6175
+		wing = { type = interceptor name = "1. RTAF Fighter Group" experience = 0 historical_model = 0 }
+		wing = { type = tactical_bomber name = "1. RTAF Tactic Bomb Group" experience = 0 historical_model = 0 }
+	}
+}
+convoy_construction=
+{
+	country = SIA
+	id=
+	{
+		id=15912
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = SIA
+	id=
+	{
+		id=15913
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

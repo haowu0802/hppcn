@@ -1,0 +1,518 @@
+# If you add types, and use those tags, do not change them without changing everywhere they are used.
+# Uses all 'modifiers' possible thats exported as a Modifier.
+
+# Head of State
+
+undistinguished_suit = {
+	ruling_party_support = 0.05
+}
+
+power_hungry_demagogue = {
+	national_unity_effect = -0.1
+	sw_national_unity_effect = -0.1
+	espionage_bonus = 0.05
+} 
+
+barking_buffoon = {
+	national_unity_effect = 0.1
+	sw_national_unity_effect = 0.1
+	peace_offmap_intel = 0.05
+} 
+
+stern_imperialist = {
+	global_ic = 0.05
+} 
+
+ruthless_powermonger = {
+	land_organisation = -0.05
+	national_unity_effect = -0.2
+	sw_national_unity_effect = -0.2
+}
+
+autocratic_charmer = {
+	global_ic = -0.05
+	war_consumer_goods_demand = -0.5
+} 
+
+resigned_generalissimo = {
+	global_supplies = 0.1
+	global_money = -0.1
+} 
+
+benevolent_gentleman = {
+	suseptibility = -0.05
+	org_regain = 0.05
+} 
+
+weary_stiff_neck = {
+	suseptibility = 0.05
+	org_regain = 0.05
+} 
+
+insignificant_layman = {
+	global_money = 0.05
+	war_consumer_goods_demand = 0.025 
+} 
+
+die_hard_reformer = {
+	industrial_efficiency = 0.05
+} 
+
+pig_headed_isolationist = {
+	suseptibility = -0.5
+	threat_resistance = 0.25
+} 
+
+popular_figurehead = {
+	ruling_party_support = 0.1
+}
+
+# Head of Government
+
+silent_workhorse = {
+	global_ic = 0.05
+}
+
+naive_optimist = {
+	threat_resistance = 0.15
+} 
+
+flamboyant_tough_guy = {
+	national_unity_effect = -0.1
+	sw_national_unity_effect = -0.1
+} 
+
+happy_amateur = {
+	global_money = -0.05
+	peace_consumer_goods_demand = -0.02
+} 
+
+backroom_backstabber = {
+	global_ic = -0.05
+	ruling_party_support = 0.1
+} 
+
+smiling_oilman = {
+	global_crude_oil = 0.05
+} 
+
+old_general = {
+	land_organisation = 0.05
+} 
+
+old_admiral = {
+	naval_organisation = 0.1	
+} 
+
+old_air_marshal = {
+	air_organisation = 0.1		
+} 
+
+political_protege = {
+	ruling_party_support = 0.05
+	peace_consumer_goods_demand = -0.025 	
+} 
+
+ambitious_union_boss = {
+	war_consumer_goods_demand = 0.05
+	dissent = -0.05	
+} 
+
+corporate_suit = {
+	global_money = 0.1
+} 
+
+# Foreign Minister
+
+biased_intellectual = {
+	national_unity_effect = 0.1
+	sw_national_unity_effect = 0.1
+	suseptibility_comintern = 0.1
+}
+
+ideological_crusader = {
+	threat_resistance = -0.25
+	threat_impact = 0.1
+	drift_speed = 0.05
+}
+
+apologetic_clerk = {
+	national_unity_effect = -0.1
+	sw_national_unity_effect = -0.1
+	drift_speed = -0.05
+}
+
+iron_fisted_brute = {
+	threat_resistance = -0.5
+	threat_impact = 0.25
+	ruling_party_support = -0.05
+}
+
+great_compromiser = {
+	threat_resistance = 0.1
+	suseptibility_allies = 0.1
+}
+
+the_cloak_n_dagger_schemer = {
+	threat_resistance = -0.1
+	suseptibility_axis = 0.1
+}
+
+general_staffer = {
+	peace_offmap_intel = 0.1
+	ruling_party_support = 0.05
+} 
+
+# Armament Minister
+
+corrupt_kleptocrat = {
+	global_supplies = -0.1
+	ruling_party_support = 0.1
+	decay = { no_theory = 2.0 }
+}
+
+administrative_genius = {
+	global_ic = 0.1
+	decay = { construction_practical = -1.0 }
+	decay = { no_theory = 2.0 }
+} 
+
+resource_industrialist = {
+	global_resources = 0.05 
+	decay = { electornicegineering_practical = -1.0 }
+	decay = { chemical_engineering = -1.0 }
+	decay = { no_theory = 2.0 }
+} 
+
+laissez_faires_capitalist = {
+	war_consumer_goods_demand = -0.025
+	peace_consumer_goods_demand = -0.025 
+	decay = { no_theory = 2.0 }
+} 
+
+theoretical_scientist = {
+	decay = { nuclear_physics = -1.0 }
+	decay = { jetengine_theory = -1.0 }
+	decay = { rocket_science = -1.0 }
+	decay = { no_theory = 2.0 }
+}
+
+military_entrepreneur = {
+	global_supplies = 0.2
+	decay = { no_theory = 2.0 }
+} 
+
+battle_fleet_proponent = {
+	decay = { naval_engineering = -1.0 }
+	decay = { capitalship_practical = -1.0 }
+	decay = { cruiser_practical = -1.0 }
+	decay = { no_theory = 2.0 }
+} 
+
+submarine_proponent = {
+	decay = { submarine_engineering = -1.0 }
+	decay = { submarine_practical = -1.0 }
+	decay = { no_theory = 2.0 }
+} 
+
+tank_proponent = {
+	decay = { automotive_practical = -1.0 }
+	decay = { mobile_practical = -1.0 }
+	decay = { no_theory = 2.0 }
+} 
+
+infantry_proponent = {
+	decay = { infantry_practical = -1.0 }
+	decay = { artillery_practical = -1.0 }
+	decay = { no_theory = 2.0 }
+} 
+
+air_to_ground_proponent = {
+	decay = { aeronautic_engineering = -1.0 }
+	decay = { twin_engine_aircraft_practical = -1.0 }
+	decay = { no_theory = 2.0 }
+} 
+
+air_superiority_proponent = {
+	decay = { aeronautic_engineering = -1.0 }
+	decay = { single_engine_aircraft_practical = -1.0 }
+	decay = { no_theory = 2.0 }
+}
+
+air_to_sea_proponent = {
+	decay = { naval_engineering = -1.0 }
+	decay = { destroyer_practical = -1.0 }
+	decay = { carrier_practical = -1.0 }
+	decay = { no_theory = 2.0 }
+} 
+
+strategic_air_proponent = {
+	decay = { aeronautic_engineering = -1.0 }
+	decay = { four_engine_aircraft_practical = -1.0 }
+	decay = { no_theory = 2.0 }
+}
+
+# Minister of Security
+
+crooked_kleptocrat = {
+	global_ic = -0.03
+	ruling_party_support = 0.1
+} 
+
+silent_lawyer = {
+	threat_impact = -0.25
+}
+
+compassionate_gentleman = {
+	national_unity_effect = 0.1
+	sw_national_unity_effect = 0.1
+} 
+
+crime_fighter = {
+	counter_espionage = 0.1
+} 
+
+prince_of_terror = {
+	ruling_party_support = 0.15
+	partisan_efficiency = 10
+} 
+
+back_stabber = {
+	dissent = 0.01
+	counter_espionage = 0.15
+}
+
+man_of_the_people = {
+	global_leadership_modifier = 0.05
+} 
+
+efficient_sociopath = {
+	counter_intelligence = 0.1
+} 
+
+# Minister of Intelligence
+
+technical_specialist = {
+	research_efficiency = 0.05
+} 
+
+research_specialist = {
+	offmap_land_intel = 0.5
+} 
+
+political_specialist = {
+	offmap_political_intel = 0.5
+} 
+
+dismal_enigma = {
+	espionage_bonus = 0.1
+} 
+
+industrial_specialist = {
+	offmap_industry_intel = 0.5
+} 
+
+naval_intelligence_specialist = {
+	offmap_naval_intel = 0.5
+} 
+
+# Chief of Staff
+
+school_of_manoeuvre = {
+	combat_movement_speed = 0.1
+	decay = { spearhead_theory = -0.5 }
+} 
+
+school_of_fire_support = {
+	decay = { superior_firepower_theory = -0.5 }
+	attack_reinforce_chance = 0.025
+} 
+
+school_of_mass_combat = {
+	decay = { human_wave_theory = -0.5 }
+	global_manpower_modifier = 0.2	
+}
+
+school_of_psychology = {
+	decay = { human_wave_theory = -0.25 }
+	org_regain = 0.1
+} 
+
+school_of_defence = {
+	decay = { grand_battleplan_theory = -0.5 }
+	defend_reinforce_chance = 0.025
+} 
+
+logistics_specialist = {
+	decay = { grand_battleplan_theory = -0.25 }
+	supply_throughput = 0.1
+}
+
+# Chief of Army
+
+elastic_defence_doctrine = {
+	decay = { mobile_theory = -1.0 }
+	decay = { superior_firepower_theory = -0.5 }
+} 
+
+static_defence_doctrine = {
+	decay = { infantry_theory = -1.0 }
+	decay = { grand_battleplan_theory = -0.5 }
+} 
+
+decisive_battle_doctrine = {
+	decay = { artillery_theory = -1.0 }
+	decay = { human_wave_theory = -0.5 }
+} 
+
+armoured_spearhead_doctrine = {
+	decay = { armour_theory = -1.0 }
+	decay = { spearhead_theory = -0.5 }
+} 
+
+guns_and_butter_doctrine = {
+	supply_consumption = -0.10
+} 
+
+# Chief of Navy
+
+#open_seas_doctrine = {
+#	decay = { no_theory = -1.0 }		# Replaced by Decisive Naval Battle everywhere. They would have given the same bonuses anyway.
+#	decay = { port_capacity = -1.0 }
+#} 
+
+decisive_naval_battle_doctrine = { 
+	decay = { fleet_in_being_doctrine = -1.0 }
+	decay = { port_capacity = -1.0 }
+} 
+
+power_projection_doctrine = {
+	decay = { base_strike_doctrine = -1.0 }
+	decay = { port_capacity = -1.0 }
+} 
+
+indirect_approach_doctrine = {
+	decay = { sealane_interdiction_doctrine = -1.0 }
+	decay = { port_capacity = -1.0 }
+} 
+
+base_control_doctrine = {
+	naval_base_efficiency = 0.1
+	decay = { transport_practical = -1.0 }
+	decay = { port_capacity = -1.0 }
+} 
+
+# Chief of Air
+
+air_superiority_doctrine = {
+	decay = { fighter_focus = -1.0 }
+} 
+
+naval_aviation_doctrine = {
+	decay = { nav_focus = -1.0 }
+} 
+
+army_aviation_doctrine = {
+	decay = { cas_focus = -1.0 }
+} 
+
+carpet_bombing_doctrine = {
+	decay = { strategic_air_focus = -1.0 }
+} 
+
+vertical_envelopment_doctrine = {
+	decay = { tac_focus = -1.0 } 
+}
+
+# New traits from the New Nations Mod by Daboo
+ 
+the_monkey_king = {
+	ruling_party_support = 0.1
+}
+
+father_of_his_country = {
+	national_unity_effect = 0.2
+	sw_national_unity_effect = 0.2
+}
+ 
+the_divinely_anointed = {
+	national_unity_effect = 0.1
+	sw_national_unity_effect = 0.1
+}
+
+the_ambitious_colonel = {
+	national_unity_effect = 0.1
+	sw_national_unity_effect = 0.1
+	dissent = 0.01
+	suseptibility_axis = 0.10
+}
+
+amoral_technocrat = {
+	global_ic = 0.15
+	global_resources = 0.05
+	partisan_efficiency = 25
+}
+
+brilliant_engineer = {
+	decay = { mechanicalengineering_theory = -1.0 }
+}
+
+space_enthusiast = {
+	global_ic = 0.10
+	decay = { rocket_practical = -0.50 }
+	aeronautic_engineering = 25
+}
+
+capitalist_roader = {
+	global_ic = 0.15
+	global_money = 0.05
+	suseptibility_allies = 0.1
+}
+
+brilliant_propagandist = {
+	national_unity_effect = 0.1
+	sw_national_unity_effect = 0.1
+	suseptibility_allies = -0.10
+}
+
+heir_apparent = {
+	national_unity_effect = 0.05
+	sw_national_unity_effect = 0.05
+	suseptibility_allies = 0.10
+}
+
+culture_warrior = {
+	national_unity_effect = 0.05
+	sw_national_unity_effect = 0.05
+	suseptibility_allies = 0.10
+}
+
+master-of_smears = {
+	national_unity_effect = 0.05
+	sw_national_unity_effect = 0.05
+	dissent = -0.05
+	partisan_efficiency = 25
+}
+
+mad_proponent = {
+	nuclear_bomb = 0.05
+	decay = { rocket_practical = -0.10 }
+	decay = { nuclear_bomb = -0.10 }
+	global_ic = -0.10
+}   
+
+# Generic Traits for dummy ministers
+mostly_harmless = {
+	# They have no modifiers at all. But if they did, it would be a minor penalty to ruling party support...
+	#ruling_party_support = -0.01
+}
+mostly_harmless_naval = {
+	# They have the generic port capacity decay modifier like every other Chief of the Navy. They could also have a ruling party support penalty for good measure
+	decay = { port_capacity = -1.0 }
+	#ruling_party_support = -0.01
+}
+mostly_harmless_armament = {
+	# They have the generic knowledge decay modifier like every other Chief of the Navy. They could also have a ruling party support penalty for good measure
+	decay = { no_theory = 2.0 }
+	#ruling_party_support = -0.01
+}

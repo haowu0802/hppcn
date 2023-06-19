@@ -1,0 +1,508 @@
+color = { 145  157  236 }
+graphical_culture = Generic
+
+
+
+default_templates = {
+	generic_infantry = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	generic_milita = {
+		militia_brigade
+		militia_brigade
+		militia_brigade
+	}
+	generic_armoured = {
+		armor_brigade
+		motorized_brigade
+		motorized_brigade
+	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
+	generic_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
+	}		
+}
+
+unit_names = {
+	infantry_brigade = {
+		"al-Mushati al-1i" "al-Mushati al-2i" "al-Mushati al-3i" "al-Mushati al-4i" "al-Mushati al-5i" "al-Mushati al-6i" "al-Mushati al-7i" "al-Mushati al-8i" "al-Mushati al-9i" "al-Mushati al-10r" "al-Mushati al-11r" "al-Mushati al-12r" "al-Mushati al-13r" "al-Mushati al-14r" "al-Mushati al-15r" "al-Mushati al-16r" "al-Mushati al-17r" "al-Mushati al-18r" "al-Mushati al-19r" "al-Mushati al-20r"
+	}
+	cavalry_brigade = {
+		"Sipahis al-1i" "Sipahis al-2i" "Sipahis al-3i" "Sipahis al-4i" "Sipahis al-5i" "Sipahis al-6i" "Sipahis al-7i" "Sipahis al-8i" "Sipahis al-9i" "Sipahis al-10r" "Sipahis al-11r" "Sipahis al-12r" "Sipahis al-13r" "Sipahis al-14r" "Sipahis al-15r"
+	}
+	motorized_brigade = {
+		"al-Mushati al-21r" "al-Mushati al-22r" "al-Mushati al-23r" "al-Mushati al-24r" "al-Mushati al-25r" "al-Mushati al-26r" "al-Mushati al-27r" "al-Mushati al-28r" "al-Mushati al-29r" "al-Mushati al-30r" "al-Mushati al-31r" "al-Mushati al-32r" "al-Mushati al-33r" "al-Mushati al-34r" "al-Mushati al-35r" "al-Mushati al-36r" "al-Mushati al-37r" "al-Mushati al-38r" "al-Mushati al-39r" "al-Mushati al-40r" 
+	}
+	mechanized_brigade = {
+		"al-Mushati al-21r" "al-Mushati al-22r" "al-Mushati al-23r" "al-Mushati al-24r" "al-Mushati al-25r" "al-Mushati al-26r" "al-Mushati al-27r" "al-Mushati al-28r" "al-Mushati al-29r" "al-Mushati al-30r" "al-Mushati al-31r" "al-Mushati al-32r" "al-Mushati al-33r" "al-Mushati al-34r" "al-Mushati al-35r" "al-Mushati al-36r" "al-Mushati al-37r" "al-Mushati al-38r" "al-Mushati al-39r"  "al-Mushati al-40r" 
+	}
+	light_armor_brigade = {
+		"Sipahis al-16r" "Sipahis al-17r" "Sipahis al-18r" "Sipahis al-19r" "Sipahis al-20r" "Sipahis al-21r" "Sipahis al-22r" "Sipahis al-23r" "Sipahis al-24r" "Sipahis al-25r" "Sipahis al-26r" "Sipahis al-27r" "Sipahis al-28r" "Sipahis al-29r" "Sipahis al-30r"
+	}
+	armor_brigade = {
+		"Sipahis al-16r" "Sipahis al-17r" "Sipahis al-18r" "Sipahis al-19r" "Sipahis al-20r" "Sipahis al-21r" "Sipahis al-22r" "Sipahis al-23r" "Sipahis al-24r" "Sipahis al-25r" "Sipahis al-26r" "Sipahis al-27r" "Sipahis al-28r" "Sipahis al-29r" "Sipahis al-30r"
+	}
+	paratrooper_brigade = {
+		"al-Mushati al-21r" "al-Mushati al-22r" "al-Mushati al-23r" "al-Mushati al-24r" "al-Mushati al-25r" "al-Mushati al-26r" "al-Mushati al-27r" "al-Mushati al-28r" "al-Mushati al-29r" "al-Mushati al-30r" "al-Mushati al-31r" "al-Mushati al-32r" "al-Mushati al-33r" "al-Mushati al-34r" "al-Mushati al-35r" "al-Mushati al-36r" "al-Mushati al-37r" "al-Mushati al-38r" "al-Mushati al-39r" "al-Mushati al-40r" 
+	}
+	marine_brigade = {
+		"al-Mushati al-21r" "al-Mushati al-22r" "al-Mushati al-23r" "al-Mushati al-24r" "al-Mushati al-25r" "al-Mushati al-26r" "al-Mushati al-27r" "al-Mushati al-28r" "al-Mushati al-29r" "al-Mushati al-30r" "al-Mushati al-31r" "al-Mushati al-32r" "al-Mushati al-33r" "al-Mushati al-34r" "al-Mushati al-35r" "al-Mushati al-36r" "al-Mushati al-37r" "al-Mushati al-38r" "al-Mushati al-39r" "al-Mushati al-40r" 
+	}
+	bergsjaeger_brigade = {
+		"al-Mushati al-21r" "al-Mushati al-22r" "al-Mushati al-23r" "al-Mushati al-24r" "al-Mushati al-25r" "al-Mushati al-26r" "al-Mushati al-27r" "al-Mushati al-28r" "al-Mushati al-29r" "al-Mushati al-30r" "al-Mushati al-31r" "al-Mushati al-32r" "al-Mushati al-33r" "al-Mushati al-34r" "al-Mushati al-35r" "al-Mushati al-36r" "al-Mushati al-37r" "al-Mushati al-38r" "al-Mushati al-39r" "al-Mushati al-40r" 
+	}
+	garrison_brigade = {
+		"al-Mushati al-21r" "al-Mushati al-22r" "al-Mushati al-23r" "al-Mushati al-24r" "al-Mushati al-25r" "al-Mushati al-26r" "al-Mushati al-27r" "al-Mushati al-28r" "al-Mushati al-29r" "al-Mushati al-30r" "al-Mushati al-31r" "al-Mushati al-32r" "al-Mushati al-33r" "al-Mushati al-34r" "al-Mushati al-35r" "al-Mushati al-36r" "al-Mushati al-37r" "al-Mushati al-38r" "al-Mushati al-39r"  "al-Mushati al-40r" 
+	}
+	hq_brigade = {
+		"1st Al Jaza'ir Army" "2nd Al Jaza'ir Army" "3rd Al Jaza'ir Army" "4th Al Jaza'ir Army" "5th Al Jaza'ir Army"
+	}
+	militia_brigade = {
+		"al-Milishiya al-1i" "al-Milishiya al-2i" "al-Milishiya al-3i" "al-Milishiya al-4i" "al-Milishiya al-5i" "al-Milishiya al-6i" "al-Milishiya al-7i" "al-Milishiya al-8i" "al-Milishiya al-9i" "al-Milishiya al-10r" "al-Milishiya al-11r" "al-Milishiya al-12r" "al-Milishiya al-13r" "al-Milishiya al-14r" "al-Milishiya al-15r" "al-Milishiya al-16r" "al-Milishiya al-17r" "al-Milishiya al-18r" "al-Milishiya al-19r" "al-Milishiya al-20r" "al-Milishiya al-21r" "al-Milishiya al-22r" 
+	}
+	multi_role = {
+		"6. Groupe de Chassee AlgAF" "7. Groupe de Chassee AlgAF" "8. Groupe de Chassee AlgAF" "9. Groupe de Chassee AlgAF" "10. Groupe de Chassee AlgAF" 
+	}
+	interceptor = {
+		"1. Groupe de Chassee AlgAF" "2. Groupe de Chassee AlgAF" "3. Groupe de Chassee AlgAF" "4. Groupe de Chassee AlgAF" "5. Groupe de Chassee AlgAF" 
+	}
+	jet_int = {
+		"11. Groupe de Chassee AlgAF" "12. Groupe de Chassee AlgAF" "13. Groupe de Chassee AlgAF" "14. Groupe de Chassee AlgAF" "15. Groupe de Chassee AlgAF" 
+	}
+	jet_mr = {
+		"16. Groupe de Chassee AlgAF" "17.Groupe de Chassee AlgAF" "18. Groupe de Chassee AlgAF" "19. Groupe de Chassee AlgAF" "20. Groupe de Chassee AlgAF" 
+	}
+	strategic_bomber = {
+		"Groupe de Bombardement 16 AlgAF" "Groupe de Bombardement 17 AlgAF" "Groupe de Bombardement 18 AlgAF" "Groupe de Bombardement 19 AlgAF" "Groupe de Bombardement 20 AlgAF"
+	}
+	tactical_bomber = {
+		"Groupe de Bombardement 1 AlgAF" "Groupe de Bombardement 2 AlgAF" "Groupe de Bombardement 3 AlgAF" "Groupe de Bombardement 4 AlgAF" "Groupe de Bombardement 5 AlgAF" "Groupe de Bombardement 6 AlgAF" "Groupe de Bombardement 7 AlgAF" "Groupe de Bombardement 8 AlgAF" "Groupe de Bombardement 9 AlgAF" "Groupe de Bombardement 10 AlgAF"
+	}
+	jet_bomber = {
+		"Groupe de Bombardement 26 AlgAF" "Groupe de Bombardement 27 AlgAF" "Groupe de Bombardement 28 AlgAF" "Groupe de Bombardement 29 AlgAF" "Groupe de Bombardement 30 AlgAF"
+	}
+	naval_bomber = {
+		"Groupe de Bombardement 11 AlgAF" "Groupe de Bombardement 12 AlgAF" "Groupe de Bombardement 13 AlgAF" "Groupe de Bombardement 14 AlgAF" "Groupe de Bombardement 15 AlgAF"
+	}
+	cas = {
+		"Groupe de Bombardement 21 AlgAF" "Groupe de Bombardement 22 AlgAF" "Groupe de Bombardement 23 AlgAF" "Groupe de Bombardement 24 AlgAF" "Groupe de Bombardement 25 AlgAF"
+	}
+	transport_plane = {
+		"1ère Groupe de Transport Aérien" "2ère Groupe de Transport Aérien" "3ère Groupe de Transport Aérien" "4ère Groupe de Transport Aérien" "5ère Groupe de Transport Aérien" "6ère Groupe de Transport Aérien"
+	}
+	battleship = {
+		"al-Qahira" "Salah al-Din" "Mehemet Ali"
+	}
+	destroyer = {
+		"Flotille Al Bi'ra" "Flotille Tabuk" "Flotille Aynunah"
+	}
+	submarine = {
+		"Ustul al-Ghawwasati al-1i" "Ustul al-Ghawwasati al-2i" "Ustul al-Ghawwasati al-3i" "Ustul al-Ghawwasati al-4i" "Ustul al-Ghawwasati al-5i" "Ustul al-Ghawwasati al-6i" "Ustul al-Ghawwasati al-7i" "Ustul al-Ghawwasati al-8i" "Ustul al-Ghawwasati al-9i" "Ustul al-Ghawwasati al-10i"
+	}
+	transport_ship = {
+		"Ustul al-Hamli al-1i" "Ustul al-Hamli al-2i" "Ustul al-Hamli al-3i" "Ustul al-Hamli al-4i" "Ustul al-Hamli al-5i" "Ustul al-Hamli al-6i" "Ustul al-Hamli al-7i" "Ustul al-Hamli al-8i" "Ustul al-Hamli al-9i" "Ustul al-Hamli al-10i"
+	}
+}
+
+ministers = {
+	530001 = {
+		 name = "Ferhat Abbas"
+		 ideology = left_wing_radical
+		 loyalty = 1.00
+		 head_of_state = autocratic_charmer
+		 head_of_government = smiling_oilman
+		 start_date = 1936.1.1
+		 picture = M530016
+	}
+	530002 = {
+		 name = "Georges Le Beau"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 head_of_state = benevolent_gentleman
+		 head_of_government = flamboyant_tough_guy
+		 start_date = 1936.1.1
+		 picture = M530001
+	}
+	530003 = {
+		 name = "Andre Jean Godin"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 minister_of_security = compassionate_gentleman
+		 start_date = 1942.1.1
+		 picture = M530029
+	}
+	530004 = {
+		 name = "Antoine Masurel"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 armament_minister = tank_proponent
+		 start_date = 1936.1.1
+		 picture = M530004
+	}
+	530005 = {
+		 name = "Bachra Baya"
+		 ideology = left_wing_radical
+		 loyalty = 1.00
+		 chief_of_air = vertical_envelopment_doctrine
+		 start_date = 1944.1.1
+		 picture = M530045
+	}
+	530006 = {
+		 name = "Djamil Chirine"
+		 ideology = left_wing_radical
+		 loyalty = 1.00
+		 minister_of_security = man_of_the_people
+		 minister_of_intelligence = industrial_specialist
+		 start_date = 1936.1.1
+		 picture = M530031
+	}
+	530007 = {
+		 name = "Eugene Dechelette"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 armament_minister = air_superiority_proponent
+		 start_date = 1941.1.1
+		 picture = M530026
+	}
+	530008 = {
+		 name = "Ahmed ben-Bella"
+		 ideology = left_wing_radical
+		 loyalty = 1.00
+		 armament_minister = administrative_genius
+		 start_date = 1945.1.1
+		 picture = M530028
+	}
+	530009 = {
+		 name = "Francois Sommer"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 chief_of_air = air_superiority_doctrine
+		 start_date = 1936.1.1
+		 picture = M530010
+	}
+	530010 = {
+		 name = "Frantz Fanon"
+		 ideology = left_wing_radical
+		 loyalty = 1.00
+		 armament_minister = military_entrepreneur
+		 chief_of_air = air_superiority_doctrine
+		 start_date = 1936.1.1
+		 picture = M530027
+	}
+	530011 = {
+		 name = "Alfred Heurtaux"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 chief_of_staff = school_of_fire_support
+		 chief_of_air = army_aviation_doctrine
+		 start_date = 1936.1.1
+		 picture = M530007
+	}
+	530012 = {
+		 name = "Georges Catroux"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 head_of_state = pig_headed_isolationist
+		 head_of_government = old_general
+		 start_date = 1943.1.1
+		 picture = L24029
+	}
+	530013 = {
+		 name = "Henri Manhés"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 chief_of_navy = indirect_approach_doctrine
+		 start_date = 1936.1.1
+		 picture = M530009
+	}
+	530014 = {
+		 name = "Houari Boumedienne"
+		 ideology = left_wing_radical
+		 loyalty = 1.00
+		 chief_of_staff = school_of_mass_combat
+		 chief_of_army = guns_and_butter_doctrine
+		 start_date = 1944.1.1
+		 picture = M530037
+	}
+	530015 = {
+		 name = "Jacques Bourdis"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 chief_of_staff = school_of_manoeuvre
+		 start_date = 1944.1.1
+		 picture = M530035
+	}
+	530016 = {
+		 name = "Jean Abrial"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 head_of_state = stern_imperialist
+		 head_of_government = old_admiral
+		 start_date = 1940.1.1
+		 picture = L24146
+	}
+	530017 = {
+		 name = "Jean Revault d'Allonnes"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 minister_of_intelligence = industrial_specialist
+		 start_date = 1936.1.1
+		 picture = M530006
+	}
+	530018 = {
+		 name = "Jules de Koenigswarter"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 foreign_minister = ideological_crusader
+		 start_date = 1936.1.1
+		 picture = M530003
+	}
+	530019 = {
+		 name = "Kheireddine Dadci"
+		 ideology = left_wing_radical
+		 loyalty = 1.00
+		 chief_of_navy = decisive_naval_battle_doctrine
+		 start_date = 1936.1.1
+		 picture = M530042
+	}
+	530020 = {
+		 name = "Marcel Peyrouton"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 minister_of_security = back_stabber
+		 head_of_state = barking_buffoon
+		 head_of_government = corporate_suit
+		 start_date = 1936.1.1
+		 picture = M530005
+	}
+	530021 = {
+		 name = "Maxime Weygand"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 head_of_state = resigned_generalissimo
+		 head_of_government = happy_amateur
+		 start_date = 1941.1.1
+		 picture = L24145
+	}
+	530022 = {
+		 name = "Mustapha al-Ghani"
+		 ideology = left_wing_radical
+		 loyalty = 1.00
+		 chief_of_staff = school_of_psychology
+		 chief_of_army = elastic_defence_doctrine
+		 start_date = 1936.1.1
+		 picture = M530036
+	}
+	530023 = {
+		 name = "Paul Oddo"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 chief_of_army = armoured_spearhead_doctrine
+		 start_date = 1943.1.1
+		 picture = M530038
+	}
+	530024 = {
+		 name = "Pierre Julitte"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 minister_of_intelligence = logistics_specialist
+		 start_date = 1941.1.1
+		 picture = M530032
+	}
+	530025 = {
+		 name = "Pierre de Chevigné"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 chief_of_army = decisive_battle_doctrine
+		 chief_of_navy = base_control_doctrine
+		 start_date = 1936.1.1
+		 picture = M530008
+	}
+	530026 = {
+		 name = "Pierre-Henri Teitgen"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 foreign_minister = the_cloak_n_dagger_schemer
+		 start_date = 1942.1.1
+		 picture = M530023
+	}
+	530027 = {
+		 name = "Saadi M'Barka"
+		 ideology = left_wing_radical
+		 loyalty = 1.00
+		 foreign_minister = biased_intellectual
+		 minister_of_intelligence = naval_intelligence_specialist
+		 start_date = 1936.1.1
+		 picture = M530024
+	}
+	530028 = {
+		 name = "Yussef ben-Khedda"
+		 ideology = left_wing_radical
+		 loyalty = 1.00
+		 foreign_minister = great_compromiser
+		 minister_of_security = back_stabber
+		 start_date = 1936.1.1
+		 picture = M530025
+	}
+	530029 = {
+		 name = "Yves Chataigneau"
+		 ideology = social_liberal
+		 loyalty = 1.00
+		 head_of_state = die_hard_reformer
+		 head_of_government = corporate_suit
+		 start_date = 1944.1.1
+		 picture = M528020
+	}
+	# Generic dummy ministers
+	95018 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95019 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95020 = {
+		name = "Nameless Clerk"
+		ideology = paternal_autocrat
+		loyalty = 1.0
+		picture = MPaternalAutocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95021 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95022 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95023 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95024 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95025 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+}

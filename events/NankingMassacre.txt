@@ -1,0 +1,74 @@
+########################
+# The Nanking Massacre #
+########################
+
+country_event = {
+
+	id = 1711
+
+	major = yes
+
+	trigger = {
+		tag = JAP
+		war_with = CHI
+		CHI = { owns = 5494	}	# Nanjing
+		controls = 5494			# Nanjing
+		not = { has_country_flag = "nanking_massacre" }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "The Nanking Massacre"
+	desc = "nanjing_massacre_desc"
+	picture = "Nanking"
+
+	option = {
+		name = "That will hurt us more than them..."
+		set_country_flag = "nanking_massacre"
+		change_variable = { which = "jap_army_navy_struggle" value = +1 }
+		USA = { country_event = 1712 }
+		FRA = { country_event = 1712 }
+		ENG = { country_event = 1712 }
+		CHI = { country_event = 1713 }
+	}
+
+}
+
+country_event = {
+
+	id = 1712
+
+	is_triggered_only = yes
+
+	title = "The Nanking Massacre"
+	desc = "nanjing_massacre_desc"
+	picture = "Nanking"
+
+	option = {
+		name = "That's outrageous!"
+		neutrality = -5
+		relation = { who = JAP value = -15 }
+	}
+
+}
+
+country_event = {
+
+	id = 1713
+
+	is_triggered_only = yes
+
+	title = "The Nanking Massacre"
+	desc = "nanjing_massacre_desc"
+	picture = "Nanking"
+
+	option = {
+		name = "Those poor souls!"
+		national_unity = 3
+		dissent = -15
+		relation = { who = JAP value = -30 }
+	}
+
+}

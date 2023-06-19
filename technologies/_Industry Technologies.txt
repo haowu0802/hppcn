@@ -1,0 +1,881 @@
+combat_medicine = {
+
+	casualty_trickleback = 0.02
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		land_doctrine_practical = 1.00
+		chemical_engineering = 1.50
+	}
+
+	on_completion = no_theory
+
+	difficulty = 2
+
+	start_year = 1938
+	first_offset = 1939	#2nd model is from 1936
+	additional_offset = 3	#one new every 2 years
+	max_level = 20
+	folder = industry_folder
+}	
+
+first_aid = {
+
+	maximum_attrition = -0.05
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		land_doctrine_practical = 1.00
+		chemical_engineering = 1.50
+	}
+
+	on_completion = no_theory
+
+	difficulty = 2
+
+	start_year = 1938
+	first_offset = 1939	#2nd model is from 1936
+	additional_offset = 3	#one new every 2 years
+	max_level = 20
+	folder = industry_folder
+}	
+
+agriculture = {
+
+	manpower_gain = 0.05
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		mechanicalengineering_theory = 1.00
+		chemical_engineering = 1.50
+	}
+
+	on_completion = no_theory
+
+	difficulty = 1
+
+	start_year = 1918
+	first_offset = 1932		#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = industry_folder
+}	
+
+industral_production = {
+
+	ic_modifier = 0.025
+
+	research_bonus_from = {
+		electornicegineering_theory = 0.25
+		mechanicalengineering_theory = 1.75
+		construction_practical  = 0.50
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		construction_engineering = 1
+	}
+
+	on_completion = no_theory
+
+	difficulty = 2
+
+	start_year = 1918
+	first_offset = 1932	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = industry_folder
+}	
+
+industral_efficiency = {
+
+	ic_efficiency = 0.025
+
+	research_bonus_from = {
+		electornicegineering_theory = 0.75
+		mechanicalengineering_theory = 1.25
+		construction_practical  = 0.50
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		construction_engineering = 1
+	}
+
+	on_completion = no_theory
+	difficulty = 2
+
+	start_year = 1918
+	first_offset = 1932	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = industry_folder
+}
+
+synthetic_oil_development = {
+
+	energy_to_oil_conversion = 1.00
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		chemical_engineering = 2.50
+	}
+
+	on_completion = no_theory
+	difficulty = 5
+
+	start_year = 1938
+	folder = industry_folder	
+}	
+
+oil_to_coal_conversion = {
+
+	energy_to_oil_conversion = 0.1
+	
+	research_bonus_from = {
+		chemical_engineering = 2.50
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		synthetic_oil_development = 1
+	}
+
+	on_completion = no_theory
+	difficulty = 5
+
+	start_year = 1938
+	first_offset = 1940
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = industry_folder
+}	
+
+supply_production = {
+
+	ic_to_supplies = 0.05
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		mechanicalengineering_theory = 2.50
+	}
+
+	on_completion = no_theory
+	difficulty = 2
+
+	start_year = 1918
+	first_offset = 1932	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = industry_folder
+}	
+
+heavy_aa_guns = {
+
+	activate_building = anti_air 
+	provincial_aa_efficiency = 0.25
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		artillery_theory = 1.75
+		artillery_practical = 0.75
+	}
+
+	on_completion = no_theory
+	difficulty = 2
+
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 3	#one new every 2 years
+	max_level = 20
+	folder = industry_folder
+}
+	
+electronic_mechanical_egineering = {
+
+	# This has no direct effect
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		electornicegineering_theory  = 1.25
+		mechanicalengineering_theory = 1.25
+	}
+
+	on_completion = no_theory
+
+	difficulty = 2
+
+	start_year = 1926
+	folder = industry_folder
+}
+	
+radio_technology = {
+
+	combat_efficiency = 0.1	# Moved from "radio"
+	encryption = -0.25		# Moved from "radio"
+	
+	allow = {
+		has_global_flag = "allow_research"
+		electronic_mechanical_egineering = 1
+	}
+
+	research_bonus_from = {
+		electornicegineering_theory  = 1.25
+		mechanicalengineering_theory = 1.25
+	}
+
+	on_completion = no_theory
+
+	difficulty = 2
+
+	start_year = 1930
+	folder = industry_folder
+}
+	
+radio_detection_equipment = {
+
+	listening_station = yes
+	
+	allow = {
+		has_global_flag = "allow_research"
+		radio_technology = 1
+	}
+
+	research_bonus_from = {
+		electornicegineering_theory  = 1.25
+		mechanicalengineering_theory = 1.25
+	}
+
+	on_completion = no_theory
+
+	difficulty = 2
+
+	start_year = 1936
+	folder = industry_folder
+}
+	
+radio = {
+
+	hq_brigade = {
+		radio_strength = 0.5	# Reduced the starting HQ radio strength by 0.5
+	}
+
+	horse_towed_support_brigade = {
+		default_organisation = 5
+	}
+	truck_towed_support_brigade = {
+		default_organisation = 5
+	}
+	self_propelled_support_brigade = {
+		default_organisation = 5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		radio_technology = 1
+	}
+
+	research_bonus_from = {
+		electornicegineering_theory  = 1.25
+		mechanicalengineering_theory = 1.25
+	}
+
+	on_completion = no_theory
+
+	difficulty = 2
+
+	start_year = 1936
+	first_offset = 1939		#2nd model is from 1939
+	additional_offset = 3	#one new every 3 years
+	max_level = 20
+	folder = industry_folder
+}
+
+radar = {
+
+	activate_building = radar_station 
+	radar_efficiency = 0.05 
+	 
+
+	allow = {
+		has_global_flag = "allow_research"
+		radio_technology = 1
+	}
+
+	research_bonus_from = {
+		electornicegineering_theory  = 1.25
+		electornicegineering_practical = 1.25
+	}
+
+	on_completion = no_theory
+
+	difficulty = 3
+
+	start_year = 1939
+	first_offset = 1940	#2nd model is from 1940
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = industry_folder
+}
+
+census_tabulation_machine = {
+
+	research_efficiency = 0.02
+
+	allow = {
+		has_global_flag = "allow_research"
+		electronic_mechanical_egineering = 1
+	}
+
+	research_bonus_from = {
+		mechanicalengineering_theory = 2.50
+	}
+
+	on_completion = no_theory
+
+
+	difficulty = 2
+
+	start_year = 1936
+	
+	folder = industry_folder
+}
+
+mechnical_computing_machine = {
+
+	research_efficiency = 0.02
+
+	allow = {
+		has_global_flag = "allow_research"
+		census_tabulation_machine = 1
+	}
+
+	research_bonus_from = {
+		mechanicalengineering_theory = 2.50
+	}
+
+	on_completion = no_theory
+
+
+	difficulty = 3
+
+	start_year = 1938
+	first_offset = 1940 
+	additional_offset = 3
+	max_level = 20
+	folder = industry_folder
+
+}
+
+electronic_computing_machine = {
+
+	research_efficiency = 0.05
+
+	allow = {
+		has_global_flag = "allow_research"
+		mechnical_computing_machine = 2
+	}
+
+	research_bonus_from = {
+		mechanicalengineering_theory = 1.50
+		electornicegineering_theory = 1.00
+	}
+
+	on_completion = no_theory
+
+	difficulty = 4
+
+	start_year = 1941
+	first_offset = 1943
+	additional_offset = 3
+	max_level = 20
+	folder = industry_folder
+
+}
+
+decryption_machine = {
+
+	decryption = 0.25
+
+	allow = {
+		has_global_flag = "allow_research"
+		OR = {
+			mechnical_computing_machine = 1
+			AND = {
+				NOT = { decryption_machine = 3 }
+				electronic_computing_machine = 1
+			}
+		}
+	}
+
+	research_bonus_from = {
+		electornicegineering_theory  = 1.25
+		mechanicalengineering_theory = 1.25
+	}
+
+	on_completion = no_theory
+
+	difficulty = 2
+
+	start_year = 1938
+	first_offset = 1940		#2nd model is from 1940
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = industry_folder
+}
+
+
+encryption_machine = {
+
+	
+	encryption = 0.25
+
+	allow = {
+		has_global_flag = "allow_research"
+		OR = {
+			mechnical_computing_machine = 1
+			AND = {
+				NOT = { encryption_machine = 3 }
+				electronic_computing_machine = 1
+			}
+		}
+	}
+
+	research_bonus_from = {
+		electornicegineering_theory  = 1.25
+		mechanicalengineering_theory = 1.25
+	}
+
+	on_completion = no_theory
+
+	difficulty = 2
+
+	start_year = 1938
+	first_offset = 1940		#2nd model is from 1940
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = industry_folder
+}
+
+construction_engineering = {
+
+	activate_building = industry
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		mechanicalengineering_theory = 1.75
+		construction_practical = 0.75
+	}
+
+	on_completion = no_theory
+
+	difficulty = 2
+
+	start_year = 1918
+	folder = industry_folder
+}
+
+advanced_construction_engineering = {
+
+	activate_building = infra
+
+	allow = {
+		has_global_flag = "allow_research"
+		industral_production = 1
+		industral_efficiency = 1
+	}
+
+
+	research_bonus_from = {
+		mechanicalengineering_theory = 1.75
+		construction_practical = 0.75
+	}
+
+	on_completion = no_theory
+
+	difficulty = 2
+
+	start_year = 1938
+	folder = industry_folder
+}	
+
+
+rocket_tests = {
+
+	activate_building = rocket_test 
+
+	allow = {
+		has_global_flag = "allow_research"
+		total_ic = 50
+	}
+
+	research_bonus_from = {
+		rocket_science = 2.50
+	}
+
+	on_completion = rocket_science
+
+	difficulty = 4
+
+	start_year = 1936
+	folder = theory_folder
+}	
+
+rocket_engine = {
+
+	#no immediate effect
+
+	allow = {
+		has_global_flag = "allow_research"
+		rocket_tests = 1
+		any_owned_province = {
+			controlled_by = THIS
+			rocket_test = 1
+		}
+		total_ic = 50
+	}
+
+	research_bonus_from = {
+		rocket_science = 2.50
+	}
+
+	on_completion = rocket_science
+
+	difficulty = 4
+
+	start_year = 1939
+	folder = theory_folder
+}	
+
+theorical_jet_engine = {
+
+	#no immediate effect
+
+	allow = {
+		has_global_flag = "allow_research"
+		rocket_engine = 1
+		any_owned_province = {
+			controlled_by = THIS
+			rocket_test = 2
+		}
+		total_ic = 50
+	}
+
+	research_bonus_from = {
+		jetengine_theory = 2.50
+	}
+
+	on_completion = jetengine_theory
+
+	difficulty = 4
+
+	start_year = 1940
+	folder = theory_folder
+}	
+
+atomic_research = {
+
+	activate_building = nuclear_reactor
+
+	allow = {
+		has_global_flag = "allow_research"
+		total_ic = 50
+	}
+
+	research_bonus_from = {
+		nuclear_physics = 2.50
+	}
+
+	on_completion = nuclear_physics
+
+	difficulty = 5
+
+	start_year = 1936
+	folder = theory_folder
+}
+
+nuclear_research = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		any_owned_province = {
+			controlled_by = THIS
+			nuclear_reactor = 1
+		}
+		atomic_research = 1
+		total_ic = 50
+	}
+
+	research_bonus_from = {
+		nuclear_physics = 2.50
+	}
+
+	on_completion = nuclear_physics
+
+	difficulty = 5
+
+	start_year = 1938
+	folder = theory_folder
+}
+
+isotope_seperation = {
+
+	#no immediate effect
+
+	allow = {
+		has_global_flag = "allow_research"
+		any_owned_province = {
+			controlled_by = THIS
+			nuclear_reactor = 2
+		}
+		nuclear_research = 1
+		total_ic = 50
+	}
+
+	research_bonus_from = {
+		nuclear_physics = 2.50
+	}
+
+	on_completion = nuclear_physics
+
+	difficulty = 5
+
+	start_year = 1940
+	folder = theory_folder
+}
+ 
+civil_nuclear_research = {
+
+	energy_production = 0.01
+	
+	allow = {
+		has_global_flag = "allow_research"
+		any_owned_province = {
+			controlled_by = THIS
+			nuclear_reactor = 3
+		}
+		isotope_seperation = 1
+		total_ic = 50
+	}
+
+	research_bonus_from = {
+		nuclear_physics = 2.50
+	}
+
+	on_completion = nuclear_physics
+
+	difficulty = 5
+
+	start_year = 1941
+	first_offset = 1942
+	additional_offset = 1
+	max_level = 20
+	folder = industry_folder
+}
+
+oil_refinning = {
+
+	refinery_efficiency = 0.1
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		chemical_engineering = 2.50
+	}
+
+	on_completion = no_theory
+	difficulty = 5
+
+	start_year = 1918
+	first_offset = 1936		#2nd model is from 1936
+	additional_offset = 3	#one new every 3 years
+	max_level = 20
+	folder = industry_folder
+}
+
+steel_production = {
+
+	metal_production = 0.03
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		chemical_engineering = 2.50
+	}
+
+	on_completion = no_theory
+	difficulty = 5
+
+	start_year = 1918
+	first_offset = 1930		#2nd model is from 1930
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = industry_folder
+}
+
+raremetal_refinning_techniques = {
+
+	rares_production = 0.03
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		chemical_engineering = 2.50
+	}
+
+	on_completion = no_theory
+	difficulty = 5
+
+	start_year = 1918
+	first_offset = 1930		#2nd model is from 1930
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = industry_folder
+}
+
+coal_processing_technologies = {
+
+	energy_production = 0.03
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		chemical_engineering = 2.50
+	}
+
+	on_completion = no_theory
+	difficulty = 5
+
+	start_year = 1918
+	first_offset = 1930		#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = industry_folder
+}
+
+education = {
+
+	#leadership_gain = 0.05		# Gives a flat amount via a Strategic Effect.
+	
+	allow = {
+		has_global_flag = "allow_research"
+		not = { education = 16 }
+	}
+
+	research_bonus_from = {
+		#land_doctrine_practical = 2.50
+	}
+
+	on_completion = no_theory
+
+	difficulty = 5
+
+	start_year = 1900
+	first_offset = 1905		#2nd model is from 1905
+	additional_offset = 5	#one new every 5 years
+	max_level = 20
+	folder = industry_folder
+}
+
+
+supply_transportation = {
+
+	supply_transfer_cost = -0.01
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		land_doctrine_practical = 0.50
+	}
+
+	on_completion = no_theory
+
+	difficulty = 5
+
+	start_year = 1918
+	first_offset = 1936		#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = theory_folder	
+}
+
+
+supply_organisation = {
+
+	supply_throughput = 0.05
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		land_doctrine_practical = 0.50
+	}
+
+	on_completion = no_theory
+	
+	difficulty = 5
+	
+	start_year = 1918
+	first_offset = 1936		#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = theory_folder	
+}
+
+civil_defence = {
+
+	repair_rate = 0.05 	#building repair 5% faster
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		land_doctrine_practical = 0.50
+	}
+
+	on_completion = no_theory
+
+	difficulty = 5
+
+	start_year = 1918
+	first_offset = 1937		#2nd model is from 1937
+	additional_offset = 3	#one new every 3 years
+	max_level = 20
+	folder = theory_folder	
+}

@@ -1,0 +1,1544 @@
+#######################
+# Spanish Civil War - #
+#######################
+
+country_event = {
+
+	id = 1997
+	
+	trigger = {
+		ai = no
+	}
+	
+	is_triggered_only = yes
+
+	title = "scw_informations_title"
+	desc = "scw_informations_desc"
+	picture = "SCW"
+	
+	option = {
+		name = "OK"
+	}
+}
+
+country_event = {
+
+	id = 1998
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME2001"
+	desc = "EVTDESC2001"
+	picture = "SCW"
+	
+	option = {
+		name = "Failed coup"
+		ai_chance = { factor = 95 }
+		SPR = { country_event = 2001 }
+	}
+	option = {
+		name = "Successful coup"
+		ai_chance = {
+			factor = 5
+			modifier = { factor = 0.0 SPR = { ai = no } }
+		}
+		SPR = { country_event = 1999 }
+	}
+}
+
+country_event = {
+
+	id = 1999
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "EVTNAME2001"
+	desc = "EVTDESC2001"
+	picture = "SCW"
+
+	option = {
+		name = "Oh no!..."
+		4155 = { add_core = SPA }
+		release = SPA
+		
+		any_owned = {
+			limit = { is_core = SPR }
+			add_core = SPA
+		}
+		5191 = { add_core = SPA }
+		SPA = { split_troops = 0.95 }
+		SPA = {
+			capital = 3610
+			government = military_dictatorship
+			head_of_state = 10188
+			head_of_government = 10188
+			foreign_minister = 10003
+			armament_minister = 10004
+			minister_of_security = 10005
+			minister_of_intelligence = 10006
+			chief_of_staff = 10008
+			chief_of_army = 10008
+			chief_of_navy = 10009
+			chief_of_air = 10010
+			rare_materials = 2000
+			crude_oil = 4000
+			fuel = 4000
+			supplies = 10000
+			energy = 5000
+			metal = 5000
+			money = 400
+			manpower = 200
+			inherit = THIS
+			country_event = 2041
+			country_event = 2042
+		}
+	}
+	
+}
+
+country_event = {
+
+	id = 2000
+
+	major = yes
+
+	trigger = {
+		date = 1936.2.16	# The election in '36
+		tag = SPR
+		not = { national_unity = 80 }
+		not = { exists = SPA }
+		not = { ideology_group = fascism }
+		not = { ideology = social_conservative }
+		not = { ideology = market_liberal }
+		not = { has_country_flag = "prelude_to_the_spanish_civil_war" }
+	}
+
+	mean_time_to_happen = {
+		months = 8
+		modifier = {
+			factor = 0.5
+			not = { national_unity = 70 }
+		}
+		modifier = {
+			factor = 0.5
+			not = { national_unity = 60 }
+		}
+		modifier = {
+			factor = 0.1
+			not = { national_unity = 50 }
+		}
+	}
+
+	title = "Unrest in Spain"
+	desc = "The situation reached the boiling point in Spain. The socialists, liberals and communists won the very tight elections, and because of their differences, there's a general fear of civil war!"
+	picture = "major_worker_strike"
+
+	option = {
+		name = "This can't be good..."
+		set_country_flag = "prelude_to_the_spanish_civil_war"
+		add_country_modifier = {
+			name  = "political_crisis"
+			duration = 5
+		}
+		random_owned = { limit = { continent = Iberia } create_revolt = 3 }
+		random_owned = { limit = { continent = Iberia } create_revolt = 3 }
+		random_owned = { limit = { continent = Iberia } create_revolt = 3 }
+		random_owned = { limit = { continent = Iberia } create_revolt = 3 }
+		random_owned = { limit = { continent = Iberia } create_revolt = 3 }
+
+		random_owned = { limit = { continent = Iberia } create_revolt = 3 }
+		random_owned = { limit = { continent = Iberia } create_revolt = 3 }
+		random_owned = { limit = { continent = Iberia } create_revolt = 3 }
+		random_owned = { limit = { continent = Iberia } create_revolt = 3 }
+		random_owned = { limit = { continent = Iberia } create_revolt = 3 }
+	}
+}
+
+
+country_event = {
+
+	id = 2001
+
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2001"
+	desc = "EVTDESC2001"
+	picture = "SCW"
+
+	option = {
+		name = "EVTOPTA2001"		# En la Defensa de la Democracia!
+		set_country_flag = "spanish_civil_war"
+		
+		4155 = { add_core = SPA }
+		release = SPA
+		
+		any_owned = {
+			limit = { is_core = SPR }
+			add_core = SPA
+		}
+		5191 = { add_core = SPA }
+	
+		# Back to the original distribution of provinces
+		castile_leon_region = { secede_province = SPA }	# Nationalist Spain
+		galicia_region = { secede_province = SPA }
+		rif_region = { secede_province = SPA }
+		navarre_region = { secede_province = SPA }
+		la_rioja_region = { secede_province = SPA }
+		aragon_region = { secede_province = SPA }
+		western_sahara_region = { secede_province = SPA }
+		5125 = { secede_province = SPA }
+		5097 = { secede_province = SPA }
+		4856 = { secede_province = SPA }
+		5156 = { secede_province = SPA }
+		5002 = { secede_province = SPA }
+		4913 = { secede_province = SPA }
+		5030 = { secede_province = SPA }
+		4995 = { secede_province = SPA }
+		
+		head_of_state = 11033			# Azaña
+		head_of_government = 11039		# Largo Caballero
+		foreign_minister = 11034		# Barcia Trelles
+		armament_minister = 11144		# Giner de los Rios
+		minister_of_security = 11189		# Azcarate
+		minister_of_intelligence = 11217	# Balboa
+		chief_of_staff = 11007			# Miaja
+		chief_of_army = 11007			# Miaja
+		chief_of_navy = 11067			# Giral
+		chief_of_air = 11321			# Hidalgo de Cisneros
+		relation = { who = ENG value = 10 }
+		relation = { who = FRA value = 10 }
+		relation = { who = SOV value = 5 }
+		relation = { who = USA value = 5 }
+		relation = { who = GER value = -15 }
+		relation = { who = ITA value = -10 }
+		relation = { who = POR value = -10 }
+		SPA = {
+			war = {
+				target = SPR
+				attacker_goal = { casus_belli = civil_war }
+				defender_goal = { casus_belli = civil_war }
+			}
+		}
+		#GOD = { split_troops = 0.25 }
+		#GOD = { inherit = GOD }
+		SPA = { split_troops = 0.95 }
+		load_oob = "SPR_SCW.txt"
+		national_unity = 25
+		capital = 4862
+		rare_materials = 2000
+		crude_oil = 4000
+		fuel = 4000
+		supplies = 10000
+		energy = 5000
+		metal = 5000
+		money = 400
+		SPA = {
+			set_country_flag = "spanish_civil_war"
+			capital = 3610
+			country_event = 2002		# Establish SPA
+			country_event = 1997
+		}
+		country_event = 1997
+		
+		add_country_modifier = {
+			name = "initial_chaos"
+			duration = 2
+		}
+	}
+}
+
+# Spanish Civil War - Nationalist Spain
+country_event = {
+
+	id = 2002
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2002"
+	desc = "EVTDESC2002"
+	picture = "SPA_fascist"
+
+	option = {
+		name = "EVTOPTA2002"		# Anarchism and Communism must fall!
+		government = military_dictatorship
+		head_of_state = 10188
+		head_of_government = 10188
+		foreign_minister = 10003
+		armament_minister = 10004
+		minister_of_security = 10005
+		minister_of_intelligence = 10006
+		chief_of_staff = 10008
+		chief_of_army = 10008
+		chief_of_navy = 10009
+		chief_of_air = 10010
+		rare_materials = 2000
+		crude_oil = 4000
+		fuel = 4000
+		supplies = 10000
+		energy = 5000
+		metal = 5000
+		money = 400
+		manpower = 200
+		load_oob = "SPA_SCW.txt"
+	}
+}
+
+country_event = {
+
+	id = 2003
+	
+	is_triggered_only = yes
+	
+	title = "The Spanish people takes up arms"
+	desc = "The Spanish masses take up arms against the army that tries to depose the rightfully elected new government!"
+	picture = "SCW"
+	
+	option = {
+		name = "We will need them!"			# 2 Militia divisions randomly distributed. (9 brigades)
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		energy = 1000
+		metal = 500
+		rare_materials = 250
+		supplies = 500
+		fuel = 250
+		manpower = 50
+	}
+}
+
+country_event = {
+
+	id = 2004
+	
+	is_triggered_only = yes
+	
+	title = "The Spanish people takes up arms"
+	desc = "The Spanish masses take up arms against the army that tries to depose the rightfully elected new government!"
+	picture = "SCW"
+	
+	option = {
+		name = "We will need them!"			# 4 Militia divisions randomly distributed. (12 brigades)
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		energy = 2000
+		metal = 1000
+		rare_materials = 500
+		fuel = 250
+		manpower = 100
+	}
+}
+
+country_event = {
+
+	id = 2005
+	
+	is_triggered_only = yes
+	
+	title = "The Spanish people takes up arms"
+	desc = "The Spanish masses take up arms against the army that tries to depose the rightfully elected new government!"
+	picture = "SCW"
+	
+	option = {
+		name = "We will need them!"			# 10 Militia divisions randomly distributed. (30 brigades)
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		energy = 3000
+		metal = 1500
+		rare_materials = 750
+		supplies = 1500
+		fuel = 750
+		manpower = 200
+	}
+}
+
+country_event = {
+
+	id = 2006
+	
+	is_triggered_only = yes
+	
+	title = "The Spanish people takes up arms"
+	desc = "The Spanish masses take up arms against the army that tries to depose the rightfully elected new government!"
+	picture = "SCW"
+	
+	option = {
+		name = "We will need them!"			# 18 Militia divisions randomly distributed. (54 brigades)
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+		random_owned = { limit = { controlled_by = THIS continent = Iberia } militia_brigade = current militia_brigade = current militia_brigade = current }
+
+		energy = 10000
+		metal = 5000
+		rare_materials = 2500
+		supplies = 5000
+		fuel = 2500
+		manpower = 400
+	}
+}
+
+# Spanish Civil War - French Moderate Intervention - SPA
+country_event = {
+
+	id = 2007
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2007"
+	desc = "EVTDESC2007"
+	picture = "SCW_french_intervention_moderate"
+
+	option = {
+		name = "EVTOPTA2007"
+		load_oob = "SCW_French_Intervention_SPA.txt"
+		manpower = -10 # Only the weapons, no soldiers
+		supplies = 1500
+		money = -100
+	}
+}
+
+# Spanish Civil War - British Moderate Intervention - SPA
+country_event = {
+
+	id = 2008
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2008"
+	desc = "EVTDESC2007"
+	picture = "SCWuk"
+
+	option = {
+		name = "EVTOPTA2007"
+		load_oob = "SCW_British_Intervention_SPA.txt"
+		manpower = -10 # Only the weapons, no soldiers
+		supplies = 1500
+		money = -100
+	}
+}
+
+# Spanish Civil War - French Moderate Intervention - SPR
+country_event = {
+
+	id = 2009
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2007"
+	desc = "EVTDESC2007"
+	picture = "SCW_french_intervention_moderate"
+
+	option = {
+		name = "EVTOPTA2007"
+		load_oob = "SCW_French_Intervention_SPR.txt"
+		manpower = -10 # Only the weapons, no soldiers
+		supplies = 1500
+		money = -100
+	}
+}
+
+# Spanish Civil War - British Moderate Intervention - SPR
+country_event = {
+
+	id = 2010
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2008"
+	desc = "EVTDESC2007"
+	picture = "SCWuk"
+
+	option = {
+		name = "EVTOPTA2007"
+		load_oob = "SCW_British_Intervention_SPR.txt"
+		manpower = -10 # Only the weapons, no soldiers
+		supplies = 1500
+		money = -100
+	}
+}
+
+# Spanish Civil War - Soviet Intervention	- First wave
+country_event = {
+
+	id = 2011
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2009"
+	desc = "EVTDESC2007"
+	picture = "SCW_soviet_intervention"
+
+	option = {
+		name = "EVTOPTA2007"
+		load_oob = "SCW_Soviet_Intervention1.txt"
+		fuel = 2500
+		supplies = 5000
+		manpower = 50
+		set_country_flag = "first_soviet_intervention"
+		stalinist = { organisation = 2 popularity = 5 }
+	}
+}
+
+# Spanish Civil War - Soviet Intervention	- Second wave
+country_event = {
+
+	id = 2012
+
+	trigger = {
+		tag = SPR
+		war_with = SPA
+		controls = 4862
+		has_country_flag = "first_soviet_intervention"
+		not = { has_country_flag = "second_soviet_intervention" }
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	title = "EVTNAME2009"
+	desc = "EVTDESC2007"
+	picture = "SCW_soviet_intervention"
+
+	option = {
+		name = "EVTOPTA2007"
+		militia_smallarms = 100
+		militia_support_weapons = 100
+		fuel = 1000
+		supplies = 2000
+		manpower = 10
+		money = -100
+		load_oob = "SCW_Soviet_Intervention2.txt"
+		set_country_flag = "second_soviet_intervention"
+		stalinist = { organisation = 2 popularity = 5 }
+	}
+}
+
+# Spanish Civil War - Soviet Intervention	- Third wave
+country_event = {
+
+	id = 2013
+
+	trigger = {
+		tag = SPR
+		war_with = SPA
+		controls = 4862
+		has_country_flag = "second_soviet_intervention"
+		not = { has_country_flag = "third_soviet_intervention" }
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	title = "EVTNAME2009"
+	desc = "EVTDESC2007"
+	picture = "SCW_soviet_intervention"
+
+	option = {
+		name = "EVTOPTA2007"
+		militia_smallarms = 100
+		militia_support_weapons = 100
+		fuel = 1000
+		supplies = 2000
+		manpower = 10
+		money = -100
+		load_oob = "SCW_Soviet_Intervention3.txt"
+		set_country_flag = "third_soviet_intervention"
+		stalinist = { organisation = 2 popularity = 5 }
+	}
+}
+
+# Spanish Civil War - German Intervention
+country_event = {
+
+	id = 2014
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2010"
+	desc = "EVTDESC2007"
+	picture = "SCW_german_intervention"
+
+	option = {
+		name = "EVTOPTA2007"
+		load_oob = "SCW_German_Intervention.txt"
+		manpower = 10
+		fuel = 1000
+		supplies = 1000
+		money = -150
+		national_socialist = { organisation = 2 popularity = 5 }
+	}
+}
+
+# Spanish Civil War - Italian Intervention
+country_event = {
+
+	id = 2015
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2011"
+	desc = "EVTDESC2007"
+	picture = "SCW_italian_intervention"
+
+	option = {
+		name = "EVTOPTA2007"
+		load_oob = "SCW_Italian_Intervention1.txt"
+		set_country_flag = "first_italian_intervention"
+		manpower = 10
+		fuel = 1000
+		supplies = 1000
+		money = -100
+		fascistic = { organisation = 2 popularity = 5 }
+	}
+}
+
+# Spanish Civil War - Italian Intervention
+country_event = {
+
+	id = 2016
+
+	trigger = {
+		tag = SPA
+		war_with = SPR
+		controls = 3610
+		has_country_flag = "first_italian_intervention"
+		not = { has_country_flag = "second_italian_intervention" }
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	title = "EVTNAME2011"
+	desc = "EVTDESC2007"
+	picture = "SCW_italian_intervention"
+
+	option = {
+		name = "EVTOPTA2007"
+		load_oob = "SCW_Italian_Intervention2.txt"
+		set_country_flag = "second_italian_intervention"
+		manpower = 5
+		fuel = 250
+		supplies = 500
+		money = -25
+		fascistic = { organisation = 2 popularity = 5 }
+	}
+}
+
+# Spanish Civil War - Italian Intervention
+country_event = {
+
+	id = 2017
+
+	trigger = {
+		tag = SPA
+		war_with = SPR
+		controls = 3610
+		has_country_flag = "second_italian_intervention"
+		not = { has_country_flag = "third_italian_intervention" }
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	title = "EVTNAME2011"
+	desc = "EVTDESC2007"
+	picture = "SCW_italian_intervention"
+
+	option = {
+		name = "EVTOPTA2007"
+		load_oob = "SCW_Italian_Intervention3.txt"
+		set_country_flag = "third_italian_intervention"
+		manpower = 5
+		fuel = 250
+		supplies = 500
+		money = -25
+		fascistic = { organisation = 2 popularity = 5 }
+	}
+}
+
+# Spanish Civil War - Italian Intervention
+country_event = {
+
+	id = 2018
+
+	trigger = {
+		tag = SPA
+		controls = 3610
+		war_with = SPR
+		has_country_flag = "third_italian_intervention"
+		not = { has_country_flag = "fourth_italian_intervention" }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	title = "EVTNAME2011"
+	desc = "EVTDESC2007"
+	picture = "SCW_italian_intervention"
+
+	option = {
+		name = "EVTOPTA2007"
+		load_oob = "SCW_Italian_Intervention4.txt"
+		set_country_flag = "fourth_italian_intervention"
+		manpower = 5
+		fuel = 250
+		supplies = 500
+		money = -25
+		fascistic = { organisation = 2 popularity = 5 }
+	}
+}
+
+
+# Spanish Civil War - French Full Intervention	-	SPA
+country_event = {
+
+	id = 2020
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2007"
+	desc = "EVTDESC2007"
+	picture = "SCW_french_intervention_full"
+
+	option = {
+		name = "EVTOPTA2007"
+		load_oob = "SCW_French_Full_Intervention_SPA.txt"
+		manpower = 10 # Send weapons and volunteers
+		supplies = 1500
+		money = -100
+		social_conservative = { organisation = 2 popularity = 5 }
+	}
+}
+
+# Spanish Civil War - British Full Intervention	-	SPA
+country_event = {
+
+	id = 2021
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2008"
+	desc = "EVTDESC2007"
+	picture = "SCWuk"
+
+	option = {
+		name = "EVTOPTA2007"
+		load_oob = "SCW_British_Full_Intervention_SPA.txt"
+		manpower = 10 # Send weapons and volunteers
+		supplies = 1500
+		money = -100
+		social_conservative = { organisation = 2 popularity = 5 }
+	}
+}
+
+
+# Spanish Civil War - French Full Intervention	-	SPR
+country_event = {
+
+	id = 2022
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2007"
+	desc = "EVTDESC2007"
+	picture = "SCW_french_intervention_full"
+
+	option = {
+		name = "EVTOPTA2007"
+		load_oob = "SCW_French_Full_Intervention_SPR.txt"
+		manpower = 10 # Send weapons and volunteers
+		supplies = 1500
+		money = -100
+		social_conservative = { organisation = 2 popularity = 5 }
+	}
+}
+
+# Spanish Civil War - British Full Intervention	-	SPR
+country_event = {
+
+	id = 2023
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2008"
+	desc = "EVTDESC2007"
+	picture = "SCWuk"
+
+	option = {
+		name = "EVTOPTA2007"
+		load_oob = "SCW_British_Full_Intervention_SPR.txt"
+		manpower = 10 # Send weapons and volunteers
+		supplies = 1500
+		money = -100
+		social_conservative = { organisation = 2 popularity = 5 }
+	}
+}
+
+# Spanish Civil War - International help for Nationalist Spain
+country_event = {
+
+	id = 2025
+
+	trigger = {
+		war = no
+		is_subject = no
+		not = { tag = SPR }
+		not = { tag = SPA }
+		#not = { tag = GER }		# They can send minor help too!
+		#not = { tag = ITA }
+		#not = { tag = SOV }
+		#not = { tag = ENG }
+		#not = { tag = FRA }
+		not = { has_country_flag = "scw_intervention_spa" }
+		total_ic = 10
+		or = {
+			national_socialist = { popularity = 20 organisation = 20 }
+			fascistic = { popularity = 20 organisation = 20 }
+			paternal_autocrat = { popularity = 20 organisation = 20 }
+			social_conservative = { popularity = 20 organisation = 20 }
+		}
+		exists = SPA
+		exists = SPR
+		not = { SPA = { has_country_modifier = "scw_intervention_officers" } }
+		SPR = { war_with = SPA }
+		not = { check_variable = { which = "scw_int_spa" value = 10 } }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 5.0 neutrality = 95 }
+		modifier = { factor = 4.0 neutrality = 85 }
+		modifier = { factor = 3.0 neutrality = 75 }
+		modifier = { factor = 2.0 neutrality = 65 }
+		
+		modifier = { factor = 5.0 not = { total_ic = 15 } }
+		modifier = { factor = 2.5 not = { total_ic = 25 } }
+		modifier = { factor = 1.5 not = { total_ic = 50 } }
+		
+		modifier = { factor = 10.0 any_owned_province = { is_capital = yes continent = africa } }
+		modifier = { factor = 8.0 any_owned_province = { is_capital = yes continent = asia } }
+		modifier = { factor = 6.0 any_owned_province = { is_capital = yes continent = Australia } }
+		modifier = { factor = 3.0 any_owned_province = { is_capital = yes continent = south_america } }
+		modifier = { factor = 1.5 any_owned_province = { is_capital = yes continent = north_america } }
+	}
+
+	title = "Send volunteers to Spain!"
+	desc = "A large number of volunteers gathered in our capital to help the nationalists in the Civil War of Spain. Do we want to send them?"
+	picture = "brigadasinternacionales"
+
+	option = {
+		name = "They need all the help they can get!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.0 ideology = stalinist }
+			modifier = { factor = 0.2 ideology = leninist }
+			modifier = { factor = 0.4 ideology = left_wing_radical }
+			modifier = { factor = 0.6 ideology = social_democrat }
+			modifier = { factor = 0.8 ideology = social_liberal }
+			modifier = { factor = 1.2 ideology = market_liberal }
+			modifier = { factor = 1.4 ideology = social_conservative }
+			modifier = { factor = 1.6 ideology = paternal_autocrat }
+			modifier = { factor = 1.8 ideology = fascistic }
+			modifier = { factor = 2.0 ideology = national_socialist }
+		}
+		set_country_flag = "scw_intervention_spa"
+		set_country_flag = "scw_intervention_spr"
+		SPA = { country_event = 2027 }
+		neutrality = -2
+		SPA = { change_variable = { which = "scw_int_spa" value = +1 } }
+		national_socialist = { popularity = 1 organisation = 1 }
+		fascistic = { popularity = 3 organisation = 2 }
+		paternal_autocrat = { popularity = 5 organisation = 3 }
+		SPA = { fascistic = { organisation = 2 popularity = 5 } }
+	}
+	
+	option = {
+		name = "Sell them some equipment, that should be enough for now!"
+		ai_chance = { factor = 10 }
+		# This is intentionally not setting a flag, so it can be repeated!
+		# You can even supply both sides of the war!
+		supplies = -1000
+		money = 100
+		SPA = {
+			supplies = 1000
+			money = -100
+		}
+	}
+
+	option = {
+		name = "We can't help right now!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 2.0 ideology = stalinist }
+			modifier = { factor = 1.8 ideology = leninist }
+			modifier = { factor = 1.6 ideology = left_wing_radical }
+			modifier = { factor = 1.4 ideology = social_democrat }
+			modifier = { factor = 1.2 ideology = social_liberal }
+			modifier = { factor = 0.8 ideology = market_liberal }
+			modifier = { factor = 0.6 ideology = social_conservative }
+			modifier = { factor = 0.4 ideology = paternal_autocrat }
+			modifier = { factor = 0.2 ideology = fascistic }
+			modifier = { factor = 0.0 ideology = national_socialist }
+		}
+		set_country_flag = "scw_intervention_spa"
+		neutrality = 2
+		national_socialist = { organisation = -1 }
+		fascistic = { organisation = -2 }
+		paternal_autocrat = { organisation = -3 }
+	}
+
+}
+
+# Spanish Civil War - International help for Republican Spain
+country_event = {
+
+	id = 2026
+
+	trigger = {
+		war = no
+		is_subject = no
+		not = { tag = SPA }
+		not = { tag = SPR }
+		#not = { tag = GER }		# They can send minor help too!
+		#not = { tag = ITA }
+		#not = { tag = SOV }
+		#not = { tag = ENG }
+		#not = { tag = FRA }
+		not = { has_country_flag = "scw_intervention_spr" }
+		total_ic = 10
+		or = {
+			stalinist = { popularity = 20 organisation = 20 }
+			leninist = { popularity = 20 organisation = 20 }
+			left_wing_radical = { popularity = 20 organisation = 20 }
+			social_democrat = { popularity = 20 organisation = 20 }
+			social_liberal = { popularity = 20 organisation = 20 }
+			market_liberal = { popularity = 20 organisation = 20 }
+		}
+		exists = SPA
+		exists = SPR
+		not = { SPR = { has_country_modifier = "scw_intervention_officers" } }
+		SPA = { war_with = SPR }
+		not = { check_variable = { which = "scw_int_spr" value = 10 } }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 5.0 not = { total_ic = 15 } }
+		modifier = { factor = 2.5 not = { total_ic = 25 } }
+		modifier = { factor = 1.5 not = { total_ic = 50 } }
+		
+		modifier = { factor = 10.0 any_owned_province = { is_capital = yes continent = africa } }
+		modifier = { factor = 8.0 any_owned_province = { is_capital = yes continent = asia } }
+		modifier = { factor = 6.0 any_owned_province = { is_capital = yes continent = Australia } }
+		modifier = { factor = 3.0 any_owned_province = { is_capital = yes continent = south_america } }
+		modifier = { factor = 1.5 any_owned_province = { is_capital = yes continent = north_america } }
+	}
+
+	title = "Send volunteers to Spain!"
+	desc = "A large number of volunteers gathered in our capital to help the republicans in the Civil War of Spain. Do we want to send them?"
+	picture = "brigadasinternacionales"
+
+	option = {
+		name = "They need all the help they can get!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 2.0 ideology = stalinist }
+			modifier = { factor = 1.8 ideology = leninist }
+			modifier = { factor = 1.6 ideology = left_wing_radical }
+			modifier = { factor = 1.4 ideology = social_democrat }
+			modifier = { factor = 1.2 ideology = social_liberal }
+			modifier = { factor = 0.8 ideology = market_liberal }
+			modifier = { factor = 0.6 ideology = social_conservative }
+			modifier = { factor = 0.4 ideology = paternal_autocrat }
+			modifier = { factor = 0.2 ideology = fascistic }
+			modifier = { factor = 0.0 ideology = national_socialist }
+		}
+		set_country_flag = "scw_intervention_spr"
+		set_country_flag = "scw_intervention_spa"
+		SPR = { country_event = 2027 }
+		neutrality = -2
+		SPR = { change_variable = { which = "scw_int_spr" value = +1 } }
+		stalinist = { popularity = 1 organisation = 1 }
+		leninist = { popularity = 3 organisation = 2 }
+		left_wing_radical = { popularity = 5 organisation = 3 }
+		SPR = { stalinist = { organisation = 2 popularity = 5 } }
+	}
+	
+	option = {
+		name = "Sell them some equipment, that should be enough for now!"
+		ai_chance = { factor = 10 }
+		# This is intentionally not setting a flag, so it can be repeated!
+		# You can even supply both sides of the war!
+		supplies = -1000
+		money = 100
+		SPR = {
+			supplies = 1000
+			money = -100
+		}
+	}
+
+	option = {
+		name = "We can't help right now!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.0 ideology = stalinist }
+			modifier = { factor = 0.2 ideology = leninist }
+			modifier = { factor = 0.4 ideology = left_wing_radical }
+			modifier = { factor = 0.6 ideology = social_democrat }
+			modifier = { factor = 0.8 ideology = social_liberal }
+			modifier = { factor = 1.2 ideology = market_liberal }
+			modifier = { factor = 1.4 ideology = social_conservative }
+			modifier = { factor = 1.6 ideology = paternal_autocrat }
+			modifier = { factor = 1.8 ideology = fascistic }
+			modifier = { factor = 2.0 ideology = national_socialist }
+		}
+		set_country_flag = "scw_intervention_spr"
+		neutrality = 2
+		stalinist = { organisation = -1 }
+		leninist = { organisation = -2 }
+		left_wing_radical = { organisation = -3 }
+	}
+
+}
+
+country_event = {
+
+	id = 2027
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "scw_intervention_title"
+	desc = "scw_intervention_desc"
+	picture = "brigadasinternacionales"
+
+	option = {
+		name = "Fresh meat!"
+		add_country_modifier = {
+			name = "scw_intervention_officers"
+			duration = 45
+		}
+		capital_scope = {
+			militia_brigade = current
+			militia_brigade = current
+		}
+	}
+
+}
+
+# Spanish Civil War, An Important Experience - Italy
+country_event = {
+
+	id = 2028
+
+	trigger = {
+		tag = ITA
+		war = no
+		has_country_flag = "italian_intervention_spanish_civil_war"
+		not = { has_country_flag = "italian_intervention_win" }
+		or = {
+			not = { exists = SPR }			# We've won, 
+			and = {
+				not = { exists = SPA }		# or we lost, but an opposing major has intervened as well.
+				or = {
+					SOV = { has_country_flag = "russian_intervention_spanish_civil_war" }
+					ENG = { has_country_flag = "british_intervention_spanish_civil_war_spr" }
+					FRA = { has_country_flag = "french_intervention_spanish_civil_war_spr" }
+				}
+			}
+		}
+	}
+
+	title = "An important experience"
+	desc = "Our expeditionary army returns home from the Spanish Civil War!"
+	picture = "SCW_italian_Intervention_back"
+
+	option = {
+		name = "Excellent!"
+		set_country_flag = "italian_intervention_win"
+		dissent = -2
+		national_unity = 5
+		popularity = 5
+		organisation = 10
+		manpower = 10
+		money = 500
+		infantry_training = 150
+		grand_battle_plan_1937 = 150
+		artillery_training = 150
+	}
+
+}
+# Spanish Civil War, An Important Experience - Germany
+country_event = {
+
+	id = 2029
+
+	trigger = {
+		tag = GER
+		war = no
+		has_country_flag = "german_intervention_spanish_civil_war"
+		not = { has_country_flag = "german_intervention_win" }
+		or = {
+			not = { exists = SPR }			# We've won, 
+			and = {
+				not = { exists = SPA }		# or we lost, but an opposing major has intervened as well.
+				or = {
+					SOV = { has_country_flag = "russian_intervention_spanish_civil_war" }
+					ENG = { has_country_flag = "british_intervention_spanish_civil_war_spr" }
+					FRA = { has_country_flag = "french_intervention_spanish_civil_war_spr" }
+				}
+			}
+		}
+	}
+
+	title = "An important experience"
+	desc = "Our expeditionary army returns home from the Spanish Civil War!"
+	picture = "SCW_german_intervention_back"
+
+	option = {
+		name = "Excellent!"
+		set_country_flag = "german_intervention_win"
+		dissent = -1
+		manpower = 20
+		organisation = 5
+		popularity = 5
+		infantry_training = 250
+		tank_crew_training = 150
+		firepower_1940 = 100
+		schwerpunkt_1937 = 200
+		schwerpunkt_1940 = 100
+		blitzkrieg_1937 = 300
+		blitzkrieg_1940 = 150
+		fighter_pilot_training = 100
+		bomber_pilot_training = 100
+		cas_pilot_training = 75
+		fighter_groundcrew_training = 150
+		bomber_groundcrew_training = 150
+		cas_groundcrew_training = 100
+		interdiction_tactics = 200
+		SPA = {
+			kill_leader = 3466
+			kill_leader = 3492
+			kill_leader = 3493
+			kill_leader = 3494
+			kill_leader = 3455
+			kill_leader = 3427
+		}
+	}
+
+}
+# Spanish Civil War, An Important Experience - Soviet Union
+country_event = {
+
+	id = 2030
+
+	trigger = {
+		tag = SOV
+		war = no
+		has_country_flag = "russian_intervention_spanish_civil_war"
+		not = { has_country_flag = "russian_intervention_win" }
+		or = {
+			not = { exists = SPA }			# We've won, 
+			and = {
+				not = { exists = SPR }		# or we lost, but an opposing major has intervened as well.
+				or = {
+					GER = { has_country_flag = "german_intervention_spanish_civil_war" }
+					ITA = { has_country_flag = "italian_intervention_spanish_civil_war" }
+					ENG = { has_country_flag = "british_intervention_spanish_civil_war_spa" }
+					FRA = { has_country_flag = "french_intervention_spanish_civil_war_spa" }
+				}
+			}
+		}
+	}
+
+	title = "An important experience"
+	desc = "Our expeditionary army returns home from the Spanish Civil War!"
+	picture = "SCW_soviet_intervention_back"
+
+	option = {
+		name = "Excellent!"
+		set_country_flag = "russian_intervention_win"
+		dissent = -3
+		manpower = 30
+		money = 2500
+		popularity = 10
+		organisation = 10
+		fighter_pilot_training = 150
+		bomber_pilot_training = 150
+		fighter_groundcrew_training = 200
+		bomber_groundcrew_training = 200
+		infantry_training = 150
+		shock_1937 = 300
+		shock_1940 = 100
+	}
+
+}
+# Spanish Civil War, An Important Experience - United Kingdom
+country_event = {
+
+	id = 2031
+
+	trigger = {
+		tag = ENG
+		war = no
+		or = {
+			has_country_flag = "french_intervention_spanish_civil_war_spr"
+			has_country_flag = "french_intervention_spanish_civil_war_spa"
+		}
+		not = { has_country_flag = "british_intervention_win" }
+		or = {
+			and = {
+				not = { exists = SPA }
+				has_country_flag = "british_intervention_spanish_civil_war_spr"
+			}
+			and = {
+				not = { exists = SPR }
+				has_country_flag = "british_intervention_spanish_civil_war_spa"
+			}
+			and = {
+				not = { exists = SPA }
+				SOV = { has_country_flag = "russian_intervention_spanish_civil_war" }
+			}
+			and = {
+				not = { exists = SPR }
+				or = {
+					GER = { has_country_flag = "german_intervention_spanish_civil_war" }
+					ITA = { has_country_flag = "italian_intervention_spanish_civil_war" }
+				}
+			}
+		}
+	}
+
+	title = "An important experience"
+	desc = "Our expeditionary army returns home from the Spanish Civil War!"
+	picture = "SCWuk"
+
+	option = {
+		name = "Excellent!"
+		set_country_flag = "british_intervention_win"
+		money = 100
+		infantry_training = 150
+		grand_battle_plan_1940 = 150
+	}
+
+}
+# Spanish Civil War, An Important Experience - France
+country_event = {
+
+	id = 2032
+	
+	trigger = {
+		tag = FRA
+		war = no
+		or = {
+			has_country_flag = "french_intervention_spanish_civil_war_spr"
+			has_country_flag = "french_intervention_spanish_civil_war_spa"
+		}
+		not = { has_country_flag = "french_intervention_win" }
+		or = {
+			and = {
+				not = { exists = SPA }
+				has_country_flag = "french_intervention_spanish_civil_war_spr"
+			}
+			and = {
+				not = { exists = SPR }
+				has_country_flag = "french_intervention_spanish_civil_war_spa"
+			}
+			and = {
+				not = { exists = SPA }
+				SOV = { has_country_flag = "russian_intervention_spanish_civil_war" }
+			}
+			and = {
+				not = { exists = SPR }
+				or = {
+					GER = { has_country_flag = "german_intervention_spanish_civil_war" }
+					ITA = { has_country_flag = "italian_intervention_spanish_civil_war" }
+				}
+			}
+		}
+	}
+
+	title = "An important experience"
+	desc = "Our expeditionary army returns home from the Spanish Civil War!"
+	picture = "SCW_french_intervention_full"
+
+	option = {
+		name = "Excellent!"
+		set_country_flag = "french_intervention_win"
+		money = 100
+		infantry_training = 150
+		grand_battle_plan_1940 = 150
+	}
+
+}
+
+country_event = {
+
+	id = 2035
+
+	trigger = {
+		or = {
+			tag = GER
+			tag = ITA
+			tag = ENG
+			tag = FRA
+			tag = SOV
+		}
+		or = {
+			war_with = SPR
+			war_with = SPA
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	title = "The Spanish Civil War escalates"
+	desc = "With our direct intervention in the Spanish Civil War, the conflict is very likely to escalate into a major European War."
+	picture = "fire"
+	
+	option = {
+		name = "It's all for a just cause!"
+		threat = { who = all value = 30 }
+	}
+
+}
+
+country_event = {
+
+	id = 2040
+	
+	trigger = {
+		tag = SPA
+		war_with = SPR
+		not = { has_country_flag = "sanjurjos_death" }
+		head_of_state = 10188
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	title = "Sanjurjo's flight to Spain"
+	desc = "José Sanjurjo was one of the chief conspirators of the military uprising in Spain. He was meant to be the Head of State until order is restored. Unfortunately, he died in an aircraft crash on his way back from his exile in Portugal."
+	picture = "SPA_fascist"
+	
+	option = {
+		name = "That would be a shame..."
+		set_country_flag = "sanjurjos_death"
+		random = {
+			chance = 75
+
+			head_of_state = 10032
+			head_of_government = 10032
+			remove_minister = 10188
+			set_country_flag = "10188_removed"
+			kill_leader = 3460
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 2041
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	trigger = {
+		head_of_state = 10032
+	}
+	
+	title = "Franco in power"
+	desc = "After the end of the Spanish Civil War, Francisco Franco Bahamonde was the undisputed leader and regent of the restored Kingdom of Spain."
+	picture = "SPA_fascist"
+	
+	option = {
+		name = "Good"
+		fascistic = { organisation = 25 popularity = 15 }
+		paternal_autocrat = { organisation = 15 popularity = 5 }
+		government = spanish_social_conservatism
+		load_oob = "fascistic.txt"
+		head_of_state = 10032
+		head_of_government = 10032
+	}
+}
+
+country_event = {
+
+	id = 2042
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	trigger = {
+		head_of_state = 10188
+	}
+	
+	title = "Sanjurjo in power"
+	desc = "After the end of the Spanish Civil War, José Sanjurjo Sacanell became the Head of Government for King Javier I of the restored Kingdom of Spain."
+	picture = "SPA_fascist"
+	
+	option = {
+		name = "Good"
+		fascistic = { organisation = 15 popularity = 5 }
+		paternal_autocrat = { organisation = 25 popularity = 15 }
+		government = right_wing_autocrat
+		load_oob = "paternal_autocrat.txt"
+		head_of_state = 10034
+		head_of_government = 10188
+	}
+}
+
+country_event = {
+
+	id = 2043
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	title = "End of the Spanish Civil War"
+	desc = "After a bloody Civil War, peace has finally been restored in Spain."
+	picture = "SCW"
+	
+	option = {
+		name = "Peace at last"
+		capital = 4540
+		threat = { who = all value = -150 }
+	}
+}
+
+country_event = {
+
+	id = 2045
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SPR
+		not = { exists = SPA }
+		has_country_flag = third_soviet_intervention
+	}
+	
+	title = "The end of the Spanish Civil War"
+	desc = "The Spanish Civil War is finally over, and with the help of the Soviet Union and International Socialism, freedom has prevailed!"
+	picture = "SCW_soviet_intervention"
+	
+	option = {
+		name = "Let Socialism prevail!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 1.25 left_wing_radical = { popularity = 5 organisation = 100 } }
+			modifier = { factor = 1.25 left_wing_radical = { popularity = 10 organisation = 100 } }
+			modifier = { factor = 1.25 left_wing_radical = { popularity = 15 organisation = 100 } }
+			modifier = { factor = 1.25 left_wing_radical = { popularity = 20 organisation = 100 } }
+			modifier = { factor = 1.25 left_wing_radical = { popularity = 25 organisation = 100 } }
+			modifier = { factor = 1.25 leninist = { popularity = 5 organisation = 100 } }
+			modifier = { factor = 1.25 leninist = { popularity = 10 organisation = 100 } }
+			modifier = { factor = 1.25 leninist = { popularity = 15 organisation = 100 } }
+			modifier = { factor = 1.25 leninist = { popularity = 20 organisation = 100 } }
+			modifier = { factor = 1.25 leninist = { popularity = 25 organisation = 100 } }
+			modifier = { factor = 1.25 stalinist = { popularity = 5 organisation = 100 } }
+			modifier = { factor = 1.25 stalinist = { popularity = 10 organisation = 100 } }
+			modifier = { factor = 1.25 stalinist = { popularity = 15 organisation = 100 } }
+			modifier = { factor = 1.25 stalinist = { popularity = 20 organisation = 100 } }
+			modifier = { factor = 1.25 stalinist = { popularity = 25 organisation = 100 } }
+		}
+		
+		government = left_wing_radicals
+		load_oob = "Ideologies/leninist.txt"
+	}
+	
+	option = {
+		name = "Freedom is what's important!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.75 left_wing_radical = { popularity = 5 organisation = 100 } }
+			modifier = { factor = 0.75 left_wing_radical = { popularity = 10 organisation = 100 } }
+			modifier = { factor = 0.75 left_wing_radical = { popularity = 15 organisation = 100 } }
+			modifier = { factor = 0.75 left_wing_radical = { popularity = 20 organisation = 100 } }
+			modifier = { factor = 0.75 left_wing_radical = { popularity = 25 organisation = 100 } }
+			modifier = { factor = 0.75 leninist = { popularity = 5 organisation = 100 } }
+			modifier = { factor = 0.75 leninist = { popularity = 10 organisation = 100 } }
+			modifier = { factor = 0.75 leninist = { popularity = 15 organisation = 100 } }
+			modifier = { factor = 0.75 leninist = { popularity = 20 organisation = 100 } }
+			modifier = { factor = 0.75 leninist = { popularity = 25 organisation = 100 } }
+			modifier = { factor = 0.75 stalinist = { popularity = 5 organisation = 100 } }
+			modifier = { factor = 0.75 stalinist = { popularity = 10 organisation = 100 } }
+			modifier = { factor = 0.75 stalinist = { popularity = 15 organisation = 100 } }
+			modifier = { factor = 0.75 stalinist = { popularity = 20 organisation = 100 } }
+			modifier = { factor = 0.75 stalinist = { popularity = 25 organisation = 100 } }
+		}
+		
+		left_wing_radical = { popularity = 15 organisation = 20 }
+		leninist = { popularity = 10 organisation = 15 }
+		stalinist = { popularity = 5 organisation = 10 }
+		
+	}
+
+}
+
+country_event = {
+
+	id = 2046
+	
+	trigger = {
+		exists = SPA
+		exists = SPR
+		or = {
+			tag = SPA
+			tag = SPR
+		}
+		or = {
+			war_with = SPA
+			war_with = SPR
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = { factor = 0.9 surrender_progress = 50 }
+		modifier = { factor = 0.9 surrender_progress = 70 }
+		modifier = { factor = 0.9 surrender_progress = 90 }
+	}
+	
+	title = "Civil War"
+	desc = "The Spanish Civil War was a major conflict fought in Spain during the second half of the 1930s. Following the only partially successful coup, Spain was left divided, in a protracted war of attrition."
+	picture = "SCW"
+
+	option = {
+		name = "That's horrible!"
+		neutrality = 5
+		popularity = -2
+		organisation = -5
+		manpower = -15
+	}
+	
+}

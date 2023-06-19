@@ -1,0 +1,218 @@
+country_event = {
+
+	id = 3051
+
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "Germany demands military access"
+	desc = "To help his war against Norway, Hitler demands military access through our country."
+	picture = "Austria_Alliance"
+
+	option = {
+		name = "Grant Military Access"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.0
+				not = { relation = { who = GER value = 0 } }
+			}
+			modifier = {
+				factor = 0.0
+				ideology_group = communism
+			}
+			modifier = {
+				factor = 1.25
+				relation = { who = GER value = 100 }
+			}
+			modifier = {
+				factor = 1.25
+				relation = { who = GER value = 150 }
+			}
+			modifier = {
+				factor = 1.25
+				relation = { who = GER value = 200 }
+			}
+		}
+		GER = { country_event = 3052 }
+		GER = { country_event = 3053 }
+		GER = { military_access = THIS }
+		relation = { who = GER value = 30 }
+		relation = { who = NOR value = -80 }
+	}
+	option = {
+		name = "Decline the demand!"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2.0
+				not = { relation = { who = GER value = 0 } }
+			}
+			modifier = {
+				factor = 0.0
+				ideology_group = fascism
+			}
+			modifier = {
+				factor = 0.5
+				relation = { who = GER value = 100 }
+			}
+			modifier = {
+				factor = 0.1
+				relation = { who = GER value = 150 }
+			}
+			modifier = {
+				factor = 0.0
+				relation = { who = GER value = 200 }
+			}
+		}
+		GER = { country_event = 3054 }
+		relation = { who = GER value = -50 }
+		relation = { who = NOR value = 80 }
+		relation = { who = ENG value = 50 }
+	}
+}
+
+country_event = {
+
+	id = 3052
+
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { ideology_group = fascism }
+	}
+
+	title = "Sweden accepted to give us Military Access"
+	desc = "Sweden accepted our demands and agreed to grant us transit rights. Now we will be able to defeat Norway!"
+	picture = "treaty_signed"
+
+	option = {
+		name = "Excellent!"
+		ai_chance = { factor = 0 }
+	}
+	option = {
+		name = "Offer them to sign the Tri-Partite Pact!"
+		ai_chance = { factor = 100 }
+		SWE = { country_event = 3055 }
+	}
+
+}
+
+country_event = {
+
+	id = 3053
+
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { not = { ideology_group = fascism } }
+	}
+
+	title = "Sweden accepted to give us Military Access"
+	desc = "Sweden accepted our demands and agreed to grant us transit rights. Now we will be able to defeat Norway!"
+	picture = "treaty_signed"
+
+	option = {
+		name = "Excellent!"
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+
+	id = 3054
+
+	is_triggered_only = yes
+
+	title = "Sweden declined our demand!"
+	desc = "Sweden declined to grant us transit rights! They won't get away with this!"
+	picture = "treaty_signed"
+
+	option = {
+		name = "They will regret it!"
+		ai_chance = { factor = 100 }
+		set_global_flag = "sweden_declines_access"
+		threat = { who = SWE value = 50 }
+	}
+	option = {
+		name = "Whatever..."
+		threat = { who = SWE value = -25 }
+	}
+}
+
+country_event = {
+
+	id = 3055
+
+	is_triggered_only = yes
+
+	title = "Germany offers a place in the Axis"
+	desc = "Germany suggested we sign the Tri-Partite Pact! Should we do so?"
+	picture = "treaty_signed"
+
+	option = {
+		name = "But of course!"
+		SWE = { join_faction = axis }
+	}
+	option = {
+		name = "Thanks, but no thanks"
+	}
+}
+
+country_event = {
+
+	id = 3056
+
+	is_triggered_only = yes
+
+	title = "Germany offers a trade agreement"
+	desc = "Hitler offers to trade coal and hard cash for our metal. Should we accept?"
+	picture = "treaty_signed"
+
+	option = {
+		name = "Good idea!"
+		ai_chance = { factor = 100 }
+		GER = { country_event = 3057 }
+	}
+
+	option = {
+		name = "No deal with that lunatic!"
+		ai_chance = { factor = 0 }
+		GER = { country_event = 3058 }
+	}
+
+}
+
+country_event = {
+
+	id = 3057
+
+	is_triggered_only = yes
+
+	title = "Sweden agrees"
+	desc = "Sweden agreed to our trade agreement! Now all we need to do is keep the trade route open!"
+	picture = "treaty_signed"
+
+	option = {
+		name = "Excellent!"
+		relation = { who = SWE value = 25 }
+		set_country_flag = swedish_iron
+	}
+}
+
+country_event = {
+
+	id = 3058
+
+	is_triggered_only = yes
+
+	title = "Sweden declined"
+	desc = "Sweden declined our trade agreement! We won't forget this!"
+	picture = "furios_hitler"
+
+	option = {
+		name = "That's not good..."
+		relation = { who = SWE value = -50 }
+	}
+}

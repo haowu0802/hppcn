@@ -1,0 +1,584 @@
+color = { 0  158  224 }
+graphical_culture = French
+
+
+
+default_templates = {
+	generic_infantry = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	generic_milita = {
+		militia_brigade
+		militia_brigade
+		militia_brigade
+	}
+	generic_armoured = {
+		armor_brigade
+		motorized_brigade
+		motorized_brigade
+	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
+	generic_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"1ère Division d'Infanterie" "2ème Division d'Infanterie" "3ème Division d'Infanterie" "5ème Division d'Infanterie" "6ème Division d'Infanterie" "7ème Division d'Infanterie" "8ème Division d'Infanterie" "9ème Division d'Infanterie" "10ème Division d'Infanterie" "11ème Division d'Infanterie" "12ème Division d'Infanterie" "13ème Division d'Infanterie" "14ème Division d'Infanterie"  "15ème Division d'Infanterie"
+		"16ème Division d'Infanterie" "17ème Division d'Infanterie" "18ème Division d'Infanterie" "19ème Division d'Infanterie" "20ème Division d'Infanterie" "21ème Division d'Infanterie" "22ème Division d'Infanterie" "23ème Division d'Infanterie" "24ème Division d'Infanterie" "25ème Division d'Infanterie"
+	}
+	cavalry_brigade = {
+		"1ère Division Légère de Cavalerie" "2ème Division Légère de Cavalerie" "3ème Division Légère de Cavalerie" "4ème Division Légère de Cavalerie" "5ème Division Légère de Cavalerie" "6ème Division Légère de Cavalerie" "7ème Division Légère de Cavalerie" "8ème Division Légère de Cavalerie" "9ème Division Légère de Cavalerie" "10ème Division Légère de Cavalerie" "11ème Division Légère de Cavalerie" 
+		"12ème Division Légère de Cavalerie" "13ème Division Légère de Cavalerie" "14ème Division Légère de Cavalerie" "15ème Division Légère de Cavalerie" "16ème Division Légère de Cavalerie" "17ème Division Légère de Cavalerie" "18ème Division Légère de Cavalerie" "19ème Division Légère de Cavalerie" "20ème Division Légère de Cavalerie" 
+	}
+	motorized_brigade = {
+		"1ère Division d'Infanterie Motorisée" "2ème Division d'Infanterie Motorisée" "3ème Division d'Infanterie Motorisée" "4ème Division d'Infanterie Motorisée" "5ème Division d'Infanterie Motorisée" "6ème Division d'Infanterie Motorisée" "7ème Division d'Infanterie Motorisée" "8ème Division d'Infanterie Motorisée" "9ème Division d'Infanterie Motorisée" "10ème Division d'Infanterie Motorisée" "11ème Division d'Infanterie Motorisée" "12ème Division d'Infanterie Motorisée"
+		"13ème Division d'Infanterie Motorisée" "14ème Division d'Infanterie Motorisée" "15ème Division d'Infanterie Motorisée" "16ème Division d'Infanterie Motorisée" "17ème Division d'Infanterie Motorisée" "18ème Division d'Infanterie Motorisée" "19ème Division d'Infanterie Motorisée" "20ème Division d'Infanterie Motorisée"
+	}
+	mechanized_brigade = {
+		"1ère Division Légère Mécanisée" "2ème Division Légère Mécanisée" "3ème Division Légère Mécanisée" "4ème Division Légère Mécanisée" "5ème Division Légère Mécanisée" "6ème Division Légère Mécanisée" "7ème Division Légère Mécanisée" "8ème Division Légère Mécanisée" "9ème Division Légère Mécanisée" "10ème Division Légère Mécanisée" "11ème Division Légère Mécanisée" 
+		"12ème Division Légère Mécanisée" "13ème Division Légère Mécanisée" "14ème Division Légère Mécanisée" "15ème Division Légère Mécanisée" "16ème Division Légère Mécanisée" "17ème Division Légère Mécanisée" "18ème Division Légère Mécanisée" "19ème Division Légère Mécanisée" "20ème Division Légère Mécanisée" "21ème Division Légère Mécanisée" "22ème Division Légère Mécanisée" 
+		"23ème Division Légère Mécanisée" "24ème Division Légère Mécanisée" "25ème Division Légère Mécanisée" 
+	}
+	light_armor_brigade = {
+		"1ère Division Cuirassée de Réserve" "2ème Division Cuirassée de Réserve" "3ème Division Cuirassée de Réserve" "4ème Division Cuirassée de Réserve" "5ème Division Cuirassée de Réserve" "6ème Division Cuirassée de Réserve" "7ème Division Cuirassée de Réserve" "8ème Division Cuirassée de Réserve" "9ème Division Cuirassée de Réserve" "10ème Division Cuirassée de Réserve" "11ème Division Cuirassée de Réserve" 
+		"12ème Division Cuirassée de Réserve" "13ème Division Cuirassée de Réserve" "14ème Division Cuirassée de Réserve" "14ème Division Cuirassée de Réserve" "16ème Division Cuirassée de Réserve" "17ème Division Cuirassée de Réserve" "18ème Division Cuirassée de Réserve" "19ème Division Cuirassée de Réserve" "20ème Division Cuirassée de Réserve" "21ème Division Cuirassée de Réserve" "22ème Division Cuirassée de Réserve" 
+		"23ème Division Cuirassée de Réserve" "24ème Division Cuirassée de Réserve" "24ème Division Cuirassée de Réserve" "26ème Division Cuirassée de Réserve" "27ème Division Cuirassée de Réserve" "28ème Division Cuirassée de Réserve" "29ème Division Cuirassée de Réserve" "30ème Division Cuirassée de Réserve" 
+	}
+	armor_brigade = {
+		"1ère Division Cuirassée" "2ème Division Cuirassée" "3ème Division Cuirassée" "4ème Division Cuirassée" "5ème Division Cuirassée" "6ème Division Cuirassée" "7ème Division Cuirassée" "8ème Division Cuirassée" 
+		"9ème Division Cuirassée" "10ème Division Cuirassée" "11ème Division Cuirassée" "12ème Division Cuirassée" "13ème Division Cuirassée" "14ème Division Cuirassée" "15ème Division Cuirassée" "16ème Division Cuirassée" "17ème Division Cuirassée" "18ème Division Cuirassée" "19ème Division Cuirassée" 
+		"20ème Division Cuirassée" "21ème Division Cuirassée" "22ème Division Cuirassée" "23ème Division Cuirassée" "24ème Division Cuirassée" "25ème Division Cuirassée" "26ème Division Cuirassée" "27ème Division Cuirassée" "28ème Division Cuirassée" "29ème Division Cuirassée" "30ème Division Cuirassée" 
+	}
+	paratrooper_brigade = {
+		"1re Divsion Aéroportée" "2ème Divsion Aéroportée" "3ème Divsion Aéroportée" "4ème Divsion Aéroportée" "5ème Divsion Aéroportée" "6ème Divsion Aéroportée" "7ème Divsion Aéroportée" "8ème Divsion Aéroportée" "9ème Divsion Aéroportée" "10ème Divsion Aéroportée" 
+	}
+	marine_brigade = {
+		"1ère Division d'Infanterie de Marine" "2ème Division d'Infanterie de Marine" "3ème Division d'Infanterie de Marine" "4ème Division d'Infanterie de Marine" "5ème Division d'Infanterie de Marine" "6ème Division d'Infanterie de Marine" "7ème Division d'Infanterie de Marine" "8ème Division d'Infanterie de Marine" "9ème Division d'Infanterie de Marine" "10ème Division d'Infanterie de Marine" 
+	}
+	bergsjaeger_brigade = {
+		"1ère Division d'Infanterie de Montagne" "2ème Division d'Infanterie de Montagne" "3ème Division d'Infanterie de Montagne" "4ème Division d'Infanterie de Montagne" "5ème Division d'Infanterie de Montagne" "6ème Division d'Infanterie de Montagne" "7ème Division d'Infanterie de Montagne" "8ème Division d'Infanterie de Montagne" "9ème Division d'Infanterie de Montagne" "10ème Division d'Infanterie de Montagne"
+	}
+	garrison_brigade = {
+		"1ère Division d'Garnison" "2ème Division d'Garnison" "3ème Division d'Garnison" "4ème Division d'Garnison" "5ème Division d'Garnison" "6ème Division d'Garnison" "7ème Division d'Garnison" "8ème Division d'Garnison" "9ème Division d'Garnison" "10ème Division d'Garnison" "11ème Division d'Garnison" "12ème Division d'Garnison" "13ème Division d'Garnison" "14ème Division d'Garnison" "15ème Division d'Garnison" "16ème Division d'Garnison" "17ème Division d'Garnison" "18ème Division d'Garnison" "19ème Division d'Garnison" "20ème Division d'Garnison"
+	}
+	hq_brigade = {
+		"1ère Armée" "2ème Armée" "3ème Armée" "4ème Armée" "4ème Armée" "6ème Armée" "7ème Armée" "8ème Armée" "9ème Armée" "10ème Armée" 
+	}
+	militia_brigade = {
+		"1ère Division d'Infanterie de Réserve" "2ème Division d'Infanterie de Réserve" "3ème Division d'Infanterie de Réserve" "4ème Division d'Infanterie de Réserve" "5ème Division d'Infanterie de Réserve" "6ème Division d'Infanterie de Réserve" "7ème Division d'Infanterie de Réserve" "8ème Division d'Infanterie de Réserve" "9ème Division d'Infanterie de Réserve" "10ème Division d'Infanterie de Réserve" "11ème Division d'Infanterie de Réserve" 
+		"12ème Division d'Infanterie de Réserve" "13ème Division d'Infanterie de Réserve" "14ème Division d'Infanterie de Réserve" "15ème Division d'Infanterie de Réserve" "16ème Division d'Infanterie de Réserve" "17ème Division d'Infanterie de Réserve" "18ème Division d'Infanterie de Réserve" "19ème Division d'Infanterie de Réserve" "20ème Division d'Infanterie de Réserve" "21ème Division d'Infanterie de Réserve" "22ème Division d'Infanterie de Réserve" 
+		"23ème Division d'Infanterie de Réserve" "24ème Division d'Infanterie de Réserve" "25ème Division d'Infanterie de Réserve" 
+	}
+	multi_role = {
+		"Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" "Groupe de Chasse 6" "Groupe de Chasse 7" "Groupe de Chasse 8" "Groupe de Chasse 9" "Groupe de Chasse 10"
+	}
+	interceptor = {
+		"Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" "Groupe de Chasse 6" "Groupe de Chasse 7" "Groupe de Chasse 8" "Groupe de Chasse 9" "Groupe de Chasse 10"
+	}
+	jet_int = {
+		"Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" "Groupe de Chasse 6" "Groupe de Chasse 7" "Groupe de Chasse 8" "Groupe de Chasse 9" "Groupe de Chasse 10"
+	}
+	jet_mr = {
+		"Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" "Groupe de Chasse 6" "Groupe de Chasse 7" "Groupe de Chasse 8" "Groupe de Chasse 9" "Groupe de Chasse 10"
+	}
+	strategic_bomber = {
+		"Groupe de Bombardement 1" "Groupe de Bombardement 2" "Groupe de Bombardement 3" "Groupe de Bombardement 6" "Groupe de Bombardement 7" "Groupe de Bombardement 8" "Groupe de Bombardement 9" "Groupe de Bombardement 10" 
+	}
+	tactical_bomber = {
+		"Groupe de Bombardement 1" "Groupe de Bombardement 2" "Groupe de Bombardement 3" "Groupe de Bombardement 6" "Groupe de Bombardement 7" "Groupe de Bombardement 8" "Groupe de Bombardement 9" "Groupe de Bombardement 10" 
+	}
+	jet_bomber = {
+		"Groupe de Bombardement 1" "Groupe de Bombardement 2" "Groupe de Bombardement 3" "Groupe de Bombardement 6" "Groupe de Bombardement 7" "Groupe de Bombardement 8" "Groupe de Bombardement 9" "Groupe de Bombardement 10" 
+	}
+	naval_bomber = {
+		"Groupe de Bombardement Naval 1" "Groupe de Bombardement Naval 2" "Groupe de Bombardement Naval 3" "Groupe de Bombardement Naval 4" "Groupe de Bombardement Naval 5" "Groupe de Bombardement Naval 6" "Groupe de Bombardement Naval 7" "Groupe de Bombardement Naval 8" "Groupe de Bombardement Naval 9" "Groupe de Bombardement Naval 10"
+	}
+	cas = {
+		"Groupe de Bombardement d'Assaut 1" "Groupe de Bombardement d'Assaut 2" "Groupe de Bombardement d'Assaut 3" "Groupe de Bombardement d'Assaut 4" "Groupe de Bombardement d'Assaut 5" "Groupe de Bombardement d'Assaut 6" "Groupe de Bombardement d'Assaut 7" "Groupe de Bombardement d'Assaut 8" "Groupe de Bombardement d'Assaut 9" "Groupe de Bombardement d'Assaut 10"
+	}
+	transport_plane = {
+		"1ére Groupe de Transport Aérien" "2ème Groupe de Transport Aérien" "3ème Groupe de Transport Aérien" "4ème Groupe de Transport Aérien" "5ème Groupe de Transport Aérien" "6ème Groupe de Transport Aérien" "7ème Groupe de Transport Aérien" "8ème Groupe de Transport Aérien" "9ème Groupe de Transport Aérien" "10ème Groupe de Transport Aérien" 
+	}
+	battleship = {
+		"Antananarivo" "Antsiranana" "Fianarantsoa" "Toamasina" "Mahajanga" "Toliara" "Betsiboka" "Ihorombe" "Sava" "Bongolava" "Itasy" "Vakinankaratra" "Analanjirofo" "Atsinanana" "Menabe"
+	}
+	light_cruiser = {
+		"Antananarivo" "Antsiranana" "Fianarantsoa" "Toamasina" "Mahajanga" "Toliara" "Betsiboka" "Ihorombe" "Sava" "Bongolava" "Itasy" "Vakinankaratra" "Analanjirofo" "Atsinanana" "Menabe"
+	}
+	heavy_cruiser = {
+		"Antananarivo" "Antsiranana" "Fianarantsoa" "Toamasina" "Mahajanga" "Toliara" "Betsiboka" "Ihorombe" "Sava" "Bongolava" "Itasy" "Vakinankaratra" "Analanjirofo" "Atsinanana" "Menabe"
+	}
+	battlecruiser = {
+		"Antananarivo" "Antsiranana" "Fianarantsoa" "Toamasina" "Mahajanga" "Toliara" "Betsiboka" "Ihorombe" "Sava" "Bongolava" "Itasy" "Vakinankaratra" "Analanjirofo" "Atsinanana" "Menabe"
+	}
+	destroyer = {
+		"1ère Divisionde Torpilleurs" "2ème Divisionde Torpilleurs" "3ème Divisionde Torpilleurs" "4ème Divisionde Torpilleurs" "5ème Divisionde Torpilleurs" "6ème Divisionde Torpilleurs" "7ème Divisionde Torpilleurs" "8ème Divisionde Torpilleurs" "9ème Divisionde Torpilleurs" "10ème Divisionde Torpilleurs" "11ème Divisionde Torpilleurs" 
+		"12ème Divisionde Torpilleurs" "13ème Divisionde Torpilleurs" "14ème Divisionde Torpilleurs" "15ème Divisionde Torpilleurs" "16ème Divisionde Torpilleurs" "17ème Divisionde Torpilleurs" "18ème Divisionde Torpilleurs" "19ème Divisionde Torpilleurs" "20ème Divisionde Torpilleurs" 
+	}
+	carrier = {
+		"Malagasy" "Madagascar"
+	}
+	submarine = {
+		"1ère Flottille sous-marine" "2ème Flottille sous-Marine" "3ème Flottille sous-Marine" "4ème Flottille sous-Marine" "5ème Flottille sous-Marine" "6ème Flottille sous-Marine" "7ème Flottille sous-Marine" "8ème Flottille sous-Marine" "9ème Flottille sous-Marine" "10ème Flottille sous-Marine" "11ème Flottille sous-Marine" 
+		"12ème Flottille sous-Marine" "13ème Flottille sous-Marine" "14ème Flottille sous-Marine" "15ème Flottille sous-Marine" "16ème Flottille sous-Marine" "17ème Flottille sous-Marine" "18ème Flottille sous-Marine" "19ème Flottille sous-Marine" "20ème Flottille sous-Marine" 
+	}
+	transport_ship = {
+		"1ère Flottille de Transport" "2ème Flottille de Transport" "3ème Flottille de Transport" "4ème Flottille de Transport" "5ème Flottille de Transport" "6ème Flottille de Transport" "7ème Flottille de Transport" "8ème Flottille de Transport" "9ème Flottille de Transport" "10ème Flottille de Transport" "11ème Flottille de Transport" 
+		"12ème Flottille de Transport" "13ème Flottille de Transport" "14ème Flottille de Transport" "15ème Flottille de Transport" "16ème Flottille de Transport" "17ème Flottille de Transport" "18ème Flottille de Transport" "19ème Flottille de Transport" "20ème Flottille de Transport" "21ème Flottille de Transport" "22ème Flottille de Transport" 
+		"23ème Flottille de Transport" "24ème Flottille de Transport" "25ème Flottille de Transport" "26ème Flottille de Transport" "27ème Flottille de Transport" "28ème Flottille de Transport" "29ème Flottille de Transport" "30ème Flottille de Transport" "31ème Flottille de Transport" "32ème Flottille de Transport" "33ème Flottille de Transport" 
+		"34ème Flottille de Transport" "35ème Flottille de Transport" "36ème Flottille de Transport" "37ème Flottille de Transport" "38ème Flottille de Transport" "39ème Flottille de Transport" "40ème Flottille de Transport" 
+	}
+
+}
+
+ministers = {
+	902500 = {
+		name = "Philibert Tsiranana"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = MAD_M_Tsiranana
+		head_of_state = father_of_his_country
+		head_of_government = naive_optimist
+		start_date = 1936.1.1
+	}
+	902501 = {
+		name = "Gabriel Ramanantsoa"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = MAD_M_Ramanantsoa
+		head_of_state = military_entrepreneur
+		armament_minister = infantry_proponent
+		chief_of_staff = school_of_manoeuvre
+		chief_of_army = armoured_spearhead_doctrine
+		start_date = 1936.1.1
+	}
+	902502 = {
+		name = "Gilles Andriamahazo"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = MAD_M_Andriamahazo
+		head_of_state = compassionate_gentleman
+		chief_of_staff = logistics_specialist
+		chief_of_army = logistics_specialist
+		start_date = 1949.1.1
+	}
+	902503 = {
+		name = "Calvin Tsiebo"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = MAD_M_Tsiebo
+		foreign_minister = great_compromiser
+		minister_of_security = efficient_sociopath
+		start_date = 1936.1.1
+	}
+	902504 = {
+		name = "Jacques Rabemananjara"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = MAD_M_Rabemananjara
+		foreign_minister = biased_intellectual
+		chief_of_staff = school_of_psychology
+		start_date = 1939.1.1
+	}
+	902505 = {
+		name = "Marcel de Coppet"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = MAD_M_Coppet
+		head_of_state = popular_figurehead
+	 	head_of_government = backroom_backstabber
+	 	minister_of_intelligence = logistics_specialist
+		start_date = 1936.1.1
+	}
+	902506 = {
+		name = "Pierre Gabriel de Chevigné"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = MAD_M_Chevigne
+		foreign_minister = great_compromiser
+		chief_of_navy = base_control_doctrine
+		start_date = 1939.1.1
+	}
+	902507 = {
+		name = "Pierre de Saint-Mart"
+		ideology = social_liberal
+		loyalty = 1.00
+		picture = MAD_M_Saint-Mart
+	 	head_of_state = die_hard_reformer
+	 	head_of_government = smiling_oilman
+	 	chief_of_army = decisive_battle_doctrine
+		start_date = 1936.1.1
+	}
+	902508 = {
+		name = "Abraham Schrameck"
+		ideology = market_liberal
+		loyalty = 1.00
+		picture = MAD_M_Abraham_Schrameck
+		foreign_minister = the_cloak_n_dagger_schemer
+		armament_minister = administrative_genius
+		minister_of_intelligence = dismal_enigma
+		start_date = 1936.1.1
+	}
+	902509 = {
+		name = "Leon Cayla"
+	 	ideology = social_conservative
+	 	loyalty = 1.00
+		picture = MAD_M_Cayla
+	 	head_of_state = resigned_generalissimo
+	 	head_of_government = old_general
+	 	start_date = 1936.1.1
+	}
+	902510 = {
+		name = "Monja Jaona"
+		ideology = market_liberal
+		loyalty = 1.00
+		picture = MAD_M_Jaona
+		head_of_state = die_hard_reformer
+		head_of_government = great_compromiser
+		foreign_minister = great_compromiser
+		start_date = 1940.1.1
+	}
+	902511 = {
+		name = "Richard Andriamanjato"
+		ideology = left_wing_radical
+		loyalty = 0.90
+		picture = MAD_M_Andriamanjato
+		head_of_state = flamboyant_tough_guy
+		foreign_minister = biased_intellectual
+		start_date = 1955.1.1
+	}
+	902512 = {
+	 	name = "Armand Annet"
+	 	ideology = social_conservative
+	 	loyalty = 1.00
+	 	picture = MAD_M_Armand_Annet
+	 	minister_of_intelligence = industrial_specialist
+	 	head_of_state = barking_buffoon
+		head_of_government = political_protege
+	 	start_date = 1936.1.1
+	}
+	902513 = {
+		name = "Eugene Rakotondramary"
+		ideology = paternal_autocrat
+	 	loyalty = 1.00
+	 	picture = MAD_M_Eugene_Rakotondramary
+	 	minister_of_security = silent_lawyer
+	 	start_date = 1936.1.1
+	}
+	902514 = {
+	 	name = "François de Menthon"
+	 	ideology = social_conservative
+	 	loyalty = 1.00
+	 	picture = MAD_M_Francois_de_Menthon
+	 	armament_minister = resource_industrialist
+	 	start_date = 1936.1.1
+	}
+	902515 = {
+	 	name = "Henri Amiel"
+	 	ideology = social_conservative
+	 	loyalty = 1.00
+	 	picture = MAD_M_Henri_Amiel
+	 	chief_of_staff = school_of_manoeuvre
+	 	chief_of_army = armoured_spearhead_doctrine
+	 	start_date = 1936.1.1
+	}
+	902516 = {
+	 	name = "Henri Manigart"
+		ideology = social_conservative
+		loyalty = 1.00
+	 	picture = MAD_M_Henri_Manigart
+	 	minister_of_security = crime_fighter
+	 	start_date = 1936.1.1
+	}
+	902517 = {
+	 	name = "Jean Jores Razafindrakoto"
+	 	ideology = paternal_autocrat
+	 	loyalty = 1.00
+	 	picture = MAD_M_Jean_Jores_Razafindrakoto
+	 	foreign_minister = biased_intellectual
+	 	start_date = 1936.1.1
+	}
+	902518 = {
+	 	name = "Jean-Marie Querville"
+	 	ideology = social_liberal
+	 	loyalty = 1.00
+	 	picture = MAD_M_Jean-Marie_Querville
+	 	chief_of_navy = decisive_naval_battle_doctrine
+	 	start_date = 1942.1.1
+	}
+	902519 = {
+	 	name = "Jean Pierre Gabriel"
+	 	ideology = social_liberal
+	 	loyalty = 1.00
+	 	picture = MAD_M_Jean_Pierre_Gabriel
+	 	minister_of_security = efficient_sociopath
+	 	start_date = 1943.1.1
+	}
+	902520 = {
+	 	name = "Joseph Rakotondrandria"
+	 	ideology = paternal_autocrat
+	 	loyalty = 1.00
+	 	picture = MAD_M_Joseph_Rakotondrandria
+	 	chief_of_staff = school_of_fire_support
+	 	start_date = 1936.1.1
+	}
+	902521 = {
+	 	name = "Leon Cayla"
+	 	ideology = social_conservative
+	 	loyalty = 1.00
+	 	picture = MAD_M_Leon_Cayla
+	 	head_of_state = resigned_generalissimo
+	 	head_of_government = old_general
+	 	start_date = 1936.1.1
+	}
+	902522 = {
+	 	name = "Liva Raharison"
+	 	ideology = paternal_autocrat
+	 	loyalty = 1.00
+	 	picture = MAD_M_Liva_Raharison
+	 	armament_minister = laissez_faires_capitalist
+	 	start_date = 1943.1.1
+	}
+	902523 = {
+		name = "Georges de Barbezière"
+		ideology = social_conservative
+	 	loyalty = 1.00
+	 	picture = MAD_M_Georges_de_Barbeziere
+	 	chief_of_navy = base_control_doctrine
+	 	start_date = 1936.1.1
+	}
+	902524 = {
+	 	name = "Max Andlauer"
+	 	ideology = social_liberal
+	 	loyalty = 1.00
+	 	picture = MAD_M_Max_Andlauer
+	 	chief_of_air = carpet_bombing_doctrine
+	 	start_date = 1944.1.1
+	}
+	902525 = {
+	 	name = "Max Guedj"
+	 	ideology = social_conservative
+	 	loyalty = 1.00
+	 	picture = MAD_M_Max_Guedj
+	 	chief_of_air = naval_aviation_doctrine
+	 	start_date = 1936.1.1
+	}
+	902526 = {
+	 	name = "Olivier Randrianantenaina"
+	 	ideology = paternal_autocrat
+	 	loyalty = 1.00
+	 	picture = MAD_M_Olivier_Randrianantenaina
+	 	chief_of_navy = decisive_naval_battle_doctrine
+	 	start_date = 1936.1.1
+	}
+	902527 = {
+	 	name = "Paul Le Gentilhomme"
+	 	ideology = social_conservative
+	 	loyalty = 1.00
+	 	picture = MAD_M_Paul_Le_Gentilhomme
+	 	head_of_state = pig_headed_isolationist
+	 	head_of_government = flamboyant_tough_guy
+	 	chief_of_staff = school_of_mass_combat
+	 	start_date = 1940.1.1
+	}
+	902528 = {
+	 	name = "Paul Vibert"
+	 	ideology = social_liberal
+	 	loyalty = 1.00
+	 	picture = MAD_M_Paul_Vibert
+		armament_minister = submarine_proponent
+	 	start_date = 1941.1.1
+	}
+	902529 = {
+	 	name = "Pierre Jean Herbinger"
+	 	ideology = social_conservative
+	 	loyalty = 1.00
+	 	picture = MAD_M_Pierre_Jean_Herbinger
+	 	foreign_minister = apologetic_clerk
+	 	start_date = 1936.1.1
+	}
+	902530 = {
+	 	name = "Rafeno Fanjava"
+	 	ideology = paternal_autocrat
+	 	loyalty = 1.00
+	 	picture = MAD_M_Rafeno_Fanjava
+	 	chief_of_army = armoured_spearhead_doctrine
+	 	start_date = 1936.1.1
+	}
+	902531 = {
+	 	name = "Ramilison Randriamampianina"
+	 	ideology = paternal_autocrat
+	 	loyalty = 1.00
+	 	picture = MAD_M_Ramilison_Randriamampianina
+	 	armament_minister = tank_proponent
+	 	start_date = 1936.1.1
+	}
+	902532 = {
+	 	name = "René Lemoine"
+	 	ideology = social_liberal
+	 	loyalty = 1.00
+	 	picture = MAD_M_Rene_Lemoine
+	 	foreign_minister = great_compromiser
+	 	start_date = 1942.1.1
+	}
+	902533 = {
+	 	name = "Solomon Rabemanoela"
+	 	ideology = paternal_autocrat
+	 	loyalty = 1.00
+	 	picture = MAD_M_Solomon_Rabemanoela
+	 	chief_of_air = vertical_envelopment_doctrine
+	 	start_date = 1936.1.1
+	}
+	902534 = {
+	 	name = "Ullmont L. James"
+	 	ideology = paternal_autocrat
+	 	loyalty = 1.00
+	 	picture = MAD_M_Ullmont_L_James
+	 	minister_of_intelligence = dismal_enigma
+	 	start_date = 1936.1.1
+	}
+	# Generic dummy ministers
+	95576 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95577 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95578 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		minister_of_security = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95579 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95580 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		armament_minister = mostly_harmless_armament
+		minister_of_intelligence = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95581 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95582 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95583 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	
+}

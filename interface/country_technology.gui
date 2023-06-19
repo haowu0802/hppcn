@@ -1,0 +1,3161 @@
+guiTypes = {
+
+	windowType = {
+		name = "topcolor_technology"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x=1120 y=768 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+		orientation="UPPER_LEFT"
+	
+		iconType = {
+			name = "topcolor_icon"
+			spriteType = "GFX_topcolor_technology"
+			position = { x= 0 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+	}
+
+
+	windowType = {
+		name = "country_technology"
+		backGround =""
+		position = { x=-555 y=-344 }	
+		#position = { x=0 y=3 }	
+		#size = { x=1120 y=768 }
+		size = { x=1120 y=768 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+		orientation="CENTER"
+		
+		
+
+		
+		iconType = {
+			name ="bg_mainshadow"
+			spriteType = "GFX_bg_mainshadow"
+			position = { x= -3 y = 9 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name ="bg_countryskin"
+			spriteType = "GFX_country_bg"
+			position = { x= 44 y = 54 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name ="bg_technology"
+			spriteType = "GFX_bg_technology"
+			position = { x= 44 y = -30 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name ="bg_tech_infantry_folder"
+			spriteType = "GFX_bg_tech_infantry"
+			position = { x= 302 y = 97 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="bg_tech_armour_folder"
+			spriteType = "GFX_bg_tech_armour"
+			position = { x= 302 y = 97 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="bg_tech_smallship_folder"
+			spriteType = "GFX_bg_tech_escorts"
+			position = { x= 302 y = 97 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="bg_tech_capitalship_folder"
+			spriteType = "GFX_bg_tech_capital"
+			position = { x= 302 y = 97 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="bg_tech_bomber_folder"
+			spriteType = "GFX_bg_tech_bomber"
+			position = { x= 302 y = 97 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="bg_tech_fighter_folder"
+			spriteType = "GFX_bg_tech_fighter"
+			position = { x= 302 y = 97 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="bg_tech_industry_folder"
+			spriteType = "GFX_bg_tech_industry"
+			position = { x= 302 y = 97 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="bg_tech_secretweapon_folder"
+			spriteType = "GFX_bg_tech_secret"
+			position = { x= 302 y = 97 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="bg_tech_theory_folder"
+			spriteType = "GFX_bg_tech_theory"
+			position = { x= 302 y = 97 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="bg_tech_land_doctrine_folder"
+			spriteType = "GFX_bg_tech_land"
+			position = { x= 302 y = 97 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="bg_tech_operational_doctrine_folder"
+			spriteType = "GFX_bg_tech_operational"
+			position = { x= 302 y = 97 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="bg_tech_naval_doctrine_folder"
+			spriteType = "GFX_bg_tech_naval"
+			position = { x= 302 y = 97 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="bg_tech_air_doctrine_folder"
+			spriteType = "GFX_bg_tech_air"
+			position = { x= 302 y = 97 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		
+		
+		guiButtonType = {
+			name = "close_button"
+			position = { x= -98 y = 24}
+			quadTextureSprite = "GFX_close_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "Arial12_bold_black"
+			Orientation = "UPPER_RIGHT"
+			shortcut = "ESCAPE"
+		}
+		
+		
+		textBoxType = { 
+			name = "headline_tech"
+			position = { x = 710 y = 8 }
+			textureFile = ""
+			font = "impact"
+			borderSize = {x = 0 y = 4}
+			text = "headline_tech"	
+			maxWidth = 300
+			maxHeight = 64	
+			format = right
+		}
+		
+		
+		
+		instantTextBoxType = { 
+			name = "automation_setting"
+			position = { x = 804 y = 41 }
+			textureFile = ""
+			font = "arial_18"
+			borderSize = {x = 0 y = 4}
+			text = "Expert"	
+			maxWidth = 300
+			maxHeight = 64	
+			format = centre
+		}
+		
+		guiButtonType = {
+			name ="mode_arrow_left"
+			quadTextureSprite = "GFX_mode_arrow_left"
+			position = { x= 896 y = 43}
+			Orientation = "UPPER_LEFT"
+		}
+		guiButtonType = {
+			name ="mode_arrow_right"
+			quadTextureSprite = "GFX_mode_arrow_right"
+			position = { x= 996 y = 43}
+			Orientation = "UPPER_LEFT"
+		}
+		
+		
+		
+		#ICONS##diplo ETC
+		
+		
+		textBoxType = {
+			name = "leader_ship_label"
+			position = { x = 55 y = 80 }
+			textureFile = ""
+			font = "Arial14"
+			borderSize = {x = 4 y = 0}
+			text = "DISPOSAL_OF_LEADERSHIP"	
+			maxWidth = 240
+			maxHeight = 32	
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+				
+		iconType = {
+			name ="icon_research"
+			spriteType = "GFX_icon_research"
+			position = { x= 65 y = 110 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name ="icon_espionage"
+			spriteType = "GFX_icon_espionage"
+			position = { x= 65 y = 155 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name ="icon_diplomacy"
+			spriteType = "GFX_icon_diplomacy"
+			position = { x= 65 y = 200 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name ="icon_leadership"
+			spriteType = "GFX_icon_leadership"
+			position = { x= 65 y = 245 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		textBoxType = {
+			name = "current_research_text"
+			position = { x = 55 y = 298 }
+			textureFile = ""
+			font = "Arial14"
+			borderSize = {x = 4 y = 0}
+			text = "tech_current_research"	
+			maxWidth = 240
+			maxHeight = 32	
+			format = centre
+			Orientation = "UPPER_LEFT"
+		
+		}
+		
+		textBoxType = {
+			name = "current_research_label"
+			position = { x = 55 y = 316 }
+			textureFile = ""
+			font = "Arial12_bold"
+			borderSize = {x = 4 y = 0}
+			text = "current_research"	
+			maxWidth = 240
+			maxHeight = 32	
+			format = centre
+			Orientation = "UPPER_LEFT"
+		
+		}
+		
+		
+		###LISTBOXES###
+		
+		listboxType = {
+			name = "current_research"
+			position = { x = 50 y = 332 }
+			backGround=""
+			size = { x=230 y = 248 }
+			Orientation = "UPPER_LEFT"
+			horisontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}		
+		
+							
+										
+		#####MAINBUTTONS######
+		
+		guiButtonType = {
+			name = "techtree_infantry_folder"
+			position = { x=303 y = 68}
+			quadTextureSprite ="GFX_tech_button_inf"
+			
+		}
+		textBoxType = { 
+			name = "infantry_text"
+			position = { x = 302 y = 79 }
+			textureFile = ""
+			font = "Arial12_alpha"
+			borderSize = {x = 0 y = 4}
+			text = "TECH_INFANTRY"	
+			maxWidth = 64
+			maxHeight = 64	
+			format = centre
+		}
+		
+		guiButtonType = {
+			name = "techtree_armour_folder"
+			position = { x=361 y = 68}
+			quadTextureSprite ="GFX_tech_button_armour"
+			
+		}
+		textBoxType = { 
+			name = "armour_text"
+			position = { x = 360 y = 79 }
+			textureFile = ""
+			font = "Arial12_alpha"
+			borderSize = {x = 0 y = 4}
+			text = "TECH_ARMOUR"	
+			maxWidth = 64
+			maxHeight = 64	
+			format = centre
+		}
+		
+		guiButtonType = {
+			name = "techtree_smallship_folder"
+			position = { x=419 y = 68}
+			quadTextureSprite ="GFX_tech_button_escorts"
+			
+		}
+		textBoxType = { 
+			name = "escorts_text"
+			position = { x = 418 y = 79 }
+			textureFile = ""
+			font = "Arial12_alpha"
+			borderSize = {x = 0 y = 4}
+			text = "TECH_ESCORTS"	
+			maxWidth = 64
+			maxHeight = 64	
+			format = centre
+		}
+		
+		guiButtonType = {
+			name = "techtree_capitalship_folder"
+			position = { x=476 y = 68}
+			quadTextureSprite ="GFX_tech_button_capital"
+			
+		}
+		textBoxType = { 
+			name = "capital_text"
+			position = { x = 475 y = 79 }
+			textureFile = ""
+			font = "Arial12_alpha"
+			borderSize = {x = 0 y = 4}
+			text = "TECH_CAPITAL"	
+			maxWidth = 64
+			maxHeight = 64	
+			format = centre
+		}
+		
+		guiButtonType = {
+			name = "techtree_bomber_folder"
+			position = { x=533 y = 68}
+			quadTextureSprite ="GFX_tech_button_bomber"
+		
+		}
+		textBoxType = { 
+			name = "bomber_text"
+			position = { x = 532 y = 79 }
+			textureFile = ""
+			font = "Arial12_alpha"
+			borderSize = {x = 0 y = 4}
+			text = "TECH_BOMBER"	
+			maxWidth = 64
+			maxHeight = 64	
+			format = centre
+		}
+		
+		guiButtonType = {
+			name = "techtree_fighter_folder"
+			position = { x=590 y = 68}
+			quadTextureSprite ="GFX_tech_button_fighter"
+			
+		}
+		textBoxType = { 
+			name = "fighter_text"
+			position = { x = 589 y = 79 }
+			textureFile = ""
+			font = "Arial12_alpha"
+			borderSize = {x = 0 y = 4}
+			text = "TECH_FIGHTER"	
+			maxWidth = 64
+			maxHeight = 64	
+			format = centre
+		}
+		
+		guiButtonType = {
+			name = "techtree_industry_folder"
+			position = { x=648 y = 68}
+			quadTextureSprite ="GFX_tech_button_industry"
+			
+		}
+		textBoxType = { 
+			name = "industry_text"
+			position = { x = 647 y = 79 }
+			textureFile = ""
+			font = "Arial12_alpha"
+			borderSize = {x = 0 y = 4}
+			text = "TECH_INDUSTRY"	
+			maxWidth = 64
+			maxHeight = 64	
+			format = centre
+		}
+
+	
+		guiButtonType = {
+			name = "techtree_secretweapon_folder"
+			position = { x=705 y = 68}
+			quadTextureSprite ="GFX_tech_button_secret"
+			
+		}
+		textBoxType = { 
+			name = "secret_text"
+			position = { x = 704 y = 79 }
+			textureFile = ""
+			font = "Arial12_alpha"
+			borderSize = {x = 0 y = 4}
+			text = "TECH_SECRET"	
+			maxWidth = 64
+			maxHeight = 64	
+			format = centre
+		}
+
+		guiButtonType = {
+			name = "techtree_theory_folder"
+			position = { x=762 y = 68}
+			quadTextureSprite ="GFX_tech_button_theory"
+			
+		}
+		textBoxType = { 
+			name = "theory_text"
+			position = { x = 761 y = 79 }
+			textureFile = ""
+			font = "Arial12_alpha"
+			borderSize = {x = 0 y = 4}
+			text = "TECH_THEORY"	
+			maxWidth = 64
+			maxHeight = 64	
+			format = centre
+		}
+
+		guiButtonType = {
+			name = "techtree_land_doctrine_folder"
+			position = { x = 819 y = 68}
+			quadTextureSprite ="GFX_tech_button_land"
+			
+		}
+		textBoxType = { 
+			name = "land_text"
+			position = { x = 818 y = 79 }
+			textureFile = ""
+			font = "Arial12_alpha"
+			borderSize = {x = 0 y = 4}
+			text = "TECH_LAND"	
+			maxWidth = 64
+			maxHeight = 64	
+			format = centre
+		}
+
+		guiButtonType = {
+			name = "techtree_operational_doctrine_folder"
+			position = { x = 877 y = 68}
+			quadTextureSprite ="GFX_tech_button_operational"
+			
+		}
+		textBoxType = { 
+			name = "operational_text"
+			position = { x = 876 y = 79 }
+			textureFile = ""
+			font = "Arial12_alpha"
+			borderSize = {x = 0 y = 4}
+			text = "TECH_OPERATIONAL"	
+			maxWidth = 64
+			maxHeight = 64	
+			format = centre
+		}
+			
+		guiButtonType = {
+			name = "techtree_naval_doctrine_folder"
+			position = { x= 935 y = 68}
+			quadTextureSprite ="GFX_tech_button_naval"
+			
+		}
+		textBoxType = { 
+			name = "naval_text"
+			position = { x = 934 y = 79 }
+			textureFile = ""
+			font = "Arial12_alpha"
+			borderSize = {x = 0 y = 4}
+			text = "TECH_NAVAL"	
+			maxWidth = 64
+			maxHeight = 64	
+			format = centre
+		}
+		
+		guiButtonType = {
+			name = "techtree_air_doctrine_folder"
+			position = { x= 993 y = 68}
+			quadTextureSprite ="GFX_tech_button_air"
+			
+		}
+		textBoxType = { 
+			name = "air_text"
+			position = { x = 994 y = 79 }
+			textureFile = ""
+			font = "Arial12_alpha"
+			borderSize = {x = 0 y = 4}
+			text = "TECH_AIR"	
+			maxWidth = 64
+			maxHeight = 64	
+			format = centre
+		}
+		
+		
+		
+		####TECH TREE#####
+		
+		windowType = {
+			name = "tech_tree"
+			backGround =""
+			position = { x= 0 y = 31 }	
+			size = { x=1120 y=768 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = "0"
+			verticalBorder = ""
+			fullScreen = no
+			
+		}				
+		####TECH CATEGORIES#####
+		
+		windowType = {
+			name = "tech_categories"
+			backGround =""
+			position = { x= 48 y = 550 }	
+			size = { x=1120 y=200 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = "0"
+			verticalBorder = ""
+			fullScreen = no
+			Orientation = "UPPER_LEFT"
+			
+			textBoxType = { 
+			name = "label_land"
+			position = { x = 17 y =40 }
+			textureFile = ""
+			font = "Arial12_headline"
+			borderSize = {x = 0 y = 4}
+			text = "Land"	
+			maxWidth = 100
+			maxHeight = 64	
+			format = left
+		}
+			
+			textBoxType = { 
+			name = "label_naval"
+			position = { x = 212 y =40 }
+			textureFile = ""
+			font = "Arial12_headline"
+			borderSize = {x = 0 y = 4}
+			text = "Naval"	
+			maxWidth = 100
+			maxHeight = 64	
+			format = left
+		}
+			
+			textBoxType = { 
+			name = "label_air"
+			position = { x = 337 y =40 }
+			textureFile = ""
+			font = "Arial12_headline"
+			borderSize = {x = 0 y = 4}
+			text = "Air"	
+			maxWidth = 100
+			maxHeight = 64	
+			format = left
+		}
+			
+			
+			textBoxType = { 
+			name = "label_doctrines"
+			position = { x = 475 y =40 }
+			textureFile = ""
+			font = "Arial12_headline"
+			borderSize = {x = 0 y = 4}
+			text = "Doctrines"	
+			maxWidth = 100
+			maxHeight = 64	
+			format = left
+		}
+			
+			
+			textBoxType = { 
+			name = "label_industry"
+			position = { x = 825 y =40 }
+			textureFile = ""
+			font = "Arial12_headline"
+			borderSize = {x = 0 y = 4}
+			text = "Industry"	
+			maxWidth = 100
+			maxHeight = 64	
+			format = left
+		}
+			
+			textBoxType = { 
+			name = "label_secret"
+			position = { x = 950 y =40 }
+			textureFile = ""
+			font = "Arial12_headline"
+			borderSize = {x = 0 y = 4}
+			text = "Secret"	
+			maxWidth = 100
+			maxHeight = 64	
+			format = left
+		}
+			
+			
+		}	
+		
+		####TECH DETAILS#####
+		
+		windowType = {
+			name = "tech_details"
+			backGround =""
+			position = { x= 29 y = 589 }	
+			size = { x=1120 y=200 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = "0"
+			verticalBorder = ""
+			fullScreen = no
+			
+			
+			iconType = {
+				name = "bg_selected_tech"
+				spriteType = "GFX_bg_selected_tech"
+				position = { x= 16 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			
+			iconType =	{
+				name ="photo"
+				spriteType = "GFX_no_tech_image"
+				position = { x = 40 y = 5 }
+				Orientation = "UPPER_LEFT"
+				scale = 0.46
+			}
+			iconType =	{
+				name ="tech_photo_overlay"
+				spriteType = "GFX_tech_photo_overlay"
+				position = { x = 33 y = -3 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			
+			
+			
+			
+			instantTextBoxType = { 
+				name = "name"
+				position = { x = 210 y = 3 }
+				textureFile = ""
+				font = "Arial_17"
+				borderSize = {x = 0 y = 4}
+				text = "name"	
+				maxWidth = 350
+				maxHeight = 128	
+				format = left
+			}
+			instantTextBoxType = { 
+				name = "name_expl"
+				position = { x = 211 y = 21 }
+				textureFile = ""
+				font = "Arial12_headline"
+				borderSize = {x = 0 y = 4}
+				text = "expl"	
+				maxWidth = 350
+				maxHeight = 128	
+				format = left
+			}
+			
+			instantTextBoxType = {
+				position = { x = 206 y = 40 }
+				name = "desc"
+				font = "Arial12_bold_black"
+				borderSize = {x = 4 y = 2}
+				text = "1936"	
+				maxWidth = 450
+				maxHeight = 128
+				orientation = "UPPER_LEFT"
+			}
+			listboxType = {
+				name = "effects"
+				position = { x = 680 y = 9 }
+				backGround=""
+				size = { x=310 y = 82 }
+				Orientation = "UPPER_LEFT"
+				horisontal = 0
+				spacing = 2
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 0 y = 0}
+			}		
+			
+
+
+
+
+						
+			
+
+			OverlappingElementsBoxType = {
+				name = "input_box"
+				position = { x = 651 y = 84}
+				size = { x=300 y= 32 }
+				Orientation = "UPPER_LEFT"
+				format = left
+				spacing = 7.0
+			}
+			
+			
+			instantTextBoxType = {
+				position = { x = 811 y = 104 }
+				name = "difficulty"
+				font = "Arial12_bold"
+				borderSize = {x = 4 y = 2}
+				text = "7"	
+				maxWidth = 24
+				maxHeight = 10
+				format = centre
+				orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				position = { x = 823 y = 103 }
+				name = "year"
+				font = "arial_18"
+				borderSize = {x = 4 y = 2}
+				text = "1936"	
+				maxWidth = 60
+				maxHeight = 10
+				format = centre
+				orientation = "UPPER_LEFT"
+			}
+	
+			
+			iconType =
+			{
+				name ="icon_finish_type"
+				spriteType = "GFX_unit_supplies_icon"
+				position = { x= 784 y = 100 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			
+
+			
+			guiButtonType = {
+				name = "start"
+				position = { x=880 y =93}
+				quadTextureSprite ="GFX_tech_start_button"
+				buttonText = "ITEM_RESEARCH_START"
+				buttonFont = "Arial14"
+			}
+
+
+			iconType =	{
+				name ="tech_status_researching"
+				spriteType = "GFX_tech_status_researching"
+				position = { x = 642 y = 7 }
+				Orientation = "UPPER_LEFT"
+			}
+		iconType =	{
+				name ="tech_status_finnished"
+				spriteType = "GFX_tech_status_finnished"
+				position = { x = 642 y = 7 }
+				Orientation = "UPPER_LEFT"
+			}		
+		guiButtonType = {
+			name = "close"
+			position = { x=1008 y =2}
+			quadTextureSprite ="GFX_tech_selected_close"
+			Orientation = "UPPER_LEFT"
+		}			
+			
+			
+		}
+	}
+	
+	###TOPRIGHT SLIDERS###
+	
+	positionType = {
+		name = "leadership_slider_start"
+		position = { x = 98 y =110 }
+	}
+	positionType = {
+		name = "leadership_slider_offset"
+		position = { x = 0 y =45 }
+	}	
+	
+	windowType = {
+		name = "country_leadership_sliders"
+		backGround =""
+		position = { x=-555 y=-344 }	
+		#position = { x=0 y=3 }	
+		#size = { x=1120 y=768 }
+		size = { x=1120 y=768 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = "0"
+		verticalBorder = ""
+		fullScreen = no
+		orientation="CENTER"
+	}
+	
+	###########
+	windowType = {
+		name = "detail_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y= 16 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+		
+		instantTextBoxType = {
+			position = { x = 0 y = 0 }
+			name = "text"
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 330
+			maxHeight = 16
+			format = left
+			orientation = "UPPER_LEFT"
+		}
+		
+	}
+
+		
+	
+#################################################################################
+#Current Research
+#################################################################################	
+	windowType = {
+		name = "current_research_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=360 y= 35 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		guiButtonType =
+		{
+			name ="bg_current_green"
+			quadTextureSprite = "GFX_tech_current_green"
+			position = { x= 7 y = 1 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+		guiButtonType =
+		{
+			name ="bg_current_orange"
+			quadTextureSprite = "GFX_tech_current_orange"
+			position = { x= 7 y = 1 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+		guiButtonType =
+		{
+			name ="bg_current_red"
+			quadTextureSprite = "GFX_tech_current_red"
+			position = { x= 7 y = 1 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+		
+		iconType =
+		{
+			name ="progress"
+			spriteType = "tech_progress_current"
+			position = { x= 10 y = 3 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			position = { x = 11 y = 2 }
+			name = "name"
+			font = "Arial12_bold_black"
+			borderSize = {x = 4 y = 2}
+			text = ""	
+			maxWidth = 195
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+			fixedsize = yes
+			allwaystransparent = yes
+		}
+		instantTextBoxType = {
+			position = { x = 170 y = 2 }
+			name = "level"
+			font = "Arial12_bold_black"
+			borderSize = {x = 4 y = 2}
+			text = "4"	
+			maxWidth = 80
+			maxHeight = 10
+			format = centre
+			orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			position = { x = 9 y = 18 }
+			name = "data"
+			font = "Arial12_black"
+			borderSize = {x = 4 y = 2}
+			text = ""	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}
+		
+		
+		
+		guiButtonType = {
+			name = "tech_prio_maxup"
+			position = { x=181 y =18}
+			quadTextureSprite ="GFX_tech_prio_maxup"
+		}
+		guiButtonType = {
+			name = "tech_prio_up"
+			position = { x=164 y =18}
+			quadTextureSprite ="GFX_tech_prio_up"
+		}
+		guiButtonType = {
+			name = "tech_prio_down"
+			position = { x=147 y =18}
+			quadTextureSprite ="GFX_tech_prio_down"
+		}
+		guiButtonType = {
+			name = "tech_prio_maxdown"
+			position = { x=130 y =18}
+			quadTextureSprite ="GFX_tech_prio_maxdown"
+		}
+		
+		guiButtonType = {
+			name = "cancel"
+			position = { x=208 y =18}
+			quadTextureSprite ="GFX_tech_stop_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "--"
+			buttonFont = "Arial12"
+		}		
+		
+	}
+	
+	
+#################################################################################
+# Techcategory entry
+#################################################################################	
+	windowType = {
+		name = "tech_category_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=17 y= 20 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		
+		iconType =
+		{
+			name ="tech_icon"
+			spriteType = "GFX_unit_supplies_icon"
+			position = { x= 18 y = 16}
+			Orientation = "UPPER_LEFT"
+			
+		}			
+		
+	}	
+	
+#################################################################################
+# Techcategory skill entry
+#################################################################################	
+	windowType = {
+		name = "tech_category_skill_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=32 y= 31 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		
+		iconType =
+		{
+			name ="tech_cat_icon"
+			spriteType = "GFX_unit_supplies_icon"
+			position = { x= 23 y = 13}
+			Orientation = "UPPER_LEFT"
+			
+		}
+
+		iconType =
+		{
+			name ="tech_skill_indicator"
+			spriteType = "GFX_tech_skill_indicator"
+			position = { x= 46 y = 13}
+			Orientation = "UPPER_LEFT"
+			
+		}		
+
+		instantTextBoxType = {
+			position = { x = 50 y = 17 }
+			name = "skill"
+			font = "Arial12_alpha"
+			borderSize = {x = 4 y = 2}
+			text = ""	
+			maxWidth = 170
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+		}		
+	}	
+
+#################################################################################
+# Tech tree entry
+#################################################################################	
+	windowType = {
+		name = "tech_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=260 y= 30 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+
+
+		
+		guiButtonType =
+		{
+			name ="bg_oneshot"
+			quadTextureSprite = "GFX_tech_oneshot"
+			position = { x= 2 y = -4}
+			Orientation = "UPPER_LEFT"
+			
+		}
+		guiButtonType =
+		{
+			name ="bg_endless"
+			quadTextureSprite = "GFX_tech_endless"
+			position = { x= 2 y = -4}
+			Orientation = "UPPER_LEFT"
+			
+		}
+		guiButtonType =
+		{
+			name ="bg_cant"
+			quadTextureSprite = "GFX_tech_cant"
+			position = { x= 2 y = -4}
+			Orientation = "UPPER_LEFT"
+			
+		}
+		guiButtonType =
+		{
+			name ="bg_finnished"
+			quadTextureSprite = "GFX_tech_finnished"
+			position = { x= 2 y = -4}
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		
+		
+		
+		
+		iconType =
+		{
+			name ="progress"
+			spriteType = "tech_progress"
+			position = { x= 2 y = -2 }
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}
+		
+		
+		
+		instantTextBoxType = {
+			position = { x = 2 y = -2 }
+			name = "name"
+			font = "Arial12_black"
+			borderSize = {x = 4 y = 2}
+			text = ""	
+			maxWidth = 192
+			maxHeight = 10
+			orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+			fixedsize = yes			
+		}
+		
+		
+		OverlappingElementsBoxType = {
+			name = "input_box"
+			position = { x = -8 y = -2}
+			size = { x=300 y= 32 }
+			Orientation = "UPPER_LEFT"
+			format = left
+			spacing = 1.0
+			allwaystransparent = yes
+		}
+		
+		
+		instantTextBoxType = {
+			position = { x = 124 y = 14 }
+			name = "difficulty"
+			font = "Arial12_bold"
+			borderSize = {x = 4 y = 2}
+			text = "7"	
+			maxWidth = 24
+			maxHeight = 10
+			format = centre
+			orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			position = { x = 147 y = 13 }
+			name = "year"
+			font = "arial_18"
+			borderSize = {x = 4 y = 2}
+			text = "1936"	
+			maxWidth = 60
+			maxHeight = 10
+			format = centre
+			orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}
+
+		
+		iconType =
+		{
+			name ="icon_finish_type"
+			spriteType = "GFX_unit_supplies_icon"
+			position = { x= 100 y = 14 }
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}
+
+		iconType =	{
+				name ="tech_status_researching"
+				spriteType = "GFX_tech_status_researching"
+				position = { x = 183 y = -2 }
+				Orientation = "UPPER_LEFT"
+				allwaystransparent = yes
+			}		
+	
+	}
+	
+	
+	###SLIDERS
+	
+	windowType = {
+		name = "tech_slider"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=1024 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		instantTextBoxType = {
+			name = "value"
+			position = { x = 55 y =4 }
+			format = right
+
+			textureFile = ""
+			font = "Arial14"
+			borderSize = {x = 4 y = 0}
+			text = ""	
+			maxWidth = 118
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 0 y =-2 }
+
+			textureFile = ""
+			font = "Arial12_headline"
+			borderSize = {x = 4 y = 0}
+			text = ""	
+			maxWidth = 116
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+		
+		guiButtonType = {
+			name ="ic_need_button"
+			quadTextureSprite = "GFX_ic_need_button"
+			position = { x= -1 y = 10 }
+			Orientation = "UPPER_LEFT"
+		}
+	
+		instantTextBoxType = {
+			name = "need"
+			position = { x = 0 y =12 }
+
+			textureFile = ""
+			font = "Arial12_alpha"
+			borderSize = {x = 4 y = 0}
+			text = "need"	
+			maxWidth = 116
+			maxHeight = 32	
+			Orientation = "UPPER_LEFT"
+
+			format = left
+		}
+
+		scrollbarType = {
+				name = "actual_slider"	
+				slider = "ds_SliderButton"
+				track= "ds_TrackButton"
+				leftbutton = "ds_upButton"
+				rightbutton = "ds_downButton"
+				size = {x =180 y =16 }
+				position = {x= 2 y =26}
+				priority = 100			
+				borderSize = {x =16 y = 16}	
+				maxValue = 100
+				minValue = 0
+				stepSize =0.001
+				startValue = 0
+				horizontal = 1
+				lockable = yes
+	
+				guiButtonType = {
+					name = "ds_SliderButton"	
+					quadTextureSprite = "yearslider_slider"
+					tooltip = ""
+					tooltipText =""	
+					delayedTooltipText = ""
+					position = { x=0 y =0}
+				}
+	
+				guiButtonType = {
+					name = "ds_TrackButton"
+					quadTextureSprite = "techslider_background"
+					position = { x=0 y =20}	
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""	
+	
+				}	
+	
+				guiButtonType = {
+					parent = "ds_SliderButton"
+					name = "ds_upButton"
+					quadTextureSprite = "techslider_leftbutton"
+					position = { x=0 y =0}	
+				}
+				
+				guiButtonType = {
+					parent = "ds_SliderButton"
+					name = "ds_downButton"
+					quadTextureSprite = "techslider_rightbutton"
+					position = { x=0 y =120}	
+				}
+		}
+	
+	}
+
+#################################################################################
+# Infantry Tech Tree
+#################################################################################	
+	
+	# Activation
+	
+	positionType = {
+		name = "mountain_infantry_position"
+		position = { x = 360 y =80 }
+	}
+	positionType = {
+		name = "marine_infantry_position"
+		position = { x = 570 y =80 }
+	}
+	positionType = {
+		name = "paratrooper_infantry_position"
+		position = { x = 780 y =80 }
+	}
+	positionType = {
+		name = "cavalry_activation_position"
+		position = { x = 360 y =120 }
+	}
+	positionType = {
+		name = "mortorised_infantry_position"
+		position = { x = 570 y =120 }
+	}
+	positionType = {
+		name = "mechanised_infantry_position"
+		position = { x = 780 y =120 }
+	}
+	positionType = {
+		name = "infantry_activation_position"
+		position = { x = 400 y =160 }
+	}
+	positionType = {
+		name = "engineer_brigade_activation_position"
+		position = { x = 740 y =160 }
+	}
+
+	# Non-specialized equipment (ie. Weapons)
+	
+	positionType = {
+		name = "smallarms_technology_position"
+		position = { x = 370 y =200 }
+	}
+	positionType = {
+		name = "support_weapon_technology_position"
+		position = { x = 370 y =235 }
+	}
+	positionType = {
+		name = "light_artillery_technology_position"
+		position = { x = 570 y =200 }
+	}
+	positionType = {
+		name = "light_anti_tank_technology_position"
+		position = { x = 570 y =235 }
+	}
+	positionType = {
+		name = "engineer_bridging_equipment_position"
+		position = { x = 770 y =200 }
+	}
+	positionType = {
+		name = "engineer_assault_equipment_position"
+		position = { x = 770 y =235 }
+	}
+	
+	# Misc.
+	positionType = {
+		name = "night_goggles_position"
+		position = { x = 355 y =280 }
+	}
+	
+	# Horse-Towed Support Brigade
+	positionType = {
+		name = "horse_towed_support_brigade_tech_position"
+		position = { x = 570 y =275 }
+	}
+	
+	positionType = {
+		name = "artillery_activation_position"
+		position = { x = 780 y =275 }
+	}
+	positionType = {
+		name = "artillery_position"
+		position = { x = 790 y =310 }
+	}
+	positionType = {
+		name = "anti_tank_activation_position"
+		position = { x = 785 y =345 }
+	}
+	positionType = {
+		name = "anti_tank_position"
+		position = { x = 795 y =380 }
+	}
+	positionType = {
+		name = "anti_air_activation_position"
+		position = { x = 790 y =415 }
+	}
+	positionType = {
+		name = "anti_air_guns_position"
+		position = { x = 800 y =450 }
+	}
+	positionType = {
+		name = "rocket_artillery_activation_position"
+		position = { x = 795 y =485 }
+	}
+	positionType = {
+		name = "rocket_artillery_position"
+		position = { x = 805 y =520 }
+	}
+	
+	# Generic Specialized Equipment
+	
+	positionType = {
+		name = "desert_warfare_equipment_position"
+		position = { x = 330 y =425 }
+	}
+	positionType = {
+		name = "artic_warfare_equipment_position"
+		position = { x = 330 y =460 }
+	}
+	positionType = {
+		name = "jungle_warfare_equipment_position"
+		position = { x = 330 y =495 }
+	}
+	
+	# Special Forces Equipment
+	
+	positionType = {
+		name = "amphibious_warfare_equipment_position"
+		position = { x = 550 y =425 }
+	}
+	positionType = {
+		name = "airborne_warfare_equipment_position"
+		position = { x = 550 y =460 }
+	}
+	positionType = {
+		name = "mountain_warfare_equipment_position"
+		position = { x = 550 y =495 }
+	}
+	
+	positionType = {
+		name = "light_smallarms_technology_position"
+		position = { x = 340 y =330 }
+	}
+	positionType = {
+		name = "light_support_weapon_technology_position"
+		position = { x = 340 y =365 }
+	}
+	positionType = {
+		name = "mountain_gun_technology_position"
+		position = { x = 540 y =330 }
+	}
+	positionType = {
+		name = "weapon_salt_water_proofing_position"
+		position = { x = 540 y =365 }
+	}
+	
+#################################################################################
+# Armoury Tech Tree
+#################################################################################	
+	
+	
+	
+	# INFANTRY SUPPORT TANK!
+	positionType = {
+		name = "super_heavy_tank_brigade_position"
+		position = { x = 320 y =75 }
+	}
+	positionType = {
+		name = "super_heavy_tank_gun_position"
+		position = { x = 370 y =111 }
+	}
+	positionType = {
+		name = "super_heavy_tank_engine_position"
+		position = { x = 572 y =111 }
+	}
+	positionType = {
+		name = "super_heavy_tank_armour_position"
+		position = { x = 370 y =146 }
+	}
+	positionType = {
+		name = "super_heavy_tank_reliability_position"
+		position = { x = 572 y =146 }
+	}
+	
+	
+	positionType = {
+		name = "lighttank_brigade_position"
+		position = { x = 320 y =200 }
+	}
+	positionType = {
+		name = "lighttank_gun_position"
+		position = { x = 370 y =236 }
+	}
+	positionType = {
+		name = "lighttank_engine_position"
+		position = { x = 572 y =236 }
+	}
+	positionType = {
+		name = "lighttank_armour_position"
+		position = { x = 370 y =271 }
+	}
+	positionType = {
+		name = "lighttank_reliability_position"
+		position = { x = 572 y =271 }
+	}
+	
+	
+	positionType = {
+		name = "tank_brigade_position"
+		position = { x = 320 y =325 }
+	}
+	positionType = {
+		name = "tank_gun_position"
+		position = { x = 370 y =361 }
+	}
+	positionType = {
+		name = "tank_engine_position"
+		position = { x = 572 y =361 }
+	}
+	positionType = {
+		name = "tank_armour_position"
+		position = { x = 370 y =396 }
+	}
+	positionType = {
+		name = "tank_reliability_position"
+		position = { x = 572 y =396 }
+	}
+	
+	
+	positionType = {
+		name = "heavy_tank_brigade_position"
+		position = { x = 320 y =450 }
+	}
+	positionType = {
+		name = "heavy_tank_gun_position"
+		position = { x = 370 y =486 }
+	}
+	positionType = {
+		name = "heavy_tank_engine_position"
+		position = { x = 572 y =486 }
+	}
+	positionType = {
+		name = "heavy_tank_armour_position"
+		position = { x = 370 y =521 }
+	}
+	positionType = {
+		name = "heavy_tank_reliability_position"
+		position = { x = 572 y =521 }
+	}
+	
+
+	positionType = {
+		name = "sloped_armor_position"
+		position = { x = 577 y =75 }
+	}
+	positionType = {
+		name = "truck_engine_position"
+		position = { x = 577 y =200 }
+	}
+	positionType = {
+		name = "truck_towed_support_brigade_tech_position"
+		position = { x = 577 y =325 }
+	}
+	positionType = {
+		name = "self_propelled_support_brigade_tech_position"
+		position = { x = 577 y =450 }
+	}
+	
+	
+	positionType = {
+		name = "armored_car_activation_position"
+		position = { x = 800 y =80 }
+	}
+	positionType = {
+		name = "armored_car_position"
+		position = { x = 810 y =115 }
+	}
+	
+	positionType = {
+		name = "sp_anti_air_activation_position"
+		position = { x = 800 y =180 }
+	}
+	positionType = {
+		name = "sp_anti_air_position"
+		position = { x = 810 y =215 }
+	}
+	positionType = {
+		name = "sp_rocket_artillery_activation_position"
+		position = { x = 800 y =250 }
+	}
+	positionType = {
+		name = "sp_rocket_artillery_position"
+		position = { x = 810 y =285 }
+	}
+	
+	positionType = {
+		name = "sp_artillery_activation_position"
+		position = { x = 800 y =320 }
+	}
+	positionType = {
+		name = "sp_artillery_position"
+		position = { x = 810 y =355 }
+	}
+	positionType = {
+		name = "tank_destroyer_activation_position"
+		position = { x = 800 y =390 }
+	}
+	positionType = {
+		name = "tank_destroyer_position"
+		position = { x = 810 y =425 }
+	}
+	
+#################################################################################
+# Screen Tech Tree
+#################################################################################
+
+	# Destroyers
+	positionType = {
+		name = "destroyer_technology_position"
+		position = { x = 320 y =100 }
+	}
+	positionType = {
+		name = "destroyer_engine_position"
+		position = { x = 330 y =160 }
+	}
+	positionType = {
+		name = "smallwarship_asw_position"
+		position = { x = 330 y =200 }
+	}
+	positionType = {
+		name = "multi_purpose_guns_position"
+		position = { x = 330 y =240 }
+	}
+	positionType = {
+		name = "light_antiaircraft_position"
+		position = { x = 330 y =280 }
+	}
+	
+	# Generic detection stuff
+	positionType = {
+		name = "surface_detection_system_position"
+		position = { x = 330 y =400 }
+	}
+
+	# Cruisers
+	positionType = {
+		name = "lightcruiser_technology_position"
+		position = { x = 770 y =450 }
+	}
+	positionType = {
+		name = "lightcruiser_armament_position"
+		position = { x = 770 y =410 }
+	}
+	positionType = {
+		name = "heavycruiser_technology_position"
+		position = { x = 570 y =490 }
+	}
+	positionType = {
+		name = "heavycruiser_armament_position"
+		position = { x = 370 y =490 }
+	}
+	positionType = {
+		name = "cruiser_armor_position"
+		position = { x = 770 y =490 }
+	}
+	positionType = {
+		name = "cruiser_engine_position"
+		position = { x = 570 y =450 }
+	}
+	
+	# Submarines
+	positionType = {
+		name = "submarine_technology_position"
+		position = { x = 600 y =130 }
+	}
+	positionType = {
+		name = "submarine_engine_position"
+		position = { x = 610 y =190 }
+	}
+	positionType = {
+		name = "torpedoes_position"
+		position = { x = 610 y =230 }
+	}
+	positionType = {
+		name = "submarine_sonar_position"
+		position = { x = 610 y =270 }
+	}
+	positionType = {
+		name = "submarine_airwarningequipment_position"
+		position = { x = 610 y =310 }
+	}
+	
+	positionType = {
+		name = "modern_submarine_position"
+		position = { x = 830 y =245 }
+	}
+
+#################################################################################
+# Capital Tech Tree
+#################################################################################	
+	
+	positionType = {
+		name = "const_material_position"
+		position = { x = 580 y =460 }
+	}
+	
+	positionType = {
+		name = "battleship_technology_position"
+		position = { x = 580 y =120 }
+	}
+	positionType = {
+		name = "battlecruiser_technology_position"
+		position = { x = 310 y =240 }
+	}
+	
+	positionType = {
+		name = "capital_ship_armor_position"
+		position = { x = 580 y =200 }
+	}
+	positionType = {
+		name = "capital_ship_engine_position"
+		position = { x = 580 y =240 }
+	}
+	positionType = {
+		name = "capitalship_armament_position"
+		position = { x = 580 y =280 }
+	}
+	
+	positionType = {
+		name = "escort_carrier_technology_position"
+		position = { x = 830 y =210 }
+	}
+	positionType = {
+		name = "carrier_technology_position"
+		position = { x = 830 y =250 }
+	}
+	positionType = {
+		name = "deck_armor_position"
+		position = { x = 830 y =290 }
+	}
+	positionType = {
+		name = "cag_development_position"
+		position = { x = 830 y =330 }
+	}
+	
+	positionType = {
+		name = "cag_air_focus_position"
+		position = { x = 840 y =370 }
+	}
+	positionType = {
+		name = "cag_land_focus_position"
+		position = { x = 840 y =410 }
+	}
+	positionType = {
+		name = "cag_naval_focus_position"
+		position = { x = 840 y =450 }
+	}
+	
+	positionType = {
+		name = "fast_battleship_position"
+		position = { x = 330 y =400 }
+	}
+	positionType = {
+		name = "coastal_battleship_position"
+		position = { x = 330 y =440 }
+	}
+	
+	
+
+
+#################################################################################
+# Bomber Tech Tree
+#################################################################################	
+
+	# Basic Twin Engine Aircraft Design
+	
+	positionType = {
+		name = "twin_engine_aircraft_design_position"
+		position = { x = 320 y =120 }
+	}
+	
+	# Twin Engine Components
+	
+	positionType = {
+		name = "twin_engine_airframe_position"
+		position = { x = 320 y =180 }
+	}
+	positionType = {
+		name = "medium_fueltank_position"
+		position = { x = 320 y =220 }
+	}
+	positionType = {
+		name = "twin_engine_aircraft_armament_position"
+		position = { x = 320 y =260 }
+	}
+	positionType = {
+		name = "medium_bomb_position"
+		position = { x = 320 y =300 }
+	}
+	
+	# Four Engine Components
+	
+	positionType = {
+		name = "four_engine_airframe_position"
+		position = { x = 580 y =180 }
+	}
+	positionType = {
+		name = "large_fueltank_position"
+		position = { x = 580 y =220 }
+	}
+	positionType = {
+		name = "cargo_hold_position"
+		position = { x = 580 y =260 }
+	}
+	
+	# Heavy Bomber
+	
+	positionType = {
+		name = "basic_strategic_bomber_position"
+		position = { x = 840 y =180 }
+	}
+	positionType = {
+		name = "strategic_bomber_armament_position"
+		position = { x = 840 y =220 }
+	}
+	positionType = {
+		name = "large_bomb_position"
+		position = { x = 840 y =260 }
+	}
+	
+	# Specialised Designs
+	
+	positionType = {
+		name = "nav_development_position"
+		position = { x = 320 y =360 }
+	}
+	positionType = {
+		name = "air_launched_torpedo_position"
+		position = { x = 320 y =400 }
+	}
+	
+	# Radar
+	
+	positionType = {
+		name = "medium_airsearch_radar_position"
+		position = { x = 610 y =410 }
+	}
+	positionType = {
+		name = "medium_navagation_radar_position"
+		position = { x = 610 y =445 }
+	}
+	
+	
+	
+	positionType = {
+		name = "large_airsearch_radar_position"
+		position = { x = 810 y =410 }
+	}
+	positionType = {
+		name = "large_navagation_radar_position"
+		position = { x = 810 y =445 }
+	}
+	
+	
+	
+#################################################################################
+# Fighter Tech Tree
+#################################################################################	
+
+	# Basic Single Engine Aircraft Design
+	
+	positionType = {
+		name = "single_engine_aircraft_design_position"
+		position = { x = 320 y =120 }
+	}
+	
+	# Single Engine Components
+	
+	positionType = {
+		name = "aeroengine_position"
+		position = { x = 320 y =180 }
+	}
+	positionType = {
+		name = "single_engine_aircraft_armament_position"
+		position = { x = 320 y =220 }
+	}
+	positionType = {
+		name = "single_engine_airframe_position"
+		position = { x = 320 y =260 }
+	}
+	positionType = {
+		name = "small_fueltank_position"
+		position = { x = 320 y =300 }
+	}
+	positionType = {
+		name = "small_bomb_position"
+		position = { x = 320 y =340 }
+	}
+	
+	# Advanced Equipment
+	
+	positionType = {
+		name = "advanced_aircraft_design_position"
+		position = { x = 320 y =440 }
+	}
+	positionType = {
+		name = "small_airsearch_radar_position"
+		position = { x = 580 y =440 }
+	}
+	positionType = {
+		name = "small_navagation_radar_position"
+		position = { x = 580 y =475 }
+	}
+	
+	# Derivated Designs and Equipment
+	
+	# Rocket and Jet from Engine
+	positionType = {
+		name = "rocket_interceptor_tech_position"
+		position = { x = 580 y =160 }
+	}
+	positionType = {
+		name = "jet_engine_position"
+		position = { x = 580 y =200 }
+	}
+	# Heavy Fighter from Airframe
+	positionType = {
+		name = "multi_role_fighter_development_position"
+		position = { x = 580 y =260 }
+	}
+	# Escort Fighter from Heavy Fighter
+	positionType = {
+		name = "escort_fighter_development_position"
+		position = { x = 840 y =260 }
+	}
+	positionType = {
+		name = "escort_fighter_armament_position"
+		position = { x = 840 y =220 }
+	}
+	# Light Bomber from Light Bomb
+	positionType = {
+		name = "cas_development_position"
+		position = { x = 580 y =340 }
+	}
+	# Drop Tanks from Fuel Tanks
+	positionType = {
+		name = "drop_tanks_position"
+		position = { x = 580 y =300 }
+	}
+	positionType = {
+		name = "escort_fighter_drop_tanks_position"
+		position = { x = 840 y =300 }
+	}
+	
+#################################################################################
+# Industry Tech Tree
+#################################################################################	
+	
+	####################
+	# Mechanical stuff #
+	####################
+
+	# Resource-techs
+	
+	positionType = {
+		name = "synthetic_oil_development_position"
+		position = { x = 320 y =100 }
+	}
+	positionType = {
+		name = "oil_to_coal_conversion_position"
+		position = { x = 320 y =135 }
+	}
+	positionType = {
+		name = "oil_refinning_position"
+		position = { x = 320 y =170 }
+	}
+	positionType = {
+		name = "steel_production_position"
+		position = { x = 320 y =205 }
+	}
+	positionType = {
+		name = "raremetal_refinning_techniques_position"
+		position = { x = 320 y =240 }
+	}
+	positionType = {
+		name = "coal_processing_technologies_position"
+		position = { x = 320 y =275 }
+	}
+	
+	# Industrial techs
+	
+	positionType = {
+		name = "construction_engineering_position"
+		position = { x = 580 y =100 }
+	}
+	positionType = {
+		name = "advanced_construction_engineering_position"
+		position = { x = 580 y =135 }
+	}
+	positionType = {
+		name = "industral_production_position"
+		position = { x = 580 y =180 }
+	}
+	positionType = {
+		name = "industral_efficiency_position"
+		position = { x = 580 y =215 }
+	}
+	
+	positionType = {
+		name = "civil_nuclear_research_position"
+		position = { x = 580 y =270 }
+	}
+	
+	positionType = {
+		name = "prefab_ports_position"
+		position = { x = 580 y =390 }
+	}
+	
+	# Miscelaneous techs
+	
+	positionType = {
+		name = "combat_medicine_position"
+		position = { x = 840 y =100 }
+	}
+	positionType = {
+		name = "first_aid_position"
+		position = { x = 840 y =135 }
+	}
+	positionType = {
+		name = "agriculture_position"
+		position = { x = 840 y =170 }
+	}
+	positionType = {
+		name = "education_position"
+		position = { x = 840 y =205 }
+	}
+	positionType = {
+		name = "supply_production_position"
+		position = { x = 840 y =240 }
+	}
+	positionType = {
+		name = "heavy_aa_guns_position"
+		position = { x = 840 y =275 }
+	}
+	
+	####################
+	# Electronic stuff #
+	####################
+	
+	positionType = {
+		name = "electronic_mechanical_egineering_position"
+		position = { x = 580 y =340 }
+	}
+	
+	# Radio/Radar
+	
+	positionType = {
+		name = "radio_technology_position"
+		position = { x = 340 y =370 }
+	}
+	
+	positionType = {
+		name = "radio_detection_equipment_position"
+		position = { x = 340 y =415 }
+	}
+	positionType = {
+		name = "radio_position"
+		position = { x = 340 y =450 }
+	}
+	positionType = {
+		name = "radar_position"
+		position = { x = 340 y =485 }
+	}
+	
+	# Computers
+	
+	positionType = {
+		name = "census_tabulation_machine_position"
+		position = { x = 820 y =370 }
+	}
+	
+	positionType = {
+		name = "electronic_computing_machine_position"
+		position = { x = 610 y =477 }
+	}
+	
+	positionType = {
+		name = "mechnical_computing_machine_position"
+		position = { x = 820 y =415 }
+	}
+	positionType = {
+		name = "decryption_machine_position"
+		position = { x = 820 y =460 }
+	}
+	positionType = {
+		name = "encryption_machine_position"
+		position = { x = 820 y =495 }
+	}
+
+
+#################################################################################
+# Secret Weapons
+#################################################################################	
+
+	positionType = {
+		name = "strategic_rocket_development_position"
+		position = { x = 320 y =160 }
+	}
+	
+	
+	positionType = {
+		name = "flyingbomb_development_position"
+		position = { x = 330 y =220 }
+	}
+	
+	
+	positionType = {
+		name = "flyingrocket_development_position"
+		position = { x = 340 y =280 }
+	}
+	
+	
+	positionType = {
+		name = "strategicrocket_engine_position"
+		position = { x = 350 y =350 }
+	}
+	positionType = {
+		name = "strategicrocket_warhead_position"
+		position = { x = 350 y =390 }
+	}
+	positionType = {
+		name = "strategicrocket_structure_position"
+		position = { x = 350 y =430 }
+	}
+	
+	
+	positionType = {
+		name = "sam_position"
+		position = { x = 590 y =370 }
+	}
+	positionType = {
+		name = "aam_position"
+		position = { x = 590 y =410 }
+	}
+	positionType = {
+		name = "asm_position"
+		position = { x = 590 y =450 }
+	}
+	
+	
+	positionType = {
+		name = "radar_guided_missile_position"
+		position = { x = 590 y =120 }
+	}
+	
+	
+	positionType = {
+		name = "radar_guided_bomb_position"
+		position = { x = 590 y =170 }
+	}
+	
+	
+	positionType = {
+		name = "electric_powered_torpedo_position"
+		position = { x = 590 y =220 }
+	}
+	
+	
+	
+	positionType = {
+		name = "proximity_fuse_position"
+		position = { x = 590 y =265 }
+	}
+	
+	positionType = {
+		name = "rocket_launcher_position"
+		position = { x = 590 y =315 }
+	}
+	
+	positionType = {
+		name = "helecopters_position"
+		position = { x = 830 y =200 }
+	}
+	
+	
+	positionType = {
+		name = "medical_evacuation_position"
+		position = { x = 840 y =260 }
+	}
+	positionType = {
+		name = "pilot_rescue_position"
+		position = { x = 840 y =300 }
+	}
+	
+	# Jet-Planes
+	
+	
+	positionType = {
+		name = "jet_interceptor_development_position"
+		position = { x = 835 y =350 }
+	}
+	positionType = {
+		name = "jet_bomber_development_position"
+		position = { x = 835 y =385 }
+	}
+	positionType = {
+		name = "jet_multi_role_development_position"
+		position = { x = 835 y =420 }
+	}
+	
+	
+	
+	
+	positionType = {
+		name = "da_bomb_position"
+		position = { x = 820 y =490 }
+	}
+	
+
+#################################################################################
+# Theories
+#################################################################################	
+
+	# Naval theories
+
+	positionType = {
+		name = "naval_engineering_research_position"
+		position = { x = 330 y =100 }
+	}
+	positionType = {
+		name = "submarine_engineering_research_position"
+		position = { x = 330 y =140 }
+	}
+	
+	# Aeronautic theories
+	
+	positionType = {
+		name = "aeronautic_engineering_research_position"
+		position = { x = 830 y =100 }
+	}
+	positionType = {
+		name = "jetengine_research_position"
+		position = { x = 830 y =140 }
+	}
+	
+	# Army theories
+	
+	positionType = {
+		name = "infantry_research_position"
+		position = { x = 580 y =140 }
+	}
+	positionType = {
+		name = "artillery_research_position"
+		position = { x = 580 y =180 }
+	}
+	positionType = {
+		name = "mobile_research_position"
+		position = { x = 580 y =220 }
+	}
+	positionType = {
+		name = "automotive_research_position"
+		position = { x = 580 y =260 }
+	}
+	
+	# Doctrine Theory
+	
+	positionType = {
+		name = "grand_battleplan_research_position"
+		position = { x = 580 y =340 }
+	}
+	positionType = {
+		name = "spearhead_research_position"
+		position = { x = 580 y =380 }
+	}
+	positionType = {
+		name = "superior_firepower_research_position"
+		position = { x = 580 y =420 }
+	}
+	positionType = {
+		name = "human_wave_research_position"
+		position = { x = 580 y =460 }
+	}
+
+	# Supply and repair stuff
+
+	positionType = {
+		name = "supply_transportation_position"
+		position = { x = 330 y =220 }
+	}
+	positionType = {
+		name = "supply_organisation_position"
+		position = { x = 330 y =260 }
+	}
+	positionType = {
+		name = "civil_defence_position"
+		position = { x = 330 y =300 }
+	}
+	
+	# Industrial theories
+	
+	positionType = {
+		name = "mechanicalengineering_research_position"
+		position = { x = 830 y =220 }
+	}
+	positionType = {
+		name = "chemical_engineering_research_position"
+		position = { x = 830 y =260 }
+	}
+	positionType = {
+		name = "electornicegineering_research_position"
+		position = { x = 830 y =300 }
+	}
+	
+	# Rocket theories
+
+	positionType = {
+		name = "rocket_science_research_position"
+		position = { x = 355 y =385 }
+	}
+	positionType = {
+		name = "rocket_tests_position"
+		position = { x = 355 y =425 }
+	}
+	positionType = {
+		name = "rocket_engine_position"
+		position = { x = 355 y =465 }
+	}
+	positionType = {
+		name = "theorical_jet_engine_position"
+		position = { x = 355 y =505 }
+	}
+	
+	# Nuclear theories
+
+	positionType = {
+		name = "nuclear_physics_research_position"
+		position = { x = 805 y =385 }
+	}
+	positionType = {
+		name = "atomic_research_position"
+		position = { x = 805 y =425 }
+	}
+	positionType = {
+		name = "nuclear_research_position"
+		position = { x = 805 y =465 }
+	}
+	positionType = {
+		name = "isotope_seperation_position"
+		position = { x = 805 y =505 }
+	}
+
+#################################################################################
+# Land Doctrines
+#################################################################################	
+
+	# Training
+	
+	positionType = {
+		name = "security_training_position"
+		position = { x = 370 y = 80 }
+	}
+	positionType = {
+		name = "infantry_training_position"
+		position = { x = 370 y =115 }
+	}
+	positionType = {
+		name = "artillery_training_position"
+		position = { x = 570 y = 80 }
+	}
+	positionType = {
+		name = "tank_crew_training_position"
+		position = { x = 570 y =115 }
+	}
+	positionType = {
+		name = "special_forces_training_position"
+		position = { x = 770 y = 80 }
+	}
+	positionType = {
+		name = "officer_training_position"
+		position = { x = 770 y =115 }
+	}
+	
+	# Infantry Doctrine
+	
+		# Firepower Focus
+	
+	positionType = {
+		name = "firepower_1930_position"
+		position = { x = 340 y =180 }
+	}
+	positionType = {
+		name = "firepower_1937_position"
+		position = { x = 340 y =215 }
+	}
+	positionType = {
+		name = "firepower_1940_position"
+		position = { x = 340 y =250 }
+	}
+	positionType = {
+		name = "firepower_1943_position"
+		position = { x = 340 y =285 }
+	}
+	positionType = {
+		name = "firepower_1946_position"
+		position = { x = 340 y =320 }
+	}
+	
+		# Shock Focus
+	
+	positionType = {
+		name = "shock_1930_position"
+		position = { x = 570 y =180 }
+	}
+	positionType = {
+		name = "shock_1937_position"
+		position = { x = 570 y =215 }
+	}
+	positionType = {
+		name = "shock_1940_position"
+		position = { x = 570 y =250 }
+	}
+	positionType = {
+		name = "shock_1943_position"
+		position = { x = 570 y =285 }
+	}
+	positionType = {
+		name = "shock_1946_position"
+		position = { x = 570 y =320 }
+	}
+	
+		# Infilitration Focus
+	
+	positionType = {
+		name = "infilitration_1930_position"
+		position = { x = 800 y =180 }
+	}
+	positionType = {
+		name = "infilitration_1937_position"
+		position = { x = 800 y =215 }
+	}
+	positionType = {
+		name = "infilitration_1940_position"
+		position = { x = 800 y =250 }
+	}
+	positionType = {
+		name = "infilitration_1943_position"
+		position = { x = 800 y =285 }
+	}
+	positionType = {
+		name = "infilitration_1946_position"
+		position = { x = 800 y =320 }
+	}
+	
+	# Tank Doctrine
+	
+		# Infantry Support Role
+	
+	positionType = {
+		name = "infantry_support_role_1930_position"
+		position = { x = 340 y =380 }
+	}
+	positionType = {
+		name = "infantry_support_role_1937_position"
+		position = { x = 340 y =415 }
+	}
+	positionType = {
+		name = "infantry_support_role_1940_position"
+		position = { x = 340 y =450 }
+	}
+	positionType = {
+		name = "infantry_support_role_1943_position"
+		position = { x = 340 y =485 }
+	}
+	positionType = {
+		name = "infantry_support_role_1946_position"
+		position = { x = 340 y =520 }
+	}
+	
+		# Armoured Schwerpunkt
+	
+	positionType = {
+		name = "schwerpunkt_1930_position"
+		position = { x = 570 y =380 }
+	}
+	positionType = {
+		name = "schwerpunkt_1937_position"
+		position = { x = 570 y =415 }
+	}
+	positionType = {
+		name = "schwerpunkt_1940_position"
+		position = { x = 570 y =450 }
+	}
+	positionType = {
+		name = "schwerpunkt_1943_position"
+		position = { x = 570 y =485 }
+	}
+	positionType = {
+		name = "schwerpunkt_1946_position"
+		position = { x = 570 y =520 }
+	}
+	
+		# Combined Arms
+	
+	positionType = {
+		name = "combined_arms_1930_position"
+		position = { x = 800 y =380 }
+	}
+	positionType = {
+		name = "combined_arms_1937_position"
+		position = { x = 800 y =415 }
+	}
+	positionType = {
+		name = "combined_arms_1940_position"
+		position = { x = 800 y =450 }
+	}
+	positionType = {
+		name = "combined_arms_1943_position"
+		position = { x = 800 y =485 }
+	}
+	positionType = {
+		name = "combined_arms_1946_position"
+		position = { x = 800 y =520 }
+	}
+	
+
+#################################################################################
+# Operational Doctrines
+#################################################################################	
+
+	# Great War Experience
+
+	positionType = {
+		name = "great_war_experience_position"
+		position = { x = 590 y = 80 }
+	}
+	
+	# Grand Battleplan
+	
+	positionType = {
+		name = "grand_battle_plan_1930_position"
+		position = { x = 425 y =140 }
+	}
+	positionType = {
+		name = "grand_battle_plan_1937_position"
+		position = { x = 425 y =175 }
+	}
+	positionType = {
+		name = "grand_battle_plan_1940_position"
+		position = { x = 425 y =210 }
+	}
+	positionType = {
+		name = "grand_battle_plan_1943_position"
+		position = { x = 425 y =245 }
+	}
+	positionType = {
+		name = "grand_battle_plan_1946_position"
+		position = { x = 425 y =280 }
+	}
+	
+	# Superior Firepower
+	
+	positionType = {
+		name = "superior_firepower_1930_position"
+		position = { x = 765 y =140 }
+	}
+	positionType = {
+		name = "superior_firepower_1937_position"
+		position = { x = 765 y =175 }
+	}
+	positionType = {
+		name = "superior_firepower_1940_position"
+		position = { x = 765 y =210 }
+	}
+	positionType = {
+		name = "superior_firepower_1943_position"
+		position = { x = 765 y =245 }
+	}
+	positionType = {
+		name = "superior_firepower_1946_position"
+		position = { x = 765 y =280 }
+	}
+	
+	# Blitzkrieg
+	
+	positionType = {
+		name = "blitzkrieg_1930_position"
+		position = { x = 370 y =345 }
+	}
+	positionType = {
+		name = "blitzkrieg_1937_position"
+		position = { x = 370 y =380 }
+	}
+	positionType = {
+		name = "blitzkrieg_1940_position"
+		position = { x = 370 y =415 }
+	}
+	positionType = {
+		name = "blitzkrieg_1943_position"
+		position = { x = 370 y =450 }
+	}
+	positionType = {
+		name = "blitzkrieg_1946_position"
+		position = { x = 370 y =485 }
+	}
+	
+	# Human Wave
+	
+	positionType = {
+		name = "human_wave_1930_position"
+		position = { x = 700 y =345 }
+	}
+	positionType = {
+		name = "human_wave_1937_position"
+		position = { x = 700 y =380 }
+	}
+	positionType = {
+		name = "human_wave_1940_position"
+		position = { x = 700 y =415 }
+	}
+	positionType = {
+		name = "human_wave_1943_position"
+		position = { x = 590 y =450 }
+	}
+	positionType = {
+		name = "human_wave_1946_position"
+		position = { x = 590 y =485 }
+	}
+	
+	# Mechanized Wave
+	
+	positionType = {
+		name = "mechanized_wave_1942_position"
+		position = { x = 810 y =450 }
+	}
+	positionType = {
+		name = "mechanized_wave_1945_position"
+		position = { x = 810 y =485 }
+	}
+
+
+#################################################################################
+# Naval Doctrines
+#################################################################################	
+
+	# Seamen Training
+	
+	# Specialized Equipment Training
+	
+	positionType = {		# Electronic Equipment
+		name = "fire_control_system_training_position"
+		position = { x = 330 y =100 }
+	}
+	positionType = {
+		name = "radar_training_position"
+		position = { x = 330 y =140 }
+	}
+	positionType = {		# Officer training
+		name = "commander_decision_making_position"
+		position = { x = 580 y =120 }
+	}
+	positionType = {		# Logistical Studies
+		name = "base_operations_position"
+		position = { x = 820 y =140 }
+	}
+	positionType = {
+		name = "underway_repleshment_position"
+		position = { x = 820 y =100 }
+	}	
+	positionType = {
+		name = "night_equipment_training_position"
+		position = { x = 580 y =187 }
+	}
+
+	# Basic Crewmen Training
+	
+	positionType = {
+		name = "capital_ship_crew_training_position"
+		position = { x = 330 y =250 }
+	}
+	positionType = {
+		name = "submarine_crew_training_position"
+		position = { x = 580 y =250 }
+	}
+	positionType = {
+		name = "carrier_crew_training_position"
+		position = { x = 820 y =250 }
+	}
+	positionType = {
+		name = "cruiser_crew_training_position"
+		position = { x = 800 y =200 }
+	}
+	positionType = {
+		name = "destroyer_crew_training_position"
+		position = { x = 350 y =200 }
+	}
+	
+	# Sealane Control
+	
+	positionType = {
+		name = "sealane_control_position"
+		position = { x = 330 y =321 }
+	}
+	positionType = {
+		name = "battleship_taskforce_doctrine_position"
+		position = { x = 330 y =360 }
+	}
+	positionType = {
+		name = "battleline_cruiser_doctrine_position"
+		position = { x = 330 y =400 }
+	}
+	positionType = {
+		name = "carrier_escort_role_doctrine_position"
+		position = { x = 330 y =440 }
+	}
+	positionType = {
+		name = "asw_tactics_position"
+		position = { x = 330 y =480 }
+	}
+	
+	# Sealane Interdiction
+	
+	positionType = {
+		name = "sealane_interdiction_position"
+		position = { x = 580 y =321 }
+	}
+	positionType = {
+		name = "independent_battleship_operations_position"
+		position = { x = 580 y =360 }
+	}
+	positionType = {
+		name = "independent_cruiser_operations_position"
+		position = { x = 580 y =400 }
+	}
+	positionType = {
+		name = "independent_destroyer_operations_position"
+		position = { x = 580 y =440 }
+	}
+	positionType = {
+		name = "trade_interdiction_submarine_doctrine_position"
+		position = { x = 580 y =480 }
+	}
+	
+	# Force Projection
+	
+	positionType = {
+		name = "force_projection_position"
+		position = { x = 820 y =321 }
+	}
+	positionType = {
+		name = "carrier_taskforce_doctrine_position"
+		position = { x = 820 y =360 }
+	}
+	positionType = {
+		name = "cruiser_escort_doctrine_position"
+		position = { x = 820 y =400 }
+	}
+	positionType = {
+		name = "fleet_escort_destroyer_doctrine_position"
+		position = { x = 820 y =440 }
+	}
+	positionType = {
+		name = "fleet_submarine_doctrine_position"
+		position = { x = 820 y =480 }
+	}
+
+
+#################################################################################
+# Air Doctrines
+#################################################################################	
+
+	### Training techs ###
+	
+	# Pilot training
+
+	positionType = {
+		name = "fighter_pilot_training_position"
+		position = { x = 335 y =80 }
+	}
+	positionType = {
+		name = "bomber_pilot_training_position"
+		position = { x = 695 y =80 }
+	}
+	positionType = {
+		name = "cas_pilot_training_position"
+		position = { x = 475 y =116 }
+	}
+	positionType = {
+		name = "cag_pilot_training_position"
+		position = { x = 835 y =116 }
+	}
+	
+	# Ground crew training
+		
+	positionType = {
+		name = "fighter_groundcrew_training_position"
+		position = { x = 335 y =155 }
+	}
+	positionType = {
+		name = "bomber_groundcrew_training_position"
+		position = { x = 695 y =155 }
+	}
+	positionType = {
+		name = "cas_groundcrew_training_position"
+		position = { x = 475 y =191 }
+	}
+	
+	# Night training
+	
+	positionType = {
+		name = "night_mission_training_position"
+		position = { x = 835 y =191 }
+	}
+	
+	
+	# CAG Ground Crew Training is included in Carrier Crew Training in the Naval Doctrines. They are the same crew.
+	
+	### Doctrines ###
+	
+	# Army Aviation Doctrine
+	
+	positionType = {
+		name = "army_aviation_doctrine_position"
+		position = { x = 448 y =230 }
+	}
+	positionType = {
+		name = "ground_attack_tactics_position"
+		position = { x = 448 y =265 }
+	}
+	positionType = {
+		name = "forward_air_control_position"
+		position = { x = 448 y =300 }
+	}
+	positionType = {
+		name = "battlefield_interdiction_position"
+		position = { x = 448 y =335 }
+	}
+	positionType = {
+		name = "army_air_command_position"
+		position = { x = 448 y =370 }
+	}
+	
+	# Fighter Defense Doctrine
+	
+	positionType = {
+		name = "fighter_defense_doctrine_position"
+		position = { x = 722 y =230 }
+	}
+	positionType = {
+		name = "interception_tactics_position"
+		position = { x = 722 y =265 }
+	}
+	positionType = {
+		name = "bomber_targerting_focus_position"
+		position = { x = 722 y =300 }
+	}
+	positionType = {
+		name = "fighter_targerting_focus_position"
+		position = { x = 722 y =335 }
+	}
+	positionType = {
+		name = "fighter_ground_control_position"
+		position = { x = 722 y =370 }
+	}
+	
+	# Independent Airforce Doctrine
+	
+	positionType = {
+		name = "independent_airforce_doctrine_position"
+		position = { x = 335 y =415 }
+	}
+	positionType = {
+		name = "interdiction_tactics_position"
+		position = { x = 335 y =450 }
+	}
+	positionType = {
+		name = "installation_strike_tactics_position"
+		position = { x = 335 y =485 }
+	}
+	positionType = {
+		name = "tactical_air_command_position"
+		position = { x = 335 y =520 }
+	}
+	
+	# Strategic Airforce Doctrine
+	
+	positionType = {
+		name = "strategic_airforce_doctrine_position"
+		position = { x = 585 y =415 }
+	}
+	positionType = {
+		name = "airborne_assault_tactics_position"
+		position = { x = 585 y =450 }
+	}
+	positionType = {
+		name = "strategic_bombardment_tactics_position"
+		position = { x = 585 y =485 }
+	}
+	positionType = {
+		name = "strategic_air_command_position"
+		position = { x = 585 y =520 }
+	}
+	
+	# Naval Aviation Doctrine
+	
+	positionType = {
+		name = "naval_aviation_doctrine_position"
+		position = { x = 835 y =415 }
+	}	
+	positionType = {
+		name = "portstrike_tactics_position"
+		position = { x = 835 y =450 }
+	}
+	positionType = {
+		name = "navalstrike_tactics_position"
+		position = { x = 835 y =485 }
+	}
+	positionType = {
+		name = "naval_tactics_position"
+		position = { x = 835 y =520 }
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+#################################################################################
+# Categories at bottom
+#################################################################################	
+
+	positionType = {
+		name = "infantry_theory_position"
+		position = { x = 22 y =52 }
+	}
+	positionType = {
+		name = "infantry_practical_position"
+		position = { x = 82 y =52 }
+	}
+	positionType = {
+		name = "artillery_theory_position"
+		position = { x = 22 y =76 }
+	}
+	positionType = {
+		name = "artillery_practical_position"
+		position = { x = 82 y =76 }
+	}
+	positionType = {
+		name = "mobile_theory_position"
+		position = { x = 22 y =100 }
+	}
+	positionType = {
+		name = "mobile_practical_position"
+		position = { x = 82 y =100 }
+	}
+	positionType = {
+		name = "automotive_theory_position"
+		position = { x = 22 y =124 }
+	}
+	positionType = {
+		name = "armour_practical_position"
+		position = { x = 82 y =124 }
+	}
+	
+	
+	positionType = {
+		name = "naval_engineering_position"
+		position = { x = 184 y =52 }
+	}
+	positionType = {
+		name = "destroyer_practical_position"
+		position = { x = 184 y =76 }
+	}
+	positionType = {
+		name = "cruiser_practical_position"
+		position = { x = 184 y =100 }
+	}
+	positionType = {
+		name = "capitalship_practical_position"
+		position = { x = 184 y =124 }
+	}
+	positionType = {
+		name = "carrier_practical_position"
+		position = { x = 242 y =52}
+	}
+	positionType = {
+		name = "transport_practical_position"
+		position = { x = 242 y =76}
+	}
+	
+	positionType = {
+		name = "submarine_engineering_position"
+		position = { x = 242 y =100 }
+	}
+	positionType = {
+		name = "submarine_practical_position"
+		position = { x = 242 y =124 }
+	}
+	
+		
+	positionType = {
+		name = "aeronautic_engineering_position"
+		position = { x = 308 y =52 }
+	}
+	positionType = {
+		name = "single_engine_aircraft_practical_position"
+		position = { x = 308 y =76 }
+	}
+	positionType = {
+		name = "twin_engine_aircraft_practical_position"
+		position = { x = 308 y =100 }
+	}
+	positionType = {
+		name = "four_engine_aircraft_practical_position"
+		position = { x = 308 y =124 }
+	}
+	
+	
+	
+	positionType = {
+		name = "jetengine_theory_position"
+		position = { x = 368 y =70 }
+	}
+	positionType = {
+		name = "jetengine_practical_position"
+		position = { x = 368 y =94 }
+	}
+	
+	
+	
+	positionType = {
+		name = "land_doctrine_practical_position"
+		position = { x = 449 y =51 }
+	}
+	positionType = {
+		name = "spearhead_theory_position"
+		position = { x = 504 y =51 }
+	}
+	positionType = {
+		name = "superior_firepower_theory_position"
+		position = { x = 559 y =51 }
+	}
+	positionType = {
+		name = "grand_battleplan_theory_position"
+		position = { x = 614 y =51 }
+	}
+	positionType = {
+		name = "human_wave_theory_position"
+		position = { x = 669 y =51 }
+	}
+	
+	
+	
+	positionType = {
+		name = "naval_doctrine_practical_position"
+		position = { x = 449 y =88 }
+	}
+	positionType = {
+		name = "port_capacity_position"
+		position = { x = 504 y =88 }
+	}
+	positionType = {
+		name = "base_strike_doctrine_position"
+		position = { x = 559 y =88 }
+	}
+	positionType = {
+		name = "fleet_in_being_doctrine_position"
+		position = { x = 614 y =88 }
+	}
+	positionType = {
+		name = "sealane_interdiction_doctrine_position"
+		position = { x = 669 y =88 }
+	}
+	
+	
+	positionType = {
+		name = "air_doctrine_practical_position"
+		position = { x = 449 y =125 }
+	}
+	positionType = {
+		name = "fighter_focus_position"
+		position = { x = 504 y =125 }
+	}
+	positionType = {
+		name = "cas_focus_position"
+		position = { x = 559 y =125 }
+	}
+	positionType = {
+		name = "tac_focus_position"
+		position = { x = 614 y =125 }
+	}
+	positionType = {
+		name = "nav_focus_position"
+		position = { x = 669 y =125 }
+	}
+	positionType = {
+		name = "strategic_air_focus_position"
+		position = { x = 724 y =125 }
+	}
+	
+	
+	positionType = {
+		name = "mechanicalengineering_theory_position"
+		position = { x = 797 y =51 }
+	}
+	positionType = {
+		name = "chemical_engineering_position"
+		position = { x = 797 y =88 }
+	}
+	positionType = {
+		name = "construction_practical_position"
+		position = { x = 797 y =125 }
+	}
+	positionType = {
+		name = "electornicegineering_theory_position"
+		position = { x = 855 y =70 }
+	}
+	positionType = {
+		name = "electornicegineering_practical_position"
+		position = { x = 855 y =94 }
+	}
+	
+	positionType = {
+		name = "no_theory_position"
+		position = { x = 855 y = 125 }
+	}
+	
+	
+	
+	
+	positionType = {
+		name = "rocket_science_position"
+		position = { x = 923 y =49 }
+	}
+	positionType = {
+		name = "rocket_practical_position"
+		position = { x = 923 y =73 }
+	}
+	
+	
+	
+	positionType = {
+		name = "nuclear_physics_position"
+		position = { x = 923 y =101 }
+	}
+	positionType = {
+		name = "nuclear_bomb_position"
+		position = { x = 923 y =125 }
+	}
+
+	
+}
+

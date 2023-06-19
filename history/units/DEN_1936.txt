@@ -1,0 +1,96 @@
+theatre = {
+	name = "Kongelige Danske Overkommandoen"
+	location = 1482
+	regiment = { type = hq_brigade name = "Copenhagen HQ" historical_model = 0 }	
+	corps = { 
+		name = "Sjallandske Kommando"
+		location = 1482
+		regiment = { type = hq_brigade name = "Sjallandske Kommando HQ" historical_model = 0 }			
+		division = {
+			name = "1. Sjallandske Division"
+			location = 1482
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Livgarden Regiment" experience = 5 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "Gardehussar Regiment" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "1. Feltartilleri Regiment" experience = 5 historical_model = 2 }
+		}
+		division = {
+			name = "2. Sjallandske Division"
+			location = 1482
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1. Regiment" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "4. Regiment" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "5. Regiment" experience = 5 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "2. Feltartilleri Regiment" experience = 5 historical_model = 1 }
+		}	
+	}
+	corps = { 
+		name = "Jylland Kommando"
+		location = 1256
+		regiment = { type = hq_brigade name = "Jylland Kommando HQ" historical_model = 0 }	
+		division = {
+			name = "1. Jylland Division"
+			location = 1256
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "2. Regiment" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "3. Regiment" experience = 5 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "3. Feltartilleri Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = engineer_brigade name = "1. Regiment" experience = 5 historical_model = 1 }			
+		}
+		division = {
+			name = "2. Jylland Division"
+			location = 1256
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "6. Regiment" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "7. Regiment" experience = 5 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "Jydske Dragoon Regiment" experience = 5 historical_model = 3 }
+			regiment = { type = self_propelled_support_brigade name = "1. Spejder Eskadrille" experience = 5 historical_model = 3 }			
+		}
+	}	
+	navy = {
+		name = "Den Danske Flåde"
+		base = 1482
+		location = 1482
+		ship = { type = heavy_cruiser name = "HDMS Niels Juel" experience = 5 historical_model = 1 pride = yes }
+		ship = { type = heavy_cruiser name = "HDMS Peder Skram" experience = 5 historical_model = 0 }
+		ship = { type = submarine name = "1. Ubåds Flotille" experience = 5 historical_model = 0 }
+		ship = { type = submarine name = "2. Ubåds Flotille" experience = 5 historical_model = 1 }
+		ship = { type = submarine name = "3. Ubåds Flotille" experience = 5 historical_model = 3 }
+		ship = { type = transport_ship name = "Flådens 1.Troppetransport" historical_model = 0 }
+	}
+	air = {
+		name = "Flyvevabnet"
+		base = 1482
+		location = 1482
+		wing = { type = interceptor name = "1. Jagerafdeling" experience = 5 historical_model = 0 }
+		wing = { type = cas name = "1. Dykbombe Afdeling" experience = 5 historical_model = 0 }		
+	}	
+}
+convoy_construction=
+{
+	country = DEN
+	id=
+	{
+		id=15230
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = DEN
+	id=
+	{
+		id=15231
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

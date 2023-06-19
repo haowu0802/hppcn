@@ -1,0 +1,152 @@
+theatre = {
+	name = "Ethiopian Imperial Command"
+	location = 9943
+	regiment = { type = hq_brigade name = "Adis Abeba HQ" historical_model = 0 }
+	armygroup = {
+		name = "Imperial Army"
+		location = 9943
+		regiment = { type = hq_brigade name = "Imperial Army HQ" historical_model = 0 }
+		division= {
+			name = "Imperial Bodyguard"
+			location = 9943
+			regiment = { type = infantry_brigade name = "1st Imperial Guard Regiment" experience = 6 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "2nd Imperial Guard Regiment" experience = 6 historical_model = 1 }
+			regiment = { type = militia_brigade name = "Cadet School Regiment" experience = 6 historical_model = 1 }
+		}
+		army = {
+			name = "Northern Front"
+			location = 9846
+			regiment = { type = hq_brigade name = "Northern Front HQ" historical_model = 0 }
+			corps = {
+				name = "Gojjam Provincial Armed Forces"
+				location = 9845
+				regiment = { type = hq_brigade name = "Gojjam Provincial Armed Forces HQ" historical_model = 0 }			
+				division= {
+					name = "1st Gojjam Levies"
+					location = 9845
+					regiment = { type = militia_brigade name = "1st Gojjam Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "2nd Gojjam Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "3rd Gojjam Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "4th Gojjam Regiment" experience = 3 historical_model = 0 }			
+				}
+				division= {
+					name = "2nd Gojjam Levies"
+					location = 9845
+					regiment = { type = militia_brigade name = "5th Gojjam Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "6th Gojjam Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "7th Gojjam Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "8th Gojjam Regiment" experience = 3 historical_model = 0 }			
+				}
+			}	
+			corps = {
+				name = "Wolqayt, Semien and Welega-Ardjo Provincial Armed Forces"
+				location = 9845
+				regiment = { type = hq_brigade name = "Wolqayt, Semien and Welega-Ardjo Provincial Armed Forces HQ" historical_model = 0 }					
+				division= {
+					name = "Wolqayt and Semien Sefari"
+					location = 9845
+					regiment = { type = bergsjaeger_brigade name = "1st Wolqayt Regiment" experience = 3 historical_model = 2 }
+					regiment = { type = bergsjaeger_brigade name = "2nd Wolqayt Regiment" experience = 3 historical_model = 2 }
+					regiment = { type = bergsjaeger_brigade name = "1st Semien Regiment" experience = 3 historical_model = 2 }
+				}					
+				division= {
+					name = "Welega-Ardjo Sefari"
+					location = 9825
+					regiment = { type = infantry_brigade name = "1st Welega-Ardjo Regiment" experience = 3 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "2nd Welega-Ardjo Regiment" experience = 3 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "3rd Welega-Ardjo Regiment" experience = 3 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "4th Welega-Ardjo Regiment" experience = 3 historical_model = 1 }			
+				}
+			}
+			corps = {
+				name = "Tigray Provincial Armed Forces"
+				location = 9807
+				regiment = { type = hq_brigade name = "Tigray Provincial Armed Forces HQ" historical_model = 0 }				
+				division= {
+					name = "1st Tigray Sefari"
+					location = 9807
+					regiment = { type = militia_brigade name = "1st Tigray Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "2nd Tigray Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "3rd Tigray Regiment" experience = 3 historical_model = 0 }
+				}
+				division= {
+					name = "2nd Tigray Sefari"
+					location = 9807
+					regiment = { type = militia_brigade name = "4th Tigray Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "5th Tigray Regiment" experience = 3 historical_model = 0 }
+				}
+			}
+			corps = {
+				name = "Wag and Begemder Provincial Armed Forces"
+				location = 9825
+				regiment = { type = hq_brigade name = "Wag and Begemder Provincial Armed Forces HQ" historical_model = 0 }			
+				division= {
+					name = "Wag Sefari"
+					location = 9825
+					regiment = { type = militia_brigade name = "1st Wag Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "2nd Wag Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "3rd Wag Regiment" experience = 3 historical_model = 0 }
+				}	
+				division= {
+					name = "1st Begemder Sefari"
+					location = 9846
+					regiment = { type = militia_brigade name = "1st Begemder Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "2nd Begemder Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "3rd Begemder Regiment" experience = 3 historical_model = 0 }
+				}
+				division= {
+					name = "2nd Begemder Sefari"
+					location = 9846
+					regiment = { type = militia_brigade name = "4th Begemder Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "5th Begemder Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "6th Begemder Regiment" experience = 3 historical_model = 0 }			
+				}		
+			}
+		}	
+		army = {
+			name = "Southern Front"
+			location = 9944
+			regiment = { type = hq_brigade name = "Southern Front HQ" historical_model = 0 }
+			corps = {
+				name = "Illubabor and Sidamo Provincial Armed Forces"
+				location = 9987
+				regiment = { type = hq_brigade name = "Illubabor and Sidamo Provincial Armed Forces HQ" historical_model = 0 }				
+				division= {
+					name = "Illubabor Sefari"
+					location = 9987
+					regiment = { type = militia_brigade name = "1st Illubabor Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "2nd Illubabor Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "3rd Illubabor Regiment" experience = 3 historical_model = 0 }
+					regiment = { type = militia_brigade name = "4th Illubabor Regiment" experience = 3 historical_model = 0 }	
+				}
+				division= {
+					name = "1st Sidamo Sefari"
+					location = 9979
+					regiment = { type = infantry_brigade name = "1st Sidamo Regiment" experience = 3 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "2nd Sidamo Regiment" experience = 3 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "3rd Sidamo Regiment" experience = 3 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "4th Sidamo Regiment" experience = 3 historical_model = 1 }
+				}
+				division= {
+					name = "2nd Sidamo Sefari"
+					location = 9979
+					regiment = { type = infantry_brigade name = "5th Sidamo Regiment" experience = 3 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "6th Sidamo Regiment" experience = 3 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "7th Sidamo Regiment" experience = 3 historical_model = 1 }
+				}	
+			}
+			division= {
+				name = "Ogaden Sefari"
+				location = 9959
+				regiment = { type = militia_brigade name = "Ogaden Regiment" experience = 3 historical_model = 0 }
+				regiment = { type = militia_brigade name = "Gemu Gofa Regiment" experience = 3 historical_model = 0 }
+			}
+			division= {
+				name = "Arusi Sefari"
+				location = 9959
+				regiment = { type = militia_brigade name = "Arusi Regiment" experience = 3 historical_model = 0 }
+				regiment = { type = militia_brigade name = "Webi Shebelle Regiment" experience = 3 historical_model = 0 }
+			}		
+		}
+	}
+}

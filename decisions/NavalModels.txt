@@ -1,0 +1,36 @@
+diplomatic_decisions = {
+
+	navy_models = {
+		potential = {
+			ai = no
+			OR = {
+				tag = SPA
+				tag = SPR
+				tag = FRA
+				tag = ENG
+				tag = GER
+				tag = ITA
+				tag = HOL
+				tag = DEN
+				tag = NOR
+				tag = POL
+				tag = YUG
+				tag = SWE
+				tag = FIN
+				tag = SOV
+				tag = CHI
+				tag = JAP
+				tag = USA
+			}
+		}
+		allow = {
+		}
+		effect = {
+			country_event = 9100
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

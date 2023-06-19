@@ -1,0 +1,3126 @@
+# Restore Head of State events.
+# Always make sure that the given minister is available!
+# To ensure this, when a minister is removed, then add a flag for that minister ID!
+# Flag example:		"1001_removed" (That would be George V, the flag is set upon his death.)
+# Event template:
+# country_event = {
+#	id = 4100
+#
+#	trigger = {
+#		tag = TAG
+#		not = { head_of_state = ID }
+#		not = { has_country_flag = "ID_removed" }
+#		OTHER CONDITIONS 
+#	}
+#
+#	title = "Name of the candidate"
+#	desc = "Some flavour text"
+#	picture = "politician"
+#
+#	option = {
+#		name = "OK"
+#		head_of_state = ID
+#	}
+#}
+
+##################
+# United Kingdom #
+##################
+
+# George V
+country_event = {
+
+	id = 4101
+	
+	trigger = {
+		tag = ENG
+		not = { head_of_state = 1001 }
+		not = { has_country_flag = "1001_removed" }
+		# Has to be some kind of a Monarchy!
+		or = {
+			government = constitutional_monarchy
+			government = imperial
+			government = absolute_monarchy
+			government = right_wing_autocrat
+			government = war_cabinet
+		}
+	}
+	
+	title = "George V"
+	desc = "King George V was King of the United Kingdom and the British Dominions, and Emperor of India, from 6 May 1910 through the Great War until his death in 1936."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 1001
+	}
+
+}
+
+# Edward VIII
+country_event = {
+
+	id = 4102
+	
+	trigger = {
+		tag = ENG
+		not = { head_of_state = 1031 }
+		not = { has_country_flag = "1031_removed" }
+		# Has to be some kind of a Monarchy!
+		or = {
+			government = constitutional_monarchy
+			government = imperial
+			government = absolute_monarchy
+			government = right_wing_autocrat
+			government = war_cabinet
+		}
+		# George V is already dead
+		has_country_flag = "1001_removed"
+		# Either didn't abdicate, or has supporters
+		or = {
+			not = { has_country_flag = "edward_viii_abdicates" }
+			ideology_group = fascism
+		}
+	}
+	
+	title = "Edward VII"
+	desc = "Edward VIII was King of the United Kingdom and the British Dominions, and Emperor of India until his abdication. Had he stronger supporters, he could become King again."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 1031
+	}
+
+}
+
+# George VI
+country_event = {
+
+	id = 4103
+	
+	trigger = {
+		tag = ENG
+		not = { head_of_state = 1000 }
+		not = { has_country_flag = "1000_removed" }
+		# Has to be some kind of a Monarchy!
+		or = {
+			government = constitutional_monarchy
+			government = imperial
+			government = absolute_monarchy
+			government = right_wing_autocrat
+			government = war_cabinet
+		}
+		# George V is already dead
+		has_country_flag = "1001_removed"
+		# Edward abdicated
+		has_country_flag = "edward_viii_abdicates"
+	}
+	
+	title = "George VI"
+	desc = "George VI was King of the United Kingdom and the British Dominions, the last Emperor of India, the last King of Ireland, and the first Head of the Commonwealth."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 1000
+	}
+
+}
+
+#################
+# United States #
+#################
+
+# Democrats (Social Liberal): FDR
+country_event = {
+
+	id = 4121
+	
+	trigger = {
+		tag = USA
+		or = {
+			not = { head_of_state = 6001 }
+			not = { head_of_government = 6002 }
+		}
+		not = { has_country_flag = "6001_removed" }
+		not = { has_country_flag = "6002_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Democrats in power
+		ideology = social_liberal
+		# Nance Garner is the Vice-President.
+		not = { date = 1940.1.1 }
+	}
+	
+	title = "Franklin Delano Roosevelt"
+	desc = "Franklin Delano Roosevelt was the 32nd President of the United States of America. He was a candidate of the Democratic Party. His Vice-President was John Nance Garner."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 6001
+		head_of_government = 6002
+	}
+
+}
+
+country_event = {
+
+	id = 4122
+	
+	trigger = {
+		tag = USA
+		or = {
+			not = { head_of_state = 6001 }
+			not = { head_of_government = 6032 }
+		}
+		not = { has_country_flag = "6001_removed" }
+		not = { has_country_flag = "6032_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Democrats in power
+		ideology = social_liberal
+		# Henry A. Wallace is the Vice-President.
+		date = 1940.1.1
+		not = { date = 1944.1.1 }
+	}
+	
+	title = "Franklin Delano Roosevelt"
+	desc = "Franklin Delano Roosevelt was the 32nd President of the United States of America. He was a candidate of the Democratic Party. His Vice-President was Henry A. Wallace."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 6001
+		head_of_government = 6032
+	}
+
+}
+
+country_event = {
+
+	id = 4123
+	
+	trigger = {
+		tag = USA
+		or = {
+			not = { head_of_state = 6001 }
+			not = { head_of_government = 6034 }
+		}
+		not = { has_country_flag = "6001_removed" }
+		not = { has_country_flag = "6034_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Democrats in power
+		ideology = social_liberal
+		# Harry S. Truman is the Vice-President.
+		date = 1944.1.1
+	}
+	
+	title = "Franklin Delano Roosevelt"
+	desc = "Franklin Delano Roosevelt was the 32nd President of the United States of America. He was a candidate of the Democratic Party. His Vice-President was Harry S. Truman."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 6001
+		head_of_government = 6034
+	}
+
+}
+
+# Democrats (Social Liberal): Truman
+country_event = {
+
+	id = 4124
+	
+	trigger = {
+		tag = USA
+		not = { head_of_state = 6034 }
+		not = { has_country_flag = "6034_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Democrats in power
+		ideology = social_liberal
+		# FDR is dead
+		has_country_flag = "6001_removed"
+		# He is supposed to be the Vice-President.
+		date = 1944.12.1
+		not = { date = 1948.11.1 }
+		
+	}
+	
+	title = "Harry S. Truman"
+	desc = "Harry S. Truman was the 33rd President of the United States of America inheirting the office of Roosevelt."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 6034
+	}
+
+}
+
+# Republican (Social Conservative): Alf Landon
+country_event = {
+
+	id = 4126
+	
+	trigger = {
+		tag = USA
+		not = { head_of_state = 6035 }
+		not = { has_country_flag = "6035_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Republicans in power
+		ideology = social_conservative
+		# Between '36 and november of '40
+		not = { date = 1940.11.1 }
+	}
+	
+	title = "Alf M. Landon"
+	desc = "Alf M. Landon was governor of Texas and Republican Party nominee for the 1936 presidential election."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 6035
+	}
+
+}
+
+# Republican (Social Conservative): Wendell Wilkie
+country_event = {
+
+	id = 4127
+	
+	trigger = {
+		tag = USA
+		not = { head_of_state = 6036 }
+		not = { has_country_flag = "6036_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Republicans in power
+		ideology = social_conservative
+		date = 1940.12.1
+		not = { date = 1944.11.1 }
+	}
+	
+	title = "Wendell Willkie"
+	desc = "Wendell Willkie was a corporate lawyer in the United States and was the dark horse Republican Party nominee for the 1940 presidential election."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 6036
+	}
+
+}
+
+# Republican (Social Conservative): Thomas E. Dewey
+country_event = {
+
+	id = 4128
+	
+	trigger = {
+		tag = USA
+		not = { head_of_state = 6038 }
+		not = { has_country_flag = "6038_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Republicans in power
+		ideology = social_conservative
+		date = 1944.12.1
+		not = { date = 1948.11.1 }
+	}
+	
+	title = "Thomas E. Dewey"
+	desc = "Thomas E. Dewey was the 47th Governor of New York and the dark horse Republican Party nominee for the 1944 presidential election."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 6038
+	}
+
+}
+
+
+
+##########
+# Sweden #
+##########
+
+# Gustaf V
+country_event = {
+
+	id = 4141
+	
+	trigger = {
+		tag = SWE
+		not = { head_of_state = 7001 }
+		not = { has_country_flag = "7001_removed" }
+		# Has to be some kind of a Monarchy!
+		or = {
+			government = constitutional_monarchy
+			government = imperial
+			government = absolute_monarchy
+			government = right_wing_autocrat
+			government = war_cabinet
+		}
+	}
+	
+	title = "Gustaf V"
+	desc = "Gustaf V was King of Sweden from 1907. He was the eldest son of King Oscar II of Sweden and Sophia of Nassau, a half-sister of Adolphe I, Grand Duke of Luxembourg."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 7001
+	}
+
+}
+
+# Gustaf VI
+country_event = {
+
+	id = 4142
+	
+	trigger = {
+		tag = SWE
+		not = { head_of_state = 7093 }
+		not = { has_country_flag = "7093_removed" }
+		# Has to be some kind of a Monarchy!
+		or = {
+			government = constitutional_monarchy
+			government = imperial
+			government = absolute_monarchy
+			government = right_wing_autocrat
+			government = war_cabinet
+		}
+		# Gustaf V is dead
+		has_country_flag = "7001_removed" 
+	}
+	
+	title = "Gustaf VI"
+	desc = "Gustaf V was King of Sweden after his father's death."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 7093
+	}
+
+}
+
+#############
+# Australia #
+#############
+
+# Social Conservatives/Market Liberals
+# Alexander Lord Gowrie
+country_event = {
+
+	id = 4161
+	
+	trigger = {
+		tag = AST
+		not = { head_of_state = 56031 }
+		not = { has_country_flag = "56031_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Sir Isaac Isaacs retired
+		has_country_flag = "56001_removed"
+		# Any Democrats or the Paternal Autocrats are in power
+		or = {
+			ideology = paternal_autocrat
+			ideology = social_conservative
+			ideology = market_liberal
+			ideology = social_liberal
+			ideology = social_democrat
+		}
+	}
+	
+	title = "Alexander Lord Gowrie"
+	desc = "Brigadier General Alexander Gore Arkwright Hore-Ruthven, 1st Earl of Gowrie was the tenth and longest serving Governor-General of Australia."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 56031
+	}
+
+}
+
+# Prince Henry, Duke of Gloucester
+country_event = {
+
+	id = 4162
+	
+	trigger = {
+		tag = AST
+		not = { head_of_state = 56032 }
+		not = { has_country_flag = "56032_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Sir Isaac Isaacs retired
+		has_country_flag = "56031_removed"
+		# The Democrats or the Paternal Autocrats are in power
+		or = {
+			ideology = paternal_autocrat
+			ideology = social_conservative
+			ideology = market_liberal
+			ideology = social_liberal
+			and = {
+				ideology = social_democrat
+				not = { year = 1947 }
+			}
+		}
+	}
+	
+	title = "Prince Henry, Duke of Gloucester"
+	desc = "Prince Henry, Duke of Gloucester became Governor-General of Australia in 1945."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 56032
+	}
+
+}
+
+# Social Democrats
+# William John McKell
+country_event = {
+
+	id = 4165
+	
+	trigger = {
+		tag = AST
+		not = { head_of_state = 56134 }
+		not = { has_country_flag = "56134_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Social Democrats candidate from '47
+		ideology = social_democrat
+		year = 1947
+	}
+	
+	title = "William John McKell"
+	desc = "William John McKell, former Premier of New South Wales became Governor-General of Australia after the Australian Labor Party won the elections."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 56134
+	}
+
+}
+
+# Head of Government
+
+# Market Liberal
+# Robert G. Menzies
+country_event = {
+
+	id = 4170
+	
+	trigger = {
+		tag = AST
+		not = { head_of_government = 56037 }
+		not = { has_country_flag = "56037_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# The Social Democrats or Social Liberals are in power
+		ideology = market_liberal
+		# Lyons is dead.
+		has_country_flag = "56002_removed"
+	}
+	
+	title = "Robert G. Menzies"
+	desc = "Robert G. Menzies was the candidate for Prime Minister of the United Australia Party in the late '30s, early '40s."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 56037
+	}
+
+}
+
+# Social Democrat
+# John J. Curtin
+country_event = {
+
+	id = 4171
+	
+	trigger = {
+		tag = AST
+		not = { head_of_government = 56038 }
+		not = { has_country_flag = "56038_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# The Social Democrats or Social Liberals are in power
+		ideology = social_democrat
+		not = { year = 1945 }
+	}
+	
+	title = "John J. Curtin"
+	desc = "John Curtin was the candidate of the Australian Labor Party for being Prime Minister throughout the time-period."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 56038
+	}
+
+}
+
+# Social Conservative
+# Earle Page
+country_event = {
+
+	id = 4172
+	
+	trigger = {
+		tag = AST
+		not = { head_of_government = 56048 }
+		not = { has_country_flag = "56048_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Social Conservative
+		ideology = social_conservative
+		year = 1940
+		not = { year = 1944 }
+	}
+	
+	title = "Earle Page"
+	desc = "Earle Page was the candidate of the Country Party for being Prime Minister in the late '30s."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 56048
+	}
+
+}
+
+# Archie Cameron, not yet included, event ID: 4173
+
+
+# Arthur Fadden
+country_event = {
+
+	id = 4174
+	
+	trigger = {
+		tag = AST
+		not = { head_of_government = 56140 }
+		not = { has_country_flag = "56140_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Social Conservative
+		ideology = social_conservative
+		year = 1944
+	}
+	
+	title = "Arthur W. Fadden"
+	desc = "Arthur Fadden was the candidate of the Country Party for being Prime Minister in the late '40s."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 56140
+	}
+
+}
+
+# Social Democrat
+# Ben Chifley
+country_event = {
+
+	id = 4175
+	
+	trigger = {
+		tag = AST
+		not = { head_of_government = 56039 }
+		not = { has_country_flag = "56039_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# The Social Democrats are in power
+		ideology = social_democrat
+		year = 1945
+	}
+	
+	title = "Ben Chifley"
+	desc = "Ben Chifley was the candidate of the Australian Labor Party for being Prime Minister in the late 1940s."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 56039
+	}
+
+}
+
+
+
+##########
+# Canada #
+##########
+
+# Head of State
+
+# Any democratic party
+# John Baron Tweedsmuir
+country_event = {
+
+	id = 4181
+	
+	trigger = {
+		tag = CAN
+		not = { head_of_state = 45001 }
+		not = { has_country_flag = "45001_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Any party.
+	}
+	
+	title = "John Baron Tweedsmuir"
+	desc = "John Buchan, 1st Baron Tweedsmuir was a Scottish novelist and Unionist politician who served as Governor General of Canada, the 15th since Canadian Confederation."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 45001
+	}
+
+}
+
+# Alexander Earl of Athlone
+country_event = {
+
+	id = 4182
+	
+	trigger = {
+		tag = CAN
+		not = { head_of_state = 45131 }
+		not = { has_country_flag = "45131_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Tweedsmuir is gone.
+		has_country_flag = "45001_removed"
+	}
+	
+	title = "Alexander Cambridge, 1st Earl of Athlone"
+	desc = "Major-General Alexander Augustus Frederick William Alfred George Cambridge, 1st Earl of Athlone served as Governor General of Canada, the 16th since Canadian Confederation."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 45131
+	}
+
+}
+
+# Harold Viscount Alexander
+country_event = {
+
+	id = 4183
+	
+	trigger = {
+		tag = CAN
+		not = { head_of_state = 45133 }
+		not = { has_country_flag = "45133_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Alexander Cambridge is gone.
+		has_country_flag = "45131_removed"
+	}
+	
+	title = "Harold Alexander, 1st Earl Alexander of Tunis"
+	desc = "Field Marshal Harold Rupert Leofric George Alexander, 1st Earl Alexander of Tunis served with distinction in both world wars and, afterwards, as Governor General of Canada, the 17th since Canadian Confederation."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 45133
+	}
+
+}
+
+# Stalinist/Leninist
+# Tim Buck
+country_event = {
+
+	id = 4185
+	
+	trigger = {
+		tag = CAN
+		or = {
+			not = { head_of_state = 45034 }
+			not = { head_of_government = 45034 }
+		}
+		not = { has_country_flag = "45034_removed" }
+		# Has to be Communist!
+		or = {
+			government = socialist_republic
+			government = federal_socialist_republic
+			government = socialist_puppet
+		}
+		# He should always be the HoS and HoG.
+	}
+	
+	title = "Tim Buck"
+	desc = "Tim Buck was a long-time leader of the Communist Party of Canada."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 45034
+		head_of_government = 45034
+	}
+
+}
+
+# Paternal Autocrat
+# Sir Lyman Poore Duff
+country_event = {
+
+	id = 4186
+	
+	trigger = {
+		tag = CAN
+		not = { head_of_state = 45129 }
+		not = { has_country_flag = "45129_removed" }
+		# Has to be Autocratic!
+		or = {
+			government = right_wing_autocrat
+			government = absolute_monarchy
+			government = constitutional_monarchy
+		}
+		# He should always be the HoS.
+		ideology = paternal_autocrat
+	}
+	
+	title = "Sir Lyman Poore Duff"
+	desc = "Sir Lyman Poore Duff was Chief Justice of the Supreme Court of Canada and briefly served as Acting Governor General of Canada in 1931 and 1940."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 45129
+	}
+
+}
+
+# Fascistic
+# Chuck Crate
+country_event = {
+
+	id = 4187
+	
+	trigger = {
+		tag = CAN
+		or = {
+			not = { head_of_state = 45074 }
+			not = { head_of_government = 45074 }
+		}
+		not = { has_country_flag = "45074_removed" }
+		# Has to be Autocratic!
+		or = {
+			government = right_wing_republic
+			government = military_dictatorship
+			government = fascist_puppet
+			government = fascist_republic
+		}
+		# He should always be the HoS and HoG.
+	}
+	
+	title = "Chuck Crate"
+	desc = "Chales Brandle Crate (1916–1992) was a Canadian fascist and leader of the Canadian Union of Fascists."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 45074
+		head_of_government = 45074
+	}
+
+}
+
+# National Socialist
+# Adrien Arcand
+country_event = {
+
+	id = 4188
+	
+	trigger = {
+		tag = CAN
+		or = {
+			not = { head_of_state = 45033 }
+			not = { head_of_government = 45033 }
+		}
+		not = { has_country_flag = "45033_removed" }
+		# Has to be Autocratic!
+		or = {
+			government = national_socialism
+			government = germanic_fascist_republic
+		}
+		# He should always be the HoS and HoG.
+	}
+	
+	title = "Adrien Arcand"
+	desc = "Adrien Arcand was a Montreal journalist who led a series of fascist political movements between 1929 until his death in 1967. During his political career he proclaimed himself the Canadian führer."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 45033
+		head_of_government = 45033
+	}
+
+}
+
+# Head of Government
+
+# Market Liberal
+# Mackenzie King
+country_event = {
+
+	id = 4190
+	
+	trigger = {
+		tag = CAN
+		not = { head_of_government = 45002 }
+		not = { has_country_flag = "45002_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# The only candidate for Market Liberal
+		ideology = market_liberal
+	}
+	
+	title = "Mackenzie King"
+	desc = "Mackenzie King was the dominant Canadian political leader from the 1920s to the 1940s. He served as the tenth Prime Minister of Canada."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 45002
+	}
+
+}
+
+# Social Conservative
+# R.B. Bennett
+country_event = {
+
+	id = 4191
+	
+	trigger = {
+		tag = CAN
+		not = { head_of_government = 45036 }
+		not = { has_country_flag = "45036_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Social Conservative candidate before July '38
+		ideology = social_conservative
+		not = { date = 1938.7.1 }
+	}
+	
+	title = "R.B. Bennett"
+	desc = "R.B. Bennett was a Canadian lawyer, businessman, politician, and philanthropist."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 45036
+	}
+
+}
+
+# Robert Manion
+country_event = {
+
+	id = 4192
+	
+	trigger = {
+		tag = CAN
+		not = { head_of_government = 45037 }
+		not = { has_country_flag = "45037_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Social Conservative candidate between July '38 and May '40
+		ideology = social_conservative
+		date = 1938.7.1
+		not = { date = 1940.5.1 }
+	}
+	
+	title = "Robert Manion"
+	desc = "Robert Manion was leader of the Conservative Party of Canada from 1938 until 1940."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 45037
+	}
+
+}
+
+# Richard Hanson
+country_event = {
+
+	id = 4193
+	
+	trigger = {
+		tag = CAN
+		not = { head_of_government = 45039 }
+		not = { has_country_flag = "45039_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Social Conservative candidate between May '40 and November '41
+		ideology = social_conservative
+		date = 1940.5.1
+		not = { date = 1941.11.1 }
+	}
+	
+	title = "Richard Hanson"
+	desc = "Richard Hanson was a Canadian politician who served as interim leader of the Conservative Party from May 14, 1940 until November 11, 1941."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 45039
+	}
+
+}
+
+# Arthur Meighen
+country_event = {
+
+	id = 4194
+	
+	trigger = {
+		tag = CAN
+		not = { head_of_government = 45056 }
+		not = { has_country_flag = "45056_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Social Conservative candidate between November '41 and December '42
+		ideology = social_conservative
+		date = 1941.11.1
+		not = { date = 1942.12.1 }
+	}
+	
+	title = "Arthur Meighen"
+	desc = "Arthur Meighen was the ninth Prime Minister of Canada in 1920-21 and in 1926 and he was the leader of the Conservative Party in 1942."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 45056
+	}
+
+}
+
+# John Bracken
+country_event = {
+
+	id = 4195
+	
+	trigger = {
+		tag = CAN
+		not = { head_of_government = 45038 }
+		not = { has_country_flag = "45038_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Social Conservative candidate from December '42
+		ideology = social_conservative
+		date = 1942.12.1
+	}
+	
+	title = "John Bracken"
+	desc = "John Bracken was an agronomist, the 11th Premier of Manitoba (1922–1943) and leader of the Progressive Conservative Party of Canada from 1943."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 45038
+	}
+
+}
+
+# Social Democrat
+# J.S. Woodsworth
+country_event = {
+
+	id = 4196
+	
+	trigger = {
+		tag = CAN
+		not = { head_of_government = 45045 }
+		not = { has_country_flag = "45045_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Social Democrat candidate before his death
+		ideology = social_democrat
+	}
+	
+	title = "J.S. Woodsworth"
+	desc = "J.S. Woodsworth was a pioneer in the Canadian social democratic movement."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 45045
+	}
+
+}
+
+# M.J. Coldwell
+country_event = {
+
+	id = 4197
+	
+	trigger = {
+		tag = CAN
+		not = { head_of_government = 45046 }
+		not = { has_country_flag = "45046_removed" }
+		# Has to be a Democracy!
+		or = {
+			government = constitutional_monarchy
+			government = social_conservatism
+			government = social_democracy
+			government = left_wing_radicals
+			government = democratic_puppet
+			government = war_cabinet
+		}
+		# Social Democrat candidate after Woodsworth
+		ideology = social_democrat
+		has_country_flag = "45045_removed"
+	}
+	
+	title = "M.J. Coldwell"
+	desc = "M.J. Coldwell, usually known as M.J., was a Canadian social democratic politician, and leader of the Co-operative Commonwealth Federation party after 1942."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 45046
+	}
+
+}
+
+###########
+# Hungary #
+###########
+
+# Head of State
+
+# Miklós Horthy
+country_event = {
+
+	id = 4200
+	
+	trigger = {
+		tag = HUN
+		not = { head_of_state = 21001 }
+		not = { has_country_flag = "21001_removed" }
+		# He is the default HoS unless the Habsburg King is restored.
+		government = hungarian_right_wing_republic
+	}
+	
+	title = "Miklós Horthy"
+	desc = "Miklós Horthy de Nagybánya was the Regent of the Kingdom of Hungary during the interwar years and throughout most of World War II."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 21001
+	}
+
+}
+
+# Ottó I
+country_event = {
+
+	id = 4201
+	
+	trigger = {
+		tag = HUN
+		not = { head_of_state = 21044 }
+		not = { has_country_flag = "21044_removed" }
+		# If the Kingdom is restored, he should be crowned King.
+		or = {
+			government = right_wing_autocrat
+			government = absolute_monarchy
+			government = imperial
+			government = constitutional_monarchy
+		}
+	}
+	
+	title = "Ottó I"
+	desc = "Otto von Habsburg is heir to the thrones of the former Austria-Hungary. He has been the Habsburg pretender to the Austrian throne since 1922."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 21044
+	}
+
+}
+
+# Ferenc Szálasi
+country_event = {
+
+	id = 4202
+	
+	trigger = {
+		tag = HUN
+		not = { head_of_state = 21041 }
+		not = { has_country_flag = "21041_removed" }
+		# The government type is extreme-right
+		or = {
+			government = national_socialism
+			government = right_wing_republic
+			government = fascist_puppet
+		}
+		# The ideology is also extreme-right.
+		or = {
+			ideology = national_socialist
+			and = {
+				ideology = fascistic
+				has_country_flag = "21002_removed"	# Gyula Gömbös is already dead
+			}
+		}
+	}
+	
+	title = "Ferenc Szálasi"
+	desc = "Ferenc Szálasi was the leader of the National Socialist Arrow Cross Party – Hungarist Movement and the 'Leader of the Nation' after his party gained power."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 21041
+		head_of_government = 21041
+	}
+
+}
+
+# Arpád Szakasits
+country_event = {
+
+	id = 4203
+	
+	trigger = {
+		tag = HUN
+		not = { head_of_state = 21061 }
+		not = { has_country_flag = "21061_removed" }
+		# The government type is extreme-left
+		or = {
+			government = left_wing_radicals
+			government = socialist_republic
+			government = federal_socialist_republic
+			government = socialist_puppet
+		}
+		# The ideology is also extreme-left.
+		or = {
+			ideology = stalinist
+			ideology = leninist
+			ideology = left_wing_radical
+		}
+	}
+	
+	title = "Árpád Szakasits"
+	desc = "Árpád Szakasits was a Hungarian Social Democrat, then Communist political figure. He served as President of Hungary."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 21061
+	}
+
+}
+
+# Zoltán Tildy
+country_event = {
+
+	id = 4204
+	
+	trigger = {
+		tag = HUN
+		not = { head_of_state = 21046 }
+		not = { has_country_flag = "21046_removed" }
+		# The government type is a democracy
+		government = social_conservatism
+		# The ideology is also a democracy
+		ideology_group = democracy
+	}
+	
+	title = "Zoltán Tildy"
+	desc = "Zoltán Tildy was an influential leader of Hungary, who served as President of the Second Hungarian Republic."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 21046
+	}
+
+}
+
+# Károly Peyer
+country_event = {
+
+	id = 4205
+	
+	trigger = {
+		tag = HUN
+		not = { head_of_state = 21045 }
+		not = { has_country_flag = "21045_removed" }
+		# The government type is a democracy
+		government = social_democracy
+		# The ideology is also a democracy
+		ideology_group = democracy
+	}
+	
+	title = "Károly Peyer"
+	desc = "Károly Peyer was a left-leaning Hungarian politician who was later elected as President of the Second Hungarian Republic."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 21045
+	}
+
+}
+
+# Head of Government
+# Prime Ministers under Horthy or Otto I
+
+# Gyula Gömbös
+country_event = {
+
+	id = 4210
+	
+	trigger = {
+		tag = HUN
+		not = { head_of_government = 21002 }
+		not = { has_country_flag = "21002_removed" }
+		# Any government type, only the ideology has to match
+		# Horthy is still HoS, or Otto I is restored
+		or = {
+			head_of_state = 21001
+			head_of_state = 21044
+		}
+		# The ideology is fascistic
+		ideology = fascistic
+	}
+	
+	title = "Gyula Gömbös"
+	desc = "Gyula Gömbös was the conservative prime minister of Hungary in the mid '30s."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 21002
+	}
+
+}
+
+# Kálmán Darányi
+country_event = {
+
+	id = 4211
+	
+	trigger = {
+		tag = HUN
+		not = { head_of_government = 21053 }
+		not = { has_country_flag = "21053_removed" }
+		# Any government type, only the ideology has to match
+		# Horthy is still HoS, or Otto I is restored
+		or = {
+			head_of_state = 21001
+			head_of_state = 21044
+		}
+		# The ideology is autocratic
+		ideology_group = fascism
+		# After Gyula Gömbös is dead
+		has_country_flag = "21002_removed"
+	}
+	
+	title = "Kálmán Darányi"
+	desc = "Kálmán Darányi was a Hungarian politician who served as Prime Minister of Hungary after Gyula Gömbös' death."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 21053
+	}
+
+}
+
+# Béla Imrédy
+country_event = {
+
+	id = 4212
+	
+	trigger = {
+		tag = HUN
+		not = { head_of_government = 21054 }
+		not = { has_country_flag = "21054_removed" }
+		# Any government type, only the ideology has to match
+		# Horthy is still HoS, or Otto I is restored
+		or = {
+			head_of_state = 21001
+			head_of_state = 21044
+		}
+		# The ideology is autocratic
+		ideology_group = fascism
+		has_country_flag = "21002_removed"
+		# After Kálmán Darányi is removed
+		has_country_flag = "21053_removed"
+	}
+	
+	title = "Béla Imrédy"
+	desc = "Béla Imrédy was Prime Minister of Hungary in the late '30s"
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 21054
+	}
+
+}
+
+# Pál Teleki
+country_event = {
+
+	id = 4213
+	
+	trigger = {
+		tag = HUN
+		not = { head_of_government = 21055 }
+		not = { has_country_flag = "21055_removed" }
+		# Any government type, only the ideology has to match
+		# Horthy is still HoS, or Otto I is restored
+		or = {
+			head_of_state = 21001
+			head_of_state = 21044
+		}
+		# The ideology is autocratic
+		ideology_group = fascism
+		has_country_flag = "21002_removed"
+		has_country_flag = "21053_removed"
+		# After Béla Imrédy is removed
+		has_country_flag = "21054_removed"
+	}
+	
+	title = "Pál Teleki"
+	desc = "Pál Teleki prime minister of Hungary from 19 July 1920 to 14 April 1921 and later in the '30s and '40s."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 21055
+	}
+
+}
+
+# László Bárdossy
+country_event = {
+
+	id = 4214
+	
+	trigger = {
+		tag = HUN
+		not = { head_of_government = 21056 }
+		not = { has_country_flag = "21056_removed" }
+		# Any government type, only the ideology has to match
+		# Horthy is still HoS, or Otto I is restored
+		or = {
+			head_of_state = 21001
+			head_of_state = 21044
+		}
+		# The ideology is autocratic
+		ideology_group = fascism
+		has_country_flag = "21002_removed"
+		has_country_flag = "21053_removed"
+		has_country_flag = "21054_removed"
+		# After Pál Teleki is dead
+		has_country_flag = "21055_removed"
+	}
+	
+	title = "László Bárdossy"
+	desc = "László Bárdossy was a Hungarian diplomat and politician who served as Prime Minister of Hungary after Teleki's suicide."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 21056
+	}
+
+}
+
+# Miklós Kállay
+country_event = {
+
+	id = 4215
+	
+	trigger = {
+		tag = HUN
+		not = { head_of_government = 21057 }
+		not = { has_country_flag = "21057_removed" }
+		# Any government type, only the ideology has to match
+		# Horthy is still HoS, or Otto I is restored
+		or = {
+			head_of_state = 21001
+			head_of_state = 21044
+		}
+		# The ideology is autocratic
+		ideology_group = fascism
+		has_country_flag = "21002_removed"
+		has_country_flag = "21053_removed"
+		has_country_flag = "21054_removed"
+		has_country_flag = "21055_removed"
+		# After László Bárdossy is removed
+		has_country_flag = "21056_removed"
+	}
+	
+	title = "Miklós Kállay"
+	desc = "Miklós Kállay was a Hungarian politician who served as Prime Minister of Hungary during the Second World War."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 21057
+	}
+
+}
+
+# Left-Wing
+
+# Mátyás Rákosi
+country_event = {
+
+	id = 4216
+	
+	trigger = {
+		tag = HUN
+		head_of_state = 21061
+		not = { head_of_government = 21065 }
+		not = { has_country_flag = "21065_removed" }
+		# Regardless of anything, Szakasits will appoint Rákosi.
+	}
+	
+	title = "Mátyás Rákosi"
+	desc = "Mátyás Rákosi was a Serbian-born Hungarian communist politician. He served as General Secretary of the Hungarian Communist Party."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 21065
+	}
+
+}
+
+# Democracies
+
+# Anna Kéthly
+country_event = {
+
+	id = 4217
+	
+	trigger = {
+		tag = HUN
+		not = { head_of_government = 21153 }
+		not = { has_country_flag = "21153_removed" }
+		# Must be a democracy
+		or = {
+			government = social_democracy
+			government = social_conservatism
+			government = democratic_puppet
+		}
+		# Must be Social Democrat
+		ideology = social_democrat
+	}
+	
+	title = "Anna Kéthly"
+	desc = "After the democratic elections of the Second Hungarian Republic, Anna Kéthly was appointed Prime Minister by the President."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 21153
+	}
+
+}
+
+# Károly Rassay
+country_event = {
+
+	id = 4218
+	
+	trigger = {
+		tag = HUN
+		not = { head_of_government = 21191 }
+		not = { has_country_flag = "21191_removed" }
+		# Must be a democracy
+		or = {
+			government = social_democracy
+			government = social_conservatism
+			government = democratic_puppet
+		}
+		# Must be Social Democrat
+		ideology = social_liberal
+	}
+	
+	title = "Károly Rassay"
+	desc = "After the democratic elections of the Second Hungarian Republic, Károly Rassay was appointed Prime Minister by the President."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 21191
+	}
+
+}
+
+# Ferenc Nagy
+country_event = {
+
+	id = 4219
+	
+	trigger = {
+		tag = HUN
+		not = { head_of_government = 21063 }
+		not = { has_country_flag = "21063_removed" }
+		# Must be a democracy
+		or = {
+			government = social_democracy
+			government = social_conservatism
+			government = democratic_puppet
+		}
+		# Must be Social Democrat
+		ideology = social_conservative
+	}
+	
+	title = "Ferenc Nagy"
+	desc = "After the democratic elections of the Second Hungarian Republic, Ferenc Nagy was appointed Prime Minister by the President."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 21063
+	}
+
+}
+
+#########
+# Japan #
+#########
+
+# Head of State
+
+# Basically, unless the constitution changes a LOT, Hirohito should remain Emperor.
+
+# Hirohito
+country_event = {
+
+	id = 4220
+	
+	trigger = {
+		tag = JAP
+		not = { head_of_state = 5001 }
+		not = { has_country_flag = "5001_removed" }
+		# Must have a king of some sort
+		or = {
+			government = right_wing_autocrat
+			government = absolute_monarchy
+			government = imperial
+			government = constitutional_monarchy
+			government = democratic_puppet
+		}
+		# The ideology is irrelevant
+	}
+	
+	title = "Emperor Showa"
+	desc = "Hirohito, also known as Emperor Showa was the 124th emperor of Japan according to the traditional order, reigning from December 25, 1926, until his death."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 5001
+	}
+
+}
+
+# 
+country_event = {
+
+	id = 4221
+	
+	trigger = {
+		tag = JAP
+		not = { head_of_state = 5025 }
+		not = { has_country_flag = "5025_removed" }
+		# For a socialist Japan
+		or = {
+			government = socialist_republic
+			government = left_wing_radicals
+			government = federal_socialist_republic
+			government = socialist_puppet
+		}
+	}
+	
+	title = "Sanzo Nosaka"
+	desc = "Sanzo Nosaka was the co-founder of the Japanese Communist Party."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 5025
+	}
+
+}
+
+#############
+# Argentina #
+#############
+
+country_event = {
+
+	id = 4240
+	
+	trigger = {
+		tag = ARG
+		ideology = paternal_autocrat
+		or = {
+			not = { head_of_state = 35039 }
+			not = { head_of_government = 35039 }
+		}
+		not = { has_country_flag = "35039_removed" }
+		has_country_flag = "35001_removed"
+	}
+	
+	title = "Roberto M. Ortiz"
+	desc = "Roberto M. Ortiz succeeded Agustín P. Justo as President of Argentina."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 35039
+		head_of_government = 35039
+	}
+
+}
+
+country_event = {
+
+	id = 4241
+	
+	trigger = {
+		tag = ARG
+		ideology = paternal_autocrat
+		or = {
+			not = { head_of_state = 35005 }
+			not = { head_of_government = 35005 }
+		}
+		not = { has_country_flag = "35005_removed" }
+		has_country_flag = "35039_removed"
+	}
+	
+	title = "Ramon Castillo"
+	desc = "Ramon Castillo succeeded Roberto M. Ortiz as President of Argentina."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 35005
+		head_of_government = 35005
+	}
+
+}
+
+country_event = {
+
+	id = 4242
+	
+	trigger = {
+		tag = ARG
+		ideology = paternal_autocrat
+		or = {
+			not = { head_of_state = 35036 }
+			not = { head_of_government = 35036 }
+		}
+		not = { has_country_flag = "35036_removed" }
+		has_country_flag = "35005_removed"
+	}
+	
+	title = "Robustiano Costas"
+	desc = "Robustiano Costas succeeded Ramon Castillo as President of Argentina."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 35036
+		head_of_government = 35036
+	}
+
+}
+
+###########
+# Uraguay #
+###########
+
+country_event = {
+
+	id = 4260
+	
+	trigger = {
+		tag = URU
+		ideology = paternal_autocrat
+		or = {
+			not = { head_of_state = 41004 }
+			not = { head_of_government = 41004 }
+		}
+		not = { has_country_flag = "41004_removed" }
+		has_country_flag = "41001_removed"
+	}
+	
+	title = "Alfredo Baldomir"
+	desc = "Alfredo Baldomir succeeded Gabriel Terra as President of Uraguay."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 41004
+		head_of_government = 41004
+	}
+
+}
+
+country_event = {
+
+	id = 4261
+	
+	trigger = {
+		tag = URU
+		ideology = paternal_autocrat
+		or = {
+			not = { head_of_state = 41033 }
+			not = { head_of_government = 41033 }
+		}
+		not = { has_country_flag = "41033_removed" }
+		has_country_flag = "41004_removed"
+	}
+	
+	title = "Juan de Amezaga"
+	desc = "Juan de Amezaga succeeded Alfredo Baldomir as President of Uraguay."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 41033
+		head_of_government = 41033
+	}
+
+}
+
+#########
+# Chile #
+#########
+
+country_event = {
+
+	id = 4280
+	
+	trigger = {
+		tag = CHL
+		ideology = social_democrat
+		year = 1942
+		or = {
+			not = { head_of_state = 44032 }
+			not = { head_of_government = 44032 }
+		}
+		not = { has_country_flag = "44032_removed" }
+	}
+	
+	title = "Juan Antonio Ríos"
+	desc = "Juan Antonio Ríos was president of Chile during the WW2."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 44032
+		head_of_government = 44032
+	}
+
+}
+
+###########
+# Bolivia #
+###########
+
+country_event = {
+
+	id = 4300
+	
+	trigger = {
+		tag = BOL
+		ideology = paternal_autocrat
+		or = {
+			not = { head_of_state = 43032 }
+			not = { head_of_government = 43048 }
+		}
+		not = { has_country_flag = "44032_removed" }
+		has_country_flag = "43001_removed"
+	}
+	
+	title = "Germán Busch"
+	desc = "Germán Busch was the leader of Bolivia after the Coup of '36"
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 43032
+		head_of_government = 43048
+		chief_of_staff = 43032
+	}
+
+}
+
+country_event = {
+
+	id = 4301
+	
+	trigger = {
+		tag = BOL
+		ideology = paternal_autocrat
+		or = {
+			not = { head_of_state = 43037 }
+			not = { head_of_government = 43037 }
+		}
+		not = { has_country_flag = "43037_removed" }
+		has_country_flag = "44032_removed"
+	}
+	
+	title = "Carlos Quintanilla"
+	desc = "Carlos Quintanilla took over as president of Bolivia after the death of Germán Busch."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 43037
+		head_of_government = 43037
+		chief_of_staff = 43037
+	}
+
+}
+
+country_event = {
+
+	id = 4302
+	
+	trigger = {
+		tag = BOL
+		ideology = paternal_autocrat
+		or = {
+			not = { head_of_state = 43045 }
+			not = { head_of_government = 43045 }
+		}
+		not = { has_country_flag = "43045_removed" }
+		has_country_flag = "43037_removed"
+	}
+	
+	title = "Enrique Peñaranda"
+	desc = "Enrique Peñarand suceeded Carlos Quintanilla as president of the junta running Bolivia"
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 43045
+		head_of_government = 43045
+		chief_of_staff = 43045
+	}
+
+}
+
+country_event = {
+
+	id = 4303
+	
+	trigger = {
+		tag = BOL
+		ideology = paternal_autocrat
+		or = {
+			not = { head_of_state = 43007 }
+			not = { head_of_government = 43007 }
+		}
+		not = { has_country_flag = "43007_removed" }
+		has_country_flag = "43045_removed"
+	}
+	
+	title = "Gualberto Villarroel."
+	desc = "Gualberto Villarroel became president of Bolivia after the ousting of Enrique Peñaranda."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 43007
+		head_of_government = 43007
+		chief_of_staff = 43007
+	}
+
+}
+
+############
+# Paraguay #
+############
+
+country_event = {
+
+	id = 4320
+	
+	trigger = {
+		tag = PAR
+		ideology_group = democracy
+		or = {
+			not = { head_of_state = 42061 }
+			not = { head_of_government = 42061 }
+		}
+		not = { has_country_flag = "42061_removed" }
+		has_country_flag = "42001_removed"
+	}
+	
+	title = "Rafael Franco."
+	desc = "Rafael Franco became president of Paraguay after the ousting of Eusebio Ayala."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 42061
+		head_of_state = 42061
+	}
+
+}
+
+country_event = {
+
+	id = 4321
+	
+	trigger = {
+		tag = PAR
+		ideology_group = democracy
+		or = {
+			not = { head_of_state = 42062 }
+			not = { head_of_government = 42062 }
+		}
+		not = { has_country_flag = "42061_removed" }
+		has_country_flag = "42062_removed"
+	}
+	
+	title = "Felix Paiva."
+	desc = "Felix Paiva became president of Paraguay after the ousting of Rafael Franco."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 42062
+		head_of_government = 42062
+	}
+
+}
+
+country_event = {
+
+	id = 4322
+	
+	trigger = {
+		tag = PAR
+		ideology_group = democracy
+		or = {
+			not = { head_of_state = 42063 }
+			not = { head_of_government = 42063 }
+		}
+		not = { has_country_flag = "42062_removed" }
+		has_country_flag = "42063_removed"
+	}
+	
+	title = "José Estigarribia Insaurralde."
+	desc = "José Estigarribia Insaurralde became president of Paraguay after Felix Paiva steppped down."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 42063
+		head_of_government = 42063
+	}
+
+}
+
+########
+# Peru #
+########
+
+country_event = {
+
+	id = 4340
+	
+	trigger = {
+		tag = PRU		
+		or = {
+		ideology = social_conservative
+		ideology = paternal_autocrat
+		}
+		not = { head_of_state = 39032 }
+		not = { has_country_flag = "39032_removed" }
+		has_country_flag = "39001_removed"
+	}
+	
+	title = "Manuel Prado y Ugarteche."
+	desc = "Manuel Prado y Ugarteche became president of Peru after Óscar Benavides steppped down."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 39032
+	}
+
+}
+
+###########
+# Ecuador #
+###########
+
+country_event = {
+
+	id = 4360
+	
+	trigger = {
+		tag = ECU	
+		ideology = paternal_autocrat
+		or = {
+			not = { head_of_state = 40043 }
+			not = { head_of_government = 40043 }
+		}
+		not = { has_country_flag = "40043_removed" }
+		has_country_flag = "40001_removed"
+	}
+	
+	title = "Gilberto Enriquez Gallo."
+	desc = "Gilberto Enriquez Gallo became president of Ecuador after the coup against Federico Páez."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 40043
+		head_of_government = 40043
+	}
+
+}
+
+country_event = {
+
+	id = 4361
+	
+	trigger = {
+		tag = ECU	
+		ideology = paternal_autocrat
+		or = {
+			not = { head_of_state = 40044 }
+			not = { head_of_government = 40044 }
+		}
+		not = { has_country_flag = "40044_removed" }
+		has_country_flag = "40043_removed"
+	}
+	
+	title = "Manuel María Borrero."
+	desc = "Manuel María Borrero became interim president of Ecuador after the coup against Gilberto Gallo stepped down."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 40044
+		head_of_government = 40044
+	}
+
+}
+
+country_event = {
+
+	id = 4362
+	
+	trigger = {
+		tag = ECU	
+		ideology = paternal_autocrat
+		or = {
+			not = { head_of_state = 40006 }
+			not = { head_of_government = 40006 }
+		}
+		not = { has_country_flag = "40006_removed" }
+		has_country_flag = "40044_removed"
+	}
+	
+	title = "Aurelio Mosquera."
+	desc = "Aurelio Mosquera served as president of Ecuador from 1938 to 1939."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 40006
+		head_of_government = 40006
+	}
+
+}
+
+country_event = {
+
+	id = 4363
+	
+	trigger = {
+		tag = ECU	
+		ideology = paternal_autocrat
+		or = {
+			not = { head_of_state = 40036 }
+			not = { head_of_government = 40036 }
+		}
+		not = { has_country_flag = "40036_removed" }
+		has_country_flag = "40006_removed"
+	}
+	
+	title = "Andrés de Córdova Nieto"
+	desc = "Andrés de Córdova Nieto served as president of Ecuador from 1939 to 1940."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 40036
+		head_of_government = 40036
+	}
+
+}
+
+country_event = {
+
+	id = 4364
+	
+	trigger = {
+		tag = ECU	
+		ideology = paternal_autocrat
+		or = {
+			not = { head_of_state = 40040 }
+			not = { head_of_government = 40040 }
+		}
+		not = { has_country_flag = "40040_removed" }
+		has_country_flag = "40036_removed"
+	}
+	
+	title = "Carlos Arroyo del Río"
+	desc = "Carlos Arroyo del Río served as president of Ecuador from 1940 to 1944."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 40040
+		head_of_government = 40040
+	}
+
+}
+
+#############
+# Venezuela #
+#############
+
+country_event = {
+
+	id = 4380
+	
+	trigger = {
+		tag = VEN	
+		or = {
+		ideology = social_conservative
+		ideology = paternal_autocrat
+		}
+		or = {
+			not = { head_of_state = 38001 }
+			not = { head_of_government = 38001 }
+		}
+		not = { has_country_flag = "38001_removed" }
+	}
+	
+	title = "Eleazar López Contreras"
+	desc = "Eleazar López Contreras was president of Venezuela from 1935 to 1941"
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 38001
+		head_of_government = 38001
+	}
+
+}
+
+country_event = {
+
+	id = 4381
+	
+	trigger = {
+		tag = VEN	
+		or = {
+		ideology = social_conservative
+		ideology = paternal_autocrat
+		}
+		or = {
+			not = { head_of_state = 38000 }
+			not = { head_of_government = 38000 }
+		}
+		not = { has_country_flag = "38000_removed" }
+		has_country_flag = "38001_removed"
+	}
+	
+	title = "Isaias Medina Angarita"
+	desc = "Isaias Medina Angarita succeeded Eleazar Contreras as President of Venezuela"
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 38000
+		head_of_government = 38000
+	}
+
+}
+
+##########
+# Panama #
+##########
+
+country_event = {
+
+	id = 4400
+	
+	trigger = {
+		tag = PNM	
+		or = {
+		ideology = social_conservative
+		ideology = paternal_autocrat
+		}
+		or = {
+			not = { head_of_state = 95038 }
+			not = { head_of_government = 95038 }
+		}
+		has_country_flag = "95031_removed"
+	}
+	
+	title = "Augusto Samuel Boyd"
+	desc = "Augusto Samuel Boyd succeeded Juan Demóstenes Arosemena as President of Panama"
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 95038
+		head_of_government = 95038
+	}
+
+}
+
+##############
+# Costa Rica #
+##############
+
+country_event = {
+
+	id = 4420
+	
+	trigger = {
+		tag = COS	
+		ideology = social_liberal
+		or = {
+			not = { head_of_state = 47002 }
+			not = { head_of_government = 47002 }
+		}
+		has_country_flag = "47001_removed"
+	}
+	
+	title = "Leon Cortes Castro"
+	desc = "Leon Cortes Castro succeeded Juan Demóstenes Arosemena as President of Costa Rica"
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 47002
+		head_of_government = 47002
+	}
+
+}
+
+#############
+# Nicaragua #
+#############
+
+country_event = {
+
+	id = 4440
+	
+	trigger = {
+		tag = NIC	
+		ideology = paternal_autocrat
+		or = {
+			not = { head_of_state = 48032 }
+			not = { head_of_government = 48032 }
+		}
+		has_country_flag = "48001_removed"
+		not = { has_country_flag = "garcia_takes_power" }
+	}
+	
+	title = "Carlos Brenes"
+	desc = "Carlos Brenes was installed as presient of Nicaragua in June of 1936. He was considreered to be a puppet of Anastasio Somoza García."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 48032
+		head_of_government = 48032
+	}
+
+}
+
+##########
+# Mexico #
+##########
+
+country_event = {
+
+	id = 4460
+	
+	trigger = {
+		tag = MEX	
+		ideology = social_democrat
+		or = {
+			not = { head_of_state = 36032 }
+			not = { head_of_government = 36032 }
+		}
+		has_country_flag = "36001_removed"
+		not = { has_country_flag = "36032_removed" }
+	}
+	
+	title = "Manuel Avila"
+	desc = "Manuel Avila was president of Mexico from 1940 to 1946"
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 36032
+		head_of_government = 36032
+	}
+
+}
+
+########
+# Cuba #
+########
+
+country_event = {
+
+	id = 4480
+	
+	trigger = {
+		tag = CUB	
+		ideology = market_liberal
+		or = {
+			not = { head_of_state = 33002 }
+			not = { head_of_government = 33002 }
+		}
+		has_country_flag = "36001_removed"
+		not = { has_country_flag = "33002_removed" }
+	}
+	
+	title = "Miguel Gómez"
+	desc = "Miguel Gómez was president of Cuba from May to December of 1936"
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 33002
+		head_of_government = 33002
+	}
+
+}
+
+#########
+# Haiti #
+#########
+
+country_event = {
+
+	id = 4500
+	
+	trigger = {
+		tag = HAI	
+		ideology = social_conservative
+		or = {
+			not = { head_of_state = 78004 }
+			not = { head_of_government = 78004 }
+		}
+		has_country_flag = "78001_removed"
+		not = { has_country_flag = "78004_removed" }
+	}
+	
+	title = "Emilie Lescot"
+	desc = "Emilie Lescot was president of Haiti from 1941 to 1946"
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 78004
+		head_of_government = 78004
+	}
+
+}
+
+##########
+# Turkey #
+##########
+
+# Head of State
+
+# Mustafa Kemal Atatürk, father of Turkey
+
+country_event = {
+
+	id = 4520
+	
+	trigger = {
+		tag = TUR
+		or = {
+			ideology = paternal_autocrat
+			ideology_group = democracy
+		}
+		not = { head_of_state = 12001 }
+		not = { has_country_flag = "12001_removed" }
+	}
+	
+	title = "Mustafa Kemal Atatürk"
+	desc = "Mustafa Kemal Atatürk was the father of modern Turkey, the symbol of the nation."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 12001
+	}
+
+}
+
+# Ismet Inönü, successor of Atatürk
+
+country_event = {
+
+	id = 4521
+	
+	trigger = {
+		tag = TUR
+		ideology = paternal_autocrat
+		not = { head_of_state = 12002 }
+		not = { has_country_flag = "12002_removed" }
+		has_country_flag = "12001_removed"
+	}
+	
+	title = "Ismet Inönü"
+	desc = "Ismet Inönü was the successor of Mustafa Kemal Atatürk after his death."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 12002
+	}
+
+}
+
+# Fevzi Çakmak, leader of the Social Conservative party.
+
+country_event = {
+
+	id = 4522
+	
+	trigger = {
+		tag = TUR
+		ideology = social_conservative
+		not = { head_of_state = 12007 }
+		not = { has_country_flag = "12007_removed" }
+		has_country_flag = "12001_removed"
+	}
+	
+	title = "Fevzi Çakmak"
+	desc = "Fevzi Çakmak was the most likely Social Conservative candidate for Presidency."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 12007
+	}
+
+}
+
+# Celâl Bayar, left-wing democratic candidate for presidency.
+
+country_event = {
+
+	id = 4523
+	
+	trigger = {
+		tag = TUR
+		not = { ideology = social_conservative }
+		ideology_group = democracy
+		not = { head_of_state = 12032 }
+		not = { has_country_flag = "12032_removed" }
+		has_country_flag = "12001_removed"
+	}
+	
+	title = "Celâl Bayar"
+	desc = "Celâl Bayar was the most likely left-wing candidate for Presidency."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 12032
+	}
+
+}
+
+# Nihal Atsiz, extreme right-wing candidate.
+
+country_event = {
+
+	id = 4524
+	
+	trigger = {
+		tag = TUR
+		not = { ideology = paternal_autocrat }
+		ideology_group = fascism
+		not = { head_of_state = 12011 }
+		not = { has_country_flag = "12011_removed" }
+	}
+	
+	title = "Nihal Atsiz"
+	desc = "Nihal Atsiz was the most likely extreme right-wing candidate for Presidency."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 12011
+	}
+
+}
+
+# Nihal Atsiz, extreme right-wing candidate.
+
+country_event = {
+
+	id = 4525
+	
+	trigger = {
+		tag = TUR
+		ideology_group = communism
+		not = { head_of_state = 12021 }
+		not = { has_country_flag = "12021_removed" }
+	}
+	
+	title = "Sefik Hüsnü"
+	desc = "Sefik Hüsnü was the most likely extreme left-wing candidate for Presidency."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_state = 12021
+	}
+
+}
+
+# Head of Government
+
+# Left-wing
+
+country_event = {
+
+	id = 4526
+	
+	trigger = {
+		tag = TUR
+		ideology_group = communism
+		not = { head_of_government = 12022 }
+		not = { has_country_flag = "12022_removed" }
+	}
+	
+	title = "Pertev Naili Boratav"
+	desc = "After the left wing gained power in Turkey, Pertev Naili Boratav formed a government."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 12022
+	}
+
+}
+
+# Right-wing
+
+country_event = {
+
+	id = 4527
+	
+	trigger = {
+		tag = TUR
+		not = { ideology = paternal_autocrat }
+		ideology_group = fascism
+		not = { head_of_government = 12012 }
+		not = { has_country_flag = "12012_removed" }
+	}
+	
+	title = "Zeki Velidi Togan"
+	desc = "After the right wing gained power in Turkey, Zeki Velidi Togan formed a government."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 12012
+	}
+
+}
+
+# Social Liberal/Democrat
+
+country_event = {
+
+	id = 4528
+	
+	trigger = {
+		tag = TUR
+		or = {
+			ideology = social_liberal
+			ideology = social_democrat
+		}
+		not = { head_of_government = 12013 }
+		not = { has_country_flag = "12013_removed" }
+	}
+	
+	title = "Ali Fethi Okyar"
+	desc = "Ali Fethi Okyar was the leader of the left-leaning democratic parties in Turkey until his death."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 12013
+	}
+
+}
+
+country_event = {
+
+	id = 4529
+	
+	trigger = {
+		tag = TUR
+		or = {
+			ideology = social_liberal
+			ideology = social_democrat
+		}
+		not = { head_of_government = 12046 }
+		not = { has_country_flag = "12046_removed" }
+		has_country_flag = "12013_removed"
+	}
+	
+	title = "Adnan Menderes"
+	desc = "Adnan Menderes was the leader of the left-leaning democratic parties in Turkey after the death of Ali Fethi Okyar."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 12046
+	}
+
+}
+
+# Social Conservative
+
+country_event = {
+
+	id = 4530
+	
+	trigger = {
+		tag = TUR
+		ideology = social_conservative
+		not = { head_of_government = 12098 }
+		not = { has_country_flag = "12098_removed" }
+	}
+	
+	title = "Kâzim Karabekir"
+	desc = "Kâzim Karabekir was the leader of the Millet Partisi of Turkey."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 12098
+	}
+
+}
+
+# Market Liberal
+
+country_event = {
+
+	id = 4531
+	
+	trigger = {
+		tag = TUR
+		ideology = market_liberal
+		not = { head_of_government = 12032 }
+		not = { head_of_state = 12032 }
+		not = { has_country_flag = "12032_removed" }
+	}
+	
+	title = "Celâl Bayar"
+	desc = "Celâl Bayar was the leader of the Demokrat Parti of Turkey until his death."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 12032
+	}
+
+}
+
+country_event = {
+
+	id = 4532
+	
+	trigger = {
+		tag = TUR
+		ideology = market_liberal
+		head_of_state = 12032
+		not = { head_of_government = 12046 }
+		not = { has_country_flag = "12046_removed" }
+	}
+	
+	title = "Adnan Menderes"
+	desc = "When Celâl Bayar became President of Turkey after the death of Mustafa Kemal Atatürk, he appointed Adnan Menderes as Prime Minister."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 12046
+	}
+
+}
+
+# Paternal Autocrat
+
+country_event = {
+
+	id = 4533
+	
+	trigger = {
+		tag = TUR
+		ideology = paternal_autocrat
+		not = { head_of_government = 12002 }
+		not = { head_of_state = 12002 }
+		not = { has_country_flag = "12002_removed" }
+		not = { has_country_flag = "ismet_inonu_removed" }
+	}
+	
+	title = "Ismet Inönü"
+	desc = "Ismet Inönü was the Prime Minister of Turkey in the mid '30s."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 12002
+	}
+
+}
+
+country_event = {
+
+	id = 4534
+	
+	trigger = {
+		tag = TUR
+		ideology = paternal_autocrat
+		not = { head_of_government = 12032 }
+		not = { has_country_flag = "12032_removed" }
+		has_country_flag = "ismet_inonu_removed"
+		not = { has_country_flag = "celal_bayar_removed" }
+	}
+	
+	title = "Celâl Bayar"
+	desc = "Celâl Bayar became Prime Minister of Turkey after Ismet Inönü's resignation."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 12032
+	}
+
+}
+
+country_event = {
+
+	id = 4535
+	
+	trigger = {
+		tag = TUR
+		ideology = paternal_autocrat
+		not = { head_of_government = 12033 }
+		not = { has_country_flag = "12033_removed" }
+		has_country_flag = "celal_bayar_removed"
+	}
+	
+	title = "Refik Saydam"
+	desc = "Refik Saydam followed Celâl Bayar as Prime Minister of Turkey."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 12033
+	}
+
+}
+
+country_event = {
+
+	id = 4536
+	
+	trigger = {
+		tag = TUR
+		ideology = paternal_autocrat
+		not = { head_of_government = 12034 }
+		not = { has_country_flag = "12034_removed" }
+		has_country_flag = "12033_removed"
+		has_country_flag = "celal_bayar_removed"
+	}
+	
+	title = "Sükrü Saracoglu"
+	desc = "Sükrü Saracoglu followed Refik Saydam as Prime Minister of Turkey."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 12034
+	}
+
+}
+
+country_event = {
+
+	id = 4537
+	
+	trigger = {
+		tag = TUR
+		ideology = paternal_autocrat
+		not = { head_of_government = 12067 }
+		not = { has_country_flag = "12067_removed" }
+		has_country_flag = "12034_removed"
+		has_country_flag = "celal_bayar_removed"
+	}
+	
+	title = "Mehmet Recep Peker"
+	desc = "Mehmet Recep Peker followed Sükrü Saracoglu as Prime Minister of Turkey."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 12067
+	}
+
+}
+
+country_event = {
+
+	id = 4538
+	
+	trigger = {
+		tag = TUR
+		ideology = paternal_autocrat
+		not = { head_of_government = 12038 }
+		not = { has_country_flag = "12038_removed" }
+		has_country_flag = "12067_removed"
+		has_country_flag = "celal_bayar_removed"
+	}
+	
+	title = "Hasan Saka"
+	desc = "Hasan Saka followed Mehmet Recep Peker as Prime Minister of Turkey."
+	picture = "politician"
+	
+	option = {
+		name = "OK"
+		head_of_government = 12038
+	}
+
+}

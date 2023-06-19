@@ -1,0 +1,573 @@
+#########################
+# The End of Tannu Tuva #
+#########################
+country_event = {
+	
+	id = 2101
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2102"
+	desc = "EVTDESC2102"
+	picture = "tannu_tuva"
+
+	option = {
+		name = "EVTOPTA2101"			# Sign the agreement
+		any_owned = {
+			limit = { is_core = THIS }
+			add_core = FROM
+			add_core = RUS
+		}
+		FROM = { split_troops = 1.0 }
+		FROM = { inherit = THIS }
+	}
+}
+
+#########################################
+# Political turmoil and the Great Purge #
+#########################################
+
+country_event = {
+
+	id = 2103
+	
+	major = yes
+
+	trigger = {
+		tag = SOV
+		head_of_government = 4002
+		not = { has_country_modifier = "soviet_political_turmoil" }
+		not = { has_country_flag = "the_great_officer_purge" }
+		war = no
+	}
+
+	title = "Political turmoil"
+	desc = "Internal struggle in the Communist Party is threathening the Motherland!"
+	picture = "soviet_law"
+
+	option = {
+		name = "This can't be good..."
+		add_country_modifier = {
+			name = "soviet_political_turmoil"
+			duration = -1
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 2104
+	
+	major = yes
+
+	trigger = {
+		tag = SOV
+		year = 1937
+		head_of_government = 4002
+		has_country_modifier = "soviet_political_turmoil"
+		not = { has_country_modifier = "soviet_opposition" }
+		not = { has_country_flag = "the_great_officer_purge" }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	title = "Political turmoil"
+	desc = "The struggle for power has reached the point where it directly undermines Soviet rule! We need to take steps!"
+	picture = "soviet_law"
+
+	option = {
+		name = "Things are getting out of hand..."
+		add_country_modifier = {
+			name = "soviet_opposition"
+			duration = -1
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 2105
+	
+	major = yes
+	
+	trigger = {
+		tag = SOV
+		has_country_flag = "the_great_officer_purge"
+		not = { has_country_flag = "the_great_purge_1" }
+		not = { has_country_flag = "great_war" }
+		war = no
+	}
+	
+	title = "The Great Purge"
+	desc = "The enemies of the workers must be dealt with, using force if necessary!"
+	picture = "soviet_law"
+	
+	option = {
+		name = "Purge the traitors!"
+		ai_chance = { factor = 100 }	# The first wave is mandatory if you made the decision
+		set_country_flag = "the_great_purge_1"
+		add_country_modifier = {
+			name = "the_great_purge_1"
+			duration = 450
+		}
+		
+		dissent = 2
+		national_unity = 5
+
+		remove_minister = 4066		# Smushkevich
+		set_country_flag = "4066_removed"
+		remove_minister = 4010		# Alksnis
+		set_country_flag = "4010_removed"
+		chief_of_air = 4064			# Loktionov	
+		
+		kill_leader = 10322
+		kill_leader = 10349
+		kill_leader = 10369
+		kill_leader = 10370
+		kill_leader = 10371
+		kill_leader = 10401
+		kill_leader = 10417
+		kill_leader = 10453
+		kill_leader = 10463
+		kill_leader = 10472
+		kill_leader = 10477
+		kill_leader = 9839
+		kill_leader = 9841
+		kill_leader = 9843
+		kill_leader = 9884
+		kill_leader = 9894
+		kill_leader = 9896
+		kill_leader = 9900
+		kill_leader = 9907
+		kill_leader = 9910
+		kill_leader = 9926
+		kill_leader = 9930
+		kill_leader = 9951
+		kill_leader = 9955	
+	}
+}
+
+country_event = {
+
+	id = 2106
+	
+	major = yes
+	
+	trigger = {
+		tag = SOV
+		has_country_flag = "the_great_officer_purge"
+		has_country_flag = "the_great_purge_1"
+		not = { has_country_flag = "the_great_purge_2" }
+		not = { has_country_flag = "great_war" }
+		not = { has_country_modifier = "the_great_purge_1" }
+		war = no
+	}
+	
+	title = "The Great Purge"
+	desc = "The enemies of the workers must be dealt with, using force if necessary!"
+	picture = "soviet_law"
+	
+	option = {
+		name = "Purge the traitors!"
+		ai_chance = {
+			factor = 99
+			modifier = { factor = 0.0 GER = { war_with = FRA } not = { non_aggression_pact = GER } }
+		}
+		set_country_flag = "the_great_purge_2"
+		add_country_modifier = {
+			name = "the_great_purge_2"
+			duration = 600
+		}
+		
+		dissent = 3
+		national_unity = 10
+		
+		remove_minister = 4005			# Yagoda
+		set_country_flag = "4005_removed"
+		minister_of_security = 4031		# Yezhov
+		remove_minister = 4006			# Berzin
+		set_country_flag = "4006_removed"
+		minister_of_intelligence = 4031	# Yezhov
+		
+		kill_leader = 10006
+		kill_leader = 10016
+		kill_leader = 10019
+		kill_leader = 10028
+		kill_leader = 10031
+		kill_leader = 10042
+		kill_leader = 10054
+		kill_leader = 10066
+		kill_leader = 10071
+		kill_leader = 10114
+		kill_leader = 10115
+		kill_leader = 10137
+		kill_leader = 10138
+		kill_leader = 10202
+		kill_leader = 10208
+		kill_leader = 10215
+		kill_leader = 10253
+		kill_leader = 10271
+		kill_leader = 10276
+		kill_leader = 10283
+		kill_leader = 10286
+		kill_leader = 10297
+		kill_leader = 9969
+		kill_leader = 9974
+		kill_leader = 9991
+		kill_leader = 9993	
+	}
+	option = {
+		name = "Maybe that's a little extreme..."
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = "the_great_purge_2"
+		set_country_flag = "the_great_purge_3"
+	}
+}
+
+country_event = {
+
+	id = 2107
+	
+	major = yes
+	
+	trigger = {
+		tag = SOV
+		has_country_flag = "the_great_officer_purge"
+		has_country_flag = "the_great_purge_2"
+		not = { has_country_flag = "the_great_purge_3" }
+		not = { has_country_flag = "great_war" }
+		not = { has_country_modifier = "the_great_purge_2" }
+		war = no
+	}
+	
+	title = "The Great Purge"
+	desc = "The enemies of the workers must be dealt with, using force if necessary!"
+	picture = "soviet_law"
+	
+	option = {
+		name = "Purge the traitors!"
+		ai_chance = {
+			factor = 99
+			modifier = { factor = 0.0 GER = { war_with = FRA } not = { non_aggression_pact = GER } }
+		}
+		set_country_flag = "the_great_purge_3"
+		add_country_modifier = {
+			name = "the_great_purge_3"
+			duration = 750
+		}
+		
+		dissent = 5
+		national_unity = 15
+		
+		remove_minister = 4007		# Tukhachevsky
+		set_country_flag = "4007_removed"
+		chief_of_staff = 4051		# Shaposhnikov
+		remove_minister = 4009		# Orlov
+		set_country_flag = "4009_removed"
+		chief_of_navy = 4061		# Viktorov
+		
+		kill_leader = 10342
+		kill_leader = 10500
+		kill_leader = 10514
+		kill_leader = 10515
+		kill_leader = 10516
+		kill_leader = 10517
+		kill_leader = 10518
+		kill_leader = 10520
+		kill_leader = 10521
+		kill_leader = 10522
+	}
+	option = {
+		name = "Maybe that's a little extreme..."
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = "the_great_purge_3"
+	}
+}
+
+country_event = {
+
+	id = 2110
+	
+	trigger = {
+		tag = SOV
+		not = { head_of_government = 4002 }
+		or = {
+			has_country_modifier = "soviet_political_turmoil"
+			has_country_modifier = "soviet_opposition"
+		}
+	}
+	
+	title = "End of Stalinism"
+	desc = "With the removal of Stalin from the leadership, the political situation can finally get stabilized."
+	picture = "politics1"
+
+	option = {
+		name = "Finally!"
+		remove_country_modifier = "soviet_political_turmoil"
+		remove_country_modifier = "soviet_opposition"
+	}
+	
+}
+
+############################
+# Transfer of the Industry #
+############################
+
+country_event = {
+
+	id = 2115
+	
+	trigger = {
+		tag = SOV
+		not = { has_country_flag = "soviet_industry_transfer_first_wave" }
+		has_country_flag = "industry_transfered_to_siberia_v1"
+		manpower = 60
+		soviet_industry_transfer_region = { controlled_by = THIS }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	title = "First wave complete"
+	desc = "The first wave of the transfer of our industry behind the Urals is complete!"
+	picture = "factory"
+	
+	option = {
+		name = "Finally!"
+		set_country_flag = "soviet_industry_transfer_first_wave"
+		# Six new factories.
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		manpower = -60
+		national_unity = 3
+	}
+
+}
+
+country_event = {
+
+	id = 2116
+	
+	trigger = {
+		tag = SOV
+		has_country_flag = "soviet_industry_transfer_first_wave"
+		not = { has_country_flag = "soviet_industry_transfer_second_wave" }
+		has_country_flag = "industry_transfered_to_siberia_v2"
+		manpower = 40
+		soviet_industry_transfer_region = { controlled_by = THIS }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	title = "Second wave complete"
+	desc = "The second wave of the transfer of our industry behind the Urals is complete!"
+	picture = "factory"
+	
+	option = {
+		name = "Finally!"
+		set_country_flag = "soviet_industry_transfer_second_wave"
+		# Four new factories.
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		manpower = -40
+		national_unity = 1
+	}
+
+}
+
+country_event = {
+
+	id = 2117
+	
+	trigger = {
+		tag = SOV
+		has_country_flag = "soviet_industry_transfer_second_wave"
+		not = { has_country_flag = "soviet_industry_transfer_third_wave" }
+		has_country_flag = "industry_transfered_to_siberia_v2"
+		manpower = 50
+		soviet_industry_transfer_region = { controlled_by = THIS }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	title = "Third wave complete"
+	desc = "The third wave of the transfer of our industry behind the Urals is complete!"
+	picture = "factory"
+	
+	option = {
+		name = "Finally!"
+		set_country_flag = "soviet_industry_transfer_third_wave"
+		# Five new factories.
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		manpower = -50
+		national_unity = 1
+	}
+
+}
+
+country_event = {
+
+	id = 2118
+	
+	trigger = {
+		tag = SOV
+		has_country_flag = "soviet_industry_transfer_third_wave"
+		not = { has_country_flag = "soviet_industry_transfer_fourth_wave" }
+		has_country_flag = "industry_transfered_to_siberia_v3"
+		manpower = 60
+		soviet_industry_transfer_region = { controlled_by = THIS }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	title = "Fourth wave complete"
+	desc = "The fourth wave of the transfer of our industry behind the Urals is complete!"
+	picture = "factory"
+	
+	option = {
+		name = "Finally!"
+		set_country_flag = "soviet_industry_transfer_fourth_wave"
+		# Six new factories.
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		manpower = -60
+		national_unity = 1
+	}
+
+}
+
+country_event = {
+
+	id = 2119
+	
+	trigger = {
+		tag = SOV
+		has_country_flag = "soviet_industry_transfer_fourth_wave"
+		not = { has_country_flag = "soviet_industry_transfer_fifth_wave" }
+		has_country_flag = "industry_transfered_to_siberia_v3"
+		manpower = 70
+		soviet_industry_transfer_region = { controlled_by = THIS }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	title = "Fifth wave complete"
+	desc = "The fifth wave of the transfer of our industry behind the Urals is complete!"
+	picture = "factory"
+	
+	option = {
+		name = "Finally!"
+		set_country_flag = "soviet_industry_transfer_fifth_wave"
+		# Seven new factories.
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		manpower = -70
+		national_unity = 1
+	}
+
+}
+
+country_event = {
+
+	id = 2120
+	
+	trigger = {
+		tag = SOV
+		has_country_flag = "soviet_industry_transfer_fifth_wave"
+		not = { has_country_flag = "soviet_industry_transfer_sixth_wave" }
+		has_country_flag = "industry_transfered_to_siberia_v3"
+		manpower = 90
+		soviet_industry_transfer_region = { controlled_by = THIS }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	title = "Sixth wave complete"
+	desc = "The sixth wave of the transfer of our industry behind the Urals is complete!"
+	picture = "factory"
+	
+	option = {
+		name = "Finally!"
+		set_country_flag = "soviet_industry_transfer_sixth_wave"
+		# Nine new factories.
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { region = soviet_industry_transfer_region controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		manpower = -90
+		national_unity = 1
+	}
+
+}
+
+##########################
+# Molotov Defensive Line #
+##########################
+country_event = {
+	id = 2121
+	is_triggered_only = yes
+
+	major = yes
+
+	name = "molotov_line_event_name"
+	desc = "molotov_line_event_desc"
+	picture = "factory"
+
+	option = 
+	{
+		name = "Move the Stalin Line (Historical)"
+		ai_chance = { factor = 90 }
+		load_oob = "MolotovLineB.txt"
+		stalin_line_region = { fort = -1 }
+	}
+	option = 
+	{
+		name = "Keep the Stalin Line intact"
+		ai_chance = { factor = 10 }
+		load_oob = "MolotovLineA.txt"
+	}
+	
+}

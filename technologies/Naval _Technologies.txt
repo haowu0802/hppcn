@@ -1,0 +1,1811 @@
+# Construction Material. Used for all ships, increasing hull (the hardiness of the ship) and activating ports and transport ships.
+const_material = {
+
+	activate_building = naval_base
+	activate_unit = transport_ship
+
+	battleship 		= { hull = 0.04 }
+	battlecruiser 	= { hull = 0.03 }
+	carrier 		= { hull = 0.03 }
+	heavy_cruiser 	= { hull = 0.01 }
+	escort_carrier 	= { hull = 0.02 }
+	light_cruiser 	= { hull = 0.01 }
+	destroyer 		= { hull = 0.01 }
+	submarine 		= { hull = 0.005 }
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		port_capacity = 2.25
+		naval_engineering = 0.13
+		submarine_engineering = 0.12
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 5
+	start_year = 1918
+	first_offset = 1920		#2nd model is from 1920
+	additional_offset = 4	#one new every 4 year
+	max_level = 20	
+	folder = capitalship_folder
+	can_upgrade = no
+}
+
+# Design Principles: recurring techs governing the size and overall "refinedness" of a type.
+# They give no direct bonuses to the type but serve as prerequisits for the individual components.
+destroyer_technology = {
+
+	allow_escorts = yes
+	activate_building = coastal_fort
+	activate_unit = destroyer
+
+	allow = {
+		has_global_flag = "allow_research"
+		any_owned_province = {
+			naval_base = 1
+		}
+	}
+ 
+
+	research_bonus_from = {
+		port_capacity = 0.25
+		naval_engineering = 1.38
+		destroyer_practical = 0.62
+		fleet_in_being_doctrine = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 2
+	start_year = 1918
+	first_offset = 1925		#2nd model is from 1925
+	additional_offset = 4	#one new every 4 year
+	max_level = 20
+	folder = smallship_folder
+}
+
+submarine_technology = {
+	activate_unit = submarine
+
+	allow = {
+		has_global_flag = "allow_research"
+		any_owned_province = {
+			naval_base = 2
+		}
+	}
+
+	research_bonus_from = {
+		port_capacity = 0.25
+		submarine_engineering = 1.38
+		submarine_practical = 0.62
+		sealane_interdiction_doctrine = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+	start_year = 1918
+	first_offset = 1924		#2nd model is from 1924
+	additional_offset = 4	#one new every 4 year
+	max_level = 20
+	folder = smallship_folder
+}
+
+lightcruiser_technology = {
+
+	activate_building = coastal_fort
+	activate_unit = light_cruiser
+
+	allow = {
+		has_global_flag = "allow_research"
+		any_owned_province = {
+			naval_base = 2
+		}
+	}
+
+	research_bonus_from = {
+		port_capacity = 0.50
+		naval_engineering = 1.13
+		cruiser_practical = 0.62
+		base_strike_doctrine = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+	start_year = 1918
+	first_offset = 1927		#2nd model is from 1927
+	additional_offset = 4	#one new every 4 year
+	max_level = 20
+	folder = smallship_folder
+}
+
+heavycruiser_technology = {
+
+	activate_unit = heavy_cruiser 
+
+	allow = {
+		has_global_flag = "allow_research"
+		any_owned_province = {
+			naval_base = 4
+		}
+		lightcruiser_technology = 1
+	}
+
+	research_bonus_from = {
+		port_capacity = 0.75
+		naval_engineering = 1.0
+		cruiser_practical = 0.51
+		base_strike_doctrine = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+	start_year = 1918
+	first_offset = 1927		#2nd model is from 1927
+	additional_offset = 4	#one new every 4 year
+	max_level = 20
+	folder = smallship_folder
+}
+
+battlecruiser_technology = {
+
+	activate_unit = battlecruiser 
+
+	allow = {
+		has_global_flag = "allow_research"
+		any_owned_province = {
+			naval_base = 8
+		}
+		heavycruiser_technology = 1
+	}
+
+	research_bonus_from = {
+		port_capacity = 1.00
+		naval_engineering = 1.00
+		capitalship_practical = 0.25
+		sealane_interdiction_doctrine = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+	start_year = 1918
+	first_offset = 1928		#2nd model is from 1928
+	additional_offset = 4	#one new every 4 year
+	max_level = 20
+	folder = capitalship_folder
+}
+
+battleship_technology = {
+
+	activate_unit = battleship 
+
+	allow = {
+		has_global_flag = "allow_research"
+		destroyer_technology = 1
+		any_owned_province = {
+			naval_base = 10
+		}
+	}
+
+	research_bonus_from = {
+		port_capacity = 1.00
+		naval_engineering = 1.00
+		capitalship_practical = 0.25
+		fleet_in_being_doctrine = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+	start_year = 1918
+	first_offset = 1928		#2nd model is from 1928
+	additional_offset = 4	#one new every 4 year
+	max_level = 20
+	folder = capitalship_folder
+}
+
+escort_carrier_technology = {
+	activate_unit = escort_carrier
+	escort_efficiency = 0.10
+	
+	allow = {
+		has_global_flag = "allow_research"
+		any_owned_province = {
+			naval_base = 8
+		}
+		or = {
+			carrier_technology = 1
+			heavycruiser_technology = 1
+		}
+	}
+
+	research_bonus_from = {
+		port_capacity = 0.75
+		naval_engineering = 1.12
+		carrier_practical = 0.38
+		base_strike_doctrine = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 2
+	start_year = 1918
+	first_offset = 1922		#2nd model is from 1922
+	additional_offset = 4	#one new every 4 year
+	max_level = 20
+	folder = capitalship_folder
+}
+
+carrier_technology = {
+	activate_unit = carrier
+	
+	allow = {
+		has_global_flag = "allow_research"
+		any_owned_province = {
+			naval_base = 10
+		}
+		or = {
+			battleship_technology = 1
+			battlecruiser_technology = 1
+		}
+	}
+
+	research_bonus_from = {
+		port_capacity = 1.00
+		naval_engineering = 1.00
+		carrier_practical = 0.25
+		base_strike_doctrine = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+	start_year = 1918
+	first_offset = 1922		#2nd model is from 1922
+	additional_offset = 4	#one new every 4 year
+	max_level = 20
+	folder = capitalship_folder
+}
+
+cag_development = {
+
+	activate_unit = cag
+	
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			carrier_technology = 1
+			escort_carrier_technology = 1
+		}
+		single_engine_aircraft_design = 1
+		twin_engine_aircraft_design = 1
+	}
+	
+	research_bonus_from = {
+		aeronautic_engineering = 1.75
+		single_engine_aircraft_practical = 0.50
+		carrier_practical = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 2
+	start_year = 1918
+
+	folder = capitalship_folder
+}
+
+# Armament techs
+# Increase Sea Attack, Convoy Attack, Shore Bombardment and Optimal Firing Distance, decrease Maximum Speed.
+capitalship_armament = {
+	battlecruiser = {
+		sea_attack = 1.5
+		convoy_attack = 0.25
+		shore_bombardment = 2.5
+		distance = 0.02
+		maximum_speed = -0.5
+	}
+
+	battleship = {
+		sea_attack = 2
+		convoy_attack = 0.2
+		shore_bombardment = 3
+		distance = 0.02
+		maximum_speed = -0.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			and = {
+				not = { capitalship_armament = 4 }
+				not = {
+					has_country_flag = "washington_treaty"
+					has_country_flag = "london_treaty"
+					has_country_flag = "second_london_treaty"
+				}
+				or = {
+					battleship_technology = 1
+					battlecruiser_technology = 1
+				}
+			}
+			and = {
+				not = { capitalship_armament = 5 }
+				not = {
+					has_country_flag = "washington_treaty"
+					has_country_flag = "london_treaty"
+					has_country_flag = "second_london_treaty"
+				}
+				or = {
+					battleship_technology = 2
+					battlecruiser_technology = 2
+				}
+			}
+			and = {
+				not = { capitalship_armament = 6 }
+				not = {
+					has_country_flag = "washington_treaty"
+					has_country_flag = "london_treaty"
+					has_country_flag = "second_london_treaty"
+				}
+				or = {
+					battleship_technology = 3
+					battlecruiser_technology = 3
+				}
+			}
+			and = {
+				not = { capitalship_armament = 7 }
+				not = {
+					has_country_flag = "washington_treaty"
+					has_country_flag = "london_treaty"
+					has_country_flag = "second_london_treaty"
+					has_country_flag = "escalator_clause_invoked"
+				}
+				or = {
+					battleship_technology = 4
+					battlecruiser_technology = 4
+				}
+			}
+			and = {
+				not = { capitalship_armament = 9 }
+				or = {
+					battleship_technology = 4
+					battlecruiser_technology = 4
+				}
+			}
+			and = {
+				not = { capitalship_armament = 11 }
+				or = {
+					battleship_technology = 6
+					battlecruiser_technology = 6
+				}
+			}
+		}
+		any_owned_province = {
+			naval_base = 8
+		}
+	}
+ 
+
+	research_bonus_from = {
+		port_capacity = 0.50
+		naval_engineering = 1.00
+		capitalship_practical = 0.25
+		artillery_practical = 0.50		
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+	start_year = 1918
+	first_offset = 1920		#2nd model is from 1920
+	additional_offset = 3	#one new every 3 year
+	max_level = 20
+	folder = capitalship_folder
+	can_upgrade = no
+}
+
+heavycruiser_armament = {
+	heavy_cruiser = {
+		sea_attack = 1
+		convoy_attack = 0.2
+		shore_bombardment = 1.00
+		distance = 0.01
+		maximum_speed = -0.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			and = {
+				not = { heavycruiser_armament = 4 }	# Great War Heavy Cruiser
+				heavycruiser_technology = 1			
+			}
+			and = {
+				not = { heavycruiser_armament = 5 }	# Pre Treaty Heavy Cruiser
+				heavycruiser_technology = 2
+			}
+			and = {
+				not = { heavycruiser_armament = 6 }	# Early Treaty Heavy Cruiser
+				heavycruiser_technology = 3
+			}
+			and = {
+				not = { heavycruiser_armament = 8 }	# Late Treaty Heavy Cruiser
+				heavycruiser_technology = 4
+			}
+			and = {
+				not = { heavycruiser_armament = 9 }	# Early Post Treaty Heavy Cruiser
+				heavycruiser_technology = 5
+			}
+			and = {
+				not = { heavycruiser_armament = 10 }	# Late Post Heavy Cruiser
+				heavycruiser_technology = 6
+			}
+			and = {
+				not = { heavycruiser_armament = 11 }	# Large Cruiser
+				heavycruiser_technology = 7
+			}
+		}
+		any_owned_province = {
+			naval_base = 4
+		}
+	} 
+
+	research_bonus_from = {
+		port_capacity = 0.50
+		naval_engineering = 1.00
+		cruiser_practical = 0.25
+		artillery_practical = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 1
+	start_year = 1918
+	first_offset = 1920		#2nd model is from 1920
+	additional_offset = 3	#one new every 3 year
+	max_level = 20
+	folder = smallship_folder
+	can_upgrade = no
+}
+
+lightcruiser_armament = {
+	light_cruiser = {
+		sea_attack = 0.5
+		convoy_attack = 0.2
+		shore_bombardment = 0.5
+		distance = 0.01
+		maximum_speed = -0.66
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			and = {
+				not = { lightcruiser_armament = 4 }	# Great War Light Cruiser
+				lightcruiser_technology = 1			
+			}
+			and = {
+				not = { lightcruiser_armament = 5 }	# Pre Treaty Light Cruiser
+				lightcruiser_technology = 2
+			}
+			and = {
+				not = { lightcruiser_armament = 6 }	# Early Treaty Light Cruiser
+				lightcruiser_technology = 3
+			}
+			and = {
+				not = { lightcruiser_armament = 8 }	# Late Treaty Light Cruiser
+				lightcruiser_technology = 4
+			}
+			and = {
+				not = { lightcruiser_armament = 9 }	# Post Treaty Light Cruiser
+				lightcruiser_technology = 5
+			}
+			and = {
+				not = { lightcruiser_armament = 10 }	# Early AA Light Cruiser
+				lightcruiser_technology = 6
+			}
+			and = {
+				not = { lightcruiser_armament = 11 }	# Late AA Light Cruiser
+				lightcruiser_technology = 7
+			}
+		}
+		any_owned_province = {
+			naval_base = 2
+		}
+	}
+ 
+
+	research_bonus_from = {
+		port_capacity = 0.50
+		naval_engineering = 1.00
+		cruiser_practical = 0.25
+		artillery_practical = 0.50
+	}
+	
+	on_completion = no_theory
+	difficulty = 1
+	start_year = 1918
+	first_offset = 1920		#2nd model is from 1920
+	additional_offset = 3	#one new every 3 year
+	max_level = 20
+	folder = smallship_folder
+	can_upgrade = no
+}
+
+# Main gun for Destroyers, main AA gun for other ships
+multi_purpose_guns = {
+	escort_efficiency = 0.05
+	destroyer = {
+		sea_attack = 0.125
+		convoy_attack = 0.2
+		air_attack = 0.5
+		air_defence = 0.66
+		maximum_speed = -1.50
+	}
+	light_cruiser = {
+		air_attack = 0.50
+		air_defence = 1.00
+	}
+	heavy_cruiser = {
+		air_attack = 0.50
+		air_defence = 1.00
+	}
+	battleship = {
+		air_attack = 0.50
+		air_defence = 1.00
+	}
+	battlecruiser = {
+		air_attack = 0.50
+		air_defence = 1.00
+	}
+	carrier = {
+		air_attack = 0.25
+		air_defence = 0.50
+	}
+	escort_carrier = {
+		air_attack = 0.25
+		air_defence = 0.50
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		heavy_aa_guns = 1
+		any_owned_province = {
+			naval_base = 1
+		}
+	}
+ 
+
+	research_bonus_from = {
+		port_capacity = 0.50
+		naval_engineering = 1.00
+		destroyer_practical = 0.25
+		artillery_practical = 0.50
+	}
+	
+	on_completion = no_theory
+	difficulty = 2
+	start_year = 1918
+	first_offset = 1920		#2nd model is from 1920
+	additional_offset = 3	#one new every 3 year
+	max_level = 20
+	folder = smallship_folder
+	can_upgrade = no
+}
+
+# AA gun for Destroyers, secondary AA gun for other ships
+light_antiaircraft = {
+	destroyer = {
+		air_attack = 0.375
+		air_defence = 0.33
+	}
+	light_cruiser = {
+		air_attack = 0.25
+		air_defence = 0.50
+	}
+	heavy_cruiser = {
+		air_attack = 0.25
+		air_defence = 0.50
+	}
+	battlecruiser = {
+		air_attack = 0.25
+		air_defence = 0.50
+	}
+	escort_carrier = {
+		air_attack = 0.125
+		air_defence = 0.25
+	}
+	battleship = {
+		air_attack = 0.25
+		air_defence = 0.50
+	}
+	carrier = {
+		air_attack = 0.125
+		air_defence = 0.25
+	}
+	submarine = {
+		air_attack =  0.25
+		air_defence = 1.00
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			and = {
+				not = { light_antiaircraft = 1 }	# Great War Destroyer
+				destroyer_technology = 1			
+			}
+			and = {
+				not = { light_antiaircraft = 3 }	# Late Interwar Destroyer
+				destroyer_technology = 4
+			}
+			and = {
+				not = { light_antiaircraft = 5 }	# Early War Destroyer
+				destroyer_technology = 5
+			}
+			and = {
+				not = { light_antiaircraft = 7 }	# Mid War Destroyer
+				destroyer_technology = 6
+			}
+			and = {
+				not = { light_antiaircraft = 9 }	# Late War Destroyer
+				destroyer_technology = 7
+			}
+		}
+		any_owned_province = {
+			naval_base = 1
+		}
+	}
+ 
+	research_bonus_from = {
+		port_capacity = 0.50
+		naval_engineering = 1.50
+		destroyer_practical = 0.25
+		artillery_practical = 0.25
+	}
+	
+	on_completion = no_theory
+
+	change = no
+	difficulty = 1
+	start_year = 1920
+	first_offset = 1934		#2nd model is from 1934
+	additional_offset = 2	#one new every 2 year
+	max_level = 20
+	folder = smallship_folder
+	can_upgrade = yes
+}
+
+# Torpedoes both for Destroyers and Submarines
+torpedoes = {
+	submarine = {
+		sea_attack = 0.25
+		convoy_attack = 0.75
+		distance = 0.02
+	}
+	destroyer = {
+		sea_attack = 0.25
+		distance = 0.01
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			and = {
+				not = { torpedoes = 2 }
+				or = {
+					submarine_technology = 1
+					destroyer_technology = 1
+				}
+			}
+			and = {
+				not = { torpedoes = 3 }
+				or = {
+					submarine_technology = 2
+					destroyer_technology = 1
+				}
+			}
+			and = {
+				not = { torpedoes = 4 }
+				or = {
+					submarine_technology = 2
+					destroyer_technology = 2
+				}
+			}
+			and = {
+				not = { torpedoes = 5 }
+				or = {
+					submarine_technology = 3
+					destroyer_technology = 3
+				}
+			}
+			and = {
+				not = { torpedoes = 6 }
+				or = {
+					submarine_technology = 4
+					destroyer_technology = 4
+				}
+			}
+			and = {
+				not = { torpedoes = 7 }
+				or = {
+					submarine_technology = 5
+					destroyer_technology = 4
+				}
+			}
+			and = {
+				not = { torpedoes = 8 }
+				or = {
+					submarine_technology = 5
+					destroyer_technology = 5
+				}
+			}
+			and = {
+				not = { torpedoes = 9 }
+				or = {
+					submarine_technology = 6
+					destroyer_technology = 6
+				}
+			}
+			and = {
+				not = { torpedoes = 10 }
+				or = {
+					submarine_technology = 7
+					destroyer_technology = 7
+				}
+			}
+		}
+		any_owned_province = {
+			naval_base = 1
+		}
+	} 
+
+	research_bonus_from = {
+		submarine_engineering = 1.50
+		naval_engineering = 0.25
+		submarine_practical = 0.25
+		port_capacity = 0.50
+	}
+	
+	on_completion = no_theory
+
+	change = no
+	difficulty = 2
+	start_year = 1918
+	first_offset = 1921		#2nd model is from 1921
+	additional_offset = 3	#one new every 3 year
+	max_level = 20
+	folder = smallship_folder
+	can_upgrade = yes
+}
+
+# Engines. Increases Sea Defense, Maximum Speed and Fuel Consumption. Represent BETTER engines, but not necessarely bigger ones!
+capital_ship_engine = {
+	battleship = {
+		maximum_speed = 1.5
+		fuel_consumption = 0.01
+		sea_defence = 0.25
+		range = 450
+	}
+	battlecruiser = {
+		maximum_speed = 1.5
+		fuel_consumption = 0.01
+		sea_defence = 0.5
+		range = 450
+	}
+	carrier = {
+		maximum_speed = 1.5
+		fuel_consumption = 0.01
+		sea_defence = 0.5
+		range = 550
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			and = {
+				not = { capital_ship_engine = 4 }
+				or = {
+					battleship_technology = 1
+					battlecruiser_technology = 1
+					carrier_technology = 1
+				}
+			}
+			and = {
+				not = { capital_ship_engine = 5 }
+				or = {
+					battleship_technology = 2
+					battlecruiser_technology = 2
+					carrier_technology = 2
+				}
+			}
+			and = {
+				not = { capital_ship_engine = 6 }
+				or = {
+					battleship_technology = 3
+					battlecruiser_technology = 3
+					carrier_technology = 3
+				}
+			}
+			and = {
+				not = { capital_ship_engine = 8 }
+				or = {
+					battleship_technology = 4
+					battlecruiser_technology = 4
+					carrier_technology = 4
+				}
+			}
+			and = {
+				not = { capital_ship_engine = 9 }
+				or = {
+					battleship_technology = 5
+					battlecruiser_technology = 5
+					carrier_technology = 5
+				}
+			}
+			and = {
+				not = { capital_ship_engine = 10 }
+				or = {
+					battleship_technology = 6
+					battlecruiser_technology = 6
+					carrier_technology = 6
+				}
+			}
+			and = {
+				not = { capital_ship_engine = 11 }
+				or = {
+					battleship_technology = 7
+					battlecruiser_technology = 7
+					carrier_technology = 7
+				}
+			}
+		}
+		any_owned_province = {
+			naval_base = 10
+		}
+	}
+ 
+
+	research_bonus_from = {
+		port_capacity = 1.00
+		naval_engineering = 1.00
+		capitalship_practical = 0.25
+		fleet_in_being_doctrine = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+	start_year = 1918
+	first_offset = 1921		#2nd model is from 1921
+	additional_offset = 3	#one new every 3 year
+	max_level = 20
+	folder = capitalship_folder
+	can_upgrade = no
+}
+
+cruiser_engine = {
+	heavy_cruiser = {
+		maximum_speed = 1.5
+		fuel_consumption = 0.01
+		sea_defence = 1.0
+		range = 375
+	}
+	light_cruiser = {
+		maximum_speed = 2.0
+		fuel_consumption = 0.01
+		sea_defence = 1.5
+		range = 375
+	}
+	escort_carrier = {
+		maximum_speed = 0.5
+		fuel_consumption = 0.01
+		sea_defence = 1.0
+		range = 400
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			and = {
+				not = { heavycruiser_engine = 3 }
+				or = {
+					heavycruiser_technology = 1
+					lightcruiser_technology = 1
+					escort_carrier_technology = 1
+				}
+			}
+			and = {
+				not = { heavycruiser_engine = 5 }
+				or = {
+					heavycruiser_technology = 2
+					lightcruiser_technology = 2
+					escort_carrier_technology = 2
+				}
+			}
+			and = {
+				not = { heavycruiser_engine = 6 }
+				or = {
+					heavycruiser_technology = 3
+					lightcruiser_technology = 3
+					escort_carrier_technology = 3
+				}
+			}
+			and = {
+				not = { heavycruiser_engine = 7 }
+				or = {
+					heavycruiser_technology = 4
+					lightcruiser_technology = 4
+					escort_carrier_technology = 4
+				}
+			}
+			and = {
+				not = { heavycruiser_engine = 9 }
+				or = {
+					heavycruiser_technology = 5
+					lightcruiser_technology = 5
+					escort_carrier_technology = 5
+				}
+			}
+			and = {
+				not = { heavycruiser_engine = 10 }
+				or = {
+					heavycruiser_technology = 6
+					lightcruiser_technology = 6
+					escort_carrier_technology = 6
+				}
+			}
+			and = {
+				not = { heavycruiser_engine = 11 }
+				or = {
+					heavycruiser_technology = 7
+					lightcruiser_technology = 7
+					escort_carrier_technology = 7
+				}
+			}
+		}
+		any_owned_province = {
+			naval_base = 4
+		}
+	}
+ 
+
+	research_bonus_from = {
+		port_capacity = 1.00
+		naval_engineering = 1.00
+		cruiser_practical = 0.25
+		base_strike_doctrine = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 2
+	start_year = 1918
+	first_offset = 1921		#2nd model is from 1921
+	additional_offset = 3	#one new every 3 year
+	max_level = 20
+	folder = smallship_folder
+	can_upgrade = no
+}
+
+destroyer_engine = {
+	destroyer = {
+		maximum_speed = 2.0
+		fuel_consumption = 0.01
+		sea_defence = 2.0
+		range = 300		
+	}
+	escort_efficiency = 0.05
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			and = {
+				not = { destroyer_engine = 3 }	# Great War Destroyer
+				destroyer_technology = 1			
+			}
+			and = {
+				not = { destroyer_engine = 4 }	# Early Interwar Destroyer
+				destroyer_technology = 2
+			}
+			and = {
+				not = { destroyer_engine = 5 }	# Interwar Destroyer
+				destroyer_technology = 3
+			}
+			and = {
+				not = { destroyer_engine = 7 }	# Late Interwar Destroyer
+				destroyer_technology = 4
+			}
+			and = {
+				not = { destroyer_engine = 8 }	# Early War Destroyer
+				destroyer_technology = 5
+			}
+			and = {
+				not = { destroyer_engine = 9 }	# Mid War Destroyer
+				destroyer_technology = 6
+			}
+			and = {
+				not = { destroyer_engine = 11 }	# Late War Destroyer
+				destroyer_technology = 7
+			}
+		}
+		any_owned_province = {
+			naval_base = 1
+		}
+	}
+ 
+	research_bonus_from = {
+		port_capacity = 0.50
+		naval_engineering = 1.50
+		destroyer_practical = 0.25
+		fleet_in_being_doctrine = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 1
+	start_year = 1918
+	first_offset = 1921		#2nd model is from 1921
+	additional_offset = 3	#one new every 3 year
+	max_level = 20
+	folder = smallship_folder
+	can_upgrade = no
+}
+
+submarine_engine = {
+	submarine = {
+		fuel_consumption = 0.015
+		sea_defence = 2.0
+		visibility = -0.5
+		range = 250		
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			and = {
+				not = { submarine_engine = 2 }	# Great War Submarine
+				submarine_technology = 1			
+			}
+			and = {
+				not = { submarine_engine = 4 }	# Interwar Subcruiser
+				submarine_technology = 2
+			}
+			and = {
+				not = { submarine_engine = 5 }	# Treaty Submarine
+				submarine_technology = 3
+			}
+			and = {
+				not = { submarine_engine = 6 }	# Post Treaty Coastal Submarine
+				submarine_technology = 4
+			}
+			and = {
+				not = { submarine_engine = 8 }	# Post Treaty Oceangoing Submarine
+				submarine_technology = 5
+			}
+			and = {
+				not = { submarine_engine = 9 }	# Fleet Submarine
+				submarine_technology = 6
+			}
+			and = {
+				not = { submarine_engine = 10 }	# Semi-Modern Submarine
+				submarine_technology = 7
+			}
+		}
+		any_owned_province = {
+			naval_base = 2
+		}
+	}
+ 
+	research_bonus_from = {
+		port_capacity = 0.50
+		submarine_engineering = 1.00
+		submarine_practical = 0.25
+		sealane_interdiction_doctrine = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 1
+	start_year = 1918
+	first_offset = 1921		#2nd model is from 1921
+	additional_offset = 3	#one new every 3 year
+	max_level = 20
+	folder = smallship_folder
+	can_upgrade = no
+}
+
+# Armour. Only Capital Ships and Cruisers have Armour, Destroyers and Submarines don't. Increases Hull, Air Defence and Fuel Consumption, decreases Range and Maximum Speed.
+capital_ship_armor = {
+	battleship = {
+		hull = 0.05
+		air_defence = 0.25
+		maximum_speed = -1.0
+		fuel_consumption = 0.01
+		range = -400
+	}
+	battlecruiser = {
+		hull = 0.04
+		air_defence = 0.25
+		maximum_speed = -1.0
+		fuel_consumption = 0.01
+		range = -400
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			and = {
+				not = { capital_ship_armor = 1 }
+				or = {
+					battleship_technology = 1
+					battlecruiser_technology = 1
+				}
+			}
+			and = {
+				not = { capital_ship_armor = 3 }
+				or = {
+					battleship_technology = 2
+					battlecruiser_technology = 2
+				}
+			}
+			and = {
+				not = { capital_ship_armor = 4 }
+				or = {
+					battleship_technology = 3
+					battlecruiser_technology = 3
+				}
+			}
+			and = {
+				not = { capital_ship_armor = 5 }
+				or = {
+					battleship_technology = 4
+					battlecruiser_technology = 4
+				}
+			}
+			and = {
+				not = { capital_ship_armor = 7 }
+				or = {
+					battleship_technology = 5
+					battlecruiser_technology = 5
+				}
+			}
+			and = {
+				not = { capital_ship_armor = 8 }
+				or = {
+					battleship_technology = 6
+					battlecruiser_technology = 6
+				}
+			}
+			and = {
+				not = { capital_ship_armor = 9 }
+				or = {
+					battleship_technology = 7
+					battlecruiser_technology = 7
+				}
+			}
+		}
+		any_owned_province = {
+			naval_base = 6
+		}
+	}
+ 
+	research_bonus_from = {
+		port_capacity = 1.00
+		naval_engineering = 1.00
+		capitalship_practical = 0.25
+		fleet_in_being_doctrine = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+	start_year = 1918
+	first_offset = 1927		#2nd model is from 1927
+	additional_offset = 3	#one new every 3 year
+	max_level = 20
+	folder = capitalship_folder
+	can_upgrade = no
+}
+
+deck_armor = {
+	carrier = {
+		hull = 0.04
+		air_defence = 1.5
+		maximum_speed = -1.0
+		fuel_consumption = 0.01
+		range = -300
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			and = {
+				not = { deck_armor = 1 }
+				carrier_technology = 1
+			}
+			and = {
+				not = { deck_armor = 2 }
+				carrier_technology = 3
+			}
+			and = {
+				not = { deck_armor = 3 }
+				carrier_technology = 4
+			}
+			and = {
+				not = { deck_armor = 5 }
+				carrier_technology = 5
+			}
+			and = {
+				not = { deck_armor = 6 }
+				carrier_technology = 6
+			}
+			and = {
+				not = { deck_armor = 7 }
+				carrier_technology = 7
+			}
+			and = {
+				not = { deck_armor = 9 }
+				carrier_technology = 8
+			}
+		}
+		any_owned_province = {
+			naval_base = 6
+		}
+	}
+ 
+	research_bonus_from = {
+		naval_engineering = 1.50
+		carrier_practical = 0.50
+		base_strike_doctrine = 0.25
+		air_doctrine_practical = 0.25
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 3
+	start_year = 1918
+	first_offset = 1927		#2nd model is from 1927
+	additional_offset = 3	#one new every 3 year
+	max_level = 20
+	folder = capitalship_folder
+	can_upgrade = no
+}
+
+cruiser_armor = {
+	heavy_cruiser = {
+		hull = 0.02
+		air_defence = 0.25
+		maximum_speed = -1.0
+		fuel_consumption = 0.01
+		range = -350
+	}
+	light_cruiser = {
+		hull = 0.02
+		air_defence = 0.25
+		maximum_speed = -1.33
+		fuel_consumption = 0.01
+		range = -350
+	}
+	escort_carrier = {
+		hull = 0.01
+		air_defence = 0.25
+		maximum_speed = -0.5
+		fuel_consumption = 0.01
+		range = -350
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			and = {
+				not = { cruiser_armor = 1 }
+				or = {
+					heavycruiser_technology = 1
+					lightcruiser_technology = 1
+					escort_carrier_technology = 1
+				}
+			}
+			and = {
+				not = { cruiser_armor = 2 }
+				or = {
+					heavycruiser_technology = 1
+					lightcruiser_technology = 1
+					escort_carrier_technology = 1
+				}
+			}
+			and = {
+				not = { cruiser_armor = 3 }
+				or = {
+					heavycruiser_technology = 2
+					lightcruiser_technology = 2
+					escort_carrier_technology = 2
+				}
+			}
+			and = {
+				not = { cruiser_armor = 4 }
+				or = {
+					heavycruiser_technology = 3
+					lightcruiser_technology = 3
+					escort_carrier_technology = 3
+				}
+			}
+			and = {
+				not = { cruiser_armor = 5 }
+				or = {
+					heavycruiser_technology = 4
+					lightcruiser_technology = 4
+					escort_carrier_technology = 4
+				}
+			}
+			and = {
+				not = { cruiser_armor = 6 }
+				or = {
+					heavycruiser_technology = 5
+					lightcruiser_technology = 5
+					escort_carrier_technology = 5
+				}
+			}
+			and = {
+				not = { cruiser_armor = 7 }
+				or = {
+					heavycruiser_technology = 6
+					lightcruiser_technology = 6
+					escort_carrier_technology = 6
+				}
+			}
+			and = {
+				not = { cruiser_armor = 8 }
+				or = {
+					heavycruiser_technology = 7
+					lightcruiser_technology = 7
+					escort_carrier_technology = 7
+				}
+			}
+			and = {
+				not = { cruiser_armor = 9 }
+				or = {
+					heavycruiser_technology = 8
+					lightcruiser_technology = 8
+					escort_carrier_technology = 8
+				}
+			}
+			and = {
+				not = { cruiser_armor = 10 }
+				or = {
+					heavycruiser_technology = 9
+					lightcruiser_technology = 9
+					escort_carrier_technology = 9
+				}
+			}			
+		}
+		any_owned_province = {
+			naval_base = 6
+		}
+	}
+ 
+	research_bonus_from = {
+		naval_engineering = 1.00
+		cruiser_practical = 0.50
+		base_strike_doctrine = 0.25
+		port_capacity = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+	start_year = 1918
+	first_offset = 1927		#2nd model is from 1927
+	additional_offset = 3	#one new every 3 year
+	max_level = 20
+	folder = smallship_folder
+	can_upgrade = no
+}
+
+# Specialized Equipment: these give various bonuses in different fields.
+
+# Surface Detection System, represents anything that helps surface detection from scout aircraft through wathmen to radar
+# Gives Positioning, increases firing range and air and surface detection to various degrees.
+surface_detection_system = {
+	destroyer = {
+		positioning = 0.1
+		distance = 0.01
+		surface_detection = 2.0
+		air_detection = 2.0
+	}	
+	light_cruiser = {
+		positioning = 0.1
+		distance = 0.01
+		surface_detection = 1.5
+		air_detection = 1.5
+	}
+	heavy_cruiser = {
+		positioning = 0.1
+		distance = 0.02
+		surface_detection = 1.0
+		air_detection = 1.0
+	}
+	battlecruiser = {
+		positioning = 0.1
+		distance = 0.03
+		surface_detection = 0.5
+		air_detection = 0.5
+	}
+	battleship = {
+		positioning = 0.1
+		distance = 0.03
+		surface_detection = 0.5
+		air_detection = 0.5
+	}
+	carrier = {
+		positioning = 0.1
+		surface_detection = 0.5
+		air_detection = 0.5
+	}
+	escort_carrier = {
+		positioning = 0.1
+		surface_detection = 0.5
+		air_detection = 0.5
+	}
+	submarine = {
+		positioning = 0.1
+		surface_detection = 0.5
+		air_detection = 0.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			and = {
+				not = { surface_detection_system = 1 }
+				or = {	# Screening ships
+					lightcruiser_technology = 1
+					destroyer_technology = 1
+				}
+			}
+			and = {
+				surface_detection_system = 1
+				not = { surface_detection_system = 2 }
+				# Scout Aircraft
+				single_engine_aircraft_design = 1
+			}
+			and = {
+				surface_detection_system = 2
+				not = { surface_detection_system = 3 }
+				# Actual radar equipment
+				radar = 1
+			}
+			and = {
+				surface_detection_system = 3
+				not = { surface_detection_system = 4 }
+				radar = 2
+			}
+			and = {
+				surface_detection_system = 4
+				not = { surface_detection_system = 5 }
+				radar = 3
+			}
+			and = {
+				surface_detection_system = 5
+				not = { surface_detection_system = 6 }
+				radar = 4
+			}
+		}
+	}
+
+	research_bonus_from = {
+		cruiser_practical = 0.38
+		destroyer_practical = 0.38
+		electornicegineering_theory  = 1.75
+	}
+
+	change = no 
+	on_completion = no_theory
+
+	difficulty = 2
+	start_year = 1918
+	first_offset = 1936
+	additional_offset = 3
+	max_level = 20
+	folder = smallship_folder
+}
+
+# ASW Equipment coveres everything used in fighting against Submarines.
+# Increases Sub Detection and Sub Attack.
+smallwarship_asw = {
+	escort_efficiency = 0.10
+	destroyer = {
+		sub_detection = 2.00
+		sub_attack = 1.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		OR = {
+			lightcruiser_technology = 1
+			destroyer_technology = 1
+		}
+		OR = {
+			AND = {
+				NOT = { smallwarship_asw = 3 }
+				electronic_mechanical_egineering = 1
+			}
+			AND = {
+				smallwarship_asw = 3
+				radar = 3
+			}
+		}
+	}
+
+	research_bonus_from = {
+		cruiser_practical = 0.38
+		destroyer_practical = 0.38
+		electornicegineering_theory  = 1.75
+	}
+
+	on_completion = no_theory
+
+	difficulty = 5
+	start_year = 1936
+	first_offset = 1940
+	additional_offset = 1
+	max_level = 20
+	folder = smallship_folder
+}
+
+# Submarine Sonar is used to spot ships while submerged. Very useful but costly.
+submarine_sonar = {
+	submarine = {
+		surface_detection = 2.0
+		sub_detection = 0.5
+		sea_defence = 1.5
+		positioning = 0.15
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		submarine_technology = 1
+		electronic_mechanical_egineering = 1
+	}
+ 
+
+	research_bonus_from = {
+		electornicegineering_theory = 1.75
+		electornicegineering_practical = 0.50
+		submarine_practical = 0.25
+	}
+	
+	change = no 
+	on_completion = no_theory  
+
+	difficulty = 2
+	start_year = 1936
+	first_offset = 1940
+	additional_offset = 3
+	max_level = 20
+	folder = smallship_folder
+}
+
+# The early warning system is used to detect Aircraft before it gets in sight and spots the sub.
+# Very useful but costly.
+submarine_airwarningequipment = {
+	submarine = {
+		air_detection = 0.5
+		air_defence = 2.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		submarine_technology = 1
+		radar = 1
+	}
+ 
+
+	research_bonus_from = {
+		electornicegineering_theory = 1.75
+		electornicegineering_practical = 0.50
+		submarine_practical = 0.25
+	}
+	
+	change = no 
+	on_completion = no_theory  
+
+	difficulty = 3
+	start_year = 1939
+	first_offset = 1940
+	additional_offset = 3
+	max_level = 20
+	folder = smallship_folder
+}
+
+
+# Carrier Air Group focus. Determines the area your CAGs are focused at: Naval, Air or Land.
+cag_air_focus = {
+	cag = {
+		air_attack = 5
+		sea_attack = -2.5
+		sub_attack = -2.5
+		soft_attack = -2
+		hard_attack = -0.75
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		cag_development = 1
+		fighter_defense_doctrine = 1
+	}
+ 
+	research_bonus_from = {
+		carrier_practical = 1.00
+		base_strike_doctrine = 0.50
+		air_doctrine_practical = 0.50
+		fighter_focus = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+	start_year = 1940
+	folder = capitalship_folder
+}
+
+cag_land_focus = {
+	cag = {
+		air_attack = -2.5
+		sea_attack = -2.5
+		sub_attack = -2.5
+		soft_attack = 4
+		hard_attack = 1.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		cag_development = 1
+		army_aviation_doctrine = 1
+	}
+ 
+	research_bonus_from = {
+		carrier_practical = 1.00
+		base_strike_doctrine = 0.50
+		air_doctrine_practical = 0.50
+		cas_focus = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+	start_year = 1940
+	folder = capitalship_folder
+}
+
+cag_naval_focus = {
+	cag = {
+		air_attack = -2.5
+		sea_attack = 5
+		sub_attack = 5
+		soft_attack = -2
+		hard_attack = -0.75
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		cag_development = 1
+		naval_aviation_doctrine = 1
+	}
+ 
+	research_bonus_from = {
+		carrier_practical = 1.00
+		base_strike_doctrine = 0.50
+		air_doctrine_practical = 0.50
+		nav_focus = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+	start_year = 1940
+	folder = capitalship_folder
+}
+
+# One-time techs representing different approaches to or breakthroughs in Ship-Building
+
+fast_battleship = {
+
+	battleship = {
+		maximum_speed = 10.00
+	}
+	
+	allow = {
+		battleship_technology = 1
+		capital_ship_engine = 2
+		capitalship_armament = 1
+		capital_ship_armor = 1
+	}
+	
+	research_bonus_from = {
+		port_capacity = 1.25
+		naval_engineering = 1.00
+		capitalship_practical = 0.12
+		fleet_in_being_doctrine = 0.12
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 10
+	start_year = 1920
+	folder = capitalship_folder
+	can_upgrade = no
+}
+
+coastal_battleship = {
+
+	heavy_cruiser = {
+		hull = 0.15
+		range = -1800
+		distance = 0.05
+		sea_attack = 4.00
+		shore_bombardment = 2.00
+		maximum_speed = -5.00
+		capital = yes
+	}
+	
+	allow = {
+		heavycruiser_technology = 1
+		heavycruiser_armament = 3
+		cruiser_engine = 2
+	}
+	
+	research_bonus_from = {
+		fleet_in_being_doctrine = 0.50
+		naval_engineering = 1.00
+		capitalship_practical = 0.50
+		cruiser_practical = 0.25
+	}
+	
+	on_completion = no_theory
+	stealable = no
+	difficulty = 5
+	start_year = 1920
+	folder = capitalship_folder
+	can_upgrade = no
+}
+
+modern_submarine = {
+
+	submarine = {
+		positioning = 0.25
+		visibility = -5.0
+		convoy_attack = 3.0
+		sea_attack = 5.0
+		sea_defence = 5.0
+	}
+	
+	allow = {
+		torpedoes = 10
+		submarine_sonar = 3
+		submarine_airwarningequipment = 3
+		submarine_engine = 10
+		submarine_technology = 7
+	}
+	
+	research_bonus_from = {
+		submarine_practical = 0.25
+		submarine_engineering = 1.50
+		electornicegineering_practical = 0.25
+		electornicegineering_theory  = 0.50
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 10
+	start_year = 1945		# Very modern stuff, the Germans were ahead of time!
+	folder = smallship_folder
+	can_upgrade = no
+}

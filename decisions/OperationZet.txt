@@ -1,0 +1,64 @@
+diplomatic_decisions = {
+
+	sino_soviet_non_aggression_pact = {
+		major = yes
+		potential = {
+			tag = SOV
+			not = { has_country_flag = "su_signs_peace" }
+			exists = CHI
+			not = { war_with = CHI }
+			CHI = {
+				war_with = JAP
+				not = { faction = comintern }
+				not = { alliance_with = SOV }
+			}
+			JAP = {
+				not = { faction = comintern }
+				not = { alliance_with = SOV }
+			}
+			not = { has_country_flag = "sino_soviet_non_aggression_pact" }
+		}
+		allow = {
+			or = {
+				relation = { who = CHI value = 0 }				# On good terms with China
+				not = { relation = { who = JAP value = 0 } }	# OR on bad terms with Japan
+			}
+		}
+		effect = {
+			set_country_flag = "sino_soviet_non_aggression_pact"
+			CHI = { country_event = 2201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	operation_zet = {
+		major = yes
+		potential = {
+			tag = SOV
+			not = { has_country_flag = "su_signs_peace" }
+			exists = CHI
+			not = { war_with = CHI }
+			CHI = {
+				not = { faction = comintern }
+				not = { alliance_with = SOV }
+			}
+			has_country_flag = "sino_soviet_non_aggression_pact"
+			not = { has_country_flag = "operation_zet" }
+		}
+		allow = {
+			CHI = { controls = 9478 }
+			relation = { who = CHI value = 0 }
+		}
+		effect = {
+			set_country_flag = operation_zet
+			CHI = { country_event = 2205 }
+			neutrality = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

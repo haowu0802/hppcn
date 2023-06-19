@@ -1,0 +1,134 @@
+theatre = {
+	name = "British Indian Army High Command"
+	location = 9406
+	regiment = { type = hq_brigade name = "British Indian Army High Command HQ" historical_model = 0 }	
+	division = {
+		name = "4th Indian Division"
+		expeditionary_owner = ENG
+		location = 9406
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "5th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "7th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "11th Indian Brigade" experience = 0 historical_model = 3 }
+	}
+	division = {
+		name = "5th Indian Division"
+		expeditionary_owner = ENG	
+		location = 5843
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "9th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "10th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "29th Indian Brigade" experience = 0 historical_model = 3 }
+	}
+	division = {
+		name = "6th Indian Division"
+		expeditionary_owner = ENG
+		location = 6070
+		is_reserve = yes
+		regiment = { type = gurkha_brigade name = "26th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "27th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "28th Indian Brigade" experience = 0 historical_model = 3 }
+	}
+	division = {
+		name = "7th Indian Division"
+		expeditionary_owner = ENG
+		location = 5762
+		is_reserve = yes
+		regiment = { type = gurkha_brigade name = "33rd Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "89th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "114th Indian Brigade" experience = 0 historical_model = 3 }
+	}
+	division = {
+		name = "8th Indian Division"
+		expeditionary_owner = ENG
+		location = 9405
+		is_reserve = yes
+		regiment = { type = gurkha_brigade name = "17th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "18th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "19th Indian Brigade" experience = 0 historical_model = 3 }
+	}
+	division = {
+		name = "10th Indian Division"
+		expeditionary_owner = ENG
+		location = 6008
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "10th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "20th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "25th Indian Brigade" experience = 0 historical_model = 3 }
+	}
+	division = {
+		name = "11th Indian Army"
+		expeditionary_owner = ENG
+		location = 6005
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "6th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "15th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "28th Indian Brigade" experience = 0 historical_model = 3 }
+	}
+	division = {
+		name = "14th Indian Division"
+		expeditionary_owner = ENG
+		location = 6182
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "47th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "55th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "88th Indian Brigade" experience = 0 historical_model = 3 }
+	}
+	division = {
+		name = "19th Indian Division"
+		expeditionary_owner = ENG
+		location = 6134
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "62nd Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "64th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "98th Indian Brigade" experience = 0 historical_model = 3 }
+	}
+	division = {
+		name = "20th Indian Division"
+		expeditionary_owner = ENG
+		location = 6255
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "32nd Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "80th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "100th Indian Brigade" experience = 0 historical_model = 3 }
+	}
+	division = {
+		name = "23rd Indian Division"
+		expeditionary_owner = ENG
+		location = 6206
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "1st Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "37th Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "49th Indian Brigade" experience = 0 historical_model = 3 }
+	}
+	division = {
+		name = "25th Indian Division"
+		expeditionary_owner = ENG
+		location = 6283
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "51st Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "53rd Indian Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "74th Indian Brigade" experience = 0 historical_model = 3 }
+	}
+	division = {
+		name = "Ceylon Command"
+		expeditionary_owner = ENG
+		location = 6320
+		regiment = { type = garrison_brigade name = "Ceylon Brigade" experience = 0 historical_model = 3 }
+		regiment = { type = horse_towed_support_brigade name = "Ceylon Artillery Brigade" experience = 0 historical_model = 2 }
+	}
+}
+convoy_construction=
+{
+	country = IND
+	id=
+	{
+		id=15020
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

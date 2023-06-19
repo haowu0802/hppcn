@@ -1,0 +1,247 @@
+theatre = {
+	name = "L'Armée Belge" 
+	location = 2255
+	regiment = { type = hq_brigade name = "L'Armée Belge QG" historical_model = 1 }
+	corps = {
+		name = "1ème Corps d'Armée"
+		location = 2255
+		regiment = { type = hq_brigade name = "1ème Corps d'Armée HQ" historical_model = 1 }
+		division= {
+			name = "4ème Division d'Infanterie"
+			location = 2255
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "7e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "11er Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "15e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "8e Régiment d'Artillerie" experience = 5 historical_model = 0 }
+		}	
+		division= {
+			name = "7ème Division d'Infanterie"
+			location = 2254
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "2e Regiment d'Grenadiere" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "2e Regiment d'Carabiniere" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "18e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "20e Régiment d'Artillerie" experience = 5 historical_model = 1 }
+		}	
+	}
+	corps = {
+		name = "2ème Corps d'Armée"
+		location = 2254
+		regiment = { type = hq_brigade name = "2ème Corps d'Armée HQ" historical_model = 1 }
+		division = {
+			name = "6ème Division d'Infanterie"
+			location = 2254
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1er Regiment d'Grenadiere" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "1er Regiment d'Carabiniere" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "9e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "6e Régiment d'Artillerie" experience = 5 historical_model = 2 }
+		}
+		division = {
+			name = "9ème Division d'Infanterie"
+			location = 2254
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "8e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "16e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "17e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "4e Régiment d'Artillerie" experience = 5 historical_model = 0 }
+		}		
+		division = {
+			name = "11ème Division d'Infanterie"
+			location = 2254
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "14e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "20e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "29e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "9e Régiment d'Artillerie" experience = 5 historical_model = 1 }
+		}		
+	}	
+	corps = {
+		name = "3ème Corps d'Armée"
+		location = 2312
+		regiment = { type = hq_brigade name = "3ème Corps d'Armée HQ" historical_model = 1 }
+		division= {
+			name = "2ème Division d'Infanterie"
+			location = 2312
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "5e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "6e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "28e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "2e Régiment d'Artillerie" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "3ème Division d'Infanterie"
+			location = 2312
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "12e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "25e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "3e Régiment d'Artillerie" experience = 5 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "4ème Corps d'Armée"
+		location = 2312
+		regiment = { type = hq_brigade name = "4ème Corps d'Armée HQ" historical_model = 1 }
+		division = {
+			name = "12ère Division d'Infanterie"
+			location = 2255
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "2e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "22e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "23e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "7e Régiment d'Artillerie" experience = 5 historical_model = 1 }
+		}
+	}	
+	corps = {
+		name = "6ème Corps d'Armée"
+		location = 2311
+		regiment = { type = hq_brigade name = "6ème Corps d'Armée HQ" historical_model = 1 }	
+		division = {
+			name = "5ème Division d'Infanterie"
+			location = 2311
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "1er Chasseurs a Pied" experience = 10 historical_model = 2 }
+			regiment = { type = garrison_brigade name = "2e Chasseurs a Pied" experience = 10 historical_model = 2 }
+			regiment = { type = garrison_brigade name = "4e Chasseurs a Pied" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "11er Régiment d'Artillerie" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "10ème Division d'Infanterie"
+			location = 2196
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "3e Chasseurs a Pied" experience = 10 historical_model = 2 }
+			regiment = { type = garrison_brigade name = "5e Chasseurs a Pied" experience = 10 historical_model = 2 }
+			regiment = { type = garrison_brigade name = "6e Chasseurs a Pied" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "10e Régiment d'Artillerie" experience = 5 historical_model = 0 }
+		}	
+	}	
+	corps = {
+		name = "7ème Corps d'Armée"
+		location = 2369
+		regiment = { type = hq_brigade name = "7ème Corps d'Armée HQ" historical_model = 1 }		
+		division= {
+			name = "8ème Division d'Infanterie"
+			location = 2369
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "13e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "19e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "21er Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "5e Régiment d'Artillerie" experience = 5 historical_model = 1 }
+		}	
+		division = {
+			name = "2ème Division de Chasseurs Ardennais"
+			location = 2370
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "4e Chasseur Ardennais" experience = 10 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "5e Chasseur Ardennais" experience = 10 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "6e Chasseur Ardennais" experience = 10 historical_model = 2 }
+			regiment = { type = truck_towed_support_brigade name = "6e Régiment d'Artillerie" experience = 5 historical_model = 2 }
+		}
+	}	
+	corps = {
+		name = "Corps d'Cavalerie"
+		location = 2255
+		regiment = { type = hq_brigade name = "Corps d'Cavalerie HQ" historical_model = 1 }	
+		regiment = { type = motorized_brigade name = "Brigade de Cavalerie Motorisée" experience = 5 historical_model = 0 }
+		division = {
+			name = "1ère Division d'Infanterie"
+			location = 2255
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "3e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "4e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "24e Regiment d'Infanterie" experience = 10 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "1er Régiment d'Artillerie" experience = 5 historical_model = 0 }
+		}
+		division= {
+			name = "2ème Division de Cavalry"
+			location = 2311
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1er Régiment d'Lanciers" experience = 10 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "3e Régiment d'Lanciers" experience = 10 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "1er Chasseurs a Cheval" experience = 10 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "1er Regiment d'Carabiniere" experience = 5 historical_model = 2 }
+			regiment = { type = truck_towed_support_brigade name = "18e Régiment d'Artillerie" experience = 5 historical_model = 1 }
+		}	
+	}
+	corps = {
+		name = "Groupement K"
+		location = 2255
+		regiment = { type = hq_brigade name = "Corps d'Cavalerie HQ" historical_model = 1 }	
+		division= {
+			name = "1ème Division de Cavalry"
+			location = 2311
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1er Régiment d'Guides" experience = 10 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "2e Régiment d'Lanciers" experience = 10 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "2e Chasseurs a Cheval" experience = 10 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "3e Regiment d'Carabiniere" experience = 10 historical_model = 2 }
+			regiment = { type = truck_towed_support_brigade name = "17e Régiment d'Artillerie" experience = 5 historical_model = 1 }
+		}			
+		division = {
+			name = "1ème Division de Chasseurs Ardennais"
+			location = 2370
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1er Chasseur Ardennais" experience = 10 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "2e Chasseur Ardennais" experience = 10 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "3e Chasseur Ardennais" experience = 10 historical_model = 2 }
+			regiment = { type = truck_towed_support_brigade name = "7e Régiment d'Artillerie" experience = 5 historical_model = 1 }
+		}		
+	}
+	division = {
+		name = "Garde Royale Motorisé"
+		location = 2255
+		regiment = { type = motorized_brigade name = "1er Régiment Motorisé" experience = 10 historical_model = 0 }
+		regiment = { type = super_heavy_armor_brigade name = "1er Régiment Armurié" experience = 2.5 historical_model = 0 } 
+	}	
+	division = {
+		name = "Garde Royale Coloniale"
+		location = 10113
+		regiment = { type = militia_brigade name = "1er Régiment Coloniale" experience = 10 historical_model = 2 }
+		regiment = { type = militia_brigade name = "2e Régiment Coloniale" experience = 10 historical_model = 2 }
+		regiment = { type = militia_brigade name = "3e Régiment Coloniale" experience = 10 historical_model = 2 }
+	}
+	navy = {
+		name = "1ste Transportatie Smaldeel"
+		base = 2137
+		location = 2137
+		ship = { type = transport_ship name = "1ère Transporte Naval" historical_model = 0 }
+		ship = { type = transport_ship name = "2de Smaldeel" historical_model = 0 }
+	}
+	air = {
+		name = "Ouvries et Aérostiers"
+		base = 2311
+		location = 2311
+		wing = { type = interceptor name = "Escadrille La Comète" experience = 10 historical_model = 0 }
+		wing = { type = transport_plane name = "1ère Wing Luchttransport" experience = 10 historical_model = 0 }		
+	}
+}
+convoy_construction=
+{
+	country = BEL
+	id=
+	{
+		id=15251
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = BEL
+	id=
+	{
+		id=15252
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort	
+}

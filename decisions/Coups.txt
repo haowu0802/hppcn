@@ -1,0 +1,416 @@
+diplomatic_decisions = {
+
+	restore_national_socialist_gov = {
+		potential = {
+			government = state_of_emergency
+			ideology = national_socialist	
+		}
+		allow = {
+			not = { has_country_modifier = "political_crisis" }
+		}
+		effect = {
+			dissent = -5
+			national_unity = 5
+			organisation = 15
+			government = national_socialism
+			any_country = {
+				limit = { ideology_group = fascism }
+				relation = { who = THIS value = 25 }
+			}
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = -50 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	restore_fascistic_gov = {
+		potential = {
+			government = state_of_emergency
+			ideology = fascistic	
+		}
+		allow = {
+			not = { has_country_modifier = "political_crisis" }
+		}
+		effect = {
+			dissent = -5
+			national_unity = 5
+			organisation = 15
+			government = fascist_republic
+			any_country = {
+				limit = { ideology_group = fascism }
+				relation = { who = THIS value = 25 }
+			}
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = -50 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	restore_paternal_autocrat_gov = {
+		potential = {
+			government = state_of_emergency
+			ideology = paternal_autocrat
+		}
+		allow = {
+			not = { has_country_modifier = "political_crisis" }
+		}
+		effect = {
+			dissent = -5
+			national_unity = 5
+			organisation = 15
+			government = right_wing_autocrat
+			any_country = {
+				limit = { ideology_group = fascism }
+				relation = { who = THIS value = 25 }
+			}
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = -50 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	restore_social_conservative_gov = {
+		potential = {
+			government = state_of_emergency
+			or = {
+				ideology = social_conservative
+				ideology = market_liberal
+			}
+		}
+		allow = {
+			not = { has_country_modifier = "political_crisis" }
+		}
+		effect = {
+			dissent = -5
+			national_unity = 5
+			organisation = 15
+			government = social_conservatism
+			any_country = {
+				limit = { ideology_group = fascism }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = 25 }
+			}
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	restore_social_democrat_gov = {
+		potential = {
+			government = state_of_emergency
+			or = {
+				ideology = social_democrat
+				ideology = social_liberal
+			}
+		}
+		allow = {
+			not = { has_country_modifier = "political_crisis" }
+		}
+		effect = {
+			dissent = -5
+			national_unity = 5
+			organisation = 15
+			government = social_democracy
+			any_country = {
+				limit = { ideology_group = fascism }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = 25 }
+			}
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	restore_left_wing_radical_gov = {
+		potential = {
+			government = state_of_emergency
+			ideology = left_wing_radical	
+		}
+		allow = {
+			not = { has_country_modifier = "political_crisis" }
+		}
+		effect = {
+			dissent = -5
+			national_unity = 5
+			organisation = 15
+			government = left_wing_radicals
+			any_country = {
+				limit = { ideology_group = fascism }
+				relation = { who = THIS value = -50 }
+			}
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = 25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	restore_leninist_gov = {
+		potential = {
+			government = state_of_emergency
+			ideology = leninist	
+		}
+		allow = {
+			not = { has_country_modifier = "political_crisis" }
+		}
+		effect = {
+			dissent = -5
+			national_unity = 5
+			organisation = 15
+			government = socialist_republic
+			any_country = {
+				limit = { ideology_group = fascism }
+				relation = { who = THIS value = -50 }
+			}
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = 25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	restore_stalinist_gov = {
+		potential = {
+			government = state_of_emergency
+			ideology = stalinist
+		}
+		allow = {
+			not = { has_country_modifier = "political_crisis" }
+		}
+		effect = {
+			dissent = -5
+			national_unity = 5
+			organisation = 15
+			government = socialist_republic
+			any_country = {
+				limit = { ideology_group = fascism }
+				relation = { who = THIS value = -50 }
+			}
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = 25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fascism_elected = {
+		potential = {
+			has_country_flag = "coup"
+			not = { has_country_modifier = "consolidating_power" }
+			ideology_group = fascism
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = "coup"
+			dissent = -5
+			national_unity = 5
+			organisation = 15
+			government = right_wing_republic
+			any_country = {
+				limit = { ideology_group = fascism }
+				relation = { who = THIS value = 25 }
+			}
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = -50 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	socialism_elected = {
+		potential = {
+			has_country_flag = "coup"
+			not = { has_country_modifier = "consolidating_power" }
+			ideology_group = communism
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = "coup"
+			dissent = -5
+			national_unity = 5
+			organisation = 15
+			government = socialist_republic
+			any_country = {
+				limit = { ideology_group = fascism }
+				relation = { who = THIS value = -50 }
+			}
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = 25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	democracy_elected = {
+		potential = {
+			has_country_flag = "coup"
+			not = { has_country_modifier = "consolidating_power" }
+			ideology_group = democracy
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = "coup"
+			dissent = -5
+			national_unity = 5
+			organisation = 15
+			government = social_democracy
+			any_country = {
+				limit = { ideology_group = fascism }
+				relation = { who = THIS value = -25 }
+			}
+			any_country = {
+				limit = { ideology_group = democracy }
+				relation = { who = THIS value = 25 }
+			}
+			any_country = {
+				limit = { ideology_group = communism }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# The "Consolidating XYZ Regime" types of decisions are no longer required, since there's an implicite
+	# way of ensuring that the puppet's regime matches that of the overlord when the act of puppeting happens.
+	
+	intervene_in_our_puppet = {
+		potential = {
+			num_of_vassals = 1
+			any_neighbor_country = {
+				vassal_of = THIS
+				has_country_modifier = "political_crisis"
+				not = { has_country_modifier = "failed_intervention" }
+			}
+		}
+		allow = {
+		}
+		effect = {
+			random_country = {
+				limit = {
+					vassal_of = THIS
+					has_country_modifier = "political_crisis"
+					not = { has_country_modifier = "failed_intervention" }
+				}
+				random_list = {
+					35 = {			# Successfull intervention, the rebellion is put down.
+						country_event = 4025
+					}
+					50 = {			# Indecisive intervention, the conflict escalates.
+						country_event = 4026
+					}
+					15 = {			# Unsuccessfull intervention, the rebellion is victorious!
+						country_event = 4003
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# If a country is at 50% Surrender Progress and not even at war, then it is overrun by Partisans.
+	# This decision allows them to give in to the demands of the rebellion, forcing an election.
+	
+#	give_in_to_rebellion = {
+#		potential = {
+#			war = no
+#			surrender_progress = 50
+#		}
+#		allow = {
+#		}
+#		effect = {
+#			organisation = -25
+#			popularity = -25
+#			do_election = THIS
+#			dissent = -50
+#			any_owned = {
+#				limit = { controlled_by = REB }
+#				change_controller = THIS
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1.0
+#		}
+#	}
+}

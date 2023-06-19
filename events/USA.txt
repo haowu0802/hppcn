@@ -1,0 +1,415 @@
+########################
+# The Great Depression #
+########################
+
+country_event = {
+
+	id = 1050
+	
+	major = yes
+	
+	trigger = {
+		tag = USA
+		not = { has_country_flag = "great_depression_starts" }
+	}
+	
+	title = "The Great Depression will still last for a long time"
+	desc = "great_depression_desc"
+	picture = "depression"
+	
+	option = {
+		name = "Oh my!..."
+		set_country_flag = "great_depression_starts"
+		manpower = -1200
+	}
+
+}
+
+country_event = {
+
+	id = 1051
+	
+	major = yes
+	
+	trigger = {
+		tag = USA
+		has_country_modifier = "us_great_depression_5"
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.75 economic_law = basic_mobilisation }
+		modifier = { factor = 0.50 economic_law = full_mobilisation }
+		modifier = { factor = 0.25 economic_law = war_economy }
+		modifier = { factor = 0.01 economic_law = total_economic_mobilisation }
+		modifier = { factor = 0.5 has_country_modifier = "us_new_deal" }
+	}
+	
+	title = "The Great Depression is slowly fading"
+	desc = "great_depression_fading_desc"
+	picture = "depression"
+	
+	option = {
+		name = "That's a relief!"
+		remove_country_modifier = "us_great_depression_5"
+		add_country_modifier = {
+			name = "us_great_depression_4"
+			duration = -1
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 1052
+	
+	major = yes
+	
+	trigger = {
+		tag = USA
+		has_country_modifier = "us_great_depression_4"
+	}
+	
+	mean_time_to_happen = {
+		months = 42
+		
+		modifier = { factor = 0.75 economic_law = basic_mobilisation }
+		modifier = { factor = 0.50 economic_law = full_mobilisation }
+		modifier = { factor = 0.25 economic_law = war_economy }
+		modifier = { factor = 0.01 economic_law = total_economic_mobilisation }
+		modifier = { factor = 0.5 has_country_modifier = "us_new_deal" }
+	}
+	
+	title = "The Great Depression is fading"
+	desc = "great_depression_fading_desc"
+	picture = "depression"
+	
+	option = {
+		name = "That's a relief!"
+		remove_country_modifier = "us_great_depression_4"
+		add_country_modifier = {
+			name = "us_great_depression_3"
+			duration = -1
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 1053
+	
+	major = yes
+	
+	trigger = {
+		tag = USA
+		has_country_modifier = "us_great_depression_3"
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+		
+		modifier = { factor = 0.75 economic_law = basic_mobilisation }
+		modifier = { factor = 0.50 economic_law = full_mobilisation }
+		modifier = { factor = 0.25 economic_law = war_economy }
+		modifier = { factor = 0.01 economic_law = total_economic_mobilisation }
+		modifier = { factor = 0.5 has_country_modifier = "us_new_deal" }
+	}
+	
+	title = "The Great Depression fading"
+	desc = "great_depression_fading_desc"
+	picture = "depression"
+	
+	option = {
+		name = "That's a relief!"
+		remove_country_modifier = "us_great_depression_3"
+		add_country_modifier = {
+			name = "us_great_depression_2"
+			duration = -1
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 1054
+	
+	major = yes
+	
+	trigger = {
+		tag = USA
+		has_country_modifier = "us_great_depression_2"
+	}
+	
+	mean_time_to_happen = {
+		months = 30
+		
+		modifier = { factor = 0.75 economic_law = basic_mobilisation }
+		modifier = { factor = 0.50 economic_law = full_mobilisation }
+		modifier = { factor = 0.25 economic_law = war_economy }
+		modifier = { factor = 0.01 economic_law = total_economic_mobilisation }
+		modifier = { factor = 0.5 has_country_modifier = "us_new_deal" }
+	}
+	
+	title = "The Great Depression is almost over"
+	desc = "great_depression_fading_desc"
+	picture = "depression"
+	
+	option = {
+		name = "That's a relief!"
+		remove_country_modifier = "us_great_depression_2"
+		add_country_modifier = {
+			name = "us_great_depression_1"
+			duration = -1
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 1055
+	
+	major = yes
+	
+	trigger = {
+		tag = USA
+		has_country_modifier = "us_great_depression_1"
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		
+		modifier = { factor = 0.75 economic_law = basic_mobilisation }
+		modifier = { factor = 0.50 economic_law = full_mobilisation }
+		modifier = { factor = 0.25 economic_law = war_economy }
+		modifier = { factor = 0.01 economic_law = total_economic_mobilisation }
+		modifier = { factor = 0.5 has_country_modifier = "us_new_deal" }
+	}
+	
+	title = "The Great Depression is over"
+	desc = "The Great Depression is finally over! Our people will rejoice."
+	picture = "depression_over"
+	
+	option = {
+		name = "That's a relief!"
+		remove_country_modifier = "us_great_depression_1"
+		remove_country_modifier = "us_new_deal"
+	}
+
+}
+
+#########################
+# Intervention in China #
+#########################
+
+country_event = {
+
+	id = 1060
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	title = "American intervention"
+	desc = "The United States tries to negotiate for a peace in the Sino-Japanese War. Should we go along with them, or keep on fighting?"
+	picture = "Xian_Incident"
+	
+	option = {
+		name = "We should stop the bloodshed!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.0 tag = CHI not = { lost_national = 0.5 } }		# Chiang didn't really want to stop the fight.
+			
+			modifier = { factor = 1.5 lost_national = 0.01 }
+			modifier = { factor = 2.5 lost_national = 0.10 }
+			modifier = { factor = 5.0 lost_national = 0.25 }
+			modifier = { factor = 10.0 lost_national = 0.50 }
+			
+			modifier = { factor = 1.5 tag = JAP MAN = { lost_national = 0.01 } }
+			modifier = { factor = 2.5 tag = JAP MAN = { lost_national = 0.10 } }
+			modifier = { factor = 5.0 tag = JAP MAN = { lost_national = 0.25 } }
+			modifier = { factor = 10.0 tag = JAP MAN = { lost_national = 0.50 } }
+		}
+		set_country_flag = "stop_the_war"
+		relation = { who = USA value = 50 }
+	}
+	option = {
+		name = "No way!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.25 lost_national = 0.01 }
+			modifier = { factor = 0.15 lost_national = 0.10 }
+			modifier = { factor = 0.05 lost_national = 0.25 }
+			modifier = { factor = 0.01 lost_national = 0.50 }
+			
+			modifier = { factor = 0.25 tag = JAP MAN = { lost_national = 0.01 } }
+			modifier = { factor = 0.15 tag = JAP MAN = { lost_national = 0.10 } }
+			modifier = { factor = 0.05 tag = JAP MAN = { lost_national = 0.25 } }
+			modifier = { factor = 0.00 tag = JAP not = { exists = MAN } }
+		}
+		set_country_flag = "continue_the_war"
+		threat = { who = USA value = 10 }
+		relation = { who = USA value = -50 }
+	}
+}
+
+################################
+# Intervention in the Americas #
+################################
+
+country_event = {
+
+	id = 1061
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	title = "$FROMCOUNTRY$ requests our intervention!"
+	desc = "$FROMCOUNTRY$ is under attack by an overseas threat! We can't let anyone interfere in our sphere of influence, the Western Hemisphere is our turf!"
+	picture = "us_intervention"
+	
+	option = {
+		name = "They need our help!"
+		neutrality = -10
+		any_country = {
+			limit = {
+				war_with = FROM
+				any_owned_province = {
+					is_capital = yes
+					not = { continent = north_america }
+					not = { continent = south_america }
+					not = { continent = Central_America }
+					not = { continent = Caribbean }
+				}
+			}
+			country_event = 1062
+		}
+	}
+	option = {
+		name = "They will have to fend for themselves..."
+		neutrality = 5
+		dissent = 5
+		relation = { who = FROM value = -50 }
+		FROM = { clr_country_flag = "protected_by_the_usa" }
+	}
+}
+
+country_event = {
+
+	id = 1062
+	
+	is_triggered_only = yes
+	
+	title = "$The United States intervenes!"
+	desc = "The United States of America declared war on us because of our meddling in the Americas. They say that according to the Monroe Doctrine, they can't let this go unpunished..."
+	picture = "us_intervention"
+	
+	option = {
+		name = "Then we'll deal with them, too!"
+		FROM = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = concede_defeat }
+			}
+		}
+	}
+	option = {
+		name = "Whoa, that's waaay out of our league!"
+		dissent = 5
+		any_country = {
+			limit = {
+				any_owned_province = {
+					is_capital = yes
+					or = {
+						continent = north_america
+						continent = south_america
+						continent = Central_America
+						continent = Caribbean
+					}
+				}	
+			}
+			end_war = THIS
+		}
+	}
+}
+
+country_event = {
+
+	id = 1063
+	
+	trigger = {
+		tag = USA
+		not = { has_global_flag = "secessionism" }
+		not = { national_unity = 80 }
+		or = {
+			dissent = 10
+			war_exhaustion = 5.0
+			not = { national_unity = 60 }
+		}
+	}
+	
+	title = "Secessionism"
+	desc = "The idea of secessionism is spreading throughout the States! Regional groups seeking independence are gaining more and more support in four major areas!"
+	picture = "secessionism"
+	
+	option = {
+		name = "This can't be good..."
+		set_global_flag = "secessionism"
+		country_event = 1064
+		country_event = 1065
+		country_event = 1066
+	}
+}
+
+country_event = {
+
+	id = 1064
+	
+	is_triggered_only = yes
+	
+	title = "California Republic"
+	desc = "The California Republic was originally a name used by American revolters against Mexican rule in the 19th century. With federal government's failure to keep the nation together, the idea came up again, but from a different angle."
+	picture = "California_republic"
+	
+	option = {
+		name = "Surely a bad omen"
+		california_repub_region = { add_core = CAL remove_core = USA }
+	}
+}
+
+country_event = {
+
+	id = 1065
+	
+	is_triggered_only = yes
+	
+	title = "Confederate States of America"
+	desc = "The Confederate States of America already attempted to gain independence once. It's only logical for them to try again, with the Unionist government being unable to handle the situation."
+	picture = "federate_states"
+	
+	option = {
+		name = "Surely a bad omen"
+		confederate_region = { add_core = CSA remove_core = USA }
+	}
+}
+
+country_event = {
+
+	id = 1066
+	
+	is_triggered_only = yes
+	
+	title = "Sioux Confederacy"
+	desc = "The Sioux Confederacy is proposed by a gathering of like-minded peoples in the Midwest, getting more and more active in their attempts to become independent."
+	picture = "sioux_nation"
+	
+	option = {
+		name = "Surely a bad omen"
+		sioux_region = { add_core = SIU remove_core = USA }
+	}
+}

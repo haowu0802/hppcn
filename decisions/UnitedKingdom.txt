@@ -1,0 +1,260 @@
+diplomatic_decisions = {
+
+####################################
+# Destruction of the French Fleet  #
+####################################
+# Mers-el-Kébir
+
+	destruction_of_french_fleet = {
+		major = yes
+		potential = {
+			tag = ENG
+			not = { has_country_flag = "destruction_of_the_french_fleet" }
+			exists = VIC
+			ENG = { war_with = GER }
+			not = {
+				or = {
+					head_of_state = 1031		# Edward VIII remained the King
+					head_of_government = 1002	# Stanley Baldwin
+					head_of_government = 1042	# Oswald Mosley
+					head_of_government = 1045	# Lord Halifax
+					head_of_government = 1160	# Lloyd George
+					ideology_group = fascism
+				}
+			}
+		}
+		allow = {
+			VIC = { not = { war_with = GER } }
+		}
+		effect = {
+			set_country_flag = "destruction_of_the_french_fleet"
+			relation = { who = VIC value = -30 }
+			national_unity = 2
+			VIC = { country_event = 2601 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+###############################
+# The Commonwealth of Nations #
+###############################
+
+	the_commonwealth_of_nations = {
+		potential = {
+			OR = {
+				tag = CAN
+				tag = AST
+				tag = SAF
+				tag = NZL
+			}
+		}
+		allow = {
+			NOT = { has_country_flag = "commonwealth_of_nations" }
+		}
+		effect = {
+			set_country_flag = "commonwealth_of_nations"
+			add_country_modifier = {
+				name = "commonwealth_of_nations"
+				duration = -1
+			}
+			ENG = { create_alliance = THIS }
+			any_country = {
+				limit = { has_country_flag = "commonwealth_of_nations" }
+				create_alliance = THIS
+			}
+			relation = { who = ENG value = 20 }
+		}
+	}
+
+#############################
+# Call in the Commonwealth! #
+#############################
+
+	call_in_the_commonwealth = {
+		major = yes
+		potential = {
+			tag = ENG
+			war_with = GER
+			not = { has_country_flag = "call_in_the_commonwealth" }
+			OR = {
+				AST = { is_in_any_faction = no }
+				NZL = { is_in_any_faction = no }
+				CAN = { is_in_any_faction = no }
+				SAF = { is_in_any_faction = no }
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = "call_in_the_commonwealth"
+		}
+	}
+
+	declare_war_on_germany = {
+		major = yes
+		potential = {
+			exists = ENG
+			ENG = { faction = allies }
+			or = {
+				tag = AST
+				tag = CAN
+				tag = NZL
+				tag = SAF
+			}
+			ENG = { has_country_flag = "call_in_the_commonwealth" }
+			not = { has_country_flag = "call_in_the_commonwealth" }
+			is_in_any_faction = no
+			not = { ideology_group = communism }
+			not = { ideology_group = fascism }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = "call_in_the_commonwealth"
+			clr_country_flag = "protected_by_the_usa"
+			join_faction = allies
+		}
+	}
+	
+#########################
+# Independence of Burma #
+#########################
+
+	independence_of_burma = {
+		major = yes
+		potential = {
+			tag = ENG
+			exists = IND
+			IND = {
+				vassal_of = ENG
+				any_owned_province = { is_core = BBU }
+			}
+			date = 1937.4.1
+		}
+		allow = {
+		}
+		effect = {
+			IND = { country_event = 2609 }
+		}
+	}
+
+##################
+# The Burma Road #
+##################
+
+	help_for_china = {
+		major = yes
+		potential = {
+			tag = ENG
+			not = { has_country_flag = "help_for_china" }
+			CHI = { war_with = JAP }
+			or = {
+				not = { exists = CSX }
+				not = { exists = CGX }
+				not = { 5494 = { controlled_by = CHI } }
+			}
+		}
+		allow = {
+			or = {
+				neighbour = CHI # direct rout
+				and = { # rout through an existing Burma
+					BBU = { vassal_of = ENG }
+					CYN = { neighbour = BBU }
+					CYN = {	neighbour = CHI }
+					not = { CYN = { alliance_with = JAP } }
+					not = { CYN = { vassal_of = JAP } }
+				}
+				and = { # rout through Yunnan
+					CYN = { neighbour = ENG }
+					CYN = {	neighbour = CHI }
+					not = { CYN = { alliance_with = JAP } }
+					not = { CYN = { vassal_of = JAP } }
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "help_for_china"
+			CHI = { set_country_flag = "burma_road" }
+			relation = { who = CHI value = 20 }
+			relation = { who = JAP value = -20 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+#############################################
+# UK puppets leave after the UK surrenders! #
+#############################################
+
+	leave_the_allies_after_uk_surrenders = {
+		potential = {
+			has_country_flag = "uk_surrendered"
+		}
+		allow = {
+			vassal_of = ENG
+			government_in_exile = no
+			faction = allies
+			war = yes
+			not = {
+				any_owned_province = {
+					is_core = THIS
+					controller = { war_with = THIS }
+				}
+			}
+		}
+		effect = {
+			leave_faction = allies
+			country_event = 7201
+			clr_country_flag = "uk_surrendered"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+##########################################
+# US Occupation of Iceland and Greenland #
+##########################################
+
+	us_occupation_of_iceland_greenland = {
+		major = yes
+		potential = {
+			tag = ENG
+			exists = USA
+			USA = {
+				or = {
+					has_country_flag = "lend_lease_act"
+					year = 1940
+				}
+				has_country_flag = "us_gear_up_for_war"
+				is_in_any_faction = no
+				not = {	alliance_with = GER }
+				not = {	alliance_with = SOV }
+			}
+			or = {
+				DEN = { exists = no }
+				DEN = { government_in_exile = yes }
+				DEN = { vassal_of = GER }
+			}
+			not = { has_country_flag = "us_occuption_of_iceland_and_greenland" }
+		}
+		allow = {
+			USA = { war = no }
+			USA = { ideology_group = democracy }
+			iceland_region = { controller = { faction = allies } }	# Iceland
+			gronland_region = { controller = { faction = allies } }	# Greenland
+		}
+		effect = {
+			set_country_flag = "us_occuption_of_iceland_and_greenland"
+			ENG = { country_event = 1602 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+

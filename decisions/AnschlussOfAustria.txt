@@ -1,0 +1,82 @@
+########################
+# Anschluss of Austria #
+########################
+diplomatic_decisions = {
+
+	anschluss_of_austria_intrigue = {	# Internal pressure
+		major = yes
+		potential = {
+			not = { has_country_flag = "annexation_of_austria" }
+			tag = GER
+			war = no
+			exists = AUS
+			has_country_flag = "the_reoccupation_of_the_rhineland"
+		}
+		allow = {
+			war = no
+			AUS = {
+				war = no
+				OR = {
+					and = {
+						is_in_any_faction = no
+						national_socialist = { organisation = 35 popularity = 30 }
+					}
+					and = {
+						faction = axis
+						relation = { who = GER value = 200 }
+					}
+					and = {
+						is_in_any_faction = no
+						has_country_modifier = "political_crisis_in_austria"
+					}
+				}
+			}
+		}
+		effect = { 
+			set_country_flag = "annexation_of_austria"
+			relation = { who = FRA value = -5 }
+			relation = { who = ENG value = -5 }
+			relation = { who = ITA value = -10 }
+			relation = { who = CZE value = -10 }
+			relation = { who = HUN value = -5 }
+			threat = { who = all value = 2.5 }
+			neutrality = -5
+			AUS = { country_event = 1101 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	anschluss_of_austria_force = {	# Military threat
+		major = yes
+		potential = {
+			not = { has_country_flag = "annexation_of_austria" }
+			tag = GER
+			exists = AUS
+			has_country_flag = "the_reoccupation_of_the_rhineland"
+		}
+		allow = {
+			AUS = {
+				war = no
+				is_in_any_faction = no
+			}
+			total_amount_of_divisions = 70
+		}
+		effect = { 
+			set_country_flag = "annexation_of_austria"
+			relation = { who = FRA value = -25 }
+			relation = { who = ENG value = -25 }
+			relation = { who = ITA value = -50 }
+			relation = { who = CZE value = -50 }
+			relation = { who = HUN value = -25 }
+			threat = { who = all value = 15 }
+			neutrality = -5
+			AUS = { country_event = 1102 }	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

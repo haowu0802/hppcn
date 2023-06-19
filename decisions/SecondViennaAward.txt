@@ -1,0 +1,40 @@
+###########################
+# The Second Vienna Award #
+###########################
+diplomatic_decisions = {
+
+	the_second_vienna_award = {
+		major = yes
+		potential = {
+			tag = HUN
+			not = { war_with = GER }
+			is_subject = no
+			government_in_exile = no
+			not = { faction = allies }
+			not = { faction = comintern }
+			exists = GER
+			exists = SOV
+			exists = ROM
+			ideology_group = fascism
+			not = { has_country_flag = "second_vienna_award" }
+			transylvania_proper_region = { controlled_by = ROM }
+			or = {
+				ROM = { has_country_flag = "bessarabia_to_the_soviet" }
+				SOV = { any_owned_province = { is_core = ROM } }
+			}
+		}
+		allow = {
+			not = { war_with = ROM }
+			ROM = { is_subject = no }
+		}
+		effect = {
+			set_country_flag = "second_vienna_award"
+			relation = { who = ROM value = -50 }
+			neutrality = -10
+			country_event = 2315
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

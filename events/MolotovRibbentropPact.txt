@@ -1,0 +1,893 @@
+###########################
+# Molotov-Ribbentrop Pact #
+###########################
+# Soviet - Reaction Event
+country_event = {
+
+	id = 1501
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1501"
+	desc = "EVTDESC1501"
+	picture = "Mol_Rib"
+
+	option = {
+		name = "EVTOPTA1501"			# A Most Excellent Proposition
+		ai_chance = { factor = 100 }
+		
+		end_guarantee = FRA
+		end_guarantee = BUL
+		end_guarantee = ROM
+		end_guarantee = POL
+		any_country = {
+			limit = { faction = comintern }
+			end_guarantee = FRA
+			end_guarantee = BUL
+			end_guarantee = ROM
+			end_guarantee = POL
+		}
+
+		set_country_flag = "mol_rib_pact"
+		set_country_flag = "ger_sov_coop"
+
+		# Finland - No cores!
+
+		# Bessarabia - No additional cores!
+
+		relation = { who = GER value = 15 }
+		relation = { who = FIN value = -5 }
+		relation = { who = POL value = -50 }
+		relation = { who = LIT value = -10 }
+		relation = { who = LAT value = -10}
+		relation = { who = EST value = -10 }
+		neutrality = -5
+		GER = { country_event = 1502 }
+	}
+	option = {
+		name = "EVTOPTB1501"			# No deals with the enemies of the Workers!
+		relation = { who = GER value = -15 }
+		GER = { country_event = 1503 }
+	}
+}
+
+# Response to Germany - Soviet Accepts
+country_event = {
+
+	id = 1502
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1502"
+	desc = "EVTDESC1502"
+	picture = "Mol_Rib"
+
+	option = {
+		name = "EVTOPTA1502"			# OK
+		SOV = { set_country_flag = "mol_rib_pact" }
+		set_country_flag = "ger_sov_coop"
+		non_aggression_pact = SOV
+		
+		end_guarantee = EST
+		end_guarantee = LAT
+		end_guarantee = FIN
+		end_guarantee = BUL
+		end_guarantee = POL
+		any_country = {
+			limit = { faction = axis }
+			end_guarantee = EST
+			end_guarantee = LAT
+			end_guarantee = FIN
+			end_guarantee = BUL
+			end_guarantee = POL
+		}
+	}
+}
+
+# Response to Germany - Soviet Refuses
+country_event = {
+
+	id = 1503
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1503"
+	desc = "EVTDESC1503"
+	picture = "Mol_Rib"
+
+	option = {
+		name = "EVTOPTA1503"			# OK
+		relation = { who = SOV value = -20 }
+	}
+}
+
+
+
+# Soviet Reaction
+country_event = {
+
+	id = 1507
+
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "Romania asks for a peace agreement"
+	desc = "Romania asks for a peace agreement. They finally understansd that they can't defy our power anymore, and now they are ready to give in to our demands!"
+	picture = "romania"
+
+	option = {
+		name = "Settle for what we asked for."
+		ai_chance = { factor = 100 }
+		ROM = {
+			bessarabia = { secede_province = SOV }
+		}
+		ROM = { end_war = SOV }
+	}
+	option = {
+		name = "Bring them Socialism!"
+		ai_chance = { factor = 0 }
+		ROM = { country_event = 1508 }
+		any_country = {
+			limit = {
+				or = {
+					allied_with = ROM
+					and = {
+						faction = axis
+						ROM = { faction = axis }
+					}
+					guarantee = ROM
+				}
+			}
+			end_non_aggression_pact = SOV
+			war = {
+				target = SOV
+				attacker_goal = { casus_belli = concede_defeat }
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 1508
+
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "The Soviets declined"
+	desc = "The Soviets declined our offer of peace. We are practically screwed..."
+	picture = "tannu_tuva"
+
+	option = {
+		name = "Damn!..."
+		national_unity = 10
+		dissent = -5
+		organisation = 5
+		popularity = 5
+	}
+}
+
+# Romania - Reaction Event
+country_event = {
+
+	id = 1509
+
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1509"
+	desc = "EVTDESC1509"
+	picture = "romania"
+
+	option = {
+		name = "EVTOPTA1509"					# Accept
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0
+				ROM = { faction = axis }
+			}
+		}
+		bessarabia = { secede_province = SOV }
+		set_country_flag = "bessarabia_to_the_soviet"
+		
+		# The extremists gain power
+		
+		fascistic = { popularity = 15 organisation = 5 }
+		national_socialist = { popularity = 15 organisation = 10 }
+		paternal_autocrat = { popularity = 15 organisation = 15 }
+
+		SOV = { country_event = 1510 }
+	}
+	option = {
+		name = "EVTOPTB1509"					# Refuse
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				ROM = { faction = axis }
+			}
+		}
+		relation = { who = SOV value = -25 }
+		relation = { who = GER value = -15 }
+		SOV = { country_event = 1511 }
+	}
+}
+
+# Response to Soviet - Accept
+country_event = {
+
+	id = 1510
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1510"
+	desc = "EVTDESC1510"
+	picture = "romania"
+
+	option = {
+		name = "EVTOPTA1510"					# Excellent!
+		threat = { who = ROM value = 5 }
+	}
+}
+
+# Response to Soviet - Refuse
+country_event = {
+
+	id = 1511
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1511"
+	desc = "EVTDESC1511"
+	picture = "romania_tank"
+
+	option = {
+		name = "EVTOPTA1511"					# They will rue this day...
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.125
+				ROM = { is_in_any_faction = yes }
+			}
+		}
+		FROM = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = conquer }
+			}
+		}
+	}
+	option = {
+		name = "We can't go that far..."
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 4.5
+				ROM = { is_in_any_faction = yes }
+			}
+		}
+		dissent = 5								# We look weak...
+	}
+}
+
+# Estonia - Reaction Event
+country_event = {
+
+	id = 1512
+	
+	trigger = {
+		exists = EST
+		or = {
+			is_subject = no
+			vassal_of = SOV
+		}
+	}
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "EVTNAME1512"
+	desc = "EVTDESC1512"
+	picture = "soviet_law"
+
+	option = {
+		name = "EVTOPTA1512"					# Accept the inevitable
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0
+				is_in_any_faction = yes
+				not = { faction = comintern }
+			}
+			modifier = {
+				factor = 2.0
+				ideology_group = communism
+			}
+		}
+		any_country = { any_owned = { limit = { owned_by = EST } add_core = SOV } }
+		any_owned = { limit = { owned_by = EST } secede_province = SOV }
+		SOV = { split_troops = 0.75 }
+		SOV = { country_event = 1513 }
+		LAT = { country_event = 1515 }
+	}
+	option = {
+		name = "EVTOPTB1512"					# Fight for independence
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 2
+				is_in_any_faction = yes
+				not = { faction = comintern }
+			}
+			modifier = {
+				factor = 0.0
+				ideology_group = communism
+			}
+		}
+		war = {
+			target = SOV
+			attacker_goal = { casus_belli = concede_defeat }
+			defender_goal = { casus_belli = conquer }
+		}
+		relation = { who = SOV value = -20 }
+		relation = { who = GER value = -10 }
+		SOV = { country_event = 1514 }
+		any_country = {
+			limit = {
+				or = {
+					tag = LAT
+					and = {
+						tag = LIT
+						LIT = { NOT = { is_vassal = GER } }
+					}
+				}
+			}
+			country_event = 1521
+		}
+	}
+}
+
+# Response to Soviet - Annexation
+country_event = {
+
+	id = 1513
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1513"
+	desc = "EVTDESC1513"
+	picture = "soviet_law"
+
+	option = {
+		name = "EVTOPTA1513"					# Good
+		inherit = EST
+		any_owned = {
+			limit = { is_core = EST }
+			add_core = SOV
+		}
+		manpower = 50
+	}
+}
+
+# Response to Soviet - War
+country_event = {
+
+	id = 1514
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1514"
+	desc = "EVTDESC1514"
+	picture = "soviet_air"
+
+	option = {
+		name = "EVTOPTA1514"					# OK
+	}
+}
+
+# Latvia - Reaction Event
+country_event = {
+
+	id = 1515
+	
+	trigger = {
+		exists = LAT
+		or = {
+			is_subject = no
+			vassal_of = SOV
+		}
+	}
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "EVTNAME1515"
+	desc = "EVTDESC1515"
+	picture = "soviet_law"
+
+	option = {
+		name = "EVTOPTA1515"					# Accept the inevitable
+		ai_chance = {
+			factor = 66
+			modifier = {
+				factor = 0
+				is_in_any_faction = yes
+				not = { faction = comintern }
+			}
+			modifier = {
+				factor = 1.5
+				ideology_group = communism
+			}
+		}
+		any_country = { any_owned = { limit = { owned_by = LAT } add_core = SOV } }
+		any_owned = { limit = { owned_by = LAT } secede_province = SOV }
+		SOV = { split_troops = 0.75 }
+		SOV = { country_event = 1516 }
+		any_country = { 
+			limit = { tag = LIT GER = { not = { has_country_flag = "M_R_Pact_Intact" } } }
+			country_event = 1518 
+		}
+	}
+	option = {
+		name = "EVTOPTB1515"					# Fight for independence
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2.5
+				is_in_any_faction = yes
+				not = { faction = comintern }
+			}
+			modifier = {
+				factor = 0.0
+				ideology_group = communism
+			}
+		}
+		war = {
+			target = SOV
+			attacker_goal = { casus_belli = concede_defeat }
+			defender_goal = { casus_belli = conquer }
+		}
+		relation = { who = SOV value = -20 }
+		relation = { who = GER value = -10 }
+		SOV = { country_event = 1517 }
+		any_country = {
+			limit = { tag = LIT }
+			country_event = 1521
+		}
+	}
+}
+
+# Response to Soviet - Annexation
+country_event = {
+
+	id = 1516
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1516"
+	desc = "EVTDESC1516"
+	picture = "soviet_law"
+
+	option = {
+		name = "EVTOPTA1516"					# Good
+		inherit = LAT
+		any_owned = {
+			limit = { is_core = LAT }
+			add_core = SOV
+		}
+		manpower = 50
+	}
+}
+
+# Response to Soviet - War
+country_event = {
+
+	id = 1517
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1517"
+	desc = "EVTDESC1517"
+	picture = "soviet_air"
+
+	option = {
+		name = "EVTOPTA1517"					# OK
+	}
+}
+
+# Lithuania - Reaction Event
+country_event = {
+
+	id = 1518
+	
+	trigger = {
+		exists = LIT
+		or = {
+			is_subject = no
+			vassal_of = SOV
+		}
+	}
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "EVTNAME1518"
+	desc = "EVTDESC1518"
+	picture = "soviet_law"
+
+	option = {
+		name = "EVTOPTA1518"					# Accept the inevitable
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0
+				is_in_any_faction = yes
+				not = { faction = comintern }
+			}
+			modifier = {
+				factor = 1.33
+				ideology_group = communism
+			}
+		}
+		any_country = { any_owned = { limit = { owned_by = LIT } add_core = SOV } }
+		any_owned = { limit = { owned_by = LIT } secede_province = SOV }
+		SOV = { split_troops = 0.75 }
+		SOV = { country_event = 1519 }
+	}
+	option = {
+		name = "EVTOPTB1518"					# Fight for independence
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 4
+				is_in_any_faction = yes
+				not = { faction = comintern }
+			}
+			modifier = {
+				factor = 0.0
+				ideology_group = communism
+			}
+		}
+		war = {
+			target = SOV
+			attacker_goal = { casus_belli = concede_defeat }
+			defender_goal = { casus_belli = conquer }
+		}
+		relation = { who = SOV value = -20 }
+		relation = { who = GER value = -10 }
+		SOV = { country_event = 1520 }				# We have noone left to turn to!...
+	}
+}
+
+# Response to Soviet - Annexation
+country_event = {
+
+	id = 1519
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1519"
+	desc = "EVTDESC1519"
+	picture = "soviet_law"
+
+	option = {
+		name = "EVTOPTA1519"					# Good
+		inherit = LIT
+		any_owned = {
+			limit = { is_core = LIT }
+			add_core = SOV
+		}
+		manpower = 50
+	}
+}
+
+# Response to Soviet - War
+country_event = {
+
+	id = 1520
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1520"
+	desc = "EVTDESC1520"
+	picture = "soviet_air"
+
+	option = {
+		name = "EVTOPTA1520"					# OK
+	}
+}
+
+country_event = {
+
+	id = 1521
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "baltic_war_alliance_title"
+	desc = "baltic_war_alliance_desc"
+	picture = "soviet_air"
+
+	option = {
+		name = "We stand together!"
+		ai_chance = { factor = 75}
+		FROM = { create_alliance = THIS }
+		war = {
+			target = SOV
+			attacker_goal = { casus_belli = concede_defeat }
+			defender_goal = { casus_belli = conquer }
+		}
+		threat = { who = all value = -150 }
+	}
+
+	option = {
+		name = "We have no chance..."
+		ai_chance = { factor = 25}
+		SOV = { country_event = 1522 }
+	}
+
+}
+
+country_event = {
+
+	id = 1522
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1519"
+	desc = "EVTDESC1519"
+	picture = "soviet_law"
+
+	option = {
+		name = "EVTOPTA1519"
+		inherit = FROM
+		manpower = 50
+	}
+
+}
+
+country_event = {
+
+	id = 1525
+
+	major = yes
+
+	trigger = {
+		tag = SOV
+		not = { war_with = GER }
+		not = { has_country_flag = "su_signs_peace" }
+		not = { has_country_flag = "mol_rib_pact_broken" }
+		not = { has_country_flag = "german_attack_on_our_sphere_of_influence" }
+		or = {
+			has_country_flag = "mol_rib_pact"
+			GER = { has_country_flag = "soviet_accepts_mol_rib_pact" }
+		}
+		or = {
+			and = {
+				GER = { war_with = LIT }
+				GER = { NOT = { has_country_flag = "M_R_Pact_intact" } }
+			}
+			GER = { war_with = LAT }
+			GER = { war_with = EST }
+			GER = { war_with = FIN }
+			AND = {
+				LIT = { vassal_of = GER }
+				GER = { NOT = { has_country_flag = "M_R_Pact_intact" } }
+			}
+			LAT = { vassal_of = GER }
+			EST = { vassal_of = GER }
+			FIN = { vassal_of = GER }
+		}
+	}
+
+	title = "The pact is broken!"
+	desc = "Germany has deliberately broken the Molotov-Ribbentrop Pact! The Non-Agression Pact is no longer in effect!"
+	picture = "czechs_annexed"
+
+	option = {
+		name = "Traitors!"
+		relation = { who = GER value = -50 }
+		end_non_aggression_pact = GER
+		clr_country_flag = "mol_rib_pact"
+		GER = { clr_country_flag = "soviet_accepts_mol_rib_pact" }
+
+		set_country_flag = "mol_rib_pact_broken"
+		set_country_flag = "german_attack_on_our_sphere_of_influence"
+	}
+}
+
+country_event = {
+
+	id = 1527
+
+	is_triggered_only = yes
+
+	title = "Stalin is outraged"
+	desc = "Stalin has reacted quite arrogantly to our little adventures. They will fall like a house of cards, if they dare to attack us."
+	picture = "tannu_tuva"
+
+	option = {
+		name = "Let them come if they dare!"
+	}
+}
+
+country_event = {
+
+	id = 1528
+	
+	trigger = {
+		tag = GER
+		has_country_flag = "ger_sov_coop"
+		relation = { who = SOV value = 50 }
+		money = 100
+		supplies = 2000
+		SOV = {
+			rare_materials = 1000
+			crude_oil = 1000
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	title = "Soviet-German Cooperation"
+	desc = "After signing the Molotov-Ribbentrop Pact, Germany and the Soviet Union strenghened the ties of their economies with new trade agreements."
+	picture = "austria_alliance"
+	
+	option = {
+		name = "Let's trade!"
+		ai_chance = { factor = 80 }
+		SOV = { country_event = 1529 }
+	}
+	
+	option = {
+		name = "Not now."
+		ai_chance = { factor = 20 }
+	}
+
+}
+
+country_event = {
+
+	id = 1529
+	
+	is_triggered_only = yes
+	
+	title = "Soviet-German Cooperation"
+	desc = "After signing the Molotov-Ribbentrop Pact, Germany and the Soviet Union strenghened the ties of their economies with new trade agreements."
+	picture = "societ_law"
+	
+	option = {
+		name = "Let's trade!"
+		ai_chance = { factor = 80 }
+		money = 100
+		supplies = 2000
+		rare_materials = -1000
+		crude_oil = -1000
+		GER = {
+			money = -100
+			supplies = -2000
+			rare_materials = 1000
+			crude_oil = 1000
+		}		
+	}
+	
+	option = {
+		name = "Not now."
+		ai_chance = { factor = 20 }
+	}
+
+}
+
+# If Lithuania is in Germany's sphere, Germany will make Lithuania a puppet after France falls
+country_event = {
+
+	id = 1530
+	
+	trigger = {
+		tag = LIT
+		exists = LIT
+		GER = { has_country_flag = "M_R_Pact_intact" }
+		or = {
+			is_subject = no
+			vassal_of = GER
+		}
+	}
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "Ultimatum from Germany"
+	desc = "german_ultimatum_lithuania_desc"
+	picture = "soviet_law"
+
+	option = {
+		name = "EVTOPTA1518"					# Accept the inevitable
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0
+				is_in_any_faction = yes
+				not = { faction = axis }
+			}
+			modifier = {
+				factor = 1.33
+				ideology_group = fascism
+			}
+		}		
+		lithuania_region = { limit = { owned_by = LIT } secede_province = GER }
+		GER = { split_troops = 0.75 }
+		GER = { country_event = 1531 }
+	}
+	option = {
+		name = "EVTOPTB1518"					# Fight for independence
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 4
+				is_in_any_faction = yes
+				not = { faction = axis }
+			}
+			modifier = {
+				factor = 0.0
+				ideology_group = fascism
+			}
+		}
+		relation = { who = SOV value = -10 }
+		relation = { who = GER value = -20 }
+		GER = { country_event = 1532 }				# We have noone left to turn to!...
+	}
+}
+# Response to Germany - Annexation
+country_event = {
+
+	id = 1531
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1519"
+	desc = "EVTDESC1519"
+	picture = "soviet_law"
+
+	option = {
+		name = "EVTOPTA1519"					# Good
+		inherit = LIT
+		any_owned = {
+			limit = { is_core = LIT }
+			add_core = GER
+		}
+		manpower = 50
+	}
+}
+
+# Response to Germany - War
+country_event = {
+
+	id = 1532
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1520"
+	desc = "EVTDESC1520"
+	picture = "soviet_air"
+
+	option = {
+		name = "EVTOPTA1520"					# OK
+		war = {
+			target = LIT
+			attacker_goal = { casus_belli = conquer }
+			defender_goal = { casus_belli = concede_defeat }
+		}
+	}
+}
+

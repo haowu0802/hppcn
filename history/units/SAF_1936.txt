@@ -1,0 +1,61 @@
+theatre = {
+	name = "Royal South African Military Command"
+	location = 8054
+	regiment = { type = hq_brigade name = "Cape Town HQ" historical_model = 0 }	
+	division = {
+		name = "Royal South African Division"
+		location = 8054
+		is_reserve = yes
+		regiment = { type = militia_brigade name = "South African Permanent Force" experience = 10 historical_model = 3 }
+		regiment = { type = militia_brigade name = "Active Citizen Force" experience = 10 historical_model = 3 }
+		regiment = { type = militia_brigade name = "Defence Rifles Association" experience = 10 historical_model = 3 }
+	}	
+	navy = {
+		name = "South African Navy"
+		base = 8054
+		location = 8054
+		ship = { type = transport_ship name = "1st SAN Flotilla" experience = 0 historical_model = 0 }
+	}
+}
+convoy_construction=
+{
+	country = SAF
+	id=
+	{
+		id=15454
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = SAF
+	id=
+	{
+		id=15452
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = SAF
+	id=
+	{
+		id=15453
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

@@ -1,0 +1,945 @@
+#########################################################################
+# Seamen Training
+#########################################################################
+
+# Basic Crew Training
+
+carrier_crew_training = {		# Morale and Organisation for Carriers and Escort Carriers Morale for CAGs
+
+	carrier = {
+		default_organisation = 5 
+		default_morale = 0.05
+		positioning = 0.01
+	}
+	escort_carrier = {
+		default_organisation = 5 
+		default_morale = 0.05
+		positioning = 0.01
+	}
+	cag = {
+		default_morale = 0.075
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			carrier_technology = 1
+			escort_carrier_technology = 1
+		}
+	}
+
+	research_bonus_from = {
+		carrier_practical = 0.38
+		naval_doctrine_practical = 0.38
+		base_strike_doctrine = 1.75
+	}
+
+	change = no 
+	on_completion = no_theory
+	
+	stealable = no
+	difficulty = 4
+	start_year = 1936
+	first_offset = 1937
+	additional_offset = 2
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+cag_pilot_training = {
+
+	cag = {
+		default_organisation = 7.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		cag_development = 1
+	}
+
+	research_bonus_from = {
+		cas_focus = 1.25			# Flying a dive-bomber is more like flying a CAS then a bomber.
+		fighter_focus = 0.75
+		air_doctrine_practical = 0.50
+	}
+
+	change = no 
+	on_completion = no_theory
+
+	difficulty = 5
+	
+	#common for all techs.
+	stealable = no
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+capital_ship_crew_training = {	# Morale and Organisation for Battleships, Super-Heavy Battleships and Battlecruisers
+	
+	battlecruiser = {
+		default_organisation = 5 
+		default_morale = 0.05
+		positioning = 0.01
+	}
+	battleship = {
+		default_organisation = 5 
+		default_morale = 0.05
+		positioning = 0.01
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			battlecruiser_technology = 1
+			battleship_technology = 1		# If you have SHBB, then you have BB.
+		}
+	}
+
+	research_bonus_from = {
+		capitalship_practical = 0.50
+		naval_doctrine_practical = 0.75
+		fleet_in_being_doctrine = 1.25
+	}
+
+	change = no 
+	on_completion = no_theory
+	
+	stealable = no
+	difficulty = 4
+	start_year = 1936
+	first_offset = 1937
+	additional_offset = 2
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+destroyer_crew_training = {		# Morale and Organisation for Destroyers
+	
+	destroyer = {
+		default_organisation = 5 
+		default_morale = 0.05
+		positioning = 0.01
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		destroyer_technology = 1
+	}
+
+	research_bonus_from = {
+		destroyer_practical = 0.50
+		naval_doctrine_practical = 0.75
+		fleet_in_being_doctrine = 0.75
+		base_strike_doctrine = 0.50
+	}
+
+	change = no 
+	on_completion = no_theory
+	
+	stealable = no
+	
+	difficulty = 3
+	start_year = 1936
+	first_offset = 1937
+	additional_offset = 2
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+cruiser_crew_training = {		# Morale and Organisation for Light and Heavy Cruisers
+	
+	light_cruiser = { 
+		default_organisation = 5 
+		default_morale = 0.05
+		positioning = 0.01
+	}
+	heavy_cruiser = { 
+		default_organisation = 5 
+		default_morale = 0.05
+		positioning = 0.01
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			lightcruiser_technology = 1
+			heavycruiser_technology = 1
+		}
+	}
+
+	research_bonus_from = {
+		cruiser_practical = 0.50
+		naval_doctrine_practical = 0.75
+		fleet_in_being_doctrine = 0.75
+		base_strike_doctrine = 0.50
+	}
+
+	change = no 
+	on_completion = no_theory
+	
+	difficulty = 3
+	stealable = no
+	start_year = 1936
+	first_offset = 1937
+	additional_offset = 2
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+submarine_crew_training = {		# Morale and Organisation for Submarines
+	
+	submarine = {
+		default_organisation = 5
+		default_morale = 0.05
+		positioning = 0.01
+	}
+
+	
+	allow = {
+		has_global_flag = "allow_research"
+		submarine_technology = 1
+	}
+
+	research_bonus_from = {
+		submarine_practical = 0.50
+		naval_doctrine_practical = 0.75
+		sealane_interdiction_doctrine = 0.75
+		base_strike_doctrine = 0.50
+	}
+
+	change = no 
+	on_completion = no_theory
+
+	difficulty = 4
+	start_year = 1936
+	first_offset = 1937
+	stealable = no
+	additional_offset = 2
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+# Specialized Equipment Training
+
+commander_decision_making = {		# Targeting more important ships
+	
+	targeting_choice = 0.05
+	
+	research_bonus_from = {
+		naval_doctrine_practical = 2.50
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		or = {						# Any of the ship stuff.
+			submarine_technology = 1	
+			lightcruiser_technology = 1
+			heavycruiser_technology = 1
+			destroyer_technology = 1
+			battlecruiser_technology = 1
+			battleship_technology = 1
+			escort_carrier_technology = 1
+		}
+	}
+
+	change = no 
+	on_completion = no_theory
+	
+	difficulty = 5
+	start_year = 1937
+	first_offset = 1939
+	additional_offset = 2
+	stealable = no
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+fire_control_system_training = {	# Targeting more precisly and to longer distances
+	
+	targeting_chance = 0.05
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			and = {
+				not = { fire_control_system_training = 4 }
+				mechnical_computing_machine = 1
+			}
+			radar = 3
+		}
+	}
+	
+	research_bonus_from = {
+		naval_doctrine_practical = 0.75
+		electornicegineering_theory = 1.75
+	}
+
+	change = no 
+	on_completion = no_theory
+	
+	difficulty = 5
+	start_year = 1938
+	first_offset = 1939
+	additional_offset = 2
+	stealable = no
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+radar_training = {					# Increased Surface and Air detection
+
+	battleship 			= { surface_detection = 1 air_detection = 1 }
+	battlecruiser 		= { surface_detection = 1 air_detection = 1 }
+	heavy_cruiser 		= { surface_detection = 1 air_detection = 1 }
+	light_cruiser 		= { surface_detection = 1 air_detection = 1 }
+	destroyer 			= { surface_detection = 1 air_detection = 1 }
+	
+	carrier 			= { surface_detection = 1 air_detection = 1 }
+	escort_carrier 		= { surface_detection = 1 air_detection = 1 }
+
+	allow = {
+		has_global_flag = "allow_research"
+		surface_detection_system = 3
+	}
+
+	research_bonus_from = {
+		naval_doctrine_practical = 0.75
+		electornicegineering_theory = 1.75
+		
+	}
+
+	change = no 
+	on_completion = no_theory
+	
+	difficulty = 5
+	start_year = 1939
+	first_offset = 1940
+	additional_offset = 2
+	stealable = no
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+night_equipment_training = {			# Better night-fighting capability
+
+	battleship 			= { night = { attack = 0.25 } }
+	battlecruiser 		= { night = { attack = 0.25 } }
+	heavy_cruiser 		= { night = { attack = 0.25 } }
+	light_cruiser 		= { night = { attack = 0.25 } }
+	destroyer 			= { night = { attack = 0.25 } }
+	submarine 			= { night = { attack = 0.25 } }
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {						# Any of the ship stuff.
+			submarine_technology = 1	
+			lightcruiser_technology = 1
+			heavycruiser_technology = 1
+			destroyer_technology = 1
+			battlecruiser_technology = 1
+			battleship_technology = 1
+			escort_carrier_technology = 1
+		}
+	}
+
+	research_bonus_from = {
+		naval_doctrine_practical = 0.75
+		electornicegineering_theory = 1.75
+		
+	}
+
+	change = no 
+	on_completion = no_theory
+	stealable = no
+	difficulty = 7
+	start_year = 1942
+	folder = naval_doctrine_folder
+}
+
+base_operations = {					# Increase the efficiency of Ports
+
+	naval_base_efficiency = 0.075
+	
+	allow = {
+		has_global_flag = "allow_research"
+		num_of_ports = 1
+	}
+
+	research_bonus_from = {
+		naval_doctrine_practical = 2.50
+	}
+
+	change = no 
+	on_completion = no_theory
+
+	difficulty = 6
+	start_year = 1937
+	first_offset = 1939
+	stealable = no
+	additional_offset = 2
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+underway_repleshment = {			# Increased range thanks to better replenishing ships
+	
+	battleship 			= { range = 600 fuel_consumption = 0.02 supply_consumption = 0.02 }
+	battlecruiser 		= { range = 600 fuel_consumption = 0.02 supply_consumption = 0.02 }
+	heavy_cruiser 		= { range = 500 fuel_consumption = 0.02 supply_consumption = 0.02 }
+	light_cruiser 		= { range = 500 fuel_consumption = 0.02 supply_consumption = 0.02 }
+	destroyer 			= { range = 500 fuel_consumption = 0.02 supply_consumption = 0.02 }
+	
+	submarine			= { range = 450 fuel_consumption = 0.03 supply_consumption = 0.03 }
+	
+	carrier 			= { range = 700 fuel_consumption = 0.02 supply_consumption = 0.02 }
+	escort_carrier 		= { range = 500 fuel_consumption = 0.02 supply_consumption = 0.02 }
+	
+	allow = {
+		has_global_flag = "allow_research"
+		or = {						# Any of the Capital Ships.
+			heavycruiser_technology = 1
+			battlecruiser_technology = 1
+			battleship_technology = 1
+			escort_carrier_technology = 1
+		}
+	}
+	
+	research_bonus_from = {
+		naval_doctrine_practical = 2.50
+	}
+
+	change = no					# This represents refueling ships, which need to be built.
+	on_completion = no_theory
+	
+	difficulty = 6
+	start_year = 1937
+	first_offset = 1939
+	additional_offset = 2
+	max_level = 20
+	stealable = no
+	folder = naval_doctrine_folder
+}
+
+
+#########################################################################
+# Sealane Control
+#########################################################################
+
+sealane_control = {
+
+	escort_efficiency = 0.05
+
+	battleship = {
+		default_organisation = 1
+	}
+	battlecruiser = {
+		default_organisation = 1 
+	}
+	heavy_cruiser = {
+		default_organisation = 1 
+	}
+	light_cruiser = {
+		default_organisation = 1 
+	}
+	destroyer = {
+		default_organisation = 1 
+	}
+
+	research_bonus_from = {
+		capitalship_practical = 0.75
+		naval_doctrine_practical = 1.75
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		capital_ship_crew_training = 1
+	}
+
+	change = no 
+	on_completion = fleet_in_being_doctrine
+
+	difficulty = 8
+	
+	start_year = 1918
+	first_offset = 1936
+	additional_offset = 1
+	max_level = 20
+	stealable = no
+	folder = naval_doctrine_folder
+}
+
+battleship_taskforce_doctrine = {
+	
+	battlecruiser = {
+		positioning = 0.05
+	}
+	battleship = {
+		positioning = 0.05
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		sealane_control = 1
+	}
+
+	research_bonus_from = {
+		capitalship_practical = 0.50
+		naval_doctrine_practical = 0.75
+		fleet_in_being_doctrine = 1.25
+	}
+
+	change = no 
+	on_completion = fleet_in_being_doctrine
+	
+	difficulty = 5
+	start_year = 1937
+	first_offset = 1939
+	additional_offset = 2
+	max_level = 20
+	stealable = no
+	folder = naval_doctrine_folder
+}
+
+battleline_cruiser_doctrine = {
+	
+	heavy_cruiser = {
+		positioning = 0.05
+	}
+	light_cruiser = {
+		positioning = 0.05
+	}
+
+	
+	allow = {
+		has_global_flag = "allow_research"
+		sealane_control = 1
+	}
+
+	research_bonus_from = {
+		cruiser_practical = 0.50
+		naval_doctrine_practical = 0.75
+		fleet_in_being_doctrine = 1.25
+	}
+
+	change = no 
+	on_completion = fleet_in_being_doctrine
+
+	difficulty = 5
+	start_year = 1937
+	first_offset = 1939
+	additional_offset = 2
+	max_level = 20
+	stealable = no
+	folder = naval_doctrine_folder
+}
+
+carrier_escort_role_doctrine = {
+	
+	convoy_escort = {
+		efficiency = 0.05
+		reduction_modifier = -0.05 
+	}
+	escort_efficiency = 0.05
+	
+	allow = {
+		has_global_flag = "allow_research"
+		sealane_control = 1
+		escort_carrier_technology = 1
+		cag_development = 1
+	}
+
+	research_bonus_from = {
+		carrier_practical = 0.50
+		naval_doctrine_practical = 0.75
+		fleet_in_being_doctrine = 1.25
+	}
+
+	change = no 
+	on_completion = fleet_in_being_doctrine 
+	
+	difficulty = 5
+	start_year = 1937
+	first_offset = 1939
+	additional_offset = 2
+	stealable = no
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+asw_tactics = {
+
+	destroyer = {
+		sub_detection = 0.50
+		sub_attack = 1.00
+	}
+	escort_efficiency = 0.05
+
+	allow = {
+		has_global_flag = "allow_research"
+		sealane_control = 1
+	}
+
+	research_bonus_from = {
+		destroyer_practical = 0.50
+		naval_doctrine_practical = 0.75
+		fleet_in_being_doctrine = 1.25
+	}
+
+	change = no 
+	on_completion = fleet_in_being_doctrine
+	
+	difficulty = 5
+	start_year = 1937
+	first_offset = 1939
+	additional_offset = 2
+	max_level = 20
+	stealable = no
+	folder = naval_doctrine_folder
+}
+#########################################################################
+# Sealane interdiction 
+#########################################################################
+
+sealane_interdiction = {
+	
+	convoy_raid = {
+		efficiency = 0.05
+		reduction_modifier = -0.05 
+ 	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		submarine_crew_training = 1
+	}
+
+	research_bonus_from = {
+		submarine_practical = 0.75
+		naval_doctrine_practical = 1.75
+	}
+
+	change = no 
+	on_completion = sealane_interdiction_doctrine
+
+	difficulty = 8
+	
+	start_year = 1918
+	first_offset = 1936
+	additional_offset = 1
+	stealable = no
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+independent_battleship_operations = {
+		
+	battlecruiser = {
+		convoy_attack = 1.00
+	}
+	battleship = {
+		convoy_attack = 0.75		
+	}
+
+	research_bonus_from = {
+		capitalship_practical = 0.50
+		naval_doctrine_practical = 0.75
+		sealane_interdiction_doctrine = 1.25
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		sealane_interdiction = 1
+	}
+
+	change = no 
+	on_completion = sealane_interdiction_doctrine
+
+	difficulty = 5
+	start_year = 1937
+	first_offset = 1939
+	additional_offset = 2
+	max_level = 20
+	stealable = no
+	folder = naval_doctrine_folder
+}
+
+independent_cruiser_operations = {
+	
+	heavy_cruiser = {
+		convoy_attack = 0.50
+	}
+	
+	light_cruiser = {
+		convoy_attack = 0.30
+	}
+
+	
+	allow = {
+		has_global_flag = "allow_research"
+		sealane_interdiction = 1
+	}
+
+	research_bonus_from = {
+		cruiser_practical = 0.50
+		naval_doctrine_practical = 0.75
+		sealane_interdiction_doctrine = 1.25
+	}
+
+	change = no 
+	on_completion = sealane_interdiction_doctrine
+
+	difficulty = 5
+	start_year = 1937
+	first_offset = 1939
+	additional_offset = 2
+	stealable = no
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+independent_destroyer_operations = {
+	
+	destroyer = {
+		convoy_attack = 0.25
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		sealane_interdiction = 1
+	}
+
+	research_bonus_from = {
+		destroyer_practical = 0.50
+		naval_doctrine_practical = 0.75
+		sealane_interdiction_doctrine = 1.25
+	}
+
+	change = no 
+	on_completion = sealane_interdiction_doctrine
+
+	difficulty = 5
+	start_year = 1937
+	first_offset = 1939
+	additional_offset = 2
+	max_level = 20
+	stealable = no
+	folder = naval_doctrine_folder
+}
+
+trade_interdiction_submarine_doctrine = {
+
+	submarine = {
+		positioning = 0.08
+		convoy_attack = 0.50
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		sealane_interdiction = 1
+	}
+
+	research_bonus_from = {
+		submarine_practical = 0.50
+		naval_doctrine_practical = 0.75
+		sealane_interdiction_doctrine = 1.25
+	}
+
+	change = no 
+	on_completion = sealane_interdiction_doctrine
+
+	difficulty = 5
+	start_year = 1937
+	first_offset = 1939
+	additional_offset = 2
+	stealable = no
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+#########################################################################
+# Force Projection
+#########################################################################
+
+force_projection = {
+
+	carrier = {
+		positioning = 0.02
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		carrier_crew_training = 1
+	}
+
+	research_bonus_from = {
+		carrier_practical = 0.75
+		naval_doctrine_practical = 1.25
+		air_doctrine_practical = 0.50
+	}
+
+	change = no 
+	on_completion = base_strike_doctrine
+
+	difficulty = 8
+	
+	start_year = 1918
+	first_offset = 1936
+	additional_offset = 1
+	stealable = no
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+carrier_taskforce_doctrine = {
+
+	carrier = {
+		positioning = 0.075
+	}
+	escort_carrier = {
+		positioning = 0.05
+	}
+
+	carrier_protection = {
+		efficiency  = 0.05
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		force_projection = 1
+	}
+
+	research_bonus_from = {
+		carrier_practical = 0.50
+		naval_doctrine_practical = 0.75
+		base_strike_doctrine = 1.25
+	}
+
+	change = no 
+	on_completion = base_strike_doctrine
+
+	difficulty = 5
+	start_year = 1937
+	first_offset = 1939
+	additional_offset = 2
+	max_level = 20
+	stealable = no
+	folder = naval_doctrine_folder
+}
+
+cruiser_escort_doctrine = {
+	
+	light_cruiser = {
+		positioning = 0.05
+		air_attack = 0.75
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		force_projection = 1
+	}
+
+	research_bonus_from = {
+		cruiser_practical = 0.50
+		naval_doctrine_practical = 0.75
+		base_strike_doctrine = 1.25
+	}
+
+	change = no 
+	on_completion = base_strike_doctrine 
+	
+	difficulty = 5
+	start_year = 1937
+	first_offset = 1939
+	additional_offset = 2
+	stealable = no
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+fleet_escort_destroyer_doctrine = {
+	
+	destroyer = {
+		positioning = 0.05
+		range = 100
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		force_projection = 1
+	}
+
+	research_bonus_from = {
+		destroyer_practical = 0.50
+		naval_doctrine_practical = 0.75
+		base_strike_doctrine = 1.25
+	}
+
+	change = no 
+	on_completion = base_strike_doctrine
+	
+	difficulty = 5
+	start_year = 1937
+	first_offset = 1939
+	additional_offset = 2
+	stealable = no
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+fleet_submarine_doctrine = {
+
+	submarine = {
+		positioning = 0.05
+		sea_attack = 0.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		force_projection = 1
+	}
+
+	research_bonus_from = {
+		submarine_practical = 0.50
+		naval_doctrine_practical = 0.75
+		base_strike_doctrine = 1.25
+	}
+
+	change = no 
+	on_completion = base_strike_doctrine
+	
+	difficulty = 5
+	start_year = 1937
+	first_offset = 1939
+	additional_offset = 2
+	stealable = no
+	max_level = 20
+	folder = naval_doctrine_folder
+}
+
+prefab_ports = {
+
+	naval_base_efficiency = 0.25
+
+	allow = {
+		has_global_flag = "allow_research"
+		industral_production = 8
+		base_operations = 4
+	}
+
+	research_bonus_from = {
+		construction_practical = 0.50
+		naval_doctrine_practical = 0.75
+		base_strike_doctrine = 1.25
+	}
+
+	change = no 
+	on_completion = no_theory
+	
+	difficulty = 5
+	stealable = no
+	start_year = 1944
+	folder = industry_folder
+}
+

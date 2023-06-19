@@ -1,0 +1,31 @@
+diplomatic_decisions = {
+
+	investment = {
+		potential = {
+			government_in_exile = no
+			not = { has_country_modifier = "invest_into_research" }
+			not = { has_country_modifier = "invest_into_industry" }
+			not = { has_country_modifier = "invest_into_officers" }
+			not = { has_country_modifier = "invest_into_trade" }
+			not = { has_country_modifier = "invest_into_mining" }
+			not = { has_country_modifier = "invest_into_supplies" }
+			not = { has_country_modifier = "invest_into_the_army" }
+			not = { has_country_modifier = "invest_into_the_navy" }
+			not = { has_country_modifier = "invest_into_the_airforce" }
+			not = { has_country_modifier = "invest_into_the_people" }
+			total_ic = 25
+			money = 5000
+		}
+		allow = {
+			not = { has_country_modifier = "investor_negotiations" }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "investor_negotiations"
+				duration = 60
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+}

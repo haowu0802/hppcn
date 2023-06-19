@@ -1,0 +1,988 @@
+########################
+# Operational Doctrine #
+########################
+
+# Great War Experience
+
+great_war_experience = {
+
+	tactic_assault = 3
+	tactic_encirclement = 2
+	tactic_reckless_assault = 1
+	tactic_counterattack = 3
+	tactic_delay = 2
+	tactic_slower_delay = 1
+	research_bonus_from = {
+		land_doctrine_practical = 2.50
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	change = no
+	on_completion = land_doctrine_practical
+
+	difficulty = 5
+
+	stealable = no
+	start_year = 1918
+	folder = operational_doctrine_folder
+}
+
+# Grand Battle Plan
+
+grand_battle_plan_1930 = {
+
+	tactic_assault = 3
+	tactic_encirclement = 2
+	tactic_reckless_assault = 1
+	tactic_counterattack = 3
+	tactic_delay = 2
+	tactic_slower_delay = 1
+	reinforce_chance = 0.01
+
+	artillery_unit_type = .025
+	direct_fire_unit_type = .025
+	support_unit_type = .025
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "grand_battle_plan_30"
+	}
+
+	research_bonus_from = {
+		grand_battleplan_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = grand_battleplan_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1930
+    folder = operational_doctrine_folder
+}
+
+grand_battle_plan_1937 = {
+
+	tactic_assault = 3
+	tactic_encirclement = 2
+	tactic_reckless_assault = 1
+	tactic_counterattack = 3
+	tactic_delay = 2
+	tactic_slower_delay = 1
+	reinforce_chance = 0.01
+
+	artillery_unit_type = .025
+	direct_fire_unit_type = .025
+	support_unit_type = .025
+
+	horse_towed_support_brigade = {
+		defensiveness = 0.5
+		toughness = -0.025
+		soft_attack = 0.4
+		hard_attack = 0.3
+		air_attack = 0.35
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "grand_battle_plan_37"
+	}
+
+	research_bonus_from = {
+		grand_battleplan_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = grand_battleplan_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1937
+    folder = operational_doctrine_folder
+}
+
+grand_battle_plan_1940 = {
+
+	tactic_assault = 3
+	tactic_encirclement = 2
+	tactic_reckless_assault = 1
+	tactic_counterattack = 3
+	tactic_delay = 2
+	tactic_slower_delay = 1
+	reinforce_chance = 0.01
+	artillery_unit_type = .025
+	direct_fire_unit_type = .025
+	support_unit_type = .025
+
+	horse_towed_support_brigade = {
+		defensiveness = 0.5
+		toughness = -0.025
+		soft_attack = 0.4
+		hard_attack = 0.3
+		air_attack = 0.35
+	}
+
+	truck_towed_support_brigade = {
+		defensiveness = 0.5
+		toughness = -0.025
+		soft_attack = 0.4
+		hard_attack = 0.3
+		air_attack = 0.35
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "grand_battle_plan_40"
+	}
+
+	research_bonus_from = {
+		grand_battleplan_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = grand_battleplan_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1940
+    folder = operational_doctrine_folder
+}
+
+grand_battle_plan_1943 = {
+
+	tactic_assault = 3
+	tactic_encirclement = 2
+	tactic_reckless_assault = 1
+	tactic_counterattack = 3
+	tactic_delay = 2
+	tactic_slower_delay = 1
+	reinforce_chance = 0.01
+	artillery_unit_type = .025
+	direct_fire_unit_type = .025
+	support_unit_type = .025
+
+	horse_towed_support_brigade = {
+		defensiveness = 1.0
+		toughness = -0.05
+		soft_attack = 0.8
+		hard_attack = 0.3
+		air_attack = 0.35
+	}
+
+	truck_towed_support_brigade = {
+		defensiveness = 1.0
+		toughness = -0.05
+		soft_attack = 0.8
+		hard_attack = 0.3
+		air_attack = 0.35
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "grand_battle_plan_43"
+	}
+
+	research_bonus_from = {
+		grand_battleplan_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = grand_battleplan_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1943
+    folder = operational_doctrine_folder
+}
+
+grand_battle_plan_1946 = {
+
+	tactic_assault = 3
+	tactic_encirclement = 2
+	tactic_reckless_assault = 1
+	tactic_counterattack = 3
+	tactic_delay = 2
+	tactic_slower_delay = 1
+	reinforce_chance = 0.01
+	artillery_unit_type = .025
+	direct_fire_unit_type = .025
+	support_unit_type = .025
+
+	horse_towed_support_brigade = {
+		defensiveness = 0.5
+		toughness = -0.025
+		soft_attack = 0.4
+	}
+
+	truck_towed_support_brigade = {
+		defensiveness = 0.5
+		toughness = -0.025
+		soft_attack = 0.4
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "grand_battle_plan_46"
+	}
+
+	research_bonus_from = {
+		grand_battleplan_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = grand_battleplan_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1946
+    folder = operational_doctrine_folder
+}
+
+# Superior Firepower
+
+superior_firepower_1930 = {
+
+	tactic_encirclement = 5
+	tactic_breakthrough = 3
+	tactic_superior_breakthrough = 1
+	tactic_delay = 2
+	tactic_slower_delay = 1
+	tactic_tactical_withdrawal = 3
+	tactic_elastic_defence = 3
+	tactic_backhand_blow = 1
+	artillery_unit_type = .075
+	armor_unit_type = .05
+	
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "superior_firepower_30"
+		motorized_support_brigades = 1
+	}
+
+	research_bonus_from = {
+		superior_firepower_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = superior_firepower_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1930
+    folder = operational_doctrine_folder
+}
+
+superior_firepower_1937 = {
+
+	tactic_encirclement = 5
+	tactic_breakthrough = 3
+	tactic_superior_breakthrough = 1
+	tactic_delay = 2
+	tactic_slower_delay = 1
+	tactic_tactical_withdrawal = 3
+	tactic_elastic_defence = 3
+	tactic_backhand_blow = 1
+	artillery_unit_type = .075
+	armor_unit_type = .05
+
+	horse_towed_support_brigade = {
+		max_strength = 10			# +1000 Soldiers
+		build_cost_manpower = 1.00
+		build_cost_ic = 2.0
+		defensiveness = 1.5
+		toughness = 0.25
+		soft_attack = 0.8
+		air_attack = 0.5
+		hard_attack = 0.6
+		transport_weight = 2.50
+		supply_consumption = 1.0
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "superior_firepower_37"
+		motorized_support_brigades = 1
+	}
+
+	research_bonus_from = {
+		superior_firepower_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = superior_firepower_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1937
+    folder = operational_doctrine_folder
+}
+
+superior_firepower_1940 = {
+
+	tactic_encirclement = 5
+	tactic_breakthrough = 3
+	tactic_superior_breakthrough = 1
+	tactic_delay = 2
+	tactic_slower_delay = 1
+	tactic_tactical_withdrawal = 3
+	tactic_elastic_defence = 3
+	tactic_backhand_blow = 1
+	artillery_unit_type = .075
+	armor_unit_type = .05
+
+	horse_towed_support_brigade = {
+		max_strength = 10			# +1000 Soldiers
+		build_cost_manpower = 1.00
+		build_cost_ic = 2.0
+		defensiveness = 2.0
+		toughness = 0.25
+		soft_attack = 0.15
+		hard_attack = 0.6
+		air_attack = 0.5
+		transport_weight = 2.50
+		supply_consumption = 1.0
+	}
+
+	truck_towed_support_brigade = {
+		max_strength = 10			# +1000 Soldiers
+		build_cost_manpower = 1.00
+		build_cost_ic = 2.0
+		defensiveness = 2.0
+		toughness = 0.25
+		soft_attack = 0.15
+		hard_attack = 0.6
+		air_attack = 0.5
+		transport_weight = 2.50
+		supply_consumption = 1.0
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "superior_firepower_40"
+		motorized_support_brigades = 1
+	}
+
+	research_bonus_from = {
+		superior_firepower_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = superior_firepower_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1940
+    folder = operational_doctrine_folder
+}
+
+superior_firepower_1943 = {
+
+	tactic_encirclement = 5
+	tactic_breakthrough = 3
+	tactic_superior_breakthrough = 1
+	tactic_delay = 2
+	tactic_slower_delay = 1
+	tactic_tactical_withdrawal = 3
+	tactic_elastic_defence = 3
+	tactic_backhand_blow = 1
+	artillery_unit_type = .075
+	armor_unit_type = .05
+
+	truck_towed_support_brigade = {
+		max_strength = 10			# +1000 Soldiers
+		build_cost_manpower = 1.00
+		build_cost_ic = 2.0
+		defensiveness = 2.0
+		toughness = 0.25
+		soft_attack = 0.15
+		hard_attack = 0.6
+		air_attack = 0.5
+		transport_weight = 2.50
+		supply_consumption = 1.0
+	}
+
+	self_propelled_support_brigade = {
+		max_strength = 10			# +1000 Soldiers
+		build_cost_manpower = 1.00
+		build_cost_ic = 4.0
+		defensiveness = 2.0
+		toughness = 0.25
+		soft_attack = 0.15
+		hard_attack = 0.6
+		air_attack = 0.5
+		transport_weight = 2.50
+		supply_consumption = 1.0
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "superior_firepower_43"
+		motorized_support_brigades = 1
+	}
+
+	research_bonus_from = {
+		superior_firepower_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = superior_firepower_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1943
+    folder = operational_doctrine_folder
+}
+
+superior_firepower_1946 = {
+
+	tactic_encirclement = 5
+	tactic_breakthrough = 3
+	tactic_superior_breakthrough = 1
+	tactic_delay = 2
+	tactic_slower_delay = 1
+	tactic_tactical_withdrawal = 3
+	tactic_elastic_defence = 3
+	tactic_backhand_blow = 1
+	artillery_unit_type = .075
+	armor_unit_type = .05
+
+	self_propelled_support_brigade = {
+		max_strength = 10			# +1000 Soldiers
+		build_cost_manpower = 1.00
+		build_cost_ic = 4.0
+		defensiveness = 2.0
+		toughness = 0.25
+		soft_attack = 0.15
+		hard_attack = 0.6
+		air_attack = 0.5
+		transport_weight = 2.50
+		supply_consumption = 1.0
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "superior_firepower_46"
+		motorized_support_brigades = 1
+	}
+
+	research_bonus_from = {
+		superior_firepower_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = superior_firepower_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1946
+    folder = operational_doctrine_folder
+}
+
+# Hidden tech allowing a fifth Brigade in Divisions when any of the Superior Firepower Doctrines is researched.
+
+fifth_brigade = {
+
+	division_size = 1
+
+	allow = {
+		tag = REB
+	}
+
+	change = no
+
+	difficulty = 1
+
+	stealable = no
+    start_year = 1918
+}
+
+# Blitzkrieg
+
+blitzkrieg_1930 = {
+
+	tactic_breakthrough = 5
+  	tactic_superior_breakthrough = 2
+	tactic_blitz = 3
+	tactic_super_blitz = 1
+	tactic_elastic_defence = 3
+	attack_delay = 5
+	attack_movement_speed = 0.05
+	armor_unit_type = .075
+	artillery_unit_type = 0.05
+	direct_fire_unit_type = 0.05
+
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "blitzkrieg_30"
+	}
+
+	research_bonus_from = {
+		spearhead_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = spearhead_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1930
+    folder = operational_doctrine_folder
+}
+
+blitzkrieg_1937 = {
+
+	tactic_breakthrough = 5
+  	tactic_superior_breakthrough = 2
+	tactic_blitz = 3
+	tactic_super_blitz = 1
+	tactic_elastic_defence = 3
+	attack_delay = 4
+	attack_movement_speed = 0.025
+	armor_unit_type = .075
+	artillery_unit_type = 0.05
+	direct_fire_unit_type = 0.05
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "blitzkrieg_37"
+	}
+
+	research_bonus_from = {
+		spearhead_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = spearhead_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1937
+    folder = operational_doctrine_folder
+}
+
+blitzkrieg_1940 = {
+
+	attack_delay = 3
+	tactic_breakthrough = 5
+  	tactic_superior_breakthrough = 2
+	tactic_blitz = 3
+	tactic_super_blitz = 1
+	tactic_elastic_defence = 3
+	attack_movement_speed = 0.02
+	armor_unit_type = .075
+	artillery_unit_type = 0.05
+	direct_fire_unit_type = 0.05
+
+	self_propelled_support_brigade = {
+		soft_attack = 0.5
+		hard_attack = 0.3
+		toughness = 0.15
+		officers = 10
+		build_time = 10
+	}
+	hq_brigade = {
+		maximum_speed = 6.0
+		supply_consumption = 0.5
+		fuel_consumption = 0.25
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "blitzkrieg_40"
+	}
+
+	research_bonus_from = {
+		spearhead_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = spearhead_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1940
+    folder = operational_doctrine_folder
+}
+
+blitzkrieg_1943 = {
+
+	tactic_breakthrough = 5
+  	tactic_superior_breakthrough = 2
+	tactic_blitz = 3
+	tactic_super_blitz = 1
+	tactic_elastic_defence = 3
+	attack_delay = 2
+	attack_movement_speed = 0.015
+	armor_unit_type = .075
+	artillery_unit_type = 0.05
+	direct_fire_unit_type = 0.05
+
+	self_propelled_support_brigade = {
+		soft_attack = 1.0
+		hard_attack = 0.5
+		toughness = 0.15
+		officers = 15
+		build_time = 15
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "blitzkrieg_43"
+	}
+
+	research_bonus_from = {
+		spearhead_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = spearhead_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1943
+    folder = operational_doctrine_folder
+}
+
+blitzkrieg_1946 = {
+
+	tactic_breakthrough = 5
+  	tactic_superior_breakthrough = 2
+	tactic_blitz = 3
+	tactic_super_blitz = 1
+	tactic_elastic_defence = 3
+	attack_delay = 1
+	attack_movement_speed = 0.01
+	armor_unit_type = .075
+	artillery_unit_type = 0.05
+	direct_fire_unit_type = 0.05
+
+	self_propelled_support_brigade = {
+		soft_attack = 0.5
+		hard_attack = 0.3
+		toughness = 0.15
+		officers = 10
+		build_time = 10
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "blitzkrieg_46"
+	}
+
+	research_bonus_from = {
+		spearhead_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = spearhead_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1946
+    folder = operational_doctrine_folder
+}
+
+# Human Wave
+
+human_wave_1930 = {
+
+	tactic_shock = 3
+	tactic_ambush = 3
+	tactic_assault = 2
+	tactic_reckless_assault = 1
+	reinforce_chance = 0.02
+	unit_cooperation = 0.01
+	support_unit_type = .025
+	artillery_unit_type = 0.025
+	
+	infantry_brigade = { combat_width = -0.05 }
+	garrison_brigade = { combat_width = -0.05 }
+	cavalry_brigade = { combat_width = -0.05 }
+	militia_brigade = { combat_width = -0.05 }
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "human_wave_30"
+	}
+
+	research_bonus_from = {
+		human_wave_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = human_wave_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1930
+    folder = operational_doctrine_folder
+}
+
+human_wave_1937 = {
+
+	tactic_shock = 3
+	tactic_ambush = 3
+	tactic_assault = 2
+	tactic_reckless_assault = 1
+	reinforce_chance = 0.02
+	unit_cooperation = 0.01
+	support_unit_type = .025
+	artillery_unit_type = 0.025
+	
+	infantry_brigade = { combat_width = -0.05 }
+	garrison_brigade = { combat_width = -0.05 }
+	cavalry_brigade = { combat_width = -0.05 }
+	militia_brigade = { combat_width = -0.05 }
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "human_wave_37"
+	}
+
+	research_bonus_from = {
+		human_wave_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = human_wave_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1937
+    folder = operational_doctrine_folder
+}
+
+human_wave_1940 = {
+
+	tactic_shock = 3
+	tactic_ambush = 3
+	tactic_assault = 2
+	tactic_reckless_assault = 1
+	reinforce_chance = 0.02
+	unit_cooperation = 0.01
+	support_unit_type = .025
+	artillery_unit_type = 0.025
+	
+	infantry_brigade = { combat_width = -0.05 }
+	garrison_brigade = { combat_width = -0.05 }
+	cavalry_brigade = { combat_width = -0.05 }
+	militia_brigade = { combat_width = -0.05 }
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "human_wave_40"
+	}
+
+	research_bonus_from = {
+		human_wave_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = human_wave_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1940
+    folder = operational_doctrine_folder
+}
+
+human_wave_1943 = {
+
+	tactic_shock = 3
+	tactic_ambush = 3
+	tactic_assault = 2
+	tactic_reckless_assault = 1
+	reinforce_chance = 0.02
+	unit_cooperation = 0.01
+	support_unit_type = .025
+	artillery_unit_type = 0.025
+	
+	infantry_brigade = { combat_width = -0.05 }
+	garrison_brigade = { combat_width = -0.05 }
+	cavalry_brigade = { combat_width = -0.05 }
+	militia_brigade = { combat_width = -0.05 }
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "human_wave_43"
+	}
+
+	research_bonus_from = {
+		human_wave_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = human_wave_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1943
+    folder = operational_doctrine_folder
+}
+
+human_wave_1946 = {
+
+	tactic_shock = 3
+	tactic_ambush = 3
+	tactic_assault = 2
+	tactic_reckless_assault = 1
+	reinforce_chance = 0.02
+	unit_cooperation = 0.01
+	support_unit_type = .025
+	artillery_unit_type = 0.025
+	
+	infantry_brigade = { combat_width = -0.05 }
+	garrison_brigade = { combat_width = -0.05 }
+	cavalry_brigade = { combat_width = -0.05 }
+	militia_brigade = { combat_width = -0.05 }
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "human_wave_46"
+	}
+
+	research_bonus_from = {
+		human_wave_theory = 1.75
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = human_wave_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1946
+    folder = operational_doctrine_folder
+}
+
+# Mechanized Wave
+
+mechanized_wave_1942 = {
+
+	tactic_tactical_withdrawal = 3
+	tactic_backhand_blow = 1
+	tactic_shock = 3
+	tactic_assault = 2
+	tactic_reckless_assault = 1
+	reinforce_chance = 0.02
+	unit_cooperation = 0.01
+	support_unit_type = .05
+	artillery_unit_type = 0.05
+	armor_unit_type = .05
+	
+	motorized_brigade 	= { combat_width = -0.10 }
+	mechanized_brigade 	= { combat_width = -0.10 }
+	light_armor_brigade = { combat_width = -0.05 }
+	armor_brigade 		= { combat_width = -0.10 }
+	heavy_armor_brigade = { combat_width = -0.05 }
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "mechanized_wave_42"
+		or = {
+			mortorised_infantry = 1
+			mechanised_infantry = 1
+		}
+	}
+
+	research_bonus_from = {
+		human_wave_theory = 1.25
+		spearhead_theory = 0.25
+		superior_firepower_theory = 0.25
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = human_wave_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1942
+    folder = operational_doctrine_folder
+}
+
+mechanized_wave_1945 = {
+
+	tactic_tactical_withdrawal = 3
+	tactic_backhand_blow = 1
+	tactic_shock = 3
+	tactic_assault = 2
+	tactic_reckless_assault = 1
+	reinforce_chance = 0.02
+	unit_cooperation = 0.01
+	support_unit_type = .05
+	artillery_unit_type = 0.05
+	armor_unit_type = .05
+	
+	motorized_brigade 	= { combat_width = -0.10 }
+	mechanized_brigade 	= { combat_width = -0.10 }
+	light_armor_brigade = { combat_width = -0.05 }
+	armor_brigade 		= { combat_width = -0.10 }
+	heavy_armor_brigade = { combat_width = -0.05 }
+	
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "mechanized_wave_45"
+		mechanised_infantry = 1
+	}
+
+	research_bonus_from = {
+		human_wave_theory = 1.25
+		spearhead_theory = 0.25
+		superior_firepower_theory = 0.25
+		land_doctrine_practical = 0.75
+	}
+
+	change = no
+	on_completion = human_wave_theory
+
+	difficulty = 5
+
+	stealable = no
+    start_year = 1945
+    folder = operational_doctrine_folder
+}

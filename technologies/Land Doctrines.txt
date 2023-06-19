@@ -1,0 +1,1768 @@
+############
+# Training #
+############
+
+# Security Training (moved here from the Infantry Tab)
+
+security_training = {
+
+	infantry_brigade 	= { suppression = 1.0 }
+	motorized_brigade	= { suppression = 0.5 }
+	mechanized_brigade	= { suppression = 0.25 }
+	cavalry_brigade		= { suppression = 2.0 }
+	garrison_brigade 	= { suppression = 2.5 }
+	marine_brigade 		= { suppression = 0.5 }
+	paratrooper_brigade	= { suppression = 0.5 }
+	bergsjaeger_brigade	= { suppression = 0.5 }
+	alpins_brigade		= { suppression = 0.5 }
+	gurkha_brigade		= { suppression = 0.5 }
+	
+	allow = {
+		has_global_flag = "allow_research"
+		great_war_experience = 1
+	}
+
+	research_bonus_from = {
+		infantry_theory = 2.00
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = no_theory
+
+	difficulty = 1
+
+	stealable = no
+    start_year = 1930
+    first_offset = 1938
+    additional_offset = 3
+	max_level = 20
+    folder = land_doctrine_folder
+}
+
+# Infantry Training (Infantry, Cavalry, Motorised, Mechanized and Garrison)
+
+infantry_training = {
+
+	infantry_brigade 	= { default_organisation = 5 default_morale = 0.05 }
+	cavalry_brigade 	= { default_organisation = 5 default_morale = 0.05 }
+	motorized_brigade 	= { default_organisation = 5 default_morale = 0.05 }
+	mechanized_brigade 	= { default_organisation = 5 default_morale = 0.05 }
+	garrison_brigade 	= { default_organisation = 5 default_morale = 0.025 }
+	
+	allow = {
+		has_global_flag = "allow_research"
+		great_war_experience = 1
+	}
+
+	research_bonus_from = {
+		infantry_theory = 1.75
+		mobile_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = no_theory
+
+	difficulty = 2
+	stealable = no
+    start_year = 1918
+    first_offset = 1936
+    additional_offset = 2
+	max_level = 20
+    folder = land_doctrine_folder
+}
+
+# Artillery-Crew training (The different Support Brigade types)
+
+artillery_training = {
+
+	horse_towed_support_brigade 	= { default_organisation = 5 default_morale = 0.05 }
+	truck_towed_support_brigade		= { default_organisation = 5 default_morale = 0.05 }
+	self_propelled_support_brigade	= { default_organisation = 5 default_morale = 0.05 }
+	
+	allow = {
+		has_global_flag = "allow_research"
+		great_war_experience = 1
+	}
+
+	research_bonus_from = {
+		artillery_theory = 2.25
+		land_doctrine_practical = 0.25
+	}
+
+	change = no
+	on_completion = no_theory
+
+	difficulty = 3
+	stealable = no
+    start_year = 1918
+    first_offset = 1936
+    additional_offset = 2
+	max_level = 20
+    folder = land_doctrine_folder
+}
+
+# Tank-Crew Training (Light Armour, Medium Armour, Heavy Armour, Infantry Support Tank, Self-Propelled Support Brigades and Tank Destroyers)
+
+tank_crew_training = {
+
+	super_heavy_armor_brigade		= { default_organisation = 2 default_morale = 0.05 }
+	light_armor_brigade				= { default_organisation = 2 default_morale = 0.05 }
+	armor_brigade					= { default_organisation = 2 default_morale = 0.05 }
+	heavy_armor_brigade				= { default_organisation = 2 default_morale = 0.05 }
+	self_propelled_support_brigade	= { default_organisation = 2 default_morale = 0.05 }
+	tank_destroyer_brigade			= { default_organisation = 2 default_morale = 0.05 }
+	
+	allow = {
+		has_global_flag = "allow_research"
+		great_war_experience = 1
+	}
+
+	research_bonus_from = {
+		automotive_theory = 2.00
+		artillery_theory = 0.25
+		land_doctrine_practical = 0.25
+	}
+
+	change = no
+	on_completion = no_theory
+
+	difficulty = 4
+
+    start_year = 1918
+    first_offset = 1939
+    additional_offset = 2
+	stealable = no
+	max_level = 20
+    folder = land_doctrine_folder
+}
+
+# Special Forces Training (Assault Engineers, Paratroopers, Marines and Mounteineers)
+
+special_forces_training = {
+
+	engineer_brigade	= { default_organisation = 5 default_morale = 0.05 }
+	bergsjaeger_brigade	= { default_organisation = 5 default_morale = 0.05 }
+	marine_brigade		= { default_organisation = 5 default_morale = 0.05 }
+	paratrooper_brigade	= { default_organisation = 5 default_morale = 0.05 }
+	alpins_brigade		= { default_organisation = 5 default_morale = 0.05 }
+	gurkha_brigade		= { default_organisation = 5 default_morale = 0.05 }
+
+	
+	allow = {
+		has_global_flag = "allow_research"
+		great_war_experience = 1
+	}
+
+	research_bonus_from = {
+		infantry_theory = 2.25
+		land_doctrine_practical = 0.25
+	}
+
+	change = no
+	on_completion = no_theory
+
+	difficulty = 5
+
+    start_year = 1918
+    first_offset = 1936
+	stealable = no
+    additional_offset = 2
+	max_level = 20
+    folder = land_doctrine_folder
+}
+
+# Officer Training (HQs)
+
+officer_training = {
+
+	attack_delay = 5
+	reinforce_chance = 0.01
+	unit_cooperation = 0.025
+
+	hq_brigade = {
+		max_strength = 0.50
+		officers = 10
+		build_cost_manpower = 0.05
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		great_war_experience = 1
+	}
+
+	research_bonus_from = {
+		land_doctrine_practical = 2.50
+	}
+
+	change = no
+	on_completion = no_theory
+
+	difficulty = 6
+
+    start_year = 1918
+    first_offset = 1939
+	stealable = no
+    additional_offset = 3
+	max_level = 20
+    folder = land_doctrine_folder
+}
+
+#####################
+# Infantry Doctrine #
+#####################
+
+# Firepower Focus
+
+firepower_1930 = {
+
+	infantry_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 1.50
+	}
+	cavalry_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 1.50
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		infantry_training = 1
+		has_country_flag = "firepower_30"
+	}
+
+	research_bonus_from = {
+		superior_firepower_theory = 1.50
+		grand_battleplan_theory = 0.25
+		spearhead_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = superior_firepower_theory
+
+	difficulty = 5
+stealable = no
+    start_year = 1930
+    folder = land_doctrine_folder
+}
+
+firepower_1937 = {
+
+	cavalry_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 1.50
+	}
+	bergsjaeger_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 1.00
+	}
+	garrison_brigade = {
+		max_strength = 5			# +200 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.25
+		defensiveness = 0.75
+		soft_attack = 0.25
+		officers = 10
+		default_organisation = 12.5
+		transport_weight = 1.00
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "firepower_37"
+	}
+
+	research_bonus_from = {
+		superior_firepower_theory = 1.50
+		grand_battleplan_theory = 0.25
+		spearhead_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = superior_firepower_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1937
+    folder = land_doctrine_folder
+}
+
+firepower_1940 = {
+
+	infantry_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 1.50
+	}
+	garrison_brigade = {
+		max_strength = 5			# +200 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.25
+		defensiveness = 0.75
+		soft_attack = 0.25
+		officers = 10
+		default_organisation = 12.5
+		transport_weight = 1.00
+	}
+	bergsjaeger_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 1.00
+	}
+	marine_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 1.00
+	}
+	paratrooper_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 1.00
+	}
+	alpins_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 1.00
+	}
+	gurkha_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 1.00
+	}
+	motorized_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 2.00
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "firepower_40"
+	}
+
+	research_bonus_from = {
+		superior_firepower_theory = 1.50
+		grand_battleplan_theory = 0.25
+		spearhead_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = superior_firepower_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1940
+    folder = land_doctrine_folder
+}
+
+firepower_1943 = {
+
+	marine_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 1.00
+	}
+	paratrooper_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 1.00
+	}
+	alpins_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 1.00
+	}
+	gurkha_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 1.00
+	}
+	motorized_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 2.00
+	}
+	mechanized_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.625
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 2.00
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "firepower_43"
+	}
+
+	research_bonus_from = {
+		superior_firepower_theory = 1.50
+		grand_battleplan_theory = 0.25
+		spearhead_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = superior_firepower_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1943
+    folder = land_doctrine_folder
+}
+
+firepower_1946 = {
+
+	mechanized_brigade = {
+		max_strength = 5			# +500 Soldiers
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.625
+		defensiveness = 0.625
+		toughness = 0.1
+		soft_attack = 0.625
+		officers = 25
+		default_organisation = 6.25
+		transport_weight = 2.00
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "firepower_46"
+	}
+
+	research_bonus_from = {
+		superior_firepower_theory = 1.50
+		grand_battleplan_theory = 0.25
+		spearhead_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = superior_firepower_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1946
+    folder = land_doctrine_folder
+}
+
+# Shock Focus
+
+shock_1930 = {
+
+	infantry_brigade = {
+		toughness = -0.1
+		officers = -25
+		combat_width = -0.125
+		default_morale = 0.125
+		supply_consumption = -0.17
+		build_time = -20
+	}
+	cavalry_brigade = {
+		toughness = -0.1
+		officers = -25
+		combat_width = -0.125
+		default_morale = 0.125
+		supply_consumption = -0.25
+		build_time = -23
+	}
+	militia_brigade = {
+		toughness = -0.05
+		officers = -8
+		combat_width = -0.125
+		default_morale = 0.225
+		supply_consumption = -0.05
+		build_time = -12
+	}
+	engineer_brigade = {
+		max_strength = 5
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		combat_width = 0.175
+		default_morale = 0.125
+		toughness = 0.125
+		defensiveness = 0.25
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		infantry_training = 1
+		has_country_flag = "shock_30"
+	}
+
+	research_bonus_from = {
+		human_wave_theory = 1.50
+		grand_battleplan_theory = 0.25
+		spearhead_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = human_wave_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1930
+    folder = land_doctrine_folder
+}
+
+shock_1937 = {
+
+	cavalry_brigade = {
+		toughness = -0.1
+		officers = -25
+		combat_width = -0.125
+		default_morale = 0.125
+		supply_consumption = -0.25
+		build_time = -23
+	}
+	garrison_brigade = {
+		officers = -5
+		combat_width = -0.125
+		default_morale = 0.125
+		supply_consumption = -0.08
+		build_time = -12
+	}
+	militia_brigade = {
+		toughness = -0.1
+		officers = -7
+		combat_width = -0.125
+		default_morale = 0.225
+		supply_consumption = -0.05
+		build_time = -12
+	}
+	engineer_brigade = {
+		max_strength = 5
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		combat_width = 0.175
+		default_morale = 0.125
+		toughness = 0.125
+		defensiveness = 0.25
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "shock_37"
+	}
+
+	research_bonus_from = {
+		human_wave_theory = 1.50
+		grand_battleplan_theory = 0.25
+		spearhead_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = human_wave_theory
+
+	difficulty = 5
+stealable = no
+    start_year = 1937
+    folder = land_doctrine_folder
+}
+
+shock_1940 = {
+
+	infantry_brigade = {
+		toughness = -0.1
+		officers = -25
+		combat_width = -0.125
+		default_morale = 0.125
+		supply_consumption = -0.17
+		build_time = -20
+	}
+	garrison_brigade = {
+		officers = -5
+		combat_width = -0.125
+		default_morale = 0.125
+		supply_consumption = -0.08
+		build_time = -12
+	}
+	motorized_brigade = {
+		toughness = -0.1
+		officers = -25
+		combat_width = -0.125
+		default_morale = 0.125
+		supply_consumption = -0.25
+		build_time = -25
+	}
+	engineer_brigade = {
+		max_strength = 5
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		combat_width = 0.175
+		default_morale = 0.125
+		toughness = 0.125
+		defensiveness = 0.25
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "shock_40"
+	}
+
+	research_bonus_from = {
+		human_wave_theory = 1.50
+		grand_battleplan_theory = 0.25
+		spearhead_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = human_wave_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1940
+    folder = land_doctrine_folder
+}
+
+shock_1943 = {
+
+	motorized_brigade = {
+		toughness = -0.1
+		officers = -25
+		combat_width = -0.125
+		default_morale = 0.125
+		supply_consumption = -0.25
+		build_time = -25
+	}
+	mechanized_brigade = {
+		toughness = -0.1
+		officers = -25
+		combat_width = -0.125
+		default_morale = 0.125
+		supply_consumption = -0.32
+		build_time = -27
+	}
+	engineer_brigade = {
+		max_strength = 5
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		combat_width = 0.175
+		default_morale = 0.125
+		toughness = 0.125
+		defensiveness = 0.25
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "shock_43"
+	}
+
+	research_bonus_from = {
+		human_wave_theory = 1.50
+		grand_battleplan_theory = 0.25
+		spearhead_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = human_wave_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1943
+    folder = land_doctrine_folder
+}
+
+shock_1946 = {
+
+	mechanized_brigade = {
+		toughness = -0.1
+		officers = -25
+		combat_width = -0.125
+		default_morale = 0.125
+		supply_consumption = -0.32
+		build_time = -27
+	}
+	engineer_brigade = {
+		max_strength = 5
+		build_cost_manpower = 0.50
+		build_cost_ic = 0.5
+		combat_width = 0.125
+		default_morale = 0.125
+		toughness = 0.125
+		defensiveness = 0.25
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "shock_46"
+	}
+
+	research_bonus_from = {
+		human_wave_theory = 1.50
+		grand_battleplan_theory = 0.25
+		spearhead_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = human_wave_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1946
+    folder = land_doctrine_folder
+}
+
+# Infilitration and Maneuver Focus
+
+infilitration_1930 = {
+
+	infantry_brigade = {
+		toughness = -0.075
+		marsh 	 = { movement = 0.08 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.10 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	cavalry_brigade = {
+		toughness = -0.025
+		marsh 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.02 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	militia_brigade = {
+		marsh 	 = { movement = 0.08 attack = 0.06 defence = 0.12 }
+		jungle 	 = { movement = 0.05 attack = 0.06 defence = 0.12 }
+		forest 	 = { movement = 0.03 attack = 0.06 defence = 0.12 }
+		mountain = { movement = 0.10 attack = 0.06 defence = 0.12 }
+		hills 	 = { movement = 0.03 attack = 0.06 defence = 0.12 }
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		infantry_training = 1
+		has_country_flag = "infilitration_30"
+	}
+
+	research_bonus_from = {
+		grand_battleplan_theory = 1.50
+		superior_firepower_theory = 0.25
+		spearhead_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = grand_battleplan_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1930
+    folder = land_doctrine_folder
+}
+
+infilitration_1937 = {
+
+	militia_brigade = {
+		marsh 	 = { movement = 0.08 attack = 0.06 defence = 0.12 }
+		jungle 	 = { movement = 0.05 attack = 0.06 defence = 0.12 }
+		forest 	 = { movement = 0.03 attack = 0.06 defence = 0.12 }
+		mountain = { movement = 0.10 attack = 0.06 defence = 0.12 }
+		hills 	 = { movement = 0.03 attack = 0.06 defence = 0.12 }
+	}
+	bergsjaeger_brigade = {
+		marsh 	 = { movement = 0.08 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.10 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	gurkha_brigade = {
+		marsh 	 = { movement = 0.08 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.10 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	alpins_brigade = {
+		marsh 	 = { movement = 0.08 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.10 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	cavalry_brigade = {
+		toughness = -0.025
+		marsh 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.02 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	garrison_brigade = {
+		marsh 	 = { defence = 0.12 }
+		jungle 	 = { defence = 0.12 }
+		forest 	 = { defence = 0.12 }
+		mountain = { defence = 0.12 }
+		hills 	 = { defence = 0.12 }
+		default_organisation = 7.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "infilitration_37"
+	}
+
+	research_bonus_from = {
+		grand_battleplan_theory = 1.50
+		superior_firepower_theory = 0.25
+		spearhead_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = grand_battleplan_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1937
+    folder = land_doctrine_folder
+}
+
+infilitration_1940 = {
+
+	infantry_brigade = {
+		toughness = -0.075
+		marsh 	 = { movement = 0.08 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.10 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	garrison_brigade = {
+		marsh 	 = { defence = 0.12 }
+		jungle 	 = { defence = 0.12 }
+		forest 	 = { defence = 0.12 }
+		mountain = { defence = 0.12 }
+		hills 	 = { defence = 0.12 }
+		default_organisation = 7.5
+	}
+	bergsjaeger_brigade = {
+		marsh 	 = { movement = 0.08 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.10 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}	
+	marine_brigade = {
+		marsh 	 = { movement = 0.08 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.10 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	paratrooper_brigade = {
+		marsh 	 = { movement = 0.08 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.10 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	gurkha_brigade = {
+		marsh 	 = { movement = 0.08 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.10 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	alpins_brigade = {
+		marsh 	 = { movement = 0.08 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.10 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	motorized_brigade = {
+		toughness = -0.025
+		marsh 	 = { attack = 0.05 defence = 0.08 }
+		jungle 	 = { attack = 0.05 defence = 0.08 }
+		forest 	 = { attack = 0.05 defence = 0.08 }
+		mountain = { attack = 0.05 defence = 0.08 }
+		hills 	 = { attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "infilitration_40"
+	}
+
+	research_bonus_from = {
+		grand_battleplan_theory = 1.50
+		superior_firepower_theory = 0.25
+		spearhead_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = grand_battleplan_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1940
+    folder = land_doctrine_folder
+}
+
+infilitration_1943 = {
+
+	motorized_brigade = {
+		toughness = -0.025
+		marsh 	 = { attack = 0.05 defence = 0.08 }
+		jungle 	 = { attack = 0.05 defence = 0.08 }
+		forest 	 = { attack = 0.05 defence = 0.08 }
+		mountain = { attack = 0.05 defence = 0.08 }
+		hills 	 = { attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	marine_brigade = {
+		marsh 	 = { movement = 0.08 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.10 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	paratrooper_brigade = {
+		marsh 	 = { movement = 0.08 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.10 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	gurkha_brigade = {
+		marsh 	 = { movement = 0.08 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.10 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	alpins_brigade = {
+		marsh 	 = { movement = 0.08 attack = 0.05 defence = 0.08 }
+		jungle 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		forest 	 = { movement = 0.03 attack = 0.05 defence = 0.08 }
+		mountain = { movement = 0.10 attack = 0.05 defence = 0.08 }
+		hills 	 = { movement = 0.05 attack = 0.05 defence = 0.08 }
+		default_organisation = 7.5
+	}
+	mechanized_brigade = {
+		toughness = -0.025
+		marsh 	 = { attack = 0.05 defence = 0.05 }
+		jungle 	 = { attack = 0.05 defence = 0.05 }
+		forest 	 = { attack = 0.05 defence = 0.05 }
+		mountain = { attack = 0.05 defence = 0.05 }
+		hills 	 = { attack = 0.05 defence = 0.05 }
+		default_organisation = 7.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "infilitration_43"
+	}
+
+	research_bonus_from = {
+		grand_battleplan_theory = 1.50
+		superior_firepower_theory = 0.25
+		spearhead_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = grand_battleplan_theory
+	stealable = no
+
+	difficulty = 5
+
+    start_year = 1943
+    folder = land_doctrine_folder
+}
+
+infilitration_1946 = {
+
+	mechanized_brigade = {
+		toughness = -0.025
+		marsh 	 = { attack = 0.05 defence = 0.05 }
+		jungle 	 = { attack = 0.05 defence = 0.05 }
+		forest 	 = { attack = 0.05 defence = 0.05 }
+		mountain = { attack = 0.05 defence = 0.05 }
+		hills 	 = { attack = 0.05 defence = 0.05 }
+		default_organisation = 7.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "infilitration_46"
+	}
+
+	research_bonus_from = {
+		grand_battleplan_theory = 1.50
+		superior_firepower_theory = 0.25
+		spearhead_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = grand_battleplan_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1946
+    folder = land_doctrine_folder
+}
+
+#################
+# Tank Doctrine #
+#################
+
+# Infantry Support Role
+
+infantry_support_role_1930 = {
+
+	direct_fire_unit_type = 0.025
+
+	super_heavy_armor_brigade = {
+		defensiveness = 0.5
+		toughness = 0.125
+		soft_attack = 0.5
+		default_organisation = 5
+		default_morale = 0.05
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		tank_crew_training = 1
+		has_country_flag = "infantry_support_role_30"
+	}
+
+	research_bonus_from = {
+		grand_battleplan_theory = 1.75
+		superior_firepower_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = grand_battleplan_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1930
+    folder = land_doctrine_folder
+}
+
+infantry_support_role_1937 = {
+
+	direct_fire_unit_type = 0.025
+
+	super_heavy_armor_brigade = {
+		defensiveness = 0.5
+		toughness = 0.125
+		soft_attack = 0.5
+		default_organisation = 5
+		default_morale = 0.05
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "infantry_support_role_37"
+	}
+
+	research_bonus_from = {
+		grand_battleplan_theory = 1.75
+		superior_firepower_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = grand_battleplan_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1937
+    folder = land_doctrine_folder
+}
+
+infantry_support_role_1940 = {
+
+	direct_fire_unit_type = 0.025
+	armor_unit_type = 0.025
+
+	light_armor_brigade = {
+		defensiveness = 0.15
+		toughness = 0.05
+		soft_attack = 0.15
+		default_organisation = 3
+		default_morale = 0.05
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "infantry_support_role_40"
+	}
+
+	research_bonus_from = {
+		grand_battleplan_theory = 1.75
+		superior_firepower_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = grand_battleplan_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1940
+    folder = land_doctrine_folder
+}
+
+infantry_support_role_1943 = {
+
+	direct_fire_unit_type = 0.025
+	armor_unit_type = 0.025
+
+	light_armor_brigade = {
+		defensiveness = 0.15
+		toughness = 0.05
+		soft_attack = 0.15
+		default_organisation = 3
+		default_morale = 0.05
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "infantry_support_role_43"
+	}
+
+	research_bonus_from = {
+		grand_battleplan_theory = 1.75
+		superior_firepower_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = grand_battleplan_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1943
+    folder = land_doctrine_folder
+}
+
+infantry_support_role_1946 = {
+
+	direct_fire_unit_type = 0.025
+	armor_unit_type = 0.025
+
+	heavy_armor_brigade = {
+		defensiveness = 0.15
+		toughness = 0.025
+		soft_attack = 0.1
+		hard_attack = 0.5
+		default_organisation = 5
+		default_morale = 0.05
+	}
+	tank_destroyer_brigade = {
+		defensiveness = 0.05
+		toughness = 0.025
+		hard_attack = 0.5
+		default_organisation = 3
+		default_morale = 0.05
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "infantry_support_role_46"
+	}
+
+	research_bonus_from = {
+		grand_battleplan_theory = 1.75
+		superior_firepower_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = grand_battleplan_theory
+stealable = no
+	difficulty = 5
+
+    start_year = 1946
+    folder = land_doctrine_folder
+}
+
+# Armoured Schwerpunkt
+
+schwerpunkt_1930 = {
+
+	armor_unit_type = 0.05
+	artillery_unit_type = 0.025
+
+	self_propelled_support_brigade = {
+		defensiveness = 0.05
+		toughness = 0.025
+		soft_attack = 0.15
+		default_organisation = 1
+		default_morale = 0.02
+		build_time = 10
+	}
+	light_armor_brigade = {
+		defensiveness = 0.1
+		toughness = 0.025
+		soft_attack = 0.25
+		default_organisation = 2.5
+		default_morale = 0.03
+		build_time = 12
+		combat_width = -0.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		tank_crew_training = 1
+		has_country_flag = "schwerpunkt_30"
+	}
+
+	research_bonus_from = {
+		spearhead_theory = 1.75
+		superior_firepower_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = spearhead_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1930
+    folder = land_doctrine_folder
+}
+
+schwerpunkt_1937 = {
+
+	armor_unit_type = 0.05
+	artillery_unit_type = 0.025
+	direct_fire_unit_type = 0.025
+
+	self_propelled_support_brigade = {
+		defensiveness = 0.05
+		toughness = 0.025
+		soft_attack = 0.15
+		default_organisation = 1
+		default_morale = 0.02
+		build_time = 10
+	}
+	light_armor_brigade = {
+		defensiveness = 0.1
+		toughness = 0.025
+		soft_attack = 0.25
+		default_organisation = 2.5
+		default_morale = 0.03
+		build_time = 12
+		combat_width = -0.5
+	}
+	armor_brigade = {
+		defensiveness = 0.15
+		toughness = 0.075
+		soft_attack = 0.3
+		hard_attack = 0.35
+		default_organisation = 2.5
+		default_morale = 0.03
+		build_time = 18
+		combat_width = -0.5
+	}
+	tank_destroyer_brigade = {
+		defensiveness = 0.10
+		toughness = 0.05
+		hard_attack = 0.5
+		default_organisation = 2.5
+		default_morale = 0.03
+		build_time = 15
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "schwerpunkt_37"
+	}
+
+	research_bonus_from = {
+		spearhead_theory = 1.75
+		superior_firepower_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = spearhead_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1937
+    folder = land_doctrine_folder
+}
+
+schwerpunkt_1940 = {
+
+	armor_unit_type = 0.05
+	direct_fire_unit_type = 0.025
+
+	armor_brigade = {
+		defensiveness = 0.15
+		toughness = 0.075
+		soft_attack = 0.3
+		hard_attack = 0.35
+		default_organisation = 2.5
+		default_morale = 0.03
+		build_time = 18
+		combat_width = -0.5
+	}
+	heavy_armor_brigade = {
+		defensiveness = 0.2
+		toughness = 0.125
+		soft_attack = 0.25
+		hard_attack = 0.5
+		default_organisation = 2.5
+		default_morale = 0.03
+		build_time = 20
+		combat_width = -0.1
+	}
+	tank_destroyer_brigade = {
+		defensiveness = 0.10
+		toughness = 0.05
+		hard_attack = 0.5
+		default_organisation = 2.5
+		default_morale = 0.03
+		build_time = 15
+		combat_width = -0.1
+	}
+	motorized_brigade = {
+		combat_width = -0.25
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "schwerpunkt_40"
+	}
+
+	research_bonus_from = {
+		spearhead_theory = 1.75
+		superior_firepower_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = spearhead_theory
+stealable = no
+	difficulty = 5
+
+    start_year = 1940
+    folder = land_doctrine_folder
+}
+
+schwerpunkt_1943 = {
+
+	armor_unit_type = 0.05
+	direct_fire_unit_type = 0.025
+
+	armor_brigade = {
+		defensiveness = 0.15
+		toughness = 0.075
+		soft_attack = 0.3
+		hard_attack = 0.35
+		default_organisation = 2.5
+		default_morale = 0.03
+		build_time = 18
+	}
+	heavy_armor_brigade = {
+		defensiveness = 0.2
+		toughness = 0.25
+		soft_attack = 0.15
+		hard_attack = 0.5
+		default_organisation = 2.5
+		default_morale = 0.03
+		build_time = 20
+		combat_width = -0.15
+	}
+	tank_destroyer_brigade = {
+		defensiveness = 0.10
+		toughness = 0.05
+		hard_attack = 0.5
+		default_organisation = 2.5
+		default_morale = 0.03
+		build_time = 15
+		combat_width = -0.15
+	}
+	mechanized_brigade = {
+		combat_width = -0.25
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "schwerpunkt_43"
+	}
+
+	research_bonus_from = {
+		spearhead_theory = 1.75
+		superior_firepower_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = spearhead_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1943
+    folder = land_doctrine_folder
+}
+
+schwerpunkt_1946 = {
+
+	armor_unit_type = 0.05
+
+	armor_brigade = {
+		defensiveness = 0.15
+		toughness = 0.075
+		soft_attack = 0.3
+		hard_attack = 0.35
+		default_organisation = 2.5
+		default_morale = 0.03
+		build_time = 18
+	}
+	heavy_armor_brigade = {
+		defensiveness = 0.2
+		toughness = 0.125
+		soft_attack = 0.25
+		hard_attack = 0.5
+		default_organisation = 2.5
+		default_morale = 0.03
+		build_time = 20
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "schwerpunkt_46"
+	}
+
+	research_bonus_from = {
+		spearhead_theory = 1.75
+		superior_firepower_theory = 0.25
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = spearhead_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1946
+    folder = land_doctrine_folder
+}
+
+
+# Combined Arms
+
+combined_arms_1930 = {
+
+	armor_unit_type = 0.075
+
+	allow = {
+		has_global_flag = "allow_research"
+		tank_crew_training = 1
+		mortorised_infantry = 1
+		has_country_flag = "combined_arms_30"
+	}
+
+	research_bonus_from = {
+		superior_firepower_theory = 1.25
+		human_wave_theory = 0.75
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = superior_firepower_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1930
+    folder = land_doctrine_folder
+}
+
+combined_arms_1937 = {
+
+	armor_unit_type = 0.075
+
+	light_armor_brigade = {
+		defensiveness = 0.05
+		toughness = 0.025
+		soft_attack = 0.15
+		build_cost_ic = 0.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		mortorised_infantry = 1
+		has_country_flag = "combined_arms_37"
+	}
+
+	research_bonus_from = {
+		superior_firepower_theory = 1.25
+		human_wave_theory = 0.75
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = superior_firepower_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1937
+    folder = land_doctrine_folder
+}
+
+combined_arms_1940 = {
+
+	armor_unit_type = 0.075
+
+	armor_brigade = {
+		defensiveness = 0.1
+		toughness = 0.025
+		soft_attack = 0.2
+		hard_attack = 0.25
+		build_cost_ic = 0.75
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		mortorised_infantry = 1
+		has_country_flag = "combined_arms_40"
+	}
+
+	research_bonus_from = {
+		superior_firepower_theory = 1.25
+		human_wave_theory = 0.75
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = superior_firepower_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1940
+    folder = land_doctrine_folder
+}
+
+combined_arms_1943 = {
+
+	armor_unit_type = 0.075
+
+	armor_brigade = {
+		defensiveness = 0.1
+		toughness = 0.025
+		soft_attack = 0.2
+		hard_attack = 0.25
+		build_cost_ic = 0.75
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		mechanised_infantry = 1
+		has_country_flag = "combined_arms_43"
+	}
+
+	research_bonus_from = {
+		superior_firepower_theory = 1.25
+		human_wave_theory = 0.75
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = superior_firepower_theory
+
+	difficulty = 5
+	stealable = no
+
+    start_year = 1943
+    folder = land_doctrine_folder
+}
+
+combined_arms_1946 = {
+
+	armor_unit_type = 0.075
+
+	heavy_armor_brigade = {
+		defensiveness = 0.25
+		toughness = 0.1
+		soft_attack = 0.2
+		hard_attack = 0.40
+		build_cost_ic = 0.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		mechanised_infantry = 1
+		has_country_flag = "combined_arms_46"
+	}
+
+	research_bonus_from = {
+		superior_firepower_theory = 1.25
+		human_wave_theory = 0.75
+		land_doctrine_practical = 0.50
+	}
+
+	change = no
+	on_completion = superior_firepower_theory
+	stealable = no
+
+	difficulty = 5
+
+    start_year = 1946
+    folder = land_doctrine_folder
+}

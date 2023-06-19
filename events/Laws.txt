@@ -1,0 +1,1763 @@
+# Great War
+country_event = {
+
+	id = 5700
+
+	trigger = {
+		or = {
+			war_exhaustion = 8
+			conscription_law = service_by_requirement
+			any_owned_province = {
+				is_core = THIS
+				controller = { total_ic = 100 war_with = THIS }
+			}
+			and = {
+				faction = allies
+				or = {
+					war_with = GER
+					war_with = JAP
+					war_with = SOV
+				}
+			}
+		}
+		not = { has_country_flag = "great_war" }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = { factor = 0.90 lost_national = 0.05 }
+		modifier = { factor = 0.80 lost_national = 0.10 }
+		modifier = { factor = 0.50 lost_national = 0.15 }
+		modifier = { factor = 0.25 lost_national = 0.20 }
+		modifier = { factor = 0.10 lost_national = 0.25 }
+		
+		modifier = { factor = 0.5 ideology_group = democracy }
+		modifier = { factor = 2.0 ideology_group = fascism }
+	}
+
+	title = "Mobilizing the Economy"
+	desc = "The Great War is raging on, demanding more and more of our resources. We need to mobilize our economy in order to produce enough war material."
+	picture = "factory"
+
+	option = {
+		name = "War is hell."
+		set_country_flag = "great_war"
+		national_unity = 5
+		dissent = -10
+	}
+
+}
+
+##########################################
+# Events to encourage the proper lawsets #
+# for the different ruling parties.      #
+##########################################
+# National Socialist # 5701-
+######################
+# Civil Law
+country_event = {
+
+	id = 5701
+	
+	trigger = {
+		ideology = national_socialist
+		not = { civil_law = totalitarian_system }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of civil rights today in the cabinet. They argued that such rights lead to anarchy and chaos."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		organisation = 10
+		dissent = 10
+		load_oob = "totalitarian_system.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+		random_list = {
+			11 = { fascistic 			= { organisation = 5 } }
+			11 = { paternal_autocrat 	= { organisation = 5 } }
+			11 = { social_conservative 	= { organisation = 5 } }
+			11 = { market_liberal 		= { organisation = 5 } }
+			11 = { social_liberal 		= { organisation = 5 } }
+			11 = { social_democrat 		= { organisation = 5 } }
+			11 = { left_wing_radical 	= { organisation = 5 } }
+			11 = { leninist 			= { organisation = 5 } }
+			11 = { stalinist 			= { organisation = 5 } }
+			 1 = { }
+		}
+	}
+}
+# Conscription Law
+country_event = {
+
+	id = 5702
+	
+	trigger = {
+		ideology = national_socialist
+		conscription_law = two_year_draft
+		not = { has_country_flag = "manpower_mobilized" }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated about conscription in our country. Some say that the current laws are inapropriate."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "volunteer_army.txt"
+		clr_country_flag = "drafted_army"
+		set_country_flag = "standing_army"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Economic Law
+country_event = {
+
+	id = 5703
+	
+	trigger = {
+		ideology = national_socialist
+		or = {
+			economic_law = full_civilian_economy
+			economic_law = basic_mobilisation
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of economic mobilization. They say that to keep our army in tip-top shape, we need to keep a closer eye on our economy."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "full_mobilisation.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Industrial Policy
+country_event = {
+
+	id = 5704
+	
+	trigger = {
+		ideology = national_socialist
+		industrial_policy_laws = consumer_product_orientation
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of industrial policy. They say that to keep our army in tip-top shape, we need to keep a closer eye on our industry."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "mixed_industry.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Taxation Law
+country_event = {
+
+	id = 5706
+	
+	trigger = {
+		ideology = national_socialist
+		or = {
+			taxation_law = negligible_taxes
+			taxation_law = small_taxes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the budget. They argue that with such low tax levels, we won't be able to keep up the social system we introduced."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "high_taxes.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+#############
+# Fascistic # 5721-
+#############
+# Civil Law
+country_event = {
+
+	id = 5721
+	
+	trigger = {
+		ideology = fascistic
+		not = { civil_law = totalitarian_system }
+		not = { civil_law = repression }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of civil rights today in the cabinet. They argued that such rights lead to anarchy and chaos."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		dissent = 5
+		load_oob = "repression.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+		random_list = {
+			11 = { national_socialist	= { organisation = 5 } }
+			11 = { paternal_autocrat 	= { organisation = 5 } }
+			11 = { social_conservative 	= { organisation = 5 } }
+			11 = { market_liberal 		= { organisation = 5 } }
+			11 = { social_liberal 		= { organisation = 5 } }
+			11 = { social_democrat 		= { organisation = 5 } }
+			11 = { left_wing_radical 	= { organisation = 5 } }
+			11 = { leninist 			= { organisation = 5 } }
+			11 = { stalinist 			= { organisation = 5 } }
+			 1 = { }
+		}
+	}
+}
+# Conscription Law
+country_event = {
+
+	id = 5722
+	
+	trigger = {
+		ideology = fascistic
+		conscription_law = two_year_draft
+		not = { has_country_flag = "manpower_mobilized" }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated about conscription in our country. Some say that the current laws are inapropriate."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "volunteer_army.txt"
+		clr_country_flag = "drafted_army"
+		set_country_flag = "standing_army"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Economic Law
+country_event = {
+
+	id = 5723
+	
+	trigger = {
+		ideology = fascistic
+		or = {
+			economic_law = full_civilian_economy
+			economic_law = basic_mobilisation
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of economic mobilization. They say that to keep our army in tip-top shape, we need to keep a closer eye on our economy."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "full_mobilisation.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Industrial Policy
+country_event = {
+
+	id = 5724
+	
+	trigger = {
+		ideology = fascistic
+		industrial_policy_laws = consumer_product_orientation
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of industrial policy. They say that to keep our army in tip-top shape, we need to keep a closer eye on our industry."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "mixed_industry.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Taxation Law
+country_event = {
+
+	id = 5726
+	
+	trigger = {
+		ideology = fascistic
+		taxation_law = negligible_taxes
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the budget. They argue that with such low tax levels, we won't be able to keep up the social system we introduced."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "acceptable_taxes.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+
+#####################
+# Paternal Autocrat # 5741-
+#####################
+# Civil Law
+country_event = {
+
+	id = 5741
+	
+	trigger = {
+		ideology = paternal_autocrat
+		not = { civil_law = totalitarian_system }
+		not = { civil_law = repression }
+		not = { civil_law = legalistic_restrictions }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of civil rights today in the cabinet. They argued that such rights lead to anarchy and chaos."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "legalistic_restrictions.txt"
+	}
+	option = {
+		name = "A briliant idea!"
+		organisation = 5
+		dissent = 5
+		load_oob = "repression.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+		random_list = {
+			11 = { national_socialist	= { organisation = 5 } }
+			11 = { fascistic		 	= { organisation = 5 } }
+			11 = { social_conservative 	= { organisation = 5 } }
+			11 = { market_liberal 		= { organisation = 5 } }
+			11 = { social_liberal 		= { organisation = 5 } }
+			11 = { social_democrat 		= { organisation = 5 } }
+			11 = { left_wing_radical 	= { organisation = 5 } }
+			11 = { leninist 			= { organisation = 5 } }
+			11 = { stalinist 			= { organisation = 5 } }
+			 1 = { }
+		}
+	}
+}
+# Conscription Law
+# Whatever.	
+# Economic Law
+country_event = {
+
+	id = 5743
+	
+	trigger = {
+		ideology = paternal_autocrat
+		economic_law = full_civilian_economy
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of economic mobilization. They say that to keep our army in tip-top shape, we need to keep a closer eye on our economy."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "full_mobilisation.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Industrial Policy
+country_event = {
+
+	id = 5744
+	
+	trigger = {
+		ideology = paternal_autocrat
+		industrial_policy_laws = consumer_product_orientation
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of industrial policy. They say that to keep our army in tip-top shape, we need to keep a closer eye on our industry."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "mixed_industry.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+
+#######################
+# Social Conservative # 5761-
+#######################
+# Civil Law
+country_event = {
+
+	id = 5761
+	
+	trigger = {
+		ideology = social_conservative
+		not = { civil_law = open_society }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of civil rights today in the cabinet. They argued that such restrictions are against the constitution."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "open_society.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Conscription Law
+country_event = {
+
+	id = 5762
+	
+	trigger = {
+		ideology = social_conservative
+		conscription_law = volunteer_army
+		not = { has_country_flag = "manpower_mobilized" }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated about conscription in our country. They say that we should have a Drafted Army instead of a Standing Army!"
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "two_year_draft.txt"
+		set_country_flag = "drafted_army"
+		clr_country_flag = "standing_army"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Economic Law
+country_event = {
+
+	id = 5763
+	
+	trigger = {
+		ideology = social_conservative
+		economic_law = full_civilian_economy
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of economic mobilization. They say that to keep our army in tip-top shape, we need to keep a closer eye on our economy."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "basic_mobilisation.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Industrial Policy
+country_event = {
+
+	id = 5764
+	
+	trigger = {
+		ideology = social_conservative
+		not = { industrial_policy_laws = consumer_product_orientation }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of industrial policy. They say that the restrictions we employ hurt our economy more than help it."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "consumer_product_orientation.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Press Law
+country_event = {
+
+	id = 5765
+	
+	trigger = {
+		ideology = social_conservative
+		not = { press_laws = free_press }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 5
+			war = yes
+		}
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of the freedom of press. They say that the current restrictions are unnecessary and opressive."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "free_press.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+
+##################
+# Market Liberal # 5781-
+##################
+# Civil Law
+country_event = {
+
+	id = 5781
+	
+	trigger = {
+		ideology = market_liberal
+		not = { civil_law = open_society }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of civil rights today in the cabinet. They argued that such restrictions are against the constitution."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "open_society.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Conscription Law
+country_event = {
+
+	id = 5782
+	
+	trigger = {
+		ideology = market_liberal
+		conscription_law = volunteer_army
+		not = { has_country_flag = "manpower_mobilized" }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated about conscription in our country. They say that we should have a Drafted Army instead of a Standing Army!"
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "two_year_draft.txt"
+		set_country_flag = "drafted_army"
+		clr_country_flag = "standing_army"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Economic Law
+# Handled through Strategic Effecs
+# Industrial Policy
+country_event = {
+
+	id = 5784
+	
+	trigger = {
+		ideology = market_liberal
+		not = { industrial_policy_laws = consumer_product_orientation }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of industrial policy. They say that the restrictions we employ hurt our economy more than help it."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "consumer_product_orientation.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Press Law
+country_event = {
+
+	id = 5785
+	
+	trigger = {
+		ideology = market_liberal
+		not = { press_laws = free_press }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 5
+			war = yes
+		}
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of the freedom of press. They say that the current restrictions are unnecessary and opressive."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "free_press.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Taxation Law
+country_event = {
+
+	id = 5786
+	
+	trigger = {
+		ideology = market_liberal
+		not = { taxation_law = negligible_taxes }
+		not = { taxation_law = small_taxes }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the budget. They argue that such high tax levels are unnecessary and exploitive, and only hurts the economy as a whole."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "small_taxes.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+
+##################
+# Social Liberal # 5801-
+##################
+# Civil Law
+country_event = {
+
+	id = 5801
+	
+	trigger = {
+		ideology = social_liberal
+		not = { civil_law = open_society }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of civil rights today in the cabinet. They argued that such restrictions are against the constitution."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "open_society.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Conscription Law
+country_event = {
+
+	id = 5802
+	
+	trigger = {
+		ideology = social_liberal
+		conscription_law = volunteer_army
+		not = { has_country_flag = "manpower_mobilized" }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated about conscription in our country. They say that we should have a Drafted Army instead of a Standing Army!"
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "two_year_draft.txt"
+		set_country_flag = "drafted_army"
+		clr_country_flag = "standing_army"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Economic Law
+# Handled through Strategic Effecs
+# Industrial Policy
+country_event = {
+
+	id = 5804
+	
+	trigger = {
+		ideology = social_liberal
+		not = { industrial_policy_laws = consumer_product_orientation }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of industrial policy. They say that the restrictions we employ hurt our economy more than help it."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "consumer_product_orientation.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Press Law
+country_event = {
+
+	id = 5805
+	
+	trigger = {
+		ideology = social_liberal
+		not = { press_laws = free_press }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 5
+			war = yes
+		}
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of the freedom of press. They say that the current restrictions are unnecessary and opressive."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "free_press.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Taxation Law
+country_event = {
+
+	id = 5806
+	
+	trigger = {
+		ideology = social_liberal
+		not = { taxation_law = negligible_taxes }
+		not = { taxation_law = small_taxes }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the budget. They argue that such high tax levels are unnecessary and exploitive, and only hurts the economy as a whole."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "small_taxes.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+
+###################
+# Social Democrat # 5821-
+###################
+# Civil Law
+country_event = {
+
+	id = 5821
+	
+	trigger = {
+		ideology = social_democrat
+		not = { civil_law = open_society }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of civil rights today in the cabinet. They argued that such restrictions are against the constitution."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "open_society.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Conscription Law
+country_event = {
+
+	id = 5822
+	
+	trigger = {
+		ideology = social_democrat
+		conscription_law = volunteer_army
+		not = { has_country_flag = "manpower_mobilized" }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated about conscription in our country. They say that we should have a Drafted Army instead of a Standing Army!"
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "two_year_draft.txt"
+		set_country_flag = "drafted_army"
+		clr_country_flag = "standing_army"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Economic Law
+country_event = {
+
+	id = 5823
+	
+	trigger = {
+		ideology = social_democrat
+		economic_law = full_civilian_economy
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of economic mobilization. They say that to keep our army in tip-top shape, we need to keep a closer eye on our economy."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "basic_mobilisation.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Industrial Policy
+country_event = {
+
+	id = 5824
+	
+	trigger = {
+		ideology = social_democrat
+		not = { industrial_policy_laws = consumer_product_orientation }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of industrial policy. They say that the restrictions we employ hurt our economy more than help it."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "consumer_product_orientation.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Press Law
+country_event = {
+
+	id = 5825
+	
+	trigger = {
+		ideology = social_democrat
+		not = { press_laws = free_press }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 5
+			war = yes
+		}
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of the freedom of press. They say that the current restrictions are unnecessary and opressive."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "free_press.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+
+#####################
+# Left-Wing Radical # 5841-
+#####################
+# Civil Law
+country_event = {
+
+	id = 5841
+	
+	trigger = {
+		ideology = left_wing_radical
+		not = { civil_law = totalitarian_system }
+		not = { civil_law = repression }
+		not = { civil_law = legalistic_restrictions }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of civil rights today in the cabinet. They argued that such rights lead to anarchy and chaos."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		organisation = 10
+		dissent = 10
+		load_oob = "repression.txt"
+	}
+	option = {
+		name = "A briliant idea!"
+		organisation = 5
+		dissent = 5
+		load_oob = "legalistic_restrictions.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+		random_list = {
+			11 = { national_socialist	= { organisation = 5 } }
+			11 = { fascistic		 	= { organisation = 5 } }
+			11 = { paternal_autocrat 	= { organisation = 5 } }
+			11 = { social_conservative 	= { organisation = 5 } }
+			11 = { market_liberal 		= { organisation = 5 } }
+			11 = { social_liberal 		= { organisation = 5 } }
+			11 = { social_democrat 		= { organisation = 5 } }
+			11 = { leninist 			= { organisation = 5 } }
+			11 = { stalinist 			= { organisation = 5 } }
+			 1 = { }
+		}
+	}
+}
+# Conscription Law
+# Whatever
+# Economic Law
+country_event = {
+
+	id = 5843
+	
+	trigger = {
+		ideology = left_wing_radical
+		economic_law = full_civilian_economy
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of economic mobilization. They say that to keep our army in tip-top shape, we need to keep a closer eye on our economy."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "basic_mobilisation.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Industrial Policy
+country_event = {
+
+	id = 5844
+	
+	trigger = {
+		ideology = left_wing_radical
+		industrial_policy_laws = consumer_product_orientation
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of industrial policy. They say that to keep our army in tip-top shape, we need to keep a closer eye on our industry."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "mixed_industry.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+############
+# Leninist # 5861-
+############
+# Civil Law
+country_event = {
+
+	id = 5861
+	
+	trigger = {
+		ideology = leninist
+		not = { civil_law = totalitarian_system }
+		not = { civil_law = repression }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of civil rights today in the cabinet. They argued that such rights lead to anarchy and chaos."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		organisation = 5
+		dissent = 5
+		load_oob = "repression.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+		random_list = {
+			11 = { national_socialist	= { organisation = 5 } }
+			11 = { fascistic 			= { organisation = 5 } }
+			11 = { paternal_autocrat 	= { organisation = 5 } }
+			11 = { social_conservative 	= { organisation = 5 } }
+			11 = { market_liberal 		= { organisation = 5 } }
+			11 = { social_liberal 		= { organisation = 5 } }
+			11 = { social_democrat 		= { organisation = 5 } }
+			11 = { left_wing_radical 	= { organisation = 5 } }
+			11 = { stalinist 			= { organisation = 5 } }
+			 1 = { }
+		}
+	}
+}
+# Conscription Law
+country_event = {
+
+	id = 5862
+	
+	trigger = {
+		ideology = leninist
+		conscription_law = volunteer_army
+		not = { has_country_flag = "manpower_mobilized" }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated about conscription in our country. Some say that the current laws are inapropriate."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "two_year_draft.txt"
+		clr_country_flag = "standing_army"
+		set_country_flag = "drafted_army"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Economic Law
+country_event = {
+
+	id = 5863
+	
+	trigger = {
+		ideology = leninist
+		or = {
+			economic_law = full_civilian_economy
+			economic_law = basic_mobilisation
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of economic mobilization. They say that to keep our army in tip-top shape, we need to keep a closer eye on our economy."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "full_mobilisation.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Industrial Policy
+country_event = {
+
+	id = 5864
+	
+	trigger = {
+		ideology = leninist
+		industrial_policy_laws = consumer_product_orientation
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of industrial policy. They say that to keep our army in tip-top shape, we need to keep a closer eye on our industry."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "mixed_industry.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Taxation Law
+country_event = {
+
+	id = 5866
+	
+	trigger = {
+		ideology = leninist
+		or = {
+			taxation_law = negligible_taxes
+			taxation_law = small_taxes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the budget. They argue that with such low tax levels, we won't be able to keep up the social system we introduced."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "high_taxes.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+
+#############
+# Stalinist # 5881-
+#############
+# Civil Law
+country_event = {
+
+	id = 5881
+	
+	trigger = {
+		ideology = stalinist
+		not = { civil_law = totalitarian_system }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of civil rights today in the cabinet. They argued that such rights lead to anarchy and chaos."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		organisation = 10
+		dissent = 10
+		load_oob = "totalitarian_system.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+		random_list = {
+			11 = { national_socialist	= { organisation = 5 } }
+			11 = { fascistic 			= { organisation = 5 } }
+			11 = { paternal_autocrat 	= { organisation = 5 } }
+			11 = { social_conservative 	= { organisation = 5 } }
+			11 = { market_liberal 		= { organisation = 5 } }
+			11 = { social_liberal 		= { organisation = 5 } }
+			11 = { social_democrat 		= { organisation = 5 } }
+			11 = { left_wing_radical 	= { organisation = 5 } }
+			11 = { leninist 			= { organisation = 5 } }
+			 1 = { }
+		}
+	}
+}
+# Conscription Law
+country_event = {
+
+	id = 5882
+	
+	trigger = {
+		ideology = stalinist
+		conscription_law = volunteer_army
+		not = { has_country_flag = "manpower_mobilized" }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated about conscription in our country. Some say that the current laws are inapropriate."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "two_year_draft.txt"
+		set_country_flag = "drafted_army"
+		clr_country_flag = "standing_army"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Economic Law
+country_event = {
+
+	id = 5883
+	
+	trigger = {
+		ideology = left_wing_radical
+		or = {
+			economic_law = full_civilian_economy
+			economic_law = basic_mobilisation
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of economic mobilization. They say that to keep our army in tip-top shape, we need to keep a closer eye on our economy."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "full_mobilisation.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Industrial Policy
+country_event = {
+
+	id = 5884
+	
+	trigger = {
+		ideology = stalinist
+		not = { industrial_policy_laws = heavy_industry_emphasis }
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the level of industrial policy. They say that to keep our army in tip-top shape, we need to keep a closer eye on our industry."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "heavy_industry_emphasis.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+# Taxation Law
+country_event = {
+
+	id = 5886
+	
+	trigger = {
+		ideology = stalinist
+		or = {
+			taxation_law = negligible_taxes
+			taxation_law = small_taxes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Debate in the cabinet"
+	desc = "Members of the ruling party debated the budget. They argue that with such low tax levels, we won't be able to keep up the social system we introduced."
+	picture = "politician"
+	
+	option = {
+		name = "A briliant idea!"
+		load_oob = "high_taxes.txt"
+	}
+	option = {
+		name = "We need to reconsider!"
+		organisation = -5
+	}
+}
+
+# Women in Industry
+
+country_event = {
+
+	id = 5890
+	
+	trigger = {
+		has_country_flag = great_war
+		not = { has_country_flag = women_in_industry_accepted }
+		not = { has_country_flag = women_in_industry_rejected }
+		or = {
+			conscription_law = three_year_draft
+			conscription_law = service_by_requirement
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 0.25 conscription_law = service_by_requirement }
+		modifier = { factor = 2.0 ideology_group = fascism }
+		modifier = { factor = 0.5 ideology_group = communism }
+	}
+	
+	title = "Women in Industry"
+	desc = "With most of our men population fighting on the front, we need new sources of manpower to fill our Factories. The obvious choice is to introduce Women to roles where they were not represented before."
+	picture = "politics1"
+	
+	option = {
+		name =  "We need all the hands we can have!"
+		ai_chance = {
+			factor = 85
+			modifier = { factor = 0.5 ideology_group = fascism }
+			modifier = { factor = 2.0 ideology_group = communism }
+		}
+		add_country_modifier = {
+			name = "women_in_industry"
+			duration = -1
+		}
+		set_country_flag = women_in_industry_accepted
+	}
+
+	option = {
+		name =  "Woah... What's next? Should we give them voting rights as well?!..."
+		ai_chance = {
+			factor = 15
+			modifier = { factor = 10.0 ideology_group = fascism }
+			modifier = { factor = 0.5 ideology_group = communism }
+		}
+		set_country_flag = women_in_industry_rejected
+	}
+}
+
+# Conscription Laws
+
+country_event = {
+
+	id = 5891
+	
+	trigger = {
+		conscription_law = volunteer_army
+		not = { has_country_flag = "standing_army" }
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+		
+		modifier = { factor = 5.0 war = yes }
+	}
+	
+	title = "Standing Army introduced"
+	desc = "We have laid down the necessary administrative faculties to change to a Standing Army model. Our Army now mainly consists of professional soldiers!"
+	picture = "politics1"
+	
+	option = {
+		name = "Finally!"
+		set_country_flag = "standing_army"
+		clr_country_flag = "drafted_army"
+	}
+
+}
+
+country_event = {
+
+	id = 5892
+	
+	trigger = {
+		conscription_law = two_year_draft
+		not = { has_country_flag = "drafted_army" }
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+		
+		modifier = { factor = 5.0 war = yes }
+	}
+	
+	title = "Drafted Army introduced"
+	desc = "We have laid down the necessary administrative faculties to change to a Drafted Army model. Our people are trained to fight but can retain their civilian life while we are at peace."
+	picture = "politics1"
+	
+	option = {
+		name = "Finally!"
+		clr_country_flag = "standing_army"
+		set_country_flag = "drafted_army"
+	}
+
+}
+
+# GOD helps mobilizing the reserves. It is required because the tooltip for the decision would freeze the game for certain countries because of the insane number of provinces...
+
+country_event = {
+
+	id = 5895
+	
+	is_triggered_only = yes
+	
+	title = "$FROMCOUNTRY$ expands their army"
+	desc = "$FROMCOUNTRY$ started long-term campaigns to advertise the soldier profession in order to expand their army."
+	picture = ""
+	
+	option = {
+		name = "Good for them"
+		FROM = {
+			any_owned = {
+				limit = { controlled_by = FROM is_core = FROM }
+				add_province_modifier = {
+					name = "one_year_draft"
+					duration = 500
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 5896
+	
+	is_triggered_only = yes
+	
+	title = "$FROMCOUNTRY$ mobilizes their reserves"
+	desc = "$FROMCOUNTRY$ decided to mobilize their reserves."
+	picture = ""
+	
+	option = {
+		name = "Good for them"
+		FROM = {
+			any_owned = {
+				limit = { controlled_by = FROM is_core = FROM }
+				add_province_modifier = {
+					name = "two_year_draft"
+					duration = 50
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 5897
+	
+	is_triggered_only = yes
+	
+	title = "$FROMCOUNTRY$ extends draft"
+	desc = "$FROMCOUNTRY$ decided to extend draft in order to gain more soldiers."
+	picture = ""
+	
+	option = {
+		name = "Good for them"
+		FROM = {
+			any_owned = {
+				limit = { controlled_by = FROM is_core = FROM }
+				add_province_modifier = {
+					name = "three_year_draft"
+					duration = 150
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 5898
+	
+	is_triggered_only = yes
+	
+	title = "$FROMCOUNTRY$ enacts Emergency Draft"
+	desc = "$FROMCOUNTRY$ decided to enact Emergency Draft."
+	picture = ""
+	
+	option = {
+		name = "The poor lads..."
+		FROM = {
+			any_owned = {
+				limit = { controlled_by = FROM is_core = FROM }
+				add_province_modifier = {
+					name = "service_by_requirement"
+					duration = 100
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 5899
+	
+	is_triggered_only = yes
+	
+	title = "$FROMCOUNTRY$ enacts Emergency Draft"
+	desc = "$FROMCOUNTRY$ decided to enact Emergency Draft."
+	picture = ""
+	
+	option = {
+		name = "The poor lads..."
+		FROM = {
+			any_owned = {
+				limit = { controlled_by = FROM is_core = FROM }
+				add_province_modifier = {
+					name = "three_year_draft"
+					duration = 150
+				}
+			}
+			any_owned = {
+				limit = { controlled_by = FROM is_core = FROM }
+				add_province_modifier = {
+					name = "service_by_requirement"
+					duration = 100
+				}
+			}
+		}
+	}
+}

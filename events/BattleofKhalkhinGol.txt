@@ -1,0 +1,290 @@
+country_event = {
+	
+	id = 3121
+
+	major = yes
+
+	trigger = {
+		tag = JAP
+		not = { war_with = FRA }	# Not at war with the Allies
+		not = { war_with = ENG }
+		not = { war_with = USA }
+		exists = SOV
+		is_subject = no
+		SOV = { is_subject = no }
+		exists = MON
+		MON = { vassal_of = SOV }
+		MON = {
+			any_owned_province = {
+				or = {
+					controlled_by = MON
+					controlled_by = REB
+				}
+			}
+		}
+		exists = MAN
+		MAN = { vassal_of = JAP }
+		MAN = {
+			any_owned_province = {
+				or = {
+					controlled_by = MAN
+					controlled_by = REB
+				}
+			}
+		}
+		or = {
+			neighbor = SOV
+			MON = { neighbor = JAP }
+			MON = { neighbor = MAN }
+		}
+		SOV = {
+			not = { war_with = JAP }
+			not = { war_with = GER }
+			not = { alliance_with = JAP }
+		}
+		year = 1939
+		has_global_flag = "chanfukeng_incident_started"
+		not = { has_global_flag = "khalkhin_gol_incident_started" }
+	}
+
+	mean_time_to_happen =  {
+		months = 6
+	}
+
+	title = "Battles of Khalkhin Gol"
+	desc = "The Battles of Khalkhin Gol was the decisive engagement of the undeclared Soviet–Japanese Border Wars fought among the Soviet Union, Mongolia and the Empire of Japan."
+	picture = "khalkhin_gol"
+
+	option = {
+		name = "Oh, not again..."
+		set_global_flag = "khalkhin_gol_incident_started"
+		set_global_flag = "khalkhin_gol_incident_ongoing"
+		GOD = {
+			add_country_modifier = {
+				name = "soviet_japanese_border_war"
+				duration = 15
+			}
+		}
+		SOV = { set_country_flag = "khalkhin_gol_incident_ongoing" }
+		JAP = { set_country_flag = "khalkhin_gol_incident_ongoing" }
+		MAN = { set_country_flag = "khalkhin_gol_incident_ongoing" }
+		MON = { set_country_flag = "khalkhin_gol_incident_ongoing" }
+		end_non_aggression_pact = SOV
+		relation = { who = SOV value = -25 }
+		threat = { who = SOV value = 25 }
+		SOV = { country_event = 3122 }
+		JAP = {
+			war = {
+				target = SOV
+				attacker_goal = { casus_belli = aquire_all_cores }
+			}
+		}
+		threat = { who = all value = -20 }	# They shouldn't get threat for this.
+	}
+}
+
+# Soviet - Reaction Event
+country_event = {
+	
+	id = 3122
+
+	is_triggered_only = yes
+
+	title = "Battles of Khalkhin Gol"
+	desc = "The Battles of Khalkhyn Gol was the decisive engagement of the undeclared Soviet–Japanese Border Wars fought among the Soviet Union, Mongolia and the Empire of Japan."
+	picture = "khalkhin_gol"
+
+	option = {
+		name = "We will defeat them!"
+		relation = { who = JAP value = -25 }
+		threat = { who = JAP value = 25 }
+	}
+}
+
+
+# Soviet decisive advance
+country_event = {
+	
+	id = 3123
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "Victory"
+	desc = "We entered Japanese territory. This was an important victory!"
+	picture = "khalkhin_gol"
+
+	option = {
+		name = "Victory is ours!"
+		ai_chance = { factor = 75 }
+		relation = { who = JAP value = 5 }
+		threat = { who = JAP value = -5 }
+		MON = { end_war = JAP }
+		MAN = { end_war = SOV }
+		non_aggression_pact = JAP
+		clr_global_flag = "khalkhin_gol_incident_ongoing"
+		JAP = { change_variable = { which = "jap_army_navy_struggle" value = +1 } }
+	}
+	option = {
+		name = "We should go all the way!"
+		ai_chance = {
+			factor = 25
+			modifier = { factor = 0.0 tag = SOV exists = GER not = { non_aggression_pact = GER } }
+		
+			modifier = { factor = 0.0 war_with = GER }
+			modifier = { factor = 0.0 war_with = CHI }
+			modifier = { factor = 0.0 war_with = USA }
+			modifier = { factor = 0.0 war_with = ENG }
+			modifier = { factor = 0.0 war_with = FRA }
+		}
+		relation = { who = JAP value = -25 }
+		threat = { who = JAP value = 25 }
+		clr_global_flag = "khalkhin_gol_incident_ongoing"
+		JAP = { change_variable = { which = "jap_army_navy_struggle" value = +2 } }
+	}
+}
+
+# Japanese decisive advance
+country_event = {
+	
+	id = 3124
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "Victory"
+	desc = "We entered Soviet territory. This was an important victory!"
+	picture = "khalkhin_gol"
+
+	option = {
+		name = "Victory is ours!"
+		ai_chance = {
+			factor = 67
+			modifier = { factor = 0.5 has_country_flag = "won_changkufeng" }
+		}
+		relation = { who = SOV value = 5 }
+		threat = { who = SOV value = -5 }
+		MON = { end_war = JAP }
+		MAN = { end_war = SOV }
+		non_aggression_pact = SOV
+		clr_global_flag = "khalkhin_gol_incident_ongoing"
+		change_variable = { which = "jap_army_navy_struggle" value = -1 }
+	}
+	option = {
+		name = "We should go all the way!"
+		ai_chance = {
+			factor = 33
+			modifier = { factor = 0.0 war_with = GER }
+			modifier = { factor = 0.0 war_with = CHI }
+			modifier = { factor = 0.0 war_with = USA }
+			modifier = { factor = 0.0 war_with = ENG }
+			modifier = { factor = 0.0 war_with = FRA }
+		}
+		relation = { who = SOV value = -25 }
+		threat = { who = SOV value = 25 }
+		clr_global_flag = "khalkhin_gol_incident_ongoing"
+		change_variable = { which = "jap_army_navy_struggle" value = -2 }
+	}
+}
+
+province_event = {
+	id = 3125
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = "khalkhin_gol_incident_ongoing"
+		last_battle_loser_losses = 500
+		FROM = { has_country_flag = "khalkhin_gol_incident_ongoing" }
+		THIS = { has_country_flag = "khalkhin_gol_incident_ongoing" }
+		owner = {
+			or = {
+				tag = JAP
+				vassal_of = JAP
+				tag = SOV
+				vassal_of = SOV
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+
+	title = "End of the Battles of Khalkhin Gol"
+	desc = "We have clearley beaten the enemy in the Battles of Khalkhin Gol. Should we press on, escalating the conflict to a national level, or should we offer to return to Status Quo?"
+	picture = "Bzura"
+	
+	option = {
+		name = "That will be enough."
+		ai_chance = {
+			factor = 75
+			modifier = { factor = 0.5 has_country_flag = "won_changkufeng" }
+		}
+		set_country_flag = "khalkhin_gol"
+		clr_global_flag = "khalkhin_gol_incident_ongoing"
+		any_country = {
+			limit = { war_with = THIS or = { tag = SOV tag = JAP } }
+			country_event = 3126
+		}
+	}
+	option = {
+		name = "On to victory!"
+		ai_chance = {
+			factor = 25
+			modifier = { factor = 0.0 tag = SOV exists = GER not = { non_aggression_pact = GER } }
+		
+			modifier = { factor = 0.0 war_with = GER }
+			modifier = { factor = 0.0 war_with = CHI }
+			modifier = { factor = 0.0 war_with = USA }
+			modifier = { factor = 0.0 war_with = ENG }
+			modifier = { factor = 0.0 war_with = FRA }
+		}
+		set_country_flag = "khalkhin_gol"
+		clr_global_flag = "khalkhin_gol_incident_ongoing"
+		any_country = {
+			limit = { war_with = THIS or = { tag = SOV tag = JAP } }
+			country_event = 3127
+		}
+	}
+}
+
+country_event = {
+	id = 3126
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "End of the Battles of Khalkhin Gol"
+	desc = "After our last defeat we can't continue this war. $FROMCOUNTRY$ offered to return to Status Quo."
+	picture = "chanfukeng"
+	
+	option = {
+		name = "We are beaten..."
+		MON = { end_war = JAP }
+		MAN = { end_war = SOV }
+		non_aggression_pact = FROM
+		relation = { who = FROM value = 5 }
+		threat = { who = FROM value = -5 }
+	}
+}
+
+country_event = {
+
+	id = 3127
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "The incident escalates"
+	desc = "After some major clashes, the Battles of Khalkhin Gol escalated into an all-out war between the Soviet Union and the Empire of Japan."
+	picture = "chanfukeng"
+	
+	option = {
+		name = "Oh well."
+		relation = { who = FROM value = -25 }
+		threat = { who = FROM value = 25 }
+	}
+}

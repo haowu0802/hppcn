@@ -1,0 +1,125 @@
+diplomatic_decisions = {
+
+	mobilize_for_war = {
+		potential = {
+			government_in_exile = no
+			not = { has_country_flag = "mobilized_for_war" }
+			has_global_flag = "setup"
+			has_country_flag = "standing_army"
+			national_unity = 70
+			organisation = 35
+		}
+		allow = {
+			or = {
+				national_unity = 85
+				organisation = 50
+				war = yes
+			}
+		}
+		effect = {
+			set_country_flag = "mobilized_for_war"
+			threat = { who = all value = 5 }
+		}
+	}
+	
+	mobilize_soldiers = {
+		potential = {
+			has_global_flag = "setup"
+			not = { has_country_flag = "manpower_mobilized" }
+			conscription_law = one_year_draft
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = "manpower_mobilized"
+			GOD = { country_event = 5895 }
+		}
+	}
+
+	mobilize_reserves = {
+		potential = {
+			has_global_flag = "setup"
+			war = yes
+			not = { has_country_flag = "manpower_mobilized" }
+			has_country_flag = "drafted_army"
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = "manpower_mobilized"
+			GOD = { country_event = 5896 }
+		}
+	}
+	
+	extend_draft = {
+		potential = {
+			has_global_flag = "setup"
+			not = { has_country_flag = "extended_draft" }
+			conscription_law = three_year_draft
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = "extended_draft"
+			GOD = { country_event = 5897 }
+		}
+	}
+	
+	emergency_draft_drafted = {
+		potential = {
+			has_global_flag = "setup"
+			not = { has_country_flag = "emergency_draft_enacted" }
+			conscription_law = service_by_requirement
+			has_country_flag = "drafted_army"
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = "emergency_draft_enacted"
+			GOD = { country_event = 5898 }
+		}
+	}
+	
+	emergency_draft_standing = {
+		potential = {
+			has_global_flag = "setup"
+			not = { has_country_flag = "emergency_draft_enacted" }
+			conscription_law = service_by_requirement
+			has_country_flag = "standing_army"
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = "emergency_draft_enacted"
+			GOD = { country_event = 5899 }
+		}
+	}
+	
+	restructuring_the_army = {
+		potential = {
+			has_global_flag = "setup"
+			or = {
+				conscription_law = volunteer_army
+				conscription_law = two_year_draft
+			}
+			not = { has_country_flag = "manpower_mobilized" }
+			not = { has_country_flag = "extended_draft" }
+			not = { has_country_flag = "emergency_draft_enacted" }
+			or = {
+				has_country_flag = "standing_army"
+				has_country_flag = "drafted_army"
+			}
+			ai = no		# The AI won't switch from one line to the other.
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = "standing_army"
+			clr_country_flag = "drafted_army"
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

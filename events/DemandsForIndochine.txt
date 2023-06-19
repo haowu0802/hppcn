@@ -1,0 +1,96 @@
+###########################
+# Japan Demands Indochine #
+###########################
+# Vichy France - Reaction Event
+country_event = {
+
+	id = 1801
+	
+	is_triggered_only = yes
+	
+	title = "demands_for_indochina_title"
+	desc = "demands_for_indochina_desc"
+	picture = "indochina_demand"
+
+	option = {
+		name = "EVTOPTA1801"			# Accept
+		ai_chance = { factor = 100 }
+		relation = { who = FROM value = 35 }
+		relation = { who = GER value = 10 }
+		relation = { who = FRA value = -30 }
+		relation = { who = ENG value = -25 }
+		relation = { who = USA value = -15 }
+		FROM = { country_event = 1803 }	
+	}
+	option = {
+		name = "EVTOPTB1801"			# Refuse
+		FROM = { country_event = 1804 }
+	}
+}
+
+# Informs the United States
+country_event = {
+
+	id = 1802
+	
+	is_triggered_only = yes
+	
+	title = "demands_for_indochina_title"
+	desc = "demands_for_indochina_desc"
+	picture = "indochina_demand"
+
+	option = {
+		name = "$FROMCOUNTRY$ is getting dangerous"
+		relation = { who = FROM value = -5 }
+	}
+}
+
+# Response to Japan/China - Vichy France Accepts
+country_event = {
+
+	id = 1803
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1803"
+	desc = "The new Vichy Government accepted our demands for military bases in Indochina."
+	picture = "indochina_demand"
+
+	option = {
+		name = "EVTOPTA1803"			# Very Good!	
+		USA = { country_event = 1802 }
+		create_vassal = IDC
+		FROM = {
+			any_owned = {
+				limit = { is_core = THIS }
+				secede_province = THIS
+			}
+		}
+	}
+}
+
+# Response to Japan - Vichy France Refuses
+country_event = {
+
+	id = 1804
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1804"
+	desc = "The new Vichy Government declined our demands for military bases in Indochina."
+	picture = "indochina_demand"
+
+	option = {
+		name = "Then we will take it!"	
+		USA = { country_event = 1802 }
+		war = {
+			target = IDC
+			attacker_goal = { casus_belli = puppet }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA1804"			# Curses
+		dissent = 3
+	}
+}

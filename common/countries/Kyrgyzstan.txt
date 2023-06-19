@@ -1,0 +1,713 @@
+color = { 100  210  255 }
+graphical_culture = Soviet
+
+
+
+default_templates = {
+	SOV_rifle = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	SOV_motorized = {
+		light_armor_brigade
+		motorized_brigade
+		motorized_brigade
+	}
+	SOV_armoured = {
+		armor_brigade
+		armor_brigade
+		motorized_brigade
+	}
+	SOV_guards_armoured = {
+		armor_brigade
+		armor_brigade
+		armor_brigade
+		motorized_brigade
+	}
+	SOV_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+	SOV_mountain = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+ 		bergsjaeger_brigade
+	}
+	SOV_mechanised = {
+		armor_brigade
+		mechanized_brigade
+ 		mechanized_brigade
+		mechanized_brigade
+	}
+	SOV_marine = {
+		marine_brigade
+		marine_brigade
+	}	
+}
+
+unit_names = {
+	infantry_brigade = {
+		"1. Kyrgyz Strelkovaya Diviziya" "2. Kyrgyz Strelkovaya Diviziya" "3. Kyrgyz Strelkovaya Diviziya" "4. Kyrgyz Strelkovaya Diviziya" "5. Kyrgyz Strelkovaya Diviziya" "6. Kyrgyz Strelkovaya Diviziya" "8. Kyrgyz Strelkovaya Diviziya" "10. Kyrgyz Strelkovaya Diviziya" "11. Kyrgyz Strelkovaya Diviziya" "12. Kyrgyz Strelkovaya Diviziya" "13. Kyrgyz Strelkovaya Diviziya" 
+		"14. Kyrgyz Strelkovaya Diviziya" "16. Kyrgyz Strelkovaya Diviziya" "17. Kyrgyz Strelkovaya Diviziya" "19. Kyrgyz Strelkovaya Diviziya" "21. Kyrgyz Strelkovaya Diviziya" "22. Kyrgyz Strelkovaya Diviziya" "23. Kyrgyz Strelkovaya Diviziya" "24. Kyrgyz Strelkovaya Diviziya" "25. Kyrgyz Strelkovaya Diviziya" 
+	}
+	cavalry_brigade = {
+		"1. Kyrgyz Kavaleriyskaya Diviziya" "2. Kyrgyz Kavaleriyskaya Diviziya" "3. Kyrgyz Kavaleriyskaya Diviziya" "4. Kyrgyz Kavaleriyskaya Diviziya" "5. Kyrgyz Kavaleriyskaya Diviziya" "6. Kyrgyz Kavaleriyskaya Diviziya" "7. Kyrgyz Kavaleriyskaya Diviziya" "8. Kyrgyz Kavaleriyskaya Diviziya" "9. Kyrgyz Kavaleriyskaya Diviziya" "10. Kyrgyz Kavaleriyskaya Diviziya" 
+			}
+	motorized_brigade = {
+		"1. Kyrgyz Motorizovannaya Diviziya" "2. Kyrgyz Motorizovannaya Diviziya" "3. Kyrgyz Motorizovannaya Diviziya" "4. Kyrgyz Motorizovannaya Diviziya" "5. Kyrgyz Motorizovannaya Diviziya" "6. Kyrgyz Motorizovannaya Diviziya" "8. Kyrgyz Motorizovannaya Diviziya" "10. Kyrgyz Motorizovannaya Diviziya" "12. Kyrgyz Motorizovannaya Diviziya" "15. Kyrgyz Motorizovannaya Diviziya" 
+	}
+	mechanized_brigade = {
+		"1. Kyrgyz Motostrelkovaya Diviziya" "2. Kyrgyz Motostrelkovaya Diviziya" "3. Kyrgyz Motostrelkovaya Diviziya" "4. Kyrgyz Motostrelkovaya Diviziya" "5. Kyrgyz Motostrelkovaya Diviziya" "6. Kyrgyz Motostrelkovaya Diviziya" "8. Kyrgyz Motostrelkovaya Diviziya" "10. Kyrgyz Motostrelkovaya Diviziya" "11. Kyrgyz Motostrelkovaya Diviziya" "12. Kyrgyz Motostrelkovaya Diviziya" "13. Kyrgyz Motostrelkovaya Diviziya" 
+	}
+	light_armor_brigade = {
+		"1. Kyrgyz Tankovaya Diviziya" "2. Kyrgyz Tankovaya Diviziya" "3. Kyrgyz Tankovaya Diviziya" "4. Kyrgyz Tankovaya Diviziya" "5. Kyrgyz Tankovaya Diviziya" "6. Kyrgyz Tankovaya Diviziya" "7. Kyrgyz Tankovaya Diviziya" "8. Kyrgyz Tankovaya Diviziya" "9. Kyrgyz Tankovaya Diviziya" "10. Kyrgyz Tankovaya Diviziya" 
+	}
+	armor_brigade = {
+		"1. Kyrgyz Tankovaya Diviziya" "2. Kyrgyz Tankovaya Diviziya" "3. Kyrgyz Tankovaya Diviziya" "4. Kyrgyz Tankovaya Diviziya" "5. Kyrgyz Tankovaya Diviziya" "6. Kyrgyz Tankovaya Diviziya" "7. Kyrgyz Tankovaya Diviziya" "8. Kyrgyz Tankovaya Diviziya" "9. Kyrgyz Tankovaya Diviziya" "10. Kyrgyz Tankovaya Diviziya" 
+	}
+	paratrooper_brigade = {
+		"1. Kyrgyz Vozdushno-Desantnaya Div." "2. Kyrgyz Vozdushno-Desantnaya Div." "3. Kyrgyz Vozdushno-Desantnaya Div." "4. Kyrgyz Vozdushno-Desantnaya Div." "5. Kyrgyz Vozdushno-Desantnaya Div." "6. Kyrgyz Vozdushno-Desantnaya Div." "7. Kyrgyz Vozdushno-Desantnaya Div." "8. Kyrgyz Vozdushno-Desantnaya Div." "9. Kyrgyz Vozdushno-Desantnaya Div." "10. Kyrgyz Vozdushno-Desantnaya Div." 
+	}
+	marine_brigade = {
+		"1. Kyrgyz Div. Morskoi Pekhoty" "2. Kyrgyz Div. Morskoi Pekhoty" "3. Kyrgyz Div. Morskoi Pekhoty" "4. Kyrgyz Div. Morskoi Pekhoty" "5. Kyrgyz Div. Morskoi Pekhoty" "6. Kyrgyz Div. Morskoi Pekhoty" "7. Kyrgyz Div. Morskoi Pekhoty" "8. Kyrgyz Div. Morskoi Pekhoty" "9. Kyrgyz Div. Morskoi Pekhoty" "10. Kyrgyz Div. Morskoi Pekhoty" 
+	}
+	bergsjaeger_brigade = {
+		"1. Kyrgyz Gornostrelkovaya Div." "2. Kyrgyz Gornostrelkovaya Div." "3. Kyrgyz Gornostrelkovaya Div." "4. Kyrgyz Gornostrelkovaya Div." "5. Kyrgyz Gornostrelkovaya Div." "6. Kyrgyz Gornostrelkovaya Div." "8. Kyrgyz Gornostrelkovaya Div." "10. Kyrgyz Gornostrelkovaya Div." "11. Kyrgyz Gornostrelkovaya Div." "12. Kyrgyz Gornostrelkovaya Div." "13. Kyrgyz Gornostrelkovaya Div." "14. Kyrgyz Gornostrelkovaya Div." "16. Kyrgyz Gornostrelkovaya Div." 
+	}
+	garrison_brigade = {
+		"1. Kyrgyz Strelkovaya Diviziya" "2. Kyrgyz Strelkovaya Diviziya" "3. Kyrgyz Strelkovaya Diviziya" "4. Kyrgyz Strelkovaya Diviziya" "5. Kyrgyz Strelkovaya Diviziya" "6. Kyrgyz Strelkovaya Diviziya" "8. Kyrgyz Strelkovaya Diviziya" "10. Kyrgyz Strelkovaya Diviziya" "11. Kyrgyz Strelkovaya Diviziya" "12. Kyrgyz Strelkovaya Diviziya" "13. Kyrgyz Strelkovaya Diviziya" 
+		"14. Kyrgyz Strelkovaya Diviziya" "16. Kyrgyz Strelkovaya Diviziya" "17. Kyrgyz Strelkovaya Diviziya" "19. Kyrgyz Strelkovaya Diviziya" "21. Kyrgyz Strelkovaya Diviziya" "22. Kyrgyz Strelkovaya Diviziya" "23. Kyrgyz Strelkovaya Diviziya" "24. Kyrgyz Strelkovaya Diviziya" "25. Kyrgyz Strelkovaya Diviziya"  
+	}
+	hq_brigade = {
+		"1st Kyrgyz Armiya" "2nd Kyrgyz Armiya" "3rd Kyrgyz Armiya" "4th Kyrgyz Armiya" "5th Kyrgyz Armiya" 
+	}
+	militia_brigade = {
+		"1. Kyrgyz Diviziya Opolcheniya" "2. Kyrgyz Diviziya Opolcheniya" "3. Kyrgyz Diviziya Opolcheniya" "4. Kyrgyz Diviziya Opolcheniya" "5. Kyrgyz Diviziya Opolcheniya" "6. Kyrgyz Diviziya Opolcheniya" "8. Kyrgyz Diviziya Opolcheniya" "10. Kyrgyz Diviziya Opolcheniya" "11. Kyrgyz Diviziya Opolcheniya" "12. Kyrgyz Diviziya Opolcheniya" "13. Kyrgyz Diviziya Opolcheniya" 
+		"14. Kyrgyz Diviziya Opolcheniya" "16. Kyrgyz Diviziya Opolcheniya" "17. Kyrgyz Diviziya Opolcheniya" "19. Kyrgyz Diviziya Opolcheniya" "21. Kyrgyz Diviziya Opolcheniya" "22. Kyrgyz Diviziya Opolcheniya" "23. Kyrgyz Diviziya Opolcheniya" "24. Kyrgyz Diviziya Opolcheniya" "25. Kyrgyz Diviziya Opolcheniya"  
+	}
+	multi_role = {
+		"1. T-IAD" "2. T-IAD" "3. T-IAD" "4. T-IAD" "5. T-IAD" "6. T-IAD" "7. T-IAD" "8. T-IAD" "10. T-IAD" "11. T-IAD" 
+	}
+	interceptor = {
+		"1. T-IAD" "2. T-IAD" "3. T-IAD" "4. T-IAD" "5. T-IAD" "6. T-IAD" "7. T-IAD" "8. T-IAD" "10. T-IAD" "11. T-IAD" 
+	}
+	jet_int = {
+		"1. T-IAD" "2. T-IAD" "3. T-IAD" "4. T-IAD" "5. T-IAD" "6. T-IAD" "7. T-IAD" "8. T-IAD" "10. T-IAD" "11. T-IAD" 
+	}
+	jet_mr = {
+		"1. T-IAD" "2. T-IAD" "3. T-IAD" "4. T-IAD" "5. T-IAD" "6. T-IAD" "7. T-IAD" "8. T-IAD" "10. T-IAD" "11. T-IAD" 
+	}
+	strategic_bomber = {
+		"1. T-DBAD" "2. T-DBAD" "3. T-DBAD" "4. T-DBAD" "5. T-DBAD" "6. T-DBAD" "7. T-DBAD" "8. T-DBAD" "9. T-DBAD" "10. T-DBAD" 
+	}
+	tactical_bomber = {
+		"1. T-BAD" "2. T-BAD" "3. T-BAD" "4. T-BAD" "5. T-BAD" "6. T-BAD" "7. T-BAD" "8. T-BAD" "9. T-BAD" "10. T-BAD" 
+	}
+	jet_bomber = {
+		"1. T-BAD" "2. T-BAD" "3. T-BAD" "4. T-BAD" "5. T-BAD" "6. T-BAD" "7. T-BAD" "8. T-BAD" "9. T-BAD" "10. T-BAD" 
+	}
+	naval_bomber = {
+		"1. T-MBAD" "2. T-MBAD" "3. T-MBAD" "4. T-MBAD" "5. T-MBAD" "6. T-MBAD" "7. T-MBAD" "8. T-MBAD" "9. T-MBAD" "10. T-MBAD" "1. T-MTAD" 
+		"2. T-MTAD" "3. T-MTAD" "4. T-MTAD" "5. T-MTAD" "6. T-MTAD" "7. T-MTAD" "8. T-MTAD" "9. T-MTAD" "10. T-MTAD" 
+	}
+	cas = {
+		"23. T-ShAD" "46. T-ShAD" "77. T-ShAD" "25. T-ShAD" "72. T-ShAD" "9. T-ShAD" "10. T-ShAD" "11. T-ShAD" "1. T-ShAD" "2. T-ShAD" 
+			}
+	transport_plane = {
+		"1. T-TrAD" "2. T-TrAD" "3. T-TrAD" "4. T-TrAD" "5. T-TrAD" "6. T-TrAD" "7.T-TrAD" "8. T-TrAD" "9. T-TrAD" "10. T-TrAD" 
+	}
+	battleship = {
+	}
+	light_cruiser = {
+	}
+	heavy_cruiser = {
+	}
+	battlecruiser = {
+	}
+	destroyer = {
+		"1. Kyrgyz Flotiliya Esmintsev" "2. Kyrgyz Flotiliya Esmintsev" "3. Kyrgyz Flotiliya Esmintsev" "4. Kyrgyz Flotiliya Esmintsev" "5. Kyrgyz Flotiliya Esmintsev" "6. Kyrgyz Flotiliya Esmintsev" "7. Kyrgyz Flotiliya Esmintsev" "8. Kyrgyz Flotiliya Esmintsev" "9. Kyrgyz Flotiliya Esmintsev" "10. Kyrgyz Flotiliya Esmintsev" 
+	}
+	carrier = {
+	}
+	escort_carrier = {
+	}
+	submarine = {
+		"1. Kyrgyz Flotiliya Podlodok" "2. Kyrgyz Flotiliya Podlodok" "3. Kyrgyz Flotiliya Podlodok" "4. Kyrgyz Flotiliya Podlodok" "5. Kyrgyz Flotiliya Podlodok" "6. Kyrgyz Flotiliya Podlodok" "7. Kyrgyz Flotiliya Podlodok" "8. Kyrgyz Flotiliya Podlodok" "9. Kyrgyz Flotiliya Podlodok" "10. Kyrgyz Flotiliya Podlodok" 
+	}
+	transport_ship = {
+		"1. Kyrgyz Transportnaya Flotiliya" "2. Kyrgyz Transportnaya Flotiliya" "3. Kyrgyz Transportnaya Flotiliya" "4. Kyrgyz Transportnaya Flotiliya" "5. Kyrgyz Transportnaya Flotiliya" "6. Kyrgyz Transportnaya Flotiliya" "7. Kyrgyz Transportnaya Flotiliya" "8. Kyrgyz Transportnaya Flotiliya" "9. Kyrgyz Transportnaya Flotiliya" "10. Kyrgyz Transportnaya Flotiliya" 
+	}
+
+}
+ministers = {
+	521001 = {
+		 name = "Abdukadyr Urazbekov"
+		 ideology = leninist
+		 loyalty = 1.00
+		 foreign_minister = general_staffer
+		 start_date = 1936.1.1
+		 picture = M521017
+	}
+	521002 = {
+		 name = "Abdulzhatir Jildizbek"
+		 ideology = leninist
+		 loyalty = 1.00
+		 armament_minister = infantry_proponent
+		 start_date = 1936.1.1
+		 picture = M521024
+	}
+	521003 = {
+		 name = "Adilet Rustamov"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 armament_minister = corrupt_kleptocrat
+		 start_date = 1936.1.1
+		 picture = M521030
+	}
+	521004 = {
+		 name = "Aleksiyi Vagov"
+		 ideology = leninist
+		 loyalty = 1.00
+		 minister_of_security = efficient_sociopath
+		 start_date = 1936.1.1
+		 picture = M521031
+	}
+	521005 = {
+		 name = "Alik Bakytuul"
+		 ideology = social_democrat
+		 loyalty = 1.00
+		 armament_minister = tank_proponent
+		 start_date = 1936.1.1
+		 picture = M521026
+	}
+	521006 = {
+		 name = "Andrej V. Sokolov"
+		 ideology = market_liberal
+		 loyalty = 1.00
+		 head_of_government = happy_amateur
+		 start_date = 1936.1.1
+		 picture = M521015
+	}
+	521007 = {
+		 name = "Asmaly Toluboyev"
+		 ideology = leninist
+		 loyalty = 1.00
+		 chief_of_navy = base_control_doctrine
+		 start_date = 1936.1.1
+		 picture = M521052
+	}
+	521008 = {
+		 name = "Azamat Cholponbek"
+		 ideology = social_democrat
+		 loyalty = 1.00
+		 minister_of_intelligence = logistics_specialist
+		 start_date = 1936.1.1
+		 picture = M521039
+	}
+	521009 = {
+		 name = "Aziz Mirul"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 minister_of_intelligence = technical_specialist
+		 start_date = 1936.1.1
+		 picture = M521043
+	}
+	521010 = {
+		 name = "Baktit Goryashenko"
+		 ideology = social_democrat
+		 loyalty = 1.00
+		 chief_of_army = armoured_spearhead_doctrine
+		 start_date = 1936.1.1
+		 picture = M521049
+	}
+	521011 = {
+		 name = "Baten Dzhumabayev"
+		 ideology = market_liberal
+		 loyalty = 1.00
+		 head_of_state = autocratic_charmer
+		 start_date = 1936.1.1
+		 picture = M521012
+	}
+	521012 = {
+		 name = "Bayali Isakaiev"
+		 ideology = leninist
+		 loyalty = 1.00
+		 minister_of_security = crime_fighter
+		 start_date = 1936.1.1
+		 picture = M521032
+	}
+	521013 = {
+		 name = "Boris Shapurchirnikov"
+		 ideology = social_democrat
+		 loyalty = 1.00
+		 minister_of_security = silent_lawyer
+		 start_date = 1936.1.1
+		 picture = M521033
+	}
+	521014 = {
+		 name = "Egor Rall"
+		 ideology = leninist
+		 loyalty = 1.00
+		 chief_of_navy = power_projection_doctrine
+		 start_date = 1936.1.1
+		 picture = L10438
+	}
+	521015 = {
+		 name = "Evgennij Sokolov"
+		 ideology = market_liberal
+		 loyalty = 1.00
+		 chief_of_army = elastic_defence_doctrine
+		 start_date = 1936.1.1
+		 picture = M521050
+	}
+	521016 = {
+		 name = "Gilnara Popov"
+		 ideology = social_democrat
+		 loyalty = 1.00
+		 chief_of_navy = decisive_naval_battle_doctrine
+		 start_date = 1936.1.1
+		 picture = M521053
+	}
+	521017 = {
+		 name = "Gulzat Everstov"
+		 ideology = social_democrat
+		 loyalty = 1.00
+		 foreign_minister = apologetic_clerk
+		 start_date = 1936.1.1
+		 picture = M521020
+	}
+	521018 = {
+		 name = "Iban Pryadezhnikov"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 minister_of_security = prince_of_terror
+		 start_date = 1936.1.1
+		 picture = M521037
+	}
+	521019 = {
+		 name = "Ibrahim Validov"
+		 ideology = market_liberal
+		 loyalty = 1.00
+		 minister_of_intelligence = technical_specialist
+		 start_date = 1936.1.1
+		 picture = M521040
+	}
+	521020 = {
+		 name = "Igor N. Barakhov"
+		 ideology = leninist
+		 loyalty = 1.00
+		 minister_of_intelligence = political_specialist
+		 start_date = 1936.1.1
+		 picture = M521006
+	}
+	521021 = {
+		 name = "Igor P. Donyak"
+		 ideology = leninist
+		 loyalty = 1.00
+		 head_of_state = stern_imperialist
+		 start_date = 1936.1.1
+		 picture = M521001
+	}
+	521022 = {
+		 name = "Isamil Abuzyarov"
+		 ideology = leninist
+		 loyalty = 1.00
+		 chief_of_staff = school_of_manoeuvre
+		 start_date = 1936.1.1
+		 picture = M521044
+	}
+	521023 = {
+		 name = "Ivan F. Sokolov"
+		 ideology = social_democrat
+		 loyalty = 1.00
+		 head_of_state = pig_headed_isolationist
+		 start_date = 1936.1.1
+		 picture = M521011
+	}
+	521024 = {
+		 name = "Ivan Rednikov"
+		 ideology = social_democrat
+		 loyalty = 1.00
+		 chief_of_staff = school_of_manoeuvre
+		 start_date = 1936.1.1
+		 picture = M521045
+	}
+	521025 = {
+		 name = "Jelena Shemeleva"
+		 ideology = market_liberal
+		 loyalty = 1.00
+		 minister_of_security = prince_of_terror
+		 start_date = 1936.1.1
+		 picture = M521035
+	}
+	521026 = {
+		 name = "Jyrgaluul Adilet"
+		 ideology = market_liberal
+		 loyalty = 1.00
+		 minister_of_intelligence = logistics_specialist
+		 start_date = 1936.1.1
+		 picture = M521041
+	}
+	521027 = {
+		 name = "Kalina Amankulova"
+		 ideology = leninist
+		 loyalty = 1.00
+		 armament_minister = administrative_genius
+		 start_date = 1936.1.1
+		 picture = M521004
+	}
+	521028 = {
+		 name = "Karl von Bardolff"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 chief_of_staff = school_of_fire_support
+		 start_date = 1936.1.1
+		 picture = M521047
+	}
+	521029 = {
+		 name = "Karun Dushebaev"
+		 ideology = leninist
+		 loyalty = 1.00
+		 chief_of_staff = school_of_psychology
+		 start_date = 1936.1.1
+		 picture = M521007
+	}
+	521030 = {
+		 name = "Kazym Tynystanov"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 head_of_state = ruthless_powermonger
+		 start_date = 1936.1.1
+		 picture = M521013
+	}
+	521031 = {
+		 name = "Kuban Bakuulbek"
+		 ideology = market_liberal
+		 loyalty = 1.00
+		 chief_of_navy = base_control_doctrine
+		 start_date = 1936.1.1
+		 picture = M521054
+	}
+	521032 = {
+		 name = "Maksim Ammosov"
+		 ideology = leninist
+		 loyalty = 1.00
+		 foreign_minister = ideological_crusader
+		 start_date = 1936.1.1
+		 picture = M521003
+	}
+	521033 = {
+		 name = "Maksim Rebrov"
+		 ideology = social_democrat
+		 loyalty = 1.00
+		 head_of_government = flamboyant_tough_guy
+		 start_date = 1936.1.1
+		 picture = M521014
+	}
+	521034 = {
+		 name = "Malagoza Tahabayev"
+		 ideology = leninist
+		 loyalty = 1.00
+		 chief_of_army = static_defence_doctrine
+		 start_date = 1936.1.1
+		 picture = M521048
+	}
+	521035 = {
+		 name = "Maryam Tugambajeva"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 minister_of_intelligence = political_specialist
+		 start_date = 1936.1.1
+		 picture = M521042
+	}
+	521036 = {
+		 name = "Mihai Dratsenko"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 chief_of_navy = indirect_approach_doctrine
+		 start_date = 1936.1.1
+		 picture = L500120
+	}
+	521037 = {
+		 name = "Mikhail Us"
+		 ideology = leninist
+		 loyalty = 1.00
+		 minister_of_intelligence = industrial_specialist
+		 chief_of_air = naval_aviation_doctrine
+		 start_date = 1936.1.1
+		 picture = M521038
+	}
+	521038 = {
+		 name = "Mikhail V. Frunze"
+		 ideology = leninist
+		 loyalty = 1.00
+		 chief_of_army = elastic_defence_doctrine
+		 chief_of_air = vertical_envelopment_doctrine
+		 start_date = 1936.1.1
+		 picture = M521008
+	}
+	521039 = {
+		 name = "Mukhtar Dzhangalin"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 foreign_minister = great_compromiser
+		 start_date = 1936.1.1
+		 picture = M521022
+	}
+	521040 = {
+		 name = "Murat Salikhov"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 minister_of_security = back_stabber
+		 start_date = 1936.1.1
+		 picture = M521036
+	}
+	521041 = {
+		 name = "Nachum Sokolov"
+		 ideology = social_democrat
+		 loyalty = 1.00
+		 foreign_minister = biased_intellectual
+		 start_date = 1936.1.1
+		 picture = M521019
+	}
+	521042 = {
+		 name = "Nazira Dauletova"
+		 ideology = market_liberal
+		 loyalty = 1.00
+		 foreign_minister = apologetic_clerk
+		 start_date = 1936.1.1
+		 picture = M521021
+	}
+	521043 = {
+		 name = "Nikolai Bogolyubhov"
+		 ideology = leninist
+		 loyalty = 1.00
+		 head_of_government = corporate_suit
+		 start_date = 1936.1.1
+		 picture = M521002
+	}
+	521044 = {
+		 name = "Otto Langemeyer"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 chief_of_air = carpet_bombing_doctrine
+		 start_date = 1936.1.1
+		 picture = M521059
+	}
+	521045 = {
+		 name = "Pavel Shamaev"
+		 ideology = market_liberal
+		 loyalty = 1.00
+		 chief_of_air = army_aviation_doctrine
+		 start_date = 1936.1.1
+		 picture = M521058
+	}
+	521046 = {
+		 name = "Rozhira Tshugel"
+		 ideology = social_democrat
+		 loyalty = 1.00
+		 minister_of_security = back_stabber
+		 start_date = 1936.1.1
+		 picture = M521034
+	}
+	521047 = {
+		 name = "Sultan Bakytbek"
+		 ideology = market_liberal
+		 loyalty = 1.00
+		 armament_minister = air_to_ground_proponent
+		 start_date = 1936.1.1
+		 picture = M521029
+	}
+	521048 = {
+		 name = "Sultankul Shamurzin"
+		 ideology = leninist
+		 loyalty = 1.00
+		 armament_minister = air_to_ground_proponent
+		 start_date = 1936.1.1
+		 picture = M521025
+	}
+	521049 = {
+		 name = "Tryfil Sokolov"
+		 ideology = leninist
+		 loyalty = 1.00
+		 chief_of_air = air_superiority_doctrine
+		 start_date = 1936.1.1
+		 picture = M521010
+	}
+	521050 = {
+		 name = "Turabej Kuletov"
+		 ideology = leninist
+		 loyalty = 1.00
+		 minister_of_security = man_of_the_people
+		 start_date = 1936.1.1
+		 picture = M521005
+	}
+	521051 = {
+		 name = "Uraz Dzshandosov"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 chief_of_army = decisive_battle_doctrine
+		 start_date = 1936.1.1
+		 picture = M521051
+	}
+	521052 = {
+		 name = "Vassil Dyankonov"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 foreign_minister = iron_fisted_brute
+		 start_date = 1936.1.1
+		 picture = M521023
+	}
+	521053 = {
+		 name = "Viktor Glushkov"
+		 ideology = market_liberal
+		 loyalty = 1.00
+		 armament_minister = theoretical_scientist
+		 start_date = 1936.1.1
+		 picture = M521028
+	}
+	521054 = {
+		 name = "Yagur Baranov"
+		 ideology = market_liberal
+		 loyalty = 1.00
+		 chief_of_staff = school_of_mass_combat
+		 start_date = 1936.1.1
+		 picture = M521046
+	}
+	521055 = {
+		 name = "Yosip Abdrokhmanov"
+		 ideology = leninist
+		 loyalty = 1.00
+		 foreign_minister = great_compromiser
+		 start_date = 1936.1.1
+		 picture = M521018
+	}
+	521056 = {
+		 name = "Yurij Mitrpoliskiyi"
+		 ideology = social_democrat
+		 loyalty = 1.00
+		 armament_minister = theoretical_scientist
+		 start_date = 1936.1.1
+		 picture = M521027
+	}
+	521057 = {
+		 name = "Zeki Validov"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 head_of_government = smiling_oilman
+		 start_date = 1936.1.1
+		 picture = M521016
+	}
+	# Generic dummy ministers
+	95505 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95506 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95507 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95508 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95509 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95510 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95511 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}	
+}

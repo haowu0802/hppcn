@@ -1,0 +1,58 @@
+carrier = {
+	type = naval
+	sprite = Carrier
+	capital = yes
+	can_be_pride = yes
+	active = no
+	available_trigger = {
+			not = {	has_country_flag = "washington_treaty" }
+			not = {	has_country_flag = "london_treaty" }
+			not = {	has_country_flag = "second_london_treaty" }
+	}
+	
+	hull = 1.5
+	
+	#Size Definitions
+	max_strength = 100
+	default_organisation = 30
+	default_morale = 0.30
+	officers = 50
+
+	carrier_size = 2
+
+	#Building Costs
+	build_cost_ic = 7.50
+	build_cost_manpower = 1.5
+	build_time = 500
+
+	#Misc Abilities
+	maximum_speed = 30.00
+	transport_capability = 0.00
+	supply_consumption = 1.00
+	fuel_consumption = 2.30
+	range = 3000.00
+	distance = 0.50
+	radio_strength = 1.0
+
+	#Detection Abilities
+	surface_detection = 1.00
+	air_detection = 2.00
+	sub_detection = 0.00
+	visibility = 100.00
+
+	#Defensive Abilities
+	sea_defence = 5.00
+	air_defence = 7.00
+
+	#Offensive Abilities
+	convoy_attack = 0.00
+	sea_attack = 0.00
+	sub_attack = 0.00
+	air_attack = 2.00
+	shore_bombardment = 0.00
+
+	completion_size = 1.0
+	on_completion = carrier_practical
+	
+	priority = 10
+}

@@ -1,0 +1,244 @@
+###########################
+# Ecuadorian-Peruvian War #
+###########################
+# Starts by an event causing border skirmishes,
+# then any of the two may start an all-out war.
+
+country_event = {
+
+	id = 3401
+	
+	major = yes
+	
+	trigger = {
+		not = { has_global_flag = "peru_equador_war" }
+		or = {
+			tag = PRU
+			tag = ECU
+		}
+		war = no
+	}
+	
+	mean_time_to_happen = {
+	
+		months = 600
+		
+		modifier = { factor = 0.1 and = { tag = PRU ECU = { war = yes } } }
+		modifier = { factor = 0.1 and = { tag = ECU PRU = { war = yes } } }
+		
+		# It would be preferable if it happened in the historical year, but I don't want to pinpoint it
+		modifier = { factor = 0.2 and = { year = 1941 not = { year = 1942 } } }
+	}
+
+	title = "Territorial dispute"
+	desc = "The dispute between Ecuador and Peru dates from 1840. Much of the dispute revolved around whether Ecuador's territory extended beyond the Andes mountain range to the Maranon (Amazon) river, including the Amazonian basin."
+	picture = "PRU_ECU2"
+	
+	option = {
+		name = "This is a bad omen!"
+		set_global_flag = "peru_equador_war"
+		PRU = {
+			add_country_modifier = {
+				name = "border_skirmishes"
+				duration = 180
+			}
+		}
+		ECU = {
+			add_country_modifier = {
+				name = "border_skirmishes"
+				duration = 180
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 3402
+	
+	trigger = {
+		tag = USA
+		war = no
+		has_global_flag = "peru_equador_war"
+		exists = ECU
+		exists = PRU
+		PRU = { war_with = ECU }
+	}
+
+	title = "Ecuadorian–Peruvian War"
+	desc = "The conflict between Peru and Equador is unstabilizing South America. We should try to mediate a peace between the two!"
+	picture = "PRU_ECU2"
+	
+	option = {
+		name = "Time to intervene!"
+		PRU = { country_event = 3403 }
+		ECU = { country_event = 3404 }
+	}
+
+}
+
+country_event = {
+
+	id = 3403
+	
+	is_triggered_only = yes
+	
+	title = "US peace mediation"
+	desc = "The Secretary of State of the United States approached us with a proposal for peace negotiations in our conflict with Equador and returning to Status Quo."
+	picture = "PRU_ECU2"
+	
+	option = {
+		name = "Sounds fine!"
+		ai_chance = {
+			factor = 75
+			modifier = { factor = 0.0 ECU = { lost_national = 0.5 } }
+		}
+		set_country_flag = "accepted_peace"
+		USA = { country_event = 3405 }
+		USA = { country_event = 3406 }
+	}
+	option = {
+		name = "No way!"
+		ai_chance = {
+			factor = 25
+			modifier = { factor = 0.0 lost_national = 0.2 }
+		}
+		set_country_flag = "declined_peace"
+		add_wargoal = {
+			target = ECU
+			war_goal = { casus_belli = aquire_all_cores }
+		}
+		USA = { country_event = 3405 }
+		USA = { country_event = 3406 }
+	}
+
+}
+
+country_event = {
+
+	id = 3404
+	
+	is_triggered_only = yes
+	
+	title = "US peace mediation"
+	desc = "The Secretary of State of the United States approached us with a proposal for peace negotiations in our conflict with Peru and returning to Status Quo."
+	picture = "PRU_ECU2"
+	
+	option = {
+		name = "Sounds fine!"
+		ai_chance = {
+			factor = 75
+			modifier = { factor = 0.0 PRU = { lost_national = 0.5 } }
+		}
+		set_country_flag = "accepted_peace"
+		USA = { country_event = 3405 }
+		USA = { country_event = 3406 }
+	}
+	option = {
+		name = "No way!"
+		ai_chance = {
+			factor = 25
+			modifier = { factor = 0.0 lost_national = 0.2 }
+		}
+		set_country_flag = "declined_peace"
+		add_wargoal = {
+			target = PRU
+			war_goal = { casus_belli = aquire_all_cores }
+		}
+		USA = { country_event = 3405 }
+		USA = { country_event = 3406 }
+	}
+
+}
+
+country_event = {
+
+	id = 3405
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		PRU = { has_country_flag = "accepted_peace" }
+		ECU = { has_country_flag = "accepted_peace" }
+	}
+	
+	title = "Peace-talks"
+	desc = "Both Peru and Equador accepted to return to the Status Quo borders. The war is over."
+	picture = "PRU_ECU2"
+	
+	option = {
+		name = "It's resolved then"
+		PRU = { end_war = ECU }
+		any_country = {
+			limit = { alliance_with = PRU }
+			end_war = ECU
+		}
+	}
+	
+}
+
+country_event = {
+
+	id = 3406
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		or = {	# At least one of them declined
+			and = {
+				PRU = { has_country_flag = "declined_peace" }
+				ECU = { has_country_flag = "accepted_peace" }
+			}
+			and = {
+				PRU = { has_country_flag = "accepted_peace" }
+				ECU = { has_country_flag = "declined_peace" }
+			}
+			and = {
+				PRU = { has_country_flag = "declined_peace" }
+				ECU = { has_country_flag = "declined_peace" }
+			}
+		}
+	}
+	
+	title = "Peace-talks"
+	desc = "The negotiations were fruitles, a peaceful agreement couldn't be reached."
+	picture = "PRU_ECU2"
+	
+	option = {
+		name = "Oh, well..."
+		neutrality = 2
+	}
+	option = {
+		name = "If they won't listen to reason..."
+		any_country = {
+			limit = { has_country_flag = "declined_peace" }
+			clr_country_flag = "protected_by_the_usa"
+			end_non_aggression_pact = THIS
+			country_event = 3407
+		}
+	}
+	
+}
+
+country_event = {
+
+	id = 3407
+	
+	is_triggered_only = yes
+	
+	title = "US Intervention"
+	desc = "The United States was not impressed when we declined to negotiate in the Ecuadorian–Peruvian War. They decided to force the issue..."
+	picture = "PRU_ECU2"
+	
+	option = {
+		name = "Was that really necessary?..."
+		dissent = 15
+		USA = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = concede_defeat }
+				defender_goal = { casus_belli = concede_defeat }
+			}
+		}
+	}
+}

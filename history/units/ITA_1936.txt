@@ -1,0 +1,846 @@
+theatre = {
+	name = "Comando Superiore Metropolitana"	
+	location = 4549
+	regiment = { type = hq_brigade name = "Comando Superiore Metropolitana HQ" historical_model = 1 }	
+	armygroup = {
+		name = "Gruppo d'Armata Ovest"
+		location = 3692
+		leader = 6140 # Umberto Principe di Piemonte
+		regiment = { type = hq_brigade name = "Gruppo d'Armata Ovest HQ" historical_model = 1 }		
+		army  = {		
+			name = "1a Armata"
+			location = 3899
+			leader = 6117 # Pintor
+			regiment = { type = hq_brigade name = "1a Armata HQ" historical_model = 1 }
+			corps = {
+				name = "II Corpo d'Armata"
+				location = 3898
+				regiment = { type = hq_brigade name = "II Corpo d'Armata HQ" historical_model = 1 }
+				division= {
+					name = "4a Divisione 'Livorno'"
+					location = 3898	
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "33. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = infantry_brigade name = "34. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = truck_towed_support_brigade name = "28. Reggimento di Artiglieria" experience = 10 historical_model = 3 }
+				}			
+				division= {
+					name = "4a Divisione Alpina 'Cuneense'"
+					location = 3898
+					is_reserve = yes
+					regiment = { type = bergsjaeger_brigade name = "1. Reggimento Alpini" experience = 10 historical_model = 4 }
+					regiment = { type = bergsjaeger_brigade name = "2. Reggimento Alpini" experience = 10 historical_model = 4 }
+				}			
+			}
+			corps = {
+				name = "III Corpo d'Armata"
+				location = 3970
+				regiment = { type = hq_brigade name = "III Corpo d'Armata HQ" historical_model = 1 }
+				division= {
+					name = "3a Divisione 'Ravenna'"
+					location = 3970
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "37. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = infantry_brigade name = "38. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = truck_towed_support_brigade name = "11. Reggimento di Artiglieria" experience = 10 historical_model = 3 }
+				}
+				division= {
+					name = "6a Divisione 'Cuneo'"
+					location = 3970
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "7. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = infantry_brigade name = "8. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = truck_towed_support_brigade name = "27. Reggimento di Artiglieria" experience = 10 historical_model = 2 }
+				}
+			}	
+			division= {		
+				name = "1a Raggruppamento Celere"	
+				location = 3899	
+				is_reserve = yes	
+				regiment = { type = cavalry_brigade name = "1. Nizza Cavalleria" historical_model = 2 }	
+				regiment = { type = cavalry_brigade name = "5. Cavallegeri de Monferatto" historical_model = 2 }	
+				regiment = { type = light_armor_brigade name = "4. Carri Leggeri" experience = 10 historical_model = 2 }
+			}		
+		}			
+		army = {
+			name = "4a Armata"
+			location = 3759
+			leader = 6088 # Guzzoni
+			regiment = { type = hq_brigade name = "4a Armata HQ" historical_model = 1 }
+			corps = {
+				name = "Corpo d'Armata Alpino"
+				location = 3691
+				regiment = { type = hq_brigade name = "Corpo d'Armata Alpino HQ" historical_model = 1 }
+				division= {
+					name = "1a Divisione Alpina 'Taurinense'"
+					location = 3691
+					is_reserve = yes
+					regiment = { type = bergsjaeger_brigade name = "3. Reggimento Alpini" experience = 10 historical_model = 4 }
+					regiment = { type = bergsjaeger_brigade name = "4. Reggimento Alpini" experience = 10 historical_model = 4 }
+				}
+			}
+			corps = {
+				name = "I Corpo d'Armata"
+				location = 3827
+				leader = 6088 # Vecchiarelli
+				regiment = { type = hq_brigade name = "I Corpo d'Armata" experience = 10 historical_model = 0 }
+				division = {
+					name = "1a Divisione 'Superga'"
+					location = 3827
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "91. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = infantry_brigade name = "92. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = horse_towed_support_brigade name = "9. Reggimento di Artiglieria" experience = 10 historical_model = 4 }
+				}
+				division = {
+					name = "11a Divisione 'Brennero'"
+					location = 3827
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "231. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = infantry_brigade name = "232. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = horse_towed_support_brigade name = "9. Reggimento di Artiglieria" experience = 10 historical_model = 3 }
+				}					
+				division= {
+					name = "2a Divisione Alpina 'Tridentina'"
+					location = 3827
+					is_reserve = yes
+					regiment = { type = bergsjaeger_brigade name = "5. Reggimento Alpini" experience = 10 historical_model = 4 }
+					regiment = { type = bergsjaeger_brigade name = "6. Reggimento Alpini" experience = 10 historical_model = 4 }
+				}	
+			}
+			corps = {
+				name = "IV Corpo d'Armata"
+				location = 3970
+				regiment = { type = hq_brigade name = "IV Corpo d'Armata HQ" historical_model = 1 }
+				division = {
+					name = "2a Divisione 'Sforzesca'"
+					location = 3970
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "53. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = infantry_brigade name = "54. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = horse_towed_support_brigade name = "17. Reggimento di Artiglieria" experience = 10 historical_model = 3 }
+				}
+				division= {	
+					name = "7a Divisione 'Lupi di Toscana'"
+					location = 3900
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "77. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = infantry_brigade name = "78. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = horse_towed_support_brigade name = "30. Reggimento di Artiglieria" experience = 10 historical_model = 2 }
+				}			
+			}
+		}
+	}
+	armygroup = {
+		name = "Gruppo d'Armata Est"
+		location = 3696
+		leader = 6086 # Grossi
+		regiment = { type = hq_brigade name = "Gruppo d'Armata Est HQ" historical_model = 1 }
+		army = 	{
+			name = "2a Armata"
+			location = 3562
+			leader = 6003 # Ambrosio
+			regiment = { type = hq_brigade name = "2a Armata HQ" historical_model = 1 }
+			corps = {		
+				name = "V Corpo d'Armata"	
+				location = 3562	
+				regiment = { type = hq_brigade name = "V Corpo d'Armata HQ" historical_model = 1 }	
+				division= {	
+					name = "9a Divisione 'Pasubio'"
+					location = 3562
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "79. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = infantry_brigade name = "80. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = horse_towed_support_brigade name = "8. Reggimento di Artiglieria" experience = 10 historical_model = 2 }
+				}	
+			}		
+			corps = {
+				name = "VI Corpo d'Armata"
+				location = 3494
+				regiment = { type = hq_brigade name = "VII Corpo d'Armata HQ" historical_model = 1 }
+				division= {	
+					name = "8a Divisione 'Po'"
+					location = 3494
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "65. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = infantry_brigade name = "66. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+					regiment = { type = horse_towed_support_brigade name = "46. Reggimento di Artiglieria" experience = 10 historical_model = 4 }
+				}					
+				division= {
+					name = "3a Divisione Alpina 'Julia'"
+					location = 3494
+					is_reserve = yes
+					regiment = { type = bergsjaeger_brigade name = "8. Reggimento Alpini" experience = 10 historical_model = 4 }
+					regiment = { type = bergsjaeger_brigade name = "9. Reggimento Alpini" experience = 10 historical_model = 4 }
+					regiment = { type = truck_towed_support_brigade name = "3. Reggimento di Artiglieria" experience = 10 historical_model = 4 }
+				}
+			}
+			division= {	
+				name = "Raggruppamento Dalmatia"
+				location = 3562
+				is_reserve = yes
+				regiment = { type = cavalry_brigade name = "2. Cavallegeri Piemonte Reale" experience = 10 historical_model = 2 }
+				regiment = { type = cavalry_brigade name = "4. Genova Cavelleria" experience = 10 historical_model = 2 }
+				regiment = { type = cavalry_brigade name = "19. Cavallegeri Guide" experience = 10 historical_model = 2 }
+			}	
+		}	
+		army = {
+			name = "6a Armata"
+			location = 3562
+			leader = 6144 # Vercelinno
+			regiment = { type = hq_brigade name =  "6a Armata HQ" historical_model = 1 }			
+			corps = {
+				name = "Corpo d'Armata Celere"
+				location = 3696
+				leader = 6102 # Messe
+				regiment = { type = hq_brigade name = "Corpo d'Armata Celere HQ" historical_model = 1 }
+				division = {
+					name = "1a Divisione 'Eugenio di Savoia'"
+					location = 3696
+					is_reserve = yes
+					regiment = { type = cavalry_brigade name = "12. Cavallegeri de Saluzzo" experience = 10 historical_model = 2 }
+					regiment = { type = cavalry_brigade name = "14. Cavallegeri de Alessandria" experience = 10 historical_model = 2 }
+					regiment = { type = motorized_brigade name = "11. Reggimento Bersagieri" experience = 10 historical_model = 0 }
+					regiment = { type = light_armor_brigade name = "1. Carri Leggeri San Giusto" experience = 10 historical_model = 1 }					
+				}
+				division= {
+					name = "2a Divisione 'Emanuele Filiberto'"
+					location = 3696
+					is_reserve = yes
+					regiment = { type = cavalry_brigade name = "9. Lancieri di Firenze" experience = 10 historical_model = 2 }
+					regiment = { type = cavalry_brigade name = "10. Lancieri di Vittorio Emanuele" experience = 10 historical_model = 2 }
+					regiment = { type = motorized_brigade name = "1. Reggimento Bersagieri" experience = 10 historical_model = 0 }
+					regiment = { type = light_armor_brigade name = "2. Carri Leggeri San Marco" experience = 10 historical_model = 1 }					
+				}
+				division= {
+					name = "3a Divisione 'Principe Amedeo'"
+					location = 3696
+					is_reserve = yes
+					regiment = { type = cavalry_brigade name = "3. Savoia Cavalleria" experience = 10 historical_model = 2 }
+					regiment = { type = cavalry_brigade name = "5. Lancieri di Novara" experience = 10 historical_model = 2 }
+					regiment = { type = motorized_brigade name = "3. Reggimento Bersagieri" experience = 10 historical_model = 0 }
+					regiment = { type = light_armor_brigade name = "3. Carri Leggeri San Giorgio" experience = 10 historical_model = 1 }
+				}
+			}			
+		}	
+	}
+	armygroup = {
+		name = "Gruppo d'Armata Sud"
+		location = 5233
+		leader = 6054 # de Bono
+		regiment = { type = hq_brigade name = "Gruppo d'Armata Sud HQ" historical_model = 1 }					
+		corps = {
+			name = "VII Corpo d'Armata"
+			location = 5331
+			regiment = { type = hq_brigade name = "VII Corpo d'Armata HQ" historical_model = 1 }
+			division= {
+				name = "20a Divisione 'Friuli'"
+				location = 5331
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "87. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "88. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "35. Reggimento di Artiglieria" experience = 10 historical_model = 4 }
+			}			
+			division= {	
+				name = "25a Divisione 'Bologna'"
+				location = 5331
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "39. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "40. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "205. Reggimento di Artiglieria" experience = 10 historical_model = 1 }
+			}	
+		}
+		corps = {
+			name = "Comando Truppe delle Isole Italiane dell'Egeo"
+			location = 5138
+			regiment = { type = hq_brigade name = "Comando Truppe delle Isole Italiane dell'Egeo HQ" historical_model = 1 }
+			division= {
+				name = "50a Divisione 'Regina'"
+				location = 5138
+				is_reserve = yes
+				regiment = { type = garrison_brigade name = "9. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = garrison_brigade name = "10. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "50. Reggimento di Artiglieria" experience = 10 historical_model = 0 }
+			}			
+		}		
+	}
+	navy = {	
+		name = "1a Squadra Navale"
+		base = 4869
+		location = 4869
+		ship = { type = heavy_cruiser name = "RM Zara" experience = 10 historical_model = 5 }
+		ship = { type = heavy_cruiser name = "RM Gorizia" experience = 10 historical_model = 5 }
+		ship = { type = heavy_cruiser name = "RM Fiume" experience = 10 historical_model = 5 }
+		ship = { type = destroyer name = "9a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 5 }
+		ship = { type = destroyer name = "13a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 7 }
+		ship = { type = destroyer name = "14a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 8 }		
+	}
+	navy = {	
+		name = "4a Squadra Navale"
+		base = 4869
+		location = 4869
+		ship = { type = light_cruiser name = "RM Luigi Cadorna" experience = 10 historical_model = 6 }
+		ship = { type = light_cruiser name = "RM Alberto da Giussano" experience = 10 historical_model = 6 }
+		ship = { type = light_cruiser name = "RM Armando Diaz" experience = 10 historical_model = 6 }		
+		ship = { type = light_cruiser name = "RM Alberico da Barbiano" experience = 10 historical_model = 6 }		
+		ship = { type = destroyer name = "6a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 3 }		
+	}
+	navy = {	
+		name = "5a Squadra Navale"
+		base = 4869
+		location = 4869
+		ship = { type = battleship name = "RM Andrea Doria" experience = 10 historical_model = 2 pride = yes }
+		ship = { type = battleship name = "RM Caio Duilio" experience = 10 historical_model = 2 }		
+		ship = { type = destroyer name = "7a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 3 }
+		ship = { type = destroyer name = "8a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 4 }		
+	}
+	navy = {	
+		name = "2a Squadra Navale"
+		base = 3972
+		location = 3972
+		ship = { type = light_cruiser name = "RM Giovanni dalle Bande Nere" experience = 10 historical_model = 6 }
+		ship = { type = light_cruiser name = "RM Bartolomeo Colleoni" experience = 10 historical_model = 6 }				
+		ship = { type = destroyer name = "10a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 6 }		
+	}	
+	navy = {	
+		name = "3a Squadra Navale"
+		base = 3972
+		location = 3972
+		ship = { type = heavy_cruiser name = "RM Trento" experience = 10 historical_model = 4 }
+		ship = { type = heavy_cruiser name = "RM Bolzano" experience = 10 historical_model = 6 }
+		ship = { type = heavy_cruiser name = "RM Trieste" experience = 10 historical_model = 4 }		
+		ship = { type = destroyer name = "11a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 6 }
+		ship = { type = destroyer name = "15a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 8 }
+		ship = { type = destroyer name = "16a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 8 }		
+	}	
+	navy = {	
+		name = "6a Squadra Navale"
+		base = 3972
+		location = 3972
+		ship = { type = heavy_cruiser name = "RM Pola" experience = 10 historical_model = 5 }		
+		ship = { type = destroyer name = "12a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 7 }		
+	}
+	navy = {	
+		name = "7a Squadra Navale"
+		base = 3972
+		location = 3972
+		ship = { type = light_cruiser name = "RM Emanuele Filiberto Duca d'Aosta" experience = 10 historical_model = 8 }
+		ship = { type = light_cruiser name = "RM Muzio Attendolo Sforza" experience = 10 historical_model = 7 }			
+		ship = { type = light_cruiser name = "RM Raimondo Montecuccolio" experience = 10 historical_model = 7 }	
+		ship = { type = destroyer name = "19a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 10 }		
+	}	
+	navy = {	
+		name = "Squadra di Taranto"
+		base = 4869
+		location = 4869
+		ship = { type = heavy_cruiser name = "RM San Giorgio" experience = 10 historical_model = 0 }
+		ship = { type = heavy_cruiser name = "RM Pisa" experience = 10 historical_model = 0 }		
+		ship = { type = light_cruiser name = "RM Libia" experience = 10 historical_model = 0 }
+		ship = { type = light_cruiser name = "RM Quarto" experience = 10 historical_model = 0 }				
+		ship = { type = light_cruiser name = "RM Taranto" experience = 10 historical_model = 0 }
+		ship = { type = light_cruiser name = "RM Bari" experience = 10 historical_model = 0 }		
+		ship = { type = destroyer name = "2a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 0 }			
+		ship = { type = transport_ship name = "Squadriglia Giorgio Orsini" experience = 10 historical_model = 0 }	
+		ship = { type = transport_ship name = "Squadriglia Vallelunga" experience = 10 historical_model = 0 }			
+	}
+
+	navy = {	
+		name = "1a Gruppo Sommergibili"
+		base = 3972
+		location = 3972
+		ship = { type = submarine name = "1a Squadriglia Sommergibili" experience = 10 historical_model = 4 }
+		ship = { type = submarine name = "2a Squadriglia Sommergibili" experience = 10 historical_model = 4 }
+	}	
+	navy = {	
+		name = "2a Gruppo Sommergibili"
+		base = 4765
+		location = 4765
+		ship = { type = submarine name = "3a Squadriglia Sommergibili" experience = 10 historical_model = 7 }
+		ship = { type = submarine name = "4a Squadriglia Sommergibili" experience = 10 historical_model = 8 }	
+	}	
+	navy = {	
+		name = "4a Gruppo Sommergibili"
+		base = 4869
+		location = 4869
+		ship = { type = submarine name = "6a Squadriglia Sommergibili" experience = 10 historical_model = 10 }		
+		ship = { type = submarine name = "7a Squadriglia Sommergibili" experience = 10 historical_model = 10 }		
+	}	
+	navy = {	
+		name = "7a Gruppo Sommergibili"
+		base = 4914
+		location = 4914
+		ship = { type = submarine name = "10a Squadriglia Sommergibili" experience = 10 historical_model = 12 }
+	}	
+	air = {
+		name = "1st Squadra Aerea"
+		base = 3900
+		location = 3900
+		wing = { type = interceptor name = "9a Divisione Caccia" experience = 10 historical_model = 0 }
+		wing = { type = cas name = "3a Gruppo di Bomb. D'Assalto 'Centauro'" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "4a Comando Bombardieri Tattici 'Drago'"
+		base = 4914
+		location = 4914
+		wing = { type = tactical_bomber name = "4a Divisione Bombardieri 'Drago'" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "Aeronautica Sardegna"
+		base = 4914
+		location = 4914
+		wing = { type = naval_bomber name = "10a Divisione Bombardieri 'Marte'" experience = 10 historical_model = 1 }
+		wing = { type = interceptor name = "2a Divisione Caccia 'Borea'" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "2nd Squadra Aerea"
+		base = 4549
+		location = 4549
+		wing = { type = interceptor name = "1a Divisione Caccia 'Aquila'" experience = 10 historical_model = 1 }
+	}
+	air = {
+		name = "3rd Comando Aerosiluranti 'Centauro'"
+		base = 4549
+		location = 4549
+		wing = { type = naval_bomber name = "3a Divisione Bombardieri 'Centauro'" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "3rd Squadra Aerea"
+		base = 5233
+		location = 5233
+		wing = { type = interceptor name = "7a Divisione Caccia" experience = 10 historical_model = 1 }
+	}
+	air = {
+		name = "5th Comando Aerosiluranti 'Eolo'"
+		base = 5233
+		location = 5233
+		wing = { type = naval_bomber name = "5a Divisione Bombardieri 'Eolo'" experience = 10 historical_model = 0 }
+	}
+}
+theatre = {
+	name = "Comando Superiore Africa"	
+	location = 5511
+	leader = 6013 # Badoglio
+	regiment = { type = hq_brigade name = "Comando Superiore Africa HQ" historical_model = 1 }
+	division= {
+		name = "7a Divisione CCNN Cirene"
+		location = 9960
+		regiment = { type = militia_brigade name = "190. Legione CC.NN. 'Pisa'" experience = 10 historical_model = 2 }
+		regiment = { type = militia_brigade name = "196. Legione CC.NN. 'Petratca'" experience = 10 historical_model = 2 }	
+		regiment = { type = militia_brigade name = "198. Legione CC.NN. 'Maremmana'" experience = 10 historical_model = 2 }	
+		regiment = { type = militia_brigade name = "219. Legione CC.NN. 'Caio Mario'" experience = 10 historical_model = 2 }	
+		
+	}
+	division= {	
+		name = "Reserva Sahariano"
+		location = 5488
+		is_reserve = yes
+		regiment = { type = militia_brigade name = "Reggimento di Ghadames" experience = 10 historical_model = 2 }
+		regiment = { type = militia_brigade name = "Reggimento di Seredeles" experience = 10 historical_model = 2 }
+		regiment = { type = super_heavy_armor_brigade name = "1. Carro Veloce Brigata" experience = 10 historical_model = 1 }		
+	}	
+	army = {
+		name = "Armata dell'Africa Orientale Italiana"
+		location = 9721
+		leader = 6004 # Amedeo d'Abruzzi
+		regiment = { type = hq_brigade name = "Armata dell'Africa Orientale Italiana HQ" historical_model = 1 }
+		corps = {
+			name = "I Corpo d'Armata dell'A.O.I."
+			location = 9749
+			regiment = { type = hq_brigade name = "I Corpo d'Armata dell'A.O.I. HQ" historical_model = 1 }
+			division= {
+				name = "26a Divisione 'Assietta'"
+				location = 9749
+				regiment = { type = infantry_brigade name = "29. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "30. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "25. Reggimento di Artiglieria" experience = 10 historical_model = 3 }
+			}
+			division= {
+				name = "30a Divisione 'Sabauda'"
+				location = 9749
+				regiment = { type = infantry_brigade name = "45. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "46. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "16. Reggimento di Artiglieria" experience = 10 historical_model = 3 }
+			}
+			division= {
+				name = "5a Divisione Alpina 'Pusteria'"
+				location = 9749
+				regiment = { type = bergsjaeger_brigade name = "7. Reggimento Alpini" experience = 10 historical_model = 4 }
+				regiment = { type = bergsjaeger_brigade name = "11. Reggimento Alpini" experience = 10 historical_model = 4 }
+				regiment = { type = engineer_brigade name = "5. Reggimento Genio" experience = 10 historical_model = 0 }
+				}
+			division= {
+				name = "4a Divisione CCNN '3 Gennaio'"
+				location = 9749
+				regiment = { type = militia_brigade name = "101. Legione CC.NN. 'Libica'" experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "104. Legione CC.NN. 'S. Santarosa'" experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "215. Legione CC.NN. 'Cimino'" experience = 10 historical_model = 2 }
+			}
+		}
+		corps = {
+			name = "II Corpo d'Armata dell'A.O.I."
+			location = 9749
+			regiment = { type = hq_brigade name = "II Corpo d'Armata dell'A.O.I. HQ" historical_model = 1 }
+			division= {
+				name = "19a Divisione 'Gavinana'"
+				location = 9749
+				regiment = { type = infantry_brigade name = "83. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "84. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "19. Reggimento di Artiglieria" experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "24a Divisione 'Gran Sasso'"
+				location = 9749
+				regiment = { type = infantry_brigade name = "13. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "14. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "18. Reggimento di Artiglieria" experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "3a Divisione CCNN '21 Aprile'"
+				location = 9749
+				regiment = { type = militia_brigade name = "230. Legione CC.NN. 'L'Aquila'" experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "252. Legione CC.NN. 'Acciaiata'" experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "263. Legione CC.NN. 'T.Gulli'" experience = 10 historical_model = 2 }
+			}
+		}
+		corps = {
+			name = "III Corpo d'Armata dell'A.O.I."
+			location = 9721
+			regiment = { type = hq_brigade name = "III Corpo d'Armata dell'A.O.I. HQ" historical_model = 1 }
+			division= {
+				name = "27a Divisione 'Sila'"
+				location = 9721
+				regiment = { type = infantry_brigade name = "19. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "20. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "55. Reggimento di Artiglieria" experience = 10 historical_model = 3 }
+			}
+			division= {
+				name = "1a Divisione CCNN '23 Marzo'"
+				location = 9721
+				regiment = { type = militia_brigade name = "135. Legione CC.NN. 'Indomito'" experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "192. Legione CC.NN. 'Francesco Ferrucci'" experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "202. Legione CC.NN. 'Cacciatori del Tevere'" experience = 10 historical_model = 2 }
+			}
+		}
+		corps = {
+			name = "IV Corpo d'Armata dell'A.O.I."
+			location = 9749
+			regiment = { type = hq_brigade name = "IV Corpo d'Armata dell'A.O.I. HQ" historical_model = 1 }
+			division= {
+				name = "5a Divisione 'Cosseria'"
+				location = 9749
+				regiment = { type = infantry_brigade name = "41. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "42. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = horse_towed_support_brigade name = "29. Reggimento di Artiglieria" experience = 10 historical_model = 4 }
+			}
+			division= {
+				name = "2a Divisione CCNN '28 Ottobre'"
+				location = 9749
+				regiment = { type = militia_brigade name = "114. Legione CC.NN. 'Garibaldina'" experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "116. Legione CC.NN. 'Alpina'" experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "180. Legione CC.NN. 'Alessandro Farnese'" experience = 10 historical_model = 2 }
+			}
+			division= {
+				name = "5a Divisione CCNN '1 Febbrai'"
+				location = 9749
+				regiment = { type = militia_brigade name = "107. Legione CC.NN. 'Caroli'" experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "128. Legione CC.NN. 'Randaccio'" experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "142. Legione CC.NN. 'Berica'" experience = 10 historical_model = 2 }
+			}
+		}
+		corps = {
+			name = "Corpo d'Armata Eritreo"
+			location = 9749
+			regiment = { type = hq_brigade name = "Corpo d'Armata Eritreo HQ" historical_model = 1 }
+			division= {
+				name = "1a Divisione Eritrea"
+				location = 9749
+				regiment = { type = militia_brigade name = "1. Misto Brigata" experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "3. Misto Brigata" experience = 10 historical_model = 2 }
+				}	
+			division= {
+				name = "2a Divisione Eritrea"
+				location = 9749
+				regiment = { type = militia_brigade name = "2. Misto Brigata" experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "4. Misto Brigata" experience = 10 historical_model = 2 }
+				}
+		}
+		corps = {
+			name = "Corpo d'Armata Libico"
+			location = 10022
+			regiment = { type = hq_brigade name = "Corpo d'Armata Libico HQ" historical_model = 1 }
+			division= {
+				name = "29a Divisione 'Piemonte'"
+				location = 10022
+				regiment = { type = infantry_brigade name = "3. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "4. Reggimento di Fanteria" experience = 10 historical_model = 2 }
+				regiment = { type = truck_towed_support_brigade name = "24. Reggimento di Artiglieria" experience = 10 historical_model = 2 }
+			}
+			division= {
+				name = "Divisione Libia"
+				location = 10003
+				regiment = { type = militia_brigade name = "1. Reggimento di Fanteria Libyan" experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "2. Reggimento di Fanteria Libyan" experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "3. Reggimento di Fanteria Libyan" experience = 10 historical_model = 2 }
+			}
+			division = {		
+				name = "Divisione Coloniale"	
+				location = 10022	
+				is_reserve = yes	
+				regiment = { type = militia_brigade name = "2. Brigata coloniale" experience = 10 historical_model = 2 }	
+				regiment = { type = militia_brigade name = "3. Brigata coloniale" experience = 10 historical_model = 2 }	
+			}					
+			division= {
+				name = "6a Divisione CCNN 'Tevere'"
+				location = 10022
+				regiment = { type = militia_brigade name = "219. Legione CC.NN. 'Vittorio Veneto'" experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "220. Legione CC.NN." experience = 10 historical_model = 2 }
+				regiment = { type = militia_brigade name = "221. Legione CC.NN. 'Italiani all'Estero'" experience = 10 historical_model = 2 }
+			}
+		}
+	}
+	navy = {	
+		name = "Comando Navale Egeo"
+		base = 5138
+		location = 5138
+		ship = { type = destroyer name = "4a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 1 }	
+		ship = { type = destroyer name = "17a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 9 }		
+		ship = { type = transport_ship name = "Squadriglia Aventino" experience = 10 historical_model = 0 }		
+		ship = { type = transport_ship name = "Squadriglia Asmara" experience = 10 historical_model = 0 }		
+	}
+	navy = {	
+		name = "Comando Navale Libico"
+		base = 5511
+		location = 5511
+		ship = { type = destroyer name = "1a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 0 }
+		ship = { type = destroyer name = "18a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 9 }		
+		ship = { type = transport_ship name = "Squadriglia Sagittario" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Squadriglia Tarquinia" experience = 10 historical_model = 0 }		
+	}
+	navy = {	
+		name = "Comando Navale Mar Rosso"
+		base = 9749
+		location = 9749
+		ship = { type = destroyer name = "3a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "5a Squadriglia Cacciatorpediniere" experience = 10 historical_model = 1 }		
+	}	
+	navy = {	
+		name = "3a Gruppo Sommergibili"
+		base = 5233
+		location = 5233
+		ship = { type = submarine name = "5a Squadriglia Sommergibili" experience = 10 historical_model = 8 }
+	}	
+	navy = {	
+		name = "5a Gruppo Sommergibili"
+		base = 5138
+		location = 5138
+		ship = { type = submarine name = "8a Squadriglia Sommergibili" experience = 10 historical_model = 11 }		
+	}	
+	navy = {	
+		name = "6a Gruppo Sommergibili"
+		base = 5511
+		location = 5511
+		ship = { type = submarine name = "9a Squadriglia Sommergibili" experience = 10 historical_model = 12 }		
+	}
+	navy = {	
+		name = "8a Gruppo Sommergibili"
+		base = 9749
+		location = 9749
+		ship = { type = submarine name = "11a Squadriglia Sommergibili" experience = 10 historical_model = 13 }	
+	}	
+	air = {
+		name = "4th Squadra Aerea"
+		base = 5445
+		location = 5445
+		wing = { type = tactical_bomber name = "35a Divisione Bombardieri" experience = 10 historical_model = 0 }
+		wing = { type = tactical_bomber name = "37a Gruppo di Bomb. Tattico" experience = 10 historical_model = 0 }
+		wing = { type = transport_plane name = "39a Divisione Trasporti" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "Aeronautica AOI"
+		base = 9749
+		location = 9749
+		wing = { type = interceptor name = "14a Divisione Caccia 'Rex'" experience = 10 historical_model = 0 }
+		wing = { type = tactical_bomber name = "13a Divisione Bombardieri 'Pegaso'" experience = 10 historical_model = 0 }
+		wing = { type = tactical_bomber name = "36a Gruppo di Bomb. Tattico" experience = 10 historical_model = 0 }
+	}
+}
+convoy_construction=
+{
+	country = ITA
+	id=
+	{
+		id=15000
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = ITA
+	id=
+	{
+		id=15001
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = ITA
+	id=
+	{
+		id=15002
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = ITA
+	id=
+	{
+		id=15003
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = ITA
+	id=
+	{
+		id=15004
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = ITA
+	id=
+	{
+		id=15005
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = ITA
+	id=
+	{
+		id=15006
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = ITA
+	id=
+	{
+		id=15007
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = ITA
+	id=
+	{
+		id=15008
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = ITA
+	id=
+	{
+		id=15009
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
+}
+military_construction = {
+	country = ITA
+	light_cruiser = {
+		name = "RM Eugenio di Savoia"
+		historical_model = 8
+	}
+	cost = 3.50
+	progress = 98
+	duration = 16
+}
+military_construction = {
+	country = ITA
+	submarine = {
+		name = "12a Squadriglia Sommergibili"
+		historical_model = 15
+	}
+	cost = 1.80
+	progress = 54
+	duration = 160
+}
+military_construction = {
+	country = ITA
+	battleship = {
+		name = "RM Conte di Cavour"
+		historical_model = 8
+	}
+	cost = 1.50
+	progress = 61
+	duration = 518
+}
+military_construction = {
+	country = ITA
+	battleship = {
+		name = "RM Giulio Cesare"
+		historical_model = 8
+	}
+	cost = 1.50
+	progress = 55
+	duration = 640
+}

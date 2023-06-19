@@ -1,0 +1,1897 @@
+# Basic Aircraft Designs and Airframes
+
+single_engine_aircraft_design = {
+
+	activate_unit = interceptor
+	
+	activate_building = air_base
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 2.50
+	}
+	
+	on_completion = no_theory
+	change = no
+	
+	difficulty = 0.5
+	
+	#common for all techs.
+	start_year = 1918
+	folder = fighter_folder
+}
+
+single_engine_airframe = {
+
+	interceptor = {
+		maximum_speed = -20
+		range = -25
+		surface_defence = 0.125
+		air_defence = 1.5
+	}
+	jet_int = {
+		surface_defence = 0.125
+		air_defence = 1.5
+	}
+	
+
+	multi_role = {
+		maximum_speed = -15
+		range = -25
+		surface_defence = 0.25
+		air_defence = 1.7
+	}
+	jet_mr = {
+		surface_defence = 0.25
+		air_defence = 2.0
+	}
+
+	cas = {
+		maximum_speed = -5
+		range = -15
+		surface_defence = 0.75
+		air_defence = 0.9
+	}
+
+	cag = {
+		maximum_speed = -5
+		range = -10
+		surface_defence = 0.75
+		air_defence = 1.125
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		single_engine_aircraft_design = 1
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { single_engine_airframe = 3 }
+		}
+	}
+	
+	research_bonus_from = {
+		aeronautic_engineering = 1.25
+		single_engine_aircraft_practical = 0.62
+		fighter_focus = 0.62
+	}
+
+	on_completion = no_theory
+	
+	difficulty = 3
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1938
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = fighter_folder
+}
+
+twin_engine_aircraft_design = {
+
+	activate_unit = tactical_bomber
+	
+	activate_building = air_base
+	
+	allow = {
+		has_global_flag = "allow_research"
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 2.50
+	}
+	
+	on_completion = no_theory
+	change = no
+	
+	difficulty = 0.5
+	
+	#common for all techs.
+	start_year = 1918
+	folder = bomber_folder
+}
+
+twin_engine_airframe = {
+
+	tactical_bomber = {
+		maximum_speed = -5
+		range = -45
+		surface_defence = 1.5
+		air_defence = 1.5
+	}
+	jet_bomber = {
+		surface_defence = 1.5
+		air_defence = 1.5
+	}
+
+	naval_bomber = {
+		maximum_speed = -5
+		range = -40
+		surface_defence = 1.5
+		air_defence = 1.5
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		twin_engine_aircraft_design = 1
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { twin_engine_airframe = 3 }
+		}
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.50
+		twin_engine_aircraft_practical = 0.62
+		tac_focus = 0.62
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 2
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1938
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = bomber_folder
+}
+
+# Aero Engine
+
+aeroengine = {
+
+	interceptor = {
+		maximum_speed = 60
+		range = -25
+		surface_defence = 0.25
+		air_defence = 1.5
+	}
+
+	multi_role = {
+		maximum_speed = 50
+		range = -25
+		surface_defence = 0.5
+		air_defence = 1.7
+	}
+
+	tactical_bomber = {
+		maximum_speed = 25
+		range = -50
+		surface_defence = 0.75
+	}
+
+	cas = {
+		maximum_speed = 25
+		range = -15
+		surface_defence = 0.25
+		air_defence = 0.9
+	}
+
+	naval_bomber = {
+		maximum_speed = 25
+		range = -50
+		surface_defence = 0.75
+	}
+
+	strategic_bomber = {
+		maximum_speed = 25
+		range = -50
+		surface_defence = 1.0
+	}
+
+	transport_plane = {
+		maximum_speed = 15
+		range = -50
+		surface_defence = 1.0
+	}
+
+	cag = {
+		maximum_speed = 25
+		range = -15
+		surface_defence = 1.5
+		air_defence = 1.125
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			twin_engine_airframe = 1
+			single_engine_airframe = 1
+		}
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { aeroengine = 3 }
+		}
+		or = {
+			and = {
+				not = { aeroengine = 1 }
+				or = {
+					twin_engine_airframe = 1
+					single_engine_airframe = 1
+				}
+			}
+			and = {
+				not = { aeroengine = 2 }
+				or = {
+					twin_engine_airframe = 2
+					single_engine_airframe = 2
+				}
+			}
+			and = {
+				not = { aeroengine = 3 }
+				or = {
+					twin_engine_airframe = 3
+					single_engine_airframe = 3
+				}
+			}
+			and = {
+				not = { aeroengine = 4 }
+				or = {
+					twin_engine_airframe = 4
+					single_engine_airframe = 4
+				}
+			}
+			and = {
+				not = { aeroengine = 5 }
+				or = {
+					twin_engine_airframe = 5
+					single_engine_airframe = 5
+				}
+			}
+			and = {
+				not = { aeroengine = 6 }
+				or = {
+					twin_engine_airframe = 6
+					single_engine_airframe = 6
+				}
+			}
+			and = {
+				not = { aeroengine = 7 }
+				or = {
+					twin_engine_airframe = 7
+					single_engine_airframe = 7
+				}
+			}
+		}
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.75
+		single_engine_aircraft_practical = 0.25
+		twin_engine_aircraft_practical = 0.25
+		four_engine_aircraft_practical = 0.25
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 4
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1939
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = fighter_folder
+}
+
+# Single Engine Components
+
+small_fueltank = {
+
+	interceptor = {
+		range = 75
+		surface_defence = -0.125
+		air_defence = -1.0
+	}
+	
+
+	multi_role = {
+		range = 100
+		surface_defence = -0.25
+		air_defence = -1.25
+	}
+
+	cas = {
+		range = 45
+		surface_defence = -0.75
+		air_defence = -0.625
+	}
+
+	cag = {
+		range = 45
+		surface_defence = -0.75
+		air_defence = -0.75
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		single_engine_airframe = 1
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { small_fueltank = 3 }
+		}
+		or = {
+			and = {
+				not = { small_fueltank = 1 }
+				single_engine_airframe = 1
+			}
+			and = {
+				not = { small_fueltank = 2 }
+				single_engine_airframe = 2
+			}
+			and = {
+				not = { small_fueltank = 3 }
+				single_engine_airframe = 3
+			}
+			and = {
+				not = { small_fueltank = 4 }
+				single_engine_airframe = 4
+			}
+			and = {
+				not = { small_fueltank = 5 }
+				single_engine_airframe = 5
+			}
+			and = {
+				not = { small_fueltank = 6 }
+				single_engine_airframe = 6
+			}
+			and = {
+				not = { small_fueltank = 7 }
+				single_engine_airframe = 7
+			}
+		}
+	}
+	
+	research_bonus_from = {
+		aeronautic_engineering = 1.50
+		single_engine_aircraft_practical = 0.50
+		fighter_focus = 0.50
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 3
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1939
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = fighter_folder
+}
+
+single_engine_aircraft_armament = {
+
+	interceptor = {
+		maximum_speed = -10
+		range = -25
+		air_attack = 2.00
+		soft_attack = 0.25
+	}
+	jet_int = {
+		air_attack = 2.00
+		soft_attack = 0.25
+	}
+
+	multi_role = {
+		maximum_speed = -10
+		range = -25
+		air_attack = 1.75
+		soft_attack = 0.5
+	}
+	jet_mr = {
+		air_attack = 1.75
+		soft_attack = 0.5
+	}
+
+	cas = {
+		maximum_speed = -10
+		range = -10
+		soft_attack = 0.25
+		hard_attack = 0.5
+	}
+
+	cag = {
+		maximum_speed = -5
+		range = -10
+		air_attack = 1.50
+		soft_attack = 0.125
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		single_engine_airframe = 1
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { single_engine_aircraft_armament = 3 }
+		}
+		or = {
+			and = {
+				not = { single_engine_aircraft_armament = 1 }
+				single_engine_airframe = 1
+			}
+			and = {
+				not = { single_engine_aircraft_armament = 2 }
+				single_engine_airframe = 2
+			}
+			and = {
+				not = { single_engine_aircraft_armament = 3 }
+				single_engine_airframe = 3
+			}
+			and = {
+				not = { single_engine_aircraft_armament = 4 }
+				single_engine_airframe = 4
+			}
+			and = {
+				not = { single_engine_aircraft_armament = 5 }
+				single_engine_airframe = 5
+			}
+			and = {
+				not = { single_engine_aircraft_armament = 6 }
+				single_engine_airframe = 6
+			}
+			and = {
+				not = { single_engine_aircraft_armament = 7 }
+				single_engine_airframe = 7
+			}
+		}
+	}
+	
+	research_bonus_from = {
+		aeronautic_engineering = 1.50
+		single_engine_aircraft_practical = 0.50
+		fighter_focus = 0.50
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 3
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1939
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = fighter_folder
+}
+
+small_bomb = {
+
+	interceptor = {
+		maximum_speed = -20
+		range = -25
+		soft_attack = 0.25
+		hard_attack = 0.125
+	}
+
+	multi_role = {
+		maximum_speed = -15
+		range = -25
+		soft_attack = 0.5
+		hard_attack = 0.25
+	}
+
+	cas = {
+		maximum_speed = -10
+		range = -20
+		hard_attack = 0.75
+		soft_attack = 0.25
+		sea_attack = 1.0
+		sub_attack = 1.0
+	}
+
+	cag = {
+		maximum_speed = -5
+		range = -10
+		hard_attack = 0.125
+		soft_attack = 0.125
+		sea_attack = 1.0
+		sub_attack = 1.0
+	}
+	
+	jet_bomber = {
+		soft_attack = 1.0
+		hard_attack = 0.5
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		single_engine_airframe = 1
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { small_bomb = 3 }
+		}
+		or = {
+			and = {
+				not = { small_bomb = 1 }
+				single_engine_airframe = 1
+			}
+			and = {
+				not = { small_bomb = 2 }
+				single_engine_airframe = 2
+			}
+			and = {
+				not = { small_bomb = 3 }
+				single_engine_airframe = 3
+			}
+			and = {
+				not = { small_bomb = 4 }
+				single_engine_airframe = 4
+			}
+			and = {
+				not = { small_bomb = 5 }
+				single_engine_airframe = 5
+			}
+			and = {
+				not = { small_bomb = 6 }
+				single_engine_airframe = 6
+			}
+			and = {
+				not = { small_bomb = 7 }
+				single_engine_airframe = 7
+			}
+		}
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.50
+		single_engine_aircraft_practical = 0.50
+		cas_focus = 0.50
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 3
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1939
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = fighter_folder
+}
+
+# Advanced/Specialized Single Engine Aircraft Designs
+
+cas_development = {
+
+	activate_unit = cas
+
+	ground_attack = {
+		efficiency = 0.25
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		aeroengine = 1
+		small_fueltank = 1
+		single_engine_airframe = 1
+		single_engine_aircraft_armament = 1
+		small_bomb = 1
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.50
+		single_engine_aircraft_practical = 0.50
+		cas_focus = 0.50
+	}
+
+	
+	on_completion = no_theory
+	change = no
+	
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1936
+	folder = fighter_folder
+}
+
+multi_role_fighter_development = {
+
+	activate_unit = multi_role
+	
+	interdiction = {
+		efficiency = 0.25
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		aeroengine = 1
+		small_fueltank = 1
+		single_engine_airframe = 1
+		single_engine_aircraft_armament = 1
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.50
+		single_engine_aircraft_practical = 0.50
+		fighter_focus = 0.50
+	}
+	
+	on_completion = no_theory
+	change = no
+	
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1937
+	folder = fighter_folder
+}
+
+# Twin Engine Components
+
+medium_fueltank = {
+
+	tactical_bomber = {
+		range = 125
+		surface_defence = -0.75
+		air_defence = -0.75
+	}
+
+	naval_bomber = {
+		range = 125
+		surface_defence = -0.75
+		air_defence = -0.75
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		twin_engine_airframe = 1
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { medium_fueltank = 3 }
+		}
+		or = {
+			and = {
+				not = { medium_fueltank = 1 }
+				twin_engine_airframe = 1
+			}
+			and = {
+				not = { medium_fueltank = 2 }
+				twin_engine_airframe = 2
+			}
+			and = {
+				not = { medium_fueltank = 3 }
+				twin_engine_airframe = 3
+			}
+			and = {
+				not = { medium_fueltank = 4 }
+				twin_engine_airframe = 4
+			}
+			and = {
+				not = { medium_fueltank = 5 }
+				twin_engine_airframe = 5
+			}
+			and = {
+				not = { medium_fueltank = 6 }
+				twin_engine_airframe = 6
+			}
+			and = {
+				not = { medium_fueltank = 7 }
+				twin_engine_airframe = 7
+			}
+		}
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.50
+		twin_engine_aircraft_practical = 0.50
+		tac_focus = 0.50
+	}
+
+	
+	on_completion = no_theory
+	
+	difficulty = 2
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1939
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = bomber_folder
+}
+
+twin_engine_aircraft_armament = {
+
+	naval_bomber = {
+		maximum_speed = -5
+		range = -30
+		air_defence = 0.75
+		soft_attack = 0.25
+	}	
+
+	tactical_bomber = {
+		maximum_speed = -5
+		range = -35
+		air_defence = 0.75
+		soft_attack = 0.75
+	}
+	jet_bomber = {
+		air_defence = 0.75
+		soft_attack = 0.75
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		twin_engine_airframe = 1
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { twin_engine_aircraft_armament = 3 }
+		}
+		or = {
+			and = {
+				not = { twin_engine_aircraft_armament = 1 }
+				twin_engine_airframe = 1
+			}
+			and = {
+				not = { twin_engine_aircraft_armament = 2 }
+				twin_engine_airframe = 2
+			}
+			and = {
+				not = { twin_engine_aircraft_armament = 3 }
+				twin_engine_airframe = 3
+			}
+			and = {
+				not = { twin_engine_aircraft_armament = 4 }
+				twin_engine_airframe = 4
+			}
+			and = {
+				not = { twin_engine_aircraft_armament = 5 }
+				twin_engine_airframe = 5
+			}
+			and = {
+				not = { twin_engine_aircraft_armament = 6 }
+				twin_engine_airframe = 6
+			}
+			and = {
+				not = { twin_engine_aircraft_armament = 7 }
+				twin_engine_airframe = 7
+			}
+		}
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.50
+		tac_focus = 0.50
+		twin_engine_aircraft_practical = 0.50
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 2
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1939
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = bomber_folder
+}
+
+medium_bomb = {
+
+	naval_bomber = {
+		maximum_speed = -15
+		range = -40
+		hard_attack = 0.5
+		soft_attack = 0.25
+		sea_attack = 1.5
+		sub_attack = 1.5
+	}
+
+	tactical_bomber = {
+		maximum_speed = -15
+		range = -45
+		soft_attack = 1.5
+		hard_attack = 0.5
+		strategic_attack = 0.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		twin_engine_airframe = 1
+		small_bomb = 1
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { medium_bomb = 3 }
+		}
+		or = {
+			and = {
+				not = { medium_bomb = 1 }
+				twin_engine_airframe = 1
+			}
+			and = {
+				not = { medium_bomb = 2 }
+				twin_engine_airframe = 2
+			}
+			and = {
+				not = { medium_bomb = 3 }
+				twin_engine_airframe = 3
+			}
+			and = {
+				not = { medium_bomb = 4 }
+				twin_engine_airframe = 4
+			}
+			and = {
+				not = { medium_bomb = 5 }
+				twin_engine_airframe = 5
+			}
+			and = {
+				not = { medium_bomb = 6 }
+				twin_engine_airframe = 6
+			}
+			and = {
+				not = { medium_bomb = 7 }
+				twin_engine_airframe = 7
+			}
+		}
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.50
+		twin_engine_aircraft_practical = 0.50
+		tac_focus = 0.50
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 2
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1939
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = bomber_folder
+}
+
+# Advanced/Specialized Twin Engine Aircraft Designs
+
+nav_development = {
+	
+	activate_unit = naval_bomber
+
+	port_strike = {
+		efficiency = 0.25
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		aeroengine = 1
+		medium_fueltank = 1
+		twin_engine_airframe = 1
+		twin_engine_aircraft_armament = 1
+		small_bomb = 1
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.50
+		twin_engine_aircraft_practical = 0.50
+		nav_focus = 0.50
+	}
+	
+	on_completion = no_theory
+	change = no
+	
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1938
+	folder = bomber_folder
+}
+
+# Four Engine Components
+
+four_engine_airframe = {
+
+	activate_unit = transport_plane 
+
+	transport_plane = {
+		maximum_speed = -5
+		range = -25
+		surface_defence = 2
+		air_defence = 0.5
+	}
+
+	strategic_bomber = {
+		maximum_speed = -10
+		range = -45
+		surface_defence = 2
+		air_defence = 1.5
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		twin_engine_airframe = 1
+		aeroengine = 1
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { four_engine_airframe = 3 }
+		}
+		or = {
+			and = {
+				not = { four_engine_airframe = 1 }
+				aeroengine = 1
+			}
+			and = {
+				not = { four_engine_airframe = 2 }
+				aeroengine = 2
+			}
+			and = {
+				not = { four_engine_airframe = 3 }
+				aeroengine = 3
+			}
+			and = {
+				not = { four_engine_airframe = 4 }
+				aeroengine = 4
+			}
+			and = {
+				not = { four_engine_airframe = 5 }
+				aeroengine = 5
+			}
+			and = {
+				not = { four_engine_airframe = 6 }
+				aeroengine = 6
+			}
+			and = {
+				not = { four_engine_airframe = 7 }
+				aeroengine = 7
+			}
+		}
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.50
+		four_engine_aircraft_practical = 0.50
+		strategic_air_focus = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 2
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1939
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = bomber_folder
+}
+
+large_fueltank = {
+
+	transport_plane = {
+		range = 75
+		surface_defence = -1
+		air_defence = -0.25
+	}
+
+	strategic_bomber = {
+		range = 150
+		surface_defence = -1
+		air_defence = -0.75
+	}
+	
+	allow = {
+		has_global_flag = "allow_research"
+		medium_fueltank = 1
+		four_engine_airframe = 1
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { large_fueltank = 3 }
+		}
+		or = {
+			and = {
+				not = { large_fueltank = 1 }
+				four_engine_airframe = 1
+			}
+			and = {
+				not = { large_fueltank = 2 }
+				four_engine_airframe = 2
+			}
+			and = {
+				not = { large_fueltank = 3 }
+				four_engine_airframe = 3
+			}
+			and = {
+				not = { large_fueltank = 4 }
+				four_engine_airframe = 4
+			}
+			and = {
+				not = { large_fueltank = 5 }
+				four_engine_airframe = 5
+			}
+			and = {
+				not = { large_fueltank = 6 }
+				four_engine_airframe = 6
+			}
+			and = {
+				not = { large_fueltank = 7 }
+				four_engine_airframe = 7
+			}
+		}
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.50
+		four_engine_aircraft_practical = 0.50
+		strategic_air_focus = 0.50
+	}
+
+	on_completion = no_theory
+	
+	difficulty = 2
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1939
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = bomber_folder
+}
+
+cargo_hold = {
+
+	transport_plane = {
+		maximum_speed = -5
+		range = -25
+		transport_capability = 1
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+	 	four_engine_airframe = 1
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { cargo_hold = 3 }
+		}
+		or = {
+			and = {
+				not = { cargo_hold = 1 }
+				four_engine_airframe = 1
+			}
+			and = {
+				not = { cargo_hold = 2 }
+				four_engine_airframe = 2
+			}
+			and = {
+				not = { cargo_hold = 3 }
+				four_engine_airframe = 3
+			}
+			and = {
+				not = { cargo_hold = 4 }
+				four_engine_airframe = 4
+			}
+			and = {
+				not = { cargo_hold = 5 }
+				four_engine_airframe = 5
+			}
+			and = {
+				not = { cargo_hold = 6 }
+				four_engine_airframe = 6
+			}
+			and = {
+				not = { cargo_hold = 7 }
+				four_engine_airframe = 7
+			}
+		}
+	}
+
+	research_bonus_from = {
+		four_engine_aircraft_practical = 0.75
+		strategic_air_focus = 1.75
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1938
+	first_offset = 1940
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = bomber_folder
+}
+
+# Heavy Bomber
+
+basic_strategic_bomber = {
+
+	activate_unit = strategic_bomber 
+	
+	installation_strike = {
+		efficiency = 0.25
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		aeroengine = 1
+		four_engine_airframe = 1
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.50
+		four_engine_aircraft_practical = 0.50
+		strategic_air_focus = 0.50
+	}
+
+	on_completion = no_theory
+	change = no
+	
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1936
+	folder = bomber_folder
+}
+
+# Heavy Bomber Components
+
+strategic_bomber_armament = {
+
+	strategic_bomber = {
+		maximum_speed = -5
+		range = -10
+		air_defence = 0.75		# Mainly to keep the fighters at bay.
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		basic_strategic_bomber = 1
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { strategic_bomber_armament = 3 }
+		}
+		or = {
+			and = {
+				not = { strategic_bomber_armament = 1 }
+				four_engine_airframe = 1
+			}
+			and = {
+				not = { strategic_bomber_armament = 2 }
+				four_engine_airframe = 2
+			}
+			and = {
+				not = { strategic_bomber_armament = 3 }
+				four_engine_airframe = 3
+			}
+			and = {
+				not = { strategic_bomber_armament = 4 }
+				four_engine_airframe = 4
+			}
+			and = {
+				not = { strategic_bomber_armament = 5 }
+				four_engine_airframe = 5
+			}
+			and = {
+				not = { strategic_bomber_armament = 6 }
+				four_engine_airframe = 6
+			}
+			and = {
+				not = { strategic_bomber_armament = 7 }
+				four_engine_airframe = 7
+			}
+		}
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.50
+		strategic_air_focus = 0.50
+		four_engine_aircraft_practical = 0.50
+	}
+
+	
+	on_completion = no_theory
+	
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1939
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = bomber_folder
+}
+
+large_bomb = {
+
+	strategic_bomber= {
+		maximum_speed = -10
+		range = -45
+		soft_attack = 0.5
+		hard_attack = 0.25
+		strategic_attack = 2.00 
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		basic_strategic_bomber = 1
+		medium_bomb = 1
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { large_bomb = 3 }
+		}
+		or = {
+			and = {
+				not = { large_bomb = 1 }
+				four_engine_airframe = 1
+			}
+			and = {
+				not = { large_bomb = 2 }
+				four_engine_airframe = 2
+			}
+			and = {
+				not = { large_bomb = 3 }
+				four_engine_airframe = 3
+			}
+			and = {
+				not = { large_bomb = 4 }
+				four_engine_airframe = 4
+			}
+			and = {
+				not = { large_bomb = 5 }
+				four_engine_airframe = 5
+			}
+			and = {
+				not = { large_bomb = 6 }
+				four_engine_airframe = 6
+			}
+			and = {
+				not = { large_bomb = 7 }
+				four_engine_airframe = 7
+			}
+		}
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.50
+		four_engine_aircraft_practical = 0.50
+		strategic_air_focus = 0.50
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1936
+	first_offset = 1939
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = bomber_folder
+}
+
+# Advanced Aircraft Design
+
+advanced_aircraft_design = {
+
+	#This Tech has no direct effect, but is needed for most of the other techs.
+
+	research_bonus_from = {
+		aeronautic_engineering = 2.50
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		radar = 1
+		aeroengine = 2
+		or = {
+			single_engine_airframe = 3
+			twin_engine_airframe = 3
+			four_engine_airframe = 3
+		}
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 2
+	
+	#common for all techs.
+	start_year = 1940
+	folder = fighter_folder
+}
+
+# Specialized Equipment
+
+air_launched_torpedo = {
+
+	tactical_bomber = {
+		sea_attack = 1.0
+		sub_attack = 1.0
+	}
+
+	naval_bomber = {
+		range = -15
+		sea_attack = 1.5
+		sub_attack = 1.5
+	}
+	
+	cag = {
+		maximum_speed = -5
+		range = -15
+		sea_attack = 1.0
+		sub_attack = 0.5
+	}
+	
+	cas = {
+		sea_attack = 1.0
+		sub_attack = 0.5
+	}
+	
+	multi_role = {
+		sea_attack = 0.3
+		sub_attack = 0.2
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		nav_development = 1
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { air_launched_torpedo = 3 }
+		}
+		or = {
+			and = {
+				not = { air_launched_torpedo = 1 }
+				or = {
+					twin_engine_airframe = 1
+					single_engine_airframe = 1
+				}
+			}
+			and = {
+				not = { air_launched_torpedo = 2 }
+				or = {
+					twin_engine_airframe = 2
+					single_engine_airframe = 2
+				}
+			}
+			and = {
+				not = { air_launched_torpedo = 3 }
+				or = {
+					twin_engine_airframe = 3
+					single_engine_airframe = 3
+				}
+			}
+			and = {
+				not = { air_launched_torpedo = 4 }
+				or = {
+					twin_engine_airframe = 4
+					single_engine_airframe = 4
+				}
+			}
+			and = {
+				not = { air_launched_torpedo = 5 }
+				or = {
+					twin_engine_airframe = 5
+					single_engine_airframe = 5
+				}
+			}
+			and = {
+				not = { air_launched_torpedo = 6 }
+				or = {
+					twin_engine_airframe = 6
+					single_engine_airframe = 6
+				}
+			}
+			and = {
+				not = { air_launched_torpedo = 7 }
+				or = {
+					twin_engine_airframe = 7
+					single_engine_airframe = 7
+				}
+			}
+		}
+	}
+
+	research_bonus_from = {
+		submarine_engineering = 0.50
+		naval_engineering = 0.50
+		aeronautic_engineering = 1.25
+		twin_engine_aircraft_practical = 0.25
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 1
+	
+	#common for all techs.
+	start_year = 1938
+	first_offset = 1940
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = bomber_folder
+}
+
+drop_tanks = {
+	
+	interceptor = {
+		range = 300
+	}
+
+	multi_role = {
+		range = 300
+	}
+
+	cas = {
+		range = 300
+	}
+
+	cag = {
+		range = 200
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		advanced_aircraft_design = 1
+		small_fueltank = 3
+		or = {
+			and = {
+				not = { drop_tanks = 1 }
+				single_engine_airframe = 1
+			}
+			and = {
+				not = { drop_tanks = 2 }
+				single_engine_airframe = 2
+			}
+			and = {
+				not = { drop_tanks = 3 }
+				single_engine_airframe = 3
+			}
+			and = {
+				not = { drop_tanks = 4 }
+				single_engine_airframe = 4
+			}
+			and = {
+				not = { drop_tanks = 5 }
+				single_engine_airframe = 5
+			}
+			and = {
+				not = { drop_tanks = 6 }
+				single_engine_airframe = 6
+			}
+			and = {
+				not = { drop_tanks = 7 }
+				single_engine_airframe = 7
+			}
+		}
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 2.00
+		single_engine_aircraft_practical = 0.50
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 3
+	
+	#common for all techs.
+	start_year = 1941
+	folder = fighter_folder
+}
+
+small_airsearch_radar = {
+
+	interceptor = {
+		air_detection = 0.50
+	}
+	jet_int = {
+		air_detection = 0.50
+	}
+
+	multi_role = {
+		air_detection = 1.00
+	}
+	jet_mr = {
+		air_detection = 1.00
+	}
+
+	cas = {
+		air_detection = 0.5
+	}
+
+	cag = {
+		air_detection = 0.5
+	}
+
+	research_bonus_from = {
+		electornicegineering_theory = 1.75
+		electornicegineering_practical = 0.75
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		radar = 2
+		advanced_aircraft_design = 1
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 6
+	
+	#common for all techs.
+	start_year = 1940
+	first_offset = 1941
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = fighter_folder
+}
+
+medium_airsearch_radar = {
+
+	naval_bomber = {
+		air_detection = 0.5
+	}
+
+	tactical_bomber = {
+		air_detection = 0.5
+	}
+	jet_bomber = {
+		air_detection = 0.5
+	}
+
+	research_bonus_from = {
+		electornicegineering_theory = 1.75
+		electornicegineering_practical = 0.75
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		radar = 2
+		advanced_aircraft_design = 1
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 6
+	
+	#common for all techs.
+	start_year = 1940
+	first_offset = 1941
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = bomber_folder
+}
+
+large_airsearch_radar = {
+
+	strategic_bomber = {
+		air_detection = 0.5
+	}
+
+	transport_plane = {
+		air_detection = 0.5
+	}
+
+	research_bonus_from = {
+		electornicegineering_theory = 1.75
+		electornicegineering_practical = 0.75
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		radar = 2
+		advanced_aircraft_design = 1
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 6
+	
+	#common for all techs.
+	start_year = 1940
+	first_offset = 1941
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = bomber_folder
+}
+
+small_navagation_radar = {
+
+	interceptor = {
+		surface_detection = 0.25
+	}
+	jet_int = {
+		surface_detection = 0.25
+	}	
+
+	multi_role = {
+		surface_detection = 0.5
+	}
+	jet_mr = {
+		surface_detection = 0.5
+	}
+
+	cas = {
+		surface_detection = 0.5
+	}
+
+	cag = {
+		surface_detection = 2.0
+	}
+
+	research_bonus_from = {
+		electornicegineering_theory = 1.75
+		electornicegineering_practical = 0.75
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		small_airsearch_radar = 1
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 6
+	
+	#common for all techs.
+	start_year = 1940
+	first_offset = 1941
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = fighter_folder
+}
+
+medium_navagation_radar = {
+
+	naval_bomber = {
+		surface_detection = 2.5
+	}
+	tactical_bomber = {
+		surface_detection = 1.5
+	}
+	jet_bomber = {
+		surface_detection = 1.5
+	}
+
+	research_bonus_from = {
+		electornicegineering_theory = 1.75
+		electornicegineering_practical = 0.75
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		medium_airsearch_radar = 1
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 6
+	
+	#common for all techs.
+	start_year = 1940
+	first_offset = 1941
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = bomber_folder
+}
+
+large_navagation_radar = {
+
+	strategic_bomber = {
+		surface_detection = 1.0
+	}
+	
+	research_bonus_from = {
+		electornicegineering_theory = 1.75
+		electornicegineering_practical = 0.75
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		large_airsearch_radar = 1
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 6
+	
+	#common for all techs.
+	start_year = 1940
+	first_offset = 1941
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = bomber_folder
+}
+
+# Rocket Technology
+
+rocket_interceptor_tech = {
+
+	activate_unit = rocket_interceptor
+
+	air_intercept = {
+		efficiency = 0.1
+	}
+
+	research_bonus_from = {
+		rocket_science = 2.00
+		rocket_practical = 0.50
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		small_fueltank = 3
+		advanced_aircraft_design = 1
+		single_engine_aircraft_armament = 3
+		rocket_engine = 1
+	}
+
+	on_completion = no_theory
+	change = no
+	
+	difficulty = 4
+	start_year = 1941
+	folder = fighter_folder
+}
+
+jet_engine = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		advanced_aircraft_design = 1
+		theorical_jet_engine = 1
+	}
+
+	research_bonus_from = {
+		jetengine_theory = 2.00
+		jetengine_practical = 0.50
+	}
+	
+	on_completion = no_theory
+	
+	difficulty = 10
+	
+	start_year = 1942
+	folder = fighter_folder
+}	
+
+# Escort Fighters
+
+escort_fighter_development = {
+
+	naval_bomber = {
+		build_cost_ic = 2.50
+		range = -200
+		air_defence = 3.00
+		air_attack = 1.00
+	}
+
+	tactical_bomber = {
+		build_cost_ic = 2.00
+		range = -100
+		air_defence = 3.00
+		air_attack = 1.00
+	}
+
+	strategic_bomber = {
+		build_cost_ic = 4.00
+		range = -400
+		air_defence = 3.00
+		air_attack = 0.00
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		multi_role_fighter_development = 1
+		twin_engine_aircraft_design = 1
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.75
+		single_engine_aircraft_practical = 0.62
+		fighter_focus = 0.62
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 4
+	
+	#common for all techs.
+	start_year = 1938
+	folder = fighter_folder
+}
+
+escort_fighter_armament = {
+
+	naval_bomber = {
+		air_defence = 1.00
+	}
+
+	tactical_bomber = {
+		air_defence = 1.00
+	}
+
+	strategic_bomber = {
+		air_defence = 2.00
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		escort_fighter_development = 1
+		or = {
+			has_country_flag = "advanced_aircraft_design"
+			not = { escort_fighter_armament = 3 }
+		}
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.75
+		single_engine_aircraft_practical = 0.62
+		fighter_focus = 0.62
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+	
+	#common for all techs.
+	start_year = 1938
+	first_offset = 1939
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = fighter_folder
+}
+
+escort_fighter_drop_tanks = {
+
+	naval_bomber = {
+		range = 200
+	}
+
+	tactical_bomber = {
+		range = 100
+	}
+
+	strategic_bomber = {
+		range = 200
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		escort_fighter_development = 1
+		drop_tanks = 1
+	}
+
+	research_bonus_from = {
+		aeronautic_engineering = 1.75
+		single_engine_aircraft_practical = 0.75
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 4
+	
+	#common for all techs.
+	start_year = 1941
+	folder = fighter_folder
+
+}

@@ -1,0 +1,820 @@
+horse_towed_support_brigade_tech = {
+	
+	activate_unit = horse_towed_support_brigade
+
+	allow = {
+		has_global_flag = "allow_research"
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 1.50
+		artillery_practical = 0.50	# You would need to trade for this because you can't really have any Artillery Practical before reseraching this...
+		grand_battleplan_theory = 0.50
+	}
+	
+	change = no
+	on_completion = no_theory
+
+	difficulty = 3
+
+	start_year = 1918
+	folder = infantry_folder
+}
+
+truck_towed_support_brigade_tech = {
+
+	activate_unit = truck_towed_support_brigade
+
+	allow = {
+		has_global_flag = "allow_research"
+		horse_towed_support_brigade_tech = 1
+		truck_engine = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 1.50
+		mobile_practical = 0.50
+		superior_firepower_theory = 0.50
+	}
+	
+	change = no
+	on_completion = no_theory
+
+	difficulty = 5
+
+	start_year = 1936
+	folder = armour_folder
+}
+
+artillery_activation = {
+
+	horse_towed_support_brigade = {
+		build_cost_ic = 2.00
+		supply_consumption = 0.25
+		defensiveness = 1.0
+		toughness = 0.50
+		soft_attack = 0.5
+	}
+	
+	truck_towed_support_brigade = {
+		build_cost_ic = 4.00
+		supply_consumption = 0.5
+		defensiveness = 1.0
+		toughness = 0.50
+		soft_attack = 0.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		horse_towed_support_brigade_tech = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 1.25
+		artillery_practical = 0.75
+		grand_battleplan_theory = 0.25
+		human_wave_theory = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+
+	start_year = 1918
+	folder = infantry_folder
+}
+
+artillery = {
+
+	horse_towed_support_brigade = {
+		defensiveness = 0.5
+		toughness = 0.25
+		soft_attack = 0.25
+	}
+	
+	truck_towed_support_brigade = {
+		defensiveness = 0.5
+		toughness = 0.25
+		soft_attack = 0.25
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		artillery_activation = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 1.25
+		artillery_practical = 0.75
+		grand_battleplan_theory = 0.25
+		human_wave_theory = 0.25
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+
+	start_year = 1918
+	first_offset = 1932
+	additional_offset = 2
+	max_level = 20
+	folder = infantry_folder
+}
+
+anti_tank_activation = {
+
+	horse_towed_support_brigade = {
+		build_cost_ic = 1.00
+		supply_consumption = 0.125
+		defensiveness = 0.5
+		hard_attack = 1.5
+		ap_attack = 2
+	}
+	
+	truck_towed_support_brigade = {
+		build_cost_ic = 2.00
+		supply_consumption = 0.25
+		defensiveness = 0.5
+		hard_attack = 1.5
+		ap_attack = 2
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		horse_towed_support_brigade_tech = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 1.50
+		artillery_practical = 0.50
+		spearhead_theory = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+
+	start_year = 1918
+	folder = infantry_folder
+}
+
+anti_tank = {
+
+	horse_towed_support_brigade = {
+		defensiveness = 0.25
+		hard_attack = 0.75
+		ap_attack = 2
+	}
+	
+	truck_towed_support_brigade = {
+		defensiveness = 0.25
+		hard_attack = 0.75
+		ap_attack = 2
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		anti_tank_activation = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 1.50
+		artillery_practical = 0.50
+		spearhead_theory = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+
+	start_year = 1934
+	first_offset = 1936
+	additional_offset = 2
+	max_level = 20
+	folder = infantry_folder
+}
+
+anti_air_activation = {
+
+	horse_towed_support_brigade = {
+		build_cost_ic = 1.00
+		supply_consumption = 0.125
+		defensiveness = 0.25
+		soft_attack = 0.25
+		hard_attack = 0.5
+		air_defence = 1.25
+		air_attack = 1.0
+	}
+	
+	truck_towed_support_brigade = {
+		build_cost_ic = 2.00
+		supply_consumption = 0.25
+		defensiveness = 0.25
+		soft_attack = 0.25
+		hard_attack = 0.5
+		air_defence = 1.25
+		air_attack = 1.0
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		horse_towed_support_brigade_tech = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 1.50
+		artillery_practical = 0.50
+		superior_firepower_theory = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+
+	start_year = 1918
+	folder = infantry_folder
+}
+
+anti_air_guns = {
+
+	horse_towed_support_brigade = {
+		defensiveness = 0.5
+		hard_attack = 0.25
+		air_defence = 0.5
+		air_attack = 0.25
+	}
+	
+	truck_towed_support_brigade = {
+		defensiveness = 0.5
+		hard_attack = 0.25
+		air_defence = 0.5
+		air_attack = 0.25
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		anti_air_activation = 1
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 1.50
+		artillery_practical = 0.50
+		superior_firepower_theory = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 3
+
+	start_year = 1918
+	first_offset = 1936
+	additional_offset = 2
+	max_level = 20
+	folder = infantry_folder
+}
+
+rocket_artillery_activation = {
+
+	horse_towed_support_brigade = {
+		build_cost_ic = 1.00
+		supply_consumption = 1.0
+		defensiveness = 0.5
+		toughness = 0.50
+		soft_attack = 0.5
+	}
+	
+	truck_towed_support_brigade = {
+		build_cost_ic = 2.00
+		supply_consumption = 2.0
+		defensiveness = 0.5
+		toughness = 0.50
+		soft_attack = 2.0
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		rocket_tests = 1
+		artillery_activation = 1
+	}
+
+	research_bonus_from = {
+		rocket_science = 2.00
+		artillery_practical = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 5
+	start_year = 1939
+	folder = infantry_folder
+}
+	
+rocket_artillery = {
+
+	horse_towed_support_brigade = {
+		defensiveness = 0.25
+		toughness = 0.25
+		soft_attack = 1.0
+	}
+	
+	truck_towed_support_brigade = {
+		defensiveness = 0.25
+		toughness = 0.25
+		soft_attack = 1.0
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		rocket_artillery_activation = 1
+	}
+	
+	research_bonus_from = {
+		rocket_science = 2.00
+		artillery_practical = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 5
+
+	start_year = 1940
+	first_offset = 1942
+	additional_offset = 2
+	max_level = 20
+	folder = infantry_folder
+}
+
+self_propelled_support_brigade_tech = {
+
+	activate_unit = self_propelled_support_brigade
+
+	allow = {
+		has_global_flag = "allow_research"
+		horse_towed_support_brigade_tech = 1
+		or = {
+			lighttank_brigade = 1
+			tank_brigade = 1
+		}
+	}
+	
+	research_bonus_from = {
+		artillery_theory = 1.50
+		armour_practical = 0.50
+		spearhead_theory = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 7
+
+	start_year = 1938
+	folder = armour_folder
+}
+
+armored_car_activation = {
+	
+	truck_towed_support_brigade = {
+		build_cost_ic = 1.00
+		supply_consumption = 0.5
+		fuel_consumption = 0.25
+		soft_attack = 0.50
+		hard_attack = 0.25
+		default_organisation = 10
+		armor_value = 0.5
+	}
+	
+	self_propelled_support_brigade = {
+		build_cost_ic = 2.00
+		supply_consumption = 0.75
+		fuel_consumption = 0.25
+		soft_attack = 0.50
+		hard_attack = 0.25
+		default_organisation = 10
+		armor_value = 0.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		or = {
+			truck_towed_support_brigade_tech = 1
+			self_propelled_support_brigade_tech = 1
+		}
+	}
+
+	research_bonus_from = {
+		automotive_theory = 1.50
+		mobile_practical = 0.50
+		spearhead_theory = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 4
+	start_year = 1918
+	folder = armour_folder
+}
+
+armored_car = {
+	
+	truck_towed_support_brigade = {
+		soft_attack = 0.25
+		default_organisation = 5
+	}
+	
+	self_propelled_support_brigade = {
+		soft_attack = 0.25
+		default_organisation = 5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		armored_car_activation = 1
+	}
+
+	research_bonus_from = {
+		automotive_theory = 1.25
+		armour_practical = 0.38
+		mobile_practical = 0.38
+		spearhead_theory = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 4
+	start_year = 1918
+	first_offset = 1932
+	additional_offset = 2
+	max_level = 20
+	folder = armour_folder
+}
+
+sp_artillery_activation = {
+
+	self_propelled_support_brigade = {
+		build_cost_ic = 5.00
+		supply_consumption = 0.5
+		fuel_consumption = 0.5
+		defensiveness = 1.5
+		toughness = 1.5
+		soft_attack = 1.0
+		armor_value = 1
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		self_propelled_support_brigade_tech = 1
+		artillery = 5
+		lighttank_engine = 3
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 1.25
+		armour_practical = 0.38
+		artillery_practical = 0.38
+		spearhead_theory = 0.50
+	}
+	
+	change = no
+	on_completion = no_theory
+
+	difficulty = 5
+
+	start_year = 1939
+	folder = armour_folder
+}
+
+sp_artillery = {
+
+	self_propelled_support_brigade = {
+		defensiveness = 0.75
+		toughness = 0.75
+		soft_attack = 0.5
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		sp_artillery_activation = 1
+		or = {
+			and = {
+				not = { sp_artillery = 1 }	# '39
+				artillery = 5
+				tank_armour = 2
+			}
+			and = {
+				not = { sp_artillery = 2 }	# '41
+				artillery = 6
+				tank_armour = 3
+			}
+			and = {
+				not = { sp_artillery = 3 }	# '43
+				artillery = 7
+				tank_armour = 4
+			}
+			and = {
+				not = { sp_artillery = 4 }	# '45
+				artillery = 8
+				tank_armour = 5
+			}
+			and = {
+				not = { sp_artillery = 5 }	# '47
+				artillery = 9
+				tank_armour = 6
+			}
+		}
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 1.25
+		armour_practical = 0.38
+		artillery_practical = 0.38
+		spearhead_theory = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 2
+
+	start_year = 1939
+	first_offset = 1941
+	additional_offset = 2
+	max_level = 20
+	folder = armour_folder
+}
+
+sp_anti_air_activation = {
+
+	self_propelled_support_brigade = {
+		build_cost_ic = 2.50
+		supply_consumption = 0.5
+		fuel_consumption = 0.5
+		defensiveness = 0.5
+		soft_attack = 0.5
+		air_attack = 1.0
+		air_defence = 1.0
+		armor_value = 1
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		self_propelled_support_brigade_tech = 1
+		anti_air_guns = 1
+		lighttank_armour = 2
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 1.25
+		armour_practical = 0.38
+		artillery_practical = 0.38
+		spearhead_theory = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 5
+
+	start_year = 1942
+	folder = armour_folder
+}
+
+sp_anti_air = {
+
+	self_propelled_support_brigade = {
+		defensiveness = 0.25
+		soft_attack = 0.25
+		air_attack = 0.5
+		air_defence = 0.25
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		sp_anti_air_activation = 1
+		or = {
+			and = {
+				not = { sp_anti_air = 1 }	# '42
+				lighttank_armour = 2
+				anti_air_guns = 5
+			}
+			and = {
+				not = { sp_anti_air = 2 }	# '44
+				lighttank_armour = 3
+				anti_air_guns = 6
+			}
+			and = {
+				not = { sp_anti_air = 3 }	# '46
+				lighttank_armour = 4
+				anti_air_guns = 7
+			}
+			and = {
+				not = { sp_anti_air = 4 }	# '48
+				lighttank_armour = 5
+				anti_air_guns = 8
+			}
+		}
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 1.25
+		armour_practical = 0.38
+		artillery_practical = 0.38
+		spearhead_theory = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 2
+
+	start_year = 1942
+	first_offset = 1944
+	additional_offset = 2
+	max_level = 20
+	folder = armour_folder
+}
+
+sp_rocket_artillery_activation = {
+
+	self_propelled_support_brigade = {
+		build_cost_ic = 2.50
+		supply_consumption = 1.0
+		fuel_consumption = 0.25
+		defensiveness = 0.5
+		toughness = 1.0
+		soft_attack = 2.0
+		armor_value = 1
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		self_propelled_support_brigade_tech = 1
+		lighttank_armour = 4
+		rocket_artillery = 1
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 1.25
+		armour_practical = 0.38
+		artillery_practical = 0.38
+		spearhead_theory = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 7
+
+	start_year = 1941
+	folder = armour_folder
+}
+
+sp_rocket_artillery = {
+
+	self_propelled_support_brigade = {
+		defensiveness = 0.25
+		toughness = 0.5
+		soft_attack = 1.0
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		sp_rocket_artillery_activation = 1
+		or = {
+			and = {
+				not = { sp_rocket_artillery = 1 }	# '41
+				lighttank_armour = 4
+				rocket_artillery = 1
+			}
+			and = {
+				not = { sp_rocket_artillery = 2 }	# '43
+				lighttank_armour = 5
+				rocket_artillery = 2
+			}
+			and = {
+				not = { sp_rocket_artillery = 3 }	# '45
+				lighttank_armour = 6
+				rocket_artillery = 3
+			}
+			and = {
+				not = { sp_rocket_artillery = 4 }	# '47
+				lighttank_armour = 7
+				rocket_artillery = 4
+			}
+		}
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 1.25
+		armour_practical = 0.38
+		artillery_practical = 0.38
+		spearhead_theory = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 2
+
+	start_year = 1939
+	first_offset = 1941
+	additional_offset = 2
+	max_level = 20
+	folder = armour_folder
+}
+
+tank_destroyer_activation = {
+	
+	activate_unit = tank_destroyer_brigade
+
+	self_propelled_support_brigade = {
+		build_cost_ic = 2.50
+		supply_consumption = 1.0
+		fuel_consumption = 0.25
+		defensiveness = 1.0
+		toughness = 0.75
+		hard_attack = 2.0
+		ap_attack = 4
+		armor_value = 2
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		tank_armour = 2
+		anti_tank = 3
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 1.25
+		armour_practical = 0.38
+		artillery_practical = 0.38
+		spearhead_theory = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 5
+
+	start_year = 1939
+	folder = armour_folder
+}
+
+tank_destroyer = {
+
+	self_propelled_support_brigade = {
+		defensiveness = 0.25
+		toughness = 0.25
+		hard_attack = 1.0
+		ap_attack = 2.5
+	}
+
+	tank_destroyer_brigade = {
+		defensiveness = 0.5
+		toughness = 0.38
+		hard_attack = 1.5
+		ap_attack = 3
+	}
+
+	allow = {
+		has_global_flag = "allow_research"
+		tank_destroyer_activation = 1
+		or = {
+			and = {
+				not = { tank_destroyer = 1 }	# '39
+				tank_armour = 2
+				anti_tank = 3
+			}
+			and = {
+				not = { tank_destroyer = 2 }	# '41
+				tank_armour = 3
+				anti_tank = 4
+			}
+			and = {
+				not = { tank_destroyer = 3 }	# '43
+				tank_armour = 4
+				anti_tank = 5
+			}
+			and = {
+				not = { tank_destroyer = 4 }	# '45
+				tank_armour = 5
+				anti_tank = 6
+			}
+			and = {
+				not = { tank_destroyer = 5 }	# '47
+				tank_armour = 6
+				anti_tank = 7
+			}
+		}
+	}
+	
+	research_bonus_from = {
+		automotive_theory = 1.25
+		armour_practical = 0.38
+		artillery_practical = 0.38
+		spearhead_theory = 0.50
+	}
+	
+	on_completion = no_theory
+
+	difficulty = 2
+
+	start_year = 1939
+	first_offset = 1941
+	additional_offset = 2
+	max_level = 20
+	folder = armour_folder
+}

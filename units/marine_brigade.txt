@@ -1,0 +1,66 @@
+marine_brigade = {
+	type = land
+	sprite = Elite
+	unit_group = infantry_unit_type
+	active = no
+
+	#limitations
+	minimum_of_type = 8
+	max_percentage_of_type = 0.04
+	
+	#Size Definitions
+	max_strength = 30
+	default_organisation = 40
+	default_morale = 0.40
+	officers = 130
+
+	#Building Costs
+	build_cost_ic = 9.00
+	build_cost_manpower = 3.5
+	build_time = 160
+
+	#Misc Abilities
+	maximum_speed = 4.33
+	transport_weight = 10.00
+	supply_consumption = 0.80
+	fuel_consumption = 0.00
+	radio_strength = 0.5
+
+	#Defensive Abilities
+	defensiveness = 0.00
+	toughness = 0.00
+	softness = 1.00
+	air_defence = 2.50
+
+	#Offensive Abilities
+	suppression = 1.00
+	soft_attack = -0.50
+	hard_attack = 0.50
+	air_attack = 0.25
+
+	amphibious = {
+		attack = 0.50
+		movement = 0.25
+	}
+
+	river = {
+		attack = 0.40
+		movement = 0.15
+	}
+   	marsh = {
+		attack = 0.30
+		movement = 0.10
+	}
+	jungle = {
+		attack = 0.10
+		defence = 0.25
+		movement = 0.10
+	}
+
+	combat_width = 1
+	
+	completion_size = 0.1
+	on_completion = infantry_practical
+	priority = 8
+
+}

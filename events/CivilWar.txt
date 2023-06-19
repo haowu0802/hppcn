@@ -1,0 +1,43 @@
+# country_event = {
+
+	# id = 5900			# This event will fire if the nation is at war with an enemy, that only consists of cores of this nation.
+						# It gives a reduction to war exhaustion (which should represent mainly wars against foreign forces)
+	# trigger = {			# and loweres threat world-wide, because a nation struggling internal enemies is not that much of a threat, really.
+		# or = {
+			# and = {
+				# or = { tag = GER tag = DDR tag = DFR }
+				# or = { war_with = GER war_with = DDR war_with = DFR }
+			# }
+			# and = {
+				# or = { tag = FRA tag = VIC }
+				# or = { war_with = FRA war_with = VIC }
+			# }
+			# and = {
+				# or = { tag = SPR tag = SPA }
+				# or = { war_with = SPR war_with = SPA }
+			# }
+			# and = {
+				# or = { tag = CHI tag = CHC tag = CSX tag = CGX tag = CXB tag = CYN tag = SIK }
+				# or = { war_with = CHI war_with = CHC war_with = CSX war_with = CGX war_with = CXB war_with = CYN war_with = SIK }
+			# }
+			# and = {
+				# or = { tag = SOV tag = RUS }
+				# or = { war_with = SOV war_with = RUS }
+			# }
+		# }
+		# not = { has_country_modifier = "civil_war" }
+	# }
+	
+	# title = "Civil War"
+	# desc = "We have a legitimate Casus Belli for this war!"
+	# picture = "constitutional"
+	
+	# option = {
+		# name = "Good."
+		# threat = { who = all value = -20 }
+		# add_country_modifier = {
+			# name = "civil_war"
+			# duration = 270
+		# }
+	# }
+# }

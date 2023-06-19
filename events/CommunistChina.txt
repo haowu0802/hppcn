@@ -1,0 +1,39 @@
+country_event = {
+
+	id = 2851
+
+	major = yes
+	
+	trigger = {
+		tag = CHC
+		exists = CHI
+		war_with = JAP
+		non_aggression_pact = CHI
+		year = 1941
+	}
+
+	title = "new_fourth_army_incident_title"
+	desc = "new_fourth_army_incident_desc"
+	picture = "226"
+
+	option = {
+		name = "We won't tolerate this!"
+		ai_chance = { factor = 90 }
+		end_non_aggression_pact = CHI
+		set_global_flag = "ccw_can_continue"
+	}
+	option = {
+		name = "This means war!"
+		ai_chance = { factor = 3 }
+		end_non_aggression_pact = CHI
+		set_global_flag = "ccw_can_continue"
+		war = {
+			target = CHI
+			attacker_goal = { casus_belli = civil_war }
+		}
+	}
+	option = {
+		name = "We still need to stand together..."
+		ai_chance = { factor = 7 }
+	}
+}

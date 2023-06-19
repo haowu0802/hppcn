@@ -1,0 +1,1799 @@
+color = { 221  178  83 }
+graphical_culture = Japanese
+
+major = yes
+
+default_templates = {
+	JAP_triangular = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	JAP_square = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	JAP_mixed_brigade = {
+		infantry_brigade
+		truck_towed_support_brigade
+		engineer_brigade
+	}
+	JAP_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+	JAP_guards = {
+		light_armor_brigade
+		motorized_brigade
+		motorized_brigade
+		motorized_brigade
+	}
+	JAP_motorised = {
+		motorized_brigade
+		motorized_brigade
+		motorized_brigade
+		motorized_brigade
+	}
+	JAP_motor_tank = {
+		armor_brigade
+		armor_brigade
+		motorized_brigade
+	}
+	JAP_mech_tank = {
+		armor_brigade
+		armor_brigade
+		mechanized_brigade
+	}	
+	JAP_border_guards = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}
+	JAP_snlf = {
+		marine_brigade
+		marine_brigade
+		marine_brigade
+	}
+	JAP_airborne = {
+		paratrooper_brigade
+		paratrooper_brigade
+	}
+	JAP_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"1 'Gyoku' Hoheishidan" "2 'Yu' Hoheishidan" "3 'Ko' Hoheishidan" "4 'Yodo' Hoheishidan" "5 'Koi' Hoheishidan" "6 'Mei' Hoheishidan" "7 'Kuma' Hoheishidan" "8 'Sugi' Hoheishidan" "9 'Take' Hoheishidan" "10 'Kurogane' Hoheishidan" 
+		"11 'Nishiki' Hoheishidan" "12 'Tsurugi' Hoheishidan" "13 'Kagami' Hoheishidan" "14 'Sho' Hoheishidan" "15 'Sai' Hoheishidan" "16 'Kaki' Hoheishidan" "17 'Tsuki' Hoheishidan" "18 'Kiku' Hoheishidan" "19 'Tora' Hoheishidan" "20 'Asa' Hoheishidan"
+		"21 'Utsu' Hoheishidan" "22 'Hara' Hoheishidan" "23 'Asahi' Hoheishidan" "24 'Yama' Hoheishidan" "25 'Kuni' Hoheishidan" "26 'Izumi' Hoheishidan" "27 'Kyoku' Hoheishidan" "28 'Toyo' Hoheishidan" "29 'Ikazuchi' Hoheishidan" "30 'Hyo' Hoheishidan"
+		"31 'Retsu' Hoheishidan" "32 'Kaede' Hoheishidan" "33 'Yumi' Hoheishidan" "34 'Tsubaki' Hoheishidan" "35 'Azuma' Hoheishidan" "36 'Yuki' Hoheishidan" "37 'Fuyu' Hoheishidan" "38 'Numa' Hoheishidan" "39 'Fuji' Hoheishidan" "40 'Kujira' Hoheishidan"		
+		"41 'Kawa' Hoheishidan" "42 'Isao' Hoheishidan" "43 'Homare' Hoheishidan" "44 'Tachibana' Hoheishidan" "46 'Shizuka' Hoheishidan" "47 'Tama' Hoheishidan" "48 'Umi' Hoheishidan" "49 'Okami' Hoheishidan" "50 'Yomogi' Hoheishidan"	
+		"51 'Motoi' Hoheishidan" "52 'Kashiwa' Hoheishidan" "53 'An' Hoheishidan" "54 'Tsuwamono' Hoheishidan" "55 'So' Hoheishidan" "56 'Ryu' Hoheishidan" "57 'Oku' Hoheishidan" "58 'Hiro' Hoheishidan" "59 'Koromo' Hoheishidan" "60 'Hoko' Hoheishidan"		
+		"61 'Tobi' Hoheishidan" "62 'Ishi' Hoheishidan" "63 'Jin' Hoheishidan" "64 'Kai' Hoheishidan" "65 'Sen' Hoheishidan" "66 'Kan' Hoheishidan" "68 'Hinoki' Hoheishidan" "69 'Katsu' Hoheishidan" "70 'Yari' Hoheishidan"		
+		"71 'Inochi' Hoheishidan" "72 'Den' Hoheishidan" "73 'Ikari' Hoheishidan" "77 'Minoru' Hoheishidan" "79 'So' Hoheishidan"	
+		"81 'No' Hoheishidan" "84 'Totsu' Hoheishidan" "86 'Seki' Hoheishidan" "88 'Kaname' Hoheishidan" "89 'Sai' Hoheishidan"
+		"91 'Saki' Hoheishidan" "93 'Ketsu' Hoheishidan" "94 'Iretsu Hoheishidan" "96 'Gen' Hoheishidan" "100 'Yoru' Hoheishidan"	
+		"101 Hoheishidan" "102 'Batsu' Hoheishidan" "103 'Shun' Hoheishidan" "104 'Otori' Hoheishidan" "105 'Tsutomu' Hoheishidan" "106 Hoheishidan" "107 'Nagi' Hoheishidan" "108 'Yu' Hoheishidan" "109 'Tan' Hoheishidan" "110 'Sagi' Hoheishidan"		
+		"111 'Ichi' Hoheishidan" "112 'Ko' Hoheishidan" "114 'Sho' Hoheishidan" "115 'Kita' Hoheishidan" "116 'Arashi' Hoheishidan" "117 'Hiroshi' Hoheishidan" "118 'Megumi' Hoheishidan" "119 'Osamu' Hoheishidan" "120 'Maishin' Hoheishidan"	
+		"121 'Eiko' Hoheishidan" "122 'Maidzuru' Hoheishidan" "123 'Matsukaze' Hoheishidan" "124 'Enbo' Hoheishidan" "125 'Eiki' Hoheishidan" "126 'Eidan' Hoheishidan" "127 'Eimai' Hoheishidan" "128 'Eibu' Hoheishidan" "129 'Shinbu' Hoheishidan" "130 'Shoki' Hoheishidan"	
+		"131 'Shusui' Hoheishidan" "132 'Shinki' Hoheishidan" "133 'Shingeki' Hoheishidan" "134 'Magatama' Hoheishidan" "135 'Magokoro' Hoheishidan" "136 'Fubatsu' Hoheishidan" "137 'Fuyoku' Hoheishidan" "138 'Fudo' Hoheishidan" "139 'Fukutsu' Hoheishidan" "140 'Goto' Hoheishidan"	
+		"142 'Gosen' Hoheishidan" "143 'Goko' Hoheishidan" "144 'Gohan' Hoheishidan" "145 'Goshu' Hoheishidan" "146 'Gonan' Hoheishidan" "147 'Gohoku' Hoheishidan" "148 'Fugaku' Hoheishidan" "149 'Fugyo' Hoheishidan" "150 'Gocho' Hoheishidan"	
+		"151 'Gou' Hoheishidan" "152 'Gotaku' Hoheishidan" "153 'Gokyo' Hoheishidan" "154 'Goji' Hoheishidan" "155 'Goto' Hoheishidan" "156 'Gosei' Hoheishidan" "157 'Goko' Hoheishidan" "160 'Gosen' Hoheishidan"			
+		"161 'Shinten' Hoheishidan"
+		"201 'Musashi' Hoheishidan" "202 'Aoba' Hoheishidan" "205 'Aki' Hoheishidan" "206 'Aso' Hoheishidan" "209 'Kaetsu' Hoheishidan"
+		"212 'Kikuchi' Hoheishidan" "214 'Tokiwa' Hoheishidan" "216 'Hiei' Hoheishidan"
+		"221 'Tenryu' Hoheishidan" "222 'Hakko' Hoheishidan" "224 'Ako' Hoheishidan" "225 'Kongo' Hoheishidan" "229 'Hokuetsu' Hoheishidan" "230 'Sobu' Hoheishidan"	
+		"231 'Oguni' Hoheishidan" "234 'Tone' Hoheishidan"
+		"303 'Takashi' Hoheishidan" "308 'Iwaki' Hoheishidan"
+		"312 'Chitose' Hoheishidan" "316 'Yamashiro' Hoheishidan" "320 'Senbu' Hoheishidan"
+		"321 'Iso' Hoheishidan" "322 'Bandai' Hoheishidan"
+		"344 'Kenzan' Hoheishidan"
+		"351 'Akagi' Hoheishidan" "352 'Nachi' Hoheishidan" "354 'Buko' Hoheishidan"
+		}
+	cavalry_brigade = {
+		"Konoe Kiheishidan" "1 Kiheishidan" "2 Kiheishidan" "3 Kiheishidan" "4 Kiheishidan" "5 Kiheishidan" "6 Kiheishidan" "7 Kiheishidan" "8 Kiheishidan" "9 Kiheishidan" "10 Kiheishidan" 
+		"11 Kiheishidan" "12 Kiheishidan" "13 Kiheishidan" "14 Kiheishidan" "15 Kiheishidan" "16 Kiheishidan" "17 Kiheishidan" "18 Kiheishidan" "19 Kiheishidan" "20 Kiheishidan" 
+		"1 Moukogo Kiheishidan" "2 Moukogo Kiheishidan" "3 Moukogo Kiheishidan" "4 Moukogo Kiheishidan" "5 Moukogo Kiheishidan" "6 Moukogo Kiheishidan" "7 Moukogo Kiheishidan" "8 Moukogo Kiheishidan" "9 Moukogo Kiheishidan" "10 Moukogo Kiheishidan" 
+		"11 Moukogo Kiheishidan" "12 Moukogo Kiheishidan" "13 Moukogo Kiheishidan" "14 Moukogo Kiheishidan" "15 Moukogo Kiheishidan" "16 Moukogo Kiheishidan" "17 Moukogo Kiheishidan" "18 Moukogo Kiheishidan" "19 Moukogo Kiheishidan" "20 Moukogo Kiheishidan" 
+	}
+	motorized_brigade = {
+		"1 'Gyoku' Hoheishidan" "2 'Yu' Hoheishidan" "3 'Ko' Hoheishidan" "4 'Yodo' Hoheishidan" "5 'Koi' Hoheishidan" "6 'Mei' Hoheishidan" "7 'Kuma' Hoheishidan" "8 'Sugi' Hoheishidan" "9 'Take' Hoheishidan" "10 'Kurogane' Hoheishidan" 
+		"11 'Nishiki' Hoheishidan" "12 'Tsurugi' Hoheishidan" "13 'Kagami' Hoheishidan" "14 'Sho' Hoheishidan" "15 'Sai' Hoheishidan" "16 'Kaki' Hoheishidan" "17 'Tsuki' Hoheishidan" "18 'Kiku' Hoheishidan" "19 'Tora' Hoheishidan" "20 'Asa' Hoheishidan"
+		"21 'Utsu' Hoheishidan" "22 'Hara' Hoheishidan" "23 'Asahi' Hoheishidan" "24 'Yama' Hoheishidan" "25 'Kuni' Hoheishidan" "26 'Izumi' Hoheishidan" "27 'Kyoku' Hoheishidan" "28 'Toyo' Hoheishidan" "29 'Ikazuchi' Hoheishidan" "30 'Hyo' Hoheishidan"
+		"31 'Retsu' Hoheishidan" "32 'Kaede' Hoheishidan" "33 'Yumi' Hoheishidan" "34 'Tsubaki' Hoheishidan" "35 'Azuma' Hoheishidan" "36 'Yuki' Hoheishidan" "37 'Fuyu' Hoheishidan" "38 'Numa' Hoheishidan" "39 'Fuji' Hoheishidan" "40 'Kujira' Hoheishidan"		
+		"41 'Kawa' Hoheishidan" "42 'Isao' Hoheishidan" "43 'Homare' Hoheishidan" "44 'Tachibana' Hoheishidan" "46 'Shizuka' Hoheishidan" "47 'Tama' Hoheishidan" "48 'Umi' Hoheishidan" "49 'Okami' Hoheishidan" "50 'Yomogi' Hoheishidan"	
+		"51 'Motoi' Hoheishidan" "52 'Kashiwa' Hoheishidan" "53 'An' Hoheishidan" "54 'Tsuwamono' Hoheishidan" "55 'So' Hoheishidan" "56 'Ryu' Hoheishidan" "57 'Oku' Hoheishidan" "58 'Hiro' Hoheishidan" "59 'Koromo' Hoheishidan" "60 'Hoko' Hoheishidan"		
+		"61 'Tobi' Hoheishidan" "62 'Ishi' Hoheishidan" "63 'Jin' Hoheishidan" "64 'Kai' Hoheishidan" "65 'Sen' Hoheishidan" "66 'Kan' Hoheishidan" "68 'Hinoki' Hoheishidan" "69 'Katsu' Hoheishidan" "70 'Yari' Hoheishidan"		
+		"71 'Inochi' Hoheishidan" "72 'Den' Hoheishidan" "73 'Ikari' Hoheishidan" "77 'Minoru' Hoheishidan" "79 'So' Hoheishidan"	
+		"81 'No' Hoheishidan" "84 'Totsu' Hoheishidan" "86 'Seki' Hoheishidan" "88 'Kaname' Hoheishidan" "89 'Sai' Hoheishidan"
+		"91 'Saki' Hoheishidan" "93 'Ketsu' Hoheishidan" "94 'Iretsu Hoheishidan" "96 'Gen' Hoheishidan" "100 'Yoru' Hoheishidan"	
+		"101 Hoheishidan" "102 'Batsu' Hoheishidan" "103 'Shun' Hoheishidan" "104 'Otori' Hoheishidan" "105 'Tsutomu' Hoheishidan" "106 Hoheishidan" "107 'Nagi' Hoheishidan" "108 'Yu' Hoheishidan" "109 'Tan' Hoheishidan" "110 'Sagi' Hoheishidan"		
+		"111 'Ichi' Hoheishidan" "112 'Ko' Hoheishidan" "114 'Sho' Hoheishidan" "115 'Kita' Hoheishidan" "116 'Arashi' Hoheishidan" "117 'Hiroshi' Hoheishidan" "118 'Megumi' Hoheishidan" "119 'Osamu' Hoheishidan" "120 'Maishin' Hoheishidan"	
+		"121 'Eiko' Hoheishidan" "122 'Maidzuru' Hoheishidan" "123 'Matsukaze' Hoheishidan" "124 'Enbo' Hoheishidan" "125 'Eiki' Hoheishidan" "126 'Eidan' Hoheishidan" "127 'Eimai' Hoheishidan" "128 'Eibu' Hoheishidan" "129 'Shinbu' Hoheishidan" "130 'Shoki' Hoheishidan"	
+		"131 'Shusui' Hoheishidan" "132 'Shinki' Hoheishidan" "133 'Shingeki' Hoheishidan" "134 'Magatama' Hoheishidan" "135 'Magokoro' Hoheishidan" "136 'Fubatsu' Hoheishidan" "137 'Fuyoku' Hoheishidan" "138 'Fudo' Hoheishidan" "139 'Fukutsu' Hoheishidan" "140 'Goto' Hoheishidan"	
+		"142 'Gosen' Hoheishidan" "143 'Goko' Hoheishidan" "144 'Gohan' Hoheishidan" "145 'Goshu' Hoheishidan" "146 'Gonan' Hoheishidan" "147 'Gohoku' Hoheishidan" "148 'Fugaku' Hoheishidan" "149 'Fugyo' Hoheishidan" "150 'Gocho' Hoheishidan"	
+		"151 'Gou' Hoheishidan" "152 'Gotaku' Hoheishidan" "153 'Gokyo' Hoheishidan" "154 'Goji' Hoheishidan" "155 'Goto' Hoheishidan" "156 'Gosei' Hoheishidan" "157 'Goko' Hoheishidan" "160 'Gosen' Hoheishidan"			
+		"161 'Shinten' Hoheishidan"
+		"201 'Musashi' Hoheishidan" "202 'Aoba' Hoheishidan" "205 'Aki' Hoheishidan" "206 'Aso' Hoheishidan" "209 'Kaetsu' Hoheishidan"
+		"212 'Kikuchi' Hoheishidan" "214 'Tokiwa' Hoheishidan" "216 'Hiei' Hoheishidan"
+		"221 'Tenryu' Hoheishidan" "222 'Hakko' Hoheishidan" "224 'Ako' Hoheishidan" "225 'Kongo' Hoheishidan" "229 'Hokuetsu' Hoheishidan" "230 'Sobu' Hoheishidan"	
+		"231 'Oguni' Hoheishidan" "234 'Tone' Hoheishidan"
+		"303 'Takashi' Hoheishidan" "308 'Iwaki' Hoheishidan"
+		"312 'Chitose' Hoheishidan" "316 'Yamashiro' Hoheishidan" "320 'Senbu' Hoheishidan"
+		"321 'Iso' Hoheishidan" "322 'Bandai' Hoheishidan"
+		"344 'Kenzan' Hoheishidan"
+		"351 'Akagi' Hoheishidan" "352 'Nachi' Hoheishidan" "354 'Buko' Hoheishidan"
+		"1 'Gyoku' Jidoushashidan" "2 'Yu' Jidoushashidan" "3 'Ko' Jidoushashidan" "4 'Yodo' Jidoushashidan" "5 'Koi' Jidoushashidan" "6 'Mei' Jidoushashidan" "7 'Kuma' Jidoushashidan" "8 'Sugi' Jidoushashidan" "9 'Take' Jidoushashidan" "10 'Kurogane' Jidoushashidan" 
+		"11 'Nishiki' Jidoushashidan" "12 'Tsurugi' Jidoushashidan" "13 'Kagami' Jidoushashidan" "14 'Sho' Jidoushashidan" "15 'Sai' Jidoushashidan" "16 'Kaki' Jidoushashidan" "17 'Tsuki' Jidoushashidan" "18 'Kiku' Jidoushashidan" "19 'Tora' Jidoushashidan" "20 'Asa' Jidoushashidan"
+		"21 'Utsu' Jidoushashidan" "22 'Hara' Jidoushashidan" "23 'Asahi' Jidoushashidan" "24 'Yama' Jidoushashidan" "25 'Kuni' Jidoushashidan" "26 'Izumi' Jidoushashidan" "27 'Kyoku' Jidoushashidan" "28 'Toyo' Jidoushashidan" "29 'Ikazuchi' Jidoushashidan" "30 'Hyo' Jidoushashidan"
+		"31 'Retsu' Jidoushashidan" "32 'Kaede' Jidoushashidan" "33 'Yumi' Jidoushashidan" "34 'Tsubaki' Jidoushashidan" "35 'Azuma' Jidoushashidan" "36 'Yuki' Jidoushashidan" "37 'Fuyu' Jidoushashidan" "38 'Numa' Jidoushashidan" "39 'Fuji' Jidoushashidan" "40 'Kujira' Jidoushashidan"		
+		"41 'Kawa' Jidoushashidan" "42 'Isao' Jidoushashidan" "43 'Homare' Jidoushashidan" "44 'Tachibana' Jidoushashidan" "46 'Shizuka' Jidoushashidan" "47 'Tama' Jidoushashidan" "48 'Umi' Jidoushashidan" "49 'Okami' Jidoushashidan" "50 'Yomogi' Jidoushashidan"	
+		"51 'Motoi' Jidoushashidan" "52 'Kashiwa' Jidoushashidan" "53 'An' Jidoushashidan" "54 'Tsuwamono' Jidoushashidan" "55 'So' Jidoushashidan" "56 'Ryu' Jidoushashidan" "57 'Oku' Jidoushashidan" "58 'Hiro' Jidoushashidan" "59 'Koromo' Jidoushashidan" "60 'Hoko' Jidoushashidan"		
+		"61 'Tobi' Jidoushashidan" "62 'Ishi' Jidoushashidan" "63 'Jin' Jidoushashidan" "64 'Kai' Jidoushashidan" "65 'Sen' Jidoushashidan" "66 'Kan' Jidoushashidan" "68 'Hinoki' Jidoushashidan" "69 'Katsu' Jidoushashidan" "70 'Yari' Jidoushashidan"		
+		"71 'Inochi' Jidoushashidan" "72 'Den' Jidoushashidan" "73 'Ikari' Jidoushashidan" "77 'Minoru' Jidoushashidan" "79 'So' Jidoushashidan"	
+		"81 'No' Jidoushashidan" "84 'Totsu' Jidoushashidan" "86 'Seki' Jidoushashidan" "88 'Kaname' Jidoushashidan" "89 'Sai' Jidoushashidan"
+		"91 'Saki' Jidoushashidan" "93 'Ketsu' Jidoushashidan" "94 'Iretsu Jidoushashidan" "96 'Gen' Jidoushashidan" "100 'Yoru' Jidoushashidan"	
+		"101 Jidoushashidan" "102 'Batsu' Jidoushashidan" "103 'Shun' Jidoushashidan" "104 'Otori' Jidoushashidan" "105 'Tsutomu' Jidoushashidan" "106 Jidoushashidan" "107 'Nagi' Jidoushashidan" "108 'Yu' Jidoushashidan" "109 'Tan' Jidoushashidan" "110 'Sagi' Jidoushashidan"		
+		"111 'Ichi' Jidoushashidan" "112 'Ko' Jidoushashidan" "114 'Sho' Jidoushashidan" "115 'Kita' Jidoushashidan" "116 'Arashi' Jidoushashidan" "117 'Hiroshi' Jidoushashidan" "118 'Megumi' Jidoushashidan" "119 'Osamu' Jidoushashidan" "120 'Maishin' Jidoushashidan"	
+		"121 'Eiko' Jidoushashidan" "122 'Maidzuru' Jidoushashidan" "123 'Matsukaze' Jidoushashidan" "124 'Enbo' Jidoushashidan" "125 'Eiki' Jidoushashidan" "126 'Eidan' Jidoushashidan" "127 'Eimai' Jidoushashidan" "128 'Eibu' Jidoushashidan" "129 'Shinbu' Jidoushashidan" "130 'Shoki' Jidoushashidan"	
+		"131 'Shusui' Jidoushashidan" "132 'Shinki' Jidoushashidan" "133 'Shingeki' Jidoushashidan" "134 'Magatama' Jidoushashidan" "135 'Magokoro' Jidoushashidan" "136 'Fubatsu' Jidoushashidan" "137 'Fuyoku' Jidoushashidan" "138 'Fudo' Jidoushashidan" "139 'Fukutsu' Jidoushashidan" "140 'Goto' Jidoushashidan"	
+		"142 'Gosen' Jidoushashidan" "143 'Goko' Jidoushashidan" "144 'Gohan' Jidoushashidan" "145 'Goshu' Jidoushashidan" "146 'Gonan' Jidoushashidan" "147 'Gohoku' Jidoushashidan" "148 'Fugaku' Jidoushashidan" "149 'Fugyo' Jidoushashidan" "150 'Gocho' Jidoushashidan"	
+		"151 'Gou' Jidoushashidan" "152 'Gotaku' Jidoushashidan" "153 'Gokyo' Jidoushashidan" "154 'Goji' Jidoushashidan" "155 'Goto' Jidoushashidan" "156 'Gosei' Jidoushashidan" "157 'Goko' Jidoushashidan" "160 'Gosen' Jidoushashidan"			
+		"161 'Shinten' Jidoushashidan"
+		"201 'Musashi' Jidoushashidan" "202 'Aoba' Jidoushashidan" "205 'Aki' Jidoushashidan" "206 'Aso' Jidoushashidan" "209 'Kaetsu' Jidoushashidan"
+		"212 'Kikuchi' Jidoushashidan" "214 'Tokiwa' Jidoushashidan" "216 'Hiei' Jidoushashidan"
+		"221 'Tenryu' Jidoushashidan" "222 'Hakko' Jidoushashidan" "224 'Ako' Jidoushashidan" "225 'Kongo' Jidoushashidan" "229 'Hokuetsu' Jidoushashidan" "230 'Sobu' Jidoushashidan"	
+		"231 'Oguni' Jidoushashidan" "234 'Tone' Jidoushashidan"
+		"303 'Takashi' Jidoushashidan" "308 'Iwaki' Jidoushashidan"
+		"312 'Chitose' Jidoushashidan" "316 'Yamashiro' Jidoushashidan" "320 'Senbu' Jidoushashidan"
+		"321 'Iso' Jidoushashidan" "322 'Bandai' Jidoushashidan"
+		"344 'Kenzan' Jidoushashidan"
+		"351 'Akagi' Jidoushashidan" "352 'Nachi' Jidoushashidan" "354 'Buko' Jidoushashidan"	
+	}
+	mechanized_brigade = {
+		"1 'Gyoku' Hoheishidan" "2 'Yu' Hoheishidan" "3 'Ko' Hoheishidan" "4 'Yodo' Hoheishidan" "5 'Koi' Hoheishidan" "6 'Mei' Hoheishidan" "7 'Kuma' Hoheishidan" "8 'Sugi' Hoheishidan" "9 'Take' Hoheishidan" "10 'Kurogane' Hoheishidan" 
+		"11 'Nishiki' Hoheishidan" "12 'Tsurugi' Hoheishidan" "13 'Kagami' Hoheishidan" "14 'Sho' Hoheishidan" "15 'Sai' Hoheishidan" "16 'Kaki' Hoheishidan" "17 'Tsuki' Hoheishidan" "18 'Kiku' Hoheishidan" "19 'Tora' Hoheishidan" "20 'Asa' Hoheishidan"
+		"21 'Utsu' Hoheishidan" "22 'Hara' Hoheishidan" "23 'Asahi' Hoheishidan" "24 'Yama' Hoheishidan" "25 'Kuni' Hoheishidan" "26 'Izumi' Hoheishidan" "27 'Kyoku' Hoheishidan" "28 'Toyo' Hoheishidan" "29 'Ikazuchi' Hoheishidan" "30 'Hyo' Hoheishidan"
+		"31 'Retsu' Hoheishidan" "32 'Kaede' Hoheishidan" "33 'Yumi' Hoheishidan" "34 'Tsubaki' Hoheishidan" "35 'Azuma' Hoheishidan" "36 'Yuki' Hoheishidan" "37 'Fuyu' Hoheishidan" "38 'Numa' Hoheishidan" "39 'Fuji' Hoheishidan" "40 'Kujira' Hoheishidan"		
+		"41 'Kawa' Hoheishidan" "42 'Isao' Hoheishidan" "43 'Homare' Hoheishidan" "44 'Tachibana' Hoheishidan" "46 'Shizuka' Hoheishidan" "47 'Tama' Hoheishidan" "48 'Umi' Hoheishidan" "49 'Okami' Hoheishidan" "50 'Yomogi' Hoheishidan"	
+		"51 'Motoi' Hoheishidan" "52 'Kashiwa' Hoheishidan" "53 'An' Hoheishidan" "54 'Tsuwamono' Hoheishidan" "55 'So' Hoheishidan" "56 'Ryu' Hoheishidan" "57 'Oku' Hoheishidan" "58 'Hiro' Hoheishidan" "59 'Koromo' Hoheishidan" "60 'Hoko' Hoheishidan"		
+		"61 'Tobi' Hoheishidan" "62 'Ishi' Hoheishidan" "63 'Jin' Hoheishidan" "64 'Kai' Hoheishidan" "65 'Sen' Hoheishidan" "66 'Kan' Hoheishidan" "68 'Hinoki' Hoheishidan" "69 'Katsu' Hoheishidan" "70 'Yari' Hoheishidan"		
+		"71 'Inochi' Hoheishidan" "72 'Den' Hoheishidan" "73 'Ikari' Hoheishidan" "77 'Minoru' Hoheishidan" "79 'So' Hoheishidan"	
+		"81 'No' Hoheishidan" "84 'Totsu' Hoheishidan" "86 'Seki' Hoheishidan" "88 'Kaname' Hoheishidan" "89 'Sai' Hoheishidan"
+		"91 'Saki' Hoheishidan" "93 'Ketsu' Hoheishidan" "94 'Iretsu Hoheishidan" "96 'Gen' Hoheishidan" "100 'Yoru' Hoheishidan"	
+		"101 Hoheishidan" "102 'Batsu' Hoheishidan" "103 'Shun' Hoheishidan" "104 'Otori' Hoheishidan" "105 'Tsutomu' Hoheishidan" "106 Hoheishidan" "107 'Nagi' Hoheishidan" "108 'Yu' Hoheishidan" "109 'Tan' Hoheishidan" "110 'Sagi' Hoheishidan"		
+		"111 'Ichi' Hoheishidan" "112 'Ko' Hoheishidan" "114 'Sho' Hoheishidan" "115 'Kita' Hoheishidan" "116 'Arashi' Hoheishidan" "117 'Hiroshi' Hoheishidan" "118 'Megumi' Hoheishidan" "119 'Osamu' Hoheishidan" "120 'Maishin' Hoheishidan"	
+		"121 'Eiko' Hoheishidan" "122 'Maidzuru' Hoheishidan" "123 'Matsukaze' Hoheishidan" "124 'Enbo' Hoheishidan" "125 'Eiki' Hoheishidan" "126 'Eidan' Hoheishidan" "127 'Eimai' Hoheishidan" "128 'Eibu' Hoheishidan" "129 'Shinbu' Hoheishidan" "130 'Shoki' Hoheishidan"	
+		"131 'Shusui' Hoheishidan" "132 'Shinki' Hoheishidan" "133 'Shingeki' Hoheishidan" "134 'Magatama' Hoheishidan" "135 'Magokoro' Hoheishidan" "136 'Fubatsu' Hoheishidan" "137 'Fuyoku' Hoheishidan" "138 'Fudo' Hoheishidan" "139 'Fukutsu' Hoheishidan" "140 'Goto' Hoheishidan"	
+		"142 'Gosen' Hoheishidan" "143 'Goko' Hoheishidan" "144 'Gohan' Hoheishidan" "145 'Goshu' Hoheishidan" "146 'Gonan' Hoheishidan" "147 'Gohoku' Hoheishidan" "148 'Fugaku' Hoheishidan" "149 'Fugyo' Hoheishidan" "150 'Gocho' Hoheishidan"	
+		"151 'Gou' Hoheishidan" "152 'Gotaku' Hoheishidan" "153 'Gokyo' Hoheishidan" "154 'Goji' Hoheishidan" "155 'Goto' Hoheishidan" "156 'Gosei' Hoheishidan" "157 'Goko' Hoheishidan" "160 'Gosen' Hoheishidan"			
+		"161 'Shinten' Hoheishidan"
+		"201 'Musashi' Hoheishidan" "202 'Aoba' Hoheishidan" "205 'Aki' Hoheishidan" "206 'Aso' Hoheishidan" "209 'Kaetsu' Hoheishidan"
+		"212 'Kikuchi' Hoheishidan" "214 'Tokiwa' Hoheishidan" "216 'Hiei' Hoheishidan"
+		"221 'Tenryu' Hoheishidan" "222 'Hakko' Hoheishidan" "224 'Ako' Hoheishidan" "225 'Kongo' Hoheishidan" "229 'Hokuetsu' Hoheishidan" "230 'Sobu' Hoheishidan"	
+		"231 'Oguni' Hoheishidan" "234 'Tone' Hoheishidan"
+		"303 'Takashi' Hoheishidan" "308 'Iwaki' Hoheishidan"
+		"312 'Chitose' Hoheishidan" "316 'Yamashiro' Hoheishidan" "320 'Senbu' Hoheishidan"
+		"321 'Iso' Hoheishidan" "322 'Bandai' Hoheishidan"
+		"344 'Kenzan' Hoheishidan"
+		"351 'Akagi' Hoheishidan" "352 'Nachi' Hoheishidan" "354 'Buko' Hoheishidan"
+		"1 'Gyoku' Kikaikashidan" "2 'Yu' Kikaikashidan" "3 'Ko' Kikaikashidan" "4 'Yodo' Kikaikashidan" "5 'Koi' Kikaikashidan" "6 'Mei' Kikaikashidan" "7 'Kuma' Kikaikashidan" "8 'Sugi' Kikaikashidan" "9 'Take' Kikaikashidan" "10 'Kurogane' Kikaikashidan" 
+		"11 'Nishiki' Kikaikashidan" "12 'Tsurugi' Kikaikashidan" "13 'Kagami' Kikaikashidan" "14 'Sho' Kikaikashidan" "15 'Sai' Kikaikashidan" "16 'Kaki' Kikaikashidan" "17 'Tsuki' Kikaikashidan" "18 'Kiku' Kikaikashidan" "19 'Tora' Kikaikashidan" "20 'Asa' Kikaikashidan"
+		"21 'Utsu' Kikaikashidan" "22 'Hara' Kikaikashidan" "23 'Asahi' Kikaikashidan" "24 'Yama' Kikaikashidan" "25 'Kuni' Kikaikashidan" "26 'Izumi' Kikaikashidan" "27 'Kyoku' Kikaikashidan" "28 'Toyo' Kikaikashidan" "29 'Ikazuchi' Kikaikashidan" "30 'Hyo' Kikaikashidan"
+		"31 'Retsu' Kikaikashidan" "32 'Kaede' Kikaikashidan" "33 'Yumi' Kikaikashidan" "34 'Tsubaki' Kikaikashidan" "35 'Azuma' Kikaikashidan" "36 'Yuki' Kikaikashidan" "37 'Fuyu' Kikaikashidan" "38 'Numa' Kikaikashidan" "39 'Fuji' Kikaikashidan" "40 'Kujira' Kikaikashidan"		
+		"41 'Kawa' Kikaikashidan" "42 'Isao' Kikaikashidan" "43 'Homare' Kikaikashidan" "44 'Tachibana' Kikaikashidan" "46 'Shizuka' Kikaikashidan" "47 'Tama' Kikaikashidan" "48 'Umi' Kikaikashidan" "49 'Okami' Kikaikashidan" "50 'Yomogi' Kikaikashidan"	
+		"51 'Motoi' Kikaikashidan" "52 'Kashiwa' Kikaikashidan" "53 'An' Kikaikashidan" "54 'Tsuwamono' Kikaikashidan" "55 'So' Kikaikashidan" "56 'Ryu' Kikaikashidan" "57 'Oku' Kikaikashidan" "58 'Hiro' Kikaikashidan" "59 'Koromo' Kikaikashidan" "60 'Hoko' Kikaikashidan"		
+		"61 'Tobi' Kikaikashidan" "62 'Ishi' Kikaikashidan" "63 'Jin' Kikaikashidan" "64 'Kai' Kikaikashidan" "65 'Sen' Kikaikashidan" "66 'Kan' Kikaikashidan" "68 'Hinoki' Kikaikashidan" "69 'Katsu' Kikaikashidan" "70 'Yari' Kikaikashidan"		
+		"71 'Inochi' Kikaikashidan" "72 'Den' Kikaikashidan" "73 'Ikari' Kikaikashidan" "77 'Minoru' Kikaikashidan" "79 'So' Kikaikashidan"	
+		"81 'No' Kikaikashidan" "84 'Totsu' Kikaikashidan" "86 'Seki' Kikaikashidan" "88 'Kaname' Kikaikashidan" "89 'Sai' Kikaikashidan"
+		"91 'Saki' Kikaikashidan" "93 'Ketsu' Kikaikashidan" "94 'Iretsu Kikaikashidan" "96 'Gen' Kikaikashidan" "100 'Yoru' Kikaikashidan"	
+		"101 Kikaikashidan" "102 'Batsu' Kikaikashidan" "103 'Shun' Kikaikashidan" "104 'Otori' Kikaikashidan" "105 'Tsutomu' Kikaikashidan" "106 Kikaikashidan" "107 'Nagi' Kikaikashidan" "108 'Yu' Kikaikashidan" "109 'Tan' Kikaikashidan" "110 'Sagi' Kikaikashidan"		
+		"111 'Ichi' Kikaikashidan" "112 'Ko' Kikaikashidan" "114 'Sho' Kikaikashidan" "115 'Kita' Kikaikashidan" "116 'Arashi' Kikaikashidan" "117 'Hiroshi' Kikaikashidan" "118 'Megumi' Kikaikashidan" "119 'Osamu' Kikaikashidan" "120 'Maishin' Kikaikashidan"	
+		"121 'Eiko' Kikaikashidan" "122 'Maidzuru' Kikaikashidan" "123 'Matsukaze' Kikaikashidan" "124 'Enbo' Kikaikashidan" "125 'Eiki' Kikaikashidan" "126 'Eidan' Kikaikashidan" "127 'Eimai' Kikaikashidan" "128 'Eibu' Kikaikashidan" "129 'Shinbu' Kikaikashidan" "130 'Shoki' Kikaikashidan"	
+		"131 'Shusui' Kikaikashidan" "132 'Shinki' Kikaikashidan" "133 'Shingeki' Kikaikashidan" "134 'Magatama' Kikaikashidan" "135 'Magokoro' Kikaikashidan" "136 'Fubatsu' Kikaikashidan" "137 'Fuyoku' Kikaikashidan" "138 'Fudo' Kikaikashidan" "139 'Fukutsu' Kikaikashidan" "140 'Goto' Kikaikashidan"	
+		"142 'Gosen' Kikaikashidan" "143 'Goko' Kikaikashidan" "144 'Gohan' Kikaikashidan" "145 'Goshu' Kikaikashidan" "146 'Gonan' Kikaikashidan" "147 'Gohoku' Kikaikashidan" "148 'Fugaku' Kikaikashidan" "149 'Fugyo' Kikaikashidan" "150 'Gocho' Kikaikashidan"	
+		"151 'Gou' Kikaikashidan" "152 'Gotaku' Kikaikashidan" "153 'Gokyo' Kikaikashidan" "154 'Goji' Kikaikashidan" "155 'Goto' Kikaikashidan" "156 'Gosei' Kikaikashidan" "157 'Goko' Kikaikashidan" "160 'Gosen' Kikaikashidan"			
+		"161 'Shinten' Kikaikashidan"
+		"201 'Musashi' Kikaikashidan" "202 'Aoba' Kikaikashidan" "205 'Aki' Kikaikashidan" "206 'Aso' Kikaikashidan" "209 'Kaetsu' Kikaikashidan"
+		"212 'Kikuchi' Kikaikashidan" "214 'Tokiwa' Kikaikashidan" "216 'Hiei' Kikaikashidan"
+		"221 'Tenryu' Kikaikashidan" "222 'Hakko' Kikaikashidan" "224 'Ako' Kikaikashidan" "225 'Kongo' Kikaikashidan" "229 'Hokuetsu' Kikaikashidan" "230 'Sobu' Kikaikashidan"	
+		"231 'Oguni' Kikaikashidan" "234 'Tone' Kikaikashidan"
+		"303 'Takashi' Kikaikashidan" "308 'Iwaki' Kikaikashidan"
+		"312 'Chitose' Kikaikashidan" "316 'Yamashiro' Kikaikashidan" "320 'Senbu' Kikaikashidan"
+		"321 'Iso' Kikaikashidan" "322 'Bandai' Kikaikashidan"
+		"344 'Kenzan' Kikaikashidan"
+		"351 'Akagi' Kikaikashidan" "352 'Nachi' Kikaikashidan" "354 'Buko' Kikaikashidan"	
+	}
+	super_heavy_armor_brigade = {
+		"1 Senshashidan" "2 Senshashidan" "3 Senshashidan" "4 Senshashidan" "5 Senshashidan" "6 Senshashidan" "7 Senshashidan" "8 Senshashidan" "9 Senshashidan" "10 Senshashidan" "11 Senshashidan" 
+		"12 Senshashidan" "13 Senshashidan" "14 Senshashidan" "15 Senshashidan" "16 Senshashidan" "17 Senshashidan" "18 Senshashidan" "19 Senshashidan" "20 Senshashidan" "21 Senshashidan" "22 Senshashidan" 
+		"23 Senshashidan" "24 Senshashidan" "25 Senshashidan" "26 Senshashidan" "27 Senshashidan" "28 Senshashidan" "29 Senshashidan" "30 Senshashidan" 
+	}
+	light_armor_brigade = {
+		"1 Senshashidan" "2 Senshashidan" "3 Senshashidan" "4 Senshashidan" "5 Senshashidan" "6 Senshashidan" "7 Senshashidan" "8 Senshashidan" "9 Senshashidan" "10 Senshashidan" "11 Senshashidan" 
+		"12 Senshashidan" "13 Senshashidan" "14 Senshashidan" "15 Senshashidan" "16 Senshashidan" "17 Senshashidan" "18 Senshashidan" "19 Senshashidan" "20 Senshashidan" "21 Senshashidan" "22 Senshashidan" 
+		"23 Senshashidan" "24 Senshashidan" "25 Senshashidan" "26 Senshashidan" "27 Senshashidan" "28 Senshashidan" "29 Senshashidan" "30 Senshashidan" 
+	}
+	armor_brigade = {
+		"1 Senshashidan" "2 Senshashidan" "3 Senshashidan" "4 Senshashidan" "5 Senshashidan" "6 Senshashidan" "7 Senshashidan" "8 Senshashidan" "9 Senshashidan" "10 Senshashidan" "11 Senshashidan" 
+		"12 Senshashidan" "13 Senshashidan" "14 Senshashidan" "15 Senshashidan" "16 Senshashidan" "17 Senshashidan" "18 Senshashidan" "19 Senshashidan" "20 Senshashidan" "21 Senshashidan" "22 Senshashidan" 
+		"23 Senshashidan" "24 Senshashidan" "25 Senshashidan" "26 Senshashidan" "27 Senshashidan" "28 Senshashidan" "29 Senshashidan" "30 Senshashidan" 
+	}
+	heavy_armor_brigade = {
+		"1 Senshashidan" "2 Senshashidan" "3 Senshashidan" "4 Senshashidan" "5 Senshashidan" "6 Senshashidan" "7 Senshashidan" "8 Senshashidan" "9 Senshashidan" "10 Senshashidan" "11 Senshashidan" 
+		"12 Senshashidan" "13 Senshashidan" "14 Senshashidan" "15 Senshashidan" "16 Senshashidan" "17 Senshashidan" "18 Senshashidan" "19 Senshashidan" "20 Senshashidan" "21 Senshashidan" "22 Senshashidan" 
+		"23 Senshashidan" "24 Senshashidan" "25 Senshashidan" "26 Senshashidan" "27 Senshashidan" "28 Senshashidan" "29 Senshashidan" "30 Senshashidan" 
+	}
+	paratrooper_brigade = {
+		"1 Kuteishidan" "2 Kuteishidan" "3 Kuteishidan" "4 Kuteishidan" "5 Kuteishidan" "6 Kuteishidan" "7 Kuteishidan" "8 Kuteishidan" "9 Kuteishidan" "10 Kuteishidan" "11 Kuteishidan" 
+		"12 Kuteishidan" "13 Kuteishidan" "14 Kuteishidan" "15 Kuteishidan" "16 Kuteishidan" "17 Kuteishidan" "18 Kuteishidan" "19 Kuteishidan" "20 Kuteishidan" 
+	}
+	marine_brigade = {
+		"Sasebo Rikusenshidan" "Maizaru Rikusenshidan" "Yokohama Rikusenshidan" "Kure Rikusenshidan" "1 Rikusenshidan" "2 Rikusenshidan" "3 Rikusenshidan" "4 Rikusenshidan" "5 Rikusenshidan" "6 Rikusenshidan" "7 Rikusenshidan" 
+		"8 Rikusenshidan" "9 Rikusenshidan" "10 Rikusenshidan" "11 Rikusenshidan" "12 Rikusenshidan" "13 Rikusenshidan" "14 Rikusenshidan" "15 Rikusenshidan" "16 Rikusenshidan" "17 Rikusenshidan" "18 Rikusenshidan" 
+		"19 Rikusenshidan" "20 Rikusenshidan" 
+	}
+	bergsjaeger_brigade = {
+		"6 Kumamoto Sangaku Hoheishidan" "7 Asahigawa Sangaku Hoheishidan" "9 Kanazawa Sangaku Hoheishidan" "11 Zentsuji Sangaku Hoheishidan" "15 Sangaku Hoheishidan" "16 Kyoto Sangaku Hoheishidan" "17 Sangaku Hoheishidan" "21 Sangaku Hoheishidan" "22 Sangaku Hoheishidan" "27 Chaina Sangaku Hoheishidan" "29 Sangaku Hoheishidan" 
+		"32 Sangaku Hoheishidan" "33 Sangaku Hoheishidan" "34 Sangaku Hoheishidan" "35 Sangaku Hoheishidan" "36 Sangaku Hoheishidan" "37 Sangaku Hoheishidan" "38 Sangaku Hoheishidan" "39 Sangaku Hoheishidan" "40 Sangaku Hoheishidan" "41 Sangaku Hoheishidan" "52 Sangaku Hoheishidan" 
+		"104 Sangaku Hoheishidan" 
+	}
+	garrison_brigade = {
+		"1 Shubishidan" "2 Shubishidan" "3 Shubishidan" "4 Shubishidan" "5 Shubishidan" "6 Shubishidan" "7 Shubishidan" "8 Shubishidan" "9 Shubishidan" "10 Shubishidan" "11 Shubishidan" 
+		"12 Shubishidan" "13 Shubishidan" "14 Shubishidan" "15 Shubishidan" "16 Shubishidan" "17 Shubishidan" "18 Shubishidan" "19 Shubishidan" "20 Shubishidan" "21 Shubishidan" "35 Shubishidan" 
+		"22 Shubishidan" "26 Shubishidan" "27 Shubishidan" "28 Shubishidan" "29 Shubishidan" "30 Shubishidan" "31 Shubishidan" "32 Shubishidan" "33 Shubishidan" "34 Shubishidan" "25 Shubishidan" 
+		"41 Shubishidan" "42 Shubishidan" "24 Shubishidan" "43 Shubishidan" "36 Shubishidan" "37 Shubishidan" "40 Shubishidan" "44 Shubishidan" "45 Shubishidan" "46 Shubishidan" "47 Shubishidan" 
+		"48 Shubishidan" "49 Shubishidan" "50 Shubishidan" "51 Shubishidan" "52 Shubishidan" "53 Shubishidan" "54 Shubishidan" "55 Shubishidan" "56 Shubishidan" "57 Shubishidan" "59 Shubishidan" 
+		"69 Shubishidan" "70 Shubishidan" "38 Shubishidan" "39 Shubishidan" "58 Shubishidan" "60 Shubishidan" "61 Shubishidan" "62 Shubishidan" "63 Shubishidan" "64 Shubishidan" "65 Shubishidan" 
+		"66 Shubishidan" "67 Shubishidan" "68 Shubishidan" "71 Shubishidan" "72 Shubishidan" "75 Shubishidan" "76 Shubishidan" 
+	}
+	hq_brigade = {
+		"1 Gun Shireibu" "2 Gun Shireibu" "3 Gun Shireibu" "4 Gun Shireibu" "5 Gun Shireibu" "6 Gun Shireibu" "7 Gun Shireibu" "8 Gun Shireibu" "9 Gun Shireibu" "10 Gun Shireibu"
+		"11 Gun Shireibu" "12 Gun Shireibu" "13 Gun Shireibu" "14 Gun Shireibu" "15 Gun Shireibu" "16 Gun Shireibu" "17 Gun Shireibu" "18 Gun Shireibu" "19 Gun Shireibu" "20 Gun Shireibu"
+		"21 Gun Shireibu" "22 Gun Shireibu" "23 Gun Shireibu" "24 Gun Shireibu" "25 Gun Shireibu" "26 Gun Shireibu" "27 Gun Shireibu" "28 Gun Shireibu" "29 Gun Shireibu" "30 Gun Shireibu"
+		"31 Gun Shireibu" "32 Gun Shireibu" "33 Gun Shireibu" "34 Gun Shireibu" "35 Gun Shireibu" "36 Gun Shireibu" "37 Gun Shireibu" "38 Gun Shireibu" "39 Gun Shireibu" "40 Gun Shireibu"
+		"41 Gun Shireibu" "42 Gun Shireibu" "43 Gun Shireibu" "44 Gun Shireibu" "45 Gun Shireibu" "46 Gun Shireibu" "47 Gun Shireibu" "48 Gun Shireibu" "49 Gun Shireibu" "50 Gun Shireibu"
+		"51 Gun Shireibu" "52 Gun Shireibu" "53 Gun Shireibu" "54 Gun Shireibu" "55 Gun Shireibu" "56 Gun Shireibu" "57 Gun Shireibu" "58 Gun Shireibu" "59 Gun Shireibu" "60 Gun Shireibu"
+		"61 Gun Shireibu" "62 Gun Shireibu" "63 Gun Shireibu" "64 Gun Shireibu" "65 Gun Shireibu" "66 Gun Shireibu" "67 Gun Shireibu" "68 Gun Shireibu" "69 Gun Shireibu" "70 Gun Shireibu"
+		"71 Gun Shireibu" "72 Gun Shireibu" "73 Gun Shireibu" "74 Gun Shireibu" "75 Gun Shireibu" "76 Gun Shireibu" "77 Gun Shireibu" "78 Gun Shireibu" "79 Gun Shireibu" "80 Gun Shireibu"
+		"81 Gun Shireibu" "82 Gun Shireibu" "83 Gun Shireibu" "84 Gun Shireibu" "85 Gun Shireibu" "86 Gun Shireibu" "87 Gun Shireibu" "88 Gun Shireibu" "89 Gun Shireibu" "90 Gun Shireibu"
+	}
+	militia_brigade = {
+		"1 Minpeishidan" "2 Minpeishidan" "3 Minpeishidan" "4 Minpeishidan" "5 Minpeishidan" "6 Minpeishidan" "7 Minpeishidan" "8 Minpeishidan" "9 Minpeishidan" "10 Minpeishidan" "11 Minpeishidan" 
+		"12 Minpeishidan" "13 Minpeishidan" "14 Minpeishidan" "15 Minpeishidan" "16 Minpeishidan" "17 Minpeishidan" "18 Minpeishidan" "19 Minpeishidan" "20 Minpeishidan" "21 Minpeishidan" "35 Minpeishidan" 
+		"22 Minpeishidan" "26 Minpeishidan" "27 Minpeishidan" "28 Minpeishidan" "29 Minpeishidan" "30 Minpeishidan" "31 Minpeishidan" "32 Minpeishidan" "33 Minpeishidan" "34 Minpeishidan" "25 Minpeishidan" 
+		"41 Minpeishidan" "42 Minpeishidan" "24 Minpeishidan" "43 Minpeishidan" "36 Minpeishidan" "37 Minpeishidan" "40 Minpeishidan" "44 Minpeishidan" "45 Minpeishidan" "46 Minpeishidan" "47 Minpeishidan" 
+		"48 Minpeishidan" "49 Minpeishidan" "50 Minpeishidan" "51 Minpeishidan" "52 Minpeishidan" "53 Minpeishidan" "54 Minpeishidan" "55 Minpeishidan" "56 Minpeishidan" "57 Minpeishidan" "59 Minpeishidan" 
+		"69 Minpeishidan" "70 Minpeishidan" "38 Minpeishidan" "39 Minpeishidan" "58 Minpeishidan" "60 Minpeishidan" "61 Minpeishidan" "62 Minpeishidan" "63 Minpeishidan" "64 Minpeishidan" "65 Minpeishidan" 
+		"66 Minpeishidan" "67 Minpeishidan" "68 Minpeishidan" "71 Minpeishidan" "72 Minpeishidan" "75 Minpeishidan" "76 Minpeishidan" 
+	}
+	engineer_brigade = {
+		"1 Koheitai" "2 Koheitai" "3 Koheitai" "4 Koheitai" "5 Koheitai" "6 Koheitai" "7 Koheitai" "8 Koheitai" "9 Koheitai" "10 Koheitai" "11 Koheitai" 
+		"12 Koheitai" "13 Koheitai" "14 Koheitai" "15 Koheitai" "16 Koheitai" "17 Koheitai" "18 Koheitai" "19 Koheitai" "20 Koheitai" "21 Koheitai" "35 Koheitai" 
+		"22 Koheitai" "26 Koheitai" "27 Koheitai" "28 Koheitai" "29 Koheitai" "30 Koheitai" "31 Koheitai" "32 Koheitai" "33 Koheitai" "34 Koheitai" "25 Koheitai" 
+		"41 Koheitai" "42 Koheitai" "24 Koheitai" "43 Koheitai" "36 Koheitai" "37 Koheitai" "40 Koheitai" "44 Koheitai" "45 Koheitai" "46 Koheitai" "47 Koheitai" 
+		"48 Koheitai" "49 Koheitai" "50 Koheitai" "51 Koheitai" "52 Koheitai" "53 Koheitai" "54 Koheitai" "55 Koheitai" "56 Koheitai" "57 Koheitai" "59 Koheitai" 
+		"69 Koheitai" "70 Koheitai" "38 Koheitai" "39 Koheitai" "58 Koheitai" "60 Koheitai" "61 Koheitai" "62 Koheitai" "63 Koheitai" "64 Koheitai" "65 Koheitai" 
+		"66 Koheitai" "67 Koheitai" "68 Koheitai" "71 Koheitai" "72 Koheitai" "75 Koheitai" "76 Koheitai" 
+	}
+	tank_destroyer_brigade = {
+		"1 Kuchikusenshashidan" "2 Kuchikusenshashidan" "3 Kuchikusenshashidan" "4 Kuchikusenshashidan" "5 Kuchikusenshashidan" "6 Kuchikusenshashidan" "7 Kuchikusenshashidan" "8 Kuchikusenshashidan" "9 Kuchikusenshashidan" "10 Kuchikusenshashidan" "11 Kuchikusenshashidan" 
+		"12 Kuchikusenshashidan" "13 Kuchikusenshashidan" "14 Kuchikusenshashidan" "15 Kuchikusenshashidan" "16 Kuchikusenshashidan" "17 Kuchikusenshashidan" "18 Kuchikusenshashidan" "19 Kuchikusenshashidan" "20 Kuchikusenshashidan" "21 Kuchikusenshashidan" "35 Kuchikusenshashidan" 
+		"22 Kuchikusenshashidan" "26 Kuchikusenshashidan" "27 Kuchikusenshashidan" "28 Kuchikusenshashidan" "29 Kuchikusenshashidan" "30 Kuchikusenshashidan" "31 Kuchikusenshashidan" "32 Kuchikusenshashidan" "33 Kuchikusenshashidan" "34 Kuchikusenshashidan" "25 Kuchikusenshashidan" 
+		"41 Kuchikusenshashidan" "42 Kuchikusenshashidan" "24 Kuchikusenshashidan" "43 Kuchikusenshashidan" "36 Kuchikusenshashidan" "37 Kuchikusenshashidan" "40 Kuchikusenshashidan" "44 Kuchikusenshashidan" "45 Kuchikusenshashidan" "46 Kuchikusenshashidan" "47 Kuchikusenshashidan" 
+		"48 Kuchikusenshashidan" "49 Kuchikusenshashidan" "50 Kuchikusenshashidan" "51 Kuchikusenshashidan" "52 Kuchikusenshashidan" "53 Kuchikusenshashidan" "54 Kuchikusenshashidan" "55 Kuchikusenshashidan" "56 Kuchikusenshashidan" "57 Kuchikusenshashidan" "59 Kuchikusenshashidan" 
+		"69 Kuchikusenshashidan" "70 Kuchikusenshashidan" "38 Kuchikusenshashidan" "39 Kuchikusenshashidan" "58 Kuchikusenshashidan" "60 Kuchikusenshashidan" "61 Kuchikusenshashidan" "62 Kuchikusenshashidan" "63 Kuchikusenshashidan" "64 Kuchikusenshashidan" "65 Kuchikusenshashidan" 
+		"66 Kuchikusenshashidan" "67 Kuchikusenshashidan" "68 Kuchikusenshashidan" "71 Kuchikusenshashidan" "72 Kuchikusenshashidan" "75 Kuchikusenshashidan" "76 Kuchikusenshashidan" 
+	}
+	multi_role = {
+		"1 Sentou Hikoudan" "2 Sentou Hikoudan" "3 Sentou Hikoudan" "4 Sentou Hikoudan" "5 Sentou Hikoudan" "19 Sentou Hikoudan" "20 Sentou Hikoudan" "21 Sentou Hikoudan" "22 Sentou Hikoudan" "29 Sentou Hikoudan" "30 Sentou Hikoudan" 
+		"31 Sentou Hikoudan" "32 Sentou Hikoudan" "100 Sentou Hikoudan" "101 Sentou Hikoudan" "102 Sentou Hikoudan" "103 Sentou Hikoudan" "104 Sentou Hikoudan" "105 Sentou Hikoudan" "106 Sentou Hikoudan" "107 Sentou Hikoudan" "108 Sentou Hikoudan" 
+		"109 Sentou Hikoudan" "110 Sentou Hikoudan" "111 Sentou Hikoudan" "112 Sentou Hikoudan" "113 Sentou Hikoudan" "114 Sentou Hikoudan" "115 Sentou Hikoudan" "116 Sentou Hikoudan" "117 Sentou Hikoudan" "118 Sentou Hikoudan" "119 Sentou Hikoudan" 
+		"120 Sentou Hikoudan" 
+	}
+	interceptor = {
+		"1 Yougeki Sentou Hikoudan" "2 Yougeki Sentou Hikoudan" "3 Yougeki Sentou Hikoudan" "4 Yougeki Sentou Hikoudan" "5 Yougeki Sentou Hikoudan" "19 Yougeki Sentou Hikoudan" "20 Yougeki Sentou Hikoudan" "21 Yougeki Sentou Hikoudan" "22 Yougeki Sentou Hikoudan" "29 Yougeki Sentou Hikoudan" "30 Yougeki Sentou Hikoudan" 
+		"31 Yougeki Sentou Hikoudan" "32 Yougeki Sentou Hikoudan" "100 Yougeki Sentou Hikoudan" "101 Yougeki Sentou Hikoudan" "102 Yougeki Sentou Hikoudan" "103 Yougeki Sentou Hikoudan" "104 Yougeki Sentou Hikoudan" "105 Yougeki Sentou Hikoudan" "106 Yougeki Sentou Hikoudan" "107 Yougeki Sentou Hikoudan" "108 Yougeki Sentou Hikoudan" 
+		"109 Yougeki Sentou Hikoudan" "110 Yougeki Sentou Hikoudan" "111 Yougeki Sentou Hikoudan" "112 Yougeki Sentou Hikoudan" "113 Yougeki Sentou Hikoudan" "114 Yougeki Sentou Hikoudan" "115 Yougeki Sentou Hikoudan" "116 Yougeki Sentou Hikoudan" "117 Yougeki Sentou Hikoudan" "118 Yougeki Sentou Hikoudan" "119 Yougeki Sentou Hikoudan" 
+		"120 Yougeki Sentou Hikoudan" 
+	}
+	jet_int = {
+		"1 Yougeki Sentou Hikoudan" "2 Yougeki Sentou Hikoudan" "3 Yougeki Sentou Hikoudan" "4 Yougeki Sentou Hikoudan" "5 Yougeki Sentou Hikoudan" "19 Yougeki Sentou Hikoudan" "20 Yougeki Sentou Hikoudan" "21 Yougeki Sentou Hikoudan" "22 Yougeki Sentou Hikoudan" "29 Yougeki Sentou Hikoudan" "30 Yougeki Sentou Hikoudan" 
+		"31 Yougeki Sentou Hikoudan" "32 Yougeki Sentou Hikoudan" "100 Yougeki Sentou Hikoudan" "101 Yougeki Sentou Hikoudan" "102 Yougeki Sentou Hikoudan" "103 Yougeki Sentou Hikoudan" "104 Yougeki Sentou Hikoudan" "105 Yougeki Sentou Hikoudan" "106 Yougeki Sentou Hikoudan" "107 Yougeki Sentou Hikoudan" "108 Yougeki Sentou Hikoudan" 
+		"109 Yougeki Sentou Hikoudan" "110 Yougeki Sentou Hikoudan" "111 Yougeki Sentou Hikoudan" "112 Yougeki Sentou Hikoudan" "113 Yougeki Sentou Hikoudan" "114 Yougeki Sentou Hikoudan" "115 Yougeki Sentou Hikoudan" "116 Yougeki Sentou Hikoudan" "117 Yougeki Sentou Hikoudan" "118 Yougeki Sentou Hikoudan" "119 Yougeki Sentou Hikoudan" 
+		"120 Yougeki Sentou Hikoudan" 
+	}
+	jet_mr = {
+		"1 Sentou Hikoudan" "2 Sentou Hikoudan" "3 Sentou Hikoudan" "4 Sentou Hikoudan" "5 Sentou Hikoudan" "19 Sentou Hikoudan" "20 Sentou Hikoudan" "21 Sentou Hikoudan" "22 Sentou Hikoudan" "29 Sentou Hikoudan" "30 Sentou Hikoudan" 
+		"31 Sentou Hikoudan" "32 Sentou Hikoudan" "100 Sentou Hikoudan" "101 Sentou Hikoudan" "102 Sentou Hikoudan" "103 Sentou Hikoudan" "104 Sentou Hikoudan" "105 Sentou Hikoudan" "106 Sentou Hikoudan" "107 Sentou Hikoudan" "108 Sentou Hikoudan" 
+		"109 Sentou Hikoudan" "110 Sentou Hikoudan" "111 Sentou Hikoudan" "112 Sentou Hikoudan" "113 Sentou Hikoudan" "114 Sentou Hikoudan" "115 Sentou Hikoudan" "116 Sentou Hikoudan" "117 Sentou Hikoudan" "118 Sentou Hikoudan" "119 Sentou Hikoudan" 
+		"120 Sentou Hikoudan" 
+	}
+	strategic_bomber = {
+		"1 Jyubakugeki Hikoudan" "2 Jyubakugeki Hikoudan" "3 Jyubakugeki Hikoudan" "4 Jyubakugeki Hikoudan" "5 Jyubakugeki Hikoudan" "6 Jyubakugeki Hikoudan" "7 Jyubakugeki Hikoudan" "8 Jyubakugeki Hikoudan" "9 Jyubakugeki Hikoudan" "10 Jyubakugeki Hikoudan" "11 Jyubakugeki Hikoudan" 
+		"12 Jyubakugeki Hikoudan" "19 Jyubakugeki Hikoudan" "20 Jyubakugeki Hikoudan" "21 Jyubakugeki Hikoudan" "22 Jyubakugeki Hikoudan" "29 Jyubakugeki Hikoudan" "30 Jyubakugeki Hikoudan" "31 Jyubakugeki Hikoudan" "32 Jyubakugeki Hikoudan" "77 Jyubakugeki Hikoudan" "78 Jyubakugeki Hikoudan" 
+		"79 Jyubakugeki Hikoudan" "80 Jyubakugeki Hikoudan" "81 Jyubakugeki Hikoudan" "72 Jyubakugeki Hikoudan" "73 Jyubakugeki Hikoudan" "74 Jyubakugeki Hikoudan" "75 Jyubakugeki Hikoudan" "76 Jyubakugeki Hikoudan" "94 Jyubakugeki Hikoudan" "97 Jyubakugeki Hikoudan" "100 Jyubakugeki Hikoudan" 
+		"121 Jyubakugeki Hikoudan" "122 Jyubakugeki Hikoudan" "123 Jyubakugeki Hikoudan" "124 Jyubakugeki Hikoudan" "125 Jyubakugeki Hikoudan" "126 Jyubakugeki Hikoudan" "127 Jyubakugeki Hikoudan" "128 Jyubakugeki Hikoudan" "129 Jyubakugeki Hikoudan" "130 Jyubakugeki Hikoudan" "131 Jyubakugeki Hikoudan" 
+		"132 Jyubakugeki Hikoudan" "133 Jyubakugeki Hikoudan" "134 Jyubakugeki Hikoudan" "135 Jyubakugeki Hikoudan" "136 Jyubakugeki Hikoudan" "137 Jyubakugeki Hikoudan" "138 Jyubakugeki Hikoudan" "139 Jyubakugeki Hikoudan" "185 Jyubakugeki Hikoudan" 
+	}
+	tactical_bomber = {
+		"1 Keibakugeki Hikoudan" "2 Keibakugeki Hikoudan" "3 Keibakugeki Hikoudan" "4 Keibakugeki Hikoudan" "5 Keibakugeki Hikoudan" "6 Keibakugeki Hikoudan" "7 Keibakugeki Hikoudan" "8 Keibakugeki Hikoudan" "9 Keibakugeki Hikoudan" "10 Keibakugeki Hikoudan" "11 Keibakugeki Hikoudan" 
+		"12 Keibakugeki Hikoudan" "19 Keibakugeki Hikoudan" "20 Keibakugeki Hikoudan" "21 Keibakugeki Hikoudan" "22 Keibakugeki Hikoudan" "29 Keibakugeki Hikoudan" "30 Keibakugeki Hikoudan" "31 Keibakugeki Hikoudan" "32 Keibakugeki Hikoudan" "86 Keibakugeki Hikoudan" "87 Keibakugeki Hikoudan" 
+		"88 Keibakugeki Hikoudan" "89 Keibakugeki Hikoudan" "90 Keibakugeki Hikoudan" "91 Keibakugeki Hikoudan" "92 Keibakugeki Hikoudan" "23 Keibakugeki Hikoudan" "24 Keibakugeki Hikoudan" "25 Keibakugeki Hikoudan" "26 Keibakugeki Hikoudan" "27 Keibakugeki Hikoudan" "28 Keibakugeki Hikoudan" 
+		"95 Keibakugeki Hikoudan" "95 Keibakugeki Hikoudan" "96 Keibakugeki Hikoudan" "140 Keibakugeki Hikoudan" "141 Keibakugeki Hikoudan" "142 Keibakugeki Hikoudan" "143 Keibakugeki Hikoudan" "144 Keibakugeki Hikoudan" "145 Keibakugeki Hikoudan" "146 Keibakugeki Hikoudan" "147 Keibakugeki Hikoudan" 
+		"148 Keibakugeki Hikoudan" "149 Keibakugeki Hikoudan" "150 Keibakugeki Hikoudan" "151 Keibakugeki Hikoudan" 
+	}
+	jet_bomber = {
+		"1 Keibakugeki Hikoudan" "2 Keibakugeki Hikoudan" "3 Keibakugeki Hikoudan" "4 Keibakugeki Hikoudan" "5 Keibakugeki Hikoudan" "6 Keibakugeki Hikoudan" "7 Keibakugeki Hikoudan" "8 Keibakugeki Hikoudan" "9 Keibakugeki Hikoudan" "10 Keibakugeki Hikoudan" "11 Keibakugeki Hikoudan" 
+		"12 Keibakugeki Hikoudan" "19 Keibakugeki Hikoudan" "20 Keibakugeki Hikoudan" "21 Keibakugeki Hikoudan" "22 Keibakugeki Hikoudan" "29 Keibakugeki Hikoudan" "30 Keibakugeki Hikoudan" "31 Keibakugeki Hikoudan" "32 Keibakugeki Hikoudan" "86 Keibakugeki Hikoudan" "87 Keibakugeki Hikoudan" 
+		"88 Keibakugeki Hikoudan" "89 Keibakugeki Hikoudan" "90 Keibakugeki Hikoudan" "91 Keibakugeki Hikoudan" "92 Keibakugeki Hikoudan" "23 Keibakugeki Hikoudan" "24 Keibakugeki Hikoudan" "25 Keibakugeki Hikoudan" "26 Keibakugeki Hikoudan" "27 Keibakugeki Hikoudan" "28 Keibakugeki Hikoudan" 
+		"95 Keibakugeki Hikoudan" "95 Keibakugeki Hikoudan" "96 Keibakugeki Hikoudan" "140 Keibakugeki Hikoudan" "141 Keibakugeki Hikoudan" "142 Keibakugeki Hikoudan" "143 Keibakugeki Hikoudan" "144 Keibakugeki Hikoudan" "145 Keibakugeki Hikoudan" "146 Keibakugeki Hikoudan" "147 Keibakugeki Hikoudan" 
+		"148 Keibakugeki Hikoudan" "149 Keibakugeki Hikoudan" "150 Keibakugeki Hikoudan" "151 Keibakugeki Hikoudan" 
+	}
+	naval_bomber = {
+		"13 Kaigunkugeki Hikoudan" "14 Kaigunkugeki Hikoudan" "15 Kaigunkugeki Hikoudan" "16 Kaigunkugeki Hikoudan" "17 Kaigunkugeki Hikoudan" "18 Kaigunkugeki Hikoudan" "59 Kaigunkugeki Hikoudan" "60 Kaigunkugeki Hikoudan" "61 Kaigunkugeki Hikoudan" "62 Kaigunkugeki Hikoudan" "63 Kaigunkugeki Hikoudan" 
+		"64 Kaigunkugeki Hikoudan" "65 Kaigunkugeki Hikoudan" "66 Kaigunkugeki Hikoudan" "67 Kaigunkugeki Hikoudan" "98 Kaigunkugeki Hikoudan" "99 Kaigunkugeki Hikoudan" "183 Kaigunkugeki Hikoudan" "164 Kaigunkugeki Hikoudan" "165 Kaigunkugeki Hikoudan" "166 Kaigunkugeki Hikoudan" "167 Kaigunkugeki Hikoudan" 
+		"168 Kaigunkugeki Hikoudan" "169 Kaigunkugeki Hikoudan" "170 Kaigunkugeki Hikoudan" "171 Kaigunkugeki Hikoudan" "172 Kaigunkugeki Hikoudan" "33 Goraikugekiki Hikoudan" "34 Goraikugekiki Hikoudan" "35 Goraikugekiki Hikoudan" "36 Goraikugekiki Hikoudan" "37 Goraikugekiki Hikoudan" "38 Goraikugekiki Hikoudan" 
+		"39 Goraikugekiki Hikoudan" "40 Goraikugekiki Hikoudan" "41 Goraikugekiki Hikoudan" "42 Goraikugekiki Hikoudan" "95 Goraikugekiki Hikoudan" "95 Goraikugekiki Hikoudan" "96 Goraikugekiki Hikoudan" "97 Goraikugekiki Hikoudan" "98 Goraikugekiki Hikoudan" "99 Goraikugekiki Hikoudan" "93 Goraikugekiki Hikoudan" 
+		"68 Goraikugekiki Hikoudan" "69 Goraikugekiki Hikoudan" "70 Goraikugekiki Hikoudan" "71 Goraikugekiki Hikoudan" "182 Goraikugekiki Hikoudan" "173 Goraikugekiki Hikoudan" "174 Goraikugekiki Hikoudan" "175 Goraikugekiki Hikoudan" "176 Goraikugekiki Hikoudan" "177 Goraikugekiki Hikoudan" "178 Goraikugekiki Hikoudan" 
+			}
+	cas = {
+		"6 Sentoubakugeki Hikoudan" "7 Sentoubakugeki Hikoudan" "8 Sentoubakugeki Hikoudan" "9 Sentoubakugeki Hikoudan" "10 Sentoubakugeki Hikoudan" "11 Sentoubakugeki Hikoudan" "12 Sentoubakugeki Hikoudan" "43 Sentoubakugeki Hikoudan" "44 Sentoubakugeki Hikoudan" "45 Sentoubakugeki Hikoudan" "46 Sentoubakugeki Hikoudan" 
+		"47 Sentoubakugeki Hikoudan" "48 Sentoubakugeki Hikoudan" "82 Sentoubakugeki Hikoudan" "83 Sentoubakugeki Hikoudan" "84 Sentoubakugeki Hikoudan" "85 Sentoubakugeki Hikoudan" "184 Sentoubakugeki Hikoudan" "152 Sentoubakugeki Hikoudan" "153 Sentoubakugeki Hikoudan" "154 Sentoubakugeki Hikoudan" "155 Sentoubakugeki Hikoudan" 
+		"156 Sentoubakugeki Hikoudan" "157 Sentoubakugeki Hikoudan" "158 Sentoubakugeki Hikoudan" "159 Sentoubakugeki Hikoudan" "160 Sentoubakugeki Hikoudan" "161 Sentoubakugeki Hikoudan" "162 Sentoubakugeki Hikoudan" "163 Sentoubakugeki Hikoudan" 
+	}
+	transport_plane = {
+		"49 Yuso Hikoudan" "50 Yuso Hikoudan" "51 Yuso Hikoudan" "52 Yuso Hikoudan" "53 Yuso Hikoudan" "54 Yuso Hikoudan" "55 Yuso Hikoudan" "56 Yuso Hikoudan" "57 Yuso Hikoudan" "58 Yuso Hikoudan" "93 Yuso Hikoudan" 
+		"94 Yuso Hikoudan" "179 Yuso Hikoudan" "180 Yuso Hikoudan" 
+	}
+	battleship = {
+		"IJN Yamato" "IJN Musashi" "IJN Shinano" "IJN Hizen" "IJN Iki"
+		"IJN Echigo" "IJN Tango"
+		"IJN Tajima" "IJN Bingo" "IJN Hitachi" "IJN Chikugo"
+		"IJN Kawachi" "IJN Settsu"
+		"IJN Fuso" "IJN Yamashiro" "IJN Ise" "IJN Hyuga"
+		"IJN Nagato" "IJN Mutsu"
+		"IJN Tosa" "IJN Kaga"
+		"IJN Kii" "IJN Owari" "IJN Suruga" "IJN Omi"
+		"IJN Iwami" "IJN Higo"
+ 		"IJN Sagami" "IJN Suwo"
+		"IJN Tajima" "IJN Bingo" "IJN Hitachi" "IJN Chikugo"
+	}
+	light_cruiser = {
+		"IJN Kumano"
+		"IJN Katori" "IJN Kashima" "IJN Kashii" "IJN Kashihara"
+		"IJN Agano" "IJN Noshiro" "IJN Yahagi" "IJN Sakawa"
+		"IJN Oyodo" "IJN Niyodo" "IJN Onga" "IJN Yamakuni" "IJN Yabe" "IJN Matsuura" "IJN Rokkaku" "IJN Omaru" "IJN Midori"
+		"IJN Agatsuma" "IJN Ono" "IJN Iruma" "IJN Takase"
+		"IJN Chikuma" "IJN Hirado" "IJN Yahagi"
+		"IJN Tenryu" "IJN Tatsuta"
+		"IJN Kuma" "IJN Tana" "IJN Kitikami" "IJN Kiso" "IJN Oi"
+		"IJN Yubari"
+		"IJN Nagara" "IJN Natori" "IJN Kinu" "IJN Yura" "IJN Isuzu" "IJN Abukuma" 
+		"IJN Sendai" "IJN Naka" "IJN Jintsu" "IJN Kako" "IJN Minase" "IJN Otonase" "IJN Ayase"
+		"IJN Ioshima" "IJN Yasoshima"
+		"IJN Mogami" "IJN Mikuma" "IJN Suzuya" "IJN Kumano"		
+	}
+	heavy_cruiser = {
+		"IJN Kumano"
+		"IJN Tone" "IJN Chikuma"
+		"IJN Ibuki" "IJN Mizugaki"
+		"IJN Kasuga" "IJN Nisshin"
+		"IJN Furutaka" "IJN Kako"
+		"IJN Aoba" "IJN Kinugasa"
+		"IJN Myoko" "IJN Nachi" "IJN Haguro" "IJN Ashigara"
+		"IJN Takao" "IJN Atago" "IJN Maya" "IJN Chokai"
+		"IJN Mogami" "IJN Mikuma" "IJN Suzuya" "IJN Kumano"
+		"IJN Tone" "IJN Chikuma"
+		"IJN Kurobe" "IJN Sagami"		
+	}
+	battlecruiser = {
+		"IJN Toyoni" "IJN Takami" "IJN Nagi" "IJN Santo"
+		"IJN Ibuki" "IJN Kurama"
+		"IJN Kongo" "IJN Hiei" "IJN Haruna" "IJN Kirishima" 
+		"IJN Amagi" "IJN Akagi" "IJN Atago" "IJN Takao"
+		"IJN Norikura" "IJN Ena" "IJN Hotaka" "IJN Azuma"
+	}
+	destroyer = {
+		"22 Kuchikusentai" "23 Kuchikusentai" "24 Kuchikusentai" "25 Kuchikusentai" "26 Kuchikusentai" "27 Kuchikusentai" "28 Kuchikusentai" "29 Kuchikusentai" "30 Kuchikusentai" "31 Kuchikusentai" "32 Kuchikusentai" "33 Kuchikusentai" 
+		"34 Kuchikusentai" "35 Kuchikusentai" "36 Kuchikusentai" "37 Kuchikusentai" "38 Kuchikusentai" "39 Kuchikusentai" "40 Kuchikusentai" "41 Kuchikusentai" "42 Kuchikusentai" "43 Kuchikusentai" "44 Kuchikusentai" 
+		"45 Kuchikusentai" "46 Kuchikusentai" "47 Kuchikusentai" "48 Kuchikusentai" "49 Kuchikusentai" "50 Kuchikusentai" "51 Kuchikusentai" "52 Kuchikusentai" "53 Kuchikusentai" "54 Kuchikusentai" "55 Kuchikusentai" 
+		"56 Kuchikusentai" "57 Kuchikusentai" "58 Kuchikusentai" "59 Kuchikusentai" "60 Kuchikusentai" "61 Kuchikusentai" "62 Kuchikusentai" "63 Kuchikusentai" "64 Kuchikusentai" "65 Kuchikusentai" "66 Kuchikusentai" 
+		"67 Kuchikusentai" "68 Kuchikusentai" "69 Kuchikusentai" "70 Kuchikusentai" "71 Kuchikusentai" "72 Kuchikusentai" "73 Kuchikusentai" "74 Kuchikusentai" "75 Kuchikusentai" "76 Kuchikusentai" "77 Kuchikusentai" 
+		"78 Kuchikusentai" "79 Kuchikusentai" "80 Kuchikusentai" "81 Kuchikusentai" "82 Kuchikusentai" "83 Kuchikusentai" "84 Kuchikusentai" "85 Kuchikusentai" "86 Kuchikusentai" "87 Kuchikusentai" "88 Kuchikusentai" 
+		"89 Kuchikusentai" "90 Kuchikusentai" "91 Kuchikusentai" "92 Kuchikusentai" "93 Kuchikusentai" "94 Kuchikusentai" "95 Kuchikusentai" "96 Kuchikusentai" "97 Kuchikusentai" "98 Kuchikusentai" "99 Kuchikusentai" 
+		"100 Kuchikusentai" "1 Kuchikusentai" "2 Kuchikusentai" "3 Kuchikusentai" "4 Kuchikusentai" "5 Kuchikusentai" "6 Kuchikusentai" "7 Kuchikusentai" "8 Kuchikusentai" "9 Kuchikusentai" "10 Kuchikusentai" "11 Kuchikusentai" 
+		"12 Kuchikusentai" "13 Kuchikusentai" "14 Kuchikusentai" "15 Kuchikusentai" "16 Kuchikusentai" "17 Kuchikusentai" "18 Kuchikusentai" "19 Kuchikusentai" "20 Kuchikusentai" "21 Kuchikusentai"
+	}
+	carrier = {
+		"IJN Hiryu"
+		"IJN Shokaku" "IJN Zuikaku"
+		"IJN Hiyo" "IJN Junyo"
+		"IJN Taiho" 
+		"IJN Unryu" "IJN Amagi" "IJN Katsuragi" "IJN Kasagi" "IJN Aso" "IJN Ikoma" "IJN Kurama" "IJN Hiryu" "IJN Soryu" "IJN Karyu" "IJN Zuiryu" "IJN Shiryu" "IJN Kinryu" "IJN Koryu" "IJN Kokuryu" "IJN Fuji" "IJN Aino"
+		"IJN Shinano" "IJN Hizen" "IJN Iki" "IJN Yamato" "IJN Musashi"
+		"IJN Taiho" "IJN Shiho" "IJN Hakuho" "IJN Gyokuho" "IJN Tenho" "IJN Kinho" "IJN Saiho" "IJN Ginho" 
+		"IJN Kaga" "IJN Tosa"
+		"IJN Akagi" "IJN Amagi" "IJN Atago" "IJN Takao"
+		"IJN Soryu" "IJN Hiryu"
+	}
+	escort_carrier = {
+		"IJN Zuiho" "IJN Shoho"
+		"IJN Ryuho"
+		"IJN Chitose" "IJN Chiyoda"
+		"IJN Ibuki" "IJN Mizugaki"
+		"IJN Hosho" "IJN Shokaku"
+		"IJN Ryujo"
+ 	}
+	submarine = {
+		"9 Sensuisentai" "10 Sensuisentai" "11 Sensuisentai" "12 Sensuisentai" "13 Sensuisentai" "14 Sensuisentai" "15 Sensuisentai" "16 Sensuisentai" "17 Sensuisentai" "18 Sensuisentai" "19 Sensuisentai" "20 Sensuisentai" "21 Sensuisentai" "22 Sensuisentai" 
+		"23 Sensuisentai" "24 Sensuisentai" "25 Sensuisentai" "26 Sensuisentai" "27 Sensuisentai" "28 Sensuisentai" "29 Sensuisentai" "30 Sensuisentai" "31 Sensuisentai" "32 Sensuisentai" "33 Sensuisentai" 
+		"34 Sensuisentai" "35 Sensuisentai" "36 Sensuisentai" "37 Sensuisentai" "38 Sensuisentai" "39 Sensuisentai" "40 Sensuisentai" "41 Sensuisentai" "42 Sensuisentai" "43 Sensuisentai" "44 Sensuisentai" 
+		"45 Sensuisentai" "46 Sensuisentai" "47 Sensuisentai" "48 Sensuisentai" "49 Sensuisentai" "50 Sensuisentai" "51 Sensuisentai" "52 Sensuisentai" "53 Sensuisentai" "54 Sensuisentai" "55 Sensuisentai" 
+		"56 Sensuisentai" "57 Sensuisentai" "58 Sensuisentai" "59 Sensuisentai" "60 Sensuisentai" "61 Sensuisentai" "62 Sensuisentai" "63 Sensuisentai" "64 Sensuisentai" "65 Sensuisentai" "66 Sensuisentai" 
+		"67 Sensuisentai" "68 Sensuisentai" "69 Sensuisentai" "70 Sensuisentai" "71 Sensuisentai" "72 Sensuisentai" "73 Sensuisentai" "74 Sensuisentai" "75 Sensuisentai" "76 Sensuisentai" "77 Sensuisentai" 
+		"78 Sensuisentai" "79 Sensuisentai" "80 Sensuisentai" "81 Sensuisentai" "82 Sensuisentai" "83 Sensuisentai" "84 Sensuisentai" "85 Sensuisentai" "86 Sensuisentai" "87 Sensuisentai" "88 Sensuisentai" 
+		"89 Sensuisentai" "90 Sensuisentai" "91 Sensuisentai" "92 Sensuisentai" "93 Sensuisentai" "94 Sensuisentai" "95 Sensuisentai" "96 Sensuisentai" "97 Sensuisentai" "98 Sensuisentai" "99 Sensuisentai" 
+		"100 Sensuisentai" "1 Sensuisentai" "2 Sensuisentai" "3 Sensuisentai" "4 Sensuisentai" "5 Sensuisentai" "6 Sensuisentai" "7 Sensuisentai" "8 Sensuisentai" 
+	}
+	transport_ship = {
+		"1 Yuso Sentai" "2 Yuso Sentai" "3 Yuso Sentai" "4 Yuso Sentai" "5 Yuso Sentai" "6 Yuso Sentai" "7 Yuso Sentai" "8 Yuso Sentai" "9 Yuso Sentai" "10 Yuso Sentai" "11 Yuso Sentai" 
+		"12 Yuso Sentai" "13 Yuso Sentai" "14 Yuso Sentai" "15 Yuso Sentai" "16 Yuso Sentai" "17 Yuso Sentai" "18 Yuso Sentai" "19 Yuso Sentai" "20 Yuso Sentai" "21 Yuso Sentai" "22 Yuso Sentai" 
+		"23 Yuso Sentai" "24 Yuso Sentai" "25 Yuso Sentai" "26 Yuso Sentai" "27 Yuso Sentai" "28 Yuso Sentai" "29 Yuso Sentai" "30 Yuso Sentai" "31 Yuso Sentai" "32 Yuso Sentai" "33 Yuso Sentai" 
+		"34 Yuso Sentai" "35 Yuso Sentai" "36 Yuso Sentai" "37 Yuso Sentai" "38 Yuso Sentai" "39 Yuso Sentai" "40 Yuso Sentai" "41 Yuso Sentai" "42 Yuso Sentai" "43 Yuso Sentai" "44 Yuso Sentai" 
+		"45 Yuso Sentai" "46 Yuso Sentai" "47 Yuso Sentai" "48 Yuso Sentai" "49 Yuso Sentai" "50 Yuso Sentai" "51 Yuso Sentai" "52 Yuso Sentai" "53 Yuso Sentai" "54 Yuso Sentai" "55 Yuso Sentai" 
+		"56 Yuso Sentai" "57 Yuso Sentai" "58 Yuso Sentai" "59 Yuso Sentai" "60 Yuso Sentai" "61 Yuso Sentai" "62 Yuso Sentai" "63 Yuso Sentai" "64 Yuso Sentai" "65 Yuso Sentai" "66 Yuso Sentai" 
+		"67 Yuso Sentai" "68 Yuso Sentai" "69 Yuso Sentai" "70 Yuso Sentai" "71 Yuso Sentai" "72 Yuso Sentai" "73 Yuso Sentai" "74 Yuso Sentai" "75 Yuso Sentai" "76 Yuso Sentai" "77 Yuso Sentai" 
+		"78 Yuso Sentai" "79 Yuso Sentai" "80 Yuso Sentai" "81 Yuso Sentai" "82 Yuso Sentai" "83 Yuso Sentai" "84 Yuso Sentai" "85 Yuso Sentai" "86 Yuso Sentai" "87 Yuso Sentai" "88 Yuso Sentai" 
+		"89 Yuso Sentai" "90 Yuso Sentai" "91 Yuso Sentai" "92 Yuso Sentai" "93 Yuso Sentai" "94 Yuso Sentai" "95 Yuso Sentai" "96 Yuso Sentai" "97 Yuso Sentai" "98 Yuso Sentai" "99 Yuso Sentai" 
+		"100 Yuso Sentai" 
+	}
+
+}
+
+ministers = {
+	5001 = {
+		name = "Emperor Hirohito"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5001
+		head_of_state = stern_imperialist
+		start_date = 1936.1.1
+	}
+	5002 = {
+		name = "Okada Keisuke"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5002
+		head_of_government = happy_amateur
+		foreign_minister = iron_fisted_brute
+		start_date = 1936.1.1
+	}
+	5003 = {
+		name = "Hirota Koki"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5003
+		foreign_minister = great_compromiser
+		head_of_government = happy_amateur
+		start_date = 1936.1.1
+	}
+	5004 = {
+		name = "Machida Chuji"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5004
+		armament_minister = laissez_faires_capitalist
+		minister_of_intelligence = technical_specialist
+		start_date = 1936.1.1
+	}
+	5005 = {
+		name = "Goto Fumio"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5005
+		minister_of_security = silent_lawyer
+		head_of_government = naive_optimist
+		start_date = 1936.1.1
+	}
+	5006 = {
+		name = "Okamura Yasuji"
+		ideology = paternal_autocrat
+		loyalty = 0.25
+		picture = M5006
+		minister_of_intelligence = political_specialist
+		start_date = 1936.1.1
+	}
+	5007 = {
+		name = "Prince Kanin Kotohito"
+		ideology = paternal_autocrat
+		loyalty = 0.25
+		picture = M5007
+		chief_of_staff = school_of_defence
+		chief_of_army = static_defence_doctrine
+		start_date = 1936.1.1
+	}
+	5009 = {
+		name = "Osumi Mineo"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M5009
+		chief_of_navy = power_projection_doctrine
+		start_date = 1936.1.1
+	}
+	5010 = {
+		name = "Yamamoto Isoroku"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M5010
+		chief_of_air = naval_aviation_doctrine
+		chief_of_navy = power_projection_doctrine
+		start_date = 1936.1.1
+	}
+	5011 = {
+		name = "Prince Chichibu"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5207
+		head_of_state = ruthless_powermonger
+		start_date = 1936.1.1
+	}
+	5025 = {
+		name = "Nosaka Sanzo"
+		ideology = leninist
+		loyalty = 1.00
+		picture = M5011
+		head_of_state = barking_buffoon
+		minister_of_security = man_of_the_people
+		start_date = 1936.1.1
+	}
+	5033 = {
+		name = "Hayashi Senjuro"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5033
+		head_of_government = smiling_oilman
+		foreign_minister = general_staffer
+		start_date = 1936.1.1
+	}
+	5034 = {
+		name = "Konoe Fumimaro"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5034
+		foreign_minister = apologetic_clerk
+		head_of_government = flamboyant_tough_guy
+		start_date = 1937.1.1
+	}
+	5035 = {
+		name = "Abe Nobuyuki"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5035
+		head_of_government = political_protege
+		foreign_minister = iron_fisted_brute
+		chief_of_staff = school_of_fire_support
+		start_date = 1938.1.1
+	}
+	5036 = {
+		name = "Yonai Mitsumasa"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5036
+		head_of_government = ambitious_union_boss
+		armament_minister = battle_fleet_proponent
+		start_date = 1940.1.1
+	}
+	5037 = {
+		name = "Suzuki Kantaro"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5037
+		head_of_government = corporate_suit
+		minister_of_intelligence = political_specialist
+		foreign_minister = biased_intellectual
+		start_date = 1945.1.1
+	}
+	5038 = {
+		name = "Higashikuni Naruhiko"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5038
+		head_of_government = silent_workhorse
+		chief_of_air = carpet_bombing_doctrine
+		start_date = 1945.1.1
+	}
+	5039 = {
+		name = "Terauchi Hisaichi"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5039
+		head_of_government = naive_optimist
+		armament_minister = tank_proponent
+		start_date = 1946.1.1
+	}
+	5041 = {
+		name = "Hiranuma Kiichiro"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5041
+		head_of_government = old_admiral
+		minister_of_security = prince_of_terror
+		start_date = 1939.1.1
+	}
+	5042 = {
+		name = "Tojo Hideki"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M5042
+		head_of_government = old_general
+		armament_minister = infantry_proponent
+		minister_of_security = prince_of_terror
+		chief_of_staff = school_of_psychology
+		chief_of_army = elastic_defence_doctrine
+		chief_of_air = army_aviation_doctrine
+		foreign_minister = general_staffer
+		start_date = 1941.1.1
+	}
+	5043 = {
+		name = "Koiso Kuniaki"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M5043
+		head_of_government = corporate_suit
+		minister_of_intelligence = industrial_specialist
+		start_date = 1944.1.1
+	}
+	5027 = {
+		name = "Katayama Tetsu"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M5027
+		head_of_government = political_protege
+		minister_of_intelligence = naval_intelligence_specialist
+		start_date = 1945.1.1
+	}
+	5028 = {
+		name = "Ugaki Kazushige"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5028
+		head_of_government = silent_workhorse
+		foreign_minister = biased_intellectual
+		minister_of_intelligence = political_specialist
+		start_date = 1936.1.1
+	}
+	5029 = {
+		name = "Suzuki Kisaburo"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5029
+		head_of_government = happy_amateur
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1941.1.1
+	}
+	5030 = {
+		name = "Shidehara Kijuro"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5030
+		head_of_government = naive_optimist
+		armament_minister = tank_proponent
+		start_date = 1945.1.1
+	}
+	5031 = {
+		name = "Yoshida Shigeru"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5031
+		head_of_government = backroom_backstabber
+		foreign_minister = apologetic_clerk
+		armament_minister = strategic_air_proponent
+		start_date = 1946.1.1
+	}
+	5032 = {
+		name = "Hatoyama Ichiro"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5032
+		head_of_government = political_protege
+		armament_minister = administrative_genius
+		start_date = 1954.1.1
+	}
+	5044 = {
+		name = "Miyamoto Kenji"
+		ideology = leninist
+		loyalty = 1.00
+		picture = M5012
+		head_of_government = smiling_oilman
+		minister_of_intelligence = industrial_specialist
+		start_date = 1936.1.1
+	}
+	5045 = {
+		name = "Nosako Sanzo"
+		ideology = social_democrat
+		loyalty = 0.50
+		picture = M5011
+		foreign_minister = the_cloak_n_dagger_schemer
+		minister_of_intelligence = industrial_specialist
+		start_date = 1937.1.1
+	}
+	5046 = {
+		name = "Ashida Hitoshi"
+		ideology = social_liberal
+		loyalty = 1.00
+		picture = M5046
+		foreign_minister = apologetic_clerk
+		head_of_government = smiling_oilman
+		start_date = 1945.1.1
+	}
+	5047 = {
+		name = "Yoshizawa Kenkichi"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5047
+		foreign_minister = ideological_crusader
+		start_date = 1936.1.1
+	}
+	5050 = {
+		name = "Shigemitsu Mamoru"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5050
+		foreign_minister = great_compromiser
+		start_date = 1941.1.1
+	}
+	5053 = {
+		name = "Sato Naotake"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5053
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1937.1.1
+	}
+	5057 = {
+		name = "Arita Hachiro"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5057
+		foreign_minister = ideological_crusader
+		start_date = 1936.1.1
+	}
+	5059 = {
+		name = "Nomura Kichisaburo"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5059
+		foreign_minister = general_staffer
+		start_date = 1939.1.1
+	}
+	5060 = {
+		name = "Matsuoka Yosuke"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5060
+		foreign_minister = ideological_crusader
+		start_date = 1940.1.1
+	}
+	5061 = {
+		name = "Toyoda Teijiro"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5061
+		foreign_minister = iron_fisted_brute
+		armament_minister = air_to_ground_proponent
+		chief_of_air = vertical_envelopment_doctrine
+		start_date = 1941.1.1
+	}
+	5065 = {
+		name = "Togo Shigenori"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5065
+		foreign_minister = biased_intellectual
+		start_date = 1941.1.1
+	}
+	5066 = {
+		name = "Tani Masayuki"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5066
+		foreign_minister = apologetic_clerk
+		start_date = 1942.1.1
+	}
+	5068 = {
+		name = "Shiga Yoshio"
+		ideology = leninist
+		loyalty = 0.25
+		picture = M5013
+		foreign_minister = biased_intellectual
+		start_date = 1936.1.1
+	}
+	5069 = {
+		name = "Yoshino Shinji"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M5069
+		armament_minister = laissez_faires_capitalist
+		start_date = 1937.1.1
+	}
+	5070 = {
+		name = "Mizutani Chosaburo"
+		ideology = left_wing_radical
+		loyalty = 1.00
+		picture = M5070
+		armament_minister = resource_industrialist
+		start_date = 1945.1.1
+	}
+	5071 = {
+		name = "Hoshijima Jiro"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M5071
+		armament_minister = administrative_genius
+		start_date = 1947.1.1
+	}
+	5072 = {
+		name = "Ogawa Gotaro"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5072
+		armament_minister = resource_industrialist
+		minister_of_intelligence = dismal_enigma
+		start_date = 1936.1.1
+	}
+	5073 = {
+		name = "Godo Takuo"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5073
+		armament_minister = battle_fleet_proponent
+		start_date = 1937.1.1
+	}
+	5079 = {
+		name = "Ogasawara Sankuro"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5079
+		armament_minister = laissez_faires_capitalist
+		start_date = 1946.1.1
+	}
+	5080 = {
+		name = "Kawasaki Takukichi"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5080
+		armament_minister = air_superiority_proponent
+		start_date = 1936.1.1
+	}
+	5081 = {
+		name = "Ikeda Shigeaki"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5081
+		armament_minister = resource_industrialist
+		start_date = 1938.1.1
+	}
+	5082 = {
+		name = "Hatta Yoshiaki"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5082
+		armament_minister = military_entrepreneur
+		start_date = 1938.1.1
+	}
+	5083 = {
+		name = "Kobayashi Seiichi"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5083
+		armament_minister = laissez_faires_capitalist
+		start_date = 1940.1.1
+	}
+	5084 = {
+		name = "Fujiwara Ginjiro"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5084
+		armament_minister = administrative_genius
+		start_date = 1941.1.1
+	}
+	5085 = {
+		name = "Kishi Nobusuke"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5085
+		armament_minister = theoretical_scientist
+		head_of_government = backroom_backstabber
+		foreign_minister = ideological_crusader
+		start_date = 1942.1.1
+	}
+	5087 = {
+		name = "Sakonji Seizo"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5087
+		armament_minister = submarine_proponent
+		start_date = 1944.1.1
+	}
+	5090 = {
+		name = "Shoda Kazue"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M5090
+		armament_minister = military_entrepreneur
+		start_date = 1936.1.1
+	}
+	5091 = {
+		name = "Kobayashi Ichizo"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = M5083
+		armament_minister = resource_industrialist
+		start_date = 1941.1.1
+	}
+	5093 = {
+		name = "Nakajima Chikuhei"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5093
+		armament_minister = air_to_sea_proponent
+		start_date = 1945.1.1
+	}
+	5094 = {
+		name = "Kato Sotomatsu"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5094
+		armament_minister = tank_proponent
+		start_date = 1943.1.1
+	}
+	5095 = {
+		name = "Tokuda Kyuichi"
+		ideology = leninist
+		loyalty = 0.50
+		picture = M5014
+		armament_minister = resource_industrialist
+		start_date = 1936.1.1
+	}
+	5096 = {
+		name = "Yamamoto Tatsuo"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M5096
+		minister_of_security = man_of_the_people
+		start_date = 1936.1.1
+	}
+	5098 = {
+		name = "Kimura Kozaemon"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M5098
+		minister_of_security = man_of_the_people
+		start_date = 1945.1.1
+	}
+	5099 = {
+		name = "Kawarada Kakichi"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5099
+		minister_of_security = man_of_the_people
+		start_date = 1936.1.1
+	}
+	5100 = {
+		name = "Obara Naoshi"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5100
+		minister_of_security = back_stabber
+		start_date = 1939.1.1
+	}
+	5101 = {
+		name = "Omura Seiichi"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5101
+		minister_of_security = silent_lawyer
+		start_date = 1945.1.1
+	}
+	5102 = {
+		name = "Horikiri Zenjiro"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5102
+		minister_of_security = crime_fighter
+		minister_of_intelligence = research_specialist
+		start_date = 1945.1.1
+	}
+	5103 = {
+		name = "Yamazaki Iwao"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5103
+		minister_of_security = man_of_the_people
+		start_date = 1945.1.1
+	}
+	5105 = {
+		name = "Ushio Shigenosuke"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5105
+		minister_of_security = crime_fighter
+		start_date = 1936.1.1
+	}
+	5106 = {
+		name = "Suetsugu Nobumasa"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5106
+		minister_of_security = silent_lawyer
+		start_date = 1937.1.1
+	}
+	5107 = {
+		name = "Baba Eiichi"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5107
+		minister_of_security = prince_of_terror
+		start_date = 1937.1.1
+	}
+	5108 = {
+		name = "Kido Koichi"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5108
+		minister_of_security = crime_fighter
+		start_date = 1938.1.1
+	}
+	5110 = {
+		name = "Yasui Eiji"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5110
+		minister_of_security = crooked_kleptocrat
+		start_date = 1941.1.1
+	}
+	5111 = {
+		name = "Kobayashi Seizo"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M5111
+		minister_of_security = man_of_the_people
+		start_date = 1942.1.1
+	}
+	5112 = {
+		name = "Tanabe Harumichi"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5112
+		minister_of_security = man_of_the_people
+		start_date = 1943.1.1
+	}
+	5113 = {
+		name = "Yusawa Michio"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5113
+		minister_of_security = silent_lawyer
+		start_date = 1944.1.1
+	}
+	5114 = {
+		name = "Abe Genki"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5114
+		minister_of_security = silent_lawyer
+		start_date = 1946.1.1
+	}
+	5115 = {
+		name = "Fujie Keisuke"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5115
+		minister_of_security = prince_of_terror
+		start_date = 1936.1.1
+	}
+	5116 = {
+		name = "Nakajima Kesago"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5116
+		minister_of_security = man_of_the_people
+		start_date = 1937.1.1
+	}
+	5117 = {
+		name = "Tanaka Seiichi"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5117
+		minister_of_security = back_stabber
+		start_date = 1938.1.1
+	}
+	5118 = {
+		name = "Hirabayashi Morito"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5118
+		minister_of_security = silent_lawyer
+		start_date = 1939.1.1
+	}
+	5120 = {
+		name = "Teshima Fusataro"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5120
+		minister_of_security = crime_fighter
+		start_date = 1940.1.1
+	}
+	5121 = {
+		name = "Kodama Hideo"
+		ideology = fascistic
+		loyalty = 0.50
+		picture = M5109
+		minister_of_security = silent_lawyer
+		start_date = 1941.1.1
+	}
+	5122 = {
+		name = "Nakamura Aketo"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5122
+		minister_of_security = crime_fighter
+		start_date = 1941.1.1
+	}
+	5124 = {
+		name = "Kato Hakujiro"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5124
+		minister_of_security = man_of_the_people
+		start_date = 1943.1.1
+	}
+	5125 = {
+		name = "Odachi Shigeo"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5125
+		minister_of_security = man_of_the_people
+		start_date = 1944.1.1
+	}
+	5126 = {
+		name = "Iimura Jo"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5126
+		minister_of_security = crime_fighter
+		start_date = 1945.1.1
+	}
+	5134 = {
+		name = "Takasu Shiro"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5134
+		minister_of_intelligence = industrial_specialist
+		start_date = 1936.1.1
+	}
+	5135 = {
+		name = "Nomura Naokuni"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5135
+		minister_of_intelligence = naval_intelligence_specialist
+		start_date = 1937.1.1
+	}
+	5136 = {
+		name = "Kano Jigoro"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5136
+		minister_of_intelligence = dismal_enigma
+		start_date = 1938.1.1
+	}
+	5137 = {
+		name = "Oka Takazumi"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5137
+		minister_of_intelligence = research_specialist
+		start_date = 1938.1.1
+	}
+	5138 = {
+		name = "Maeda Minoru"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5138
+		minister_of_intelligence = technical_specialist
+		start_date = 1940.1.1
+	}
+	5141 = {
+		name = "Honma Masaharu"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5141
+		minister_of_intelligence = dismal_enigma
+		start_date = 1937.1.1
+	}
+	5142 = {
+		name = "Higuchi Kiichiro"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5142
+		minister_of_intelligence = research_specialist
+		start_date = 1938.1.1
+	}
+	5143 = {
+		name = "Araki Sadao"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5143
+		minister_of_intelligence = naval_intelligence_specialist
+		start_date = 1939.1.1
+	}
+	5144 = {
+		name = "Tsuchihashi Yuitsu"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5144
+		minister_of_intelligence = technical_specialist
+		chief_of_army = decisive_battle_doctrine
+		start_date = 1940.1.1
+	}
+	5147 = {
+		name = "Tasuku Nakazawa"
+		ideology = social_democrat
+		loyalty = 0.25
+		picture = M5147
+		chief_of_staff = school_of_psychology
+		start_date = 1937.1.1
+	}
+	5148 = {
+		name = "Osamura Kajika"
+		ideology = social_democrat
+		loyalty = 0.25
+		picture = M5148
+		chief_of_staff = school_of_fire_support
+		start_date = 1947.1.1
+	}
+	5149 = {
+		name = "Hirotsugu Hayashida"
+		ideology = social_conservative
+		loyalty = 0.25
+		picture = M5149
+		chief_of_staff = school_of_fire_support
+		start_date = 1936.1.1
+	}
+	5150 = {
+		name = "Kanichiro Tashiro"
+		ideology = social_conservative
+		loyalty = 0.25
+		picture = M5150
+		chief_of_staff = school_of_psychology
+		start_date = 1936.1.1
+	}
+	5151 = {
+		name = "Kazuo Tanigawa"
+		ideology = social_conservative
+		loyalty = 0.25
+		picture = M5151
+		chief_of_staff = school_of_mass_combat
+		start_date = 1945.1.1
+	}
+	5154 = {
+		name = "Mikawa Gunichi"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5154
+		chief_of_staff = school_of_psychology
+		start_date = 1945.1.1
+	}
+	5155 = {
+		name = "Sugiyama Hajime"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5155
+		chief_of_staff = school_of_defence
+		chief_of_army = decisive_battle_doctrine
+		start_date = 1936.1.1
+	}
+	5157 = {
+		name = "Umezu Yoshijiro"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5157
+		chief_of_staff = school_of_fire_support
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1944.1.1
+	}
+	5158 = {
+		name = "Ryonosuke Kusaka"
+		ideology = leninist
+		loyalty = 0.75
+		picture = M5017
+		chief_of_staff = school_of_defence
+		start_date = 1936.1.1
+	}
+	5159 = {
+		name = "Imai Takeo"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M5018
+		chief_of_army = elastic_defence_doctrine
+		start_date = 1937.1.1
+	}
+	5160 = {
+		name = "Inanba Satoru"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5160
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1936.1.1
+	}
+	5163 = {
+		name = "Fujioka Takeo"
+		ideology = paternal_autocrat
+		loyalty = 0.25
+		picture = M5163
+		chief_of_army = elastic_defence_doctrine
+		start_date = 1941.1.1
+	}
+	5164 = {
+		name = "Aotsu Kikutara"
+		ideology = paternal_autocrat
+		loyalty = 0.25
+		picture = M5164
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1945.1.1
+	}
+	5169 = {
+		name = "Kawai Akira"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M5019
+		chief_of_navy = decisive_naval_battle_doctrine
+		start_date = 1937.1.1
+	}
+	5170 = {
+		name = "Shimada Shigetaro"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5170
+		chief_of_navy = decisive_naval_battle_doctrine
+		start_date = 1936.1.1
+	}
+	5171 = {
+		name = "Toyoda Soemu"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5171
+		chief_of_navy = decisive_naval_battle_doctrine
+		start_date = 1944.1.1
+	}
+	5172 = {
+		name = "Fujita Hisanori"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5172
+		chief_of_navy = decisive_naval_battle_doctrine
+		start_date = 1936.1.1
+	}
+	5173 = {
+		name = "Nagano Osami"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5173
+		chief_of_navy = power_projection_doctrine
+		start_date = 1941.1.1
+	}
+	5175 = {
+		name = "Oikawa Koshiro"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5175
+		chief_of_navy = base_control_doctrine
+		chief_of_air = naval_aviation_doctrine
+		start_date = 1944.1.1
+	}
+	5179 = {
+		name = "Fukui Yoshi"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M5020
+		chief_of_air = air_superiority_doctrine
+		start_date = 1936.1.1
+	}
+	5180 = {
+		name = "Inoue Shigeyoshi"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5180
+		chief_of_air = naval_aviation_doctrine
+		start_date = 1936.1.1
+	}
+	5181 = {
+		name = "Tsukahara Nishizou"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5181
+		chief_of_air = air_superiority_doctrine
+		start_date = 1941.1.1
+	}
+	5188 = {
+		name = "Wada Misao"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5182
+		chief_of_air = vertical_envelopment_doctrine
+		start_date = 1945.1.1
+	}
+	5189 = {
+		name = "Hata Shunroku"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5189
+		chief_of_air = army_aviation_doctrine
+		start_date = 1936.1.1
+	}
+	5192 = {
+		name = "Yamashita Tomoyuki"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5192
+		chief_of_air = carpet_bombing_doctrine
+		start_date = 1940.1.1
+	}
+	5193 = {
+		name = "Doihara Kenji"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5193
+		chief_of_air = naval_aviation_doctrine
+		start_date = 1941.1.1
+	}
+	5194 = {
+		name = "Anami Korechika"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5194
+		chief_of_air = vertical_envelopment_doctrine
+		start_date = 1942.1.1
+	}
+	5195 = {
+		name = "Ushiroku Jun"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5195
+		chief_of_air = army_aviation_doctrine
+		start_date = 1943.1.1
+	}
+	5196 = {
+		name = "Sugawara Michio"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M5196
+		chief_of_air = air_superiority_doctrine
+		start_date = 1944.1.1
+	}
+	5197 = {
+		name = "Kawabe Masakazu"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M5197
+		chief_of_air = army_aviation_doctrine
+		start_date = 1945.1.1
+	}
+	5201 = {
+		name = "Koga Mineichi"
+		ideology = fascistic
+		loyalty = 1.00
+		picture = L101243
+		chief_of_navy = decisive_naval_battle_doctrine
+		start_date = 1943.1.1
+	}
+	5202 = {
+		name = "Ozawa Jisaburo"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = L101273
+		chief_of_navy = decisive_naval_battle_doctrine
+		start_date = 1937.1.1
+	}
+	5210 = {
+		name = "Ishibashi Tanzan"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5210
+		minister_of_security = silent_lawyer
+		head_of_government = silent_workhorse
+		start_date = 1948.1.1
+	}
+	5213 = {
+		name = "Ikeda Hayato"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5213
+		head_of_government = corporate_suit
+		armament_minister = infantry_proponent
+		start_date = 1960.1.1
+	}
+	5214 = {
+		name = "Suehiro Nishio"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M5214
+		head_of_government = flamboyant_tough_guy
+		armament_minister = military_entrepreneur
+		start_date = 1960.1.1
+	}
+	5215 = {
+		name = "Kanichiro Kubota"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M5215
+		foreign_minister = iron_fisted_brute
+		start_date = 1954.1.1
+	}
+	5217 = {
+		name = "Fujiyama Aiichiro"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5217
+		foreign_minister = apologetic_clerk
+		start_date = 1957.1.1
+	}
+	5218 = {
+		name = "Kosaka Zentaro"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5218
+		foreign_minister = biased_intellectual
+		start_date = 1960.1.1
+	}
+	5219 = {
+		name = "Ohira Masayoshi"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5219
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1962.1.1
+	}
+	5221 = {
+		name = "Mukai Tadaharu"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5221
+		armament_minister = strategic_air_proponent
+		start_date = 1952.1.1
+	}
+	5222 = {
+		name = "Ichimada Hisato"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5222
+		armament_minister = submarine_proponent
+		start_date = 1954.1.1
+	}
+	5223 = {
+		name = "Sato Eisaku"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5223
+		armament_minister = administrative_genius
+		start_date = 1958.1.1
+	}
+	5224 = {
+		name = "Mizuta Mikio"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5224
+		armament_minister = resource_industrialist
+		start_date = 1960.1.1
+	}
+	5225 = {
+		name = "Tanaka Kakuei"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M5225
+		armament_minister = corrupt_kleptocrat
+		start_date = 1962.1.1
+	}
+	5227 = {
+		name = "Usami Makoto"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M5227
+		armament_minister = theoretical_scientist
+		start_date = 1960.1.1
+	}
+	5228 = {
+		name = "Ohashi Takeo"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5228
+		minister_of_security = crooked_kleptocrat
+		start_date = 1950.1.1
+	}
+	5229 = {
+		name = "Kimura Tokutaro"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5229
+		minister_of_security = efficient_sociopath
+		start_date = 1951.1.1
+	}
+	5230 = {
+		name = "Inukai Takeru"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5230
+		minister_of_security = back_stabber
+		start_date = 1952.1.1
+	}
+	5231 = {
+		name = "Nakamura Umekichi"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5231
+		minister_of_security = compassionate_gentleman
+		start_date = 1954.1.1
+	}
+	5232 = {
+		name = "Ueki Koshiro"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5232
+		minister_of_security = silent_lawyer
+		start_date = 1957.1.1
+	}
+	5233 = {
+		name = "Hanamura Shiro"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M5233
+		minister_of_security = prince_of_terror
+		minister_of_intelligence = dismal_enigma
+		start_date = 1957.1.1
+	}
+	5234 = {
+		name = "Morinaga Teiichiro"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M5234
+		minister_of_security = crime_fighter
+		start_date = 1960.1.1
+	}
+	5235 = {
+		name = "Koto Ryogoro"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5235
+		minister_of_intelligence = political_specialist
+		start_date = 1954.1.1
+	}
+	5236 = {
+		name = "Ohara Naoshi"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M5236
+		minister_of_intelligence = technical_specialist
+		start_date = 1957.1.1
+	}
+	# Generic dummy ministers
+	95461 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95462 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		start_date = 1936.1.1
+	}
+	95463 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95464 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95465 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		start_date = 1936.1.1
+	}
+	95466 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95467 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95468 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+}

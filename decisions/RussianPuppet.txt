@@ -1,0 +1,36 @@
+diplomatic_decisions = {
+
+	give_soviet_lands_to_russia = {
+		major = yes
+		potential = {
+			exists = RUS
+			RUS = {
+				vassal_of = THIS
+			}
+			any_owned_province = {
+				is_core = SOV
+				not = { is_core = THIS }
+			}
+		}
+		allow = {
+			not = {
+				any_neighbor_country = {
+					war_with = THIS
+				}
+			}
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					is_core = SOV
+					not = { is_core = THIS }
+				}
+				secede_province = RUS
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

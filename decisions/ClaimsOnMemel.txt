@@ -1,0 +1,44 @@
+###################
+# Claims on Memel #
+###################
+diplomatic_decisions = {
+
+	claims_on_memel = {
+		major = yes
+		potential = {
+			tag = GER
+			war = no
+			not = { has_country_flag = "claims_on_memel" }
+			or = {
+				has_country_flag = "first_vienna_award"
+				not = { exists = CZE }
+			}
+			date = 1939.3.1
+			exists = LIT
+			LIT = { neighbour = GER }
+			not = { war_with = LIT }
+			LIT = { controls = 1306 }	# Klaipeda
+			1306 = { is_core = GER }	# Only if Germany has a core!
+		}
+		allow = {
+			LIT = {
+				or = {
+					is_in_any_faction = no
+					faction = axis
+				}
+			}
+			GER = { is_subject = no }
+		}
+		effect = {
+			relation = { who = SOV value = -5 }
+			neutrality = -3
+			threat = { who = all value = 2 }
+			set_country_flag = "claims_on_memel"
+			LIT = { country_event = 1301 }
+			non_aggression_pact = LIT
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,682 @@
+# INSTRUCTIONS:
+# -------------
+# FROM is the TARGETED country!
+# THIS is the country ADDING the War Goal!
+# is_triggered_only - Triggered from within the code or by event effects. DO NOT REMOVE THE STOCK ONES.
+# mutual - The CB effects will also be used by the defender in peace treaties
+# months - The number of months this CB will be valid. Only works for triggered CBs.
+# prerequisites - A condition that automatically activates a CB. Does not work for triggered CBs. 'THIS' scope is the target country.
+# allowed_regions - If 'po_demand_regions' is on, badboy_factor applies to these provinces. 'THIS' scope is us.
+# on_add - effect triggered when war goal added (triggering country's scope)
+# on_completion - effect triggered when goal is fulfilled
+# is_valid_join - trigger used instead of is_valid to check if we can join a faction at war with this goal
+# "handles_peace = yes" = this wargoal does not make peace with the defeated nation
+
+# NOTE: The order in which the peace options are listed is the order in which the AI will normally prioritize them in peace treaties
+
+# TRIGGERED - Triggered from within the code or by event effects
+# --------------------------------------------------------------
+
+# Order that CBs are executed in a peace treaty
+peace_order = {
+# Specific HPP Goals
+	vichy_war_goal
+	dissolve_uk_wargoal
+	
+# Generic HPP Goals
+	liberate_puppets	# Liberate every puppet as independent countries
+	concede_defeat		# Force a NAP
+	civil_war 			# Inherit land plus units
+	aquire_all_cores	# Get all cores
+	aquire_territory	# Get the specified region
+	cut_down_to_size	# Force to release every releasable country
+	force_ideology		# Force our ideology and gov type on them
+	conquer				# Inherit land
+	puppet				# Puppetize plus change government and ideology
+
+# Vanilla Goals, not used
+	barbarossa_war_goal
+	japan_USA_goal
+	restore_france
+	install_communism 
+	liberate_as_democracy 
+	liberate_as_communist 
+	install_democracy 
+}
+
+# Concede Defeat
+concede_defeat = {
+	sprite_index = 7
+
+	always = yes
+	
+	is_valid = {
+		# always available
+	}
+	
+	handles_peace = yes		# The event takes care of ending the war.
+	
+	on_completion = {
+		country_event = 800
+		war_exhaustion = -2.0
+	}
+}
+
+# Take back what's ours!
+aquire_all_cores = {
+	sprite_index = 1
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = {
+		any_owned_province = { is_core = THIS }
+	}
+	
+	allowed_province = {
+		is_core = THIS
+	}
+	
+	on_add = {
+		country_event = 810
+	}
+	
+	on_completion = {
+		war_exhaustion = -2.0
+	}
+
+	po_demand_provinces = yes
+	
+	war_name = AQUIRE_CORE_NAME
+}
+
+# Lebensraum!
+aquire_territory = {
+	sprite_index = 5
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = {
+		neighbour = THIS
+		THIS = {
+			or = {
+				civil_law = legalistic_restrictions
+				civil_law = repression
+				civil_law = totalitarian_system
+			}
+		}
+	}
+	
+	allowed_regions = {
+		owned_by = FROM
+	}
+	
+	on_add = {
+		country_event = 810
+	}
+	
+	on_completion = {
+		war_exhaustion = -2.0
+	}
+
+	po_demand_region = yes
+	
+	war_name = AQUIRE_TERRITORY_NAME
+}
+
+# Civil War
+civil_war = {
+	sprite_index = 4
+	#is_triggered_only = yes
+	always = yes
+	
+	mutual = yes
+	
+	is_valid = {
+		or = {
+			and = {
+				THIS = { OR = { tag = SPA tag = SPR } }
+				OR = { tag = SPA  tag = SPR }
+			}
+			and = { 
+				THIS = { OR = { tag = CHI tag = CHC } }
+				OR = { tag = CHI tag = CHC tag = CSX tag = CXB tag = CGX tag = CYN tag = MAN tag = MEN tag = SIK tag = TIB tag = NJG }
+			}
+			and = { 
+				THIS = { OR = { tag = FRA tag = VIC } }
+				OR = { tag = FRA tag = VIC }
+			}
+			and = { 
+				THIS = { OR = { tag = SOV tag = RUS } }
+				OR = { tag = SOV tag = RUS }
+			}
+			and = { 
+				THIS = { OR = { tag = KOR tag = PRK } }
+				OR = { tag = KOR tag = PRK }
+			}
+			and = { 
+				THIS = { tag = USA }
+				OR = { tag = CSA tag = CAL tag = SIU }
+			}
+		}
+	}
+	
+	handles_peace = yes		# The event takes care of ending the war.
+	
+	on_completion = {
+		SPR = { country_event = 508 }	# They'll only actually get it if they are defeated
+		SPA = { country_event = 509 }	# They'll only actually get it if they are defeated
+		country_event = 802
+		war_exhaustion = -2.0
+	}
+	
+	war_name = CIVIL_WAR_NAME
+}
+# Cut Down to Size
+cut_down_to_size = {
+	sprite_index = 4
+	
+	always = yes
+	
+	is_valid = {
+		or = {
+			and = { any_owned_province = { is_core = GER } not = { exists = GER } not = { tag = DFR } not = { tag = DDR } }
+			and = { any_owned_province = { is_core = ENG } not = { exists = ENG } }
+			and = { any_owned_province = { is_core = SOV } not = { exists = SOV } not = { tag = RUS } }
+			and = { any_owned_province = { is_core = USA } not = { exists = USA } }
+			and = { any_owned_province = { is_core = JAP } not = { exists = JAP } }
+			and = { any_owned_province = { is_core = FRA } not = { exists = FRA } not = { tag = VIC } }
+			and = { any_owned_province = { is_core = ITA } not = { exists = ITA } not = { tag = RSI } }
+			and = { any_owned_province = { is_core = DEN } not = { exists = DEN } }
+			and = { any_owned_province = { is_core = ICL } not = { exists = ICL } }
+			and = { any_owned_province = { is_core = EST } not = { exists = EST } }
+			and = { any_owned_province = { is_core = FIN } not = { exists = FIN } }
+			and = { any_owned_province = { is_core = LAT } not = { exists = LAT } }
+			and = { any_owned_province = { is_core = LIT } not = { exists = LIT } }
+			and = { any_owned_province = { is_core = NOR } not = { exists = NOR } }
+			and = { any_owned_province = { is_core = SWE } not = { exists = SWE } }
+			and = { any_owned_province = { is_core = BEL } not = { exists = BEL } }
+			and = { any_owned_province = { is_core = HOL } not = { exists = HOL } }
+			and = { any_owned_province = { is_core = IRE } not = { exists = IRE } }
+			and = { any_owned_province = { is_core = LUX } not = { exists = LUX } }
+			and = { any_owned_province = { is_core = VIC } not = { exists = VIC } not = { tag = FRA } }
+			and = { any_owned_province = { is_core = AUS } not = { exists = AUS } }
+			and = { any_owned_province = { is_core = CZE } not = { exists = CZE } }
+			and = { any_owned_province = { is_core = CRO } not = { exists = CRO } }
+			and = { any_owned_province = { is_core = DDR } not = { exists = DDR } not = { tag = DFR } not = { tag = GER } }
+			and = { any_owned_province = { is_core = DFR } not = { exists = DFR } not = { tag = DDR } not = { tag = GER } }
+			and = { any_owned_province = { is_core = HUN } not = { exists = HUN } }
+			and = { any_owned_province = { is_core = POL } not = { exists = POL } }
+			and = { any_owned_province = { is_core = ROM } not = { exists = ROM } }
+			and = { any_owned_province = { is_core = SLO } not = { exists = SLO } }
+			and = { any_owned_province = { is_core = SCH } not = { exists = SCH } }
+			and = { any_owned_province = { is_core = POR } not = { exists = POR } }
+			and = { any_owned_province = { is_core = RSI } not = { exists = RSI } }
+			and = { any_owned_province = { is_core = SPA } not = { exists = SPA } not = { tag = SPR } }
+			and = { any_owned_province = { is_core = SPR } not = { exists = SPR } not = { tag = SPA } }
+			and = { any_owned_province = { is_core = ALB } not = { exists = ALB } }
+			and = { any_owned_province = { is_core = BUL } not = { exists = BUL } }
+			and = { any_owned_province = { is_core = GRE } not = { exists = GRE } }
+			and = { any_owned_province = { is_core = YUG } not = { exists = YUG } }
+			and = { any_owned_province = { is_core = AFG } not = { exists = AFG } }
+			and = { any_owned_province = { is_core = IRQ } not = { exists = IRQ } }
+			and = { any_owned_province = { is_core = ISR } not = { exists = ISR } }
+			and = { any_owned_province = { is_core = JOR } not = { exists = JOR } }
+			and = { any_owned_province = { is_core = LEB } not = { exists = LEB } }
+			and = { any_owned_province = { is_core = OMN } not = { exists = OMN } }
+			and = { any_owned_province = { is_core = PAL } not = { exists = PAL } }
+			and = { any_owned_province = { is_core = PER } not = { exists = PER } }
+			and = { any_owned_province = { is_core = SAU } not = { exists = SAU } }
+			and = { any_owned_province = { is_core = SYR } not = { exists = SYR } }
+			and = { any_owned_province = { is_core = TUR } not = { exists = TUR } }
+			and = { any_owned_province = { is_core = YEM } not = { exists = YEM } }
+			and = { any_owned_province = { is_core = BHU } not = { exists = BHU } }
+			and = { any_owned_province = { is_core = IND } not = { exists = IND } }
+			and = { any_owned_province = { is_core = NEP } not = { exists = NEP } }
+			and = { any_owned_province = { is_core = PAK } not = { exists = PAK } }
+			and = { any_owned_province = { is_core = CGX } not = { exists = CGX } }
+			and = { any_owned_province = { is_core = CHC } not = { exists = CHC } not = { tag = CHI } }
+			and = { any_owned_province = { is_core = CHI } not = { exists = CHI } not = { tag = CHC } }
+			and = { any_owned_province = { is_core = CSX } not = { exists = CSX } }
+			and = { any_owned_province = { is_core = CXB } not = { exists = CXB } }
+			and = { any_owned_province = { is_core = CYN } not = { exists = CYN } }
+			and = { any_owned_province = { is_core = KOR } not = { exists = KOR } not = { tag = PRK } }
+			and = { any_owned_province = { is_core = MAN } not = { exists = MAN } }
+			and = { any_owned_province = { is_core = MEN } not = { exists = MEN } }
+			and = { any_owned_province = { is_core = MON } not = { exists = MON } }
+			and = { any_owned_province = { is_core = PRK } not = { exists = PRK } not = { tag = KOR } }
+			and = { any_owned_province = { is_core = SIK } not = { exists = SIK } }
+			and = { any_owned_province = { is_core = TAN } not = { exists = TAN } }
+			and = { any_owned_province = { is_core = TIB } not = { exists = TIB } }
+			and = { any_owned_province = { is_core = IDC } not = { exists = IDC } }
+			and = { any_owned_province = { is_core = INO } not = { exists = INO } }
+			and = { any_owned_province = { is_core = PHL } not = { exists = PHL } }
+			and = { any_owned_province = { is_core = SIA } not = { exists = SIA } }
+			and = { any_owned_province = { is_core = EGY } not = { exists = EGY } }
+			and = { any_owned_province = { is_core = LIB } not = { exists = LIB } }
+			and = { any_owned_province = { is_core = ETH } not = { exists = ETH } }
+			and = { any_owned_province = { is_core = SAF } not = { exists = SAF } }
+			and = { any_owned_province = { is_core = AST } not = { exists = AST } }
+			and = { any_owned_province = { is_core = NZL } not = { exists = NZL } }
+			and = { any_owned_province = { is_core = CAN } not = { exists = CAN } }
+			and = { any_owned_province = { is_core = CUB } not = { exists = CUB } }
+			and = { any_owned_province = { is_core = COS } not = { exists = COS } }
+			and = { any_owned_province = { is_core = DOM } not = { exists = DOM } }
+			and = { any_owned_province = { is_core = GUA } not = { exists = GUA } }
+			and = { any_owned_province = { is_core = HAI } not = { exists = HAI } }
+			and = { any_owned_province = { is_core = HON } not = { exists = HON } }
+			and = { any_owned_province = { is_core = MEX } not = { exists = MEX } }
+			and = { any_owned_province = { is_core = NIC } not = { exists = NIC } }
+			and = { any_owned_province = { is_core = PNM } not = { exists = PNM } }
+			and = { any_owned_province = { is_core = SAL } not = { exists = SAL } }
+			and = { any_owned_province = { is_core = ARG } not = { exists = ARG } }
+			and = { any_owned_province = { is_core = BOL } not = { exists = BOL } }
+			and = { any_owned_province = { is_core = BRA } not = { exists = BRA } }
+			and = { any_owned_province = { is_core = CHL } not = { exists = CHL } }
+			and = { any_owned_province = { is_core = COL } not = { exists = COL } }
+			and = { any_owned_province = { is_core = ECU } not = { exists = ECU } }
+			and = { any_owned_province = { is_core = GUY } not = { exists = GUY } }
+			and = { any_owned_province = { is_core = PAR } not = { exists = PAR } }
+			and = { any_owned_province = { is_core = PRU } not = { exists = PRU } }
+			and = { any_owned_province = { is_core = URU } not = { exists = URU } }
+			and = { any_owned_province = { is_core = VEN } not = { exists = VEN } }
+			and = { any_owned_province = { is_core = CYP } not = { exists = CYP } }
+			and = { any_owned_province = { is_core = MTA } not = { exists = MTA } }
+			and = { any_owned_province = { is_core = KWT } not = { exists = KWT } }
+			and = { any_owned_province = { is_core = CEY } not = { exists = CEY } }
+			and = { any_owned_province = { is_core = BBU } not = { exists = BBU } }
+			and = { any_owned_province = { is_core = MLY } not = { exists = MLY } }
+			and = { any_owned_province = { is_core = LBY } not = { exists = LBY } }
+			and = { any_owned_province = { is_core = ALG } not = { exists = ALG } }
+			and = { any_owned_province = { is_core = TUN } not = { exists = TUN } }
+			and = { any_owned_province = { is_core = MAD } not = { exists = MAD } }
+			and = { any_owned_province = { is_core = MOR } not = { exists = MOR } }
+			and = { any_owned_province = { is_core = JAM } not = { exists = JAM } }
+			and = { any_owned_province = { is_core = BOS } not = { exists = BOS } }
+			and = { any_owned_province = { is_core = MAC } not = { exists = MAC } }
+			and = { any_owned_province = { is_core = MTN } not = { exists = MTN } }
+			and = { any_owned_province = { is_core = SER } not = { exists = SER } }
+			and = { any_owned_province = { is_core = SLV } not = { exists = SLV } }
+			and = { any_owned_province = { is_core = RUS } not = { exists = RUS } not = { tag = SOV } }
+			and = { any_owned_province = { is_core = ARM } not = { exists = ARM } }
+			and = { any_owned_province = { is_core = AZB } not = { exists = AZB } }
+			and = { any_owned_province = { is_core = BLR } not = { exists = BLR } }
+			and = { any_owned_province = { is_core = GEO } not = { exists = GEO } }
+			and = { any_owned_province = { is_core = UKR } not = { exists = UKR } }
+			and = { any_owned_province = { is_core = KAZ } not = { exists = KAZ } }
+			and = { any_owned_province = { is_core = KYG } not = { exists = KYG } }
+			and = { any_owned_province = { is_core = TRK } not = { exists = TRK } }
+			and = { any_owned_province = { is_core = TAJ } not = { exists = TAJ } }
+			and = { any_owned_province = { is_core = UZB } not = { exists = UZB } }
+			and = { any_owned_province = { is_core = CAL } not = { exists = CAL } }
+			and = { any_owned_province = { is_core = CSA } not = { exists = CSA } }
+			and = { any_owned_province = { is_core = SIU } not = { exists = SIU } }
+		}
+	}
+	
+	on_completion = {
+		country_event = 803
+		war_exhaustion = -2.0
+	}
+
+}
+
+# Liberate Puppets
+liberate_puppets = {
+	sprite_index = 6
+	is_triggered_only = yes
+	
+	always = yes
+	
+	is_valid = {
+		num_of_vassals = 1
+	}
+	
+	on_completion = {
+		country_event = 805
+		war_exhaustion = -2.0
+	}
+
+}
+
+# Force Ideology
+force_ideology = {
+	sprite_index = 7
+	
+	always = yes
+	
+	is_valid = {
+		or = {
+			and = {
+				THIS = { ideology_group = democracy }
+				not = { ideology_group = democracy }
+			}
+			and = {
+				THIS = { ideology_group = fascism }
+				not = { ideology_group = fascism }
+			}
+			and = {
+				THIS = { ideology_group = communism }
+				not = { ideology_group = communism }
+			}
+		}
+	}
+	
+	on_add = {
+		country_event = 810
+	}
+	
+	on_completion = {
+		country_event = 806
+		country_event = 807
+		war_exhaustion = -2.0
+	}
+
+}
+
+# Annex!
+conquer = {
+	sprite_index = 4
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = {
+		THIS = {
+			or = {
+				civil_law = repression
+				civil_law = totalitarian_system
+			}
+		}
+		or = {
+			and = {
+				THIS = { 
+					or = {
+						international_status = regional_power		# Needs to be a Regional Power to annex even uncivilized minors
+						international_status = intermediate_power
+						international_status = major_power
+						international_status = great_power
+						international_status = superpower
+					}
+				}
+				international_status = undeveloped_minor
+			}
+			and = {
+				THIS = { 
+					or = {
+						international_status = intermediate_power # Needs to be a Intermediate to annex Developed Mediums
+						international_status = major_power
+						international_status = great_power
+						international_status = superpower
+					}
+				}
+				international_status = developed_medium
+			}
+			and = {
+				THIS = { 
+					or = {
+						international_status = intermediate_power # Needs to be a Intermediate to annex Industrialized Mediums
+						international_status = major_power
+						international_status = great_power
+						international_status = superpower
+					}
+				}
+				international_status = industrial_medium
+			}
+			and = {
+				THIS = { 
+					or = {
+						international_status = great_power			# Needs to be a Great Power to annex Regional Powers
+						international_status = superpower
+					}
+				}
+				international_status = regional_power
+			}
+			# Intermediates and above are immune to annexing.
+		}
+		
+	}
+	
+	po_annex = yes
+	
+	on_add = {
+		threat = { who = all value = 20 }
+		country_event = 810
+	}
+	
+	on_completion = {
+		war_exhaustion = -2.0
+	}
+	
+	war_name = WAR_CONQUEST_NAME
+}
+
+# Create puppet!
+puppet = {
+	sprite_index = 6
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = {
+		THIS = {
+			or = {
+				civil_law = legalistic_restrictions
+				civil_law = repression
+				civil_law = totalitarian_system
+			}
+		}
+		is_subject = no
+		NOT = { tag = CHI } #can't puppet the RoC
+		or = {
+			international_status = undeveloped_minor		# Anyone can puppet Uncivilized Minors.
+			and = {
+				THIS = {
+					or = {
+						international_status = regional_power
+						international_status = intermediate_power
+						international_status = major_power
+						international_status = great_power
+						international_status = superpower
+					}
+				}
+				international_status = developed_medium
+			}
+			and = {
+				THIS = {
+					or = {
+						international_status = regional_power
+						international_status = intermediate_power
+						international_status = major_power
+						international_status = great_power
+						international_status = superpower
+					}
+				}
+				international_status = industrial_medium
+			}
+			and = {
+				THIS = {
+					or = {
+						international_status = intermediate_power
+						international_status = major_power
+						international_status = great_power
+						international_status = superpower
+					}
+				}
+				international_status = regional_power
+			}
+			and = {
+				THIS = {
+					or = {
+						international_status = major_power
+						international_status = great_power
+						international_status = superpower
+					}
+				}
+				international_status = intermediate_power
+			}
+			and = {
+				THIS = { international_status = superpower }
+				international_status = major_power
+			}
+			# Major Powers and above can't be puppeted.
+		}
+	}
+	
+	on_add = {
+		threat = { who = all value = 15 }
+		country_event = 810
+	}
+	
+	handles_peace = yes		# The event takes care of ending the war.
+	
+	on_completion = {
+		country_event = 801
+		war_exhaustion = -2.0
+	}
+	
+	war_name = WAR_VASSAL_NAME
+}
+
+# Vichy War Goal
+
+vichy_war_goal = {
+	sprite_index = 1
+	is_triggered_only = yes
+
+	always = no
+	
+	handles_peace = yes
+	
+	on_add = {
+		threat = { who = all value = 10 }
+	}
+	
+	on_completion = { 
+		country_event = 530
+		war_exhaustion = -2.0
+	}
+}
+
+
+# Germany forces UK to surrender
+
+dissolve_uk_wargoal = {
+	sprite_index = 1
+	is_triggered_only = yes
+
+	always = no
+
+	handles_peace = yes
+	
+	on_add = {
+		threat = { who = all value = 10 }
+	}
+	
+	on_completion = { 
+		country_event = 805
+		country_event = 534
+		war_exhaustion = -2.0
+	}
+}
+
+##########################################################################################################################################
+
+# Vanilla War Goals, no longer used but shouldn't be deleted.
+
+barbarossa_war_goal = {
+	sprite_index = 1
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = { this = { tag = REB } }
+	
+	handles_peace = yes
+	threat = 20
+	on_completion = { country_event = 507 } 
+	
+}
+
+japan_USA_goal = {
+	sprite_index = 1
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = { this = { tag = REB } }
+	 
+	po_demand_region = yes
+	
+	allowed_province = {
+		#US_pacific_bases_region
+		#Alaska_region
+		#US_west_coast_cities
+	}
+}
+
+restore_france = {
+	sprite_index = 3
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = { this = { tag = REB } }
+
+	on_completion = { country_event = 518 } 
+	
+}
+
+install_communism = {
+	sprite_index = 7
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = { this = { tag = REB } }
+	
+	po_install_government = yes
+	
+	war_name = WAR_INSTALL_COMMUNIST
+}
+
+liberate_as_communist = {
+	sprite_index = 2
+	is_triggered_only = yes
+
+	always = no
+	
+	is_valid = { this = { tag = REB } }
+	
+	po_change_government = yes
+	
+	war_name = WAR_LIBERATE_COMMUNIST
+}
+
+
+liberate_as_democracy = {
+	sprite_index = 3
+	is_triggered_only = yes
+
+	always = no
+	
+	is_valid = { this = { tag = REB } }
+	
+	po_change_government = yes
+	
+	war_name = WAR_LIBERATE_DEMOCRACY
+}
+
+install_democracy = {
+	sprite_index = 7
+	is_triggered_only = yes
+
+	always = yes
+	
+	is_valid = { this = { tag = REB } }
+	
+	po_install_government = yes
+	
+	war_name = WAR_INSTALL_DEMOCRACY
+}

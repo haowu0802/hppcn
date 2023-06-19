@@ -1,0 +1,137 @@
+# The Netherlands or Belgium loses it's continental lands
+country_event = {
+
+	id = 3011
+
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "All seems lost!..."
+	desc = "Our troops are forced out of Europe, how could we still continue the fight?"
+	picture = "Austria_Alliance"
+
+	option = {
+		name = "Like a house of cards..."
+		#any_owned = {
+		#	limit = { controlled_by = THIS }
+		#	change_controller = ENG
+		#}
+		form_government_in_exile = yes
+		#any_owned = {
+		#	limit = { controlled_by = GOD }
+		#	change_controller = THIS
+		#}
+		any_owned = {
+			limit = { is_core = GER }
+			change_controller = GER
+		}
+		GER = { country_event = 504 }
+	}
+}
+
+# Denmark added.
+country_event = {
+
+	id = 3012
+
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "Denmark surrenders"
+	desc = "The occupation of Denmark was the closest to being a collaboration government until 1943, when, after some major strikes, the Germans took direct control."
+	picture = "Austria_Alliance"
+
+	option = {
+		name = "Smart move."
+		FROM = { country_event = 3013 }
+	}
+}
+
+country_event = {
+
+	id = 3013
+	
+	is_triggered_only = yes
+
+	title = "We surrender!"
+	desc = "The Danish government decided to collaborate with the German invaders for the good of their people."
+	picture = "Austria_Alliance"
+
+	option = {
+		name = "We had no other choice!..."
+		any_owned = {
+			limit = { is_core = GER }
+			change_controller = GER
+		}
+		1682 = {
+			change_controller = GER
+		}
+		form_government_in_exile = yes
+	}
+}
+
+# Britain occupies India
+country_event = {
+
+	id = 3015
+	
+	trigger = {
+		exists = IND
+		tag = IND
+		vassal_of = FROM
+	}
+	
+	is_triggered_only = yes
+
+	title = "Britain takes direct control"
+	desc = "With London being threatened, the British government moves to India and takes direct control of the country."
+	picture = "churchill"
+
+	option = {
+		name = "Oh well..."
+		ENG = {
+			split_troops = 1.0
+			inherit = THIS
+			capital = 9468
+		}
+	}
+}
+
+# Norway added.
+country_event = {
+
+	id = 3021
+
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "Norway surrenders"
+	desc = "The government of Norway fled to the United Kingdom, along with most of the Norwegian merchant marine..."
+	picture = "Austria_Alliance"
+
+	option = {
+		name = "The bastards..."
+		FROM = { country_event = 3022 }
+	}
+}
+
+country_event = {
+
+	id = 3022
+	
+	is_triggered_only = yes
+
+	title = "We surrender!"
+	desc = "The government of Norway fled to the United Kingdom, along with most of the Norwegian merchant marine..."
+	picture = "Austria_Alliance"
+
+	option = {
+		name = "At least that's something..."
+		ENG = { load_oob = "NorwegianConvoys.txt" }
+		any_owned = { change_controller = GER }
+		form_government_in_exile = yes
+	}
+}

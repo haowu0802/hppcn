@@ -1,0 +1,145 @@
+# FROM is the country we are occupying.
+
+martial_law = {
+	allow = {}							# No prerequisits. This is the default.
+	local_manpower_modifier = -1.0		# No gain.
+	local_ic = -1.0						# No gain.
+	local_resources = -1.0				# No gain.
+	local_revolt_risk = 5				# But still some revolt risk.
+}
+
+liberation = {
+	allow = {
+		FROM = { not = { popularity = 30 } }
+		or = {
+			and = {	# Democracies can liberate any non-democracy.
+				ideology_group = democracy
+				FROM = { not = { ideology_group = democracy } }
+			}
+			and = {	# Fascists can liberate communists and any puppet
+				ideology_group = fascism
+				or = {
+					FROM = { is_subject = yes }
+					FROM = { ideology_group = communism }
+				}
+			}
+			and = {	# Communists can liberate fascists and any puppet
+				ideology_group = communism
+				or = {
+					FROM = { is_subject = yes }
+					FROM = { ideology_group = fascism }
+				}
+			}
+		}
+	}
+	local_manpower_modifier = -1.0		# No manpower. We are liberating, not exploiting!
+	local_ic = -1.0						# No IC. We are liberating, not exploiting!
+	local_resources = -1.0				# No resources. We are liberating, not exploiting!
+
+}
+
+collaboration_government = {
+	allow = {
+		or = {
+			and = {
+				ideology_group = fascism
+				FROM = {
+					or = {
+						national_socialist = { popularity = 20 organisation = 20 }
+						fascistic = { popularity = 20 organisation = 20 }
+						paternal_autocrat = { popularity = 20 organisation = 20 }
+					}
+				}
+			}
+			and = {
+				ideology_group = democracy
+				FROM = {
+					or = {
+						social_conservative = { popularity = 20 organisation = 20 }
+						market_liberal = { popularity = 20 organisation = 20 }
+						social_liberal = { popularity = 20 organisation = 20 }
+						social_democrat = { popularity = 20 organisation = 20 }
+					}
+				}
+			}
+			and = {
+				ideology_group = communism
+				FROM = {
+					or = {
+						left_wing_radical = { popularity = 20 organisation = 20 }
+						leninist = { popularity = 20 organisation = 20 }
+						stalinist = { popularity = 20 organisation = 20 }
+					}
+				}
+			}
+		}
+	}
+	local_revolt_risk = 5
+	local_manpower_modifier = -0.65		# -0.75 with the revolt_risk included.
+	local_ic = -0.75					# -0.85 with the revolt_risk included.
+	local_resources = -0.0				# -0.10 with the revolt_risk included.
+}
+
+full_occupation = {
+	allow = {
+		OR = {
+			civil_law = repression
+			civil_law = totalitarian_system
+		}
+	}
+	local_revolt_risk = 20
+	local_manpower_modifier = -0.75		# -1.15 with the revolt_risk included.
+	local_ic = -0.50					# -0.9  with the revolt_risk included.
+	local_resources = -0.5				# -0.9  with the revolt_risk included.
+
+
+}
+
+total_exploitation = {
+	allow = {
+		civil_law = totalitarian_system
+	}
+	local_revolt_risk = 40
+	local_manpower_modifier = -1.0		# Still will get -80% IC and resources because of the revolt_risk, so needs suppressing.
+
+}
+
+civil_war = {
+	allow = {
+		OR = {
+			AND = {
+				tag = SPA
+				FROM = { tag = SPR } 
+			}
+			AND = {
+				tag = SPR
+				FROM = { tag = SPA } 
+			}
+			AND = {
+				OR = {
+					tag = CHI
+					tag = CHC
+				}
+				OR = {
+					FROM = { tag = CHI }
+					FROM = { tag = CHC }
+					FROM = { tag = CGX }
+					FROM = { tag = CYN }
+					FROM = { tag = CXB }
+					FROM = { tag = MAN }
+					FROM = { tag = MEN }
+					FROM = { tag = CSX }
+					FROM = { tag = NJG }
+				}
+			}
+			AND = {
+				tag = FRA
+				FROM = { tag = VIC } 
+			}
+			AND = {
+				tag = VIC
+				FROM = { tag = FRA } 
+			}
+		}
+	}
+}

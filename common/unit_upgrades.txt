@@ -1,0 +1,170 @@
+###################################################################
+# Unit upgrade rules are here
+#
+# If a unit A can upgrade to B and B to C and D,
+# then A will be able to upgrade to B, C and D
+# Also note that if A can upgrade to B and B can
+# upgrade to A then A can upgrade to A as well!
+###################################################################
+
+unit_upgrades = {
+
+	# Garrison
+	upgrade = 
+	{
+		base = garrison_brigade
+		target = infantry_brigade
+	}
+	
+	# Militia
+	upgrade = 
+	{
+		base = militia_brigade
+		target = infantry_brigade
+	}
+	upgrade = 
+	{
+		base = militia_brigade
+		target = garrison_brigade
+	}	
+	# Cavalry
+	upgrade = 
+	{
+		base = cavalry_brigade
+		target = light_armor_brigade
+	}
+	upgrade = 
+	{
+		base = cavalry_brigade
+		target = motorized_brigade
+	}
+	
+	# Infantry
+	upgrade = 
+	{
+		base = infantry_brigade
+		target = cavalry_brigade
+	}	
+	upgrade = 
+	{
+		base = infantry_brigade
+		target = marine_brigade
+	}
+	upgrade = 
+	{
+		base = infantry_brigade
+		target = bergsjaeger_brigade
+	}
+	upgrade = 
+	{
+		base = infantry_brigade
+		target = paratrooper_brigade
+	}
+	upgrade = 
+	{
+		base = infantry_brigade
+		target = motorized_brigade
+	}
+	
+	# Motorized Infantry
+	upgrade = 
+	{
+		base = motorized_brigade
+		target = mechanized_brigade
+	}
+	
+	# Armor
+	upgrade = 
+	{
+		base = light_armor_brigade
+		target = armor_brigade
+	}
+	upgrade = 
+	{
+		base = super_heavy_armor_brigade	# Infantry Support Tanks can upgrade into Heavy Tanks
+		target = heavy_armor_brigade
+	}
+	
+	# Support Brigades
+	upgrade = 
+	{
+		base = horse_towed_support_brigade
+		target = truck_towed_support_brigade
+	}
+	upgrade = 
+	{
+		base = truck_towed_support_brigade
+		target = self_propelled_support_brigade
+	}
+	
+	# Ships
+	# Destroyers
+	upgrade =
+	{
+		base = destroyer
+		target = destroyer
+	}
+	# Submarine
+	upgrade =
+	{
+		base = submarine
+		target = submarine
+	}
+	
+	# Aircraft
+	# Interceptor
+	upgrade =
+	{
+		base = interceptor
+		target = rocket_interceptor
+	}
+	upgrade =
+	{
+		base = interceptor
+		target = multi_role
+	}
+	upgrade =
+	{
+		base = interceptor
+		target = jet_int
+	}
+	# Rocket Interceptor
+	upgrade =
+	{
+		base = rocket_interceptor
+		target = interceptor
+	}
+	# Multi-Role Fighter
+	upgrade =
+	{
+		base = multi_role
+		target = interceptor
+	}
+	upgrade =
+	{
+		base = multi_role
+		target = jet_mr
+	}
+	# Tactical Bomber
+	upgrade =
+	{
+		base = tactical_bomber
+		target = naval_bomber
+	}
+	upgrade =
+	{
+		base = tactical_bomber
+		target = strategic_bomber
+	}
+	upgrade =
+	{
+		base = tactical_bomber
+		target = jet_bomber
+	}
+	# Naval Bomber
+	upgrade =
+	{
+		base = naval_bomber
+		target = tactical_bomber
+	}
+}

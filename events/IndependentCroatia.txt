@@ -1,0 +1,303 @@
+#######################
+# Independent Croatia #
+#######################
+country_event = {
+	
+	id = 3501
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "Yugoslavian situation"
+	desc = "Yugoslavia is defeated, but we don't have the manpower to spare for its direct occupation. We should form some puppet regimes to handle the situation."
+	picture = "partisan_revolt"
+
+	option = {
+		name = "Form both Croatia and Serbia."
+		ai_chance = { factor = 100 }
+		country_event = 3502
+		country_event = 3503
+	}
+	option = {
+		name = "Form Croatia only."
+		ai_chance = { factor = 0 }
+		country_event = 3502
+	}
+	option = {
+		name = "Form Serbia only."
+		ai_chance = { factor = 0 }
+		country_event = 3503
+	}
+	option = {
+		name = "We can handle it on our own!"
+		ai_chance = { factor = 0 }
+		any_owned = {
+			limit = {
+				is_core = YUG
+			}
+			add_province_modifier = {
+				name = "yugoslavian_partisans"
+				duration = 720
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 3502
+
+	is_triggered_only = yes
+	
+	title = "Forming a Croatian puppet"
+	desc = "We decided to form a Croatian puppet to help ease the burden of policing the Balkans."
+	picture = "independent_croatia"
+	
+	option = {
+		name = "Let's do this!"
+		3633 = { secede_province = YUG }
+		YUG = { release = CRO }
+		create_vassal = CRO
+		CRO = { join_faction = axis }
+		any_country = {
+			limit = { faction = axis }
+			country_event = 3504
+		}
+		YUG = {
+			any_owned = {
+				limit = {
+					is_core = YUG
+					or = {
+						is_core = CRO
+						is_core = SLV
+					}
+				}
+				secede_province = CRO
+			}
+		}
+		any_owned = {
+			limit = {
+				is_core = YUG
+				or = {
+					is_core = CRO
+					is_core = SLV
+				}
+				not = { is_core = THIS }
+			}
+			secede_province = CRO
+		}
+	}
+	
+}
+
+country_event = {
+
+	id = 3503
+
+	is_triggered_only = yes
+	
+	title = "Forming a Serbian puppet"
+	desc = "We decided to form a Serbian puppet to help ease the burden of policing the Balkans."
+	picture = "independent_croatia"
+	
+	option = {
+		name = "Let's do this!"
+		3633 = {
+			secede_province = YUG
+			remove_core = YUG
+		}
+		YUG = { release = SER }
+		any_country = {
+			limit = { faction = axis }
+			country_event = 3505
+		}
+		YUG = {
+			any_owned = {
+				limit = {
+					not = { is_core = CRO }
+					not = { is_core = SLV }
+					is_core = YUG
+				}
+				secede_province = SER
+			}
+		}
+		any_owned = {
+			limit = {
+				not = { is_core = CRO }
+				not = { is_core = SLV }
+				is_core = YUG
+				not = { is_core = THIS }
+			}
+			secede_province = SER
+		}
+		3633 = { add_core = YUG }
+		create_vassal = SER
+		SER = { join_faction = axis }
+	}
+	
+}
+
+country_event = {
+
+	id = 3504
+	
+	major = yes
+	
+	trigger = {
+		or = {
+			YUG = {
+				any_owned_province = {
+					not = { is_core = THIS }
+					is_core = YUG
+					or = {
+						is_core = CRO
+						is_core = SLV
+					}
+					controlled_by = THIS
+				}
+			}
+			any_owned_province = {
+				not = { is_core = THIS }
+				is_core = YUG
+				or = {
+					is_core = CRO
+					is_core = SLV
+				}
+				controlled_by = THIS
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Formation of Croatia"
+	desc = "Germany wants to form a Croatian puppet. Should we give away their provinces we currently occupy?"
+	picture = "independent_croatia"
+	
+	option = {
+		name = "Give them what they want."
+		ai_chance = { factor = 100 }
+		CRO = {
+			any_owned = {
+				limit = { is_core = THIS }
+				secede_province = THIS
+			}
+		}
+		relation = { who = GER value = 25 }
+		relation = { who = CRO value = 50 }
+		any_owned = {
+			limit = {
+				not = { is_core = THIS }
+				is_core = YUG
+				or = {
+					is_core = CRO
+					is_core = SLV
+				}
+			}
+			secede_province = CRO
+		}
+		YUG = {
+			any_owned = {
+				limit = {
+					not = { is_core = THIS }
+					is_core = YUG
+					or = {
+						is_core = CRO
+						is_core = SLV
+					}
+					controlled_by = THIS
+				}
+				secede_province = CRO
+			}
+			any_owned = {
+				limit =  { is_core = THIS }
+				secede_province = THIS
+			}
+		}
+	}
+	
+	option = {
+		name = "No way! We fought for those lands!"
+		ai_chance = { factor = 0 }
+		relation = { who = GER value = -50 }
+	}
+}
+
+country_event = {
+
+	id = 3505
+	
+	major = yes
+	
+	trigger = {
+		or = {
+			YUG = {
+				any_owned_province = {
+					not = { is_core = THIS }
+					not = { is_core = CRO }
+					not = { is_core = SLV }
+					is_core = YUG
+					controlled_by = THIS
+				}
+			}
+			any_owned_province = {
+				not = { is_core = THIS }
+				not = { is_core = CRO }
+				not = { is_core = SLV }
+				is_core = YUG
+				controlled_by = THIS
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Formation of Serbia"
+	desc = "Germany wants to form a Serbian puppet. Should we give away their provinces we currently occupy?"
+	picture = "independent_croatia"
+	
+	option = {
+		name = "Give them what they want."
+		ai_chance = { factor = 100 }
+		SER = {
+			any_owned = {
+				limit = { is_core = THIS }
+				secede_province = THIS
+			}
+		}
+		relation = { who = GER value = 25 }
+		relation = { who = SER value = 50 }
+		any_owned = {
+			limit = {
+				not = { is_core = THIS }
+				is_core = YUG
+				not = { is_core = CRO }
+				not = { is_core = SLV }
+			}
+			secede_province = SER
+		}
+		YUG = {
+			any_owned = {
+				limit = {
+					not = { is_core = THIS }
+					is_core = YUG
+					not = { is_core = CRO }
+					not = { is_core = SLV }
+					controlled_by = THIS
+				}
+				secede_province = SER
+			}
+			any_owned = {
+				limit =  { is_core = THIS }
+				secede_province = THIS
+			}
+		}
+	}
+	
+	option = {
+		name = "No way! We fought for those lands!"
+		ai_chance = { factor = 0 }
+		relation = { who = GER value = -50 }
+	}
+}

@@ -1,0 +1,1106 @@
+color = { 125  13  24 }
+graphical_culture = Soviet
+major = yes
+
+default_templates = {
+	SOV_rifle = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	SOV_motorized = {
+		light_armor_brigade
+		motorized_brigade
+		motorized_brigade
+	}
+	SOV_armoured = {
+		armor_brigade
+		armor_brigade
+		motorized_brigade
+	}
+	SOV_guards_armoured = {
+		armor_brigade
+		armor_brigade
+		armor_brigade
+		motorized_brigade
+	}
+	SOV_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+	SOV_mountain = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+ 		bergsjaeger_brigade
+	}
+	SOV_airborne = {
+		paratrooper_brigade
+		paratrooper_brigade
+ 		paratrooper_brigade
+	}	
+	SOV_mechanised = {
+		armor_brigade
+		mechanized_brigade
+ 		mechanized_brigade
+		mechanized_brigade
+	}
+	SOV_marine = {
+		marine_brigade
+		marine_brigade
+	}
+	SOV_milita = {
+		militia_brigade
+		militia_brigade
+		militia_brigade
+		militia_brigade		
+	}
+	SOV_garrison = {
+		garrison_brigade
+		garrison_brigade
+	}	
+}
+
+unit_names = {
+	infantry_brigade = {
+		"2. 'Belorusskaya' Strelkovaya Diviziya" "3. 'Tihookeanskaya' Strelkovaya Diviziya" "4. 'Smolenskaya' Strelkovaya Diviziya" "5. 'Vitebskaya' Strelkovaya Diviziya" "6. 'Orlovskaya' Strelkovaya Diviziya" "8. 'Minskaya' Strelkovaya Diviziya" "10. Strelkovaya Diviziya" "11. Strelkovaya Diviziya" "12. Strelkovaya Diviziya" "13. 'Dagestanskaya' Strelkovaya Diviziya" "14. 'Krivorozhskaya' Strelkovaya Diviziya" 
+		"16. 'Ul'yanovskaya' Strelkovaya Diviziya" "17. 'Gor'kovskaya' Strelkovaya Diviziya" "18. Strelkovaya Diviziya" "19. 'Voronezhskaya' Strelkovaya Diviziya" "21. 'Permskaya' Strelkovaya Diviziya" "22. 'Krasnodarskaya' Strelkovaya Diviziya" "23. 'Har'kovskaya' Strelkovaya Diviziya" "24. 'Samaro-Ul'yanov.' Strelkovaya Diviziya" "25. 'Chapaevskaya' Strelkovaya Diviziya" "26. 'Zlatoustovskaya' Strelkovaya Diviziya" "27. 'Omskaya' Strelkovaya Diviziya" 
+		"31. Strelkovaya Diviziya" "32. 'Saratovskaya' Strelkovaya Diviziya" "33. 'Belorusskaya' Strelkovaya Diviziya" "34. 'Srednevolzhskaya' Strelkovaya Diviziya" "35. 'Sibirskaya' Strelkovaya Diviziya" "37. Strelkovaya Diviziya" "38. Strelkovaya Diviziya" "39. Strelkovaya Diviziya" "40. 'Bogucharskaya' Strelkovaya Diviziya" "41. Strelkovaya Diviziya" "42. Strelkovaya Diviziya" 
+		"43. Strelkovaya Diviziya" "45. 'Volynskaya' Strelkovaya Diviziya" "46. 'Dnepropetrovskaya' Strelkovaya Diviziya" "48. Strelkovaya Diviziya" "49. Strelkovaya Diviziya" "50. 'Tamanskaya' Strelkovaya Diviziya" "51. 'Perekopskaya' Strelkovaya Diviziya" "52. Strelkovaya Diviziya" "53. Strelkovaya Diviziya" "54. Strelkovaya Diviziya" "55. 'Kurskaya' Strelkovaya Diviziya" 
+		"56. 'Moskovskaya' Strelkovaya Diviziya" "59. Strelkovaya Diviziya" "61. Strelkovaya Diviziya" "62. 'Turkestanskaya' Strelkovaya Diviziya" "64. Strelkovaya Diviziya" "65. Strelkovaya Diviziya" "66. Strelkovaya Diviziya" "67. Strelkovaya Diviziya" "70. Strelkovaya Diviziya" "71. Strelkovaya Diviziya" "73. Strelkovaya Diviziya" 
+		"74. Strelkovaya Diviziya" "75. Strelkovaya Diviziya" "78. Strelkovaya Diviziya" "79. Strelkovaya Diviziya" "80. Strelkovaya Diviziya" "85. Strelkovaya Diviziya" "86. Strelkovaya Diviziya" "87. Strelkovaya Diviziya" "88. Strelkovaya Diviziya" "89. Strelkovaya Diviziya" "90. Strelkovaya Diviziya" 
+		"91. Strelkovaya Diviziya" "92. Strelkovaya Diviziya" "93. 'Vostochno-Sibir.' Strelkovaya Diviziya" "94. Strelkovaya Diviziya" "95. 'Moldavskaya' Strelkovaya Diviziya" "97. Strelkovaya Diviziya" "98. Strelkovaya Diviziya" "99. Strelkovaya Diviziya" "100. Strelkovaya Diviziya" "102. Strelkovaya Diviziya" "104. Strelkovaya Diviziya" 
+		"105. Strelkovaya Diviziya" "106. Strelkovaya Diviziya" "107. Strelkovaya Diviziya" "108. Strelkovaya Diviziya" "110. Strelkovaya Diviziya" "111. Strelkovaya Diviziya" "112. Strelkovaya Diviziya" "113. Strelkovaya Diviziya" "114. Strelkovaya Diviziya" "115. Strelkovaya Diviziya" "116. Strelkovaya Diviziya" 
+		"117. Strelkovaya Diviziya" "118. Strelkovaya Diviziya" "119. Strelkovaya Diviziya" "120. Strelkovaya Diviziya" "121. Strelkovaya Diviziya" "122. Strelkovaya Diviziya" "123. Strelkovaya Diviziya" "124. Strelkovaya Diviziya" "125. Strelkovaya Diviziya" "126. Strelkovaya Diviziya" "127. Strelkovaya Diviziya" 
+		"128. Strelkovaya Diviziya" "129. Strelkovaya Diviziya" "130. Strelkovaya Diviziya" "132. Strelkovaya Diviziya" "133. Strelkovaya Diviziya" "134. Strelkovaya Diviziya" "135. Strelkovaya Diviziya" "136. Strelkovaya Diviziya" "137. Strelkovaya Diviziya" "139. Strelkovaya Diviziya" "140. Strelkovaya Diviziya" 
+		"141. Strelkovaya Diviziya" "142. Strelkovaya Diviziya" "143. Strelkovaya Diviziya" "144. Strelkovaya Diviziya" "145. Strelkovaya Diviziya" "146. Strelkovaya Diviziya" "148. Strelkovaya Diviziya" "149. Strelkovaya Diviziya" "150. Strelkovaya Diviziya" "151. Strelkovaya Diviziya" "152. Strelkovaya Diviziya" 
+		"153. Strelkovaya Diviziya" "154. Strelkovaya Diviziya" "155. Strelkovaya Diviziya" "156. Strelkovaya Diviziya" "157. Strelkovaya Diviziya" "158. Strelkovaya Diviziya" "159. Strelkovaya Diviziya" "160. Strelkovaya Diviziya" "161. Strelkovaya Diviziya" "162. Strelkovaya Diviziya" "164. Strelkovaya Diviziya" 
+		"165. Strelkovaya Diviziya" "166. Strelkovaya Diviziya" "167. Strelkovaya Diviziya" "168. Strelkovaya Diviziya" "169. Strelkovaya Diviziya" "170. Strelkovaya Diviziya" "171. Strelkovaya Diviziya" "172. Strelkovaya Diviziya" "173. Strelkovaya Diviziya" "174. Strelkovaya Diviziya" "175. Strelkovaya Diviziya" 
+		"176. Strelkovaya Diviziya" "177. Strelkovaya Diviziya" "178. Strelkovaya Diviziya" "179. Strelkovaya Diviziya" "180. Strelkovaya Diviziya" "181. Strelkovaya Diviziya" "182. Strelkovaya Diviziya" "183. Strelkovaya Diviziya" "184. Strelkovaya Diviziya" "186. Strelkovaya Diviziya" "187. Strelkovaya Diviziya" 
+		"188. Strelkovaya Diviziya" "189. Strelkovaya Diviziya" "190. Strelkovaya Diviziya" "191. Strelkovaya Diviziya" "193. Strelkovaya Diviziya" "195. Strelkovaya Diviziya" "196. 'Dnepropetrov.' Strelkovaya Diviziya" "197. 'Kievskaya' Strelkovaya Diviziya" "199. Strelkovaya Diviziya" "200. Strelkovaya Diviziya" "206. Strelkovaya Diviziya" 
+		"214. Strelkovaya Diviziya" "217. Strelkovaya Diviziya" "222. Strelkovaya Diviziya" "224. Strelkovaya Diviziya" "227. Strelkovaya Diviziya" "228. Strelkovaya Diviziya" "229. Strelkovaya Diviziya" "232. Strelkovaya Diviziya" "233. Strelkovaya Diviziya" "235. Strelkovaya Diviziya" "237. Strelkovaya Diviziya" 
+		"238. Strelkovaya Diviziya" "300. Strelkovaya Diviziya" "302. Strelkovaya Diviziya" "304. Strelkovaya Diviziya" "305. Strelkovaya Diviziya" "306. Strelkovaya Diviziya" "307. Strelkovaya Diviziya" "308. Strelkovaya Diviziya" "310. Strelkovaya Diviziya" "311. Strelkovaya Diviziya" "312. Strelkovaya Diviziya" 
+		"313. Strelkovaya Diviziya" "314. Strelkovaya Diviziya" "315. Strelkovaya Diviziya" "316. Strelkovaya Diviziya" "317. Strelkovaya Diviziya" "318. Strelkovaya Diviziya" "319. Strelkovaya Diviziya" "320. Strelkovaya Diviziya" "321. Strelkovaya Diviziya" "322. Strelkovaya Diviziya" "323. Strelkovaya Diviziya" 
+		"324. Strelkovaya Diviziya" "325. Strelkovaya Diviziya" "326. Strelkovaya Diviziya" "327. Strelkovaya Diviziya" "328. Strelkovaya Diviziya" "329. Strelkovaya Diviziya" "330. Strelkovaya Diviziya" "332. Strelkovaya Diviziya" "333. Strelkovaya Diviziya" "334. Strelkovaya Diviziya" "335. Strelkovaya Diviziya" 
+		"336. Strelkovaya Diviziya" "337. Strelkovaya Diviziya" "339. Strelkovaya Diviziya" "340. Strelkovaya Diviziya" "341. Strelkovaya Diviziya" "342. Strelkovaya Diviziya" "343. Strelkovaya Diviziya" "344. Strelkovaya Diviziya" "345. Strelkovaya Diviziya" "346. Strelkovaya Diviziya" "348. Strelkovaya Diviziya" 
+		"349. Strelkovaya Diviziya" "350. Strelkovaya Diviziya" "351. Strelkovaya Diviziya" "352. Strelkovaya Diviziya" "353. Strelkovaya Diviziya" "354. Strelkovaya Diviziya" "355. Strelkovaya Diviziya" "356. Strelkovaya Diviziya" "357. Strelkovaya Diviziya" "358. Strelkovaya Diviziya" "359. Strelkovaya Diviziya" 
+		"360. Strelkovaya Diviziya" "361. Strelkovaya Diviziya" "362. Strelkovaya Diviziya" "364. Strelkovaya Diviziya" "365. Strelkovaya Diviziya" "366. Strelkovaya Diviziya" "367. Strelkovaya Diviziya" "368. Strelkovaya Diviziya" "369. Strelkovaya Diviziya" "370. Strelkovaya Diviziya" "371. Strelkovaya Diviziya" 
+		"372. Strelkovaya Diviziya" "373. Strelkovaya Diviziya" "374. Strelkovaya Diviziya" "375. Strelkovaya Diviziya" "376. Strelkovaya Diviziya" "377. Strelkovaya Diviziya" "378. Strelkovaya Diviziya" "379. Strelkovaya Diviziya" "380. Strelkovaya Diviziya" "381. Strelkovaya Diviziya" "382. Strelkovaya Diviziya" 
+		"383. Strelkovaya Diviziya" "384. Strelkovaya Diviziya" "386. Strelkovaya Diviziya" "387. Strelkovaya Diviziya" "388. Strelkovaya Diviziya" "389. Strelkovaya Diviziya" "390. Strelkovaya Diviziya" "391. Strelkovaya Diviziya" "393. Strelkovaya Diviziya" "395. Strelkovaya Diviziya" "396. Strelkovaya Diviziya" 
+		"397. Strelkovaya Diviziya" "399. Strelkovaya Diviziya" "400. Strelkovaya Diviziya" "402. Strelkovaya Diviziya" "404. Strelkovaya Diviziya" "405. Strelkovaya Diviziya" "406. Strelkovaya Diviziya" "407. Strelkovaya Diviziya" "408. Strelkovaya Diviziya" "410. Strelkovaya Diviziya" "411. Strelkovaya Diviziya" 
+		"412. Strelkovaya Diviziya" "413. Strelkovaya Diviziya" "414. Strelkovaya Diviziya" "415. Strelkovaya Diviziya" "416. Strelkovaya Diviziya" "417. Strelkovaya Diviziya" "418. Strelkovaya Diviziya" "419. Strelkovaya Diviziya" "420. Strelkovaya Diviziya" "421. Strelkovaya Diviziya" "422. Strelkovaya Diviziya" 
+		"423. Strelkovaya Diviziya" "424. Strelkovaya Diviziya" "425. Strelkovaya Diviziya" "426. Strelkovaya Diviziya" "427. Strelkovaya Diviziya" "428. Strelkovaya Diviziya" "429. Strelkovaya Diviziya" "430. Strelkovaya Diviziya" "432. Strelkovaya Diviziya" "433. Strelkovaya Diviziya" "434. Strelkovaya Diviziya" 
+		"435. Strelkovaya Diviziya" "436. Strelkovaya Diviziya" "437. Strelkovaya Diviziya" "439. Strelkovaya Diviziya" "440. Strelkovaya Diviziya" "441. Strelkovaya Diviziya" "442. Strelkovaya Diviziya" "443. Strelkovaya Diviziya" "444. Strelkovaya Diviziya" "445. Strelkovaya Diviziya" "446. Strelkovaya Diviziya" 
+		"448. Strelkovaya Diviziya" "449. Strelkovaya Diviziya" "450. Strelkovaya Diviziya" "451. Strelkovaya Diviziya" "452. Strelkovaya Diviziya" "453. Strelkovaya Diviziya" "454. Strelkovaya Diviziya" "455. Strelkovaya Diviziya" "456. Strelkovaya Diviziya" "457. Strelkovaya Diviziya" "458. Strelkovaya Diviziya" 
+		"459. Strelkovaya Diviziya" "460. Strelkovaya Diviziya" "461. Strelkovaya Diviziya" "462. Strelkovaya Diviziya" "464. Strelkovaya Diviziya" "465. Strelkovaya Diviziya" "466. Strelkovaya Diviziya" "467. Strelkovaya Diviziya" "468. Strelkovaya Diviziya" "469. Strelkovaya Diviziya" "470. Strelkovaya Diviziya" 
+		"471. Strelkovaya Diviziya" "472. Strelkovaya Diviziya" "473. Strelkovaya Diviziya" "474. Strelkovaya Diviziya" "475. Strelkovaya Diviziya" "476. Strelkovaya Diviziya" "477. Strelkovaya Diviziya" "478. Strelkovaya Diviziya" "479. Strelkovaya Diviziya" "480. Strelkovaya Diviziya" "481. Strelkovaya Diviziya" 
+		"482. Strelkovaya Diviziya" "483. Strelkovaya Diviziya" "484. Strelkovaya Diviziya" "486. Strelkovaya Diviziya" "487. Strelkovaya Diviziya" "488. Strelkovaya Diviziya" "489. Strelkovaya Diviziya" "490. Strelkovaya Diviziya" "491. Strelkovaya Diviziya" "493. Strelkovaya Diviziya" "495. Strelkovaya Diviziya" 
+		"496. Strelkovaya Diviziya" "497. Strelkovaya Diviziya" "499. Strelkovaya Diviziya" "500. Strelkovaya Diviziya" "502. Strelkovaya Diviziya" "504. Strelkovaya Diviziya" "505. Strelkovaya Diviziya" "506. Strelkovaya Diviziya" "507. Strelkovaya Diviziya" "508. Strelkovaya Diviziya" "510. Strelkovaya Diviziya" 
+		"511. Strelkovaya Diviziya" "512. Strelkovaya Diviziya" "513. Strelkovaya Diviziya" "514. Strelkovaya Diviziya" "515. Strelkovaya Diviziya" "516. Strelkovaya Diviziya" "517. Strelkovaya Diviziya" "518. Strelkovaya Diviziya" "519. Strelkovaya Diviziya" "520. Strelkovaya Diviziya" "521. Strelkovaya Diviziya" 
+		"522. Strelkovaya Diviziya" "523. Strelkovaya Diviziya" "524. Strelkovaya Diviziya" "525. Strelkovaya Diviziya" "526. Strelkovaya Diviziya" "527. Strelkovaya Diviziya" "528. Strelkovaya Diviziya" "529. Strelkovaya Diviziya" "530. Strelkovaya Diviziya" "532. Strelkovaya Diviziya" "533. Strelkovaya Diviziya" 
+		"534. Strelkovaya Diviziya" "535. Strelkovaya Diviziya" "536. Strelkovaya Diviziya" "537. Strelkovaya Diviziya" "539. Strelkovaya Diviziya" "540. Strelkovaya Diviziya" "541. Strelkovaya Diviziya" "542. Strelkovaya Diviziya" "543. Strelkovaya Diviziya" "544. Strelkovaya Diviziya" "545. Strelkovaya Diviziya" 
+		"546. Strelkovaya Diviziya" "548. Strelkovaya Diviziya" "549. Strelkovaya Diviziya" "550. Strelkovaya Diviziya" "551. Strelkovaya Diviziya" "552. Strelkovaya Diviziya" "553. Strelkovaya Diviziya" "554. Strelkovaya Diviziya" "555. Strelkovaya Diviziya" "556. Strelkovaya Diviziya" "557. Strelkovaya Diviziya" 
+		"558. Strelkovaya Diviziya" "559. Strelkovaya Diviziya" "560. Strelkovaya Diviziya" "561. Strelkovaya Diviziya" "562. Strelkovaya Diviziya" "564. Strelkovaya Diviziya" "565. Strelkovaya Diviziya" "566. Strelkovaya Diviziya" "567. Strelkovaya Diviziya" "568. Strelkovaya Diviziya" "569. Strelkovaya Diviziya" 
+		"570. Strelkovaya Diviziya" "571. Strelkovaya Diviziya" "572. Strelkovaya Diviziya" "573. Strelkovaya Diviziya" "574. Strelkovaya Diviziya" "575. Strelkovaya Diviziya" "576. Strelkovaya Diviziya" "577. Strelkovaya Diviziya" "578. Strelkovaya Diviziya" "579. Strelkovaya Diviziya" "580. Strelkovaya Diviziya" 
+		"581. Strelkovaya Diviziya" "582. Strelkovaya Diviziya" "583. Strelkovaya Diviziya" "584. Strelkovaya Diviziya" "586. Strelkovaya Diviziya" "587. Strelkovaya Diviziya" "588. Strelkovaya Diviziya" "589. Strelkovaya Diviziya" "590. Strelkovaya Diviziya" "591. Strelkovaya Diviziya" "593. Strelkovaya Diviziya" 
+		"595. Strelkovaya Diviziya" "596. Strelkovaya Diviziya" "597. Strelkovaya Diviziya" "599. Strelkovaya Diviziya" "600. Strelkovaya Diviziya" 
+	}
+	cavalry_brigade = {
+		"3. 'Bessarabskaya' Kavaleriyskaya Diviziya" "5. Kavaleriyskaya Diviziya" "6. 'Chongarskaya' Kavaleriyskaya Diviziya" "8. 'Dal'nevostochnaya' Kavaleriyskaya Diviziya" "9. 'Krymskaya' Kavaleriyskaya Diviziya" "14. Kavaleriyskaya Diviziya" "17. Gorno-Kavaleriyskaya Diviziya" "18. Gorno-Kavaleriyskaya Diviziya" "20. Gorno-Kavaleriyskaya Diviziya" "21. Gorno-Kavaleriyskaya Diviziya" "24. 'Krasnoznamennaya' Kavaleriyskaya Diviziya" 
+		"32. Kavaleriyskaya Diviziya" "36. Kavaleriyskaya Diviziya" "37. Kavaleriyskaya Diviziya" "38. Kavaleriyskaya Diviziya" "39. Kavaleriyskaya Diviziya" "40. Kavaleriyskaya Diviziya" "41. Kavaleriyskaya Diviziya" "42. Kavaleriyskaya Diviziya" "43. Kavaleriyskaya Diviziya" "44. Kavaleriyskaya Diviziya" "45. Kavaleriyskaya Diviziya" 
+		"46. Kavaleriyskaya Diviziya" "47. Kavaleriyskaya Diviziya" "48. Kavaleriyskaya Diviziya" "49. Kavaleriyskaya Diviziya" "50. Kavaleriyskaya Diviziya" "51. Kavaleriyskaya Diviziya" "52. Kavaleriyskaya Diviziya" "53. Kavaleriyskaya Diviziya" "54. Kavaleriyskaya Diviziya" "55. Kavaleriyskaya Diviziya" "56. Kavaleriyskaya Diviziya" 
+			}
+	motorized_brigade = {
+		"7. 'Chernigovskaya' Motoriz. Diviziya" "15. 'Sivashskaya' Motoriz. Diviziya" "29. 'Sibirskaya' Motoriz. Diviziya" "36. 'Zabajkal'skaya'Motoriz. Diviziya" "57. 'Ural'skaya' Motoriz. Diviziya" "69. Motorizovannaya Diviziya" "81. Motorizovannaya Diviziya" "82. Motorizovannaya Diviziya" "84. Motorizovannaya Diviziya" "103. Motorizovannaya Diviziya" "109. Motorizovannaya Diviziya" 
+		"131. Motorizovannaya Diviziya" "163. Motorizovannaya Diviziya" "185. Motorizovannaya Diviziya" "198. Motorizovannaya Diviziya" "202. Motorizovannaya Diviziya" "204. Motorizovannaya Diviziya" "205. Motorizovannaya Diviziya" "208. Motorizovannaya Diviziya" "209. Motorizovannaya Diviziya" "210. Motorizovannaya Diviziya" "212. Motorizovannaya Diviziya" 
+		"213. Motorizovannaya Diviziya" "215. Motorizovannaya Diviziya" "216. Motorizovannaya Diviziya" "218. Motorizovannaya Diviziya" "219. Motorizovannaya Diviziya" "220. Motorizovannaya Diviziya" "221. Motorizovannaya Diviziya" "236. Motorizovannaya Diviziya" "239. Motorizovannaya Diviziya" "240. Motorizovannaya Diviziya" "2. Motorizovannaya Diviziya" 
+		"3. Motorizovannaya Diviziya" "4. Motorizovannaya Diviziya" "5. Motorizovannaya Diviziya" "6. Motorizovannaya Diviziya" "8. Motorizovannaya Diviziya" "10. Motorizovannaya Diviziya" "11. Motorizovannaya Diviziya" "12. Motorizovannaya Diviziya" "13. Motorizovannaya Diviziya" "14. Motorizovannaya Diviziya" "16. Motorizovannaya Diviziya" 
+		"17. Motorizovannaya Diviziya" "19. Motorizovannaya Diviziya" "21. Motorizovannaya Diviziya" "22. Motorizovannaya Diviziya" "23. Motorizovannaya Diviziya" "24. Motorizovannaya Diviziya" "25. Motorizovannaya Diviziya" "26. Motorizovannaya Diviziya" "27. Motorizovannaya Diviziya" "31. Motorizovannaya Diviziya" "32. Motorizovannaya Diviziya" 
+		"33. Motorizovannaya Diviziya" "34. Motorizovannaya Diviziya" "35. Motorizovannaya Diviziya" "37. Motorizovannaya Diviziya" "38. Motorizovannaya Diviziya" "39. Motorizovannaya Diviziya" "40. Motorizovannaya Diviziya" "41. Motorizovannaya Diviziya" "42. Motorizovannaya Diviziya" "43. Motorizovannaya Diviziya" "45. Motorizovannaya Diviziya" 
+		"46. Motorizovannaya Diviziya" "47. Motorizovannaya Diviziya" "48. Motorizovannaya Diviziya" "49. Motorizovannaya Diviziya" "50. Motorizovannaya Diviziya" "51. Motorizovannaya Diviziya" "52. Motorizovannaya Diviziya" "53. Motorizovannaya Diviziya" "54. Motorizovannaya Diviziya" "55. Motorizovannaya Diviziya" "56. Motorizovannaya Diviziya" 
+		"59. Motorizovannaya Diviziya" "61. Motorizovannaya Diviziya" "62. Motorizovannaya Diviziya" "64. Motorizovannaya Diviziya" "65. Motorizovannaya Diviziya" "66. Motorizovannaya Diviziya" "67. Motorizovannaya Diviziya" "70. Motorizovannaya Diviziya" "71. Motorizovannaya Diviziya" "73. Motorizovannaya Diviziya" "74. Motorizovannaya Diviziya" 
+		"75. Motorizovannaya Diviziya" "78. Motorizovannaya Diviziya" "79. Motorizovannaya Diviziya" "80. Motorizovannaya Diviziya" "85. Motorizovannaya Diviziya" "86. Motorizovannaya Diviziya" "87. Motorizovannaya Diviziya" "88. Motorizovannaya Diviziya" "89. Motorizovannaya Diviziya" "90. Motorizovannaya Diviziya" "91. Motorizovannaya Diviziya" 
+		"92. Motorizovannaya Diviziya" "93. Motorizovannaya Diviziya" "94. Motorizovannaya Diviziya" "95. Motorizovannaya Diviziya" "97. Motorizovannaya Diviziya" "98. Motorizovannaya Diviziya" "99. Motorizovannaya Diviziya" "100. Motorizovannaya Diviziya" "102. Motorizovannaya Diviziya" "104. Motorizovannaya Diviziya" "105. Motorizovannaya Diviziya" 
+		"106. Motorizovannaya Diviziya" "107. Motorizovannaya Diviziya" "108. Motorizovannaya Diviziya" "110. Motorizovannaya Diviziya" "111. Motorizovannaya Diviziya" "112. Motorizovannaya Diviziya" "113. Motorizovannaya Diviziya" "114. Motorizovannaya Diviziya" "115. Motorizovannaya Diviziya" "116. Motorizovannaya Diviziya" "117. Motorizovannaya Diviziya" 
+		"118. Motorizovannaya Diviziya" "119. Motorizovannaya Diviziya" "120. Motorizovannaya Diviziya" "121. Motorizovannaya Diviziya" "122. Motorizovannaya Diviziya" "123. Motorizovannaya Diviziya" "124. Motorizovannaya Diviziya" "125. Motorizovannaya Diviziya" "126. Motorizovannaya Diviziya" "127. Motorizovannaya Diviziya" "128. Motorizovannaya Diviziya" 
+		"129. Motorizovannaya Diviziya" "130. Motorizovannaya Diviziya" "132. Motorizovannaya Diviziya" "133. Motorizovannaya Diviziya" "134. Motorizovannaya Diviziya" "135. Motorizovannaya Diviziya" "136. Motorizovannaya Diviziya" "137. Motorizovannaya Diviziya" "139. Motorizovannaya Diviziya" "140. Motorizovannaya Diviziya" "141. Motorizovannaya Diviziya" 
+		"142. Motorizovannaya Diviziya" "143. Motorizovannaya Diviziya" "144. Motorizovannaya Diviziya" "145. Motorizovannaya Diviziya" "146. Motorizovannaya Diviziya" "148. Motorizovannaya Diviziya" "149. Motorizovannaya Diviziya" "150. Motorizovannaya Diviziya" "151. Motorizovannaya Diviziya" "152. Motorizovannaya Diviziya" "153. Motorizovannaya Diviziya" 
+		"154. Motorizovannaya Diviziya" "155. Motorizovannaya Diviziya" "156. Motorizovannaya Diviziya" "157. Motorizovannaya Diviziya" "158. Motorizovannaya Diviziya" "159. Motorizovannaya Diviziya" "160. Motorizovannaya Diviziya" "161. Motorizovannaya Diviziya" "162. Motorizovannaya Diviziya" "164. Motorizovannaya Diviziya" "165. Motorizovannaya Diviziya" 
+		"166. Motorizovannaya Diviziya" "167. Motorizovannaya Diviziya" "168. Motorizovannaya Diviziya" "169. Motorizovannaya Diviziya" "170. Motorizovannaya Diviziya" "171. Motorizovannaya Diviziya" "172. Motorizovannaya Diviziya" "173. Motorizovannaya Diviziya" "174. Motorizovannaya Diviziya" "175. Motorizovannaya Diviziya" "176. Motorizovannaya Diviziya" 
+		"177. Motorizovannaya Diviziya" "178. Motorizovannaya Diviziya" "179. Motorizovannaya Diviziya" "180. Motorizovannaya Diviziya" "181. Motorizovannaya Diviziya" "182. Motorizovannaya Diviziya" "183. Motorizovannaya Diviziya" "184. Motorizovannaya Diviziya" "186. Motorizovannaya Diviziya" "187. Motorizovannaya Diviziya" "188. Motorizovannaya Diviziya" 
+		"189. Motorizovannaya Diviziya" "190. Motorizovannaya Diviziya" "191. Motorizovannaya Diviziya" "193. Motorizovannaya Diviziya" "195. Motorizovannaya Diviziya" "196. Motorizovannaya Diviziya" "197. Motorizovannaya Diviziya" "199. Motorizovannaya Diviziya" "200. Motorizovannaya Diviziya" "206. Motorizovannaya Diviziya" "214. Motorizovannaya Diviziya" 
+		"217. Motorizovannaya Diviziya" "222. Motorizovannaya Diviziya" "227. Motorizovannaya Diviziya" "228. Motorizovannaya Diviziya" "229. Motorizovannaya Diviziya" "232. Motorizovannaya Diviziya" "233. Motorizovannaya Diviziya" "235. Motorizovannaya Diviziya" "237. Motorizovannaya Diviziya" "300. Motorizovannaya Diviziya" "302. Motorizovannaya Diviziya" 
+		"304. Motorizovannaya Diviziya" "305. Motorizovannaya Diviziya" "306. Motorizovannaya Diviziya" "307. Motorizovannaya Diviziya" "308. Motorizovannaya Diviziya" "310. Motorizovannaya Diviziya" "311. Motorizovannaya Diviziya" "312. Motorizovannaya Diviziya" "313. Motorizovannaya Diviziya" "314. Motorizovannaya Diviziya" "315. Motorizovannaya Diviziya" 
+		"316. Motorizovannaya Diviziya" "317. Motorizovannaya Diviziya" "318. Motorizovannaya Diviziya" "319. Motorizovannaya Diviziya" "320. Motorizovannaya Diviziya" "321. Motorizovannaya Diviziya" "322. Motorizovannaya Diviziya" "323. Motorizovannaya Diviziya" "324. Motorizovannaya Diviziya" "325. Motorizovannaya Diviziya" "326. Motorizovannaya Diviziya" 
+		"327. Motorizovannaya Diviziya" "328. Motorizovannaya Diviziya" "329. Motorizovannaya Diviziya" "330. Motorizovannaya Diviziya" "332. Motorizovannaya Diviziya" "333. Motorizovannaya Diviziya" "334. Motorizovannaya Diviziya" "335. Motorizovannaya Diviziya" "336. Motorizovannaya Diviziya" "337. Motorizovannaya Diviziya" "339. Motorizovannaya Diviziya" 
+		"340. Motorizovannaya Diviziya" "341. Motorizovannaya Diviziya" "342. Motorizovannaya Diviziya" "343. Motorizovannaya Diviziya" "344. Motorizovannaya Diviziya" "345. Motorizovannaya Diviziya" "346. Motorizovannaya Diviziya" "348. Motorizovannaya Diviziya" "349. Motorizovannaya Diviziya" "350. Motorizovannaya Diviziya" "351. Motorizovannaya Diviziya" 
+		"352. Motorizovannaya Diviziya" "353. Motorizovannaya Diviziya" "354. Motorizovannaya Diviziya" "355. Motorizovannaya Diviziya" "356. Motorizovannaya Diviziya" "357. Motorizovannaya Diviziya" "358. Motorizovannaya Diviziya" "359. Motorizovannaya Diviziya" "360. Motorizovannaya Diviziya" "361. Motorizovannaya Diviziya" "362. Motorizovannaya Diviziya" 
+		"364. Motorizovannaya Diviziya" "365. Motorizovannaya Diviziya" "366. Motorizovannaya Diviziya" "367. Motorizovannaya Diviziya" "368. Motorizovannaya Diviziya" "369. Motorizovannaya Diviziya" "370. Motorizovannaya Diviziya" "371. Motorizovannaya Diviziya" "372. Motorizovannaya Diviziya" "373. Motorizovannaya Diviziya" "374. Motorizovannaya Diviziya" 
+		"375. Motorizovannaya Diviziya" "376. Motorizovannaya Diviziya" "377. Motorizovannaya Diviziya" "378. Motorizovannaya Diviziya" "379. Motorizovannaya Diviziya" "380. Motorizovannaya Diviziya" "381. Motorizovannaya Diviziya" "382. Motorizovannaya Diviziya" "383. Motorizovannaya Diviziya" "384. Motorizovannaya Diviziya" "386. Motorizovannaya Diviziya" 
+		"387. Motorizovannaya Diviziya" "388. Motorizovannaya Diviziya" "389. Motorizovannaya Diviziya" "390. Motorizovannaya Diviziya" "391. Motorizovannaya Diviziya" "393. Motorizovannaya Diviziya" "395. Motorizovannaya Diviziya" "396. Motorizovannaya Diviziya" "397. Motorizovannaya Diviziya" "399. Motorizovannaya Diviziya" "400. Motorizovannaya Diviziya" 
+		"402. Motorizovannaya Diviziya" "404. Motorizovannaya Diviziya" "405. Motorizovannaya Diviziya" "406. Motorizovannaya Diviziya" "407. Motorizovannaya Diviziya" "408. Motorizovannaya Diviziya" "410. Motorizovannaya Diviziya" "411. Motorizovannaya Diviziya" "412. Motorizovannaya Diviziya" "413. Motorizovannaya Diviziya" "414. Motorizovannaya Diviziya" 
+		"415. Motorizovannaya Diviziya" "416. Motorizovannaya Diviziya" "417. Motorizovannaya Diviziya" "418. Motorizovannaya Diviziya" "419. Motorizovannaya Diviziya" "420. Motorizovannaya Diviziya" "421. Motorizovannaya Diviziya" "422. Motorizovannaya Diviziya" "423. Motorizovannaya Diviziya" "424. Motorizovannaya Diviziya" "425. Motorizovannaya Diviziya" 
+		"426. Motorizovannaya Diviziya" "427. Motorizovannaya Diviziya" "428. Motorizovannaya Diviziya" "429. Motorizovannaya Diviziya" "430. Motorizovannaya Diviziya" "432. Motorizovannaya Diviziya" "433. Motorizovannaya Diviziya" "434. Motorizovannaya Diviziya" "435. Motorizovannaya Diviziya" "436. Motorizovannaya Diviziya" "437. Motorizovannaya Diviziya" 
+		"439. Motorizovannaya Diviziya" "440. Motorizovannaya Diviziya" "441. Motorizovannaya Diviziya" "442. Motorizovannaya Diviziya" "443. Motorizovannaya Diviziya" "444. Motorizovannaya Diviziya" "445. Motorizovannaya Diviziya" "446. Motorizovannaya Diviziya" "448. Motorizovannaya Diviziya" "449. Motorizovannaya Diviziya" "450. Motorizovannaya Diviziya" 
+		"451. Motorizovannaya Diviziya" "452. Motorizovannaya Diviziya" "453. Motorizovannaya Diviziya" "454. Motorizovannaya Diviziya" "455. Motorizovannaya Diviziya" "456. Motorizovannaya Diviziya" "457. Motorizovannaya Diviziya" "458. Motorizovannaya Diviziya" "459. Motorizovannaya Diviziya" "460. Motorizovannaya Diviziya" "461. Motorizovannaya Diviziya" 
+		"462. Motorizovannaya Diviziya" "464. Motorizovannaya Diviziya" "465. Motorizovannaya Diviziya" "466. Motorizovannaya Diviziya" "467. Motorizovannaya Diviziya" "468. Motorizovannaya Diviziya" "469. Motorizovannaya Diviziya" "470. Motorizovannaya Diviziya" "471. Motorizovannaya Diviziya" "472. Motorizovannaya Diviziya" "473. Motorizovannaya Diviziya" 
+		"474. Motorizovannaya Diviziya" "475. Motorizovannaya Diviziya" "476. Motorizovannaya Diviziya" "477. Motorizovannaya Diviziya" "478. Motorizovannaya Diviziya" "479. Motorizovannaya Diviziya" "480. Motorizovannaya Diviziya" "481. Motorizovannaya Diviziya" "482. Motorizovannaya Diviziya" "483. Motorizovannaya Diviziya" "484. Motorizovannaya Diviziya" 
+		"486. Motorizovannaya Diviziya" "487. Motorizovannaya Diviziya" "488. Motorizovannaya Diviziya" "489. Motorizovannaya Diviziya" "490. Motorizovannaya Diviziya" "491. Motorizovannaya Diviziya" "493. Motorizovannaya Diviziya" "495. Motorizovannaya Diviziya" "496. Motorizovannaya Diviziya" "497. Motorizovannaya Diviziya" "499. Motorizovannaya Diviziya" 
+		"500. Motorizovannaya Diviziya" "502. Motorizovannaya Diviziya" "504. Motorizovannaya Diviziya" "505. Motorizovannaya Diviziya" "506. Motorizovannaya Diviziya" "507. Motorizovannaya Diviziya" "508. Motorizovannaya Diviziya" "510. Motorizovannaya Diviziya" "511. Motorizovannaya Diviziya" "512. Motorizovannaya Diviziya" "513. Motorizovannaya Diviziya" 
+		"514. Motorizovannaya Diviziya" "515. Motorizovannaya Diviziya" "516. Motorizovannaya Diviziya" "517. Motorizovannaya Diviziya" "518. Motorizovannaya Diviziya" "519. Motorizovannaya Diviziya" "520. Motorizovannaya Diviziya" "521. Motorizovannaya Diviziya" "522. Motorizovannaya Diviziya" "523. Motorizovannaya Diviziya" "524. Motorizovannaya Diviziya" 
+		"525. Motorizovannaya Diviziya" "526. Motorizovannaya Diviziya" "527. Motorizovannaya Diviziya" "528. Motorizovannaya Diviziya" "529. Motorizovannaya Diviziya" "530. Motorizovannaya Diviziya" "532. Motorizovannaya Diviziya" "533. Motorizovannaya Diviziya" "534. Motorizovannaya Diviziya" "535. Motorizovannaya Diviziya" "536. Motorizovannaya Diviziya" 
+		"537. Motorizovannaya Diviziya" "539. Motorizovannaya Diviziya" "540. Motorizovannaya Diviziya" "541. Motorizovannaya Diviziya" "542. Motorizovannaya Diviziya" "543. Motorizovannaya Diviziya" "544. Motorizovannaya Diviziya" "545. Motorizovannaya Diviziya" "546. Motorizovannaya Diviziya" "548. Motorizovannaya Diviziya" "549. Motorizovannaya Diviziya" 
+		"550. Motorizovannaya Diviziya" "551. Motorizovannaya Diviziya" "552. Motorizovannaya Diviziya" "553. Motorizovannaya Diviziya" "554. Motorizovannaya Diviziya" "555. Motorizovannaya Diviziya" "556. Motorizovannaya Diviziya" "557. Motorizovannaya Diviziya" "558. Motorizovannaya Diviziya" "559. Motorizovannaya Diviziya" "560. Motorizovannaya Diviziya" 
+		"561. Motorizovannaya Diviziya" "562. Motorizovannaya Diviziya" "564. Motorizovannaya Diviziya" "565. Motorizovannaya Diviziya" "566. Motorizovannaya Diviziya" "567. Motorizovannaya Diviziya" "568. Motorizovannaya Diviziya" "569. Motorizovannaya Diviziya" "570. Motorizovannaya Diviziya" "571. Motorizovannaya Diviziya" "572. Motorizovannaya Diviziya" 
+		"573. Motorizovannaya Diviziya" "574. Motorizovannaya Diviziya" "575. Motorizovannaya Diviziya" "576. Motorizovannaya Diviziya" "577. Motorizovannaya Diviziya" "578. Motorizovannaya Diviziya" "579. Motorizovannaya Diviziya" "580. Motorizovannaya Diviziya" "581. Motorizovannaya Diviziya" "582. Motorizovannaya Diviziya" "583. Motorizovannaya Diviziya" 
+		"584. Motorizovannaya Diviziya" "586. Motorizovannaya Diviziya" "587. Motorizovannaya Diviziya" "588. Motorizovannaya Diviziya" "589. Motorizovannaya Diviziya" "590. Motorizovannaya Diviziya" "591. Motorizovannaya Diviziya" "593. Motorizovannaya Diviziya" "595. Motorizovannaya Diviziya" "596. Motorizovannaya Diviziya" "597. Motorizovannaya Diviziya" 
+		"599. Motorizovannaya Diviziya" "600. Motorizovannaya Diviziya" 
+	}
+	mechanized_brigade = {
+		"1. 'Moskovskaya Proletar.' Diviziya" "15. Mehanizirovanaya Diviziya" "69. Mehanizirovanaya Diviziya" "82. Mehanizirovanaya Diviziya" "103. Mehanizirovanaya Diviziya" "109. Mehanizirovanaya Diviziya" "185. Mehanizirovanaya Diviziya" "218. Mehanizirovanaya Diviziya" "219. Mehanizirovanaya Diviziya" "220. Mehanizirovanaya Diviziya" "221. Mehanizirovanaya Diviziya" 
+		"236. Mehanizirovanaya Diviziya" "239. Mehanizirovanaya Diviziya" "2. Mehanizirovanaya Diviziya" "3. Mehanizirovanaya Diviziya" "4. Mehanizirovanaya Diviziya" "5. Mehanizirovanaya Diviziya" "6. Mehanizirovanaya Diviziya" "8. Mehanizirovanaya Diviziya" "10. Mehanizirovanaya Diviziya" "11. Mehanizirovanaya Diviziya" "12. Mehanizirovanaya Diviziya" 
+		"13. Mehanizirovanaya Diviziya" "14. Mehanizirovanaya Diviziya" "16. Mehanizirovanaya Diviziya" "17. Mehanizirovanaya Diviziya" "19. Mehanizirovanaya Diviziya" "21. Mehanizirovanaya Diviziya" "22. Mehanizirovanaya Diviziya" "23. Mehanizirovanaya Diviziya" "24. Mehanizirovanaya Diviziya" "25. Mehanizirovanaya Diviziya" "26. Mehanizirovanaya Diviziya" 
+		"27. Mehanizirovanaya Diviziya" "31. Mehanizirovanaya Diviziya" "32. Mehanizirovanaya Diviziya" "33. Mehanizirovanaya Diviziya" "34. Mehanizirovanaya Diviziya" "35. Mehanizirovanaya Diviziya" "37. Mehanizirovanaya Diviziya" "38. Mehanizirovanaya Diviziya" "39. Mehanizirovanaya Diviziya" "40. Mehanizirovanaya Diviziya" "41. Mehanizirovanaya Diviziya" 
+		"42. Mehanizirovanaya Diviziya" "43. Mehanizirovanaya Diviziya" "45. Mehanizirovanaya Diviziya" "46. Mehanizirovanaya Diviziya" "47. Mehanizirovanaya Diviziya" "48. Mehanizirovanaya Diviziya" "49. Mehanizirovanaya Diviziya" "50. Mehanizirovanaya Diviziya" "51. Mehanizirovanaya Diviziya" "52. Mehanizirovanaya Diviziya" "53. Mehanizirovanaya Diviziya" 
+		"54. Mehanizirovanaya Diviziya" "55. Mehanizirovanaya Diviziya" "56. Mehanizirovanaya Diviziya" "59. Mehanizirovanaya Diviziya" "61. Mehanizirovanaya Diviziya" "62. Mehanizirovanaya Diviziya" "64. Mehanizirovanaya Diviziya" "65. Mehanizirovanaya Diviziya" "66. Mehanizirovanaya Diviziya" "67. Mehanizirovanaya Diviziya" "70. Mehanizirovanaya Diviziya" 
+		"71. Mehanizirovanaya Diviziya" "73. Mehanizirovanaya Diviziya" "74. Mehanizirovanaya Diviziya" "75. Mehanizirovanaya Diviziya" "78. Mehanizirovanaya Diviziya" "79. Mehanizirovanaya Diviziya" "80. Mehanizirovanaya Diviziya" "85. Mehanizirovanaya Diviziya" "86. Mehanizirovanaya Diviziya" "87. Mehanizirovanaya Diviziya" "88. Mehanizirovanaya Diviziya" 
+		"89. Mehanizirovanaya Diviziya" "90. Mehanizirovanaya Diviziya" "91. Mehanizirovanaya Diviziya" "92. Mehanizirovanaya Diviziya" "93. Mehanizirovanaya Diviziya" "94. Mehanizirovanaya Diviziya" "95. Mehanizirovanaya Diviziya" "97. Mehanizirovanaya Diviziya" "98. Mehanizirovanaya Diviziya" "99. Mehanizirovanaya Diviziya" "100. Mehanizirovanaya Diviziya" 
+		"102. Mehanizirovanaya Diviziya" "104. Mehanizirovanaya Diviziya" "105. Mehanizirovanaya Diviziya" "106. Mehanizirovanaya Diviziya" "107. Mehanizirovanaya Diviziya" "108. Mehanizirovanaya Diviziya" "110. Mehanizirovanaya Diviziya" "111. Mehanizirovanaya Diviziya" "112. Mehanizirovanaya Diviziya" "113. Mehanizirovanaya Diviziya" "114. Mehanizirovanaya Diviziya" 
+		"115. Mehanizirovanaya Diviziya" "116. Mehanizirovanaya Diviziya" "117. Mehanizirovanaya Diviziya" "118. Mehanizirovanaya Diviziya" "119. Mehanizirovanaya Diviziya" "120. Mehanizirovanaya Diviziya" "121. Mehanizirovanaya Diviziya" "122. Mehanizirovanaya Diviziya" "123. Mehanizirovanaya Diviziya" "124. Mehanizirovanaya Diviziya" "125. Mehanizirovanaya Diviziya" 
+		"126. Mehanizirovanaya Diviziya" "127. Mehanizirovanaya Diviziya" "128. Mehanizirovanaya Diviziya" "129. Mehanizirovanaya Diviziya" "130. Mehanizirovanaya Diviziya" "132. Mehanizirovanaya Diviziya" "133. Mehanizirovanaya Diviziya" "134. Mehanizirovanaya Diviziya" "135. Mehanizirovanaya Diviziya" "136. Mehanizirovanaya Diviziya" "137. Mehanizirovanaya Diviziya" 
+		"139. Mehanizirovanaya Diviziya" "140. Mehanizirovanaya Diviziya" "141. Mehanizirovanaya Diviziya" "142. Mehanizirovanaya Diviziya" "143. Mehanizirovanaya Diviziya" "144. Mehanizirovanaya Diviziya" "145. Mehanizirovanaya Diviziya" "146. Mehanizirovanaya Diviziya" "148. Mehanizirovanaya Diviziya" "149. Mehanizirovanaya Diviziya" "150. Mehanizirovanaya Diviziya" 
+		"151. Mehanizirovanaya Diviziya" "152. Mehanizirovanaya Diviziya" "153. Mehanizirovanaya Diviziya" "154. Mehanizirovanaya Diviziya" "155. Mehanizirovanaya Diviziya" "156. Mehanizirovanaya Diviziya" "157. Mehanizirovanaya Diviziya" "158. Mehanizirovanaya Diviziya" "159. Mehanizirovanaya Diviziya" "160. Mehanizirovanaya Diviziya" "161. Mehanizirovanaya Diviziya" 
+		"162. Mehanizirovanaya Diviziya" "164. Mehanizirovanaya Diviziya" "165. Mehanizirovanaya Diviziya" "166. Mehanizirovanaya Diviziya" "167. Mehanizirovanaya Diviziya" "168. Mehanizirovanaya Diviziya" "169. Mehanizirovanaya Diviziya" "170. Mehanizirovanaya Diviziya" "171. Mehanizirovanaya Diviziya" "172. Mehanizirovanaya Diviziya" "173. Mehanizirovanaya Diviziya" 
+		"174. Mehanizirovanaya Diviziya" "175. Mehanizirovanaya Diviziya" "176. Mehanizirovanaya Diviziya" "177. Mehanizirovanaya Diviziya" "178. Mehanizirovanaya Diviziya" "179. Mehanizirovanaya Diviziya" "180. Mehanizirovanaya Diviziya" "181. Mehanizirovanaya Diviziya" "182. Mehanizirovanaya Diviziya" "183. Mehanizirovanaya Diviziya" "184. Mehanizirovanaya Diviziya" 
+		"186. Mehanizirovanaya Diviziya" "187. Mehanizirovanaya Diviziya" "188. Mehanizirovanaya Diviziya" "189. Mehanizirovanaya Diviziya" "190. Mehanizirovanaya Diviziya" "191. Mehanizirovanaya Diviziya" "193. Mehanizirovanaya Diviziya" "195. Mehanizirovanaya Diviziya" "196. Mehanizirovanaya Diviziya" "197. Mehanizirovanaya Diviziya" "199. Mehanizirovanaya Diviziya" 
+		"200. Mehanizirovanaya Diviziya" "206. Mehanizirovanaya Diviziya" "214. Mehanizirovanaya Diviziya" "217. Mehanizirovanaya Diviziya" "222. Mehanizirovanaya Diviziya" "227. Mehanizirovanaya Diviziya" "228. Mehanizirovanaya Diviziya" "229. Mehanizirovanaya Diviziya" "232. Mehanizirovanaya Diviziya" "233. Mehanizirovanaya Diviziya" "235. Mehanizirovanaya Diviziya" 
+		"237. Mehanizirovanaya Diviziya" "300. Mehanizirovanaya Diviziya" "302. Mehanizirovanaya Diviziya" "304. Mehanizirovanaya Diviziya" "305. Mehanizirovanaya Diviziya" "306. Mehanizirovanaya Diviziya" "307. Mehanizirovanaya Diviziya" "308. Mehanizirovanaya Diviziya" "310. Mehanizirovanaya Diviziya" "311. Mehanizirovanaya Diviziya" "312. Mehanizirovanaya Diviziya" 
+		"313. Mehanizirovanaya Diviziya" "314. Mehanizirovanaya Diviziya" "315. Mehanizirovanaya Diviziya" "316. Mehanizirovanaya Diviziya" "317. Mehanizirovanaya Diviziya" "318. Mehanizirovanaya Diviziya" "319. Mehanizirovanaya Diviziya" "320. Mehanizirovanaya Diviziya" "321. Mehanizirovanaya Diviziya" "322. Mehanizirovanaya Diviziya" "323. Mehanizirovanaya Diviziya" 
+		"324. Mehanizirovanaya Diviziya" "325. Mehanizirovanaya Diviziya" "326. Mehanizirovanaya Diviziya" "327. Mehanizirovanaya Diviziya" "328. Mehanizirovanaya Diviziya" "329. Mehanizirovanaya Diviziya" "330. Mehanizirovanaya Diviziya" "332. Mehanizirovanaya Diviziya" "333. Mehanizirovanaya Diviziya" "334. Mehanizirovanaya Diviziya" "335. Mehanizirovanaya Diviziya" 
+		"336. Mehanizirovanaya Diviziya" "337. Mehanizirovanaya Diviziya" "339. Mehanizirovanaya Diviziya" "340. Mehanizirovanaya Diviziya" "341. Mehanizirovanaya Diviziya" "342. Mehanizirovanaya Diviziya" "343. Mehanizirovanaya Diviziya" "344. Mehanizirovanaya Diviziya" "345. Mehanizirovanaya Diviziya" "346. Mehanizirovanaya Diviziya" "348. Mehanizirovanaya Diviziya" 
+		"349. Mehanizirovanaya Diviziya" "350. Mehanizirovanaya Diviziya" "351. Mehanizirovanaya Diviziya" "352. Mehanizirovanaya Diviziya" "353. Mehanizirovanaya Diviziya" "354. Mehanizirovanaya Diviziya" "355. Mehanizirovanaya Diviziya" "356. Mehanizirovanaya Diviziya" "357. Mehanizirovanaya Diviziya" "358. Mehanizirovanaya Diviziya" "359. Mehanizirovanaya Diviziya" 
+		"360. Mehanizirovanaya Diviziya" "361. Mehanizirovanaya Diviziya" "362. Mehanizirovanaya Diviziya" "364. Mehanizirovanaya Diviziya" "365. Mehanizirovanaya Diviziya" "366. Mehanizirovanaya Diviziya" "367. Mehanizirovanaya Diviziya" "368. Mehanizirovanaya Diviziya" "369. Mehanizirovanaya Diviziya" "370. Mehanizirovanaya Diviziya" "371. Mehanizirovanaya Diviziya" 
+		"372. Mehanizirovanaya Diviziya" "373. Mehanizirovanaya Diviziya" "374. Mehanizirovanaya Diviziya" "375. Mehanizirovanaya Diviziya" "376. Mehanizirovanaya Diviziya" "377. Mehanizirovanaya Diviziya" "378. Mehanizirovanaya Diviziya" "379. Mehanizirovanaya Diviziya" "380. Mehanizirovanaya Diviziya" "381. Mehanizirovanaya Diviziya" "382. Mehanizirovanaya Diviziya" 
+		"383. Mehanizirovanaya Diviziya" "384. Mehanizirovanaya Diviziya" "386. Mehanizirovanaya Diviziya" "387. Mehanizirovanaya Diviziya" "388. Mehanizirovanaya Diviziya" "389. Mehanizirovanaya Diviziya" "390. Mehanizirovanaya Diviziya" "391. Mehanizirovanaya Diviziya" "393. Mehanizirovanaya Diviziya" "395. Mehanizirovanaya Diviziya" "396. Mehanizirovanaya Diviziya" 
+		"397. Mehanizirovanaya Diviziya" "399. Mehanizirovanaya Diviziya" "400. Mehanizirovanaya Diviziya" "402. Mehanizirovanaya Diviziya" "404. Mehanizirovanaya Diviziya" "405. Mehanizirovanaya Diviziya" "406. Mehanizirovanaya Diviziya" "407. Mehanizirovanaya Diviziya" "408. Mehanizirovanaya Diviziya" "410. Mehanizirovanaya Diviziya" "411. Mehanizirovanaya Diviziya" 
+		"412. Mehanizirovanaya Diviziya" "413. Mehanizirovanaya Diviziya" "414. Mehanizirovanaya Diviziya" "415. Mehanizirovanaya Diviziya" "416. Mehanizirovanaya Diviziya" "417. Mehanizirovanaya Diviziya" "418. Mehanizirovanaya Diviziya" "419. Mehanizirovanaya Diviziya" "420. Mehanizirovanaya Diviziya" "421. Mehanizirovanaya Diviziya" "422. Mehanizirovanaya Diviziya" 
+		"423. Mehanizirovanaya Diviziya" "424. Mehanizirovanaya Diviziya" "425. Mehanizirovanaya Diviziya" "426. Mehanizirovanaya Diviziya" "427. Mehanizirovanaya Diviziya" "428. Mehanizirovanaya Diviziya" "429. Mehanizirovanaya Diviziya" "430. Mehanizirovanaya Diviziya" "432. Mehanizirovanaya Diviziya" "433. Mehanizirovanaya Diviziya" "434. Mehanizirovanaya Diviziya" 
+		"435. Mehanizirovanaya Diviziya" "436. Mehanizirovanaya Diviziya" "437. Mehanizirovanaya Diviziya" "439. Mehanizirovanaya Diviziya" "440. Mehanizirovanaya Diviziya" "441. Mehanizirovanaya Diviziya" "442. Mehanizirovanaya Diviziya" "443. Mehanizirovanaya Diviziya" "444. Mehanizirovanaya Diviziya" "445. Mehanizirovanaya Diviziya" "446. Mehanizirovanaya Diviziya" 
+		"448. Mehanizirovanaya Diviziya" "449. Mehanizirovanaya Diviziya" "450. Mehanizirovanaya Diviziya" "451. Mehanizirovanaya Diviziya" "452. Mehanizirovanaya Diviziya" "453. Mehanizirovanaya Diviziya" "454. Mehanizirovanaya Diviziya" "455. Mehanizirovanaya Diviziya" "456. Mehanizirovanaya Diviziya" "457. Mehanizirovanaya Diviziya" "458. Mehanizirovanaya Diviziya" 
+		"459. Mehanizirovanaya Diviziya" "460. Mehanizirovanaya Diviziya" "461. Mehanizirovanaya Diviziya" "462. Mehanizirovanaya Diviziya" "464. Mehanizirovanaya Diviziya" "465. Mehanizirovanaya Diviziya" "466. Mehanizirovanaya Diviziya" "467. Mehanizirovanaya Diviziya" "468. Mehanizirovanaya Diviziya" "469. Mehanizirovanaya Diviziya" "470. Mehanizirovanaya Diviziya" 
+		"471. Mehanizirovanaya Diviziya" "472. Mehanizirovanaya Diviziya" "473. Mehanizirovanaya Diviziya" "474. Mehanizirovanaya Diviziya" "475. Mehanizirovanaya Diviziya" "476. Mehanizirovanaya Diviziya" "477. Mehanizirovanaya Diviziya" "478. Mehanizirovanaya Diviziya" "479. Mehanizirovanaya Diviziya" "480. Mehanizirovanaya Diviziya" "481. Mehanizirovanaya Diviziya" 
+		"482. Mehanizirovanaya Diviziya" "483. Mehanizirovanaya Diviziya" "484. Mehanizirovanaya Diviziya" "486. Mehanizirovanaya Diviziya" "487. Mehanizirovanaya Diviziya" "488. Mehanizirovanaya Diviziya" "489. Mehanizirovanaya Diviziya" "490. Mehanizirovanaya Diviziya" "491. Mehanizirovanaya Diviziya" "493. Mehanizirovanaya Diviziya" "495. Mehanizirovanaya Diviziya" 
+		"496. Mehanizirovanaya Diviziya" "497. Mehanizirovanaya Diviziya" "499. Mehanizirovanaya Diviziya" "500. Mehanizirovanaya Diviziya" "502. Mehanizirovanaya Diviziya" "504. Mehanizirovanaya Diviziya" "505. Mehanizirovanaya Diviziya" "506. Mehanizirovanaya Diviziya" "507. Mehanizirovanaya Diviziya" "508. Mehanizirovanaya Diviziya" "510. Mehanizirovanaya Diviziya" 
+		"511. Mehanizirovanaya Diviziya" "512. Mehanizirovanaya Diviziya" "513. Mehanizirovanaya Diviziya" "514. Mehanizirovanaya Diviziya" "515. Mehanizirovanaya Diviziya" "516. Mehanizirovanaya Diviziya" "517. Mehanizirovanaya Diviziya" "518. Mehanizirovanaya Diviziya" "519. Mehanizirovanaya Diviziya" "520. Mehanizirovanaya Diviziya" "521. Mehanizirovanaya Diviziya" 
+		"522. Mehanizirovanaya Diviziya" "523. Mehanizirovanaya Diviziya" "524. Mehanizirovanaya Diviziya" "525. Mehanizirovanaya Diviziya" "526. Mehanizirovanaya Diviziya" "527. Mehanizirovanaya Diviziya" "528. Mehanizirovanaya Diviziya" "529. Mehanizirovanaya Diviziya" "530. Mehanizirovanaya Diviziya" "532. Mehanizirovanaya Diviziya" "533. Mehanizirovanaya Diviziya" 
+		"534. Mehanizirovanaya Diviziya" "535. Mehanizirovanaya Diviziya" "536. Mehanizirovanaya Diviziya" "537. Mehanizirovanaya Diviziya" "539. Mehanizirovanaya Diviziya" "540. Mehanizirovanaya Diviziya" "541. Mehanizirovanaya Diviziya" "542. Mehanizirovanaya Diviziya" "543. Mehanizirovanaya Diviziya" "544. Mehanizirovanaya Diviziya" "545. Mehanizirovanaya Diviziya" 
+		"546. Mehanizirovanaya Diviziya" "548. Mehanizirovanaya Diviziya" "549. Mehanizirovanaya Diviziya" "550. Mehanizirovanaya Diviziya" "551. Mehanizirovanaya Diviziya" "552. Mehanizirovanaya Diviziya" "553. Mehanizirovanaya Diviziya" "554. Mehanizirovanaya Diviziya" "555. Mehanizirovanaya Diviziya" "556. Mehanizirovanaya Diviziya" "557. Mehanizirovanaya Diviziya" 
+		"558. Mehanizirovanaya Diviziya" "559. Mehanizirovanaya Diviziya" "560. Mehanizirovanaya Diviziya" "561. Mehanizirovanaya Diviziya" "562. Mehanizirovanaya Diviziya" "564. Mehanizirovanaya Diviziya" "565. Mehanizirovanaya Diviziya" "566. Mehanizirovanaya Diviziya" "567. Mehanizirovanaya Diviziya" "568. Mehanizirovanaya Diviziya" "569. Mehanizirovanaya Diviziya" 
+		"570. Mehanizirovanaya Diviziya" "571. Mehanizirovanaya Diviziya" "572. Mehanizirovanaya Diviziya" "573. Mehanizirovanaya Diviziya" "574. Mehanizirovanaya Diviziya" "575. Mehanizirovanaya Diviziya" "576. Mehanizirovanaya Diviziya" "577. Mehanizirovanaya Diviziya" "578. Mehanizirovanaya Diviziya" "579. Mehanizirovanaya Diviziya" "580. Mehanizirovanaya Diviziya" 
+		"581. Mehanizirovanaya Diviziya" "582. Mehanizirovanaya Diviziya" "583. Mehanizirovanaya Diviziya" "584. Mehanizirovanaya Diviziya" "586. Mehanizirovanaya Diviziya" "587. Mehanizirovanaya Diviziya" "588. Mehanizirovanaya Diviziya" "589. Mehanizirovanaya Diviziya" "590. Mehanizirovanaya Diviziya" "591. Mehanizirovanaya Diviziya" "593. Mehanizirovanaya Diviziya" 
+		"595. Mehanizirovanaya Diviziya" "596. Mehanizirovanaya Diviziya" "597. Mehanizirovanaya Diviziya" "599. Mehanizirovanaya Diviziya" "600. Mehanizirovanaya Diviziya" 
+	}
+	super_heavy_armor_brigade = {
+		"1. Tankovaya Diviziya" "2. Tankovaya Diviziya" "3. Tankovaya Diviziya" "4. Tankovaya Diviziya" "5. Tankovaya Diviziya" "6. Tankovaya Diviziya" "7. Tankovaya Diviziya" "8. Tankovaya Diviziya" "9. Tankovaya Diviziya" "10. Tankovaya Diviziya" "11. Tankovaya Diviziya" 
+		"12. Tankovaya Diviziya" "13. Tankovaya Diviziya" "14. Tankovaya Diviziya" "15. Tankovaya Diviziya" "16. Tankovaya Diviziya" "17. Tankovaya Diviziya" "18. Tankovaya Diviziya" "19. Tankovaya Diviziya" "20. Tankovaya Diviziya" "21. Tankovaya Diviziya" "22. Tankovaya Diviziya" 
+		"23. Tankovaya Diviziya" "24. Tankovaya Diviziya" "25. Tankovaya Diviziya" "26. Tankovaya Diviziya" "27. Tankovaya Diviziya" "28. Tankovaya Diviziya" "29. Tankovaya Diviziya" "30. Tankovaya Diviziya" "31. Tankovaya Diviziya" "32. Tankovaya Diviziya" "33. Tankovaya Diviziya" 
+		"34. Tankovaya Diviziya" "35. Tankovaya Diviziya" "36. Tankovaya Diviziya" "37. Tankovaya Diviziya" "38. Tankovaya Diviziya" "39. Tankovaya Diviziya" "40. Tankovaya Diviziya" "41. Tankovaya Diviziya" "42. Tankovaya Diviziya" "43. Tankovaya Diviziya" "44. Tankovaya Diviziya" 
+		"45. Tankovaya Diviziya" "46. Tankovaya Diviziya" "47. Tankovaya Diviziya" "48. Tankovaya Diviziya" "49. Tankovaya Diviziya" "50. Tankovaya Diviziya" "51. Tankovaya Diviziya" "52. Tankovaya Diviziya" "53. Tankovaya Diviziya" "54. Tankovaya Diviziya" "55. Tankovaya Diviziya" 
+		"56. Tankovaya Diviziya" "57. Tankovaya Diviziya" "58. Tankovaya Diviziya" "59. Tankovaya Diviziya" "60. Tankovaya Diviziya" "61. Tankovaya Diviziya" "62. Tankovaya Diviziya" "63. Tankovaya Diviziya" "64. Tankovaya Diviziya" "65. Tankovaya Diviziya" "66. Tankovaya Diviziya" 
+		"67. Tankovaya Diviziya" "68. Tankovaya Diviziya" "69. Tankovaya Diviziya" "70. Tankovaya Diviziya" "71. Tankovaya Diviziya" "72. Tankovaya Diviziya" "73. Tankovaya Diviziya" "74. Tankovaya Diviziya" "75. Tankovaya Diviziya" "76. Tankovaya Diviziya" "77. Tankovaya Diviziya" 
+		"78. Tankovaya Diviziya" "79. Tankovaya Diviziya" "80. Tankovaya Diviziya" "81. Tankovaya Diviziya" "82. Tankovaya Diviziya" "83. Tankovaya Diviziya" "84. Tankovaya Diviziya" "85. Tankovaya Diviziya" "86. Tankovaya Diviziya" "87. Tankovaya Diviziya" "88. Tankovaya Diviziya" 
+		"89. Tankovaya Diviziya" "90. Tankovaya Diviziya" "91. Tankovaya Diviziya" "92. Tankovaya Diviziya" "93. Tankovaya Diviziya" "94. Tankovaya Diviziya" "95. Tankovaya Diviziya" "96. Tankovaya Diviziya" "97. Tankovaya Diviziya" "98. Tankovaya Diviziya" "99. Tankovaya Diviziya" 
+		"100. Tankovaya Diviziya" "101. Tankovaya Diviziya" "102. Tankovaya Diviziya" "103. Tankovaya Diviziya" "104. Tankovaya Diviziya" "105. Tankovaya Diviziya" "106. Tankovaya Diviziya" "107. Tankovaya Diviziya" "108. Tankovaya Diviziya" "109. Tankovaya Diviziya" 
+	}
+	light_armor_brigade = {
+		"1. Tankovaya Diviziya" "2. Tankovaya Diviziya" "3. Tankovaya Diviziya" "4. Tankovaya Diviziya" "5. Tankovaya Diviziya" "6. Tankovaya Diviziya" "7. Tankovaya Diviziya" "8. Tankovaya Diviziya" "9. Tankovaya Diviziya" "10. Tankovaya Diviziya" "11. Tankovaya Diviziya" 
+		"12. Tankovaya Diviziya" "13. Tankovaya Diviziya" "14. Tankovaya Diviziya" "15. Tankovaya Diviziya" "16. Tankovaya Diviziya" "17. Tankovaya Diviziya" "18. Tankovaya Diviziya" "19. Tankovaya Diviziya" "20. Tankovaya Diviziya" "21. Tankovaya Diviziya" "22. Tankovaya Diviziya" 
+		"23. Tankovaya Diviziya" "24. Tankovaya Diviziya" "25. Tankovaya Diviziya" "26. Tankovaya Diviziya" "27. Tankovaya Diviziya" "28. Tankovaya Diviziya" "29. Tankovaya Diviziya" "30. Tankovaya Diviziya" "31. Tankovaya Diviziya" "32. Tankovaya Diviziya" "33. Tankovaya Diviziya" 
+		"34. Tankovaya Diviziya" "35. Tankovaya Diviziya" "36. Tankovaya Diviziya" "37. Tankovaya Diviziya" "38. Tankovaya Diviziya" "39. Tankovaya Diviziya" "40. Tankovaya Diviziya" "41. Tankovaya Diviziya" "42. Tankovaya Diviziya" "43. Tankovaya Diviziya" "44. Tankovaya Diviziya" 
+		"45. Tankovaya Diviziya" "46. Tankovaya Diviziya" "47. Tankovaya Diviziya" "48. Tankovaya Diviziya" "49. Tankovaya Diviziya" "50. Tankovaya Diviziya" "51. Tankovaya Diviziya" "52. Tankovaya Diviziya" "53. Tankovaya Diviziya" "54. Tankovaya Diviziya" "55. Tankovaya Diviziya" 
+		"56. Tankovaya Diviziya" "57. Tankovaya Diviziya" "58. Tankovaya Diviziya" "59. Tankovaya Diviziya" "60. Tankovaya Diviziya" "61. Tankovaya Diviziya" "62. Tankovaya Diviziya" "63. Tankovaya Diviziya" "64. Tankovaya Diviziya" "65. Tankovaya Diviziya" "66. Tankovaya Diviziya" 
+		"67. Tankovaya Diviziya" "68. Tankovaya Diviziya" "69. Tankovaya Diviziya" "70. Tankovaya Diviziya" "71. Tankovaya Diviziya" "72. Tankovaya Diviziya" "73. Tankovaya Diviziya" "74. Tankovaya Diviziya" "75. Tankovaya Diviziya" "76. Tankovaya Diviziya" "77. Tankovaya Diviziya" 
+		"78. Tankovaya Diviziya" "79. Tankovaya Diviziya" "80. Tankovaya Diviziya" "81. Tankovaya Diviziya" "82. Tankovaya Diviziya" "83. Tankovaya Diviziya" "84. Tankovaya Diviziya" "85. Tankovaya Diviziya" "86. Tankovaya Diviziya" "87. Tankovaya Diviziya" "88. Tankovaya Diviziya" 
+		"89. Tankovaya Diviziya" "90. Tankovaya Diviziya" "91. Tankovaya Diviziya" "92. Tankovaya Diviziya" "93. Tankovaya Diviziya" "94. Tankovaya Diviziya" "95. Tankovaya Diviziya" "96. Tankovaya Diviziya" "97. Tankovaya Diviziya" "98. Tankovaya Diviziya" "99. Tankovaya Diviziya" 
+		"100. Tankovaya Diviziya" "101. Tankovaya Diviziya" "102. Tankovaya Diviziya" "103. Tankovaya Diviziya" "104. Tankovaya Diviziya" "105. Tankovaya Diviziya" "106. Tankovaya Diviziya" "107. Tankovaya Diviziya" "108. Tankovaya Diviziya" "109. Tankovaya Diviziya" 
+	}
+	armor_brigade = {
+		"1. Tankovaya Diviziya" "2. Tankovaya Diviziya" "3. Tankovaya Diviziya" "4. Tankovaya Diviziya" "5. Tankovaya Diviziya" "6. Tankovaya Diviziya" "7. Tankovaya Diviziya" "8. Tankovaya Diviziya" "9. Tankovaya Diviziya" "10. Tankovaya Diviziya" "11. Tankovaya Diviziya" 
+		"12. Tankovaya Diviziya" "13. Tankovaya Diviziya" "14. Tankovaya Diviziya" "15. Tankovaya Diviziya" "16. Tankovaya Diviziya" "17. Tankovaya Diviziya" "18. Tankovaya Diviziya" "19. Tankovaya Diviziya" "20. Tankovaya Diviziya" "21. Tankovaya Diviziya" "22. Tankovaya Diviziya" 
+		"23. Tankovaya Diviziya" "24. Tankovaya Diviziya" "25. Tankovaya Diviziya" "26. Tankovaya Diviziya" "27. Tankovaya Diviziya" "28. Tankovaya Diviziya" "29. Tankovaya Diviziya" "30. Tankovaya Diviziya" "31. Tankovaya Diviziya" "32. Tankovaya Diviziya" "33. Tankovaya Diviziya" 
+		"34. Tankovaya Diviziya" "35. Tankovaya Diviziya" "36. Tankovaya Diviziya" "37. Tankovaya Diviziya" "38. Tankovaya Diviziya" "39. Tankovaya Diviziya" "40. Tankovaya Diviziya" "41. Tankovaya Diviziya" "42. Tankovaya Diviziya" "43. Tankovaya Diviziya" "44. Tankovaya Diviziya" 
+		"45. Tankovaya Diviziya" "46. Tankovaya Diviziya" "47. Tankovaya Diviziya" "48. Tankovaya Diviziya" "49. Tankovaya Diviziya" "50. Tankovaya Diviziya" "51. Tankovaya Diviziya" "52. Tankovaya Diviziya" "53. Tankovaya Diviziya" "54. Tankovaya Diviziya" "55. Tankovaya Diviziya" 
+		"56. Tankovaya Diviziya" "57. Tankovaya Diviziya" "58. Tankovaya Diviziya" "59. Tankovaya Diviziya" "60. Tankovaya Diviziya" "61. Tankovaya Diviziya" "62. Tankovaya Diviziya" "63. Tankovaya Diviziya" "64. Tankovaya Diviziya" "65. Tankovaya Diviziya" "66. Tankovaya Diviziya" 
+		"67. Tankovaya Diviziya" "68. Tankovaya Diviziya" "69. Tankovaya Diviziya" "70. Tankovaya Diviziya" "71. Tankovaya Diviziya" "72. Tankovaya Diviziya" "73. Tankovaya Diviziya" "74. Tankovaya Diviziya" "75. Tankovaya Diviziya" "76. Tankovaya Diviziya" "77. Tankovaya Diviziya" 
+		"78. Tankovaya Diviziya" "79. Tankovaya Diviziya" "80. Tankovaya Diviziya" "81. Tankovaya Diviziya" "82. Tankovaya Diviziya" "83. Tankovaya Diviziya" "84. Tankovaya Diviziya" "85. Tankovaya Diviziya" "86. Tankovaya Diviziya" "87. Tankovaya Diviziya" "88. Tankovaya Diviziya" 
+		"89. Tankovaya Diviziya" "90. Tankovaya Diviziya" "91. Tankovaya Diviziya" "92. Tankovaya Diviziya" "93. Tankovaya Diviziya" "94. Tankovaya Diviziya" "95. Tankovaya Diviziya" "96. Tankovaya Diviziya" "97. Tankovaya Diviziya" "98. Tankovaya Diviziya" "99. Tankovaya Diviziya" 
+		"100. Tankovaya Diviziya" "101. Tankovaya Diviziya" "102. Tankovaya Diviziya" "103. Tankovaya Diviziya" "104. Tankovaya Diviziya" "105. Tankovaya Diviziya" "106. Tankovaya Diviziya" "107. Tankovaya Diviziya" "108. Tankovaya Diviziya" "109. Tankovaya Diviziya" 
+	}
+	heavy_armor_brigade = {
+		"1. Tankovaya Diviziya" "2. Tankovaya Diviziya" "3. Tankovaya Diviziya" "4. Tankovaya Diviziya" "5. Tankovaya Diviziya" "6. Tankovaya Diviziya" "7. Tankovaya Diviziya" "8. Tankovaya Diviziya" "9. Tankovaya Diviziya" "10. Tankovaya Diviziya" "11. Tankovaya Diviziya" 
+		"12. Tankovaya Diviziya" "13. Tankovaya Diviziya" "14. Tankovaya Diviziya" "15. Tankovaya Diviziya" "16. Tankovaya Diviziya" "17. Tankovaya Diviziya" "18. Tankovaya Diviziya" "19. Tankovaya Diviziya" "20. Tankovaya Diviziya" "21. Tankovaya Diviziya" "22. Tankovaya Diviziya" 
+		"23. Tankovaya Diviziya" "24. Tankovaya Diviziya" "25. Tankovaya Diviziya" "26. Tankovaya Diviziya" "27. Tankovaya Diviziya" "28. Tankovaya Diviziya" "29. Tankovaya Diviziya" "30. Tankovaya Diviziya" "31. Tankovaya Diviziya" "32. Tankovaya Diviziya" "33. Tankovaya Diviziya" 
+		"34. Tankovaya Diviziya" "35. Tankovaya Diviziya" "36. Tankovaya Diviziya" "37. Tankovaya Diviziya" "38. Tankovaya Diviziya" "39. Tankovaya Diviziya" "40. Tankovaya Diviziya" "41. Tankovaya Diviziya" "42. Tankovaya Diviziya" "43. Tankovaya Diviziya" "44. Tankovaya Diviziya" 
+		"45. Tankovaya Diviziya" "46. Tankovaya Diviziya" "47. Tankovaya Diviziya" "48. Tankovaya Diviziya" "49. Tankovaya Diviziya" "50. Tankovaya Diviziya" "51. Tankovaya Diviziya" "52. Tankovaya Diviziya" "53. Tankovaya Diviziya" "54. Tankovaya Diviziya" "55. Tankovaya Diviziya" 
+		"56. Tankovaya Diviziya" "57. Tankovaya Diviziya" "58. Tankovaya Diviziya" "59. Tankovaya Diviziya" "60. Tankovaya Diviziya" "61. Tankovaya Diviziya" "62. Tankovaya Diviziya" "63. Tankovaya Diviziya" "64. Tankovaya Diviziya" "65. Tankovaya Diviziya" "66. Tankovaya Diviziya" 
+		"67. Tankovaya Diviziya" "68. Tankovaya Diviziya" "69. Tankovaya Diviziya" "70. Tankovaya Diviziya" "71. Tankovaya Diviziya" "72. Tankovaya Diviziya" "73. Tankovaya Diviziya" "74. Tankovaya Diviziya" "75. Tankovaya Diviziya" "76. Tankovaya Diviziya" "77. Tankovaya Diviziya" 
+		"78. Tankovaya Diviziya" "79. Tankovaya Diviziya" "80. Tankovaya Diviziya" "81. Tankovaya Diviziya" "82. Tankovaya Diviziya" "83. Tankovaya Diviziya" "84. Tankovaya Diviziya" "85. Tankovaya Diviziya" "86. Tankovaya Diviziya" "87. Tankovaya Diviziya" "88. Tankovaya Diviziya" 
+		"89. Tankovaya Diviziya" "90. Tankovaya Diviziya" "91. Tankovaya Diviziya" "92. Tankovaya Diviziya" "93. Tankovaya Diviziya" "94. Tankovaya Diviziya" "95. Tankovaya Diviziya" "96. Tankovaya Diviziya" "97. Tankovaya Diviziya" "98. Tankovaya Diviziya" "99. Tankovaya Diviziya" 
+		"100. Tankovaya Diviziya" "101. Tankovaya Diviziya" "102. Tankovaya Diviziya" "103. Tankovaya Diviziya" "104. Tankovaya Diviziya" "105. Tankovaya Diviziya" "106. Tankovaya Diviziya" "107. Tankovaya Diviziya" "108. Tankovaya Diviziya" "109. Tankovaya Diviziya" 
+	}
+	paratrooper_brigade = {
+		"1. Vozdushno-Desantnaya Diviziya" "2. Vozdushno-Desantnaya Diviziya" "3. Vozdushno-Desantnaya Diviziya" "4. Vozdushno-Desantnaya Diviziya" "5. Vozdushno-Desantnaya Diviziya" "6. Vozdushno-Desantnaya Diviziya" "7. Vozdushno-Desantnaya Diviziya" "8. Vozdushno-Desantnaya Diviziya" "9. Vozdushno-Desantnaya Diviziya" "10. Vozdushno-Desantnaya Diviziya" "11. Vozdushno-Desantnaya Diviziya" 
+		"12. Vozdushno-Desantnaya Diviziya" "13. Vozdushno-Desantnaya Diviziya" "14. Vozdushno-Desantnaya Diviziya" "15. Vozdushno-Desantnaya Diviziya" "16. Vozdushno-Desantnaya Diviziya" "17. Vozdushno-Desantnaya Diviziya" "18. Vozdushno-Desantnaya Diviziya" "19. Vozdushno-Desantnaya Diviziya" "20. Vozdushno-Desantnaya Diviziya" "21. Vozdushno-Desantnaya Diviziya" "22. Vozdushno-Desantnaya Diviziya" 
+		"23. Vozdushno-Desantnaya Diviziya" "24. Vozdushno-Desantnaya Diviziya" "25. Vozdushno-Desantnaya Diviziya" "26. Vozdushno-Desantnaya Diviziya" "27. Vozdushno-Desantnaya Diviziya" "28. Vozdushno-Desantnaya Diviziya" "29. Vozdushno-Desantnaya Diviziya" "30. Vozdushno-Desantnaya Diviziya" 
+	}
+	marine_brigade = {
+		"1. Diviziya Morskoi Pekhoty" "2. Diviziya Morskoi Pekhoty" "3. Diviziya Morskoi Pekhoty" "4. Diviziya Morskoi Pekhoty" "5. Diviziya Morskoi Pekhoty" "6. Diviziya Morskoi Pekhoty" "7. Diviziya Morskoi Pekhoty" "8. Diviziya Morskoi Pekhoty" "9. Diviziya Morskoi Pekhoty" "10. Diviziya Morskoi Pekhoty" "11. Diviziya Morskoi Pekhoty" 
+		"12. Diviziya Morskoi Pekhoty" "13. Diviziya Morskoi Pekhoty" "14. Diviziya Morskoi Pekhoty" "15. Diviziya Morskoi Pekhoty" "16. Diviziya Morskoi Pekhoty" "17. Diviziya Morskoi Pekhoty" "18. Diviziya Morskoi Pekhoty" "19. Diviziya Morskoi Pekhoty" "20. Diviziya Morskoi Pekhoty" "21. Diviziya Morskoi Pekhoty" "23. Diviziya Morskoi Pekhoty" 
+		"24. Diviziya Morskoi Pekhoty" "25. Diviziya Morskoi Pekhoty" "26. Diviziya Morskoi Pekhoty" "27. Diviziya Morskoi Pekhoty" "28. Diviziya Morskoi Pekhoty" "29. Diviziya Morskoi Pekhoty" "30. Diviziya Morskoi Pekhoty" "31. Diviziya Morskoi Pekhoty" "32. Diviziya Morskoi Pekhoty" "33. Diviziya Morskoi Pekhoty" "34. Diviziya Morskoi Pekhoty" 
+		"35. Diviziya Morskoi Pekhoty" "36. Diviziya Morskoi Pekhoty" "37. Diviziya Morskoi Pekhoty" "18. Diviziya Morskoi Pekhoty" "39. Diviziya Morskoi Pekhoty" "40. Diviziya Morskoi Pekhoty" "41. Diviziya Morskoi Pekhoty" "42. Diviziya Morskoi Pekhoty" "43. Diviziya Morskoi Pekhoty" "44. Diviziya Morskoi Pekhoty" "45. Diviziya Morskoi Pekhoty" 
+		"46. Diviziya Morskoi Pekhoty" "47. Diviziya Morskoi Pekhoty" "48. Diviziya Morskoi Pekhoty" "49. Diviziya Morskoi Pekhoty" "50. Diviziya Morskoi Pekhoty" 
+	}
+	bergsjaeger_brigade = {
+		"9. 'Kavkazskaya' GornoStrelkovayaDiviziya" "20. 'Proletar. Donb.' GornoStrelkovaya Diviziya" "28. 'Gorskaya' GornoStrelkovaya Diviziya" "30. 'Irkutskaya' GornoStrelkovaya Diviziya" "44. 'Kievskaya' GornoStrelkovaya Diviziya" "47. Gornostrelkovaya Diviziya" "58. Gornostrelkovaya Diviziya" "60. Gornostrelkovaya Diviziya" "63. 'Gruzinskaya' GornoStrelkovaya Diviziya" "68. 'Turkestanskaya' GornoStrelkovaya Diviziya" "72. Gornostrelkovaya Diviziya" 
+		"76. 'Armyanskaya' GornoStrelkovaya Diviziya" "77. 'Azerbajdzhansk.' GornoStrelkovaya Diviziya" "83. 'Turkestanskaya' GornoStrelkovaya Diviziya" "96. 'Vinnickaya' GornoStrelkovaya Diviziya" "101. Gornostrelkovaya Diviziya" "138. Gornostrelkovaya Diviziya" "192. Gornostrelkovaya Diviziya" "194. Gornostrelkovaya Diviziya" "400. Gornostrelkovaya Diviziya" "402. Gornostrelkovaya Diviziya" "404. Gornostrelkovaya Diviziya" 
+		"405. Gornostrelkovaya Diviziya" "406. Gornostrelkovaya Diviziya" "407. Gornostrelkovaya Diviziya" "408. Gornostrelkovaya Diviziya" "410. Gornostrelkovaya Diviziya" "411. Gornostrelkovaya Diviziya" "412. Gornostrelkovaya Diviziya" "413. Gornostrelkovaya Diviziya" "414. Gornostrelkovaya Diviziya" "415. Gornostrelkovaya Diviziya" "416. Gornostrelkovaya Diviziya" 
+		"417. Gornostrelkovaya Diviziya" "418. Gornostrelkovaya Diviziya" "419. Gornostrelkovaya Diviziya" "420. Gornostrelkovaya Diviziya" "421. Gornostrelkovaya Diviziya" "422. Gornostrelkovaya Diviziya" "423. Gornostrelkovaya Diviziya" "424. Gornostrelkovaya Diviziya" "425. Gornostrelkovaya Diviziya" "426. Gornostrelkovaya Diviziya" "427. Gornostrelkovaya Diviziya" 
+		"428. Gornostrelkovaya Diviziya" "429. Gornostrelkovaya Diviziya" "430. Gornostrelkovaya Diviziya" "432. Gornostrelkovaya Diviziya" "433. Gornostrelkovaya Diviziya" "434. Gornostrelkovaya Diviziya" "435. Gornostrelkovaya Diviziya" "436. Gornostrelkovaya Diviziya" "437. Gornostrelkovaya Diviziya" "439. Gornostrelkovaya Diviziya" "440. Gornostrelkovaya Diviziya" 
+		"441. Gornostrelkovaya Diviziya" "442. Gornostrelkovaya Diviziya" "443. Gornostrelkovaya Diviziya" "444. Gornostrelkovaya Diviziya" "445. Gornostrelkovaya Diviziya" "446. Gornostrelkovaya Diviziya" "448. Gornostrelkovaya Diviziya" "449. Gornostrelkovaya Diviziya" "450. Gornostrelkovaya Diviziya" "451. Gornostrelkovaya Diviziya" "452. Gornostrelkovaya Diviziya" 
+		"453. Gornostrelkovaya Diviziya" "454. Gornostrelkovaya Diviziya" "455. Gornostrelkovaya Diviziya" "456. Gornostrelkovaya Diviziya" "457. Gornostrelkovaya Diviziya" "458. Gornostrelkovaya Diviziya" "500. Gornostrelkovaya Diviziya" "502. Gornostrelkovaya Diviziya" "504. Gornostrelkovaya Diviziya" "505. Gornostrelkovaya Diviziya" "506. Gornostrelkovaya Diviziya" 
+		"507. Gornostrelkovaya Diviziya" "508. Gornostrelkovaya Diviziya" "510. Gornostrelkovaya Diviziya" "511. Gornostrelkovaya Diviziya" "512. Gornostrelkovaya Diviziya" "513. Gornostrelkovaya Diviziya" "514. Gornostrelkovaya Diviziya" "515. Gornostrelkovaya Diviziya" "516. Gornostrelkovaya Diviziya" "517. Gornostrelkovaya Diviziya" "518. Gornostrelkovaya Diviziya" 
+		"519. Gornostrelkovaya Diviziya" "520. Gornostrelkovaya Diviziya" "521. Gornostrelkovaya Diviziya" "522. Gornostrelkovaya Diviziya" "523. Gornostrelkovaya Diviziya" "524. Gornostrelkovaya Diviziya" "525. Gornostrelkovaya Diviziya" "526. Gornostrelkovaya Diviziya" "527. Gornostrelkovaya Diviziya" "528. Gornostrelkovaya Diviziya" "529. Gornostrelkovaya Diviziya" 
+		"530. Gornostrelkovaya Diviziya" "532. Gornostrelkovaya Diviziya" "533. Gornostrelkovaya Diviziya" "534. Gornostrelkovaya Diviziya" "535. Gornostrelkovaya Diviziya" "536. Gornostrelkovaya Diviziya" "537. Gornostrelkovaya Diviziya" "539. Gornostrelkovaya Diviziya" "540. Gornostrelkovaya Diviziya" "541. Gornostrelkovaya Diviziya" "542. Gornostrelkovaya Diviziya" 
+		"543. Gornostrelkovaya Diviziya" "544. Gornostrelkovaya Diviziya" "545. Gornostrelkovaya Diviziya" "546. Gornostrelkovaya Diviziya" "548. Gornostrelkovaya Diviziya" "549. Gornostrelkovaya Diviziya" "550. Gornostrelkovaya Diviziya" "551. Gornostrelkovaya Diviziya" "552. Gornostrelkovaya Diviziya" "553. Gornostrelkovaya Diviziya" "554. Gornostrelkovaya Diviziya" 
+		"555. Gornostrelkovaya Diviziya" "556. Gornostrelkovaya Diviziya" "557. Gornostrelkovaya Diviziya" "558. Gornostrelkovaya Diviziya" "559. Gornostrelkovaya Diviziya" "560. Gornostrelkovaya Diviziya" "561. Gornostrelkovaya Diviziya" "562. Gornostrelkovaya Diviziya" "564. Gornostrelkovaya Diviziya" "565. Gornostrelkovaya Diviziya" "566. Gornostrelkovaya Diviziya" 
+		"567. Gornostrelkovaya Diviziya" "568. Gornostrelkovaya Diviziya" "569. Gornostrelkovaya Diviziya" "570. Gornostrelkovaya Diviziya" "571. Gornostrelkovaya Diviziya" "572. Gornostrelkovaya Diviziya" "573. Gornostrelkovaya Diviziya" "574. Gornostrelkovaya Diviziya" "575. Gornostrelkovaya Diviziya" "576. Gornostrelkovaya Diviziya" "577. Gornostrelkovaya Diviziya" 
+		"578. Gornostrelkovaya Diviziya" "579. Gornostrelkovaya Diviziya" "580. Gornostrelkovaya Diviziya" "581. Gornostrelkovaya Diviziya" "582. Gornostrelkovaya Diviziya" "583. Gornostrelkovaya Diviziya" "584. Gornostrelkovaya Diviziya" "586. Gornostrelkovaya Diviziya" "587. Gornostrelkovaya Diviziya" "588. Gornostrelkovaya Diviziya" "589. Gornostrelkovaya Diviziya" 
+		"590. Gornostrelkovaya Diviziya" "591. Gornostrelkovaya Diviziya" "593. Gornostrelkovaya Diviziya" "595. Gornostrelkovaya Diviziya" "596. Gornostrelkovaya Diviziya" "597. Gornostrelkovaya Diviziya" "599. Gornostrelkovaya Diviziya" 
+	}
+	garrison_brigade = {
+		"145. Garnizon Diviziya" "146. Garnizon Diviziya" "148. Garnizon Diviziya" "149. Garnizon Diviziya" "150. Garnizon Diviziya" "151. Garnizon Diviziya" "152. Garnizon Diviziya" "153. Garnizon Diviziya" "154. Garnizon Diviziya" "155. Garnizon Diviziya" "156. Garnizon Diviziya" 
+		"157. Garnizon Diviziya" "158. Garnizon Diviziya" "159. Garnizon Diviziya" "160. Garnizon Diviziya" "161. Garnizon Diviziya" "162. Garnizon Diviziya" "164. Garnizon Diviziya" "165. Garnizon Diviziya" "166. Garnizon Diviziya" "167. Garnizon Diviziya" "168. Garnizon Diviziya" 
+		"169. Garnizon Diviziya" "170. Garnizon Diviziya" "171. Garnizon Diviziya" "172. Garnizon Diviziya" "173. Garnizon Diviziya" "174. Garnizon Diviziya" "175. Garnizon Diviziya" "176. Garnizon Diviziya" "177. Garnizon Diviziya" "178. Garnizon Diviziya" "179. Garnizon Diviziya" 
+		"180. Garnizon Diviziya" "181. Garnizon Diviziya" "182. Garnizon Diviziya" "183. Garnizon Diviziya" "184. Garnizon Diviziya" "186. Garnizon Diviziya" "187. Garnizon Diviziya" "188. Garnizon Diviziya" "189. Garnizon Diviziya" "190. Garnizon Diviziya" "191. Garnizon Diviziya" 
+		"193. Garnizon Diviziya" "195. Garnizon Diviziya" "196. 'Dnepropetrov.' Garnizon Diviziya" "197. 'Kievskaya' Garnizon Diviziya" "199. Garnizon Diviziya" "200. Garnizon Diviziya" "206. Garnizon Diviziya" "214. Garnizon Diviziya" "217. Garnizon Diviziya" "222. Garnizon Diviziya" "224. Garnizon Diviziya" 
+		"227. Garnizon Diviziya" "228. Garnizon Diviziya" "229. Garnizon Diviziya" "232. Garnizon Diviziya" "233. Garnizon Diviziya" "235. Garnizon Diviziya" "237. Garnizon Diviziya" "238. Garnizon Diviziya" "300. Garnizon Diviziya" "302. Garnizon Diviziya" "304. Garnizon Diviziya" 
+		"305. Garnizon Diviziya" "306. Garnizon Diviziya" "307. Garnizon Diviziya" "308. Garnizon Diviziya" "310. Garnizon Diviziya" "311. Garnizon Diviziya" "312. Garnizon Diviziya" "313. Garnizon Diviziya" "314. Garnizon Diviziya" "315. Garnizon Diviziya" "316. Garnizon Diviziya" 
+		"317. Garnizon Diviziya" "318. Garnizon Diviziya" "319. Garnizon Diviziya" "320. Garnizon Diviziya" "321. Garnizon Diviziya" "322. Garnizon Diviziya" "323. Garnizon Diviziya" "324. Garnizon Diviziya" "325. Garnizon Diviziya" "326. Garnizon Diviziya" "327. Garnizon Diviziya" 
+		"328. Garnizon Diviziya" "329. Garnizon Diviziya" "330. Garnizon Diviziya" "332. Garnizon Diviziya" "333. Garnizon Diviziya" "334. Garnizon Diviziya" "335. Garnizon Diviziya" "336. Garnizon Diviziya" "337. Garnizon Diviziya" "339. Garnizon Diviziya" "340. Garnizon Diviziya" 
+		"341. Garnizon Diviziya" "342. Garnizon Diviziya" "343. Garnizon Diviziya" "344. Garnizon Diviziya" "345. Garnizon Diviziya" "346. Garnizon Diviziya" "348. Garnizon Diviziya" "349. Garnizon Diviziya" "350. Garnizon Diviziya" "351. Garnizon Diviziya" "352. Garnizon Diviziya" 
+		"353. Garnizon Diviziya" "354. Garnizon Diviziya" "355. Garnizon Diviziya" "356. Garnizon Diviziya" "357. Garnizon Diviziya" "358. Garnizon Diviziya" "359. Garnizon Diviziya" "360. Garnizon Diviziya" "361. Garnizon Diviziya" "362. Garnizon Diviziya" "364. Garnizon Diviziya" 
+		"365. Garnizon Diviziya" "366. Garnizon Diviziya" "367. Garnizon Diviziya" "368. Garnizon Diviziya" "369. Garnizon Diviziya" "370. Garnizon Diviziya" "371. Garnizon Diviziya" "372. Garnizon Diviziya" "373. Garnizon Diviziya" "374. Garnizon Diviziya" "375. Garnizon Diviziya" 
+		"376. Garnizon Diviziya" "377. Garnizon Diviziya" "378. Garnizon Diviziya" "379. Garnizon Diviziya" "380. Garnizon Diviziya" "381. Garnizon Diviziya" "382. Garnizon Diviziya" "383. Garnizon Diviziya" "384. Garnizon Diviziya" "386. Garnizon Diviziya" "387. Garnizon Diviziya" 
+		"388. Garnizon Diviziya" "389. Garnizon Diviziya" "390. Garnizon Diviziya" "391. Garnizon Diviziya" "393. Garnizon Diviziya" "395. Garnizon Diviziya" "396. Garnizon Diviziya" "397. Garnizon Diviziya" "399. Garnizon Diviziya" "400. Garnizon Diviziya" "402. Garnizon Diviziya" 
+		"404. Garnizon Diviziya" "405. Garnizon Diviziya" "406. Garnizon Diviziya" "407. Garnizon Diviziya" "408. Garnizon Diviziya" "410. Garnizon Diviziya" "411. Garnizon Diviziya" "412. Garnizon Diviziya" "413. Garnizon Diviziya" "414. Garnizon Diviziya" "415. Garnizon Diviziya" 
+		"416. Garnizon Diviziya" "417. Garnizon Diviziya" "418. Garnizon Diviziya" "419. Garnizon Diviziya" "420. Garnizon Diviziya" "421. Garnizon Diviziya" "422. Garnizon Diviziya" "423. Garnizon Diviziya" "424. Garnizon Diviziya" "425. Garnizon Diviziya" "426. Garnizon Diviziya" 
+		"427. Garnizon Diviziya" "428. Garnizon Diviziya" "429. Garnizon Diviziya" "430. Garnizon Diviziya" "432. Garnizon Diviziya" "433. Garnizon Diviziya" "434. Garnizon Diviziya" "435. Garnizon Diviziya" "436. Garnizon Diviziya" "437. Garnizon Diviziya" "439. Garnizon Diviziya" 
+		"440. Garnizon Diviziya" "441. Garnizon Diviziya" "442. Garnizon Diviziya" "443. Garnizon Diviziya" "444. Garnizon Diviziya" "445. Garnizon Diviziya" "446. Garnizon Diviziya" "448. Garnizon Diviziya" "449. Garnizon Diviziya" "450. Garnizon Diviziya" "451. Garnizon Diviziya" 
+		"452. Garnizon Diviziya" "453. Garnizon Diviziya" "454. Garnizon Diviziya" "455. Garnizon Diviziya" "456. Garnizon Diviziya" "457. Garnizon Diviziya" "458. Garnizon Diviziya" "459. Garnizon Diviziya" "460. Garnizon Diviziya" "461. Garnizon Diviziya" "462. Garnizon Diviziya" 
+		"464. Garnizon Diviziya" "465. Garnizon Diviziya" "466. Garnizon Diviziya" "467. Garnizon Diviziya" "468. Garnizon Diviziya" "469. Garnizon Diviziya" "470. Garnizon Diviziya" "471. Garnizon Diviziya" "472. Garnizon Diviziya" "473. Garnizon Diviziya" "474. Garnizon Diviziya" 
+		"475. Garnizon Diviziya" "476. Garnizon Diviziya" "477. Garnizon Diviziya" "478. Garnizon Diviziya" "479. Garnizon Diviziya" "480. Garnizon Diviziya" "481. Garnizon Diviziya" "482. Garnizon Diviziya" "483. Garnizon Diviziya" "484. Garnizon Diviziya" "486. Garnizon Diviziya" 
+		"487. Garnizon Diviziya" "488. Garnizon Diviziya" "489. Garnizon Diviziya" "490. Garnizon Diviziya" "491. Garnizon Diviziya" "493. Garnizon Diviziya" "495. Garnizon Diviziya" "496. Garnizon Diviziya" "497. Garnizon Diviziya" "499. Garnizon Diviziya" "500. Garnizon Diviziya" 
+		"502. Garnizon Diviziya" "504. Garnizon Diviziya" "505. Garnizon Diviziya" "506. Garnizon Diviziya" "507. Garnizon Diviziya" "508. Garnizon Diviziya" "510. Garnizon Diviziya" "511. Garnizon Diviziya" "512. Garnizon Diviziya" "513. Garnizon Diviziya" "514. Garnizon Diviziya" 
+		"515. Garnizon Diviziya" "516. Garnizon Diviziya" "517. Garnizon Diviziya" "518. Garnizon Diviziya" "519. Garnizon Diviziya" "520. Garnizon Diviziya" "521. Garnizon Diviziya" "522. Garnizon Diviziya" "523. Garnizon Diviziya" "524. Garnizon Diviziya" "525. Garnizon Diviziya" 
+		"526. Garnizon Diviziya" "527. Garnizon Diviziya" "528. Garnizon Diviziya" "529. Garnizon Diviziya" "530. Garnizon Diviziya" "532. Garnizon Diviziya" "533. Garnizon Diviziya" "534. Garnizon Diviziya" "535. Garnizon Diviziya" "536. Garnizon Diviziya" "537. Garnizon Diviziya" 
+		"539. Garnizon Diviziya" "540. Garnizon Diviziya" "541. Garnizon Diviziya" "542. Garnizon Diviziya" "543. Garnizon Diviziya" "544. Garnizon Diviziya" "545. Garnizon Diviziya" "546. Garnizon Diviziya" "548. Garnizon Diviziya" "549. Garnizon Diviziya" "550. Garnizon Diviziya" 
+		"551. Garnizon Diviziya" "552. Garnizon Diviziya" "553. Garnizon Diviziya" "554. Garnizon Diviziya" "555. Garnizon Diviziya" "556. Garnizon Diviziya" "557. Garnizon Diviziya" "558. Garnizon Diviziya" "559. Garnizon Diviziya" "560. Garnizon Diviziya" "561. Garnizon Diviziya" 
+		"562. Garnizon Diviziya" "564. Garnizon Diviziya" "565. Garnizon Diviziya" "566. Garnizon Diviziya" "567. Garnizon Diviziya" "568. Garnizon Diviziya" "569. Garnizon Diviziya" "570. Garnizon Diviziya" "571. Garnizon Diviziya" "572. Garnizon Diviziya" "573. Garnizon Diviziya" 
+		"574. Garnizon Diviziya" "575. Garnizon Diviziya" "576. Garnizon Diviziya" "577. Garnizon Diviziya" "578. Garnizon Diviziya" "579. Garnizon Diviziya" "580. Garnizon Diviziya" "581. Garnizon Diviziya" "582. Garnizon Diviziya" "583. Garnizon Diviziya" "584. Garnizon Diviziya" 
+		"586. Garnizon Diviziya" "587. Garnizon Diviziya" "588. Garnizon Diviziya" "589. Garnizon Diviziya" "590. Garnizon Diviziya" "591. Garnizon Diviziya" "593. Garnizon Diviziya" "595. Garnizon Diviziya" "596. Garnizon Diviziya" "597. Garnizon Diviziya" "599. Garnizon Diviziya" 
+		"600. Garnizon Diviziya" 
+	}
+	hq_brigade = {
+		"Moscow Front" "Leningrad Front" "Northern Front" "Volchov Front" "North-Western Front" "Western Front" "Briansk Front" "1st Baltic Front" "2nd Baltic Front" "1st Bielorussian Front" "2nd Bielorussian Front" 
+		"3nd Bielorussian Front" "South-Western Front" "Southern Front" "1st Ukrainian Front" "2nd Ukrainian Front" "3rd Ukrainian Front" "Orel Front" "Kalinin Front" "Briansk Front" "Kharkov Front" "Steppe Front" 
+		"Stalingrad Front" "Don Front" "Voronezh Front" "Caucasus Front" "Central Asia Front" "1st Far East Front" "2nd Far East Front" "Transbaikal Front" "1st Siberian Front" "2nd Siberian Front" "3rd Siberian Front" 
+		"Gorki Front" "Saratov Front" 
+		"1ya Armiya" "2ya Armiya" "3ya Armiya" "4ya Armiya" "5ya Armiya" "6ya Armiya" "7ya Armiya" "8ya Armiya" "9ya Armiya" "10ya Armiya"
+		"11ya Armiya" "12ya Armiya" "13ya Armiya" "14ya Armiya" "15ya Armiya" "16ya Armiya" "17ya Armiya" "18ya Armiya" "19ya Armiya" "20ya Armiya"
+		"21ya Armiya" "22ya Armiya" "23ya Armiya" "24ya Armiya" "25ya Armiya" "26ya Armiya" "27ya Armiya" "28ya Armiya" "29ya Armiya" "30ya Armiya"
+		"31ya Armiya" "32ya Armiya" "33ya Armiya" "34ya Armiya" "35ya Armiya" "36ya Armiya" "37ya Armiya" "38ya Armiya" "39ya Armiya" "40ya Armiya"
+		"41ya Armiya" "42ya Armiya" "43ya Armiya" "44ya Armiya" "45ya Armiya" "46ya Armiya" "47ya Armiya" "48ya Armiya" "49ya Armiya" "50ya Armiya"
+	}
+	militia_brigade = {
+		"2. Divisiya Narodnogo Opolcheniya" "3. Divisiya Narodnogo Opolcheniya" "4. Divisiya Narodnogo Opolcheniya" "5. Divisiya Narodnogo Opolcheniya" "6. Divisiya Narodnogo Opolcheniya" "8. Divisiya Narodnogo Opolcheniya" "10. Divisiya Narodnogo Opolcheniya" "11. Divisiya Narodnogo Opolcheniya" "12. Divisiya Narodnogo Opolcheniya" "13. Divisiya Narodnogo Opolcheniya" "14. Divisiya Narodnogo Opolcheniya" 
+		"16. Divisiya Narodnogo Opolcheniya" "17. Divisiya Narodnogo Opolcheniya" "19. Divisiya Narodnogo Opolcheniya" "21. Divisiya Narodnogo Opolcheniya" "22. Divisiya Narodnogo Opolcheniya" "23. Divisiya Narodnogo Opolcheniya" "24. Divisiya Narodnogo Opolcheniya" "25. Divisiya Narodnogo Opolcheniya" "26. Divisiya Narodnogo Opolcheniya" "27. Divisiya Narodnogo Opolcheniya" "31. Divisiya Narodnogo Opolcheniya" 
+		"32. Divisiya Narodnogo Opolcheniya" "33. Divisiya Narodnogo Opolcheniya" "34. Divisiya Narodnogo Opolcheniya" "35. Divisiya Narodnogo Opolcheniya" "37. Divisiya Narodnogo Opolcheniya" "38. Divisiya Narodnogo Opolcheniya" "39. Divisiya Narodnogo Opolcheniya" "40. Divisiya Narodnogo Opolcheniya" "41. Divisiya Narodnogo Opolcheniya" "42. Divisiya Narodnogo Opolcheniya" "43. Divisiya Narodnogo Opolcheniya" 
+		"45. Divisiya Narodnogo Opolcheniya" "46. Divisiya Narodnogo Opolcheniya" "47. Divisiya Narodnogo Opolcheniya" "48. Divisiya Narodnogo Opolcheniya" "49. Divisiya Narodnogo Opolcheniya" "50. Divisiya Narodnogo Opolcheniya" "51. Divisiya Narodnogo Opolcheniya" "52. Divisiya Narodnogo Opolcheniya" "53. Divisiya Narodnogo Opolcheniya" "54. Divisiya Narodnogo Opolcheniya" "55. Divisiya Narodnogo Opolcheniya" 
+		"56. Divisiya Narodnogo Opolcheniya" "59. Divisiya Narodnogo Opolcheniya" "61. Divisiya Narodnogo Opolcheniya" "62. Divisiya Narodnogo Opolcheniya" "64. Divisiya Narodnogo Opolcheniya" "65. Divisiya Narodnogo Opolcheniya" "66. Divisiya Narodnogo Opolcheniya" "67. Divisiya Narodnogo Opolcheniya" "70. Divisiya Narodnogo Opolcheniya" "71. Divisiya Narodnogo Opolcheniya" "73. Divisiya Narodnogo Opolcheniya" 
+		"74. Divisiya Narodnogo Opolcheniya" "75. Divisiya Narodnogo Opolcheniya" "78. Divisiya Narodnogo Opolcheniya" "79. Divisiya Narodnogo Opolcheniya" "80. Divisiya Narodnogo Opolcheniya" "85. Divisiya Narodnogo Opolcheniya" "86. Divisiya Narodnogo Opolcheniya" "87. Divisiya Narodnogo Opolcheniya" "88. Divisiya Narodnogo Opolcheniya" "89. Divisiya Narodnogo Opolcheniya" "90. Divisiya Narodnogo Opolcheniya" 
+		"91. Divisiya Narodnogo Opolcheniya" "92. Divisiya Narodnogo Opolcheniya" "93. Divisiya Narodnogo Opolcheniya" "94. Divisiya Narodnogo Opolcheniya" "95. Divisiya Narodnogo Opolcheniya" "97. Divisiya Narodnogo Opolcheniya" "98. Divisiya Narodnogo Opolcheniya" "99. Divisiya Narodnogo Opolcheniya" "100. Divisiya Narodnogo Opolcheniya" "102. Divisiya Narodnogo Opolcheniya" "104. Divisiya Narodnogo Opolcheniya" 
+		"105. Divisiya Narodnogo Opolcheniya" "106. Divisiya Narodnogo Opolcheniya" "107. Divisiya Narodnogo Opolcheniya" "108. Divisiya Narodnogo Opolcheniya" "110. Divisiya Narodnogo Opolcheniya" "111. Divisiya Narodnogo Opolcheniya" "112. Divisiya Narodnogo Opolcheniya" "113. Divisiya Narodnogo Opolcheniya" "114. Divisiya Narodnogo Opolcheniya" "115. Divisiya Narodnogo Opolcheniya" "116. Divisiya Narodnogo Opolcheniya" 
+		"117. Divisiya Narodnogo Opolcheniya" "118. Divisiya Narodnogo Opolcheniya" "119. Divisiya Narodnogo Opolcheniya" "120. Divisiya Narodnogo Opolcheniya" "121. Divisiya Narodnogo Opolcheniya" "122. Divisiya Narodnogo Opolcheniya" "123. Divisiya Narodnogo Opolcheniya" "124. Divisiya Narodnogo Opolcheniya" "125. Divisiya Narodnogo Opolcheniya" "126. Divisiya Narodnogo Opolcheniya" "127. Divisiya Narodnogo Opolcheniya" 
+		"128. Divisiya Narodnogo Opolcheniya" "129. Divisiya Narodnogo Opolcheniya" "130. Divisiya Narodnogo Opolcheniya" "132. Divisiya Narodnogo Opolcheniya" "133. Divisiya Narodnogo Opolcheniya" "134. Divisiya Narodnogo Opolcheniya" "135. Divisiya Narodnogo Opolcheniya" "136. Divisiya Narodnogo Opolcheniya" "137. Divisiya Narodnogo Opolcheniya" "139. Divisiya Narodnogo Opolcheniya" "140. Divisiya Narodnogo Opolcheniya" 
+		"141. Divisiya Narodnogo Opolcheniya" "142. Divisiya Narodnogo Opolcheniya" "143. Divisiya Narodnogo Opolcheniya" "144. Divisiya Narodnogo Opolcheniya" "145. Divisiya Narodnogo Opolcheniya" "146. Divisiya Narodnogo Opolcheniya" "148. Divisiya Narodnogo Opolcheniya" "149. Divisiya Narodnogo Opolcheniya" "150. Divisiya Narodnogo Opolcheniya" "151. Divisiya Narodnogo Opolcheniya" "152. Divisiya Narodnogo Opolcheniya" 
+		"153. Divisiya Narodnogo Opolcheniya" "154. Divisiya Narodnogo Opolcheniya" "155. Divisiya Narodnogo Opolcheniya" "156. Divisiya Narodnogo Opolcheniya" "157. Divisiya Narodnogo Opolcheniya" "158. Divisiya Narodnogo Opolcheniya" "159. Divisiya Narodnogo Opolcheniya" "160. Divisiya Narodnogo Opolcheniya" "161. Divisiya Narodnogo Opolcheniya" "162. Divisiya Narodnogo Opolcheniya" "164. Divisiya Narodnogo Opolcheniya" 
+		"165. Divisiya Narodnogo Opolcheniya" "166. Divisiya Narodnogo Opolcheniya" "167. Divisiya Narodnogo Opolcheniya" "168. Divisiya Narodnogo Opolcheniya" "169. Divisiya Narodnogo Opolcheniya" "170. Divisiya Narodnogo Opolcheniya" "171. Divisiya Narodnogo Opolcheniya" "172. Divisiya Narodnogo Opolcheniya" "173. Divisiya Narodnogo Opolcheniya" "174. Divisiya Narodnogo Opolcheniya" "175. Divisiya Narodnogo Opolcheniya" 
+		"176. Divisiya Narodnogo Opolcheniya" "177. Divisiya Narodnogo Opolcheniya" "178. Divisiya Narodnogo Opolcheniya" "179. Divisiya Narodnogo Opolcheniya" "180. Divisiya Narodnogo Opolcheniya" "181. Divisiya Narodnogo Opolcheniya" "182. Divisiya Narodnogo Opolcheniya" "183. Divisiya Narodnogo Opolcheniya" "184. Divisiya Narodnogo Opolcheniya" "186. Divisiya Narodnogo Opolcheniya" "187. Divisiya Narodnogo Opolcheniya" 
+		"188. Divisiya Narodnogo Opolcheniya" "189. Divisiya Narodnogo Opolcheniya" "190. Divisiya Narodnogo Opolcheniya" "191. Divisiya Narodnogo Opolcheniya" "193. Divisiya Narodnogo Opolcheniya" "195. Divisiya Narodnogo Opolcheniya" "196. Divisiya Narodnogo Opolcheniya" "197. Divisiya Narodnogo Opolcheniya" "199. Divisiya Narodnogo Opolcheniya" "200. Divisiya Narodnogo Opolcheniya" "206. Divisiya Narodnogo Opolcheniya" 
+		"214. Divisiya Narodnogo Opolcheniya" "217. Divisiya Narodnogo Opolcheniya" "222. Divisiya Narodnogo Opolcheniya" "227. Divisiya Narodnogo Opolcheniya" "228. Divisiya Narodnogo Opolcheniya" "229. Divisiya Narodnogo Opolcheniya" "232. Divisiya Narodnogo Opolcheniya" "233. Divisiya Narodnogo Opolcheniya" "235. Divisiya Narodnogo Opolcheniya" "237. Divisiya Narodnogo Opolcheniya" "300. Divisiya Narodnogo Opolcheniya" 
+		"302. Divisiya Narodnogo Opolcheniya" "304. Divisiya Narodnogo Opolcheniya" "305. Divisiya Narodnogo Opolcheniya" "306. Divisiya Narodnogo Opolcheniya" "307. Divisiya Narodnogo Opolcheniya" "308. Divisiya Narodnogo Opolcheniya" "310. Divisiya Narodnogo Opolcheniya" "311. Divisiya Narodnogo Opolcheniya" "312. Divisiya Narodnogo Opolcheniya" "313. Divisiya Narodnogo Opolcheniya" "314. Divisiya Narodnogo Opolcheniya" 
+		"315. Divisiya Narodnogo Opolcheniya" "316. Divisiya Narodnogo Opolcheniya" "317. Divisiya Narodnogo Opolcheniya" "318. Divisiya Narodnogo Opolcheniya" "319. Divisiya Narodnogo Opolcheniya" "320. Divisiya Narodnogo Opolcheniya" "321. Divisiya Narodnogo Opolcheniya" "322. Divisiya Narodnogo Opolcheniya" "323. Divisiya Narodnogo Opolcheniya" "324. Divisiya Narodnogo Opolcheniya" "325. Divisiya Narodnogo Opolcheniya" 
+		"326. Divisiya Narodnogo Opolcheniya" "327. Divisiya Narodnogo Opolcheniya" "328. Divisiya Narodnogo Opolcheniya" "329. Divisiya Narodnogo Opolcheniya" "330. Divisiya Narodnogo Opolcheniya" "332. Divisiya Narodnogo Opolcheniya" "333. Divisiya Narodnogo Opolcheniya" "334. Divisiya Narodnogo Opolcheniya" "335. Divisiya Narodnogo Opolcheniya" "336. Divisiya Narodnogo Opolcheniya" "337. Divisiya Narodnogo Opolcheniya" 
+		"339. Divisiya Narodnogo Opolcheniya" "340. Divisiya Narodnogo Opolcheniya" "341. Divisiya Narodnogo Opolcheniya" "342. Divisiya Narodnogo Opolcheniya" "343. Divisiya Narodnogo Opolcheniya" "344. Divisiya Narodnogo Opolcheniya" "345. Divisiya Narodnogo Opolcheniya" "346. Divisiya Narodnogo Opolcheniya" "348. Divisiya Narodnogo Opolcheniya" "349. Divisiya Narodnogo Opolcheniya" "350. Divisiya Narodnogo Opolcheniya" 
+		"351. Divisiya Narodnogo Opolcheniya" "352. Divisiya Narodnogo Opolcheniya" "353. Divisiya Narodnogo Opolcheniya" "354. Divisiya Narodnogo Opolcheniya" "355. Divisiya Narodnogo Opolcheniya" "356. Divisiya Narodnogo Opolcheniya" "357. Divisiya Narodnogo Opolcheniya" "358. Divisiya Narodnogo Opolcheniya" "359. Divisiya Narodnogo Opolcheniya" "360. Divisiya Narodnogo Opolcheniya" "361. Divisiya Narodnogo Opolcheniya" 
+		"362. Divisiya Narodnogo Opolcheniya" "364. Divisiya Narodnogo Opolcheniya" "365. Divisiya Narodnogo Opolcheniya" "366. Divisiya Narodnogo Opolcheniya" "367. Divisiya Narodnogo Opolcheniya" "368. Divisiya Narodnogo Opolcheniya" "369. Divisiya Narodnogo Opolcheniya" "370. Divisiya Narodnogo Opolcheniya" "371. Divisiya Narodnogo Opolcheniya" "372. Divisiya Narodnogo Opolcheniya" "373. Divisiya Narodnogo Opolcheniya" 
+		"374. Divisiya Narodnogo Opolcheniya" "375. Divisiya Narodnogo Opolcheniya" "376. Divisiya Narodnogo Opolcheniya" "377. Divisiya Narodnogo Opolcheniya" "378. Divisiya Narodnogo Opolcheniya" "379. Divisiya Narodnogo Opolcheniya" "380. Divisiya Narodnogo Opolcheniya" "381. Divisiya Narodnogo Opolcheniya" "382. Divisiya Narodnogo Opolcheniya" "383. Divisiya Narodnogo Opolcheniya" "384. Divisiya Narodnogo Opolcheniya" 
+		"386. Divisiya Narodnogo Opolcheniya" "387. Divisiya Narodnogo Opolcheniya" "388. Divisiya Narodnogo Opolcheniya" "389. Divisiya Narodnogo Opolcheniya" "390. Divisiya Narodnogo Opolcheniya" "391. Divisiya Narodnogo Opolcheniya" "393. Divisiya Narodnogo Opolcheniya" "395. Divisiya Narodnogo Opolcheniya" "396. Divisiya Narodnogo Opolcheniya" "397. Divisiya Narodnogo Opolcheniya" "399. Divisiya Narodnogo Opolcheniya" 
+		"400. Divisiya Narodnogo Opolcheniya" "402. Divisiya Narodnogo Opolcheniya" "404. Divisiya Narodnogo Opolcheniya" "405. Divisiya Narodnogo Opolcheniya" "406. Divisiya Narodnogo Opolcheniya" "407. Divisiya Narodnogo Opolcheniya" "408. Divisiya Narodnogo Opolcheniya" "410. Divisiya Narodnogo Opolcheniya" "411. Divisiya Narodnogo Opolcheniya" "412. Divisiya Narodnogo Opolcheniya" "413. Divisiya Narodnogo Opolcheniya" 
+		"414. Divisiya Narodnogo Opolcheniya" "415. Divisiya Narodnogo Opolcheniya" "416. Divisiya Narodnogo Opolcheniya" "417. Divisiya Narodnogo Opolcheniya" "418. Divisiya Narodnogo Opolcheniya" "419. Divisiya Narodnogo Opolcheniya" "420. Divisiya Narodnogo Opolcheniya" "421. Divisiya Narodnogo Opolcheniya" "422. Divisiya Narodnogo Opolcheniya" "423. Divisiya Narodnogo Opolcheniya" "424. Divisiya Narodnogo Opolcheniya" 
+		"425. Divisiya Narodnogo Opolcheniya" "426. Divisiya Narodnogo Opolcheniya" "427. Divisiya Narodnogo Opolcheniya" "428. Divisiya Narodnogo Opolcheniya" "429. Divisiya Narodnogo Opolcheniya" "430. Divisiya Narodnogo Opolcheniya" "432. Divisiya Narodnogo Opolcheniya" "433. Divisiya Narodnogo Opolcheniya" "434. Divisiya Narodnogo Opolcheniya" "435. Divisiya Narodnogo Opolcheniya" "436. Divisiya Narodnogo Opolcheniya" 
+		"437. Divisiya Narodnogo Opolcheniya" "439. Divisiya Narodnogo Opolcheniya" "440. Divisiya Narodnogo Opolcheniya" "441. Divisiya Narodnogo Opolcheniya" "442. Divisiya Narodnogo Opolcheniya" "443. Divisiya Narodnogo Opolcheniya" "444. Divisiya Narodnogo Opolcheniya" "445. Divisiya Narodnogo Opolcheniya" "446. Divisiya Narodnogo Opolcheniya" "448. Divisiya Narodnogo Opolcheniya" "449. Divisiya Narodnogo Opolcheniya" 
+		"450. Divisiya Narodnogo Opolcheniya" "451. Divisiya Narodnogo Opolcheniya" "452. Divisiya Narodnogo Opolcheniya" "453. Divisiya Narodnogo Opolcheniya" "454. Divisiya Narodnogo Opolcheniya" "455. Divisiya Narodnogo Opolcheniya" "456. Divisiya Narodnogo Opolcheniya" "457. Divisiya Narodnogo Opolcheniya" "458. Divisiya Narodnogo Opolcheniya" "459. Divisiya Narodnogo Opolcheniya" "460. Divisiya Narodnogo Opolcheniya" 
+		"461. Divisiya Narodnogo Opolcheniya" "462. Divisiya Narodnogo Opolcheniya" "464. Divisiya Narodnogo Opolcheniya" "465. Divisiya Narodnogo Opolcheniya" "466. Divisiya Narodnogo Opolcheniya" "467. Divisiya Narodnogo Opolcheniya" "468. Divisiya Narodnogo Opolcheniya" "469. Divisiya Narodnogo Opolcheniya" "470. Divisiya Narodnogo Opolcheniya" "471. Divisiya Narodnogo Opolcheniya" "472. Divisiya Narodnogo Opolcheniya" 
+		"473. Divisiya Narodnogo Opolcheniya" "474. Divisiya Narodnogo Opolcheniya" "475. Divisiya Narodnogo Opolcheniya" "476. Divisiya Narodnogo Opolcheniya" "477. Divisiya Narodnogo Opolcheniya" "478. Divisiya Narodnogo Opolcheniya" "479. Divisiya Narodnogo Opolcheniya" "480. Divisiya Narodnogo Opolcheniya" "481. Divisiya Narodnogo Opolcheniya" "482. Divisiya Narodnogo Opolcheniya" "483. Divisiya Narodnogo Opolcheniya" 
+		"484. Divisiya Narodnogo Opolcheniya" "486. Divisiya Narodnogo Opolcheniya" "487. Divisiya Narodnogo Opolcheniya" "488. Divisiya Narodnogo Opolcheniya" "489. Divisiya Narodnogo Opolcheniya" "490. Divisiya Narodnogo Opolcheniya" "491. Divisiya Narodnogo Opolcheniya" "493. Divisiya Narodnogo Opolcheniya" "495. Divisiya Narodnogo Opolcheniya" "496. Divisiya Narodnogo Opolcheniya" "497. Divisiya Narodnogo Opolcheniya" 
+		"499. Divisiya Narodnogo Opolcheniya" "500. Divisiya Narodnogo Opolcheniya" "502. Divisiya Narodnogo Opolcheniya" "504. Divisiya Narodnogo Opolcheniya" "505. Divisiya Narodnogo Opolcheniya" "506. Divisiya Narodnogo Opolcheniya" "507. Divisiya Narodnogo Opolcheniya" "508. Divisiya Narodnogo Opolcheniya" "510. Divisiya Narodnogo Opolcheniya" "511. Divisiya Narodnogo Opolcheniya" "512. Divisiya Narodnogo Opolcheniya" 
+		"513. Divisiya Narodnogo Opolcheniya" "514. Divisiya Narodnogo Opolcheniya" "515. Divisiya Narodnogo Opolcheniya" "516. Divisiya Narodnogo Opolcheniya" "517. Divisiya Narodnogo Opolcheniya" "518. Divisiya Narodnogo Opolcheniya" "519. Divisiya Narodnogo Opolcheniya" "520. Divisiya Narodnogo Opolcheniya" "521. Divisiya Narodnogo Opolcheniya" "522. Divisiya Narodnogo Opolcheniya" "523. Divisiya Narodnogo Opolcheniya" 
+		"524. Divisiya Narodnogo Opolcheniya" "525. Divisiya Narodnogo Opolcheniya" "526. Divisiya Narodnogo Opolcheniya" "527. Divisiya Narodnogo Opolcheniya" "528. Divisiya Narodnogo Opolcheniya" "529. Divisiya Narodnogo Opolcheniya" "530. Divisiya Narodnogo Opolcheniya" "532. Divisiya Narodnogo Opolcheniya" "533. Divisiya Narodnogo Opolcheniya" "534. Divisiya Narodnogo Opolcheniya" "535. Divisiya Narodnogo Opolcheniya" 
+		"536. Divisiya Narodnogo Opolcheniya" "537. Divisiya Narodnogo Opolcheniya" "539. Divisiya Narodnogo Opolcheniya" "540. Divisiya Narodnogo Opolcheniya" "541. Divisiya Narodnogo Opolcheniya" "542. Divisiya Narodnogo Opolcheniya" "543. Divisiya Narodnogo Opolcheniya" "544. Divisiya Narodnogo Opolcheniya" "545. Divisiya Narodnogo Opolcheniya" "546. Divisiya Narodnogo Opolcheniya" "548. Divisiya Narodnogo Opolcheniya" 
+		"549. Divisiya Narodnogo Opolcheniya" "550. Divisiya Narodnogo Opolcheniya" "551. Divisiya Narodnogo Opolcheniya" "552. Divisiya Narodnogo Opolcheniya" "553. Divisiya Narodnogo Opolcheniya" "554. Divisiya Narodnogo Opolcheniya" "555. Divisiya Narodnogo Opolcheniya" "556. Divisiya Narodnogo Opolcheniya" "557. Divisiya Narodnogo Opolcheniya" "558. Divisiya Narodnogo Opolcheniya" "559. Divisiya Narodnogo Opolcheniya" 
+		"560. Divisiya Narodnogo Opolcheniya" "561. Divisiya Narodnogo Opolcheniya" "562. Divisiya Narodnogo Opolcheniya" "564. Divisiya Narodnogo Opolcheniya" "565. Divisiya Narodnogo Opolcheniya" "566. Divisiya Narodnogo Opolcheniya" "567. Divisiya Narodnogo Opolcheniya" "568. Divisiya Narodnogo Opolcheniya" "569. Divisiya Narodnogo Opolcheniya" "570. Divisiya Narodnogo Opolcheniya" "571. Divisiya Narodnogo Opolcheniya" 
+		"572. Divisiya Narodnogo Opolcheniya" "573. Divisiya Narodnogo Opolcheniya" "574. Divisiya Narodnogo Opolcheniya" "575. Divisiya Narodnogo Opolcheniya" "576. Divisiya Narodnogo Opolcheniya" "577. Divisiya Narodnogo Opolcheniya" "578. Divisiya Narodnogo Opolcheniya" "579. Divisiya Narodnogo Opolcheniya" "580. Divisiya Narodnogo Opolcheniya" "581. Divisiya Narodnogo Opolcheniya" "582. Divisiya Narodnogo Opolcheniya" 
+		"583. Divisiya Narodnogo Opolcheniya" "584. Divisiya Narodnogo Opolcheniya" "586. Divisiya Narodnogo Opolcheniya" "587. Divisiya Narodnogo Opolcheniya" "588. Divisiya Narodnogo Opolcheniya" "589. Divisiya Narodnogo Opolcheniya" "590. Divisiya Narodnogo Opolcheniya" "591. Divisiya Narodnogo Opolcheniya" "593. Divisiya Narodnogo Opolcheniya" "595. Divisiya Narodnogo Opolcheniya" "596. Divisiya Narodnogo Opolcheniya" 
+		"597. Divisiya Narodnogo Opolcheniya" "599. Divisiya Narodnogo Opolcheniya" "600. Divisiya Narodnogo Opolcheniya" 
+	}
+	engineer_brigade = {
+		"1ya Ingenernaia Brigada" "2ya Ingenernaia Brigada" "3ya Ingenernaia Brigada" "4ya Ingenernaia Brigada" "5ya Ingenernaia Brigada" "6ya Ingenernaia Brigada" "7ya Ingenernaia Brigada" "8ya Ingenernaia Brigada" "9ya Ingenernaia Brigada" "10ya Ingenernaia Brigada" "11ya Ingenernaia Brigada" 
+		"12ya Ingenernaia Brigada" "13ya Ingenernaia Brigada" "14ya Ingenernaia Brigada" "15ya Ingenernaia Brigada" "16ya Ingenernaia Brigada" "17ya Ingenernaia Brigada" "18ya Ingenernaia Brigada" "19ya Ingenernaia Brigada" "20ya Ingenernaia Brigada" "21ya Ingenernaia Brigada" "35ya Ingenernaia Brigada" 
+		"22ya Ingenernaia Brigada" "26ya Ingenernaia Brigada" "27ya Ingenernaia Brigada" "28ya Ingenernaia Brigada" "29ya Ingenernaia Brigada" "30ya Ingenernaia Brigada" "31ya Ingenernaia Brigada" "32ya Ingenernaia Brigada" "33ya Ingenernaia Brigada" "34ya Ingenernaia Brigada" "25ya Ingenernaia Brigada" 
+		"41ya Ingenernaia Brigada" "42ya Ingenernaia Brigada" "24ya Ingenernaia Brigada" "43ya Ingenernaia Brigada" "36ya Ingenernaia Brigada" "37ya Ingenernaia Brigada" "40ya Ingenernaia Brigada" "44ya Ingenernaia Brigada" "45ya Ingenernaia Brigada" "46ya Ingenernaia Brigada" "47ya Ingenernaia Brigada" 
+		"48ya Ingenernaia Brigada" "49ya Ingenernaia Brigada" "50ya Ingenernaia Brigada" "51ya Ingenernaia Brigada" "52ya Ingenernaia Brigada" "53ya Ingenernaia Brigada" "54ya Ingenernaia Brigada" "55ya Ingenernaia Brigada" "56ya Ingenernaia Brigada" "57ya Ingenernaia Brigada" "59ya Ingenernaia Brigada" 
+		"69ya Ingenernaia Brigada" "70ya Ingenernaia Brigada" "38ya Ingenernaia Brigada" "39ya Ingenernaia Brigada" "58ya Ingenernaia Brigada" "60ya Ingenernaia Brigada" "61ya Ingenernaia Brigada" "62ya Ingenernaia Brigada" "63ya Ingenernaia Brigada" "64ya Ingenernaia Brigada" "65ya Ingenernaia Brigada" 
+		"66ya Ingenernaia Brigada" "67ya Ingenernaia Brigada" "68ya Ingenernaia Brigada" "71ya Ingenernaia Brigada" "72ya Ingenernaia Brigada" "75ya Ingenernaia Brigada" "76ya Ingenernaia Brigada" 
+	}
+	tank_destroyer_brigade = {
+		"1y Polk Istrebitelei Tankov" "2y Polk Istrebitelei Tankov" "3y Polk Istrebitelei Tankov" "4y Polk Istrebitelei Tankov" "5y Polk Istrebitelei Tankov" "6y Polk Istrebitelei Tankov" "7y Polk Istrebitelei Tankov" "8y Polk Istrebitelei Tankov" "9y Polk Istrebitelei Tankov" "10y Polk Istrebitelei Tankov" "11y Polk Istrebitelei Tankov" 
+		"12y Polk Istrebitelei Tankov" "13y Polk Istrebitelei Tankov" "14y Polk Istrebitelei Tankov" "15y Polk Istrebitelei Tankov" "16y Polk Istrebitelei Tankov" "17y Polk Istrebitelei Tankov" "18y Polk Istrebitelei Tankov" "19y Polk Istrebitelei Tankov" "20y Polk Istrebitelei Tankov" "21y Polk Istrebitelei Tankov" "35y Polk Istrebitelei Tankov" 
+		"22y Polk Istrebitelei Tankov" "26y Polk Istrebitelei Tankov" "27y Polk Istrebitelei Tankov" "28y Polk Istrebitelei Tankov" "29y Polk Istrebitelei Tankov" "30y Polk Istrebitelei Tankov" "31y Polk Istrebitelei Tankov" "32y Polk Istrebitelei Tankov" "33y Polk Istrebitelei Tankov" "34y Polk Istrebitelei Tankov" "25y Polk Istrebitelei Tankov" 
+		"41y Polk Istrebitelei Tankov" "42y Polk Istrebitelei Tankov" "24y Polk Istrebitelei Tankov" "43y Polk Istrebitelei Tankov" "36y Polk Istrebitelei Tankov" "37y Polk Istrebitelei Tankov" "40y Polk Istrebitelei Tankov" "44y Polk Istrebitelei Tankov" "45y Polk Istrebitelei Tankov" "46y Polk Istrebitelei Tankov" "47y Polk Istrebitelei Tankov" 
+		"48y Polk Istrebitelei Tankov" "49y Polk Istrebitelei Tankov" "50y Polk Istrebitelei Tankov" "51y Polk Istrebitelei Tankov" "52y Polk Istrebitelei Tankov" "53y Polk Istrebitelei Tankov" "54y Polk Istrebitelei Tankov" "55y Polk Istrebitelei Tankov" "56y Polk Istrebitelei Tankov" "57y Polk Istrebitelei Tankov" "59y Polk Istrebitelei Tankov" 
+		"69y Polk Istrebitelei Tankov" "70y Polk Istrebitelei Tankov" "38y Polk Istrebitelei Tankov" "39y Polk Istrebitelei Tankov" "58y Polk Istrebitelei Tankov" "60y Polk Istrebitelei Tankov" "61y Polk Istrebitelei Tankov" "62y Polk Istrebitelei Tankov" "63y Polk Istrebitelei Tankov" "64y Polk Istrebitelei Tankov" "65y Polk Istrebitelei Tankov" 
+		"66y Polk Istrebitelei Tankov" "67y Polk Istrebitelei Tankov" "68y Polk Istrebitelei Tankov" "71y Polk Istrebitelei Tankov" "72y Polk Istrebitelei Tankov" "75y Polk Istrebitelei Tankov" "76y Polk Istrebitelei Tankov" 
+	}
+	multi_role = {
+		"1. IBAD" "2. IBAD" "3. IBAD" "4. IBAD" "5. IBAD" "6. IBAD" "7. IBAD" "8. IBAD" "24. IBAD" "29. IBAD" "32. IBAD" "36. IBAD-PVO" "38. IBAD" "39. IBAD" "41. IBAD" 
+		"43. IBAD" "44. IBAD" "47. IBAD" "54. IBAD" "56. IBAD" "57. IBAD" "73. IBAD" "78. IBAD" "96. IBAD" "101. IBAD-PVO" "104. IBAD-PVO" 
+		"105. IBAD-PVO" "106. IBAD-PVO" "122. IBAD-PVO" "125. IBAD-PVO" "127. IBAD-PVO" "129. IBAD-PVO" "130. IBAD-PVO" "133. IBAD" "141. IBAD-PVO" "142. IBAD-PVO" "144. IBAD-PVO" 
+		"147. IBAD-PVO" "148. IBAD-PVO" "178. IBAD" "181. IBAD" "190. IBAD" "193. IBAD" "194. IBAD" "197. IBAD" "201. IBAD" "202. IBAD" "203. IBAD" 
+		"204. IBAD" "205. IBAD" "206. IBAD" "207. IBAD" "208. IBAD" "209. IBAD" "210. IBAD" "215. IBAD" "216. IBAD" "217. IBAD" "220. IBAD" 
+		"223. IBAD" "229. IBAD" "230. IBAD" "234. IBAD" "235. IBAD" "236. IBAD" "237. IBAD" "239. IBAD" "240. IBAD" "245. IBAD" "246. IBAD" 
+		"250. IBAD" "254. IBAD" "256. IBAD" "258. IBAD" "259. IBAD" "260. IBAD" "265. IBAD" "265. IBAD" "268. IBAD" "269. IBAD" "273. IBAD" 
+		"274. IBAD" "275. IBAD" "278. IBAD" "279. IBAD" "281. IBAD" "282. IBAD" "283. IBAD" "286. IBAD" "287. IBAD" "288. IBAD" "289. IBAD" 
+		"294. IBAD" "295. IBAD" "296. IBAD" "298. IBAD" "302. IBAD-PVO" "303. IBAD" "309. IBAD" "310. IBAD-PVO" "315. IBAD" "320. IBAD-PVO" "322. IBAD" 
+		"323. IBAD" "324. IBAD" "328. IBAD" "329. IBAD-PVO" "331. IBAD" "336. IBAD" 
+	}
+	interceptor = {
+		"1. IAD" "2. IAD" "3. IAD" "4. IAD" "5. IAD" "6. IAD" "7. IAD" "8. IAD" "24. IAD" "29. IAD" "32. IAD" "36. IAD-PVO" "38. IAD" "39. IAD" "41. IAD" 
+		"43. IAD" "44. IAD" "47. IAD" "54. IAD" "56. IAD" "57. IAD" "73. IAD" "78. IAD" "96. IAD" "101. IAD-PVO" "104. IAD-PVO" 
+		"105. IAD-PVO" "106. IAD-PVO" "122. IAD-PVO" "125. IAD-PVO" "127. IAD-PVO" "129. IAD-PVO" "130. IAD-PVO" "133. IAD" "141. IAD-PVO" "142. IAD-PVO" "144. IAD-PVO" 
+		"147. IAD-PVO" "148. IAD-PVO" "178. IAD" "181. IAD" "190. IAD" "193. IAD" "194. IAD" "197. IAD" "201. IAD" "202. IAD" "203. IAD" 
+		"204. IAD" "205. IAD" "206. IAD" "207. IAD" "208. IAD" "209. IAD" "210. IAD" "215. IAD" "216. IAD" "217. IAD" "220. IAD" 
+		"223. IAD" "229. IAD" "230. IAD" "234. IAD" "235. IAD" "236. IAD" "237. IAD" "239. IAD" "240. IAD" "245. IAD" "246. IAD" 
+		"250. IAD" "254. IAD" "256. IAD" "258. IAD" "259. IAD" "260. IAD" "265. IAD" "265. IAD" "268. IAD" "269. IAD" "273. IAD" 
+		"274. IAD" "275. IAD" "278. IAD" "279. IAD" "281. IAD" "282. IAD" "283. IAD" "286. IAD" "287. IAD" "288. IAD" "289. IAD" 
+		"294. IAD" "295. IAD" "296. IAD" "298. IAD" "302. IAD-PVO" "303. IAD" "309. IAD" "310. IAD-PVO" "315. IAD" "320. IAD-PVO" "322. IAD" 
+		"323. IAD" "324. IAD" "328. IAD" "329. IAD-PVO" "331. IAD" "336. IAD" 
+	}
+	jet_int = {
+		"1. IAD" "2. IAD" "3. IAD" "4. IAD" "5. IAD" "6. IAD" "7. IAD" "8. IAD" "24. IAD" "29. IAD" "32. IAD" "36. IAD-PVO" "38. IAD" "39. IAD" "41. IAD" 
+		"43. IAD" "44. IAD" "47. IAD" "54. IAD" "56. IAD" "57. IAD" "73. IAD" "78. IAD" "96. IAD" "101. IAD-PVO" "104. IAD-PVO" 
+		"105. IAD-PVO" "106. IAD-PVO" "122. IAD-PVO" "125. IAD-PVO" "127. IAD-PVO" "129. IAD-PVO" "130. IAD-PVO" "133. IAD" "141. IAD-PVO" "142. IAD-PVO" "144. IAD-PVO" 
+		"147. IAD-PVO" "148. IAD-PVO" "178. IAD" "181. IAD" "190. IAD" "193. IAD" "194. IAD" "197. IAD" "201. IAD" "202. IAD" "203. IAD" 
+		"204. IAD" "205. IAD" "206. IAD" "207. IAD" "208. IAD" "209. IAD" "210. IAD" "215. IAD" "216. IAD" "217. IAD" "220. IAD" 
+		"223. IAD" "229. IAD" "230. IAD" "234. IAD" "235. IAD" "236. IAD" "237. IAD" "239. IAD" "240. IAD" "245. IAD" "246. IAD" 
+		"250. IAD" "254. IAD" "256. IAD" "258. IAD" "259. IAD" "260. IAD" "265. IAD" "265. IAD" "268. IAD" "269. IAD" "273. IAD" 
+		"274. IAD" "275. IAD" "278. IAD" "279. IAD" "281. IAD" "282. IAD" "283. IAD" "286. IAD" "287. IAD" "288. IAD" "289. IAD" 
+		"294. IAD" "295. IAD" "296. IAD" "298. IAD" "302. IAD-PVO" "303. IAD" "309. IAD" "310. IAD-PVO" "315. IAD" "320. IAD-PVO" "322. IAD" 
+		"323. IAD" "324. IAD" "328. IAD" "329. IAD-PVO" "331. IAD" "336. IAD" 
+	}
+	jet_mr = {
+		"1. IBAD" "2. IBAD" "3. IBAD" "4. IBAD" "5. IBAD" "6. IBAD" "7. IBAD" "8. IBAD" "24. IBAD" "29. IBAD" "32. IBAD" "36. IBAD-PVO" "38. IBAD" "39. IBAD" "41. IBAD" 
+		"43. IBAD" "44. IBAD" "47. IBAD" "54. IBAD" "56. IBAD" "57. IBAD" "73. IBAD" "78. IBAD" "96. IBAD" "101. IBAD-PVO" "104. IBAD-PVO" 
+		"105. IBAD-PVO" "106. IBAD-PVO" "122. IBAD-PVO" "125. IBAD-PVO" "127. IBAD-PVO" "129. IBAD-PVO" "130. IBAD-PVO" "133. IBAD" "141. IBAD-PVO" "142. IBAD-PVO" "144. IBAD-PVO" 
+		"147. IBAD-PVO" "148. IBAD-PVO" "178. IBAD" "181. IBAD" "190. IBAD" "193. IBAD" "194. IBAD" "197. IBAD" "201. IBAD" "202. IBAD" "203. IBAD" 
+		"204. IBAD" "205. IBAD" "206. IBAD" "207. IBAD" "208. IBAD" "209. IBAD" "210. IBAD" "215. IBAD" "216. IBAD" "217. IBAD" "220. IBAD" 
+		"223. IBAD" "229. IBAD" "230. IBAD" "234. IBAD" "235. IBAD" "236. IBAD" "237. IBAD" "239. IBAD" "240. IBAD" "245. IBAD" "246. IBAD" 
+		"250. IBAD" "254. IBAD" "256. IBAD" "258. IBAD" "259. IBAD" "260. IBAD" "265. IBAD" "265. IBAD" "268. IBAD" "269. IBAD" "273. IBAD" 
+		"274. IBAD" "275. IBAD" "278. IBAD" "279. IBAD" "281. IBAD" "282. IBAD" "283. IBAD" "286. IBAD" "287. IBAD" "288. IBAD" "289. IBAD" 
+		"294. IBAD" "295. IBAD" "296. IBAD" "298. IBAD" "302. IBAD-PVO" "303. IBAD" "309. IBAD" "310. IBAD-PVO" "315. IBAD" "320. IBAD-PVO" "322. IBAD" 
+		"323. IBAD" "324. IBAD" "328. IBAD" "329. IBAD-PVO" "331. IBAD" "336. IBAD" 
+	}
+	strategic_bomber = {
+		"1. DDBA" "2. DDBA" "3. DDBA" "4. DDBA" "5. DDBA" "6. DDBA" "7. DDBA" "8. DDBA" "9. DDBA" "10. DDBA" "11. DDBA" 
+		"14. DDBA" "15. DDBA" "16. DDBA" "17. DDBA" "19. DDBA" "20. DDBA" "21. DDBA" "58. DDBA" "68. DDBA" "49. DDBA" "74. DDBA" 
+		"26. DDBA" "40. DDBA" "51. DDBA" "35. DDBA" "48. DDBA" "42. DDBA" "52. DDBA" "22. DDBA" "50. DDBA" "18. DDBA" "12. DDBA" 
+		"13. DDBA" "33. DDBA" "53. DDBA" "41. DDBA" "100. DDBA" "101. DDBA" "102. DDBA" "103. DDBA" "104. DDBA" "105. DDBA" "106. DDBA" 
+		"107. DDBA" "108. DDBA" "109. DDBA" 
+	}
+	tactical_bomber = {
+		"1. BAD" "2. BAD" "3. BAD" "4. BAD" "5. BAD" "6. BAD" "7. BAD" "8. BAD" "9. BAD" "10. BAD" "11. BAD" 
+		"14. BAD" "15. BAD" "16. BAD" "17. BAD" "19. BAD" "20. BAD" "21. BAD" "58. BAD" "68. BAD" "49. BAD" "74. BAD" 
+		"26. BAD" "40. BAD" "51. BAD" "35. BAD" "48. BAD" "42. BAD" "52. BAD" "22. BAD" "50. BAD" "18. BAD" "12. BAD" 
+		"13. BAD" "33. BAD" "53. BAD" "41. BAD" "100. BAD" "101. BAD" "102. BAD" "103. BAD" "104. BAD" "105. BAD" "106. BAD" 
+		"107. BAD" "108. BAD" "109. BAD" 
+	}
+	jet_bomber = {
+		"1. BAD" "2. BAD" "3. BAD" "4. BAD" "5. BAD" "6. BAD" "7. BAD" "8. BAD" "9. BAD" "10. BAD" "11. BAD" 
+		"14. BAD" "15. BAD" "16. BAD" "17. BAD" "19. BAD" "20. BAD" "21. BAD" "58. BAD" "68. BAD" "49. BAD" "74. BAD" 
+		"26. BAD" "40. BAD" "51. BAD" "35. BAD" "48. BAD" "42. BAD" "52. BAD" "22. BAD" "50. BAD" "18. BAD" "12. BAD" 
+		"13. BAD" "33. BAD" "53. BAD" "41. BAD" "100. BAD" "101. BAD" "102. BAD" "103. BAD" "104. BAD" "105. BAD" "106. BAD" 
+		"107. BAD" "108. BAD" "109. BAD" 
+	}
+	naval_bomber = {
+		"1. MBAD" "2. MBAD" "3. MBAD" "4. MBAD" "5. MBAD" "6. MBAD" "7. MBAD" "8. MBAD" "9. MBAD" "10. MBAD" "11. MBAD" 
+		"12. MBAD" "13. MBAD" "14. MBAD" "15. MBAD" "16. MBAD" "17. MBAD" "18. MBAD" "19. MBAD" "20. MBAD"
+		"21. MBAD" "22. MBAD" "23. MBAD" "24. MBAD" "25. MBAD" "26. MBAD" "27. MBAD" "28. MBAD" "29. MBAD" "30. MBAD" "31. MBAD" 
+		"32. MBAD" "33. MBAD" "34. MBAD" "35. MBAD" "36. MBAD" "37. MBAD" "38. MBAD" "39. MBAD" "40. MBAD"
+
+	}
+	cas = {
+		"23. ShAD" "46. ShAD" "77. ShAD" "25. ShAD" "72. ShAD" "9. ShAD" "10. ShAD" "11. ShAD" "1. ShAD" "2. ShAD" "5. ShAD" 
+		"55. ShAD" "28. ShAD" "37. ShAD" "123. ShAD" "146. ShAD" "177. ShAD" "125. ShAD" "172. ShAD" "19. ShAD" "110. ShAD" "111. ShAD" 
+		"12. ShAD" "15. ShAD" "155. ShAD" "128. ShAD" "137. ShAD" "200. ShAD" "201. ShAD" "203. ShAD" "204. ShAD" "205. ShAD" "207. ShAD" 
+		"208. ShAD" "209. ShAD" "211. ShAD" "212. ShAD" "213. ShAD" "214. ShAD" "215. ShAD" "217. ShAD" "219. ShAD" "221. ShAD" "222. ShAD" 
+		"223. ShAD" "225. ShAD" "226. ShAD" "228. ShAD" "229. ShAD" "231. ShAD" "232. ShAD" "235. ShAD" "237. ShAD" "240. ShAD" "241. ShAD" 
+		"242. ShAD" "243. ShAD" "244. ShAD" "245. ShAD" "246. ShAD" "247. ShAD" "249. ShAD" "250. ShAD" "253. ShAD" "261. ShAD" "263. ShAD" 
+	}
+	transport_plane = {
+		"1. VTAD" "2. VTAD" "3. VTAD" "4. VTAD" "5. VTAD" "6. VTAD" "7. VTAD" "8. VTAD" "9. VTAD" "10. VTAD" "11. VTAD" 
+		"12. VTAD" "13. VTAD" "14. VTAD" "15. VTAD" "16. VTAD" "17. VTAD" "18. VTAD" "19. VTAD" "20. VTAD" "21. VTAD" "22. VTAD"
+		"23. VTAD" "24. VTAD" "25. VTAD" "26. VTAD" "27. VTAD" "28. VTAD" "29. VTAD" "30. VTAD" "31. VTAD" "32. VTAD" "33. VTAD"
+	}
+	battleship = {
+		"Sovyetskiy Soyuz" "Sovyetskaya Ukraina" "Sovyetskaya Byelorussiya" "Sovyetskaya Rossiya"
+		"Sovyetskiy Asiya" "Sovyetskiy Kazakhstan" "Sovyetskiy Uzbekistan" "Sovyetskaya Gruzia"
+		"Vladimir Lenin" "Iosif Stalin" "Karl Marx" "Friedrich Engels"
+		"Oktyabrskaya Revolyutsiya" "Marat" "Parizhskaya Kommuna" "Frunze"
+		"Svobodnaya Rossiya" "Nezavisimost" "Volya" "Demokratiya"
+		"Petropavlovsk" "Poltava" "Chesma" "Sevastopol"
+		"Arkhangelsk"
+		"Novorossiysk"
+		"Krasnaya Zvezda" "Proletarskaia Revolyutsiya"
+		"Krasnaya Svoboda" "Volya"
+	}
+	light_cruiser = {
+		"Kirov" "Voroshilov"
+		"Maxim Gorkiy" "Molotov" "Kaganovich" "Kalinin"
+		"Chapayev" "Chkalov" "Zhelezniakov" "Frunze" "Kuibyshev" "Ordzhonikidze" "Sverdlov" "Zhdanov" "  Lenin  " "Aurora" "Parkhomenko" "Kotovskiy" "Zhdanov" "Shors" "Lazo" "Derzhinskiy"
+		"Lev Kamenev" "Mikhail Vladimirsky" "Alexey Badayev" "Ivan Vlasov" "Nikolay Shernik"
+		"Sverdlov" "Ordzhonikidze" "Dzerzhinskiy" "Zhdanov" "Alexander Nevski" "Admiral Nakhimov" "Admiral Ushakov" "Admiral Lazarev" "Alexander Suvorov" "Admiral Senyavin" "Dmitry Pozharski" "Oktyabrskaya Revolutsiya" "Murmansk" "Mikhail Kutuzov" "Admiral Kornilov" "Shcherbakov" "Varyag" "Tallin" "Kronshtadt" "Kozma Minin" "Dmitriy Donskoi"
+		"Admiral Kolomeitsev" "Aurora" "Parkhomenko" "Kotovskiy" "Zhdanov" "Shors" "Lazo" "Derzhinskiy"
+		"Svetlana" "Admiral Butakov" "Admiral Spiridov" "Admiral Greig"
+		"Admiral Nakhimov" "Admiral Kornilov" "Admiral Istomin" "Admiral Lazarev"
+		"Murmansk"		
+		"Komintern"
+		"Krasny Krym" "Chervona Ukraina"
+		"Krasny Kavkaz" "Krasnaya Ukraina" "Krasnaya Byelorussiya" "Krasnaya Rossiya"
+	}
+	heavy_cruiser = {
+		"Taganrog" "Kurekdere" "Alma"
+		"Tallin"
+		"Zhukov" "Zakharov" "Shaposhnikov" "Timoshenko" "Yeryomenko" "Moskalenko"
+		"Kuznetsov" "Chernavin" "Nemits" "Levchenko" "Sergeyev" "Kapitanets"
+		"Internatsyonal" "Sotsializm" "Kommunizm"
+		"Kirov" "Voroshilov" "Maxim Gorkiy" "Molotov" "Kaganovich" "Kalinin" "Tallin" "Sverdlov" "Zhdanov" "Admiral Lazarev" "Admiral Ushakov" 
+		"Admiral Senyavin" "Dmitry Pozharski" "Varyag" "Ordzhonikidze" "Aleksandr Nevski" "Aleksandr Suvorov" "Oktyabrskaya Revolutsiya" "Murmansk" "Dzerzhinskiy" "Admiral Nakhimov" "Mikhail Kutuzov" 
+		"Kajul" "Pamiat Merkuriya" "Rurik" "Krasnyi Kavkaz" 
+	}
+	battlecruiser = {
+		"Kronshtadt" "Sevastopol"
+		"Stalingrad" "Moskva" "Kronshtadt" "Sevastopol" "Voronezh" "Smolensk" "Rostov"
+		"Borodino" "Izmail" "Kinburn" "Navarin"
+		"Frunze"
+		"Kursk" "Khalkhin Gol"
+		"Petropavlovsk" "Chesma" "Slava" "Riga"
+	}
+	destroyer = {
+		"5. Flotiliya Esmintsev" "6. Flotiliya Esmintsev" "7. Flotiliya Esmintsev" "8. Flotiliya Esmintsev" "9. Flotiliya Esmintsev" "10. Flotiliya Esmintsev" "11. Flotiliya Esmintsev" 
+		"12. Flotiliya Esmintsev" "13. Flotiliya Esmintsev" "14. Flotiliya Esmintsev" "15. Flotiliya Esmintsev" "16. Flotiliya Esmintsev" "17. Flotiliya Esmintsev" "18. Flotiliya Esmintsev" "19. Flotiliya Esmintsev" "20. Flotiliya Esmintsev" "21. Flotiliya Esmintsev" "22. Flotiliya Esmintsev" 
+		"23. Flotiliya Esmintsev" "24. Flotiliya Esmintsev" "25. Flotiliya Esmintsev" "26. Flotiliya Esmintsev" "27. Flotiliya Esmintsev" "28. Flotiliya Esmintsev" "29. Flotiliya Esmintsev" "30. Flotiliya Esmintsev" "31. Flotiliya Esmintsev" "32. Flotiliya Esmintsev" "33. Flotiliya Esmintsev" 
+		"34. Flotiliya Esmintsev" "35. Flotiliya Esmintsev" "36. Flotiliya Esmintsev" "37. Flotiliya Esmintsev" "38. Flotiliya Esmintsev" "39. Flotiliya Esmintsev" "40. Flotiliya Esmintsev" "41. Flotiliya Esmintsev" "42. Flotiliya Esmintsev" "43. Flotiliya Esmintsev" "44. Flotiliya Esmintsev" 
+		"45. Flotiliya Esmintsev" "46. Flotiliya Esmintsev" "47. Flotiliya Esmintsev" "48. Flotiliya Esmintsev" "49. Flotiliya Esmintsev" "50. Flotiliya Esmintsev" "51. Flotiliya Esmintsev" "52. Flotiliya Esmintsev" "53. Flotiliya Esmintsev" "54. Flotiliya Esmintsev" "55. Flotiliya Esmintsev" 
+		"56. Flotiliya Esmintsev" "57. Flotiliya Esmintsev" "58. Flotiliya Esmintsev" "59. Flotiliya Esmintsev" "60. Flotiliya Esmintsev" "61. Flotiliya Esmintsev" "62. Flotiliya Esmintsev" "63. Flotiliya Esmintsev" "64. Flotiliya Esmintsev" "65. Flotiliya Esmintsev" "66. Flotiliya Esmintsev" 
+		"67. Flotiliya Esmintsev" "68. Flotiliya Esmintsev" "69. Flotiliya Esmintsev" "70. Flotiliya Esmintsev" "71. Flotiliya Esmintsev" "72. Flotiliya Esmintsev" "73. Flotiliya Esmintsev" "74. Flotiliya Esmintsev" "75. Flotiliya Esmintsev" "76. Flotiliya Esmintsev" "77. Flotiliya Esmintsev" 
+		"78. Flotiliya Esmintsev" "79. Flotiliya Esmintsev" "80. Flotiliya Esmintsev" "81. Flotiliya Esmintsev" "82. Flotiliya Esmintsev" "83. Flotiliya Esmintsev" "84. Flotiliya Esmintsev" "85. Flotiliya Esmintsev" "86. Flotiliya Esmintsev" "87. Flotiliya Esmintsev" "88. Flotiliya Esmintsev" 
+		"89. Flotiliya Esmintsev" "90. Flotiliya Esmintsev" "91. Flotiliya Esmintsev" "92. Flotiliya Esmintsev" "93. Flotiliya Esmintsev" "94. Flotiliya Esmintsev" "95. Flotiliya Esmintsev" "96. Flotiliya Esmintsev" "97. Flotiliya Esmintsev" "98. Flotiliya Esmintsev" "99. Flotiliya Esmintsev" 
+		"100. Flotiliya Esmintsev" "1. Flotiliya Esmintsev" "2. Flotiliya Esmintsev" "3. Flotiliya Esmintsev" "4. Flotiliya Esmintsev" 
+	}
+	carrier = {
+		"Krasnaya Ploschad" "Krasnaya Znamya"
+		"Krasny Oktyabr" "Svoboda Rabochikh"
+		"Kronshtadt" "Sevastopol"
+		"Kharkov" "Novorossiysk"
+		"Izmail" "Borodino" "Kinburn" "Navarin"
+		"Leningrad" "Kiyev" "Minsk" "Novorossiysk" "Kharkov" "Baku" "Tbilisi" "Varyag" "Ulyanovsk" "Stalingrad" 
+	}
+	escort_carrier = {
+		"Komsomolets"
+		"Saratov" "Irkutsk"
+		"Smolensk" "Kazan"
+		"Moskva" "Leningrad" "Kiyev" "Minsk" "Novorossiysk" "Kharkov" "Baku" "Tbilisi" "Varyag" "Ulyanovsk" "Stalingrad" 
+	}
+	submarine = {
+		"12. Flotiliya Podlodok" "13. Flotiliya Podlodok" "14. Flotiliya Podlodok" "15. Flotiliya Podlodok" "16. Flotiliya Podlodok" "17. Flotiliya Podlodok" "18. Flotiliya Podlodok" "19. Flotiliya Podlodok" "20. Flotiliya Podlodok" "21. Flotiliya Podlodok" "22. Flotiliya Podlodok" 
+		"23. Flotiliya Podlodok" "24. Flotiliya Podlodok" "25. Flotiliya Podlodok" "26. Flotiliya Podlodok" "27. Flotiliya Podlodok" "28. Flotiliya Podlodok" "29. Flotiliya Podlodok" "30. Flotiliya Podlodok" "31. Flotiliya Podlodok" "32. Flotiliya Podlodok" "33. Flotiliya Podlodok" 
+		"34. Flotiliya Podlodok" "35. Flotiliya Podlodok" "36. Flotiliya Podlodok" "37. Flotiliya Podlodok" "38. Flotiliya Podlodok" "39. Flotiliya Podlodok" "40. Flotiliya Podlodok" "41. Flotiliya Podlodok" "42. Flotiliya Podlodok" "43. Flotiliya Podlodok" "44. Flotiliya Podlodok" 
+		"45. Flotiliya Podlodok" "46. Flotiliya Podlodok" "47. Flotiliya Podlodok" "48. Flotiliya Podlodok" "49. Flotiliya Podlodok" "50. Flotiliya Podlodok" "51. Flotiliya Podlodok" "52. Flotiliya Podlodok" "53. Flotiliya Podlodok" "54. Flotiliya Podlodok" "55. Flotiliya Podlodok" 
+		"56. Flotiliya Podlodok" "57. Flotiliya Podlodok" "58. Flotiliya Podlodok" "59. Flotiliya Podlodok" "60. Flotiliya Podlodok" "61. Flotiliya Podlodok" "62. Flotiliya Podlodok" "63. Flotiliya Podlodok" "64. Flotiliya Podlodok" "65. Flotiliya Podlodok" "66. Flotiliya Podlodok" 
+		"67. Flotiliya Podlodok" "68. Flotiliya Podlodok" "69. Flotiliya Podlodok" "70. Flotiliya Podlodok" "71. Flotiliya Podlodok" "72. Flotiliya Podlodok" "73. Flotiliya Podlodok" "74. Flotiliya Podlodok" "75. Flotiliya Podlodok" "76. Flotiliya Podlodok" "77. Flotiliya Podlodok" 
+		"78. Flotiliya Podlodok" "79. Flotiliya Podlodok" "80. Flotiliya Podlodok" "81. Flotiliya Podlodok" "82. Flotiliya Podlodok" "83. Flotiliya Podlodok" "84. Flotiliya Podlodok" "85. Flotiliya Podlodok" "86. Flotiliya Podlodok" "87. Flotiliya Podlodok" "88. Flotiliya Podlodok" 
+		"89. Flotiliya Podlodok" "90. Flotiliya Podlodok" "91. Flotiliya Podlodok" "92. Flotiliya Podlodok" "93. Flotiliya Podlodok" "94. Flotiliya Podlodok" "95. Flotiliya Podlodok" "96. Flotiliya Podlodok" "97. Flotiliya Podlodok" "98. Flotiliya Podlodok" "99. Flotiliya Podlodok" 
+		"100. Flotiliya Podlodok" "1. Flotiliya Podlodok" "2. Flotiliya Podlodok" "3. Flotiliya Podlodok" "4. Flotiliya Podlodok" "5. Flotiliya Podlodok" "6. Flotiliya Podlodok" "7. Flotiliya Podlodok" "8. Flotiliya Podlodok" "9. Flotiliya Podlodok" "10. Flotiliya Podlodok" "11. Flotiliya Podlodok" 
+	}
+	transport_ship = {
+		"1. Transportnaya Flotiliya" "2. Transportnaya Flotiliya" "3. Transportnaya Flotiliya" "4. Transportnaya Flotiliya" "5. Transportnaya Flotiliya" "6. Transportnaya Flotiliya" "7. Transportnaya Flotiliya" "8. Transportnaya Flotiliya" "9. Transportnaya Flotiliya" "10. Transportnaya Flotiliya" "11. Transportnaya Flotiliya" 
+		"12. Transportnaya Flotiliya" "13. Transportnaya Flotiliya" "14. Transportnaya Flotiliya" "15. Transportnaya Flotiliya" "16. Transportnaya Flotiliya" "17. Transportnaya Flotiliya" "18. Transportnaya Flotiliya" "19. Transportnaya Flotiliya" "20. Transportnaya Flotiliya" "21. Transportnaya Flotiliya" "22. Transportnaya Flotiliya" 
+		"23. Transportnaya Flotiliya" "24. Transportnaya Flotiliya" "25. Transportnaya Flotiliya" "26. Transportnaya Flotiliya" "27. Transportnaya Flotiliya" "28. Transportnaya Flotiliya" "29. Transportnaya Flotiliya" "30. Transportnaya Flotiliya" "31. Transportnaya Flotiliya" "32. Transportnaya Flotiliya" "33. Transportnaya Flotiliya" 
+		"34. Transportnaya Flotiliya" "35. Transportnaya Flotiliya" "36. Transportnaya Flotiliya" "37. Transportnaya Flotiliya" "38. Transportnaya Flotiliya" "39. Transportnaya Flotiliya" "40. Transportnaya Flotiliya" "41. Transportnaya Flotiliya" "42. Transportnaya Flotiliya" "43. Transportnaya Flotiliya" "44. Transportnaya Flotiliya" 
+		"45. Transportnaya Flotiliya" "46. Transportnaya Flotiliya" "47. Transportnaya Flotiliya" "48. Transportnaya Flotiliya" "49. Transportnaya Flotiliya" "50. Transportnaya Flotiliya" "51. Transportnaya Flotiliya" "52. Transportnaya Flotiliya" "53. Transportnaya Flotiliya" "54. Transportnaya Flotiliya" "55. Transportnaya Flotiliya" 
+		"56. Transportnaya Flotiliya" "57. Transportnaya Flotiliya" "58. Transportnaya Flotiliya" "59. Transportnaya Flotiliya" "60. Transportnaya Flotiliya" "61. Transportnaya Flotiliya" "62. Transportnaya Flotiliya" "63. Transportnaya Flotiliya" "64. Transportnaya Flotiliya" "65. Transportnaya Flotiliya" "66. Transportnaya Flotiliya" 
+		"67. Transportnaya Flotiliya" "68. Transportnaya Flotiliya" "69. Transportnaya Flotiliya" "70. Transportnaya Flotiliya" "71. Transportnaya Flotiliya" "72. Transportnaya Flotiliya" "73. Transportnaya Flotiliya" "74. Transportnaya Flotiliya" "75. Transportnaya Flotiliya" "76. Transportnaya Flotiliya" "77. Transportnaya Flotiliya" 
+		"78. Transportnaya Flotiliya" "79. Transportnaya Flotiliya" "80. Transportnaya Flotiliya" "81. Transportnaya Flotiliya" "82. Transportnaya Flotiliya" "83. Transportnaya Flotiliya" "84. Transportnaya Flotiliya" "85. Transportnaya Flotiliya" "86. Transportnaya Flotiliya" "87. Transportnaya Flotiliya" "88. Transportnaya Flotiliya" 
+		"89. Transportnaya Flotiliya" "90. Transportnaya Flotiliya" "91. Transportnaya Flotiliya" "92. Transportnaya Flotiliya" "93. Transportnaya Flotiliya" "94. Transportnaya Flotiliya" "95. Transportnaya Flotiliya" "96. Transportnaya Flotiliya" "97. Transportnaya Flotiliya" "98. Transportnaya Flotiliya" "99. Transportnaya Flotiliya" 
+		"100. Transportnaya Flotiliya" 
+	}
+
+}
+
+ministers = {
+	4001 = {
+		name = "Mikhail Ivanovich Kalinin"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4001
+		head_of_state = weary_stiff_neck
+		start_date = 1936.1.1
+	}
+	4002 = {
+		name = "Joseph Vissarionovich Stalin"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4002
+		head_of_government = backroom_backstabber
+		head_of_state = ruthless_powermonger
+		chief_of_army = guns_and_butter_doctrine
+		armament_minister = military_entrepreneur
+		start_date = 1936.1.1
+	}
+	4003 = {
+		name = "Maxim Maximovich Litvinov"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M4003
+		foreign_minister = biased_intellectual
+		start_date = 1936.1.1
+	}
+	4004 = {
+		name = "Lazar Moiseyevich Kaganovich"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4004
+		armament_minister = resource_industrialist
+		start_date = 1936.1.1
+	}
+	4005 = {
+		name = "Genrikh Grigoryevich Yagoda"
+		ideology = stalinist
+		loyalty = 0.50
+		picture = M4005
+		minister_of_security = back_stabber
+		start_date = 1936.1.1
+	}
+	4006 = {
+		name = "Yan Karlovich Berzin"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M4006
+		minister_of_intelligence = technical_specialist
+		start_date = 1936.1.1
+	}
+	4007 = {
+		name = "Mikhail Nikolayevich Tukhachevsky"
+		ideology = leninist
+		loyalty = 0.50
+		picture = M4007
+		chief_of_staff = school_of_manoeuvre
+		start_date = 1936.1.1
+	}
+	4008 = {
+		name = "Kliment Yefremovich Voroshilov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4008
+		chief_of_army = guns_and_butter_doctrine
+		head_of_state = resigned_generalissimo
+		start_date = 1936.1.1
+	}
+	4009 = {
+		name = "Vladimir Mitrofanovich Orlov"
+		ideology = leninist
+		loyalty = 0.25
+		picture = M4009
+		chief_of_navy = indirect_approach_doctrine
+		start_date = 1936.1.1
+	}
+	4010 = {
+		name = "Yakov Ivanovich Alksnis"
+		ideology = leninist
+		loyalty = 1.00
+		picture = M4010
+		chief_of_air = air_superiority_doctrine
+		start_date = 1936.1.1
+	}
+	4076 = {
+		name = "Vyacheslav Mikhailovich Molotov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4034
+		head_of_state = autocratic_charmer
+		head_of_government = silent_workhorse
+		foreign_minister = iron_fisted_brute
+		start_date = 1936.1.1
+	}
+	4070 = {
+		name = "Nikolay Mikhailovich Shvernik"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4070
+		head_of_state = insignificant_layman
+		start_date = 1946.1.1
+	}
+	4021 = {
+		name = "Alexander Fyodorovich Kerensky"
+		ideology = social_liberal
+		loyalty = 1.00
+		picture = M4021
+		head_of_state = die_hard_reformer
+		head_of_government = happy_amateur
+		start_date = 1936.1.1
+	}
+	4031 = {
+		name = "Nikolai Ivanovich Yezhov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4031
+		head_of_state = barking_buffoon
+		head_of_government = corporate_suit
+		minister_of_security = back_stabber
+		minister_of_intelligence = technical_specialist
+		start_date = 1936.1.1
+	}
+	4075 = {
+		name = "Lavrentiy Pavlovich Beria"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4041
+		head_of_government = backroom_backstabber
+		minister_of_security = prince_of_terror
+		start_date = 1938.1.1
+	}
+	4033 = {
+		name = "Andrey Januaryevich Vyshinsky"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4033
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1936.1.1
+	}
+	4035 = {
+		name = "Ivan Mikhailovich Maisky"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4035
+		foreign_minister = apologetic_clerk
+		start_date = 1943.1.1
+	}
+	4036 = {
+		name = "Georgij Bazilevich"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4036
+		armament_minister = infantry_proponent
+		start_date = 1938.1.1
+	}
+	4037 = {
+		name = "Dmitriy Feodorovich Ustinov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4037
+		armament_minister = theoretical_scientist
+		start_date = 1941.1.1
+	}
+	4038 = {
+		name = "Boris Lvovich Vannikov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4038
+		armament_minister = military_entrepreneur
+		start_date = 1942.1.1
+	}
+	4040 = {
+		name = "Sergej Uritskiy"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M4040
+		minister_of_security = crime_fighter
+		start_date = 1937.1.1
+	}
+	4042 = {
+		name = "Andriy G. Orlov"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M4042
+		minister_of_security = silent_lawyer
+		start_date = 1938.1.1
+	}
+	4043 = {
+		name = "Sergiy G. Gendin"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M4043
+		minister_of_security = efficient_sociopath
+		start_date = 1938.1.1
+	}
+	4044 = {
+		name = "Andriy P. Panfilov"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M4044
+		minister_of_security = man_of_the_people
+		minister_of_intelligence = research_specialist
+		start_date = 1941.1.1
+	}
+	4046 = {
+		name = "Ivan I.Proskurov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4046
+		minister_of_intelligence = dismal_enigma
+		start_date = 1937.1.1
+	}
+	4047 = {
+		name = "Filip I. Golikov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4047
+		minister_of_intelligence = political_specialist
+		start_date = 1940.1.1
+	}
+	4049 = {
+		name = "Igor I. Ilichev"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4049
+		minister_of_intelligence = industrial_specialist
+		start_date = 1942.1.1
+	}
+	4050 = {
+		name = "Fedor F. Kuznetsov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4050
+		minister_of_intelligence = technical_specialist
+		start_date = 1945.1.1
+	}
+	4051 = {
+		name = "Boris M. Shaposhnikov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4051
+		chief_of_staff = school_of_mass_combat
+		start_date = 1937.1.1
+	}
+	4052 = {
+		name = "Kirill A. Meretskov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4052
+		chief_of_staff = school_of_psychology
+		start_date = 1940.1.1
+	}
+	4053 = {
+		name = "Georgiy K. Zhukov"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M4028
+		chief_of_staff = school_of_fire_support
+		chief_of_army = decisive_battle_doctrine
+		armament_minister = military_entrepreneur
+		start_date = 1941.1.1
+	}
+	4054 = {
+		name = "Alesandr M. Vasilevskij"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4054
+		chief_of_staff = logistics_specialist
+		start_date = 1942.1.1
+	}
+	4055 = {
+		name = "Nikolaj Bulganin"
+		ideology = stalinist
+		loyalty = 0.50
+		picture = M4055
+		chief_of_staff = school_of_mass_combat
+		start_date = 1944.1.1
+	}
+	4056 = {
+		name = "Aleksei I. Antonov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4056
+		chief_of_staff = school_of_psychology
+		start_date = 1945.1.1
+	}
+	4057 = {
+		name = "Sergei M. Shtemenko"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4057
+		chief_of_staff = school_of_manoeuvre
+		start_date = 1946.1.1
+	}
+	4058 = {
+		name = "Semen K. Timoshenko"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4058
+		chief_of_army = elastic_defence_doctrine
+		start_date = 1941.1.1
+	}
+	4060 = {
+		name = "Rodion Malinovskij"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = L10102
+		chief_of_army = armoured_spearhead_doctrine
+		armament_minister = tank_proponent
+		start_date = 1943.1.1
+	}
+	4061 = {
+		name = "Mikhail V. Viktorov"
+		ideology = stalinist
+		loyalty = 0.25
+		picture = M4061
+		chief_of_navy = power_projection_doctrine
+		start_date = 1937.1.1
+	}
+	4062 = {
+		name = "Nikolai Kuznetsov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4029
+		chief_of_navy = decisive_naval_battle_doctrine
+		start_date = 1939.1.1
+	}
+	4063 = {
+		name = "Ivan. S. Isakov"
+		ideology = leninist
+		loyalty = 0.50
+		picture = M4063
+		chief_of_navy = base_control_doctrine
+		start_date = 1940.1.1
+	}
+	4064 = {
+		name = "Aleksandr D. Loktionov"
+		ideology = stalinist
+		loyalty = 0.50
+		picture = M4064
+		chief_of_air = army_aviation_doctrine
+		start_date = 1937.1.1
+	}
+	4065 = {
+		name = "Pavel V. Rychagov"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M4030
+		chief_of_air = army_aviation_doctrine
+		start_date = 1938.1.1
+	}
+	4066 = {
+		name = "Yakov V. Smushkevich"
+		ideology = leninist
+		loyalty = 0.75
+		picture = M4066
+		chief_of_air = army_aviation_doctrine
+		start_date = 1936.1.1
+	}
+	4067 = {
+		name = "Aleksandr E. Golovanov"
+		ideology = leninist
+		loyalty = 1.00
+		picture = M4067
+		chief_of_air = army_aviation_doctrine
+		start_date = 1940.1.1
+	}
+	4068 = {
+		name = "Alexander Novikov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4068
+		chief_of_air = air_superiority_doctrine
+		start_date = 1942.1.1
+	}
+	4069 = {
+		name = "Y.V. Vladimiroch"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M4069
+		chief_of_air = carpet_bombing_doctrine
+		start_date = 1943.1.1
+	}
+	4027 = {
+		name = "Konstantin K. Rokossovsky"
+		ideology = left_wing_radical
+		loyalty = 1.00
+		picture = M4027
+		chief_of_staff = school_of_manoeuvre
+		start_date = 1940.1.1
+	}
+	4071 = {
+		name = "Nikolay Bulganin"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4071
+		armament_minister = resource_industrialist
+		head_of_government = old_general
+		start_date = 1953.1.1
+	}
+	4081 = {
+		name = "Nikita Kruschev"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4075
+		head_of_government = flamboyant_tough_guy
+		start_date = 1958.1.1
+	}
+	4082 = {
+		name = "Aleksandr Vasilevsky"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4076
+		armament_minister = infantry_proponent
+		start_date = 1949.1.1
+	}
+	4077 = {
+		name = "Sergey Kruglov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4077
+		minister_of_security = back_stabber
+		start_date = 1953.1.1
+	}
+	4078 = {
+		name = "Viktor Abakumov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4078
+		minister_of_intelligence = research_specialist
+		start_date = 1946.1.1
+	}
+	4079 = {
+		name = "Semyon Ignatyev"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4079
+		minister_of_intelligence = political_specialist
+		start_date = 1951.1.1
+	}
+	4080 = {
+		name = "Ivan Serov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4080
+		minister_of_intelligence = technical_specialist
+		start_date = 1953.1.1
+	}
+	4084 = {
+		name = "Leonid Brezhnev"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4084
+		head_of_state = stern_imperialist
+		start_date = 1960.1.1
+	}
+	4085 = {
+		name = "Georgiy Malenkov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4085
+		head_of_government = political_protege
+		start_date = 1953.1.1
+	}
+	4087 = {
+		name = "Dimitriy Shepilov"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M4087
+		foreign_minister = apologetic_clerk
+		start_date = 1956.1.1
+	}
+	4088 = {
+		name = "Andreyi Gromyko"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M4088
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1957.1.1
+	}
+	4091 = {
+		name = "Nikolay Dudorov"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4091
+		minister_of_security = back_stabber
+		start_date = 1956.1.1
+	}
+	4092 = {
+		name = "Aleksandr Shelepin"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4092
+		minister_of_intelligence = political_specialist
+		start_date = 1958.1.1
+	}
+	4093 = {
+		name = "Vladimir Semichastnyi"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M4093
+		minister_of_intelligence = dismal_enigma
+		start_date = 1961.1.1
+	}
+	# Generic dummy ministers
+	95907 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95908 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_army = mostly_harmless
+		start_date = 1936.1.1
+	}	
+}

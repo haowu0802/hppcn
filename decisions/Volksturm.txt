@@ -1,0 +1,281 @@
+diplomatic_decisions = {
+
+	volksturm_drafted = {
+		potential = {
+			war = yes
+			or = {
+				has_country_flag = "drafted_army"
+				and = {
+					has_country_flag = "standing_army"
+					conscription_law = service_by_requirement
+				}
+			}
+			any_owned_province = {
+				not = { has_province_modifier = "volksturm" }
+				or = {
+					and = {
+						supplies = 25
+						industry = 1
+					}
+					and = {
+						supplies = 50
+						industry = 3
+					}
+					and = {
+						supplies = 75
+						industry = 6
+					}
+				}
+				is_core = THIS
+				not = { controlled_by = THIS }					# Taken by the enemy,
+				any_neighbor_province = { not = { controlled_by = THIS } }	# is on the front,
+				any_neighbor_province = { controlled_by = THIS infra = 2 }	# but not completely surrounded.
+			}
+		}
+		allow = {
+			any_owned_province = {
+				supplies = 50
+				industry = 1							# The province has some IC in it,
+				is_core = THIS
+				not = { controlled_by = THIS }					# taken by the enemy,
+				any_neighbor_province = { not = { controlled_by = THIS } }	# is on the front,
+				any_neighbor_province = { controlled_by = THIS infra = 2 }	# but not completely surrounded.
+			}
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = "volksturm" }
+					supplies = 25
+					industry = 1
+					not = { industry = 3 }
+					is_core = THIS
+					not = { controlled_by = THIS }
+					any_neighbor_province = { not = { controlled_by = THIS } }
+					any_neighbor_province = { controlled_by = THIS infra = 2 }
+				}
+				supplies = -25
+				add_province_modifier = {
+					name = "volksturm"
+					duration = 365
+				}
+				random_neighbor_province = {
+					limit = { owned_by = THIS controlled_by = THIS infra = 2 }
+					militia_brigade = current
+					militia_brigade = current
+					militia_brigade = current
+					militia_brigade = current
+				}
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = "volksturm" }
+					supplies = 50
+					industry = 3
+					not = { industry = 6 }
+					is_core = THIS
+					not = { controlled_by = THIS }
+					any_neighbor_province = { not = { controlled_by = THIS } }
+					any_neighbor_province = { controlled_by = THIS infra = 2 }
+				}
+				supplies = -50
+				add_province_modifier = {
+					name = "volksturm"
+					duration = 365
+				}
+				random_neighbor_province = {
+					limit = { owned_by = THIS controlled_by = THIS infra = 2 }
+					militia_brigade = current
+					militia_brigade = current
+					militia_brigade = current
+					militia_brigade = current
+				}
+				random_neighbor_province = {
+					limit = { owned_by = THIS controlled_by = THIS infra = 2 }
+					militia_brigade = current
+					militia_brigade = current
+					militia_brigade = current
+					militia_brigade = current
+				}
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = "volksturm" }
+					supplies = 75
+					industry = 6
+					is_core = THIS
+					not = { controlled_by = THIS }
+					any_neighbor_province = { not = { controlled_by = THIS } }
+					any_neighbor_province = { controlled_by = THIS infra = 2 }
+				}
+				supplies = -75
+				add_province_modifier = {
+					name = "volksturm"
+					duration = 365
+				}
+				random_neighbor_province = {
+					limit = { owned_by = THIS controlled_by = THIS infra = 2 }
+					militia_brigade = current
+					militia_brigade = current
+					militia_brigade = current
+					militia_brigade = current
+				}
+				random_neighbor_province = {
+					limit = { owned_by = THIS controlled_by = THIS infra = 2 }
+					militia_brigade = current
+					militia_brigade = current
+					militia_brigade = current
+					militia_brigade = current
+				}
+				random_neighbor_province = {
+					limit = { owned_by = THIS controlled_by = THIS infra = 2 }
+					militia_brigade = current
+					militia_brigade = current
+					militia_brigade = current
+					militia_brigade = current
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	volksturm_standing = {
+		potential = {
+			war = yes
+			has_country_flag = "standing_army"
+			not = { conscription_law = service_by_requirement }
+			any_owned_province = {
+				not = { has_province_modifier = "volksturm" }
+				or = {
+					and = {
+						supplies = 50
+						industry = 1
+					}
+					and = {
+						supplies = 100
+						industry = 3
+					}
+					and = {
+						supplies = 150
+						industry = 6
+					}
+				}
+				industry = 1							# The province has some IC in it,
+				is_core = THIS
+				not = { controlled_by = THIS }					# taken by the enemy,
+				any_neighbor_province = { not = { controlled_by = THIS } }	# is on the front,
+				any_neighbor_province = { controlled_by = THIS infra = 2 }	# but not completely surrounded.
+			}
+		}
+		allow = {
+			any_owned_province = {
+				industry = 1							# The province has some IC in it,
+				is_core = THIS
+				not = { controlled_by = THIS }					# taken by the enemy,
+				any_neighbor_province = { not = { controlled_by = THIS } }	# is on the front,
+				any_neighbor_province = { controlled_by = THIS infra = 2 }	# but not completely surrounded.
+			}
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = "volksturm" }
+					supplies = 50
+					industry = 1
+					not = { industry = 3 }
+					is_core = THIS
+					not = { controlled_by = THIS }
+					any_neighbor_province = { not = { controlled_by = THIS } }
+					any_neighbor_province = { controlled_by = THIS infra = 2 }
+				}
+				supplies = -50
+				add_province_modifier = {
+					name = "volksturm"
+					duration = 365
+				}
+				random_neighbor_province = {
+					limit = { owned_by = THIS controlled_by = THIS infra = 2 }
+					garrison_brigade = current
+					garrison_brigade = current
+					garrison_brigade = current
+					garrison_brigade = current
+				}
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = "volksturm" }
+					supplies = 100
+					industry = 3
+					not = { industry = 6 }
+					is_core = THIS
+					not = { controlled_by = THIS }
+					any_neighbor_province = { not = { controlled_by = THIS } }
+					any_neighbor_province = { controlled_by = THIS infra = 2 }
+				}
+				supplies = -100
+				add_province_modifier = {
+					name = "volksturm"
+					duration = 365
+				}
+				random_neighbor_province = {
+					limit = { owned_by = THIS controlled_by = THIS infra = 2 }
+					garrison_brigade = current
+					garrison_brigade = current
+					garrison_brigade = current
+					garrison_brigade = current
+				}
+				random_neighbor_province = {
+					limit = { owned_by = THIS controlled_by = THIS infra = 2 }
+					garrison_brigade = current
+					garrison_brigade = current
+					garrison_brigade = current
+					garrison_brigade = current
+				}
+			}
+			any_owned = {
+				limit = {
+					not = { has_province_modifier = "volksturm" }
+					supplies = 150
+					industry = 6
+					is_core = THIS
+					not = { controlled_by = THIS }
+					any_neighbor_province = { not = { controlled_by = THIS } }
+					any_neighbor_province = { controlled_by = THIS infra = 2 }
+				}
+				supplies = -150
+				add_province_modifier = {
+					name = "volksturm"
+					duration = 365
+				}
+				random_neighbor_province = {
+					limit = { owned_by = THIS controlled_by = THIS infra = 2 }
+					garrison_brigade = current
+					garrison_brigade = current
+					garrison_brigade = current
+					garrison_brigade = current
+				}
+				random_neighbor_province = {
+					limit = { owned_by = THIS controlled_by = THIS infra = 2 }
+					garrison_brigade = current
+					garrison_brigade = current
+					garrison_brigade = current
+					garrison_brigade = current
+				}
+				random_neighbor_province = {
+					limit = { owned_by = THIS controlled_by = THIS infra = 2 }
+					garrison_brigade = current
+					garrison_brigade = current
+					garrison_brigade = current
+					garrison_brigade = current
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+}

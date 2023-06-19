@@ -1,0 +1,26 @@
+theatre = {
+	name = "Kuwaiti Military High Command"
+	location = 9427
+	regiment = { type = hq_brigade name = "Al Kuwait HQ" historical_model = 0 }
+	division = {
+		name = "Royal Guards"
+		location = 9427
+		is_reserve = yes
+		regiment = { type = garrison_brigade name = "1st Royal Guards Regiment" experience = 5 historical_model = 2 }
+		regiment = { type = garrison_brigade name = "2nd Royal Guards Regiment" experience = 5 historical_model = 2 }
+	}
+}
+convoy_construction=
+{
+	country = KWT
+	id=
+	{
+		id=15431
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

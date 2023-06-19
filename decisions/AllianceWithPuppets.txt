@@ -1,0 +1,101 @@
+diplomatic_decisions = {
+
+	allies_puppet = {
+		potential = {
+			num_of_vassals = 1
+			faction = allies
+			any_neighbor_country = {
+				vassal_of = THIS
+				not = { faction = THIS }
+			}
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					vassal_of = THIS
+					not = { faction = THIS }
+				}
+				join_faction = allies
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	axis_puppet = {
+		potential = {
+			num_of_vassals = 1
+			faction = axis
+			any_neighbor_country = {
+				vassal_of = THIS
+				not = { faction = THIS }
+			}
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					vassal_of = THIS
+					not = { faction = THIS }
+				}
+				join_faction = axis
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	commintern_puppet = {
+		potential = {
+			num_of_vassals = 1
+			faction = comintern
+			any_neighbor_country = {
+				vassal_of = THIS
+				not = { faction = THIS }
+			}
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					vassal_of = THIS
+					not = { faction = THIS }
+				}
+				join_faction = comintern
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	unaligned_puppet = {
+		potential = {
+			num_of_vassals = 1
+			is_in_any_faction = no
+			any_neighbor_country = {
+				vassal_of = THIS
+				is_in_any_faction = yes
+			}
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = { vassal_of = THIS }
+				leave_faction = allies
+				leave_faction = axis
+				leave_faction = comintern
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

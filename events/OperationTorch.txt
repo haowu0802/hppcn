@@ -1,0 +1,250 @@
+country_event = {
+
+	id = 1651
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "The allies ask for cooperation"
+	desc = "vichy_torch_desc"
+	picture = "torch"
+	
+	option = {
+		name = "Help the allies!"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0.0
+				GER = {
+					faction_progress = 50
+				}
+			}
+			modifier = {
+				factor = 20.0
+				GER = {
+					not = { faction_progress = 10 }
+				}
+			}
+		}
+		national_unity = -15
+		USA = { country_event = 1652 }
+		GER = { country_event = 1653 }
+	}
+
+	option = {
+		name = "Notify Germany!"
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0.0
+				GER = {
+					not = { faction_progress = 10 }
+				}
+			}
+		}
+		national_unity = -15
+		GER = { country_event = 1657 }
+	}
+
+}
+
+country_event = {
+
+	id = 1652
+	
+	is_triggered_only = yes
+
+	title = "The Vichy government accepted to help"
+	desc = "The government of Vichy accepted to help us in the liberation of Europe. This will help us greatly!"
+	picture = "torch"
+	
+	option = {
+		name = "Excellent!"
+		any_country = {
+			limit = {
+				war_with = GER
+			}
+			war_exhaustion = -1
+		}
+	}
+	
+}
+
+country_event = {
+
+	id = 1653
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The traitors in Vichy!"
+	desc = "The traitorous French sided with the Western Allies against us! We will have to take steps to prevent the situation from escalating further!"
+	picture = "furios_hitler"
+	
+	option = {
+		name = "We will force them to obey!"
+		ai_chance = { factor = 95 }
+		random_list = {
+			90 = { VIC = { country_event = 1654 } }		# Puppet Vichy
+			10 = { VIC = { country_event = 1655 } }		# Vichy breaks free and joins Free France
+		}
+	}
+		
+	option = {
+		name = "Then we will take direct control."
+		ai_chance = { factor = 5 }
+		random_list = {
+			75 = {										# Metropolitan France will be occupied by Germany, the rest goes back to Free France
+				VIC = {
+					any_owned = {
+						limit = {
+							continent = europe
+						}
+						change_controller = GER
+					}
+				}
+				country_event = 2903
+			}
+			25 = { VIC = { country_event = 1655 } }		# Vichy breaks free and joins Free France
+		}
+	}
+	
+	option = {
+		name = "Vichy is unimportant."
+		ai_chance = { factor = 0 }
+		VIC = { country_event = 1655 }
+	}
+}
+
+country_event = {
+
+	id = 1654
+	
+	is_triggered_only = yes
+
+	title = "The Vichy government is forced to obey"
+	desc = "Our attempt to rejoin with Free France provoced a heavy respons from Germany. They sent 'military advisors' to oversee the defence of our nation from 'foreign interference'..."
+	picture = "furios_hitler"
+	
+	option = {
+		name = "At least we tried..."
+		dissent = 5
+		GER = { create_vassal = VIC }
+		join_faction = axis
+	}
+
+}
+
+country_event = {
+
+	id = 1655
+	
+	is_triggered_only = yes
+
+	title = "We managed to break free from German rule!"
+	desc = "Rejoined at last!"
+	picture = "Fra_Liberated"
+	
+	option = {
+		name = "At last!"
+		any_country = {
+			limit = {
+				war_with = GER
+			}
+			war_exhaustion = -1
+		}	
+		FRA = { country_event = 2902 }
+	}
+}
+
+country_event = {
+
+	id = 1656
+	
+	is_triggered_only = yes
+
+	title = "The French State declined to cooperate"
+	desc = "Either because they fear the Germans more than us or because they see no perspective in our attempt to liberate Europe, the French State decided to side with Germany instead."
+	picture = "torch"
+	
+	option = {
+		name = "Their loss..."
+		ai_chance = { factor = 99 }
+		war = {
+			target = VIC
+			attacker_goal = { casus_belli = force_ideology }	# France will inherit a democratic Vichy automatically
+			defender_goal = { casus_belli = concede_defeat }
+		}
+	}
+
+	option = {
+		name = "We can't fight the French!..."
+		ai_chance = { factor = 1 }
+	}	
+}
+
+country_event = {
+
+	id = 1657
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The USA offered Vichy to side with them"
+	desc = "We must protect our interests in France!"
+	picture = "furios_hitler"
+	
+	option = {
+		name = "Offer Vichy our protection!"
+		ai_chance = { factor = 100 }
+		VIC = { country_event = 1658 }
+	}
+
+	option = {
+		name = "Vichy is unimportant."
+		ai_chance = { factor = 0 }
+		end_guarantee = VIC
+		VIC = { country_event = 1659 }
+	}
+}
+
+country_event = {
+
+	id = 1658
+	
+	is_triggered_only = yes
+
+	title = "Germany will protect us!"
+	desc = "Together we will crush all our enemies!"
+	picture = "Austria_Alliance"
+	
+	option = {
+		name = "Excellent!"
+		GER = { create_vassal = VIC }
+		join_faction = axis
+		USA = { country_event = 1656 }
+	}
+
+}
+
+country_event = {
+
+	id = 1659
+	
+	is_triggered_only = yes
+
+	title = "We are alone!"
+	desc = "Germany turned its back on us! We have noone to turn to now..."
+	picture = "uprising"
+	
+	option = {
+		name = "What are we gonna do?"
+		dissent = 5
+		national_unity = -25
+		USA = { country_event = 1656 }
+	}
+
+}

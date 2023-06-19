@@ -1,0 +1,471 @@
+country_event = {
+
+	id = 3950
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "The British offer peace"
+	desc = "Seeing our great success in the war, the United Kingdom sent a peace proposal, mostly returning to Status Quo. We would still keep most of our current spoils."
+	picture = "chameberlain"
+	
+	option = {
+		name = "Sounds good!"
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 1.5
+				not = { manpower = 100 }
+			}
+			modifier = {
+				factor = 0.5
+				faction_progress = 25
+			}
+			modifier = {
+				factor = 0.25
+				faction_progress = 40
+			}
+			modifier = {
+				factor = 1.5
+				not = { faction_progress = 20 }
+			}
+			modifier = {
+				factor = 2.0
+				not = { faction_progress = 10 }
+			}
+		}
+		set_country_flag = "peace_in_the_west_accepted"
+		any_country = {					# Defeated nations are annexed. Puppeting could only be done hard-wired, and that's bad.
+			limit = {
+				faction = allies
+				government_in_exile = yes
+				not = { tag = FRA }
+			}
+			country_event = 3951
+		}
+		any_country = {					# Axis nations should end the war with the Allies!
+			limit = { faction = axis }
+			country_event = 3952
+		}
+		any_country = {
+			limit = { faction = allies }
+			neutrality = 15
+			end_war = GER
+		}
+		any_country = {					# Non-defeated neutrals also leave the Allies.
+			limit = {
+				faction = allies
+				is_subject = no
+				neutrality = 85
+			}
+			country_event = 3953
+		}
+		threat = { who = all value = -50 }
+		ENG = { country_event = 3954 }	# UK gets notified separately. Its a sort-of diplomatic victory for them.
+		FRA = { country_event = 3955 }	# France is either completely replaced by Vichy or fights on alone.
+	}
+	
+	option = {
+		name = "Why should we?"
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 0.0
+				not = { manpower = 100 }
+			}
+			modifier = {
+				factor = 2.0
+				faction_progress = 25
+			}
+			modifier = {
+				factor = 5.0
+				faction_progress = 40
+			}
+			modifier = {
+				factor = 0.5
+				not = { faction_progress = 20 }
+			}
+			modifier = {
+				factor = 0.0
+				not = { faction_progress = 10 }
+			}
+		}
+		ENG = { country_event = 3956 }
+	}
+	
+	option = {
+		name = "Propose an alliance!"
+		ai_chance = { factor = 5 }
+		ENG = { country_event = 3957 }
+	}
+
+}
+
+country_event = {
+
+	id = 3951
+	
+	is_triggered_only = yes
+	
+	title = "End of the war in the west"
+	desc = "Germany and the United Kingdom agreed on a peace treaty, so the War is over in the West. Unfortunately, we are stuck on the wrong side of the fence..."
+	picture = "End_Czech"
+	
+	option = {
+		name = "Too bad..."
+		#Japan keeps colonies in Asia
+		any_owned = {
+			limit = {
+				JAP = { faction = axis }
+				or = {
+					continent = china
+					continent = Indonesia
+					continent = Southeast_Asia
+				}
+			}
+			secede_province = JAP
+		}
+		#If the UK is gone, the US will occupy colonies in the Americas
+		any_owned = {
+			limit = {
+				NOT = { exists = ENG }
+				or = {
+					continent = south_america
+					continent = Caribbean
+					continent = Central_America
+				}
+			}
+			secede_province = USA
+		}
+		any_owned = { limit = { is_core = GUY controlled_by = THIS } secede_province = GUY }
+		GER = { inherit = THIS }
+	}
+}
+
+country_event = {
+
+	id = 3952
+	
+	trigger = {
+		any_owned_province = {
+			is_capital = yes
+			or = {
+				continent = "europe"
+				continent = "africa"
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	title = "End of the war in the west"
+	desc = "Germany and the United Kingdom agreed on a peace treaty. The war is over in the west!"
+	picture = "constitutional"
+	
+	option = {
+		name = "Good."
+		ENG = { end_war = THIS }
+		threat = { who = all value = -15 }
+	}
+}
+
+country_event = {
+
+	id = 3953
+	
+	is_triggered_only = yes
+	
+	title = "Leaving the Allies"
+	desc = "With the war over, we no longer need to remain allied with the Western powers. Should we leave the Allies?"
+	picture = "constitutional"
+	
+	option = {
+		name = "Yes, we should!"
+		ai_chance = { factor = 100 }
+		leave_faction = allies
+	}
+	option = {
+		name = "We may still need their help!"
+		ai_chance = { factor = 0 }
+		neutrality = -5
+		dissent = 2
+	}
+}
+
+country_event = {
+
+	id = 3954
+	
+	is_triggered_only = yes
+	
+	title = "End of the war in the west"
+	desc = "Germany accepted our peace proposal, the war is over in the West!"
+	picture = "constitutional"
+	
+	option = {
+		name = "At last!"
+		dissent = -2
+		popularity = 5
+		organisation = 10
+		neutrality = 35
+	}
+}
+
+country_event = {
+
+	id = 3955
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "Anglo-German Peace"
+	desc = "Germany accepted the peace proposal of the United Kingdom! That means we must either fight the Germans alone, or accept the inevitable..."
+	picture = "constitutional"
+	
+	option = {
+		name = "Accept the inevitable..."
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2.0
+				exists = VIC
+			}
+			modifier = {
+				factor = 0.0
+				not = { exists = VIC }
+			}
+		}
+		VIC = { split_troops = 1.0 }
+		VIC = { inherit = THIS }
+	}
+	option = {
+		name = "We'll never give up!"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.0
+				exists = VIC
+			}
+			modifier = {
+				factor = 2.0
+				not = { exists = VIC }
+			}
+		}
+		national_unity = 25
+		inherit = FRA
+		war = {
+			target = GER
+			attacker_goal = { casus_belli = aquire_all_cores }
+		}
+	}
+}
+
+country_event = {
+
+	id = 3956
+	
+	is_triggered_only = yes
+	
+	title = "The Germans declined"
+	desc = "The German leadership declined our offer for a white peace. It seems that the time for appeasement is over..."
+	picture = "churchill"
+	
+	option = {
+		name = "Then we will fight with all our strength! Appoint Churchill!"
+		ai_chance = { factor = 95 }
+		social_conservative = { organisation = 5 popularity = 5 }
+		country_event = 8305
+	}
+	option = {
+		name = "They are too strong, we have no chance to win!"
+		ai_chance = { factor = 5 }
+		dissent = 10
+		organisation = -15
+		popularity = -20
+	}
+}
+
+country_event = {
+
+	id = 3957
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "German counter-offer"
+	desc = "The Germans proposed a counter-offer: an Anglo-German Alliance! What should we do now?"
+	picture = "Austrian_Alliance"
+	
+	option = {
+		name = "No alliance, but we still stand by our offer."
+		ai_chance = {
+			factor = 65
+		}
+		GER = { country_event = 3958 }
+	}
+	option = {
+		name = "We prefer fighting them over befriending them!"
+		ai_chance = {
+			factor = 25
+		}
+		GER = { country_event = 3959 }
+	}
+	option = {
+		name = "We have no chance to survive otherwise!"
+		ai_chance = {
+			factor = 10
+		}
+		# Join the Axis
+		join_faction = axis
+		# Put the Fascists in power
+		load_oob = "Ideologies/fascistic.txt"
+		GER = { country_event = 3960 }
+	}
+}
+
+country_event = {
+
+	id = 3958
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "The British don't want our friendship..."
+	desc = "The British have turned down our offer for an alliance, but they still insist on their own terms."
+	picture = "churchill"
+	
+	option = {
+		name = "Those terms aren't that bad..."
+		ai_chance = { factor = 95 }
+		set_country_flag = "peace_in_the_west_accepted"
+		any_country = {					# Defeated nations are annexed. Puppeting could only be done hard-wired, and that's bad.
+			limit = {
+				faction = allies
+				government_in_exile = yes
+				not = { tag = FRA }
+			}
+			country_event = 3951
+		}
+		any_country = {					# Non-defeated nations end the war.
+			limit = {
+				faction = allies
+				not = { tag = ENG }
+				not = { tag = FRA }
+			}
+			country_event = 3952
+		}
+		any_country = {					# Non-defeated neutrals also leave the Allies.
+			limit = {
+				faction = allies
+				is_subject = no
+				neutrality = 85
+			}
+			country_event = 3953
+		}
+		threat = { who = all value = -50 }
+		ENG = { country_event = 3954 }	# UK gets notified separately. Its a sort-of diplomatic victory for them.
+		FRA = { country_event = 3955 }	# France is either completely replaced by Vichy or fights on alone.
+	}
+	option = {
+		name = "Well, if no Alliance, then no Peace!"
+		ai_chance = { factor = 5 }
+		ENG = { country_event = 3956 }
+	}
+}
+
+country_event = {
+
+	id = 3959
+	
+	is_triggered_only = yes
+	
+	title = "The British don't want our friendship..."
+	desc = "The British have turned down our offer for an alliance, and would rather die fighting us then form an alliance...."
+	picture = "churchill"
+	
+	option = {
+		name = "Then they will die slowly and painfully."
+	}
+	
+}
+
+country_event = {
+
+	id = 3960
+	
+	is_triggered_only = yes
+	
+	title = "The British agreed on our terms!"
+	desc = "The British have decided to accept our terms and joined the Axis!"
+	picture = "Austria_Alliance"
+	
+	option = {
+		name = "Great!"
+		relation = { who = ENG value = 50 }
+		set_country_flag = "peace_in_the_west_accepted"
+		any_country = {					# Defeated nations are annexed. Puppeting could only be done hard-wired, and that's bad.
+			limit = {
+				faction = allies
+				government_in_exile = yes
+				not = { tag = FRA }
+			}
+			country_event = 3951
+		}
+		any_country = {					# Non-defeated nations end the war.
+			limit = {
+				faction = allies
+				not = { tag = ENG }
+				not = { tag = FRA }
+			}
+			country_event = 3952
+		}
+		any_country = {					# Non-defeated neutrals also leave the Allies.
+			limit = {
+				faction = allies
+				is_subject = no
+				neutrality = 85
+			}
+			country_event = 3953
+		}
+		threat = { who = all value = -50 }
+		FRA = { country_event = 3955 }	# France is either completely replaced by Vichy or fights on alone.
+	}
+	
+}
+
+country_event = {
+
+	id = 3961
+	
+	is_triggered_only = yes
+	
+	title = "The end of the war for Free France"
+	desc = "Free France gave up on their ambition to fight the unevitable, and peace has finally came to France. It's time we relinquish their lands."
+	picture = "FRA_liberated"
+	
+	option = {
+		name = "Give them back their land!"
+		ai_chance = { factor = 100 }
+		any_owned = {
+			limit = {
+				is_core = FRA
+				not = { is_core = THIS }
+			}
+			add_core = VIC
+			secede_province = VIC
+		}
+	}
+	option = {
+		name = "No way! Our men shed their blood for those lands!"
+		ai_chance = { factor = 0 }
+		war = {
+			target = VIC
+			attacker_goal = { casus_belli = conquer }
+		}
+	}
+	
+}

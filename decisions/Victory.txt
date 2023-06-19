@@ -1,0 +1,143 @@
+diplomatic_decisions = {
+
+	soviets_propose_partition_of_europe = {
+		major = yes
+		potential = {
+			tag = SOV
+			or = {
+				SOV = { has_country_flag = joined_forces_defeated_germany }
+				ENG = { has_country_flag = joined_forces_defeated_germany }
+				FRA = { has_country_flag = joined_forces_defeated_germany }
+				USA = { has_country_flag = joined_forces_defeated_germany }
+			}
+		}
+		allow = {
+			not = {
+				any_neighbor_country = {
+					war_with = THIS						# To avoid enemy units stuck in newly created nations
+					faction = axis
+				}
+			}
+		}
+		effect = {
+			random_country = {
+				limit = {
+					faction = allies
+					government_in_exile = no			# I can't manage to fire this to an Allies major but only for one country :(
+					is_subject = no
+					or = {
+						tag = USA
+						tag = FRA
+						tag = ENG
+					}
+				}
+				country_event = 3801
+			}
+			SOV = { clr_country_flag = joined_forces_defeated_germany }
+			ENG = { clr_country_flag = joined_forces_defeated_germany }
+			FRA = { clr_country_flag = joined_forces_defeated_germany }
+			USA = { clr_country_flag = joined_forces_defeated_germany }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	allies_propose_partition_of_europe = {
+		major = yes
+		potential = {
+			or = {
+				and = {
+					faction = allies
+					tag = ENG
+				}
+				and = {
+					faction = allies
+					tag = FRA
+				}
+				and = {
+					faction = allies
+					tag = USA
+				}
+			}
+			or = {
+				SOV = {	has_country_flag = joined_forces_defeated_germany }
+				ENG = { has_country_flag = joined_forces_defeated_germany }
+				FRA = { has_country_flag = joined_forces_defeated_germany }
+				USA = { has_country_flag = joined_forces_defeated_germany }
+			}
+		}
+		allow = {
+			not = {
+				any_neighbor_country = {
+					war_with = THIS						# To avoid enemy units stuck in newly created nations
+					faction = axis
+				}
+			}
+		}
+		effect = {
+			SOV = { country_event = 3802 }
+			SOV = { clr_country_flag = joined_forces_defeated_germany }
+			ENG = { clr_country_flag = joined_forces_defeated_germany }
+			FRA = { clr_country_flag = joined_forces_defeated_germany }
+			USA = { clr_country_flag = joined_forces_defeated_germany }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	allies_defeated_germany = {
+		major = yes
+		potential = {
+			has_country_flag = allies_defeated_germany
+			owns = 2372
+		}
+		allow = {
+			not = {
+				any_neighbor_country = {
+					war_with = THIS						# To avoid enemy units stuck in newly created nations
+					faction = axis
+				}
+			}
+		}
+		effect = {
+			any_country = {								# Remove German cores everywhere
+				any_owned = {
+					limit = { is_core = GER }
+					remove_core = GER
+				}
+			}
+			any_owned = {
+				limit = { is_core = GER }
+				remove_core = GER
+			}
+			north_germany_region = { add_core = POL }	# East Prussia goes to Poland.
+			polish_soviet_region = { add_core = POL }
+			west_germany_region = { add_core = DFR }	# The rest of the Reich goes to FRG
+			east_germany_region = { add_core = DFR }
+			polish_germany_region = { add_core = DFR }
+			release = DFR
+			DFR = { join_faction = allies }
+			any_country = {
+				limit = {
+					faction = allies
+					is_subject = no						# Vassals can't occupy territory anyway.
+				}
+				country_event = 3804
+			}
+			country_event = 3804
+			any_country = {
+				limit = {
+					faction = THIS
+					government_in_exile = yes
+				}
+				form_government_in_exile = no
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

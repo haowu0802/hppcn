@@ -1,0 +1,60 @@
+theatre = {
+	name = "Imperial Irani High Command"
+	location = 9158
+	regiment = { type = hq_brigade name = "Tehran HQ" historical_model = 0 }
+	corps = {
+		name = "Lasgar Parsi"
+		location = 9158
+		regiment = { type = hq_brigade name = "Lasgar Parsi HQ" historical_model = 0 }
+		division= {
+			name = "1. Dastebandi Sarbaze Piyade"
+			location = 9158
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1. Infantry Brigade" experience = 0 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "2. Infantry Brigade" experience = 0 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "3. Infantry Brigade" experience = 0 historical_model = 3 }
+			regiment = { type = super_heavy_armor_brigade name = "1. Tank Brigade" experience = 0 historical_model = 0 }
+		}
+		division= {
+			name = "1. Dastebandi Savareh"
+			location = 9158
+			is_reserve = yes 
+			regiment = { type = cavalry_brigade name = "1. Camel Brigade" experience = 0 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "2. Camel Brigade" experience = 0 historical_model = 3 }
+		}
+		division= {
+			name = "2. Dastebandi Savareh"
+			location = 9158
+			is_reserve = yes 
+			regiment = { type = cavalry_brigade name = "3. Camel Brigade" experience = 0 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "4. Camel Brigade" experience = 0 historical_model = 3 }
+		}
+		division= {
+			name = "3. Dastebandi Savareh"
+			location = 9158
+			is_reserve = yes 
+			regiment = { type = cavalry_brigade name = "5. Camel Brigade" experience = 0 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "6. Camel Brigade" experience = 0 historical_model = 3 }
+		}		
+	}
+	air = {
+		name = "Imperial Iranian Air Force"
+		base = 9158
+		location = 9158
+		wing = { type = cas name = "1. Daste Sirje Raftan Bombon" experience = 0 historical_model = 0 }
+	}	
+}
+convoy_construction=
+{
+	country = PER
+	id=
+	{
+		id=15021
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

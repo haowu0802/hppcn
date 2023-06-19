@@ -1,0 +1,207 @@
+country_event = {
+
+	id = 1871
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "$FROMCOUNTRY$ sent an ultimatum"
+	desc = "With the war escalated in Eastern Europe, the leaders of the Allies and the Comintern are now concerned about Persian neutrality. They demand to "
+	picture = "soviet_politics2"
+	
+	option = {
+		name = "Reza Shah Pahlavi abdicates in favour of his son"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 2.0 	not = { relation = { who = GER value = -199 } } }
+			modifier = { factor = 1.25 	not = { relation = { who = GER value = -150 } } }
+			modifier = { factor = 1.1 	not = { relation = { who = GER value = -100 } } }
+			modifier = { factor = 1.1 	not = { relation = { who = GER value = -50 } } }
+			modifier = { factor = 0.9 	relation = { who = GER value = 50 } }
+			modifier = { factor = 0.9 	relation = { who = GER value = 100 } }
+			modifier = { factor = 0.75 	relation = { who = GER value = 150 } }
+			modifier = { factor = 0.0 	relation = { who = GER value = 200 } }
+		}
+		remove_minister = 53001		# Reza Shah Pahlavi
+		set_country_flag = "53001_removed"
+		SOV = { country_event = 1872 }
+		SOV = { military_access = PER }
+		ENG = { country_event = 1873 }
+		ENG = { military_access = PER }
+	}
+	
+	option = {
+		name = "Side with Germany instead!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.0 	not = { relation = { who = GER value = -199 } } }
+			modifier = { factor = 0.75 	not = { relation = { who = GER value = -150 } } }
+			modifier = { factor = 0.9 	not = { relation = { who = GER value = -100 } } }
+			modifier = { factor = 0.9 	not = { relation = { who = GER value = -50 } } }
+			modifier = { factor = 1.1 	relation = { who = GER value = 50 } }
+			modifier = { factor = 1.1 	relation = { who = GER value = 100 } }
+			modifier = { factor = 1.25 	relation = { who = GER value = 150 } }
+			modifier = { factor = 2.0 	relation = { who = GER value = 200 } }
+		}
+		war = {
+			target = FROM
+			attacker_goal = { casus_belli = concede_defeat }
+			defender_goal = { casus_belli = puppet }
+		}
+		FROM = { country_event = 1874 }
+		GER = { country_event = 1875 }
+	}
+
+}
+
+# Cooperate - Soviet reaction
+
+country_event = {
+
+	id = 1872
+
+	is_triggered_only = yes
+	
+	title = "Persia agreed to cooperate"
+	desc = "The new Persian King, Mohammad Reza Pahlavi agreed to lend us a corridor in Northern Persia where we can transport our troops more easily."
+	picture = "soviet_law"
+	
+	option = {
+		name = "Great!"
+		relation = { who = PER value = 50 }
+		non_aggression_pact = PER
+		PER = { countenance_region = { secede_province = SOV } }
+		PER = { head_of_state = 53011 }		# Mohammad Reza Shah Pahlavi
+	}
+	
+}
+
+# Cooperate - British reaction
+
+country_event = {
+
+	id = 1873
+
+	is_triggered_only = yes
+	
+	title = "Persia agreed to cooperate"
+	desc = "The Persian King, Reza Shah Pahlavi abdiceted in favour of his son, Mohammad Reza Pahlavi, the new King of Persia, under our guidance."
+	picture = "churchill"
+	
+	option = {
+		name = "Great!"
+		relation = { who = PER value = 100 }
+		create_vassal = PER
+		PER = {
+			government = absolute_monarchy
+			head_of_state = 53011		# Mohammad Reza Shah Pahlavi
+		}
+	}
+	
+}
+
+# War - FROM reaction
+
+country_event = {
+
+	id = 1874
+
+	is_triggered_only = yes
+	
+	title = "Persia declined to cooperate"
+	desc = "The Persian King, Reza Shah Pahlavi decided to ask for the help of Germany instead of cooperating. War is unavoidable!"
+	picture = "partisan_revolt"
+	
+	option = {
+		name = "Their loss."
+		relation = { who = PER value = -100 }
+	}
+	
+}
+
+# War - German reaction
+
+country_event = {
+
+	id = 1875
+
+	is_triggered_only = yes
+	
+	title = "Persia asks for our protection"
+	desc = "Persia turned down the ultimatum sent by the Allies, and now asks for our protection. What should we do?"
+	picture = "tannu_tuva"
+	
+	option = {
+		name = "Yeah, why not?"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.0 	not = { relation = { who = PER value = -199 } } }
+			modifier = { factor = 0.75 	not = { relation = { who = PER value = -150 } } }
+			modifier = { factor = 0.9 	not = { relation = { who = PER value = -100 } } }
+			modifier = { factor = 0.9 	not = { relation = { who = PER value = -50 } } }
+			modifier = { factor = 1.1 	relation = { who = PER value = 50 } }
+			modifier = { factor = 1.1 	relation = { who = PER value = 100 } }
+			modifier = { factor = 1.25 	relation = { who = PER value = 150 } }
+			modifier = { factor = 2.0 	relation = { who = PER value = 200 } }
+		}
+		relation = { who = PER value = 50 }
+		PER = { country_event = 1876 }
+	}
+	option = {
+		name = "Why bother?"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 2.0 	not = { relation = { who = PER value = -199 } } }
+			modifier = { factor = 1.25 	not = { relation = { who = PER value = -150 } } }
+			modifier = { factor = 1.1 	not = { relation = { who = PER value = -100 } } }
+			modifier = { factor = 1.1 	not = { relation = { who = PER value = -50 } } }
+			modifier = { factor = 0.9 	relation = { who = PER value = 50 } }
+			modifier = { factor = 0.9 	relation = { who = PER value = 100 } }
+			modifier = { factor = 0.75 	relation = { who = PER value = 150 } }
+			modifier = { factor = 0.0 	relation = { who = PER value = 200 } }
+		}
+		relation = { who = PER value = -25 }
+		PER = { country_event = 1877 }
+	}
+	
+}
+
+# Persia: Germany helps
+
+country_event = {
+
+	id = 1876
+
+	is_triggered_only = yes
+	
+	title = "Germany agrees to help"
+	desc = "Germany agreed to help us out against the Allies!"
+	picture = "Austria_Alliance"
+	
+	option = {
+		name = "Great!"
+		relation = { who = GER value = 50 }
+		join_faction = axis
+	}
+	
+}
+
+# Persia: Germany doesn't help
+
+country_event = {
+
+	id = 1877
+
+	is_triggered_only = yes
+	
+	title = "We stand alone!"
+	desc = "Our gamble turned out to be a bad idea after all..."
+	picture = "soviet_air"
+	
+	option = {
+		name = "Oh no..."
+		relation = { who = GER value = -25 }		
+	}
+	
+}

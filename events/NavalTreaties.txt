@@ -1,0 +1,99 @@
+country_event = {
+
+	id = 3551
+	
+	major = yes
+	
+	trigger = {
+		has_country_flag = london_treaty
+		not = { has_country_flag = second_london_conference }
+		date = 1936.3.25
+	}
+	
+	title = "Second London Conference"
+	desc = "The Second London Naval Disarmament Conference opened in London, the United Kingdom, on 9 December 1935. It resulted in the Second London Naval Treaty which was signed on 25 March 1936."
+	picture = "constitutional"
+	
+	option = {
+		name = "Sign the treaty!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.0 tag = JAP }
+			modifier = { factor = 0.0 tag = ITA }
+			modifier = { factor = 2.0 not = { tag = JAP } not = { tag = ITA } }
+		}
+		clr_country_flag = "washington_treaty"
+		clr_country_flag = "london_treaty"
+		set_country_flag = second_london_conference
+		set_country_flag = second_london_treaty
+		any_country = {
+			limit = {
+				has_country_flag = second_london_treaty
+				has_country_flag = second_london_conference
+			}
+			relation = { who = THIS value = 50 }
+		}
+		any_country = {
+			limit = {
+				not = { has_country_flag = second_london_treaty }
+				has_country_flag = second_london_conference
+			}
+			relation = { who = THIS value = -25 }
+		}
+		neutrality = 1
+	}
+	
+	option = {
+		name = "Thanks, but no thanks."
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 2.0 tag = JAP }
+			modifier = { factor = 2.0 tag = ITA }
+			modifier = { factor = 0.0 not = { tag = JAP } not = { tag = ITA } }
+		}
+		clr_country_flag = "washington_treaty"
+		clr_country_flag = "london_treaty"
+		set_country_flag = second_london_conference
+		any_country = {
+			limit = {
+				has_country_flag = second_london_treaty
+				has_country_flag = second_london_conference
+			}
+			relation = { who = THIS value = -25 }
+		}
+		neutrality = -3
+	}
+}
+
+country_event = {
+
+	id = 3552
+	
+	major = yes
+	
+	trigger = {
+		has_country_flag = second_london_treaty
+		NOT = { has_country_flag = "escalator_clause_invoked" }
+		OR = {
+			JAP = { NOT = { has_country_flag = second_london_treaty } }
+			ITA = { NOT = { has_country_flag = second_london_treaty } }
+			ENG = { NOT = { has_country_flag = second_london_treaty } }
+			FRA = { NOT = { has_country_flag = second_london_treaty } }
+			USA = { NOT = { has_country_flag = second_london_treaty } }
+		}
+		date = 1937.4.1
+	}
+	
+	title = "Second London Treaty Escalator Clause"
+	desc = "The Second London Naval Treaty contained the so-called Escalator Clause, which allowed treaty signatories to up-gun their ships if any of the 5 previous signers refused to sign the new treaty."
+	picture = "constitutional"
+	
+	option = {
+		name = "Invoke the Escalator Clause!"
+
+		set_country_flag = escalator_clause_invoked
+		clr_country_flag = second_london_treaty
+		neutrality = -2
+	}
+
+}

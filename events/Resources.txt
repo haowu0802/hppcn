@@ -1,0 +1,1143 @@
+country_event = {
+
+	id = 5951
+
+	trigger = {
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				energy = 10000
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				energy = 15000
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				energy = 20000
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				energy = 30000
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				energy = 50000
+			}
+		}
+		is_subject = no
+		not = { has_country_modifier = "energy_amortization" }
+	}
+
+	title = "Coal storing problems"
+	desc = "The amount of coal we have stockpiled all over our nation is simply too much, we have problems providing efficient storage for it."
+	picture = "fire"
+
+	option = {
+		name = "Oh, rats..."
+		add_country_modifier = {
+			name = "energy_amortization"
+			duration = -1
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				energy = 999
+			}
+			add_country_modifier = {
+				name = "energy_amortization"
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 5952
+	
+	trigger = {
+		is_subject = no
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				not = { energy = 7500 }
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				not = { energy = 12000 }
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				not = { energy = 15000 }
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				not = { energy = 20000 }
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				not = { energy = 35000 }
+			}
+			total_ic = 350
+		}
+		has_country_modifier = "energy_amortization"
+	}
+	
+	title = "Coal storing problems solved"
+	desc = "We now have a low enough supply of coal, so storing more of it won't be a problem anymore."
+	picture = "factory"
+	
+	option = {
+		name = "Finally..."
+		remove_country_modifier = "energy_amortization"
+		any_country = {
+			limit = {
+				vassal_of = THIS
+			}
+			remove_country_modifier = "energy_amortization"
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 5953
+
+	trigger = {
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				metal = 4500
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				metal = 8000
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				metal = 10000
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				metal = 15000
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				metal = 25000
+			}
+			and = {
+				total_ic = 350
+				metal = 50000
+			}
+		}
+		is_subject = no
+		not = { has_country_modifier = "metal_amortization" }
+	}
+
+	title = "Metal storing problems"
+	desc = "The amount of metal we have stockpiled all over our nation is simply too much, we have problems providing efficient storage for it."
+	picture = "fire"
+
+	option = {
+		name = "Oh, rats..."
+		add_country_modifier = {
+			name = "metal_amortization"
+			duration = -1
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				metal = 999
+			}
+			add_country_modifier = {
+				name = "metal_amortization"
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 5954
+	
+	trigger = {
+		is_subject = no
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				not = { metal = 3000 }
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				not = { metal = 6000 }
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				not = { metal = 7500 }
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				not = { metal = 10000 }
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				not = { metal = 17500 }
+			}
+			and = {
+				total_ic = 350
+				not = { metal = 35000 }
+			}
+		}
+		has_country_modifier = "metal_amortization"
+	}
+	
+	title = "Metal storing problems solved"
+	desc = "We now have a low enough supply of metal, so storing more of it won't be a problem anymore."
+	picture = "factory"
+	
+	option = {
+		name = "Finally..."
+		remove_country_modifier = "metal_amortization"
+		any_country = {
+			limit = {
+				vassal_of = THIS
+			}
+			remove_country_modifier = "metal_amortization"
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 5955
+
+	trigger = {
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				rare_materials = 2500
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				rare_materials = 4000
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				rare_materials = 5000
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				rare_materials = 7500
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				rare_materials = 12500
+			}
+			and = {
+				total_ic = 350
+				rare_materials = 25000
+			}
+		}
+		is_subject = no
+		not = { has_country_modifier = "rare_materials_amortization" }
+	}
+	
+	title = "Rare material storing problems"
+	desc = "The amount of rare materials we have stockpiled all over our nation is simply too much, we have problems providing efficient storage for it."
+	picture = "fire"
+
+	option = {
+		name = "Oh, rats..."
+		add_country_modifier = {
+			name = "rare_materials_amortization"
+			duration = -1
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				rare_materials = 999
+			}
+			add_country_modifier = {
+				name = "rare_materials_amortization"
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 5956
+	
+	trigger = {
+		is_subject = no
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				not = { rare_materials = 1500 }
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				not = { rare_materials = 3000 }
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				not = { rare_materials = 3500 }
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				not = { rare_materials = 5000 }
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				not = { rare_materials = 10000 }
+			}
+			and = {
+				total_ic = 350
+				not = { rare_materials = 17500 }
+			}
+		}
+		has_country_modifier = "rare_materials_amortization"
+	}
+	
+	title = "Rare Materials storing problems solved"
+	desc = "We now have a low enough supply of rare materials, so storing more of it won't be a problem anymore."
+	picture = "factory"
+	
+	option = {
+		name = "Finally..."
+		remove_country_modifier = "rare_materials_amortization"
+		any_country = {
+			limit = {
+				vassal_of = THIS
+			}
+			remove_country_modifier = "rare_materials_amortization"
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 5957
+
+	trigger = {
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				crude_oil = 3500
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				crude_oil = 7000
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				crude_oil = 10000
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				crude_oil = 15000
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				crude_oil = 25000
+			}
+			and = {
+				total_ic = 350
+				crude_oil = 50000
+			}
+		}
+		is_subject = no
+		not = { has_country_modifier = "crude_oil_amortization" }
+	}
+
+	title = "Oil storing problems"
+	desc = "The amount of crude oil we have stockpiled all over our nation is simply too much, we have problems providing efficient storage for it."
+	picture = "fire"
+
+	option = {
+		name = "Oh, rats..."
+		add_country_modifier = {
+			name = "crude_oil_amortization"
+			duration = -1
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				crude_oil = 999
+			}
+			add_country_modifier = {
+				name = "crude_oil_amortization"
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 5958
+	
+	trigger = {
+		is_subject = no
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				not = { crude_oil = 2500 }
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				not = { crude_oil = 6000 }
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				not = { crude_oil = 7500 }
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				not = { crude_oil = 10000 }
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				not = { crude_oil = 17500 }
+			}
+			and = {
+				total_ic = 350
+				not = { crude_oil = 35000 }
+			}
+		}
+		has_country_modifier = "crude_oil_amortization"
+	}
+	
+	title = "Crude oil storing problems solved"
+	desc = "We now have a low enough supply of crude oil, so storing more of it won't be a problem anymore."
+	picture = "factory"
+	
+	option = {
+		name = "Finally..."
+		remove_country_modifier = "crude_oil_amortization"
+		any_country = {
+			limit = {
+				vassal_of = THIS
+			}
+			remove_country_modifier = "crude_oil_amortization"
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 5961
+
+	trigger = {
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				energy = 15000
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				energy = 25000
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				energy = 30000
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				energy = 45000
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				energy = 75000
+			}
+		}
+		is_subject = no
+		not = { has_country_modifier = "energy_heavy_amortization" }
+	}
+
+	title = "Coal storing problems"
+	desc = "The amount of coal we have stockpiled all over our nation is simply too much, we have problems providing efficient storage for it."
+	picture = "fire"
+
+	option = {
+		name = "Oh, rats..."
+		add_country_modifier = {
+			name = "energy_heavy_amortization"
+			duration = -1
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				energy = 999
+			}
+			add_country_modifier = {
+				name = "energy_heavy_amortization"
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 5962
+	
+	trigger = {
+		is_subject = no
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				not = { energy = 10000 }
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				not = { energy = 15000 }
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				not = { energy = 20000 }
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				not = { energy = 30000 }
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				not = { energy = 50000 }
+			}
+			total_ic = 350
+		}
+		has_country_modifier = "energy_heavy_amortization"
+	}
+	
+	title = "Coal storing problems solved"
+	desc = "We now have a low enough supply of coal, so storing more of it won't be a problem anymore."
+	picture = "factory"
+	
+	option = {
+		name = "Finally..."
+		remove_country_modifier = "energy_heavy_amortization"
+		any_country = {
+			limit = {
+				vassal_of = THIS
+			}
+			remove_country_modifier = "energy_heavy_amortization"
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 5963
+
+	trigger = {
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				metal = 6000
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				metal = 9000
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				metal = 15000
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				metal = 22500
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				metal = 37500
+			}
+			and = {
+				total_ic = 350
+				metal = 60000
+			}
+		}
+		is_subject = no
+		not = { has_country_modifier = "metal_heavy_amortization" }
+	}
+
+	title = "Metal storing problems"
+	desc = "The amount of metal we have stockpiled all over our nation is simply too much, we have problems providing efficient storage for it."
+	picture = "fire"
+
+	option = {
+		name = "Oh, rats..."
+		add_country_modifier = {
+			name = "metal_heavy_amortization"
+			duration = -1
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				metal = 999
+			}
+			add_country_modifier = {
+				name = "metal_heavy_amortization"
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 5964
+	
+	trigger = {
+		is_subject = no
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				not = { metal = 4500 }
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				not = { metal = 7500 }
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				not = { metal = 12000 }
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				not = { metal = 17500 }
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				not = { metal = 25000 }
+			}
+			and = {
+				total_ic = 350
+				not = { metal = 50000 }
+			}
+		}
+		has_country_modifier = "metal_heavy_amortization"
+	}
+	
+	title = "Metal storing problems solved"
+	desc = "We now have a low enough supply of metal, so storing more of it won't be a problem anymore."
+	picture = "factory"
+	
+	option = {
+		name = "Finally..."
+		remove_country_modifier = "metal_heavy_amortization"
+		any_country = {
+			limit = {
+				vassal_of = THIS
+			}
+			remove_country_modifier = "metal_heavy_amortization"
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 5965
+
+	trigger = {
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				rare_materials = 3000
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				rare_materials = 6000
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				rare_materials = 9000
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				rare_materials = 15000
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				rare_materials = 28000
+			}
+			and = {
+				total_ic = 350
+				rare_materials = 50000
+			}
+		}
+		is_subject = no
+		not = { has_country_modifier = "rare_materials_heavy_amortization" }
+	}
+	
+	title = "Rare material storing problems"
+	desc = "The amount of rare materials we have stockpiled all over our nation is simply too much, we have problems providing efficient storage for it."
+	picture = "fire"
+
+	option = {
+		name = "Oh, rats..."
+		add_country_modifier = {
+			name = "rare_materials_heavy_amortization"
+			duration = -1
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				rare_materials = 999
+			}
+			add_country_modifier = {
+				name = "rare_materials_heavy_amortization"
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 5966
+	
+	trigger = {
+		is_subject = no
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				not = { rare_materials = 2200 }
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				not = { rare_materials = 4000 }
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				not = { rare_materials = 7000 }
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				not = { rare_materials = 12000 }
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				not = { rare_materials = 20000 }
+			}
+			and = {
+				total_ic = 350
+				not = { rare_materials = 42000 }
+			}
+		}
+		has_country_modifier = "rare_materials_heavy_amortization"
+	}
+	
+	title = "Rare Materials storing problems solved"
+	desc = "We now have a low enough supply of rare materials, so storing more of it won't be a problem anymore."
+	picture = "factory"
+	
+	option = {
+		name = "Finally..."
+		remove_country_modifier = "rare_materials_heavy_amortization"
+		any_country = {
+			limit = {
+				vassal_of = THIS
+			}
+			remove_country_modifier = "rare_materials_heavy_amortization"
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 5967
+
+	trigger = {
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				crude_oil = 5000
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				crude_oil = 9000
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				crude_oil = 15000
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				crude_oil = 22500
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				crude_oil = 37500
+			}
+			and = {
+				total_ic = 350
+				crude_oil = 60000
+			}
+		}
+		is_subject = no
+		not = { has_country_modifier = "crude_oil_heavy_amortization" }
+	}
+
+	title = "Oil storing problems"
+	desc = "The amount of crude oil we have stockpiled all over our nation is simply too much, we have problems providing efficient storage for it."
+	picture = "fire"
+
+	option = {
+		name = "Oh, rats..."
+		add_country_modifier = {
+			name = "crude_oil_heavy_amortization"
+			duration = -1
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				crude_oil = 999
+			}
+			add_country_modifier = {
+				name = "crude_oil_heavy_amortization"
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 5968
+	
+	trigger = {
+		is_subject = no
+		or = {
+			and = {
+				not = { total_ic = 20 }
+				not = { crude_oil = 4500 }
+			}
+			and = {
+				total_ic = 20
+				not = { total_ic = 50 }
+				not = { crude_oil = 7500 }
+			}
+			and = {
+				total_ic = 50
+				not = { total_ic = 100 }
+				not = { crude_oil = 12000 }
+			}
+			and = {
+				total_ic = 100
+				not = { total_ic = 200 }
+				not = { crude_oil = 17500 }
+			}
+			and = {
+				total_ic = 200
+				not = { total_ic = 350 }
+				not = { crude_oil = 25000 }
+			}
+			and = {
+				total_ic = 350
+				not = { crude_oil = 50000 }
+			}
+		}
+		has_country_modifier = "crude_oil_heavy_amortization"
+	}
+	
+	title = "Crude oil storing problems solved"
+	desc = "We now have a low enough supply of crude oil, so storing more of it won't be a problem anymore."
+	picture = "factory"
+	
+	option = {
+		name = "Finally..."
+		remove_country_modifier = "crude_oil_heavy_amortization"
+		any_country = {
+			limit = {
+				vassal_of = THIS
+			}
+			remove_country_modifier = "crude_oil_heavy_amortization"
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 5970
+	
+	trigger = {
+		is_subject = yes
+		or = {
+			rare_materials = 2000
+			metal = 2000
+			energy = 2000
+			crude_oil = 2000
+			money = 2000
+			supplies = 5000
+			check_variable = { which = "stored_fuel_in_puppet" value = 5000 }
+		}
+	}
+	
+	title = "Sending resources to our masters"
+	desc = "We have to send any surplus resources we have to our overlord."
+	picture = "factory"
+	
+	option = {
+		name = "We have to give them what's due"
+		any_country = {
+			limit = { num_of_vassals = 1 }	# This is here for performance reasons, the event
+			country_event = 5971			# will only fire for the actual overlord anyway.
+		}
+	}
+	
+}
+
+country_event = {
+
+	id = 5971
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { vassal_of = THIS }
+	}
+	
+	title = "Resources from our puppets"
+	desc = "We recieved a shipment of resources from our puppets."
+	picture = "factory"
+	
+	option = {
+		name = "It was about time..."
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				rare_materials = 2000
+			}
+			rare_materials = -1500
+			THIS = { rare_materials = 1500 }
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				metal = 2000
+			}
+			metal = -1500
+			THIS = { metal = 1500 }
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				energy = 2000
+			}
+			energy = -1500
+			THIS = { energy = 1500 }
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				crude_oil = 2000
+			}
+			crude_oil = -1500
+			THIS = { crude_oil = 1500 }
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				money = 2000
+			}
+			money = -1500
+			THIS = { money = 1500 }
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				supplies = 5000
+			}
+			supplies = -2500
+			THIS = { supplies = 2500 }
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				check_variable = { which = "stored_fuel_in_puppet" value = 5000 }
+			}
+			fuel = -2500
+			change_variable = { which = "stored_fuel_in_puppet" value = -2500 }
+			THIS = { fuel = 2500 }
+		}
+	}
+}
+
+country_event = {
+
+	id = 5972
+	
+	trigger = {
+		NOT = { has_country_modifier = "mp_from_puppet" }
+		is_subject = yes
+		war = yes
+		or = {
+			tag = IND					# I don't like this, but this was the easiest way of excluding
+			not = { total_ic = 50 }		# medium countries but including India
+		}
+		manpower = 200
+	}
+	
+	title = "Sending recruits to our overlord"
+	desc = "We have gathered volunteers that are willing to serve in the armies of our overlord."
+	picture = "factory"
+	
+	option = {
+		name = "We have to give them what's due"
+		add_country_modifier = {
+			name = "mp_from_puppet"		# This event will only fire about once a year.
+			duration = 365
+		}
+		any_country = {
+			limit = { num_of_vassals = 1 }	# This is here for performance reasons, the event
+			country_event = 5973			# will only fire for the actual overlord anyway.
+		}
+	}
+	
+}
+
+country_event = {
+
+	id = 5973
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { vassal_of = THIS }
+	}
+	
+	title = "Recruits from our puppets"
+	desc = "Recruits have arrived from our vassals to serve in our armies."
+	picture = "factory"
+	
+	option = {
+		name = "Excellent!"
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				manpower = 200
+				or = {
+					tag = IND					# I don't like this, but this was the easiest way of excluding
+					not = { total_ic = 50 }		# medium countries but including India
+				}
+			}
+			manpower = -100
+			THIS = { manpower = 100 }
+		}
+	}
+	
+}
+country_event = {
+	id = 5974
+	trigger = {
+		has_country_flag = "goumier_yes"
+		#Don't own a Moroccan core anymore
+		NOT = {
+			any_owned_province = {
+				is_core = MOR
+			}
+		}
+		# AND Morocco isn't your puppet
+		NOT = { MOR = { vassal_of = THIS } }
+	}
+	title = "Morocco lost"
+	desc = "Having lost control of Morocco, we can no longer recruit new Goumier infantry brigades."
+		
+	option = {
+		name = "A Shame!"
+		clr_country_flag = "goumier_yes"
+	}
+}
+country_event = {
+	id = 5975
+	trigger = {
+		has_country_flag = "gurkha_yes"
+		#Don't own a Moroccan core anymore
+		NOT = {
+			any_owned_province = {
+				is_core = NEP
+			}
+		}
+		# AND Morocco isn't your puppet
+		NOT = { NEP = { vassal_of = THIS } }
+	}
+	title = "Morocco lost"
+	desc = "Having lost control of Nepal, we can no longer recruit new Gurkha infantry brigades."
+		
+	option = {
+		name = "A Shame!"
+		clr_country_flag = "gurkha_yes"
+	}
+}

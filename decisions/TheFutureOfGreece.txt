@@ -1,0 +1,81 @@
+#######################
+# Ultimatum to Greece #
+#######################
+diplomatic_decisions = {
+
+	the_future_of_greece = {
+		major = yes
+		potential = {
+			tag = ITA
+			exists = GRE
+			faction = axis
+			is_subject = no
+			has_country_flag = "the_annexation_of_albania"
+			not = { has_country_flag = "ultimatum_to_greece" }
+			not = { war_with = GRE }
+			GRE = {
+				not = { vassal_of = GER }
+				not = { vassal_of = ITA }
+				not = { alliance_with = GER }
+				not = { alliance_with = ITA }
+				not = { faction = axis }
+				government_in_exile = no
+			}			
+			date = 1940.2.1
+		}
+		allow = {
+			or = {
+				not = { exists = FRA }	
+				FRA = { government_in_exile = yes }
+				FRA = { has_country_flag = "fr_signs_peace" }
+			}
+			albania_region = { controlled_by = this }
+		}
+		effect = {
+			set_country_flag = "ultimatum_to_greece"
+			national_unity = 5
+			neutrality = -5
+			GRE = { country_event = 3200 }
+			GRE = { country_event = 3201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	partition_of_greece_bul = {
+		major = yes
+		potential = {
+			OR = {
+				tag = GER
+				tag = HUN
+				tag = ITA
+				tag = GRE
+			}
+			faction = axis
+			BUL = { faction = axis }
+			controls = 4614 # Thasos
+			controls = 4613 # Kavala
+			controls = 4512 # Serres
+			owns = 4614
+			owns = 4613
+			owns = 4612
+		}
+		allow = {
+			OR = {
+				not = { exists = GRE }
+				GRE = { government_in_exile = yes }
+			}
+		}
+		effect = {
+			4614 = { secede_province = BUL change_controller = BUL }
+			4613 = { secede_province = BUL change_controller = BUL }
+			4612 = { secede_province = BUL change_controller = BUL }
+			relation = { who = BUL value = 10 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

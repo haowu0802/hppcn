@@ -1,0 +1,63 @@
+theatre = {
+	name = "Alto Mando de Venezuela"
+	location = 9792
+	regiment = { type = hq_brigade name = "Caracas HQ" historical_model = 0 }
+	
+	corps = {
+		name = "Ejercito de Venezuela"
+		location = 9792
+		regiment = { type = hq_brigade name = "Ejercito de Venezuela HQ" historical_model = 0 }
+		division= {
+			name = "1a Div. de Inf. 'Eduardo Blanco'"
+			location = 9792
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1. Regimiento de Infantería" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "2. Regimiento de Infantería" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "3. Regimiento de Infantería" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Los Caballos de Venezuela"
+			location = 9792
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1. Regimiento de Caballería" experience = 5 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "2. Regimiento de Caballería" experience = 5 historical_model = 1 }
+			regiment = { type = self_propelled_support_brigade name = "Regimiento de Furgones Blindados" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "1a División de Guardia Naciónal"
+			location = 9740
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "4. Regimiento de Infantería" experience = 5 historical_model = 1 }
+			regiment = { type = militia_brigade name = "5. Regimiento de Infantería" experience = 5 historical_model = 1 }
+			regiment = { type = militia_brigade name = "6. Regimiento de Infantería" experience = 5 historical_model = 1 }
+		}
+	}
+}
+convoy_construction=
+{
+	country = VEN
+	id=
+	{
+		id=15619
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = VEN
+	id=
+	{
+		id=15618
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort	
+}

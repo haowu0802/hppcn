@@ -1,0 +1,226 @@
+## First Lithuanian event
+country_event = {
+	
+	id = 2355
+
+	is_triggered_only = yes
+
+	title = "Poland gives us an ultimatum!"
+	desc = "lit_ultimatum_desc"
+	picture = "constitutional"
+
+	option = {
+		name = "Ask the Soviets for help!"			# Historical option
+		SOV = { country_event = 2356 }
+	}
+}
+
+## Soviet event
+country_event = {
+	
+	id = 2356
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "Polish-Lithuanian crisis - Lithuania needs our help!"
+	desc = "sov_ultimatum_desc"
+	picture = "constitutional"
+
+	option = {
+		name = "They'll have to fend for themselves."		# Historical option
+		ai_chance = {
+			factor = 80
+			modifier = { factor = 1.25 has_country_modifier = "the_great_purge" }
+		}
+		LIT = { country_event = 2357 }
+		relation = { who = LIT value = -50 }
+		relation = { who = POL value = 15 }
+		end_guarantee = LIT
+	}
+	option = {
+		name = "Stop the Polish imperialists!"				# Ahistorical option
+		ai_chance = {
+			factor = 20
+			modifier = { factor = 0.0 has_country_modifier = "the_great_purge" }
+		}
+		POL = { country_event = 2358 }
+		relation = { who = LIT value = 25 }
+		relation = { who = POL value = -25 }
+	}
+}
+
+# Lithuanian response - The Soviets decline
+country_event = {
+	
+	id = 2357
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "Polish-Lithuanian crisis"
+	desc = "The Soviets have declined to help us! We will have to face Poland alone!"
+	picture = "constitutional"
+
+	option = {
+		name = "We can't face Poland alone."	# Historical option
+		ai_chance = { factor = 95 }
+		POL = { country_event = 2359 }
+		relation = { who = SOV value = -15 }
+		relation = { who = LAT value = -10 }
+		relation = { who = EST value = -10 }
+		dissent = 5
+		popularity = -5
+	}
+	option = {
+		name = "Vilnius is Lithuanian!"			# Ahistorical option
+		ai_chance = { factor = 5 }
+		POL = { country_event = 2360 }
+		relation = { who = LIT value = 25 }
+		relation = { who = POL value = -25 }
+	}
+}
+
+# Polish response - The Soviets accept
+country_event = {
+	
+	id = 2358
+
+	is_triggered_only = yes
+
+	title = "Polish-Lithuanian crisis"
+	desc = "The Soviets have decided to side with Lithuania!"
+	picture = "constitutional"
+
+	option = {
+		name = "It would be lunacy to fight the Soviets alone."			# Historical option
+		neutrality = 2
+		set_country_flag = "pol_lit_crisis_resolved"
+		LIT = { set_country_flag = "pol_lit_crisis_resolved" }
+	}
+}
+
+# Polish response - Lithuania gives in
+country_event = {
+	
+	id = 2359
+
+	is_triggered_only = yes
+
+	title = "Crisis resolved!"
+	desc = "Lithuania has decided to give in."
+	picture = "constitutional"
+
+	option = {
+		name = "Excellent!"			# Historical option
+		ai_chance = { factor = 1 }
+		neutrality = -2
+		set_country_flag = "pol_lit_crisis_resolved"
+		LIT = { set_country_flag = "pol_lit_crisis_resolved" }
+		any_owned = {
+			limit = {
+				is_core = LIT
+			}
+			remove_core = LIT
+		}
+	}
+}
+
+# Polish response - Lithuania decides to fight!
+country_event = {
+	
+	id = 2360
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "Lithuania decides to fight!"
+	desc = "The Lithuanians have decided to make a stand."
+	picture = "constitutional"
+
+	option = {
+		name = "They will regret this."
+		ai_chance = { factor = 75 }
+		war = {
+			target = LIT
+			attacker_goal = { casus_belli = aquire_all_cores }
+		}
+		set_country_flag = "pol_lit_crisis_resolved"
+	}
+	option = {
+		name = "We're not ready to go to war."
+		ai_chance = { factor = 25 }
+		set_country_flag = "pol_lit_crisis_resolved"
+		LIT = { set_country_flag = "pol_lit_crisis_resolved" }
+		dissent = 2
+		neutrality = 2
+		popularity = -5
+	}
+}
+
+# Polish response - Lithuania asks for peace!
+country_event = {
+	
+	id = 2362
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "Lithuania asks for peace"
+	desc = "The Lithuanians know that the war isnt going their way and they are asking for peace."
+	picture = "constitutional"
+
+	option = {
+		name = "Excellent!"
+		ai_chance = {
+			factor = 80
+			modifier = { factor = 1.25 LIT = { lost_national = 75 } }
+		}
+		any_country = {
+			limit = { alliance_with = THIS }
+			end_war = LIT
+		}
+		any_country = {
+			limit = { alliance_with = LIT }
+			end_war = THIS
+		}
+		any_owned = {
+			limit = {
+				is_core = LIT
+			}
+			remove_core = LIT
+		}
+		war_exhaustion = -2		# The people love victories!
+		popularity = 5
+	}
+	option = {
+		name = "Let's revive the Commonwealth!"
+		ai_chance = {
+			factor = 20
+			modifier = { factor = 0.0 LIT = { lost_national = 75 } }
+		}
+		threat = { who = all value = 5 }
+		LIT = { country_event = 2363 }
+	}
+}
+
+# Lithuanian response
+country_event = {
+	
+	id = 2363
+
+	is_triggered_only = yes
+	
+	title = "Poland declined our offer!"
+	desc = "We are practically screwed!"
+	picture = "constitutional"
+
+	option = {
+		name = "We will fight to the last man!"
+		national_unity = 40
+	}
+}

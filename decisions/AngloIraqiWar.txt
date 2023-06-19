@@ -1,0 +1,42 @@
+diplomatic_decisions = {
+
+	anglo_iraqi_war = {
+		major = yes
+		potential = {
+			tag = ENG
+			war_with = GER
+			IRQ = { has_country_flag = "break_away_from_the_uk" }
+			not = { has_country_flag = "dow_iraq" }
+			not = { war_with = IRQ }
+			IRQ = {
+				not = { faction = THIS }
+				not = { alliance_with = THIS }
+				not = { vassal_of = THIS }
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = "dow_iraq"
+			any_country = {		# Puppetize Kuwait, if they are independent.
+				limit = {
+					tag = KWT
+					is_subject = no
+					alliance_with = THIS
+				}
+				country_event = 1855
+			}
+			# Iraq will DoW the UK, because otherwise they would bring the entire Axis!
+			IRQ = {
+				war = {
+					target = ENG
+					attacker_goal = { casus_belli = concede_defeat }
+					defender_goal = { casus_belli = puppet }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

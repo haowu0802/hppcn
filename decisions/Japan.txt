@@ -1,0 +1,452 @@
+##########
+# Japan  #
+##########
+diplomatic_decisions = {
+
+	# Marco Polo Bridge Incident
+	marco_polo_bridge_incident = {
+		major = yes
+		potential = {
+			tag = JAP
+			not = { has_country_flag = "the_marco_polo_bridge_incident" }
+			exists = CHI
+			not = { war_with = CHI }
+			not = { alliance_with = CHI }
+			not = { CHI = { faction = THIS } }
+			is_subject = no
+			CHI = {
+				not = { alliance_with = SOV }
+				not = { alliance_with = USA }
+				not = { alliance_with = ENG }
+				not = { vassal_of = JAP }
+			}
+			year = 1937
+			CHI = { controls = 4979 }	# Beiping.
+		}
+		allow = {
+			ideology_group = fascism
+			date = 1937.3.1
+		}
+		effect = {
+			set_country_flag = "the_marco_polo_bridge_incident"
+			remove_country_modifier = "necessery_nerf_for_democracies"
+			change_variable = { which = "jap_army_navy_struggle" value = -1 }
+			dissent = -10
+			neutrality = -5
+			relation = { who = USA value = -10 }
+			relation = { who = ENG value = -10 }
+			relation = { who = SOV value = -10 }
+			relation = { who = CYN value = -50 }
+			relation = { who = CSX value = -50 }
+			relation = { who = CGX value = -50 }
+			relation = { who = CXB value = -50 }
+			relation = { who = SIK value = -50 }
+			threat = { who = CHC value = 15 }
+			CHI = { country_event = 1701 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Japan demands bases in French Indochine
+	japan_demands_bases_in_indochine = {
+		major = yes
+		potential = {
+			not = { has_country_flag = "japan_demands_bases_in_indochina" }
+			exists = VIC
+			exists = IDC
+			IDC = { vassal_of = VIC }
+			tag = JAP
+		}
+		allow = {
+			not = { war_with = IDC }
+			not = { war_with = VIC }
+			faction = axis
+		}
+		effect = {
+			set_country_flag = "japan_demands_bases_in_indochina"
+			change_variable = { which = "jap_army_navy_struggle" value = +1 }
+			relation = { who = VIC value = -10 }
+			relation = { who = USA value = -15 }
+			relation = { who = CGX value = -25 }
+			relation = { who = CYN value = -20 }
+			threat = { who = VIC value = 5 }
+			threat = { who = USA value = 5 }
+			neutrality = -5
+			VIC = { country_event = 1801 }
+			USA = { country_event = 1802 }
+			set_country_flag = "indochine_to_japan"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# China demands bases in French Indochine
+	china_demands_bases_in_indochine = {
+		major = yes
+		potential = {
+			not = { has_country_flag = "china_demands_bases_in_indochina" }
+			exists = VIC
+			exists = IDC
+			IDC = { vassal_of = VIC }
+			tag = CHI
+		}
+		allow = {
+			not = { war_with = IDC }
+			not = { war_with = VIC }
+			faction = axis
+		}
+		effect = {
+			set_country_flag = "china_demands_bases_in_indochina"
+			relation = { who = VIC value = -10 }
+			relation = { who = USA value = -15 }
+			threat = { who = VIC value = 5 }
+			threat = { who = USA value = 5 }
+			neutrality = -5
+			VIC = { country_event = 1801 }
+			USA = { country_event = 1802 }
+			set_country_flag = "indochine_to_china"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Japan puts pressure on Siam
+	japan_puts_pressure_on_siam = {
+		major = yes
+		potential = {
+			tag = JAP
+			not = { has_country_flag = "japanese_pressure_on_siam" }
+			exists = SIA
+			has_country_flag = "indochine_to_japan"
+			or = {
+				IDC = { vassal_of = JAP }
+				french_indochine_region = { controlled_by = JAP }
+			}
+		}
+		allow = {
+			faction = axis
+			not = { war_with = SIA }
+		}
+		effect = {
+			set_country_flag = "japanese_pressure_on_siam"
+			relation = { who = SIA value = 5 }
+			neutrality = -3
+			threat = { who = SIA value = 5 }
+			SIA = { country_event = 2701 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# China puts pressure on Siam
+	china_puts_pressure_on_siam = {
+		major = yes
+		potential = {
+			tag = CHI
+			not = { has_country_flag = "chinese_pressure_on_siam" }
+			exists = SIA
+			has_country_flag = "indochine_to_china"
+			or = {
+				IDC = { vassal_of = CHI }
+				french_indochine_region = { controlled_by = CHI }
+			}
+		}
+		allow = {
+			faction = axis
+			not = { war_with = SIA }
+		}
+		effect = {
+			set_country_flag = "chinese_pressure_on_siam"
+			relation = { who = SIA value = 5 }
+			neutrality = -3
+			threat = { who = SIA value = 5 }
+			SIA = { country_event = 2701 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	give_chinese_territory_to_Jingwei = {
+		major = yes
+		potential = {
+			tag = JAP
+			exists = NJG
+			exists = MAN
+			any_owned_province = {
+				or = {
+					is_core = CHI
+					is_core = CHC
+					is_core = CSX
+					is_core = CGX
+					is_core = CYN
+					is_core = SIK
+					is_core = TIB
+				}
+				not = { is_core = THIS }
+			}
+			not = { war_with = NJG }
+			NJG = { vassal_of = THIS }
+		}
+		allow = {
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					or = {
+						is_core = CHI
+						is_core = CHC
+						is_core = CSX
+						is_core = CGX
+						is_core = CYN
+						is_core = SIK
+						is_core = TIB
+					}
+					not = { is_core = THIS }
+				}
+				secede_province = NJG
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	give_chinese_territory_and_manchuria_to_Jingwei = {
+		major = yes
+		potential = {
+			tag = JAP
+			exists = NJG
+			not = { exists = MAN }
+			any_owned_province = {
+				or = {
+					is_core = CHI
+					is_core = CHC
+					is_core = CSX
+					is_core = CGX
+					is_core = CYN
+					is_core = SIK
+					is_core = TIB
+					is_core = MAN
+				}
+				not = { is_core = THIS }
+			}
+			not = { war_with = NJG }
+			NJG = { vassal_of = THIS }
+		}
+		allow = {
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					or = {
+						is_core = CHI
+						is_core = CHC
+						is_core = CSX
+						is_core = CGX
+						is_core = CYN
+						is_core = SIK
+						is_core = TIB
+					}
+					not = { is_core = THIS }
+				}
+				secede_province = NJG
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	recognition_of_mangukuo = {
+		major = yes
+		potential = {
+			tag = JAP
+			exists = CHI
+			not = { CHI = { faction = axis } }
+			war_with = CHI
+			not = { CHI = { vassal_of = JAP } }
+			not = { has_country_flag = "recognition_of_mangukuo" }
+		}
+		allow = {
+			exists = MAN
+			MAN = { vassal_of = JAP }
+			relation = { who = GER value = 50 }
+			date = 1938.3.1
+			has_country_flag = "anti_comintern"
+		}
+		effect = {
+			set_country_flag = "recognition_of_mangukuo"
+			GER = { country_event = 2710 }
+		}
+		ai_will_do = {
+			factor = 1
+		}		
+	}
+
+	negotiated_peace_with_china = {
+		major = yes
+		potential = {
+			tag = JAP
+			war_with = CHI
+			CHI = { total_ic = 100 }
+			or = {
+				not = { exists = MAN }			# Mangukuo is done
+				not = { MAN = { vassal_of = JAP } }
+			}
+			or = {
+				not = { exists = MEN }			# Mengukuo is done
+				not = { MEN = { vassal_of = JAP } }
+			}
+			not = { CHI = { vassal_of = JAP } }		# China is free
+			
+			not = { korea_region = { controlled_by = JAP } }	# Korea is done
+			CHI = {
+				not = {
+					any_owned_province = {
+						controlled_by = JAP
+					}
+				}
+			}
+			not = { has_country_flag = "offer_peace_to_china" }
+		}		
+		allow = {
+			not = { nippon_region = { not = { controlled_by = JAP } } }
+		}
+		effect = {
+			set_country_flag = "offer_peace_to_china"
+			CHI = { country_event = 2720 }
+			leave_faction = axis
+			leave_faction = allies
+			leave_faction = comintern
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	negotiated_peace_with_chc = {
+		major = yes
+		potential = {
+			tag = JAP
+			war_with = CHC
+			CHI = { total_ic = 100 }
+			or = {
+				not = { exists = MAN }			# Mangukuo is done
+				not = { MAN = { vassal_of = JAP } }
+			}
+			or = {
+				not = { exists = MEN }			# Mengukuo is done
+				not = { MEN = { vassal_of = JAP } }
+			}
+			not = { CHC = { vassal_of = JAP } }		# China is free
+			
+			not = { korea_region = { controlled_by = JAP } }	# Korea is done
+			CHC = {
+				not = {
+					any_owned_province = {
+						controlled_by = JAP
+					}
+				}
+			}
+			not = { has_country_flag = "offer_peace_to_china" }
+		}		
+		allow = {
+			not = { nippon_region = { not = { controlled_by = JAP } } }
+		}
+		effect = {
+			set_country_flag = "offer_peace_to_china"
+			CHC = { country_event = 2720 }
+			leave_faction = axis
+			leave_faction = allies
+			leave_faction = comintern
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	negotiated_peace_with_ussr = {
+		major = yes
+		potential = {
+			tag = JAP
+			war_with = SOV
+			or = {
+				not = { exists = MAN }			# Mangukuo is done
+				not = { MAN = { vassal_of = JAP } }
+			}
+			or = {
+				not = { exists = MEN }			# Mengukuo is done
+				not = { MEN = { vassal_of = JAP } }
+			}
+			not = { CHI = { vassal_of = JAP } }		# China is free
+			
+			not = { korea_region = { controlled_by = JAP } }	# Korea is done
+
+			SOV = {
+				not = {
+					any_owned_province = {
+						controlled_by = JAP
+					}
+				}
+			}
+			not = { has_country_flag = "offer_peace_to_ussr" }
+		}
+		allow = {
+			not = { nippon_region = { not = { controlled_by = JAP } } }
+		}
+		effect = {
+			set_country_flag = "offer_peace_to_ussr"
+			SOV = { country_event = 2720 }
+			leave_faction = axis
+			leave_faction = allies
+			leave_faction = comintern
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# AI-only decision to store fuel in reserve so Japan won't use it all up while still only at war with China...
+	# The trigger based on fuel has to be in the AI script because there's no event trigger for that.
+	store_fuel = {
+		potential = {
+			tag = JAP
+			war = no
+			ai = yes
+		}
+		allow = {
+			not = { check_variable = { which = "stored_fuel_in_japan" value = 10 } }
+		}
+		effect = {
+			fuel = -5000
+			change_variable = { which = "stored_fuel_in_japan" value = 1 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	restore_fuel = {
+		potential = {
+			tag = JAP
+			ai = yes
+		}
+		allow = {
+			check_variable = { which = "stored_fuel_in_japan" value = 1 }
+		}
+		effect = {
+			fuel = 5000
+			change_variable = { which = "stored_fuel_in_japan" value = -1 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,535 @@
+country_event = {
+
+	id = 1951
+	
+	major = yes
+
+	trigger = {
+		tag = GER
+		
+		head_of_state = 1		# Hitler is Head of State
+		
+		not = { has_country_flag = "7_removed" }
+		
+		not = { has_country_flag = "20_july_plot" }
+		
+		war_with = SOV
+		war_with = ENG
+		war_with = USA
+		war_exhaustion = 5
+		not = { national_unity = 85 }
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+		
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.8 war_exhaustion = 7 }
+		modifier = { factor = 0.7 war_exhaustion = 8 }
+		modifier = { factor = 0.5 war_exhaustion = 9 }
+		modifier = { factor = 0.3 war_exhaustion = 10 }
+		
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.8 dissent = 5 }
+		modifier = { factor = 0.6 dissent = 10 }
+		modifier = { factor = 0.5 dissent = 15 }
+		modifier = { factor = 0.1 dissent = 20 }
+	}
+	
+	title = "The 20th July Plot"
+	desc = "20_july_plot_desc"
+	picture = "wolfs_lair"
+	
+	option = {
+		name = "Oh, my..."
+		set_country_flag = "20_july_plot"
+		random_list = {
+			50 = { country_event = 1952 }		# Successful attempt
+			50 = { country_event = 1953 }		# Failed attempt
+		}
+	}
+	
+}
+
+country_event = {
+
+	id = 1952
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "The Führer is dead!"
+	desc = "The assassination attempt on Hitler's life was successful, the leader of the Third Reich lies dead. But it is still not over..."
+	picture = "hitler_dead"
+	
+	option = {
+		name = "It was inevitable..."
+		national_socialist = { organisation = -25 }
+		
+		remove_minister = 1
+		set_country_flag = "1_removed"
+		
+		random_list = {
+			75 = { country_event = 1956 }		# Successful Coup
+			25 = { country_event = 1954	}		# Failed Coup, but Hitler is still dead
+		}
+		
+		# And now for the rest of the attendants...
+		
+		random = { chance = 75 remove_minister = 176 set_country_flag = "176_removed" kill_leader = 154 } 	# Keitel
+		random = { chance = 75 remove_minister = 156 set_country_flag = "156_removed" kill_leader = 149 } 	# Jodl
+		random = { chance = 75 kill_leader = 154 } 															# Warlimont
+		random = { chance = 75 kill_leader = 498 } 															# Fegelein
+		random = { chance = 75 kill_leader = 422 } 															# Puttkamer
+		random = { chance = 75 kill_leader = 594 } 															# Buhle
+		random = { chance = 75 kill_leader = 427 } 															# Bodenschatz
+	}
+
+}
+
+country_event = {
+
+	id = 1953
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "A special providence..."
+	desc = "It seems that the Führer is protected by some kind of special providence and any attempt on his life is doomed to failure. He just survived a bomb destroying an entire room."
+	picture = "hitler_assassination"
+	
+	option = {
+		name = "The Führer can't be killed!"
+		
+		national_socialist = { organisation = 10 }
+		
+		random_list = {
+			1 = { country_event = 1956 }		# Successful Coup
+			99 = { country_event = 1955 }		# Failed Coup
+		}
+		
+		# And now for the rest of the attendants...
+		# If Hitler is spared, the rest will have a much lower chance of being injured as well.
+		
+		random = { chance = 10 remove_minister = 176 set_country_flag = "176_removed" kill_leader = 154 } 	# Keitel
+		random = { chance = 10 remove_minister = 156 set_country_flag = "156_removed" kill_leader = 149 } 	# Jodl
+		random = { chance = 10 kill_leader = 154 } 															# Warlimont
+		random = { chance = 10 kill_leader = 498 } 															# Fegelein
+		random = { chance = 10 kill_leader = 422 } 															# Puttkamer
+		random = { chance = 10 kill_leader = 594 } 															# Buhle
+		random = { chance = 10 kill_leader = 427 } 															# Bodenschatz
+	}
+
+}
+
+# Hitler is dead
+
+country_event = {
+
+	id = 1954
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "A failed coup attempt"
+	desc = "The failure of the coup attempt after the assassination of Hitler doesn't change the fact that the Führer is dead. We can't let the conspirators get away with this!"
+	picture = "20_july_plot_defeated"
+
+	option = {
+		name = "Göring forms a new cabinet"
+		ai_chance = { factor = 100 }
+		head_of_state = 10
+		country_event = 1957	# Kill the traitors!
+	}
+	
+	option = {
+		name = "Raeder forms a new cabinet"
+		ai_chance = { factor = 0 }
+		head_of_state = 9
+		country_event = 1957	# Kill the traitors!
+	}
+
+}
+
+# Hitler survived
+
+country_event = {
+
+	id = 1955
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "A failed coup attempt"
+	desc = "The Führer is still alive and the conspirators are all apprehanded. We should execute them all right away!"
+	picture = "20_july_plot_defeated"
+
+	option = {
+		name = "Kill the traitors!"
+		ai_chance = { factor = 100 }
+		organisation = 15
+		national_unity = 10
+		country_event = 1957	# Kill the traitors!
+	}
+	
+	option = {
+		name = "We might still need them..."
+		ai_chance = { factor = 0 }
+		organisation = -10
+		dissent = -1
+		national_unity = -5
+	}
+
+}
+
+# The coup is successful
+
+country_event = {
+
+	id = 1956
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "Operation Valkyrie"
+	desc = "operation_valkyrie_desc"
+	picture = "beck"
+
+	option = {
+		name = "This is our chance for peace!"
+		government = germanic_fascist_republic
+		
+		# I would change the ruling party, but unfortunately I can't :(
+		
+		paternal_autocrat = { organisation = 15 popularity = 20 }
+		national_socialist = { organisation = -30 popularity = -10 }
+		
+		head_of_state = 7
+		head_of_government = 48
+		foreign_minister = 69
+		armament_minister = 96
+		minister_of_security = 125
+		minister_of_intelligence = 124
+		chief_of_staff = 157
+		chief_of_army = 162
+		chief_of_air = 206		# I have no better option I'm afraid...
+		chief_of_navy = 234
+		
+		
+		# Kill Hitler, if he isn't dead already!
+		remove_minister = 1
+		set_country_flag = "1_removed"
+		# Remove all the Nazis!
+		remove_minister = 2			# Hess
+		set_country_flag = "2_removed"
+		remove_minister = 4			# Blomberg
+		kill_leader = 607
+		set_country_flag = "4_removed"
+		remove_minister = 5			# Frick
+		set_country_flag = "5_removed"
+		remove_minister = 9			# Raeder
+		kill_leader = 409
+		set_country_flag = "9_removed"
+		remove_minister = 32		# Dönitz
+		kill_leader = 389
+		set_country_flag = "32_removed"
+		remove_minister = 10		# Göring
+		kill_leader = 440
+		set_country_flag = "10_removed"
+		remove_minister = 42		# Borman
+		set_country_flag = "42_removed"
+		remove_minister = 55		# Ribbentrop
+		set_country_flag = "55_removed"
+		remove_minister = 57		# Rosenberg
+		set_country_flag = "57_removed"
+		remove_minister = 58		# Seyss-Inquart
+		set_country_flag = "58_removed"
+		remove_minister = 78		# Flick
+		set_country_flag = "78_removed"
+		remove_minister = 80		# Funk
+		set_country_flag = "80_removed"
+		remove_minister = 81		# Darré
+		set_country_flag = "81_removed"
+		remove_minister = 82		# Daluege
+		set_country_flag = "82_removed"
+		remove_minister = 83		# Amman
+		set_country_flag = "83_removed"
+		remove_minister = 84		# Xavier-Schwartz
+		set_country_flag = "84_removed"
+		remove_minister = 87		# Pohl
+		set_country_flag = "87_removed"
+		remove_minister = 88		# Ley
+		set_country_flag = "88_removed"
+		remove_minister = 89		# Saur
+		set_country_flag = "89_removed"
+		remove_minister = 93		# Friedeburg
+		kill_leader = 421
+		set_country_flag = "93_removed"
+		remove_minister = 108		# Himmler
+		set_country_flag = "108_removed"
+		remove_minister = 109		# Lutze
+		set_country_flag = "109_removed"
+		remove_minister = 111		# Müller
+		set_country_flag = "111_removed"
+		remove_minister = 113		# Hanke
+		set_country_flag = "113_removed"
+		remove_minister = 114		# Thierack
+		set_country_flag = "114_removed"
+		remove_minister = 138		# Kaltenbrunner
+		set_country_flag = "138_removed"
+		remove_minister = 153		# Paulus
+		kill_leader = 215
+		set_country_flag = "153_removed"
+		remove_minister = 156		# Jodl
+		kill_leader = 149
+		set_country_flag = "156_removed"
+		remove_minister = 158		# Krebs
+		kill_leader = 170
+		set_country_flag = "158_removed"
+		remove_minister = 176		# Keitel
+		kill_leader = 154
+		set_country_flag = "176_removed"
+		remove_minister = 178		# Schörner
+		kill_leader = 249
+		set_country_flag = "178_removed"
+		remove_minister = 194		# Freiwald
+		kill_leader = 391
+		set_country_flag = "194_removed"
+		remove_minister = 203		# Sperrle
+		kill_leader = 470
+		set_country_flag = "203_removed"
+		remove_minister = 204		# von Greim
+		kill_leader = 475
+		set_country_flag = "204_removed"
+		remove_minister = 214		# von Epp
+		set_country_flag = "214_removed"
+		remove_minister = 216		# Lammers
+		set_country_flag = "216_removed"
+		remove_minister = 217		# Kritzinger
+		set_country_flag = "217_removed"
+		remove_minister = 220		# Seldte
+		set_country_flag = "220_removed"
+		remove_minister = 221		# Hierl
+		set_country_flag = "221_removed"
+		remove_minister = 226		# Buch
+		set_country_flag = "226_removed"
+		remove_minister = 228		# Freisler
+		set_country_flag = "228_removed"
+		remove_minister = 230		# Busch
+		kill_leader = 33
+		set_country_flag = "230_removed"
+		remove_minister = 232		# Hausser
+		kill_leader = 503
+		set_country_flag = "232_removed"
+		remove_minister = 233		# Marschall
+		kill_leader = 407
+		set_country_flag = "233_removed"
+		remove_minister = 235		# Dessloch
+		kill_leader = 434
+		set_country_flag = "235_removed"
+		remove_minister = 237		# Stumpff
+		kill_leader = 471
+		set_country_flag = "237_removed"
+		remove_minister = 238		# von Reichenau
+		kill_leader = 334
+		set_country_flag = "238_removed"
+		remove_minister = 241		# Krosigk
+		set_country_flag = "241_removed"
+		remove_minister = 242		# Giesler
+		set_country_flag = "242_removed"
+		remove_minister = 243		# Neumann
+		set_country_flag = "243_removed"
+		remove_minister = 244		# Heydrich
+		set_country_flag = "244_removed"
+		remove_minister = 246		# Goebbels
+		set_country_flag = "246_removed"
+		remove_minister = 252		# Saukel
+		set_country_flag = "252_removed"
+		
+		threat = { who = all value = -50 }
+		
+		ENG = { country_event = 1958 }	# Send a peace-offer to the Allies!
+	}
+	
+	option = {
+		name = "Only remove the hardliner Nazis. We can still win the war!"
+		
+		paternal_autocrat = { organisation = 5 popularity = 10 }
+		national_socialist = { organisation = -10 popularity = -5 }
+		
+		head_of_state = 7
+		head_of_government = 48
+		foreign_minister = 69
+		armament_minister = 96
+		minister_of_security = 125
+		minister_of_intelligence = 124
+		chief_of_staff = 157
+		chief_of_army = 162
+		chief_of_air = 206		# I have no better option I'm afraid...
+		chief_of_navy = 234
+		
+		
+		# Kill Hitler, if he isn't dead already!
+		remove_minister = 1
+		set_country_flag = "1_removed"
+		# Remove the hardliner Nazis only!
+		remove_minister = 2			# Hess
+		set_country_flag = "2_removed"
+		remove_minister = 10		# Göring
+		set_country_flag = "10_removed"
+		remove_minister = 42		# Borman
+		set_country_flag = "42_removed"
+		remove_minister = 55		# Ribbentrop
+		set_country_flag = "55_removed"
+		remove_minister = 57		# Rosenberg
+		set_country_flag = "57_removed"
+		remove_minister = 108		# Himmler
+		set_country_flag = "108_removed"
+		remove_minister = 246		# Goebbels
+		set_country_flag = "246_removed"
+		
+		threat = { who = all value = -25 }
+	}
+
+}
+
+country_event = {
+
+	id = 1957
+	
+	is_triggered_only = yes
+	
+	title = "Kill the traitors"
+	desc = "After the failed assassination and coup attempt, some of the people involved commited suicide, but later on hundreds of the supposed conspirators were executed."
+	picture = "20_july_plot_defeated"
+	
+	option = {
+		name = "That will teach 'em!"
+		dissent = 5
+		
+		remove_minister = 6			# Canaris
+		set_country_flag = "6_removed"
+		remove_minister = 7			# Beck
+		set_country_flag = "7_removed"
+		remove_minister = 48		# Goerdeler
+		set_country_flag = "48_removed"
+		remove_minister = 102		# von Stauffenberg
+		set_country_flag = "102_removed"
+		remove_minister = 165		# Rommel
+		kill_leader = 230
+		set_country_flag = "165_removed"
+		remove_minister = 170		# Speidels
+		kill_leader = 254
+		set_country_flag = "170_removed"
+		remove_minister = 248		# Dohnnanyi
+		set_country_flag = "248_removed"
+		
+		kill_leader = 78			# Fromm
+		kill_leader = 212			# Olbricht
+		kill_leader = 293			# von Falkenhausen
+		kill_leader = 354			# von Witzleben
+		kill_leader = 695			# Fellgiebel
+		kill_leader = 818			# von Hase
+		kill_leader = 832			# von Rabenau
+		
+	}
+
+}
+
+country_event = {
+
+	id = 1958
+	
+	is_triggered_only = yes
+	
+	title = "Peace offer from Germany"
+	desc = "Hitler is dead. A new government has formed in Germany, and they sent us a proposal for a Peace Agreement. It involves returning to pre-war borders with the Allies and a dissolution of the Axis."
+	picture = "beck"
+	
+	option = {
+		name = "They are becoming desperate! Good."
+		ai_chance = { factor = 50 }
+		FROM = { country_event = 1959 }		# No deal.
+	}
+	
+	option = {
+		name = "We should consider this!"
+		ai_chance = { factor = 50 }
+		end_war = GER
+		any_country = {
+			limit = { faction = allies }
+			end_war = GER
+			country_event = 1961
+		}
+		FROM = { country_event = 1960 }
+	}
+
+}
+
+country_event = {
+
+	id = 1959
+	
+	is_triggered_only = yes
+	
+	title = "The Allies declined"
+	desc = ""
+	picture = "beck"
+	
+	option = {
+		name = "We are doomed..."
+	}
+
+}
+
+country_event = {
+
+	id = 1960
+	
+	is_triggered_only = yes
+	
+	title = "The Allies accepted"
+	desc = "The Allied powers accepted our proposal for a Peace Agreement! That's one less front to worry about!"
+	picture = "beck"
+	
+	option = {
+		name = "That's a relief!"
+		any_country = {
+			leave_faction = axis
+			leave_alliance = GER
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 1961
+	
+	is_triggered_only = yes
+	
+	title = "Germany is defeated!"
+	desc = "After Hitler's death, the Allied majors sat down with the new German government and negotiated a return to the pre-war borders. The war is over!"
+	picture = "beck"
+	
+	option = {
+		name = "Finally!"
+		war_exhaustion = -5
+		dissent = -10
+		form_government_in_exile = no
+		GER = {
+			any_owned = {
+				limit = { is_core = THIS }
+				secede_province = THIS
+			}
+			end_war = THIS
+		}
+	}
+
+}

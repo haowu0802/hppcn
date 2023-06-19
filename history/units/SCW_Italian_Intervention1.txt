@@ -1,0 +1,13 @@
+corps = {
+	name = "Corpo Truppe Volontarie"
+	location = 3610
+	regiment = { type = hq_brigade name = "Corpo Truppe Volontarie" historical_model = 0 }
+	division = {
+		name = "1st CCNN Division 'Dio lo Vuole'"
+		location = 3610
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "1. Grupo de Banderas" builder = "ITA" historical_model = 3 }
+		regiment = { type = infantry_brigade name = "2. Grupo de Banderas" builder = "ITA" historical_model = 3 }
+		regiment = { type = infantry_brigade name = "3. Grupo de Banderas" builder = "ITA" historical_model = 3 }
+	}
+}

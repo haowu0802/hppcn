@@ -1,0 +1,68 @@
+#####################################################
+### Most events here are from You Forgot Poland Mod
+### Modified by RangerPL for HPP
+### Credit to Halibutt for original events
+#####################################################
+
+# Event to change Polish ministers
+country_event = {
+	
+	id = 2351
+
+	trigger = {
+		tag = POL
+		not = { has_country_flag = "sanacja_reconstruction" }
+		year = 1936
+		month = 5
+		head_of_government = 13002 # Zyndram-Koscialkowski
+	}
+
+	mean_time_to_happen =  {
+		days = 5
+	}
+	
+	title = "Government reconstruction"
+	desc = "polgovtchange_desc"
+	picture = "POL_zyndram"
+
+	option = {
+		name = "Appoint Slawoj-Skladkowski!"			# Historical choice
+		ai_chance = { factor = 90 }
+		set_country_flag = "sanacja_reconstruction"
+		head_of_government = 13041 			# Slawoj-Skladkowski
+		foreign_minister = 13003 			# Beck
+		armament_minister = 13052 			# Kwiatkowski
+		minister_of_security = 13002 		# Zyndram-Koscialkowski
+		minister_of_intelligence = 13006 	# Pelczynski
+		chief_of_staff = 13115 				# Stachiewicz
+		chief_of_army = 13007 				# Rydz-Smigly
+		chief_of_navy = 13130 				# Unrug
+		chief_of_air = 13134 				# Rayski
+		organisation = 5					# This would reduce fighting within the government
+		popularity = -5						# But it would also alienate followers of Slawek
+		neutrality = -2						# Militarists gain more power
+	}
+	
+	option = {
+		name = "Appoint Walery Slawek!"					# Ahistorical choice
+		ai_chance = { factor = 8 } 
+		set_country_flag = "sanacja_reconstruction"
+		head_of_government = 13040 						# Slawek
+		foreign_minister = 13058 						# Zaleski
+		armament_minister = 13082 						# Koc
+		minister_of_security = 13144 					# Jedrzejewicz
+		minister_of_intelligence = 13006 				# Pelczynski
+		chief_of_staff = 13173 							# Klimecki
+		organisation = -5								# Increased fighting within the government
+		popularity = 5									# Followers of Slawek aren't alienated
+		neutrality = 2									# Militarists lose power
+
+	}	
+		
+	option = {
+		name = "Leave my ministers in peace, will you?"		# I'm fine with my ministers
+		set_country_flag = "sanacja_reconstruction"
+		ai_chance = { factor = 2 }
+		organisation = -2 									# You didn't get rid of the opposing faction completely!
+	}
+}

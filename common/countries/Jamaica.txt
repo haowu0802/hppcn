@@ -1,0 +1,456 @@
+color = { 250  200  0 }
+graphical_culture = Generic
+
+
+
+default_templates = {
+	generic_infantry = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	generic_milita = {
+		militia_brigade
+		militia_brigade
+		militia_brigade
+	}
+	generic_armoured = {
+		armor_brigade
+		motorized_brigade
+		motorized_brigade
+	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
+	generic_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
+	}	
+}
+
+
+
+unit_names = {
+	infantry_brigade = {
+		"Household Division" "Kingston Division" "1st Jamaican Infantry Div." "2nd Jamaican Infantry Div." "3rd Jamaican Infantry Div." "4th Jamaican Infantry Div." "5th Jamaican Infantry Div." "6th Jamaican Infantry Div." "7th Jamaican Infantry Div." "8th Jamaican Infantry Div." "9th Jamaican Infantry Div." 
+		"10th Jamaican Infantry Div." "11th Jamaican Infantry Div." "12th Jamaican Infantry Div." "13th Jamaican Infantry Div." "14th Jamaican Infantry Div." "15th Jamaican Infantry Div." "16th Jamaican Infantry Div." "17th Jamaican Infantry Div." "18th Jamaican Infantry Div." "19th Jamaican Infantry Div." "20th Jamaican Infantry Div." 
+			}
+	cavalry_brigade = {
+		"1st Jamaican Cavalry Div." "2nd Jamaican Cavalry Div." "3rd Jamaican Cavalry Div." "4th Jamaican Cavalry Div." "5th Jamaican Cavalry Div." "6th Jamaican Cavalry Div." "7th Jamaican Cavalry Div." "8th Jamaican Cavalry Div." "9th Jamaican Cavalry Div." "10th Jamaican Cavalry Div." 
+	}
+	motorized_brigade = {
+		"1st Jamaican Motorized Div." "2nd Jamaican Motorized Div." "3rd Jamaican Motorized Div." "4th Jamaican Motorized Div." "5th Jamaican Motorized Div." "6th Jamaican Motorized Div." "7th Jamaican Motorized Div." "8th Jamaican Motorized Div." "9th Jamaican Motorized Div." "10th Jamaican Motorized Div." 
+	}
+	mechanized_brigade = {
+		"1st Jamaican Mechanized Div." "2nd Jamaican Mechanized Div." "3rd Jamaican Mechanized Div." "4th Jamaican Mechanized Div." "5th Jamaican Mechanized Div." "6th Jamaican Mechanized Div." "7th Jamaican Mechanized Div." "8th Jamaican Mechanized Div." "9th Jamaican Mechanized Div." "10th Jamaican Mechanized Div." 
+	}
+	light_armor_brigade = {
+		"1st Jamaican Armoured Div." "2nd Jamaican Armoured Div." "3rd Jamaican Armoured Div." "4th Jamaican Armoured Div." "5th Jamaican Armoured Div." "6th Jamaican Armoured Div." "7th Jamaican Armoured Div." "8th Jamaican Armoured Div." "9th Jamaican Armoured Div." "10th Jamaican Armoured Div." "11th Jamaican Armoured Div." 
+		"12th Jamaican Armoured Div." "14th Jamaican Armoured Div." "15th Jamaican Armoured Div." 
+	}
+	armor_brigade = {
+		"1st Jamaican Armoured Div." "2nd Jamaican Armoured Div." "3rd Jamaican Armoured Div." "4th Jamaican Armoured Div." "5th Jamaican Armoured Div." "6th Jamaican Armoured Div." "7th Jamaican Armoured Div." "8th Jamaican Armoured Div." "9th Jamaican Armoured Div." "10th Jamaican Armoured Div." "11th Jamaican Armoured Div." 
+		"12th Jamaican Armoured Div." "14th Jamaican Armoured Div." "15th Jamaican Armoured Div." 
+	}
+	paratrooper_brigade = {
+		"1st Jamaican Airborne Div." "2nd Jamaican Airborne Div." "3rd Jamaican Airborne Div." "4th Jamaican Airborne Div." "5th Jamaican Airborne Div." "6th Jamaican Airborne Div." "7th Jamaican Airborne Div." "8th Jamaican Airborne Div." "9th Jamaican Airborne Div." "10th Jamaican Airborne Div." 
+	}
+	marine_brigade = {
+		"1st Jamaican Marine Div." "2nd Jamaican Marine Div." "3rd Jamaican Marine Div." "4th Jamaican Marine Div." "5th Jamaican Marine Div." "6th Jamaican Marine Div." "7th Jamaican Marine Div." "8th Jamaican Marine Div." "9th Jamaican Marine Div." "10th Jamaican Marine Div." 
+	}
+	bergsjaeger_brigade = {
+		"1st Mountain Division" "2nd Mountain Division" "3rd Mountain Division" "4th Mountain Division" "5th Mountain Division" "8th Mountain Division" "10th Mountain Division" "11th Mountain Division" "12th Mountain Division" 
+	}
+	garrison_brigade = {
+		"1st Jamaican Garrison Div." "2nd Jamaican Garrison Div." "3rd Jamaican Garrison Div." "4th Jamaican Garrison Div." "5th Jamaican Garrison Div." "6th Jamaican Garrison Div." "7th Jamaican Garrison Div." "8th Jamaican Garrison Div." "9th Jamaican Garrison Div." "10th Jamaican Garrison Div." "11th Jamaican Garrison Div." 
+		"12th Jamaican Garrison Div." "13th Jamaican Garrison Div." "14th Jamaican Garrison Div." "15th Jamaican Garrison Div." "16th Jamaican Garrison Div." 
+	}
+	hq_brigade = {
+		"1st Army" "2nd Army" "3rd Army" "4th Army" "5th Army" "6th Army" "7th Army" "8th Army" "9th Army" "10th Army" "15th Army" 
+			}
+	militia_brigade = {
+		"1st Jamaican Militia Div." "2nd Jamaican Militia Div." "3rd Jamaican Militia Div." "4th Jamaican Militia Div." "5th Jamaican Militia Div." "6th Jamaican Militia Div." "7th Jamaican Militia Div." "8th Jamaican Militia Div." "9th Jamaican Militia Div." "10th Jamaican Militia Div." "11th Jamaican Militia Div." 
+		"12th Jamaican Militia Div." "13th Jamaican Militia Div." "14th Jamaican Militia Div." "15th Jamaican Militia Div." "16th Jamaican Militia Div." "17th Jamaican Militia Div." "18th Jamaican Militia Div." "19th Jamaican Militia Div." "20th Jamaican Militia Div." "21st Jamaican Militia Div." "22nd Jamaican Militia Div." 
+		"23rd Jamaican Militia Div." "24th Jamaican Militia Div." "25th Jamaican Militia Div." "26th Jamaican Militia Div." "27th Jamaican Militia Div." "28th Jamaican Militia Div." "29th Jamaican Militia Div." "30th Jamaican Militia Div." 
+	}
+	multi_role = {
+		"No.1 Fighter Wing" "No.2 Fighter Wing" "No.3 Fighter Wing" "No.4 Fighter Wing" "No.5 Fighter Wing" "No.7 Fighter Wing" "No.8 Fighter Wing" "No.9 Fighter Wing" "No.10 Fighter Wing" 
+	}
+	interceptor = {
+		"No.1 Fighter Wing" "No.2 Fighter Wing" "No.3 Fighter Wing" "No.4 Fighter Wing" "No.5 Fighter Wing" "No.7 Fighter Wing" "No.8 Fighter Wing" "No.9 Fighter Wing" "No.10 Fighter Wing" 
+	}
+	jet_int = {
+		"No.1 Fighter Wing" "No.2 Fighter Wing" "No.3 Fighter Wing" "No.4 Fighter Wing" "No.5 Fighter Wing" "No.7 Fighter Wing" "No.8 Fighter Wing" "No.9 Fighter Wing" "No.10 Fighter Wing" 
+	}
+	jet_mr = {
+		"No.1 Fighter Wing" "No.2 Fighter Wing" "No.3 Fighter Wing" "No.4 Fighter Wing" "No.5 Fighter Wing" "No.7 Fighter Wing" "No.8 Fighter Wing" "No.9 Fighter Wing" "No.10 Fighter Wing" 
+	}
+	strategic_bomber = {
+		"No.1 Strategic Wing" "No.2 Strategic Wing" "No.6 Strategic Wing" "No.3 Strategic Wing" "No.4 Strategic Wing" "No.7 Strategic Wing" "No.8 Strategic Wing" "No.9 Strategic Wing" "No.10 Strategic Wing" 
+	}
+	tactical_bomber = {
+		"No.1 Tactical Bomb Wing" "No.2 Tactical Bomb Wing" "No.6 Tactical Bomb Wing" "No.3 Tactical Bomb Wing" "No.4 Tactical Bomb Wing" "No.7 Tactical Bomb Wing" "No.8 Tactical Bomb Wing" "No.9 Tactical Bomb Wing" "No.10 Tactical Bomb Wing" 
+	}
+	jet_bomber = {
+		"No.1 Tactical Bomb Wing" "No.2 Tactical Bomb Wing" "No.6 Tactical Bomb Wing" "No.3 Tactical Bomb Wing" "No.4 Tactical Bomb Wing" "No.7 Tactical Bomb Wing" "No.8 Tactical Bomb Wing" "No.9 Tactical Bomb Wing" "No.10 Tactical Bomb Wing" 
+	}
+	naval_bomber = {
+		"No.1 Naval Bomber Wing" "No.2 Naval Bomber Wing" "No.3 Naval Bomber Wing" "No.4 Naval Bomber Wing" "No.5 Naval Bomber Wing" "No.7 Naval Bomber Wing" "No.8 Naval Bomber Wing" "No.9 Naval Bomber Wing" "No.10 Naval Bomber Wing" "No.1 Torpedo Wing" "No.2 Torpedo Wing" 
+		"No.3 Torpedo Wing" "No.4 Torpedo Wing" "No.5 Torpedo Wing" "No.7 Torpedo Wing" "No.8 Torpedo Wing" "No.9 Torpedo Wing" "No.10 Torpedo Wing" 
+	}
+	cas = {
+		"No.1 Dive Bomber Wing" "No.2 Dive Bomber Wing" "No.6 Dive Bomber Wing" "No.3 Dive Bomber Wing" "No.4 Dive Bomber Wing" "No.7 Dive Bomber Wing" "No.8 Dive Bomber Wing" "No.9 Dive Bomber Wing" "No.10 Dive Bomber Wing" 
+	}
+	transport_plane = {
+		"No.1 Transport Wing" "No.2 Transport Wing" "No.3 Transport Wing" "No.4 Transport Wing" "No.5 Transport Wing" 
+	}
+	battleship = {
+		"Kington" "Portmore" 
+	}
+	light_cruiser = {
+		"Spanish Town" "Mandeville" "Ocho Ríos" "Port Antonio" "Negril" 
+	}
+	heavy_cruiser = {
+		"Montego Bay" "Port Royal" "St James" "St Catherine" "Discovery Bay" 
+	}
+	battlecruiser = {
+		"Freedom" "Caribbean" 
+	}
+	destroyer = {
+		"1st Destroyer Flotilla" "2nd Destroyer Flotilla" "3rd Destroyer Flotilla" "4th Destroyer Flotilla" "5th Destroyer Flotilla" "6th Destroyer Flotilla" "7th Destroyer Flotilla" "8th Destroyer Flotilla" "9th Destroyer Flotilla" "10th Destroyer Flotilla" 
+	}
+	carrier = {
+		"Jamaica" 
+	}
+	submarine = {
+		"1st Submarine Flotilla" "2nd Submarine Flotilla" "3rd Submarine Flotilla" "4th Submarine Flotilla" "5th Submarine Flotilla" "6th Submarine Flotilla" "7th Submarine Flotilla" "8th Submarine Flotilla" "9th Submarine Flotilla" "10th Submarine Flotilla" 
+	}
+	transport_ship = {
+		"1st Troop Transport Flotilla" "2nd Troop Transport Flotilla" "3rd Troop Transport Flotilla" "4th Troop Transport Flotilla" "5th Troop Transport Flotilla" "6th Troop Transport Flotilla" "7th Troop Transport Flotilla" "8th Troop Transport Flotilla" "9th Troop Transport Flotilla" "10th Troop Transport Flotilla" 
+	}
+
+}
+
+
+ministers = {
+	905250 = {
+	 name = "Marcus Garvey"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 head_of_state = die_hard_reformer
+	 chief_of_staff = school_of_manoeuvre
+	 chief_of_army = guns_and_butter_doctrine
+	 chief_of_navy = base_control_doctrine
+	 minister_of_security = silent_lawyer
+	 minister_of_intelligence = political_specialist
+	 chief_of_air = air_superiority_doctrine
+	 start_date = 1936.1.1
+	 picture = JAM_M_Marcus_Garvey
+}
+905251 = {
+	 name = "Amy Bailey"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 foreign_minister = biased_intellectual
+	 start_date = 1936.1.1
+	 picture = JAM_M_Amy_Bailey
+}
+905252 = {
+	 name = "Carlton Alexander"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 armament_minister = resource_industrialist
+	 start_date = 1936.1.1
+	 picture = JAM_M_Carlton_Alexander
+}
+905253 = {
+	 name = "Claude McKay"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 foreign_minister = biased_intellectual
+	 start_date = 1936.1.1
+	 picture = JAM_M_Claude_McKay
+}
+905254 = {
+	 name = "Donald Sangster"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 minister_of_security = efficient_sociopath
+	 start_date = 1943.1.1
+	 picture = JAM_M_Donald_Sangster
+}
+905255 = {
+	 name = "Florizel Augustus Glasspole"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 chief_of_staff = school_of_defence
+	 chief_of_army = guns_and_butter_doctrine
+	 start_date = 1936.1.1
+	 picture = JAM_M_Florizel_Augustus_Glasspole
+}
+905256 = {
+	 name = "Gladdys Maud Longbridge"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 minister_of_security = man_of_the_people
+	 start_date = 1942.1.1
+	 picture = JAM_M_Gladdys_Maud_Longbridge
+}
+905257 = {
+	 name = "Herbert George Duffus"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 head_of_government = political_protege
+	 start_date = 1936.1.1
+	 picture = JAM_M_Herbert_George_Duffus
+}
+905258 = {
+	 name = "Howard Cooke"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 head_of_government = silent_workhorse
+	 start_date = 1943.1.1
+	 picture = JAM_M_Howard_Cooke
+}
+905259 = {
+	 name = "Hugh Mackintosh Foot"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 foreign_minister = great_compromiser
+	 start_date = 1936.1.1
+	 picture = JAM_M_Hugh_Mackintosh_Foot
+}
+905260 = {
+	 name = "K.E. Ingram"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 foreign_minister = biased_intellectual
+	 start_date = 1936.1.1
+	 picture = JAM_M_KE_Ingram
+}
+905261 = {
+	 name = "Lawson Shearer"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 minister_of_security = efficient_sociopath
+	 start_date = 1947.1.1
+	 picture = JAM_M_Lawson_Shearer
+}
+905262 = {
+	 name = "Abraham Issa"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 armament_minister = administrative_genius
+	 start_date = 1936.1.1
+	 picture = JAM_M_Abraham_Issa
+}
+905263 = {
+	 name = "Michael Manley"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 chief_of_air = air_superiority_doctrine
+	 start_date = 1948.1.1
+	 picture = JAM_M_Michael_Manley
+}
+905264 = {
+	 name = "Norman Washington Manley"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 head_of_government = political_protege
+	 chief_of_staff = school_of_mass_combat
+	 start_date = 1936.1.1
+	 picture = JAM_M_Norman_Washington_Manley
+}
+905265 = {
+	 name = "Philip Sherlock"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 armament_minister = theoretical_scientist
+	 start_date = 1936.1.1
+	 picture = JAM_M_Philip_Sherlock
+}
+905266 = {
+	 name = "Reginald Stubbs"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 head_of_government = backroom_backstabber
+	 start_date = 1936.1.1
+	 picture = JAM_M_Reginald_Stubbs
+}
+905267 = {
+	 name = "Sir Alexander Bustamante"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 head_of_state = die_hard_reformer
+	 start_date = 1936.1.1
+	 picture = JAM_M_Sir_Alexander_Bustamante
+}
+905268 = {
+	 name = "Thomas Lecky"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 armament_minister = theoretical_scientist
+	 start_date = 1936.1.1
+	 picture = JAM_M_Thomas_Lecky
+}
+905269 = {
+	 name = "Walter Adolph Roberts"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 head_of_government = ambitious_union_boss
+	 start_date = 1936.1.1
+	 picture = JAM_M_Walter_Adolph_Roberts
+	}
+	# Generic dummy ministers
+	95452 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95453 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95454 = {
+		name = "Nameless Clerk"
+		ideology = paternal_autocrat
+		loyalty = 1.0
+		picture = MPaternalAutocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95455 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		foreign_minister = mostly_harmless
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95456 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95457 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95458 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95459 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95460 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}	
+}

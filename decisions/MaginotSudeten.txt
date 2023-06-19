@@ -1,0 +1,60 @@
+diplomatic_decisions = {
+	
+	destroying_the_maginot_line = {
+		potential = {
+			tag = GER
+			any_owned_province = {
+				is_core = FRA
+				land_fort = 10
+			}
+		}
+		allow = {
+			not = {
+				any_owned_province = {
+					is_core = FRA
+					land_fort = 10
+					not = { controlled_by = THIS }
+				}
+			}
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					is_core = FRA
+					land_fort = 10
+				}
+				land_fort = -9
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	destroying_the_sudeten_line = {
+		potential = {
+			tag = GER
+			sudetenland = { controlled_by = THIS }
+			any_owned_province = {
+				land_fort = 5
+				region = sudetenland
+			}
+		}
+		allow = {
+			not = { sudetenland = { not = { controlled_by = THIS } } }
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					region = sudetenland
+					land_fort = 5
+				}
+				land_fort = -4
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

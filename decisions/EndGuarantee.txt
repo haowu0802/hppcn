@@ -1,0 +1,2280 @@
+diplomatic_decisions = {
+
+	remove_guarantees_on = {
+		# Switch-decision to activate the rest
+		potential = {
+			not = { has_country_flag = "removing_guarantees" }
+			or = {
+				guarantee = GER guarantee = ENG guarantee = SOV guarantee = USA guarantee = JAP guarantee = FRA guarantee = ITA
+				guarantee = DEN guarantee = ICL guarantee = EST guarantee = FIN guarantee = LAT guarantee = LIT guarantee = NOR
+				guarantee = SWE guarantee = BEL guarantee = HOL guarantee = IRE guarantee = LUX guarantee = VIC guarantee = AUS
+				guarantee = CZE guarantee = CRO guarantee = DDR guarantee = DFR guarantee = HUN guarantee = POL guarantee = ROM
+				guarantee = SLO guarantee = SCH guarantee = POR guarantee = RSI guarantee = SPA guarantee = SPR guarantee = ALB
+				guarantee = BUL guarantee = GRE guarantee = YUG guarantee = AFG guarantee = IRQ guarantee = ISR guarantee = JOR
+				guarantee = LEB guarantee = OMN guarantee = PAL guarantee = PER guarantee = SAU guarantee = SYR guarantee = TUR
+				guarantee = YEM guarantee = BHU guarantee = IND guarantee = NEP guarantee = PAK guarantee = CGX guarantee = CHC
+				guarantee = CHI guarantee = CSX guarantee = CXB guarantee = CYN guarantee = KOR guarantee = MAN guarantee = MEN
+				guarantee = MON guarantee = PRK guarantee = SIK guarantee = TAN guarantee = TIB guarantee = IDC guarantee = INO
+				guarantee = PHL guarantee = SIA guarantee = EGY guarantee = LIB guarantee = ETH guarantee = SAF guarantee = AST
+				guarantee = NZL guarantee = CAN guarantee = CUB guarantee = COS guarantee = DOM guarantee = GUA guarantee = HAI
+				guarantee = HON guarantee = MEX guarantee = NIC guarantee = PNM guarantee = SAL guarantee = ARG guarantee = BOL
+				guarantee = BRA guarantee = CHL guarantee = COL guarantee = ECU guarantee = GUY guarantee = PAR guarantee = PRU
+				guarantee = URU guarantee = VEN guarantee = CYP guarantee = MTA guarantee = KWT guarantee = CEY guarantee = BBU
+				guarantee = MLY guarantee = LBY guarantee = ALG guarantee = TUN guarantee = MAD guarantee = MOR guarantee = JAM
+				guarantee = BOS guarantee = MAC guarantee = MTN guarantee = SER guarantee = SLV guarantee = RUS guarantee = ARM
+				guarantee = AZB guarantee = BLR guarantee = GEO guarantee = UKR guarantee = KAZ guarantee = KYG guarantee = TRK
+				guarantee = TAJ guarantee = UZB guarantee = CAL guarantee = CSA guarantee = SIU
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = "removing_guarantees"
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	remove_guarantees_off = {
+		# Switch-decision to de-activate the rest
+		potential = {
+			has_country_flag = "removing_guarantees"
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = "removing_guarantees"
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	end_guarantee_GER = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = GER }
+			guarantee = GER
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = GER
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_ENG = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = ENG }
+			guarantee = ENG
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = ENG
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_SOV = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = SOV }
+			guarantee = SOV
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = SOV
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_USA = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = USA }
+			guarantee = USA
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = USA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_JAP = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = JAP }
+			guarantee = JAP
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = JAP
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_FRA = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = FRA }
+			guarantee = FRA
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = FRA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_ITA = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = ITA }
+			guarantee = ITA
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = ITA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_DEN = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = DEN }
+			guarantee = DEN
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = DEN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_ICL = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = ICL }
+			guarantee = ICL
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = ICL
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_EST = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = EST }
+			guarantee = EST
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = EST
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_FIN = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = FIN }
+			guarantee = FIN
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = FIN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_LAT = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = LAT }
+			guarantee = LAT
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = LAT
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_LIT = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = LIT }
+			guarantee = LIT
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = LIT
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_NOR = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = NOR }
+			guarantee = NOR
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = NOR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_SWE = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = SWE }
+			guarantee = SWE
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = SWE
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_BEL = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = BEL }
+			guarantee = BEL
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = BEL
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_HOL = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = HOL }
+			guarantee = HOL
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = HOL
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_IRE = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = IRE }
+			guarantee = IRE
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = IRE
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_LUX = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = LUX }
+			guarantee = LUX
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = LUX
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_VIC = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = VIC }
+			guarantee = VIC
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = VIC
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_AUS = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = AUS }
+			guarantee = AUS
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = AUS
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_CZE = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = CZE }
+			guarantee = CZE
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = CZE
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_CRO = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = CRO }
+			guarantee = CRO
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = CRO
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_DDR = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = DDR }
+			guarantee = DDR
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = DDR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_DFR = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = DFR }
+			guarantee = DFR
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = DFR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_HUN = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = HUN }
+			guarantee = HUN
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = HUN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_POL = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = POL }
+			guarantee = POL
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = POL
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_ROM = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = ROM }
+			guarantee = ROM
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = ROM
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_SLO = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = SLO }
+			guarantee = SLO
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = SLO
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_SCH = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = SCH }
+			guarantee = SCH
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = SCH
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_POR = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = POR }
+			guarantee = POR
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = POR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_RSI = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = RSI }
+			guarantee = RSI
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = RSI
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_SPA = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = SPA }
+			guarantee = SPA
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = SPA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_SPR = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = SPR }
+			guarantee = SPR
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = SPR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_ALB = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = ALB }
+			guarantee = ALB
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = ALB
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_BUL = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = BUL }
+			guarantee = BUL
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = BUL
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_GRE = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = GRE }
+			guarantee = GRE
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = GRE
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_YUG = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = YUG }
+			guarantee = YUG
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = YUG
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_AFG = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = AFG }
+			guarantee = AFG
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = AFG
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_IRQ = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = IRQ }
+			guarantee = IRQ
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = IRQ
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_ISR = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = ISR }
+			guarantee = ISR
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = ISR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_JOR = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = JOR }
+			guarantee = JOR
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = JOR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_LEB = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = LEB }
+			guarantee = LEB
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = LEB
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_OMN = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = OMN }
+			guarantee = OMN
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = OMN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_PAL = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = PAL }
+			guarantee = PAL
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = PAL
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_PER = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = PER }
+			guarantee = PER
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = PER
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_SAU = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = SAU }
+			guarantee = SAU
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = SAU
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_SYR = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = SYR }
+			guarantee = SYR
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = SYR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_TUR = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = TUR }
+			guarantee = TUR
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = TUR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_YEM = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = YEM }
+			guarantee = YEM
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = YEM
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_BHU = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = BHU }
+			guarantee = BHU
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = BHU
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_IND = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = IND }
+			guarantee = IND
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = IND
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_NEP = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = NEP }
+			guarantee = NEP
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = NEP
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_PAK = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = PAK }
+			guarantee = PAK
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = PAK
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_CGX = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = CGX }
+			guarantee = CGX
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = CGX
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_CHC = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = CHC }
+			guarantee = CHC
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = CHC
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_CHI = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = CHI }
+			guarantee = CHI
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = CHI
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_CSX = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = CSX }
+			guarantee = CSX
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = CSX
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_CXB = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = CXB }
+			guarantee = CXB
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = CXB
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_CYN = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = CYN }
+			guarantee = CYN
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = CYN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_KOR = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = KOR }
+			guarantee = KOR
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = KOR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_MAN = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = MAN }
+			guarantee = MAN
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = MAN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_MEN = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = MEN }
+			guarantee = MEN
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = MEN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_MON = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = MON }
+			guarantee = MON
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = MON
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_PRK = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = PRK }
+			guarantee = PRK
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = PRK
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_SIK = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = SIK }
+			guarantee = SIK
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = SIK
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_TAN = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = TAN }
+			guarantee = TAN
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = TAN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_TIB = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = TIB }
+			guarantee = TIB
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = TIB
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_IDC = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = IDC }
+			guarantee = IDC
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = IDC
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_INO = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = INO }
+			guarantee = INO
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = INO
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_PHL = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = PHL }
+			guarantee = PHL
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = PHL
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_SIA = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = SIA }
+			guarantee = SIA
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = SIA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_EGY = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = EGY }
+			guarantee = EGY
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = EGY
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_LIB = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = LIB }
+			guarantee = LIB
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = LIB
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_ETH = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = ETH }
+			guarantee = ETH
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = ETH
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_SAF = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = SAF }
+			guarantee = SAF
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = SAF
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_AST = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = AST }
+			guarantee = AST
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = AST
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_NZL = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = NZL }
+			guarantee = NZL
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = NZL
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_CAN = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = CAN }
+			guarantee = CAN
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = CAN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_CUB = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = CUB }
+			guarantee = CUB
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = CUB
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_COS = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = COS }
+			guarantee = COS
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = COS
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_DOM = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = DOM }
+			guarantee = DOM
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = DOM
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_GUA = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = GUA }
+			guarantee = GUA
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = GUA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_HAI = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = HAI }
+			guarantee = HAI
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = HAI
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_HON = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = HON }
+			guarantee = HON
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = HON
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_MEX = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = MEX }
+			guarantee = MEX
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = MEX
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_NIC = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = NIC }
+			guarantee = NIC
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = NIC
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_PNM = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = PNM }
+			guarantee = PNM
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = PNM
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_SAL = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = SAL }
+			guarantee = SAL
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = SAL
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_ARG = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = ARG }
+			guarantee = ARG
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = ARG
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_BOL = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = BOL }
+			guarantee = BOL
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = BOL
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_BRA = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = BRA }
+			guarantee = BRA
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = BRA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_CHL = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = CHL }
+			guarantee = CHL
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = CHL
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_COL = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = COL }
+			guarantee = COL
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = COL
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_ECU = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = ECU }
+			guarantee = ECU
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = ECU
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_GUY = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = GUY }
+			guarantee = GUY
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = GUY
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_PAR = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = PAR }
+			guarantee = PAR
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = PAR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_PRU = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = PRU }
+			guarantee = PRU
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = PRU
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_URU = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = URU }
+			guarantee = URU
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = URU
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_VEN = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = VEN }
+			guarantee = VEN
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = VEN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_CYP = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = CYP }
+			guarantee = CYP
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = CYP
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_MTA = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = MTA }
+			guarantee = MTA
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = MTA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_KWT = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = KWT }
+			guarantee = KWT
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = KWT
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_CEY = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = CEY }
+			guarantee = CEY
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = CEY
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_BBU = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = BBU }
+			guarantee = BBU
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = BBU
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_MLY = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = MLY }
+			guarantee = MLY
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = MLY
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_LBY = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = LBY }
+			guarantee = LBY
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = LBY
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_ALG = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = ALG }
+			guarantee = ALG
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = ALG
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_TUN = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = TUN }
+			guarantee = TUN
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = TUN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_MAD = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = MAD }
+			guarantee = MAD
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = MAD
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_MOR = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = MOR }
+			guarantee = MOR
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = MOR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_JAM = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = JAM }
+			guarantee = JAM
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = JAM
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_BOS = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = BOS }
+			guarantee = BOS
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = BOS
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_MAC = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = MAC }
+			guarantee = MAC
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = MAC
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_MTN = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = MTN }
+			guarantee = MTN
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = MTN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_SER = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = SER }
+			guarantee = SER
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = SER
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_SLV = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = SLV }
+			guarantee = SLV
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = SLV
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_RUS = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = RUS }
+			guarantee = RUS
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = RUS
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_ARM = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = ARM }
+			guarantee = ARM
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = ARM
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_AZB = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = AZB }
+			guarantee = AZB
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = AZB
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_BLR = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = BLR }
+			guarantee = BLR
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = BLR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_GEO = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = GEO }
+			guarantee = GEO
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = GEO
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_UKR = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = UKR }
+			guarantee = UKR
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = UKR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_KAZ = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = KAZ }
+			guarantee = KAZ
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = KAZ
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_KYG = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = KYG }
+			guarantee = KYG
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = KYG
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_TRK = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = TRK }
+			guarantee = TRK
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = TRK
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_TAJ = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = TAJ }
+			guarantee = TAJ
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = TAJ
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_UZB = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = UZB }
+			guarantee = UZB
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = UZB
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_CAL = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = CAL }
+			guarantee = CAL
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = CAL
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_CSA = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = CSA }
+			guarantee = CSA
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = CSA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	end_guarantee_SIU = {
+		potential = {
+			has_country_flag = "removing_guarantees"
+			not = { tag = SIU }
+			guarantee = SIU
+		}
+		allow = {
+		}
+		effect = {
+			end_guarantee = SIU
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

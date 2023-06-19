@@ -1,0 +1,314 @@
+theatre = {
+	name = "De Oriental Române Înaltul Comandament"
+	location = 3917
+	regiment = { type = hq_brigade name = "Bucuresti HQ" historical_model = 0 }
+	
+	corps = {
+		name = "Corp 2 Armata"
+		location = 3778
+		regiment = { type = hq_brigade name = "Corp 2 Armata HQ" historical_model = 0 }
+		division= {
+			name = "Divizia 9 Infanterie"
+			location = 3778
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "34 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "36 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "40 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "13 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Divizia 10 Infanterie"
+			location = 3778
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "23 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "33 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "38 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "3 Regiment de Artilerie" experience = 5 historical_model = 2 }
+		}
+	}
+	corps = {
+		name = "Corp 3 Armata"
+		location = 3445
+		regiment = { type = hq_brigade name = "Corp 3 Armata HQ" historical_model = 0 }
+		division= {
+			name = "Divizia 20 Infanterie"
+			location = 3306
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "82 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "83 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "91 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "39 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Divizia 15 Infanterie"
+			location = 3445
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "10 Vanatori Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "25 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "35 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "23 Regiment de Artilerie" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Divizia 21 Infanterie"
+			location = 3445
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "11 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "12 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "24 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "5 Regiment de Artilerie" experience = 5 historical_model = 3 }
+		}
+	}
+	corps = {
+		name = "Corp 4 Armata"
+		location = 3917
+		regiment = { type = hq_brigade name = "Corp 4 Armata HQ" historical_model = 0 }
+		division= {
+			name = "Divizia 7 Infanterie"
+			location = 3917
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "3 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "14 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "16 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "4 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Divizia 8 Infanterie"
+			location = 3917
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "7 Vanatori Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "8 Vanatori Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "29 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "12 Regiment de Artilerie" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Divizia 14 Infanterie"
+			location = 3917
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "6 Vanatori Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "13 Dorobanti Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "39 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "24 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Divizia 1 Blindate"
+			location = 3917
+			is_reserve = yes
+			regiment = { type = light_armor_brigade name = "1 Tank Regimentul" experience = 5 historical_model = 1 }
+			regiment = { type = super_heavy_armor_brigade name = "2 Tank Regimentul" experience = 5 historical_model = 0 }
+			regiment = { type = motorized_brigade name = "3 Vanatori Regiment" experience = 5 historical_model = 0 }
+			regiment = { type = motorized_brigade name = "4 Vanatori Regiment" experience = 5 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "Corp Alpinisti"
+		location = 3444
+		regiment = { type = hq_brigade name = "Corp Alpinisti HQ" historical_model = 0 }
+		division= {
+			name = "Div. 1 Infanterie Alpinisti"
+			location = 3444
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "1 Regimentul de Munte" experience = 5 historical_model = 2 }
+			regiment = { type = bergsjaeger_brigade name = "2 Regimentul de Munte" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Div. 2 Infanterie Alpinisti"
+			location = 3444
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "4 Regimentul de Munte" experience = 5 historical_model = 2 }
+			regiment = { type = bergsjaeger_brigade name = "5 Regimentul de Munte" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Div. 3 Infanterie Alpinisti"
+			location = 3444
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "3 Regimentul de Munte" experience = 5 historical_model = 2 }
+			regiment = { type = bergsjaeger_brigade name = "6 Regimentul de Munte" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Div. 4 Infanterie Alpinisti"
+			location = 3444
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "7 Regimentul de Munte" experience = 5 historical_model = 2 }
+			regiment = { type = bergsjaeger_brigade name = "8 Regimentul de Munte" experience = 5 historical_model = 2 }
+		}
+	}
+	corps = {
+		name = "Corp Cavalerie Romania"
+		location = 3778
+		regiment = { type = hq_brigade name = "Corp Cavalerie Romania HQ" historical_model = 0 }
+		division= {
+			name = "Divizia 1 Cavalerie"
+			location = 3778
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1 Cavalerie Brigada" experience = 5 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "7 Cavalerie Brigada" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Divizia 5 Cavalerie"
+			location = 3778
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "5 Cavalerie Brigada" experience = 5 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "8 Cavalerie Brigada" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Divizia 6 Cavalerie"
+			location = 3778
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "6 Cavalerie Brigada" experience = 5 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "9 Cavalerie Brigada" experience = 5 historical_model = 2 }
+		}
+	}
+	navy = {
+		name = "Flota Romania de Mare"
+		base = 3919
+		location = 3919
+		ship = { type = destroyer name = "1. Distrugãtor Flotila" experience = 5 historical_model = 2 }
+		ship = { type = destroyer name = "2. Distrugãtor Flotila" experience = 5 historical_model = 5 }
+		ship = { type = submarine name = "1. Submarin Flotila" experience = 5 historical_model = 7 }
+	}
+	air = {
+		name = "Gruparea Aeriana de Lupta"
+		base = 3917
+		location = 3917
+		wing = { type = interceptor name = "Grup 1 Avion de Vanatoare" experience = 5 historical_model = 0 }
+		wing = { type = cas name = "Grup 1 Asalt" experience = 5 historical_model = 0 }
+	}
+}
+theatre = {
+	name = "De Occidentul Române Înaltul Comandament"
+	location = 3441
+	regiment = { type = hq_brigade name = "Cluj HQ" historical_model = 0 }	
+	corps = {
+		name = "Corp 1 Armata"
+		location = 3987
+		regiment = { type = hq_brigade name = "Corp 1 Armata HQ" historical_model = 0 }
+		division= {
+			name = "Divizia 2 Infanterie"
+			location = 3987
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "3 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "26 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "31 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "9 Regiment de Artilerie" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Divizia 3 Infanterie"
+			location = 3987
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1 Vanatori Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "4 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "30 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "6 Regiment de Artilerie" experience = 5 historical_model = 3 }
+		}
+		division= {
+			name = "Divizia 4 Infanterie"
+			location = 3987
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "5 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "20 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "21 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "2 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Divizia 11 Infanterie"
+			location = 3987
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "2 Dorobanti Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "3 Dorobanti Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "19 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "11 Regiment de Artilerie" experience = 5 historical_model = 2 }
+		}
+	}
+	corps = {
+		name = "Corp 5 Armata"
+		location = 3577
+		regiment = { type = hq_brigade name = "Corp 5 Armata HQ" historical_model = 0 }
+		division= {
+			name = "Divizia 5 Infanterie"
+			location = 3577
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "8 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "9 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "32 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "7 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Divizia 6 Infanterie"
+			location = 3577
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "10 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "15 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "27 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "11 Regiment de Artilerie" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Divizia 13 Infanterie"
+			location = 3577
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "7 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "22 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "89 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "19 Regiment de Artilerie" experience = 5 historical_model = 3 }
+		}
+	}
+	corps = {
+		name = "Corp 7 Armata"
+		location = 3706
+		regiment = { type = hq_brigade name = "Corp 7 Armata HQ" historical_model = 0 }
+		division= {
+			name = "Divizia 1 Infanterie"
+			location = 3706
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "5 Vanatori Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "85 Regimentul de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "93 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "1 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Divizia 18 Infanterie"
+			location = 3706
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "18 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "90 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "92 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "35 Regiment de Artilerie" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Divizia 19 Infanterie"
+			location = 3706
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "94 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "95 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "96 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "37 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+	}	
+}
+convoy_construction=
+{
+	country = ROM
+	id=
+	{
+		id=15300
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = ROM
+	id=
+	{
+		id=15301
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

@@ -1,0 +1,63 @@
+theatre = {
+	name = "Eesti Ülemjuhatus"
+	location = 906
+	regiment = { type = hq_brigade name = "Tallinn HQ" historical_model = 0 }
+	corps = {
+		name = "1. Eesti Armee"
+		location = 906
+		regiment = { type = hq_brigade name = "1. Eesti Armee HQ" historical_model = 0 }
+		division= {
+			name = "I Jalaväediviisi"
+			location = 906
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1. Jalaväerügement" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "2. Jalaväerügement" experience = 5 historical_model = 2 }
+			regiment = { type = truck_towed_support_brigade name = "1. Suurtükiväepolgu" experience = 10 historical_model = 1 }
+		}
+		division= {
+			name = "II Jalaväediviisi"
+			location = 906
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "7. Jalaväerügement" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "3. Jalaväerügement" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "4. Jalaväerügement" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "2. Suurtükiväepolgu" builder = "ENG" experience = 10 historical_model = 1 }
+		}
+		division= {
+			name = "III Jalaväediviisi"
+			location = 906
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "5. Jalaväerügement" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "6. Jalaväerügement" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "7. Jalaväerügement" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "3. Suurtükiväepolgu" builder = "ENG" experience = 10 historical_model = 0 }
+		}
+	}
+	navy = {
+		name = "Merevägi"
+		base = 906
+		location = 906
+		ship = { type = submarine name = "1. Allveelaevade flotill" experience = 5 historical_model = 7 }
+	}	
+	air = {
+		name = "Eesti Ohuvägi"
+		base = 906
+		location = 906
+		wing = { type = interceptor name = "1. Hävitajate Grupp" experience = 5 historical_model = 0 }		
+	}
+	
+}
+convoy_construction=
+{
+	country = EST
+	id=
+	{
+		id=15234
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

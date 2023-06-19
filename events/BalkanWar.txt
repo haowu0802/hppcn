@@ -1,0 +1,414 @@
+country_event = {
+
+	id = 3600
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "War in Greece"
+	desc = "Germany intends to help its Italian allies in Greece. To this end, they asked for military access through our country."
+	picture = "axis_expansion"
+
+	option = {
+		name = "Let's join them!"
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.0
+				not = { ideology_group = fascism }
+			}
+		}
+		GER = { country_event = 3605 }
+	}
+	option = {
+		name = "We will have nothing to do with this!"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 10.0
+				not = { ideology_group = fascism }
+			}
+		}
+		relation = { who = GER value = -50 }
+		relation = { who = ENG value = 25 }
+		relation = { who = FRA value = 25 }
+		relation = { who = GRE value = 50 }
+		any_country = {
+			limit = { faction = axis }
+			end_guarantee = YUG
+		}
+		end_guarantee = YUG
+		GER = { country_event = 3606 }
+	}
+	option = {
+		name = "We will grant access"
+		ai_chance = {
+			factor = 0
+		}
+		relation = { who = GER value = 10 }
+		relation = { who = ENG value = -25 }
+		relation = { who = FRA value = -25 }
+		relation = { who = SOV value = -10 }
+		relation = { who = GRE value = -50 }
+		GER = { country_event = 3607 }
+	}
+}
+
+country_event = {
+
+	id = 3605		# Yugoslavia joins the Axis!
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "Yugoslavia signs the Tri-Partite Pact"
+	desc = "Yugoslavia agreed to not only allow us access through the country but also to sign the Tri-Partite Pact!"
+	picture = "treaty_signed"
+
+	option = {
+		name = "Excellent!"
+		war = {
+			target = GRE
+			attacker_goal = { casus_belli = concede_defeat }
+		}
+		YUG = {
+			join_faction = axis
+			war = {
+				target = GRE
+				attacker_goal = { casus_belli = concede_defeat }
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 3606		# Yugoslavia declines!
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "War in Greece"
+	desc = "Yugoslavia declined our request of military access. We will have to fight through them."
+	picture = "war_declared"
+
+	option = {
+		name = "If they don't give, we will take"
+		ai_chance = { factor = 100 }
+		war = {
+			target = YUG
+			attacker_goal = { casus_belli = conquer }
+		}
+	}
+	option = {
+		name = "We don't really want it anyway."
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+
+	id = 3607		# Yugoslavia gives only military access
+
+	is_triggered_only = yes
+
+	title = "War in Greece"
+	desc = "Yugoslavia won't join our alliance, but will grant us military access. What do we say?"
+	picture = "war_declared"
+
+	option = {
+		name = "That is not enough!"
+		ai_chance = { factor = 100 }		# The AI could do nothing with only Military Access!
+		any_country = {
+			limit = { faction = axis }
+			end_guarantee = YUG
+		}
+		end_guarantee = YUG
+		YUG = { country_event = 3608 }
+	}
+	option = {
+		name = "We will settle with that"
+		ai_chance = { factor = 0 }
+		GER = { military_access = YUG }
+	}
+}
+
+country_event = {
+
+	id = 3608		# Germany doesn't want access, they want war...
+
+	is_triggered_only = yes
+
+	title = "War in Greece"
+	desc = "Germany is not content with the transit rights. We need to fight for our life!"
+	picture = "war_declared"
+
+	option = {
+		name = "We can't do anything more!"
+		GER = { country_event = 3606 }
+	}
+}
+
+country_event = {
+
+	id = 3609
+
+	is_triggered_only = yes
+
+	title = "Order is restored in Yugoslavia"
+	desc = "After the revolt in Yugoslavia was put down and order was restored, the government asked for the renewal of their membership in the Tri-Partite Pact."
+	picture = "war_declared"
+
+	option = {
+		name = "Sure, why not!"
+		ai_chance = { factor = 95 }
+		relation = { who = YUG value = 150 }	# Relations are restored
+		YUG = { join_faction = axis }
+	}
+	option = {
+		name = "They missed their chance!"
+		ai_chance = { factor = 5 }
+		relation = { who = YUG value = -50 }
+	}
+}
+
+country_event = {
+
+	id = 3610		# If Yugoslavia joins the Axis but has a majority oppositon, there will be a coup
+
+	is_triggered_only = yes
+
+	title = "Coup d'état!"
+	desc = "The signing of the Tri-Partite Pact was the last drop. Opposition forces staged a coup d'etat in Beograd! Their first action was to revoke the Pact."
+	picture = "coup"
+
+	option = {
+		name = "Let freedom prevail!"
+		set_global_flag = "yugo_coup"			# Only do this once! If somehow the rightists are re-elected, then let them join the Axis!
+		leave_faction = axis
+		any_country = {							# Stop all wars!
+			end_war = YUG
+		}
+		relation = { who = GER value = -100 }	# Leaves a bad taste...
+		government = state_of_emergency			# This is definitely a political crisis
+		
+		random_owned = { limit = { infra = 2 is_core = YUG } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = YUG } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = YUG } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = YUG } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = YUG } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = YUG } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = YUG } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = YUG } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = YUG } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = YUG } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = YUG } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = YUG } create_revolt = 3 }
+		
+		dissent = 15
+		national_unity = -25
+		organisation = -25						# A huge blow to the current ruling party
+		popularity = -25
+	}
+}
+
+# Consequences: Hungary and Bulgaria joins
+
+# Hungary
+
+country_event = {
+
+	id = 3615
+
+	trigger = {
+		tag = GER
+		or = {				# Hungary is an autocracy
+			HUN = {	government = national_socialism }
+			HUN = {	government = fascist_republic }
+			HUN = {	government = germanic_fascist_republic }
+			HUN = {	government = right_wing_republic }
+			HUN = {	government = hungarian_right_wing_republic }
+			HUN = {	government = right_wing_autocrat }
+			HUN = {	government = absolute_monarchy }
+			HUN = {	government = imperial }
+		}
+		not = { war_with = HUN }
+		HUN = { war = no }
+		HUN = { is_in_any_faction = no }	# Not aligned yet
+		not = { has_country_flag = "ask_hungary_in_balkan_war" }
+		YUG = { government_in_exile = no }
+		YUG = { neighbour = HUN }
+		war_with = YUG
+	}
+
+	title = "Ask Hungary to sign the Tri-Partite Pact"
+	desc = "Should we ask Hungary for their help in our war against Yugoslavia in exchange for the Bánát region?"
+	picture = "treaty_signed"
+
+
+	option = {
+		name = "Ask them!"
+		ai_chance = { factor = 90 }
+		set_country_flag = "ask_hungary_in_balkan_war"
+		HUN = { country_event = 3616 }
+	}
+	option = {
+		name = "We don't need them!"
+		ai_chance = { factor = 10 }
+		set_country_flag = "ask_hungary_in_balkan_war"
+		relation = { who = HUN value = -25 }	
+	}
+}
+
+country_event = {
+
+	id = 3616
+
+	is_triggered_only = yes
+
+	title = "The Balkan War"
+	desc = "Germany is asking for our help in their war against Yugoslavia in exchange of the Bánát region. What do we say?"
+	picture = "axis_expansion"
+
+	option = {
+		name = "We need strong allies!"
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.1
+				not = { ideology_group = fascism }
+			}
+		}
+		relation = { who = GER value = 20 }
+		relation = { who = YUG value = -50 }
+		relation = { who = FRA value = -50 }
+		relation = { who = ENG value = -50 }
+		relation = { who = SOV value = -20 }
+		join_faction = axis
+		war = {
+			target = YUG
+			attacker_goal = { casus_belli = aquire_all_cores }
+		}
+	}
+	option = {
+		name = "We won't fight our friends!"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 9.0
+				not = { ideology_group = fascism }
+			}
+		}
+		any_country = {
+			limit = { faction = axis }
+			end_guarantee = HUN
+		}
+		relation = { who = GER value = -20 }
+		relation = { who = YUG value = 50 }
+		relation = { who = FRA value = 50 }
+		relation = { who = ENG value = 50 }
+		relation = { who = SOV value = 20 }
+	}
+
+}
+
+# Bulgaria
+
+country_event = {
+
+	id = 3617
+
+	trigger = {
+		tag = GER
+		or = {				# Bulgaria is an autocracy
+			BUL = {	government = national_socialism }
+			BUL = {	government = fascist_republic }
+			BUL = {	government = germanic_fascist_republic }
+			BUL = {	government = right_wing_republic }
+			BUL = {	government = hungarian_right_wing_republic }
+			BUL = {	government = right_wing_autocrat }
+			BUL = {	government = absolute_monarchy }
+			BUL = {	government = imperial }
+		}
+		not = { war_with = BUL }
+		BUL = { war = no }
+		BUL = { is_in_any_faction = no }	# Not aligned yet
+		not = { has_country_flag = "ask_bulgaria_in_balkan_war" }
+		YUG = { government_in_exile = no }
+		YUG = { neighbour = BUL }
+		war_with = YUG
+	}
+
+	title = "Ask Bulgaria to sign the Tri-Partite Pact"
+	desc = "Should we ask Bulgaria for their help in our war against Yugoslavia in exchange for their claims in Macedonia and Greece?"
+	picture = "treaty_signed"
+
+
+	option = {
+		name = "Ask them!"
+		ai_chance = { factor = 90 }
+		set_country_flag = "ask_bulgaria_in_balkan_war"
+		BUL = { country_event = 3618 }
+	}
+	option = {
+		name = "We don't need them!"
+		ai_chance = { factor = 10 }
+		set_country_flag = "ask_bulgaria_in_balkan_war"
+		relation = { who = BUL value = -25 }	
+	}
+}
+
+country_event = {
+
+	id = 3618
+
+	is_triggered_only = yes
+
+	title = "The Balkan War"
+	desc = "Germany is asking for our help in their war against Yugoslavia in exchange for our claims in Macedonia and Greece. What do we say?"
+	picture = "axis_expansion"
+
+	option = {
+		name = "We need strong allies!"
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.1
+				not = { ideology_group = fascism }
+			}
+		}
+		relation = { who = GER value = 20 }
+		relation = { who = YUG value = -50 }
+		relation = { who = FRA value = -50 }
+		relation = { who = ENG value = -50 }
+		relation = { who = SOV value = -20 }
+		join_faction = axis
+		war = {
+			target = YUG
+			attacker_goal = { casus_belli = aquire_all_cores }
+		}
+	}
+	option = {
+		name = "We can't fight our friends!"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 9.0
+				not = { ideology_group = fascism }
+			}
+		}
+		any_country = {
+			limit = { faction = axis }
+			end_guarantee = BUL
+		}
+		relation = { who = GER value = -20 }
+		relation = { who = YUG value = 50 }
+		relation = { who = FRA value = 50 }
+		relation = { who = ENG value = 50 }
+		relation = { who = SOV value = 20 }
+	}
+
+}

@@ -1,0 +1,126 @@
+ ########################
+# Independent Mengkukuo #
+########################
+
+diplomatic_decisions = {
+
+	independent_mengkukuo = {
+		potential = {
+			tag = JAP
+			not = { exists = MEN }
+			any_owned_province = {
+				is_core = MEN
+			}
+		}
+		allow = {
+			owns = 7313		# A random Mengkukuo province owned by Japan at the start
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					is_core = MEN
+				}
+				secede_province = MEN
+			}
+			CHI = { country_event = 2705 }
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	expand_mengkukuo = {
+		potential = {
+			tag = JAP
+			exists = MEN
+			or = {
+				CSX = {
+					war_with = JAP
+					any_owned_province = {
+						infra = 2
+						is_core = MEN
+						controlled_by = JAP
+					}
+				}
+				CHI = {
+					war_with = JAP
+					any_owned_province = {
+						infra = 2
+						is_core = MEN
+						controlled_by = JAP
+					}
+				}
+			}
+			not = { exists = NJG }
+		}
+		allow = {
+			not = {
+				CHI = {
+					war_with = JAP
+					any_owned_province = {
+						infra = 2
+						is_core = MEN
+						not = { controlled_by = JAP }
+					}
+				}
+			}
+			not = {
+				CSX = {
+					war_with = JAP
+					any_owned_province = {
+						infra = 2
+						is_core = MEN
+						not = { controlled_by = JAP }
+					}
+				}
+			}
+		}
+		effect = {
+			any_country = {
+				limit = {
+					war_with = JAP
+					any_owned_province = {
+						is_core = MEN
+						controlled_by = JAP
+					}
+				}
+				any_owned = {
+					limit = { is_core = MEN }
+					secede_province = MEN
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	give_mongolian_territory_to_mengjiang = {
+		potential = {
+			tag = JAP
+			not = { exists = MON }
+			exists = MEN
+			any_owned_province = {
+				is_core = MON
+				not = { is_core = THIS }
+			}
+			not = { war_with = MEN }
+			MEN = { vassal_of = THIS }
+		}
+		allow = {
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					is_core = MON
+					not = { is_core = THIS }
+				}
+				secede_province = MEN
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

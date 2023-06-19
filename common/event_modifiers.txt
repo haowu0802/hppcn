@@ -1,0 +1,2784 @@
+##################################################################################################
+# scriptable and usable for event-system below.
+##################################################################################################
+
+political_crisis_in_austria = {
+	ruling_party_support = -0.01
+}
+nationalization_of_private_sector = {
+	#dissent = 0.05
+	global_ic = 0.05
+}
+
+#############################
+# HPP, or changed modifiers #
+#############################
+
+xian_cease_fire = {
+	# There will be a year-long cease-fire period after the Xi'an Incident
+	# while neither of the two sides can restart the war via decision.
+}
+
+huang_he_flooded = {
+	# 2 year period before the flood waters recede
+}
+
+mp_from_puppet = {
+	#12 month cooldown between events for puppets to give MP to their masters
+}
+
+liberator = {
+	# Used to flag the country forcing another to release minors.
+	# The forcing country will get a relation boost with the new ones.
+}
+
+volksturm = {
+	# Maybe there should be some negative effects here? Lowering local production a bit and stuff...
+}
+
+threat_decay = {
+	# This is a cooldown for the decay effect of threat.
+}
+
+berlin_rome_axis = {
+	suseptibility_axis = 2.0
+}
+no_berlin_rome_axis = {
+	suseptibility_allies = 2.0
+}
+
+head_of_state_assassination_attempt = {
+	ruling_party_support = -0.05
+	national_unity = -0.1
+}
+
+investor_negotiations = {
+	global_money = -0.05
+}
+
+border_skirmishes = {
+	peacetime_manpower_rotation = 0.10	# Lives lost during the border-conflict (Not a very good abstraction, so this should only be used in small countries!)
+}
+
+no_threat_from_next_attack = {
+	threat_impact = -5.0		# It should make the threat generation 0. Can be used to negate unwanted threat from event-driven DoWs.
+}
+
+agricultural_advancement = {
+	global_manpower_modifier = 0.5
+}
+
+one_year_draft = {
+	local_manpower_modifier = 15.0
+}
+
+two_year_draft = {
+	local_manpower_modifier = 150.0
+}
+
+three_year_draft = {
+	local_manpower_modifier = 50.0
+}
+
+service_by_requirement = {
+	local_manpower_modifier = 100.0
+}
+
+women_in_industry = {
+	industrial_efficiency = 0.15	# Helps with the penalty for Service By Requirement, but won't negate it completely!
+}
+
+vichy_armistice = {
+	land_organisation = -0.85
+}
+
+crippled_navy = {
+	naval_organisation = -0.95
+}
+
+allow_soviets_to_leave = {
+	# Used to give temporary transit rights to the Soviets in Finland so they can get out.
+}
+
+initial_chaos = {
+	# Used to delay the Spanish Call to Arms at the start of the SCW.
+}
+
+soviet_japanese_border_war = {
+	# Used to give a two-weeks starting period to the Border Wars, and only make GOD intervene after that has passed.
+}
+
+election_soc_dem = {
+	ruling_party_support = 0.01
+}
+
+election_soc_cons = {
+	ruling_party_support = 0.01
+}
+
+election_cons_mon = {
+	ruling_party_support = 0.01
+}
+
+god = {
+	global_resources = -1
+	global_leadership_modifier = -1.0
+	global_ic = -1.0
+	drift_speed = 0
+	suseptibility_allies = -100
+	suseptibility_axis = -100
+	suseptibility_comintern = -100
+}
+
+election_cooldown = {
+	# Not used anymore.
+}
+
+maintenance_cooldown = {
+	# Used to handle the maintenance event so it doesn't happen too often.
+}
+
+independence_movement = {
+	local_revolt_risk = 5.0
+	minimum_revolt_risk = 2.0
+	local_manpower_modifier = -1.0
+}
+
+ask_to_join_allies = {
+	suseptibility_allies = 0.5
+}
+
+ask_to_join_axis = {
+	suseptibility_axis = 0.5
+}
+
+ask_to_join_comintern = {
+	suseptibility_comintern = 0.5
+}
+
+impassable_terrain = {
+	local_ic = -10.00
+	local_manpower_modifier = -10.00
+	local_resources = -10.00
+	local_revolt_risk = -100.0
+}
+
+infra_level_2 = {
+	local_ic = -0.75
+	local_resources = -0.75
+}
+
+infra_level_3 = {
+	local_ic = -0.3
+	local_resources = -0.3
+}
+
+infra_level_4 = {
+	local_ic = -0.1
+	local_resources = -0.1
+}
+
+soviet_political_turmoil = {
+	national_unity = -3.5
+}
+
+soviet_opposition = {
+	ruling_party_support = -1.0
+}
+
+soviet_resource_nerf = {
+	global_resources = -0.2
+}
+
+soviet_manpower_nerf = {
+	global_manpower_modifier = -0.5
+}
+
+global_manpower_buff = {
+	global_manpower_modifier = 0.5
+}
+
+civil_war = {
+	war_exhaustion = 0.01
+	national_unity = -0.025
+	threat_resistance = 0.5
+}
+
+nation_in_shock = {
+	ruling_party_support = 0.25
+	dissent = -0.1
+	industrial_efficiency = -0.5
+	org_regain = -0.5
+	land_organisation = -0.5
+	naval_organisation = -0.75
+	air_organisation = -0.66	
+}
+
+consolidating_power = {
+	ruling_party_support = 0.25
+	dissent = 0.1
+}
+
+installing_puppet_government = {
+	ruling_party_support = -0.5
+	dissent = 0.1
+}
+
+political_crisis = {
+	ruling_party_support = -0.05
+}
+
+failed_intervention = {
+	ruling_party_support = -0.10
+}
+
+necessery_nerf_for_democracies = {
+	global_manpower_modifier = -0.4
+}
+
+scw_intervention_officers = {
+}
+
+commonwealth_of_nations = {
+	suseptibility_allies = 0.25
+}
+
+the_great_purge_1 = {
+}
+
+the_great_purge_2 = {
+}
+
+the_great_purge_3 = {
+}
+
+us_new_deal = {
+	peace_consumer_goods_demand = 0.15
+	global_manpower_modifier = -0.5
+	ruling_party_support = 0.075
+	global_resources = 0.25
+	global_money = 0.25
+	global_ic = 0.10
+}
+
+us_great_depression_5 = {
+	ruling_party_support = -0.05
+	global_resources = -0.5
+	global_money = -0.75
+	global_ic = -0.5
+}
+
+us_great_depression_4 = {
+	ruling_party_support = -0.05
+	global_resources = -0.45
+	global_money = -0.65
+	global_ic = -0.45
+}
+
+us_great_depression_3 = {
+	ruling_party_support = -0.05
+	global_resources = -0.35
+	global_money = -0.55
+	global_ic = -0.30
+}
+
+us_great_depression_2 = {
+	ruling_party_support = -0.05
+	global_resources = -0.30
+	global_money = -0.45
+	global_ic = -0.20
+}
+
+us_great_depression_1 = {
+	ruling_party_support = -0.05
+	global_resources = -0.25
+	global_money = -0.35
+	global_ic = -0.10
+}
+
+yugoslavian_partisans = {
+	local_revolt_risk = 5.0
+}
+
+######################
+# Resource storaging #
+######################
+
+
+energy_amortization = {
+	global_energy = -0.10
+}
+
+energy_heavy_amortization = {
+	global_energy = -0.30
+}
+
+metal_amortization = {
+	global_metal = -0.15
+}
+
+metal_heavy_amortization = {
+	global_metal = -0.25
+}
+
+rare_materials_amortization = {	
+	global_rare_materials = -0.05
+}
+
+rare_materials_heavy_amortization = {
+	global_rare_materials = -0.35
+}
+
+crude_oil_amortization = {
+	global_crude_oil = -0.15
+}
+
+crude_oil_heavy_amortization = {
+	global_crude_oil = -0.25
+}
+
+########################
+# Political Events HPP #
+########################
+
+# Strikes
+factory_workers_demand_met = {
+	industrial_efficiency = -0.025
+	global_money = -0.02
+}
+
+harbour_workers_demand_met = {
+	naval_base_efficiency = -0.025
+	global_money = -0.02
+}
+
+railroad_workers_demand_met = {
+	supply_throughput = -0.025
+	global_money = -0.02
+}
+
+# Demonstrations
+great_war_manifestation = {
+	neutrality_change = -0.1
+}
+
+great_peace_manifestation = {
+	neutrality_change = 0.1
+}
+
+party_rally = {}				# These should do nothing, only there to help the event happen regularly.
+long_live_the_king = {}
+long_live_the_president = {}
+long_live_the_emperor = {}
+long_live_the_regent = {}
+
+# Political Fighting
+paramilitary_forces = {
+	dissent = 0.25
+}
+
+parliamentary_scandal = {
+	dissent = 0.1
+}
+
+critique_against_the_war = {
+	war_exhaustion = -0.025
+}
+
+rogue_politician = {
+	ruling_party_support = -0.05
+}
+
+revolutionary_movements = {
+	drift_speed = -0.08
+	ruling_party_support = -0.05
+}
+
+political_mistake = {
+	ruling_party_support = -0.05
+}
+
+assassination_attempt_of_opposition_leader = {
+	drift_speed = -0.08
+	ruling_party_support = -0.05
+	global_money = -0.1
+}
+
+reorganization_of_war_ministry = {
+	dissent = 0.1
+	global_leadership_modifier = 0.05
+}
+
+troublesome_ministry = {
+	drift_speed = -0.08
+}
+
+# Underground Organisations
+
+illegal_printing_hunted = {
+	global_money = -0.2
+}
+
+illegal_printing = {
+	dissent = 0.1
+	ruling_party_support = -0.1
+}
+
+corruption_within_the_police_force = {
+	global_money = -0.2
+	dissent = 0.1
+}
+
+reinforcements = {
+	dissent = 0.08
+	global_money = -0.08
+}
+
+# Foreign Politics
+
+investigation_of_opposition_party = {
+	global_money = -0.1
+	counter_espionage = 0.05
+}
+
+opposition_gains_support = {
+	ruling_party_support = -0.05
+	drift_speed = 0.05
+}
+
+intelligence_network = {
+	espionage_bonus = 0.05
+	global_money = -0.1
+}
+
+# Investment
+
+invest_into_research = {
+	global_money = -0.25
+	research_efficiency = 0.075
+}
+
+invest_into_industry = {
+	global_money = -0.25
+	global_ic = 0.1
+}
+
+invest_into_officers = {
+	global_money = -0.25
+	officer_recruitment = 0.15
+}
+
+invest_into_trade = {
+	global_money = -0.25
+	global_supplies = 0.05
+	dissent = -0.1
+}
+
+invest_into_mining = {
+	global_money = -0.25
+	global_resources = 0.1
+}
+
+invest_into_supplies = {
+	global_money = -0.2
+	supply_throughput = 0.05
+}
+
+invest_into_the_army = {
+	global_money = -0.25
+	land_organisation = 0.1
+}
+
+invest_into_the_navy = {
+	global_money = -0.25
+	naval_organisation = 0.1
+}
+
+invest_into_the_airforce = {
+	global_money = -0.25
+	air_organisation = 0.1
+}
+
+invest_into_the_people = {
+	global_money = -0.25
+	ruling_party_support = 0.15
+}
+
+emergency_legislations = {
+	peace_consumer_goods_demand = -0.05
+	dissent = 0.1
+	global_money = 0.1
+}
+
+economic_boost = {
+	industrial_efficiency = 0.05
+}
+
+volunteer_surge = {
+	global_manpower_modifier = 0.1
+}
+
+### UPRISINGS <- Changed for HPP ###
+prague_revolts = {
+	local_ic = -0.5
+	local_manpower_modifier = -0.5
+	local_resources = -0.5
+	attrition = 1.0
+}
+texel_revolts = {
+	local_ic = -0.5
+	local_manpower_modifier = -0.5
+	local_resources = -0.5
+	attrition = 1.0
+}
+napoli_revolts = {
+	local_ic = -0.5
+	local_manpower_modifier = -0.5
+	local_resources = -0.5
+	attrition = 1.0
+}
+warszawaghetto_revolts = {
+	local_ic = -0.5
+	local_manpower_modifier = -0.5
+	local_resources = -0.5
+	attrition = 1.0
+}
+warszawa_revolts = {
+	local_ic = -0.5
+	local_manpower_modifier = -0.5
+	local_resources = -0.5
+	attrition = 1.0
+}
+june_revolts = {
+	local_ic = -0.5
+	local_manpower_modifier = -0.5
+	local_resources = -0.5
+	attrition = 1.0
+}
+yugoslavia_revolts = {
+	local_ic = -0.5
+	local_manpower_modifier = -0.5
+	local_resources = -0.5
+	attrition = 1.0
+}
+
+### BATTLE WON ###
+bzura_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+kobryn_battle_won = {
+	global_leadership = 0.25
+}
+
+tomazovlubelski_battle_won = {
+	national_unity = 0.1
+}
+
+kock_battle_won = {
+	ruling_party_support = 0.1
+}
+
+stalingrad_battle_won = {
+	national_unity = 0.1
+}
+
+minsk_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+raseiniai_battle_won = {
+	global_leadership = 0.25
+}
+
+dubna_battle_won = {
+	national_unity = 0.1
+}
+
+kursk_battle_won = {
+	ruling_party_support = 0.1
+}
+
+smolensk_battle_won = {
+	national_unity = 0.1
+}
+
+uman_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+moskva_battle_won = {
+	global_leadership = 0.25
+}
+
+murmansk_battle_won = {
+	national_unity = 0.1
+}
+
+brest_battle_won = {
+	ruling_party_support = 0.1
+}
+
+mlawa_battle_won = {
+	national_unity = 0.1
+}
+
+warszawa_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+haag_battle_won = {
+	global_leadership = 0.25
+}
+
+rotterdam_blitz_won = {
+	national_unity = 0.1
+}
+
+caen_battle_won = {
+	ruling_party_support = 0.1
+}
+
+carentan_battle_won = {
+	national_unity = 0.1
+}
+
+cherbourg_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+dodacanese_battle_won = {
+	global_leadership = 0.25
+}
+
+groningen_battle_won = {
+	national_unity = 0.1
+}
+
+sanmarino_battle_won = {
+	ruling_party_support = 0.1
+}
+
+maastricht_battle_won = {
+	national_unity = 0.1
+}
+
+arnhem_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+metz_battle_won = {
+	global_leadership = 0.25
+}
+
+montecastello_battle_won = {
+	national_unity = 0.1
+}
+
+rovaniemi_battle_won = {
+	ruling_party_support = 0.1
+}
+
+lille_battle_won = {
+	national_unity = 0.1
+}
+
+ulm_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+aachen_battle_won = {
+	global_leadership = 0.25
+}
+
+montecassino_battle_won = {
+	national_unity = 0.1
+}
+
+nancy_battle_won = {
+	ruling_party_support = 0.1
+}
+
+bastogne_battle_won = {
+	national_unity = 0.1
+}
+
+debrecen_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+elalamain_first_battle_won = {
+	global_leadership = 0.25
+}
+
+elalamain_second_battle_won = {
+	national_unity = 0.1
+}
+
+malaya_battle_won = {
+	ruling_party_support = 0.1
+}
+
+luzon_battle_won = {
+	global_leadership = 0.25
+}
+
+midway_battle_won = {
+	national_unity = 0.1
+}
+
+guadalcanal_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+saipan_battle_won = {
+	global_leadership = 0.25
+}
+
+bryanskaja_battle_won = {
+	national_unity = 0.1
+}
+
+kharkov_first_battle_won = {
+	ruling_party_support = 0.1
+}
+
+kharkov_second_battle_won = {
+	national_unity = 0.1
+}
+
+kharkov_third_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+odessa_battle_won = {
+	global_leadership = 0.25
+}
+
+bautzen_battle_won = {
+	national_unity = 0.1
+}
+
+orsha_battle_won = {
+	ruling_party_support = 0.1
+}
+
+belgorod_battle_won = {
+	national_unity = 0.1
+}
+
+halbe_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+narva_battle_won = {
+	global_leadership = 0.25
+}
+
+hanko_battle_won = {
+	national_unity = 0.1
+}
+
+ilomantsi_battle_won = {
+	ruling_party_support = 0.1
+}
+
+ancona_battle_won = {
+	national_unity = 0.1
+}
+
+bologna_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+ortona_battle_won = {
+	global_leadership = 0.25
+}
+
+rimini_battle_won = {
+	national_unity = 0.1
+}
+
+breslau_battle_won = {
+	ruling_party_support = 0.1
+}
+
+borodino_battle_won = {
+	national_unity = 0.1
+}
+
+budapest_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+kerch_battle_won = {
+	global_leadership = 0.25
+}
+
+kolberg_battle_won = {
+	national_unity = 0.1
+}
+
+sevastopol_battle_won = {
+	ruling_party_support = 0.1
+}
+
+velikieluki_battle_won = {
+	national_unity = 0.1
+}
+
+voronez_battle_won = {
+	global_manpower_modifier = 0.1
+}
+calais_battle_won = {
+	national_unity = 0.1
+}
+
+gazala_battle_won = {
+	global_leadership = 0.25
+}
+
+kassel_battle_won = {
+	national_unity = 0.1
+}
+
+tornio_battle_won = {
+	ruling_party_support = 0.1
+}
+
+malta_battle_won = {
+	national_unity = 0.1
+}
+
+grudziadz_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+jaroslaw_battle_won = {
+	global_leadership = 0.25
+}
+
+kaluszyn_battle_won = {
+	national_unity = 0.1
+}
+
+lodz_battle_won = {
+	ruling_party_support = 0.1
+}
+
+lwow_battle_won = {
+	national_unity = 0.1
+}
+
+radom_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+hongkong_battle_won = {
+	global_leadership = 0.25
+}
+
+ambon_battle_won = {
+	national_unity = 0.1
+}
+
+balikpapan_battle_won = {
+	ruling_party_support = 0.1
+}
+
+beirut_battle_won = {
+	national_unity = 0.1
+}
+
+kranj_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+wau_battle_won = {
+	global_leadership = 0.25
+}
+
+singapore_battle_won = {
+	national_unity = 0.1
+}
+
+tarakan_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+berlin_battle_won = {
+	ruling_party_support = 0.1
+}
+
+pegu_battle_won = {
+	national_unity = 0.1
+}
+
+tampere_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+wilno_battle_won = {
+	global_leadership = 0.25
+}
+
+palmyra_battle_won = {
+	national_unity = 0.1
+}
+
+leningrad_battle_won = {
+	ruling_party_support = 0.1
+}
+
+iwojima_battle_won = {
+	national_unity = 0.1
+}
+
+dakar_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+nanchang_battle_won = {
+	global_leadership = 0.25
+}
+
+guam_first_battle_won = {
+	national_unity = 0.1
+}
+
+guam_second_battle_won = {
+	ruling_party_support = 0.1
+}
+
+rabaul_battle_won = {
+	national_unity = 0.1
+}
+
+changsha_first_battle_won = {
+	global_manpower_modifier = 0.1
+}
+
+changsha_second_battle_won = {
+	global_leadership = 0.25
+}
+
+changsha_third_battle_won = {
+	national_unity = 0.1
+}
+
+battle_won = {
+	dissent = -0.1
+}
+
+### BATTLE LOST ###
+bzura_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+kobryn_battle_lost = {
+	global_leadership = -0.25
+}
+
+tomazovlubelski_battle_lost = {
+	national_unity = -0.1
+}
+
+kock_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+stalingrad_battle_lost = {
+	national_unity = -0.1
+}
+
+minsk_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+raseiniai_battle_lost = {
+	global_leadership = -0.25
+}
+
+dubna_battle_lost = {
+	national_unity = 0.1
+}
+
+kursk_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+smolensk_battle_lost = {
+	national_unity = -0.1
+}
+
+uman_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+moskva_battle_lost = {
+	global_leadership = -0.25
+}
+
+murmansk_battle_lost = {
+	national_unity = -0.1
+}
+
+brest_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+mlawa_battle_lost = {
+	national_unity = -0.1
+}
+
+warszawa_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+haag_battle_lost = {
+	global_leadership = -0.25
+}
+
+rotterdam_blitz_lost = {
+	national_unity = -0.1
+}
+
+caen_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+carentan_battle_lost = {
+	national_unity = -0.1
+}
+
+cherbourg_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+dodacanese_battle_lost = {
+	global_leadership = -0.25
+}
+
+groningen_battle_lost = {
+	national_unity = -0.1
+}
+
+sanmarino_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+maastricht_battle_lost = {
+	national_unity = -0.1
+}
+
+arnhem_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+metz_battle_lost = {
+	global_leadership = -0.25
+}
+
+montecastello_battle_lost = {
+	national_unity = -0.1
+}
+
+rovaniemi_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+lille_battle_lost = {
+	national_unity = -0.1
+}
+
+ulm_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+aachen_battle_lost = {
+	global_leadership = -0.25
+}
+
+montecassino_battle_lost = {
+	national_unity = -0.1
+}
+
+nancy_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+bastogne_battle_lost = {
+	national_unity = -0.1
+}
+
+debrecen_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+elalamain_first_battle_lost = {
+	global_leadership = -0.25
+}
+
+elalamain_second_battle_lost = {
+	national_unity = -0.1
+}
+
+malaya_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+luzon_battle_lost = {
+	global_leadership = -0.25
+}
+
+midway_battle_lost = {
+	national_unity = -0.1
+}
+
+guadalcanal_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+saipan_battle_lost = {
+	global_leadership = -0.25
+}
+
+bryanskaja_battle_lost = {
+	national_unity = -0.1
+}
+
+kharkov_first_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+kharkov_second_battle_lost = {
+	national_unity = -0.1
+}
+
+kharkov_third_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+odessa_battle_lost = {
+	global_leadership = -0.25
+}
+
+bautzen_battle_lost = {
+	national_unity = -0.1
+}
+
+orsha_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+belgorod_battle_lost = {
+	national_unity = -0.1
+}
+
+halbe_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+narva_battle_lost = {
+	global_leadership = -0.25
+}
+
+hanko_battle_lost = {
+	national_unity = -0.1
+}
+
+ilomantsi_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+ancona_battle_lost = {
+	national_unity = -0.1
+}
+
+bologna_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+ortona_battle_lost = {
+	global_leadership = -0.25
+}
+
+rimini_battle_lost = {
+	national_unity = -0.1
+}
+
+breslau_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+borodino_battle_lost = {
+	national_unity = -0.1
+}
+
+budapest_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+kerch_battle_lost = {
+	global_leadership = -0.25
+}
+
+kolberg_battle_lost = {
+	national_unity = -0.1
+}
+
+sevastopol_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+velikieluki_battle_lost = {
+	national_unity = -0.1
+}
+
+voronez_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+calais_battle_lost = {
+	global_leadership = -0.25
+}
+
+gazala_battle_lost = {
+	national_unity = -0.1
+}
+
+kassel_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+tornio_battle_lost = {
+	national_unity = -0.1
+}
+
+malta_battle_lost = {
+	national_unity = -0.1
+}
+
+grudziadz_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+jaroslaw_battle_lost = {
+	national_unity = -0.1
+}
+
+kaluszyn_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+lodz_battle_lost = {
+	national_unity = -0.1
+}
+
+lwow_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+radom_battle_lost = {
+	global_leadership = -0.25
+}
+
+hongkong_battle_lost = {
+	national_unity = -0.1
+}
+
+ambon_battle_lost = {
+	national_unity = -0.1
+}
+
+balikpapan_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+beirut_battle_lost = {
+	national_unity = -0.1
+}
+
+kranj_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+wau_battle_lost = {
+	global_leadership = -0.25
+}
+
+singapore_battle_lost = {
+	national_unity = -0.1
+}
+
+tarakan_battle_lost = {
+	global_leadership = -0.25
+}
+
+berlin_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+pegu_battle_lost = {
+	national_unity = -0.1
+}
+
+tampere_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+wilno_battle_lost = {
+	global_leadership = -0.25
+}
+
+palmyra_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+leningrad_battle_lost = {
+	global_leadership = -0.25
+}
+
+iwojima_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+dakar_battle_lost = {
+	national_unity = -0.1
+}
+
+nanchang_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+guam_first_battle_lost = {
+	global_leadership = -0.25
+}
+
+guam_second_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+rabaul_battle_lost = {
+	national_unity = -0.1
+}
+
+changsha_first_battle_lost = {
+	ruling_party_support = -0.1
+}
+
+changsha_second_battle_lost = {
+	national_unity = -0.1
+}
+
+changsha_third_battle_lost = {
+	global_manpower_modifier = -0.1
+}
+
+battle_lost = {
+	dissent = 0.1
+}
+
+### AIR BATTLE WON ###
+big_bomb_won = {
+	dissent = -0.2
+}
+
+bombing_wielun_won = {
+	global_leadership = 0.25
+}
+
+bombing_guernica_won = {
+	national_unity = 0.1
+}
+
+bombing_london_won = {
+	ruling_party_support = 0.1
+}
+
+bombing_chongqing_won = {
+	national_unity = 0.1
+}
+
+bombing_berlin_won = {
+	global_manpower_modifier = 0.1
+}
+
+bombing_helsinki_won = {
+	global_leadership = 0.25
+}
+
+bombing_tallin_won = {
+	national_unity = 0.1
+}
+
+bombing_lubeck_won = {
+	ruling_party_support = 0.1
+}
+
+bombing_darwin_won = {
+	national_unity = 0.1
+}
+
+bombing_pearlharbor_won = {
+	global_manpower_modifier = 0.1
+}
+
+bombing_hiroshima_won = {
+	global_leadership = 0.25
+}
+
+bombing_wewak_won = {
+	national_unity = 0.1
+}
+
+attack_broome_won = {
+	ruling_party_support = 0.1
+}
+
+belfast_blitz_won = {
+	national_unity = 0.1
+}
+
+minsk_blitz_won = {
+	global_manpower_modifier = 0.1
+}
+
+bombing_warszawa_won = {
+	global_leadership = 0.25
+}
+
+bombing_innsbruck_won = {
+	national_unity = 0.1
+}
+
+bombing_amien_won = {
+	ruling_party_support = 0.1
+}
+
+bombing_kassel_won = {
+	national_unity = 0.1
+}
+
+coventry_blitz_won = {
+	global_manpower_modifier = 0.1
+}
+
+bombing_kobenhavn_won = {
+	global_leadership = 0.25
+}
+
+bombing_oslo_won = {
+	national_unity = 0.1
+}
+
+bombing_schweinfurt_regensburg_won = {
+	ruling_party_support = 0.1
+}
+
+swansea_blitz_won = {
+	national_unity = 0.1
+}
+
+bombing_hamamatsu_won = {
+	global_manpower_modifier = 0.1
+}
+
+bombing_numazu_won = {
+	global_leadership = 0.25
+}
+
+bombing_tokyo_won = {
+	national_unity = 0.1
+}
+
+bombing_braunschweig_won = {
+	ruling_party_support = 0.1
+}
+
+bombing_augsburg_won = {
+	national_unity = 0.1
+}
+
+bombing_bremen_won = {
+	global_manpower_modifier = 0.1
+}
+
+bombing_rostock_won = {
+	national_unity = 0.1
+}
+
+bombing_darmstadt_won = {
+	global_leadership = 0.25
+}
+
+bombing_dresden_won = {
+	national_unity = 0.1
+}
+
+bombing_cardiff_won = {
+	ruling_party_support = 0.1
+}
+
+bombing_dublin_won = {
+	national_unity = 0.1
+}
+
+bombing_duisburg_won = {
+	global_manpower_modifier = 0.1
+}
+
+bombing_frankfurtammain_won = {
+	global_leadership = 0.25
+}
+
+bombing_hamburg_won = {
+	national_unity = 0.1
+}
+
+bombing_leipzig_won = {
+	ruling_party_support = 0.1
+}
+
+bombing_zadar_won = {
+	national_unity = 0.1
+}
+
+bombing_zagreb_won = {
+	global_manpower_modifier = 0.1
+}
+
+southampton_blitz_won = {
+	global_leadership = 0.25
+}
+
+bombing_stuttgart_won = {
+	national_unity = 0.1
+}
+
+bombing_schweinfurt_won = {
+	ruling_party_support = 0.1
+}
+
+bombing_podgorica_won = {
+	national_unity = 0.1
+}
+
+bombing_pforzheim_won = {
+	global_manpower_modifier = 0.1
+}
+
+plymouth_blitz_won = {
+	global_leadership = 0.25
+}
+
+birmingham_blitz_won = {
+	national_unity = 0.1
+}
+
+hull_blitz_won = {
+	ruling_party_support = 0.1
+}
+
+bombing_norwich_won = {
+	national_unity = 0.1
+}
+
+bombing_roma_won = {
+	global_manpower_modifier = 0.1
+}
+
+bombing_kiel_won = {
+	global_leadership = 0.25
+}
+
+bristol_blitz_won = {
+	national_unity = 0.1
+}
+
+sheffield_blitz_won = {
+	ruling_party_support = 0.1
+}
+
+liverpool_blitz_won = {
+	national_unity = 0.1
+}
+
+manchester_blitz_won = {
+	global_manpower_modifier = 0.1
+}
+
+nottingham_blitz_won = {
+	global_leadership = 0.25
+}
+
+brighton_blitz_won = {
+	national_unity = 0.1
+}
+
+bombing_foggia_won = {
+	ruling_party_support = 0.1
+}
+
+airraid_bari_won = {
+	national_unity = 0.1
+}
+
+bombing_emden_won = {
+	global_manpower_modifier = 0.1
+}
+
+bombing_singapore_won = {
+	global_leadership = 0.25
+}
+
+bombing_nagasaki_won = {
+	national_unity = 0.1
+}
+
+bombing_crete_won = {
+	ruling_party_support = 0.1
+}
+
+bombing_colombo_won = {
+	national_unity = 0.1
+}
+
+bombing_venezia_won = {
+	global_manpower_modifier = 0.1
+}
+
+bombing_ploiesti_won = {
+	global_leadership = 0.25
+}
+
+bombing_bucuresti_won = {
+	national_unity = 0.1
+}
+
+bombing_koln_won = {
+	ruling_party_support = 0.1
+}
+
+bombing_milano_won = {
+	national_unity = 0.1
+}
+
+bombing_dusseldorf_won = {
+	global_manpower_modifier = 0.1
+}
+
+bombing_hildesheim_won = {
+	global_leadership = 0.25
+}
+
+bombing_mannheim_won = {
+	national_unity = 0.1
+}
+
+bombing_hannover_won = {
+	ruling_party_support = 0.1
+}
+
+bombing_budapest_won = {
+	national_unity = 0.1
+}
+
+bombing_osaka_won = {
+	global_manpower_modifier = 0.1
+} 
+
+bombing_wien_won = {
+	global_leadership = 0.25
+}
+
+bombing_munchen_won = {
+	national_unity = 0.1
+}
+
+bombing_telaviv_won = {
+	ruling_party_support = 0.1
+}
+
+bombing_kure_won = {
+	national_unity = 0.1
+}
+
+bombing_aomori_won = {
+	global_manpower_modifier = 0.1
+}
+
+bombing_taipei_won = {
+	global_leadership = 0.25
+}
+
+### AIR BATTLE LOST ###
+big_bomb_lost = {
+	dissent = 0.2
+}
+
+bombing_wielun_lost = {
+	global_leadership = -0.25
+}
+
+bombing_guernica_lost = {
+	national_unity = -0.1
+}
+
+bombing_london_lost = {
+	ruling_party_support = -0.1
+}
+
+bombing_chongqing_lost = {
+	national_unity = -0.1
+}
+
+bombing_berlin_lost = {
+	global_manpower_modifier = -0.1
+}
+
+bombing_tallin_lost = {
+	national_unity = -0.1
+}
+
+bombing_helsinki_lost = {
+	global_leadership = -0.25
+}
+
+bombing_tallinn_lost = {
+	national_unity = -0.1
+}
+
+bombing_lubeck_lost = {
+	ruling_party_support = -0.1
+}
+
+bombing_darwin_lost = {
+	national_unity = -0.1
+}
+
+bombing_pearlharbor_lost = {
+	global_manpower_modifier = -0.1
+}
+
+bombing_hiroshima_lost = {
+	global_leadership = -0.25
+}
+
+bombing_wewak_lost = {
+	national_unity = -0.1
+}
+
+attack_broome_lost = {
+	ruling_party_support = -0.1
+}
+
+belfast_blitz_lost = {
+	global_manpower_modifier = -0.1
+}
+
+minsk_blitz_lost = {
+	national_unity = -0.1
+}
+
+bombing_warszawa_lost = {
+	national_unity = -0.1
+}
+
+bombing_innsbruck_lost = {
+	global_leadership = -0.25
+	
+}
+
+bombing_amien_lost = {
+	ruling_party_support = -0.1
+}
+
+bombing_kassel_lost = {
+	national_unity = -0.1
+}
+
+coventry_blitz_lost = {
+	global_manpower_modifier = -0.1
+}
+
+bombing_kobenhavn_lost = {
+	global_leadership = -0.25
+}
+
+bombing_oslo_lost = {
+	national_unity = -0.1
+}
+
+bombing_schweinfurt_regensburg_lost = {
+	ruling_party_support = -0.1
+}
+
+swansea_blitz_lost = {
+	national_unity = -0.1
+}
+
+bombing_hamamatsu_lost = {
+	global_manpower_modifier = -0.1
+}
+
+bombing_numazu_lost = {
+	global_leadership = -0.25
+}
+
+bombing_tokyo_lost = {
+	national_unity = -0.1
+}
+
+bombing_braunschweig_lost = {
+	ruling_party_support = -0.1
+}
+
+bombing_augsburg_lost = {
+	national_unity = -0.1
+}
+
+bombing_bremen_lost = {
+	global_manpower_modifier = -0.1
+}
+
+bombing_darmstadt_lost = {
+	global_leadership = -0.25
+}
+
+bombing_dresden_lost = {
+	national_unity = -0.1
+}
+
+bombing_cardiff_lost = {
+	ruling_party_support = -0.1
+}
+
+bombing_dublin_lost = {
+	national_unity = -0.1
+}
+
+bombing_duisburg_lost = {
+	global_manpower_modifier = -0.1
+}
+
+bombing_frankfurtammain_lost = {
+	global_leadership = -0.25
+}
+
+bombing_hamburg_lost = {
+	national_unity = -0.1
+}
+
+bombing_leipzig_lost = {
+	ruling_party_support = -0.1
+}
+
+bombing_zadar_lost = {
+	national_unity = -0.1
+}
+
+bombing_zagreb_lost = {
+	global_manpower_modifier = -0.1
+}
+
+southampton_blitz_lost = {
+	global_leadership = -0.25
+}
+
+bombing_stuttgart_lost = {
+	national_unity = -0.1
+}
+
+bombing_schweinfurt_lost = {
+	ruling_party_support = -0.1
+}
+
+bombing_podgorica_lost = {
+	national_unity = -0.1
+}
+
+bombing_pforzheim_lost = {
+	global_manpower_modifier = -0.1
+}
+
+plymouth_blitz_lost = {
+	global_leadership = -0.25
+}
+
+birmingham_blitz_lost = {
+	national_unity = -0.1
+}
+
+hull_blitz_lost = {
+	ruling_party_support = -0.1
+}
+
+bombing_norwich_lost = {
+	national_unity = -0.1
+}
+
+bombing_roma_lost = {
+	global_manpower_modifier = -0.1
+}
+
+bombing_kiel_lost = {
+	global_leadership = -0.25
+}
+
+bristol_blitz_lost = {
+	national_unity = -0.1
+}
+
+sheffield_blitz_lost = {
+	ruling_party_support = -0.1
+}
+
+liverpool_blitz_lost = {
+	national_unity = -0.1
+}
+
+manchester_blitz_lost = {
+	global_manpower_modifier = -0.1
+}
+
+nottingham_blitz_lost = {
+	global_leadership = -0.25
+}
+
+brighton_blitz_lost = {
+	national_unity = -0.1
+}
+
+bombing_foggia_lost = {
+	ruling_party_support = -0.1
+}
+
+airraid_bari_lost = {
+	national_unity = -0.1
+}
+
+bombing_emden_lost = {
+	global_manpower_modifier = -0.1
+}
+
+bombing_singapore_lost = {
+	global_leadership = -0.25
+}
+
+bombing_nagasaki_lost = {
+	national_unity = -0.1
+}
+
+bombing_crete_lost = {
+	ruling_party_support = -0.1
+}
+
+bombing_colombo_lost = {
+	national_unity = -0.1
+}
+
+bombing_venezia_lost = {
+	global_manpower_modifier = -0.1
+}
+
+bombing_ploiesti_lost = {
+	global_leadership = -0.25
+}
+
+bombing_bucuresti_lost = {
+	national_unity = -0.1
+}
+
+bombing_koln_lost = {
+	ruling_party_support = -0.1
+}
+
+bombing_milano_lost = {
+	national_unity = -0.1
+}
+
+bombing_dusseldorf_lost = {
+	global_manpower_modifier = -0.1
+} 
+
+bombing_hildesheim_lost = {
+	global_leadership = -0.25
+}
+
+bombing_rostock_lost = {
+	national_unity = -0.1
+}
+
+bombing_mannheim_lost = {
+	national_unity = -0.1
+}
+
+bombing_hannover_lost = {
+	ruling_party_support = -0.1
+}
+
+bombing_budapest_lost = {
+	national_unity = -0.1
+}
+
+bombing_osaka_lost = {
+	global_manpower_modifier = -0.1
+}
+
+bombing_wien_lost = {
+	global_leadership = -0.25
+}
+
+bombing_munchen_lost = {
+	national_unity = -0.1
+}
+
+bombing_telaviv_lost = {
+	ruling_party_support = -0.1
+}
+
+bombing_kure_lost = {
+	national_unity = -0.1
+}
+
+bombing_aomori_lost = {
+	global_manpower_modifier = -0.1
+}
+
+bombing_taipei_lost = {
+	global_leadership = -0.25
+}
+
+### NAVAL BATTLE WON ###
+navalattack_won = {
+	dissent = -0.12
+}
+
+navalattack_sydney_won = {
+	global_manpower_modifier = 0.1
+}
+
+navalattack_narvik_won = {
+	global_leadership = 0.25
+}
+
+navalattack_danzig_won = {
+	national_unity = 0.1
+}
+
+navalattack_taranto_won = {
+	ruling_party_support = 0.1
+}
+
+navalattack_casablanca_won = {
+	national_unity = 0.1
+}
+
+navalattack_leander_ramb_won = {
+	global_manpower_modifier = 0.1
+}
+
+navalattack_sydney_kormoran_won = {
+	global_leadership = 0.25
+}
+
+navalattack_fortstevens_won = {
+	national_unity = 0.1
+}
+
+navalattack_bougainville_won = {
+	global_manpower_modifier = 0.1
+}
+
+navalattack_caribbean_won = {
+	ruling_party_support = 0.1
+}
+
+navalattack_empressaugusta_won = {
+	national_unity = 0.1
+}
+
+navalattack_nauru_won = {
+	global_manpower_modifier = 0.1
+}
+
+navalattack_jutland_won = {
+	global_leadership = 0.25
+}
+
+navalattack_calabria_won = {
+	national_unity = 0.1
+}
+
+navalattack_capespada_won = {
+	ruling_party_support = 0.1
+}
+
+navalattack_guadalcanal_won = {
+	national_unity = 0.1
+}
+
+navalattack_komandorski_won = {
+	global_manpower_modifier = 0.1
+}
+
+navalattack_aitape_won = {
+	global_leadership = 0.25
+}
+
+navalattack_hollandia_won = {
+	national_unity = 0.1
+}
+
+navalattack_madagascar_won = {
+	ruling_party_support = 0.1
+}
+
+navalattack_attukiska_won = {
+	national_unity = 0.1
+}
+
+navalattack_palau_won = {
+	global_manpower_modifier = 0.1
+}
+
+navalattack_okinawa_won = {
+	global_leadership = 0.25
+}
+
+navalattack_philippines_won = {
+	national_unity = 0.1
+}
+
+navalattack_dutchharbor_won = {
+	ruling_party_support = 0.1
+}
+
+navalattack_first_narvik_won = {
+	national_unity = 0.1
+}
+
+navalattack_second_narvik_won = {
+	global_manpower_modifier = 0.1
+}
+
+navalattack_manado_won = {
+	global_leadership = 0.25
+}
+
+navalattack_tarakan_won = {
+	national_unity = 0.1
+}
+
+navalattack_portugese_timor_won = {
+	ruling_party_support = 0.1
+}
+
+navalattack_dutch_timor_won = {
+	national_unity = 0.1
+}
+
+navalattack_hendersonfield_won = {
+	global_manpower_modifier = 0.1
+}
+
+navalattack_balikpapan_won = {
+	global_leadership = 0.25
+}
+
+navalattack_anzio_won = {
+	national_unity = 0.1
+}
+
+navalattack_leyte_won = {
+	ruling_party_support = 0.1
+}
+
+navalattack_coralsea_won = {
+	national_unity = 0.1
+}
+
+navalattack_mindoro_won = {
+	global_manpower_modifier = 0.1
+}
+
+navalattack_samar_won = {
+	global_leadership = 0.25
+}
+
+navalbattle_midway_won = {
+	national_unity = 0.1
+}
+
+navalbattle_hel_won = {
+	ruling_party_support = 0.1
+}
+
+navalbattle_matapan_won = {
+	national_unity = 0.1
+}
+
+navalbattle_spartivento_won = {
+	global_manpower_modifier = 0.1
+}
+
+navalbattle_riverplate_won = {
+	global_leadership = 0.25
+}
+
+navalbattle_denmarkstrait_won = {
+	national_unity = 0.1
+}
+
+navalbattle_barentssea_won = {
+	ruling_party_support = 0.1
+}
+
+navalbattle_espero_won = {
+	national_unity = 0.1
+}
+
+navalbattle_first_javasea_won = {
+	global_manpower_modifier = 0.1
+}
+
+navalbattle_oranto_won = {
+	global_leadership = 0.25
+}
+
+navalbattle_sunda_won = {
+	national_unity = 0.1
+}
+
+navalbattle_first_sidra_won = {
+	ruling_party_support = 0.1
+}
+
+navalbattle_second_sidra_won = {
+	national_unity = 0.1
+}
+
+navalbattle_second_javasea_won = {
+	global_manpower_modifier = 0.1
+}
+
+navalbattle_ushant_won = {
+	global_leadership = 0.25
+}
+
+navalbattle_crimean_won = {
+	national_unity = 0.1
+}
+
+navalbattle_milnebay_won = {
+	ruling_party_support = 0.1
+}
+
+navalbattle_first_indianocean_won = {
+	national_unity = 0.1
+}
+
+navalbattle_second_indianocean_won = {
+	global_manpower_modifier = 0.1
+}
+
+navalbattle_newgeorgia_won = {
+	global_leadership = 0.25
+}
+
+navalbattle_kwajalein_won = {
+	national_unity = 0.1
+}
+
+navalbattle_truk_won = {
+	ruling_party_support = 0.1
+}
+
+navalbattle_eniwetok_won = {
+	national_unity = 0.1
+}
+
+navalbattle_tinian_won = {
+	global_manpower_modifier = 0.1
+}
+
+navalbattle_cabanatuan_won = {
+	global_leadership = 0.25
+}
+
+navalbattle_first_savo_won = {
+	national_unity = 0.1
+}
+
+navalbattle_second_savo_won = {
+	ruling_party_support = 0.1
+}
+
+navalbattle_makassar_won = {
+	national_unity = 0.1
+}
+
+navalbattle_lofoten_won = {
+	global_manpower_modifier = 0.1
+}
+
+navalbattle_seychelles_won = {
+	global_leadership = 0.25
+}
+
+navalbattle_bismarcksea_won = {
+	national_unity = 0.1
+}
+
+navalbattle_suursaari_won = {
+	ruling_party_support = 0.1
+}
+
+navalbattle_makin_won = {
+	national_unity = 0.1
+}
+
+navalbattle_singapore_won = {
+	global_manpower_modifier = 0.1
+}
+
+### NAVAL BATTLE LOST ###
+navalattack_lost = {
+	dissent = 0.12
+}
+navalattack_sydney_lost = {
+	global_manpower_modifier = -0.1
+}
+
+navalattack_narvik_lost = {
+	global_leadership = -0.25
+}
+
+navalattack_danzig_lost = {
+	national_unity = -0.1
+}
+
+navalattack_taranto_lost = {
+	ruling_party_support = -0.1
+}
+
+navalattack_casablanca_lost = {
+	national_unity = -0.1
+}
+
+navalattack_leander_ramb_lost = {
+	global_manpower_modifier = -0.1
+}
+
+navalattack_sydney_kormoran_lost = {
+	global_leadership = -0.25
+}
+
+navalattack_fortstevens_lost = {
+	national_unity = -0.1
+}
+
+navalattack_bougainville_lost = {
+	national_unity = -0.1
+}
+
+navalattack_caribbean_lost = {
+	ruling_party_support = -0.1
+}
+
+navalattack_empressaugusta_lost = {
+	national_unity = -0.1
+}
+
+navalattack_nauru_lost = {
+	global_manpower_modifier = -0.1
+}
+
+navalattack_jutland_lost = {
+	global_leadership = -0.25
+}
+
+navalattack_calabria_lost = {
+	national_unity = -0.1
+}
+
+navalattack_capespada_lost = {
+	ruling_party_support = -0.1
+}
+
+navalattack_guadalcanal_lost = {
+	national_unity = -0.1
+}
+
+navalattack_komandorski_lost = {
+	global_manpower_modifier = -0.1
+}
+
+navalattack_aitape_lost = {
+	global_leadership = -0.25
+}
+
+navalattack_hollandia_lost = {
+	national_unity = -0.1
+}
+
+navalattack_madagascar_lost = {
+	ruling_party_support = -0.1
+}
+
+navalattack_attukiska_lost = {
+	national_unity = -0.1
+}
+
+navalattack_palau_lost = {
+	global_manpower_modifier = -0.1
+}
+
+navalattack_okinawa_lost = {
+	global_leadership = -0.25
+}
+
+navalattack_philippines_lost = {
+	national_unity = -0.1
+}
+
+navalattack_dutchharbor_lost = {
+	ruling_party_support = -0.1
+}
+
+navalattack_first_narvik_lost = {
+	national_unity = -0.1
+}
+
+navalattack_second_narvik_lost = {
+	global_manpower_modifier = -0.1
+}
+
+navalattack_manado_lost = {
+	global_leadership = -0.25
+}
+
+navalattack_tarakan_lost = {
+	national_unity = -0.1
+}
+
+navalattack_portugese_timor_lost = {
+	ruling_party_support = -0.1
+}
+
+navalattack_dutch_timor_lost = {
+	national_unity = -0.1
+}
+
+navalattack_hendersonfield_lost = {
+	global_manpower_modifier = -0.1
+}
+
+navalattack_balikpapan_lost = {
+	global_leadership = -0.25
+}
+
+navalattack_anzio_lost = {
+	national_unity = -0.1
+}
+
+navalattack_leyte_lost = {
+	ruling_party_support = -0.1
+}
+
+navalattack_coralsea_lost = {
+	national_unity = -0.1
+}
+
+navalattack_mindoro_lost = {
+	global_manpower_modifier = -0.1
+}
+
+navalattack_samar_lost = {
+	global_leadership = -0.25
+}
+
+navalbattle_midway_lost = {
+	national_unity = -0.1
+}
+
+navalbattle_hel_lost = {
+	ruling_party_support = -0.1
+}
+
+navalbattle_matapan_lost = {
+	national_unity = -0.1
+}
+
+navalbattle_spartivento_lost = {
+	global_manpower_modifier = -0.1
+}
+
+navalbattle_riverplate_lost = {
+	global_leadership = -0.25
+}
+
+navalbattle_denmarkstrait_lost = {
+	national_unity = -0.1
+}
+
+navalbattle_barentssea_lost = {
+	ruling_party_support = -0.1
+}
+
+navalbattle_espero_lost = {
+	national_unity = -0.1
+}
+
+navalbattle_first_javasea_lost = {
+	global_manpower_modifier = -0.1
+}
+
+navalbattle_oranto_lost = {
+	global_leadership = -0.25
+}
+
+navalbattle_sunda_lost = {
+	national_unity = -0.1
+}
+
+navalbattle_first_sidra_lost = {
+	ruling_party_support = -0.1
+}
+
+navalbattle_second_sidra_lost = {
+	national_unity = -0.1
+}
+
+navalbattle_second_javasea_lost = {
+	global_manpower_modifier = -0.1
+}
+
+navalbattle_ushant_lost = {
+	global_leadership = -0.25
+}
+
+navalbattle_crimean_lost = {
+	national_unity = -0.1
+}
+
+navalbattle_milnebay_lost = {
+	ruling_party_support = -0.1
+}
+
+navalbattle_first_indianocean_lost = {
+	national_unity = -0.1
+}
+
+navalbattle_second_indianocean_lost = {
+	global_manpower_modifier = -0.1
+}
+
+navalbattle_newgeorgia_lost = {
+	global_leadership = -0.25
+}
+
+navalbattle_kwajalein_lost = {
+	national_unity = -0.1
+}
+
+navalbattle_truk_lost = {
+	ruling_party_support = -0.1
+}
+
+navalbattle_eniwetok_lost = {
+	national_unity = -0.1
+}
+
+navalbattle_tinian_lost = {
+	global_manpower_modifier = -0.1
+}
+
+navalbattle_cabanatuan_lost = {
+	global_leadership = -0.25
+}
+
+navalbattle_first_savo_lost = {
+	national_unity = -0.1
+}
+
+navalbattle_second_savo_lost = {
+	ruling_party_support = -0.1
+}
+
+navalbattle_makassar_lost = {
+	national_unity = -0.1
+}
+
+navalbattle_lofoten_lost = {
+	global_manpower_modifier = -0.1
+}
+
+navalbattle_seychelles_lost = {
+	global_leadership = -0.25
+}
+
+navalbattle_bismarcksea_lost = {
+	national_unity = -0.1
+}
+
+navalbattle_suursaari_lost = {
+	ruling_party_support = -0.1
+}
+
+navalbattle_makin_lost = {
+	national_unity = -0.1
+}
+
+navalbattle_singapore_lost = {
+	global_manpower_modifier = -0.1
+}
+
+#### ENCIRCLEMENT ###
+encirclement_siege = {
+	dissent = 0.12
+}
+
+warszawa_siege = {
+	national_unity = -0.1
+}
+
+calais_siege = {
+	global_manpower_modifier = -0.1
+}
+
+lille_siege = {
+	national_unity = -0.1
+}
+
+bastogne_siege = {
+	ruling_party_support = -0.1
+}
+
+odessa_siege = {
+	global_leadership = -0.25
+}
+
+breslau_siege = {
+	national_unity = -0.1
+}
+
+budapest_siege = {
+	global_manpower_modifier = -0.1
+}
+
+sevastopol_siege = {
+	national_unity = -0.1
+}
+
+malta_siege = {
+	ruling_party_support = -0.1
+}
+
+leningrad_siege = {
+	global_leadership = -0.25
+}
+
+lwow_siege = {
+	national_unity = -0.1
+}
+
+przemysl_siege = {
+	global_manpower_modifier = -0.1
+}
+
+stalingrad_siege = {
+	national_unity = -0.1
+}
+
+poznan_siege = {
+	ruling_party_support = -0.1
+}
+
+myitkyina_siege = {
+	global_leadership = -0.25
+}
+
+brestlitovsk_siege = {
+	national_unity = -0.1
+}
+
+lehavre_siege = {
+	global_manpower_modifier = -0.1
+}
+wien_siege = {
+	national_unity = -0.1
+}
+
+danzig_siege = {
+	ruling_party_support = -0.1
+}
+
+larochelle_siege = {
+	global_leadership = -0.25
+}
+
+troops_pocket = {
+	dissent = -0.12
+}
+
+falaise_pocket = {
+	ruling_party_support = -0.1
+}
+
+ruhr_pocket = {
+	national_unity = -0.1
+}
+
+colmar_pocket = {
+	global_manpower_modifier = -0.1
+}
+
+kholm_pocket = {
+	national_unity = -0.1
+}
+
+demjansk_pocket = {
+	ruling_party_support = -0.1
+}
+
+korsun_shevchenkivskyy_pocket = {
+	global_leadership = -0.25
+}
+
+praha_pocket = {
+	national_unity = -0.1
+}
+
+memel_siege = {
+	global_manpower_modifier = -0.1
+}
+
+konigsberg_siege = {
+	national_unity = -0.1
+}
+
+berlin_siege = {
+	ruling_party_support = -0.1
+}
+
+imphal_siege = {
+	global_leadership = -0.25
+}
+
+kohima_siege = {
+	national_unity = -0.1
+}
+
+meiktila_siege = {
+	global_manpower_modifier = -0.1
+}
+
+dunkerque_siege = {
+	national_unity = -0.1
+}
+
+kyiv_siege = {
+	ruling_party_support = -0.1
+}

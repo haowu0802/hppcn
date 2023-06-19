@@ -1,0 +1,196 @@
+diplomatic_decisions = {
+
+	east_indies_campaign_v1 = {
+		major = yes
+		potential = {
+			tag = JAP
+			is_subject = no
+			government = imperial
+			not = { has_global_flag = "east_indies_attacked" }
+			not = { has_country_flag = "east_indies_campaign" }
+			or = {
+				and = {
+					exists = ENG
+					not = { ENG = { alliance_with = THIS } }
+					not = { ENG = { vassal_of = THIS } }
+					not = { ENG = { faction = THIS } }
+				}
+				and = {
+					exists = HOL
+					not = { HOL = { alliance_with = THIS } }
+					not = { HOL = { vassal_of = THIS } }
+					not = { HOL = { faction = THIS } }
+				}
+				and = {
+					exists = INO
+					not = { INO = { alliance_with = THIS } }
+					not = { INO = { vassal_of = THIS } }
+					not = { INO = { faction = THIS } }
+				}
+			}
+			not = {
+				or = {							# We are not already at war
+					war_with = ENG
+					war_with = HOL
+					war_with = INO
+				}
+			}
+			date = 1941.12.1					# Out of desperation
+			or = {
+				not = { crude_oil = 3000 }		# Low on oil or rares
+				not = { rare_materials = 3000 }
+			}
+			not = { CHI = { vassal_of = JAP } }	# China is still there
+			exists = CHI
+			total_amount_of_ships = 75			# Sizeable navy
+		}
+		allow = {
+			not = { war_exhaustion = 10 }
+			has_country_flag = "japan_demands_bases_in_indochina"
+			has_country_flag = "japanese_pressure_on_siam"
+			total_amount_of_divisions = 75		# Sizeable army
+		}
+		effect = {
+			set_global_flag = "east_indies_attacked"
+			set_country_flag = "east_indies_campaign"
+			change_variable = { which = "jap_army_navy_struggle" value = +1 }
+			any_country = {
+				limit = {
+					tag = ENG
+					exists = ENG
+				}
+				country_event = 2725
+			}
+			any_country = {
+				limit = {
+					tag = HOL
+					exists = HOL
+				}
+				country_event = 2725
+			}
+			any_country = {
+				limit = {
+					tag = INO
+					exists = INO
+				}
+				country_event = 2725
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	east_indies_campaign_v2 = {
+		major = yes
+		potential = {
+			tag = JAP
+			is_subject = no
+			government = imperial
+			not = { has_global_flag = "east_indies_attacked" }
+			not = { has_country_flag = "east_indies_campaign" }
+			not = {
+				or = {							# We are not already at war
+					war_with = ENG
+					war_with = HOL
+					war_with = INO
+				}
+			}
+			or = {								# Because we can do it!
+				CHI = { vassal_of = JAP }
+				not = { exists = CHI }
+			}
+			total_amount_of_ships = 75			# Sizeable navy, but no need for army, as it might be sent to China as expeditionaries.
+		}
+		allow = {
+			not = { war_exhaustion = 5 }
+			has_country_flag = "japan_demands_bases_in_indochina"
+			has_country_flag = "japanese_pressure_on_siam"
+		}
+		effect = {
+			set_global_flag = "east_indies_attacked"
+			set_country_flag = "east_indies_campaign"
+			change_variable = { which = "jap_army_navy_struggle" value = +1 }
+			any_country = {
+				limit = {
+					tag = ENG
+					exists = ENG
+				}
+				country_event = 2725
+			}
+			any_country = {
+				limit = {
+					tag = HOL
+					exists = HOL
+				}
+				country_event = 2725
+			}
+			any_country = {
+				limit = {
+					tag = INO
+					exists = INO
+				}
+				country_event = 2725
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	pearl_harbour = {
+		major = yes
+		potential = {
+			tag = JAP
+			is_subject = no
+			exists = ENG
+			exists = USA
+			war_with = ENG						# Our war against the British has started
+			not = { has_country_flag = "pearl_harbour" }
+			6119 = { controlled_by = USA }
+			5825 = { controlled_by = USA }
+			10664 = { controlled_by = USA }
+			10669 = { controlled_by = USA }
+			total_amount_of_ships = 75			# Big navy!
+		}
+		allow = {
+			USA = { war = no }					# We need to surprise them!
+		}
+		effect = {								# Let's thrash some Pacific Naval Bases!
+			set_country_flag = "pearl_harbour"
+			change_variable = { which = "jap_army_navy_struggle" value = +1 }
+			USA = { country_event = 1620 }
+			war = {
+				target = USA
+				attacker_goal = { casus_belli = concede_defeat }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	war_with_the_usa = {
+		major = yes								# This is needed because the Limited Wars won't update too well,
+		potential = {							# and Japan can't call Germany to arms against the USA.
+			faction = axis
+			USA = { faction = allies }
+			ENG = { faction = allies }
+			war_with = ENG
+			not = { war_with = USA }
+			is_subject = no
+		}
+		allow = {
+			war = yes							# Nations that are still neutral, shouldn't join!
+		}
+		effect = {
+			war = {
+				target = USA
+				attacker_goal = { casus_belli = concede_defeat }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

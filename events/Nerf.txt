@@ -1,0 +1,26 @@
+country_event = {
+
+	id = 5601
+
+	trigger = {
+		OR = {			# War with a major
+			war_with = ENG	# Allies
+			war_with = USA
+			war_with = FRA
+			war_with = SOV	# Comintern
+			war_with = GER	# Axis
+			war_with = ITA
+			war_with = JAP
+		}
+		has_country_modifier = "necessery_nerf_for_democracies"
+	}
+
+	title = "Another Great War"
+	desc = "As the World is engufled in conflict, we need to leave behind our sour memories of the last Great War, and commit every able bodied men to the war effort!"
+	picture = "great_war_manifestion"
+
+	option = {
+		name = "I have nothing to offer but blood, toil, tears and sweat..."
+		remove_country_modifier = "necessery_nerf_for_democracies"
+	}
+}

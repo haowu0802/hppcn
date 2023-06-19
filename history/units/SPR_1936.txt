@@ -1,0 +1,448 @@
+theatre = {
+	name = "Alto Mando del Espanol"
+	location = 4540
+	regiment = { type = hq_brigade name = "Madrid HQ" historical_model = 0 }
+	corps = {
+		name = "1a División Orgánica"
+		location = 4540
+		regiment = { type = hq_brigade name = "1a División Orgánica HQ" historical_model = 0 }
+		division= {
+			name = "1/1a División Orgánica"
+			location = 4540
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1. Regimiento Wad Ras" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "2. Regimiento Leon" experience = 5 historical_model = 3 }
+			regiment = { type = engineer_brigade name = "1. Batallón de Ingenieros" experience = 5 historical_model = 0 }
+		}
+		division= {
+			name = "2/1a División Orgánica"
+			location = 4702
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "3. Regimiento Castillia" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "4. Regimiento Covadonga" experience = 5 historical_model = 3 }
+		}
+	}
+	corps = {
+		name = "2a División Orgánica"
+		location = 5030
+		regiment = { type = hq_brigade name = "1a División Orgánica HQ" historical_model = 0 }
+		division= {
+			name = "3/2a División Orgánica"
+			location = 5030
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "5. Regimiento Lepanto Regimiento" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "6. Regimiento Granada Regimiento" experience = 5 historical_model = 3 }
+			regiment = { type = engineer_brigade name = "2. Batallón de Ingenieros" experience = 5 historical_model = 0 }
+		}
+		division= {
+			name = "4/2a División Orgánica"
+			location = 5129
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "7. Regimiento Pavla Ovledo" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "8. Regimiento Vitoria" experience = 5 historical_model = 3 }
+		}
+	}
+	corps = {
+		name = "1a División de Caballería"
+		location = 4347
+		regiment = { type = hq_brigade name = "1a División de Caballería HQ" historical_model = 0 }
+		division= {
+			name = "1/1a División de Caballería"
+			location = 4347
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1. Regimiento Villarrobledo" experience = 5 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "2. Regimiento Calatrava" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "1. Regimiento Artillería a Caballo" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "2/1a División de Caballería"
+			location = 4548
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "3. Regimiento Numancia" experience = 5 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "4. Regimiento Montesa" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "2. Regimiento Artillería a Caballo" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "3/1a División de Caballería"
+			location = 4155
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "5. Regimiento Espana" experience = 5 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "6. Regimiento Santiago" experience = 5 historical_model = 3 }
+			regiment = { type = truck_towed_support_brigade name = "3. Regimiento Artillería a Caballo" experience = 5 historical_model = 2 }
+		}
+	}
+	division= {
+		name = "1. Brigada Blindada"
+		location = 4540
+		is_reserve = yes
+		regiment = { type = super_heavy_armor_brigade name = "1. Brigada Blindada" experience = 5 historical_model = 0 }
+		regiment = { type = self_propelled_support_brigade name = "1. Brigada de Vehículos Blindados" experience = 5 historical_model = 1 }
+	}
+	division= {
+		name = "2. Brigada Blindada"
+		location = 4353
+		is_reserve = yes
+		regiment = { type = super_heavy_armor_brigade name = "2. Brigada Blindada" experience = 5 historical_model = 0 }
+		regiment = { type = self_propelled_support_brigade name = "2. Brigada de Vehículos Blindados" experience = 5 historical_model = 1 }
+	}
+	corps = {
+		name = "3a División Orgánica"
+		location = 4862
+		regiment = { type = hq_brigade name = "3a División Orgánica HQ" historical_model = 0 }
+		division= {
+			name = "5/3a División Orgánica"
+			location = 4862
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "9. Regimiento Ottumba" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "10. Regimiento Guadalajara" experience = 5 historical_model = 3 }
+			regiment = { type = engineer_brigade name = "3. Batallón de Ingenieros" experience = 5 historical_model = 0 }
+		}
+		division= {
+			name = "6/3a División Orgánica"
+			location = 5001
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "11. Regimiento Tarifa" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "12. Regimiento Vizcaya" experience = 5 historical_model = 3 }
+		}
+	}
+	corps = {
+		name = "4a División Orgánica"
+		location = 4548
+		regiment = { type = hq_brigade name = "4a División Orgánica HQ" historical_model = 0 }
+		division= {
+			name = "7/4a División Orgánica"
+			location = 4548
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "13. Regimiento Badajoz" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "14. Regimiento Alcanrara" experience = 5 historical_model = 3 }
+			regiment = { type = engineer_brigade name = "4. Batallón de Ingenieros" experience = 5 historical_model = 0 }
+		}
+		division= {
+			name = "8/4a División Orgánica"
+			location = 4483
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "15. Regimiento Almansa" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "16. Regimiento Albuera" experience = 5 historical_model = 3 }
+		}
+	}
+	corps = {
+		name = "5a División Orgánica"
+		location = 4353
+		regiment = { type = hq_brigade name = "5a División Orgánica HQ" historical_model = 0 }
+		division= {
+			name = "9/5a División Orgánica"
+			location = 4353
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "17. Regimiento Aragon" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "18. Regimiento Gerona" experience = 5 historical_model = 3 }
+			regiment = { type = engineer_brigade name = "5. Batallón de Ingenieros" experience = 5 historical_model = 0 }
+		}
+		division= {
+			name = "10/5a División Orgánica"
+			location = 4293
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "19. Regimiento Galicia" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "20. Regimiento Valladolid" experience = 5 historical_model = 3 }
+		}
+	}
+	division= {
+		name = "1 Brigada Montaña"
+		location = 4358
+		is_reserve = yes
+		regiment = { type = bergsjaeger_brigade name = "1. Media Brigada" experience = 5 historical_model = 3 }
+		regiment = { type = bergsjaeger_brigade name = "2. Media Brigada" experience = 5 historical_model = 3 }
+	}
+	division= {
+		name = "2 Brigada Montaña"
+		location = 3884
+		is_reserve = yes
+		regiment = { type = bergsjaeger_brigade name = "3. Media Brigada" experience = 5 historical_model = 3 }
+		regiment = { type = bergsjaeger_brigade name = "4. Media Brigada" experience = 5 historical_model = 3 }
+	}
+	division= {
+		name = "Brigada Mixta Montaña"
+		location = 3746
+		is_reserve = yes
+		regiment = { type = bergsjaeger_brigade name = "32. Regimient Miláno" experience = 5 historical_model = 3 }
+		regiment = { type = bergsjaeger_brigade name = "40. Regimiento Simancas" experience = 5 historical_model = 3 }
+	}
+	corps = {
+		name = "6a División Orgánica"
+		location = 4155
+		regiment = { type = hq_brigade name = "6a División Orgánica HQ" historical_model = 0 }
+		division= {
+			name = "11/6a División Orgánica"
+			location = 4155
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "21. Regimiento Valencia" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "22. Regimiento San Marcial" experience = 5 historical_model = 3 }
+			regiment = { type = engineer_brigade name = "6. Batallón de Ingenieros" experience = 5 historical_model = 0 }
+		}
+		division= {
+			name = "12/6a División Orgánica"
+			location = 4026
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "23. Regimiento America" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "24. Regimiento Bailen" experience = 5 historical_model = 3 }
+		}
+	}
+	corps = {
+		name = "7a División Orgánica"
+		location = 4218
+		regiment = { type = hq_brigade name = "7a División Orgánica HQ" historical_model = 0 }
+		division= {
+			name = "13/7a División Orgánica"
+			location = 4218
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "13. Regimiento Valladolid Regimiento" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "14. Regimiento Salamanca Regimiento" experience = 5 historical_model = 3 }
+			regiment = { type = engineer_brigade name = "7. Batallón de Ingenieros" experience = 5 historical_model = 0 }
+		}
+		division= {
+			name = "14/7a División Orgánica"
+			location = 4347
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "27. Regimiento Argel" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "28. Regimiento La Victoria" experience = 5 historical_model = 3 }
+		}
+	}
+	corps = {
+		name = "8a División Orgánica"
+		location = 3610
+		regiment = { type = hq_brigade name = "8a División Orgánica HQ" historical_model = 0 }
+		division= {
+			name = "15/8a División Orgánica"
+			location = 3610
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "29. Regimiento Zamora" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "30. Regimiento Zaragoza" experience = 5 historical_model = 3 }
+			regiment = { type = engineer_brigade name = "8. Batallón de Ingenieros" experience = 5 historical_model = 0 }
+		}
+		division= {
+			name = "16/8a División Orgánica"
+			location = 3952
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "31. Regimiento Burgos" experience = 5 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "1. Regimiento de Artillería" experience = 5 historical_model = 1 }			
+		}
+	}
+	division= {
+		name = "33. Regimiento"
+		location = 5125
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "33. Regimiento Cadiz" experience = 5 historical_model = 3 }
+		regiment = { type = horse_towed_support_brigade name = "2. Regimiento de Artillería" experience = 5 historical_model = 1 }		
+	}
+	division= {
+		name = "34. Regimiento"
+		location = 5104
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "34. Regimiento Sevilla" experience = 5 historical_model = 3 }
+		regiment = { type = horse_towed_support_brigade name = "3. Regimiento de Artillería" experience = 5 historical_model = 1 }		
+	}
+	division= {
+		name = "35. Regimiento"
+		location = 3611
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "35. Regimiento Merida" experience = 5 historical_model = 3 }
+		regiment = { type = horse_towed_support_brigade name = "4. Regimiento de Artillería" experience = 5 historical_model = 1 }		
+	}
+	division= {
+		name = "7. Regimiento"
+		location = 5030
+		is_reserve = yes
+		regiment = { type = cavalry_brigade name = "7. Regimiento Taxdir" experience = 5 historical_model = 3 }
+		regiment = { type = cavalry_brigade name = "8. Regimiento Lusitania" experience = 5 historical_model = 3 }
+	}
+	division= {
+		name = "9. Regimiento"
+		location = 4353
+		is_reserve = yes
+		regiment = { type = cavalry_brigade name = "9. Regimiento Castillejos" experience = 5 historical_model = 3 }
+		regiment = { type = cavalry_brigade name = "10. Regimiento Farnesio" experience = 5 historical_model = 3 }
+	}
+	division = {
+		name = "Comandancia de Baleares"
+		location = 4913
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "36. Regimiento Palma" experience = 5 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "37. Regimiento Baleares" experience = 5 historical_model = 3 }
+		regiment = { type = engineer_brigade name = "1./2. Batallón de Ingenieros de Mixto" experience = 5 historical_model = 0 }
+	}
+	division = {
+		name = "Comandancia de Canarias"
+		location = 10730
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "38. Regimiento Tenerife" experience = 5 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "39. Regimiento Canarias" experience = 5 historical_model = 3 }
+		regiment = { type = engineer_brigade name = "3./4. Batallón de Ingenieros de Mixto" experience = 5 historical_model = 0 }
+	}
+	army = {
+		name = "Ejército de África"
+		location = 5289
+		regiment = { type = hq_brigade name = "Ejército de África HQ" historical_model = 0 }
+		
+		division= {
+			name = "Circunscripción Occidental"
+			location = 5289
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Brigada de Ceuta-Tetuán" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Brigada de Larache" experience = 5 historical_model = 3 }
+		}
+		division= {
+			name = "Circunscripción Oriental"
+			location = 5322
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Regimiento Cazadores" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Regimientos de 'Bandera' Legion & GFRI" experience = 5 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "Regimiento de Artillería de Melilla" experience = 5 historical_model = 1 }
+		}
+		division = {
+			name = "Fuerzas del Sahara"
+			location = 9482
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Brigada de Sahara Espanol" experience = 5 historical_model = 3 }
+			regiment = { type = militia_brigade name = "Policía del Sahara" experience = 5 historical_model = 3 }
+		}
+		division = {
+			name = "Fuerzas del Sidi Ifni"
+			location = 9482
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Brigada de Sidi Ifni" experience = 5 historical_model = 3 }
+			regiment = { type = engineer_brigade name = "Ingeniero del Sidi Ifni" experience = 5 historical_model = 0 }
+		}		
+	}
+	division = {
+		name = "Guardias Coloniales"
+		location = 10002
+		is_reserve = yes
+		regiment = { type = militia_brigade name = "1. Brigada de Sidi Ifni" experience = 5 historical_model = 3 }
+		regiment = { type = militia_brigade name = "2. Brigada de Sidi Ifni" experience = 5 historical_model = 3 }
+	}
+	navy = {
+		name = "Base Naval Cádiz"
+		base = 5125
+		location = 5125
+		ship = { type = light_cruiser name = "Navarra" experience = 5 historical_model = 2 }
+		ship = { type = destroyer name = "1a Flotilla de Destructores" experience = 5 historical_model = 3 }
+	}
+	navy = {
+		name = "Flotilla Méndez Núñez"
+		base = 3610
+		location = 3610
+		ship = { type = light_cruiser name = "Méndez Núñez" experience = 5 historical_model = 3 }
+	}
+	navy = {
+		name = "Escuadrón de Batalla"
+		base = 4548
+		location = 4548
+		ship = { type = light_cruiser name = "Miguel de Cervantes" experience = 5 historical_model = 4 }
+		ship = { type = transport_ship name = "1a Flotilla de Transporte Naval" experience = 5 historical_model = 0 }
+		ship = { type = transport_ship name = "2a Flotilla de Transporte Naval" experience = 5 historical_model = 0 }
+	}
+	navy = {
+		name = "Armada Colonial"
+		base = 10730
+		location = 10730
+		ship = { type = destroyer name = "2a Flotilla de Destructores" experience = 5 historical_model = 4 }
+		ship = { type = transport_ship name = "3a Flotilla de Transporte Naval" experience = 5 historical_model = 0 }
+		ship = { type = transport_ship name = "4a Flotilla de Transporte Naval" experience = 5 historical_model = 0 }
+	}
+	navy = {
+		name = "Grupo C"
+		base = 4862
+		location = 4862
+		ship = { type = submarine name = "S103 Flotilla" experience = 5 historical_model = 4 }
+	}
+	navy = {
+		name = "Grupo B"
+		base = 4862
+		location = 4862
+		ship = { type = submarine name = "S101 Flotilla" experience = 5 historical_model = 2 }
+	}
+	navy = {
+		name = "ARE Libertad"
+		base = 4548
+		location = 4548
+		ship = { type = light_cruiser name = "Libertad" experience = 5 historical_model = 4 }
+	}
+	navy = {
+		name = "I Flotilla de la Armada"
+		base = 4548
+		location = 4548
+		ship = { type = battleship name = "Jaime I" experience = 5 historical_model = 0 pride = yes }
+		ship = { type = battleship name = "España" experience = 5 historical_model = 0 }
+		ship = { type = light_cruiser name = "Almirante Cervera" experience = 5 historical_model = 4 }
+		ship = { type = destroyer name = "3a Flotilla de Destructores" experience = 5 historical_model = 4 }
+		ship = { type = destroyer name = "4a Flotilla de Destructores" experience = 5 historical_model = 4 }
+	}
+	air = {
+		name = "1a Escuadra Aérea"
+		base = 4540
+		location = 4540
+		wing = { type = tactical_bomber name = "1er Grupo Táctico" experience = 5 historical_model = 0 }
+		wing = { type = tactical_bomber name = "2o Grupo Táctico" experience = 5 historical_model = 0 }
+	}
+	air = {
+		name = "2a Escuadra Aérea"
+		base = 4548
+		location = 4548
+		wing = { type = interceptor name = "1er Grupo de Caza" experience = 5 historical_model = 0 }
+		wing = { type = interceptor name = "3er Grupo de Caza" experience = 5 historical_model = 0 }
+	}
+	air = {
+		name = "Fuerzas Aéreas del África"
+		base = 10730
+		location = 10730
+		wing = { type = cas name = "Grupo n.1 de Bombardeo FARE" experience = 5 historical_model = 0 }
+		wing = { type = interceptor name = "2o Grupo de Caza" experience = 5 historical_model = 0 }
+	}
+}
+convoy_construction=
+{
+	country = SPR
+	id=
+	{
+		id=15112
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = SPR
+	id=
+	{
+		id=15113
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+military_construction = {
+	country = SPR
+	heavy_cruiser = {
+		name = "Canarias"
+		historical_model = 6
+	}
+	cost = 4.00
+	progress = 87
+	duration = 248
+}
+military_construction = {
+	country = SPR
+	heavy_cruiser = {
+		name = "Baleares"
+		historical_model = 6
+	}
+	cost = 4.00
+	progress = 79
+	duration = 363
+}

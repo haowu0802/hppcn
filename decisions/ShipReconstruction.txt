@@ -1,0 +1,268 @@
+diplomatic_decisions = {
+
+	#Actual, historical ships first.  The AI will always fire these
+
+	reconstruct_hiei = {
+		major = yes
+		potential = {
+			date = 1936.1.3
+			tag = JAP
+			brigade_exist = "IJN Hiei"
+			not = { has_country_flag = "hiei_rebuilt" }
+		}
+		allow = {
+			not = { brigade_in_combat = "IJN Hiei" }
+			not = { has_country_flag = "washington_treaty" }
+		}
+		effect = {
+			remove_brigade = "IJN Hiei"
+			load_oob = "IJNHieiReconstruction.txt"
+			set_country_flag = "hiei_rebuilt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	reconstruct_mogami = {
+		major = yes
+		potential = {
+			date = 1936.1.3
+			tag = JAP
+			brigade_exist = "IJN Mogami"
+			not = { has_country_flag = "mogami_rebuilt" }
+		}
+		allow = {
+			not = { brigade_in_combat = "IJN Mogami" }
+			not = { has_country_flag = "washington_treaty" }
+		}
+		effect = {
+			remove_brigade = "IJN Mogami"
+			load_oob = "IJNMogamiReconstruction.txt"
+			set_country_flag = "mogami_rebuilt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	reconstruct_mikuma = {
+		major = yes
+		potential = {
+			date = 1936.1.3
+			tag = JAP
+			brigade_exist = "IJN Mikuma"
+			not = { has_country_flag = "mikuma_rebuilt" }
+		}
+		allow = {
+			not = { brigade_in_combat = "IJN Mikuma" }
+			not = { has_country_flag = "washington_treaty" }
+		}
+		effect = {
+			remove_brigade = "IJN Mikuma"
+			load_oob = "IJNMikumaReconstruction.txt"
+			set_country_flag = "mikuma_rebuilt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#	reconstruct_suzuya = {
+#		major = yes
+#		potential = {
+#			tag = JAP
+#			brigade_exist = "IJN Suzuya"
+#			not = { has_country_flag = "suzuya_rebuilt" }
+#		}
+#		allow = {
+#			not = { brigade_in_combat = "IJN Suzuya" }
+#			not = { has_country_flag = "washington_treaty" }
+#		}
+#		effect = {
+#			remove_brigade = "IJN Suzuya"
+#			load_oob = "IJNSuzuyaReconstruction.txt"
+#			set_country_flag = "Suzuya_rebuilt"
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+	reconstruct_andrea_doria = {
+		major = yes
+		potential = {
+			date = 1936.1.3
+			tag = ITA
+			brigade_exist = "RM Andrea Doria"
+			not = { has_country_flag = "andrea_doria_rebuilt" }
+		}
+		allow = {
+			not = { brigade_in_combat = "RM Andrea Doria" }
+			not = { has_country_flag = "washington_treaty" }
+		}
+		effect = {
+			remove_brigade = "RM Andrea Doria"
+			load_oob = "AndreaDoriaReconstruction.txt"
+			set_country_flag = "andrea_doria_rebuilt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	reconstruct_caio_duilio = {
+		major = yes
+		potential = {
+			date = 1936.1.3
+			tag = ITA
+			brigade_exist = "RM Caio Duilio"
+			not = { has_country_flag = "caio_duilio_rebuilt" }
+		}
+		allow = {
+			not = { brigade_in_combat = "RM Caio Duilio" }
+			not = { has_country_flag = "washington_treaty" }
+		}
+		effect = {
+			remove_brigade = "RM Caio Duilio"
+			load_oob = "CaioDuilioReconstruction.txt"
+			set_country_flag = "caio_duilio_rebuilt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	reconstruct_queen_elizabeth = {
+		major = yes
+		potential = {
+			date = 1936.1.3
+			tag = ENG
+			brigade_exist = "HMS Queen Elizabeth"
+			not = { has_country_flag = "queen_elizabeth_rebuilt" }
+		}
+		allow = {
+			not = { brigade_in_combat = "HMS Queen Elizabeth" }
+			JAP = { not = { has_country_flag = "washington_treaty" } }
+		}
+		effect = {
+			remove_brigade = "HMS Queen Elizabeth"
+			load_oob = "QueenElizabethReconstruction.txt"
+			set_country_flag = "queen_elizabeth_rebuilt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	reconstruct_valiant = {
+		major = yes
+		potential = {
+			date = 1936.1.3
+			tag = ENG
+			brigade_exist = "HMS Valiant"
+			not = { has_country_flag = "valiant_rebuilt" }
+		}
+		allow = {
+			not = { brigade_in_combat = "HMS Valiant" }
+			JAP = { not = { has_country_flag = "washington_treaty" } }
+		}
+		effect = {
+			remove_brigade = "HMS Valiant"
+			load_oob = "ValiantReconstruction.txt"
+			set_country_flag = "valiant_rebuilt"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Hypothetical and theoretical reconstructions here.  The AI will never fire these
+	reconstruct_schleswigholstein = {
+		major = yes
+		potential = {
+			date = 1936.1.3
+			tag = GER
+			ai = no
+			brigade_exist = "KMS Schleswig-Holstein"
+			not = { has_country_flag = "schleswigholstein_rebuilt" }
+		}
+		allow = {
+			not = { brigade_in_combat = "KMS Schleswig-Holstein" }
+			not = { has_country_flag = "washington_treaty" }
+		}
+		effect = {
+			remove_brigade = "KMS Schleswig-Holstein"
+			load_oob = "KMSSchleswigHolstein.txt"
+			set_country_flag = "schleswigholstein_rebuilt"
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	reconstruct_schlesien = {
+		major = yes
+		potential = {
+			date = 1936.1.3
+			tag = GER
+			ai = no
+			brigade_exist = "KMS Schlesien"
+			not = { has_country_flag = "schlesien_rebuilt" }
+		}
+		allow = {
+			not = { brigade_in_combat = "KMS Schlesien" }
+			not = { has_country_flag = "washington_treaty" }
+		}
+		effect = {
+			remove_brigade = "KMS Schlesien"
+			load_oob = "KMSSchlesien.txt"
+			set_country_flag = "schlesien_rebuilt"
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	reconstruct_jaime1 = {
+		major = yes
+		potential = {
+			date = 1936.1.3
+			OR = {
+				tag = SPR
+				tag = SPA
+			}
+			ai = no
+			brigade_exist = "Jaime I"
+			not = { has_country_flag = "jaime1_rebuilt" }
+		}
+		allow = {
+			not = { brigade_in_combat = "Jaime I" }
+			not = { has_country_flag = "washington_treaty" }
+		}
+		effect = {
+			remove_brigade = "Jaime I"
+			load_oob = "JaimeI.txt"
+			set_country_flag = "jaime1_rebuilt"
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	reconstruct_espana = {
+		major = yes
+		potential = {
+			date = 1936.1.3
+			OR = {
+				tag = SPR
+				tag = SPA
+			}
+			ai = no
+			brigade_exist = "España"
+			not = { has_country_flag = "espana_rebuilt" }
+		}
+		allow = {
+			not = { brigade_in_combat = "España" }
+			not = { has_country_flag = "washington_treaty" }
+		}
+		effect = {
+			remove_brigade = "España"
+			load_oob = "Espana.txt"
+			set_country_flag = "espana_rebuilt"
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,248 @@
+# Triggers are using the combat event scope
+# and are evaluated at the end of each combat
+# for every suitable leader.
+#
+# hours_required is the minimum amount of hours
+# spent in such combat required to gain such trait.
+#
+# Trigger province_temperature = X evaluates if the 
+# local temperature in combat is LOWER then X.
+# To check for higher temperature use NOT = { province_temperature = X }
+#
+# has_combat_modifier values are case sensitive!
+# Allowed options are:
+# BM_DISSENT BM_LEADER_BONUS BM_DIFFICULTY BM_ENCIRCLEMENT_PENALTY BM_ENVELOPMENT_PENALTY BM_DIVISION_PENALTY BM_EXPERIENCE BM_MISSION_EFFICIENCY BM_DUGIN_MODIFIER
+# BM_AMPH_PENALTY BM_FORT_MODIFIER BM_PARATROOP_PENALTY BM_RIVER_PENALTY BM_SHORE_BOMBARD BM_LACK_OF_SUPPLIES BM_MULTIPLE BM_COMBINED_ARMS BM_BASE_PROXIMITY BM_RADAR_STATION
+# BM_INTERCEPT BM_AIRCOMBAT BM_TERRAIN BM_WEATHER BM_NIGHT_MODIFIER BM_SURPRISE_PENALTY BM_SURPRISE_BONUS BM_POOR_SCREEN_PENALTY BM_TERRITORIAL_PRIDE BM_RADIO 
+#
+# Only 1 gainable_trait per specified trait type may be defined!
+#
+
+#New for HPP
+
+# LAND - Terrain traits
+gainable_trait = {
+	combat = land_combat
+	hours_required = 1200
+	trait = trickster
+	trigger = {
+		has_combat_modifier = BM_SURPRISE_PENALTY	
+	}
+}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 1600
+	trait = logistics_wizard
+	trigger = {
+		has_combat_modifier = BM_LACK_OF_SUPPLIES
+	}
+}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 1600
+	trait = defensive_doctrine
+	trigger = {
+		is_defender = yes
+		NOT = { trait = offensive_doctrine }
+	}
+}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 1600
+	trait = offensive_doctrine
+	trigger = {
+		is_attacker = yes
+		NOT = { trait = defensive_doctrine }
+	}
+}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 800
+	trait = winter_specialist
+	trigger = {
+		province_temperature = 0
+	}
+}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 800
+	trait = engineer
+	trigger = {
+		has_combat_modifier = BM_RIVER_PENALTY	
+	}
+}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 1000
+	trait = fortress_buster
+	trigger = {
+		has_combat_modifier = BM_FORT_MODIFIER
+		is_attacker = yes
+	}
+}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 2000
+	trait = panzer_leader
+	trigger = {
+		has_armor_unit = yes
+	}
+}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 800
+	trait = commando
+	trigger = {
+		OR = { 
+			has_combat_modifier = BM_AMPH_PENALTY
+			has_combat_modifier = BM_PARATROOP_PENALTY
+			terrain = mountain
+		}
+		has_combat_modifier = BM_LACK_OF_SUPPLIES
+	}
+}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 800
+	trait = school_of_manoeuver_trait
+	trigger = {
+		has_combat_modifier = BM_MULTIPLE
+		terrain = flat
+		is_attacker = yes
+	}
+}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 800
+	trait = school_of_psychology_trait
+	trigger = {
+		is_winner = yes
+		has_combat_modifier = BM_DISSENT
+	}
+}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 1200
+	trait = fanatic_trait
+	trigger = {
+		has_combat_modifier = BM_ENCIRCLEMENT_PENALTY
+		is_defender = yes
+	}
+}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 1200
+	trait = allround_defence_trait
+	trigger = {
+		has_combat_modifier = BM_ENVELOPMENT_PENALTY
+		is_defender = yes
+	}
+}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 1200
+	trait = school_of_entrenchment_trait
+	trigger = {
+		has_combat_modifier = BM_DUGIN_MODIFIER
+		is_defender = yes
+	}
+}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 1200
+	trait = school_of_fortification_trait
+	trigger = {
+		has_combat_modifier = BM_FORT_MODIFIER
+		is_defender = yes
+	}
+}
+#gainable_trait = {        #I've got literally no idea how one does become a drillmaster
+#	combat = land_combat
+#	hours_required = 1000
+#	trait = drillmaster_trait
+#	trigger = {
+#	
+#		
+#	}
+#}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 800
+	trait = marine_trait
+	trigger = {
+		has_combat_modifier = BM_AMPH_PENALTY
+		is_attacker = yes
+	}
+}
+gainable_trait = {
+	combat = land_combat
+	hours_required = 800
+	trait = paratrooper_trait
+	trigger = {
+		has_combat_modifier = BM_PARATROOP_PENALTY
+		is_attacker = yes
+	}
+}
+##################################
+# Naval traits.
+##################################
+gainable_trait = {
+	combat = naval_combat
+	hours_required = 1100
+	trait = seawolf
+	trigger = {
+		is_convoy = yes
+	}
+}
+
+
+gainable_trait = {
+	combat = naval_combat
+	hours_required = 1600
+	trait = superior_tactician
+	trigger = {
+		is_winner = yes
+	}
+}
+
+
+
+#AIR - Ground attacks
+gainable_trait = {
+	combat = land_bombing
+	hours_required = 1440
+	trait = tank_buster
+	trigger = {
+		is_attacker = yes
+	}
+}
+
+#AIR - Strategic bombing
+gainable_trait = {
+	combat = ground_bombing
+	hours_required = 1450
+	trait = carpet_bomber
+	trigger = {
+		is_attacker = yes
+	}
+}
+
+#AIR - Bombing naval
+gainable_trait = {
+	combat = naval_bombing
+	hours_required = 1460
+	trait = fleet_destroyer
+	trigger = {
+		is_attacker = yes
+	}
+}
+
+# AIR - Winning air battles
+gainable_trait = {
+	combat = air_combat
+	hours_required = 1470
+	trait = superior_air_tactician
+	trigger = {
+		is_winner = yes
+	}
+}

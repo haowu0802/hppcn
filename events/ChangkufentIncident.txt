@@ -1,0 +1,279 @@
+############################
+# The Changkufeng Incident #
+############################
+country_event = {
+	
+	id = 3101
+
+	major = yes
+
+	trigger = {
+		tag = JAP
+		not = { war_with = FRA }	# Not at war with the Allies
+		not = { war_with = ENG }
+		not = { war_with = USA }
+		exists = SOV
+		is_subject = no
+		SOV = { is_subject = no }
+		exists = MAN
+		MAN = { vassal_of = JAP }
+		MAN = {
+			any_owned_province = {
+				or = {
+					controlled_by = MAN
+					controlled_by = REB
+				}
+			}
+		}
+		or = {
+			neighbor = SOV
+			MAN = { neighbor = SOV }
+		}
+		SOV = {
+			not = { war_with = JAP }
+			not = { war_with = GER }
+			not = { alliance_with = JAP }
+		}
+		year = 1938
+		not = { non_aggression_pact = SOV }
+		not = { has_global_flag = "chanfukeng_incident_started" }
+	}
+
+	mean_time_to_happen =  {
+		months = 8
+	}
+
+	title = "EVTNAME3101"
+	desc = "EVTDESC3101"
+	picture = "chanfukeng"
+
+	option = {
+		name = "We can't let this happen!"
+		set_global_flag = "chanfukeng_incident_started"
+		set_global_flag = "chanfukeng_incident_ongoing"
+		GOD = {
+			add_country_modifier = {
+				name = "soviet_japanese_border_war"
+				duration = 15
+			}
+		}
+		SOV = { set_country_flag = "chanfukeng_incident_ongoing" }
+		JAP = { set_country_flag = "chanfukeng_incident_ongoing" }
+		MAN = { set_country_flag = "chanfukeng_incident_ongoing" }
+		MON = { set_country_flag = "chanfukeng_incident_ongoing" }
+		relation = { who = SOV value = -25 }
+		threat = { who = SOV value = 25 }
+		SOV = { country_event = 3102 }
+		JAP = {
+			war = {
+				target = SOV
+				attacker_goal = { casus_belli = aquire_all_cores }
+			}
+		}
+		threat = { who = all value = -20 }	# They shouldn't get threat for this.
+	}
+}
+
+# Soviet - Reaction Event
+country_event = {
+	
+	id = 3102
+
+	is_triggered_only = yes
+
+	title = "EVTNAME3102"
+	desc = "EVTDESC3102"
+	picture = "chanfukeng"
+
+	option = {
+		name = "EVTOPTA3102"
+		relation = { who = JAP value = -25 }
+		threat = { who = JAP value = 25 }
+	}
+}
+
+# Soviet decisive advance
+country_event = {
+	
+	id = 3103
+
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "Victory"
+	desc = "We entered Japanese territory. This was an important victory!"
+	picture = "chanfukeng"
+
+	option = {
+		name = "Victory is ours!"
+		ai_chance = { factor = 75 }
+		relation = { who = JAP value = 5 }
+		threat = { who = JAP value = -5 }
+		MON = { end_war = JAP }
+		MAN = { end_war = SOV }
+		non_aggression_pact = JAP
+		set_country_flag = "won_changkufeng"
+		clr_global_flag = "chanfukeng_incident_ongoing"
+		JAP = { change_variable = { which = "jap_army_navy_struggle" value = +1 } }
+	}
+	option = {
+		name = "We should go all the way!"
+		ai_chance = {
+			factor = 25
+			modifier = { factor = 0.0 tag = SOV exists = GER not = { non_aggression_pact = GER } }
+		
+			modifier = { factor = 0.0 war_with = GER }
+			modifier = { factor = 0.0 war_with = CHI }
+			modifier = { factor = 0.0 war_with = USA }
+			modifier = { factor = 0.0 war_with = ENG }
+			modifier = { factor = 0.0 war_with = FRA }
+		}
+		relation = { who = JAP value = -25 }
+		threat = { who = JAP value = 25 }
+		set_country_flag = "won_changkufeng"
+		clr_global_flag = "chanfukeng_incident_ongoing"
+		JAP = { change_variable = { which = "jap_army_navy_struggle" value = +2 } }
+	}
+}
+
+
+# Japanese decisive advance
+country_event = {
+	
+	id = 3104
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "Victory"
+	desc = "We entered Soviet territory. This was an important victory!"
+	picture = "chanfukeng"
+
+	option = {
+		name = "Victory is ours!"
+		ai_chance = { factor = 75 }
+		relation = { who = SOV value = 5 }
+		threat = { who = SOV value = -5 }
+		MON = { end_war = JAP }
+		MAN = { end_war = SOV }
+		non_aggression_pact = SOV
+		set_country_flag = "won_changkufeng"
+		clr_global_flag = "chanfukeng_incident_ongoing"
+		JAP = { change_variable = { which = "jap_army_navy_struggle" value = -1 } }
+	}
+	option = {
+		name = "We should go all the way!"
+		ai_chance = {
+			factor = 25
+			modifier = { factor = 0.0 war_with = GER }
+			modifier = { factor = 0.0 war_with = CHI }
+			modifier = { factor = 0.0 war_with = USA }
+			modifier = { factor = 0.0 war_with = ENG }
+			modifier = { factor = 0.0 war_with = FRA }
+		}
+		relation = { who = SOV value = -25 }
+		threat = { who = SOV value = 25 }
+		set_country_flag = "won_changkufeng"
+		clr_global_flag = "chanfukeng_incident_ongoing"
+		JAP = { change_variable = { which = "jap_army_navy_struggle" value = -2 } }
+	}
+}
+
+province_event = {
+	id = 3105
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = "chanfukeng_incident_ongoing"
+		last_battle_loser_losses = 100
+		FROM = { has_country_flag = "chanfukeng_incident_ongoing" }
+		THIS = { has_country_flag = "chanfukeng_incident_ongoing" }
+		owner = {
+			or = {
+				tag = JAP
+				vassal_of = JAP
+				tag = SOV
+				vassal_of = SOV
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+
+	title = "End of the Changkufeng Incident"
+	desc = "We have clearley beaten the enemy in the Changkufeng Incident. Should we press on, escalating the conflict to a national level, or should we offer to return to Status Quo?"
+	picture = "Demyansk"
+	
+	option = {
+		name = "That will be enough."
+		ai_chance = { factor = 75 }
+		set_country_flag = "won_changkufeng"
+		clr_global_flag = "chanfukeng_incident_ongoing"
+		any_country = {
+			limit = { war_with = THIS or = { tag = SOV tag = JAP } }
+			country_event = 3106
+		}
+	}
+	option = {
+		name = "On to victory!"
+		ai_chance = {
+			factor = 25
+			modifier = { factor = 0.0 tag = SOV exists = GER not = { non_aggression_pact = GER } }
+		
+			modifier = { factor = 0.0 war_with = GER }
+			modifier = { factor = 0.0 war_with = CHI }
+			modifier = { factor = 0.0 war_with = USA }
+			modifier = { factor = 0.0 war_with = ENG }
+			modifier = { factor = 0.0 war_with = FRA }
+		}
+		set_country_flag = "won_changkufeng"
+		clr_global_flag = "chanfukeng_incident_ongoing"
+		any_country = {
+			limit = { war_with = THIS or = { tag = SOV tag = JAP } }
+			country_event = 3107
+		}
+	}
+}
+
+country_event = {
+	id = 3106
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "End of the Changkufeng Incident"
+	desc = "After our last defeat we can't continue this war. $FROMCOUNTRY$ offered to return to Status Quo."
+	picture = "chanfukeng"
+	
+	option = {
+		name = "We are beaten..."
+		MON = { end_war = JAP }
+		MAN = { end_war = SOV }
+		non_aggression_pact = FROM
+		relation = { who = FROM value = 5 }
+		threat = { who = FROM value = -5 }
+	}
+}
+
+country_event = {
+
+	id = 3107
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "The incident escalates"
+	desc = "After some major clashes, the Changkufeng Incident escalated into an all-out war between the Soviet Union and the Empire of Japan."
+	picture = "chanfukeng"
+	
+	option = {
+		name = "Oh well."
+		relation = { who = FROM value = -25 }
+		threat = { who = FROM value = 25 }
+	}
+}

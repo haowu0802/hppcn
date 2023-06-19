@@ -1,0 +1,857 @@
+country_event = {
+
+	id = 8000
+	
+	is_triggered_only = yes
+	
+	title = "$FROMCOUNTRY$ is defeated"
+	desc = "The government of $FROMCOUNTRY$ has fled the country, and will now continue the fight from exile."
+	picture = "government_in_exile"
+	
+	option = {
+		name = "OK"
+		FROM = { country_event = 8001 }
+		war_exhaustion = -1		# The people love victories!
+	}
+
+}
+
+country_event = {
+
+	id = 8001
+	
+	is_triggered_only = yes
+	
+	title = "The government flees"
+	desc = "The government has fled to the capital of the leader of our faction. We will continue the fight from there!"
+	picture = "government_in_exile"
+	
+	option = {
+		name = "OK"
+		form_government_in_exile = yes
+	}
+
+}
+
+country_event = {
+
+	id = 8002
+	
+	is_triggered_only = yes
+	
+	title = "The war is over"
+	desc = "Our overlord ended their war with our enemies, so we should do the same now."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "OK"
+		any_country = { limit = { war_with = THIS not = { war_with = FROM } } end_war = THIS }
+	}
+
+}
+
+country_event = {
+
+	id = 8003
+	
+	trigger = {
+		vassal_of = SOV
+	}
+	
+	is_triggered_only = yes
+	
+	title = "The war is over"
+	desc = "The Great Patriotic War is over. Unfortunatelly, we ended up on the wrong side of the fence..."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "Oh, well..."
+		GER = { inherit = this }
+	}
+
+}
+
+
+country_event = {
+
+	id = 8005
+
+	is_triggered_only = yes
+
+	title = "The Soviets Offer a Truce"
+	desc = "SU_Bitter_peace_proposal_ger"
+	picture = "Bitter_Peace"
+
+	option = {
+		name = "Let's stop the fighting, for now..."
+		SOV = { country_event = 8006 } # for now, I don't want to make big edits to event 542 yet
+	}
+	option = {
+		name = "No peace with the Bolesheviks!"
+		SOV = { country_event = 543 }
+	}
+}
+
+country_event = {
+	id = 8006
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "Bitter Peace"
+	desc = "Germany accepted our proposal. We must secede our European holdings to them, but at least we will retain our independence."
+	picture = "Bitter_Peace"
+
+	option = {
+		name = "Accept the inevitable"
+		set_country_flag = "su_signs_peace"
+		capital = 8594 # Novosibirsk
+
+		any_owned = {
+			limit = {
+				exists = ROM
+				is_core = ROM
+				or = {
+					ROM = { faction = axis }
+					ROM = { alliance_with = GER }
+				}
+				ROM = { war_with = SOV }
+			}
+			secede_province = ROM
+			change_controller = ROM
+		}
+
+		any_owned = {
+			limit = {
+				exists = PER
+				or = { is_core = AZB is_core = ARM is_core = TRK }
+				or = {
+					PER = { faction = axis }
+					PER = { alliance_with = GER }
+				}
+				PER = { war_with = SOV }
+			}
+			secede_province = PER
+			change_controller = PER
+		}
+
+		any_owned = {
+			limit = {
+				exists = TUR
+				or = { is_core = GEO is_core = ARM is_core = AZB }
+				or = {
+					TUR = { faction = axis }
+					TUR = { alliance_with = GER }
+				}
+				TUR = { war_with = SOV }
+			}
+			secede_province = TUR
+			change_controller = TUR
+		}
+
+		any_owned = {
+			limit = {
+				exists = FIN
+				is_core = FIN
+				or = {
+					FIN = { faction = axis }
+					FIN = { alliance_with = GER }
+				}
+				FIN = { war_with = SOV }
+			}
+			secede_province = FIN
+			change_controller = FIN
+		}
+
+		any_owned = {
+			limit = {
+				exists = PER
+				is_core = PER
+			}
+			secede_province = PER
+			change_controller = PER
+		}
+
+		any_owned = {
+			limit = {
+				or = {
+					is_core = ROM
+					is_core = FIN
+					is_core = POL
+				}
+			}
+			secede_province = GER
+		}
+
+		karelia_khola_region = {
+			limit = {
+				exists = FIN
+				or = {
+					FIN = { faction = axis }
+					FIN = { alliance_with = GER }
+				}
+				FIN = { war_with = SOV }
+			}
+			secede_province = FIN
+		}
+
+		kamchatka_north_sakhalin_region = {
+			limit = {
+				exists = JAP
+				or = {
+					JAP = { faction = axis }
+					JAP = { alliance_with = GER }
+				}
+				JAP = { war_with = SOV }
+			}
+			secede_province = JAP
+		}
+
+		4390 = {
+			limit = {
+				exists = JAP
+				or = {
+					JAP = { faction = axis }
+					JAP = { alliance_with = GER }
+				}
+				JAP = { war_with = SOV }
+			}
+			secede_province = JAP
+		}
+
+		north_eastern_qing_region = {
+			limit = {
+				exists = MAN
+				or = {
+					MAN = { faction = axis }
+					MAN = { alliance_with = GER }
+				}
+				MAN = { war_with = SOV }
+			}
+			secede_province = MAN
+		}
+
+		western_qing_region = {
+			limit = {
+				exists = CHI
+				or = {
+					CHI = { faction = axis }
+					CHI = { alliance_with = GER }
+				}
+				CHI = { war_with = SOV }
+			}
+			secede_province = CHI
+		}
+
+		north_eastern_qing_region = {
+			limit = {
+				exists = CHI
+				or = {
+					CHI = { faction = axis }
+					CHI = { alliance_with = GER }
+				}
+				CHI = { war_with = SOV }
+			}
+			secede_province = CHI
+		}
+
+		transnistria_region = {
+			limit = {
+				exists = ROM
+				or = {
+					ROM = { faction = axis }
+					ROM = { alliance_with = GER }
+				}
+				ROM = { war_with = SOV }
+			}
+			secede_province = ROM
+		}
+
+		a_a_line_region = { secede_province = GER }
+		central_western_russia_region = { secede_province = GER }
+		karelia_khola_region = { secede_province = GER } # in case Finland doesn't get it
+
+		any_owned = {
+			limit = {
+				or = { is_core = LAT is_core = EST is_core = LIT }	# The Baltics go to Germany
+			}
+			secede_province = GER
+		}
+		
+		any_country = {
+			limit = {
+				or = { tag = LAT tag = EST tag = LIT }				# Even if they are still Soviet puppets
+			}
+			country_event = 8003
+		}
+		
+		any_country = {
+			limit = {
+				war_with = SOV
+				or = {
+					faction = axis
+					alliance_with = GER
+				}
+			}
+			relation = { who = SOV value = 20 }
+			end_war = SOV
+		}
+
+		any_country = {
+			limit = {
+				vassal_of = SOV
+				war_with = GER
+			}
+			end_war = GER
+			country_event = 8002
+		}
+
+		any_country = {
+			limit = {
+				war_with = GER
+			}
+			relation = { who = SOV value = -100 }
+		}
+
+		relation = { who = GER value = 30 }
+
+		dissent = 10
+		neutrality = 50
+		threat = { who = all value = -150 }	# They just got their ass kicked...
+		FROM = { country_event = 503 }
+	}
+}
+
+
+country_event = {
+
+	id = 8007
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	title = "EVTNAME504"
+	desc = "EVTDESC504"
+	picture = "VIC"
+	
+	option = {
+		name = "EVTOPTA504"					# Continue the fight as Free France
+		
+		# Distribute the Axis cores
+		any_country = {
+			limit = { faction = axis war_with = FRA }
+			country_event = 8008
+		}
+		VIC = { capital = 3484 }
+		release = VIC
+		
+		# Now give Vichy all the metropolitan regions that are still under French control
+		alsace_region 					= { limit = { alsace_region 					= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		lorraine_region 				= { limit = { lorraine_region 					= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		franche_comte_region 			= { limit = { franche_comte_region 				= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		champagne_ardenne_region 		= { limit = { champagne_ardenne_region 			= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		nord_pas_de_calais_region 		= { limit = { nord_pas_de_calais_region 		= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		picardie_region 				= { limit = { picardie_region 					= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		haute_normandie_region 			= { limit = { haute_normandie_region 			= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		basse_normandie_region 			= { limit = { basse_normandie_region 			= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		bretagne_region 				= { limit = { bretagne_region 					= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		pays_de_la_loire_region 		= { limit = { pays_de_la_loire_region 			= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		ile_de_france_region 			= { limit = { ile_de_france_region 				= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		centre_region 					= { limit = { centre_region 					= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		bourgogne_region 				= { limit = { bourgogne_region 					= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		poitou_charentes_region 		= { limit = { poitou_charentes_region 			= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		aquitaine_region 				= { limit = { aquitaine_region 					= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		midi_pyrenees_region 			= { limit = { midi_pyrenees_region 				= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		limousin_region 				= { limit = { limousin_region 					= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		auvergne_region 				= { limit = { auvergne_region 					= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		rhone_alpes_region 				= { limit = { rhone_alpes_region 				= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		langeudoc_roussillon_region 	= { limit = { langeudoc_roussillon_region 		= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		provence_alpes_cotedazur_region = { limit = { provence_alpes_cotedazur_region 	= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		corse_region 					= { limit = { corse_region 						= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		# Colonies and other territories
+		# Tunisia
+		tunisia_region 					= { limit = { tunisia_region					= { controlled_by = THIS } } secede_province = VIC change_controller = VIC }
+		# Algeria
+		algiers_region 					= { limit = { algiers_region 					= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		bone_region 					= { limit = { bone_region 						= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		batna_region 					= { limit = { batna_region 						= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		constantine_region 				= { limit = { constantine_region 				= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		orleansville_region 			= { limit = { orleansville_region 				= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		oasis_region 					= { limit = { oasis_region 						= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		medea_region 					= { limit = { medea_region 						= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		mostaganem_region 				= { limit = { mostaganem_region 				= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		oran_region 					= { limit = { oran_region 						= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		saida_region 					= { limit = { saida_region 						= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		saoura_region 					= { limit = { saoura_region 					= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		setif_region 					= { limit = { setif_region 						= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		tiaret_region 					= { limit = { tiaret_region 					= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		tizi_ouzou_region 				= { limit = { tizi_ouzou_region 				= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		tlemcen_region 					= { limit = { tlemcen_region 					= { controlled_by = THIS } } secede_province = VIC change_controller = VIC add_core = VIC }
+		
+		any_owned = {
+			limit = {
+				controlled_by = THIS
+				not = { region = FRA_5919 }						# Zhanjiang
+				not = { region = equitorial_africa_region }		# Central Africa
+			}
+			secede_province = VIC
+		}
+		
+		VIC = { split_troops = 0.8 }
+		ENG = { split_troops = 1.0 }
+		VIC = {
+			government = right_wing_republic
+			head_of_state = 57001
+			head_of_government = 57002
+			foreign_minister = 57002
+			armament_minister = 57019
+			minister_of_security = 57026
+			minister_of_intelligence = 57006
+			chief_of_staff = 57002
+			chief_of_army = 57034
+			chief_of_navy = 57002
+			chief_of_air = 57010
+			any_country = {
+				limit = { faction = axis }
+				non_aggression_pact = VIC
+				military_access = VIC
+			}
+			GER = { threat = { who = VIC value = -150 } }
+			neutrality = 100	# They are happy to be out of the war...
+			add_country_modifier = {
+				name = "vichy_armistice"
+				duration = -1
+			}
+			any_country = {
+				limit = { vassal_of = FRA }
+				country_event = 514
+			}
+		}	
+
+		FRA = {
+			national_unity = 90
+			##De Gaulle Cabinet##
+			country_event = 565
+			country_event = 566
+			country_event = 567
+			10028 = {
+				air_base = 4
+			}
+			energy = 2000
+			metal = 1000
+			rare_materials = 500
+			supplies = 15000
+			fuel = 5000
+			load_oob = "FreeFrance.txt"
+		}
+	}
+}
+
+country_event = {
+
+	id = 8008
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		or = {
+			FRA = {
+				any_owned_province = {
+					is_core = THIS
+				}
+			}
+			VIC = {
+				any_owned_province = {
+					is_core = THIS
+				}
+			}
+		}
+	}
+	
+	title = "French territory"
+	desc = "After the Fall of France and the formation of the new, Axis-friendly regime, we annexed their territories that are rightfully ours."
+	picture = "VIC"
+	
+	option = {
+		name = "Excellent!"
+		dissent = -2
+		FROM = {
+			any_owned = {
+				limit = { is_core = THIS }
+				secede_province = THIS
+			}
+		}
+		VIC = {
+			any_owned = {
+				limit = { is_core = THIS }
+				secede_province = THIS
+			}
+		}
+	}
+}
+#############################################
+# These events kick in if the UK loses
+#############################################
+
+
+#Deal with the main island first
+country_event = {
+
+	id = 3962
+	
+	major = yes
+	
+	trigger = {
+		NOT = { exists = ENG }
+		tag = GER
+		GER = { NOT = { has_country_flag = brit_emp_pt1 } }
+	}		
+	
+	title = "The fate of the British Empire Part 1: Great Britain"
+	desc = "uk_surrender_pt1_desc"
+	picture = "chameberlain"
+	
+	option = {
+		name = "Release Scotland and England"
+		ai_chance = { factor = 60 }
+		set_country_flag = brit_emp_pt1
+		any_owned = {
+			limit = { is_core = SCO }
+			remove_core = ENG
+			secede_province = SCO
+		}
+		SCO = {
+			government = right_wing_republic
+			head_of_state = 922488
+			head_of_government = 922500
+			foreign_minister = 922484
+			armament_minister = 922498
+			minister_of_security = 922486
+			minister_of_intelligence = 9224487
+			chief_of_staff = 922494
+			chief_of_army = 922482
+			chief_of_navy = 922492
+			chief_of_air = 922510
+			neutrality = 100
+			country_event = 801
+		}
+		604 = { remove_core = ENG }
+		417 = { remove_core = ENG }
+		7938 = { remove_core = ENG }
+		2021 = { remove_core = ENG }
+		any_owned = {
+			limit = { 
+				is_core = ENG
+				NOT = { is_core = IRE }
+				}
+			secede_province = ENG
+		}
+		any_owned = {
+			limit = { 
+				is_core = IRE
+				is_core = ENG
+			}
+			remove_core = ENG
+		}
+		ENG = {
+			government = fascist_republic
+			head_of_state = 1031
+			head_of_government = 1042
+			foreign_minister = 1049
+			armament_minister = 1042
+			minister_of_security = 1090
+			minister_of_intelligence = 1110
+			chief_of_staff = 1108
+			chief_of_army = 1124
+			chief_of_navy = 1108
+			chief_of_air = 1151
+			neutrality = 100
+			country_event = 801
+		}
+		country_event = 3963
+	}
+	
+	option = {
+		name = "Only Release Scotland"
+		ai_chance = { factor = 25 }
+		set_country_flag = brit_emp_pt1
+		any_owned = {
+			limit = { is_core = SCO }
+			remove_core = ENG
+			secede_province = SCO
+		}
+		SCO = {
+			government = right_wing_republic
+			head_of_state = 922488
+			head_of_government = 922500
+			foreign_minister = 922484
+			armament_minister = 922498
+			minister_of_security = 922486
+			minister_of_intelligence = 9224487
+			chief_of_staff = 922494
+			chief_of_army = 922482
+			chief_of_navy = 922492
+			chief_of_air = 922510
+			neutrality = 100
+			country_event = 801
+		}
+		#This will take care of cases like Spain invading Scotland to help
+		any_country = {
+			any_owned = {
+				limit = { 
+					is_core = ENG
+					faction = Axis
+				}
+			secede_province = GER
+			}
+		}
+		USA = { neutrality = -5 }
+		country_event = 3963
+	}
+	
+	option = {
+		name = "Release the United Kingdom"
+		set_country_flag = brit_emp_pt1
+		ai_chance = { factor = 15 }
+		604 = { remove_core = ENG }
+		417 = { remove_core = ENG }
+		7938 = { remove_core = ENG }
+		2021 = { remove_core = ENG }
+		any_owned = {
+			limit = { 
+				is_core = ENG
+				NOT = { is_core = IRE }
+				}
+			secede_province = ENG
+		}
+		any_owned = {
+			limit = { is_core = IRE }
+			remove_core = ENG
+		}
+		ENG = {
+			government = fascist_republic
+			head_of_state = 1031
+			head_of_government = 1042
+			foreign_minister = 1049
+			armament_minister = 1042
+			minister_of_security = 1090
+			minister_of_intelligence = 1110
+			chief_of_staff = 1108
+			chief_of_army = 1124
+			chief_of_navy = 1108
+			chief_of_air = 1151
+			neutrality = 100
+			country_event = 801
+		}
+		country_event = 3963
+	}
+	option = {
+		name = "Annex the island of Great Britain"
+		set_country_flag = brit_emp_pt1
+		ai_chance = { factor = 5 }
+		#This will take care of cases like Spain invading Scotland to help
+		any_country = {
+			any_owned = {
+				limit = { 
+					is_core = ENG
+					faction = Axis
+				}
+			secede_province = GER
+			}
+		}
+		USA = { neutrality = -15 }
+		SOV = { neutrality = -10 }
+		country_event = 3963
+	}
+		
+}
+
+#Deal with Northern Ireland and Ireland next
+country_event = {
+
+	id = 3963
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "The fate of the British Empire Part 2: Northern Ireland"
+	desc = "uk_surrender_pt2_desc"
+	picture = "chameberlain"
+	
+	option = {
+		name = "Give it to Ireland (will create Ireland if it doesn't exist)"
+		ai_chance = { factor = 60 }
+		set_country_flag = brit_emp_pt2
+		any_owned = {
+			limit = { is_core = IRE }
+			secede_province = IRE
+		}
+		IRE = {
+			coup_by = GER
+			GER = { create_vassal = IRE }
+			relation = { who = GER value = 400 }
+		}
+		country_event = 3964
+	}
+	
+	option = {
+		name = "Keep it"
+		ai_chance = { factor = 25 }
+		set_country_flag = brit_emp_pt2
+
+		#This will take care of cases like Spain invading Scotland to help
+		any_country = {
+			any_owned = {
+				limit = { 
+					is_core = IRE
+					faction = Axis
+				}
+			secede_province = GER
+			}
+		}
+		USA = { neutrality = -5 }
+		country_event = 3964
+	}
+
+}
+# Handle French territory
+country_event = {
+
+	id = 3964
+
+	is_triggered_only = yes
+
+	title = "The French State negotiates the return of land"
+	desc = "After the defeat of the Allies, the French State demanded that Germany return occupied land."
+	picture = "law"
+
+	option = {
+		name = "No Way!"
+		USA = { neutrality = -15 }
+		SOV = { neutrality = -10 }
+		VIC = { neutrality = -75 }
+		country_event = 3965
+	}
+	option = {
+		name = "We will return most of France proper"
+		#Spain gives land to Vichy
+
+		#Germany gives land to Spain if it's in the Axis
+		post_allies_spain_region = {
+			limit = {
+				SPA = { faction=axis }
+			}
+			remove_core = VIC
+			secede_province = SPA
+		}
+		#Germany gives land to Italy if its in the Axis
+		post_allies_italy_region = {
+			limit = {
+				ITA = { faction=axis }
+			}
+			remove_core = VIC
+			secede_province = ITA
+		}
+		#Germany keeps eastern France
+		post_allies_germany_region = {
+			remove_core = VIC
+		}
+
+		VIC = {
+		#Vichy gives land to Spain if it's in the Axis
+			post_allies_spain_region = {
+				limit = {
+					SPA = { faction=axis }
+				}
+				remove_core = VIC
+				secede_province = SPA
+			}
+		#Vichy gives land to Italy if its in the Axis
+			post_allies_italy_region = {
+				limit = {
+					ITA = { faction=axis }
+				}
+				remove_core = VIC
+				secede_province = ITA
+			}
+			sudan_somaliland_djibouti_region = {
+				limit = {
+					ITA = { faction=axis }
+				}
+				remove_core = VIC
+				secede_province = ITA
+			}
+		#Vichy gives land to Germany
+			#Eastern France
+			post_allies_germany_region = {
+				remove_core = VIC
+				secede_province = GER
+			}
+			#Madagascar
+			any_owned = {
+				limit = { is_core = MAD }
+				secede_province = GER
+			}
+			#Cameroon
+			cameroon_region = {
+				secede_province = GER
+			}
+			#East African island bases
+			11386 = { secede_province = GER } #Comoros
+			10634 = { secede_province = GER } #Reunion
+		}
+
+		#Italy gives land to Vichy
+		ITA = { any_owned = { limit = { is_core = VIC } secede_province = VIC } } #generic core return
+
+		#Germany gives land to Vichy
+		any_owned = { limit = { is_core = VIC } secede_province = VIC } #generic core return
+			#Vichy gets eastern Nigeria, Ghana, and Gambia as payment for above losses
+		vichy_gains_uk_region = {
+			remove_core = ENG
+			secede_province = VIC
+		}
+		vichy_equitorial_africa_region = {
+			secede_province = VIC
+		}
+		country_event = 3965
+	}
+}
+# Handle South Africa territory
+country_event = {
+
+	id = 3965
+
+	is_triggered_only = yes
+
+	title = "South Africa negotiates the return of Namibia"
+	desc = "After the defeat of the Allies, South Africa, which harbored many German supporters, negotiated the return of Namibia in exchange for southern Rhodesia"
+	picture = "law"
+
+	option = {
+		name = "No Way!"
+		USA = { neutrality = -5 }
+		SAF = { neutrality = -75 }
+	}
+	option = {
+		name = "We agree to the trade"
+		SAF = {
+			end_war = GER
+			namibia_region = {
+				secede_province = GER
+			}
+			#reduce ruling party support
+			popularity = -25
+			organization = -25
+			#increase fascistic and nazi support
+			national_socialist 	= { organisation = 10 popularity = 10 }
+			fascistic 			= { organisation = 15 popularity = 15 }
+		}
+		botswana_zimbabwe_region = {
+			secede_province = SAF
+		}
+	}
+}

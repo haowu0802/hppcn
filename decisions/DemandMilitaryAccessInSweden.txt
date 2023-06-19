@@ -1,0 +1,48 @@
+diplomatic_decisions = {
+
+	trade_iron_with_sweden = {
+		potential = {
+			tag = GER
+			exists = SWE
+			not = { war_with = SWE }
+			not = { has_country_flag = ask_for_iron_trade }
+		}
+		allow = {
+			relation = { who = SWE value = 50 }
+		}
+		effect = {
+			set_country_flag = ask_for_iron_trade
+			SWE = { country_event = 3056 }
+		}
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+
+	demand_military_access_in_sweden = {
+		major = yes
+		potential = {
+			tag = GER
+			exists = SWE
+			war_with = NOR
+			not = { war_with = SWE }
+			not = { military_access = SWE }
+			not = { has_country_flag = demand_military_access_through_sweden }
+		}
+		allow = {
+			or = {
+				not = { exists = DEN }
+				DEN = { vassal_of = GER }
+				DEN = { government_in_exile = yes }
+			}
+		}
+		effect = {
+			set_country_flag = demand_military_access_through_sweden
+			SWE = { country_event = 3051 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

@@ -1,0 +1,1497 @@
+###################################################################
+# Start of a Political Crisis, which can result in a Coup d'etat. #
+###################################################################
+
+country_event = {
+
+	id = 4001
+
+	major = yes
+
+	trigger = {
+		not = {
+			or = {
+				organisation = 50
+				popularity = 30
+			}
+		}
+		not = { national_unity = 80 }
+		dissent = 5
+		government_in_exile = no
+		is_subject = no
+		not = { government = state_of_emergency }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = { factor = 2.0 government = social_democracy }	# Democracies can have elections, so they are less keen on forcing things.
+		modifier = { factor = 2.0 government = social_conservatism }
+		modifier = { factor = 2.0 government = constitutional_monarchy }
+		
+		modifier = { factor = 0.25 government = protectorate }		# Former puppets are exceptionally voulnerable!
+		modifier = { factor = 0.25 government = colonial_puppet }
+		modifier = { factor = 0.25 government = democratic_puppet }
+		modifier = { factor = 0.25 government = socialist_puppet }
+		modifier = { factor = 0.25 government = fascist_puppet }
+		
+		modifier = { factor = 0.8 dissent = 6 }
+		modifier = { factor = 0.8 dissent = 8 }
+		modifier = { factor = 0.8 dissent = 10 }
+		modifier = { factor = 0.5 dissent = 20 }
+		modifier = { factor = 0.2 dissent = 30 }
+		modifier = { factor = 0.1 dissent = 40 }
+		modifier = { factor = 0.01 dissent = 50 }
+
+		modifier = { factor = 0.9 not = { national_unity = 75 } }
+		modifier = { factor = 0.7 not = { national_unity = 70 } }
+		modifier = { factor = 0.6 not = { national_unity = 65 } }
+		modifier = { factor = 0.5 not = { national_unity = 60 } }
+		modifier = { factor = 0.4 not = { national_unity = 50 } }
+
+		modifier = { factor = 0.9 not = { organisation = 45 } }
+		modifier = { factor = 0.9 not = { organisation = 40 } }
+		modifier = { factor = 0.9 not = { organisation = 35 } }
+		modifier = { factor = 0.9 not = { organisation = 30 } }
+		modifier = { factor = 0.9 not = { organisation = 25 } }
+		modifier = { factor = 0.9 not = { organisation = 20 } }
+		modifier = { factor = 0.9 not = { organisation = 15 } }
+		modifier = { factor = 0.9 not = { organisation = 10 } }
+		modifier = { factor = 0.9 not = { organisation =  5 } }
+		
+		modifier = {
+			factor = 0.25
+			or = {
+				and = {
+					faction = axis
+					not = { ideology_group = fascism }
+					not = { ideology = social_conservative }
+				}
+				and = {
+					faction = allies
+					not = { ideology_group = democracy }
+					not = { ideology = paternal_autocrat }
+					not = { ideology = left_wing_radical }
+				}
+				and = {
+					faction = comintern
+					not = { ideology_group = communism }
+					not = { ideology = social_democrat }
+				}
+			}
+		}
+
+		modifier = { factor = 2.0 war = yes }
+	}
+
+	title = "Political crisis!"
+	desc = "The situation in our nation reached the boiling point. If we do nothing, there will be civil war soon!"
+	picture = "coup"
+
+	option = {
+		name = "Resign"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+			modifier = {
+				factor = 0.25
+				or = {
+					government = colonial_puppet
+					government = protectorate
+					government = socialist_puppet
+					government = fascist_puppet
+				}
+			}
+		}
+		organisation = -50
+		do_election = THIS
+		set_country_flag = "coup"
+		add_country_modifier = {
+			name = "consolidating_power"		# Of the new government, or if this one will get
+			duration = 25						# re-elected, then this one!
+		}
+		
+		# Soft-oppression removed
+		clr_country_flag = "steps_against_national_socialist"
+		clr_country_flag = "steps_against_fascistic"
+		clr_country_flag = "steps_against_paternal_autocrat"
+		clr_country_flag = "steps_against_social_conservative"
+		clr_country_flag = "steps_against_market_liberak"
+		clr_country_flag = "steps_against_social_liberal"
+		clr_country_flag = "steps_against_social_democrat"
+		clr_country_flag = "steps_against_left_wing_radical"
+		clr_country_flag = "steps_against_leninist"
+		clr_country_flag = "steps_against_stalinist"
+		
+		# Hard-oppression removed
+		clr_country_flag = "national_socialist_outlawed"
+		clr_country_flag = "fascistic_outlawed"
+		clr_country_flag = "paternal_autocrat_outlawed"
+		clr_country_flag = "social_conservative_outlawed"
+		clr_country_flag = "market_liberak_outlawed"
+		clr_country_flag = "social_liberal_outlawed"
+		clr_country_flag = "social_democrat_outlawed"
+		clr_country_flag = "left_wing_radical_outlawed"
+		clr_country_flag = "leninist_outlawed"
+		clr_country_flag = "stalinist_outlawed"
+		
+		clr_country_flag = "new_parties_prohibited"
+	}
+	option = {
+		name = "Declare State of Emergency!"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 5.0
+				or = {
+					government = colonial_puppet
+					government = protectorate
+					government = socialist_puppet
+					government = fascist_puppet
+				}
+			}
+		}
+
+		government = state_of_emergency
+
+		dissent = 5
+
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+
+		add_country_modifier = {
+			name = "political_crisis"
+			duration = -1
+		}
+	}
+}
+
+###########################################
+# Special 'political crisis' for Puppets. #
+###########################################
+
+country_event = {
+
+	id = 4002
+
+	major = yes
+
+	trigger = {
+		is_subject = yes
+		government_in_exile = no
+		not = { organisation = 20 }
+		not = { has_country_modifier = "political_crisis" }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "The regime is weak!"
+	desc = "The puppet regime installed by our overlord is too weak to rule efficiently, and it is on the verge of collapse!"
+	picture = "coup"
+
+	option = {
+		name = "Let's hope for intervention..."
+		
+		random_owned = { create_revolt = 1 }
+		random_owned = { create_revolt = 1 }
+		random_owned = { create_revolt = 1 }
+
+		add_country_modifier = {
+			name = "political_crisis"
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+
+	id = 4003
+	
+	major = yes
+	
+	trigger = {
+		is_subject = yes
+		government_in_exile = no
+		has_country_modifier = "political_crisis"
+		or = {
+			not = { organisation = 10 }
+			vassal_of = FROM
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	title = "Coup d'état"
+	desc = "The opposition managed to overthrow the puppet regime and declared independence!"
+	picture = "regime_falls"
+	
+	option = {
+		name = "Freedom at last!"
+		remove_country_modifier = "political_crisis"
+		any_country = {
+			country_event = 4015
+		}
+		GOD = { split_troops = 1.0 }
+		GOD = { country_event = 7202 }
+		country_event = 4004
+	}
+}
+
+country_event = {
+
+	id = 4004
+	
+	is_triggered_only = yes
+	
+	title = "The new regime"
+	desc = "The coup has succeeded and we have our chance to restore order!"
+	picture = "parliamentary_scandal"
+
+	option = {
+		name = "Time to restore the order"
+		
+		# Soft-oppression removed
+		clr_country_flag = "steps_against_national_socialist"
+		clr_country_flag = "steps_against_fascistic"
+		clr_country_flag = "steps_against_paternal_autocrat"
+		clr_country_flag = "steps_against_social_conservative"
+		clr_country_flag = "steps_against_market_liberak"
+		clr_country_flag = "steps_against_social_liberal"
+		clr_country_flag = "steps_against_social_democrat"
+		clr_country_flag = "steps_against_left_wing_radical"
+		clr_country_flag = "steps_against_leninist"
+		clr_country_flag = "steps_against_stalinist"
+		
+		# Hard-oppression removed
+		clr_country_flag = "national_socialist_outlawed"
+		clr_country_flag = "fascistic_outlawed"
+		clr_country_flag = "paternal_autocrat_outlawed"
+		clr_country_flag = "social_conservative_outlawed"
+		clr_country_flag = "market_liberak_outlawed"
+		clr_country_flag = "social_liberal_outlawed"
+		clr_country_flag = "social_democrat_outlawed"
+		clr_country_flag = "left_wing_radical_outlawed"
+		clr_country_flag = "leninist_outlawed"
+		clr_country_flag = "stalinist_outlawed"
+		
+		clr_country_flag = "new_parties_prohibited"
+
+		organisation = -50
+		do_election = THIS
+		
+		set_country_flag = "coup"
+		add_country_modifier = {
+			name = "consolidating_power"		# Of the new government, or if this one will get
+			duration = 25						# re-elected, then this one!
+		}
+
+	}
+}
+
+###########################################################
+# Events during the Political Crisis (State of Emergency) #
+###########################################################
+
+###########
+# Revolt! #
+###########
+
+country_event = {
+
+	id = 4005
+
+	trigger = {
+		government = state_of_emergency
+		has_country_modifier = "political_crisis"
+		not = { popularity = 30 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	title = "Local revolts"
+	desc = "Some of the populace are less than happy with our restrictions. They fail to see the bigger picture!"
+	picture = "uprising"
+
+	option = {
+		name = "We need to be strong!"
+
+		random_owned = { create_revolt = 3 }
+		random_owned = { create_revolt = 3 }
+		random_owned = { create_revolt = 3 }
+	}
+
+}
+
+###################
+# Order restored! #
+###################
+
+country_event = {
+
+	id = 4006
+
+	major = yes
+
+	trigger = {
+		government = state_of_emergency
+		has_country_modifier = "political_crisis"
+		or = {
+			popularity = 35
+			organisation = 50
+		}
+	}
+
+	title = "Order restored!"
+	desc = "We have finally been able to restor order and regain the confidence of the people in our government!"
+	picture = "great_war_manifestion"
+
+	option = {
+		name = "Finally!"
+		remove_country_modifier = "political_crisis"
+		clr_country_flag = "limit_civil_rights"
+		clr_country_flag = "martial_law"
+		clr_country_flag = "blame_the_opposition"
+	}
+}
+
+#######################################
+# Taking steps to suppress the people #
+#######################################
+
+country_event = {
+
+	id = 4007
+
+	trigger = {
+		not = { has_country_flag = blame_the_opposition }
+		government = state_of_emergency
+		has_country_modifier = "political_crisis"
+		popularity = 30
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	title = "Blame the opposition"
+	desc = "We can always blame the opposition for the problems in our nation!"
+	picture = "minister_resign"
+
+	option = {
+		name = "We can't do that!..."
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "It's all their fault!"
+		set_country_flag = blame_the_opposition
+
+		national_unity = -5
+
+		national_socialist = 		{ popularity = -10 }
+		fascistic = 				{ popularity = -10 }
+		paternal_autocrat = 		{ popularity = -10 }
+		social_conservative = 		{ popularity = -10 }
+		social_democrat = 			{ popularity = -10 }
+		social_liberal = 			{ popularity = -10 }
+		market_liberal = 			{ popularity = -10 }
+		left_wing_radical = 		{ popularity = -10 }
+		leninist = 					{ popularity = -10 }
+		stalinist = 				{ popularity = -10 }
+		popularity = 10
+	}
+
+}
+
+country_event = {
+
+	id = 4008
+
+	trigger = {
+		not = { has_country_flag = martial_law }
+		government = state_of_emergency
+		has_country_modifier = "political_crisis"
+		organisation = 30
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	title = "Declare Martial Law"
+	desc = "We need to declare Martial Law, to restore order! That will help silence the main advocates of the opposition."
+	picture = "politician"
+
+	option = {
+		name = "There's no need!"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "There's no other way!"
+		set_country_flag = martial_law
+
+		dissent = 5
+
+		national_socialist = 		{ organisation = -10 }
+		fascistic = 				{ organisation = -10 }
+		paternal_autocrat = 		{ organisation = -10 }
+		social_conservative = 		{ organisation = -10 }
+		social_democrat = 			{ organisation = -10 }
+		social_liberal = 			{ organisation = -10 }
+		market_liberal = 			{ organisation = -10 }
+		left_wing_radical = 		{ organisation = -10 }
+		leninist = 					{ organisation = -10 }
+		stalinist = 				{ organisation = -10 }
+		organisation = 20
+	}
+}
+
+country_event = {
+
+	id = 4009
+
+	trigger = {
+		not = { has_country_flag = limit_civil_rights }
+		government = state_of_emergency
+		has_country_modifier = "political_crisis"
+		organisation = 30
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	title = "Limit civil rights"
+	desc = "In order to stop this chaos, we need to limit some civil rights like the freedom of movement or the freedom of press. We can reinstate them when all this is over..."
+	picture = "constitutional"
+
+	option = {
+		name = "There's no need!"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "It's for the greater good!"
+		set_country_flag = limit_civil_rights
+
+		threat = { who = all value = 5 }
+		dissent = 2
+		national_unity = -2
+
+		organisation = 15
+	}
+}
+country_event = {
+
+	id = 4010
+
+	major = yes
+
+	trigger = {
+		government = state_of_emergency
+		has_country_modifier = "political_crisis"
+		not = { popularity = 20 }
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	title = "Coup d'état"
+	desc = "Opposition forces managed to organise a coup in our capital! There's nothing we could do..."
+	picture = "regime_falls"
+
+	option = {
+		name = "Long live the revolution!"
+		remove_country_modifier = "political_crisis"
+		clr_country_flag = "limit_civil_rights"
+		clr_country_flag = "martial_law"
+		clr_country_flag = "blame_the_opposition"
+		
+		# Soft-oppression removed
+		clr_country_flag = "steps_against_national_socialist"
+		clr_country_flag = "steps_against_fascistic"
+		clr_country_flag = "steps_against_paternal_autocrat"
+		clr_country_flag = "steps_against_social_conservative"
+		clr_country_flag = "steps_against_market_liberak"
+		clr_country_flag = "steps_against_social_liberal"
+		clr_country_flag = "steps_against_social_democrat"
+		clr_country_flag = "steps_against_left_wing_radical"
+		clr_country_flag = "steps_against_leninist"
+		clr_country_flag = "steps_against_stalinist"
+		
+		# Hard-oppression removed
+		clr_country_flag = "national_socialist_outlawed"
+		clr_country_flag = "fascistic_outlawed"
+		clr_country_flag = "paternal_autocrat_outlawed"
+		clr_country_flag = "social_conservative_outlawed"
+		clr_country_flag = "market_liberak_outlawed"
+		clr_country_flag = "social_liberal_outlawed"
+		clr_country_flag = "social_democrat_outlawed"
+		clr_country_flag = "left_wing_radical_outlawed"
+		clr_country_flag = "leninist_outlawed"
+		clr_country_flag = "stalinist_outlawed"
+		
+		clr_country_flag = "new_parties_prohibited"
+
+		organisation = -50
+		do_election = THIS
+
+		set_country_flag = "coup"
+		add_country_modifier = {
+			name = "consolidating_power"		# Of the new government, or if this one will get
+			duration = 25						# re-elected, then this one!
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 4015
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { vassal_of = THIS }
+	}
+	
+	title = "$FROMCOUNTRY$ breaks away!"
+	desc = "Our puppet regime in $FROMCOUNTRY$ has been removed from power and the new government have broken away from us! What should we do now?"
+	picture = "regime_falls"
+	
+	option = {
+		name = "Let them go."
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 2.0 ideology_group = democracy FROM = { ideology_group = democracy } }
+			modifier = { factor = 0.0 not = { ideology_group = democracy } }
+		}
+		threat = { who = all value = -5 }
+	}
+	
+	option = {
+		name = "They belong to us!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.0 ideology_group = democracy FROM = { ideology_group = democracy } }
+			modifier = { factor = 2.0 not = { ideology_group = democracy } }
+		}
+		FROM = { country_event = 4016 }
+	}
+
+}
+
+country_event = {
+
+	id = 4016
+	
+	is_triggered_only = yes
+	
+	title = "Fight for independence"
+	desc = "$FROMCOUNTRY$ won't let us go without a fight."
+	picture = "regime_falls"
+	
+	option = {
+		name = "Then we will fight to the end!"
+		FROM = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = puppet }
+				defender_goal = { casus_belli = concede_defeat }
+			}
+		}
+	}
+
+}
+
+################################################################
+# The Overlord consolidates its power in the new Puppet State. #
+################################################################
+# Fascistic version #
+#####################
+
+country_event = {
+
+	id = 4021
+
+	trigger = {
+		has_country_flag = fascist_puppet
+		not = { ideology_group = fascism }
+		government = installing_puppet
+	}
+
+	title = "The foreign supported government is struggling for power"
+	desc = "The new regime still can't restore order, and there is chaos all over the country."
+	picture = "coup"
+
+	option = {
+		name = "We need to restore order!"
+		organisation = -10				# Instant org. hit
+		organisation = -10
+		organisation = -10
+		organisation = -10
+		national_socialist = { organisation = 5 popularity = 10 }
+		fascistic = { organisation = 10 popularity = 10 }
+		paternal_autocrat = { organisation = 15 popularity = 10 }
+
+		dissent = 1
+		
+		# Soft-oppression removed
+		clr_country_flag = "steps_against_national_socialist"
+		clr_country_flag = "steps_against_fascistic"
+		clr_country_flag = "steps_against_paternal_autocrat"
+		clr_country_flag = "steps_against_social_conservative"
+		clr_country_flag = "steps_against_market_liberak"
+		clr_country_flag = "steps_against_social_liberal"
+		clr_country_flag = "steps_against_social_democrat"
+		clr_country_flag = "steps_against_left_wing_radical"
+		clr_country_flag = "steps_against_leninist"
+		clr_country_flag = "steps_against_stalinist"
+		
+		# Hard-oppression removed
+		clr_country_flag = "national_socialist_outlawed"
+		clr_country_flag = "fascistic_outlawed"
+		clr_country_flag = "paternal_autocrat_outlawed"
+		clr_country_flag = "social_conservative_outlawed"
+		clr_country_flag = "market_liberak_outlawed"
+		clr_country_flag = "social_liberal_outlawed"
+		clr_country_flag = "social_democrat_outlawed"
+		clr_country_flag = "left_wing_radical_outlawed"
+		clr_country_flag = "leninist_outlawed"
+		clr_country_flag = "stalinist_outlawed"
+		
+		clr_country_flag = "new_parties_prohibited"
+	}
+
+}
+
+#####################
+# Socialist version #
+#####################
+
+country_event = {
+
+	id = 4022
+
+	trigger = {
+		has_country_flag = socialist_puppet
+		not = { ideology_group = communism }
+		government = installing_puppet
+	}
+
+	title = "The foreign supported government is struggling for power"
+	desc = "The new regime still can't restore order, and there is chaos all over the country."
+	picture = "coup"
+
+	option = {
+		name = "We need to restore order!"
+		organisation = -10				# Instant org. hit
+		organisation = -10
+		organisation = -10
+		organisation = -10
+		stalinist = { organisation = 5 popularity = 10 }
+		leninist = { organisation = 10 popularity = 10 }
+		left_wing_radical = { organisation = 15 popularity = 10 }
+
+		dissent = 1
+		
+		# Soft-oppression removed
+		clr_country_flag = "steps_against_national_socialist"
+		clr_country_flag = "steps_against_fascistic"
+		clr_country_flag = "steps_against_paternal_autocrat"
+		clr_country_flag = "steps_against_social_conservative"
+		clr_country_flag = "steps_against_market_liberak"
+		clr_country_flag = "steps_against_social_liberal"
+		clr_country_flag = "steps_against_social_democrat"
+		clr_country_flag = "steps_against_left_wing_radical"
+		clr_country_flag = "steps_against_leninist"
+		clr_country_flag = "steps_against_stalinist"
+		
+		# Hard-oppression removed
+		clr_country_flag = "national_socialist_outlawed"
+		clr_country_flag = "fascistic_outlawed"
+		clr_country_flag = "paternal_autocrat_outlawed"
+		clr_country_flag = "social_conservative_outlawed"
+		clr_country_flag = "market_liberak_outlawed"
+		clr_country_flag = "social_liberal_outlawed"
+		clr_country_flag = "social_democrat_outlawed"
+		clr_country_flag = "left_wing_radical_outlawed"
+		clr_country_flag = "leninist_outlawed"
+		clr_country_flag = "stalinist_outlawed"
+		
+		clr_country_flag = "new_parties_prohibited"
+	}
+
+}
+
+######################
+# Democratic version #
+######################
+
+country_event = {
+
+	id = 4023
+
+	trigger = {
+		has_country_flag = democratic_puppet
+		not = { ideology_group = democracy }
+		government = installing_puppet
+	}
+
+	title = "The foreign supported government is struggling for power"
+	desc = "The new regime still can't restore order, and there is chaos all over the country."
+	picture = "coup"
+
+	option = {
+		name = "We need to restore order!"
+		organisation = -10				# Instant org. hit
+		organisation = -10
+		organisation = -10
+		organisation = -10
+		social_conservative = { organisation = 10 popularity = 10 }
+		social_liberal = { organisation = 10 popularity = 10 }
+		social_democrat = { organisation = 10 popularity = 10 }
+		market_liberal = { organisation = 10 popularity = 10 }
+
+		dissent = 1
+		
+		# Soft-oppression removed
+		clr_country_flag = "steps_against_national_socialist"
+		clr_country_flag = "steps_against_fascistic"
+		clr_country_flag = "steps_against_paternal_autocrat"
+		clr_country_flag = "steps_against_social_conservative"
+		clr_country_flag = "steps_against_market_liberak"
+		clr_country_flag = "steps_against_social_liberal"
+		clr_country_flag = "steps_against_social_democrat"
+		clr_country_flag = "steps_against_left_wing_radical"
+		clr_country_flag = "steps_against_leninist"
+		clr_country_flag = "steps_against_stalinist"
+		
+		# Hard-oppression removed
+		clr_country_flag = "national_socialist_outlawed"
+		clr_country_flag = "fascistic_outlawed"
+		clr_country_flag = "paternal_autocrat_outlawed"
+		clr_country_flag = "social_conservative_outlawed"
+		clr_country_flag = "market_liberak_outlawed"
+		clr_country_flag = "social_liberal_outlawed"
+		clr_country_flag = "social_democrat_outlawed"
+		clr_country_flag = "left_wing_radical_outlawed"
+		clr_country_flag = "leninist_outlawed"
+		clr_country_flag = "stalinist_outlawed"
+		
+		clr_country_flag = "new_parties_prohibited"
+	}
+
+}
+
+######################################################
+# Overlord intervenes in a Puppet's political crisis #
+######################################################
+
+country_event = {
+
+	id = 4025
+	
+	is_triggered_only = yes
+	
+	title = "$FROMCOUNTRY$ intervenes"
+	desc = "Our installed regime couldn't restore order, and our overlord decided it's time to intervene..."
+	picture = "coup"
+	
+	option = {
+		name = "From bad to worse..."
+		
+		organisation = 20
+		
+		remove_country_modifier = "political_crisis"
+		add_country_modifier = {
+			name = "consolidating_power"
+			duration = 25
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 4026
+	
+	is_triggered_only = yes
+	
+	title = "$FROMCOUNTRY$ tries to intervene"
+	desc = "Our installed regime couldn't restore order, and our overlord decided it's time to intervene, but failed."
+	picture = "coup"
+	
+	option = {
+		name = "Can it be worse than that?..."
+		
+		random_owned = { create_revolt = 1 }
+		random_owned = { create_revolt = 1 }
+		
+		add_country_modifier = {
+			name = "failed_intervention"
+			duration = 15
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 4027
+	
+	major = yes
+	
+	trigger = {
+		or = {
+			organisation = 40
+			popularity = 20
+		}
+		has_country_modifier = "political_crisis"
+		is_subject = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	title = "End of the Crisis"
+	desc = "The political crisis is over, the collapse of the regime has been averted."
+	picture = "politician"
+	
+	option = {
+		name = "Phew..."
+		
+		organisation = 10
+		
+		remove_country_modifier = "political_crisis"
+		add_country_modifier = {
+			name = "consolidating_power"
+			duration = 10
+		}
+	}
+
+}
+
+##################################
+# Special coups, 'changing tags' #
+##################################
+
+# China
+
+country_event = {
+
+	id = 4030
+	
+	major = yes
+
+	trigger = {
+		is_subject = no
+		tag = CHC
+		not = { ideology_group = communism }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "The Kuomintang wins"
+	desc = "Through internal pressure, the Kuomintang managed to eliminate the communist threat in China."
+	picture = "coup"
+
+	option = {
+		name = "The end of the Communist Party"
+		CHI = { split_troops = 0.85 }
+		
+		# The non-communists leave this version.
+		national_socialist 	= { popularity = -100 organisation = -100 }
+		fascistic 			= { popularity = -100 organisation = -100 }
+		paternal_autocrat 	= { popularity = -100 organisation = -100 }
+		social_conservative	= { popularity = -100 organisation = -100 }
+		market_liberal		= { popularity = -100 organisation = -100 }
+		social_liberal		= { popularity = -100 organisation = -100 }
+		social_democrat		= { popularity = -100 organisation = -100 }
+		# Replace the old government with a new one!
+		do_election = THIS
+		
+		release = CHI
+		CHI = { inherit = THIS }
+	}
+
+}
+
+country_event = {
+
+	id = 4031
+	
+	major = yes
+
+	trigger = {
+		is_subject = no
+		or = {
+			tag = CHI
+			tag = CXB
+			tag = CSX
+			tag = CGX
+			tag = CYN
+		}
+		ideology_group = communism
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "The Communist Party wins"
+	desc = "Through internal pressure, the Communist Party managed to break the Kuomintang rule in China."
+	picture = "coup"
+
+	option = {
+		name = "The end of the Kuomintang"
+		CHC = { split_troops = 0.85 }
+		
+		# The communists leave this version.
+		left_wing_radical 	= { popularity = -100 organisation = -100 }
+		leninist 			= { popularity = -100 organisation = -100 }
+		stalinist		 	= { popularity = -100 organisation = -100 }
+		# Replace the old government with a new one!
+		do_election = THIS
+		
+		release = CHC
+		CHC = { inherit = THIS }
+	}
+
+}
+
+# Germany
+
+country_event = {
+
+	id = 4035
+	
+	major = yes
+
+	trigger = {
+		is_subject = no
+		or = {
+			tag = GER
+			tag = DFR
+		}
+		ideology_group = communism
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "Communist rule in Germany"
+	desc = "The revolution has come!"
+	picture = "coup"
+
+	option = {
+		name = "Workers of Germany, Unite!"
+		any_owned = {
+			limit = {
+				or = {
+					is_core = GER
+					is_core = DFR
+				}
+			}
+			add_core = DDR
+		}
+		DDR = { split_troops = 0.85 }
+		
+		# The communists leave this version.
+		left_wing_radical 	= { popularity = -100 organisation = -100 }
+		leninist 			= { popularity = -100 organisation = -100 }
+		stalinist		 	= { popularity = -100 organisation = -100 }
+		# Replace the old government with a new one!
+		do_election = THIS
+		
+		release = DDR
+		DDR = { inherit = THIS }
+	}
+
+}
+
+country_event = {
+
+	id = 4036
+	
+	major = yes
+
+	trigger = {
+		is_subject = no
+		or = {
+			tag = DDR
+			tag = DFR
+		}
+		ideology_group = fascism
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "Fascists rule in Germany"
+	desc = "The counter-revolution has come!"
+	picture = "coup"
+
+	option = {
+		name = "Time to restore order!"
+		any_owned = {
+			limit = {
+				or = {
+					is_core = DDR
+					is_core = DFR
+				}
+			}
+			add_core = GER
+		}
+		GER = { split_troops = 0.85 }
+		
+		# The fascists leave this version.
+		national_socialist 	= { popularity = -100 organisation = -100 }
+		fascistic 			= { popularity = -100 organisation = -100 }
+		paternal_autocrat 	= { popularity = -100 organisation = -100 }
+		# Replace the old government with a new one!
+		do_election = THIS
+		
+		release = GER
+		GER = { inherit = THIS }
+	}
+
+}
+
+country_event = {
+
+	id = 4037
+	
+	major = yes
+
+	trigger = {
+		is_subject = no
+		or = {
+			tag = GER
+			tag = DDR
+		}
+		ideology_group = democracy
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "Democratic rule in Germany"
+	desc = "The country is liberated at last!"
+	picture = "coup"
+
+	option = {
+		name = "Free at last!"
+		any_owned = {
+			limit = {
+				or = {
+					is_core = GER
+					is_core = DDR
+				}
+			}
+			add_core = DFR
+		}
+		DFR = { split_troops = 0.85 }
+		
+		# The democrats leave this version.
+		social_conservative	= { popularity = -100 organisation = -100 }
+		market_liberal		= { popularity = -100 organisation = -100 }
+		social_liberal		= { popularity = -100 organisation = -100 }
+		social_democrat		= { popularity = -100 organisation = -100 }
+		# Replace the old government with a new one!
+		do_election = THIS
+		
+		release = DFR
+		DFR = { inherit = THIS }
+	}
+
+}
+
+# Korea
+
+country_event = {
+
+	id = 4040
+	
+	major = yes
+
+	trigger = {
+		is_subject = no
+		tag = PRK
+		not = { ideology_group = communism }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "The Communist regime falls"
+	desc = "The Communist rule has been overthrown in Korea. It is time for a new Republic!"
+	picture = "coup"
+
+	option = {
+		name = "Free at last!"
+		any_owned = {
+			limit = {
+				is_core = PRK
+			}
+			add_core = KOR
+		}
+		KOR = { split_troops = 0.85 }
+		
+		# The non-communists leave this version.
+		national_socialist 	= { popularity = -100 organisation = -100 }
+		fascistic 			= { popularity = -100 organisation = -100 }
+		paternal_autocrat 	= { popularity = -100 organisation = -100 }
+		social_conservative	= { popularity = -100 organisation = -100 }
+		market_liberal		= { popularity = -100 organisation = -100 }
+		social_liberal		= { popularity = -100 organisation = -100 }
+		social_democrat		= { popularity = -100 organisation = -100 }
+		# Replace the old government with a new one!
+		do_election = THIS
+		
+		release = KOR
+		KOR = { inherit = THIS }
+	}
+
+}
+
+country_event = {
+
+	id = 4041
+	
+	major = yes
+
+	trigger = {
+		is_subject = no
+		tag = KOR
+		ideology_group = communism
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "Communism triumphs in Korea"
+	desc = "The enemies of the people have been dealt with, now Korea can be lead towards socialism under communist leadership."
+	picture = "coup"
+
+	option = {
+		name = "Workers of Korea, Unite!"
+		any_owned = {
+			limit = {
+				is_core = KOR
+			}
+			add_core = PRK
+		}
+		PRK = { split_troops = 0.85 }
+		
+		# The communists leave this version.
+		left_wing_radical 	= { popularity = -100 organisation = -100 }
+		leninist 			= { popularity = -100 organisation = -100 }
+		stalinist		 	= { popularity = -100 organisation = -100 }
+		# Replace the old government with a new one!
+		do_election = THIS
+		
+		release = PRK
+		PRK = { inherit = THIS }
+	}
+
+}
+
+# Spain
+
+country_event = {
+
+	id = 4045
+	
+	major = yes
+
+	trigger = {
+		is_subject = no
+		tag = SPR
+		ideology_group = fascism
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "The Nationalists triumph"
+	desc = "The communist threat has been eliminated in Spain, and now order can finally be restored."
+	picture = "coup"
+
+	option = {
+		name = "Order is finally restored!"
+		any_owned = {
+			limit = {
+				is_core = SPR
+			}
+			add_core = SPA
+		}
+		SPA = { split_troops = 0.85 }
+		
+		# The fascists leave this version.
+		national_socialist 	= { popularity = -100 organisation = -100 }
+		fascistic 			= { popularity = -100 organisation = -100 }
+		paternal_autocrat 	= { popularity = -100 organisation = -100 }
+		# Replace the old government with a new one!
+		do_election = THIS
+		
+		release = SPA
+		SPA = { inherit = THIS }
+	}
+
+}
+
+country_event = {
+
+	id = 4046
+	
+	major = yes
+
+	trigger = {
+		is_subject = no
+		tag = SPA
+		not = { ideology_group = fascism }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "The Republicans triumph"
+	desc = "The fascist threat has been eliminated in Spain, and now peace can finally be restored."
+	picture = "coup"
+
+	option = {
+		name = "Peace at last!"
+		any_owned = {
+			limit = {
+				is_core = SPA
+			}
+			add_core = SPR
+		}
+		SPR = { split_troops = 0.85 }
+		
+		# The non-fascists leave this version.
+		left_wing_radical 	= { popularity = -100 organisation = -100 }
+		leninist 			= { popularity = -100 organisation = -100 }
+		stalinist		 	= { popularity = -100 organisation = -100 }
+		social_conservative	= { popularity = -100 organisation = -100 }
+		market_liberal		= { popularity = -100 organisation = -100 }
+		social_liberal		= { popularity = -100 organisation = -100 }
+		social_democrat		= { popularity = -100 organisation = -100 }
+		# Replace the old government with a new one!
+		do_election = THIS
+		
+		release = SPR
+		SPR = { inherit = THIS }
+	}
+
+}
+
+country_event = {
+
+	id = 4047
+	
+	major = yes
+
+	trigger = {
+		is_subject = no
+		tag = SOV
+		not = { ideology_group = communism }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "The Soviet Union is dissolved"
+	desc = "With the Communist rule broken, the Soviet Union is dissolved, and the Motherland will again be called Russia!"
+	picture = "coup"
+
+	option = {
+		name = "Oh, well..."
+		RUS = { split_troops = 1.0 }
+		
+		# The non-communists leave this version.
+		national_socialist 	= { popularity = -100 organisation = -100 }
+		fascistic 			= { popularity = -100 organisation = -100 }
+		paternal_autocrat 	= { popularity = -100 organisation = -100 }
+		social_conservative	= { popularity = -100 organisation = -100 }
+		market_liberal		= { popularity = -100 organisation = -100 }
+		social_liberal		= { popularity = -100 organisation = -100 }
+		social_democrat		= { popularity = -100 organisation = -100 }
+		# Replace the old government with a new one!
+		do_election = THIS
+		
+		release = RUS
+		RUS = { inherit = THIS }
+	}
+
+}
+
+country_event = {
+
+	id = 4048
+	
+	major = yes
+
+	trigger = {
+		is_subject = no
+		tag = RUS
+		ideology_group = communism
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "The Soviet Union is reborn"
+	desc = "With the Communist in power again, the Soviet Union is reborn! Let's bring Socialism to the workers of the World!"
+	picture = "coup"
+
+	option = {
+		name = "Oh, well..."
+		SOV = { split_troops = 0.75 }
+		
+		# The communists leave this version.
+		left_wing_radical 	= { popularity = -100 organisation = -100 }
+		leninist 			= { popularity = -100 organisation = -100 }
+		stalinist		 	= { popularity = -100 organisation = -100 }
+		# Replace the old government with a new one!
+		do_election = THIS
+		
+		release = SOV
+		SOV = { inherit = THIS }
+	}
+
+}
+
+country_event = {
+
+	id = 4050
+	
+	major = yes
+
+	trigger = {
+		is_subject = no
+		tag = ITA
+		not = { ideology_group = fascism }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "The end of Fascism in Italy"
+	desc = "With the last remnants of Fascism finally removed from power, Italy can finally become a free country!"
+	picture = "coup"
+
+	option = {
+		name = "Oh, well..."
+		RSI = { split_troops = 0.95 }
+		
+		# The non-fascists leave this version.
+		social_conservative	= { popularity = -100 organisation = -100 }
+		market_liberal		= { popularity = -100 organisation = -100 }
+		social_liberal		= { popularity = -100 organisation = -100 }
+		social_democrat		= { popularity = -100 organisation = -100 }
+		left_wing_radical	= { popularity = -100 organisation = -100 }
+		leninist			= { popularity = -100 organisation = -100 }
+		stalinist			= { popularity = -100 organisation = -100 }
+		# Replace the old government with a new one!
+		do_election = THIS
+		
+		release = RSI
+		RSI = { inherit = THIS }
+	}
+
+}
+
+country_event = {
+
+	id = 4051
+	
+	major = yes
+
+	trigger = {
+		is_subject = no
+		tag = RSI
+		ideology_group = fascism
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "The return of Fascism"
+	desc = "Fascism has regained its power in Italy. The old days of autocratist governments is back!"
+	picture = "coup"
+
+	option = {
+		name = "Oh, well..."
+		ITA = { split_troops = 0.95 }
+		
+		# The fascists leave this version.
+		national_socialist	= { popularity = -100 organisation = -100 }
+		fascistic			= { popularity = -100 organisation = -100 }
+		paternal_autocrat		= { popularity = -100 organisation = -100 }
+		# Replace the old government with a new one!
+		do_election = THIS
+		
+		release = ITA
+		ITA = { inherit = THIS }
+	}
+
+}

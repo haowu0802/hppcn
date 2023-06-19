@@ -1,0 +1,534 @@
+color = { 15  69  116 }
+graphical_culture = British
+
+default_templates = {
+	ENG_infantry = {
+		motorized_brigade
+		motorized_brigade
+		motorized_brigade
+	}
+	ENG_motorized = {
+		motorized_brigade
+		motorized_brigade
+	}
+	ENG_armoured_1936 = {
+		armor_brigade
+		light_armor_brigade
+		light_armor_brigade
+		motorized_brigade
+	}
+	ENG_armoured_1940 = {
+		armor_brigade
+		armor_brigade
+		motorized_brigade
+	}
+	ENG_armoured_me = {
+		armor_brigade
+		motorized_brigade
+ 		sp_artillery_brigade
+	}
+	ENG_airborne = {
+		paratrooper_brigade
+		paratrooper_brigade
+		paratrooper_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"1st Infantry Division" "2nd Infantry Division" "3rd Infantry Division" "4th Infantry Division" "5th Infantry Division" "6th Infantry Division" "7th Infantry Division" "8th Infantry Division" "1st Scottish Infantry" "2nd Scottish Infantry" "3rd Scottish Infantry" 
+		"4th Scottish Infantry" "5th Scottish Infantry" "6th Scottish Infantry" "7th Scottish Infantry" "8th Scottish Infantry" "9th Scottish Infantry" "10th Scottish Infantry" "11th Scottish Infantry" "12th Scottish Infantry" "9th 'Highland' Division" "12th 'Eastern' Division" 
+		"15th 'Scottish' Division" "18th Infantry Division" "23rd 'Dundee' Division" "38th 'Hebrides' Division" "42nd 'Perth' Division" "43rd 'Aberdeen' Division" "44th 'Home Counties' Division" "45th Infantry Division" "46th 'Edinburgh' Division" "47th 'Glasgow' Division" "13th Highlands Infantry" 
+		"61st Infantry Division" "15th Scottish Infantry" "16th Scottish Infantry" "17th Scottish Infantry" "66th Infantry Division" "70th Infantry Division" "76th Infantry Division" "77th Infantry Division" "78th Infantry Division" "40th Infantry Division" "57th Infantry Division" 
+		"80th Infantry Division" "36th Infantry Division" "Guards Infantry Division" "28th Infantry Division" "18th Scottish Infantry" "19th Scottish Infantry" "20th Scottish Infantry" "33rd Infantry Division" "34th Infantry Division" "37th Infantry Division" "41st Infantry Division" 
+		"58th Infantry Division" "60th Infantry Division" "62nd Infantry Division" "63rd Infantry Division" "67th Infantry Division" "68th Infantry Division" "69th Infantry Division" "71st Infantry Division" "72nd Infantry Division" "73rd Infantry Division" "74th Infantry Division" 
+		"75th Infantry Division" "81th Infantry Division" "82th Infantry Division" "97th Infantry Division" "98th Infantry Division" "21st Scottish Infantry" "22nd Scottish Infantry" "23rd Scottish Infantry" "24th Scottish Infantry" "25th Scottish Infantry" "99th Infantry Division" 
+		"100th Infantry Division" "101st Infantry Division" "102nd Infantry Division" "103rd Infantry Division" "104th Infantry Division" "105th Infantry Division" "106th Infantry Division" "107th Infantry Division" "108th Infantry Division" "109th Infantry Division" "110th Infantry Division" 
+		"111th Infantry Division" "112th Infantry Division" "113th Infantry Division" "114th Infantry Division" "115th Infantry Division" "116th Infantry Division" "117th Infantry Division" "118th Infantry Division" "119th Infantry Division" "120th Infantry Division" "121st Infantry Division" 
+		"122nd Infantry Division" "123rd Infantry Division" "124th Infantry Division" "125th Infantry Division" "126th Infantry Division" "127th Infantry Division" "128th Infantry Division" "129th Infantry Division" "130th Infantry Division" "131st Infantry Division" "132nd Infantry Division" 
+		"133rd Infantry Division" "134th Infantry Division" "135th Infantry Division" "136th Infantry Division" "137th Infantry Division" "138th Infantry Division" "139th Infantry Division" "140th Infantry Division" "141st Infantry Division" "142nd Infantry Division" "143rd Infantry Division" 
+		"144th Infantry Division" "145th Infantry Division" "146th Infantry Division" "147th Infantry Division" "148th Infantry Division" "149th Infantry Division" "150th Infantry Division" 
+	}
+	cavalry_brigade = {
+		"18th Hussars Division" "1st Cavalry Division" "2nd Cavalry Division" "3rd Cavalry Division" "4th Cavalry Division" "5th Cavalry Division" "6th Cavalry Division" "7th Cavalry Division" "8th Cavalry Division" "1st Scottish Cavalry Division" "2nd Scottish Guards Cavalry Div." 
+		"3rd Scottish Cavalry Division" "4th Scottish Cavalry Division" "5th Scottish Cavalry Division" "9th Cavalry Division" "10th Cavalry Division" "11th Cavalry Division" "12th Cavalry Division" "13th Cavalry Division" "14th Cavalry Division" "15th Cavalry Division" "16th Cavalry Division" 
+		"17th Cavalry Division" "19th Cavalry Division" "20th Cavalry Division" 
+	}
+	motorized_brigade = {
+		"1st Infantry Division" "2nd Infantry Division" "3rd Infantry Division" "4th Infantry Division" "5th Infantry Division" "15th 'Scottish' Division" "18th Infantry Division" "38th 'Perth' Division" "1st Scottish Division" "2nd Scottish Division" "43rd 'Dumfries' Division" 
+		"44th 'Home Counties' Division" "45th Infantry Division" "46th 'Edinburgh' Division" "3rd Scottish Division" "4th Scottish Division" "47th 'Glasgow' Infantry Division" "48th 'Stirling' Division" "49th 'Ayr' Division" "50th 'Irvine' Division" "51st 'Highland' Division" "5th Scottish Division" 
+		"52nd 'Lowlands' Division" "53rd 'Perth' Division" "54th 'Aberdeen' Division" "55th 'Elgin' Division" "56th 'Glasgow' Division" "59th 'Inverness' Division" "61st Infantry Division" "66th Infantry Division" "70th Infantry Division" "76th Infantry Division" "77th Infantry Division" 
+		"78th Infantry Division" "40th Infantry Division" "57th Infantry Division" "80th Infantry Division" "Guards Infantry Division" "28th Infantry Division" "33rd Infantry Division" "100th Infantry Division" "101st Infantry Division" "102nd Infantry Division" "103rd Infantry Division" 
+		"104th Infantry Division" "105th Infantry Division" "106th Infantry Division" "107th Infantry Division" "108th Infantry Division" "109th Infantry Division" "110th Infantry Division" "111th Infantry Division" "112th Infantry Division" "113th Infantry Division" "114th Infantry Division" 
+		"115th Infantry Division" "116th Infantry Division" "117th Infantry Division" "118th Infantry Division" "119th Infantry Division" "120th Infantry Division" "121st Infantry Division" "122nd Infantry Division" "123rd Infantry Division" "124th Infantry Division" "125th Infantry Division" 
+		"126th Infantry Division" "127th Infantry Division" "128th Infantry Division" "129th Infantry Division" "130th Infantry Division" "131st Infantry Division" "132nd Infantry Division" "133rd Infantry Division" "134th Infantry Division" "135th Infantry Division" "136th Infantry Division" 
+		"137th Infantry Division" "138th Infantry Division" "139th Infantry Division" "140th Infantry Division" "141st Infantry Division" "142nd Infantry Division" "143rd Infantry Division" "144th Infantry Division" "145th Infantry Division" "146th Infantry Division" "147th Infantry Division" 
+		"148th Infantry Division" "149th Infantry Division" "150th Infantry Division" 
+	}
+	mechanized_brigade = {
+		"Royal Scots Dragoon Guards" "1st Infantry Division" "2nd Infantry Division" "3rd Infantry Division" "4th Infantry Division" "5th Infantry Division" "15th 'Scottish' Division" "18th Infantry Division" "38th 'Perth' Division" "43rd 'Dumfries' Division" "1st Scottish Division" "2nd Scottish Division" 
+		"44th 'Home Counties' Division" "45th Infantry Division" "46th Division" "47th 'Glasgow' Division" "48th Division" "49th Division" "50th Division" "3rd Scottish Division" "4th Scottish Division" "51st 'Highland' Division" "52nd 'Lowland' Division" 
+		"53rd Division" "54th Division" "55th Division" "56th Division" "5th Division" "59th Division" "61st Infantry Division" "66th Infantry Division" "70th Infantry Division" "76th Infantry Division" "77th Infantry Division" 
+		"78th Infantry Division" "40th Infantry Division" "57th Infantry Division" "80th Infantry Division" "Guards Division" "28th Infantry Division" "33rd Infantry Division" "100th Infantry Division" "101st Infantry Division" "102nd Infantry Division" "103rd Infantry Division" 
+		"104th Infantry Division" "105th Infantry Division" "106th Infantry Division" "107th Infantry Division" "108th Infantry Division" "109th Infantry Division" "110th Infantry Division" "111th Infantry Division" "112th Infantry Division" "113th Infantry Division" "114th Infantry Division" 
+		"115th Infantry Division" "116th Infantry Division" "117th Infantry Division" "118th Infantry Division" "119th Infantry Division" "120th Infantry Division" "121st Infantry Division" "122nd Infantry Division" "123rd Infantry Division" "124th Infantry Division" "125th Infantry Division" 
+		"126th Infantry Division" "127th Infantry Division" "128th Infantry Division" "129th Infantry Division" "130th Infantry Division" "131st Infantry Division" "132nd Infantry Division" "133rd Infantry Division" "134th Infantry Division" "135th Infantry Division" "136th Infantry Division" 
+		"137th Infantry Division" "138th Infantry Division" "139th Infantry Division" "140th Infantry Division" "141st Infantry Division" "142nd Infantry Division" "143rd Infantry Division" "144th Infantry Division" "145th Infantry Division" "146th Infantry Division" "147th Infantry Division" 
+		"148th Infantry Division" "149th Infantry Division" "150th Infantry Division" 
+	}
+	light_armor_brigade = {
+		"1st Armoured Div. 'Royal Hussars'" "2nd Armoured Division" "7th Armoured Division" "6th Armoured Division" "8th Armoured Division" "9th Armoured Division" "Guards Armoured Division" "10th Armoured Division" "11th Armoured Division" "42nd Armoured Division" "79th Armoured Division" 
+		"100th Armoured Division" "101st Armoured Division" "102nd Armoured Division" "103rd Armoured Division" "104th Armoured Division" "105th Armoured Division" "106th Armoured Division" "107th Armoured Division" "108th Armoured Division" "109th Armoured Division" "110th Armoured Division" 
+		"111th Armoured Division" "112th Armoured Division" "113th Armoured Division" "114th Armoured Division" "115th Armoured Division" "116th Armoured Division" "117th Armoured Division" "118th Armoured Division" "119th Armoured Division" "120th Armoured Division" 
+	}
+	armor_brigade = {
+		"1st Armoured Div. 'Royal Hussars'" "2nd Armoured Division" "7th Armoured Division" "6th Armoured Division" "8th Armoured Division" "9th Armoured Division" "Guards Armoured Division" "10th Armoured Division" "11th Armoured Division" "42nd Armoured Division" "79th Armoured Division" 
+		"100th Armoured Division" "101st Armoured Division" "102nd Armoured Division" "103rd Armoured Division" "104th Armoured Division" "105th Armoured Division" "106th Armoured Division" "107th Armoured Division" "108th Armoured Division" "109th Armoured Division" "110th Armoured Division" 
+		"111th Armoured Division" "112th Armoured Division" "113th Armoured Division" "114th Armoured Division" "115th Armoured Division" "116th Armoured Division" "117th Armoured Division" "118th Armoured Division" "119th Armoured Division" "120th Armoured Division" 
+	}
+	paratrooper_brigade = {
+		"1st Airborne Division" "6th Airborne Division" "7th Airborne Division" "8th Airborne Division" "9th Airborne Division" "10th Airborne Division" "11th Airborne Division" "12th Airborne Division" "13th Airborne Division" "14th Airborne Division" "15th Airborne Division" 
+		"16th Airborne Division" "17th Airborne Division" "18th Airborne Division" "19th Airborne Division" "20th Airborne Division" 
+	}
+	marine_brigade = {
+		"1st Royal Marines Division" "2nd Royal Marines Division" "3rd Royal Marines Division" "4th Royal Marines Division" "5th Royal Marines Division" "6th Royal Marines Division" "7th Royal Marines Division" "8th Royal Marines Division" "9th Royal Marines Division" "10th Royal Marines Division" "11th Royal Marines Division" 
+		"12th Royal Marines Division" "13th Royal Marines Division" "14th Royal Marines Division" "15th Royal Marines Division" "16th Royal Marines Division" "17th Royal Marines Division" "18th Royal Marines Division" "19th Royal Marines Division" "20th Royal Marines Division" 
+	}
+	bergsjaeger_brigade = {
+		"9th 'Highland' Mountain Div." "12th 'Eastern' Mountain Div." "18th Infantry Mountain Div." "1st Gurkhas" "2nd Gurkhas" "3rd Gurkhas" "23rd 'Irvine' Mountain Div." "52nd 'Lowland' Mountain Div." "64th 'Highland' Mountain Div." "65th 'Lowland' Mountain Div." "66th Infantry Mountain Div." 
+		"28th Infantry Mountain Div." "33rd Infantry Mountain Div." "34th Infantry Mountain Div." "37th Infantry Mountain Div." "41st Infantry Mountain Div." "58th Infantry Mountain Div." "60th Infantry Mountain Div." "62nd Infantry Mountain Div." "63rd Infantry Mountain Div." "67th Infantry Mountain Div." "68th Infantry Mountain Div." 
+		"69th Infantry Mountain Div." "127th Infantry Mountain Div." "128th Infantry Mountain Div." "129th Infantry Mountain Div." "130th Infantry Mountain Div." "131st Infantry Mountain Div." "132nd Infantry Mountain Div." "133rd Infantry Mountain Div." "134th Infantry Mountain Div." "135th Infantry Mountain Div." "136th Infantry Mountain Div." 
+		"137th Infantry Mountain Div." "138th Infantry Mountain Div." "139th Infantry Mountain Div." "140th Infantry Mountain Div." "141st Infantry Mountain Div." "142nd Infantry Mountain Div." 
+	}
+	garrison_brigade = {
+		"100th Infantry Division" "101st Infantry Division" "102nd Infantry Division" "103rd Infantry Division" "104th Infantry Division" "105th Infantry Division" "106th Infantry Division" "107th Infantry Division" "108th Infantry Division" "109th Infantry Division" "110th Infantry Division" 
+		"111th Infantry Division" "112th Infantry Division" "113th Infantry Division" "114th Infantry Division" "115th Infantry Division" "116th Infantry Division" "117th Infantry Division" "118th Infantry Division" "119th Infantry Division" "120th Infantry Division" "121st Infantry Division" 
+		"122nd Infantry Division" "123rd Infantry Division" "124th Infantry Division" "125th Infantry Division" "126th Infantry Division" "127th Infantry Division" "128th Infantry Division" "129th Infantry Division" "130th Infantry Division" "131st Infantry Division" "132nd Infantry Division" 
+		"133rd Infantry Division" "134th Infantry Division" "135th Infantry Division" "136th Infantry Division" "137th Infantry Division" "138th Infantry Division" "139th Infantry Division" "140th Infantry Division" "141st Infantry Division" "142nd Infantry Division" "143rd Infantry Division" 
+		"144th Infantry Division" "145th Infantry Division" "146th Infantry Division" "147th Infantry Division" "148th Infantry Division" "149th Infantry Division" "150th Infantry Division" 
+	}
+	hq_brigade = {
+		"S.E.F." "8th Army" "10th Army" "1st Army" "2nd Army" "14th Army" "12th Army" "1st Airborne Army" "11th Army Group" "15th Army Group" "18th Army Group" 
+		"21st Army Group" "3rd Army" "4th Army" "5th Army" 
+	}
+	militia_brigade = {
+		"1st Scottish Guard" "2nd Scottish Guard" "3rd Scottish Guard" "1st Scottish Guard" "2nd Scottish Guard" "1st Scottish Guard" "2nd Scottish Guard" "1st Scottish Guard" "2nd Scottish Guard" "1st Home Guard Division" "2nd Home Guard 'Scottish' Division" 
+		"3rd Home Guard 'Wigtown' Division" "4th Home Guard 'Ulster' Division" "5th Home Guard 'Perth' Division" "6th Home Guard 'Siward' Division" "7th Home Guard Division" "8th Home Guard 'Lowland' Division" "9th Home Guard 'Highland' Division" "10th Home Guard Division" "11th Home Guard Division" "12th Home Guard Division" "13th Home Guard Division" 
+		"3rd 'Glasgow' Division" "14th Home Guard 'Selkirk'Division" "15th Home Guard 'St. Andrew' Division" "16th Home Guard Division" "17th Home Guard Division" "18th Home Guard Division" "19th Home Guard Division" "20th Home Guard Division" "21st Home Guard Division" "22nd Home Guard Division" "23rd Home Guard Division" 
+		"24th Home Guard 'Dunkeld' Division" "25th Home Guard 'Dingwall' Division" "26th Home Guard 'Ullapool' Division" "27th Home Guard 'Forfar' Division" "28th Home Guard 'Thurso' Division" "4th Home Guard 'Glasgow' Division" "29th Home Guard Division" "30th Home Guard Division" "31st Home Guard Division" "32nd Home Guard Division" "33rd Home Guard Division" 
+		"34th Home Guard 'Dunbarton' Division" "35th Home Guard 'Gairloch' Division" "36th Home Guard 'Kirkwall' Division" "37th Home Guard 'Stornoway' Division" "38th Home Guard 'Falkirk' Division" "39th Home Guard 'Angus' Division" "40th Home Guard' Division" "41st Home Guard Division" "42nd Home Guard Division" "43rd Home Guard Division" "44th Home Guard Division" 
+		"45th Home Guard 'Shotts' Division" 
+	}
+	multi_role = {
+		"No.11 RSAF Fighter Group" "No.12 RSAF Fighter Group" "No.14 RSAF Fighter Group" "No.13 RSAF Fighter Group" "No.10 RSAF Fighter Group" "No.207 RSAF Fighter Group" "No.211 RSAF Fighter Group" "No.212 RSAF Fighter Group" "No.213 RSAF Fighter Group" "No.214 RSAF Fighter Group" "No.223 RSAF Fighter Group" 
+		"No.226 RSAF Fighter Group" "No.9 RSAF Fighter Group" "No.22 RSAF Fighter Group" "No.23 RSAF Fighter Group" "No.24 RSAF Fighter Group" "No.25 RSAF Fighter Group" "No.26 RSAF Fighter Group" "No.27 RSAF Fighter Group" "No.28 RSAF Fighter Group" "No.29 RSAF Fighter Group" "No.30 RSAF Fighter Group" 
+		"No.31 RSAF Fighter Group" "No.32 RSAF Fighter Group" "No.33 RSAF Fighter Group" "No.34 RSAF Fighter Group" "No.35 RSAF Fighter Group" "No.36 RSAF Fighter Group" "No.37 RSAF Fighter Group" "No.38 RSAF Fighter Group" "No.39 RSAF Fighter Group" "No.44 RSAF Fighter Group" "No.45 RSAF Fighter Group" 
+		"No.46 RSAF Fighter Group" "No.47 RSAF Fighter Group" "No.48 RSAF Fighter Group" "No.49 RSAF Fighter Group" "No.50 RSAF Fighter Group" "No.51 RSAF Fighter Group" "No.200 RSAF Fighter Group" "No.201 RSAF Fighter Group" "No.202 RSAF Fighter Group" "No.203 RSAF Fighter Group" "No.223 RSAF Fighter Group" 
+		"No.226 RSAF Fighter Group" "No.227 RSAF Fighter Group" "No.228 RSAF Fighter Group" "No.229 RSAF Fighter Group" "No.230 RSAF Fighter Group" "No.231 RSAF Fighter Group" "No.232 RSAF Fighter Group" "No.233 RSAF Fighter Group" "No.234 RSAF Fighter Group" "No.235 RSAF Fighter Group" "No.236 RSAF Fighter Group" 
+		"No.237 RSAF Fighter Group" "No.238 RSAF Fighter Group" "No.239 RSAF Fighter Group" "No.244 RSAF Fighter Group" "No.245 RSAF Fighter Group" "No.246 RSAF Fighter Group" "No.247 RSAF Fighter Group" "No.248 RSAF Fighter Group" "No.249 RSAF Fighter Group" "No.250 RSAF Fighter Group" "No.251 RSAF Fighter Group" 
+			}
+	interceptor = {
+		"No.11 RSAF Fighter Group" "No.12 RSAF Fighter Group" "No.14 RSAF Fighter Group" "No.13 RSAF Fighter Group" "No.10 RSAF Fighter Group" "No.207 RSAF Fighter Group" "No.211 RSAF Fighter Group" "No.212 RSAF Fighter Group" "No.213 RSAF Fighter Group" "No.214 RSAF Fighter Group" "No.223 RSAF Fighter Group" 
+		"No.226 RSAF Fighter Group" "No.9 RSAF Fighter Group" "No.22 RSAF Fighter Group" "No.23 RSAF Fighter Group" "No.24 RSAF Fighter Group" "No.25 RSAF Fighter Group" "No.26 RSAF Fighter Group" "No.27 RSAF Fighter Group" "No.28 RSAF Fighter Group" "No.29 RSAF Fighter Group" "No.30 RSAF Fighter Group" 
+		"No.31 RSAF Fighter Group" "No.32 RSAF Fighter Group" "No.33 RSAF Fighter Group" "No.34 RSAF Fighter Group" "No.35 RSAF Fighter Group" "No.36 RSAF Fighter Group" "No.37 RSAF Fighter Group" "No.38 RSAF Fighter Group" "No.39 RSAF Fighter Group" "No.44 RSAF Fighter Group" "No.45 RSAF Fighter Group" 
+		"No.46 RSAF Fighter Group" "No.47 RSAF Fighter Group" "No.48 RSAF Fighter Group" "No.49 RSAF Fighter Group" "No.50 RSAF Fighter Group" "No.51 RSAF Fighter Group" "No.200 RSAF Fighter Group" "No.201 RSAF Fighter Group" "No.202 RSAF Fighter Group" "No.203 RSAF Fighter Group" "No.223 RSAF Fighter Group" 
+		"No.226 RSAF Fighter Group" "No.227 RSAF Fighter Group" "No.228 RSAF Fighter Group" "No.229 RSAF Fighter Group" "No.230 RSAF Fighter Group" "No.231 RSAF Fighter Group" "No.232 RSAF Fighter Group" "No.233 RSAF Fighter Group" "No.234 RSAF Fighter Group" "No.235 RSAF Fighter Group" "No.236 RSAF Fighter Group" 
+		"No.237 RSAF Fighter Group" "No.238 RSAF Fighter Group" "No.239 RSAF Fighter Group" "No.244 RSAF Fighter Group" "No.245 RSAF Fighter Group" "No.246 RSAF Fighter Group" "No.247 RSAF Fighter Group" "No.248 RSAF Fighter Group" "No.249 RSAF Fighter Group" "No.250 RSAF Fighter Group" "No.251 RSAF Fighter Group" 
+			}
+	strategic_bomber = {
+		"No.1 RSAF Strategic Group" "No.2 RSAF Strategic Group" "No.3 RSAF Strategic Group" "No.4 RSAF Strategic Group" "No.5 RSAF Strategic Group" "No.203 RSAF Strategic Group" "No.205 RSAF Strategic Group" "No.215 RSAF Strategic Group" "No.222 RSAF Strategic Group" "No.221 RSAF Strategic Group" "No.224 RSAF Strategic Group" 
+		"No.225 RSAF Strategic Group" "No.7 RSAF Strategic Group" "No.91 RSAF Strategic Group" "No.92 RSAF Strategic Group" "No.93 RSAF Strategic Group" "No.73 RSAF Strategic Group" "No.74 RSAF Strategic Group" "No.75 RSAF Strategic Group" "No.76 RSAF Strategic Group" "No.77 RSAF Strategic Group" "No.78 RSAF Strategic Group" 
+		"No.79 RSAF Strategic Group" "No.80 RSAF Strategic Group" "No.81 RSAF Strategic Group" "No.82 RSAF Strategic Group" "No.86 RSAF Strategic Group" "No.87 RSAF Strategic Group" "No.88 RSAF Strategic Group" "No.89 RSAF Strategic Group" "No.90 RSAF Strategic Group" "No.94 RSAF Strategic Group" "No.95 RSAF Strategic Group" 
+		"No.96 RSAF Strategic Group" "No.97 RSAF Strategic Group" "No.98 RSAF Strategic Group" "No.99 RSAF Strategic Group" "No.100 RSAF Strategic Group" "No.101 RSAF Strategic Group" "No.102 RSAF Strategic Group" "No.91 RSAF Strategic Group" "No.215 RSAF Strategic Group" "No.216 RSAF Strategic Group" "No.217 RSAF Strategic Group" 
+		"No.323 RSAF Strategic Group" "No.326 RSAF Strategic Group" "No.327 RSAF Strategic Group" "No.328 RSAF Strategic Group" "No.329 RSAF Strategic Group" "No.330 RSAF Strategic Group" "No.331 RSAF Strategic Group" "No.332 RSAF Strategic Group" "No.333 RSAF Strategic Group" "No.334 RSAF Strategic Group" "No.335 RSAF Strategic Group" 
+		"No.336 RSAF Strategic Group" "No.337 RSAF Strategic Group" "No.338 RSAF Strategic Group" "No.339 RSAF Strategic Group" "No.344 RSAF Strategic Group" "No.345 RSAF Strategic Group" "No.346 RSAF Strategic Group" "No.347 RSAF Strategic Group" "No.348 RSAF Strategic Group" "No.349 RSAF Strategic Group" "No.350 RSAF Strategic Group" 
+		"No.351 RSAF Strategic Group" 
+	}
+	tactical_bomber = {
+		"Middle East Group" "Scottish Group" "Far East Group" "No.1 RSAF Tactical Group" "No.2 RSAF Tactical Group" "No.3 RSAF Tactical Group" "No.4 RSAF Tactical Group" "No.5 RSAF Tactical Group" "No.203 RSAF Tactical Group" "No.205 RSAF Tactical Group" "No.215 RSAF Tactical Group" 
+		"No.222 RSAF Tactical Group" "No.224 RSAF Tactical Group" "No.225 RSAF Tactical Group" "No.8 RSAF 'Pathfinder' Group" "No.100 RSAF 'Special Duties' Group" "No.83 RSAF Tactical Group" "No.85 RSAF Tactical Group" "No.103 RSAF Tactical Group" "No.104 RSAF Tactical Group" "No.105 RSAF Tactical Group" "No.106 RSAF Tactical Group" 
+		"No.107 RSAF Tactical Group" "No.108 RSAF Tactical Group" "No.109 RSAF Tactical Group" "No.110 RSAF Tactical Group" "No.111 RSAF Tactical Group" "No.112 RSAF Tactical Group" "No.113 RSAF Tactical Group" "No.114 RSAF Tactical Group" "No.115 RSAF Tactical Group" "No.116 RSAF Tactical Group" "No.117 RSAF Tactical Group" 
+		"No.118 RSAF Tactical Group" "No.119 RSAF Tactical Group" "No.120 RSAF Tactical Group" "No.121 RSAF Tactical Group" "No.122 RSAF Tactical Group" "No.123 RSAF Tactical Group" "No.124 RSAF Tactical Group" "No.125 RSAF Tactical Group" "No.126 RSAF Tactical Group" "No.127 RSAF Tactical Group" "No.128 RSAF Tactical Group" 
+		"No.129 RSAF Tactical Group" "No.130 RSAF Tactical Group" "No.131 RSAF Tactical Group" "No.323 RSAF Tactical Group" "No.326 RSAF Tactical Group" "No.327 RSAF Tactical Group" "No.328 RSAF Tactical Group" "No.329 RSAF Tactical Group" "No.330 RSAF Tactical Group" "No.331 RSAF Tactical Group" "No.332 RSAF Tactical Group" 
+		"No.333 RSAF Tactical Group" "No.334 RSAF Tactical Group" "No.335 RSAF Tactical Group" "No.336 RSAF Tactical Group" "No.337 RSAF Tactical Group" "No.338 RSAF Tactical Group" "No.339 RSAF Tactical Group" "No.344 RSAF Tactical Group" "No.345 RSAF Tactical Group" "No.346 RSAF Tactical Group" "No.347 RSAF Tactical Group" 
+		"No.348 RSAF Tactical Group" "No.349 RSAF Tactical Group" "No.350 RSAF Tactical Group" "No.351 RSAF Tactical Group" 
+	}
+	naval_bomber = {
+		"No.15 RSN 'Coastal Naval Command'" "No.16 RSN 'Coastal Naval Command'" "No.201 RSN 'Coastal Naval Command'" "No.205 RSN 'Coastal Naval Command'" "No.17 RSN 'Coastal Naval Command'" "No.20 RSN 'Coastal Naval Command'" "No.21 RSN 'Coastal Naval Command'" "No.155 RSN 'Coastal Naval Command'" "No.156 RSN 'Coastal Naval Command'" "No.157 RSN 'Coastal Naval Command'" "No.158 RSN 'Coastal Naval Command'" 
+		"No.159 RSN 'Coastal Naval Command'" "No.160 RSN 'Coastal Naval Command'" "No.161 RSN 'Coastal Naval Command'" "No.162 RSN 'Coastal Naval Command'" "No.163 RSN 'Coastal Naval Command'" "No.164 RSN 'Coastal Naval Command'" "No.165 RSN 'Coastal Naval Command'" "No.166 RSN 'Coastal Naval Command'" "No.167 RSN 'Coastal Naval Command'" "No.168 RSN 'Coastal Naval Command'" "No.423 RSN 'Coastal Naval Command'" 
+		"No.426 RSN 'Coastal Naval Command'" "No.427 RSN 'Coastal Naval Command'" "No.428 RSN 'Coastal Naval Command'" "No.429 RSN 'Coastal Naval Command'" "No.430 RSN 'Coastal Naval Command'" "No.431 RSN 'Coastal Naval Command'" "No.432 RSN 'Coastal Naval Command'" "No.433 RSN 'Coastal Naval Command'" "No.434 RSN 'Coastal Naval Command'" "No.435 RSN 'Coastal Naval Command'" "No.436 RSN 'Coastal Naval Command'" 
+		"No.437 RSN 'Coastal Naval Command'" "No.438 RSN 'Coastal Naval Command'" "No.439 RSN 'Coastal Naval Command'" "No.444 RSN 'Coastal Naval Command'" "No.445 RSN 'Coastal Naval Command'" "No.446 RSN 'Coastal Naval Command'" "No.447 RSN 'Coastal Naval Command'" "No.448 RSN 'Coastal Naval Command'" "No.449 RSN 'Coastal Naval Command'" "No.450 RSN 'Coastal Naval Command'" "No.451 RSN 'Coastal Naval Command'" 
+		"No.18 RSN 'Coastal Torpedo Command'" "No.19 RSN 'Coastal Torpedo Command'" "No.170 RSN 'Coastal Torpedo Command'" "No.171 RSN 'Coastal Torpedo Command'" "No.145 RSN 'Coastal Torpedo Command'" "No.146 RSN 'Coastal Torpedo Command'" "No.147 RSN 'Coastal Torpedo Command'" "No.148 RSN 'Coastal Torpedo Command'" "No.149 RSN 'Coastal Torpedo Command'" "No.150 RSN 'Coastal Torpedo Command'" "No.151 RSN 'Coastal Torpedo Command'" 
+		"No.152 RSN 'Coastal Torpedo Command'" "No.153 RSN 'Coastal Torpedo Command'" "No.154 RSN 'Coastal Torpedo Command'" "No.172 RSN 'Coastal Torpedo Command'" "No.173 RSN 'Coastal Torpedo Command'" "No.174 RSN 'Coastal Torpedo Command'" "No.175 RSN 'Coastal Torpedo Command'" "No.176 RSN 'Coastal Torpedo Command'" "No.177 RSN 'Coastal Torpedo Command'" "No.178 RSN 'Coastal Torpedo Command'" "No.179 RSN 'Coastal Torpedo Command'" 
+		"No.423 RSN 'Coastal Torpedo Command'" "No.426 RSN 'Coastal Torpedo Command'" "No.427 RSN 'Coastal Torpedo Command'" "No.428 RSN 'Coastal Torpedo Command'" "No.429 RSN 'Coastal Torpedo Command'" "No.430 RSN 'Coastal Torpedo Command'" "No.431 RSN 'Coastal Torpedo Command'" "No.432 RSN 'Coastal Torpedo Command'" "No.433 RSN 'Coastal Torpedo Command'" "No.434 RSN 'Coastal Torpedo Command'" "No.435 RSN 'Coastal Torpedo Command'" 
+		"No.436 RSN 'Coastal Torpedo Command'" "No.437 RSN 'Coastal Torpedo Command'" "No.438 RSN 'Coastal Torpedo Command'" "No.439 RSN 'Coastal Torpedo Command'" "No.444 RSN 'Coastal Torpedo Command'" "No.445 RSN 'Coastal Torpedo Command'" "No.446 RSN 'Coastal Torpedo Command'" "No.447 RSN 'Coastal Torpedo Command'" "No.448 RSN 'Coastal Torpedo Command'" "No.449 RSN 'Coastal Torpedo Command'" "No.450 RSN 'Coastal Torpedo Command'" 
+		"No.451 RSN 'Coastal Torpedo Command'" 
+	}
+	cas = {
+		"No.1 RSAF Dive Bomber Group" "No.2 RSAF Dive Bomber Group" "No.3 RSAF Dive Bomber Group" "No.4 RSAF Dive Bomber Group" "No.5 RSAF Dive Bomber Group" "No.52 RSAF Dive Bomber Group" "No.53 RSAF Dive Bomber Group" "No.54 RSAF Dive Bomber Group" "No.55 RSAF Dive Bomber Group" "No.56 RSAF Dive Bomber Group" "No.57 RSAF Dive Bomber Group" 
+		"No.58 RSAF Dive Bomber Group" "No.59 RSAF Dive Bomber Group" "No.60 RSAF Dive Bomber Group" "No.61 RSAF Dive Bomber Group" "No.62 RSAF Dive Bomber Group" "No.63 RSAF Dive Bomber Group" "No.64 RSAF Dive Bomber Group" "No.65 RSAF Dive Bomber Group" "No.66 RSAF Dive Bomber Group" "No.67 RSAF Dive Bomber Group" "No.68 RSAF Dive Bomber Group" 
+		"No.69 RSAF Dive Bomber Group" "No.70 RSAF Dive Bomber Group" "No.71 RSAF Dive Bomber Group" "No.72 RSAF Dive Bomber Group" "No.135 RSAF Dive Bomber Group" "No.136 RSAF Dive Bomber Group" "No.137 RSAF Dive Bomber Group" "No.138 RSAF Dive Bomber Group" "No.139 RSAF Dive Bomber Group" 
+	}
+	transport_plane = {
+		"No.46 Military Transport Group" "No.216 Military Transport Group" "No.38 Military Transport Group" "No.180 Military Transport Group" "No.181 Military Transport Group" "No.182 Military Transport Group" "No.183 Military Transport Group" "No.184 Military Transport Group" "No.185 Military Transport Group" "No.186 Military Transport Group" "No.187 Military Transport Group" 
+		"No.188 Military Transport Group" "No.189 Military Transport Group" "No.190 Military Transport Group" "No.191 Military Transport Group" "No.192 Military Transport Group" "No.193 Military Transport Group" "No.194 Military Transport Group" "No.195 Military Transport Group" "No.196 Military Transport Group" "No.197 Military Transport Group" "No.198 Military Transport Group" 
+		"No.199 Military Transport Group" 
+	}
+	battleship = {
+		"HMS Scotland" "HMS William Wallace" "HMS James VI" "HMS Andrew de Moray" "HMS Robert the Bruce" "HMS Malcolm II"
+	}
+	light_cruiser = {
+		"HMS Campbeltown" "HMS Fort Augustus" "HMS Dalwhinnie" "HMS Shotts" "HMS Ayr" "HMS Stranraer" "HMS Dunkeld" "HMS Gairloch"
+	}
+	heavy_cruiser = {
+		"HMS Alexander Graham Bell" "HMS Adam Smith" "HMS Robert Burns" "HMS John Napier" "HMS James Maxwell" "HMS Andrew Fletcher" "HMS James Watt" "HMS Robert Adam" "HMS Francis Hutcheson" "HMS David Hume" "HMS Walter Scott"
+	}
+	battlecruiser = {
+		"HMS Glasgow" "HMS Edinburgh" "HMS Aberdeen" "HMS Dundee" "HMS Perth" "HMS Iverngill" "HMS Stirling Bridge" "HMS Ayr" "HMS Dumfries"
+	}
+	destroyer = {
+		"1st Destroyer Flotilla" "2nd Destroyer Flotilla" "3rd Destroyer Flotilla" "4th Destroyer Flotilla" "5th Destroyer Flotilla" "6th Destroyer Flotilla" "7th Destroyer Flotilla" "8th Destroyer Flotilla" "9th Destroyer Flotilla" "10th Destroyer Flotilla" "11th Destroyer Flotilla" 
+		"12th Destroyer Flotilla" "13th Destroyer Flotilla" "14th Destroyer Flotilla" "15th Destroyer Flotilla" "16th Destroyer Flotilla" "17th Destroyer Flotilla" "18th Destroyer Flotilla" "19th Destroyer Flotilla" "20th Destroyer Flotilla" "21st Destroyer Flotilla" "22nd Destroyer Flotilla" 
+		"23rd Destroyer Flotilla" "24th Destroyer Flotilla" "25th Destroyer Flotilla" "26th Destroyer Flotilla" "27th Destroyer Flotilla" "28th Destroyer Flotilla" "29th Destroyer Flotilla" "30th Destroyer Flotilla" "31st Destroyer Flotilla" "32nd Destroyer Flotilla" "33rd Destroyer Flotilla" 
+		"34th Destroyer Flotilla" "35th Destroyer Flotilla" "36th Destroyer Flotilla" "37th Destroyer Flotilla" "38th Destroyer Flotilla" "39th Destroyer Flotilla" "40th Destroyer Flotilla" "41st Destroyer Flotilla" "42nd Destroyer Flotilla" "43rd Destroyer Flotilla" "44th Destroyer Flotilla" 
+		"45th Destroyer Flotilla" "46th Destroyer Flotilla" "47th Destroyer Flotilla" "48th Destroyer Flotilla" "49th Destroyer Flotilla" "50th Destroyer Flotilla" "51st Destroyer Flotilla" "52nd Destroyer Flotilla" "53rd Destroyer Flotilla" "54th Destroyer Flotilla" "55th Destroyer Flotilla" 
+		"56th Destroyer Flotilla" "57th Destroyer Flotilla" "58th Destroyer Flotilla" "59th Destroyer Flotilla" "60th Destroyer Flotilla" "61st Destroyer Flotilla" "62nd Destroyer Flotilla" "63rd Destroyer Flotilla" "64th Destroyer Flotilla" "65th Destroyer Flotilla" "66th Destroyer Flotilla" 
+		"67th Destroyer Flotilla" "68th Destroyer Flotilla" "69th Destroyer Flotilla" "70th Destroyer Flotilla" "71st Destroyer Flotilla" "72nd Destroyer Flotilla" "73rd Destroyer Flotilla" "74th Destroyer Flotilla" "75th Destroyer Flotilla" "76th Destroyer Flotilla" "77th Destroyer Flotilla" 
+		"78th Destroyer Flotilla" "79th Destroyer Flotilla" "80th Destroyer Flotilla" "81st Destroyer Flotilla" "82nd Destroyer Flotilla" "83rd Destroyer Flotilla" "84th Destroyer Flotilla" "85th Destroyer Flotilla" "86th Destroyer Flotilla" "87th Destroyer Flotilla" "88th Destroyer Flotilla" 
+		"89th Destroyer Flotilla" "90th Destroyer Flotilla" "91st Destroyer Flotilla" "92nd Destroyer Flotilla" "93rd Destroyer Flotilla" "94th Destroyer Flotilla" "95th Destroyer Flotilla" "96th Destroyer Flotilla" "97th Destroyer Flotilla" "98th Destroyer Flotilla" "99th Destroyer Flotilla" 
+		"100th Destroyer Flotilla" 
+	}
+	carrier = {
+		"HMS Caledonia" "HMS Scapa Flow" "HMS Loch Ness" "HMS Ben Nevis" "HMS Hebrides" "HMS Orkneys" "HMS Shetlands"
+	}
+	escort_carrier = {
+		"HMS Colossus" "HMS Vengeance" "HMS Atlantic" "HMS Edgar" "HMS Hercules" "HMS Leviathan" "HMS Centaur" "HMS Alba" 
+	}
+	submarine = {
+		"1st Submarine Flotilla" "2nd Submarine Flotilla" "3rd Submarine Flotilla" "4th Submarine Flotilla" "5th Submarine Flotilla" "6th Submarine Flotilla" "7th Submarine Flotilla" "8th Submarine Flotilla" "9th Submarine Flotilla" "10th Submarine Flotilla" "11th Submarine Flotilla" 
+		"12th Submarine Flotilla" "13th Submarine Flotilla" "14th Submarine Flotilla" "15th Submarine Flotilla" "16th Submarine Flotilla" "17th Submarine Flotilla" "18th Submarine Flotilla" "19th Submarine Flotilla" "20th Submarine Flotilla" "21th Submarine Flotilla" "22th Submarine Flotilla" 
+		"23th Submarine Flotilla" "24th Submarine Flotilla" "25th Submarine Flotilla" "26th Submarine Flotilla" "27th Submarine Flotilla" "28th Submarine Flotilla" "29th Submarine Flotilla" "30th Submarine Flotilla" "31th Submarine Flotilla" "32th Submarine Flotilla" "33th Submarine Flotilla" 
+		"34th Submarine Flotilla" "35th Submarine Flotilla" "36th Submarine Flotilla" "37th Submarine Flotilla" "38th Submarine Flotilla" "39th Submarine Flotilla" "40th Submarine Flotilla" "41th Submarine Flotilla" "42th Submarine Flotilla" "43th Submarine Flotilla" "44th Submarine Flotilla" 
+		"45th Submarine Flotilla" "46th Submarine Flotilla" "47th Submarine Flotilla" "48th Submarine Flotilla" "49th Submarine Flotilla" "50th Submarine Flotilla" "51th Submarine Flotilla" "52th Submarine Flotilla" "53th Submarine Flotilla" "54th Submarine Flotilla" "55th Submarine Flotilla" 
+		"56th Submarine Flotilla" "57th Submarine Flotilla" "58th Submarine Flotilla" "59th Submarine Flotilla" "60th Submarine Flotilla" "61th Submarine Flotilla" "62th Submarine Flotilla" "63th Submarine Flotilla" "64th Submarine Flotilla" "65th Submarine Flotilla" "66th Submarine Flotilla" 
+		"67th Submarine Flotilla" "68th Submarine Flotilla" "69th Submarine Flotilla" "70th Submarine Flotilla" "71th Submarine Flotilla" "72th Submarine Flotilla" "73th Submarine Flotilla" "74th Submarine Flotilla" "75th Submarine Flotilla" "76th Submarine Flotilla" "77th Submarine Flotilla" 
+		"78th Submarine Flotilla" "79th Submarine Flotilla" "80th Submarine Flotilla" "81th Submarine Flotilla" "82th Submarine Flotilla" "83th Submarine Flotilla" "84th Submarine Flotilla" "85th Submarine Flotilla" "86th Submarine Flotilla" "87th Submarine Flotilla" "88th Submarine Flotilla" 
+		"89th Submarine Flotilla" "90th Submarine Flotilla" "91th Submarine Flotilla" "92th Submarine Flotilla" "93th Submarine Flotilla" "94th Submarine Flotilla" "95th Submarine Flotilla" "96th Submarine Flotilla" "97th Submarine Flotilla" "98th Submarine Flotilla" "99th Submarine Flotilla" 
+		"100th Submarine Flotilla" 
+	}
+	transport_ship = {
+		"1st Transport Flotilla" "2nd Transport Flotilla" "3rd Transport Flotilla" "4th Transport Flotilla" "5th Transport Flotilla" "6th Transport Flotilla" "7th Transport Flotilla" "8th Transport Flotilla" 
+		"9th Transport Flotilla" "10th Transport Flotilla" "11th Transport Flotilla" "12th Transport Flotilla" "13th Transport Flotilla" "14th Transport Flotilla" "15th Transport Flotilla" "16th Transport Flotilla" "17th Transport Flotilla" "18th Transport Flotilla" "19th Transport Flotilla" 
+		"20th Transport Flotilla" "21st Transport Flotilla" "22nd Transport Flotilla" "23rd Transport Flotilla" "24th Transport Flotilla" "25th Transport Flotilla" "26th Transport Flotilla" "27th Transport Flotilla" "28th Transport Flotilla" "29th Transport Flotilla" "30th Transport Flotilla" 
+		"31st Transport Flotilla" "32nd Transport Flotilla" "33rd Transport Flotilla" "34th Transport Flotilla" "35th Transport Flotilla" "36th Transport Flotilla" "37th Transport Flotilla" "38th Transport Flotilla" "39th Transport Flotilla" "40th Transport Flotilla" "41st Transport Flotilla" 
+		"42nd Transport Flotilla" "43rd Transport Flotilla" "44th Transport Flotilla" "45th Transport Flotilla" "46th Transport Flotilla" "47th Transport Flotilla" "48th Transport Flotilla" "49th Transport Flotilla" "50th Transport Flotilla" "51st Transport Flotilla" "52nd Transport Flotilla" 
+		"53rd Transport Flotilla" "54th Transport Flotilla" "55th Transport Flotilla" "56th Transport Flotilla" "57th Transport Flotilla" "58th Transport Flotilla" "59th Transport Flotilla" "60th Transport Flotilla" "61st Transport Flotilla" "62nd Transport Flotilla" "63rd Transport Flotilla" 
+		"64th Transport Flotilla" "65th Transport Flotilla" "66th Transport Flotilla" "67th Transport Flotilla" "68th Transport Flotilla" "69th Transport Flotilla" "70th Transport Flotilla" "71st Transport Flotilla" "72nd Transport Flotilla" "73rd Transport Flotilla" "74th Transport Flotilla" 
+		"75th Transport Flotilla" "76th Transport Flotilla" "77th Transport Flotilla" "78th Transport Flotilla" "79th Transport Flotilla" "80th Transport Flotilla" "81st Transport Flotilla" "82nd Transport Flotilla" "83rd Transport Flotilla" "84th Transport Flotilla" "85th Transport Flotilla" 
+		"86th Transport Flotilla" "87th Transport Flotilla" "88th Transport Flotilla" "89th Transport Flotilla" "90th Transport Flotilla" "91st Transport Flotilla" "92nd Transport Flotilla" "93rd Transport Flotilla" "94th Transport Flotilla" "95th Transport Flotilla" "96th Transport Flotilla" 
+		"97th Transport Flotilla" "98th Transport Flotilla" "99th Transport Flotilla" "100th Transport Flotilla" 
+	}
+
+}
+
+
+ministers = {
+	922482 = {
+	 name = "Andrew McCulloch"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 chief_of_army = static_defence_doctrine
+	 start_date = 1936.1.1
+	 picture = L1217
+}
+922483 = {
+	 name = "Anthony Stokes"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 chief_of_navy = indirect_approach_doctrine
+	 start_date = 1936.1.1
+	 picture = L1391
+}
+922484 = {
+	 name = "Archibald Ramsay"
+	 ideology = fascistic
+	 loyalty = 1.00
+	 foreign_minister = iron_fisted_brute
+	 start_date = 1943.1.1
+	 picture = M1054
+}
+922485 = {
+	 name = "Charles Duke of Gordon"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 foreign_minister = general_staffer
+	 start_date = 1936.1.1
+	 picture = M561015
+}
+922486 = {
+	 name = "Charles Earl Breadalbane"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 minister_of_security = man_of_the_people
+	 start_date = 1936.1.1
+	 picture = M561019
+}
+922487 = {
+	 name = "Charles Earl of Southesk"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 minister_of_intelligence = logistics_specialist
+	 start_date = 1936.1.1
+	 picture = M561021
+}
+922488 = {
+	 name = "Charles III Lord Walgrave"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 head_of_state = benevolent_gentleman
+	 start_date = 1936.1.1
+	 picture = M561011
+}
+922489 = {
+	 name = "David Maxwell Fyfe"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 minister_of_security = compassionate_gentleman
+	 start_date = 1941.1.1
+	 picture = M1085
+}
+922490 = {
+	 name = "Donald Cardross Erskine"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 foreign_minister = iron_fisted_brute
+	 start_date = 1936.1.1
+	 picture = M561016
+}
+922491 = {
+	 name = "Douglas Duke of Hamilton"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 foreign_minister = the_cloak_n_dagger_schemer
+	 start_date = 1936.1.1
+	 picture = M561037
+}
+922492 = {
+	 name = "Geoffrey Layton"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 chief_of_navy = decisive_naval_battle_doctrine
+	 start_date = 1936.1.1
+	 picture = L1364
+}
+922493 = {
+	 name = "George Buchanan"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 armament_minister = resource_industrialist
+	 start_date = 1939.1.1
+	 picture = M561031
+}
+922494 = {
+	 name = "Harold Franklyn"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 chief_of_staff = school_of_defence
+	 start_date = 1936.1.1
+	 picture = L1127
+}
+922495 = {
+	 name = "Harold Harington Balfour"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 head_of_state = barking_buffoon
+	 start_date = 1936.1.1
+	 picture = M561001
+}
+922496 = {
+	 name = "Henry McGrew"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 head_of_state = die_hard_reformer
+	 start_date = 1936.1.1
+	 picture = M561012
+}
+922497 = {
+	 name = "Herbrand Earl de la Warr"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 minister_of_security = back_stabber
+	 start_date = 1936.1.1
+	 picture = M561005
+}
+922498 = {
+	 name = "Ian Campbell Gray"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 armament_minister = resource_industrialist
+	 start_date = 1936.1.1
+	 picture = M561017
+}
+922499 = {
+	 name = "Ignatius R. Dunnachie"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 head_of_government = happy_amateur
+	 start_date = 1936.1.1
+	 picture = M561014
+}
+922500 = {
+	 name = "James Duke of Abercorn"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 head_of_government = backroom_backstabber
+	 start_date = 1936.1.1
+	 picture = M561013
+}
+922501 = {
+	 name = "James Fitzwarenne DeSpencer"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 armament_minister = battle_fleet_proponent
+	 start_date = 1936.1.1
+	 picture = M561004
+}
+922502 = {
+	 name = "James Moxton"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 minister_of_security = silent_lawyer
+	 start_date = 1936.1.1
+	 picture = M561034
+}
+922503 = {
+	 name = "John Baron Kinross"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 minister_of_intelligence = dismal_enigma
+	 start_date = 1936.1.1
+	 picture = M561006
+}
+922504 = {
+	 name = "John Stuart Lord Borthwick"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 head_of_government = silent_workhorse
+	 start_date = 1936.1.1
+	 picture = M561002
+}
+922505 = {
+	 name = "Lucius Plantagenet Falkland"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 foreign_minister = great_compromiser
+	 start_date = 1936.1.1
+	 picture = M561003
+}
+922506 = {
+	 name = "Malcolm MacDonald"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 minister_of_security = compassionate_gentleman
+	 start_date = 1936.1.1
+	 picture = M561020
+}
+922507 = {
+	 name = "Marie Carmichael Stopes"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 minister_of_intelligence = technical_specialist
+	 start_date = 1936.1.1
+	 picture = M561022
+}
+922508 = {
+	 name = "Owen Boyd"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 chief_of_air = army_aviation_doctrine
+	 start_date = 1936.1.1
+	 picture = L1418
+}
+922509 = {
+	 name = "P.S. Sholto-Douglas"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 chief_of_air = carpet_bombing_doctrine
+	 start_date = 1936.1.1
+	 picture = L1479
+}
+922510 = {
+	 name = "Perry Keene"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 chief_of_air = naval_aviation_doctrine
+	 start_date = 1936.1.1
+	 picture = L1453
+}
+922511 = {
+	 name = "Peter Drummond MacDonald"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 armament_minister = military_entrepreneur
+	 start_date = 1936.1.1
+	 picture = M561018
+}
+922512 = {
+	 name = "Philip Maxwell Balfour"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 chief_of_staff = school_of_psychology
+	 start_date = 1936.1.1
+	 picture = L1018
+}
+922513 = {
+	 name = "Richard McCreery"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 chief_of_staff = school_of_manoeuvre
+	 start_date = 1936.1.1
+	 picture = L1216
+}
+922514 = {
+	 name = "S.T. Hakewill-Smith"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 chief_of_army = elastic_defence_doctrine
+	 start_date = 1936.1.1
+	 picture = L1152
+}
+922515 = {
+	 name = "Sir Hugh Dowding"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 chief_of_air = air_superiority_doctrine
+	 start_date = 1936.1.1
+	 picture = L1435
+}
+922516 = {
+	 name = "T.L. Bruce-Fraser"
+	 ideology = market_liberal
+	 loyalty = 1.00
+	 chief_of_navy = open_seas_doctrine
+	 start_date = 1936.1.1
+	 picture = L1328
+}
+922517 = {
+	 name = "W.M. St.George Kirke"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 chief_of_army = decisive_battle_doctrine
+	 start_date = 1936.1.1
+	 picture = L1181
+}
+922518 = {
+	 name = "William Gallacher"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 foreign_minister = ideological_crusader
+	 start_date = 1936.1.1
+	 picture = M561033
+}
+
+}
+

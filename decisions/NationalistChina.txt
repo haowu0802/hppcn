@@ -1,0 +1,115 @@
+
+diplomatic_decisions = {
+	
+#####################
+# Transfer Industry #
+#####################
+
+	chinese_industry_transfer = {
+		major = yes
+		potential = {
+			tag = CHI
+			war_with = JAP
+			not = { has_country_flag = chinese_ic_transfer }
+		}
+		allow = {
+			OR = {
+				JAP = { controls = 4979 }
+				lost_national = 0.05
+			}
+			CHI = { controls = 9478 }
+		}
+		effect = {
+			# Remove 8 IC
+			5174 = {industry = -2} #Taiyuan
+			7508 = {industry = -3} #Wuhan
+			5681 = {industry = -3} #Nanchang
+			# Add 6 IC
+			7435 = {industry = 1} #Xi'an
+			7520 = {industry = 2} #Changsa
+			9478 = {industry = 3} #Chongqing
+			# Move capital and add supplies/resources to offset the loss that will occur
+			capital = 9478 #Chongqing
+			rare_materials = 2000
+			crude_oil = 1000
+			supplies = 30000
+			energy = 8000
+			metal = 4000
+			fuel = 500
+			money = 500
+			#set flag to prevent this from firing again
+			set_country_flag = chinese_ic_transfer
+			#increase national unity
+			national_unity = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ask_for_admission_to_the_allies = {
+		major = yes
+		potential = {
+			tag = CHI					# A decision for China
+			exists = JAP				# China is at war with Japan
+			war_with = JAP
+			JAP = { faction = axis }
+			exists = ENG				# UK is in the Allies
+			ENG = { faction = allies }
+			ENG = { war_with = JAP}		# The Allies are at war with Japan
+			is_in_any_faction = no
+			not = { has_country_flag = join_the_allies }
+		}
+		allow = {
+			or = {												# It will be possible if either
+				ENG = { relation = { who = CHI value = 150 } }	# good realations with the UK
+				and = {											# OR
+					exists = USA								# USA is in the Allies
+					USA = { faction = allies }					# and good realations with the USA
+					USA = { relation = { who = CHI value = 150 } }
+				}
+			}
+		}
+		effect = {
+			set_country_flag = join_the_allies
+			ENG = { country_event = 2815 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	break_dikes = {
+		major = yes
+		potential = {
+			tag = CHI
+			exists = JAP
+			war_with = JAP
+			NOT = { has_country_flag = dikes_broken }
+		}
+
+		allow = {
+			NOT = { controls = 5383 }
+		}
+		effect = {
+			any_owned = { 
+				limit = { 
+					region = huang_he_flood_region
+				} 
+				infra = -2
+			}
+			set_country_flag = dikes_broken
+			#you just killed and pissed off a lot of people
+			manpower = -200
+			dissent = 5
+			add_country_modifier = {
+				name = "huang_he_flooded"
+				duration = 730 #flood waters recede about 2 years later
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,168 @@
+#######################################
+# Each trait can have ONE effect of the following
+#
+# xp_gain surprise_chance supply_consumption defence_modifier offence_modifier combat_move_speed winter_attrition river_attack
+# fort_attack combined_arms_bonus out_of_supply_modifier submarine_attack disengage_timer spread_out spotting_chance defender_softness
+# strategic_attack naval_attack night_attack  tactical_attack dissent_impact encirclement_bonus envelopment_bonus experience_bonus
+# fort_defence amph_attack digin_bonus  paradrop_mission
+#######################################
+
+
+##################################
+# Common Traits
+##################################
+old_guard = { 
+	allowed_leader = { land sea air }
+	xp_gain = -0.5
+}
+
+
+##################################
+# Land traits.
+##################################
+
+trickster = {
+	allowed_leader = { land } 
+	surprise_chance = 0.25
+}
+
+logistics_wizard = { 
+	allowed_leader = { land }
+	supply_consumption = -0.25
+}
+
+defensive_doctrine = { 
+	allowed_leader = { land }
+	defence_modifier = 0.1
+}
+
+offensive_doctrine = { 
+	allowed_leader = { land }
+	offence_modifier = 0.1
+}
+
+winter_specialist = { 
+	allowed_leader = { land }
+	winter_attrition = -0.5
+}
+
+engineer = { 
+	allowed_leader = { land }
+	river_attack = 0.1
+}
+
+fortress_buster = { 
+	allowed_leader = { land }
+	fort_attack = 0.1
+}
+
+panzer_leader = { 
+	allowed_leader = { land }
+	combined_arms_bonus = 0.1
+}
+
+commando = { 
+	allowed_leader = { land }
+	out_of_supply_modifier = -0.2
+}
+
+# New for HPP
+
+school_of_manoeuver_trait = {
+	allowed_leader = { land }
+	combat_move_speed = 0.10
+}
+
+school_of_psychology_trait = {
+	allowed_leader = { land }
+	dissent_impact = -0.5
+}
+
+fanatic_trait = {
+	allowed_leader = { land }
+	encirclement_bonus = -0.15
+}
+
+allround_defence_trait = {
+	allowed_leader = { land }
+	envelopment_bonus = -0.10
+}
+
+school_of_entrenchment_trait = {
+	allowed_leader = { land }
+	digin_bonus = 0.20
+}
+
+school_of_fortification_trait = {
+	allowed_leader = { land }
+	fort_defence = 0.15
+}
+
+drillmaster_trait = {
+	allowed_leader = { land }
+	experience_bonus = 0.05
+}
+
+marine_trait = {
+	allowed_leader = { land }
+	amph_attack = 0.25
+}
+
+paratrooper_trait = {
+	allowed_leader = { land }
+	paradrop_mission = 0.25
+}
+
+##################################
+# Naval traits.
+##################################
+
+seawolf = { 
+	allowed_leader = { sea }
+	submarine_attack = 0.2
+}
+
+blockade_runner = { 
+	allowed_leader = { sea }
+	disengage_timer = 1
+}
+
+superior_tactician = { 
+	allowed_leader = { sea }
+	spread_out = 0.1
+}
+
+spotter = { 
+	allowed_leader = { sea }
+	spotting_chance = 0.1
+}
+
+
+##################################
+# Air traits.
+##################################
+
+tank_buster = { 
+	allowed_leader = { air }
+	defender_softness = 0.2
+}
+
+carpet_bomber = { 
+	allowed_leader = { air }
+	strategic_attack = 0.1
+}
+
+night_flyer = { 	
+	allowed_leader = { air }
+	night_attack = 0.1
+}
+
+fleet_destroyer = { 
+	allowed_leader = { air }
+	naval_attack = 0.1
+}
+
+superior_air_tactician = {
+	allowed_leader = { air }
+	tactical_attack = 0.1
+}

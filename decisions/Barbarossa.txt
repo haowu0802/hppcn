@@ -1,0 +1,72 @@
+diplomatic_decisions = {
+
+	operation_barbarossa = {
+		major = yes
+		potential = {
+			tag = GER
+			exists = SOV
+			not = { has_country_flag = "op_barbarossa" }
+			or = {
+				GER = { neighbour = SOV }
+				any_neighbor_country = {
+					faction = comintern
+				}
+			}
+			not = { war_with = SOV }
+			SOV = { not = { has_country_flag = "su_signs_peace" } }	# No Bitter Peace yet.
+			or = {
+				not = { exists = FRA }
+				FRA = { government_in_exile = yes }
+			}
+		}
+		allow = {
+			or = {
+				ai = no
+				not = {
+					any_neighbor_country = {
+						war_with = THIS
+						government_in_exile = no						# Not at war with any non-GiE neighbors!
+					}
+				}
+			}
+			year = 1941		# It shouldn't really be possible earlier
+		}
+		effect = {
+			set_country_flag = "op_barbarossa"
+			end_non_aggression_pact = SOV
+			war = {
+				target = SOV
+				attacker_goal = { casus_belli = barbarossa_war_goal }
+			}
+			any_country = {
+				limit = { neighbour = SOV }
+				country_event = 3701
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	deal_with_the_traitors = {
+		major = yes
+		potential = {
+			tag = GER
+			has_country_flag = "traitors_barbarossa"
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = "traitors_barbarossa"
+			any_country = {
+				limit = { has_country_flag = "barbarossa_traitor" }
+				country_event = 3704
+				clr_country_flag = "barbarossa_traitor"
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

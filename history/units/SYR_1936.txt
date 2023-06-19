@@ -1,0 +1,32 @@
+theatre = {
+	name = "Armée Syrienne"
+	location = 7374
+	regiment = { type = hq_brigade name = "Aleppo HQ" historical_model = 0 }
+	division = {
+		name = "Syrienne Division d'Infanterie"
+		location = 7374
+		regiment = { type = infantry_brigade name = "1er Bataillons du Levant" experience = 5 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "2e Bataillons du Levant" experience = 5 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "3e Bataillons du Levant" experience = 5 historical_model = 2 }
+	}
+	division = {
+		name = "Syrienne Division de Cavalerie"
+		location = 7374
+		regiment = { type = cavalry_brigade name = "1er Compagnies Legeres du Desert" experience = 5 historical_model = 2 }
+		regiment = { type = cavalry_brigade name = "2e Compagnies Legeres du Desert" experience = 5 historical_model = 2 }
+	}	
+}
+convoy_construction=
+{
+	country = SYR
+	id=
+	{
+		id=15444
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

@@ -1,0 +1,994 @@
+diplomatic_decisions = {
+
+	# Nation is at peace.
+
+	leave_the_allies_peace = {
+		major = yes
+		potential = {
+			war = no
+			faction = allies
+			government_in_exile = no
+			is_subject = no							# Puppets can't break away from a faction.
+			not = { ideology_group = democracy }	# Not a democracy, or a somewhat mild autocracy.
+			not = { ideology = paternal_autocrat }
+			not = { ideology = left_wing_radical }
+		}
+		allow = {
+		}
+		effect = {
+			leave_faction = allies
+			neutrality = 5
+			any_country = {
+				limit = { vassal_of = THIS }
+				leave_faction = allies
+			}
+			any_country = {
+				limit = { faction = allies }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	leave_the_axis_peace = {
+		major = yes
+		potential = {
+			war = no
+			faction = axis
+			government_in_exile = no
+			is_subject = no							# Puppets can't break away from a faction.
+			not = { ideology_group = fascism }		# Not a fascism, or at least Social Conservative.
+			not = { ideology = social_conservative }
+		}
+		allow = {
+		}
+		effect = {
+			leave_faction = axis
+			neutrality = 5
+			any_country = {
+				limit = { vassal_of = THIS }
+				leave_faction = axis
+			}
+			any_country = {
+				limit = { faction = axis }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	leave_the_commintern_peace = {
+		major = yes
+		potential = {
+			war = no
+			faction = comintern
+			government_in_exile = no
+			is_subject = no							# Puppets can't break away from a faction.
+			not = { ideology_group = communism }	# Not a communism, or at least a Social Democracy.
+			not = { ideology = social_democrat }
+		}
+		allow = {
+		}
+		effect = {
+			leave_faction = comintern
+			neutrality = 5
+			any_country = {
+				limit = { vassal_of = THIS }
+				leave_faction = comintern
+			}
+			any_country = {
+				limit = { faction = comintern }
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# Nation is at war.
+
+	switch_to_allies_war = {
+		major = yes
+		potential = {
+			war = yes				# At war
+			is_in_any_faction = yes			# In a faction
+			not = { faction = allies }		# But not the Allies
+
+			exists = ENG				# Let's assume Britain is the Allied leader
+			ENG = { faction = allies }		# There's no method for checking that at the moment
+			ENG = { government_in_exile = no }
+			ENG = { is_subject = no }
+
+			not = { war_with = ENG }
+			government_in_exile = no
+			is_subject = no				# Puppets can't break away from a faction
+
+			ideology_group = democracy		# Is a democracy
+			or = {
+				and = {				# But not Social Conservative in the Axis
+					faction = axis
+					not = { ideology = social_conservative }
+				}
+				and = {				# Or Social Democrat in the Comintern
+					faction = comintern
+					not = { ideology = social_democrat }
+				}
+			}
+			not = { has_country_modifier = "ask_to_join_allies" }
+			not = {
+				any_neighbor_country = {
+					faction = allies
+					war_with = THIS
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			add_country_modifier = {
+				name = "ask_to_join_allies"	# We can't ask again for 30 days
+				duration = 30
+			}
+			ENG = { country_event = 7301 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	switch_to_allies_war_USA = {
+		major = yes
+		potential = {
+			war = yes				# At war
+			is_in_any_faction = yes			# In a faction
+			not = { faction = allies }		# But not the Allies
+
+			exists = USA				# Let's assume the USA is the Allied leader
+			USA = { faction = allies }
+			USA = { government_in_exile = no }
+			USA = { is_subject = no }
+
+			OR = {					# Which means checking the British are not!
+				NOT = { exists = ENG }
+				NOT = { ENG = { faction = allies } }
+				ENG = { government_in_exile = yes }
+				ENG = { is_subject = yes }
+			}
+
+			not = { war_with = USA }
+			government_in_exile = no
+			is_subject = no				# Puppets can't break away from a faction
+
+			ideology_group = democracy		# Is a democracy
+			or = {
+				and = {				# But not Social Conservative in the Axis
+					faction = axis
+					not = { ideology = social_conservative }
+				}
+				and = {				# Or Social Democrat in the Comintern
+					faction = comintern
+					not = { ideology = social_democrat }
+				}
+			}
+			not = { has_country_modifier = "ask_to_join_allies" }
+			not = {
+				any_neighbor_country = {
+					faction = allies
+					war_with = THIS
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			add_country_modifier = {
+				name = "ask_to_join_allies"	# We can't ask again for 30 days
+				duration = 30
+			}
+			USA = { country_event = 7301 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	switch_to_axis_war = {
+		major = yes
+		potential = {
+			war = yes				# At war
+			is_in_any_faction = yes			# In a faction,
+			not = { faction = axis }		# But not the Axis
+
+			exists = GER				# Let's assume Germany is the Axis leader
+			GER = { faction = axis }
+			GER = { government_in_exile = no }
+			GER = { is_subject = no }
+
+			not = { war_with = GER }
+			government_in_exile = no
+			is_subject = no				# Puppets can't break away from a faction
+
+			ideology_group = fascism		# Is a Fascism
+			or = {
+				and = {				# But not Paternal Autocrat in the Allies
+					faction = allies
+					not = { ideology = paternal_autocrat }
+				}
+				faction = comintern		# Or anything in the Comintern
+			}
+			not = { has_country_modifier = "ask_to_join_axis" }
+			not = {
+				any_neighbor_country = {
+					faction = axis
+					war_with = THIS
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			add_country_modifier = {
+				name = "ask_to_join_axis"	# We can't ask again for 30 days
+				duration = 30
+			}
+			GER = { country_event = 7302 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	switch_to_axis_war_JAP = {
+		major = yes
+		potential = {
+			war = yes				# At war
+			is_in_any_faction = yes			# In a faction,
+			not = { faction = axis }		# But not the Axis
+
+			exists = JAP				# Let's assume Japan is the Axis leader
+			JAP = { faction = axis }
+			JAP = { government_in_exile = no }
+			JAP = { is_subject = no }
+
+			OR = {					# Which means checking the Germans are not!
+				NOT = { exists = GER }
+				NOT = { GER = { faction = axis } }
+				GER = { government_in_exile = yes }
+				GER = { is_subject = yes }
+			}
+
+			not = { war_with = JAP }
+			government_in_exile = no
+			is_subject = no				# Puppets can't break away from a faction
+
+			ideology_group = fascism		# Is a Fascism
+			or = {
+				and = {				# But not Paternal Autocrat in the Allies
+					faction = allies
+					not = { ideology = paternal_autocrat }
+				}
+				faction = comintern		# Or anything in the Comintern
+			}
+			not = { has_country_modifier = "ask_to_join_axis" }
+			not = {
+				any_neighbor_country = {
+					faction = axis
+					war_with = THIS
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			add_country_modifier = {
+				name = "ask_to_join_axis"	# We can't ask again for 30 days
+				duration = 30
+			}
+			JAP = { country_event = 7302 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	switch_to_commintern_war = {
+		major = yes
+		potential = {
+			war = yes				# At war
+			is_in_any_faction = yes			# In a faction
+			not = { faction = comintern }		# But not the Comintern
+
+			exists = SOV				# Let's assume the USSR is the Comintern leader
+			SOV = { faction = comintern }
+			SOV = { government_in_exile = no }
+			SOV = { is_subject = no }
+
+			not = { war_with = SOV }
+			government_in_exile = no
+			is_subject = no				# Puppets can't break away from a faction
+
+			ideology_group = communism		# Communism
+			or = {
+				and = {				# But not Left-Wing Radical in the Allies
+					faction = allies
+					not = { ideology = left_wing_radical }
+				}
+				faction = axis			# Or anything in the Axis
+			}
+			not = { has_country_modifier = "ask_to_join_comintern" }
+			not = {
+				any_neighbor_country = {
+					faction = comintern
+					war_with = THIS
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			add_country_modifier = {
+				name = "ask_to_join_comintern"	# We can't ask again for 30 days
+				duration = 30
+			}
+			SOV = { country_event = 7303 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# Our intended target-faction does not exist! Let's re-form it!
+
+	reform_the_allies = {
+		major = yes
+		potential = {
+			has_global_flag = "allies_extinct"
+			or = {
+				is_in_any_faction = no
+				not = { faction = allies }
+			}
+			total_ic = 75
+			government_in_exile = no
+			is_subject = no							# Puppets can't break away from a faction.
+			ideology_group = democracy				# Is a Democracy
+			not = {
+				and = {
+					faction = axis
+					ideology = social_conservative	# Social Conservatives may stay in the Axis!
+				}
+			}
+			not = {
+				and = {
+					faction = comintern
+					ideology = social_democrat		# Social Democrats may stay in the Comintern!
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			join_faction = allies
+			clr_global_flag = "allies_extinct"
+			clr_global_flag = "allies_dissolved"
+			national_unity = 5						# We just formed a new faction!
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	reform_the_axis = {
+		major = yes
+		potential = {
+			has_global_flag = "axis_extinct"
+			or = {
+				is_in_any_faction = no
+				not = { faction = axis }
+			}
+			total_ic = 75
+			government_in_exile = no
+			is_subject = no							# Puppets can't break away from a faction.
+			ideology_group = fascism				# Is a Fascism
+			not = {
+				and = {
+					faction = allies
+					ideology = paternal_autocrat	# Paternal Autocrats may stay in the Allies!
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			join_faction = axis
+			clr_global_flag = "axis_extinct"
+			clr_global_flag = "axis_dissolved"
+			national_unity = 5						# We just formed a new faction!
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	reform_the_comintern = {
+		major = yes
+		potential = {
+			has_global_flag = "comintern_extinct"
+			or = {
+				is_in_any_faction = no
+				not = { faction = comintern }
+			}
+			total_ic = 75
+			government_in_exile = no
+			is_subject = no							# Puppets can't break away from a faction.
+			ideology_group = communism				# Is a Communism
+			not = {
+				and = {
+					faction = allies
+					ideology = left_wing_radical	# Left-Wing Radicals may stay in the Allies!
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			join_faction = comintern
+			clr_global_flag = "comintern_extinct"
+			clr_global_flag = "comintern_dissolved"
+			national_unity = 5						# We just formed a new faction!
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	# There's also the possibility of a nation being at war with the enemy of a faction,
+	# but not being in a faction itself yet. In this case, let's make it possible to join that faction!
+	# This is a generalization of China's option to join the Allies, but it also applies to a neutral Poland
+	# attacked by the Soviet Union for example. (Actually, neutral Poland won't even try to do that before '40.)
+	
+	ask_to_join_allies = {
+		major = yes
+		potential = {
+			is_in_any_faction = no
+			war = yes
+			government_in_exile = no
+			is_subject = no
+
+			exists = ENG				# Let's assume Britain is the Allied leader
+			ENG = { faction = allies }		# There's no method for checking that at the moment
+			ENG = { government_in_exile = no }
+			ENG = { is_subject = no }
+
+			OR = {					# Check the majors to see if we and the British have a common enemy
+				AND = {
+					war_with = GER
+					ENG = { war_with = GER }
+					GER = { government_in_exile = no }
+					GER = { is_subject = no }
+				}
+				AND = {
+					war_with = SOV
+					ENG = { war_with = SOV }
+					SOV = { government_in_exile = no }
+					SOV = { is_subject = no }
+				}
+				AND = {
+					war_with = ITA
+					ENG = { war_with = ITA }
+					ITA = { government_in_exile = no }
+					ITA = { is_subject = no }
+				}
+				AND = {
+					war_with = JAP
+					ENG = { war_with = JAP }
+					JAP = { government_in_exile = no }
+					JAP = { is_subject = no }
+				}
+				AND = {
+					war_with = USA
+					ENG = { war_with = USA }
+					USA = { government_in_exile = no }
+					USA = { is_subject = no }
+				}
+				AND = {
+					war_with = FRA
+					ENG = { war_with = FRA }
+					FRA = { government_in_exile = no }
+					FRA = { is_subject = no }
+				}
+			}
+			
+			NOT = {					# Check we aren't allied with another major that is at war with Britain
+				OR = {
+					AND = {					
+						alliance_with = GER
+						ENG = { war_with = GER }
+					}
+					AND = {
+						alliance_with = SOV
+						ENG = { war_with = SOV }
+					}
+					AND = {
+						alliance_with = ITA
+						ENG = { war_with = ITA }
+					}
+					AND = {
+						alliance_with = JAP
+						ENG = { war_with = JAP }
+					}
+					AND = {
+						alliance_with = USA
+						ENG = { war_with = USA }
+					}
+					AND = {
+						alliance_with = FRA
+						ENG = { war_with = FRA }
+					}
+				}
+			}
+
+			NOT = { war_with = ENG }				# Only if we are not at war with them as well...
+			NOT = { has_country_modifier = "ask_to_join_allies" }	# Should be available multiple times, but not every second!
+			NOT = { has_country_modifier = "ask_to_join_axis" }	# Check we haven't approached one of the other factions!
+			NOT = { has_country_modifier = "ask_to_join_comintern" }
+			OR = {
+				ideology_group = democracy
+				ideology = paternal_autocrat
+				ideology = left_wing_radical
+			}
+		}
+		allow = {
+			relation = { who = ENG value = 0 }	# We are not on bad terms with them
+		}
+		effect = {
+			add_country_modifier = {
+				name = "ask_to_join_allies"	# We can't ask again for 30 days
+				duration = 30
+			}
+			ENG = { country_event = 7301 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ask_to_join_allies_USA = {
+		major = yes
+		potential = {
+			is_in_any_faction = no
+			war = yes
+			government_in_exile = no
+			is_subject = no
+
+			exists = USA				# Let's assume the USA is the Allied leader
+			USA = { faction = allies }		# There's no method for checking that at the moment
+			USA = { government_in_exile = no }
+			USA = { is_subject = no }
+
+			OR = {					# Which means checking the British are not!
+				NOT = { exists = ENG }
+				NOT = { ENG = { faction = allies } }
+				ENG = { government_in_exile = yes }
+				ENG = { is_subject = yes }
+			}
+
+			OR = {					# Check the majors to see if we and the Americans have a common enemy
+				AND = {
+					war_with = GER
+					USA = { war_with = GER }
+					GER = { government_in_exile = no }
+					GER = { is_subject = no }
+				}
+				AND = {
+					war_with = SOV
+					USA = { war_with = SOV }
+					SOV = { government_in_exile = no }
+					SOV = { is_subject = no }
+				}
+				AND = {
+					war_with = ITA
+					USA = { war_with = ITA }
+					ITA = { government_in_exile = no }
+					ITA = { is_subject = no }
+				}
+				AND = {
+					war_with = JAP
+					USA = { war_with = JAP }
+					JAP = { government_in_exile = no }
+					JAP = { is_subject = no }
+				}
+				AND = {
+					war_with = ENG
+					USA = { war_with = ENG }
+					ENG = { government_in_exile = no }
+					ENG = { is_subject = no }
+				}
+				AND = {
+					war_with = FRA
+					USA = { war_with = FRA }
+					FRA = { government_in_exile = no }
+					FRA = { is_subject = no }
+				}
+			}
+			
+			NOT = {					# Check we aren't allied with another major that is at war with the USA
+				OR = {
+					AND = {					
+						alliance_with = GER
+						USA = { war_with = GER }
+					}
+					AND = {
+						alliance_with = SOV
+						USA = { war_with = SOV }
+					}
+					AND = {
+						alliance_with = ITA
+						USA = { war_with = ITA }
+					}
+					AND = {
+						alliance_with = JAP
+						USA = { war_with = JAP }
+					}
+					AND = {
+						alliance_with = ENG
+						USA = { war_with = ENG }
+					}
+					AND = {
+						alliance_with = FRA
+						USA = { war_with = FRA }
+					}
+				}
+			}
+
+			NOT = { war_with = USA }				# Only if we are not at war with them as well...
+			NOT = { has_country_modifier = "ask_to_join_allies" }	# Should be available multiple times, but not every second!
+			NOT = { has_country_modifier = "ask_to_join_axis" }	# Check we haven't approached one of the other factions!
+			NOT = { has_country_modifier = "ask_to_join_comintern" }
+			OR = {
+				ideology_group = democracy
+				ideology = paternal_autocrat
+				ideology = left_wing_radical
+			}
+		}
+		allow = {
+			relation = { who = USA value = 0 }	# We are not on bad terms with them
+		}
+		effect = {
+			add_country_modifier = {
+				name = "ask_to_join_allies"	# We can't ask again for 30 days
+				duration = 30
+			}
+			USA = { country_event = 7301 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ask_to_join_axis = {
+		major = yes
+		potential = {
+			is_in_any_faction = no
+			war = yes
+			government_in_exile = no
+			is_subject = no
+
+			exists = GER				# Let's assume Germany is the Axis leader
+			GER = { faction = axis }		# There's no method for checking that at the moment
+			GER = { government_in_exile = no }
+			GER = { is_subject = no }
+
+			OR = {					# Check the majors to see if we and the Germans have a common enemy
+				AND = {
+					war_with = ENG
+					GER = { war_with = ENG }
+					ENG = { government_in_exile = no }
+					ENG = { is_subject = no }
+				}
+				AND = {
+					war_with = SOV
+					GER = { war_with = SOV }
+					SOV = { government_in_exile = no }
+					SOV = { is_subject = no }
+				}
+				AND = {
+					war_with = ITA
+					GER = { war_with = ITA }
+					ITA = { government_in_exile = no }
+					ITA = { is_subject = no }
+				}
+				AND = {
+					war_with = JAP
+					GER = { war_with = JAP }
+					JAP = { government_in_exile = no }
+					JAP = { is_subject = no }
+				}
+				AND = {
+					war_with = USA
+					GER = { war_with = USA }
+					USA = { government_in_exile = no }
+					USA = { is_subject = no }
+				}
+				AND = {
+					war_with = FRA
+					GER = { war_with = FRA }
+					FRA = { government_in_exile = no }
+					FRA = { is_subject = no }
+				}
+			}
+			
+			NOT = {					# Check we aren't allied with another major that is at war with Germany
+				OR = {
+					AND = {					
+						alliance_with = ENG
+						GER = { war_with = ENG }
+					}
+					AND = {
+						alliance_with = SOV
+						GER = { war_with = SOV }
+					}
+					AND = {
+						alliance_with = ITA
+						GER = { war_with = ITA }
+					}
+					AND = {
+						alliance_with = JAP
+						GER = { war_with = JAP }
+					}
+					AND = {
+						alliance_with = USA
+						GER = { war_with = USA }
+					}
+					AND = {
+						alliance_with = FRA
+						GER = { war_with = FRA }
+					}
+				}
+			}
+
+			NOT = { war_with = GER }				# Only if we are not at war with them as well...
+			NOT = { has_country_modifier = "ask_to_join_allies" }	# Should be available multiple times, but not every second!
+			NOT = { has_country_modifier = "ask_to_join_axis" }	# Check we haven't approached one of the other factions!
+			NOT = { has_country_modifier = "ask_to_join_comintern" }
+			OR = {
+				ideology_group = fascism
+				ideology = social_conservative
+			}
+		}
+		allow = {
+			relation = { who = GER value = 0 }	# We are not on bad terms with them
+		}
+		effect = {
+			add_country_modifier = {
+				name = "ask_to_join_axis"	# We can't ask again for 30 days
+				duration = 30
+			}
+			GER = { country_event = 7302 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ask_to_join_axis_JAP = {
+		major = yes
+		potential = {
+			is_in_any_faction = no
+			war = yes
+			government_in_exile = no
+			is_subject = no
+
+			exists = JAP				# Let's assume the Japan is the Axis leader
+			JAP = { faction = axis }		# There's no method for checking that at the moment
+			JAP = { government_in_exile = no }
+			JAP = { is_subject = no }
+
+			OR = {					# Which means checking the Germans are not!
+				NOT = { exists = GER }
+				NOT = { GER = { faction = axis } }
+				GER = { government_in_exile = yes }
+				GER = { is_subject = yes }
+			}
+
+			OR = {					# Check the majors to see if we and the Japanese have a common enemy
+				AND = {
+					war_with = GER
+					JAP = { war_with = GER }
+					GER = { government_in_exile = no }
+					GER = { is_subject = no }
+				}
+				AND = {
+					war_with = SOV
+					JAP = { war_with = SOV }
+					SOV = { government_in_exile = no }
+					SOV = { is_subject = no }
+				}
+				AND = {
+					war_with = ITA
+					JAP = { war_with = ITA }
+					ITA = { government_in_exile = no }
+					ITA = { is_subject = no }
+				}
+				AND = {
+					war_with = USA
+					JAP = { war_with = USA }
+					USA = { government_in_exile = no }
+					USA = { is_subject = no }
+				}
+				AND = {
+					war_with = ENG
+					JAP = { war_with = ENG }
+					ENG = { government_in_exile = no }
+					ENG = { is_subject = no }
+				}
+				AND = {
+					war_with = FRA
+					JAP = { war_with = FRA }
+					FRA = { government_in_exile = no }
+					FRA = { is_subject = no }
+				}
+			}
+			
+			NOT = {					# Check we aren't allied with another major that is at war with the Japanese
+				OR = {
+					AND = {					
+						alliance_with = GER
+						JAP = { war_with = GER }
+					}
+					AND = {
+						alliance_with = SOV
+						JAP = { war_with = SOV }
+					}
+					AND = {
+						alliance_with = ITA
+						JAP = { war_with = ITA }
+					}
+					AND = {
+						alliance_with = USA
+						JAP = { war_with = USA }
+					}
+					AND = {
+						alliance_with = ENG
+						JAP = { war_with = ENG }
+					}
+					AND = {
+						alliance_with = FRA
+						JAP = { war_with = FRA }
+					}
+				}
+			}
+
+			NOT = { war_with = JAP }				# Only if we are not at war with them as well...
+			NOT = { has_country_modifier = "ask_to_join_allies" }	# Should be available multiple times, but not every second!
+			NOT = { has_country_modifier = "ask_to_join_axis" }	# Check we haven't approached one of the other factions!
+			NOT = { has_country_modifier = "ask_to_join_comintern" }
+			OR = {
+				ideology_group = fascism
+				ideology = social_conservative
+			}
+		}
+		allow = {
+			relation = { who = JAP value = 0 }	# We are not on bad terms with them
+		}
+		effect = {
+			add_country_modifier = {
+				name = "ask_to_join_axis"	# We can't ask again for 30 days
+				duration = 30
+			}
+			JAP = { country_event = 7302 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ask_to_join_comintern = {
+		major = yes
+		potential = {
+			is_in_any_faction = no
+			war = yes
+			government_in_exile = no
+			is_subject = no
+
+			exists = SOV				# Let's assume the USSR is the Comintern leader
+			SOV = { faction = comintern }		# There's no method for checking that at the moment
+			SOV = { government_in_exile = no }
+			SOV = { is_subject = no }
+
+			OR = {					# Check the majors to see if we and the Soviets have a common enemy
+				AND = {
+					war_with = ENG
+					SOV = { war_with = ENG }
+					ENG = { government_in_exile = no }
+					ENG = { is_subject = no }
+				}
+				AND = {
+					war_with = GER
+					SOV = { war_with = GER }
+					GER = { government_in_exile = no }
+					GER = { is_subject = no }
+				}
+				AND = {
+					war_with = ITA
+					SOV = { war_with = ITA }
+					ITA = { government_in_exile = no }
+					ITA = { is_subject = no }
+				}
+				AND = {
+					war_with = JAP
+					SOV = { war_with = JAP }
+					JAP = { government_in_exile = no }
+					JAP = { is_subject = no }
+				}
+				AND = {
+					war_with = USA
+					SOV = { war_with = USA }
+					USA = { government_in_exile = no }
+					USA = { is_subject = no }
+				}
+				AND = {
+					war_with = FRA
+					SOV = { war_with = FRA }
+					FRA = { government_in_exile = no }
+					FRA = { is_subject = no }
+				}
+			}
+			
+			NOT = {					# Check we aren't allied with another major that is at war with the Soviets
+				OR = {
+					AND = {					
+						alliance_with = ENG
+						SOV = { war_with = ENG }
+					}
+					AND = {
+						alliance_with = GER
+						SOV = { war_with = GER }
+					}
+					AND = {
+						alliance_with = ITA
+						SOV = { war_with = ITA }
+					}
+					AND = {
+						alliance_with = JAP
+						SOV = { war_with = JAP }
+					}
+					AND = {
+						alliance_with = USA
+						SOV = { war_with = USA }
+					}
+					AND = {
+						alliance_with = FRA
+						SOV = { war_with = FRA }
+					}
+				}
+			}
+
+			NOT = { war_with = SOV }				# Only if vwe are not at war with them as well...
+			NOT = { has_country_modifier = "ask_to_join_allies" }	# Should be available multiple times, but not every second!
+			NOT = { has_country_modifier = "ask_to_join_axis" }	# Check we haven't approached one of the other factions!
+			NOT = { has_country_modifier = "ask_to_join_comintern" }
+			OR = {
+				ideology_group = communism
+				ideology = social_democrat
+			}
+		}
+		allow = {
+			relation = { who = SOV value = 0 }	# We are not on bad terms with them
+		}
+		effect = {
+			add_country_modifier = {
+				name = "ask_to_join_comintern"	# We can't ask again for 30 days
+				duration = 30
+			}
+			SOV = { country_event = 7303 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

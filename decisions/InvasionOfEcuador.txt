@@ -1,0 +1,69 @@
+###########################
+# Ecuadorian–Peruvian War #
+###########################
+
+diplomatic_decisions = {
+
+	war_with_peru = {
+		major = yes
+		potential = {
+			tag = ECU
+			exists = PRU
+			has_global_flag = "peru_equador_war"
+			has_country_modifier = "border_skirmishes"
+			not = { has_country_flag = "war_with_peru" }
+		}
+		allow = {
+			has_country_modifier = "border_skirmishes"
+			not = { dissent = 1 }
+		}
+		effect = {
+			set_country_flag = "war_with_peru"
+			remove_country_modifier = "border_skirmishes"
+			PRU = {
+				set_country_flag = "war_with_equador"
+				remove_country_modifier = "border_skirmishes"
+			}
+			war = {
+				target = PRU
+				attacker_goal = { casus_belli = aquire_all_cores }
+				defender_goal = { casus_belli = concede_defeat }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	war_with_equador = {
+		major = yes
+		potential = {
+			tag = PRU
+			exists = ECU
+			has_global_flag = "peru_equador_war"
+			has_country_modifier = "border_skirmishes"
+			not = { has_country_flag = "war_with_equador" }
+		}
+		allow = {
+			has_country_modifier = "border_skirmishes"
+			not = { dissent = 1 }
+		}
+		effect = {
+			set_country_flag = "war_with_equador"
+			remove_country_modifier = "border_skirmishes"
+			ECU = {
+				set_country_flag = "war_with_peru"
+				remove_country_modifier = "border_skirmishes"
+			}
+			war = {
+				target = ECU
+				attacker_goal = { casus_belli = aquire_all_cores }
+				defender_goal = { casus_belli = concede_defeat }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

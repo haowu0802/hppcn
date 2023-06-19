@@ -1,0 +1,13 @@
+theatre = {
+	name = "Tannu Tuvaskii Verhovnoe Komandovanie"
+	location = 8794
+	regiment = { type = hq_brigade name = "Kyzyl HQ" historical_model = 0 }
+	division = {
+		name = "1ya Tunska Armiya"
+		location = 8794
+		is_reserve = yes
+		regiment = { type = cavalry_brigade name = "1y Kavaleriyskiy Polk" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "1y Gornostrelkovyi Polk" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "2y Gornostrelkovyi Polk" experience = 5 historical_model = 1 }		
+	}
+}

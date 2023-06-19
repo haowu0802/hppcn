@@ -1,0 +1,63 @@
+theatre = {
+	name = "Lietuva Aukšèiausiosios Vadaviete"
+	location = 1442
+	regiment = { type = hq_brigade name = "Kaunas HQ" historical_model = 0 }		
+	corps = {
+		name = "1. Lietuvas Kariuomenes Korpusas"
+		location = 1442
+		regiment = { type = hq_brigade name = "1. Lietuvas Kariuomenes Korpusas HQ" historical_model = 0 }
+		division= {
+			name = "I. divizija"
+			location = 1442
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "I./I. Pestininku Pulkas" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "II./I. Pestininku Pulkas" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "III./I. Pestininku Pulkas" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "II. divizija"
+			location = 1442
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "I./II. Pestininku Pulkas" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "II./II. Pestininku Pulkas" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "III./II. Pestininku Pulkas" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "III. divizija"
+			location = 1442
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "I./III. Pestininku Pulkas" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "II./III. Pestininku Pulkas" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "III./III. Pestininku Pulkas" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Kavalerijos Padalinys"
+			location = 1442
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "I. Dragunu Pulkas" experience = 5 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "II. Dragunu Pulkas" experience = 5 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "III. Dragunu Pulkas" experience = 5 historical_model = 1 }
+			regiment = { type = super_heavy_armor_brigade name = "I. Tankas Pulkas" experience = 5 historical_model = 0 }			
+		}		
+	}
+	air = {
+		name = "Lietuvas Karines Oro Pajegos"
+		base = 1306
+		location = 1306
+		wing = { type = interceptor name = "1. Naikintuvas Aviacijos Grupo" experience = 5 historical_model = 0 }
+	}
+}
+convoy_construction=
+{
+	country = LIT
+	id=
+	{
+		id=15233
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

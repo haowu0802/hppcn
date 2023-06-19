@@ -1,0 +1,352 @@
+diplomatic_decisions = {
+
+	go_into_exile = {
+		major = yes
+		potential = {
+			# Majors can't go into exile
+			not = { tag = ENG }
+			not = { tag = FRA }
+			not = { tag = USA }
+			not = { tag = GER }
+			not = { tag = ITA }
+			not = { tag = JAP }
+			not = { tag = SOV }
+			war = yes
+			is_in_any_faction = yes
+			num_in_faction = 2
+			government_in_exile = no
+			is_subject = no
+			any_owned_province = { has_building = industry not = { controlled_by = THIS } }
+		}
+		allow = {
+			or = {
+				lost_national = 0.5			# Either lost 50% territory
+				surrender_progress = 50		# or 50% Victory Points
+			}
+		}
+		effect = {
+			random_owned = {
+				limit = { has_building = industry not = { controlled_by = THIS } }
+				controller = { country_event = 8000 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	vichy_armistice = {
+		major = yes
+		potential = {
+			tag = GER
+			war_with = FRA
+			exists = FRA
+			FRA = {
+				is_in_any_faction = yes
+				num_in_faction = 2
+				government_in_exile = no
+				is_subject = no
+			}
+			not = { has_country_flag = "vichy_armistice_offered" }
+		}
+		allow = {
+			FRA = {
+				any_owned_province = {
+					province_id = 2613
+					any_neighbor_province = {
+						owned_by = FRA
+						controlled_by = GER
+					}
+				}
+			}
+			FRA = { surrender_progress = 75 }
+		}
+		effect = {
+			add_wargoal = {
+				target = FRA
+				war_goal = { casus_belli = vichy_war_goal }
+			}
+			set_country_flag = "vichy_armistice_offered"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	UK_armistice = {
+		major = yes
+		potential = {
+			tag = GER
+			war_with = ENG
+			exists = ENG
+			exists = VIC
+			ENG = {
+				is_in_any_faction = yes
+				num_in_faction = 2
+				government_in_exile = no
+				is_subject = no
+			}
+			not = { has_country_flag = "uk_armistice_offered" }
+		}
+		allow = {
+			ENG = {
+				any_owned_province = {
+					province_id = 1964
+					any_neighbor_province = {
+						owned_by = ENG
+						controlled_by = GER
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_wargoal = {
+				target = ENG
+				war_goal = { casus_belli = dissolve_uk_wargoal }
+			}
+			set_country_flag = "uk_armistice_offered"
+		}
+	}
+
+	spain_add_UK_land_cb = {
+		major = yes
+		potential = {
+			tag = SPA
+			war_with = ENG
+			exists = ENG
+			exists = VIC
+			ENG = {
+				is_in_any_faction = yes
+				num_in_faction = 2
+				government_in_exile = no
+				is_subject = no
+			}
+			not = { has_country_flag = "uk_armistice_offered" }
+		}
+		allow = {
+			ENG = {
+				any_owned_province = {
+					province_id = 1964
+					any_neighbor_province = {
+						owned_by = ENG
+						controlled_by = GER
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_wargoal = {
+				target = ENG
+				war_goal = { casus_belli = aquire_all_cores }
+			}
+			add_wargoal = {
+				target = ENG
+				war_goal = { casus_belli = aquire_territory region=sierra_leone_region }
+			}
+			set_country_flag = "uk_armistice_offered"
+		}
+	}
+
+	italy_add_uk_land_cb = {
+		major = yes
+		potential = {
+			tag = ITA
+			war_with = ENG
+			exists = ENG
+			exists = VIC
+			ENG = {
+				is_in_any_faction = yes
+				num_in_faction = 2
+				government_in_exile = no
+				is_subject = no
+			}
+			not = { has_country_flag = "uk_armistice_offered" }
+		}
+		allow = {
+			ENG = {
+				any_owned_province = {
+					province_id = 1964
+					any_neighbor_province = {
+						owned_by = ENG
+						controlled_by = GER
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_wargoal = {
+				target = ENG
+				war_goal = { casus_belli = aquire_territory region=sudan_somaliland_djibouti_region }
+			}
+			add_wargoal = {
+				target = ENG
+				war_goal = { casus_belli = aquire_territory region=ENG_5359 }
+			}
+			set_country_flag = "uk_armistice_offered"
+		}
+	}
+
+	japan_add_uk_land_cb = {
+		major = yes
+		potential = {
+			tag = JAP
+			war_with = ENG
+			exists = ENG
+			exists = VIC
+			ENG = {
+				is_in_any_faction = yes
+				num_in_faction = 2
+				government_in_exile = no
+				is_subject = no
+			}
+			not = { has_country_flag = "uk_armistice_offered" }
+		}
+		allow = {
+			ENG = {
+				any_owned_province = {
+					province_id = 1964
+					any_neighbor_province = {
+						owned_by = ENG
+						controlled_by = GER
+					}
+				}
+			}
+		}
+
+		effect = {
+			#Singapore
+			add_wargoal = {
+				target = ENG
+				war_goal = { casus_belli = aquire_territory region=straight_settlements_region }
+			}
+			#Hong Kong
+			add_wargoal = {
+				target = ENG
+				war_goal = { casus_belli = aquire_territory region=guangdong_region }
+			}
+			#Ceylon
+			add_wargoal = {
+				target = ENG
+				war_goal = { casus_belli = aquire_territory region=ceylon_region }
+			}
+			#Indian Ocean Islands
+			add_wargoal = {
+				target = ENG
+				war_goal = { casus_belli = aquire_territory region=indian_ocean_islands_region }
+			}
+			#Southern India
+			add_wargoal = {
+				target = IND
+				war_goal = { casus_belli = aquire_territory region=southern_india_japan_region }
+			}
+			#Take Malaya, Burma, and India as Japan's own puppets
+			add_wargoal = {
+				target = BBU
+				war_goal = { casus_belli = puppet }
+			}
+			add_wargoal = {
+				target = IND
+				war_goal = { casus_belli = puppet }
+			}
+			add_wargoal = {
+				target = MLY
+				war_goal = { casus_belli = puppet }
+			}
+			add_wargoal = {
+				target = BHU
+				war_goal = { casus_belli = puppet }
+			}
+			add_wargoal = {
+				target = NEP
+				war_goal = { casus_belli = puppet }
+			}
+			set_country_flag = "uk_armistice_offered"
+		}
+	}
+	
+	bow_to_soviet_demands = {
+		major = yes
+		potential = {
+			tag = ROM
+			war_with = SOV
+			not = {
+				GER = { war_with = SOV }
+				faction = axis
+			}
+			SOV = { has_country_flag = "claims_on_bessarabia" }
+			not = { has_country_flag = "bessarabia_to_the_soviet" }
+			not = { has_country_flag = "give_in_to_soviet_demands" }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = "give_in_to_soviet_demands"
+			dissent = 10
+			organisation = -10
+			popularity = -15
+			SOV = { country_event = 1507 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	end_finnish_winter_war = {
+		major = yes
+		potential = {
+			tag = FIN
+			war_with = SOV
+			SOV = { has_country_flag = "the_finnish_winter_war" }
+			lost_national = 0.15
+			any_owned_province = {
+				province_id = 739
+				any_neighbor_province = { controlled_by = SOV }
+			}
+			not = { has_country_flag = "sue_for_peace_winter_war" }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = "sue_for_peace_winter_war"
+			SOV = { country_event = 571 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bitter_peace = {
+		major = yes
+		potential = { 
+			tag = SOV
+			lost_national = 0.05
+			not = { has_country_flag = "bitter_peace" }
+			GER = { exists = yes }
+		}
+		allow = {
+			#Allow if Moscow has been taken and the USSR has lost 25% of its cores
+			or = {
+				SOV = { not = { controls = 1409 } }
+			}
+			lost_national = 0.25
+		}
+
+		effect = {
+			set_country_flag = "bitter_peace"
+			remove_minister = 4002 				# Iosif V. Stalin
+			set_country_flag = "4002_removed"
+			remove_minister = 4076 				# Vyacheslav Molotov
+			set_country_flag = "4076_removed"
+			head_of_government = 4075 			# Lavrenti P. Beria
+			minister_of_security = 4075 		# Lavrenti P. Beria
+			stalinist = { organisation = -40 popularity = -30 }
+			leninist = { organisation = 40 popularity = 30 }
+
+			GER = { country_event = 8005 }	
+		}
+	}
+
+}

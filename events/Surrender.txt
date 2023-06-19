@@ -1,0 +1,4565 @@
+###########
+# HPP mod #
+###########
+#
+# 500	generic surrender event when able to go into exile
+# 502	generic surrender event when all else fails
+#
+# 505	Balance for SU, FRA
+#
+# 508	Spanish Civil War, Nat. victory
+# 509	Spanish Civil War, Rep. victory
+#
+# 510	France surrenders, Western France to Spain, Southern France to Italy; Vichy in Brittany.
+# 515	France surrenders, Western and Southern France to Spain, Italy gets his small share, Vichy in Brittany.
+# 520	France surrenders, Southern France to Italy, Vichy in Bordeaux.
+# 525	France surrenders, Southern and Western France to Italy, Vichy in Brittany.
+# 530	France surrenders, normal event: Vichy gets southern France, Germany gets Nothern and Western France.
+#
+# 534	UK surrenders, as they have nowhere to retreat
+# 535	UK goes to exile
+#
+# 536	Czechoslovakia surrenders to Germany
+#
+# 540	Bitter Peace, SU surrenders to Germany
+# 550	Bitter Peace, SU surrenders to Japan or Germany
+# 555	Bitter Peace, SU surrenders to China or Germany
+#
+# 560	Italy
+#
+# 570	Finnish Winter War
+#
+# 576	Poland: no guarantee, no M-R pact
+# 578	Poland: no guarantee, M-R pact
+# 580	Poland: guarantee, no M-R pact
+# 583	Poland: guarantee, M-R pact
+#
+# 584	Chinese Warlords, unified front
+# 586	Chinese Warlords, unified front, in a faction
+#
+# 587	Chinese Warlords surrender to the Jingwei regime, no faction
+# 588	Chinese Warlords surrender to the Jingwei regime, in faction
+#
+# 590	Germany partitioned, mostly historic outcome
+# 595	Germany surrenders to Allies
+# 600	Germany surrenders to USSR
+#
+# 610	Iraq surrenders to the Allies
+#
+# 620	Japan surrenders -> Gives every non Home Islands province to the conquerer, who will then be able to give the
+#			provinces back to their original holder
+#
+# 645	Mengjiang surrenders to CHC/CHI/SOV
+# 650	Manhcukuo surrenders to CHC/CHI/SOV
+# 655	Jingwei   surrenders to CHC/CHI/SOV
+#
+# 660   Austria surrenders to Germany
+#
+# 662   Switzerland surrenders to Axis, and is in Allies
+# 663   Switzerland surrenders to Axis
+#
+# 665   Luxemburg surrenders to Germany, and is in Allies
+# 666   Luxemburg surrenders to Germany
+#
+# 670   Denmark goes into exile
+# 671   Denmark goes into exile
+#
+# 675   Belgium goes into exile
+# 676   Belgium goes into exile
+#
+# 680	China surrenders, Wang Jingwei's Regime
+#
+# 685	End of the Chinese Civil War, Chiang wins
+# 686	End of the Chinese Civil War, Mao wins, Chiang retreats to Taiwan
+# 687	End of the Chinese Civil War, Mao wins
+#
+# 690	Baltic War, Estonia surrenders
+# 691	Baltic War, Latvia surrenders
+# 692	Baltic War, Lithuania surrenders
+#
+# 700	Vichy surrenders to the Allies
+# 702	Vichy surrenders to anyone else
+#
+###########################
+# Generic Surrender Event #
+###########################
+
+country_event = {
+	
+	id = 500
+	
+	trigger = {
+		# Only allow going into exile if the faction leader is also at war with FROM!
+		# Otherwise it could cause some trouble later on...
+		or = {
+			and = {
+				faction = axis
+				exists = GER
+				GER = { faction = axis war_with = FROM }
+			}
+			and = {
+				faction = allies
+				or = {
+					and = {
+						exists = ENG
+						ENG = { faction = allies war_with = FROM }
+					}
+					and = {
+						exists = USA
+						USA = { faction = allies war_with = FROM }
+					}
+				}
+			}
+			and = {
+				faction = comintern
+				exists = SOV
+				SOV = { faction = comintern war_with = FROM }
+			}
+		}
+		num_in_faction = 2
+	}
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "EVTNAME500"
+	desc = "EVTDESC500"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "EVTOPTB500"
+		FROM = { country_event = 503 }
+		form_government_in_exile = yes
+	}	
+}
+
+country_event = {
+	
+	id = 502
+	
+	# This is the default Surrender event when none of the others apply.
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "EVTNAME500"
+	desc = "EVTDESC500"
+	picture = "Bitter_Peace"
+
+	option = {
+		name = "EVTOPTB500"
+		FROM = { country_event = 501 }
+	}	
+}
+
+country_event = {
+	
+	id = 501
+
+	is_triggered_only = yes
+
+	title = "EVTNAME501"
+	desc = "EVTDESC501"
+	picture = "Bitter_Peace"
+
+	option = {
+		name = "EVTOPTA501"
+		ai_chance = {	
+			factor = 80
+			modifier = { factor = 1.25 FROM = { any_owned_province = { is_core = THIS } } }		# Always annex if we have cores on them!
+			modifier = {
+				factor = 0.25
+				ideology_group = democracy				# Democracies prefer puppeting.
+			}
+			modifier = {
+				factor = 1.225
+				not = { ideology_group = democracy }	# Non-democracies prefer annexing.
+			}
+			modifier = {
+				factor = 0.0
+				tag = JAP				# Japan will always puppet everyone else.
+				not = { FROM = { tag = CHC } }
+				not = { FROM = { tag = CSX } }
+				not = { FROM = { tag = CYN } }
+				not = { FROM = { tag = CGX } }
+				not = { FROM = { tag = SIK } }
+				not = { FROM = { tag = TIB } }
+			}
+			modifier = {
+				factor = 0.0
+				tag = SOV				# The Soviets will make puppets everywhere, except when they get stuff by event.
+				not = { FROM = { tag = EST } }	# With the exception of the Baltic States...
+				not = { FROM = { tag = LAT } }
+				not = { FROM = { tag = LIT } }
+			}
+		}
+		any_country = {
+			end_military_access = FROM
+			end_guarantee = FROM
+			end_non_aggression_pact = FROM
+			leave_alliance = FROM
+		}
+		inherit = FROM
+	}
+	option = {
+		name = "EVTOPTB501"
+		ai_chance = {
+			factor = 20
+			modifier = { factor = 0.0 FROM = { any_owned_province = { is_core = THIS } } }
+			modifier = {
+				factor = 4.0
+				ideology_group = democracy				# Democracies prefer puppeting.
+			}
+			modifier = {
+				factor = 0.1
+				not = { ideology_group = democracy }	# Non-democracies prefer annexing.
+			}
+			modifier = {
+				factor = 0.0
+				is_subject = yes
+			}
+
+			modifier = {
+				factor = 0.0
+				tag = JAP				# Japan will always annex China including Tibet, except for ROC, which has a special surrender event.
+				or = {
+					FROM = { tag = CHC }
+					FROM = { tag = CSX }
+					FROM = { tag = CXB }
+					FROM = { tag = CYN }
+					FROM = { tag = CGX }
+					FROM = { tag = SIK }
+					FROM = { tag = TIB }
+				}
+			}
+			modifier = {
+				factor = 0.0
+				tag = ENG				# The UK will always annex its former colonies.
+				or = {
+					FROM = { tag = IND }
+					FROM = { tag = MLY }
+					FROM = { tag = BBU }
+					FROM = { tag = CEY }
+					FROM = { tag = PAK }
+					FROM = { tag = MTA }
+					FROM = { tag = JAM }
+					FROM = { tag = GUY }
+					FROM = { tag = CYP }
+					FROM = { tag = JOR }
+					FROM = { tag = PAL }
+					FROM = { tag = ISR }
+					FROM = { tag = EGY }
+				}
+			}
+			modifier = {
+				factor = 0.0
+				tag = FRA				# France will always annex its former colonies.
+				or = {
+					FROM = { tag = MOR }
+					FROM = { tag = MAD }
+					FROM = { tag = SYR }
+					FROM = { tag = LEB }
+					FROM = { tag = IDC }
+					FROM = { tag = ALG }
+					FROM = { tag = TUN }
+				}
+			}
+			modifier = {
+				factor = 0.0
+				tag = HOL				# The Dutch always annex Indonesia.
+				FROM = { tag = INO }
+			}
+			modifier = {
+				factor = 0.0
+				tag = CHI				# China will annex the warlords, Mangkukuo, Mongolia, Tannu Tuva and Tibet
+				or = {
+					FROM = { tag = CHC }
+					FROM = { tag = CSX }
+					FROM = { tag = CXB }
+					FROM = { tag = CYN }
+					FROM = { tag = CGX }
+					FROM = { tag = SIK }
+					FROM = { tag = MEN }
+					FROM = { tag = MAN }
+					FROM = { tag = MON }
+					FROM = { tag = TAN }
+					FROM = { tag = TIB }
+				}
+			}
+			modifier = {
+				factor = 0.0
+				tag = SOV				# The Soviets will annex the Baltic States
+				or = {
+					FROM = { tag = EST }
+					FROM = { tag = LAT }
+					FROM = { tag = LIT }
+				}
+			}
+		}
+		FROM = {
+			leave_faction = axis
+			leave_faction = allies
+			leave_faction = comintern
+		}
+		any_country = {
+			end_military_access = FROM
+			end_guarantee = FROM
+			end_non_aggression_pact = FROM
+			leave_alliance = FROM
+		}
+		create_vassal = FROM
+	}	
+}
+
+#################
+# Notifications #
+#################
+
+country_event = {	# Surrender
+	
+	id = 503
+
+	is_triggered_only = yes
+
+	title = "EVTNAME514"
+	desc = "EVTDESC514"
+	picture = "Bitter_Peace"
+
+	option = {
+		name = "EVTOPTA514"
+		war_exhaustion = -1		# The people love victories!
+	}
+}
+
+country_event = {	# Exile
+	
+	id = 504
+
+	is_triggered_only = yes
+
+	title = "EVTNAME515"
+	desc = "EVTDESC515"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "EVTOPTA515"
+		war_exhaustion = -1		# The people love victories!
+	}
+}
+
+###########################
+# Balance for FRA and SOV #
+###########################
+
+country_event = {
+	id = 505
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		or = {
+			AND = {
+				tag = FRA
+				FROM = { not = { total_ic = 75 }  }
+			}
+			AND = {
+				tag = SOV
+				FROM = { not = { total_ic = 100 } }
+			}
+		}
+		not = { has_country_flag = minor_nemesis }
+	}
+
+	title = "Unexpected nemesis"
+	desc = "We are crumbling at the feets of an unexpected foe... The elite of our nation is united against the new threat, but the populace is not that forgiving..."
+	picture = "parliamentary_scandal"
+
+	option = {
+		name = "We should try harder!"
+		set_country_flag = minor_nemesis
+		national_unity = 25	# The leaders gather their strength
+		dissent = 10		# The people are angry
+	}
+}
+
+################################
+# End of the Spanish Civil War #
+################################
+
+country_event = {
+	
+	id = 508
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = SPR
+		exists = SPR
+		surrender_progress = 99
+	}
+	
+	title = "EVTNAME513"
+	desc = "EVTDESC505"
+	picture = "SPA_Victory"
+
+	option = {
+		name = "EVTOPTA513"
+		SPA = {
+			#split_troops = 1.0		# Don't split our Militia-army!
+			inherit = SPR
+			country_event = 2041	# Form the proper government, depending on the HoS
+			country_event = 2042
+			country_event = 2043
+		}		# Note that the cores will stay! If Spain is ever conquered, the conquerer can release the version it wants.
+
+		FROM = { country_event = 503 }
+	}
+}
+
+country_event = {
+	
+	id = 509
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = SPA
+		exists = SPA
+		surrender_progress = 99
+	}
+
+	title = "EVTNAME513"
+	desc = "EVTDESC513"
+	picture = "SPA_Victory"
+
+	option = {
+		name = "EVTOPTA513"
+		# We need to delete the Republican Militia-hordes!
+		SPR = { inherit = SPR }
+		SPR = {
+			split_troops = 1.0
+			inherit = SPA
+			organisation = 25
+			popularity = 15
+			country_event = 2043
+			country_event = 2045
+		}		# Note that the cores will stay! If Spain is ever conquered, the conquerer can release the version it wants.
+
+		FROM = { country_event = 503 }
+	}
+}
+
+################
+# Vichy France #
+################
+
+# South-western France in Spanish hands, South-eastern France in Italian hands
+
+country_event = {
+	
+	id = 510
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = FRA
+		war_with = GER
+		not = { exists = VIC }
+
+		FROM = { faction = axis }
+
+		or = {
+			SPA = { controls = 3961 } # Touluse
+			SPA = { controls = 3479 } # Bordaoux
+		}
+		or = {
+			ITA = { controls = 3961 } # Touluse
+			ITA = { controls = 3418 } # Digoin
+		}
+		not = { has_country_flag = "fr_signs_peace" }
+	}
+
+	title = "The Brest Regime"
+	desc = "EVTDESC504"
+	picture = "VIC"
+
+	option = {
+		name = "Send the proposal!"
+		set_country_flag = "fr_signs_peace"
+		FROM = { country_event = 511 }
+	}
+
+}
+
+country_event = {
+	id = 511
+
+	is_triggered_only = yes
+
+	title = "The Brest Government"
+	desc = "vichy_partition_v1_desc"
+	picture ="VIC"
+
+	option = {
+		name = "Accept!"
+		FRA = { country_event = 512 }
+		ai_chance = { factor = 100 }
+		dissent = -5
+	}
+
+	option = {
+		name = "Full conquest is preferable."
+		FRA = { country_event = 513 }
+	}
+}
+
+country_event = {
+	id = 512	# Vichy
+
+	is_triggered_only = yes
+
+	title = "The Brest Regime"
+	desc = "EVTDESC504"
+	picture = "VIC"
+
+	option = {
+		name = "EVTOPTA504"					# Continue the fight as Free France
+
+		# Northern France is occupied by Germany.
+		northern_france_region = { change_controller = GER }
+		northern_france_region = { limit = { is_core = GER } secede_province = GER }
+		
+		# Southern France is occupied by Italy.
+		southern_france_region = { change_controller = ITA }
+		southern_france_region = { limit = { is_core = ITA } secede_province = ITA }
+		
+		# Western France is occupied by Spain.
+		western_france_region = { change_controller = SPA }
+		western_france_region = { limit = { is_core = SPA } secede_province = SPA }
+		
+		# Brest is given the new capital of the French State. They get the same cores as the French Republic.
+		any_owned = { limit = { province_id = 2605 } add_core = VIC }
+		VIC = { capital = 2605 }
+		release = VIC
+		any_owned = { limit = { is_core = FRA } add_core = VIC }
+		any_owned = {
+			limit = {
+				controlled_by = THIS
+				not = { region = FRA_5919 }						# Zhanjiang
+				not = { region = equitorial_africa_region }		# Central Africa
+			}
+			secede_province = VIC
+		}
+		VIC = { split_troops = 0.8 }
+		ENG = { split_troops = 1.0 }
+		VIC = {
+			government = right_wing_republic
+			head_of_state = 57001
+			head_of_government = 57002
+			foreign_minister = 57002
+			armament_minister = 57019
+			minister_of_security = 57026
+			minister_of_intelligence = 57006
+			chief_of_staff = 57002
+			chief_of_army = 57034
+			chief_of_navy = 57002
+			chief_of_air = 57010
+			any_country = {
+				limit = { faction = axis }
+				non_aggression_pact = VIC
+			}
+			GER = { threat = { who = VIC value = -150 } }
+			neutrality = 100	# They are happy to be out of the war...
+			add_country_modifier = {
+				name = "vichy_armistice"
+				duration = -1
+			}
+			any_country = {
+				limit = { vassal_of = FRA }
+				country_event = 514
+			}
+		}
+
+		# Make sure Vichy is set up properly
+
+		any_country = {
+			britanny_region = { add_core = VIC secede_province = VIC }
+		}			
+
+		FRA = {
+			national_unity = 90
+			##De Gaulle Cabinet##
+			country_event = 565
+			country_event = 566
+			country_event = 567
+			10028 = {
+				air_base = 4
+			}
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028			
+		}
+	}
+
+}
+
+country_event = {
+	id = 513	# No Vichy
+
+	is_triggered_only = yes
+
+	title = "Our proposal is refused"
+	desc = "We sent a desperate peace proposal to the enemy but they refused to accept it. We have no other choice then to keep fighting until the bitter end."
+	picture = "VIC"
+
+	option = {
+		name = "Then we will fight together 'till the end!"
+		national_unity = 30
+		dissent = -15
+	}
+
+}
+
+country_event = {
+
+	id = 514
+	
+	is_triggered_only = yes
+	
+	title = "The fall of France"
+	desc = "With the surrender of France, we will have to get used to our new masters."
+	picture = "VIC"
+	
+	option = {
+		name = "Long live the new France!"
+		VIC = { create_vassal = THIS }
+	}
+}
+
+# Southern and Western France in Spanish hands
+
+country_event = {
+	
+	id = 515
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = FRA
+		war_with = GER
+		not = { exists = VIC }
+
+		FROM = { faction = axis }
+
+		SPA = { controls = 3961 } # Touluse
+		SPA = { controls = 3479 } # Bordaoux
+
+		not = { has_country_flag = "fr_signs_peace" }
+	}
+
+	title = "EVTNAME504"
+	desc = "EVTDESC504"
+	picture = "VIC"
+
+	option = {
+		name = "Send the proposal!"
+		set_country_flag = "fr_signs_peace"
+		FROM = { country_event = 516 }
+	}
+
+}
+
+country_event = {
+	id = 516
+
+	is_triggered_only = yes
+
+	title = "The Brest Government"
+	desc = "vichy_partition_v2_desc"
+	picture ="VIC"
+
+	option = {
+		name = "Accept!"
+		FRA = { country_event = 517 }
+		ai_chance = { factor = 100 }
+		dissent = -5
+	}
+
+	option = {
+		name = "Full conquest is preferable."
+		FRA = { country_event = 518 }
+	}
+}
+
+country_event = {
+	id = 517	# Vichy
+
+	is_triggered_only = yes
+
+	title = "EVTNAME504"
+	desc = "EVTDESC504"
+	picture = "VIC"
+
+	option = {
+		name = "EVTOPTA504"					# Continue the fight as Free France
+
+		
+		# Northern France is occupied by Germany.
+		northern_france_region = { change_controller = GER }
+		northern_france_region = { limit = { is_core = GER } secede_province = GER }
+		
+		# Southern France is occupied by Spain.
+		southern_france_region = { change_controller = SPA }
+		southern_france_region = { limit = { is_core = SPA } secede_province = SPA }
+		
+		# Western France is occupied by Spain.
+		western_france_region = { change_controller = SPA }
+		western_france_region = { limit = { is_core = SPA } secede_province = SPA }
+		
+		# Brest is given the new capital of the French State. They get the same cores as the French Republic.
+		any_owned = { limit = { province_id = 2605 } add_core = VIC }
+		VIC = { capital = 2605 }
+		release = VIC
+		any_owned = { limit = { is_core = FRA } add_core = VIC }
+		any_owned = {
+			limit = {
+				controlled_by = THIS
+				not = { region = FRA_5919 }						# Zhanjiang
+				not = { region = equitorial_africa_region }		# Central Africa
+			}
+			secede_province = VIC
+		}
+		VIC = { split_troops = 0.8 }
+		ENG = { split_troops = 1.0 }
+		VIC = {
+			government = right_wing_republic
+			head_of_state = 57001
+			head_of_government = 57002
+			foreign_minister = 57002
+			armament_minister = 57019
+			minister_of_security = 57026
+			minister_of_intelligence = 57006
+			chief_of_staff = 57002
+			chief_of_army = 57034
+			chief_of_navy = 57002
+			chief_of_air = 57010
+			any_country = {
+				limit = { faction = axis }
+				non_aggression_pact = VIC
+			}
+			GER = { threat = { who = VIC value = -150 } }
+			neutrality = 100	# They are happy to be out of the war...
+			add_country_modifier = {
+				name = "vichy_armistice"
+				duration = -1
+			}
+			any_country = {
+				limit = { vassal_of = FRA }
+				country_event = 514
+			}
+		}
+
+		# Make sure Vichy is set up properly
+
+		any_country = { britanny_region = { add_core = VIC secede_province = VIC } }
+
+		FRA = {
+			national_unity = 90
+			##De Gaulle Cabinet##
+			country_event = 565
+			country_event = 566
+			country_event = 567
+			10028 = {
+				air_base = 4
+			}
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+		}
+	}
+
+}
+
+country_event = {
+	id = 518	# No Vichy
+
+	is_triggered_only = yes
+
+	title = "Our proposal is refused"
+	desc = "We sent a desperate peace proposal to the enemy but they refused to accept it. We have no other choice then to keep fighting until the bitter end."
+	picture = "VIC"
+
+	option = {
+		name = "Then we will fight together 'till the end!"
+		national_unity = 30
+		dissent = -15
+	}
+
+}
+
+# Southern France in Italian hands
+
+country_event = {
+	
+	id = 520
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = FRA
+		war_with = GER
+		not = { exists = VIC }
+
+		FROM = { faction = axis }
+
+		ITA = { controls = 3961 } # Touluse
+		ITA = { controls = 3418 } # Digoin
+
+		not = { has_country_flag = "fr_signs_peace" }
+	}
+
+	title = "EVTNAME504"
+	desc = "EVTDESC504"
+	picture = "VIC"
+
+	option = {
+		name = "Send the proposal!"
+		set_country_flag = "fr_signs_peace"
+		FROM = { country_event = 521 }
+	}
+
+}
+
+country_event = {
+	id = 521
+
+	is_triggered_only = yes
+
+	title = "The Bordaoux Government"
+	desc = "vichy_partition_v3_desc"
+	picture ="VIC"
+
+	option = {
+		name = "Accept!"
+		FRA = { country_event = 522 }
+		ai_chance = { factor = 100 }
+		dissent = -5
+	}
+
+	option = {
+		name = "Full conquest is preferable."
+		FRA = { country_event = 523 }
+	}
+}
+
+country_event = {
+	id = 522	# Vichy
+
+	is_triggered_only = yes
+
+	title = "EVTNAME504"
+	desc = "EVTDESC504"
+	picture = "VIC"
+
+	option = {
+		name = "EVTOPTA504"					# Continue the fight as Free France
+
+		
+		# Northern France is occupied by Germany.
+		northern_france_region = { change_controller = GER }
+		northern_france_region = { limit = { is_core = GER } secede_province = GER }
+		
+		# Southern France is occupied by Italy.
+		southern_france_region = { change_controller = ITA }
+		southern_france_region = { limit = { is_core = ITA } secede_province = ITA }
+		
+		# Bordaoux is given the new capital of the French State. They get the same cores as the French Republic.
+		any_owned = { limit = { province_id = 3479 } add_core = VIC }
+		VIC = { capital = 3479 }
+		release = VIC
+		any_owned = { limit = { is_core = FRA } add_core = VIC }
+		any_owned = {
+			limit = {
+				controlled_by = THIS
+				not = { region = FRA_5919 }						# Zhanjiang
+				not = { region = equitorial_africa_region }		# Central Africa
+			}
+			secede_province = VIC
+		}
+		VIC = { split_troops = 0.8 }
+		ENG = { split_troops = 1.0 }
+		VIC = {
+			government = right_wing_republic
+			head_of_state = 57001
+			head_of_government = 57002
+			foreign_minister = 57002
+			armament_minister = 57019
+			minister_of_security = 57026
+			minister_of_intelligence = 57006
+			chief_of_staff = 57002
+			chief_of_army = 57034
+			chief_of_navy = 57002
+			chief_of_air = 57010
+			any_country = {
+				limit = { faction = axis }
+				non_aggression_pact = VIC
+			}
+			GER = { threat = { who = VIC value = -150 } }
+			neutrality = 100	# They are happy to be out of the war...
+			add_country_modifier = {
+				name = "vichy_armistice"
+				duration = -1
+			}
+			any_country = {
+				limit = { vassal_of = FRA }
+				country_event = 514
+			}
+		}
+
+		# Make sure Vichy is set up properly
+
+		any_country = {
+			western_france_region = { secede_province = VIC }
+		}			
+
+		FRA = {
+			national_unity = 90
+			##De Gaulle Cabinet##
+			country_event = 565
+			country_event = 566
+			country_event = 567
+			10028 = {
+				air_base = 4
+			}
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028			
+		}
+	}
+}
+
+country_event = {
+	id = 523	# No Vichy
+
+	is_triggered_only = yes
+
+	title = "Our proposal is refused"
+	desc = "We sent a desperate peace proposal to the enemy but they refused to accept it. We have no other choice then to keep fighting until the bitter end."
+	picture = "VIC"
+
+	option = {
+		name = "Then we will fight together 'till the end!"
+		national_unity = 30
+		dissent = -15
+	}
+
+}
+
+# Southern and Western France in Italian hands
+
+country_event = {
+	
+	id = 525
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = FRA
+		war_with = GER
+		not = { exists = VIC }
+
+		FROM = { faction = axis }
+
+		ITA = { controls = 3961 } # Touluse
+		ITA = { controls = 3479 } # Bordaoux
+		ITA = { controls = 3418 } # Digoin
+
+		not = { has_country_flag = "fr_signs_peace" }
+	}
+
+	title = "EVTNAME504"
+	desc = "EVTDESC504"
+	picture = "VIC"
+
+	option = {
+		name = "Send the proposal!"
+		set_country_flag = "fr_signs_peace"
+		FROM = { country_event = 526 }
+	}
+
+}
+
+country_event = {
+	id = 526
+
+	is_triggered_only = yes
+
+	title = "The Brest Government"
+	desc = "vichy_partition_v4_desc"
+	picture ="VIC"
+
+	option = {
+		name = "Accept!"
+		FRA = { country_event = 527 }
+		ai_chance = { factor = 100 }
+		dissent = -5
+	}
+
+	option = {
+		name = "Full conquest is preferable."
+		FRA = { country_event = 528 }
+	}
+}
+
+country_event = {
+	id = 527	# Vichy
+
+	is_triggered_only = yes
+
+	title = "EVTNAME504"
+	desc = "EVTDESC504"
+	picture = "VIC"
+
+	option = {
+		name = "EVTOPTA504"					# Continue the fight as Free France
+
+		
+		# Northern France is occupied by Germany.
+		northern_france_region = { change_controller = GER }
+		northern_france_region = { limit = { is_core = GER } secede_province = GER }
+		
+		# Southern France is occupied by Italy.
+		southern_france_region = { change_controller = ITA }
+		southern_france_region = { limit = { is_core = ITA } secede_province = ITA }
+		
+		# Western France is occupied by Italy.
+		western_france_region = { change_controller = ITA }
+		western_france_region = { limit = { is_core = ITA } secede_province = ITA }
+		
+		# Brest is given the new capital of the French State. They get the same cores as the French Republic.
+		any_owned = { limit = { province_id = 2605 } add_core = VIC }
+		VIC = { capital = 2605 }
+		release = VIC
+		any_owned = { limit = { is_core = FRA } add_core = VIC }
+		any_owned = {
+			limit = {
+				controlled_by = THIS
+				not = { region = FRA_5919 }						# Zhanjiang
+				not = { region = equitorial_africa_region }		# Central Africa
+			}
+			secede_province = VIC
+		}
+		VIC = { split_troops = 0.8 }
+		ENG = { split_troops = 1.0 }
+		VIC = {
+			government = right_wing_republic
+			head_of_state = 57001
+			head_of_government = 57002
+			foreign_minister = 57002
+			armament_minister = 57019
+			minister_of_security = 57026
+			minister_of_intelligence = 57006
+			chief_of_staff = 57002
+			chief_of_army = 57034
+			chief_of_navy = 57002
+			chief_of_air = 57010
+			any_country = {
+				limit = { faction = axis }
+				non_aggression_pact = VIC
+			}
+			GER = { threat = { who = VIC value = -150 } }
+			neutrality = 100	# They are happy to be out of the war...
+			add_country_modifier = {
+				name = "vichy_armistice"
+				duration = -1
+			}
+			any_country = {
+				limit = { vassal_of = FRA }
+				country_event = 514
+			}
+		}
+
+		# Make sure Vichy is set up properly
+
+		any_country = {
+			britanny_region = { add_core = VIC secede_province = VIC }
+		}			
+
+		FRA = {
+			national_unity = 90
+			##De Gaulle Cabinet##
+			country_event = 565
+			country_event = 566
+			country_event = 567
+			10028 = {
+				air_base = 4
+			}
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028			
+		}
+	}
+}
+
+country_event = {
+	id = 528	# No Vichy
+
+	is_triggered_only = yes
+
+	title = "Our proposal is refused"
+	desc = "We sent a desperate peace proposal to the enemy but they refused to accept it. We have no other choice then to keep fighting until the bitter end."
+	picture = "VIC"
+
+	option = {
+		name = "Then we will fight together 'till the end!"
+		national_unity = 30
+		dissent = -15
+	}
+
+}
+
+# In any other case, France surrenders to Germany
+
+country_event = {
+	
+	id = 530
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = FRA
+		war_with = GER
+		not = { exists = VIC }
+
+		FROM = { faction = axis }
+
+		not = { has_country_flag = "fr_signs_peace" }
+	}
+
+	title = "EVTNAME504"
+	desc = "EVTDESC504"
+	picture = "VIC"
+
+	option = {
+		name = "Send the proposal!"
+		set_country_flag = "fr_signs_peace"
+		FROM = { country_event = 531 }
+	}
+
+}
+
+country_event = {
+	id = 531	# German reaction
+
+	is_triggered_only = yes
+
+	title = "The Vichy Government"
+	desc = "vichy_partition_v5_desc"
+	picture ="VIC"
+	option = {
+		name = "Accept!"
+		FRA = { country_event = 532 }
+		ai_chance = { factor = 100 }
+		dissent = -5
+	}
+
+	option = {
+		name = "Full conquest is preferable."
+		FRA = { country_event = 533 }
+	}
+}
+
+country_event = {
+	id = 532	# Vichy
+
+	is_triggered_only = yes
+
+	title = "EVTNAME504"
+	desc = "EVTDESC504"
+	picture = "VIC"
+
+	option = {
+		name = "EVTOPTA504"					# Continue the fight as Free France
+
+		# Keep the provinces under occupation!
+
+		
+		# Northern France is occupied by Germany.
+		any_owned = {
+			limit = { is_core = GER }
+			secede_province = GER
+		}
+		western_france_region = { change_controller = GER }
+		western_france_region = { limit = { is_core = GER } secede_province = GER }
+		northern_france_region = { change_controller = GER }
+		northern_france_region = { limit = { is_core = GER } secede_province = GER }
+
+		# Italy gets their provinces in Southern France.
+		southern_france_region = { limit = { is_core = ITA } secede_province = ITA }
+
+		# Give southern France to France, so Vichy forms in the right place
+		southern_france_region = { limit = { owned_by = THIS } change_controller = FRA }
+
+		# The capital of the French State is now Vichy
+		VIC = { capital = 3484 }
+		release = VIC
+		any_owned = { limit = { is_core = FRA } add_core = VIC }
+		any_owned = {
+			limit = {
+				controlled_by = THIS
+				not = { region = FRA_5919 }						# Zhanjiang
+				not = { region = equitorial_africa_region }		# Central Africa
+			}
+			secede_province = VIC
+		}
+		VIC = { split_troops = 0.8 }
+		ENG = { split_troops = 1.0 }
+		VIC = {
+			government = right_wing_republic
+			head_of_state = 57001
+			head_of_government = 57002
+			foreign_minister = 57002
+			armament_minister = 57019
+			minister_of_security = 57026
+			minister_of_intelligence = 57006
+			chief_of_staff = 57002
+			chief_of_army = 57034
+			chief_of_navy = 57002
+			chief_of_air = 57010
+			any_country = {
+				limit = { faction = axis }
+				non_aggression_pact = VIC
+			}
+			GER = { threat = { who = VIC value = -150 } }
+			neutrality = 100	# They are happy to be out of the war...
+			add_country_modifier = {
+				name = "vichy_armistice"
+				duration = -1
+			}
+			any_country = {
+				limit = { vassal_of = FRA }
+				country_event = 514
+			}
+		}	
+
+		FRA = {
+			national_unity = 90
+			##De Gaulle Cabinet##
+			country_event = 565
+			country_event = 566
+			country_event = 567
+			10028 = {
+				air_base = 4
+			}
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+			infantry_brigade = 10028
+		}
+	}
+}
+
+country_event = {
+	id = 533	# No Vichy
+
+	is_triggered_only = yes
+
+	title = "Our proposal is refused"
+	desc = "We sent a desperate peace proposal to the enemy but they refused to accept it. We have no other choice then to keep fighting until the bitter end."
+	picture = "VIC"
+
+	option = {
+		name = "Then we will fight together 'till the end!"
+		national_unity = 30
+		dissent = -15
+	}
+
+}
+
+country_event = {
+	
+	id = 565
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = FRA
+		ideology_group = democracy
+	}
+	
+	title = "Going into Exile"
+	desc = "After the Vichy Armistice, a new French Goverment was formed under Charles de Gaulle in exile."
+	picture = "VIC"
+	
+	option = {
+		name = "OK"
+		head_of_state = 2031
+		head_of_government = 2031
+		minister_of_security = 2036
+		chief_of_staff = 2031
+		foreign_minister = 2061
+		armament_minister = 2088
+		minister_of_intelligence = 2134
+		chief_of_army = 2164
+		chief_of_navy = 2178
+		chief_of_air = 2193
+		join_faction = allies
+		form_government_in_exile = yes
+	}
+}
+
+country_event = {
+	
+	id = 566
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = FRA
+		ideology_group = communism
+	}
+	
+	title = "Going into Exile"
+	desc = "After the Vichy Armistice, a new French Goverment was formed in exile, in Moscow."
+	picture = "VIC"
+	
+	option = {
+		name = "OK"
+		join_faction = comintern
+		form_government_in_exile = yes
+	}
+}
+
+country_event = {
+	
+	id = 567
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = FRA
+		ideology_group = fascism
+	}
+	
+	title = "Going into Exile"
+	desc = "After the Vichy Armistice, with no potential opposition the French gave up resistance."
+	picture = "VIC"
+	
+	option = {
+		name = "OK"
+		VIC = { inherit = FRA }
+	}
+}
+
+######################
+# UK goes into Exile #
+######################
+
+country_event = {
+	id = 534
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = ENG
+	}
+
+	title = "The British Lion has fallen"
+	desc = "Our nation is at the brink of destruction. There's simply no hope anymore..."
+	picture = "bitter_peace"
+
+	option = {
+		name = "It was a jolly good time while it lasted..."
+
+		# Release the colonies!
+		any_owned = { limit = { is_core = IND controlled_by = THIS } secede_province = IND }
+		any_owned = { limit = { is_core = PAK controlled_by = THIS } secede_province = PAK }
+		any_owned = { limit = { is_core = BBU controlled_by = THIS } secede_province = BBU }
+		any_owned = { limit = { is_core = CEY controlled_by = THIS } secede_province = CEY }
+		any_owned = { limit = { is_core = EGY controlled_by = THIS } secede_province = EGY }
+		any_owned = { limit = { is_core = CYP controlled_by = THIS } secede_province = CYP }
+		any_owned = { limit = { is_core = JAM controlled_by = THIS } secede_province = JAM }
+		any_owned = { limit = { is_core = GUY controlled_by = THIS } secede_province = GUY }
+		any_owned = { limit = { is_core = PAL controlled_by = THIS } secede_province = PAL }
+		any_owned = { limit = { is_core = ISR controlled_by = THIS } secede_province = ISR }
+		any_owned = { limit = { is_core = EGY controlled_by = THIS } secede_province = EGY }
+		any_owned = { limit = { is_core = JOR controlled_by = THIS } secede_province = JOR }
+		any_owned = { limit = { is_core = MLY controlled_by = THIS } secede_province = MLY }
+		any_owned = { limit = { is_core = YEM controlled_by = THIS } secede_province = YEM }
+		
+		# American provinces go to Canada!
+		any_owned = {
+			limit = {
+				exists = CAN
+				CAN = { faction = allies }
+				controller = { faction = allies }
+				or = {
+					continent = north_america
+					continent = Caribbean
+					continent = Central_America
+					continent = south_america
+				}
+			}
+			secede_province = CAN
+		}
+		# Oceanian provinces go to Australia!
+		any_owned = {
+			limit = {
+				exists = AST
+				AST = { faction = allies }
+				controller = { faction = allies }
+				or = {
+					continent = Pacific_Islands
+					continent = India
+					continent = Southeast_Asia
+				}
+			}
+			secede_province = AST
+		}
+		# UAE goes to Saudi Arabia
+		any_owned = {
+			limit = {
+				exists = SAU
+				controller = { faction = allies }
+				continent = Arabia
+			}
+			secede_province = SAU
+		}
+
+		# Remove cores from provinces outside of the home islands
+		any_owned = {
+			limit = {
+				NOT = { continent = British_Isles }
+			}
+			remove_core = ENG
+		}
+		5359 = { remove_core = ENG }
+
+		# The allies faction is dissolved. 
+		any_country = { limit = { faction = allies government_in_exile = yes } country_event = 3951 }
+		any_country = { limit = { faction = allies } leave_faction = allies }
+		
+		FROM = { inherit = THIS }
+		FROM = { country_event = 503 }
+		USA = { neutrality = -20 }
+	}
+}
+
+country_event = {
+	id = 535
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = ENG
+		# In the Allies, and there are still majors in the faction!
+		faction = allies
+		or = {
+			FRA = {
+				faction = allies
+				is_subject = no
+				government_in_exile = no	# France is Allied
+			}
+			USA = {
+				faction = allies
+				is_subject = no
+				government_in_exile = no	# USA is Allied
+			}
+			ITA = {
+				faction = allies
+				is_subject = no
+				government_in_exile = no	# Italy is Allied
+			}
+			JAP = {
+				faction = allies
+				is_subject = no
+				government_in_exile = no	# Japan is Allied
+			}
+		}
+	}
+
+	title = "The government is fleeing"
+	desc = "Our nation is at the brink of destruction. We simple can't let that happen! We have to keep on fighting even from exile!"
+	picture = "bitter_peace"
+
+	option = {
+		name = "We will never surrender!"
+		any_country = {
+			any_owned = {
+				limit = {
+					or = {
+						region = great_britain_region
+						region = northern_ireland_region
+					}
+				}
+				remove_core = ENG
+			}
+		}
+		any_owned = {
+			limit = {
+				or = {
+					region = great_britain_region
+					region = northern_ireland_region
+				}
+			}
+			remove_core = ENG
+		}
+		any_owned = { limit = { is_core = IND controlled_by = THIS } secede_province = IND }
+		any_owned = { limit = { is_core = PAK controlled_by = THIS } secede_province = PAK }
+		any_owned = { limit = { is_core = BBU controlled_by = THIS } secede_province = BBU }
+		any_owned = { limit = { is_core = CEY controlled_by = THIS } secede_province = CEY }
+		any_owned = { limit = { is_core = EGY controlled_by = THIS } secede_province = EGY }
+		any_owned = { limit = { is_core = MTA controlled_by = THIS } secede_province = MTA }
+		any_owned = { limit = { is_core = CYP controlled_by = THIS } secede_province = CYP }
+		any_owned = { limit = { is_core = JAM controlled_by = THIS } secede_province = JAM }
+		any_owned = { limit = { is_core = GUY controlled_by = THIS } secede_province = GUY }
+		any_owned = { limit = { is_core = PAL controlled_by = THIS } secede_province = PAL }
+		any_owned = { limit = { is_core = ISR controlled_by = THIS } secede_province = ISR }
+		any_owned = { limit = { is_core = EGY controlled_by = THIS } secede_province = EGY }
+		any_owned = { limit = { is_core = JOR controlled_by = THIS } secede_province = JOR }
+		any_owned = { limit = { is_core = MLY controlled_by = THIS } secede_province = MLY }
+		any_owned = { limit = { is_core = YEM controlled_by = THIS } secede_province = YEM }
+		# Suez goes to Egypt. That is in Asia, and I don't want to give it to Australia...
+		any_owned = {
+			limit = {
+				exists = EGY
+				region = suez_region
+			}
+			secede_province = EGY
+		}
+		# Dubai goes to Oman. That is in Asia, and I don't want to give it to Australia...
+		any_owned = {
+			limit = {
+				exists = OMN
+				region = ENG_9578
+			}
+			secede_province = OMN
+		}
+		# North American provinces go to Canada!
+		any_owned = {
+			limit = {
+				exists = CAN
+				CAN = { faction = allies }
+				controller = { faction = allies }
+				or = {
+					continent = north_america
+					continent = south_america
+					continent = Central_America
+					continent = south_america
+				}
+			}
+			secede_province = CAN
+		}
+		# Oceanian provinces go to Australia!
+		any_owned = {
+			limit = {
+				exists = AST
+				AST = { faction = allies }
+				controller = { faction = allies }
+				or = {
+					continent = Pacific_Islands
+					continent = India
+					continent = Southeast_Asia
+				}
+			}
+			secede_province = AST
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				faction = allies
+			}
+			set_country_flag = uk_surrendered
+		}
+		
+		form_government_in_exile = yes
+		FROM = { country_event = 504 }
+	}
+}
+
+########################################
+# Czechoslovakia surrenders to Germany #
+########################################
+
+country_event = {
+	id = 536
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = CZE
+		FROM = { tag = GER }
+	}
+
+	title = "We lost..."
+	desc = "We lost our desperate war against Germany. We can no longer hold them back. Maybe we never could..."
+	picture = "End_Czech"
+
+	option = {
+		name = "We never really had a chance..."
+		GER = { country_event = 537 }
+		GER = { country_event = 538 }
+	}
+}
+
+country_event = {
+	id = 537
+	
+	trigger = {
+		exists = HUN
+	}
+	
+	is_triggered_only = yes
+
+	title = "Czechoslovakia is defeated"
+	desc = "The fools in Czechoslovakia thought they could defy our rule. We proved them wrong."
+	picture = "czechs_annexed"
+
+	option = {
+		name = "Install a Slovakian Puppet and secede Ruthenia to Hungary!"
+		ai_chance = { factor = 80 }
+		CZE = { release = SLO }
+		inherit = CZE
+		create_vassal = SLO
+		set_country_flag = czechoslovakia_annexed
+		SLO = {
+			any_owned = {
+				limit = { is_core = CZE or = { is_core = UKR is_core = HUN } }
+				remove_core = SLO secede_province = HUN add_core = SLO
+			}
+			head_of_state = 31002
+			head_of_government = 31003
+			foreign_minister = 31037
+			armament_minister = 31005
+			minister_of_security = 31033
+			minister_of_intelligence = 31055
+			chief_of_staff = 31007 
+			chief_of_army = 31008
+			chief_of_navy = 31066
+			chief_of_air = 31069
+			manpower = 50
+			supplies = 2000
+			metal = 500
+			energy = 1000
+			rare_materials = 250
+			crude_oil = 500
+			fuel = 1000
+			money = 100
+		}
+	}
+	option = {
+		name = "Divide it with Hungary!"
+		ai_chance = { factor = 15 }
+		inherit = CZE
+		any_owned = { limit = { is_core = SLO } secede_province = HUN }
+		dissent = 10
+		set_country_flag = czechoslovakia_annexed
+	}
+	option = {
+		name = "We shall keep it all!"
+		ai_chance = { factor = 5 }
+		inherit = CZE
+		dissent = 5
+		set_country_flag = czechoslovakia_annexed
+	}
+}
+
+country_event = {
+	id = 538
+	
+	trigger = {
+		not = { exists = HUN }
+	}
+
+	is_triggered_only = yes
+
+	title = "Czechoslovakia is defeated"
+	desc = "The fools in Czechoslovakia thought they could defy our rule. We proved them wrong."
+	picture = "czechs_annexed"
+
+	option = {
+		name = "Install a Slovakian Puppet!"
+		ai_chance = { factor = 98 }
+		CZE = { release = SLO }
+		inherit = CZE
+		create_vassal = SLO
+		set_country_flag = czechoslovakia_annexed
+		SLO = {
+			head_of_state = 31002
+			head_of_government = 31003
+			foreign_minister = 31037
+			armament_minister = 31005
+			minister_of_security = 31033
+			minister_of_intelligence = 31055
+			chief_of_staff = 31007 
+			chief_of_army = 31008
+			chief_of_navy = 31066
+			chief_of_air = 31069
+			manpower = 50
+			supplies = 2000
+			metal = 500
+			energy = 1000
+			rare_materials = 250
+			crude_oil = 500
+			fuel = 1000
+			money = 100
+		}
+	}
+	option = {
+		name = "We shall keep it all!"
+		ai_chance = { factor = 2 }
+		inherit = CZE
+		dissent = 5
+		set_country_flag = czechoslovakia_annexed
+	}
+}
+
+###################
+# SU Bitter Peace #
+###################
+
+country_event = {
+	id = 543
+
+	is_triggered_only = yes
+
+	title = "They refused!"
+	desc = "Germany refused our peace proposal! We have no other choice than to keep on fighting to the last man!"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "Then we will fight to the last soldier!"
+		national_unity = 30
+		dissent = -10
+	}
+}
+
+
+#########
+# Italy #
+#########
+
+country_event = {
+	
+	id = 560
+
+	is_triggered_only = yes
+	
+	major = yes
+
+	trigger = {
+		tag = ITA
+		not = { exists = RSI }
+		exists = GER
+		exists = ENG
+		faction = axis
+		war_with = ENG
+		GER = { war_with = ENG }
+		GER = { government_in_exile = no }
+		FROM = { faction = allies }
+		ENG = { faction = allies }
+	}
+
+	title = "EVTNAME503"
+	desc = "EVTDESC503"
+	picture = "Ita_Surrender"
+
+	option = {
+		name = "EVTOPTA503"
+		any_owned = {
+			limit = { continent = africa }					# The African colonies are seceded to the UK.
+			secede_province = ENG
+		}
+		
+		4550 = { add_core = RSI change_controller = ITA }	# Temporary capital of the Italian Republic is Anagni.
+		release = RSI										# Italy is released, so they get the proper techs.
+		any_owned = {										# Now they get their cores, too.
+			limit = {
+				is_core = ITA
+				continent = europe
+			}
+			add_core = RSI
+		}
+		capital = 4549										# Move the capital back to Rome!
+		RSI = { join_faction = allies }						# They also join the Allies.
+		RSI = { split_troops = 0.5 }						# Some troops go to the Republic.
+		GER = { split_troops = 0.5 }						# Some troops side with Germany.
+		
+		any_owned = {
+			limit = { controller = { faction = allies } }	# And they get the Allied-occupied territories, too.
+			secede_province = RSI
+		}
+		
+		# Give them some supllies and fuel to keep the invasion running!
+		supplies = 20000
+		fuel = 10000
+
+		FROM = { country_event = 503 }		# Notification
+		
+		GER = { country_event = 561 }
+	}
+}
+
+country_event = {
+	id = 561
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "Italy is lost"
+	desc = "The Italians have turned against us, Mussolini has only barely escaped. What should we do now? Set up a puppet government in Northern Italy, or simply take control directly?"
+	picture = "Ita_Surrender"
+
+	option = {
+		name = "Give Mussolini a last chance!"
+		create_vassal = ITA
+		ITA = {
+			war = {
+				target = ENG
+				attacker_goal = { casus_belli = concede_defeat }
+			}
+		}
+	}
+
+	option = {
+		name = "They were just holding us back, anyway!"
+		inherit = ITA
+	}
+
+}
+
+#################################
+# End of the Finnish Winter War #	Already taken out.
+#################################
+
+country_event = {
+	
+	id = 570
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = FIN
+		war_with = SOV
+		FROM = { tag = SOV }
+		NOT = { war_with = ENG }
+		SOV = { has_country_flag = "the_finnish_winter_war" }
+		not = { has_country_flag = "fi_signs_peace" }
+	}
+
+	title = "EVTNAME506"
+	desc = "EVTDESC506"
+	picture = "End_Winter_War"
+
+	option = {
+		name = "EVTOPTA506"					# Fold to Russian Demands
+		ai_chance = { factor = 100 }
+		set_country_flag = "fi_signs_peace"
+		FROM = { country_event = 571 }
+	}
+}
+
+country_event = {
+	
+	id = 571
+
+	is_triggered_only = yes
+
+	title = "EVTNAME506"
+	desc = "EVTDESC506"
+	picture = "End_Winter_War"
+
+	option = {
+		name = "EVTOPTA516"							# We'll settle for what we asked for
+		ai_chance = { factor = 100 }
+		threat = { who = all value = -15 }
+		FIN = {
+			Soviet_claims_FIN = { secede_province = SOV }
+			dissent = 10
+		}
+		relation = { who = FIN value = 10 }
+		any_country = {
+			limit = {
+				or = {
+					tag = FIN
+					and = {
+						tag = SWE
+						alliance_with = FIN
+					}
+				}
+			}
+			end_war = SOV
+			military_access = SOV
+			set_country_flag = "allow_soviets_to_leave"
+			add_country_modifier = {
+				name = "allow_soviets_to_leave"
+				duration = 30
+			}
+		}		
+		dissent = -10	
+	}
+	option = {
+		name = "Bring them socialism!"
+		threat = { who = all value = 10 }
+		add_wargoal = {
+			target = FIN
+			attacker_goal = { casus_belli = puppet }
+		}
+		FIN = { country_event = 572 }
+	}
+}
+
+country_event = {
+	id = 572
+
+	is_triggered_only = yes
+
+	title = "Proposal rejected"
+	desc = "Even though we folded to the Russian demands, they now want even more and won't accept our capitulation!"
+	picture = "winter_war"
+
+	option = {
+		name = "Then we will fight to the death!"
+		national_unity = 100
+		dissent = -25
+		manpower = 100
+		supplies = 5000
+	}
+}
+
+country_event = {
+	id = 573
+
+	trigger = {
+		or = {
+			tag = SWE
+			tag = FIN
+		}
+		has_country_flag = "allow_soviets_to_leave"
+		not = { has_country_modifier = "allow_soviets_to_leave" }
+	}
+
+	title = "The Soviets left the country"
+	desc = "By now, the last Soviet troops should have left the country, so we should close our borders."
+	picture = "winter_war"
+
+	option = {
+		name = "Good riddance."
+		clr_country_flag = "allow_soviets_to_leave"
+		end_military_access = SOV
+	}
+}
+
+#####################
+# Poland surrenders #
+#####################
+
+# No UK-guarantee
+country_event = {
+	
+	id = 576
+
+	is_triggered_only = yes
+
+	major = yes
+	
+	trigger = {
+		tag = POL
+		not = { has_country_flag = "uk_guarantees" }	# No UK guarantee
+		is_in_any_faction = no
+		not = { war_with = SOV }						# The Soviets didn't intervene
+		war_with = GER
+		FROM = { tag = GER }
+		not = { has_country_flag = "poland_surrenders" }	# Only happens once!
+	}
+
+	title = "EVTNAME509"
+	desc = "EVTDESC509"
+	picture = "Mol_Rib"
+	
+	option = {
+		name = "EVTOPTA509"
+		ai_chance = { factor = 100 }					# Have to surrender.
+		set_country_flag = "poland_surrenders"
+		GER = { country_event = 501 }
+	}
+}
+
+country_event = {
+	
+	id = 578
+
+	is_triggered_only = yes
+
+	major = yes
+	
+	trigger = {
+		tag = POL
+		not = { has_country_flag = "uk_guarantees" }		# No guarantee
+		is_in_any_faction = no
+		war_with = SOV										# The Soviets also attacked
+		war_with = GER
+		or = {
+			FROM = { tag = GER }
+			FROM = { tag = SOV }
+		}
+		not = { has_country_flag = "poland_surrenders" }	# Only happens once!
+	}
+
+	title = "EVTNAME509"
+	desc = "EVTDESC509"
+	picture = "Mol_Rib"
+	
+	option = {
+		name = "EVTOPTB509"
+		set_country_flag = "poland_surrenders"
+		any_owned = {
+			limit = { is_core = SOV }
+			secede_province = SOV
+		}
+		any_owned = {
+			limit = { is_core = GER }
+			secede_province = GER
+		}
+		FROM = { inherit = THIS }							
+		FROM = { country_event = 581 }
+	}
+}
+
+# Yes UK-guarantee
+country_event = {
+	
+	id = 580
+
+	is_triggered_only = yes
+
+	major = yes
+	
+	trigger = {
+		tag = POL
+		or = {
+			has_country_flag = "uk_guarantees"				# UK guarantees
+			faction = allies
+		}
+		not = { war_with = SOV }							# No Soviet intervention
+		war_with = GER
+		FROM = { tag = GER }
+		not = { has_country_flag = "poland_surrenders" }	# Only happens once!
+	}
+
+	title = "EVTNAME509"
+	desc = "EVTDESC509"
+	picture = "Mol_Rib"
+	
+	option = {
+		name = "EVTOPTA509"				# Join the Allies and go into exile:
+		set_country_flag = "poland_surrenders"
+		join_faction = allies			# Join the allies,
+		form_government_in_exile = yes	# and flee to London.
+		POL = { western_poland_region = { limit = { is_core = GER } secede_province = GER } }
+		GER = { country_event = 504 }
+	}
+}
+
+country_event = {
+	
+	id = 581
+
+	is_triggered_only = yes
+
+	title = "EVTNAME510"
+	desc = "EVTDESC510"
+	picture = "Mol_Rib"
+
+	option = {
+		name = "EVTOPTA510"
+		ai_chance = { factor = 100 }
+		inherit = POL
+		SOV = { country_event = 582 }
+	}
+	option = {
+		name = "EVTOPTB510"
+		ai_chance = { factor = 0 }		# AI shouldn't puppet Poland.
+		SOV = { country_event = 582 }
+		create_vassal = POL
+	}	
+}
+
+country_event = {
+	
+	id = 582
+
+	is_triggered_only = yes
+
+	title = "EVTNAME511"
+	desc = "EVTDESC511"
+	picture = "Mol_Rib"
+
+	option = {
+		name = "EVTOPTA511"
+		relation = { who = GER value = 10 }
+		country_event = 1530		# Ask for Military Access throught the Baltic States
+	}
+}
+
+country_event = {
+	
+	id = 583
+
+	is_triggered_only = yes
+
+	major = yes
+	
+	trigger = {
+		tag = POL
+		or = {
+			has_country_flag = uk_guarantees				# UK guarantees
+			faction = allies
+		}
+		SOV = { has_country_flag = mol_rib_pact }			# M-R Pact stands (historical)
+		war_with = GER
+		war_with = SOV										# The Soviets need to attack in order to get the spoils!
+		or = {
+			FROM = { tag = GER }
+			FROM = { tag = SOV }
+		}
+		GER = { not = { war_with = SOV } }
+		not = { has_country_flag = "poland_surrenders" }	# Only happens once!
+	}
+
+	title = "EVTNAME509"
+	desc = "EVTDESC509"
+	picture = "Mol_Rib"
+	
+	option = {
+		name = "EVTOPTB509"
+		set_country_flag = "poland_surrenders"
+		POL = {
+			eastern_poland_region = {
+				secede_province = SOV		# The eastern part goes to the USSR.
+			}
+		}
+		end_war = SOV						# The Soviet war is over.
+		POL = { western_poland_region = { limit = { is_core = GER } secede_province = GER } }
+		join_faction = allies				# Then join the allies,
+		form_government_in_exile = yes		# and flee to London
+		FROM = { country_event = 504 }
+		SOV = { country_event = 582 }
+	}
+}
+
+###############################################
+# Chinese warlords in case of a unified front #
+###############################################
+
+country_event = {
+	id = 584
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		or = {
+			tag = CHC
+			tag = CXB
+			tag = CYN
+			tag = SIK
+			tag = CGX
+			tag = CSX
+		}
+		not = { CHI = { vassal_of = JAP } }
+		exists = CHI
+		FROM = { tag = JAP }
+		is_in_any_faction = no
+		has_country_flag = "unified_front"
+	}
+
+	title = "This is not the end!"
+	desc = "We have to surrender our independence, but we rather join the Chinese government then give in to the Japanese invaders!"
+	picture = "bitter_peace"
+
+	option = {
+		name = "This is not over!..."
+		CHI = { split_troops = 1.0 }
+		CHI = { inherit = THIS }
+		CHI = { dissent = -5 }
+		FROM = { country_event = 586 }
+		any_country = {
+			limit = {
+				tag = CHC
+				THIS = { tag = CHC }
+			}
+			any_owned = {
+				limit = { is_core = CHC }
+				add_core = CHI
+			}
+			north_china_region = { add_core = CHI }
+		}
+	}
+
+}
+
+country_event = {
+	id = 585
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		or = {
+			tag = CHC
+			tag = CXB
+			tag = CYN
+			tag = SIK
+			tag = CGX
+			tag = CSX
+		}
+		exists = CHI
+		not = { CHI = { vassal_of = JAP } }
+		FROM = { tag = JAP }
+		is_in_any_faction = yes
+		has_country_flag = unified_front
+	}
+
+	title = "This is not the end!"
+	desc = "While China continues to fight against Japan, our government will go into exile, to keep up the fight from there!"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "This is not over!..."
+		CHI = { split_troops = 0.85 }
+		any_owned = {
+			limit = { controlled_by = THIS }
+			change_controller = CHI
+		}
+		CHI = { dissent = -5 }
+		form_government_in_exile = yes
+		FROM = { country_event = 586 }
+	}
+
+}
+
+country_event = {
+	id = 586
+
+	is_triggered_only = yes
+
+	title = "They don't know when to give up!"
+	desc = "Even though we are clearly stronger, the Chinese won't give up!"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "The fools!"
+		relation = { who = CHI value = -5 }
+		threat = { who = CSX value = 15 }
+		threat = { who = CGX value = 15 }
+		threat = { who = CHC value = 15 }
+		threat = { who = CYN value = 15 }
+		threat = { who = CXB value = 15 }
+		threat = { who = USA value = 5 }
+		threat = { who = ENG value = 5 }
+		threat = { who = FRA value = 5 }
+		threat = { who = HOL value = 5 }
+		war_exhaustion = -1
+	}
+}
+
+##################################################################
+# Chinese warlords after the establishment of the Jingwei Regime #
+##################################################################
+
+country_event = {
+	id = 587
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		or = {
+			tag = CHC
+			tag = CXB
+			tag = CYN
+			tag = SIK
+			tag = CGX
+			tag = CSX
+		}
+		exists = NJG
+		NJG = { vassal_of = JAP }
+		FROM = { tag = JAP }
+		is_in_any_faction = no
+	}
+
+	title = "Continue the fight in a guerilla war!"
+	desc = "We are defeated. We have no choice but to join China. But we will continue to fight in a guerilla war!"
+	picture = "bitter_peace"
+
+	option = {
+		name = "This is not over!..."
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		NJG = { inherit = THIS }
+		FROM = { country_event = 589 }
+	}
+
+}
+
+country_event = {
+	id = 588
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		or = {
+			tag = CHC
+			tag = CXB
+			tag = CYN
+			tag = SIK
+			tag = CGX
+			tag = CSX
+		}
+		exists = NJG
+		NJG = { vassal_of = JAP }
+		FROM = { tag = JAP }
+		is_in_any_faction = yes
+	}
+
+	title = "Continue the fight in a guerilla war!"
+	desc = "Our government will go into exile, to keep up the fight from there!"
+	picture = "bitter_peace"
+
+	option = {
+		name = "This is not over!..."
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		any_owned = {
+			limit = { controlled_by = THIS }
+			change_controller = JAP
+		}
+		form_government_in_exile = yes
+		FROM = { country_event = 589 }
+	}
+
+}
+
+country_event = {
+	id = 589
+
+	is_triggered_only = yes
+
+	title = "EVTNAME514"
+	desc = "EVTDESC514"
+	picture = "Bitter_Peace"
+
+	option = {
+		name = "Another one bites the dust."
+		threat = { who = CSX value = 15 }
+		threat = { who = CGX value = 15 }
+		threat = { who = CHC value = 15 }
+		threat = { who = CYN value = 15 }
+		threat = { who = CXB value = 15 }
+		threat = { who = USA value = 5 }
+		threat = { who = ENG value = 5 }
+		threat = { who = FRA value = 5 }
+		threat = { who = HOL value = 5 }
+		war_exhaustion = -1
+	}
+}
+
+######################
+# Germany surrenders #
+######################
+
+# Mostly historic outcome, partition
+
+country_event = {
+	
+	id = 590
+
+	is_triggered_only = yes
+
+	major = yes
+	
+	trigger = {
+		tag = GER
+		eastern_poland_region = { controller = { faction = comintern } }			# USSR in Poland
+		western_poland_region = { controller = { faction = comintern }  }
+		northern_france_region = {	# Allies in Northern France
+			or = {
+				and = {
+					controlled_by = FRA
+					FRA = { not = { faction = comintern } }
+				}
+				controller = { faction = allies }
+			}
+		}
+		the_netherlands_region = {	# Allies in Holland
+			or = {
+				and = {
+					controlled_by = HOL
+					HOL = { not = { faction = comintern } }
+				}
+				controller = { faction = allies }
+			}
+		}
+		belgium_region = {		# Allies in Belgium
+			or = {
+				and = {
+					controlled_by = BEL
+					BEL = { not = { faction = comintern } }
+				}
+				controller = { faction = allies }
+			}
+		}
+		or = {
+			FROM = { faction = allies }
+			FROM = { faction = comintern }
+		}
+		not = { has_country_flag = ge_signs_peace }
+	}
+
+	title = "EVTNAME508"
+	desc = "EVTDESC508"
+	picture = "ger_surrender"
+
+	option = {
+		name = "EVTOPTA508"					# Surrender
+		ai_chance = { factor = 100 }
+		set_country_flag = ge_signs_peace
+		any_country = {						# Remove the German cores
+			any_owned = {
+				limit = { is_core = GER }
+				remove_core = GER
+			}
+		}
+		any_owned = {
+			limit = { is_core = GER }
+			remove_core = GER
+		}
+		# Give cores for both of the new potential Germanies in the core regions.
+		west_germany_region = { add_core = DDR add_core = DFR }
+		east_germany_region = { add_core = DDR add_core = DFR }
+		polish_germany_region = { add_core = DDR add_core = DFR }
+		
+		
+		# Remove all the Nazis!
+		remove_minister = 1
+		set_country_flag = "1_removed"
+		remove_minister = 2			# Hess
+		set_country_flag = "2_removed"
+		remove_minister = 4			# Blomberg
+		kill_leader = 607
+		set_country_flag = "4_removed"
+		remove_minister = 5			# Frick
+		set_country_flag = "5_removed"
+		remove_minister = 9			# Raeder
+		kill_leader = 409
+		set_country_flag = "9_removed"
+		remove_minister = 32		# Dönitz
+		kill_leader = 389
+		set_country_flag = "32_removed"
+		remove_minister = 10		# Göring
+		kill_leader = 440
+		set_country_flag = "10_removed"
+		remove_minister = 42		# Borman
+		set_country_flag = "42_removed"
+		remove_minister = 55		# Ribbentrop
+		set_country_flag = "55_removed"
+		remove_minister = 57		# Rosenberg
+		set_country_flag = "57_removed"
+		remove_minister = 58		# Seyss-Inquart
+		set_country_flag = "58_removed"
+		remove_minister = 78		# Flick
+		set_country_flag = "78_removed"
+		remove_minister = 80		# Funk
+		set_country_flag = "80_removed"
+		remove_minister = 81		# Darré
+		set_country_flag = "81_removed"
+		remove_minister = 82		# Daluege
+		set_country_flag = "82_removed"
+		remove_minister = 83		# Amman
+		set_country_flag = "83_removed"
+		remove_minister = 84		# Xavier-Schwartz
+		set_country_flag = "84_removed"
+		remove_minister = 87		# Pohl
+		set_country_flag = "87_removed"
+		remove_minister = 88		# Ley
+		set_country_flag = "88_removed"
+		remove_minister = 89		# Saur
+		set_country_flag = "89_removed"
+		remove_minister = 93		# Friedeburg
+		kill_leader = 421
+		set_country_flag = "93_removed"
+		remove_minister = 108		# Himmler
+		set_country_flag = "108_removed"
+		remove_minister = 109		# Lutze
+		set_country_flag = "109_removed"
+		remove_minister = 111		# Müller
+		set_country_flag = "111_removed"
+		remove_minister = 113		# Hanke
+		set_country_flag = "113_removed"
+		remove_minister = 114		# Thierack
+		set_country_flag = "114_removed"
+		remove_minister = 138		# Kaltenbrunner
+		set_country_flag = "138_removed"
+		remove_minister = 153		# Paulus
+		kill_leader = 215
+		set_country_flag = "153_removed"
+		remove_minister = 156		# Jodl
+		kill_leader = 149
+		set_country_flag = "156_removed"
+		remove_minister = 158		# Krebs
+		kill_leader = 170
+		set_country_flag = "158_removed"
+		remove_minister = 176		# Keitel
+		kill_leader = 154
+		set_country_flag = "176_removed"
+		remove_minister = 178		# Schörner
+		kill_leader = 249
+		set_country_flag = "178_removed"
+		remove_minister = 194		# Freiwald
+		kill_leader = 391
+		set_country_flag = "194_removed"
+		remove_minister = 203		# Sperrle
+		kill_leader = 470
+		set_country_flag = "203_removed"
+		remove_minister = 204		# von Greim
+		kill_leader = 475
+		set_country_flag = "204_removed"
+		remove_minister = 214		# von Epp
+		set_country_flag = "214_removed"
+		remove_minister = 216		# Lammers
+		set_country_flag = "216_removed"
+		remove_minister = 217		# Kritzinger
+		set_country_flag = "217_removed"
+		remove_minister = 220		# Seldte
+		set_country_flag = "220_removed"
+		remove_minister = 221		# Hierl
+		set_country_flag = "221_removed"
+		remove_minister = 226		# Buch
+		set_country_flag = "226_removed"
+		remove_minister = 228		# Freisler
+		set_country_flag = "228_removed"
+		remove_minister = 230		# Busch
+		kill_leader = 33
+		set_country_flag = "230_removed"
+		remove_minister = 232		# Hausser
+		kill_leader = 503
+		set_country_flag = "232_removed"
+		remove_minister = 233		# Marschall
+		kill_leader = 407
+		set_country_flag = "233_removed"
+		remove_minister = 235		# Dessloch
+		kill_leader = 434
+		set_country_flag = "235_removed"
+		remove_minister = 237		# Stumpff
+		kill_leader = 471
+		set_country_flag = "237_removed"
+		remove_minister = 238		# von Reichenau
+		kill_leader = 334
+		set_country_flag = "238_removed"
+		remove_minister = 241		# Krosigk
+		set_country_flag = "241_removed"
+		remove_minister = 242		# Giesler
+		set_country_flag = "242_removed"
+		remove_minister = 243		# Neumann
+		set_country_flag = "243_removed"
+		remove_minister = 244		# Heydrich
+		set_country_flag = "244_removed"
+		remove_minister = 246		# Goebbels
+		set_country_flag = "246_removed"
+		remove_minister = 252		# Saukel
+		set_country_flag = "252_removed"
+
+		FROM = { country_event = 591 }
+	}
+}
+
+country_event = {
+	id = 591
+
+	is_triggered_only = yes
+
+	title = "Germany partitioned"
+	desc = "As Allied and Soviet troops link up in German territory, the days of the Third Reich is over, Europe now has to adapt to the new world order."
+	picture = "ger_surrender"
+
+	option = {
+		name = "At last!"
+		set_country_flag = joined_forces_defeated_germany
+		any_country = { limit = { exists = SLO tag = SLO vassal_of = GER } country_event = 592 }
+		any_country = { limit = { exists = CRO tag = CRO vassal_of = GER } country_event = 593 }
+		any_country = { limit = { exists = SER tag = SER vassal_of = GER } country_event = 593 }
+		any_country = { limit = { exists = SLV tag = SLV vassal_of = GER } country_event = 593 }
+		any_country = { limit = { exists = MAC tag = MAC vassal_of = GER } country_event = 593 }
+		any_country = { limit = { exists = MTN tag = MTN vassal_of = GER } country_event = 593 }
+		inherit = GER
+	}
+}
+
+
+country_event = {
+	id = 592
+
+	is_triggered_only = yes
+
+	title = "The end of independent Slovakia"
+	desc = "With Germany defeated, we have no choice, but to rejoin Czechoslovakia. But we won't forget! Our time will come!"
+	picture = "bitter_peace"
+
+	option = {
+		name = "This is the end..."
+		CZE = { split_troops = 0.40 }
+		CZE = { inherit = SLO }
+	}
+
+}
+
+
+country_event = {
+	id = 593
+
+	is_triggered_only = yes
+
+	title = "The end of independent Croatia and Serbia"
+	desc = "With Germany defeated, we have no choice, but to rejoin Yugoslavia. But we won't forget! Our time will come!"
+	picture = "bitter_peace"
+
+	option = {
+		name = "This is the end..."
+		YUG = { split_troops = 0.40 }
+		YUG = { inherit = THIS }
+	}
+
+}
+
+country_event = {	# To reduce war exhaustion in all allied and commintern countries
+
+	id = 594
+
+	trigger = {
+		or = {
+			faction = allies
+			faction = comintern
+		}
+		or = {
+			USA = { has_country_flag = joined_forces_defeated_germany }
+			FRA = { has_country_flag = joined_forces_defeated_germany }
+			ENG = { has_country_flag = joined_forces_defeated_germany }
+			SOV = { has_country_flag = joined_forces_defeated_germany }
+		}
+		not = { has_country_flag = joined_forces_defeated_germany }
+	}
+
+	title = "Germany surrenders to the Allies"
+	desc = "Germany's army is scattered, it's industry in ruins. The second great war is over. It is time to rebuild."
+	picture = "ger_surrender"
+
+	option = {
+		name = "At last!"
+		set_country_flag = joined_forces_defeated_germany
+		war_exhaustion = -5
+	}
+}
+
+# Decisive Allied participation
+
+country_event = {
+	
+	id = 595
+
+	is_triggered_only = yes
+	
+	major = yes
+
+	trigger = {
+		tag = GER
+		northern_france_region = {	# Allies in Northern France
+			controller = { faction = allies }
+		}
+		the_netherlands_region = {	# Allies in Holland
+			or = {
+				controlled_by = HOL
+				controller = { faction = allies }
+			}
+		}
+		belgium_region = {		# Allies in Belgium
+			or = {
+				controlled_by = BEL
+				controller = { faction = allies }
+			}
+		}
+		west_germany_region = {		# Allies in West Germany
+			controller = { faction = allies }
+		}
+		east_germany_region = {		# Allies in East Germany
+			controller = { faction = allies }
+		}
+		FROM = { faction = allies }
+		not = { has_country_flag = "ge_signs_peace" }
+	}
+
+	title = "EVTNAME508"
+	desc = "EVTDESC508"
+	picture = "ger_surrender"
+
+	option = {
+		name = "EVTOPTA508"					# Surrender
+		set_country_flag = "ge_signs_peace"
+		any_country = {						# Remove the German cores
+			any_owned = {
+				limit = { is_core = GER }
+				remove_core = GER
+			}
+		}
+		any_owned = {
+			limit = { is_core = GER }
+			remove_core = GER
+		}
+		# Only FRG gets cores
+		west_germany_region = { add_core = DFR }
+		east_germany_region = { add_core = DFR }
+		polish_germany_region = { add_core = DFR }
+		
+		
+		# Remove all the Nazis!
+		remove_minister = 1
+		set_country_flag = "1_removed"
+		remove_minister = 2			# Hess
+		set_country_flag = "2_removed"
+		remove_minister = 4			# Blomberg
+		kill_leader = 607
+		set_country_flag = "4_removed"
+		remove_minister = 5			# Frick
+		set_country_flag = "5_removed"
+		remove_minister = 9			# Raeder
+		kill_leader = 409
+		set_country_flag = "9_removed"
+		remove_minister = 32		# Dönitz
+		kill_leader = 389
+		set_country_flag = "32_removed"
+		remove_minister = 10		# Göring
+		kill_leader = 440
+		set_country_flag = "10_removed"
+		remove_minister = 42		# Borman
+		set_country_flag = "42_removed"
+		remove_minister = 55		# Ribbentrop
+		set_country_flag = "55_removed"
+		remove_minister = 57		# Rosenberg
+		set_country_flag = "57_removed"
+		remove_minister = 58		# Seyss-Inquart
+		set_country_flag = "58_removed"
+		remove_minister = 78		# Flick
+		set_country_flag = "78_removed"
+		remove_minister = 80		# Funk
+		set_country_flag = "80_removed"
+		remove_minister = 81		# Darré
+		set_country_flag = "81_removed"
+		remove_minister = 82		# Daluege
+		set_country_flag = "82_removed"
+		remove_minister = 83		# Amman
+		set_country_flag = "83_removed"
+		remove_minister = 84		# Xavier-Schwartz
+		set_country_flag = "84_removed"
+		remove_minister = 87		# Pohl
+		set_country_flag = "87_removed"
+		remove_minister = 88		# Ley
+		set_country_flag = "88_removed"
+		remove_minister = 89		# Saur
+		set_country_flag = "89_removed"
+		remove_minister = 93		# Friedeburg
+		kill_leader = 421
+		set_country_flag = "93_removed"
+		remove_minister = 108		# Himmler
+		set_country_flag = "108_removed"
+		remove_minister = 109		# Lutze
+		set_country_flag = "109_removed"
+		remove_minister = 111		# Müller
+		set_country_flag = "111_removed"
+		remove_minister = 113		# Hanke
+		set_country_flag = "113_removed"
+		remove_minister = 114		# Thierack
+		set_country_flag = "114_removed"
+		remove_minister = 138		# Kaltenbrunner
+		set_country_flag = "138_removed"
+		remove_minister = 153		# Paulus
+		kill_leader = 215
+		set_country_flag = "153_removed"
+		remove_minister = 156		# Jodl
+		kill_leader = 149
+		set_country_flag = "156_removed"
+		remove_minister = 158		# Krebs
+		kill_leader = 170
+		set_country_flag = "158_removed"
+		remove_minister = 176		# Keitel
+		kill_leader = 154
+		set_country_flag = "176_removed"
+		remove_minister = 178		# Schörner
+		kill_leader = 249
+		set_country_flag = "178_removed"
+		remove_minister = 194		# Freiwald
+		kill_leader = 391
+		set_country_flag = "194_removed"
+		remove_minister = 203		# Sperrle
+		kill_leader = 470
+		set_country_flag = "203_removed"
+		remove_minister = 204		# von Greim
+		kill_leader = 475
+		set_country_flag = "204_removed"
+		remove_minister = 214		# von Epp
+		set_country_flag = "214_removed"
+		remove_minister = 216		# Lammers
+		set_country_flag = "216_removed"
+		remove_minister = 217		# Kritzinger
+		set_country_flag = "217_removed"
+		remove_minister = 220		# Seldte
+		set_country_flag = "220_removed"
+		remove_minister = 221		# Hierl
+		set_country_flag = "221_removed"
+		remove_minister = 226		# Buch
+		set_country_flag = "226_removed"
+		remove_minister = 228		# Freisler
+		set_country_flag = "228_removed"
+		remove_minister = 230		# Busch
+		kill_leader = 33
+		set_country_flag = "230_removed"
+		remove_minister = 232		# Hausser
+		kill_leader = 503
+		set_country_flag = "232_removed"
+		remove_minister = 233		# Marschall
+		kill_leader = 407
+		set_country_flag = "233_removed"
+		remove_minister = 235		# Dessloch
+		kill_leader = 434
+		set_country_flag = "235_removed"
+		remove_minister = 237		# Stumpff
+		kill_leader = 471
+		set_country_flag = "237_removed"
+		remove_minister = 238		# von Reichenau
+		kill_leader = 334
+		set_country_flag = "238_removed"
+		remove_minister = 241		# Krosigk
+		set_country_flag = "241_removed"
+		remove_minister = 242		# Giesler
+		set_country_flag = "242_removed"
+		remove_minister = 243		# Neumann
+		set_country_flag = "243_removed"
+		remove_minister = 244		# Heydrich
+		set_country_flag = "244_removed"
+		remove_minister = 246		# Goebbels
+		set_country_flag = "246_removed"
+		remove_minister = 252		# Saukel
+		set_country_flag = "252_removed"
+
+		FROM = { country_event = 596 }
+	}
+}
+
+country_event = {
+	id = 596
+
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "Germany surrenders to the Allies"
+	desc = "Germany's army is scattered, it's industry in ruins. The second great war is over. It is time to rebuild."
+	picture = "ger_surrender"
+
+	option = {
+		name = "At last!"
+		set_country_flag = allies_defeated_germany
+		war_exhaustion = -3
+		any_country = { limit = { exists = SLO tag = SLO vassal_of = GER } country_event = 592 }
+		any_country = { limit = { exists = CRO tag = CRO vassal_of = GER } country_event = 593 }
+		any_country = { limit = { exists = SER tag = SER vassal_of = GER } country_event = 593 }
+		any_country = { limit = { exists = SLV tag = SLV vassal_of = GER } country_event = 593 }
+		any_country = { limit = { exists = MAC tag = MAC vassal_of = GER } country_event = 593 }
+		any_country = { limit = { exists = MTN tag = MTN vassal_of = GER } country_event = 593 }
+		inherit = GER
+	}
+}
+
+# Decisive Soviet participation
+
+country_event = {
+	id = 600
+
+	is_triggered_only = yes
+	
+	major = yes
+
+	trigger = {
+		tag = GER
+		eastern_poland_region = { controlled_by = SOV }		# USSR in Poland
+		western_poland_region = { controlled_by = SOV }
+		west_germany_region = { controlled_by = SOV }		# USSR in West Germany
+		FROM = { tag = SOV }
+		not = { has_country_flag = ge_signs_peace }
+	}
+
+	title = "EVTNAME508"
+	desc = "EVTDESC508"
+	picture = "ger_surrender"
+
+	option = {
+		name = "EVTOPTA508"					# Surrender
+		ai_chance = { factor = 100 }
+		set_country_flag = ge_signs_peace
+		any_country = {						# Remove the German cores
+			any_owned = {
+				limit = { is_core = GER }
+				remove_core = GER
+			}
+		}
+		any_owned = {
+			limit = { is_core = GER }
+			remove_core = GER
+		}
+		# Only DDR gets cores
+		west_germany_region = { add_core = DDR }
+		east_germany_region = { add_core = DDR }
+		polish_germany_region = { add_core = DDR }
+		
+		# Remove all the Nazis!
+		remove_minister = 1
+		set_country_flag = "1_removed"
+		remove_minister = 2			# Hess
+		set_country_flag = "2_removed"
+		remove_minister = 4			# Blomberg
+		kill_leader = 607
+		set_country_flag = "4_removed"
+		remove_minister = 5			# Frick
+		set_country_flag = "5_removed"
+		remove_minister = 9			# Raeder
+		kill_leader = 409
+		set_country_flag = "9_removed"
+		remove_minister = 32		# Dönitz
+		kill_leader = 389
+		set_country_flag = "32_removed"
+		remove_minister = 10		# Göring
+		kill_leader = 440
+		set_country_flag = "10_removed"
+		remove_minister = 42		# Borman
+		set_country_flag = "42_removed"
+		remove_minister = 55		# Ribbentrop
+		set_country_flag = "55_removed"
+		remove_minister = 57		# Rosenberg
+		set_country_flag = "57_removed"
+		remove_minister = 58		# Seyss-Inquart
+		set_country_flag = "58_removed"
+		remove_minister = 78		# Flick
+		set_country_flag = "78_removed"
+		remove_minister = 80		# Funk
+		set_country_flag = "80_removed"
+		remove_minister = 81		# Darré
+		set_country_flag = "81_removed"
+		remove_minister = 82		# Daluege
+		set_country_flag = "82_removed"
+		remove_minister = 83		# Amman
+		set_country_flag = "83_removed"
+		remove_minister = 84		# Xavier-Schwartz
+		set_country_flag = "84_removed"
+		remove_minister = 87		# Pohl
+		set_country_flag = "87_removed"
+		remove_minister = 88		# Ley
+		set_country_flag = "88_removed"
+		remove_minister = 89		# Saur
+		set_country_flag = "89_removed"
+		remove_minister = 93		# Friedeburg
+		kill_leader = 421
+		set_country_flag = "93_removed"
+		remove_minister = 108		# Himmler
+		set_country_flag = "108_removed"
+		remove_minister = 109		# Lutze
+		set_country_flag = "109_removed"
+		remove_minister = 111		# Müller
+		set_country_flag = "111_removed"
+		remove_minister = 113		# Hanke
+		set_country_flag = "113_removed"
+		remove_minister = 114		# Thierack
+		set_country_flag = "114_removed"
+		remove_minister = 138		# Kaltenbrunner
+		set_country_flag = "138_removed"
+		remove_minister = 153		# Paulus
+		kill_leader = 215
+		set_country_flag = "153_removed"
+		remove_minister = 156		# Jodl
+		kill_leader = 149
+		set_country_flag = "156_removed"
+		remove_minister = 158		# Krebs
+		kill_leader = 170
+		set_country_flag = "158_removed"
+		remove_minister = 176		# Keitel
+		kill_leader = 154
+		set_country_flag = "176_removed"
+		remove_minister = 178		# Schörner
+		kill_leader = 249
+		set_country_flag = "178_removed"
+		remove_minister = 194		# Freiwald
+		kill_leader = 391
+		set_country_flag = "194_removed"
+		remove_minister = 203		# Sperrle
+		kill_leader = 470
+		set_country_flag = "203_removed"
+		remove_minister = 204		# von Greim
+		kill_leader = 475
+		set_country_flag = "204_removed"
+		remove_minister = 214		# von Epp
+		set_country_flag = "214_removed"
+		remove_minister = 216		# Lammers
+		set_country_flag = "216_removed"
+		remove_minister = 217		# Kritzinger
+		set_country_flag = "217_removed"
+		remove_minister = 220		# Seldte
+		set_country_flag = "220_removed"
+		remove_minister = 221		# Hierl
+		set_country_flag = "221_removed"
+		remove_minister = 226		# Buch
+		set_country_flag = "226_removed"
+		remove_minister = 228		# Freisler
+		set_country_flag = "228_removed"
+		remove_minister = 230		# Busch
+		kill_leader = 33
+		set_country_flag = "230_removed"
+		remove_minister = 232		# Hausser
+		kill_leader = 503
+		set_country_flag = "232_removed"
+		remove_minister = 233		# Marschall
+		kill_leader = 407
+		set_country_flag = "233_removed"
+		remove_minister = 235		# Dessloch
+		kill_leader = 434
+		set_country_flag = "235_removed"
+		remove_minister = 237		# Stumpff
+		kill_leader = 471
+		set_country_flag = "237_removed"
+		remove_minister = 238		# von Reichenau
+		kill_leader = 334
+		set_country_flag = "238_removed"
+		remove_minister = 241		# Krosigk
+		set_country_flag = "241_removed"
+		remove_minister = 242		# Giesler
+		set_country_flag = "242_removed"
+		remove_minister = 243		# Neumann
+		set_country_flag = "243_removed"
+		remove_minister = 244		# Heydrich
+		set_country_flag = "244_removed"
+		remove_minister = 246		# Goebbels
+		set_country_flag = "246_removed"
+		remove_minister = 252		# Saukel
+		set_country_flag = "252_removed"
+		
+		SOV = { country_event = 601 }
+	}
+}
+
+country_event = {
+	id = 601
+
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "Germany surrenders to the Soviet Union"
+	desc = "Germany is in ruins as the Soviet troops march through the Fatherland. Now the Communist Party has to decide about the future of the newly liberated peoples."
+	picture = "ger_surrender"
+
+	option = {
+		name = "The workers have triumphed!"
+		SOV = { dissent = -10 }					# Major victory
+		SOV = { war_exhaustion = -5 }
+		any_country = {
+			limit = {				# The Yugoslav States and Slovakia will be inherited so the united countries can be released.
+				or = {
+					tag = SLO
+					tag = CRO
+					tag = SER
+					tag = BOS
+					tag = MTN
+					tag = MAC
+					tag = SLV
+				}
+				vassal_of = GER
+			}
+			country_event = 602
+		}
+		any_country = {				# The rest is taken over.
+			limit = {
+				not = { tag = SLO }
+				not = { tag = CRO }
+				not = { tag = SER }
+				not = { tag = BOS }
+				not = { tag = MTN }
+				not = { tag = MAC }
+				not = { tag = SLV }
+				vassal_of = GER
+			}
+			country_event = 603
+		}
+		inherit = GER
+	}
+}
+
+country_event = {
+	id = 602
+
+	is_triggered_only = yes
+
+	title = "Stuck on the sinking ship"
+	desc = "Germany is in ruins as the Soviet troops march through the Fatherland. We are going to be integrated into the Soviet block, and there's nothing we can do about it..."
+	picture = "ger_surrender"
+
+	option = {
+		name = "Oh, well."
+		FROM = { inherit = THIS }
+	}
+}
+
+country_event = {
+	id = 603
+
+	is_triggered_only = yes
+
+	title = "Stuck on the sinking ship"
+	desc = "Germany is in ruins as the Soviet troops march through the Fatherland. We are going to be integrated into the Soviet block, and there's nothing we can do about it..."
+	picture = "ger_surrender"
+
+	option = {
+		name = "Oh, well."
+		FROM = { create_vassal = THIS }
+	}
+}
+
+##############################
+# End of the Anglo-Iraqi War #
+##############################
+
+country_event = {
+	id = 610
+
+	is_triggered_only = yes
+	
+	major = yes
+
+	trigger = {
+		tag = IRQ
+		or = {
+			FROM = { tag = ENG }
+			FROM = { faction = allies }
+		}
+	}
+
+	title = "We wasted our opportunity..."
+	desc = "The United Kingdom and their Allies defeated us..."
+	picture = "greek_soldiers"
+
+	option = {
+		name = "We have no choice..."
+		FROM = { country_event = 611 }
+		organisation = -25
+		popularity = -50
+		social_conservative = { popularity = 50 organisation = 30 }
+	}
+}
+
+country_event = {
+	id = 611
+
+	is_triggered_only = yes
+
+	title = "Iraq is defeated"
+	desc = "We managed to defeate Iraq. Now back to the more important business!"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "They had no chance..."
+		create_vassal = FROM
+		do_election	= FROM
+	}
+}
+
+####################
+# Japan surrenders #
+####################
+
+country_event = {
+	id = 620
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = JAP
+	}
+
+	title = "Surrender"
+	desc = "Finally, the Emperor came to his senses and surrendered to our enemies."
+	picture = "JAP_surrender"
+
+	option = {
+		name = "We have no choice."
+		any_owned = {
+			limit = { not = { region = nippon_region } }
+			remove_core = JAP
+			secede_province = FROM
+		}
+		any_country = {
+			end_war = JAP
+		}
+		FROM = { country_event = 621 }
+	}
+}
+
+country_event = {
+	id = 621
+
+	is_triggered_only = yes
+
+	title = "Japan surrenders"
+	desc = "Finally, the Japanese Emperor came to his senses and surrendered."
+	picture = "JAP_surrender"
+
+	option = {
+		name = "At last!"
+		war_exhaustion = -3
+		create_vassal = JAP
+		set_country_flag = defeated_japan
+	}
+}
+
+#################################
+# Mengjiang Surrenders to China #
+#################################
+country_event = {
+	id = 645
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = MEN
+		or = {
+			FROM = { tag = CHI }
+			FROM = { tag = CHC }
+		}
+	}
+
+	title = "The end of independent Mengjiang"
+	desc = "We were defeated in battle. We have no choice but to rejoin China."
+	picture = "bitter_peace"
+
+	option = {
+		name = "At least we are free from Japanese oppression..."
+		FROM = { split_troops = 0.45 }		# Some of the populace are happy about this!
+		FROM = { inherit = THIS }
+		FROM = { country_event = 648 }
+	}
+}
+
+country_event = {
+	id = 646
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = MEN
+		FROM = { tag = SOV }
+		exists = CHC
+		CHC = { faction = comintern }
+	}
+
+	title = "The end of independent Mengjiang"
+	desc = "We were defeated in battle. We have no choice but to rejoin China."
+	picture = "comunista"
+
+	option = {
+		name = "At least we are free from Japanese oppression..."
+		CHC = { split_troops = 0.45 }
+		FROM = { inherit = THIS }
+		FROM = { country_event = 647 }
+	}
+}
+
+country_event = {
+	id = 647
+
+	is_triggered_only = yes
+
+	title = "The end of independent Mengjiang"
+	desc = "We have conquered Mengjiang. We should give it to our ally, Mao Zedong!"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "Give it to Mao!"
+		ai_chance = { factor = 100 }
+		CHC = { country_event = 648 }
+		any_owned = {
+			limit = {
+				is_core = MEN
+				not = { is_core = SOV }
+			}
+			secede_province = CHC
+		}
+	}
+
+	option = {
+		name = "We shall keep it to ourselves!"
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = 648
+
+	is_triggered_only = yes
+
+	title = "The end of independent Mengjiang"
+	desc = "We have liberated the area formerly known as Mengjiang from the Japanese!"
+	picture = "comunista"
+
+
+	option = {
+		name = "They are an integral part of China!"
+	}
+}
+
+#################################
+# Manchukuo Surrenders to China #
+#################################
+country_event = {
+	id = 650
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = MAN
+		or = {
+			FROM = { tag = CHI }
+			FROM = { tag = CHC }
+		}
+	}
+
+	title = "The end of independent Manchukuo"
+	desc = "We were defeated in battle. We have no choice but to rejoin China."
+	picture = "bitter_peace"
+
+	option = {
+		name = "At least we are free from Japanese oppression..."
+		FROM = { split_troops = 0.45 }		# Some of the populace are happy about this!
+		FROM = { inherit = THIS }
+		FROM = { country_event = 653 }
+	}
+}
+
+country_event = {
+	id = 651
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = MAN
+		FROM = { tag = SOV }
+		exists = CHC
+		CHC = { faction = comintern }
+	}
+
+	title = "The end of independent Manchukuo"
+	desc = "We were defeated in battle. We have no choice but to rejoin China."
+	picture = "comunista"
+
+	option = {
+		name = "At least we are free from Japanese oppression..."
+		CHC = { split_troops = 0.45 }
+		FROM = { inherit = THIS }
+		FROM = { country_event = 652 }
+	}
+}
+
+country_event = {
+	id = 652
+
+	is_triggered_only = yes
+
+	title = "The end of independent Manchukuo"
+	desc = "We have conquered Manchuria. We should give it to our ally, Mao Zedong!"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "Give it to Mao!"
+		ai_chance = { factor = 100 }
+		CHC = { country_event = 653 }
+		any_owned = {
+			limit = {
+				is_core = MAN
+				not = { is_core = SOV }
+			}
+			secede_province = CHC
+		}
+	}
+
+	option = {
+		name = "We shall keep it to ourselves!"
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = 653
+
+	is_triggered_only = yes
+
+	title = "The end of independent Manchukuo"
+	desc = "We have liberated Northern China from the Japanese!"
+	picture = "comunista"
+
+
+	option = {
+		name = "They are an integral part of China!"
+	}
+}
+
+##########################################
+# The Jingwei Regime Surrenders to China #
+##########################################
+country_event = {
+	id = 655
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = NJG
+		or = {
+			FROM = { tag = CHI }
+			FROM = { tag = CHC }
+		}
+	}
+
+	title = "The end of the Jingwei Regime"
+	desc = "We were defeated in battle. We have no choice but to rejoin China."
+	picture = "bitter_peace"
+
+	option = {
+		name = "It wasn't a good idea to begin with..."
+		FROM = { split_troops = 0.9 }		# Most of the populace are happy about this!
+		FROM = { inherit = THIS }
+		FROM = { country_event = 658 }
+	}
+}
+
+country_event = {
+	id = 656
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = NJG
+		FROM = { tag = SOV }
+		exists = CHC
+		CHC = { faction = comintern }
+	}
+
+	title = "The end of the Jingwei Regime"
+	desc = "We were defeated in battle. We have no choice but to rejoin China."
+	picture = "comunista"
+
+	option = {
+		name = "It wasn't a good idea to begin with..."
+		CHC = { split_troops = 0.05 }		# Not so many communists in the Jingwei regime...
+		FROM = { inherit = THIS }
+		FROM = { country_event = 657 }
+	}
+}
+
+country_event = {
+	id = 657
+
+	is_triggered_only = yes
+
+	title = "The end of the Jingwei Regime"
+	desc = "We have defeated the Jingwei Regime. We should give those territories to our ally, Mao Zedong!"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "Give it to Mao!"
+		ai_chance = { factor = 100 }
+		CHC = { country_event = 653 }
+		any_owned = {
+			limit = {
+				is_core = CHC
+				not = { is_core = SOV }
+			}
+			secede_province = CHC
+		}
+	}
+
+	option = {
+		name = "We shall keep it to ourselves!"
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = 658
+
+	is_triggered_only = yes
+
+	title = "The end of the Jingwei Regime"
+	desc = "Wang Jingwei's false regime is finally put down!"
+	picture = "comunista"
+
+
+	option = {
+		name = "Finally!"
+	}
+}
+
+#################################
+# Austria surrenders to Germany #
+#################################
+
+country_event = {
+	id = 660
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = AUS
+		FROM = { tag = GER }
+	}
+
+	title = "EVTNAME500"
+	desc = "EVTDESC500"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "We surrender!"
+		FROM = { split_troops = 0.25 }
+		FROM = { country_event = 661 }
+	}
+}
+
+country_event = {
+	id = 661
+
+	is_triggered_only = yes
+
+	title = "Forced Anschluss"
+	desc = "With Austria defeated in war, we are now able to annex them into the Third Reich."
+	picture = "Austria_Alliance"
+
+	option = {
+		name = "Excellent!"
+		austria_region = {
+			add_core = GER
+		}
+		inherit = AUS
+	}
+}
+
+#####################################
+# Switzerland surrenders to Germany #
+#####################################
+
+country_event = {
+
+	id = 662
+
+	is_triggered_only = yes
+
+	trigger = { 
+		tag = SCH
+		is_in_any_faction = yes
+		num_in_faction = 1
+		FROM = { faction = axis }
+	}
+
+	title = "This is the end..."
+	desc = "Switzerland has succumbed to the Fascist powers and has been partitioned between Germany and Italy"
+
+	option = {
+		name = "We will never surrender!"
+		italian_switzerland_region = { limit = { ITA = { faction = axis } } add_core = ITA }
+		german_switzerland_region = { limit = { GER = { faction = axis } } add_core = GER }
+		french_switzerland_region = { limit = { VIC = { faction = axis } } add_core = VIC }
+
+		form_government_in_exile = yes
+		FROM = { country_event = 504 }
+	}
+}
+
+country_event = {
+
+	id = 663
+
+	is_triggered_only = yes
+
+	trigger = { 
+		tag = SCH
+		or = {
+			is_in_any_faction = no
+			not = { num_in_faction = 1 }
+		}
+		FROM = { faction = axis }
+	}
+
+	title = "This is the end..."
+	desc = "Switzerland has succumbed to the Fascist powers and has been partitioned between Germany and Italy"
+
+	option = {
+		name = "Oh no..."
+		italian_switzerland_region = { limit = { ITA = { faction = axis } } add_core = ITA }
+		german_switzerland_region = { limit = { GER = { faction = axis } } add_core = GER }
+		french_switzerland_region = { limit = { VIC = { faction = axis } } add_core = VIC }
+
+		FROM = { inherit = THIS }
+		FROM = { country_event = 503 }
+	}
+}
+
+###################################
+# Luxemburg surrenders to Germany #
+###################################
+
+country_event = {
+	id = 665
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = LUX
+		FROM = { tag = GER }
+		is_in_any_faction = yes
+		num_in_faction = 2
+	}
+
+	title = "EVTNAME500"
+	desc = "EVTDESC500"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "EVTOPTA500"
+		ai_chance = { factor = 25 }
+		form_government_in_exile = yes
+		FROM = { country_event = 504 }
+	}
+	option = {
+		name = "EVTOPTB500"
+		ai_chance = { factor = 75 }
+		2429 = { add_core = GER }
+		FROM = { country_event = 503 }
+		FROM = { inherit = THIS }
+	}
+
+}
+
+country_event = {
+	id = 666
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = LUX
+		FROM = { tag = GER }
+		not = {
+			is_in_any_faction = yes
+			num_in_faction = 2
+		}
+	}
+
+	title = "EVTNAME500"
+	desc = "EVTDESC500"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "EVTOPTB500"
+		2429 = { add_core = GER }
+		FROM = { country_event = 503 }
+		FROM = { inherit = THIS }
+	}
+
+}
+
+#################################
+# Denmark surrenders to Germany #
+###################################
+# Turned into a decision already. #
+###################################
+
+#################################
+# Belgium surrenders to Germany #
+#################################
+
+
+country_event = {
+	id = 675
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = BEL
+		FROM = { tag = GER }
+		is_in_any_faction = yes
+		num_in_faction = 2
+	}
+
+	title = "EVTNAME500"
+	desc = "EVTDESC500"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "EVTOPTA500"
+		ai_chance = { factor = 95 }
+		form_government_in_exile = yes
+		any_owned = {
+			limit = { is_core = GER }
+			secede_province = GER
+		}
+		FROM = { country_event = 504 }
+	}
+	option = {
+		name = "EVTOPTB500"
+		ai_chance = { factor = 5 }
+		any_owned = {
+			limit = { is_core = GER }
+			secede_province = GER
+		}
+		FROM = { country_event = 501 }
+	}
+
+}
+
+country_event = {
+	id = 676
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = BEL
+		FROM = { tag = GER }
+		not = {
+			is_in_any_faction = yes
+			num_in_faction = 2
+		}
+	}
+
+	title = "EVTNAME500"
+	desc = "EVTDESC500"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "EVTOPTB500"
+		any_owned = {
+			limit = { is_core = GER }
+			secede_province = GER
+		}
+		FROM = { country_event = 501 }
+	}
+}
+
+#############################
+# China surrenders to Japan #
+#############################
+
+country_event = {
+	id = 680
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = CHI
+		exists = CHC
+		CHC = { war_with = JAP }
+		not = { CHI = { war_with = CHC } }
+		or = {
+			FROM = { tag = JAP }
+			FROM = { faction = axis }
+		}
+	}
+
+	title = "The fall of the Chinese Dragon"
+	desc = "With much of China in fascist hands and too few forces left to defend, we have no choice but to surrender. Mao will still continue to fight!"
+	picture = "China_CW"
+
+	option = {
+		name = "We surrender!"
+		CHC = { split_troops = 0.66 }		# Most of our troops join the Communists rather than the Japanese!
+		any_owned = {
+			limit = { controlled_by = THIS }
+			secede_province = CHC
+		}
+		FROM = { country_event = 682 }
+		leave_faction = axis
+		leave_faction = allies
+		leave_faction = comintern
+		any_country = {
+			end_military_access = THIS
+			end_guarantee = THIS
+			end_non_aggression_pact = THIS
+			leave_alliance = THIS
+		}
+	}
+}
+
+country_event = {
+	id = 681
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = CHI
+		or = {
+			not = { exists = CHC }
+			CHI = { war_with = CHC }
+			CHC = { not = { war_with = JAP } }
+		}
+		or = {
+			FROM = { tag = JAP }
+			FROM = { faction = axis }
+		}
+	}
+
+	title = "The fall of the Chinese Dragon"
+	desc = "With much of China in fascist hands and too little forces left to defend, we have no choice but to surrender."
+	picture = "japanese_reinforcments"
+
+	option = {
+		name = "We surrender!"
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 is_core = THIS } create_revolt = 3 }
+		FROM = { country_event = 682 }
+		leave_faction = axis
+		leave_faction = allies
+		leave_faction = comintern
+		any_country = {
+			end_military_access = THIS
+			end_guarantee = THIS
+			end_non_aggression_pact = THIS
+			leave_alliance = THIS
+		}
+	}
+}
+
+country_event = {
+	id = 682
+
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "The fall of the Chinese Dragon"
+	desc = "With China defeated, we must decide, whether to install a puppet government or take direct control."
+	picture = "tojo"
+
+	option = {
+		name = "Install a puppet government!"
+		ai_chance = { factor = 100 }
+		war_exhaustion = -3
+		inherit = CHI
+		country_event = 683
+
+	}
+
+	option = {
+		name = "We can deal with them!"
+		war_exhaustion = -3
+		inherit = CHI
+	}
+}
+
+country_event = {
+	id = 683
+
+	is_triggered_only = yes
+
+	title = "Create a Chinese Puppet"
+	desc = "Creating a Puppet in China was not as easy, as we first thought. Most of the Chinese people still see us as outsiders, and now our Puppet is treated the same way."
+	picture = "coup"
+
+	option = {
+		name = "Install a puppet government!"
+
+		any_owned = {
+			limit = {
+				not = { is_core = JAP }
+				or = {
+					is_core = NJG
+					# Cores of China, Manchukuo, Mengkukuo, Tibet, Xinjang, Mongolia or Tannu Tuva.
+					is_core = CHI is_core = CHC is_core = MEN is_core = MAN
+					is_core = CYN is_core = CSX is_core = CGX is_core = CXB
+					is_core = SIK is_core = TIB is_core = MON is_core = TAN
+				}
+			}
+			secede_province = NJG
+		}
+		create_vassal = NJG
+
+		NJG = { country_event = 684 }
+
+	}
+}
+
+
+country_event = {
+	id = 684
+
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "Wang Jingwei's regime"
+	desc = "After being defeated by the fascists, a weak puppet government was set up in China with Wang Jingwei as president. Much of the people did not accept this government, and it will have a hard time keeping order."
+	picture = "tojo"
+
+	option = {
+		name = "At least we retain some form of independence..."
+
+		threat = { who = CSX value = 75 }
+		threat = { who = CGX value = 75 }
+		threat = { who = CHC value = 150 }
+		threat = { who = CXB value = 75 }
+		threat = { who = SIK value = 75 }
+		threat = { who = TIB value = 75 }
+		
+		war_exhaustion = -2
+	}
+}
+
+################################
+# End of the Chinese Civil War #
+################################
+
+country_event = {
+	id = 685
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = CHC
+		FROM = {
+			or = {
+				tag = CHI
+				alliance_with = CHI
+				CHI = { faction = THIS }
+			}
+		}
+	}
+
+	title = "The end of the Chinese Civil War"
+	desc = "The communist forces fought valiantly under Mao Zedong in China, but were defeated in the end by the nationalists under Chiang Kai-Shek."
+	picture = "Xian_Incident"
+
+	option = {
+		name = "We surrender!"
+		FROM = { split_troops = 0.66 }
+		FROM = { country_event = 688 }
+		any_owned = {
+			limit = { is_core = CHC }
+			add_core = CHI
+		}
+		north_china_region = { add_core = CHI }
+	}
+}
+
+country_event = {
+	id = 686
+
+	major = yes
+
+	trigger = {
+		tag = CHI
+		FROM = {
+			or = {
+				tag = CHC
+				alliance_with = CHC
+				CHC = { faction = THIS }
+			}
+		}
+		JAP_5737 = { owned_by = THIS }	# Taiwan
+		JAP_5824 = { owned_by = THIS }
+	}
+
+	is_triggered_only = yes
+
+	title = "End of the Chinese Civil War"
+	desc = "The nationalists forces fought valiantly under Chiang Kai-Shek in China, but were defeated in the end by the communist under Mao Zedong. In the end, they were able to retreat to Taiwan."
+	picture = "China_CW"
+
+	option = {
+		name = "We will retreat to Taiwan!"
+		FROM = { split_troops = 0.66 }
+		FROM = { country_event = 689 }
+	}
+}
+
+country_event = {
+	id = 687
+
+	is_triggered_only = yes
+
+	major = yes
+
+	trigger = {
+		tag = CHI
+		FROM = {
+			or = {
+				tag = CHC
+				alliance_with = CHC
+				CHC = { faction = THIS }
+			}
+		}
+	}
+
+	title = "The end of the Chinese Civil War"
+	desc = "The nationalists forces fought valiantly under Chiang Kai-Shek in China, but were defeated in the end by the communist under Mao Zedong."
+	picture = "China_CW"
+
+	option = {
+		name = "We surrender!"
+		FROM = { split_troops = 0.66 }
+		FROM = { country_event = 688 }
+	}
+}
+
+country_event = {
+	id = 688
+
+	is_triggered_only = yes
+
+	title = "The end of the Chinese Civil War"
+	desc = "We are finally victorious!"
+	picture = "China_CW"
+
+	option = {
+		name = "Now on to the other traitors!"
+		ai_chance = { factor = 99 }
+		inherit = FROM
+		dissent = -5
+		national_unity = 5
+		leave_alliance = CXB
+		threat = { who = CXB value = 75 }
+		leave_alliance = CYN
+		threat = { who = CYN value = 75 }
+		leave_alliance = CSX
+		threat = { who = CSX value = 75 }
+		leave_alliance = CGX
+		threat = { who = CGX value = 75 }
+		leave_alliance = SIK
+		threat = { who = SIK value = 75 }
+		leave_alliance = TIB
+		threat = { who = TIB value = 75 }
+		set_country_flag = end_of_the_chinese_civil_war
+	}
+	option = {
+		name = "At last!"
+		ai_chance = { factor = 1 }
+		inherit = FROM
+		dissent = -5
+		national_unity = 5
+		set_country_flag = end_of_the_chinese_civil_war
+	}
+}
+
+country_event = {
+	id = 689
+
+	is_triggered_only = yes
+
+	title = "The end of the Chinese Civil War"
+	desc = "We are finally victorious! The Nationalist forces under Chiang Kai-Shek retreated to Taiwan."
+	picture = "China_CW"
+
+	option = {
+		name = "Now on to the other enemies of the people!"
+		ai_chance = { factor = 99 }
+		inherit = FROM
+		JAP_5737 = { secede_province = CHI }	# Taiwan
+		JAP_5824 = { secede_province = CHI }
+		dissent = -5
+		national_unity = 5
+		leave_alliance = CXB
+		threat = { who = CXB value = 75 }
+		leave_alliance = CYN
+		threat = { who = CYN value = 75 }
+		leave_alliance = CSX
+		threat = { who = CSX value = 75 }
+		leave_alliance = CGX
+		threat = { who = CGX value = 75 }
+		leave_alliance = SIK
+		threat = { who = SIK value = 75 }
+		leave_alliance = TIB
+		threat = { who = TIB value = 75 }
+		set_country_flag = end_of_the_chinese_civil_war
+	}
+	option = {
+		name = "At last!"
+		ai_chance = { factor = 1 }
+		inherit = FROM
+		dissent = -5
+		national_unity = 5
+		set_country_flag = end_of_the_chinese_civil_war
+	}
+}
+
+#################
+# Baltic States #
+#################
+
+country_event = {
+	id = 690
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = EST
+		FROM = { tag = SOV }
+		FROM = { is_core = 906 }
+	}
+
+	title = "EVTNAME500"
+	desc = "EVTDESC500"
+	picture = "Bitter_Peace"
+
+	option = {
+		name = "EVTOPTB500"
+		FROM = { country_event = 1513 }
+	}
+}
+
+country_event = {
+	id = 691
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = LAT
+		FROM = { tag = SOV }
+		FROM = { is_core = 1178 }
+	}
+
+	title = "EVTNAME500"
+	desc = "EVTDESC500"
+	picture = "Bitter_Peace"
+
+	option = {
+		name = "EVTOPTB500"
+		FROM = { country_event = 1516 }
+	}
+}
+
+country_event = {
+	id = 692
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = LIT
+		FROM = { tag = SOV }
+		FROM = { is_core = 1442 }
+	}
+
+	title = "EVTNAME500"
+	desc = "EVTDESC500"
+	picture = "Bitter_Peace"
+
+	option = {
+		name = "EVTOPTB500"
+		FROM = { country_event = 1519 }
+	}
+}
+
+#########################################
+# Vichy France surrenders to the Allies #
+#########################################
+# France needs to be in the Allies as well.
+
+country_event = {
+	id = 700
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = VIC
+		FROM = { faction = allies }
+		FRA = { faction = allies }
+	}
+
+	title = "There's no point in fighting anymore"
+	desc = "It seems we have underestimated the Allies. Now we are defeated, and will rejoin Free France again."
+	picture = "Bitter_Peace"
+
+	option = {
+		name = "Rejoined at last!"
+		any_country = {
+			limit = { faction = allies }
+			country_event = 503
+		}
+		FRA = { split_troops = 1.0 }
+		VIC = {
+			any_owned = {
+				limit = {
+					continent = europe		# European provinces currently controlled by Vichy should go to Germany.
+					exists = GER			# But only if Germany exists and is in the Axis of course.
+					GER = { faction = axis }
+					controlled_by = VIC
+				}
+				change_controller = GER
+			}
+		}
+		FRA = { country_event = 701 }
+	}
+}
+
+country_event = {
+	id = 701
+
+	is_triggered_only = yes
+
+	title = "Vichy France is defeated"
+	desc = "We will annex them into our nation."
+	picture = "Bitter_Peace"
+
+	option = {
+		name = "Excellent!"
+		inherit = FROM
+		war_exhaustion = -1
+	}
+}
+
+
+##########################################
+# Vichy France surrenders to anyone else #
+##########################################
+
+country_event = {
+	id = 702
+
+	major = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = VIC
+	}
+
+	title = "All is lost..."
+	desc = "We have been defeated by a foreign nation! Such a shame!"
+	picture = "Bitter_Peace"
+
+	option = {
+		name = "We are defeated..."
+		FROM = { country_event = 701 }
+	}
+}
+
+##############################################################
+# Special surrenders for the Majors: they can't be puppeted! #
+##############################################################
+
+country_event = {
+	id = 710
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = FRA
+	}
+	
+	title = "This is the end..."
+	desc = "This is the end of the colonial era for France. We simply couldn't hold onto our vast empire..."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "This is the end..."
+		any_country = {		
+			any_owned = {
+				limit = {
+					not = { continent = europe }
+				}
+				remove_core = FRA
+			}
+		}
+		any_owned = {
+			limit = {
+				not = { continent = europe }
+			}
+			remove_core = FRA
+		}
+		any_owned = { limit = { is_core = IDC controlled_by = THIS } secede_province = IDC }	# Indochine
+		any_owned = { limit = { is_core = MAD controlled_by = THIS } secede_province = MAD }	# Madagascar
+		any_owned = { limit = { is_core = MOR controlled_by = THIS } secede_province = MOR }	# Morocco
+		any_owned = { limit = { is_core = SYR controlled_by = THIS } secede_province = SYR }	# Syria
+		any_owned = { limit = { is_core = LEB controlled_by = THIS } secede_province = LEB }	# Lebanon
+		any_owned = { limit = { is_core = ALG controlled_by = THIS } secede_province = ALG }	# Algeria
+		any_owned = { limit = { is_core = TUN controlled_by = THIS } secede_province = TUN }	# Tunisia
+		FROM = { inherit = THIS }
+		FROM = { country_event = 503 }
+	}
+}
+
+country_event = {
+	id = 711
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ITA
+	}
+	
+	title = "This is the end..."
+	desc = "This is the end of the colonial era for Italy. We simply couldn't hold onto our vast empire..."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "This is the end..."
+		any_country = {		
+			any_owned = {
+				limit = {
+					region = yugoslavia_region
+				}
+				remove_core = ITA
+			}
+		}
+		any_owned = {
+			limit = {
+				region = yugoslavia_region
+			}
+			remove_core = ITA
+		}
+		any_owned = { limit = { is_core = LBY controlled_by = THIS } secede_province = LBY }	# Libya
+		5138 = { remove_core = ITA }
+		10731 = { remove_core = ITA }
+		5359 = { remove_core = ITA }
+		
+		FROM = { inherit = THIS }
+		FROM = { country_event = 503 }
+	}
+}
+
+country_event = {
+	id = 712
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GER
+	}
+	
+	title = "This is the end..."
+	desc = "This is the end of the Great German Reich. We simply couldn't hold onto our empire..."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "This is the end..."
+		any_country = {		
+			any_owned = {
+				limit = {
+					is_core = GER
+				}
+				add_core = DDR
+				add_core = DFR
+			}
+		}
+		any_owned = {
+			limit = {
+				is_core = GER
+			}
+			add_core = DDR
+			add_core = DFR
+		}
+		
+		FROM = { inherit = THIS }
+		FROM = { country_event = 503 }
+	}
+}
+
+country_event = {
+	id = 713
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	
+	title = "This is the end..."
+	desc = "Under the stress of the foreign invasion, the Soviet Union has collapsed. The states making up the Union are now trying to continue on their own."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "This is the end..."
+		any_country = {
+			any_owned = {
+				remove_core = SOV		# Remove all Soviet cores forever.
+			}
+		}
+		any_owned = {
+			remove_core = SOV
+		}
+		
+		BLR = { limit = { exists = BLR } split_troops = 0.10 }
+		any_owned = { limit = { is_core = UKR controlled_by = THIS } secede_province = UKR }
+		UKR = { limit = { exists = UKR } split_troops = 0.15 }
+		any_owned = { limit = { is_core = GEO controlled_by = THIS } secede_province = GEO }
+		GEO = { limit = { exists = GEO } split_troops = 0.05 }
+		any_owned = { limit = { is_core = ARM controlled_by = THIS } secede_province = ARM }
+		ARM = { limit = { exists = ARM } split_troops = 0.05 }
+		any_owned = { limit = { is_core = AZB controlled_by = THIS } secede_province = AZB }
+		AZB = { limit = { exists = AZB } split_troops = 0.05 }
+		any_owned = { limit = { is_core = BLR controlled_by = THIS } secede_province = BLR }
+		any_owned = { limit = { is_core = KAZ controlled_by = THIS } secede_province = KAZ }
+		KAZ = { limit = { exists = KAZ } split_troops = 0.05 }
+		any_owned = { limit = { is_core = KYG controlled_by = THIS } secede_province = KYG }
+		KYG = { limit = { exists = KYG } split_troops = 0.05 }
+		any_owned = { limit = { is_core = TRK controlled_by = THIS } secede_province = TRK }
+		TRK = { limit = { exists = TRK } split_troops = 0.05 }
+		any_owned = { limit = { is_core = TAJ controlled_by = THIS } secede_province = TAJ }
+		TAJ = { limit = { exists = TAJ } split_troops = 0.05 }
+		any_owned = { limit = { is_core = UZB controlled_by = THIS } secede_province = UZB }
+		UZB = { limit = { exists = UZB } split_troops = 0.05 }
+		any_owned = { limit = { is_core = RUS controlled_by = THIS } secede_province = RUS }
+		RUS = { limit = { exists = RUS } split_troops = 1.0 }
+
+		FROM = { inherit = THIS }
+		FROM = { country_event = 503 }
+	}
+}
+
+country_event = {
+	id = 714
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = USA
+	}
+	
+	title = "This is the end..."
+	desc = "Under the stress of the foreign invasion, the United States of America has collapsed, and from the ashes, new (and not so new) nations rise to continue the American Dream."
+	picture = "bitter_peace"
+	
+	option = {
+		name = "This is the end..."
+		# First, remove the unwanted cores!
+		any_owned = {
+			limit = {
+				or = {
+					not = { continent = north_america }
+					province_id = 7728
+					province_id = 7670
+					province_id = 5021
+					region = confederate_region
+					region = california_republic_region
+					region = sioux_region
+				}
+			}
+			remove_core = USA
+		}
+		
+		# First release the three capitals to give the techs!
+		4899 = { add_core = CSA }
+		release = CSA
+		3533 = { add_core = CAL }
+		release = CAL
+		8783 = { add_core = SIU }
+		release = SIU
+		
+		alaska_region = { add_core = CAN remove_core = USA }
+		confederate_region = { add_core = CSA remove_core = USA }
+		california_republic_region = { add_core = CAL remove_core = USA }
+		sioux_region = { add_core = SIU remove_core = USA }
+		
+		any_owned = { limit = { exists = CAN controlled_by = THIS is_core = CAN } secede_province = CAN }
+		any_owned = { limit = { controlled_by = THIS is_core = CSA } secede_province = CSA }
+		any_owned = { limit = { controlled_by = THIS is_core = CAL } secede_province = CAL }
+		any_owned = { limit = { controlled_by = THIS is_core = SIU } secede_province = SIU }
+
+		FROM = { inherit = THIS }
+		FROM = { country_event = 503 }
+	}
+}

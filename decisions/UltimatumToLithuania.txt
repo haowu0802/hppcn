@@ -1,0 +1,70 @@
+diplomatic_decisions = {
+
+	# Polish ultimatum to Lithuania
+	ultimatum_to_lithuania = {
+		major = yes
+		potential = {
+			tag = POL
+			exists = LIT
+			LIT = { neighbour = POL }
+			controls = 1579 # Wilno
+			not = { has_country_flag = "pol_lit_crisis_resolved" }
+			not = { has_country_flag = "pol_lit_crisis" }
+			not = { war_with = SOV }
+			not = { war_with = GER }
+			LIT = { is_in_any_faction = no }
+			year = 1938
+			not = { year = 1940 } # To keep Poland from firing this event after the war
+		}
+		
+		allow = {
+			date = 1938.3.17
+			not = { dissent = 1 }
+			1579 = { units_in_province = 1 }
+		}
+		
+		effect = {
+			set_country_flag = "pol_lit_crisis"
+			LIT = { set_country_flag = "pol_lit_crisis" }
+			relation = { who = SOV value = -25 }
+			relation = { who = FRA value = -10 }
+			relation = { who = ENG value = -10 }
+			relation = { who = LIT value = -50 }
+			threat = { who = all value = 5 }		
+			threat = { who = SOV value = 10 }			
+			threat = { who = LIT value = 15 }
+			LIT = { country_event = 2355 }
+			dissent = 2
+			neutrality = -2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+# Lithuania - sue for peace
+	lithuania_sue_for_peace = {
+		major = yes
+		potential = {
+			tag = LIT
+			has_country_flag = "pol_lit_crisis"
+			not = { has_country_flag = "pol_lit_surrender" }
+			war_with = POL
+		}
+		allow = {
+			or = {
+				lost_national = 50
+				1442 = { controlled_by = POL }
+				1308 = { controlled_by = POL }
+			}
+		}
+		effect = {
+			set_country_flag = "pol_lit_surrender"
+			dissent = 10
+			POL = { country_event = 2362 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

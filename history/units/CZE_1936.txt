@@ -1,0 +1,298 @@
+theatre = {
+	name = "Èeskoslovenská Vojenská Hednotka"
+	location = 2562
+	regiment = { type = hq_brigade name = "Praha HQ" historical_model = 0 }
+#	armygroup = {
+#		name = "Èeskoslovenská Vrchní Velitelství"
+#		location = 2562
+#		regiment = { type = hq_brigade name = "Èeskoslovenská Vrchní Velitelství HQ" historical_model = 0 }
+		division= {
+			name = "1. Rychlé Divize"
+			location = 2564
+			is_reserve = yes
+			regiment = { type = light_armor_brigade name = "1 Tanková Brigáda" experience = 5 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "1. Jízdní Brigáda" experience = 5 historical_model = 4 }
+			regiment = { type = cavalry_brigade name = "5. Jízdní Brigáda" experience = 5 historical_model = 4 }
+			regiment = { type = truck_towed_support_brigade name = "84. Dìlostøelecké Brigáda" experience = 5 historical_model = 3 }
+		}
+		division= {
+			name = "4. Divize"
+			location = 2501
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "54. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+			regiment = { type = infantry_brigade name = "71. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+			regiment = { type = infantry_brigade name = "80. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+			regiment = { type = horse_towed_support_brigade name = "4. Dìlostøelecké Brigáda" experience = 5 historical_model = 4 }
+		}
+		division= {
+			name = "12. Divize"
+			location = 2631
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "70. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+			regiment = { type = infantry_brigade name = "86. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+			regiment = { type = infantry_brigade name = "95. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+		}
+		division= {
+			name = "16. Divize"
+			location = 2764
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "1. Horské Pìší Brigády" experience = 5 historical_model = 4 }
+			regiment = { type = bergsjaeger_brigade name = "2. Horské Pìší Brigády" experience = 5 historical_model = 4 }
+			regiment = { type = infantry_brigade name = "41. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+			regiment = { type = horse_towed_support_brigade name = "16. Dìlostøelecké Brigády" experience = 5 historical_model = 3 }
+		}
+		division= {
+			name = "22. Divize"
+			location = 2698
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "66. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+			regiment = { type = infantry_brigade name = "87. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+			regiment = { type = bergsjaeger_brigade name = "7. Horské Pìší Brigády" experience = 5 historical_model = 4 }
+			regiment = { type = horse_towed_support_brigade name = "204. Dìlostøelecké Brigády" experience = 5 historical_model = 2 }
+		}
+		corps = {
+			name = "VIII Druh Vojenského Utvaru"
+			location = 2762
+			regiment = { type = hq_brigade name = "VIII Druh Vojenského Utvaru HQ" historical_model = 0 }
+			division= {
+				name = "9. Divize"
+				location = 2695
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "62. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "73. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "89. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+				regiment = { type = horse_towed_support_brigade name = "9. Dìlostøelecké Brigády" experience = 5 historical_model = 4 }
+			}
+			division= {
+				name = "15. Divize"
+				location = 3028
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "9. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "17. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "33. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+				regiment = { type = horse_towed_support_brigade name = "15. Dìlostøelecké Brigády" experience = 5 historical_model = 3 }
+			}
+			division= {
+				name = "21. Divize"
+				location = 2564
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "5. Horské Pìší Brigády" experience = 5 historical_model = 4 }
+				regiment = { type = bergsjaeger_brigade name = "6. Horské Pìší Brigády" experience = 5 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "91. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+				regiment = { type = horse_towed_support_brigade name = "203. Dìlostøelecké Brigády" experience = 5 historical_model = 2 }
+			}
+		}
+		army = {
+			name = "I Armáda"
+			location = 2563
+			regiment = { type = hq_brigade name = "I Armáda HQ" historical_model = 0 }
+			division= {
+				name = "18. Divize"
+				location = 2499
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "55. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "78. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "88. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+				regiment = { type = horse_towed_support_brigade name = "18. Dìlostøelecké Brigády" experience = 5 historical_model = 4 }
+			}
+			corps = { 
+				name = "I Druh Vojenského Utvaru"
+				location = 2561
+				regiment = { type = hq_brigade name = "I Druh Vojenského Utvaru HQ" historical_model = 0 }
+				division= {
+					name = "2. Divize"
+					location = 2561
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "68. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "85. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "96. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = horse_towed_support_brigade name = "2. Dìlostøelecké Brigády" experience = 5 historical_model = 3 }
+				}
+				division= {
+					name = "5. Divize"
+					location = 2758
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "51. Pìchotní Brigáda" experience = 5 historical_model =4 }
+					regiment = { type = infantry_brigade name = "61. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "79. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = horse_towed_support_brigade name = "5. Dìlostøelecké Brigády" experience = 5 historical_model = 2 }
+				}	
+			}
+			corps = { 
+				name = "II Druh Vojenského Utvaru"
+				location = 2500
+				regiment = { type = hq_brigade name = "II Druh Vojenského Utvaru HQ" historical_model = 0 }
+				division= {
+					name = "3. Divize"
+					location = 2439
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "52. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "92. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "94. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = horse_towed_support_brigade name = "3. Dìlostøelecké Brigády" experience = 5 historical_model = 4 }
+				}
+				division= {
+					name = "17. Divize"
+					location = 2381
+					is_reserve = yes
+					regiment = { type = bergsjaeger_brigade name = "3. Horské Pìší Brigády" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "16. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "37. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = horse_towed_support_brigade name = "17. Dìlostøelecké Brigády" experience = 5 historical_model = 3 }
+				}				
+			}			
+		}
+		army = {
+			name = "II Armáda"
+			location = 2565
+			regiment = { type = hq_brigade name = "II Armáda HQ" historical_model = 0 }
+			division= {
+				name = "8. Divize"
+				location = 2502
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "58. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "65. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+				regiment = { type = infantry_brigade name = "90. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+				regiment = { type = horse_towed_support_brigade name = "8. Dìlostøelecké Brigády" experience = 5 historical_model = 2 }
+			}
+			corps = { 
+				name = "IV Druh Vojenského Utvaru"
+				location = 2565
+				regiment = { type = hq_brigade name = "IV Druh Vojenského Utvaru HQ" historical_model = 0 }
+				division= {
+					name = "7. Divize"
+					location = 2565
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "56. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "63. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "84. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = horse_towed_support_brigade name = "7. Dìlostøelecké Brigády" experience = 5 historical_model = 4 }
+				}				
+			}			
+		}	
+		army = {
+			name = "III Armáda"
+			location = 2828
+			regiment = { type = hq_brigade name = "III Armáda HQ" historical_model = 0 }
+			corps = { 
+				name = "VII Druh Vojenského Utvaru"
+				location = 2960
+				regiment = { type = hq_brigade name = "III Druh Vojenského Utvaru HQ" historical_model = 0 }			
+				division= {
+					name = "3. Rychlé Divize"
+					location = 3029
+					is_reserve = yes
+					regiment = { type = cavalry_brigade name = "3. Jízdní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = cavalry_brigade name = "11. Jízdní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = truck_towed_support_brigade name = "87. Dìlostøelecké Brigády" experience = 5 historical_model = 3 }				
+				}
+				division= {
+					name = "10. Divize"
+					location = 3030
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "57. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "75. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "76. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = horse_towed_support_brigade name = "7. Dìlostøelecké Brigády" experience = 5 historical_model = 3 }
+				}
+				division= {
+					name = "11. Divize"
+					location = 2962
+					is_reserve = yes
+					regiment = { type = bergsjaeger_brigade name = "8. Horské Pìší Brigády" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "64. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "82. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = horse_towed_support_brigade name = "11. Dìlostøelecké Brigády" experience = 5 historical_model = 2 }
+				}					
+			}			
+		}
+		army = {
+			name = "IV Armáda"
+			location = 3029
+			regiment = { type = hq_brigade name = "IV Armáda HQ" historical_model = 0 }
+			division= {
+				name = "2. Rychlé Divize"
+				location = 2630
+				is_reserve = yes
+				regiment = { type = motorized_brigade name = "2. Motorizovaná Brigáda" experience = 5 historical_model = 0 }
+				regiment = { type = cavalry_brigade name = "2. Jízdní Brigáda" experience = 5 historical_model = 4 }
+				regiment = { type = cavalry_brigade name = "6. Jízdní Brigáda" experience = 5 historical_model = 4 }
+				regiment = { type = truck_towed_support_brigade name = "86. Dìlostøelecké Brigády" experience = 5 historical_model = 4 }			
+			}
+			corps = { 
+				name = "III Druh Vojenského Utvaru"
+				location = 2694
+				regiment = { type = hq_brigade name = "III Druh Vojenského Utvaru HQ" historical_model = 0 }
+				division= {
+					name = "14. Motorizované Divizi"
+					location = 2694
+					is_reserve = yes
+					regiment = { type = motorized_brigade name = "3. Motorizovaná Brigáda" experience = 5 historical_model = 0 }
+					regiment = { type = motorized_brigade name = "27. Motorizovaná Brigáda" experience = 5 historical_model = 0 }
+					regiment = { type = motorized_brigade name = "43. Motorizovaná Brigáda" experience = 5 historical_model = 0 }
+					regiment = { type = truck_towed_support_brigade name = "14. Dìlostøelecké Brigáda" experience = 5 historical_model = 1 }			
+				}							
+				division= {
+					name = "19. Divize"
+					location = 2760
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "60. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "74. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "81. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = horse_towed_support_brigade name = "19. Dìlostøelecké Brigády" experience = 5 historical_model = 4 }
+				}				
+			}	
+			corps = { 
+				name = "V Druh Vojenského Utvaru"
+				location = 2761
+				regiment = { type = hq_brigade name = "V Druh Vojenského Utvaru HQ" historical_model = 0 }
+				division= {
+					name = "6. Divize"
+					location = 2825
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "53. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "77. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "93. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = horse_towed_support_brigade name = "6. Dìlostøelecké Brigády" experience = 5 historical_model = 3 }
+				}
+				division= {
+					name = "20. Divize"
+					location = 2758
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "59. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "67. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = infantry_brigade name = "83. Pìchotní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = horse_towed_support_brigade name = "20. Dìlostøelecké Brigády" experience = 5 historical_model = 2 }
+				}
+			}			
+			corps = { 
+				name = "VI Druh Vojenského Utvaru"
+				location = 2823
+				regiment = { type = hq_brigade name = "VI Druh Vojenského Utvaru HQ" historical_model = 0 }
+				division= {
+					name = "4. Rychlé Divize"
+					location = 2823
+					is_reserve = yes
+					regiment = { type = motorized_brigade name = "4. Motorizovaná Brigáda" experience = 5 historical_model = 0 }
+					regiment = { type = cavalry_brigade name = "4. Jízdní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = cavalry_brigade name = "8. Jízdní Brigáda" experience = 5 historical_model = 4 }
+					regiment = { type = truck_towed_support_brigade name = "85. Dìlostøelecké Brigády" experience = 5 historical_model = 3 }					
+				}			
+			}			
+		}
+#	}
+	air = {
+		name = "1. Stihaci Divize"
+		base = 2562
+		location = 2562
+		wing = { type = interceptor name = "1. Stihaci Letecky Pluk" experience = 5 historical_model = 0 }
+	}
+	air = {
+		name = "1. Bombardéru Divize"
+		base = 2562
+		location = 2562
+		wing = { type = cas name = "1. Bombardovaci Letecky Pluk" experience = 5 historical_model = 0 }
+		wing = { type = cas name = "2. Bombardovaci Letecky Pluk" experience = 5 historical_model = 1 }		
+		wing = { type = tactical_bomber name = "1. Pluk Taktického Letectva" experience = 5 historical_model = 0 }
+	}
+}

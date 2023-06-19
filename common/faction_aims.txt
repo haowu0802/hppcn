@@ -1,0 +1,2134 @@
+##############
+# AXIS
+##############
+axis = {
+# Historical Conditions
+
+	tripartite_pact = {		#Tripartite Pact
+		trigger = {
+			GER = { faction = axis }
+			ITA = { faction = axis }
+			JAP = { faction = axis }
+			HUN = { faction = axis }
+			ROM = { faction = axis }
+			BUL = { faction = axis }
+		}
+		primary = yes
+	}
+	fall_weiss = {			#Fall Weiss, The invasion and occupation of Poland
+		trigger = {
+			1626 = { 	#Danzig
+				controller = {
+					faction = axis
+				}
+			}
+			1928 = {	#Warszawa
+				controller = {
+					faction = axis
+				}
+			}
+			2445 = {	#Krakow
+				controller = {
+					faction = axis
+				}
+			}
+			2040 = {	#Lódz
+				controller = {
+					faction = axis
+				}
+			}
+		}
+		primary = yes
+	}
+	fall_gelb = {			#Fall Gelb, The invasion and occupation of the Low Countries
+		trigger = {
+			1910 = { 	#Amsterdam
+				controller = {
+					faction = axis
+				}
+			}
+			2198 = {	#Eindhoven
+				controller = {
+					faction = axis
+				}
+			}
+			2311 = {	#Bruxelles
+				controller = {
+					faction = axis
+				}
+			}
+			2197 = {	#Antwerpen
+				controller = {
+					faction = axis
+				}
+			}
+			2137 = {	#Brugge
+				controller = {
+					faction = axis
+				}
+			}
+			2429 = {	#Luxembourg
+				controller = {
+					faction = axis
+				}
+			}
+		}
+		primary = yes
+	}
+	fall_rot = {			#Fall Rot, The invasion and occupation of France
+		trigger = {
+			2613 = { 	#Paris
+				controller = {
+					faction = axis
+				}
+			}
+			3479 = {	#Bordeaux
+				controller = {
+					faction = axis
+				}
+			}
+			2541 = {	#Brest
+				controller = {
+					faction = axis
+				}
+			}
+			2194 = {	#Calais
+				controller = {
+					faction = axis
+				}
+			}
+			2422 = {	#Cherbourg
+				controller = {
+					faction = axis
+				}
+			}
+			3273 = {	#La Rochelle
+				controller = {
+					faction = axis
+				}
+			}
+			2737 = {	#Lorient
+				controller = {
+					faction = axis
+				}
+			}
+			2802 = {	#St. Nazaire
+				controller = {
+					faction = axis
+				}
+			}
+			2195 = {	#Dunkerque
+				controller = {
+					faction = axis
+				}
+			}
+			2483 = {	#Le Havre
+				controller = {
+					faction = axis
+				}
+			}
+			2423 = {	#Dieppe
+				controller = {
+					faction = axis
+				}
+			}
+		}
+		primary = yes
+	}
+	weseruebung = {			#Weseruebung, The invasion and occupation of Norway and Denmark
+		trigger = {
+			1212 = { 	#Aalborg
+				controller = {
+					faction = axis
+				}
+			}
+			1482 = {	#Copenhagen
+				controller = {
+					faction = axis
+				}
+			}
+			812 = {	#Oslo
+				controller = {
+					faction = axis
+				}
+			}
+			935 = {	#Stavanger
+				controller = {
+					faction = axis
+				}
+			}
+			808 = {	#Bergen
+				controller = {
+					faction = axis
+				}
+			}
+			291 = {	#Trondheim
+				controller = {
+					faction = axis
+				}
+			}
+			65 = {	#Narvik
+				controller = {
+					faction = axis
+				}
+			}
+		}
+		primary = yes
+	}
+	operation_marita = {			#Operation Marita, The invasion and occupation of Greece
+		trigger = {
+			5076 = { 	#Athina
+				controller = {
+					faction = axis
+				}
+			}
+			4720 = {	#Salonica
+				controller = {
+					faction = axis
+				}
+			}
+			5379 = {	#Chania Crete
+				controller = {
+					faction = axis
+				}
+			}
+			5380 = {	#Rethymno Crete
+				controller = {
+					faction = axis
+				}
+			}
+			5398 = {	#Tympaki Crete
+				controller = {
+					faction = axis
+				}
+			}
+			5381 = {	#Irakleio Crete
+				controller = {
+					faction = axis
+				}
+			}
+		}
+		primary = yes
+	}
+	operation_sealion_hpp = {		# Axis invasion of the British Islands
+		trigger = {
+			1964 = { #London
+				controller = {
+					faction = axis
+				}
+			}
+			1728 = {
+				controller = {
+					faction = axis
+				}
+			}
+			1521 = {
+				controller = {
+					faction = axis
+				}
+			}
+			1128 = {
+				controller = {
+					faction = axis
+				}
+			}
+			1563 = { #Dublin
+				controller = {
+					faction = axis
+				}
+			}
+			1843 = {
+				controller = {
+					faction = axis
+				}
+			}
+		}
+		primary = yes
+	}
+	operation_barbarossa_hpp = {	# Axis invasion of the Soviet Union
+		trigger = {
+			or = {
+				not = { exists = SOV }
+				SOV = { has_country_flag = su_signs_peace }		# The Soviets sued for peace.
+			}
+			1409 = { #Moskva
+				controller = {
+					faction = axis
+				}
+			}
+			782 = { #Leningrad
+				controller = {
+					faction = axis
+				}
+			}
+			2857 = { #Stalingrad
+				controller = {
+					faction = axis
+				}
+			}
+			2401 = { #Kharkov
+				controller = {
+					faction = axis
+				}
+			}
+			3581 = { #Sevastopol
+				controller = {
+					faction = axis
+				}
+			}
+		}
+		primary = yes
+	}
+	desert_war = {		#Afrikafeldzug
+		trigger = {
+			5484 = { #Benghazi
+				controller = {
+					faction = axis
+				}
+			}
+			5511 = { #Tobruk
+				controller = {
+					faction = axis
+				}
+			}
+			5609 = { #El'Alamein
+				controller = {
+					faction = axis
+				}
+			}
+			5586 = { #El Iskandariya
+				controller = {
+					faction = axis
+				}
+			}
+			5611 = { #Al Qahira
+				controller = {
+					faction = axis
+				}
+			}
+			5563 = { #Bur Sa'id
+				controller = {
+					faction = axis
+				}
+			}
+			5589 = { #Romani
+				controller = {
+					faction = axis
+				}
+			}
+			5563 = { #Port Said
+				controller = {
+					faction = axis
+				}
+			}
+			5631 = { #Bir Gifgafa
+				controller = {
+					faction = axis
+				}
+			}
+			5644 = { #El Suweis
+				controller = {
+					faction = axis
+				}
+			}
+			5656 = { #Ras Gharib
+				controller = {
+					faction = axis
+				}
+			}
+			5657 = { #Sudr
+				controller = {
+					faction = axis
+				}
+			}
+			5688 = { #Hurghada
+				controller = {
+					faction = axis
+				}
+			}
+		}
+		primary = yes
+	}	
+	sino_japanese_war = { 	# Second Sino-Japanese War
+		trigger = {
+			5315 = { #Tokio
+				controller = {
+					faction = axis
+				}
+			}
+			4979 = { #Beiping
+				controller = {
+					faction = axis
+				}
+			}
+			4885 = { #Kalgan
+				controller = {
+					faction = axis
+				}
+			}
+			5174 = { #Taiyuan
+				controller = {
+					faction = axis
+				}
+			}
+			5143 = { #Baoding
+				controller = {
+					faction = axis
+				}
+			}
+			7447 = { #Luoyang
+				controller = {
+					faction = axis
+				}
+			}
+			7468 = { #Baofeng
+				controller = {
+					faction = axis
+				}
+			}
+			5275 = { #Jinan
+				controller = {
+					faction = axis
+				}
+			}
+			5336 = { #Jining
+				controller = {
+					faction = axis
+				}
+			}
+			7508 = { #Wuhan
+				controller = {
+					faction = axis
+				}
+			}
+			5515 = { #Hefei
+				controller = {
+					faction = axis
+				}
+			}
+			5516 = { #Chao Hu
+				controller = {
+					faction = axis
+				}
+			}
+			5494 = { #Nanjing
+				controller = {
+					faction = axis
+				}
+			}
+			5542 = { #Shanghai
+				controller = {
+					faction = axis
+				}
+			}
+
+			5681 = { #Nanchang
+				controller = {
+					faction = axis
+				}
+			}
+			5965 = { #Haikou
+				controller = {
+					faction = axis
+				}
+			}
+		}
+		primary = yes
+	}
+	co_prosperity_sphere = { #Creation of the Co-Prosperity Sphere
+		trigger = {
+			JAP = { faction = axis }
+			year = 1942
+			5315 = { #Tokio
+				controller = {
+					faction = axis
+				}
+			}
+			5916 = { #Hanoi
+				controller = {
+					faction = axis
+				}
+			}
+			6236 = { #Saigon
+				controller = {
+					faction = axis
+				}
+			}
+			6070 = { #Rangoon
+				controller = {
+					faction = axis
+				}
+			}
+			7610 = { #Mandalay
+				controller = {
+					faction = axis
+				}
+			}
+			7583 = { #Imphal
+				controller = {
+					faction = axis
+				}
+			}
+			5913 = { #Chittagong
+				controller = {
+					faction = axis
+				}
+			}
+			6341 = { #Kota Bharu
+				controller = {
+					faction = axis
+				}
+			}
+			5868 = { #Hongkong
+				controller = {
+					faction = axis
+				}
+			}
+			6378 = { #Kuala Lumpur
+				controller = {
+					faction = axis
+				}
+			}
+			6394 = { #Singapore
+				controller = {
+					faction = axis
+				}
+			}
+			7735 = { #Medan
+				controller = {
+					faction = axis
+				}
+			}
+			6459 = { #Palembang
+				controller = {
+					faction = axis
+				}
+			}
+			6500 = { #Oosthaven
+				controller = {
+					faction = axis
+				}
+			}
+			6507 = { #Batavia
+				controller = {
+					faction = axis
+				}
+			}
+			7793 = { #Soerabaja
+				controller = {
+					faction = axis
+				}
+			}
+			7764 = { #Hollandia
+				controller = {
+					faction = axis
+				}
+			}
+			6023 = { #Cagayan
+				controller = {
+					faction = axis
+				}
+			}
+			6124 = { #Clark Field
+				controller = {
+					faction = axis
+				}
+			}
+			6142 = { #Manila
+				controller = {
+					faction = axis
+				}
+			}
+			6180 = { #Batangas
+				controller = {
+					faction = axis
+				}
+			}
+			6196 = { #Calapan
+				controller = {
+					faction = axis
+				}
+			}
+			6261 = { #Tacloban
+				controller = {
+					faction = axis
+				}
+			}
+			6326 = { #Davao
+				controller = {
+					faction = axis
+				}
+			}
+			7780 = { #Ambon
+				controller = {
+					faction = axis
+				}
+			}
+			6434 = { #Balikpapan
+				controller = {
+					faction = axis
+				}
+			}
+			6508 = { #Makassar
+				controller = {
+					faction = axis
+				}
+			}
+		}
+		primary = yes
+	}
+	securing_resources = { #Securing the Prosperity Sphere
+		trigger = {
+			JAP = { faction = axis }
+			year = 1942
+			5315 = { #Tokio
+				controller = {
+					faction = axis
+				}
+			}
+			10664 = { #Wake Island
+				controller = {
+					faction = axis
+				}
+			}
+			10658 = { #Kwajalein
+				controller = {
+					faction = axis
+				}
+			}
+			10663 = { #Eniwetok
+				controller = {
+					faction = axis
+				}
+			}
+			10638 = { #Tarawa
+				controller = {
+					faction = axis
+				}
+			}
+			6545 = { #Guadalcanal
+				controller = {
+					faction = axis
+				}
+			}
+			6467 = { #Rabaul
+				controller = {
+					faction = axis
+				}
+			}
+			6509 = { #Lae
+				controller = {
+					faction = axis
+				}
+			}
+			6566 = { #Port Moresby
+				controller = {
+					faction = axis
+				}
+			}
+			10645 = { #Yap
+				controller = {
+					faction = axis
+				}
+			}
+			10651 = { #Truk
+				controller = {
+					faction = axis
+				}
+			}
+			6291 = { #North Palau
+				controller = {
+					faction = axis
+				}
+			}
+			5681 = { #Nanchang
+				controller = {
+					faction = axis
+				}
+			}
+			10642 = { #Iwo Jima
+				controller = {
+					faction = axis
+				}
+			}
+			5759 = { #Naha Okinawa
+				controller = {
+					faction = axis
+				}
+			}
+			5748 = { #Nago Okinawa
+				controller = {
+					faction = axis
+				}
+			}
+			6119 = { #Guam
+				controller = {
+					faction = axis
+				}
+			}
+		}
+	}
+	
+# Complex Conditions
+	
+	soviets_neutralized = {
+		trigger = {
+			or = {
+				not = { exists = SOV }
+				SOV = { government_in_exile = yes }
+				SOV = { has_country_flag = su_signs_peace }		# The Soviets sued for peace.
+			}
+			1409 = { controller = { faction = axis } }	# Moscow
+			782 = { controller = { faction = axis } }	# Leningrad
+			2857 = { controller = { faction = axis } }	# Stalingrad
+			2401 = { controller = { faction = axis } }	# Kharkov
+			3581 = { controller = { faction = axis } }	# Sevastopol
+		}
+	}
+	uk_neutralized = {
+		trigger = {
+			or = {
+				not = { exists = ENG }
+				ENG = { government_in_exile = yes }
+			}
+			1964 = { controller = { faction = axis } }	# London
+			1728 = { controller = { faction = axis } }
+			1521 = { controller = { faction = axis } }
+			1128 = { controller = { faction = axis } }
+			1563 = { controller = { faction = axis } }	# Dublin
+			1843 = { controller = { faction = axis } }
+		}
+	}
+	control_the_mediterranean = {
+		trigger = {
+			# The two ends are absolutely necessary!
+			5191 = { controller = { faction = axis } }	# Gibraltar
+			5563 = { controller = { faction = axis } }	# Port Said (Suez blocker)
+			# The major European ports
+			4549 = { controller = { faction = axis } }	# Roma
+			5233 = { controller = { faction = axis } }	# Palermo
+			5076 = { controller = { faction = axis } }	# Athenes
+			#4229 = { controller = { faction = axis } }	# Marseille
+			# All the important cities in Northern Africa (even Vichy?)
+			5511 = { controller = { faction = axis } }	# Tobruk
+			5484 = { controller = { faction = axis } }	# Benghazi
+			5445 = { controller = { faction = axis } }	# Tarabulus
+			5586 = { controller = { faction = axis } }	# El Iskandarîya
+			5535 = { controller = { faction = axis } }	# Tel-Aviv
+			#5134 = { controller = { faction = axis } }	# Tunis?
+			#5160 = { controller = { faction = axis } }	# Alger?
+			#5428 = { controller = { faction = axis } }	# Casablanca?!
+		}
+	}
+	win_the_sino_japanese_war = {
+		trigger = {
+			or = {
+				and = {
+					JAP = { faction = axis }
+					or = {
+						not = { exists = CHI }
+						CHI = {
+							is_subject = yes
+							faction = axis
+						}
+					}
+				}
+				and = {
+					CHI = { faction = axis }
+					or = {
+						not = { exists = JAP }
+						JAP = {
+							is_subject = yes
+							faction = axis
+						}
+						JAP = { has_country_flag = offer_peace_to_china }
+					}
+					
+				}
+			}
+		}
+	}
+	usa_is_neutral = {
+		trigger = {
+			USA = {
+				or = {
+					is_in_any_faction = no
+					faction = axis
+				}
+			}
+		}
+	}
+	
+# Simple Conditions
+	
+	ger_in_axis = { trigger = { GER = { faction = axis } } }
+	ita_in_axis = { trigger = { ITA = { faction = axis } } }
+	jap_in_axis = { trigger = { JAP = { faction = axis } } }
+	axis_controls_berlin 			= { trigger = { 1861 = { controller = { faction = axis } } } }
+	axis_controls_london 			= { trigger = { 1964 = { controller = { faction = axis } } } }
+	axis_controls_paris 			= { trigger = { 2613 = { controller = { faction = axis } } } }
+	axis_controls_moscow 			= { trigger = { 1409 = { controller = { faction = axis } } } }
+	axis_controls_roma 				= { trigger = { 4549 = { controller = { faction = axis } } } }
+	axis_controls_gibraltar 		= { trigger = { 5191 = { controller = { faction = axis } } } }
+	axis_controls_madrid 			= { trigger = { 4540 = { controller = { faction = axis } } } }
+	axis_controls_stalingrad 		= { trigger = { 2857 = { controller = { faction = axis } } } }
+	axis_controls_washington 		= { trigger = { 4530 = { controller = { faction = axis } } } }
+	axis_controls_san_francisco 	= { trigger = { 3658 = { controller = { faction = axis } } } }
+	axis_controls_panama 			= { trigger = { 7717 = { controller = { faction = axis } } } }
+	axis_controls_rio_de_janeiro 	= { trigger = { 10193 = { controller = { faction = axis } } } }
+	axis_controls_maracaibo 		= { trigger = { 9740 = { controller = { faction = axis } } } }
+	axis_controls_port_said 		= { trigger = { 5563 = { controller = { faction = axis } } } }
+	axis_controls_cape_town 		= { trigger = { 8054 = { controller = { faction = axis } } } }
+	axis_controls_tunis 			= { trigger = { 5134 = { controller = { faction = axis } } } }
+	axis_controls_tobruk 			= { trigger = { 5511 = { controller = { faction = axis } } } }
+	axis_controls_alexandria 		= { trigger = { 5586 = { controller = { faction = axis } } } }
+	axis_controls_nanjing 			= { trigger = { 5494 = { controller = { faction = axis } } } }
+	axis_controls_tokyo 			= { trigger = { 5315 = { controller = { faction = axis } } } }
+	axis_controls_beiping 			= { trigger = { 4979 = { controller = { faction = axis } } } }
+	axis_controls_delhi 			= { trigger = { 9468 = { controller = { faction = axis } } } }
+	axis_controls_singapore 		= { trigger = { 6394 = { controller = { faction = axis } } } }
+	axis_controls_canberra 			= { trigger = { 8007 = { controller = { faction = axis } } } }
+	axis_controls_guam 				= { trigger = { 6119 = { controller = { faction = axis } } } }
+}
+##############
+# ALLIES
+##############
+allies = {
+# Historical Conditions
+	
+	benelux_neutrality = {
+		trigger = {
+			HOL = {
+				or = {
+					is_in_any_faction = no
+					faction = allies
+				}
+			}
+			BEL = {
+				or = {
+					is_in_any_faction = no
+					faction = allies
+				}
+			}
+			LUX = {
+				or = {
+					is_in_any_faction = no
+					faction = allies
+				}
+			}
+		}
+		primary = yes
+	}
+	operation_husky = { #Operation Husky - The Invasion of Sicily
+		trigger = {
+			year = 1943
+			
+			#ENG
+			1964 = {
+				controller = {
+					faction = allies
+				}
+			}
+			1728 = {
+				controller = {
+					faction = allies
+				}
+			}
+			1521 = {
+				controller = {
+					faction = allies
+				}
+			}
+			1128 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5233 = { #Palermo
+				controller = {
+					faction = allies
+				}
+			}
+			5297 = { #Agrigento
+				controller = {
+					faction = allies
+				}
+			}
+			5236 = { #Messina
+				controller = {
+					faction = allies
+				}
+			}
+		}
+		primary = yes
+	}		
+	operation_avalanche = { #Operation Avalance - Invasion of Italy
+		trigger = {
+			year = 1943
+			
+			#ENG
+			1964 = {
+				controller = {
+					faction = allies
+				}
+			}
+			1728 = {
+				controller = {
+					faction = allies
+				}
+			}
+			1521 = {
+				controller = {
+					faction = allies
+				}
+			}
+			1128 = {
+				controller = {
+					faction = allies
+				}
+			}
+			4815 = { #Salerno
+				controller = {
+					faction = allies
+				}
+			}
+			4869 = { #Taranto
+				controller = {
+					faction = allies
+				}
+			}
+			4765 = { #Napoli
+				controller = {
+					faction = allies
+				}
+			}
+		}
+		primary = yes
+	}	
+	italy_fall = { #The Fall of Italy
+		trigger = {
+			year = 1943
+			
+			#ENG
+			1964 = {
+				controller = {
+					faction = allies
+				}
+			}
+			1728 = {
+				controller = {
+					faction = allies
+				}
+			}
+			1521 = {
+				controller = {
+					faction = allies
+				}
+			}
+			1128 = {
+				controller = {
+					faction = allies
+				}
+			}
+			4815 = { #Salerno
+				controller = {
+					faction = allies
+				}
+			}
+			4869 = { #Taranto
+				controller = {
+					faction = allies
+				}
+			}
+			4765 = { #Napoli
+				controller = {
+					faction = allies
+				}
+			}
+			5233 = { #Palermo
+				controller = {
+					faction = allies
+				}
+			}
+			5297 = { #Agrigento
+				controller = {
+					faction = allies
+				}
+			}
+			5236 = { #Messina
+				controller = {
+					faction = allies
+				}
+			}
+			4662 = { #Foggia
+				controller = {
+					faction = allies
+				}
+			}
+			4425 = { #Pescara
+				controller = {
+					faction = allies
+				}
+			}
+			4549 = { #Roma
+				controller = {
+					faction = allies
+				}
+			}
+			4301 = { #Perugia
+				controller = {
+					faction = allies
+				}
+			}
+			4108 = { #Firenze
+				controller = {
+					faction = allies
+				}
+			}
+		}
+		primary = yes
+	}		
+	operation_market_garden = { #Operation Market Garden
+		trigger = {
+			year = 1944
+			
+			#ENG
+			1964 = {
+				controller = {
+					faction = allies
+				}
+			}
+			1728 = {
+				controller = {
+					faction = allies
+				}
+			}
+			1521 = {
+				controller = {
+					faction = allies
+				}
+			}
+			1128 = {
+				controller = {
+					faction = allies
+				}
+			}
+			2198 = { #Einhoven
+				controller = {
+					faction = allies
+				}
+			}
+			2083 = { #Nijmegen
+				controller = {
+					faction = allies
+				}
+			}
+			2025 = { #Arnhem
+				controller = {
+					faction = allies
+				}
+			}
+		}
+	}	
+	operation_overlord_hpp = {
+		trigger = {
+			year = 1944
+			
+			#ENG
+			1964 = {
+				controller = {
+					faction = allies
+				}
+			}
+			1728 = {
+				controller = {
+					faction = allies
+				}
+			}
+			1521 = {
+				controller = {
+					faction = allies
+				}
+			}
+			1128 = {
+				controller = {
+					faction = allies
+				}
+			}
+			#FRA
+			2613 = {
+				controller = {
+					faction = allies
+				}
+			}
+			2195 = {
+				controller = {
+					faction = allies
+				}
+			}
+			2541 = {
+				controller = {
+					faction = allies
+				}
+			}
+			4229 = {
+				controller = {
+					faction = allies
+				}
+			}
+		}
+		primary = yes
+	}
+	operation_torch_hpp = {
+		trigger = {
+			year = 1942
+			5428 = { #Casablanca
+				controller = {
+					faction = allies
+				}
+			}
+			5292 = { #Oran
+				controller = {
+					faction = allies
+				}
+			}
+			5134 = { #Tunis
+				controller = {
+					faction = allies
+				}
+			}
+		}
+		primary = yes
+	}	
+	operation_zeppelin_hpp = {
+		trigger = {
+			5380 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5381 = {
+				controller = {
+					faction = allies
+				}
+			}
+			5398 = {
+				controller = {
+					faction = allies
+				}
+			}
+			4058 = {
+				controller = {
+					faction = allies
+				}
+			}
+			3919 = {
+				controller = {
+					faction = allies
+				}
+			}
+			3780 = {
+				controller = {
+					faction = allies
+				}
+			}
+			3713 = {
+				controller = {
+					faction = allies
+				}
+			}
+			3580 = {
+				controller = {
+					faction = allies
+				}
+			}
+			3446 = {
+				controller = {
+					faction = allies
+				}
+			}
+			#ROM
+			3917 = {
+				controller = {
+					faction = allies
+				}
+			}
+			3778 = {
+				controller = {
+					faction = allies
+				}
+			}
+			3370 = {
+				controller = {
+					faction = allies
+				}
+			}
+			
+			#GRE 
+			5076 = {
+				controller = { 
+					faction = allies 
+				}
+			}
+			4720 = {
+				controller = { 
+					faction = allies 
+				}
+			}
+			5136 = {
+				controller = { 
+					faction = allies 
+				}
+			}
+		}
+	}
+	operation_ironside = {
+		trigger = {
+			year = 1942
+			3479 = { #Bordeaux
+				controller = {
+					faction = allies
+				}
+			}
+			3412 = { #Pauillac
+				controller = {
+					faction = allies
+				}
+			}
+			3545 = { #La Teste
+				controller = {
+					faction = allies
+				}
+			}
+			3343 = { #Royan
+				controller = {
+					faction = allies
+				}
+			}
+			3273 = { #La Rochelle
+				controller = {
+					faction = allies
+				}
+			}
+		}
+	}
+	allied_usa_hpp = {
+		trigger = {
+			USA = { faction = allies }
+		}
+		primary = yes
+	}
+	liberate_the_low_countries = {
+		trigger = {
+			1910 = { 	#Amsterdam
+				controller = {
+					faction = allies
+				}
+			}
+			2198 = {	#Eindhoven
+				controller = {
+					faction = allies
+				}
+			}
+			2311 = {	#Bruxelles
+				controller = {
+					faction = allies
+				}
+			}
+			2197 = {	#Antwerpen
+				controller = {
+					faction = allies
+				}
+			}
+			2137 = {	#Brugge
+				controller = {
+					faction = allies
+				}
+			}
+			2429 = {	#Luxembourg
+				controller = {
+					faction = allies
+				}
+			}
+		}
+		primary = yes
+	}
+	liberate_paris = { #Liberation of Paris
+		trigger = {
+			year = 1942
+			2613 = {
+				controller = {
+					faction = allies
+				}
+			}
+		}
+		primary = yes
+	}
+
+	enter_the_reich = { #Enter the Reich
+		trigger = {
+			year = 1944
+			2371 = { #Bitburg
+				controller = {
+					faction = allies
+				}
+			}
+			2257 = { #Köln
+				controller = {
+					faction = allies
+				}
+			}
+			2883 = { #Stuttgart
+				controller = {
+					faction = allies
+				}
+			}	
+			2952 = { #München
+				controller = {
+					faction = allies
+				}
+			}
+			2689 = { #Nürnberg
+				controller = {
+					faction = allies
+				}
+			}
+			2432 = { #Frankfurt am Main
+				controller = {
+					faction = allies
+				}
+			}
+			1916 = { #Hannover
+				controller = {
+					faction = allies
+				}
+			}	
+			1737 = { #Hamburg
+				controller = {
+					faction = allies
+				}
+			}
+			2319 = { #Erfurt
+				controller = {
+					faction = allies
+				}
+			}
+			2207 = { #Leipzig
+				controller = {
+					faction = allies
+				}
+			}	
+		}
+		primary = yes
+	}
+
+	pacific_war_macathur = { #The Pacific War of MacArthur
+		trigger = {
+			USA = { faction = allies }
+			year = 1945
+			6545 = { #Guadalcanal
+				controller = {
+					faction = allies
+				}
+			}			
+			7764 = { #Hollandia
+				controller = {
+					faction = allies
+				}
+			}
+			6439 = { #Wewak
+				controller = {
+					faction = allies
+				}
+			}
+			6023 = { #Cagayan
+				controller = {
+					faction = allies
+				}
+			}
+			6124 = { #Clark Field
+				controller = {
+					faction = allies
+				}
+			}
+			6142 = { #Manila
+				controller = {
+					faction = allies
+				}
+			}
+			6180 = { #Batangas
+				controller = {
+					faction = allies
+				}
+			}
+			6196 = { #Calapan
+				controller = {
+					faction = allies
+				}
+			}
+			6261 = { #Tacloban
+				controller = {
+					faction = allies
+				}
+			}
+			6326 = { #Davao
+				controller = {
+					faction = allies
+				}
+			}
+		}
+		primary = yes
+	}
+
+	pacific_war_nimitz = { #The Pacific War of Nimitz
+		trigger = {
+			USA = { faction = allies }
+			year = 1945
+			10658 = { #Kwajalein
+				controller = {
+					faction = allies
+				}
+			}
+			10663 = { #Eniwetok
+				controller = {
+					faction = allies
+				}
+			}
+			10638 = { #Tarawa
+				controller = {
+					faction = allies
+				}
+			}
+			6509 = { #Lae
+				controller = {
+					faction = allies
+				}
+			}
+			6566 = { #Port Moresby
+				controller = {
+					faction = allies
+				}
+			}
+			10645 = { #Yap
+				controller = {
+					faction = allies
+				}
+			}
+			6291 = { #North Palau
+				controller = {
+					faction = allies
+				}
+			}
+			10642 = { #Iwo Jima
+				controller = {
+					faction = allies
+				}
+			}
+			5759 = { #Naha Okinawa
+				controller = {
+					faction = allies
+				}
+			}
+			5748 = { #Nago Okinawa
+				controller = {
+					faction = allies
+				}
+			}
+			6119 = { #Guam
+				controller = {
+					faction = allies
+				}
+			}
+			5966 = { #Saipan
+				controller = {
+					faction = allies
+				}
+			}
+		}
+	}
+	
+# Complex Conditions
+	
+	status_quo = {
+		trigger = {
+			1964 = { controller = { faction = allies } }	# London
+			2613 = { controller = { faction = allies } }	# Paris
+			5191 = { controller = { faction = allies } }	# Gibraltar
+			5563 = { controller = { faction = allies } }	# Port Said
+			5586 = { controller = { faction = allies } }	# El Iskandarîya
+			9468 = { controller = { faction = allies } }	# Delhi
+			6394 = { controller = { faction = allies } }	# Singapore
+			5535 = { controller = { faction = allies } }	# Tel-Aviv
+			4229 = { controller = { faction = allies } }	# Marseille
+			5134 = { controller = { faction = allies } }	# Tunis
+			5160 = { controller = { faction = allies } }	# Alger
+			5428 = { controller = { faction = allies } }	# Casablanca
+			5868 = { controller = { faction = allies } }	# Hong Kong
+			5916 = { controller = { faction = allies } }	# Hanoi
+			# There may be more later.
+		}
+	}
+	germany_neutralized = {
+		trigger = {
+			not = { exists = GER }
+		}
+	}
+	japan_neutralized = {
+		trigger = {
+			or = {
+				not = { exists = JAP }
+				JAP = { government_in_exile = yes }						# They shouldn't be able to go into exile, actually...
+				JAP = { is_subject = yes faction = allies }
+				JAP = { has_country_flag = offer_peace_to_china }		# Japan has to be neutralized, it doesn't matter who defeated them!
+				JAP = { has_country_flag = offer_peace_to_ussr }
+			}
+		}
+	}
+	allied_usa = {
+		trigger = {
+			USA = { faction = allies } 
+		}
+	}
+	no_commintern_threat = {
+		trigger = {
+			or = {
+				not = { exists = SOV }
+				SOV = { is_subject = yes }
+				and = {
+					not = { SOV = { total_ic = 100 } }					# They exist, but they have neither the industry
+					not = { SOV = { total_amount_of_brigades = 300 } }	# nor the army
+					not = { SOV = { num_in_faction = 3 } }				# nor the frinds to pose any threat.
+					not = { CHC = { total_ic = 100 } }					# They exist, but they have neither the industry
+					not = { CHC = { total_amount_of_brigades = 300 } }	# nor the army
+					or = {
+						CHC = { is_in_any_faction = no }
+						not = { CHC = {num_in_faction = 3 } }				# nor the frinds to pose any threat.
+					}
+				}
+			}
+		}
+	}
+	
+# Simple Conditions
+	
+	eng_in_allies = { trigger = { ENG = { faction = allies } } }
+	fra_in_allies = { trigger = { FRA = { faction = allies } } }
+	usa_in_allies = { trigger = { USA = { faction = allies } } }
+	allies_controls_berlin 				= { trigger = { 1861 = { controller = { faction = allies } } } }
+	allies_controls_london 				= { trigger = { 1964 = { controller = { faction = allies } } } }
+	allies_controls_paris 				= { trigger = { 2613 = { controller = { faction = allies } } } }
+	allies_controls_moscow 				= { trigger = { 1409 = { controller = { faction = allies } } } }
+	allies_controls_roma 				= { trigger = { 4549 = { controller = { faction = allies } } } }
+	allies_controls_gibraltar 			= { trigger = { 5191 = { controller = { faction = allies } } } }
+	allies_controls_madrid 				= { trigger = { 4540 = { controller = { faction = allies } } } }
+	allies_controls_stalingrad 			= { trigger = { 2857 = { controller = { faction = allies } } } }
+	allies_controls_washington 			= { trigger = { 4530 = { controller = { faction = allies } } } }
+	allies_controls_san_francisco 		= { trigger = { 3658 = { controller = { faction = allies } } } }
+	allies_controls_panama 				= { trigger = { 7717 = { controller = { faction = allies } } } }
+	allies_controls_rio_de_janeiro 		= { trigger = { 10193 = { controller = { faction = allies } } } }
+	allies_controls_maracaibo 			= { trigger = { 9740 = { controller = { faction = allies } } } }
+	allies_controls_port_said 			= { trigger = { 5563 = { controller = { faction = allies } } } }
+	allies_controls_cape_town 			= { trigger = { 8054 = { controller = { faction = allies } } } }
+	allies_controls_tunis 				= { trigger = { 5134 = { controller = { faction = allies } } } }
+	allies_controls_tobruk 				= { trigger = { 5511 = { controller = { faction = allies } } } }
+	allies_controls_alexandria 			= { trigger = { 5586 = { controller = { faction = allies } } } }
+	allies_controls_nanjing 			= { trigger = { 5494 = { controller = { faction = allies } } } }
+	allies_controls_tokyo 				= { trigger = { 5315 = { controller = { faction = allies } } } }
+	allies_controls_beiping 			= { trigger = { 4979 = { controller = { faction = allies } } } }
+	allies_controls_delhi 				= { trigger = { 9468 = { controller = { faction = allies } } } }
+	allies_controls_singapore 			= { trigger = { 6394 = { controller = { faction = allies } } } }
+	allies_controls_canberra 			= { trigger = { 8007 = { controller = { faction = allies } } } }
+	allies_controls_guam 				= { trigger = { 6119 = { controller = { faction = allies } } } }
+}
+##############
+# COMINTERN
+##############
+comintern = {
+# Historical Conditions
+
+	expanding_west = {			#Expanding to the West
+		trigger = {
+			year = 1939
+			1579 = { 	#Wilno
+				controller = {
+					faction = comintern
+				}
+			}
+			1691 = {	#Grodno
+				controller = {
+					faction = comintern
+				}
+			}
+			1986 = {	#Brest-Litovsk
+				controller = {
+					faction = comintern
+				}
+			}
+			2509 = {	#Lwow
+				controller = {
+					faction = comintern
+				}
+			}
+		}
+		primary = yes
+	}
+	fortifying_south = {			#Fortifying the South
+		trigger = {
+			year = 1939
+			3446 = { 	#Sarata
+				controller = {
+					faction = comintern
+				}
+			}
+			3377 = {	#Cetatea Alba
+				controller = {
+					faction = comintern
+				}
+			}
+			3445 = {	#Comrat
+				controller = {
+					faction = comintern
+				}
+			}
+			3376 = {	#Causeni
+				controller = {
+					faction = comintern
+				}
+			}
+			3308 = { 	#Rozdil'na
+				controller = {
+					faction = comintern
+				}
+			}
+			3375 = { 	#Vaslui
+				controller = {
+					faction = comintern
+				}
+			}
+			3307 = { 	#Tiraspol
+				controller = {
+					faction = comintern
+				}
+			}
+			3241 = { 	#Krasni Okny
+				controller = {
+					faction = comintern
+				}
+			}
+			3173 = { 	#Orhei
+				controller = {
+					faction = comintern
+				}
+			}
+			3106 = { 	#Rezina
+				controller = {
+					faction = comintern
+				}
+			}
+			3038 = { 	#Soroca
+				controller = {
+					faction = comintern
+				}
+			}
+			2969 = { 	#Edinet
+				controller = {
+					faction = comintern
+				}
+			}
+			3037 = { 	#Dorohoi
+				controller = {
+					faction = comintern
+				}
+			}
+			2902 = { 	#Chernivtsi
+				controller = {
+					faction = comintern
+				}
+			}
+			2968 = { 	#Berehomet
+				controller = {
+					faction = comintern
+				}
+			}
+		}
+		primary = yes
+	}
+	gain_baltics = {			#Gain the Baltics
+		trigger = {
+			year = 1939
+			1138 = { 	#Riga
+				controller = {
+					faction = comintern
+				}
+			}
+			1308 = {	#Siauliai
+				controller = {
+					faction = comintern
+				}
+			}
+			906 = {		#Tallinn
+				controller = {
+					faction = comintern
+				}
+			}
+		}
+		primary = yes
+	}
+	winter_war_hpp = {			#Finnish Winter War
+		trigger = {
+			year = 1940
+			698 = { 	#Viipuri
+				controller = {
+					faction = comintern
+				}
+			}
+			1308 = {	#Koivisto
+				controller = {
+					faction = comintern
+				}
+			}
+			658 = {		#Käkisalmi
+				controller = {
+					faction = comintern
+				}
+			}
+			581 = {		#Hijtola
+				controller = {
+					faction = comintern
+				}
+			}
+			542 = {		#Sortavala
+				controller = {
+					faction = comintern
+				}
+			}
+			472 = {		#Suojärvi
+				controller = {
+					faction = comintern
+				}
+			}
+			164 = {		#Alakurtii
+				controller = {
+					faction = comintern
+				}
+			}
+			197 = {		#Oulanka
+				controller = {
+					faction = comintern
+				}
+			}
+			543 = {		#Pitkäranta
+				controller = {
+					faction = comintern
+				}
+			}
+			404 = {		#Naistenjärvi
+				controller = {
+					faction = comintern
+				}
+			}
+		}
+		primary = yes
+	}
+	turning_the_tide = {			#Turning the Tide
+		trigger = {
+			year = 1943
+			1409 = { 	#Moskow
+				controller = {
+					faction = comintern
+				}
+			}
+			782 = {	#Leningrad
+				controller = {
+					faction = comintern
+				}
+			}
+			2857 = {	#Stalingrad
+				controller = {
+					faction = comintern
+				}
+			}
+			989 = {	#Pskow
+				controller = {
+					faction = comintern
+				}
+			}
+			906 = { 	#Talinn
+				controller = {
+					faction = comintern
+				}
+			}
+			988 = { 	#Tartu
+				controller = {
+					faction = comintern
+				}
+			}
+			1138 = { 	#Riga
+				controller = {
+					faction = comintern
+				}
+			}
+			1442 = { 	#Kaunas
+				controller = {
+					faction = comintern
+				}
+			}
+			1494 = { 	#Smolensk
+				controller = {
+					faction = comintern
+				}
+			}
+			1694 = { 	#Minsk
+				controller = {
+					faction = comintern
+				}
+			}
+			2068 = { 	#Saratov
+				controller = {
+					faction = comintern
+				}
+			}
+			1819 = { 	#Brjansk
+				controller = {
+					faction = comintern
+				}
+			}
+			1941 = { 	#Orel
+				controller = {
+					faction = comintern
+				}
+			}
+			2113 = { 	#Kursk
+				controller = {
+					faction = comintern
+				}
+			}
+			2338 = { 	#Kyiv
+				controller = {
+					faction = comintern
+				}
+			}
+			2401 = { 	#Kharkov
+				controller = {
+					faction = comintern
+				}
+			}
+			2117 = { 	#Voronezh
+				controller = {
+					faction = comintern
+				}
+			}
+			2913 = { 	#Rostov
+				controller = {
+					faction = comintern
+				}
+			}
+			2843 = { 	#Dnipropetrovsk
+				controller = {
+					faction = comintern
+				}
+			}
+			3382 = { 	#Majkop
+				controller = {
+					faction = comintern
+				}
+			}
+			4059 = { 	#Batumi
+				controller = {
+					faction = comintern
+				}
+			}
+			3855 = { 	#Groznyj
+				controller = {
+					faction = comintern
+				}
+			}
+			7150 = { 	#Tblisi
+				controller = {
+					faction = comintern
+				}
+			}
+			7307 = { 	#Baki
+				controller = {
+					faction = comintern
+				}
+			}
+			3581 = { 	#Sevastopol
+				controller = {
+					faction = comintern
+				}
+			}
+			3309 = { 	#Odessa
+				controller = {
+					faction = comintern
+				}
+			}
+		}
+		primary = yes
+	}
+	liberation_romania = {			#Liberation of Romania
+		trigger = {
+			year = 1944
+			3441 = { 	#Clukj
+				controller = {
+					faction = comintern
+				}
+			}
+			3778 = {	#Ploiesti
+				controller = {
+					faction = comintern
+				}
+			}
+			3919 = {	#Constanta
+				controller = {
+					faction = comintern
+				}
+			}
+			3917 = {	#Bucuresti
+				controller = {
+					faction = comintern
+				}
+			}
+		}
+		primary = yes
+	}
+	liberation_bulgaria = {			#Liberation of Bulgaria
+		trigger = {
+			year = 1944
+			4123 = { 	#Varna
+				controller = {
+					faction = comintern
+				}
+			}
+			4435 = {	#Plovdiv
+				controller = {
+					faction = comintern
+				}
+			}
+			4371 = {	#Sofiya
+				controller = {
+					faction = comintern
+				}
+			}
+		}
+		primary = yes
+	}
+	liberation_yugoslavia = {			#Liberation of Yugoslavia
+		trigger = {
+			year = 1944
+			4555 = { 	#Skopje
+				controller = {
+					faction = comintern
+				}
+			}
+			3912 = {	#Beograd
+				controller = {
+					faction = comintern
+				}
+			}
+			4174 = {	#Sarajevo
+				controller = {
+					faction = comintern
+				}
+			}
+			3699 = {	#Zagreb
+				controller = {
+					faction = comintern
+				}
+			}
+		}
+		primary = yes
+	}	
+	liberation_hungary = {			#Liberation of Hungary
+		trigger = {
+			year = 1944
+			3164 = { 	#Budapest
+				controller = {
+					faction = comintern
+				}
+			}
+			3300 = {	#Debrecen
+				controller = {
+					faction = comintern
+				}
+			}
+			3569 = {	#Pecs
+				controller = {
+					faction = comintern
+				}
+			}
+		}
+		primary = yes
+	}
+	road_to_berlin = {			#Road to Berlin
+		trigger = {
+			year = 1944
+			3026 = { 	#Wien
+				controller = {
+					faction = comintern
+				}
+			}
+			3227 = {	#Graz
+				controller = {
+					faction = comintern
+				}
+			}
+			1742 = {	#Stettin
+				controller = {
+					faction = comintern
+				}
+			}
+			1740 = {	#Rostock
+				controller = {
+					faction = comintern
+				}
+			}
+			2322 = {	#Dresden
+				controller = {
+					faction = comintern
+				}
+			}
+			1527 = {	#Königsberg
+				controller = {
+					faction = comintern
+				}
+			}
+			2319 = {	#Erfurt
+				controller = {
+					faction = comintern
+				}
+			}
+			1974 = {	#Magdeburg
+				controller = {
+					faction = comintern
+				}
+			}
+			1861 = {	#Berlin
+				controller = {
+					faction = comintern
+				}
+			}
+		}
+		primary = yes
+	}
+	august_storm = {			#Operation August Storm
+		trigger = {
+			year = 1945
+			7139 = { 	#Harbin
+				controller = {
+					faction = comintern
+				}
+			}
+		}
+		primary = yes
+	}
+
+# Complex Conditions
+
+	germany_neutralized = {
+		trigger = {
+			not = { exists = GER }
+		}
+	}
+	european_satelite_states_established = {
+		trigger = {
+			POL = { vassal_of = SOV }
+			HUN = { vassal_of = SOV }
+			ROM = { vassal_of = SOV }
+			BUL = { vassal_of = SOV }
+			# Plus the Baltic States
+			or = {
+				EST = { vassal_of = SOV }
+				906 = { controller = { faction = comintern } }
+			}
+			or = {
+				LAT = { vassal_of = SOV }
+				1138 = { controller = { faction = comintern } }
+			}
+			or = {
+				LIT = { vassal_of = SOV }
+				1442 = { controller = { faction = comintern } }
+			}
+		}
+	}
+	asia_stabilized = {
+		trigger = {
+			or = {
+				CHC = {
+					faction = comintern
+					total_ic = 75
+					total_amount_of_brigades = 300
+				}
+				CHI = {						# Although, this shouldn't really be a goal...
+					faction = comintern
+					total_ic = 75
+					total_amount_of_brigades = 300
+				}
+			}
+			or = {
+				not = { exists = JAP }
+				JAP = { government_in_exile = yes }						# They shouldn't be able to go into exile, actually...
+				JAP = { is_subject = yes faction = comintern }
+				JAP = { has_country_flag = offer_peace_to_china }		# Japan has to be neutralized, it doesn't matter who defeated them!
+				JAP = { has_country_flag = offer_peace_to_ussr }
+			}
+			
+		}
+	}
+	workers_unite = {
+		trigger = {
+			SOV = { faction = comintern }
+			SOV = { num_in_faction = 10 }
+		}
+	}
+	no_allied_threat = {
+		trigger = {
+			or = {
+				not = { exists = ENG }
+				ENG = { is_in_any_faction = no }
+				not = { ENG = { faction_progress = 5 } }
+			}
+			or = {
+				not = { exists = FRA }
+				FRA = { is_in_any_faction = no }
+				not = { FRA = { faction_progress = 5 } }
+			}
+			or = {
+				not = { exists = USA }
+				USA = { is_in_any_faction = no }
+				not = { USA = { faction_progress = 5 } }
+			}
+		}
+	}
+
+# Simple Conditions
+
+	sov_in_comintern = { trigger = { SOV = { faction = comintern } } }
+	chc_in_comintern = { trigger = { CHC = { faction = comintern } } }
+	prk_in_comintern = { trigger = { PRK = { faction = comintern } } }
+	comintern_controls_berlin 			= { trigger = { 1861 = { controller = { faction = comintern } } } }
+	comintern_controls_london 			= { trigger = { 1964 = { controller = { faction = comintern } } } }
+	comintern_controls_paris 			= { trigger = { 2613 = { controller = { faction = comintern } } } }
+	comintern_controls_moscow 			= { trigger = { 1409 = { controller = { faction = comintern } } } }
+	comintern_controls_roma 			= { trigger = { 4549 = { controller = { faction = comintern } } } }
+	comintern_controls_gibraltar 		= { trigger = { 5191 = { controller = { faction = comintern } } } }
+	comintern_controls_madrid 			= { trigger = { 4540 = { controller = { faction = comintern } } } }
+	comintern_controls_stalingrad 		= { trigger = { 2857 = { controller = { faction = comintern } } } }
+	comintern_controls_washington 		= { trigger = { 4530 = { controller = { faction = comintern } } } }
+	comintern_controls_san_francisco 	= { trigger = { 3658 = { controller = { faction = comintern } } } }
+	comintern_controls_panama 			= { trigger = { 7717 = { controller = { faction = comintern } } } }
+	comintern_controls_rio_de_janeiro 	= { trigger = { 10193 = { controller = { faction = comintern } } } }
+	comintern_controls_maracaibo 		= { trigger = { 9740 = { controller = { faction = comintern } } } }
+	comintern_controls_port_said 		= { trigger = { 5563 = { controller = { faction = comintern } } } }
+	comintern_controls_cape_town 		= { trigger = { 8054 = { controller = { faction = comintern } } } }
+	comintern_controls_tunis 			= { trigger = { 5134 = { controller = { faction = comintern } } } }
+	comintern_controls_tobruk 			= { trigger = { 5511 = { controller = { faction = comintern } } } }
+	comintern_controls_alexandria 		= { trigger = { 5586 = { controller = { faction = comintern } } } }
+	comintern_controls_nanjing 			= { trigger = { 5494 = { controller = { faction = comintern } } } }
+	comintern_controls_tokyo 			= { trigger = { 5315 = { controller = { faction = comintern } } } }
+	comintern_controls_beiping 			= { trigger = { 4979 = { controller = { faction = comintern } } } }
+	comintern_controls_delhi 			= { trigger = { 9468 = { controller = { faction = comintern } } } }
+	comintern_controls_singapore 		= { trigger = { 6394 = { controller = { faction = comintern } } } }
+	comintern_controls_canberra 		= { trigger = { 8007 = { controller = { faction = comintern } } } }
+	comintern_controls_guam 			= { trigger = { 6119 = { controller = { faction = comintern } } } }
+}							

@@ -1,0 +1,254 @@
+country_event = {
+	
+	id = 3130
+
+	major = yes
+
+	trigger = {
+		tag = SIK
+		year = 1937
+		not = { has_global_flag = "xinjiang_war_started" }
+	}
+
+	mean_time_to_happen =  {
+		months = 6
+	}
+
+	title = "Uighur Soldiers Rebel in Xinjiang"
+	desc = "In 1937, Uighur soldiers stationed in the western Chinese province Xinjiang rebelled against their Nanjing-appointed governor Shen Shicai, starting a series of incidents between the Soviet Union and the Chinese warlords."
+	picture = "khalkhin_gol"
+
+	option = {
+		name = "We must crush the revolters!"
+		set_global_flag = "xinjiang_war_started"
+		set_global_flag = "xinjiang_war_ongoing"
+		random_owned = { limit = { infra = 2 } create_revolt = 1 }
+		random_owned = { limit = { infra = 2 } create_revolt = 1 }
+		random_owned = { limit = { infra = 2 } create_revolt = 1 }
+		random_owned = { limit = { infra = 2 } create_revolt = 1 }
+		random_owned = { limit = { infra = 2 } create_revolt = 1 }
+		random_owned = { limit = { infra = 2 } create_revolt = 1 }
+		SIK = { set_country_flag = "xinjiang_war_ongoing" }
+		CXB = { country_event = 3131 }
+	}
+}
+
+# Xibei San Ma - Reaction Event
+country_event = {
+	
+	id = 3131
+	
+	trigger = { exists = CXB }
+
+	is_triggered_only = yes
+
+	title = "Uighur Soldiers Rebel in Xinjiang"
+	desc = "Upon hearing the news of the rebellion in Xinjiang, the Chinese muslim warlord state known as Xibei San Ma felt it could use the rebellion as an excuse to take control of Xinjiang for itself."
+	picture = "khalkhin_gol"
+
+	option = {
+		name = "We wouldn't dare..."
+		ai_chance = {
+			factor = 40
+		}
+		relation = { who = JAP value = -25 }
+		clr_global_flag = "xinjiang_war_ongoing"	# It didn't even start!
+	}
+	option = {
+		name = "What a perfect opportunity!"
+		ai_chance = {
+			factor = 60
+			modifier = { factor = 0.00 SOV = { guarantee = SIK } }
+			modifier = { factor = 0.00 SIK = { is_in_any_faction = yes } }
+			modifier = { factor = 0.10 war_with = JAP }
+			modifier = { factor = 0.25 war_with = CHC }
+		}
+		CXB = { set_country_flag = "xinjiang_war_ongoing" }
+		organisation = 5
+		neutrality = -15
+		relation = { who = CHI value = -25 }
+		leave_alliance = SIK
+		end_guarantee = SIK
+		SOV = { country_event = 3132 }
+	}
+}
+
+
+# Xinjiang reaction to XSM declaring war
+country_event = {
+	
+	id = 3132
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "The Ma Clique has attacked Xinjiang!"
+	desc = "The Ma Clique, after hearing reports of the rebellion, quickly began occupying towns in Xinjiang under the pretext of helping to restore order.  Xinjiang's governor, Sheng Shicai, was a member of the CPSU and called for help from his Soviet friends."
+	picture = "khalkhin_gol"
+
+	option = {
+		name = "They need our help!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.1 war_with = JAP }	# We have no time for this!
+		}
+		SOV = { set_country_flag = "xinjiang_war_ongoing" }
+		create_alliance = SIK
+		CXB = {
+			country_event = 3133
+			war = {
+				target = SIK
+				attacker_goal = { casus_belli = conquer }
+			}
+		}
+	}
+	option = {
+		name = "They'll have to fend for themselves"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.0 war_with = CXB }	# We are already at war with them anyway.
+			modifier = { factor = 0.0 war_with = CHI }	# We are already at war with them anyway.
+		}
+		CXB = {
+			war = {
+				target = SIK
+				attacker_goal = { casus_belli = conquer }
+			}
+		}
+	}
+}
+
+# XSM reaction to Soviet alliance
+country_event = {
+
+	id = 3133
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+
+	title = "The Soviets have intervened!"
+	desc = "After Soviet troops entered Xinjiang, the Ma Clique asked the KMT for support.  Historically, China was involved in the war against Japan and did not send aid."
+	picture = "khalkhin_gol"
+
+
+	option = {
+		name = "Ask for KMT help!"
+		create_alliance = CHI # Just in case it somehow got broken
+		CHI = { set_country_flag = "xinjiang_war_ongoing" }
+	}
+}
+
+province_event = {
+	id = 3134
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = "xinjiang_war_ongoing"
+		last_battle_loser_losses = 250
+		or = {
+			and = {
+				tag = SIK
+				or = {
+					FROM = { tag = CXB }
+					FROM = { tag = CHI }
+				}
+			}
+			and = {
+				tag = CXB
+				or = {
+					FROM = { tag = SIK }
+					FROM = { tag = SOV }
+				}
+			}
+		}
+		owner = {
+			or = {
+				tag = CXB	# The conflict can only be stopped in Xinjang or Ma territory
+				tag = SIK
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+
+	title = "End of the Xinjiang War"
+	desc = "We have clearley beaten the enemy. Should we press on, escalating the conflict to a national level, or should we offer to return to Status Quo?"
+	picture = "Bzura"
+	
+	option = {
+		name = "That will be enough."
+		ai_chance = { factor = 50 }
+		set_country_flag = "xinjiang_war"
+		clr_global_flag = "xinjiang_war_ongoing"
+		any_country = {
+			limit = { war_with = THIS or = { tag = SOV tag = CXB tag = CHI tag = SIK } }
+			country_event = 3135
+		}
+	}
+	option = {
+		name = "On to victory!"
+		ai_chance = {
+			factor = 50
+			
+			modifier = { factor = 0.0 tag = SOV exists = GER not = { non_aggression_pact = GER } }
+		
+			modifier = { factor = 0.0 war_with = GER }
+			modifier = { factor = 0.0 war_with = JAP }
+			modifier = { factor = 0.0 war_with = CHI }
+			modifier = { factor = 0.0 war_with = USA }
+			modifier = { factor = 0.0 war_with = ENG }
+			modifier = { factor = 0.0 war_with = FRA }
+		}
+		set_country_flag = "xinjiang_war"
+		clr_global_flag = "xinjiang_war_ongoing"
+		any_country = {
+			limit = { war_with = THIS or = { tag = SOV tag = CXB tag = CHI tag = SIK } }
+			country_event = 3136
+		}
+	}
+}
+
+country_event = {
+	id = 3135
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "End of the Xinjiang War"
+	desc = "After our last defeat we can't continue this war. $FROMCOUNTRY$ offered to return to Status Quo."
+	picture = "chanfukeng"
+	
+	option = {
+		name = "We are beaten..."
+		SIK = { end_war = CXB }
+		CHI = { end_war = SOV }
+		CHI = { end_war = SIK }
+		non_aggression_pact = FROM
+		relation = { who = FROM value = 5 }
+		threat = { who = FROM value = -5 }
+	}
+}
+
+country_event = {
+
+	id = 3136
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "The incident escalates"
+	desc = "After some major clashes, the Xinjiang War escalated into an all-out war between the Soviet Union and the Republic of China."
+	picture = "chanfukeng"
+	
+	option = {
+		name = "Oh well."
+		relation = { who = FROM value = -25 }
+		threat = { who = FROM value = 25 }
+	}
+}

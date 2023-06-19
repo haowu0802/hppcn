@@ -1,0 +1,154 @@
+##############
+# Test Event #
+##############
+
+country_event = {
+	id = 9990
+
+	is_triggered_only = yes
+
+	title = "Test"
+	desc = "This event is triggered by me to test some effect I just made up."
+	picture = "law"
+
+	option = {
+		name = "Test"
+		join_faction = allies
+		TUR = { join_faction = axis }
+		TUR = {
+			war = {
+				target = IRQ
+				attacker_goal = { casus_belli = concede_defeat }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 9991
+
+	is_triggered_only = yes
+
+	title = "Test"
+	desc = "This event is triggered by me to test some effect I just made up."
+	picture = "law"
+
+	option = {
+		name = "Test"
+		IRQ = { country_event = 800 }
+	}
+}
+
+country_event = {
+	id = 9992
+
+	is_triggered_only = yes
+
+	title = "Test done"
+	desc = "This event is triggered by me to test some effect I just made up."
+	picture = "law"
+
+	option = {
+		name = "Good"
+		TUR = { country_event = 9991 }
+	}
+}
+
+country_event = {
+	id = 9993
+
+	is_triggered_only = yes
+
+	title = "Testing event"
+	desc = "This event is triggered by me to test some effect I just made up."
+	picture = "law"
+
+	option = {
+		name = "Test"
+		threat = { who = FROM value = 25 }
+	}
+}
+
+country_event = {
+	id = 9994
+
+	is_triggered_only = yes
+
+	title = "Testing event"
+	desc = "This event is triggered by me to test some effect I just made up."
+	picture = "law"
+
+	option = {
+		capital_scope = { infra = -1 }
+	}
+}
+
+country_event = {
+	id = 9995
+
+	is_triggered_only = yes
+
+	title = "Testing event"
+	desc = "This event is triggered by me to test some effect I just made up."
+	picture = "law"
+
+	option = {
+		capital_scope = { infra = 1 }
+	}
+}
+
+country_event = {
+	id = 9996
+
+	is_triggered_only = yes
+
+	title = "Testing event"
+	desc = "This event is triggered by me to test some effect I just made up."
+	picture = "law"
+
+	option = {
+		name = "Test"
+	}
+}
+
+country_event = {
+	id = 9997
+
+	is_triggered_only = yes
+
+	title = "Test done"
+	desc = "This event is triggered by me to test some effect I just made up."
+	picture = "law"
+
+	option = {
+		name = "Good"
+	}
+}
+
+country_event = {
+	id = 9998
+
+	is_triggered_only = yes
+
+	title = "Testing event"
+	desc = "This event is triggered by me to test some effect I just made up."
+	picture = "law"
+
+	option = {
+		name = "Test"
+	}
+}
+
+country_event = {
+	id = 9999
+
+	is_triggered_only = yes
+
+	title = "Testing event"
+	desc = "This event is triggered by me to test some effect I just made up."
+	picture = "law"
+
+	option = {
+		name = "OK"
+	}
+}

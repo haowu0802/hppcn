@@ -1,0 +1,35 @@
+#################################
+# Reoccupation of the Rhineland #
+#################################
+diplomatic_decisions = {
+
+	reoccupation_of_the_rhineland_hpp = {
+		major = yes
+		potential = {
+			tag = GER
+			not = { has_country_flag = "the_reoccupation_of_the_rhineland" }
+		}
+		allow = {
+			date = 1936.6.1
+			total_amount_of_brigades = 120
+			not = { war_with = FRA }
+			not = { alliance_with = FRA }
+			not = {
+				any_owned_province = {
+					any_neighbor_province = { owned_by = FRA }
+					units_in_province = 1
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "the_reoccupation_of_the_rhineland"
+			organisation = -10
+			dissent = 5
+			threat = { who = FRA value = 5 }
+			ENG = { country_event = 1002 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

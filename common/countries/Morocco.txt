@@ -1,0 +1,516 @@
+color = { 234  102  69 }
+graphical_culture = Generic
+
+
+
+default_templates = {
+	generic_infantry = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	generic_milita = {
+		militia_brigade
+		militia_brigade
+		militia_brigade
+	}
+	generic_armoured = {
+		armor_brigade
+		motorized_brigade
+		motorized_brigade
+	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
+	generic_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
+	}
+}
+
+unit_names = {
+	infantry_brigade = {
+		"1ère Division al-Maghribiyah" "2ème Division al-Maghribiyah" "3ème Division al-Maghribiyah" "4ème Division al-Maghribiyah" "6ème Division al-Maghribiyah" 
+	}
+	cavalry_brigade = {
+		"1ère Division de Cavalerie 'Casablanca'" "2ème Division de Cavalerie Marocain" "3ème Division de Cavalerie Marocain" "4ème Division de Cavalerie Marocain" "5ème Division de Cavalerie Marocain" 
+	}
+	motorized_brigade = {
+		"1ère Div. d'Infanterie avec Camion" "2ème Div. d'Infanterie avec Camion" "3ème Div. d'Infanterie avec Camion" "4ème Div. d'Infanterie avec Camion" "5ème Div. d'Infanterie avec Camion" 
+	}
+	mechanized_brigade = {
+		"1ère Division Mécanisée Marocain" "2ème Division Mécanisée Marocain" "3ème Division Mécanisée Marocain" "4ème Division Mécanisée Marocain" "5ème Division Mécanisée Marocain" 
+	}
+	light_armor_brigade = {
+		"1ère Division Cuirassée 'Fès'" "2ème Division Cuirassée Marocain" "3ème Division Cuirassée Marocain" "4ème Division Cuirassée Marocain" "5ème Division Cuirassée Marocain" "6ème Division Cuirassée Marocain" 
+	}
+	armor_brigade = {
+		"1ère Division Cuirassée 'Rabat'" "2ème Division Cuirassée Marocain" "3ème Division Cuirassée Marocain" "4ème Division Cuirassée Marocain" "5ème Division Cuirassée Marocain" "6ème Division Cuirassée Marocain" 
+	}
+	paratrooper_brigade = {
+		"1ère Division Parachutistes" "2ème Division Parachutistes" "3ème Division Parachutistes" "4ème Division Parachutistes" "5ème Division Parachutistes" 
+	}
+	marine_brigade = {
+		"1ère Division Marine Royale" "2ème Division Marine Royale" "3ème Division Marine Royale" "4ème Division Marine Royale" "5ème Division Marine Royale" 
+	}
+	bergsjaeger_brigade = {
+		"27ème Div. de Montagné 'Berbère'" "30ème Division de Montagné" "31ème Division de Montagné" "64ème Division de Montagné" "66ème Division de Montagné" "65ème Division de Montagné" 
+	}
+	garrison_brigade = {
+		"10ème Gendarmerie Royale" "11ème Gendarmerie Royale" "13ème Gendarmerie Royale" "16ème Gendarmerie Royale" "18ème Gendarmerie Royale" "19ème Gendarmerie Royale" "20ème Gendarmerie Royale" 
+	}
+	hq_brigade = {
+		"1ère Armée Marocain" "2ème Armée Marocain" "3ème Armée Marocain" 
+	}
+	militia_brigade = {
+		"1ère Division de Makhzens Auxiliaires" "2ème Division de Makhzens Auxiliaires" "3ème Division de v" "4ème Division de Makhzens Auxiliaires" "5ème Division de Makhzens Auxiliaires" "6ème Division de Makhzens Auxiliaires" "7ème Division de Makhzens Auxiliaires" 
+	}
+	multi_role = {
+		"Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" 
+	}
+	interceptor = {
+		"Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" 
+	}
+	jet_int = {
+		"Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" 
+	}
+	jet_mr = {
+		"Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" 
+	}
+	strategic_bomber = {
+		"Groupe de Bombardèment Stratégique 1" "Groupe de Bombardèment Stratégique 2" "Groupe de Bombardèment Stratégique 3" "Groupe de Bombardèment Stratégique 6" 
+	}
+	tactical_bomber = {
+		"Groupe de Bombardèment Tactique 1" "Groupe de Bombardèment Tactique 2" "Groupe de Bombardèment Tactique 3" "Groupe de Bombardèment Tactique 6" "Groupe de Bombardèment Tactique 10" 
+	}
+	jet_bomber = {
+		"Groupe de Bombardèment Tactique 1" "Groupe de Bombardèment Tactique 2" "Groupe de Bombardèment Tactique 3" "Groupe de Bombardèment Tactique 6" "Groupe de Bombardèment Tactique 10" 
+	}
+	naval_bomber = {
+		"Groupe de Bombardèment Naval 1" "Groupe de Bombardèment Naval 2" "Groupe de Bombardèment Naval 3" "Groupe de Bombardèment Naval 4" "Groupe de Bombardèment Naval 5" 
+	}
+	cas = {
+		"Groupe de Bombardèment d'Assaut 18" "Groupe de Bombardèment d'Assaut 19" "Groupe de Bombardèment d'Assaut 21" "Groupe de Bombardèment d'Assaut 22" "Groupe de Bombardèment d'Assaut 23" 
+	}
+	transport_plane = {
+		"1ère Groupe de Transport Aérien" "2ème Groupe de Transport Aérien" "3ème Groupe de Transport Aérien" "4ème Groupe de Transport Aérien" "5ème Groupe de Transport Aérien" 
+	}
+	battleship = {
+		"Maroc" "Sahara" 
+	}
+	light_cruiser = {
+		"Maghreb" "Almohade" "Abd al-Mumin" "Meknès" "Muhammad ben Yaqub" 
+	}
+	heavy_cruiser = {
+		"Mérinides" "Salé le Neuf" "Salé le Vieux" "Abu Said" "Rif" 
+	}
+	battlecruiser = {
+		"Almoravides" "Saadiens" 
+	}
+	destroyer = {
+		"Meknassa" "Marrakech" "Tanger" "Tetouan" "Oujda" 
+	}
+	carrier = {
+		"Muhammad an-Nasir" "Dar el-Beida" 
+	}
+	submarine = {
+		"1ère Flottille de Sous-Marins" "2ème Flottille de Sous-Marins" "3ème Flottille de Sous-Marins" "4ème Flottille de Sous-Marins" "5ème Flottille de Sous-Marins" 
+	}
+	transport_ship = {
+		"1ère Flottille de Transport" "2ème Flottille de Transport" "3ème Flottille de Transport" "4ème Flottille de Transport" "5ème Flottille de Transport" 
+	}
+
+}
+
+ministers = {
+	901850 = {
+		name = "Mohammed V"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = MOR_M_Mohammed_V
+		head_of_state = power_hungry_demagogue
+		start_date = 1936.1.1
+	}
+	901851 = {
+		name = "Marcel Peyrouton"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = MOR_M_Marcel_Peyrouton
+		head_of_government = ambitious_union_boss
+		start_date = 1936.1.1
+	}
+	901852 = {
+		name = "Ahmed Belafrej"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = MOR_M_Ahmed_Belafrej
+		foreign_minister = biased_intellectual
+		start_date = 1936.1.1
+	}
+	901853 = {
+		name = "Emile Hugues"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = MOR_M_Emile_Hugues
+		armament_minister = military_entrepreneur
+		start_date = 1936.1.1
+	}
+	901854 = {
+		name = "Francis-Louis Closon"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = MOR_M_Francis-Louis_Closon
+		minister_of_security = back_stabber
+		start_date = 1936.1.1
+	}
+	901855 = {
+		name = "René Cassin"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = MOR_M_Rene_Cassin
+		minister_of_intelligence = dismal_enigma
+		armament_minister = air_to_ground_proponent
+		chief_of_navy = base_control_doctrine
+		start_date = 1936.1.1
+	}
+	901856 = {
+		name = "Theophile la Guillin"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = MOR_M_Theophile_la_Guillin
+		chief_of_staff = school_of_manoeuvre
+		start_date = 1936.1.1
+	}
+	901857 = {
+		name = "Albert Guillaume"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = MOR_M_Albert_Guillaume
+		chief_of_army = decisive_battle_doctrine
+		start_date = 1936.1.1
+	}
+	901858 = {
+		name = "Georges Cabanier"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = MOR_M_Georges_Cabanier
+		chief_of_navy = decisive_naval_battle_doctrine
+		start_date = 1936.1.1
+	}
+	901859 = {
+		name = "Edouard Corniglion-Molinier"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = MOR_M_Edouard_Corniglion-Molinier
+		chief_of_air = army_aviation_doctrine
+		minister_of_security = compassionate_gentleman
+		start_date = 1936.1.1
+	}
+	901810 = {
+		name = "Allal el-Fassi"
+		ideology = left_wing_radical
+		loyalty = 1.00
+		picture = MOR_M_Allal_el-Fassi
+		head_of_state = weary_stiff_neck
+		head_of_government = flamboyant_tough_guy
+		minister_of_intelligence = political_specialist
+		start_date = 1936.1.1
+	}
+	901811 = {
+		name = "Charles Nogues"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = MOR_M_Charles_Nogues
+		head_of_government = old_general
+		start_date = 1936.1.1
+	}
+	901812 = {
+		name = "Gabriel Puaux"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = MOR_M_Gabriel_Puaux
+		head_of_government = silent_workhorse
+		start_date = 1943.1.1
+	}
+	901813 = {
+		name = "Erik Labonne"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = MOR_M_Erik_Labonne
+		head_of_government = the_ambitious_colonel
+		start_date = 1946.1.1
+	}
+	901814 = {
+		name = "Mehdi ben-Barka"
+		ideology = left_wing_radical
+		loyalty = 1.00
+		picture = MOR_M_Mehdi_ben-Barka
+		head_of_government = smiling_oilman
+		foreign_minister = apologetic_clerk
+		chief_of_air = air_superiority_doctrine
+		start_date = 1946.1.1
+	}
+	901815 = {
+		name = "Abdallah Ibrahim"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = MOR_M_Abdallah_Ibrahim
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1943.1.1
+	}
+	901816 = {
+		name = "Sana Madiha"
+		ideology = left_wing_radical
+		loyalty = 1.00
+		picture = MOR_M_Sana_Madiha
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1936.1.1
+	}
+	901817 = {
+		name = "Mohammed Oufkir"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = MOR_M_Mohammed_Oufkir
+		minister_of_security = efficient_sociopath
+		start_date = 1946.1.1
+	}
+	901818 = {
+		name = "M'Barak Bekkar"
+		ideology = left_wing_radical
+		loyalty = 1.00
+		picture = MOR_M_M-Barak_Bekkar
+		minister_of_security = prince_of_terror
+		minister_of_intelligence = industrial_specialist
+		start_date = 1936.1.1
+	}
+	901819 = {
+		name = "Ahmed Dlimi"
+		ideology = left_wing_radical
+		loyalty = 1.00
+		picture = MOR_M_Ahmed_Dlimi
+		minister_of_intelligence = logistics_specialist
+		chief_of_air = carpet_bombing_doctrine
+		start_date = 1936.1.1
+	}
+	901820 = {
+		name = "Jacques de la Bollardiere"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = MOR_M_Jacques_de_la_Bollardiere
+		chief_of_staff = school_of_mass_combat
+		start_date = 1942.1.1
+	}
+	901821 = {
+		name = "Mahfoud Gharbaoui"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = MOR_M_Mahfoud_Gharbaoui
+		chief_of_staff = school_of_psychology
+		start_date = 1945.1.1
+	}
+	901822 = {
+		name = "Islem Hadjira"
+		ideology = left_wing_radical
+		loyalty = 1.00
+		picture = MOR_M_Islem_Hadjira
+		chief_of_staff = school_of_mass_combat
+		chief_of_army = elastic_defence_doctrine
+		start_date = 1936.1.1
+	}
+	901823 = {
+		name = "Georges Jeanperrin"
+		ideology = social_conservative
+		loyalty = 0.50
+		picture = MOR_M_Georges_Jeanperrin
+		chief_of_army = armoured_spearhead_doctrine
+		start_date = 1942.1.1
+	}
+	901824 = {
+		name = "Abdallah Nmichi"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = MOR_M_Abdallah_Nmichi
+		chief_of_army = static_defence_doctrine
+		start_date = 1944.1.1
+	}
+	901825 = {
+		name = "Djamel Abdelmounem"
+		ideology = left_wing_radical
+		loyalty = 1.00
+		picture = MOR_M_Djamel_Abdelmounem
+		chief_of_navy = power_projection_doctrine
+		start_date = 1945.1.1
+	}
+	901826 = {
+		name = "Christian Martell"
+		ideology = social_conservative
+		loyalty = 0.50
+		picture = MOR_M_Christian_Martell
+		chief_of_air = air_superiority_doctrine
+		start_date = 1942.1.1
+	}
+	901827 = {
+		name = "Fawzi Joumana"
+		ideology = left_wing_radical
+		loyalty = 1.00
+		picture = MOR_M_Fawzi_Joumana
+		chief_of_air = vertical_envelopment_doctrine
+		start_date = 1945.1.1
+	}
+	# Generic dummy ministers
+	95643 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95644 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95645 = {
+		name = "Nameless Clerk"
+		ideology = paternal_autocrat
+		loyalty = 1.0
+		picture = MPaternalAutocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95646 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95647 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95648 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95649 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		armament_minister = mostly_harmless_armament
+		start_date = 1936.1.1
+	}
+	95650 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95651 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	
+}

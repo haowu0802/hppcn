@@ -1,0 +1,386 @@
+diplomatic_decisions = {
+
+	# Fascistic systems
+	turn_into_national_socialism = {
+		potential = {
+			ideology = national_socialist
+			or = {
+				government = fascist_republic
+				government = germanic_fascist_republic
+				government = right_wing_republic
+				government = military_dictatorship
+				government = chinese_warlord
+				government = hungarian_right_wing_republic
+				government = spanish_social_conservatism
+			}
+			or = {
+				civil_law = repression
+				civil_law = totalitarian_system
+			}
+			or = {
+				press_laws = state_press
+				press_laws = propaganda_press
+			}
+		}
+		allow = {
+			is_subject = no
+			or = {
+				organisation = 50
+				national_unity = 85
+			}
+			civil_law = totalitarian_system
+			press_laws = propaganda_press
+		}
+		effect = {
+			government = national_socialism
+			popularity = -10
+			dissent = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	turn_into_r_w_republic = {
+		potential = {
+			or = {
+				ideology_group = fascism
+				and = {
+					or = {
+						ai = no
+						dissent = 10	# A democratic AI will only go this far if the situation is baaaad
+					}
+					ideology = social_conservative
+				}
+			}
+			or = {
+				government = national_socialism
+				government = fascist_republic
+				government = germanic_fascist_republic
+				government = military_dictatorship
+				government = chinese_warlord
+				government = hungarian_right_wing_republic
+				government = spanish_social_conservatism
+				
+				government = social_conservatism
+				government = social_democracy
+			}
+			not = { civil_law = open_society }
+			not = { press_laws = free_press }
+			not = { civil_law = totalitarian_system }
+			not = { press_laws = propaganda_press }
+		}
+		allow = {
+			is_subject = no
+			or = {
+				organisation = 50
+				national_unity = 85
+			}
+			civil_law = repression
+			press_laws = state_press
+		}
+		effect = {
+			government = right_wing_republic
+			popularity = -10
+			dissent = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Democracies
+	turn_into_soc_cons = {
+		potential = {
+			or = {
+				ideology_group = democracy
+				and = {
+					ai = no
+					ideology_group = fascism	# A Fascistic AI won't turn democratic on its own
+				}
+			}
+			or = {
+				government = fascist_republic
+				government = germanic_fascist_republic
+				government = right_wing_republic
+				government = military_dictatorship
+				government = chinese_warlord
+				government = hungarian_right_wing_republic
+				government = spanish_social_conservatism
+			}
+			or = {
+				civil_law = open_society
+				civil_law = limited_restrictions
+			}
+			or = {
+				press_laws = free_press
+				press_laws = censored_press
+			}
+		}
+		allow = {
+			is_subject = no
+			or = {
+				organisation = 50
+				national_unity = 85
+			}
+			civil_law = open_society
+			press_laws = free_press
+		}
+		effect = {
+			government = social_conservatism
+			organisation = -10
+			dissent = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	turn_into_soc_dem = {
+		potential = {
+			or = {
+				ideology_group = democracy
+				and = {
+					ai = no
+					ideology_group = communism	# A communist AI won't turn democratic
+				}
+			}
+			or = {
+				government = left_wing_radicals
+				
+				government = socialist_republic
+				government = federal_socialist_republic
+			}
+			or = {
+				civil_law = open_society
+				civil_law = limited_restrictions
+			}
+			or = {
+				press_laws = free_press
+				press_laws = censored_press
+			}
+		}
+		allow = {
+			is_subject = no
+			or = {
+				organisation = 50
+				national_unity = 85
+			}
+			civil_law = open_society
+			press_laws = free_press
+		}
+		effect = {
+			government = social_democracy
+			organisation = -10
+			dissent = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Communist systems
+	turn_into_rev_gov = {
+		potential = {
+			or = {
+				ideology_group = communism
+				and = {
+					or = {
+						ai = no
+						dissent = 10	# A democratic AI will only go this far if the situation is baaaad
+					}
+					ideology = social_democrat
+				}
+			}
+			or = {
+				government = social_conservatism
+				government = social_democracy
+				
+				government = socialist_republic
+				government = federal_socialist_republic
+			}
+			not = { civil_law = open_society }
+			not = { press_laws = free_press }
+			not = { civil_law = totalitarian_system }
+			not = { press_laws = propaganda_press }
+		}
+		allow = {
+			is_subject = no
+			or = {
+				organisation = 50
+				national_unity = 85
+			}
+			civil_law = repression
+			press_laws = state_press
+		}
+		effect = {
+			government = left_wing_radicals
+			popularity = -10
+			dissent = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	turn_into_soc_rep = {
+		potential = {
+			or = {
+				ideology = leninist
+				ideology = stalinist
+			}
+			government = left_wing_radicals	# You need a Revolutionary Government first.
+			or = {
+				civil_law = repression
+				civil_law = totalitarian_system
+			}
+			or = {
+				press_laws = state_press
+				press_laws = propaganda_press
+			}
+		}
+		allow = {
+			is_subject = no
+			or = {
+				organisation = 50
+				national_unity = 85
+			}
+			civil_law = totalitarian_system
+			press_laws = propaganda_press
+		}
+		effect = {
+			government = socialist_republic
+			popularity = -10
+			dissent = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Monarchies
+	turn_into_const_mon = {
+		potential = {
+			or = {
+				government = right_wing_autocrat
+				government = imperial
+				government = absolute_monarchy
+			}
+			or = {
+				ideology_group = democracy
+				and = {
+					ai = no
+					ideology = paternal_autocrat	# Paternal Autocrat AI won't turn into a democracy
+				}
+			}
+			or = {
+				civil_law = open_society
+				civil_law = limited_restrictions
+			}
+			or = {
+				press_laws = free_press
+				press_laws = censored_press
+			}
+		}
+		allow = {
+			is_subject = no
+			or = {
+				organisation = 50
+				national_unity = 85
+			}
+			civil_law = open_society
+			press_laws = free_press
+		}
+		effect = {
+			government = constitutional_monarchy
+			organisation = -10
+			dissent = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	turn_into_empire = {
+		potential = {
+			or = {
+				government = right_wing_autocrat
+				government = absolute_monarchy
+				government = constitutional_monarchy
+			}
+			ideology_group = fascism
+			or = {
+				civil_law = repression
+				civil_law = totalitarian_system
+			}
+			or = {
+				press_laws = state_press
+				press_laws = propaganda_press
+			}
+		}
+		allow = {
+			is_subject = no
+			organisation = 50
+			national_unity = 85
+			civil_law = totalitarian_system
+			press_laws = propaganda_press
+			total_ic = 250
+			num_of_cities = 500
+		}
+		effect = {
+			government = imperial
+			dissent = -15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	turn_into_r_w_aut = {
+		potential = {
+			or = {
+				and = {
+					government = constitutional_monarchy	# AI only does this if things get out of hand, to save the nation!
+					or = {
+						ai = no
+						dissent = 15
+						ideology = national_socialist		# Or the party is extreme
+					}
+				}
+				and = {
+					government = absolute_monarchy			# No point in turning an Absolute Monarchy into this
+					ai = no
+				}
+			}
+			ideology_group = fascism
+			or = {
+				civil_law = limited_restrictions
+				civil_law = legalistic_restrictions
+				civil_law = repression
+			}
+			or = {
+				press_laws = free_press
+				press_laws = propaganda_press
+				press_laws = state_press
+			}
+		}
+		allow = {
+			is_subject = no
+			or = {
+				organisation = 50
+				national_unity = 85
+			}
+			civil_law = legalistic_restrictions
+			press_laws = propaganda_press
+		}
+		effect = {
+			government = right_wing_autocrat
+			popularity = -10
+			dissent = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

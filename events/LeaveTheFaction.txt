@@ -1,0 +1,130 @@
+country_event = {
+
+	id = 7301
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "$FROMCOUNTRY$ asks to join our faction"
+	desc = "$FROMCOUNTRY$ asks to join the Allies. Do we want to grant their request?"
+	picture = "constitutional"
+	
+	option = {
+		name = "New friends!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 1.5 relation = { who = FROM value = 100 } }
+			modifier = { factor = 1.5 relation = { who = FROM value = 50 } }
+			modifier = { factor = 0.5 not = { relation = { who = FROM value = 0 } } }
+			modifier = { factor = 0.1 not = { relation = { who = FROM value = -100 } } }
+			modifier = { factor = 0.0 FROM = { war_with = SOV } not = { war_with = SOV } not = { FROM = { total_ic = 100 } } }
+			modifier = { factor = 0.0 FROM = { war_with = GER } not = { war_with = GER } not = { FROM = { total_ic = 100 } } }
+			modifier = { factor = 0.0 FROM = { war_with = USA } not = { war_with = USA } not = { FROM = { total_ic = 100 } } }
+			modifier = { factor = 0.0 FROM = { war_with = JAP } not = { war_with = JAP } not = { FROM = { total_ic = 100 } } }
+			modifier = { factor = 0.0 FROM = { war_with = USA } USA = { faction = allies } }
+			modifier = { factor = 0.0 FROM = { war_with = ITA } ITA = { faction = allies } }
+			modifier = { factor = 0.0 FROM = { war_with = JAP } JAP = { faction = allies } }
+		}
+		FROM = { join_faction = allies }
+	}
+	option = {
+		name = "I don't think so..."
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.1 relation = { who = FROM value = 100 } }
+			modifier = { factor = 0.5 relation = { who = FROM value = 50 } }
+			modifier = { factor = 1.5 not = { relation = { who = FROM value = 0 } } }
+			modifier = { factor = 1.5 not = { relation = { who = FROM value = -100 } } }
+			modifier = { factor = 0.1 guarantee = FROM }
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7302
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "$FROMCOUNTRY$ asks to join our faction"
+	desc = "$FROMCOUNTRY$ asks to join the Axis. Do we want to grant their request?"
+	picture = "constitutional"
+	
+	option = {
+		name = "New friends!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 1.5 relation = { who = FROM value = 100 } }
+			modifier = { factor = 1.5 relation = { who = FROM value = 50 } }
+			modifier = { factor = 0.5 not = { relation = { who = FROM value = 0 } } }
+			modifier = { factor = 0.1 not = { relation = { who = FROM value = -100 } } }
+			modifier = { factor = 0.0 FROM = { war_with = SOV } not = { war_with = SOV } not = { FROM = { total_ic = 100 } } }
+			modifier = { factor = 0.0 FROM = { war_with = ENG } not = { war_with = ENG } not = { FROM = { total_ic = 100 } } }
+			modifier = { factor = 0.0 FROM = { war_with = USA } not = { war_with = USA } not = { FROM = { total_ic = 100 } } }
+			modifier = { factor = 0.0 FROM = { war_with = USA } USA = { faction = axis } }
+			modifier = { factor = 0.0 FROM = { war_with = ITA } ITA = { faction = axis } }
+			modifier = { factor = 0.0 FROM = { war_with = JAP } JAP = { faction = axis } }
+		}
+		FROM = { join_faction = axis }
+	}
+	option = {
+		name = "I don't think so..."
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.1 relation = { who = FROM value = 100 } }
+			modifier = { factor = 0.5 relation = { who = FROM value = 50 } }
+			modifier = { factor = 1.5 not = { relation = { who = FROM value = 0 } } }
+			modifier = { factor = 1.5 not = { relation = { who = FROM value = -100 } } }
+			modifier = { factor = 0.1 guarantee = FROM }
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7303
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "$FROMCOUNTRY$ asks to join our faction"
+	desc = "$FROMCOUNTRY$ asks to join the Comintern. Do we want to grant their request?"
+	picture = "constitutional"
+	
+	option = {
+		name = "New friends!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 1.5 relation = { who = FROM value = 100 } }
+			modifier = { factor = 1.5 relation = { who = FROM value = 50 } }
+			modifier = { factor = 0.5 not = { relation = { who = FROM value = 0 } } }
+			modifier = { factor = 0.1 not = { relation = { who = FROM value = -100 } } }
+			modifier = { factor = 0.0 FROM = { war_with = ENG } not = { war_with = ENG } not = { FROM = { total_ic = 100 } } }
+			modifier = { factor = 0.0 FROM = { war_with = GER } not = { war_with = GER } not = { FROM = { total_ic = 100 } } }
+			modifier = { factor = 0.0 FROM = { war_with = USA } not = { war_with = USA } not = { FROM = { total_ic = 100 } } }
+			modifier = { factor = 0.0 FROM = { war_with = JAP } not = { war_with = JAP } not = { FROM = { total_ic = 100 } } }
+			modifier = { factor = 0.0 FROM = { war_with = USA } USA = { faction = comintern } }
+			modifier = { factor = 0.0 FROM = { war_with = ITA } ITA = { faction = comintern } }
+			modifier = { factor = 0.0 FROM = { war_with = JAP } JAP = { faction = comintern } }
+		}
+		FROM = { join_faction = comintern }
+	}
+	option = {
+		name = "I don't think so..."
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.1 relation = { who = FROM value = 100 } }
+			modifier = { factor = 0.5 relation = { who = FROM value = 50 } }
+			modifier = { factor = 1.5 not = { relation = { who = FROM value = 0 } } }
+			modifier = { factor = 1.5 not = { relation = { who = FROM value = -100 } } }
+			modifier = { factor = 0.1 guarantee = FROM }
+		}
+	}
+
+}

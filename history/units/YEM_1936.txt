@@ -1,0 +1,27 @@
+theatre = {
+	name = "Yemeni Military High Command"
+	location = 9750
+	regiment = { type = hq_brigade name = "San'a' HQ" historical_model = 0 }
+	division = {
+		name = "Royal Yemenite Army"
+		location = 9768
+		is_reserve = yes
+		regiment = { type = cavalry_brigade name = "1st Camel Regiment" experience = 2 historical_model = 1 }
+		regiment = { type = cavalry_brigade name = "2nd Camel Regiment" experience = 2 historical_model = 1 }
+		regiment = { type = cavalry_brigade name = "3rd Camel Regiment" experience = 2 historical_model = 1 }
+	}
+}
+convoy_construction=
+{
+	country = YEM
+	id=
+	{
+		id=15433
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

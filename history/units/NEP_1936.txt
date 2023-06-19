@@ -1,0 +1,26 @@
+theatre = {
+	name = "Royal Nepalese Military Command"
+	location = 9471
+	regiment = { type = hq_brigade name = "Kathmandu HQ" historical_model = 0 }
+	corps = {
+		name = "Royal Nepalese Army"
+		location = 9471
+		regiment = { type = hq_brigade name = "Royal Nepalese Army HQ" historical_model = 0 }
+		division= {
+			name = "Royal Nepalese Lifeguard Division"
+			location = 9471
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "1st Lifeguard Gurkha Brigade" experience = 15 historical_model = 4 }
+			regiment = { type = bergsjaeger_brigade name = "2nd Lifeguard Gurkha Brigade" experience = 15 historical_model = 4 }
+			regiment = { type = bergsjaeger_brigade name = "3rd Lifeguard Gurkha Brigade" experience = 15 historical_model = 4 }
+		}
+		division= {
+			name = "Royal Household Division"
+			location = 9471
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "1st Household Gurkha Brigade" experience = 15 historical_model = 4 }
+			regiment = { type = bergsjaeger_brigade name = "2nd Household Gurkha Brigade" experience = 15 historical_model = 4 }
+			regiment = { type = bergsjaeger_brigade name = "3rd Household Gurkha Brigade" experience = 15 historical_model = 4 }
+		}
+	}
+}

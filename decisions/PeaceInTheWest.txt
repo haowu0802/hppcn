@@ -1,0 +1,36 @@
+diplomatic_decisions = {
+
+	offer_separate_peace = {
+		major = yes
+		potential = {
+			tag = ENG
+			faction = allies
+			is_subject = no
+			USA = { not = { faction = allies } }
+			USA = { not = { war_with = GER } }
+			war_with = GER
+			GER = { not = { war_with = SOV } }
+			FRA = { government_in_exile = yes }
+			or = {
+				head_of_state = 1031		# Edward VIII remained the King
+				head_of_government = 1002	# Stanley Baldwin
+				head_of_government = 1042	# Oswald Mosley
+				head_of_government = 1045	# Lord Halifax
+				head_of_government = 1160	# Lloyd George
+				ideology_group = fascism
+			}
+			not = { has_country_flag = "peace_in_the_west" }
+			not = { ideology_group = communism }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = "peace_in_the_west"
+			GER = { country_event = 3950 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

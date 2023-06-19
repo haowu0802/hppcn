@@ -1,0 +1,1966 @@
+#Attack on Sydney Harbor
+province_event = {
+	id = 6301
+	title = "Did you know?"
+	desc = "EVTDESC6101"
+	picture = "SydneyHarbor"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 7989
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Battle of Narvik
+province_event = {
+	id = 6302
+	title = "Did you know?"
+	desc = "EVTDESC6102"
+	picture = "Narvik"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 65
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Battle of Danzig
+province_event = {
+	id = 6303
+	title = "Did you know?"
+	desc = "EVTDESC6103"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 1626
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Battle of Taranto
+province_event = {
+	id = 6304
+	title = "Did you know?"
+	desc = "EVTDESC6104"
+	picture = "Taranto"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4869
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of Casablanca
+province_event = {
+	id = 6305
+	title = "Did you know?"
+	desc = "EVTDESC6105"
+	picture = "Casablanca"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 5428
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Action of 27 February 1941
+province_event = {
+	id = 6306
+	title = "Did you know?"
+	desc = "EVTDESC6106"
+	picture = "Action27"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = maldives_ocean
+		tag = NZL
+		war_with = ITA
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Battle between HMAS Sydney and Kormoran
+province_event = {
+	id = 6307
+	title = "Did you know?"
+	desc = "EVTDESC6107"
+	picture = "Kormoran"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = western_australia_sea
+		tag = AST
+		war_with = GER
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Bombardment of Fort Stevens
+province_event = {
+	id = 6308
+	title = "Did you know?"
+	desc = "EVTDESC6108"
+	picture = "fort_stevens"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 4694
+			province_id = 7327
+			province_id = 3597
+			province_id = 6697
+			province_id = 5825
+			province_id = 10668
+			province_id = 10670
+			province_id = 10667
+			province_id = 10666
+			province_id = 10665
+		}
+		OR = {
+			USA = {
+				controls = 4694
+			}
+			USA = {
+				controls = 7327
+			}
+			USA = {
+				controls = 3597
+			}
+			USA = {
+				controls = 6697
+			}
+			USA = {
+				controls = 5825
+			}
+			USA = {
+				controls = 10668
+			}
+			USA = {
+				controls = 10670
+			}
+			USA = {
+				controls = 10667
+			}
+			USA = {
+				controls = 10666
+			}
+			USA = {
+				controls = 10665
+			}
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Action off Bougainville
+province_event = {
+	id = 6309
+	title = "Did you know?"
+	desc = "EVTDESC6109"
+	picture = "bougainville"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_province_flag = empress_augusta
+		region = papua_new_guinea_sea
+		tag = USA
+		war_with = JAP
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Battle of the Caribbean
+province_event = {
+	id = 6310
+	title = "Did you know?"
+	desc = "EVTDESC6110"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = caribbean_ocean
+		tag = GER 
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Battle of Empress Augusta Bay
+province_event = {
+	id = 6311
+	title = "Did you know?"
+	desc = "EVTDESC6111"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = papua_new_guinea_sea
+		tag = USA
+		war_with = JAP
+	}
+	
+	option = {
+		name = "OK"
+		set_province_flag = empress_augusta
+	}
+	
+	option = {
+		name = "EVTOPTB6101"
+		set_province_flag = empress_augusta
+	}
+}
+
+#German attacks on Nauru
+province_event = {
+	id = 6312
+	title = "Did you know?"
+	desc = "EVTDESC6112"
+	picture = "Nauru"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10655
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of Suursaari
+province_event = {
+	id = 6313
+	title = "Did you know?"
+	desc = "EVTDESC6113"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 10505	# Sea
+			province_id = 10506	# Sea
+			province_id = 10507	# Sea
+			province_id = 10508	# Sea
+			province_id = 10509	# Sea
+			province_id = 10510	# Sea
+			province_id = 10511	# Sea
+			province_id = 10512	# Sea
+			province_id = 10513	# Sea
+			province_id = 10514 # Sea
+			province_id = 739 # Land
+			province_id = 698 # Land
+			province_id = 781 # Land
+			province_id = 906 # Land
+		}
+		FIN = {
+			controls = 739
+			controls = 698
+		}
+		war_with = GER
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Battle of Calabria
+province_event = {
+	id = 6314
+	title = "Did you know?"
+	desc = "EVTDESC6114"
+	picture = "Calabria"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = mediterranean_region
+		tag = ITA
+		war_with = ENG
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Battle of Cape Spada
+province_event = {
+	id = 6315
+	title = "Did you know?"
+	desc = "EVTDESC6115"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = mediterranean_region
+		tag = ITA
+		war_with = AST
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of Guadalcanal
+province_event = {
+	id = 6316
+	title = "Did you know?"
+	desc = "EVTDESC6116"
+	picture = "Guadalcanal_Naval"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6545
+		ENG = {
+			controls = 6545
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Battle of the Komandorski Islands
+province_event = {
+	id = 6317
+	title = "Did you know?"
+	desc = "EVTDESC6117"
+	picture = "Komandorski"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6854
+		controller = {
+			faction = comintern
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Landing at Aitape
+province_event = {
+	id = 6318
+	title = "Did you know?"
+	desc = "EVTDESC6118"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 7774
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Landing at Hollandia 
+province_event = {
+	id = 6319
+	title = "Did you know?"
+	desc = "EVTDESC6119"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 7764
+		NOT = {
+			controller = {
+				faction = allies
+			}
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Battle of Madagascar
+province_event = {
+	id = 6320
+	title = "Did you know?"
+	desc = "EVTDESC6120"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 10287
+			province_id = 10261
+			province_id = 10345
+			province_id = 10334
+			province_id = 10312
+			province_id = 10273
+			province_id = 10288
+			province_id = 10231
+			province_id = 10247
+			province_id = 10216
+		}
+		NOT = {
+			controller = {
+				faction = allies
+			}
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Battle of Attu and Kiska
+province_event = {
+	id = 6321
+	title = "Did you know?"
+	desc = "EVTDESC6121"
+	picture = "Attu"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 13711 # Sea
+			province_id = 10684 # Land
+		}
+		OR = {
+			war_with = JAP
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Battle of Palau
+province_event = {
+	id = 6322
+	title = "Did you know?"
+	desc = "EVTDESC6122"
+	picture = "Palau"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 6291
+			province_id = 6319
+		}
+		controller = {
+			faction = allies
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Battle of Okinawa
+province_event = {
+	id = 6323
+	title = "Did you know?"
+	desc = "EVTDESC6123"
+	picture = "Okinawa_naval"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 5748 # Land
+			province_id = 5759 # Land
+		}
+		NOT = {
+			controller = {
+				faction = allies
+			}
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Battle of the Philippines
+province_event = {
+	id = 6324
+	title = "Did you know?"
+	desc = "EVTDESC6124"
+	picture = "Philippines"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			region = philippines_sea
+			region = northern_philippines_sea
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+# Naval Battle of Dutch Harbor
+province_event = {
+	id = 6325
+	title = "Did you know?"
+	desc = "EVTDESC6125"
+	picture = "DutchHarbor"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 10732
+			province_id = 10733
+			province_id = 10734
+		}
+		controller = {
+			faction = allies
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+# First Naval Battle of Narvik
+province_event = {
+	id = 6326
+	title = "Did you know?"
+	desc = "EVTDESC6126"
+	picture = "Narvik"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 65
+		controller = {
+			faction = axis
+		}
+		war_with = ENG
+	}
+	
+	option = {
+		name = "OK"
+		set_province_flag = first_naval_narvik
+	}
+}
+
+#Second Naval Battle of Narvik
+province_event = {
+	id = 6327
+	title = "Did you know?"
+	desc = "EVTDESC6127"
+	picture = "Narvik"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 65
+		has_province_flag = first_naval_narvik
+		controller = {
+			faction = axis
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of Manado
+province_event = {
+	id = 6328
+	title = "Did you know?"
+	desc = "EVTDESC6128"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6398
+		HOL = {
+			controls = 6398
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+# Naval Battle of Tarakan
+province_event = {
+	id = 6329
+	title = "Did you know?"
+	desc = "EVTDESC6129"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6380
+		HOL = {
+			controls = 6380
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+# Naval Battle of Portugese Timor
+province_event = {
+	id = 6330
+	title = "Did you know?"
+	desc = "EVTDESC6130"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 6569
+			province_id = 6564
+			province_id = 6565
+			province_id = 6558
+			province_id = 6559
+		}
+		OR = {
+			POR = {
+				controls = 6569
+			}
+			POR = {
+				controls = 6564
+			}
+			POR = {
+				controls = 6565
+			}
+			POR = {
+				controls = 6558
+			}
+			POR = {
+				controls = 6559
+			}
+		}
+		controller = {
+			faction = allies
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+# Naval Battle of Dutch Timor
+province_event = {
+	id = 6331
+	title = "Did you know?"
+	desc = "EVTDESC6131"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 6576
+			province_id = 6570
+			province_id = 6563
+			province_id = 6575
+		}
+		OR = {
+			HOL = {
+				controls = 6576
+			}
+			HOL = {
+				controls = 6570
+			}
+			HOL = {
+				controls = 6563
+			}
+			HOL = {
+				controls = 6575
+			}
+		}
+		controller = {
+			faction = allies
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+# Naval Battle for Henderson Field
+province_event = {
+	id = 6332
+	title = "Did you know?"
+	desc = "EVTDESC6132"
+	picture = "HendersonField"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 6541
+			province_id = 5920
+			province_id = 5905
+		}
+		OR = {
+			AST = {
+				controls = 6541
+			}
+			AST = {
+				controls = 5920
+			}
+			AST = {
+				controls = 5905
+			}
+		}
+		controller = {
+			faction = allies 
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+# Naval Battle of Balikpapan
+province_event = {
+	id = 6333
+	title = "Did you know?"
+	desc = "EVTDESC6133"
+	picture = "Balikpapan"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6434
+		HOL = {
+			controls = 6434
+		}
+		controller = {
+			faction = allies
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+# Naval Battle of Anzio
+province_event = {
+	id = 6334
+	title = "Did you know?"
+	desc = "EVTDESC6134"
+	picture = "OperationShingle"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 4603
+		ITA = {
+			controls = 4603
+		}
+		controller = {
+			faction = axis
+		}
+		war_with = ENG
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+# Naval Battle of Leyte Gulf
+province_event = {
+	id = 6335
+	title = "Did you know?"
+	desc = "EVTDESC6135"
+	picture = "LeyteGulf"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = philippines_sea
+		OR = {
+			tag = PHL
+			tag = USA
+			tag = JAP
+		}
+		OR = {
+			war_with = JAP
+			war_with = USA
+			war_with = PHL
+		}
+	}
+	
+	option = {
+		name = "OK"
+		set_global_flag = leyte_gulf
+	}
+  
+}
+
+# Naval Battle of the Coral Sea
+province_event = {
+	id = 6336
+	title = "Did you know?"
+	desc = "EVTDESC6136"
+	picture = "Coralsea"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = coral_sea
+		OR = {
+			tag = PHL
+			tag = USA
+			tag = AST
+		}
+		OR = {
+			war_with = AST
+			war_with = USA
+			war_with = PHL
+			war_with = JAP
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+# Naval Battle of Mindoro
+province_event = {
+	id = 6337
+	title = "Did you know?"
+	desc = "EVTDESC6137"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = northern_philippines_sea
+		OR = {
+			tag = USA
+			tag = JAP
+		}
+		OR = {
+			war_with = JAP
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+# Naval Battle off Samar
+province_event = {
+	id = 6338
+	title = "Did you know?"
+	desc = "EVTDESC6138"
+	picture = "Samar"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			region = philippines_sea
+			region = northern_philippines_sea
+		}
+		OR = {
+			tag = USA
+			tag = JAP
+		}
+		OR = {
+			war_with = JAP
+			war_with = USA
+		}
+		has_global_flag = leyte_gulf
+	}
+	
+	option = {
+		name = "OK"
+		clr_global_flag = leyte_gulf
+	}
+}
+
+#Naval Battle of Midway
+province_event = {
+	id = 6339
+	title = "Did you know?"
+	desc = "EVTDESC6139"
+	picture = "Midway"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10669
+		controller = {
+			faction = allies
+		}
+		war_with = JAP
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of Hel
+province_event = {
+	id = 6340
+	title = "Did you know?"
+	desc = "EVTDESC6140"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = POL
+			tag = GER
+		}
+		province_id = 10514
+		OR = {
+			war_with = GER
+			war_with = POL
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of Cape Matapan
+province_event = {
+	id = 6341
+	title = "Did you know?"
+	desc = "EVTDESC6141"
+	picture = "Matapan"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 11450
+		OR = {
+			tag = ENG
+			tag = AST
+		}
+		war_with = ITA
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of Cape Spartivento
+province_event = {
+	id = 6342
+	title = "Did you know?"
+	desc = "EVTDESC6142"
+	picture = "Spartivento"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 11442
+		tag = ENG
+		war_with = ITA
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of the River Plate
+province_event = {
+	id = 6343
+	title = "Did you know?"
+	desc = "EVTDESC6143"
+	picture = "RiverPlate"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = river_plate
+		OR = {
+			tag = ENG
+			tag = GER
+			war_with = GER
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of the Denmark Strait
+province_event = {
+	id = 6344
+	title = "Did you know?"
+	desc = "EVTDESC6144"
+	picture = "Denmarkstrait"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = denmark_strait
+		OR = {
+			tag = ENG
+			tag = GER
+			war_with = GER
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of the Barents Sea
+province_event = {
+	id = 6345
+	title = "Did you know?"
+	desc = "EVTDESC6145"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = barents_sea
+		OR = {
+			tag = ENG
+			tag = GER
+			war_with = GER
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of the Espero Convoy
+province_event = {
+	id = 6346
+	title = "Did you know?"
+	desc = "EVTDESC6146"
+	picture = "EsperoConvoy"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 11451
+			province_id = 10583
+			province_id = 10584
+			province_id = 11454
+			province_id = 11453
+		}
+		OR = {
+			tag = ENG
+			tag = ITA
+			war_with = ITA
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#First Naval Battle of the Java Sea
+province_event = {
+	id = 6347
+	title = "Did you know?"
+	desc = "EVTDESC6147"
+	picture = "Java_sea"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 11989
+		OR = {
+			tag = JAP
+			tag = ENG
+			war_with = JAP
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "OK"
+		set_global_flag = java_sea
+	}
+}
+
+#Naval Battle of the Strait of Otranto 
+province_event = {
+	id = 6348
+	title = "Did you know?"
+	desc = "EVTDESC6148"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 10578
+			province_id = 10579
+			province_id = 10580
+			province_id = 10581
+		}
+		OR = {
+			tag = ALB
+			tag = ITA
+			war_with = ITA
+			war_with = ALB
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of Sunda Strait
+province_event = {
+	id = 6349
+	title = "Did you know?"
+	desc = "EVTDESC6149"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 11988
+			province_id = 11243
+			province_id = 11987
+		}
+		OR = {
+			tag = USA
+			tag = AST
+			tag = JAP
+			war_with = USA
+			war_with = AST
+			war_with = JAP
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#First Naval Battle of Sidra 
+province_event = {
+	id = 6350
+	title = "Did you know?"
+	desc = "EVTDESC6150"
+	picture = "FirstSirte"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 11448
+			province_id = 10573
+			province_id = 10574
+		}
+		OR = {
+			tag = ENG
+			tag = ITA
+			war_with = ENG
+			war_with = ITA
+		}
+	}
+	
+	option = {
+		name = "OK"
+		set_global_flag = first_sidra
+	}
+	
+}
+
+#Second Naval Battle of Sidra 
+province_event = {
+	id = 6351
+	title = "Did you know?"
+	desc = "EVTDESC6151"
+	picture = "cleopatra"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = first_sidra
+		OR = {
+			province_id = 11448
+			province_id = 10573
+			province_id = 10574
+		}
+		OR = {
+			tag = ENG
+			tag = ITA
+			war_with = ENG
+			war_with = ITA
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Second Naval Battle of the Java Sea
+province_event = {
+	id = 6352
+	title = "Did you know?"
+	desc = "EVTDESC6152"
+	picture = "Java_sea"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = java_sea
+		province_id = 11989
+		OR = {
+			tag = JAP
+			tag = ENG
+			war_with = JAP
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "OK"
+		clr_global_flag = java_sea
+	}
+}
+
+#Naval Battle of Ushant
+province_event = {
+	id = 6353
+	title = "Did you know?"
+	desc = "EVTDESC6153"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = english_channel
+		OR = {
+			tag = GER
+			tag = ENG
+			war_with = GER
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+
+#Naval Battle of the Crimean Peninsula
+province_event = {
+	id = 6354
+	title = "Did you know?"
+	desc = "EVTDESC6154"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = crimean_peninsula
+		OR = {
+			tag = GER
+			tag = SOV
+			war_with = GER
+			war_with = SOV
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of Milne Bay
+province_event = {
+	id = 6355
+	title = "Did you know?"
+	desc = "EVTDESC6155"
+	picture = "Milne_bay"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 11536
+		OR = {
+			tag = JAP
+			tag = AST
+			war_with = JAP
+			war_with = AST
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#First Indian Ocean Raid
+province_event = {
+	id = 6356
+	title = "Did you know?"
+	desc = "EVTDESC6156"
+	picture = "Indian_Ocean_raid"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = ceylon_sea
+		OR = {
+			tag = JAP
+			tag = ENG
+			war_with = JAP
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "OK"
+		set_province_flag = first_indian_ocean
+	}
+  
+}
+
+#Second Indian Ocean Raid
+province_event = {
+	id = 6357
+	title = "Did you know?"
+	desc = "EVTDESC6157"
+	picture = "Indian_Ocean_raid"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_province_flag = first_indian_ocean
+		region = ceylon_sea
+		OR = {
+			tag = JAP
+			tag = ENG
+			war_with = JAP
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "OK"
+		clr_province_flag = first_indian_ocean
+	}
+}
+
+#Naval Battle of New Georgia
+province_event = {
+	id = 6358
+	title = "Did you know?"
+	desc = "EVTDESC6158"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 11146
+			province_id = 6528
+		}
+		OR = {
+			tag = JAP
+			tag = ENG
+			tag = AST
+			war_with = JAP
+			war_with = ENG
+			war_with = AST
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of Kwajalein
+province_event = {
+	id = 6359
+	title = "Did you know?"
+	desc = "EVTDESC6159"
+	picture = "Kwajalein"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10658
+		OR = {
+			tag = JAP
+			tag = USA
+			war_with = JAP
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of Truk
+province_event = {
+	id = 6360
+	title = "Did you know?"
+	desc = "EVTDESC6160"
+	picture = "Hailstone"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10651
+		OR = {
+			tag = JAP
+			tag = USA
+			war_with = JAP
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of Eniwetok
+province_event = {
+	id = 6361
+	title = "Did you know?"
+	desc = "EVTDESC6161"
+	picture = "Eniwetok"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10663
+		OR = {
+			tag = JAP
+			tag = USA
+			war_with = JAP
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of Tinian
+province_event = {
+	id = 6362
+	title = "Did you know?"
+	desc = "EVTDESC6162"
+	picture = "Tinian"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10641
+		OR = {
+			tag = JAP
+			tag = USA
+			war_with = JAP
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of Cabanatuan
+province_event = {
+	id = 6363
+	title = "Did you know?"
+	desc = "EVTDESC6163"
+	picture = "Cabanatuan"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6118
+		OR = {
+			tag = JAP
+			tag = USA
+			tag = PHL
+			war_with = JAP
+			war_with = USA
+			war_with = PHL
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#First Naval Battle of Savo Island
+province_event = {
+	id = 6364
+	title = "Did you know?"
+	desc = "EVTDESC6164"
+	picture = "Savo_island"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = solomon_sea
+		OR = {
+			tag = JAP
+			tag = ENG
+			war_with = JAP
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "OK"
+		set_global_flag = first_savo
+	}
+  
+}
+
+#Second Naval Battle of Savo
+province_event = {
+	id = 6365
+	title = "Did you know?"
+	desc = "EVTDESC6165"
+	picture = "Cape_esperance"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_global_flag = first_savo
+		region = solomon_sea
+		OR = {
+			tag = JAP
+			tag = USA
+			tag = PHL
+			war_with = JAP
+			war_with = USA
+			war_with = PHL
+		}
+	}
+	
+	option = {
+		name = "OK"
+		clr_global_flag = first_savo
+	}
+  
+}
+
+#Naval Battle of Makassar Strait
+province_event = {
+	id = 6366
+	title = "Did you know?"
+	desc = "EVTDESC6166"
+	picture = "Makassar_strait"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		region = makassar_strait
+		OR = {
+			tag = JAP
+			tag = USA
+			tag = PHL
+			war_with = JAP
+			war_with = USA
+			war_with = PHL
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of Lofoten Islands
+province_event = {
+	id = 6367
+	title = "Did you know?"
+	desc = "EVTDESC6167"
+	picture = "Claymore"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 10525
+		OR = {
+			tag = GER
+			tag = NOR
+			tag = ENG
+			war_with = GER
+			war_with = NOR
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of the Seychelles
+province_event = {
+	id = 6368
+	title = "Did you know?"
+	desc = "EVTDESC6168"
+	picture = "Action8"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {	
+			province_id = 12417
+			province_id = 12387
+			province_id = 10195
+		}
+		OR = {
+			tag = GER
+			tag = NOR
+			tag = ENG
+			war_with = GER
+			war_with = NOR
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Naval Battle of the Bismarck Sea
+province_event = {
+	id = 6369
+	title = "Did you know?"
+	desc = "EVTDESC6169"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			province_id = 12417
+			province_id = 12387
+			province_id = 10195
+		}
+		OR = {
+			tag = AST
+			tag = JAP
+			tag = ENG
+			war_with = AST
+			war_with = JAP
+			war_with = ENG
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Makin Island Raid
+province_event = {
+	id = 6370
+	title = "Did you know?"
+	desc = "EVTDESC6170"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6512
+		OR = {
+			JAP = {
+				controls = 6512
+			}
+			USA = {
+				controls = 6512
+			}
+		}
+		OR = {
+			war_with = JAP
+			war_with = USA
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}
+
+#Operation Jaywick
+province_event = {
+	id = 6371
+	title = "Did you know?"
+	desc = "EVTDESC6171"
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		province_id = 6394
+		OR = {
+			JAP = {
+				controls = 6394
+			}
+			AST = {
+				controls = 6394
+			}
+		}
+		OR = {
+			war_with = JAP
+			war_with = AST
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+  
+}

@@ -1,0 +1,246 @@
+#######################
+# Ultimatum to Greece #
+#######################
+# Greece - Reaction Event
+country_event = {
+	
+	id = 3200
+
+	trigger = {
+		not = {
+			exists = ENG
+			ENG = { is_subject = no }
+		}
+	}
+
+	is_triggered_only = yes
+
+	title = "EVTNAME3201"
+	desc = "EVTDESC3201"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "EVTOPTA3201"			# Then it is war
+		ai_chance = { factor = 75 }
+		national_unity = 1
+		ITA = { country_event = 3202 }
+	}
+	option = {
+		name = "EVTOPTB3201"			# Offer Italy occupation rights
+		ai_chance = { factor = 25 }
+		national_unity = -1
+		ITA = { create_vassal = GRE }
+		relation = { who = ITA value = 5 }
+		ITA = { country_event = 3203 }
+	}
+}
+
+country_event = {
+	
+	id = 3201
+	
+	trigger = {
+		exists = ENG
+		ENG = { is_subject = no }
+	}
+
+	is_triggered_only = yes
+
+	title = "EVTNAME3201"
+	desc = "EVTDESC3201"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "Ask for British help!"
+		ai_chance = { factor = 90 }
+		ENG = { country_event = 3204 }
+	}	
+	option = {
+		name = "EVTOPTA3201"			# Then it is war
+		ai_chance = { factor = 9 }
+		national_unity = 1
+		ITA = { country_event = 3202 }
+	}
+	option = {
+		name = "EVTOPTB3201"			# Offer Italy occupation rights
+		ai_chance = { factor = 1 }
+		national_unity = -1
+		ITA = { create_vassal = GRE }
+		relation = { who = ITA value = 5 }
+		ITA = { country_event = 3203 }
+	}
+}
+
+# Response to Italy - Greece Refuses
+country_event = {
+	
+	id = 3202
+
+	is_triggered_only = yes
+
+	title = "EVTNAME3202"
+	desc = "EVTDESC3202"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "EVTOPTA3202"			# Fools!
+		relation = { who = GRE value = -10 }
+		war = {
+			target = GRE
+			attacker_goal = { casus_belli = conquer }
+		}
+	}
+}
+
+# Response to Italy - Greece Accepts
+country_event = {
+	
+	id = 3203
+
+	is_triggered_only = yes
+
+	title = "EVTNAME3203"
+	desc = "EVTDESC3203"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "EVTOPTA3203"			# Good
+		relation = { who = GRE value = 5 }
+	}
+}
+
+# Greek Independence
+country_event = {
+
+	id = 3204
+
+	is_triggered_only = yes
+
+	title = "Greek Independence"
+	desc = "Mussolini is asking for transit rights through Greece. His next step will surely be an invasion of our Mediterranean holdings. We cannot allow that! Should we help the Greek while we still can?"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "They need our help!"
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.1
+				ITA = { faction = axis }
+				head_of_state = 1031		# Edward VIII is king
+			}
+		}
+		relation = { who = GRE value = 20 }
+		GRE = { join_faction = allies }
+		ITA = { country_event = 3205 }
+	}
+	option = {
+		name = "They must stand alone."
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 10.0
+				ITA = { faction = axis }
+				head_of_state = 1031		# Edward VIII is king
+			}
+		}
+		relation = { who = GRE value = -20 }
+		ITA = { country_event = 3202 }
+	}
+}
+
+country_event = {
+
+	id = 3205
+
+	is_triggered_only = yes
+
+	title = "EVTNAME3202"
+	desc = "The Greek government asked for the help of the United Kingdom. Are we sure to press the matter?"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "We have friends too!"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 4.0
+				is_in_any_faction = yes
+			}
+		}
+		relation = { who = GRE value = -10 }
+		war = {
+			target = GRE
+			attacker_goal = { casus_belli = conquer }
+		}
+	}
+	option = {
+		name = "We better not push them..."
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.0
+				is_in_any_faction = yes
+			}
+		}
+		relation = { who = ENG value = -10 }
+		relation = { who = GRE value = -10 }
+	}
+}
+
+country_event = {
+
+	id = 3206
+
+	trigger = {
+		tag = GRE
+		is_in_any_faction = no
+		war_with = ITA
+		exists = ENG
+		ENG = { faction = allies }
+		not = { ENG = { war_with = ITA } }
+		not = { has_country_flag = "greek_independence" }
+	}
+
+	title = "EVTNAME3201"
+	desc = "EVTDESC3201"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "Ask for British help!"
+		ai_chance = { factor = 90 }
+		set_country_flag = "greek_independence"
+		ENG = { country_event = 3207 }
+	}
+
+	option = {
+		name = "We can do this alone!"
+		ai_chance = { factor = 10 }
+		set_country_flag = "greek_independence"
+		national_unity = 1
+	}
+}
+
+# Greek Independence
+country_event = {
+
+	id = 3207
+
+	is_triggered_only = yes
+
+	title = "Greek Independence"
+	desc = "Mussolini has attacked Greece! His next step will surely be an invasion of our Mediterranean holdings. We cannot allow that! Should we help the Greek while we still can?"
+	picture = "greek_soldiers"
+
+	option = {
+		name = "They need our help!"
+		ai_chance = { factor = 90 }
+		relation = { who = GRE value = 20 }
+		GRE = { join_faction = allies }
+	}
+	option = {
+		name = "They must stand alone."
+		ai_chance = { factor = 10 }
+		relation = { who = GRE value = -20 }
+	}
+}

@@ -1,0 +1,955 @@
+############
+# Training #
+############
+
+# Pilot training
+fighter_pilot_training = {
+
+	interceptor = {
+		default_organisation = 5
+	}
+	jet_int = {
+		default_organisation = 5
+	}
+	multi_role = {
+		default_organisation = 5
+	}
+	jet_mr = {
+		default_organisation = 5
+	}
+	rocket_interceptor = {
+		default_organisation = 5
+	}
+
+	allow = {
+		has_global_flag = "allow_research" 
+		single_engine_aircraft_design = 1
+	}
+
+	research_bonus_from = {
+		fighter_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = no_theory
+
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+bomber_pilot_training = {
+
+	tactical_bomber = {
+		default_organisation = 5
+	}
+	jet_bomber = {
+		default_organisation = 5
+	}
+	naval_bomber = {
+		default_organisation = 5
+	}
+	strategic_bomber = {
+		default_organisation = 5
+	}
+	transport_plane = {
+		default_organisation = 5
+	}
+	
+	allow = {
+		has_global_flag = "allow_research" 
+		twin_engine_aircraft_design = 1
+	}
+
+	research_bonus_from = {
+		tac_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = no_theory
+
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+cas_pilot_training = {
+
+	cas = {
+		default_organisation = 5
+	}
+
+	allow = {
+		has_global_flag = "allow_research" 
+		cas_development = 1
+	}
+
+	research_bonus_from = {
+		cas_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = no_theory
+
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+# Ground crew training
+
+fighter_groundcrew_training = {
+
+	interceptor = {
+		default_morale = 0.05
+	}
+	jet_int = {
+		default_morale = 0.05
+	}
+	multi_role = {
+		default_morale = 0.05
+	}
+	jet_mr = {
+		default_morale = 0.05
+	}
+	rocket_interceptor = {
+		default_morale = 0.05
+	}
+
+	allow = {
+		has_global_flag = "allow_research" 
+		single_engine_aircraft_design = 1
+	}
+
+	research_bonus_from = {
+		fighter_focus = 1.75
+		single_engine_aircraft_practical = 0.38
+		air_doctrine_practical = 0.38
+	}
+
+	change = no 
+	on_completion = no_theory
+
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+bomber_groundcrew_training = {
+
+	tactical_bomber = {
+		default_morale = 0.05
+	}
+	jet_bomber = {
+		default_morale = 0.05
+	}
+	naval_bomber = {
+		default_morale = 0.05
+	}
+	strategic_bomber = {
+		default_morale = 0.05
+	}
+	transport_plane = {
+		default_morale = 0.05
+	}
+
+	allow = {
+		has_global_flag = "allow_research" 
+		twin_engine_aircraft_design = 1
+	}
+
+	research_bonus_from = {
+		twin_engine_aircraft_practical = 0.62
+		four_engine_aircraft_practical = 0.62
+		air_doctrine_practical = 1.25
+	}
+
+	change = no 
+	on_completion = no_theory
+
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+cas_groundcrew_training = {
+
+	cas = {
+		default_morale = 0.05
+	}
+
+	allow = {
+		has_global_flag = "allow_research" 
+		cas_development = 1
+	}
+
+	research_bonus_from = {
+		cas_focus = 1.75
+		single_engine_aircraft_practical = 0.38
+		air_doctrine_practical = 0.38
+	}
+
+	change = no 
+	on_completion = no_theory
+
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+night_mission_training = {
+
+	interceptor 			= { night = { attack = 0.15 } }
+	jet_int 				= { night = { attack = 0.15 } }
+	rocket_interceptor 		= { night = { attack = 0.15 } }
+	multi_role 				= { night = { attack = 0.30 } }
+	jet_mr 					= { night = { attack = 0.30 } }
+	tactical_bomber 		= { night = { attack = 0.15 } }
+	jet_bomber 				= { night = { attack = 0.15 } }
+	naval_bomber 			= { night = { attack = 0.15 } }
+	cas 					= { night = { attack = 0.15 } }
+	cag 					= { night = { attack = 0.20 } }
+	strategic_bomber 		= { night = { attack = 0.15 } }
+
+	allow = {
+		has_global_flag = "allow_research"
+		radar = 3
+	}
+
+	research_bonus_from = {
+		electornicegineering_practical = 1.00
+		air_doctrine_practical = 1.50
+	}
+
+	change = no 
+	on_completion = no_theory
+
+	difficulty = 7
+	stealable = no
+	
+	start_year = 1942
+	folder = air_doctrine_folder
+
+}
+
+##########################
+# Army Aviation Doctrine #
+##########################
+
+army_aviation_doctrine = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		cas_development = 1
+	}
+	
+	research_bonus_from = {
+		air_doctrine_practical = 2.50
+	}
+	
+	change = no
+	on_completion = cas_focus
+	
+	difficulty = 7
+	stealable = no
+	
+	start_year = 1918
+	first_offset = 1936	#	2nd model is from 1936
+	additional_offset = 1	#one new every 1 years
+	max_level = 20
+	folder = air_doctrine_folder
+
+}
+
+ground_attack_tactics = {
+
+	ground_attack = {
+		efficiency = 0.05
+	}
+
+	allow = {
+		has_global_flag = "allow_research" 
+		army_aviation_doctrine = 1
+	}
+
+	research_bonus_from = {
+		cas_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = cas_focus
+
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+forward_air_control = {
+
+	frontline_focus = 0.05
+	
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = forward_air_control
+		army_aviation_doctrine = 1
+	}
+
+	research_bonus_from = {
+		cas_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = cas_focus
+
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+battlefield_interdiction = {
+
+	reserve_focus = 0.05
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = "battlefield_interdiction"
+		army_aviation_doctrine = 1
+	}
+
+	research_bonus_from = {
+		cas_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = cas_focus
+
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+army_air_command = {
+
+	ground_attack = {
+		reduction_modifier = -0.05 
+	}
+	
+	allow = {
+		has_global_flag = "allow_research" 
+		army_aviation_doctrine = 1
+	}
+
+	research_bonus_from = {
+		cas_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = cas_focus
+	stealable = no
+
+	difficulty = 5
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+############################
+# Fighter Defense Doctrine #
+############################
+
+fighter_defense_doctrine = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		single_engine_aircraft_design = 1
+	}
+	
+	difficulty = 7
+	
+	research_bonus_from = {
+		air_doctrine_practical = 2.50
+	}
+	
+	change = no
+	on_completion = fighter_focus
+	stealable = no
+	
+	start_year = 1918
+	first_offset = 1936	#	2nd model is from 1936
+	additional_offset = 1	#one new every 1 years
+	max_level = 20
+	folder = air_doctrine_folder
+
+}
+
+interception_tactics = {
+
+	air_intercept = {
+		efficiency = 0.05
+	}
+	air_superiority = {
+		efficiency = 0.05
+	}
+	
+
+	allow = {
+		has_global_flag = "allow_research" 
+		fighter_defense_doctrine = 1
+	}
+
+	research_bonus_from = {
+		fighter_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = fighter_focus
+	stealable = no
+
+	difficulty = 5
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+fighter_targerting_focus = {
+
+	fighter_targeting = 0.05
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = fighter_targerting_focus
+		fighter_defense_doctrine = 1
+	}
+
+	research_bonus_from = {
+		fighter_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = fighter_focus
+	stealable = no
+
+	difficulty = 5
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+bomber_targerting_focus = {
+
+	bomber_targeting = 0.05
+
+	allow = {
+		has_global_flag = "allow_research"
+		has_country_flag = bomber_targerting_focus
+		fighter_defense_doctrine = 1
+	}
+
+	research_bonus_from = {
+		fighter_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = fighter_focus
+	stealable = no
+
+	difficulty = 5
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936		#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+fighter_ground_control = {
+
+	radar_impact = 0.10
+
+	air_intercept = {
+		reduction_modifier = -0.05 
+	}
+	air_superiority = {
+		reduction_modifier = -0.05 
+	}
+	
+	allow = {
+		has_global_flag = "allow_research" 
+		fighter_defense_doctrine = 1
+		radar = 1
+	}
+
+	research_bonus_from = {
+		fighter_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = fighter_focus
+	stealable = no
+
+	difficulty = 5
+	
+	#common for all techs.
+	start_year = 1939
+	first_offset = 1940		#2nd model is from 1940
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+#################################
+# Independent Airforce Doctrine #
+#################################
+
+independent_airforce_doctrine = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		twin_engine_airframe = 1		
+	}
+	
+	research_bonus_from = {
+		air_doctrine_practical = 2.50
+	}
+	
+	difficulty = 7
+		
+	change = no
+	on_completion = tac_focus
+	stealable = no
+	
+	start_year = 1918
+	first_offset = 1936	#	2nd model is from 1936
+	additional_offset = 1	#one new every 1 years
+	max_level = 20
+	folder = air_doctrine_folder
+
+}
+
+interdiction_tactics = {
+
+	interdiction = {
+		efficiency = 0.05
+	}
+	logistical_strike = {
+		efficiency = 0.05
+	}
+
+
+	allow = {
+		has_global_flag = "allow_research" 
+		independent_airforce_doctrine = 1
+	}
+
+	research_bonus_from = {
+		tac_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = tac_focus
+
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+installation_strike_tactics = {
+
+	runway_cratering = {
+		efficiency = 0.05
+	}
+	installation_strike = {
+		efficiency = 0.05
+	}
+	
+
+	allow = {
+		has_global_flag = "allow_research" 
+		independent_airforce_doctrine = 1
+	}
+
+	research_bonus_from = {
+		tac_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = tac_focus
+	stealable = no
+
+	difficulty = 5
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+tactical_air_command = {
+
+	interdiction = {
+		reduction_modifier = -0.05 
+	}
+	runway_cratering = {
+		reduction_modifier = -0.05 
+	}
+	installation_strike = {
+		reduction_modifier = -0.05 
+	}
+	logistical_strike = {
+		reduction_modifier = -0.05 
+	}
+	
+	allow = {
+		has_global_flag = "allow_research" 
+		independent_airforce_doctrine = 1
+	}
+
+	research_bonus_from = {
+		tac_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = tac_focus
+
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+###############################
+# Strategic Airforce Doctrine #
+###############################
+
+strategic_airforce_doctrine = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		independent_airforce_doctrine = 1
+		four_engine_airframe = 1
+	}
+	
+	research_bonus_from = {
+		air_doctrine_practical = 2.50
+	}
+	
+	change = no
+	on_completion = strategic_air_focus
+	
+	difficulty = 7
+	stealable = no
+
+	start_year = 1918
+	first_offset = 1936	#	2nd model is from 1936
+	additional_offset = 1	#one new every 1 years
+	max_level = 20
+	folder = air_doctrine_folder
+
+}
+
+airborne_assault_tactics = {
+
+	paradrop_mission = {
+		efficiency = 0.05
+	}
+
+	allow = {
+		has_global_flag = "allow_research" 
+		strategic_airforce_doctrine = 1
+		four_engine_airframe = 1
+		paratrooper_infantry = 1
+	}
+
+	research_bonus_from = {
+		strategic_air_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = strategic_air_focus
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+strategic_bombardment_tactics = {
+
+	strategic_bomb = {
+		efficiency = 0.05
+	}
+
+	allow = {
+		has_global_flag = "allow_research" 
+		strategic_airforce_doctrine = 1
+	}
+
+	research_bonus_from = {
+		strategic_air_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = strategic_air_focus
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+strategic_air_command = {
+
+	strategic_bomb = {
+		reduction_modifier = -0.05 
+	}
+	paradrop_mission = {
+		reduction_modifier = -0.05 
+	}
+
+	allow = {
+		has_global_flag = "allow_research" 
+		strategic_airforce_doctrine = 1
+	}
+
+	research_bonus_from = {
+		strategic_air_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = strategic_air_focus
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+###########################
+# Naval Aviation Doctrine #
+###########################
+
+naval_aviation_doctrine = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		nav_development = 1
+	}
+	
+	research_bonus_from = {
+		air_doctrine_practical = 2.50
+	}
+	
+	difficulty = 7
+	stealable = no
+	
+	change = no
+	on_completion = nav_focus
+	
+	start_year = 1918
+	first_offset = 1936	#	2nd model is from 1936
+	additional_offset = 1	#one new every 1 years
+	max_level = 20
+	folder = air_doctrine_folder
+
+}
+
+portstrike_tactics = {
+
+	port_strike = {
+		efficiency = 0.05
+	}
+	
+	allow = {
+		has_global_flag = "allow_research" 
+		naval_aviation_doctrine = 1
+	}
+
+	research_bonus_from = {
+		nav_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = nav_focus
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+navalstrike_tactics = {
+
+	naval_strike = {
+		efficiency = 0.05
+	}
+	naval_air_target_chance = 0.05	
+
+	allow = {
+		has_global_flag = "allow_research" 
+		naval_aviation_doctrine = 1
+	}
+
+	research_bonus_from = {
+		nav_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = nav_focus
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}
+
+naval_tactics = {
+
+	naval_strike = {
+		reduction_modifier = -0.05 
+	}
+	port_strike = {
+		reduction_modifier = -0.05 
+	}
+
+	allow = {
+		has_global_flag = "allow_research" 
+		naval_aviation_doctrine = 1
+	}
+	
+	research_bonus_from = {
+		nav_focus = 1.75
+		air_doctrine_practical = 0.75
+	}
+
+	change = no 
+	on_completion = nav_focus
+	difficulty = 5
+	stealable = no
+	
+	#common for all techs.
+	start_year = 1918
+	first_offset = 1936	#2nd model is from 1936
+	additional_offset = 2	#one new every 2 years
+	max_level = 20
+	folder = air_doctrine_folder
+}

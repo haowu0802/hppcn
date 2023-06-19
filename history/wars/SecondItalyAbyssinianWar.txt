@@ -1,0 +1,24 @@
+name = "Second Italo-Abyssinian War"
+
+1935.10.3 = {
+	add_attacker = ITA
+	add_defender = ETH
+	war_goal =
+	{
+		casus_belli = conquer
+		actor = "ITA"
+		receiver = "ETH"
+	}
+	war_goal =
+	{
+		casus_belli = concede_defeat
+		actor = "ETH"
+		receiver = "ITA"
+	}
+}
+
+# Peace
+1936.5.9 = {
+	rem_attacker = ITA
+	rem_defender = ETH
+}

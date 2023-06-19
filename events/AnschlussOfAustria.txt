@@ -1,0 +1,159 @@
+########################
+# Anschluss of Austria #
+########################
+# Austria - Reaction event, internal pressure
+country_event = {
+
+	id = 1101
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1101"
+	desc = "EVTDESC1101"
+	picture = "anchsluss"
+
+	option = {
+		name = "EVTOPTA1101"			# Become a part of the Greater Reich
+		ai_chance = {
+			factor = 99
+			modifier = { factor = 0.0 is_in_any_faction = yes not = { faction = axis } }
+			modifier = { factor = 0.0 ITA = { guarantee = THIS } }
+			modifier = { factor = 0.0 FRA = { guarantee = THIS } }
+			modifier = { factor = 0.0 ENG = { guarantee = THIS } }
+			modifier = { factor = 0.0 ITA = { alliance_with = THIS } }
+			modifier = { factor = 0.0 FRA = { alliance_with = THIS } }
+			modifier = { factor = 0.0 ENG = { alliance_with = THIS } }
+		}
+		any_owned = { limit = { is_core = THIS } add_core = GER }
+		GER = { split_troops = 0.95 }
+		GER = { country_event = 1103 }
+	}
+	option = {
+		name = "EVTOPTC1101"			# Austria shall remain independent
+		ai_chance = { factor = 1 }
+		national_unity = 15
+		relation = { who = GER value = -125 }
+		relation = { who = ITA value = 15 }
+		relation = { who = ENG value = 5 }
+		relation = { who = FRA value = 5 }
+		GER = { country_event = 1105 }
+	}
+}
+
+# Austria - Reaction event, Military pressure
+country_event = {
+
+	id = 1102
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1101"
+	desc = "EVTDESC1101"
+	picture = "anchsluss"
+
+	option = {
+		name = "EVTOPTA1101"			# Become a part of the Greater Reich
+		ai_chance = {
+			factor = 75
+			modifier = { factor = 0.0 is_in_any_faction = yes not = { faction = axis } }
+			modifier = { factor = 0.0 ITA = { guarantee = THIS } }
+			modifier = { factor = 0.0 FRA = { guarantee = THIS } }
+			modifier = { factor = 0.0 ENG = { guarantee = THIS } }
+			modifier = { factor = 0.0 ITA = { alliance_with = THIS } }
+			modifier = { factor = 0.0 FRA = { alliance_with = THIS } }
+			modifier = { factor = 0.0 ENG = { alliance_with = THIS } }
+		}
+		GER = { split_troops = 0.33 }
+		GER = { country_event = 1104 }
+	}
+	option = {
+		name = "EVTOPTC1101"			# Austria shall remain independent
+		ai_chance = { factor = 25 }
+		national_unity = 25
+		relation = { who = GER value = -125 }
+		relation = { who = ITA value = 15 }
+		relation = { who = ENG value = 5 }
+		relation = { who = FRA value = 5 }
+		GER = { country_event = 1105 }
+	}
+}
+
+
+# Response to Germany - Annexation
+country_event = {
+
+	id = 1103
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1102"
+	desc = "EVTDESC1102"
+	picture = "anchsluss"
+
+	option = {
+		name = "Excellent!"			# Excellent
+		inherit = AUS
+		organisation = 5
+		popularity = 5
+		dissent = 3
+		manpower = 200
+	}
+}
+
+# Response to Germany - Annexation
+country_event = {
+
+	id = 1104
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1102"
+	desc = "EVTDESC1102"
+	picture = "anchsluss"
+
+	option = {
+		name = "EVTOPTA1102"			# Good
+		inherit = AUS
+		organisation = 5
+		popularity = 2
+		dissent = 5
+		manpower = 100
+	}
+}
+
+# Response to Germany - War
+country_event = {
+
+	id = 1105
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME1104"
+	desc = "EVTDESC1104"
+	picture = "anchsluss"
+
+	option = {
+		name = "EVTOPTA1104"			# War it is then
+		ai_chance = { factor = 99 }
+		organisation = 5
+		popularity = 1
+		war = {
+			target = AUS
+			attacker_goal = { casus_belli = conquer }
+		}
+		war = {
+			target = ITA
+			attacker_goal = { casus_belli = aquire_territory region = sudtirol_region }
+		}
+	}
+	option = {
+		name = "Whoa, back down!"
+		ai_chance = { factor = 1 }
+		national_unity = -5
+		neutrality = 10
+		organisation = -15
+		popularity = -10
+		threat = { who = all value = -5 }
+		dissent = 5
+	}
+}

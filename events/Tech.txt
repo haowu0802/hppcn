@@ -1,0 +1,3515 @@
+# Advanced Aircraft Design
+
+country_event = {
+
+	id = 7401
+	
+	trigger = {
+		advanced_aircraft_design = 1
+		not = { has_country_flag = advanced_aircraft_design }
+	}
+	
+	title = "Advanced Aircraft Designs"
+	desc = "Our technological advancements now provide the foundation for developing even more advanced components for our Aircraft."
+	picture = "soviet_air"
+	
+	option = {
+		name = "Excellent!"
+		set_country_flag = advanced_aircraft_design
+	}
+}
+
+# Battlefield Interdiction vs. Forward Air Control
+
+country_event = {
+
+	id = 7402
+	
+	trigger = {
+		army_aviation_doctrine = 1
+		not = { has_country_flag = battlefield_interdiction }
+		not = { has_country_flag = forward_air_control }
+	}
+	
+	title = "Battlefield Interdiction vs. Forward Air Control"
+	desc = "After developing the doctrine of Army Aviation, we must decide whether we want to focus on bombing those units that are on the frontlines during combat, or the reserves of the enemy."
+	picture = "soviet_air"
+	
+	option = {
+		name = "Frontline! Forward Air Control"
+		ai_chance = { factor = 95 }
+		set_country_flag = forward_air_control
+	}
+	option = {
+		name = "Reserve! Battlefield Interdiction"
+		ai_chance = { factor = 5 }
+		set_country_flag = battlefield_interdiction
+	}
+}
+
+# Fighter Focus vs. Bomber Focus
+
+country_event = {
+
+	id = 7403
+	
+	trigger = {
+		fighter_defense_doctrine = 1
+		not = { has_country_flag = fighter_targerting_focus }
+		not = { has_country_flag = bomber_targerting_focus }
+	}
+	
+	title = "Fighter Targeting Focus vs. Bomber Targeting Focus"
+	desc = "After developing the doctrine of Fighter Defence, we must decide whether we want to focus on attacking the bombers or the fighters in enemy air groups."
+	picture = "soviet_air"
+	
+	option = {
+		name = "Fighter Targeting Focus!"
+		ai_chance = { factor = 95 }
+		set_country_flag = fighter_targerting_focus
+	}
+	option = {
+		name = "Bomber Targeting Focus!"
+		ai_chance = { factor = 5 }
+		set_country_flag = bomber_targerting_focus
+	}
+}
+
+# Agricultural Advancement
+
+country_event = {
+
+	id = 7411
+	
+	trigger = {
+		not = { has_country_modifier = "agricultural_advancement" }
+		agriculture = 1
+		not = { has_country_flag = agriculture_1 }
+	}
+	
+	title = "Agricultural advancements"
+	desc = "agricultural_advancement_desc"
+	picture = "agriculture"
+	
+	option = {
+		name =  "Excellent!"
+		add_country_modifier = {
+			name = "agricultural_advancement"
+			duration = 60
+		}
+		set_country_flag = agriculture_1
+		dissent = 1
+	}
+}
+
+country_event = {
+
+	id = 7412
+	
+	trigger = {
+		not = { has_country_modifier = "agricultural_advancement" }
+		agriculture = 2
+		not = { has_country_flag = agriculture_2 }
+	}
+	
+	title = "Agricultural advancements"
+	desc = "agricultural_advancement_desc"
+	picture = "agriculture"
+	
+	option = {
+		name =  "Excellent!"
+		add_country_modifier = {
+			name = "agricultural_advancement"
+			duration = 60
+		}
+		set_country_flag = agriculture_2
+		dissent = 1
+	}
+}
+
+country_event = {
+
+	id = 7413
+	
+	trigger = {
+		not = { has_country_modifier = "agricultural_advancement" }
+		agriculture = 3
+		not = { has_country_flag = agriculture_3 }
+	}
+	
+	title = "Agricultural advancements"
+	desc = "agricultural_advancement_desc"
+	picture = "agriculture"
+	
+	option = {
+		name =  "Excellent!"
+		add_country_modifier = {
+			name = "agricultural_advancement"
+			duration = 60
+		}
+		set_country_flag = agriculture_3
+		dissent = 1
+	}
+}
+
+country_event = {
+
+	id = 7414
+	
+	trigger = {
+		not = { has_country_modifier = "agricultural_advancement" }
+		agriculture = 4
+		not = { has_country_flag = agriculture_4 }
+	}
+	
+	title = "Agricultural advancements"
+	desc = "agricultural_advancement_desc"
+	picture = "agriculture"
+	
+	option = {
+		name =  "Excellent!"
+		add_country_modifier = {
+			name = "agricultural_advancement"
+			duration = 60
+		}
+		set_country_flag = agriculture_4
+		dissent = 1
+	}
+}
+
+country_event = {
+
+	id = 7415
+	
+	trigger = {
+		not = { has_country_modifier = "agricultural_advancement" }
+		agriculture = 5
+		not = { has_country_flag = agriculture_5 }
+	}
+	
+	title = "Agricultural advancements"
+	desc = "agricultural_advancement_desc"
+	picture = "agriculture"
+	
+	option = {
+		name =  "Excellent!"
+		add_country_modifier = {
+			name = "agricultural_advancement"
+			duration = 60
+		}
+		set_country_flag = agriculture_5
+		dissent = 1
+	}
+}
+
+country_event = {
+
+	id = 7416
+	
+	trigger = {
+		not = { has_country_modifier = "agricultural_advancement" }
+		agriculture = 6
+		not = { has_country_flag = agriculture_6 }
+	}
+	
+	title = "Agricultural advancements"
+	desc = "agricultural_advancement_desc"
+	picture = "agriculture"
+	
+	option = {
+		name =  "Excellent!"
+		add_country_modifier = {
+			name = "agricultural_advancement"
+			duration = 60
+		}
+		set_country_flag = agriculture_6
+		dissent = 1
+	}
+}
+
+country_event = {
+
+	id = 7417
+	
+	trigger = {
+		not = { has_country_modifier = "agricultural_advancement" }
+		agriculture = 7
+		not = { has_country_flag = agriculture_7 }
+	}
+	
+	title = "Agricultural advancements"
+	desc = "agricultural_advancement_desc"
+	picture = "agriculture"
+	
+	option = {
+		name =  "Excellent!"
+		add_country_modifier = {
+			name = "agricultural_advancement"
+			duration = 60
+		}
+		set_country_flag = agriculture_7
+		dissent = 1
+	}
+}
+
+country_event = {
+
+	id = 7418
+	
+	trigger = {
+		not = { has_country_modifier = "agricultural_advancement" }
+		agriculture = 8
+		not = { has_country_flag = agriculture_8 }
+	}
+	
+	title = "Agricultural advancements"
+	desc = "agricultural_advancement_desc"
+	picture = "agriculture"
+	
+	option = {
+		name =  "Excellent!"
+		add_country_modifier = {
+			name = "agricultural_advancement"
+			duration = 60
+		}
+		set_country_flag = agriculture_8
+		dissent = 1
+	}
+}
+
+country_event = {
+
+	id = 7419
+	
+	trigger = {
+		not = { has_country_modifier = "agricultural_advancement" }
+		agriculture = 9
+		not = { has_country_flag = agriculture_9 }
+	}
+	
+	title = "Agricultural advancements"
+	desc = "agricultural_advancement_desc"
+	picture = "agriculture"
+	
+	option = {
+		name =  "Excellent!"
+		add_country_modifier = {
+			name = "agricultural_advancement"
+			duration = 60
+		}
+		set_country_flag = agriculture_9
+		dissent = 1
+	}
+}
+
+country_event = {
+
+	id = 7420
+	
+	trigger = {
+		not = { has_country_modifier = "agricultural_advancement" }
+		agriculture = 10
+		not = { has_country_flag = agriculture_10 }
+	}
+	
+	title = "Agricultural advancements"
+	desc = "agricultural_advancement_desc"
+	picture = "agriculture"
+	
+	option = {
+		name =  "Excellent!"
+		add_country_modifier = {
+			name = "agricultural_advancement"
+			duration = 60
+		}
+		set_country_flag = agriculture_10
+		dissent = 1
+	}
+}
+
+country_event = {
+
+	id = 7421
+	
+	trigger = {
+		not = { has_country_modifier = "agricultural_advancement" }
+		agriculture = 11
+		not = { has_country_flag = agriculture_11 }
+	}
+	
+	title = "Agricultural advancements"
+	desc = "agricultural_advancement_desc"
+	picture = "agriculture"
+	
+	option = {
+		name =  "Excellent!"
+		add_country_modifier = {
+			name = "agricultural_advancement"
+			duration = 60
+		}
+		set_country_flag = agriculture_11
+		dissent = 1
+	}
+}
+
+country_event = {
+
+	id = 7422
+	
+	trigger = {
+		not = { has_country_modifier = "agricultural_advancement" }
+		agriculture = 12
+		not = { has_country_flag = agriculture_12 }
+	}
+	
+	title = "Agricultural advancements"
+	desc = "agricultural_advancement_desc"
+	picture = "agriculture"
+	
+	option = {
+		name =  "Excellent!"
+		add_country_modifier = {
+			name = "agricultural_advancement"
+			duration = 60
+		}
+		set_country_flag = agriculture_12
+		dissent = 1
+	}
+}
+
+country_event = {
+
+	id = 7423
+	
+	trigger = {
+		not = { has_country_modifier = "agricultural_advancement" }
+		agriculture = 13
+		not = { has_country_flag = agriculture_13 }
+	}
+	
+	title = "Agricultural advancements"
+	desc = "agricultural_advancement_desc"
+	picture = "agriculture"
+	
+	option = {
+		name =  "Excellent!"
+		add_country_modifier = {
+			name = "agricultural_advancement"
+			duration = 60
+		}
+		set_country_flag = agriculture_13
+		dissent = 1
+	}
+}
+
+country_event = {
+
+	id = 7424
+	
+	trigger = {
+		not = { has_country_modifier = "agricultural_advancement" }
+		agriculture = 14
+		not = { has_country_flag = agriculture_14 }
+	}
+	
+	title = "Agricultural advancements"
+	desc = "agricultural_advancement_desc"
+	picture = "agriculture"
+	
+	option = {
+		name =  "Excellent!"
+		add_country_modifier = {
+			name = "agricultural_advancement"
+			duration = 60
+		}
+		set_country_flag = agriculture_14
+		dissent = 1
+	}
+}
+
+country_event = {
+
+	id = 7425
+	
+	trigger = {
+		not = { has_country_modifier = "agricultural_advancement" }
+		agriculture = 15
+		not = { has_country_flag = agriculture_15 }
+	}
+	
+	title = "Agricultural advancements"
+	desc = "agricultural_advancement_desc"
+	picture = "agriculture"
+	
+	option = {
+		name =  "Excellent!"
+		add_country_modifier = {
+			name = "agricultural_advancement"
+			duration = 60
+		}
+		set_country_flag = agriculture_15
+		dissent = 1
+	}
+}
+
+# Nuclear Research Lab captured!
+
+country_event = {
+
+	id = 7430
+	
+	trigger = {
+		civil_nuclear_research = 2		# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS							# Our enemy captured our Nuclear Research Facility
+				not = { civil_nuclear_research = 2 }	# and can learn something from it!
+				civil_nuclear_research = 1
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 2 }
+							civil_nuclear_research = 1
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7439 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 2 }
+							civil_nuclear_research = 1
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7431
+	
+	trigger = {
+		civil_nuclear_research = 3		# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS							# Our enemy captured our Nuclear Research Facility
+				not = { civil_nuclear_research = 3 }	# and can learn something from it! 
+				civil_nuclear_research = 2
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 3 }
+							civil_nuclear_research = 2
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7439 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 3 }
+							civil_nuclear_research = 2
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7432
+	
+	trigger = {
+		civil_nuclear_research = 4		# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS							# Our enemy captured our Nuclear Research Facility
+				not = { civil_nuclear_research = 4 }	# and can learn something from it! 
+				civil_nuclear_research = 3
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 4 }
+							civil_nuclear_research = 3
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7439 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 4 }
+							civil_nuclear_research = 3
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7433
+	
+	trigger = {
+		civil_nuclear_research = 5		# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS							# Our enemy captured our Nuclear Research Facility
+				not = { civil_nuclear_research = 5 }	# and can learn something from it! 
+				civil_nuclear_research = 4
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 5 }
+							civil_nuclear_research = 4
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7439 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 5 }
+							civil_nuclear_research = 4
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7434
+	
+	trigger = {
+		civil_nuclear_research = 6		# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS							# Our enemy captured our Nuclear Research Facility
+				not = { civil_nuclear_research = 6 }	# and can learn something from it! 
+				civil_nuclear_research = 5
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 6 }
+							civil_nuclear_research = 5
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7439 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 6 }
+							civil_nuclear_research = 5
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7435
+	
+	trigger = {
+		civil_nuclear_research = 7		# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS							# Our enemy captured our Nuclear Research Facility
+				not = { civil_nuclear_research = 7 }	# and can learn something from it! 
+				civil_nuclear_research = 6
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 7 }
+							civil_nuclear_research = 6
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7439 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 7 }
+							civil_nuclear_research = 6
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7436
+	
+	trigger = {
+		civil_nuclear_research = 8		# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS							# Our enemy captured our Nuclear Research Facility
+				not = { civil_nuclear_research = 8 }	# and can learn something from it! 
+				civil_nuclear_research = 7
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 8 }
+							civil_nuclear_research = 7
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7439 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 8 }
+							civil_nuclear_research = 7
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7437
+	
+	trigger = {
+		civil_nuclear_research = 9		# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS							# Our enemy captured our Nuclear Research Facility
+				not = { civil_nuclear_research = 9 }	# and can learn something from it! 
+				civil_nuclear_research = 8
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 9 }
+							civil_nuclear_research = 8
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7439 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 9 }
+							civil_nuclear_research = 8
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7438
+	
+	trigger = {
+		civil_nuclear_research = 10		# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS							# Our enemy captured our Nuclear Research Facility
+				not = { civil_nuclear_research = 10 }	# and can learn something from it! 
+				civil_nuclear_research = 10
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 10 }
+							civil_nuclear_research = 10
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7439 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { civil_nuclear_research = 10 }
+							civil_nuclear_research = 10
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7439
+	
+	is_triggered_only = yes
+	
+	title = "Nuclear Test Lab captured"
+	desc = "Our forces secured a Nuclear Test Lab of the enemy recently, and our scientists were finally able to reverse-engineer some of the equipment found there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Excellent!"
+		civil_nuclear_research = 250
+	}
+
+}
+
+# Da Bomb
+
+country_event = {
+
+	id = 7440
+	
+	trigger = {
+		da_bomb = 2								# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS					# Our enemy captured our Nuclear Research Facility
+				not = { da_bomb = 2 }			# and can learn something from it! 
+				da_bomb = 1
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 2 }
+							da_bomb = 1
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7449 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 2 }
+							da_bomb = 1
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7441
+	
+	trigger = {
+		da_bomb = 3								# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS					# Our enemy captured our Nuclear Research Facility
+				not = { da_bomb = 3 }			# and can learn something from it! 
+				da_bomb = 2
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 3 }
+							da_bomb = 2
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7449 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 3 }
+							da_bomb = 2
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7442
+	
+	trigger = {
+		da_bomb = 4								# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS					# Our enemy captured our Nuclear Research Facility
+				not = { da_bomb = 4 }			# and can learn something from it! 
+				da_bomb = 3
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 4 }
+							da_bomb = 3
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7449 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 4 }
+							da_bomb = 3
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7443
+	
+	trigger = {
+		da_bomb = 5								# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS					# Our enemy captured our Nuclear Research Facility
+				not = { da_bomb = 5 }			# and can learn something from it! 
+				da_bomb = 4
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 5 }
+							da_bomb = 4
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7449 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 5 }
+							da_bomb = 4
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7444
+	
+	trigger = {
+		da_bomb = 6								# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS					# Our enemy captured our Nuclear Research Facility
+				not = { da_bomb = 6 }			# and can learn something from it! 
+				da_bomb = 5
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 6 }
+							da_bomb = 5
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7449 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 6 }
+							da_bomb = 5
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7445
+	
+	trigger = {
+		da_bomb = 7								# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS					# Our enemy captured our Nuclear Research Facility
+				not = { da_bomb = 7 }			# and can learn something from it! 
+				da_bomb = 6
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 7 }
+							da_bomb = 6
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7449 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 7 }
+							da_bomb = 6
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7446
+	
+	trigger = {
+		da_bomb = 8								# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS					# Our enemy captured our Nuclear Research Facility
+				not = { da_bomb = 8 }			# and can learn something from it! 
+				da_bomb = 7
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 8 }
+							da_bomb = 7
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7449 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 8 }
+							da_bomb = 7
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7447
+	
+	trigger = {
+		da_bomb = 10							# We have some advanced knowledge of Nucler Science
+		any_owned_province = {
+			has_building = "nuclear_reactor"
+			controller = {
+				war_with = THIS					# Our enemy captured our Nuclear Research Facility
+				not = { da_bomb = 10 }			# and can learn something from it! 
+				da_bomb = 9
+			}
+		}
+	}
+
+	title = "Our Nuclear Research Lab was captured"
+	desc = "A Nuclear Research Lab of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 10 }
+							da_bomb = 9
+						}
+						has_building = "nuclear_reactor"
+					}
+					controller = { country_event = 7449 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { da_bomb = 10 }
+							da_bomb = 9
+						}
+						has_building = "nuclear_reactor"
+					}
+					nuclear_reactor = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7449
+	
+	is_triggered_only = yes
+	
+	title = "Nuclear Test Lab captured"
+	desc = "Our forces secured a Nuclear Test Lab of the enemy recently, and our scientists were finally able to reverse-engineer some of the equipment found there!"
+	picture = "nuclear_test_lab"
+	
+	option = {
+		name = "Excellent!"
+		da_bomb = 250
+	}
+
+}
+
+# Rocket Test Site captured!
+
+country_event = {
+
+	id = 7450
+	
+	trigger = {
+		rocket_engine = 1		# We have some minimal knowledge of Rocket Science
+		any_owned_province = {
+			has_building = "rocket_test"
+			controller = {
+				war_with = THIS							# Our enemy captured our Rocket Test Sites
+				not = { rocket_engine = 1 }				# and can learn something from it!
+				rocket_tests = 1
+			}
+		}
+	}
+
+	title = "Our Rocket Test Site was captured"
+	desc = "A Rocket Test Site of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "rocket_test_site"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { rocket_engine = 1 }
+							rocket_tests = 1 
+						}
+						has_building = "rocket_test"
+					}
+					controller = { country_event = 7451 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { rocket_engine = 1 }
+							rocket_tests = 1
+						}
+						has_building = "rocket_test"
+					}
+					rocket_test = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7451
+	
+	is_triggered_only = yes
+	
+	title = "Rocket Test Site captured"
+	desc = "Our forces secured a Rocket Test Site of the enemy recently, and our scientists were finally able to reverse-engineer some of the equipment found there!"
+	picture = "rocket_test_site"
+	
+	option = {
+		name = "Excellent!"
+		rocket_engine = 250
+	}
+
+}
+
+country_event = {
+
+	id = 7452
+	
+	trigger = {
+		theorical_jet_engine = 1		# We have some knowledge of Rocket Science
+		any_owned_province = {
+			has_building = "rocket_test"
+			controller = {
+				war_with = THIS							# Our enemy captured our Rocket Test Sites
+				not = { theorical_jet_engine = 1 }		# and can learn something from it!
+				rocket_engine = 1
+			}
+		}
+	}
+
+	title = "Our Rocket Test Site was captured"
+	desc = "A Rocket Test Site of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "rocket_test_site"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { theorical_jet_engine = 1 }
+							rocket_engine = 1 
+						}
+						has_building = "rocket_test"
+					}
+					controller = { country_event = 7453 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { theorical_jet_engine = 1 }
+							rocket_engine = 1
+						}
+						has_building = "rocket_test"
+					}
+					rocket_test = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7453
+	
+	is_triggered_only = yes
+	
+	title = "Rocket Test Site captured"
+	desc = "Our forces secured a Rocket Test Site of the enemy recently, and our scientists were finally able to reverse-engineer some of the equipment found there!"
+	picture = "rocket_test_site"
+	
+	option = {
+		name = "Excellent!"
+		theorical_jet_engine = 250
+	}
+
+}
+
+country_event = {
+
+	id = 7454
+	
+	trigger = {
+		strategic_rocket_development = 1		# We have some knowledge of Rocket Science
+		any_owned_province = {
+			has_building = "rocket_test"
+			controller = {
+				war_with = THIS								# Our enemy captured our Rocket Test Sites
+				not = { strategic_rocket_development = 1 }	# and can learn something from it!
+				rocket_engine = 1
+			}
+		}
+	}
+
+	title = "Our Rocket Test Site was captured"
+	desc = "A Rocket Test Site of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "rocket_test_site"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { strategic_rocket_development = 1 }
+							rocket_engine = 1 
+						}
+						has_building = "rocket_test"
+					}
+					controller = { country_event = 7455 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { strategic_rocket_development = 1 }
+							rocket_engine = 1
+						}
+						has_building = "rocket_test"
+					}
+					rocket_test = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7455
+	
+	is_triggered_only = yes
+	
+	title = "Rocket Test Site captured"
+	desc = "Our forces secured a Rocket Test Site of the enemy recently, and our scientists were finally able to reverse-engineer some of the equipment found there!"
+	picture = "rocket_test_site"
+	
+	option = {
+		name = "Excellent!"
+		strategic_rocket_development = 250
+	}
+
+}
+
+country_event = {
+
+	id = 7456
+	
+	trigger = {
+		flyingbomb_development = 1		# We have some knowledge of Rocket Science
+		any_owned_province = {
+			has_building = "rocket_test"
+			controller = {
+				war_with = THIS							# Our enemy captured our Rocket Test Sites
+				not = { flyingbomb_development = 1 }	# and can learn something from it!
+				strategic_rocket_development = 1
+			}
+		}
+	}
+
+	title = "Our Rocket Test Site was captured"
+	desc = "A Rocket Test Site of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "rocket_test_site"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { flyingbomb_development = 1 }
+							strategic_rocket_development = 1 
+						}
+						has_building = "rocket_test"
+					}
+					controller = { country_event = 7457 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { flyingbomb_development = 1 }
+							strategic_rocket_development = 1
+						}
+						has_building = "rocket_test"
+					}
+					rocket_test = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7457
+	
+	is_triggered_only = yes
+	
+	title = "Rocket Test Site captured"
+	desc = "Our forces secured a Rocket Test Site of the enemy recently, and our scientists were finally able to reverse-engineer some of the equipment found there!"
+	picture = "rocket_test_site"
+	
+	option = {
+		name = "Excellent!"
+		flyingbomb_development = 250
+	}
+
+}
+
+country_event = {
+
+	id = 7458
+	
+	trigger = {
+		flyingrocket_development = 1		# We have some knowledge of Rocket Science
+		any_owned_province = {
+			has_building = "rocket_test"
+			controller = {
+				war_with = THIS							# Our enemy captured our Rocket Test Sites
+				not = { flyingrocket_development = 1 }	# and can learn something from it!
+				flyingbomb_development = 1
+			}
+		}
+	}
+
+	title = "Our Rocket Test Site was captured"
+	desc = "A Rocket Test Site of ours was captured by the enemy! If we don't do something quick, they may be able to reverse-engineer some of our equipment there!"
+	picture = "rocket_test_site"
+	
+	option = {
+		name = "Try to sabotage the facility!"
+		random_list = {
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { flyingrocket_development = 1 }
+							flyingbomb_development = 1 
+						}
+						has_building = "rocket_test"
+					}
+					controller = { country_event = 7459 }
+				}
+			}
+			50 = {
+				any_owned = {
+					limit = {
+						controller = {
+							war_with = THIS
+							not = { flyingrocket_development = 1 }
+							flyingbomb_development = 1
+						}
+						has_building = "rocket_test"
+					}
+					rocket_test = -10
+				}
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 7459
+	
+	is_triggered_only = yes
+	
+	title = "Rocket Test Site captured"
+	desc = "Our forces secured a Rocket Test Site of the enemy recently, and our scientists were finally able to reverse-engineer some of the equipment found there!"
+	picture = "rocket_test_site"
+	
+	option = {
+		name = "Excellent!"
+		flyingrocket_development = 250
+	}
+
+}
+
+#########################
+# Land Doctrine choices #
+#########################
+
+# Infantry Doctrines
+
+country_event = {
+
+	id = 7461
+	
+	trigger = {
+		not = { has_country_flag = "firepower_30" }
+		not = { has_country_flag = "shock_30" }
+		not = { has_country_flag = "infilitration_30" }
+		infantry_training = 1
+	}
+	
+	title = "Infantry Doctrine: 1930"
+	desc = "infantry_doctrine_desc"
+	picture = "infantry_doc"
+	
+	option = {
+		name = "Firepower Focus"
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 100
+				any_owned_province = {
+					is_capital = yes
+					or = {
+						continent = europe
+						continent = British_Isles
+						continent = Scandinavia
+						continent = Baltic_States
+						continent = Iberia
+						continent = Balkans
+					}
+				}
+			}
+		}
+		set_country_flag = "firepower_30"
+	}
+	option = {
+		name = "Shock Focus"
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 100
+				any_owned_province = {
+					is_capital = yes
+					not = { continent = europe }
+					not = { continent = British_Isles }
+					not = { continent = Scandinavia }
+					not = { continent = Baltic_States }
+					not = { continent = Iberia }
+					not = { continent = Balkans }
+				}
+			}
+		}
+		set_country_flag = "shock_30"
+	}
+	option = {
+		name = "Infiltration Focus"
+		ai_chance = { factor = 1 }
+		set_country_flag = "infilitration_30"
+	}
+
+}
+
+country_event = {
+
+	id = 7462
+	
+	trigger = {
+		not = { has_country_flag = "firepower_37" }
+		not = { has_country_flag = "shock_37" }
+		not = { has_country_flag = "infilitration_37" }
+		firepower_1930 = 1
+	}
+	
+	title = "Infantry Doctrine: 1937"
+	desc = "infantry_doctrine_desc"
+	picture = "infantry_doc"
+	
+	option = {
+		name = "Firepower Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "firepower_37"
+		firepower_1937 = 75
+	}
+	option = {
+		name = "Shock Focus"
+		ai_chance = { factor = 1 }
+		set_country_flag = "shock_37"
+	}
+	option = {
+		name = "Infiltration Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "infilitration_37"
+	}
+
+}
+
+country_event = {
+
+	id = 7463
+	
+	trigger = {
+		not = { has_country_flag = "firepower_40" }
+		not = { has_country_flag = "shock_40" }
+		not = { has_country_flag = "infilitration_40" }
+		firepower_1937 = 1
+	}
+	
+	title = "Infantry Doctrine: 1940"
+	desc = "infantry_doctrine_desc"
+	picture = "infantry_doc"
+	
+	option = {
+		name = "Firepower Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "firepower_40"
+		firepower_1940 = 75
+	}
+	option = {
+		name = "Shock Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "shock_40"
+	}
+	option = {
+		name = "Infiltration Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "infilitration_40"
+	}
+
+}
+
+country_event = {
+
+	id = 7464
+	
+	trigger = {
+		not = { has_country_flag = "firepower_43" }
+		not = { has_country_flag = "shock_43" }
+		not = { has_country_flag = "infilitration_43" }
+		firepower_1940 = 1
+	}
+	
+	title = "Infantry Doctrine: 1943"
+	desc = "infantry_doctrine_desc"
+	picture = "infantry_doc"
+	
+	option = {
+		name = "Firepower Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "firepower_43"
+		firepower_1943 = 75
+	}
+	option = {
+		name = "Shock Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "shock_43"
+	}
+	option = {
+		name = "Infiltration Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "infilitration_43"
+	}
+
+}
+
+country_event = {
+
+	id = 7465
+	
+	trigger = {
+		not = { has_country_flag = "firepower_46" }
+		not = { has_country_flag = "shock_46" }
+		not = { has_country_flag = "infilitration_46" }
+		firepower_1943 = 1
+	}
+	
+	title = "Infantry Doctrine: 1946"
+	desc = "infantry_doctrine_desc"
+	picture = "infantry_doc"
+	
+	option = {
+		name = "Firepower Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "firepower_46"
+		firepower_1946 = 75
+	}
+	option = {
+		name = "Shock Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "shock_46"
+	}
+	option = {
+		name = "Infiltration Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "infilitration_46"
+	}
+
+}
+
+country_event = {
+
+	id = 7466
+	
+	trigger = {
+		not = { has_country_flag = "firepower_37" }
+		not = { has_country_flag = "shock_37" }
+		not = { has_country_flag = "infilitration_37" }
+		shock_1930 = 1
+	}
+	
+	title = "Infantry Doctrine: 1937"
+	desc = "infantry_doctrine_desc"
+	picture = "infantry_doc"
+	
+	option = {
+		name = "Firepower Focus"
+		ai_chance = { factor = 1 }
+		set_country_flag = "firepower_37"
+	}
+	option = {
+		name = "Shock Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "shock_37"
+		shock_1937 = 75
+	}
+	option = {
+		name = "Infiltration Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "infilitration_37"
+	}
+
+}
+
+country_event = {
+
+	id = 7467
+	
+	trigger = {
+		not = { has_country_flag = "firepower_40" }
+		not = { has_country_flag = "shock_40" }
+		not = { has_country_flag = "infilitration_40" }
+		shock_1937 = 1
+	}
+	
+	title = "Infantry Doctrine: 1940"
+	desc = "infantry_doctrine_desc"
+	picture = "infantry_doc"
+	
+	option = {
+		name = "Firepower Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "firepower_40"
+	}
+	option = {
+		name = "Shock Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "shock_40"
+		shock_1940 = 75
+	}
+	option = {
+		name = "Infiltration Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "infilitration_40"
+	}
+
+}
+
+country_event = {
+
+	id = 7468
+	
+	trigger = {
+		not = { has_country_flag = "firepower_43" }
+		not = { has_country_flag = "shock_43" }
+		not = { has_country_flag = "infilitration_43" }
+		shock_1940 = 1
+	}
+	
+	title = "Infantry Doctrine: 1943"
+	desc = "infantry_doctrine_desc"
+	picture = "infantry_doc"
+	
+	option = {
+		name = "Firepower Focus"
+		ai_chance = { factor = 1 }
+		set_country_flag = "firepower_43"
+	}
+	option = {
+		name = "Shock Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "shock_43"
+		shock_1943 = 75
+	}
+	option = {
+		name = "Infiltration Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "infilitration_43"
+	}
+
+}
+
+country_event = {
+
+	id = 7469
+	
+	trigger = {
+		not = { has_country_flag = "firepower_46" }
+		not = { has_country_flag = "shock_46" }
+		not = { has_country_flag = "infilitration_46" }
+		shock_1943 = 1
+	}
+	
+	title = "Infantry Doctrine: 1946"
+	desc = "infantry_doctrine_desc"
+	picture = "infantry_doc"
+	
+	option = {
+		name = "Firepower Focus"
+		ai_chance = { factor = 1 }
+		set_country_flag = "firepower_46"
+	}
+	option = {
+		name = "Shock Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "shock_46"
+		shock_1946 = 75
+	}
+	option = {
+		name = "Infiltration Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "infilitration_46"
+	}
+
+}
+
+country_event = {
+
+	id = 7470
+	
+	trigger = {
+		not = { has_country_flag = "firepower_37" }
+		not = { has_country_flag = "shock_37" }
+		not = { has_country_flag = "infilitration_37" }
+		infilitration_1930 = 1
+	}
+	
+	title = "Infantry Doctrine: 1937"
+	desc = "infantry_doctrine_desc"
+	picture = "infantry_doc"
+	
+	option = {
+		name = "Firepower Focus"
+		ai_chance = { factor = 1 }
+		set_country_flag = "firepower_37"
+	}
+	option = {
+		name = "Shock Focus"
+		ai_chance = { factor = 1 }
+		set_country_flag = "shock_37"
+	}
+	option = {
+		name = "Infiltration Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "infilitration_37"
+		infilitration_1937 = 75
+	}
+
+}
+
+country_event = {
+
+	id = 7471
+	
+	trigger = {
+		not = { has_country_flag = "firepower_40" }
+		not = { has_country_flag = "shock_40" }
+		not = { has_country_flag = "infilitration_40" }
+		infilitration_1937 = 1
+	}
+	
+	title = "Infantry Doctrine: 1940"
+	desc = "infantry_doctrine_desc"
+	picture = "infantry_doc"
+	
+	option = {
+		name = "Firepower Focus"
+		ai_chance = { factor = 1 }
+		set_country_flag = "firepower_40"
+	}
+	option = {
+		name = "Shock Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "shock_40"
+	}
+	option = {
+		name = "Infiltration Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "infilitration_40"
+		infilitration_1940 = 75
+	}
+
+}
+
+country_event = {
+
+	id = 7472
+	
+	trigger = {
+		not = { has_country_flag = "firepower_43" }
+		not = { has_country_flag = "shock_43" }
+		not = { has_country_flag = "infilitration_43" }
+		infilitration_1940 = 1
+	}
+	
+	title = "Infantry Doctrine: 1943"
+	desc = "infantry_doctrine_desc"
+	picture = "infantry_doc"
+	
+	option = {
+		name = "Firepower Focus"
+		ai_chance = { factor = 1 }
+		set_country_flag = "firepower_43"
+	}
+	option = {
+		name = "Shock Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "shock_43"
+	}
+	option = {
+		name = "Infiltration Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "infilitration_43"
+		infilitration_1943 = 75
+	}
+
+}
+
+country_event = {
+
+	id = 7473
+	
+	trigger = {
+		not = { has_country_flag = "firepower_46" }
+		not = { has_country_flag = "shock_46" }
+		not = { has_country_flag = "infilitration_46" }
+		infilitration_1943 = 1
+	}
+	
+	title = "Infantry Doctrine: 1946"
+	desc = "infantry_doctrine_desc"
+	picture = "infantry_doc"
+	
+	option = {
+		name = "Firepower Focus"
+		ai_chance = { factor = 1 }
+		set_country_flag = "firepower_46"
+	}
+	option = {
+		name = "Shock Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "shock_46"
+	}
+	option = {
+		name = "Infiltration Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "infilitration_46"
+		infilitration_1946 = 75
+	}
+
+}
+
+# Tank Doctrines
+
+country_event = {
+
+	id = 7475
+	
+	trigger = {
+		not = { has_country_flag = "infantry_support_role_30" }
+		not = { has_country_flag = "schwerpunkt_30" }
+		not = { has_country_flag = "combined_arms_30" }
+		tank_crew_training = 1
+	}
+	
+	title = "Tank Doctrine: 1930"
+	desc = "tank_doctrine_desc"
+	picture = "tank_doc"
+	
+	option = {
+		name = "Infantry Support Role"
+		ai_chance = { factor = 98 }
+		set_country_flag = "infantry_support_role_30"
+	}
+	option = {
+		name = "Armoured Schwerpunkt"
+		ai_chance = { factor = 1 }
+		set_country_flag = "schwerpunkt_30"
+	}
+	option = {
+		name = "Combined Arms Focus"
+		ai_chance = { factor = 1 }
+		set_country_flag = "combined_arms_30"
+	}
+
+}
+
+country_event = {
+
+	id = 7476
+	
+	trigger = {
+		not = { has_country_flag = "infantry_support_role_37" }
+		not = { has_country_flag = "schwerpunkt_37" }
+		not = { has_country_flag = "combined_arms_37" }
+		infantry_support_role_1930 = 1
+	}
+	
+	title = "Tank Doctrine: 1937"
+	desc = "tank_doctrine_desc"
+	picture = "tank_doc"
+	
+	option = {
+		name = "Infantry Support Role"
+		ai_chance = { factor = 98 }
+		set_country_flag = "infantry_support_role_37"
+		infantry_support_role_1937 = 75
+	}
+	option = {
+		name = "Armoured Schwerpunkt"
+		ai_chance = { factor = 1 }
+		set_country_flag = "schwerpunkt_37"
+	}
+	option = {
+		name = "Combined Arms Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "combined_arms_37"
+	}
+
+}
+
+country_event = {
+
+	id = 7477
+	
+	trigger = {
+		not = { has_country_flag = "infantry_support_role_40" }
+		not = { has_country_flag = "schwerpunkt_40" }
+		not = { has_country_flag = "combined_arms_40" }
+		infantry_support_role_1937 = 1
+	}
+	
+	title = "Tank Doctrine: 1940"
+	desc = "tank_doctrine_desc"
+	picture = "tank_doc"
+	
+	option = {
+		name = "Infantry Support Role"
+		ai_chance = { factor = 98 }
+		set_country_flag = "infantry_support_role_40"
+		infantry_support_role_1940 = 75
+	}
+	option = {
+		name = "Armoured Schwerpunkt"
+		ai_chance = { factor = 1  }
+		set_country_flag = "schwerpunkt_40"
+	}
+	option = {
+		name = "Combined Arms Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "combined_arms_40"
+	}
+
+}
+
+country_event = {
+
+	id = 7478
+	
+	trigger = {
+		not = { has_country_flag = "infantry_support_role_43" }
+		not = { has_country_flag = "schwerpunkt_43" }
+		not = { has_country_flag = "combined_arms_43" }
+		infantry_support_role_1940 = 1
+	}
+	
+	title = "Tank Doctrine: 1943"
+	desc = "tank_doctrine_desc"
+	picture = "tank_doc"
+	
+	option = {
+		name = "Infantry Support Role"
+		ai_chance = {
+			factor = 98
+			modifier = {
+				factor = 0
+				faction = allies
+			}
+		}
+		set_country_flag = "infantry_support_role_43"
+		infantry_support_role_1943 = 75
+	}
+	option = {
+		name = "Armoured Schwerpunkt"
+		ai_chance = { factor = 1  }
+		set_country_flag = "schwerpunkt_43"
+	}
+	option = {
+		name = "Combined Arms Focus"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				faction = allies
+			}
+		}
+		set_country_flag = "combined_arms_43"
+	}
+
+}
+
+country_event = {
+
+	id = 7479
+	
+	trigger = {
+		not = { has_country_flag = "infantry_support_role_46" }
+		not = { has_country_flag = "schwerpunkt_46" }
+		not = { has_country_flag = "combined_arms_46" }
+		infantry_support_role_1943 = 1
+	}
+	
+	title = "Tank Doctrine: 1946"
+	desc = "tank_doctrine_desc"
+	picture = "tank_doc"
+	
+	option = {
+		name = "Infantry Support Role"
+		ai_chance = { factor = 98 }
+		set_country_flag = "infantry_support_role_46"
+		infantry_support_role_1946 = 75
+	}
+	option = {
+		name = "Armoured Schwerpunkt"
+		ai_chance = { factor = 1  }
+		set_country_flag = "schwerpunkt_46"
+	}
+	option = {
+		name = "Combined Arms Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "combined_arms_46"
+	}
+
+}
+
+country_event = {
+
+	id = 7480
+	
+	trigger = {
+		not = { has_country_flag = "infantry_support_role_37" }
+		not = { has_country_flag = "schwerpunkt_37" }
+		not = { has_country_flag = "combined_arms_37" }
+		schwerpunkt_1930 = 1
+	}
+	
+	title = "Tank Doctrine: 1937"
+	desc = "tank_doctrine_desc"
+	picture = "tank_doc"
+	
+	option = {
+		name = "Infantry Support Role"
+		ai_chance = { factor = 1 }
+		set_country_flag = "infantry_support_role_37"
+	}
+	option = {
+		name = "Armoured Schwerpunkt"
+		ai_chance = { factor = 98 }
+		set_country_flag = "schwerpunkt_37"
+		schwerpunkt_1937 = 75
+	}
+	option = {
+		name = "Combined Arms Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "combined_arms_37"
+	}
+
+}
+
+country_event = {
+
+	id = 7481
+	
+	trigger = {
+		not = { has_country_flag = "infantry_support_role_40" }
+		not = { has_country_flag = "schwerpunkt_40" }
+		not = { has_country_flag = "combined_arms_40" }
+		schwerpunkt_1937 = 1
+	}
+	
+	title = "Tank Doctrine: 1940"
+	desc = "tank_doctrine_desc"
+	picture = "tank_doc"
+	
+	option = {
+		name = "Infantry Support Role"
+		ai_chance = { factor = 1 }
+		set_country_flag = "infantry_support_role_40"
+	}
+	option = {
+		name = "Armoured Schwerpunkt"
+		ai_chance = { factor = 98 }
+		set_country_flag = "schwerpunkt_40"
+		schwerpunkt_1940 = 75
+	}
+	option = {
+		name = "Combined Arms Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "combined_arms_40"
+	}
+
+}
+
+country_event = {
+
+	id = 7482
+	
+	trigger = {
+		not = { has_country_flag = "infantry_support_role_43" }
+		not = { has_country_flag = "schwerpunkt_43" }
+		not = { has_country_flag = "combined_arms_43" }
+		schwerpunkt_1940 = 1
+	}
+	
+	title = "Tank Doctrine: 1943"
+	desc = "tank_doctrine_desc"
+	picture = "tank_doc"
+	
+	option = {
+		name = "Infantry Support Role"
+		ai_chance = { factor = 1 }
+		set_country_flag = "infantry_support_role_43"
+	}
+	option = {
+		name = "Armoured Schwerpunkt"
+		ai_chance = { factor = 98 }
+		set_country_flag = "schwerpunkt_43"
+		schwerpunkt_1943 = 75
+	}
+	option = {
+		name = "Combined Arms Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "combined_arms_43"
+	}
+
+}
+
+country_event = {
+
+	id = 7483
+	
+	trigger = {
+		not = { has_country_flag = "infantry_support_role_46" }
+		not = { has_country_flag = "schwerpunkt_46" }
+		not = { has_country_flag = "combined_arms_46" }
+		schwerpunkt_1943 = 1
+	}
+	
+	title = "Tank Doctrine: 1946"
+	desc = "tank_doctrine_desc"
+	picture = "tank_doc"
+	
+	option = {
+		name = "Infantry Support Role"
+		ai_chance = { factor = 1 }
+		set_country_flag = "infantry_support_role_46"
+	}
+	option = {
+		name = "Armoured Schwerpunkt"
+		ai_chance = { factor = 98 }
+		set_country_flag = "schwerpunkt_46"
+		schwerpunkt_1946 = 75
+	}
+	option = {
+		name = "Combined Arms Focus"
+		ai_chance = { factor = 1  }
+		set_country_flag = "combined_arms_46"
+	}
+
+}
+
+country_event = {
+
+	id = 7484
+	
+	trigger = {
+		not = { has_country_flag = "infantry_support_role_37" }
+		not = { has_country_flag = "schwerpunkt_37" }
+		not = { has_country_flag = "combined_arms_37" }
+		combined_arms_1930 = 1
+	}
+	
+	title = "Tank Doctrine: 1937"
+	desc = "tank_doctrine_desc"
+	picture = "tank_doc"
+	
+	option = {
+		name = "Infantry Support Role"
+		ai_chance = { factor = 1 }
+		set_country_flag = "infantry_support_role_37"
+	}
+	option = {
+		name = "Armoured Schwerpunkt"
+		ai_chance = { factor = 1 }
+		set_country_flag = "schwerpunkt_37"
+	}
+	option = {
+		name = "Combined Arms Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "combined_arms_37"
+		combined_arms_1937 = 75
+	}
+
+}
+
+country_event = {
+
+	id = 7485
+	
+	trigger = {
+		not = { has_country_flag = "infantry_support_role_40" }
+		not = { has_country_flag = "schwerpunkt_40" }
+		not = { has_country_flag = "combined_arms_40" }
+		combined_arms_1937 = 1
+	}
+	
+	title = "Tank Doctrine: 1940"
+	desc = "tank_doctrine_desc"
+	picture = "tank_doc"
+	
+	option = {
+		name = "Infantry Support Role"
+		ai_chance = { factor = 1 }
+		set_country_flag = "infantry_support_role_40"
+	}
+	option = {
+		name = "Armoured Schwerpunkt"
+		ai_chance = { factor = 1  }
+		set_country_flag = "schwerpunkt_40"
+	}
+	option = {
+		name = "Combined Arms Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "combined_arms_40"
+		combined_arms_1940 = 75
+	}
+
+}
+
+country_event = {
+
+	id = 7486
+	
+	trigger = {
+		not = { has_country_flag = "infantry_support_role_43" }
+		not = { has_country_flag = "schwerpunkt_43" }
+		not = { has_country_flag = "combined_arms_43" }
+		combined_arms_1940 = 1
+	}
+	
+	title = "Tank Doctrine: 1943"
+	desc = "tank_doctrine_desc"
+	picture = "tank_doc"
+	
+	option = {
+		name = "Infantry Support Role"
+		ai_chance = { factor = 1 }
+		set_country_flag = "infantry_support_role_43"
+	}
+	option = {
+		name = "Armoured Schwerpunkt"
+		ai_chance = { factor = 1  }
+		set_country_flag = "schwerpunkt_43"
+	}
+	option = {
+		name = "Combined Arms Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "combined_arms_43"
+		combined_arms_1943 = 75
+	}
+
+}
+
+country_event = {
+
+	id = 7487
+	
+	trigger = {
+		not = { has_country_flag = "infantry_support_role_46" }
+		not = { has_country_flag = "schwerpunkt_46" }
+		not = { has_country_flag = "combined_arms_46" }
+		combined_arms_1943 = 1
+	}
+	
+	title = "Tank Doctrine: 1946"
+	desc = "tank_doctrine_desc"
+	picture = "tank_doc"
+	
+	option = {
+		name = "Infantry Support Role"
+		ai_chance = { factor = 1 }
+		set_country_flag = "infantry_support_role_46"
+	}
+	option = {
+		name = "Armoured Schwerpunkt"
+		ai_chance = { factor = 1  }
+		set_country_flag = "schwerpunkt_46"
+	}
+	option = {
+		name = "Combined Arms Focus"
+		ai_chance = { factor = 98 }
+		set_country_flag = "combined_arms_46"
+		combined_arms_1946 = 75
+	}
+
+}
+
+# Operational Doctrines
+
+country_event = {
+
+	id = 7490
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_30" }
+		not = { has_country_flag = "superior_firepower_30" }
+		not = { has_country_flag = "blitzkrieg_30" }
+		not = { has_country_flag = "human_wave_30" }
+		great_war_experience = 1
+	}
+	
+	title = "Operational Doctrine: 1930"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				any_owned_province = {
+					is_capital = yes
+					or = {
+						continent = asia
+						continent = China
+						continent = India
+						continent = Indonesia
+						continent = Southeast_Asia
+						continent = Pacific_Islands	
+					}
+				}
+			}
+		}
+		set_country_flag = "grand_battle_plan_30"
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 0 }
+		set_country_flag = "superior_firepower_30"
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 0 }
+		set_country_flag = "blitzkrieg_30"
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				any_owned_province = {
+					is_capital = yes
+					not = { continent = asia }
+					not = {	continent = India }
+					not = {	continent = Indonesia }
+					not = {	continent = Southeast_Asia }
+					not = { continent = Pacific_Islands }
+				}
+			}
+		}
+		set_country_flag = "human_wave_30"
+	}
+
+}
+
+country_event = {
+
+	id = 7491
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_37" }
+		not = { has_country_flag = "superior_firepower_37" }
+		not = { has_country_flag = "blitzkrieg_37" }
+		not = { has_country_flag = "human_wave_37" }
+		grand_battle_plan_1930 = 1
+	}
+	
+	title = "Operational Doctrine: 1937"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 100 }
+		set_country_flag = "grand_battle_plan_37"
+		grand_battle_plan_1937 = 75
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 0 }
+		set_country_flag = "superior_firepower_37"
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 0 }
+		set_country_flag = "blitzkrieg_37"
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "human_wave_37"
+	}
+
+}
+
+country_event = {
+
+	id = 7492
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_40" }
+		not = { has_country_flag = "superior_firepower_40" }
+		not = { has_country_flag = "blitzkrieg_40" }
+		not = { has_country_flag = "human_wave_40" }
+		grand_battle_plan_1937 = 1
+	}
+	
+	title = "Operational Doctrine: 1940"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 100 }
+		set_country_flag = "grand_battle_plan_40"
+		grand_battle_plan_1940 = 75
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 0 }
+		set_country_flag = "superior_firepower_40"
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 0 }
+		set_country_flag = "blitzkrieg_40"
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "human_wave_40"
+	}
+
+}
+
+country_event = {
+
+	id = 7493
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_43" }
+		not = { has_country_flag = "superior_firepower_43" }
+		not = { has_country_flag = "blitzkrieg_43" }
+		not = { has_country_flag = "human_wave_43" }
+		not = { has_country_flag = "mechanized_wave_42" }
+		grand_battle_plan_1940 = 1
+	}
+	
+	title = "Operational Doctrine: 1943"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 100 }
+		set_country_flag = "grand_battle_plan_43"
+		grand_battle_plan_1943 = 75
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 0 }
+		set_country_flag = "superior_firepower_43"
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 0 }
+		set_country_flag = "blitzkrieg_43"
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "human_wave_43"
+	}
+	option = {
+		name = "Mechanized Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "mechanized_wave_42"
+	}
+
+}
+
+country_event = {
+
+	id = 7494
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_46" }
+		not = { has_country_flag = "superior_firepower_46" }
+		not = { has_country_flag = "blitzkrieg_46" }
+		not = { has_country_flag = "human_wave_46" }
+		not = { has_country_flag = "mechanized_wave_45" }
+		grand_battle_plan_1943 = 1
+	}
+	
+	title = "Operational Doctrine: 1946"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 100 }
+		set_country_flag = "grand_battle_plan_46"
+		grand_battle_plan_1946 = 75
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 0 }
+		set_country_flag = "superior_firepower_46"
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 0 }
+		set_country_flag = "blitzkrieg_46"
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "human_wave_46"
+	}
+	option = {
+		name = "Mechanized Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "mechanized_wave_45"
+	}
+
+}
+
+country_event = {
+
+	id = 7495
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_37" }
+		not = { has_country_flag = "superior_firepower_37" }
+		not = { has_country_flag = "blitzkrieg_37" }
+		not = { has_country_flag = "human_wave_37" }
+		superior_firepower_1930 = 1
+	}
+	
+	title = "Operational Doctrine: 1937"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 0 }
+		set_country_flag = "grand_battle_plan_37"
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 100 }
+		set_country_flag = "superior_firepower_37"
+		superior_firepower_1937 = 75
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 0 }
+		set_country_flag = "blitzkrieg_37"
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "human_wave_37"
+	}
+
+}
+
+country_event = {
+
+	id = 7496
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_40" }
+		not = { has_country_flag = "superior_firepower_40" }
+		not = { has_country_flag = "blitzkrieg_40" }
+		not = { has_country_flag = "human_wave_40" }
+		superior_firepower_1937 = 1
+	}
+	
+	title = "Operational Doctrine: 1940"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 0 }
+		set_country_flag = "grand_battle_plan_40"
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 100 }
+		set_country_flag = "superior_firepower_40"
+		superior_firepower_1940 = 75
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 0 }
+		set_country_flag = "blitzkrieg_40"
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "human_wave_40"
+	}
+
+}
+
+country_event = {
+
+	id = 7497
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_43" }
+		not = { has_country_flag = "superior_firepower_43" }
+		not = { has_country_flag = "blitzkrieg_43" }
+		not = { has_country_flag = "human_wave_43" }
+		not = { has_country_flag = "mechanized_wave_42" }
+		superior_firepower_1940 = 1
+	}
+	
+	title = "Operational Doctrine: 1943"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 0 }
+		set_country_flag = "grand_battle_plan_43"
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 100 }
+		set_country_flag = "superior_firepower_43"
+		superior_firepower_1943 = 75
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 0 }
+		set_country_flag = "blitzkrieg_43"
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "human_wave_43"
+	}
+	option = {
+		name = "Mechanized Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "mechanized_wave_42"
+	}
+
+}
+
+country_event = {
+
+	id = 7498
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_46" }
+		not = { has_country_flag = "superior_firepower_46" }
+		not = { has_country_flag = "blitzkrieg_46" }
+		not = { has_country_flag = "human_wave_46" }
+		not = { has_country_flag = "mechanized_wave_45" }
+		superior_firepower_1943 = 1
+	}
+	
+	title = "Operational Doctrine: 1946"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 0 }
+		set_country_flag = "grand_battle_plan_46"
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 100 }
+		set_country_flag = "superior_firepower_46"
+		superior_firepower_1946 = 75
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 0 }
+		set_country_flag = "blitzkrieg_46"
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "human_wave_46"
+	}
+	option = {
+		name = "Mechanized Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "mechanized_wave_45"
+	}
+
+}
+
+country_event = {
+
+	id = 7499
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_37" }
+		not = { has_country_flag = "superior_firepower_37" }
+		not = { has_country_flag = "blitzkrieg_37" }
+		not = { has_country_flag = "human_wave_37" }
+		blitzkrieg_1930 = 1
+	}
+	
+	title = "Operational Doctrine: 1937"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 0 }
+		set_country_flag = "grand_battle_plan_37"
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 0 }
+		set_country_flag = "superior_firepower_37"
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 100 }
+		set_country_flag = "blitzkrieg_37"
+		blitzkrieg_1937 = 75
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "human_wave_37"
+	}
+
+}
+
+country_event = {
+
+	id = 7500
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_40" }
+		not = { has_country_flag = "superior_firepower_40" }
+		not = { has_country_flag = "blitzkrieg_40" }
+		not = { has_country_flag = "human_wave_40" }
+		blitzkrieg_1937 = 1
+	}
+	
+	title = "Operational Doctrine: 1940"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 0 }
+		set_country_flag = "grand_battle_plan_40"
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 0 }
+		set_country_flag = "superior_firepower_40"
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 100 }
+		set_country_flag = "blitzkrieg_40"
+		blitzkrieg_1940 = 75
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "human_wave_40"
+	}
+
+}
+
+country_event = {
+
+	id = 7501
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_43" }
+		not = { has_country_flag = "superior_firepower_43" }
+		not = { has_country_flag = "blitzkrieg_43" }
+		not = { has_country_flag = "human_wave_43" }
+		not = { has_country_flag = "mechanized_wave_42" }
+		blitzkrieg_1940 = 1
+	}
+	
+	title = "Operational Doctrine: 1943"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 0 }
+		set_country_flag = "grand_battle_plan_43"
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 0 }
+		set_country_flag = "superior_firepower_43"
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 100 }
+		set_country_flag = "blitzkrieg_43"
+		blitzkrieg_1943 = 75
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "human_wave_43"
+	}
+	option = {
+		name = "Mechanized Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "mechanized_wave_42"
+	}
+
+}
+
+country_event = {
+
+	id = 7502
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_46" }
+		not = { has_country_flag = "superior_firepower_46" }
+		not = { has_country_flag = "blitzkrieg_46" }
+		not = { has_country_flag = "human_wave_46" }
+		not = { has_country_flag = "mechanized_wave_45" }
+		blitzkrieg_1943 = 1
+	}
+	
+	title = "Operational Doctrine: 1946"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 0 }
+		set_country_flag = "grand_battle_plan_46"
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 0 }
+		set_country_flag = "superior_firepower_46"
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 100 }
+		set_country_flag = "blitzkrieg_46"
+		blitzkrieg_1946 = 75
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "human_wave_46"
+	}
+	option = {
+		name = "Mechanized Wave"
+		ai_chance = { factor = 0 }
+		set_country_flag = "mechanized_wave_45"
+	}
+
+}
+
+country_event = {
+
+	id = 7503
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_37" }
+		not = { has_country_flag = "superior_firepower_37" }
+		not = { has_country_flag = "blitzkrieg_37" }
+		not = { has_country_flag = "human_wave_37" }
+		human_wave_1930 = 1
+	}
+	
+	title = "Operational Doctrine: 1937"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 0 }
+		set_country_flag = "grand_battle_plan_37"
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 0 }
+		set_country_flag = "superior_firepower_37"
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 0 }
+		set_country_flag = "blitzkrieg_37"
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = { factor = 100 }
+		set_country_flag = "human_wave_37"
+		human_wave_1937 = 75
+	}
+
+}
+
+country_event = {
+
+	id = 7504
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_40" }
+		not = { has_country_flag = "superior_firepower_40" }
+		not = { has_country_flag = "blitzkrieg_40" }
+		not = { has_country_flag = "human_wave_40" }
+		human_wave_1937 = 1
+	}
+	
+	title = "Operational Doctrine: 1940"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 0 }
+		set_country_flag = "grand_battle_plan_40"
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 0 }
+		set_country_flag = "superior_firepower_40"
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 0 }
+		set_country_flag = "blitzkrieg_40"
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = { factor = 100 }
+		set_country_flag = "human_wave_40"
+		human_wave_1940 = 75
+	}
+
+}
+
+country_event = {
+
+	id = 7505
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_43" }
+		not = { has_country_flag = "superior_firepower_43" }
+		not = { has_country_flag = "blitzkrieg_43" }
+		not = { has_country_flag = "human_wave_43" }
+		not = { has_country_flag = "mechanized_wave_42" }
+		human_wave_1940 = 1
+	}
+	
+	title = "Operational Doctrine: 1943"
+	desc = "operational_doctrine_late_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 0 }
+		set_country_flag = "grand_battle_plan_43"
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 0 }
+		set_country_flag = "superior_firepower_43"
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 0 }
+		set_country_flag = "blitzkrieg_43"
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				tag = SOV
+			}
+		}
+		set_country_flag = "human_wave_43"
+		human_wave_1943 = 75
+	}
+	option = {
+		name = "Mechanized Wave"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				not = { tag = SOV }
+			}
+		}
+		set_country_flag = "mechanized_wave_42"
+		mechanized_wave_1942 = 75
+	}
+
+}
+
+country_event = {
+
+	id = 7506
+	
+	trigger = {
+		not = { has_country_flag = "grand_battle_plan_46" }
+		not = { has_country_flag = "superior_firepower_46" }
+		not = { has_country_flag = "blitzkrieg_46" }
+		not = { has_country_flag = "human_wave_46" }
+		not = { has_country_flag = "mechanized_wave_45" }
+		or = {
+			human_wave_1943 = 1
+			mechanized_wave_1942 = 1
+		}
+	}
+	
+	title = "Operational Doctrine: 1946"
+	desc = "operational_doctrine_desc"
+	picture = "operational_doc"
+	
+	option = {
+		name = "Grand Battle Plan"
+		ai_chance = { factor = 0 }
+		set_country_flag = "grand_battle_plan_46"
+	}
+	option = {
+		name = "Superior Firepower"
+		ai_chance = { factor = 0 }
+		set_country_flag = "superior_firepower_46"
+	}
+	option = {
+		name = "Blitzkrieg"
+		ai_chance = { factor = 0 }
+		set_country_flag = "blitzkrieg_46"
+	}
+	option = {
+		name = "Human Wave"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				tag = SOV
+			}
+		}
+		set_country_flag = "human_wave_46"
+		human_wave_1946 = 75
+	}
+	option = {
+		name = "Mechanized Wave"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				not = { tag = SOV }
+			}
+		}
+		set_country_flag = "mechanized_wave_45"
+		mechanized_wave_1945 = 75
+	}
+
+}
+
+#Enable fifth brigade slot.  Event currently disabled
+
+#country_event = {
+#
+#	id = 7510
+#	
+#	trigger = {
+#		or = {
+#			superior_firepower_1930 = 1
+#			superior_firepower_1937 = 1
+#			superior_firepower_1940 = 1
+#			superior_firepower_1943 = 1
+#			superior_firepower_1946 = 1
+#		}
+#		not = { fifth_brigade = 1 }
+#	}
+#	
+#	title = "Extended Division"
+#	desc = "Our research in Superior Firepower Doctrine allows us to form more complex Divisions. The amount of Brigades allowed in a Division is now increased from 4 to 5."
+#	picture = "operational_doc"
+#	
+#	option = {
+#		name = "Excellent!"
+#		fifth_brigade = 300
+#	}
+#
+#}

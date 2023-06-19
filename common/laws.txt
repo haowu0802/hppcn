@@ -1,0 +1,654 @@
+# Civil Laws
+
+civil_law = {
+    open_society = {
+		cost = 1
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			has_country_flag = "holds_elections"
+        }
+		research_efficiency = 0.15
+        counter_intelligence = -0.15
+    }
+
+    limited_restrictions = {
+		cost = 0.5
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+            OR = {
+				not = { has_country_flag = "holds_elections" }
+				and = {
+					war = yes
+					or = {
+						national_unity = 65
+						organisation = 40
+					}
+				}
+            }
+        }
+		war_consumer_goods_demand = -0.01
+		research_efficiency = 0.10
+		counter_intelligence = -0.10
+		partisan_efficiency = 2
+    }
+
+	legalistic_restrictions = {
+		cost = 1
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+            OR = {
+				and = {
+					war = yes
+					or = {
+						national_unity = 75
+						organisation = 50
+					}
+				}
+				and = {
+					not = { has_country_flag = "holds_elections" }
+					national_unity = 60
+				}
+            }
+        }
+		research_efficiency = 0.05
+		war_consumer_goods_demand = -0.02
+		peace_consumer_goods_demand = -0.05
+		partisan_efficiency = 4
+    }
+
+    repression = {
+		cost = 1.5
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			not = { has_country_flag = "holds_elections" }
+            OR = {
+				and = {
+					or = {
+						national_unity = 75
+						organisation = 50
+					}
+				}
+                and = {
+					or = {
+						national_unity = 80
+						organisation = 50
+					}
+					war = yes
+                }
+            }
+        }
+		war_consumer_goods_demand = -0.04
+		peace_consumer_goods_demand = -0.10
+		counter_intelligence = 0.1
+		partisan_efficiency = 6
+		ruling_party_support = 0.1
+    }
+
+    totalitarian_system = {
+		cost = 2
+		allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			not = { has_country_flag = "holds_elections" }
+			or = {
+				national_unity = 90
+				organisation = 66
+			}
+        }
+		war_consumer_goods_demand = -0.05
+		peace_consumer_goods_demand = -0.2
+		counter_intelligence = 0.25
+		partisan_efficiency = 8
+		ruling_party_support = 0.3
+    }
+}
+
+press_laws = {
+    free_press = {
+		cost = 0
+        allow = {
+			has_country_flag = "holds_elections"
+        }
+        national_unity_effect = 0.2 	# National unity effects are exaggerated 
+		sw_national_unity_effect = 0.2	# both from events and Strategic Warfare
+        counter_espionage = -0.05
+        drift_speed = 0.1
+    }
+
+    censored_press = {
+		cost = 0.1
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			or = {
+				war = yes
+				not = { has_country_flag = "holds_elections" }
+			}
+        }
+        drift_speed = 0.05
+		war_exhaustion = -0.01
+    }
+
+    state_press = {
+		cost = 0.25
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			not = { has_country_flag = "holds_elections" }
+        }
+        national_unity_effect = -0.05 		# National unity effects are limited
+		sw_national_unity_effect = -0.05	# both from events and Strategic Warfare
+        drift_speed = -0.05
+        counter_espionage = 0.05
+		war_exhaustion = -0.025
+    }
+
+    propaganda_press = {
+		cost = 0.5
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			not = { has_country_flag = "holds_elections" }
+			or = {
+				national_unity = 90
+				organisation = 50
+			}
+		}
+        national_unity_effect = -0.1 	# National unity effects are limited
+		sw_national_unity_effect = -0.1	# both from events and Strategic Warfare
+        counter_espionage = 0.10
+        drift_speed = -0.1
+		war_exhaustion = -0.05
+    }
+}
+
+# Economic Laws
+
+economic_law = {
+    full_civilian_economy = {
+		cost = 0
+        allow = {
+        }
+		war_consumer_goods_demand = 0.40
+		peace_consumer_goods_demand = 0.40
+        global_resources = -0.2
+        reserves_penalty_size = -0.75
+        peacetime_manpower_rotation = 0.10
+		war_exhaustion = -0.25
+    }
+
+	basic_mobilisation = {
+		cost = 0.5
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+            OR = {
+				war = yes
+				and = {
+					not = { base_neutrality = 70 }
+					national_unity = 60
+				}
+				and = {
+					not = { has_country_flag = "holds_elections" }
+					not = { base_neutrality = 80 }
+					national_unity = 60
+				}
+				is_threatend = 25
+			}
+        }
+		war_consumer_goods_demand = 0.30
+		peace_consumer_goods_demand = 0.30
+        global_resources = -0.1
+        global_money = -0.05
+        reserves_penalty_size = -0.60
+        peacetime_manpower_rotation = 0.06
+		war_exhaustion = -0.15
+    }
+
+    full_mobilisation = {
+		cost = 1
+		allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			OR = {
+				war = yes
+				and = {
+					not = { base_neutrality = 65 }
+					national_unity = 60
+				}
+				and = {
+					not = { has_country_flag = "holds_elections" }
+					not = { base_neutrality = 75 }
+					national_unity = 60
+				}
+				is_threatend = 40
+			}
+        }
+		war_consumer_goods_demand = 0.20
+		peace_consumer_goods_demand = 0.20
+        global_money = -0.10
+        reserves_penalty_size = -0.50
+        peacetime_manpower_rotation = 0.04
+		war_exhaustion = -0.05
+    }
+
+	war_economy = {
+		cost = 1.5
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			or = {
+				and = {
+					war = yes
+					has_country_flag = "great_war"
+				}
+				and = {
+					or = {
+						and  = {
+							not = { base_neutrality = 60 }
+							national_unity = 60
+						}
+						and = {
+							not = { has_country_flag = "holds_elections" }	
+							not = { base_neutrality = 70 }
+							national_unity = 60
+						}
+					}
+					has_country_flag = "mobilized_for_war"
+				}
+			}
+        }
+	war_consumer_goods_demand = 0.25
+	peace_consumer_goods_demand = 0.30	# If you can't back it up by a forcefull regime, then it hurts more than it gives!
+        global_ic = 0.25        
+        global_money = -0.15
+        reserves_penalty_size = -0.40
+        peacetime_manpower_rotation = 0.01
+    }
+
+    total_economic_mobilisation = {
+		cost = 2
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			war = yes
+			has_country_flag = "great_war" 
+		}
+		war_consumer_goods_demand = 0.30
+		peace_consumer_goods_demand = 0.45	# If you can't back it up by a forcefull regime, then it hurts a lot more than it gives!
+        global_ic = 0.50
+        global_money = -0.25			# War bonds may help :)
+		war_exhaustion = 0.5
+    }
+}
+
+industrial_policy_laws = {
+    consumer_product_orientation = {
+		cost = 0.5
+		allow = {
+			government_in_exile = no
+			war = no
+		}
+		peace_consumer_goods_demand = -0.1
+		war_consumer_goods_demand = 0.1
+		industrial_efficiency = -0.1
+    }
+
+    mixed_industry = {
+		cost = 1.0
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+            OR = {
+                and = {
+                    ideology_group = fascism
+                    national_unity = 60
+                }
+				and = {
+					has_global_flag = "setup"
+					war = yes
+				}
+            }
+        }
+        war_consumer_goods_demand = -0.05
+        peace_consumer_goods_demand = -0.05
+        supply_throughput = 0.1
+		supply_consumption = 0.05
+    }
+
+    heavy_industry_emphasis = {
+		cost = 1.5
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+            OR = {
+                and = {
+                    ideology_group = communism
+                    national_unity = 60
+                }
+                and = {
+                    ideology_group = fascism
+					has_global_flag = "setup"
+					war = yes
+                }
+                and = {
+					has_global_flag = "setup"
+					war = yes
+                    national_unity = 80
+                } 
+            }
+        }
+        industrial_efficiency = 0.1
+        peace_consumer_goods_demand = 0.1
+        war_consumer_goods_demand = -0.1
+        supply_throughput = 0.2
+		supply_consumption = 0.1
+    }
+}
+
+taxation_law = {
+	negligible_taxes = {
+		cost = 0.5
+		allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+		}
+		global_money = -0.5
+		ruling_party_support = 0.10
+		war_exhaustion = -0.15
+		
+	}
+	small_taxes = {
+		cost = 0.5
+		allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+		}
+		global_money = -0.25
+		ruling_party_support = 0.05
+		war_exhaustion = -0.05
+	}
+	acceptable_taxes = {
+		cost = 0.5
+		allow = {
+		}		
+	}
+	high_taxes = {
+		cost = 0.5
+		allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			or = {
+				civil_law = repression
+				civil_law = totalitarian_system
+				war = yes
+				and = {
+					organisation = 75
+					national_unity = 75
+				}
+				taxation_law = exploitive_taxes
+			}
+		}
+		global_money = 0.25
+		ruling_party_support = -0.1
+		peace_consumer_goods_demand = 0.05
+		war_exhaustion = 0.05
+	}
+	exploitive_taxes = {
+		cost = 0.5
+		allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			civil_law = totalitarian_system
+		}
+		global_money = 0.5
+		ruling_party_support = -0.25
+		peace_consumer_goods_demand = 0.1
+		war_exhaustion = 0.15
+	}
+}
+
+# Military Laws
+
+conscription_law = {
+    volunteer_army = {		# Standing Army
+		cost = 0.25
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			war = no
+			not = { has_country_flag = "drafted_army" }
+			not = { has_country_flag = "standing_army" }
+			not = { has_country_flag = "mobilized_for_war" }
+			not = { has_country_flag = "manpower_mobilized" }
+			not = { has_country_flag = "emergency_draft_enacted" }
+			or = {
+				not = { has_country_flag = "holds_elections" }
+				organisation = 50
+				national_unity = 85
+			}
+		}
+        unit_start_experience = 5
+    }
+    one_year_draft = {		# Mobilize for War
+		cost = 1.0
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			has_country_flag = "standing_army"
+			not = { has_country_flag = "emergency_draft_enacted" }
+			or = {
+				war = yes
+				has_country_flag = "mobilized_for_war"
+			}
+        }
+		global_money = -0.25
+        unit_start_experience = 5
+		war_exhaustion = 0.05
+    }
+    two_year_draft = {		# Drafted Army
+		cost = 0.25
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			war = no
+			not = { has_country_flag = "drafted_army" }
+			not = { has_country_flag = "standing_army" }
+			not = { has_country_flag = "manpower_mobilized" }
+			not = { has_country_flag = "emergency_draft_enacted" }
+			or = {
+				has_country_flag = "holds_elections"
+				organisation = 50
+				national_unity = 85
+			}
+		}
+    }
+
+    three_year_draft = {	# Extended Draft
+		cost = 0.5
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			war = yes
+			has_country_flag = "drafted_army"
+			has_country_flag = "manpower_mobilized"
+			or = {
+				and = {
+					has_country_flag = "great_war"
+					war_exhaustion = 1
+				}
+				war_exhaustion = 3
+				not = { manpower = 1 }
+			}
+			not = { has_country_flag = "emergency_draft_enacted" }
+		}
+        industrial_efficiency = -0.10	# Workers are being sucked away from the factories!
+		war_exhaustion = 0.05
+    }
+
+    service_by_requirement = {		# Emergency Draft
+		cost = 1.0
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			war = yes
+			has_country_flag = "manpower_mobilized"
+			or = {
+				not = { manpower = 1 }
+				and = {
+					has_country_flag = "great_war"
+					war_exhaustion = 3
+				}
+				war_exhaustion = 5
+			}
+        }
+        unit_start_experience = -10
+        industrial_efficiency = -0.45	# Workers are being sucked away from the factories!
+		war_exhaustion = 0.1
+    }
+}
+
+training_laws = {
+    minimal_training = {
+		cost = 0.5
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+        }
+        unit_recruitment_time = -0.25
+		air_build_speed = 0.33
+		naval_build_speed = 0.33
+		reinforcement_bonus = 0.5
+    }
+
+    basic_training = {
+		cost = 0.5
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			infantry_training = 1
+        }
+		officer_recruitment = 0.25
+        unit_start_experience = 5
+		reinforcement_bonus = 0.3
+    }
+
+    advanced_training = {
+		cost = 0.75
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			infantry_training = 2
+			officer_training = 1
+        }
+		officer_recruitment = 0.50
+        unit_recruitment_time = 0.25
+		air_build_speed = -0.20
+		naval_build_speed = -0.20
+        unit_start_experience = 10
+		reinforcement_bonus = 0.1
+    }
+
+    specialist_training = {
+		cost = 1
+        allow = {
+			government_in_exile = no
+			has_global_flag = "setup"
+			infantry_training = 3
+			officer_training = 2
+			special_forces_training = 1
+        }
+		officer_recruitment = 0.75
+        unit_recruitment_time = 0.50
+		air_build_speed = -0.33
+		naval_build_speed = -0.33
+        unit_start_experience = 15
+    }
+}
+
+# International Status
+
+international_status = {
+    undeveloped_minor = {
+		cost = 0.0
+        allow = {
+        }
+        global_leadership = 1
+    }
+    developed_medium = {
+		cost = 0.0
+        allow = {
+			total_ic = 10
+        }
+        global_leadership = 3
+    }
+    industrial_medium = {
+		cost = 0.0
+        allow = {
+			total_ic = 25
+			total_amount_of_brigades = 75
+        }
+        global_leadership = 5
+    }
+    regional_power = {
+		cost = 0.0
+        allow = {
+			government_in_exile = no
+			total_ic = 30
+			total_amount_of_brigades = 100
+        }
+        global_leadership = 8
+    }
+    intermediate_power = {
+	cost = 0.0
+	allow = {
+		is_subject = no
+		government_in_exile = no
+		total IC = 75
+		total_amount_of_brigades = 150
+		total_amount_of_planes = 5
+	}
+	global_leadership = 12
+    }
+    major_power = {
+		cost = 0.0
+        allow = {
+			is_subject = no
+			government_in_exile = no
+			total_ic = 100
+			total_amount_of_brigades = 200
+			total_amount_of_planes = 20
+			total_amount_of_ships = 15
+        }
+        global_leadership = 16
+	}
+	great_power = {
+		cost = 0.0
+        allow = {
+			is_subject = no
+			government_in_exile = no
+			total_ic = 200
+			total_amount_of_brigades = 300
+			total_amount_of_planes = 30
+			total_amount_of_ships = 30
+        }
+        global_leadership = 22
+    }
+	superpower = {
+		cost = 0.0
+        allow = {
+			is_subject = no
+			government_in_exile = no
+			total_ic = 350
+			total_amount_of_brigades = 500
+			total_amount_of_divisions = 125
+			total_amount_of_planes = 50
+			total_amount_of_ships = 90
+        }
+        global_leadership = 30
+    }
+}

@@ -1,0 +1,960 @@
+##################################
+# Destroyers for Bases Agreement #
+##################################
+# Informs the UK about the decision
+country_event = {
+
+	id = 1601
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1601"
+	desc = "EVTDESC1601"
+	picture = "dd_transfer"
+
+	option = {
+		name = "EVTOPTA1601"			# We need all the help we can get
+		relation = { who = USA value = 50 }
+		load_oob = "DestroyersForBases.txt"
+	}
+}
+
+##########################################
+# US occupation of Greenland and Iceland #
+##########################################
+# US - Reaction Event
+country_event = {
+
+	id = 1602
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1606"
+	desc = "EVTDESC1606"
+	picture = "american_soldiers_winter"
+
+	option = {
+		name = "We will keep the order."
+		
+		neutrality = -3
+
+		any_country = {
+			gronland_region = { add_core = USA secede_province = USA remove_core = USA }
+			iceland_region = { add_core = USA secede_province = USA remove_core = USA }
+			14153 = { add_core = ENG secede_province = ENG remove_core = ENG }
+		}
+		
+		relation = { who = GER value = -15 }
+		relation = { who = ENG value = 25 }
+		relation = { who = DEN value = 10 }
+	}
+}
+
+######################
+# The Lend-Lease Act #
+######################
+# Informs the UK about the decision
+country_event = {
+
+	id = 1603
+	
+	trigger = {
+		war_with = GER
+	}
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1602"
+	desc = "EVTDESC1602"
+	picture = "lend_lease"
+
+	option = {
+		name = "EVTOPTA1602"			# Excellent!
+		relation = { who = USA value = 25 }
+	}
+}
+
+# Informs France about the decision
+country_event = {
+
+	id = 1604
+	
+	trigger = {
+		faction = allies
+	}
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1603"
+	desc = "EVTDESC1603"
+	picture = "lend_lease"
+
+	option = {
+		name = "EVTOPTA1603"			# Excellent! Not that they get anything...
+		relation = { who = USA value = 25 }
+	}
+}
+
+# Informs China about the decision
+country_event = {
+
+	id = 1605
+	
+	trigger = {
+		not = { faction = axis }
+		not = { war_with = ENG }
+	}
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1604"
+	desc = "EVTDESC1604"
+	picture = "Lend_Lease_Chi"
+
+	option = {
+		name = "EVTOPTA1604"			# Excellent!
+		relation = { who = USA value = 25 }
+	}
+}
+
+# Informs Soviet about the decision
+country_event = {
+
+	id = 1606
+	
+	trigger = {
+		not = { war_with = ENG }
+	}
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1605"
+	desc = "EVTDESC1605"
+	picture = "Lend_Lease_SOV"
+
+	option = {
+		name = "EVTOPTA1605"			# Excellent!
+		relation = { who = USA value = 25 }
+	}
+}
+
+
+#####################################
+# Dissolution of Union with Denmark #
+#####################################
+
+country_event = {
+
+	id = 1607
+
+	major = yes
+
+	trigger = {
+		year = 1944
+		or = {
+			tag = USA
+			tag = DEN
+		}
+		iceland_region = { owned_by = THIS }
+		not = { has_country_flag = "independent_iceland" }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "Independence of Iceland"
+	desc = "On 31 December 1943, the Act of Union Agreement expired after 25 years. Beginning on 20 May 1944, Icelanders voted in a four-day plebiscite on whether to terminate the personal union with the King of Denmark and establish a republic."
+	picture = "american_soldiers_winter"
+
+	option = {
+		name = "Support the independence of Iceland"
+		ai_chance = { factor = 90 }
+		set_country_flag = "independent_iceland"
+		iceland_region = { limit = { is_core = ICL } remove_core = USA remove_core = DEN secede_province = ICL }
+	}
+
+	option = {
+		name = "They should be independent, but they need our guidance and protection!"
+		ai_chance = { factor = 10 }
+		set_country_flag = "independent_iceland"
+		iceland_region = { limit = { is_core = ICL } remove_core = USA remove_core = DEN secede_province = ICL }
+		create_vassal = ICL
+	}
+
+	option = {
+		name = "Oppose any idea of this kind!"
+		ai_chance = { factor = 0 }
+		set_country_flag = "independent_iceland"
+		iceland_region = { limit = { is_core = ICL } remove_core = USA remove_core = DEN }
+	}
+}
+
+#################
+# Flying Tigers #
+#################
+
+country_event = {
+
+	id = 1608
+
+	is_triggered_only = yes
+
+	title = "The Flying Tigers"
+	desc = "The United States sent a group of Light Fighters with volunteers to help us fight the Japanese!"
+	picture = "Lend_Lease_Chi"
+
+	option = {
+		name = "Good! We need them!"
+		ai_chance = { factor = 100 }
+		relation = { who = USA value = 15 }
+		USA = { country_event = 1609 }
+		social_conservative = { organisation = 5 }
+		market_liberal = { organisation = 3 }
+		social_liberal = { organisation = 3 }
+		social_democrat = { organisation = 5 }
+		money = -100
+		load_oob = "TheFlyingTigers.txt"
+	}
+	option = {
+		name = "Thanks, but no thanks."
+		ai_chance = { factor = 0 }
+		USA = { country_event = 1610 }
+	}
+}
+
+# China accepts the volunteers
+country_event = {
+
+	id = 1609
+
+	is_triggered_only = yes
+
+	title = "China accepts our help"
+	desc = "China accepted the help of the Flying Tigers."
+	picture = "Xian_Incident"
+
+	option = {
+		name = "Good."
+		relation = { who = CHI value = 15 }
+		money = 100
+	}
+}
+
+# China declines the volunteers
+country_event = {
+
+	id = 1610
+
+	is_triggered_only = yes
+
+	title = "China declines our help"
+	desc = "China declined the help of the Flying Tigers."
+	picture = "Xian_Incident"
+
+	option = {
+		name = "Their loss."
+	}
+}
+
+####################################
+# Lend-Lease: The actual shipments #
+####################################
+
+country_event = {	# Shipment for UK
+
+	id = 1611
+
+	trigger = {
+		tag = USA
+		has_country_flag = "lend_lease_act"
+		exists = ENG
+		ENG = { is_subject = no }
+		ENG = { government_in_exile = no }
+		not = { war_with = ENG }
+		OR = {
+			ENG = { war_with = GER }
+			ENG = { war_with = JAP }
+		}
+		ENG = { num_of_ports = 1 }	# Have at least 1 port
+		energy = 4000
+		metal = 2000
+		rare_materials = 1000
+		crude_oil = 5000
+		supplies = 5000
+		fuel = 5000
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "Lend-Lease shipment to the United Kingdom"
+	desc = "We could arrange another Lend-Lease shipment for the United Kingdom. Should we do so?"
+	picture = "lend_lease"
+
+	option = {
+		name = "Send a shipment"
+		ai_chance = { factor = 75 }
+		neutrality = -1
+		ENG = { country_event = 1612 }
+		energy = -4000
+		metal = -2000
+		rare_materials = -1000
+		crude_oil = -5000
+		supplies = -5000
+		fuel = -5000
+	}
+
+	option = {
+		name = "Not now"
+		ai_chance = { factor = 25 }
+	}
+
+}
+
+country_event = {
+
+	id = 1612
+
+	is_triggered_only = yes
+
+	title = "Lend-Lease shipment from the USA"
+	desc = "Another shipment arrived from the USA. This will help our war effort immensely!"
+	picture = "lend_lease"
+
+	option = {
+		name = "This will help us greatly!"
+		relation = { who = USA value = 5 }
+		energy = 4000
+		metal = 2000
+		rare_materials = 1000
+		crude_oil = 5000
+		supplies = 5000
+		fuel = 5000
+	}
+
+}
+
+country_event = {	# Shipment for USSR
+
+	id = 1613
+
+	trigger = {
+		tag = USA
+		has_country_flag = "lend_lease_act"
+		exists = SOV
+		SOV = { is_subject = no }
+		SOV = { government_in_exile = no }
+		not = { war_with = SOV }
+		not = { SOV = { war_with = ENG } }
+		OR = {
+			SOV = { war_with = GER }
+			SOV = { war_with = JAP }
+		}
+		SOV = { num_of_ports = 1 }	# Have at least 1 port
+		supplies = 10000
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "Lend-Lease shipment to the USSR"
+	desc = "We could arrange another Lend-Lease shipment for the Soviet Union. Should we do so?"
+	picture = "lend_lease"
+
+	option = {
+		name = "Send a shipment"
+		ai_chance = { factor = 75 }
+		neutrality = -1
+		SOV = { country_event = 1614 }
+		supplies = -10000
+	}
+
+	option = {
+		name = "Not now"
+		ai_chance = { factor = 25 }
+	}
+
+}
+
+country_event = {
+
+	id = 1614
+
+	is_triggered_only = yes
+
+	title = "Lend-Lease shipment from the USA"
+	desc = "Another shipment arrived from the USA. This will help our war effort immensely!"
+	picture = "Lend_Lease_SOV"
+
+	option = {
+		name = "This will help us greatly!"
+		relation = { who = USA value = 5 }
+		random_owned = { limit = { controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { controlled_by = THIS not = { industry = 10 } } industry = 1 }
+		random_owned = { limit = { controlled_by = THIS not = { industry = 10 } } industry = 1 }
+	}
+
+}
+
+country_event = {	# Shipment for China
+
+	id = 1615
+
+	trigger = {
+		tag = USA
+		has_country_flag = "lend_lease_act"
+		exists = CHI
+		CHI = { is_subject = no }
+		CHI = { government_in_exile = no }
+		not = { war_with = CHI }
+		CHI = { war_with = JAP }
+		not = { CHI = { faction = axis } }
+		OR = {
+			CHI = { has_country_flag = "burma_road" }		# Having the Burma Road would be enough.
+			CHI = { num_of_ports = 1 }						# Have at least 1 port
+		}
+		supplies = 2000
+		energy = 2000
+		metal = 2000
+		rare_materials = 2000
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "Lend-Lease shipment to China"
+	desc = "We could arrange another Lend-Lease shipment for China. Should we do so?"
+	picture = "lend_lease"
+
+	option = {
+		name = "Send a shipment"
+		ai_chance = { factor = 75 }
+		neutrality = -1
+		CHI = { country_event = 1616 }
+		supplies = -2000
+		energy = -2000
+		metal = -2000
+		rare_materials = -2000
+	}
+
+	option = {
+		name = "Not now"
+		ai_chance = { factor = 25 }
+	}
+
+}
+
+country_event = {
+
+	id = 1616
+
+	is_triggered_only = yes
+
+	title = "Lend-Lease shipment from the USA"
+	desc = "Another shipment arrived from the USA. This will help our war effort immensely!"
+	picture = "Lend_Lease_Chi"
+
+	option = {
+		name = "This will help us greatly!"
+		relation = { who = USA value = 5 }
+		supplies = 2000
+		energy = 2000
+		metal = 2000
+		rare_materials = 2000
+	}
+
+}
+
+country_event = {
+
+	id = 1617
+	
+	major = yes
+
+	trigger = {
+		tag = USA
+		ideology_group = democracy
+		has_country_flag = "lend_lease_act"
+		ENG = { war_with = GER }
+		not = { ENG = { strat_convoy_impact = -0.2 } }
+		not = { has_country_flag = "passenger_ship_sunk" }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = { factor = 0.8 not = { ENG = { strat_convoy_impact = -0.3 } } }
+		modifier = { factor = 0.7 not = { ENG = { strat_convoy_impact = -0.4 } } }
+		modifier = { factor = 0.6 not = { ENG = { strat_convoy_impact = -0.5 } } }
+		modifier = { factor = 0.5 not = { ENG = { strat_convoy_impact = -0.6 } } }
+		modifier = { factor = 0.4 not = { ENG = { strat_convoy_impact = -0.7 } } }
+		modifier = { factor = 0.3 not = { ENG = { strat_convoy_impact = -0.8 } } }
+		modifier = { factor = 0.2 not = { ENG = { strat_convoy_impact = -0.9 } } }
+		modifier = { factor = 0.1 not = { ENG = { strat_convoy_impact = -1.0 } } }
+	}
+
+	title = "Unrestricted Submarine Warfare"
+	desc = "A pessanger ship with over a hundred American citizens on board was sunk by a German Submarine today. Public support for a war against the Reich has grown radically."
+	picture = "Lend_Lease"
+
+	option = {
+		name = "This is an outrage!"
+		set_country_flag = "passenger_ship_sunk"
+		neutrality = -20
+		relation = { who = GER value = -100 }
+		GER = { threat = { who = USA value = 25 } }
+	}
+
+}
+
+##################
+# US Oil-Embargo #
+##################
+
+country_event = {
+
+	id = 1619
+	
+	is_triggered_only = yes
+	
+	title = "US Oil Embargo"
+	desc = "The United States decided to stop the oil trades they had with us, effectively crippling our fuel-industry!"
+	picture = "dd_transfer"
+	
+	option = {
+		name = "But we needed that oil!..."
+		war_exhaustion = 1
+		relation = { who = USA value = -50 }
+		threat = { who = USA value = 20 }
+	}
+
+}
+
+###################
+# Japanese attack #
+###################
+
+country_event = {
+
+	id = 1620
+
+	is_triggered_only = yes
+
+	title = "A fiendish attack!"
+	desc = "Yesterday, December 7th, 1941 - a date which will live in infamy - the United States of America was suddenly and deliberately attacked by naval and air forces of the Empire of Japan..."
+	picture = "Pearl_harbor"
+
+	option = {
+		name = "A day of infamy..."
+		ai_chance = { factor = 100 }
+		set_country_flag = "nation_in_shock_flag"
+		add_country_modifier = {
+			name = "nation_in_shock"
+			duration = 30
+		}
+		6119 = { naval_base = -3 }			# Guam
+		5825 = { naval_base = -5 }			# Honolulu
+		10664 = { naval_base = -3 }			# Wake Island
+		10669 = { naval_base = -4 }			# Midway Island
+	}
+
+}
+
+country_event = {
+
+	id = 1621
+
+	trigger = {
+		tag = USA
+		war_with = JAP
+		not = { has_country_modifier = "nation_in_shock" }
+		has_country_flag = "nation_in_shock_flag"
+	}
+
+	title = "Awakening the giant"
+	desc = "Our nation is at war with the Empire of Japan! Volunteers are flooding into our recruitment offices, and our military industry is booming. They will rue the day they started with us!"
+	picture = "american_victory_pacific"
+
+	option = {
+		name = "They will regret this!"
+		clr_country_flag = "nation_in_shock_flag"
+		manpower = 750
+		national_unity = 5
+		dissent = -10
+		neutrality = -25
+		add_wargoal = {
+			target = JAP
+			war_goal = { casus_belli = puppet }
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 1622
+	
+	trigger = {
+		tag = USA
+		JAP = { has_country_flag = "pearl_harbour" }
+		not = { has_country_flag = "pacific_ports_repaired" }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "Pacific ports repaired"
+	desc = "Our naval bases that were damaged in the surprise attack by Japan are slowly getting back on their feet. In a few months they will be fully operational again!"
+	picture = "american_victory_pacific"
+	
+	option = {
+		name = "Good!"
+		set_country_flag = "pacific_ports_repaired"
+		6119 = { naval_base = 1 }			# Guam
+		5825 = { naval_base = 2 }			# Honolulu
+		10664 = { naval_base = 1 }			# Wake Island
+		10669 = { naval_base = 2 }			# Midway Island
+	}
+}
+
+country_event = {
+
+	id = 1623
+	
+	trigger = {
+		tag = USA
+		JAP = { has_country_flag = "pearl_harbour" }
+		has_country_flag = "pacific_ports_repaired"
+		not = { has_country_flag = "pacific_ports_done" }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "Pacific ports repaired"
+	desc = "Our naval bases that were damaged in the surprise attack by Japan are finally back in action."
+	picture = "american_victory_pacific"
+	
+	option = {
+		name = "It was about time!"
+		set_country_flag = "pacific_ports_done"
+		6119 = { naval_base = 2 }			# Guam
+		5825 = { naval_base = 3 }			# Honolulu
+		10664 = { naval_base = 2 }			# Wake Island
+		10669 = { naval_base = 2 }			# Midway Island
+	}
+}
+
+#####################################
+# Foreign influence in the Americas #
+#####################################
+
+country_event = {
+
+	id = 1625
+
+	trigger = {
+		not = { tag = USA }
+		not = { has_country_flag = "threaten_the_usa" }
+		or = {
+			and = {
+				faction = allies
+				USA = { not = { ideology_group = democracy } }
+			}
+			and = {
+				faction = axis
+				USA = { not = { ideology_group = fascism } }
+			}
+			and = {
+				faction = comintern
+				USA = { not = { ideology_group = communism } }
+			}
+		}
+		any_owned_province = {
+			or = {
+				continent = north_america
+				continent = south_america
+				continent = Central_America
+				continent = Caribbean
+			}
+			is_capital = yes
+		}
+	}
+
+	title = "The USA feels threatened"
+	desc = "With our membership in a faction not in line with US policies, it is inevitable that our relations will drop with them."
+	picture = "american_soldiers_winter"
+
+	option = {
+		name = "They won't take this lightly..."
+		set_country_flag = "threaten_the_usa"
+		clr_country_flag = "protected_by_the_usa"	# No longer elligible for requesting help
+		threat = { who = USA value = 25 }
+		USA = { country_event = 1626 }
+	}
+
+}
+
+country_event = {
+
+	id = 1626
+
+	is_triggered_only = yes
+
+	title = "Foreign influence in the Americas"
+	desc = "$FROMCOUNTRY$ joined a faction, surely the result of foreign manipulation in our sphere of influence!"
+	picture = "american_soldiers_winter"
+
+	option = {
+		name = "Bad news indeed!"
+		neutrality = -5
+		end_guarantee = FROM
+		end_non_aggression_pact = FROM
+		relation = { who = FROM value = -50 }
+	}
+
+}
+
+country_event = {
+
+	id = 1627
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ideology_group = fascism
+	}
+	
+	title = "Democrats and Communists feel threatened"
+	desc = "The Communist and Democrat Majors feel threatened by our actions."
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Whatever."
+		threat = { who = ENG value = 25 }
+		threat = { who = FRA value = 25 }
+		threat = { who = SOV value = 50 }
+	}
+}
+
+country_event = {
+
+	id = 1628
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ideology_group = democracy
+	}
+	
+	title = "Fascists and Communists feel threatened"
+	desc = "The Communist and Fascistic Majors feel threatened by our actions."
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Whatever."
+		threat = { who = GER value = 25 }
+		threat = { who = ITA value = 25 }
+		threat = { who = JAP value = 25 }
+		threat = { who = SOV value = 25 }
+	}
+}
+
+country_event = {
+
+	id = 1629
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ideology_group = communism
+	}
+	
+	title = "Democrats and Fascists feel threatened"
+	desc = "The Fascistic and Democrat Majors feel threatened by our actions."
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Whatever."
+		threat = { who = GER value = 50 }
+		threat = { who = ITA value = 50 }
+		threat = { who = JAP value = 50 }
+		threat = { who = ENG value = 25 }
+		threat = { who = FRA value = 25 }
+	}
+}
+
+country_event = {
+
+	id = 1631
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		base_neutrality = 95
+	}
+	
+	title = "The people are really angry"
+	desc = "The US Citizens really didn't take it very well that we abolished our isolationist stance."
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "They don't know what's good for them!"
+		neutrality = -50
+		dissent = 100
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		country_event = 1627
+		country_event = 1628
+		country_event = 1629
+	}
+}
+
+country_event = {
+
+	id = 1632
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		base_neutrality = 85
+		not = { base_neutrality = 95 }
+	}
+	
+	title = "The people are angry"
+	desc = "The US Citizens didn't take it very well that we abolished our isolationist stance."
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "They don't know what's good for them!"
+		neutrality = -40
+		dissent = 80
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		country_event = 1627
+		country_event = 1628
+		country_event = 1629
+	}
+}
+
+country_event = {
+
+	id = 1633
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		base_neutrality = 75
+		not = { base_neutrality = 85 }
+	}
+	
+	title = "The people are concerned"
+	desc = "The US Citizens are concerned about our new, more interventionist policies."
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "They don't know what's good for them!"
+		neutrality = -30
+		dissent = 60
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		country_event = 1627
+		country_event = 1628
+		country_event = 1629
+	}
+}
+
+country_event = {
+
+	id = 1634
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		base_neutrality = 65
+		not = { base_neutrality = 75 }
+	}
+	
+	title = "The people disagree"
+	desc = "Many US Citizens disagree with our new, interventionist policies."
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "They don't know what's good for them!"
+		neutrality = -20
+		dissent = 40
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		country_event = 1627
+		country_event = 1628
+		country_event = 1629
+	}
+}
+
+country_event = {
+
+	id = 1635
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		base_neutrality = 55
+		not = { base_neutrality = 65 }
+	}
+	
+	title = "The people are mildly inconvinienced"
+	desc = "A negligible minority of our population didn't feel it was time to make this step towards interventionism just yet."
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "They don't know what's good for them!"
+		neutrality = -10
+		dissent = 20
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		random_owned = { limit = { infra = 2 industry = 1 } create_revolt = 3 }
+		country_event = 1627
+		country_event = 1628
+		country_event = 1629
+	}
+}

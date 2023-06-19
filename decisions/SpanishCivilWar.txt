@@ -1,0 +1,748 @@
+####################
+# HPP mod
+####################
+# Republican Spain #
+####################
+diplomatic_decisions = {
+
+	republican_call_to_arms_1 = {
+		potential = {
+			tag = SPR
+			exists = SPA
+			not = { has_country_flag = "republican_call_to_arms" }
+			SPA = { total_amount_of_divisions = 0 }
+			not = { SPA = { total_amount_of_divisions = 5 } }
+		}
+		allow = {
+			not = { has_country_modifier = "initial_chaos" }
+		}
+		effect = {
+			set_country_flag = "republican_call_to_arms"
+			country_event = 2003
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	republican_call_to_arms_2 = {
+		potential = {
+			tag = SPR
+			exists = SPA
+			not = { has_country_flag = "republican_call_to_arms" }
+			SPA = { total_amount_of_divisions = 5 }
+			not = { SPA = { total_amount_of_divisions = 10 } }
+		}
+		allow = {
+			not = { has_country_modifier = "initial_chaos" }
+		}
+		effect = {
+			set_country_flag = "republican_call_to_arms"
+			country_event = 2004
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	republican_call_to_arms_3 = {
+		potential = {
+			tag = SPR
+			exists = SPA
+			not = { has_country_flag = "republican_call_to_arms" }
+			SPA = { total_amount_of_divisions = 10 }
+			not = { SPA = { total_amount_of_divisions = 15 } }
+		}
+		allow = {
+			not = { has_country_modifier = "initial_chaos" }
+		}
+		effect = {
+			set_country_flag = "republican_call_to_arms"
+			country_event = 2003
+			country_event = 2004
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	republican_call_to_arms_4 = {
+		potential = {
+			tag = SPR
+			exists = SPA
+			not = { has_country_flag = "republican_call_to_arms" }
+			SPA = { total_amount_of_divisions = 15 }
+			not = { SPA = { total_amount_of_divisions = 20 } }
+		}
+		allow = {
+			not = { has_country_modifier = "initial_chaos" }
+		}
+		effect = {
+			set_country_flag = "republican_call_to_arms"
+			country_event = 2005
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	republican_call_to_arms_5 = {
+		potential = {
+			tag = SPR
+			exists = SPA
+			not = { has_country_flag = "republican_call_to_arms" }
+			SPA = { total_amount_of_divisions = 20 }
+			not = { SPA = { total_amount_of_divisions = 25 } }
+		}
+		allow = {
+			not = { has_country_modifier = "initial_chaos" }
+		}
+		effect = {
+			set_country_flag = "republican_call_to_arms"
+			country_event = 2003
+			country_event = 2005
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	republican_call_to_arms_6 = {
+		potential = {
+			tag = SPR
+			exists = SPA
+			not = { has_country_flag = "republican_call_to_arms" }
+			SPA = { total_amount_of_divisions = 25 }
+			not = { SPA = { total_amount_of_divisions = 30 } }
+		}
+		allow = {
+			not = { has_country_modifier = "initial_chaos" }
+		}
+		effect = {
+			set_country_flag = "republican_call_to_arms"
+			country_event = 2004
+			country_event = 2005
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	republican_call_to_arms_7 = {
+		potential = {
+			tag = SPR
+			exists = SPA
+			not = { has_country_flag = "republican_call_to_arms" }
+			SPA = { total_amount_of_divisions = 30 }
+			not = { SPA = { total_amount_of_divisions = 38 } }
+		}
+		allow = {
+			not = { has_country_modifier = "initial_chaos" }
+		}
+		effect = {
+			set_country_flag = "republican_call_to_arms"
+			country_event = 2003
+			country_event = 2004
+			country_event = 2005
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	republican_call_to_arms_8 = {
+		potential = {
+			tag = SPR
+			exists = SPA
+			not = { has_country_flag = "republican_call_to_arms" }
+			SPA = { total_amount_of_divisions = 38 }
+			not = { SPA = { total_amount_of_divisions = 45 } }
+		}
+		allow = {
+			not = { has_country_modifier = "initial_chaos" }
+		}
+		effect = {
+			set_country_flag = "republican_call_to_arms"
+			country_event = 2006
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	republican_call_to_arms_9 = {
+		potential = {
+			tag = SPR
+			exists = SPA
+			not = { has_country_flag = "republican_call_to_arms" }
+			SPA = { total_amount_of_divisions = 45 }
+			not = { SPA = { total_amount_of_divisions = 60 } }
+		}
+		allow = {
+			not = { has_country_modifier = "initial_chaos" }
+		}
+		effect = {
+			set_country_flag = "republican_call_to_arms"
+			country_event = 2003
+			country_event = 2006
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	republican_call_to_arms_10 = {
+		potential = {
+			tag = SPR
+			exists = SPA
+			not = { has_country_flag = "republican_call_to_arms" }
+			SPA = { total_amount_of_divisions = 60 }
+		}
+		allow = {
+			not = { has_country_modifier = "initial_chaos" }
+		}
+		effect = {
+			set_country_flag = "republican_call_to_arms"
+			country_event = 2004
+			country_event = 2006
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# France supports the Republicans
+	spanish_civil_war_french_intervention_spr = {
+		major = yes
+		potential = {
+			tag = FRA
+			not = { has_country_flag = "french_intervention_spanish_civil_war_spr" }
+			not = { has_country_flag = "french_intervention_spanish_civil_war_spa" }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPA }
+			SPR = { not = { faction = axis } }
+			SPA = { not = { faction = allies } }
+		}
+		allow = {
+			not = { ideology_group = fascism }
+			not = { dissent = 1 }
+			OR = {
+				popularity = 50
+				organisation = 50
+			}
+			not = { war_with = SPR }
+			not = { war_with = SOV }
+			not = { war_with = ENG }
+			not = { war_with = USA }
+			not = { neutrality = 80 }
+			SPR = { controls = 4862 }
+			or = {
+				ai = yes
+				and = {
+					money = 500
+					supplies = 1000
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "scw_intervention"
+			set_country_flag = "french_intervention_spanish_civil_war_spr"
+			supplies = -1000
+			money = -500
+			neutrality = -1
+			left_wing_radical = { organisation = 10 popularity = 5 }
+			leninist = { organisation = 7 popularity = 3 }
+			stalinist = { organisation = 3 popularity = 1 }
+			relation = { who = SPR value = 25 }
+			relation = { who = SPA value = -25 }
+			SPR = { country_event = 2009 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	spanish_civil_war_french_intervention_full_spr = {
+		major = yes
+		potential = {
+			tag = FRA
+			not = { has_country_flag = "french_intervention_spanish_civil_war_spr" }
+			not = { has_country_flag = "french_intervention_spanish_civil_war_spa" }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPA }
+			SPR = { not = { faction = axis } }
+			SPA = { not = { faction = allies } }
+			popularity = 50
+			organisation = 50
+		}
+		allow = {
+			not = { ideology_group = fascism }
+			not = { dissent = 1 }
+			not = { war_with = SPR }
+			not = { war_with = SOV }
+			not = { war_with = ENG }
+			not = { war_with = USA }
+			not = { neutrality = 80 }
+			manpower = 10
+			SPR = { controls = 4862 }
+			or = {
+				ai = yes
+				and = {
+					money = 1000
+					supplies = 3000
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "scw_intervention"
+			set_country_flag = "french_intervention_spanish_civil_war_spr"
+			manpower = -10
+			supplies = -3000
+			money = -1000
+			neutrality = -2
+			relation = { who = SPR value = 50 }
+			relation = { who = SPA value = -25 }
+			left_wing_radical = { organisation = 3 popularity = 1 }
+			leninist = { organisation = 7 popularity = 3 }
+			stalinist = { organisation = 10 popularity = 5 }
+			SPR = { country_event = 2022 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# United Kingdom supports the Republicans
+	spanish_civil_war_british_intervention_spr = {
+		major = yes
+		potential = {
+			tag = ENG
+			not = { has_country_flag = "british_intervention_spanish_civil_war_spr" }
+			not = { has_country_flag = "british_intervention_spanish_civil_war_spa" }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPA }
+			SPR = { not = { faction = axis } }
+			SPA = { not = { faction = allies } }
+		}
+		allow = {
+			not = { ideology_group = fascism }
+			not = { dissent = 1 }
+			OR = {
+				popularity = 50
+				organisation = 50
+			}
+			not = { war_with = SPR }
+			not = { war_with = SOV }
+			not = { war_with = FRA }
+			not = { war_with = USA }
+			not = { neutrality = 80 }
+			SPR = { controls = 4862 }
+			or = {
+				ai = yes
+				and = {
+					money = 500
+					supplies = 1000
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "scw_intervention"
+			set_country_flag = "british_intervention_spanish_civil_war_spr"
+			supplies = -1000
+			money = -500
+			neutrality = -1
+			relation = { who = SPR value = 25 }
+			relation = { who = SPA value = -25 }
+			left_wing_radical = { organisation = 10 popularity = 5 }
+			leninist = { organisation = 7 popularity = 3 }
+			stalinist = { organisation = 3 popularity = 1 }
+			SPR = { country_event = 2010 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	spanish_civil_war_british_intervention_full_spr = {
+		major = yes
+		potential = {
+			tag = ENG
+			not = { has_country_flag = "british_intervention_spanish_civil_war_spr" }
+			not = { has_country_flag = "british_intervention_spanish_civil_war_spa" }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPA }
+			SPR = { not = { faction = axis } }
+			SPA = { not = { faction = allies } }
+			popularity = 50
+			organisation = 50
+		}
+		allow = {
+			not = { ideology_group = fascism }
+			not = { dissent = 1 }
+			not = { war_with = SPR }
+			not = { war_with = SOV }
+			not = { war_with = FRA }
+			not = { war_with = USA }
+			not = { neutrality = 80 }
+			manpower = 10
+			SPR = { controls = 4862 }
+			or = {
+				ai = yes
+				and = {
+					money = 1000
+					supplies = 3000
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "scw_intervention"
+			set_country_flag = "british_intervention_spanish_civil_war_spr"
+			manpower = -10
+			supplies = -3000
+			money = -1000
+			neutrality = -2
+			relation = { who = SPR value = 50 }
+			relation = { who = SPA value = -25 }
+			left_wing_radical = { organisation = 3 popularity = 1 }
+			leninist = { organisation = 7 popularity = 3 }
+			stalinist = { organisation = 10 popularity = 5 }
+			SPR = { country_event = 2023 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Soviet
+	spanish_civil_war_russian_intervention = {
+		major = yes
+		potential = {
+			tag = SOV
+			not = { has_country_flag = "russian_intervention_spanish_civil_war" }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPA }
+			SPR = { not = { faction = axis } }
+			SPA = { not = { faction = allies } }
+		}
+		allow = {
+			ideology_group = communism
+			not = { war_with = SPR }
+			not = { war_with = ENG }
+			not = { war_with = FRA }
+			not = { war_with = USA }
+			manpower = 80
+			SPR = { controls = 4862 }
+			or = {
+				ai = yes
+				and = {
+					money = 1000
+					supplies = 1000
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "scw_intervention"
+			set_country_flag = "russian_intervention_spanish_civil_war"
+			manpower = -80
+			supplies = -1000
+			money = -1000
+			neutrality = -5
+			relation = { who = SPR value = 50 }
+			relation = { who = SPA value = -25 }
+			SPR = { country_event = 2011 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#####################
+	# Nationalist Spain #
+	#####################
+	# Germany
+	spanish_civil_war_german_intervention = {
+		major = yes
+		potential = {
+			tag = GER
+			not = { has_country_flag = "german_intervention_spanish_civil_war" }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPR }
+			SPR = { not = { faction = axis } }
+			SPA = { not = { faction = allies } }
+		}
+		allow = {
+			ideology_group = fascism
+			not = { war_with = SPA }
+			manpower = 30
+			SPA = { controls = 3610 }
+			or = {
+				ai = yes
+				and = {
+					money = 1000
+					supplies = 5000
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "scw_intervention"
+			set_country_flag = "german_intervention_spanish_civil_war"
+			manpower = -30
+			supplies = -5000
+			money = -1000
+			neutrality = -2
+			relation = { who = SPA value = 50 }
+			relation = { who = SPR value = -25 }
+			SPA = { country_event = 2014 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# Italy
+	spanish_civil_war_italian_intervention = {
+		major = yes
+		potential = {
+			tag = ITA
+			not = { has_country_flag = "italian_intervention_spanish_civil_war" }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPR }
+			SPR = { not = { faction = axis } }
+			SPA = { not = { faction = allies } }
+		}
+		allow = {
+			ideology_group = fascism
+			not = { war_with = SPA }
+			manpower = 30
+			SPA = { controls = 3610 }
+			or = {
+				ai = yes
+				and = {
+					money = 1000
+					supplies = 5000
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "scw_intervention"
+			set_country_flag = "italian_intervention_spanish_civil_war"
+			manpower = -30
+			supplies = -5000
+			money = -1000
+			neutrality = -2
+			relation = { who = SPA value = 50 }
+			relation = { who = SPR value = -25 }
+			SPA = { country_event = 2015 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# France supports the Nationalists
+	spanish_civil_war_french_intervention_spa = {
+		major = yes
+		potential = {
+			tag = FRA
+			not = { has_country_flag = "french_intervention_spanish_civil_war_spa" }
+			not = { has_country_flag = "french_intervention_spanish_civil_war_spr" }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPR }
+			SPA = { not = { faction = axis } }
+			SPR = { not = { faction = allies } }
+		}
+		allow = {
+			not = { ideology_group = communism }
+			not = { dissent = 1 }
+			OR = {
+				popularity = 50
+				organisation = 50
+			}
+			not = { war_with = SPR }
+			not = { war_with = SOV }
+			not = { war_with = ENG }
+			not = { war_with = USA }
+			not = { neutrality = 80 }
+			SPA = { controls = 3610 }
+			or = {
+				ai = yes
+				and = {
+					money = 500
+					supplies = 1000
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "scw_intervention"
+			set_country_flag = "french_intervention_spanish_civil_war_spa"
+			supplies = -1000
+			money = -500
+			neutrality = -1
+			relation = { who = SPA value = 25 }
+			relation = { who = SPR value = -25 }
+			paternal_autocrat = { organisation = 10 popularity = 5 }
+			fascistic = { organisation = 7 popularity = 3 }
+			national_socialist = { organisation = 3 popularity = 1 }
+			SPA = { country_event = 2007 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	spanish_civil_war_french_intervention_full_spa = {
+		major = yes
+		potential = {
+			tag = FRA
+			not = { has_country_flag = "french_intervention_spanish_civil_war_spa" }
+			not = { has_country_flag = "french_intervention_spanish_civil_war_spr" }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPR }
+			SPA = { not = { faction = axis } }
+			SPR = { not = { faction = allies } }
+			popularity = 50
+			organisation = 50
+		}
+		allow = {
+			not = { ideology_group = communism }
+			not = { dissent = 1 }
+			not = { war_with = SPR }
+			not = { war_with = SOV }
+			not = { war_with = ENG }
+			not = { war_with = USA }
+			not = { neutrality = 80 }
+			manpower = 10
+			SPA = { controls = 3610 }
+			or = {
+				ai = yes
+				and = {
+					money = 1000
+					supplies = 3000
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "scw_intervention"
+			set_country_flag = "french_intervention_spanish_civil_war_spa"
+			manpower = -10
+			supplies = -3000
+			money = -1000
+			neutrality = -2
+			relation = { who = SPA value = 50 }
+			relation = { who = SPR value = -25 }
+			paternal_autocrat = { organisation = 3 popularity = 1 }
+			fascistic = { organisation = 7 popularity = 3 }
+			national_socialist = { organisation = 10 popularity = 5 }
+			SPA = { country_event = 2020 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# United Kingdom supports the Nationalists
+	spanish_civil_war_british_intervention_spa = {
+		major = yes
+		potential = {
+			tag = ENG
+			not = { has_country_flag = "british_intervention_spanish_civil_war_spa" }
+			not = { has_country_flag = "british_intervention_spanish_civil_war_spr" }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPR }
+			SPA = { not = { faction = axis } }
+			SPR = { not = { faction = allies } }
+		}
+		allow = {
+			not = { ideology_group = communism }
+			not = { dissent = 1 }
+			OR = {
+				popularity = 50
+				organisation = 50
+			}
+			not = { war_with = SPR }
+			not = { war_with = SOV }
+			not = { war_with = FRA }
+			not = { war_with = USA }
+			not = { neutrality = 80 }
+			SPA = { controls = 3610 }
+			or = {
+				ai = yes
+				and = {
+					money = 500
+					supplies = 1000
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "scw_intervention"
+			set_country_flag = "british_intervention_spanish_civil_war_spa"
+			supplies = -1000
+			money = -500
+			neutrality = -1
+			relation = { who = SPA value = 25 }
+			relation = { who = SPR value = -25 }
+			paternal_autocrat = { organisation = 10 popularity = 5 }
+			fascistic = { organisation = 7 popularity = 3 }
+			national_socialist = { organisation = 3 popularity = 1 }
+			SPA = { country_event = 2008 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	spanish_civil_war_british_intervention_full_spa = {
+		major = yes
+		potential = {
+			tag = ENG
+			not = { has_country_flag = "british_intervention_spanish_civil_war_spa" }
+			not = { has_country_flag = "british_intervention_spanish_civil_war_spr" }
+			exists = SPA
+			exists = SPR
+			SPA = { war_with = SPR }
+			not = { alliance_with = SPR }
+			SPA = { not = { faction = axis } }
+			SPR = { not = { faction = allies } }
+			popularity = 50
+			organisation = 50
+		}
+		allow = {
+			not = { ideology_group = communism }
+			not = { dissent = 1 }
+			not = { war_with = SPR }
+			not = { war_with = SOV }
+			not = { war_with = FRA }
+			not = { war_with = USA }
+			not = { neutrality = 80 }
+			manpower = 10
+			SPA = { controls = 3610 }
+			or = {
+				ai = yes
+				and = {
+					money = 1000
+					supplies = 3000
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "scw_intervention"
+			set_country_flag = "british_intervention_spanish_civil_war_spa"
+			manpower = -10
+			supplies = -3000
+			money = -1000
+			neutrality = -2
+			relation = { who = SPA value = 50 }
+			relation = { who = SPR value = -25 }
+			paternal_autocrat = { organisation = 3 popularity = 1 }
+			fascistic = { organisation = 7 popularity = 3 }
+			national_socialist = { organisation = 10 popularity = 5 }
+			SPA = { country_event = 2021 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

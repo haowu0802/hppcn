@@ -1,0 +1,345 @@
+country_event = {
+
+	id = 3901
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "support_for_china_asked_title"
+	desc = "support_for_china_asked_desc"
+	picture = "China_CW"
+
+	option = {
+		name = "Support Nationalist China!"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.0
+				ideology_group = communism
+			}
+			modifier = {
+				factor = 0.0
+				CHI = { vassal_of = JAP }
+			}
+			modifier = {
+				factor = 10.0
+				alliance_with = CHI
+			}
+		}
+		set_country_flag = helps
+		relation = { who = CHI value = 50 }
+		relation = { who = CHC value = -50 }
+		create_alliance = CHI
+		leave_alliance = CHC
+		war = {
+			target = CHC
+			attacker_goal = { casus_belli = civil_war }
+		}
+		CHC = { country_event = 3904 }
+	}
+	option = {
+		name = "Join Nationalist China!"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0.0
+				ideology_group = communism
+			}
+			modifier = {
+				factor = 100.0
+				vassal_of = CHI
+			}
+			modifier = {
+				factor = 10.0
+				alliance_with = CHI
+			}
+			modifier = {
+				factor = 0.0
+				CHI = { vassal_of = JAP }
+			}
+		}
+		CHI = { split_troops = 1.0 }
+		CHI = { country_event = 3902 }
+	}
+	option = {
+		name = "Support Communist China!"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 2.5
+				ideology_group = communism
+			}
+			modifier = {
+				factor = 2.5
+				CHI = { vassal_of = JAP }
+			}
+			modifier = {
+				factor = 10.0
+				alliance_with = CHC
+			}
+			modifier = {
+				factor = 0.0
+				has_country_flag = "anti_comintern"
+			}
+			modifier = {
+				factor = 0.5
+				has_country_flag = "anti_comintern_offered"
+			}
+		}
+		set_country_flag = helps
+		relation = { who = CHC value = 50 }
+		relation = { who = CHI value = -50 }
+		create_alliance = CHC
+		leave_alliance = CHI
+		war = {
+			target = CHI
+			attacker_goal = { casus_belli = civil_war }
+		}
+		CHC = { country_event = 3904 }
+	}
+	option = {
+		name = "Join Communist China!"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 10.0
+				ideology_group = communism
+			}
+			modifier = {
+				factor = 100.0
+				vassal_of = CHC
+			}
+			modifier = {
+				factor = 10.0
+				alliance_with = CHC
+			}
+			modifier = {
+				factor = 5
+				CHI = { vassal_of = JAP }
+			}
+			modifier = {
+				factor = 0.0
+				has_country_flag = "anti_comintern"
+			}
+			modifier = {
+				factor = 0.5
+				has_country_flag = "anti_comintern_offered"
+			}
+		}
+		CHC = { split_troops = 1.0 }
+		CHC = { country_event = 3902 }
+	}
+	option = {
+		name = "Remain neutral!"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.0
+				ideology_group = communism
+			}
+			modifier = {
+				factor = 0.0
+				war = yes
+			}
+			modifier = {
+				factor = 0.5
+				CHI = { vassal_of = JAP }
+			}
+		}
+		relation = { who = CHC value = -50 }
+		relation = { who = CHI value = -50 }
+		leave_alliance = CHI
+		leave_alliance = CHC
+		CHI = { threat = { who = THIS value = 75 } }
+		CHC = { threat = { who = THIS value = 75 } }
+		FROM = { country_event = 3903 }
+	}
+}
+
+country_event = {
+
+	id = 3902
+
+	is_triggered_only = yes
+
+	title = "join_china_title"
+	desc = "join_china_desc"
+	picture = "China_CW"
+
+	option = {
+		name = "Excellent!"
+		national_unity = 1
+		dissent = -1
+		inherit = FROM
+	}
+}
+
+country_event = {
+
+	id = 3903
+
+	is_triggered_only = yes
+
+	title = "decline_help_for_china_title"
+	desc = "decline_help_for_china_desc"
+	picture = "China_CW"
+
+	option = {
+		name = "They will pay! Later..."
+	}
+}
+
+country_event = {
+
+	id = 3904
+
+	is_triggered_only = yes
+
+	title = "support_for_china_title"
+	desc = "support_for_china_desc"
+	picture = "China_CW"
+
+	option = {
+		name = "We stand together! (For now.)"
+	}
+}
+
+country_event = {
+
+	id = 3905
+
+	is_triggered_only = yes
+
+	title = "Communist traitors!"
+	desc = "The communist traitor Mao Zedong restarted the Civil War! What's even worse, some of our own traitorous troops sided with them!"
+	picture = "China_CW"
+
+	option = {
+		name = "The traitors!"
+		CHC = { split_troops = 0.33 }
+	}
+}
+
+country_event = {
+
+	id = 3910
+
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "Chinese Civil War"
+	desc = "Jingwei asks for our permission to continue the war against the communists. That could prove problematic if they have friends, though..."
+	picture = "China_CW"
+
+	option = {
+		name = "Let them fight their pity wars."
+		ai_chance = {
+			factor = 99
+			modifier = {
+				factor = 0.0
+				CHC = { faction = comintern }
+				not = { war_with = SOV }
+			}
+		}
+		NJG = { country_event = 3911 }
+	}
+	option = {
+		name = "No. That would lead to more problems than benefits!"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100.0
+				CHC = { faction = comintern }
+				not = { war_with = SOV }
+			}
+		}
+		NJG = { country_event = 3912 }
+	}	
+}
+
+country_event = {
+
+	id = 3911
+
+	is_triggered_only = yes
+
+	title = "Chinese Civil War"
+	desc = "Japan gave their permission! We will clear Asia of the communist scum!"
+	picture = "China_CW"
+
+	option = {
+		name = "Excellent!"
+		war = {
+			target = CHC
+			attacker_goal = { casus_belli = civil_war }
+		}
+	}
+}
+
+country_event = {
+
+	id = 3912
+
+	is_triggered_only = yes
+
+	title = "Chinese Civil War"
+	desc = "Japan didn't gave us permission to attack Mao. We will have to live with it..."
+	picture = "China_CW"
+
+	option = {
+		name = "Oh, hang!"
+	}
+}
+
+country_event = {
+
+	id = 3915
+
+	trigger = {
+		or = {
+			and = {
+				tag = CHI
+				not = { exists = CHC }
+				not = { has_country_flag = end_of_the_chinese_civil_war }
+			}
+			and = {
+				tag = CHC
+				not = { exists = CHI }
+				not = { has_country_flag = end_of_the_chinese_civil_war }
+			}
+		}
+	}
+
+	title = "The end of the Chinese Civil War"
+	desc = "We are finally victorious!"
+	picture = "China_CW"
+
+	option = {
+		name = "Now on to the other traitors!"
+		ai_chance = { factor = 99 }
+		dissent = -5
+		national_unity = 5
+		leave_alliance = CXB
+		threat = { who = CXB value = 75 }
+		leave_alliance = CYN
+		threat = { who = CYN value = 75 }
+		leave_alliance = CSX
+		threat = { who = CSX value = 75 }
+		leave_alliance = CGX
+		threat = { who = CGX value = 75 }
+		leave_alliance = SIK
+		threat = { who = SIK value = 75 }
+		leave_alliance = TIB
+		threat = { who = TIB value = 75 }
+		set_country_flag = end_of_the_chinese_civil_war
+	}
+	option = {
+		name = "At last!"
+		ai_chance = { factor = 1 }
+		dissent = -5
+		national_unity = 5
+		set_country_flag = end_of_the_chinese_civil_war
+	}
+}

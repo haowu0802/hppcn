@@ -1,0 +1,358 @@
+#############################################################
+# In this file I can place decisions that will set up		#
+# the diplomatic situation of the scenario. That is			#
+# necessary for the agreements that are not controllable	#
+# through normal 'diplomacy history' files, like millitary	#
+# access or non-aggression pacts.							#
+#############################################################
+
+diplomatic_decisions = {
+
+	starting_relations = {
+		potential = {
+			tag = REB
+		}
+		allow = {
+		}
+		effect = {
+
+			# Starting relations for the majors
+			# First a generic part, to set relations all over the world, then a nation-specific part, to set relations with the other majors.
+
+			# Generic part
+
+			ENG = {
+				any_country = {				# Good relations with democracies.
+					limit = { ideology_group = democracy }
+					relation = { who = ENG value =  400 }
+					relation = { who = ENG value = -125 }
+				}
+				any_country = {				# Neutral relations with non-democracies.
+					limit = { not = { ideology_group = democracy } }
+					relation = { who = ENG value =  400 }
+					relation = { who = ENG value = -200 }
+				}
+				any_country = {				# Best relations with vassals! (This needs to be later then the non-democratic part!)
+					limit = { vassal_of = ENG }
+					relation = { who = ENG value =  400 }
+				}
+			}
+			FRA = {
+				any_country = {				# Good relations with democracies.
+					limit = { ideology_group = democracy }
+					relation = { who = FRA value =  400 }
+					relation = { who = FRA value = -125 }
+				}
+				any_country = {				# Neutral relations with non-democracies.
+					limit = { not = { ideology_group = democracy } }
+					relation = { who = FRA value =  400 }
+					relation = { who = FRA value = -200 }
+				}
+				any_country = {				# Best relations with vassals! (This needs to be later then the non-democratic part!)
+					limit = { vassal_of = FRA }
+					relation = { who = FRA value =  400 }
+				}
+			}
+			GER = {
+				any_country = {				# Not bad relations with democracies.
+					limit = { ideology_group = democracy }
+					relation = { who = GER value =  400 }
+					relation = { who = GER value = -175 }
+				}
+				any_neighbor_country = {	# Not bad relations with neighbors.
+					relation = { who = GER value =  400 }
+					relation = { who = GER value = -150 }
+				}
+				any_country = {				# Good relations with fascists.
+					limit = { ideology_group = fascism }
+					relation = { who = GER value =  400 }
+					relation = { who = GER value = -125 }
+				}
+				any_country = {				# Bad relation relations with communisms.
+					limit = { ideology_group = communism }
+					relation = { who = GER value =  400 }
+					relation = { who = GER value = -250 }
+				}
+			}
+			ITA = {
+				any_country = {				# So-so relations with democracies.
+					limit = { ideology_group = democracy }
+					relation = { who = ITA value =  400 }
+					relation = { who = ITA value = -125 }
+				}
+				any_country = {				# Good relations with fascists.
+					limit = { ideology_group = fascism }
+					relation = { who = ITA value =  400 }
+					relation = { who = ITA value = -175 }
+				}
+				any_country = {				# Bad relation relations with communisms.
+					limit = { ideology_group = communism }
+					relation = { who = ITA value =  400 }
+					relation = { who = ITA value = -250 }
+				}
+			}
+			JAP = {
+				any_country = {				# Not bad relations with democracies.
+					limit = { ideology_group = democracy }
+					relation = { who = JAP value =  400 }
+					relation = { who = JAP value = -175 }
+				}
+				any_country = {				# Good relations with fascists.
+					limit = { ideology_group = fascism }
+					relation = { who = JAP value =  400 }
+					relation = { who = JAP value = -125 }
+				}
+				any_country = {				# Bad relation relations with communisms.
+					limit = { ideology_group = communism }
+					relation = { who = JAP value =  400 }
+					relation = { who = JAP value = -250 }
+				}
+				any_country = {				# Best relations with vassals! (This needs to be later then the non-communist part!)
+					limit = { vassal_of = JAP }
+					relation = { who = JAP value =  400 }
+				}
+			}
+			SOV = {
+				any_country = {				# Good relations with communists.
+					limit = { ideology_group = communism }
+					relation = { who = SOV value =  400 }
+					relation = { who = SOV value = -100 }
+				}
+				any_country = {				# Neutral relations with non-communists.
+					limit = { not = { ideology_group = communism } }
+					relation = { who = SOV value =  400 }
+					relation = { who = SOV value = -200 }
+				}
+				any_country = {				# Best relations with vassals! (This needs to be later then the non-communist part!)
+					limit = { vassal_of = SOV }
+					relation = { who = SOV value =  400 }
+				}
+			}
+			USA = {
+				any_country = {				# Good relations with democracies.
+					limit = { ideology_group = democracy }
+					relation = { who = USA value =  400 }
+					relation = { who = USA value = -125 }
+				}
+				any_country = {				# Neutral relations with non-democracies.
+					limit = { not = { ideology_group = democracy } }
+					relation = { who = USA value =  400 }
+					relation = { who = USA value = -200 }
+				}
+				any_country = {				# Best relations with vassals! (This needs to be later then the non-democratic part!)
+					limit = { vassal_of = USA }
+					relation = { who = USA value =  400 }
+				}
+			}
+
+			# Nation-specific part
+
+			ENG= {
+				relation = { who = AST value =  400 }	# The Commonwealth
+				relation = { who = AST value =  -50 }
+				relation = { who = CAN value =  400 }
+				relation = { who = CAN value =  -50 }
+				relation = { who = NZL value =  400 }
+				relation = { who = NZL value =  -50 }
+				relation = { who = SAF value =  400 }
+				relation = { who = SAF value =  -50 }
+				relation = { who = FRA value =  400 }	# Other friends
+				relation = { who = FRA value = -100 }
+				relation = { who = USA value =  400 }
+				relation = { who = USA value = -100 }
+				relation = { who = SOV value =  400 }	# Soviets
+				relation = { who = SOV value = -150 }
+				relation = { who = GER value =  400 }	# Other majors
+				relation = { who = GER value = -150 }
+				relation = { who = ITA value =  400 }
+				relation = { who = ITA value = -125 }
+				relation = { who = JAP value =  400 }
+				relation = { who = JAP value = -100 }
+				relation = { who = CHI value =  400 }	# Plus China
+				relation = { who = CHI value = -150 }
+			}
+			FRA = {
+				relation = { who = USA value =  400 }	# USA
+				relation = { who = USA value = -100 }
+				relation = { who = AST value =  400 }	# Commonwealth
+				relation = { who = AST value = -125 }
+				relation = { who = CAN value =  400 }
+				relation = { who = CAN value = -125 }
+				relation = { who = NZL value =  400 }
+				relation = { who = NZL value = -125 }
+				relation = { who = SAF value =  400 }
+				relation = { who = SAF value = -125 }
+				relation = { who = SOV value =  400 }	# Soviets
+				relation = { who = SOV value = -150 }
+				relation = { who = ITA value =  400 }	# Potential Axis
+				relation = { who = ITA value = -125 }
+				relation = { who = JAP value =  400 }
+				relation = { who = JAP value = -150 }
+				relation = { who = GER value =  400 }	# Germany
+				relation = { who = GER value = -200 }
+			}
+			GER = {
+				relation = { who = ITA value =  400 }	# Potential Axis
+				relation = { who = ITA value = -100 }
+				relation = { who = JAP value =  400 }
+				relation = { who = JAP value = -100 }
+				relation = { who = CHI value =  400 }	# Good relations with China and the USA
+				relation = { who = CHI value = -100 }
+				relation = { who = USA value =  400 }
+				relation = { who = USA value = -125 }
+				relation = { who = SOV value =  400 }	# Soviets
+				relation = { who = SOV value = -125 }
+				relation = { who = SWE value =  400 }	# Good relations with Sweden!
+				relation = { who = SWE value = -100 }
+				relation = { who = POL value =  400 }	# Cold relations with Poland.
+				relation = { who = POL value = -250 }
+				relation = { who = CZE value =  400 }	# Cold relations with Czechoslovakia.
+				relation = { who = CZE value = -250 }
+			}
+			ITA = {
+				relation = { who = JAP value =  400 }	# Other majors
+				relation = { who = JAP value = -150 }
+				relation = { who = SOV value =  400 }
+				relation = { who = SOV value = -150 }
+				relation = { who = USA value =  400 }
+				relation = { who = USA value = -150 }
+			}
+			JAP = {
+				relation = { who = CHI value =  400 }	# Bad relations with the China
+				relation = { who = CHI value = -250 }
+				relation = { who = USA value =  400 }	# Good relations with the USA
+				relation = { who = USA value = -100 }
+				relation = { who = SOV value =  400 }	# Not so good with the Soviets
+				relation = { who = SOV value = -200 }
+			}
+			SOV = {
+				relation = { who = USA value =  400 }	# USA
+				relation = { who = USA value = -150 }
+				relation = { who = POL value =  400 }	# Bad relations with Poland, because of the cores
+				relation = { who = POL value = -250 }
+				relation = { who = CHC value =  400 }	# Bad relations with the PRC, because Mao hated Stalin
+				relation = { who = CHC value = -250 }
+			}
+			USA = {
+				relation = { who = CHI value =  400 }	# They are a Republic, only lead by strong-willed people!
+				relation = { who = CHI value = -100 }
+			}
+			HUN = {
+				relation = { who = YUG value =  400 }	# Hungary had feuds with just about every neighbor...
+				relation = { who = YUG value = -200 }
+				relation = { who = ROM value =  400 }
+				relation = { who = ROM value = -250 }
+				relation = { who = CZE value =  400 }
+				relation = { who = CZE value = -250 }
+			}
+			
+			
+			GOD = {
+				any_country = {
+					relation = { who = GOD value = 400 }
+					relation = { who = GOD value = -200 }
+				}
+			}
+			
+			# I shall put the Monroe Doctrine here as well. That allows American countries to request US intervention in case of an invasion.
+			any_country = {
+				limit = {
+					not = { tag = USA }		# The USA is obviously not under the protection of the USA...
+					any_owned_province = {
+						is_capital = yes
+						or = {
+							continent = north_america
+							continent = south_america
+							continent = Central_America
+							continent = Caribbean
+						}
+					}
+				}
+				set_country_flag = "protected_by_the_usa"
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	starting_non_aggression_pacts = {
+		potential = {
+			tag = REB
+		}
+		allow = {
+		}
+		effect = {
+		
+			# German-Polish Non-Aggression Pact
+			
+			GER = { non_aggression_pact = POL }
+		
+			# Scandinavia
+			
+			NOR = { non_aggression_pact = SWE }
+			NOR = { non_aggression_pact = DEN }
+			NOR = { non_aggression_pact = FIN }
+			DEN = { non_aggression_pact = FIN }
+			DEN = { non_aggression_pact = SWE }
+			SWE = { non_aggression_pact = FIN }
+			
+			# United States
+			
+			USA = { non_aggression_pact = CAN }
+			USA = { non_aggression_pact = MEX }
+			USA = { non_aggression_pact = CUB }
+			USA = { non_aggression_pact = HAI }
+			USA = { non_aggression_pact = DOM }
+			USA = { non_aggression_pact = GUA }
+			USA = { non_aggression_pact = SAL }
+			USA = { non_aggression_pact = HON }
+			USA = { non_aggression_pact = NIC }
+			USA = { non_aggression_pact = COS }
+			USA = { non_aggression_pact = PNM }
+			USA = { non_aggression_pact = COL }
+			USA = { non_aggression_pact = ECU }
+			USA = { non_aggression_pact = VEN }
+			USA = { non_aggression_pact = BRA }
+			USA = { non_aggression_pact = PRU }
+			USA = { non_aggression_pact = BOL }
+			USA = { non_aggression_pact = CHL }
+			USA = { non_aggression_pact = PAR }
+			USA = { non_aggression_pact = URU }
+			USA = { non_aggression_pact = ARG }
+			
+			# Balkan Pact
+			
+			TUR = { non_aggression_pact = YUG }
+			TUR = { non_aggression_pact = BUL }
+			TUR = { non_aggression_pact = GRE }
+			BUL = { non_aggression_pact = YUG }
+			BUL = { non_aggression_pact = GRE }
+			GRE = { non_aggression_pact = YUG }
+			
+			# Baltic States
+			
+			EST = { non_aggression_pact = LAT }
+			EST = { non_aggression_pact = LIT }
+			LAT = { non_aggression_pact = EST }
+			
+			# Portugal has a NAP with the UK
+			
+			POR = { non_aggression_pact = ENG }
+			
+			# Middle-East: Persia, Turkey, Afghanistan, Saudi Arabia, Iraq
+			
+			IRQ = { non_aggression_pact = PER }
+			IRQ = { non_aggression_pact = SAU }
+			TUR = { non_aggression_pact = PER }
+			TUR = { non_aggression_pact = AFG }
+			TUR = { non_aggression_pact = SAU }
+			PER = { non_aggression_pact = AFG }
+			PER = { non_aggression_pact = SAU }
+			SAU = { non_aggression_pact = AFG }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

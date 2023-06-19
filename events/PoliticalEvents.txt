@@ -1,0 +1,6888 @@
+###########
+# Strikes #
+###########
+# ID: 5001-
+
+# Major Factory-worker Strike
+
+country_event = {
+	
+	id = 5001
+
+	trigger = {
+		government_in_exile = no
+		or = {
+			civil_law = open_society
+			civil_law = limited_restrictions
+		}
+		not = { taxation_law = negligible_taxes }
+		not = { popularity = 50 }
+		not = { has_country_modifier = "factory_workers_demand_met" }
+		any_owned_province = {
+			industry = 5
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 36
+
+		modifier = { factor = 2.0 war = yes }
+		modifier = { factor = 2.0 has_country_flag = "great_war" }
+		
+		modifier = { factor = 1.5 organisation = 30 }
+		modifier = { factor = 1.5 organisation = 50 }
+		
+		modifier = { factor = 0.9 dissent = 1 }
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.5 dissent = 10 }
+		modifier = { factor = 0.5 dissent = 15 }
+		modifier = { factor = 0.5 dissent = 20 }
+		
+		modifier = { factor = 1.5 civil_law = limited_restrictions }			# Less likely if not Open Society.
+		modifier = { factor = 0.8 economic_law = war_economy }					# More likely if using harsh economic laws.
+		modifier = { factor = 0.5 economic_law = total_economic_mobilisation }	# More likely if using harsh economic laws.
+		modifier = { factor = 1.5 taxation_law = acceptable_taxes }				# Less likely if taxes are sensible.
+		modifier = { factor = 0.8 taxation_law = high_taxes }					# More likely if taxes are high.
+		modifier = { factor = 0.5 taxation_law = exploitive_taxes }				# More likely if taxes are high.
+		modifier = {
+			factor = 0.5
+			war = no
+			not = { economic_law = full_civilian_economy }						# Use low policies at peace!
+		}
+	}
+
+	title = "Major worker strike"
+	desc = "A major worker strike started in one of the nation's major factories. The unions demand higher wages and lessened workhours."
+	picture = "major_worker_strike"
+
+	option = {
+		name = "Put them down!"			# It's hardly anything to worry about
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.5
+				dissent = 5
+			}
+			modifier = {
+				factor = 0.25
+				dissent = 10
+			}
+			modifier = {
+				factor = 0.1
+				dissent = 15
+			}
+		}
+		random_list = {
+			65 = { dissent = 5 popularity = -5 }		# People go home, but they won't forget.
+			28 = { dissent = 8 popularity = -10 }		# People go home, but they are rather angry.
+			7  = {
+				dissent = 10 popularity = -15			# The situation escalates.
+				random_owned = {
+					limit = { industry = 5 }
+					create_revolt = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = "Let's have a deal!"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2.0
+				dissent = 5
+			}
+			modifier = {
+				factor = 3.0
+				dissent = 10
+			}
+			modifier = {
+				factor = 4.0
+				dissent = 15
+			}
+		}
+		popularity = 5
+		organisation = -2
+		dissent = -1
+		add_country_modifier = {
+			name = "factory_workers_demand_met"
+			duration = -1
+		}
+	}
+}
+
+# Major Harbour-worker Strike
+
+country_event = {
+	
+	id = 5002
+
+	trigger = {
+		government_in_exile = no
+		or = {
+			civil_law = open_society
+			civil_law = limited_restrictions
+		}
+		not = { taxation_law = negligible_taxes }
+		not = { popularity = 50 }
+		not = { has_country_modifier = "harbour_workers_demand_met" }
+		any_owned_province = {
+			naval_base = 5
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 36
+
+		modifier = { factor = 2.0 war = yes }
+		modifier = { factor = 2.0 has_country_flag = "great_war" }
+		
+		modifier = { factor = 1.5 organisation = 30 }
+		modifier = { factor = 1.5 organisation = 50 }
+		
+		modifier = { factor = 0.9 dissent = 1 }
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.5 dissent = 10 }
+		modifier = { factor = 0.5 dissent = 15 }
+		modifier = { factor = 0.5 dissent = 20 }
+		
+		modifier = { factor = 1.5 civil_law = limited_restrictions }			# Less likely if not Open Society.
+		modifier = { factor = 0.8 industrial_policy_laws = mixed_industry }				# More likely if using harsh industrial policies.
+		modifier = { factor = 0.5 industrial_policy_laws = heavy_industry_emphasis }	# More likely if using harsh industrial policies.
+		modifier = { factor = 1.5 taxation_law = acceptable_taxes }				# Less likely if taxes are sensible.
+		modifier = { factor = 0.8 taxation_law = high_taxes }					# More likely if taxes are high.
+		modifier = { factor = 0.5 taxation_law = exploitive_taxes }				# More likely if taxes are high.
+		modifier = {
+			factor = 0.5
+			war = no
+			not = { industrial_policy_laws = consumer_product_orientation }				# Use low policies at peace!
+		}
+	}
+
+	title = "Major worker strike"
+	desc = "A major worker strike started in one of the nation's most important harbours. The unions demand better safety regulations and higher wages."
+	picture = "major_worker_strike"
+
+	option = {
+		name = "Put them down!"			# It's hardly anything to worry about
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.5
+				dissent = 5
+			}
+			modifier = {
+				factor = 0.25
+				dissent = 10
+			}
+			modifier = {
+				factor = 0.1
+				dissent = 15
+			}
+		}
+		random_list = {
+			65 = { dissent = 5 popularity = -5 }		# People go home, but they won't forget.
+			28 = { dissent = 8 popularity = -10 }		# People go home, but they are rather angry.
+			7  = {
+				dissent = 10 popularity = -15			# The situation escalates.
+				random_owned = {
+					limit = { naval_base = 5 }
+					create_revolt = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = "Let's have a deal!"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2.0
+				dissent = 5
+			}
+			modifier = {
+				factor = 3.0
+				dissent = 10
+			}
+			modifier = {
+				factor = 4.0
+				dissent = 15
+			}
+		}
+		popularity = 5
+		organisation = -2
+		dissent = -1
+		add_country_modifier = {
+			name = "harbour_workers_demand_met"
+			duration = -1
+		}
+	}
+}
+
+# Major Harbour-worker Strike
+
+country_event = {
+	
+	id = 5003
+
+	trigger = {
+		government_in_exile = no
+		or = {
+			civil_law = open_society
+			civil_law = limited_restrictions
+		}
+		not = { taxation_law = negligible_taxes }
+		not = { popularity = 50 }
+		not = { has_country_modifier = "railroad_workers_demand_met" }
+		any_owned_province = {
+			infra = 6
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 36
+
+		modifier = { factor = 2.0 war = yes }
+		modifier = { factor = 2.0 has_country_flag = "great_war" }
+		
+		modifier = { factor = 1.5 organisation = 30 }
+		modifier = { factor = 1.5 organisation = 50 }
+		
+		modifier = { factor = 0.9 dissent = 1 }
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.5 dissent = 10 }
+		modifier = { factor = 0.5 dissent = 15 }
+		modifier = { factor = 0.5 dissent = 20 }
+		
+		modifier = { factor = 1.5 civil_law = limited_restrictions }			# Less likely if not Open Society.
+		modifier = { factor = 0.8 industrial_policy_laws = mixed_industry }				# More likely if using harsh industrial policies.
+		modifier = { factor = 0.5 industrial_policy_laws = heavy_industry_emphasis }	# More likely if using harsh industrial policies.
+		modifier = { factor = 1.5 taxation_law = acceptable_taxes }				# Less likely if taxes are sensible.
+		modifier = { factor = 0.8 taxation_law = high_taxes }					# More likely if taxes are high.
+		modifier = { factor = 0.5 taxation_law = exploitive_taxes }				# More likely if taxes are high.
+		modifier = {
+			factor = 0.5
+			war = no
+			not = { industrial_policy_laws = consumer_product_orientation }				# Use low policies at peace!
+		}
+	}
+
+	title = "Major worker strike"
+	desc = "A major worker strike started in one of the nation's major railroad companies. The unions demand better safety regulations, lessened workhours and higher wages."
+	picture = "major_worker_strike"
+
+	option = {
+		name = "Put them down!"			# It's hardly anything to worry about
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.5
+				dissent = 5
+			}
+			modifier = {
+				factor = 0.25
+				dissent = 10
+			}
+			modifier = {
+				factor = 0.1
+				dissent = 15
+			}
+		}
+		random_list = {
+			65 = { dissent = 5 popularity = -5 }		# People go home, but they won't forget.
+			28 = { dissent = 8 popularity = -10 }		# People go home, but they are rather angry.
+			7  = {
+				dissent = 10 popularity = -15			# The situation escalates.
+				random_owned = {
+					limit = { infra = 6 }
+					create_revolt = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = "Let's have a deal!"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2.0
+				dissent = 5
+			}
+			modifier = {
+				factor = 3.0
+				dissent = 10
+			}
+			modifier = {
+				factor = 4.0
+				dissent = 15
+			}
+		}
+		popularity = 5
+		organisation = -2
+		dissent = -1
+		add_country_modifier = {
+			name = "railroad_workers_demand_met"
+			duration = -1
+		}
+	}
+}
+
+
+##################
+# Demonstrations #
+##################
+# ID: 5101-
+
+# Great War Manifestation
+country_event = {
+	
+	id = 5101
+
+	trigger = {
+		government_in_exile = no
+		or = {
+			civil_law = open_society
+			civil_law = limited_restrictions
+		}
+		not = { neutrality = 95 }
+		war = no
+	}
+
+	mean_time_to_happen =  {
+		months = 24
+	}
+
+	title = "EVTNAME5002"
+	desc = "EVTDESC5002"
+	picture = "great_war_manifestion"
+
+	option = {
+		name = "EVTOPTA5002"
+		ai_chance = {
+			factor = 75
+		}
+		neutrality = -2
+		add_country_modifier = {
+			name = "great_war_manifestation"
+			duration = 30
+		}
+		threat = { who = all value = 2 }
+	}
+	option = {
+		name = "We are against any wars!"
+		ai_chance = {
+			factor = 25
+			modifier = { factor = 3.0 ideology_group = democracy }
+			modifier = { factor = 2.0 base_neutrality = 85 }
+		}
+		neutrality = 2
+		threat = { who = all value = -2 }
+		dissent = 2
+	}
+}
+
+# Great Peace Manifestation
+country_event = {
+	
+	id = 5102
+
+	trigger = {
+		government_in_exile = no
+		or = {
+			civil_law = open_society
+			civil_law = limited_restrictions
+		}
+		neutrality = 75
+		war = no
+	}
+
+	mean_time_to_happen =  {
+		months = 24
+	}
+
+	title = "EVTNAME5003"
+	desc = "EVTDESC5003"
+	picture = "great_war_manifestion"
+
+	option = {
+		name = "EVTOPTA5003"
+		ai_chance = {
+			factor = 75
+		}
+		neutrality = 2
+		add_country_modifier = {
+			name = "great_peace_manifestation"
+			duration = 30
+		}
+	}
+	option = {
+		name = "We can't afford to look weak!"
+		ai_chance = {
+			factor = 25
+			modifier = { factor = 2.0 not = { neutrality = 75 } }
+			modifier = { factor = 2.0 not = { neutrality = 40 } }
+			modifier = { factor = 10.0 not = { neutrality = 10 } }
+		}
+		neutrality = -2
+		threat = { who = all value = 2 }
+		dissent = 2
+	}
+}
+
+# Party Rally
+country_event = {
+	
+	id = 5103
+
+	trigger = {
+		government_in_exile = no
+		or = {
+			ideology = national_socialist
+			ideology = fascistic
+		}
+		war = no
+		not = { has_country_modifier = "party_rally" }
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+		modifier = {
+			factor = 0.1
+			has_country_flag = "party_rally"
+		}
+	}
+
+	title = "Party Rally"
+	desc = "The ruling party held a Party Rally in our nation's fine capital. People were rejoicing to be under such great leadership!"
+	picture = "great_war_manifestion"
+
+	option = {
+		name = "Panem et circenses..."
+		set_country_flag = "party_rally"
+		popularity = 5
+		organisation = 3
+		dissent = -2
+		national_unity = 1
+		add_country_modifier = {
+			name = "party_rally"
+			duration = 330
+		}
+	}
+}
+
+# Long Live the King!
+country_event = {
+	
+	id = 5104
+
+	trigger = {
+		government_in_exile = no
+		government = absolute_monarchy
+		war = no
+		not = { has_country_modifier = "long_live_the_king" }
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+		modifier = {
+			factor = 0.1
+			has_country_flag = "long_live_the_king"
+		}
+	}
+
+	title = "Long Live the King!"
+	desc = "The birthday of our King has been celebrated with a large festival in our fine capital! People were rejoicing to be under such great leadership!"
+	picture = "great_war_manifestion"
+
+	option = {
+		name = "Long Live the King!"
+		set_country_flag = "long_live_the_king"
+		money = -100
+		popularity = 5
+		dissent = -2
+		add_country_modifier = {
+			name = "long_live_the_king"
+			duration = 330
+		}
+	}
+}
+
+# Long Live the President!
+country_event = {
+	
+	id = 5105
+
+	trigger = {
+		government_in_exile = no
+		or = {
+			government = right_wing_republic
+			government = right_wing_autocrat
+			government = left_wing_radicals
+		}
+		war = no
+		not = { has_country_modifier = "long_live_the_president" }
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+		modifier = {
+			factor = 0.1
+			has_country_flag = "long_live_the_president"
+		}
+	}
+
+	title = "Long Live the President!"
+	desc = "The birthday of our President has been celebrated with a large festival in our fine capital! People were rejoicing to be under such great leadership!"
+	picture = "great_war_manifestion"
+
+	option = {
+		name = "Long Live the President!"
+		set_country_flag = "long_live_the_president"
+		money = -100
+		popularity = 5
+		dissent = -2
+		add_country_modifier = {
+			name = "long_live_the_president"
+			duration = 330
+		}
+	}
+}
+
+# Long Live the Emperor!
+country_event = {
+	
+	id = 5106
+
+	trigger = {
+		government_in_exile = no
+		government = imperial
+		war = no
+		not = { has_country_modifier = "long_live_the_emperor" }
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+		modifier = {
+			factor = 0.1
+			has_country_flag = "long_live_the_emperor"
+		}
+	}
+
+	title = "Long Live the Emperor!"
+	desc = "The birthday of our Emperor has been celebrated with a large festival in our fine capital! People were rejoicing to be under such great leadership!"
+	picture = "great_war_manifestion"
+
+	option = {
+		name = "Long Live the Emperor!"
+		set_country_flag = "long_live_the_emperor"
+		money = -100
+		popularity = 5
+		dissent = -2
+		add_country_modifier = {
+			name = "long_live_the_emperor"
+			duration = 330
+		}
+	}
+}
+
+# Long Live the Regent!
+country_event = {
+	
+	id = 5107
+
+	trigger = {
+		government_in_exile = no
+		government = hungarian_right_wing_republic
+		war = no
+		not = { has_country_modifier = "long_live_the_regent" }
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+		modifier = {
+			factor = 0.1
+			has_country_flag = "long_live_the_regent"
+		}
+	}
+
+	title = "Long Live the Regent!"
+	desc = "The birthday of our Regent has been celebrated with a large festival in our fine capital! People were rejoicing to be under such great leadership!"
+	picture = "great_war_manifestion"
+
+	option = {
+		name = "Long Live the Regent!"
+		set_country_flag = "long_live_the_regent"
+		money = -100
+		popularity = 5
+		dissent = -2
+		add_country_modifier = {
+			name = "long_live_the_regent"
+			duration = 330
+		}
+	}
+}
+
+
+######################
+# Political Fighting #
+######################
+# ID: 5201-
+
+# War Exhaustion takes its toll on the integrity of the Ruling Party.
+country_event = {
+
+	id = 5201
+	
+	trigger = {
+		government_in_exile = no
+		war = yes
+		organisation = 25				# Don't go too low!
+		not = { national_unity = 80 }	# High National Unity means more resistance against this.
+		war_exhaustion = 2
+	}
+	
+	mean_time_to_happen = {				# Not too often
+		months = 36
+		modifier = { factor = 0.9 ideology_group = democracy }		# Democracies are more prone to this kind of stuff.
+		
+		modifier = { factor = 0.9 war_exhaustion = 3 }				# Higher war exhaustion means bigger trouble!
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 5 }
+		modifier = { factor = 0.8 war_exhaustion = 7 }
+		modifier = { factor = 0.5 war_exhaustion = 10 }
+		
+		modifier = { factor = 0.9 dissent = 5 }						# Dissent makes it even worse.
+		modifier = { factor = 0.9 dissent = 10 }
+		modifier = { factor = 0.9 dissent = 15 }
+		modifier = { factor = 0.9 dissent = 20 }
+	}
+	
+	title = "Unrest among our ruling elite"
+	desc = "The war is taking too long, and we are losing the support of the bankers, industrialists, even the military!"
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Oh no!"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		organisation = -20
+		popularity = -5
+	}
+	
+	option = {
+		name = "We will bribe them!"
+		ai_chance = { factor = 25 }
+		money = -1000
+		organisation = -10
+		popularity = -10
+	}
+
+}
+
+# Opposition Party gathers supporters among the elite.
+country_event = {
+
+	id = 5202
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { organisation = 33 }			# Low party organisation and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = national_socialist }
+		not = { national_socialist = { organisation = 50 popularity = 1 } }
+		national_socialist = { organisation = 100 popularity = 20 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 national_socialist = { organisation = 100 popularity = 30 } }
+		modifier = { factor = 0.5 national_socialist = { organisation = 100 popularity = 40 } }
+		modifier = { factor = 0.2 national_socialist = { organisation = 100 popularity = 50 } }
+		
+		modifier = { factor = 0.9 dissent = 10 }
+		modifier = { factor = 0.9 dissent = 20 }
+		modifier = { factor = 0.9 dissent = 30 }
+		modifier = { factor = 0.9 dissent = 40 }
+		modifier = { factor = 0.9 dissent = 50 }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The National Socialist party is gaining support"
+	desc = "The National Socialist party is gathering supporters in our elite. Should we let them grow (even at our expense), or should we take action against them?"
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Should we do something?"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		organisation = -2
+		national_socialist = { organisation = 5 }
+	}
+	
+	option = {
+		name = "We should do something!"
+		ai_chance = { factor = 25 }
+		popularity = -5
+		set_country_flag = "steps_against_national_socialist"
+		national_socialist = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5203
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { organisation = 33 }			# Low party organisation and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = fascistic }
+		not = { fascistic = { organisation = 50 popularity = 1 } }
+		fascistic = { organisation = 100 popularity = 20 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 fascistic = { organisation = 100 popularity = 30 } }
+		modifier = { factor = 0.5 fascistic = { organisation = 100 popularity = 40 } }
+		modifier = { factor = 0.2 fascistic = { organisation = 100 popularity = 50 } }
+		
+		modifier = { factor = 0.9 dissent = 10 }
+		modifier = { factor = 0.9 dissent = 20 }
+		modifier = { factor = 0.9 dissent = 30 }
+		modifier = { factor = 0.9 dissent = 40 }
+		modifier = { factor = 0.9 dissent = 50 }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Fascistic party is gaining support"
+	desc = "The Fascistic party is gathering supporters in our elite. Should we let them grow (even at our expense), or should we take action against them?"
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Should we do something?"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		organisation = -2
+		fascistic = { organisation = 5 }
+	}
+	
+	option = {
+		name = "We should do something!"
+		ai_chance = { factor = 25 }
+		popularity = -5
+		set_country_flag = "steps_against_fascistic"
+		fascistic = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5204
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { organisation = 33 }			# Low party organisation and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = paternal_autocrat }
+		not = { paternal_autocrat = { organisation = 50 popularity = 1 } }
+		paternal_autocrat = { organisation = 100 popularity = 20 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 paternal_autocrat = { organisation = 100 popularity = 30 } }
+		modifier = { factor = 0.5 paternal_autocrat = { organisation = 100 popularity = 40 } }
+		modifier = { factor = 0.2 paternal_autocrat = { organisation = 100 popularity = 50 } }
+		
+		modifier = { factor = 0.9 dissent = 10 }
+		modifier = { factor = 0.9 dissent = 20 }
+		modifier = { factor = 0.9 dissent = 30 }
+		modifier = { factor = 0.9 dissent = 40 }
+		modifier = { factor = 0.9 dissent = 50 }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Paternal Autocrat party is gaining support"
+	desc = "The Paternal Autocrat party is gathering supporters in our elite. Should we let them grow (even at our expense), or should we take action against them?"
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Should we do something?"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		organisation = -2
+		paternal_autocrat = { organisation = 5 }
+	}
+	
+	option = {
+		name = "We should do something!"
+		ai_chance = { factor = 25 }
+		popularity = -5
+		set_country_flag = "steps_against_paternal_autocrat"
+		paternal_autocrat = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5205
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { organisation = 33 }			# Low party organisation and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = social_conservative }
+		not = { social_conservative = { organisation = 50 popularity = 1 } }
+		social_conservative = { organisation = 100 popularity = 20 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 social_conservative = { organisation = 100 popularity = 30 } }
+		modifier = { factor = 0.5 social_conservative = { organisation = 100 popularity = 40 } }
+		modifier = { factor = 0.2 social_conservative = { organisation = 100 popularity = 50 } }
+		
+		modifier = { factor = 0.9 dissent = 10 }
+		modifier = { factor = 0.9 dissent = 20 }
+		modifier = { factor = 0.9 dissent = 30 }
+		modifier = { factor = 0.9 dissent = 40 }
+		modifier = { factor = 0.9 dissent = 50 }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Social Conservative party is gaining support"
+	desc = "The Social Conservative party is gathering supporters in our elite. Should we let them grow (even at our expense), or should we take action against them?"
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Should we do something?"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		organisation = -2
+		social_conservative = { organisation = 5 }
+	}
+	
+	option = {
+		name = "We should do something!"
+		ai_chance = { factor = 25 }
+		popularity = -5
+		set_country_flag = "steps_against_social_conservative"
+		social_conservative = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5206
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { organisation = 33 }			# Low party organisation and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = market_liberal }
+		not = { market_liberal = { organisation = 50 popularity = 1 } }
+		market_liberal = { organisation = 100 popularity = 20 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 market_liberal = { organisation = 100 popularity = 30 } }
+		modifier = { factor = 0.5 market_liberal = { organisation = 100 popularity = 40 } }
+		modifier = { factor = 0.2 market_liberal = { organisation = 100 popularity = 50 } }
+		
+		modifier = { factor = 0.9 dissent = 10 }
+		modifier = { factor = 0.9 dissent = 20 }
+		modifier = { factor = 0.9 dissent = 30 }
+		modifier = { factor = 0.9 dissent = 40 }
+		modifier = { factor = 0.9 dissent = 50 }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Market Liberal party is gaining support"
+	desc = "The Market Liberal party is gathering supporters in our elite. Should we let them grow (even at our expense), or should we take action against them?"
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Should we do something?"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		organisation = -2
+		market_liberal = { organisation = 5 }
+	}
+	
+	option = {
+		name = "We should do something!"
+		ai_chance = { factor = 25 }
+		popularity = -5
+		set_country_flag = "steps_against_market_liberal"
+		market_liberal = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5207
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { organisation = 33 }			# Low party organisation and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = social_liberal }
+		not = { social_liberal = { organisation = 50 popularity = 1 } }
+		social_liberal = { organisation = 100 popularity = 20 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 social_liberal = { organisation = 100 popularity = 30 } }
+		modifier = { factor = 0.5 social_liberal = { organisation = 100 popularity = 40 } }
+		modifier = { factor = 0.2 social_liberal = { organisation = 100 popularity = 50 } }
+		
+		modifier = { factor = 0.9 dissent = 10 }
+		modifier = { factor = 0.9 dissent = 20 }
+		modifier = { factor = 0.9 dissent = 30 }
+		modifier = { factor = 0.9 dissent = 40 }
+		modifier = { factor = 0.9 dissent = 50 }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Social Liberal party is gaining support"
+	desc = "The Social Liberal party is gathering supporters in our elite. Should we let them grow (even at our expense), or should we take action against them?"
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Should we do something?"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		organisation = -2
+		social_liberal = { organisation = 5 }
+	}
+	
+	option = {
+		name = "We should do something!"
+		ai_chance = { factor = 25 }
+		popularity = -5
+		set_country_flag = "steps_against_social_liberal"
+		social_liberal = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5208
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { organisation = 33 }			# Low party organisation and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = social_democrat }
+		not = { social_democrat = { organisation = 50 popularity = 1 } }
+		social_democrat = { organisation = 100 popularity = 20 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 social_democrat = { organisation = 100 popularity = 30 } }
+		modifier = { factor = 0.5 social_democrat = { organisation = 100 popularity = 40 } }
+		modifier = { factor = 0.2 social_democrat = { organisation = 100 popularity = 50 } }
+		
+		modifier = { factor = 0.9 dissent = 10 }
+		modifier = { factor = 0.9 dissent = 20 }
+		modifier = { factor = 0.9 dissent = 30 }
+		modifier = { factor = 0.9 dissent = 40 }
+		modifier = { factor = 0.9 dissent = 50 }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Social Democrat party is gaining support"
+	desc = "The Social Democrat party is gathering supporters in our elite. Should we let them grow (even at our expense), or should we take action against them?"
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Should we do something?"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		organisation = -2
+		social_democrat = { organisation = 5 }
+	}
+	
+	option = {
+		name = "We should do something!"
+		ai_chance = { factor = 25 }
+		popularity = -5
+		set_country_flag = "steps_against_social_democrat"
+		social_democrat = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5209
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { organisation = 33 }			# Low party organisation and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = left_wing_radical }
+		not = { left_wing_radical = { organisation = 50 popularity = 1 } }
+		left_wing_radical = { organisation = 100 popularity = 20 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 left_wing_radical = { organisation = 100 popularity = 30 } }
+		modifier = { factor = 0.5 left_wing_radical = { organisation = 100 popularity = 40 } }
+		modifier = { factor = 0.2 left_wing_radical = { organisation = 100 popularity = 50 } }
+		
+		modifier = { factor = 0.9 dissent = 10 }
+		modifier = { factor = 0.9 dissent = 20 }
+		modifier = { factor = 0.9 dissent = 30 }
+		modifier = { factor = 0.9 dissent = 40 }
+		modifier = { factor = 0.9 dissent = 50 }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Left-Wing Radical party is gaining support"
+	desc = "The Left-Wing Radical party is gathering supporters in our elite. Should we let them grow (even at our expense), or should we take action against them?"
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Should we do something?"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		organisation = -2
+		left_wing_radical = { organisation = 5 }
+	}
+	
+	option = {
+		name = "We should do something!"
+		ai_chance = { factor = 25 }
+		popularity = -5
+		set_country_flag = "steps_against_left_wing_radical"
+		left_wing_radical = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5210
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { organisation = 33 }			# Low party organisation and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = leninist }
+		not = { leninist = { organisation = 50 popularity = 1 } }
+		leninist = { organisation = 100 popularity = 20 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 leninist = { organisation = 100 popularity = 30 } }
+		modifier = { factor = 0.5 leninist = { organisation = 100 popularity = 40 } }
+		modifier = { factor = 0.2 leninist = { organisation = 100 popularity = 50 } }
+		
+		modifier = { factor = 0.9 dissent = 10 }
+		modifier = { factor = 0.9 dissent = 20 }
+		modifier = { factor = 0.9 dissent = 30 }
+		modifier = { factor = 0.9 dissent = 40 }
+		modifier = { factor = 0.9 dissent = 50 }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Leninist party is gaining support"
+	desc = "The Leninist party is gathering supporters in our elite. Should we let them grow (even at our expense), or should we take action against them?"
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Should we do something?"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		organisation = -2
+		leninist = { organisation = 5 }
+	}
+	
+	option = {
+		name = "We should do something!"
+		ai_chance = { factor = 25 }
+		popularity = -5
+		set_country_flag = "steps_against_leninist"
+		leninist = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5211
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { organisation = 33 }			# Low party organisation and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = stalinist }
+		not = { stalinist = { organisation = 50 popularity = 1 } }
+		stalinist = { organisation = 100 popularity = 20 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 stalinist = { organisation = 100 popularity = 30 } }
+		modifier = { factor = 0.5 stalinist = { organisation = 100 popularity = 40 } }
+		modifier = { factor = 0.2 stalinist = { organisation = 100 popularity = 50 } }
+		
+		modifier = { factor = 0.9 dissent = 10 }
+		modifier = { factor = 0.9 dissent = 20 }
+		modifier = { factor = 0.9 dissent = 30 }
+		modifier = { factor = 0.9 dissent = 40 }
+		modifier = { factor = 0.9 dissent = 50 }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Stalinist party is gaining support"
+	desc = "The Stalinist party is gathering supporters in our elite. Should we let them grow (even at our expense), or should we take action against them?"
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Should we do something?"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		organisation = -2
+		stalinist = { organisation = 5 }
+	}
+	
+	option = {
+		name = "We should do something!"
+		ai_chance = { factor = 25 }
+		popularity = -5
+		set_country_flag = "steps_against_stalinist"	
+		stalinist = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+# Opposition Party starts a Campaign
+country_event = {
+
+	id = 5212
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { popularity = 33 }			# Low party popularity and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = national_socialist }
+		not = { national_socialist = { popularity = 1 organisation = 50 } }
+		national_socialist = { popularity = 100 organisation = 10 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 national_socialist = { popularity = 100 organisation = 20 } }
+		modifier = { factor = 0.5 national_socialist = { popularity = 100 organisation = 30 } }
+		modifier = { factor = 0.2 national_socialist = { popularity = 100 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The National Socialist party is running a campaign"
+	desc = "The National Socialist party is gathering support in our population. Should we let them grow (even in our expense), or should we take action against them?"
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "They can't hurt us."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		national_socialist = { popularity = 5 }
+	}
+	
+	option = {
+		name = "We need to stop this!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		set_country_flag = "steps_against_national_socialist"
+		national_socialist = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5213
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { popularity = 33 }			# Low party popularity and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = fascistic }
+		not = { fascistic = { popularity = 1 organisation = 50 } }
+		fascistic = { popularity = 100 organisation = 10 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 fascistic = { popularity = 100 organisation = 20 } }
+		modifier = { factor = 0.5 fascistic = { popularity = 100 organisation = 30 } }
+		modifier = { factor = 0.2 fascistic = { popularity = 100 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Fascistic party is running a campaign"
+	desc = "The Fascistic party is gathering support in our population. Should we let them grow (even in our expense), or should we take action against them?"
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "They can't hurt us."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		fascistic = { popularity = 5 }
+	}
+	
+	option = {
+		name = "We need to stop this!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		set_country_flag = "steps_against_fascistic"
+		fascistic = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5214
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { popularity = 33 }			# Low party popularity and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = paternal_autocrat }
+		not = { paternal_autocrat = { popularity = 1 organisation = 50 } }
+		paternal_autocrat = { popularity = 100 organisation = 10 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 paternal_autocrat = { popularity = 100 organisation = 20 } }
+		modifier = { factor = 0.5 paternal_autocrat = { popularity = 100 organisation = 30 } }
+		modifier = { factor = 0.2 paternal_autocrat = { popularity = 100 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Paternal Autocrat party is running a campaign"
+	desc = "The Paternal Autocrat party is gathering support in our population. Should we let them grow (even in our expense), or should we take action against them?"
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "They can't hurt us."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		paternal_autocrat = { popularity = 5 }
+	}
+	
+	option = {
+		name = "We need to stop this!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		set_country_flag = "steps_against_paternal_autocrat"
+		paternal_autocrat = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5215
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { popularity = 33 }			# Low party popularity and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = social_conservative }
+		not = { social_conservative = { popularity = 1 organisation = 50 } }
+		social_conservative = { popularity = 100 organisation = 10 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 social_conservative = { popularity = 100 organisation = 20 } }
+		modifier = { factor = 0.5 social_conservative = { popularity = 100 organisation = 30 } }
+		modifier = { factor = 0.2 social_conservative = { popularity = 100 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Social Conservative party is running a campaign"
+	desc = "The Social Conservative party is gathering support in our population. Should we let them grow (even in our expense), or should we take action against them?"
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "They can't hurt us."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		social_conservative = { popularity = 5 }
+	}
+	
+	option = {
+		name = "We need to stop this!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		set_country_flag = "steps_against_social_conservative"
+		social_conservative = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5216
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { popularity = 33 }			# Low party popularity and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = market_liberal }
+		not = { market_liberal = { popularity = 1 organisation = 50 } }
+		market_liberal = { popularity = 100 organisation = 10 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 market_liberal = { popularity = 100 organisation = 20 } }
+		modifier = { factor = 0.5 market_liberal = { popularity = 100 organisation = 30 } }
+		modifier = { factor = 0.2 market_liberal = { popularity = 100 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Market Liberal party is running a campaign"
+	desc = "The Market Liberal party is gathering support in our population. Should we let them grow (even in our expense), or should we take action against them?"
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "They can't hurt us."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		market_liberal = { popularity = 5 }
+	}
+	
+	option = {
+		name = "We need to stop this!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		set_country_flag = "steps_against_market_liberal"
+		market_liberal = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5217
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { popularity = 33 }			# Low party popularity and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = social_liberal }
+		not = { social_liberal = { popularity = 1 organisation = 50 } }
+		social_liberal = { popularity = 100 organisation = 10 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 social_liberal = { popularity = 100 organisation = 20 } }
+		modifier = { factor = 0.5 social_liberal = { popularity = 100 organisation = 30 } }
+		modifier = { factor = 0.2 social_liberal = { popularity = 100 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Social Liberal party is running a campaign"
+	desc = "The Social Liberal party is gathering support in our population. Should we let them grow (even in our expense), or should we take action against them?"
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "They can't hurt us."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		social_liberal = { popularity = 5 }
+	}
+	
+	option = {
+		name = "We need to stop this!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		set_country_flag = "steps_against_social_liberal"
+		social_liberal = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5218
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { popularity = 33 }			# Low party popularity and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = social_democrat }
+		not = { social_democrat = { popularity = 1 organisation = 50 } }
+		social_democrat = { popularity = 100 organisation = 10 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 social_democrat = { popularity = 100 organisation = 20 } }
+		modifier = { factor = 0.5 social_democrat = { popularity = 100 organisation = 30 } }
+		modifier = { factor = 0.2 social_democrat = { popularity = 100 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Social Democrat party is running a campaign"
+	desc = "The Social Democrat party is gathering support in our population. Should we let them grow (even in our expense), or should we take action against them?"
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "They can't hurt us."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		social_democrat = { popularity = 5 }
+	}
+	
+	option = {
+		name = "We need to stop this!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		set_country_flag = "steps_against_social_democrat"
+		social_democrat = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5219
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { popularity = 33 }			# Low party popularity and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = left_wing_radical }
+		not = { left_wing_radical = { popularity = 1 organisation = 50 } }
+		left_wing_radical = { popularity = 100 organisation = 10 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 left_wing_radical = { popularity = 100 organisation = 20 } }
+		modifier = { factor = 0.5 left_wing_radical = { popularity = 100 organisation = 30 } }
+		modifier = { factor = 0.2 left_wing_radical = { popularity = 100 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Left-Wing Radical party is running a campaign"
+	desc = "The Left-Wing Radical party is gathering support in our population. Should we let them grow (even in our expense), or should we take action against them?"
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "They can't hurt us."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		left_wing_radical = { popularity = 5 }
+	}
+	
+	option = {
+		name = "We need to stop this!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		set_country_flag = "steps_against_left_wing_radical"
+		left_wing_radical = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5220
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { popularity = 33 }			# Low party popularity and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = leninist }
+		not = { leninist = { popularity = 1 organisation = 50 } }
+		leninist = { popularity = 100 organisation = 10 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 leninist = { popularity = 100 organisation = 20 } }
+		modifier = { factor = 0.5 leninist = { popularity = 100 organisation = 30 } }
+		modifier = { factor = 0.2 leninist = { popularity = 100 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Leninist party is running a campaign"
+	desc = "The Leninist party is gathering support in our population. Should we let them grow (even in our expense), or should we take action against them?"
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "They can't hurt us."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		leninist = { popularity = 5 }
+	}
+	
+	option = {
+		name = "We need to stop this!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		set_country_flag = "steps_against_leninist"
+		leninist = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+country_event = {
+
+	id = 5221
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { popularity = 33 }			# Low party popularity and national unity
+			not = { national_unity = 60 }		# can cause all kinds of trouble...
+		}
+		not = { ideology = stalinist }
+		not = { stalinist = { popularity = 1 organisation = 50 } }
+		stalinist = { popularity = 100 organisation = 10 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = { factor = 0.8 stalinist = { popularity = 100 organisation = 20 } }
+		modifier = { factor = 0.5 stalinist = { popularity = 100 organisation = 30 } }
+		modifier = { factor = 0.2 stalinist = { popularity = 100 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "The Stalinist party is running a campaign"
+	desc = "The Stalinist party is gathering support in our population. Should we let them grow (even in our expense), or should we take action against them?"
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "They can't hurt us."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				or = {
+					civil_law = repression
+					civil_law = totalitarian_system
+				}
+			}
+		}
+		stalinist = { popularity = 5 }
+	}
+	
+	option = {
+		name = "We need to stop this!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		set_country_flag = "steps_against_stalinist"
+		stalinist = { organisation = -2 popularity = 5 }
+	}
+
+}
+
+# Clashes between para-military troops.
+country_event = {
+
+	id = 5222
+
+	trigger = {
+		government_in_exile = no
+		or = {
+			national_socialist 	= { organisation = 25 popularity = 100 }		# This is actually an 'OR' statement!
+			fascistic 			= { organisation = 25 popularity = 100 }
+		}
+		or = {
+			leninist 			= { organisation = 25 popularity = 100 }
+			stalinist 			= { organisation = 25 popularity = 100 }
+		}
+		dissent = 5
+	}
+
+	mean_time_to_happen =  {
+		months = 24
+	}
+
+	title = "EVTNAME5012"
+	desc = "EVTDESC5012"
+	picture = "coup"
+
+	option = {
+		name = "Side with the Left!"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				ideology_group = democracy
+			}
+			modifier = {
+				factor = 3
+				ideology_group = communism
+			}
+			modifier = {
+				factor = 0
+				ideology_group = fascism
+			}
+		}
+		add_country_modifier = {
+			name = "paramilitary_forces"
+			duration = 15
+		}
+		leninist 			= { organisation = 7 popularity = -1 }
+		stalinist 			= { organisation = 7 popularity = -1 }
+		national_socialist 	= { organisation = -7 popularity = -2 }
+		fascistic 			= { organisation = -7 popularity = -2 }
+		dissent = 5
+	}
+	option = {
+		name = "Side with the Right!"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				ideology_group = democracy
+			}
+			modifier = {
+				factor = 0
+				ideology_group = communism
+			}
+			modifier = {
+				factor = 3
+				ideology_group = fascism
+			}
+		}
+		add_country_modifier = {
+			name = "paramilitary_forces"
+			duration = 15
+		}
+		leninist 			= { organisation = -7 popularity = -2 }
+		stalinist 			= { organisation = -7 popularity = -2 }
+		national_socialist 	= { organisation = 7 popularity = -1 }
+		fascistic 			= { organisation = 7 popularity = -1 }
+		dissent = 5
+	}
+	option = {
+		name = "Put them down both!"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				ideology_group = democracy
+			}
+			modifier = {
+				factor = 0
+				ideology_group = communism
+			}
+			modifier = {
+				factor = 0
+				ideology_group = fascism
+			}
+		}
+		add_country_modifier = {
+			name = "paramilitary_forces"
+			duration = 30
+		}
+		random_list = {
+			66 = {
+				popularity = 5
+				organisation = 5
+				leninist 			= { organisation = -7 popularity = 2 }
+				stalinist 			= { organisation = -7 popularity = 2 }
+				national_socialist 	= { organisation = -7 popularity = 2 }
+				fascistic 			= { organisation = -7 popularity = 2 }
+			}
+			34 = {
+				popularity = -8
+				organisation = -10
+				leninist 			= { organisation = 3 popularity = 2 }
+				stalinist 			= { organisation = 3 popularity = 2 }
+				national_socialist 	= { organisation = 3 popularity = 2 }
+				fascistic 			= { organisation = 3 popularity = 2 }
+			}
+		}
+		dissent = 3
+	}
+	option = {
+		name = "No need to get involved!"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				ideology_group = democracy
+			}
+		}
+		add_country_modifier = {
+			name = "paramilitary_forces"
+			duration = 45
+		}
+		random_list = {
+			50 = {
+				leninist 			= { organisation = -2 popularity = -2 }
+				stalinist 			= { organisation = -2 popularity = -2 }
+				national_socialist 	= { organisation = 5 popularity = -1 }
+				fascistic 			= { organisation = 5 popularity = -1 }
+			}
+			50 = {
+				leninist 			= { organisation = 5 popularity = -1 }
+				stalinist 			= { organisation = 5 popularity = -1 }
+				national_socialist 	= { organisation = -2 popularity = -2 }
+				fascistic 			= { organisation = -2 popularity = -2 }
+			}
+		}
+		dissent = 1
+		national_unity = -3
+	}
+}
+
+# Parliamentary Scandal
+country_event = {
+	
+	id = 5223
+
+	trigger = {
+		government_in_exile = no
+		has_country_flag = "holds_elections"
+		not = { national_unity = 80 }
+		not = { organisation = 50 }
+		not = { has_country_modifier = "parliamentary_scandal" }
+	}
+
+	mean_time_to_happen =  {
+		months = 30
+
+		modifier = { factor = 2.0 war = yes }
+		
+		modifier = { factor = 0.9 not = { organisation = 40 } }
+		modifier = { factor = 0.9 not = { organisation = 30 } }
+		modifier = { factor = 0.9 not = { organisation = 20 } }
+		modifier = { factor = 0.9 not = { organisation = 10 } }
+		
+		modifier = { factor = 0.9 not = { national_unity = 70 } }
+		modifier = { factor = 0.9 not = { national_unity = 60 } }
+		modifier = { factor = 0.9 not = { national_unity = 50 } }
+		modifier = { factor = 0.9 not = { national_unity = 40 } }
+	}
+
+	title = "EVTNAME5001"
+	desc = "EVTDESC5001"
+	picture = "parliamentary_scandal"
+
+	option = {
+		name = "EVTOPTA5001"			# OK
+		add_country_modifier = {
+			name = "parliamentary_scandal"
+			duration = 30
+		}
+		random_list = {
+			40 = { dissent = 1 }
+			30 = { dissent = 2 }
+			15 = { dissent = 3 }
+			10 = { dissent = 4 }
+			 5 = { dissent = 5 }
+		}
+	}
+}
+
+# Famous War Hero Publishes Articles Critizing the Conduct of War
+country_event = {
+	
+	id = 5224
+
+	trigger = {
+		government_in_exile = no
+		war = yes
+		war_exhaustion = 2
+		not = { national_unity = 80 }
+		not = { organisation = 50 }
+		has_country_modifier = "critique_against_the_war"
+	}
+
+	mean_time_to_happen =  {
+		months = 48
+
+		modifier = { factor = 0.9 not = { national_unity = 75 } }
+		modifier = { factor = 0.9 not = { national_unity = 65 } }
+		modifier = { factor = 0.9 not = { national_unity = 55 } }
+		modifier = { factor = 0.9 not =	{ national_unity = 45 } }
+		
+		modifier = { factor = 0.9 not = { organisation = 50 } }
+		modifier = { factor = 0.9 not = { organisation = 40 } }
+		modifier = { factor = 0.9 not = { organisation = 30 } }
+		modifier = { factor = 0.9 not = { organisation = 20 } }
+		modifier = { factor = 0.9 not = { organisation = 10 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 3 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 5 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 7 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 9 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+
+	title = "EVTNAME5004"
+	desc = "EVTDESC5004"
+	picture = "news_paper"
+
+	option = {
+		name = "Heed his advice!"
+		add_country_modifier = {
+			name = "critique_against_the_war"
+			duration = 90
+		}
+		organisation = -2
+		national_unity = 1
+	}
+	option = {
+		name = "We know what to do thank you very much..."
+		national_unity = -3
+		war_exhaustion = 0.5
+	}
+}
+
+# Rogue Politician
+country_event = {
+	
+	id = 5225
+
+	trigger = {
+		government_in_exile = no
+		not = { organisation = 55 }
+		not = { national_unity = 80 }
+		has_country_flag = "holds_elections"
+	}
+
+	mean_time_to_happen =  {
+		months = 24
+
+		modifier = { factor = 0.9 not = { national_unity = 75 } }
+		modifier = { factor = 0.9 not = { national_unity = 65 } }
+		modifier = { factor = 0.9 not = { national_unity = 55 } }
+		modifier = { factor = 0.9 not =	{ national_unity = 45 } }
+		
+		modifier = { factor = 0.9 not = { organisation = 50 } }
+		modifier = { factor = 0.9 not = { organisation = 40 } }
+		modifier = { factor = 0.9 not = { organisation = 30 } }
+		modifier = { factor = 0.9 not = { organisation = 20 } }
+		modifier = { factor = 0.9 not = { organisation = 10 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 3 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 5 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 7 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 9 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+
+	title = "EVTNAME5008"
+	desc = "EVTDESC5008"
+	picture = "politician"
+
+	option = {
+		name = "Let him go"
+		national_unity = -1
+		add_country_modifier = {
+			name = "rogue_politician"
+			duration = 30
+		}
+	}
+	option = {
+		name = "Support him!"
+		dissent = 5
+	}
+}
+
+# Minister Cooperating with Revolutionary Movements
+country_event = {
+
+	id = 5226
+
+	trigger = {
+		government_in_exile = no
+		has_country_flag = "holds_elections"
+		dissent = 1
+		not = { popularity = 50 }
+		not = { has_country_modifier = "revolutionary_movements" }
+	}
+
+	mean_time_to_happen =  {
+		months = 6
+
+		modifier = { factor = 0.5 war = yes }
+		
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.9 dissent = 6 }
+		modifier = { factor = 0.9 dissent = 7 }
+		modifier = { factor = 0.9 dissent = 8 }
+		modifier = { factor = 0.9 dissent = 9 }
+		modifier = { factor = 0.9 dissent = 10 }
+	}
+
+	title = "Radicals gain power"
+	desc = "Unrest is brewing in our country. That is a great opportunity for the more radical parties to get supporters."
+	picture = "politics2"
+
+	option = {
+		name = "Let's arrest the leaders!"
+		ai_chance = { factor = 10 }
+		add_country_modifier = {
+			name = "revolutionary_movements"
+			duration = 30
+		}
+		 dissent = 8
+	}
+	option = {
+		name = "There's nothing we can do..."
+		ai_chance = { factor = 90 }
+		add_country_modifier = {
+			name = "revolutionary_movements"
+			duration = 30
+		}
+		national_unity = -1
+		random_list = {
+			15 = { stalinist = { popularity = 5 organisation = 5 } }
+			15 = { leninist = { popularity = 5 organisation = 5 } }
+			15 = { left_wing_radical = { popularity = 5 organisation = 5 } }
+
+			15 = { national_socialist = { popularity = 5 organisation = 5 } }
+			15 = { fascistic = { popularity = 5 organisation = 5 } }
+			15 = { paternal_autocrat = { popularity = 5 organisation = 5 } }
+
+			10 = { dissent = 2 }
+		}
+	}
+}
+
+# Bribed Minister
+country_event = {
+	
+	id = 5227
+
+	trigger = {
+		government_in_exile = no
+		not = { has_country_modifier = "political_mistake" }
+		has_country_flag = "holds_elections"
+		not = { organisation = 50 }
+	}
+
+	mean_time_to_happen =  {
+		months = 30
+		
+		modifier = { factor = 0.9 not = { organisation = 45 } }
+		modifier = { factor = 0.9 not = { organisation = 40 } }
+		modifier = { factor = 0.9 not = { organisation = 35 } }
+		modifier = { factor = 0.9 not = { organisation = 30 } }
+		modifier = { factor = 0.9 not = { organisation = 25 } }
+		modifier = { factor = 0.9 not = { organisation = 20 } }
+		modifier = { factor = 0.9 not = { organisation = 15 } }
+		modifier = { factor = 0.9 not = { organisation = 10 } }
+		modifier = { factor = 0.9 not = { organisation =  5 } }
+	}
+
+	title = "EVTNAME5034"
+	desc = "EVTDESC5034"
+	picture = "minister_resign"
+
+	option = {
+		name = "Defend him"
+		popularity = -5
+		random = {
+			chance = 50
+			national_unity = -1
+			add_country_modifier = {
+				name = "political_mistake"
+				duration = 30
+			}
+		}
+	}
+	option = {
+		name = "Give him a new position"
+		organisation = -2
+	}
+}
+
+# Rigged Elections
+country_event = {
+	
+	id = 5228
+
+	trigger = {
+		government_in_exile = no
+		war = no
+		not = { popularity = 50 }
+		not = { national_unity = 80 }
+		or = {
+			government = social_conservatism
+			government = social_democracy
+			government = constitutional_monarchy
+		}
+		# Elections are no longer held on the first of January
+		# or = {
+			# and = {
+				# date = 1936.1.1
+				# not = { date = 1936.3.1 }
+			# }
+			# and = {
+				# date = 1940.1.1
+				# not = { date = 1940.3.1 }
+			# }
+			# and = {
+				# date = 1944.1.1
+				# not = { date = 1944.3.1 }
+			# }
+		# }
+	}
+
+	mean_time_to_happen =  {
+		months = 4
+	}
+
+	title = "EVTNAME5035"
+	desc = "EVTDESC5035"
+	picture = "election"
+
+	option = {
+		name = "EVTOPTA5035"			# Prepare a speech
+		popularity = -5
+		organisation = 5
+		dissent = 1
+		random_list = {
+			30 = { national_unity = -1 }
+			40 = { dissent = -1 }
+			30 = { popularity = -5 }
+		}
+	}
+}
+
+# Leak Within the Government
+country_event = {
+	
+	id = 5229
+
+	trigger = {
+		government_in_exile = no
+		war = yes
+		not = { organisation = 50 }
+		not = { popularity = 45 }
+		war_exhaustion = 1
+	}
+
+	mean_time_to_happen =  {
+		months = 18
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 3 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 5 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 7 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 9 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+
+	title = "EVTNAME5036"
+	desc = "EVTDESC5036"
+	picture = "politician"
+
+	option = {
+		name = "EVTOPTA5036"			# It's probably nothing
+		random = {
+			chance = 60
+			organisation = -2
+			popularity = -5
+		}
+	}
+	option = {
+		name = "EVTOPTB5036"			# Increase your efforts
+		random = {
+			chance = 40
+			organisation = -4
+			popularity = -5
+		}
+	}
+}
+
+# Assassination Attempt of Opposition Leader
+country_event = {
+	
+	id = 5236
+
+	trigger = {
+		government_in_exile = no
+		not = { organisation = 50 }
+		not = { popularity = 50 }
+		not = { has_country_modifier = "assassination_attempt_of_opposition_leader" }
+	}
+
+	mean_time_to_happen =  {
+		months = 36
+
+		modifier = {
+			factor = 2.0
+			war = yes
+		}
+	}
+
+	title = "EVTNAME5032"
+	desc = "EVTDESC5032"
+	picture = "fire"
+
+	option = {
+		name = "EVTOPTA5032"			# Do what you can to calm things down
+		add_country_modifier = {
+			name = "assassination_attempt_of_opposition_leader"
+			duration = 30
+		}
+	}
+	option = {
+		name = "EVTOPTB5032"			# Let the army handle it
+		dissent = 5
+	}
+}
+
+# Re-organization of the War Ministry
+country_event = {
+
+	id = 5237
+
+	trigger = {
+		government_in_exile = no
+		not = { organisation = 40 }
+	}
+
+	mean_time_to_happen =  {
+		months = 36
+
+		modifier = { factor = 0.75 war = yes }
+		
+		modifier = { factor = 0.9 war_exhaustion = 1 }
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 3 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 5 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 7 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 9 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+
+	title = "EVTNAME5013"
+	desc = "EVTDESC5013"
+	picture = "parliamentary_scandal"
+
+	option = {
+		name = "EVTOPTA5013"			# We need more loyal ministers like him
+		add_country_modifier = {
+			name = "reorganization_of_war_ministry"
+			duration = 30
+		}
+		dissent = 5
+	}
+	option = {
+		name = "EVTOPTB5013"			# That's just ridiculous
+		dissent = 2
+		neutrality = 5
+	}
+}
+
+# Re-organization of the Foreign Ministry
+country_event = {
+	
+	id = 5238
+
+	trigger = {
+		government_in_exile = no
+		is_in_any_faction = no
+		war = no
+		is_threatend = 5
+	}
+
+	mean_time_to_happen =  {
+		months = 36
+
+		modifier = { factor = 0.9 is_threatend = 10 }
+		modifier = { factor = 0.9 is_threatend = 20 }
+		modifier = { factor = 0.9 is_threatend = 30 }
+		modifier = { factor = 0.9 is_threatend = 40 }
+		modifier = { factor = 0.9 is_threatend = 50 }
+		modifier = { factor = 0.9 is_threatend = 60 }
+		modifier = { factor = 0.9 is_threatend = 70 }
+		modifier = { factor = 0.9 is_threatend = 80 }
+		modifier = { factor = 0.9 is_threatend = 90 }
+		modifier = { factor = 0.9 is_threatend = 100 }
+	}
+
+	title = "EVTNAME5027"
+	desc = "EVTDESC5027"
+	picture = "politics1"
+
+	option = {
+		name = "EVTOPTA5027"			# Good initiative
+		dissent = 5
+		neutrality = -2
+	}
+	option = {
+		name = "EVTOPTB5027"			# There's no need
+		add_country_modifier = {
+			name = "troublesome_ministry"
+			duration = 30
+		}
+		neutrality = 3
+		dissent = 3
+	}
+}
+
+# The Head of State is assassinated!
+country_event = {
+	
+	id = 5239
+
+	trigger = {
+		government_in_exile = no
+		or = {
+			not = { national_unity = 50 }		# Very low NU
+			and = {
+				not = { organisation = 33 }		# Very low Organisation and low NU
+				not = { national_unity = 75 }
+			}
+			and = {
+				not = { popularity = 33 }		# Very low Popularity and low NU
+				not = { national_unity = 75 }
+			}
+		}
+		not = { has_country_modifier = "head_of_state_assassination_attempt" }
+	}
+
+	mean_time_to_happen =  {
+		months = 24
+
+		modifier = { factor = 5.0 war = yes }							# It's a little harder to get to the HoG or HoS when the country is at war...
+		modifier = { factor = 3.0 ideology_group = democracy }			# It's a lot rarer in Democracies
+		
+		modifier = { factor = 0.75 civil_law = open_society }			# Easier to do
+		modifier = { factor = 0.95 civil_law = limited_restrictions }
+		modifier = { factor = 0.95 civil_law = repression }				# The motivation is stronger
+		modifier = { factor = 0.75 civil_law = totalitarian_system }
+		
+		modifier = { factor = 0.5 dissent = 5 }
+		modifier = { factor = 0.5 dissent = 10 }
+		modifier = { factor = 0.5 dissent = 15 }
+	}
+
+	title = "An assassination attempt against our Head of State!"
+	desc = "Our Head of State "
+	picture = "politician"
+
+	option = {
+		name = "Oh, my!..."
+		add_country_modifier = {
+			name = "head_of_state_assassination_attempt"
+			duration = 60
+		}
+		random = {
+			chance = 10
+			remove_minister = head_of_state
+			coup_by = THIS
+		}
+		random = {
+			chance = 10
+			remove_minister = head_of_government
+			coup_by = THIS
+		}
+	}
+}
+
+# Minor National Socialist Party gains some support
+country_event = {
+
+	id = 5240
+	
+	trigger = {
+		has_country_flag = "holds_elections"
+		national_socialist = { organisation = 5 popularity = 15 }				# At least some Organisation
+		national_socialist = { organisation = 15 popularity = 5 }				# At least some Popularity
+		not = { national_socialist = { organisation = 15 popularity = 15 } }	# Not a major party
+		not = { dissent = 5 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 5.0 dissent = 4 }
+		modifier = { factor = 4.0 dissent = 3 }
+		modifier = { factor = 3.0 dissent = 2 }
+		modifier = { factor = 2.0 dissent = 1 }
+		
+		modifier = { factor = 0.8 national_unity = 65 }
+		modifier = { factor = 0.7 national_unity = 75 }
+		modifier = { factor = 0.6 national_unity = 85 }
+		modifier = { factor = 0.5 national_unity = 90 }
+		modifier = { factor = 0.25 national_unity = 95 }
+	}
+	
+	title = "Minor Party gathers strength"
+	desc = "The National Socialist Party is gaining some minor support in our nation. Still, they are only a minor factor on our political stage, and need to fight for every single vote."
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "Try to marginalize them!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0 dissent = 4 }
+		}
+		dissent = 1
+		national_socialist = { organisation = -3 popularity = -5 }
+	}
+	option = {
+		name = "They deserve a chance to prove themselves!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0 not = { dissent = 2 } }
+		}
+		national_socialist = { organisation = 5 popularity = 3 }
+	}
+	
+}
+
+# Minor Fascistic Party gains some support
+country_event = {
+
+	id = 5241
+	
+	trigger = {
+		has_country_flag = "holds_elections"
+		fascistic = { organisation = 5 popularity = 15 }				# At least some Organisation
+		fascistic = { organisation = 15 popularity = 5 }				# At least some Popularity
+		not = { fascistic = { organisation = 15 popularity = 15 } }	# Not a major party
+		not = { dissent = 5 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 5.0 dissent = 4 }
+		modifier = { factor = 4.0 dissent = 3 }
+		modifier = { factor = 3.0 dissent = 2 }
+		modifier = { factor = 2.0 dissent = 1 }
+		
+		modifier = { factor = 0.8 national_unity = 65 }
+		modifier = { factor = 0.7 national_unity = 75 }
+		modifier = { factor = 0.6 national_unity = 85 }
+		modifier = { factor = 0.5 national_unity = 90 }
+		modifier = { factor = 0.25 national_unity = 95 }
+	}
+	
+	title = "Minor Party gathers strength"
+	desc = "The Fascist Party is gaining some minor support in our nation. Still, they are only a minor factor on our political stage, and need to fight for every single vote."
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "Try to marginalize them!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0 dissent = 4 }
+		}
+		dissent = 1
+		fascistic = { organisation = -3 popularity = -5 }
+	}
+	option = {
+		name = "They deserve a chance to prove themselves!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0 not = { dissent = 2 } }
+		}
+		fascistic = { organisation = 5 popularity = 3 }
+	}
+	
+}
+
+# Minor Paternal Autocrat Party gains some support
+country_event = {
+
+	id = 5242
+	
+	trigger = {
+		has_country_flag = "holds_elections"
+		paternal_autocrat = { organisation = 5 popularity = 15 }				# At least some Organisation
+		paternal_autocrat = { organisation = 15 popularity = 5 }				# At least some Popularity
+		not = { paternal_autocrat = { organisation = 15 popularity = 15 } }		# Not a major party
+		not = { dissent = 5 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 5.0 dissent = 4 }
+		modifier = { factor = 4.0 dissent = 3 }
+		modifier = { factor = 3.0 dissent = 2 }
+		modifier = { factor = 2.0 dissent = 1 }
+		
+		modifier = { factor = 0.8 national_unity = 65 }
+		modifier = { factor = 0.7 national_unity = 75 }
+		modifier = { factor = 0.6 national_unity = 85 }
+		modifier = { factor = 0.5 national_unity = 90 }
+		modifier = { factor = 0.25 national_unity = 95 }
+	}
+	
+	title = "Minor Party gathers strength"
+	desc = "The Paternal Autocrat Party is gaining some minor support in our nation. Still, they are only a minor factor on our political stage, and need to fight for every single vote."
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "Try to marginalize them!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0 dissent = 3 }
+		}
+		dissent = 1
+		paternal_autocrat = { organisation = -3 popularity = -5 }
+	}
+	option = {
+		name = "They deserve a chance to prove themselves!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0 not = { dissent = 1 } }
+		}
+		paternal_autocrat = { organisation = 5 popularity = 3 }
+	}
+	
+}
+
+# Minor Social Conservative Party gains some support
+country_event = {
+
+	id = 5243
+	
+	trigger = {
+		has_country_flag = "holds_elections"
+		social_conservative = { organisation = 5 popularity = 15 }				# At least some Organisation
+		social_conservative = { organisation = 15 popularity = 5 }				# At least some Popularity
+		not = { social_conservative = { organisation = 15 popularity = 15 } }	# Not a major party
+		not = { dissent = 5 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 5.0 dissent = 4 }
+		modifier = { factor = 4.0 dissent = 3 }
+		modifier = { factor = 3.0 dissent = 2 }
+		modifier = { factor = 2.0 dissent = 1 }
+		
+		modifier = { factor = 0.8 national_unity = 65 }
+		modifier = { factor = 0.7 national_unity = 75 }
+		modifier = { factor = 0.6 national_unity = 85 }
+		modifier = { factor = 0.5 national_unity = 90 }
+		modifier = { factor = 0.25 national_unity = 95 }
+	}
+	
+	title = "Minor Party gathers strength"
+	desc = "The Social Conservative Party is gaining some minor support in our nation. Still, they are only a minor factor on our political stage, and need to fight for every single vote."
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "Try to marginalize them!"
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 0 dissent = 2 }
+		}
+		dissent = 1
+		social_conservative = { organisation = -3 popularity = -5 }
+	}
+	option = {
+		name = "They deserve a chance to prove themselves!"
+		ai_chance = {
+			factor = 90
+		}
+		social_conservative = { organisation = 5 popularity = 3 }
+	}
+	
+}
+
+# Minor Market Liberal Party gains some support
+country_event = {
+
+	id = 5244
+	
+	trigger = {
+		has_country_flag = "holds_elections"
+		market_liberal = { organisation = 5 popularity = 15 }				# At least some Organisation
+		market_liberal = { organisation = 15 popularity = 5 }				# At least some Popularity
+		not = { market_liberal = { organisation = 15 popularity = 15 } }	# Not a major party
+		not = { dissent = 5 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 5.0 dissent = 4 }
+		modifier = { factor = 4.0 dissent = 3 }
+		modifier = { factor = 3.0 dissent = 2 }
+		modifier = { factor = 2.0 dissent = 1 }
+		
+		modifier = { factor = 0.8 national_unity = 65 }
+		modifier = { factor = 0.7 national_unity = 75 }
+		modifier = { factor = 0.6 national_unity = 85 }
+		modifier = { factor = 0.5 national_unity = 90 }
+		modifier = { factor = 0.25 national_unity = 95 }
+	}
+	
+	title = "Minor Party gathers strength"
+	desc = "The Market Liberal Party is gaining some minor support in our nation. Still, they are only a minor factor on our political stage, and need to fight for every single vote."
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "Try to marginalize them!"
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 0 dissent = 2 }
+		}
+		dissent = 1
+		market_liberal = { organisation = -3 popularity = -5 }
+	}
+	option = {
+		name = "They deserve a chance to prove themselves!"
+		ai_chance = {
+			factor = 90
+		}
+		market_liberal = { organisation = 5 popularity = 3 }
+	}
+	
+}
+
+# Minor Social Liberal Party gains some support
+country_event = {
+
+	id = 5245
+	
+	trigger = {
+		has_country_flag = "holds_elections"
+		social_liberal = { organisation = 5 popularity = 15 }				# At least some Organisation
+		social_liberal = { organisation = 15 popularity = 5 }				# At least some Popularity
+		not = { social_liberal = { organisation = 15 popularity = 15 } }	# Not a major party
+		not = { dissent = 5 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 5.0 dissent = 4 }
+		modifier = { factor = 4.0 dissent = 3 }
+		modifier = { factor = 3.0 dissent = 2 }
+		modifier = { factor = 2.0 dissent = 1 }
+		
+		modifier = { factor = 0.8 national_unity = 65 }
+		modifier = { factor = 0.7 national_unity = 75 }
+		modifier = { factor = 0.6 national_unity = 85 }
+		modifier = { factor = 0.5 national_unity = 90 }
+		modifier = { factor = 0.25 national_unity = 95 }
+	}
+	
+	title = "Minor Party gathers strength"
+	desc = "The Social Liberal Party is gaining some minor support in our nation. Still, they are only a minor factor on our political stage, and need to fight for every single vote."
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "Try to marginalize them!"
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 0 dissent = 2 }
+		}
+		dissent = 1
+		social_liberal = { organisation = -3 popularity = -5 }
+	}
+	option = {
+		name = "They deserve a chance to prove themselves!"
+		ai_chance = {
+			factor = 90
+		}
+		social_liberal = { organisation = 5 popularity = 3 }
+	}
+	
+}
+
+# Minor Social Democrat Party gains some support
+country_event = {
+
+	id = 5246
+	
+	trigger = {
+		has_country_flag = "holds_elections"
+		social_democrat = { organisation = 5 popularity = 15 }				# At least some Organisation
+		social_democrat = { organisation = 15 popularity = 5 }				# At least some Popularity
+		not = { social_democrat = { organisation = 15 popularity = 15 } }	# Not a major party
+		not = { dissent = 5 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 5.0 dissent = 4 }
+		modifier = { factor = 4.0 dissent = 3 }
+		modifier = { factor = 3.0 dissent = 2 }
+		modifier = { factor = 2.0 dissent = 1 }
+		
+		modifier = { factor = 0.8 national_unity = 65 }
+		modifier = { factor = 0.7 national_unity = 75 }
+		modifier = { factor = 0.6 national_unity = 85 }
+		modifier = { factor = 0.5 national_unity = 90 }
+		modifier = { factor = 0.25 national_unity = 95 }
+	}
+	
+	title = "Minor Party gathers strength"
+	desc = "The Social Democrat Party is gaining some minor support in our nation. Still, they are only a minor factor on our political stage, and need to fight for every single vote."
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "Try to marginalize them!"
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 0 dissent = 2 }
+		}
+		dissent = 1
+		social_democrat = { organisation = -3 popularity = -5 }
+	}
+	option = {
+		name = "They deserve a chance to prove themselves!"
+		ai_chance = {
+			factor = 90
+		}
+		social_democrat = { organisation = 5 popularity = 3 }
+	}
+	
+}
+
+# Minor Left-Wing Radical Party gains some support
+country_event = {
+
+	id = 5247
+	
+	trigger = {
+		has_country_flag = "holds_elections"
+		left_wing_radical = { organisation = 5 popularity = 15 }				# At least some Organisation
+		left_wing_radical = { organisation = 15 popularity = 5 }				# At least some Popularity
+		not = { left_wing_radical = { organisation = 15 popularity = 15 } }		# Not a major party
+		not = { dissent = 5 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 5.0 dissent = 4 }
+		modifier = { factor = 4.0 dissent = 3 }
+		modifier = { factor = 3.0 dissent = 2 }
+		modifier = { factor = 2.0 dissent = 1 }
+		
+		modifier = { factor = 0.8 national_unity = 65 }
+		modifier = { factor = 0.7 national_unity = 75 }
+		modifier = { factor = 0.6 national_unity = 85 }
+		modifier = { factor = 0.5 national_unity = 90 }
+		modifier = { factor = 0.25 national_unity = 95 }
+	}
+	
+	title = "Minor Party gathers strength"
+	desc = "The Left-Wing Radical Party is gaining some minor support in our nation. Still, they are only a minor factor on our political stage, and need to fight for every single vote."
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "Try to marginalize them!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0 dissent = 3 }
+		}
+		dissent = 1
+		left_wing_radical = { organisation = -3 popularity = -5 }
+	}
+	option = {
+		name = "They deserve a chance to prove themselves!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0 not = { dissent = 1 } }
+		}
+		left_wing_radical = { organisation = 5 popularity = 3 }
+	}
+	
+}
+
+# Minor Leninist Party gains some support
+country_event = {
+
+	id = 5248
+	
+	trigger = {
+		has_country_flag = "holds_elections"
+		leninist = { organisation = 5 popularity = 15 }				# At least some Organisation
+		leninist = { organisation = 15 popularity = 5 }				# At least some Popularity
+		not = { leninist = { organisation = 15 popularity = 15 } }	# Not a major party
+		not = { dissent = 5 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 5.0 dissent = 4 }
+		modifier = { factor = 4.0 dissent = 3 }
+		modifier = { factor = 3.0 dissent = 2 }
+		modifier = { factor = 2.0 dissent = 1 }
+		
+		modifier = { factor = 0.8 national_unity = 65 }
+		modifier = { factor = 0.7 national_unity = 75 }
+		modifier = { factor = 0.6 national_unity = 85 }
+		modifier = { factor = 0.5 national_unity = 90 }
+		modifier = { factor = 0.25 national_unity = 95 }
+	}
+	
+	title = "Minor Party gathers strength"
+	desc = "The Leninist Party is gaining some minor support in our nation. Still, they are only a minor factor on our political stage, and need to fight for every single vote."
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "Try to marginalize them!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0 dissent = 4 }
+		}
+		dissent = 1
+		leninist = { organisation = -3 popularity = -5 }
+	}
+	option = {
+		name = "They deserve a chance to prove themselves!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0 not = { dissent = 2 } }
+		}
+		leninist = { organisation = 5 popularity = 3 }
+	}
+	
+}
+
+# Minor Stalinist Party gains some support
+country_event = {
+
+	id = 5249
+	
+	trigger = {
+		has_country_flag = "holds_elections"
+		stalinist = { organisation = 5 popularity = 15 }				# At least some Organisation
+		stalinist = { organisation = 15 popularity = 5 }				# At least some Popularity
+		not = { stalinist = { organisation = 15 popularity = 15 } }	# Not a major party
+		not = { dissent = 5 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 5.0 dissent = 4 }
+		modifier = { factor = 4.0 dissent = 3 }
+		modifier = { factor = 3.0 dissent = 2 }
+		modifier = { factor = 2.0 dissent = 1 }
+		
+		modifier = { factor = 0.8 national_unity = 65 }
+		modifier = { factor = 0.7 national_unity = 75 }
+		modifier = { factor = 0.6 national_unity = 85 }
+		modifier = { factor = 0.5 national_unity = 90 }
+		modifier = { factor = 0.25 national_unity = 95 }
+	}
+	
+	title = "Minor Party gathers strength"
+	desc = "The Stalinist Party is gaining some minor support in our nation. Still, they are only a minor factor on our political stage, and need to fight for every single vote."
+	picture = "major_worker_strike"
+	
+	option = {
+		name = "Try to marginalize them!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0 dissent = 4 }
+		}
+		dissent = 1
+		stalinist = { organisation = -3 popularity = -5 }
+	}
+	option = {
+		name = "They deserve a chance to prove themselves!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0 not = { dissent = 2 } }
+		}
+		stalinist = { organisation = 5 popularity = 3 }
+	}
+	
+}
+
+# National Socialist-Fascistic Coalition
+country_event = {
+
+	id = 5250
+	
+	trigger = {
+		not = { ideology = national_socialist }
+		not = { ideology = fascistic }
+		or = {
+			and = {
+				national_socialist = { organisation = 20 popularity = 33 }
+				fascistic = { organisation = 5 popularity = 33 }
+			}
+			and = {
+				fascistic = { organisation = 20 popularity = 33 }
+				national_socialist = { organisation = 5 popularity = 33 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 1 }
+
+		modifier = { factor = 1.1 national_unity = 65 }
+		modifier = { factor = 1.1 national_unity = 75 }
+		modifier = { factor = 1.1 national_unity = 85 }
+		modifier = { factor = 1.1 national_unity = 90 }
+		modifier = { factor = 1.1 national_unity = 95 }
+		
+		modifier = { factor = 0.9 national_socialist = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 national_socialist = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 national_socialist = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 national_socialist = { organisation = 40 popularity = 50 } }
+		
+		modifier = { factor = 0.9 fascistic = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 fascistic = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 fascistic = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 fascistic = { organisation = 40 popularity = 50 } }
+	}
+	
+	title = "The opposition is forming a coalition"
+	desc = "Two opposition parties, the National Socialists and the Fascists are about to form a new coalition to increase their strength!"
+	picture = "news_paper"
+	
+	option = {
+		name = "The National Socialists lead the coalition"
+		ai_chance = { factor = 40 }
+		national_socialist = { organisation = 10 popularity = 15 }
+		fascistic = { organisation = -10  popularity = -15 }
+	}
+	option = {
+		name = "The Fascists lead the coalition"
+		ai_chance = { factor = 40 }
+		fascistic = { organisation = 10 popularity = 15 }
+		national_socialist = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "Intervene before it's too late!"
+		ai_chance = { factor = 20 }
+		national_socialist = { organisation = -10 popularity = 2 }
+		fascistic = { organisation = -10 popularity = 2 }
+		dissent = 5
+	}
+}
+
+# Fascistic-Paternal Autocrat Coalition
+country_event = {
+
+	id = 5251
+	
+	trigger = {
+		not = { ideology = fascistic }
+		not = { ideology = paternal_autocrat }
+		or = {
+			and = {
+				fascistic = { organisation = 5 popularity = 33 }
+				paternal_autocrat = { organisation = 20 popularity = 33 }
+			}
+			and = {
+				paternal_autocrat = { organisation = 5 popularity = 33 }
+				fascistic = { organisation = 20 popularity = 33 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 1 }
+
+		modifier = { factor = 1.1 national_unity = 65 }
+		modifier = { factor = 1.1 national_unity = 75 }
+		modifier = { factor = 1.1 national_unity = 85 }
+		modifier = { factor = 1.1 national_unity = 90 }
+		modifier = { factor = 1.1 national_unity = 95 }
+		
+		modifier = { factor = 0.9 fascistic = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 fascistic = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 fascistic = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 fascistic = { organisation = 40 popularity = 50 } }
+		
+		modifier = { factor = 0.9 paternal_autocrat = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 paternal_autocrat = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 paternal_autocrat = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 paternal_autocrat = { organisation = 40 popularity = 50 } }
+	}
+	
+	title = "The opposition is forming a coalition"
+	desc = "Two opposition parties, the Fascists and the Paternal Autocrats are about to form a new coalition to increase their strength!"
+	picture = "news_paper"
+	
+	option = {
+		name = "The Fascists lead the coalition"
+		ai_chance = { factor = 40 }
+		fascistic = { organisation = 10 popularity = 15 }
+		paternal_autocrat = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "The Paternal Autocrats lead the coalition"
+		ai_chance = { factor = 40 }
+		paternal_autocrat = { organisation = 10 popularity = 15 }
+		fascistic = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "Intervene before it's too late!"
+		ai_chance = { factor = 20 }
+		paternal_autocrat = { organisation = -10 popularity = 2 }
+		fascistic = { organisation = -10 popularity = 2 }
+		dissent = 5
+	}
+}
+
+# Paternal Autocrat-Social Conservative Coalition
+country_event = {
+
+	id = 5252
+	
+	trigger = {
+		not = { ideology = paternal_autocrat }
+		not = { ideology = social_conservative }
+		or = {
+			and = {
+				paternal_autocrat = { organisation = 20 popularity = 33 }
+				social_conservative = { organisation = 5 popularity = 33 }
+			}
+			and = {
+				social_conservative = { organisation = 20 popularity = 33 }
+				paternal_autocrat = { organisation = 5 popularity = 33 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 1 }
+
+		modifier = { factor = 1.1 national_unity = 65 }
+		modifier = { factor = 1.1 national_unity = 75 }
+		modifier = { factor = 1.1 national_unity = 85 }
+		modifier = { factor = 1.1 national_unity = 90 }
+		modifier = { factor = 1.1 national_unity = 95 }
+		
+		modifier = { factor = 0.9 paternal_autocrat = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 paternal_autocrat = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 paternal_autocrat = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 paternal_autocrat = { organisation = 40 popularity = 50 } }
+		
+		modifier = { factor = 0.9 social_conservative = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 social_conservative = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 social_conservative = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 social_conservative = { organisation = 40 popularity = 50 } }
+	}
+	
+	title = "The opposition is forming a coalition"
+	desc = "Two opposition parties, the Paternal Autocrats and the Social Conservatives are about to form a new coalition to increase their strength!"
+	picture = "news_paper"
+	
+	option = {
+		name = "The Paternal Autocrats lead the coalition"
+		ai_chance = { factor = 40 }
+		paternal_autocrat = { organisation = 10 popularity = 15 }
+		social_conservative = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "The Social Conservatives lead the coalition"
+		ai_chance = { factor = 40 }
+		social_conservative = { organisation = 10 popularity = 15 }
+		paternal_autocrat = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "Intervene before it's too late!"
+		ai_chance = { factor = 20 }
+		paternal_autocrat = { organisation = -10 popularity = 2 }
+		social_conservative = { organisation = -10 popularity = 2 }
+		dissent = 5
+	}
+}
+
+# Social Conservative-Market Liberal Coalition
+country_event = {
+
+	id = 5253
+	
+	trigger = {
+		not = { ideology = social_conservative }
+		not = { ideology = market_liberal }
+		or = {
+			and = {
+				social_conservative = { organisation = 20 popularity = 33 }
+				market_liberal = { organisation = 5 popularity = 33 }
+			}
+			and = {
+				market_liberal = { organisation = 20 popularity = 33 }
+				social_conservative = { organisation = 5 popularity = 33 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 1 }
+
+		modifier = { factor = 1.1 national_unity = 65 }
+		modifier = { factor = 1.1 national_unity = 75 }
+		modifier = { factor = 1.1 national_unity = 85 }
+		modifier = { factor = 1.1 national_unity = 90 }
+		modifier = { factor = 1.1 national_unity = 95 }
+		
+		modifier = { factor = 0.9 social_conservative = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 social_conservative = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 social_conservative = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 social_conservative = { organisation = 40 popularity = 50 } }
+		
+		modifier = { factor = 0.9 market_liberal = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 market_liberal = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 market_liberal = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 market_liberal = { organisation = 40 popularity = 50 } }
+	}
+	
+	title = "The opposition is forming a coalition"
+	desc = "Two opposition parties, the Social Conservatives and the Market Liberals are about to form a new coalition to increase their strength!"
+	picture = "news_paper"
+	
+	option = {
+		name = "The Social Conservatives lead the coalition"
+		ai_chance = { factor = 40 }
+		social_conservative = { organisation = 10 popularity = 15 }
+		market_liberal = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "The Market Liberals lead the coalition"
+		ai_chance = { factor = 40 }
+		market_liberal = { organisation = 10 popularity = 15 }
+		social_conservative = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "Intervene before it's too late!"
+		ai_chance = { factor = 20 }
+		social_conservative = { organisation = -10 popularity = 2 }
+		market_liberal = { organisation = -10 popularity = 2 }
+		dissent = 5
+	}
+}
+
+# Market Liberal-Social Liberal Coalition
+country_event = {
+
+	id = 5254
+	
+	trigger = {
+		not = { ideology = market_liberal }
+		not = { ideology = social_liberal }
+		or = {
+			and = {
+				market_liberal = { organisation = 20 popularity = 33 }
+				social_liberal = { organisation = 5 popularity = 33 }
+			}
+			and = {
+				social_liberal = { organisation = 20 popularity = 33 }
+				market_liberal = { organisation = 5 popularity = 33 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 1 }
+
+		modifier = { factor = 1.1 national_unity = 65 }
+		modifier = { factor = 1.1 national_unity = 75 }
+		modifier = { factor = 1.1 national_unity = 85 }
+		modifier = { factor = 1.1 national_unity = 90 }
+		modifier = { factor = 1.1 national_unity = 95 }
+		
+		modifier = { factor = 0.9 market_liberal = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 market_liberal = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 market_liberal = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 market_liberal = { organisation = 40 popularity = 50 } }
+		
+		modifier = { factor = 0.9 social_liberal = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 social_liberal = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 social_liberal = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 social_liberal = { organisation = 40 popularity = 50 } }
+	}
+	
+	title = "The opposition is forming a coalition"
+	desc = "Two opposition parties, the Market Liberals and the Social Liberals are about to form a new coalition to increase their strength!"
+	picture = "news_paper"
+	
+	option = {
+		name = "The Market Liberals lead the coalition"
+		ai_chance = { factor = 40 }
+		market_liberal = { organisation = 10 popularity = 15 }
+		social_liberal = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "The Social Liberals lead the coalition"
+		ai_chance = { factor = 40 }
+		social_liberal = { organisation = 10 popularity = 15 }
+		market_liberal = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "Intervene before it's too late!"
+		ai_chance = { factor = 20 }
+		market_liberal = { organisation = -10 popularity = 2 }
+		social_liberal = { organisation = -10 popularity = 2 }
+		dissent = 5
+	}
+}
+
+# Social Liberal-Social Democrat Coalition
+country_event = {
+
+	id = 5255
+	
+	trigger = {
+		not = { ideology = social_liberal }
+		not = { ideology = social_democrat }
+		or = {
+			and = {
+				social_liberal = { organisation = 20 popularity = 33 }
+				social_democrat = { organisation = 5 popularity = 33 }
+			}
+			and = {
+				social_democrat = { organisation = 20 popularity = 33 }
+				social_liberal = { organisation = 5 popularity = 33 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 1 }
+
+		modifier = { factor = 1.1 national_unity = 65 }
+		modifier = { factor = 1.1 national_unity = 75 }
+		modifier = { factor = 1.1 national_unity = 85 }
+		modifier = { factor = 1.1 national_unity = 90 }
+		modifier = { factor = 1.1 national_unity = 95 }
+		
+		modifier = { factor = 0.9 social_liberal = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 social_liberal = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 social_liberal = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 social_liberal = { organisation = 40 popularity = 50 } }
+		
+		modifier = { factor = 0.9 social_democrat = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 social_democrat = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 social_democrat = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 social_democrat = { organisation = 40 popularity = 50 } }
+	}
+	
+	title = "The opposition is forming a coalition"
+	desc = "Two opposition parties, the Social Liberals and the Social Democrats are about to form a new coalition to increase their strength!"
+	picture = "news_paper"
+	
+	option = {
+		name = "The Social Liberals lead the coalition"
+		ai_chance = { factor = 40 }
+		social_liberal = { organisation = 10 popularity = 15 }
+		social_democrat = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "The Social Democrats lead the coalition"
+		ai_chance = { factor = 40 }
+		social_democrat = { organisation = 10 popularity = 15 }
+		social_liberal = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "Intervene before it's too late!"
+		ai_chance = { factor = 20 }
+		social_liberal = { organisation = -10 popularity = 2 }
+		social_democrat = { organisation = -10 popularity = 2 }
+		dissent = 5
+	}
+}
+
+# Social Democrat-Left Wing Radical Coalition
+country_event = {
+
+	id = 5256
+	
+	trigger = {
+		not = { ideology = social_democrat }
+		not = { ideology = left_wing_radical }
+		or = {
+			and = {
+				social_democrat = { organisation = 20 popularity = 33 }
+				left_wing_radical = { organisation = 5 popularity = 33 }
+			}
+			and = {
+				left_wing_radical = { organisation = 20 popularity = 33 }
+				social_democrat = { organisation = 5 popularity = 33 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 1 }
+
+		modifier = { factor = 1.1 national_unity = 65 }
+		modifier = { factor = 1.1 national_unity = 75 }
+		modifier = { factor = 1.1 national_unity = 85 }
+		modifier = { factor = 1.1 national_unity = 90 }
+		modifier = { factor = 1.1 national_unity = 95 }
+		
+		modifier = { factor = 0.9 social_democrat = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 social_democrat = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 social_democrat = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 social_democrat = { organisation = 40 popularity = 50 } }
+		
+		modifier = { factor = 0.9 left_wing_radical = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 left_wing_radical = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 left_wing_radical = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 left_wing_radical = { organisation = 40 popularity = 50 } }
+	}
+	
+	title = "The opposition is forming a coalition"
+	desc = "Two opposition parties, the Social Democrats and the Left-Wing Radicals are about to form a new coalition to increase their strength!"
+	picture = "news_paper"
+	
+	option = {
+		name = "The Social Democrats lead the coalition"
+		ai_chance = { factor = 40 }
+		social_democrat = { organisation = 10 popularity = 15 }
+		left_wing_radical = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "The Left-Wing Radicals lead the coalition"
+		ai_chance = { factor = 40 }
+		left_wing_radical = { organisation = 10 popularity = 15 }
+		social_democrat = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "Intervene before it's too late!"
+		ai_chance = { factor = 20 }
+		social_democrat = { organisation = -10 popularity = 2 }
+		left_wing_radical = { organisation = -10 popularity = 2 }
+		dissent = 5
+	}
+}
+
+# Left Wing Radical-Leninist Coalition
+country_event = {
+
+	id = 5257
+	
+	trigger = {
+		not = { ideology = left_wing_radical }
+		not = { ideology = leninist }
+		or = {
+			and = {
+				left_wing_radical = { organisation = 20 popularity = 33 }
+				leninist = { organisation = 5 popularity = 33 }
+			}
+			and = {
+				leninist = { organisation = 20 popularity = 33 }
+				left_wing_radical = { organisation = 5 popularity = 33 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 1 }
+
+		modifier = { factor = 1.1 national_unity = 65 }
+		modifier = { factor = 1.1 national_unity = 75 }
+		modifier = { factor = 1.1 national_unity = 85 }
+		modifier = { factor = 1.1 national_unity = 90 }
+		modifier = { factor = 1.1 national_unity = 95 }
+		
+		modifier = { factor = 0.9 left_wing_radical = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 left_wing_radical = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 left_wing_radical = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 left_wing_radical = { organisation = 40 popularity = 50 } }
+		
+		modifier = { factor = 0.9 leninist = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 leninist = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 leninist = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 leninist = { organisation = 40 popularity = 50 } }
+	}
+	
+	title = "The opposition is forming a coalition"
+	desc = "Two opposition parties, the Left-Wing Radicals and the Leninists are about to form a new coalition to increase their strength!"
+	picture = "news_paper"
+	
+	option = {
+		name = "The Left-Wing Radicals lead the coalition"
+		ai_chance = { factor = 40 }
+		left_wing_radical = { organisation = 10 popularity = 15 }
+		leninist = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "The Leninists lead the coalition"
+		ai_chance = { factor = 40 }
+		leninist = { organisation = 10 popularity = 15 }
+		left_wing_radical = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "Intervene before it's too late!"
+		ai_chance = { factor = 20 }
+		left_wing_radical = { organisation = -10 popularity = 2 }
+		leninist = { organisation = -10 popularity = 2 }
+		dissent = 5
+	}
+}
+
+# Leninist-Stalinist Coalition
+country_event = {
+
+	id = 5258
+	
+	trigger = {
+		not = { ideology = leninist }
+		not = { ideology = stalinist }
+		or = {
+			and = {
+				leninist = { organisation = 20 popularity = 33 }
+				stalinist = { organisation = 5 popularity = 33 }
+			}
+			and = {
+				stalinist = { organisation = 20 popularity = 33 }
+				leninist = { organisation = 5 popularity = 33 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 1 }
+
+		modifier = { factor = 1.1 national_unity = 65 }
+		modifier = { factor = 1.1 national_unity = 75 }
+		modifier = { factor = 1.1 national_unity = 85 }
+		modifier = { factor = 1.1 national_unity = 90 }
+		modifier = { factor = 1.1 national_unity = 95 }
+		
+		modifier = { factor = 0.9 leninist = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 leninist = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 leninist = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 leninist = { organisation = 40 popularity = 50 } }
+		
+		modifier = { factor = 0.9 stalinist = { organisation = 25 popularity = 50 } }
+		modifier = { factor = 0.9 stalinist = { organisation = 30 popularity = 50 } }
+		modifier = { factor = 0.9 stalinist = { organisation = 35 popularity = 50 } }
+		modifier = { factor = 0.9 stalinist = { organisation = 40 popularity = 50 } }
+	}
+	
+	title = "The opposition is forming a coalition"
+	desc = "Two opposition parties, the Leninists and the Stalinists are about to form a new coalition to increase their strength!"
+	picture = "news_paper"
+	
+	option = {
+		name = "The Leninists lead the coalition"
+		ai_chance = { factor = 40 }
+		leninist = { organisation = 10 popularity = 15 }
+		stalinist = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "The Stalinists lead the coalition"
+		ai_chance = { factor = 40 }
+		stalinist = { organisation = 10 popularity = 15 }
+		leninist = { organisation = -10 popularity = -15 }
+	}
+	option = {
+		name = "Intervene before it's too late!"
+		ai_chance = { factor = 20 }
+		leninist = { organisation = -10 popularity = 2 }
+		stalinist = { organisation = -10 popularity = 2 }
+		dissent = 5
+	}
+}
+
+#############################
+# Underground Organisations #
+#############################
+# ID: 5301-
+
+# Illegal printing
+country_event = {
+
+	id = 5301
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			has_country_flag = "national_socialist_outlawed"
+			has_country_flag = "new_parties_prohibited"
+		}
+		not = { ideology = national_socialist }
+		not = { has_country_modifier = "illegal_printing_hunted" }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.8 has_country_flag = "new_parties_prohibited" }
+		modifier = { factor = 0.8 national_socialist = { popularity = 20 organisation = 20 } }
+		modifier = { factor = 0.7 national_socialist = { popularity = 30 organisation = 30 } }
+		modifier = { factor = 0.6 national_socialist = { popularity = 40 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "EVTNAME5022"
+	desc = "EVTDESC5022"
+	picture = "news_paper"
+	
+	option = {
+		name = "No need to bother."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				not = { popularity = 50 organisation = 50 }
+			}
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 30
+		}
+		dissent = 4
+		national_socialist = { popularity = 5 }
+	}
+	
+	option = {
+		name = "Track them down!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		popularity = -2
+		add_country_modifier = {
+			name = "illegal_printing_hunted"
+			duration = 30
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 10
+		}
+		national_socialist = { organisation = -2 popularity = 2 }
+	}
+
+}
+
+country_event = {
+
+	id = 5302
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			has_country_flag = "fascistic_outlawed"
+			has_country_flag = "new_parties_prohibited"
+		}
+		not = { ideology = fascistic }
+		not = { has_country_modifier = "illegal_printing_hunted" }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.8 has_country_flag = "new_parties_prohibited" }
+		modifier = { factor = 0.8 fascistic = { popularity = 20 organisation = 20 } }
+		modifier = { factor = 0.5 fascistic = { popularity = 30 organisation = 30 } }
+		modifier = { factor = 0.2 fascistic = { popularity = 40 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "EVTNAME5022"
+	desc = "EVTDESC5022"
+	picture = "news_paper"
+	
+	option = {
+		name = "No need to bother."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				not = { popularity = 50 organisation = 50 }
+			}
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 30
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 10
+		}
+		dissent = 4
+		fascistic = { popularity = 5 }
+	}
+	
+	option = {
+		name = "Track them down!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		popularity = -2
+		add_country_modifier = {
+			name = "illegal_printing_hunted"
+			duration = 30
+		}
+		fascistic = { organisation = -2 popularity = 2 }
+	}
+
+}
+
+country_event = {
+
+	id = 5303
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			has_country_flag = "paternal_autocrat_outlawed"
+			has_country_flag = "new_parties_prohibited"
+		}
+		not = { ideology = paternal_autocrat }
+		not = { has_country_modifier = "illegal_printing_hunted" }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.8 has_country_flag = "new_parties_prohibited" }
+		modifier = { factor = 0.8 paternal_autocrat = { popularity = 20 organisation = 20 } }
+		modifier = { factor = 0.5 paternal_autocrat = { popularity = 30 organisation = 30 } }
+		modifier = { factor = 0.2 paternal_autocrat = { popularity = 40 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "EVTNAME5022"
+	desc = "EVTDESC5022"
+	picture = "news_paper"
+	
+	option = {
+		name = "No need to bother."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				not = { popularity = 50 organisation = 50 }
+			}
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 30
+		}
+		dissent = 4
+		paternal_autocrat = { popularity = 5 }
+	}
+	
+	option = {
+		name = "Track them down!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		popularity = -2
+		add_country_modifier = {
+			name = "illegal_printing_hunted"
+			duration = 30
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 10
+		}
+		paternal_autocrat = { organisation = -2 popularity = 2 }
+	}
+
+}
+
+country_event = {
+
+	id = 5304
+
+	trigger = {
+		government_in_exile = no
+		or = {
+			has_country_flag = "social_conservative_outlawed"
+			has_country_flag = "new_parties_prohibited"
+		}
+		not = { ideology = social_conservative }
+		not = { has_country_modifier = "illegal_printing_hunted" }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.8 has_country_flag = "new_parties_prohibited" }
+		modifier = { factor = 0.8 social_conservative = { popularity = 20 organisation = 20 } }
+		modifier = { factor = 0.5 social_conservative = { popularity = 30 organisation = 30 } }
+		modifier = { factor = 0.2 social_conservative = { popularity = 40 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "EVTNAME5022"
+	desc = "EVTDESC5022"
+	picture = "news_paper"
+	
+	option = {
+		name = "No need to bother."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				not = { popularity = 50 organisation = 50 }
+			}
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 30
+		}
+		dissent = 4
+		social_conservative = { popularity = 5 }
+	}
+	
+	option = {
+		name = "Track them down!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		popularity = -2
+		add_country_modifier = {
+			name = "illegal_printing_hunted"
+			duration = 30
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 10
+		}
+		social_conservative = { organisation = -2 popularity = 2 }
+	}
+
+}
+
+country_event = {
+
+	id = 5305
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			has_country_flag = "market_liberak_outlawed"
+			has_country_flag = "new_parties_prohibited"
+		}
+		not = { ideology = market_liberal }
+		not = { has_country_modifier = "illegal_printing_hunted" }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.8 has_country_flag = "new_parties_prohibited" }
+		modifier = { factor = 0.8 market_liberal = { popularity = 20 organisation = 20 } }
+		modifier = { factor = 0.5 market_liberal = { popularity = 30 organisation = 30 } }
+		modifier = { factor = 0.2 market_liberal = { popularity = 40 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "EVTNAME5022"
+	desc = "EVTDESC5022"
+	picture = "news_paper"
+	
+	option = {
+		name = "No need to bother."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				not = { popularity = 50 organisation = 50 }
+			}
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 30
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 10
+		}
+		dissent = 4
+		market_liberal = { popularity = 5 }
+	}
+	
+	option = {
+		name = "Track them down!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		popularity = -2
+		add_country_modifier = {
+			name = "illegal_printing_hunted"
+			duration = 30
+		}
+		market_liberal = { organisation = -2 popularity = 2 }
+	}
+
+}
+
+country_event = {
+
+	id = 5306
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			has_country_flag = "social_liberal_outlawed"
+			has_country_flag = "new_parties_prohibited"
+		}
+		not = { ideology = social_liberal }
+		not = { has_country_modifier = "illegal_printing_hunted" }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.8 has_country_flag = "new_parties_prohibited" }
+		modifier = { factor = 0.8 social_liberal = { popularity = 20 organisation = 20 } }
+		modifier = { factor = 0.5 social_liberal = { popularity = 30 organisation = 30 } }
+		modifier = { factor = 0.2 social_liberal = { popularity = 40 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "EVTNAME5022"
+	desc = "EVTDESC5022"
+	picture = "news_paper"
+	
+	option = {
+		name = "No need to bother."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				not = { popularity = 50 organisation = 50 }
+			}
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 30
+		}
+		dissent = 4
+		social_liberal = { popularity = 5 }
+	}
+	
+	option = {
+		name = "Track them down!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		popularity = -2
+		add_country_modifier = {
+			name = "illegal_printing_hunted"
+			duration = 30
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 10
+		}
+		social_liberal = { organisation = -2 popularity = 2 }
+	}
+
+}
+
+country_event = {
+
+	id = 5307
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			has_country_flag = "social_democrat_outlawed"
+			has_country_flag = "new_parties_prohibited"
+		}
+		not = { ideology = social_democrat }
+		not = { has_country_modifier = "illegal_printing_hunted" }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.8 has_country_flag = "new_parties_prohibited" }
+		modifier = { factor = 0.8 social_democrat = { popularity = 20 organisation = 20 } }
+		modifier = { factor = 0.5 social_democrat = { popularity = 30 organisation = 30 } }
+		modifier = { factor = 0.2 social_democrat = { popularity = 40 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "EVTNAME5022"
+	desc = "EVTDESC5022"
+	picture = "news_paper"
+	
+	option = {
+		name = "No need to bother."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				not = { popularity = 50 organisation = 50 }
+			}
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 30
+		}
+		dissent = 4
+		social_democrat = { popularity = 5 }
+	}
+	
+	option = {
+		name = "Track them down!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		popularity = -2
+		add_country_modifier = {
+			name = "illegal_printing_hunted"
+			duration = 30
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 10
+		}
+		social_democrat = { organisation = -2 popularity = 2 }
+	}
+
+}
+
+country_event = {
+
+	id = 5308
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			has_country_flag = "left_wing_radical_outlawed"
+			has_country_flag = "new_parties_prohibited"
+		}
+		not = { ideology = left_wing_radical }
+		not = { has_country_modifier = "illegal_printing_hunted" }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.8 has_country_flag = "new_parties_prohibited" }
+		modifier = { factor = 0.8 left_wing_radical = { popularity = 20 organisation = 20 } }
+		modifier = { factor = 0.5 left_wing_radical = { popularity = 30 organisation = 30 } }
+		modifier = { factor = 0.2 left_wing_radical = { popularity = 40 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "EVTNAME5022"
+	desc = "EVTDESC5022"
+	picture = "news_paper"
+	
+	option = {
+		name = "No need to bother."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				not = { popularity = 50 organisation = 50 }
+			}
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 30
+		}
+		dissent = 4
+		left_wing_radical = { popularity = 5 }
+	}
+	
+	option = {
+		name = "Track them down!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		popularity = -2
+		add_country_modifier = {
+			name = "illegal_printing_hunted"
+			duration = 30
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 10
+		}
+		left_wing_radical = { organisation = -2 popularity = 2 }
+	}
+
+}
+
+country_event = {
+
+	id = 5309
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			has_country_flag = "leninist_outlawed"
+			has_country_flag = "new_parties_prohibited"
+		}
+		not = { ideology = leninist }
+		not = { has_country_modifier = "illegal_printing_hunted" }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.8 has_country_flag = "new_parties_prohibited" }
+		modifier = { factor = 0.8 leninist = { popularity = 20 organisation = 20 } }
+		modifier = { factor = 0.5 leninist = { popularity = 30 organisation = 30 } }
+		modifier = { factor = 0.2 leninist = { popularity = 40 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "EVTNAME5022"
+	desc = "EVTDESC5022"
+	picture = "news_paper"
+	
+	option = {
+		name = "No need to bother."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				not = { popularity = 50 organisation = 50 }
+			}
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 30
+		}
+		dissent = 4
+		leninist = { popularity = 5 }
+	}
+	
+	option = {
+		name = "Track them down!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		popularity = -2
+		add_country_modifier = {
+			name = "illegal_printing_hunted"
+			duration = 30
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 10
+		}
+		leninist = { organisation = -2 popularity = 2 }
+	}
+
+}
+
+country_event = {
+
+	id = 5310
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			has_country_flag = "stalinist_outlawed"
+			has_country_flag = "new_parties_prohibited"
+		}
+		not = { ideology = stalinist }
+		not = { has_country_modifier = "illegal_printing_hunted" }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.8 has_country_flag = "new_parties_prohibited" }
+		modifier = { factor = 0.8 stalinist = { popularity = 20 organisation = 20 } }
+		modifier = { factor = 0.5 stalinist = { popularity = 30 organisation = 30 } }
+		modifier = { factor = 0.2 stalinist = { popularity = 40 organisation = 40 } }
+		
+		modifier = { factor = 0.9 war_exhaustion = 2 }
+		modifier = { factor = 0.9 war_exhaustion = 4 }
+		modifier = { factor = 0.9 war_exhaustion = 6 }
+		modifier = { factor = 0.9 war_exhaustion = 8 }
+		modifier = { factor = 0.9 war_exhaustion = 10 }
+	}
+	
+	title = "EVTNAME5022"
+	desc = "EVTDESC5022"
+	picture = "news_paper"
+	
+	option = {
+		name = "No need to bother."
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				not = { popularity = 50 organisation = 50 }
+			}
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 30
+		}
+		dissent = 4
+		stalinist = { popularity = 5 }
+	}
+	
+	option = {
+		name = "Track them down!"
+		ai_chance = { factor = 25 }
+		dissent = 2
+		popularity = -2
+		add_country_modifier = {
+			name = "illegal_printing_hunted"
+			duration = 30
+		}
+		add_country_modifier = {
+			name = "illegal_printing"
+			duration = 10
+		}
+		stalinist = { organisation = -2 popularity = 2 }
+	}
+
+}
+
+# Political Assasination Attempt
+country_event = {
+
+	id = 5311
+
+	trigger = {
+		government_in_exile = no
+		not = { national_unity = 75 }
+		not = { organisation = 50 }
+		not = { popularity = 50 }
+	}
+
+	mean_time_to_happen =  {
+		months = 36
+
+		modifier = {
+			factor = 2.0
+			war = yes
+		}
+	}
+
+	title = "Political assassination attempt"
+	desc = "One of our less prominent cabinet-members was the target of an assassination attempt earlier today."
+	picture = "comander_assasinated"
+
+	option = {
+		name = "He'll live."
+		organisation = -3
+		popularity = 2
+	}
+}
+
+# Military Assasination Attempt
+country_event = {
+
+	id = 5312
+
+	trigger = {
+		government_in_exile = no
+		not = { national_unity = 75 }
+		not = { organisation = 50 }
+		not = { popularity = 50 }
+		war = no
+	}
+
+	mean_time_to_happen =  {
+		months = 36
+	}
+
+	title = "Military assassination attempt"
+	desc = "A retired general was found murdered in his house this morning. Conspiracy theories are spreading on who the assailant might have been..."
+	picture = "comander_assasinated"
+
+	option = {
+		name = "Everyone is suspicious!"
+		national_unity = -2
+	}
+}
+
+# Corruption Within the Police Force
+country_event = {
+	
+	id = 5313
+
+	trigger = {
+		government_in_exile = no
+		war = no
+		dissent = 1
+	}
+
+	mean_time_to_happen =  {
+		months = 24
+
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.9 dissent = 6 }
+		modifier = { factor = 0.9 dissent = 7 }
+		modifier = { factor = 0.9 dissent = 8 }
+		modifier = { factor = 0.9 dissent = 9 }
+		modifier = { factor = 0.9 dissent = 10 }
+	}
+
+	title = "EVTNAME5029"
+	desc = "EVTDESC5029"
+	picture = "law"
+
+	option = {
+		name = "Try and root it out!"
+		add_country_modifier = {
+			name = "corruption_within_the_police_force"
+			duration = 30
+		}
+	}
+	option = {
+		name = "No need to worry."
+		dissent = 5
+	}
+}
+
+# Unauthorized Demonstration
+country_event = {
+	
+	id = 5314
+
+	trigger = {
+		government_in_exile = no
+		not = { popularity = 50 }
+		or = {		# At least one party is outlawed.
+			has_country_flag = "national_socialist_outlawed"
+			has_country_flag = "fascistic_outlawed"
+			has_country_flag = "paternal_autocrat_outlawed"
+			has_country_flag = "social_conservative_outlawed"
+			has_country_flag = "market_liberak_outlawed"
+			has_country_flag = "social_liberal_outlawed"
+			has_country_flag = "social_democrat_outlawed"
+			has_country_flag = "left_wing_radical_outlawed"
+			has_country_flag = "leninist_outlawed"
+			has_country_flag = "stalinist_outlawed"
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 18
+
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.9 dissent = 6 }
+		modifier = { factor = 0.9 dissent = 7 }
+		modifier = { factor = 0.9 dissent = 8 }
+		modifier = { factor = 0.9 dissent = 9 }
+		modifier = { factor = 0.9 dissent = 10 }
+	}
+
+	title = "EVTNAME5030"
+	desc = "EVTDESC5030"
+	picture = "great_war_manifestion"
+
+	option = {
+		name = "Put them down!"
+		ai_chance = { factor = 95 }
+		add_country_modifier = {
+			name = "reinforcements"
+			duration = 30
+		}
+		dissent = 4
+	}
+	option = {
+		name = "Don't bother..."
+		ai_chance = { factor = 5 }
+		dissent = 8
+	}
+}
+
+
+####################
+# Foreign Politics #
+####################
+# ID: 5401-
+
+# Cooperation with neighbours
+country_event = {
+
+	id = 5401
+	
+	trigger = {
+		government_in_exile = no
+		war = no
+		any_neighbor_country = {
+			not = { relation = { who = THIS value = 150 } }
+			or = {
+				relation = { who = THIS value = 100 }
+				alliance_with = THIS
+				faction = THIS
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	title = "Cooperation with our neighbours"
+	desc = "Economic and political cooperation with one of our neighbours improved our relations."
+	picture = "constitutional"
+	
+	option = {
+		name = "Excellent!"
+		random_country = {
+			limit = {
+				neighbour = THIS
+				not = { relation = { who = THIS value = 150 } }
+				or = {
+					relation = { who = THIS value = 100 }
+					alliance_with = THIS
+					faction = THIS
+				}
+			}
+			relation = { who = THIS value = 15 }
+		}
+	}
+
+}
+
+# Smugglers caught
+country_event = {
+
+	id = 5402
+	
+	trigger = {
+		government_in_exile = no
+		or = {
+			num_of_ports = 1
+			any_neighbor_country = {	# It has at least one neighbour.
+				neighbour = THIS
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.9
+			num_of_ports = 1
+		}
+	}
+	
+	title = "Smugglers caught"
+	desc = "Smugglers from a neighbour nation has been caught earlier this week. What should we do with them?"
+	picture = "constitutional"
+	
+	option = {
+		name = "Seize the cargo."
+		money = 100
+		random_country = {
+			limit = {
+				or = {
+					neighbour = THIS
+					and = {
+						THIS = { num_of_ports = 1 }
+						num_of_ports = 1
+					}
+				}
+			}
+			relation = { who = THIS value = -25 }
+		}
+	}
+	option = {
+		name = "Send the cargo back."
+		random_country = {
+			limit = {
+				or = {
+					neighbour = THIS
+					and = {
+						THIS = { num_of_ports = 1 }
+						num_of_ports = 1
+					}
+				}
+			}
+			relation = { who = THIS value = 5 }
+		}
+	}
+
+}
+
+# Rising tension
+country_event = {
+
+	id = 5403
+	
+	trigger = {
+		war = no
+		government_in_exile = no
+		any_neighbor_country = {
+			any_owned_province = {
+				is_core = THIS
+			}
+			not = { faction = THIS }
+			not = { alliance_with = THIS }
+			not = { vassal_of = THIS }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		
+		modifier = { factor = 0.9 civil_law = repression }
+		modifier = { factor = 0.7 civil_law = totalitarian_system }
+	}
+	
+	title = "Tension rises"
+	desc = "As recent reports reach our people about ethnic incidents against our minority in a neighbouring nation's territory, we need to make a stand against this aggression!"
+	picture = "great_war_manifestion"
+	
+	option = {
+		name = "Press the issue!"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.8
+				not = { base_neutrality = 85 }
+			}
+			modifier = {
+				factor = 0.2
+				base_neutrality = 85
+			}
+			modifier = {
+				factor = 0.0
+				ideology_group = democracy
+			}
+		}
+		neutrality = -2
+		random_country = {
+			limit = {
+				neighbour = THIS
+				any_owned_province = {
+					is_core = THIS
+				}
+				not = { faction = THIS }
+				not = { alliance_with = THIS }
+				not = { vassal_of = THIS }
+			}
+			relation = { who = THIS value = -25 }
+			threat = { who = THIS value = 2 }
+		}
+	}
+	option = {
+		name = "Try to ease the tension."
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.8
+				base_neutrality = 85
+			}
+			modifier = {
+				factor = 0.2
+				not = { base_neutrality = 85 }
+			}
+			modifier = {
+				factor = 0.0
+				not = { ideology_group = democracy }
+			}
+		}
+		dissent = 2
+		neutrality = 2
+		random_country = {
+			limit = {
+				neighbour = THIS
+				any_owned_province = {
+					is_core = THIS
+				}
+				not = { faction = THIS }
+				not = { alliance_with = THIS }
+				not = { vassal_of = THIS }
+			}
+			relation = { who = THIS value = 5 }
+			threat = { who = THIS value = -2 }
+		}
+	}
+}
+
+# Technological Sabotage
+country_event = {
+
+	id = 5404
+	
+	trigger = {
+		government_in_exile = no
+		war = yes
+		money = 500
+		is_subject = no
+		total_ic = 50
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		
+		modifier = { factor = 0.9 decryption_machine = 1 }
+		modifier = { factor = 0.9 decryption_machine = 2 }
+		modifier = { factor = 0.9 decryption_machine = 3 }
+		modifier = { factor = 0.9 decryption_machine = 4 }
+		modifier = { factor = 0.9 decryption_machine = 5 }
+	}
+	
+	title = "Technological Sabotage Attempt"
+	desc = "One of our spies reported that he has a very good opportunity to sabotage the technological advance of one of our enemies, but it would cost us some money. Should we send a green light?"
+	picture = "fire"
+	
+	option = {
+		name = "Go ahead!"
+		money = -500
+		random_country = {
+			limit = {
+				war_with = THIS
+				is_subject = no		# Don't pick a minor or a vassal!
+				total_ic = 20
+			}
+			country_event = 5405
+			relation = { who = THIS value = 0 }
+		}
+	}
+	option = {
+		name = "Not now..."
+	}
+}
+
+country_event = {
+
+	id = 5405
+	
+	is_triggered_only = yes
+	
+	title = "Sabotage!"
+	desc = "One of our research-teams reported that a break-in occured last night, and a significant part of their results disappeared!"
+	picture = "reserch_sbotage"
+	
+	option = {
+		name = "How could that happen?!"
+		random_list = {
+			25 = {	# Industry tech
+				random_list = {
+					25 = { smallarms_technology 		= -100 }
+					25 = { support_weapon_technology 	= -100 }
+					17 = { light_artillery_technology 	= -100 }
+					17 = { light_anti_tank_technology 	= -100 }
+					8  = { engineer_bridging_equipment 	= -100 }
+					8  = { engineer_assault_equipment 	= -100 }
+				}
+			}
+			22 = {	# Infantry tech
+				random_list = {
+					6 = { agriculture					= -100 }
+					6 = { industral_production			= -100 }
+					6 = { industral_efficiency			= -100 }
+					6 = { heavy_aa_guns					= -100 }
+					6 = { supply_production				= -100 }
+					5 = { education						= -100 }
+					5 = { radar							= -100 }
+					4 = { radio							= -100 }
+					4 = { combat_medicine				= -100 }
+					4 = { first_aid						= -100 }
+					4 = { oil_refinning					= -100 }
+					4 = { steel_production				= -100 }
+					4 = { raremetal_refinning_techniques	= -100 }
+					4 = { coal_processing_technologies	= -100 }
+					4 = { supply_transportation			= -100 }
+					4 = { supply_organisation			= -100 }
+					4 = { civil_defence					= -100 }
+					4 = { oil_to_coal_conversion		= -100 }
+					4 = { mechnical_computing_machine 	= -100 }
+					4 = { electronic_computing_machine	= -100 }
+					4 = { decryption_machine			= -100 }
+					4 = { encryption_machine			= -100 }
+				}
+			}
+			18 = {	# Artillery tech
+				random_list = {
+					20 = { art_barrell_ammo				= -100 }
+					20 = { art_carriage_sights			= -100 }
+					15 = { at_barrell_sights			= -100 }
+					15 = { at_ammo_muzzel				= -100 }
+					10 = { aa_barrell_ammo				= -100 }
+					10 = { aa_carriage_sights			= -100 }
+					5  = { rocket_art_ammo				= -100 }
+					5  = { rocket_carriage_sights		= -100 }
+				}
+			}
+			13 = {	# Aircraft tech
+				random_list = {
+					6 = { aeroengine 						= -100 }
+					6 = { single_engine_airframe			= -100 }
+					6 = { single_engine_aircraft_armament	= -100 }
+					6 = { twin_engine_airframe				= -100 }
+					6 = { twin_engine_aircraft_armament		= -100 }
+					6 = { medium_bomb						= -100 }
+					5 = { small_fueltank					= -100 }
+					5 = { medium_fueltank					= -100 }
+					5 = { air_launched_torpedo				= -100 }
+					5 = { small_bomb						= -100 }
+					4 = { large_fueltank					= -100 }
+					4 = { four_engine_airframe				= -100 }
+					4 = { strategic_bomber_armament			= -100 }
+					4 = { large_bomb						= -100 }
+					4 = { small_airsearch_radar				= -100 }
+					4 = { medium_airsearch_radar 			= -100 }
+					4 = { large_airsearch_radar				= -100 }
+					4 = { small_navagation_radar			= -100 }
+					4 = { medium_navagation_radar			= -100 }
+					4 = { large_navagation_radar			= -100 }
+					4 = { escort_fighter_armament			= -100 }
+				}
+			}
+			12 = {	# Armour tech
+				random_list = {
+					4  = { super_heavy_tank_gun				= -100 }
+					4  = { super_heavy_tank_engine			= -100 }
+					4  = { super_heavy_tank_armour			= -100 }
+					4  = { super_heavy_tank_reliability		= -100 }
+					6  = { lighttank_gun					= -100 }
+					6  = { lighttank_engine					= -100 }
+					6  = { lighttank_armour					= -100 }
+					6  = { lighttank_reliability			= -100 }
+					10 = { tank_gun							= -100 }
+					10 = { tank_engine						= -100 }
+					10 = { tank_armour						= -100 }
+					10 = { tank_reliability					= -100 }
+					4  = { heavy_tank_gun					= -100 }
+					4  = { heavy_tank_engine				= -100 }
+					4  = { heavy_tank_armour				= -100 }
+					4  = { heavy_tank_reliability			= -100 }
+					2  = { armored_car_armour				= -100 }
+					2  = { armored_car_gun					= -100 }
+				}
+			}
+			10 = {	# Naval tech
+				random_list = {
+					4 = { destroyer_armament			= -100 }
+					4 = { destroyer_antiaircraft		= -100 }
+					4 = { destroyer_engine				= -100 }
+					4 = { destroyer_armour				= -100 }
+					3 = { lightcruiser_armament			= -100 }
+					3 = { lightcruiser_antiaircraft		= -100 }
+					3 = { lightcruiser_engine			= -100 }
+					3 = { lightcruiser_armour			= -100 }
+					3 = { smallwarship_asw				= -100 }
+					3 = { heavycruiser_armament			= -100 }
+					3 = { heavycruiser_antiaircraft		= -100 }
+					3 = { heavycruiser_engine			= -100 }
+					3 = { heavycruiser_armour			= -100 }
+					3 = { capitalship_armament			= -100 }
+					3 = { battlecruiser_antiaircraft	= -100 }
+					3 = { battlecruiser_engine			= -100 }
+					3 = { battlecruiser_armour			= -100 }
+					3 = { battleship_antiaircraft		= -100 }
+					3 = { battleship_engine				= -100 }
+					3 = { battleship_armour				= -100 }
+					3 = { carrier_antiaircraft			= -100 }
+					3 = { carrier_engine				= -100 }
+					3 = { carrier_armour				= -100 }
+					3 = { carrier_hanger				= -100 }
+					3 = { submarine_antiaircraft		= -100 }
+					3 = { submarine_engine				= -100 }
+					3 = { submarine_hull				= -100 }
+					3 = { submarine_torpedoes			= -100 }
+					3 = { submarine_sonar				= -100 }
+					3 = { submarine_airwarningequipment	= -100 }
+					3 = { smallwarship_radar			= -100 }
+					3 = { largewarship_radar			= -100 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 5406
+	
+	trigger = {
+		government_in_exile = no
+		war = yes
+		money = 500
+		is_subject = no
+		total_ic = 50
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		
+		modifier = { factor = 0.9 decryption_machine = 1 }
+		modifier = { factor = 0.9 decryption_machine = 2 }
+		modifier = { factor = 0.9 decryption_machine = 3 }
+		modifier = { factor = 0.9 decryption_machine = 4 }
+		modifier = { factor = 0.9 decryption_machine = 5 }
+	}
+	
+	title = "Technological theft"
+	desc = "One of our spies returned home yesterday with a suitcase full of blueprints and schematics, helping our research immensely!"
+	picture = "resistance"
+	
+	option = {
+		name = "Great!"
+		random_list = {
+			25 = {	# Industry tech
+				random_list = {
+					25 = { smallarms_technology 		= 100 }
+					25 = { support_weapon_technology 	= 100 }
+					17 = { light_artillery_technology 	= 100 }
+					17 = { light_anti_tank_technology 	= 100 }
+					8  = { engineer_bridging_equipment 	= 100 }
+					8  = { engineer_assault_equipment 	= 100 }
+				}
+			}
+			22 = {	# Infantry tech
+				random_list = {
+					6 = { agriculture					= 100 }
+					6 = { industral_production			= 100 }
+					6 = { industral_efficiency			= 100 }
+					6 = { heavy_aa_guns					= 100 }
+					6 = { supply_production				= 100 }
+					5 = { education						= 100 }
+					5 = { radar							= 100 }
+					4 = { radio							= 100 }
+					4 = { combat_medicine				= 100 }
+					4 = { first_aid						= 100 }
+					4 = { oil_refinning					= 100 }
+					4 = { steel_production				= 100 }
+					4 = { raremetal_refinning_techniques	= 100 }
+					4 = { coal_processing_technologies	= 100 }
+					4 = { supply_transportation			= 100 }
+					4 = { supply_organisation			= 100 }
+					4 = { civil_defence					= 100 }
+					4 = { oil_to_coal_conversion		= 100 }
+					4 = { mechnical_computing_machine 	= 100 }
+					4 = { electronic_computing_machine	= 100 }
+					4 = { decryption_machine			= 100 }
+					4 = { encryption_machine			= 100 }
+				}
+			}
+			18 = {	# Artillery tech
+				random_list = {
+					20 = { art_barrell_ammo				= 100 }
+					20 = { art_carriage_sights			= 100 }
+					15 = { at_barrell_sights			= 100 }
+					15 = { at_ammo_muzzel				= 100 }
+					10 = { aa_barrell_ammo				= 100 }
+					10 = { aa_carriage_sights			= 100 }
+					5  = { rocket_art_ammo				= 100 }
+					5  = { rocket_carriage_sights		= 100 }
+				}
+			}
+			13 = {	# Aircraft tech
+				random_list = {
+					6 = { aeroengine 						= 100 }
+					6 = { single_engine_airframe			= 100 }
+					6 = { single_engine_aircraft_armament	= 100 }
+					6 = { twin_engine_airframe				= 100 }
+					6 = { twin_engine_aircraft_armament		= 100 }
+					6 = { medium_bomb						= 100 }
+					5 = { small_fueltank					= 100 }
+					5 = { medium_fueltank					= 100 }
+					5 = { air_launched_torpedo				= 100 }
+					5 = { small_bomb						= 100 }
+					4 = { large_fueltank					= 100 }
+					4 = { four_engine_airframe				= 100 }
+					4 = { strategic_bomber_armament			= 100 }
+					4 = { large_bomb						= 100 }
+					4 = { small_airsearch_radar				= 100 }
+					4 = { medium_airsearch_radar 			= 100 }
+					4 = { large_airsearch_radar				= 100 }
+					4 = { small_navagation_radar			= 100 }
+					4 = { medium_navagation_radar			= 100 }
+					4 = { large_navagation_radar			= 100 }
+					4 = { escort_fighter_armament			= 100 }
+				}
+			}
+			12 = {	# Armour tech
+				random_list = {
+					4  = { super_heavy_tank_gun				= 100 }
+					4  = { super_heavy_tank_engine			= 100 }
+					4  = { super_heavy_tank_armour			= 100 }
+					4  = { super_heavy_tank_reliability		= 100 }
+					6  = { lighttank_gun					= 100 }
+					6  = { lighttank_engine					= 100 }
+					6  = { lighttank_armour					= 100 }
+					6  = { lighttank_reliability			= 100 }
+					10 = { tank_gun							= 100 }
+					10 = { tank_engine						= 100 }
+					10 = { tank_armour						= 100 }
+					10 = { tank_reliability					= 100 }
+					4  = { heavy_tank_gun					= 100 }
+					4  = { heavy_tank_engine				= 100 }
+					4  = { heavy_tank_armour				= 100 }
+					4  = { heavy_tank_reliability			= 100 }
+					2  = { armored_car_armour				= 100 }
+					2  = { armored_car_gun					= 100 }
+				}
+			}
+			10 = {	# Naval tech
+				random_list = {
+					4 = { destroyer_armament			= 100 }
+					4 = { destroyer_antiaircraft		= 100 }
+					4 = { destroyer_engine				= 100 }
+					4 = { destroyer_armour				= 100 }
+					3 = { lightcruiser_armament			= 100 }
+					3 = { lightcruiser_antiaircraft		= 100 }
+					3 = { lightcruiser_engine			= 100 }
+					3 = { lightcruiser_armour			= 100 }
+					3 = { smallwarship_asw				= 100 }
+					3 = { heavycruiser_armament			= 100 }
+					3 = { heavycruiser_antiaircraft		= 100 }
+					3 = { heavycruiser_engine			= 100 }
+					3 = { heavycruiser_armour			= 100 }
+					3 = { capitalship_armament			= 100 }
+					3 = { battlecruiser_antiaircraft	= 100 }
+					3 = { battlecruiser_engine			= 100 }
+					3 = { battlecruiser_armour			= 100 }
+					3 = { battleship_antiaircraft		= 100 }
+					3 = { battleship_engine				= 100 }
+					3 = { battleship_armour				= 100 }
+					3 = { carrier_antiaircraft			= 100 }
+					3 = { carrier_engine				= 100 }
+					3 = { carrier_armour				= 100 }
+					3 = { carrier_hanger				= 100 }
+					3 = { submarine_antiaircraft		= 100 }
+					3 = { submarine_engine				= 100 }
+					3 = { submarine_hull				= 100 }
+					3 = { submarine_torpedoes			= 100 }
+					3 = { submarine_sonar				= 100 }
+					3 = { submarine_airwarningequipment	= 100 }
+					3 = { smallwarship_radar			= 100 }
+					3 = { largewarship_radar			= 100 }
+				}
+			}
+		}
+		random_list = {
+			25 = {
+				random_country = {
+					limit = {
+						war_with = THIS
+					}
+					relation = { who = THIS value = -25 }
+				}
+			}
+			75 = { }
+		}
+	}
+}
+# Foreign Nation Supports Opposition Party
+country_event = {
+	
+	id = 5407
+
+	trigger = {
+		government_in_exile = no
+		war = no
+		has_country_flag = "holds_elections"
+		any_neighbor_country = {
+			not = { alliance_with = THIS }
+			not = { faction = THIS }
+			not = { vassal_of = THIS }
+		}
+		not = { has_country_modifier = "investigation_of_opposition_party" }
+		not = { has_country_modifier = "opposition_gains_support" }
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+		
+		modifier = { factor = 1.1 encryption_machine = 1 }
+		modifier = { factor = 1.1 encryption_machine = 2 }
+		modifier = { factor = 1.1 encryption_machine = 3 }
+		modifier = { factor = 1.1 encryption_machine = 4 }
+		modifier = { factor = 1.1 encryption_machine = 5 }
+	}
+
+	title = "EVTNAME5037"
+	desc = "EVTDESC5037"
+	picture = "politics1"
+
+	option = {
+		name = "EVTOPTA5037"			# Continue the investigation
+		add_country_modifier = {
+			name = "investigation_of_opposition_party"
+			duration = 30
+		}
+		popularity = -2
+		dissent = 2
+	}
+	option = {
+		name = "EVTOPTB5037"			# There are other things to worry about
+		add_country_modifier = {
+			name = "opposition_gains_support"
+			duration = 30
+		}
+		organisation = -2
+		dissent = 2
+	}
+}
+# Resistance Leader Tries to Flee the Country
+country_event = {
+	
+	id = 5408
+
+	trigger = {
+		government_in_exile = no
+		organisation = 50
+		or = {		# At least one party is outlawed.
+			has_country_flag = "national_socialist_outlawed"
+			has_country_flag = "fascistic_outlawed"
+			has_country_flag = "paternal_autocrat_outlawed"
+			has_country_flag = "social_conservative_outlawed"
+			has_country_flag = "market_liberak_outlawed"
+			has_country_flag = "social_liberal_outlawed"
+			has_country_flag = "social_democrat_outlawed"
+			has_country_flag = "left_wing_radical_outlawed"
+			has_country_flag = "leninist_outlawed"
+			has_country_flag = "stalinist_outlawed"
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 18
+	}
+
+	title = "EVTNAME5031"
+	desc = "EVTDESC5031"
+	picture = "resistance"
+
+	option = {
+		name = "Try to catch him!"
+		random_list = {
+			33 = {
+				organisation = 5
+				popularity = -1
+			}
+			67 = {
+				organisation = -3
+				popularity = -2
+			}
+		}
+	}
+	option = {
+		name = "Let him go."
+		organisation = -2
+		popularity = -5
+	}
+}
+
+# Intelligence Network
+country_event = {
+	
+	id = 5409
+
+	trigger = {
+		government_in_exile = no
+		is_threatend = 25
+		not = { has_country_flag = "intelligence_network" }
+		money = 500
+	}
+
+	mean_time_to_happen =  {
+		months = 30
+
+		modifier = { factor = 0.75 war = yes }
+		
+		modifier = { factor = 0.9 money = 1000  }
+		modifier = { factor = 0.9 money = 5000  }
+		modifier = { factor = 0.9 money = 10000 }
+		modifier = { factor = 0.9 money = 15000 }
+		modifier = { factor = 0.9 money = 20000 }
+		modifier = { factor = 0.9 money = 25000 }
+		modifier = { factor = 0.9 money = 50000 }
+		modifier = { factor = 0.9 money = 75000 }
+		
+		modifier = { factor = 1.5 press_laws = free_press }
+		modifier = { factor = 0.9 press_laws = state_press }
+		modifier = { factor = 0.7 press_laws = propaganda_press }
+		
+		modifier = { factor = 1.5 civil_law = open_society }
+		modifier = { factor = 0.9 civil_law = limited_restrictions }
+		modifier = { factor = 0.8 civil_law = repression }
+		modifier = { factor = 0.7 civil_law = totalitarian_system }
+		
+		modifier = { factor = 0.9 decryption_machine = 1 }
+		modifier = { factor = 0.9 decryption_machine = 2 }
+		modifier = { factor = 0.9 decryption_machine = 3 }
+		modifier = { factor = 0.9 decryption_machine = 4 }
+		modifier = { factor = 0.9 decryption_machine = 5 }
+	}
+
+	title = "EVTNAME5023"
+	desc = "EVTDESC5023"
+	picture = "reserch_sbotage"
+
+	option = {
+		name = "Of course"
+		money = -500
+		neutrality = -1
+		add_country_modifier = {
+			name = "intelligence_network"
+			duration = 60
+		}
+	}
+	option = {
+		name = "That won't be necessary"
+		neutrality = 3
+	}
+}
+
+# Finance a Coup in one of our unstable neigbours!
+
+country_event = {
+
+	id = 5410
+	
+	trigger = {
+		government_in_exile = no
+		money = 1000
+		not = { base_neutrality = 80 }
+		national_unity = 75
+		any_neighbor_country = {
+			or = {
+				and = {
+					THIS = { ideology_group = fascism }
+					not = { ideology_group = fascism }
+				}
+				and = {
+					THIS = { ideology_group = communism }
+					not = { ideology_group = communism }
+				}
+				and = {
+					THIS = { ideology_group = democracy }
+					not = { ideology_group = democracy }
+				}
+			}
+			not = { faction = THIS }
+			not = { alliance_with = THIS }
+			is_subject = no
+			not = { national_unity = 80 }
+			government_in_exile = no
+			not = {
+				or = {
+					organisation = 50
+					popularity = 35
+				}
+			}
+			dissent = 5
+			not = { government = state_of_emergency }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 0.8 civil_law = legalistic_restrictions }
+		modifier = { factor = 0.5 civil_law = repression }
+		modifier = { factor = 0.2 civil_law = totalitarian_system }
+	}
+	
+	title = "Stage a coup"
+	desc = "One of our agents informed us that he has the opportunity to finance a planned coup d'état in one of our neighbours. What should be our course of action?"
+	picture = "politics1"
+	
+	option = {
+		name = "We should do so!"
+		ai_chance = {
+			factor = 25
+			modifier = { factor = 3.0 not = { ideology_group = democracy } }
+		}
+		money = -1000
+		neutrality = -3
+		random_list = {
+			30 = {	# Successfully staged coup! (The result is not guaranteed however.)
+				random_country = {
+					limit = {
+						or = {
+							and = {
+								THIS = { ideology_group = fascism }
+								not = { ideology_group = fascism }
+							}
+							and = {
+								THIS = { ideology_group = communism }
+								not = { ideology_group = communism }
+							}
+							and = {
+								THIS = { ideology_group = democracy }
+								not = { ideology_group = democracy }
+							}
+						}
+						neighbour = THIS
+						not = { faction = THIS }
+						not = { alliance_with = THIS }
+						is_subject = no
+						not = { national_unity = 80 }
+						government_in_exile = no
+						not = {
+							or = {
+								organisation = 50
+								popularity = 35
+							}
+						}
+						dissent = 5
+						not = { government = state_of_emergency }
+					}
+					country_event = 4001
+					relation = { who = THIS value = 0 }
+				}
+			}
+			20 = {	# Unsuccessfull attempt, and we were discovered!
+				random_country = {
+					limit = {
+						or = {
+							and = {
+								THIS = { ideology_group = fascism }
+								not = { ideology_group = fascism }
+							}
+							and = {
+								THIS = { ideology_group = communism }
+								not = { ideology_group = communism }
+							}
+							and = {
+								THIS = { ideology_group = democracy }
+								not = { ideology_group = democracy }
+							}
+						}
+
+						neighbour = THIS
+						not = { faction = THIS }
+						not = { alliance_with = THIS }
+						is_subject = no
+						not = { national_unity = 80 }
+						government_in_exile = no
+						not = {
+							or = {
+								organisation = 50
+								popularity = 35
+							}
+						}
+						dissent = 5
+						not = { government = state_of_emergency }
+					}
+					country_event = 5411
+					relation = { who = THIS value = 0 }
+				}
+			}
+			50 = {	# Unsuccessfull attempt, but we weren't discovered at least.
+				random_country = {
+					limit = {
+						or = {
+							and = {
+								THIS = { ideology_group = fascism }
+								not = { ideology_group = fascism }
+							}
+							and = {
+								THIS = { ideology_group = communism }
+								not = { ideology_group = communism }
+							}
+							and = {
+								THIS = { ideology_group = democracy }
+								not = { ideology_group = democracy }
+							}
+						}
+						neighbour = THIS
+						not = { faction = THIS }
+						not = { alliance_with = THIS }
+						is_subject = no
+						not = { national_unity = 80 }
+						government_in_exile = no
+						not = {
+							or = {
+								organisation = 50
+								popularity = 35
+							}
+						}
+						dissent = 5
+						not = { government = state_of_emergency }
+					}
+					country_event = 5412
+					relation = { who = THIS value = 0 }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We wouldn't dare to!"
+		ai_chance = {
+			factor = 75
+			modifier = { factor = 0.33 not = { ideology_group = democracy } }
+		}
+		neutrality = 1
+	}
+
+}
+
+country_event = {
+
+	id = 5411
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "Failed Coup attempt"
+	desc = "A Coup d'état was attempted in our capital yesterday, but it failed. Our sources indicated that $FROMCOUNTRY$ is behind this outrage!"
+	picture = "coup"
+	
+	option = {
+		name = "This is an outrage!"
+		ai_chance = { factor = 90 }
+		relation = { who = FROM value = -50 }
+		organisation = 10
+		neutrality = -5
+		national_unity = 1
+	}
+
+	option = {
+		name = "We can't allow such atrocities!"
+		ai_chance = {
+			factor = 10
+			
+			modifier = { factor = 0.0 is_subject = yes }
+			
+			modifier = { factor = 0.25 ideology_group = democracy }
+			
+			modifier = { factor = 0.5 is_in_any_faction = no }
+			
+			modifier = { factor = 10.0 total_ic = 100 }
+			modifier = { factor = 10.0 total_ic = 150 }
+			modifier = { factor = 10.0 total_ic = 200 }
+			modifier = { factor = 10.0 total_ic = 300 }
+			
+			modifier = { factor = 2.0 num_in_faction = 2 }
+			modifier = { factor = 3.0 num_in_faction = 3 }
+			modifier = { factor = 5.0 num_in_faction = 5 }
+			
+			modifier = { factor = 2.0 total_amount_of_divisions = 50 }
+			modifier = { factor = 4.0 total_amount_of_divisions = 100 }
+			modifier = { factor = 8.0 total_amount_of_divisions = 150 }
+			modifier = { factor = 15.0 total_amount_of_divisions = 200 }
+			
+			modifier = { factor = 0.5 war = yes }
+		}
+		organisation = 10
+		neutrality = -10
+		national_unity = 3
+		FROM = { threat = { who = THIS value = 25 } }
+	}
+}
+
+country_event = {
+
+	id = 5412
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "Failed Coup attempt"
+	desc = "A Coup d'état was attempted in our capital yesterday, but it failed. Unfortunately, we have no idea, who is behind this outrage!"
+	picture = "coup"
+	
+	option = {
+		name = "This is an outrage!"
+		organisation = 10
+		neutrality = -5
+		national_unity = 2
+		threat = { who = all value = -5 }
+	}
+}
+
+###############
+# Investments #
+###############
+# ID: 5501
+
+country_event = {
+
+	id = 5501
+	
+	trigger = {
+		government_in_exile = no
+		not = { has_country_modifier = "invest_into_research" }
+		not = { has_country_modifier = "invest_into_industry" }
+		not = { has_country_modifier = "invest_into_officers" }
+		not = { has_country_modifier = "invest_into_trade" }
+		not = { has_country_modifier = "invest_into_mining" }
+		not = { has_country_modifier = "invest_into_supplies" }
+		not = { has_country_modifier = "invest_into_the_army" }
+		not = { has_country_modifier = "invest_into_the_navy" }
+		not = { has_country_modifier = "invest_into_the_airforce" }
+		not = { has_country_modifier = "invest_into_the_people" }
+		money = 500
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.9 money = 1000  }
+		modifier = { factor = 0.9 money = 5000  }
+		modifier = { factor = 0.9 money = 10000 }
+		modifier = { factor = 0.9 money = 15000 }
+		modifier = { factor = 0.9 money = 20000 }
+		modifier = { factor = 0.9 money = 25000 }
+		modifier = { factor = 0.9 money = 50000 }
+		modifier = { factor = 0.9 money = 75000 }
+		
+		modifier = { factor = 0.7 civil_law = open_society }
+		modifier = { factor = 0.9 civil_law = limited_restrictions }
+		modifier = { factor = 0.9 civil_law = totalitarian_system }
+		
+		modifier = { factor = 1.2 economic_law = basic_mobilisation }
+		modifier = { factor = 1.5 economic_law = full_mobilisation }
+		modifier = { factor = 2.0 economic_law = war_economy }
+		modifier = { factor = 2.5 economic_law = total_economic_mobilisation }
+		
+		modifier = { factor = 0.9 industrial_policy_laws = consumer_product_orientation }
+		modifier = { factor = 1.2 industrial_policy_laws = heavy_industry_emphasis }
+		
+		modifier = { factor = 0.7 taxation_law = negligible_taxes }
+		modifier = { factor = 0.9 taxation_law = small_taxes }
+		modifier = { factor = 1.5 taxation_law = high_taxes }
+		modifier = { factor = 2.0 taxation_law = exploitive_taxes }
+		
+		modifier = { factor = 1.2 press_laws = free_press }
+		modifier = { factor = 0.9 press_laws = state_press }
+		modifier = { factor = 0.7 press_laws = propaganda_press }
+		
+		modifier = { factor = 0.01 has_country_modifier = "investor_negotiations" }
+	}
+	
+	title = "Investment opportunity: Research"
+	desc = "The government was approached today by a group of bankers, factory owners and other investors with a briliant plan."
+	picture = "investment"
+	
+	option = {
+		name = "What a great opportunity!"
+		ai_chance = { factor = 75 }
+		money = -500
+		remove_country_modifier = "invest_into_research"
+		remove_country_modifier = "invest_into_industry"
+		remove_country_modifier = "invest_into_officers"
+		remove_country_modifier = "invest_into_trade"
+		remove_country_modifier = "invest_into_mining"
+		remove_country_modifier = "invest_into_supplies"
+		remove_country_modifier = "invest_into_the_army"
+		remove_country_modifier = "invest_into_the_navy"
+		remove_country_modifier = "invest_into_the_airforce"
+		remove_country_modifier = "invest_into_the_people"
+		remove_country_modifier = "investor_negotiations"
+		add_country_modifier = {
+			name = "invest_into_research"
+			duration = 365
+		}
+	}
+	option = {
+		name = "Not now."
+		ai_chance = { factor = 25 }
+		random = {
+			chance = 25
+			remove_country_modifier = "investor_negotiations"
+		}
+	}
+}
+
+country_event = {
+
+	id = 5502
+	
+	trigger = {
+		government_in_exile = no
+		not = { has_country_modifier = "invest_into_research" }
+		not = { has_country_modifier = "invest_into_industry" }
+		not = { has_country_modifier = "invest_into_officers" }
+		not = { has_country_modifier = "invest_into_trade" }
+		not = { has_country_modifier = "invest_into_mining" }
+		not = { has_country_modifier = "invest_into_supplies" }
+		not = { has_country_modifier = "invest_into_the_army" }
+		not = { has_country_modifier = "invest_into_the_navy" }
+		not = { has_country_modifier = "invest_into_the_airforce" }
+		not = { has_country_modifier = "invest_into_the_people" }
+		money = 500
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.9 money = 1000  }
+		modifier = { factor = 0.9 money = 5000  }
+		modifier = { factor = 0.9 money = 10000 }
+		modifier = { factor = 0.9 money = 15000 }
+		modifier = { factor = 0.9 money = 20000 }
+		modifier = { factor = 0.9 money = 25000 }
+		modifier = { factor = 0.9 money = 50000 }
+		modifier = { factor = 0.9 money = 75000 }
+		
+		modifier = { factor = 0.7 civil_law = open_society }
+		modifier = { factor = 0.9 civil_law = limited_restrictions }
+		modifier = { factor = 0.9 civil_law = totalitarian_system }
+		
+		modifier = { factor = 1.2 economic_law = basic_mobilisation }
+		modifier = { factor = 1.5 economic_law = full_mobilisation }
+		modifier = { factor = 2.0 economic_law = war_economy }
+		modifier = { factor = 2.5 economic_law = total_economic_mobilisation }
+		
+		modifier = { factor = 0.9 industrial_policy_laws = consumer_product_orientation }
+		modifier = { factor = 1.2 industrial_policy_laws = heavy_industry_emphasis }
+		
+		modifier = { factor = 0.7 taxation_law = negligible_taxes }
+		modifier = { factor = 0.9 taxation_law = small_taxes }
+		modifier = { factor = 1.5 taxation_law = high_taxes }
+		modifier = { factor = 2.0 taxation_law = exploitive_taxes }
+		
+		modifier = { factor = 1.2 press_laws = free_press }
+		modifier = { factor = 0.9 press_laws = state_press }
+		modifier = { factor = 0.7 press_laws = propaganda_press }
+		
+		modifier = { factor = 0.01 has_country_modifier = "investor_negotiations" }
+		
+	}
+	
+	title = "Investment opportunity: Industry"
+	desc = "The government was approached today by a group of bankers, factory owners and other investors with a briliant plan."
+	picture = "investment"
+	
+	option = {
+		name = "What a great opportunity!"
+		ai_chance = { factor = 75 }
+		money = -500
+		remove_country_modifier = "invest_into_research"
+		remove_country_modifier = "invest_into_industry"
+		remove_country_modifier = "invest_into_officers"
+		remove_country_modifier = "invest_into_trade"
+		remove_country_modifier = "invest_into_mining"
+		remove_country_modifier = "invest_into_supplies"
+		remove_country_modifier = "invest_into_the_army"
+		remove_country_modifier = "invest_into_the_navy"
+		remove_country_modifier = "invest_into_the_airforce"
+		remove_country_modifier = "invest_into_the_people"
+		remove_country_modifier = "investor_negotiations"
+		add_country_modifier = {
+			name = "invest_into_industry"
+			duration = 365
+		}
+	}
+	option = {
+		name = "Not now."
+		ai_chance = { factor = 25 }
+		random = {
+			chance = 25
+			remove_country_modifier = "investor_negotiations"
+		}
+	}
+}
+
+country_event = {
+
+	id = 5503
+	
+	trigger = {
+		government_in_exile = no
+		not = { has_country_modifier = "invest_into_research" }
+		not = { has_country_modifier = "invest_into_industry" }
+		not = { has_country_modifier = "invest_into_officers" }
+		not = { has_country_modifier = "invest_into_trade" }
+		not = { has_country_modifier = "invest_into_mining" }
+		not = { has_country_modifier = "invest_into_supplies" }
+		not = { has_country_modifier = "invest_into_the_army" }
+		not = { has_country_modifier = "invest_into_the_navy" }
+		not = { has_country_modifier = "invest_into_the_airforce" }
+		not = { has_country_modifier = "invest_into_the_people" }
+		money = 500
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.9 money = 1000  }
+		modifier = { factor = 0.9 money = 5000  }
+		modifier = { factor = 0.9 money = 10000 }
+		modifier = { factor = 0.9 money = 15000 }
+		modifier = { factor = 0.9 money = 20000 }
+		modifier = { factor = 0.9 money = 25000 }
+		modifier = { factor = 0.9 money = 50000 }
+		modifier = { factor = 0.9 money = 75000 }
+		
+		modifier = { factor = 0.7 civil_law = open_society }
+		modifier = { factor = 0.9 civil_law = limited_restrictions }
+		modifier = { factor = 0.9 civil_law = totalitarian_system }
+		
+		modifier = { factor = 1.2 economic_law = basic_mobilisation }
+		modifier = { factor = 1.5 economic_law = full_mobilisation }
+		modifier = { factor = 2.0 economic_law = war_economy }
+		modifier = { factor = 2.5 economic_law = total_economic_mobilisation }
+		
+		modifier = { factor = 0.9 industrial_policy_laws = consumer_product_orientation }
+		modifier = { factor = 1.2 industrial_policy_laws = heavy_industry_emphasis }
+		
+		modifier = { factor = 0.7 taxation_law = negligible_taxes }
+		modifier = { factor = 0.9 taxation_law = small_taxes }
+		modifier = { factor = 1.5 taxation_law = high_taxes }
+		modifier = { factor = 2.0 taxation_law = exploitive_taxes }
+		
+		modifier = { factor = 1.2 press_laws = free_press }
+		modifier = { factor = 0.9 press_laws = state_press }
+		modifier = { factor = 0.7 press_laws = propaganda_press }
+		
+		modifier = { factor = 0.01 has_country_modifier = "investor_negotiations" }
+		
+	}
+	
+	title = "Investment opportunity: Officer Corps"
+	desc = "The government was approached today by a group of bankers, factory owners and other investors with a briliant plan."
+	picture = "investment"
+	
+	option = {
+		name = "What a great opportunity!"
+		ai_chance = { factor = 75 }
+		money = -500
+		remove_country_modifier = "invest_into_research"
+		remove_country_modifier = "invest_into_industry"
+		remove_country_modifier = "invest_into_officers"
+		remove_country_modifier = "invest_into_trade"
+		remove_country_modifier = "invest_into_mining"
+		remove_country_modifier = "invest_into_supplies"
+		remove_country_modifier = "invest_into_the_army"
+		remove_country_modifier = "invest_into_the_navy"
+		remove_country_modifier = "invest_into_the_airforce"
+		remove_country_modifier = "invest_into_the_people"
+		remove_country_modifier = "investor_negotiations"
+		add_country_modifier = {
+			name = "invest_into_officers"
+			duration = 365
+		}
+	}
+	option = {
+		name = "Not now."
+		ai_chance = { factor = 25 }
+		random = {
+			chance = 25
+			remove_country_modifier = "investor_negotiations"
+		}
+	}
+}
+
+country_event = {
+
+	id = 5504
+	
+	trigger = {
+		government_in_exile = no
+		not = { has_country_modifier = "invest_into_research" }
+		not = { has_country_modifier = "invest_into_industry" }
+		not = { has_country_modifier = "invest_into_officers" }
+		not = { has_country_modifier = "invest_into_trade" }
+		not = { has_country_modifier = "invest_into_mining" }
+		not = { has_country_modifier = "invest_into_supplies" }
+		not = { has_country_modifier = "invest_into_the_army" }
+		not = { has_country_modifier = "invest_into_the_navy" }
+		not = { has_country_modifier = "invest_into_the_airforce" }
+		not = { has_country_modifier = "invest_into_the_people" }
+		money = 500
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.9 money = 1000  }
+		modifier = { factor = 0.9 money = 5000  }
+		modifier = { factor = 0.9 money = 10000 }
+		modifier = { factor = 0.9 money = 15000 }
+		modifier = { factor = 0.9 money = 20000 }
+		modifier = { factor = 0.9 money = 25000 }
+		modifier = { factor = 0.9 money = 50000 }
+		modifier = { factor = 0.9 money = 75000 }
+		
+		modifier = { factor = 0.7 civil_law = open_society }
+		modifier = { factor = 0.9 civil_law = limited_restrictions }
+		modifier = { factor = 0.9 civil_law = totalitarian_system }
+		
+		modifier = { factor = 1.2 economic_law = basic_mobilisation }
+		modifier = { factor = 1.5 economic_law = full_mobilisation }
+		modifier = { factor = 2.0 economic_law = war_economy }
+		modifier = { factor = 2.5 economic_law = total_economic_mobilisation }
+		
+		modifier = { factor = 0.9 industrial_policy_laws = consumer_product_orientation }
+		modifier = { factor = 1.2 industrial_policy_laws = heavy_industry_emphasis }
+		
+		modifier = { factor = 0.7 taxation_law = negligible_taxes }
+		modifier = { factor = 0.9 taxation_law = small_taxes }
+		modifier = { factor = 1.5 taxation_law = high_taxes }
+		modifier = { factor = 2.0 taxation_law = exploitive_taxes }
+		
+		modifier = { factor = 1.2 press_laws = free_press }
+		modifier = { factor = 0.9 press_laws = state_press }
+		modifier = { factor = 0.7 press_laws = propaganda_press }
+		
+		modifier = { factor = 0.01 has_country_modifier = "investor_negotiations" }
+		
+	}
+	
+	title = "Investment opportunity: Trade"
+	desc = "The government was approached today by a group of bankers, factory owners and other investors with a briliant plan."
+	picture = "investment"
+	
+	option = {
+		name = "What a great opportunity!"
+		ai_chance = { factor = 75 }
+		money = -500
+		remove_country_modifier = "invest_into_research"
+		remove_country_modifier = "invest_into_industry"
+		remove_country_modifier = "invest_into_officers"
+		remove_country_modifier = "invest_into_trade"
+		remove_country_modifier = "invest_into_mining"
+		remove_country_modifier = "invest_into_supplies"
+		remove_country_modifier = "invest_into_the_army"
+		remove_country_modifier = "invest_into_the_navy"
+		remove_country_modifier = "invest_into_the_airforce"
+		remove_country_modifier = "invest_into_the_people"
+		remove_country_modifier = "investor_negotiations"
+		add_country_modifier = {
+			name = "invest_into_trade"
+			duration = 365
+		}
+	}
+	option = {
+		name = "Not now."
+		ai_chance = { factor = 25 }
+		random = {
+			chance = 25
+			remove_country_modifier = "investor_negotiations"
+		}
+	}
+}
+
+country_event = {
+
+	id = 5505
+	
+	trigger = {
+		government_in_exile = no
+		not = { has_country_modifier = "invest_into_research" }
+		not = { has_country_modifier = "invest_into_industry" }
+		not = { has_country_modifier = "invest_into_officers" }
+		not = { has_country_modifier = "invest_into_trade" }
+		not = { has_country_modifier = "invest_into_mining" }
+		not = { has_country_modifier = "invest_into_supplies" }
+		not = { has_country_modifier = "invest_into_the_army" }
+		not = { has_country_modifier = "invest_into_the_navy" }
+		not = { has_country_modifier = "invest_into_the_airforce" }
+		not = { has_country_modifier = "invest_into_the_people" }
+		money = 500
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.9 money = 1000  }
+		modifier = { factor = 0.9 money = 5000  }
+		modifier = { factor = 0.9 money = 10000 }
+		modifier = { factor = 0.9 money = 15000 }
+		modifier = { factor = 0.9 money = 20000 }
+		modifier = { factor = 0.9 money = 25000 }
+		modifier = { factor = 0.9 money = 50000 }
+		modifier = { factor = 0.9 money = 75000 }
+		
+		modifier = { factor = 0.7 civil_law = open_society }
+		modifier = { factor = 0.9 civil_law = limited_restrictions }
+		modifier = { factor = 0.9 civil_law = totalitarian_system }
+		
+		modifier = { factor = 1.2 economic_law = basic_mobilisation }
+		modifier = { factor = 1.5 economic_law = full_mobilisation }
+		modifier = { factor = 2.0 economic_law = war_economy }
+		modifier = { factor = 2.5 economic_law = total_economic_mobilisation }
+		
+		modifier = { factor = 0.9 industrial_policy_laws = consumer_product_orientation }
+		modifier = { factor = 1.2 industrial_policy_laws = heavy_industry_emphasis }
+		
+		modifier = { factor = 0.7 taxation_law = negligible_taxes }
+		modifier = { factor = 0.9 taxation_law = small_taxes }
+		modifier = { factor = 1.5 taxation_law = high_taxes }
+		modifier = { factor = 2.0 taxation_law = exploitive_taxes }
+		
+		modifier = { factor = 1.2 press_laws = free_press }
+		modifier = { factor = 0.9 press_laws = state_press }
+		modifier = { factor = 0.7 press_laws = propaganda_press }
+		
+		modifier = { factor = 0.01 has_country_modifier = "investor_negotiations" }
+		
+	}
+	
+	title = "Investment opportunity: Mining"
+	desc = "The government was approached today by a group of bankers, factory owners and other investors with a briliant plan."
+	picture = "investment"
+	
+	option = {
+		name = "What a great opportunity!"
+		ai_chance = { factor = 75 }
+		money = -500
+		remove_country_modifier = "invest_into_research"
+		remove_country_modifier = "invest_into_industry"
+		remove_country_modifier = "invest_into_officers"
+		remove_country_modifier = "invest_into_trade"
+		remove_country_modifier = "invest_into_mining"
+		remove_country_modifier = "invest_into_supplies"
+		remove_country_modifier = "invest_into_the_army"
+		remove_country_modifier = "invest_into_the_navy"
+		remove_country_modifier = "invest_into_the_airforce"
+		remove_country_modifier = "invest_into_the_people"
+		remove_country_modifier = "investor_negotiations"
+		add_country_modifier = {
+			name = "invest_into_mining"
+			duration = 365
+		}
+	}
+	option = {
+		name = "Not now."
+		ai_chance = { factor = 25 }
+		random = {
+			chance = 25
+			remove_country_modifier = "investor_negotiations"
+		}
+	}
+}
+
+country_event = {
+
+	id = 5506
+	
+	trigger = {
+		government_in_exile = no
+		not = { has_country_modifier = "invest_into_research" }
+		not = { has_country_modifier = "invest_into_industry" }
+		not = { has_country_modifier = "invest_into_officers" }
+		not = { has_country_modifier = "invest_into_trade" }
+		not = { has_country_modifier = "invest_into_mining" }
+		not = { has_country_modifier = "invest_into_supplies" }
+		not = { has_country_modifier = "invest_into_the_army" }
+		not = { has_country_modifier = "invest_into_the_navy" }
+		not = { has_country_modifier = "invest_into_the_airforce" }
+		not = { has_country_modifier = "invest_into_the_people" }
+		money = 500
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.9 money = 1000  }
+		modifier = { factor = 0.9 money = 5000  }
+		modifier = { factor = 0.9 money = 10000 }
+		modifier = { factor = 0.9 money = 15000 }
+		modifier = { factor = 0.9 money = 20000 }
+		modifier = { factor = 0.9 money = 25000 }
+		modifier = { factor = 0.9 money = 50000 }
+		modifier = { factor = 0.9 money = 75000 }
+		
+		modifier = { factor = 0.7 civil_law = open_society }
+		modifier = { factor = 0.9 civil_law = limited_restrictions }
+		modifier = { factor = 0.9 civil_law = totalitarian_system }
+		
+		modifier = { factor = 1.2 economic_law = basic_mobilisation }
+		modifier = { factor = 1.5 economic_law = full_mobilisation }
+		modifier = { factor = 2.0 economic_law = war_economy }
+		modifier = { factor = 2.5 economic_law = total_economic_mobilisation }
+		
+		modifier = { factor = 0.9 industrial_policy_laws = consumer_product_orientation }
+		modifier = { factor = 1.2 industrial_policy_laws = heavy_industry_emphasis }
+		
+		modifier = { factor = 0.7 taxation_law = negligible_taxes }
+		modifier = { factor = 0.9 taxation_law = small_taxes }
+		modifier = { factor = 1.5 taxation_law = high_taxes }
+		modifier = { factor = 2.0 taxation_law = exploitive_taxes }
+		
+		modifier = { factor = 1.2 press_laws = free_press }
+		modifier = { factor = 0.9 press_laws = state_press }
+		modifier = { factor = 0.7 press_laws = propaganda_press }
+		
+		modifier = { factor = 0.01 has_country_modifier = "investor_negotiations" }
+		
+	}
+	
+	title = "Investment opportunity: Supplies"
+	desc = "The government was approached today by a group of bankers, factory owners and other investors with a briliant plan."
+	picture = "investment"
+	
+	option = {
+		name = "What a great opportunity!"
+		ai_chance = { factor = 75 }
+		money = -500
+		remove_country_modifier = "invest_into_research"
+		remove_country_modifier = "invest_into_industry"
+		remove_country_modifier = "invest_into_officers"
+		remove_country_modifier = "invest_into_trade"
+		remove_country_modifier = "invest_into_mining"
+		remove_country_modifier = "invest_into_supplies"
+		remove_country_modifier = "invest_into_the_army"
+		remove_country_modifier = "invest_into_the_navy"
+		remove_country_modifier = "invest_into_the_airforce"
+		remove_country_modifier = "invest_into_the_people"
+		remove_country_modifier = "investor_negotiations"
+		add_country_modifier = {
+			name = "invest_into_supplies"
+			duration = 365
+		}
+	}
+	option = {
+		name = "Not now."
+		ai_chance = { factor = 25 }
+		random = {
+			chance = 25
+			remove_country_modifier = "investor_negotiations"
+		}
+	}
+}
+
+country_event = {
+
+	id = 5507
+	
+	trigger = {
+		government_in_exile = no
+		not = { has_country_modifier = "invest_into_research" }
+		not = { has_country_modifier = "invest_into_industry" }
+		not = { has_country_modifier = "invest_into_officers" }
+		not = { has_country_modifier = "invest_into_trade" }
+		not = { has_country_modifier = "invest_into_mining" }
+		not = { has_country_modifier = "invest_into_supplies" }
+		not = { has_country_modifier = "invest_into_the_army" }
+		not = { has_country_modifier = "invest_into_the_navy" }
+		not = { has_country_modifier = "invest_into_the_airforce" }
+		not = { has_country_modifier = "invest_into_the_people" }
+		money = 500
+		war = yes		# Only makes sense at war.
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.9 money = 1000  }
+		modifier = { factor = 0.9 money = 5000  }
+		modifier = { factor = 0.9 money = 10000 }
+		modifier = { factor = 0.9 money = 15000 }
+		modifier = { factor = 0.9 money = 20000 }
+		modifier = { factor = 0.9 money = 25000 }
+		modifier = { factor = 0.9 money = 50000 }
+		modifier = { factor = 0.9 money = 75000 }
+		
+		modifier = { factor = 0.7 civil_law = open_society }
+		modifier = { factor = 0.9 civil_law = limited_restrictions }
+		modifier = { factor = 0.9 civil_law = totalitarian_system }
+		
+		modifier = { factor = 1.2 economic_law = basic_mobilisation }
+		modifier = { factor = 1.5 economic_law = full_mobilisation }
+		modifier = { factor = 2.0 economic_law = war_economy }
+		modifier = { factor = 2.5 economic_law = total_economic_mobilisation }
+		
+		modifier = { factor = 0.9 industrial_policy_laws = consumer_product_orientation }
+		modifier = { factor = 1.2 industrial_policy_laws = heavy_industry_emphasis }
+		
+		modifier = { factor = 0.7 taxation_law = negligible_taxes }
+		modifier = { factor = 0.9 taxation_law = small_taxes }
+		modifier = { factor = 1.5 taxation_law = high_taxes }
+		modifier = { factor = 2.0 taxation_law = exploitive_taxes }
+		
+		modifier = { factor = 1.2 press_laws = free_press }
+		modifier = { factor = 0.9 press_laws = state_press }
+		modifier = { factor = 0.7 press_laws = propaganda_press }
+		
+		modifier = { factor = 0.01 has_country_modifier = "investor_negotiations" }
+		
+	}
+	
+	title = "Investment opportunity: Army"
+	desc = "The government was approached today by a group of bankers, factory owners and other investors with a briliant plan."
+	picture = "investment"
+	
+	option = {
+		name = "What a great opportunity!"
+		ai_chance = { factor = 75 }
+		money = -500
+		remove_country_modifier = "invest_into_research"
+		remove_country_modifier = "invest_into_industry"
+		remove_country_modifier = "invest_into_officers"
+		remove_country_modifier = "invest_into_trade"
+		remove_country_modifier = "invest_into_mining"
+		remove_country_modifier = "invest_into_supplies"
+		remove_country_modifier = "invest_into_the_army"
+		remove_country_modifier = "invest_into_the_navy"
+		remove_country_modifier = "invest_into_the_airforce"
+		remove_country_modifier = "invest_into_the_people"
+		remove_country_modifier = "investor_negotiations"
+		add_country_modifier = {
+			name = "invest_into_the_army"
+			duration = 365
+		}
+	}
+	option = {
+		name = "Not now."
+		ai_chance = { factor = 25 }
+		random = {
+			chance = 25
+			remove_country_modifier = "investor_negotiations"
+		}
+	}
+}
+
+country_event = {
+
+	id = 5508
+	
+	trigger = {
+		government_in_exile = no
+		not = { has_country_modifier = "invest_into_research" }
+		not = { has_country_modifier = "invest_into_industry" }
+		not = { has_country_modifier = "invest_into_officers" }
+		not = { has_country_modifier = "invest_into_trade" }
+		not = { has_country_modifier = "invest_into_mining" }
+		not = { has_country_modifier = "invest_into_supplies" }
+		not = { has_country_modifier = "invest_into_the_army" }
+		not = { has_country_modifier = "invest_into_the_navy" }
+		not = { has_country_modifier = "invest_into_the_airforce" }
+		not = { has_country_modifier = "invest_into_the_people" }
+		money = 500
+		war = yes		# Only makes sense at war.
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.9 money = 1000  }
+		modifier = { factor = 0.9 money = 5000  }
+		modifier = { factor = 0.9 money = 10000 }
+		modifier = { factor = 0.9 money = 15000 }
+		modifier = { factor = 0.9 money = 20000 }
+		modifier = { factor = 0.9 money = 25000 }
+		modifier = { factor = 0.9 money = 50000 }
+		modifier = { factor = 0.9 money = 75000 }
+		
+		modifier = { factor = 0.7 civil_law = open_society }
+		modifier = { factor = 0.9 civil_law = limited_restrictions }
+		modifier = { factor = 0.9 civil_law = totalitarian_system }
+		
+		modifier = { factor = 1.2 economic_law = basic_mobilisation }
+		modifier = { factor = 1.5 economic_law = full_mobilisation }
+		modifier = { factor = 2.0 economic_law = war_economy }
+		modifier = { factor = 2.5 economic_law = total_economic_mobilisation }
+		
+		modifier = { factor = 0.9 industrial_policy_laws = consumer_product_orientation }
+		modifier = { factor = 1.2 industrial_policy_laws = heavy_industry_emphasis }
+		
+		modifier = { factor = 0.7 taxation_law = negligible_taxes }
+		modifier = { factor = 0.9 taxation_law = small_taxes }
+		modifier = { factor = 1.5 taxation_law = high_taxes }
+		modifier = { factor = 2.0 taxation_law = exploitive_taxes }
+		
+		modifier = { factor = 1.2 press_laws = free_press }
+		modifier = { factor = 0.9 press_laws = state_press }
+		modifier = { factor = 0.7 press_laws = propaganda_press }
+		
+		modifier = { factor = 0.01 has_country_modifier = "investor_negotiations" }
+		
+	}
+	
+	title = "Investment opportunity: Navy"
+	desc = "The government was approached today by a group of bankers, factory owners and other investors with a briliant plan."
+	picture = "investment"
+	
+	option = {
+		name = "What a great opportunity!"
+		ai_chance = { factor = 75 }
+		money = -500
+		remove_country_modifier = "invest_into_research"
+		remove_country_modifier = "invest_into_industry"
+		remove_country_modifier = "invest_into_officers"
+		remove_country_modifier = "invest_into_trade"
+		remove_country_modifier = "invest_into_mining"
+		remove_country_modifier = "invest_into_supplies"
+		remove_country_modifier = "invest_into_the_army"
+		remove_country_modifier = "invest_into_the_navy"
+		remove_country_modifier = "invest_into_the_airforce"
+		remove_country_modifier = "invest_into_the_people"
+		remove_country_modifier = "investor_negotiations"
+		add_country_modifier = {
+			name = "invest_into_the_navy"
+			duration = 365
+		}
+	}
+	option = {
+		name = "Not now."
+		ai_chance = { factor = 25 }
+		random = {
+			chance = 25
+			remove_country_modifier = "investor_negotiations"
+		}
+	}
+}
+
+country_event = {
+
+	id = 5509
+	
+	trigger = {
+		government_in_exile = no
+		not = { has_country_modifier = "invest_into_research" }
+		not = { has_country_modifier = "invest_into_industry" }
+		not = { has_country_modifier = "invest_into_officers" }
+		not = { has_country_modifier = "invest_into_trade" }
+		not = { has_country_modifier = "invest_into_mining" }
+		not = { has_country_modifier = "invest_into_supplies" }
+		not = { has_country_modifier = "invest_into_the_army" }
+		not = { has_country_modifier = "invest_into_the_navy" }
+		not = { has_country_modifier = "invest_into_the_airforce" }
+		not = { has_country_modifier = "invest_into_the_people" }
+		money = 500
+		war = yes		# Only makes sense at war.
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.9 money = 1000  }
+		modifier = { factor = 0.9 money = 5000  }
+		modifier = { factor = 0.9 money = 10000 }
+		modifier = { factor = 0.9 money = 15000 }
+		modifier = { factor = 0.9 money = 20000 }
+		modifier = { factor = 0.9 money = 25000 }
+		modifier = { factor = 0.9 money = 50000 }
+		modifier = { factor = 0.9 money = 75000 }
+		
+		modifier = { factor = 0.7 civil_law = open_society }
+		modifier = { factor = 0.9 civil_law = limited_restrictions }
+		modifier = { factor = 0.9 civil_law = totalitarian_system }
+		
+		modifier = { factor = 1.2 economic_law = basic_mobilisation }
+		modifier = { factor = 1.5 economic_law = full_mobilisation }
+		modifier = { factor = 2.0 economic_law = war_economy }
+		modifier = { factor = 2.5 economic_law = total_economic_mobilisation }
+		
+		modifier = { factor = 0.9 industrial_policy_laws = consumer_product_orientation }
+		modifier = { factor = 1.2 industrial_policy_laws = heavy_industry_emphasis }
+		
+		modifier = { factor = 0.7 taxation_law = negligible_taxes }
+		modifier = { factor = 0.9 taxation_law = small_taxes }
+		modifier = { factor = 1.5 taxation_law = high_taxes }
+		modifier = { factor = 2.0 taxation_law = exploitive_taxes }
+		
+		modifier = { factor = 1.2 press_laws = free_press }
+		modifier = { factor = 0.9 press_laws = state_press }
+		modifier = { factor = 0.7 press_laws = propaganda_press }
+		
+		modifier = { factor = 0.01 has_country_modifier = "investor_negotiations" }
+		
+	}
+	
+	title = "Investment opportunity: Air Force"
+	desc = "The government was approached today by a group of bankers, factory owners and other investors with a briliant plan."
+	picture = "investment"
+	
+	option = {
+		name = "What a great opportunity!"
+		ai_chance = { factor = 75 }
+		money = -500
+		remove_country_modifier = "invest_into_research"
+		remove_country_modifier = "invest_into_industry"
+		remove_country_modifier = "invest_into_officers"
+		remove_country_modifier = "invest_into_trade"
+		remove_country_modifier = "invest_into_mining"
+		remove_country_modifier = "invest_into_supplies"
+		remove_country_modifier = "invest_into_the_army"
+		remove_country_modifier = "invest_into_the_navy"
+		remove_country_modifier = "invest_into_the_airforce"
+		remove_country_modifier = "invest_into_the_people"
+		remove_country_modifier = "investor_negotiations"
+		add_country_modifier = {
+			name = "invest_into_the_airforce"
+			duration = 365
+		}
+	}
+	option = {
+		name = "Not now."
+		ai_chance = { factor = 25 }
+		random = {
+			chance = 25
+			remove_country_modifier = "investor_negotiations"
+		}
+	}
+}
+
+country_event = {
+
+	id = 5510
+	
+	trigger = {
+		government_in_exile = no
+		not = { has_country_modifier = "invest_into_research" }
+		not = { has_country_modifier = "invest_into_industry" }
+		not = { has_country_modifier = "invest_into_officers" }
+		not = { has_country_modifier = "invest_into_trade" }
+		not = { has_country_modifier = "invest_into_mining" }
+		not = { has_country_modifier = "invest_into_supplies" }
+		not = { has_country_modifier = "invest_into_the_army" }
+		not = { has_country_modifier = "invest_into_the_navy" }
+		not = { has_country_modifier = "invest_into_the_airforce" }
+		not = { has_country_modifier = "invest_into_the_people" }
+		money = 500
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		
+		modifier = { factor = 0.9 money = 1000  }
+		modifier = { factor = 0.9 money = 5000  }
+		modifier = { factor = 0.9 money = 10000 }
+		modifier = { factor = 0.9 money = 15000 }
+		modifier = { factor = 0.9 money = 20000 }
+		modifier = { factor = 0.9 money = 25000 }
+		modifier = { factor = 0.9 money = 50000 }
+		modifier = { factor = 0.9 money = 75000 }
+		
+		modifier = { factor = 0.7 civil_law = open_society }
+		modifier = { factor = 0.9 civil_law = limited_restrictions }
+		modifier = { factor = 0.9 civil_law = totalitarian_system }
+		
+		modifier = { factor = 1.2 economic_law = basic_mobilisation }
+		modifier = { factor = 1.5 economic_law = full_mobilisation }
+		modifier = { factor = 2.0 economic_law = war_economy }
+		modifier = { factor = 2.5 economic_law = total_economic_mobilisation }
+		
+		modifier = { factor = 0.9 industrial_policy_laws = consumer_product_orientation }
+		modifier = { factor = 1.2 industrial_policy_laws = heavy_industry_emphasis }
+		
+		modifier = { factor = 0.7 taxation_law = negligible_taxes }
+		modifier = { factor = 0.9 taxation_law = small_taxes }
+		modifier = { factor = 1.5 taxation_law = high_taxes }
+		modifier = { factor = 2.0 taxation_law = exploitive_taxes }
+		
+		modifier = { factor = 1.2 press_laws = free_press }
+		modifier = { factor = 0.9 press_laws = state_press }
+		modifier = { factor = 0.7 press_laws = propaganda_press }
+		
+		modifier = { factor = 0.01 has_country_modifier = "investor_negotiations" }
+		
+	}
+	
+	title = "Investment opportunity: Society"
+	desc = "The government was approached today by a group of bankers, factory owners and other investors with a briliant plan."
+	picture = "investment"
+	
+	option = {
+		name = "What a great opportunity!"
+		ai_chance = { factor = 75 }
+		money = -500
+		remove_country_modifier = "invest_into_research"
+		remove_country_modifier = "invest_into_industry"
+		remove_country_modifier = "invest_into_officers"
+		remove_country_modifier = "invest_into_trade"
+		remove_country_modifier = "invest_into_mining"
+		remove_country_modifier = "invest_into_supplies"
+		remove_country_modifier = "invest_into_the_army"
+		remove_country_modifier = "invest_into_the_navy"
+		remove_country_modifier = "invest_into_the_airforce"
+		remove_country_modifier = "invest_into_the_people"
+		remove_country_modifier = "investor_negotiations"
+		add_country_modifier = {
+			name = "invest_into_the_people"
+			duration = 365
+		}
+	}
+	option = {
+		name = "Not now."
+		ai_chance = { factor = 25 }
+		random = {
+			chance = 25
+			remove_country_modifier = "investor_negotiations"
+		}
+	}
+}
+
+# Government nationalizes private sector
+country_event = {
+	
+	id = 5511
+
+	trigger = {
+		government_in_exile = no
+		ideology_group = fascism
+		organisation = 33
+		or = {
+			civil_law = totalitarian_system
+			civil_law = repression
+		}
+		construction_engineering = 1
+	}
+
+	mean_time_to_happen =  {
+		months = 24
+		
+		modifier = { factor = 0.9 organisation = 35 }
+		modifier = { factor = 0.9 organisation = 40 }
+		modifier = { factor = 0.9 organisation = 45 }
+		modifier = { factor = 0.9 organisation = 50 }
+		modifier = { factor = 0.9 organisation = 55 }
+		modifier = { factor = 0.9 organisation = 60 }
+		modifier = { factor = 0.9 organisation = 65 }
+		modifier = { factor = 0.9 organisation = 70 }
+	}
+
+	title = "EVTNAME5005"
+	desc = "EVTDESC5005"
+	picture = "private_sector"
+
+	option = {
+		name = "Of course!"
+		ai_chance = {
+			factor = 99
+			modifier = {
+				factor = 0.0
+				dissent = 10
+			}
+		}
+		add_country_modifier = {
+			name = "nationalization_of_private_sector"
+			duration = 90
+		}
+		organisation = -2
+		dissent = 2
+	}
+	option = {
+		name = "Not such a good idea..."
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 99
+				dissent = 10
+			}
+		}
+	}
+}
+
+# Government communises private sector
+country_event = {
+	
+	id = 5512
+
+	trigger = {
+		government_in_exile = no
+		ideology_group = communism
+		organisation = 33
+		or = {
+			civil_law = totalitarian_system
+			civil_law = repression
+		}
+		construction_engineering = 1
+	}
+
+	mean_time_to_happen =  {
+		months = 24
+		
+		modifier = { factor = 0.9 organisation = 35 }
+		modifier = { factor = 0.9 organisation = 40 }
+		modifier = { factor = 0.9 organisation = 45 }
+		modifier = { factor = 0.9 organisation = 50 }
+		modifier = { factor = 0.9 organisation = 55 }
+		modifier = { factor = 0.9 organisation = 60 }
+		modifier = { factor = 0.9 organisation = 65 }
+		modifier = { factor = 0.9 organisation = 70 }
+	}
+
+	title = "Government communises private sector"
+	desc = "The Party announced today that a major factory that previously was in private hands is now the property of the people, and the government will take direct control of it."
+	picture = "private_sector"
+
+	option = {
+		name = "Of course!"
+		ai_chance = {
+			factor = 99
+			modifier = {
+				factor = 0.0
+				dissent = 10
+			}
+		}
+		add_country_modifier = {
+			name = "nationalization_of_private_sector"
+			duration = 90
+		}
+		organisation = -2
+		dissent = 2
+	}
+	option = {
+		name = "Not such a good idea..."
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 99
+				dissent = 10
+			}
+		}
+	}
+}
+# Emergency Legislation
+country_event = {
+
+	id = 5513
+
+	trigger = {
+		government_in_exile = no
+		is_threatend = 25
+		war = no
+		not = { has_country_modifier = "emergency_legislations" }
+	}
+
+	mean_time_to_happen =  {
+		months = 60
+
+		modifier = { factor = 0.9 is_threatend = 30 }
+		modifier = { factor = 0.9 is_threatend = 35 }
+		modifier = { factor = 0.9 is_threatend = 40 }
+		modifier = { factor = 0.9 is_threatend = 45 }
+		modifier = { factor = 0.9 is_threatend = 50 }
+		modifier = { factor = 0.9 is_threatend = 55 }
+		modifier = { factor = 0.9 is_threatend = 60 }
+		modifier = { factor = 0.9 is_threatend = 65 }
+		modifier = { factor = 0.9 is_threatend = 70 }
+		modifier = { factor = 0.9 is_threatend = 75 }
+		modifier = { factor = 0.9 is_threatend = 80 }
+		modifier = { factor = 0.9 is_threatend = 85 }
+		modifier = { factor = 0.9 is_threatend = 90 }
+		modifier = { factor = 0.9 is_threatend = 95 }
+	}
+
+	title = "EVTNAME5016"
+	desc = "EVTDESC5016"
+	picture = "constitutional"
+
+	option = {
+		name = "Enact the emergency legislation!"
+		add_country_modifier = {
+			name = "emergency_legislations"
+			duration = 365
+		}
+		dissent = 3
+	}
+	option = {
+		name = "We can manage without."
+		money = -500
+	}
+}
+
+# Economic Boost
+country_event = {
+
+	id = 5514
+	
+	trigger = {
+		government_in_exile = no
+		NOT = { has_country_modifier = economic_boost }
+	}
+
+	mean_time_to_happen = {
+		months =  12
+		
+		modifier = { factor = 0.5 has_country_modifier = "great_war" }
+		
+		modifier = { factor = 1.2 dissent = 1 }
+		modifier = { factor = 1.2 dissent = 2 }
+		modifier = { factor = 1.2 dissent = 3 }
+		modifier = { factor = 1.2 dissent = 4 }
+		modifier = { factor = 1.2 dissent = 5 }
+		modifier = { factor = 1.2 dissent = 6 }
+		modifier = { factor = 1.2 dissent = 7 }
+		modifier = { factor = 1.2 dissent = 8 }
+		modifier = { factor = 1.2 dissent = 9 }
+		modifier = { factor = 1.2 dissent = 10 }
+		
+		modifier = { factor = 1.2 not = { organisation = 30 } }
+		modifier = { factor = 1.2 not = { organisation = 35 } }
+		modifier = { factor = 1.2 not = { organisation = 40 } }
+		modifier = { factor = 1.2 not = { organisation = 45 } }
+		modifier = { factor = 1.2 not = { organisation = 50 } }
+		modifier = { factor = 1.2 not = { organisation = 55 } }
+		modifier = { factor = 1.2 not = { organisation = 60 } }
+		modifier = { factor = 1.2 not = { organisation = 65 } }
+		modifier = { factor = 1.2 not = { organisation = 70 } }
+		modifier = { factor = 1.2 not = { organisation = 75 } }
+		
+		modifier = { factor = 2.0 not = { national_unity = 50 } }
+		modifier = { factor = 1.5 not = { national_unity = 70 } }
+	}
+
+	title = "EVTNAME5040"
+	desc = "EVTDESC5040"
+	picture = "private_sector"
+
+	option = {
+		name = "EVTOPTA5040"
+		add_country_modifier = {
+			name = "economic_boost"
+			duration = 180
+		}
+	}
+}
+
+
+country_event = {
+
+	id = 5515 
+	
+	trigger = {
+		government_in_exile = no
+		NOT = { has_country_modifier = volunteer_surge }
+		war = yes
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 0.5 has_country_modifier = "great_war" }
+		
+		modifier = { factor = 1.2 dissent = 1 }
+		modifier = { factor = 1.2 dissent = 2 }
+		modifier = { factor = 1.2 dissent = 3 }
+		modifier = { factor = 1.2 dissent = 4 }
+		modifier = { factor = 1.2 dissent = 5 }
+		modifier = { factor = 1.2 dissent = 6 }
+		modifier = { factor = 1.2 dissent = 7 }
+		modifier = { factor = 1.2 dissent = 8 }
+		modifier = { factor = 1.2 dissent = 9 }
+		modifier = { factor = 1.2 dissent = 10 }
+		
+		modifier = { factor = 1.2 not = { organisation = 30 } }
+		modifier = { factor = 1.2 not = { organisation = 35 } }
+		modifier = { factor = 1.2 not = { organisation = 40 } }
+		modifier = { factor = 1.2 not = { organisation = 45 } }
+		modifier = { factor = 1.2 not = { organisation = 50 } }
+		modifier = { factor = 1.2 not = { organisation = 55 } }
+		modifier = { factor = 1.2 not = { organisation = 60 } }
+		modifier = { factor = 1.2 not = { organisation = 65 } }
+		modifier = { factor = 1.2 not = { organisation = 70 } }
+		modifier = { factor = 1.2 not = { organisation = 75 } }
+		
+		modifier = { factor = 2.0 not = { national_unity = 50 } }
+		modifier = { factor = 1.5 not = { national_unity = 70 } }
+	}
+
+	title = "EVTNAME5041"
+	desc = "EVTDESC5041"
+	picture = "great_war_manifestion"
+
+	option = {
+		name = "EVTOPTA5041"
+		add_country_modifier = {
+			name = "volunteer_surge"
+			duration = 60
+		}
+	}
+}
+
+
+country_event = {
+
+	id = 5516 
+	
+	trigger = {
+		government_in_exile = no
+		war = yes
+		NOT = { energy = 20000 }
+	}
+
+	mean_time_to_happen = {
+		months =  36
+	}
+
+	title = "EVTNAME5042"
+	desc = "EVTDESC5042"
+	picture = "great_war_manifestion"
+
+	option = {
+		name = "EVTOPTA5042"
+		energy = 500 
+	}
+}
+
+
+
+country_event = {
+
+	id = 5517
+	
+	trigger = {
+		government_in_exile = no
+		war = yes
+		NOT = { metal = 10000 }
+	}
+
+	mean_time_to_happen = {
+		months =  36
+	}
+
+	title = "EVTNAME5043"
+	desc = "EVTDESC5043"
+	picture = "great_war_manifestion"
+
+	option = {
+		name = "EVTOPTA5043"
+		metal = 500
+	}
+}
+
+
+
+country_event = {
+
+	id = 5518
+	
+	trigger = {
+		government_in_exile = no
+		war = yes
+		NOT = { rare_materials = 5000 }
+	}
+
+	mean_time_to_happen = {
+		months =  36
+	}
+
+	title = "EVTNAME5044"
+	desc = "EVTDESC5044"
+	picture = "great_war_manifestion"
+
+	option = {
+		name = "EVTOPTA5044"
+		rare_materials = 500
+	}
+}

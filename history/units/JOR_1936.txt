@@ -1,0 +1,11 @@
+theatre = {
+	name = "Transjordan Military Command"
+	location = 7496
+	regiment = { type = hq_brigade name = "Transjordan HQ" historical_model = 0 }
+	division = {
+		name = "Arab Legion"
+		location = 7496
+		regiment = { type = motorized_brigade name = "1st Desert Patrol Brigade" experience = 0 historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "2nd Desert Patrol Brigade" experience = 0 historical_model = 1 }
+	}	
+}

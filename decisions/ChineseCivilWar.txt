@@ -1,0 +1,335 @@
+diplomatic_decisions = {
+
+	chi_continues_the_civil_war = {
+		major = yes
+		potential = {
+			tag = CHI
+			exists = CHC
+			
+			or = {
+				has_global_flag = "ccw_can_continue"
+				not = { exists = JAP }
+				JAP = { has_country_flag = "offer_peace_to_china" }	# Japan is no longer a threat
+				JAP = { is_subject = yes }
+				JAP = { not = { total_ic = 50 } }
+			}
+			
+			not = { war_with = CHC }
+			is_subject = no
+			or = {
+				is_in_any_faction = yes
+				CHC = { is_in_any_faction = no }
+			}
+			not = { CHC = { faction = THIS } }
+		}
+		allow = {
+			not = { has_country_modifier = "xian_cease_fire" }
+			not = { dissent = 1 }
+			or = {
+				not = { base_neutrality = 100 }
+				national_unity = 85
+				organisation = 50
+			}
+		}
+		effect = {
+			leave_alliance = CHC
+			war = {
+				target = CHC
+				attacker_goal = { casus_belli = civil_war }
+			}
+			CHI = { country_event = 3905 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chc_continues_the_civil_war = {
+		major = yes
+		potential = {
+			tag = CHC
+			exists = CHI
+			
+			or = {
+				has_global_flag = "ccw_can_continue"
+				not = { war_with = JAP }		# They can restart even if the Japanese are still at large if they are not yet involved.
+			}
+			
+			not = { war_with = CHI }
+			is_subject = no
+			or = {
+				is_in_any_faction = yes
+				CHI = { is_in_any_faction = no }
+			}
+			not = { CHI = { faction = THIS } }
+		}
+		allow = {
+			not = { has_country_modifier = "xian_cease_fire" }
+			not = { dissent = 1 }
+			organisation = 33
+			national_unity = 75
+			or = {
+				not = { base_neutrality = 100 }
+				and = {
+					not = { war_with = JAP }
+					CHI = { stalinist = { organisation = 33 popularity = 50 } }
+				}
+			}
+		}
+		effect = {
+			leave_alliance = CHI
+			war = {
+				target = CHI
+				attacker_goal = { casus_belli = civil_war }
+			}
+			CHI = { country_event = 3905 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	china_asks_for_support_from_cxb = {
+		potential = {
+			tag = CHI
+			exists = CXB
+			war_with = CHC
+			year = 1940
+			not = { has_country_flag = ask_for_cxb_help }
+			not = { CXB = { has_country_flag = helps } }
+		}
+		allow = {
+			not = { war_with = CXB }
+			neighbour = CXB
+		}
+		effect = {
+			set_country_flag = ask_for_cxb_help
+			CXB = { country_event = 3901 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	china_asks_for_support_from_csx = {
+		potential = {
+			tag = CHI
+			exists = CSX
+			war_with = CHC
+			year = 1940
+			not = { has_country_flag = ask_for_csx_help }
+			not = { CSX = { has_country_flag = helps } }
+		}
+		allow = {
+			not = { war_with = CSX }
+			neighbour = CSX
+		}
+		effect = {
+			set_country_flag = ask_for_csx_help
+			CSX = { country_event = 3901 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	china_asks_for_support_from_cgx = {
+		potential = {
+			tag = CHI
+			exists = CGX
+			war_with = CHC
+			year = 1940
+			not = { has_country_flag = ask_for_cgx_help }
+			not = { CGX = { has_country_flag = helps } }
+		}
+		allow = {
+			not = { war_with = CGX }
+			neighbour = CGX
+		}
+		effect = {
+			set_country_flag = ask_for_cgx_help
+			CGX = { country_event = 3901 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	china_asks_for_support_from_cyn = {
+		potential = {
+			tag = CHI
+			exists = CYN
+			war_with = CHC
+			year = 1940
+			not = { has_country_flag = ask_for_cyn_help }
+			not = { CYN = { has_country_flag = helps } }
+		}
+		allow = {
+			not = { war_with = CYN }
+			neighbour = CYN
+		}
+		effect = {
+			set_country_flag = ask_for_cyn_help
+			CYN = { country_event = 3901 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	china_asks_for_support_from_sik = {
+		potential = {
+			tag = CHI
+			exists = SIK
+			war_with = CHC
+			year = 1940
+			not = { has_country_flag = ask_for_sik_help }
+			not = { SIK = { has_country_flag = helps } }
+		}
+		allow = {
+			not = { war_with = SIK }
+			neighbour = SIK
+		}
+		effect = {
+			set_country_flag = ask_for_sik_help
+			SIK = { country_event = 3901 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	chc_asks_for_support_from_cxb = {
+		potential = {
+			tag = CHC
+			exists = CXB
+			war_with = CHI
+			year = 1940
+			not = { has_country_flag = ask_for_cxb_help }
+			not = { CXB = { has_country_flag = helps } }
+		}
+		allow = {
+			not = { war_with = CXB }
+			neighbour = CXB
+		}
+		effect = {
+			set_country_flag = ask_for_cxb_help
+			CXB = { country_event = 3901 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	chc_asks_for_support_from_csx = {
+		potential = {
+			tag = CHC
+			exists = CSX
+			war_with = CHI
+			year = 1940
+			not = { has_country_flag = ask_for_csx_help }
+			not = { CSX = { has_country_flag = helps } }
+		}
+		allow = {
+			not = { war_with = CSX }
+			neighbour = CSX
+		}
+		effect = {
+			set_country_flag = ask_for_csx_help
+			CSX = { country_event = 3901 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	chc_asks_for_support_from_cgx = {
+		potential = {
+			tag = CHC
+			exists = CGX
+			war_with = CHI
+			year = 1940
+			not = { has_country_flag = ask_for_cgx_help }
+			not = { CGX = { has_country_flag = helps } }
+		}
+		allow = {
+			not = { war_with = CGX }
+			neighbour = CGX
+		}
+		effect = {
+			set_country_flag = ask_for_cgx_help
+			CGX = { country_event = 3901 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	chc_asks_for_support_from_cyn = {
+		potential = {
+			tag = CHC
+			exists = CYN
+			war_with = CHI
+			year = 1940
+			not = { has_country_flag = ask_for_cyn_help }
+			not = { CYN = { has_country_flag = helps } }
+		}
+		allow = {
+			not = { war_with = CYN }
+			neighbour = CYN
+		}
+		effect = {
+			set_country_flag = ask_for_cyn_help
+			CYN = { country_event = 3901 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	chc_asks_for_support_from_sik = {
+		potential = {
+			tag = CHC
+			exists = SIK
+			war_with = CHI
+			year = 1940
+			not = { has_country_flag = ask_for_sik_help }
+			not = { SIK = { has_country_flag = helps } }
+		}
+		allow = {
+			not = { war_with = SIK }
+			neighbour = SIK
+		}
+		effect = {
+			set_country_flag = ask_for_sik_help
+			SIK = { country_event = 3901 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
+	jingwei_continues_the_civil_war = {
+		major = yes
+		potential = {
+			tag = NJG
+			exists = CHC
+			#year = 1940	#Jingwei can ask to continue the Civil War right away!
+			not = { war_with = CHC }
+			not = { war_exhaustion = 5 }
+			vassal_of = JAP
+			not = { CHC = { faction = THIS } }
+			not = { CHC = { allied_with = THIS } }
+		}
+		allow = {
+			not = { war_exhaustion = 2 }
+		}
+		effect = {
+			JAP = { country_event = 3910 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

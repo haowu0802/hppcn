@@ -1,0 +1,165 @@
+country_event = {
+
+	id = 8901
+	
+	major = yes
+	
+	trigger = {
+		tag = GER
+		date = 1936.8.1
+		not = { date = 1936.11.1 }
+		not = { has_country_flag = "36_olympics" }
+		
+		or = { exists = GER exists = DDR exists = DFR }
+		or = { exists = SOV exists = RUS }
+		or = { exists = CHI exists = CHC }
+		or = { exists = FRA exists = VIC }
+		exists = USA exists = ENG exists = ITA exists = JAP
+		
+		not = { ENG = { or = { war_with = GER war_with = ITA war_with = JAP war_with = SOV } } }
+		not = { FRA = { or = { war_with = GER war_with = ITA war_with = JAP war_with = SOV } } }
+		not = { USA = { or = { war_with = GER war_with = ITA war_with = JAP war_with = SOV } } }
+		not = { SOV = { or = { war_with = GER war_with = ITA war_with = JAP } } } 
+	}
+
+	title = "1936 Olympic Games"
+	desc = "36_olympics_text"
+	picture = "olympics"
+
+	option = {
+		name = "At least we've still won the most gold medals, right?"
+		set_country_flag = "36_olympics"
+		threat = { who = all value = -5 }
+		any_country = { country_event = 8902 }
+	}
+}
+
+country_event = {
+
+	id = 8902
+	
+	trigger = {
+		ai = no
+	}
+	
+	is_triggered_only = yes
+	
+	title = "1936 Olympic Games"
+	desc = "36_olympics_text"
+	picture = "olympics"
+	
+	option = {
+		name = "What a show!"
+	}
+}
+
+country_event = {
+
+	id = 8903
+	
+	major = yes
+	
+	trigger = {
+		tag = JAP
+		date = 1940.9.1
+		not = { date = 1936.11.1 }
+		not = { has_country_flag = "40_olympics" }
+		
+		or = { exists = GER exists = DDR exists = DFR }
+		or = { exists = SOV exists = RUS }
+		or = { exists = CHI exists = CHC }
+		or = { exists = FRA exists = VIC }
+		exists = USA exists = ENG exists = ITA exists = JAP
+		
+		not = { ENG = { or = { war_with = GER war_with = ITA war_with = JAP war_with = SOV } } }
+		not = { FRA = { or = { war_with = GER war_with = ITA war_with = JAP war_with = SOV } } }
+		not = { USA = { or = { war_with = GER war_with = ITA war_with = JAP war_with = SOV } } }
+		not = { SOV = { or = { war_with = GER war_with = ITA war_with = JAP } } } 
+	}
+
+	title = "1940 Olympic Games"
+	desc = "40_olympics_text"
+	picture = "olympics"
+
+	option = {
+		name = "Let the Games begin!"
+		set_country_flag = "40_olympics"
+		threat = { who = all value = -5 }
+		any_country = { country_event = 8904 }
+	}
+}
+
+country_event = {
+
+	id = 8904
+	
+	trigger = {
+		ai = no
+	}
+	
+	is_triggered_only = yes
+	
+	title = "1940 Olympic Games"
+	desc = "40_olympics_text"
+	picture = "olympics"
+	
+	option = {
+		name = "What a show!"
+	}
+}
+
+country_event = {
+
+	id = 8905
+	
+	major = yes
+	
+	trigger = {
+		tag = ENG
+		date = 1944.8.1
+		not = { date = 1944.11.1 }
+		not = { has_country_flag = "44_olympics" }
+		
+		or = { exists = GER exists = DDR exists = DFR }
+		or = { exists = SOV exists = RUS }
+		or = { exists = CHI exists = CHC }
+		or = { exists = FRA exists = VIC }
+		exists = USA exists = ENG exists = ITA exists = JAP
+		
+		not = { ENG = { or = { war_with = GER war_with = ITA war_with = JAP war_with = SOV } } }
+		not = { FRA = { or = { war_with = GER war_with = ITA war_with = JAP war_with = SOV } } }
+		not = { USA = { or = { war_with = GER war_with = ITA war_with = JAP war_with = SOV } } }
+		not = { SOV = { or = { war_with = GER war_with = ITA war_with = JAP } } } 
+	}
+
+	title = "1944 Olympic Games"
+	desc = "44_olympics_text"
+	picture = "olympics"
+
+	option = {
+		name = "Let the Games begin!"
+		set_country_flag = "44_olympics"
+		threat = { who = all value = -5 }
+		any_country = { country_event = 8906 }
+	}
+}
+
+country_event = {
+
+	id = 8906
+	
+	trigger = {
+		ai = no
+	}
+	
+	is_triggered_only = yes
+	
+	title = "1944 Olympic Games"
+	desc = "44_olympics_text"
+	picture = "olympics"
+	
+	option = {
+		name = "What a show!"
+	}
+}
+

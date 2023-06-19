@@ -1,0 +1,63 @@
+###########################
+# Release Korea as puppet #
+###########################
+diplomatic_decisions = {
+
+	independent_korea1 = {
+		major = yes
+		potential = {
+			not = { has_country_flag = south_korea }
+			exists = JAP
+			not = { exists = KOR }
+			JAP = {				# Japan had
+				owns = 5116		# Seoul
+			}
+			JAP = {				# But lost control
+				not = { controls = 5116 }
+			}
+			controls = 5116
+			not = { ideology_group = communism }
+		}
+		allow = {
+			controls = 5116
+		}
+		effect = {
+			JAP = { korea_region = { limit = { controlled_by = THIS } secede_province = THIS } }
+			release_vassal = KOR
+			create_vassal = KOR 
+			set_country_flag = south_korea
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	independent_korea2 = {
+		major = yes
+		potential = {
+			exists = JAP
+			not = { exists = PRK }
+			JAP = {					# Japan had
+				owns = 5056			# Pyongyang
+			}
+			JAP = {					# But lost control
+				not = { controls = 5056 }
+			}
+			controls = 5056
+			ideology_group = communism
+			not = { has_country_flag = north_korea }
+		}
+		allow = {
+			controls = 5056
+		}
+		effect = {
+			JAP = { korea_region = { limit = { controlled_by = THIS } secede_province = THIS } }
+			release_vassal = PRK
+			create_vassal = PRK
+			set_country_flag = north_korea
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

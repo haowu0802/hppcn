@@ -1,0 +1,16 @@
+division= {
+	name = "Brigados Soviéticos"
+	location = 4862
+	is_reserve = yes
+	regiment = { type = infantry_brigade name = "1. Infantería Soviéticos" builder = "SOV" historical_model = 3 }
+	regiment = { type = infantry_brigade name = "2. Infantería Soviéticos" builder = "SOV" historical_model = 3 }
+	regiment = { type = infantry_brigade name = "3. Infantería Soviéticos" builder = "SOV" historical_model = 3 }
+	regiment = { type = horse_towed_support_brigade name = "1. Artillería Soviéticos" historical_model = 1 }
+}
+air = {
+	name = "Katiuskas Soviéticos"
+	base = 4862
+	location = 4862
+	wing = { type = interceptor name = "Cazas Soviéticos" historical_model = 1 }
+	wing = { type = tactical_bomber name = "Katiuskas Soviéticos" historical_model = 1 }
+}

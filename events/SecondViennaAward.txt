@@ -1,0 +1,496 @@
+##################################
+# Romanian extremists gain power #
+##################################
+
+country_event = {
+
+	id = 2307
+
+	trigger = {
+		tag = ROM
+		is_in_any_faction = no
+		is_subject = no
+		any_neighbor_country = {
+			faction = axis
+		}
+		any_neighbor_country = {
+			faction = comintern
+		}
+		not = { has_country_flag = "fear_of_axis" }
+	}
+
+	title = "Surrounded by enemies!"
+	desc = "We are surrounded by the Comintern and the Axis. We are too weak alone! The feeling of weakness strengthens the extremists."
+	picture = "ruthenia_ceded"
+
+	option = {
+		name = "We must seek allies, fast!"
+		set_country_flag = "fear_of_axis"
+
+		national_socialist = { popularity = 10 organisation = 20 }
+		fascistic = { popularity = 10 organisation = 20 }
+		paternal_autocrat = { popularity = 10 organisation = 20 }
+		left_wing_radical = { popularity = 10 organisation = 20 }
+		leninist = { popularity = 10 organisation = 20 }
+		stalinist = { popularity = 10 organisation = 20 }
+	}
+}
+
+country_event = {
+
+	id = 2308
+
+	major = yes
+
+	trigger = {
+		tag = ROM
+		GER = { faction = axis }
+		not = { ideology_group = fascism }
+		is_in_any_faction = no
+		is_subject = no
+		OR = {							# Right wing has enough power
+			paternal_autocrat = { popularity = 25 organisation = 30 }
+			fascistic = { popularity = 30 organisation = 35 }
+			national_socialist = { popularity = 35 organisation = 40 }
+		}
+		or = {
+			has_country_flag = "fear_of_axis"
+			has_country_flag = "vienna_diktat"
+			has_country_flag = "constanta"
+			has_country_flag = "bessarabia_to_the_soviet"
+			has_country_flag = "give_in_to_soviet_demands"
+		}
+		not = { has_country_flag = "right_wing_coup" }				# Only coup once!
+		not = { has_country_flag = "romania_asks_to_join_axis" }	# No coup if they already tried once!
+	}
+
+	title = "Right Wing Coup d'etat in Romania"
+	desc = "The people had enough of the weak government we have. We need our nation in strong, capable hands! It is time for a change!"
+	picture = "romania_tank"
+
+	option = {
+		name = "Let's find new friends!"
+		ai_chance = { factor = 98 }
+		set_country_flag = "right_wing_coup"
+		
+		organisation = -50
+		popularity = -50
+		do_election	= THIS
+		add_country_modifier = {
+			name = "consolidating_power"		# Of the new government, or if this one will get
+			duration = 25						# re-elected, then this one!
+		}
+
+		dissent = -15
+		national_unity = 10
+
+		GER = { country_event = 2310 }
+	}
+
+	option = {
+		name = "Our new leaders are strong enough on their own!"
+		ai_chance = { factor = 2 }
+		set_country_flag = "right_wing_coup"
+		
+		organisation = -50
+		popularity = -50
+		do_election	= THIS
+		add_country_modifier = {
+			name = "consolidating_power"		# Of the new government, or if this one will get
+			duration = 25						# re-elected, then this one!
+		}
+		
+		dissent = -15
+		national_unity = 10
+		
+	}
+}
+
+country_event = {
+
+	id = 2309
+
+	major = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		not = { has_country_flag = "right_wing_coup" }				# Only try if no coup was attempted before!
+		not = { has_country_flag = "romania_asks_to_join_axis" }	# Can't try Germany if already tried once!
+		exists = GER
+		GER = { faction = axis }
+		is_in_any_faction = no
+		is_subject = no
+		war = no
+		ideology_group = fascism				# In case Romania is Fascistic already.
+	}
+
+	title = "It ends here!"
+	desc = "We can't let ourselves be pushed around anymore! We need to find allies! Germany seems like the most obvious candidate."
+	picture = "romania_tank"
+
+	option = {
+		name = "Let's find new friends!"
+		GER = { country_event = 2310 }
+	}
+
+	option = {
+		name = "We don't really need them."
+	}
+}
+
+country_event = {
+
+	id = 2310
+
+	is_triggered_only = yes
+
+	title = "Romania wants to sign the Tri-Partite Pact"
+	desc = "Romania asked us to let them join our alliance against the Bolsheviks, whom they feel threatened by. What do we say?"
+	picture = "constitutional"
+
+	option = {
+		name = "Excellent!"
+		ai_chance = { factor = 100 }
+		relation = { who = ROM value = 30 }
+		ROM = { country_event = 2311 }
+	}
+	option = {
+		name = "We don't need them!"
+		ai_chance = { factor = 0 }
+		relation = { who = ROM value = -30 }
+		ROM = { country_event = 2312 }
+	}
+
+}
+
+country_event = {
+
+	id = 2311
+
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "Signing the Tri-Partite Pact"
+	desc = "We are signing the Tri-Partite Pact, thus joining the Axis in their war against the Bolsheviks! Let the world tremble!"
+	picture = "romania_tank"
+
+	option = {
+		name = "Excellent"
+		dissent = -5
+		national_unity = 5
+		join_faction = axis
+	}
+
+}
+
+country_event = {
+
+	id = 2312
+
+	is_triggered_only = yes
+
+	title = "Germany does not want us!"
+	desc = "Germany turned down our offer of joining the Tri-Partite Pact. We still stand alone..."
+	picture = "ruthenia_ceded"
+
+	option = {
+		name = "Most disturbing news"
+		dissent = 5
+		national_unity = -5
+	}
+}
+
+###########################
+# The Second Vienna Award #
+###########################
+
+# Decide which way to go
+
+country_event = {
+
+	id = 2315
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "Second Vienna Award"
+	desc = "Our Foreign Ministry has devised three separate plans for reclaiming Hungarian land from Romania: demand only the Hungarian populated border areas, demand all of Transylvania, or a compromise between the two."
+	picture = "vienna_diktat"
+	
+	option = {
+		name = "We only want what's ours by right."
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 0.0 faction = axis not = { ROM = { faction = axis } } }
+			modifier = { factor = 0.0 faction = axis ROM = { faction = axis } }
+		}
+		set_global_flag = "minor_hungarian_demand"
+		GER = { country_event = 2316 }
+	}
+	option = {
+		name = "Let's negotiate!"
+		ai_chance = {
+			factor = 80
+			modifier = { factor = 0.5 faction = axis }
+			modifier = { factor = 0.5 ROM = { faction = axis } }
+			modifier = { factor = 0.0 faction = axis ROM = { faction = axis } }
+		}
+		set_global_flag = "medium_hungarian_demand"
+		GER = { country_event = 2316 }
+	}
+	option = {
+		name = "We want it all!"
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 0.0 ROM = { faction = axis } }
+			modifier = { factor = 0.0 faction = axis ROM = { faction = axis } }
+		}
+		set_global_flag = "major_hungarian_demand"
+		GER = { country_event = 2316 }
+	}
+
+}
+
+#############################
+# Germany - Reaction events #
+#############################
+
+country_event = {
+
+	id = 2316
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME2301"
+	desc = "EVTDESC2301"
+	picture = "vienna_diktat"
+
+	option = {
+		name = "Suppport Hungary"
+		ai_chance = {
+			factor = 40
+			modifier = { factor = 0.1 has_global_flag = "major_hungarian_demand" }
+			modifier = { factor = 2.0 has_global_flag = "minor_hungarian_demand" }
+			modifier = { factor = 0.0 ROM = { faction = axis } }
+		}
+		relation = { who = ROM value = -25 }
+		relation = { who = HUN value = 25 }
+		set_global_flag = "germany_supports_hungary"
+		ROM = { country_event = 2317 }
+	}
+	option = {
+		name = "Stay neutral"
+		ai_chance = {
+			factor = 20
+		}
+		end_guarantee = HUN
+		HUN = { leave_alliance = GER leave_faction = axis }
+		end_guarantee = ROM
+		ROM = { leave_alliance = GER leave_faction = axis }
+		set_global_flag = "germany_stays_neutral"
+		ROM = { country_event = 2317 }
+	}
+	option = {
+		name = "Support Romania"
+		ai_chance = {
+			factor = 40
+			modifier = { factor = 2.0 has_global_flag = "major_hungarian_demand" }
+			modifier = { factor = 0.1 has_global_flag = "minor_hungarian_demand" }
+			modifier = { factor = 0.0 HUN = { faction = axis } }
+		}
+		relation = { who = ROM value = 25 }
+		relation = { who = HUN value = -25 }
+		set_global_flag = "germany_supports_romania"
+		ROM = { country_event = 2317 }
+	}
+}
+
+#############################
+# Romania - Reaction events #
+#############################
+
+country_event = {
+
+	id = 2317
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME2302"
+	desc = "EVTDESC2302"
+	picture = "vienna_diktat"
+
+	option = {
+		name = "Accept"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.1 ITA = { guarantee = ROM } }
+			modifier = { factor = 0.1 GER = { guarantee = ROM } }
+			modifier = { factor = 0.1 SOV = { guarantee = ROM } }
+			modifier = { factor = 0.1 has_global_flag = "germany_supports_romania" }
+			modifier = { factor = 1.25 has_global_flag = "minor_hungarian_demand" }
+			modifier = { factor = 0.25 has_global_flag = "major_hungarian_demand" }
+		}
+		# The extremists gain power
+		fascistic = { popularity = 5 organisation = 5 }
+		national_socialist = { popularity = 5 organisation = 10 }
+		paternal_autocrat = { popularity = 5 organisation = 15 }
+		country_event = 2308
+		country_event = 2309
+
+		set_country_flag = "vienna_diktat"
+		country_event = 2318
+		country_event = 2319
+		country_event = 2320
+		HUN = { country_event = 2321 }
+	}
+	option = {
+		name = "This is an outrage!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.1 has_global_flag = "germany_supports_hungary" }
+			modifier = { factor = 1.25 has_global_flag = "major_hungarian_demand" }
+			modifier = { factor = 0.25 has_global_flag = "minor_hungarian_demand" }
+		}
+		popularity = 10
+		organisation = 15
+		relation = { who = HUN value = -25 }
+		HUN = { country_event = 2322 }
+	}
+}
+
+country_event = {
+
+	id = 2318
+	
+	trigger = { has_global_flag = "minor_hungarian_demand" }
+	
+	is_triggered_only = yes
+	
+	title = "Seceding the border provinces"
+	desc = "After the Second Vienna Award, we had to secede our Hungarian populated border provinces to Hungary."
+	picture = "vienna_diktat"
+	
+	option = {
+		name = "Farewell!"
+		relation = { who = HUN value = -10 }
+		any_owned = {
+			limit = {
+				is_core = HUN
+				any_neighbor_province = { owned_by = HUN }
+			}
+			secede_province = HUN
+		}
+	}
+}
+
+country_event = {
+
+	id = 2319
+	
+	trigger = { has_global_flag = "medium_hungarian_demand" }
+	
+	is_triggered_only = yes
+	
+	title = "Seceding the border provinces"
+	desc = "After the Second Vienna Award, we had to secede Northern Transylvania to Hungary."
+	picture = "vienna_diktat"
+	
+	option = {
+		name = "Farewell!"
+		relation = { who = HUN value = -30 }
+		northern_transylvania_region = { secede_province = HUN }
+	}
+}
+
+country_event = {
+
+	id = 2320
+	
+	trigger = { has_global_flag = "major_hungarian_demand" }
+	
+	is_triggered_only = yes
+	
+	title = "Seceding the border provinces"
+	desc = "After the Second Vienna Award, we had to secede the whole of Transylvania to Hungary."
+	picture = "vienna_diktat"
+	
+	option = {
+		name = "Farewell!"
+		relation = { who = HUN value = -50 }
+		northern_transylvania_region = { secede_province = HUN }
+		southern_transylvania_region = { secede_province = HUN }
+	}
+}
+
+# Response to Hungary - Romania Accepts
+country_event = {
+
+	id = 2321
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME2303"
+	desc = "EVTDESC2303"
+	picture = "vienna_diktat"
+
+	option = {
+		name = "EVTOPTA2303"			# Great
+		dissent = -10
+	}
+}
+
+# Hungary decides what to do: Romania refused
+country_event = {
+
+	id = 2322
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME2304"
+	desc = "EVTDESC2304"
+	picture = "vienna_diktat"
+
+	option = {
+		name = "A shame..."
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.0 has_global_flag = "germany_supports_hungary" }
+		}
+		relation = { who = ROM value = -25 }
+		dissent = 5
+	}
+	option = {
+		name = "Force the issue!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.0 has_global_flag = "germany_supports_romania" }
+			modifier = { factor = 0.0 ITA = { guarantee = ROM } }
+			modifier = { factor = 0.0 GER = { guarantee = ROM } }
+			modifier = { factor = 0.0 SOV = { guarantee = ROM } }
+			modifier = { factor = 0.0 ITA = { alliance_with = ROM } }
+			modifier = { factor = 0.0 GER = { alliance_with = ROM } }
+			modifier = { factor = 0.0 SOV = { alliance_with = ROM } }
+		}
+		relation = { who = ROM value = -50 }
+		war = {
+			target = ROM
+			attacker_goal = { casus_belli = aquire_territory region = northern_transylvania_region }
+			attacker_goal = { casus_belli = aquire_territory region = southern_transylvania_region }
+		}
+		ROM = {
+			add_wargoal = {
+				target = HUN
+				war_goal = { casus_bellis = concede_defeat }
+			}
+		}
+	}
+}

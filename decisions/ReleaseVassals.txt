@@ -1,0 +1,2736 @@
+diplomatic_decisions = {
+
+	release_vassals_on = {
+		# Switch-decision to activate the rest
+		potential = {
+			not = { has_country_flag = "release_vassals" }
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			num_of_vassals = 1
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			set_country_flag = "release_vassals"
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	release_vassals_off = {
+		# Switch-decision to de-activate the rest
+		potential = {
+			has_country_flag = "release_vassals"
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = "release_vassals"
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	release_AFG = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			AFG = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			AFG = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_ALB = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			ALB = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			ALB = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_ARG = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			ARG = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			ARG = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_AST = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			AST = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			AST = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_AUS = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			AUS = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			AUS = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_BEL = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			BEL = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			BEL = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_BHU = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			BHU = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			BHU = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_BOL = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			BOL = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			BOL = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_BRA = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			BRA = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			BRA = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_BUL = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			BUL = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			BUL = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_CAN = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			CAN = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			CAN = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_CGX = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			CGX = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			CGX = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_CHC = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			CHC= {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			CHC = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_CHI = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			CHI = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			CHI = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_CHL= {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			CHL = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			CHL = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_COL = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			COL = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			COL = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_COS = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			COS = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			COS = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_CRO = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			CRO = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			CRO = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_CUB	= {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			CUB = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			CUB = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_CXB = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			CXB = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			CXB = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_CYN = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			CYN = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			CYN = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_CZE = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			CZE = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			CZE = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_CSX = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			CSX = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			CSX = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_DDR = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			DDR = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			DDR = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_DEN = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			DEN = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			DEN = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_DFR = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			DFR = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			DFR = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_DOM = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			DOM = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			DOM = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_ECU = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			ECU = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			ECU = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_EGY = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			EGY = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			EGY = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_ENG = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			ENG = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			ENG = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_EST = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			EST = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			EST = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_ETH = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			ETH = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			ETH = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_FIN = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			FIN = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			FIN = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_FRA = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			FRA = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			FRA = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_GER = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			GER = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			GER = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_GRE = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			GRE = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			GRE = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_GUA = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			GUA = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			GUA = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_GUY = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			GUY = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			GUY = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_HAI = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			HAI = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			HAI = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_HOL = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			HOL = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			HOL = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_HON = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			HON = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			HON = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_HUN = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			HUN = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			HUN = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_ICL = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			ICL = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			ICL = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_IDC = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			IDC = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			IDC = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_IND = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			IND = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			IND = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_INO = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			INO = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			INO = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_IRE = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			IRE = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			IRE = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_IRQ = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			IRQ = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			IRQ = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_ISR = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			ISR = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			ISR = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_ITA = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			ITA = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			ITA = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_JAP = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			JAP = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			JAP = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_JOR = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			JOR = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			JOR = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_KOR = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			KOR = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			KOR = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_LAT = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			LAT = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			LAT = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_LEB = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			LEB = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			LEB = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_LIB = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			LIB = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			LIB = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_LIT = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			LIT = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			LIT = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_LUX = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			LUX = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			LUX = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_MAN = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			MAN = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			MAN = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_MEN = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			MEN = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			MEN = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_MEX = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			MEX = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			MEX = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_MON = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			MON = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			MON = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_NEP = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			NEP = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			NEP = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_NIC = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			NIC = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			NIC = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_NOR = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			NOR = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			NOR = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_NZL = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			NZL = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			NZL = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_OMN = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			OMN = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			OMN = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_PAK = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			PAK = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			PAK = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_PAL = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			PAL = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			PAL = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_PAN = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			PNM = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			PNM = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_PAR = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			PAR = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			PAR = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_PER = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			PER = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			PER = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_PHI = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			PHL = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			PHL = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_POL = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			POL = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			POL = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_POR = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			POR = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			POR = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_PRK = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			PRK = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			PRK = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_PRU = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			PRU = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			PRU = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_ROM = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			ROM = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			ROM = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_SAF = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			SAF = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			SAF = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_SAL = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			SAL = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			SAL = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_SAU = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			SAU = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			SAU = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_SCH = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			SCH = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			SCH = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_SIA = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			SIA = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			SIA = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_SIK = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			SIK = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			SIK = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_SLO = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			SLO = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			SLO = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_SOV = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			SOV = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			SOV = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_SPA = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			SPA = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			SPA = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_SPR = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			SPR = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			SPR = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_SWE = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			SWE = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			SWE = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_SYR = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			SYR = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			SYR = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_TAN = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			TAN = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			TAN = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_TIB = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			TIB = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			TIB = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_TUR = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			TUR = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			TUR = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_URU = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			URU = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			URU = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_USA = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			USA = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			USA = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_VEN = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			VEN = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			VEN = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_VIC = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			VIC = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			VIC = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_YEM = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			YEM = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			YEM = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_YUG = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			YUG = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			YUG = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# New nations
+
+	release_CYP = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			CYP = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			CYP = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_MTA = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			MTA = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			MTA = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_KWT = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			KWT = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			KWT = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_CEY = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			CEY = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			CEY = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_MAD = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			MAD = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			MAD = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_MOR = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			MOR = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			MOR = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_ALG = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			ALG = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			ALG = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_LBY = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			LBY = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			LBY = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_TUN = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			TUN = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			TUN = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_JAM = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			JAM = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			JAM = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_BBU = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			BBU = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			BBU = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_MLY = {
+		potential = {
+			has_country_flag = "release_vassals"
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			MLY = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			MLY = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_BOS = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			BOS = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			BOS = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_MAC = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			MAC = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			MAC = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_MTN = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			MTN = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			MTN = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_SER = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			SER = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			SER = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_SLV = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			SLV = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			SLV = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_RUS = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			RUS = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			RUS = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_ARM = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			ARM = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			ARM = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_AZB = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			AZB = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			AZB = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_BLR = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			BLR = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			BLR = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_GEO = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			GEO = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			GEO = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_UKR = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			UKR = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			UKR = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_KAZ = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			KAZ = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			KAZ = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_KYG = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			KYG = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			KYG = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_TRK = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			TRK = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			TRK = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_TAJ = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			TAJ = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			TAJ = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_UZB = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			UZB = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			UZB = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_CAL = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			CAL = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			CAL = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_CSA = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			CSA = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			CSA = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	release_SIU = {
+		potential = {
+			ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			SIU = {
+				vassal_of = THIS
+				ideology_group = democracy not = { faction = axis } not = { faction = comintern }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			threat = { who = all value = -20 }
+			SIU = { country_event = 7201 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	end_of_the_puppet_regime = {
+		potential = {
+			is_subject = no
+			government_in_exile = no
+			or = {
+				government = installing_puppet
+				government = fascist_puppet
+				government = socialist_puppet
+				government = democratic_puppet
+				government = colonial_puppet
+				government = protectorate
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			country_event = 7203
+			country_event = 7204
+			country_event = 7205
+			country_event = 7206
+			country_event = 7207
+			country_event = 7208
+			country_event = 7209
+		}
+	}
+}

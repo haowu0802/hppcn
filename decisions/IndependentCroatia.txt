@@ -1,0 +1,197 @@
+#######################
+# Independent Croatia #
+#######################
+diplomatic_decisions = {
+
+
+	# Allow Germany to create puppets in the Baltic, once Yugoslavia is defeated
+
+	yugoslavian_partisans = {		# Yugoslavia is annexed
+		major = yes
+		potential = {
+			tag = GER
+			not = { exists = CRO }
+			not = { exists = SER }
+			not = { has_country_flag = yugoslavian_partisans }
+			or = {
+				not = { exists = YUG }
+				and = {
+					YUG = { government_in_exile = yes }
+					war_with = YUG
+				}
+			}
+		}
+		allow = {
+			or = {
+				controls = 3699 # Zagreb
+				controls = 3838 # Slavonski Brod
+				controls = 3766 # Karlovac
+				controls = 3912 # Beograd
+				controls = 3983 # Mionica
+			}
+		}
+		effect = {
+			country_event = 3501
+			set_country_flag = yugoslavian_partisans
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	partition_of_yugoslavia_ita = {
+		potential = {
+			OR = {
+				tag = GER
+				tag = HUN
+				tag = BUL
+				tag = GRE
+			}
+			faction = axis
+			exists = ITA
+			ITA = { faction = axis }
+			OR = {
+				any_owned_province = {
+					controlled_by = THIS
+					is_core = ITA
+					is_core = YUG
+				}
+				YUG = {
+					any_owned_province = {
+						controlled_by = THIS
+						is_core = ITA
+					}
+				}
+			}
+		}
+		allow = {
+			YUG = { government_in_exile = yes }
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					is_core = ITA
+					is_core = YUG
+				}
+				secede_province = ITA
+			}
+			YUG = {
+				any_owned = {
+					limit = {
+						controlled_by = THIS
+						is_core = ITA
+					}
+					change_controller = ITA
+				}
+			}
+			relation = { who = ITA value = 10 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	partition_of_yugoslavia_hun = {
+		potential = {
+			OR = {
+				tag = GER
+				tag = ITA
+				tag = ROM
+				tag = BUL
+			}
+			faction = axis
+			exists = HUN
+			HUN = { faction = axis }
+			OR = {
+				any_owned_province = {
+					controlled_by = THIS
+					is_core = HUN
+					is_core = YUG
+				}
+				YUG = {
+					any_owned_province = {
+						controlled_by = THIS
+						is_core = HUN
+					}
+				}
+			}
+		}
+		allow = {
+			YUG = { government_in_exile = yes }
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					is_core = HUN
+					is_core = YUG
+				}
+				secede_province = HUN
+			}
+			YUG = {
+				any_owned = {
+					limit = {
+						controlled_by = THIS
+						is_core = HUN
+					}
+					change_controller = HUN
+				}
+			}
+			relation = { who = HUN value = 10 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	partition_of_yugoslavia_bul = {
+		potential = {
+			OR = {
+				tag = GER
+				tag = ITA
+				tag = GRE
+				tag = HUN
+			}
+			faction = axis
+			exists = BUL
+			BUL = { faction = axis }
+			OR = {
+				any_owned_province = {
+					controlled_by = THIS
+					is_core = BUL
+					is_core = YUG
+				}
+				YUG = {
+					any_owned_province = {
+						controlled_by = THIS
+						is_core = BUL
+					}
+				}
+			}
+		}
+		allow = {
+			YUG = { government_in_exile = yes }
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					is_core = BUL
+					is_core = YUG
+				}
+				secede_province = BUL
+			}
+			YUG = {
+				any_owned = {
+					limit = {
+						controlled_by = THIS
+						is_core = BUL
+					}
+					change_controller = BUL
+				}
+			}
+			relation = { who = BUL value = 10 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

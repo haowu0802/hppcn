@@ -1,0 +1,89 @@
+####################
+# Bulgarian Claims #
+####################
+# Romania - Reaction Event
+country_event = {
+	
+	id = 2401
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2401"
+	desc = "EVTDESC2401"
+	picture = "romania"
+
+	option = {
+		name = "EVTOPTA2401"			# A necessary sacrifice
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.0
+				is_in_any_faction = yes
+			}
+		}
+		set_country_flag = constanta
+		any_owned = {
+			limit = { is_core = BUL }
+			secede_province = BUL
+		}
+							# The extremists gain power
+		fascistic = { popularity = 10 organisation = 5 }
+		national_socialist = { popularity = 10 organisation = 5 }
+		paternal_autocrat = { popularity = 10 organisation = 5 }
+		country_event = 2308
+		country_event = 2309
+
+		dissent = 5
+	}
+	option = {
+		name = "EVTOPTB2401"			# No country will humiliate us like this!
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100.0
+				is_in_any_faction = yes
+			}
+		}
+		relation = { who = ROM value = -100 }
+		dissent = -10
+		BUL = { country_event = 2402 }
+	}
+}
+
+# Bulgaria - Response from Romania
+country_event = {
+	
+	id = 2402
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2402"
+	desc = "EVTDESC2402"
+	picture = "romania_tank"
+
+	option = {
+		name = "EVTOPTA2402"			# What they will not give, we will take!
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.0
+				ROM = { is_in_any_faction = yes }
+			}
+		}
+		war = {
+			target = ROM
+			attacker_goal = { casus_belli = aquire_all_cores }
+		}
+	}
+	option = {
+		name = "EVTOPTB2402"			# Constanta does not warrant a Third Balkan War
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 4.0
+				ROM = { is_in_any_faction = yes }
+			}
+		}
+		dissent = 5
+	}
+}

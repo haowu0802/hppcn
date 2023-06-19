@@ -1,0 +1,98 @@
+theatre = {
+	name = "Royal New Zealand High Command"
+	location = 8070
+	regiment = { type = hq_brigade name = "Wellington HQ" historical_model = 0 }
+	
+	division = {
+		name = "2nd New Zealand Expeditionary Force"
+		location = 8070
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "4th Brigade" experience = 5 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "5th Brigade" experience = 5 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "6th Brigade" experience = 5 historical_model = 2 }
+	}
+	division = {
+		name = "Northern Military District"
+		location = 7990
+		is_reserve = yes
+		regiment = { type = cavalry_brigade name = "1st Mounted Rifles" experience = 5 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "1st Brigade" experience = 5 historical_model = 2 }
+	}
+	division = {
+		name = "Central Military District"
+		location = 8070
+		is_reserve = yes
+		regiment = { type = cavalry_brigade name = "2nd Mounted Rifles" experience = 5 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "2nd Brigade" experience = 5 historical_model = 2 }
+	}
+	division = {
+		name = "Southern Military District"
+		location = 10485
+		is_reserve = yes
+		regiment = { type = cavalry_brigade name = "3rd Mounted Rifles" experience = 5 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "3rd Brigade" experience = 5 historical_model = 2 }
+	}
+	navy = {
+		name = "HM New Zealand Navy"
+		base = 8070
+		location = 8070
+		ship = { type = transport_ship name = "1st Flotilla" historical_model = 0 }
+		ship = { type = transport_ship name = "2nd Flotilla" historical_model = 0 }
+	}
+}
+convoy_construction=
+{
+	country = NZL
+	id=
+	{
+		id=15802
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = NZL
+	id=
+	{
+		id=15803
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = NZL
+	id=
+	{
+		id=15804
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = NZL
+	id=
+	{
+		id=15805
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

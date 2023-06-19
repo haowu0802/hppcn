@@ -1,0 +1,136 @@
+#####################
+# Operation Wilfred #
+#####################
+
+country_event = {
+
+	id = 1351
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "The British ask for transit rights"
+	desc = "uk_asks_for_transit_rights_desc"
+	picture = "churchill"
+	
+	option = {
+		name = "Stay Neutral!"
+		ai_chance = {
+			factor = 90
+		}
+		popularity = 5
+		organisation = 10
+		dissent = -2
+		neutrality = 5
+		ENG = { country_event = 1352 }
+	}
+	option = {
+		name = "We can't avoid the inevitable..."
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 0.0 ideology_group = fascism }
+			modifier = { factor = 0.95 neutrality = 75 }
+			modifier = { factor = 0.90 neutrality = 80 }
+			modifier = { factor = 0.85 neutrality = 85 }
+			modifier = { factor = 0.80 neutrality = 90 }
+			modifier = { factor = 0.75 neutrality = 95 }
+		}
+		join_faction = allies
+	}
+
+}
+
+country_event = {
+
+	id = 1352
+	
+	is_triggered_only = yes
+	
+	title = "Operation Wilfred"
+	desc = "operation_wilfred_event_desc"
+	picture = "constitutional"
+	
+	option = {
+		name = "Mine them!"
+		ai_chance = { factor = 95 }
+		set_global_flag = "norwegian_coast_mined"
+		threat = { who = NOR value = 30 }
+		NOR = { country_event = 1353 }
+		popularity = -2
+	}
+	option = {
+		name = "But that would be rude..."
+		ai_chance = { factor = 5 }
+		organisation = -3
+	}
+
+}
+
+country_event = {
+
+	id = 1353
+
+	is_triggered_only = yes
+	
+	title = "A British attack!"
+	desc = "British ships have layed mines in our national waters! This is an outrage!"
+	picture = ""
+	
+	option = {
+		name = "Protest!"
+		ai_chance = {
+			factor = 90
+			modifier = { factor = 0.0 ideology_group = fascism }
+		}
+		popularity = 5
+		neutrality = 5
+		relation = { who = ENG value = -25 }
+	}
+	option = {
+		name = "Seek German help!"
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 0.0 not = { ideology_group = fascism } }
+		}
+		relation = { who = ENG value = -50 }
+		GER = { country_event = 1354 }
+	}
+
+}
+
+country_event = {
+
+	id = 1354
+	
+	is_triggered_only = yes
+	
+	title = "Norway seeks our help"
+	desc = "The United Kingdom started a military operation in Norwegian national waters. This is in direct violation of their neutrality, threatening our northern flank and our trade with Sweden!"
+	picture = ""
+	
+	option = {
+		name = "We will help our Nordic brethren!"
+		ai_chance = {
+			factor = 90
+			modifier = { factor = 0.0 not = { NOR = { ideology_group = fascism } } }
+		}
+		NOR = {
+			join_faction = axis
+			# They need to start the war, otherwise all the Axis would be involved...
+			war = {
+				target = ENG
+				attacker_goal = { casus_belli = concede_defeat }
+				defender_goal = { casus_belli = concede_defeat }
+			}
+		}
+	}
+	option = {
+		name = "Serves them well!"
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 0.0 NOR = { ideology_group = fascism } }
+		}
+	}
+
+}

@@ -1,0 +1,263 @@
+######################
+# The Undeclared War #
+######################
+diplomatic_decisions = {
+
+	# Destroyers for Bases Agreement
+	destroyers_for_bases_agreement = {
+		major = yes
+		potential = {
+			tag = USA
+			has_country_flag = "us_gear_up_for_war"
+			not = { has_country_flag = "the_destroyers_for_bases_agreement" }
+			exists = ENG
+			not = { ENG = { faction = axis } }
+			exists = GER
+			ENG = { war_with = GER }
+			or = {
+				exists = VIC
+				FRA = { government_in_exile = yes }
+				FRA = { not = { any_owned_province = { continent = europe controlled_by = FRA } } }
+				ENG = { any_owned_province = { continent = europe controller = { faction = axis } } }
+			}
+			war = no
+		}
+		allow = {
+			2250 = { controlled_by = ENG } # Don't send ships to enemy ports...
+			ideology_group = democracy
+			brigade_exist = "17th Destroyer Division"
+			NOT = {	brigade_in_combat = "17th Destroyer Division" }
+			brigade_exist = "18th Destroyer Division"
+			NOT = {	brigade_in_combat = "18th Destroyer Division" }
+			brigade_exist = "19th Destroyer Division"
+			NOT = {	brigade_in_combat = "19th Destroyer Division" }
+			brigade_exist = "20th Destroyer Division"
+			NOT = {	brigade_in_combat = "20th Destroyer Division" }
+			brigade_exist = "21st Destroyer Division"
+			NOT = {	brigade_in_combat = "21st Destroyer Division" }
+			brigade_exist = "22nd Destroyer Division"
+			NOT = {	brigade_in_combat = "22nd Destroyer Division" }
+			brigade_exist = "23rd Destroyer Division"
+			NOT = {	brigade_in_combat = "23rd Destroyer Division" }
+			brigade_exist = "24th Destroyer Division"
+			NOT = {	brigade_in_combat = "24th Destroyer Division" }
+			brigade_exist = "15th Destroyer Division"
+			NOT = {	brigade_in_combat = "15th Destroyer Division" }
+			brigade_exist = "16th Destroyer Division"
+			NOT = {	brigade_in_combat = "16th Destroyer Division" }
+		}
+		effect = {
+			set_country_flag = "the_destroyers_for_bases_agreement"
+			relation = { who = ENG value = 25 }
+			neutrality = -5
+			military_access = ENG
+			remove_brigade = "17th Destroyer Division"
+			remove_brigade = "18th Destroyer Division"
+			remove_brigade = "19th Destroyer Division"
+			remove_brigade = "20th Destroyer Division"
+			remove_brigade = "21st Destroyer Division"
+			remove_brigade = "22nd Destroyer Division"
+			remove_brigade = "23rd Destroyer Division"
+			remove_brigade = "24th Destroyer Division"
+			remove_brigade = "15th Destroyer Division"
+			remove_brigade = "16th Destroyer Division"
+			ENG = { country_event = 1601 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# The Lend-Lease Act
+	the_lend_lease_act = {
+		major = yes
+		potential = {
+			tag = USA
+			has_country_flag = "us_gear_up_for_war"
+			not = { has_country_flag = "lend_lease_act" }
+			exists = ENG
+			exists = GER
+			GER = { war_with = ENG }
+			OR = {
+				has_country_flag = "the_destroyers_for_bases_agreement"
+				ENG = {
+					not = { faction = axis }
+					lost_national = 0.15
+				}
+				SOV = { lost_national = 0.10 }
+				CHI = {
+					not = { faction = axis }
+					lost_national = 0.50
+				}
+			}
+		}
+		allow = {
+			ideology_group = democracy
+			war = no
+		}
+		effect = {
+			set_country_flag = "lend_lease_act"
+			relation = { who = ENG value = 15 }
+			relation = { who = FRA value = 15 }
+			relation = { who = CHI value = 15 }
+			relation = { who = SOV value = 10 }
+			relation = { who = GER value = -15 }
+			relation = { who = ITA value = -15 }
+			relation = { who = JAP value = -15 }
+
+			neutrality = -10
+
+			ENG = { country_event = 1603 }
+			CHI = { country_event = 1605 }
+			SOV = { country_event = 1606 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# The Flying Tigers
+	flying_tigers = {
+		major = yes
+		potential = {
+			tag = USA
+			has_country_flag = "lend_lease_act"
+			exists = CHI
+			exists = JAP
+			CHI = { war_with = JAP }
+			not = { year = 1942 }
+			or = {
+				not = { CHI = { faction = axis } }
+				ideology_group = fascism
+			}
+			not = { has_country_flag = "flying_tigers" }
+		}
+		allow = {
+			CHI = { controls = 9478 }
+			relation = { who = CHI value = 0 }
+			ideology_group = democracy
+			war = no
+		}
+		effect = {
+			set_country_flag = "flying_tigers"
+			neutrality = -3
+			CHI = { country_event = 1608 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# US Oil Embargo
+	us_oil_embargo = {
+		major = yes
+		potential = {
+			tag = USA
+			not = { has_global_flag = "us_oil_embargo" }
+			OR = {
+				and = {
+					not = { ideology_group = fascism }
+					JAP = { ideology_group = fascism }
+				}
+				and = {
+					not = { ideology_group = communism }
+					JAP = { ideology_group = communism }
+				}
+				and = {
+					not = { ideology_group = democracy }
+					JAP = { ideology_group = democracy }
+				}
+			}
+			not = { relation = { who = JAP value = 100 } }
+		}
+		allow = {
+			not = { relation = { who = JAP value = 100 } }
+			or = {
+				JAP = { has_country_flag = "japan_demands_bases_in_indochina" }	# Indochine is gone
+				exists = NJG													# China-Nanjing exists
+				and = {															# China is defeated
+					not = { exists = CHI }
+					JAP = { owns = 5494 }	# Nanjing
+				}
+				AND = {
+					JAP = { ideology_group = fascism }
+					war_with = GER
+				}
+				AND = {
+					JAP = { ideology_group = communism }
+					war_with = SOV 
+				}
+				AND = {
+					JAP = { ideology_group = democracy }
+					war_with = ENG 
+				}
+			}
+		}
+		effect = {
+			set_global_flag = "us_oil_embargo"
+			relation = { who = JAP value = -50 }
+			threat = { who = JAP value = 50 }
+			neutrality = -10
+			JAP = { country_event = 1619 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	went_too_far = {
+		major = yes
+		potential = {
+			tag = USA
+			neutrality = 50
+			not = { has_country_flag = "went_to_far" }
+		}
+		allow = {
+			war = no
+			is_in_any_faction = no
+			or = {
+				and = {
+					not = { base_neutrality = 90 }
+					or = {
+						national_unity = 85
+						organisation = 50
+					}
+				}
+				and = {
+					not = { base_neutrality = 80 }
+					or = {
+						national_unity = 80
+						organisation = 45
+					}
+				}
+				and = {
+					not = { base_neutrality = 70 }
+					or = {
+						national_unity = 75
+						organisation = 33
+					}
+				}
+				and = {
+					not = { base_neutrality = 60 }
+					or = {
+						national_unity = 70
+						organisation = 25
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "went_to_far"
+			country_event = 1631
+			country_event = 1632
+			country_event = 1633
+			country_event = 1634
+			country_event = 1635
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+

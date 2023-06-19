@@ -1,0 +1,1627 @@
+country_event = {
+	
+	id = 9000
+	
+	is_triggered_only = yes
+	
+	title = "Introduction to the mod"
+	desc = "hpp_introduction_0"
+	picture = "hpp"
+	
+	option = {
+		name = "Read more"
+		country_event = 9001
+	}
+	option = {
+		name = "Skip to the nation-specific part!"
+		GOD = { country_event = 9010 }
+	}
+	option = {
+		name = "I changed my mind, just leave me alone!"
+	}
+}
+
+country_event = {
+	
+	id = 9001
+	
+	is_triggered_only = yes
+	
+	title = "Maintenance"
+	desc = "hpp_introduction_1"
+	picture = "hpp"
+	
+	option = {
+		name = "Read more"
+		country_event = 9002
+	}
+	option = {
+		name = "Skip to the nation-specific part!"
+		GOD = { country_event = 9010 }
+	}
+	option = {
+		name = "I changed my mind, just leave me alone!"
+	}
+}
+
+country_event = {
+	
+	id = 9002
+	
+	is_triggered_only = yes
+	
+	title = "About laws in general"
+	desc = "hpp_introduction_2"
+	picture = "hpp"
+	
+	option = {
+		name = "Read more"
+		country_event = 9003
+	}
+	option = {
+		name = "Skip to the nation-specific part!"
+		GOD = { country_event = 9010 }
+	}
+	option = {
+		name = "I changed my mind, just leave me alone!"
+	}
+}
+
+country_event = {
+	
+	id = 9003
+	
+	is_triggered_only = yes
+	
+	title = "Leadership"
+	desc = "hpp_introduction_3"
+	picture = "hpp"
+	
+	option = {
+		name = "Read more"
+		country_event = 9004
+	}
+	option = {
+		name = "Skip to the nation-specific part!"
+		GOD = { country_event = 9010 }
+	}
+	option = {
+		name = "I changed my mind, just leave me alone!"
+	}
+}
+
+country_event = {
+	
+	id = 9004
+	
+	is_triggered_only = yes
+	
+	title = "Manpower and conscription"
+	desc = "hpp_introduction_4"
+	picture = "hpp"
+	
+	option = {
+		name = "Read more"
+		country_event = 9005
+	}
+	option = {
+		name = "Skip to the nation-specific part!"
+		GOD = { country_event = 9010 }
+	}
+	option = {
+		name = "I changed my mind, just leave me alone!"
+	}
+}
+
+country_event = {
+	
+	id = 9005
+	
+	is_triggered_only = yes
+	
+	title = "Land Doctrines"
+	desc = "hpp_introduction_5"
+	picture = "hpp"
+	
+	option = {
+		name = "Read more"
+		country_event = 9006
+	}
+	option = {
+		name = "Skip to the nation-specific part!"
+		GOD = { country_event = 9010 }
+	}
+	option = {
+		name = "I changed my mind, just leave me alone!"
+	}
+}
+
+country_event = {
+	
+	id = 9006
+	
+	is_triggered_only = yes
+	
+	title = "Naval technologies"
+	desc = "hpp_introduction_6"
+	picture = "hpp"
+	
+	option = {
+		name = "Read more"
+		country_event = 9007
+	}
+	option = {
+		name = "Skip to the nation-specific part!"
+		GOD = { country_event = 9010 }
+	}
+	option = {
+		name = "I changed my mind, just leave me alone!"
+	}
+}
+
+country_event = {
+	
+	id = 9007
+	
+	is_triggered_only = yes
+	
+	title = "Infantry and militia weapons"
+	desc = "hpp_introduction_7"
+	picture = "hpp"
+	
+	option = {
+		name = "Read more"
+		country_event = 9008
+	}
+	option = {
+		name = "Skip to the nation-specific part!"
+		GOD = { country_event = 9010 }
+	}
+	option = {
+		name = "I changed my mind, just leave me alone!"
+	}
+}
+
+country_event = {
+	
+	id = 9008
+	
+	is_triggered_only = yes
+	
+	title = "Resource and storage"
+	desc = "hpp_introduction_8"
+	picture = "hpp"
+	
+	option = {
+		name = "Read more"
+		country_event = 9009
+	}
+	option = {
+		name = "Skip to the nation-specific part!"
+		GOD = { country_event = 9010 }
+	}
+	option = {
+		name = "I changed my mind, just leave me alone!"
+	}
+}
+
+country_event = {
+	
+	id = 9009
+	
+	is_triggered_only = yes
+	
+	title = "Politics"
+	desc = "hpp_introduction_9"
+	picture = "hpp"
+	
+	option = {
+		name = "On to the country-specific part!"
+		GOD = { country_event = 9010 }
+	}
+	option = {
+		name = "I changed my mind, just leave me alone!"
+	}
+}
+
+country_event = {
+	
+	id = 9010
+	
+	is_triggered_only = yes
+	
+	title = "Introduction to $FROMCOUNTRY$"
+	desc = "The next event will introduce you to your choosen country."
+	picture = ""
+	
+	option = {
+		name = "Let's teach them a lesson!"
+		FROM = {
+			country_event = 9011 country_event = 9012 country_event = 9013 country_event = 9014 country_event = 9015
+			country_event = 9016 country_event = 9017 country_event = 9018 country_event = 9019 country_event = 9020
+			country_event = 9021 country_event = 9022 country_event = 9023 country_event = 9024 country_event = 9025
+			country_event = 9026 country_event = 9027 country_event = 9028 country_event = 9029 country_event = 9030
+			country_event = 9031 country_event = 9032 country_event = 9033 country_event = 9034 country_event = 9035
+			country_event = 9036 country_event = 9037 country_event = 9038 country_event = 9039 country_event = 9040
+			country_event = 9041 country_event = 9042 country_event = 9043 country_event = 9044 country_event = 9045
+			country_event = 9046 country_event = 9047 country_event = 9048 country_event = 9049 country_event = 9050
+			country_event = 9051 country_event = 9052 country_event = 9053 country_event = 9054 country_event = 9055
+			country_event = 9056 country_event = 9057 country_event = 9059 country_event = 9060
+			country_event = 9061 country_event = 9063 country_event = 9064 country_event = 9065
+			country_event = 9066 country_event = 9067 country_event = 9068 country_event = 9069 country_event = 9070
+			country_event = 9071 country_event = 9072 country_event = 9073 country_event = 9074 country_event = 9075
+			country_event = 9076 country_event = 9077 country_event = 9078 country_event = 9079 country_event = 9080
+			country_event = 9081 country_event = 9082 country_event = 9083
+		}
+	}
+}
+
+# Country-specific Introduction text
+
+country_event = {
+	
+	id = 9011
+	
+	trigger = {
+		tag = USA
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "USA_DESC"
+	picture = "usa_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9012
+	
+	trigger = {
+		tag = ENG
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "ENG_DESC"
+	picture = "eng_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9013
+	
+	trigger = {
+		tag = FRA
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "FRA_DESC"
+	picture = "fra_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9014
+	
+	trigger = {
+		tag = GER
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "GER_DESC"
+	picture = "ger_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9015
+	
+	trigger = {
+		tag = ITA
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "ITA_DESC"
+	picture = "ita_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9016
+	
+	trigger = {
+		tag = JAP
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "JAP_DESC"
+	picture = "JAP_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9017
+	
+	trigger = {
+		tag = SOV
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "SOV_DESC"
+	picture = "eng_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9018
+	
+	trigger = {
+		tag = CHI
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "CHI_DESC"
+	picture = "chi_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9019
+	
+	trigger = {
+		tag = POL
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "POL_DESC"
+	picture = "pol_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9020
+	
+	trigger = {
+		tag = SCH
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "SCH_DESC"
+	picture = "sch_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9021
+	
+	trigger = {
+		tag = CHC
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "CHC_DESC"
+	picture = "chc_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9022
+	
+	trigger = {
+		tag = PHL
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "PHI_DESC"
+	picture = "phi_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9023
+	
+	trigger = {
+		tag = MEX
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "MEX_DESC"
+	picture = "mex_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9024
+	
+	trigger = {
+		tag = BEL
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "BEL_DESC"
+	picture = "bel_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9025
+	
+	trigger = {
+		tag = OMN
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "OMN_DESC"
+	picture = "omn_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9026
+	
+	trigger = {
+		tag = SPR
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "SPR_DESC"
+	picture = "spr_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9027
+	
+	trigger = {
+		tag = POR
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "POR_DESC"
+	picture = "por_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9028
+	
+	trigger = {
+		tag = AUS
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "AUS_DESC"
+	picture = "aus_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9029
+	
+	trigger = {
+		tag = CZE
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "CZE_DESC"
+	picture = "cze_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9030
+	
+	trigger = {
+		tag = HUN
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "HUN_DESC"
+	picture = "hun_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9031
+	
+	trigger = {
+		tag = ROM
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "ROM_DESC"
+	picture = "rom_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9032
+	
+	trigger = {
+		tag = YUG
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "YUG_DESC"
+	picture = "yug_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9033
+	
+	trigger = {
+		tag = BUL
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "BUL_DESC"
+	picture = "bul_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9034
+	
+	trigger = {
+		tag = ALB
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "ALB_DESC"
+	picture = "alb_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9035
+	
+	trigger = {
+		tag = GRE
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "GRE_DESC"
+	picture = "gre_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9036
+	
+	trigger = {
+		tag = TUR
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "TUR_DESC"
+	picture = "tur_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9037
+	
+	trigger = {
+		tag = TAN
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "TAN_DESC"
+	picture = "tan_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9038
+	
+	trigger = {
+		tag = MAN
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "MAN_DESC"
+	picture = "man_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9039
+	
+	trigger = {
+		tag = CUB
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "CUB_DESC"
+	picture = "cub_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9040
+	
+	trigger = {
+		tag = BRA
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "BR_DESC"
+	picture = "bra_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9041
+	
+	trigger = {
+		tag = ARG
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "ARG_DESC"
+	picture = "arg_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9042
+	
+	trigger = {
+		tag = COL
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "COL_DESC"
+	picture = "col_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9043
+	
+	trigger = {
+		tag = VEN
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "VEN_DESC"
+	picture = "ven_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9044
+	
+	trigger = {
+		tag = PRU
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "PRU_DESC"
+	picture = "pru_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9045
+	
+	trigger = {
+		tag = ECU
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "ECU_DESC"
+	picture = "ecu_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9046
+	
+	trigger = {
+		tag = URU
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "URU_DESC"
+	picture = "uru_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9047
+	
+	trigger = {
+		tag = PAR
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "PAR_DESC"
+	picture = "par_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9048
+	
+	trigger = {
+		tag = SIA
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "SIA_DESC"
+	picture = "sia_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9049
+	
+	trigger = {
+		tag = LIB
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "LIB_DESC"
+	picture = "LIB_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9050
+	
+	trigger = {
+		tag = PER
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "PER_DESC"
+	picture = "per_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9051
+	
+	trigger = {
+		tag = BOL
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "BOL_DESC"
+	picture = "bol_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9052
+	
+	trigger = {
+		tag = CHL
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "CHL_DESC"
+	picture = "chl_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9053
+	
+	trigger = {
+		tag = CAN
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "CAN_DESC"
+	picture = "can_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9054
+	
+	trigger = {
+		tag = GUA
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "GUA_DESC"
+	picture = "gua_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9055
+	
+	trigger = {
+		tag = COS
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "COS_DESC"
+	picture = "cos_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9056
+	
+	trigger = {
+		tag = NIC
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "NIC_DESC"
+	picture = "nic_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9057
+	
+	trigger = {
+		tag = DOM
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "DOM_DESC"
+	picture = "dom_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9058
+	
+	trigger = {
+		tag = AST
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "AST_DESC"
+	picture = "ast_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9059
+	
+	trigger = {
+		tag = AFG
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "AFG_DESC"
+	picture = "afg_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9060
+	
+	trigger = {
+		tag = MON
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "MON_DESC"
+	picture = "mon_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9061
+	
+	trigger = {
+		tag = IRQ
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "IRQ_DESC"
+	picture = "irq_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9063
+	
+	trigger = {
+		tag = NZL
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "NZL_DESC"
+	picture = "nzl_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9064
+	
+	trigger = {
+		tag = SAL
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "SAL_DESC"
+	picture = "sal_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9065
+	
+	trigger = {
+		tag = HAI
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "HAI_DESC"
+	picture = "hai_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9066
+	
+	trigger = {
+		tag = HON
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "HON_DESC"
+	picture = "hon_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9067
+	
+	trigger = {
+		tag = PNM
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "PAN_DESC"
+	picture = "pan_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9068
+	
+	trigger = {
+		tag = SAF
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "SAF_DESC"
+	picture = "saf_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9069
+	
+	trigger = {
+		tag = NEP
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "NEP_DESC"
+	picture = "nep_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9070
+	
+	trigger = {
+		tag = BHU
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "BHU_DESC"
+	picture = "bhu_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9071
+	
+	trigger = {
+		tag = ETH
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "ETH_DESC"
+	picture = "eth_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9072
+	
+	trigger = {
+		tag = YEM
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "YEM_DESC"
+	picture = "yem_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9073
+	
+	trigger = {
+		tag = SAU
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "SAU_DESC"
+	picture = "sau_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9074
+	
+	trigger = {
+		tag = DEN
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "DEN_DESC"
+	picture = "den_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9075
+	
+	trigger = {
+		tag = SWE
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "SWE_DESC"
+	picture = "swe_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9076
+	
+	trigger = {
+		tag = NOR
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "NOR_DESC"
+	picture = "nor_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9077
+	
+	trigger = {
+		tag = FIN
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "FIN_DESC"
+	picture = "fin_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9078
+	
+	trigger = {
+		tag = LAT
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "LAT_DESC"
+	picture = "lat_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9079
+	
+	trigger = {
+		tag = LIT
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "LIT_DESC"
+	picture = "lit_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9080
+	
+	trigger = {
+		tag = EST
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "EST_DESC"
+	picture = "est_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9081
+	
+	trigger = {
+		tag = IRE
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "IRE_DESC"
+	picture = "ire_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9082
+	
+	trigger = {
+		tag = HOL
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "HOL_DESC"
+	picture = "hol_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}
+
+country_event = {
+	
+	id = 9083
+	
+	trigger = {
+		tag = LUX
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Historical background of $THISCOUNTRY$"
+	desc = "LUX_DESC"
+	picture = "lux_picture"
+	
+	option = {
+		name = "Fascinating"
+	}
+}

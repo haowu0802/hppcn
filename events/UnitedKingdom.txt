@@ -1,0 +1,368 @@
+###################################
+# Destruction of the French Fleet #
+###################################
+country_event = {
+	
+	id = 2601
+
+	is_triggered_only = yes
+	
+	title = "EVTNAME2601"
+	desc = "EVTDESC2601"
+	picture = "naval_reinforcements"
+
+	option = {
+		name = "EVTOPTA2601"			# How dare they!
+		relation = { who = ENG value = -10 }
+		add_country_modifier = {
+			name = "crippled_navy"
+			duration = -1
+		}
+	}
+}
+
+#############################
+# King George V passes away #
+#############################
+country_event = {
+	
+	id = 2602
+	
+	major = yes
+
+	trigger = {
+		tag = ENG
+		head_of_state = 1001 
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	
+	}
+	
+	title = "EVTNAME2602"
+	desc = "EVTDESC2602"
+	picture = "news_paper"
+
+	option = {
+		name = "EVTOPTA2602"
+		remove_minister = 1001
+		set_country_flag = "1001_removed"
+		head_of_state = 1031
+	}
+}
+
+#########################
+# Edward VIII abdicates #
+#########################
+country_event = {
+	
+	id = 2603
+	
+	major = yes
+
+	trigger = {
+		tag = ENG
+		head_of_state = 1031
+		head_of_government = 1002
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	title = "EVTNAME2603"
+	desc = "EVTDESC2603"
+	picture = "minister_resign"
+
+	option = {
+		name = "Abdicate."
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0.5
+				or = {
+					national_socialist = { organisation = 25 popularity = 33 }
+					fascistic = { organisation = 25 popularity = 33 }
+					paternal_autocrat = { organisation = 25 popularity = 33 }
+				}
+			}
+		}
+		head_of_state = 1000		# George VI
+		set_country_flag = "edward_viii_abdicates"
+	}
+	option = {
+		name = "Remain in power!"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 10.0
+				or = {
+					national_socialist = { organisation = 25 popularity = 33 }
+					fascistic = { organisation = 25 popularity = 33 }
+					paternal_autocrat = { organisation = 25 popularity = 33 }
+				}
+			}
+		}
+		remove_minister = 1002		# Baldwin resigns, as he couldn't solve the crisis
+		set_country_flag = "1002_removed"
+		head_of_government = 1160	# David Lloyd George, about the only supporter of the King I could find...
+		organisation = -10
+		popularity = -5
+		dissent = 10
+		paternal_autocrat = { organisation = 10 popularity = 5 }
+		fascistic = { organisation = 10 popularity = 5 }
+		national_socialist = { organisation = 10 popularity = 5 }
+		any_country = {
+			limit = { has_country_flag = "commonwealth_of_nations" }
+			country_event = 2604
+		}
+	}
+}
+
+country_event = {
+
+	id = 2604
+	
+	is_triggered_only = yes
+	
+	title = "EVTNAME2603"
+	desc = "In the end, King Edward VIII decided to remain in power. What should our course of action be?"
+	picture = "minister_resign"
+	
+	option = {
+		name = "We can't have someone like him as our King!"
+		ai_chance = {
+			factor = 99
+			modifier = { factor = 0.0 ideology_group = fascism }
+		}
+		clr_country_flag = "commonwealth_of_nations"
+		relation = { who = FROM value = -100 }
+		any_country = {
+			limit = { has_country_flag = "commonwealth_of_nations" }
+			leave_alliance = THIS
+			relation = { who = THIS value = -25 }
+		}
+	}
+	option = {
+		name = "We will support His Majesty!"
+		ai_chance = {
+			factor = 1
+			modifier = { factor = 100.0 not = { ideology_group = fascism } }
+		}
+		relation = { who = FROM value = 50 }
+		organisation = -5
+		popularity = -10
+		dissent = 5
+		paternal_autocrat = { organisation = 10 popularity = 5 }
+		fascistic = { organisation = 10 popularity = 5 }
+		national_socialist = { organisation = 10 popularity = 5 }
+	}
+
+}
+
+##################################
+# Independence Movement of India #
+##################################
+country_event = {
+	
+	id = 2605
+
+	trigger = {
+		tag = IND
+		exists = ENG
+		vassal_of = ENG
+		government_in_exile = no
+		ENG = { government_in_exile = no }
+		not = { has_country_flag = "great_war" }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 0.9 year = 1937 }
+		modifier = { factor = 0.9 year = 1938 }
+		modifier = { factor = 0.9 year = 1939 }
+		modifier = { factor = 0.9 year = 1940 }
+		modifier = { factor = 0.9 year = 1941 }
+		modifier = { factor = 0.9 year = 1942 }
+		modifier = { factor = 0.9 year = 1943 }
+		modifier = { factor = 0.9 year = 1944 }
+		modifier = { factor = 0.9 year = 1945 }
+		modifier = { factor = 0.9 year = 1946 }
+		
+		modifier = { factor = 1.2 popularity = 30 }
+		modifier = { factor = 1.2 popularity = 35 }
+		modifier = { factor = 1.2 popularity = 40 }
+		modifier = { factor = 1.2 popularity = 45 }
+		modifier = { factor = 1.2 popularity = 50 }
+		modifier = { factor = 1.2 popularity = 55 }
+		modifier = { factor = 1.2 popularity = 60 }
+		modifier = { factor = 1.2 popularity = 65 }
+		modifier = { factor = 1.2 popularity = 70 }
+		modifier = { factor = 1.2 popularity = 75 }
+		
+		modifier = { factor = 1.2 organisation = 40 }
+		modifier = { factor = 1.2 organisation = 45 }
+		modifier = { factor = 1.2 organisation = 50 }
+		modifier = { factor = 1.2 organisation = 55 }
+		modifier = { factor = 1.2 organisation = 60 }
+		modifier = { factor = 1.2 organisation = 65 }
+		modifier = { factor = 1.2 organisation = 70 }
+		modifier = { factor = 1.2 organisation = 75 }
+		
+		modifier = { factor = 0.9 dissent = 1 }
+		modifier = { factor = 0.9 dissent = 2 }
+		modifier = { factor = 0.9 dissent = 3 }
+		modifier = { factor = 0.9 dissent = 4 }
+		modifier = { factor = 0.9 dissent = 5 }
+		modifier = { factor = 0.1 dissent = 10 }
+	}
+	
+	title = "Independence movements of India"
+	desc = "india_independence_text"
+	picture = "gandhi"
+
+	option = {
+		name = "Consult with Britain!"
+		dissent = 3
+		ENG = { country_event = 2606 }
+	}	
+}
+
+country_event = {
+
+	id = 2606
+	
+	is_triggered_only = yes
+	
+	title = "Independence movements of India"
+	desc = "india_independence_text"
+	picture = "gandhi"
+
+	option = {
+		name = "Crush the rebellion!"
+		ai_chance = { factor = 75 }
+		dissent = 1
+		IND = {
+			organisation = 5
+			country_event = 2607
+		}
+	}
+	option = {
+		name = "Try to negotiate"
+		ai_chance = { factor = 25 }
+		dissent = 5
+		IND = {
+			popularity = 5
+			country_event = 2608
+		}
+	}
+	option = {
+		name = "Grant them independence"
+		ai_chance = { factor = 0 }
+		dissent = 25
+		IND = {
+			organisation = -20
+			popularity = -25
+			country_event = 7201
+		}
+	}
+}
+
+country_event = {
+
+	id = 2607
+	
+	is_triggered_only = yes
+	
+	title = "Crushing the rebellion"
+	desc = "We recieved word from Britain: we will put down the recent rebellions with force if necessary. The Empire must stay together!"
+	picture = "gandhi"
+	
+	option = {
+		name = "Oh, my..."
+		dissent = 5
+		random_owned = { limit = { industry = 1 } create_revolt = 1 add_province_modifier = { name = "independence_movement" duration = 360 } }
+		random_owned = { limit = { industry = 1 } create_revolt = 1 add_province_modifier = { name = "independence_movement" duration = 360 } }
+		random_owned = { limit = { industry = 1 } create_revolt = 1 add_province_modifier = { name = "independence_movement" duration = 360 } }
+		random_owned = { limit = { industry = 1 } create_revolt = 1 add_province_modifier = { name = "independence_movement" duration = 360 } }
+		random_owned = { limit = { industry = 1 } create_revolt = 1 add_province_modifier = { name = "independence_movement" duration = 360 } }
+	}
+}
+
+country_event = {
+
+	id = 2608
+	
+	is_triggered_only = yes
+	
+	title = "Negotiate with the protesters"
+	desc = "We recieved word from Britain: we will try and negotiate with the protesters."
+	picture = "gandhi"
+	
+	option = {
+		name = "Oh, my..."
+		random_list = {
+			33 = { popularity = 5 }
+			34 = { }
+			33 = { popularity = -5 }
+		}
+		random_owned = {
+			limit = { industry = 1 }
+			add_province_modifier = { name = "independence_movement" duration = 180 }
+			random_list = {
+				40 = { }
+				30 = { create_revolt = 1 }
+				20 = { create_revolt = 2 }
+				10 = { create_revolt = 3 }
+			}
+		}
+		random_owned = {
+			limit = { industry = 1 }
+			add_province_modifier = { name = "independence_movement" duration = 180 }
+			random_list = {
+				40 = { }
+				30 = { create_revolt = 1 }
+				20 = { create_revolt = 2 }
+				10 = { create_revolt = 3 }
+			}
+		}
+		random_owned = {
+			limit = { industry = 1 }
+			add_province_modifier = { name = "independence_movement" duration = 180 }
+			random_list = {
+				40 = { }
+				30 = { create_revolt = 1 }
+				20 = { create_revolt = 2 }
+				10 = { create_revolt = 3 }
+			}
+		}
+	}
+}
+
+# "Independence" of Burma
+
+country_event = {
+
+	id = 2609
+
+	is_triggered_only = yes
+	
+	title = "The Independence of Burma"
+	desc = "On 1 April 1937, Burma became a separately administered colony of Great Britain, gaining partial independence."
+	picture = "siam"
+	
+	option = {
+		name = "New friends!"
+		any_owned = {
+			limit = { is_core = BBU }
+			secede_province = BBU
+		}
+		BBU = {
+			join_faction = allies
+			government = colonial_puppet
+			load_oob = "BBU_1936.txt"
+		}
+	}
+}

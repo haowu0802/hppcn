@@ -1,0 +1,748 @@
+color = { 255  106  0 }
+graphical_culture = Us
+
+
+
+default_templates = {
+	USA_infantry = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+	}
+	USA_national_guard = {
+		militia_brigade
+		militia_brigade
+		militia_brigade
+		militia_brigade
+	}
+	USA_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
+	USA_armour_1940 = {
+		armor_brigade
+		light_armor_brigade
+		light_armor_brigade
+		motorized_brigade
+	}
+	USA_motorised = {
+		motorized_brigade
+		motorized_brigade
+		motorized_brigade
+	}
+	USA_armour_1942 = {
+		armor_brigade
+ 		armor_brigade
+		mechanized_brigade
+	}
+	USA_airborne = {
+		paratrooper_brigade
+		paratrooper_brigade
+		paratrooper_brigade
+	}
+	USA_marine = {
+		marine_brigade
+		marine_brigade
+		marine_brigade
+	}
+	USA_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+		bergsjaeger_brigade		
+	}	
+}
+
+unit_names = {
+	infantry_brigade = {
+		"1st 'Big Red One' Division" "2nd 'Indianhead' Division" "3rd 'Rock of the Marne' Division" "24th 'Victory' Division" "6th 'Sightseeing Sixth' Division" "5th 'Red Devils' Division" "33rd 'Golden Cross' NG Division" "4th 'Iron Horse' Division" "7th 'Bayonet' Division" "8th 'Pathfinder' Division" "9th 'Old Reliables' Division" 
+		"30th 'Old Hickory' NG Division" "41st 'Sunset' NG Division" "44th Infantry NG Division" "45th 'Thunderbird' NG Division" "27th 'New York Division' NG" "32nd 'Red Arrow' NG Division" "37th 'Buckeye' NG Division" "31st 'Dixie' NG Division" "36th 'Texas' NG Division" "35th 'Santa Fe' NG Division" "26th 'Yankee' NG Division" 
+		"38th 'Cyclone' NG Division" "29th 'Blue and Gray' NG Division" "34th 'Red Bull' NG Division" "28th 'Keystone' NG Division" "43rd 'Winged Victory' NG Division" "40th 'Sunshine' NG Division" "25th 'Tropic Lightning' Division" "77th 'Liberty Division'" "90th 'Tough Ombres' Division" "85th 'Custer Division'" "93rd Infantry (Colored) Division" 
+		"23rd 'Americal Division'" "76th 'Onaway Division'" "79th Infantry Division" "81st 'Wildcat' Division" "80th 'Blue Ridge Division'" "88th 'Blue Devils' Division" "89th 'Midwest Division'" "95th 'Victory' Division" "78th 'Lightning' Division" "83rd 'Thunderbolts' Division" "91st 'Pine Tree' Division" 
+		"96th 'Deadeye' Division" "94th 'Neuf Quatres' Division" "98th 'Iroquois Division'" "102nd 'Ozarks' Division" "104th 'Timberwolves' Division" "84th 'Railsplitters' Division" "92nd 'Buffalo Soldiers' Division" "99th 'Checkerboard' Division" "100th 'Century' Division" "103rd 'Cactus' Division" "86th 'Blackhawk' Division" 
+		"87th 'Golden Acorns' Division" "97th 'Trident' Division" "106th 'Golden Lions' Division" "66th 'Black Panthers' Division" "75th Infantry Division" "69th 'Fighting 69th' Division" "63rd 'Blood  Fire' Division‹" "70th 'Trailblazers' Division" "42nd 'Rainbow' Division" "71st 'Red Circle' Division" "65th 'Battle Axe' Division" 
+		"108th 'Griffons' Division" "39th 'Cougars' Division" "47rd Infantry Division" "46th 'Lightning Lancers' Division" "48th 'Lucky Devils' Division" "59th 'Hawks' Division" "110th 'Washington' Division" "115th 'Jefferson' Division" "116th 'Headhunters' Division" "125th 'Robert E. Lee' Division" "128th 'Brooklyn' Division" 
+		"131th 'Lincoln' Division" "164th 'U.S. Grant' Division" "165th 'Adams' Division" "166th 'Franklin' Division" "167th 'Lions' Division" "168th 'Lady Liberty' Division" "169th 'Madison' Division" "170th 'Bloodhounds' Division" "171st Infantry Division" "172nd 'Misfits' Division" "173rd 'Metropolitan' Division" 
+		"187th Infantry Division" "188th Infantry Division" "189th 'Black Diamonds' Division" "190th Infantry Division" "191st 'Sam Houston' Division" "192nd 'Banditos' Division" "193rd 'Fighting 193rd' Division" "194th 'Dust Devils' Division" "195th 'Blue Dragons' Division" "196th 'Volunteers' Division" "197th 'Hercules' Division" 
+		"198th Infantry Division" "199th 'Davy Crockett' Division" "200th 'Black Tigers' Division" "201st 'Iron Men' Division" "203rd 'Armadillos' Division" "204th 'Mountain Lions' Division" "205th 'Widowmakers' Division" "119th 'White Knights' Division" "130th 'Dirty Bastards' Division" "157th 'Titans' Division" "158th 'Green Clovers' Division" 
+		"159th 'Longhorn' Division" "160th 'Freedom!' Division" "161st 'Desert Scorpion' Division" "162nd 'Seminole' Division" "163rd Infantry Division" "174th 'Black Knights' Division" "175th 'Apache' Division" "176th Infantry Division" "177th 'Old Muddy' Division" "178th 'Black Widows' Division" "179th 'Moccasins' Division" 
+		"180th 'Centaur' Division" "181st 'Howling Coyotes' Division" "182nd Infantry Division" "183rd 'Harlem' Division" "184th Infantry Division" "185th 'Ragin' Cajuns' Division" "186th 'Bulldog' Division" "219th Infantry Division" "220th 'Chicago' Division" "221st 'Fighting Lumberjacks' Division" "222nd 'Explorers' Division" 
+		"223rd 'Mavericks' Division" "224th 'San Francisco' Division" "225th 'Falcons' Division" "226th 'Alamo' Division" "227th Infantry Division" "228th 'Buccaneers' Division" "229th 'Philadelphia' Division" "230th Infantry Division" "231st 'Cowboys' Division" "232nd 'Archers' Division" "233rd 'Daniel Boone' Division" 
+		"234th Infantry Division" "235th 'Mean Green' Division" "236th 'Revenge!' Division" "237th Infantry Division" "238th '1776' Division" "239th 'Detroit' Division" "240th 'Minuteman' Division" "241st 'Centurion' Division" "244th Infantry Division" "245th 'Enthusiasts' Division" "246th Infantry Division" 
+		"247th 'Rebel Yell' Division" "248th 'Jayhawkers' Division" "249th 'Swamp Fox' Division" "250th 'Blue Streaks' Division" "251st 'Bearcats' Division" "252nd 'Gorillas' Division" "253rd 'Big Green' Division" "254th 'Mustangs' Division" "255th Infantry Division" "256th 'Flying Dutchmen' Division" "257th 'Phoenix' Division" 
+		"258th 'Crusader' Division" "259th 'Boston' Division" "260th 'Viking' Division" "261st 'Braves' Division" "262nd Infantry Division" "263rd 'Yellow Jackets' Division" "264th Infantry Division" "265th 'Celtic' Division" "266th 'Spartans' Division" "267th 'Brocos' Division" "268th 'Infamous 268th' Division" 
+		"269th 'Forrester' Division" "270th 'Gamecocks' Division" "319th Infantry Division" "320th 'Vanguard' Division" "321st 'Pioneer' Division" "322nd 'Beavers' Division" "323rd Infantry Division" "324th 'Cavaliers' Division" "325th Infantry Division" "326th 'Cardinals' Division" "327th 'Polar Bears' Division" 
+		"328th 'Gettysburg' Division" "329th 'Vicksburg' Division" "330th 'Comet' Division" "331st Infantry Division" "332nd 'Mastadons' Division" "333rd 'Lucky Lindy' Division" "334th 'Golden Gophers' Division" "335th 'Fighting Irish' Division" "336th Infantry Division" "337th 'Red Hawks' Division" "338th Infantry Division" 
+		"339th 'Hilltoppers' Division" "340th 'Green Demons' Division" "341st 'Black Ravens' Division" "344th Infantry Division" "345th 'Wasps' Division" "346th 'Jackrabbits' Division" "347th 'Columbus' Division" "348th 'Giants' Division" "349th 'Highlanders' Division" "350th 'Lakers' Division" "351st 'Saints' Division" 
+		"352nd 'Roadrunner' Division" "353rd 'Maccabees' Division" "354th 'Green Gators' Division" "355th 'Seattle' Division" "356th 'Warhawks' Division" "357th 'Grey Owls' Division" "358th 'Chrimson' Division" "359th 'Trojans' Division" "360th 'Bloody Saber' Division" "361st 'Billy  Johnny' Division‹" "362nd 'Amerigo Vespucci' Division" 
+		"363rd 'Chocktaw' Division" "364th 'Ogre' Division" "365th 'Patriot' Division" "366th 'Storm' Division" "367th 'Hoosiers' Division" "368th 'Jaguars' Division" "369th 'Corsairs' Division" "370th Infantry Division" 
+	}
+	cavalry_brigade = {
+		"1st Cavalry 'The 1st Team' Div." "2nd Cavalry (Colored) Division" "3rd Cavalry Division" "21st Cavalry Division" "24th Cavalry Division" "56th Cavalry Division" "61st Cavalry Division" "62nd Cavalry Division" "63rd Cavalry Division" "64th Cavalry Division" "65th Cavalry Division" 
+		"66th Cavalry Division" "21st Cavalry Division" "22nd Cavalry Division" "23rd Cavalry Division" "25th Cavalry Division" "26th Cavalry Division" "27th Cavalry Division" "28th Cavalry Division" "29th Cavalry Division" "30th Cavalry Division" 
+	}
+	motorized_brigade = {
+		"1st 'Big Red One' Division" "2nd 'Indianhead' Division" "3rd 'Rock of the Marne' Division" "24th 'Victory' Division" "6th 'Sightseeing Sixth' Division" "5th 'Red Devils' Division" "33rd 'Golden Cross' NG Division" "4th 'Iron Horse' Division" "7th 'Bayonet' Division" "8th 'Pathfinder' Division" "9th 'Old Reliables' Division" 
+		"30th 'Old Hickory' NG Division" "41st 'Sunset' NG Division" "44th Infantry NG Division" "45th 'Thunderbird' NG Division" "27th 'New York Division' NG" "32nd 'Red Arrow' NG Division" "37th 'Buckeye' NG Division" "31st 'Dixie' NG Division" "36th 'Texas' NG Division" "35th 'Santa Fe' NG Division" "26th 'Yankee' NG Division" 
+		"38th 'Cyclone' NG Division" "29th 'Blue and Gray' NG Division" "34th 'Red Bull' NG Division" "28th 'Keystone' NG Division" "43rd 'Winged Victory' NG Division" "40th 'Sunshine' NG Division" "25th 'Tropic Lightning' Division" "77th 'Liberty Division'" "90th 'Tough Ombres' Division" "85th 'Custer Division'" "93rd Infantry (Colored) Division" 
+		"Americal Division" "76th 'Onaway Division'" "79th Infantry Division" "81st 'Wildcat' Division" "80th 'Blue Ridge Division'" "88th 'Blue Devils' Division" "89th 'Midwest Division'" "95th 'Victory' Division" "78th 'Lightning' Division" "83rd 'Thunderbolts' Division" "91st 'Pine Tree' Division" 
+		"96th 'Deadeye' Division" "94th 'Neuf Quatres' Division" "98th 'Iroquois Division'" "102nd 'Ozarks' Division" "104th 'Timberwolves' Division" "84th 'Railsplitters' Division" "92nd 'Buffalo Soldiers' Division" "99th 'Checkerboard' Division" "100th 'Century' Division" "103rd 'Cactus' Division" "86th 'Blackhawk' Division" 
+		"87th 'Golden Acorns' Division" "97th 'Trident' Division" "106th 'Golden Lions' Division" "66th 'Black Panthers' Division" "75th Infantry Division" "69th 'Fighting 69th' Division" "63rd 'Blood  Fire' Division‹" "70th 'Trailblazers' Division" "42nd 'Rainbow' Division" "71st 'Red Circle' Division" "65th 'Battle Axe' Division" 
+		"108th 'Griffons' Division" "39st 'Cougars' Division" "47rd Infantry Division" "22nd 'Rude Rams' Division" "46th 'Lightning Lancers' Division" "48th 'Lucky Devils' Division" "50th 'Black Widows' Division" "55th 'Swamp Foxes' Division" "59th 'Hawks' Division" "110th 'Washington' Division" "115th 'Jefferson' Division" 
+		"116th 'Headhunters' Division" "125th 'Robert E. Lee' Division" "128th 'Brooklyn' Division" "131th 'Lincoln' Division" "164th 'U.S. Grant' Division" "165th 'Adams' Division" "166th 'Franklin' Division" "167th 'Lions' Division" "168th 'Lady Liberty' Division" "169th 'Madison' Division" "170th 'Bloodhounds' Division" 
+		"171st Infantry Division" "172nd 'Misfits' Division" "173rd 'Metropolitan' Division" "187th Infantry Division" "188th Infantry Division" "189th 'Black Diamonds' Division" "190th Infantry Division" "191st 'Sam Houston' Division" "192nd 'Banditos' Division" "193rd 'Fighting 193rd' Division" "194th 'Dust Devils' Division" 
+		"195th 'Blue Dragons' Division" "196th 'Volunteers' Division" "197th 'Hercules' Division" "198th Infantry Division" "199th 'Davy Crockett' Division" "200th 'Black Tigers' Division" "201st 'Iron Men' Division" "203rd 'Armadillos' Division" "204th 'Mountain Lions' Division" "205th 'Widowmakers' Division" "119th 'White Knights' Division" 
+		"130th 'Dirty Bastards' Division" "157th 'Titans' Division" "158th 'Green Clovers' Division" "159th 'Longhorn' Division" "160th 'Freedom!' Division" "161st 'Desert Scorpion' Division" "162nd 'Seminole' Division" "163rd Infantry Division" "174th 'Black Knights' Division" "175th 'Apache' Division" "176th Infantry Division" 
+		"177th 'Old Muddy' Division" "178th Infantry Division" "179th 'Moccasins' Division" "180th 'Centaur' Division" "181st 'Howling Coyotes' Division" "182nd Infantry Division" "183rd 'Harlem' Division" "184th Infantry Division" "185th 'Ragin' Cajuns' Division" "186th 'Bulldog' Division" "219th Infantry Division" 
+		"220th 'Chicago' Division" "221st 'Fighting Lumberjacks' Division" "222nd 'Explorers' Division" "223rd 'Mavericks' Division" "224th 'San Francisco' Division" "225th 'Falcons' Division" "226th 'Alamo' Division" "227th Infantry Division" "228th 'Buccaneers' Division" "229th 'Philadelphia' Division" "230th Infantry Division" 
+		"231st 'Cowboys' Division" "232nd 'Archers' Division" "233rd 'Daniel Boone' Division" "234th Infantry Division" "235th 'Mean Green' Division" "236th 'Revenge!' Division" "237th Infantry Division" "238th '1776' Division" "239th 'Detroit' Division" "240th 'Minuteman' Division" "241st 'Centurion' Division" 
+		"244th Infantry Division" "245th 'Enthusiasts' Division" "246th Infantry Division" "247th 'Rebel Yell' Division" "248th 'Jayhawkers' Division" "249th Infantry Division" "250th 'Blue Streaks' Division" "251st 'Bearcats' Division" "252nd 'Gorillas' Division" "253rd 'Big Green' Division" "254th 'Mustangs' Division" 
+		"255th Infantry Division" "256th 'Flying Dutchmen' Division" "257th 'Phoenix' Division" "258th 'Crusader' Division" "259th 'Boston' Division" "260th 'Viking' Division" "261st 'Braves' Division" "262nd Infantry Division" "263rd 'Yellow Jackets' Division" "264th Infantry Division" "265th 'Celtic' Division" 
+		"266th 'Spartans' Division" "267th 'Brocos' Division" "268th 'Infamous 268th' Division" "269th 'Forrester' Division" "270th 'Gamecocks' Division" "319th Infantry Division" "320th 'Vanguard' Division" "321st 'Pioneer' Division" "322nd 'Beavers' Division" "323rd Infantry Division" "324th 'Cavaliers' Division" 
+		"325th Infantry Division" "326th 'Cardinals' Division" "327th 'Polar Bears' Division" "328th 'Gettysburg' Division" "329th 'Vicksburg' Division" "330th 'Comet' Division" "331st Infantry Division" "332nd 'Mastadons' Division" "333rd 'Lucky Lindy' Division" "334th 'Golden Gophers' Division" "335th 'Fighting Irish' Division" 
+		"336th Infantry Division" "337th 'Red Hawks' Division" "338th Infantry Division" "339th 'Hilltoppers' Division" "340th 'Green Demons' Division" "341st 'Black Ravens' Division" "344th Infantry Division" "345th 'Wasps' Division" "346th 'Jackrabbits' Division" "347th 'Columbus' Division" "348th 'Giants' Division" 
+		"349th 'Highlanders' Division" "350th 'Lakers' Division" "351st 'Saints' Division" "352nd 'Roadrunner' Division" "353rd 'Maccabees' Division" "354th 'Green Gators' Division" "355th 'Seattle' Division" "356th 'Warhawks' Division" "357th 'Grey Owls' Division" "358th 'Chrimson' Division" "359th 'Trojans' Division" 
+		"360th 'Bloody Saber' Division" "361st 'Billy  Johnny' Division‹" "362nd 'Amerigo Vespucci' Division" "363rd 'Chocktaw' Division" "364th 'Ogre' Division" "365th 'Patriot' Division" "366th 'Storm' Division" "367th 'Hoosiers' Division" "368th 'Jaguars' Division" "369th 'Corsairs' Division" "370th Infantry Division" 
+			}
+	mechanized_brigade = {
+		"1st 'Big Red One' Division" "2nd 'Indianhead' Division" "3rd 'Rock of the Marne' Division" "24th 'Victory' Division" "6th 'Sightseeing Sixth' Division" "5th 'Red Devils' Division" "33rd 'Golden Cross' NG Division" "4th 'Iron Horse' Division" "7th 'Bayonet!' Division" "8th 'Pathfinder' Division" "9th 'Old Reliables' Division" 
+		"30th 'Old Hickory' NG Division" "41st 'Sunset' NG Division" "44th Infantry NG Division" "45th 'Thunderbird' NG Division" "27th 'New York Division' NG" "32nd 'Red Arrow' NG Division" "37th 'Buckeye' NG Division" "31st 'Dixie' NG Division" "36th 'Texas' NG Division" "35th 'Santa Fe' NG Division" "26th 'Yankee' NG Division" 
+		"38th 'Cyclone' NG Division" "29th 'Blue and Gray' NG Division" "34th 'Red Bull' NG Division" "28th 'Keystone' NG Division" "43rd 'Winged Victory' NG Division" "40th 'Sunshine' NG Division" "25th 'Tropic Lightning' Division" "77th 'Liberty Division'" "90th 'Tough Ombres' Division" "85th 'Custer Division'" "93rd Infantry (Colored) Division" 
+		"Americal Division" "76th 'Onaway Division'" "79th Infantry Division" "81st 'Wildcat' Division" "80th 'Blue Ridge Division'" "88th 'Blue Devils' Division" "89th 'Midwest Division'" "95th 'Victory' Division" "78th 'Lightning' Division" "83rd 'Thunderbolts' Division" "91st 'Pine Tree' Division" 
+		"96th 'Deadeye' Division" "94th 'Neuf Quatres' Division" "98th 'Iroquois Division'" "102nd 'Ozarks' Division" "104th 'Timberwolves' Division" "84th 'Railsplitters' Division" "92nd 'Buffalo Soldiers' Division" "99th 'Checkerboard' Division" "100th 'Century' Division" "103rd 'Cactus' Division" "86th 'Blackhawk' Division" 
+		"87th 'Golden Acorns' Division" "97th 'Trident' Division" "106th 'Golden Lions' Division" "66th 'Black Panthers' Division" "75th Infantry Division" "69th 'Fighting 69th' Division" "63rd 'Blood  Fire' Division‹" "70th 'Trailblazers' Division" "42nd 'Rainbow' Division" "71st 'Red Circle' Division" "65th 'Battle Axe' Division" 
+		"108th 'Griffons' Division" "39st 'Cougars' Division" "47rd Infantry Division" "22nd 'Rude Rams' Division" "46th 'Lightning Lancers' Division" "48th 'Lucky Devils' Division" "50th 'Black Widows' Division" "55th 'Swamp Foxes' Division" "59th 'Hawks' Division" "110th 'Washington' Division" "115th 'Jefferson' Division" 
+		"116th 'Headhunters' Division" "125th 'Robert E. Lee' Division" "128th 'Brooklyn' Division" "131th 'Lincoln' Division" "164th 'U.S. Grant' Division" "165th 'Adams' Division" "166th 'Franklin' Division" "167th 'Lions' Division" "168th 'Lady Liberty' Division" "169th 'Madison' Division" "170th 'Bloodhounds' Division" 
+		"171st Infantry Division" "172nd 'Misfits' Division" "173rd 'Metropolitan' Division" "187th Infantry Division" "188th Infantry Division" "189th 'Black Diamonds' Division" "190th Infantry Division" "191st 'Sam Houston' Division" "192nd 'Banditos' Division" "193rd 'Fighting 193rd' Division" "194th 'Dust Devils' Division" 
+		"195th 'Blue Dragons' Division" "196th 'Volunteers' Division" "197th 'Hercules' Division" "198th Infantry Division" "199th 'Davy Crockett' Division" "200th 'Black Tigers' Division" "201st 'Iron Men' Division" "203rd 'Armadillos' Division" "204th 'Mountain Lions' Division" "205th 'Widowmakers' Division" "119th 'White Knights' Division" 
+		"130th 'Dirty Bastards' Division" "157th 'Titans' Division" "158th 'Green Clovers' Division" "159th 'Longhorn' Division" "160th 'Freedom!' Division" "161st 'Desert Scorpion' Division" "162nd 'Seminole' Division" "163rd Infantry Division" "174th 'Black Knights' Division" "175th 'Apache' Division" "176th Infantry Division" 
+		"177th 'Old Muddy' Division" "178th Infantry Division" "179th 'Moccasins' Division" "180th 'Centaur' Division" "181st 'Howling Coyotes' Division" "182nd Infantry Division" "183rd 'Harlem' Division" "184th Infantry Division" "185th 'Ragin' Cajuns' Division" "186th 'Bulldog' Division" "219th Infantry Division" 
+		"220th 'Chicago' Division" "221st 'Fighting Lumberjacks' Division" "222nd 'Explorers' Division" "223rd 'Mavericks' Division" "224th 'San Francisco' Division" "225th 'Falcons' Division" "226th 'Alamo' Division" "227th Infantry Division" "228th 'Buccaneers' Division" "229th 'Philadelphia' Division" "230th Infantry Division" 
+		"231st 'Cowboys' Division" "232nd 'Archers' Division" "233rd 'Daniel Boone' Division" "234th Infantry Division" "235th 'Mean Green' Division" "236th 'Revenge!' Division" "237th Infantry Division" "238th '1776' Division" "239th 'Detroit' Division" "240th 'Minuteman' Division" "241st 'Centurion' Division" 
+		"244th Infantry Division" "245th 'Enthusiasts' Division" "246th Infantry Division" "247th 'Rebel Yell' Division" "248th 'Jayhawkers' Division" "249th Infantry Division" "250th 'Blue Streaks' Division" "251st 'Bearcats' Division" "252nd 'Gorillas' Division" "253rd 'Big Green' Division" "254th 'Mustangs' Division" 
+		"255th Infantry Division" "256th 'Flying Dutchmen' Division" "257th 'Phoenix' Division" "258th 'Crusader' Division" "259th 'Boston' Division" "260th 'Viking' Division" "261st 'Braves' Division" "262nd Infantry Division" "263rd 'Yellow Jackets' Division" "264th Infantry Division" "265th 'Celtic' Division" 
+		"266th 'Spartans' Division" "267th 'Brocos' Division" "268th 'Infamous 268th' Division" "269th 'Forrester' Division" "270th 'Gamecocks' Division" "319th Infantry Division" "320th 'Vanguard' Division" "321st 'Pioneer' Division" "322nd 'Beavers' Division" "323rd Infantry Division" "324th 'Cavaliers' Division" 
+		"325th Infantry Division" "326th 'Cardinals' Division" "327th 'Polar Bears' Division" "328th 'Gettysburg' Division" "329th 'Vicksburg' Division" "330th 'Comet' Division" "331st Infantry Division" "332nd 'Mastadons' Division" "333rd 'Lucky Lindy' Division" "334th 'Golden Gophers' Division" "335th 'Fighting Irish' Division" 
+		"336th Infantry Division" "337th 'Red Hawks' Division" "338th Infantry Division" "339th 'Hilltoppers' Division" "340th 'Green Demons' Division" "341st 'Black Ravens' Division" "344th Infantry Division" "345th 'Wasps' Division" "346th 'Jackrabbits' Division" "347th 'Columbus' Division" "348th 'Giants' Division" 
+		"349th 'Highlanders' Division" "350th 'Lakers' Division" "351st 'Saints' Division" "352nd 'Roadrunner' Division" "353rd 'Maccabees' Division" "354th 'Green Gators' Division" "355th 'Seattle' Division" "356th 'Warhawks' Division" "357th 'Grey Owls' Division" "358th 'Chrimson' Division" "359th 'Trojans' Division" 
+		"360th 'Bloody Saber' Division" "361st 'Billy  Johnny' Division‹" "362nd 'Amerigo Vespucci' Division" "363rd 'Chocktaw' Division" "364th 'Ogre' Division" "365th 'Patriot' Division" "366th 'Storm' Division" "367th 'Hoosiers' Division" "368th 'Jaguars' Division" "369th 'Corsairs' Division" "370th Infantry Division" 
+			}
+	light_armor_brigade = {
+		"1st Armored 'Old Ironsides' Div." "2nd Armored 'Hell on Wheels' Div." "3rd Armored 'Spearhead' Div." "4th Armored 'Breakthrough' Div." "5th Armored 'Victory' Div." "6th Armored 'Super Sixth' Div." "7th Armored 'Lucky Seventh' Div." "8th Armored 'Thundering Herd' Div." "9th Armored 'Phantom' Div." "10th Armored 'Tiger' Div." "11th Armored 'Thunderbolt' Div." 
+		"12th Armored 'Hellcat' Div." "13th Armored 'Blackcat' Div." "14th Armored 'Liberator' Div." "15th Armored Division" "16th Armored Division" "20th Armored Division" "27th Armored 'Empire' Div." "30th Armored 'Dixie' Div." "40th Armored 'Grizzly' Div." "48th Armored 'Hurricane' Div." "49th Armored 'Lone Star' Div." 
+		"50rd Armored 'Jersey Blues' Div." "51st Armored 'Cavaliers' Div." "52nd Armored Division" "53rd Armored 'Jaguar' Div." "54th Armored 'Roadrunners' Div." "55th Armored 'Old Virginia' Div." "56th Armored 'Crusaders' Div." "57th Armored Division" "58th Armored 'Patriot' Div." "59th Armored 'Rough Riders' Div." "60th Armored Division" 
+		"61st Armored 'Stampede' Div." "62nd Armored Division" "63rd Armored 'Charge!' Div." "64th Armored 'Broncos' Div." "65th Armored 'Lynx' Div." "66th Armored 'Cheetah' Div." "67th Armored 'Forward!' Div." "68th Armored Division" "69th Armored 'Leopard' Div." "70th Armored Division" "71st Armored 'Lancers' Div." 
+		"72nd Armored Division" "73rd Armored Division" "74th Armored 'Brandy Station' Div." 
+	}
+	armor_brigade = {
+		"1st Armored 'Old Ironsides' Div." "2nd Armored 'Hell on Wheels' Div." "3rd Armored 'Spearhead' Div." "4th Armored 'Breakthrough' Div." "5th Armored 'Victory' Div." "6th Armored 'Super Sixth' Div." "7th Armored 'Lucky Seventh' Div." "8th Armored 'Thundering Herd' Div." "9th Armored 'Phantom' Div." "10th Armored 'Tiger' Div." "11th Armored 'Thunderbolt' Div." 
+		"12th Armored 'Hellcat' Div." "13th Armored 'Blackcat' Div." "14th Armored 'Liberator' Div." "15th Armored Division" "16th Armored Division" "20th Armored Division" "27th Armored 'Empire' Div." "30th Armored 'Dixie' Div." "40th Armored 'Grizzly' Div." "48th Armored 'Hurricane' Div." "49th Armored 'Lone Star' Div." 
+		"50rd Armored 'Jersey Blues' Div." "51st Armored 'Cavaliers' Div." "52nd Armored Division" "53rd Armored 'Jaguar' Div." "54th Armored 'Roadrunners' Div." "55th Armored 'Old Virginia' Div." "56th Armored 'Crusaders' Div." "57th Armored Division" "58th Armored 'Patriot' Div." "59th Armored 'Rough Riders' Div." "60th Armored Division" 
+		"61st Armored 'Stampede' Div." "62nd Armored Division" "63rd Armored 'Charge!' Div." "64th Armored 'Broncos' Div." "65th Armored 'Lynx' Div." "66th Armored 'Cheetah' Div." "67th Armored 'Forward!' Div." "68th Armored Division" "69th Armored 'Leopard' Div." "70th Armored Division" "71st Armored 'Lancers' Div." 
+		"72nd Armored Division" "73rd Armored Division" "74th Armored 'Brandy Station' Div." 
+	}
+	paratrooper_brigade = {
+		"82nd Airborne 'All American' Division" "101st US Air. 'Screaming Eagles Div." "11th US Airborne 'The Angels' Division" "13th US Airborne 'Black Cat' Division" "17th AB 'Thunder from Heaven' Div." "18th US Airborne Division" "21st US Airborne Division" "135th US Airborne Division" "9th US Airborne Division" "202nd US Airborne 'Flat-Hatters' Div." "271st US Airborne Division" 
+		"272nd US Airborne Division" "273th US Airborne Division" "274th US Airborne Division" "275th US Airborne Division" "276th US Airborne Division" "277th US Airborne Division" "278th US Airborne Division" 
+	}
+	marine_brigade = {
+		"1st US Marine 'The Old Breed' Div." "2nd US Marine 'Follow Me' Division" "3rd US Marine Division" "4th US Marine Division" "5th US Marine Division" "6th US Marine Division" "7th US Marine Division" "8th US Marine Division" "9th US Marine Division" "10th US Marine Division" "11th US Marine Division" 
+		"12th US Marine Division" "13th US Marine Division" "14th US Marine Division" "15th US Marine Division" "16th US Marine Division" "17th US Marine Division" "18th US Marine Division" "19th US Marine Division" "20th US Marine Division" "21st US Marine Division" "22nd US Marine Division" 
+		"23rd US Marine Division" "24th US Marine Division" "25th US Marine Division" "26th US Marine Division" "27th US Marine Division" "28th US Marine Division" "29th US Marine Division" "30th US Marine Division" "31st US Marine Division" "32nd US Marine Division" "33rd US Marine Division" 
+		"34th US Marine Division" "35th US Marine Division" "36th US Marine Division" "37th US Marine Division" "38th US Marine Division" "39th US Marine Division" "40th US Marine Division" "41st US Marine Division" "42nd US Marine Division" "43rd US Marine Division" "44th US Marine Division" 
+		"45th US Marine Division" "46th US Marine Division" "47th US Marine Division" "48th US Marine Division" "49th US Marine Division" 
+	}
+	bergsjaeger_brigade = {
+		"10th Mountain Division" "14th Mountain Division" "22nd Mountain Division" "50th Mountain Division" "55th Mountain Division" "12th 'Rocky Mountains' Division" "15th 'Appalachia' Division" "16th 'Smoky Mountains' Division" "19th 'Cold Mountain' Division" "20th 'Sierra Nevada' Division" "48th 'Stone Mountain' Division" 
+		"49th 'Granite' Division" "51st Mountain Division" "52nd 'Catskills' Division" "53rd Mountain Division" "54th 'Wasatch Mountains' Division" "56th 'Yellowstone' Division" "57th Mountain Division" "58th 'Yosemite' Division" "59th Mountain Division" "204th 'Mountain Lions' Division" "279th Mountain Division" 
+		"280th Mountain Division" "281st Mountain Division" "282nd Mountain Division" "283rd Mountain Division" "284th Mountain Division" "285th Mountain Division" "286th Mountain Division" "287th Mountain Division" "288th Mountain Division" 
+	}
+	garrison_brigade = {
+		"77th 'Liberty Division'" "90th 'Tough Ombres' Division" "85th 'Custer Division'" "93rd Infantry (Colored) Division" "23rd 'Americal Division'" "76th 'Onaway Division'" "79th Infantry Division" "81st 'Wildcat' Division" "80th 'Blue Ridge Division'" "88th 'Blue Devils' Division" "89th 'Midwest Division'" 
+		"95th 'Victory' Division" "78th 'Lightning' Division" "83rd 'Thunderbolts' Division" "91st 'Pine Tree' Division" "96th 'Deadeye' Division" "94th 'Neuf Quatres' Division" "98th 'Iroquois Division'" "102nd 'Ozarks' Division" "104th 'Timberwolves' Division" "84th 'Railsplitters' Division" "92nd 'Buffalo Soldiers' Division" 
+		"99th 'Checkerboard' Division" "100th 'Century' Division" "103rd 'Cactus' Division" "86th 'Blackhawk' Division" "87th 'Golden Acorns' Division" "97th 'Trident' Division" "106th 'Golden Lions' Division" "66th 'Black Panthers' Division" "75th Infantry Division" "69th 'Fighting 69th' Division" "63rd 'Blood  Fire' Division‹" 
+		"70th 'Trailblazers' Division" "42nd 'Rainbow' Division" "71st 'Red Circle' Division" "65th 'Battle Axe' Division" "108th 'Griffons' Division" "39th 'Cougars' Division" "47rd Infantry Division" "46th 'Lightning Lancers' Division" "48th 'Lucky Devils' Division" "59th 'Hawks' Division" "110th 'Washington' Division" 
+		"115th 'Jefferson' Division" "116th 'Headhunters' Division" "125th 'Robert E. Lee' Division" "128th 'Brooklyn' Division" "131th 'Lincoln' Division" "164th 'U.S. Grant' Division" "165th 'Adams' Division" "166th 'Franklin' Division" "167th 'Lions' Division" "168th 'Lady Liberty' Division" "169th 'Madison' Division" 
+		"170th 'Bloodhounds' Division" "171st Infantry Division" "172nd 'Misfits' Division" "173rd 'Metropolitan' Division" "187th Infantry Division" "188th Infantry Division" "189th 'Black Diamonds' Division" "190th Infantry Division" "191st 'Sam Houston' Division" "192nd 'Banditos' Division" "193rd 'Fighting 193rd' Division" 
+		"194th 'Dust Devils' Division" "195th 'Blue Dragons' Division" "196th 'Volunteers' Division" "197th 'Hercules' Division" "198th Infantry Division" "199th 'Davy Crockett' Division" "200th 'Black Tigers' Division" "201st 'Iron Men' Division" "203rd 'Armadillos' Division" "204th 'Mountain Lions' Division" "205th 'Widowmakers' Division" 
+		"119th 'White Knights' Division" "130th 'Dirty Bastards' Division" "157th 'Titans' Division" "158th 'Green Clovers' Division" "159th 'Longhorn' Division" "160th 'Freedom!' Division" "161st 'Desert Scorpion' Division" "162nd 'Seminole' Division" "163rd Infantry Division" "174th 'Black Knights' Division" "175th 'Apache' Division" 
+		"176th Infantry Division" "177th 'Old Muddy' Division" "178th 'Black Widows' Division" "179th 'Moccasins' Division" "180th 'Centaur' Division" "181st 'Howling Coyotes' Division" "182nd Infantry Division" "183rd 'Harlem' Division" "184th Infantry Division" "185th 'Ragin' Cajuns' Division" "186th 'Bulldog' Division" 
+		"219th Infantry Division" "220th 'Chicago' Division" "221st 'Fighting Lumberjacks' Division" "222nd 'Explorers' Division" "223rd 'Mavericks' Division" "224th 'San Francisco' Division" "225th 'Falcons' Division" "226th 'Alamo' Division" "227th Infantry Division" "228th 'Buccaneers' Division" "229th 'Philadelphia' Division" 
+		"230th Infantry Division" "231st 'Cowboys' Division" "232nd 'Archers' Division" "233rd 'Daniel Boone' Division" "234th Infantry Division" "235th 'Mean Green' Division" "236th 'Revenge!' Division" "237th Infantry Division" "238th '1776' Division" "239th 'Detroit' Division" "240th 'Minuteman' Division" 
+		"241st 'Centurion' Division" "244th Infantry Division" "245th 'Enthusiasts' Division" "246th Infantry Division" "247th 'Rebel Yell' Division" "248th 'Jayhawkers' Division" "249th 'Swamp Fox' Division" "250th 'Blue Streaks' Division" "251st 'Bearcats' Division" "252nd 'Gorillas' Division" "253rd 'Big Green' Division" 
+		"254th 'Mustangs' Division" "255th Infantry Division" "256th 'Flying Dutchmen' Division" "257th 'Phoenix' Division" "258th 'Crusader' Division" "259th 'Boston' Division" "260th 'Viking' Division" "261st 'Braves' Division" "262nd Infantry Division" "263rd 'Yellow Jackets' Division" "264th Infantry Division" 
+		"265th 'Celtic' Division" "266th 'Spartans' Division" "267th 'Brocos' Division" "268th 'Infamous 268th' Division" "269th 'Forrester' Division" "270th 'Gamecocks' Division" "319th Infantry Division" "320th 'Vanguard' Division" "321st 'Pioneer' Division" "322nd 'Beavers' Division" "323rd Infantry Division" 
+		"324th 'Cavaliers' Division" "325th Infantry Division" "326th 'Cardinals' Division" "327th 'Polar Bears' Division" "328th 'Gettysburg' Division" "329th 'Vicksburg' Division" "330th 'Comet' Division" "331st Infantry Division" "332nd 'Mastadons' Division" "333rd 'Lucky Lindy' Division" "334th 'Golden Gophers' Division" 
+		"335th 'Fighting Irish' Division" "336th Infantry Division" "337th 'Red Hawks' Division" "338th Infantry Division" "339th 'Hilltoppers' Division" "340th 'Green Demons' Division" "341st 'Black Ravens' Division" "344th Infantry Division" "345th 'Wasps' Division" "346th 'Jackrabbits' Division" "347th 'Columbus' Division" 
+		"348th 'Giants' Division" "349th 'Highlanders' Division" "350th 'Lakers' Division" "351st 'Saints' Division" "352nd 'Roadrunner' Division" "353rd 'Maccabees' Division" "354th 'Green Gators' Division" "355th 'Seattle' Division" "356th 'Warhawks' Division" "357th 'Grey Owls' Division" "358th 'Chrimson' Division" 
+		"359th 'Trojans' Division" "360th 'Bloody Saber' Division" "361st 'Billy  Johnny' Division‹" "362nd 'Amerigo Vespucci' Division" "363rd 'Chocktaw' Division" "364th 'Ogre' Division" "365th 'Patriot' Division" "366th 'Storm' Division" "367th 'Hoosiers' Division" "368th 'Jaguars' Division" "369th 'Corsairs' Division" 
+		"370th Infantry Division" 
+	}
+	hq_brigade = {
+		"1st Army" "2nd Army" "3rd Army" "4th Army" "5th Army" "6th Army" "7th Army" "8th Army" "9th Army" "10th Army" "15th Army" 
+		"1st Airborne Army" "6th Army Group" "12th Army Group" "15th Army Group" 
+	}
+	militia_brigade = {
+		"238th '1776' Division" "365th 'Patriot' Division" "183rd 'Harlem' Division" "160th 'Freedom!' Division" "240th 'Minuteman' Division" "128th 'Brooklyn' Division" "226th 'Alamo' Division" "239th 'Detroit' Division" "131th 'Lincoln' Division" "185th 'Ragin' Cajuns' Division" "168th 'Lady Liberty' Division" 
+		"248th 'Jayhawkers' Division" "229th 'Philadelphia' Division" "199th 'Davy Crockett' Division" "201st 'Iron Men' Division" "161st 'Desert Scorpion' Division" "162nd 'Seminole' Division" "175th 'Apache' Division" "177th 'Old Muddy' Division" "181st 'Howling Coyotes' Division" "220th 'Chicago' Division" "221st 'Fighting Lumberjacks' Div." 
+		"224th 'San Francisco' Division" "1st US Militia" "2nd US Militia" "3rd US Militia" "4th New York Militia" "5th California Marine" "6th Pennsylvania Militia" "7th Illinois Militia" "8th Ohio Militia" "9th Texas Militia" "10th Michigan Militia" 
+		"11th Massachusetts Militia" "12th Missouri Militia" "13th Indiana Militia" "14th Georgia Militia" "15th Wisconsin Militia" "16th Virginia Militia" "17th Tennessee Militia" "18th Alabama Militia" "19th Minnesota Militia" "20th Kentucky Militia" "21st Florida Militia" 
+		"22nd Louisiana Militia" "23rd Iowa Militia" "24th Washington Militia" "25th Maryland Militia" "26th Oklahoma Militia" "27th Mississippi Militia" "28th South Carolina Militia" "29th Connecticut Militia" "30th West Virginia Militia" "31st Arkansas Militia" "32nd Kansas Militia" 
+		"33rd North Carolina Militia" "34th New Jersey Militia" "35th Oregon Militia" "36th Nebraska Militia" "37th Colorado Militia" "38th US Militia (DC)" "39th Rhode Island Militia" "40th Arizona Militia" "41st Maine Militia" "42nd Utah Militia" "43rd New Mexico Militia" 
+		"44th South Dakota Militia" "45th North Dakota Militia" "46th Montana Militia" "47th Idaho Militia" "48th New Hampshire Militia" "59th Vermont Militia" "50th Wyoming Militia" "51st Delaware Militia" "52nd Nevada Militia" 
+	}
+	multi_role = {
+		"6th RCAF Fighter Wing" "7th RCAF Fighter Wing" "9th RCAF Fighter Wing" "10th RCAF Fighter Wing" "11th RCAF Fighter Wing" "62d RCAF Fighter Wing" "63d RCAF Fighter Wing" "64th RCAF Fighter Wing" "65th RCAF Fighter Wing" "66th RCAF Fighter Wing" "67th RCAF Fighter Wing" 
+		"70th RCAF Fighter Wing" "71st RCAF Fighter Wing" "84th RCAF Fighter Wing" "85th RCAF Fighter Wing" "86th RCAF Fighter Wing" "87th RCAF Fighter Wing" "100th RCAF Fighter Wing" "303nd RCAF Fighter Wing" "306th RCAF Fighter Wing" "312th RCAF Fighter Wing" "48th RCAF Fighter Wing" 
+		"301st RCAF Fighter Wing" "72nd RCAF Fighter Wing" "35th RCAF Fighter Wing" "355th RCAF Fighter Wing" "366th RCAF Fighter Wing" "388th RCAF Fighter Wing" "419th RCAF Fighter Wing" "442nd RCAF Fighter Wing" "482nd RCAF Fighter Wing" "926th RCAF Fighter Wing" "944th RCAF Fighter Wing" 
+		"948th RCAF Fighter Wing" "954th RCAF Fighter Wing" "964th RCAF Fighter Wing" "974th RCAF Fighter Wing" "984th RCAF Fighter Wing" "994th RCAF Fighter Wing" "456th RCAF Fighter Wing" "789th RCAF Fighter Wing" "278th RCAF Fighter Wing" "443rd RCAF Fighter Wing" "444th RCAF Fighter Wing" 
+		"445th RCAF Fighter Wing" "446th RCAF Fighter Wing" "447th RCAF Fighter Wing" "448th RCAF Fighter Wing" "449th RCAF Fighter Wing" "450th RCAF Fighter Wing" "451st RCAF Fighter Wing" "452d RCAF Fighter Wing" "453rd RCAF Fighter Wing" "454th RCAF Fighter Wing" "455th RCAF Fighter Wing" 
+		"457th RCAF Fighter Wing" "458th RCAF Fighter Wing" "459th RCAF Fighter Wing" "460th RCAF Fighter Wing" 
+	}
+	interceptor = {
+		"6th RCAF Fighter Wing" "7th RCAF Fighter Wing" "9th RCAF Fighter Wing" "10th RCAF Fighter Wing" "11th RCAF Fighter Wing" "62d RCAF Fighter Wing" "63d RCAF Fighter Wing" "64th RCAF Fighter Wing" "65th RCAF Fighter Wing" "66th RCAF Fighter Wing" "67th RCAF Fighter Wing" 
+		"70th RCAF Fighter Wing" "71st RCAF Fighter Wing" "84th RCAF Fighter Wing" "85th RCAF Fighter Wing" "86th RCAF Fighter Wing" "87th RCAF Fighter Wing" "100th RCAF Fighter Wing" "303nd RCAF Fighter Wing" "306th RCAF Fighter Wing" "312th RCAF Fighter Wing" "48th RCAF Fighter Wing" 
+		"301st RCAF Fighter Wing" "72nd RCAF Fighter Wing" "35th RCAF Fighter Wing" "355th RCAF Fighter Wing" "366th RCAF Fighter Wing" "388th RCAF Fighter Wing" "419th RCAF Fighter Wing" "442nd RCAF Fighter Wing" "482nd RCAF Fighter Wing" "926th RCAF Fighter Wing" "944th RCAF Fighter Wing" 
+		"948th RCAF Fighter Wing" "954th RCAF Fighter Wing" "964th RCAF Fighter Wing" "974th RCAF Fighter Wing" "984th RCAF Fighter Wing" "994th RCAF Fighter Wing" "456th RCAF Fighter Wing" "789th RCAF Fighter Wing" "278th RCAF Fighter Wing" "443rd RCAF Fighter Wing" "444th RCAF Fighter Wing" 
+		"445th RCAF Fighter Wing" "446th RCAF Fighter Wing" "447th RCAF Fighter Wing" "448th RCAF Fighter Wing" "449th RCAF Fighter Wing" "450th RCAF Fighter Wing" "451st RCAF Fighter Wing" "452d RCAF Fighter Wing" "453rd RCAF Fighter Wing" "454th RCAF Fighter Wing" "455th RCAF Fighter Wing" 
+		"457th RCAF Fighter Wing" "458th RCAF Fighter Wing" "459th RCAF Fighter Wing" "460th RCAF Fighter Wing" 
+	}
+	jet_int = {
+		"6th RCAF Fighter Wing" "7th RCAF Fighter Wing" "9th RCAF Fighter Wing" "10th RCAF Fighter Wing" "11th RCAF Fighter Wing" "62d RCAF Fighter Wing" "63d RCAF Fighter Wing" "64th RCAF Fighter Wing" "65th RCAF Fighter Wing" "66th RCAF Fighter Wing" "67th RCAF Fighter Wing" 
+		"70th RCAF Fighter Wing" "71st RCAF Fighter Wing" "84th RCAF Fighter Wing" "85th RCAF Fighter Wing" "86th RCAF Fighter Wing" "87th RCAF Fighter Wing" "100th RCAF Fighter Wing" "303nd RCAF Fighter Wing" "306th RCAF Fighter Wing" "312th RCAF Fighter Wing" "48th RCAF Fighter Wing" 
+		"301st RCAF Fighter Wing" "72nd RCAF Fighter Wing" "35th RCAF Fighter Wing" "355th RCAF Fighter Wing" "366th RCAF Fighter Wing" "388th RCAF Fighter Wing" "419th RCAF Fighter Wing" "442nd RCAF Fighter Wing" "482nd RCAF Fighter Wing" "926th RCAF Fighter Wing" "944th RCAF Fighter Wing" 
+		"948th RCAF Fighter Wing" "954th RCAF Fighter Wing" "964th RCAF Fighter Wing" "974th RCAF Fighter Wing" "984th RCAF Fighter Wing" "994th RCAF Fighter Wing" "456th RCAF Fighter Wing" "789th RCAF Fighter Wing" "278th RCAF Fighter Wing" "443rd RCAF Fighter Wing" "444th RCAF Fighter Wing" 
+		"445th RCAF Fighter Wing" "446th RCAF Fighter Wing" "447th RCAF Fighter Wing" "448th RCAF Fighter Wing" "449th RCAF Fighter Wing" "450th RCAF Fighter Wing" "451st RCAF Fighter Wing" "452d RCAF Fighter Wing" "453rd RCAF Fighter Wing" "454th RCAF Fighter Wing" "455th RCAF Fighter Wing" 
+		"457th RCAF Fighter Wing" "458th RCAF Fighter Wing" "459th RCAF Fighter Wing" "460th RCAF Fighter Wing" 
+	}
+	jet_mr = {
+		"6th RCAF Fighter Wing" "7th RCAF Fighter Wing" "9th RCAF Fighter Wing" "10th RCAF Fighter Wing" "11th RCAF Fighter Wing" "62d RCAF Fighter Wing" "63d RCAF Fighter Wing" "64th RCAF Fighter Wing" "65th RCAF Fighter Wing" "66th RCAF Fighter Wing" "67th RCAF Fighter Wing" 
+		"70th RCAF Fighter Wing" "71st RCAF Fighter Wing" "84th RCAF Fighter Wing" "85th RCAF Fighter Wing" "86th RCAF Fighter Wing" "87th RCAF Fighter Wing" "100th RCAF Fighter Wing" "303nd RCAF Fighter Wing" "306th RCAF Fighter Wing" "312th RCAF Fighter Wing" "48th RCAF Fighter Wing" 
+		"301st RCAF Fighter Wing" "72nd RCAF Fighter Wing" "35th RCAF Fighter Wing" "355th RCAF Fighter Wing" "366th RCAF Fighter Wing" "388th RCAF Fighter Wing" "419th RCAF Fighter Wing" "442nd RCAF Fighter Wing" "482nd RCAF Fighter Wing" "926th RCAF Fighter Wing" "944th RCAF Fighter Wing" 
+		"948th RCAF Fighter Wing" "954th RCAF Fighter Wing" "964th RCAF Fighter Wing" "974th RCAF Fighter Wing" "984th RCAF Fighter Wing" "994th RCAF Fighter Wing" "456th RCAF Fighter Wing" "789th RCAF Fighter Wing" "278th RCAF Fighter Wing" "443rd RCAF Fighter Wing" "444th RCAF Fighter Wing" 
+		"445th RCAF Fighter Wing" "446th RCAF Fighter Wing" "447th RCAF Fighter Wing" "448th RCAF Fighter Wing" "449th RCAF Fighter Wing" "450th RCAF Fighter Wing" "451st RCAF Fighter Wing" "452d RCAF Fighter Wing" "453rd RCAF Fighter Wing" "454th RCAF Fighter Wing" "455th RCAF Fighter Wing" 
+		"457th RCAF Fighter Wing" "458th RCAF Fighter Wing" "459th RCAF Fighter Wing" "460th RCAF Fighter Wing" 
+	}
+	strategic_bomber = {
+		"1st RCAF Strategic Bomb. Wing" "2nd RCAF Strategic Bomb. Wing" "13th RCAF Strategic Bomb. Wing" "4th RCAF Strategic Bomb. Wing" "5th RCAF Strategic Bomb. Wing" "12th RCAF Strategic Bomb. Wing" "47th RCAF Strategic Bomb. Wing" "57th RCAF Strategic Bomb. Wing" "14th RCAF Strategic Bomb. Wing" "20th RCAF Strategic Bomb. Wing" "98th RCAF Strategic Bomb. Wing" 
+		"21st RCAF Strategic Bomb. Wing" "40th RCAF Strategic Bomb. Wing" "41st RCAF Strategic Bomb. Wing" "42d RCAF Strategic Bomb. Wing" "45th RCAF Strategic Bomb. Wing" "99th RCAF Strategic Bomb. Wing" "49th RCAF Strategic Bomb. Wing" "55th RCAF Strategic Bomb. Wing" "58th RCAF Strategic Bomb. Wing" "92d RCAF Strategic Bomb. Wing" "93rd RCAF Strategic Bomb. Wing" 
+		"94th RCAF Strategic Bomb. Wing" "95th RCAF Strategic Bomb. Wing" "97th RCAF Strategic Bomb. Wing" "96th RCAF Strategic Bomb. Wing" "73rd RCAF Strategic Bomb. Wing" "304th RCAF Strategic Bomb. Wing" "305th RCAF Strategic Bomb. Wing" "307th RCAF Strategic Bomb. Wing" "308th RCAF Strategic Bomb. Wing" "309th RCAF Strategic Bomb. Wing" "310th RCAF Strategic Bomb. Wing" 
+		"313th RCAF Strategic Bomb. Wing" "314th RCAF Strategic Bomb. Wing" "315th RCAF Strategic Bomb. Wing" "316th RCAF Strategic Bomb. Wing" "15th RCAF Strategic Bomb. Wing" "16th RCAF Strategic Bomb. Wing" "17th RCAF Strategic Bomb. Wing" "317th RCAF Strategic Bomb. Wing" "318th RCAF Strategic Bomb. Wing" "319th RCAF Strategic Bomb. Wing" "320th RCAF Strategic Bomb. Wing" 
+		"321st RCAF Strategic Bomb. Wing" "323rd RCAF Strategic Bomb. Wing" "324th RCAF Strategic Bomb. Wing" "325th RCAF Strategic Bomb. Wing" "326th RCAF Strategic Bomb. Wing" "327th RCAF Strategic Bomb. Wing" "328th RCAF Strategic Bomb. Wing" "329th RCAF Strategic Bomb. Wing" "330th RCAF Strategic Bomb. Wing" "331st RCAF Strategic Bomb. Wing" "332nd RCAF Strategic Bomb. Wing" 
+		"333rd RCAF Strategic Bomb. Wing" "334th RCAF Strategic Bomb. Wing" "335th RCAF Strategic Bomb. Wing" "336th RCAF Strategic Bomb. Wing" "337th RCAF Strategic Bomb. Wing" "338th RCAF Strategic Bomb. Wing" "339th RCAF Strategic Bomb. Wing" "340th RCAF Strategic Bomb. Wing" "417th RCAF Strategic Bomb. Wing" "418th RCAF Strategic Bomb. Wing" "419th RCAF Strategic Bomb. Wing" 
+		"420th RCAF Strategic Bomb. Wing" "421st RCAF Strategic Bomb. Wing" "423rd RCAF Strategic Bomb. Wing" "424th RCAF Strategic Bomb. Wing" "425th RCAF Strategic Bomb. Wing" "426th RCAF Strategic Bomb. Wing" "427th RCAF Strategic Bomb. Wing" "428th RCAF Strategic Bomb. Wing" "429th RCAF Strategic Bomb. Wing" "430th RCAF Strategic Bomb. Wing" "431st RCAF Strategic Bomb. Wing" 
+		"432d RCAF Strategic Bomb. Wing" "433rd RCAF Strategic Bomb. Wing" "434th RCAF Strategic Bomb. Wing" "435th RCAF Strategic Bomb. Wing" "436th RCAF Strategic Bomb. Wing" "437th RCAF Strategic Bomb. Wing" "438th RCAF Strategic Bomb. Wing" "439th RCAF Strategic Bomb. Wing" "440th RCAF Strategic Bomb. Wing" 
+	}
+	tactical_bomber = {
+		"1st RCAF Tactical Bomb. Wing" "2nd RCAF Tactical Bomb. Wing" "13th RCAF Tactical Bomb. Wing" "4th RCAF Tactical Bomb. Wing" "5th RCAF Tactical Bomb. Wing" "12th RCAF Tactical Bomb. Wing" "47th RCAF Tactical Bomb. Wing" "57th RCAF Tactical Bomb. Wing" "14th RCAF Tactical Bomb. Wing" "20th RCAF Tactical Bomb. Wing" "98th RCAF Tactical Bomb. Wing" 
+		"21st RCAF Tactical Bomb. Wing" "40th RCAF Tactical Bomb. Wing" "41st RCAF Tactical Bomb. Wing" "42d RCAF Tactical Bomb. Wing" "45th RCAF Tactical Bomb. Wing" "99th RCAF Tactical Bomb. Wing" "49th RCAF Tactical Bomb. Wing" "55th RCAF Tactical Bomb. Wing" "58th RCAF Tactical Bomb. Wing" "92d RCAF Tactical Bomb. Wing" "93rd RCAF Tactical Bomb. Wing" 
+		"94th RCAF Tactical Bomb. Wing" "95th RCAF Tactical Bomb. Wing" "97th RCAF Tactical Bomb. Wing" "96th RCAF Tactical Bomb. Wing" "73rd RCAF Tactical Bomb. Wing" "304th RCAF Tactical Bomb. Wing" "305th RCAF Tactical Bomb. Wing" "307th RCAF Tactical Bomb. Wing" "308th RCAF Tactical Bomb. Wing" "309th RCAF Tactical Bomb. Wing" "310th RCAF Tactical Bomb. Wing" 
+		"313th RCAF Tactical Bomb. Wing" "314th RCAF Tactical Bomb. Wing" "315th RCAF Tactical Bomb. Wing" "316th RCAF Tactical Bomb. Wing" "15th RCAF Tactical Bomb. Wing" "16th RCAF Tactical Bomb. Wing" "17th RCAF Tactical Bomb. Wing" "317th RCAF Tactical Bomb. Wing" "318th RCAF Tactical Bomb. Wing" "319th RCAF Tactical Bomb. Wing" "320th RCAF Tactical Bomb. Wing" 
+		"321st RCAF Tactical Bomb. Wing" "323rd RCAF Tactical Bomb. Wing" "324th RCAF Tactical Bomb. Wing" "325th RCAF Tactical Bomb. Wing" "326th RCAF Tactical Bomb. Wing" "327th RCAF Tactical Bomb. Wing" "328th RCAF Tactical Bomb. Wing" "329th RCAF Tactical Bomb. Wing" "330th RCAF Tactical Bomb. Wing" "331st RCAF Tactical Bomb. Wing" "332nd RCAF Tactical Bomb. Wing" 
+		"333rd RCAF Tactical Bomb. Wing" "334th RCAF Tactical Bomb. Wing" "335th RCAF Tactical Bomb. Wing" "336th RCAF Tactical Bomb. Wing" "337th RCAF Tactical Bomb. Wing" "338th RCAF Tactical Bomb. Wing" "339th RCAF Tactical Bomb. Wing" "340th RCAF Tactical Bomb. Wing" "417th RCAF Tactical Bomb. Wing" "418th RCAF Tactical Bomb. Wing" "419th RCAF Tactical Bomb. Wing" 
+		"420th RCAF Tactical Bomb. Wing" "421st RCAF Tactical Bomb. Wing" "423rd RCAF Tactical Bomb. Wing" "424th RCAF Tactical Bomb. Wing" "425th RCAF Tactical Bomb. Wing" "426th RCAF Tactical Bomb. Wing" "427th RCAF Tactical Bomb. Wing" "428th RCAF Tactical Bomb. Wing" "429th RCAF Tactical Bomb. Wing" "430th RCAF Tactical Bomb. Wing" "431st RCAF Tactical Bomb. Wing" 
+		"432d RCAF Tactical Bomb. Wing" "433rd RCAF Tactical Bomb. Wing" "434th RCAF Tactical Bomb. Wing" "435th RCAF Tactical Bomb. Wing" "436th RCAF Tactical Bomb. Wing" "437th RCAF Tactical Bomb. Wing" "438th RCAF Tactical Bomb. Wing" "439th RCAF Tactical Bomb. Wing" "440th RCAF Tactical Bomb. Wing" 
+	}
+	jet_bomber = {
+		"1st RCAF Tactical Bomb. Wing" "2nd RCAF Tactical Bomb. Wing" "13th RCAF Tactical Bomb. Wing" "4th RCAF Tactical Bomb. Wing" "5th RCAF Tactical Bomb. Wing" "12th RCAF Tactical Bomb. Wing" "47th RCAF Tactical Bomb. Wing" "57th RCAF Tactical Bomb. Wing" "14th RCAF Tactical Bomb. Wing" "20th RCAF Tactical Bomb. Wing" "98th RCAF Tactical Bomb. Wing" 
+		"21st RCAF Tactical Bomb. Wing" "40th RCAF Tactical Bomb. Wing" "41st RCAF Tactical Bomb. Wing" "42d RCAF Tactical Bomb. Wing" "45th RCAF Tactical Bomb. Wing" "99th RCAF Tactical Bomb. Wing" "49th RCAF Tactical Bomb. Wing" "55th RCAF Tactical Bomb. Wing" "58th RCAF Tactical Bomb. Wing" "92d RCAF Tactical Bomb. Wing" "93rd RCAF Tactical Bomb. Wing" 
+		"94th RCAF Tactical Bomb. Wing" "95th RCAF Tactical Bomb. Wing" "97th RCAF Tactical Bomb. Wing" "96th RCAF Tactical Bomb. Wing" "73rd RCAF Tactical Bomb. Wing" "304th RCAF Tactical Bomb. Wing" "305th RCAF Tactical Bomb. Wing" "307th RCAF Tactical Bomb. Wing" "308th RCAF Tactical Bomb. Wing" "309th RCAF Tactical Bomb. Wing" "310th RCAF Tactical Bomb. Wing" 
+		"313th RCAF Tactical Bomb. Wing" "314th RCAF Tactical Bomb. Wing" "315th RCAF Tactical Bomb. Wing" "316th RCAF Tactical Bomb. Wing" "15th RCAF Tactical Bomb. Wing" "16th RCAF Tactical Bomb. Wing" "17th RCAF Tactical Bomb. Wing" "317th RCAF Tactical Bomb. Wing" "318th RCAF Tactical Bomb. Wing" "319th RCAF Tactical Bomb. Wing" "320th RCAF Tactical Bomb. Wing" 
+		"321st RCAF Tactical Bomb. Wing" "323rd RCAF Tactical Bomb. Wing" "324th RCAF Tactical Bomb. Wing" "325th RCAF Tactical Bomb. Wing" "326th RCAF Tactical Bomb. Wing" "327th RCAF Tactical Bomb. Wing" "328th RCAF Tactical Bomb. Wing" "329th RCAF Tactical Bomb. Wing" "330th RCAF Tactical Bomb. Wing" "331st RCAF Tactical Bomb. Wing" "332nd RCAF Tactical Bomb. Wing" 
+		"333rd RCAF Tactical Bomb. Wing" "334th RCAF Tactical Bomb. Wing" "335th RCAF Tactical Bomb. Wing" "336th RCAF Tactical Bomb. Wing" "337th RCAF Tactical Bomb. Wing" "338th RCAF Tactical Bomb. Wing" "339th RCAF Tactical Bomb. Wing" "340th RCAF Tactical Bomb. Wing" "417th RCAF Tactical Bomb. Wing" "418th RCAF Tactical Bomb. Wing" "419th RCAF Tactical Bomb. Wing" 
+		"420th RCAF Tactical Bomb. Wing" "421st RCAF Tactical Bomb. Wing" "423rd RCAF Tactical Bomb. Wing" "424th RCAF Tactical Bomb. Wing" "425th RCAF Tactical Bomb. Wing" "426th RCAF Tactical Bomb. Wing" "427th RCAF Tactical Bomb. Wing" "428th RCAF Tactical Bomb. Wing" "429th RCAF Tactical Bomb. Wing" "430th RCAF Tactical Bomb. Wing" "431st RCAF Tactical Bomb. Wing" 
+		"432d RCAF Tactical Bomb. Wing" "433rd RCAF Tactical Bomb. Wing" "434th RCAF Tactical Bomb. Wing" "435th RCAF Tactical Bomb. Wing" "436th RCAF Tactical Bomb. Wing" "437th RCAF Tactical Bomb. Wing" "438th RCAF Tactical Bomb. Wing" "439th RCAF Tactical Bomb. Wing" "440th RCAF Tactical Bomb. Wing" 
+	}
+	naval_bomber = {
+		"USN Patrol Bombing Wing 1" "USN Patrol Bombing Wing 2" "1st USMC Bomb Wing" "USN Patrol Bombing Wing 3" "2nd USMC Bomb Wing" "USN Patrol Bombing Wing 5" "USN Patrol Bombing Wing 7" "3rd USMC Bomb Wing" "4th USMC Bomb Wing" "USN Patrol Bombing Wing 9" "USN Patrol Bombing Wing 8" 
+		"USN Patrol Bombing Wing 11" "5th USMC Bomb Wing" "USN Patrol Bombing Wing 17" "USN Patrol Bombing Wing 14" "USN Patrol Bombing Wing 15" "6th USMC Bomb Wing" "USN Patrol Bombing Wing 20" "USN Patrol Bombing Wing 30" "USN Patrol Bombing Wing 31" "7th USMC Bomb Wing" "USN Patrol Bombing Wing 32" 
+		"USN Patrol Bombing Wing 33" "USN Patrol Bombing Wing 34" "USN Patrol Bombing Wing 35" "8th USMC Bomb Wing" "USN Patrol Bombing Wing 36" "USN Patrol Bombing Wing 37" "USN Patrol Bombing Wing 38" "USN Patrol Bombing Wing 39" "USN Patrol Bombing Wing 40" "9th USMC Bomb Wing" "USN Patrol Bombing Wing 40" 
+		"USN Patrol Bombing Wing 41" "10th USMC Bomb Wing" "USN Patrol Bombing Wing 42" "USN Patrol Bombing Wing 43" 
+	}
+	cas = {
+		"1st RCAF Dive Bomb. Wing" "2nd RCAF Dive Bomb. Wing" "13th RCAF Dive Bomb. Wing" "4th RCAF Dive Bomb. Wing" "5th RCAF Dive Bomb. Wing" "12th RCAF Dive Bomb. Wing" "47th RCAF Dive Bomb. Wing" "57th RCAF Dive Bomb. Wing" "14th RCAF Dive Bomb. Wing" "20th RCAF Dive Bomb. Wing" "98th RCAF Dive Bomb. Wing" 
+		"21st RCAF Dive Bomb. Wing" "40th RCAF Dive Bomb. Wing" "41st RCAF Dive Bomb. Wing" "42d RCAF Dive Bomb. Wing" "45th RCAF Dive Bomb. Wing" "99th RCAF Dive Bomb. Wing" "49th RCAF Dive Bomb. Wing" "55th RCAF Dive Bomb. Wing" "58th RCAF Dive Bomb. Wing" "92d RCAF Dive Bomb. Wing" "93rd RCAF Dive Bomb. Wing" 
+		"94th RCAF Dive Bomb. Wing" "95th RCAF Dive Bomb. Wing" "97th RCAF Dive Bomb. Wing" "96th RCAF Dive Bomb. Wing" "73rd RCAF Dive Bomb. Wing" "304th RCAF Dive Bomb. Wing" "305th RCAF Dive Bomb. Wing" "307th RCAF Dive Bomb. Wing" "308th RCAF Dive Bomb. Wing" "309th RCAF Dive Bomb. Wing" "310th RCAF Dive Bomb. Wing" 
+		"313th RCAF Dive Bomb. Wing" "314th RCAF Dive Bomb. Wing" "315th RCAF Dive Bomb. Wing" "316th RCAF Dive Bomb. Wing" "15th RCAF Dive Bomb. Wing" "16th RCAF Dive Bomb. Wing" "17th RCAF Dive Bomb. Wing" "317th RCAF Dive Bomb. Wing" "318th RCAF Dive Bomb. Wing" "319th RCAF Dive Bomb. Wing" "320th RCAF Dive Bomb. Wing" 
+		"321st RCAF Dive Bomb. Wing" "323rd RCAF Dive Bomb. Wing" "324th RCAF Dive Bomb. Wing" "325th RCAF Dive Bomb. Wing" "326th RCAF Dive Bomb. Wing" "327th RCAF Dive Bomb. Wing" "328th RCAF Dive Bomb. Wing" "329th RCAF Dive Bomb. Wing" "330th RCAF Dive Bomb. Wing" "331st RCAF Dive Bomb. Wing" "332nd RCAF Dive Bomb. Wing" 
+		"333rd RCAF Dive Bomb. Wing" "334th RCAF Dive Bomb. Wing" "335th RCAF Dive Bomb. Wing" "336th RCAF Dive Bomb. Wing" "337th RCAF Dive Bomb. Wing" "338th RCAF Dive Bomb. Wing" "339th RCAF Dive Bomb. Wing" "340th RCAF Dive Bomb. Wing" "417th RCAF Dive Bomb. Wing" "418th RCAF Dive Bomb. Wing" "419th RCAF Dive Bomb. Wing" 
+		"420th RCAF Dive Bomb. Wing" "421st RCAF Dive Bomb. Wing" "423rd RCAF Dive Bomb. Wing" "424th RCAF Dive Bomb. Wing" "425th RCAF Dive Bomb. Wing" "426th RCAF Dive Bomb. Wing" "427th RCAF Dive Bomb. Wing" "428th RCAF Dive Bomb. Wing" "429th RCAF Dive Bomb. Wing" "430th RCAF Dive Bomb. Wing" "431st RCAF Dive Bomb. Wing" 
+		"432d RCAF Dive Bomb. Wing" "433rd RCAF Dive Bomb. Wing" "434th RCAF Dive Bomb. Wing" "435th RCAF Dive Bomb. Wing" "436th RCAF Dive Bomb. Wing" "437th RCAF Dive Bomb. Wing" "438th RCAF Dive Bomb. Wing" "439th RCAF Dive Bomb. Wing" "440th RCAF Dive Bomb. Wing" 
+	}
+	transport_plane = {
+		"50th RCAF Troop Carrier Wing" "51st RCAF Troop Carrier Wing" "52d RCAF Troop Carrier Wing" "53rd RCAF Troop Carrier Wing" "54th RCAF Troop Carrier Wing" "60th RCAF Troop Carrier Wing" "61st RCAF Troop Carrier Wing" "322d RCAF Troop Carrier Wing" "333th RCAF Troop Carrier Wing" "334th RCAF Troop Carrier Wing" "335th RCAF Troop Carrier Wing" 
+		"336th RCAF Troop Carrier Wing" 
+	}
+	battleship = {
+		"RCS North Carolina" "RCS Washington" "RCS South Dakota" "RCS Indiana" "RCS Massachusetts" "RCS Alabama" "RCS Iowa" "RCS New Jersey" "RCS Missouri" "RCS Wisconsin" "RCS Illinois" 
+		"RCS Kentucky" "RCS Montana" "RCS Ohio" "RCS Maine" "RCS New Hampshire" "RCS Louisiana" "RCS South Carolina" "RCS Michigan" "RCS Delaware" "RCS North Dakota" "RCS Florida" 
+		"RCS Utah" "RCS Wyoming" "RCS Arkansas" "RCS New York" "RCS Texas" "RCS Nevada" "RCS Oklahoma" "RCS Pennsylvania" "RCS Arizona" "RCS New Mexico" "RCS Mississippi" 
+		"RCS Idaho" "RCS Tennessee" "RCS California" "RCS Colorado" "RCS Maryland" "RCS West Virginia" 
+	}
+	light_cruiser = {
+		"RCS Brooklyn" "RCS Philadelphia" "RCS Savannah" "RCS Nashville" "RCS Honolulu" "RCS Phoenix" "RCS Boise" "RCS St Louis" "RCS Helena" "RCS Atlanta" "RCS Juneau" 
+		"RCS San Diego" "RCS San Juan" "RCS Oakland" "RCS Cleveland" "RCS Columbia" "RCS Montpelier" "RCS Denver" "RCS Santa Fe" "RCS Reno" "RCS Birmingham" "RCS Mobile" 
+		"RCS Biloxi" "RCS Houston" "RCS Miami" "RCS Flint" "RCS Vincennes" "RCS Pasadena" "RCS Springfield" "RCS Topeka" "RCS Vicksburg" "RCS Duluth" "RCS Astoria" 
+		"RCS Oklahoma City" "RCS Wilkes-Barre" "RCS Tucson" "RCS Providence" "RCS Little Rock" "RCS Amsterdam" "RCS Portsmouth" "RCS Dayton" "RCS Fargo" "RCS Spokane" "RCS Fresno" 
+		"RCS Manchester" "RCS Galveston" "RCS Huntington" "RCS Worcester" "RCS Roanoke" "RCS Tallahassee" "RCS New Haven" "RCS Wilmington" "RCS Buffalo" "RCS Youngstown" "RCS Newark" 
+		"RCS Vallejo" "RCS Cheyenne" "RCS Chattanooga" "RCS Gary" "RCS Omaha" "RCS Milwaukee" "RCS Detroit" "RCS Richmond" "RCS Concord" "RCS Cincinnati" "RCS Raleigh" 
+		"RCS Trenton" "RCS Marblehead" "RCS Memphis" 
+	}
+	heavy_cruiser = {
+		"RCS Pensacola" "RCS Salt Lake City" "RCS Northampton" "RCS Chester" "RCS Louisville" "RCS Chicago" "RCS Houston" "RCS Augusta" "RCS Portland" "RCS Indianapolis" "RCS New Orleans" 
+		"RCS Astoria" "RCS Minneapolis" "RCS Tuscaloosa" "RCS Quincy" "RCS Vincennes" "RCS San Francisco" "RCS Wichita" "RCS Baltimore" "RCS Boston" "RCS Canberra" "RCS Quincy" 
+		"RCS Pittsburgh" "RCS St Paul" "RCS Bremerton" "RCS Columbus" "RCS Fall River" "RCS Los Angeles" "RCS Macon" "RCS Helena" "RCS Oregon City" "RCS Albany" "RCS Toledo" 
+		"RCS Rochester" "RCS Cambridge" "RCS Bridgeport" "RCS Kansas City" "RCS Tulsa" "RCS Norfolk" "RCS Scranton" "RCS Des Moines" "RCS Salem" "RCS Newport News" "RCS Dallas" 
+		"RCS Long Beach" 
+	}
+	battlecruiser = {
+		"RCS Alaska" "RCS Guam" "RCS Hawaii" "RCS Philippines" "RCS Puerto Rico" "RCS Samoa" "RCS Lexington" "RCS Constellation" "RCS Saratoga" "RCS Ranger" "RCS Constitution" 
+		"RCS United States" 
+	}
+	destroyer = {
+		"1st Destroyer Division" "2nd Destroyer Division" "3rd Destroyer Division" "4th Destroyer Division" "5th Destroyer Division" "6th Destroyer Division" "7th Destroyer Division" "8th Destroyer Division" "9th Destroyer Division" "10th Destroyer Division" "11th Destroyer Division" 
+		"12th Destroyer Division" "13th Destroyer Division" "14th Destroyer Division" "15th Destroyer Division" "16th Destroyer Division" "17th Destroyer Division" "18th Destroyer Division" "19th Destroyer Division" "20th Destroyer Division" "21st Destroyer Division" "22nd Destroyer Division" 
+		"23rd Destroyer Division" "24th Destroyer Division" "25th Destroyer Division" "26th Destroyer Division" "27th Destroyer Division" "28th Destroyer Division" "29th Destroyer Division" "30th Destroyer Division" "31st Destroyer Division" "32nd Destroyer Division" "33rd Destroyer Division" 
+		"34th Destroyer Division" "35th Destroyer Division" "36th Destroyer Division" "37th Destroyer Division" "38th Destroyer Division" "39th Destroyer Division" "40th Destroyer Division" "41st Destroyer Division" "42nd Destroyer Division" "43rd Destroyer Division" "44th Destroyer Division" 
+		"45th Destroyer Division" "46th Destroyer Division" "47th Destroyer Division" "48th Destroyer Division" "49th Destroyer Division" "50th Destroyer Division" "51st Destroyer Division" "52nd Destroyer Division" "53rd Destroyer Division" "54th Destroyer Division" "55th Destroyer Division" 
+		"56th Destroyer Division" "57th Destroyer Division" "58th Destroyer Division" "59th Destroyer Division" "60th Destroyer Division" "61st Destroyer Division" "62nd Destroyer Division" "63rd Destroyer Division" "64th Destroyer Division" "65th Destroyer Division" "66th Destroyer Division" 
+		"67th Destroyer Division" "68th Destroyer Division" "69th Destroyer Division" "70th Destroyer Division" "71st Destroyer Division" "72nd Destroyer Division" "73rd Destroyer Division" "74th Destroyer Division" "75th Destroyer Division" "76th Destroyer Division" "77th Destroyer Division" 
+		"78th Destroyer Division" "79th Destroyer Division" "80th Destroyer Division" "81st Destroyer Division" "82nd Destroyer Division" "83rd Destroyer Division" "84th Destroyer Division" "85th Destroyer Division" "86th Destroyer Division" "87th Destroyer Division" "88th Destroyer Division" 
+		"89th Destroyer Division" "90th Destroyer Division" "91st Destroyer Division" "92nd Destroyer Division" "93rd Destroyer Division" "94th Destroyer Division" "95th Destroyer Division" "96th Destroyer Division" "97th Destroyer Division" "98th Destroyer Division" "99th Destroyer Division" 
+		"100th Destroyer Division" 
+	}
+	carrier = {
+		"RCS Lexington" "RCS Saratoga" "RCS Ranger" "RCS Yorktown" "RCS Enterprise" "RCS Wasp" "RCS Hornet" "RCS Essex" "RCS Intrepid" "RCS Franklin" "RCS Ticonderoga" 
+		"RCS Randolph" "RCS Bunker Hill" "RCS Hancock" "RCS Bennington" "RCS Bon Homme Richard" "RCS Leyte" "RCS Kearsarge" "RCS Oriskany" "RCS Reprisal" "RCS Antietam" "RCS Shangri-La" 
+		"RCS Lake Champlain" "RCS Midway" "RCS Franklin D. Roosevelt" "RCS Coral Sea" "RCS Philippine Sea" "RCS United States" "RCS Forrestal" "RCS Saratoga" "RCS Kitty Hawk" "RCS Constellation" "RCS America" 
+		"RCS Theodore Roosevelt" "RCS Abraham Lincoln" "RCS George Washington" 
+	}
+	escort_carrier = {
+		"RCS Independence" "RCS Princeton" "RCS Belleau Wood" "RCS Cowpens" "RCS Monterey" "RCS Langley" "RCS Cabot" "RCS Bataan" "RCS San Jacinto" "RCS Saipan" "RCS Wright" 
+		"RCS Block Island" "RCS Iwo Jima" "RCS Okinawa" "RCS Boxer" "RCS Thetis Bay" "RCS Guadalcanal" "RCS Valley Forge" "RCS Guam" "RCS Tripoli" "RCS New Orleans" "RCS Tarawa" 
+		"RCS Nassau" "RCS Peleliu" 
+	}
+	submarine = {
+		"1st Submarine Division" "2nd Submarine Division" "3rd Submarine Division" "4th Submarine Division" "5th Submarine Division" "6th Submarine Division" "7th Submarine Division" "8th Submarine Division" "9th Submarine Division" "10th Submarine Division" "11th Submarine Division" 
+		"12th Submarine Division" "13th Submarine Division" "14th Submarine Division" "15th Submarine Division" "16th Submarine Division" "17th Submarine Division" "18th Submarine Division" "19th Submarine Division" "20th Submarine Division" "21st Submarine Division" "22nd Submarine Division" 
+		"23rd Submarine Division" "24th Submarine Division" "25th Submarine Division" "26th Submarine Division" "27th Submarine Division" "28th Submarine Division" "29th Submarine Division" "30th Submarine Division" "31st Submarine Division" "32nd Submarine Division" "33rd Submarine Division" 
+		"34th Submarine Division" "35th Submarine Division" "36th Submarine Division" "37th Submarine Division" "38th Submarine Division" "39th Submarine Division" "40th Submarine Division" "41st Submarine Division" "42nd Submarine Division" "43rd Submarine Division" "44th Submarine Division" 
+		"45th Submarine Division" "46th Submarine Division" "47th Submarine Division" "48th Submarine Division" "49th Submarine Division" "50th Submarine Division" "51st Submarine Division" "52nd Submarine Division" "53rd Submarine Division" "54th Submarine Division" "55th Submarine Division" 
+		"56th Submarine Division" "57th Submarine Division" "58th Submarine Division" "59th Submarine Division" "60th Submarine Division" "61st Submarine Division" "62nd Submarine Division" "63rd Submarine Division" "64th Submarine Division" "65th Submarine Division" "66th Submarine Division" 
+		"67th Submarine Division" "68th Submarine Division" "69th Submarine Division" "70th Submarine Division" "71st Submarine Division" "72nd Submarine Division" "73rd Submarine Division" "74th Submarine Division" "75th Submarine Division" "76th Submarine Division" "77th Submarine Division" 
+		"78th Submarine Division" "79th Submarine Division" "80th Submarine Division" "81st Submarine Division" "82nd Submarine Division" "83rd Submarine Division" "84th Submarine Division" "85th Submarine Division" "86th Submarine Division" "87th Submarine Division" "88th Submarine Division" 
+		"89th Submarine Division" "90th Submarine Division" "91st Submarine Division" "92nd Submarine Division" "93rd Submarine Division" "94th Submarine Division" "95th Submarine Division" "96th Submarine Division" "97th Submarine Division" "98th Submarine Division" "99th Submarine Division" 
+		"100th Submarine Division" 
+	}
+	transport_ship = {
+		"Abner Doubleday Flotilla" "Brigham Young Flotilla" "William B. Travis Flotilla" "Peter Stuyvesant Flotilla" "Henry L. Benning Flotilla" "Casimir Pulaski Flotilla" "Sam Houston Flotilla" "Francis Scott Key Flotilla" "Frederick Douglass Flotilla" "Walter Reed Flotilla" "Dolly Madison Flotilla" 
+		"Clara Barton Flotilla" "Charles Goodyear Flotilla" "Anthony Wayne Flotilla" "John Hancock Flotilla" "Samuel Dexter Flotilla" "Stephen C. Crane Flotilla" "William McKinley Flotilla" "George A. Custer Flotilla" "August Belmont Flotilla" "Emily Dickinson Flotilla" "Molly Pitcher Flotilla" 
+		"Antonin Dvorak Flotilla" "J. E. B. Stuart Flotilla" "Alexander J. Dallas Flotilla" "Amy Lowell Flotilla" "Lew Wallace Flotilla" "Oliver Hazard Perry Flotilla" "Vincent Harrington Flotilla" "W. R. Grace Flotilla" "John Trumbull Flotilla" "Walter E. Ranger Flotilla" "Sacajawea Flotilla" 
+		"Thomas B. Reed Flotilla" "Christy Mathewson Flotilla" "John Holland Flotilla" "Paine Wingate Flotilla" "John B. Hood Flotilla" "Jefferson Davis Flotilla" "Cecil N. Bean Flotilla" "Carter Braxton Flotilla" "Henry D. Thoreau Flotilla" "Edgar Allen Poe Flotilla" "John Jay Flotilla" 
+		"Abigail Adams Flotilla" "Annie Oakley Flotilla" "Henry Dodge Flotilla" "George Gershwin Flotilla" "Ethan Allen Flotilla" "Alexander Graham Bell Flotilla" "William T. Sherman Flotilla" "Zane Gray Flotilla" "Benjamin Franklin Flotilla" "Andrew Carnegie Flotilla" "Mark Twain Flotilla" 
+		"John A. Roebling Flotilla" "George B. McClellan Flotilla" "Nancy Hanks Flotilla" "Marcus Daly Flotilla" "Leif Ericson Flotilla" "Judah P. Benjamin Flotilla" "Joseph Lane Flotilla" "Enoch Train Flotilla" "Elizabeth Blackwell Flotilla" "Charles W. Stiles Flotilla" "William Dunbar Flotilla" 
+		"Virginia Dare Flotilla" "W. S. Jennings Flotilla" "Tobias Lear Flotilla" "Joseph H. Nicholson Flotilla" "John W. Foster Flotilla" "David B. Henderson Flotilla" "Belva Lockwood Flotilla" "Benjamin Bonneville Flotilla" "John H. Thomas Flotilla" "Roger Sherman Flotilla" "Roy James Cole Flotilla" 
+		"Zachary Taylor Flotilla" "Minor C. Keith Flotilla" "Nathan B. Forrest Flotilla" "Maria Mitchell Flotilla" "Lucy Stone Flotilla" "John Drayton Flotilla" "Marcus Daly Flotilla" "John Deere Flotilla" "Henry T. Scott Flotilla" "Hart Crane Flotilla" "Glenn Curtiss Flotilla" 
+		"George Vickers Flotilla" "David J. Brewer Flotilla" "Victor C. Vaughn Flotilla" "Thomas Paine Flotilla" "Louisa M. Alcott Flotilla" "Amerigo Vespucci Flotilla" "George Eastman Flotilla" "Susan Colby Flotilla" "Thomas Hooker Flotilla" "Otto Mears Flotilla" "Noah Webster Flotilla" 
+		"Felix Hathaway Flotilla" "Daniel G. Reid Flotilla" "Peter Cartwright Flotilla" "Paul Tulane Flotilla" "Robert Gray Flotilla" "James Gunn Flotilla" "James Bowie Flotilla" "Isaac McCoy Flotilla" "Holland Thompson Flotilla" "Benjamin Holt Flotilla" "Ruben Dario Flotilla" 
+		"Joyce Kilmer Flotilla" "Frederic Remington Flotilla" "Davy Crockett Flotilla" "Kyle V. Johnson Flotilla" "Laura Bridgman Flotilla" "Vernon S. Hood Ship Flotilla" "Nathan Towson Flotilla" "John Philip Sousa Flotilla" "Harold I. Pratt Flotilla" "Artemus Ward Flotilla" "John Dix Flotilla" 
+		"Mark Hopkins Flotilla" "Marshall Elliott Flotilla" "Walker Taylor Flotilla" "Henry V. Alvarado Flotilla" "George G. Meade Flotilla" "John M. Bozeman Flotilla" "Louis Sullivan Flotilla" "Mary Austin Flotilla" "Martha C.Thomas Ship Flotilla" "Flora MacDonald Flotilla" "Eliza Jane Nicholson Flotilla" 
+		"Norman E. Mack Flotilla" "Oliver Ellsworth Flotilla" "Nikola Tesla Flotilla" "R. C. Brennan Flotilla" "DeWitt Clinton Flotilla" "Ewing Young Flotilla" "Mark Hanna Flotilla" "Henry Van Dyke Flotilla" "James Manning Flotilla" "Joel Chandler Harris Flotilla" "Meriwether Lewis Flotilla" 
+		"1st Transport Flotilla" "2nd Transport Flotilla" "3rd Transport Flotilla" "4th Transport Flotilla" "5th Transport Flotilla" "6th Transport Flotilla" "7th Transport Flotilla" "8th Transport Flotilla" "9th Transport Flotilla" "10th Transport Flotilla" "11th Transport Flotilla" 
+		"12th Transport Flotilla" "13th Transport Flotilla" "14th Transport Flotilla" "15th Transport Flotilla" "16th Transport Flotilla" "17th Transport Flotilla" "18th Transport Flotilla" "19th Transport Flotilla" "20th Transport Flotilla" "21st Transport Flotilla" "22nd Transport Flotilla" 
+		"23rd Transport Flotilla" "24th Transport Flotilla" "25th Transport Flotilla" "26th Transport Flotilla" "27th Transport Flotilla" "28th Transport Flotilla" "29th Transport Flotilla" "30th Transport Flotilla" "31st Transport Flotilla" "32nd Transport Flotilla" "33rd Transport Flotilla" 
+		"34th Transport Flotilla" "35th Transport Flotilla" "36th Transport Flotilla" "37th Transport Flotilla" "38th Transport Flotilla" "39th Transport Flotilla" "40th Transport Flotilla" "41st Transport Flotilla" "42nd Transport Flotilla" "43rd Transport Flotilla" "44th Transport Flotilla" 
+		"45th Transport Flotilla" "46th Transport Flotilla" "47th Transport Flotilla" "48th Transport Flotilla" "49th Transport Flotilla" "50th Transport Flotilla" 
+	}
+
+}
+
+ministers = {
+	572000 = {
+		 name = "Frank Finlay Merriam"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 head_of_state = die_hard_reformer
+		 start_date = 1936.1.1
+		 picture = M572001
+	}
+	572001 = {
+		 name = "Angelo Rossi"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 armament_minister = corrupt_kleptocrat
+		 start_date = 1936.1.1
+		 picture = M572004
+	}
+	572002 = {
+		 name = "Arthur C. Ferguson"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 minister_of_intelligence = industrial_specialist
+		 start_date = 1942.1.1
+		 picture = M572024
+	}
+	572003 = {
+		 name = "Arthur D. Ferguson"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 minister_of_intelligence = dismal_enigma
+		 start_date = 1938.1.1
+		 picture = M572022
+	}
+	572004 = {
+		 name = "Culbert Levy Olson"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 head_of_government = smiling_oilman
+		 start_date = 1936.1.1
+		 picture = M572002
+	}
+	572005 = {
+		 name = "David Prescott Burrows"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 foreign_minister = general_staffer
+		 start_date = 1940.1.1
+		 picture = M572012
+	}
+	572006 = {
+		 name = "Douglas Moore"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 minister_of_intelligence = technical_specialist
+		 start_date = 1939.1.1
+		 picture = M572023
+	}
+	572007 = {
+		 name = "Earl Warren"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 foreign_minister = ideological_crusader
+		 start_date = 1944.1.1
+		 picture = M572013
+	}
+	572008 = {
+		 name = "Fletcher Bowron"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 armament_minister = resource_industrialist
+		 start_date = 1939.1.1
+		 picture = M572014
+	}
+	572009 = {
+		 name = "Frank E. Homan"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 foreign_minister = great_compromiser
+		 start_date = 1936.1.1
+		 picture = M572003
+	}
+	572011 = {
+		 name = "Frank L. Shaw"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 foreign_minister = apologetic_clerk
+		 start_date = 1938.1.1
+		 picture = M572011
+	}
+	572012 = {
+		 name = "Gene D. James"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 chief_of_army = decisive_battle_doctrine
+		 start_date = 1936.1.1
+		 picture = M572008
+	}
+	572013 = {
+		 name = "Harley Knox"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 armament_minister = administrative_genius
+		 start_date = 1942.1.1
+		 picture = M572016
+	}
+	572014 = {
+		 name = "Henry Fountain Ashurst"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 armament_minister = submarine_proponent
+		 start_date = 1940.1.1
+		 picture = M572015
+	}
+	572015 = {
+		 name = "Herbert R. Temple"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 chief_of_staff = school_of_mass_combat
+		 start_date = 1936.1.1
+		 picture = M572007
+	}
+	572016 = {
+		 name = "John Dockweiler"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 minister_of_security = crime_fighter
+		 start_date = 1941.1.1
+		 picture = M572020
+	}
+	572017 = {
+		 name = "John J. Hartnett"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 chief_of_staff = school_of_psychology
+		 start_date = 1942.1.1
+		 picture = M572026
+	}
+	572018 = {
+		 name = "Joseph Reeves"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 chief_of_navy = power_projection_doctrine
+		 start_date = 1936.1.1
+		 picture = L60458
+	}
+	572019 = {
+		 name = "Leroy Legowik"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 chief_of_air = vertical_envelopment_doctrine
+		 start_date = 1936.1.1
+		 picture = M572010
+	}
+	572020 = {
+		 name = "M.H. Dorman"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 chief_of_navy = decisive_naval_battle_doctrine
+		 start_date = 1945.1.1
+		 picture = M572028
+	}
+	572021 = {
+		 name = "Newell Stewart"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 armament_minister = air_to_sea_proponent
+		 start_date = 1944.1.1
+		 picture = M572017
+	}
+	572022 = {
+		 name = "Patrick J. Quinn"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 minister_of_security = crooked_kleptocrat
+		 start_date = 1936.1.1
+		 picture = M572005
+	}
+	572023 = {
+		 name = "Percy Benbough"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 minister_of_intelligence = naval_intelligence_specialist
+		 start_date = 1936.1.1
+		 picture = M572006
+	}
+	572024 = {
+		 name = "Raymond C. Byrne"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 chief_of_army = elastic_defence_doctrine
+		 start_date = 1943.1.1
+		 picture = M572027
+	}
+	572025 = {
+		 name = "Roger Dearborn Lapham"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 minister_of_security = silent_lawyer
+		 start_date = 1944.1.1
+		 picture = M572021
+	}
+	572026 = {
+		 name = "Ronald E. Shoopman"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 chief_of_air = air_superiority_doctrine
+		 start_date = 1941.1.1
+		 picture = M572029
+	}
+	572027 = {
+		 name = "Ronald Reagan"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 minister_of_intelligence = political_specialist
+		 start_date = 1946.1.1
+		 picture = M572025
+	}
+	572028 = {
+		 name = "Stewart Udall"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 minister_of_security = compassionate_gentleman
+		 start_date = 1941.1.1
+		 picture = M572019
+	}
+	572029 = {
+		 name = "Tom Monk"
+		 ideology = paternal_autocrat
+		 loyalty = 1.00
+		 minister_of_security = prince_of_terror
+		 start_date = 1939.1.1
+		 picture = M572018
+	}
+	# Generic dummy ministers
+	95137 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95138 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95139 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95140 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95141 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95142 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95143 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95144 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95145 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+}
+

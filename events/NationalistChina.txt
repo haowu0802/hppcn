@@ -1,0 +1,555 @@
+#############################################
+# Chinese Alliance against the Soviet Union #
+#############################################
+country_event = {
+	
+	id = 2801
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2801"
+	desc = "EVTDESC2801"
+	picture = "soviet_politics2"
+
+	option = {
+		name = "EVTOPTA2801"			# Agreed
+		ai_chance = { factor = 90 }
+		create_alliance = CHI
+	}
+	option = {
+		name = "EVTOPTB2801"			# There is no real need
+		ai_chance = { factor = 10 }
+		relation = { who = CHI value = -15 }
+	}
+}
+
+##########################
+# The Death of Hu Hanmin #
+##########################
+
+country_event = {
+
+	id = 2805
+
+	trigger = {
+		tag = CHI
+		not = { has_country_flag = "hu_hanmin" }
+		date = 1936.2.1
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "Hu Hanmin, governor of Guangdong dies"
+	desc = "hu_hanmin_dies_desc"
+	picture = "hu_hanmin"
+
+	option = {
+		name = "Suggest ending the autonomy of Guangdong!"
+		ai_chance = { factor = 95 }
+		set_country_flag = "hu_hanmin"
+		CGX = {
+			remove_minister = 502011			# Hu Hanmin
+			set_country_flag = "502011_removed"
+		}
+		CGX = { minister_of_security = 502005 }		# Lei Zhong
+		CGX = { country_event = 2806 }
+	}
+
+	option = {
+		name = "How sad..."
+		ai_chance = { factor = 5 }
+		set_country_flag = "hu_hanmin"
+		CGX = {
+			remove_minister = 502011			# Hu Hanmin
+			set_country_flag = "502011_removed"
+		}
+		CGX = { minister_of_security = 502005 }		# Lei Zhong
+		CGX = { country_event = 2807 }
+	}
+
+}
+
+country_event = {
+
+	id = 2806
+
+	is_triggered_only = yes
+
+	title = "Hu Hanmin, governor of Guangdong dies"
+	desc = "With the death of Hu Hanmin, Chiang Kai-Shek wants to end the autonomy of Guangdong. Chen Jitang, the new governor turns to Guangxi for help."
+	picture = "hu_hanmin"
+
+	option = {
+		name = "This means war!"
+		ai_chance = { factor = 1 }
+		war = {
+			target = CHI
+			attacker_goal = { casus_belli = concede_defeat }
+			defender_goal = { casus_belli = aquire_territory region = guangdong_region }
+			defender_goal = { casus_belli = aquire_territory region = hainan_region }
+		}
+	}
+	option = {
+		name = "We can live without Guangdong."
+		ai_chance = { factor = 15 }
+
+		CHI = { split_troops = 0.2 }
+
+		guangdong_region = { secede_province = CHI remove_core = CGX }
+		hainan_region = { secede_province = CHI remove_core = CGX }
+		
+		5918 = { naval_base = 3 }
+	}
+	option = {
+		name = "We could live without Guangdong, but Chiang must go!"
+		ai_chance = { factor = 84 }
+		set_country_flag = "chiang_must_go"
+
+		CHI = { split_troops = 0.2 }
+
+		guangdong_region = { secede_province = CHI }
+		hainan_region = { secede_province = CHI }
+		
+	}
+}
+
+country_event = {
+
+	id = 2807
+
+	is_triggered_only = yes
+
+	title = "Hu Hanmin, governor of Guangdong dies"
+	desc = "hu_hanmin_dies_desc"
+	picture = "hu_hanmin"
+
+	option = {
+		name = "He was a real man of the people!"
+	}
+}
+
+country_event = {
+
+	id = 2808
+
+	trigger = {
+		tag = CGX
+		has_country_flag = "chiang_must_go"
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	title = "Plot against Chiang Kai-Shek"
+	desc = "Chiang Kai-Shek failed to confront Japanese agression ever since the Mukden Incident. We need a new, stronger leader to withstand the Mikado!"
+	picture = "Xian_Incident"
+
+	option = {
+		name = "This is not necessary..."
+		ai_chance = { factor = 95 }
+		clr_country_flag = "chiang_must_go"
+		guangdong_region = { remove_core = CGX }
+	}
+
+	option = {
+		name = "Make an assasination attempt!"
+		ai_chance = { factor = 5 }
+		clr_country_flag = "chiang_must_go"
+		random_list = {
+			10 = {
+				CHI = {
+					remove_minister = 52002				# Chian Kai-Shek
+					set_country_flag = "50202_removed"
+				}
+				CHI = { head_of_government = 52003 }	# Zhang Zun
+				CHI = { guangdong_region = { secede_province = CGX } }
+				CHI = { hainan_region = { secede_province = CGX } }
+			}
+			90 = {
+				remove_minister = 502008	# Chen Jitang
+				set_country_flag = "502008_removed"
+				chief_of_army = 502007		# Bai Chongxi
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 2809
+
+	trigger = {
+		tag = CGX
+		has_country_flag = "chiang_must_go"
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "Abandon the plot"
+	desc = "We don't really need Guangdong, we can well enough leave them alone."
+	picture = "Xian_Incident"
+
+	option = {
+		name = "OK"
+		clr_country_flag = "chiang_must_go"
+
+		guangdong_region = { remove_core = CGX }
+		hainan_region = { remove = CGX }
+	}
+
+}
+
+##################
+# Xi'an Incident #
+##################
+
+country_event = {
+
+	id = 2810
+
+	major = yes
+
+	trigger = {
+		tag = CHI
+		exists = CHC
+		war_with = CHC
+		exists = JAP
+		JAP = { ideology_group = fascism }
+		not = { has_country_flag = "xian_incident" }
+		date = 1936.7.1
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = { factor = 0.1 war_with = JAP }
+		modifier = { factor = 0.5 war_exhaustion = 2 }
+		modifier = { factor = 0.5 war_exhaustion = 4 }
+		modifier = { factor = 0.5 war_exhaustion = 6 }
+		modifier = { factor = 0.5 war_exhaustion = 8 }
+		modifier = { factor = 0.5 war_exhaustion = 10 }
+	}
+
+	title = "Xi'an Incident"
+	desc = "xian_incident_desc"
+	picture = "Xian_Incident"
+
+	option = {
+		name = "We need to unite against the common threat! For now..."
+		ai_chance = { factor = 95 }
+
+		set_country_flag = "xian_incident"
+
+		CHC = { country_event = 2811 }
+		remove_minister = 52008		# Zhang Xueliang
+		set_country_flag = "50208_removed"
+		kill_leader = 50011			# Zhang Xueliang
+		kill_leader = 50340			# Yang Hucheng
+		chief_of_army = 52089		# Jiang Baili
+	}
+
+	option = {
+		name = "Leave Chiang to his fate!"
+		ai_chance = { factor = 5 }
+
+		set_country_flag = "xian_incident"
+
+		remove_minister = 52008		# Zhang Xueliang
+		set_country_flag = "50208_removed"
+		kill_leader = 50011			# Zhang Xueliang
+		chief_of_army = 52089		# Jiang Baili
+		remove_minister = 52002		# Chiang Kai-Shek
+		set_country_flag = "50202_removed"
+		kill_leader = 50048			# Chiang Kai-Shek
+		kill_leader = 50340			# Yang Hucheng
+		head_of_government = 52003	# Zhang Zun
+		relation = { who = CHC value = -75 }
+	}
+
+}
+
+country_event = {
+
+	id = 2811
+
+	is_triggered_only = yes
+
+	title = "Xi'an Incident"
+	desc = "xian_incident_desc"
+	picture = "Xian_Incident"
+
+	option = {
+		name = "We need to unite against the common threat! For now..."
+		ai_chance = { factor = 95 }
+		# Keep the current borders
+		any_owned = {
+			limit = {
+				controller = {
+					or = {
+						tag = CHI
+						alliance_with = CHI
+						vassal_of = CHI
+					}
+				}
+			}
+			secede_province = CHI
+		}
+		add_country_modifier = {
+			name = "xian_cease_fire"
+			duration = 365
+		}
+		CHI = {
+			add_country_modifier = {
+				name = "xian_cease_fire"
+				duration = 365
+			}
+			any_owned = {
+				limit = {
+					controller = {
+						or = {
+							tag = CHC
+							alliance_with = CHC
+							vassal_of = CHC
+						}
+					}
+				}
+				secede_province = CHC
+			}
+		}
+		end_war = CHI
+		non_aggression_pact = CHI
+		any_country = {
+			limit = { alliance_with = CHI }
+			end_war = CHC
+			non_aggression_pact = CHC
+		}
+	}
+
+	option = {
+		name = "Never!"
+		ai_chance = { factor = 5 }
+		relation = { who = CHI value = -75 }
+	}
+}
+
+#####################################
+# Ask for admission into the Allies #
+#####################################
+
+country_event = {
+
+	id = 2815
+
+	is_triggered_only = yes
+
+	title = "The Republic of China asks for admission into our Alliance"
+	desc = "The Chinese Head of Government asked to join the Allies. We both are already at war with Japan. This alliance would make it easier for us to cooperate."
+	picture = "cairo_conference"
+
+	option = {
+		name = "They need our help!"
+		ai_chance = { factor = 99 }
+		CHI = { country_event = 2816 }
+	}
+
+	option = {
+		name = "We are better off without them."
+		ai_chance = { factor = 1 }
+		CHI = { country_event = 2817 }
+	}
+}
+
+country_event = {
+
+	id = 2816
+
+	is_triggered_only = yes
+
+	title = "We are accepted into the Allies"
+	desc = "The British Crown accepted our requisition to join their Alliance. We are a proud member of the Allies now. Together, we will defeat our enemies!"
+	picture = "cairo_conference"
+
+	option = {
+		name = "Excellent!"
+		relation = { who = ENG value = 50 }
+		join_faction = allies
+	}
+}
+
+country_event = {
+
+	id = 2817
+
+	is_triggered_only = yes
+
+	title = "Our request has been denied"
+	desc = "The British declined our request to join their Alliance. We will defeat our enemies without them then."
+	picture = "Xian_Incident"
+
+	option = {
+		name = "Oh, well..."
+		relation = { who = ENG value = -50 }
+	}
+}
+
+country_event = {
+
+	id = 2820
+
+	trigger = {
+		tag = CHI
+		ideology = paternal_autocrat
+		has_country_flag = "stop_the_war"
+		not = { has_country_flag = "chiang_losing_support" }
+	}
+
+	title = "The Kuomintang is losing support"
+	desc = "Sueing for peace with the Japanese was a very unpopular thing in China. The support of the Communists is on the rise."
+	picture = "China_CW"
+
+	option = {
+		name = "That wasn't a good idea after all..."
+		set_country_flag = "chiang_losing_support"
+		left_wing_radical = { popularity = 5 organisation = 10 }
+		leninist = { popularity = 5 organisation = 10 }
+		stalinist = { popularity = 5 organisation = 10 }
+		dissent = 5
+	}
+}
+###############################
+#  Hebei neutral zone
+###############################
+#lower infra temporarily to prevent China from massing troops on the border
+country_event = {
+	id = 2821
+
+	trigger = {
+		tag = CHI
+		not = { has_country_flag = "de_militarized_hebei" }
+		not = { has_country_flag = "de_militarized_hebei_cleared" }
+	}
+
+	title = "Hebei Demilitarized Zone"
+	desc = "hebei_demil_event_desc"
+
+	option = {
+		name = "Interesting"
+		set_country_flag = "de_militarized_hebei"
+	}
+}
+
+#raise the lowered infra if China declares war on Japan or otherwise ends up at war
+country_event = {
+	id = 2822
+
+	trigger = {
+		tag = CHI
+		has_country_flag = "de_militarized_hebei"
+		not = { has_country_flag = "de_militarized_hebei_cleared" }
+		CHI = { war_with = JAP }
+	}
+
+	title = "Hebei Demilitarized Zone"
+	desc = "Due to our declaration of war on Japan we don't need to worry about the Tanggu Truce terms anymore"
+
+	option = {
+		name = "Interesting"
+		5176 = { infra = 4 }
+		5208 = { infra = 4 }
+		5144 = { infra = 4 }
+		5054 = { infra = 4 }
+		5142 = { infra = 4 }
+		5084 = { infra = 2 } 
+		5112 = { infra = 2 } 
+		4933 = { infra = 4 }
+		clr_country_flag = "de_militarized_hebei"
+		set_country_flag = "de_militarized_hebei_cleared"
+	}
+}
+
+###################################
+# Yellow River flood waters recede
+###################################
+
+#version for Nat. China
+country_event = {
+	id = 2823
+	trigger = {
+		tag = CHI
+		has_country_flag = dikes_broken
+		not = { has_country_modifier = "huang_he_flooded" }
+		NOT = { has_country_flag = flood_receded }
+	}
+
+	title = "The flood waters recede"
+	desc = "The flood that was caused by breaking the dikes has finally receded, but the damage is severe and will take massive effort to repair."
+
+	option = {
+		name = "At least the flood bought us time.  Right?"
+		set_country_flag = flood_receded
+		any_owned = { 
+			limit = { 
+				region = huang_he_flood_region
+			} 
+			infra = 1
+		}
+	}
+}
+#version for Jingwei
+country_event = {
+	id = 2824
+	trigger = {
+		tag = NJG
+		controls = 5383
+		CHI = { has_country_flag = dikes_broken }
+		CHI = { not = { has_country_modifier = "huang_he_flooded" } }
+		NOT = { has_country_flag = flood_receded }
+	}
+
+	title = "The flood waters recede"
+	desc = "The flood that was caused by breaking the dikes has finally receded, but the damage is severe and will take massive effort to repair."
+
+	option = {
+		name = "Time to clean up"
+		set_country_flag = flood_receded
+		any_owned = { 
+			limit = { 
+				region = huang_he_flood_region
+			} 
+			infra = 1
+		}
+	}
+}
+#version for Japan
+country_event = {
+	id = 2825
+	trigger = {
+		tag = JAP
+		NOT = { exists = CHI }
+		NOT = { exists = NJG }
+		controls = 5383
+		CHI = { has_country_flag = dikes_broken }
+		CHI = { not = { has_country_modifier = "huang_he_flooded" } }
+		NOT = { has_country_flag = flood_receded }
+	}
+
+	title = "The flood waters recede"
+	desc = "The flood that was caused by breaking the dikes has finally receded, but the damage is severe and will take massive effort to repair."
+
+	option = {
+		name = "Time to clean up"
+		set_country_flag = flood_receded
+		any_owned = { 
+			limit = { 
+				region = huang_he_flood_region
+			} 
+			infra = 1
+		}
+	}
+}

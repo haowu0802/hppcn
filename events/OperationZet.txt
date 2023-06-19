@@ -1,0 +1,147 @@
+#################
+# Operation Zet #
+#################
+
+# Sino-Soviet Non-Aggression Pact
+country_event = {
+	
+	id = 2201
+	
+	is_triggered_only = yes
+
+	title = "Sino-Soviet Non-Aggression Pact"
+	desc = "The Soviet Union offered to sign a Non-Aggression Pact. "
+	picture = "assistance"
+
+	option = {
+		name = "That would be great!"
+		ai_chance = {
+			factor = 75
+			modifier = { factor = 1.3 relation = { who = SOV value = 50 } }
+			modifier = { factor = 0.3 not = { relation = { who = SOV value = -50 } } }
+		}
+		SOV = { country_event = 2202 }
+		relation = { who = SOV value = 10 }
+		left_wing_radical = { organisation = 5 }
+		leninist = { organisation = 3 }
+		stalinist = { organisation = 1 }
+	}
+	option = {
+		name = "We don't need it."
+		ai_chance = {
+			factor = 25
+			modifier = { factor = 0.0 relation = { who = SOV value = 50 } }
+			modifier = { factor = 3.0 not = { relation = { who = SOV value = -50 } } }
+		}
+		SOV = { country_event = 2203 }
+		relation = { who = SOV value = -10 }
+		left_wing_radical = { organisation = -5 }
+		leninist = { organisation = -3 }
+		stalinist = { organisation = -1 }
+	}
+}
+
+# Response from China
+country_event = {
+	
+	id = 2202
+
+	is_triggered_only = yes
+
+	title = "China agreed"
+	desc = "China agreed to sign the Non-Aggression Pact! That somewhat strengthened political left in the country."
+	picture = "assistance"
+
+	option = {
+		name = "Good"
+		relation = { who = CHI value = 10 }
+		non_aggression_pact = CHI
+	}
+}
+country_event = {
+	
+	id = 2203
+
+	is_triggered_only = yes
+
+	title = "China declined"
+	desc = "China declined to sign the Non-Aggression Pact."
+	picture = "assistance"
+
+	option = {
+		name = "Their loss."
+		relation = { who = CHI value = -10 }
+	}
+}
+
+# Operation Zet
+country_event = {
+	
+	id = 2205
+	
+	is_triggered_only = yes
+
+	title = "Operation Zet"
+	desc = "The Soviet Union offered to send some volunteers to defend our skies from the Japanese threat!"
+	picture = "assistance"
+
+	option = {
+		name = "That would be great!"
+		ai_chance = {
+			factor = 75
+			modifier = { factor = 1.3 relation = { who = SOV value = 50 } }
+			modifier = { factor = 0.3 not = { relation = { who = SOV value = -50 } } }
+		}
+		SOV = { country_event = 2206 }
+		relation = { who = SOV value = 25 }
+		load_oob = "Operation_Zet.txt" # Gives a wing of Soviet Interceptors (level 1) to China in the production queue
+		left_wing_radical = { organisation = 1 }
+		leninist = { organisation = 3 }
+		stalinist = { organisation = 5 }
+	}
+	option = {
+		name = "We don't need it."
+		ai_chance = {
+			factor = 25
+			modifier = { factor = 0.0 relation = { who = SOV value = 50 } }
+			modifier = { factor = 3.0 not = { relation = { who = SOV value = -50 } } }
+		}
+		SOV = { country_event = 2207 }
+		left_wing_radical = { organisation = -1 }
+		leninist = { organisation = -1 }
+		stalinist = { organisation = -1 }
+	}
+}
+
+# Response from China
+country_event = {
+	
+	id = 2206
+
+	is_triggered_only = yes
+
+	title = "China agreed"
+	desc = "Operation Zet will proceed as planned."
+	picture = "assistance"
+
+	option = {
+		name = "Good"
+		relation = { who = CHI value = 25 }
+		supplies = -5000
+		money = -250
+	}
+}
+country_event = {
+	
+	id = 2207
+
+	is_triggered_only = yes
+
+	title = "China declined"
+	desc = "China declined our help."
+	picture = "assistance"
+
+	option = {
+		name = "Their loss."
+	}
+}

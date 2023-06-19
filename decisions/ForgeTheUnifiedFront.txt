@@ -1,0 +1,152 @@
+############################
+# Forge the Unified Front! #
+############################
+diplomatic_decisions = {
+
+	forge_the_unified_front = {
+		major = yes
+		potential = {
+			tag = CHI
+			not = { has_country_flag = "forge_the_unified_front" }
+			OR = {	# At least one of the Warlords exist!
+				exists = CYN
+				exists = CHC
+				exists = CGX
+				exists = SIK
+				exists = CSX
+				exists = CXB
+			}
+			war_with = JAP
+		}
+		allow = {
+			any_owned_province = { controlled_by = JAP }
+			war_with = JAP
+		}
+		effect = {
+			set_country_flag = "forge_the_unified_front"
+			war_exhaustion = -10
+			JAP = {
+				threat = { who = CHC value = 15 }
+				threat = { who = CSX value = 15 }
+				threat = { who = CGX value = 15 }
+				threat = { who = CXB value = 15 }
+				threat = { who = CYN value = 15 }
+				threat = { who = SIK value = 15 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	join_the_unified_front = {
+		major = yes
+		potential = {
+			OR = {
+				tag = CGX
+				tag = CSX
+				tag = CXB
+				tag = SIK
+			}
+			exists = CHI
+			CHI = { has_country_flag = "forge_the_unified_front" }
+			CHI = { war_with = JAP }
+			not = { vassal_of = CHI }
+			not = { vassal_of = JAP }
+			not = { alliance_with = JAP }
+			not = { war_with = CHI }
+			not = {
+				any_neighbor_country = {
+					has_country_flag = "unified_front"
+					war_with = THIS
+				}
+			}
+			not = { has_country_flag = "unified_front" }
+			is_in_any_faction = no
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = unified_front
+			relation = { who = CHI value = 50 }
+			national_unity = 5
+			CHI = { create_alliance = THIS }
+			CHI = { country_event = 1752 }
+		}		
+	}
+	
+	join_the_unified_front_cyn = {
+		major = yes
+		potential = {
+			tag = CYN
+			exists = CHI
+			CHI = { has_country_flag = "forge_the_unified_front" }
+			CHI = { war_with = JAP }
+			not = { vassal_of = CHI }
+			not = { vassal_of = JAP }
+			not = { alliance_with = JAP }
+			not = { war_with = CHI }
+			not = {
+				any_neighbor_country = {
+					has_country_flag = "unified_front"
+					war_with = THIS
+				}
+			}
+			not = { has_country_flag = "unified_front" }
+			is_in_any_faction = no
+		}
+		allow = {
+			CHI = { war_with = JAP }
+			not = { vassal_of = CHI }
+			not = { vassal_of = JAP }
+			not = { alliance_with = JAP }
+			not = { war_with = CHI }
+			is_in_any_faction = no
+		}
+		effect = {
+			set_country_flag = "unified_front"
+			relation = { who = CHI value = 50 }
+			national_unity = 5
+			CHI = { create_alliance = THIS }
+			CHI = { country_event = 1752 }
+			CHI = { split_troops = 0.5 }
+		}		
+	}
+	
+	join_the_unified_front_chc = {
+		major = yes
+		potential = {
+			tag = CHC
+			exists = CHI
+			CHI = { has_country_flag = "forge_the_unified_front" }
+			CHI = { war_with = JAP }
+			not = { vassal_of = CHI }
+			not = { vassal_of = JAP }
+			not = { alliance_with = JAP }
+			not = { war_with = CHI }
+			not = {
+				any_neighbor_country = {
+					has_country_flag = "unified_front"
+					war_with = THIS
+				}
+			}
+			not = { has_country_flag = "unified_front" }
+			is_in_any_faction = no
+		}
+		allow = {
+			CHI = { war_with = JAP }
+			not = { vassal_of = CHI }
+			not = { vassal_of = JAP }
+			not = { alliance_with = JAP }
+			not = { war_with = CHI }
+			is_in_any_faction = no
+		}
+		effect = {
+			set_country_flag = "unified_front"
+			relation = { who = CHI value = 50 }
+			national_unity = 5
+			CHI = { non_aggression_pact = THIS }	# Only renewal of the NAP, no alliance!
+			CHI = { country_event = 1752 }
+		}		
+	}
+}

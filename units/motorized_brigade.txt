@@ -1,0 +1,94 @@
+motorized_brigade = {
+	type = land
+	sprite = Motor
+	unit_group = infantry_unit_type
+	active = no
+
+	#Size Definitions
+	max_strength = 30
+	default_organisation = 30
+	default_morale = 0.30
+	officers = 100
+
+	#Building Costs
+	build_cost_ic = 10.00
+	build_cost_manpower = 3.00
+	build_time = 120
+
+	#Misc Abilities
+	maximum_speed = 13.00
+	transport_weight = 15.00
+	supply_consumption = 1.00
+	fuel_consumption = 2.30
+	radio_strength = 1
+
+	#Defensive Abilities
+	defensiveness = 1.50
+	toughness = 0.50
+	softness = 0.90
+	air_defence = 1.50
+
+	#Offensive Abilities
+	suppression = 1.00
+	soft_attack = 0.50
+	hard_attack = 0.50
+	air_attack = 0.25
+
+	urban = {
+		attack = -0.10
+		attrition = 0.15
+	}
+   	amphibious = {
+		attack = -0.20
+	}
+	river = {
+		attack = -0.10
+		movement = -0.25
+	}
+   	marsh = {
+		attack = -0.20
+		movement = -0.70
+		attrition = 0.15
+	}
+	jungle = {
+		attack = -0.25
+		movement = -0.70
+		attrition = 0.15
+	}
+	forest = {
+		attack = -0.20
+		movement = -0.50
+		attrition = 0.15
+	}
+	woods = {
+		attack = -0.15
+		movement = -0.25
+		attrition = 0.15
+	}
+	mountain = {
+		attack = -0.20
+		movement = -0.70
+		attrition = 0.15
+	}
+	hills = {
+		attack = -0.15
+		movement = -0.25
+		attrition = 0.15
+	}
+	arctic = {
+		movement = -0.30
+		attrition = 0.15
+	}
+	desert = {
+		movement = -0.50
+		attrition = 0.15
+	}
+	
+	
+	combat_width = 1
+
+	completion_size = 0.15
+	on_completion = mobile_practical
+	priority = 9
+
+}

@@ -1,0 +1,97 @@
+self_propelled_support_brigade = {
+	type = land
+	sprite = Infantry
+	unit_group = artillery_unit_type
+	active = no
+
+	#Size Definitions
+	max_strength = 10
+	default_organisation = 30
+	default_morale = 0.30
+	officers = 100
+
+	#Building Costs
+	build_cost_ic = 15.00
+	build_cost_manpower = 1.00
+	build_time = 100
+
+	#Misc Abilities
+	maximum_speed = 15.00
+	transport_weight = 7.50
+	supply_consumption = 2.0
+	fuel_consumption = 2.00
+	radio_strength = 1
+
+	#Defensive Abilities
+	defensiveness = 0.0
+	toughness = 0.00
+	softness = 0.75
+	air_defence = 0.00
+	armor_value = 2
+
+	#Offensive Abilities
+	suppression = 0.00
+	soft_attack = 0.00
+	hard_attack = 0.00
+	air_attack = 0.00
+
+	urban = {
+		attack = -0.40
+		defence = -0.10
+		attrition = 0.3
+	}
+   	amphibious = {
+		attack = -0.80
+	}
+    river = {
+		attack = -0.20
+		movement = -0.25
+	}
+   	marsh = {
+		attack = -0.50
+		movement = -0.20
+		attrition = 0.3
+	}
+	jungle = {
+		attack = -0.60
+		movement = -0.40
+		attrition = 0.3
+	}
+	forest = {
+		attack = -0.35
+		movement = -0.30
+		attrition = 0.3
+	}
+	woods = {
+		attack = -0.25
+		movement = -0.20
+		attrition = 0.3
+	}
+	mountain = {
+		attack = -0.40 
+		movement = -0.40
+		attrition = 0.3
+	}
+	hills = {
+		attack = -0.20
+		movement = -0.20
+		attrition = 0.3
+	}
+	plains = {
+		attrition = 0.3
+	}
+	arctic = {
+		attrition = 0.3
+	}
+	desert = {
+		attrition = 0.3
+	}
+	
+	combat_width = 0.25
+
+	completion_size = 0.1
+	on_completion = mobile_practical
+	
+	priority = 5
+
+}

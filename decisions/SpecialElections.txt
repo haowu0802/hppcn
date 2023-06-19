@@ -1,0 +1,112 @@
+diplomatic_decisions = {
+
+	hold_early_elections_soc_dem = {
+		major = yes
+		potential = {
+			government = social_democracy
+			war = no
+			not = { has_country_modifier = "election_soc_dem" }
+		}
+		allow = {
+			# Only available if the government loses support!
+			not = { national_unity = 85 }
+			dissent = 5
+			or = {
+				not = { popularity = 33 }
+				not = { organisation = 20 }
+				dissent = 15
+			}
+		}
+		effect = {
+			# Holding early elections won't help you retain your power...
+			organisation = -10
+			popularity = -15
+			# Some random shifts in power and popularity
+			random_list = {
+				3 	= { national_socialist 	= { organisation = 20 } }
+				7 	= { fascistic 			= { organisation = 15 } }
+				10 	= { paternal_autocrat 	= { organisation = 10 } }
+				15 	= { social_conservative = { organisation = 5 } }
+				15 	= { market_liberal 		= { organisation = 5 } }
+				15 	= { social_liberal 		= { organisation = 5 } }
+				15 	= { social_democrat 	= { organisation = 5 } }
+				10 	= { left_wing_radical 	= { organisation = 10 } }
+				7 	= { leninist 			= { organisation = 15 } }
+				3 	= { stalinist 			= { organisation = 20 } }
+			}
+			random_list = {
+				3 	= { national_socialist 	= { popularity = 40 } }
+				7 	= { fascistic 			= { popularity = 30 } }
+				10 	= { paternal_autocrat 	= { popularity = 20 } }
+				15 	= { social_conservative = { popularity = 10 } }
+				15 	= { market_liberal 		= { popularity = 10 } }
+				15 	= { social_liberal 		= { popularity = 10 } }
+				15 	= { social_democrat 	= { popularity = 10 } }
+				10 	= { left_wing_radical 	= { popularity = 20 } }
+				7 	= { leninist 			= { popularity = 30 } }
+				3 	= { stalinist 			= { popularity = 40 } }
+			}
+			# Now let's hold elections!
+			do_election = THIS
+			# We shouldn't be able to do this every day though...
+			add_country_modifier = {
+				name = "election_soc_dem"
+				duration = 30
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	hold_early_elections_cons_mon = {
+		major = yes
+		potential = {
+			government = constitutional_monarchy
+			war = no
+			not = { has_country_modifier = "election_cons_mon" }
+		}
+		allow = {
+			# The King can hold new Elections at any time.
+		}
+		effect = {
+			# The current government is kicked out
+			organisation = -10
+			popularity = -15
+			# Some random shifts in power and popularity
+			random_list = {
+				3 	= { national_socialist 	= { organisation = 20 } }
+				7 	= { fascistic 			= { organisation = 15 } }
+				10 	= { paternal_autocrat 	= { organisation = 10 } }
+				15 	= { social_conservative = { organisation = 5 } }
+				15 	= { market_liberal 		= { organisation = 5 } }
+				15 	= { social_liberal 		= { organisation = 5 } }
+				15 	= { social_democrat 	= { organisation = 5 } }
+				10 	= { left_wing_radical 	= { organisation = 10 } }
+				7 	= { leninist 			= { organisation = 15 } }
+				3 	= { stalinist 			= { organisation = 20 } }
+			}
+			random_list = {
+				3 	= { national_socialist 	= { popularity = 20 } }
+				7 	= { fascistic 			= { popularity = 15 } }
+				10 	= { paternal_autocrat 	= { popularity = 10 } }
+				15 	= { social_conservative = { popularity = 5 } }
+				15 	= { market_liberal 		= { popularity = 5 } }
+				15 	= { social_liberal 		= { popularity = 5 } }
+				15 	= { social_democrat 	= { popularity = 5 } }
+				10 	= { left_wing_radical 	= { popularity = 10 } }
+				7 	= { leninist 			= { popularity = 15 } }
+				3 	= { stalinist 			= { popularity = 20 } }
+			}
+			do_election = THIS
+			add_country_modifier = {
+				name = "election_cons_mon"
+				duration = 30
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

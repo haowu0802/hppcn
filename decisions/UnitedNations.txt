@@ -1,0 +1,59 @@
+diplomatic_decisions = {
+
+	forming_the_united_nations = {
+		major = yes
+		potential = {
+			tag = USA
+			faction = allies
+			has_country_flag = "great_war"
+			not = { has_global_flag = "united_nations" }
+			
+		}
+		allow = {
+			not = { base_neutrality = 90 }
+		}
+		effect = {
+			neutrality = -10
+			set_global_flag = "united_nations"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	the_war_is_escalating = {
+		major = yes
+		potential = {
+			not = { tag = GOD }
+			is_subject = no
+			has_global_flag = "united_nations"
+			neutrality = 50		# This is effective neutrality. It is enough to be threatened now!
+			war = no
+			is_in_any_faction = no
+			not = { has_country_flag = "escalating_war" }
+		}
+		allow = {
+			or = {
+				and = {
+					ideology_group = fascism
+					not = { any_neighbor_country = { war_with = GER } }
+				}
+				and = {
+					ideology_group = democracy
+					not = { any_neighbor_country = { war_with = ENG } }
+				}
+				and = {
+					ideology_group = communism
+					not = { any_neighbor_country = { war_with = SOV } }
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "escalating_war"
+			neutrality = -20
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

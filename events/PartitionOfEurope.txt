@@ -1,0 +1,426 @@
+country_event = {
+
+	id = 3801
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "Partition of Europe"
+	desc = "With Germany defeated, the Soviet Union proposed a plan for the reconstruction of Europe. Most of the borders from before the war will be restored, and Germany will be partitioned."
+	picture = "partition_of_europe"
+
+	option = {
+		name = "Let's have a deal! (Historical)"
+		ai_chance = { factor = 80 }
+		any_country = {
+			any_owned = {
+				limit = { is_core = GER }
+				remove_core = GER
+			}
+		}
+		any_owned = {
+			limit = { is_core = GER }
+			remove_core = GER
+		}
+		# West-Germany is easy.
+		west_germany_region = { add_core = DFR }
+		# East-Germany is also easy now!
+		east_germany_region = { add_core = DDR }
+		polish_germany_region = { add_core = POL }	# Representing the migration of Poles and deportation of Germans.
+		# And there's also North-Germany
+		north_germany_region = { add_core = SOV }	# Incorporated into the Soviet Union.
+		polish_soviet_region = { add_core = POL }	# Seceded to Poland. There were considerable Polish minorities already.
+		any_country = {
+			limit = {
+				or = {
+					faction = allies
+					faction = comintern
+				}
+				is_subject = no			# Vassals can't occupy territory anyway.
+			}
+			country_event = 3803
+		}
+		country_event = 3803
+	}
+
+	option = {
+		name = "No deal with the communists! (World War III)"
+		ai_chance = {
+			factor = 20
+			modifier = { factor = 0.0 war_exhaustion = 5 }
+			modifier = { factor = 0.0 not = { manpower = 300 } }
+			modifier = { factor = 0.0 not = { national_unity = 80 } }
+		}
+		west_germany_region = { add_core = DFR add_core = DDR }
+		east_germany_region = { add_core = DFR add_core = DDR }
+		polish_germany_region = { add_core = DDR add_core = DFR }
+		north_germany_region = { add_core = SOV add_core = POL }
+		polish_soviet_region = { add_core = SOV add_core = POL }
+		any_country = {
+			any_owned = {
+				limit = { is_core = GER }
+				remove_core = GER
+			}
+		}
+		any_owned = {
+			limit = { is_core = GER }
+			remove_core = GER
+		}
+		war = {
+			target = FROM
+			attacker_goal = { casus_belli = install_democracy }
+		}
+	}
+}
+
+country_event = {
+
+	id = 3802
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "Partition of Europe"
+	desc = "With Germany defeated, the Allies proposed a plan for the reconstruction of Europe. Most of the borders from before the war will be restored, and Germany will be partitioned."
+	picture = "partition_of_europe"
+
+
+	option = {
+		name = "Let's have a deal! (Historical)"
+		ai_chance = { factor = 80 }
+		any_country = {
+			any_owned = {
+				limit = { is_core = GER }
+				remove_core = GER
+			}
+		}
+		any_owned = {
+			limit = { is_core = GER }
+			remove_core = GER
+		}
+		# West-Germany is easy.
+		west_germany_region = { add_core = DFR }
+		# East-Germany is also easy now!
+		east_germany_region = { add_core = DDR }
+		polish_germany_region = { add_core = POL }	# Representing the migration of Poles and deportation of Germans.
+		# And there's also North-Germany
+		north_germany_region = { add_core = SOV }	# Incorporated into the Soviet Union.
+		polish_soviet_region = { add_core = POL }	# Seceded to Poland. There were considerable Polish minorities already.
+		any_country = {
+			limit = {
+				or = {
+					faction = allies
+					faction = comintern
+				}
+				is_subject = no
+			}
+			country_event = 3803
+		}
+		country_event = 3803
+	}
+
+	option = {
+		name = "No deal with the imperialists! (World War III)"
+		ai_chance = {
+			factor = 20
+			modifier = { factor = 0.0 war_exhaustion = 5 }
+			modifier = { factor = 0.0 not = { manpower = 300 } }
+			modifier = { factor = 0.0 not = { national_unity = 80 } }
+		}
+		west_germany_region = { add_core = DFR add_core = DDR }
+		east_germany_region = { add_core = DFR add_core = DDR }
+		polish_germany_region = { add_core = DDR add_core = DFR }
+		north_germany_region = { add_core = SOV add_core = POL }
+		polish_soviet_region = { add_core = SOV add_core = POL }
+		any_country = {
+			any_owned = {
+				limit = { is_core = GER }
+				remove_core = GER
+			}
+		}
+		any_owned = {
+			limit = { is_core = GER }
+			remove_core = GER
+		}
+		war = {
+			target = FROM
+			attacker_goal = { casus_belli = install_communism }
+		}
+	}
+}
+
+country_event = {
+
+	id = 3803
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "Reconstruction in Europe"
+	desc = "With the German war-machine now destroyed, it's time to restore order to Europe."
+	picture = "Fra_Liberated"
+
+	option = {
+		name = "Peace, at last!"
+			war_exhaustion = -5		# End of the War in Europe! Major relief!
+			any_owned = {
+				limit = { exists = AUS is_core = AUS not = { is_core = THIS } }
+				secede_province = AUS
+			}
+			any_owned = {
+				limit = { exists = HOL is_core = HOL not = { is_core = THIS } }
+				secede_province = HOL
+			}
+			any_owned = {
+				limit = { exists = BEL is_core = BEL not = { is_core = THIS } }
+				secede_province = BEL
+			}
+			any_owned = {
+				limit = { exists = DEN is_core = DEN not = { is_core = THIS } }
+				secede_province = DEN
+			}
+			any_owned = {
+				limit = { exists = LUX is_core = LUX not = { is_core = THIS } }
+				secede_province = LUX
+			}
+			any_owned = {
+				limit = { exists = CZE is_core = CZE not = { is_core = THIS } }
+				secede_province = CZE
+			}
+			any_owned = {
+				limit = { exists = ALB is_core = ALB not = { is_core = THIS } }
+				secede_province = ALB
+			}
+			any_owned = {
+				limit = { exists = NOR is_core = NOR not = { is_core = THIS } }
+				secede_province = NOR
+			}
+			any_owned = {
+				limit = { exists = SWE is_core = SWE not = { is_core = THIS } }
+				secede_province = SWE
+			}
+			any_owned = {
+				limit = { exists = FIN is_core = FIN not = { is_core = THIS } }
+				secede_province = FIN
+			}
+			any_owned = {
+				limit = { exists = YUG is_core = YUG not = { is_core = THIS } }
+				secede_province = YUG
+			}
+			any_owned = {
+				limit = { exists = GRE is_core = GRE not = { is_core = THIS } }
+				secede_province = GRE
+			}
+			any_owned = {
+				limit = { exists = FRA is_core = FRA not = { is_core = THIS } }
+				secede_province = FRA
+			}
+			any_owned = {
+				limit = { exists = SCH is_core = SCH not = { is_core = THIS } }
+				secede_province = SCH
+			}
+			any_owned = {
+				limit = { exists = ITA is_core = ITA not = { is_core = THIS } }
+				secede_province = ITA
+			}
+			any_owned = {
+				limit = { exists = BUL is_core = BUL not = { is_core = THIS } }
+				secede_province = BUL
+			}
+			any_owned = {
+				limit = { exists = ROM is_core = ROM not = { is_core = THIS } }
+				secede_province = ROM
+			}
+			any_owned = {
+				limit = { exists = HUN is_core = HUN not = { is_core = THIS } }
+				secede_province = HUN
+			}
+			any_owned = {
+				limit = { exists = POL is_core = POL not = { is_core = THIS } }
+				secede_province = POL
+			}
+			any_owned = {
+				limit = { exists = EST is_core = EST not = { is_core = THIS } }
+				secede_province = EST
+			}
+			any_owned = {
+				limit = { exists = LAT is_core = LAT not = { is_core = THIS } }
+				secede_province = LAT
+			}
+			any_owned = {
+				limit = { exists = LIT is_core = LIT not = { is_core = THIS } }
+				secede_province = LIT
+			}
+			any_owned = {
+				limit = { exists = SOV is_core = SOV not = { is_core = THIS } }
+				secede_province = SOV
+			}
+			any_owned = {
+				limit = { exists = SOV is_core = SOV THIS = { faction = comintern } }
+				secede_province = SOV
+			}
+			any_owned = {
+				limit = { exists = DFR is_core = DFR not = { is_core = THIS } }
+				secede_province = DFR
+			}
+			any_owned = {
+				limit = { exists = DDR is_core = DDR not = { is_core = THIS } }
+				secede_province = DDR
+			}
+	}
+	
+}
+
+country_event = {
+
+	id = 3804
+
+	is_triggered_only = yes
+
+	major = yes
+
+	title = "Reconstruction in Europe"
+	desc = "With the German war-machine now destroyed, it's time to restore order to Europe."
+	picture = "Fra_Liberated"
+
+	option = {
+		name = "Peace, at last!"
+			war_exhaustion = -5		# End of the War in Europe! Major relief!
+			any_owned = {
+				limit = { exists = AUS is_core = AUS not = { is_core = THIS } }
+				secede_province = AUS
+			}
+			any_owned = {
+				limit = { exists = HOL is_core = HOL not = { is_core = THIS } }
+				secede_province = HOL
+			}
+			any_owned = {
+				limit = { exists = BEL is_core = BEL not = { is_core = THIS } }
+				secede_province = BEL
+			}
+			any_owned = {
+				limit = { exists = DEN is_core = DEN not = { is_core = THIS } }
+				secede_province = DEN
+			}
+			any_owned = {
+				limit = { exists = LUX is_core = LUX not = { is_core = THIS } }
+				secede_province = LUX
+			}
+			any_owned = {
+				limit = { exists = CZE is_core = CZE not = { is_core = THIS } }
+				secede_province = CZE
+			}
+			any_owned = {
+				limit = { exists = ALB is_core = ALB not = { is_core = THIS } }
+				secede_province = ALB
+			}
+			any_owned = {
+				limit = { exists = NOR is_core = NOR not = { is_core = THIS } }
+				secede_province = NOR
+			}
+			any_owned = {
+				limit = { exists = SWE is_core = SWE not = { is_core = THIS } }
+				secede_province = SWE
+			}
+			any_owned = {
+				limit = { exists = FIN is_core = FIN not = { is_core = THIS } }
+				secede_province = FIN
+			}
+			any_owned = {
+				limit = { exists = YUG is_core = YUG not = { is_core = THIS } }
+				secede_province = YUG
+			}
+			any_owned = {
+				limit = { exists = GRE is_core = GRE not = { is_core = THIS } }
+				secede_province = GRE
+			}
+			any_owned = {
+				limit = { exists = FRA is_core = FRA not = { is_core = THIS } }
+				secede_province = FRA
+			}
+			any_owned = {
+				limit = { exists = SCH is_core = SCH not = { is_core = THIS } }
+				secede_province = SCH
+			}
+			any_owned = {
+				limit = { exists = ITA is_core = ITA not = { is_core = THIS } }
+				secede_province = ITA
+			}
+			any_owned = {
+				limit = { exists = BUL is_core = BUL not = { is_core = THIS } }
+				secede_province = BUL
+			}
+			any_owned = {
+				limit = { exists = ROM is_core = ROM not = { is_core = THIS } }
+				secede_province = ROM
+			}
+			any_owned = {
+				limit = { exists = HUN is_core = HUN not = { is_core = THIS } }
+				secede_province = HUN
+			}
+			any_owned = {
+				limit = { exists = POL is_core = POL not = { is_core = THIS } }
+				secede_province = POL
+			}
+			any_owned = {
+				limit = { exists = EST is_core = EST not = { is_core = THIS } }
+				secede_province = EST
+			}
+			any_owned = {
+				limit = { exists = LAT is_core = LAT not = { is_core = THIS } }
+				secede_province = LAT
+			}
+			any_owned = {
+				limit = { exists = LIT is_core = LIT not = { is_core = THIS } }
+				secede_province = LIT
+			}
+			any_owned = {
+				limit = { exists = RUS is_core = RUS not = { is_core = THIS } }
+				secede_province = RUS
+			}
+			any_owned = {
+				limit = { exists = UKR is_core = UKR not = { is_core = THIS } }
+				secede_province = UKR
+			}
+			any_owned = {
+				limit = { exists = ARM is_core = ARM not = { is_core = THIS } }
+				secede_province = ARM
+			}
+			any_owned = {
+				limit = { exists = AZB is_core = AZB not = { is_core = THIS } }
+				secede_province = AZB
+			}
+			any_owned = {
+				limit = { exists = BLR is_core = BLR not = { is_core = THIS } }
+				secede_province = BLR
+			}
+			any_owned = {
+				limit = { exists = GEO is_core = GEO not = { is_core = THIS } }
+				secede_province = GEO
+			}
+			any_owned = {
+				limit = { exists = KAZ is_core = KAZ not = { is_core = THIS } }
+				secede_province = KAZ
+			}
+			any_owned = {
+				limit = { exists = KYG is_core = KYG not = { is_core = THIS } }
+				secede_province = KYG
+			}
+			any_owned = {
+				limit = { exists = TRK is_core = TRK not = { is_core = THIS } }
+				secede_province = TAJ
+			}
+			any_owned = {
+				limit = { exists = UZB is_core = UZB not = { is_core = THIS } }
+				secede_province = UZB
+			}
+			any_owned = {
+				limit = { exists = DFR is_core = DFR not = { is_core = THIS } }
+				secede_province = DFR
+			}
+	}
+	
+}

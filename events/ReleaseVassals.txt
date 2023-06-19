@@ -1,0 +1,184 @@
+country_event = {
+
+	id = 7201
+	
+	trigger = {
+		is_subject = yes
+	}
+	
+	is_triggered_only = yes
+	
+	title = "Independence restored!"
+	desc = "Our indepedence is restored!"
+	picture = "FRA_liberated"
+	
+	option = {
+		name = "At last!"
+		do_election	= THIS
+		GOD = { split_troops = 1.0 }
+		GOD = { country_event = 7202 }
+	}
+}
+country_event = {
+
+	id = 7202
+	
+	is_triggered_only = yes
+	
+	title = "Releasing a vassal"
+	desc = "The independence of a former puppet nation is restored."
+	picture = "constitutional"
+	
+	option = {
+		name = "Done."
+		inherit = FROM
+		any_owned = {
+			limit = {
+				not = { is_core = THIS }
+			}
+			secede_province = FROM
+		}
+		FROM = { split_troops = 1.0 }
+	}
+}
+
+country_event = {
+
+	id = 7203
+	
+	is_triggered_only = yes
+	
+	trigger = { ideology = national_socialist }
+	
+	title = "Freedom!"
+	desc = "We are no longer the puppet of another country and can make our own decisions!"
+	picture = "constitutional"
+	
+	option = {
+		name = "Great!"
+		government = national_socialism
+	}
+}
+
+country_event = {
+
+	id = 7204
+	
+	is_triggered_only = yes
+	
+	trigger = { ideology = fascistic }
+	
+	title = "Freedom!"
+	desc = "We are no longer the puppet of another country and can make our own decisions!"
+	picture = "constitutional"
+	
+	option = {
+		name = "Great!"
+		government = right_wing_republic
+	}
+}
+
+country_event = {
+
+	id = 7205
+	
+	is_triggered_only = yes
+	
+	trigger = { ideology = paternal_autocrat }
+	
+	title = "Freedom!"
+	desc = "We are no longer the puppet of another country and can make our own decisions!"
+	picture = "constitutional"
+	
+	option = {
+		name = "Great!"
+		government = right_wing_autocrat
+	}
+}
+
+country_event = {
+
+	id = 7206
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		or = {
+			ideology = social_conservative
+			ideology = market_liberal
+		}
+	}
+	
+	title = "Freedom!"
+	desc = "We are no longer the puppet of another country and can make our own decisions!"
+	picture = "constitutional"
+	
+	option = {
+		name = "Great!"
+		government = social_conservatism
+	}
+}
+
+country_event = {
+
+	id = 7207
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		or = {
+			ideology = social_liberal
+			ideology = social_democrat
+		}
+	}
+	
+	title = "Freedom!"
+	desc = "We are no longer the puppet of another country and can make our own decisions!"
+	picture = "constitutional"
+	
+	option = {
+		name = "Great!"
+		government = social_democracy
+	}
+}
+
+country_event = {
+
+	id = 7208
+	
+	is_triggered_only = yes
+	
+	trigger = { ideology = left_wing_radical }
+	
+	title = "Freedom!"
+	desc = "We are no longer the puppet of another country and can make our own decisions!"
+	picture = "constitutional"
+	
+	option = {
+		name = "Great!"
+		government = left_wing_radicals
+	}
+}
+
+country_event = {
+
+	id = 7209
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		or = {
+			ideology = leninist
+			ideology = stalinist
+		}
+	}
+	
+	title = "Freedom!"
+	desc = "We are no longer the puppet of another country and can make our own decisions!"
+	picture = "constitutional"
+	
+	option = {
+		name = "Great!"
+		government = socialist_republic
+	}
+}

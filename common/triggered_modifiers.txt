@@ -1,0 +1,6946 @@
+###################################################################
+# Triggered modifiers are here.
+# Effects are fully scriptable.
+###################################################################
+
+#test = {
+#	potential = {
+		#tag = REB
+#		ai = no
+#	}
+#	trigger = {
+#	}
+#	
+#	nuclear_production = 0.5
+#	
+#	icon = 13
+#}
+
+
+###################
+# Faction-related #
+###################
+
+# Axis
+
+wrong_faction_axis = {
+
+	potential = {
+		government_in_exile = no
+		is_subject = no
+		faction = axis
+		not = { ideology_group = fascism }
+		not = { ideology = social_conservative }
+	}
+	
+	trigger = {
+		faction = axis
+		not = { ideology_group = fascism }
+		not = { ideology = social_conservative }
+	}
+	
+	dissent = 0.1
+	ruling_party_support = -0.1
+	
+	icon = 13
+}
+
+# Allies
+
+wrong_faction_allies = {
+
+	potential = {
+		government_in_exile = no
+		is_subject = no
+		faction = allies
+		not = { ideology_group = democracy }
+		not = { ideology = paternal_autocrat }
+		not = { ideology = left_wing_radical }
+	}
+	
+	trigger = {
+		faction = allies
+		not = { ideology_group = democracy }
+		not = { ideology = paternal_autocrat }
+		not = { ideology = left_wing_radical }
+	}
+	
+	dissent = 0.1
+	ruling_party_support = -0.1
+	
+	icon = 13
+}
+
+# Comintern
+
+wrong_faction_comintern = {
+
+	potential = {
+		government_in_exile = no
+		is_subject = no
+		faction = comintern
+		not = { ideology_group = communism }
+		not = { ideology = social_democrat }
+	}
+	
+	trigger = {
+		faction = comintern
+		not = { ideology_group = communism }
+		not = { ideology = social_democrat }
+	}
+	
+	dissent = 0.1
+	ruling_party_support = -0.1
+	
+	icon = 13
+}
+
+# Generic faction-related
+
+intelligence_cooperation_1 = {
+
+	potential = {
+		war = yes
+		is_in_any_faction = yes
+		not = { num_in_faction = 10 }
+	}
+	
+	trigger = {
+		radio_technology = 1		# Need equipment to keep in tuch.
+		num_in_faction = 5
+	}
+	
+	counter_espionage = 0.05
+	espionage_bonus = 0.05
+	
+	icon = 13
+}
+
+intelligence_cooperation_2 = {
+
+	potential = {
+		war = yes
+		is_in_any_faction = yes
+		num_in_faction = 10
+	}
+	
+	trigger = {
+		radio_technology = 1		# Need equipment to keep in tuch.
+		num_in_faction = 10
+	}
+	
+	offmap_land_intel = 0.1
+	offmap_naval_intel = 0.1
+	offmap_air_intel = 0.1
+	
+	icon = 13
+}
+
+intelligence_cooperation_3 = {
+
+	potential = {
+		war = yes
+		is_in_any_faction = yes
+		num_in_faction = 10
+	}
+	
+	trigger = {
+		radio_technology = 1		# Need equipment to keep in tuch.
+		num_in_faction = 10
+	}
+	
+	counter_espionage = 0.075
+	espionage_bonus = 0.075
+	offmap_political_intel = 0.1
+	offmap_industry_intel = 0.1
+	
+	icon = 13
+}
+
+research_cooperation_1 = {
+
+	potential = {
+		war = yes
+		is_in_any_faction = yes
+		not = { num_in_faction = 10 }
+	}
+	
+	trigger = {
+		radio_technology = 1		# Need equipment to keep in tuch.
+		num_in_faction = 5
+	}
+	
+	research_efficiency = 0.05
+	
+	icon = 13
+}
+
+research_cooperation_2 = {
+
+	potential = {
+		war = yes
+		is_in_any_faction = yes
+		num_in_faction = 10
+	}
+	
+	trigger = {
+		radio_technology = 1		# Need equipment to keep in tuch.
+		num_in_faction = 10
+	}
+	
+	research_efficiency = 0.1
+	
+	icon = 13
+}
+
+# Education
+
+education_tech_1 = {
+	potential = {
+		education = 1
+		not = { education = 2 }
+	}
+	
+	global_leadership = 0.5
+	
+	icon = 13
+}
+
+education_tech_2 = {
+	potential = {
+		education = 2
+		not = { education = 3 }
+	}
+	
+	global_leadership = 1.0
+	
+	icon = 13
+}
+
+education_tech_3 = {
+	potential = {
+		education = 3
+		not = { education = 4 }
+	}
+	
+	global_leadership = 1.5
+	
+	icon = 13
+}
+
+education_tech_4 = {
+	potential = {
+		education = 4
+		not = { education = 5 }
+	}
+	
+	global_leadership = 2.0
+	
+	icon = 13
+}
+
+education_tech_5 = {
+	potential = {
+		education = 5
+		not = { education = 6 }
+	}
+	
+	global_leadership = 2.5
+	
+	icon = 13
+}
+
+education_tech_6 = {
+	potential = {
+		education = 6
+		not = { education = 7 }
+	}
+	
+	global_leadership = 3.0
+	
+	icon = 13
+}
+
+education_tech_7 = {
+	potential = {
+		education = 7
+		not = { education = 8 }
+	}
+	
+	global_leadership = 3.5
+	
+	icon = 13
+}
+
+education_tech_8 = {
+	potential = {
+		education = 8
+		not = { education = 9 }
+	}
+	
+	global_leadership = 4.0
+	
+	icon = 13
+}
+
+education_tech_9 = {
+	potential = {
+		education = 9
+		not = { education = 10 }
+	}
+	
+	global_leadership = 4.5
+	
+	icon = 13
+}
+
+education_tech_10 = {
+	potential = {
+		education = 10
+		not = { education = 11 }
+	}
+	
+	global_leadership = 5.0
+	
+	icon = 13
+}
+
+education_tech_11 = {
+	potential = {
+		education = 11
+		not = { education = 12 }
+	}
+	
+	global_leadership = 5.5
+	
+	icon = 13
+}
+
+education_tech_12 = {
+	potential = {
+		education = 12
+		not = { education = 13 }
+	}
+	
+	global_leadership = 6.0
+	
+	icon = 13
+}
+
+education_tech_13 = {
+	potential = {
+		education = 13
+		not = { education = 14 }
+	}
+	
+	global_leadership = 6.5
+	
+	icon = 13
+}
+
+education_tech_14 = {
+	potential = {
+		education = 14
+		not = { education = 15 }
+	}
+	
+	global_leadership = 7.0
+	
+	icon = 13
+}
+
+education_tech_15 = {
+	potential = {
+		education = 15
+		not = { education = 16 }
+	}
+	
+	global_leadership = 7.5
+	
+	icon = 13
+}
+
+education_tech_16 = {
+	potential = {
+		education = 16
+	}
+	
+	global_leadership = 8.0
+	
+	icon = 13
+}
+
+# Winter Equipment
+
+winter_equipment_1 = {
+	potential = {
+		mountain_warfare_equipment = 1
+		not = { mountain_warfare_equipment = 3 }
+	}
+	
+	winter_effects = 0.25
+	
+	icon = 13
+}
+
+winter_equipment_2 = {
+	potential = {
+		mountain_warfare_equipment = 3
+		not = { mountain_warfare_equipment = 5 }
+	}
+	
+	winter_effects = 0.5
+	
+	icon = 13
+}
+
+winter_equipment_3 = {
+	potential = {
+		mountain_warfare_equipment = 7
+	}
+	
+	winter_effects = 0.75
+	
+	icon = 13
+}
+
+# Partisans
+
+communist_partisans = {
+
+	potential = {
+		not = { ideology_group = communism }
+		not = { faction = comintern }
+		war_with = SOV
+		or = {
+			stalinist = { organisation = 25 popularity = 30 }
+			leninist = { organisation = 25 popularity = 30 }
+			left_wing_radical = { organisation = 25 popularity = 30 }
+			and = {
+				stalinist = { organisation = 13 popularity = 20 }
+				leninist = { organisation = 13 popularity = 20 }
+			}
+			and = {
+				leninist = { organisation = 13 popularity = 20 }
+				left_wing_radical = { organisation = 13 popularity = 20 }
+			}
+		}
+	}
+	trigger = {
+		not = { ideology_group = communism }
+		not = { faction = comintern }
+		war_with = SOV
+		or = {
+			stalinist = { organisation = 25 popularity = 30 }
+			leninist = { organisation = 25 popularity = 30 }
+			left_wing_radical = { organisation = 25 popularity = 30 }
+			and = {
+				stalinist = { organisation = 13 popularity = 20 }
+				leninist = { organisation = 13 popularity = 20 }
+			}
+			and = {
+				leninist = { organisation = 13 popularity = 20 }
+				left_wing_radical = { organisation = 13 popularity = 20 }
+			}
+		}
+	}
+	
+	partisan_efficiency = 5
+	supply_throughput = -0.05
+	industrial_efficiency = -0.05
+	research_efficiency = -0.05
+	global_resources = -0.15
+	
+	icon = 13
+
+}
+
+fascist_partisans = {
+
+	potential = {
+		not = { ideology_group = fascism }
+		not = { faction = axis }
+		or = {
+			and = {
+				war_with = GER
+				GER = { faction = axis }
+			}
+			and = {
+				war_with = ITA
+				ITA = { faction = axis }
+			}
+			and = {
+				war_with = JAP
+				JAP = { faction = axis }
+			}
+		}
+		or = {
+			national_socialist = { organisation = 25 popularity = 30 }
+			fascistic = { organisation = 25 popularity = 30 }
+			paternal_autocrat = { organisation = 25 popularity = 30 }
+			and = {
+				national_socialist = { organisation = 13 popularity = 20 }
+				fascistic = { organisation = 13 popularity = 20 }
+			}
+			and = {
+				fascistic = { organisation = 13 popularity = 20 }
+				paternal_autocrat = { organisation = 13 popularity = 20 }
+			}
+		}
+	}
+	trigger = {
+		not = { ideology_group = fascism }
+		not = { faction = axis }
+		or = {
+			and = {
+				war_with = GER
+				GER = { faction = axis }
+			}
+			and = {
+				war_with = ITA
+				ITA = { faction = axis }
+			}
+			and = {
+				war_with = JAP
+				JAP = { faction = axis }
+			}
+		}
+		or = {
+			national_socialist = { organisation = 25 popularity = 30 }
+			fascistic = { organisation = 25 popularity = 30 }
+			paternal_autocrat = { organisation = 25 popularity = 30 }
+			and = {
+				national_socialist = { organisation = 13 popularity = 20 }
+				fascistic = { organisation = 13 popularity = 20 }
+			}
+			and = {
+				fascistic = { organisation = 13 popularity = 20 }
+				paternal_autocrat = { organisation = 13 popularity = 20 }
+			}
+		}
+	}
+	
+	partisan_efficiency = 5
+	supply_throughput = -0.05
+	industrial_efficiency = -0.05
+	research_efficiency = -0.05
+	land_organisation = -0.15
+	
+	icon = 13
+
+}
+
+democratic_partisans = {
+
+	potential = {
+		not = { ideology_group = democracy }
+		not = { faction = allies }
+		or = {
+			and = {
+				war_with = ENG
+				ENG = { faction = allies }
+			}
+			and = {
+				war_with = FRA
+				FRA = { faction = allies }
+			}
+			and = {
+				war_with = USA
+				USA = { faction = allies }
+			}
+		}
+		or = {
+			social_democrat = { organisation = 25 popularity = 30 }
+			social_liberal = { organisation = 25 popularity = 30 }
+			market_liberal = { organisation = 25 popularity = 30 }
+			social_conservative = { organisation = 25 popularity = 30 }
+			and = {
+				social_democrat = { organisation = 13 popularity = 20 }
+				social_liberal = { organisation = 13 popularity = 20 }
+			}
+			and = {
+				social_liberal = { organisation = 13 popularity = 20 }
+				market_liberal = { organisation = 13 popularity = 20 }
+			}
+			and = {
+				market_liberal = { organisation = 13 popularity = 20 }
+				social_conservative = { organisation = 13 popularity = 20 }
+			}
+			and = {
+				social_democrat = { organisation = 9 popularity = 15 }
+				social_liberal = { organisation = 9 popularity = 15 }
+				market_liberal = { organisation = 9 popularity = 15 }
+			}
+			and = {
+				social_liberal = { organisation = 9 popularity = 15 }
+				market_liberal = { organisation = 9 popularity = 15 }
+				social_conservative = { organisation = 9 popularity = 15 }
+			}
+		}
+	}
+	trigger = {
+		not = { ideology_group = democracy }
+		not = { faction = allies }
+		or = {
+			and = {
+				war_with = ENG
+				ENG = { faction = allies }
+			}
+			and = {
+				war_with = FRA
+				FRA = { faction = allies }
+			}
+			and = {
+				war_with = USA
+				USA = { faction = allies }
+			}
+		}
+		or = {
+			social_democrat = { organisation = 25 popularity = 30 }
+			social_liberal = { organisation = 25 popularity = 30 }
+			market_liberal = { organisation = 25 popularity = 30 }
+			social_conservative = { organisation = 25 popularity = 30 }
+			and = {
+				social_democrat = { organisation = 13 popularity = 20 }
+				social_liberal = { organisation = 13 popularity = 20 }
+			}
+			and = {
+				social_liberal = { organisation = 13 popularity = 20 }
+				market_liberal = { organisation = 13 popularity = 20 }
+			}
+			and = {
+				market_liberal = { organisation = 13 popularity = 20 }
+				social_conservative = { organisation = 13 popularity = 20 }
+			}
+			and = {
+				social_democrat = { organisation = 9 popularity = 15 }
+				social_liberal = { organisation = 9 popularity = 15 }
+				market_liberal = { organisation = 9 popularity = 15 }
+			}
+			and = {
+				social_liberal = { organisation = 9 popularity = 15 }
+				market_liberal = { organisation = 9 popularity = 15 }
+				social_conservative = { organisation = 9 popularity = 15 }
+			}
+		}
+	}
+	
+	partisan_efficiency = 5
+	supply_throughput = -0.05
+	industrial_efficiency = -0.05
+	research_efficiency = -0.05
+	global_leadership_modifier = -0.15
+	
+	icon = 13
+
+}
+
+
+#####################################
+# Great Powers, now linked to Laws. #
+#####################################
+
+
+regional_power = {
+
+	potential = {
+		international_status = regional_power
+	}
+	
+	trigger = {
+		total_ic = 30
+		total_amount_of_brigades = 150
+	}
+	
+	global_manpower_modifier = 0.05
+	counter_intelligence = 0.05
+	
+	icon = 13
+}
+
+weak_regional_power = {
+
+	potential = {
+		government_in_exile = no
+		international_status = regional_power
+		or = {
+			not = { total_ic = 15 }
+			not = { total_amount_of_brigades = 75 }		# Can't get the law with less than 100, but can lose some later on!
+		}
+	}
+	
+	trigger = {
+		not = { total_ic = 15 }
+		not = { total_amount_of_brigades = 75 }
+	}
+	
+	
+	ruling_party_support = -0.10
+	dissent = 0.10
+	
+	icon = 14
+}
+
+major_power_land = {
+
+	potential = {
+		or = {
+			international_status = major_power
+			and = {
+				or = {
+					international_status = great_power
+					international_status = superpower
+				}
+				not = { total_amount_of_brigades = 600 }
+			}
+		}
+	}
+	
+	trigger = {
+		total_ic = 100
+		total_amount_of_brigades = 300
+	}
+	
+	land_organisation = 0.1
+	global_manpower_modifier = 0.05
+	counter_intelligence = 0.05
+	
+	icon = 5
+}
+
+major_power_naval = {
+
+	potential = {
+		or = {
+			international_status = major_power
+			and = {
+				or = {
+					international_status = great_power
+					international_status = superpower
+				}
+				not = { total_amount_of_ships = 120 }
+			}
+		}
+	}
+	
+	trigger = {
+		total_ic = 100
+		total_amount_of_ships = 100
+	}
+	
+	naval_organisation = 0.1
+	global_manpower_modifier = 0.05
+	counter_intelligence = 0.05
+	
+	icon = 6
+}
+
+major_power_air = {
+
+	potential = {
+		or = {
+			international_status = major_power
+			and = {
+				or = {
+					international_status = great_power
+					international_status = superpower
+				}
+				not = { total_amount_of_planes = 40 }
+			}
+		}
+	}
+	
+	trigger = {
+		total_ic = 100
+		total_amount_of_planes = 25
+	}
+	
+	air_organisation = 0.1
+	global_manpower_modifier = 0.05
+	counter_intelligence = 0.05
+	
+	icon = 7
+}
+
+weak_major_power = {
+
+	potential = {
+		government_in_exile = no
+		international_status = major_power
+		or = {
+			not = { total_ic = 50 }
+			and = {
+				not = { total_amount_of_brigades = 150 }	# Can't get the law with less than 200, but can lose some later on!
+				not = { total_amount_of_ships = 50 }		# There's no such requirement for the law
+				not = { total_amount_of_planes = 15 }		# Can get the law with 5 already
+			}
+		}
+	}
+	
+	trigger = {
+		not = { total_ic = 50 }
+		not = { total_amount_of_brigades = 150 }
+		not = { total_amount_of_ships = 50 }
+		not = { total_amount_of_planes = 15 }
+	}
+	
+	
+	ruling_party_support = -0.15
+	dissent = 0.15
+	
+	icon = 14
+}
+
+great_power_land = {
+
+	potential = {
+		or = {
+			international_status = great_power
+			and = {
+				international_status = superpower
+				or = {
+					not = { total_amount_of_ships = 150 }
+					not = { total_amount_of_planes = 60 }
+					not = { total_amount_of_brigades = 900 }
+				}
+			}
+		}
+	}
+	
+	trigger = {
+		total_ic = 200
+		total_amount_of_brigades = 600
+	}
+	
+	land_organisation = 0.15
+	org_regain = 0.05
+	global_manpower_modifier = 0.05
+	counter_intelligence = 0.05
+	
+	icon = 5
+}
+
+great_power_naval = {
+
+	potential = {
+		or = {
+			international_status = great_power
+			and = {
+				international_status = superpower
+				or = {
+					not = { total_amount_of_ships = 150 }
+					not = { total_amount_of_planes = 60 }
+					not = { total_amount_of_brigades = 900 }
+				}
+			}
+		}
+	}
+	
+	trigger = {
+		total_ic = 200
+		total_amount_of_ships = 120
+	}
+	
+	naval_organisation = 0.15
+	org_regain = 0.05
+	global_manpower_modifier = 0.05
+	counter_intelligence = 0.05
+	
+	icon = 6
+}
+
+great_power_air = {
+
+	potential = {
+		or = {
+			international_status = great_power
+			and = {
+				international_status = superpower
+				or = {
+					not = { total_amount_of_ships = 150 }
+					not = { total_amount_of_planes = 60 }
+					not = { total_amount_of_brigades = 900 }
+				}
+			}
+		}
+	}
+	
+	trigger = {
+		total_ic = 200
+		total_amount_of_planes = 40
+	}
+	
+	air_organisation = 0.15
+	org_regain = 0.05
+	global_manpower_modifier = 0.05
+	counter_intelligence = 0.05
+	
+	icon = 7
+}
+
+weak_great_power = {
+
+	potential = {
+		government_in_exile = no
+		international_status = great_power
+		or = {
+			not = { total_ic = 100 }
+			not = { total_amount_of_ships = 30 }
+			not = { total_amount_of_planes = 15 }
+			not = { total_amount_of_brigades = 300 }		# Can't get the law with less than 200, but can lose some later on!
+		}
+	}
+	
+	trigger = {
+		not = { total_ic = 100 }
+		not = { total_amount_of_ships = 30 }
+		not = { total_amount_of_planes = 15 }
+		not = { total_amount_of_brigades = 300 }
+	}
+	
+	ruling_party_support = -0.20
+	dissent = 0.20
+	
+	icon = 14
+}
+
+superpower = {
+
+	potential = {
+		international_status = superpower
+	}
+	
+	trigger = {
+		total_ic = 350
+		total_amount_of_brigades = 900
+		total_amount_of_planes = 60
+		total_amount_of_ships = 150
+	}
+	
+	land_organisation = 0.25
+	air_organisation = 0.25
+	naval_organisation = 0.25
+	org_regain = 0.25
+	global_manpower_modifier = 0.25
+	counter_intelligence = 0.25
+	
+	icon = 13
+}
+
+weak_superpower = {
+
+	potential = {
+		government_in_exile = no
+		international_status = superpower
+		or = {
+			not = { total_ic = 250 }
+			not = { total_amount_of_brigades = 450 }
+			not = { total_amount_of_planes = 20 }
+			not = { total_amount_of_ships = 50 }
+		}
+	}
+	
+	trigger = {
+		or = {
+			not = { total_ic = 250 }
+			not = { total_amount_of_brigades = 450 }
+			not = { total_amount_of_planes = 20 }
+			not = { total_amount_of_ships = 50 }
+		}
+	}
+	
+	ruling_party_support = -0.25
+	dissent = 0.25
+	
+	icon = 14
+}
+
+################
+# Army Related #
+################
+
+veteran_army_1 = {
+
+	potential = {
+		not = { land_battles_fought = 500 }
+	}
+
+	trigger = {
+		land_battles_fought = 250
+	}
+	
+	land_organisation = 0.05
+	global_leadership = 0.10
+	org_regain = 0.05
+	
+	icon = 5
+}
+
+veteran_army_2 = {
+
+	potential = {
+		land_battles_fought = 250
+		not = { land_battles_fought = 1000 }
+	}
+
+	trigger = {
+		land_battles_fought = 500
+	}
+	
+	land_organisation = 0.10
+	global_leadership = 0.20
+	org_regain = 0.10
+	
+	icon = 5
+}
+
+veteran_army_3 = {
+
+	potential = {
+		land_battles_fought = 500
+		not = { land_battles_fought = 2000 }
+	}
+
+	trigger = {
+		land_battles_fought = 1000
+	}
+	
+	land_organisation = 0.15
+	global_leadership = 0.30
+	org_regain = 0.15
+	
+	icon = 5
+}
+
+veteran_army_4 = {
+
+	potential = {
+		land_battles_fought = 1000
+		not = { land_battles_fought = 5000 }
+	}
+
+	trigger = {
+		land_battles_fought = 2000
+	}
+	
+	land_organisation = 0.20
+	global_leadership = 0.40
+	org_regain = 0.20
+	
+	icon = 5
+}
+
+veteran_army_5 = {
+
+	potential = {
+		land_battles_fought = 2000
+	}
+
+	trigger = {
+		land_battles_fought = 5000
+	}
+	
+	land_organisation = 0.25
+	global_leadership = 0.50
+	org_regain = 0.25
+	
+	icon = 5
+}
+
+big_army = {
+
+	potential = {
+		total_amount_of_brigades = 200
+		not = { total_amount_of_brigades = 500 }
+	}
+
+	trigger = {
+		total_amount_of_brigades = 250
+	}
+	
+	officer_recruitment = 0.25
+	
+	icon = 5
+}
+
+great_army_hpp = {
+
+	potential = {
+		total_amount_of_brigades = 450
+		not = { total_amount_of_brigades = 750 }
+	}
+
+	trigger = {
+		total_amount_of_brigades = 500
+	}
+	
+	officer_recruitment = 0.5
+	
+	icon = 5
+}
+
+large_army = {
+
+	potential = {
+		total_amount_of_brigades = 700
+		not = { total_amount_of_brigades = 1000 }
+	}
+
+	trigger = {
+		total_amount_of_brigades = 750
+	}
+	
+	officer_recruitment = 0.75
+	
+	icon = 5
+}
+
+huge_army = {
+
+	potential = {
+		total_amount_of_brigades = 950
+	}
+
+	trigger = {
+		total_amount_of_brigades = 1000
+	}
+	
+	officer_recruitment = 1.0
+	
+	icon = 5
+}
+
+################
+# Navy-related #
+################
+
+veteran_navy = {
+
+	potential = {
+		naval_battles_fought = 200
+	}
+	
+	trigger = {
+		naval_battles_fought = 250
+	}
+	
+	naval_organisation = 0.05
+	global_leadership = 0.25
+	org_regain = 0.05
+	
+	icon = 6
+}
+
+####################
+# Airforce-related #
+####################
+
+veteran_air_force = {
+
+	potential = {
+		air_battles_fought = 200
+	}
+	
+	trigger = {
+		air_battles_fought = 250
+	}
+	
+	air_organisation = 0.05
+	global_leadership = 0.25
+	org_regain = 0.05
+	
+	icon = 7
+}
+
+##################
+# Colony-related #
+##################
+
+# United Kingdom
+
+hong_kong_lost = {
+
+	potential = {
+		not = { tag = CHI }		
+		not = { tag = CHC }
+		owns = 5868
+		not = { controls = 5868 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+singapore_lost = {
+
+	potential = {
+		not = { tag = MLY }
+		owns = 6394
+		not = { controls = 6394 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+gibraltar_lost = {
+
+	potential = {
+		not = { tag = SPA }
+		not = { tag = SPR }
+		owns = 5191
+		not = { controls = 5191 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+malta_lost = {
+
+	potential = {
+		not = { tag = ITA }
+		not = { tag = MTA }
+		owns = 5359
+		not = { controls = 5359 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+alexandria_lost = {
+
+	potential = {
+		not = { tag = EGY }
+		owns = 7450
+		not = { controls = 7450 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+port_said_lost = {
+
+	potential = {
+		not = { tag = EGY }
+		owns = 5563
+		not = { controls = 5563 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+kuwait_lost = {
+
+	potential = {
+		not = { tag = KWT }
+		owns = 9427
+		not = { controls = 9427 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+georgetown_lost = {
+
+	potential = {
+		not = { tag = GUY }
+		owns = 9896
+		not = { controls = 9896 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+bermuda_lost = {
+
+	potential = {
+		# Pure colony. Practically still a part of the UK.
+		owns = 10628
+		not = { controls = 10628 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+kingston_lost = {
+
+	potential = {
+		not = { tag = JAM }
+		owns = 7669
+		not = { controls = 7669 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+rangoon_lost = {
+
+	potential = {
+		not = { tag = BBU }
+		owns = 6070
+		not = { controls = 6070 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+st_johns_lost = {
+
+	potential = {
+		not = { tag = CAN }		# They joined Canada only in '49, but if for some reason that would surely not be a colony for them.
+		owns = 8734
+		not = { controls = 8734 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+freetown_lost = {
+
+	potential = {
+		# West Africa?
+		owns = 9875
+		not = { controls = 9875 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+lagos_lost = {
+
+	potential = {
+		# West Africa?
+		owns = 9920
+		not = { controls = 9920 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+dar_es_salaam_lost = {
+
+	potential = {
+		# East Africa?
+		owns = 10130
+		not = { controls = 10130 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+falkland_islands_lost = {
+
+	potential = {
+		not = { tag = ARG }
+		owns = 10479
+		not = { controls = 10479 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+mandalay_lost = {
+
+	potential = {
+		not = { tag = BBU }
+		owns = 7610
+		not = { controls = 7610 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+aden_lost = {
+
+	potential = {
+		not = { tag = YEM }
+		owns = 9786
+		not = { controls = 9786 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+delhi_lost = {
+
+	potential = {
+		not = { tag = IND }
+		owns = 9468
+		not = { controls = 9468 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+bombay_lost = {
+
+	potential = {
+		not = { tag = IND }
+		owns = 6005
+		not = { controls = 6005 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+kuala_lumpur_lost = {
+
+	potential = {
+		not = { tag = MLY }
+		owns = 6378
+		not = { controls = 6378 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+colombo_lost = {
+
+	potential = {
+		not = { tag = CEY }
+		owns = 6320
+		not = { controls = 6320 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+calcutta_lost = {
+
+	potential = {
+		not = { tag = IND }
+		tag = REB	# I'll need to find the proper prov ID...
+		#owns = 14267
+		#not = { controls = 14267 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+dubai_lost = {
+
+	potential = {
+		# Arab Emirates?
+		owns = 9578
+		not = { controls = 9578 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+lahore_lost = {
+
+	potential = {
+		not = { tag = PAK }
+		owns = 9344
+		not = { controls = 9344 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+# France
+
+saigon_lost = {
+
+	potential = {
+		not = { tag = IDC }
+		owns = 6236
+		not = { controls = 6236 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+tunis_lost = {
+
+	potential = {
+		not = { tag = TUN }
+		owns = 5134
+		not = { controls = 5134 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+alger_lost = {
+
+	potential = {
+		not = { tag = ALG }
+		owns = 5160
+		not = { controls = 5160 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+casablanca_lost = {
+
+	potential = {
+		not = { tag = MOR }
+		owns = 5428
+		not = { controls = 5428 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+dakar_lost = {
+
+	potential = {
+		# Something like West Africa.
+		owns = 9741
+		not = { controls = 9741 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+libreville_lost = {
+
+	potential = {
+		# Kongo?
+		owns = 10021
+		not = { controls = 10021 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+reunion_lost = {
+
+	potential = {
+		not = { tag = MAD }
+		owns = 10634
+		not = { controls = 10634 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+djibouti_lost = {
+
+	potential = {
+		# East Africa?
+		owns = 9867
+		not = { controls = 9867 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+hanoi_lost = {
+
+	potential = {
+		not = { tag = IDC }
+		owns = 5916
+		not = { controls = 5916 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+cayenne_lost = {
+
+	potential = {
+		# This is practically still France...
+		owns = 9934
+		not = { controls = 9934 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+# Italy
+
+tobruk_lost = {
+
+	potential = {
+		not = { tag = LBY }
+		owns = 5511
+		not = { controls = 5511 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+tarabulus_lost = {
+
+	potential = {
+		not = { tag = LBY }
+		owns = 5445
+		not = { controls = 5445 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+benghazi_lost = {
+
+	potential = {
+		not = { tag = LBY }
+		owns = 5484
+		not = { controls = 5484 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+ed_lost = {
+
+	potential = {
+		# Somalia. Probably won't be added, so something like East Africa.
+		owns = 9749
+		not = { controls = 9749 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+muqdisho_lost = {
+
+	potential = {
+		owns = 10004
+		not = { controls = 10004 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+# Others
+
+panama_lost = {
+
+	potential = {
+		not = { tag = PNM }
+		owns = 7717
+		not = { controls = 7717 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+guam_lost = {
+
+	potential = {
+		# Practically still US territory.
+		owns = 6119
+		not = { controls = 6119 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+leopoldville_lost = {
+
+	potential = {
+		# Kongo.
+		owns = 10099
+		not = { controls = 10099 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+boma_lost = {
+
+	potential = {
+		# Kongo.
+		owns = 10113
+		not = { controls = 10113 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+macau_lost = {
+
+	potential = {
+		not = { tag = CHI }
+		not = { tag = CHC }
+		owns = 5886
+		not = { controls = 5886 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+azores_lost = {
+
+	potential = {
+		# Practically still Portugal.
+		owns = 8970
+		not = { controls = 8970 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+cape_verde_lost = {
+
+	potential = {
+		# Portugalia untill '75.
+		owns = 10631
+		not = { controls = 10631 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+batavia_lost = {
+
+	potential = {
+		not = { tag = INO }
+		owns = 6507
+		not = { controls = 6507 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+hollandia_lost = {
+
+	potential = {
+		not = { tag = INO }
+		owns = 7764
+		not = { controls = 7764 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+palau_lost = {
+
+	potential = {
+		# Only became independent 15 years ago, so definitely a colony in the timeframe.
+		owns = 6291
+		not = { controls = 6291 }
+		owns = 6319
+		not = { controls = 6319 }
+	}
+	
+	ruling_party_support = -0.005
+	dissent = 0.005
+	
+	icon = 9
+}
+
+########################
+# Commonwealth-related #
+########################
+
+defeated_australia = {
+
+	potential = {
+		or = {
+			tag = ENG
+			tag = CAN
+			tag = NZL
+			tag = SAF
+		}
+		faction = allies
+		or = {
+			not = { exists = AST }
+			and = {
+				AST = { faction = allies }
+				AST = { government_in_exile = yes }
+			}
+		}
+	}
+	
+	war_exhaustion = 0.025
+	
+	icon = 9
+
+}
+
+defeated_canada = {
+
+	potential = {
+		or = {
+			tag = ENG
+			tag = AST
+			tag = NZL
+			tag = SAF
+		}
+		faction = allies
+		or = {
+			not = { exists = CAN }
+			and = {
+				CAN = { faction = allies }
+				CAN = { government_in_exile = yes }
+			}
+		}
+	}
+	
+	war_exhaustion = 0.025
+	
+	icon = 9
+
+}
+
+defeated_new_zealand = {
+
+	potential = {
+		or = {
+			tag = ENG
+			tag = AST
+			tag = CAN
+			tag = SAF
+		}
+		faction = allies
+		or = {
+			not = { exists = NZL }
+			and = {
+				NZL = { faction = allies }
+				NZL = { government_in_exile = yes }
+			}
+		}
+	}
+	
+	war_exhaustion = 0.025
+	
+	icon = 9
+
+}
+
+defeated_south_africa = {
+
+	potential = {
+		or = {
+			tag = ENG
+			tag = AST
+			tag = CAN
+			tag = NZL
+		}
+		faction = allies
+		or = {
+			not = { exists = SAF }
+			and = {
+				SAF = { faction = allies }
+				SAF = { government_in_exile = yes }
+			}
+		}
+	}
+	
+	war_exhaustion = 0.025
+	
+	icon = 9
+
+}
+
+traitor_australia = {
+
+	potential = {
+		or = {
+			tag = ENG
+			tag = CAN
+			tag = NZL
+			tag = SAF
+		}
+		faction = allies
+		exists = AST
+		AST = {
+			is_in_any_faction = yes
+			not = { faction = allies }
+		}
+	}
+	
+	war_exhaustion = 0.04
+	
+	icon = 3
+}
+
+traitor_canada = {
+
+	potential = {
+		or = {
+			tag = ENG
+			tag = AST
+			tag = NZL
+			tag = SAF
+		}
+		faction = allies
+		exists = CAN
+		CAN = {
+			is_in_any_faction = yes
+			not = { faction = allies }
+		}
+	}
+	
+	war_exhaustion = 0.04
+	
+	icon = 3
+}
+
+traitor_new_zealand = {
+
+	potential = {
+		or = {
+			tag = ENG
+			tag = AST
+			tag = CAN
+			tag = SAF
+		}
+		faction = allies
+		exists = NZL
+		NZL = {
+			is_in_any_faction = yes
+			not = { faction = allies }
+		}
+	}
+	
+	war_exhaustion = 0.04
+	
+	icon = 3
+}
+
+traitor_south_africa = {
+
+	potential = {
+		or = {
+			tag = ENG
+			tag = AST
+			tag = CAN
+			tag = NZL
+		}
+		faction = allies
+		exists = SAF
+		SAF = {
+			is_in_any_faction = yes
+			not = { faction = allies }
+		}
+	}
+	
+	war_exhaustion = 0.04
+	
+	icon = 3
+}
+
+####################
+# Canals, sealanes #
+####################
+
+# Canals, straits
+
+suez_canal = {
+
+	potential = {
+		controls = 5563
+	}
+	
+	trigger = {
+		controls = 5563
+	}
+	
+	war_consumer_goods_demand = -0.025
+	peace_consumer_goods_demand = -0.05
+	global_money = 0.05
+	
+	icon = 16
+
+}
+
+# suez_blockaded = {
+
+	# potential = {				# That needs some more tweaking!!!
+		# controls = 5612
+	# }
+	
+	# trigger = {
+		# OR = {
+			# 5612 = { is_blockaded = yes controlled_by = THIS }	# Ismailiya, which practically can't be blockaded if you hold it because it is in the canal.
+			# 5563 = { is_blockaded = yes controlled_by = THIS }	# Bur Sa'id, to the North of the Canal. This can be blockaded.
+			# 9571 = { is_blockaded = yes controlled_by = THIS }	# Bir Shalatein, to the South of the Canal. This can be blockaded.
+		# }
+	# }
+		
+	# war_consumer_goods_demand = 0.025
+	# peace_consumer_goods_demand = 0.05
+	# global_money = -0.05
+	# ruling_party_support = -0.005
+	
+	# icon = 17
+
+# }
+
+panama_canal = {
+
+	potential = {
+		controls = 7717
+	}
+	
+	trigger = {
+		controls = 7717
+	}
+	
+	war_consumer_goods_demand = -0.025
+	peace_consumer_goods_demand = -0.05
+	global_money = 0.05
+	
+	icon = 16
+}
+
+# panama_blockaded = {
+
+	# potential = {
+		# controls = 7717
+	# }
+	
+	# trigger = {
+		# or = {
+			# 7722 = { is_blockaded = yes controlled_by = THIS }
+			# 7717 = { is_blockaded = yes controlled_by = THIS }
+		# }
+	# }
+	
+	# war_consumer_goods_demand = 0.025
+	# peace_consumer_goods_demand = 0.05
+	# global_money = -0.05
+	# ruling_party_support = -0.005
+	
+	# icon = 17
+
+# }
+
+gibraltar_strait = {
+
+	potential = {
+		controls = 5191
+	}
+	
+	trigger = {
+		controls = 5191
+	}
+	
+	war_consumer_goods_demand = -0.025
+	peace_consumer_goods_demand = -0.05
+	global_money = 0.05
+	
+	icon = 16
+}
+
+# gibraltar_blockaded = {
+
+	# potential = {
+		# controls = 5191
+	# }
+	
+	# trigger = {
+		# or = {
+			# 5191 = { is_blockaded = yes controlled_by = THIS }
+			# 5258 = { is_blockaded = yes controlled_by = THIS }
+		# }
+	# }
+	
+	# war_consumer_goods_demand = 0.025
+	# peace_consumer_goods_demand = 0.05
+	# global_money = -0.05
+	# ruling_party_support = -0.005
+	
+	# icon = 17
+
+# }
+
+baltic_strait = {
+
+	potential = {
+		controls = 1482
+	}
+	
+	trigger = {
+		controls = 1482
+	}
+	
+	war_consumer_goods_demand = -0.025
+	peace_consumer_goods_demand = -0.05
+	global_money = 0.05
+	
+	icon = 16
+}
+
+# baltic_strait_blockaded = {
+
+	# potential = {
+		# controls = 1482
+	# }
+	
+	# trigger = {
+		# or = {
+			# 1212 = { is_blockaded = yes controlled_by = THIS }
+			# 1526 = { is_blockaded = yes controlled_by = THIS }
+			# 1482 = { is_blockaded = yes controlled_by = THIS }
+		# }
+	# }
+	
+	# war_consumer_goods_demand = 0.025
+	# peace_consumer_goods_demand = 0.05
+	# global_money = -0.05
+	# ruling_party_support = -0.005
+	
+	# icon = 17
+
+# }
+
+bosphorus_strait = {
+
+	potential = {
+		controls = 4503
+	}
+	
+	trigger = {
+		controls = 4503
+	}
+	
+	war_consumer_goods_demand = -0.025
+	peace_consumer_goods_demand = -0.05
+	global_money = 0.05
+	
+	icon = 16
+}
+
+# bosphorus_blockaded = {
+
+	# potential = {
+		# controls = 4503
+	# }
+	
+	# trigger = {
+		# or = {
+			# 4503 = { is_blockaded = yes controlled_by = THIS }
+			# 4502 = { is_blockaded = yes controlled_by = THIS }
+			# 4669 = { is_blockaded = yes controlled_by = THIS }
+		# }
+	# }
+	
+	# war_consumer_goods_demand = 0.025
+	# peace_consumer_goods_demand = 0.05
+	# global_money = -0.05
+	# ruling_party_support = -0.005
+	
+	# icon = 17
+
+# }
+
+mandab_strait = {
+
+	potential = {
+		is_subject = no
+		or = {
+			controls = 9808
+			controls = 9826
+		}
+	}
+	
+	trigger = {
+		or = {
+			and = {
+				controls = 9808
+				or = {
+					9826 = { controller = { faction = THIS } }
+					9826 = { controller = { alliance_with = THIS } }
+					9826 = { controller = { vassal_of = THIS } }
+					9826 = { controller = { relation = { who = THIS value = 50 } } }
+				}
+			}
+			and = {
+				controls = 9826
+				or = {
+					9808 = { controller = { faction = THIS } }
+					9808 = { controller = { alliance_with = THIS } }
+					9808 = { controller = { vassal_of = THIS } }
+					9808 = { controller = { relation = { who = THIS value = 50 } } }
+				}
+			}
+		}	
+	}
+	
+	war_consumer_goods_demand = -0.025
+	peace_consumer_goods_demand = -0.05
+	global_money = 0.05
+	
+	icon = 16
+
+}
+
+# mandab_strait_blockaded = {
+
+	# potential = {
+		# or = {
+			# and = {
+				# controls = 9808
+				# or = {
+					# 9826 = { controller = { faction = THIS } }
+					# 9826 = { controller = { alliance_with = THIS } }
+					# 9826 = { controller = { vassal_of = THIS } }
+					# 9826 = { controller = { relation = { who = THIS value = 50 } } }
+				# }
+			# }
+			# and = {
+				# controls = 9826
+				# or = {
+					# 9808 = { controller = { faction = THIS } }
+					# 9808 = { controller = { alliance_with = THIS } }
+					# 9808 = { controller = { vassal_of = THIS } }
+					# 9808 = { controller = { relation = { who = THIS value = 50 } } }
+				# }
+			# }
+		# }	
+	# }
+	
+	# trigger = {
+		# or = {
+			# 9808 = { is_blockaded = yes controlled_by = THIS }
+			# 9826 = { is_blockaded = yes controlled_by = THIS }
+		# }
+	# }
+	
+	# war_consumer_goods_demand = 0.025
+	# peace_consumer_goods_demand = 0.05
+	# global_money = -0.05
+	# war_exhaustion = 0.02
+	
+	# icon = 17
+
+# }
+
+english_channel = {
+
+	potential = {
+		or = {
+			controls = 2021
+			controls = 2194
+		}
+	}
+	
+	trigger = {
+		or = {
+			and = {
+				controls = 2021
+				or = {
+					2194 = { controller = { faction = THIS } }
+					2194 = { controller = { alliance_with = THIS } }
+					2194 = { controller = { vassal_of = THIS } }
+					2194 = { controller = { relation = { who = THIS value = 50 } } }
+				}
+			}
+			and = {
+				controls = 2194
+				or = {
+					2021 = { controller = { faction = THIS } }
+					2021 = { controller = { alliance_with = THIS } }
+					2021 = { controller = { vassal_of = THIS } }
+					2021 = { controller = { relation = { who = THIS value = 50 } } }
+				}
+			}
+		}
+	}
+	
+	war_consumer_goods_demand = -0.025
+	peace_consumer_goods_demand = -0.05
+	global_money = 0.05
+	
+	icon = 16
+
+}
+
+# english_channel_blockaded = {
+
+	# potential = {
+		# or = {
+			# and = {
+				# controls = 2021
+				# or = {
+					# 2194 = { controller = { faction = THIS } }
+					# 2194 = { controller = { alliance_with = THIS } }
+					# 2194 = { controller = { vassal_of = THIS } }
+					# 2194 = { controller = { relation = { who = THIS value = 50 } } }
+				# }
+			# }
+			# and = {
+				# controls = 2194
+				# or = {
+					# 2021 = { controller = { faction = THIS } }
+					# 2021 = { controller = { alliance_with = THIS } }
+					# 2021 = { controller = { vassal_of = THIS } }
+					# 2021 = { controller = { relation = { who = THIS value = 50 } } }
+				# }
+			# }
+		# }
+	# }
+	
+	# trigger = {
+		# or = {
+			# 2021 = { is_blockaded = yes controlled_by = THIS }
+			# 2194 = { is_blockaded = yes controlled_by = THIS }
+		# }
+	# }
+	
+	# war_consumer_goods_demand = 0.025
+	# peace_consumer_goods_demand = 0.05
+	# global_money = -0.05
+	# war_exhaustion = 0.02
+	
+	# icon = 17
+
+# }
+
+strait_of_hormuz = {
+
+	potential = {
+		or = {
+			controls = 9429
+			controls = 9578
+		}
+	}
+	
+	trigger = {
+		or = {
+			and = {
+				controls = 9429
+				or = {
+					9578 = { controller = { faction = THIS } }
+					9578 = { controller = { alliance_with = THIS } }
+					9578 = { controller = { vassal_of = THIS } }
+					9578 = { controller = { relation = { who = THIS value = 50 } } }
+				}
+			}
+			and = {
+				controls = 9578
+				or = {
+					9429 = { controller = { faction = THIS } }
+					9429 = { controller = { alliance_with = THIS } }
+					9429 = { controller = { vassal_of = THIS } }
+					9429 = { controller = { relation = { who = THIS value = 50 } } }
+				}
+			}
+		}
+	}
+	
+	war_consumer_goods_demand = -0.025
+	peace_consumer_goods_demand = -0.05
+	global_money = 0.05
+	
+	icon = 16
+
+}
+
+# strait_of_hormuz_blockaded = {
+
+	# potential = {
+		# or = {
+			# and = {
+				# controls = 9429
+				# or = {
+					# 9578 = { controller = { faction = THIS } }
+					# 9578 = { controller = { alliance_with = THIS } }
+					# 9578 = { controller = { vassal_of = THIS } }
+					# 9578 = { controller = { relation = { who = THIS value = 50 } } }
+				# }
+			# }
+			# and = {
+				# controls = 9578
+				# or = {
+					# 9429 = { controller = { faction = THIS } }
+					# 9429 = { controller = { alliance_with = THIS } }
+					# 9429 = { controller = { vassal_of = THIS } }
+					# 9429 = { controller = { relation = { who = THIS value = 50 } } }
+				# }
+			# }
+		# }
+	# }
+	
+	# trigger = {
+		# or = {
+			# 9429 = { is_blockaded = yes controlled_by = THIS }
+			# 9578 = { is_blockaded = yes controlled_by = THIS }
+		# }
+	# }
+	
+	# war_consumer_goods_demand = 0.025
+	# peace_consumer_goods_demand = 0.05
+	# global_money = -0.05
+	# war_exhaustion = 0.02
+	
+	# icon = 17
+
+# }
+
+# Gulfs
+
+mediterranean_control = {
+
+	potential = {
+		or = {
+			# Eastern end
+			5191 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			# Western end
+			5563 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			# Italy
+			4549 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5233 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			# Greece
+			5076 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5381 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			# Libya
+			5511 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5484 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5445 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			# British North Africa
+			5586 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5535 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5359 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			
+			# France and French North Africa
+			4229 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5134 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5160 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+		}
+	}
+	
+	trigger = {
+		# Eastern end
+		5191 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		# Western end
+		5563 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		# Italy
+		4549 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5233 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		# Greece
+		5076 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5381 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		# Libya
+		5511 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5484 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5445 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		# British North Africa
+		5586 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5535 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5359 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		
+		# France and French North Africa
+		4229 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5134 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5160 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+	}
+	
+	global_money = 0.25		# Lot's of traffic!
+	global_resources = 0.1
+	global_supplies = 0.2
+	threat_impact = 0.05
+	
+	icon = 16
+}
+
+# blockade_mediterranean = {
+
+	# potential = {
+		#Eastern end
+		# 5191 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		#Western end
+		# 5563 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		#Italy
+		# 4549 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5233 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		#Greece
+		# 5076 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5381 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		#Libya
+		# 5511 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5484 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5445 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		#British North Africa
+		# 5586 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5535 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5359 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		
+		#France and French North Africa
+		# 4229 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5134 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5160 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+	# }
+	
+	# trigger = {
+		
+		# OR = { # Western part
+			# 5191 	= { is_blockaded = yes }
+			# 4549	= { is_blockaded = yes }
+			# 5233	= { is_blockaded = yes }
+			# 4229	= { is_blockaded = yes }
+			# 5134 	= { is_blockaded = yes }
+			# 5160	= { is_blockaded = yes }
+		# }
+		# OR = { # Eastern part
+			# 5563	= { is_blockaded = yes }
+			# 5076 	= { is_blockaded = yes }
+			# 5381 	= { is_blockaded = yes }
+			# 5535 	= { is_blockaded = yes }
+			# 5359 	= { is_blockaded = yes }
+		# }
+	# }
+	
+	# global_money = -0.15		# Lot's of traffic!
+	# global_resources = -0.05
+	# global_supplies = -0.1
+	# war_exhaustion = 0.05
+	
+	# icon = 17
+# }
+
+control_over_the_black_sea = {
+
+	potential = {
+		or = {
+			4441 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			4123 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			3919 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			3580 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			3309 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			3310 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			3245 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			3581 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			2913 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			3180 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			3449 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			3379 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			4059 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			4503 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			4186 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+		}
+	}
+
+	trigger = {
+		4441 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		4123 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		3919 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		3580 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		3309 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		3310 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		3245 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		3581 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		2913 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		3180 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		3449 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		3379 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		4059 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		4503 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		4186 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+	}
+	
+	global_crude_oil = 0.1
+	global_money = 0.1
+	threat_impact = 0.02
+	
+	icon = 16
+}
+
+# blockade_black_sea = {
+
+	# potential = {
+		# or = {
+			# 4441 = {
+				# or = {
+					# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+				# }
+			# }
+			# 4123 = {
+				# or = {
+					# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+				# }
+			# }
+			# 3919 = {
+				# or = {
+					# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+				# }
+			# }
+			# 3580 = {
+				# or = {
+					# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+				# }
+			# }
+			# 3309 = {
+				# or = {
+					# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+				# }
+			# }
+			# 3310 = {
+				# or = {
+					# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+				# }
+			# }
+			# 3245 = {
+				# or = {
+					# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+				# }
+			# }
+			# 3581 = {
+				# or = {
+					# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+				# }
+			# }
+			# 2913 = {
+				# or = {
+					# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+				# }
+			# }
+			# 3180 = {
+				# or = {
+					# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+				# }
+			# }
+			# 3449 = {
+				# or = {
+					# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+				# }
+			# }
+			# 3379 = {
+				# or = {
+					# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+				# }
+			# }
+			# 4059 = {
+				# or = {
+					# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+				# }
+			# }
+			# 4503 = {
+				# or = {
+					# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+				# }
+			# }
+			# 4186 = {
+				# or = {
+					# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+				# }
+			# }
+		# }
+	# }
+
+	# trigger = {
+		
+		# OR = {
+			# 4441 = { is_blockaded = yes }
+			# 4123 = { is_blockaded = yes }
+			# 3919 = { is_blockaded = yes }
+			# 3580 = { is_blockaded = yes }
+			# 3309 = { is_blockaded = yes }
+		# }
+		# OR = {
+			# 3310 = { is_blockaded = yes }
+			# 3245 = { is_blockaded = yes }
+			# 3581 = { is_blockaded = yes }
+			# 2913 = { is_blockaded = yes }
+			# 3180 = { is_blockaded = yes }
+		# }
+		# OR = {
+			# 3449 = { is_blockaded = yes }
+			# 3379 = { is_blockaded = yes }
+			# 4059 = { is_blockaded = yes }
+			# 4503 = { is_blockaded = yes }
+			# 4186 = { is_blockaded = yes }
+		# }
+	# }
+		
+	# global_crude_oil = -0.1
+	# global_money = -0.1
+	# war_exhaustion = 0.03
+	
+	# icon = 17
+# }
+
+# Persian Gulf
+control_over_persian_gulf = {
+	
+	potential = {
+		9598 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		9429 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		9578 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		9538 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		9365 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		9427 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+	}
+	
+	trigger = {
+		9598 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		9429 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		9578 = {
+			or = {
+				controlled_by = THIS
+					controller = { vassal_of = THIS }
+			}
+		}
+		9538 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		9365 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		9427 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+	}
+
+	global_crude_oil = 0.15
+	global_money = 0.25
+	threat_impact = 0.05
+	
+	icon = 16
+}
+
+#Blockade of the Persian Gulf
+# blockade_persian_gulf = {
+
+	# potential = {
+		# 9598 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 9429 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 9578 = {
+			# or = {
+				# controlled_by = THIS
+					# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 9538 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 9365 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 9427 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+	# }
+	
+	# trigger = {
+		# OR = {
+			# 9598 = { is_blockaded = yes }
+			# 9429 = { is_blockaded = yes }
+			# 9578 = { is_blockaded = yes }
+		# }
+		# OR = {
+			# 9538 = { is_blockaded = yes }
+			# 9365 = { is_blockaded = yes }
+			# 9427 = { is_blockaded = yes }
+		# }
+	# }
+
+	# global_crude_oil = -0.15
+	# global_money = -0.25
+	# war_exhaustion = 0.03
+	
+	# icon = 17
+# }
+
+control_over_tonkin_gulf = {
+	
+	potential = {
+		or = {
+			6060 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5994 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5985 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5946 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5945 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5919 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+		}
+	}
+	
+	trigger = {
+		6060 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5994 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5985 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5946 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5945 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5919 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+	}
+
+	global_rare_materials = 0.25
+	global_supplies = 0.1
+	threat_impact = 0.05
+	
+	icon = 16
+}
+
+# blockade_tonkin_gulf = {
+
+	# potential = {
+		# 6060 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5994 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5985 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5946 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5945 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5919 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+	# }
+	
+	# trigger = {
+		# OR = {
+			# 6060 = { is_blockaded = yes }
+			# 5994 = { is_blockaded = yes }
+			# 5985 = { is_blockaded = yes }
+			# 5946 = { is_blockaded = yes }
+			# 5945 = { is_blockaded = yes }
+			# 5919 = { is_blockaded = yes }
+		# }
+	# }
+
+	# global_rare_materials = -0.25
+	# global_supplies = -0.1
+	# war_exhaustion = 0.03
+	
+	# icon = 17
+# }
+
+control_over_mexico_gulf = {
+	
+	potential = {
+		or = {
+			8080 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			7521 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			6433 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			7670 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			1091 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			50 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			7669 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+		}
+	}
+	
+	trigger = {
+		8080 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		7521 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		6433 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		7670 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		1091 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		50 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		7669 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+	}
+	
+	global_crude_oil = 0.1
+	global_money = 0.15
+	threat_impact = 0.05
+	
+	icon = 16
+}
+
+# blockade_mexico_gulf = {
+	
+	# potential = {
+		# 8080 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 7521 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 6433 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 7670 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 1091 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 50 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 7669 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+	# }
+	
+	# trigger = {
+		
+		# OR = {
+			# 8080 = { is_blockaded = yes }
+			# 7521 = { is_blockaded = yes }
+			# 6433 = { is_blockaded = yes }
+			# 7670 = { is_blockaded = yes }
+			# 1091 = { is_blockaded = yes }
+			# 50 = { is_blockaded = yes }
+			# 7669 = { is_blockaded = yes }
+		# }
+	# }
+		
+	# global_crude_oil = -0.1
+	# global_money = -0.15
+	# war_exhaustion = 0.03
+	
+	# icon = 17
+# }
+
+control_over_chihli_gulf = {
+
+	potential = {
+		or = {
+			5145 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5020 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5054 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5178 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5086 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5019 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5181 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			4982 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5146 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			4892 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+		}
+	}
+	
+	trigger = {
+		5145 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5020 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5054 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5178 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5086 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5019 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5181 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		4982 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5146 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		4892 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+	}
+
+	global_money = 0.1
+	global_manpower_modifier = 0.1
+	threat_impact = 0.05
+	
+	icon = 16
+}
+
+# blockade_chihli_gulf = {
+
+	# potential = {
+		# 5145 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5020 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5054 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5178 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5086 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5019 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5181 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 4982 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5146 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 4892 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+	# }
+	
+	# trigger = {
+		
+		# or = {
+			# 5145 = { is_blockaded = yes }
+			# 5020 = { is_blockaded = yes }
+			# 5054 = { is_blockaded = yes }
+			# 5178 = { is_blockaded = yes }
+			# 5086 = { is_blockaded = yes }
+		# }
+		# or = {
+			# 5019 = { is_blockaded = yes }
+			# 5181 = { is_blockaded = yes }
+			# 4982 = { is_blockaded = yes }
+			# 5146 = { is_blockaded = yes }
+			# 4892 = { is_blockaded = yes }
+		# }
+	# }
+
+	# global_money = -0.1
+	# global_manpower_modifier = -0.1
+	# war_exhaustion = 0.02
+	
+	# icon = 17
+# }
+
+# Important Sealanes
+
+control_over_taiwan_strait = {
+	
+	potential = {
+		or = {
+			5809 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5823 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5757 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5728 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			5737 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+		}
+	}
+	
+	trigger = {
+		5809 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5823 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5757 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5728 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		5737 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+	}
+
+	global_money = 0.1
+	global_supplies = 0.1
+	threat_impact = 0.02
+
+	icon = 16
+}
+
+# blockade_taiwan_strait = {
+	
+	# potential = {
+		# 5809 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5823 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5757 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5728 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 5737 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+	# }
+	
+	# trigger = {
+		# OR = {
+			# 5809 = { is_blockaded = yes }
+			# 5823 = { is_blockaded = yes }
+			# 5757 = { is_blockaded = yes }
+			# 5728 = { is_blockaded = yes }
+			# 5737 = { is_blockaded = yes }
+		# }
+	# }
+
+	# global_money = -0.1
+	# global_supplies = -0.1
+	# ruling_party_support = -0.005
+	
+	# icon = 17
+# }
+
+control_over_mozambique_channel = {
+	
+	potential = {
+		or = {
+			10340 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			10345 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			10334 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			10312 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			10288 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			10261 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			10247 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			10261 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			11386 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			10205 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			10230 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			10274 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			10300 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			10319 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+		}
+	}
+	
+	trigger = {
+		10340 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		10345 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		10334 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		10312 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		10288 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		10261 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		10247 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		10261 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		11386 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		10205 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		10230 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		10274 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		10300 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		10319 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+	}
+
+	global_resources = 0.05
+	global_money = 0.05
+	global_supplies = 0.05
+	threat_impact = 0.02
+	
+	icon = 16
+}
+
+# blockade_mozambique_channel = {
+	
+	# potential = {
+		# 10340 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 10345 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 10334 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 10312 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 10288 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 10261 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 10247 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 10261 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 11386 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 10205 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 10230 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 10274 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 10300 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 10319 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+	# }
+	
+	# trigger = {
+		# OR = {
+			# 10340 = { is_blockaded = yes }
+			# 10345 = { is_blockaded = yes }
+			# 10334 = { is_blockaded = yes }
+			# 10312 = { is_blockaded = yes }
+			# 10288 = { is_blockaded = yes }
+			# 10261 = { is_blockaded = yes }
+			# 10247 = { is_blockaded = yes }
+		# }
+		# OR = {
+			# 10261 = { is_blockaded = yes }
+			# 11386 = { is_blockaded = yes }
+			# 10205 = { is_blockaded = yes }
+			# 10230 = { is_blockaded = yes }
+			# 10274 = { is_blockaded = yes }
+			# 10300 = { is_blockaded = yes }
+			# 10319 = { is_blockaded = yes }
+		# }
+	# }
+
+	# global_resources = -0.05
+	# global_money = -0.05
+	# global_supplies = -0.05
+	# war_exhaustion = 0.03
+	
+	# icon = 17
+# }
+
+control_finland_gulf = {
+
+	potential = {
+		OR = {
+			985 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			779  = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			906  = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			780  = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			739  = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			863  = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			819  = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			696  = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			864  = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			820  = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			781  = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			782  = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			698  = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			697  = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+			699 = {
+				or = {
+					controlled_by = THIS
+					controller = { vassal_of = THIS }
+				}
+			}
+		}
+	}
+
+	trigger = {
+		985 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		779  = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		906  = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		780  = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		739  = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		863  = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		819  = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		696  = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		864  = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		820  = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		781  = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		782  = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		698  = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		697  = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+		699 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+	}
+	
+	global_metal = 0.2
+	global_money = 0.05
+	global_supplies = 0.05
+	threat_impact = 0.02
+	
+	icon = 16
+}
+
+# blockade_finland_gulf = {
+
+	# potential = {
+		# 985 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 779  = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 906  = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 780  = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 739  = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 863  = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 819  = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 696  = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 864  = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 820  = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 781  = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 782  = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 698  = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 697  = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+		# 699 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+	# }
+	
+	# trigger = {
+		# OR = {
+			# 985 = { is_blockaded = yes }
+			# 779 = { is_blockaded = yes }
+			# 906 = { is_blockaded = yes }
+			# 780 = { is_blockaded = yes }
+			# 739 = { is_blockaded = yes }
+		# }
+		# OR = {
+			# 863 = { is_blockaded = yes }
+			# 819 = { is_blockaded = yes }
+			# 696 = { is_blockaded = yes }
+			# 864 = { is_blockaded = yes }
+			# 820 = { is_blockaded = yes }
+		# }
+		# OR = {
+			# 781 = { is_blockaded = yes }
+			# 782 = { is_blockaded = yes }
+			# 698 = { is_blockaded = yes }
+			# 697 = { is_blockaded = yes }
+			# 699 = { is_blockaded = yes }
+		# }
+	# }
+	
+	# global_metal = -0.2
+	# global_money = -0.05
+	# global_supplies = -0.05
+	# war_exhaustion = 0.03
+
+	# icon = 17
+# }
+
+control_singapore = {
+	potential = {
+		6394 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+	}
+	
+	trigger = {
+		6394 = {
+			or = {
+				controlled_by = THIS
+				controller = { vassal_of = THIS }
+			}
+		}
+	}
+	
+	global_money = 0.05
+	global_supplies = 0.05
+	threat_impact = 0.02
+	
+	icon = 16
+
+}
+
+# blockade_singapore = {
+	# potential = {
+		# 6394 = {
+			# or = {
+				# controlled_by = THIS
+				# controller = { vassal_of = THIS }
+			# }
+		# }
+	# }
+	
+	# trigger = {
+		# 6394 = { is_blockaded = yes }
+	# }
+	
+	# global_money = -0.05
+	# global_supplies = -0.05
+	# war_exhaustion = 0.03
+	
+	# icon = 17
+
+# }
+
+###################
+# Nation-specific #
+###################
+
+monroe_doctrine = {
+
+	potential = {
+		not = { has_country_flag = "us_gear_up_for_war" }
+		neutrality = 85
+		tag = USA
+		is_in_any_faction = no
+	}
+	
+	trigger = {
+		not = { has_country_flag = "us_gear_up_for_war" }
+		war = no
+		neutrality = 85
+		not = { is_threatend = 50 }
+		ideology_group = democracy
+	}
+	
+	threat_resistance = 0.5
+	ruling_party_support = 0.01
+	drift_speed = -0.1
+	
+	icon = 14
+}
+
+# Lend-Lease
+
+us_lend_lease_to_uk = {
+
+	potential = {
+		tag = USA
+		exists = ENG
+		not = { ENG = { is_subject = yes } }
+		not = { ENG = { government_in_exile = no } }
+		has_country_flag = "lend_lease_act"
+	}
+	
+	trigger = {
+		relation = { who = ENG value = 0 }
+		or = {
+			war_with = GER
+			war_with = JAP
+			GER = { war_with = ENG }
+			JAP = { war_with = ENG }
+		}
+	}
+	
+	suseptibility_allies = 1
+	suseptibility_axis = -1
+	peace_consumer_goods_demand = 0.05
+	war_consumer_goods_demand = 0.05
+
+	icon = 9
+	
+}
+
+us_lend_lease_to_ussr = {
+
+	potential = {
+		tag = USA
+		exists = SOV
+		not = { SOV = { is_subject = yes } }
+		not = { SOV = { government_in_exile = no } }
+		has_country_flag = "lend_lease_act"
+	}
+	
+	trigger = {
+		relation = { who = SOV value = 0 }
+		or = {
+			war_with = GER
+			war_with = JAP
+			GER = { war_with = SOV }
+			JAP = { war_with = SOV }
+		}
+	}
+
+	peace_consumer_goods_demand = 0.05
+	war_consumer_goods_demand = 0.05
+
+	icon = 9
+	
+}
+
+us_lend_lease_to_china = {
+
+	potential = {
+		tag = USA
+		exists = CHI
+		not = { CHI = { is_subject = yes } }
+		not = { CHI = { government_in_exile = no } }
+		has_country_flag = "lend_lease_act"
+	}
+	
+	trigger = {
+		relation = { who = CHI value = 0 }
+		or = {
+			war_with = GER
+			war_with = JAP
+			GER = { war_with = CHI }
+			JAP = { war_with = CHI }
+		}
+	}
+
+	peace_consumer_goods_demand = 0.05
+	war_consumer_goods_demand = 0.05
+
+	icon = 9
+	
+}
+
+ussr_lend_lease = {
+
+	potential = {
+		tag = SOV
+		is_subject = no
+		government_in_exile = no
+		not = { war_with = USA }
+		USA = { has_country_flag = "lend_lease_act" }
+	}
+	
+	trigger = {
+		or = {
+			war_with = GER
+			war_with = JAP
+		}
+		any_owned_province = {
+			continent = asia				# Any asian port will do that we own.
+			naval_base = 5					# Minimal level for such large shipments!
+			controlled_by = THIS
+			#is_blockaded = no
+		}
+		strat_convoy_impact = -0.5
+	}
+
+	supply_throughput = 0.1
+	global_supplies = 0.20
+	unit_recruitment_time = -0.05
+	
+	icon = 9
+
+}
+
+uk_lend_lease = {
+
+	potential = {
+		tag = ENG
+		is_subject = no
+		government_in_exile = no
+		not = { war_with = USA }
+		USA = { has_country_flag = "lend_lease_act" }
+	}
+	
+	trigger = {
+		or = {
+			war_with = GER
+			war_with = JAP
+		}
+		any_owned_province = {
+			continent = europe
+			not = { province_id = 5191 }	# Not Gibraltar, Malta or Cyprus
+			not = { province_id = 5359 }
+			not = { province_id = 5139 }
+			naval_base = 5					# Minimal level for such large shipments!
+			controlled_by = THIS
+			#is_blockaded = no
+		}
+		strat_convoy_impact = -0.5
+	}
+	
+	supply_throughput = 0.1
+	global_supplies = 0.2
+	global_resources = 0.1
+	
+	icon = 9
+
+}
+
+china_lend_lease = {
+
+	potential = {
+		tag = CHI
+		is_subject = no
+		government_in_exile = no
+		not = { war_with = USA }
+		USA = { has_country_flag = "lend_lease_act" }
+	}
+	
+	trigger = {
+		or = {
+			war_with = GER
+			war_with = JAP
+		}
+		any_owned_province = {
+			continent = China				# Any asian port will do that we own.
+			naval_base = 5					# Minimal level for such large shipments!
+			controlled_by = THIS
+			#is_blockaded = no
+		}
+		strat_convoy_impact = -0.5
+	}
+	
+	supply_throughput = 0.1
+	global_resources = 0.2
+	unit_recruitment_time = -0.1
+	
+	icon = 9
+
+}
+
+# Great Patriotic War
+
+great_patriotic_war_1 = {
+
+	potential = {
+		tag = SOV
+		war_with = GER
+	}
+	
+	trigger = {
+		lost_national = 0.05
+		NOT = { total_amount_of_brigades = 800 }
+	}
+
+    unit_recruitment_time = -0.05
+	org_regain = 0.25
+	territorial_pride = 0.05
+	officer_recruitment = 0.10
+	
+	icon = 4
+}
+
+great_patriotic_war_2 = {
+
+	potential = {
+		tag = SOV
+		war_with = GER
+	}
+	
+	trigger = {
+		lost_national = 0.15
+		NOT = { total_amount_of_brigades = 500 }
+	}
+
+    unit_recruitment_time = -0.10
+	org_regain = 0.25
+	territorial_pride = 0.10
+	officer_recruitment = 0.15
+	
+	icon = 8
+}
+
+great_purge_1 = {
+
+	potential = {
+		tag = SOV
+		not = {
+			and = {
+				or = {
+					war_with = GER
+					war_with = ENG
+				}
+				or = {
+					war_with = JAP
+					war_with = USA
+				}
+			}
+		}
+		has_country_modifier = "the_great_purge_1"
+	}
+	trigger = {
+		has_country_modifier = "the_great_purge_1"
+		not = { has_country_flag = "great_war" }
+	}
+	
+	org_regain = -0.5
+	land_organisation = -0.35
+	officer_recruitment = -0.5
+	
+	icon = 8
+}
+
+great_purge_2 = {
+
+	potential = {
+		tag = SOV
+		not = {
+			and = {
+				or = {
+					war_with = GER
+					war_with = ENG
+				}
+				or = {
+					war_with = JAP
+					war_with = USA
+				}
+			}
+		}
+		has_country_modifier = "the_great_purge_2"
+	}
+	trigger = {
+		has_country_modifier = "the_great_purge_2"
+		not = { has_country_flag = "great_war" }
+	}
+	
+	org_regain = -0.35
+	land_organisation = -0.30
+	officer_recruitment = -0.35
+	
+	icon = 8
+}
+
+great_purge_3 = {
+
+	potential = {
+		tag = SOV
+		not = {
+			and = {
+				or = {
+					war_with = GER
+					war_with = ENG
+				}
+				or = {
+					war_with = JAP
+					war_with = USA
+				}
+			}
+		}
+		has_country_modifier = "the_great_purge_3"
+	}
+	trigger = {
+		has_country_modifier = "the_great_purge_3"
+		not = { has_country_flag = "great_war" }
+	}
+	
+	org_regain = -0.10
+	land_organisation = -0.25
+	officer_recruitment = -0.15
+	
+	icon = 8
+}
+
+
+# Disheartened King (Belgium)
+
+disheartened_king = {
+
+	potential = {
+		tag = BEL
+		war_with = GER
+	}
+	
+	trigger = {
+		any_owned_province = {
+			controller = { faction = axis }
+		}
+	}
+	
+	national_unity = -2.00
+	
+	icon = 3
+
+}
+
+# China
+
+chinese_workers = {
+
+	potential = {
+		tag = CHC
+		not = { manpower = 500 }
+	}
+	
+	trigger = {
+		not = { manpower = 500 }
+	}
+	
+	global_manpower_modifier = 4.0
+	industrial_efficiency = 0.5
+	
+	icon = 3
+
+}
+
+the_burma_road = {
+
+	potential = {
+		tag = CHI
+		war_with = JAP
+		has_country_flag = burma_road
+		not = { war_with = ENG }
+		not = { faction = axis }
+		or = {
+			neighbour = ENG # direct rout
+			and = { # rout through an existing Burma
+				BBU = { vassal_of = ENG }
+				or = {
+					CHI = { neighbour = BBU }
+					and = {
+						CYN = { neighbour = BBU }
+						CYN = {	neighbour = CHI }
+						not = { CYN = { alliance_with = JAP } }
+						not = { CYN = { vassal_of = JAP } }
+					}
+				}
+			}
+			and = { # rout through Yunnan
+				CYN = { neighbour = ENG }
+				CYN = {	neighbour = CHI }
+				not = { CYN = { alliance_with = JAP } }
+				not = { CYN = { vassal_of = JAP } }
+			}
+		}
+	}
+	
+	trigger = {
+		OR = {
+			any_owned_province = { 
+				controlled_by = THIS
+				any_neighbor_province = {
+					controlled_by = ENG
+					NOT = { province_id = 5868 } #Hong Kong does not count!
+				}
+			}
+			and = { # route through an existing Burma
+				or = {
+					any_owned_province = { 
+						controlled_by = THIS
+						any_neighbor_province = {
+							controlled_by = BBU
+						}
+					}
+					and = {
+						CYN = { 
+							any_owned_province = { 
+								controlled_by = CYN
+								any_neighbor_province = {
+									controlled_by = BBU
+								}
+							}
+						}
+						CYN = { 
+							any_owned_province = { 
+								controlled_by = CYN
+								any_neighbor_province = {
+									controlled_by = CHI
+								}
+							}
+						}
+						CYN = { not = { war_with = THIS } }
+					}
+				}
+			}
+			CYN = {	# route through Yunnan
+				any_owned_province = {
+					controlled_by = CYN
+					any_neighbor_province = {
+						controlled_by = ENG
+					}
+				}
+				any_owned_province = {
+					controlled_by = CYN
+					any_neighbor_province = {
+						controlled_by = CHI
+					}
+				}
+				not = { war_with = CHI }
+				not = { war_with = ENG }
+			}
+		}
+	}
+	
+	supply_throughput = 0.15
+	supply_consumption = -0.15
+	global_resources = 0.1
+	land_organisation = 0.10
+
+	icon = 3
+	
+}
+
+metal_from_sweden = {
+
+	potential = {
+		tag = SWE
+		exists = GER
+		GER = { government_in_exile = no }
+		not = { war_with = GER }
+		GER = { has_country_flag = swedish_iron }
+	}
+	
+	trigger = {
+		relation = { who = GER value = 50 }
+	}
+	
+	global_money = 1.0
+	global_metal = -0.5
+	global_energy = 0.25
+	
+	icon = 13
+
+}
+
+metal_to_germany = {
+
+	potential = {
+		tag = GER
+		exists = SWE
+		SWE = { government_in_exile = no }
+		not = { war_with = SWE }
+		has_country_flag = swedish_iron
+	}
+	
+	trigger = {
+		relation = { who = SWE value = 50 }
+	}
+	
+	global_money = -0.25
+	global_metal = 0.2
+	global_energy = -0.05
+	
+	icon = 13
+}
+
+narvik_blockaded_swe = {
+
+	potential = {
+		tag = SWE	# We have the agreement.
+		exists = GER
+		GER = { government_in_exile = no }
+		not = { war_with = GER }
+		relation = { who = GER value = 50 }
+		GER = { has_country_flag = swedish_iron }
+		or = {		# The Baltic Sea is frozen.
+			month = 10
+			not = { month = 4 }
+		}
+		not = { 65 = { controller = { vassal_of = GER } } }
+		not = { 65 = { controller = { vassal_of = SWE } } }
+		or = {		# Narvik is inaccessible.
+			65 = { controller = { has_country_flag = neutrality_in_the_war } }
+			65 = { controller = { war_with = GER } }
+			65 = { controller = { war_with = SWE } }
+			65 = { controller = { not = { relation = { who = GER value = 50 } } } }
+			65 = { controller = { not = { relation = { who = SWE value = 50 } } } }
+			#65 = { is_blockaded = yes }
+			has_global_flag = "norwegian_coast_mined"
+		}
+	}
+	trigger = {
+		or = {		# Narvik is inaccessible.
+			65 = { controller = { has_country_flag = neutrality_in_the_war } }
+			65 = { controller = { war_with = GER } }
+			65 = { controller = { war_with = SWE } }
+			65 = { controller = { not = { relation = { who = GER value = 50 } } } }
+			65 = { controller = { not = { relation = { who = SWE value = 50 } } } }
+			#65 = { is_blockaded = yes }
+			has_global_flag = "norwegian_coast_mined"
+		}
+	}
+	
+	global_money = -1.0
+	global_metal = 0.5
+	global_energy = -0.25
+	
+	icon = 17
+	
+}
+
+narvik_blockaded_ger = {
+
+	potential = {
+		tag = GER	# We have the agreement.
+		exists = SWE
+		SWE = { government_in_exile = no }
+		not = { war_with = SWE }
+		relation = { who = SWE value = 50 }
+		has_country_flag = swedish_iron
+		or = {		# The Baltic Sea is frozen.
+			month = 10
+			not = { month = 4 }
+		}
+		not = { 65 = { controller = { vassal_of = GER } } }
+		not = { 65 = { controller = { vassal_of = SWE } } }
+		or = {		# Narvik is inaccessible.
+			65 = { controller = { has_country_flag = neutrality_in_the_war } }
+			65 = { controller = { war_with = GER } }
+			65 = { controller = { war_with = SWE } }
+			65 = { controller = { not = { relation = { who = GER value = 50 } } } }
+			65 = { controller = { not = { relation = { who = SWE value = 50 } } } }
+			#65 = { is_blockaded = yes }
+			has_global_flag = "norwegian_coast_mined"
+		}
+	}
+	trigger = {
+		or = {		# Narvik is inaccessible.
+			65 = { controller = { has_country_flag = neutrality_in_the_war } }
+			65 = { controller = { war_with = GER } }
+			65 = { controller = { war_with = SWE } }
+			65 = { controller = { not = { relation = { who = GER value = 50 } } } }
+			65 = { controller = { not = { relation = { who = SWE value = 50 } } } }
+			#65 = { is_blockaded = yes }
+			has_global_flag = "norwegian_coast_mined"
+		}
+	}
+	
+	global_money = 0.25
+	global_metal = -0.2
+	global_energy = 0.05
+	
+	icon = 17
+	
+}
+
+rares_to_germany = {
+
+	potential = {
+		tag = CHI
+		exists = GER
+		not = { war_with = GER }
+		not = { has_country_flag = manchukuo_recognized }
+		num_of_ports = 1
+		GER = { num_of_ports = 1 }
+		or = {
+			num_of_convoys = 1
+			GER = { num_of_convoys = 1 }
+		}
+	}
+	trigger = {
+		relation = { who = GER value = 50 }
+	}
+	
+	global_rare_materials = -0.30
+	global_money = 0.30
+	officer_recruitment = 0.20
+
+	icon = 13
+}
+
+rares_from_china = {
+
+	potential = {
+		tag = GER
+		exists = CHI
+		not = { war_with = CHI }
+		not = { has_country_flag = manchukuo_recognized }
+		num_of_ports = 1
+		CHI = { num_of_ports = 1 }
+		or = {
+			num_of_convoys = 1
+			CHI = { num_of_convoys = 1 }
+		}
+	}
+	trigger = {
+		relation = { who = CHI value = 50 }
+	}
+
+	global_rare_materials = 0.15
+	global_money = -0.10
+
+	icon = 13
+
+}
+
+oil_from_usa_5 = {
+
+	potential = {
+		tag = JAP
+		not = { war_with = USA }
+		USA = { not = { has_country_flag = us_oil_embargo } }
+		relation = { who = USA value = 100 }
+		
+	}
+	
+	trigger = {
+		relation = { who = USA value = 100 }
+		any_owned_province = { naval_base = 5 }
+		USA = { any_owned_province = { naval_base = 5 } }
+	}
+	
+	global_money = -0.75
+	global_crude_oil = 30.0
+	
+	icon = 9
+
+}
+
+oil_from_usa_4 = {
+
+	potential = {
+		tag = JAP
+		not = { war_with = USA }
+		USA = { not = { has_country_flag = us_oil_embargo } }
+		relation = { who = USA value = 75 }
+		not = { relation = { who = USA value = 100 } }
+		
+	}
+	
+	trigger = {
+		relation = { who = USA value = 75 }
+		any_owned_province = { naval_base = 5 }
+		USA = { any_owned_province = { naval_base = 5 } }
+	}
+	
+	global_money = -0.625
+	global_crude_oil = 25.0
+	
+	icon = 9
+
+}
+
+oil_from_usa_3 = {
+
+	potential = {
+		tag = JAP
+		not = { war_with = USA }
+		USA = { not = { has_country_flag = us_oil_embargo } }
+		relation = { who = USA value = 50 }
+		not = { relation = { who = USA value = 75 } }
+		
+	}
+	
+	trigger = {
+		relation = { who = USA value = 50 }
+		any_owned_province = { naval_base = 5 }
+		USA = { any_owned_province = { naval_base = 5 } }
+	}
+	
+	global_money = -0.5
+	global_crude_oil = 20.0
+	
+	icon = 9
+
+}
+
+oil_from_usa_2 = {
+
+	potential = {
+		tag = JAP
+		not = { war_with = USA }
+		USA = { not = { has_country_flag = us_oil_embargo } }
+		relation = { who = USA value = 25 }
+		not = { relation = { who = USA value = 50 } }
+		
+	}
+	
+	trigger = {
+		relation = { who = USA value = 25 }
+		any_owned_province = { naval_base = 5 }
+		USA = { any_owned_province = { naval_base = 5 } }
+	}
+	
+	global_money = -0.375
+	global_crude_oil = 15.0
+	
+	icon = 9
+
+}
+
+oil_from_usa_1 = {
+
+	potential = {
+		tag = JAP
+		not = { war_with = USA }
+		USA = { not = { has_country_flag = us_oil_embargo } }
+		relation = { who = USA value = 0 }
+		not = { relation = { who = USA value = 25 } }
+		
+	}
+	
+	trigger = {
+		relation = { who = USA value = 0 }
+		any_owned_province = { naval_base = 5 }
+		USA = { any_owned_province = { naval_base = 5 } }
+	}
+	
+	global_money = -0.25
+	global_crude_oil = 10.0
+	
+	icon = 9
+
+}
+
+oil_to_japan_5 = {
+
+	potential = {
+		tag = USA
+		not = { war_with = JAP }
+		not = { has_country_flag = us_oil_embargo }
+		relation = { who = JAP value = 100 }
+	}
+	
+	trigger = {
+		relation = { who = JAP value = 100 }
+		any_owned_province = { naval_base = 5 }
+		JAP = { any_owned_province = { naval_base = 5 } }
+	}
+	
+	global_money = 0.33
+	global_crude_oil = -0.12
+	
+	icon = 9
+}
+
+oil_to_japan_4 = {
+
+	potential = {
+		tag = USA
+		not = { war_with = JAP }
+		not = { has_country_flag = us_oil_embargo }
+		relation = { who = JAP value = 75 }
+		not = { relation = { who = JAP value = 100 } }
+	}
+	
+	trigger = {
+		relation = { who = JAP value = 75 }
+		any_owned_province = { naval_base = 5 }
+		JAP = { any_owned_province = { naval_base = 5 } }
+	}
+	
+	global_money = 0.255
+	global_crude_oil = -0.10
+	
+	icon = 9
+}
+
+oil_to_japan_3 = {
+
+	potential = {
+		tag = USA
+		not = { war_with = JAP }
+		not = { has_country_flag = us_oil_embargo }
+		relation = { who = JAP value = 50 }
+		not = { relation = { who = JAP value = 75 } }
+	}
+	
+	trigger = {
+		relation = { who = JAP value = 50 }
+		any_owned_province = { naval_base = 5 }
+		JAP = { any_owned_province = { naval_base = 5 } }
+	}
+	
+	global_money = 0.22
+	global_crude_oil = -0.08
+	
+	icon = 9
+}
+
+oil_to_japan_2 = {
+
+	potential = {
+		tag = USA
+		not = { war_with = JAP }
+		not = { has_country_flag = us_oil_embargo }
+		relation = { who = JAP value = 25 }
+		not = { relation = { who = JAP value = 50 } }
+	}
+	
+	trigger = {
+		relation = { who = JAP value = 25 }
+		any_owned_province = { naval_base = 5 }
+		JAP = { any_owned_province = { naval_base = 5 } }
+	}
+	
+	global_money = 0.165
+	global_crude_oil = -0.06
+	
+	icon = 9
+}
+
+oil_to_japan_1 = {
+
+	potential = {
+		tag = USA
+		not = { war_with = JAP }
+		not = { has_country_flag = us_oil_embargo }
+		relation = { who = JAP value = 0 }
+		not = { relation = { who = JAP value = 25 } }
+	}
+	
+	trigger = {
+		relation = { who = JAP value = 0 }
+		any_owned_province = { naval_base = 5 }
+		JAP = { any_owned_province = { naval_base = 5 } }
+	}
+	
+	global_money = 0.11
+	global_crude_oil = -0.04
+	
+	icon = 9
+}
+
+# Army-Navy struggle in Japan
+
+army_influence_strong = {
+
+	potential = {
+		has_global_flag = "setup"
+		tag = JAP
+		not = { check_variable = { which = "jap_army_navy_struggle" value = 2 } }
+	}
+	
+	trigger = {
+	}
+	
+	land_organisation = 0.15
+	naval_organisation = -0.15
+	naval_build_speed = 0.25
+	
+	icon = 5
+}
+
+army_influence = {
+
+	potential = {
+		has_global_flag = "setup"
+		tag = JAP
+		not = { check_variable = { which = "jap_army_navy_struggle" value = 4 } }
+	}
+	
+	trigger = {
+	}
+	
+	land_organisation = 0.05
+	naval_organisation = -0.05
+	naval_build_speed = 0.10
+	
+	icon = 5
+}
+
+navy_influence = {
+
+	potential = {
+		has_global_flag = "setup"
+		tag = JAP
+		check_variable = { which = "jap_army_navy_struggle" value = 7 }
+	}
+	
+	trigger = {
+	}
+	
+	land_organisation = -0.05
+	naval_organisation = 0.05
+	naval_build_speed = -0.10
+	
+	icon = 6
+}
+
+navy_influence_strong = {
+
+	potential = {
+		has_global_flag = "setup"
+		tag = JAP
+		check_variable = { which = "jap_army_navy_struggle" value = 9 }
+	}
+	
+	trigger = {
+	}
+	
+	land_organisation = -0.15
+	naval_organisation = 0.15
+	naval_build_speed = -0.25
+	
+	icon = 6
+}
+
+german_soviet_cooperation_sov = {
+
+	potential = {
+		tag = SOV
+		not = { war_with = GER }
+		GER = { has_country_flag = ger_sov_coop }
+		
+	}
+	
+	trigger = {
+		relation = { who = GER value = 50 }
+	}
+	
+	industrial_efficiency = 0.075
+	global_leadership = 2
+	
+	icon = 13
+
+}
+
+german_soviet_cooperation_ger = {
+
+	potential = {
+		tag = GER
+		not = { war_with = SOV }
+		has_country_flag = ger_sov_coop
+	}
+	
+	trigger = {
+		relation = { who = SOV value = 50 }
+	}
+	
+	global_money = 0.15
+	
+	icon = 13
+}
+
+paris_surrounded = {
+
+	potential = {
+		tag = FRA
+		war_with = GER
+		controls = 2613						# Paris is still in French hands.
+		2613 = {
+			any_neighbor_province = {		# Germany is at the gates.
+				controlled_by = GER
+			}
+		}
+		not = {
+			2613 = {
+				any_neighbor_province = {	# Paris is surrounded.
+					controlled_by = FRA
+				}
+			}
+		}
+	}
+	
+	trigger = {
+		controls = 2613						# Paris is still in French hands.
+		2613 = {
+			any_neighbor_province = {		# Germany is at the gates.
+				controlled_by = GER
+			}
+		}
+		not = {
+			2613 = {
+				any_neighbor_province = {	# Paris is surrounded.
+					controlled_by = FRA
+				}
+			}
+		}
+	}
+	
+	national_unity = -3.00
+	
+	icon = 17
+}
+
+spanish_civil_war_spa = {
+
+	potential = {
+		tag = SPA
+		war_with = SPR
+	}
+	trigger = {
+		war_with = SPR
+	}
+	
+	global_revolt_risk = 10
+	land_organisation = 0.1
+	neutrality = 0.02
+	threat_impact = -0.75
+	
+	icon = 3
+}
+
+spanish_civil_war_spr = {
+
+	potential = {
+		tag = SPR
+		war_with = SPA
+	}
+	trigger = {
+		war_with = SPA
+	}
+	
+	land_organisation = -0.1
+	org_regain = 0.25
+	neutrality = 0.02
+	threat_impact = -0.75
+	
+	icon = 3
+}
+
+disease_of_the_body = {
+
+	potential = {
+		tag = CHI
+		exists = CHC
+		not = { war_with = CHC }
+	}
+	trigger = {
+		exists = CHC
+		not = { war_with = CHC }
+	}
+	
+	neutrality = -0.01
+	global_leadership = -2.0
+	global_manpower_modifier = -0.5
+	officer_recruitment = -0.10
+	
+	icon = 3
+}
+
+chinese_civil_war_chi = {
+
+	potential = {
+		tag = CHI
+		war_with = CHC
+	}
+	trigger = {
+		war_with = CHC
+	}
+	
+	land_organisation = -0.15
+	officer_recruitment = -0.15
+	threat_impact = -0.75
+	
+	icon = 3
+}
+
+chinese_civil_war_chc = {
+
+	potential = {
+		tag = CHC
+		war_with = CHI
+	}
+	trigger = {
+		war_with = CHI
+	}
+	
+	org_regain = 0.15
+	global_manpower_modifier = 5.0
+	threat_impact = -0.75
+	
+	icon = 3
+}
+
+russian_civil_war_rus = {
+
+	potential = {
+		tag = RUS
+		war_with = SOV
+	}
+	trigger = {
+		war_with = SOV
+	}
+	
+	land_organisation = 0.2
+	threat_impact = -0.75
+	
+	icon = 3
+}
+
+russian_civil_war_sov = {
+
+	potential = {
+		tag = SOV
+		war_with = RUS
+	}
+	trigger = {
+		war_with = RUS
+	}
+	
+	org_regain = 0.2
+	global_manpower_modifier = 0.5
+	threat_impact = -0.75
+	
+	icon = 3
+}
+
+korean_civil_war_kor = {
+
+	potential = {
+		tag = KOR
+		war_with = PRK
+	}
+	trigger = {
+		war_with = PRK
+	}
+	
+	org_regain = 0.2
+	global_manpower_modifier = 0.5
+	threat_impact = -0.75
+	
+	icon = 3
+}
+
+korean_civil_war_prk = {
+
+	potential = {
+		tag = PRK
+		war_with = KOR
+	}
+	trigger = {
+		war_with = KOR
+	}
+	
+	org_regain = 0.2
+	global_manpower_modifier = 0.5
+	threat_impact = -0.75
+	
+	icon = 3
+}
+
+british_india = {
+
+	potential = {
+		tag = ENG
+		exists = IND
+		IND = { vassal_of = ENG }
+	}
+	trigger = {
+		IND = { vassal_of = ENG }
+	}
+	
+	global_ic = 0.25
+	
+	icon = 13
+	
+}
+
+british_burma = {
+
+	potential = {
+		tag = BBU
+		exists = ENG
+		vassal_of = ENG
+	}
+	trigger = {
+		vassal_of = ENG
+	}
+	
+	global_revolt_risk = 8
+	
+	icon = 13
+	
+}
+
+crown_colony = {
+
+	potential = {
+		tag = IND
+		exists = ENG
+		vassal_of = ENG
+	}
+	trigger = {
+		vassal_of = ENG
+	}
+	
+	global_ic = -0.625
+	
+	icon = 13
+	
+}
+
+################
+# Miscelaneous #
+################
+
+neutrality = {
+
+	potential = {
+		neutrality = 85
+		is_in_any_faction = no
+	}
+	
+	trigger = {
+		is_in_any_faction = no
+		neutrality = 85
+	}
+	
+	threat_resistance = 0.25
+	ruling_party_support = 0.01
+	drift_speed = -0.1
+	
+	icon = 14
+}
+
+being_invaded = {
+
+	potential = {
+		war = yes
+		any_owned_province = {
+			is_core = THIS
+			not = { controlled_by = REB }
+			controller = {
+				war_with = THIS
+				total_ic = 50
+			}
+		}
+	}
+	
+	trigger = {
+	}
+	
+	reinforcement_bonus = 0.25
+	unit_recruitment_time = -0.1
+	org_regain = 0.05
+	
+	icon = 4
+}
+
+great_war = {
+
+	potential = {
+		has_country_flag = "great_war"
+	}
+	
+	trigger = {
+		war = yes
+	}
+	
+	war_exhaustion = -0.05
+	national_unity_effect = -0.5
+	sw_national_unity_effect = -0.5
+	war_consumer_goods_demand = -0.20
+	
+	icon = 4
+
+}
+
+nation_divided_1 = {
+
+	potential = {
+		not = { national_unity = 80 }
+		national_unity = 60
+	}
+	
+	trigger = {
+		not = { national_unity = 70 }
+	}
+	
+	land_organisation = -0.025
+	
+	icon = 14
+
+}
+
+nation_divided_2 = {
+
+	potential = {
+		not = { national_unity = 60 }
+		national_unity = 50
+	}
+	
+	trigger = {
+		not = { national_unity = 60 }
+	}
+	
+	land_organisation = -0.025
+	air_organisation = -0.025
+	naval_organisation = -0.025
+	
+	icon = 14
+
+}
+
+nation_divided_3 = {
+
+	potential = {
+		not = { national_unity = 50 }
+		national_unity = 40
+	}
+	
+	trigger = {
+		not = { national_unity = 50 }
+	}
+	
+	land_organisation = -0.05
+	air_organisation = -0.05
+	naval_organisation = -0.05
+	
+	icon = 14
+
+}
+
+nation_divided_4 = {
+
+	potential = {
+		not = { national_unity = 40 }
+		national_unity = 30
+	}
+	
+	trigger = {
+		not = { national_unity = 40 }
+	}
+	
+	land_organisation = -0.25
+	air_organisation = -0.25
+	naval_organisation = -0.25
+	
+	icon = 14
+
+}
+
+nation_divided_5 = {
+
+	potential = {
+		not = { national_unity = 30 }
+		national_unity = 20
+	}
+	
+	trigger = {
+		not = { national_unity = 30 }
+	}
+	
+	land_organisation = -0.5
+	air_organisation = -0.5
+	naval_organisation = -0.5
+	
+	icon = 14
+
+}
+
+nation_united_1 = {
+
+	potential = {
+		national_unity = 70
+		not = { national_unity = 85 }
+	}
+	
+	trigger = {
+		national_unity = 80
+	}
+	
+	dissent = -0.01
+	ruling_party_support = 0.01
+	org_regain = 0.01
+	land_organisation = 0.02
+	air_organisation = 0.02
+	naval_organisation = 0.02
+	
+	icon = 13
+	
+}
+
+nation_united_2 = {
+
+	potential = {
+		national_unity = 80
+		not = { national_unity = 90 }
+	}
+	
+	trigger = {
+		national_unity = 85
+	}
+	
+	dissent = -0.02
+	ruling_party_support = 0.02
+	org_regain = 0.02
+	land_organisation = 0.04
+	air_organisation = 0.04
+	naval_organisation = 0.04
+	
+	icon = 13
+	
+}
+
+nation_united_3 = {
+
+	potential = {
+		national_unity = 85
+		not = { national_unity = 95 }
+	}
+	
+	trigger = {
+		national_unity = 90
+	}
+	
+	dissent = -0.03
+	ruling_party_support = 0.03
+	org_regain = 0.03
+	land_organisation = 0.05
+	air_organisation = 0.05
+	naval_organisation = 0.05
+	
+	icon = 13
+	
+}
+
+nation_united_4 = {
+
+	potential = {
+		national_unity = 90
+		not = { national_unity = 99 }
+	}
+	
+	trigger = {
+		national_unity = 95
+	}
+	
+	dissent = -0.04
+	ruling_party_support = 0.04
+	org_regain = 0.04
+	land_organisation = 0.08
+	air_organisation = 0.08
+	naval_organisation = 0.08
+	
+	icon = 13
+	
+}
+
+nation_united_5 = {
+
+	potential = {
+		national_unity = 95
+		not = { national_unity = 100 }
+	}
+	
+	trigger = {
+		national_unity = 99
+	}
+	
+	dissent = -0.05
+	ruling_party_support = 0.05
+	org_regain = 0.05
+	land_organisation = 0.10
+	air_organisation = 0.10
+	naval_organisation = 0.10
+	
+	icon = 13
+	
+}
+
+nation_united_6 = {
+
+	potential = {
+		national_unity = 99
+	}
+	
+	trigger = {
+		national_unity = 100
+	}
+	
+	dissent = -0.10
+	ruling_party_support = 0.10
+	org_regain = 0.10
+	land_organisation = 0.25
+	air_organisation = 0.25
+	naval_organisation = 0.25
+	
+	icon = 13
+	
+}
+
+lost_potential_1 = {
+
+	potential = {
+		lost_national = 0.05
+		not = { lost_national = 0.10 }
+	}
+	
+	trigger = {
+		lost_national = 0.05
+	}
+	
+	global_leadership_modifier = -0.05
+	
+	icon = 14
+}
+
+lost_potential_2 = {
+
+	potential = {
+		lost_national = 0.10
+		not = { lost_national = 0.25 }
+	}
+	
+	trigger = {
+		lost_national = 0.10
+	}
+	
+	global_leadership_modifier = -0.10
+	
+	icon = 14
+}
+
+lost_potential_3 = {
+
+	potential = {
+		lost_national = 0.25
+		not = { lost_national = 0.40 }
+	}
+	
+	trigger = {
+		lost_national = 0.25
+	}
+	
+	global_leadership_modifier = -0.20
+	
+	icon = 14
+}
+
+lost_potential_4 = {
+
+	potential = {
+		lost_national = 0.40
+		not = { lost_national = 0.65 }
+	}
+	
+	trigger = {
+		lost_national = 0.40
+	}
+	
+	global_leadership_modifier = -0.30
+	
+	icon = 14
+}
+
+lost_potential_5 = {
+
+	potential = {
+		lost_national = 0.65
+	}
+	
+	trigger = {
+		lost_national = 0.65
+	}
+	
+	global_leadership_modifier = -0.50
+	
+	icon = 14
+}
+
+# Losing morale
+
+losing_morale = {
+
+	potential = {
+		war = yes
+		surrender_progress = 50
+	}
+	
+	trigger = {
+		surrender_progress = 75
+	}
+	
+	national_unity = -1.00
+	
+	icon = 14
+}
+
+######################
+# Technology Related #
+######################
+
+encryption_1 = {
+
+	potential = {
+		encryption_machine = 1
+		not = { encryption_machine = 2 }
+	}
+	
+	trigger = {
+		encryption_machine = 1
+	}
+	
+	counter_espionage = 0.05
+	
+	icon = 3
+	
+}
+
+encryption_2 = {
+
+	potential = {
+		encryption_machine = 2
+		not = { encryption_machine = 3 }
+	}
+	
+	trigger = {
+		encryption_machine = 2
+	}
+	
+	counter_espionage = 0.1
+	
+	icon = 3
+	
+}
+
+encryption_3 = {
+
+	potential = {
+		encryption_machine = 3
+		not = { encryption_machine = 4 }
+	}
+	
+	trigger = {
+		encryption_machine = 3
+	}
+	
+	counter_espionage = 0.15
+	
+	icon = 3
+	
+}
+
+encryption_4 = {
+
+	potential = {
+		encryption_machine = 4
+		not = { encryption_machine = 5 }
+	}
+	
+	trigger = {
+		encryption_machine = 4
+	}
+	
+	counter_espionage = 0.2
+	
+	icon = 3
+	
+}
+
+encryption_5 = {
+
+	potential = {
+		encryption_machine = 5
+	}
+	
+	trigger = {
+		encryption_machine = 5
+	}
+	
+	counter_espionage = 0.25
+	
+	icon = 3
+	
+}
+
+decryption_1 = {
+
+	potential = {
+		decryption_machine = 1
+		not = { decryption_machine = 2 }
+	}
+	
+	trigger = {
+		decryption_machine = 1
+	}
+	
+	espionage_bonus = 0.05
+	
+	icon = 15
+	
+}
+
+decryption_2 = {
+
+	potential = {
+		decryption_machine = 2
+		not = { decryption_machine = 3 }
+	}
+	
+	trigger = {
+		decryption_machine = 2
+	}
+	
+	espionage_bonus = 0.1
+	
+	icon = 15
+	
+}
+
+decryption_3 = {
+
+	potential = {
+		decryption_machine = 3
+		not = { decryption_machine = 4 }
+	}
+	
+	trigger = {
+		decryption_machine = 3
+	}
+	
+	espionage_bonus = 0.15
+	
+	icon = 15
+	
+}
+
+decryption_4 = {
+
+	potential = {
+		decryption_machine = 4
+		not = { decryption_machine = 5 }
+	}
+	
+	trigger = {
+		decryption_machine = 4
+	}
+	
+	espionage_bonus = 0.2
+	
+	icon = 15
+	
+}
+
+decryption_5 = {
+
+	potential = {
+		decryption_machine = 5
+	}
+	
+	trigger = {
+		decryption_machine = 5
+	}
+	
+	espionage_bonus = 0.25
+	
+	icon = 15
+	
+}
+
+officer_training_advancement_1 = {
+
+	potential = {
+		officer_training = 1
+		not = { officer_training = 2 }
+	}
+	
+	trigger = {
+		officer_training = 1
+	}
+	
+	officer_recruitment = 0.075
+	
+	icon = 15
+}
+
+officer_training_advancement_2 = {
+
+	potential = {
+		officer_training = 2
+		not = { officer_training = 3 }
+	}
+	
+	trigger = {
+		officer_training = 2
+	}
+	
+	officer_recruitment = 0.15
+	
+	icon = 15
+}
+
+officer_training_advancement_3 = {
+
+	potential = {
+		officer_training = 3
+		not = { officer_training = 4 }
+	}
+	
+	trigger = {
+		officer_training = 3
+	}
+	
+	officer_recruitment = 0.225
+	
+	icon = 15
+}
+
+officer_training_advancement_4 = {
+
+	potential = {
+		officer_training = 4
+	}
+	
+	trigger = {
+		officer_training = 4
+	}
+	
+	officer_recruitment = 0.30
+	
+	icon = 15
+}
+
+oil_production_1 = {
+
+	potential = {
+		oil_refinning = 1
+		not = { oil_refinning = 2 }
+	}
+	
+	trigger = {
+		oil_refinning = 1
+	}
+	
+	global_crude_oil = 0.05
+	
+	icon = 15
+}
+
+oil_production_2 = {
+
+	potential = {
+		oil_refinning = 2
+		not = { oil_refinning = 3 }
+	}
+	
+	trigger = {
+		oil_refinning = 2
+	}
+	
+	global_crude_oil = 0.10
+	
+	icon = 15
+}
+
+oil_production_3 = {
+
+	potential = {
+		oil_refinning = 3
+		not = { oil_refinning = 4 }
+	}
+	
+	trigger = {
+		oil_refinning = 3
+	}
+	
+	global_crude_oil = 0.15
+	
+	icon = 15
+}
+
+oil_production_4 = {
+
+	potential = {
+		oil_refinning = 4
+		not = { oil_refinning = 5 }
+	}
+	
+	trigger = {
+		oil_refinning = 4
+	}
+	
+	global_crude_oil = 0.20
+	
+	icon = 15
+}
+
+oil_production_5 = {
+
+	potential = {
+		oil_refinning = 5
+	}
+	
+	trigger = {
+		oil_refinning = 5
+	}
+	
+	global_crude_oil = 0.25
+	
+	icon = 15
+}
+
+tax_system_1 = {
+
+	potential = {
+		education = 2
+		not = { education = 4 }
+	}
+	
+	trigger = {
+		education = 2
+	}
+	
+	global_money = 0.05
+	
+	icon = 15
+}
+
+tax_system_2 = {
+
+	potential = {
+		education = 4
+		not = { education = 6 }
+	}
+	
+	trigger = {
+		education = 4
+	}
+	
+	global_money = 0.10
+	
+	icon = 15
+}
+
+tax_system_3 = {
+
+	potential = {
+		education = 6
+		not = { education = 8 }
+	}
+	
+	trigger = {
+		education = 6
+	}
+	
+	global_money = 0.15
+	
+	icon = 15
+}
+
+tax_system_4 = {
+
+	potential = {
+		education = 8
+		not = { education = 10 }
+	}
+	
+	trigger = {
+		education = 8
+	}
+	
+	global_money = 0.20
+	
+	icon = 15
+}
+
+tax_system_5 = {
+
+	potential = {
+		education = 10
+	}
+	
+	trigger = {
+		education = 10
+	}
+	
+	global_money = 0.25
+	
+	icon = 15
+}
+
+###############
+# Law Related #
+###############
+# Ruling Ideology causes unease among the populace
+extreme_ideology = {
+	potential = {
+		or = {
+			ideology = national_socialist
+			ideology = stalinist
+		}
+	}
+	trigger = {
+		or = {
+			ideology = national_socialist
+			ideology = stalinist
+		}
+	}
+	
+	ruling_party_support = -0.15
+	
+	icon = 14
+}
+harsh_ideology = {
+	potential = {
+		or = {
+			ideology = fascistic
+			ideology = leninist
+		}
+	}
+	trigger = {
+		or = {
+			ideology = fascistic
+			ideology = leninist
+		}
+	}
+	
+	ruling_party_support = -0.1
+	
+	icon = 14
+}
+mild_ideology = {
+	potential = {
+		or = {
+			ideology = paternal_autocrat
+			ideology = left_wing_radical
+		}
+	}
+	trigger = {
+		or = {
+			ideology = paternal_autocrat
+			ideology = left_wing_radical
+		}
+	}
+	
+	ruling_party_support = -0.05
+	
+	icon = 14
+}
+# Economic Law
+unpopular_economic_autocratic = {
+	potential = {
+		war = no
+		or = {
+			ideology = national_socialist
+			ideology = stalinist
+			ideology = fascistic
+			ideology = leninist
+		}
+		or = {
+			economic_law = war_economy
+			economic_law = total_economic_mobilisation
+		}
+	}
+	trigger = {
+		war = no
+		or = {
+			economic_law = war_economy
+			economic_law = total_economic_mobilisation
+		}
+	}
+	
+	ruling_party_support = -0.05
+	
+	icon = 14
+}
+unpopular_economic_interventionist = {
+	potential = {
+		war = no
+		or = {
+			ideology = paternal_autocrat
+			ideology = left_wing_radical
+			ideology = social_conservative
+			ideology = social_democrat
+		}
+		not = { economic_law = full_civilian_economy }
+		not = { economic_law = basic_mobilisation }
+	}
+	trigger = {
+		war = no
+		not = { economic_law = full_civilian_economy }
+		not = { economic_law = basic_mobilisation }
+	}
+	
+	ruling_party_support = -0.05
+	
+	icon = 14
+}
+unpopular_economic_laissez_faire = {
+	potential = {
+		war = no
+		or = {
+			ideology = social_liberal
+			ideology = market_liberal
+		}
+		not = { economic_law = full_civilian_economy }
+	}
+	trigger = {
+		war = no
+		not = { economic_law = full_civilian_economy }
+	}
+	
+	ruling_party_support = -0.05
+	
+	icon = 14
+}
+# Industrial Policy
+unpopular_industrial_policy_democracy = {
+	potential = {
+		war = no
+		ideology_group = democracy
+		not = { industrial_policy_laws = consumer_product_orientation }
+	}
+	trigger = {
+		war = no
+		not = { industrial_policy_laws = consumer_product_orientation }
+	}
+	
+	ruling_party_support = -0.05
+	
+	icon = 14
+}
+unpopular_industrial_policy_autocracy = {
+	potential = {
+		war = no
+		not = { ideology_group = democracy }
+		not = { ideology = stalinist }
+		industrial_policy_laws = heavy_industry_emphasis
+	}
+	trigger = {
+		war = no
+		industrial_policy_laws = heavy_industry_emphasis
+	}
+	
+	ruling_party_support = -0.05
+	
+	icon = 14
+}
+# Press Law
+opposition_in_the_press = {
+	potential = {
+		not = { ideology_group = democracy }
+		not = { popularity = 50 }
+		press_laws = free_press
+	}
+	trigger = {
+		not = { popularity = 50 }
+		press_laws = free_press
+	}
+	
+	ruling_party_support = -0.1
+	
+	icon = 14
+}
+opposition_in_the_censored_press = {
+	potential = {
+		not = { ideology_group = democracy }
+		not = { popularity = 50 }
+		press_laws = censored_press
+	}
+	trigger = {
+		not = { popularity = 50 }
+		press_laws = censored_press
+	}
+	
+	ruling_party_support = -0.05
+	
+	icon = 14
+}
+war_bonds = {
+	potential = {
+		war = yes
+		has_country_flag = "great_war"
+		ideology_group = democracy
+		popularity = 25
+		not = { popularity = 35 }
+	}
+	trigger = {
+		war = yes
+		popularity = 25
+		press_laws = censored_press
+	}
+	
+	global_ic = 0.05
+	global_money = 0.15
+	
+	icon = 14
+}
+more_war_bonds = {
+	potential = {
+		war = yes
+		has_country_flag = "great_war"
+		ideology_group = democracy
+		popularity = 35
+	}
+	trigger = {
+		war = yes
+		popularity = 35
+		press_laws = censored_press
+	}
+	
+	global_ic = 0.10
+	global_money = 0.30
+	
+	icon = 14
+}

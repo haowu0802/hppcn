@@ -1,0 +1,173 @@
+country_event = {
+
+	id = 1850
+	
+	major = yes
+	
+	trigger = {
+		tag = IRQ
+		government_in_exile = no
+		exists = GER
+		not = { has_country_flag = "break_away_from_the_uk" }
+		ENG = { war = yes }
+		or = {
+			alliance_with = ENG
+			faction = allies
+		}
+		or = {
+			not = { exists = FRA }
+			exists = VIC
+			FRA = { government_in_exile = yes }
+		}
+		fascistic = { organisation = 25 popularity = 25 }
+	}
+	
+	title = "Coup in Iraq"
+	desc = "The 1941 Iraqi coup d'état, also known as the Rashid Ali Al-Gaylani coup or the Golden Square coup was a pro-Nazi military coup in Iraq on April 1, 1941 that overthrew the regime of Regent 'Abd al-Ilah and installed Rashid Ali as Prime Minister."
+	picture = "iraqi_coup"
+	
+	option = {
+		name = "Oh, my!"
+		set_country_flag = "break_away_from_the_uk"
+		national_unity = 3
+		neutrality = -10
+		load_oob = "fascistic.txt"
+		head_of_state = 91130
+		head_of_government = 91052
+		foreign_minister = 91052
+		armament_minister = 91097
+		minister_of_security = 91052
+		minister_of_intelligence = 91129
+		chief_of_staff = 91051
+		chief_of_army = 91051
+		chief_of_air = 91170
+		chief_of_navy = 91076
+		leave_alliance = ENG
+		leave_faction = allies
+		GER = { country_event = 1851 }
+		any_country = {
+			limit = {
+				or = {
+					guarantee = IRQ
+					alliance_with = IRQ
+				}
+				not = { tag = ENG }
+				not = { war_with = ENG }
+			}
+			country_event = 1854
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 1851
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "Iraqi negotiations"
+	desc = "Iraq broke away from British oppression, and now seeks our aid in their struggle against the colonial empire. Should we help them?"
+	picture = "iraqi_coup"
+	
+	option = {
+		name = "We could use an ally in the Middle-East!"
+		ai_chance = { factor = 100 }
+		IRQ = { country_event = 1852 }
+		end_war = IRQ
+		relation = { who = IRQ value = 25 }
+	}
+	option = {
+		name = "And how could they help us exactly?..."
+		ai_chance = { factor = 0 }
+		IRQ = { country_event = 1853 }
+		relation = { who = IRQ value = -25 }
+	}
+
+}
+
+country_event = {
+
+	id = 1852
+	
+	is_triggered_only = yes
+	
+	title = "Germany agrees to help!"
+	desc = "Germany accepted to help us against the British oppressors! We will finally be independent!"
+	picture = "constitutional"
+	
+	option = {
+		name = "We could use an ally in the Middle-East!"
+		join_faction = axis
+		relation = { who = IRQ value = 25 }
+	}
+
+}
+
+country_event = {
+
+	id = 1853
+	
+	is_triggered_only = yes
+	
+	title = "Germany declined to help!"
+	desc = "Germany declined to help us in our war against the British oppressors! What can we do now?"
+	picture = "fire"
+	
+	option = {
+		name = "We could use an ally in the Middle-East!"
+		relation = { who = GER value = -25 }
+	}
+
+}
+
+country_event = {
+
+	id = 1854
+	
+	is_triggered_only = yes
+	
+	title = "Iraq breaks away"
+	desc = "Iraq broke away from British control, and started negotiations with Germany. Britain will surely take steps against them. What should we do now?"
+	picture = "iraqi_coup"
+	
+	option = {
+		name = "Iraq is not worth fighting for!"
+		ai_chance = { factor = 100 }
+		leave_alliance = IRQ
+		end_guarantee = IRQ
+	}
+	option = {
+		name = "We stand by our brothers!"
+		ai_chance = { factor = 0 }
+	}
+
+}
+
+country_event = {
+
+	id = 1855
+	
+	is_triggered_only = yes
+	
+	title = "Iraq breaks away"
+	desc = "Iraq broke away from British control, and started negotiations with Germany. Britain will surely take steps against them. What should we do now?"
+	picture = "iraqi_coup"
+	
+	option = {
+		name = "Iraq is not worth fighting for!"
+		ai_chance = { factor = 100 }
+		leave_alliance = IRQ
+		end_guarantee = IRQ
+		ENG = { create_vassal = THIS }
+		government = absolute_monarchy
+	}
+	option = {
+		name = "We stand by our brothers!"
+		ai_chance = { factor = 0 }
+		create_alliance = IRQ
+	}
+
+}

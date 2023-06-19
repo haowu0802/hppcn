@@ -1,0 +1,159 @@
+#################################
+# Reoccupation of the Rhineland #
+#################################
+# This should be an event, not a decision!
+# If Germany sends troops into the Demilitarized zone, they will have to suffer the consequences!
+country_event = {
+
+	id = 1000
+
+	major = yes
+	
+	trigger = {
+		tag = GER
+		not = { has_country_flag = "the_reoccupation_of_the_rhineland" }
+		any_owned_province = {
+			any_neighbor_province = { owned_by = FRA }
+			units_in_province = 1
+		}
+	}
+	
+	title = "reoccupation_of_the_rhineland_title"
+	desc = "reoccupation_of_the_rhineland_desc"
+	picture = "factory"
+	
+	option = {
+		name = "Great!"
+		set_country_flag = "the_reoccupation_of_the_rhineland"
+		clr_country_flag = "versailles_treaty"
+		relation = { who = FRA value = -15 }
+		relation = { who = ENG value = -5 }
+		relation = { who = BEL value = -10 }
+		relation = { who = HOL value = -5 }
+		organisation = 5
+		popularity = 5
+		neutrality = -3
+		dissent = -2
+		money = 500
+		manpower = 250
+		national_unity = 3
+		threat = { who = FRA value = 5 }
+		remove_country_modifier = "necessery_nerf_for_democracies"
+		ENG = { country_event = 1001 }
+		FRA = { country_event = 1001 }
+	}
+
+}
+
+# Informs the UK and France
+country_event = {
+	
+	id = 1001
+
+	is_triggered_only = yes
+
+	title = "EVTNAME1001"
+	desc = "EVTDESC1001"
+	picture = "factory"
+
+	option = {
+		name = "EVTOPTA1001"			# OK
+		neutrality = -5
+	}
+}
+
+# Ask the British about the remilitarization
+country_event = {
+	
+	id = 1002
+
+	is_triggered_only = yes
+
+	title = "Germany wants to negotiate"
+	desc = "Germany wants to negotiate the demilitarized zone of the Rheinland. Our public opinion is that "
+	picture = "factory"
+
+	option = {
+		name = "It was overkill anyway..."
+		ai_chance = { factor = 95 }
+		national_unity = 1
+		FRA = { country_event = 1001 }
+		GER = { country_event = 1003 }
+	}
+	option = {
+		name = "No they don't!"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0.0
+				head_of_state = 1031		# Edward VIII likes Hitler
+			}
+		}
+		dissent = 1
+		GER = { country_event = 1004 }
+	}
+}
+
+# The UK approves!
+country_event = {
+	
+	id = 1003
+
+	is_triggered_only = yes
+
+	title = "The British approved"
+	desc = "The United Kingdom accepted our pleas to reoccupy our own territory in the Rheinland! We can safely move our troops there now!"
+	picture = "factory"
+
+	option = {
+		name = "Great!"
+		clr_country_flag = "versailles_treaty"
+		relation = { who = FRA value = -15 }
+		relation = { who = BEL value = -5 }
+		dissent = -2
+		money = 350
+		manpower = 250
+		national_unity = 3
+		threat = { who = FRA value = 5 }
+		remove_country_modifier = "necessery_nerf_for_democracies"
+	}
+}
+
+# Informs the UK and France
+country_event = {
+	
+	id = 1004
+
+	is_triggered_only = yes
+
+	title = "The British said no!"
+	desc = "The United Kingdom turned down our demands to reoccupy the Rheinland! How dare they?!"
+	picture = "factory"
+
+	option = {
+		name = "Do it anyway!"
+		ai_chance = { factor = 99 }
+		clr_country_flag = "versailles_treaty"
+		relation = { who = FRA value = -15 }
+		relation = { who = ENG value = -5 }
+		relation = { who = BEL value = -10 }
+		relation = { who = HOL value = -5 }
+		neutrality = -3
+		dissent = -2
+		money = 500
+		manpower = 250
+		national_unity = 3
+		threat = { who = FRA value = 5 }
+		remove_country_modifier = "necessery_nerf_for_democracies"
+		ENG = { country_event = 1001 }
+		FRA = { country_event = 1001 }
+	}
+	option = {
+		name = "Too bad..."
+		ai_chance = { factor = 1 }
+		organisation = -15
+		popularity = -10
+		dissent = 10
+	}
+}
+

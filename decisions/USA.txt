@@ -1,0 +1,316 @@
+diplomatic_decisions = {
+
+	new_deal_hpp = {
+		potential = {
+			tag = USA
+			or = {
+				has_country_modifier = "us_great_depression_5"
+				has_country_modifier = "us_great_depression_4"
+				has_country_modifier = "us_great_depression_3"
+				has_country_modifier = "us_great_depression_2"
+				has_country_modifier = "us_great_depression_1"
+			}
+		}
+		allow = {
+			not = { has_country_modifier = "us_new_deal" }
+			or = {
+				ai = yes
+				money = 100
+			}
+		}
+		effect = {
+			money = -100
+			add_country_modifier = {
+				name = "us_new_deal"
+				duration = 90
+			}
+			random_owned = {
+				limit = { is_core = THIS continent = north_america not = { industry = 9 } industry = 1 }
+				random = { chance = 50 industry = 1 }
+			}
+			random_owned = {
+				limit = { is_core = THIS continent = north_america not = { industry = 9 } industry = 1 }
+				random = { chance = 50 industry = 1 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	gear_up_for_war = {
+		major = yes
+		potential = {
+			tag = USA
+			not = { has_country_flag = "us_gear_up_for_war" }
+		}
+		allow = {
+			or = {	# There's a faction-war in progress!
+				GER = {	war_with = ENG }
+				GER = {	war_with = SOV }
+				ENG = {	war_with = SOV }
+				war = yes
+			}
+		}
+		effect = {
+			set_country_flag = "us_gear_up_for_war"
+			neutrality = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	intervention_in_china = {
+		major = yes
+		potential = {
+			tag = USA
+			war = no
+			is_subject = no
+			government_in_exile = no
+			exists = CHI
+			exists = JAP
+			CHI = { war_with = JAP }
+			not = { has_country_flag = "intervention_in_china" }
+		}
+		allow = {
+			or = {
+				CHI = { lost_national = 0.10 }
+				JAP = { lost_national = 0.10 }
+				and = {
+					exists = MAN
+					MAN = { vassal_of = JAP }
+					MAN = { lost_national = 0.20 }
+				}
+			}
+		}
+		effect = {
+			set_country_flag = "intervention_in_china"
+			CHI = { country_event = 1060 }
+			JAP = { country_event = 1060 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	peace_in_china = {
+		major = yes
+		potential = {
+			tag = USA
+			war = no
+			is_subject = no
+			government_in_exile = no
+			exists = CHI
+			exists = JAP
+			CHI = { war_with = JAP }
+			has_country_flag = "intervention_in_china"
+			not = { has_country_flag = "peace_in_china" }
+			CHI = { has_country_flag = "stop_the_war" }
+			JAP = { has_country_flag = "stop_the_war" }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = "peace_in_china"
+			any_country = {
+				limit = {
+					war_with = JAP
+					alliance_with = CHI
+				}
+				end_war = JAP
+			}
+			any_country = {
+				limit = {
+					war_with = CHI
+					alliance_with = JAP
+				}
+				end_war = CHI
+			}
+			JAP = { end_war = CHI }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	request_us_intervention = {
+		potential = {
+			# This is here for performance reasons. Hopefully the engine is clever enough
+			# not to check the rest of the conditions if this is not met anyway.
+			war = yes
+			# But not with the US
+			not = { war_with = USA }
+			# The country is in the Americas
+			any_owned_province = {
+				is_capital = yes
+				or = {
+					continent = north_america
+					continent = south_america
+					continent = Central_America
+					continent = Caribbean
+				}
+			}
+			not = { tag = CAN }
+			# They are fairly neutral, so it is unlikely that they've started the conflict
+			base_neutrality = 75
+			# They are still under the protection of the US
+			has_country_flag = "protected_by_the_usa"
+			# They are at war with a non-american country that is not at war with the US
+			or = {
+			# Majors
+				and = { war_with = ENG not = { USA = { war_with = ENG } } }
+				and = { war_with = GER not = { USA = { war_with = GER } } }
+				and = { war_with = JAP not = { USA = { war_with = JAP } } }
+				and = { war_with = SOV not = { USA = { war_with = SOV } } }
+				and = { war_with = ITA not = { USA = { war_with = ITA } } }
+				and = { war_with = FRA not = { USA = { war_with = FRA } } }
+			# Northern Europe
+				and = { war_with = DEN not = { USA = { war_with = DEN } } }
+				and = { war_with = ICL not = { USA = { war_with = ICL } } }
+				and = { war_with = EST not = { USA = { war_with = EST } } }
+				and = { war_with = FIN not = { USA = { war_with = FIN } } }
+				and = { war_with = LAT not = { USA = { war_with = LAT } } }
+				and = { war_with = LIT not = { USA = { war_with = LIT } } }
+				and = { war_with = NOR not = { USA = { war_with = NOR } } }
+				and = { war_with = SWE not = { USA = { war_with = SWE } } }
+
+			# Western Europe
+				and = { war_with = BEL not = { USA = { war_with = BEL } } }
+				and = { war_with = HOL not = { USA = { war_with = HOL } } }
+				and = { war_with = IRE not = { USA = { war_with = IRE } } }
+				and = { war_with = LUX not = { USA = { war_with = LUX } } }
+				and = { war_with = VIC not = { USA = { war_with = VIC } } }
+
+			# Central Europe
+				and = { war_with = AUS not = { USA = { war_with = AUS } } }
+				and = { war_with = CZE not = { USA = { war_with = CZE } } }
+				and = { war_with = CRO not = { USA = { war_with = CRO } } }
+				and = { war_with = DDR not = { USA = { war_with = DDR } } }
+				and = { war_with = DFR not = { USA = { war_with = DFR } } }
+				and = { war_with = HUN not = { USA = { war_with = HUN } } }
+				and = { war_with = POL not = { USA = { war_with = POL } } }
+				and = { war_with = ROM not = { USA = { war_with = ROM } } }
+				and = { war_with = SLO not = { USA = { war_with = SLO } } }
+				and = { war_with = SCH not = { USA = { war_with = SCH } } }
+
+			# Southern Europe
+				and = { war_with = POR not = { USA = { war_with = POR } } }
+				and = { war_with = RSI not = { USA = { war_with = RSI } } }
+				and = { war_with = SPA not = { USA = { war_with = SPA } } }
+				and = { war_with = SPR not = { USA = { war_with = SPR } } }
+
+			# Southeast Europe 
+				and = { war_with = ALB not = { USA = { war_with = ALB } } }
+				and = { war_with = BUL not = { USA = { war_with = BUL } } }
+				and = { war_with = GRE not = { USA = { war_with = GRE } } }
+				and = { war_with = YUG not = { USA = { war_with = YUG } } }
+
+			# Western Asia
+				and = { war_with = AFG not = { USA = { war_with = AFG } } }
+				and = { war_with = IRQ not = { USA = { war_with = IRQ } } }
+				and = { war_with = ISR not = { USA = { war_with = ISR } } }
+				and = { war_with = JOR not = { USA = { war_with = JOR } } }
+				and = { war_with = LEB not = { USA = { war_with = LEB } } }
+				and = { war_with = OMN not = { USA = { war_with = OMN } } }
+				and = { war_with = PAL not = { USA = { war_with = PAL } } }
+				and = { war_with = PER not = { USA = { war_with = PER } } }
+				and = { war_with = SAU not = { USA = { war_with = SAU } } }
+				and = { war_with = SYR not = { USA = { war_with = SYR } } }
+				and = { war_with = TUR not = { USA = { war_with = TUR } } }
+				and = { war_with = YEM not = { USA = { war_with = YEM } } }
+
+			# Southern Asia
+				and = { war_with = BHU not = { USA = { war_with = BHU } } }
+				and = { war_with = IND not = { USA = { war_with = IND } } }
+				and = { war_with = NEP not = { USA = { war_with = NEP } } }
+				and = { war_with = PAK not = { USA = { war_with = PAK } } }
+
+			# Eastern Asia
+				and = { war_with = CGX not = { USA = { war_with = CGX } } }
+				and = { war_with = CHC not = { USA = { war_with = CHC } } }
+				and = { war_with = CHI not = { USA = { war_with = CHI } } }
+				and = { war_with = CSX not = { USA = { war_with = CSX } } }
+				and = { war_with = CXB not = { USA = { war_with = CXB } } }
+				and = { war_with = CYN not = { USA = { war_with = CYN } } }
+				and = { war_with = KOR not = { USA = { war_with = KOR } } }
+				and = { war_with = MAN not = { USA = { war_with = MAN } } }
+				and = { war_with = MEN not = { USA = { war_with = MEN } } }
+				and = { war_with = MON not = { USA = { war_with = MON } } }
+				and = { war_with = PRK not = { USA = { war_with = PRK } } }
+				and = { war_with = SIK not = { USA = { war_with = SIK } } }
+				and = { war_with = TAN not = { USA = { war_with = TAN } } }
+				and = { war_with = TIB not = { USA = { war_with = TIB } } }
+
+			# Southeastern Asia
+				and = { war_with = IDC not = { USA = { war_with = IDC } } }
+				and = { war_with = INO not = { USA = { war_with = INO } } }
+				and = { war_with = PHL not = { USA = { war_with = PHL } } }
+				and = { war_with = SIA not = { USA = { war_with = SIA } } }
+
+			# Africa
+				and = { war_with = EGY not = { USA = { war_with = EGY } } }
+				and = { war_with = LIB not = { USA = { war_with = LIB } } }
+				and = { war_with = ETH not = { USA = { war_with = ETH } } }
+				and = { war_with = SAF not = { USA = { war_with = SAF } } }
+
+			# Australasia
+				and = { war_with = AST not = { USA = { war_with = AST } } }
+				and = { war_with = NZL not = { USA = { war_with = NZL } } }
+
+			# Mini-nations in Europe
+				and = { war_with = CYP not = { USA = { war_with = CYP } } }
+				and = { war_with = MTA not = { USA = { war_with = MTA } } }
+
+			# Puppetable colonies in Asia
+
+				and = { war_with = KWT not = { USA = { war_with = KWT } } }
+				and = { war_with = CEY not = { USA = { war_with = CEY } } }
+				and = { war_with = BBU not = { USA = { war_with = BBU } } }
+				and = { war_with = MLY not = { USA = { war_with = MLY } } }
+
+			# Puppetable colonies in Africa
+				and = { war_with = LBY not = { USA = { war_with = LBY } } }
+				and = { war_with = ALG not = { USA = { war_with = ALG } } }
+				and = { war_with = TUN not = { USA = { war_with = TUN } } }
+				and = { war_with = MAD not = { USA = { war_with = MAD } } }
+				and = { war_with = MOR not = { USA = { war_with = MOR } } }
+
+			# Puppetable colonies in America
+				and = { war_with = JAM not = { USA = { war_with = JAM } } }
+
+			# Yugoslav States
+				and = { war_with = BOS not = { USA = { war_with = BOS } } }
+				and = { war_with = MAC not = { USA = { war_with = MAC } } }
+				and = { war_with = MTN not = { USA = { war_with = MTN } } }
+				and = { war_with = SER not = { USA = { war_with = SER } } }
+				and = { war_with = SLV not = { USA = { war_with = SLV } } }
+
+			# Post-Soviet States
+				and = { war_with = RUS not = { USA = { war_with = RUS } } }
+				and = { war_with = ARM not = { USA = { war_with = ARM } } }
+				and = { war_with = AZB not = { USA = { war_with = AZB } } }
+				and = { war_with = BLR not = { USA = { war_with = BLR } } }
+				and = { war_with = GEO not = { USA = { war_with = GEO } } }
+				and = { war_with = UKR not = { USA = { war_with = UKR } } }
+				and = { war_with = KAZ not = { USA = { war_with = KAZ } } }
+				and = { war_with = KYG not = { USA = { war_with = KYG } } }
+				and = { war_with = TRK not = { USA = { war_with = TRK } } }
+				and = { war_with = TAJ not = { USA = { war_with = TAJ } } }
+				and = { war_with = UZB not = { USA = { war_with = UZB } } }
+
+			# Other nations
+				and = { war_with = NJG not = { USA = { war_with = NJG } } }
+			}
+		}
+		allow = {
+		}
+		effect = {
+			USA = { country_event = 1061 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

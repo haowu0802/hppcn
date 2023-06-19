@@ -1,0 +1,34 @@
+diplomatic_decisions = {
+
+	operation_torch = {
+		major = yes
+		potential = {
+			tag = USA
+			war_with = GER
+			exists = ENG
+			exists = VIC
+			VIC = { is_in_any_faction = no }
+			NOT = { has_country_flag = "Operation_Torch" }
+			total_amount_of_divisions = 75		# We will need a sizeable force to pull this one off!
+		}
+		allow = {
+			or = {
+				5586 = { controlled_by = ENG }	# Alexandria
+				5586 = { controlled_by = USA }
+				5586 = { controlled_by = EGY }
+			}
+			or = {
+				not = { exists = ITA }
+				not = { war_with = ITA }
+				5484 = { controller = { faction = allies } }	# Benghazi in Allied hands
+			}
+		}
+		effect = {
+			set_country_flag = "Operation_Torch"
+			VIC = { country_event = 1651 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

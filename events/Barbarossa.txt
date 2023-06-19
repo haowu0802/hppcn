@@ -1,0 +1,137 @@
+country_event = {
+
+	id = 3701
+
+	major = yes
+	
+	trigger = {
+		or = {
+			faction = axis
+			alliance_with = GER
+		}
+		any_owned_province = {
+			is_capital = yes
+			OR = {
+				continent = europe
+				continent = Scandinavia
+				continent = Baltic_States
+				continent = Iberia
+				continent = Balkans
+				continent = Arabia
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	title = "Operation Barbarossa"
+	desc = "Germany is planning an attack on the Soviet Union, codenamed: Operation Barbarossa. They are asking for our help in that plan."
+	picture = "barbarossa"
+
+	option = {
+		name = "We stand by the pact!"
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.0
+				any_owned_province = {
+					or = {
+						and = {
+							any_neighbor_province = { owned_by = SOV controlled_by = SOV units_in_province = 1 }
+							not = { units_in_province = 1 }		# The borders are undefended!
+						}		
+						and = {
+							any_neighbor_province = { owned_by = SOV controlled_by = SOV units_in_province = 4 }
+							not = { units_in_province = 2 }		# We are outnumbered 2:1!!!
+						}
+						and = {
+							any_neighbor_province = { owned_by = SOV controlled_by = SOV units_in_province = 6 }
+							not = { units_in_province = 3 }		# We are outnumbered 2:1!!!
+						}										# If we have three units in a province,
+					}											# that should be enough until reinforcements arrive.
+				}
+			}
+		}
+		war = {
+			target = SOV
+			attacker_goal = { casus_belli = aquire_all_cores }
+		}
+		GER = { country_event = 3702 }
+	}
+	option = {
+		name = "We can't afford a war right now!"
+		ai_chance = {
+			factor = 10
+		}
+		GER = { country_event = 3703 }
+	}
+}
+
+country_event = {
+
+	id = 3702
+
+	is_triggered_only = yes
+
+	title = "barbarossa_accept_title"
+	desc = "barbarossa_accept_desc"
+	picture = "treaty_signed"
+
+	option = {
+		name = "Excellent!"
+	}
+}
+
+country_event = {
+
+	id = 3703
+
+	is_triggered_only = yes
+
+	title = "barbarossa_decline_title"
+	desc = "barbarossa_decline_desc"
+	picture = "furios_hitler"
+
+	option = {
+		name = "We don't really need you!"
+		ai_chance = { factor = 70 }
+		FROM = {
+			relation = { who = GER value = -25 }
+			leave_faction = axis
+		}
+	}
+	option = {
+		name = "If you don't help by your own will, we will make you!!"
+		ai_chance = { factor = 30 }
+		FROM = {
+			relation = { who = GER value = -50 }
+			leave_faction = axis
+			set_country_flag = "barbarossa_traitor"
+		}
+		set_country_flag = "traitors_barbarossa"
+	}
+}
+country_event = {
+
+	id = 3704
+
+	is_triggered_only = yes
+
+	title = "Germany attacks!"
+	desc = "We declined Germany's offer to help them against the might of the Soviet Union. Now we have to face the might of the German Reich!"
+	picture = "war_declared"
+
+	option = {
+		name = "We are screwed..."
+		dissent = 20
+		national_unity = -5
+		GER = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = puppet }
+				defender_goal = { casus_belli = concede_defeat }
+			}
+		}
+	}
+
+}

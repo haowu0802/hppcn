@@ -1,0 +1,34 @@
+theatre = {
+	name = "Xi'zang Zuigao Tongshuai Bu"
+	location = 9377
+	regiment = { type = hq_brigade name = "Lhasa HQ" historical_model = 0 }
+	corps = {
+		name = "Xi'zang Jüntuan 1"
+		location = 9377
+		regiment = { type = hq_brigade name = "Xi'zang Jüntuan 1 HQ" historical_model = 0 }
+		division= {
+			name = "1 Xi'zang Qibing Shi"
+			location = 9377
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1. Mínbing Tuán" experience = 3 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "2. Mínbing Tuán" experience = 3 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "3. Mínbing Tuán" experience = 3 historical_model = 0 }
+		}
+		division= {
+			name = "10 Xi'zang Qibing Shi"
+			location = 9377
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "4. Mínbing Tuán" experience = 3 historical_model = 0 }
+			regiment = { type = militia_brigade name = "5. Mínbing Tuán" experience = 3 historical_model = 0 }
+			regiment = { type = militia_brigade name = "6. Mínbing Tuán" experience = 3 historical_model = 0 }
+		}
+		division= {
+			name = "17 Xi'zang Qibing Shi"
+			location = 9377
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "7. Mínbing Tuán" experience = 3 historical_model = 0 }
+			regiment = { type = militia_brigade name = "8. Mínbing Tuán" experience = 3 historical_model = 0 }
+			regiment = { type = militia_brigade name = "9. Mínbing Tuán" experience = 3 historical_model = 0 }
+		}
+	}
+}

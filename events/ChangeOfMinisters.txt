@@ -1,0 +1,1179 @@
+# Stanly
+
+country_event = {
+
+	id = 8301
+	
+	major = yes
+
+	trigger = {
+		tag = ENG
+		year = 1937
+		head_of_government = 1002
+		not = { has_country_flag = "baldwin_resigns" }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+
+	title = "Stanley Baldwin resigns"
+	desc = "After the abdication crisis, Stanley Baldwin decided that his political career was at its peak, and it was time to resign."
+	picture = "chamberlain"
+
+	option = {
+		name = "Appoint Neville Chamberlain!"
+		ai_chance = { factor = 75 }
+		set_country_flag = "baldwin_resigns"
+		remove_minister = 1002
+		set_country_flag = "1002_removed"
+		social_conservative = { organisation = 5 popularity = 5 }
+		country_event = 8303
+	}
+	option = {
+		name = "Appoint Anthony Eden!"
+		ai_chance = { factor = 20 }
+		set_country_flag = "baldwin_resigns"
+		remove_minister = 1002
+		set_country_flag = "1002_removed"
+		social_conservative = { organisation = 5 popularity = 5 }
+		country_event = 8304
+	}
+	option = {
+		name = "Appoint Winston Churchill!"
+		ai_chance = { factor = 5 }
+		set_country_flag = "baldwin_resigns"
+		remove_minister = 1002
+		set_country_flag = "1002_removed"
+		social_conservative = { organisation = 5 popularity = 5 }
+		country_event = 8305
+	}
+}
+
+country_event = {
+
+	id = 8302
+	
+	major = yes
+
+	trigger = {
+		tag = ENG
+		ideology_group = democracy
+		or = {
+			not = { exists = NOR }
+			NOR = { government_in_exile = yes }
+			not = { exists = HOL }
+			HOL = { government_in_exile = yes }
+			not = { exists = BEL }
+			BEL = { government_in_exile = yes }
+			not = { exists = LUX }
+			LUX = { government_in_exile = yes }
+			FRA = {
+				any_owned_province = {
+					continent = europe
+					controller = { faction = axis }
+				}
+			}
+		}
+		not = { has_country_flag = "end_of_appeasement" }
+	}
+
+	title = "End of the appeasement policy"
+	desc = "It is obvious that we are now fighting another Great War, and we are not doing that great either! It is time to abolish the appeasement policy."
+	picture = "churchill"
+
+
+	option = {
+		name = "Appoint Winston Churchill!"
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.25
+				not = { social_conservative = { organisation = 25 popularity = 25 } }
+				social_democrat = { organisation = 25 popularity = 25 }
+			}
+		}
+		set_country_flag = "end_of_appeasement"
+		social_conservative = { organisation = 5 popularity = 5 }
+		government = war_cabinet
+		country_event = 8305
+		any_country = {
+			limit = {
+				faction = THIS
+				war = yes
+			}
+			set_country_flag = "great_war"
+		}
+	}
+	option = {
+		name = "Appoint Lord Halifax!"
+		ai_chance = { factor = 5 }
+		set_country_flag = "end_of_appeasement"
+		social_conservative = { organisation = 5 popularity = 5 }
+		government = war_cabinet
+		country_event = 8306
+		any_country = {
+			limit = {
+				faction = THIS
+				war = yes
+			}
+			set_country_flag = "great_war"
+		}
+	}
+	option = {
+		name = "Appoint Clement Attlee!"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 15.0
+				not = { social_conservative = { organisation = 25 popularity = 25 } }
+				social_democrat = { organisation = 25 popularity = 25 }
+			}
+		}
+		set_country_flag = "end_of_appeasement"
+		social_democrat = { organisation = 5 popularity = 5 }
+		government = "war_cabinet"
+		country_event = 8307
+		any_country = {
+			limit = {
+				faction = THIS
+				war = yes
+			}
+			set_country_flag = "great_war"
+		}
+	}
+}
+
+country_event = {
+
+	id = 8303
+	
+	is_triggered_only = yes
+	
+	title = "Chamberlain appointed"
+	desc = "The king appointed Neville Chamberlain as the Prime Minister of the United Kingdom."
+	picture = "resign"
+	
+	option = {
+		name = "Good choice!"
+		head_of_government = 1004
+	}
+}
+
+country_event = {
+
+	id = 8304
+	
+	is_triggered_only = yes
+	
+	title = "Eden appointed"
+	desc = "The king appointed Anthony Eden as the Prime Minister of the United Kingdom."
+	picture = "resign"
+	
+	option = {
+		name = "Good choice!"
+		head_of_government = 1003
+	}
+}
+
+country_event = {
+
+	id = 8305
+	
+	is_triggered_only = yes
+	
+	title = "Churchill appointed"
+	desc = "The king appointed Winston Churchill as the Prime Minister of the United Kingdom."
+	picture = "churchill"
+	
+	option = {
+		name = "Good choice!"
+		head_of_government = 1038
+	}
+}
+
+country_event = {
+
+	id = 8306
+	
+	is_triggered_only = yes
+	
+	title = "Halifax appointed"
+	desc = "The king appointed Lord Halifax as the Prime Minister of the United Kingdom."
+	picture = "churchill"
+	
+	option = {
+		name = "Good choice!"
+		head_of_government = 1045
+	}
+}
+
+country_event = {
+
+	id = 8307
+	
+	is_triggered_only = yes
+	
+	title = "Attlee appointed"
+	desc = "The king appointed Clement Attlee as the Prime Minister of the United Kingdom."
+	picture = "churchill"
+	
+	option = {
+		name = "Good choice!"
+		head_of_government = 1040
+	}
+}
+
+country_event = {
+
+	id = 8310
+	
+	trigger = {
+		tag = ENG
+		government = war_cabinet
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	title = "The war is over"
+	desc = "With the Great War now over, it's about time we dissolved the War Cabinet, and held general elections again."
+	picture = "constitutional"
+	
+	option = {
+		name = "Hold elections!"
+		ai_chance = { factor = 100 }
+		government = constitutional_monarchy
+	}
+	
+	option = {
+		name = "We need some more time!"
+		ai_chance = { factor = 0 }
+	}
+	
+}
+
+country_event = {
+
+	id = 8315
+
+	trigger = {
+		tag = USA
+		head_of_state = 6001
+		year = 1944
+		not = { has_country_flag = "death_of_fdr" }
+	}
+
+	mean_time_to_happen = {
+		months = 15
+	}
+
+	title = "The President is dead!"
+	desc = "On the afternoon of April 12, Roosevelt said, 'I have a terrific pain in the back of my head.' He then slumped forward in his chair, unconscious, and was carried into his bedroom. He died of cerebral hemorrhage at 3:35 pm, that day."
+	picture = "FDR_Dies"
+
+	option = {
+		name = "The man who could rise up from the wheelchair..."
+		set_country_flag = "death_of_fdr"
+		remove_minister = 6001
+		set_country_flag = "6001_removed"
+		country_event = 8316
+	}
+}
+
+country_event = {
+
+	id = 8316
+	
+	is_triggered_only = yes
+	
+	title = "Truman inaugurated"
+	desc = "After the death of Roosevelt, his Vice-President, Harry S. Truman took the office of President of the United States of America, with Alben W. Barkley as Vice-President."
+	picture = "FDR_Dies"
+	
+	option = {
+		name = "The nation will endure!"
+		head_of_state = 6034
+		head_of_government = 6047
+	}
+}
+
+# Blomberg-Fritsch Affair extended by v. Falkenhausen
+
+country_event = {
+
+	id = 8320
+	
+	trigger = {
+		tag = GER
+		or = {		# Blomberg is in office.
+			armament_minister = 4
+			chief_of_army = 4
+		}
+		or = {
+			minister_of_security = 108	# Himmler is in the cabinet or
+			chief_of_air = 10			# Göring is in the cabinet.
+			head_of_state = 10
+			head_of_government = 10
+			armament_minister = 10
+		}
+		year = 1938
+		not = { has_country_flag = "blomberg_affair" }
+	}
+	
+	title = "The Blomberg Affair"
+	desc = "blomberg_affair_desc"
+	picture = "minister_resign"
+	
+	option = {
+		name = "Send the fool into permanent retirement!"
+		set_country_flag = "blomberg_affair"
+		set_country_flag = "blomberg_resigns"
+		organisation = 10
+		remove_minister = 4
+		set_country_flag = "4_removed"
+		armament_minister = 10
+		chief_of_army = 8
+		kill_leader = 607
+	}
+	option = {
+		name = "We will have to endure the scandal"
+		set_country_flag = "blomberg_affair"
+		organisation = -5
+		popularity = -3
+	}
+
+}
+
+country_event = {
+
+	id = 8321
+	
+	trigger = {
+		tag = GER
+		chief_of_army = 8	# Fritsch is in office.
+		or = {
+			minister_of_security = 108	# Himmler is in the cabinet or
+			chief_of_air = 10			# Göring is in the cabinet.
+			head_of_state = 10
+			head_of_government = 10
+			armament_minister = 10
+		}
+		has_country_flag = "blomberg_resigns"
+		not = { has_country_flag = "fritsch_affair" }
+	}
+	
+	title = "The Fritsch Affair"
+	desc = "fritsch_affair_desc"
+	picture = "minister_resign"
+	
+	option = {
+		name = "Force him to resign as well"
+		set_country_flag = "fritsch_affair"
+		set_country_flag = "fritsch_resigns"
+		organisation = 5
+		kill_leader = 611
+	}
+	option = {
+		name = "We can not face another scandal!"
+		set_country_flag = "fritsch_affair"
+		organisation = -5
+		popularity = -3
+	}
+
+}
+
+country_event = {
+
+	id = 8322
+	
+	trigger = {
+		tag = GER
+		has_country_flag = "fritsch_resigns"
+		not = { has_country_flag = "appointing_new_cic" }
+	}
+	
+	title = "Appointing a new Commander-in-Chief"
+	desc = "fritsch_affair_desc"
+	picture = "constitutional"
+	
+	option = {
+		name = "Appoint Reichenau"
+		ai_chance = { factor = 10 }
+		set_country_flag = "appointing_new_cic"
+		organisation = 10
+		paternal_autocrat = { organisation = -5 }
+		remove_minister = 8
+		set_country_flag = "8_removed"
+		chief_of_army = 238
+		remove_minister = 7
+		set_country_flag = "7_removed"
+		chief_of_staff = 153 # Paulus
+		kill_leader = 335 # Rundstedt
+		kill_leader = 183 # Leeb
+		kill_leader = 114 # Halder
+		kill_leader = 354 # Witzleben
+		kill_leader = 310 # Kleist
+		kill_leader = 116 # Hammerstein-Equord
+		kill_leader = 787 # Amsberg
+		kill_leader = 307 # Kaupisch
+		kill_leader = 344 # Stülpnagel C.H.
+		kill_leader = 26 # Böhm-Tettelbach
+		kill_leader = 309 # Knochenhauer
+		kill_leader = 728 # Halm
+		kill_leader = 730 # Hansen K.
+		kill_leader = 692 # Endres
+		kill_leader = 58 # Fessmann
+		kill_leader = 697 # Fischer H.
+		kill_leader = 609 # Dalwigk zu Lichtenfels
+		kill_leader = 330 # Pogrell
+		kill_leader = 355 # Württemberg
+		kill_leader = 790 # Berendt
+	}
+	option = {
+		name = "Appoint Rundstedt"
+		ai_chance = { factor = 10 }
+		set_country_flag = "appointing_new_cic"
+		organisation = -5
+		paternal_autocrat = { organisation = 10 }
+		remove_minister = 8
+		set_country_flag = "8_removed"
+		chief_of_army = 181
+		remove_minister = 7
+		set_country_flag = "7_removed"
+		chief_of_staff = 229 # Manstein
+	}
+	option = {
+		name = "Appoint Brauchitsch"
+		ai_chance = { factor = 80 }
+		set_country_flag = "appointing_new_cic"
+		organisation = 5
+		remove_minister = 8
+		set_country_flag = "8_removed"
+		chief_of_army = 174
+		remove_minister = 7
+		set_country_flag = "7_removed"
+		chief_of_staff = 155 # Halder
+	}
+
+}
+
+country_event = {
+
+	id = 8330
+	
+	trigger = {
+		tag = GER
+		war_with = SOV
+		war_with = ENG
+		head_of_government = 2
+		not = { has_country_flag = "hess_in_scotland" }
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	title = "Rudolf Hess' flight to Scotland"
+	desc = "hess_to_scotland_desc"
+	picture = "furios_hitler"
+	
+	option = {
+		name = "Treason!"
+		set_country_flag = "hess_in_scotland"
+		ENG = { country_event = 8331 }
+	}
+
+}
+
+country_event = {
+
+	id = 8331
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	title = "Rudolf Hess' flight to Scotland"
+	desc = "Hitler's deputy, Rudolf Hess was arrested at Floors Farm near Eaglesham this morning. He claims that he has a peace offer to make."
+	picture = "minister_resign"
+	
+	option = {
+		name = "Arrest him!"
+		ai_chance = {
+			factor = 99
+			modifier = {
+				factor = 0.8
+				not = { faction_progress = 15 }
+			}
+			modifier = {
+				factor = 0.8
+				not = { faction_progress = 10 }
+			}
+			modifier = {
+				factor = 0.8
+				not = { faction_progress = 5 }
+			}
+			modifier = {
+				factor = 0.8
+				GER = { faction_progress = 20 }
+			}
+			modifier = {
+				factor = 0.4
+				GER = { faction_progress = 35 }
+			}
+			modifier = {
+				factor = 0.0
+				GER = { faction_progress = 50 }
+			}
+		}
+		GER = {
+			remove_minister = 2
+			set_country_flag = "2_removed"
+			country_event = 8332
+		}
+	}
+	option = {
+		name = "Let him talk!"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.0
+				head_of_government = 1038
+			}
+			modifier = {
+				factor = 0.0
+				exists = USA
+				USA = { faction = allies }
+			}
+			modifier = {
+				factor = 1.5
+				not = { faction_progress = 15 }
+			}
+			modifier = {
+				factor = 1.5
+				not = { faction_progress = 10 }
+			}
+			modifier = {
+				factor = 1.5
+				not = { faction_progress = 5 }
+			}
+			modifier = {
+				factor = 1.5
+				GER = { faction_progress = 20 }
+			}
+			modifier = {
+				factor = 1.5
+				GER = { faction_progress = 35 }
+			}
+			modifier = {
+				factor = 1.5
+				GER = { faction_progress = 50 }
+			}
+		}
+		set_country_flag = "hess_in_scotland"
+		GER = { country_event = 3950 }
+	}
+
+}
+
+country_event = {
+
+	id = 8332
+	
+	is_triggered_only = yes
+	
+	title = "Rudolf Hess arrested"
+	desc = "Rudolf Hess was arrested in the United Kingdom after his attempt to negotiate for peace with the British Empire. We should let him rot there..."
+	picture = "furios_hitler"
+	
+	option = {
+		name = "Tough luck."
+		head_of_government = 42	
+	}
+}
+
+country_event = {
+
+	id = 8335
+	
+	trigger = {
+		tag = AST
+		not = { has_country_flag = "56001_removed" }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	title = "Sir Isaac Isaacs retires"
+	desc = "Sir Isaac Isaacs, 9th Governor-General of Australia retired in January, 1936. He was the first person born in Australia to occupy this post."
+	picture = "minister_resign"
+	
+	option = {
+		name = "Farewell!"
+		remove_minister = 56001
+		set_country_flag = "56001_removed"
+	}
+
+}
+
+country_event = {
+
+	id = 8336
+	
+	trigger = {
+		tag = AST
+		date = 1945.1.30
+		not = { has_country_flag = "56031_removed" }
+	}
+	
+	title = "Alexander, Lord of Gowrie retires"
+	desc = "Alexander, Lord of Gowrie returned to the United Kingdom in January, 1945."
+	picture = "minister_resign"
+	
+	option = {
+		name = "Farewell!"
+		remove_minister = 56031
+		set_country_flag = "56031_removed"
+	}
+
+}
+
+country_event = {
+
+	id = 8337
+	
+	trigger = {
+		tag = AST
+		not = { has_country_flag = "56002_removed" }
+		date = 1939.4.1
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	title = "Joseph A. Lyons is dead"
+	desc = "Joseph A. Lyons died of heart-attack in early '39."
+	picture = "minister_resign"
+	
+	option = {
+		name = "Farewell!"
+		remove_minister = 56002
+		set_country_flag = "56002_removed"
+	}
+
+}
+
+country_event = {
+
+	id = 8338
+	
+	trigger = {
+		tag = CAN
+		not = { has_country_flag = "45001_removed" }
+		date = 1940.2.1
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	title = "John Baron Tweedsmuir is dead"
+	desc = "John Baron Tweedsmuir died today. He suffered a severe head injury when he fell during a stroke at Rideau Hall."
+	picture = "minister_resign"
+	
+	option = {
+		name = "Farewell!"
+		remove_minister = 45001
+		set_country_flag = "45001_removed"
+	}
+
+}
+
+country_event = {
+
+	id = 8339
+	
+	trigger = {
+		tag = CAN
+		not = { has_country_flag = "45131_removed" }
+		date = 1946.4.1
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	title = "Alexander Earl of Athlone resignes"
+	desc = "After long years of services as the Governor-General of Canada, Alexander Earl of Athlone retired today."
+	picture = "minister_resign"
+	
+	option = {
+		name = "Farewell!"
+		remove_minister = 45131
+		set_country_flag = "45131_removed"
+	}
+
+}
+
+country_event = {
+
+	id = 8340
+	
+	trigger = {
+		tag = CAN
+		not = { has_country_flag = "45045_removed" }
+		date = 1942.3.15
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	title = "J.S. Woodsworth is dead"
+	desc = "J.S. Woodsworth, leader of the Co-operative Commonwealth Federation suffered a stroke almost two years ago and his health deteriorated ever since. He passed away today."
+	picture = "minister_resign"
+	
+	option = {
+		name = "Farewell!"
+		remove_minister = 45045
+		set_country_flag = "45045_removed"
+	}
+
+}
+
+###################
+# Important Coups #
+###################
+
+# Greece - August 4th Coup
+
+country_event = {
+	
+	id = 8380
+	
+	major = yes
+
+	trigger = {
+		tag = GRE
+		date = 1936.8.4
+		not = { has_country_flag = "august_coup" }
+	}
+
+	title = "The Metaxas Regime"
+	desc = "august4coup_info"
+	picture = "politics1"
+
+	option = {
+		ai_chance = { factor = 95 }
+		name = "We must save Greece!"			# OK
+		national_unity = -2
+		dissent = 5
+		organisation = 25
+		popularity = 5
+		social_liberal = { organisation = -30 popularity = -5 }
+		government = right_wing_autocrat
+		head_of_government = 18049
+		set_country_flag = "august_coup"
+	}
+	option = {
+		ai_chance = { factor = 5 }
+		name = "Fold..."
+		do_election	= THIS
+		set_country_flag = "august_coup"
+	}
+}
+
+#################
+# Hungarian PMs #
+#################
+
+# Death of Gyula Gömbös
+country_event = {
+	
+	id = 8400
+
+	trigger = {
+		tag = HUN
+		date = 1936.10.4
+		not = { has_country_flag = "21002_removed" }
+		head_of_government = 21002
+	}
+
+	title = "The death of Gyula Gömbös."
+	desc = "The Prime Minister dreamed of creating a fascist state in Hungary, but Gömbös never lived to see his ambitious plans come to fruition; after a long bout with kidney disease, he died of kidney failure in Munich on 6 October 1936."
+	picture = "politics1"
+
+	option = {
+		name = "The poor sod..."
+		remove_minister = 21002
+		set_country_flag = "21002_removed"
+	}
+}
+
+# Darányi's secret pacts
+country_event = {
+	
+	id = 8401
+
+	trigger = {
+		tag = HUN
+		is_in_any_faction = no
+		neighbour = GER
+		head_of_government = 21053
+		not = { has_country_flag = "daranyi_stays" }
+	}
+
+	mean_time_to_happen =  {
+		months = 2
+	}
+
+	title = "Darányi's secret pacts"
+	desc = "With Hungary bordering Germany, Prime Minister Kálmán Darányi started secret negotiations with the extreme right-wing Arrow-Cross Party."
+	picture = "politics1"
+
+	option = {
+		name = "Force him to resign!"
+		ai_chance = { factor = 95 }
+		remove_minister = 21053
+		set_country_flag = "21053_removed"
+		organisation = 5 
+		popularity = 2
+	}
+
+	option = {
+		name = "He is right!"
+		ai_chance = { factor = 5 }
+		set_country_flag = "daranyi_stays"
+		neutrality = -10
+		fascistic = { organisation = 5 }
+		national_socialist = { organisation = 10 }
+		organisation = -15
+		popularity = -5
+		dissent = 5
+	}
+}
+
+# Imrédy's heritage
+country_event = {
+	
+	id = 8402
+
+	trigger = {
+		tag = HUN
+		is_in_any_faction = no
+		neighbour = GER
+		year = 1939
+		head_of_government = 21054
+		not = { has_country_flag = "imredy_stays" }
+	}
+
+	mean_time_to_happen =  {
+		months = 3
+	}
+
+	title = "Imrédy's heritage"
+	desc = "Imrédy’s moderate political opponents, angered at his growing right wing leaning, presented evidence suggesting Imrédy had Jewish ancestors. When confronted with the evidence, he could not deny the claims and resigned."
+	picture = "politics1"
+
+	option = {
+		name = "Force him to resign!"
+		ai_chance = { factor = 95 }
+		remove_minister = 21054
+		set_country_flag = "21054_removed"
+		organisation = 5 
+		popularity = 2
+	}
+
+	option = {
+		name = "No need to..."
+		set_country_flag = "imredy_stays"
+		ai_chance = { factor = 5 }
+		neutrality = -10
+		fascistic = { organisation = 5 }
+		national_socialist = { organisation = 10 }
+		organisation = -15
+		popularity = -5
+		dissent = 5
+	}
+}
+
+# Teleki's suicide
+country_event = {
+	
+	id = 8403
+
+	trigger = {
+		tag = HUN
+		faction = axis
+		war_with = ENG
+		head_of_government = 21055
+		not = { has_country_flag = "21055_removed" }
+	}
+
+	title = "Teleki's suicide"
+	desc = "Shortly after Hungary officially joined the Second World War, Pál Teleki commited suicide."
+	picture = "politics1"
+
+	option = {
+		name = "...we have allied ourselves with scoundrels..."
+		remove_minister = 21055
+		set_country_flag = "21055_removed"
+		organisation = 5 
+		popularity = 2
+	}
+}
+
+# Bárdossy's right leanings
+country_event = {
+	
+	id = 8404
+
+	trigger = {
+		tag = HUN
+		war = yes
+		war_exhaustion = 1.5
+		head_of_government = 21056
+		has_country_flag = "bardossy_stays"
+	}
+
+	title = "Bárdossy's rightist leanings"
+	desc = "László Bárdossy is not able to stand up to Germany while our forces are getting beaten on the battlefield."
+	picture = "politics1"
+
+	option = {
+		name = "Force him to resign!"
+		ai_chance = { factor = 95 }
+		remove_minister = 21056
+		set_country_flag = "21056_removed"
+		organisation = 5 
+		popularity = 2
+	}
+
+	option = {
+		name = "He is just fine."
+		set_country_flag = "bardossy_stays"
+		ai_chance = { factor = 5 }
+		neutrality = -10
+		fascistic = { organisation = 5 }
+		national_socialist = { organisation = 10 }
+		organisation = -15
+		popularity = -5
+		dissent = 5
+	}
+}
+
+
+################
+# Japanese PMs #
+################
+
+# Handled by the 226Incident.txt file
+
+
+# Turkey
+
+# Ismet Inönü resignes
+country_event = {
+	
+	id = 8420
+
+	trigger = {
+		tag = TUR
+		head_of_state = 12001
+		head_of_government = 12002
+		not = { has_country_flag = "12002_removed" }
+		not = { national_unity = 70 }
+		date = 1937.10.25
+		not = { has_country_flag = "ismet_inonu_removed" }
+	}
+
+	title = "Ismet Inönü resigns"
+	desc = "Ismet Inönü, Prime Minister of Turkey was forced to resign by Mustafa Kemal Atatürk to make way for a more democratic form of government."
+	picture = "politics1"
+
+	option = {
+		name = "Too bad for him."
+		set_country_flag = "ismet_inonu_removed"
+	}
+}
+
+# Death of Mustafa Kemal Atatürk
+country_event = {
+	
+	id = 8421
+	
+	major = yes
+
+	trigger = {
+		tag = TUR
+		not = { has_country_flag = "12001_removed" }
+		date = 1938.11.10
+	}
+
+	title = "The death of the Great Turk"
+	desc = "During 1937, indications that Atatürk's health was worsening started to appear. He died on 10 November 1938, at the age of 57."
+	picture = "politics1"
+
+	option = {
+		name = "A great tragedy for our nation!"
+		remove_minister = 12001
+		set_country_flag = "12001_removed"
+	}
+}
+
+# Celâl Bayar resignes
+country_event = {
+	
+	id = 8422
+
+	trigger = {
+		tag = TUR
+		head_of_state = 12002
+		head_of_government = 12032
+		not = { has_country_flag = "12032_removed" }
+		or = {
+			not = { national_unity = 70 }
+			government = social_conservatism
+			government = social_democracy
+		}
+		date = 1939.1.25
+		not = { has_country_flag = "celal_bayar_removed" }
+	}
+
+	title = "Celâl Bayar resigns"
+	desc = "Celâl Bayar, Prime Minister of Turkey was forced to resign because of his differences with President Ismet Inönü."
+	picture = "politics1"
+
+	option = {
+		name = "Too bad."
+		set_country_flag = "celal_bayar_removed"
+	}
+}
+
+# Death of Refik Saydam
+country_event = {
+	
+	id = 8423
+
+	trigger = {
+		tag = TUR
+		not = { has_country_flag = "12033_removed" }
+		date = 1942.7.8
+	}
+
+	title = "Death of Refik Saydam"
+	desc = "Refik Saydam, Prime Minister of Turkey died in office in July, 1942."
+	picture = "politics1"
+
+	option = {
+		name = "Too bad."
+		remove_minister = 12033
+		set_country_flag = "12033_removed"
+	}
+}
+
+# ªükrü Saracoglu resigns
+country_event = {
+	
+	id = 8424
+
+	trigger = {
+		tag = TUR
+		not = { has_country_flag = "12034_removed" }
+		date = 1946.8.7
+	}
+
+	title = "Sükrü Saracoglu resigns"
+	desc = "Sükrü Saracoglu, Prime Minister of Turkey retired from political affairs due to his failing health in August, 1946."
+	picture = "politics1"
+
+	option = {
+		name = "Too bad."
+		remove_minister = 12034
+		set_country_flag = "12034_removed"
+	}
+}
+
+# Mehmet Recep Peker resigns
+country_event = {
+	
+	id = 8425
+
+	trigger = {
+		tag = TUR
+		not = { has_country_flag = "12067_removed" }
+		not = { national_unity = 70 }
+		date = 1947.9.10
+	}
+
+	title = "Mehmet Recep Peker resigns"
+	desc = "Mehmet Recep Peker, Prime Minister of Turkey resigned along with his entire government in September, 1947."
+	picture = "politics1"
+
+	option = {
+		name = "Too bad."
+		remove_minister = 12067
+		set_country_flag = "12067_removed"
+	}
+}
+
+# Death of Ali Fethi Okyar
+country_event = {
+	
+	id = 8426
+
+	trigger = {
+		tag = TUR
+		not = { has_country_flag = "12013_removed" }
+		not = { national_unity = 70 }
+		date = 1943.5.7
+	}
+
+	title = "Death of Ali Fethi Okyar"
+	desc = "Ali Fethi Okyar, leader of the left-leaning parties of Turkey died in May, 1943."
+	picture = "politics1"
+
+	option = {
+		name = "Too bad."
+		remove_minister = 12013
+		set_country_flag = "12013_removed"
+	}
+}
+
+# Death of Andrej Hlinka
+country_event = {
+	
+	id = 8427
+
+	trigger = {
+		tag = CZE
+		not = { has_country_flag = "31001_removed" }
+		date = 1938.8.16
+	}
+
+	title = "Death of Andrej Hlinka"
+	desc = "The head innovator of Slovakian autonomy died on 16th August 1938, yet failing to fully achieve his goal. Now the political situation of our country is rather unstable, mainly because of the power struggle between HSLS and SdP. What should we do?"
+	picture = "politics1"
+
+	option = {
+		name = "Appoint the radical wing! (SdP)"
+		set_country_flag = "31001_removed"
+		remove_minister = 31001
+		head_of_state = 24039
+		head_of_government = 24048
+	}
+	
+	option = {
+		name = "Appoint the moderate wing! (HSLS)"
+		set_country_flag = "31001_removed"
+		remove_minister = 31001
+		head_of_state = 31002
+		head_of_government = 31003
+	}
+}

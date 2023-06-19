@@ -1,0 +1,202 @@
+###########################
+# Molotov-Ribbentrop Pact #
+###########################
+diplomatic_decisions = {
+	
+	# German Proposal
+	molotov_ribbentrop_pact = {
+		major = yes
+		potential = {
+			tag = GER
+			not = { has_country_flag = "the_molotov_ribbentrop_pact" }
+			not = { has_country_flag = "su_signs_peace" }
+			not = { alliance_with = SOV }
+			exists = SOV
+			exists = POL
+			date = 1939.3.1		# Initial talks
+			not = { year = 1940 }
+			not = { war_with = SOV }
+			not = { war_with = POL }
+		}
+		allow = {
+			date = 1939.6.1
+			not = { exists = AUS } # Anschluss of Austria
+			or = {
+				has_country_flag = "first_vienna_award"
+				has_country_flag = "first_vienna_award_hungary"
+				controls = 2562 # Praha
+			}
+			POL = {
+				not = { faction = axis }
+				not = { alliance_with = GER }
+			}
+			GER = { is_subject = no }
+			SOV = { is_subject = no }
+			POL = { is_subject = no }
+		}
+		effect = {
+			set_country_flag = "the_molotov_ribbentrop_pact"
+			relation = { who = SOV value = 15 }
+			relation = { who = EST value = -75 }
+			relation = { who = LAT value = -75 }
+			relation = { who = LIT value = -75 }
+			SOV = { country_event = 1501 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Pact in Effect, Soviet puts forward its claims to Bessarabia
+	claim_bessarabia = {
+		major = yes
+		potential = {
+			tag = SOV
+			exists = GER
+			ROM = { neighbour = SOV }
+			exists = ROM
+			or = {
+				year = 1940
+				has_country_flag = "resist_german_expansionism"
+			}
+			not = { year = 1942 }
+			not = { has_country_flag = "claims_on_bessarabia" }
+			not = { has_country_flag = "su_signs_peace" }
+			not = { war_with = GER }
+			not = { war_with = ROM }
+			bessarabia = { controlled_by = ROM }
+			GER = { controls = 1928 } # Warszawa
+		}
+		allow = {
+			war = no
+			or = {
+				date = 1940.5.1
+				has_country_flag = "resist_german_expansionism"
+			}
+			or = {
+				non_aggression_pact = GER
+				GER = { war_with = ENG }
+			}
+		}
+		effect = {
+			set_country_flag = "claims_on_bessarabia"
+			relation = { who = ROM value = -10 }
+			neutrality = -5
+			ROM = { country_event = 1509 }
+			ROM = { country_event = 2308 }
+			ROM = { country_event = 2309 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# Pact in Effect, Ultimatum to Estonia, Latvia and Lithuania
+	ultimatum_to_the_baltic_states = {
+		major = yes
+		potential = {
+			tag = SOV
+			not = { has_country_flag = "ultimatum_to_baltic_states" }
+			not = { has_country_flag = "su_signs_peace" }
+			or = {
+				date = 1940.6.1
+				has_country_flag = "resist_german_expansionism"
+			}
+			exists = EST
+			or = {
+				EST = { is_subject = no }
+				EST = { vassal_of = SOV }
+			}
+		}
+		allow = {
+			not = { war_with = GER }
+			EST = { war = no }
+			LAT = { war = no }
+			LIT = { war = no }
+			or = {
+				non_aggression_pact = GER
+				GER = { war_with = ENG }
+			}
+		}
+		effect = {
+			set_country_flag = "ultimatum_to_baltic_states"
+			neutrality = -5
+			EST = { country_event = 1512 }		# The other two will be triggered by this
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# In case Estinia doesn't exist, fire this version
+	ultimatum_to_the_baltic_states_v2 = {
+		major = yes
+		potential = {
+			tag = SOV
+			not = { has_country_flag = "ultimatum_to_baltic_states" }
+			not = { has_country_flag = "su_signs_peace" }
+			or = {
+				date = 1940.6.1
+				has_country_flag = "resist_german_expansionism"
+			}
+			not = { exists = EST }
+			exists = LAT
+			or = {
+				LAT = { is_subject = no }
+				LAT = { vassal_of = SOV }
+			}
+		}
+		allow = {
+			LAT = { war = no }
+			LIT = { war = no }
+			not = { war_with = GER }
+			or = {
+				non_aggression_pact = GER
+				GER = { war_with = ENG }
+			}
+		}
+		effect = {
+			set_country_flag = "ultimatum_to_baltic_states"
+			neutrality = -5
+			LAT = { country_event = 1515 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#If the pact wasn't modified, Germany will annex Lithuania after France falls
+	ultimatum_to_the_baltic_states_v3 = {
+		major = yes
+		potential = {
+			tag = GER
+			not = { has_country_flag = "german_ultimatum_lithuania" }
+			has_country_flag = "M_R_Pact_intact"
+			date = 1940.1.1
+			exists = LIT
+			or = {
+				LIT = { is_subject = no }
+				LIT = { vassal_of = GER }
+			}
+		}
+		allow = {
+			LIT = { war = no }
+			OR = {
+				NOT = { exists = FRA }
+				exists = VIC
+				FRA = { government_in_exile = yes }
+			}
+			not = { war_with = SOV }
+			or = {
+				non_aggression_pact = SOV
+				GER = { war_with = ENG }
+			}
+		}
+		effect = {
+			set_country_flag = "german_ultimatum_lithuania"
+			neutrality = -5
+			LIT = { country_event = 1530 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,184 @@
+theatre = {
+	name = "Türk Yüksek Komutanligi"
+	location = 4619
+	regiment = { type = hq_brigade name = "Ankara HQ" historical_model = 0 }
+		corps = {
+		name = "I. Topluluk"
+		location = 4619
+		regiment = { type = hq_brigade name = "I. Topluluk HQ" historical_model = 0 }
+		division= {
+			name = "1. Piyade Dagitim"
+			location = 4619
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1. Piyade Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "2. Piyade Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "3. Piyade Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = horse_towed_support_brigade name = "1. Topçu Alayinda" experience = 5 historical_model = 1 }			
+		}
+		division= {
+			name = "3. Piyade Dagitim"
+			location = 4619
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "4. Piyade Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "5. Piyade Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "6. Piyade Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = horse_towed_support_brigade name = "3. Topçu Alayinda" experience = 5 historical_model = 2 }				
+		}
+	}
+	division = {
+		name = "5. Piyade Dagitim"
+		location = 4503
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "7. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "8. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "9. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "5. Topçu Alayinda" experience = 5 historical_model = 3 }			
+	}
+	division = {
+		name = "7. Piyade Dagitim"
+		location = 4615
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "10. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "11. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "12. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "7. Topçu Alayinda" experience = 5 historical_model = 1 }			
+	}
+	division = {
+		name = "9. Piyade Dagitim"
+		location = 4883
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "13. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "14. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "15. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "9. Topçu Alayinda" experience = 5 historical_model = 2 }		
+	}
+	division = {
+		name = "11. Piyade Dagitim"
+		location = 4188
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "16. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "17. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "18. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "11. Topçu Alayinda" experience = 5 historical_model = 1 }		
+	}
+	division = {
+		name = "13. Piyade Dagitim"
+		location = 7269
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "19. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "20. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "21. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "13. Topçu Alayinda" experience = 5 historical_model = 1 }
+	}
+	division = {
+		name = "15. Piyade Dagitim"
+		location = 7304
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "22. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "23. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "24. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "15. Topçu Alayinda" experience = 5 historical_model = 2 }		
+	}
+	division = {
+		name = "17. Piyade Dagitim"
+		location = 7332
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "25. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "26. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "27. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "17. Topçu Alayinda" experience = 5 historical_model = 3 }	
+	}
+	division = {
+		name = "19. Piyade Dagitim"
+		location = 4513
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "28. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "29. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "30. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "19. Topçu Alayinda" experience = 5 historical_model = 1 }		
+	}
+	division = {
+		name = "1. Dagci Tugay"
+		location = 4624
+		is_reserve = yes
+		regiment = { type = bergsjaeger_brigade name = "1. Dag Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = bergsjaeger_brigade name = "2. Dag Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = bergsjaeger_brigade name = "3. Dag Piyade Alayi" experience = 5 historical_model = 1 }
+	}
+	corps = {
+		name = "Türkce Süvari Topluluk"
+		location = 4927
+		regiment = { type = hq_brigade name = "Türkce Süvari Topluluk HQ" historical_model = 0 }
+		division= {
+			name = "1. Süvari Dagitim"
+			location = 4927
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1. Süvari Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "2. Süvari Alayi" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "3. Süvari Dagitim"
+			location = 4927
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "3. Süvari Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "4. Süvari Alayi" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "5. Yedek Süvari Dagitim"
+			location = 4927
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "5. Süvari Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "6. Süvari Alayi" experience = 5 historical_model = 1 }
+		}
+	}
+	navy = {
+		name = "Türkce Deniz Filosu"
+		base = 4441
+		location = 4441
+		ship = { type = light_cruiser name = "TDT Hamidieh" experience = 5 historical_model = 0 }
+		ship = { type = transport_ship name = "Reschid Pasha Kücük Filotilla" experience = 5 historical_model = 0 }
+	}
+	navy = {
+		name = "1. Türk Dz. Kuvvetleri Filosu"
+		base = 4441
+		location = 4441
+		ship = { type = battlecruiser name = "TDT Yavuz" experience = 5 historical_model = 0 pride = yes }
+		ship = { type = light_cruiser name = "TDT Medjidieh" experience = 5 historical_model = 0 }
+		ship = { type = destroyer name = "1. Filotilla Torpido Ve Denizalti" experience = 5 historical_model = 6 }
+		ship = { type = submarine name = "1. Filotilla Denizalti Kücük" experience = 5 historical_model = 4 }
+	}
+	air = {
+		name = "I. Türkce Hava Topluluk"
+		base = 4619
+		location = 4619
+		wing = { type = interceptor name = "1. Avci Ucagi Grup" experience = 5 historical_model = 0 }
+	}
+}
+convoy_construction=
+{
+	country = TUR
+	id=
+	{
+		id=15100
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = TUR
+	id=
+	{
+		id=15101
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

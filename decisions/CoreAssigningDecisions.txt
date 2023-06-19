@@ -1,0 +1,156 @@
+diplomatic_decisions = {
+
+#################################################
+# This decision will not be possible to make.   #
+# It will be already made at startup, to make   #
+# adjustments of the original cores, without    #
+# changing the province files.                  #
+#################################################
+
+	starting_core_changes = {
+		potential = {
+			tag = REB
+		}
+		allow = {
+		}
+		effect = {
+						
+			# Add the other two Germanies in right away as well. They might come in handy later on!
+			GER = {
+				any_owned = {
+					limit = { is_core = GER }
+					add_core = DDR
+					add_core = DFR
+				}
+			}
+			
+			
+			
+			# Bolivia
+			
+			10219 = { add_core = BOL }	
+			10197 = { add_core = BOL }
+			10209 = { add_core = BOL }
+			10238 = { add_core = BOL }
+			10254 = { add_core = BOL }
+			10200 = { add_core = BOL }
+			10187 = { add_core = BOL }	
+			10141 = { add_core = BOL }	
+			10060 = { add_core = BOL }	
+			10176 = { add_core = BOL }	
+			10154 = { add_core = BOL }	
+			
+
+			# Hungarian cores
+			
+			# Fixing Transylvania: not all of it should have Hungarian cores!
+			ROM = { any_owned = { remove_core = HUN } }
+			transylvania_proper_region = { add_core = HUN }
+			3034 = { add_core = HUN } 
+			3101 = { add_core = HUN } 
+			3167 = { add_core = HUN } 
+			3234 = { add_core = HUN } 
+			3438 = { add_core = HUN } 
+			3439 = { add_core = HUN }
+			3505 = { add_core = HUN }
+			3641 = { add_core = HUN }
+			# Bácska
+			YUG = { any_owned = { remove_core = HUN } }
+			3571 = { add_core = HUN }
+			3636 = { add_core = HUN }
+			3637 = { add_core = HUN }
+			3704 = { add_core = HUN }
+			
+			# Iraq
+			
+			9336 = { add_core = IRQ }
+			
+			# Ethiopia should be alright now
+			
+			# Croatia
+			
+			croatia_region = { add_core = CRO add_core = YUG }
+			4171 = { add_core = CRO add_core = YUG }
+			4044 = { add_core = CRO add_core = YUG }
+			4236 = { add_core = CRO add_core = YUG }
+			4365 = { add_core = CRO add_core = YUG }
+			
+			# Mongolia
+			
+			9089 = { add_core = MON }
+			7377 = { add_core = MON }
+			7390 = { add_core = MON }
+			7384 = { add_core = MON }
+			5052 = { add_core = MON }
+			7348 = { add_core = MON }
+			7367 = { add_core = MON }
+			7358 = { add_core = MON }	
+			mengkukuo_region = { add_core = MON }
+			#MAN_4682 = { add_core = MON }
+			#MAN_7208 = { add_core = MON }
+			#MAN_8872 = { add_core = MON }
+			#MAN_7135 = { add_core = MON }
+			#MAN_8773 = { add_core = MON }
+			#MAN_7313 = { add_core = MON }
+			#MAN_4886 = { add_core = MON }
+
+			#### New nations ####
+
+			
+			
+			#ITA_3976 = { add_core = CRO }
+
+			# Remove Italian cores from Slovenian provinces in Yugoslavia
+			# they never should've been there, and is due to PI laziness regarding the partition of YUG
+			YUG = { any_owned = { limit = { is_core = SLV } remove_core = ITA } }
+			
+			# Armenia, Azerbaijan, Belarus, Georgia, Ukraine, Kazahstan, Kyrgyzstan,
+			# Uzbekistan, Turkmenistan, Tajikistan added in the history files.
+			# Moldova
+			# Actually 'created' by the Claim of Bessarabia, and not yet implemented anyway because of a lack of ministers and leaders.
+			# Russian cores are also done.
+			
+	
+
+			
+		
+			##########################################
+			# Removal of cores from Colonial Nations #
+			##########################################
+			
+			
+			# Now re-add the cores where appripriate.
+			1903 = { add_core = ENG }		# Antigua
+			5021 = { add_core = ENG }		# Virgin Islands
+			5868 = { add_core = ENG }		# Hong Kong
+			6394 = { add_core = ENG }		# Singapore
+			9961 = { add_core = ENG }		# The Maldives
+			10195 = { add_core = ENG }		# Seychelles
+			10479 = { add_core = ENG }		# Falkland Islands
+			10488 = { add_core = ENG }		# South Georgia
+			10630 = { add_core = ENG }		# Ascension Island
+			10633 = { add_core = ENG }		# St. Helena
+			10635 = { add_core = ENG }		# Mauritius
+			10636 = { add_core = ENG }		# Diego Garcia
+			10628 = { add_core = ENG }		# Bermuda
+			10905 = { add_core = ENG }		# Turks and Caicos Islands
+			#ENG_1091 = { add_core = ENG }	# Trinidad Region
+			ENG_7521 = { add_core = ENG }	# The Bahamas
+
+						
+						# Add in the Republic of Italy! They can be released from the start, but they don't have foreign claims.
+			
+			ITA = {
+				any_owned = {
+					limit = { is_core = ITA }
+					add_core = RSI
+				}
+			}
+			
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,304 @@
+##################################
+# The Marco Polo Bridge Incident #
+##################################
+
+# China - Reaction Event
+country_event = {
+	
+	id = 1701
+
+	is_triggered_only = yes
+	
+	major = yes
+
+	title = "EVTNAME1701"
+	desc = "EVTDESC1701"
+	picture = "Marco_Polo"
+
+	option = {
+		name = "EVTOPTA1701"			# We must defend our nation
+		ai_chance = {
+			factor = 95
+			modifier = { factor = 0.1 war_with = CHC }
+		}
+		neutrality = -5
+		organisation = 5
+		popularity = -2
+		JAP = { country_event = 1702 }
+	}
+	
+	option = {
+		name = "Try to weather it out"
+		ai_chance = {
+			factor = 1
+			modifier = { factor = 10.0 war_with = CHC }
+		}
+		stalinist = { organisation = 5 popularity = 8 }
+		organisation = -5
+		popularity = -8
+		JAP = { country_event = 1703 }
+	}
+	
+	option = {
+		name = "Give in to their demands"
+		ai_chance = {
+			factor = 4
+			modifier = { factor = 0.5 war_with = CHC }
+			modifier = { factor = 5.0 JAP = { is_in_any_faction = yes } }
+			modifier = { factor = 0.0 is_in_any_faction = yes }
+		}
+		any_owned = { limit = { is_core = MEN } remove_core = CHI secede_province = MEN }
+		MAN = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
+		JAP = { any_owned = { limit = { is_core = CHI } remove_core = CHI } }
+		stalinist = { organisation = 10 popularity = 15 }
+		organisation = -10
+		popularity = -15
+		JAP = { country_event = 1705 }
+	}
+}
+
+country_event = {
+
+	id = 1702
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	title = "The conflict escalates"
+	desc = "The local Chinese authorities declined to cooperate. We have no choice but to teach them a lesson. Backing down now would be dishonourable!"
+	picture = "marco_polo"
+	
+	option = {
+		name = "Let's teach them a lesson!"
+		ai_chance = {
+			factor = 99
+			modifier = { factor = 0.1 war_with = SOV }
+		}
+		manpower = 100
+		war = {
+			target = CHI
+			attacker_goal = { casus_belli = conquer }
+		}
+		5176 = { infra = 4 }
+		5208 = { infra = 4 }
+		5144 = { infra = 4 }
+		5054 = { infra = 4 }
+		5142 = { infra = 4 }
+		5084 = { infra = 2 } 
+		5112 = { infra = 2 }
+		4933 = { infra = 4 }
+		CHI = {  
+			clr_country_flag = "de_militarized_hebei"
+			set_country_flag = "de_militarized_hebei_cleared"
+					add_wargoal = {
+						target = JAP
+						war_goal = { casus_belli = aquire_all_cores }
+					}
+					add_wargoal = {
+						target = MAN
+						war_goal = { casus_belli = civil_war }
+					}
+					add_wargoal = {
+						target = MEN
+						war_goal = { casus_belli = civil_war }
+					}
+		}
+	}
+	
+	option = {
+		name = "This is not the time..."
+		ai_chance = {
+			factor = 1
+			modifier = { factor = 10.0 war_with = SOV }
+			modifier = { factor = 0.0 is_in_any_faction = yes }
+		}
+		organisation = -5
+		popularity = -10
+	}
+
+}
+
+country_event = {
+
+	id = 1703
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	title = "The Chinese are cooperating"
+	desc = "The local Chinese authorities have shown some sign of cooperation. What should we do now?"
+	picture = "marco_polo"
+	
+	option = {
+		name = "Press the issue!"
+		random_list = {
+			95 = {
+				war = {
+					target = CHI
+					attacker_goal = { casus_belli = conquer }
+				}
+				5176 = { infra = 4 }
+				5208 = { infra = 4 }
+				5144 = { infra = 4 }
+				5054 = { infra = 4 }
+				5142 = { infra = 4 }
+				5084 = { infra = 2 } 
+				5112 = { infra = 2 }
+				4933 = { infra = 4 }
+				manpower = 100
+				CHI = { country_event = 1704 
+					clr_country_flag = "de_militarized_hebei"
+					set_country_flag = "de_militarized_hebei_cleared"
+					add_wargoal = {
+						target = JAP
+						war_goal = { casus_belli = aquire_all_cores }
+					}
+					add_wargoal = {
+						target = MAN
+						war_goal = { casus_belli = civil_war }
+					}
+					add_wargoal = {
+						target = MEN
+						war_goal = { casus_belli = civil_war }
+					}
+				}
+			}
+			5  = { organisation = -5 popularity = -10 }
+		}
+	}
+	
+	option = {
+		name = "They may get away easy this time..."
+		random_list = {
+			5  = {
+				war = {
+					target = CHI
+					attacker_goal = { casus_belli = conquer }
+				}
+				manpower = 100
+				CHI = {  
+					clr_country_flag = "de_militarized_hebei"
+					set_country_flag = "de_militarized_hebei_cleared"
+					add_wargoal = {
+						target = JAP
+						war_goal = { casus_belli = aquire_all_cores }
+					}
+					add_wargoal = {
+						target = MAN
+						war_goal = { casus_belli = civil_war }
+					}
+					add_wargoal = {
+						target = MEN
+						war_goal = { casus_belli = civil_war }
+					}
+					country_event = 1704
+
+				}
+
+				5176 = { infra = 4 }
+				5208 = { infra = 4 }
+				5144 = { infra = 4 }
+				5054 = { infra = 4 }
+				5142 = { infra = 4 }
+				5084 = { infra = 2 } 
+				5112 = { infra = 2 }
+				4933 = { infra = 4 }
+
+			}
+			95 = { organisation = -5 popularity = -10 }
+		}
+	}
+
+}
+
+
+country_event = {
+
+	id = 1704
+	
+	is_triggered_only = yes
+	
+	title = "The concflict escalates"
+	desc = "Japanese troops provoked a firefight with our local forces and things got out of hand very quickly. The situation escalated into all-out war."
+	picture = "marco_polo"
+	
+	option = {
+		name = "It's all their fault!"
+		national_unity = 5
+		threat = { who = all value = -15 }
+	}
+
+}
+
+
+country_event = {
+
+	id = 1705
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	title = "The Chinese give in"
+	desc = "The Chinese governemnt gave in to our demands of forming an official new state in Inner Mongolia. This incident was solved with surprisingly little blood."
+	picture = "marco_polo"
+	
+	option = {
+		name = "We had our way."
+		ai_chance = {
+			factor = 95
+			modifier = { factor = 0.0 CHI = { war_with = CHC } }
+		}
+		any_owned = {
+			limit = {
+				is_core = MEN
+				not = { is_core = JAP }
+			}
+			remove_core = CHI
+			secede_province = MEN
+		}
+		create_vassal = MEN
+	}
+	
+	option = {
+		name = "We should go all the way now!"
+		ai_chance = {
+			factor = 5
+			modifier = { factor = 0.0 war_with = SOV }
+		}
+		threat = { who = all value = 25 }
+		popularity = -2
+		war = {
+			target = CHI
+			attacker_goal = { casus_belli = conquer }
+		}
+		5176 = { infra = 4 }
+		5208 = { infra = 4 }
+		5144 = { infra = 4 }
+		5054 = { infra = 4 }
+		5142 = { infra = 4 }
+		5084 = { infra = 2 } 
+		5112 = { infra = 2 }
+		4933 = { infra = 4 }
+		CHI = {  
+			clr_country_flag = "de_militarized_hebei"
+			set_country_flag = "de_militarized_hebei_cleared"
+			add_wargoal = {
+				target = JAP
+				war_goal = { casus_belli = aquire_all_cores }
+			}
+			add_wargoal = {
+				target = MAN
+				war_goal = { casus_belli = civil_war }
+			}
+			add_wargoal = {
+				target = MEN
+				war_goal = { casus_belli = civil_war }
+			}
+			country_event = 1704
+		}
+	}
+
+}

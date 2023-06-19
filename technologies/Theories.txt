@@ -1,0 +1,534 @@
+naval_engineering_research = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		num_of_ports = 1
+		total_ic = 15
+	}
+
+	research_bonus_from = {
+		no_theory = 0.25
+	}
+
+	on_completion = naval_engineering
+
+	difficulty = 5
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+submarine_engineering_research = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		num_of_ports = 1
+		total_ic = 15
+	}
+
+	research_bonus_from = {
+		no_theory = 0.25
+	}
+
+	on_completion = submarine_engineering
+
+	difficulty = 5
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+aeronautic_engineering_research = {
+	
+	allow = {
+		has_global_flag = "allow_research"
+		total_ic = 15
+	}
+
+	research_bonus_from = {
+		no_theory = 0.25
+	}
+	
+	on_completion = aeronautic_engineering
+
+	difficulty = 6
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+rocket_science_research = {
+	
+	allow = {
+		has_global_flag = "allow_research"
+		total_ic = 25
+	}
+
+	research_bonus_from = {
+		no_theory = 0.25
+	}
+	
+	on_completion = rocket_science
+
+	difficulty = 8
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+chemical_engineering_research = {
+	
+	allow = {
+		has_global_flag = "allow_research"
+		total_ic = 10
+	}
+
+	research_bonus_from = {
+		no_theory = 0.25
+	}
+
+	on_completion = chemical_engineering
+	
+	difficulty = 4
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+nuclear_physics_research = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		total_ic = 25
+	}
+
+	research_bonus_from = {
+		no_theory = 0.25
+	}
+	
+	on_completion = nuclear_physics
+
+	difficulty = 10
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+jetengine_research = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		total_ic = 25
+	}
+	
+	research_bonus_from = {
+		no_theory = 0.25
+	}
+	
+	on_completion = jetengine_theory
+
+	difficulty = 9
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+mechanicalengineering_research = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		total_ic = 10
+	}
+
+	research_bonus_from = {
+		no_theory = 0.25
+	}
+	
+	on_completion = mechanicalengineering_theory
+
+	difficulty = 5
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+automotive_research = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		total_ic = 15
+	}
+
+	research_bonus_from = {
+		no_theory = 0.25
+	}
+	
+	on_completion = automotive_theory
+
+	difficulty = 6
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+electornicegineering_research = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		total_ic = 20
+	}
+
+	research_bonus_from = {
+		no_theory = 0.25
+	}
+	
+	on_completion = electornicegineering_theory
+
+	difficulty = 5
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+artillery_research = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		total_ic = 10
+	}
+
+	research_bonus_from = {
+		no_theory = 0.25
+	}
+	
+	on_completion = artillery_theory
+
+	difficulty = 4
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+mobile_research = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		total_ic = 10
+	}
+
+	research_bonus_from = {
+		no_theory = 0.25
+	}
+	
+	on_completion = mobile_theory
+
+	difficulty = 6
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+infantry_research = {
+
+	allow = {
+		has_global_flag = "allow_research"
+		total_ic = 5
+	}
+
+	research_bonus_from = {
+		no_theory = 0.25
+	}
+	
+	on_completion = infantry_theory
+
+	difficulty = 3
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+grand_battleplan_research = {
+
+	allow = {
+		has_global_flag = "allow_research"
+	}
+	
+	research_bonus_from = {
+		land_doctrine_practical = 0.55
+	}
+
+	on_completion = grand_battleplan_theory
+
+	difficulty = -3
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+spearhead_research = {
+
+	allow = {
+		has_global_flag = "allow_research"
+	}
+	
+	research_bonus_from = {
+		land_doctrine_practical = 0.55
+	}
+
+	on_completion = spearhead_theory
+
+	difficulty = -2
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+superior_firepower_research = {
+
+	allow = {
+		has_global_flag = "allow_research"
+	}
+	
+	research_bonus_from = {
+		land_doctrine_practical = 0.55
+	}
+
+	on_completion = superior_firepower_theory
+
+	difficulty = -2
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+human_wave_research = {
+
+	allow = {
+		has_global_flag = "allow_research"
+	}
+	
+	research_bonus_from = {
+		land_doctrine_practical = 0.55
+	}
+
+	on_completion = human_wave_theory
+
+	difficulty = -3
+	start_year = 1932
+	first_offset = 1933
+	additional_offset = 1
+	max_level = 20
+	folder = theory_folder
+}
+
+###################
+# Invisible Techs #
+###################
+
+default_tech = {
+
+	metal_production = 0.05
+	rares_production = 0.05
+	energy_production = 0.05
+	
+	refinery_efficiency = -0.20
+	energy_to_oil_conversion = -1.00
+	targeting_choice = 0.25
+	casualty_trickleback = 0.25
+	attack_movement_speed = -1.00	# Units won't move during combat unless they have the required doctrines.
+
+	# Unit activations
+	infantry_brigade 	= { build_cost_ic = -4.67 }
+	garrison_brigade 	= { build_cost_ic = -2.33 }
+	militia_brigade 	= { build_cost_ic = -2.00 }
+	cavalry_brigade 	= { build_cost_ic = -4.67 }
+	bergsjaeger_brigade = { build_cost_ic = -5.33 }
+	marine_brigade 		= { build_cost_ic = -6.00 }
+	paratrooper_brigade = { build_cost_ic = -8.00 }
+	engineer_brigade 	= { build_cost_ic = -6.67 }
+	motorized_brigade 	= { build_cost_ic = -5.00 }
+	mechanized_brigade 	= { build_cost_ic = -8.00 }
+	
+	horse_towed_support_brigade = { build_cost_ic = -5.00 }
+	truck_towed_support_brigade = { build_cost_ic = -7.00 }
+	self_propelled_support_brigade = { build_cost_ic = -14.00 }
+	
+	super_heavy_armor_brigade 	= { build_cost_ic = -14.00 }
+	light_armor_brigade 		= { build_cost_ic = -8.00 }
+	armor_brigade 			= { build_cost_ic = -12.00 }
+	heavy_armor_brigade 		= { build_cost_ic = -20.00 }
+	
+	tank_destroyer_brigade 		= { build_cost_ic = -12.00 }
+	
+	interceptor 		= { build_cost_ic = -23.00 }
+	tactical_bomber 	= { build_cost_ic = -29.00 }
+	cag 				= { build_cost_ic = -25.00 }
+	cas 				= { build_cost_ic = -24.00 }
+	multi_role 			= { build_cost_ic = -30.00 }
+	naval_bomber 		= { build_cost_ic = -36.00 }
+	strategic_bomber 	= { build_cost_ic = -43.00 }
+	transport_plane 	= { build_cost_ic = -30.00 }
+	rocket_interceptor 	= { build_cost_ic = -40.00 }
+	
+	jet_int 	= { build_cost_ic = -25.00 }
+	jet_bomber 	= { build_cost_ic = -33.00 }
+	jet_mr 		= { build_cost_ic = -35.00 }
+
+	allow = {
+		tag = REB
+	}
+	
+	research_bonus_from = {
+	}
+	
+
+	stealable = no
+	change = no
+
+	on_completion = chemical_engineering
+	difficulty = 3
+
+	start_year = 1918	
+}
+
+tribal_background_desert = {
+
+	militia_brigade = {
+		desert = {
+			attrition = -2
+			movement = 0.05
+			attack = 0.25
+		}
+	}
+
+	allow = {
+		tag = REB
+	}
+
+	research_bonus_from = {
+	}
+	
+	change = no
+
+	on_completion = chemical_engineering
+	difficulty = 3
+	stealable = no
+
+	start_year = 1918	
+}
+
+tribal_background_jungle = {
+
+	militia_brigade = {
+		jungle = {
+			attrition = -2
+			movement = 0.25
+			attack = 0.55
+		}
+	}
+
+	allow = {
+		tag = REB
+	}
+
+	research_bonus_from = {
+	}
+	
+	change = no
+
+	on_completion = chemical_engineering
+	difficulty = 3
+
+	start_year = 1918	
+	stealable = no
+}
+
+tribal_background_mountain = {
+
+	militia_brigade = {
+		arctic = {
+			attrition = -2
+			attack = 0.25
+		}
+		hills = {
+			attrition = -2
+			movement = 0.20
+			attack = 0.25
+		}
+		mountain = {
+			attrition = -2
+			movement = 0.35
+			attack = 0.65
+		}
+	}
+
+	allow = {
+		tag = REB
+	}
+
+	research_bonus_from = {
+	}
+	
+	change = no
+
+	on_completion = chemical_engineering
+	difficulty = 3
+
+	start_year = 1918	
+	stealable = no
+}
+
+reconstructed_ship = {
+
+	heavy_cruiser = { build_cost_ic = -4.00 build_time = -150 }
+	battlecruiser = { build_cost_ic = -5.50 build_time = -250 }
+	battleship = { build_cost_ic = -5.50 build_time = -350 }
+	carrier = { build_cost_ic = -5.50 build_time = -350 }
+
+	research_bonus_from = {
+	}
+
+	allow = {
+		tag = REB
+	}
+	
+	change = no
+	
+	on_completion = chemical_engineering
+	difficulty = 3
+
+	start_year = 1918	
+	stealable = no
+}

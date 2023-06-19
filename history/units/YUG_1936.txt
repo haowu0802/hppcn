@@ -1,0 +1,263 @@
+theatre = {
+	name = "Jugoslavenski Vojni Visoka Zapovjedništva"
+	location = 3912
+	regiment = { type = hq_brigade name = "Beograd HQ" historical_model = 0 }
+	army = {
+		name = "I. Kraljevska Jugoslavenska Vojska"
+		location = 3839
+		regiment = { type = hq_brigade name = "I. Kraljevska Jugoslavenska Vojska HQ" historical_model = 0 }
+			corps = {
+			name = "IV. Kraljevska Jugoslavenska Armija"
+			location = 3839
+			regiment = { type = hq_brigade name = "IV. Kraljevska Jugoslavenska Armija HQ" historical_model = 0 }
+			division = {
+				name = "27. Savaska Pešadijska  Divizija"
+				location = 3839
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "35. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "53. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "104. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "1. Artiljerijski Puk" experience = 5 historical_model = 2 }
+			}
+		}
+		corps = {
+			name = "VII. Kraljevska Jugoslavenska Armija"
+			location = 3699
+			regiment = { type = hq_brigade name = "VII. Kraljevska Jugoslavenska Armija HQ" historical_model = 0 }
+			division= {
+				name = "32. Triglavska Pešadijska  Divizija"
+				location = 3699
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "39. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "40. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "110. Pešadijski Puk" experience = 5 historical_model = 3 }
+			}
+			division= {
+				name = "Triglavski Odred"
+				location = 3699
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "2. Planina Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = bergsjaeger_brigade name = "4. Planina Pešadijski Puk" experience = 5 historical_model = 3 }
+			}
+			division= {
+				name = "1. Konjicka Divizija"
+				location = 3699
+				is_reserve = yes
+				regiment = { type = cavalry_brigade name = "2. Konjièki Puk" experience = 5 historical_model = 3 }
+				regiment = { type = cavalry_brigade name = "6. Konjièki Puk" experience = 5 historical_model = 3 }
+				regiment = { type = cavalry_brigade name = "8. Konjièki Puk" experience = 5 historical_model = 3 }
+			}
+		}
+	}	
+	army = {
+		name = "II. Kraljevska Jugoslavenska Vojska"
+		location = 3637
+		regiment = { type = hq_brigade name = "II. Kraljevska Jugoslavenska Vojska HQ" historical_model = 0 }		
+		corps = {
+			name = "I. Kraljevska Jugoslavenska Armija"
+			location = 3637
+			regiment = { type = hq_brigade name = "I. Kraljevska Jugoslavenska Armija HQ" historical_model = 0 }
+			division= {
+				name = "7. Potiska Pešadijska  Divizija"
+				location = 3637
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "25. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "34. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "51. Pešadijski Puk" experience = 5 historical_model = 3 }
+			}
+			division= {
+				name = "3. Konjièka Divizija"
+				location = 3637
+				is_reserve = yes
+				regiment = { type = cavalry_brigade name = "3. Konjièki Puk" experience = 5 historical_model = 3 }
+				regiment = { type = cavalry_brigade name = "4. Konjièki Puk" experience = 5 historical_model = 3 }
+				regiment = { type = motorized_brigade name = "3. Motorizovane Pešadijski Puk" experience = 5 historical_model = 0 }
+			}
+		}
+		corps = {
+			name = "II. Kraljevska Jugoslavenska Armija"
+			location = 4174
+			regiment = { type = hq_brigade name = "II. Kraljevska Jugoslavenska Armija HQ" historical_model = 0 }
+			division= {
+				name = "10. Bosanska Pešadijska  Divizija"
+				location = 4174
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "10. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "15. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "60. Pešadijski Puk" experience = 5 historical_model = 3 }
+			}
+			division= {
+				name = "17. Vrbaska Pešadijska  Divizija"
+				location = 3979
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "33. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "89. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "90. Pešadijski Puk" experience = 5 historical_model = 3 }
+			}
+		}
+	}	
+	army = {
+		name = "III. Kraljevska Jugoslavenska Vojska"
+		location = 4368
+		regiment = { type = hq_brigade name = "III. Kraljevska Jugoslavenska Vojska HQ" historical_model = 0 }		
+		corps = {
+			name = "III. Kraljevska Jugoslavenska Armija"
+			location = 4368
+			regiment = { type = hq_brigade name = "III. Kraljevska Jugoslavenska Armija HQ" historical_model = 0 }
+			division= {
+				name = "13. Hercegovacka Pešadijska  Divizija"
+				location = 4495
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "29. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "61. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "87. Pešadijski Puk" experience = 5 historical_model = 3 }
+			}
+			division= {
+				name = "15. Zetska Pešadijska  Divizija"
+				location = 4368
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "38. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "61. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "87. Pešadijski Puk" experience = 5 historical_model = 3 }
+			}
+			division= {
+				name = "25. Vardarsa Pešadijska  Divizija"
+				location = 4044
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "21. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "46. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "50. Pešadijski Puk" experience = 5 historical_model = 3 }
+			}			
+		}
+		corps = {
+			name = "III. Kraljevska Teritorijalna Armija"
+			location = 4236
+			regiment = { type = hq_brigade name = "III. Kraljevska Teritorijalna Armija HQ" historical_model = 0 }
+			division= {
+				name = "5. Sumadijska Pešadijska  Divizija"
+				location = 4236
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "19. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "59. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "72. Pešadijski Puk" experience = 5 historical_model = 3 }
+			}
+			division= {
+				name = "20. Bregalnicka Pešadijska  Divizija"
+				location = 4493
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "23. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "28. Pešadijski Puk" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "49. Pešadijski Puk" experience = 5 historical_model = 3 }
+			}
+		}
+	}	
+	corps = {
+		name = "V. Nezavisna Armija"
+		location = 4243
+		regiment = { type = hq_brigade name = "V. Nezavisna Armija HQ" historical_model = 0 }
+		division= {
+			name = "8. Krajinska Pešadijska  Divizija"
+			location = 4243
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "9. Pešadijski Puk" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "74. Pešadijski Puk" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "76. Pešadijski Puk" experience = 5 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "3. Artiljerijski Puk" experience = 5 historical_model = 3 }			
+		}
+		division= {
+			name = "9. Timocka Pešadijska  Divizija"
+			location = 4610
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "14. Pešadijski Puk" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "20. Pešadijski Puk" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "75. Pešadijski Puk" experience = 5 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "113. Artiljerijski Puk" experience = 5 historical_model = 4 }	
+		}
+		division= {
+			name = "2. Konjièka Divizija"
+			location = 4556
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1. Konjièki Puk" experience = 5 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "5. Konjièki Puk" experience = 5 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "7. Konjièki Puk" experience = 5 historical_model = 3 }
+		}
+	}
+	corps = {
+		name = "VI. Nezavisna Armija"
+		location = 3912
+		regiment = { type = hq_brigade name = "VI. Nezavisna Armija HQ" historical_model = 0 }
+		division= {
+			name = "3. Dunavska Pešadijska  Divizija"
+			location = 3912
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "8. Pešadijski Puk" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "18. Pešadijski Puk" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "57. Pešadijski Puk" experience = 5 historical_model = 3 }
+		}
+		division= {
+			name = "1. Konjièka Divizija"
+			location = 3912
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "2. Konjièki Puk" experience = 5 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "6. Konjièki Puk" experience = 5 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "7. Konjièki Puk" experience = 5 historical_model = 3 }
+		}		
+	}
+	navy = {
+		name = "Kraljevska Jugoslavenska Ratna Mornarica"
+		base = 4236
+		location = 4236
+		ship = { type = light_cruiser name = "Dalmacija" experience = 5 historical_model = 0 }
+		ship = { type = destroyer name = "1. Razaracka Flotila" experience = 5 historical_model = 6 }
+		ship = { type = submarine name = "1. Podmornicka Flotila" experience = 5 historical_model = 4 }
+	}
+	air = {
+		name = "Operativno Zrakoplovstvo"
+		base = 3912
+		location = 3912
+		wing = { type = interceptor name = "1. Vazduhoplovni Lovacki Puk" experience = 5 historical_model = 0 }	
+		wing = { type = cas name = "1. Obrasavanje Avio Bombarderski Puk" experience = 5 historical_model = 0 }
+	}
+}
+convoy_construction=
+{
+	country = YUG
+	id=
+	{
+		id=15200
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = YUG
+	id=
+	{
+		id=15201
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = YUG
+	id=
+	{
+		id=15202
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

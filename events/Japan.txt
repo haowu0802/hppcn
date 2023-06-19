@@ -1,0 +1,805 @@
+###############################
+# Japan puts pressure on Siam #
+###############################
+# Siam - Reaction Event
+country_event = {
+	
+	id = 2701
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2701"
+	desc = "EVTDESC2701"
+	picture = "siam"
+
+	option = {
+		name = "EVTOPTA2701"			# Accept
+		ai_chance = { factor = 100 }
+		neutrality = -3
+		join_faction = axis
+		relation = { who = FROM value = 20 }
+		relation = { who = GER value = 10 }
+		relation = { who = ENG value = -25 }
+		relation = { who = FRA value = -20 }
+		head_of_state = 62001
+		head_of_government = 62035
+		foreign_minister = 62043
+		armament_minister = 62059
+		minister_of_security = 62073
+		minister_of_intelligence = 62085
+		chief_of_staff = 62091
+		chief_of_army = 62097
+		chief_of_navy = 62102
+		chief_of_air = 62107
+		load_oob = "Fascistic.txt"
+		FROM = { country_event = 2702 }
+	}
+	option = {
+		name = "EVTOPTB2701"			# Decline
+		relation = { who = FROM value = -15 }
+		relation = { who = GER value = -10 }
+		relation = { who = ENG value = 15 }
+		relation = { who = FRA value = 15 }
+		FROM = { country_event = 2703 }
+	}
+}
+
+# Response to Japan - Siam Accepts
+country_event = {
+	
+	id = 2702
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2702"
+	desc = "EVTDESC2702"
+	picture = "siam"
+
+	option = {
+		name = "EVTOPTA2702"			# Excellent!
+		ai_chance = { factor = 100 }
+		create_vassal = SIA
+		any_owned = {
+			limit = { is_core = SIA not = { is_core = THIS } }
+			secede_province = SIA
+		}
+		any_country = {
+			limit = { vassal_of = THIS }
+			any_owned = {
+				limit = { is_core = SIA }
+				secede_province = SIA
+			}
+		}	
+	}
+}
+
+# Response to Japan - Siam Refuses
+country_event = {
+	
+	id = 2703
+
+	is_triggered_only = yes
+
+	title = "EVTNAME2703"
+	desc = "EVTDESC2703"
+	picture = "siam"
+
+	option = {
+		name = "EVTOPTA2703"			# Declare War
+		ai_chance = { factor = 100 }
+		war = {
+			target = SIA
+			attacker_goal = { casus_belli = puppet }
+		}
+	}
+	option = {
+		name = "EVTOPTB2703"			# Their Loss!
+		relation = { who = SIA value = 10 }
+	}
+}
+
+country_event = {
+
+	id = 2705
+	
+	is_triggered_only = yes
+	
+	title = "Mongolian insurgency"
+	desc = "Japanese-supported Mongolian rebels attempted to form a new government in Inner Mongolia. Should we try to oppose them?"
+	picture = "siam"
+	
+	option = {
+		name = "What could we do about it?..."
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 1.9 war_with = CHC }
+		}
+		organisation = -5
+		dissent = 3
+		7326 = { secede_province = MEN }
+		4885 = { secede_province = MEN }
+		4834 = { secede_province = MEN }
+		7312 = { secede_province = MEN }
+		7325 = { secede_province = MEN }
+		7338 = { secede_province = MEN }
+		4932 = { secede_province = MEN }
+		4978 = { secede_province = MEN }
+		4933 = { secede_province = MEN }
+		5016 = { secede_province = MEN }
+		MEN = {
+			capital = 4885
+			energy = 2000
+			metal = 1000
+			rare_materials = 500
+			supplies = 1000
+			manpower = 10
+			random_owned = { limit = { infra = 2 } militia_brigade = current militia_brigade = current militia_brigade = current }
+			random_owned = { limit = { infra = 2 } militia_brigade = current militia_brigade = current militia_brigade = current }
+		}
+		JAP = { create_vassal = MEN }
+	}
+	
+	option = {
+		name = "We can't let that happen!"
+		ai_chance = {
+			factor = 50
+			modifier = { factor = 0.1 war_with = CHC }
+		}
+		MEN = {
+			capital = 4885
+			energy = 2000
+			metal = 1000
+			rare_materials = 500
+			supplies = 1000
+			manpower = 10
+			random_owned = { limit = { infra = 2 } militia_brigade = current militia_brigade = current militia_brigade = current militia_brigade = current }
+			random_owned = { limit = { infra = 2 } militia_brigade = current militia_brigade = current militia_brigade = current militia_brigade = current }
+		}
+		JAP = { country_event = 2706 }
+		organisation = 2
+		popularity = 3
+	}
+}
+
+country_event = {
+
+	id = 2706
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	title = "China opposes our plans!"
+	desc = "China tries to oppose the new puppet regime we installed in Inner Mongolia! What should we do?"
+	picture = "siam"
+	
+	option = {
+		name = "It did worth a try."
+		ai_chance = { factor = 50 }
+		CHI = {
+			war = {
+				target = MEN
+				attacker_goal = { casus_belli = civil_war }
+			}
+		}
+	}
+	
+	option = {
+		name = "That's an insult!"
+		ai_chance = { factor = 50 }
+		create_vassal = MEN
+		CHI = { country_event = 2707 }
+	}
+}
+
+country_event = {
+
+	id = 2707
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	title = "Japan is ready for war!"
+	desc = "Japan is ready to back the new Mongolian regime with force, if necessary. Should we push the issue, or should we let it go?"
+	picture = "siam"
+	
+	option = {
+		name = "Oh, well..."
+		ai_chance = { factor = 95 }
+		organisation = -5
+		popularity = -10
+		stalinist = { organisation = 5 popularity = 5 }
+		leninist = { organisation = 5 popularity = 5 }
+		left_wing_radical = { organisation = 5 popularity = 5 }
+		dissent = 5
+		7326 = { secede_province = MEN }
+		4885 = { secede_province = MEN }
+		MEN = {
+			capital = 4885
+			energy = 2000
+			metal = 1000
+			rare_materials = 500
+			supplies = 1000
+			manpower = 10
+		}
+	}
+	
+	option = {
+		name = "We can't let them expand forever!"
+		ai_chance = {
+			factor = 5
+			modifier = { factor = 0.0 war_with = CHC }
+		}
+		war = {
+			target = MEN
+			attacker_goal = { casus_belli = civil_war }
+		}
+	}
+}
+
+# Recognition of Manchukuo
+
+country_event = {
+
+	id = 2710
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	title = "Recognition of Manchukuo"
+	desc = "Japan asks for our recognition of their puppet, Manchukuo. This will improve our relationship, but will cause diplomatic problems in China."
+	picture = "tripartite"
+
+	option = {
+		name = "Recognise Manchukuo"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.0			# Only if they are fascistic!
+				not = { JAP = { ideology_group = fascism } }
+			}
+			modifier = {
+				factor = 0.75			# Germany needs allies against the Soviet Union.
+				JAP = { non_aggression_pact = SOV }
+			}
+			modifier = {
+				factor = 1.1			# Good relations
+				relation = { who = JAP value = 50 }
+			}
+			modifier = {
+				factor = 1.1
+				relation = { who = JAP value = 100 }
+			}
+			modifier = {
+				factor = 1.1
+				relation = { who = JAP value = 150 }
+			}
+			modifier = {
+				factor = 1.1
+				relation = { who = JAP value = 200 }
+			}
+			modifier = {
+				factor = 2.0			# Japan is successfull.
+				JAP = { controls = 5494 }
+			}
+			modifier = {
+				factor = 0.75			# Japan is losing ground
+				JAP = { lost_national = 25 }
+			}
+			modifier = {
+				factor = 0.5
+				JAP = { lost_national = 100 }
+			}
+			modifier = {
+				factor = 1.25
+				JAP = { total_amount_of_divisions = 50 }
+			}
+			modifier = {
+				factor = 1.25
+				JAP = { total_amount_of_divisions = 100 }
+			}
+			modifier = {
+				factor = 1.25
+				JAP = { total_amount_of_divisions = 150 }
+			}
+			modifier = {
+				factor = 1.25			# On the offensive
+				JAP = { total_offensives = 10 }
+			}
+			modifier = {
+				factor = 0.75			# On the defensive
+				JAP = { total_defensives = 10 }
+			}
+			modifier = {
+				factor = 1.2			# Has lots of IC
+				JAP = { total_ic = 25 }
+			}
+			modifier = {
+				factor = 1.2
+				JAP = { total_ic = 50 }
+			}
+			modifier = {
+				factor = 1.2
+				JAP = { total_ic = 75 }
+			}
+			modifier = {
+				factor = 1.2
+				JAP = { total_ic = 100 }
+			}
+		}
+		set_country_flag = manchukuo_recognized
+		relation = { who = CHI value = -50 }
+		relation = { who = CSX value = -50 }
+		relation = { who = CGX value = -50 }
+		relation = { who = CYN value = -50 }
+		relation = { who = CXB value = -50 }
+		relation = { who = SIK value = -50 }
+		CHI = { country_event = 2711 }
+		1737 = { strategic_resource = none }
+		1676 = { strategic_resource = none }
+		relation = { who = JAP value = 50 }
+		JAP = { country_event = 2712 }
+	}
+
+	option = {
+		name = "Relations with China is more important!"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.0			# Only if they are fascistic!
+				not = { CHI = { ideology_group = fascism } }
+			}
+			modifier = {
+				factor = 0.75			# Germany needs allies against the Soviet Union.
+				CHI = { non_aggression_pact = SOV }
+			}
+			modifier = {
+				factor = 1.1			# Good relations
+				relation = { who = CHI value = 50 }
+			}
+			modifier = {
+				factor = 1.1
+				relation = { who = CHI value = 100 }
+			}
+			modifier = {
+				factor = 1.1
+				relation = { who = CHI value = 150 }
+			}
+			modifier = {
+				factor = 1.1
+				relation = { who = CHI value = 200 }
+			}
+			modifier = {
+				factor = 2.0			# China is successfull.
+				CHI = { controls = 4685 }
+			}
+			modifier = {
+				factor = 2.0			# China is successfull.
+				KOR = { vassal_of = CHI }
+			}
+			modifier = {
+				factor = 2.0			# Mengkukuo is done, or never created.
+				or = {
+					not = { exists = MEN }
+					not = { MEN = { vassal_of = JAP } }
+				}
+			}
+			modifier = {
+				factor = 0.75			# China is losing ground
+				CHI = { lost_national = 25 }
+			}
+			modifier = {
+				factor = 0.5
+				CHI = { lost_national = 100 }
+			}
+			modifier = {				# China is not unified
+				factor = 0.75
+				exists = CSX
+				CSX = { not = { vassal_of = CHI } }
+			}
+			modifier = {
+				factor = 0.75
+				exists = CXB
+				CXB = { not = { vassal_of = CHI } }
+			}
+			modifier = {
+				factor = 0.75
+				exists = CGX
+				CGX = { not = { vassal_of = CHI } }
+			}
+			modifier = {
+				factor = 0.75
+				exists = CYN
+				CYN = { not = { vassal_of = CHI } }
+			}
+			modifier = {
+				factor = 0.3
+				exists = CHC
+				CHC = { not = { vassal_of = CHI } }
+			}
+			modifier = {				# Have a great army
+				factor = 1.25
+				CHI = { total_amount_of_divisions = 50 }
+			}
+			modifier = {
+				factor = 1.25
+				CHI = { total_amount_of_divisions = 100 }
+			}
+			modifier = {
+				factor = 1.25
+				CHI = { total_amount_of_divisions = 150 }
+			}
+			modifier = {
+				factor = 1.25			# On the offensive
+				CHI = { total_offensives = 10 }
+			}
+			modifier = {
+				factor = 0.75			# On the defensive
+				CHI = { total_defensives = 10 }
+			}
+			modifier = {
+				factor = 1.2			# Has lots of IC
+				CHI = { total_ic = 25 }
+			}
+			modifier = {
+				factor = 1.2
+				CHI = { total_ic = 50 }
+			}
+			modifier = {
+				factor = 1.2
+				CHI = { total_ic = 75 }
+			}
+			modifier = {
+				factor = 1.2
+				CHI = { total_ic = 100 }
+			}
+		}
+		relation = { who = CHI value = 50 }
+		CHI = { country_event = 2713 }
+		relation = { who = JAP value = -50 }
+		JAP = { country_event = 2714 }
+	}
+
+}
+
+country_event = {
+
+	id = 2711
+
+	is_triggered_only = yes
+
+	title = "Recognition of Manchukuo"
+	desc = "Germany sided with Japan against us! The military advisors they sent are returning home!"
+	picture = "japanese_reinforcments"
+
+	option = {
+		name = "We will need to manage without them!"
+		set_country_flag = "manchukuo_recognized"
+		kill_leader = 50304
+	}
+
+}
+
+country_event = {
+
+	id = 2712
+
+	is_triggered_only = yes
+
+	title = "Recognition of Manchukuo"
+	desc = "Germany decided to formally recognise Manchukuo."
+	picture = "tripartite"
+
+	option = {
+		name = "Excelent!"
+	}
+
+}
+
+country_event = {
+
+	id = 2713
+
+	is_triggered_only = yes
+
+	title = "Recognition of Manchukuo"
+	desc = "Germany decided to side with us against Japan! They will help us greatly!"
+	picture = "constitutional"
+
+	option = {
+		name = "Excelent!"
+	}
+
+}
+
+country_event = {
+
+	id = 2714
+
+	is_triggered_only = yes
+
+	title = "Recognition of Manchukuo"
+	desc = "Germany decided to side with China in our conflict! They will regret this!"
+	picture = "Xian_Incident"
+
+	option = {
+		name = "The traitors!"
+	}
+
+}
+
+country_event = {
+
+	id = 2720
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	title = "Japan offers a negotiated peace"
+	desc = "negotiated_peace_desc"
+	picture = "Tojo"
+
+	option = {
+		name = "That is relevant to my interest."
+		ai_chance = { factor = 100 }
+		war_exhaustion = -5
+		dissent = -5
+		JAP = { country_event = 2721 }
+	}
+
+	option = {
+		name = "We went this far, we go all the way!"
+		ai_chance = { factor = 0 }
+		war_exhaustion = -5
+		dissent = -5
+		JAP = { country_event = 2722 }
+	}
+}
+
+country_event = {
+
+	id = 2721
+
+	is_triggered_only = yes
+
+	title = "negotiated_peace_accepted_title"
+	desc = "negotiated_peace_accepted_desc"
+	picture = "Tojo"
+
+	option = {
+		name = "The least of all evil..."
+
+
+		any_owned = {
+			limit = {
+				controlled_by = FROM
+				not = {
+					or = {
+						region = nippon_region	# Home Islands
+						continent = Pacific_Islands	# Pacific holdings
+					}
+				}
+			}
+			remove_core = JAP
+			secede_province = FROM
+		}
+		end_war = FROM
+		
+		any_country = {
+			limit = {
+				or = {
+					vassal_of = CHI
+					alliance_with = CHI
+				}
+			}
+			end_war = JAP
+		}
+
+		neutrality = 100
+		national_unity = -25
+
+		dissent = 20
+
+		popularity = -100
+		organisation = -100
+
+		do_election = THIS
+	}
+
+}
+
+country_event = {
+
+	id = 2722
+
+	is_triggered_only = yes
+
+	title = "negotiated_peace_declined_title"
+	desc = "negotiated_peace_declined_desc"
+	picture = "Tojo"
+
+	option = {
+		name = "Then we will fight 'till the bitter end!"
+		national_unity = 10
+		dissent = -15
+		war_exhaustion = -2
+	}
+}
+
+country_event = {
+
+	id = 2725
+	
+	trigger = {
+		not = { alliance_with = FROM }
+		not = { vassal_of = FROM }
+		not = {
+			and = {
+				faction = allies
+				FROM = { faction = allies }
+			}
+		}
+		not = {
+			and = {
+				faction = axis
+				FROM = { faction = axis }
+			}
+		}
+		not = {
+			and = {
+				faction = comintern
+				FROM = { faction = comintern }
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	title = "Japan declared war on us!"
+	desc = "The Empire of Japan declared War on us!"
+	picture = "Pearl_harbor"
+
+	option = {
+		name = "Oh, no!"
+		FROM = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = conquer }
+			}
+		}
+	}
+}
+
+
+# Army-Navy struggle
+country_event = {
+
+	id = 2740
+	
+	trigger = {
+		tag = JAP
+		not = { has_country_flag = "japan_invested_into_the_army" }
+		total_amount_of_divisions = 100
+		total_amount_of_brigades = 350
+	}
+	
+	title = "The Army is gaining influence"
+	desc = "Our investment into the Army has gained them much prestige and respect, providing them with more influence over the Navy."
+	picture = ""
+	
+	option = {
+		name = "Way to go!"
+		set_country_flag = "japan_invested_into_the_army"
+		change_variable = { which = "jap_army_navy_struggle" value = -1 }
+	}
+}
+
+country_event = {
+
+	id = 2741
+	
+	trigger = {
+		tag = JAP
+		not = { has_country_flag = "japan_invested_more_into_the_army" }
+		total_amount_of_divisions = 200
+		total_amount_of_brigades = 600
+	}
+	
+	title = "The Army is gaining influence"
+	desc = "Major investments into the Army has gained them even more prestige and respect than before, providing them with more influence over the Navy."
+	picture = ""
+	
+	option = {
+		name = "Way to go!"
+		set_country_flag = "japan_invested_more_into_the_army"
+		change_variable = { which = "jap_army_navy_struggle" value = -1 }
+	}
+}
+
+country_event = {
+
+	id = 2742
+	
+	trigger = {
+		tag = JAP
+		not = { has_country_flag = "japan_invested_even_more_into_the_army" }
+		total_amount_of_divisions = 300
+		total_amount_of_brigades = 900
+	}
+	
+	title = "The Army is gaining influence"
+	desc = "Major investments into the Army has gained them even more prestige and respect than before, providing them with more influence over the Navy."
+	picture = ""
+	
+	option = {
+		name = "Way to go!"
+		set_country_flag = "japan_invested_more_into_the_army"
+		change_variable = { which = "jap_army_navy_struggle" value = -1 }
+	}
+}
+
+country_event = {
+
+	id = 2743
+	
+	trigger = {
+		tag = JAP
+		not = { has_country_flag = "japan_invested_into_the_navy" }
+		total_amount_of_ships = 80
+	}
+	
+	title = "The Navy is gaining influence"
+	desc = "Investment into the Navy has gained them much prestige and respect, providing them with more influence over the Army."
+	picture = ""
+	
+	option = {
+		name = "Way to go!"
+		set_country_flag = "japan_invested_into_the_navy"
+		change_variable = { which = "jap_army_navy_struggle" value = +1 }
+	}
+}
+
+country_event = {
+
+	id = 2744
+	
+	trigger = {
+		tag = JAP
+		not = { has_country_flag = "japan_invested_more_into_the_navy" }
+		total_amount_of_ships = 100
+	}
+	
+	title = "The Navy is gaining influence"
+	desc = "Major investments into the Navy has gained them even more prestige and respect than before, providing them with more influence over the Army."
+	picture = ""
+	
+	option = {
+		name = "Way to go!"
+		set_country_flag = "japan_invested_more_into_the_navy"
+		change_variable = { which = "jap_army_navy_struggle" value = +1 }
+	}
+}
+
+country_event = {
+
+	id = 2745
+	
+	trigger = {
+		tag = JAP
+		not = { has_country_flag = "japan_invested_even_more_into_the_navy" }
+		total_amount_of_ships = 125
+	}
+	
+	title = "The Navy is gaining influence"
+	desc = "Major investments into the Navy has gained them even more prestige and respect than before, providing them with more influence over the Army."
+	picture = ""
+	
+	option = {
+		name = "Way to go!"
+		set_country_flag = "japan_invested_even_more_into_the_navy"
+		change_variable = { which = "jap_army_navy_struggle" value = +1 }
+	}
+}

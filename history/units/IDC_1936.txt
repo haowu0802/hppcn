@@ -1,0 +1,55 @@
+theatre = {
+	name = "Haut Commandement d'Indochine"
+	location = 6236
+	regiment = { type = hq_brigade name = "Saigon HQ" historical_model = 0 }
+	corps = {
+		name = "Troupes d'Indochine"
+		expeditionary_owner = FRA
+		location = 6236
+		regiment = { type = hq_brigade name = "Troupes d'Indochine HQ" historical_model = 0 }
+		division= {
+			name = "Division de Tonkin"
+			expeditionary_owner = FRA
+			location = 5916
+			regiment = { type = militia_brigade name = "9e Regiment d'Infanterie Colonial" experience = 0 historical_model = 4 }
+			regiment = { type = militia_brigade name = "19e Regiment Mixte d'Infanterie Colonial" experience = 0 historical_model = 4 }
+			regiment = { type = militia_brigade name = "5e Regiment Etranger d'Infanterie" experience = 0 historical_model = 4 }
+		}
+		division= {
+			name = "Division de Cochinchine-Cambodge"
+			expeditionary_owner = FRA
+			location = 6236
+			regiment = { type = militia_brigade name = "11e Regiment d'Infanterie Colonial" experience = 0 historical_model = 4 }
+			regiment = { type = militia_brigade name = "Regiment de Tirailleurs Annamite" experience = 0 historical_model = 4 }
+			regiment = { type = militia_brigade name = "Regiment de Tirailleurs Cambodgiens" experience = 0 historical_model = 4 }
+		}
+	}
+}
+convoy_construction=
+{
+	country = IDC
+	id=
+	{
+		id=15902
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = IDC
+	id=
+	{
+		id=15903
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

@@ -1,0 +1,905 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new forms of governemnts, make sure they are uniquely named.
+
+# Current list:
+
+# national_socialism			Führer			Generic Nazi government
+# fascist_republic				Duce			Used for Italy
+# germanic_fascist_republic		Chancelor		Used for Austria
+# right_wing_republic			President		Generic autocratic government with a President
+# military_dictatorship			Generalissimo	Temporary military dictatorship, used in Spain
+# chinese_warlord				Warlord			Used for the Chinese Warlords
+# hungarian_right_wing_republic	Regent			Used for Hungary to distinguish between the King and the Regent
+# right_wing_autocrat			King			Generic autocratic government with a King
+# absolute_monarchy				King			Used in old kingdoms with absolute rulers like Saudi Arabia
+# imperial						Emperor			Used for Japan (and Manchukuo)
+# constitutional_monarchy		Prime Minister	Democracy with a permanent HoS
+# social_conservatism			President		Democracy with the HoS as the boss
+# social_democracy				Prime Minister	Democracy with the HoG as the boss
+# spanish_social_conservatism	Caudillo		Fallangism, used in Spain after the SCW
+# left_wing_radicals			President		Similar to the Right Wing republic, only Left Wing
+# socialist_republic			Comerade		Socialist State
+# federal_socialist_republic	Comerade		Federation of multiple Socialist States
+# state_of_emergency			Supreme Ruler	Temporary powers given to the ruler
+# election						...				Used with the Force Ideology War Goal!
+# soc_dem_election				...				Workaround used to hold early elections
+# soc_cons_election				...				Workaround used to hold early elections
+# cons_mon_election				...				Workaround used to hold early elections
+# installing_puppet				...				Provisional government, used to install a new puppet regime
+# fascist_puppet				President		Puppet of an autocratic nation
+# democratic_puppet				Prime Minister	Puppet of an democratc nation
+# socialist_puppet				Comerade		Puppet of an socialist nation
+# colonial_puppet				Viceroy			Puppet with only colonial rights
+# protectorate					Viceroy			Puppet with only colonial rights
+# war_cabinet					Prime Minister	Constitutional Monarchy with the elections suspended for the time of the war.
+
+
+
+# Uses all 'modifiers' possible thats exported as a Modifier.
+
+national_socialism = {
+
+    suseptibility_axis = 0.1
+    threat_impact = 0.05
+    war_consumer_goods_demand = 0.05
+    peace_consumer_goods_demand = -0.05
+
+	#acceptable ideologies
+	
+	national_socialist = yes
+	fascistic = yes
+	paternal_autocrat = yes
+
+	# positions changed by elections
+	
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no	
+	
+	election = no
+}
+
+fascist_republic = {
+
+    suseptibility_axis = 0.1
+    threat_impact = 0.05
+    war_consumer_goods_demand = 0.05
+    peace_consumer_goods_demand = -0.05
+
+	#acceptable ideologies
+
+	national_socialist = yes
+	fascistic = yes
+	paternal_autocrat = yes	
+	
+	# positions changed by elections
+	
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+germanic_fascist_republic = {
+
+    suseptibility_axis = 0.1
+    threat_impact = 0.05
+    war_consumer_goods_demand = 0.05
+    peace_consumer_goods_demand = -0.05
+
+	#acceptable ideologies
+
+	national_socialist = yes
+	fascistic = yes
+	paternal_autocrat = yes	
+	
+	# positions changed by elections
+	
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+right_wing_republic = {
+
+    suseptibility_axis = 0.1
+    threat_impact = 0.05
+    war_consumer_goods_demand = 0.05
+    peace_consumer_goods_demand = -0.05
+	
+	#acceptable ideologies
+	
+	fascistic = yes
+	paternal_autocrat = yes
+	social_conservative = yes
+
+	# positions changed by elections
+	
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+military_dictatorship = {
+
+    suseptibility_axis = 0.1
+    threat_impact = 0.05
+    war_consumer_goods_demand = 0.05
+    peace_consumer_goods_demand = -0.05
+	
+	#acceptable ideologies
+	
+	fascistic = yes
+	paternal_autocrat = yes
+	social_conservative = yes
+
+	# positions changed by elections
+	
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+chinese_warlord = {
+
+    suseptibility_axis = 0.1
+    threat_impact = 0.05
+    war_consumer_goods_demand = 0.05
+    peace_consumer_goods_demand = -0.05
+	
+	#acceptable ideologies
+	
+	fascistic = yes
+	paternal_autocrat = yes
+	social_conservative = yes
+
+	# positions changed by elections
+	
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+hungarian_right_wing_republic = {
+
+    national_unity_effect = -0.1
+	sw_national_unity_effect = -0.1
+    dissent = -0.05
+
+    suseptibility_axis = 0.1
+    threat_impact = 0.05
+    war_consumer_goods_demand = 0.05
+    peace_consumer_goods_demand = -0.05
+	
+	#acceptable ideologies
+	
+	fascistic = yes
+	paternal_autocrat = yes
+	social_conservative = yes
+
+	# positions changed by elections
+	
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+
+right_wing_autocrat = {
+
+    national_unity_effect = -0.1
+	sw_national_unity_effect = -0.1
+    dissent = -0.05
+
+    suseptibility_axis = 0.1
+    threat_impact = 0.05
+    war_consumer_goods_demand = 0.05
+    peace_consumer_goods_demand = -0.05
+	
+	#acceptable ideologies
+	
+	fascistic = yes
+	paternal_autocrat = yes
+	social_conservative = yes
+
+	# positions changed by elections
+	
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+absolute_monarchy = {
+
+    national_unity_effect = -0.1
+	sw_national_unity_effect = -0.1
+    dissent = -0.05
+
+    suseptibility_axis = 0.1
+    threat_impact = 0.05
+    war_consumer_goods_demand = 0.05
+    peace_consumer_goods_demand = -0.05
+	
+	#acceptable ideologies
+	
+	fascistic = yes
+	paternal_autocrat = yes
+	social_conservative = yes
+
+	# positions changed by elections
+	
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+imperial = {
+
+    dissent = -0.15
+	land_organisation = 0.1
+	air_organisation = 0.1
+	naval_organisation = 0.1
+    national_unity = 0.01
+	
+	#acceptable ideologies
+	
+	national_socialist = yes
+	fascistic = yes
+	paternal_autocrat = yes
+	social_conservative = yes
+
+	# positions changed by elections
+	
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+constitutional_monarchy = {
+
+    national_unity_effect = -0.1
+	sw_national_unity_effect = -0.1
+    dissent = -0.05
+
+    suseptibility_allies = 0.1
+    global_revolt_risk = -1
+    threat_resistance = 0.25
+    drift_speed = 0.1
+
+	#acceptable ideologies
+	
+	paternal_autocrat = yes
+	social_conservative = yes
+	market_liberal = yes
+	social_liberal = yes
+	social_democrat = yes
+	
+	# positions changed by elections
+	
+	head_of_state = no
+	head_of_government = yes
+	foreign_minister = yes
+	armament_minister = yes
+	minister_of_security = yes
+	minister_of_intelligence = yes
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = yes
+	duration = 60
+}
+
+social_conservatism = {
+
+    suseptibility_allies = 0.1
+    global_revolt_risk = -1
+    threat_resistance = 0.25
+    drift_speed = 0.1
+
+	#acceptable ideologies
+	
+	paternal_autocrat = yes
+	social_conservative = yes
+	market_liberal = yes
+	social_liberal = yes
+	social_democrat = yes
+	
+	# positions changed by elections
+	
+	head_of_state = yes
+	head_of_government = yes
+	foreign_minister = yes
+	armament_minister = yes
+	minister_of_security = yes
+	minister_of_intelligence = yes
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = yes
+	duration = 48
+}
+
+spanish_social_conservatism = {
+
+    suseptibility_axis = 0.1
+    threat_impact = 0.05
+    war_consumer_goods_demand = 0.05
+    peace_consumer_goods_demand = -0.05
+
+	#acceptable ideologies
+
+	national_socialist = yes
+	fascistic = yes
+	paternal_autocrat = yes
+	social_conservative = yes
+	
+	# positions changed by elections
+	
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+social_democracy = {
+
+    suseptibility_allies = 0.1
+    global_revolt_risk = -1
+    threat_resistance = 0.25
+    drift_speed = 0.1
+	
+	#acceptable ideologies
+	
+	social_conservative = yes
+	market_liberal = yes
+	social_liberal = yes
+	social_democrat = yes
+	left_wing_radical = yes
+	
+	# positions changed by elections
+
+	head_of_state = yes
+	head_of_government = yes
+	foreign_minister = yes
+	armament_minister = yes
+	minister_of_security = yes
+	minister_of_intelligence = yes
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = yes
+	duration = 48
+}
+
+left_wing_radicals = {
+
+    suseptibility_comintern = 0.1
+    industrial_efficiency = 0.1
+    global_money = -0.25
+    counter_intelligence = 0.05
+    ruling_party_support = 0.05
+
+
+	#acceptable ideologies
+
+	social_democrat = yes
+	left_wing_radical = yes
+	leninist = yes
+	
+	# positions changed by elections
+
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+socialist_republic = {
+
+    suseptibility_comintern = 0.1
+    industrial_efficiency = 0.1
+    global_money = -0.25
+    counter_intelligence = 0.05
+    ruling_party_support = 0.05
+
+	#acceptable ideologies
+
+	left_wing_radical = yes
+	leninist = yes
+	stalinist = yes
+
+	# positions changed by elections
+
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+federal_socialist_republic = {
+
+    suseptibility_comintern = 0.1
+    industrial_efficiency = 0.1
+    global_money = -0.25
+    counter_intelligence = 0.05
+    ruling_party_support = 0.05
+
+	#acceptable ideologies
+	
+	left_wing_radical = yes
+	leninist = yes
+	stalinist = yes
+
+	# positions changed by elections
+
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+state_of_emergency = {
+
+    threat_impact = 0.25
+    dissent = 0.15
+
+	national_socialist = yes
+	fascistic = yes
+	paternal_autocrat = yes
+	left_wing_radical = yes
+	leninist = yes
+	stalinist = yes
+	social_conservative = yes
+	social_liberal = yes
+	social_democrat = yes
+	market_liberal = yes
+
+	# positions changed by elections
+
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no	
+
+}
+
+election = {
+	# no acceptable ideologies
+	
+	# all positions are changed by elections!
+
+	head_of_state = yes
+	head_of_government = yes
+	foreign_minister = yes
+	armament_minister = yes
+	minister_of_security = yes
+	minister_of_intelligence = yes
+	chief_of_staff = yes
+	chief_of_army = yes
+	chief_of_navy = yes
+	chief_of_air = yes
+	
+	election = yes
+	duration = 1
+}
+
+soc_dem_election = {
+	# no acceptable ideologies
+	
+	# all positions are changed by elections!
+
+	head_of_state = yes
+	head_of_government = yes
+	foreign_minister = yes
+	armament_minister = yes
+	minister_of_security = yes
+	minister_of_intelligence = yes
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = yes
+	duration = 1
+}
+
+soc_cons_election = {
+	# no acceptable ideologies
+	
+	# all positions are changed by elections!
+
+	head_of_state = yes
+	head_of_government = yes
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = yes
+	duration = 1
+}
+
+cons_mon_election = {
+	# no acceptable ideologies
+	
+	# all positions are changed by elections!
+
+	head_of_state = no
+	head_of_government = yes
+	foreign_minister = yes
+	armament_minister = yes
+	minister_of_security = yes
+	minister_of_intelligence = yes
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = yes
+	duration = 1
+}
+
+installing_puppet = {
+
+	national_socialist = yes
+	fascistic = yes
+	paternal_autocrat = yes
+	left_wing_radical = yes
+	leninist = yes
+	stalinist = yes
+	social_conservative = yes
+	social_liberal = yes
+	social_democrat = yes
+	market_liberal = yes
+
+	# all positions are changed by elections!
+
+	head_of_state = yes
+	head_of_government = yes
+	foreign_minister = yes
+	armament_minister = yes
+	minister_of_security = yes
+	minister_of_intelligence = yes
+	chief_of_staff = yes
+	chief_of_army = yes
+	chief_of_navy = yes
+	chief_of_air = yes
+	
+	election = yes
+	duration = 1
+}
+
+fascist_puppet = {
+
+	global_revolt_risk = 1
+    ruling_party_support = -0.05
+
+    suseptibility_axis = 0.1
+    threat_impact = 0.05
+    war_consumer_goods_demand = 0.05
+    peace_consumer_goods_demand = -0.05
+
+	#acceptable ideologies
+	
+	national_socialist = yes
+	fascistic = yes
+	paternal_autocrat = yes
+
+	# positions changed by elections
+
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+socialist_puppet = {
+
+	global_revolt_risk = 1
+    ruling_party_support = -0.05
+
+    suseptibility_comintern = 0.1
+    industrial_efficiency = 0.1
+    global_money = -0.25
+    counter_intelligence = 0.05
+    ruling_party_support = 0.05
+
+	#acceptable ideologies
+	
+	left_wing_radical = yes
+	leninist = yes
+	stalinist = yes
+
+	# positions changed by elections
+
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+democratic_puppet = {
+
+    ruling_party_support = -0.05
+
+    suseptibility_allies = 0.1
+    threat_resistance = 0.25
+    drift_speed = 0.1
+
+	#acceptable ideologies
+	
+	social_conservative = yes
+	social_liberal = yes
+	social_democrat = yes
+	market_liberal = yes
+	
+	# positions changed by elections
+	
+	head_of_state = yes
+	head_of_government = yes
+	foreign_minister = yes
+	armament_minister = yes
+	minister_of_security = yes
+	minister_of_intelligence = yes
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = yes
+	duration = 48
+}
+
+colonial_puppet = {
+
+	global_revolt_risk = 1
+    ruling_party_support = -0.05
+
+    national_unity_effect = -0.1
+	sw_national_unity_effect = -0.1
+    dissent = -0.05
+
+	#acceptable ideologies
+	
+	paternal_autocrat = yes
+	social_conservative = yes
+	social_liberal = yes
+	social_democrat = yes
+	market_liberal = yes
+	
+	# positions changed by elections
+	
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+protectorate = {
+
+	global_revolt_risk = 1
+    ruling_party_support = -0.05
+
+    national_unity_effect = -0.1
+	sw_national_unity_effect = -0.1
+    dissent = -0.05
+
+	#acceptable ideologies
+	
+	paternal_autocrat = yes
+	social_conservative = yes
+	social_liberal = yes
+	social_democrat = yes
+	market_liberal = yes
+	
+	# positions changed by elections
+	
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}
+
+war_cabinet = {
+
+    suseptibility_allies = 0.1
+    global_revolt_risk = -1
+    drift_speed = 0.1
+
+    national_unity_effect = -0.1
+	sw_national_unity_effect = -0.1
+    dissent = -0.05
+
+	#acceptable ideologies
+
+	paternal_autocrat = yes
+	social_conservative = yes
+	social_liberal = yes
+	social_democrat = yes
+	market_liberal = yes
+	left_wing_radical = yes
+	
+	# positions changed by elections
+	
+	head_of_state = no
+	head_of_government = no
+	foreign_minister = no
+	armament_minister = no
+	minister_of_security = no
+	minister_of_intelligence = no
+	chief_of_staff = no
+	chief_of_army = no
+	chief_of_navy = no
+	chief_of_air = no
+	
+	election = no
+}

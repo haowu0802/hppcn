@@ -1,0 +1,94 @@
+diplomatic_decisions = {
+
+	helping_italy_in_greece = {
+		major = yes
+		potential = {
+			tag = GER
+			exists = GRE
+			exists = ITA
+			exists = YUG
+			not = { YUG = { war_with = GER } }
+			ITA = { war_with = GRE }	# Italy needs help
+			not = {
+				or = {
+					4663 = { controlled_by = ITA }
+					4663 = { controlled_by = ALB }
+				}
+			}
+			not = { YUG = { military_access = GER } }
+			not = { YUG = { faction = axis } }
+			not = { has_country_flag = "balkan_war" }
+		}
+		allow = {
+			neighbour = YUG
+			ITA = { faction = axis }
+			or = {
+				not = { exists = FRA }
+				FRA = { government_in_exile = yes }
+			}
+		}
+		effect = {
+			YUG = { country_event = 3600 }
+			set_country_flag = "balkan_war"
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	intervene_in_yugoslavia = {
+		major = yes
+		potential = {
+			tag = GER
+			head_of_state = 1
+			has_global_flag = "yugo_coup"								# The coup has started
+			not = { YUG = { has_country_flag = "rebels_put_down" } }	# but not yet ended
+			not = { GER = { has_country_flag = "intervened_in_yug" } }	# one intervention only!
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = "intervened_in_yug"
+			any_country = {
+				limit = { faction = axis }
+				end_guarantee = YUG
+			}
+			end_guarantee = YUG
+			war = {
+				target = YUG
+				attacker_goal = { casus_belli = conquer }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	rebels_put_down = {
+		major = yes
+		potential = {	
+			tag = YUG
+			has_global_flag = "yugo_coup"
+			not = { has_country_flag = "rebels_put_down" }
+			war = no
+		}
+		allow = {
+			not = {
+				any_owned_province = { controlled_by = REB }
+			}
+		}
+		effect = {
+			set_country_flag = "rebels_put_down"
+			national_unity = 25
+			organisation = 25
+			dissent = -5
+			GER = { country_event = 3609 }	# Ask Germany to take us back
+			country_event = 4006			# Restore order if we have enough Organisation or Popularity
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+
