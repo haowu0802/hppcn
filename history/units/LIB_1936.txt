@@ -1,40 +1,23 @@
-theatre = {
-	name = "Liberian Military Command"
+corps = {
+	name = "利比里亚陆军"
 	location = 9952
-	regiment = { type = hq_brigade name = "Monrovia HQ" historical_model = 0 }
-	corps = {
-		name = "Army of Liberia"
+	regiment = { type = hq_brigade name = "利比里亚陆军指挥部" historical_model = 0 }
+	division= {
+		name = "共和国卫队第1师"
 		location = 9952
-		regiment = { type = hq_brigade name = "Army of Liberia HQ" historical_model = 0 }
-		division= {
-			name = "1st Republican Guards Div."
-			location = 9952
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "1st Infantry Brigade" experience = 0 historical_model = 1 }
-			regiment = { type = infantry_brigade name = "2nd Infantry Brigade" experience = 0 historical_model = 1 }
-			regiment = { type = infantry_brigade name = "3rd Infantry Brigade" experience = 0 historical_model = 1 }
-		}
-		division= {
-			name = "2nd Republican Guards Div."
-			location = 9952
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "4th Infantry Brigade" experience = 0 historical_model = 1 }
-			regiment = { type = infantry_brigade name = "5th Infantry Brigade" experience = 0 historical_model = 1 }
-			regiment = { type = infantry_brigade name = "6th Infantry Brigade" experience = 0 historical_model = 1 }
-		}
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+	}
+	division= {
+		name = "共和国卫队第2师"
+		location = 9952
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
 	}
 }
-convoy_construction=
-{
-	country = LIB
-	id=
-	{
-		id=15720
-		type=4713
-	}
-	size=1
-	cost=0.000 #you can put any number here and the engine will use it
-	progress=90.000
-	duration=0.000 #you can put any number here and the engine will use it
-	status=no #No means you get a convoy.  Yes means you get an escort
-}
+
+

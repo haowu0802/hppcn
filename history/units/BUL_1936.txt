@@ -1,161 +1,99 @@
-theatre = {
-	name = "Bulgarski Glavno Komandvane"
+corps = {
+	name = "第1军"
 	location = 4371
-	regiment = { type = hq_brigade name = "Sofiya HQ" historical_model = 0 }
+	regiment = { type = hq_brigade name = "第1军指挥部" historical_model = 0 }
 	division= {
-		name = "1-va Konna divizija"
+		name = "第1'索菲亚'步兵师"
 		location = 4371
 		is_reserve = yes
-		regiment = { type = cavalry_brigade name = "1. Kavaleriiski Polk" experience = 5 historical_model = 3 }
-		regiment = { type = cavalry_brigade name = "2. Kavaleriiski Polk" experience = 5 historical_model = 3 }
-		}
+		regiment = { type = infantry_brigade name = "第1步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第6步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第16步兵团" historical_model = 0 }
+	}
 	division= {
-		name = "2-ra Konna divizija"
+		name = "第7'里尔斯克'步兵师"
+		location = 4371
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第14步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第39步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第68步兵团" historical_model = 0 }
+	}
+	division= {
+		name = "第1骑兵师"
+		location = 4371
+		is_reserve = yes
+		regiment = { type = cavalry_brigade name = "第1骑兵旅" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "第2骑兵旅" historical_model = 0 }
+	}
+}
+corps = {
+	name = "第2军"
+	location = 4123
+	regiment = { type = hq_brigade name = "第2军指挥部" historical_model = 0 }
+	division= {
+		name = "第2'塔克斯卡'步兵师"
 		location = 4123
 		is_reserve = yes
-		regiment = { type = cavalry_brigade name = "3. Kavaleriiski Polk" experience = 5 historical_model = 3 }
-		regiment = { type = cavalry_brigade name = "4. Kavaleriiski Polk" experience = 5 historical_model = 3 }
-		}		
-	corps = {
-		name = "1-va Armija"
-		location = 4371
-		regiment = { type = hq_brigade name = "1-va Armija HQ" historical_model = 0 }
-		division= {
-			name = "1-va Sofiya Pekhotna Divizija"
-			location = 4371
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "1. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "6. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "16. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "1. Artileriiski Polk" experience = 2.5 historical_model = 3 }
-		}
-		division= {
-			name = "7-ma Dupnica Pekhotna Divizija"
-			location = 4371
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "14. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "39. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "68. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = engineer_brigade name = "1. Inzhener Batal抩n" experience = 2.5 historical_model = 0 }
-		}
+		regiment = { type = infantry_brigade name = "第9步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第21步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第27步兵团" historical_model = 0 }
 	}
-	corps = {
-		name = "2-ra Armija"
+	division= {
+		name = "第8'图德占斯卡'步兵师"
 		location = 4123
-		regiment = { type = hq_brigade name = "2-ra Armija HQ" historical_model = 0 }
-		division= {
-			name = "2-ra Plovdiv Pekhotna Divizija"
-			location = 4123
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "9. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "21. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "27. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "2. Artileriiski Polk" experience = 2.5 historical_model = 3 }
-		}
-		division= {
-			name = "8-a Stara Zagora Pekhotna Divizija"
-			location = 4123
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "12. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "23. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "30. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = engineer_brigade name = "2. Inzhener Batal抩n" experience = 2.5 historical_model = 0 }
-		}
-		division= {
-			name = "10-a Kirdzali Pekhotna Divizija"
-			location = 4123
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "52. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "54. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "55. Pekhoten Polk" experience = 5 historical_model = 3 }
-		}		
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第12步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第23步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第30步兵团" historical_model = 0 }
 	}
-	corps = {
-		name = "3-ta Armija"
+	division= {
+		name = "第2步兵师"
+		location = 4123
+		is_reserve = yes
+		regiment = { type = cavalry_brigade name = "第3骑兵旅" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "第4骑兵旅" historical_model = 0 }
+	}
+}
+corps = {
+	name = "第3军"
+	location = 4435
+	regiment = { type = hq_brigade name = "第3军指挥部" historical_model = 0 }
+	division= {
+		name = "第3'巴尔干'步兵师"
 		location = 4435
-		regiment = { type = hq_brigade name = "3-ta Armija HQ" historical_model = 0 }
-		division= {
-			name = "3-ta Sliven Pekhotna Divizija"
-			location = 4435
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "11. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "24. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "29. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "3. Artileriiski Polk" experience = 2.5 historical_model = 3 }
-		}
-		division= {
-			name = "4-ta Schumen Pekhotna Divizija"
-			location = 4435
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "7. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "8. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "19. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = engineer_brigade name = "3. Inzhener Batal抩n" experience = 2.5 historical_model = 0 }
-		}
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第11步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第24步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第29步兵团" historical_model = 0 }
 	}
-	corps = {
-		name = "4-ta Armija"
+	division= {
+		name = "第4'佩斯拉夫斯卡'步兵师"
+		location = 4435
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第7步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第8步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第19步兵团" historical_model = 0 }
+	}
+}
+corps = {
+	name = "第4军"
+	location = 4121
+	regiment = { type = hq_brigade name = "第4军指挥部" historical_model = 0 }
+	division= {
+		name = "第5'杜那夫斯卡'步兵师"
 		location = 4121
-		regiment = { type = hq_brigade name = "4-ta Armija HQ" historical_model = 0 }
-		division= {
-			name = "5-ta Russe Pekhotna Divizija"
-			location = 4121
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "5. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "18. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "33. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "4. Artileriiski Polk" experience = 2.5 historical_model = 3 }
-		}
-		division= {
-			name = "6-ta Vraca Pekhotna Divizija"
-			location = 4121
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "3. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "15. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "35. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = engineer_brigade name = "4. Inzhener Batal抩n" experience = 2.5 historical_model = 0 }
-		}
-		division= {
-			name = "9-a Pleven Pekhotna Divizija"
-			location = 4121
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "49. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "54. Pekhoten Polk" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "58. Pekhoten Polk" experience = 5 historical_model = 3 }
-		}		
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第5步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第18步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第33步兵团" historical_model = 0 }
+		regiment = { type = artillery_brigade name = "第1炮兵团" historical_model = 0 }
 	}
-	air = {
-		name = "VVS"
-		base = 4371
-		location = 4371
-		wing = { type = cas name = "1-va Shturmovi Polk" experience = 5 historical_model = 0 }
-	}	
-}
-convoy_construction=
-{
-	country = BUL
-	id=
-	{
-		id=15400
-		type=4713
+	division= {
+		name = "第6'布丁斯卡'步兵师"
+		location = 4121
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第3步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第15步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第35步兵团" historical_model = 0 }
 	}
-	size=1
-	cost=0.000 #you can put any number here and the engine will use it
-	progress=90.000
-	duration=0.000 #you can put any number here and the engine will use it
-	status=no #No means you get a convoy.  Yes means you get an escort
-}
-convoy_construction=
-{
-	country = BUL
-	id=
-	{
-		id=15401
-		type=4713
-	}
-	size=1
-	cost=0.000 #you can put any number here and the engine will use it
-	progress=90.000
-	duration=0.000 #you can put any number here and the engine will use it
-	status=no #No means you get a convoy.  Yes means you get an escort
 }

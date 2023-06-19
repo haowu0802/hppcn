@@ -1,5 +1,6 @@
 color = { 67  123  237 }
 graphical_culture = Us
+
 major = yes
 
 last_election = 1932.11.8
@@ -12,10 +13,10 @@ default_templates = {
 		infantry_brigade
 	}
 	USA_national_guard = {
-		militia_brigade
-		militia_brigade
-		militia_brigade
-		militia_brigade
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
 	}
 	USA_cavalry = {
 		cavalry_brigade
@@ -47,358 +48,1346 @@ default_templates = {
 		marine_brigade
 		marine_brigade
 	}
-	USA_alpine = {
-		bergsjaeger_brigade
-		bergsjaeger_brigade
-		bergsjaeger_brigade
-		bergsjaeger_brigade		
-	}
 }
 
 unit_names = {
+	ranger_brigade = {
+                "µÚ1ÌØÇÚ²¿¶Ó" "´ï±ÈÓÎÆï±ø¶Ó" "µÚ6615ÓÎÆï±ø¶Ó£¨Ôİ±à£©" "µÚ5307ÁÙÊ±»ìºÏÖ§¶Ó" "µÚ1ÓÎÆï±øÍ»»÷¶Ó£¨Ôİ±à£©" "µÚ2ÓÎÆï±øÍ»»÷¶Ó£¨Ôİ±à£©" "µÚ3ÓÎÆï±øÍ»»÷¶Ó£¨Ôİ±à£©" "µÚ4ÓÎÆï±øÍ»»÷¶Ó£¨Ôİ±à£©"
+	}
 	infantry_brigade = {
-		"1st 'Big Red One' Division" "2nd 'Indianhead' Division" "3rd 'Rock of the Marne' Division" "24th 'Victory' Division" "6th 'Sightseeing Sixth' Division" "5th 'Red Devils' Division" "33rd 'Prairie' NG Division" "4th 'Iron Horse' Division" "7th 'Bayonet' Division" "8th 'Pathfinder' Division" "9th 'Old Reliables' Division" 
-		"30th 'Old Hickory' NG Division" "41st 'Sunset' NG Division" "44th Infantry NG Division" "45th 'Thunderbird' NG Division" "27th 'New York Division' NG" "32nd 'Red Arrow' NG Division" "37th 'Buckeye' NG Division" "31st 'Dixie' NG Division" "36th 'Texas' NG Division" "35th 'Santa Fe' NG Division" "26th 'Yankee' NG Division" 
-		"38th 'Cyclone' NG Division" "29th 'Blue and Gray' NG Division" "34th 'Red Bull' NG Division" "28th 'Keystone' NG Division" "43rd 'Winged Victory' NG Division" "40th 'Sunshine' NG Division" "25th 'Tropic Lightning' Division" "77th 'Liberty Division'" "90th 'Tough Ombres' Division" "85th 'Custer Division'" "93rd Infantry (Colored) Division" 
-		"23rd 'Americal Division'" "76th 'Onaway Division'" "79th Infantry Division" "81st 'Wildcat' Division" "80th 'Blue Ridge Division'" "88th 'Blue Devils' Division" "89th 'Midwest Division'" "95th 'Victory' Division" "78th 'Lightning' Division" "83rd 'Thunderbolts' Division" "91st 'Pine Tree' Division" 
-		"96th 'Deadeye' Division" "94th 'Neuf Quatres' Division" "98th 'Iroquois Division'" "102nd 'Ozarks' Division" "104th 'Timberwolves' Division" "84th 'Railsplitters' Division" "92nd 'Buffalo Soldiers' Division" "99th 'Checkerboard' Division" "100th 'Century' Division" "103rd 'Cactus' Division" "86th 'Blackhawk' Division" 
-		"87th 'Golden Acorns' Division" "97th 'Trident' Division" "106th 'Golden Lions' Division" "66th 'Black Panthers' Division" "75th Infantry Division" "69th 'Fighting 69th' Division" "63rd 'Blood  Fire' DivisionÜ" "70th 'Trailblazers' Division" "42nd 'Rainbow' Division" "71st 'Red Circle' Division" "65th 'Battle Axe' Division" 
-		"108th 'Griffons' Division" "39th 'Cougars' Division" "47rd Infantry Division" "46th 'Lightning Lancers' Division" "48th 'Lucky Devils' Division" "59th 'Hawks' Division" "110th 'Washington' Division" "115th 'Jefferson' Division" "116th 'Headhunters' Division" "125th 'Robert E. Lee' Division" "128th 'Brooklyn' Division" 
-		"131th 'Lincoln' Division" "164th 'U.S. Grant' Division" "165th 'Adams' Division" "166th 'Franklin' Division" "167th 'Lions' Division" "168th 'Lady Liberty' Division" "169th 'Madison' Division" "170th 'Bloodhounds' Division" "171st Infantry Division" "172nd 'Misfits' Division" "173rd 'Metropolitan' Division" 
-		"187th Infantry Division" "188th Infantry Division" "189th 'Black Diamonds' Division" "190th Infantry Division" "191st 'Sam Houston' Division" "192nd 'Banditos' Division" "193rd 'Fighting 193rd' Division" "194th 'Dust Devils' Division" "195th 'Blue Dragons' Division" "196th 'Volunteers' Division" "197th 'Hercules' Division" 
-		"198th Infantry Division" "199th 'Davy Crockett' Division" "200th 'Black Tigers' Division" "201st 'Iron Men' Division" "203rd 'Armadillos' Division" "204th 'Mountain Lions' Division" "205th 'Widowmakers' Division" "119th 'White Knights' Division" "130th 'Dirty Bastards' Division" "157th 'Titans' Division" "158th 'Green Clovers' Division" 
-		"159th 'Longhorn' Division" "160th 'Freedom!' Division" "161st 'Desert Scorpion' Division" "162nd 'Seminole' Division" "163rd Infantry Division" "174th 'Black Knights' Division" "175th 'Apache' Division" "176th Infantry Division" "177th 'Old Muddy' Division" "178th 'Black Widows' Division" "179th 'Moccasins' Division" 
-		"180th 'Centaur' Division" "181st 'Howling Coyotes' Division" "182nd Infantry Division" "183rd 'Harlem' Division" "184th Infantry Division" "185th 'Ragin' Cajuns' Division" "186th 'Bulldog' Division" "219th Infantry Division" "220th 'Chicago' Division" "221st 'Fighting Lumberjacks' Division" "222nd 'Explorers' Division" 
-		"223rd 'Mavericks' Division" "224th 'San Francisco' Division" "225th 'Falcons' Division" "226th 'Alamo' Division" "227th Infantry Division" "228th 'Buccaneers' Division" "229th 'Philadelphia' Division" "230th Infantry Division" "231st 'Cowboys' Division" "232nd 'Archers' Division" "233rd 'Daniel Boone' Division" 
-		"234th Infantry Division" "235th 'Mean Green' Division" "236th 'Revenge!' Division" "237th Infantry Division" "238th '1776' Division" "239th 'Detroit' Division" "240th 'Minuteman' Division" "241st 'Centurion' Division" "244th Infantry Division" "245th 'Enthusiasts' Division" "246th Infantry Division" 
-		"247th 'Rebel Yell' Division" "248th 'Jayhawkers' Division" "249th 'Swamp Fox' Division" "250th 'Blue Streaks' Division" "251st 'Bearcats' Division" "252nd 'Gorillas' Division" "253rd 'Big Green' Division" "254th 'Mustangs' Division" "255th Infantry Division" "256th 'Flying Dutchmen' Division" "257th 'Phoenix' Division" 
-		"258th 'Crusader' Division" "259th 'Boston' Division" "260th 'Viking' Division" "261st 'Braves' Division" "262nd Infantry Division" "263rd 'Yellow Jackets' Division" "264th Infantry Division" "265th 'Celtic' Division" "266th 'Spartans' Division" "267th 'Brocos' Division" "268th 'Infamous 268th' Division" 
-		"269th 'Forrester' Division" "270th 'Gamecocks' Division" "319th Infantry Division" "320th 'Vanguard' Division" "321st 'Pioneer' Division" "322nd 'Beavers' Division" "323rd Infantry Division" "324th 'Cavaliers' Division" "325th Infantry Division" "326th 'Cardinals' Division" "327th 'Polar Bears' Division" 
-		"328th 'Gettysburg' Division" "329th 'Vicksburg' Division" "330th 'Comet' Division" "331st Infantry Division" "332nd 'Mastadons' Division" "333rd 'Lucky Lindy' Division" "334th 'Golden Gophers' Division" "335th 'Fighting Irish' Division" "336th Infantry Division" "337th 'Red Hawks' Division" "338th Infantry Division" 
-		"339th 'Hilltoppers' Division" "340th 'Green Demons' Division" "341st 'Black Ravens' Division" "344th Infantry Division" "345th 'Wasps' Division" "346th 'Jackrabbits' Division" "347th 'Columbus' Division" "348th 'Giants' Division" "349th 'Highlanders' Division" "350th 'Lakers' Division" "351st 'Saints' Division" 
-		"352nd 'Roadrunner' Division" "353rd 'Maccabees' Division" "354th 'Green Gators' Division" "355th 'Seattle' Division" "356th 'Warhawks' Division" "357th 'Grey Owls' Division" "358th 'Chrimson' Division" "359th 'Trojans' Division" "360th 'Bloody Saber' Division" "361st 'Billy  Johnny' DivisionÜ" "362nd 'Amerigo Vespucci' Division" 
-		"363rd 'Chocktaw' Division" "364th 'Ogre' Division" "365th 'Patriot' Division" "366th 'Storm' Division" "367th 'Hoosiers' Division" "368th 'Jaguars' Division" "369th 'Corsairs' Division" "370th Infantry Division" 
+"µÚ1'´óºìÒ»'Ê¦" "µÚ2'Ó¡µÚ°²Çõ³¤'Ê¦" "µÚ3'Âí¶÷ÅÍÊ¯'Ê¦"
+"µÚ6'µÚÁù¹Û¹â'Ê¦" 
+"µÚ5'ºì×ê'Ê¦" 
+"µÚ33'´ó²İÔ­'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ4'³£´ºÌÙ'Ê¦" 
+"µÚ7'É³Â©'Ê¦" 
+"µÚ8'Ì½ÏÕÕß'Ê¦" 
+"µÚ9'ÀÏÊµÈË'Ê¦"  
+"µÚ269'¸£À×Ë¹ÌØ'Ê¦" 
+"µÚ270'¶·¼¦'Ê¦" 
+"µÚ319²½±øÊ¦" 
+"µÚ320'Ç°ÎÀ'Ê¦" 
+"µÚ321'ÏÈ·æ'Ê¦" 
+"µÚ322'º£Àê'Ê¦" 
+"µÚ323²½±øÊ¦" 
+"µÚ324'ÆïÊ¿'Ê¦" 
+"µÚ325²½±øÊ¦" 
+"µÚ326'Êà»úÖ÷½Ì'Ê¦" 
+"µÚ327'±±¼«ĞÜ'Ê¦" 
+"µÚ328'¸Ç´Ä±¤'Ê¦" 
+"µÚ329'Î¬¿Ë±¤'Ê¦" 
+"µÚ330'»ÛĞÇ'Ê¦" 
+"µÚ331²½±øÊ¦" 
+"µÚ332'È­»÷ÊÖ'Ê¦" 
+"µÚ333'ĞÒÔËµÄÁÕ´ï'Ê¦" 
+"µÚ334'½ğµØÊó'Ê¦" "µÚ335'Õ½¶·µÄ°®¶ûÀ¼ÈË'Ê¦" 
+"µÚ336²½±øÊ¦" 
+"µÚ337'ºìÓ¥'Ê¦" 
+"µÚ338²½±øÊ¦" 
+"µÚ339'Ï£¶û¶Ù'Ê¦" 
+"µÚ340'ÂÌÉ«Ä§¹í'Ê¦" 
+"µÚ341'ºÚÉ«ÎÚÑ»'Ê¦" 
+"µÚ344²½±øÊ¦" 
+"µÚ345'»Æ·ä'Ê¦" 
+"µÚ346'½Ü¿ËÍÃ'Ê¦" 
+"µÚ347'¸çÂ×²¼'Ê¦" 
+"µÚ348'¾ŞÈË'Ê¦" 
+"µÚ349'¸ßµØÈË'Ê¦" 
+"µÚ350'ºşÓã'Ê¦" 
+"µÚ351'Ê¥Í½'Ê¦" 
+"µÚ352'ÅÜ²½Õß'Ê¦" 
+"µÚ353'Âí¿¨±ÈÊé'Ê¦" 
+"µÚ354'ÂÌÉ«'Ê¦" 
+"µÚ355'Î÷ÑÅÍ¼'Ê¦" 
+"µÚ356'Õ½Ó¥'Ê¦" 
+"µÚ357'»ÒÉ«Ã¨Í·Ó¥'Ê¦" 
+"µÚ358'Éñ¸¸'Ê¦" 
+"µÚ359'ÌØÂåÒÁÈË'Ê¦" 
+"µÚ360'ÑªĞÈµÄ¾üµ¶'Ê¦" 
+"µÚ361'±ÈÀûºÍÇ¿Äá'Ê¦" 
+"µÚ362'Î¤Ë¹ÆÕÆæ'Ê¦" 
+"µÚ363'»ğ¼¦'Ê¦" 
+"µÚ364'Ê³ÈËÄ§'Ê¦" 
+"µÚ365'°®¹úÕß'Ê¦" 
+"µÚ366'±©·çÓê'Ê¦" 
+"µÚ367'Ó¡µÚ°²ÄÇ¾ÓÃñ'Ê¦" 
+"µÚ368'ÃÀÖŞ»¢'Ê¦" 
+"µÚ369'º£µÁ'Ê¦" 
+"µÚ370²½±øÊ¦" 
+"µÚ24'ÏÄÍşÒÄ'Ê¦" 
+"µÚ30'ÀÏÉ½ºúÌÒ'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ41'´ÔÁÖ²¿Âä'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ44²½±ø¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ45'À×Äñ'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ27'Å¦Ô¼'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ32'ºì¼ı'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ37'ÆßÒ¶Ê÷'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ31'ÃÀ¹úÄÏ²¿'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ36'µÂ¿ËÈøË¹'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ35'Ê¥´ï·Æ'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ26'ÃÀ¹úÈË'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ38'ì«·ç'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ29'À¶Óë»Ò'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ34'ºìÉ«¹«Å£'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ28'Ğ¨Ê¯'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ43'ºì³á'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ40'Ñô¹â'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ25'ÈÈ´øÉÁµç'Ê¦" 
+"µÚ77'×ÔÓÉÅ®Éñ'Ê¦" 
+"µÚ90'¶ñ¹÷ÅÆ'Ê¦" 
+"µÚ85'¿¦Ë¹ÌØ'Ê¦" 
+"µÚ93'²ÊÉ«'²½±øÊ¦" 
+"µÚ23'ÃÀÖŞ'Ê¦" 
+"µÚ76'¶ÀÁ¢ÖÓ'Ê¦" 
+"µÚ79²½±øÊ¦" 
+"µÚ81'Ò°Ã¨'Ê¦" 
+"µÚ80'À¶É«É½¼¹'Ê¦" 
+"µÚ88'À¶É«Ä§¹í'Ê¦" 
+"µÚ89'ÖĞÎ÷²¿'Ê¦" 
+"µÚ95'Ê¤Àû'Ê¦" 
+"µÚ78'ÉÁµç'Ê¦" 
+"µÚ83'¶íº¥¶íÖİ'Ê¦" 
+"µÚ91'Î÷²¿À«»Ä'Ê¦" 
+"µÚ96'Èı¿×»¬³µ'Ê¦" 
+"µÚ94'ËÄºì'Ê¦" 
+"µÚ98'Ò×Âå¿ı×åÈË'Ê¦" 
+"µÚ102'Å·Ôú¿ËÈË'Ê¦" 
+"µÚ104'´ó»ÒÀÇ'Ê¦" 
+"µÚ84'ÅüÄ¾Õß'Ê¦" 
+"µÚ92'Ë®Å£'Ê¦" 
+"µÚ99'ÌøÆå'Ê¦" 
+"µÚ100'ÊÀ¼Í'Ê¦" 
+"µÚ103'ÏÉÈËÕÆ'Ê¦" 
+"µÚ86'ºÚÓ¥'Ê¦" 
+"µÚ87'Ïğ×ÓÊ÷'Ê¦" 
+"µÚ97'Èı²æêª'Ê¦" 
+"µÚ106'½ğÊ¨'Ê¦" 
+"µÚ66'ºÚ±ª'Ê¦" 
+"µÚ75²½±øÊ¦" 
+"µÚ69'ºÃÕ½µÄ69'Ê¦" 
+"µÚ63'ÑªÓë»ğ'Ê¦" 
+"µÚ70'×·×ÙÁÔÈË'Ê¦" 
+"µÚ42'²Êºç'Ê¦" 
+"µÚ71'ºìÔ²ÖÜ'Ê¦" 
+"µÚ65'Õ½¶·¸«Í·'Ê¦" 
+"µÚ108'Ê¨ğÕ'Ê¦" 
+"µÚ39'Èı½ÇÖŞ'Ê¦" 
+"µÚ47²½±øÊ¦" 
+"µÚ46'ÉÁµçÆï±ø'Ê¦" 
+"µÚ48'ĞÒÔËÄ§¹í'Ê¦" 
+"µÚ59'Ó¥'Ê¦" 
+"µÚ110'»ªÊ¢¶Ù'Ê¦" 
+"µÚ115'½Ü·ğÉ­'Ê¦" 
+"µÚ116'ÁÔÍ·Õß'Ê¦" 
+"µÚ125'ÂŞ²®ÌØÀî'Ê¦" 
+"µÚ128'²¼Â³¿ËÁÖ'Ê¦" 
+"µÚ131'ÁÖ¿Ï'Ê¦" 
+"µÚ164'ÊÚÓë'Ê¦" 
+"µÚ165'°¢¿¨µÏÑÇÈË'Ê¦" 
+"µÚ166'¸»À¼¿ËÁÖ'Ê¦" 
+"µÚ167'Ê¨×ÓĞÇ'Ê¦" 
+"µÚ168'¸¾Å®×ÔÓÉ'Ê¦" 
+"µÚ169'ÂóµÏÑ·'Ê¦" 
+"µÚ170'ÕìÌ½È®'Ê¦" 
+"µÚ171²½±øÊ¦" 
+"µÚ172'²»ºÏÊÊ'Ê¦" 
+"µÚ173'¶¼ÊĞ'Ê¦" 
+"µÚ187²½±øÊ¦" 
+"µÚ188²½±øÊ¦" 
+"µÚ189'ºÚ×ê'Ê¦" 
+"µÚ190²½±øÊ¦" 
+"µÚ191'ÈøÄ·ĞİË¹¶Ù'Ê¦" 
+"µÚ192'ÍÁ·Ë'Ê¦" 
+"µÚ193'Õ½¶·µÄ193'Ê¦" 
+"µÚ194'»Ò³¾Ä§¹í'Ê¦" 
+"µÚ195'À¶Áú'Ê¦" 
+"µÚ196'Ö¾Ô¸Õß'Ê¦" 
+"µÚ197'´óÁ¦Ó¢ĞÛ'Ê¦" 
+"µÚ198²½±øÊ¦" 
+"µÚ199'´óÎÀ¿ËÂŞ¿ËÌØ'Ê¦" 
+"µÚ200'ºÚ»¢'Ê¦" 
+"µÚ201'ÌúÈË'Ê¦" 
+"µÚ203'áìáü'Ê¦" 
+"µÚ204'É½Ê¨×ÓĞÇ'Ê¦" 
+"µÚ205'´°Á±'Ê¦" 
+"µÚ119'°×É«µÄÆïÊ¿'Ê¦" 
+"µÚ130'ÔÓÖÖ'Ê¦" 
+"µÚ157'Ì©Ì¹Éñ'Ê¦" 
+"µÚ158'ÂÌÉ«µÄÜÙŞ£'Ê¦" 
+"µÚ159'³¤½ÇÅ£'Ê¦" 
+"µÚ160'×ÔÓÉ!'Ê¦" 
+"µÚ161'É³Ä®Ğ«×Ó'Ê¦" 
+"µÚ162'É­Ã×Åµ¶ûÈË'Ê¦" 
+"µÚ163²½±øÊ¦" 
+"µÚ174'ºÚÉ«µÄÆïÊ¿'Ê¦" 
+"µÚ175'°¢ÅÁÆæÈË'Ê¦" 
+"µÚ176²½±øÊ¦" 
+"µÚ177'ÓÖ¾ÉÓÖÔà'Ê¦" 
+"µÚ178'ºÚ¹Ñ¸¾'Ê¦" 
+"µÚ179'ÄªÎ÷¸É'Ê¦" 
+"µÚ180'ÈËÂí×ù'Ê¦" 
+"µÚ181'ÅØÏøÒ°ÀÇ'Ê¦" 
+"µÚ182²½±øÊ¦" 
+"µÚ183'¹şÀ×Ä·'Ê¦" 
+"µÚ184²½±øÊ¦" 
+"µÚ185'ĞÂ°Â¶ûÁ¼'Ê¦" 
+"µÚ186'¶·Å£¹·'Ê¦" 
+"µÚ219²½±øÊ¦" 
+"µÚ220'Ö¥¼Ó¸ç'Ê¦" 
+"µÚ221'Õ½¶·µÄ·¥Ä¾¹¤ÈË'Ê¦" 
+"µÚ222'Ì½ÏÕ¼Ò'Ê¦" 
+"µÚ223'¿¹ÃüÕß'Ê¦" 
+"µÚ224'¾É½ğÉ½'Ê¦" 
+"µÚ225'ÁÔÓ¥'Ê¦" 
+"µÚ226'°¢À­Äª'Ê¦" 
+"µÚ227²½±øÊ¦" 
+"µÚ228'º£µÁ'Ê¦" 
+"µÚ229'·Ñ³Ç'Ê¦" 
+"µÚ230²½±øÊ¦" 
+"µÚ231'Å£×Ğ'Ê¦" 
+"µÚ232'ÉäÊÖ'Ê¦" 
+"µÚ233'µ¤Äá¶û²®ÄÉ'Ê¦" 
+"µÚ234²½±øÊ¦" 
+"µÚ235'±äÂÌ'Ê¦" 
+"µÚ236'¸´³ğ'Ê¦" 
+"µÚ237²½±øÊ¦" 
+"µÚ238'1776'Ê¦" 
+"µÚ239'µ×ÌØÂÉ'Ê¦" 
+"µÚ240'ÒåÓÂ±ø'Ê¦" 
+"µÚ241'°Ù·ò³¤'Ê¦" 
+"µÚ244²½±øÊ¦" 
+"µÚ245'ÈÈĞÄÕß'Ê¦" 
+"µÚ246²½±øÊ¦" 
+"µÚ247'ÅÑÍ½'Ê¦" 
+"µÚ248'¿°ÈøË¹ÈË'Ê¦" 
+"µÚ249'ÕÓÔóÖ®ºü'Ê¦" 
+"µÚ250'ĞÔ¸ñÓÇÓô'Ê¦" 
+"µÚ251'ĞÜÃ¨'Ê¦" 
+"µÚ252'´óĞÉĞÉ'Ê¦" 
+"µÚ253'´ó¸ñÁÖ'Ê¦" 
+"µÚ254'Ò°Âí'Ê¦" 
+"µÚ255²½±øÊ¦" 
+"µÚ256'ºÉÀ¼ÈË'Ê¦" 
+"µÚ257'·ï»Ë³Ç'Ê¦" 
+"µÚ258'Ê®×Ö¾ü'Ê¦" 
+"µÚ259'²¨Ê¿¶Ù'Ê¦" 
+"µÚ260'Î¬¾©ÈË'Ê¦" 
+"µÚ261'ÓÂ¸Ò'Ê¦" 
+"µÚ262²½±øÊ¦" 
+"µÚ263'»ÆÉ«¼Ğ¿Ë'Ê¦" 
+"µÚ264²½±øÊ¦" 
+"µÚ265'Èû¶ûÌØÈË'Ê¦" 
+"µÚ266'Ë¹°Í´ïÈË'Ê¦" 
+"µÚ267'²®¿ËË¹'Ê¦" 
+"µÚ268'ÎŞ³ÜµÄ268'Ê¦" 
 	}
 	cavalry_brigade = {
-		"1st Cavalry Division" "2nd Cavalry Division" "3rd Cavalry Division" "21st Cavalry Division" "24th Cavalry Division" "56th Cavalry Division" "61st Cavalry Division" "62nd Cavalry Division" "63rd Cavalry Division" "64th Cavalry Division" "65th Cavalry Division" 
-		"66th Cavalry Division" "21st Cavalry Division" "22nd Cavalry Division" "23rd Cavalry Division" "25th Cavalry Division" "26th Cavalry Division" "27th Cavalry Division" "28th Cavalry Division" "29th Cavalry Division" "30th Cavalry Division" 
-	}
+		"µÚ1'µÚÒ»¶Ó'Æï±øÊ¦" "µÚ2'ÓĞÉ«ÈËÖÖ'Æï±øÊ¦" "µÚ3Æï±øÊ¦" "µÚ21Æï±øÊ¦" "µÚ24Æï±øÊ¦" "µÚ56Æï±øÊ¦" "µÚ61Æï±øÊ¦" "µÚ62Æï±øÊ¦" "µÚ63Æï±øÊ¦" "µÚ64Æï±øÊ¦" "µÚ65Æï±øÊ¦" 
+		"µÚ66Æï±øÊ¦" "µÚ21Æï±øÊ¦" "µÚ22Æï±øÊ¦" "µÚ23Æï±øÊ¦" "µÚ25Æï±øÊ¦" "µÚ26Æï±øÊ¦" "µÚ27Æï±øÊ¦" "µÚ28Æï±øÊ¦" "µÚ29Æï±øÊ¦" "µÚ30Æï±øÊ¦" 
+			}
 	motorized_brigade = {
-		"1st 'Big Red One' Division" "2nd 'Indianhead' Division" "3rd 'Rock of the Marne' Division" "24th 'Victory' Division" "6th 'Sightseeing Sixth' Division" "5th 'Red Devils' Division" "33rd 'Prairie' NG Division" "4th 'Iron Horse' Division" "7th 'Bayonet' Division" "8th 'Pathfinder' Division" "9th 'Old Reliables' Division" 
-		"30th 'Old Hickory' NG Division" "41st 'Sunset' NG Division" "44th Infantry NG Division" "45th 'Thunderbird' NG Division" "27th 'New York Division' NG" "32nd 'Red Arrow' NG Division" "37th 'Buckeye' NG Division" "31st 'Dixie' NG Division" "36th 'Texas' NG Division" "35th 'Santa Fe' NG Division" "26th 'Yankee' NG Division" 
-		"38th 'Cyclone' NG Division" "29th 'Blue and Gray' NG Division" "34th 'Red Bull' NG Division" "28th 'Keystone' NG Division" "43rd 'Winged Victory' NG Division" "40th 'Sunshine' NG Division" "25th 'Tropic Lightning' Division" "77th 'Liberty Division'" "90th 'Tough Ombres' Division" "85th 'Custer Division'" "93rd Infantry (Colored) Division" 
-		"Americal Division" "76th 'Onaway Division'" "79th Infantry Division" "81st 'Wildcat' Division" "80th 'Blue Ridge Division'" "88th 'Blue Devils' Division" "89th 'Midwest Division'" "95th 'Victory' Division" "78th 'Lightning' Division" "83rd 'Thunderbolts' Division" "91st 'Pine Tree' Division" 
-		"96th 'Deadeye' Division" "94th 'Neuf Quatres' Division" "98th 'Iroquois Division'" "102nd 'Ozarks' Division" "104th 'Timberwolves' Division" "84th 'Railsplitters' Division" "92nd 'Buffalo Soldiers' Division" "99th 'Checkerboard' Division" "100th 'Century' Division" "103rd 'Cactus' Division" "86th 'Blackhawk' Division" 
-		"87th 'Golden Acorns' Division" "97th 'Trident' Division" "106th 'Golden Lions' Division" "66th 'Black Panthers' Division" "75th Infantry Division" "69th 'Fighting 69th' Division" "63rd 'Blood  Fire' DivisionÜ" "70th 'Trailblazers' Division" "42nd 'Rainbow' Division" "71st 'Red Circle' Division" "65th 'Battle Axe' Division" 
-		"108th 'Griffons' Division" "39st 'Cougars' Division" "47rd Infantry Division" "22nd 'Rude Rams' Division" "46th 'Lightning Lancers' Division" "48th 'Lucky Devils' Division" "50th 'Black Widows' Division" "55th 'Swamp Foxes' Division" "59th 'Hawks' Division" "110th 'Washington' Division" "115th 'Jefferson' Division" 
-		"116th 'Headhunters' Division" "125th 'Robert E. Lee' Division" "128th 'Brooklyn' Division" "131th 'Lincoln' Division" "164th 'U.S. Grant' Division" "165th 'Adams' Division" "166th 'Franklin' Division" "167th 'Lions' Division" "168th 'Lady Liberty' Division" "169th 'Madison' Division" "170th 'Bloodhounds' Division" 
-		"171st Infantry Division" "172nd 'Misfits' Division" "173rd 'Metropolitan' Division" "187th Infantry Division" "188th Infantry Division" "189th 'Black Diamonds' Division" "190th Infantry Division" "191st 'Sam Houston' Division" "192nd 'Banditos' Division" "193rd 'Fighting 193rd' Division" "194th 'Dust Devils' Division" 
-		"195th 'Blue Dragons' Division" "196th 'Volunteers' Division" "197th 'Hercules' Division" "198th Infantry Division" "199th 'Davy Crockett' Division" "200th 'Black Tigers' Division" "201st 'Iron Men' Division" "203rd 'Armadillos' Division" "204th 'Mountain Lions' Division" "205th 'Widowmakers' Division" "119th 'White Knights' Division" 
-		"130th 'Dirty Bastards' Division" "157th 'Titans' Division" "158th 'Green Clovers' Division" "159th 'Longhorn' Division" "160th 'Freedom!' Division" "161st 'Desert Scorpion' Division" "162nd 'Seminole' Division" "163rd Infantry Division" "174th 'Black Knights' Division" "175th 'Apache' Division" "176th Infantry Division" 
-		"177th 'Old Muddy' Division" "178th Infantry Division" "179th 'Moccasins' Division" "180th 'Centaur' Division" "181st 'Howling Coyotes' Division" "182nd Infantry Division" "183rd 'Harlem' Division" "184th Infantry Division" "185th 'Ragin' Cajuns' Division" "186th 'Bulldog' Division" "219th Infantry Division" 
-		"220th 'Chicago' Division" "221st 'Fighting Lumberjacks' Division" "222nd 'Explorers' Division" "223rd 'Mavericks' Division" "224th 'San Francisco' Division" "225th 'Falcons' Division" "226th 'Alamo' Division" "227th Infantry Division" "228th 'Buccaneers' Division" "229th 'Philadelphia' Division" "230th Infantry Division" 
-		"231st 'Cowboys' Division" "232nd 'Archers' Division" "233rd 'Daniel Boone' Division" "234th Infantry Division" "235th 'Mean Green' Division" "236th 'Revenge!' Division" "237th Infantry Division" "238th '1776' Division" "239th 'Detroit' Division" "240th 'Minuteman' Division" "241st 'Centurion' Division" 
-		"244th Infantry Division" "245th 'Enthusiasts' Division" "246th Infantry Division" "247th 'Rebel Yell' Division" "248th 'Jayhawkers' Division" "249th Infantry Division" "250th 'Blue Streaks' Division" "251st 'Bearcats' Division" "252nd 'Gorillas' Division" "253rd 'Big Green' Division" "254th 'Mustangs' Division" 
-		"255th Infantry Division" "256th 'Flying Dutchmen' Division" "257th 'Phoenix' Division" "258th 'Crusader' Division" "259th 'Boston' Division" "260th 'Viking' Division" "261st 'Braves' Division" "262nd Infantry Division" "263rd 'Yellow Jackets' Division" "264th Infantry Division" "265th 'Celtic' Division" 
-		"266th 'Spartans' Division" "267th 'Brocos' Division" "268th 'Infamous 268th' Division" "269th 'Forrester' Division" "270th 'Gamecocks' Division" "319th Infantry Division" "320th 'Vanguard' Division" "321st 'Pioneer' Division" "322nd 'Beavers' Division" "323rd Infantry Division" "324th 'Cavaliers' Division" 
-		"325th Infantry Division" "326th 'Cardinals' Division" "327th 'Polar Bears' Division" "328th 'Gettysburg' Division" "329th 'Vicksburg' Division" "330th 'Comet' Division" "331st Infantry Division" "332nd 'Mastadons' Division" "333rd 'Lucky Lindy' Division" "334th 'Golden Gophers' Division" "335th 'Fighting Irish' Division" 
-		"336th Infantry Division" "337th 'Red Hawks' Division" "338th Infantry Division" "339th 'Hilltoppers' Division" "340th 'Green Demons' Division" "341st 'Black Ravens' Division" "344th Infantry Division" "345th 'Wasps' Division" "346th 'Jackrabbits' Division" "347th 'Columbus' Division" "348th 'Giants' Division" 
-		"349th 'Highlanders' Division" "350th 'Lakers' Division" "351st 'Saints' Division" "352nd 'Roadrunner' Division" "353rd 'Maccabees' Division" "354th 'Green Gators' Division" "355th 'Seattle' Division" "356th 'Warhawks' Division" "357th 'Grey Owls' Division" "358th 'Chrimson' Division" "359th 'Trojans' Division" 
-		"360th 'Bloody Saber' Division" "361st 'Billy  Johnny' DivisionÜ" "362nd 'Amerigo Vespucci' Division" "363rd 'Chocktaw' Division" "364th 'Ogre' Division" "365th 'Patriot' Division" "366th 'Storm' Division" "367th 'Hoosiers' Division" "368th 'Jaguars' Division" "369th 'Corsairs' Division" "370th Infantry Division" 
+"µÚ1'´óºìÒ»'Ê¦" "µÚ2'Ó¡µÚ°²Çõ³¤'Ê¦" "µÚ3'Âí¶÷ÅÍÊ¯'Ê¦"
+"µÚ6'µÚÁù¹Û¹â'Ê¦" 
+"µÚ5'ºì×ê'Ê¦" 
+"µÚ33'´ó²İÔ­'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ4'³£´ºÌÙ'Ê¦" 
+"µÚ7'É³Â©'Ê¦" 
+"µÚ8'Ì½ÏÕÕß'Ê¦" 
+"µÚ9'ÀÏÊµÈË'Ê¦"  
+"µÚ269'¸£À×Ë¹ÌØ'Ê¦" 
+"µÚ270'¶·¼¦'Ê¦" 
+"µÚ319²½±øÊ¦" 
+"µÚ320'Ç°ÎÀ'Ê¦" 
+"µÚ321'ÏÈ·æ'Ê¦" 
+"µÚ322'º£Àê'Ê¦" 
+"µÚ323²½±øÊ¦" 
+"µÚ324'ÆïÊ¿'Ê¦" 
+"µÚ325²½±øÊ¦" 
+"µÚ326'Êà»úÖ÷½Ì'Ê¦" 
+"µÚ327'±±¼«ĞÜ'Ê¦" 
+"µÚ328'¸Ç´Ä±¤'Ê¦" 
+"µÚ329'Î¬¿Ë±¤'Ê¦" 
+"µÚ330'»ÛĞÇ'Ê¦" 
+"µÚ331²½±øÊ¦" 
+"µÚ332'È­»÷ÊÖ'Ê¦" 
+"µÚ333'ĞÒÔËµÄÁÕ´ï'Ê¦" 
+"µÚ334'½ğµØÊó'Ê¦" "µÚ335'Õ½¶·µÄ°®¶ûÀ¼ÈË'Ê¦" 
+"µÚ336²½±øÊ¦" 
+"µÚ337'ºìÓ¥'Ê¦" 
+"µÚ338²½±øÊ¦" 
+"µÚ339'Ï£¶û¶Ù'Ê¦" 
+"µÚ340'ÂÌÉ«Ä§¹í'Ê¦" 
+"µÚ341'ºÚÉ«ÎÚÑ»'Ê¦" 
+"µÚ344²½±øÊ¦" 
+"µÚ345'»Æ·ä'Ê¦" 
+"µÚ346'½Ü¿ËÍÃ'Ê¦" 
+"µÚ347'¸çÂ×²¼'Ê¦" 
+"µÚ348'¾ŞÈË'Ê¦" 
+"µÚ349'¸ßµØÈË'Ê¦" 
+"µÚ350'ºşÓã'Ê¦" 
+"µÚ351'Ê¥Í½'Ê¦" 
+"µÚ352'ÅÜ²½Õß'Ê¦" 
+"µÚ353'Âí¿¨±ÈÊé'Ê¦" 
+"µÚ354'ÂÌÉ«'Ê¦" 
+"µÚ355'Î÷ÑÅÍ¼'Ê¦" 
+"µÚ356'Õ½Ó¥'Ê¦" 
+"µÚ357'»ÒÉ«Ã¨Í·Ó¥'Ê¦" 
+"µÚ358'Éñ¸¸'Ê¦" 
+"µÚ359'ÌØÂåÒÁÈË'Ê¦" 
+"µÚ360'ÑªĞÈµÄ¾üµ¶'Ê¦" 
+"µÚ361'±ÈÀûºÍÇ¿Äá'Ê¦" 
+"µÚ362'Î¤Ë¹ÆÕÆæ'Ê¦" 
+"µÚ363'»ğ¼¦'Ê¦" 
+"µÚ364'Ê³ÈËÄ§'Ê¦" 
+"µÚ365'°®¹úÕß'Ê¦" 
+"µÚ366'±©·çÓê'Ê¦" 
+"µÚ367'Ó¡µÚ°²ÄÇ¾ÓÃñ'Ê¦" 
+"µÚ368'ÃÀÖŞ»¢'Ê¦" 
+"µÚ369'º£µÁ'Ê¦" 
+"µÚ370²½±øÊ¦" 
+"µÚ24'ÏÄÍşÒÄ'Ê¦" 
+"µÚ30'ÀÏÉ½ºúÌÒ'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ41'´ÔÁÖ²¿Âä'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ44²½±ø¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ45'À×Äñ'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ27'Å¦Ô¼'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ32'ºì¼ı'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ37'ÆßÒ¶Ê÷'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ31'ÃÀ¹úÄÏ²¿'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ36'µÂ¿ËÈøË¹'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ35'Ê¥´ï·Æ'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ26'ÃÀ¹úÈË'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ38'ì«·ç'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ29'À¶Óë»Ò'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ34'ºìÉ«¹«Å£'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ28'Ğ¨Ê¯'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ43'ºì³á'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ40'Ñô¹â'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ25'ÈÈ´øÉÁµç'Ê¦" 
+"µÚ77'×ÔÓÉÅ®Éñ'Ê¦" 
+"µÚ90'¶ñ¹÷ÅÆ'Ê¦" 
+"µÚ85'¿¦Ë¹ÌØ'Ê¦" 
+"µÚ93'²ÊÉ«'²½±øÊ¦" 
+"µÚ23'ÃÀÖŞ'Ê¦" 
+"µÚ76'¶ÀÁ¢ÖÓ'Ê¦" 
+"µÚ79²½±øÊ¦" 
+"µÚ81'Ò°Ã¨'Ê¦" 
+"µÚ80'À¶É«É½¼¹'Ê¦" 
+"µÚ88'À¶É«Ä§¹í'Ê¦" 
+"µÚ89'ÖĞÎ÷²¿'Ê¦" 
+"µÚ95'Ê¤Àû'Ê¦" 
+"µÚ78'ÉÁµç'Ê¦" 
+"µÚ83'¶íº¥¶íÖİ'Ê¦" 
+"µÚ91'Î÷²¿À«»Ä'Ê¦" 
+"µÚ96'Èı¿×»¬³µ'Ê¦" 
+"µÚ94'ËÄºì'Ê¦" 
+"µÚ98'Ò×Âå¿ı×åÈË'Ê¦" 
+"µÚ102'Å·Ôú¿ËÈË'Ê¦" 
+"µÚ104'´ó»ÒÀÇ'Ê¦" 
+"µÚ84'ÅüÄ¾Õß'Ê¦" 
+"µÚ92'Ë®Å£'Ê¦" 
+"µÚ99'ÌøÆå'Ê¦" 
+"µÚ100'ÊÀ¼Í'Ê¦" 
+"µÚ103'ÏÉÈËÕÆ'Ê¦" 
+"µÚ86'ºÚÓ¥'Ê¦" 
+"µÚ87'Ïğ×ÓÊ÷'Ê¦" 
+"µÚ97'Èı²æêª'Ê¦" 
+"µÚ106'½ğÊ¨'Ê¦" 
+"µÚ66'ºÚ±ª'Ê¦" 
+"µÚ75²½±øÊ¦" 
+"µÚ69'ºÃÕ½µÄ69'Ê¦" 
+"µÚ63'ÑªÓë»ğ'Ê¦" 
+"µÚ70'×·×ÙÁÔÈË'Ê¦" 
+"µÚ42'²Êºç'Ê¦" 
+"µÚ71'ºìÔ²ÖÜ'Ê¦" 
+"µÚ65'Õ½¶·¸«Í·'Ê¦" 
+"µÚ108'Ê¨ğÕ'Ê¦" 
+"µÚ39'Èı½ÇÖŞ'Ê¦" 
+"µÚ47²½±øÊ¦" 
+"µÚ46'ÉÁµçÆï±ø'Ê¦" 
+"µÚ48'ĞÒÔËÄ§¹í'Ê¦" 
+"µÚ59'Ó¥'Ê¦" 
+"µÚ110'»ªÊ¢¶Ù'Ê¦" 
+"µÚ115'½Ü·ğÉ­'Ê¦" 
+"µÚ116'ÁÔÍ·Õß'Ê¦" 
+"µÚ125'ÂŞ²®ÌØÀî'Ê¦" 
+"µÚ128'²¼Â³¿ËÁÖ'Ê¦" 
+"µÚ131'ÁÖ¿Ï'Ê¦" 
+"µÚ164'ÊÚÓë'Ê¦" 
+"µÚ165'°¢¿¨µÏÑÇÈË'Ê¦" 
+"µÚ166'¸»À¼¿ËÁÖ'Ê¦" 
+"µÚ167'Ê¨×ÓĞÇ'Ê¦" 
+"µÚ168'¸¾Å®×ÔÓÉ'Ê¦" 
+"µÚ169'ÂóµÏÑ·'Ê¦" 
+"µÚ170'ÕìÌ½È®'Ê¦" 
+"µÚ171²½±øÊ¦" 
+"µÚ172'²»ºÏÊÊ'Ê¦" 
+"µÚ173'¶¼ÊĞ'Ê¦" 
+"µÚ187²½±øÊ¦" 
+"µÚ188²½±øÊ¦" 
+"µÚ189'ºÚ×ê'Ê¦" 
+"µÚ190²½±øÊ¦" 
+"µÚ191'ÈøÄ·ĞİË¹¶Ù'Ê¦" 
+"µÚ192'ÍÁ·Ë'Ê¦" 
+"µÚ193'Õ½¶·µÄ193'Ê¦" 
+"µÚ194'»Ò³¾Ä§¹í'Ê¦" 
+"µÚ195'À¶Áú'Ê¦" 
+"µÚ196'Ö¾Ô¸Õß'Ê¦" 
+"µÚ197'´óÁ¦Ó¢ĞÛ'Ê¦" 
+"µÚ198²½±øÊ¦" 
+"µÚ199'´óÎÀ¿ËÂŞ¿ËÌØ'Ê¦" 
+"µÚ200'ºÚ»¢'Ê¦" 
+"µÚ201'ÌúÈË'Ê¦" 
+"µÚ203'áìáü'Ê¦" 
+"µÚ204'É½Ê¨×ÓĞÇ'Ê¦" 
+"µÚ205'´°Á±'Ê¦" 
+"µÚ119'°×É«µÄÆïÊ¿'Ê¦" 
+"µÚ130'ÔÓÖÖ'Ê¦" 
+"µÚ157'Ì©Ì¹Éñ'Ê¦" 
+"µÚ158'ÂÌÉ«µÄÜÙŞ£'Ê¦" 
+"µÚ159'³¤½ÇÅ£'Ê¦" 
+"µÚ160'×ÔÓÉ!'Ê¦" 
+"µÚ161'É³Ä®Ğ«×Ó'Ê¦" 
+"µÚ162'É­Ã×Åµ¶ûÈË'Ê¦" 
+"µÚ163²½±øÊ¦" 
+"µÚ174'ºÚÉ«µÄÆïÊ¿'Ê¦" 
+"µÚ175'°¢ÅÁÆæÈË'Ê¦" 
+"µÚ176²½±øÊ¦" 
+"µÚ177'ÓÖ¾ÉÓÖÔà'Ê¦" 
+"µÚ178'ºÚ¹Ñ¸¾'Ê¦" 
+"µÚ179'ÄªÎ÷¸É'Ê¦" 
+"µÚ180'ÈËÂí×ù'Ê¦" 
+"µÚ181'ÅØÏøÒ°ÀÇ'Ê¦" 
+"µÚ182²½±øÊ¦" 
+"µÚ183'¹şÀ×Ä·'Ê¦" 
+"µÚ184²½±øÊ¦" 
+"µÚ185'ĞÂ°Â¶ûÁ¼'Ê¦" 
+"µÚ186'¶·Å£¹·'Ê¦" 
+"µÚ219²½±øÊ¦" 
+"µÚ220'Ö¥¼Ó¸ç'Ê¦" 
+"µÚ221'Õ½¶·µÄ·¥Ä¾¹¤ÈË'Ê¦" 
+"µÚ222'Ì½ÏÕ¼Ò'Ê¦" 
+"µÚ223'¿¹ÃüÕß'Ê¦" 
+"µÚ224'¾É½ğÉ½'Ê¦" 
+"µÚ225'ÁÔÓ¥'Ê¦" 
+"µÚ226'°¢À­Äª'Ê¦" 
+"µÚ227²½±øÊ¦" 
+"µÚ228'º£µÁ'Ê¦" 
+"µÚ229'·Ñ³Ç'Ê¦" 
+"µÚ230²½±øÊ¦" 
+"µÚ231'Å£×Ğ'Ê¦" 
+"µÚ232'ÉäÊÖ'Ê¦" 
+"µÚ233'µ¤Äá¶û²®ÄÉ'Ê¦" 
+"µÚ234²½±øÊ¦" 
+"µÚ235'±äÂÌ'Ê¦" 
+"µÚ236'¸´³ğ'Ê¦" 
+"µÚ237²½±øÊ¦" 
+"µÚ238'1776'Ê¦" 
+"µÚ239'µ×ÌØÂÉ'Ê¦" 
+"µÚ240'ÒåÓÂ±ø'Ê¦" 
+"µÚ241'°Ù·ò³¤'Ê¦" 
+"µÚ244²½±øÊ¦" 
+"µÚ245'ÈÈĞÄÕß'Ê¦" 
+"µÚ246²½±øÊ¦" 
+"µÚ247'ÅÑÍ½'Ê¦" 
+"µÚ248'¿°ÈøË¹ÈË'Ê¦" 
+"µÚ249'ÕÓÔóÖ®ºü'Ê¦" 
+"µÚ250'ĞÔ¸ñÓÇÓô'Ê¦" 
+"µÚ251'ĞÜÃ¨'Ê¦" 
+"µÚ252'´óĞÉĞÉ'Ê¦" 
+"µÚ253'´ó¸ñÁÖ'Ê¦" 
+"µÚ254'Ò°Âí'Ê¦" 
+"µÚ255²½±øÊ¦" 
+"µÚ256'ºÉÀ¼ÈË'Ê¦" 
+"µÚ257'·ï»Ë³Ç'Ê¦" 
+"µÚ258'Ê®×Ö¾ü'Ê¦" 
+"µÚ259'²¨Ê¿¶Ù'Ê¦" 
+"µÚ260'Î¬¾©ÈË'Ê¦" 
+"µÚ261'ÓÂ¸Ò'Ê¦" 
+"µÚ262²½±øÊ¦" 
+"µÚ263'»ÆÉ«¼Ğ¿Ë'Ê¦" 
+"µÚ264²½±øÊ¦" 
+"µÚ265'Èû¶ûÌØÈË'Ê¦" 
+"µÚ266'Ë¹°Í´ïÈË'Ê¦" 
+"µÚ267'²®¿ËË¹'Ê¦" 
+"µÚ268'ÎŞ³ÜµÄ268'Ê¦" 		
 	}
 	mechanized_brigade = {
-		"1st 'Big Red One' Division" "2nd 'Indianhead' Division" "3rd 'Rock of the Marne' Division" "24th 'Victory' Division" "6th 'Sightseeing Sixth' Division" "5th 'Red Devils' Division" "33rd 'Prairie' NG Division" "4th 'Iron Horse' Division" "7th 'Bayonet!' Division" "8th 'Pathfinder' Division" "9th 'Old Reliables' Division" 
-		"30th 'Old Hickory' NG Division" "41st 'Sunset' NG Division" "44th Infantry NG Division" "45th 'Thunderbird' NG Division" "27th 'New York Division' NG" "32nd 'Red Arrow' NG Division" "37th 'Buckeye' NG Division" "31st 'Dixie' NG Division" "36th 'Texas' NG Division" "35th 'Santa Fe' NG Division" "26th 'Yankee' NG Division" 
-		"38th 'Cyclone' NG Division" "29th 'Blue and Gray' NG Division" "34th 'Red Bull' NG Division" "28th 'Keystone' NG Division" "43rd 'Winged Victory' NG Division" "40th 'Sunshine' NG Division" "25th 'Tropic Lightning' Division" "77th 'Liberty Division'" "90th 'Tough Ombres' Division" "85th 'Custer Division'" "93rd Infantry (Colored) Division" 
-		"Americal Division" "76th 'Onaway Division'" "79th Infantry Division" "81st 'Wildcat' Division" "80th 'Blue Ridge Division'" "88th 'Blue Devils' Division" "89th 'Midwest Division'" "95th 'Victory' Division" "78th 'Lightning' Division" "83rd 'Thunderbolts' Division" "91st 'Pine Tree' Division" 
-		"96th 'Deadeye' Division" "94th 'Neuf Quatres' Division" "98th 'Iroquois Division'" "102nd 'Ozarks' Division" "104th 'Timberwolves' Division" "84th 'Railsplitters' Division" "92nd 'Buffalo Soldiers' Division" "99th 'Checkerboard' Division" "100th 'Century' Division" "103rd 'Cactus' Division" "86th 'Blackhawk' Division" 
-		"87th 'Golden Acorns' Division" "97th 'Trident' Division" "106th 'Golden Lions' Division" "66th 'Black Panthers' Division" "75th Infantry Division" "69th 'Fighting 69th' Division" "63rd 'Blood  Fire' DivisionÜ" "70th 'Trailblazers' Division" "42nd 'Rainbow' Division" "71st 'Red Circle' Division" "65th 'Battle Axe' Division" 
-		"108th 'Griffons' Division" "39st 'Cougars' Division" "47rd Infantry Division" "22nd 'Rude Rams' Division" "46th 'Lightning Lancers' Division" "48th 'Lucky Devils' Division" "50th 'Black Widows' Division" "55th 'Swamp Foxes' Division" "59th 'Hawks' Division" "110th 'Washington' Division" "115th 'Jefferson' Division" 
-		"116th 'Headhunters' Division" "125th 'Robert E. Lee' Division" "128th 'Brooklyn' Division" "131th 'Lincoln' Division" "164th 'U.S. Grant' Division" "165th 'Adams' Division" "166th 'Franklin' Division" "167th 'Lions' Division" "168th 'Lady Liberty' Division" "169th 'Madison' Division" "170th 'Bloodhounds' Division" 
-		"171st Infantry Division" "172nd 'Misfits' Division" "173rd 'Metropolitan' Division" "187th Infantry Division" "188th Infantry Division" "189th 'Black Diamonds' Division" "190th Infantry Division" "191st 'Sam Houston' Division" "192nd 'Banditos' Division" "193rd 'Fighting 193rd' Division" "194th 'Dust Devils' Division" 
-		"195th 'Blue Dragons' Division" "196th 'Volunteers' Division" "197th 'Hercules' Division" "198th Infantry Division" "199th 'Davy Crockett' Division" "200th 'Black Tigers' Division" "201st 'Iron Men' Division" "203rd 'Armadillos' Division" "204th 'Mountain Lions' Division" "205th 'Widowmakers' Division" "119th 'White Knights' Division" 
-		"130th 'Dirty Bastards' Division" "157th 'Titans' Division" "158th 'Green Clovers' Division" "159th 'Longhorn' Division" "160th 'Freedom!' Division" "161st 'Desert Scorpion' Division" "162nd 'Seminole' Division" "163rd Infantry Division" "174th 'Black Knights' Division" "175th 'Apache' Division" "176th Infantry Division" 
-		"177th 'Old Muddy' Division" "178th Infantry Division" "179th 'Moccasins' Division" "180th 'Centaur' Division" "181st 'Howling Coyotes' Division" "182nd Infantry Division" "183rd 'Harlem' Division" "184th Infantry Division" "185th 'Ragin' Cajuns' Division" "186th 'Bulldog' Division" "219th Infantry Division" 
-		"220th 'Chicago' Division" "221st 'Fighting Lumberjacks' Division" "222nd 'Explorers' Division" "223rd 'Mavericks' Division" "224th 'San Francisco' Division" "225th 'Falcons' Division" "226th 'Alamo' Division" "227th Infantry Division" "228th 'Buccaneers' Division" "229th 'Philadelphia' Division" "230th Infantry Division" 
-		"231st 'Cowboys' Division" "232nd 'Archers' Division" "233rd 'Daniel Boone' Division" "234th Infantry Division" "235th 'Mean Green' Division" "236th 'Revenge!' Division" "237th Infantry Division" "238th '1776' Division" "239th 'Detroit' Division" "240th 'Minuteman' Division" "241st 'Centurion' Division" 
-		"244th Infantry Division" "245th 'Enthusiasts' Division" "246th Infantry Division" "247th 'Rebel Yell' Division" "248th 'Jayhawkers' Division" "249th Infantry Division" "250th 'Blue Streaks' Division" "251st 'Bearcats' Division" "252nd 'Gorillas' Division" "253rd 'Big Green' Division" "254th 'Mustangs' Division" 
-		"255th Infantry Division" "256th 'Flying Dutchmen' Division" "257th 'Phoenix' Division" "258th 'Crusader' Division" "259th 'Boston' Division" "260th 'Viking' Division" "261st 'Braves' Division" "262nd Infantry Division" "263rd 'Yellow Jackets' Division" "264th Infantry Division" "265th 'Celtic' Division" 
-		"266th 'Spartans' Division" "267th 'Brocos' Division" "268th 'Infamous 268th' Division" "269th 'Forrester' Division" "270th 'Gamecocks' Division" "319th Infantry Division" "320th 'Vanguard' Division" "321st 'Pioneer' Division" "322nd 'Beavers' Division" "323rd Infantry Division" "324th 'Cavaliers' Division" 
-		"325th Infantry Division" "326th 'Cardinals' Division" "327th 'Polar Bears' Division" "328th 'Gettysburg' Division" "329th 'Vicksburg' Division" "330th 'Comet' Division" "331st Infantry Division" "332nd 'Mastadons' Division" "333rd 'Lucky Lindy' Division" "334th 'Golden Gophers' Division" "335th 'Fighting Irish' Division" 
-		"336th Infantry Division" "337th 'Red Hawks' Division" "338th Infantry Division" "339th 'Hilltoppers' Division" "340th 'Green Demons' Division" "341st 'Black Ravens' Division" "344th Infantry Division" "345th 'Wasps' Division" "346th 'Jackrabbits' Division" "347th 'Columbus' Division" "348th 'Giants' Division" 
-		"349th 'Highlanders' Division" "350th 'Lakers' Division" "351st 'Saints' Division" "352nd 'Roadrunner' Division" "353rd 'Maccabees' Division" "354th 'Green Gators' Division" "355th 'Seattle' Division" "356th 'Warhawks' Division" "357th 'Grey Owls' Division" "358th 'Chrimson' Division" "359th 'Trojans' Division" 
-		"360th 'Bloody Saber' Division" "361st 'Billy  Johnny' DivisionÜ" "362nd 'Amerigo Vespucci' Division" "363rd 'Chocktaw' Division" "364th 'Ogre' Division" "365th 'Patriot' Division" "366th 'Storm' Division" "367th 'Hoosiers' Division" "368th 'Jaguars' Division" "369th 'Corsairs' Division" "370th Infantry Division" 
-	}
-	super_heavy_armor_brigade = {
-		"1st Armored 'Old Ironsides' Div." "2nd Armored 'Hell on Wheels' Div." "3rd Armored 'Spearhead' Div." "4th Armored 'Breakthrough' Div." "5th Armored 'Victory' Div." "6th Armored 'Super Sixth' Div." "7th Armored 'Lucky Seventh' Div." "8th Armored 'Thundering Herd' Div." "9th Armored 'Phantom' Div." "10th Armored 'Tiger' Div." "11th Armored 'Thunderbolt' Div." 
-		"12th Armored 'Hellcat' Div." "13th Armored 'Blackcat' Div." "14th Armored 'Liberator' Div." "15th Armored Division" "16th Armored Division" "20th Armored Division" "27th Armored 'Empire' Div." "30th Armored 'Dixie' Div." "40th Armored 'Grizzly' Div." "48th Armored 'Hurricane' Div." "49th Armored 'Lone Star' Div." 
-		"50rd Armored 'Jersey Blues' Div." "51st Armored 'Cavaliers' Div." "52nd Armored Division" "53rd Armored 'Jaguar' Div." "54th Armored 'Roadrunners' Div." "55th Armored 'Old Virginia' Div." "56th Armored 'Crusaders' Div." "57th Armored Division" "58th Armored 'Patriot' Div." "59th Armored 'Rough Riders' Div." "60th Armored Division" 
-		"61st Armored 'Stampede' Div." "62nd Armored Division" "63rd Armored 'Charge!' Div." "64th Armored 'Broncos' Div." "65th Armored 'Lynx' Div." "66th Armored 'Cheetah' Div." "67th Armored 'Forward!' Div." "68th Armored Division" "69th Armored 'Leopard' Div." "70th Armored Division" "71st Armored 'Lancers' Div." 
-		"72nd Armored Division" "73rd Armored Division" "74th Armored 'Brandy Station' Div." 
-	}
+"µÚ1'´óºìÒ»'Ê¦" "µÚ2'Ó¡µÚ°²Çõ³¤'Ê¦" "µÚ3'Âí¶÷ÅÍÊ¯'Ê¦"
+"µÚ6'µÚÁù¹Û¹â'Ê¦" 
+"µÚ5'ºì×ê'Ê¦" 
+"µÚ33'´ó²İÔ­'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ4'³£´ºÌÙ'Ê¦" 
+"µÚ7'É³Â©'Ê¦" 
+"µÚ8'Ì½ÏÕÕß'Ê¦" 
+"µÚ9'ÀÏÊµÈË'Ê¦"  
+"µÚ269'¸£À×Ë¹ÌØ'Ê¦" 
+"µÚ270'¶·¼¦'Ê¦" 
+"µÚ319²½±øÊ¦" 
+"µÚ320'Ç°ÎÀ'Ê¦" 
+"µÚ321'ÏÈ·æ'Ê¦" 
+"µÚ322'º£Àê'Ê¦" 
+"µÚ323²½±øÊ¦" 
+"µÚ324'ÆïÊ¿'Ê¦" 
+"µÚ325²½±øÊ¦" 
+"µÚ326'Êà»úÖ÷½Ì'Ê¦" 
+"µÚ327'±±¼«ĞÜ'Ê¦" 
+"µÚ328'¸Ç´Ä±¤'Ê¦" 
+"µÚ329'Î¬¿Ë±¤'Ê¦" 
+"µÚ330'»ÛĞÇ'Ê¦" 
+"µÚ331²½±øÊ¦" 
+"µÚ332'È­»÷ÊÖ'Ê¦" 
+"µÚ333'ĞÒÔËµÄÁÕ´ï'Ê¦" 
+"µÚ334'½ğµØÊó'Ê¦" "µÚ335'Õ½¶·µÄ°®¶ûÀ¼ÈË'Ê¦" 
+"µÚ336²½±øÊ¦" 
+"µÚ337'ºìÓ¥'Ê¦" 
+"µÚ338²½±øÊ¦" 
+"µÚ339'Ï£¶û¶Ù'Ê¦" 
+"µÚ340'ÂÌÉ«Ä§¹í'Ê¦" 
+"µÚ341'ºÚÉ«ÎÚÑ»'Ê¦" 
+"µÚ344²½±øÊ¦" 
+"µÚ345'»Æ·ä'Ê¦" 
+"µÚ346'½Ü¿ËÍÃ'Ê¦" 
+"µÚ347'¸çÂ×²¼'Ê¦" 
+"µÚ348'¾ŞÈË'Ê¦" 
+"µÚ349'¸ßµØÈË'Ê¦" 
+"µÚ350'ºşÓã'Ê¦" 
+"µÚ351'Ê¥Í½'Ê¦" 
+"µÚ352'ÅÜ²½Õß'Ê¦" 
+"µÚ353'Âí¿¨±ÈÊé'Ê¦" 
+"µÚ354'ÂÌÉ«'Ê¦" 
+"µÚ355'Î÷ÑÅÍ¼'Ê¦" 
+"µÚ356'Õ½Ó¥'Ê¦" 
+"µÚ357'»ÒÉ«Ã¨Í·Ó¥'Ê¦" 
+"µÚ358'Éñ¸¸'Ê¦" 
+"µÚ359'ÌØÂåÒÁÈË'Ê¦" 
+"µÚ360'ÑªĞÈµÄ¾üµ¶'Ê¦" 
+"µÚ361'±ÈÀûºÍÇ¿Äá'Ê¦" 
+"µÚ362'Î¤Ë¹ÆÕÆæ'Ê¦" 
+"µÚ363'»ğ¼¦'Ê¦" 
+"µÚ364'Ê³ÈËÄ§'Ê¦" 
+"µÚ365'°®¹úÕß'Ê¦" 
+"µÚ366'±©·çÓê'Ê¦" 
+"µÚ367'Ó¡µÚ°²¾ÓÃñ'Ê¦" 
+"µÚ368'ÃÀÖŞ»¢'Ê¦" 
+"µÚ369'º£µÁ'Ê¦" 
+"µÚ370²½±øÊ¦" 
+"µÚ24'ÏÄÍşÒÄ'Ê¦" 
+"µÚ30'ÀÏÉ½ºúÌÒ'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ41'´ÔÁÖ²¿Âä'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ44²½±ø¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ45'À×Äñ'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ27'Å¦Ô¼'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ32'ºì¼ı'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ37'ÆßÒ¶Ê÷'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ31'ÃÀ¹úÄÏ²¿'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ36'µÂ¿ËÈøË¹'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ35'Ê¥´ï·Æ'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ26'ÃÀ¹úÈË'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ38'ì«·ç'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ29'À¶Óë»Ò'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ34'ºìÉ«¹«Å£'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ28'Ğ¨Ê¯'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ43'ºì³á'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ40'Ñô¹â'¹úÃñ¾¯ÎÀ¶ÓÊ¦" 
+"µÚ25'ÈÈ´øÉÁµç'Ê¦" 
+"µÚ77'×ÔÓÉÅ®Éñ'Ê¦" 
+"µÚ90'¶ñ¹÷ÅÆ'Ê¦" 
+"µÚ85'¿¦Ë¹ÌØ'Ê¦" 
+"µÚ93'²ÊÉ«'²½±øÊ¦" 
+"µÚ23'ÃÀÖŞ'Ê¦" 
+"µÚ76'¶ÀÁ¢ÖÓ'Ê¦" 
+"µÚ79²½±øÊ¦" 
+"µÚ81'Ò°Ã¨'Ê¦" 
+"µÚ80'À¶É«É½¼¹'Ê¦" 
+"µÚ88'À¶É«Ä§¹í'Ê¦" 
+"µÚ89'ÖĞÎ÷²¿'Ê¦" 
+"µÚ95'Ê¤Àû'Ê¦" 
+"µÚ78'ÉÁµç'Ê¦" 
+"µÚ83'¶íº¥¶íÖİ'Ê¦" 
+"µÚ91'Î÷²¿À«»Ä'Ê¦" 
+"µÚ96'Èı¿×»¬³µ'Ê¦" 
+"µÚ94'ËÄºì'Ê¦" 
+"µÚ98'Ò×Âå¿ı×åÈË'Ê¦" 
+"µÚ102'Å·Ôú¿ËÈË'Ê¦" 
+"µÚ104'´ó»ÒÀÇ'Ê¦" 
+"µÚ84'ÅüÄ¾Õß'Ê¦" 
+"µÚ92'Ë®Å£'Ê¦" 
+"µÚ99'ÌøÆå'Ê¦" 
+"µÚ100'ÊÀ¼Í'Ê¦" 
+"µÚ103'ÏÉÈËÕÆ'Ê¦" 
+"µÚ86'ºÚÓ¥'Ê¦" 
+"µÚ87'Ïğ×ÓÊ÷'Ê¦" 
+"µÚ97'Èı²æêª'Ê¦" 
+"µÚ106'½ğÊ¨'Ê¦" 
+"µÚ66'ºÚ±ª'Ê¦" 
+"µÚ75²½±øÊ¦" 
+"µÚ69'ºÃÕ½µÄ69'Ê¦" 
+"µÚ63'ÑªÓë»ğ'Ê¦" 
+"µÚ70'×·×ÙÁÔÈË'Ê¦" 
+"µÚ42'²Êºç'Ê¦" 
+"µÚ71'ºìÔ²ÖÜ'Ê¦" 
+"µÚ65'Õ½¶·¸«Í·'Ê¦" 
+"µÚ108'Ê¨ğÕ'Ê¦" 
+"µÚ39'Èı½ÇÖŞ'Ê¦" 
+"µÚ47²½±øÊ¦" 
+"µÚ46'ÉÁµçÆï±ø'Ê¦" 
+"µÚ48'ĞÒÔËÄ§¹í'Ê¦" 
+"µÚ59'Ó¥'Ê¦" 
+"µÚ110'»ªÊ¢¶Ù'Ê¦" 
+"µÚ115'½Ü·ğÉ­'Ê¦" 
+"µÚ116'ÁÔÍ·Õß'Ê¦" 
+"µÚ125'ÂŞ²®ÌØÀî'Ê¦" 
+"µÚ128'²¼Â³¿ËÁÖ'Ê¦" 
+"µÚ131'ÁÖ¿Ï'Ê¦" 
+"µÚ164'ÊÚÓë'Ê¦" 
+"µÚ165'°¢¿¨µÏÑÇÈË'Ê¦" 
+"µÚ166'¸»À¼¿ËÁÖ'Ê¦" 
+"µÚ167'Ê¨×ÓĞÇ'Ê¦" 
+"µÚ168'¸¾Å®×ÔÓÉ'Ê¦" 
+"µÚ169'ÂóµÏÑ·'Ê¦" 
+"µÚ170'ÕìÌ½È®'Ê¦" 
+"µÚ171²½±øÊ¦" 
+"µÚ172'²»ºÏÊÊ'Ê¦" 
+"µÚ173'¶¼ÊĞ'Ê¦" 
+"µÚ187²½±øÊ¦" 
+"µÚ188²½±øÊ¦" 
+"µÚ189'ºÚ×ê'Ê¦" 
+"µÚ190²½±øÊ¦" 
+"µÚ191'ÈøÄ·ĞİË¹¶Ù'Ê¦" 
+"µÚ192'ÍÁ·Ë'Ê¦" 
+"µÚ193'Õ½¶·µÄ193'Ê¦" 
+"µÚ194'»Ò³¾Ä§¹í'Ê¦" 
+"µÚ195'À¶Áú'Ê¦" 
+"µÚ196'Ö¾Ô¸Õß'Ê¦" 
+"µÚ197'´óÁ¦Ó¢ĞÛ'Ê¦" 
+"µÚ198²½±øÊ¦" 
+"µÚ199'´óÎÀ¿ËÂŞ¿ËÌØ'Ê¦" 
+"µÚ200'ºÚ»¢'Ê¦" 
+"µÚ201'ÌúÈË'Ê¦" 
+"µÚ203'áìáü'Ê¦" 
+"µÚ204'É½Ê¨×ÓĞÇ'Ê¦" 
+"µÚ205'´°Á±'Ê¦" 
+"µÚ119'°×É«µÄÆïÊ¿'Ê¦" 
+"µÚ130'ÔÓÖÖ'Ê¦" 
+"µÚ157'Ì©Ì¹Éñ'Ê¦" 
+"µÚ158'ÂÌÉ«µÄÜÙŞ£'Ê¦" 
+"µÚ159'³¤½ÇÅ£'Ê¦" 
+"µÚ160'×ÔÓÉ!'Ê¦" 
+"µÚ161'É³Ä®Ğ«×Ó'Ê¦" 
+"µÚ162'É­Ã×Åµ¶ûÈË'Ê¦" 
+"µÚ163²½±øÊ¦" 
+"µÚ174'ºÚÉ«µÄÆïÊ¿'Ê¦" 
+"µÚ175'°¢ÅÁÆæÈË'Ê¦" 
+"µÚ176²½±øÊ¦" 
+"µÚ177'ÓÖ¾ÉÓÖÔà'Ê¦" 
+"µÚ178'ºÚ¹Ñ¸¾'Ê¦" 
+"µÚ179'ÄªÎ÷¸É'Ê¦" 
+"µÚ180'ÈËÂí×ù'Ê¦" 
+"µÚ181'ÅØÏøÒ°ÀÇ'Ê¦" 
+"µÚ182²½±øÊ¦" 
+"µÚ183'¹şÀ×Ä·'Ê¦" 
+"µÚ184²½±øÊ¦" 
+"µÚ185'ĞÂ°Â¶ûÁ¼'Ê¦" 
+"µÚ186'¶·Å£¹·'Ê¦" 
+"µÚ219²½±øÊ¦" 
+"µÚ220'Ö¥¼Ó¸ç'Ê¦" 
+"µÚ221'Õ½¶·µÄ·¥Ä¾¹¤ÈË'Ê¦" 
+"µÚ222'Ì½ÏÕ¼Ò'Ê¦" 
+"µÚ223'¿¹ÃüÕß'Ê¦" 
+"µÚ224'¾É½ğÉ½'Ê¦" 
+"µÚ225'ÁÔÓ¥'Ê¦" 
+"µÚ226'°¢À­Äª'Ê¦" 
+"µÚ227²½±øÊ¦" 
+"µÚ228'º£µÁ'Ê¦" 
+"µÚ229'·Ñ³Ç'Ê¦" 
+"µÚ230²½±øÊ¦" 
+"µÚ231'Å£×Ğ'Ê¦" 
+"µÚ232'ÉäÊÖ'Ê¦" 
+"µÚ233'µ¤Äá¶û²®ÄÉ'Ê¦" 
+"µÚ234²½±øÊ¦" 
+"µÚ235'±äÂÌ'Ê¦" 
+"µÚ236'¸´³ğ'Ê¦" 
+"µÚ237²½±øÊ¦" 
+"µÚ238'1776'Ê¦" 
+"µÚ239'µ×ÌØÂÉ'Ê¦" 
+"µÚ240'ÒåÓÂ±ø'Ê¦" 
+"µÚ241'°Ù·ò³¤'Ê¦" 
+"µÚ244²½±øÊ¦" 
+"µÚ245'ÈÈĞÄÕß'Ê¦" 
+"µÚ246²½±øÊ¦" 
+"µÚ247'ÅÑÍ½'Ê¦" 
+"µÚ248'¿°ÈøË¹ÈË'Ê¦" 
+"µÚ249'ÕÓÔóÖ®ºü'Ê¦" 
+"µÚ250'ĞÔ¸ñÓÇÓô'Ê¦" 
+"µÚ251'ĞÜÃ¨'Ê¦" 
+"µÚ252'´óĞÉĞÉ'Ê¦" 
+"µÚ253'´ó¸ñÁÖ'Ê¦" 
+"µÚ254'Ò°Âí'Ê¦" 
+"µÚ255²½±øÊ¦" 
+"µÚ256'ºÉÀ¼ÈË'Ê¦" 
+"µÚ257'·ï»Ë³Ç'Ê¦" 
+"µÚ258'Ê®×Ö¾ü'Ê¦" 
+"µÚ259'²¨Ê¿¶Ù'Ê¦" 
+"µÚ260'Î¬¾©ÈË'Ê¦" 
+"µÚ261'ÓÂ¸Ò'Ê¦" 
+"µÚ262²½±øÊ¦" 
+"µÚ263'»ÆÉ«¼Ğ¿Ë'Ê¦" 
+"µÚ264²½±øÊ¦" 
+"µÚ265'Èû¶ûÌØÈË'Ê¦" 
+"µÚ266'Ë¹°Í´ïÈË'Ê¦" 
+"µÚ267'²®¿ËË¹'Ê¦" 
+"µÚ268'ÎŞ³ÜµÄ268'Ê¦"
+			}
 	light_armor_brigade = {
-		"1st Armored 'Old Ironsides' Div." "2nd Armored 'Hell on Wheels' Div." "3rd Armored 'Spearhead' Div." "4th Armored 'Breakthrough' Div." "5th Armored 'Victory' Div." "6th Armored 'Super Sixth' Div." "7th Armored 'Lucky Seventh' Div." "8th Armored 'Thundering Herd' Div." "9th Armored 'Phantom' Div." "10th Armored 'Tiger' Div." "11th Armored 'Thunderbolt' Div." 
-		"12th Armored 'Hellcat' Div." "13th Armored 'Blackcat' Div." "14th Armored 'Liberator' Div." "15th Armored Division" "16th Armored Division" "20th Armored Division" "27th Armored 'Empire' Div." "30th Armored 'Dixie' Div." "40th Armored 'Grizzly' Div." "48th Armored 'Hurricane' Div." "49th Armored 'Lone Star' Div." 
-		"50rd Armored 'Jersey Blues' Div." "51st Armored 'Cavaliers' Div." "52nd Armored Division" "53rd Armored 'Jaguar' Div." "54th Armored 'Roadrunners' Div." "55th Armored 'Old Virginia' Div." "56th Armored 'Crusaders' Div." "57th Armored Division" "58th Armored 'Patriot' Div." "59th Armored 'Rough Riders' Div." "60th Armored Division" 
-		"61st Armored 'Stampede' Div." "62nd Armored Division" "63rd Armored 'Charge!' Div." "64th Armored 'Broncos' Div." "65th Armored 'Lynx' Div." "66th Armored 'Cheetah' Div." "67th Armored 'Forward!' Div." "68th Armored Division" "69th Armored 'Leopard' Div." "70th Armored Division" "71st Armored 'Lancers' Div." 
-		"72nd Armored Division" "73rd Armored Division" "74th Armored 'Brandy Station' Div." 
+"µÚ1'ÓÂ¸Ò'×°¼×Ê¦" 
+"µÚ2'³µÂÖÉÏµÄµØÓü'×°¼×Ê¦" 
+"µÚ3'Ã¬¼â'×°¼×Ê¦" 
+"µÚ4'Í»ÆÆ'×°¼×Ê¦" 
+"µÚ5'Ê¤Àû'×°¼×Ê¦" 
+"µÚ6'³¬¼¶6'×°¼×Ê¦" 
+"µÚ7'ĞÒÔË7'×°¼×Ê¦" 
+"µÚ8'À×ÃùµÄÊŞÈº'×°¼×Ê¦" 
+"µÚ9'»ÃÓ°'×°¼×Ê¦" 
+"µÚ10'ÀÏ»¢'×°¼×Ê¦" 
+"µÚ11'Åùö¨'×°¼×Ê¦" 
+"µÚ12'º·¸¾'×°¼×Ê¦" 
+"µÚ13'ºÚÃ¨'×°¼×Ê¦" 
+"µÚ14'½â·ÅÕß'×°¼×Ê¦" 
+"µÚ15×°¼×Ê¦" 
+"µÚ16×°¼×Ê¦" 
+"µÚ20×°¼×Ê¦" 
+"µÚ27'µÛ¹ú'×°¼×Ê¦" 
+"µÚ30'ÃÀ¹úÄÏ²¿'×°¼×Ê¦" 
+"µÚ40'»ÒĞÜ'×°¼×Ê¦" 
+"µÚ48'ì«·ç'×°¼×Ê¦" 
+"µÚ49'¹ÂĞÇ'×°¼×Ê¦" 
+"µÚ50'²¼Â³Ë¼¼Ğ¿Ë'×°¼×Ê¦" 
+"µÚ51'ÆïÊ¿'×°¼×Ê¦" 
+"µÚ52'ÃÀÖŞ»¢'×°¼×Ê¦" 
+"µÚ53×°¼×Ê¦" 
+"µÚ54'³¤ÅÜÕß'×°¼×Ê¦" 
+"µÚ55'¾ÉÎ¬¼ªÄáÑÇ'×°¼×Ê¦" 
+"µÚ56'Ê®×Ö¾ü'×°¼×Ê¦" 
+"µÚ57×°¼×Ê¦" 
+"µÚ58'°®¹úÕß'×°¼×Ê¦" 
+"µÚ59'Ã«ÔêÆïÊ¿'×°¼×Ê¦" 
+"µÚ60×°¼×Ê¦" 
+"µÚ61'¾ªÏÅ±¼ÌÓ'×°¼×Ê¦" 
+"µÚ62×°¼×Ê¦" 
+"µÚ63'³å·æ'×°¼×Ê¦" 
+"µÚ64'Ò°Âí'×°¼×Ê¦" 
+"µÚ65'Ğ¡Ã¨'×°¼×Ê¦" 
+"µÚ66'Ó¡¶È±ª'×°¼×Ê¦" 
+"µÚ67'Ç°½ø!'×°¼×Ê¦" 
+"µÚ68×°¼×Ê¦" 
+"µÚ69'±ª'×°¼×Ê¦" 
+"µÚ70×°¼×Ê¦" 
+"µÚ71'Ç¹Æï±ø'×°¼×Ê¦" 
+"µÚ72×°¼×Ê¦" 
+"µÚ73×°¼×Ê¦" 
+"µÚ74'°×À¼µØ³µÕ¾'×°¼×Ê¦" 
 	}
 	armor_brigade = {
-		"1st Armored 'Old Ironsides' Div." "2nd Armored 'Hell on Wheels' Div." "3rd Armored 'Spearhead' Div." "4th Armored 'Breakthrough' Div." "5th Armored 'Victory' Div." "6th Armored 'Super Sixth' Div." "7th Armored 'Lucky Seventh' Div." "8th Armored 'Thundering Herd' Div." "9th Armored 'Phantom' Div." "10th Armored 'Tiger' Div." "11th Armored 'Thunderbolt' Div." 
-		"12th Armored 'Hellcat' Div." "13th Armored 'Blackcat' Div." "14th Armored 'Liberator' Div." "15th Armored Division" "16th Armored Division" "20th Armored Division" "27th Armored 'Empire' Div." "30th Armored 'Dixie' Div." "40th Armored 'Grizzly' Div." "48th Armored 'Hurricane' Div." "49th Armored 'Lone Star' Div." 
-		"50rd Armored 'Jersey Blues' Div." "51st Armored 'Cavaliers' Div." "52nd Armored Division" "53rd Armored 'Jaguar' Div." "54th Armored 'Roadrunners' Div." "55th Armored 'Old Virginia' Div." "56th Armored 'Crusaders' Div." "57th Armored Division" "58th Armored 'Patriot' Div." "59th Armored 'Rough Riders' Div." "60th Armored Division" 
-		"61st Armored 'Stampede' Div." "62nd Armored Division" "63rd Armored 'Charge!' Div." "64th Armored 'Broncos' Div." "65th Armored 'Lynx' Div." "66th Armored 'Cheetah' Div." "67th Armored 'Forward!' Div." "68th Armored Division" "69th Armored 'Leopard' Div." "70th Armored Division" "71st Armored 'Lancers' Div." 
-		"72nd Armored Division" "73rd Armored Division" "74th Armored 'Brandy Station' Div." 
-	}
-	heavy_armor_brigade = {
-		"1st Armored 'Old Ironsides' Div." "2nd Armored 'Hell on Wheels' Div." "3rd Armored 'Spearhead' Div." "4th Armored 'Breakthrough' Div." "5th Armored 'Victory' Div." "6th Armored 'Super Sixth' Div." "7th Armored 'Lucky Seventh' Div." "8th Armored 'Thundering Herd' Div." "9th Armored 'Phantom' Div." "10th Armored 'Tiger' Div." "11th Armored 'Thunderbolt' Div." 
-		"12th Armored 'Hellcat' Div." "13th Armored 'Blackcat' Div." "14th Armored 'Liberator' Div." "15th Armored Division" "16th Armored Division" "20th Armored Division" "27th Armored 'Empire' Div." "30th Armored 'Dixie' Div." "40th Armored 'Grizzly' Div." "48th Armored 'Hurricane' Div." "49th Armored 'Lone Star' Div." 
-		"50rd Armored 'Jersey Blues' Div." "51st Armored 'Cavaliers' Div." "52nd Armored Division" "53rd Armored 'Jaguar' Div." "54th Armored 'Roadrunners' Div." "55th Armored 'Old Virginia' Div." "56th Armored 'Crusaders' Div." "57th Armored Division" "58th Armored 'Patriot' Div." "59th Armored 'Rough Riders' Div." "60th Armored Division" 
-		"61st Armored 'Stampede' Div." "62nd Armored Division" "63rd Armored 'Charge!' Div." "64th Armored 'Broncos' Div." "65th Armored 'Lynx' Div." "66th Armored 'Cheetah' Div." "67th Armored 'Forward!' Div." "68th Armored Division" "69th Armored 'Leopard' Div." "70th Armored Division" "71st Armored 'Lancers' Div." 
-		"72nd Armored Division" "73rd Armored Division" "74th Armored 'Brandy Station' Div." 
+"µÚ1'ÓÂ¸Ò'×°¼×Ê¦" 
+"µÚ2'³µÂÖÉÏµÄµØÓü'×°¼×Ê¦" 
+"µÚ3'Ã¬¼â'×°¼×Ê¦" 
+"µÚ4'Í»ÆÆ'×°¼×Ê¦" 
+"µÚ5'Ê¤Àû'×°¼×Ê¦" 
+"µÚ6'³¬¼¶6'×°¼×Ê¦" 
+"µÚ7'ĞÒÔË7'×°¼×Ê¦" 
+"µÚ8'À×ÃùµÄÊŞÈº'×°¼×Ê¦" 
+"µÚ9'»ÃÓ°'×°¼×Ê¦" 
+"µÚ10'ÀÏ»¢'×°¼×Ê¦" 
+"µÚ11'Åùö¨'×°¼×Ê¦" 
+"µÚ12'º·¸¾'×°¼×Ê¦" 
+"µÚ13'ºÚÃ¨'×°¼×Ê¦" 
+"µÚ14'½â·ÅÕß'×°¼×Ê¦" 
+"µÚ15×°¼×Ê¦" 
+"µÚ16×°¼×Ê¦" 
+"µÚ20×°¼×Ê¦" 
+"µÚ27'µÛ¹ú'×°¼×Ê¦" 
+"µÚ30'ÃÀ¹úÄÏ²¿'×°¼×Ê¦" 
+"µÚ40'»ÒĞÜ'×°¼×Ê¦" 
+"µÚ48'ì«·ç'×°¼×Ê¦" 
+"µÚ49'¹ÂĞÇ'×°¼×Ê¦" 
+"µÚ50'²¼Â³Ë¼¼Ğ¿Ë'×°¼×Ê¦" 
+"µÚ51'ÆïÊ¿'×°¼×Ê¦" 
+"µÚ52'ÃÀÖŞ»¢'×°¼×Ê¦" 
+"µÚ53×°¼×Ê¦" 
+"µÚ54'³¤ÅÜÕß'×°¼×Ê¦" 
+"µÚ55'¾ÉÎ¬¼ªÄáÑÇ'×°¼×Ê¦" 
+"µÚ56'Ê®×Ö¾ü'×°¼×Ê¦" 
+"µÚ57×°¼×Ê¦" 
+"µÚ58'°®¹úÕß'×°¼×Ê¦" 
+"µÚ59'Ã«ÔêÆïÊ¿'×°¼×Ê¦" 
+"µÚ60×°¼×Ê¦" 
+"µÚ61'¾ªÏÅ±¼ÌÓ'×°¼×Ê¦" 
+"µÚ62×°¼×Ê¦" 
+"µÚ63'³å·æ'×°¼×Ê¦" 
+"µÚ64'Ò°Âí'×°¼×Ê¦" 
+"µÚ65'Ğ¡Ã¨'×°¼×Ê¦" 
+"µÚ66'Ó¡¶È±ª'×°¼×Ê¦" 
+"µÚ67'Ç°½ø!'×°¼×Ê¦" 
+"µÚ68×°¼×Ê¦" 
+"µÚ69'±ª'×°¼×Ê¦" 
+"µÚ70×°¼×Ê¦" 
+"µÚ71'Ç¹Æï±ø'×°¼×Ê¦" 
+"µÚ72×°¼×Ê¦" 
+"µÚ73×°¼×Ê¦" 
+"µÚ74'°×À¼µØ³µÕ¾'×°¼×Ê¦" 
 	}
 	paratrooper_brigade = {
-		"82nd Airborne 'All American' Division" "101st US Air. 'Screaming Eagles Div." "11th US Airborne 'The Angels' Division" "13th US Airborne 'Black Cat' Division" "17th AB 'Thunder from Heaven' Div." "18th US Airborne Division" "21st US Airborne Division" "135th US Airborne Division" "9th US Airborne Division" "202nd US Airborne 'Flat-Hatters' Div." "271st US Airborne Division" 
-		"272nd US Airborne Division" "273th US Airborne Division" "274th US Airborne Division" "275th US Airborne Division" "276th US Airborne Division" "277th US Airborne Division" "278th US Airborne Division" 
-	}
+		"µÚ82'È«ÃÀ'¿Õ½µÊ¦" "µÚ101'Ğ¥Ó¥'¿Õ½µÊ¦" "µÚ11'ÌìÊ¹'¿Õ½µÊ¦" "µÚ13'ºÚÃ¨'¿Õ½µÊ¦" "µÚ17'ÌìÌÃÖ®À×'¿Õ½µÊ¦" "µÚ18¿Õ½µÊ¦" "µÚ21¿Õ½µÊ¦" "µÚ135¿Õ½µÊ¦" "µÚ9¿Õ½µÊ¦" "µÚ202'Ñ¼ÉàÃ±'¿Õ½µÊ¦" "µÚ271¿Õ½µÊ¦" 
+		"µÚ272¿Õ½µÊ¦" "µÚ273¿Õ½µÊ¦" "µÚ274¿Õ½µÊ¦" "µÚ275¿Õ½µÊ¦" "µÚ276¿Õ½µÊ¦" "µÚ277¿Õ½µÊ¦" "µÚ278¿Õ½µÊ¦" 
+			}
 	marine_brigade = {
-		"1st US Marine 'The Old Breed' Div." "2nd US Marine 'Follow Me' Division" "3rd US Marine Division" "4th US Marine Division" "5th US Marine Division" "6th US Marine Division" "7th US Marine Division" "8th US Marine Division" "9th US Marine Division" "10th US Marine Division" "11th US Marine Division" 
-		"12th US Marine Division" "13th US Marine Division" "14th US Marine Division" "15th US Marine Division" "16th US Marine Division" "17th US Marine Division" "18th US Marine Division" "19th US Marine Division" "20th US Marine Division" "21st US Marine Division" "22nd US Marine Division" 
-		"23rd US Marine Division" "24th US Marine Division" "25th US Marine Division" "26th US Marine Division" "27th US Marine Division" "28th US Marine Division" "29th US Marine Division" "30th US Marine Division" "31st US Marine Division" "32nd US Marine Division" "33rd US Marine Division" 
-		"34th US Marine Division" "35th US Marine Division" "36th US Marine Division" "37th US Marine Division" "38th US Marine Division" "39th US Marine Division" "40th US Marine Division" "41st US Marine Division" "42nd US Marine Division" "43rd US Marine Division" "44th US Marine Division" 
-		"45th US Marine Division" "46th US Marine Division" "47th US Marine Division" "48th US Marine Division" "49th US Marine Division" 
+"µÚ1'ÀÏ×åÀà'º£¾üÂ½Õ½Ê¦" 
+"µÚ2'ËæĞĞ'º£¾üÂ½Õ½Ê¦" 
+"µÚ3º£¾üÂ½Õ½Ê¦" 
+"µÚ4º£¾üÂ½Õ½Ê¦" 
+"µÚ5º£¾üÂ½Õ½Ê¦" 
+"µÚ6º£¾üÂ½Õ½Ê¦" 
+"µÚ7º£¾üÂ½Õ½Ê¦" 
+"µÚ8º£¾üÂ½Õ½Ê¦" 
+"µÚ9º£¾üÂ½Õ½Ê¦" 
+"µÚ10º£¾üÂ½Õ½Ê¦" 
+"µÚ11º£¾üÂ½Õ½Ê¦" 
+"µÚ12º£¾üÂ½Õ½Ê¦" 
+"µÚ13º£¾üÂ½Õ½Ê¦" 
+"µÚ14º£¾üÂ½Õ½Ê¦" 
+"µÚ15º£¾üÂ½Õ½Ê¦" 
+"µÚ16º£¾üÂ½Õ½Ê¦" 
+"µÚ17º£¾üÂ½Õ½Ê¦" 
+"µÚ18º£¾üÂ½Õ½Ê¦" 
+"µÚ19º£¾üÂ½Õ½Ê¦" 
+"µÚ20º£¾üÂ½Õ½Ê¦" 
+"µÚ21º£¾üÂ½Õ½Ê¦" 
+"µÚ22º£¾üÂ½Õ½Ê¦" 
+"µÚ23º£¾üÂ½Õ½Ê¦" 
+"µÚ24º£¾üÂ½Õ½Ê¦" 
+"µÚ25º£¾üÂ½Õ½Ê¦" 
+"µÚ26º£¾üÂ½Õ½Ê¦" 
+"µÚ27º£¾üÂ½Õ½Ê¦" 
+"µÚ28º£¾üÂ½Õ½Ê¦" 
+"µÚ29º£¾üÂ½Õ½Ê¦" 
+"µÚ30º£¾üÂ½Õ½Ê¦" 
+"µÚ31º£¾üÂ½Õ½Ê¦" 
+"µÚ32º£¾üÂ½Õ½Ê¦" 
+"µÚ33º£¾üÂ½Õ½Ê¦" 
+"µÚ34º£¾üÂ½Õ½Ê¦" 
+"µÚ35º£¾üÂ½Õ½Ê¦" 
+"µÚ36º£¾üÂ½Õ½Ê¦" 
+"µÚ37º£¾üÂ½Õ½Ê¦" 
+"µÚ38º£¾üÂ½Õ½Ê¦" 
+"µÚ39º£¾üÂ½Õ½Ê¦" 
+"µÚ40º£¾üÂ½Õ½Ê¦" 
+"µÚ41º£¾üÂ½Õ½Ê¦" 
+"µÚ42º£¾üÂ½Õ½Ê¦" 
+"µÚ43º£¾üÂ½Õ½Ê¦" 
+"µÚ44º£¾üÂ½Õ½Ê¦" 
+"µÚ45º£¾üÂ½Õ½Ê¦" 
+"µÚ46º£¾üÂ½Õ½Ê¦" 
+"µÚ47º£¾üÂ½Õ½Ê¦" 
+"µÚ48º£¾üÂ½Õ½Ê¦" 
+"µÚ49º£¾üÂ½Õ½Ê¦" 
 	}
 	bergsjaeger_brigade = {
-		"10th Mountain Division" "14th Mountain Division" "22nd Mountain Division" "50th Mountain Division" "55th Mountain Division" "12th 'Rocky Mountains' Division" "15th 'Appalachia' Division" "16th 'Smoky Mountains' Division" "19th 'Cold Mountain' Division" "20th 'Sierra Nevada' Division" "48th 'Stone Mountain' Division" 
-		"49th 'Granite' Division" "51st Mountain Division" "52nd 'Catskills' Division" "53rd Mountain Division" "54th 'Wasatch Mountains' Division" "56th 'Yellowstone' Division" "57th Mountain Division" "58th 'Yosemite' Division" "59th Mountain Division" "204th 'Mountain Lions' Division" "279th Mountain Division" 
-		"280th Mountain Division" "281st Mountain Division" "282nd Mountain Division" "283rd Mountain Division" "284th Mountain Division" "285th Mountain Division" "286th Mountain Division" "287th Mountain Division" "288th Mountain Division" 
+"µÚ10'¸ßÉ½'É½µØÊ¦" 
+"µÚ14É½µØÊ¦" 
+"µÚ22É½µØÊ¦" 
+"µÚ50É½µØÊ¦" 
+"µÚ55É½µØÊ¦" 
+"µÚ12'É½Ê¯'Ê¦" 
+"µÚ15'°¢ÅÁÀ­ÆõÉ½Çø'Ê¦" 
+"µÚ16'»ğÉ½'Ê¦" 
+"µÚ19'¸ĞÃ°É½'Ê¦" 
+"µÚ20'ÄÚ»ª´ïÉ½Âö'Ê¦" 
+"µÚ48'Ê¯É½'Ê¦" 
+"µÚ49'»¨¸ÔÑÒ'Ê¦" 
+"µÚ51É½µØÊ¦" 
+"µÚ52'ÁÔÃ¨Õß'Ê¦" 
+"µÚ53É½µØÊ¦" 
+"µÚ54'ÍßÈøÌØÉ½'Ê¦" 
+"µÚ56'»ÆÊ¯'Ê¦" 
+"µÚ57É½µØÊ¦" 
+"µÚ58'ÃÀ¾°'Ê¦" 
+"µÚ59É½µØÊ¦" 
+"µÚ204'É½Ê¨'Ê¦" 
+"µÚ279É½µØÊ¦" 
+"µÚ280É½µØÊ¦" 
+"µÚ281É½µØÊ¦" 
+"µÚ282É½µØÊ¦" 
+"µÚ283É½µØÊ¦" 
+"µÚ284É½µØÊ¦" 
+"µÚ285É½µØÊ¦" 
+"µÚ286É½µØÊ¦" 
+"µÚ287É½µØÊ¦" 
+"µÚ288É½µØÊ¦" 
 	}
-	garrison_brigade = {
-		"77th 'Liberty Division'" "90th 'Tough Ombres' Division" "85th 'Custer Division'" "93rd Infantry (Colored) Division" "23rd 'Americal Division'" "76th 'Onaway Division'" "79th Infantry Division" "81st 'Wildcat' Division" "80th 'Blue Ridge Division'" "88th 'Blue Devils' Division" "89th 'Midwest Division'" 
-		"95th 'Victory' Division" "78th 'Lightning' Division" "83rd 'Thunderbolts' Division" "91st 'Pine Tree' Division" "96th 'Deadeye' Division" "94th 'Neuf Quatres' Division" "98th 'Iroquois Division'" "102nd 'Ozarks' Division" "104th 'Timberwolves' Division" "84th 'Railsplitters' Division" "92nd 'Buffalo Soldiers' Division" 
-		"99th 'Checkerboard' Division" "100th 'Century' Division" "103rd 'Cactus' Division" "86th 'Blackhawk' Division" "87th 'Golden Acorns' Division" "97th 'Trident' Division" "106th 'Golden Lions' Division" "66th 'Black Panthers' Division" "75th Infantry Division" "69th 'Fighting 69th' Division" "63rd 'Blood  Fire' DivisionÜ" 
-		"70th 'Trailblazers' Division" "42nd 'Rainbow' Division" "71st 'Red Circle' Division" "65th 'Battle Axe' Division" "108th 'Griffons' Division" "39th 'Cougars' Division" "47rd Infantry Division" "46th 'Lightning Lancers' Division" "48th 'Lucky Devils' Division" "59th 'Hawks' Division" "110th 'Washington' Division" 
-		"115th 'Jefferson' Division" "116th 'Headhunters' Division" "125th 'Robert E. Lee' Division" "128th 'Brooklyn' Division" "131th 'Lincoln' Division" "164th 'U.S. Grant' Division" "165th 'Adams' Division" "166th 'Franklin' Division" "167th 'Lions' Division" "168th 'Lady Liberty' Division" "169th 'Madison' Division" 
-		"170th 'Bloodhounds' Division" "171st Infantry Division" "172nd 'Misfits' Division" "173rd 'Metropolitan' Division" "187th Infantry Division" "188th Infantry Division" "189th 'Black Diamonds' Division" "190th Infantry Division" "191st 'Sam Houston' Division" "192nd 'Banditos' Division" "193rd 'Fighting 193rd' Division" 
-		"194th 'Dust Devils' Division" "195th 'Blue Dragons' Division" "196th 'Volunteers' Division" "197th 'Hercules' Division" "198th Infantry Division" "199th 'Davy Crockett' Division" "200th 'Black Tigers' Division" "201st 'Iron Men' Division" "203rd 'Armadillos' Division" "204th 'Mountain Lions' Division" "205th 'Widowmakers' Division" 
-		"119th 'White Knights' Division" "130th 'Dirty Bastards' Division" "157th 'Titans' Division" "158th 'Green Clovers' Division" "159th 'Longhorn' Division" "160th 'Freedom!' Division" "161st 'Desert Scorpion' Division" "162nd 'Seminole' Division" "163rd Infantry Division" "174th 'Black Knights' Division" "175th 'Apache' Division" 
-		"176th Infantry Division" "177th 'Old Muddy' Division" "178th 'Black Widows' Division" "179th 'Moccasins' Division" "180th 'Centaur' Division" "181st 'Howling Coyotes' Division" "182nd Infantry Division" "183rd 'Harlem' Division" "184th Infantry Division" "185th 'Ragin' Cajuns' Division" "186th 'Bulldog' Division" 
-		"219th Infantry Division" "220th 'Chicago' Division" "221st 'Fighting Lumberjacks' Division" "222nd 'Explorers' Division" "223rd 'Mavericks' Division" "224th 'San Francisco' Division" "225th 'Falcons' Division" "226th 'Alamo' Division" "227th Infantry Division" "228th 'Buccaneers' Division" "229th 'Philadelphia' Division" 
-		"230th Infantry Division" "231st 'Cowboys' Division" "232nd 'Archers' Division" "233rd 'Daniel Boone' Division" "234th Infantry Division" "235th 'Mean Green' Division" "236th 'Revenge!' Division" "237th Infantry Division" "238th '1776' Division" "239th 'Detroit' Division" "240th 'Minuteman' Division" 
-		"241st 'Centurion' Division" "244th Infantry Division" "245th 'Enthusiasts' Division" "246th Infantry Division" "247th 'Rebel Yell' Division" "248th 'Jayhawkers' Division" "249th 'Swamp Fox' Division" "250th 'Blue Streaks' Division" "251st 'Bearcats' Division" "252nd 'Gorillas' Division" "253rd 'Big Green' Division" 
-		"254th 'Mustangs' Division" "255th Infantry Division" "256th 'Flying Dutchmen' Division" "257th 'Phoenix' Division" "258th 'Crusader' Division" "259th 'Boston' Division" "260th 'Viking' Division" "261st 'Braves' Division" "262nd Infantry Division" "263rd 'Yellow Jackets' Division" "264th Infantry Division" 
-		"265th 'Celtic' Division" "266th 'Spartans' Division" "267th 'Brocos' Division" "268th 'Infamous 268th' Division" "269th 'Forrester' Division" "270th 'Gamecocks' Division" "319th Infantry Division" "320th 'Vanguard' Division" "321st 'Pioneer' Division" "322nd 'Beavers' Division" "323rd Infantry Division" 
-		"324th 'Cavaliers' Division" "325th Infantry Division" "326th 'Cardinals' Division" "327th 'Polar Bears' Division" "328th 'Gettysburg' Division" "329th 'Vicksburg' Division" "330th 'Comet' Division" "331st Infantry Division" "332nd 'Mastadons' Division" "333rd 'Lucky Lindy' Division" "334th 'Golden Gophers' Division" 
-		"335th 'Fighting Irish' Division" "336th Infantry Division" "337th 'Red Hawks' Division" "338th Infantry Division" "339th 'Hilltoppers' Division" "340th 'Green Demons' Division" "341st 'Black Ravens' Division" "344th Infantry Division" "345th 'Wasps' Division" "346th 'Jackrabbits' Division" "347th 'Columbus' Division" 
-		"348th 'Giants' Division" "349th 'Highlanders' Division" "350th 'Lakers' Division" "351st 'Saints' Division" "352nd 'Roadrunner' Division" "353rd 'Maccabees' Division" "354th 'Green Gators' Division" "355th 'Seattle' Division" "356th 'Warhawks' Division" "357th 'Grey Owls' Division" "358th 'Chrimson' Division" 
-		"359th 'Trojans' Division" "360th 'Bloody Saber' Division" "361st 'Billy  Johnny' DivisionÜ" "362nd 'Amerigo Vespucci' Division" "363rd 'Chocktaw' Division" "364th 'Ogre' Division" "365th 'Patriot' Division" "366th 'Storm' Division" "367th 'Hoosiers' Division" "368th 'Jaguars' Division" "369th 'Corsairs' Division" 
-		"370th Infantry Division" 
+	garrison_brigade = { 
+"µÚ269'¸£À×Ë¹ÌØ'Ê¦" 
+"µÚ270'¶·¼¦'Ê¦" 
+"µÚ319²½±øÊ¦" 
+"µÚ320'Ç°ÎÀ'Ê¦" 
+"µÚ321'ÏÈ·æ'Ê¦" 
+"µÚ322'º£Àê'Ê¦" 
+"µÚ323²½±øÊ¦" 
+"µÚ324'ÆïÊ¿'Ê¦" 
+"µÚ325²½±øÊ¦" 
+"µÚ326'Êà»úÖ÷½Ì'Ê¦" 
+"µÚ327'±±¼«ĞÜ'Ê¦" 
+"µÚ328'¸Ç´Ä±¤'Ê¦" 
+"µÚ329'Î¬¿Ë±¤'Ê¦" 
+"µÚ330'»ÛĞÇ'Ê¦" 
+"µÚ331²½±øÊ¦" 
+"µÚ332'È­»÷ÊÖ'Ê¦" 
+"µÚ333'ĞÒÔËµÄÁÕ´ï'Ê¦" 
+"µÚ334'½ğµØÊó'Ê¦" "µÚ335'Õ½¶·µÄ°®¶ûÀ¼ÈË'Ê¦" 
+"µÚ336²½±øÊ¦" 
+"µÚ337'ºìÓ¥'Ê¦" 
+"µÚ338²½±øÊ¦" 
+"µÚ339'Ï£¶û¶Ù'Ê¦" 
+"µÚ340'ÂÌÉ«Ä§¹í'Ê¦" 
+"µÚ341'ºÚÉ«ÎÚÑ»'Ê¦" 
+"µÚ344²½±øÊ¦" 
+"µÚ345'»Æ·ä'Ê¦" 
+"µÚ346'½Ü¿ËÍÃ'Ê¦" 
+"µÚ347'¸çÂ×²¼'Ê¦" 
+"µÚ348'¾ŞÈË'Ê¦" 
+"µÚ349'¸ßµØÈË'Ê¦" 
+"µÚ350'ºşÓã'Ê¦" 
+"µÚ351'Ê¥Í½'Ê¦" 
+"µÚ352'ÅÜ²½Õß'Ê¦" 
+"µÚ353'Âí¿¨±ÈÊé'Ê¦" 
+"µÚ354'ÂÌÉ«'Ê¦" 
+"µÚ355'Î÷ÑÅÍ¼'Ê¦" 
+"µÚ356'Õ½Ó¥'Ê¦" 
+"µÚ357'»ÒÉ«Ã¨Í·Ó¥'Ê¦" 
+"µÚ358'Éñ¸¸'Ê¦" 
+"µÚ359'ÌØÂåÒÁÈË'Ê¦" 
+"µÚ360'ÑªĞÈµÄ¾üµ¶'Ê¦" 
+"µÚ361'±ÈÀûºÍÇ¿Äá'Ê¦" 
+"µÚ362'Î¤Ë¹ÆÕÆæ'Ê¦" 
+"µÚ363'»ğ¼¦'Ê¦" 
+"µÚ364'Ê³ÈËÄ§'Ê¦" 
+"µÚ365'°®¹úÕß'Ê¦" 
+"µÚ366'±©·çÓê'Ê¦" 
+"µÚ367'Ó¡µÚ°²¾ÓÃñ'Ê¦" 
+"µÚ368'ÃÀÖŞ»¢'Ê¦" 
+"µÚ369'º£µÁ'Ê¦" 
+"µÚ370²½±øÊ¦" 
+"µÚ77'×ÔÓÉÅ®Éñ'Ê¦" 
+"µÚ90'¶ñ¹÷ÅÆ'Ê¦" 
+"µÚ85'¿¦Ë¹ÌØ'Ê¦" 
+"µÚ93'²ÊÉ«'²½±øÊ¦" 
+"µÚ23'ÃÀÖŞ'Ê¦" 
+"µÚ79²½±øÊ¦" 
+"µÚ81'Ò°Ã¨'Ê¦" 
+"µÚ80'À¶É«É½¼¹'Ê¦" 
+"µÚ88'À¶É«Ä§¹í'Ê¦" 
+"µÚ89'ÖĞÎ÷²¿'Ê¦" 
+"µÚ95'Ê¤Àû'Ê¦" 
+"µÚ78'ÉÁµç'Ê¦" 
+"µÚ83'¶íº¥¶íÖİ'Ê¦" 
+"µÚ91'Î÷²¿À«»Ä'Ê¦" 
+"µÚ96'Èı¿×»¬³µ'Ê¦" 
+"µÚ94'ËÄºì'Ê¦" 
+"µÚ98'Ò×Âå¿ı×åÈË'Ê¦" 
+"µÚ102'Å·Ôú¿ËÈË'Ê¦" 
+"µÚ104'´ó»ÒÀÇ'Ê¦" 
+"µÚ84'ÅüÄ¾Õß'Ê¦" 
+"µÚ92'Ë®Å£'Ê¦" 
+"µÚ99'ÌøÆå'Ê¦" 
+"µÚ100'ÊÀ¼Í'Ê¦" 
+"µÚ103'ÏÉÈËÕÆ'Ê¦" 
+"µÚ86'ºÚÓ¥'Ê¦" 
+"µÚ87'Ïğ×ÓÊ÷'Ê¦" 
+"µÚ97'Èı²æêª'Ê¦" 
+"µÚ106'½ğÊ¨'Ê¦" 
+"µÚ108'Ê¨ğÕ'Ê¦" 
+"µÚ110'»ªÊ¢¶Ù'Ê¦" 
+"µÚ115'½Ü·ğÉ­'Ê¦" 
+"µÚ116'ÁÔÍ·Õß'Ê¦" 
+"µÚ125'ÂŞ²®ÌØÀî'Ê¦" 
+"µÚ128'²¼Â³¿ËÁÖ'Ê¦" 
+"µÚ131'ÁÖ¿Ï'Ê¦" 
+"µÚ164'ÊÚÓë'Ê¦" 
+"µÚ165'°¢¿¨µÏÑÇÈË'Ê¦" 
+"µÚ166'¸»À¼¿ËÁÖ'Ê¦" 
+"µÚ167'Ê¨×ÓĞÇ'Ê¦" 
+"µÚ168'¸¾Å®×ÔÓÉ'Ê¦" 
+"µÚ169'ÂóµÏÑ·'Ê¦" 
+"µÚ170'ÕìÌ½È®'Ê¦" 
+"µÚ171²½±øÊ¦" 
+"µÚ172'²»ºÏÊÊ'Ê¦" 
+"µÚ173'¶¼ÊĞ'Ê¦" 
+"µÚ187²½±øÊ¦" 
+"µÚ188²½±øÊ¦" 
+"µÚ189'ºÚ×ê'Ê¦" 
+"µÚ190²½±øÊ¦" 
+"µÚ191'ÈøÄ·ĞİË¹¶Ù'Ê¦" 
+"µÚ192'ÍÁ·Ë'Ê¦" 
+"µÚ193'Õ½¶·µÄ193'Ê¦" 
+"µÚ194'»Ò³¾Ä§¹í'Ê¦" 
+"µÚ195'À¶Áú'Ê¦" 
+"µÚ196'Ö¾Ô¸Õß'Ê¦" 
+"µÚ197'´óÁ¦Ó¢ĞÛ'Ê¦" 
+"µÚ198²½±øÊ¦" 
+"µÚ199'´óÎÀ¿ËÂŞ¿ËÌØ'Ê¦" 
+"µÚ200'ºÚ»¢'Ê¦" 
+"µÚ201'ÌúÈË'Ê¦" 
+"µÚ203'áìáü'Ê¦" 
+"µÚ204'É½Ê¨×ÓĞÇ'Ê¦" 
+"µÚ205'´°Á±'Ê¦" 
+"µÚ119'°×É«µÄÆïÊ¿'Ê¦" 
+"µÚ130'ÔÓÖÖ'Ê¦" 
+"µÚ157'Ì©Ì¹Éñ'Ê¦" 
+"µÚ158'ÂÌÉ«µÄÜÙŞ£'Ê¦" 
+"µÚ159'³¤½ÇÅ£'Ê¦" 
+"µÚ160'×ÔÓÉ!'Ê¦" 
+"µÚ161'É³Ä®Ğ«×Ó'Ê¦" 
+"µÚ162'É­Ã×Åµ¶ûÈË'Ê¦" 
+"µÚ163²½±øÊ¦" 
+"µÚ174'ºÚÉ«µÄÆïÊ¿'Ê¦" 
+"µÚ175'°¢ÅÁÆæÈË'Ê¦" 
+"µÚ176²½±øÊ¦" 
+"µÚ177'ÓÖ¾ÉÓÖÔà'Ê¦" 
+"µÚ178'ºÚ¹Ñ¸¾'Ê¦" 
+"µÚ179'ÄªÎ÷¸É'Ê¦" 
+"µÚ180'ÈËÂí×ù'Ê¦" 
+"µÚ181'ÅØÏøÒ°ÀÇ'Ê¦" 
+"µÚ182²½±øÊ¦" 
+"µÚ183'¹şÀ×Ä·'Ê¦" 
+"µÚ184²½±øÊ¦" 
+"µÚ185'ĞÂ°Â¶ûÁ¼'Ê¦" 
+"µÚ186'¶·Å£¹·'Ê¦" 
+"µÚ219²½±øÊ¦" 
+"µÚ220'Ö¥¼Ó¸ç'Ê¦" 
+"µÚ221'Õ½¶·µÄ·¥Ä¾¹¤ÈË'Ê¦" 
+"µÚ222'Ì½ÏÕ¼Ò'Ê¦" 
+"µÚ223'¿¹ÃüÕß'Ê¦" 
+"µÚ224'¾É½ğÉ½'Ê¦" 
+"µÚ225'ÁÔÓ¥'Ê¦" 
+"µÚ226'°¢À­Äª'Ê¦" 
+"µÚ227²½±øÊ¦" 
+"µÚ228'º£µÁ'Ê¦" 
+"µÚ229'·Ñ³Ç'Ê¦" 
+"µÚ230²½±øÊ¦" 
+"µÚ231'Å£×Ğ'Ê¦" 
+"µÚ232'ÉäÊÖ'Ê¦" 
+"µÚ233'µ¤Äá¶û²®ÄÉ'Ê¦" 
+"µÚ234²½±øÊ¦" 
+"µÚ235'±äÂÌ'Ê¦" 
+"µÚ236'¸´³ğ'Ê¦" 
+"µÚ237²½±øÊ¦" 
+"µÚ238'1776'Ê¦" 
+"µÚ239'µ×ÌØÂÉ'Ê¦" 
+"µÚ240'ÒåÓÂ±ø'Ê¦" 
+"µÚ241'°Ù·ò³¤'Ê¦" 
+"µÚ244²½±øÊ¦" 
+"µÚ245'ÈÈĞÄÕß'Ê¦" 
+"µÚ246²½±øÊ¦" 
+"µÚ247'ÅÑÍ½'Ê¦" 
+"µÚ248'¿°ÈøË¹ÈË'Ê¦" 
+"µÚ249'ÕÓÔóÖ®ºü'Ê¦" 
+"µÚ250'ĞÔ¸ñÓÇÓô'Ê¦" 
+"µÚ251'ĞÜÃ¨'Ê¦" 
+"µÚ252'´óĞÉĞÉ'Ê¦" 
+"µÚ253'´ó¸ñÁÖ'Ê¦" 
+"µÚ254'Ò°Âí'Ê¦" 
+"µÚ255²½±øÊ¦" 
+"µÚ256'ºÉÀ¼ÈË'Ê¦" 
+"µÚ257'·ï»Ë³Ç'Ê¦" 
+"µÚ258'Ê®×Ö¾ü'Ê¦" 
+"µÚ259'²¨Ê¿¶Ù'Ê¦" 
+"µÚ260'Î¬¾©ÈË'Ê¦" 
+"µÚ261'ÓÂ¸Ò'Ê¦" 
+"µÚ262²½±øÊ¦" 
+"µÚ263'»ÆÉ«¼Ğ¿Ë'Ê¦" 
+"µÚ264²½±øÊ¦" 
+"µÚ265'Èû¶ûÌØÈË'Ê¦" 
+"µÚ266'Ë¹°Í´ïÈË'Ê¦" 
+"µÚ267'²®¿ËË¹'Ê¦" 
+"µÚ268'ÎŞ³ÜµÄ268'Ê¦"
 	}
 	hq_brigade = {
-		"1st Army" "2nd Army" "3rd Army" "4th Army" "5th Army" "6th Army" "7th Army" "8th Army" "9th Army" "10th Army" "15th Army" 
-		"1st Airborne Army" "6th Army Group" "12th Army Group" "15th Army Group" 
+		"µÚ1¼¯ÍÅ¾ü" "µÚ2¼¯ÍÅ¾ü" "µÚ3¼¯ÍÅ¾ü" "µÚ4¼¯ÍÅ¾ü" "µÚ5¼¯ÍÅ¾ü" "µÚ6¼¯ÍÅ¾ü" "µÚ7¼¯ÍÅ¾ü" "µÚ8¼¯ÍÅ¾ü" "µÚ9¼¯ÍÅ¾ü" "µÚ10¼¯ÍÅ¾ü" "µÚ15¼¯ÍÅ¾ü" 
+		"µÚ1¿Õ½µ¼¯ÍÅ¾ü" "µÚ6¼¯ÍÅ¾üÈº" "µÚ12¼¯ÍÅ¾üÈº" "µÚ15¼¯ÍÅ¾üÈº" 
 	}
 	militia_brigade = {
-		"238th '1776' Division" "365th 'Patriot' Division" "183rd 'Harlem' Division" "160th 'Freedom!' Division" "240th 'Minuteman' Division" "128th 'Brooklyn' Division" "226th 'Alamo' Division" "239th 'Detroit' Division" "131th 'Lincoln' Division" "185th 'Ragin' Cajuns' Division" "168th 'Lady Liberty' Division" 
-		"248th 'Jayhawkers' Division" "229th 'Philadelphia' Division" "199th 'Davy Crockett' Division" "201st 'Iron Men' Division" "161st 'Desert Scorpion' Division" "162nd 'Seminole' Division" "175th 'Apache' Division" "177th 'Old Muddy' Division" "181st 'Howling Coyotes' Division" "220th 'Chicago' Division" "221st 'Fighting Lumberjacks' Div." 
-		"224th 'San Francisco' Division" "1st US Militia" "2nd US Militia" "3rd US Militia" "4th New York Militia" "5th California Marine" "6th Pennsylvania Militia" "7th Illinois Militia" "8th Ohio Militia" "9th Texas Militia" "10th Michigan Militia" 
-		"11th Massachusetts Militia" "12th Missouri Militia" "13th Indiana Militia" "14th Georgia Militia" "15th Wisconsin Militia" "16th Virginia Militia" "17th Tennessee Militia" "18th Alabama Militia" "19th Minnesota Militia" "20th Kentucky Militia" "21st Florida Militia" 
-		"22nd Louisiana Militia" "23rd Iowa Militia" "24th Washington Militia" "25th Maryland Militia" "26th Oklahoma Militia" "27th Mississippi Militia" "28th South Carolina Militia" "29th Connecticut Militia" "30th West Virginia Militia" "31st Arkansas Militia" "32nd Kansas Militia" 
-		"33rd North Carolina Militia" "34th New Jersey Militia" "35th Oregon Militia" "36th Nebraska Militia" "37th Colorado Militia" "38th US Militia (DC)" "39th Rhode Island Militia" "40th Arizona Militia" "41st Maine Militia" "42nd Utah Militia" "43rd New Mexico Militia" 
-		"44th South Dakota Militia" "45th North Dakota Militia" "46th Montana Militia" "47th Idaho Militia" "48th New Hampshire Militia" "59th Vermont Militia" "50th Wyoming Militia" "51st Delaware Militia" "52nd Nevada Militia" 
+		"µÚ238'1776'Ê¦" "µÚ365'°®¹úÕß'Ê¦" "µÚ183'¹şÀ×Ä·'Ê¦" "µÚ160'×ÔÓÉ!'Ê¦" "µÚ240'ÒåÓÂ±ø'Ê¦" "µÚ128'²¼Â³¿ËÁÖ'Ê¦" "µÚ226'°¢À­Äª'Ê¦" "µÚ239'µ×ÌØÂÉ'Ê¦" "µÚ131'ÁÖ¿Ï'Ê¦" "µÚ165'°¢¿¨µÏÑÇÈË'Ê¦" "µÚ168'¸¾Å®×ÔÓÉ'Ê¦" 
+		"µÚ248'¿°ÈøË¹ÈË'Ê¦" "µÚ229'·Ñ³Ç'Ê¦" "µÚ199'´óÎÀ¿ËÂŞ¿ËÌØ'Ê¦" "µÚ201'ÌúÈË'Ê¦" "µÚ161'É³Ä®Ğ«×Ó'Ê¦" "µÚ162'É­Ã×Åµ¶ûÈË'Ê¦" "µÚ175'°¢ÅÁÆæÈË'Ê¦" "µÚ177'ÓÖ¾ÉÓÖÔà'Ê¦" "µÚ181'ÅØÏøÒ°ÀÇ'Ê¦" "µÚ220'Ö¥¼Ó¸ç'Ê¦" "µÚ221'Õ½¶·µÄ·¥Ä¾¹¤ÈË'Ê¦" 
+		"µÚ224'¾É½ğÉ½'Ê¦" "µÚ1ÃÀ¹úÃñ±øÊ¦" 
+"µÚ2ÃÀ¹úÃñ±øÊ¦" 
+"µÚ3ÃÀ¹úÃñ±øÊ¦" 
+"µÚ4Å¦Ô¼Ãñ±øÊ¦" 
+"µÚ5Ãñ±øÊ¦" 
+"µÚ6±öÏ¦·²ÄáÑÇÖİÃñ±øÊ¦" 
+"µÚ7ÒÁÀûÅµÖİÃñ±øÊ¦" 
+"µÚ8¶íº¥¶íÖİÃñ±øÊ¦" 
+"µÚ9µÂ¿ËÈøË¹Ãñ±øÊ¦" 
+"µÚ10ÃÜÎ÷¸ùÖİÃñ±øÊ¦" 
+"µÚ11ÂéÈøÖîÈûÖİÃñ±øÊ¦" 
+"µÚ12ÃÜËÕÀïÃñ±øÊ¦" 
+"µÚ13Ó¡µØ°²ÄÇÖİÃñ±øÊ¦" 
+"µÚ14ÇÇÖÎÑÇÖİÃñ±øÊ¦" 
+"µÚ15ÍşË¹¿µĞÁÖİÃñ±øÊ¦" 
+"µÚ16Î¬¼ªÄáÑÇÃñ±øÊ¦" 
+"µÚ17ÌïÄÉÎ÷ÖİÃñ±øÊ¦" 
+"µÚ18ÑÇÀ­°ÍÂíÖİÃñ±øÊ¦" 
+"µÚ19Ã÷ÄáËÕ´ïÖİÃñ±øÊ¦" 
+"µÚ20¿ÏËş»ùÖİÃñ±øÊ¦" 
+"µÚ21·ğÂŞÀï´ïÃñ±øÊ¦" 
+"µÚ22Â·Ò×Ë¹°²ÄÇÃñ±øÊ¦" 
+"µÚ23°®ºÉ»ªÖİÃñ±øÊ¦" 
+"µÚ24»ªÊ¢¶ÙÃñ±øÊ¦" 
+"µÚ25ÂíÀïÀ¼Ãñ±øÊ¦" 
+"µÚ26¶í¿ËÀ­ºÉÂíÖİÃñ±øÊ¦" 
+"µÚ27ÃÜÎ÷Î÷±ÈÃñ±øÊ¦" 
+"µÚ28ÄÏ¿¨ÂŞÀ³ÄÇÃñ±øÊ¦" 
+"µÚ29¿ÏÄËµÏ¿ËÖİÃñ±øÊ¦" 
+"µÚ30Î÷Î¬¼ªÄáÑÇÃñ±øÊ¦" 
+"µÚ31°¢¿ÏÉ«ÖİÃñ±øÊ¦" 
+"µÚ32¿°ÈøË¹ÖİÃñ±øÊ¦" 
+"µÚ33±±¿¨ÂŞÀ³ÄÇÖİÃñ±øÊ¦" 
+"µÚ34ĞÂÔóÎ÷ÖİÃñ±øÊ¦" 
+"µÚ35°ÂÀÕ¸ÔÖİÃñ±øÊ¦" 
+"µÚ36ÄÚ²¼À­Ë¹¼ÓÃñ±øÊ¦" 
+"µÚ37¿ÆÂŞÀ­¶àÃñ±øÊ¦" 
+"µÚ38Ö±Á÷Ãñ±øÊ¦" 
+"µÚ39ÂŞµÂµºÃñ±øÊ¦" 
+"µÚ40ÑÇÀúÉ£ÄÇÖİÃñ±øÊ¦" 
+"µÚ41ÃåÒòÖİÃñ±øÊ¦" 
+"µÚ42ÓÌËûÃñ±øÊ¦" 
+"µÚ43ĞÂÄ«Î÷¸çÃñ±øÊ¦" 
+"µÚ44ÄÏ´ï¿ÆËşÃñ±øÊ¦" 
+"µÚ45±±´ï¿ÆËşÃñ±øÊ¦" 
+"µÚ46ÃÉ´óÄÉÃñ±øÊ¦" 
+"µÚ47°®´ïºÉÃñ±øÊ¦" 
+"µÚ48ĞÂº±²¼Ê²¶ûÃñ±øÊ¦" 
+"µÚ59·ğÃÉÌØÖİÃñ±øÊ¦" 
+"µÚ50»³¶íÃ÷ÖİÃñ±øÊ¦" 
+"µÚ51µÂÀ­ÍßÖİÃñ±øÊ¦" 
+"µÚ52ÄÚ»ª´ïÖİÃñ±øÊ¦" 
 	}
 	multi_role = {
-		"6th USAAF Fighter Wing" "7th USAAF Fighter Wing" "9th USAAF Fighter Wing" "10th USAAF Fighter Wing" "11th USAAF Fighter Wing" "62d USAAF Fighter Wing" "63d USAAF Fighter Wing" "64th USAAF Fighter Wing" "65th USAAF Fighter Wing" "66th USAAF Fighter Wing" "67th USAAF Fighter Wing" 
-		"70th USAAF Fighter Wing" "71st USAAF Fighter Wing" "84th USAAF Fighter Wing" "85th USAAF Fighter Wing" "86th USAAF Fighter Wing" "87th USAAF Fighter Wing" "100th USAAF Fighter Wing" "303nd USAAF Fighter Wing" "306th USAAF Fighter Wing" "312th USAAF Fighter Wing" "48th USAAF Fighter Wing" 
-		"301st USAAF Fighter Wing" "72nd USAAF Fighter Wing" "35th USAAF Fighter Wing" "355th USAAF Fighter Wing" "366th USAAF Fighter Wing" "388th USAAF Fighter Wing" "419th USAAF Fighter Wing" "442nd USAAF Fighter Wing" "482nd USAAF Fighter Wing" "926th USAAF Fighter Wing" "944th USAAF Fighter Wing" 
-		"948th USAAF Fighter Wing" "954th USAAF Fighter Wing" "964th USAAF Fighter Wing" "974th USAAF Fighter Wing" "984th USAAF Fighter Wing" "994th USAAF Fighter Wing" "456th USAAF Fighter Wing" "789th USAAF Fighter Wing" "278th USAAF Fighter Wing" "443rd USAAF Fighter Wing" "444th USAAF Fighter Wing" 
-		"445th USAAF Fighter Wing" "446th USAAF Fighter Wing" "447th USAAF Fighter Wing" "448th USAAF Fighter Wing" "449th USAAF Fighter Wing" "450th USAAF Fighter Wing" "451st USAAF Fighter Wing" "452d USAAF Fighter Wing" "453rd USAAF Fighter Wing" "454th USAAF Fighter Wing" "455th USAAF Fighter Wing" 
-		"457th USAAF Fighter Wing" "458th USAAF Fighter Wing" "459th USAAF Fighter Wing" "460th USAAF Fighter Wing" 
+		"µÚ6Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ7Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ9Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ10Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ11Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ62dÂ½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ63dÂ½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ64Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ65Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ66Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ67Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" 
+		"µÚ70Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ71Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ84Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ85Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ86Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ87Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ100Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ303Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ306Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ312Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ48Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" 
+		"µÚ301Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ72Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ35Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ355Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ366Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ388Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ419Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ442Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ482Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ926Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ944Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" 
+		"µÚ948Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ954Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ964Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ974Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ984Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ994Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ456Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ789Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ278Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ443Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ444Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" 
+		"µÚ445Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ446Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ447Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ448Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ449Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ450Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ451Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ452dÂ½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ453Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ454Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ455Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" 
+		"µÚ457Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ458Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ459Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ460Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" 
 	}
 	interceptor = {
-		"6th USAAF Fighter Wing" "7th USAAF Fighter Wing" "9th USAAF Fighter Wing" "10th USAAF Fighter Wing" "11th USAAF Fighter Wing" "62d USAAF Fighter Wing" "63d USAAF Fighter Wing" "64th USAAF Fighter Wing" "65th USAAF Fighter Wing" "66th USAAF Fighter Wing" "67th USAAF Fighter Wing" 
-		"70th USAAF Fighter Wing" "71st USAAF Fighter Wing" "84th USAAF Fighter Wing" "85th USAAF Fighter Wing" "86th USAAF Fighter Wing" "87th USAAF Fighter Wing" "100th USAAF Fighter Wing" "303nd USAAF Fighter Wing" "306th USAAF Fighter Wing" "312th USAAF Fighter Wing" "48th USAAF Fighter Wing" 
-		"301st USAAF Fighter Wing" "72nd USAAF Fighter Wing" "35th USAAF Fighter Wing" "355th USAAF Fighter Wing" "366th USAAF Fighter Wing" "388th USAAF Fighter Wing" "419th USAAF Fighter Wing" "442nd USAAF Fighter Wing" "482nd USAAF Fighter Wing" "926th USAAF Fighter Wing" "944th USAAF Fighter Wing" 
-		"948th USAAF Fighter Wing" "954th USAAF Fighter Wing" "964th USAAF Fighter Wing" "974th USAAF Fighter Wing" "984th USAAF Fighter Wing" "994th USAAF Fighter Wing" "456th USAAF Fighter Wing" "789th USAAF Fighter Wing" "278th USAAF Fighter Wing" "443rd USAAF Fighter Wing" "444th USAAF Fighter Wing" 
-		"445th USAAF Fighter Wing" "446th USAAF Fighter Wing" "447th USAAF Fighter Wing" "448th USAAF Fighter Wing" "449th USAAF Fighter Wing" "450th USAAF Fighter Wing" "451st USAAF Fighter Wing" "452d USAAF Fighter Wing" "453rd USAAF Fighter Wing" "454th USAAF Fighter Wing" "455th USAAF Fighter Wing" 
-		"457th USAAF Fighter Wing" "458th USAAF Fighter Wing" "459th USAAF Fighter Wing" "460th USAAF Fighter Wing" 
-	}
-	jet_int = {
-		"6th USAAF Fighter Wing" "7th USAAF Fighter Wing" "9th USAAF Fighter Wing" "10th USAAF Fighter Wing" "11th USAAF Fighter Wing" "62d USAAF Fighter Wing" "63d USAAF Fighter Wing" "64th USAAF Fighter Wing" "65th USAAF Fighter Wing" "66th USAAF Fighter Wing" "67th USAAF Fighter Wing" 
-		"70th USAAF Fighter Wing" "71st USAAF Fighter Wing" "84th USAAF Fighter Wing" "85th USAAF Fighter Wing" "86th USAAF Fighter Wing" "87th USAAF Fighter Wing" "100th USAAF Fighter Wing" "303nd USAAF Fighter Wing" "306th USAAF Fighter Wing" "312th USAAF Fighter Wing" "48th USAAF Fighter Wing" 
-		"301st USAAF Fighter Wing" "72nd USAAF Fighter Wing" "35th USAAF Fighter Wing" "355th USAAF Fighter Wing" "366th USAAF Fighter Wing" "388th USAAF Fighter Wing" "419th USAAF Fighter Wing" "442nd USAAF Fighter Wing" "482nd USAAF Fighter Wing" "926th USAAF Fighter Wing" "944th USAAF Fighter Wing" 
-		"948th USAAF Fighter Wing" "954th USAAF Fighter Wing" "964th USAAF Fighter Wing" "974th USAAF Fighter Wing" "984th USAAF Fighter Wing" "994th USAAF Fighter Wing" "456th USAAF Fighter Wing" "789th USAAF Fighter Wing" "278th USAAF Fighter Wing" "443rd USAAF Fighter Wing" "444th USAAF Fighter Wing" 
-		"445th USAAF Fighter Wing" "446th USAAF Fighter Wing" "447th USAAF Fighter Wing" "448th USAAF Fighter Wing" "449th USAAF Fighter Wing" "450th USAAF Fighter Wing" "451st USAAF Fighter Wing" "452d USAAF Fighter Wing" "453rd USAAF Fighter Wing" "454th USAAF Fighter Wing" "455th USAAF Fighter Wing" 
-		"457th USAAF Fighter Wing" "458th USAAF Fighter Wing" "459th USAAF Fighter Wing" "460th USAAF Fighter Wing" 
-	}
-	jet_mr = {
-		"6th USAAF Fighter Wing" "7th USAAF Fighter Wing" "9th USAAF Fighter Wing" "10th USAAF Fighter Wing" "11th USAAF Fighter Wing" "62d USAAF Fighter Wing" "63d USAAF Fighter Wing" "64th USAAF Fighter Wing" "65th USAAF Fighter Wing" "66th USAAF Fighter Wing" "67th USAAF Fighter Wing" 
-		"70th USAAF Fighter Wing" "71st USAAF Fighter Wing" "84th USAAF Fighter Wing" "85th USAAF Fighter Wing" "86th USAAF Fighter Wing" "87th USAAF Fighter Wing" "100th USAAF Fighter Wing" "303nd USAAF Fighter Wing" "306th USAAF Fighter Wing" "312th USAAF Fighter Wing" "48th USAAF Fighter Wing" 
-		"301st USAAF Fighter Wing" "72nd USAAF Fighter Wing" "35th USAAF Fighter Wing" "355th USAAF Fighter Wing" "366th USAAF Fighter Wing" "388th USAAF Fighter Wing" "419th USAAF Fighter Wing" "442nd USAAF Fighter Wing" "482nd USAAF Fighter Wing" "926th USAAF Fighter Wing" "944th USAAF Fighter Wing" 
-		"948th USAAF Fighter Wing" "954th USAAF Fighter Wing" "964th USAAF Fighter Wing" "974th USAAF Fighter Wing" "984th USAAF Fighter Wing" "994th USAAF Fighter Wing" "456th USAAF Fighter Wing" "789th USAAF Fighter Wing" "278th USAAF Fighter Wing" "443rd USAAF Fighter Wing" "444th USAAF Fighter Wing" 
-		"445th USAAF Fighter Wing" "446th USAAF Fighter Wing" "447th USAAF Fighter Wing" "448th USAAF Fighter Wing" "449th USAAF Fighter Wing" "450th USAAF Fighter Wing" "451st USAAF Fighter Wing" "452d USAAF Fighter Wing" "453rd USAAF Fighter Wing" "454th USAAF Fighter Wing" "455th USAAF Fighter Wing" 
-		"457th USAAF Fighter Wing" "458th USAAF Fighter Wing" "459th USAAF Fighter Wing" "460th USAAF Fighter Wing" 
+		"µÚ6Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ7Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ9Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ10Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ11Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ62dÂ½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ63dÂ½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ64Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ65Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ66Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ67Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" 
+		"µÚ70Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ71Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ84Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ85Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ86Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ87Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ100Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ303Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ306Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ312Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ48Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" 
+		"µÚ301Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ72Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ35Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ355Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ366Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ388Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ419Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ442Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ482Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ926Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ944Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" 
+		"µÚ948Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ954Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ964Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ974Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ984Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ994Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ456Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ789Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ278Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ443Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ444Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" 
+		"µÚ445Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ446Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ447Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ448Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ449Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ450Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ451Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ452dÂ½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ453Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ454Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ455Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" 
+		"µÚ457Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ458Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ459Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" "µÚ460Â½¾üº½¿Õ±øÕ½¶·»úÁª¶Ó" 
 	}
 	strategic_bomber = {
-		"1st USAAF Strategic Bomb. Wing" "2nd USAAF Strategic Bomb. Wing" "13th USAAF Strategic Bomb. Wing" "4th USAAF Strategic Bomb. Wing" "5th USAAF Strategic Bomb. Wing" "12th USAAF Strategic Bomb. Wing" "47th USAAF Strategic Bomb. Wing" "57th USAAF Strategic Bomb. Wing" "14th USAAF Strategic Bomb. Wing" "20th USAAF Strategic Bomb. Wing" "98th USAAF Strategic Bomb. Wing" 
-		"21st USAAF Strategic Bomb. Wing" "40th USAAF Strategic Bomb. Wing" "41st USAAF Strategic Bomb. Wing" "42d USAAF Strategic Bomb. Wing" "45th USAAF Strategic Bomb. Wing" "99th USAAF Strategic Bomb. Wing" "49th USAAF Strategic Bomb. Wing" "55th USAAF Strategic Bomb. Wing" "58th USAAF Strategic Bomb. Wing" "92d USAAF Strategic Bomb. Wing" "93rd USAAF Strategic Bomb. Wing" 
-		"94th USAAF Strategic Bomb. Wing" "95th USAAF Strategic Bomb. Wing" "97th USAAF Strategic Bomb. Wing" "96th USAAF Strategic Bomb. Wing" "73rd USAAF Strategic Bomb. Wing" "304th USAAF Strategic Bomb. Wing" "305th USAAF Strategic Bomb. Wing" "307th USAAF Strategic Bomb. Wing" "308th USAAF Strategic Bomb. Wing" "309th USAAF Strategic Bomb. Wing" "310th USAAF Strategic Bomb. Wing" 
-		"313th USAAF Strategic Bomb. Wing" "314th USAAF Strategic Bomb. Wing" "315th USAAF Strategic Bomb. Wing" "316th USAAF Strategic Bomb. Wing" "15th USAAF Strategic Bomb. Wing" "16th USAAF Strategic Bomb. Wing" "17th USAAF Strategic Bomb. Wing" "317th USAAF Strategic Bomb. Wing" "318th USAAF Strategic Bomb. Wing" "319th USAAF Strategic Bomb. Wing" "320th USAAF Strategic Bomb. Wing" 
-		"321st USAAF Strategic Bomb. Wing" "323rd USAAF Strategic Bomb. Wing" "324th USAAF Strategic Bomb. Wing" "325th USAAF Strategic Bomb. Wing" "326th USAAF Strategic Bomb. Wing" "327th USAAF Strategic Bomb. Wing" "328th USAAF Strategic Bomb. Wing" "329th USAAF Strategic Bomb. Wing" "330th USAAF Strategic Bomb. Wing" "331st USAAF Strategic Bomb. Wing" "332nd USAAF Strategic Bomb. Wing" 
-		"333rd USAAF Strategic Bomb. Wing" "334th USAAF Strategic Bomb. Wing" "335th USAAF Strategic Bomb. Wing" "336th USAAF Strategic Bomb. Wing" "337th USAAF Strategic Bomb. Wing" "338th USAAF Strategic Bomb. Wing" "339th USAAF Strategic Bomb. Wing" "340th USAAF Strategic Bomb. Wing" "417th USAAF Strategic Bomb. Wing" "418th USAAF Strategic Bomb. Wing" "419th USAAF Strategic Bomb. Wing" 
-		"420th USAAF Strategic Bomb. Wing" "421st USAAF Strategic Bomb. Wing" "423rd USAAF Strategic Bomb. Wing" "424th USAAF Strategic Bomb. Wing" "425th USAAF Strategic Bomb. Wing" "426th USAAF Strategic Bomb. Wing" "427th USAAF Strategic Bomb. Wing" "428th USAAF Strategic Bomb. Wing" "429th USAAF Strategic Bomb. Wing" "430th USAAF Strategic Bomb. Wing" "431st USAAF Strategic Bomb. Wing" 
-		"432d USAAF Strategic Bomb. Wing" "433rd USAAF Strategic Bomb. Wing" "434th USAAF Strategic Bomb. Wing" "435th USAAF Strategic Bomb. Wing" "436th USAAF Strategic Bomb. Wing" "437th USAAF Strategic Bomb. Wing" "438th USAAF Strategic Bomb. Wing" "439th USAAF Strategic Bomb. Wing" "440th USAAF Strategic Bomb. Wing" 
+		"µÚ1Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ2Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ13Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ4Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ5Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ12Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ47Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ57Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ14Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ20Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ98Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" 
+		"µÚ21Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ40Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ41Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ42Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ45Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ99Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ49Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ55Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ58Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ92Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ93Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" 
+		"µÚ94Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ95Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ97Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ96Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ73Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ304Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ305Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ307Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ308Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ309Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ310Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" 
+		"µÚ313Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ314Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ315Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ316Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ15Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ16Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ17Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ317Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ318Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ319Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ320Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" 
+		"µÚ321Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ323Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ324Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ325Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ326Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ327Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ328Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ329Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ330Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ331Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ332Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" 
+		"µÚ333Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ334Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ335Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ336Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ337Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ338Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ339Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ340Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ417Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ418Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ419Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" 
+		"µÚ420Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ421Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ423Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ424Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ425Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ426Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ427Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ428Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ429Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ430Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ431Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" 
+		"µÚ432Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ433Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ434Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ435Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ436Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ437Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ438Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ439Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" "µÚ440Â½¾üº½¿Õ±øÕ½ÂÔºäÕ¨Áª¶Ó" 
 	}
 	tactical_bomber = {
-		"1st USAAF Tactical Bomb. Wing" "2nd USAAF Tactical Bomb. Wing" "13th USAAF Tactical Bomb. Wing" "4th USAAF Tactical Bomb. Wing" "5th USAAF Tactical Bomb. Wing" "12th USAAF Tactical Bomb. Wing" "47th USAAF Tactical Bomb. Wing" "57th USAAF Tactical Bomb. Wing" "14th USAAF Tactical Bomb. Wing" "20th USAAF Tactical Bomb. Wing" "98th USAAF Tactical Bomb. Wing" 
-		"21st USAAF Tactical Bomb. Wing" "40th USAAF Tactical Bomb. Wing" "41st USAAF Tactical Bomb. Wing" "42d USAAF Tactical Bomb. Wing" "45th USAAF Tactical Bomb. Wing" "99th USAAF Tactical Bomb. Wing" "49th USAAF Tactical Bomb. Wing" "55th USAAF Tactical Bomb. Wing" "58th USAAF Tactical Bomb. Wing" "92d USAAF Tactical Bomb. Wing" "93rd USAAF Tactical Bomb. Wing" 
-		"94th USAAF Tactical Bomb. Wing" "95th USAAF Tactical Bomb. Wing" "97th USAAF Tactical Bomb. Wing" "96th USAAF Tactical Bomb. Wing" "73rd USAAF Tactical Bomb. Wing" "304th USAAF Tactical Bomb. Wing" "305th USAAF Tactical Bomb. Wing" "307th USAAF Tactical Bomb. Wing" "308th USAAF Tactical Bomb. Wing" "309th USAAF Tactical Bomb. Wing" "310th USAAF Tactical Bomb. Wing" 
-		"313th USAAF Tactical Bomb. Wing" "314th USAAF Tactical Bomb. Wing" "315th USAAF Tactical Bomb. Wing" "316th USAAF Tactical Bomb. Wing" "15th USAAF Tactical Bomb. Wing" "16th USAAF Tactical Bomb. Wing" "17th USAAF Tactical Bomb. Wing" "317th USAAF Tactical Bomb. Wing" "318th USAAF Tactical Bomb. Wing" "319th USAAF Tactical Bomb. Wing" "320th USAAF Tactical Bomb. Wing" 
-		"321st USAAF Tactical Bomb. Wing" "323rd USAAF Tactical Bomb. Wing" "324th USAAF Tactical Bomb. Wing" "325th USAAF Tactical Bomb. Wing" "326th USAAF Tactical Bomb. Wing" "327th USAAF Tactical Bomb. Wing" "328th USAAF Tactical Bomb. Wing" "329th USAAF Tactical Bomb. Wing" "330th USAAF Tactical Bomb. Wing" "331st USAAF Tactical Bomb. Wing" "332nd USAAF Tactical Bomb. Wing" 
-		"333rd USAAF Tactical Bomb. Wing" "334th USAAF Tactical Bomb. Wing" "335th USAAF Tactical Bomb. Wing" "336th USAAF Tactical Bomb. Wing" "337th USAAF Tactical Bomb. Wing" "338th USAAF Tactical Bomb. Wing" "339th USAAF Tactical Bomb. Wing" "340th USAAF Tactical Bomb. Wing" "417th USAAF Tactical Bomb. Wing" "418th USAAF Tactical Bomb. Wing" "419th USAAF Tactical Bomb. Wing" 
-		"420th USAAF Tactical Bomb. Wing" "421st USAAF Tactical Bomb. Wing" "423rd USAAF Tactical Bomb. Wing" "424th USAAF Tactical Bomb. Wing" "425th USAAF Tactical Bomb. Wing" "426th USAAF Tactical Bomb. Wing" "427th USAAF Tactical Bomb. Wing" "428th USAAF Tactical Bomb. Wing" "429th USAAF Tactical Bomb. Wing" "430th USAAF Tactical Bomb. Wing" "431st USAAF Tactical Bomb. Wing" 
-		"432d USAAF Tactical Bomb. Wing" "433rd USAAF Tactical Bomb. Wing" "434th USAAF Tactical Bomb. Wing" "435th USAAF Tactical Bomb. Wing" "436th USAAF Tactical Bomb. Wing" "437th USAAF Tactical Bomb. Wing" "438th USAAF Tactical Bomb. Wing" "439th USAAF Tactical Bomb. Wing" "440th USAAF Tactical Bomb. Wing" 
-	}
-	jet_bomber = {
-		"1st USAAF Tactical Bomb. Wing" "2nd USAAF Tactical Bomb. Wing" "13th USAAF Tactical Bomb. Wing" "4th USAAF Tactical Bomb. Wing" "5th USAAF Tactical Bomb. Wing" "12th USAAF Tactical Bomb. Wing" "47th USAAF Tactical Bomb. Wing" "57th USAAF Tactical Bomb. Wing" "14th USAAF Tactical Bomb. Wing" "20th USAAF Tactical Bomb. Wing" "98th USAAF Tactical Bomb. Wing" 
-		"21st USAAF Tactical Bomb. Wing" "40th USAAF Tactical Bomb. Wing" "41st USAAF Tactical Bomb. Wing" "42d USAAF Tactical Bomb. Wing" "45th USAAF Tactical Bomb. Wing" "99th USAAF Tactical Bomb. Wing" "49th USAAF Tactical Bomb. Wing" "55th USAAF Tactical Bomb. Wing" "58th USAAF Tactical Bomb. Wing" "92d USAAF Tactical Bomb. Wing" "93rd USAAF Tactical Bomb. Wing" 
-		"94th USAAF Tactical Bomb. Wing" "95th USAAF Tactical Bomb. Wing" "97th USAAF Tactical Bomb. Wing" "96th USAAF Tactical Bomb. Wing" "73rd USAAF Tactical Bomb. Wing" "304th USAAF Tactical Bomb. Wing" "305th USAAF Tactical Bomb. Wing" "307th USAAF Tactical Bomb. Wing" "308th USAAF Tactical Bomb. Wing" "309th USAAF Tactical Bomb. Wing" "310th USAAF Tactical Bomb. Wing" 
-		"313th USAAF Tactical Bomb. Wing" "314th USAAF Tactical Bomb. Wing" "315th USAAF Tactical Bomb. Wing" "316th USAAF Tactical Bomb. Wing" "15th USAAF Tactical Bomb. Wing" "16th USAAF Tactical Bomb. Wing" "17th USAAF Tactical Bomb. Wing" "317th USAAF Tactical Bomb. Wing" "318th USAAF Tactical Bomb. Wing" "319th USAAF Tactical Bomb. Wing" "320th USAAF Tactical Bomb. Wing" 
-		"321st USAAF Tactical Bomb. Wing" "323rd USAAF Tactical Bomb. Wing" "324th USAAF Tactical Bomb. Wing" "325th USAAF Tactical Bomb. Wing" "326th USAAF Tactical Bomb. Wing" "327th USAAF Tactical Bomb. Wing" "328th USAAF Tactical Bomb. Wing" "329th USAAF Tactical Bomb. Wing" "330th USAAF Tactical Bomb. Wing" "331st USAAF Tactical Bomb. Wing" "332nd USAAF Tactical Bomb. Wing" 
-		"333rd USAAF Tactical Bomb. Wing" "334th USAAF Tactical Bomb. Wing" "335th USAAF Tactical Bomb. Wing" "336th USAAF Tactical Bomb. Wing" "337th USAAF Tactical Bomb. Wing" "338th USAAF Tactical Bomb. Wing" "339th USAAF Tactical Bomb. Wing" "340th USAAF Tactical Bomb. Wing" "417th USAAF Tactical Bomb. Wing" "418th USAAF Tactical Bomb. Wing" "419th USAAF Tactical Bomb. Wing" 
-		"420th USAAF Tactical Bomb. Wing" "421st USAAF Tactical Bomb. Wing" "423rd USAAF Tactical Bomb. Wing" "424th USAAF Tactical Bomb. Wing" "425th USAAF Tactical Bomb. Wing" "426th USAAF Tactical Bomb. Wing" "427th USAAF Tactical Bomb. Wing" "428th USAAF Tactical Bomb. Wing" "429th USAAF Tactical Bomb. Wing" "430th USAAF Tactical Bomb. Wing" "431st USAAF Tactical Bomb. Wing" 
-		"432d USAAF Tactical Bomb. Wing" "433rd USAAF Tactical Bomb. Wing" "434th USAAF Tactical Bomb. Wing" "435th USAAF Tactical Bomb. Wing" "436th USAAF Tactical Bomb. Wing" "437th USAAF Tactical Bomb. Wing" "438th USAAF Tactical Bomb. Wing" "439th USAAF Tactical Bomb. Wing" "440th USAAF Tactical Bomb. Wing" 
+		"µÚ1Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ2Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ13Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ4Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ5Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ12Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ47Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ57Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ14Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ20Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ98Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" 
+		"µÚ21Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ40Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ41Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ42Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ45Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ99Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ49Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ55Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ58Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ92Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ93Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" 
+		"µÚ94Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ95Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ97Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ96Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ73Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ304Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ305Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ307Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ308Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ309Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ310Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" 
+		"µÚ313Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ314Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ315Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ316Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ15Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ16Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ17Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ317Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ318Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ319Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ320Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" 
+		"µÚ321Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ323Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ324Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ325Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ326Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ327Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ328Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ329Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ330Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ331Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ332Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" 
+		"µÚ333Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ334Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ335Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ336Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ337Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ338Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ339Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ340Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ417Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ418Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ419Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" 
+		"µÚ420Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ421Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ423Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ424Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ425Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ426Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ427Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ428Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ429Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ430Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ431Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" 
+		"µÚ432Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ433Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ434Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ435Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ436Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ437Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ438Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ439Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" "µÚ440Â½¾üº½¿Õ±øÕ½ÊõºäÕ¨Áª¶Ó" 
 	}
 	naval_bomber = {
-		"USN Patrol Bombing Wing 1" "USN Patrol Bombing Wing 2" "1st USMC Bomb Wing" "USN Patrol Bombing Wing 3" "2nd USMC Bomb Wing" "USN Patrol Bombing Wing 5" "USN Patrol Bombing Wing 7" "3rd USMC Bomb Wing" "4th USMC Bomb Wing" "USN Patrol Bombing Wing 9" "USN Patrol Bombing Wing 8" 
-		"USN Patrol Bombing Wing 11" "5th USMC Bomb Wing" "USN Patrol Bombing Wing 17" "USN Patrol Bombing Wing 14" "USN Patrol Bombing Wing 15" "6th USMC Bomb Wing" "USN Patrol Bombing Wing 20" "USN Patrol Bombing Wing 30" "USN Patrol Bombing Wing 31" "7th USMC Bomb Wing" "USN Patrol Bombing Wing 32" 
-		"USN Patrol Bombing Wing 33" "USN Patrol Bombing Wing 34" "USN Patrol Bombing Wing 35" "8th USMC Bomb Wing" "USN Patrol Bombing Wing 36" "USN Patrol Bombing Wing 37" "USN Patrol Bombing Wing 38" "USN Patrol Bombing Wing 39" "USN Patrol Bombing Wing 40" "9th USMC Bomb Wing" "USN Patrol Bombing Wing 40" 
-		"USN Patrol Bombing Wing 41" "10th USMC Bomb Wing" "USN Patrol Bombing Wing 42" "USN Patrol Bombing Wing 43" 
-	}
+		 "µÚ1º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ2º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ1º£¾üÂ½Õ½¶ÓºäÕ¨Áª¶Ó" "µÚ3º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ2º£¾üÂ½Õ½¶ÓºäÕ¨Áª¶Ó" "µÚ5º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ7º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ3º£¾üÂ½Õ½¶ÓºäÕ¨Áª¶Ó" "µÚ4º£¾üÂ½Õ½¶ÓºäÕ¨Áª¶Ó" "µÚ9º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ8º£¾üÑ²ÂßºäÕ¨Áª¶Ó" 
+		 "µÚ11º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ5º£¾üÂ½Õ½¶ÓºäÕ¨Áª¶Ó" "µÚ17º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ14º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ15º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ6º£¾üÂ½Õ½¶ÓºäÕ¨Áª¶Ó" "µÚ20º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ30º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ31º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ7º£¾üÂ½Õ½¶ÓºäÕ¨Áª¶Ó" "µÚ32º£¾üÑ²ÂßºäÕ¨Áª¶Ó" 
+		 "µÚ33º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ34º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ35º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ8º£¾üÂ½Õ½¶ÓºäÕ¨Áª¶Ó" "µÚ36º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ37º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ38º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ39º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ40º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ9º£¾üÂ½Õ½¶ÓºäÕ¨Áª¶Ó" "µÚ40º£¾üÑ²ÂßºäÕ¨Áª¶Ó" 
+		 "µÚ41º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ10º£¾üÂ½Õ½¶ÓºäÕ¨Áª¶Ó" "µÚ42º£¾üÑ²ÂßºäÕ¨Áª¶Ó" "µÚ43º£¾üÑ²ÂßºäÕ¨Áª¶Ó" 
+		 	}
 	cas = {
-		"1st USAAF Dive Bomb. Wing" "2nd USAAF Dive Bomb. Wing" "13th USAAF Dive Bomb. Wing" "4th USAAF Dive Bomb. Wing" "5th USAAF Dive Bomb. Wing" "12th USAAF Dive Bomb. Wing" "47th USAAF Dive Bomb. Wing" "57th USAAF Dive Bomb. Wing" "14th USAAF Dive Bomb. Wing" "20th USAAF Dive Bomb. Wing" "98th USAAF Dive Bomb. Wing" 
-		"21st USAAF Dive Bomb. Wing" "40th USAAF Dive Bomb. Wing" "41st USAAF Dive Bomb. Wing" "42d USAAF Dive Bomb. Wing" "45th USAAF Dive Bomb. Wing" "99th USAAF Dive Bomb. Wing" "49th USAAF Dive Bomb. Wing" "55th USAAF Dive Bomb. Wing" "58th USAAF Dive Bomb. Wing" "92d USAAF Dive Bomb. Wing" "93rd USAAF Dive Bomb. Wing" 
-		"94th USAAF Dive Bomb. Wing" "95th USAAF Dive Bomb. Wing" "97th USAAF Dive Bomb. Wing" "96th USAAF Dive Bomb. Wing" "73rd USAAF Dive Bomb. Wing" "304th USAAF Dive Bomb. Wing" "305th USAAF Dive Bomb. Wing" "307th USAAF Dive Bomb. Wing" "308th USAAF Dive Bomb. Wing" "309th USAAF Dive Bomb. Wing" "310th USAAF Dive Bomb. Wing" 
-		"313th USAAF Dive Bomb. Wing" "314th USAAF Dive Bomb. Wing" "315th USAAF Dive Bomb. Wing" "316th USAAF Dive Bomb. Wing" "15th USAAF Dive Bomb. Wing" "16th USAAF Dive Bomb. Wing" "17th USAAF Dive Bomb. Wing" "317th USAAF Dive Bomb. Wing" "318th USAAF Dive Bomb. Wing" "319th USAAF Dive Bomb. Wing" "320th USAAF Dive Bomb. Wing" 
-		"321st USAAF Dive Bomb. Wing" "323rd USAAF Dive Bomb. Wing" "324th USAAF Dive Bomb. Wing" "325th USAAF Dive Bomb. Wing" "326th USAAF Dive Bomb. Wing" "327th USAAF Dive Bomb. Wing" "328th USAAF Dive Bomb. Wing" "329th USAAF Dive Bomb. Wing" "330th USAAF Dive Bomb. Wing" "331st USAAF Dive Bomb. Wing" "332nd USAAF Dive Bomb. Wing" 
-		"333rd USAAF Dive Bomb. Wing" "334th USAAF Dive Bomb. Wing" "335th USAAF Dive Bomb. Wing" "336th USAAF Dive Bomb. Wing" "337th USAAF Dive Bomb. Wing" "338th USAAF Dive Bomb. Wing" "339th USAAF Dive Bomb. Wing" "340th USAAF Dive Bomb. Wing" "417th USAAF Dive Bomb. Wing" "418th USAAF Dive Bomb. Wing" "419th USAAF Dive Bomb. Wing" 
-		"420th USAAF Dive Bomb. Wing" "421st USAAF Dive Bomb. Wing" "423rd USAAF Dive Bomb. Wing" "424th USAAF Dive Bomb. Wing" "425th USAAF Dive Bomb. Wing" "426th USAAF Dive Bomb. Wing" "427th USAAF Dive Bomb. Wing" "428th USAAF Dive Bomb. Wing" "429th USAAF Dive Bomb. Wing" "430th USAAF Dive Bomb. Wing" "431st USAAF Dive Bomb. Wing" 
-		"432d USAAF Dive Bomb. Wing" "433rd USAAF Dive Bomb. Wing" "434th USAAF Dive Bomb. Wing" "435th USAAF Dive Bomb. Wing" "436th USAAF Dive Bomb. Wing" "437th USAAF Dive Bomb. Wing" "438th USAAF Dive Bomb. Wing" "439th USAAF Dive Bomb. Wing" "440th USAAF Dive Bomb. Wing" 
+		"µÚ1Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ2Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ13Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ4Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ5Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ12Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ47Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ57Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ14Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ20Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ98Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" 
+		"µÚ21Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ40Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ41Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ42Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ45Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ99Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ49Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ55Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ58Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ92Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ93Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" 
+		"µÚ94Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ95Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ97Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ96Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ73Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ304Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ305Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ307Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ308Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ309Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ310Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" 
+		"µÚ313Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ314Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ315Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ316Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ15Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ16Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ17Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ317Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ318Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ319Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ320Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" 
+		"µÚ321Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ323Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ324Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ325Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ326Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ327Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ328Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ329Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ330Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ331Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ332Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" 
+		"µÚ333Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ334Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ335Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ336Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ337Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ338Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ339Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ340Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ417Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ418Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ419Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" 
+		"µÚ420Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ421Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ423Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ424Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ425Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ426Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ427Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ428Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ429Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ430Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ431Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" 
+		"µÚ432Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ433Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ434Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ435Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ436Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ437Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ438Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ439Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" "µÚ440Â½¾üº½¿Õ¶Ó¸©³åºäÕ¨Áª¶Ó" 
 	}
 	transport_plane = {
-		"50th USAAF Troop Carrier Wing" "51st USAAF Troop Carrier Wing" "52d USAAF Troop Carrier Wing" "53rd USAAF Troop Carrier Wing" "54th USAAF Troop Carrier Wing" "60th USAAF Troop Carrier Wing" "61st USAAF Troop Carrier Wing" "322d USAAF Troop Carrier Wing" "333th USAAF Troop Carrier Wing" "334th USAAF Troop Carrier Wing" "335th USAAF Troop Carrier Wing" 
-		"336th USAAF Troop Carrier Wing" 
+		"µÚ50Â½¾üº½¿Õ¶ÓÔËÊäÁª¶Ó" "µÚ51Â½¾üº½¿Õ¶ÓÔËÊäÁª¶Ó" "µÚ52Â½¾üº½¿Õ¶ÓÔËÊäÁª¶Ó" "µÚ53Â½¾üº½¿Õ¶ÓÔËÊäÁª¶Ó" "µÚ54Â½¾üº½¿Õ¶ÓÔËÊäÁª¶Ó" "µÚ60Â½¾üº½¿Õ¶ÓÔËÊäÁª¶Ó" "µÚ61Â½¾üº½¿Õ¶ÓÔËÊäÁª¶Ó" "µÚ322Â½¾üº½¿Õ¶ÓÔËÊäÁª¶Ó" "µÚ333Â½¾üº½¿Õ¶ÓÔËÊäÁª¶Ó" "µÚ334Â½¾üº½¿Õ¶ÓÔËÊäÁª¶Ó" "µÚ335Â½¾üº½¿Õ¶ÓÔËÊäÁª¶Ó" 
+		"µÚ336Â½¾üº½¿Õ¶ÓÔËÊäÁª¶Ó" 
 	}
 	battleship = {
-		"USS North Carolina" "USS Washington"
-		"USS South Dakota" "USS Indiana" "USS Massachusetts" "USS Alabama"
-		"USS Iowa" "USS New Jersey" "USS Missouri" "USS Wisconsin" "USS Illinois" "USS Kentucky"
-		"USS Montana" "USS Ohio" "USS Maine" "USS New Hampshire" "USS Louisiana"
-		"USS Wyoming" "USS Arkansas"
-		"USS New York" "USS Texas"
-		"USS Nevada" "USS Oklahoma"
-		"USS Pennsylvania" "USS Arizona"
-		"USS New Mexico" "USS Mississippi" "USS Idaho"
-		"USS Tennessee" "USS California"
-		"USS Colorado" "USS Maryland" "USS Washington" "USS West Virginia" 
-		"USS South Dakota" "USS Indiana" "USS Montana" "USS North Carolina" "USS Iowa" "USS Massachusetts" 
+"±±¿¨ÂŞÀ´ÄÉºÅ" 
+"»ªÊ¢¶ÙºÅ" 
+"ÄÏ´ï¿ÆËüºÅ" 
+"Ó¡µØ°²ÄÉºÅ" 
+"ÂéÈøÖîÈûºÅ" 
+"ÑÇÀ­°ÍÂíºÅ" 
+"ÒÀ°¢»ªºÅ" 
+"ĞÂÔóÎ÷ºÅ" 
+"ÃÜËÕÀïºÅ" 
+"ÍşË¹¿µĞÁºÅ" 
+"ÒÁÀûÅµÒÁºÅ" 
+"¿ÏËş»ùºÅ" 
+"ÃÉ´óÄÉºÅ" 
+"¶íº¥¶íºÅ" 
+"ÃåÒòºÅ" 
+"ĞÂº±²¼Ê²¶ûºÅ" 
+"Â·Ò×Ë¹°²ÄÇºÅ" 
+"ÄÏ¿¨ÂŞÀ´ÄÉºÅ" 
+"ÃÜÎ÷¸ùºÅ" 
+"µÂÀ­ÍßºÅ" 
+"±±´ï¿ÆËüºÅ" 
+"·ğÂŞÀï´ïºÅ" 
+"ÓÌËûºÅ" 
+"»³¶íÃ÷ºÅ" 
+"°¢¿ÏÉ«ºÅ" 
+"Å¦Ô¼ºÅ" 
+"µÂ¿ËÈøË¹ºÅ" 
+"ÄÚ»ª´ïºÅ" 
+"¶í¿ËÀ­ºÉÂíºÅ" 
+"±öÏ¦·¨ÄáÑÇºÅ" 
+"ÑÇÀûÉ£ÄÇºÅ" 
+"ĞÂÄ«Î÷¸çºÅ" 
+"ÃÜÎ÷Î÷±ÈºÅ" 
+"°®´ïºÉºÅ" 
+"ÌïÄÉÎ÷ºÅ" 
+"¼ÓÀû¸£ÄáÑÇºÅ" 
+"¿ÆÂŞÀ­¶àºÅ" 
+"ÂíÀïÀ¼ºÅ" 
+"Î÷¸¥¼ªÄáÑÇºÅ"
 	}
 	light_cruiser = {
-		"USS Brooklyn" "USS Philadelphia" "USS Savannah" "USS Nashville" "USS Honolulu" "USS Phoenix" "USS Boise"
-		"USS St Louis" "USS Helena"
-		"USS Atlanta" "USS Juneau" "USS San Diego" "USS San Juan" "USS Oakland" "USS Reno" "USS Flint" "USS Tucson" "USS Juneau" "USS Spokane" "USS Fresno"
-		"USS Cleveland" "USS Columbia" "USS Montpelier" "USS Denver" "USS Amsterdam" "USS Santa Fe" "USS Tallahassee" "USS Birmingham" "USS Mobile" "USS Vincennes" "USS Pasadena" "USS Springfield" "USS Topeka" "USS New Haven" "USS Huntington" "USS Dayton" "USS Wilmington" "USS Biloxi" "USS Houston" "USS Providence" "USS Manchester" "USS Vicksburg" "USS Duluth" "USS Miami" "USS Astoria" "USS Oklahoma City" "USS Little Rock" "USS Glaveston" "USS Youngstown" "USS Buffalo" "USS Newark" "USS Amsterdam" "USS Portsmouth" "USS Wilkes-Barre" "USS Atlanta" "USS Dayton"
-		"USS Fargo" "USS Huntington" "USS Newark" "USS New Haven" "USS Buffalo" "USS Wilmington" "USS Vallejo" "USS Helena" "USS Roanake" "USS Tallahasse" "USS Cheyenne" "USS Chattanooga"
-		"USS Worcester" "USS Roanake" "USS Vallejo" "USS Gary"
-		"USS Chester" "USS Birmingham" "USS Salem"
-		"USS Omaha" "USS Milwaukee" "USS Cincinnati" "USS Raleigh" "USS Detroit" "USS Richmond" "USS Concord" "USS Trenton" "USS Marblehead" "USS Memphis" 
+		"²¼Â³¿ËÁÖºÅ" "²¼Â³¿ËÁÖºÅ" "Èø·²ÄÉºÅ" "ÄÉÊ²Î¬¶ûºÅ" "»ğÅ«Â³Â³ºÅ" "·ï»Ë³ÇºÅ" "²©ÒÁÎ÷ºÅ" "Ê¥Â·Ò×Ë¹ºÅ" "º£Â×ÄÈºÅ" "ÑÇÌØÀ¼´óºÅ" "ÖìÅµºÅ" 
+		"Ê¥µü¸êºÅ" "Ê¥ºú°²ºÅ" "°Â¿ËÀ¼ºÅ" "¿ËÀû·òÀ¼ºÅ" "¸çÂ×±ÈÑÇºÅ" "ÃÉ±ËÀû°£ºÅ" "µ¤·ğºÅ" "Ê¥´ï·ÆºÅ" "ÀïÅµºÅ" "²®Ã÷º²ºÅ" "Äª±È¶ûºÅ" 
+		"±ÈÂå¿ËÎ÷ºÅ" "ĞİË¹¶ÙºÅ" "Âõ°¢ÃÜºÅ" "¸¥ÁÖÌØºÅ" "ÎÄÉ­Ë¹ºÅ" "ÅÁÈøµÏÄÉºÅ" "Ë¹ÆÕÁÖ·Æ¶ûµÂºÅ" "ÍĞÆ¤¿¨ºÅ" "Î¬¿ËË¹±¤ºÅ" "µÂÂ³Ë¹ºÅ" "°¢Ë¹ÍĞÀïÑÇºÅ" 
+		"°Â¿ËÀ­ºÉÂí³ÇºÅ" "Íş¶û¿ËË¹¡¤°ÍÀ×ºÅ" "Í¼¿ËÉ­ºÅ" "ÆÕÂŞÎ¬µÇË¹ºÅ" "Ğ¡Ê¯³ÇºÅ" "°¢Ä·Ë¹ÌØµ¤ºÅ" "ÆÓ´ÄÃ©Ë¹ºÅ" "´ú¶ÙºÅ" "·¨¸êºÅ" "Ë¹²¨¿°ºÅ" "¸¥À×Ë¹ÅµºÅ" 
+		"Âü³¹Ë¹ÌØºÅ" "¼Ó¶ûÎ¬Ë¹¶ÙºÅ" "ºàÍ¢¶ÙºÅ" "ÎéË¹ÌØºÅ" "ÂŞÅµ»ùºÅ" "ËşÀ­¹şÎ÷ºÅ" "Å¦ºÚÎÄºÅ" "Î¬Ã÷¶ÙºÅ" "²¼·¨ÂŞºÅ" "ÑïË¹¶ØºÅ" "Å¦Íß¿ËºÅ" 
+		"°ÍÒ®»ôºÅ" "ÏÄÑÓºÅ" "²éËşÅ¬¼ÓºÅ" "¼ÓÀïºÅ" "°ÂÂí¹şºÅ" "ÃÜ¶ûÎÖ»ùºÅ" "µ×ÌØÂÉºÅ" "ÀïÆæÃÉºÅ" "¿µ¿ÆµÂºÅ" "ĞÁĞÁÄÇÌáºÅ" "ÂŞÀûºÅ" 
+		"ÌØÁÖ¶ÙºÅ" "Âí²¨º£µÂºÅ" "ÃÏ·ÆË¹ºÅ" 
 	}
 	heavy_cruiser = {
-		"USS Quincy" "USS Vincennes"
-		"USS Wichita"
-		"USS Baltimore" "USS Boston" "USS Canberra" "USS Quincy" "USS Pittsburgh" "USS Saint Paul" "USS Columbus" "USS Helena" "USS Bremerton" "USS Fall River" "USS Macon" "USS Toledo" "USS Los Angeles" "USS Chicago" "USS Oregon City" "USS Albany" "USS Rochester" "USS Northampton" "USS Cambridge" "USS Bridgeport" "USS Kansas City" "USS Tulsa" "USS Bremerton" "USS Fall River" "USS Macon" "USS Toledo" "USS Los Angeles" "USS Chicago" "USS Norfolk" "USS Scranton"
-		"USS Des Moines" "USS Salem" "USS Newport News" "USS Casper" "USS Everett" "USS West Valley City" "USS Provo" "USS Kenosha" "USS Memphis" "USS Washington DC" "USS New York City" "USS Bellevue"
-		"USS Tennessee" "USS Washington" "USS North Carolina" "USS Montana"
-		"USS Clarksville" "USS Sioux Falls" "USS Akron" "USS Wilmington" "USS High Point" "USS Cary" "USS Durham" "USS Fayetteville"
-		"USS Pensacola" "USS Salt Lake City"
-		"USS Northampton" "USS Chester" "USS Louisville" "USS Chicago" "USS Houston" "USS Augusta"
-		"USS Portland" "USS Indianapolis"
-		"USS New Orleans" "USS Astoria" "USS Minneapolis" "USS Tuscaloosa" "USS San Francisco" "USS Quincy" "USS Vincennes"
+		"ÅíÈø¿ÆÀ­ºÅ" "ÑÎºş³ÇºÅ" "±±°²ÆÕ¶ØºÅ" "ÇĞË¹ÌØºÅ" "Â·Ò×Ë¹Î¬¶ûºÅ" "Ö¥¼Ó¸çºÅ" "ĞİË¹¶ÙºÅ" "°Â¹ÅË¹ËşºÅ" "²¨ÌØÀ¼ºÅ" "Ó¡µÚ°²ÄÉ²¨ÀûË¹ºÅ" "ĞÂ°Â¶ûÁ¼ºÅ" 
+		"°¢Ë¹ÍĞÀïÑÇºÅ" "Ã÷Äá°¢²¨ÀûË¹ºÅ" "ËşË¹¿¨Â¬ÈøºÅ" "À¥Î÷ºÅ" "ÎÄÉ­Ë¹ºÅ" "¾É½ğÉ½ºÅ" "ÍşÆæËşºÅ" "°Í¶ûµÄÄ¦ºÅ" "²¨Ê¿¶ÙºÅ" "¿°ÅàÀ­ºÅ" "À¥Î÷ºÅ" 
+		"Æ¥×È±¤ºÅ" "Ê¥±£ÂŞºÅ" "²¼À³Ä¬¶ÙºÅ" "¸çÂ×²¼ºÅ" "ÇïºÓºÅ" "ÂåÉ¼í¶ºÅ" "Ã·¿ÏºÅ" "º£Â×ÄÈºÅ" "¶íÀÕ¸Ô³ÇºÅ" "°Â¶û°ÍÄáºÅ" "ÍĞÀ×¶àºÅ" 
+		"ÂŞÇĞË¹ÌØºÅ" "½£ÇÅºÅ" "ÇÅ¸ÛºÅ" "¿°ÈøË¹³ÇºÅ" "Ëş¶ûÈøºÅ" "Åµ¸£¿ËºÅ" "Ë¹¿ËÀ¼¶ÙºÅ" "µÃÃ·ÒòºÅ" "ÈûÀÕÄ·ºÅ" "Å¦²¨ÌØÅ¦Ë¹ºÅ" "´ïÀ­Ë¹ºÅ" 
+		"³¤Ì²ºÅ" 
 	}
 	battlecruiser = {
-		"USS Alaska" "USS Guam" "USS Hawaii" "USS Philippines" "USS Puerto Rico" "USS Samoa"
-		"USS Brandywine" "USS Cowpens" "USS Sullivan's Island" "USS Newtown"
-		"USS Lexington" "USS Constellation" "USS Saratoga" "USS Ranger" "USS Constitution" "USS United States"
-		"USS Chesapeake" "USS Grenada" "USS Cape Henry" "USS Cape Spartel"
-		"USS Mariana Islands" "USS Virgin Islands" "USS Wake Island" "USS Midway Islands"
+		"°¢À­Ë¹¼ÓºÅ" "¹ØµººÅ" "ÏÄÍşÒÄºÅ" "·ÆÂÉ±öºÅ" "²¨¶àÀè¸÷ºÅ" "ÈøÄ¦ÑÇºÅ" "ÁĞ¿ËĞÇ¶ØºÅ" "ĞÇ×ùºÅ" "ÈøÀ­ÍĞ¼ÓºÅ" "ÓÎÆï±øºÅ" "ÏÜ·¨ºÅ" 
+		"ÃÀ¹úºÅ" 
 	}
 	destroyer = {
-		"38th Destroyer Division" "39th Destroyer Division" "40th Destroyer Division" "41st Destroyer Division" "42nd Destroyer Division" "43rd Destroyer Division" "44th Destroyer Division" 
-		"45th Destroyer Division" "46th Destroyer Division" "47th Destroyer Division" "48th Destroyer Division" "49th Destroyer Division" "50th Destroyer Division" "51st Destroyer Division" "52nd Destroyer Division" "53rd Destroyer Division" "54th Destroyer Division" "55th Destroyer Division" 
-		"56th Destroyer Division" "57th Destroyer Division" "58th Destroyer Division" "59th Destroyer Division" "60th Destroyer Division" "61st Destroyer Division" "62nd Destroyer Division" "63rd Destroyer Division" "64th Destroyer Division" "65th Destroyer Division" "66th Destroyer Division" 
-		"67th Destroyer Division" "68th Destroyer Division" "69th Destroyer Division" "70th Destroyer Division" "71st Destroyer Division" "72nd Destroyer Division" "73rd Destroyer Division" "74th Destroyer Division" "75th Destroyer Division" "76th Destroyer Division" "77th Destroyer Division" 
-		"78th Destroyer Division" "79th Destroyer Division" "80th Destroyer Division" "81st Destroyer Division" "82nd Destroyer Division" "83rd Destroyer Division" "84th Destroyer Division" "85th Destroyer Division" "86th Destroyer Division" "87th Destroyer Division" "88th Destroyer Division" 
-		"89th Destroyer Division" "90th Destroyer Division" "91st Destroyer Division" "92nd Destroyer Division" "93rd Destroyer Division" "94th Destroyer Division" "95th Destroyer Division" "96th Destroyer Division" "97th Destroyer Division" "98th Destroyer Division" "99th Destroyer Division" 
-		"100th Destroyer Division" 
-		"1st Destroyer Division" "2nd Destroyer Division" "3rd Destroyer Division" "4th Destroyer Division" "5th Destroyer Division" "6th Destroyer Division" "7th Destroyer Division" "8th Destroyer Division" "9th Destroyer Division" "10th Destroyer Division" "11th Destroyer Division" 
-		"12th Destroyer Division" "13th Destroyer Division" "14th Destroyer Division" "15th Destroyer Division" "16th Destroyer Division" "17th Destroyer Division" "18th Destroyer Division" "19th Destroyer Division" "20th Destroyer Division" "21st Destroyer Division" "22nd Destroyer Division" 
-		"23rd Destroyer Division" "24th Destroyer Division" "25th Destroyer Division" "26th Destroyer Division" "27th Destroyer Division" "28th Destroyer Division" "29th Destroyer Division" "30th Destroyer Division" "31st Destroyer Division" "32nd Destroyer Division" "33rd Destroyer Division" 
-		"34th Destroyer Division" "35th Destroyer Division" "36th Destroyer Division" "37th Destroyer Division" 		
+		"µÚ1ÇıÖğ½¢¶Ó" "µÚ2ÇıÖğ½¢¶Ó" "µÚ3ÇıÖğ½¢¶Ó" "µÚ4ÇıÖğ½¢¶Ó" "µÚ5ÇıÖğ½¢¶Ó" "µÚ6ÇıÖğ½¢¶Ó" "µÚ7ÇıÖğ½¢¶Ó" "µÚ8ÇıÖğ½¢¶Ó" "µÚ9ÇıÖğ½¢¶Ó" "µÚ10ÇıÖğ½¢¶Ó" "µÚ11ÇıÖğ½¢¶Ó" 
+		"µÚ12ÇıÖğ½¢¶Ó" "µÚ13ÇıÖğ½¢¶Ó" "µÚ14ÇıÖğ½¢¶Ó" "µÚ15ÇıÖğ½¢¶Ó" "µÚ16ÇıÖğ½¢¶Ó" "µÚ17ÇıÖğ½¢¶Ó" "µÚ18ÇıÖğ½¢¶Ó" "µÚ19ÇıÖğ½¢¶Ó" "µÚ20ÇıÖğ½¢¶Ó" "µÚ21ÇıÖğ½¢¶Ó" "µÚ22ÇıÖğ½¢¶Ó" 
+		"µÚ23ÇıÖğ½¢¶Ó" "µÚ24ÇıÖğ½¢¶Ó" "µÚ25ÇıÖğ½¢¶Ó" "µÚ26ÇıÖğ½¢¶Ó" "µÚ27ÇıÖğ½¢¶Ó" "µÚ28ÇıÖğ½¢¶Ó" "µÚ29ÇıÖğ½¢¶Ó" "µÚ30ÇıÖğ½¢¶Ó" "µÚ31ÇıÖğ½¢¶Ó" "µÚ32ÇıÖğ½¢¶Ó" "µÚ33ÇıÖğ½¢¶Ó" 
+		"µÚ34ÇıÖğ½¢¶Ó" "µÚ35ÇıÖğ½¢¶Ó" "µÚ36ÇıÖğ½¢¶Ó" "µÚ37ÇıÖğ½¢¶Ó" "µÚ38ÇıÖğ½¢¶Ó" "µÚ39ÇıÖğ½¢¶Ó" "µÚ40ÇıÖğ½¢¶Ó" "µÚ41ÇıÖğ½¢¶Ó" "µÚ42ÇıÖğ½¢¶Ó" "µÚ43ÇıÖğ½¢¶Ó" "µÚ44ÇıÖğ½¢¶Ó" 
+		"µÚ45ÇıÖğ½¢¶Ó" "µÚ46ÇıÖğ½¢¶Ó" "µÚ47ÇıÖğ½¢¶Ó" "µÚ48ÇıÖğ½¢¶Ó" "µÚ49ÇıÖğ½¢¶Ó" "µÚ50ÇıÖğ½¢¶Ó" "µÚ51ÇıÖğ½¢¶Ó" "µÚ52ÇıÖğ½¢¶Ó" "µÚ53ÇıÖğ½¢¶Ó" "µÚ54ÇıÖğ½¢¶Ó" "µÚ55ÇıÖğ½¢¶Ó" 
+		"µÚ56ÇıÖğ½¢¶Ó" "µÚ57ÇıÖğ½¢¶Ó" "µÚ58ÇıÖğ½¢¶Ó" "µÚ59ÇıÖğ½¢¶Ó" "µÚ60ÇıÖğ½¢¶Ó" "µÚ61ÇıÖğ½¢¶Ó" "µÚ62ÇıÖğ½¢¶Ó" "µÚ63ÇıÖğ½¢¶Ó" "µÚ64ÇıÖğ½¢¶Ó" "µÚ65ÇıÖğ½¢¶Ó" "µÚ66ÇıÖğ½¢¶Ó" 
+		"µÚ67ÇıÖğ½¢¶Ó" "µÚ68ÇıÖğ½¢¶Ó" "µÚ69ÇıÖğ½¢¶Ó" "µÚ70ÇıÖğ½¢¶Ó" "µÚ71ÇıÖğ½¢¶Ó" "µÚ72ÇıÖğ½¢¶Ó" "µÚ73ÇıÖğ½¢¶Ó" "µÚ74ÇıÖğ½¢¶Ó" "µÚ75ÇıÖğ½¢¶Ó" "µÚ76ÇıÖğ½¢¶Ó" "µÚ77ÇıÖğ½¢¶Ó" 
+		"µÚ78ÇıÖğ½¢¶Ó" "µÚ79ÇıÖğ½¢¶Ó" "µÚ80ÇıÖğ½¢¶Ó" "µÚ81ÇıÖğ½¢¶Ó" "µÚ82ÇıÖğ½¢¶Ó" "µÚ83ÇıÖğ½¢¶Ó" "µÚ84ÇıÖğ½¢¶Ó" "µÚ85ÇıÖğ½¢¶Ó" "µÚ86ÇıÖğ½¢¶Ó" "µÚ87ÇıÖğ½¢¶Ó" "µÚ88ÇıÖğ½¢¶Ó" 
+		"µÚ89ÇıÖğ½¢¶Ó" "µÚ90ÇıÖğ½¢¶Ó" "µÚ91ÇıÖğ½¢¶Ó" "µÚ92ÇıÖğ½¢¶Ó" "µÚ93ÇıÖğ½¢¶Ó" "µÚ94ÇıÖğ½¢¶Ó" "µÚ95ÇıÖğ½¢¶Ó" "µÚ96ÇıÖğ½¢¶Ó" "µÚ97ÇıÖğ½¢¶Ó" "µÚ98ÇıÖğ½¢¶Ó" "µÚ99ÇıÖğ½¢¶Ó" 
+		"µÚ100ÇıÖğ½¢¶Ó" 
 	}
 	carrier = {
-		"USS Yorktown" "USS Enterprise" "USS Hornet"
-		"USS Wasp"
-		"USS Essex" "USS Intrepid" "USS Franklin" "USS Lexington" "USS Bunker Hill" "USS Bennington" "USS Bon Homme Richard" "USS Ticonderoga" "USS Randolph" "USS Hancock" "USS Boxer" "USS Leyte" "USS Kearsarge" "USS Oriskany" "USS Reprisal" "USS Antietam" "USS Princeton" "USS Shangri-La" "USS Lake Champlain" "USS Tarawa" "USS Valley Forge" "USS Iwo Jima" "USS Philippine Sea"
-		"USS Midway" "USS Franklin D. Roosevelt" "USS William McKinley" "USS Ulysses S. Grant" "USS James A. Garfield"
-		"USS United States" "USS America" "USS Forrestal" "USS Kitty Hawk"
-		"USS Lexington" "USS Constellation" "USS Saratoga" "USS Ranger" "USS Constitution" "USS United States"
-		"USS Iowa" "USS New Jersey" "USS Missouri" "USS Wisconsin" "USS Illinois" "USS Kentucky"
+		"ÁĞ¿ËĞÇ¶ØºÅ" "ÈøÀ­ÍĞ¼ÓºÅ" "ÓÎÆï±øºÅ" "Ô¼¿Ë³ÇºÅ" "ÆóÒµºÅ" "»Æ·äºÅ" "´ó»Æ·äºÅ" "°£Èû¿ËË¹ºÅ" "ÓÂÃÍºÅ" "¸»À¼¿ËÁÖºÅ" "Ìá¿µµÂÂŞ¼ÓºÅ" 
+		"À¼µÀ·òºÅ" "°î¿ËÉ½ºÅ" "ºº¿¼¿ËºÅ" "°àÄş¶ÙºÅ" "ºÃÈËÀí²éµÂºÅ" "À³ÌØºÅ" "Ææ¶ûÉ³ÖÎºÅ" "°ÂÀïË¹¿¨ÄáºÅ" "¸´³ğºÅ" "°²ÌáÌ¹ºÅ" "Ïã¸ñÀïÀ­ºÅ" 
+		"ÉĞÆÕÀ¼ºşºÅ" "ÖĞÍ¾µººÅ" "¸»À¼¿ËÁÖ¡¤ÂŞË¹¸£ºÅ" "Éºº÷º£ºÅ" "·ÆÂÉ±öº£ºÅ" "ÃÀ¹úºÅ" "·ğÈğË¹ËşºÅ" "ÈøÀ­ÍĞ¼Ó ºÅ" "Ğ¡Ó¥ºÅ" "ĞÇ×ùºÅ" "ÃÀÀû¼áºÅ" 
+		"Î÷°Â¶à¡¤ÂŞË¹¸£ºÅ" "ÑÇ²®À­º±¡¤ÁÖ¿ÏºÅ" "ÇÇÖÎ¡¤»ªÊ¢¶ÙºÅ" 
 	}
 	escort_carrier = {
-		"USS Independence" "USS Princeton" "USS Bellau Wood" "USS Cowpens" "USS Monterey" "USS Langley" "USS Cabot" "USS Bataan" "USS San Jacinto" "USS Franklin" "USS Ticonderoga" 
-		"USS Saipan" "USS Wright"
-		"USS Langley"
-		"USS Omaha" "USS Milwaukee" "USS Cincinnati" "USS Raleigh" "USS Detroit" "USS Richmond" "USS Concord" "USS Trenton" "USS Marblehead" "USS Memphis" 
+		"¶ÀÁ¢ºÅ" "ÆÕÁÖË¹¶ÙºÅ" "±´ÀÍÎéµÂºÅ" "¿¼ÅåË¹ºÅ" "ÃÉÌØÀûºÅ" "À¼ÀûºÅ" "¿¨²®ÌØºÅ" "°Íµ¤ºÅ" "Ê¥¹şĞÁÍĞºÅ" "Èû°àºÅ" "À³ÌØºÅ" 
+		"²¼Â³¿ËµººÅ" "Áò»ÇµººÅ" "³åÉşºÅ" "È­Ê¦ºÅ" "Î÷ÌáË¹ÍåºÅ" "¹Ï´ï¿¨ÄÉ¶ûºÅ" "¸£¼ª¹ÈºÅ" "¹ØµººÅ" "µÄÀè²¨ÀïºÅ" "ĞÂ°Â¶ûÁ¼ºÅ" "ËşÀ­ÍßºÅ" 
+		"ÄÃÉ§ºÅ" "±´ÀïÁğºÅ" 
 	}
 	submarine = {
-		"14th Submarine Division" "15th Submarine Division" "16th Submarine Division" "17th Submarine Division" "18th Submarine Division" "19th Submarine Division" "20th Submarine Division" "21st Submarine Division" "22nd Submarine Division" 
-		"23rd Submarine Division" "24th Submarine Division" "25th Submarine Division" "26th Submarine Division" "27th Submarine Division" "28th Submarine Division" "29th Submarine Division" "30th Submarine Division" "31st Submarine Division" "32nd Submarine Division" "33rd Submarine Division" 
-		"34th Submarine Division" "35th Submarine Division" "36th Submarine Division" "37th Submarine Division" "38th Submarine Division" "39th Submarine Division" "40th Submarine Division" "41st Submarine Division" "42nd Submarine Division" "43rd Submarine Division" "44th Submarine Division" 
-		"45th Submarine Division" "46th Submarine Division" "47th Submarine Division" "48th Submarine Division" "49th Submarine Division" "50th Submarine Division" "51st Submarine Division" "52nd Submarine Division" "53rd Submarine Division" "54th Submarine Division" "55th Submarine Division" 
-		"56th Submarine Division" "57th Submarine Division" "58th Submarine Division" "59th Submarine Division" "60th Submarine Division" "61st Submarine Division" "62nd Submarine Division" "63rd Submarine Division" "64th Submarine Division" "65th Submarine Division" "66th Submarine Division" 
-		"67th Submarine Division" "68th Submarine Division" "69th Submarine Division" "70th Submarine Division" "71st Submarine Division" "72nd Submarine Division" "73rd Submarine Division" "74th Submarine Division" "75th Submarine Division" "76th Submarine Division" "77th Submarine Division" 
-		"78th Submarine Division" "79th Submarine Division" "80th Submarine Division" "81st Submarine Division" "82nd Submarine Division" "83rd Submarine Division" "84th Submarine Division" "85th Submarine Division" "86th Submarine Division" "87th Submarine Division" "88th Submarine Division" 
-		"89th Submarine Division" "90th Submarine Division" "91st Submarine Division" "92nd Submarine Division" "93rd Submarine Division" "94th Submarine Division" "95th Submarine Division" "96th Submarine Division" "97th Submarine Division" "98th Submarine Division" "99th Submarine Division" 
-		"100th Submarine Division" 
-		"1st Submarine Division" "2nd Submarine Division" "3rd Submarine Division" "4th Submarine Division" "5th Submarine Division" "6th Submarine Division" "7th Submarine Division" "8th Submarine Division" "9th Submarine Division" "10th Submarine Division" "11th Submarine Division" 
-		"12th Submarine Division" "13th Submarine Division" 		
+		"µÚ1Ç±Í§±à¶Ó" "µÚ2Ç±Í§±à¶Ó" "µÚ3Ç±Í§±à¶Ó" "µÚ4Ç±Í§±à¶Ó" "µÚ5Ç±Í§±à¶Ó" "µÚ6Ç±Í§±à¶Ó" "µÚ7Ç±Í§±à¶Ó" "µÚ8Ç±Í§±à¶Ó" "µÚ9Ç±Í§±à¶Ó" "µÚ10Ç±Í§±à¶Ó" "µÚ11Ç±Í§±à¶Ó" 
+		"µÚ12Ç±Í§±à¶Ó" "µÚ13Ç±Í§±à¶Ó" "µÚ14Ç±Í§±à¶Ó" "µÚ15Ç±Í§±à¶Ó" "µÚ16Ç±Í§±à¶Ó" "µÚ17Ç±Í§±à¶Ó" "µÚ18Ç±Í§±à¶Ó" "µÚ19Ç±Í§±à¶Ó" "µÚ20Ç±Í§±à¶Ó" "µÚ21Ç±Í§±à¶Ó" "µÚ22Ç±Í§±à¶Ó" 
+		"µÚ23Ç±Í§±à¶Ó" "µÚ24Ç±Í§±à¶Ó" "µÚ25Ç±Í§±à¶Ó" "µÚ26Ç±Í§±à¶Ó" "µÚ27Ç±Í§±à¶Ó" "µÚ28Ç±Í§±à¶Ó" "µÚ29Ç±Í§±à¶Ó" "µÚ30Ç±Í§±à¶Ó" "µÚ31Ç±Í§±à¶Ó" "µÚ32Ç±Í§±à¶Ó" "µÚ33Ç±Í§±à¶Ó" 
+		"µÚ34Ç±Í§±à¶Ó" "µÚ35Ç±Í§±à¶Ó" "µÚ36Ç±Í§±à¶Ó" "µÚ37Ç±Í§±à¶Ó" "µÚ38Ç±Í§±à¶Ó" "µÚ39Ç±Í§±à¶Ó" "µÚ40Ç±Í§±à¶Ó" "µÚ41Ç±Í§±à¶Ó" "µÚ42Ç±Í§±à¶Ó" "µÚ43Ç±Í§±à¶Ó" "µÚ44Ç±Í§±à¶Ó" 
+		"µÚ45Ç±Í§±à¶Ó" "µÚ46Ç±Í§±à¶Ó" "µÚ47Ç±Í§±à¶Ó" "µÚ48Ç±Í§±à¶Ó" "µÚ49Ç±Í§±à¶Ó" "µÚ50Ç±Í§±à¶Ó" "µÚ51Ç±Í§±à¶Ó" "µÚ52Ç±Í§±à¶Ó" "µÚ53Ç±Í§±à¶Ó" "µÚ54Ç±Í§±à¶Ó" "µÚ55Ç±Í§±à¶Ó" 
+		"µÚ56Ç±Í§±à¶Ó" "µÚ57Ç±Í§±à¶Ó" "µÚ58Ç±Í§±à¶Ó" "µÚ59Ç±Í§±à¶Ó" "µÚ60Ç±Í§±à¶Ó" "µÚ61Ç±Í§±à¶Ó" "µÚ62Ç±Í§±à¶Ó" "µÚ63Ç±Í§±à¶Ó" "µÚ64Ç±Í§±à¶Ó" "µÚ65Ç±Í§±à¶Ó" "µÚ66Ç±Í§±à¶Ó" 
+		"µÚ67Ç±Í§±à¶Ó" "µÚ68Ç±Í§±à¶Ó" "µÚ69Ç±Í§±à¶Ó" "µÚ70Ç±Í§±à¶Ó" "µÚ71Ç±Í§±à¶Ó" "µÚ72Ç±Í§±à¶Ó" "µÚ73Ç±Í§±à¶Ó" "µÚ74Ç±Í§±à¶Ó" "µÚ75Ç±Í§±à¶Ó" "µÚ76Ç±Í§±à¶Ó" "µÚ77Ç±Í§±à¶Ó" 
+		"µÚ78Ç±Í§±à¶Ó" "µÚ79Ç±Í§±à¶Ó" "µÚ80Ç±Í§±à¶Ó" "µÚ81Ç±Í§±à¶Ó" "µÚ82Ç±Í§±à¶Ó" "µÚ83Ç±Í§±à¶Ó" "µÚ84Ç±Í§±à¶Ó" "µÚ85Ç±Í§±à¶Ó" "µÚ86Ç±Í§±à¶Ó" "µÚ87Ç±Í§±à¶Ó" "µÚ88Ç±Í§±à¶Ó" 
+		"µÚ89Ç±Í§±à¶Ó" "µÚ90Ç±Í§±à¶Ó" "µÚ91Ç±Í§±à¶Ó" "µÚ92Ç±Í§±à¶Ó" "µÚ93Ç±Í§±à¶Ó" "µÚ94Ç±Í§±à¶Ó" "µÚ95Ç±Í§±à¶Ó" "µÚ96Ç±Í§±à¶Ó" "µÚ97Ç±Í§±à¶Ó" "µÚ98Ç±Í§±à¶Ó" "µÚ99Ç±Í§±à¶Ó" 
+		"µÚ100Ç±Í§±à¶Ó" 
 	}
 	transport_ship = {
-		"Abner Doubleday Flotilla" "Brigham Young Flotilla" "William B. Travis Flotilla" "Peter Stuyvesant Flotilla" "Henry L. Benning Flotilla" "Casimir Pulaski Flotilla" "Sam Houston Flotilla" "Francis Scott Key Flotilla" "Frederick Douglass Flotilla" "Walter Reed Flotilla" "Dolly Madison Flotilla" 
-		"Clara Barton Flotilla" "Charles Goodyear Flotilla" "Anthony Wayne Flotilla" "John Hancock Flotilla" "Samuel Dexter Flotilla" "Stephen C. Crane Flotilla" "William McKinley Flotilla" "George A. Custer Flotilla" "August Belmont Flotilla" "Emily Dickinson Flotilla" "Molly Pitcher Flotilla" 
-		"Antonin Dvorak Flotilla" "J. E. B. Stuart Flotilla" "Alexander J. Dallas Flotilla" "Amy Lowell Flotilla" "Lew Wallace Flotilla" "Oliver Hazard Perry Flotilla" "Vincent Harrington Flotilla" "W. R. Grace Flotilla" "John Trumbull Flotilla" "Walter E. Ranger Flotilla" "Sacajawea Flotilla" 
-		"Thomas B. Reed Flotilla" "Christy Mathewson Flotilla" "John Holland Flotilla" "Paine Wingate Flotilla" "John B. Hood Flotilla" "Jefferson Davis Flotilla" "Cecil N. Bean Flotilla" "Carter Braxton Flotilla" "Henry D. Thoreau Flotilla" "Edgar Allen Poe Flotilla" "John Jay Flotilla" 
-		"Abigail Adams Flotilla" "Annie Oakley Flotilla" "Henry Dodge Flotilla" "George Gershwin Flotilla" "Ethan Allen Flotilla" "Alexander Graham Bell Flotilla" "William T. Sherman Flotilla" "Zane Gray Flotilla" "Benjamin Franklin Flotilla" "Andrew Carnegie Flotilla" "Mark Twain Flotilla" 
-		"John A. Roebling Flotilla" "George B. McClellan Flotilla" "Nancy Hanks Flotilla" "Marcus Daly Flotilla" "Leif Ericson Flotilla" "Judah P. Benjamin Flotilla" "Joseph Lane Flotilla" "Enoch Train Flotilla" "Elizabeth Blackwell Flotilla" "Charles W. Stiles Flotilla" "William Dunbar Flotilla" 
-		"Virginia Dare Flotilla" "W. S. Jennings Flotilla" "Tobias Lear Flotilla" "Joseph H. Nicholson Flotilla" "John W. Foster Flotilla" "David B. Henderson Flotilla" "Belva Lockwood Flotilla" "Benjamin Bonneville Flotilla" "John H. Thomas Flotilla" "Roger Sherman Flotilla" "Roy James Cole Flotilla" 
-		"Zachary Taylor Flotilla" "Minor C. Keith Flotilla" "Nathan B. Forrest Flotilla" "Maria Mitchell Flotilla" "Lucy Stone Flotilla" "John Drayton Flotilla" "Marcus Daly Flotilla" "John Deere Flotilla" "Henry T. Scott Flotilla" "Hart Crane Flotilla" "Glenn Curtiss Flotilla" 
-		"George Vickers Flotilla" "David J. Brewer Flotilla" "Victor C. Vaughn Flotilla" "Thomas Paine Flotilla" "Louisa M. Alcott Flotilla" "Amerigo Vespucci Flotilla" "George Eastman Flotilla" "Susan Colby Flotilla" "Thomas Hooker Flotilla" "Otto Mears Flotilla" "Noah Webster Flotilla" 
-		"Felix Hathaway Flotilla" "Daniel G. Reid Flotilla" "Peter Cartwright Flotilla" "Paul Tulane Flotilla" "Robert Gray Flotilla" "James Gunn Flotilla" "James Bowie Flotilla" "Isaac McCoy Flotilla" "Holland Thompson Flotilla" "Benjamin Holt Flotilla" "Ruben Dario Flotilla" 
-		"Joyce Kilmer Flotilla" "Frederic Remington Flotilla" "Davy Crockett Flotilla" "Kyle V. Johnson Flotilla" "Laura Bridgman Flotilla" "Vernon S. Hood Ship Flotilla" "Nathan Towson Flotilla" "John Philip Sousa Flotilla" "Harold I. Pratt Flotilla" "Artemus Ward Flotilla" "John Dix Flotilla" 
-		"Mark Hopkins Flotilla" "Marshall Elliott Flotilla" "Walker Taylor Flotilla" "Henry V. Alvarado Flotilla" "George G. Meade Flotilla" "John M. Bozeman Flotilla" "Louis Sullivan Flotilla" "Mary Austin Flotilla" "Martha C.Thomas Ship Flotilla" "Flora MacDonald Flotilla" "Eliza Jane Nicholson Flotilla" 
-		"Norman E. Mack Flotilla" "Oliver Ellsworth Flotilla" "Nikola Tesla Flotilla" "R. C. Brennan Flotilla" "DeWitt Clinton Flotilla" "Ewing Young Flotilla" "Mark Hanna Flotilla" "Henry Van Dyke Flotilla" "James Manning Flotilla" "Joel Chandler Harris Flotilla" "Meriwether Lewis Flotilla" 
-		"1st Transport Flotilla" "2nd Transport Flotilla" "3rd Transport Flotilla" "4th Transport Flotilla" "5th Transport Flotilla" "6th Transport Flotilla" "7th Transport Flotilla" "8th Transport Flotilla" "9th Transport Flotilla" "10th Transport Flotilla" "11th Transport Flotilla" 
-		"12th Transport Flotilla" "13th Transport Flotilla" "14th Transport Flotilla" "15th Transport Flotilla" "16th Transport Flotilla" "17th Transport Flotilla" "18th Transport Flotilla" "19th Transport Flotilla" "20th Transport Flotilla" "21st Transport Flotilla" "22nd Transport Flotilla" 
-		"23rd Transport Flotilla" "24th Transport Flotilla" "25th Transport Flotilla" "26th Transport Flotilla" "27th Transport Flotilla" "28th Transport Flotilla" "29th Transport Flotilla" "30th Transport Flotilla" "31st Transport Flotilla" "32nd Transport Flotilla" "33rd Transport Flotilla" 
-		"34th Transport Flotilla" "35th Transport Flotilla" "36th Transport Flotilla" "37th Transport Flotilla" "38th Transport Flotilla" "39th Transport Flotilla" "40th Transport Flotilla" "41st Transport Flotilla" "42nd Transport Flotilla" "43rd Transport Flotilla" "44th Transport Flotilla" 
-		"45th Transport Flotilla" "46th Transport Flotilla" "47th Transport Flotilla" "48th Transport Flotilla" "49th Transport Flotilla" "50th Transport Flotilla" 
+		"µÀ²¼¶û´÷ÔËÊä½¢¶Ó" "Ñî°Ùº²ÔËÊä½¢¶Ó" "ÌØÀ­Î¬Ë¹ÔËÊä½¢¶Ó" "Ê©ÍĞÒÁ¸¥É£ÌØÔËÊä½¢¶Ó" "±¾ÄşÔËÊä½¢¶Ó" "ÆÕÀ­Ë¹»ùÔËÊä½¢¶Ó" "ĞİË¹¶ÙÔËÊä½¢¶Ó" "Ê·¿¼ÌØ¿­ÒÁÔËÊä½¢¶Ó" "µÀ¸ñÀ­Ë¹ÔËÊä½¢¶Ó" "ÀïµÂÔËÊä½¢¶Ó" "ÂóµÏÑ·ÔËÊä½¢¶Ó" 
+		"°Í¶ÙÔËÊä½¢¶Ó" "¹ÌÌØÒìÔËÊä½¢¶Ó" "Î¤¶÷ÔËÊä½¢¶Ó" "ºº¿¼¿ËÔËÊä½¢¶Ó" "µÂ¿ËË¹ÌØÔËÊä½¢¶Ó" "¿ËÀ³¶÷ÔËÊä½¢¶Ó" "Âó½ğÀûÔËÊä½¢¶Ó" "¿¨Ë¹ÌØÔËÊä½¢¶Ó" "±´ÃÉÌØÔËÊä½¢¶Ó" "µÏ½ğÉ­ÔËÊä½¢¶Ó" "ËÍË®¸¾ÄªÀòÔËÊä½¢¶Ó" 
+		"µÂÎÖÀ­¿ËÔËÊä½¢¶Ó" "Ë¹Í¼ÑÇÌØÔËÊä½¢¶Ó" "´ïÀ­Ë¹ÔËÊä½¢¶Ó" "°¬Ã×ÂŞ¶ò¶ûÔËÊä½¢¶Ó" "»ªÀ³Ê¿ÔËÊä½¢¶Ó" "ÅåÀïÔËÊä½¢¶Ó" "¹şÁé¶ÙÔËÊä½¢¶Ó" "¸ñÀ­Ë¹ÔËÊä½¢¶Ó" "Ô¼º²×¯°ØÔËÊä½¢¶Ó" "À¼¼ª¶ûÔËÊä½¢¶Ó" "Èø¿¨¼ÓÎ¬ÑÇÔËÊä½¢¶Ó" 
+		"ÀûµÂÔËÊä½¢¶Ó" "ÂíĞŞÑ·ÔËÊä½¢¶Ó" "»ôÀ¼µÂÔËÊä½¢¶Ó" "ÎÄ¼ÎÌØÔËÊä½¢¶Ó" "ºúµÂÔËÊä½¢¶Ó" "´÷Î¬Ë¹ÔËÊä½¢¶Ó" "±È¶÷ÔËÊä½¢¶Ó" "²¼À­¿ËË¹¶ÙÔËÊä½¢¶Ó" "ºàÀûËóÂŞÔËÊä½¢¶Ó" "°¬Â×ÆÂÔËÊä½¢¶Ó" "Ô¼º²½ÜÔËÊä½¢¶Ó" 
+		"ÑÇµ±Ë¹ÔËÊä½¢¶Ó" "°Â¿ËÀûÔËÊä½¢¶Ó" "µÀÆæÔËÊä½¢¶Ó" "¸ÇÏ£ÎÄÔËÊä½¢¶Ó" "°¢Â×ÔËÊä½¢¶Ó" "±´¶ûÔËÊä½¢¶Ó" "Ğ»¶ûÂüÔËÊä½¢¶Ó" "¸ñÀ×ÔËÊä½¢¶Ó" "±¾½ÜÃ÷¸»À¼¿ËÁÖÔËÊä½¢¶Ó" "¿¨ÄÍ»ùÔËÊä½¢¶Ó" "Âí¿ËÍÂÎÂÔËÊä½¢¶Ó" 
+		"ÂŞ²¼ÁÖÔËÊä½¢¶Ó" "Âó¿ËÀÕÄÏÔËÊä½¢¶Ó" "ºº¿ËË¹ÔËÊä½¢¶Ó" "´ïÀûÔËÊä½¢¶Ó" "°£Àï¿ËÉ­ÔËÊä½¢¶Ó" "±¾½ÜÃ÷ÔËÊä½¢¶Ó" "À³¶÷ÔËÊä½¢¶Ó" "ÌØÀ¼ÔËÊä½¢¶Ó" "²¼À³¿ËÎ¬¶ûÔËÊä½¢¶Ó" "Ë¹µÙ¶ûË¹ÔËÊä½¢¶Ó" "¶Ù°ÍÔËÊä½¢¶Ó" 
+		"Î¬¼ªÄáÑÇ´÷¶ûÔËÊä½¢¶Ó" "Õ²ÄşË¹ÔËÊä½¢¶Ó" "Àû¶ûÔËÊä½¢¶Ó" "Äá¿ËËÉÔËÊä½¢¶Ó" "¸£Ë¹ÌØÔËÊä½¢¶Ó" "ºàµÂÉ­ÔËÊä½¢¶Ó" "ÂŞ¿ËÎéµÂÔËÊä½¢¶Ó" "°îÄáÎ¬¶ûÔËÊä½¢¶Ó" "ÍĞÂíË¹ÔËÊä½¢¶Ó" "Ğ»¶ûÂüÔËÊä½¢¶Ó" "¿Æ¶ûÔËÊä½¢¶Ó" 
+		"Ì©ÀÕÔËÊä½¢¶Ó" "Ğ¡¿­Ë¹ÔËÊä½¢¶Ó" "¸£À×Ë¹ÌØÔËÊä½¢¶Ó" "Ã×ÇĞ¶ûÔËÊä½¢¶Ó" "Ë¹Í¨ÔËÊä½¢¶Ó" "µÂÀ×¶ÙÔËÊä½¢¶Ó" "Âí¿âË¹´ïÀûÔËÊä½¢¶Ó" "Ô¼º²µÂÀûÔËÊä½¢¶Ó" "ºàÀûË¹¿ÆÌØÔËÊä½¢¶Ó" "¹şÌØ¿ËÀ×¶÷ÔËÊä½¢¶Ó" "¿âµÏË¹ÔËÊä½¢¶Ó" 
+		"Î¬¿ËË¹ÔËÊä½¢¶Ó" "Ô¼º²²¼Â³¶ûÔËÊä½¢¶Ó" "ÎÖ¶÷ÔËÊä½¢¶Ó" "ÍĞÂíË¹Åá¶÷ÔËÊä½¢¶Ó" "°¢¶û¿ËÌØÔËÊä½¢¶Ó" "ÍşË¹ÆÕÎ÷ÔËÊä½¢¶Ó" "ÒÁË¹ÌØÂüÔËÊä½¢¶Ó" "¿Æ¶û±ÈÔËÊä½¢¶Ó" "ºú¿ËÔËÊä½¢¶Ó" "Ã×¶ûË¹ÔËÊä½¢¶Ó" "Î¤²®Ë¹ÌØÔËÊä½¢¶Ó" 
+		"¹ş´ïÍşÔËÊä½¢¶Ó" "À×µÂÔËÊä½¢¶Ó" "¿¨ÌØÀ³ÌØÔËÊä½¢¶Ó" "Í¼À­¶÷ÔËÊä½¢¶Ó" "¸ğÀ×ÔËÊä½¢¶Ó" "¹Å¶÷ÔËÊä½¢¶Ó" "±«¶ûÔËÊä½¢¶Ó" "Âó¿¼ÒÁÔËÊä½¢¶Ó" "ÌÀÆÕÉ­ÔËÊä½¢¶Ó" "»ôÌØÔËÊä½¢¶Ó" "´ïÀï°ÂÔËÊä½¢¶Ó" 
+		"»ù¶ûÄ¦ÔËÊä½¢¶Ó" "À×Ã÷¶ÙÔËÊä½¢¶Ó" "¿ËÂŞ¿ËÌØÔËÊä½¢¶Ó" "Ô¼º²Ñ·ÔËÊä½¢¶Ó" "²¼ÀïÆæÂüÔËÊä½¢¶Ó" "Î¬Å©ºúµÂÔËÊä½¢¶Ó" "ÌÀÉ­ÔËÊä½¢¶Ó" "Ë÷ÈøÔËÊä½¢¶Ó" "ÆÕÀ­ÌØÔËÊä½¢¶Ó" "ÍßµÂÔËÊä½¢¶Ó" "µÏ¿ËË¹ÔËÊä½¢¶Ó" 
+		"»ôÆÕ½ğË¹ÔËÊä½¢¶Ó" "°¬ÂÔÌØÔËÊä½¢¶Ó" "ÎÖ¿ËÌ©ÀÕÔËÊä½¢¶Ó" "°¢¶ûÍßÀ­¶àÔËÊä½¢¶Ó" "Ã·µÂÔËÊä½¢¶Ó" "²¨×ÈÂüÔËÊä½¢¶Ó" "É³ÀûÎÄÔËÊä½¢¶Ó" "°ÂË¹¶¡ÔËÊä½¢¶Ó" "ÂíÉ³ÍĞÂíË¹ÔËÊä½¢¶Ó" "ÂóÌÆÄÉÔËÊä½¢¶Ó" "°¬ÀöÉ¯Äá¿ËËÉÔËÊä½¢¶Ó" 
+		"Âí¿ËÔËÊä½¢¶Ó" "°£¶ûË¹ÎÖË¹ÔËÊä½¢¶Ó" "ÌØË¹À­ÔËÊä½¢¶Ó" "²¼Â×ÄÏÔËÊä½¢¶Ó" "¿ËÁÖ¶ÙÔËÊä½¢¶Ó" "°£¶ûÎÂÑïÔËÊä½¢¶Ó" "ººÄÈÔËÊä½¢¶Ó" "´÷¿ËÔËÊä½¢¶Ó" "ÂüÄşÔËÊä½¢¶Ó" "¹şÀïË¹ÔËÊä½¢¶Ó" "ÁõÒ×Ë¹ÔËÊä½¢¶Ó" 
+		"µÚ1ÔËÊä½¢¶Ó" "µÚ2ÔËÊä½¢¶Ó" "µÚ3ÔËÊä½¢¶Ó" "µÚ4ÔËÊä½¢¶Ó" "µÚ5ÔËÊä½¢¶Ó" "µÚ6ÔËÊä½¢¶Ó" "µÚ7ÔËÊä½¢¶Ó" "µÚ8ÔËÊä½¢¶Ó" "µÚ9ÔËÊä½¢¶Ó" "µÚ10ÔËÊä½¢¶Ó" "µÚ11ÔËÊä½¢¶Ó" 
+		"µÚ12ÔËÊä½¢¶Ó" "µÚ13ÔËÊä½¢¶Ó" "µÚ14ÔËÊä½¢¶Ó" "µÚ15ÔËÊä½¢¶Ó" "µÚ16ÔËÊä½¢¶Ó" "µÚ17ÔËÊä½¢¶Ó" "µÚ18ÔËÊä½¢¶Ó" "µÚ19ÔËÊä½¢¶Ó" "µÚ20ÔËÊä½¢¶Ó" "µÚ21ÔËÊä½¢¶Ó" "µÚ22ÔËÊä½¢¶Ó" 
+		"µÚ23ÔËÊä½¢¶Ó" "µÚ24ÔËÊä½¢¶Ó" "µÚ25ÔËÊä½¢¶Ó" "µÚ26ÔËÊä½¢¶Ó" "µÚ27ÔËÊä½¢¶Ó" "µÚ28ÔËÊä½¢¶Ó" "µÚ29ÔËÊä½¢¶Ó" "µÚ30ÔËÊä½¢¶Ó" "µÚ31ÔËÊä½¢¶Ó" "µÚ32ÔËÊä½¢¶Ó" "µÚ33ÔËÊä½¢¶Ó" 
+		"µÚ34ÔËÊä½¢¶Ó" "µÚ35ÔËÊä½¢¶Ó" "µÚ36ÔËÊä½¢¶Ó" "µÚ37ÔËÊä½¢¶Ó" "µÚ38ÔËÊä½¢¶Ó" "µÚ39ÔËÊä½¢¶Ó" "µÚ40ÔËÊä½¢¶Ó" "µÚ41ÔËÊä½¢¶Ó" "µÚ42ÔËÊä½¢¶Ó" "µÚ43ÔËÊä½¢¶Ó" "µÚ44ÔËÊä½¢¶Ó" 
+		"µÚ45ÔËÊä½¢¶Ó" "µÚ46ÔËÊä½¢¶Ó" "µÚ47ÔËÊä½¢¶Ó" "µÚ48ÔËÊä½¢¶Ó" "µÚ49ÔËÊä½¢¶Ó" "µÚ50ÔËÊä½¢¶Ó" 
 	}
-
+	invasion_transport_ship = {
+		"µÀ²¼¶û´÷ÔËÊä½¢¶Ó" "Ñî°Ùº²ÔËÊä½¢¶Ó" "ÌØÀ­Î¬Ë¹ÔËÊä½¢¶Ó" "Ê©ÍĞÒÁ¸¥É£ÌØÔËÊä½¢¶Ó" "±¾ÄşÔËÊä½¢¶Ó" "ÆÕÀ­Ë¹»ùÔËÊä½¢¶Ó" "ĞİË¹¶ÙÔËÊä½¢¶Ó" "Ê·¿¼ÌØ¿­ÒÁÔËÊä½¢¶Ó" "µÀ¸ñÀ­Ë¹ÔËÊä½¢¶Ó" "ÀïµÂÔËÊä½¢¶Ó" "ÂóµÏÑ·ÔËÊä½¢¶Ó" 
+		"°Í¶ÙÔËÊä½¢¶Ó" "¹ÌÌØÒìÔËÊä½¢¶Ó" "Î¤¶÷ÔËÊä½¢¶Ó" "ºº¿¼¿ËÔËÊä½¢¶Ó" "µÂ¿ËË¹ÌØÔËÊä½¢¶Ó" "¿ËÀ³¶÷ÔËÊä½¢¶Ó" "Âó½ğÀûÔËÊä½¢¶Ó" "¿¨Ë¹ÌØÔËÊä½¢¶Ó" "±´ÃÉÌØÔËÊä½¢¶Ó" "µÏ½ğÉ­ÔËÊä½¢¶Ó" "ËÍË®¸¾ÄªÀòÔËÊä½¢¶Ó" 
+		"µÂÎÖÀ­¿ËÔËÊä½¢¶Ó" "Ë¹Í¼ÑÇÌØÔËÊä½¢¶Ó" "´ïÀ­Ë¹ÔËÊä½¢¶Ó" "°¬Ã×ÂŞ¶ò¶ûÔËÊä½¢¶Ó" "»ªÀ³Ê¿ÔËÊä½¢¶Ó" "ÅåÀïÔËÊä½¢¶Ó" "¹şÁé¶ÙÔËÊä½¢¶Ó" "¸ñÀ­Ë¹ÔËÊä½¢¶Ó" "Ô¼º²×¯°ØÔËÊä½¢¶Ó" "À¼¼ª¶ûÔËÊä½¢¶Ó" "Èø¿¨¼ÓÎ¬ÑÇÔËÊä½¢¶Ó" 
+		"ÀûµÂÔËÊä½¢¶Ó" "ÂíĞŞÑ·ÔËÊä½¢¶Ó" "»ôÀ¼µÂÔËÊä½¢¶Ó" "ÎÄ¼ÎÌØÔËÊä½¢¶Ó" "ºúµÂÔËÊä½¢¶Ó" "´÷Î¬Ë¹ÔËÊä½¢¶Ó" "±È¶÷ÔËÊä½¢¶Ó" "²¼À­¿ËË¹¶ÙÔËÊä½¢¶Ó" "ºàÀûËóÂŞÔËÊä½¢¶Ó" "°¬Â×ÆÂÔËÊä½¢¶Ó" "Ô¼º²½ÜÔËÊä½¢¶Ó" 
+		"ÑÇµ±Ë¹ÔËÊä½¢¶Ó" "°Â¿ËÀûÔËÊä½¢¶Ó" "µÀÆæÔËÊä½¢¶Ó" "¸ÇÏ£ÎÄÔËÊä½¢¶Ó" "°¢Â×ÔËÊä½¢¶Ó" "±´¶ûÔËÊä½¢¶Ó" "Ğ»¶ûÂüÔËÊä½¢¶Ó" "¸ñÀ×ÔËÊä½¢¶Ó" "±¾½ÜÃ÷¸»À¼¿ËÁÖÔËÊä½¢¶Ó" "¿¨ÄÍ»ùÔËÊä½¢¶Ó" "Âí¿ËÍÂÎÂÔËÊä½¢¶Ó" 
+		"ÂŞ²¼ÁÖÔËÊä½¢¶Ó" "Âó¿ËÀÕÄÏÔËÊä½¢¶Ó" "ºº¿ËË¹ÔËÊä½¢¶Ó" "´ïÀûÔËÊä½¢¶Ó" "°£Àï¿ËÉ­ÔËÊä½¢¶Ó" "±¾½ÜÃ÷ÔËÊä½¢¶Ó" "À³¶÷ÔËÊä½¢¶Ó" "ÌØÀ¼ÔËÊä½¢¶Ó" "²¼À³¿ËÎ¬¶ûÔËÊä½¢¶Ó" "Ë¹µÙ¶ûË¹ÔËÊä½¢¶Ó" "¶Ù°ÍÔËÊä½¢¶Ó" 
+		"Î¬¼ªÄáÑÇ´÷¶ûÔËÊä½¢¶Ó" "Õ²ÄşË¹ÔËÊä½¢¶Ó" "Àû¶ûÔËÊä½¢¶Ó" "Äá¿ËËÉÔËÊä½¢¶Ó" "¸£Ë¹ÌØÔËÊä½¢¶Ó" "ºàµÂÉ­ÔËÊä½¢¶Ó" "ÂŞ¿ËÎéµÂÔËÊä½¢¶Ó" "°îÄáÎ¬¶ûÔËÊä½¢¶Ó" "ÍĞÂíË¹ÔËÊä½¢¶Ó" "Ğ»¶ûÂüÔËÊä½¢¶Ó" "¿Æ¶ûÔËÊä½¢¶Ó" 
+		"Ì©ÀÕÔËÊä½¢¶Ó" "Ğ¡¿­Ë¹ÔËÊä½¢¶Ó" "¸£À×Ë¹ÌØÔËÊä½¢¶Ó" "Ã×ÇĞ¶ûÔËÊä½¢¶Ó" "Ë¹Í¨ÔËÊä½¢¶Ó" "µÂÀ×¶ÙÔËÊä½¢¶Ó" "Âí¿âË¹´ïÀûÔËÊä½¢¶Ó" "Ô¼º²µÂÀûÔËÊä½¢¶Ó" "ºàÀûË¹¿ÆÌØÔËÊä½¢¶Ó" "¹şÌØ¿ËÀ×¶÷ÔËÊä½¢¶Ó" "¿âµÏË¹ÔËÊä½¢¶Ó" 
+		"Î¬¿ËË¹ÔËÊä½¢¶Ó" "Ô¼º²²¼Â³¶ûÔËÊä½¢¶Ó" "ÎÖ¶÷ÔËÊä½¢¶Ó" "ÍĞÂíË¹Åá¶÷ÔËÊä½¢¶Ó" "°¢¶û¿ËÌØÔËÊä½¢¶Ó" "ÍşË¹ÆÕÎ÷ÔËÊä½¢¶Ó" "ÒÁË¹ÌØÂüÔËÊä½¢¶Ó" "¿Æ¶û±ÈÔËÊä½¢¶Ó" "ºú¿ËÔËÊä½¢¶Ó" "Ã×¶ûË¹ÔËÊä½¢¶Ó" "Î¤²®Ë¹ÌØÔËÊä½¢¶Ó" 
+		"¹ş´ïÍşÔËÊä½¢¶Ó" "À×µÂÔËÊä½¢¶Ó" "¿¨ÌØÀ³ÌØÔËÊä½¢¶Ó" "Í¼À­¶÷ÔËÊä½¢¶Ó" "¸ğÀ×ÔËÊä½¢¶Ó" "¹Å¶÷ÔËÊä½¢¶Ó" "±«¶ûÔËÊä½¢¶Ó" "Âó¿¼ÒÁÔËÊä½¢¶Ó" "ÌÀÆÕÉ­ÔËÊä½¢¶Ó" "»ôÌØÔËÊä½¢¶Ó" "´ïÀï°ÂÔËÊä½¢¶Ó" 
+		"»ù¶ûÄ¦ÔËÊä½¢¶Ó" "À×Ã÷¶ÙÔËÊä½¢¶Ó" "¿ËÂŞ¿ËÌØÔËÊä½¢¶Ó" "Ô¼º²Ñ·ÔËÊä½¢¶Ó" "²¼ÀïÆæÂüÔËÊä½¢¶Ó" "Î¬Å©ºúµÂÔËÊä½¢¶Ó" "ÌÀÉ­ÔËÊä½¢¶Ó" "Ë÷ÈøÔËÊä½¢¶Ó" "ÆÕÀ­ÌØÔËÊä½¢¶Ó" "ÍßµÂÔËÊä½¢¶Ó" "µÏ¿ËË¹ÔËÊä½¢¶Ó" 
+		"»ôÆÕ½ğË¹ÔËÊä½¢¶Ó" "°¬ÂÔÌØÔËÊä½¢¶Ó" "ÎÖ¿ËÌ©ÀÕÔËÊä½¢¶Ó" "°¢¶ûÍßÀ­¶àÔËÊä½¢¶Ó" "Ã·µÂÔËÊä½¢¶Ó" "²¨×ÈÂüÔËÊä½¢¶Ó" "É³ÀûÎÄÔËÊä½¢¶Ó" "°ÂË¹¶¡ÔËÊä½¢¶Ó" "ÂíÉ³ÍĞÂíË¹ÔËÊä½¢¶Ó" "ÂóÌÆÄÉÔËÊä½¢¶Ó" "°¬ÀöÉ¯Äá¿ËËÉÔËÊä½¢¶Ó" 
+		"Âí¿ËÔËÊä½¢¶Ó" "°£¶ûË¹ÎÖË¹ÔËÊä½¢¶Ó" "ÌØË¹À­ÔËÊä½¢¶Ó" "²¼Â×ÄÏÔËÊä½¢¶Ó" "¿ËÁÖ¶ÙÔËÊä½¢¶Ó" "°£¶ûÎÂÑïÔËÊä½¢¶Ó" "ººÄÈÔËÊä½¢¶Ó" "´÷¿ËÔËÊä½¢¶Ó" "ÂüÄşÔËÊä½¢¶Ó" "¹şÀïË¹ÔËÊä½¢¶Ó" "ÁõÒ×Ë¹ÔËÊä½¢¶Ó" 
+		"µÚ1ÔËÊä½¢¶Ó" "µÚ2ÔËÊä½¢¶Ó" "µÚ3ÔËÊä½¢¶Ó" "µÚ4ÔËÊä½¢¶Ó" "µÚ5ÔËÊä½¢¶Ó" "µÚ6ÔËÊä½¢¶Ó" "µÚ7ÔËÊä½¢¶Ó" "µÚ8ÔËÊä½¢¶Ó" "µÚ9ÔËÊä½¢¶Ó" "µÚ10ÔËÊä½¢¶Ó" "µÚ11ÔËÊä½¢¶Ó" 
+		"µÚ12ÔËÊä½¢¶Ó" "µÚ13ÔËÊä½¢¶Ó" "µÚ14ÔËÊä½¢¶Ó" "µÚ15ÔËÊä½¢¶Ó" "µÚ16ÔËÊä½¢¶Ó" "µÚ17ÔËÊä½¢¶Ó" "µÚ18ÔËÊä½¢¶Ó" "µÚ19ÔËÊä½¢¶Ó" "µÚ20ÔËÊä½¢¶Ó" "µÚ21ÔËÊä½¢¶Ó" "µÚ22ÔËÊä½¢¶Ó" 
+		"µÚ23ÔËÊä½¢¶Ó" "µÚ24ÔËÊä½¢¶Ó" "µÚ25ÔËÊä½¢¶Ó" "µÚ26ÔËÊä½¢¶Ó" "µÚ27ÔËÊä½¢¶Ó" "µÚ28ÔËÊä½¢¶Ó" "µÚ29ÔËÊä½¢¶Ó" "µÚ30ÔËÊä½¢¶Ó" "µÚ31ÔËÊä½¢¶Ó" "µÚ32ÔËÊä½¢¶Ó" "µÚ33ÔËÊä½¢¶Ó" 
+		"µÚ34ÔËÊä½¢¶Ó" "µÚ35ÔËÊä½¢¶Ó" "µÚ36ÔËÊä½¢¶Ó" "µÚ37ÔËÊä½¢¶Ó" "µÚ38ÔËÊä½¢¶Ó" "µÚ39ÔËÊä½¢¶Ó" "µÚ40ÔËÊä½¢¶Ó" "µÚ41ÔËÊä½¢¶Ó" "µÚ42ÔËÊä½¢¶Ó" "µÚ43ÔËÊä½¢¶Ó" "µÚ44ÔËÊä½¢¶Ó" 
+		"µÚ45ÔËÊä½¢¶Ó" "µÚ46ÔËÊä½¢¶Ó" "µÚ47ÔËÊä½¢¶Ó" "µÚ48ÔËÊä½¢¶Ó" "µÚ49ÔËÊä½¢¶Ó" "µÚ50ÔËÊä½¢¶Ó" 
+	}
+	assault_ship = {
+		"µÀ²¼¶û´÷ÔËÊä½¢¶Ó" "Ñî°Ùº²ÔËÊä½¢¶Ó" "ÌØÀ­Î¬Ë¹ÔËÊä½¢¶Ó" "Ê©ÍĞÒÁ¸¥É£ÌØÔËÊä½¢¶Ó" "±¾ÄşÔËÊä½¢¶Ó" "ÆÕÀ­Ë¹»ùÔËÊä½¢¶Ó" "ĞİË¹¶ÙÔËÊä½¢¶Ó" "Ê·¿¼ÌØ¿­ÒÁÔËÊä½¢¶Ó" "µÀ¸ñÀ­Ë¹ÔËÊä½¢¶Ó" "ÀïµÂÔËÊä½¢¶Ó" "ÂóµÏÑ·ÔËÊä½¢¶Ó" 
+		"°Í¶ÙÔËÊä½¢¶Ó" "¹ÌÌØÒìÔËÊä½¢¶Ó" "Î¤¶÷ÔËÊä½¢¶Ó" "ºº¿¼¿ËÔËÊä½¢¶Ó" "µÂ¿ËË¹ÌØÔËÊä½¢¶Ó" "¿ËÀ³¶÷ÔËÊä½¢¶Ó" "Âó½ğÀûÔËÊä½¢¶Ó" "¿¨Ë¹ÌØÔËÊä½¢¶Ó" "±´ÃÉÌØÔËÊä½¢¶Ó" "µÏ½ğÉ­ÔËÊä½¢¶Ó" "ËÍË®¸¾ÄªÀòÔËÊä½¢¶Ó" 
+		"µÂÎÖÀ­¿ËÔËÊä½¢¶Ó" "Ë¹Í¼ÑÇÌØÔËÊä½¢¶Ó" "´ïÀ­Ë¹ÔËÊä½¢¶Ó" "°¬Ã×ÂŞ¶ò¶ûÔËÊä½¢¶Ó" "»ªÀ³Ê¿ÔËÊä½¢¶Ó" "ÅåÀïÔËÊä½¢¶Ó" "¹şÁé¶ÙÔËÊä½¢¶Ó" "¸ñÀ­Ë¹ÔËÊä½¢¶Ó" "Ô¼º²×¯°ØÔËÊä½¢¶Ó" "À¼¼ª¶ûÔËÊä½¢¶Ó" "Èø¿¨¼ÓÎ¬ÑÇÔËÊä½¢¶Ó" 
+		"ÀûµÂÔËÊä½¢¶Ó" "ÂíĞŞÑ·ÔËÊä½¢¶Ó" "»ôÀ¼µÂÔËÊä½¢¶Ó" "ÎÄ¼ÎÌØÔËÊä½¢¶Ó" "ºúµÂÔËÊä½¢¶Ó" "´÷Î¬Ë¹ÔËÊä½¢¶Ó" "±È¶÷ÔËÊä½¢¶Ó" "²¼À­¿ËË¹¶ÙÔËÊä½¢¶Ó" "ºàÀûËóÂŞÔËÊä½¢¶Ó" "°¬Â×ÆÂÔËÊä½¢¶Ó" "Ô¼º²½ÜÔËÊä½¢¶Ó" 
+		"ÑÇµ±Ë¹ÔËÊä½¢¶Ó" "°Â¿ËÀûÔËÊä½¢¶Ó" "µÀÆæÔËÊä½¢¶Ó" "¸ÇÏ£ÎÄÔËÊä½¢¶Ó" "°¢Â×ÔËÊä½¢¶Ó" "±´¶ûÔËÊä½¢¶Ó" "Ğ»¶ûÂüÔËÊä½¢¶Ó" "¸ñÀ×ÔËÊä½¢¶Ó" "±¾½ÜÃ÷¸»À¼¿ËÁÖÔËÊä½¢¶Ó" "¿¨ÄÍ»ùÔËÊä½¢¶Ó" "Âí¿ËÍÂÎÂÔËÊä½¢¶Ó" 
+		"ÂŞ²¼ÁÖÔËÊä½¢¶Ó" "Âó¿ËÀÕÄÏÔËÊä½¢¶Ó" "ºº¿ËË¹ÔËÊä½¢¶Ó" "´ïÀûÔËÊä½¢¶Ó" "°£Àï¿ËÉ­ÔËÊä½¢¶Ó" "±¾½ÜÃ÷ÔËÊä½¢¶Ó" "À³¶÷ÔËÊä½¢¶Ó" "ÌØÀ¼ÔËÊä½¢¶Ó" "²¼À³¿ËÎ¬¶ûÔËÊä½¢¶Ó" "Ë¹µÙ¶ûË¹ÔËÊä½¢¶Ó" "¶Ù°ÍÔËÊä½¢¶Ó" 
+		"Î¬¼ªÄáÑÇ´÷¶ûÔËÊä½¢¶Ó" "Õ²ÄşË¹ÔËÊä½¢¶Ó" "Àû¶ûÔËÊä½¢¶Ó" "Äá¿ËËÉÔËÊä½¢¶Ó" "¸£Ë¹ÌØÔËÊä½¢¶Ó" "ºàµÂÉ­ÔËÊä½¢¶Ó" "ÂŞ¿ËÎéµÂÔËÊä½¢¶Ó" "°îÄáÎ¬¶ûÔËÊä½¢¶Ó" "ÍĞÂíË¹ÔËÊä½¢¶Ó" "Ğ»¶ûÂüÔËÊä½¢¶Ó" "¿Æ¶ûÔËÊä½¢¶Ó" 
+		"Ì©ÀÕÔËÊä½¢¶Ó" "Ğ¡¿­Ë¹ÔËÊä½¢¶Ó" "¸£À×Ë¹ÌØÔËÊä½¢¶Ó" "Ã×ÇĞ¶ûÔËÊä½¢¶Ó" "Ë¹Í¨ÔËÊä½¢¶Ó" "µÂÀ×¶ÙÔËÊä½¢¶Ó" "Âí¿âË¹´ïÀûÔËÊä½¢¶Ó" "Ô¼º²µÂÀûÔËÊä½¢¶Ó" "ºàÀûË¹¿ÆÌØÔËÊä½¢¶Ó" "¹şÌØ¿ËÀ×¶÷ÔËÊä½¢¶Ó" "¿âµÏË¹ÔËÊä½¢¶Ó" 
+		"Î¬¿ËË¹ÔËÊä½¢¶Ó" "Ô¼º²²¼Â³¶ûÔËÊä½¢¶Ó" "ÎÖ¶÷ÔËÊä½¢¶Ó" "ÍĞÂíË¹Åá¶÷ÔËÊä½¢¶Ó" "°¢¶û¿ËÌØÔËÊä½¢¶Ó" "ÍşË¹ÆÕÎ÷ÔËÊä½¢¶Ó" "ÒÁË¹ÌØÂüÔËÊä½¢¶Ó" "¿Æ¶û±ÈÔËÊä½¢¶Ó" "ºú¿ËÔËÊä½¢¶Ó" "Ã×¶ûË¹ÔËÊä½¢¶Ó" "Î¤²®Ë¹ÌØÔËÊä½¢¶Ó" 
+		"¹ş´ïÍşÔËÊä½¢¶Ó" "À×µÂÔËÊä½¢¶Ó" "¿¨ÌØÀ³ÌØÔËÊä½¢¶Ó" "Í¼À­¶÷ÔËÊä½¢¶Ó" "¸ğÀ×ÔËÊä½¢¶Ó" "¹Å¶÷ÔËÊä½¢¶Ó" "±«¶ûÔËÊä½¢¶Ó" "Âó¿¼ÒÁÔËÊä½¢¶Ó" "ÌÀÆÕÉ­ÔËÊä½¢¶Ó" "»ôÌØÔËÊä½¢¶Ó" "´ïÀï°ÂÔËÊä½¢¶Ó" 
+		"»ù¶ûÄ¦ÔËÊä½¢¶Ó" "À×Ã÷¶ÙÔËÊä½¢¶Ó" "¿ËÂŞ¿ËÌØÔËÊä½¢¶Ó" "Ô¼º²Ñ·ÔËÊä½¢¶Ó" "²¼ÀïÆæÂüÔËÊä½¢¶Ó" "Î¬Å©ºúµÂÔËÊä½¢¶Ó" "ÌÀÉ­ÔËÊä½¢¶Ó" "Ë÷ÈøÔËÊä½¢¶Ó" "ÆÕÀ­ÌØÔËÊä½¢¶Ó" "ÍßµÂÔËÊä½¢¶Ó" "µÏ¿ËË¹ÔËÊä½¢¶Ó" 
+		"»ôÆÕ½ğË¹ÔËÊä½¢¶Ó" "°¬ÂÔÌØÔËÊä½¢¶Ó" "ÎÖ¿ËÌ©ÀÕÔËÊä½¢¶Ó" "°¢¶ûÍßÀ­¶àÔËÊä½¢¶Ó" "Ã·µÂÔËÊä½¢¶Ó" "²¨×ÈÂüÔËÊä½¢¶Ó" "É³ÀûÎÄÔËÊä½¢¶Ó" "°ÂË¹¶¡ÔËÊä½¢¶Ó" "ÂíÉ³ÍĞÂíË¹ÔËÊä½¢¶Ó" "ÂóÌÆÄÉÔËÊä½¢¶Ó" "°¬ÀöÉ¯Äá¿ËËÉÔËÊä½¢¶Ó" 
+		"Âí¿ËÔËÊä½¢¶Ó" "°£¶ûË¹ÎÖË¹ÔËÊä½¢¶Ó" "ÌØË¹À­ÔËÊä½¢¶Ó" "²¼Â×ÄÏÔËÊä½¢¶Ó" "¿ËÁÖ¶ÙÔËÊä½¢¶Ó" "°£¶ûÎÂÑïÔËÊä½¢¶Ó" "ººÄÈÔËÊä½¢¶Ó" "´÷¿ËÔËÊä½¢¶Ó" "ÂüÄşÔËÊä½¢¶Ó" "¹şÀïË¹ÔËÊä½¢¶Ó" "ÁõÒ×Ë¹ÔËÊä½¢¶Ó" 
+		"µÚ1ÔËÊä½¢¶Ó" "µÚ2ÔËÊä½¢¶Ó" "µÚ3ÔËÊä½¢¶Ó" "µÚ4ÔËÊä½¢¶Ó" "µÚ5ÔËÊä½¢¶Ó" "µÚ6ÔËÊä½¢¶Ó" "µÚ7ÔËÊä½¢¶Ó" "µÚ8ÔËÊä½¢¶Ó" "µÚ9ÔËÊä½¢¶Ó" "µÚ10ÔËÊä½¢¶Ó" "µÚ11ÔËÊä½¢¶Ó" 
+		"µÚ12ÔËÊä½¢¶Ó" "µÚ13ÔËÊä½¢¶Ó" "µÚ14ÔËÊä½¢¶Ó" "µÚ15ÔËÊä½¢¶Ó" "µÚ16ÔËÊä½¢¶Ó" "µÚ17ÔËÊä½¢¶Ó" "µÚ18ÔËÊä½¢¶Ó" "µÚ19ÔËÊä½¢¶Ó" "µÚ20ÔËÊä½¢¶Ó" "µÚ21ÔËÊä½¢¶Ó" "µÚ22ÔËÊä½¢¶Ó" 
+		"µÚ23ÔËÊä½¢¶Ó" "µÚ24ÔËÊä½¢¶Ó" "µÚ25ÔËÊä½¢¶Ó" "µÚ26ÔËÊä½¢¶Ó" "µÚ27ÔËÊä½¢¶Ó" "µÚ28ÔËÊä½¢¶Ó" "µÚ29ÔËÊä½¢¶Ó" "µÚ30ÔËÊä½¢¶Ó" "µÚ31ÔËÊä½¢¶Ó" "µÚ32ÔËÊä½¢¶Ó" "µÚ33ÔËÊä½¢¶Ó" 
+		"µÚ34ÔËÊä½¢¶Ó" "µÚ35ÔËÊä½¢¶Ó" "µÚ36ÔËÊä½¢¶Ó" "µÚ37ÔËÊä½¢¶Ó" "µÚ38ÔËÊä½¢¶Ó" "µÚ39ÔËÊä½¢¶Ó" "µÚ40ÔËÊä½¢¶Ó" "µÚ41ÔËÊä½¢¶Ó" "µÚ42ÔËÊä½¢¶Ó" "µÚ43ÔËÊä½¢¶Ó" "µÚ44ÔËÊä½¢¶Ó" 
+		"µÚ45ÔËÊä½¢¶Ó" "µÚ46ÔËÊä½¢¶Ó" "µÚ47ÔËÊä½¢¶Ó" "µÚ48ÔËÊä½¢¶Ó" "µÚ49ÔËÊä½¢¶Ó" "µÚ50ÔËÊä½¢¶Ó" 
+	}
 }
 
 ministers = {
 	6001 = {
-		name = "Franklin Delano Roosevelt"
+		name = "¸»À¼¿ËÁÖ¡¤ÂŞË¹¸£"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6001
@@ -406,32 +1395,32 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6002 = {
-		name = "John Nance Garner"
+		name = "Ô¼º²¡¤ÄÏË¹¡¤¼ÓÄÉ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6002
 		head_of_state = pig_headed_isolationist
-		head_of_government = naive_optimist
+		head_of_government = pig_headed_isolationist
 		start_date = 1936.1.1
 	}
 	6003 = {
-		name = "Cordell Hull"
+		name = "¿ÆµÂ¶û¡¤ºÕ¶û"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6003
 		foreign_minister = great_compromiser
 		start_date = 1936.1.1
 	}
-	6004 = {
-		name = "George Henry Dern"
+	6077 = {
+		name = "ºàÀû¡¤Ä¦¸ùË÷"
 		ideology = social_democrat
 		loyalty = 1.00
-		picture = M6004
-		armament_minister = military_entrepreneur
+		picture = M6077
+		armament_minister = resource_industrialist
 		start_date = 1936.1.1
 	}
 	6005 = {
-		name = "John Edgar Hoover"
+		name = "°£µÂ¼Ó¡¤ºú·ğ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6005
@@ -440,7 +1429,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6006 = {
-		name = "William Frederick Friedman"
+		name = "ÍşÁ®¡¤¸¥ÀïµÂÂü"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6006
@@ -448,7 +1437,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6007 = {
-		name = "Malin Craig"
+		name = "ÂíÁÖ¡¤¿ËÀ³¸ñ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6007
@@ -457,7 +1446,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6009 = {
-		name = "Claude Augustus Swanson"
+		name = "¿ËÀÍµÂ¡¤Ë¹ÍúÉ­"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6009
@@ -465,7 +1454,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6010 = {
-		name = "Oscar Westover"
+		name = "°ÂË¹¿¨¡¤Î¤Ë¹ÌØÅ·ÎÖ"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M6010
@@ -473,7 +1462,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6032 = {
-		name = "Henry Agard Wallace"
+		name = "ºàÀû¡¤»ªÀ³Ê¿"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6032
@@ -482,7 +1471,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6033 = {
-		name = "Warren Green Hooper"
+		name = "ÍßÂ×¡¤»ô°Ø"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6033
@@ -491,32 +1480,32 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6034 = {
-		name = "Harry S. Truman"
+		name = "¹şÀï¡¤¶ÅÂ³ÃÅ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6034
 		head_of_state = die_hard_reformer
 		head_of_government = flamboyant_tough_guy
-		start_date = 1943.1.1
+		start_date = 1945.1.1
 	}
 	6035 = {
-		name = "Alf Mossman Landon"
-		ideology = social_conservative
+		name = "°¢¶û·ò¡¤ÄªË¹Âü¡¤À¼µÇ"
+		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6035
 		head_of_state = pig_headed_isolationist
 		start_date = 1936.1.1
 	}
 	6036 = {
-		name = "Wendell Willkie"
+		name = "ÎÂµÂ¶û¡¤Íş¶û»ù"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M6036
-		head_of_state = barking_buffoon
+		head_of_state = autocratic_charmer
 		start_date = 1940.1.1
 	}
 	6037 = {
-		name = "Charles McNary"
+		name = "²é¶ûË¹¡¤Âó¿ËÄÉÀï"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M6037
@@ -525,15 +1514,15 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6038 = {
-		name = "Thomas Edmund Dewey"
-		ideology = social_conservative
+		name = "ÍĞÂíË¹¡¤¶ÅÍş"
+		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6038
 		head_of_state = popular_figurehead
 		start_date = 1944.1.1
 	}
 	6039 = {
-		name = "Fritz Kuhn"
+		name = "¸¥Àï´Ä¡¤¿â¶÷"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M6011
@@ -543,7 +1532,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6040 = {
-		name = "Gerald Lyman Kenneth Smith"
+		name = "½ÜÀ­µÂ¡¤Ê·ÃÜË¹"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M6040
@@ -553,7 +1542,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6041 = {
-		name = "Earl Browder"
+		name = "¶ò¶û¡¤°×ÀÍµÂ"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M6041
@@ -561,23 +1550,23 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6042 = {
-		name = "Norman Thomas"
+		name = "ÅµÂü¡¤ÍĞÂíË¹"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M6021
 		head_of_state = insignificant_layman
-		start_date = 1939.1.1
+		start_date = 1940.1.1
 	}
 	6045 = {
-		name = "Joel Bennett Clark"
+		name = "ÇÇ¶û¡¤¿ËÀ­¿Ë"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6045
 		head_of_government = backroom_backstabber
-		start_date = 1939.1.1
+		start_date = 1940.1.1
 	}
 	6047 = {
-		name = "Alben William Barkley"
+		name = "°¬¶û±¾¡¤°Í¿ËÀû"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6047
@@ -585,7 +1574,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	6048 = {
-		name = "Frank Knox"
+		name = "¸¥À¼¿Ë¡¤Åµ¿ËË¹"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6048
@@ -594,7 +1583,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6050 = {
-		name = "John Bricker"
+		name = "Ô¼º²¡¤²¼Àï¿Ë"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6050
@@ -602,8 +1591,8 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6051 = {
-		name = "Strom Thurmond"
-		ideology = social_conservative
+		name = "Ë¹ÌØÂŞÄ·¡¤ÉªÃÉµÂ"
+		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6051
 		head_of_government = old_general
@@ -611,7 +1600,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	6052 = {
-		name = "H.R. Mengert"
+		name = "Âü¸ñÌØ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M6052
@@ -619,7 +1608,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6054 = {
-		name = "Samuel Green"
+		name = "ÈøçÑ¶û¡¤¸ñÁÖ²©Ê¿"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M6054
@@ -628,7 +1617,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6055 = {
-		name = "William Zebulon Foster"
+		name = "ÍşÁ®¡¤¸£Ë¹ÌØ"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M6055
@@ -636,7 +1625,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6056 = {
-		name = "James Cannon"
+		name = "Õ²Ä·Ë¹¡¤¿²Å©"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M6056
@@ -644,7 +1633,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6057 = {
-		name = "Joseph Pratt Lash"
+		name = "Ô¼Éª·ò¡¤À­Ê²"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M6024
@@ -653,7 +1642,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6060 = {
-		name = "Edward Stettinius"
+		name = "°®µÂ»ª¡¤Ë¹Ì©ÌáÄùË¹"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6060
@@ -661,7 +1650,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6061 = {
-		name = "Henry Lewis Stimson"
+		name = "ºàÀû¡¤Ê·Í¡Éú"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6061
@@ -670,7 +1659,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6062 = {
-		name = "Walker Lyerly"
+		name = "ÎÖ¶û¿Ë¡¤À³Àû"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6062
@@ -678,7 +1667,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6063 = {
-		name = "James Byrnes"
+		name = "Õ²Ä·Ë¹¡¤²®¶÷Ë¹"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M6063
@@ -686,17 +1675,17 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	6064 = {
-		name = "George Catlett Marshall"
+		name = "ÇÇÖÎ¡¤ÂíĞª¶û"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6064
 		foreign_minister = ideological_crusader
 		chief_of_staff = school_of_fire_support
 		chief_of_army = decisive_battle_doctrine
-		start_date = 1947.1.1
+		start_date = 1939.1.1
 	}
 	6066 = {
-		name = "Arthur Vandenberg"
+		name = "°¢Éª¡¤·¶µÇ±¤"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6066
@@ -704,7 +1693,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6067 = {
-		name = "Alfred Emanuel Smith"
+		name = "°¢¶û¸¥À×µÂ¡¤Ê·ÃÜË¹"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6067
@@ -712,7 +1701,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6068 = {
-		name = "Gerald Nye"
+		name = "½ÜÀ­¶ûµÂ¡¤ÄÎÒÁ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6068
@@ -720,7 +1709,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6069 = {
-		name = "Ezra Pound"
+		name = "°¬Ë¹À­¡¤ÅÓµÂ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M6069
@@ -728,7 +1717,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6070 = {
-		name = "Charles Coughlin"
+		name = "²é¶ûË¹¡¤¿â¸ñÁÖ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M6013
@@ -736,15 +1725,16 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6071 = {
-		name = "Lawrence Dennis"
+		name = "ÀÍÂ×Ë¹¡¤µ¤ÄáË¹"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M6071
+		head_of_state = barking_buffoon
 		foreign_minister = apologetic_clerk
 		start_date = 1944.1.1
 	}
 	6072 = {
-		name = "Floyd Bjornstjerne Olson"
+		name = "¸¥ÂåÒÁµÂ¡¤°Â¶ûÉ­"
 		ideology = left_wing_radical
 		loyalty = 0.50
 		picture = M6072
@@ -752,7 +1742,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6073 = {
-		name = "Sam Darcy"
+		name = "ÈøÄ·¡¤´ïÎ÷"
 		ideology = stalinist
 		loyalty = 0.50
 		picture = M6073
@@ -760,7 +1750,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	6074 = {
-		name = "James Paul Warburg"
+		name = "Õ²Ä·Ë¹¡¤±£ÂŞ¡¤ÎÖ²®¸ñ"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M6023
@@ -768,7 +1758,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6075 = {
-		name = "Robert Minor"
+		name = "ÂŞ²®ÌØ¡¤Ã×Åµ¶û"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M6075
@@ -776,23 +1766,23 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	6076 = {
-		name = "Eugene Dennis"
+		name = "ÓÈ½ğ¡¤µ¤ÄáË¹"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M6076
 		foreign_minister = biased_intellectual
 		start_date = 1944.1.1
 	}
-	6077 = {
-		name = "Henry Morgenthau"
+	6004 = {
+		name = "ÇÇÖÎ¡¤ºàÀû¡¤µÂ¶÷"
 		ideology = social_democrat
 		loyalty = 1.00
-		picture = M6077
-		armament_minister = resource_industrialist
+		picture = M6004
+		armament_minister = military_entrepreneur
 		start_date = 1936.1.1
 	}
 	6078 = {
-		name = "Harry Lloyd Hopkins"
+		name = "¹şÀï¡¤»ôÆÕ½ğË¹"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6078
@@ -800,7 +1790,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	6079 = {
-		name = "Jesse Holman Jones"
+		name = "ÇíË¹"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6079
@@ -808,7 +1798,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6080 = {
-		name = "Leroy Grumman"
+		name = "À¼µÂÀû¡¤¸ñÂ³Âü"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M6080
@@ -817,7 +1807,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6081 = {
-		name = "Preston Thomas Tucker"
+		name = "ÆÕÀ×Ë¹¶Ù¡¤Ëş¿Ë"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6081
@@ -825,17 +1815,17 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6082 = {
-		name = "Henry John Kaiser"
+		name = "ºàÀû¡¤¿­Ôó"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6082
 		armament_minister = administrative_genius
 		minister_of_intelligence = industrial_specialist
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1944.1.1
 	}
 	6083 = {
-		name = "Robert Porter Patterson"
+		name = "ÂŞ²®ÌØ¡¤ÅÁÌØÉ­"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6083
@@ -843,7 +1833,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	6084 = {
-		name = "Kenneth Claiborne Royall"
+		name = "¿ÏÄáË¹¡¤ÂŞÑÇ¶û"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M6084
@@ -851,7 +1841,7 @@ ministers = {
 		start_date = 1947.1.1
 	}
 	6085 = {
-		name = "Daniel Calhoun Roper"
+		name = "µ¤Äá¶û¡¤ÂŞçê"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6085
@@ -859,7 +1849,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6086 = {
-		name = "James Middleton Cox"
+		name = "Õ²Ä·Ë¹¡¤¿¼¿ËË¹"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6086
@@ -867,7 +1857,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	6089 = {
-		name = "Harry Hines Woodring"
+		name = "¹şÀï¡¤º£ÒòË¹¡¤ÎéµÂÁÖ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6089
@@ -875,7 +1865,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6090 = {
-		name = "John Davison Rockefeller Jr."
+		name = "Ğ¡Ô¼º²¡¤Âå¿Ë·ÆÀÕ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6090
@@ -883,7 +1873,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6091 = {
-		name = "Frederick Vinson"
+		name = "¸¥À×µÂÀï¿Ë¡¤ÎÄÉ­"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6091
@@ -891,7 +1881,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	6092 = {
-		name = "Louis Johnson"
+		name = "Â·Ò×Ë¹¡¤Ô¼º²Ñ·"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6092
@@ -899,15 +1889,15 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	6093 = {
-		name = "Norman Davis"
+		name = "ÅµÂü¡¤´÷Î¬Ë¹"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6093
 		armament_minister = laissez_faires_capitalist
-		start_date = 1936.1.1
+		start_date = 1946.1.1
 	}
 	6094 = {
-		name = "William Dudley Pelley"
+		name = "ÍşÁ®¡¤ÅàÀï"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M6094
@@ -915,7 +1905,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6095 = {
-		name = "Francis Townsend"
+		name = "¸¥ÀÊÎ÷Ë¹¡¤ÌÀÉ­µÂ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M6095
@@ -923,7 +1913,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6096 = {
-		name = "Henry Ford"
+		name = "ºàÀû¡¤¸£ÌØ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M6014
@@ -931,7 +1921,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6097 = {
-		name = "William Frederick Lemke"
+		name = "ÍşÁ®¡¤ÀÕ¿Ë"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M6097
@@ -940,7 +1930,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6098 = {
-		name = "Wyndham Mortimer"
+		name = "ÎÂµÂº£Ä·¡¤ÄªÌáÃ·"
 		ideology = left_wing_radical
 		loyalty = 0.50
 		picture = M6098
@@ -948,7 +1938,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6099 = {
-		name = "Elizabeth Gurley Flynn"
+		name = "ÒÁÀöÉ¯°×¡¤¸¥ÁÕ"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M6099
@@ -956,7 +1946,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	6100 = {
-		name = "Upton Sinclair"
+		name = "¶òÆÕ¶Ù¡¤ĞÁ¿ËÀ³"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M6100
@@ -964,7 +1954,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6101 = {
-		name = "Lemart Harris"
+		name = "ÀÕÂíÌØ¡¤¹şÀïË¹"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M6101
@@ -972,7 +1962,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6102 = {
-		name = "Walther Reuther"
+		name = "ÎÖÌØ¡¤Â³Éª"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M6102
@@ -980,7 +1970,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	6104 = {
-		name = "Victor Selden Clark"
+		name = "Î¬¿ËÍĞ¡¤¿ËÀ­¿Ë"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6104
@@ -988,7 +1978,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6105 = {
-		name = "Henry Chalmers"
+		name = "ºàÀû¡¤²éÄ¬Ë¹"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M6105
@@ -996,7 +1986,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6106 = {
-		name = "Francis Beverley Biddle"
+		name = "¸¥ÀÊÎ÷Ë¹¡¤±´¸¥Àû¡¤±ÈµÂ¶û"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6106
@@ -1004,7 +1994,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6107 = {
-		name = "Frank Murphy"
+		name = "¸¥À¼¿Ë¡¤Ä«·Æ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6107
@@ -1012,7 +2002,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6108 = {
-		name = "Robert Houghwout Jackson"
+		name = "ÂŞ²®ÌØ¡¤½Ü¿ËÑ·"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6108
@@ -1020,7 +2010,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	6110 = {
-		name = "Hugh Simons Gibson"
+		name = "Ğİ¡¤¼ª²¼É­"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6110
@@ -1028,7 +2018,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6113 = {
-		name = "Samuel Roper"
+		name = "ÈøçÑ¶û¡¤ÂŞ²®"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M6113
@@ -1036,7 +2026,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6114 = {
-		name = "William Aalto"
+		name = "ÍşÁ®¡¤°¢¶ûÍĞ"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M6114
@@ -1044,7 +2034,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6115 = {
-		name = "Charles Chaplin"
+		name = "²éÀí¡¤×¿±ğÁÖ"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M6115
@@ -1052,7 +2042,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	6116 = {
-		name = "Raymond Charles Moley"
+		name = "À×ÃÉµÂ¡¤ÄªÀ×"
 		ideology = leninist
 		loyalty = 0.50
 		picture = M6116
@@ -1060,7 +2050,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	6117 = {
-		name = "John Abt"
+		name = "Ô¼º²¡¤°¢²¼ÌØ"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M6029
@@ -1070,7 +2060,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6118 = {
-		name = "Daniel Hoan"
+		name = "µ¤Äá¶û¡¤»ô°²"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M6025
@@ -1078,7 +2068,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	6119 = {
-		name = "Jessica Smith"
+		name = "½àÎ÷¿¨¡¤Ê·ÃÜË¹"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M6119
@@ -1086,7 +2076,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6123 = {
-		name = "Adolf Berle"
+		name = "°¢µÀ·ò¡¤²®Àû"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6123
@@ -1094,7 +2084,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	6124 = {
-		name = "Vincent Astor"
+		name = "ÎÄÉ­ÌØ¡¤°¢Ë¹ÍĞ¶û"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6124
@@ -1102,7 +2092,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	6126 = {
-		name = "Sidney Souers"
+		name = "Ë÷¶ûË¹"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M6126
@@ -1110,7 +2100,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	6127 = {
-		name = "Roscoe Henry Hillenkoetter"
+		name = "ÂŞË¹¿Æ¡¤Ï£Â×¿ÆÌØ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6127
@@ -1118,7 +2108,7 @@ ministers = {
 		start_date = 1947.1.1
 	}
 	6128 = {
-		name = "William Joseph Donovan"
+		name = "ÍşÁ®¡¤¶àÅµÍò"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6128
@@ -1126,7 +2116,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6130 = {
-		name = "Hoyt Sanford Vandenberg"
+		name = "»ôÒÁÌØ¡¤·¶µÇ±¤"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6130
@@ -1134,7 +2124,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	6131 = {
-		name = "Henry Cabot Lodge"
+		name = "ºàÀû¡¤¿¨²¨ÌØ¡¤ÂåÆæ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6131
@@ -1142,7 +2132,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6132 = {
-		name = "Hiram Wesley Evans"
+		name = "Ï£À­Ä·¡¤ÒÁÍòË¹²©Ê¿"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M6132
@@ -1150,16 +2140,16 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6133 = {
-		name = "James Arnold Colescott"
+		name = "¿Æ¶ûË¹¿ÆÌØ²©Ê¿"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M6016
 		minister_of_intelligence = political_specialist
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1940.1.1
 	}
 	6134 = {
-		name = "Harry Haywood"
+		name = "¹şÀï¡¤º£ÎéµÂ"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M6026
@@ -1167,7 +2157,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6137 = {
-		name = "Dwight David Eisenhower"
+		name = "µÂ»³ÌØ¡¤°¬É­ºÀÍş¶û"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6137
@@ -1177,7 +2167,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	6140 = {
-		name = "Parker Sage"
+		name = "ÅÁ¿Ë¶û¡¤Èø¼ª"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M6017
@@ -1185,7 +2175,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6141 = {
-		name = "Hans Amlie"
+		name = "ººË¹¡¤°²Àû"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M6027
@@ -1193,7 +2183,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6143 = {
-		name = "David McKenzie Key"
+		name = "Âó¿ÏÎı¡¤¿­ÒÁ"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M6143
@@ -1201,7 +2191,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6145 = {
-		name = "Omar Nelson Bradley"
+		name = "°ÂÂí¶û¡¤²¼À³µÂÀû"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M6145
@@ -1210,7 +2200,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6148 = {
-		name = "Kenneth Althaus"
+		name = "¿ÏÄáË¹¡¤°¢¶ûÌÕË¹"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M6018
@@ -1218,7 +2208,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6149 = {
-		name = "Oliver Law"
+		name = "°ÂÀû¸¥¡¤ÀÍ"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M6149
@@ -1226,7 +2216,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6150 = {
-		name = "Steve Nelson"
+		name = "Ê·µÙ·ò¡¤ÄÎ¶ûÉ­"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M6150
@@ -1234,7 +2224,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6151 = {
-		name = "Robert Merriman"
+		name = "ÂŞ²®ÌØ¡¤Ã·ÀïÂü"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M6028
@@ -1242,15 +2232,15 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6154 = {
-		name = "Charles Edison"
+		name = "²éÀí¡¤°®µÏÉú"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M6154
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1940.1.1
 	}
 	6155 = {
-		name = "James Vincent Forrestal"
+		name = "Õ²Ä·Ë¹¡¤¸£À×Ë¹ÌØ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6155
@@ -1258,7 +2248,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6156 = {
-		name = "Chester William Nimitz"
+		name = "ÇĞË¹ÌØ¡¤ÄáÃ××È"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6156
@@ -1266,7 +2256,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	6157 = {
-		name = "William Christian Bullitt Jr."
+		name = "ÍşÁ®¡¤²¼ÀïÌØ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6157
@@ -1274,7 +2264,7 @@ ministers = {
 		start_date = 1947.1.1
 	}
 	6158 = {
-		name = "William Harrison Standley"
+		name = "ÍşÁ®¡¤Ë¹Ì¹Àû"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6158
@@ -1282,15 +2272,15 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6159 = {
-		name = "Harold Rainsford Stark"
+		name = "¹şÂŞµÂ¡¤Ë¹Ëş¿Ë"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6159
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1939.1.1
 	}
 	6160 = {
-		name = "Andrew Jackson Higgins"
+		name = "°²µÂÂ³¡¤Ï£½ğË¹"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6160
@@ -1298,7 +2288,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	6162 = {
-		name = "William Daniel Leahy"
+		name = "ÍşÁ®¡¤µ¤Äá¶û¡¤À³Ï£"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6162
@@ -1307,7 +2297,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6163 = {
-		name = "Ernest Joseph King"
+		name = "Å·ÄÚË¹ÌØ¡¤½ğ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6163
@@ -1315,7 +2305,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	6167 = {
-		name = "Henry Harley Arnold"
+		name = "ºàÀû¡¤¹şÅµµÂ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6167
@@ -1323,7 +2313,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	6172 = {
-		name = "Charles Lindbergh"
+		name = "²é¶ûË¹¡¤ÁÖµÂ²®¸ñ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M6020
@@ -1332,7 +2322,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6173 = {
-		name = "Nathan Bedford Forrest III"
+		name = "ÄÚÉ­¡¤¸£À×Ë¹ÌØÈıÊÀ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M6173
@@ -1340,7 +2330,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6174 = {
-		name = "Martin James Monti"
+		name = "Âí¶¡¡¤ÃÉµÙ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M6174
@@ -1348,7 +2338,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	6177 = {
-		name = "William Averell Harriman"
+		name = "¹şÀïÂü"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M6177
@@ -1356,7 +2346,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	6178 = {
-		name = "Thomas Charles Hart"
+		name = "ÍĞÂíË¹¡¤¹şÌØ"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = L60417
@@ -1364,7 +2354,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6179 = {
-		name = "Carl Andrew Spaatz"
+		name = "¿¨¶û¡¤Ë¹ÅÁ×È"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L60557
@@ -1372,7 +2362,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	6180 = {
-		name = "Ira Clarence Eaker"
+		name = "°¬À­¡¤°£¿Ë"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = L60506
@@ -1380,7 +2370,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6181 = {
-		name = "Douglas MacArthur"
+		name = "µÀ¸ñÀ­Ë¹¡¤Âó¿Ë°¢Éª"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L60250
@@ -1390,31 +2380,23 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6183 = {
-		name = "Robert Lee Ghormley"
+		name = "ÂŞ²®ÌØ¡¤¸çÄ·À×"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L60406
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1936.1.1
 	}
 	6184 = {
-		name = "Frank Byron Rowlett"
+		name = "¸¥À¼¿Ë¡¤ÂŞÀ×ÌØ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6184
 		minister_of_intelligence = naval_intelligence_specialist
 		start_date = 1936.1.1
 	}
-	6187 = {
-		name = "Dennis Lawrence"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M6187
-		head_of_government = happy_amateur
-		start_date = 1936.1.1
-	}
 	6190 = {
-		name = "Robert Elkington Wood"
+		name = "ÂŞ²®ÌØ¡¤ÎéµÂ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M6190
@@ -1423,7 +2405,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6191 = {
-		name = "Gerald Burton Winrod"
+		name = "½ÜÀ­µÂ¡¤ÎÂÂŞµÂ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M6191
@@ -1431,7 +2413,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	6193 = {
-		name = "Walter Bedell-Smith"
+		name = "ÎÖ¶ûÌØ¡¤±´µÂ¶û¡¤Ê·ÃÜË¹"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = L60031
@@ -1440,7 +2422,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	6194 = {
-		name = "Mark Clark"
+		name = "Âí¿Ë¡¤¿ËÀ­¿Ë"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = L60098
@@ -1448,7 +2430,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	6195 = {
-		name = "Joseph Lawton Collins"
+		name = "ÇÇ¡¤¿ÂÁÖË¹"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = L60105
@@ -1456,7 +2438,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	6196 = {
-		name = "Joseph Stilwell"
+		name = "Ô¼Éª·ò¡¤Ê·µÏÍş"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = L60341
@@ -1464,7 +2446,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6197 = {
-		name = "William Halsey"
+		name = "ÍşÁ®¡¤¹ş¶ûÎ÷"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = L60414
@@ -1472,7 +2454,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6198 = {
-		name = "Dean Acheson"
+		name = "µÏ¶÷¡¤°¬ÆæÑ·"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6198
@@ -1481,7 +2463,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	6199 = {
-		name = "Harold Ickes"
+		name = "¹şÂŞµÂ¡¤ÒÁ¿ËË¹"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6199
@@ -1489,7 +2471,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6200 = {
-		name = "Archibald MacLeish"
+		name = "°¢Ææ²©¶ûµÂ¡¤Âó¿ËÀûÊ²"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M6200
@@ -1498,7 +2480,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	6202 = {
-		name = "Burton Kendall Wheeler"
+		name = "²®¶Ù¡¤»İÇÚ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M6202
@@ -1506,7 +2488,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6203 = {
-		name = "Thomas Connally"
+		name = "ÌÀÄ·¡¤¿µÄÉÀû"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6203
@@ -1514,15 +2496,15 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	6204 = {
-		name = "Charles Evans Hughes"
-		ideology = social_conservative
+		name = "²é¶ûË¹¡¤ĞŞË¹"
+		ideology = market_liberal
 		loyalty = 0.75
 		picture = M6204
 		minister_of_security = efficient_sociopath
 		start_date = 1936.1.1
 	}
 	6205 = {
-		name = "Hugo Black"
+		name = "Óê¹û¡¤²¼À³¿Ë"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6205
@@ -1530,7 +2512,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	6206 = {
-		name = "Robert Ferdinand Wagner I"
+		name = "ÂŞ²®ÌØ¡¤Íß¸ñÄÉ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6206
@@ -1538,7 +2520,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6209 = {
-		name = "Adlai Stevenson"
+		name = "Ê·µÙÎÄÉ­"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6209
@@ -1546,7 +2528,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	6210 = {
-		name = "Earl Warren"
+		name = "¶ò¶û¡¤ÎÖÂ×"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6210
@@ -1554,7 +2536,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	6211 = {
-		name = "Richard Milhous Nixon"
+		name = "Àí²éµÂ¡¤Äá¿ËËÉ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6211
@@ -1563,7 +2545,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	6212 = {
-		name = "John Sparkman"
+		name = "Ô¼º²¡¤Ë¹ÅÁ¿ËÂü"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6212
@@ -1571,7 +2553,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	6214 = {
-		name = "Allen Tate"
+		name = "°¬Â×¡¤Ì©ÌØ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6214
@@ -1579,7 +2561,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	6215 = {
-		name = "John Foster Dulles"
+		name = "Ô¼º²¡¤¸£Ë¹ÌØ¡¤¶ÅÀÕË¹"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6215
@@ -1587,7 +2569,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	6216 = {
-		name = "Culbert Levy Olson"
+		name = "¿¨²®ÌØ¡¤°Â¶ûÉ­"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6216
@@ -1595,7 +2577,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	6217 = {
-		name = "John Wesley Snyder"
+		name = "Ô¼º²¡¤Ë¹ÄÍµÂ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6217
@@ -1603,7 +2585,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	6218 = {
-		name = "Joseph Bracken Lee"
+		name = "Ô¼Éª·ò¡¤Àî"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6218
@@ -1611,7 +2593,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	6219 = {
-		name = "George Magoffin Humphrey"
+		name = "ÇÇÖÎ¡¤ºº¸¥À³"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6219
@@ -1619,7 +2601,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	6220 = {
-		name = "Herbert Romulus O'Connor"
+		name = "ºÕ²®ÌØ¡¤°Â¿µÅµ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6220
@@ -1627,7 +2609,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	6221 = {
-		name = "Julius Albert Krug"
+		name = "¿ËÂ³¸ñ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6221
@@ -1635,7 +2617,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	6222 = {
-		name = "Oscar Littleton Chapman"
+		name = "°ÂË¹¿¨¡¤ÏÄÆÕÂü"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6222
@@ -1643,7 +2625,7 @@ ministers = {
 		start_date = 1951.1.1
 	}
 	6223 = {
-		name = "Gordon Knight"
+		name = "¸êµÇ¡¤ÄÎÌØ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6223
@@ -1651,7 +2633,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	6224 = {
-		name = "Douglas McKay"
+		name = "µÀ¸ñÀ­Ë¹¡¤Âó¿­"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6224
@@ -1659,7 +2641,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	6225 = {
-		name = "Frank John Lausche"
+		name = "À­Ê²"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6225
@@ -1667,7 +2649,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	6227 = {
-		name = "John Howard Pyle"
+		name = "Ô¼º²¡¤ÅÉ¶û"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6227
@@ -1675,7 +2657,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	6228 = {
-		name = "Allen Welsh Dulles"
+		name = "°¢Â×¡¤¶ÅÀÕË¹"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6228
@@ -1683,7 +2665,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	6229 = {
-		name = "William Preston Lane"
+		name = "ÍşÁ®¡¤À×¶÷"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6229
@@ -1691,7 +2673,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	6231 = {
-		name = "J. Lawton Collins"
+		name = "ÀÍ¶Ù¡¤¿ÂÁÖË¹"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L60105
@@ -1699,15 +2681,15 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	6232 = {
-		name = "Louis Emil Denfeld"
+		name = "Â·Ò×Ë¹¡¤¶Ù·Æ¶ûµÂ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6232
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1948.1.1
 	}
 	6233 = {
-		name = "Forrest Percival Sherman"
+		name = "¸£À×Ë¹ÌØ¡¤Ğ»¶ûÂü"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L60464
@@ -1715,7 +2697,7 @@ ministers = {
 		start_date = 1949.1.1
 	}
 	6234 = {
-		name = "William Morrow Fechteler"
+		name = "ÍşÁ®¡¤·Ñ¿ËÌØÀÕ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L60402
@@ -1723,7 +2705,7 @@ ministers = {
 		start_date = 1951.1.1
 	}
 	6235 = {
-		name = "Hoyt Vandenberg"
+		name = "·¶µÇ±¤"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M6235
@@ -1731,7 +2713,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	6237 = {
-		name = "Charles Willoughby"
+		name = "²é¶ûË¹¡¤Íş¶ûÀÍ±È"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M6237
@@ -1739,7 +2721,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	6238 = {
-		name = "Joseph McCarthy"
+		name = "Ô¼Éª·ò¡¤Âó¿¨Îı"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6238
@@ -1748,7 +2730,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	6240 = {
-		name = "Christian Archibald Herter"
+		name = "¿ËÀïË¹ÇÙ¡¤ºÕÍÑ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6240
@@ -1756,7 +2738,7 @@ ministers = {
 		start_date = 1959.1.1
 	}
 	6242 = {
-		name = "John Fitzgerald Kennedy"
+		name = "Ô¼º²¡¤¿ÏÄáµÏ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6242
@@ -1764,7 +2746,7 @@ ministers = {
 		start_date = 1960.1.1
 	}
 	6243 = {
-		name = "Henry Cabot Lodge Jr."
+		name = "Ğ¡ºàÀû¡¤¿¨²¨ÌØ¡¤ÂåÆæ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6243
@@ -1772,7 +2754,7 @@ ministers = {
 		start_date = 1956.1.1
 	}
 	6244 = {
-		name = "Lyndon Baines Johnson"
+		name = "ÁÖµÇ¡¤Ô¼º²Ñ·"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6244
@@ -1781,7 +2763,7 @@ ministers = {
 		start_date = 1960.1.1
 	}
 	6245 = {
-		name = "Estes Kefauver"
+		name = "°£Ë¹µÙË¹¡¤»ù¸£¸¥"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6245
@@ -1789,7 +2771,7 @@ ministers = {
 		start_date = 1960.1.1
 	}
 	6247 = {
-		name = "Dean Rusk"
+		name = "µÏ°²¡¤À°Ë¹¿Ë"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6247
@@ -1797,7 +2779,7 @@ ministers = {
 		start_date = 1960.1.1
 	}
 	6248 = {
-		name = "Robert Bernard Anderson"
+		name = "ÂŞ²®ÌØ¡¤°²µÂÉ­"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6248
@@ -1805,7 +2787,7 @@ ministers = {
 		start_date = 1956.1.1
 	}
 	6249 = {
-		name = "Robert Abercrombie Lovett"
+		name = "ÂŞ²®ÌØ¡¤¸£Ë¹ÌØ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6249
@@ -1813,7 +2795,7 @@ ministers = {
 		start_date = 1956.1.1
 	}
 	6250 = {
-		name = "Clarence Douglas Dillon"
+		name = "µÀ¸ñÀ­Ë¹¡¤µÒÂ×"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6250
@@ -1821,15 +2803,15 @@ ministers = {
 		start_date = 1960.1.1
 	}
 	6251 = {
-		name = "Nelson Aldrich Rockefeller"
+		name = "ÄÉ¶ûÑ·¡¤Âå¿Ë·ÆÀÕ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6251
 		armament_minister = laissez_faires_capitalist
-		start_date = 1944.1.1
+		start_date = 1960.1.1
 	}
 	6252 = {
-		name = "Peter Reilly"
+		name = "Æ¤ÌØ¡¤À×Àû"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6252
@@ -1837,15 +2819,15 @@ ministers = {
 		start_date = 1956.1.1
 	}
 	6253 = {
-		name = "John Alexander McCone"
+		name = "Ô¼º²¡¤Âó¿Ë¿â¶÷"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6253
 		minister_of_intelligence = technical_specialist
-		start_date = 1961.1.1
+		start_date = 1960.1.1
 	}
 	6255 = {
-		name = "Hubert Humphrey"
+		name = "Ğİ²®ÌØ¡¤ºº¸¥À³"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6255
@@ -1853,15 +2835,15 @@ ministers = {
 		start_date = 1963.1.1
 	}
 	6256 = {
-		name = "Arthur William Radford"
+		name = "°¢Éª¡¤À­µÂ¸£µÂ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6256
 		chief_of_staff = school_of_psychology
-		start_date = 1948.1.1
+		start_date = 1954.1.1
 	}
 	6257 = {
-		name = "Nathan Farragut Twining"
+		name = "ÌØÎÄÄş"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L60560
@@ -1870,7 +2852,7 @@ ministers = {
 		start_date = 1957.1.1
 	}
 	6258 = {
-		name = "Lyman Louis Lemnitzer"
+		name = "À³Âü¡¤À¼Äá×È¶û"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = L60244
@@ -1879,7 +2861,7 @@ ministers = {
 		start_date = 1960.1.1
 	}
 	6259 = {
-		name = "Maxwell Davenport Taylor"
+		name = "Âó¿ËË¹Î¬¶û¡¤Ì©ÀÕ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = L60348
@@ -1888,7 +2870,7 @@ ministers = {
 		start_date = 1962.1.1
 	}
 	6260 = {
-		name = "Matthew Bunker Ridgway"
+		name = "ÂíĞŞ¡¤ÀîÆæÎ¢"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L60311
@@ -1896,7 +2878,7 @@ ministers = {
 		start_date = 1953.1.1
 	}
 	6263 = {
-		name = "George Henry Decker"
+		name = "ÇÇÖÎ¡¤´÷¿Ë"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = L60127
@@ -1904,7 +2886,7 @@ ministers = {
 		start_date = 1960.1.1
 	}
 	6264 = {
-		name = "Earle Gilmore Wheeler"
+		name = "ÍşÀÕ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = L60368
@@ -1912,7 +2894,7 @@ ministers = {
 		start_date = 1962.1.1
 	}
 	6265 = {
-		name = "Robert Bostwick Carney"
+		name = "ÂŞ²®ÌØ¡¤¿¨Äá"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M6265
@@ -1920,7 +2902,7 @@ ministers = {
 		start_date = 1953.1.1
 	}
 	6266 = {
-		name = "Arleigh Albert Burke"
+		name = "°¢Àû¡¤²®¿Ë"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L60386
@@ -1928,15 +2910,15 @@ ministers = {
 		start_date = 1955.1.1
 	}
 	6267 = {
-		name = "George Whelan Anderson Jr."
+		name = "ÇÇÖÎ¡¤°²µÂÉ­"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = L60380
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1961.1.1
 	}
 	6268 = {
-		name = "David Lamar McDonald"
+		name = "´óÎÀ¡¤ÂóÌÆÄÉ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M6268
@@ -1944,7 +2926,7 @@ ministers = {
 		start_date = 1963.1.1
 	}
 	6270 = {
-		name = "Thomas Dresser White"
+		name = "ÍĞÂíË¹¡¤»³ÌØ"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = L60370
@@ -1952,120 +2934,12 @@ ministers = {
 		start_date = 1957.1.1
 	}
 	6271 = {
-		name = "Curtis LeMay"
-		ideology = social_conservative
+		name = "¿ÂµÙË¹¡¤ÀîÃ·"
+		ideology = market_liberal
 		loyalty = 0.75
 		picture = L60532
 		chief_of_air = carpet_bombing_doctrine
 		start_date = 1961.1.1
 	}
-	# Generic dummy ministers
-	96002 = {
-		name = "Nameless Clerk"
-		ideology = national_socialist
-		loyalty = 1.0
-		picture = MNationalSocialist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		start_date = 1936.1.1
-	}
-	96003 = {
-		name = "Nameless Clerk"
-		ideology = fascistic
-		loyalty = 1.0
-		picture = MFascistic
-		chief_of_army = mostly_harmless
-		start_date = 1936.1.1
-	}
-	96004 = {
-		name = "Nameless Clerk"
-		ideology = paternal_autocrat
-		loyalty = 1.0
-		picture = MPaternalAutocrat
-		minister_of_intelligence = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	96005 = {
-		name = "Nameless Clerk"
-		ideology = social_conservative
-		loyalty = 1.0
-		picture = MSocialConservative
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		start_date = 1936.1.1
-	}
-	96006 = {
-		name = "Nameless Clerk"
-		ideology = social_liberal
-		loyalty = 1.0
-		picture = MSocialLiberal
-		start_date = 1936.1.1
-	}
-	96007 = {
-		name = "Nameless Clerk"
-		ideology = social_democrat
-		loyalty = 1.0
-		picture = MSocialDemocrat
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		start_date = 1936.1.1
-	}
-	96008 = {
-		name = "Nameless Clerk"
-		ideology = left_wing_radical
-		loyalty = 1.0
-		picture = MLeftWingRadical
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	96009 = {
-		name = "Nameless Clerk"
-		ideology = leninist
-		loyalty = 1.0
-		picture = MLeninist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	96010 = {
-		name = "Nameless Clerk"
-		ideology = stalinist
-		loyalty = 1.0
-		picture = MStalinist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		start_date = 1936.1.1
-	}	
 }
+

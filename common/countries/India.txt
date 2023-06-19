@@ -1,181 +1,139 @@
 color = { 255  188  102 }
 graphical_culture = Generic
 
-
-
 default_templates = {
-	ENG_infantry = {
-		infnatry_brigade
-		infnatry_brigade
-		infnatry_brigade
+	generic_infantry = {
+		infantry_brigade
+		infantry_brigade
+		infantry_brigade
 	}
-	ENG_motorized = {
-		motorized_brigade
-		motorized_brigade
-		motorized_brigade		
-	}
-	ENG_armoured_1936 = {
-		light_armor_brigade
-		light_armor_brigade
-		motorized_brigade
-	}
-	ENG_armoured_1940 = {
-		armor_brigade
-		armor_brigade
-		motorized_brigade
-	}
-	ENG_airborne = {
-		paratrooper_brigade
-		paratrooper_brigade
-		paratrooper_brigade
-	}
-	ENG_marine = {
-		marine_brigade
-		marine_brigade
-		marine_brigade		
-	}
-	ENG_alpine = {
-		bergsjaeger_brigade
-		bergsjaeger_brigade
-	}	
-	ENG_garrison = {
-		garrison_brigade
-		garrison_brigade
-		garrison_brigade		
-	}
-	ENG_militia = {
+	generic_milita = {
 		militia_brigade
 		militia_brigade
-		militia_brigade		
-	}	
+		militia_brigade
+	}
+	generic_armoured = {
+		armor_brigade
+		motorized_brigade
+		motorized_brigade
+	}
+	generic_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
+	}
 }
 
 unit_names = {
 	infantry_brigade = {
-		"1st Indian Infantry Division" "2nd Indian Infantry Division" "3rd Indian Infantry Division" "4th Indian Infantry Division" "5th Indian Infantry Division" "6th Indian Infantry Division" "7th Indian Infantry Division" "8th Indian Infantry Division" "9th Indian Infantry Division" "10th Indian Infantry Division" "11th Indian Infantry Division" 
-		"12th Indian Infantry Division" "13th Indian Infantry Division" "14th Indian Infantry Division" "15th Indian Infantry Division" "16th Indian Infantry Division" "17th Indian Infantry Division" "18th Indian Infantry Division" "19th Indian Infantry Division" "20th Indian Infantry Division" 
+		"第1印度步兵师" "第2印度步兵师" "第3印度步兵师" "第4印度步兵师" "第5印度步兵师" "第6印度步兵师" "第7印度步兵师" "第8印度步兵师" "第9印度步兵师" "第10印度步兵师" "第11印度步兵师" 
+		"第12印度步兵师" "第13印度步兵师" "第14印度步兵师" "第15印度步兵师" "第16印度步兵师" "第17印度步兵师" "第18印度步兵师" "第19印度步兵师" "第20印度步兵师" 
 	}
 	cavalry_brigade = {
-		"1st Cavalry Division" "2nd Cavalry Division" "3rd Cavalry Division" "4th Cavalry Division" "5th Cavalry Division" "6th Cavalry Division" "7th Cavalry Division" "8th Cavalry Division" "9th Cavalry Division" "10th Cavalry Division" 
+		"第1骑兵师" "第2骑兵师" "第3骑兵师" "第4骑兵师" "第5骑兵师" "第6骑兵师" "第7骑兵师" "第8骑兵师" "第9骑兵师" "第10骑兵师" 
 	}
 	motorized_brigade = {
-		"1st Infantry Division" "2nd Infantry Division" "3rd Infantry Division" "1st Motorized Division" "2nd Motorized Division" "3rd Motorized Division" "4th Motorized Division" "5th Motorized Division" "6th Motorized Division" 
+		"第7摩托化步兵师" "第8摩托化步兵师" "第1摩托化步兵师" "第2摩托化步兵师" "第3摩托化步兵师" "第4摩托化步兵师" "第5摩托化步兵师" "第6摩托化步兵师" "第9摩托化步兵师" "第10摩托化步兵师" "第33摩托化步兵师" 
+		"第34摩托化步兵师" "第35摩托化步兵师" "第36摩托化步兵师" "第37摩托化步兵师" "第38摩托化步兵师" "第39摩托化步兵师" "第40摩托化步兵师" "第41摩托化步兵师" "第42摩托化步兵师" "第43摩托化步兵师" "第44摩托化步兵师" 
+		"第45摩托化步兵师" "第46摩托化步兵师" "第47摩托化步兵师" "第48摩托化步兵师" "第49摩托化步兵师" 
 	}
 	mechanized_brigade = {
-		"1st Infantry Division" "2nd Infantry Division" "3rd Infantry Division" "1st Mechanized Division" "2nd Mechanized Division" "3rd Mechanized Division" "4th Mechanized Division" "5th Mechanized Division" "6th Mechanized Division" "7th Mechanized Division" "8th Mechanized Division" 
-		"9th Mechanized Division" "10th Mechanized Division" 
+		"第1机械化步兵师" "第2机械化步兵师" "第3机械化步兵师" "第4机械化步兵师" "第5机械化步兵师" "第6机械化步兵师" "第7机械化步兵师" "第8机械化步兵师" "第9机械化步兵师" 
 	}
 	light_armor_brigade = {
-		"1st Armoured Division" "2nd Armoured Division" "3rd Armoured Division" "4th Armoured Division" "5th Armoured Division" "6th Armoured Division" "7th Armoured Division" "8th Armoured Division" "9th Armoured Division" "10th Armoured Division" "11th Armoured Division" 
-		"12th Armoured Division" "14th Armoured Division" "15th Armoured Division" 
+		"第1装甲师" "第2装甲师" "第3装甲师" "第4装甲师" "第5装甲师" "第6装甲师" "第7装甲师" "第8装甲师" "第9装甲师" "第10装甲师" "第11装甲师" 
+		"第12装甲师" "第14装甲师" "第15装甲师" 
 	}
 	armor_brigade = {
-		"1st Armoured Division" "2nd Armoured Division" "3rd Armoured Division" "4th Armoured Division" "5th Armoured Division" "6th Armoured Division" "7th Armoured Division" "8th Armoured Division" "9th Armoured Division" "10th Armoured Division" "11th Armoured Division" 
-		"12th Armoured Division" "14th Armoured Division" "15th Armoured Division" 
-	}
+		"第1装甲师" "第2装甲师" "第3装甲师" "第4装甲师" "第5装甲师" "第6装甲师" "第7装甲师" "第8装甲师" "第9装甲师" "第10装甲师" "第11装甲师" 
+		"第12装甲师" "第14装甲师" "第15装甲师" 
+}
 	paratrooper_brigade = {
-		"1st Airborne Division" "2nd Airborne Division" "3rd Airborne Division" "4th Airborne Division" "5th Airborne Division" "6th Airborne Division" "7th Airborne Division" "8th Airborne Division" "9th Airborne Division" "10th Airborne Division" 
+		"第1空降师" "第2空降师" "第3空降师" "第4空降师" "第5空降师" "第6空降师" "第7空降师" "第8空降师" "第9空降师" "第10空降师" 
 	}
 	marine_brigade = {
-		"1st Marine Division" "2nd Marine Division" "3rd Marine Division" "4th Marine Division" "5th Marine Division" "6th Marine Division" "7th Marine Division" "8th Marine Division" "9th Marine Division" "10th Marine Division" 
+		"第1海军陆战师" "第2海军陆战师" "第3海军陆战师" "第4海军陆战师" "第5海军陆战师" "第6海军陆战师" "第7海军陆战师" "第8海军陆战师" "第9海军陆战师" "第10海军陆战师" 
 	}
 	bergsjaeger_brigade = {
-		"1st Gurkha Division" "2nd Gurkha Division" "3rd Gurkha Division" "4th Gurkha Division" "5th Gurkha Division" "8th Gurkha Division" "10th Gurkha Division" "11th Gurkha Division" "12th Gurkha Division" 
+		"第1廓尔喀师" "第2廓尔喀师" "第3廓尔喀师" "第4廓尔喀师" "第5廓尔喀师" "第8廓尔喀师" "第10廓尔喀师" "第11廓尔喀师" "第12廓尔喀师" 
 	}
 	garrison_brigade = {
-		"1st Indian Garrison Division" "2nd Indian Garrison Division" "3rd Indian Garrison Division" "4th Indian Garrison Division" "5th Indian Garrison Division" "6th Indian Garrison Division" "7th Indian Garrison Division" "8th Indian Garrison Division" "9th Indian Garrison Division" "10th Indian Garrison Division" "11th Indian Garrison Division" 
-		"12th Indian Garrison Division" "13th Indian Garrison Division" "14th Indian Garrison Division" "15th Indian Garrison Division" "16th Indian Garrison Division" "17th Indian Garrison Division" "18th Indian Garrison Division" "19th Indian Garrison Division" "20th Indian Garrison Division" 
+		"第1印度卫戍师" "第2印度卫戍师" "第3印度卫戍师" "第4印度卫戍师" "第5印度卫戍师" "第6印度卫戍师" "第7印度卫戍师" "第8印度卫戍师" "第9印度卫戍师" "第10印度卫戍师" "第11印度卫戍师" 
+		"第12印度卫戍师" "第13印度卫戍师" "第14印度卫戍师" "第15印度卫戍师" "第16印度卫戍师" "第17印度卫戍师" "第18印度卫戍师" "第19印度卫戍师" "第20印度卫戍师" 
 	}
 	hq_brigade = {
-		"1st Indian Army" "2nd Indian Army" "3rd Indian Army" "4th Indian Army" "5th Indian Army" "6th Indian Army" "7th Indian Army" "8th Indian Army" 
+		"第1印度集团军" "第2印度集团军" "第3印度集团军" "第4印度集团军" "第5印度集团军" "第6印度集团军" "第7印度集团军" "第8印度集团军" "第9印度集团军" "第10印度集团军" "第11印度集团军" 
 	}
 	militia_brigade = {
-		"1st Infantry Division" "2nd Infantry Division" "3rd Infantry Division" "4th Infantry Division" "5th Infantry Division" "6th Infantry Division" "7th Infantry Division" "8th Infantry Division" "9th Infantry Division" "10th Infantry Division" "11th Infantry Division" 
-		"12th Infantry Division" "13th Infantry Division" "14th Infantry Division" "15th Infantry Division" "16th Infantry Division" "17th Infantry Division" "18th Infantry Division" "19th Infantry Division" "20th Infantry Division" "21st Infantry Division" "22nd Infantry Division" 
-		"23rd Infantry Division" "24th Infantry Division" "25th Infantry Division" "26th Infantry Division" "27th Infantry Division" "28th Infantry Division" "29th Infantry Division" "30th Infantry Division" 
+		"第1印度步兵师" "第2印度步兵师" "第3印度步兵师" "第4印度步兵师" "第5印度步兵师" "第6印度步兵师" "第7印度步兵师" "第8印度步兵师" "第9印度步兵师" "第10印度步兵师" "第11印度步兵师" 
+		"第12印度步兵师" "第13印度步兵师" "第14印度步兵师" "第15印度步兵师" "第16印度步兵师" "第17印度步兵师" "第18印度步兵师" "第19印度步兵师" "第20印度步兵师" 
 	}
 	multi_role = {
-		"No.1 Group" "No.2 Group" "No.3 Group" "No.4 Group" "No.5 Group" "No.7 Group" "No.8 Group" "No.9 Group" "No.10 Group" "No.11 Group" "No.12 Group" 
-		"No.13 Group" "No.14 Group" "No.15 Group" "No.16 Group" "No.17 Group" "No.18 Group" "No.19 Group" "No.20 Group" 
+		"第1战斗机大队" "第2战斗机大队" "第3战斗机大队" "第4战斗机大队" "第5战斗机大队" "第7战斗机大队" "第8战斗机大队" "第9战斗机大队" "第10战斗机大队" "第11战斗机大队" "第12战斗机大队" 
+		"第13战斗机大队" "第14战斗机大队" "第15战斗机大队" "第16战斗机大队" "第17战斗机大队" "第18战斗机大队" "第19战斗机大队" "第20战斗机大队" 
 	}
 	interceptor = {
-		"No.1 Group" "No.2 Group" "No.3 Group" "No.4 Group" "No.5 Group" "No.7 Group" "No.8 Group" "No.9 Group" "No.10 Group" "No.11 Group" "No.12 Group" 
-		"No.13 Group" "No.14 Group" "No.15 Group" "No.16 Group" "No.17 Group" "No.18 Group" "No.19 Group" "No.20 Group" 
-	}
-	jet_int = {
-		"No.1 Group" "No.2 Group" "No.3 Group" "No.4 Group" "No.5 Group" "No.7 Group" "No.8 Group" "No.9 Group" "No.10 Group" "No.11 Group" "No.12 Group" 
-		"No.13 Group" "No.14 Group" "No.15 Group" "No.16 Group" "No.17 Group" "No.18 Group" "No.19 Group" "No.20 Group" 
-	}
-	jet_mr = {
-		"No.1 Group" "No.2 Group" "No.3 Group" "No.4 Group" "No.5 Group" "No.7 Group" "No.8 Group" "No.9 Group" "No.10 Group" "No.11 Group" "No.12 Group" 
-		"No.13 Group" "No.14 Group" "No.15 Group" "No.16 Group" "No.17 Group" "No.18 Group" "No.19 Group" "No.20 Group" 
+		"第1战斗机大队" "第2战斗机大队" "第3战斗机大队" "第4战斗机大队" "第5战斗机大队" "第7战斗机大队" "第8战斗机大队" "第9战斗机大队" "第10战斗机大队" "第11战斗机大队" "第12战斗机大队" 
+		"第13战斗机大队" "第14战斗机大队" "第15战斗机大队" "第16战斗机大队" "第17战斗机大队" "第18战斗机大队" "第19战斗机大队" "第20战斗机大队" 
 	}
 	strategic_bomber = {
-		"No.1 Group" "No.2 Group" "No.6 Group" "No.3 Group" "No.4 Group" "No.7 Group" "No.8 Group" "No.9 Group" "No.10 Group" "No.11 Group" "No.12 Group" 
-		"No.13 Group" "No.14 Group" "No.15 Group" "No.16 Group" "No.17 Group" "No.18 Group" "No.19 Group" "No.20 Group" 
+		"第1战略轰炸机大队" "第2战略轰炸机大队" "第6战略轰炸机大队" "第3战略轰炸机大队" "第4战略轰炸机大队" "第7战略轰炸机大队" "第8战略轰炸机大队" "第9战略轰炸机大队" "第10战略轰炸机大队" "第11战略轰炸机大队" "第12战略轰炸机大队" 
+		"第13战略轰炸机大队" "第14战略轰炸机大队" "第15战略轰炸机大队" "第16战略轰炸机大队" "第17战略轰炸机大队" "第18战略轰炸机大队" "第19战略轰炸机大队" "第20战略轰炸机大队" 
 	}
 	tactical_bomber = {
-		"No.1 Group" "No.2 Group" "No.6 Group" "No.3 Group" "No.4 Group" "No.7 Group" "No.8 Group" "No.9 Group" "No.10 Group" "No.11 Group" "No.12 Group" 
-		"No.13 Group" "No.14 Group" "No.15 Group" "No.16 Group" "No.17 Group" "No.18 Group" "No.19 Group" "No.20 Group" 
-	}
-	jet_bomber = {
-		"No.1 Group" "No.2 Group" "No.6 Group" "No.3 Group" "No.4 Group" "No.7 Group" "No.8 Group" "No.9 Group" "No.10 Group" "No.11 Group" "No.12 Group" 
-		"No.13 Group" "No.14 Group" "No.15 Group" "No.16 Group" "No.17 Group" "No.18 Group" "No.19 Group" "No.20 Group" 
+		"第1战术轰炸机大队" "第2战术轰炸机大队" "第6战术轰炸机大队" "第3战术轰炸机大队" "第4战术轰炸机大队" "第7战术轰炸机大队" "第8战术轰炸机大队" "第9战术轰炸机大队" "第10战术轰炸机大队" "第11战术轰炸机大队" "第12战术轰炸机大队" 
+		"第13战术轰炸机大队" "第14战术轰炸机大队" "第15战术轰炸机大队" "第16战术轰炸机大队" "第17战术轰炸机大队" "第18战术轰炸机大队" "第19战术轰炸机大队" "第20战术轰炸机大队" 
 	}
 	naval_bomber = {
-		"No.1 Group" "No.2 Group" "No.3 Group" "No.4 Group" "No.5 Group" "No.7 Group" "No.8 Group" "No.9 Group" "No.10 Group" "No.11 Group" "No.12 Group" 
-		"No.13 Group" "No.14 Group" "No.15 Group" "No.16 Group" "No.17 Group" "No.18 Group" "No.19 Group" "No.20 Group" "No.1 Group" "No.2 Group" "No.3 Group" 
-		"No.4 Group" "No.5 Group" "No.7 Group" "No.8 Group" "No.9 Group" "No.10 Group" "No.11 Group" "No.12 Group" "No.13 Group" "No.14 Group" "No.15 Group" 
-		"No.16 Group" "No.17 Group" "No.18 Group" "No.19 Group" "No.20 Group" 
+		"第1海军轰炸机大队" "第2海军轰炸机大队" "第3海军轰炸机大队" "第4海军轰炸机大队" "第5海军轰炸机大队" "第7海军轰炸机大队" "第8海军轰炸机大队" "第9海军轰炸机大队" "第10海军轰炸机大队" "第11海军轰炸机大队" "第12海军轰炸机大队" 
+		"第13海军轰炸机大队" "第14海军轰炸机大队" "第15海军轰炸机大队" "第16海军轰炸机大队" "第17海军轰炸机大队" "第18海军轰炸机大队" "第19海军轰炸机大队" "第20海军轰炸机大队" "第1鱼雷轰炸机大队" "第2鱼雷轰炸机大队" "第3鱼雷轰炸机大队" 
+		"第4鱼雷轰炸机大队" "第5鱼雷轰炸机大队" "第7鱼雷轰炸机大队" "第8鱼雷轰炸机大队" "第9鱼雷轰炸机大队" "第10鱼雷轰炸机大队" "第11鱼雷轰炸机大队" "第12鱼雷轰炸机大队" "第13鱼雷轰炸机大队" "第14鱼雷轰炸机大队" "第15鱼雷轰炸机大队" 
+		"第16鱼雷轰炸机大队" "第17鱼雷轰炸机大队" "第18鱼雷轰炸机大队" "第19鱼雷轰炸机大队" "第20鱼雷轰炸机大队" 
 	}
 	cas = {
-		"No.1 Group" "No.2 Group" "No.6 Group" "No.3 Group" "No.4 Group" "No.7 Group" "No.8 Group" "No.9 Group" "No.10 Group" "No.11 Group" "No.12 Group" 
-		"No.13 Group" "No.14 Group" "No.15 Group" "No.16 Group" "No.17 Group" "No.18 Group" "No.19 Group" "No.20 Group" 
+		"第1俯冲轰炸机大队" "第2俯冲轰炸机大队" "第6俯冲轰炸机大队" "第3俯冲轰炸机大队" "第4俯冲轰炸机大队" "第7俯冲轰炸机大队" "第8俯冲轰炸机大队" "第9俯冲轰炸机大队" "第10俯冲轰炸机大队" "第11俯冲轰炸机大队" "第12俯冲轰炸机大队" 
+		"第13俯冲轰炸机大队" "第14俯冲轰炸机大队" "第15俯冲轰炸机大队" "第16俯冲轰炸机大队" "第17俯冲轰炸机大队" "第18俯冲轰炸机大队" "第19俯冲轰炸机大队" "第20俯冲轰炸机大队" 
 	}
 	transport_plane = {
-		"No.1 Group" "No.2 Group" "No.3 Group" "No.4 Group" "No.5 Group" "No.7 Group" "No.8 Group" "No.9 Group" "No.10 Group" "No.11 Group" "No.12 Group" 
-		"No.13 Group" "No.14 Group" "No.15 Group" "No.16 Group" "No.17 Group" "No.18 Group" "No.19 Group" "No.20 Group" 
+		"第1运输机大队" "第2运输机大队" "第3运输机大队" "第4运输机大队" "第5运输机大队" "第7运输机大队" "第8运输机大队" "第9运输机大队" "第10运输机大队" 
 	}
 	battleship = {
-		"HMIS Taragiri" "HMIS Vindhyagiri" "HMIS Brahmaputra" 
+		"塔拉吉里号" "温底亚吉里号" "布拉马普特拉号" 
 	}
 	light_cruiser = {
-		"HMIS Delhi"
-		"HMIS Mysore"
-		"HMIS Nilgiri" "HMIS Orissa" "HMIS Deccan" "HMIS Bihar" "HMIS Kumaon" "HMIS Rohilkhand" "HMIS Khyber" "HMIS Carnafic" "HMIS Rajputana" "HMIS Konkan" "HMIS Bombay" 
-		"HMIS Bengal" "HMIS Madras" 
+		"尼尔吉里号" "奥里萨号" "德干号" "比哈尔号" "库茂恩号" "罗希尔坎德号" "开柏号" "卡纳菲号" "拉杰普塔纳号" "康坎号" "孟买号" 
+		"孟加拉号" "马德拉斯号" 
 	}
 	heavy_cruiser = {
-		"HMIS Nilgiri" "HMIS Orissa" "HMIS Deccan" "HMIS Bihar" "HMIS Kumaon" "HMIS Rohilkhand" "HMIS Khyber" "HMIS Carnafic" "HMIS Rajputana" "HMIS Konkan" "HMIS Bombay" 
-		"HMIS Bengal" "HMIS Madras" 
+		"尼尔吉里号" "奥里萨号" "德干号" "比哈尔号" "库茂恩号" "罗希尔坎德号" "开柏号" "卡纳菲号" "拉杰普塔纳号" "康坎号" "孟买号" 
+		"孟加拉号" "马德拉斯号" 
 	}
 	battlecruiser = {
-		"HMIS Taragiri" "HMIS Vindhyagiri" "HMIS Brahmaputra" 
+		"塔拉吉里号" "温底亚吉里号" "布拉马普特拉号" 
 	}
 	destroyer = {
-		"1st Destroyer Division" "2nd Destroyer Division" "3rd Destroyer Division" "4th Destroyer Division" "5th Destroyer Division" "6th Destroyer Division" "7th Destroyer Division" "8th Destroyer Division" "9th Destroyer Division" "10th Destroyer Division" "11th Destroyer Division" 
-		"12th Destroyer Division" "13th Destroyer Division" "14th Destroyer Division" "15th Destroyer Division" 
+		"第1驱逐舰队" "第2驱逐舰队" "第6驱逐舰队" "第3驱逐舰队" "第4驱逐舰队" "第7驱逐舰队" "第8驱逐舰队" "第9驱逐舰队" "第10驱逐舰队" "第11驱逐舰队" "第12驱逐舰队" 
+		"第13驱逐舰队" "第14驱逐舰队" "第15驱逐舰队" "第16驱逐舰队" "第17驱逐舰队" "第18驱逐舰队" "第19驱逐舰队" "第20驱逐舰队" 
 	}
 	carrier = {
-		"HMIS Vikrant" "HMIS Virrant" "HMIS Viraat" "HMIS Mysore" 
+		"维克兰特号" "维兰特号" "维拉特号" "迈索尔号" 
 	}
 	escort_carrier = {
-		"HMIS Vikrant" "HMIS Virrant" "HMIS Viraat" "HMIS Mysore" 
+		"维克兰特号" "维兰特号" "维拉特号" "迈索尔号" 
 	}
 	submarine = {
-		"1st Submarine Division" "2nd Submarine Division" "3rd Submarine Division" "4th Submarine Division" "5th Submarine Division" "6th Submarine Division" "7th Submarine Division" "8th Submarine Division" "9th Submarine Division" "10th Submarine Division" "11th Submarine Division" 
-		"12th Submarine Division" "13th Submarine Division" "14th Submarine Division" "15th Submarine Division" 
+		"第1潜艇编队" "第2潜艇编队" "第6潜艇编队" "第3潜艇编队" "第4潜艇编队" "第7潜艇编队" "第8潜艇编队" "第9潜艇编队" "第10潜艇编队" "第11潜艇编队" "第12潜艇编队" 
+		"第13潜艇编队" "第14潜艇编队" "第15潜艇编队" "第16潜艇编队" "第17潜艇编队" "第18潜艇编队" "第19潜艇编队" "第20潜艇编队" 
 	}
 	transport_ship = {
-		"1st Transport Division" "2nd Transport Division" "3rd Transport Division" "4th Transport Division" "5th Transport Division" "6th Transport Division" "7th Transport Division" "8th Transport Division" "9th Transport Division" "10th Transport Division" "11th Transport Division" 
-		"12th Transport Division" "13th Transport Division" "14th Transport Division" "15th Transport Division" 
+		"第1运输舰队" "第2运输舰队" "第6运输舰队" "第3运输舰队" "第4运输舰队" "第7运输舰队" "第8运输舰队" "第9运输舰队" "第10运输舰队" "第11运输舰队" "第12运输舰队" 
+		"第13运输舰队" "第14运输舰队" "第15运输舰队" "第16运输舰队" "第17运输舰队" "第18运输舰队" "第19运输舰队" "第20运输舰队" 
 	}
 
 }
 
 ministers = {
 	59001 = {
-		name = "Victor Lord Linlithgow"
+		name = "维克托·林里斯格勋爵"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M59001
@@ -184,7 +142,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59002 = {
-		name = "John Edward Golightly"
+		name = "约翰·格利戈里"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M59002
@@ -192,7 +150,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59003 = {
-		name = "Sir Jilendra Vayaphrasattar"
+		name = "瓦亚帕拉斯塔爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M59003
@@ -200,7 +158,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59004 = {
-		name = "Anyang Bhula"
+		name = "布拉安阳"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M59004
@@ -208,7 +166,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59005 = {
-		name = "George H. Douglas"
+		name = "乔治·道格拉斯"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M59005
@@ -216,7 +174,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59006 = {
-		name = "Archibald Angus"
+		name = "阿奇博尔德·安古斯"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M59006
@@ -224,7 +182,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59008 = {
-		name = "Arthur A. Barrett"
+		name = "阿瑟·巴雷特"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M59008
@@ -232,7 +190,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59009 = {
-		name = "William E. Parry"
+		name = "威廉·帕里"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L1378
@@ -240,7 +198,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59010 = {
-		name = "Bruce W. McPherson"
+		name = "布鲁斯·麦克佩森"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M59010
@@ -248,16 +206,17 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59031 = {
-		name = "Rajendra Prasad"
+		name = "拉金德拉·普拉萨德"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M59031
 		head_of_state = weary_stiff_neck
 		chief_of_staff = school_of_defence
+		head_of_state = weary_stiff_neck
 		start_date = 1950.1.1
 	}
 	59032 = {
-		name = "Bahadur Bathram of Maler Kotla"
+		name = "马勒·克特拉"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M59032
@@ -265,7 +224,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59033 = {
-		name = "Lord Louis Mountbatten"
+		name = "路易斯·蒙巴顿勋爵"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M59033
@@ -273,7 +232,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	59034 = {
-		name = "Archibald Wavell"
+		name = "阿奇博尔德·韦维尔"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M59034
@@ -282,7 +241,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	59035 = {
-		name = "Rashbehari Basu"
+		name = "巴苏"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M59016
@@ -291,7 +250,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59037 = {
-		name = "Mahatma Mohandas Gandhi"
+		name = "莫罕达斯·卡拉姆昌德·甘地"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M59037
@@ -299,7 +258,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59038 = {
-		name = "Michael Morris"
+		name = "米切尔·莫里斯"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M59038
@@ -308,7 +267,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59039 = {
-		name = "Dr. John Mathai"
+		name = "约翰·马泰博士"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M59039
@@ -317,7 +276,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	59040 = {
-		name = "Nabob Kureishi of Bhawalapur"
+		name = "巴哈瓦尔普的库雷西"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M59040
@@ -325,7 +284,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	59041 = {
-		name = "Sir Mohammed Iqbal"
+		name = "默罕默德·伊克巴爵士"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M59041
@@ -333,7 +292,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59043 = {
-		name = "Subhas Chandra Bose"
+		name = "苏巴斯·钱德拉·鲍斯"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M59011
@@ -342,7 +301,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59044 = {
-		name = "Ananthasayanam Ayyangar"
+		name = "阿扬加尔"
 		ideology = social_democrat
 		loyalty = 0.50
 		picture = M59044
@@ -351,7 +310,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	59045 = {
-		name = "Sarat Chandra Bose"
+		name = "萨拉特·钱德拉·鲍斯"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M59045
@@ -359,7 +318,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	59046 = {
-		name = "Jawahar Lal Nehru"
+		name = "贾瓦哈拉尔·尼赫鲁"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M59046
@@ -368,7 +327,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	59047 = {
-		name = "Bhimrao Ramji Ambedkar"
+		name = "阿贝德卡尔"
 		ideology = social_democrat
 		loyalty = 0.50
 		picture = M59025
@@ -377,7 +336,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	59048 = {
-		name = "Bahadur Jayla of Khoch Bahur"
+		name = "巴哈杜尔·加伊拉"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M59048
@@ -386,7 +345,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59049 = {
-		name = "Mohammed Ayub Khan"
+		name = "穆罕默德·阿尤布汗"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M59049
@@ -394,7 +353,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	59050 = {
-		name = "Aly Khan IV"
+		name = "阿里汗四世"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M59050
@@ -402,7 +361,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	59051 = {
-		name = "Agha Khan III"
+		name = "阿加汗三世"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M59051
@@ -410,7 +369,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59053 = {
-		name = "Ajoy Kumar Ghosh"
+		name = "库马尔·格什"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M59023
@@ -419,7 +378,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	59055 = {
-		name = "Khawaja Nazimuddin"
+		name = "卡瓦贾·纳兹穆丁"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M59055
@@ -427,7 +386,7 @@ ministers = {
 		start_date = 1947.1.1
 	}
 	59056 = {
-		name = "Sardar Vallabhbhai Patel"
+		name = "萨达尔·帕特"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M59056
@@ -435,7 +394,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59057 = {
-		name = "Lal Bahadur Shastri"
+		name = "拉尔·巴哈杜尔·夏斯特里"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M59024
@@ -443,7 +402,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	59060 = {
-		name = "Hitendra Desai"
+		name = "辛德拉·德赛"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M59060
@@ -451,7 +410,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	59062 = {
-		name = "Nawab Jaygoor of Pataudi"
+		name = "帕塔蒂的杰戈"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M59062
@@ -459,7 +418,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	59063 = {
-		name = "Iskander Mirza"
+		name = "伊斯坎德尔·米尔萨"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M59014
@@ -467,7 +426,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59064 = {
-		name = "Sir Chhotu Ram"
+		name = "赫图拉姆爵士"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M59026
@@ -476,7 +435,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	59065 = {
-		name = "Jyoti Basu"
+		name = "巴苏"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M59021
@@ -484,7 +443,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	59067 = {
-		name = "Muhammed Ali Bogra"
+		name = "阿里·博格拉"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M59067
@@ -492,7 +451,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	59068 = {
-		name = "Rafi Ahmed Kidwai"
+		name = "拉菲·阿赫门德·基德瓦伊"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M59068
@@ -501,7 +460,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59070 = {
-		name = "Harilal J. Kania"
+		name = "哈瑞莱·卡尼阿"
 		ideology = social_liberal
 		loyalty = 0.50
 		picture = M59070
@@ -509,7 +468,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59071 = {
-		name = "Sir Henry Gidney"
+		name = "亨利·基德尼爵士"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M59071
@@ -517,7 +476,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	59072 = {
-		name = "Nizam Osman of Hyderabad"
+		name = "尼扎姆的奥斯曼"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M59015
@@ -525,7 +484,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59073 = {
-		name = "Muhammed Mujeeb"
+		name = "穆罕默德·穆吉布"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M59073
@@ -533,7 +492,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	59077 = {
-		name = "Shri Jagjivan Ram"
+		name = "贾吉万兰"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M59077
@@ -541,7 +500,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59081 = {
-		name = "Jehangir Bhabha Homi"
+		name = "布哈布哈·霍米"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M59079
@@ -549,7 +508,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	59082 = {
-		name = "Stephen Hope-Carlill"
+		name = "霍普·卡里尔"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = L1356
@@ -557,7 +516,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	59083 = {
-		name = "Sir Bwahadur Kandra"
+		name = "坎德拉爵士"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M59083
@@ -565,7 +524,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59084 = {
-		name = "Lindsey Stephenson"
+		name = "林德赛·斯蒂芬森"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M59084
@@ -573,7 +532,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	59087 = {
-		name = "Abdul Majeed Khwaja"
+		name = "阿布杜尔·马吉德·卡哈瓦加"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M59087
@@ -581,7 +540,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	59090 = {
-		name = "Charles T.M. Pizey"
+		name = "查理·皮泽"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M59090
@@ -589,7 +548,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	59091 = {
-		name = "Mohan Singh"
+		name = "莫汉·辛格"
 		ideology = social_liberal
 		loyalty = 0.25
 		picture = M59028
@@ -598,7 +557,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59092 = {
-		name = "Sardar Baldev Singh"
+		name = "萨达尔·辛格"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M59092
@@ -606,7 +565,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	59093 = {
-		name = "Kodandera Cariappa"
+		name = "科丹德拉·卡利亚帕"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M59093
@@ -615,7 +574,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	59095 = {
-		name = "Kodandera Thimayya"
+		name = "科丹德拉·蒂玛亚"
 		ideology = market_liberal
 		loyalty = 0.50
 		picture = M59095
@@ -623,7 +582,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	59097 = {
-		name = "Shah Nawaz Khan"
+		name = "纳瓦兹汗"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M59017
@@ -631,7 +590,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	59099 = {
-		name = "Ram Singh Thakur"
+		name = "兰辛格"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M59099
@@ -639,7 +598,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59102 = {
-		name = "Sir Frank Messervy"
+		name = "弗兰克·梅塞维爵士"
 		ideology = social_liberal
 		loyalty = 0.25
 		picture = M59102
@@ -647,7 +606,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	59104 = {
-		name = "Kureishi of Bhawalapur"
+		name = "巴瓦拉普的库雷西"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M59040
@@ -655,7 +614,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59107 = {
-		name = "Bhaskar Soman"
+		name = "巴斯卡·索曼"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M59107
@@ -663,7 +622,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59109 = {
-		name = "Ram Dass Katari"
+		name = "卡塔里"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M59019
@@ -671,15 +630,15 @@ ministers = {
 		start_date = 1947.1.1
 	}
 	59110 = {
-		name = "W.H. Gould-Bradford"
+		name = "古德·布拉德福德"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = L1349
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1942.1.1
 	}
 	59112 = {
-		name = "Harinder Singh"
+		name = "哈林德·辛格"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M59112
@@ -687,7 +646,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	59113 = {
-		name = "Arjan Singh Vibhusan"
+		name = "辛格·维布桑"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M59113
@@ -695,7 +654,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59115 = {
-		name = "Subroto Mukherjee"
+		name = "苏布罗托·穆克吉"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M59115
@@ -703,7 +662,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	59116 = {
-		name = "Mehar Singh"
+		name = "梅哈尔·辛格"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M59114
@@ -711,7 +670,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59117 = {
-		name = "Aspy Merwan Engineer"
+		name = "梅万·恩吉宁"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M59117
@@ -719,7 +678,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	59119 = {
-		name = "Ravindra Darshan Singh"
+		name = "达珊·辛格"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M59118
@@ -727,7 +686,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59122 = {
-		name = "Yeswanthrao II of Indore"
+		name = "因多尔的耶斯凡斯劳二世"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M59122
@@ -735,7 +694,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	59123 = {
-		name = "H.H. Buland of Kishangarh"
+		name = "吉桑加尔的布兰德"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M59123
@@ -743,7 +702,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	59124 = {
-		name = "Ali Khan III of Banganapalle"
+		name = "阿里汗三世"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M59124
@@ -751,7 +710,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59125 = {
-		name = "H.H. Waghji of Morvi"
+		name = "莫尔维的瓦夫吉"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M59125
@@ -759,7 +718,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	59126 = {
-		name = "H.H. Tashi of Sikkim"
+		name = "锡金的塔什"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M59126
@@ -767,7 +726,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	59127 = {
-		name = "Chakravarti Rajagopalachari"
+		name = "查克拉瓦尔蒂·拉贾戈巴拉查理"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M59127
@@ -775,7 +734,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	59129 = {
-		name = "Ganesh Mavalankar"
+		name = "吉尼斯·马瓦兰卡"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M59129
@@ -783,140 +742,11 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	59130 = {
-		name = "Sarvepalli Radhakrishnan"
+		name = "萨瓦帕利·拉达克里希南"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M59130
 		minister_of_security = compassionate_gentleman
 		start_date = 1951.1.1
-	}
-	# Generic dummy ministers
-	95401 = {
-		name = "Nameless Clerk"
-		ideology = national_socialist
-		loyalty = 1.0
-		picture = MNationalSocialist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95402 = {
-		name = "Nameless Clerk"
-		ideology = fascistic
-		loyalty = 1.0
-		picture = MFascistic
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95403 = {
-		name = "Nameless Clerk"
-		ideology = paternal_autocrat
-		loyalty = 1.0
-		picture = MPaternalAutocrat
-		chief_of_staff = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		start_date = 1936.1.1
-	}
-	95404 = {
-		name = "Nameless Clerk"
-		ideology = social_conservative
-		loyalty = 1.0
-		picture = MSocialConservative
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95405 = {
-		name = "Nameless Clerk"
-		ideology = social_liberal
-		loyalty = 1.0
-		picture = MSocialLiberal
-		minister_of_intelligence = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		start_date = 1936.1.1
-	}
-	95406 = {
-		name = "Nameless Clerk"
-		ideology = social_democrat
-		loyalty = 1.0
-		picture = MSocialDemocrat
-		head_of_state = mostly_harmless
-		start_date = 1936.1.1
-	}
-	95407 = {
-		name = "Nameless Clerk"
-		ideology = left_wing_radical
-		loyalty = 1.0
-		picture = MLeftWingRadical
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95408 = {
-		name = "Nameless Clerk"
-		ideology = leninist
-		loyalty = 1.0
-		picture = MLeninist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95409 = {
-		name = "Nameless Clerk"
-		ideology = stalinist
-		loyalty = 1.0
-		picture = MStalinist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
 	}
 }

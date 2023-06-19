@@ -1,63 +1,32 @@
-theatre = {
-	name = "Eesti 躭emjuhatus"
+corps = {
+	name = "爱沙尼亚第1军"
 	location = 906
-	regiment = { type = hq_brigade name = "Tallinn HQ" historical_model = 0 }
-	corps = {
-		name = "1. Eesti Armee"
+	regiment = { type = hq_brigade name = "爱沙尼亚第1军指挥部" historical_model = 0 }
+	division= {
+		name = "第I步兵师"
 		location = 906
-		regiment = { type = hq_brigade name = "1. Eesti Armee HQ" historical_model = 0 }
-		division= {
-			name = "I Jalav鋏diviisi"
-			location = 906
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "1. Jalav鋏r黦ement" experience = 5 historical_model = 2 }
-			regiment = { type = infantry_brigade name = "2. Jalav鋏r黦ement" experience = 5 historical_model = 2 }
-			regiment = { type = truck_towed_support_brigade name = "1. Suurt黭iv鋏polgu" experience = 10 historical_model = 1 }
-		}
-		division= {
-			name = "II Jalav鋏diviisi"
-			location = 906
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "7. Jalav鋏r黦ement" experience = 5 historical_model = 2 }
-			regiment = { type = infantry_brigade name = "3. Jalav鋏r黦ement" experience = 5 historical_model = 2 }
-			regiment = { type = infantry_brigade name = "4. Jalav鋏r黦ement" experience = 5 historical_model = 2 }
-			regiment = { type = horse_towed_support_brigade name = "2. Suurt黭iv鋏polgu" builder = "ENG" experience = 10 historical_model = 1 }
-		}
-		division= {
-			name = "III Jalav鋏diviisi"
-			location = 906
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "5. Jalav鋏r黦ement" experience = 5 historical_model = 2 }
-			regiment = { type = infantry_brigade name = "6. Jalav鋏r黦ement" experience = 5 historical_model = 2 }
-			regiment = { type = infantry_brigade name = "7. Jalav鋏r黦ement" experience = 5 historical_model = 2 }
-			regiment = { type = horse_towed_support_brigade name = "3. Suurt黭iv鋏polgu" builder = "ENG" experience = 10 historical_model = 0 }
-		}
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
 	}
-	navy = {
-		name = "Merev鋑i"
-		base = 906
+	division= {
+		name = "第II步兵师"
 		location = 906
-		ship = { type = submarine name = "1. Allveelaevade flotill" experience = 5 historical_model = 7 }
-	}	
-	air = {
-		name = "Eesti Ohuv鋑i"
-		base = 906
-		location = 906
-		wing = { type = interceptor name = "1. H鋠itajate Grupp" experience = 5 historical_model = 0 }		
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
 	}
-	
+	division= {
+		name = "第III步兵师"
+		location = 906
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+	}
 }
-convoy_construction=
-{
-	country = EST
-	id=
-	{
-		id=15234
-		type=4713
-	}
-	size=1
-	cost=0.000 #you can put any number here and the engine will use it
-	progress=90.000
-	duration=0.000 #you can put any number here and the engine will use it
-	status=no #No means you get a convoy.  Yes means you get an escort
-}
+
+
+

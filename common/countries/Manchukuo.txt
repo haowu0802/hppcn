@@ -1,8 +1,6 @@
 color = { 104  132  91 }
 graphical_culture = Japanese
 
-
-
 default_templates = {
 	binary_infantry = {
 		infantry_brigade
@@ -20,156 +18,134 @@ default_templates = {
 		cavalry_brigade
 		cavalry_brigade
 	}
-	generic_garrison = {
-		garrison_brigade
-		garrison_brigade
-	}	
-	generic_alpine = {
-		bergsjaeger_brigade
-		bergsjaeger_brigade
-	}
-	generic_marine = {
-		marine_brigade
-		marine_brigade
-	}	
 }
 
 unit_names = {
 	infantry_brigade = {
-		"1 Man'chu Shi" "2 Man'chu Shi" "3 Man'chu Shi" "4 Man'chu Shi" "5 Man'chu Shi" "6 Man'chu Shi" "7 Man'chu Shi" "8 Man'chu Shi" "9 Man'chu Shi" "10 Man'chu Shi" "12 Man'chu Shi" 
-		"14 Man'chu Shi" "15 Man'chu Shi" "17 Man'chu Shi" "19 Man'chu Shi" "21 Man'chu Shi" "22 Man'chu Shi" "25 Man'chu Shi" "28 Man'chu Shi" "29 Man'chu Shi" "30 Man'chu Shi" "35 Man'chu Shi" 
-		"38 Man'chu Shi" "40 Man'chu Shi" "42 Man'chu Shi" "46 Man'chu Shi" "47 Man'chu Shi" "49 Man'chu Shi" "50 Man'chu Shi" 
+		"ÂúÖŞµÚ1Ê¦" "ÂúÖŞµÚ2Ê¦" "ÂúÖŞµÚ3Ê¦" "ÂúÖŞµÚ4Ê¦" "ÂúÖŞµÚ5Ê¦" "ÂúÖŞµÚ6Ê¦" "ÂúÖŞµÚ7Ê¦" "ÂúÖŞµÚ8Ê¦" "ÂúÖŞµÚ9Ê¦" "ÂúÖŞµÚ10Ê¦" "ÂúÖŞµÚ12Ê¦" 
+		"ÂúÖŞµÚ14Ê¦" "ÂúÖŞµÚ15Ê¦" "ÂúÖŞµÚ17Ê¦" "ÂúÖŞµÚ19Ê¦" "ÂúÖŞµÚ21Ê¦" "ÂúÖŞµÚ22Ê¦" "ÂúÖŞµÚ25Ê¦" "ÂúÖŞµÚ28Ê¦" "ÂúÖŞµÚ29Ê¦" "ÂúÖŞµÚ30Ê¦" "ÂúÖŞµÚ35Ê¦" 
+		"ÂúÖŞµÚ38Ê¦" "ÂúÖŞµÚ40Ê¦" "ÂúÖŞµÚ42Ê¦" "ÂúÖŞµÚ46Ê¦" "ÂúÖŞµÚ47Ê¦" "ÂúÖŞµÚ49Ê¦" "ÂúÖŞµÚ50Ê¦" 
 	}
 	cavalry_brigade = {
-		"1 Man'chu Qi'Bing" "2 Man'chu Qi'Bing" "3 Man'chu Qi'Bing" "4 Man'chu Qi'Bing" "5 Man'chu Qi'Bing" "6 Man'chu Qi'Bing" "7 Man'chu Qi'Bing" "8 Man'chu Qi'Bing" "9 Man'chu Qi'Bing" "10 Man'chu Qi'Bing" "11 Man'chu Qi'Bing" 
-		"12 Man'chu Qi'Bing" "13 Man'chu Qi'Bing" "14 Man'chu Qi'Bing" "15 Man'chu Qi'Bing" "16 Man'chu Qi'Bing" "17 Man'chu Qi'Bing" "18 Man'chu Qi'Bing" "19 Man'chu Qi'Bing" "20 Man'chu Qi'Bing" 
+		"ÂúÖŞµÚ1Æï±øÊ¦" "ÂúÖŞµÚ2Æï±øÊ¦" "ÂúÖŞµÚ3Æï±øÊ¦" "ÂúÖŞµÚ4Æï±øÊ¦" "ÂúÖŞµÚ5Æï±øÊ¦" "ÂúÖŞµÚ6Æï±øÊ¦" "ÂúÖŞµÚ7Æï±øÊ¦" "ÂúÖŞµÚ8Æï±øÊ¦" "ÂúÖŞµÚ9Æï±øÊ¦" "ÂúÖŞµÚ10Æï±øÊ¦" "ÂúÖŞµÚ11Æï±øÊ¦" 
+		"ÂúÖŞµÚ12Æï±øÊ¦" "ÂúÖŞµÚ13Æï±øÊ¦" "ÂúÖŞµÚ14Æï±øÊ¦" "ÂúÖŞµÚ15Æï±øÊ¦" "ÂúÖŞµÚ16Æï±øÊ¦" "ÂúÖŞµÚ17Æï±øÊ¦" "ÂúÖŞµÚ18Æï±øÊ¦" "ÂúÖŞµÚ19Æï±øÊ¦" "ÂúÖŞµÚ20Æï±øÊ¦" 
 	}
 	motorized_brigade = {
-		"1 Man'chu MOT Shi" "2 Man'chu MOT Shi" "3 Man'chu MOT Shi" "4 Man'chu MOT Shi" "5 Man'chu MOT Shi" "6 Man'chu MOT Shi" "7 Man'chu MOT Shi" "8 Man'chu MOT Shi" "9 Man'chu MOT Shi" "10 Man'chu MOT Shi" "12 Man'chu MOT Shi" 
-		"14 Man'chu MOT Shi" "15 Man'chu MOT Shi" "17 Man'chu MOT Shi" "19 Man'chu MOT Shi" "21 Man'chu MOT Shi" "22 Man'chu MOT Shi" "25 Man'chu MOT Shi" 
+		"ÂúÖŞµÚ1Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ2Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ3Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ4Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ5Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ6Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ7Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ8Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ9Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ10Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ12Ä¦ÍĞ»¯Ê¦" 
+		"ÂúÖŞµÚ14Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ15Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ17Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ19Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ21Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ22Ä¦ÍĞ»¯Ê¦" "ÂúÖŞµÚ25Ä¦ÍĞ»¯Ê¦" 
 	}
 	mechanized_brigade = {
-		"1 Man'chu MEC Shi" "2 Man'chu MEC Shi" "3 Man'chu MEC Shi" "4 Man'chu MEC Shi" "5 Man'chu MEC Shi" "6 Man'chu MEC Shi" "7 Man'chu MEC Shi" "8 Man'chu MEC Shi" "9 Man'chu MEC Shi" "10 Man'chu MEC Shi" "12 Man'chu MEC Shi" 
-		"14 Man'chu MEC Shi" "15 Man'chu MEC Shi" "17 Man'chu MEC Shi" "19 Man'chu MEC Shi" "21 Man'chu MEC Shi" "22 Man'chu MEC Shi" "25 Man'chu MEC Shi" "28 Man'chu MEC Shi" "29 Man'chu MEC Shi" 
+		"ÂúÖŞµÚ1»úĞµ»¯Ê¦" "ÂúÖŞµÚ2»úĞµ»¯Ê¦" "ÂúÖŞµÚ3»úĞµ»¯Ê¦" "ÂúÖŞµÚ4»úĞµ»¯Ê¦" "ÂúÖŞµÚ5»úĞµ»¯Ê¦" "ÂúÖŞµÚ6»úĞµ»¯Ê¦" "ÂúÖŞµÚ7»úĞµ»¯Ê¦" "ÂúÖŞµÚ8»úĞµ»¯Ê¦" "ÂúÖŞµÚ9»úĞµ»¯Ê¦" "ÂúÖŞµÚ10»úĞµ»¯Ê¦" "ÂúÖŞµÚ12»úĞµ»¯Ê¦" 
+		"ÂúÖŞµÚ14»úĞµ»¯Ê¦" "ÂúÖŞµÚ15»úĞµ»¯Ê¦" "ÂúÖŞµÚ17»úĞµ»¯Ê¦" "ÂúÖŞµÚ19»úĞµ»¯Ê¦" "ÂúÖŞµÚ21»úĞµ»¯Ê¦" "ÂúÖŞµÚ22»úĞµ»¯Ê¦" "ÂúÖŞµÚ25»úĞµ»¯Ê¦" "ÂúÖŞµÚ28»úĞµ»¯Ê¦" "ÂúÖŞµÚ29»úĞµ»¯Ê¦" 
 	}
 	light_armor_brigade = {
-		"1 Man'chu Tan'ke'che'" "2 Man'chu Tan'ke'che'" "3 Man'chu Tan'ke'che'" "4 Man'chu Tan'ke'che'" "5 Man'chu Tan'ke'che'" "6 Man'chu Tan'ke'che'" "7 Man'chu Tan'ke'che'" "8 Man'chu Tan'ke'che'" "9 Man'chu Tan'ke'che'" "10 Man'chu Tan'ke'che'" "11 Man'chu Tan'ke'che'" 
-		"12 Man'chu Tan'ke'che'" "13 Man'chu Tan'ke'che'" "14 Man'chu Tan'ke'che'" "15 Man'chu Tan'ke'che'" "16 Man'chu Tan'ke'che'" "17 Man'chu Tan'ke'che'" "18 Man'chu Tan'ke'che'" "19 Man'chu Tan'ke'che'" "20 Man'chu Tan'ke'che'" "21 Man'chu Tan'ke'che'" "22 Man'chu Tan'ke'che'" 
-		"23 Man'chu Tan'ke'che'" "24 Man'chu Tan'ke'che'" 
+		"ÂúÖŞµÚ1Ì¹¿ËÊ¦" "ÂúÖŞµÚ2Ì¹¿ËÊ¦" "ÂúÖŞµÚ3Ì¹¿ËÊ¦" "ÂúÖŞµÚ4Ì¹¿ËÊ¦" "ÂúÖŞµÚ5Ì¹¿ËÊ¦" "ÂúÖŞµÚ6Ì¹¿ËÊ¦" "ÂúÖŞµÚ7Ì¹¿ËÊ¦" "ÂúÖŞµÚ8Ì¹¿ËÊ¦" "ÂúÖŞµÚ9Ì¹¿ËÊ¦" "ÂúÖŞµÚ10Ì¹¿ËÊ¦" "ÂúÖŞµÚ11Ì¹¿ËÊ¦" 
+		"ÂúÖŞµÚ12Ì¹¿ËÊ¦" "ÂúÖŞµÚ13Ì¹¿ËÊ¦" "ÂúÖŞµÚ14Ì¹¿ËÊ¦" "ÂúÖŞµÚ15Ì¹¿ËÊ¦" "ÂúÖŞµÚ16Ì¹¿ËÊ¦" "ÂúÖŞµÚ17Ì¹¿ËÊ¦" "ÂúÖŞµÚ18Ì¹¿ËÊ¦" "ÂúÖŞµÚ19Ì¹¿ËÊ¦" "ÂúÖŞµÚ20Ì¹¿ËÊ¦" "ÂúÖŞµÚ21Ì¹¿ËÊ¦" "ÂúÖŞµÚ22Ì¹¿ËÊ¦" 
+		"ÂúÖŞµÚ23Ì¹¿ËÊ¦" "ÂúÖŞµÚ24Ì¹¿ËÊ¦" 
 	}
 	armor_brigade = {
-		"1 Man'chu Tan'ke'che'" "2 Man'chu Tan'ke'che'" "3 Man'chu Tan'ke'che'" "4 Man'chu Tan'ke'che'" "5 Man'chu Tan'ke'che'" "6 Man'chu Tan'ke'che'" "7 Man'chu Tan'ke'che'" "8 Man'chu Tan'ke'che'" "9 Man'chu Tan'ke'che'" "10 Man'chu Tan'ke'che'" "11 Man'chu Tan'ke'che'" 
-		"12 Man'chu Tan'ke'che'" "13 Man'chu Tan'ke'che'" "14 Man'chu Tan'ke'che'" "15 Man'chu Tan'ke'che'" "16 Man'chu Tan'ke'che'" "17 Man'chu Tan'ke'che'" "18 Man'chu Tan'ke'che'" "19 Man'chu Tan'ke'che'" "20 Man'chu Tan'ke'che'" "21 Man'chu Tan'ke'che'" "22 Man'chu Tan'ke'che'" 
-		"23 Man'chu Tan'ke'che'" "24 Man'chu Tan'ke'che'" 
+		"ÂúÖŞµÚ1Ì¹¿ËÊ¦" "ÂúÖŞµÚ2Ì¹¿ËÊ¦" "ÂúÖŞµÚ3Ì¹¿ËÊ¦" "ÂúÖŞµÚ4Ì¹¿ËÊ¦" "ÂúÖŞµÚ5Ì¹¿ËÊ¦" "ÂúÖŞµÚ6Ì¹¿ËÊ¦" "ÂúÖŞµÚ7Ì¹¿ËÊ¦" "ÂúÖŞµÚ8Ì¹¿ËÊ¦" "ÂúÖŞµÚ9Ì¹¿ËÊ¦" "ÂúÖŞµÚ10Ì¹¿ËÊ¦" "ÂúÖŞµÚ11Ì¹¿ËÊ¦" 
+		"ÂúÖŞµÚ12Ì¹¿ËÊ¦" "ÂúÖŞµÚ13Ì¹¿ËÊ¦" "ÂúÖŞµÚ14Ì¹¿ËÊ¦" "ÂúÖŞµÚ15Ì¹¿ËÊ¦" "ÂúÖŞµÚ16Ì¹¿ËÊ¦" "ÂúÖŞµÚ17Ì¹¿ËÊ¦" "ÂúÖŞµÚ18Ì¹¿ËÊ¦" "ÂúÖŞµÚ19Ì¹¿ËÊ¦" "ÂúÖŞµÚ20Ì¹¿ËÊ¦" "ÂúÖŞµÚ21Ì¹¿ËÊ¦" "ÂúÖŞµÚ22Ì¹¿ËÊ¦" 
+		"ÂúÖŞµÚ23Ì¹¿ËÊ¦" "ÂúÖŞµÚ24Ì¹¿ËÊ¦" 
 	}
 	paratrooper_brigade = {
-		"1 Man'chu Jiang'luo'san'bu" "2 Man'chu Jiang'luo'san'bu" "3 Man'chu Jiang'luo'san'bu" "4 Man'chu Jiang'luo'san'bu" "5 Man'chu Jiang'luo'san'bu" "6 Man'chu Jiang'luo'san'bu" "7 Man'chu Jiang'luo'san'bu" "8 Man'chu Jiang'luo'san'bu" "9 Man'chu Jiang'luo'san'bu" "10 Man'chu Jiang'luo'san'bu" "11 Man'chu Jiang'luo'san'bu" 
-		"12 Man'chu Jiang'luo'san'bu" "13 Man'chu Jiang'luo'san'bu" "14 Man'chu Jiang'luo'san'bu" "15 Man'chu Jiang'luo'san'bu" 
+		"ÂúÖŞµÚ1½µÂäÉ¡Ê¦" "ÂúÖŞµÚ2½µÂäÉ¡Ê¦" "ÂúÖŞµÚ3½µÂäÉ¡Ê¦" "ÂúÖŞµÚ4½µÂäÉ¡Ê¦" "ÂúÖŞµÚ5½µÂäÉ¡Ê¦" "ÂúÖŞµÚ6½µÂäÉ¡Ê¦" "ÂúÖŞµÚ7½µÂäÉ¡Ê¦" "ÂúÖŞµÚ8½µÂäÉ¡Ê¦" "ÂúÖŞµÚ9½µÂäÉ¡Ê¦" "ÂúÖŞµÚ10½µÂäÉ¡Ê¦" "ÂúÖŞµÚ11½µÂäÉ¡Ê¦" 
+		"ÂúÖŞµÚ12½µÂäÉ¡Ê¦" "ÂúÖŞµÚ13½µÂäÉ¡Ê¦" "ÂúÖŞµÚ14½µÂäÉ¡Ê¦" "ÂúÖŞµÚ15½µÂäÉ¡Ê¦" 
 	}
 	marine_brigade = {
-		"1 Man'chu Hai'li'bu" "2 Man'chu Hai'li'bu" "3 Man'chu Hai'li'bu" "4 Man'chu Hai'li'bu" "5 Man'chu Hai'li'bu" "6 Man'chu Hai'li'bu" "7 Man'chu Hai'li'bu" "8 Man'chu Hai'li'bu" "9 Man'chu Hai'li'bu" "10 Man'chu Hai'li'bu" "11 Man'chu Hai'li'bu" 
-		"12 Man'chu Hai'li'bu" "13 Man'chu Hai'li'bu" "14 Man'chu Hai'li'bu" "15 Man'chu Hai'li'bu" "16 Man'chu Hai'li'bu" "17 Man'chu Hai'li'bu" "18 Man'chu Hai'li'bu" "19 Man'chu Hai'li'bu" "20 Man'chu Hai'li'bu" 
+		"ÂúÖŞµÚ1º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ2º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ3º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ4º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ5º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ6º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ7º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ8º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ9º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ10º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ11º£¾üÂ½Õ½Ê¦" 
+		"ÂúÖŞµÚ12º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ13º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ14º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ15º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ16º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ17º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ18º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ19º£¾üÂ½Õ½Ê¦" "ÂúÖŞµÚ20º£¾üÂ½Õ½Ê¦" 
 	}
 	bergsjaeger_brigade = {
-		"1 Man'chu Zhidui" "2 Man'chu Zhidui" "3 Man'chu Zhidui" "4 Man'chu Zhidui" "5 Man'chu Zhidui" "6 Man'chu Zhidui" "7 Man'chu Zhidui" "8 Man'chu Zhidui" "9 Man'chu Zhidui" "10 Man'chu Zhidui" "12 Man'chu Zhidui" 
-		"14 Man'chu Zhidui" "15 Man'chu Zhidui" "17 Man'chu Zhidui" "19 Man'chu Zhidui" "21 Man'chu Zhidui" "22 Man'chu Zhidui" "25 Man'chu Zhidui" 
+		"ÂúÖŞµÚ1Ö§¶Ó" "ÂúÖŞµÚ2Ö§¶Ó" "ÂúÖŞµÚ3Ö§¶Ó" "ÂúÖŞµÚ4Ö§¶Ó" "ÂúÖŞµÚ5Ö§¶Ó" "ÂúÖŞµÚ6Ö§¶Ó" "ÂúÖŞµÚ7Ö§¶Ó" "ÂúÖŞµÚ8Ö§¶Ó" "ÂúÖŞµÚ9Ö§¶Ó" "ÂúÖŞµÚ10Ö§¶Ó" "ÂúÖŞµÚ12Ö§¶Ó" 
+		"ÂúÖŞµÚ14Ö§¶Ó" "ÂúÖŞµÚ15Ö§¶Ó" "ÂúÖŞµÚ17Ö§¶Ó" "ÂúÖŞµÚ19Ö§¶Ó" "ÂúÖŞµÚ21Ö§¶Ó" "ÂúÖŞµÚ22Ö§¶Ó" "ÂúÖŞµÚ25Ö§¶Ó" 
 	}
 	garrison_brigade = {
-		"1 Man'chu Shi" "2 Man'chu Shi" "3 Man'chu Shi" "4 Man'chu Shi" "5 Man'chu Shi" "6 Man'chu Shi" "7 Man'chu Shi" "8 Man'chu Shi" "9 Man'chu Shi" "10 Man'chu Shi" "12 Man'chu Shi" 
-		"14 Man'chu Shi" "15 Man'chu Shi" "17 Man'chu Shi" "19 Man'chu Shi" "21 Man'chu Shi" "22 Man'chu Shi" "25 Man'chu Shi" "28 Man'chu Shi" "29 Man'chu Shi" "30 Man'chu Shi" "35 Man'chu Shi" 
-		"38 Man'chu Shi" "40 Man'chu Shi" "42 Man'chu Shi" "46 Man'chu Shi" "47 Man'chu Shi" "49 Man'chu Shi" "50 Man'chu Shi" 
+		"ÂúÖŞµÚ1Ê¦" "ÂúÖŞµÚ2Ê¦" "ÂúÖŞµÚ3Ê¦" "ÂúÖŞµÚ4Ê¦" "ÂúÖŞµÚ5Ê¦" "ÂúÖŞµÚ6Ê¦" "ÂúÖŞµÚ7Ê¦" "ÂúÖŞµÚ8Ê¦" "ÂúÖŞµÚ9Ê¦" "ÂúÖŞµÚ10Ê¦" "ÂúÖŞµÚ12Ê¦" 
+		"ÂúÖŞµÚ14Ê¦" "ÂúÖŞµÚ15Ê¦" "ÂúÖŞµÚ17Ê¦" "ÂúÖŞµÚ19Ê¦" "ÂúÖŞµÚ21Ê¦" "ÂúÖŞµÚ22Ê¦" "ÂúÖŞµÚ25Ê¦" "ÂúÖŞµÚ28Ê¦" "ÂúÖŞµÚ29Ê¦" "ÂúÖŞµÚ30Ê¦" "ÂúÖŞµÚ35Ê¦" 
+		"ÂúÖŞµÚ38Ê¦" "ÂúÖŞµÚ40Ê¦" "ÂúÖŞµÚ42Ê¦" "ÂúÖŞµÚ46Ê¦" "ÂúÖŞµÚ47Ê¦" "ÂúÖŞµÚ49Ê¦" "ÂúÖŞµÚ50Ê¦" 
 	}
 	hq_brigade = {
-		"1. Zhanqu" "2. Zhanqu" "3. Zhanqu" "4. Zhanqu" "5. Zhanqu" "6. Zhanqu" "7. Zhanqu" "8. Zhanqu" "9. Zhanqu" 
+		"µÚ1Õ½Çø" "µÚ2Õ½Çø" "µÚ3Õ½Çø" "µÚ4Õ½Çø" "µÚ5Õ½Çø" "µÚ6Õ½Çø" "µÚ7Õ½Çø" "µÚ8Õ½Çø" "µÚ9Õ½Çø" 
 	}
 	militia_brigade = {
-		"7 Man'chu Lü" "8 Man'chu Lü" "9 Man'chu Lü" "10 Man'chu Lü" "12 Man'chu Lü" "14 Man'chu Lü" "15 Man'chu Lü" "17 Man'chu Lü" "19 Man'chu Lü" "21 Man'chu Lü" "22 Man'chu Lü" 
-		"25 Man'chu Lü" "28 Man'chu Lü" "29 Man'chu Lü" "30 Man'chu Lü" "35 Man'chu Lü" "38 Man'chu Lü" "40 Man'chu Lü" "42 Man'chu Lü" "46 Man'chu Lü" "47 Man'chu Lü" "49 Man'chu Lü" 
-		"50 Man'chu Lü" "51 Man'chu Lü" "57 Man'chu Lü" "58 Man'chu Lü" "61 Man'chu Lü" 
+		"ÂúÖŞµÚ7Ãñ±øÊ¦" "ÂúÖŞµÚ8Ãñ±øÊ¦" "ÂúÖŞµÚ9Ãñ±øÊ¦" "ÂúÖŞµÚ10Ãñ±øÊ¦" "ÂúÖŞµÚ12Ãñ±øÊ¦" "ÂúÖŞµÚ14Ãñ±øÊ¦" "ÂúÖŞµÚ15Ãñ±øÊ¦" "ÂúÖŞµÚ17Ãñ±øÊ¦" "ÂúÖŞµÚ19Ãñ±øÊ¦" "ÂúÖŞµÚ21Ãñ±øÊ¦" "ÂúÖŞµÚ22Ãñ±øÊ¦" 
+		"ÂúÖŞµÚ25Ãñ±øÊ¦" "ÂúÖŞµÚ28Ãñ±øÊ¦" "ÂúÖŞµÚ29Ãñ±øÊ¦" "ÂúÖŞµÚ30Ãñ±øÊ¦" "ÂúÖŞµÚ35Ãñ±øÊ¦" "ÂúÖŞµÚ38Ãñ±øÊ¦" "ÂúÖŞµÚ40Ãñ±øÊ¦" "ÂúÖŞµÚ42Ãñ±øÊ¦" "ÂúÖŞµÚ46Ãñ±øÊ¦" "ÂúÖŞµÚ47Ãñ±øÊ¦" "ÂúÖŞµÚ49Ãñ±øÊ¦" 
+		"ÂúÖŞµÚ50Ãñ±øÊ¦" "ÂúÖŞµÚ51Ãñ±øÊ¦" "ÂúÖŞµÚ57Ãñ±øÊ¦" "ÂúÖŞµÚ58Ãñ±øÊ¦" "ÂúÖŞµÚ61Ãñ±øÊ¦" 
 	}
 	multi_role = {
-		"1 Man'chu Zhan'dou'ji" "2 Man'chu Zhan'dou'ji" "3 Man'chu Zhan'dou'ji" "4 Man'chu Zhan'dou'ji" "5 Man'chu Zhan'dou'ji" "6 Man'chu Zhan'dou'ji" "7 Man'chu Zhan'dou'ji" "8 Man'chu Zhan'dou'ji" "9 Man'chu Zhan'dou'ji" "10 Man'chu Zhan'dou'ji" "11 Man'chu Zhan'dou'ji" 
-		"12 Man'chu Zhan'dou'ji" "13 Man'chu Zhan'dou'ji" "14 Man'chu Zhan'dou'ji" "15 Man'chu Zhan'dou'ji" 
+		"ÂúÖŞµÚ1Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ2Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ3Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ4Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ5Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ6Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ7Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ8Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ9Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ10Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ11Õ½¶·»úÁª¶Ó" 
+		"ÂúÖŞµÚ12Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ13Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ14Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ15Õ½¶·»úÁª¶Ó" 
 	}
 	interceptor = {
-		"1 Man'chu Zhan'dou'ji" "2 Man'chu Zhan'dou'ji" "3 Man'chu Zhan'dou'ji" "4 Man'chu Zhan'dou'ji" "5 Man'chu Zhan'dou'ji" "6 Man'chu Zhan'dou'ji" "7 Man'chu Zhan'dou'ji" "8 Man'chu Zhan'dou'ji" "9 Man'chu Zhan'dou'ji" "10 Man'chu Zhan'dou'ji" "11 Man'chu Zhan'dou'ji" 
-		"12 Man'chu Zhan'dou'ji" "13 Man'chu Zhan'dou'ji" "14 Man'chu Zhan'dou'ji" "15 Man'chu Zhan'dou'ji" 
-	}
-	jet_int = {
-		"1 Man'chu Zhan'dou'ji" "2 Man'chu Zhan'dou'ji" "3 Man'chu Zhan'dou'ji" "4 Man'chu Zhan'dou'ji" "5 Man'chu Zhan'dou'ji" "6 Man'chu Zhan'dou'ji" "7 Man'chu Zhan'dou'ji" "8 Man'chu Zhan'dou'ji" "9 Man'chu Zhan'dou'ji" "10 Man'chu Zhan'dou'ji" "11 Man'chu Zhan'dou'ji" 
-		"12 Man'chu Zhan'dou'ji" "13 Man'chu Zhan'dou'ji" "14 Man'chu Zhan'dou'ji" "15 Man'chu Zhan'dou'ji" 
-	}
-	jet_mr = {
-		"1 Man'chu Zhan'dou'ji" "2 Man'chu Zhan'dou'ji" "3 Man'chu Zhan'dou'ji" "4 Man'chu Zhan'dou'ji" "5 Man'chu Zhan'dou'ji" "6 Man'chu Zhan'dou'ji" "7 Man'chu Zhan'dou'ji" "8 Man'chu Zhan'dou'ji" "9 Man'chu Zhan'dou'ji" "10 Man'chu Zhan'dou'ji" "11 Man'chu Zhan'dou'ji" 
-		"12 Man'chu Zhan'dou'ji" "13 Man'chu Zhan'dou'ji" "14 Man'chu Zhan'dou'ji" "15 Man'chu Zhan'dou'ji" 
+		"ÂúÖŞµÚ1Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ2Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ3Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ4Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ5Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ6Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ7Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ8Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ9Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ10Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ11Õ½¶·»úÁª¶Ó" 
+		"ÂúÖŞµÚ12Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ13Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ14Õ½¶·»úÁª¶Ó" "ÂúÖŞµÚ15Õ½¶·»úÁª¶Ó" 
 	}
 	strategic_bomber = {
-		"1 Man'chu STR Hong'zha'ji" "2 Man'chu STR Hong'zha'ji" "3 Man'chu STR Hong'zha'ji" "4 Man'chu STR Hong'zha'ji" "5 Man'chu STR Hong'zha'ji" "6 Man'chu STR Hong'zha'ji" "7 Man'chu STR Hong'zha'ji" "8 Man'chu STR Hong'zha'ji" "9 Man'chu STR Hong'zha'ji" "10 Man'chu STR Hong'zha'ji" "11 Man'chu STR Hong'zha'ji" 
-		"12 Man'chu STR Hong'zha'ji" "13 Man'chu STR Hong'zha'ji" "14 Man'chu STR Hong'zha'ji" "15 Man'chu STR Hong'zha'ji" 
+		"ÂúÖŞµÚ1Õ½ÊõºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ2Õ½ÊõºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ3Õ½ÊõºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ4Õ½ÊõºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ5Õ½ÊõºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ6Õ½ÊõºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ7Õ½ÊõºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ8Õ½ÊõºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ9Õ½ÊõºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ10Õ½ÊõºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ11Õ½ÊõºäÕ¨»úÁª¶Ó" 
+		"ÂúÖŞµÚ12Õ½ÊõºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ13Õ½ÊõºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ14Õ½ÊõºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ15Õ½ÊõºäÕ¨»úÁª¶Ó" 
 	}
 	tactical_bomber = {
-		"1 Man'chu TAC Hong'zha'ji" "2 Man'chu TAC Hong'zha'ji" "3 Man'chu TAC Hong'zha'ji" "4 Man'chu TAC Hong'zha'ji" "5 Man'chu TAC Hong'zha'ji" "6 Man'chu TAC Hong'zha'ji" "7 Man'chu TAC Hong'zha'ji" "8 Man'chu TAC Hong'zha'ji" "9 Man'chu TAC Hong'zha'ji" "10 Man'chu TAC Hong'zha'ji" "11 Man'chu TAC Hong'zha'ji" 
-		"12 Man'chu TAC Hong'zha'ji" "13 Man'chu TAC Hong'zha'ji" "14 Man'chu TAC Hong'zha'ji" "15 Man'chu TAC Hong'zha'ji" 
-	}
-	jet_bomber = {
-		"1 Man'chu TAC Hong'zha'ji" "2 Man'chu TAC Hong'zha'ji" "3 Man'chu TAC Hong'zha'ji" "4 Man'chu TAC Hong'zha'ji" "5 Man'chu TAC Hong'zha'ji" "6 Man'chu TAC Hong'zha'ji" "7 Man'chu TAC Hong'zha'ji" "8 Man'chu TAC Hong'zha'ji" "9 Man'chu TAC Hong'zha'ji" "10 Man'chu TAC Hong'zha'ji" "11 Man'chu TAC Hong'zha'ji" 
-		"12 Man'chu TAC Hong'zha'ji" "13 Man'chu TAC Hong'zha'ji" "14 Man'chu TAC Hong'zha'ji" "15 Man'chu TAC Hong'zha'ji" 
+		"ÂúÖŞµÚ1Õ½ÂÔºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ2Õ½ÂÔºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ3Õ½ÂÔºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ4Õ½ÂÔºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ5Õ½ÂÔºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ6Õ½ÂÔºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ7Õ½ÂÔºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ8Õ½ÂÔºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ9Õ½ÂÔºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ10Õ½ÂÔºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ11Õ½ÂÔºäÕ¨»úÁª¶Ó" 
+		"ÂúÖŞµÚ12Õ½ÂÔºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ13Õ½ÂÔºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ14Õ½ÂÔºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ15Õ½ÂÔºäÕ¨»úÁª¶Ó" 
 	}
 	naval_bomber = {
-		"1 Man'chu MAR Hong'zha'ji" "2 Man'chu MAR Hong'zha'ji" "3 Man'chu MAR Hong'zha'ji" "4 Man'chu MAR Hong'zha'ji" "5 Man'chu MAR Hong'zha'ji" "6 Man'chu MAR Hong'zha'ji" "7 Man'chu MAR Hong'zha'ji" "8 Man'chu MAR Hong'zha'ji" "9 Man'chu MAR Hong'zha'ji" "10 Man'chu MAR Hong'zha'ji" "11 Man'chu MAR Hong'zha'ji" 
-		"12 Man'chu MAR Hong'zha'ji" "13 Man'chu MAR Hong'zha'ji" "14 Man'chu MAR Hong'zha'ji" "15 Man'chu MAR Hong'zha'ji" "1 Man'chu TOR Hong'zha'ji" "2 Man'chu TOR Hong'zha'ji" "3 Man'chu TOR Hong'zha'ji" "4 Man'chu TOR Hong'zha'ji" "5 Man'chu TOR Hong'zha'ji" "6 Man'chu TOR Hong'zha'ji" "7 Man'chu TOR Hong'zha'ji" 
-		"8 Man'chu TOR Hong'zha'ji" "9 Man'chu TOR Hong'zha'ji" "10 Man'chu TOR Hong'zha'ji" "11 Man'chu TOR Hong'zha'ji" "12 Man'chu TOR Hong'zha'ji" "13 Man'chu TOR Hong'zha'ji" "14 Man'chu TOR Hong'zha'ji" "15 Man'chu TOR Hong'zha'ji" 
+		"ÂúÖŞµÚ1º£¾üºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ2º£¾üºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ3º£¾üºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ4º£¾üºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ5º£¾üºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ6º£¾üºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ7º£¾üºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ8º£¾üºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ9º£¾üºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ10º£¾üºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ11º£¾üºäÕ¨»úÁª¶Ó" 
+		"ÂúÖŞµÚÂúÖŞµÚ12º£¾üºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ13º£¾üºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ14º£¾üºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ15º£¾üºäÕ¨»úÁª¶Ó" "1ÓãÀ×ºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ2ÓãÀ×ºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ3ÓãÀ×ºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ4ÓãÀ×ºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ5ÓãÀ×ºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ6ÓãÀ×ºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ7ÓãÀ×ºäÕ¨»úÁª¶Ó" 
+		"ÂúÖŞµÚ8ÓãÀ×ºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ9ÓãÀ×ºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ10ÓãÀ×ºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ11ÓãÀ×ºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ12ÓãÀ×ºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ13ÓãÀ×ºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ14ÓãÀ×ºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ15ÓãÀ×ºäÕ¨»úÁª¶Ó" 
 	}
 	cas = {
-		"1 Man'chu DIV Hong'zha'ji" "2 Man'chu DIV Hong'zha'ji" "3 Man'chu DIV Hong'zha'ji" "4 Man'chu DIV Hong'zha'ji" "5 Man'chu DIV Hong'zha'ji" "6 Man'chu DIV Hong'zha'ji" "7 Man'chu DIV Hong'zha'ji" "8 Man'chu DIV Hong'zha'ji" "9 Man'chu DIV Hong'zha'ji" "10 Man'chu DIV Hong'zha'ji" "11 Man'chu DIV Hong'zha'ji" 
-		"12 Man'chu DIV Hong'zha'ji" "13 Man'chu DIV Hong'zha'ji" "14 Man'chu DIV Hong'zha'ji" "15 Man'chu DIV Hong'zha'ji" 
+		"ÂúÖŞµÚ1¸©³åºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ2¸©³åºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ3¸©³åºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ4¸©³åºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ5¸©³åºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ6¸©³åºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ7¸©³åºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ8¸©³åºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ9¸©³åºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ10¸©³åºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ11¸©³åºäÕ¨»úÁª¶Ó" 
+		"ÂúÖŞµÚ12¸©³åºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ13¸©³åºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ14¸©³åºäÕ¨»úÁª¶Ó" "ÂúÖŞµÚ15¸©³åºäÕ¨»úÁª¶Ó" 
 	}
 	transport_plane = {
-		"1 Man'chu Kong'yun'ji" "2 Man'chu Kong'yun'ji" "3 Man'chu Kong'yun'ji" "4 Man'chu Kong'yun'ji" "5 Man'chu Kong'yun'ji" "6 Man'chu Kong'yun'ji" "7 Man'chu Kong'yun'ji" "8 Man'chu Kong'yun'ji" "9 Man'chu Kong'yun'ji" "10 Man'chu Kong'yun'ji" "11 Man'chu Kong'yun'ji" 
-		"12 Man'chu Kong'yun'ji" "13 Man'chu Kong'yun'ji" "14 Man'chu Kong'yun'ji" "15 Man'chu Kong'yun'ji" 
+		"ÂúÖŞµÚ1ÔËÊä»úÁª¶Ó" "ÂúÖŞµÚ2ÔËÊä»úÁª¶Ó" "ÂúÖŞµÚ3ÔËÊä»úÁª¶Ó" "ÂúÖŞµÚ4ÔËÊä»úÁª¶Ó" "ÂúÖŞµÚ5ÔËÊä»úÁª¶Ó" "ÂúÖŞµÚ6ÔËÊä»úÁª¶Ó" "ÂúÖŞµÚ7ÔËÊä»úÁª¶Ó" "ÂúÖŞµÚ8ÔËÊä»úÁª¶Ó" "ÂúÖŞµÚ9ÔËÊä»úÁª¶Ó" "ÂúÖŞµÚ10ÔËÊä»úÁª¶Ó" "ÂúÖŞµÚ11ÔËÊä»úÁª¶Ó" 
+		"ÂúÖŞµÚ12ÔËÊä»úÁª¶Ó" "ÂúÖŞµÚ13ÔËÊä»úÁª¶Ó" "ÂúÖŞµÚ14ÔËÊä»úÁª¶Ó" "ÂúÖŞµÚ15ÔËÊä»úÁª¶Ó" 
 	}
 	battleship = {
-		"Pu'Yi" "Shen'yang" 
+		"äßÒÇ" "ÉòÑô" 
 	}
 	light_cruiser = {
-		"Feng'cheng" "Zhuang'he" "Fu'xian" "Yi'xian" "Gai'xian" 
+		"·á³Ç" "×¯ºÓ" "¸»ÏØ" "Ò×ÏØ" "¸ÇÏØ" 
 	}
 	heavy_cruiser = {
-		"Feng'cheng" "Zhuang'he" "Fu'xian" "Yi'xian" "Gai'xian" 
+		"·á³Ç" "×¯ºÓ" "¸»ÏØ" "Ò×ÏØ" "¸ÇÏØ" 
 	}
 	battlecruiser = {
-		"Pu'Yi" "Shen'yang" 
+		"äßÒÇ" "ÉòÑô" 
 	}
 	destroyer = {
-		"1 Man'chu TBS Bingtuan" "2 Man'chu TBS Bingtuan" "3 Man'chu TBS Bingtuan" "4 Man'chu TBS Bingtuan" "5 Man'chu TBS Bingtuan" "6 Man'chu TBS Bingtuan" "7 Man'chu TBS Bingtuan" "8 Man'chu TBS Bingtuan" "9 Man'chu TBS Bingtuan" "10 Man'chu TBS Bingtuan" "11 Man'chu TBS Bingtuan" 
-		"12 Man'chu TBS Bingtuan" "13 Man'chu TBS Bingtuan" "14 Man'chu TBS Bingtuan" "15 Man'chu TBS Bingtuan" "16 Man'chu TBS Bingtuan" "17 Man'chu TBS Bingtuan" "18 Man'chu TBS Bingtuan" "19 Man'chu TBS Bingtuan" 
+		"ÂúÖŞµÚ1ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ2ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ3ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ4ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ5ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ6ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ7ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ8ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ9ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ10ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ11ÇıÖğ½¢Ö§¶Ó" 
+		"ÂúÖŞµÚ12ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ13ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ14ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ15ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ16ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ17ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ18ÇıÖğ½¢Ö§¶Ó" "ÂúÖŞµÚ19ÇıÖğ½¢Ö§¶Ó" 
 	}
 	carrier = {
-		"Man'chu'kuo" "Ben'xi" 
+		"ÂúÖŞ¹ú" "±¾Ïª" 
 	}
 	submarine = {
-		"1 Man'chu Qian'ting'bu" "2 Man'chu Qian'ting'bu" "3 Man'chu Qian'ting'bu" "4 Man'chu Qian'ting'bu" "5 Man'chu Qian'ting'bu" "6 Man'chu Qian'ting'bu" "7 Man'chu Qian'ting'bu" "8 Man'chu Qian'ting'bu" "9 Man'chu Qian'ting'bu" "10 Man'chu Qian'ting'bu" "11 Man'chu Qian'ting'bu" 
-		"12 Man'chu Qian'ting'bu" "13 Man'chu Qian'ting'bu" "14 Man'chu Qian'ting'bu" "15 Man'chu Qian'ting'bu" "16 Man'chu Qian'ting'bu" "17 Man'chu Qian'ting'bu" "18 Man'chu Qian'ting'bu" "19 Man'chu Qian'ting'bu" 
+		"ÂúÖŞµÚ1Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ2Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ3Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ4Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ5Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ6Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ7Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ8Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ9Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ10Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ11Ç±Í§Ö§¶Ó" 
+		"ÂúÖŞµÚ12Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ13Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ14Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ15Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ16Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ17Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ18Ç±Í§Ö§¶Ó" "ÂúÖŞµÚ19Ç±Í§Ö§¶Ó" 
 	}
 	transport_ship = {
-		"1 Man'chu TRPS Bingtuan" "2 Man'chu TRPS Bingtuan" "3 Man'chu TRPS Bingtuan" "4 Man'chu TRPS Bingtuan" "5 Man'chu TRPS Bingtuan" "6 Man'chu TRPS Bingtuan" "7 Man'chu TRPS Bingtuan" "8 Man'chu TRPS Bingtuan" "9 Man'chu TRPS Bingtuan" "10 Man'chu TRPS Bingtuan" 
+		"ÂúÖŞµÚ1ÔËÊä·Ö¶Ó" "ÂúÖŞµÚ2ÔËÊä·Ö¶Ó" "ÂúÖŞµÚ3ÔËÊä·Ö¶Ó" "ÂúÖŞµÚ4ÔËÊä·Ö¶Ó" "ÂúÖŞµÚ5ÔËÊä·Ö¶Ó" "ÂúÖŞµÚ6ÔËÊä·Ö¶Ó" "ÂúÖŞµÚ7ÔËÊä·Ö¶Ó" "ÂúÖŞµÚ8ÔËÊä·Ö¶Ó" "ÂúÖŞµÚ9ÔËÊä·Ö¶Ó" "ÂúÖŞµÚ10ÔËÊä·Ö¶Ó" 
 	}
 
 }
 
 ministers = {
 	58001 = {
-		name = "Pu-Yi"
+		name = "äßÒÇ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M58001
+		head_of_state = popular_figurehead
+		head_of_state = popular_figurehead
 		head_of_state = popular_figurehead
 		foreign_minister = great_compromiser
 		chief_of_army = guns_and_butter_doctrine
 		start_date = 1936.1.1
 	}
 	58002 = {
-		name = "Chang Ching-hui"
+		name = "ÕÅ¾°»İ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M58002
@@ -178,7 +154,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	58004 = {
-		name = "Li Shao-keng"
+		name = "Àî½B¸ı"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58004
@@ -187,7 +163,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	58005 = {
-		name = "Chin Chu-han"
+		name = "Ï£´ºº®"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58005
@@ -195,7 +171,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	58006 = {
-		name = "Kawashima Yoshiko"
+		name = "´¨µº·¼×Ó"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58006
@@ -205,7 +181,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	58007 = {
-		name = "Chi Hsing"
+		name = "¼ªÅd"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58007
@@ -214,7 +190,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	58009 = {
-		name = "Sergei Ramilcheff"
+		name = "Ğ»¶û¸Ç À­Ã×¶ûÆõ·ò"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58009
@@ -222,7 +198,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	58010 = {
-		name = "Yokoyama Masayuki"
+		name = "ºáÉ½ÕıÑå"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58010
@@ -230,7 +206,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	58014 = {
-		name = "Liou Tcheng-fou"
+		name = "Áõ´º¸£"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M58014
@@ -239,7 +215,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	58015 = {
-		name = "Wei Cheng-chen"
+		name = "Îº³Ç³¿"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M58015
@@ -248,7 +224,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	58016 = {
-		name = "Adatchi Mineichiro"
+		name = "°¢´ïÌØ»ù Ã×ÒÁÆäÅµ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M58016
@@ -257,7 +233,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	58017 = {
-		name = "Matsuyama Shinjiro"
+		name = "ËÉÉ½É÷´ÎÀÉ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M58017
@@ -266,7 +242,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	58018 = {
-		name = "Nitobe Inazo"
+		name = "ĞÂ¶É»§µ¾Ôì"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M58018
@@ -275,7 +251,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	58019 = {
-		name = "Loh Tcheng"
+		name = "Â¦³¿"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M58019
@@ -284,16 +260,16 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	58020 = {
-		name = "Chao Hsin-chu"
+		name = "³¯ĞÂÖñ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M58020
 		head_of_government = political_protege
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1946.1.1
 	}
 	58021 = {
-		name = "Tsai Yun-sheng"
+		name = "²Ìß\Éı"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58021
@@ -301,7 +277,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	58022 = {
-		name = "Pei Tsu-yee"
+		name = "ÅáÊéÒ°"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58022
@@ -309,7 +285,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	58023 = {
-		name = "Iida Kusuo"
+		name = "·¹ÌïéªÄĞ"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M58023
@@ -317,7 +293,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	58024 = {
-		name = "Nagai Matsuzo"
+		name = "ÓÀ¾®´ó×÷"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M58024
@@ -325,7 +301,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	58026 = {
-		name = "Oei Hui-lan"
+		name = "Å·»áá°"
 		ideology = paternal_autocrat
 		loyalty = 0.25
 		picture = M58026
@@ -333,7 +309,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	58029 = {
-		name = "Ishiguro Shiro"
+		name = "Ê¯ºÚËÄÀÉ"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58029
@@ -341,7 +317,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	58030 = {
-		name = "Tsushima Juichi"
+		name = "½òµºÊÙÒ»"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M58030
@@ -349,7 +325,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	58031 = {
-		name = "Ishii Kikijuro"
+		name = "Ê¯¾®ºÆÈı"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M58031
@@ -357,7 +333,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	58032 = {
-		name = "Megata Toshiro"
+		name = "Ä¿ºØÌïÃôÀÉ"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M58032
@@ -365,7 +341,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	58033 = {
-		name = "Kyuin Wellington Koo"
+		name = "¹ËÎ¬¾û"
 		ideology = paternal_autocrat
 		loyalty = 0.25
 		picture = M58033
@@ -373,7 +349,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	58034 = {
-		name = "Lo Tsang-yin"
+		name = "ÀîÉÌÒø"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M58034
@@ -381,7 +357,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	58036 = {
-		name = "Soume Tcheng"
+		name = "ËÕ³É"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58036
@@ -389,7 +365,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	58038 = {
-		name = "Hayashi Gonsuke"
+		name = "ÁÖÈ¨Öú"
 		ideology = national_socialist
 		loyalty = 0.50
 		picture = M58038
@@ -397,7 +373,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	58040 = {
-		name = "Tang Tsai-fou"
+		name = "ÌÆÈû·ğ"
 		ideology = paternal_autocrat
 		loyalty = 0.25
 		picture = M58040
@@ -405,7 +381,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	58041 = {
-		name = "Chao Chu-wu"
+		name = "³¬³öÄ¾"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M58041
@@ -413,7 +389,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	58042 = {
-		name = "Wang Chung-hui"
+		name = "Íô´º»Ô"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58042
@@ -421,7 +397,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	58044 = {
-		name = "Saito Hiroshi"
+		name = "Õ«ÌÙ²©Ê·"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M58044
@@ -429,7 +405,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	58046 = {
-		name = "Fukai Eigo"
+		name = "Éî¾®Ó¢Îå"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M58046
@@ -437,7 +413,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	58047 = {
-		name = "Lan Fang-mei"
+		name = "À¼·½áÒ"
 		ideology = paternal_autocrat
 		loyalty = 0.25
 		picture = M58047
@@ -445,7 +421,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	58048 = {
-		name = "Chang Su-lee"
+		name = "³©ÊéÀï"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M58048
@@ -453,7 +429,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	58049 = {
-		name = "Hsing Shi-lien"
+		name = "ĞÏÊ¿Á®"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58049
@@ -462,7 +438,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	58051 = {
-		name = "Nakajima Kesago"
+		name = "ÖĞµº½ñ³¯Îá"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M58051
@@ -471,7 +447,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	58052 = {
-		name = "Isogai Ryozhi"
+		name = "´‰¹ÈÁ®½é"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M58052
@@ -480,7 +456,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	58053 = {
-		name = "Igor Chernokoff"
+		name = "ÒÁ¸ê¶û ÇĞ¶ûÅµ¿Æ·ò"
 		ideology = paternal_autocrat
 		loyalty = 0.25
 		picture = M58053
@@ -488,7 +464,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	58054 = {
-		name = "Chao Chiu-hang"
+		name = "ÕÔÇïº½"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M58054
@@ -496,7 +472,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	58059 = {
-		name = "Manfred von Tscherwelen"
+		name = "Âü¸£À×µÂ ·ë ´ÄĞ»ÎºÂ×"
 		ideology = paternal_autocrat
 		loyalty = 0.25
 		picture = M58059
@@ -504,7 +480,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	58061 = {
-		name = "Jizu Hosonoya"
+		name = "½ğº£Ë¹"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58061
@@ -512,7 +488,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	58062 = {
-		name = "Yin Tsuo-chien"
+		name = "ÒüìñÇ¬"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58062
@@ -520,7 +496,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	58063 = {
-		name = "Oka Keijun"
+		name = "¸Ú¾´´¾"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M58063
@@ -528,7 +504,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	58064 = {
-		name = "Oda Yurozu"
+		name = "Ö¯ÌïÓĞÀÖ"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M58064
@@ -536,7 +512,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	58065 = {
-		name = "Kadono Chokuro"
+		name = "½ÇÄÜÖøºÚ"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M58065
@@ -545,7 +521,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	58066 = {
-		name = "Tai Chi-Quo"
+		name = "Ì©³ÙÈ«"
 		ideology = paternal_autocrat
 		loyalty = 0.25
 		picture = M58066
@@ -553,7 +529,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	58068 = {
-		name = "Isono Yuzo"
+		name = "í¶Ò°Ô£Èı"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58068
@@ -561,7 +537,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	58069 = {
-		name = "Nakajima Shinji"
+		name = "ÖĞµºÕæË¾"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M58069
@@ -569,7 +545,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	58070 = {
-		name = "Miyazaki Akira"
+		name = "¹¬ÆéÕÃ"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M58070
@@ -577,7 +553,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	58071 = {
-		name = "Ito Nobumi"
+		name = "ÒÁÌÙÊöÊ·"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M58071
@@ -585,166 +561,11 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	58074 = {
-		name = "Tsao Ping-sen"
+		name = "²Ü±üÉ­"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M58074
 		chief_of_air = army_aviation_doctrine
 		start_date = 1946.1.1
 	}
-	# Generic dummy ministers
-	95601 = {
-		name = "Nameless Clerk"
-		ideology = national_socialist
-		loyalty = 1.0
-		picture = MNationalSocialist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95602 = {
-		name = "Nameless Clerk"
-		ideology = paternal_autocrat
-		loyalty = 1.0
-		picture = MPaternalAutocrat
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95603 = {
-		name = "Nameless Clerk"
-		ideology = social_conservative
-		loyalty = 1.0
-		picture = MSocialConservative
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95604 = {
-		name = "Nameless Clerk"
-		ideology = market_liberal
-		loyalty = 1.0
-		picture = MMarketLiberal
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95605 = {
-		name = "Nameless Clerk"
-		ideology = social_liberal
-		loyalty = 1.0
-		picture = MSocialLiberal
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95606 = {
-		name = "Nameless Clerk"
-		ideology = social_democrat
-		loyalty = 1.0
-		picture = MSocialDemocrat
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95607 = {
-		name = "Nameless Clerk"
-		ideology = left_wing_radical
-		loyalty = 1.0
-		picture = MLeftWingRadical
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95608 = {
-		name = "Nameless Clerk"
-		ideology = leninist
-		loyalty = 1.0
-		picture = MLeninist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95609 = {
-		name = "Nameless Clerk"
-		ideology = stalinist
-		loyalty = 1.0
-		picture = MStalinist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	
 }

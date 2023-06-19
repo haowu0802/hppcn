@@ -1,8 +1,6 @@
 color = { 31  124  255 }
 graphical_culture = Japanese
 
-
-
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -19,137 +17,110 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
-	generic_garrison = {
-		garrison_brigade
-		garrison_brigade
-		garrison_brigade
-	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
-	}
-	generic_alpine = {
-		bergsjaeger_brigade
-		bergsjaeger_brigade
-	}
-	generic_marine = {
-		marine_brigade
-		marine_brigade
 	}
 }
 
 unit_names = {
 	infantry_brigade = {
-		"1st ROK Infantry Division" "2nd ROK Infantry Division" "3rd ROK Infantry Division" "4th ROK Infantry Division" "5th ROK Infantry Division" "6th ROK Infantry Division" "7th ROK Infantry Division" "8th ROK Infantry Division" "9th ROK Infantry Division" "10th ROK Infantry Division" "11th ROK Infantry Division" 
-		"12th ROK Infantry Division" "13th ROK Infantry Division" "14th ROK Infantry Division" "15th ROK Infantry Division" "16th ROK Infantry Division" "17th ROK Infantry Division" "18th ROK Infantry Division" "19th ROK Infantry Division" "20th ROK Infantry Division" 
+		"韩国第1步兵师" "韩国第2步兵师" "韩国第3步兵师" "韩国第4步兵师" "韩国第5步兵师" "韩国第6步兵师" "韩国第7步兵师" "韩国第8步兵师" "韩国第9步兵师" "韩国第10步兵师" "韩国第11步兵师" 
+		"韩国第12步兵师" "韩国第13步兵师" "韩国第14步兵师" "韩国第15步兵师" "韩国第16步兵师" "韩国第17步兵师" "韩国第18步兵师" "韩国第19步兵师" "韩国第20步兵师" 
 	}
 	cavalry_brigade = {
-		"1st ROK Cavalry Division" "2nd ROK Cavalry Division" "3rd ROK Cavalry Division" "4th ROK Cavalry Division" "5th ROK Cavalry Division" "6th ROK Cavalry Division" "7th ROK Cavalry Division" "8th ROK Cavalry Division" "9th ROK Cavalry Division" "10th ROK Cavalry Division" 
+		"韩国第1骑兵师" "韩国第2骑兵师" "韩国第3骑兵师" "韩国第4骑兵师" "韩国第5骑兵师" "韩国第6骑兵师" "韩国第7骑兵师" "韩国第8骑兵师" "韩国第9骑兵师" "韩国第10骑兵师" 
 	}
 	motorized_brigade = {
-		"1st ROK Infantry Division" "2nd ROK Infantry Division" "3rd ROK Infantry Division" "1st ROK Infantry Division" "2nd ROK Infantry Division" "3rd ROK Infantry Division" "4th ROK Infantry Division" "5th ROK Infantry Division" "6th ROK Infantry Division" 
+		"韩国第1步兵师" "韩国第2步兵师" "韩国第3步兵师" "韩国第4步兵师" "韩国第5步兵师" "韩国第6步兵师" 
 	}
 	mechanized_brigade = {
-		"1st ROK Infantry Division" "2nd ROK Infantry Division" "3rd ROK Infantry Division" "1st ROK Infantry Division" "2nd ROK Infantry Division" "3rd ROK Infantry Division" "4th ROK Infantry Division" "5th ROK Infantry Division" "6th ROK Infantry Division" "7th ROK Infantry Division" "8th ROK Infantry Division" 
-		"9th ROK Infantry Division" "10th ROK Infantry Division" 
+		"韩国第1步兵师" "韩国第2步兵师" "韩国第3步兵师" "韩国第4步兵师" "韩国第5步兵师" "韩国第6步兵师" "韩国第7步兵师" "韩国第8步兵师" "韩国第9步兵师" "韩国第10步兵师"  
 	}
 	light_armor_brigade = {
-		"1st ROK Armoured Division" "2nd ROK Armoured Division" "3rd ROK Armoured Division" "4th ROK Armoured Division" "5th ROK Armoured Division" "6th ROK Armoured Division" "7th ROK Armoured Division" "8th ROK Armoured Division" "9th ROK Armoured Division" "10th ROK Armoured Division" "11th ROK Armoured Division" 
-		"12th ROK Armoured Division" "14th ROK Armoured Division" "15th ROK Armoured Division" 
+		"韩国第1装甲师" "韩国第2装甲师" "韩国第3装甲师" "韩国第4装甲师" "韩国第5装甲师" "韩国第6装甲师" "韩国第7装甲师" "韩国第8装甲师" "韩国第9装甲师" "韩国第10装甲师" "韩国第11装甲师" 
+		"韩国第12装甲师" "韩国第13装甲师" "韩国第14装甲师" 
 	}
 	armor_brigade = {
-		"1st Armoured Division" "2nd ROK Armoured Division" "3rd ROK Armoured Division" "4th ROK Armoured Division" "5th ROK Armoured Division" "6th ROK Armoured Division" "7th ROK Armoured Division" "8th ROK Armoured Division" "9th ROK Armoured Division" "10th ROK Armoured Division" "11th ROK Armoured Division" 
-		"12th ROK Armoured Division" "14th ROK Armoured Division" "15th ROK Armoured Division" 
+		"韩国第1装甲师" "韩国第2装甲师" "韩国第3装甲师" "韩国第4装甲师" "韩国第5装甲师" "韩国第6装甲师" "韩国第7装甲师" "韩国第8装甲师" "韩国第9装甲师" "韩国第10装甲师" "韩国第11装甲师" 
+		"韩国第12装甲师" "韩国第13装甲师" "韩国第14装甲师"  
 	}
 	paratrooper_brigade = {
-		"1st ROK Airborne Division" "2nd ROK Airborne Division" "3rd ROK Airborne Division" "4th ROK Airborne Division" "5th ROK Airborne Division" "6th ROK Airborne Division" "7th ROK Airborne Division" "8th ROK Airborne Division" "9th ROK Airborne Division" "10th ROK Airborne Division" 
+		"韩国第1空降师" "韩国第2空降师" "韩国第3空降师" "韩国第4空降师" "韩国第5空降师" "韩国第6空降师" "韩国第7空降师" "韩国第8空降师" "韩国第9空降师" "韩国第10空降师"  
 	}
 	marine_brigade = {
-		"1st ROK Marine Division" "2nd ROK Marine Division" "3rd ROK Marine Division" "4th ROK Marine Division" "5th ROK Marine Division" "6th ROK Marine Division" "7th ROK Marine Division" "8th ROK Marine Division" "9th ROK Marine Division" "10th ROK Marine Division" 
+		"韩国第1海军陆战师" "韩国第2海军陆战师" "韩国第3海军陆战师" "韩国第4海军陆战师" "韩国第5海军陆战师" "韩国第6海军陆战师" "韩国第7海军陆战师" "韩国第8海军陆战师" "韩国第9海军陆战师" "韩国第10海军陆战师" 
 	}
 	bergsjaeger_brigade = {
-		"1st ROK Mountain Division" "2nd ROK Mountain Division" "3rd ROK Mountain Division" "4th ROK Mountain Division" "5th ROK Mountain Division" "8th ROK Mountain Division" "10th ROK Mountain Division" "11th ROK Mountain Division" "12th ROK Mountain Division" 
+		"韩国第1山地师" "韩国第2山地师" "韩国第3山地师" "韩国第4山地师" "韩国第7山地师" "韩国第8山地师" "韩国第10山地师" "韩国第11山地师" "韩国第12山地师" 
 	}
 	garrison_brigade = {
-		"1st ROK Garrison Division" "2nd ROK Garrison Division" "3rd ROK Garrison Division" "4th ROK Garrison Division" "5th ROK Garrison Division" "6th ROK Garrison Division" "7th ROK Garrison Division" "8th ROK Garrison Division" "9th ROK Garrison Division" "10th ROK Garrison Division" "11th ROK Garrison Division" 
-		"12th ROK Garrison Division" "13th ROK Garrison Division" "14th ROK Garrison Division" "15th ROK Garrison Division" "16th ROK Garrison Division" "17th ROK Garrison Division" "18th ROK Garrison Division" "19th ROK Garrison Division" "20th ROK Garrison Division" 
+		"韩国第1卫戍师" "韩国第2卫戍师" "韩国第3卫戍师" "韩国第4卫戍师" "韩国第5卫戍师" "韩国第6卫戍师" "韩国第7卫戍师" "韩国第8卫戍师" "韩国第9卫戍师" "韩国第10卫戍师" "韩国第11卫戍师" 
+		"韩国第12卫戍师" "韩国第13卫戍师" "韩国第14卫戍师" "韩国第15卫戍师" "韩国第16卫戍师" "韩国第17卫戍师" "韩国第18卫戍师" "韩国第19卫戍师" "韩国第20卫戍师" 
 	}
 	hq_brigade = {
-		"1st ROK Army" "2nd ROK Army" "3rd ROK Army" "4th ROK Army" "5th ROK Army" 
+		"韩国第一集团军" "韩国第二集团军" "韩国第三集团军" "韩国第四集团军" "韩国第五集团军" 
 	}
 	militia_brigade = {
-		"1st Infantry Division" "2nd Infantry Division" "3rd Infantry Division" "4th Infantry Division" "5th Infantry Division" "6th Infantry Division" "7th Infantry Division" "8th Infantry Division" "9th Infantry Division" "10th Infantry Division" "11th Infantry Division" 
-		"12th Infantry Division" "13th Infantry Division" "14th Infantry Division" "15th Infantry Division" "16th Infantry Division" "17th Infantry Division" "18th Infantry Division" "19th Infantry Division" "20th Infantry Division" "21st Infantry Division" "22nd Infantry Division" 
-		"23rd Infantry Division" "24th Infantry Division" "25th Infantry Division" "26th Infantry Division" "27th Infantry Division" "28th Infantry Division" "29th Infantry Division" "30th Infantry Division" 
+		"韩国第1步兵师" "韩国第2步兵师" "韩国第3步兵师" "韩国第4步兵师" "韩国第5步兵师" "韩国第6步兵师" "韩国第7步兵师" "韩国第8步兵师" "韩国第9步兵师" "韩国第10步兵师" "韩国第11步兵师" 
+		"韩国第12步兵师" "韩国第13步兵师" "韩国第14步兵师" "韩国第15步兵师" "韩国第16步兵师" "韩国第17步兵师" "韩国第18步兵师" "韩国第19步兵师" "韩国第20步兵师"
 	}
 	multi_role = {
-		"No.1 Group ROKAF" "No.2 Group ROKAF" "No.3 Group ROKAF" "No.4 Group ROKAF" "No.5 Group ROKAF" "No.7 Group ROKAF" "No.8 Group ROKAF" "No.9 Group ROKAF" "No.10 Group ROKAF" "No.11 Group ROKAF" "No.12 Group ROKAF" 
-		"No.13 Group ROKAF" "No.14 Group ROKAF" "No.15 Group ROKAF" "No.16 Group ROKAF" "No.17 Group ROKAF" "No.18 Group ROKAF" "No.19 Group ROKAF" "No.20 Group ROKAF" 
+		"韩国空军第1联队" "韩国空军第2联队" "韩国空军第3联队" "韩国空军第4联队" "韩国空军第5联队" "韩国空军第7联队" "韩国空军第8联队" "韩国空军第9联队" "韩国空军第10联队" "韩国空军第11联队" "韩国空军第12联队" 
+		"韩国空军第13联队" "韩国空军第14联队" "韩国空军第15联队" "韩国空军第16联队" "韩国空军第17联队" "韩国空军第18联队" "韩国空军第19联队" "韩国空军第20联队" 
 	}
 	interceptor = {
-		"No.1 Group ROKAF" "No.2 Group ROKAF" "No.3 Group ROKAF" "No.4 Group ROKAF" "No.5 Group ROKAF" "No.7 Group ROKAF" "No.8 Group ROKAF" "No.9 Group ROKAF" "No.10 Group ROKAF" "No.11 Group ROKAF" "No.12 Group ROKAF" 
-		"No.13 Group ROKAF" "No.14 Group ROKAF" "No.15 Group ROKAF" "No.16 Group ROKAF" "No.17 Group ROKAF" "No.18 Group ROKAF" "No.19 Group ROKAF" "No.20 Group ROKAF" 
-	}
-	jet_int = {
-		"No.1 Group ROKAF" "No.2 Group ROKAF" "No.3 Group ROKAF" "No.4 Group ROKAF" "No.5 Group ROKAF" "No.7 Group ROKAF" "No.8 Group ROKAF" "No.9 Group ROKAF" "No.10 Group ROKAF" "No.11 Group ROKAF" "No.12 Group ROKAF" 
-		"No.13 Group ROKAF" "No.14 Group ROKAF" "No.15 Group ROKAF" "No.16 Group ROKAF" "No.17 Group ROKAF" "No.18 Group ROKAF" "No.19 Group ROKAF" "No.20 Group ROKAF" 
-	}
-	jet_mr = {
-		"No.1 Group ROKAF" "No.2 Group ROKAF" "No.3 Group ROKAF" "No.4 Group ROKAF" "No.5 Group ROKAF" "No.7 Group ROKAF" "No.8 Group ROKAF" "No.9 Group ROKAF" "No.10 Group ROKAF" "No.11 Group ROKAF" "No.12 Group ROKAF" 
-		"No.13 Group ROKAF" "No.14 Group ROKAF" "No.15 Group ROKAF" "No.16 Group ROKAF" "No.17 Group ROKAF" "No.18 Group ROKAF" "No.19 Group ROKAF" "No.20 Group ROKAF" 
+		"韩国空军第1联队" "韩国空军第2联队" "韩国空军第3联队" "韩国空军第4联队" "韩国空军第5联队" "韩国空军第7联队" "韩国空军第8联队" "韩国空军第9联队" "韩国空军第10联队" "韩国空军第11联队" "韩国空军第12联队" 
+		"韩国空军第13联队" "韩国空军第14联队" "韩国空军第15联队" "韩国空军第16联队" "韩国空军第17联队" "韩国空军第18联队" "韩国空军第19联队" "韩国空军第20联队" 
 	}
 	strategic_bomber = {
-		"No.1 Group ROKAF" "No.2 Group ROKAF" "No.6 Group ROKAF" "No.3 Group ROKAF" "No.4 Group ROKAF" "No.7 Group ROKAF" "No.8 Group ROKAF" "No.9 Group ROKAF" "No.10 Group ROKAF" "No.11 Group ROKAF" "No.12 Group ROKAF" 
-		"No.13 Group ROKAF" "No.14 Group ROKAF" "No.15 Group ROKAF" "No.16 Group ROKAF" "No.17 Group ROKAF" "No.18 Group ROKAF" "No.19 Group ROKAF" "No.20 Group ROKAF" 
+		"韩国空军第1联队" "韩国空军第2联队" "韩国空军第3联队" "韩国空军第4联队" "韩国空军第5联队" "韩国空军第7联队" "韩国空军第8联队" "韩国空军第9联队" "韩国空军第10联队" "韩国空军第11联队" "韩国空军第12联队" 
+		"韩国空军第13联队" "韩国空军第14联队" "韩国空军第15联队" "韩国空军第16联队" "韩国空军第17联队" "韩国空军第18联队" "韩国空军第19联队" "韩国空军第20联队"  
 	}
 	tactical_bomber = {
-		"No.1 Group ROKAF" "No.2 Group ROKAF" "No.6 Group ROKAF" "No.3 Group ROKAF" "No.4 Group ROKAF" "No.7 Group ROKAF" "No.8 Group ROKAF" "No.9 Group ROKAF" "No.10 Group ROKAF" "No.11 Group ROKAF" "No.12 Group ROKAF" 
-		"No.13 Group ROKAF" "No.14 Group ROKAF" "No.15 Group ROKAF" "No.16 Group ROKAF" "No.17 Group ROKAF" "No.18 Group ROKAF" "No.19 Group ROKAF" "No.20 Group ROKAF" 
-	}
-	jet_bomber = {
-		"No.1 Group ROKAF" "No.2 Group ROKAF" "No.6 Group ROKAF" "No.3 Group ROKAF" "No.4 Group ROKAF" "No.7 Group ROKAF" "No.8 Group ROKAF" "No.9 Group ROKAF" "No.10 Group ROKAF" "No.11 Group ROKAF" "No.12 Group ROKAF" 
-		"No.13 Group ROKAF" "No.14 Group ROKAF" "No.15 Group ROKAF" "No.16 Group ROKAF" "No.17 Group ROKAF" "No.18 Group ROKAF" "No.19 Group ROKAF" "No.20 Group ROKAF" 
+		"韩国空军第1联队" "韩国空军第2联队" "韩国空军第3联队" "韩国空军第4联队" "韩国空军第5联队" "韩国空军第7联队" "韩国空军第8联队" "韩国空军第9联队" "韩国空军第10联队" "韩国空军第11联队" "韩国空军第12联队" 
+		"韩国空军第13联队" "韩国空军第14联队" "韩国空军第15联队" "韩国空军第16联队" "韩国空军第17联队" "韩国空军第18联队" "韩国空军第19联队" "韩国空军第20联队"  
 	}
 	naval_bomber = {
-		"No.1 Group ROKAF" "No.2 Group ROKAF" "No.3 Group ROKAF" "No.4 Group ROKAF" "No.5 Group ROKAF" "No.7 Group ROKAF" "No.8 Group ROKAF" "No.9 Group ROKAF" "No.10 Group ROKAF" 
+		"韩国空军第1联队" "韩国空军第2联队" "韩国空军第3联队" "韩国空军第4联队" "韩国空军第5联队" "韩国空军第7联队" "韩国空军第8联队" "韩国空军第9联队" "韩国空军第10联队" 
 	}
 	cas = {
-		"No.1 Group ROKAF" "No.2 Group ROKAF" "No.6 Group ROKAF" "No.3 Group ROKAF" "No.4 Group ROKAF" "No.7 Group ROKAF" "No.8 Group ROKAF" "No.9 Group ROKAF" "No.10 Group ROKAF" "No.11 Group ROKAF" "No.12 Group ROKAF" 
-		"No.13 Group ROKAF" "No.14 Group ROKAF" "No.15 Group ROKAF" "No.16 Group ROKAF" "No.17 Group ROKAF" "No.18 Group ROKAF" "No.19 Group ROKAF" "No.20 Group ROKAF" 
+		"韩国空军第1联队" "韩国空军第2联队" "韩国空军第3联队" "韩国空军第4联队" "韩国空军第5联队" "韩国空军第7联队" "韩国空军第8联队" "韩国空军第9联队" "韩国空军第10联队" "韩国空军第11联队" "韩国空军第12联队" 
+		"韩国空军第13联队" "韩国空军第14联队" "韩国空军第15联队" "韩国空军第16联队" "韩国空军第17联队" "韩国空军第18联队" "韩国空军第19联队" "韩国空军第20联队"  
 	}
 	transport_plane = {
-		"No.1 Group ROKAF" "No.2 Group ROKAF" "No.3 Group ROKAF" "No.4 Group ROKAF" "No.5 Group ROKAF" "No.7 Group ROKAF" "No.8 Group ROKAF" "No.9 Group ROKAF" "No.10 Group ROKAF" 
+		"韩国空军第1联队" "韩国空军第2联队" "韩国空军第3联队" "韩国空军第4联队" "韩国空军第5联队" "韩国空军第7联队" "韩国空军第8联队" "韩国空军第9联队" "韩国空军第10联队" 
 	}
 	battleship = {
-		"Independence" "Freedom" "Liberty" "Victory" 
+		"独立" "自由" "解放" "胜利" 
 	}
 	light_cruiser = {
-		"Independence" "Freedom" "Liberty" "Victory" 
+		"独立" "自由" "解放" "胜利" 
 	}
 	heavy_cruiser = {
-		"Independence" "Freedom" "Liberty" "Victory" 
+		"独立" "自由" "解放" "胜利"
 	}
 	battlecruiser = {
-		"Independence" "Freedom" "Liberty" "Victory" 
+		"独立" "自由" "解放" "胜利" 
 	}
 	destroyer = {
-		"1st ROK Destroyer Division" "2nd ROK Destroyer Division" "3rd ROK Destroyer Division" "4th ROK Destroyer Division" "5th ROK Destroyer Division" "6th ROK Destroyer Division" "7th ROK Destroyer Division" "8th ROK Destroyer Division" "9th ROK Destroyer Division" "10th ROK Destroyer Division" 
+		"韩国第1驱逐舰分队" "韩国第2驱逐舰分队" "韩国第3驱逐舰分队" "韩国第4驱逐舰分队" "韩国第5驱逐舰分队" "韩国第6驱逐舰分队" "韩国第7驱逐舰分队" "韩国第8驱逐舰分队" "韩国第9驱逐舰分队" "韩国第10驱逐舰分队" 
 	}
 	carrier = {
-		"Independence" "Freedom" "Liberty" "Victory" 
+		"独立" "自由" "解放" "胜利" 
 	}
 	submarine = {
-		"1st ROK Submarine Division" "2nd ROK Submarine Division" "3rd ROK Submarine Division" "4th ROK Submarine Division" "5th ROK Submarine Division" "6th ROK Submarine Division" "7th ROK Submarine Division" "8th ROK Submarine Division" "9th ROK Submarine Division" "10th ROK Submarine Division" 
+		"韩国第1潜艇分队" "韩国第2潜艇分队" "韩国第3潜艇分队" "韩国第4潜艇分队" "韩国第5潜艇分队" "韩国第6潜艇分队" "韩国第7潜艇分队" "韩国第8潜艇分队" "韩国第9潜艇分队" "韩国第10潜艇分队"
 	}
 	transport_ship = {
-		"1st ROK Transport Division" "2nd ROK Transport Division" "3rd ROK Transport Division" "4th ROK Transport Division" "5th ROK Transport Division" "6th ROK Transport Division" "7th ROK Transport Division" "8th ROK Transport Division" "9th ROK Transport Division" "10th ROK Transport Division" 
+		"韩国第1运输舰分队" "韩国第2运输舰分队" "韩国第3运输舰分队" "韩国第4运输舰分队" "韩国第5运输舰分队" "韩国第6运输舰分队" "韩国第7运输舰分队" "韩国第8运输舰分队" "韩国第9运输舰分队" "韩国第10运输舰分队" 
 	}
 
 }
 
 ministers = {
 	578001 = {
-		name = "Syngman Rhee"
+		name = "李承晚"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578001
@@ -157,7 +128,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	578002 = {
-		name = "Kim Ku"
+		name = "金九"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578002
@@ -165,7 +136,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	578003 = {
-		name = "Kim Gyu Sik"
+		name = "金奎植"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578003
@@ -173,7 +144,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	578004 = {
-		name = "Kim Chang Sook"
+		name = "金昌淑"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578004
@@ -181,7 +152,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	578005 = {
-		name = "Cho Man Sik"
+		name = "曹晚植"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578005
@@ -189,7 +160,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	578006 = {
-		name = "Cho So Ang"
+		name = "赵素昂"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578006
@@ -197,7 +168,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	578007 = {
-		name = "Chae Byong Duk"
+		name = "蔡秉德"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578007
@@ -205,7 +176,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	578008 = {
-		name = "Lee Chung Chun"
+		name = "李青天"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578008
@@ -213,7 +184,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	578009 = {
-		name = "Soon Won-yil"
+		name = "孙元一"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578009
@@ -221,7 +192,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	578010 = {
-		name = "Lee Bom Suk"
+		name = "李范爽"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578010
@@ -229,8 +200,88 @@ ministers = {
 		head_of_government = old_air_marshal
 		start_date = 1936.1.1
 	}
+	578011 = {
+		name = "吕运亨"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578011
+		head_of_state = weary_stiff_neck
+		start_date = 1936.1.1
+	}
+	578012 = {
+		name = "朴宪永"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578012
+		head_of_government = ambitious_union_boss
+		start_date = 1936.1.1
+	}
+	578013 = {
+		name = "金汉中"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578013
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
+	}
+	578014 = {
+		name = "李东辉"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578014
+		armament_minister = infantry_proponent
+		start_date = 1936.1.1
+	}
+	578015 = {
+		name = "李南石"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578015
+		minister_of_security = efficient_sociopath
+		start_date = 1936.1.1
+	}
+	578016 = {
+		name = "金昌金"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578016
+		minister_of_intelligence = technical_specialist
+		start_date = 1936.1.1
+	}
+	578017 = {
+		name = "池青天"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578017
+		chief_of_staff = school_of_psychology
+		start_date = 1936.1.1
+	}
+	578018 = {
+		name = "金元凤"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578018
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1936.1.1
+	}
+	578019 = {
+		name = "钟东柱"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578019
+		chief_of_navy = open_seas_doctrine
+		start_date = 1936.1.1
+	}
+	578020 = {
+		name = "孙里宰"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M578020
+		chief_of_air = naval_aviation_doctrine
+		start_date = 1936.1.1
+	}
 	578021 = {
-		name = "Rheem Eun Soo"
+		name = "李应俊"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578021
@@ -238,7 +289,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	578022 = {
-		name = "Baik Cha Bum"
+		name = "白车范"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578022
@@ -246,7 +297,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	578023 = {
-		name = "Park Chung Hee"
+		name = "朴正熙"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578023
@@ -254,7 +305,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	578025 = {
-		name = "Shin Sung Mo"
+		name = "申成沫"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578025
@@ -263,7 +314,7 @@ ministers = {
 		start_date = 1950.1.1
 	}
 	578026 = {
-		name = "Chang Myon"
+		name = "张勉"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578026
@@ -272,7 +323,7 @@ ministers = {
 		start_date = 1950.1.1
 	}
 	578027 = {
-		name = "Chang Taek Sang"
+		name = "张泽相"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578027
@@ -281,7 +332,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	578028 = {
-		name = "Paik Too Chin"
+		name = "白太钦"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578028
@@ -290,7 +341,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	578030 = {
-		name = "To Yong Chang"
+		name = "张都映"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578030
@@ -298,7 +349,7 @@ ministers = {
 		start_date = 1950.1.1
 	}
 	578031 = {
-		name = "Han Song Paek"
+		name = "白汉成"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578031
@@ -306,7 +357,7 @@ ministers = {
 		start_date = 1951.1.1
 	}
 	578032 = {
-		name = "Shan Sang Ma"
+		name = "单庆生"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578032
@@ -315,184 +366,11 @@ ministers = {
 		start_date = 1951.1.1
 	}
 	578033 = {
-		name = "Yong Tae Pyon"
+		name = "卞荣泰"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M578033
 		minister_of_security = efficient_sociopath
 		start_date = 1949.1.1
 	}
-	579011 = {
-		name = "Yi Tong-whi"
-		ideology = social_democrat
-		loyalty = 1.00
-		picture = M578014
-		head_of_state = barking_buffoon
-		start_date = 1936.1.1
-	}
-	579012 = {
-		name = "Kim Chang Kim"
-		ideology = social_democrat
-		loyalty = 1.00
-		picture = M578016
-		head_of_government = flamboyant_tough_guy
-		start_date = 1936.1.1
-	}
-	579013 = {
-		name = "Kim Yong Chol"
-		ideology = social_democrat
-		loyalty = 0.75
-		picture = M579013
-		foreign_minister = great_compromiser
-		start_date = 1936.1.1
-	}
-	579014 = {
-		name = "Park Hyong Yong"
-		ideology = social_democrat
-		loyalty = 0.75
-		picture = M578012
-		armament_minister = resource_industrialist
-		start_date = 1936.1.1
-	}
-	579015 = {
-		name = "Chi Chun Chung"
-		ideology = social_democrat
-		loyalty = 1.00
-		picture = M578017
-		minister_of_security = compassionate_gentleman
-		start_date = 1936.1.1
-	}
-	579018 = {
-		name = "Kim Il-chol"
-		ideology = social_democrat
-		loyalty = 0.75
-		picture = M579018
-		chief_of_army = guns_and_butter_doctrine
-		start_date = 1936.1.1
-	}
-	579019 = {
-		name = "Ryoo Jung Sip"
-		ideology = social_democrat
-		loyalty = 0.75
-		picture = M579019
-		chief_of_navy = decisive_naval_battle_doctrine
-		start_date = 1936.1.1
-	}
-	579020 = {
-		name = "Park Min Kyung"
-		ideology = social_democrat
-		loyalty = 0.75
-		picture = M579020
-		chief_of_air = naval_aviation_doctrine
-		start_date = 1936.1.1
-	}
-	579032 = {
-		name = "H.R.H. Euimin"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = euimin
-		head_of_state = autocratic_charmer
-		start_date = 1936.1.1
-	}
-	579033 = {
-		name = "Kim Gu"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M578002
-		head_of_government = flamboyant_tough_guy
-		start_date = 1936.1.1
-	}
-	# Generic dummy ministers
-	95490 = {
-		name = "Nameless Clerk"
-		ideology = national_socialist
-		loyalty = 1.0
-		picture = MNationalSocialist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95491 = {
-		name = "Nameless Clerk"
-		ideology = fascistic
-		loyalty = 1.0
-		picture = MFascistic
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95492 = {
-		name = "Nameless Clerk"
-		ideology = paternal_autocrat
-		loyalty = 1.0
-		picture = MPaternalAutocrat
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95493 = {
-		name = "Nameless Clerk"
-		ideology = market_liberal
-		loyalty = 1.0
-		picture = MMarketLiberal
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95494 = {
-		name = "Nameless Clerk"
-		ideology = social_liberal
-		loyalty = 1.0
-		picture = MSocialLiberal
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95495 = {
-		name = "Nameless Clerk"
-		ideology = social_democrat
-		loyalty = 1.0
-		picture = MSocialDemocrat
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		start_date = 1936.1.1
-	}	
 }

@@ -1,59 +1,54 @@
-theatre = {
-	name = "Royal Iraqi Military Command"
+corps = {
+	name = "伊拉克皇家陆军"
 	location = 9213
-	regiment = { type = hq_brigade name = "Baghdad HQ" historical_model = 0 }	
-	corps = {
-		name = "Royal Iraqi Army"
+	regiment = { type = hq_brigade name = "伊拉克皇家陆军指挥部" historical_model = 0 }
+	division= {
+		name = "伊拉克第1步兵师"
 		location = 9213
-		regiment = { type = hq_brigade name = "Royal Iraqi Army HQ" historical_model = 0 }
-		division= {
-			name = "1. Iraqi Infantry Division"
-			location = 9213
-			is_reserve = yes 
-			regiment = { type = motorized_brigade name = "1st Infantry Regiment" experience = 5 historical_model = 0 }
-			regiment = { type = light_armor_brigade name = "1st Armoured Regiment" experience = 5 historical_model = 1 }
-		}
-		division= {
-			name = "2. Iraqi Infantry Division"
-			location = 9213
-			is_reserve = yes 
-			regiment = { type = militia_brigade name = "2nd Infantry Regiment" experience = 5 historical_model = 3 }
-			regiment = { type = militia_brigade name = "3rd Infantry Regiment" experience = 5 historical_model = 3 }
-		}
-		division= {
-			name = "3. Iraqi Infantry Division"
-			location = 9213
-			is_reserve = yes 
-			regiment = { type = militia_brigade name = "4th Infantry Regiment" experience = 5 historical_model = 3 }
-			regiment = { type = militia_brigade name = "5th Infantry Regiment" experience = 5 historical_model = 3 }
-		}
-		division= {
-			name = "4. Iraqi Infantry Division"
-			location = 9213
-			is_reserve = yes 
-			regiment = { type = militia_brigade name = "6th Infantry Regiment" experience = 5 historical_model = 3 }
-			regiment = { type = militia_brigade name = "7th Infantry Regiment" experience = 5 historical_model = 3 }
-		}		
+		is_reserve = yes 
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
 	}
-	air = {
-		name = "Royal Iraqi Air Force"
-		base = 9213
+	division= {
+		name = "伊拉克第2步兵师"
 		location = 9213
-		expeditionary_owner = ENG
-		wing = { type = interceptor name = "1. RIAF Fighter Group" experience = 5 historical_model = 0 }
+		is_reserve = yes 
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+	}
+	division= {
+		name = "伊拉克第3步兵师"
+		location = 9213
+		is_reserve = yes 
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+	}
+	division= {
+		name = "伊拉克第4步兵师"
+		location = 9213
+		is_reserve = yes 
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+	}
+	division= {
+		name = "伊拉克第1步兵师"
+		location = 9213
+		is_reserve = yes 
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
 	}
 }
-convoy_construction=
-{
-	country = IRQ
-	id=
-	{
-		id=15430
-		type=4713
-	}
-	size=1
-	cost=0.000 #you can put any number here and the engine will use it
-	progress=90.000
-	duration=0.000 #you can put any number here and the engine will use it
-	status=no #No means you get a convoy.  Yes means you get an escort
+air = {
+	name = "伊拉克皇家空军"
+	base = 9213
+	location = 9213
+	wing = { type = interceptor name = "第1截击编队" historical_model = 0 }
 }
+
+
+

@@ -1,31 +1,24 @@
-theatre = {
-	name = "Alto Mando de Paraguayo"
+corps = {
+	name = "°ÍÀ­¹çÂ½¾ü"
 	location = 10254
-	regiment = { type = hq_brigade name = "Asunción HQ" historical_model = 0 }
-	corps = {
-		name = "Ejercito de Paraguay"
+	regiment = { type = hq_brigade name = "°ÍÀ­¹çÂ½¾üË¾Áî²¿" historical_model = 0 }
+	division= {
+		name = "µÚI²½±øÊ¦"
 		location = 10254
-		regiment = { type = hq_brigade name = "Ejercito de Paraguay HQ" historical_model = 0 }
-		division= {
-			name = "Division de Infantería 1"
-			location = 10238
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "Regimiento de Infantería 2 'Ytororó'" experience = 8 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "Regimiento de Infantería 4 'Curupayty'" experience = 8 historical_model = 3 }
-		}
-		division= {
-			name = "Division de Infantería 2"
-			location = 10254
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "Regimiento de Infantería 1 'Dos de Mayo'" experience = 8 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "Regimiento de Infantería 3 'Corrales'" experience = 8 historical_model = 3 }
-		}	
-		division= {
-			name = "Division de Infantería 6"
-			location = 10254
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "Regimiento de Infantería 5 'General Diaz'" experience = 8 historical_model = 3 }
-			regiment = { type = cavalry_brigade name = "Regimiento de Caballería 1 'Valois Rivarola'" experience = 8 historical_model = 3 }
-		}			
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+	}
+	division= {
+		name = "¹úÃñ¾¯±¸Ê¦"
+		location = 10254
+		is_reserve = yes
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
 	}
 }
+
+
+

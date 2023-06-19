@@ -1,145 +1,125 @@
-theatre = {
-	name = "R閚m韓 Ji靎angjun"
+corps = {
+	name = "红1方面军"
 	location = 7417
-	regiment = { type = hq_brigade name = "Yan'an HQ" historical_model = 0 }
-	corps = {
-		name = "1. Fangmianjun"
+	regiment = { type = hq_brigade name = "红1方面军指挥部" experience = 20 historical_model = 0 }
+	division= {
+		name = "第1军团"
 		location = 7417
-		regiment = { type = hq_brigade name = "1. Fangmianjun HQ" experience = 30 experience = 5 historical_model = 0 }
-		division= {
-			name = "1. Juntuan"
-			location = 7417
-			is_reserve = yes
-			regiment = { type = bergsjaeger_brigade name = "1. Shandi Bubing Tu醤" experience = 30 experience = 5 historical_model = 2 }
-			regiment = { type = bergsjaeger_brigade name = "2. Shandi Bubing Tu醤" experience = 30 experience = 5 historical_model = 2 }
-			regiment = { type = bergsjaeger_brigade name = "3. Shandi Bubing Tu醤" experience = 30 experience = 5 historical_model = 2 }
-		}
-		division= {
-			name = "3. Juntuan"
-			location = 7417
-			is_reserve = yes
-			regiment = { type = bergsjaeger_brigade name = "4. Shandi Bubing Tu醤" experience = 30 experience = 5 historical_model = 2 }
-			regiment = { type = bergsjaeger_brigade name = "5. Shandi Bubing Tu醤" experience = 30 experience = 5 historical_model = 2 }
-			regiment = { type = bergsjaeger_brigade name = "6. Shandi Bubing Tu醤" experience = 30 experience = 5 historical_model = 2 }
-		}
-		division= {
-			name = "5. Juntuan"
-			location = 7417
-			is_reserve = yes
-			regiment = { type = bergsjaeger_brigade name = "7. Shandi Bubing Tu醤" experience = 30 experience = 5 historical_model = 2 }
-			regiment = { type = bergsjaeger_brigade name = "8. Shandi Bubing Tu醤" experience = 30 experience = 5 historical_model = 2 }
-			regiment = { type = bergsjaeger_brigade name = "9. Shandi Bubing Tu醤" experience = 30 experience = 5 historical_model = 2 }
-		}
-		division= {
-			name = "8. Juntuan"
-			location = 7417
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "1. Bubing Tu醤" experience = 30 experience = 5 historical_model = 2 }
-			regiment = { type = infantry_brigade name = "2. Bubing Tu醤" experience = 30 experience = 5 historical_model = 2 }
-			regiment = { type = infantry_brigade name = "3. Bubing Tu醤" experience = 30 experience = 5 historical_model = 2 }
-		}
-		division= {
-			name = "9. Juntuan"
-			location = 7417
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "4. Bubing Tu醤" experience = 30 experience = 5 historical_model = 2 }
-			regiment = { type = infantry_brigade name = "5. Bubing Tu醤" experience = 30 experience = 5 historical_model = 2 }
-			regiment = { type = infantry_brigade name = "6. Bubing Tu醤" experience = 30 experience = 5 historical_model = 2 }
-		}
+		regiment = { type = bergsjaeger_brigade experience = 20 historical_model = 0 }
+		regiment = { type = bergsjaeger_brigade experience = 20 historical_model = 0 }
+		regiment = { type = bergsjaeger_brigade experience = 20 historical_model = 0 }
 	}
-	corps = {
-		name = "2. Fangmianjun"
+	division= {
+		name = "第3军团"
 		location = 7417
-		regiment = { type = hq_brigade name = "2. Fangmianjun HQ" experience = 30 experience = 5 historical_model = 0 }
-		division= {
-			name = "2. Juntuan"
-			location = 7417
-			is_reserve = yes
-			regiment = { type = garrison_brigade name = "1. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "2. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "3. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-		}
-		division= {
-			name = "6. Juntuan"
-			location = 7417
-			is_reserve = yes
-			regiment = { type = garrison_brigade name = "4. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "5. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "6. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-		}
+		regiment = { type = bergsjaeger_brigade experience = 20 historical_model = 0 }
+		regiment = { type = bergsjaeger_brigade experience = 20 historical_model = 0 }
+		regiment = { type = bergsjaeger_brigade experience = 20 historical_model = 0 }
 	}
-	corps = {
-		name = "4. Fangmianjun"
+	division= {
+		name = "第5军团"
 		location = 7417
-		regiment = { type = hq_brigade name = "4. Fangmianjun HQ" experience = 30 experience = 5 historical_model = 0 }
-		division= {
-			name = "4. Jun"
-			location = 5335
-			is_reserve = yes
-			regiment = { type = garrison_brigade name = "7. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "8. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "9. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-		}
-		division= {
-			name = "9. Jun"
-			location = 5335
-			is_reserve = yes
-			regiment = { type = garrison_brigade name = "10. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "11. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "12. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-		}
-		division= {
-			name = "30. Jun"
-			location = 7410
-			is_reserve = yes
-			regiment = { type = garrison_brigade name = "13. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "14. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "15. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-		}
-		division= {
-			name = "31. Jun"
-			location =7398
-			is_reserve = yes
-			regiment = { type = garrison_brigade name = "16. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "17. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "18. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-		}
+		regiment = { type = bergsjaeger_brigade experience = 20 historical_model = 0 }
+		regiment = { type = bergsjaeger_brigade experience = 20 historical_model = 0 }
+		regiment = { type = bergsjaeger_brigade experience = 20 historical_model = 0 }
 	}
-	corps = {
-		name = "15. Juntuan"
-		location = 5241
-		regiment = { type = hq_brigade name = "15. Juntuan HQ" experience = 30 experience = 5 historical_model = 0 }
-		division= {
-			name = "25. Jun"
-			location = 7391
-			is_reserve = yes
-			regiment = { type = garrison_brigade name = "19. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "20. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "21. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-		}
-		division= {
-			name = "26. Jun"
-			location = 7391
-			is_reserve = yes
-			regiment = { type = garrison_brigade name = "22. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "23. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "24. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-		}
-		division= {
-			name = "27. Jun"
-			location = 5241
-			is_reserve = yes
-			regiment = { type = garrison_brigade name = "25. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "26. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "27. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-		}
-		division= {
-			name = "28. Jun"
-			location = 7391
-			is_reserve = yes
-			regiment = { type = garrison_brigade name = "28. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "29. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-			regiment = { type = garrison_brigade name = "30. Zhujun Mou Tu醤" experience = 15 experience = 5 historical_model = 1 }
-		}
+	division= {
+		name = "第8军团"
+		location = 7417
+		regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+	}
+	division= {
+		name = "第9军团"
+		location = 7417
+		regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+		regiment = { type = infantry_brigade experience = 20 historical_model = 1 }
+	}
+}
+corps = {
+	name = "红2方面军"
+ 	location = 9234
+	regiment = { type = hq_brigade name = "红2方面军指挥部" experience = 20 historical_model = 0 }
+	division= {
+		name = "第2军团"
+		location = 9234
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+	}
+	division= {
+		name = "第6军团"
+		location = 9234
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+	}
+}
+corps = {
+	name = "红4方面军"
+	location = 7410
+	regiment = { type = hq_brigade name = "红4方面军指挥部" experience = 20 historical_model = 0 }
+	division= {
+		name = "第4军"
+		location = 7410
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+	}
+	division= {
+		name = "第9军"
+		location = 7410
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+	}
+	division= {
+		name = "第30军"
+		location = 5335
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+	}
+	division= {
+		name = "第31军"
+		location = 5335
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+	}
+}
+corps = {
+	name = "第15军团"
+	location = 7405
+	regiment = { type = hq_brigade name = "第15军团司令部" experience = 20 historical_model = 0 }
+	division= {
+		name = "第25军"
+		location = 7405
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+	}
+	division= {
+		name = "第26军"
+		location = 7405
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+	}
+	division= {
+		name = "第27军"
+		location = 7411
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+	}
+	division= {
+		name = "第28军"
+		location = 7411
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
+		regiment = { type = militia_brigade experience = 20 historical_model = 1 }
 	}
 }

@@ -1,401 +1,51 @@
-theatre = {
-	name = "Comando Militar Portugues"
+corps = {
+	name = "葡萄牙陆军"
 	location = 4644
-	regiment = { type = hq_brigade name = "Q.G. de Lisboa" experience = 5 historical_model = 0 }	
-	army = {
-		name = "Ex閞cito Metropolitano Portugues"
-		location = 4644
-		regiment = { type = hq_brigade name = "Q.G. do Ex閞cito" experience = 5 historical_model = 0 }
-			corps = {
-			name = "Governo Militar Portugues"
-			location = 4644
-			regiment = { type = hq_brigade name = "Q.G. do Governo" experience = 5 historical_model = 0 }
-			division = {
-				name = "Cavalari鏰 de Lisboa"
-				location = 4644
-				is_reserve = yes
-				regiment = { type = cavalry_brigade name = "2o Regimento de Cavalaria" experience = 5 historical_model = 2 }
-				regiment = { type = cavalry_brigade name = "7o Regimento de Cavalaria" experience = 5 historical_model = 2 }
-			}
-			division = {
-				name = "Quartel da Amadora"
-				location = 4644
-				is_reserve = yes
-				regiment = { type = bergsjaeger_brigade name = "5o Batalhao de Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = light_armor_brigade name = "Batalhao de Carros de Combate" experience = 5 historical_model = 0 }
-				regiment = { type = engineer_brigade name = "2a Brigada de Engenhos" experience = 5 historical_model = 0 }
-			}
-			division = {
-				name = "Quartel de Lisboa"
-				location = 4644
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria nr 1" experience = 5 historical_model = 2 }
-				regiment = { type = motorized_brigade name = "Batalhao de Met. Motorizado nr 1" experience = 5 historical_model = 0 }
-				regiment = { type = truck_towed_support_brigade name = "Reg. de Artilharia Lig. Autom髒el nr3" experience = 5 historical_model = 1 }
-				regiment = { type = truck_towed_support_brigade name = "Grupo de Artilharia Autom髒el nr6" experience = 5 historical_model = 1 }
-			}
-			division = {
-				name = "Quartel de Setubal"
-				location = 4750
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria nr12" experience = 5 historical_model = 2 }
-				regiment = { type = truck_towed_support_brigade name = "Grupo de Artilharia Autom髒el nr6" experience = 5 historical_model = 1 }
-			}
-			division = {
-				name = "Quartel de Santar閙"
-				location = 4590
-				is_reserve = yes
-				regiment = { type = horse_towed_support_brigade name = "Grupo de Artilharia a Cavalo nr2" experience = 5 historical_model = 1 }
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria nr5" experience = 5 historical_model = 2 }
-				regiment = { type = bergsjaeger_brigade name = "Batalhao de Ca鏰dores Semi-motorizado" experience = 5 historical_model = 2 }
-			}
-		}
-		corps = {
-			name = "1a Regiao Militar"
-			location = 4086
-			regiment = { type = hq_brigade name = "Q.G. da 1a Regiao Militar" experience = 5 historical_model = 0 }
-			division = {
-				name = "Quartel de Porto no1"
-				location = 4086
-				is_reserve = yes
-				regiment = { type = truck_towed_support_brigade name = "Grupo de Artilharia Autom髒el nr3" experience = 5 historical_model = 1 }
-				regiment = { type = cavalry_brigade name = "9o Regimento de Cavalaria" experience = 5 historical_model = 2 }
-				regiment = { type = motorized_brigade name = "Batalhao de Met. Motorizado nr2" experience = 5 historical_model = 0 }
-			}
-			division = {
-				name = "Quartel de Porto no2"
-				location = 4086
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria nr6" experience = 5 historical_model = 2 }
-				regiment = { type = engineer_brigade name = "1a Brigada de Engenhos" experience = 5 historical_model = 0 }
-			}
-			division = {
-				name = "Quartel de Braga"
-				location = 4087
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria nr8" experience = 5 historical_model = 2 }
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria nr13" experience = 5 historical_model = 2 }				
-				regiment = { type = cavalry_brigade name = "6o Regimento de Cavalaria" experience = 5 historical_model = 2 }
-			}
-			division = {
-				name = "Quartel de Chaves"
-				location = 4088
-				is_reserve = yes
-				regiment = { type = bergsjaeger_brigade name = "3o Batalhao de Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = bergsjaeger_brigade name = "9o Batalhao de Ca鏰dores" experience = 5 historical_model = 2 }				
-				regiment = { type = bergsjaeger_brigade name = "10o Batalhao de Ca鏰dores" experience = 5 historical_model = 2 }
-			}
-		}
-		corps = {
-			name = "2a Regiao Militar"
-			location = 4406
-			regiment = { type = hq_brigade name = "Q.G. da 2a Regiao Militar" experience = 5 historical_model = 0 }
-			division = {
-				name = "Quartel de Lamego"
-				location = 4214
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria nr6" experience = 5 historical_model = 2 }
-				regiment = { type = motorized_brigade name = "Batalhao de Met. Motorizado nr2" experience = 5 historical_model = 0 }				
-			}
-			division = {
-				name = "Quartel de Coimbra"
-				location = 4406
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria nr6" experience = 5 historical_model = 2 }
-				regiment = { type = horse_towed_support_brigade name = "Grupo de Artilharia nr2" experience = 5 historical_model = 1 }
-			}
-			division = {
-				name = "Quartel de Viseu"
-				location = 4344
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria nr14" experience = 5 historical_model = 2 }
-				regiment = { type = cavalry_brigade name = "5o Regimento de Cavalaria" experience = 5 historical_model = 2 }
-			}
-			division = {
-				name = "Quartel de Guarda"
-				location = 4407
-				is_reserve = yes
-				regiment = { type = bergsjaeger_brigade name = "3o Batalhao de Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria nr10" experience = 5 historical_model = 2 }
-			}
-		}
-		corps = {
-			name = "3a Regiao Militar"
-			location = 4534
-			regiment = { type = hq_brigade name = "Q.G. da 3a Regiao Militar" experience = 5 historical_model = 0 }
-			division = {
-				name = "Quartel de Leiria"
-				location = 4470
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria nr7" experience = 5 historical_model = 2 }
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria nr5" experience = 5 historical_model = 2 }
-			}
-			division = {
-				name = "Quartel de Tomar"
-				location = 4534
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria nr15" experience = 5 historical_model = 2 }
-				regiment = { type = bergsjaeger_brigade name = "2o Batalhao de Ca鏰dores" experience = 5 historical_model = 2 }				
-			}
-			division = {
-				name = "Quartel de Castelo Branco"
-				location = 4535
-				is_reserve = yes
-				regiment = { type = bergsjaeger_brigade name = "6o Batalhao de Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = cavalry_brigade name = "8o Regimento de Cavalaria" experience = 5 historical_model = 2 }
-			}
-		}
-		corps = {
-			name = "4a Regiao Militar"
-			location = 4803
-			regiment = { type = hq_brigade name = "Q.G. da 4a Regiao Militar" experience = 5 historical_model = 0 }
-			division = {
-				name = "Quartel de 蓈ora"
-				location = 4803
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria nr3" experience = 5 historical_model = 2 }
-				regiment = { type = horse_towed_support_brigade name = "Grupo de Artilharia nr1" experience = 5 historical_model = 1 }
-			}
-			division = {
-				name = "Quartel de Elvas"
-				location = 4701
-				is_reserve = yes
-				regiment = { type = bergsjaeger_brigade name = "1o Batalhao de Ca鏰dores" experience = 5 historical_model = 2 }				
-				regiment = { type = bergsjaeger_brigade name = "8o Batalhao de Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = cavalry_brigade name = "1o Regimento de Cavalaria" experience = 5 historical_model = 2 }
-			}
-			division = {
-				name = "Quartel de Estremoz"
-				location = 4646
-				is_reserve = yes
-				regiment = { type = cavalry_brigade name = "3o Regimento de Cavalaria" experience = 5 historical_model = 2 }
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria no 6" experience = 5 historical_model = 2 }
-			}
-			division = {
-				name = "Quartel de Abrantes"
-				location = 4344
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria nr4" experience = 5 historical_model = 2 }				
-				regiment = { type = horse_towed_support_brigade name = "Grupo de Artilharia a Cavalo nr1" experience = 5 historical_model = 1 }
-			}
-		}
-	}
-	division = {
-		name = "Comando Militar dos A鏾res"
-		location = 8970
+	regiment = { type = hq_brigade name = "葡萄牙陆军指挥部" historical_model = 0 }
+	division= {
+		name = "第1步兵师"
+		location = 4086
 		is_reserve = yes
-		regiment = { type = garrison_brigade name = "1o Batalhao de Defesa dos A鏾res" experience = 5 historical_model = 2 }
-		regiment = { type = garrison_brigade name = "2o Batalhao de Defesa dos A鏾res" experience = 5 historical_model = 2 }
-	}	
-	division = {
-		name = "Comando Militar da Madeira"
-		location = 11384
-		is_reserve = yes
-		regiment = { type = garrison_brigade name = "1o Batalhao de Defesa da Madeira" experience = 5 historical_model = 2 }
-		regiment = { type = militia_brigade name = "2o Batalhao de Defesa da Madeira" experience = 5 historical_model = 2 }		
+		regiment = { type = infantry_brigade name = "第6步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第8步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第13步兵团" historical_model = 0 }
 	}
+	division= {
+		name = "第2步兵师"
+		location = 4405
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第9步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第10步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第12步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第14步兵团" historical_model = 0 }
+	}
+}
+navy = {
+	name = "葡萄牙运输船队"
+	base = 4644
+	location = 4644
+	ship = { type = transport_ship name = "第1葡萄牙运输船队" historical_model = 0 }
+}
+navy = {
+	name = "葡萄牙运输船队"
+	base = 9794
+	location = 9794
+	ship = { type = transport_ship name = "第2葡萄牙运输船队" historical_model = 0 }
+	ship = { type = destroyer name = "杜罗弗洛蒂亚" historical_model = 1 }
+}
+navy = {
+	name = "葡萄牙海军"
+	base = 4644
+	location = 4644
+	ship = { type = destroyer name = "维亚纳堡弗洛蒂亚" historical_model = 0 }
+	ship = { type = submarine name = "第1潜艇大队" historical_model = 1 }
+}
+air = {
+	name = "葡萄牙空军"
+	base = 4644
+	location = 4644
+	wing = { type = tactical_bomber name = "第1战术轰炸机大队" historical_model = 0 }
+}
 
-	navy = {
-		name = "Marinha de Portugal"
-		base = 4644
-		location = 4644
-		ship = { type = destroyer name = "Flotilha 'Viana do Castelo'" experience = 5 historical_model = 6 }
-		ship = { type = submarine name = "Flotilha Delfim" experience = 5 historical_model = 7 }
-		ship = { type = transport_ship name = "Flotilha de Transporte Gil e Enes" experience = 5 historical_model = 0 }		
-	}
-	air = {
-		name = "For鏰 A閞ea Portuguesa"
-		base = 4644
-		location = 4644
-		wing = { type = cas name = "Esq. 201 'Os Piratas'" experience = 5 historical_model = 0 }		
-		wing = { type = cas name = "Esq. 202 'Os Galos'" experience = 5 historical_model = 0 }
-	}	
-}
-theatre = {
-	name = "Comando das Col髇ias"
-	location = 10194
-	regiment = { type = hq_brigade name = "Q.G. do Comando das Col髇ias" experience = 5 historical_model = 0 }
-	army = {
-		name = "Comando Militar de Angola"
-		location = 10183
-		regiment = { type = hq_brigade name = "Comando Militar de Angola" experience = 5 historical_model = 0 }
-		corps = {
-			name = "Comando Militar de Luanda"
-			location = 10160
-			regiment = { type = hq_brigade name = "Comando Militar de Luanda" experience = 5 historical_model = 0 }		
-			division = {
-				name = "Quartel de Luanda"
-				location = 10147
-				regiment = { type = militia_brigade name = "1o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = militia_brigade name = "3o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = motorized_brigade name = "Batalhao de Motorizado nr1" experience = 5 historical_model = 0 }
-			}
-			division = {
-				name = "Quartel de Maquela do Zombo"
-				location = 10139
-				regiment = { type = militia_brigade name = "2o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = horse_towed_support_brigade name = "Regimento de Artilharia de Angola nr4" experience = 5 historical_model = 0 }				
-			}
-			division = {
-				name = "Quartel de Vila Henrique de Carvalho"
-				location = 7985
-				regiment = { type = militia_brigade name = "4o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = motorized_brigade name = "Batalhao de Motorizado nr3" experience = 5 historical_model = 0 }			
-			}
-			division = {
-				name = "Quartel de Gabela"
-				location = 10171
-				regiment = { type = militia_brigade name = "7o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }	
-				regiment = { type = motorized_brigade name = "Batalhao de Motorizado nr2" experience = 5 historical_model = 0 }			
-			}
-			division = {
-				name = "Quartel de Vila Salazar"
-				location = 10160
-				regiment = { type = militia_brigade name = "7o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = horse_towed_support_brigade name = "Regimento de Artilharia de Angola nr1" experience = 5 historical_model = 0 }		
-			}			
-		}
-		division = {
-			name = "Quartel de Mo鏰medes"
-			location = 10257
-			regiment = { type = militia_brigade name = "5o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-			regiment = { type = horse_towed_support_brigade name = "Regimento de Artilharia de Angola nr3" experience = 5 historical_model = 0 }				
-		}		
-		division = {
-			name = "Quartel de Vila Luso"
-			location = 7985
-			regiment = { type = militia_brigade name = "8o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }	
-			regiment = { type = militia_brigade name = "9o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }			
-		}
-		division = {
-			name = "Quartel de Benguela"
-			location = 10194
-			regiment = { type = militia_brigade name = "11o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-			regiment = { type = militia_brigade name = "12o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }		
-		}
-		division = {
-			name = "Quartel de Nova Lisboa"
-			location = 10183
-			regiment = { type = militia_brigade name = "10o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-			regiment = { type = horse_towed_support_brigade name = "Regimento de Artilharia de Angola nr2" experience = 5 historical_model = 0 }		
-		}
-	}
-	armygroup = {
-		name = "Comando Militar de Mo鏰mbique"
-		location = 7985
-		regiment = { type = hq_brigade name = "Comando Militar de Mo鏰mbique" experience = 5 historical_model = 2 }
-		corps = {
-			name = "Comando Militar de Nampula"
-			location = 10246
-			regiment = { type = hq_brigade name = "Comando Militar de Nampula" experience = 5 historical_model = 1 }
-			division = {
-				name = "Quartel de Nampula"
-				location = 10246
-				regiment = { type = militia_brigade name = "5o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = militia_brigade name = "6o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = motorized_brigade name = "Batalhao de Motorizado nr3" experience = 5 historical_model = 0 }		
-			}
-					division = {
-				name = "Quartel de Porto Am閘ia"
-				location = 10205
-				regiment = { type = militia_brigade name = "1o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }			
-				regiment = { type = militia_brigade name = "2o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-			}
-			division = {
-				name = "Quartel de Vila Cabral"
-				location = 10245
-				regiment = { type = militia_brigade name = "4o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = militia_brigade name = "9o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }			
-			}
-			division = {
-				name = "Quartel de Tete"
-				location = 10286
-				regiment = { type = militia_brigade name = "7o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = militia_brigade name = "3o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-			}			
-		}
-		corps = {
-			name = "Comando Militar de Inhambane"
-			location = 10340
-			regiment = { type = hq_brigade name = "Comando Militar de Inhambane" experience = 5 historical_model = 1 }
-			division = {
-				name = "Quartel de Louren鏾 Marques"
-				location = 10382
-				regiment = { type = truck_towed_support_brigade name = "Reg. de Artilharia Autom髒el nr1" experience = 5 historical_model = 0 }
-				regiment = { type = cavalry_brigade name = "7o Regimento de Cavalaria" experience = 5 historical_model = 0 }	
-				regiment = { type = motorized_brigade name = "Batalhao de Motorizado nr2" experience = 5 historical_model = 0 }
-				regiment = { type = motorized_brigade name = "Batalhao de Motorizado nr1" experience = 5 historical_model = 0 }
-			}			
-			division = {
-				name = "Quartel de Inhambane"
-				location = 10340
-				regiment = { type = militia_brigade name = "8o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = militia_brigade name = "11o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }	
-			}
-			division = {
-				name = "Quartel de Beira"
-				location = 10319
-				regiment = { type = militia_brigade name = "12o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }
-				regiment = { type = militia_brigade name = "10o Regimento de Nativos Ca鏰dores" experience = 5 historical_model = 2 }			
-			}	
-		}	
-	}
-	navy = {
-		name = "Frota de Navios de Transporte das Colonias"
-		base = 10194
-		location = 10194
-		ship = { type = transport_ship name = "Flotilha de Transporte Sado" experience = 5 historical_model = 0 }
-	}
-	armygroup = {
-		name = "Comando da 羢ia"
-		location = 5886
-		regiment = { type = hq_brigade name = "Q.G. de Macau" experience = 5 historical_model = 0 }
-		division = {
-			name = "Comando Militar de Macau"
-			location = 5886
-				regiment = { type = infantry_brigade name = "Regimento de Infantaria" experience = 5 historical_model = 2 }
-				regiment = { type = bergsjaeger_brigade name = "Regimento de Metrelhadoras" experience = 5 historical_model = 2 }
-				regiment = { type = horse_towed_support_brigade name = "Regimento de Artilharia" experience = 5 historical_model = 0 }
-		}
-		division = {
-			name = "Comando Militar de Timor Leste"
-			location = 6558
-			regiment = { type = garrison_brigade name = "Guarni鏰o de Timor Leste" experience = 5 historical_model = 2 }
-			regiment = { type = garrison_brigade name = "1. Regimento de Atiradores" experience = 5 historical_model = 2 }			
-		}	
-		division = {
-			name = "Guarda de Goa"
-			location = 6120
-			regiment = { type = garrison_brigade name = "2. Regimento de Atiradores" experience = 5 historical_model = 2 }
-			regiment = { type = horse_towed_support_brigade name = "Regimento de Artilharia" experience = 5 historical_model = 0 }
-		}
-	}			
-}
-convoy_construction=
-{
-	country = POR
-	id=
-	{
-		id=15114
-		type=4713
-	}
-	size=1
-	cost=0.000 #you can put any number here and the engine will use it
-	progress=90.000
-	duration=0.000 #you can put any number here and the engine will use it
-	status=no #No means you get a convoy.  Yes means you get an escort
-}
-convoy_construction=
-{
-	country = POR
-	id=
-	{
-		id=15115
-		type=4713
-	}
-	size=1
-	cost=0.000 #you can put any number here and the engine will use it
-	progress=90.000
-	duration=0.000 #you can put any number here and the engine will use it
-	status=no #No means you get a convoy.  Yes means you get an escort
-}
+
+

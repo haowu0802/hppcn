@@ -1,134 +1,86 @@
 theatre = {
-	name = "Alto Mando de Argentino"
+	name = "阿根廷陆军"
 	location = 7899
-	regiment = { type = hq_brigade name = "Argentina Alto Mando HQ" historical_model = 0 }
+	regiment = { type = hq_brigade name = "阿根廷陆军指挥部" historical_model = 0 }
 	corps = {
-		name = "I Cuerpo de Ej閞cito"
+		name = "第I军"
 		location = 7899
-		regiment = { type = hq_brigade name = "I Cuerpo de Ej閞cito HQ" historical_model = 0 }
+		regiment = { type = hq_brigade name = "第I军指挥部" historical_model = 0 }
 		division= {
-			name = "1era Divisi髇 del Ejercito"
+			name = "第III'佩莱格里尼'旅"
 			location = 7899
 			is_reserve = yes
-			regiment = { type = infantry_brigade name = "1. Regimientos de Infanter韆" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "2. Regimientos de Infanter韆" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "3. Regimientos de Infanter韆" experience = 5 historical_model = 3 }
-			regiment = { type = cavalry_brigade name = "1. Escuadr髇 de Caballer韆" experience = 5 historical_model = 3 }
-			}
-		division= {
-			name = "2da Divisi髇 del Ejercito"
-			location = 7899
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "4. Regimientos de Infanter韆" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "5. Regimientos de Infanter韆" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "6. Regimientos de Infanter韆" experience = 5 historical_model = 3 }
-			regiment = { type = cavalry_brigade name = "2. Escuadr髇 de Caballer韆" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
 		}
 		division= {
-			name = "3era Divisi髇 del Ejercito"
+			name = "第II'圣马丁'旅"
 			location = 7899
 			is_reserve = yes
-			regiment = { type = infantry_brigade name = "7. Regimientos de Infanter韆" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "8. Regimientos de Infanter韆" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "9. Regimientos de Infanter韆" experience = 5 historical_model = 3 }
-			regiment = { type = cavalry_brigade name = "3. Escuadr髇 de Caballer韆" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+		}
+		division= {
+			name = "第I'卡拉尤斯'旅"
+			location = 7899
+			is_reserve = yes
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
 		}
 	}
 	corps = {
-		name = "II Cuerpo de Ej閞cito"
+		name = "第II军"
 		location = 7899
-		regiment = { type = hq_brigade name = "II Cuerpo de Ej閞cito HQ" historical_model = 0 }
+		regiment = { type = hq_brigade name = "第II军指挥部" historical_model = 0 }
 		division= {
-			name = "4ta Divisi髇 del Ejercito"
+			name = "第VI山地旅"
 			location = 7899
 			is_reserve = yes
-			regiment = { type = infantry_brigade name = "10. Regimientos de Infanter韆" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "11. Regimientos de Infanter韆" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "12. Regimientos de Infanter韆" experience = 5 historical_model = 3 }
-			regiment = { type = cavalry_brigade name = "4. Escuadr髇 de Caballer韆" experience = 5 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade historical_model = 0 }
+			regiment = { type = bergsjaeger_brigade historical_model = 0 }
+			regiment = { type = bergsjaeger_brigade historical_model = 0 }
 		}
 		division= {
-			name = "5ta Divisi髇 del Ejercito"
+			name = "第IV步兵旅"
 			location = 7899
 			is_reserve = yes
-			regiment = { type = infantry_brigade name = "13. Regimientos de Infanter韆" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "14. Regimientos de Infanter韆" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "15. Regimientos de Infanter韆" experience = 5 historical_model = 3 }
-			regiment = { type = cavalry_brigade name = "5. Escuadr髇 de Caballer韆" experience = 5 historical_model = 3 }
-		}			
-		division= {
-			name = "6ta Divisi髇 del Ejercito"
-			location = 7899
-			is_reserve = yes
-			regiment = { type = bergsjaeger_brigade name = "13. Rgt. de Infanter韆 de Montana" experience = 5 historical_model = 3 }
-			regiment = { type = bergsjaeger_brigade name = "13. Rgt. de Infanter韆 de Montana" experience = 5 historical_model = 3 }
-			regiment = { type = bergsjaeger_brigade name = "13. Rgt. de Infanter韆 de Montana" experience = 5 historical_model = 3 }
-			regiment = { type = cavalry_brigade name = "6. Escuadr髇 de Caballer韆" experience = 5 historical_model = 3 }
-			}
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+			regiment = { type = infantry_brigade historical_model = 0 }
+		}
 	}
-	navy = {
-		name = "Armada de Argentina"
-		base = 7945
-		location = 7945
-		ship = { type = battleship name = "ARA Rivadavia" experience = 5 historical_model = 0 pride = yes }
-		ship = { type = battleship name = "ARA Moreno" experience = 5 historical_model = 0 }
-		ship = { type = heavy_cruiser name = "ARA Veinticinco De Mayo" experience = 5 historical_model = 6 }
-		ship = { type = heavy_cruiser name = "ARA Almirante Brown" experience = 5 historical_model = 6 }
-		ship = { type = heavy_cruiser name = "ARA Independencia" experience = 5 historical_model = 0 }
-		ship = { type = heavy_cruiser name = "ARA La Libertad" experience = 5 historical_model = 0 }
-		ship = { type = heavy_cruiser name = "ARA Generale Belgrano " experience = 5 historical_model = 1 }
-		ship = { type = heavy_cruiser name = "ARA Generale Pueyrredon" experience = 5 historical_model = 1 }
-		ship = { type = destroyer name = "Flotilla de Destructores nro. 1" experience = 5 historical_model = 0 }
-		ship = { type = destroyer name = "Flotilla de Destructores nro. 2" experience = 5 historical_model = 4 }
-		ship = { type = destroyer name = "Flotilla de Destructores nro. 3" experience = 5 historical_model = 5 }
-		ship = { type = submarine name = "Flotilla de Submarinos nro. 1" experience = 5 historical_model = 5 }
-		ship = { type = transport_ship name = "1a Flotilla de Transporte Naval" historical_model = 0 }
-	}
+}
+navy = {
+	name = "阿根廷海军"
+	base = 7945
+	location = 7945
+	ship = { type = heavy_cruiser name = "ARA 五号二十五日号" historical_model = 1 }
+	ship = { type = heavy_cruiser name = "ARA 布朗海军上将号" historical_model = 1 }
+	ship = { type = battleship name = "ARA 莫雷诺号" historical_model = 0 }
+	ship = { type = battleship name = "ARA 里瓦达维亚号" historical_model = 0 pride = yes }
+	ship = { type = heavy_cruiser name = "ARA 独立号" historical_model = 0 }
+	ship = { type = heavy_cruiser name = "ARA 自由号" historical_model = 0 }
+	ship = { type = light_cruiser name = "ARA 贝尔格拉诺号" historical_model = 0 }
+	ship = { type = light_cruiser name = "ARA 普雷艾东号" historical_model = 0 }
+	ship = { type = destroyer name = "第1驱逐支队" historical_model = 1 }
+	ship = { type = destroyer name = "第2驱逐支队" historical_model = 0 }
+	ship = { type = submarine name = "第1潜艇分队" historical_model = 1 }
+}
+air = {
+	name = "阿根廷空军"
+	base = 7899
+	location = 7899
+	wing = { type = interceptor name = "第1截击编队" historical_model = 0 }
+}
+air = {
+	name = "海军航空编队"
+	base = 7899
+	location = 7899
+	wing = { type = naval_bomber name = "第1海军轰炸编队" historical_model = 0 }
+}
 
-	air = {
-		name = "Aviaci髇 del Ej閞cito"
-		base = 7899
-		location = 7899
-		wing = { type = cas name = "Grupo A閞eo de Asalto Nro. 1" experience = 5 historical_model = 0 }
-	}
-	air = {
-		name = "Aviaci髇 Naval"
-		base = 7899
-		location = 7899
-		wing = { type = naval_bomber name = "Fuerza Aeronaval Nro. 1" experience = 5 historical_model = 0 }
-	}
-	air = {
-		name = "L.A.S.O."
-		base = 7899
-		location = 7899
-		wing = { type = transport_plane name = "L.A.S.O." experience = 5 historical_model = 1 }
-	}
-}
-convoy_construction=
-{
-	country = ARG
-	id=
-	{
-		id=15690
-		type=4713
-	}
-	size=1
-	cost=0.000 #you can put any number here and the engine will use it
-	progress=90.000
-	duration=0.000 #you can put any number here and the engine will use it
-	status=no #No means you get a convoy.  Yes means you get an escort
-}
-convoy_construction=
-{
-	country = ARG
-	id=
-	{
-		id=15691
-		type=4713
-	}
-	size=1
-	cost=0.000 #you can put any number here and the engine will use it
-	progress=90.000
-	duration=0.000 #you can put any number here and the engine will use it
-	status=no #No means you get a convoy.  Yes means you get an escort	
-}
+
+

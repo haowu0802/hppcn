@@ -1,8 +1,6 @@
 color = { 104  153  126 }
 graphical_culture = German
 
-
-
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -19,198 +17,167 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
-	generic_milita = {
-		militia_brigade
-		militia_brigade
-		militia_brigade
-	}
-	generic_armoured = {
-		armor_brigade
-		motorized_brigade
-		motorized_brigade
-	}
-	generic_garrison = {
-		garrison_brigade
-		garrison_brigade
-		garrison_brigade
-	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
 	}
-	generic_alpine = {
-		bergsjaeger_brigade
-		bergsjaeger_brigade
-	}
-	generic_marine = {
-		marine_brigade
-		marine_brigade
-	}	
 }
 
 unit_names = {
 	infantry_brigade = {
-		"1. Infanterie-Division" "2. Infanterie-Division" "3. Infanterie-Division" "4. Infanterie-Division" "5. Infanterie-Division" "6. Infanterie-Division" "7. Infanterie-Division" "8. Infanterie-Division" "10. Infanterie-Division" "11. Infanterie-Division" "12. Infanterie-Division" 
-		"13. Infanterie-Division" "14. Infanterie-Division" "15. Infanterie-Division" "16. Infanterie-Division" "17. Infanterie-Division" "18. Infanterie-Division" "19. Infanterie-Division" "20. Infanterie-Division" "21. Infanterie-Division" "22. Infanterie-Division" "23. Infanterie-Division" 
-		"24. Infanterie-Division" "25. Infanterie-Division" "26. Infanterie-Division" "27. Infanterie-Division" "28. Infanterie-Division" "29. Infanterie-Division" "30. Infanterie-Division" "31. Infanterie-Division" "32. Infanterie-Division" "33. Infanterie-Division" "34. Infanterie-Division" 
-		"35. Infanterie-Division" "36. Infanterie-Division" "37. Infanterie-Division" "38. Infanterie-Division" "39. Infanterie-Division" "40. Infanterie-Division" "41. Infanterie-Division" "42. Infanterie-Division" "43. Infanterie-Division" "44. Infanterie-Division" "45. Infanterie-Division" 
-		"46. Infanterie-Division" "47. Infanterie-Division" "48. Infanterie-Division" "49. Infanterie-Division" "50. Infanterie-Division" "51. Infanterie-Division" "52. Infanterie-Division" "53. Infanterie-Division" "54. Infanterie-Division" "55. Infanterie-Division" "56. Infanterie-Division" 
-		"57. Infanterie-Division" "58. Infanterie-Division" "59. Infanterie-Division" "60. Infanterie-Division" "61. Infanterie-Division" "62. Infanterie-Division" "63. Infanterie-Division" "64. Infanterie-Division" "65. Infanterie-Division" "66. Infanterie-Division" "67. Infanterie-Division" 
-		"68. Infanterie-Division" "69. Infanterie-Division" "70. Infanterie-Division" 
+		"第1步兵师" "第2步兵师" "第3步兵师" "第4步兵师" "第5步兵师" "第6步兵师" "第7步兵师" "第8步兵师" "第10步兵师" "第11步兵师" "第12步兵师" 
+		"第13步兵师" "第14步兵师" "第15步兵师" "第16步兵师" "第17步兵师" "第18步兵师" "第19步兵师" "第20步兵师" "第21步兵师" "第22步兵师" "第23步兵师" 
+		"第24步兵师" "第25步兵师" "第26步兵师" "第27步兵师" "第28步兵师" "第29步兵师" "第30步兵师" "第31步兵师" "第32步兵师" "第33步兵师" "第34步兵师" 
+		"第35步兵师" "第36步兵师" "第37步兵师" "第38步兵师" "第39步兵师" "第40步兵师" "第41步兵师" "第42步兵师" "第43步兵师" "第44步兵师" "第45步兵师" 
+		"第46步兵师" "第47步兵师" "第48步兵师" "第49步兵师" "第50步兵师" "第51步兵师" "第52步兵师" "第53步兵师" "第54步兵师" "第55步兵师" "第56步兵师" 
+		"第57步兵师" "第58步兵师" "第59步兵师" "第60步兵师" "第61步兵师" "第62步兵师" "第63步兵师" "第64步兵师" "第65步兵师" "第66步兵师" "第67步兵师" 
+		"第68步兵师" "第69步兵师" "第70步兵师" 
 	}
 	cavalry_brigade = {
-		"1. Kavallerie-Division" "3. Kavallerie-Division" "4. Kavallerie-Division" "5. Kavallerie-Division" "6. Kavallerie-Division" "7. Kavallerie-Division" "8. Kavallerie-Division" "9. Kavallerie-Division" "10. Kavallerie-Division" "11. Kavallerie-Division" "12. Kavallerie-Division" 
-		"13. Kavallerie-Division" "14. Kavallerie-Division" "15. Kavallerie-Division" "16. Kavallerie-Division" "17. Kavallerie-Division" "18. Kavallerie-Division" "19. Kavallerie-Division" "20. Kavallerie-Division" 
+		"第1骑兵师" "第3骑兵师" "第4骑兵师" "第5骑兵师" "第6骑兵师" "第7骑兵师" "第8骑兵师" "第9骑兵师" "第10骑兵师" "第11骑兵师" "第12骑兵师" 
+		"第13骑兵师" "第14骑兵师" "第15骑兵师" "第16骑兵师" "第17骑兵师" "第18骑兵师" "第19骑兵师" "第20骑兵师" 
 	}
 	motorized_brigade = {
-		"1. Infanterie-Division" "2. Infanterie-Division" "3. Infanterie-Division" "4. Infanterie-Division" "5. Infanterie-Division" "6. Infanterie-Division" "7. Infanterie-Division" "8. Infanterie-Division" "10. Infanterie-Division" "11. Infanterie-Division" "12. Infanterie-Division" 
-		"13. Infanterie-Division" "14. Infanterie-Division" "15. Infanterie-Division" "16. Infanterie-Division" "17. Infanterie-Division" "18. Infanterie-Division" "19. Infanterie-Division" "20. Infanterie-Division" "21. Infanterie-Division" "22. Infanterie-Division" "23. Infanterie-Division" 
-		"24. Infanterie-Division" "25. Infanterie-Division" "26. Infanterie-Division" "27. Infanterie-Division" "28. Infanterie-Division" "29. Infanterie-Division" "30. Infanterie-Division" "31. Infanterie-Division" "32. Infanterie-Division" "33. Infanterie-Division" "34. Infanterie-Division" 
-		"35. Infanterie-Division" "36. Infanterie-Division" "37. Infanterie-Division" "38. Infanterie-Division" "39. Infanterie-Division" "40. Infanterie-Division" "41. Infanterie-Division" "42. Infanterie-Division" "43. Infanterie-Division" "44. Infanterie-Division" "45. Infanterie-Division" 
-		"46. Infanterie-Division" "47. Infanterie-Division" "48. Infanterie-Division" "49. Infanterie-Division" "50. Infanterie-Division" "51. Infanterie-Division" "52. Infanterie-Division" "53. Infanterie-Division" "54. Infanterie-Division" "55. Infanterie-Division" "56. Infanterie-Division" 
-		"57. Infanterie-Division" "58. Infanterie-Division" "59. Infanterie-Division" "60. Infanterie-Division" "61. Infanterie-Division" "62. Infanterie-Division" "63. Infanterie-Division" "64. Infanterie-Division" "65. Infanterie-Division" "66. Infanterie-Division" "67. Infanterie-Division" 
-		"68. Infanterie-Division" "69. Infanterie-Division" "70. Infanterie-Division" 
+		"第1步兵师" "第2步兵师" "第3步兵师" "第4步兵师" "第5步兵师" "第6步兵师" "第7步兵师" "第8步兵师" "第10步兵师" "第11步兵师" "第12步兵师" 
+		"第13步兵师" "第14步兵师" "第15步兵师" "第16步兵师" "第17步兵师" "第18步兵师" "第19步兵师" "第20步兵师" "第21步兵师" "第22步兵师" "第23步兵师" 
+		"第24步兵师" "第25步兵师" "第26步兵师" "第27步兵师" "第28步兵师" "第29步兵师" "第30步兵师" "第31步兵师" "第32步兵师" "第33步兵师" "第34步兵师" 
+		"第35步兵师" "第36步兵师" "第37步兵师" "第38步兵师" "第39步兵师" "第40步兵师" "第41步兵师" "第42步兵师" "第43步兵师" "第44步兵师" "第45步兵师" 
+		"第46步兵师" "第47步兵师" "第48步兵师" "第49步兵师" "第50步兵师" "第51步兵师" "第52步兵师" "第53步兵师" "第54步兵师" "第55步兵师" "第56步兵师" 
+		"第57步兵师" "第58步兵师" "第59步兵师" "第60步兵师" "第61步兵师" "第62步兵师" "第63步兵师" "第64步兵师" "第65步兵师" "第66步兵师" "第67步兵师" 
+		"第68步兵师" "第69步兵师" "第70步兵师" 
 	}
 	mechanized_brigade = {
-		"1. Panzergrenadier-Division" "2. Panzergrenadier-Division" "3. Panzergrenadier-Division" "4. Panzergrenadier-Division" "5. Panzergrenadier-Division" "6. Panzergrenadier-Division" "7. Panzergrenadier-Division" "8. Panzergrenadier-Division" "10. Panzergrenadier-Division" "11. Panzergrenadier-Division" "12. Panzergrenadier-Division" 
-		"13. Panzergrenadier-Division" "14. Panzergrenadier-Division" "15. Panzergrenadier-Division" "16. Panzergrenadier-Division" "17. Panzergrenadier-Division" "18. Panzergrenadier-Division" "19. Panzergrenadier-Division" "20. Panzergrenadier-Division" "21. Panzergrenadier-Division" "22. Panzergrenadier-Division" "23. Panzergrenadier-Division" 
-		"24. Panzergrenadier-Division" "25. Panzergrenadier-Division" "26. Panzergrenadier-Division" "27. Panzergrenadier-Division" "28. Panzergrenadier-Division" "29. Panzergrenadier-Division" "30. Panzergrenadier-Division" "31. Panzergrenadier-Division" "32. Panzergrenadier-Division" "33. Panzergrenadier-Division" "34. Panzergrenadier-Division" 
-		"35. Panzergrenadier-Division" "36. Panzergrenadier-Division" "37. Panzergrenadier-Division" "38. Panzergrenadier-Division" "39. Panzergrenadier-Division" "40. Panzergrenadier-Division" 
+		"第1装甲掷弹师" "第2装甲掷弹师" "第3装甲掷弹师" "第4装甲掷弹师" "第5装甲掷弹师" "第6装甲掷弹师" "第7装甲掷弹师" "第8装甲掷弹师" "第10装甲掷弹师" "第11装甲掷弹师" "第12装甲掷弹师" 
+		"第13装甲掷弹师" "第14装甲掷弹师" "第15装甲掷弹师" "第16装甲掷弹师" "第17装甲掷弹师" "第18装甲掷弹师" "第19装甲掷弹师" "第20装甲掷弹师" "第21装甲掷弹师" "第22装甲掷弹师" "第23装甲掷弹师" 
+		"第24装甲掷弹师" "第25装甲掷弹师" "第26装甲掷弹师" "第27装甲掷弹师" "第28装甲掷弹师" "第29装甲掷弹师" "第30装甲掷弹师" "第31装甲掷弹师" "第32装甲掷弹师" "第33装甲掷弹师" "第34装甲掷弹师" 
+		"第35装甲掷弹师" "第36装甲掷弹师" "第37装甲掷弹师" "第38装甲掷弹师" "第39装甲掷弹师" "第40装甲掷弹师" 
 	}
 	light_armor_brigade = {
-		"1. Panzer-Division" "2. Panzer-Division" "3. Panzer-Division" "4. Panzer-Division" "5. Panzer-Division" "6. Panzer-Division" "7. Panzer-Division" "8. Panzer-Division" "9. Panzer-Division" "10. Panzer-Division" "11. Panzer-Division" 
-		"14. Panzer-Division" "12. Panzer-Division" "13. Panzer-Division" "15. Panzer-Division" "16. Panzer-Division" "17. Panzer-Division" "18. Panzer-Division" "19. Panzer-Division" "20. Panzer-Division" "21. Panzer-Division" "22. Panzer-Division" 
-		"23. Panzer-Division" "24. Panzer-Division" "25. Panzer-Division" "26. Panzer-Division" "27. Panzer-Division" "178. Reserve-Panzer-Division" "179. Reserve-Panzer-Division" "155. Reserve-Panzer-Division" "233. Reserve-Panzer-Division" 
+		"第1装甲师" "第2装甲师" "第3装甲师" "第4装甲师" "第5装甲师" "第6装甲师" "第7装甲师" "第8装甲师" "第9装甲师" "第10装甲师" "第11装甲师" 
+		"第14装甲师" "第12装甲师" "第13装甲师" "第15装甲师" "第16装甲师" "第17装甲师" "第18装甲师" "第19装甲师" "第20装甲师" "第21装甲师" "第22装甲师" 
+		"第23装甲师" "第24装甲师" "第25装甲师" "第26装甲师" "第27装甲师" "第178预备役装甲师" "第179预备役装甲师" "第155预备役装甲师" "第233预备役装甲师" 
 	}
 	armor_brigade = {
-		"1. Panzer-Division" "2. Panzer-Division" "3. Panzer-Division" "4. Panzer-Division" "5. Panzer-Division" "6. Panzer-Division" "7. Panzer-Division" "8. Panzer-Division" "9. Panzer-Division" "10. Panzer-Division" "11. Panzer-Division" 
-		"14. Panzer-Division" "12. Panzer-Division" "13. Panzer-Division" "15. Panzer-Division" "16. Panzer-Division" "17. Panzer-Division" "18. Panzer-Division" "19. Panzer-Division" "20. Panzer-Division" "22. Panzer-Division" "23. Panzer-Division" 
-		"24. Panzer-Division" "25. Panzer-Division" "26. Panzer-Division" "27. Panzer-Division" "178. Reserve-Panzer-Division" "179. Reserve-Panzer-Division" "155. Reserve-Panzer-Division" "233. Reserve-Panzer-Division" 
+		"第1装甲师" "第2装甲师" "第3装甲师" "第4装甲师" "第5装甲师" "第6装甲师" "第7装甲师" "第8装甲师" "第9装甲师" "第10装甲师" "第11装甲师" 
+		"第14装甲师" "第12装甲师" "第13装甲师" "第15装甲师" "第16装甲师" "第17装甲师" "第18装甲师" "第19装甲师" "第20装甲师" "第22装甲师" "第23装甲师" 
+		"第24装甲师" "第25装甲师" "第26装甲师" "第27装甲师" "第178预备役装甲师" "第179预备役装甲师" "第155预备役装甲师" "第233预备役装甲师" 
 	}
 	paratrooper_brigade = {
-		"1. Fallschirmj鋑er Division" "2. Fallschirmj鋑er Division" "3. Fallschirmj鋑er Division" "4. Fallschirmj鋑er Division" "5. Fallschirmj鋑er Division" "6. Fallschirmj鋑er Division" "7. Fallschirmj鋑er Division" "9. Fallschirmj鋑er Division" "8. Fallschirmj鋑er Division" "10. Fallschirmj鋑er Division" 
+		"第1伞兵师" "第2伞兵师" "第3伞兵师" "第4伞兵师" "第5伞兵师" "第6伞兵师" "第7伞兵师" "第9伞兵师" "第8伞兵师" "第10伞兵师" 
 	}
 	marine_brigade = {
-		"1. Marine-Sturm-Division" "2. Marine-Sturm-Division" "3. Marine-Sturm-Division" "3. Marine-Sturm-Division" "4. Marine-Sturm-Division" "5. Marine-Sturm-Division" "6. Marine-Sturm-Division" "7. Marine-Sturm-Division" "8. Marine-Sturm-Division" "9. Marine-Sturm-Division" "10. Marine-Sturm-Division" 
-		"11. Marine-Sturm-Division" "12. Marine-Sturm-Division" "13. Marine-Sturm-Division" "14. Marine-Sturm-Division" "15. Marine-Sturm-Division" "16. Marine-Sturm-Division" "17. Marine-Sturm-Division" "18. Marine-Sturm-Division" "19. Marine-Sturm-Division" "20. Marine-Sturm-Division" 
+		"第1海军陆战突击师" "第2海军陆战突击师" "第3海军陆战突击师" "第3海军陆战突击师" "第4海军陆战突击师" "第5海军陆战突击师" "第6海军陆战突击师" "第7海军陆战突击师" "第8海军陆战突击师" "第9海军陆战突击师" "第10海军陆战突击师" 
+		"第11海军陆战突击师" "第12海军陆战突击师" "第13海军陆战突击师" "第14海军陆战突击师" "第15海军陆战突击师" "第16海军陆战突击师" "第17海军陆战突击师" "第18海军陆战突击师" "第19海军陆战突击师" "第20海军陆战突击师" 
 	}
 	bergsjaeger_brigade = {
-		"1. Gebirgsj鋑er-Division" "2. Gebirgsj鋑er-Division" "3. Gebirgsj鋑er-Division" "6. Gebirgsj鋑er-Division" "4. Gebirgsj鋑er-Division" "5. Gebirgsj鋑er-Division" "7. Gebirgsj鋑er-Division" "188. Gebirgsj鋑er-Division" "157. Gebirgsj鋑er-Division" "9. Gebirgsj鋑er-Division" "8. Gebirgsj鋑er-Division" 
-		"1. Skij鋑er-Division" "10. Gebirgsj鋑er-Division" "11. Gebirgsj鋑er-Division" "12. Gebirgsj鋑er-Division" "13. Gebirgsj鋑er-Division" "14. Gebirgsj鋑er-Division" "15. Gebirgsj鋑er-Division" "16. Gebirgsj鋑er-Division" "17. Gebirgsj鋑er-Division" "18. Gebirgsj鋑er-Division" "19. Gebirgsj鋑er-Division" 
-		"20. Gebirgsj鋑er-Division" 
+		"第1山地师" "第2山地师" "第3山地师" "第6山地师" "第4山地师" "第5山地师" "第7山地师" "第188山地师" "第157山地师" "第9山地师" "第8山地师" 
+		"第1雪橇师" "第10山地师" "第11山地师" "第12山地师" "第13山地师" "第14山地师" "第15山地师" "第16山地师" "第17山地师" "第18山地师" "第19山地师" 
+		"第20山地师" 
 	}
 	garrison_brigade = {
-		"52. Sicherungs-Division" "201. Sicherungs-Division" "203. Sicherungs-Division" "207. Sicherungs-Division" "213. Sicherungs-Division" "141. Reserve-Division" "221. Sicherungs-Division" "281. Sicherungs-Division" "285. Sicherungs-Division" "147. Reserve-Division" "286. Sicherungs-Division" 
-		"325. Sicherungs-Division" "400. Ersatz-Division" "390. Sicherungs-Division" "391. Sicherungs-Division" "148. Reserve-Division" "403. Sicherungs-Division" "444. Sicherungs-Division" "151. Reserve-Division" "454. Sicherungs-Division" "41. Festungs-Division" "717. Sicherungs-Division" 
-		"133. Festungs-Division" "718. Sicherungs-Division" "153. Reserve-Division" "719. Sicherungs-Division" "402. Ausbildungs-Division" "720. Sicherungs-Division" "721. Sicherungs-Division" "154. Reserve-Division" "722. Sicherungs-Division" "723. Sicherungs-Division" "724. Sicherungs-Division" 
-		"156. Reserve-Division" "725. Sicherungs-Division" "726. Sicherungs-Division" "157. Reserve-Division" "727. Sicherungs-Division" "158. Reserve-Division" "159. Reserve-Division" "856. Sicherungs-Division" "859. Sicherungs-Division" "160. Reserve-Division" "877. Sicherungs-Division" 
-		"735. Sicherungs-Division" "165. Reserve-Division" "812. Sicherungs-Division" "895. Sicherungs-Division" "166. Reserve-Division" "742. Sicherungs-Division" "171. Reserve-Division" "785. Sicherungs-Division" "172. Reserve-Division" "173. Reserve-Division" "182. Reserve-Division" 
-		"188. Reserve-Gebirgs-Division" 
+		"第52警卫师" "第201警卫师" "第203警卫师" "第207警卫师" "第213警卫师" "第141预备役师" "第221警卫师" "第281警卫师" "第285警卫师" "第147预备役师" "第286警卫师" 
+		"第325警卫师" "第400警卫师" "第390警卫师" "第391警卫师" "第148预备役师" "第403警卫师" "第444警卫师" "第151预备役师" "第454警卫师" "第41要塞师" "第717警卫师" 
+		"第133要塞师" "第718警卫师" "第153预备役师" "第719警卫师" "第402训练师" "第720警卫师" "第721警卫师" "第154预备役师" "第722警卫师" "第723警卫师" "第724警卫师" 
+		"第156预备役师" "第725警卫师" "第726警卫师" "第157预备役师" "第727警卫师" "第158预备役师" "第159预备役师" "第856警卫师" "第859警卫师" "第160预备役师" "第877警卫师" 
+		"第735警卫师" "第165预备役师" "第812警卫师" "第895警卫师" "第166预备役师" "第742警卫师" "第171预备役师" "第785警卫师" "第172预备役师" "第173预备役师" "第182预备役师" 
+		"第188山地预备役师" 
 	}
 	hq_brigade = {
-		"1. Armee" "2. Armee" "3. Armee" "Heeresgruppe A" "4. Armee" "5. Armee" "6. Armee" "Heeresgruppe B" "7. Armee" "8. Armee" "9. Armee" 
-		"Heeresgruppe C" "10. Armee" "11. Armee" "12. Armee" "Heeresgruppe D" "14. Armee" "15. Armee" "16. Armee" "Heeresgruppe E" "17. Armee" "18. Armee" 
-		"19. Armee" "Heeresgruppe F" "21. Armee" "Heeresgruppe G" "24. Armee" "25. Armee" "Heeresgruppe H" 
+		"第一集团军" "第二集团军" "第三集团军" "A集团军群" "第四集团军" "第五集团军" "第六集团军" "B集团军群" "第七集团军" "第八集团军" "第九集团军" 
+		"C集团军群" "第十集团军" "第十一集团军" "第十二集团军" "D集团军群" "第十四集团军" "第十五集团军" "第十六集团军" "E集团军群" "第十七集团军" "第十八集团军" 
+		"第十九集团军" "F集团军群" "第二十一集团军" "G集团军群" "第二十四集团军" "第二十五集团军" "H集团军群" 
 	}
 	militia_brigade = {
-		"1. Luftwaffen-Feld-Division" "2. Luftwaffen-Feld-Division" "3. Luftwaffen-Feld-Division" "4. Luftwaffen-Feld-Division" "5. Luftwaffen-Feld-Division" "6. Luftwaffen-Feld-Division" "7. Luftwaffen-Feld-Division" "8. Luftwaffen-Feld-Division" "9. Luftwaffen-Feld-Division" "10. Luftwaffen-Feld-Division" "6. Volksgrenadier Division" 
-		"9. Volksgrenadier Division" "12. Volksgrenadier Division" "16. Volksgrenadier Division" "18. Volksgrenadier Division" "19. Volksgrenadier Division" "22. Volksgrenadier Division" "26. Volksgrenadier Division" "31. Volksgrenadier Division" "36. Volksgrenadier Division" "45. Volksgrenadier Division" "47. Volksgrenadier Division" 
-		"62. Volksgrenadier Division" "79. Volksgrenadier Division" "167. Volksgrenadier Division" "183. Volksgrenadier Division" "211. Volksgrenadier Division" "212. Volksgrenadier Division" "246. Volksgrenadier Division" "256. Volksgrenadier Division" "257. Volksgrenadier Division" "271. Volksgrenadier Division" "272. Volksgrenadier Division" 
-		"276. Volksgrenadier Division" 
+		"第1空军野战师" "第2空军野战师" "第3空军野战师" "第4空军野战师" "第5空军野战师" "第6空军野战师" "第7空军野战师" "第8空军野战师" "第9空军野战师" "第10空军野战师" "第6国民掷弹兵师" 
+		"第9国民掷弹兵师" "第12国民掷弹兵师" "第16国民掷弹兵师" "第18国民掷弹兵师" "第19国民掷弹兵师" "第22国民掷弹兵师" "第26国民掷弹兵师" "第31国民掷弹兵师" "第36国民掷弹兵师" "第45国民掷弹兵师" "第47国民掷弹兵师" 
+		"第62国民掷弹兵师" "第79国民掷弹兵师" "第167国民掷弹兵师" "第183国民掷弹兵师" "第211国民掷弹兵师" "第212国民掷弹兵师" "第246国民掷弹兵师" "第256国民掷弹兵师" "第257国民掷弹兵师" "第271国民掷弹兵师" "第272国民掷弹兵师" 
+		"第276国民掷弹兵师" 
 	}
 	multi_role = {
-		"JG 71 'Richtofen'" "JG 74 'M鰈ders'" "JG 51 'Immelmann'" "JG 31 'B鰈cke'" "JG 38 'Friesland'" "JG 72 'Westfalen'" "Jagdgeschwader 32" "JG 34 'Allg鋟'" "Jagdgeschwader 41" "Jagdgeschwader 43" "Jagdgeschwader 44" 
-		"Jagdgeschwader 49" "Jagdgeschwader 75" "JG 73 'Steinhoff'" "JG 12 'Lilienthal'" "Jagdgeschwader 42" "JG 89 'Blitz'" "Jagdgeschwader 54" "Jagdgeschwader 55" "Jagdgeschwader 63" "Jagdgeschwader 69" "Jagdgeschwader 90" 
+		"第71'希德霍芬'战斗航空团" "第74'莫德斯'战斗航空团" "第51'殷麦曼'战斗航空团" "第31'伯尔克'战斗航空团" "第38'弗里斯兰'战斗航空团" "第72'威斯特法伦'战斗航空团" "第32战斗航空团" "第34'阿尔戈'战斗航空团" "第41战斗航空团" "第43战斗航空团" "第44战斗航空团" 
+		"第49战斗航空团" "第75战斗航空团" "第73'施泰因霍夫'战斗航空团" "第12'利林塔尔'战斗航空团" "第42战斗航空团" "第89'闪电'战斗航空团" "第54战斗航空团" "第55战斗航空团" "第63战斗航空团" "第69战斗航空团" "第90战斗航空团" 
 			}
 	interceptor = {
-		"JG 71 'Richtofen'" "JG 74 'M鰈ders'" "JG 51 'Immelmann'" "JG 31 'B鰈cke'" "JG 38 'Friesland'" "JG 72 'Westfalen'" "Jagdgeschwader 32" "JG 34 'Allg鋟'" "Jagdgeschwader 41" "Jagdgeschwader 43" "Jagdgeschwader 44" 
-		"Jagdgeschwader 49" "Jagdgeschwader 75" "JG 73 'Steinhoff'" "JG 12 'Lilienthal'" "Jagdgeschwader 42" "JG 89 'Blitz'" "Jagdgeschwader 54" "Jagdgeschwader 55" "Jagdgeschwader 63" "Jagdgeschwader 69" "Jagdgeschwader 90 " 
-			}
-	jet_int = {
-		"JG 71 'Richtofen'" "JG 74 'M鰈ders'" "JG 51 'Immelmann'" "JG 31 'B鰈cke'" "JG 38 'Friesland'" "JG 72 'Westfalen'" "Jagdgeschwader 32" "JG 34 'Allg鋟'" "Jagdgeschwader 41" "Jagdgeschwader 43" "Jagdgeschwader 44" 
-		"Jagdgeschwader 49" "Jagdgeschwader 75" "JG 73 'Steinhoff'" "JG 12 'Lilienthal'" "Jagdgeschwader 42" "JG 89 'Blitz'" "Jagdgeschwader 54" "Jagdgeschwader 55" "Jagdgeschwader 63" "Jagdgeschwader 69" "Jagdgeschwader 90 " 
-			}
-	jet_mr = {
-		"JG 71 'Richtofen'" "JG 74 'M鰈ders'" "JG 51 'Immelmann'" "JG 31 'B鰈cke'" "JG 38 'Friesland'" "JG 72 'Westfalen'" "Jagdgeschwader 32" "JG 34 'Allg鋟'" "Jagdgeschwader 41" "Jagdgeschwader 43" "Jagdgeschwader 44" 
-		"Jagdgeschwader 49" "Jagdgeschwader 75" "JG 73 'Steinhoff'" "JG 12 'Lilienthal'" "Jagdgeschwader 42" "JG 89 'Blitz'" "Jagdgeschwader 54" "Jagdgeschwader 55" "Jagdgeschwader 63" "Jagdgeschwader 69" "Jagdgeschwader 90 " 
+		"第71'希德霍芬'战斗航空团" "第74'莫德斯'战斗航空团" "第51'殷麦曼'战斗航空团" "第31'伯尔克'战斗航空团" "第38'弗里斯兰'战斗航空团" "第72'威斯特法伦'战斗航空团" "第32战斗航空团" "第34'阿尔戈'战斗航空团" "第41战斗航空团" "第43战斗航空团" "第44战斗航空团" 
+		"第49战斗航空团" "第75战斗航空团" "第73'施泰因霍夫'战斗航空团" "第12'利林塔尔'战斗航空团" "第42战斗航空团" "第89'闪电'战斗航空团" "第54战斗航空团" "第55战斗航空团" "第63战斗航空团" "第69战斗航空团" "第90战斗航空团" 
 			}
 	strategic_bomber = {
-		"Kampfgeschwader 1" "Kampfgeschwader 4" "Kampfgeschwader 26" "Kampfgeschwader 27" "Kampfgeschwader 28" "Kampfgeschwader 51" "Kampfgeschwader 53" "Kampfgeschwader 54" "KG 55 'Greif'" "Kampfgeschwader 100" "Kampfgeschwader 6" 
-		"Erg鋘zungskampfgruppe 2" "Erg鋘zungskampfgruppe 3" "Erg鋘zungskampfgruppe 4" "Erg鋘zungskampfgruppe 5" "Erg鋘zungskampfgruppe 6" "Kampfgeschwader 103" "Kampfgeschwader 104" "Kampfgeschwader 105" "Kampfgeschwader 106" "Kampfgeschwader 107" "Kampfgeschwader 108" 
-		"Kampfgeschwader 109" "Kampfgeschwader 110" "Kampfgeschwader 111" "Kampfgeschwader 112" "Kampfgeschwader 113" "Kampfgeschwader 114" "Kampfgeschwader 115" "Kampfgeschwader 116" "Kampfgeschwader 117" "Kampfgeschwader 118" "Kampfgeschwader 119" 
-		"Kampfgeschwader 120" "Kampfgeschwader 121" "Kampfgeschwader 122" "Kampfgeschwader 123" "Kampfgeschwader 124" "Kampfgeschwader 125" "Kampfgeschwader 126" "Kampfgeschwader 127" "Kampfgeschwader 128" 
+		"第1轰炸航空团" "第4轰炸航空团" "第26轰炸航空团" "第27轰炸航空团" "第28轰炸航空团" "第51轰炸航空团" "第53轰炸航空团" "第54轰炸航空团" "第55'狮头鹰'轰炸航空团" "第100轰炸航空团" "第6轰炸航空团" 
+		"第2训练大队" "第3训练大队" "第4训练大队" "第4训练大队" "第6训练大队" "第103轰炸航空团" "第104轰炸航空团" "第105轰炸航空团" "第106轰炸航空团" "第107轰炸航空团" "第108轰炸航空团" 
+		"第109轰炸航空团" "第110轰炸航空团" "第111轰炸航空团" "第112轰炸航空团" "第113轰炸航空团" "第114轰炸航空团" "第115轰炸航空团" "第116轰炸航空团" "第117轰炸航空团" "第118轰炸航空团" "第119轰炸航空团" 
+		"第120轰炸航空团" "第121轰炸航空团" "第122轰炸航空团" "第123轰炸航空团" "第124轰炸航空团" "第125轰炸航空团" "第126轰炸航空团" "第127轰炸航空团" "第128轰炸航空团" 
 	}
-	jet_bomber = {
-		"Kampfgeschwader 2" "Kampfgeschwader 3" "Kampfgeschwader 25" "Kampfgeschwader 30" "Kampfgeschwader 1" "Kampfgeschwader 4" "Kampfgeschwader 26" "Kampfgeschwader 27" "Kampfgeschwader 28" "Kampfgeschwader 51" "Kampfgeschwader 53" 
-		"Kampfgeschwader 54" "KG 55 'Greif'" "Kampfgeschwader 50" "Kampfgeschwader 40" "Kampfgeschwader 76" "Kampfgeschwader 77" "Kampfgeschwader 60" "Kampfgeschwader 101" "Kampfgeschwader 102" "Kampfgeschwader 66" "Kampfgeschwader 200" 
-		"Kampfgeschwader 201" "Kampfgeschwader 202" "Kampfgeschwader 203" "Kampfgeschwader 204" "Kampfgeschwader 205" "Kampfgeschwader 206" "Kampfgeschwader 207" "Kampfgeschwader 208" "Kampfgeschwader 209" "Kampfgeschwader 210" "Kampfgeschwader 211" 
+	tactical_bomber = {
+		"第2轰炸航空团" "第3轰炸航空团" "第25轰炸航空团" "第30轰炸航空团" "第1轰炸航空团" "第4轰炸航空团" "第26轰炸航空团" "第27轰炸航空团" "第28轰炸航空团" "第51轰炸航空团" "第53轰炸航空团" 
+		"第54轰炸航空团" "第55'狮头鹰'轰炸航空团" "第50轰炸航空团" "第40轰炸航空团" "第76轰炸航空团" "第77轰炸航空团" "第60轰炸航空团" "第101轰炸航空团" "第102轰炸航空团" "第66轰炸航空团" "第200轰炸航空团" 
+		"第201轰炸航空团" "第202轰炸航空团" "第203轰炸航空团" "第204轰炸航空团" "第205轰炸航空团" "第206轰炸航空团" "第207轰炸航空团" "第208轰炸航空团" "第209轰炸航空团" "第210轰炸航空团" "第211轰炸航空团" 
 			}
 	naval_bomber = {
-		"K黶tenfliegergruppe 106" "K黶tenfliegergruppe 206" "K黶tenfliegergruppe 306" "K黶tenfliegergruppe 406" "K黶tenfliegergruppe 506" "K黶tenfliegergruppe 606" "K黶tenfliegergruppe 706" "K黶tenfliegergruppe 806" "K黶tenfliegergruppe 906" "K黶tenfliegergruppe 206" "K黶tenfliegergruppe 306" 
-		"K黶tenfliegergruppe 806" "K黶tenfliegergruppe 1006" "K黶tenfliegergruppe 1106" "K黶tenfliegergruppe 1206" "K黶tenfliegergruppe 1306" "K黶tenfliegergruppe 1406" 
+		"第106海军轰炸大队" "第206海军轰炸大队" "第306海军轰炸大队" "第406海军轰炸大队" "第506海军轰炸大队" "第606海军轰炸大队" "第706海军轰炸大队" "第806海军轰炸大队" "第906海军轰炸大队" "第206海军轰炸大队" "第306海军轰炸大队" 
+		"第806海军轰炸大队" "第1006海军轰炸大队" "第1106海军轰炸大队" "第1206海军轰炸大队" "第1306海军轰炸大队" "第1406海军轰炸大队" 
 	}
 	cas = {
-		"Sturzkampfgeschwader 51" "Stukageschwader 2 'Immelmann'" "Sturzkampfgeschwader 76" "Sturzkampfgeschwader 77" "Sturzkampfgeschwader 1" "Sturzkampfgeschwader 3" "Schnellkampfgeschwader 210" "Schlachtgeschwader 1" "Sturzkampfgeschwader 5" "Schnellkampfgeschwader 10" "Sturzkampfgeschwader 101" 
-		"Schlachtgeschwader 2" "Schlachtgeschwader 101" "Sturzkampfgeschwader 102" "Sturzkampfgeschwader 151" "Schlachtgeschwader 152" "Schlachtgeschwader 104" "Sturzkampfgeschwader 160" "Sturzkampfgeschwader 162" "Sturzkampfgeschwader 163" "Sturzkampfgeschwader 165" 
+		"第51俯冲轰炸航空团" "第2'殷麦曼'俯冲轰炸航空团" "第76俯冲轰炸航空团" "第77俯冲轰炸航空团" "第1俯冲轰炸航空团" "第3俯冲轰炸航空团" "第210快速轰炸航空团" "第1对地攻击航空团" "第5俯冲轰炸航空团" "第10快速轰炸航空团" "第101俯冲轰炸航空团" 
+		"第2对地攻击航空团" "第101对地攻击航空团" "第102俯冲轰炸航空团" "第151俯冲轰炸航空团" "第152对地攻击航空团" "第104对地攻击航空团" "第160俯冲轰炸航空团" "第162俯冲轰炸航空团" "第163俯冲轰炸航空团" "第165俯冲轰炸航空团" 
 	}
 	transport_plane = {
-		"Kampfgruppe zbV 9" "Kampfgeschwader zbV 1" "Kampfgeschwader zbV 2" "Kampfgeschwader zbV 4" "Kampfgeschwader zbV 5" "Kampfgeschwader zbV 9" "Kampfgeschwader zbV 172" "Transportgeschwader 1" "Transportgeschwader 2" "Transportgeschwader 3" "Transportgeschwader 4" 
-		"Transportgeschwader 5" "Transportgeschwader 10" "Transportgeschwader 20" "Transportgeschwader 30" "Transportgeschwader 110" "Kampfgruppe zbV 106" "Kampfgruppe zbV 108" "Kampfgruppe zbV 50" "Kampfgruppe zbV 102" "Kampfgruppe zbV 104" "Kampfgruppe zbV 105" 
-		"Kampfgruppe zbV 400" "Kampfgruppe zbV 500" "Kampfgruppe zbV 600" "Kampfgruppe zbV 700" "Kampfgruppe zbV 800" "Kampfgruppe zbV 900" "Kampfgruppe zbV 100" "Kampfgruppe zbV 200" "Kampfgruppe zbV 300" 
+		"第9特殊轰炸大队" "第1特殊轰炸大队" "第2特殊轰炸大队" "第4特殊轰炸大队" "第5特殊轰炸大队" "第9特殊轰炸大队" "第172特殊轰炸大队" "第1空运大队" "第2空运大队" "第3空运大队" "第4空运大队" 
+		"第5空运大队" "第10空运大队" "第20空运大队" "第30空运大队" "第110空运大队" "第106特殊轰炸大队" "第108特殊轰炸大队" "第50特殊轰炸大队" "第102特殊轰炸大队" "第104特殊轰炸大队" "第105特殊轰炸大队" 
+		"第400特殊轰炸大队" "第500特殊轰炸大队" "第600特殊轰炸大队" "第700特殊轰炸大队" "第800特殊轰炸大队" "第900特殊轰炸大队" "第100特殊轰炸大队" "第200特殊轰炸大队" "第300特殊轰炸大队" 
 	}
 	battleship = {
-		"KMS Moltke" "KMS Schleswig-Holstein" "KMS Mark Brandenburg" "KMS S黡hannover-Braunschweig" "KMS Th黵ingen" "KMS Mecklenburg" "KMS M黱chen-Oberbayern" "KMS Magdeburg-Anhalt" "KMS Weser-Ems" "KMS Halle-Merseburg" "KMS Hamburg" 
-		"KMS Pommern" "KMS Bayreuth" "KMS Essen" "KMS D黶seldorf" "KMS Westfalen-Nord" "KMS K鰈n-Aachen" "KMS Kurhessen" "KMS Oberdonau" "KMS Hessen-Nassau" "KMS Moselland" "KMS Osthannover" 
-		"KMS Westmark" "KMS Berlin" "KMS Westfalen-S黡" "KMS Mainfranken" "KMS Franken" "KMS W黵temberg Hohenzollern" "KMS Baden" "KMS Schwaben" 
+		"KMS毛奇号" "KMS石勒苏益格-荷尔斯泰因号" "KMS勃兰登堡边界区号" "KMS南汉诺威-不伦瑞克号" "KMS图林根号" "KMS梅克伦堡号" "KMS慕尼黑-上巴伐利亚号" "KMS马格德堡-安哈尔特号" "KMS威悉-埃姆斯号" "KMS哈雷-梅泽堡号" "KMS汉堡号" 
+		"KMS波美拉尼亞号" "KMS拜罗伊特号" "KMS埃森号" "KMS杜塞尔多夫号" "KMS北威斯特法伦号" "KMS科隆-亚琛号" "KMS黑森选帝侯号" "KMS上多瑙河号" "KMS黑森-拿骚号" "KMS摩泽尔号" "KMS东汉诺威号" 
+		"KMS威斯特马克号" "KMS柏林号" "KMS南威斯特法伦号" "KMS美因弗兰肯号" "KMS弗兰肯号" "KMS符腾堡-霍亨索伦号" "KMS巴登号" "KMS士瓦本号" 
 	}
 	light_cruiser = {
-		"KMS Emden" "KMS K鰊igsberg" "KMS Karlsruhe" "KMS K鰈n" "KMS Leipzig" "KMS N黵nberg" "KMS Stuttgart" "KMS Stettin" "KMS Dresden" "KMS Nautilus" "KMS Albatross" 
-		"KMS Kolberg" "KMS Mainz" "KMS K鰈n" "KMS Augsburg" "KMS Magdeburg" "KMS Breslau" "KMS Strassburg" "KMS Stralsund" "KMS Rostock" "KMS Graudenz" "KMS Regensburg" 
-		"KMS Pillau" "KMS Elbing" "KMS Brummer" "KMS Bremse" "KMS Wiesbaden" "KMS Frankfurt" "KMS Bl點her" "KMS Prinz Eugen" "KMS L黷zow" "KMS Friedrich Carl" "KMS Roon" 
-		"KMS Yorck" "KMS Deutschland" "KMS Graf Spee" "KMS Beowulf" "KMS Frithjof" "KMS Heimdall" "KMS D黶seldorf" "KMS Duisberg" "KMS Bochum" "KMS Wuppertal" "KMS Bielefeld" 
-		"KMS Bonn" "KMS Mannheim" "KMS Gelsenkirchen" "KMS M黱ster" "KMS M鰊chengladbach" "KMS Chemnitz" "KMS Braunschweig" "KMS Aachen" "KMS Krefeld" "KMS Halle" "KMS Kiel" 
-		"KMS Oberhausen" "KMS L黚eck" "KMS Freiburg" "KMS Hagen" "KMS Erfurt" "KMS Kassel" "KMS Hamm" "KMS Saarbr點ken" "KMS Herne" "KMS M黮heim" "KMS Solingen" 
-		"KMS Osnabr點k" "KMS Ludwigshafen" "KMS Leverkusen" "KMS Oldenburg" "KMS Neuss" "KMS Paderborn" "KMS Heidelberg" "KMS Darmstadt" "KMS Potsdam" "KMS W黵zburg" "KMS G鰐tingen" 
-		"KMS Recklinghausen" "KMS Bottrop" "KMS Wolfsburg" "KMS Heilbronn" "KMS Ingolstadt" 
+		"KMS埃姆登号" "KMS柯尼斯堡号" "KMS卡尔斯鲁厄号" "KMS科隆号" "KMS莱比锡号" "KMS纽伦堡号" "KMS斯图加特号" "KMS斯德丁号" "KMS德累斯顿号" "KMS鹦鹉螺号" "KMS信天翁号" 
+		"KMS科尔贝格号" "KMS美因茨号" "KMS科隆号" "KMS奧格斯堡号" "KMS马格德堡号" "KMS布雷斯劳号" "KMS斯特拉斯堡号" "KMS施特拉尔松号" "KMS罗斯托克号" "KMS格鲁琼兹号" "KMS雷根斯堡号" 
+		"KMS皮劳号" "KMS埃尔布隆格号" "KMS苍蝇号" "KMS牛虻号" "KMS威斯巴登号" "KMS法兰克福号" "KMS布吕歇尔号" "KMS欧根亲王号" "KMS吕佐夫号" "KMS弗里德里希·卡尔号" "KMS卢恩号" 
+		"KMS约克号" "KMS德意志号" "KMS格拉夫·斯佩海军上将号" "KMS贝奥武甫号" "KMS弗里肖夫号" "KMS海姆达尔号" "KMS杜塞尔多夫号" "KMS杜伊斯堡号" "KMS波鸿号" "KMS伍珀塔尔号" "KMS比勒费尔德号" 
+		"KMS波恩号" "KMS曼海姆号" "KMS盖尔森基兴号" "KMS明斯特号" "KMS门兴格拉德巴赫号" "KMS开姆尼茨号" "KMS不伦瑞克号" "KMS亚琛号" "KMS克雷费尔德号" "KMS哈雷号" "KMS基尔号" 
+		"KMS奥伯豪森号" "KMS吕贝克号" "KMS弗莱堡号" "KMS哈根号" "KMS埃尔福特号" "KMS卡塞尔号" "KMS哈姆号" "KMS萨尔布吕肯号" "KMS黑尔讷号" "KMS米尔海姆号" "KMS索林根号" 
+		"KMS奥斯纳布吕克号" "KMS路德维希港号" "KMS勒沃库森号" "KMS奥尔登堡号" "KMS诺伊斯号" "KMS帕德博恩号" "KMS海德堡号" "KMS达姆施塔特号" "KMS波茨坦号" "KMS维尔茨堡号" "KMS哥廷根号" 
+		"KMS雷克林豪森号" "KMS博特罗普号" "KMS沃尔夫斯堡号" "KMS海尔布隆号" "KMS因戈尔施塔特号" 
 	}
 	heavy_cruiser = {
-		"KMS Admiral Hipper" "KMS Bl點her" "KMS Prinz Eugen" "KMS L黷zow" "KMS Friedrich Carl" "KMS Roon" "KMS Deutschland" "KMS Beowulf" "KMS Admiral Scheer" "KMS Graf Spee" "KMS Frithjof" 
-		"KMS Hamburg" "KMS Heimdall" "KMS Hildebrand" "KMS Hagen" "KMS M黱chen" "KMS Emden" "KMS K鰊igsberg" "KMS Karlsruhe" "KMS K鰈n" "KMS Leipzig" "KMS N黵nberg" 
-		"KMS Stuttgart" "KMS Stettin" "KMS Dresden" "KMS Nautilus" "KMS Albatross" "KMS Kolberg" "KMS Mainz" "KMS Augsburg" "KMS Magdeburg" "KMS Breslau" "KMS Strassburg" 
-		"KMS D黶seldorf" "KMS Dortmund" "KMS Stralsund" "KMS Karlsruhe" "KMS Rostock" "KMS Graudenz" "KMS Regensburg" "KMS Pillau" "KMS Elbing" "KMS Brummer" "KMS Bremse" 
-		"KMS Wiesbaden" "KMS Frankfurt" "KMS Emden" "KMS K鰊igsberg" "KMS Karlsruhe" "KMS K鰈n" "KMS Leipzig" "KMS N黵nberg" "KMS Stuttgart" "KMS Stettin" "KMS Dresden" 
-		"KMS Nautilus" "KMS Albatross" "KMS Kolberg" "KMS Mainz" "KMS K鰈n" "KMS Augsburg" "KMS Magdeburg" "KMS Breslau" "KMS Strassburg" "KMS Stralsund" "KMS Karlsruhe" 
-		"KMS Rostock" "KMS Kaiserslautern" "KMS Graudenz" "KMS Regensburg" "KMS Pillau" "KMS Elbing" "KMS Brummer" "KMS Bremse" "KMS Wiesbaden" "KMS Frankfurt" "KMS Bremen" 
-		"KMS Hannover" "KMS N黵nberg" "KMS Leipzig" "KMS Dresden" "KMS Wiesbaden" "KMS Augsburg" "KMS Magdeburg" "KMS Duisberg" "KMS Bochum" "KMS Wuppertal" "KMS Bielefeld" 
-		"KMS Bonn" "KMS Mannheim" "KMS Gelsenkirchen" "KMS M黱ster" "KMS M鰊chengladbach" "KMS Chemnitz" "KMS Braunschweig" "KMS Aachen" "KMS Krefeld" "KMS Halle" "KMS Kiel" 
-		"KMS Oberhausen" "KMS L黚eck" "KMS Freiburg" "KMS Hagen" "KMS Erfurt" "KMS Kassel" "KMS Hamm" "KMS Saarbr點ken" "KMS Herne" "KMS M黮heim" "KMS Solingen" 
-		"KMS Osnabr點k" "KMS Ludwigshafen" "KMS Leverkusen" "KMS Oldenburg" "KMS Neuss" "KMS Paderborn" "KMS Heidelberg" "KMS Darmstadt" "KMS Potsdam" "KMS W黵zburg" "KMS G鰐tingen" 
-		"KMS Recklinghausen" "KMS Bottrop" "KMS Wolfsburg" "KMS Heilbronn" "KMS Ingolstadt" 
+		"KMS希佩尔海军上将号" "KMS布吕歇尔号" "KMS欧根亲王号" "KMS吕佐夫号" "KMS弗里德里希·卡尔号" "KMS卢恩号" "KMS德意志号" "KMS贝奥武甫号" "KMS舍尔海军上将" "KMS格拉夫·斯佩海军上将号" "KMS弗里肖夫号" 
+		"KMS汉堡号" "KMS海姆达尔号" "KMS希尔德布兰德号" "KMS哈根号" "KMS慕尼黑号" "KMS埃姆登号" "KMS柯尼斯堡号" "KMS卡尔斯鲁厄号" "KMS科隆号" "KMS莱比锡号" "KMS纽伦堡号" 
+		"KMS斯图加特号" "KMS斯德丁号" "KMS德累斯顿号" "KMS鹦鹉螺号" "KMS信天翁号" "KMS科尔贝格号" "KMS美因茨号" "KMS奧格斯堡号" "KMS马格德堡号" "KMS布雷斯劳号" "KMS斯特拉斯堡号" 
+		"KMS杜塞尔多夫号" "KMS多特蒙德号" "KMS施特拉尔松号" "KMS卡尔斯鲁厄号" "KMS罗斯托克号" "KMS格鲁琼兹号" "KMS雷根斯堡号" "KMS皮劳号" "KMS埃尔布隆格号" "KMS苍蝇号" "KMS牛虻号" 
+		"KMS威斯巴登号" "KMS法兰克福号" "KMS埃姆登号" "KMS柯尼斯堡号" "KMS卡尔斯鲁厄号" "KMS科隆号" "KMS莱比锡号" "KMS纽伦堡号" "KMS斯图加特号" "KMS斯德丁号" "KMS德累斯顿号" 
+		"KMS鹦鹉螺号" "KMS信天翁号" "KMS科尔贝格号" "KMS美因茨号" "KMS科隆号" "KMS奧格斯堡号" "KMS马格德堡号" "KMS布雷斯劳号" "KMS斯特拉斯堡号" "KMS施特拉尔松号" "KMS卡尔斯鲁厄号" 
+		"KMS罗斯托克号" "KMS凯撒斯劳滕号" "KMS格鲁琼兹号" "KMS雷根斯堡号" "KMS皮劳号" "KMS埃尔布隆格号" "KMS苍蝇号" "KMS牛虻号" "KMS威斯巴登号" "KMS法兰克福号" "KMS不来梅号" 
+		"KMS汉诺威号" "KMS纽伦堡号" "KMS莱比锡号" "KMS德累斯顿号" "KMS威斯巴登号" "KMS奧格斯堡号" "KMS马格德堡号" "KMS杜伊斯堡号" "KMS波鸿号" "KMS伍珀塔尔号" "KMS比勒费尔德号" 
+		"KMS波恩号" "KMS曼海姆号" "KMS盖尔森基兴号" "KMS明斯特号" "KMS门兴格拉德巴赫号" "KMS开姆尼茨号" "KMS不伦瑞克号" "KMS亚琛号" "KMS克雷费尔德号" "KMS哈雷号" "KMS基尔号" 
+		"KMS奥伯豪森号" "KMS吕贝克号" "KMS弗莱堡号" "KMS哈根号" "KMS埃尔福特号" "KMS卡塞尔号" "KMS哈姆号" "KMS萨尔布吕肯号" "KMS黑尔讷号" "KMS米尔海姆号" "KMS索林根号" 
+		"KMS奥斯纳布吕克号" "KMS路德维希港号" "KMS勒沃库森号" "KMS奥尔登堡号" "KMS诺伊斯号" "KMS帕德博恩号" "KMS海德堡号" "KMS达姆施塔特号" "KMS波茨坦号" "KMS维尔茨堡号" "KMS哥廷根号" 
+		"KMS雷克林豪森号" "KMS博特罗普号" "KMS沃尔夫斯堡号" "KMS海尔布隆号" "KMS因戈尔施塔特号" 
 	}
 	battlecruiser = {
-		"KMS Moltke" "KMS Goeben" "KMS Schleswig-Holstein" "KMS Hamburg" "KMS Pommern" "KMS S黡hannover-Braunschweig" "KMS Mecklenburg" "KMS M黱chen-Oberbayern" "KMS Magdeburg-Anhalt" "KMS Halle-Merseburg" "KMS Sachsen" 
-		"KMS Bayreuth" "KMS Ostpreu遝n" "KMS Niederschlesien" "KMS Essen" "KMS D黶seldorf" "KMS Westfalen-Nord" "KMS K鰈n-Aachen" "KMS Kurhessen" "KMS Oberdonau" "KMS Hessen-Nassau" "KMS Moselland" 
-		"KMS Osthannover" "KMS Westmark" "KMS Berlin" "KMS Westfalen-S黡" "KMS Mainfranken" "KMS Franken" "KMS W黵temberg Hohenzollern" "KMS Baden" "KMS Schwaben" 
+		"KMS毛奇号" "KMS戈本号" "KMS石勒苏益格-荷尔斯泰因号" "KMS汉堡号" "KMS波美拉尼亞号" "KMS南汉诺威-不伦瑞克号" "KMS梅克伦堡号" "KMS慕尼黑-上巴伐利亚号" "KMS马格德堡-安哈尔特号" "KMS哈雷-梅泽堡号" "KMS萨克森号" 
+		"KMS拜罗伊特号" "KMS東普魯士号" "KMS下西里西亚号" "KMS埃森号" "KMS杜塞尔多夫号" "KMS北威斯特法伦号" "KMS科隆-亚琛号" "KMS黑森选帝侯号" "KMS上多瑙河号" "KMS黑森-拿骚号" "KMS摩泽尔号" 
+		"KMS东汉诺威号" "KMS威斯特马克号" "KMS柏林号" "KMS南威斯特法伦号" "KMS美因弗兰肯号" "KMS弗兰肯号" "KMS符腾堡-霍亨索伦号" "KMS巴登号" "KMS士瓦本号" 
 	}
 	destroyer = {
-		"1. Zerst鰎ergeschwader" "2. Zerst鰎ergeschwader" "3. Zerst鰎ergeschwader" "4. Zerst鰎ergeschwader" "5. Zerst鰎ergeschwader" "6. Zerst鰎ergeschwader" "7. Zerst鰎ergeschwader" "8. Zerst鰎ergeschwader" "9. Zerst鰎ergeschwader" "10. Zerst鰎ergeschwader" "11. Zerst鰎ergeschwader" 
-		"12. Zerst鰎ergeschwader" "13. Zerst鰎ergeschwader" "14. Zerst鰎ergeschwader" "15. Zerst鰎ergeschwader" 
+		"第1驱逐舰编队" "第2驱逐舰编队" "第3驱逐舰编队" "第4驱逐舰编队" "第5驱逐舰编队" "第6驱逐舰编队" "第7驱逐舰编队" "第8驱逐舰编队" "第9驱逐舰编队" "第10驱逐舰编队" "第11驱逐舰编队" 
+		"第12驱逐舰编队" "第13驱逐舰编队" "第14驱逐舰编队" "第15驱逐舰编队" 
 	}
 	carrier = {
-		"KMS Graf Zeppelin" "KMS Peter Strasser" "KMS Seydlitz" "KMS Clausewitz" "KMS Barbarossa" "KMS Seel鰓e" "KMS Rheingold" "KMS Siegfried" "KMS Parsifal" "KMS Lohengrin" "KMS Germania" 
-		"KMS Richthofen" "KMS Otto Lilienthal" "KMS Hugo Junkers" "KMS Claude Dornier" "KMS Ernst Heinkel" "KMS Wilhelm Messerschmitt" "KMS Hans Klemm" "KMS Richard Wagner" "KMS Johann Wolfgang von Goethe" "KMS Friedrich Schiller" 
+		"KMS齐柏林伯爵号" "KMS彼得·施特拉塞尔号" "KMS塞德利茨号" "KMS克劳塞维茨号" "KMS巴巴罗萨号" "KMS海狮号" "KMS莱茵黄金号" "KMS齐格菲号" "KMS帕西法尔号" "KMS罗恩格林号" "KMS日耳曼号" 
+		"KMS里希特霍芬号" "KMS奥托·李林塔尔号" "KMS雨果·容克斯号" "KMS克劳德·道尼尔号" "KMS恩斯特·海因克尔号" "KMS威廉·梅塞施米特号" "KMS汉斯·克莱姆号" "KMS理查德·瓦格纳号" "KMS哥德号" "KMS弗里德里希·席勒号" 
 	}
 	escort_carrier = {
-		"KMS Sachsen" "KMS Hamburg" "KMS Hessen" "KMS Th黵ingen" 
+		"KMS萨克森号" "KMS汉堡号" "KMS黑森号" "KMS图林根号" 
 	}
 	submarine = {
-		"1. Unterseebootsflottille" "2. Unterseebootsflottille" "3. Unterseebootsflottille" "5. Unterseebootsflottille" "6. Unterseebootsflottille" "7. Unterseebootsflottille" "9. Unterseebootsflottille" "10. Unterseebootsflottille" "11. Unterseebootsflottille" "12. Unterseebootsflottille" "13. Unterseebootsflottille" 
-		"14. Unterseebootsflottille" "23. Unterseebootsflottille" "29. Unterseebootsflottille" "30. Unterseebootsflottille" "33. Unterseebootsflottille" "35. Unterseebootsflottille" "36. Unterseebootsflottille" "37. Unterseebootsflottille" "38. Unterseebootsflottille" 
+		"第1潜艇编队" "第2潜艇编队" "第3潜艇编队" "第5潜艇编队" "第6潜艇编队" "第7潜艇编队" "第9潜艇编队" "第10潜艇编队" "第11潜艇编队" "第12潜艇编队" "第13潜艇编队" 
+		"第14潜艇编队" "第23潜艇编队" "第29潜艇编队" "第30潜艇编队" "第33潜艇编队" "第35潜艇编队" "第36潜艇编队" "第37潜艇编队" "第38潜艇编队" 
 	}
 	transport_ship = {
-		"1. Truppentransporterflottille" "2. Truppentransporterflottille" "3. Truppentransporterflottille" "4. Truppentransporterflottille" "5. Truppentransporterflottille" "6. Truppentransporterflottille" "7. Truppentransporterflottille" "8. Truppentransporterflottille" "9. Truppentransporterflottille" "10. Truppentransporterflottille" "11. Truppentransporterflottille" 
-		"12. Truppentransporterflottille" "13. Truppentransporterflottille" "14. Truppentransporterflottille" "15. Truppentransporterflottille" "16. Truppentransporterflottille" "17. Truppentransporterflottille" "18. Truppentransporterflottille" "19. Truppentransporterflottille" "20. Truppentransporterflottille" "21. Truppentransporterflottille" "22. Truppentransporterflottille" 
-		"23. Truppentransporterflottille" "24. Truppentransporterflottille" "25. Truppentransporterflottille" "26. Truppentransporterflottille" "27. Truppentransporterflottille" "28. Truppentransporterflottille" "29. Truppentransporterflottille" "30. Truppentransporterflottille" 
+		"第1运输船编队" "第2运输船编队" "第3运输船编队" "第4运输船编队" "第5运输船编队" "第6运输船编队" "第7运输船编队" "第8运输船编队" "第9运输船编队" "第10运输船编队" "第11运输船编队" 
+		"第12运输船编队" "第13运输船编队" "第14运输船编队" "第15运输船编队" "第16运输船编队" "第17运输船编队" "第18运输船编队" "第19运输船编队" "第20运输船编队" "第21运输船编队" "第22运输船编队" 
+		"第23运输船编队" "第24运输船编队" "第25运输船编队" "第26运输船编队" "第27运输船编队" "第28运输船编队" "第29运输船编队" "第30运输船编队" 
 	}
 
 }
@@ -218,15 +185,16 @@ unit_names = {
 
 ministers = {
 	506001 = {
-		name = "Theodor Heuss"
+		name = "特奥多尔·霍伊斯"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M38
 		head_of_state = insignificant_layman
+		head_of_state = insignificant_layman
 		start_date = 1936.1.1
 	}
 	506002 = {
-		name = "Konrad Adenauer"
+		name = "康拉德·阿登纳"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M50
@@ -235,7 +203,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506004 = {
-		name = "Franz Etzel"
+		name = "弗朗茨·埃策尔"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M506004
@@ -243,15 +211,16 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506005 = {
-		name = "Robert Lehr"
+		name = "罗伯特·莱尔"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M506005
 		minister_of_security = man_of_the_people
+		minister_of_security = man_of_the_people
 		start_date = 1936.1.1
 	}
 	506006 = {
-		name = "Theodor Blank"
+		name = "特奥多尔·布兰克"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M506006
@@ -260,7 +229,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506007 = {
-		name = "Oskar Hansen"
+		name = "奥斯卡·汉森"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = L118
@@ -269,7 +238,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506008 = {
-		name = "Hans Speidel"
+		name = "汉斯·施派德尔"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = L506191
@@ -278,7 +247,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506009 = {
-		name = "Herrmann Mootz"
+		name = "赫尔曼·穆茨"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = L506297
@@ -286,7 +255,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506010 = {
-		name = "Alfred B黮owius"
+		name = "阿尔弗雷德·比洛韦乌斯"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = L431
@@ -294,7 +263,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506011 = {
-		name = "Kurt Schumacher"
+		name = "库尔特·舒马赫"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M506011
@@ -302,7 +271,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506012 = {
-		name = "Franz Bl點her"
+		name = "弗朗茨·布吕歇尔"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M506012
@@ -310,7 +279,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506013 = {
-		name = "Heinrich von Brentano"
+		name = "海因里希·冯·布伦塔诺"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M506013
@@ -318,7 +287,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506014 = {
-		name = "Erich Ollenhauer"
+		name = "埃里希·奥伦豪尔"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M506014
@@ -327,7 +296,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506015 = {
-		name = "Thomas Dehler"
+		name = "托马斯·德勒"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M506015
@@ -335,7 +304,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506016 = {
-		name = "Fritz Sch鋐fer"
+		name = "弗里茨·舍费尔"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M103
@@ -343,7 +312,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506017 = {
-		name = "Ludwig Erhard"
+		name = "路德维格·埃哈德"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M104
@@ -352,7 +321,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506018 = {
-		name = "Heinrich Wilhelm Kopf"
+		name = "海因里希·威廉·科普夫"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M506018
@@ -360,7 +329,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506019 = {
-		name = "Heinz Starke"
+		name = "海因茨·斯塔克"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M506019
@@ -368,7 +337,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506020 = {
-		name = "Karl Arnold"
+		name = "卡尔·阿诺德"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M129
@@ -376,7 +345,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506021 = {
-		name = "Gustav Heinemann"
+		name = "古斯塔夫·海涅曼"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M130
@@ -384,7 +353,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506022 = {
-		name = "Gerhard Schr鰀er"
+		name = "格哈德·施罗德"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M506022
@@ -393,7 +362,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506023 = {
-		name = "Georg August Zinn"
+		name = "格奥尔格·奥古斯特·齐恩"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M506023
@@ -401,7 +370,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506024 = {
-		name = "Reinhold Maier"
+		name = "莱因霍尔德·迈尔"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M506024
@@ -409,7 +378,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506025 = {
-		name = "Hans Ehard"
+		name = "汉斯·埃哈德"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M149
@@ -417,7 +386,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506026 = {
-		name = "Reinhard Gehlen"
+		name = "莱因哈德·格伦"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M506026
@@ -425,7 +394,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506027 = {
-		name = "Franz Josef Strauss"
+		name = "弗朗茨·约瑟夫·施特劳斯"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M506027
@@ -435,7 +404,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506028 = {
-		name = "Eugen Gerstenmaier"
+		name = "欧根·格斯登美尔"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M506028
@@ -443,7 +412,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506029 = {
-		name = "Hanns Seidel"
+		name = "汉斯·塞德尔"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M506029
@@ -451,7 +420,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506031 = {
-		name = "Josef Kammhuber"
+		name = "约瑟夫·卡姆胡伯"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = L448
@@ -460,16 +429,17 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506033 = {
-		name = "Karl Heinrich L黚ke"
+		name = "卡尔·海因里希·吕布克"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M506033
 		chief_of_army = guns_and_butter_doctrine
 		head_of_state = weary_stiff_neck
+		head_of_state = weary_stiff_neck
 		start_date = 1936.1.1
 	}
 	506034 = {
-		name = "Conrad Patzig"
+		name = "康拉德·帕奇希"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = L506300
@@ -477,7 +447,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506035 = {
-		name = "Erich K鰄ler"
+		name = "埃里希·克勒"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M506035
@@ -485,7 +455,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506038 = {
-		name = "Hermann Ehlers"
+		name = "赫尔曼·埃勒斯"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M506038
@@ -493,7 +463,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	506044 = {
-		name = "Willy Brandt"
+		name = "维利·勃兰特"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M506044
@@ -502,7 +472,7 @@ ministers = {
 		start_date = 1957.1.1
 	}
 	506048 = {
-		name = "Kai Uwe von Hassell"
+		name = "凯·乌韦·冯·哈塞尔"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M506048
@@ -510,90 +480,19 @@ ministers = {
 		start_date = 1961.1.1
 	}
 	506049 = {
-		name = "Hermann H鯿herl"
+		name = "赫尔曼·赫歇尔"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M506049
 		minister_of_security = crime_fighter
 		start_date = 1961.1.1
 	}
-	#new
 	506050 = {
-		name = "Ewald Bucher"
+		name = "埃瓦尔德·布赫尔"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M506050
 		minister_of_security = efficient_sociopath
 		start_date = 1957.1.1
 	}
-	506051 = {
-		name = "Erich Bey"
-		ideology = social_conservative
-		loyalty = 1.00
-		picture = M200
-		chief_of_navy = decisive_naval_battle_doctrine
-		start_date = 1946.1.1
-	}
-	506052 = {
-		name = "Helmuth von Moltke"
-		ideology = social_conservative
-		loyalty = 1.00
-		picture = M246
-		minister_of_security = compassionate_gentleman
-		start_date = 1939.1.1
-	}
-	506053 = {
-		name = "Hans Gisevius"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M247
-		minister_of_intelligence = dismal_enigma
-		start_date = 1939.1.1
-	}
-	506054 = {
-		name = "Hans Dohnanyi"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M248
-		minister_of_security = silent_lawyer
-		minister_of_intelligence = political_specialist
-		start_date = 1936.1.1
-	}
-	506055 = {
-		name = "Thomas Mann"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M64
-		foreign_minister = general_staffer
-		start_date = 1936.1.1
-	}
-	# Generic dummy ministers
-	95322 = {
-		name = "Nameless Clerk"
-		ideology = market_liberal
-		loyalty = 1.0
-		picture = MMarketLiberal
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95323 = {
-		name = "Nameless Clerk"
-		ideology = social_democrat
-		loyalty = 1.0
-		picture = MSocialDemocrat
-		head_of_state = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}	
 }

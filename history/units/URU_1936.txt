@@ -1,33 +1,11 @@
-theatre = {
-	name = "Alto Mando de Uruguayo"
+division = {
+	name = "ÎÚÀ­¹çÂ½¾ü"
 	location = 7893
-	regiment = { type = hq_brigade name = "Montevideo HQ" historical_model = 0 }
-	division = {
-		name = "Ejercito de Uruguay"
-		location = 7893
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "1. Regimiento de Infantería" experience = 0 historical_model = 3 }
-		regiment = { type = infantry_brigade name = "2. Regimiento de Infantería" experience = 0 historical_model = 3 }
-		regiment = { type = infantry_brigade name = "3. Regimiento de Infantería" experience = 0 historical_model = 3 }
-	}
-	air = {
-		name = "Fuerza Aérea Uruguaya"
-		base = 7893
-		location = 7893
-		wing = { type = cas name = "1. Grupo Aéreo de Asalto" experience = 0 historical_model = 0 }
-	}	
+	is_reserve = yes
+	regiment = { type = infantry_brigade historical_model = 0 }
+	regiment = { type = infantry_brigade historical_model = 0 }
+	regiment = { type = infantry_brigade historical_model = 0 }
 }
-convoy_construction=
-{
-	country = URU
-	id=
-	{
-		id=15695
-		type=4713
-	}
-	size=1
-	cost=0.000 #you can put any number here and the engine will use it
-	progress=90.000
-	duration=0.000 #you can put any number here and the engine will use it
-	status=no #No means you get a convoy.  Yes means you get an escort
-}
+
+
+

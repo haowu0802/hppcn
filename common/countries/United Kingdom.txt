@@ -1,4 +1,4 @@
-color = { 191  93  79 }
+color = { 201  56  93 }
 graphical_culture = British
 
 major = yes
@@ -8,18 +8,16 @@ duration = 60
 
 default_templates = {
 	ENG_infantry = {
-		infantry_brigade
-		infantry_brigade
-		infantry_brigade
-		horse_towed_support_brigade
+		motorized_brigade
+		motorized_brigade
+		motorized_brigade
 	}
 	ENG_motorized = {
 		motorized_brigade
 		motorized_brigade
-		motorized_brigade
-		truck_towed_support_brigade		
 	}
 	ENG_armoured_1936 = {
+		armor_brigade
 		light_armor_brigade
 		light_armor_brigade
 		motorized_brigade
@@ -28,341 +26,278 @@ default_templates = {
 		armor_brigade
 		armor_brigade
 		motorized_brigade
-		self_propelled_towed_support_brigade		
 	}
-	ENG_cavalry = {
-		cavalry_brigade		
+	ENG_armoured_me = {
+		armor_brigade
 		motorized_brigade
-		truck_towed_support_brigade
+ 		sp_artillery_brigade
 	}
 	ENG_airborne = {
 		paratrooper_brigade
 		paratrooper_brigade
 		paratrooper_brigade
 	}
-	ENG_marine = {
-		marine_brigade
-		marine_brigade
-		marine_brigade		
-	}
-	ENG_alpine = {
-		bergsjaeger_brigade
-		bergsjaeger_brigade
-	}	
-	ENG_garrison = {
-		garrison_brigade
-		garrison_brigade
-		garrison_brigade		
-	}
-	ENG_militia = {
-		militia_brigade
-		militia_brigade
-		militia_brigade		
-	}	
 }
 
 unit_names = {
+	gurkha_brigade = {
+                "第43廓尔喀独立步兵旅" "第1廓尔喀步兵师" "第48廓尔喀独立步兵旅" "第2廓尔喀步兵师" "第26廓尔喀独立步兵旅" "第27廓尔喀独立步兵旅" "第28廓尔喀独立步兵旅" "第17廓尔喀步兵师"
+	}
 	infantry_brigade = {
-		"1st Infantry Division" "2nd Infantry Division" "3rd Infantry Division" "4th Infantry Division" "5th Infantry Division" "6th Infantry Division" "7th Infantry Division" "8th Infantry Division" "1st Indian Infantry" "2nd Indian Infantry" "3rd Indian Infantry" 
-		"4th Indian Infantry" "5th Indian Infantry" "6th Indian Infantry" "7th Indian Infantry" "8th Indian Infantry" "9th Indian Infantry" "10th Indian Infantry" "11th Indian Infantry" "12th Indian Infantry" "9th 'Highland' Division" "12th 'Eastern' Division" 
-		"15th 'Scottish' Division" "18th Infantry Division" "23rd 'Northumbrian' Division" "38th 'Welsh' Division" "42nd 'East Lancashire' Division" "43rd 'Wessex' Division" "44th 'Home Counties' Division" "45th Infantry Division" "46th 'North Midlands' Division" "47th 'London' Division" "13th Indian Infantry" 
-		"14th Indian Infantry" "48th 'South Midlands' Division" "49th 'West Riding' Division" "50th 'Northumbrian' Division" "51st 'Highland' Division" "52nd 'Lowland' Division" "53rd 'Welsh' Division" "54th 'East Anglia' Division" "55th 'West Lancashire' Division" "56th 'London' Division" "59th 'Staffordshire' Division" 
-		"61st Infantry Division" "15th Indian Infantry" "16th Indian Infantry" "17th Indian Infantry" "66th Infantry Division" "70th Infantry Division" "76th Infantry Division" "77th Infantry Division" "78th Infantry Division" "40th Infantry Division" "57th Infantry Division" 
-		"80th Infantry Division" "36th Infantry Division" "Guards Infantry Division" "28th Infantry Division" "18th Indian Infantry" "19th Indian Infantry" "20th Indian Infantry" "33rd Infantry Division" "34th Infantry Division" "37th Infantry Division" "41st Infantry Division" 
-		"58th Infantry Division" "60th Infantry Division" "62nd Infantry Division" "63rd Infantry Division" "67th Infantry Division" "68th Infantry Division" "69th Infantry Division" "71st Infantry Division" "72nd Infantry Division" "73rd Infantry Division" "74th Infantry Division" 
-		"75th Infantry Division" "81th Infantry Division" "82th Infantry Division" "97th Infantry Division" "98th Infantry Division" "21st Indian Infantry" "22nd Indian Infantry" "23rd Indian Infantry" "24th Indian Infantry" "25th Indian Infantry" "99th Infantry Division" 
-		"100th Infantry Division" "101st Infantry Division" "102nd Infantry Division" "103rd Infantry Division" "104th Infantry Division" "105th Infantry Division" "106th Infantry Division" "107th Infantry Division" "108th Infantry Division" "109th Infantry Division" "110th Infantry Division" 
-		"111th Infantry Division" "112th Infantry Division" "113th Infantry Division" "114th Infantry Division" "115th Infantry Division" "116th Infantry Division" "117th Infantry Division" "118th Infantry Division" "119th Infantry Division" "120th Infantry Division" "121st Infantry Division" 
-		"122nd Infantry Division" "123rd Infantry Division" "124th Infantry Division" "125th Infantry Division" "126th Infantry Division" "127th Infantry Division" "128th Infantry Division" "129th Infantry Division" "130th Infantry Division" "131st Infantry Division" "132nd Infantry Division" 
-		"133rd Infantry Division" "134th Infantry Division" "135th Infantry Division" "136th Infantry Division" "137th Infantry Division" "138th Infantry Division" "139th Infantry Division" "140th Infantry Division" "141st Infantry Division" "142nd Infantry Division" "143rd Infantry Division" 
-		"144th Infantry Division" "145th Infantry Division" "146th Infantry Division" "147th Infantry Division" "148th Infantry Division" "149th Infantry Division" "150th Infantry Division" 
+		"第1步兵师" "第2步兵师" "第3步兵师" "第4步兵师" "第5步兵师" "第6步兵师" "第7步兵师" "第8步兵师" "第1印度师" "第2印度师" "第3印度师" 
+		"第4印度师" "第5印度师" "第6印度师" "第7印度师" "第8印度师" "第9印度师" "第10印度师" "第11印度师" "第12印度师" "第9高地师" "第12东方师" 
+		"第15苏格兰师" "第18步兵师" "第23诺森伯兰师" "第38威尔士师" "第42东兰开夏师" "第43威塞克斯师" "第44本土师" "第45步兵师" "第46北中部地区师" "第47伦敦师" "第13印度师" 
+		"第14印度师" "第48南中部地区师" "第49西莱丁师" "第50诺森伯兰师" "第51高地师" "第52低地师" "第53威尔士师" "第54东盎格鲁师" "第55西兰开夏师" "第56伦敦师" "第59史塔福郡师" 
+		"第61步兵师" "第15印度师" "第16印度师" "第17印度师" "第66步兵师" "第70步兵师" "第76步兵师" "第77步兵师" "第78步兵师" "第40步兵师" "第57步兵师" 
+		"第80步兵师" "第36步兵师" "第Guas步兵师" "第28步兵师" "第18印度师" "第19印度师" "第20印度师" "第33步兵师" "第34步兵师" "第37步兵师" "第41步兵师" 
+		"第58步兵师" "第60步兵师" "第62步兵师" "第63步兵师" "第67步兵师" "第68步兵师" "第69步兵师" "第71步兵师" "第72步兵师" "第73步兵师" "第74步兵师" 
+		"第75步兵师" "第81步兵师" "第82步兵师" "第97步兵师" "第98步兵师" "第21印度师" "第22印度师" "第23印度师" "第24印度师" "第25印度师" "第99步兵师" 
+		"第100步兵师" "第101步兵师" "第102步兵师" "第103步兵师" "第104步兵师" "第105步兵师" "第106步兵师" "第107步兵师" "第108步兵师" "第109步兵师" "第110步兵师" 
+		"第111步兵师" "第112步兵师" "第113步兵师" "第114步兵师" "第115步兵师" "第116步兵师" "第117步兵师" "第118步兵师" "第119步兵师" "第120步兵师" "第121步兵师" 
+		"第122步兵师" "第123步兵师" "第124步兵师" "第125步兵师" "第126步兵师" "第127步兵师" "第128步兵师" "第129步兵师" "第130步兵师" "第131步兵师" "第132步兵师" 
+		"第133步兵师" "第134步兵师" "第135步兵师" "第136步兵师" "第137步兵师" "第138步兵师" "第139步兵师" "第140步兵师" "第141步兵师" "第142步兵师" "第143步兵师" 
+		"第144步兵师" "第145步兵师" "第146步兵师" "第147步兵师" "第148步兵师" "第149步兵师" "第150步兵师" 
 	}
 	cavalry_brigade = {
-		"18th Hussars Division" "1st Cavalry Division 'Kings Own'" "2nd Cavalry Division" "3rd Cavalry Division" "4th Cavalry Division 'Queens Own'" "5th Cavalry Division" "6th Cavalry Division" "7th Cavalry Division" "8th Cavalry Division" "1st Indian Cavalry Division" "2nd Indian Guards Cavalry Div." 
-		"3rd Indian Cavalry Division" "4th Indian Cavalry Division" "5th Indian Cavalry Division" "9th Cavalry Division" "10th Cavalry Division" "11th Cavalry Division" "12th Cavalry Division" "13th Cavalry Division" "14th Cavalry Division" "15th Cavalry Division" "16th Cavalry Division" 
-		"17th Cavalry Division" "19th Cavalry Division" "20th Cavalry Division" 
+		"第18轻骑兵师" "第1国王私人骑兵师" "第2骑兵师" "第3骑兵师" "第4女王私人骑兵师" "第5骑兵师" "第6骑兵师" "第7骑兵师" "第8骑兵师" "第1印度骑兵师" "第2印度禁卫骑兵师" 
+		"第3印度骑兵师" "第4印度骑兵师" "第5印度骑兵师" "第9骑兵师" "第10骑兵师" "第11骑兵师" "第12骑兵师" "第13骑兵师" "第14骑兵师" "第15骑兵师" "第16骑兵师" 
+		"第17骑兵师" "第19骑兵师" "第20骑兵师" 
 	}
 	motorized_brigade = {
-		"1st Infantry Division" "2nd Infantry Division" "3rd Infantry Division" "4th Infantry Division" "5th Infantry Division" "15th 'Scottish' Division" "18th Infantry Division" "38th 'Welsh' Division" "1st Indian Division" "2nd Indian Division" "43rd 'Wessex' Division" 
-		"44th 'Home Counties' Division" "45th Infantry Division" "46th 'North Midlands' Division" "3rd Indian Division" "4th Indian Division" "47th 'London' Infantry Division" "48th 'South Midlands' Division" "49th 'West Riding' Division" "50th 'Northumbrian' Division" "51st 'Highland' Division" "5th Indian Division" 
-		"52nd 'Lowlands' Division" "53rd 'Welsh' Division" "54th 'East Anglia' Division" "55th 'West Lancashire' Division" "56th 'London' Division" "59th 'Staffordshire' Division" "61st Infantry Division" "66th Infantry Division" "70th Infantry Division" "76th Infantry Division" "77th Infantry Division" 
-		"78th Infantry Division" "40th Infantry Division" "57th Infantry Division" "80th Infantry Division" "Guards Infantry Division" "28th Infantry Division" "33rd Infantry Division" "100th Infantry Division" "101st Infantry Division" "102nd Infantry Division" "103rd Infantry Division" 
-		"104th Infantry Division" "105th Infantry Division" "106th Infantry Division" "107th Infantry Division" "108th Infantry Division" "109th Infantry Division" "110th Infantry Division" "111th Infantry Division" "112th Infantry Division" "113th Infantry Division" "114th Infantry Division" 
-		"115th Infantry Division" "116th Infantry Division" "117th Infantry Division" "118th Infantry Division" "119th Infantry Division" "120th Infantry Division" "121st Infantry Division" "122nd Infantry Division" "123rd Infantry Division" "124th Infantry Division" "125th Infantry Division" 
-		"126th Infantry Division" "127th Infantry Division" "128th Infantry Division" "129th Infantry Division" "130th Infantry Division" "131st Infantry Division" "132nd Infantry Division" "133rd Infantry Division" "134th Infantry Division" "135th Infantry Division" "136th Infantry Division" 
-		"137th Infantry Division" "138th Infantry Division" "139th Infantry Division" "140th Infantry Division" "141st Infantry Division" "142nd Infantry Division" "143rd Infantry Division" "144th Infantry Division" "145th Infantry Division" "146th Infantry Division" "147th Infantry Division" 
-		"148th Infantry Division" "149th Infantry Division" "150th Infantry Division" 
+		"第1步兵师" "第2步兵师" "第3步兵师" "第4步兵师" "第5步兵师" "第15苏格兰师" "第18步兵师" "第38威尔士师" "第1印度师" "第2印度师" "第43威塞克斯师" 
+		"第44本土师" "第45步兵师" "第46北中部地区师" "第3印度师" "第4印度师" "第47伦敦步兵师" "第48南中部地区师" "第49西莱丁师" "第50诺森伯兰师" "第51高地师" "第5印度师" 
+		"第52低地师" "第53威尔士师" "第54东盎格鲁师" "第55西兰开夏师" "第56伦敦师" "第59史塔福郡师" "第61步兵师" "第66步兵师" "第70步兵师" "第76步兵师" "第77步兵师" 
+		"第78步兵师" "第40步兵师" "第57步兵师" "第80步兵师" "禁卫师" "第28步兵师" "第33步兵师" "第100步兵师" "第101步兵师" "第102步兵师" "第103步兵师" 
+		"第104步兵师" "第105步兵师" "第106步兵师" "第107步兵师" "第108步兵师" "第109步兵师" "第110步兵师" "第111步兵师" "第112步兵师" "第113步兵师" "第114步兵师" 
+		"第115步兵师" "第116步兵师" "第117步兵师" "第118步兵师" "第119步兵师" "第120步兵师" "第121步兵师" "第122步兵师" "第123步兵师" "第124步兵师" "第125步兵师" 
+		"第126步兵师" "第127步兵师" "第128步兵师" "第129步兵师" "第130步兵师" "第131步兵师" "第132步兵师" "第133步兵师" "第134步兵师" "第135步兵师" "第136步兵师" 
+		"第137步兵师" "第138步兵师" "第139步兵师" "第140步兵师" "第141步兵师" "第142步兵师" "第143步兵师" "第144步兵师" "第145步兵师" "第146步兵师" "第147步兵师" 
+		"第148步兵师" "第149步兵师" "第150步兵师" 
 	}
 	mechanized_brigade = {
-		"1st Infantry Division" "2nd Infantry Division" "3rd Infantry Division" "4th Infantry Division" "5th Infantry Division" "15th 'Scottish' Division" "18th Infantry Division" "38th 'Welsh' Division" "43rd 'Wessex' Division" "1st Indian Division" "2nd Indian Division" 
-		"44th 'Home Counties' Division" "45th Infantry Division" "46th 'North Midlands' Division" "47th 'London' Division" "48th 'South Midlands' Division" "49th 'West Riding' Division" "50th 'Northumbrian' Division" "3rd Indian Division" "4th Indian Division" "51st 'Highland' Division" "52nd 'Lowland' Division" 
-		"53rd 'Welsh' Division" "54th 'East Anglia' Division" "55th 'West Lancashire' Division" "56th 'London' Division" "5th Indian Division" "59th 'Staffordshire' Division" "61st Infantry Division" "66th Infantry Division" "70th Infantry Division" "76th Infantry Division" "77th Infantry Division" 
-		"78th Infantry Division" "40th Infantry Division" "57th Infantry Division" "80th Infantry Division" "Guards Division" "28th Infantry Division" "33rd Infantry Division" "100th Infantry Division" "101st Infantry Division" "102nd Infantry Division" "103rd Infantry Division" 
-		"104th Infantry Division" "105th Infantry Division" "106th Infantry Division" "107th Infantry Division" "108th Infantry Division" "109th Infantry Division" "110th Infantry Division" "111th Infantry Division" "112th Infantry Division" "113th Infantry Division" "114th Infantry Division" 
-		"115th Infantry Division" "116th Infantry Division" "117th Infantry Division" "118th Infantry Division" "119th Infantry Division" "120th Infantry Division" "121st Infantry Division" "122nd Infantry Division" "123rd Infantry Division" "124th Infantry Division" "125th Infantry Division" 
-		"126th Infantry Division" "127th Infantry Division" "128th Infantry Division" "129th Infantry Division" "130th Infantry Division" "131st Infantry Division" "132nd Infantry Division" "133rd Infantry Division" "134th Infantry Division" "135th Infantry Division" "136th Infantry Division" 
-		"137th Infantry Division" "138th Infantry Division" "139th Infantry Division" "140th Infantry Division" "141st Infantry Division" "142nd Infantry Division" "143rd Infantry Division" "144th Infantry Division" "145th Infantry Division" "146th Infantry Division" "147th Infantry Division" 
-		"148th Infantry Division" "149th Infantry Division" "150th Infantry Division" 
+		"第1步兵师" "第2步兵师" "第3步兵师" "第4步兵师" "第5步兵师" "第15苏格兰师" "第18步兵师" "第38威尔士师" "第43威塞克斯师" "第1印度师" "第2印度师" 
+		"第44本土师" "第45步兵师" "第46北中部地区师" "第47伦敦师" "第48南中部地区师" "第49西莱丁师" "第50诺森伯兰师" "第3印度师" "第4印度师" "第51高地师" "第52低地师" 
+		"第53威尔士师" "第54东盎格鲁师" "第55西兰开夏师" "第56伦敦师" "第5印度师" "第59史塔福郡师" "第61步兵师" "第66步兵师" "第70步兵师" "第76步兵师" "第77步兵师" 
+		"第78步兵师" "第40步兵师" "第57步兵师" "第80步兵师" "禁卫师" "第28步兵师" "第33步兵师" "第100步兵师" "第101步兵师" "第102步兵师" "第103步兵师" 
+		"第104步兵师" "第105步兵师" "第106步兵师" "第107步兵师" "第108步兵师" "第109步兵师" "第110步兵师" "第111步兵师" "第112步兵师" "第113步兵师" "第114步兵师" 
+		"第115步兵师" "第116步兵师" "第117步兵师" "第118步兵师" "第119步兵师" "第120步兵师" "第121步兵师" "第122步兵师" "第123步兵师" "第124步兵师" "第125步兵师" 
+		"第126步兵师" "第127步兵师" "第128步兵师" "第129步兵师" "第130步兵师" "第131步兵师" "第132步兵师" "第133步兵师" "第134步兵师" "第135步兵师" "第136步兵师" 
+		"第137步兵师" "第138步兵师" "第139步兵师" "第140步兵师" "第141步兵师" "第142步兵师" "第143步兵师" "第144步兵师" "第145步兵师" "第146步兵师" "第147步兵师" 
+		"第148步兵师" "第149步兵师" "第150步兵师" 
 	}
-	super_heavy_armor_brigade = {
-		"1st Armoured Div. 'Royal Hussars'" "2nd Armoured Division" "7th Armoured Division" "6th Armoured Division" "8th Armoured Division" "9th Armoured Division" "Guards Armoured Division" "10th Armoured Division" "11th Armoured Division" "42nd Armoured Division" "79th Armoured Division" 
-		"100th Armoured Division" "101st Armoured Division" "102nd Armoured Division" "103rd Armoured Division" "104th Armoured Division" "105th Armoured Division" "106th Armoured Division" "107th Armoured Division" "108th Armoured Division" "109th Armoured Division" "110th Armoured Division" 
-		"111th Armoured Division" "112th Armoured Division" "113th Armoured Division" "114th Armoured Division" "115th Armoured Division" "116th Armoured Division" "117th Armoured Division" "118th Armoured Division" "119th Armoured Division" "120th Armoured Division" 
-	}	
 	light_armor_brigade = {
-		"1st Armoured Div. 'Royal Hussars'" "2nd Armoured Division" "7th Armoured Division" "6th Armoured Division" "8th Armoured Division" "9th Armoured Division" "Guards Armoured Division" "10th Armoured Division" "11th Armoured Division" "42nd Armoured Division" "79th Armoured Division" 
-		"100th Armoured Division" "101st Armoured Division" "102nd Armoured Division" "103rd Armoured Division" "104th Armoured Division" "105th Armoured Division" "106th Armoured Division" "107th Armoured Division" "108th Armoured Division" "109th Armoured Division" "110th Armoured Division" 
-		"111th Armoured Division" "112th Armoured Division" "113th Armoured Division" "114th Armoured Division" "115th Armoured Division" "116th Armoured Division" "117th Armoured Division" "118th Armoured Division" "119th Armoured Division" "120th Armoured Division" 
+		"第1皇家轻骑兵师" "第2装甲师" "第7装甲师" "第6装甲师" "第8装甲师" "第9装甲师" "禁卫装甲师" "第10装甲师" "第11装甲师" "第42装甲师" "第79装甲师" 
+		"第100装甲师" "第101装甲师" "第102装甲师" "第103rd装甲师" "第104装甲师" "第105装甲师" "第106装甲师" "第107装甲师" "第108装甲师" "第109装甲师" "第110装甲师" 
+		"第111装甲师" "第112装甲师" "第113装甲师" "第114装甲师" "第115装甲师" "第116装甲师" "第117装甲师" "第118装甲师" "第119装甲师" "第120装甲师" 
 	}
 	armor_brigade = {
-		"1st Armoured Div. 'Royal Hussars'" "2nd Armoured Division" "7th Armoured Division" "6th Armoured Division" "8th Armoured Division" "9th Armoured Division" "Guards Armoured Division" "10th Armoured Division" "11th Armoured Division" "42nd Armoured Division" "79th Armoured Division" 
-		"100th Armoured Division" "101st Armoured Division" "102nd Armoured Division" "103rd Armoured Division" "104th Armoured Division" "105th Armoured Division" "106th Armoured Division" "107th Armoured Division" "108th Armoured Division" "109th Armoured Division" "110th Armoured Division" 
-		"111th Armoured Division" "112th Armoured Division" "113th Armoured Division" "114th Armoured Division" "115th Armoured Division" "116th Armoured Division" "117th Armoured Division" "118th Armoured Division" "119th Armoured Division" "120th Armoured Division" 
+		"第1皇家轻骑兵师" "第2装甲师" "第7装甲师" "第6装甲师" "第8装甲师" "第9装甲师" "禁卫装甲师" "第10装甲师" "第11装甲师" "第42装甲师" "第79装甲师" 
+		"第100装甲师" "第101装甲师" "第102装甲师" "第103rd装甲师" "第104装甲师" "第105装甲师" "第106装甲师" "第107装甲师" "第108装甲师" "第109装甲师" "第110装甲师" 
+		"第111装甲师" "第112装甲师" "第113装甲师" "第114装甲师" "第115装甲师" "第116装甲师" "第117装甲师" "第118装甲师" "第119装甲师" "第120装甲师" 
 	}
-	heavy_armor_brigade = {
-		"1st Armoured Div. 'Royal Hussars'" "2nd Armoured Division" "7th Armoured Division" "6th Armoured Division" "8th Armoured Division" "9th Armoured Division" "Guards Armoured Division" "10th Armoured Division" "11th Armoured Division" "42nd Armoured Division" "79th Armoured Division" 
-		"100th Armoured Division" "101st Armoured Division" "102nd Armoured Division" "103rd Armoured Division" "104th Armoured Division" "105th Armoured Division" "106th Armoured Division" "107th Armoured Division" "108th Armoured Division" "109th Armoured Division" "110th Armoured Division" 
-		"111th Armoured Division" "112th Armoured Division" "113th Armoured Division" "114th Armoured Division" "115th Armoured Division" "116th Armoured Division" "117th Armoured Division" "118th Armoured Division" "119th Armoured Division" "120th Armoured Division" 
-	}	
 	paratrooper_brigade = {
-		"1st Airborne Division" "6th Airborne Division" "7th Airborne Division" "8th Airborne Division" "9th Airborne Division" "10th Airborne Division" "11th Airborne Division" "12th Airborne Division" "13th Airborne Division" "14th Airborne Division" "15th Airborne Division" 
-		"16th Airborne Division" "17th Airborne Division" "18th Airborne Division" "19th Airborne Division" "20th Airborne Division" 
+		"第1空降师" "第6空降师" "第7空降师" "第8空降师" "第9空降师" "第10空降师" "第11空降师" "第12空降师" "第13空降师" "第14空降师" "第15空降师" 
+		"第16空降师" "第17空降师" "第18空降师" "第19空降师" "第20空降师" 
 	}
 	marine_brigade = {
-		"1st Royal Marines Division" "2nd Royal Marines Division" "3rd Royal Marines Division" "4th Royal Marines Division" "5th Royal Marines Division" "6th Royal Marines Division" "7th Royal Marines Division" "8th Royal Marines Division" "9th Royal Marines Division" "10th Royal Marines Division" "11th Royal Marines Division" 
-		"12th Royal Marines Division" "13th Royal Marines Division" "14th Royal Marines Division" "15th Royal Marines Division" "16th Royal Marines Division" "17th Royal Marines Division" "18th Royal Marines Division" "19th Royal Marines Division" "20th Royal Marines Division" 
+		"第1皇家海军陆战师" "第2皇家海军陆战师" "第3皇家海军陆战师" "第4皇家海军陆战师" "第5皇家海军陆战师" "第6皇家海军陆战师" "第7皇家海军陆战师" "第8皇家海军陆战师" "第9皇家海军陆战师" "第10皇家海军陆战师" "第11皇家海军陆战师" 
+		"第12皇家海军陆战师" "第13皇家海军陆战师" "第14皇家海军陆战师" "第15皇家海军陆战师" "第16皇家海军陆战师" "第17皇家海军陆战师" "第18皇家海军陆战师" "第19皇家海军陆战师" "第20皇家海军陆战师" 
 	}
 	bergsjaeger_brigade = {
-		"9th 'Highland' Mountain Div." "12th 'Eastern' Mountain Div." "18th Infantry Mountain Div." "1st Gurkhas" "2nd Gurkhas" "3rd Gurkhas" "23rd 'Northumbrian' Mountain Div." "52nd 'Lowland' Mountain Div." "64th 'Highland' Mountain Div." "65th 'Lowland' Mountain Div." "66th Infantry Mountain Div." 
-		"28th Infantry Mountain Div." "33rd Infantry Mountain Div." "34th Infantry Mountain Div." "37th Infantry Mountain Div." "41st Infantry Mountain Div." "58th Infantry Mountain Div." "60th Infantry Mountain Div." "62nd Infantry Mountain Div." "63rd Infantry Mountain Div." "67th Infantry Mountain Div." "68th Infantry Mountain Div." 
-		"69th Infantry Mountain Div." "127th Infantry Mountain Div." "128th Infantry Mountain Div." "129th Infantry Mountain Div." "130th Infantry Mountain Div." "131st Infantry Mountain Div." "132nd Infantry Mountain Div." "133rd Infantry Mountain Div." "134th Infantry Mountain Div." "135th Infantry Mountain Div." "136th Infantry Mountain Div." 
-		"137th Infantry Mountain Div." "138th Infantry Mountain Div." "139th Infantry Mountain Div." "140th Infantry Mountain Div." "141st Infantry Mountain Div." "142nd Infantry Mountain Div." 
+		"第9高地山地师" "第12东方山地师" "第18山地步兵师" "第1廓尔喀师" "第2廓尔喀师" "第3廓尔喀师" "第23诺森伯兰山地师" "第52低地山地师" "第64高地山地师" "第65低地山地师" "第66山地步兵师" 
+		"第28山地步兵师" "第33山地步兵师" "第34山地步兵师" "第37山地步兵师" "第41山地步兵师" "第58山地步兵师" "第60山地步兵师" "第62山地步兵师" "第63山地步兵师" "第67山地步兵师" "第68山地步兵师" 
+		"第69山地步兵师" "第127山地步兵师" "第128山地步兵师" "第129山地步兵师" "第130山地步兵师" "第131山地步兵师" "第132山地步兵师" "第133山地步兵师" "第134山地步兵师" "第135山地步兵师" "第136山地步兵师" 
+		"第137山地步兵师" "第138山地步兵师" "第139山地步兵师" "第140山地步兵师" "第141山地步兵师" "第142山地步兵师" 
 	}
 	garrison_brigade = {
-		"100th Infantry Division" "101st Infantry Division" "102nd Infantry Division" "103rd Infantry Division" "104th Infantry Division" "105th Infantry Division" "106th Infantry Division" "107th Infantry Division" "108th Infantry Division" "109th Infantry Division" "110th Infantry Division" 
-		"111th Infantry Division" "112th Infantry Division" "113th Infantry Division" "114th Infantry Division" "115th Infantry Division" "116th Infantry Division" "117th Infantry Division" "118th Infantry Division" "119th Infantry Division" "120th Infantry Division" "121st Infantry Division" 
-		"122nd Infantry Division" "123rd Infantry Division" "124th Infantry Division" "125th Infantry Division" "126th Infantry Division" "127th Infantry Division" "128th Infantry Division" "129th Infantry Division" "130th Infantry Division" "131st Infantry Division" "132nd Infantry Division" 
-		"133rd Infantry Division" "134th Infantry Division" "135th Infantry Division" "136th Infantry Division" "137th Infantry Division" "138th Infantry Division" "139th Infantry Division" "140th Infantry Division" "141st Infantry Division" "142nd Infantry Division" "143rd Infantry Division" 
-		"144th Infantry Division" "145th Infantry Division" "146th Infantry Division" "147th Infantry Division" "148th Infantry Division" "149th Infantry Division" "150th Infantry Division" 
+		"第100步兵师" "第101步兵师" "第102步兵师" "第103步兵师" "第104步兵师" "第105步兵师" "第106步兵师" "第107步兵师" "第108步兵师" "第109步兵师" "第110步兵师" 
+		"第111步兵师" "第112步兵师" "第113步兵师" "第114步兵师" "第115步兵师" "第116步兵师" "第117步兵师" "第118步兵师" "第119步兵师" "第120步兵师" "第121步兵师" 
+		"第122步兵师" "第123步兵师" "第124步兵师" "第125步兵师" "第126步兵师" "第127步兵师" "第128步兵师" "第129步兵师" "第130步兵师" "第131步兵师" "第132步兵师" 
+		"第133步兵师" "第134步兵师" "第135步兵师" "第136步兵师" "第137步兵师" "第138步兵师" "第139步兵师" "第140步兵师" "第141步兵师" "第142步兵师" "第143步兵师" 
+		"第144步兵师" "第145步兵师" "第146步兵师" "第147步兵师" "第148步兵师" "第149步兵师" "第150步兵师" 
 	}
 	hq_brigade = {
-		"B.E.F." "8th Army" "10th Army" "1st Army" "2nd Army" "14th Army" "12th Army" "1st Airborne Army" "11th Army Group" "15th Army Group" "18th Army Group" 
-		"21st Army Group" "3rd Army" "4th Army" "5th Army" 
+		"英国远征军" "第8集团军" "第10集团军" "第1集团军" "第2集团军" "第14集团军" "第12集团军" "第1空降集团军" "第11集团军群" "第15集团军群" "第18集团军群" 
+		"第21集团军群" "第3集团军" "第4集团军" "第5集团军" 
 	}
 	militia_brigade = {
-		"1st Sudanese Colonials" "2nd Sudanese Colonials" "3rd Sudanese Colonials" "1st Ugandan Colonials" "2nd Ugandan Colonials" "1st Kenyan Colonials" "2nd Kenyan Colonials" "1st Tanzanian Colonials" "2nd Tanzanian Colonials" "1st Home Guard Division" "2nd Home Guard 'Scottish' Division" 
-		"3rd Home Guard 'Lancashire' Division" "4th Home Guard 'Ulster' Division" "5th Home Guard 'Welsh' Division" "6th Home Guard 'Yorkshire' Division" "7th Home Guard 'Hertford' Division" "8th Home Guard 'Lowland' Division" "9th Home Guard 'Highland' Division" "10th Home Guard 'Bedford' Division" "11th Home Guard Division" "12th Home Guard 'Berkshire' Division" "13th Home Guard 'Warwick' Division" 
-		"3rd 'London' Division" "14th Home Guard 'Westmorland'Division" "15th Home Guard 'Buckingham' Division" "16th Home Guard 'Cambridge' Division" "17th Home Guard 'Kent' Division" "18th Home Guard 'Stafford' Division" "19th Home Guard 'Huntingdon' Division" "20th Home Guard 'Leicester' Division" "21st Home Guard 'Suffolk' Division" "22nd Home Guard 'Northumberland' Division" "23rd Home Guard 'Derbyshire' Division" 
-		"24th Home Guard 'Cheshire' Division" "25th Home Guard 'Essex' Division" "26th Home Guard 'Gloucester' Division" "27th Home Guard 'Devonshire' Division" "28th Home Guard 'Cumberland' Division" "4th Home Guard 'London' Division" "29th Home Guard 'Lincoln' Division" "30th Home Guard 'Hampshire' Division" "31st Home Guard 'Northampton' Division" "32nd Home Guard 'Cornwall' Division" "33rd Home Guard 'Rutland' Division" 
-		"34th Home Guard 'Surrey' Division" "35th Home Guard 'Sussex' Division" "36th Home Guard 'Dorset' Division" "37th Home Guard 'Durham' Division" "38th Home Guard 'Hereford' Division" "39th Home Guard 'Norfolk' Division" "40th Home Guard 'Nottingham' Division" "41st Home Guard 'Oxfordshire' Division" "42nd Home Guard 'Shropshire' Division" "43rd Home Guard 'Somerset' Division" "44th Home Guard 'Wiltshire' Division" 
-		"45th Home Guard 'Worcester' Division" 
+		"第1苏丹殖民师" "第2苏丹殖民师" "第3苏丹殖民师" "第1乌干达殖民师" "第2乌干达殖民师" "第1肯尼亚殖民师" "第2肯尼亚殖民师" "第1坦桑尼亚殖民师" "第2坦桑尼亚殖民师" "第1地方防卫师" "第2苏格兰地方防卫师" 
+		"第3兰开夏地方防卫师" "第4阿尔斯特地方防卫师" "第5威尔士地方防卫师" "第6约克夏地方防卫师" "第7赫特福德地方防卫师" "第8低地地方防卫师" "第9高地地方防卫师" "第10贝德福德地方防卫师" "第11地方防卫师" "第12伯克郡地方防卫师" "第13沃里克郡地方防卫师" 
+		"第3伦敦师" "第14威斯特摩兰师" "第15白金汉郡地方防卫师" "第16剑桥地方防卫师" "第17肯特郡地方防卫师" "第18斯塔福德郡地方防卫师" "第19亨廷顿郡地方防卫师" "第20莱斯特地方防卫师" "第21萨福克郡地方防卫师" "第22诺森伯兰郡地方防卫师" "第23德比郡地方防卫师" 
+		"第24柴郡地方防卫师" "第25埃塞克斯郡地方防卫师" "第26格洛斯特郡地方防卫师" "第27德文郡地方防卫师" "第28坎伯兰郡地方防卫师" "第4伦敦师" "第29林肯郡地方防卫师" "第30汉普郡地方防卫师" "第31北安普顿地方防卫师" "第32康沃尔郡地方防卫师" "第33拉特兰郡地方防卫师" 
+		"第34萨里郡地方防卫师" "第35苏塞克斯郡地方防卫师" "第36多赛特郡地方防卫师" "第37达勒姆郡地方防卫师" "第38赫里福德郡地方防卫师" "第39诺福克郡地方防卫师" "第40诺丁汉郡地方防卫师" "第41牛津郡地方防卫师" "第42什罗普郡地方防卫师" "第43萨默塞特郡地方防卫师" "第44威特郡地方防卫师" 
+		"第45渥斯特郡地方防卫师" 
 	}
 	multi_role = {
-		"No.11 RAF Fighter Group" "No.12 RAF Fighter Group" "No.14 RAF Fighter Group" "No.13 RAF Fighter Group" "No.10 RAF Fighter Group" "No.207 RAF Fighter Group" "No.211 RAF Fighter Group" "No.212 RAF Fighter Group" "No.213 RAF Fighter Group" "No.214 RAF Fighter Group" "No.223 RAF Fighter Group" 
-		"No.226 RAF Fighter Group" "No.9 RAF Fighter Group" "No.22 RAF Fighter Group" "No.23 RAF Fighter Group" "No.24 RAF Fighter Group" "No.25 RAF Fighter Group" "No.26 RAF Fighter Group" "No.27 RAF Fighter Group" "No.28 RAF Fighter Group" "No.29 RAF Fighter Group" "No.30 RAF Fighter Group" 
-		"No.31 RAF Fighter Group" "No.32 RAF Fighter Group" "No.33 RAF Fighter Group" "No.34 RAF Fighter Group" "No.35 RAF Fighter Group" "No.36 RAF Fighter Group" "No.37 RAF Fighter Group" "No.38 RAF Fighter Group" "No.39 RAF Fighter Group" "No.44 RAF Fighter Group" "No.45 RAF Fighter Group" 
-		"No.46 RAF Fighter Group" "No.47 RAF Fighter Group" "No.48 RAF Fighter Group" "No.49 RAF Fighter Group" "No.50 RAF Fighter Group" "No.51 RAF Fighter Group" "No.200 RAF Fighter Group" "No.201 RAF Fighter Group" "No.202 RAF Fighter Group" "No.203 RAF Fighter Group" "No.223 RAF Fighter Group" 
-		"No.226 RAF Fighter Group" "No.227 RAF Fighter Group" "No.228 RAF Fighter Group" "No.229 RAF Fighter Group" "No.230 RAF Fighter Group" "No.231 RAF Fighter Group" "No.232 RAF Fighter Group" "No.233 RAF Fighter Group" "No.234 RAF Fighter Group" "No.235 RAF Fighter Group" "No.236 RAF Fighter Group" 
-		"No.237 RAF Fighter Group" "No.238 RAF Fighter Group" "No.239 RAF Fighter Group" "No.244 RAF Fighter Group" "No.245 RAF Fighter Group" "No.246 RAF Fighter Group" "No.247 RAF Fighter Group" "No.248 RAF Fighter Group" "No.249 RAF Fighter Group" "No.250 RAF Fighter Group" "No.251 RAF Fighter Group" 
-	}
+		"皇家空军第11战斗机大队" "皇家空军第12战斗机大队" "皇家空军第14战斗机大队" "皇家空军第13战斗机大队" "皇家空军第10战斗机大队" "皇家空军第207战斗机大队" "皇家空军第211战斗机大队" "皇家空军第212战斗机大队" "皇家空军第213战斗机大队" "皇家空军第214战斗机大队" "皇家空军第223战斗机大队" 
+		"皇家空军第226战斗机大队" "皇家空军第9战斗机大队" "皇家空军第22战斗机大队" "皇家空军第23战斗机大队" "皇家空军第24战斗机大队" "皇家空军第25战斗机大队" "皇家空军第26战斗机大队" "皇家空军第27战斗机大队" "皇家空军第28战斗机大队" "皇家空军第29战斗机大队" "皇家空军第30战斗机大队" 
+		"皇家空军第31战斗机大队" "皇家空军第32战斗机大队" "皇家空军第33战斗机大队" "皇家空军第34战斗机大队" "皇家空军第35战斗机大队" "皇家空军第36战斗机大队" "皇家空军第37战斗机大队" "皇家空军第38战斗机大队" "皇家空军第39战斗机大队" "皇家空军第44战斗机大队" "皇家空军第45战斗机大队" 
+		"皇家空军第46战斗机大队" "皇家空军第47战斗机大队" "皇家空军第48战斗机大队" "皇家空军第49战斗机大队" "皇家空军第50战斗机大队" "皇家空军第51战斗机大队" "皇家空军第200战斗机大队" "皇家空军第201战斗机大队" "皇家空军第202战斗机大队" "皇家空军第203战斗机大队" "皇家空军第223战斗机大队" 
+		"皇家空军第226战斗机大队" "皇家空军第227战斗机大队" "皇家空军第228战斗机大队" "皇家空军第229战斗机大队" "皇家空军第230战斗机大队" "皇家空军第231战斗机大队" "皇家空军第232战斗机大队" "皇家空军第233战斗机大队" "皇家空军第234战斗机大队" "皇家空军第235战斗机大队" "皇家空军第236战斗机大队" 
+		"皇家空军第237战斗机大队" "皇家空军第238战斗机大队" "皇家空军第239战斗机大队" "皇家空军第244战斗机大队" "皇家空军第245战斗机大队" "皇家空军第246战斗机大队" "皇家空军第247战斗机大队" "皇家空军第248战斗机大队" "皇家空军第249战斗机大队" "皇家空军第250战斗机大队" "皇家空军第251战斗机大队" 
+			}
 	interceptor = {
-		"No.11 RAF Fighter Group" "No.12 RAF Fighter Group" "No.14 RAF Fighter Group" "No.13 RAF Fighter Group" "No.10 RAF Fighter Group" "No.207 RAF Fighter Group" "No.211 RAF Fighter Group" "No.212 RAF Fighter Group" "No.213 RAF Fighter Group" "No.214 RAF Fighter Group" "No.223 RAF Fighter Group" 
-		"No.226 RAF Fighter Group" "No.9 RAF Fighter Group" "No.22 RAF Fighter Group" "No.23 RAF Fighter Group" "No.24 RAF Fighter Group" "No.25 RAF Fighter Group" "No.26 RAF Fighter Group" "No.27 RAF Fighter Group" "No.28 RAF Fighter Group" "No.29 RAF Fighter Group" "No.30 RAF Fighter Group" 
-		"No.31 RAF Fighter Group" "No.32 RAF Fighter Group" "No.33 RAF Fighter Group" "No.34 RAF Fighter Group" "No.35 RAF Fighter Group" "No.36 RAF Fighter Group" "No.37 RAF Fighter Group" "No.38 RAF Fighter Group" "No.39 RAF Fighter Group" "No.44 RAF Fighter Group" "No.45 RAF Fighter Group" 
-		"No.46 RAF Fighter Group" "No.47 RAF Fighter Group" "No.48 RAF Fighter Group" "No.49 RAF Fighter Group" "No.50 RAF Fighter Group" "No.51 RAF Fighter Group" "No.200 RAF Fighter Group" "No.201 RAF Fighter Group" "No.202 RAF Fighter Group" "No.203 RAF Fighter Group" "No.223 RAF Fighter Group" 
-		"No.226 RAF Fighter Group" "No.227 RAF Fighter Group" "No.228 RAF Fighter Group" "No.229 RAF Fighter Group" "No.230 RAF Fighter Group" "No.231 RAF Fighter Group" "No.232 RAF Fighter Group" "No.233 RAF Fighter Group" "No.234 RAF Fighter Group" "No.235 RAF Fighter Group" "No.236 RAF Fighter Group" 
-		"No.237 RAF Fighter Group" "No.238 RAF Fighter Group" "No.239 RAF Fighter Group" "No.244 RAF Fighter Group" "No.245 RAF Fighter Group" "No.246 RAF Fighter Group" "No.247 RAF Fighter Group" "No.248 RAF Fighter Group" "No.249 RAF Fighter Group" "No.250 RAF Fighter Group" "No.251 RAF Fighter Group" 
-	}
-	jet_int = {
-		"No.11 RAF Fighter Group" "No.12 RAF Fighter Group" "No.14 RAF Fighter Group" "No.13 RAF Fighter Group" "No.10 RAF Fighter Group" "No.207 RAF Fighter Group" "No.211 RAF Fighter Group" "No.212 RAF Fighter Group" "No.213 RAF Fighter Group" "No.214 RAF Fighter Group" "No.223 RAF Fighter Group" 
-		"No.226 RAF Fighter Group" "No.9 RAF Fighter Group" "No.22 RAF Fighter Group" "No.23 RAF Fighter Group" "No.24 RAF Fighter Group" "No.25 RAF Fighter Group" "No.26 RAF Fighter Group" "No.27 RAF Fighter Group" "No.28 RAF Fighter Group" "No.29 RAF Fighter Group" "No.30 RAF Fighter Group" 
-		"No.31 RAF Fighter Group" "No.32 RAF Fighter Group" "No.33 RAF Fighter Group" "No.34 RAF Fighter Group" "No.35 RAF Fighter Group" "No.36 RAF Fighter Group" "No.37 RAF Fighter Group" "No.38 RAF Fighter Group" "No.39 RAF Fighter Group" "No.44 RAF Fighter Group" "No.45 RAF Fighter Group" 
-		"No.46 RAF Fighter Group" "No.47 RAF Fighter Group" "No.48 RAF Fighter Group" "No.49 RAF Fighter Group" "No.50 RAF Fighter Group" "No.51 RAF Fighter Group" "No.200 RAF Fighter Group" "No.201 RAF Fighter Group" "No.202 RAF Fighter Group" "No.203 RAF Fighter Group" "No.223 RAF Fighter Group" 
-		"No.226 RAF Fighter Group" "No.227 RAF Fighter Group" "No.228 RAF Fighter Group" "No.229 RAF Fighter Group" "No.230 RAF Fighter Group" "No.231 RAF Fighter Group" "No.232 RAF Fighter Group" "No.233 RAF Fighter Group" "No.234 RAF Fighter Group" "No.235 RAF Fighter Group" "No.236 RAF Fighter Group" 
-		"No.237 RAF Fighter Group" "No.238 RAF Fighter Group" "No.239 RAF Fighter Group" "No.244 RAF Fighter Group" "No.245 RAF Fighter Group" "No.246 RAF Fighter Group" "No.247 RAF Fighter Group" "No.248 RAF Fighter Group" "No.249 RAF Fighter Group" "No.250 RAF Fighter Group" "No.251 RAF Fighter Group" 
-	}
-	jet_mr = {
-		"No.11 RAF Fighter Group" "No.12 RAF Fighter Group" "No.14 RAF Fighter Group" "No.13 RAF Fighter Group" "No.10 RAF Fighter Group" "No.207 RAF Fighter Group" "No.211 RAF Fighter Group" "No.212 RAF Fighter Group" "No.213 RAF Fighter Group" "No.214 RAF Fighter Group" "No.223 RAF Fighter Group" 
-		"No.226 RAF Fighter Group" "No.9 RAF Fighter Group" "No.22 RAF Fighter Group" "No.23 RAF Fighter Group" "No.24 RAF Fighter Group" "No.25 RAF Fighter Group" "No.26 RAF Fighter Group" "No.27 RAF Fighter Group" "No.28 RAF Fighter Group" "No.29 RAF Fighter Group" "No.30 RAF Fighter Group" 
-		"No.31 RAF Fighter Group" "No.32 RAF Fighter Group" "No.33 RAF Fighter Group" "No.34 RAF Fighter Group" "No.35 RAF Fighter Group" "No.36 RAF Fighter Group" "No.37 RAF Fighter Group" "No.38 RAF Fighter Group" "No.39 RAF Fighter Group" "No.44 RAF Fighter Group" "No.45 RAF Fighter Group" 
-		"No.46 RAF Fighter Group" "No.47 RAF Fighter Group" "No.48 RAF Fighter Group" "No.49 RAF Fighter Group" "No.50 RAF Fighter Group" "No.51 RAF Fighter Group" "No.200 RAF Fighter Group" "No.201 RAF Fighter Group" "No.202 RAF Fighter Group" "No.203 RAF Fighter Group" "No.223 RAF Fighter Group" 
-		"No.226 RAF Fighter Group" "No.227 RAF Fighter Group" "No.228 RAF Fighter Group" "No.229 RAF Fighter Group" "No.230 RAF Fighter Group" "No.231 RAF Fighter Group" "No.232 RAF Fighter Group" "No.233 RAF Fighter Group" "No.234 RAF Fighter Group" "No.235 RAF Fighter Group" "No.236 RAF Fighter Group" 
-		"No.237 RAF Fighter Group" "No.238 RAF Fighter Group" "No.239 RAF Fighter Group" "No.244 RAF Fighter Group" "No.245 RAF Fighter Group" "No.246 RAF Fighter Group" "No.247 RAF Fighter Group" "No.248 RAF Fighter Group" "No.249 RAF Fighter Group" "No.250 RAF Fighter Group" "No.251 RAF Fighter Group" 
-	}
+		"皇家空军第11战斗机大队" "皇家空军第12战斗机大队" "皇家空军第14战斗机大队" "皇家空军第13战斗机大队" "皇家空军第10战斗机大队" "皇家空军第207战斗机大队" "皇家空军第211战斗机大队" "皇家空军第212战斗机大队" "皇家空军第213战斗机大队" "皇家空军第214战斗机大队" "皇家空军第223战斗机大队" 
+		"皇家空军第226战斗机大队" "皇家空军第9战斗机大队" "皇家空军第22战斗机大队" "皇家空军第23战斗机大队" "皇家空军第24战斗机大队" "皇家空军第25战斗机大队" "皇家空军第26战斗机大队" "皇家空军第27战斗机大队" "皇家空军第28战斗机大队" "皇家空军第29战斗机大队" "皇家空军第30战斗机大队" 
+		"皇家空军第31战斗机大队" "皇家空军第32战斗机大队" "皇家空军第33战斗机大队" "皇家空军第34战斗机大队" "皇家空军第35战斗机大队" "皇家空军第36战斗机大队" "皇家空军第37战斗机大队" "皇家空军第38战斗机大队" "皇家空军第39战斗机大队" "皇家空军第44战斗机大队" "皇家空军第45战斗机大队" 
+		"皇家空军第46战斗机大队" "皇家空军第47战斗机大队" "皇家空军第48战斗机大队" "皇家空军第49战斗机大队" "皇家空军第50战斗机大队" "皇家空军第51战斗机大队" "皇家空军第200战斗机大队" "皇家空军第201战斗机大队" "皇家空军第202战斗机大队" "皇家空军第203战斗机大队" "皇家空军第223战斗机大队" 
+		"皇家空军第226战斗机大队" "皇家空军第227战斗机大队" "皇家空军第228战斗机大队" "皇家空军第229战斗机大队" "皇家空军第230战斗机大队" "皇家空军第231战斗机大队" "皇家空军第232战斗机大队" "皇家空军第233战斗机大队" "皇家空军第234战斗机大队" "皇家空军第235战斗机大队" "皇家空军第236战斗机大队" 
+		"皇家空军第237战斗机大队" "皇家空军第238战斗机大队" "皇家空军第239战斗机大队" "皇家空军第244战斗机大队" "皇家空军第245战斗机大队" "皇家空军第246战斗机大队" "皇家空军第247战斗机大队" "皇家空军第248战斗机大队" "皇家空军第249战斗机大队" "皇家空军第250战斗机大队" "皇家空军第251战斗机大队" 
+			}
 	strategic_bomber = {
-		"No.1 RAF Strategic Group" "No.2 RAF Strategic Group" "No.3 RAF Strategic Group" "No.4 RAF Strategic Group" "No.5 RAF Strategic Group" "No.203 RAF Strategic Group" "No.205 RAF Strategic Group" "No.215 RAF Strategic Group" "No.222 RAF Strategic Group" "No.221 RAF Strategic Group" "No.224 RAF Strategic Group" 
-		"No.225 RAF Strategic Group" "No.7 RAF Strategic Group" "No.91 RAF Strategic Group" "No.92 RAF Strategic Group" "No.93 RAF Strategic Group" "No.73 RAF Strategic Group" "No.74 RAF Strategic Group" "No.75 RAF Strategic Group" "No.76 RAF Strategic Group" "No.77 RAF Strategic Group" "No.78 RAF Strategic Group" 
-		"No.79 RAF Strategic Group" "No.80 RAF Strategic Group" "No.81 RAF Strategic Group" "No.82 RAF Strategic Group" "No.86 RAF Strategic Group" "No.87 RAF Strategic Group" "No.88 RAF Strategic Group" "No.89 RAF Strategic Group" "No.90 RAF Strategic Group" "No.94 RAF Strategic Group" "No.95 RAF Strategic Group" 
-		"No.96 RAF Strategic Group" "No.97 RAF Strategic Group" "No.98 RAF Strategic Group" "No.99 RAF Strategic Group" "No.100 RAF Strategic Group" "No.101 RAF Strategic Group" "No.102 RAF Strategic Group" "No.91 RAF Strategic Group" "No.215 RAF Strategic Group" "No.216 RAF Strategic Group" "No.217 RAF Strategic Group" 
-		"No.323 RAF Strategic Group" "No.326 RAF Strategic Group" "No.327 RAF Strategic Group" "No.328 RAF Strategic Group" "No.329 RAF Strategic Group" "No.330 RAF Strategic Group" "No.331 RAF Strategic Group" "No.332 RAF Strategic Group" "No.333 RAF Strategic Group" "No.334 RAF Strategic Group" "No.335 RAF Strategic Group" 
-		"No.336 RAF Strategic Group" "No.337 RAF Strategic Group" "No.338 RAF Strategic Group" "No.339 RAF Strategic Group" "No.344 RAF Strategic Group" "No.345 RAF Strategic Group" "No.346 RAF Strategic Group" "No.347 RAF Strategic Group" "No.348 RAF Strategic Group" "No.349 RAF Strategic Group" "No.350 RAF Strategic Group" 
-		"No.351 RAF Strategic Group" 
+		"皇家空军第1战略轰炸大队" "皇家空军第2战略轰炸大队" "皇家空军第3战略轰炸大队" "皇家空军第4战略轰炸大队" "皇家空军第5战略轰炸大队" "皇家空军第203战略轰炸大队" "皇家空军第205战略轰炸大队" "皇家空军第215战略轰炸大队" "皇家空军第222战略轰炸大队" "皇家空军第221战略轰炸大队" "皇家空军第224战略轰炸大队" 
+		"皇家空军第225战略轰炸大队" "皇家空军第7战略轰炸大队" "皇家空军第91战略轰炸大队" "皇家空军第92战略轰炸大队" "皇家空军第93战略轰炸大队" "皇家空军第73战略轰炸大队" "皇家空军第74战略轰炸大队" "皇家空军第75战略轰炸大队" "皇家空军第76战略轰炸大队" "皇家空军第77战略轰炸大队" "皇家空军第78战略轰炸大队" 
+		"皇家空军第79战略轰炸大队" "皇家空军第80战略轰炸大队" "皇家空军第81战略轰炸大队" "皇家空军第82战略轰炸大队" "皇家空军第86战略轰炸大队" "皇家空军第87战略轰炸大队" "皇家空军第88战略轰炸大队" "皇家空军第89战略轰炸大队" "皇家空军第90战略轰炸大队" "皇家空军第94战略轰炸大队" "皇家空军第95战略轰炸大队" 
+		"皇家空军第96战略轰炸大队" "皇家空军第97战略轰炸大队" "皇家空军第98战略轰炸大队" "皇家空军第99战略轰炸大队" "皇家空军第100战略轰炸大队" "皇家空军第101战略轰炸大队" "皇家空军第102战略轰炸大队" "皇家空军第91战略轰炸大队" "皇家空军第215战略轰炸大队" "皇家空军第216战略轰炸大队" "皇家空军第217战略轰炸大队" 
+		"皇家空军第323战略轰炸大队" "皇家空军第326战略轰炸大队" "皇家空军第327战略轰炸大队" "皇家空军第328战略轰炸大队" "皇家空军第329战略轰炸大队" "皇家空军第330战略轰炸大队" "皇家空军第331战略轰炸大队" "皇家空军第332战略轰炸大队" "皇家空军第333战略轰炸大队" "皇家空军第334战略轰炸大队" "皇家空军第335战略轰炸大队" 
+		"皇家空军第336战略轰炸大队" "皇家空军第337战略轰炸大队" "皇家空军第338战略轰炸大队" "皇家空军第339战略轰炸大队" "皇家空军第344战略轰炸大队" "皇家空军第345战略轰炸大队" "皇家空军第346战略轰炸大队" "皇家空军第347战略轰炸大队" "皇家空军第348战略轰炸大队" "皇家空军第349战略轰炸大队" "皇家空军第350战略轰炸大队" 
+		"皇家空军第351战略轰炸大队" 
 	}
 	tactical_bomber = {
-		"Middle East Group" "Indian Group" "Far East Group" "No.1 RAF Tactical Group" "No.2 RAF Tactical Group" "No.3 RAF Tactical Group" "No.4 RAF Tactical Group" "No.5 RAF Tactical Group" "No.203 RAF Tactical Group" "No.205 RAF Tactical Group" "No.215 RAF Tactical Group" 
-		"No.222 RAF Tactical Group" "No.224 RAF Tactical Group" "No.225 RAF Tactical Group" "No.8 RAF 'Pathfinder' Group" "No.100 RAF 'Special Duties' Group" "No.83 RAF Tactical Group" "No.85 RAF Tactical Group" "No.103 RAF Tactical Group" "No.104 RAF Tactical Group" "No.105 RAF Tactical Group" "No.106 RAF Tactical Group" 
-		"No.107 RAF Tactical Group" "No.108 RAF Tactical Group" "No.109 RAF Tactical Group" "No.110 RAF Tactical Group" "No.111 RAF Tactical Group" "No.112 RAF Tactical Group" "No.113 RAF Tactical Group" "No.114 RAF Tactical Group" "No.115 RAF Tactical Group" "No.116 RAF Tactical Group" "No.117 RAF Tactical Group" 
-		"No.118 RAF Tactical Group" "No.119 RAF Tactical Group" "No.120 RAF Tactical Group" "No.121 RAF Tactical Group" "No.122 RAF Tactical Group" "No.123 RAF Tactical Group" "No.124 RAF Tactical Group" "No.125 RAF Tactical Group" "No.126 RAF Tactical Group" "No.127 RAF Tactical Group" "No.128 RAF Tactical Group" 
-		"No.129 RAF Tactical Group" "No.130 RAF Tactical Group" "No.131 RAF Tactical Group" "No.323 RAF Tactical Group" "No.326 RAF Tactical Group" "No.327 RAF Tactical Group" "No.328 RAF Tactical Group" "No.329 RAF Tactical Group" "No.330 RAF Tactical Group" "No.331 RAF Tactical Group" "No.332 RAF Tactical Group" 
-		"No.333 RAF Tactical Group" "No.334 RAF Tactical Group" "No.335 RAF Tactical Group" "No.336 RAF Tactical Group" "No.337 RAF Tactical Group" "No.338 RAF Tactical Group" "No.339 RAF Tactical Group" "No.344 RAF Tactical Group" "No.345 RAF Tactical Group" "No.346 RAF Tactical Group" "No.347 RAF Tactical Group" 
-		"No.348 RAF Tactical Group" "No.349 RAF Tactical Group" "No.350 RAF Tactical Group" "No.351 RAF Tactical Group" 
-	}
-	jet_bomber = {
-		"Middle East Group" "Indian Group" "Far East Group" "No.1 RAF Tactical Group" "No.2 RAF Tactical Group" "No.3 RAF Tactical Group" "No.4 RAF Tactical Group" "No.5 RAF Tactical Group" "No.203 RAF Tactical Group" "No.205 RAF Tactical Group" "No.215 RAF Tactical Group" 
-		"No.222 RAF Tactical Group" "No.224 RAF Tactical Group" "No.225 RAF Tactical Group" "No.8 RAF 'Pathfinder' Group" "No.100 RAF 'Special Duties' Group" "No.83 RAF Tactical Group" "No.85 RAF Tactical Group" "No.103 RAF Tactical Group" "No.104 RAF Tactical Group" "No.105 RAF Tactical Group" "No.106 RAF Tactical Group" 
-		"No.107 RAF Tactical Group" "No.108 RAF Tactical Group" "No.109 RAF Tactical Group" "No.110 RAF Tactical Group" "No.111 RAF Tactical Group" "No.112 RAF Tactical Group" "No.113 RAF Tactical Group" "No.114 RAF Tactical Group" "No.115 RAF Tactical Group" "No.116 RAF Tactical Group" "No.117 RAF Tactical Group" 
-		"No.118 RAF Tactical Group" "No.119 RAF Tactical Group" "No.120 RAF Tactical Group" "No.121 RAF Tactical Group" "No.122 RAF Tactical Group" "No.123 RAF Tactical Group" "No.124 RAF Tactical Group" "No.125 RAF Tactical Group" "No.126 RAF Tactical Group" "No.127 RAF Tactical Group" "No.128 RAF Tactical Group" 
-		"No.129 RAF Tactical Group" "No.130 RAF Tactical Group" "No.131 RAF Tactical Group" "No.323 RAF Tactical Group" "No.326 RAF Tactical Group" "No.327 RAF Tactical Group" "No.328 RAF Tactical Group" "No.329 RAF Tactical Group" "No.330 RAF Tactical Group" "No.331 RAF Tactical Group" "No.332 RAF Tactical Group" 
-		"No.333 RAF Tactical Group" "No.334 RAF Tactical Group" "No.335 RAF Tactical Group" "No.336 RAF Tactical Group" "No.337 RAF Tactical Group" "No.338 RAF Tactical Group" "No.339 RAF Tactical Group" "No.344 RAF Tactical Group" "No.345 RAF Tactical Group" "No.346 RAF Tactical Group" "No.347 RAF Tactical Group" 
-		"No.348 RAF Tactical Group" "No.349 RAF Tactical Group" "No.350 RAF Tactical Group" "No.351 RAF Tactical Group" 
+		"中东轰炸机大队" "印度轰炸机大队" "远东轰炸机大队" "皇家空军第1战术轰炸大队" "皇家空军第2战术轰炸大队" "皇家空军第3战术轰炸大队" "皇家空军第4战术轰炸大队" "皇家空军第5战术轰炸大队" "皇家空军第203战术轰炸大队" "皇家空军第205战术轰炸大队" "皇家空军第215战术轰炸大队" 
+		"皇家空军第222战术轰炸大队" "皇家空军第224战术轰炸大队" "皇家空军第225战术轰炸大队" "皇家空军第8前导机大队" "皇家空军第100特别任务大队" "皇家空军第83战术轰炸大队" "皇家空军第85战术轰炸大队" "皇家空军第103战术轰炸大队" "皇家空军第104战术轰炸大队" "皇家空军第105战术轰炸大队" "皇家空军第106战术轰炸大队" 
+		"皇家空军第107战术轰炸大队" "皇家空军第108战术轰炸大队" "皇家空军第109战术轰炸大队" "皇家空军第110战术轰炸大队" "皇家空军第111战术轰炸大队" "皇家空军第112战术轰炸大队" "皇家空军第113战术轰炸大队" "皇家空军第114战术轰炸大队" "皇家空军第115战术轰炸大队" "皇家空军第116战术轰炸大队" "皇家空军第117战术轰炸大队" 
+		"皇家空军第118战术轰炸大队" "皇家空军第119战术轰炸大队" "皇家空军第120战术轰炸大队" "皇家空军第121战术轰炸大队" "皇家空军第122战术轰炸大队" "皇家空军第123战术轰炸大队" "皇家空军第124战术轰炸大队" "皇家空军第125战术轰炸大队" "皇家空军第126战术轰炸大队" "皇家空军第127战术轰炸大队" "皇家空军第128战术轰炸大队" 
+		"皇家空军第129战术轰炸大队" "皇家空军第130战术轰炸大队" "皇家空军第131战术轰炸大队" "皇家空军第323战术轰炸大队" "皇家空军第326战术轰炸大队" "皇家空军第327战术轰炸大队" "皇家空军第328战术轰炸大队" "皇家空军第329战术轰炸大队" "皇家空军第330战术轰炸大队" "皇家空军第331战术轰炸大队" "皇家空军第332战术轰炸大队" 
+		"皇家空军第333战术轰炸大队" "皇家空军第334战术轰炸大队" "皇家空军第335战术轰炸大队" "皇家空军第336战术轰炸大队" "皇家空军第337战术轰炸大队" "皇家空军第338战术轰炸大队" "皇家空军第339战术轰炸大队" "皇家空军第344战术轰炸大队" "皇家空军第345战术轰炸大队" "皇家空军第346战术轰炸大队" "皇家空军第347战术轰炸大队" 
+		"皇家空军第348战术轰炸大队" "皇家空军第349战术轰炸大队" "皇家空军第350战术轰炸大队" "皇家空军第351战术轰炸大队" 
 	}
 	naval_bomber = {
-		"No.15 RN Coastal Naval Patrol Group" "No.16 RN Coastal Naval Patrol Group" "No.201 RN Coastal Naval Patrol Group" "No.205 RN Coastal Naval Patrol Group" "No.17 RN Coastal Naval Patrol Group" "No.20 RN Coastal Naval Patrol Group" "No.21 RN Coastal Naval Patrol Group" "No.155 RN Coastal Naval Patrol Group" "No.156 RN Coastal Naval Patrol Group" "No.157 RN Coastal Naval Patrol Group" "No.158 RN Coastal Naval Patrol Group" 
-		"No.159 RN Coastal Naval Patrol Group" "No.160 RN Coastal Naval Patrol Group" "No.161 RN Coastal Naval Patrol Group" "No.162 RN Coastal Naval Patrol Group" "No.163 RN Coastal Naval Patrol Group" "No.164 RN Coastal Naval Patrol Group" "No.165 RN Coastal Naval Patrol Group" "No.166 RN Coastal Naval Patrol Group" "No.167 RN Coastal Naval Patrol Group" "No.168 RN Coastal Naval Patrol Group" "No.423 RN Coastal Naval Patrol Group" 
-		"No.426 RN Coastal Naval Patrol Group" "No.427 RN Coastal Naval Patrol Group" "No.428 RN Coastal Naval Patrol Group" "No.429 RN Coastal Naval Patrol Group" "No.430 RN Coastal Naval Patrol Group" "No.431 RN Coastal Naval Patrol Group" "No.432 RN Coastal Naval Patrol Group" "No.433 RN Coastal Naval Patrol Group" "No.434 RN Coastal Naval Patrol Group" "No.435 RN Coastal Naval Patrol Group" "No.436 RN Coastal Naval Patrol Group" 
-		"No.437 RN Coastal Naval Patrol Group" "No.438 RN Coastal Naval Patrol Group" "No.439 RN Coastal Naval Patrol Group" "No.444 RN Coastal Naval Patrol Group" "No.445 RN Coastal Naval Patrol Group" "No.446 RN Coastal Naval Patrol Group" "No.447 RN Coastal Naval Patrol Group" "No.448 RN Coastal Naval Patrol Group" "No.449 RN Coastal Naval Patrol Group" "No.450 RN Coastal Naval Patrol Group" "No.451 RN Coastal Naval Patrol Group" 
-		"No.18 RN Coastal Torpedo Bomber Group" "No.19 RN Coastal Torpedo Bomber Group" "No.170 RN Coastal Torpedo Bomber Group" "No.171 RN Coastal Torpedo Bomber Group" "No.145 RN Coastal Torpedo Bomber Group" "No.146 RN Coastal Torpedo Bomber Group" "No.147 RN Coastal Torpedo Bomber Group" "No.148 RN Coastal Torpedo Bomber Group" "No.149 RN Coastal Torpedo Bomber Group" "No.150 RN Coastal Torpedo Bomber Group" "No.151 RN Coastal Torpedo Bomber Group" 
-		"No.152 RN Coastal Torpedo Bomber Group" "No.153 RN Coastal Torpedo Bomber Group" "No.154 RN Coastal Torpedo Bomber Group" "No.172 RN Coastal Torpedo Bomber Group" "No.173 RN Coastal Torpedo Bomber Group" "No.174 RN Coastal Torpedo Bomber Group" "No.175 RN Coastal Torpedo Bomber Group" "No.176 RN Coastal Torpedo Bomber Group" "No.177 RN Coastal Torpedo Bomber Group" "No.178 RN Coastal Torpedo Bomber Group" "No.179 RN Coastal Torpedo Bomber Group" 
-		"No.423 RN Coastal Torpedo Bomber Group" "No.426 RN Coastal Torpedo Bomber Group" "No.427 RN Coastal Torpedo Bomber Group" "No.428 RN Coastal Torpedo Bomber Group" "No.429 RN Coastal Torpedo Bomber Group" "No.430 RN Coastal Torpedo Bomber Group" "No.431 RN Coastal Torpedo Bomber Group" "No.432 RN Coastal Torpedo Bomber Group" "No.433 RN Coastal Torpedo Bomber Group" "No.434 RN Coastal Torpedo Bomber Group" "No.435 RN Coastal Torpedo Bomber Group" 
-		"No.436 RN Coastal Torpedo Bomber Group" "No.437 RN Coastal Torpedo Bomber Group" "No.438 RN Coastal Torpedo Bomber Group" "No.439 RN Coastal Torpedo Bomber Group" "No.444 RN Coastal Torpedo Bomber Group" "No.445 RN Coastal Torpedo Bomber Group" "No.446 RN Coastal Torpedo Bomber Group" "No.447 RN Coastal Torpedo Bomber Group" "No.448 RN Coastal Torpedo Bomber Group" "No.449 RN Coastal Torpedo Bomber Group" "No.450 RN Coastal Torpedo Bomber Group" 
-		"No.451 RN Coastal Torpedo Bomber Group" 
+		"皇家海军第15海防轰炸大队" "皇家海军第16海防轰炸大队" "皇家海军第201海防轰炸大队" "皇家海军第205海防轰炸大队" "皇家海军第17海防轰炸大队" "皇家海军第20海防轰炸大队" "皇家海军第21海防轰炸大队" "皇家海军第155海防轰炸大队" "皇家海军第156海防轰炸大队" "皇家海军第157海防轰炸大队" "皇家海军第158海防轰炸大队" 
+		"皇家海军第159海防轰炸大队" "皇家海军第160海防轰炸大队" "皇家海军第161海防轰炸大队" "皇家海军第162海防轰炸大队" "皇家海军第163海防轰炸大队" "皇家海军第164海防轰炸大队" "皇家海军第165海防轰炸大队" "皇家海军第166海防轰炸大队" "皇家海军第167海防轰炸大队" "皇家海军第168海防轰炸大队" "皇家海军第423海防轰炸大队" 
+		"皇家海军第426海防轰炸大队" "皇家海军第427海防轰炸大队" "皇家海军第428海防轰炸大队" "皇家海军第429海防轰炸大队" "皇家海军第430海防轰炸大队" "皇家海军第431海防轰炸大队" "皇家海军第432海防轰炸大队" "皇家海军第433海防轰炸大队" "皇家海军第434海防轰炸大队" "皇家海军第435海防轰炸大队" "皇家海军第436海防轰炸大队" 
+		"皇家海军第437海防轰炸大队" "皇家海军第438海防轰炸大队" "皇家海军第439海防轰炸大队" "皇家海军第444海防轰炸大队" "皇家海军第445海防轰炸大队" "皇家海军第446海防轰炸大队" "皇家海军第447海防轰炸大队" "皇家海军第448海防轰炸大队" "皇家海军第449海防轰炸大队" "皇家海军第450海防轰炸大队" "皇家海军第451海防轰炸大队" 
+		"皇家海军第18鱼雷机大队" "皇家海军第19鱼雷机大队" "皇家海军第170鱼雷机大队" "皇家海军第171鱼雷机大队" "皇家海军第145鱼雷机大队" "皇家海军第146鱼雷机大队" "皇家海军第147鱼雷机大队" "皇家海军第148鱼雷机大队" "皇家海军第149鱼雷机大队" "皇家海军第150鱼雷机大队" "皇家海军第151鱼雷机大队" 
+		"皇家海军第152鱼雷机大队" "皇家海军第153鱼雷机大队" "皇家海军第154鱼雷机大队" "皇家海军第172鱼雷机大队" "皇家海军第173鱼雷机大队" "皇家海军第174鱼雷机大队" "皇家海军第175鱼雷机大队" "皇家海军第176鱼雷机大队" "皇家海军第177鱼雷机大队" "皇家海军第178鱼雷机大队" "皇家海军第179鱼雷机大队" 
+		"皇家海军第423鱼雷机大队" "皇家海军第426鱼雷机大队" "皇家海军第427鱼雷机大队" "皇家海军第428鱼雷机大队" "皇家海军第429鱼雷机大队" "皇家海军第430鱼雷机大队" "皇家海军第431鱼雷机大队" "皇家海军第432鱼雷机大队" "皇家海军第433鱼雷机大队" "皇家海军第434鱼雷机大队" "皇家海军第435鱼雷机大队" 
+		"皇家海军第436鱼雷机大队" "皇家海军第437鱼雷机大队" "皇家海军第438鱼雷机大队" "皇家海军第439鱼雷机大队" "皇家海军第444鱼雷机大队" "皇家海军第445鱼雷机大队" "皇家海军第446鱼雷机大队" "皇家海军第447鱼雷机大队" "皇家海军第448鱼雷机大队" "皇家海军第449鱼雷机大队" "皇家海军第450鱼雷机大队" 
+		"皇家海军第451鱼雷机大队" 
 	}
 	cas = {
-		"No.1 RAF Dive Bomber Group" "No.2 RAF Dive Bomber Group" "No.3 RAF Dive Bomber Group" "No.4 RAF Dive Bomber Group" "No.5 RAF Dive Bomber Group" "No.52 RAF Dive Bomber Group" "No.53 RAF Dive Bomber Group" "No.54 RAF Dive Bomber Group" "No.55 RAF Dive Bomber Group" "No.56 RAF Dive Bomber Group" "No.57 RAF Dive Bomber Group" 
-		"No.58 RAF Dive Bomber Group" "No.59 RAF Dive Bomber Group" "No.60 RAF Dive Bomber Group" "No.61 RAF Dive Bomber Group" "No.62 RAF Dive Bomber Group" "No.63 RAF Dive Bomber Group" "No.64 RAF Dive Bomber Group" "No.65 RAF Dive Bomber Group" "No.66 RAF Dive Bomber Group" "No.67 RAF Dive Bomber Group" "No.68 RAF Dive Bomber Group" 
-		"No.69 RAF Dive Bomber Group" "No.70 RAF Dive Bomber Group" "No.71 RAF Dive Bomber Group" "No.72 RAF Dive Bomber Group" "No.135 RAF Dive Bomber Group" "No.136 RAF Dive Bomber Group" "No.137 RAF Dive Bomber Group" "No.138 RAF Dive Bomber Group" "No.139 RAF Dive Bomber Group" 
+		"皇家空军第1俯冲轰炸机大队" "皇家空军第2俯冲轰炸机大队" "皇家空军第3俯冲轰炸机大队" "皇家空军第4俯冲轰炸机大队" "皇家空军第5俯冲轰炸机大队" "皇家空军第52俯冲轰炸机大队" "皇家空军第53俯冲轰炸机大队" "皇家空军第54俯冲轰炸机大队" "皇家空军第55俯冲轰炸机大队" "皇家空军第56俯冲轰炸机大队" "皇家空军第57俯冲轰炸机大队" 
+		"皇家空军第58俯冲轰炸机大队" "皇家空军第59俯冲轰炸机大队" "皇家空军第60俯冲轰炸机大队" "皇家空军第61俯冲轰炸机大队" "皇家空军第62俯冲轰炸机大队" "皇家空军第63俯冲轰炸机大队" "皇家空军第64俯冲轰炸机大队" "皇家空军第65俯冲轰炸机大队" "皇家空军第66俯冲轰炸机大队" "皇家空军第67俯冲轰炸机大队" "皇家空军第68俯冲轰炸机大队" 
+		"皇家空军第69俯冲轰炸机大队" "皇家空军第70俯冲轰炸机大队" "皇家空军第71俯冲轰炸机大队" "皇家空军第72俯冲轰炸机大队" "皇家空军第135俯冲轰炸机大队" "皇家空军第136俯冲轰炸机大队" "皇家空军第137俯冲轰炸机大队" "皇家空军第138俯冲轰炸机大队" "皇家空军第139俯冲轰炸机大队" 
 	}
 	transport_plane = {
-		"No.46 Military Transport Group" "No.216 Military Transport Group" "No.38 Military Transport Group" "No.180 Military Transport Group" "No.181 Military Transport Group" "No.182 Military Transport Group" "No.183 Military Transport Group" "No.184 Military Transport Group" "No.185 Military Transport Group" "No.186 Military Transport Group" "No.187 Military Transport Group" 
-		"No.188 Military Transport Group" "No.189 Military Transport Group" "No.190 Military Transport Group" "No.191 Military Transport Group" "No.192 Military Transport Group" "No.193 Military Transport Group" "No.194 Military Transport Group" "No.195 Military Transport Group" "No.196 Military Transport Group" "No.197 Military Transport Group" "No.198 Military Transport Group" 
-		"No.199 Military Transport Group" 
+		"皇家空军第46军事运输大队" "皇家空军第216军事运输大队" "皇家空军第38军事运输大队" "皇家空军第180军事运输大队" "皇家空军第181军事运输大队" "皇家空军第182军事运输大队" "皇家空军第183军事运输大队" "皇家空军第184军事运输大队" "皇家空军第185军事运输大队" "皇家空军第186军事运输大队" "皇家空军第187军事运输大队" 
+		"皇家空军第188军事运输大队" "皇家空军第189军事运输大队" "皇家空军第190军事运输大队" "皇家空军第191军事运输大队" "皇家空军第192军事运输大队" "皇家空军第193军事运输大队" "皇家空军第194军事运输大队" "皇家空军第195军事运输大队" "皇家空军第196军事运输大队" "皇家空军第197军事运输大队" "皇家空军第198军事运输大队" 
+		"皇家空军第199军事运输大队" 
 	}
 	battleship = {
-		"HMS King George V" "HMS Prince of Wales" "HMS Duke of York" "HMS Anson" "HMS Howe"
-		"HMS Lion" "HMS Temeraire" "HMS Conqueror" "HMS Thunderer"
-		"HMS Vanguard" "HMS Victoria" "HMS Vindictive" "HMS Vehement" "HMS Vigilant"
-		"HMS Bellerophon" "HMS Collingwood" "HMS St. Vincent" "HMS Agamemnon"
-		"HMS Orion" "HMS Monarch" "HMS Conqueror" "HMS Thunderer"
-		"HMS Iron Duke" "HMS Marlborough" "HMS Benbow" "HMS Emperor of India"
-		"HMS Queen Elizabeth" "HMS Warspite" "HMS Valiant" "HMS Barham" "HMS Malaya" "HMS Agincourt"
-		"HMS Revenge" "HMS Royal Oak" "HMS Royal Sovereign" "HMS Resolution" "HMS Ramillies" "HMS Renown" "HMS Repulse" "HMS Resistance"
-		"HMS St. Andrew" "HMS St. George" "HMS St. David" "HMS St. Patrick"
-		"HMS Nelson" "HMS Rodney" 
-		"HMS Jellicoe" "HMS Beatty" "HMS Dreadnought" "HMS Neptune" 
-		"HMS Colossus" "HMS Hercules" "HMS Orion" "HMS Monarch" "HMS Ajax" "HMS Centurion" "HMS Audacious" "HMS Iron Duke" "HMS Marlborough" "HMS Benbow" "HMS Emperor of India" 
-		"HMS Queen Elizabeth" "HMS Warspite" "HMS Valiant" "HMS Barham" "HMS Malaya" "HMS Agincourt" "HMS Revenge" "HMS Royal Oak" "HMS Royal Sovereign" "HMS Resolution" "HMS Ramillies" 
-		"HMS Renown" "HMS Repulse" "HMS Resistance" "HMS Erin" "HMS Canada" "HMS Nelson" "HMS Rodney" 
+		"英王乔治五世号" "威尔士亲王号" "约克公爵号" "安森号" "豪号" "狮号" "鲁莽号" "征服者号" "雷神号" "前卫号" "杰利科号" 
+		"贝蒂号" "圣乔治号" "圣安德鲁号" "圣戴维斯号" "圣帕特里克号" "无畏号" "柏勒罗丰号" "壮丽号" "科林伍德号" "圣文森特号" "海王星号" 
+		"巨人号" "大力神号" "猎户座号" "君主号" "阿贾克斯号" "百夫长号" "大胆号" "铁公爵号" "马尔博罗号" "本鲍号" "印度皇帝号" 
+		"伊丽莎白女王号" "厌战号" "勇士号" "巴勒姆号" "马来亚号" "阿金库尔号" "复仇号" "皇家橡树号" "君权号" "决心号" "拉米利斯号" 
+		"声望号" "反击号" "坚定号" "爱尔兰号" "加拿大号" "纳尔逊号" "罗德尼号" 
 	}
 	light_cruiser = {
-		"HMS Penelope" "HMS Aurora"
- 		"HMS Southampton" "HMS Newcastle" "HMS Sheffield" "HMS Glasgow" "HMS Birmingham"
-		"HMS Gloucester" "HMS Manchester" "HMS Liverpool"
-		"HMS Edinburgh" "HMS Belfast"
-		"HMS Dido" "HMS Bonaventure" "HMS Naiad" "HMS Phoebe" "HMS Hermione" "HMS Euryalus" "HMS Charybdis" "HMS Cleopatra" "HMS Sirius" "HMS Scylla" "HMS Argonaut"
-		"HMS Fiji" "HMS Kenya" "HMS Nigeria" "HMS Mauritius" "HMS Trinidad" "HMS Gambia" "HMS Jamaica" "HMS Bermuda"
-		"HMS Ceylon" "HMS Newfoundland" "HMS Uganda"
-		"HMS Bellona" "HMS Royalist" "HMS Spartan" "HMS Black Prince" "HMS Diadem"
-		"HMS Neptune" "HMS Centurion" "HMS Edgar" "HMS Mars" "HMS Minotaur" "HMS Bellerophon"
-		"HMS Swiftsure" "HMS Minotaur" "HMS Superb" "HMS Hawke" "HMS Tiger" "HMS Blake" "HMS Defence" "HMS Bellerophon"
-		"HMS Tiger" "HMS Lion" "HMS Blake"
-		"HMS Arethusa" "HMS Aurora" "HMS Galatea" "HMS Inconstant" "HMS Penelope" "HMS Phateon" "HMS Royalist" "HMS Undaunted"
-		"HMS Caroline" "HMS Carysfort" "HMS Cleopatra" "HMS Comus" "HMS Conquest" "HMS Cordelia" "HMS Calliope" "HMS Champion" "HMS Cambrian" "HMS Canterbury" "HMS Castor" "HMS Constance" "HMS Centaur" "HMS Concord"	"HMS Caledon" "HMS Calypso" "HMS Cassandra" "HMS Caradoc" "HMS Ceres" "HMS Cardiff" "HMS Curlew" "HMS Coventry" "HMS Curacoa" "HMS Cairo" "HMS Calcutta" "HMS Capetown" "HMS Carlisle" "HMS Colombo"
-		"HMS Danae" "HMS Dragon" "HMS Dauntless" "HMS Delhi" "HMS Dunedin" "HMS Durban" "HMS Despatch" "HMS Diomede" "HMS Daedalus" "HMS Daring" "HMS Desperate" "HMS Dryad" 
-		"HMS Emerald" "HMS Enterprise" "HMS Euphrates"
-		"HMS Leander" "HMS Achilles" "HMS Ajax" "HMS Neptune" "HMS Orion" "HMS Amphion" "HMS Apollo" "HMS Phaeton"	
-		"HMS Arethusa" "HMS Galatea" "HMS Penelope" "HMS Aurora" 		
+		"佩内洛普号" "曙光号" "南安普顿号" "纽卡斯尔号" "谢菲尔德号" "格拉斯哥号" "伯明翰号" "格洛斯特号" "曼彻斯特号" "利物浦号" "爱丁堡号" 
+		"贝尔法斯特号" "狄多号" "冒险号" "水神号" "月亮女神号" "赫敏号" "尤里亚勒斯号" "卡里布迪斯号" "克蕾奥帕特拉号" "天狼星号" "六头女妖号" 
+		"亚尔古号" "斐济号" "肯尼亚号" "尼日利亚号" "毛里求斯号" "特立尼达号" "冈比亚号" "牙买加号" "百慕大号" "乌干达号" "纽芬兰号" 
+		"锡兰号" "女战神号" "保皇党号" "斯巴达号" "黑王子号" "王冠号" "敏捷号" "米诺陶号" "虎号" "柏勒罗丰号" "壮丽号" 
+		"布莱克号" "防御号" "霍克号" "海王星号" "百夫长号" "埃德加号" "火星号" "布里斯托尔号" "维茅斯号" "法尔茅斯号" "达特茅斯号" 
+		"雅茅斯号" "查塔姆号" "都柏林号" "洛威斯托夫号" "诺丁汉号" "无常号" "大胆号" "卡洛琳号" "卡里斯堡号" "宴会神号" "征服号" 
+		"科迪莉亚号" "卡利奥普号" "冠军号" "伯肯海德号" "切斯特号" "坎伯兰号" "海狸号" "康斯坦斯号" "坎特伯雷号" "人马座号" "康科德号" 
+		"卡里登号" "卡里普索号" "卡拉道克号" "卡桑德拉号" "谷物女神号" "加的夫号" "麻鹬号" "考文垂号" "柑香酒号" "开普敦号" "卡莱尔号" 
+		"加尔各答号" "开罗号" "哥伦布号" "达娜厄号" "龙号" "无惧号" "德里号" "达尼丁号" "德班号" "黛丝帕茨号" "狄俄墨得斯号" 
+		"代达罗斯号" "勇敢号" "绝望号" "树妖号" "翡翠号" "企业号" "幼发拉底号" "阿贾克斯号" "猎户座号" "阿波罗号" "安菲翁号" 
+		"法厄同号" "林仙号" "格拉蒂娅号" 
 	}
 	heavy_cruiser = {
-		"HMS Albemarle" "HMS Blake" "HMS Cornwallis" "HMS Hawke"
-		"HMS Lancaster" "HMS Winchester" "HMS Chichester" "HMS Worcester"
-		"HMS Weymouth" "HMS Falmouth" "HMS Plymouth" "HMS Portsmouth"
-		"HMS Minotaur" "HMS Shannon" "HMS Defence"
-		"HMS Hawkins" "HMS Cavendish" "HMS Raleigh" "HMS Frobisher" "HMS Effingham"
-		"HMS Kent" "HMS Berwick" "HMS Cornwall" "HMS Cumberland" "HMS Suffolk"
-		"HMS London" "HMS Devonshire" "HMS Sussex" "HMS Shropshire" 
-		"HMS Norfolk" "HMS Dorsetshire"
-		"HMS York" "HMS Exeter" 
-		"HMS Surrey" "HMS Northumberland" 
-		"HMS Hampshire" "HMS Nottingham" "HMS Essex" "HMS Middlesex"		
+		"萨里号" "诺森伯兰号" "米德萨斯号" "伯克郡号" "柴郡号" "埃塞克斯号" "兰开夏号" "威尔特郡号" "卡文迪许号" "豪金斯号" "罗利号" 
+		"弗罗比斯号" "英富汉姆号" "肯特号" "贝里克号" "康沃尔号" "坎伯兰号" "萨福克号" "伦敦号" "德文郡号" "苏塞克斯号" "什罗普郡号" 
+		"诺福克号" "多赛特郡号" "约克号" "埃克塞特号" 
 	}
 	battlecruiser = {
-		"HMS Invincible" "HMS Indomitable" "HMS Inflexible" "HMS Indefatigable"
-		"HMS Lion" "HMS Princess Royal" "HMS Queen Mary"
-		"HMS Tiger" "HMS Leopard"
-		"HMS Renown" "HMS Repulse" "HMS Resistance"
-		"HMS Furious" "HMS Courageous" "HMS Glorious" 
-		"HMS Hood" "HMS Rodney" "HMS Howe" "HMS Anson" 
+		"无敌号" "不挠号" "不屈号" "不倦号" "狮号" "皇家公主号" "玛丽女王号" "虎号" "声望号" "反击号" "勇敢号"  "耐克号"
+		"光荣号" "暴怒号" "胡德号" "罗德尼号" "豪号" "安森号" 
 	}
 	destroyer = {
-		"23rd Destroyer Flotilla" "24th Destroyer Flotilla" "25th Destroyer Flotilla" "26th Destroyer Flotilla" "27th Destroyer Flotilla" "28th Destroyer Flotilla" "29th Destroyer Flotilla" "30th Destroyer Flotilla" "31st Destroyer Flotilla" "32nd Destroyer Flotilla" "33rd Destroyer Flotilla" 
-		"34th Destroyer Flotilla" "35th Destroyer Flotilla" "36th Destroyer Flotilla" "37th Destroyer Flotilla" "38th Destroyer Flotilla" "39th Destroyer Flotilla" "40th Destroyer Flotilla" "41st Destroyer Flotilla" "42nd Destroyer Flotilla" "43rd Destroyer Flotilla" "44th Destroyer Flotilla" 
-		"45th Destroyer Flotilla" "46th Destroyer Flotilla" "47th Destroyer Flotilla" "48th Destroyer Flotilla" "49th Destroyer Flotilla" "50th Destroyer Flotilla" "51st Destroyer Flotilla" "52nd Destroyer Flotilla" "53rd Destroyer Flotilla" "54th Destroyer Flotilla" "55th Destroyer Flotilla" 
-		"56th Destroyer Flotilla" "57th Destroyer Flotilla" "58th Destroyer Flotilla" "59th Destroyer Flotilla" "60th Destroyer Flotilla" "61st Destroyer Flotilla" "62nd Destroyer Flotilla" "63rd Destroyer Flotilla" "64th Destroyer Flotilla" "65th Destroyer Flotilla" "66th Destroyer Flotilla" 
-		"67th Destroyer Flotilla" "68th Destroyer Flotilla" "69th Destroyer Flotilla" "70th Destroyer Flotilla" "71st Destroyer Flotilla" "72nd Destroyer Flotilla" "73rd Destroyer Flotilla" "74th Destroyer Flotilla" "75th Destroyer Flotilla" "76th Destroyer Flotilla" "77th Destroyer Flotilla" 
-		"78th Destroyer Flotilla" "79th Destroyer Flotilla" "80th Destroyer Flotilla" "81st Destroyer Flotilla" "82nd Destroyer Flotilla" "83rd Destroyer Flotilla" "84th Destroyer Flotilla" "85th Destroyer Flotilla" "86th Destroyer Flotilla" "87th Destroyer Flotilla" "88th Destroyer Flotilla" 
-		"89th Destroyer Flotilla" "90th Destroyer Flotilla" "91st Destroyer Flotilla" "92nd Destroyer Flotilla" "93rd Destroyer Flotilla" "94th Destroyer Flotilla" "95th Destroyer Flotilla" "96th Destroyer Flotilla" "97th Destroyer Flotilla" "98th Destroyer Flotilla" "99th Destroyer Flotilla" 
-		"100th Destroyer Flotilla" 
-		"1st Destroyer Flotilla" "2nd Destroyer Flotilla" "3rd Destroyer Flotilla" "4th Destroyer Flotilla" "5th Destroyer Flotilla" "6th Destroyer Flotilla" "7th Destroyer Flotilla" "8th Destroyer Flotilla" "9th Destroyer Flotilla" "10th Destroyer Flotilla" "11th Destroyer Flotilla" 
-		"12th Destroyer Flotilla" "13th Destroyer Flotilla" "14th Destroyer Flotilla" "15th Destroyer Flotilla" "16th Destroyer Flotilla" "17th Destroyer Flotilla" "18th Destroyer Flotilla" "19th Destroyer Flotilla" "20th Destroyer Flotilla" "21st Destroyer Flotilla" "22nd Destroyer Flotilla" 
+		"1st驱逐舰队" "2nd驱逐舰队" "3rd驱逐舰队" "4th驱逐舰队" "5th驱逐舰队" "6th驱逐舰队" "7th驱逐舰队" "8th驱逐舰队" "9th驱逐舰队" "10th驱逐舰队" "11th驱逐舰队" 
+		"12th驱逐舰队" "13th驱逐舰队" "14th驱逐舰队" "15th驱逐舰队" "16th驱逐舰队" "17th驱逐舰队" "18th驱逐舰队" "19th驱逐舰队" "20th驱逐舰队" "21st驱逐舰队" "22nd驱逐舰队" 
+		"23rd驱逐舰队" "24th驱逐舰队" "25th驱逐舰队" "26th驱逐舰队" "27th驱逐舰队" "28th驱逐舰队" "29th驱逐舰队" "30th驱逐舰队" "31st驱逐舰队" "32nd驱逐舰队" "33rd驱逐舰队" 
+		"34th驱逐舰队" "35th驱逐舰队" "36th驱逐舰队" "37th驱逐舰队" "38th驱逐舰队" "39th驱逐舰队" "40th驱逐舰队" "41st驱逐舰队" "42nd驱逐舰队" "43rd驱逐舰队" "44th驱逐舰队" 
+		"45th驱逐舰队" "46th驱逐舰队" "47th驱逐舰队" "48th驱逐舰队" "49th驱逐舰队" "50th驱逐舰队" "51st驱逐舰队" "52nd驱逐舰队" "53rd驱逐舰队" "54th驱逐舰队" "55th驱逐舰队" 
+		"56th驱逐舰队" "57th驱逐舰队" "58th驱逐舰队" "59th驱逐舰队" "60th驱逐舰队" "61st驱逐舰队" "62nd驱逐舰队" "63rd驱逐舰队" "64th驱逐舰队" "65th驱逐舰队" "66th驱逐舰队" 
+		"67th驱逐舰队" "68th驱逐舰队" "69th驱逐舰队" "70th驱逐舰队" "71st驱逐舰队" "72nd驱逐舰队" "73rd驱逐舰队" "74th驱逐舰队" "75th驱逐舰队" "76th驱逐舰队" "77th驱逐舰队" 
+		"78th驱逐舰队" "79th驱逐舰队" "80th驱逐舰队" "81st驱逐舰队" "82nd驱逐舰队" "83rd驱逐舰队" "84th驱逐舰队" "85th驱逐舰队" "86th驱逐舰队" "87th驱逐舰队" "88th驱逐舰队" 
+		"89th驱逐舰队" "90th驱逐舰队" "91st驱逐舰队" "92nd驱逐舰队" "93rd驱逐舰队" "94th驱逐舰队" "95th驱逐舰队" "96th驱逐舰队" "97th驱逐舰队" "98th驱逐舰队" "99th驱逐舰队" 
+		"100th驱逐舰队" 
 	}
 	carrier = {
-		"HMS Ark Royal"
-		"HMS Illustrious" "HMS Victorious" "HMS Formidable" "HMS Indomitable"
-		"HMS Implacable" "HMS Indefatigable"
-		"HMS Audacious" "HMS Irresistible" "HMS Ark Royal" "HMS Eagle"
-		"HMS Malta" "HMS Gibraltar" "HMS New Zealand" "HMS Africa" 
-		"HMS Courageous" "HMS Glorious" "HMS Furious"
+		"皇家方舟号" "卓越号" "胜利号" "可畏号" "不屈号" "怨仇号" "不倦号" "独角兽号" "鹰号" "大胆号" "马耳他号" 
+		"直布罗陀号" "新西兰号" "非洲号" "阿尔比翁号" "堡垒号" "人马座号" "竞技神号" "无敌号" "百眼巨人号" "暴怒号" "勇敢号" 
+		"光荣号" 
 	}
 	escort_carrier = {
-		"HMS Unicorn" 
-		"HMS Colossus" "HMS Glory" "HMS Ocean" "HMS Perseus" "HMS Pioneer" "HMS Theseus" "HMS Triumph" "HMS Vengeance" "HMS Venerable" "HMS Warrior"
-		"HMS Majestic" "HMS Magnificent" "HMS Terrible" "HMS Powerful" "HMS Hercules" "HMS Leviathan" 
-		"HMS Centaur" "HMS Albion" "HMS Bulwark" "HMS Hermes" "HMS Elephant" "HMS Monmouth" "HMS Arrogant" "HMS Polyphemus"
-		"HMS Vindictive"
- 		"HMS Argus"
-		"HMS Eagle"
-		"HMS Hermes"
+		"独角兽号" "巨人号" "复仇号" "可敬号" "火星号" "荣耀号" "海洋号" "埃德加号" "忒修斯号" "凯旋号" "勇士号" 
+		"宏伟号" "可怖号" "尊严号" "有力号" "大力神号" "利维坦号" "人马座号" "阿尔比翁号" "堡垒号" "傲慢号" "蒙默斯号" 
+		"独眼巨神号" "无敌号" "卓越号" 
 	}
 	submarine = {
-		"11th Submarine Flotilla" "12th Submarine Flotilla" "13th Submarine Flotilla" "14th Submarine Flotilla" "15th Submarine Flotilla" "16th Submarine Flotilla" "17th Submarine Flotilla" "18th Submarine Flotilla" "19th Submarine Flotilla" "20th Submarine Flotilla" "21th Submarine Flotilla" "22th Submarine Flotilla" 
-		"23th Submarine Flotilla" "24th Submarine Flotilla" "25th Submarine Flotilla" "26th Submarine Flotilla" "27th Submarine Flotilla" "28th Submarine Flotilla" "29th Submarine Flotilla" "30th Submarine Flotilla" "31th Submarine Flotilla" "32th Submarine Flotilla" "33th Submarine Flotilla" 
-		"34th Submarine Flotilla" "35th Submarine Flotilla" "36th Submarine Flotilla" "37th Submarine Flotilla" "38th Submarine Flotilla" "39th Submarine Flotilla" "40th Submarine Flotilla" "41th Submarine Flotilla" "42th Submarine Flotilla" "43th Submarine Flotilla" "44th Submarine Flotilla" 
-		"45th Submarine Flotilla" "46th Submarine Flotilla" "47th Submarine Flotilla" "48th Submarine Flotilla" "49th Submarine Flotilla" "50th Submarine Flotilla" "51th Submarine Flotilla" "52th Submarine Flotilla" "53th Submarine Flotilla" "54th Submarine Flotilla" "55th Submarine Flotilla" 
-		"56th Submarine Flotilla" "57th Submarine Flotilla" "58th Submarine Flotilla" "59th Submarine Flotilla" "60th Submarine Flotilla" "61th Submarine Flotilla" "62th Submarine Flotilla" "63th Submarine Flotilla" "64th Submarine Flotilla" "65th Submarine Flotilla" "66th Submarine Flotilla" 
-		"67th Submarine Flotilla" "68th Submarine Flotilla" "69th Submarine Flotilla" "70th Submarine Flotilla" "71th Submarine Flotilla" "72th Submarine Flotilla" "73th Submarine Flotilla" "74th Submarine Flotilla" "75th Submarine Flotilla" "76th Submarine Flotilla" "77th Submarine Flotilla" 
-		"78th Submarine Flotilla" "79th Submarine Flotilla" "80th Submarine Flotilla" "81th Submarine Flotilla" "82th Submarine Flotilla" "83th Submarine Flotilla" "84th Submarine Flotilla" "85th Submarine Flotilla" "86th Submarine Flotilla" "87th Submarine Flotilla" "88th Submarine Flotilla" 
-		"89th Submarine Flotilla" "90th Submarine Flotilla" "91th Submarine Flotilla" "92th Submarine Flotilla" "93th Submarine Flotilla" "94th Submarine Flotilla" "95th Submarine Flotilla" "96th Submarine Flotilla" "97th Submarine Flotilla" "98th Submarine Flotilla" "99th Submarine Flotilla" 
-		"100th Submarine Flotilla" "1st Submarine Flotilla" "2nd Submarine Flotilla" "3rd Submarine Flotilla" "4th Submarine Flotilla" "5th Submarine Flotilla" "6th Submarine Flotilla" "7th Submarine Flotilla" "8th Submarine Flotilla" "9th Submarine Flotilla" "10th Submarine Flotilla" 
+		"1st潜艇编队" "2nd潜艇编队" "3rd潜艇编队" "4th潜艇编队" "5th潜艇编队" "6th潜艇编队" "7th潜艇编队" "8th潜艇编队" "9th潜艇编队" "10th潜艇编队" "11th潜艇编队" 
+		"12th潜艇编队" "13th潜艇编队" "14th潜艇编队" "15th潜艇编队" "16th潜艇编队" "17th潜艇编队" "18th潜艇编队" "19th潜艇编队" "20th潜艇编队" "21th潜艇编队" "22th潜艇编队" 
+		"23th潜艇编队" "24th潜艇编队" "25th潜艇编队" "26th潜艇编队" "27th潜艇编队" "28th潜艇编队" "29th潜艇编队" "30th潜艇编队" "31th潜艇编队" "32th潜艇编队" "33th潜艇编队" 
+		"34th潜艇编队" "35th潜艇编队" "36th潜艇编队" "37th潜艇编队" "38th潜艇编队" "39th潜艇编队" "40th潜艇编队" "41th潜艇编队" "42th潜艇编队" "43th潜艇编队" "44th潜艇编队" 
+		"45th潜艇编队" "46th潜艇编队" "47th潜艇编队" "48th潜艇编队" "49th潜艇编队" "50th潜艇编队" "51th潜艇编队" "52th潜艇编队" "53th潜艇编队" "54th潜艇编队" "55th潜艇编队" 
+		"56th潜艇编队" "57th潜艇编队" "58th潜艇编队" "59th潜艇编队" "60th潜艇编队" "61th潜艇编队" "62th潜艇编队" "63th潜艇编队" "64th潜艇编队" "65th潜艇编队" "66th潜艇编队" 
+		"67th潜艇编队" "68th潜艇编队" "69th潜艇编队" "70th潜艇编队" "71th潜艇编队" "72th潜艇编队" "73th潜艇编队" "74th潜艇编队" "75th潜艇编队" "76th潜艇编队" "77th潜艇编队" 
+		"78th潜艇编队" "79th潜艇编队" "80th潜艇编队" "81th潜艇编队" "82th潜艇编队" "83th潜艇编队" "84th潜艇编队" "85th潜艇编队" "86th潜艇编队" "87th潜艇编队" "88th潜艇编队" 
+		"89th潜艇编队" "90th潜艇编队" "91th潜艇编队" "92th潜艇编队" "93th潜艇编队" "94th潜艇编队" "95th潜艇编队" "96th潜艇编队" "97th潜艇编队" "98th潜艇编队" "99th潜艇编队" 
+		"100th潜艇编队" 
 	}
 	transport_ship = {
-		"Suffolk Flotilla" "Trojan Star Flotilla" "Queen Mary Flotilla" "Dominion Monarch Flotilla" "Empire Arquebus Flotilla" "Hororata Flotilla" "Empress of Canada Flotilla" "Clan Macauley Flotilla" "Empire Captain Flotilla" "Andes Flotilla" "Empire Charmain Flotilla" 
-		"Maloja Flotilla" "Empire Chieftain Flotilla" "Stirling Castle Flotilla" "Empire Splendour Flotilla" "Sam Torch Flotilla" "Fort Dunvegan Flotilla" "Durham Flotilla" "Nieuw Amsterdam Flotilla" "Strathenden Flotilla" "Fort Edmonton Flotilla" "Lars Bay Flotilla" 
-		"Fort Langley Flotilla" "King Ethelred Flotilla" "Henry the VIII Flotilla" "The Bishops Flotilla" "Empire of India Flotilla" "Empire of Africa Flotilla" "Royal Caledonian Flotilla" "Samfleet Flotilla" "Samfreedom Flotilla" "Samfoyle Flotilla" "Samconstant Flotilla" 
-		"Samleyte Flotilla" "Samfaithful Flotilla" "Samoresby Flotilla" "1st Transport Flotilla" "2nd Transport Flotilla" "3rd Transport Flotilla" "4th Transport Flotilla" "5th Transport Flotilla" "6th Transport Flotilla" "7th Transport Flotilla" "8th Transport Flotilla" 
-		"9th Transport Flotilla" "10th Transport Flotilla" "11th Transport Flotilla" "12th Transport Flotilla" "13th Transport Flotilla" "14th Transport Flotilla" "15th Transport Flotilla" "16th Transport Flotilla" "17th Transport Flotilla" "18th Transport Flotilla" "19th Transport Flotilla" 
-		"20th Transport Flotilla" "21st Transport Flotilla" "22nd Transport Flotilla" "23rd Transport Flotilla" "24th Transport Flotilla" "25th Transport Flotilla" "26th Transport Flotilla" "27th Transport Flotilla" "28th Transport Flotilla" "29th Transport Flotilla" "30th Transport Flotilla" 
-		"31st Transport Flotilla" "32nd Transport Flotilla" "33rd Transport Flotilla" "34th Transport Flotilla" "35th Transport Flotilla" "36th Transport Flotilla" "37th Transport Flotilla" "38th Transport Flotilla" "39th Transport Flotilla" "40th Transport Flotilla" "41st Transport Flotilla" 
-		"42nd Transport Flotilla" "43rd Transport Flotilla" "44th Transport Flotilla" "45th Transport Flotilla" "46th Transport Flotilla" "47th Transport Flotilla" "48th Transport Flotilla" "49th Transport Flotilla" "50th Transport Flotilla" "51st Transport Flotilla" "52nd Transport Flotilla" 
-		"53rd Transport Flotilla" "54th Transport Flotilla" "55th Transport Flotilla" "56th Transport Flotilla" "57th Transport Flotilla" "58th Transport Flotilla" "59th Transport Flotilla" "60th Transport Flotilla" "61st Transport Flotilla" "62nd Transport Flotilla" "63rd Transport Flotilla" 
-		"64th Transport Flotilla" "65th Transport Flotilla" "66th Transport Flotilla" "67th Transport Flotilla" "68th Transport Flotilla" "69th Transport Flotilla" "70th Transport Flotilla" "71st Transport Flotilla" "72nd Transport Flotilla" "73rd Transport Flotilla" "74th Transport Flotilla" 
-		"75th Transport Flotilla" "76th Transport Flotilla" "77th Transport Flotilla" "78th Transport Flotilla" "79th Transport Flotilla" "80th Transport Flotilla" "81st Transport Flotilla" "82nd Transport Flotilla" "83rd Transport Flotilla" "84th Transport Flotilla" "85th Transport Flotilla" 
-		"86th Transport Flotilla" "87th Transport Flotilla" "88th Transport Flotilla" "89th Transport Flotilla" "90th Transport Flotilla" "91st Transport Flotilla" "92nd Transport Flotilla" "93rd Transport Flotilla" "94th Transport Flotilla" "95th Transport Flotilla" "96th Transport Flotilla" 
-		"97th Transport Flotilla" "98th Transport Flotilla" "99th Transport Flotilla" "100th Transport Flotilla" 
+		"萨福克运输舰队" "特洛伊之星运输舰队" "玛丽女王运输舰队" "君主运输舰队" "帝国火枪手运输舰队" "霍罗拉塔运输舰队" "加拿大皇后运输舰队" "柯兰麦克雷运输舰队" "帝国队长运输舰队" "安第斯运输舰队" "帝国夏尔曼运输舰队" 
+		"马洛亚运输舰队" "帝国酋长运输舰队" "斯特林堡运输舰队" "帝国荣耀运输舰队" "萨姆火炬运输舰队" "杜文根堡运输舰队" "达拉汉运输舰队" "新阿姆斯特丹运输舰队" "斯特拉登丹运输舰队" "埃德蒙顿堡运输舰队" "拉尔斯湾运输舰队" 
+		"兰利堡运输舰队" "埃塞雷德国王运输舰队" "亨利八世运输舰队" "大主教运输舰队" "印度帝国运输舰队" "非洲帝国运输舰队" "皇家苏格兰运输舰队" "萨姆运输舰队" "萨姆自由运输舰队" "萨姆福伊运输舰队" "萨姆永恒运输舰队" 
+		"萨姆莱特运输舰队" "萨姆信念运输舰队" "萨姆莫尔斯比运输舰队" "1st运输舰队" "2nd运输舰队" "3rd运输舰队" "4th运输舰队" "5th运输舰队" "6th运输舰队" "7th运输舰队" "8th运输舰队" 
+		"9th运输舰队" "10th运输舰队" "11th运输舰队" "12th运输舰队" "13th运输舰队" "14th运输舰队" "15th运输舰队" "16th运输舰队" "17th运输舰队" "18th运输舰队" "19th运输舰队" 
+		"20th运输舰队" "21st运输舰队" "22nd运输舰队" "23rd运输舰队" "24th运输舰队" "25th运输舰队" "26th运输舰队" "27th运输舰队" "28th运输舰队" "29th运输舰队" "30th运输舰队" 
+		"31st运输舰队" "32nd运输舰队" "33rd运输舰队" "34th运输舰队" "35th运输舰队" "36th运输舰队" "37th运输舰队" "38th运输舰队" "39th运输舰队" "40th运输舰队" "41st运输舰队" 
+		"42nd运输舰队" "43rd运输舰队" "44th运输舰队" "45th运输舰队" "46th运输舰队" "47th运输舰队" "48th运输舰队" "49th运输舰队" "50th运输舰队" "51st运输舰队" "52nd运输舰队" 
+		"53rd运输舰队" "54th运输舰队" "55th运输舰队" "56th运输舰队" "57th运输舰队" "58th运输舰队" "59th运输舰队" "60th运输舰队" "61st运输舰队" "62nd运输舰队" "63rd运输舰队" 
+		"64th运输舰队" "65th运输舰队" "66th运输舰队" "67th运输舰队" "68th运输舰队" "69th运输舰队" "70th运输舰队" "71st运输舰队" "72nd运输舰队" "73rd运输舰队" "74th运输舰队" 
+		"75th运输舰队" "76th运输舰队" "77th运输舰队" "78th运输舰队" "79th运输舰队" "80th运输舰队" "81st运输舰队" "82nd运输舰队" "83rd运输舰队" "84th运输舰队" "85th运输舰队" 
+		"86th运输舰队" "87th运输舰队" "88th运输舰队" "89th运输舰队" "90th运输舰队" "91st运输舰队" "92nd运输舰队" "93rd运输舰队" "94th运输舰队" "95th运输舰队" "96th运输舰队" 
+		"97th运输舰队" "98th运输舰队" "99th运输舰队" "100th运输舰队" 
+	}
+	invasion_transport_ship = {
+		"萨福克运输舰队" "特洛伊之星运输舰队" "玛丽女王运输舰队" "君主运输舰队" "帝国火枪手运输舰队" "霍罗拉塔运输舰队" "加拿大皇后运输舰队" "柯兰麦克雷运输舰队" "帝国队长运输舰队" "安第斯运输舰队" "帝国夏尔曼运输舰队" 
+		"马洛亚运输舰队" "帝国酋长运输舰队" "斯特林堡运输舰队" "帝国荣耀运输舰队" "萨姆火炬运输舰队" "杜文根堡运输舰队" "达拉汉运输舰队" "新阿姆斯特丹运输舰队" "斯特拉登丹运输舰队" "埃德蒙顿堡运输舰队" "拉尔斯湾运输舰队" 
+		"兰利堡运输舰队" "埃塞雷德国王运输舰队" "亨利八世运输舰队" "大主教运输舰队" "印度帝国运输舰队" "非洲帝国运输舰队" "皇家苏格兰运输舰队" "萨姆运输舰队" "萨姆自由运输舰队" "萨姆福伊运输舰队" "萨姆永恒运输舰队" 
+		"萨姆莱特运输舰队" "萨姆信念运输舰队" "萨姆莫尔斯比运输舰队" "1st运输舰队" "2nd运输舰队" "3rd运输舰队" "4th运输舰队" "5th运输舰队" "6th运输舰队" "7th运输舰队" "8th运输舰队" 
+		"9th运输舰队" "10th运输舰队" "11th运输舰队" "12th运输舰队" "13th运输舰队" "14th运输舰队" "15th运输舰队" "16th运输舰队" "17th运输舰队" "18th运输舰队" "19th运输舰队" 
+		"20th运输舰队" "21st运输舰队" "22nd运输舰队" "23rd运输舰队" "24th运输舰队" "25th运输舰队" "26th运输舰队" "27th运输舰队" "28th运输舰队" "29th运输舰队" "30th运输舰队" 
+		"31st运输舰队" "32nd运输舰队" "33rd运输舰队" "34th运输舰队" "35th运输舰队" "36th运输舰队" "37th运输舰队" "38th运输舰队" "39th运输舰队" "40th运输舰队" "41st运输舰队" 
+		"42nd运输舰队" "43rd运输舰队" "44th运输舰队" "45th运输舰队" "46th运输舰队" "47th运输舰队" "48th运输舰队" "49th运输舰队" "50th运输舰队" "51st运输舰队" "52nd运输舰队" 
+		"53rd运输舰队" "54th运输舰队" "55th运输舰队" "56th运输舰队" "57th运输舰队" "58th运输舰队" "59th运输舰队" "60th运输舰队" "61st运输舰队" "62nd运输舰队" "63rd运输舰队" 
+		"64th运输舰队" "65th运输舰队" "66th运输舰队" "67th运输舰队" "68th运输舰队" "69th运输舰队" "70th运输舰队" "71st运输舰队" "72nd运输舰队" "73rd运输舰队" "74th运输舰队" 
+		"75th运输舰队" "76th运输舰队" "77th运输舰队" "78th运输舰队" "79th运输舰队" "80th运输舰队" "81st运输舰队" "82nd运输舰队" "83rd运输舰队" "84th运输舰队" "85th运输舰队" 
+		"86th运输舰队" "87th运输舰队" "88th运输舰队" "89th运输舰队" "90th运输舰队" "91st运输舰队" "92nd运输舰队" "93rd运输舰队" "94th运输舰队" "95th运输舰队" "96th运输舰队" 
+		"97th运输舰队" "98th运输舰队" "99th运输舰队" "100th运输舰队" 
+	}
+	assault_ship = {
+		"萨福克运输舰队" "特洛伊之星运输舰队" "玛丽女王运输舰队" "君主运输舰队" "帝国火枪手运输舰队" "霍罗拉塔运输舰队" "加拿大皇后运输舰队" "柯兰麦克雷运输舰队" "帝国队长运输舰队" "安第斯运输舰队" "帝国夏尔曼运输舰队" 
+		"马洛亚运输舰队" "帝国酋长运输舰队" "斯特林堡运输舰队" "帝国荣耀运输舰队" "萨姆火炬运输舰队" "杜文根堡运输舰队" "达拉汉运输舰队" "新阿姆斯特丹运输舰队" "斯特拉登丹运输舰队" "埃德蒙顿堡运输舰队" "拉尔斯湾运输舰队" 
+		"兰利堡运输舰队" "埃塞雷德国王运输舰队" "亨利八世运输舰队" "大主教运输舰队" "印度帝国运输舰队" "非洲帝国运输舰队" "皇家苏格兰运输舰队" "萨姆运输舰队" "萨姆自由运输舰队" "萨姆福伊运输舰队" "萨姆永恒运输舰队" 
+		"萨姆莱特运输舰队" "萨姆信念运输舰队" "萨姆莫尔斯比运输舰队" "1st运输舰队" "2nd运输舰队" "3rd运输舰队" "4th运输舰队" "5th运输舰队" "6th运输舰队" "7th运输舰队" "8th运输舰队" 
+		"9th运输舰队" "10th运输舰队" "11th运输舰队" "12th运输舰队" "13th运输舰队" "14th运输舰队" "15th运输舰队" "16th运输舰队" "17th运输舰队" "18th运输舰队" "19th运输舰队" 
+		"20th运输舰队" "21st运输舰队" "22nd运输舰队" "23rd运输舰队" "24th运输舰队" "25th运输舰队" "26th运输舰队" "27th运输舰队" "28th运输舰队" "29th运输舰队" "30th运输舰队" 
+		"31st运输舰队" "32nd运输舰队" "33rd运输舰队" "34th运输舰队" "35th运输舰队" "36th运输舰队" "37th运输舰队" "38th运输舰队" "39th运输舰队" "40th运输舰队" "41st运输舰队" 
+		"42nd运输舰队" "43rd运输舰队" "44th运输舰队" "45th运输舰队" "46th运输舰队" "47th运输舰队" "48th运输舰队" "49th运输舰队" "50th运输舰队" "51st运输舰队" "52nd运输舰队" 
+		"53rd运输舰队" "54th运输舰队" "55th运输舰队" "56th运输舰队" "57th运输舰队" "58th运输舰队" "59th运输舰队" "60th运输舰队" "61st运输舰队" "62nd运输舰队" "63rd运输舰队" 
+		"64th运输舰队" "65th运输舰队" "66th运输舰队" "67th运输舰队" "68th运输舰队" "69th运输舰队" "70th运输舰队" "71st运输舰队" "72nd运输舰队" "73rd运输舰队" "74th运输舰队" 
+		"75th运输舰队" "76th运输舰队" "77th运输舰队" "78th运输舰队" "79th运输舰队" "80th运输舰队" "81st运输舰队" "82nd运输舰队" "83rd运输舰队" "84th运输舰队" "85th运输舰队" 
+		"86th运输舰队" "87th运输舰队" "88th运输舰队" "89th运输舰队" "90th运输舰队" "91st运输舰队" "92nd运输舰队" "93rd运输舰队" "94th运输舰队" "95th运输舰队" "96th运输舰队" 
+		"97th运输舰队" "98th运输舰队" "99th运输舰队" "100th运输舰队" 
 	}
 
 }
 
+
 ministers = {
-	1000 = {
-		name = "King George VI"
-		ideology = social_conservative
-		loyalty = 1.00
-		picture = M1033
-		head_of_state = benevolent_gentleman
-		start_date = 1936.1.1
-	}
 	1001 = {
-		name = "King George V"
+		name = "乔治五世"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1001
@@ -370,34 +305,37 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1002 = {
-		name = "Stanley Baldwin"
+		name = "斯坦利·鲍德温"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1002
 		head_of_government = backroom_backstabber
+		head_of_state = backroom_backstabber
 		minister_of_security = man_of_the_people
 		start_date = 1936.1.1
+		death_date = 1942.1.1
 	}
 	1003 = {
-		name = "Robert Anthony Eden"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M1003
-		foreign_minister = ideological_crusader
-		head_of_government = political_protege
-		start_date = 1936.1.1
-	}
-	1004 = {
-		name = "Arthur Neville Chamberlain"
+		name = "内维尔·张伯伦"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1004
 		armament_minister = laissez_faires_capitalist
 		head_of_government = naive_optimist
 		start_date = 1936.1.1
+		death_date = 1942.1.1
+	}
+	1004 = {
+		name = "温斯顿·丘吉尔"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M1038
+		head_of_government = flamboyant_tough_guy
+		armament_minister = theoretical_scientist
+		start_date = 1936.1.1
 	}
 	1005 = {
-		name = "Sir John Allsebrook Simon"
+		name = "约翰·西蒙爵士"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1005
@@ -406,7 +344,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1006 = {
-		name = "Sir Hugh Francis Paget Sinclair"
+		name = "休·辛克莱爵士"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1006
@@ -414,7 +352,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1007 = {
-		name = "Sir Archibald Montgomery-Massingberd"
+		name = "蒙哥马利·马森伯德爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1007
@@ -423,7 +361,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1009 = {
-		name = "Sir Alfred Ernle Montacute Chatfield"
+		name = "查特菲尔德爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1009
@@ -432,7 +370,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1010 = {
-		name = "Sir Owen Tudor Boyd"
+		name = "欧文·博伊得爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1010
@@ -440,15 +378,27 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1031 = {
-		name = "King Edward VIII"
-		ideology = paternal_autocrat
+		name = "爱德华八世"
+		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1011
 		head_of_state = autocratic_charmer
+		head_of_state = autocratic_charmer
+		head_of_state = autocratic_charmer
+		start_date = 1936.1.1
+	}
+	1033 = {
+		name = "乔治六世"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M1033
+		head_of_state = benevolent_gentleman
+		head_of_state = benevolent_gentleman
+		head_of_state = benevolent_gentleman
 		start_date = 1936.1.1
 	}
 	1036 = {
-		name = "Aneurin Bevan"
+		name = "阿努因·贝万"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M1021
@@ -458,16 +408,16 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1038 = {
-		name = "Sir Winston Leonard Spencer-Churchill"
+		name = "安东尼·艾登"
 		ideology = social_conservative
-		loyalty = 1.00
-		picture = M1038
-		head_of_government = flamboyant_tough_guy
-		armament_minister = theoretical_scientist
+		loyalty = 0.75
+		picture = M1003
+		foreign_minister = ideological_crusader
+		head_of_government = political_protege
 		start_date = 1936.1.1
 	}
 	1040 = {
-		name = "Clement Richard Attlee"
+		name = "克莱门特·艾德礼"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M1040
@@ -476,17 +426,16 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	1042 = {
-		name = "Oswald Ernald Mosley"
+		name = "奥思沃德·莫斯利爵士"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M1012
-		head_of_state = barking_buffoon
 		head_of_government = flamboyant_tough_guy
 		armament_minister = resource_industrialist
 		start_date = 1936.1.1
 	}
 	1043 = {
-		name = "Harry Pollitt"
+		name = "哈利·波立特"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M1022
@@ -495,7 +444,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1045 = {
-		name = "Lord Edward Frederick Lindley Wood"
+		name = "哈利法克斯勋爵"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1045
@@ -504,7 +453,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	1046 = {
-		name = "John Selwyn Brooke Lloyd"
+		name = "约翰·劳埃德"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1046
@@ -512,7 +461,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	1047 = {
-		name = "Ernest Bevin"
+		name = "欧内斯特·贝文"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M1047
@@ -520,7 +469,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	1048 = {
-		name = "Herbert Stanley Morrison"
+		name = "赫伯特·莫里森"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M1048
@@ -529,7 +478,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	1049 = {
-		name = "William Joyce"
+		name = "威廉·乔伊斯"
 		ideology = fascistic
 		loyalty = 0.50
 		picture = M1013
@@ -537,7 +486,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1050 = {
-		name = "Lord Arthur Valerian Wellesley"
+		name = "阿瑟·韦尔斯利勋爵"
 		ideology = fascistic
 		loyalty = 0.50
 		picture = M1050
@@ -545,7 +494,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	1051 = {
-		name = "Lord Josslyn Victor Hay"
+		name = "埃罗尔伯爵"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M1051
@@ -553,7 +502,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	1052 = {
-		name = "Henry William Williamson"
+		name = "亨利·威廉姆森"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M1052
@@ -561,7 +510,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	1053 = {
-		name = "Robert George Grosvenor"
+		name = "威斯敏斯特公爵"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M1053
@@ -569,7 +518,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	1054 = {
-		name = "Archibald Henry Maule Ramsay"
+		name = "阿奇博尔德·拉姆赛"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M1054
@@ -577,7 +526,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	1055 = {
-		name = "Rajani Palme Dutt"
+		name = "杜德"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M1023
@@ -585,7 +534,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1056 = {
-		name = "Philip Piratin"
+		name = "菲尔·派拉丁"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M1056
@@ -593,7 +542,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	1057 = {
-		name = "Denis Nowell Pritt"
+		name = "普利特"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M1057
@@ -601,7 +550,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	1058 = {
-		name = "Douglas Frank Springhall"
+		name = "戴维·斯普林霍尔"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M1058
@@ -609,7 +558,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	1059 = {
-		name = "Ian Mikardo"
+		name = "伊安·米卡多"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M1059
@@ -617,7 +566,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	1061 = {
-		name = "Sir John Anderson"
+		name = "约翰·安德森爵士"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1061
@@ -626,7 +575,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	1062 = {
-		name = "Sir Howard Kingsley Wood"
+		name = "金斯利·伍德爵士"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1062
@@ -634,7 +583,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	1063 = {
-		name = "Lord William Maxwell Aitken"
+		name = "比弗布鲁克爵士"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1063
@@ -642,7 +591,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	1064 = {
-		name = "Richard Austen Butler"
+		name = "理查德·巴特勒"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1064
@@ -652,7 +601,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	1065 = {
-		name = "Edward Hugh John Neale Dalton"
+		name = "休·达尔顿"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M1065
@@ -660,15 +609,16 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	1067 = {
-		name = "Sir Richard Stafford Cripps"
+		name = "斯塔福德·克里普斯"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M1024
 		armament_minister = air_to_ground_proponent
+		armament_minister = theoretical_scientist
 		start_date = 1942.1.1
 	}
 	1069 = {
-		name = "Sir Edwin Alliott Verdon Roe"
+		name = "维农·罗伊"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M1069
@@ -676,7 +626,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	1070 = {
-		name = "Neil Francis Hawkins"
+		name = "弗朗西斯·霍金斯"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M1070
@@ -684,7 +634,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	1071 = {
-		name = "Alexander Raven Thomson"
+		name = "亚历山大·拉文·汤姆森"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M1071
@@ -692,7 +642,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	1072 = {
-		name = "Jorian Edward Forwood Jenks"
+		name = "尤里安·詹克斯"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M1072
@@ -700,7 +650,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	1073 = {
-		name = "Alan John Percivale Taylor"
+		name = "泰勒"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M1073
@@ -708,7 +658,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	1075 = {
-		name = "Leslie Judah Solley"
+		name = "索雷"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M1075
@@ -716,7 +666,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	1076 = {
-		name = "Arthur Lewis Horner"
+		name = "阿瑟·霍内尔"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M1076
@@ -724,7 +674,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	1077 = {
-		name = "Jacob Gaster"
+		name = "杰克·盖斯特"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M1077
@@ -732,7 +682,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	1078 = {
-		name = "Abe Moffatt"
+		name = "阿比·莫法特"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M1078
@@ -740,7 +690,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	1079 = {
-		name = "William Rust"
+		name = "威廉·鲁斯特"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M1079
@@ -748,7 +698,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	1080 = {
-		name = "Konni Zilliacus"
+		name = "康尼·齐利亚库斯"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M1080
@@ -756,7 +706,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	1082 = {
-		name = "Sir Joseph Austen Chamberlain"
+		name = "尚伯兰爵士"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1082
@@ -764,7 +714,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1083 = {
-		name = "Viscount Templewood"
+		name = "坦普伍德子爵"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1083
@@ -773,7 +723,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	1085 = {
-		name = "David Patrick Maxwell Fyfe"
+		name = "戴维·马克斯维尔·费夫"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1085
@@ -781,7 +731,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	1086 = {
-		name = "Donald Bradley Somervell"
+		name = "唐纳德·布拉德利·索默维尔"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1086
@@ -789,7 +739,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	1087 = {
-		name = "Brendan Randell Bracken"
+		name = "布拉肯"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1087
@@ -798,7 +748,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	1089 = {
-		name = "James Chuter Ede"
+		name = "詹姆斯·埃德"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M1089
@@ -806,7 +756,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	1090 = {
-		name = "Arnold Spencer-Leese"
+		name = "阿诺德·斯宾塞·里斯"
 		ideology = fascistic
 		loyalty = 0.50
 		picture = M1015
@@ -814,7 +764,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1091 = {
-		name = "John Warburton Beckett"
+		name = "约翰·贝克特"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M1091
@@ -822,7 +772,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	1092 = {
-		name = "Arthur Kenneth Chesterton"
+		name = "阿瑟·切斯特顿"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M1092
@@ -830,7 +780,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	1093 = {
-		name = "Edward Jeffrey Hamm"
+		name = "杰弗里·汉姆"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M1093
@@ -838,7 +788,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	1094 = {
-		name = "Charles Henry Maxwell Knigh"
+		name = "马克斯维尔·奈特"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M1094
@@ -847,7 +797,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	1095 = {
-		name = "Violet Lansbury"
+		name = "维尔勒·兰斯伯里"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M1095
@@ -855,7 +805,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1096 = {
-		name = "Hugh Lester Hutchinson"
+		name = "莱斯特·霍金森"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M1096
@@ -863,7 +813,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	1097 = {
-		name = "John Faithful Fortescue Platts-Mills"
+		name = "约翰·普拉特·米尔斯"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M1097
@@ -871,7 +821,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1098 = {
-		name = "Samuel Sydney Silverman"
+		name = "希尔维曼"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M1098
@@ -879,7 +829,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	1099 = {
-		name = "Barbara Anne Castle"
+		name = "芭芭拉·卡斯尔"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M1099
@@ -887,16 +837,17 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	1100 = {
-		name = "Harold Adrian Russell Philby"
+		name = "金·菲尔比"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M1025
 		minister_of_security = compassionate_gentleman
 		minister_of_intelligence = technical_specialist
+		minister_of_intelligence = technical_specialist
 		start_date = 1946.1.1
 	}
 	1102 = {
-		name = "Lord Edgar Algernon Robert Gascoyne-Cecil"
+		name = "切伍德的塞西尔勋爵"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1102
@@ -904,7 +855,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	1103 = {
-		name = "Sir Robert Gordon Menzies"
+		name = "罗伯特·戈登·孟席斯爵士"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1103
@@ -912,7 +863,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	1107 = {
-		name = "Simon Paul James"
+		name = "詹姆斯"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M1016
@@ -920,7 +871,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1108 = {
-		name = "Sir Barry Edward Domvile"
+		name = "多姆维尔爵士"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M1019
@@ -930,7 +881,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	1110 = {
-		name = "John Amery"
+		name = "约翰·阿梅里"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M1110
@@ -938,7 +889,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	1111 = {
-		name = "William Gallacher"
+		name = "威廉·加拉赫"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M1111
@@ -946,7 +897,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1112 = {
-		name = "Christopher Hill"
+		name = "克里斯托夫·希尔"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M1112
@@ -954,7 +905,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	1114 = {
-		name = "Anthony Frederick Blunt"
+		name = "安东尼·布伦特"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M1026
@@ -962,7 +913,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	1116 = {
-		name = "Sir Cyril John Deverell"
+		name = "蒂弗内尔爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1116
@@ -971,7 +922,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1117 = {
-		name = "Lord John Standish Surtees Prendergast Vereker"
+		name = "约翰·戈特勋爵"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1117
@@ -980,7 +931,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1118 = {
-		name = "Sir William Edmund Ironside"
+		name = "埃德蒙·艾恩赛德爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1118
@@ -989,7 +940,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	1119 = {
-		name = "Sir John Greer Dill"
+		name = "约翰·迪尔爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1119
@@ -998,7 +949,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	1120 = {
-		name = "Sir Alan Francis Brooke"
+		name = "阿兰·布鲁克爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1120
@@ -1007,7 +958,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	1121 = {
-		name = "Sir Hastings Lionel Ismay"
+		name = "伊斯梅爵士"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M1121
@@ -1015,7 +966,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	1122 = {
-		name = "Sir Archibald Edward Nye"
+		name = "阿奇博尔德·奈伊"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M1122
@@ -1023,7 +974,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	1123 = {
-		name = "Sir Bernard Law Montgomery"
+		name = "伯纳德·蒙哥马利爵士"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M1123
@@ -1032,7 +983,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	1124 = {
-		name = "John Frederick Charles Fuller"
+		name = "约翰·弗雷德里克·富勒"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M1017
@@ -1041,7 +992,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1126 = {
-		name = "Thomas Henry Wintringham"
+		name = "汤姆·温特汉姆"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M1027
@@ -1049,7 +1000,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1135 = {
-		name = "Bill Alexander"
+		name = "比尔·亚历山大"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M1028
@@ -1057,7 +1008,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1137 = {
-		name = "Sir Roger Roland Charles Backhouse"
+		name = "拜克斯爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1137
@@ -1065,7 +1016,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	1138 = {
-		name = "Sir Andrew Browne Cunningham"
+		name = "安德鲁·坎宁安爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1138
@@ -1073,15 +1024,15 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	1139 = {
-		name = "Sir John Henry Dacres Cunningham"
+		name = "约翰·坎宁安爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1139
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1945.1.1
 	}
 	1140 = {
-		name = "Sir Alfred Dudley Pickman Rogers Pound"
+		name = "达德利·庞德爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1140
@@ -1089,15 +1040,15 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	1143 = {
-		name = "Edward Henry Cole"
+		name = "科尔"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M1143
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1942.1.1
 	}
 	1144 = {
-		name = "Fred Copeman"
+		name = "弗雷德·科普曼"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M1029
@@ -1105,7 +1056,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1147 = {
-		name = "Sir Charles Frederick Algernon Porta"
+		name = "波特尔爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1147
@@ -1113,7 +1064,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1148 = {
-		name = "Sir Arthur William Tedder"
+		name = "阿瑟·特德爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1148
@@ -1121,7 +1072,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	1149 = {
-		name = "Sir Cyril Louis Norton Newall"
+		name = "西里尔·纽沃尔爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1149
@@ -1129,7 +1080,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	1151 = {
-		name = "Sir John Adrian Chamier"
+		name = "夏米尔爵士"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M1020
@@ -1137,7 +1088,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1152 = {
-		name = "Lord William Francis Forbes-Sempill"
+		name = "森皮尔勋爵"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M1152
@@ -1145,7 +1096,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	1153 = {
-		name = "Donald Marcus Kelway Marendaz"
+		name = "唐纳德·马伦达斯"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M1153
@@ -1153,7 +1104,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	1154 = {
-		name = "Railton Freeman"
+		name = "弗里曼"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M1154
@@ -1161,7 +1112,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	1155 = {
-		name = "Evelyn John St Loe Strachey"
+		name = "约翰·斯特雷奇"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M1030
@@ -1169,15 +1120,15 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1160 = {
-		name = "David Lloyd George"
-		ideology = social_liberal
+		name = "大卫·罗伊德·乔治"
+		ideology = social_democrat
 		loyalty = 1.00
 		picture = M1160
 		head_of_government = naive_optimist
-		start_date = 1936.1.1
+		start_date = 1940.1.1
 	}
 	1161 = {
-		name = "Sir Archibald Henry Macdonald Sinclair"
+		name = "辛克莱爵士"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M1161
@@ -1185,7 +1136,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	1162 = {
-		name = "Leopold Charles Maurice Stennett Amery"
+		name = "阿梅里"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M1162
@@ -1193,7 +1144,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	1163 = {
-		name = "Isaac Leslie Hore-Belisha"
+		name = "莱斯利·霍尔·贝利沙"
 		ideology = social_conservative
 		loyalty = 0.50
 		picture = M1163
@@ -1201,7 +1152,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	1164 = {
-		name = "Sir Harold Rupert Leofric George Alexander"
+		name = "哈罗德·亚历山大爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L1006
@@ -1210,7 +1161,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	1165 = {
-		name = "Sir Miles Christopher Dempsey"
+		name = "登普西"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L1099
@@ -1218,7 +1169,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	1166 = {
-		name = "Hastings Lionel Ismay"
+		name = "伊斯梅"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L1176
@@ -1226,7 +1177,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	1167 = {
-		name = "Lord Archibald Percival Wavell"
+		name = "阿奇博尔德·韦维尔爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L1311
@@ -1234,7 +1185,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	1168 = {
-		name = "Sir Hugh Caswall Tremenheere Dowding"
+		name = "休·道丁爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L1435
@@ -1242,7 +1193,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1169 = {
-		name = "Sir Arthur Travers Harris"
+		name = "阿瑟·哈里斯"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L1447
@@ -1250,7 +1201,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	1170 = {
-		name = "Sir Trafford Leigh-Mallory"
+		name = "利·马洛里爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L1456
@@ -1258,15 +1209,16 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	1171 = {
-		name = "Sir William Sholto Douglas"
+		name = "威廉·道格拉斯爵士"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = L1479
 		chief_of_air = air_superiority_doctrine
+		chief_of_air = air_superiority_doctrine
 		start_date = 1944.1.1
 	}
 	1172 = {
-		name = "Sir Stewart Graham Menzies"
+		name = "图尔特·孟席斯爵士"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1172
@@ -1274,7 +1226,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	1174 = {
-		name = "Sir Thomas Walker Hobart Inskip"
+		name = "托马斯·英斯基普爵士"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1174
@@ -1282,7 +1234,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1175 = {
-		name = "Sir Andrew Rae Duncan"
+		name = "安德鲁·邓肯爵士"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1175
@@ -1290,7 +1242,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	1176 = {
-		name = "Sir John Theodore Cuthbert Moore-Brabazon"
+		name = "布拉巴宗勋爵"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M1176
@@ -1298,7 +1250,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	1177 = {
-		name = "Sir Ronald Hibbert Cross"
+		name = "克洛斯爵士"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1177
@@ -1306,7 +1258,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	1178 = {
-		name = "Alfred Duff Cooper"
+		name = "阿尔弗雷德·库柏"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M1178
@@ -1314,7 +1266,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1179 = {
-		name = "Oliver Frederick George Stanley"
+		name = "奥利弗·斯坦利"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1179
@@ -1322,7 +1274,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	1180 = {
-		name = "Henry David Reginald Margesson"
+		name = "亨利·马杰松"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1180
@@ -1330,7 +1282,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	1181 = {
-		name = "Sir Percy James Grigg"
+		name = "格里格爵士"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1181
@@ -1338,15 +1290,17 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	1182 = {
-		name = "Queen Elisabeth II"
+		name = "伊丽莎白二世"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1182
 		head_of_state = popular_figurehead
+		head_of_state = popular_figurehead
+		head_of_state = popular_figurehead
 		start_date = 1952.1.1
 	}
 	1184 = {
-		name = "Albert Victor Alexander"
+		name = "阿尔伯特·亚历山大"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M1184
@@ -1354,7 +1308,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	1185 = {
-		name = "Emanuel Shinwell"
+		name = "伊曼纽尔·欣韦尔"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M1185
@@ -1362,7 +1316,7 @@ ministers = {
 		start_date = 1950.1.1
 	}
 	1188 = {
-		name = "Sir Frederick William Bowhill"
+		name = "波西尔爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L1417
@@ -1370,7 +1324,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	1192 = {
-		name = "Maurice Harold Macmillan"
+		name = "哈罗德·麦克米兰"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1192
@@ -1380,7 +1334,7 @@ ministers = {
 		start_date = 1957.1.1
 	}
 	1193 = {
-		name = "Alexander Frederick Douglas-Home"
+		name = "亚历克·道格拉斯·休姆爵士"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1193
@@ -1389,7 +1343,7 @@ ministers = {
 		start_date = 1963.1.1
 	}
 	1194 = {
-		name = "Hugh Todd Naylor Gaitskell"
+		name = "休·盖茨克"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M1194
@@ -1397,7 +1351,7 @@ ministers = {
 		start_date = 1954.1.1
 	}
 	1195 = {
-		name = "James Harold Wilson"
+		name = "哈罗德·威尔逊"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M1195
@@ -1407,7 +1361,7 @@ ministers = {
 		start_date = 1963.1.1
 	}
 	1199 = {
-		name = "Alfred Robens"
+		name = "阿尔弗雷德·罗本斯"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M1199
@@ -1415,7 +1369,7 @@ ministers = {
 		start_date = 1953.1.1
 	}
 	1201 = {
-		name = "Denis Winston Healey"
+		name = "丹尼斯·赫利"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M1201
@@ -1424,7 +1378,7 @@ ministers = {
 		start_date = 1959.1.1
 	}
 	1203 = {
-		name = "Patrick Chrestien Gordon Walker"
+		name = "帕特里克·沃克"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M1203
@@ -1433,7 +1387,7 @@ ministers = {
 		start_date = 1963.1.1
 	}
 	1205 = {
-		name = "Walter Turner Monckton"
+		name = "沃尔特·蒙克顿"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M1205
@@ -1441,7 +1395,7 @@ ministers = {
 		start_date = 1955.1.1
 	}
 	1206 = {
-		name = "Antony Henry Head"
+		name = "安东尼·海德"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M1206
@@ -1450,7 +1404,7 @@ ministers = {
 		start_date = 1956.1.1
 	}
 	1207 = {
-		name = "Edwin Duncan Sandys"
+		name = "邓肯·桑蒂斯"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M1207
@@ -1458,7 +1412,7 @@ ministers = {
 		start_date = 1957.1.1
 	}
 	1208 = {
-		name = "Harold Arthur Watkinson"
+		name = "瓦金森"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M1208
@@ -1466,7 +1420,7 @@ ministers = {
 		start_date = 1959.1.1
 	}
 	1209 = {
-		name = "George Edward Peter Thorneycroft"
+		name = "彼得·霍尼戈夫"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M1209
@@ -1474,7 +1428,7 @@ ministers = {
 		start_date = 1962.1.1
 	}
 	1212 = {
-		name = "Gwilym Lloyd George"
+		name = "罗伊德·乔治"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1212
@@ -1482,7 +1436,7 @@ ministers = {
 		start_date = 1954.1.1
 	}
 	1214 = {
-		name = "Henry Brooke"
+		name = "布鲁克"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1214
@@ -1490,7 +1444,7 @@ ministers = {
 		start_date = 1962.1.1
 	}
 	1216 = {
-		name = "Francis Aungier Pakenham"
+		name = "弗兰克·帕金汉"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M1216
@@ -1498,7 +1452,7 @@ ministers = {
 		start_date = 1961.1.1
 	}
 	1218 = {
-		name = "John Hugh Hare"
+		name = "休·哈尔"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1218
@@ -1506,7 +1460,7 @@ ministers = {
 		start_date = 1957.1.1
 	}
 	1219 = {
-		name = "Arthur Christopher John Soames"
+		name = "索亚姆斯"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1219
@@ -1514,7 +1468,7 @@ ministers = {
 		start_date = 1958.1.1
 	}
 	1220 = {
-		name = "John Dennis Profumo"
+		name = "约翰·普罗富莫"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1220
@@ -1522,7 +1476,7 @@ ministers = {
 		start_date = 1960.1.1
 	}
 	1221 = {
-		name = "James Edward Ramsden"
+		name = "拉姆斯登"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M1221
@@ -1530,7 +1484,7 @@ ministers = {
 		start_date = 1963.1.1
 	}
 	1222 = {
-		name = "Leonard James Callaghan"
+		name = "卡拉汉"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M1222
@@ -1538,7 +1492,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	1224 = {
-		name = "Sir William Joseph Slim"
+		name = "斯利姆爵士"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = L1281
@@ -1547,7 +1501,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	1225 = {
-		name = "Sir Allan Francis John Harding"
+		name = "约翰·哈丁爵士"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = L1153
@@ -1556,7 +1510,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	1226 = {
-		name = "Sir Gerald Walter Robert Templer"
+		name = "汤泊尔爵士"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = L1294
@@ -1565,7 +1519,7 @@ ministers = {
 		start_date = 1955.1.1
 	}
 	1227 = {
-		name = "Sir Francis Wogan Festing"
+		name = "费斯丁爵士"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = L1120
@@ -1574,7 +1528,7 @@ ministers = {
 		start_date = 1958.1.1
 	}
 	1228 = {
-		name = "Sir Richard Amyatt Hull"
+		name = "安亚特·霍尔爵士"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = L1009
@@ -1583,7 +1537,7 @@ ministers = {
 		start_date = 1961.1.1
 	}
 	1234 = {
-		name = "Sir Bruce Austin Fraser"
+		name = "布鲁斯·弗莱瑟爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L1328
@@ -1591,7 +1545,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	1235 = {
-		name = "Sir Rhoderick Robert McGrigor"
+		name = "麦克格雷格爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1235
@@ -1599,7 +1553,7 @@ ministers = {
 		start_date = 1951.1.1
 	}
 	1236 = {
-		name = "Louis Francis Albert Victor Nicholas George Mountbatten"
+		name = "蒙巴顿伯爵"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1236
@@ -1607,7 +1561,7 @@ ministers = {
 		start_date = 1955.1.1
 	}
 	1237 = {
-		name = "Sir John David Luce"
+		name = "戴维·鲁斯爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1237
@@ -1615,7 +1569,7 @@ ministers = {
 		start_date = 1960.1.1
 	}
 	1239 = {
-		name = "Sir John Cotesworth Slessor"
+		name = "施勒塞爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L1480
@@ -1623,7 +1577,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	1240 = {
-		name = "Sir William Forster Dickson"
+		name = "迪克森爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1240
@@ -1631,7 +1585,7 @@ ministers = {
 		start_date = 1953.1.1
 	}
 	1241 = {
-		name = "Sir Dermot Alexander Boyle"
+		name = "博伊尔爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1241
@@ -1639,7 +1593,7 @@ ministers = {
 		start_date = 1956.1.1
 	}
 	1242 = {
-		name = "Sir Thomas Geoffrey Pike"
+		name = "派克爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1242
@@ -1647,143 +1601,12 @@ ministers = {
 		start_date = 1959.1.1
 	}
 	1243 = {
-		name = "Sir Samuel Charles Elworthy"
+		name = "艾尔沃斯爵士"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M1243
 		chief_of_air = army_aviation_doctrine
 		start_date = 1963.1.1
 	}
-	# Generic dummy ministers
-	95984 = {
-		name = "Nameless Clerk"
-		ideology = national_socialist
-		loyalty = 1.0
-		picture = MNationalSocialist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95985 = {
-		name = "Nameless Clerk"
-		ideology = fascistic
-		loyalty = 1.0
-		picture = MFascistic
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		start_date = 1936.1.1
-	}
-	95986 = {
-		name = "Nameless Clerk"
-		ideology = paternal_autocrat
-		loyalty = 1.0
-		picture = MPaternalAutocrat
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95987 = {
-		name = "Nameless Clerk"
-		ideology = social_conservative
-		loyalty = 1.0
-		picture = MSocialConservative
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95988 = {
-		name = "Nameless Clerk"
-		ideology = market_liberal
-		loyalty = 1.0
-		picture = MMarketLiberal
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95989 = {
-		name = "Nameless Clerk"
-		ideology = social_liberal
-		loyalty = 1.0
-		picture = MSocialLiberal
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		start_date = 1936.1.1
-	}
-	95990 = {
-		name = "Nameless Clerk"
-		ideology = social_democrat
-		loyalty = 1.0
-		picture = MSocialDemocrat
-		head_of_state = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95991 = {
-		name = "Nameless Clerk"
-		ideology = left_wing_radical
-		loyalty = 1.0
-		picture = MLeftWingRadical
-		armament_minister = mostly_harmless_armament
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95992 = {
-		name = "Nameless Clerk"
-		ideology = leninist
-		loyalty = 1.0
-		picture = MLeninist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95993 = {
-		name = "Nameless Clerk"
-		ideology = stalinist
-		loyalty = 1.0
-		picture = MStalinist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		start_date = 1936.1.1
-	}	
 }
+

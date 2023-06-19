@@ -1,144 +1,83 @@
-theatre = {
-	name = "Alto Mando de Brasileno"
-	location = 10193
-	regiment = { type = hq_brigade name = "Rio de Janeiro HQ" historical_model = 0 }	
-	corps = {
-		name = "1o Exército do Brasil"
+corps = {
+	name = "µÚ1¾ü"
+	location = 10082
+	regiment = { type = hq_brigade name = "µÚ1Ö¸»Ó²¿ÂÃ" historical_model = 0 }
+	division= {
+		name = "µÚI²½±øÊ¦"
 		location = 10082
-		regiment = { type = hq_brigade name = "1o Exército do Brasil HQ" historical_model = 0 }
-		division= {
-			name = "I Divisão de Infantaria"
-			location = 10082
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "7. Brigada de Infantaria" experience = 0 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "8. Brigada de Infantaria" experience = 0 historical_model = 3 }
-			regiment = { type = cavalry_brigade name = "2. Brigada de Cavalaria" experience = 0 historical_model = 3 }
-		}
-		division= {
-			name = "II Divisão de Infantaria"
-			location = 10082
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "9. Brigada de Infantaria" experience = 0 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "10. Brigada de Infantaria" experience = 0 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "11. Brigada de Infantaria" experience = 0 historical_model = 3 }
-		}
-		division= {
-			name = "Guarda Civíl de Espírito Santo"
-			location = 10159
-			is_reserve = yes
-			regiment = { type = militia_brigade name = "1. Guarda Civíl de Espírito Santo" experience = 0 historical_model = 2 }
-			regiment = { type = militia_brigade name = "2. Guarda Civíl de Espírito Santo" experience = 0 historical_model = 2 }			
-		}	
-		division= {
-			name = "Guarda Civíl de Minas Gerais"
-			location = 10170
-			is_reserve = yes
-			regiment = { type = militia_brigade name = "1. Guarda Civíl de Minas Gerais" experience = 0 historical_model = 2 }
-			regiment = { type = militia_brigade name = "2. Guarda Civíl de Minas Gerais" experience = 0 historical_model = 2 }			
-		}		
-		division= {
-			name = "Guarda Civíl de São Paulo"
-			location = 10226
-			is_reserve = yes
-			regiment = { type = militia_brigade name = "1. Guarda Civíl de São Paulo" experience = 0 historical_model = 2 }
-			regiment = { type = militia_brigade name = "2. Guarda Civíl de São Paulo" experience = 0 historical_model = 2 }			
-		}
-	}	
-	corps = {
-		name = "2o Exército do Brasil"
-		location = 10193
-		regiment = { type = hq_brigade name = "2o Exército do Brasil HQ" historical_model = 0 }
-		division= {
-			name = "III Divisão de Infantaria"
-			location = 10193
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "1. Brigada de Infantaria" experience = 0 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "2. Brigada de Infantaria" experience = 0 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "3. Brigada de Infantaria" experience = 0 historical_model = 3 }
-		}
-		division= {
-			name = "XCII Divisão de Cavalaria"
-			location = 10193
-			is_reserve = yes
-			regiment = { type = cavalry_brigade name = "1. Brigada de Cavalaria" experience = 0 historical_model = 3 }
-			regiment = { type = super_heavy_armor_brigade name = "1. Brigada de Tanques" experience = 0 historical_model = 0 }
-		}
-		division= {
-			name = "Guarda Civíl do Paraná"
-			location = 10242
-			is_reserve = yes
-			regiment = { type = militia_brigade name = "1. Guarda Civíl do Paraná" experience = 0 historical_model = 2 }
-			regiment = { type = militia_brigade name = "2. Guarda Civíl do Paraná" experience = 0 historical_model = 2 }			
-			
-		}
-		division= {
-			name = "Guarda Civíl do Goiás"
-			location = 7848
-			is_reserve = yes
-			regiment = { type = militia_brigade name = "1. Guarda Civíl do Goiás" experience = 0 historical_model = 2 }
-			regiment = { type = militia_brigade name = "2. Guarda Civíl do Goiás" experience = 0 historical_model = 2 }			
-			
-		}		
-		division= {
-			name = "Guarda Civíl do Rio de Janeiro"
-			location = 10193
-			is_reserve = yes
-			regiment = { type = militia_brigade name = "1. Guarda Civíl do Rio de Janeiro" experience = 0 historical_model = 2 }
-			regiment = { type = militia_brigade name = "2. Guarda Civíl do Rio de Janeiro" experience = 0 historical_model = 2 }			
-			
-		}		
-	}	
-	navy = {
-		name = "Navios de Transporte"
-		base = 10193
-		location = 10193
-		ship = { type = transport_ship name = "1. Flotilla de Navios de Transporte" experience = 0 historical_model = 0 }
-		ship = { type = transport_ship name = "2. Flotilla de Navios de Transporte" experience = 0 historical_model = 0 }
-		ship = { type = transport_ship name = "3. Flotilla de Navios de Transporte" experience = 0 historical_model = 0 }
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
 	}
-	navy = {
-		name = "Marinha do Brasil"
-		base = 7853
-		location = 7853
-		ship = { type = battleship name = "NRB Minas Gerais" experience = 0 historical_model = 0 pride = yes }
-		ship = { type = battleship name = "NRB São Paulo" experience = 0 historical_model = 0 }
-		ship = { type = light_cruiser name = "NRB Bahia" experience = 0 historical_model = 0 }
-		ship = { type = light_cruiser name = "NRB Rio Grande do Sul" experience = 0 historical_model = 0 }
-		ship = { type = destroyer name = "1. Flotilla de Contratorpedeiros" experience = 0 historical_model = 0 }
-		ship = { type = destroyer name = "2. Flotilla de Contratorpedeiros" experience = 0 historical_model = 0 }
+	division= {
+		name = "µÚII²½±øÊ¦"
+		location = 10082
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
 	}
-	air = {
-		name = "Aviação Militar"
-		base = 10193
-		location = 10193
-		wing = { type = cas name = "1. Grupo de Bomb. de Mergulho" experience = 0 historical_model = 0 }
+	division= {
+		name = "µÚLXVIII¹úÃñ¾¯ÎÀÊ¦"
+		location = 10082
+		is_reserve = yes
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+	}
+	division= {
+		name = "µÚLXIX¹úÃñ¾¯ÎÀÊ¦"
+		location = 10082
+		is_reserve = yes
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = militia_brigade historical_model = 0 }
 	}
 }
-convoy_construction=
-{
-	country = BRA
-	id=
-	{
-		id=15622
-		type=4713
+corps = {
+	name = "µÚ2¾ü"
+	location = 10193
+	regiment = { type = hq_brigade name = "µÚ2Ö¸»Ó²¿ÂÃ" historical_model = 0 }
+	division= {
+		name = "µÚIII²½±øÊ¦"
+		location = 10193
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
 	}
-	size=1
-	cost=0.000 #you can put any number here and the engine will use it
-	progress=90.000
-	duration=0.000 #you can put any number here and the engine will use it
-	status=no #No means you get a convoy.  Yes means you get an escort
+	division= {
+		name = "µÚIIÆï±øÊ¦"
+		location = 10193
+		is_reserve = yes
+		regiment = { type = cavalry_brigade historical_model = 0 }
+		regiment = { type = cavalry_brigade historical_model = 0 }
+	}
 }
-convoy_construction=
-{
-	country = BRA
-	id=
-	{
-		id=15623
-		type=4713
-	}
-	size=1
-	cost=0.000 #you can put any number here and the engine will use it
-	progress=90.000
-	duration=0.000 #you can put any number here and the engine will use it
-	status=no #No means you get a convoy.  Yes means you get an escort	
+navy = {
+	name = "ÔËÊä½¢¶Ó"
+	base = 10193
+	location = 10193
+	ship = { type = transport_ship name = "µÚ1ÔËÊä½¢·Ö¶Ó" historical_model = 0 }
+	ship = { type = transport_ship name = "µÚ2ÔËÊä½¢·Ö¶Ó" historical_model = 0 }
+	ship = { type = transport_ship name = "µÚ3ÔËÊä½¢·Ö¶Ó" historical_model = 0 }
+	ship = { type = transport_ship name = "µÚ4ÔËÊä½¢·Ö¶Ó" historical_model = 0 }
+	ship = { type = transport_ship name = "µÚ5ÔËÊä½¢·Ö¶Ó" historical_model = 0 }
+	ship = { type = transport_ship name = "µÚ6ÔËÊä½¢·Ö¶Ó" historical_model = 0 }
+}
+navy = {
+	name = "º£°¶¾¯ÎÀ½¢¶Ó"
+	base = 7853
+	location = 7853
+	ship = { type = battleship name = "NRB Ê¥±£ÂÞ" historical_model = 0 }
+	ship = { type = battleship name = "NRB Ã×ÄÉË¹¼ªÀ­Ë¹" historical_model = 0 pride = yes }
+	ship = { type = light_cruiser name = "NRB °ÍÒÁÑÇ" historical_model = 0 }
+	ship = { type = light_cruiser name = "NRB ÄÏÀï°Â¸ñÀ¼µÂ" historical_model = 0 }
+}
+air = {
+	name = "¹úÃñ¾¯ÎÀ¿Õ¾ü"
+	base = 10193
+	location = 10193
+	wing = { type = interceptor name = "µÚ1Õ½¶·»ú´ó¶Ó" historical_model = 0 }
 }

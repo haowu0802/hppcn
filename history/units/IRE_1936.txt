@@ -1,33 +1,16 @@
-theatre = {
-	name = "Ordú Ard-na hÉireann"
+division = {
+	name = "µÚ1²½±øÊ¦"
+	location = 1843
+	is_reserve = yes
+	regiment = { type = infantry_brigade name = "µÚ1²½±øÂÃ" historical_model = 0 }
+	regiment = { type = infantry_brigade name = "µÚ3²½±øÂÃ" historical_model = 0 }
+}
+navy = {
+	name = "°®¶ûÀ¼¹²ºÍ¹úº£¾ü"
+	base = 1563
 	location = 1563
-	regiment = { type = hq_brigade name = "Dublin HQ" historical_model = 0 }
-	division = {
-		name = "1. Rannán Coisithe"
-		location = 1563
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "1. Briogáid Coisithe" experience = 10 historical_model = 2 }
-		regiment = { type = infantry_brigade name = "2. Briogáid Coisithe" experience = 10 historical_model = 2 }
-		regiment = { type = infantry_brigade name = "3. Briogáid Coisithe" experience = 10 historical_model = 2 }
-	}
-	navy = {
-		name = "Irish Republic Navy"
-		base = 1563
-		location = 1563
-		ship = { type = transport_ship name = "1. Iompar Flotilla" experience = 0 historical_model = 0 }
-	}
+	ship = { type = transport_ship name = "µÚ1ÔËÊä½¢¶Ó" historical_model = 0 }
 }
-convoy_construction=
-{
-	country = IRE
-	id=
-	{
-		id=15250
-		type=4713
-	}
-	size=1
-	cost=0.000 #you can put any number here and the engine will use it
-	progress=90.000
-	duration=0.000 #you can put any number here and the engine will use it
-	status=no #No means you get a convoy.  Yes means you get an escort
-}
+
+
+

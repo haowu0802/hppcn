@@ -1,233 +1,158 @@
 color = { 177  191  211 }
 graphical_culture = French
 
-
-
 default_templates = {
-	FRA_infantry = {
+	generic_infantry = {
 		infantry_brigade
 		infantry_brigade
 		infantry_brigade
 	}
-	FRA_cavalry = {
-		cavalry_brigade
-		cavalry_brigade
+	generic_milita = {
+		militia_brigade
+		militia_brigade
+		militia_brigade
 	}
-	FRA_motorized = {
-		motorized_brigade
-		motorized_brigade
-		motorized_brigade
-		truck_towed_support_brigade
-	}
-	FRA_light_mechanised = {
-		light_armor_brigade
-		motorized_brigade
-		self_propelled_support_brigade
-	}
-	FRA_reserve_tank = {
+	generic_armoured = {
 		armor_brigade
-		light_armor_brigade
+		motorized_brigade
 		motorized_brigade
 	}
-	FRA_heavy_tank = {
-		heavy_armor_brigade
-		motorized_brigade
-	}	
-	FRA_milita = {
-		militia_brigade
-		militia_brigade
-		militia_brigade
-	}
-	FRA_garrison = {
-		garrison_brigade
-		garrison_brigade
-		garrison_brigade
-	}	
-	FRA_alpine = {
-		bergsjaeger_brigade
-		bergsjaeger_brigade
-	}	
-	FRA_marine = {
-		marine_brigade
-		marine_brigade
+	generic_cavalry = {
+		cavalry_brigade
+		cavalry_brigade
 	}
 }
 
 unit_names = {
 	infantry_brigade = {
-		"2ème Division d'Infanterie" "4ème Division d'Infanterie" "6ème Division d'Infanterie" "7ème Division d'Infanterie" "8ème Division d'Infanterie" "14ème Division d'Infanterie" "10ème Division d'Infanterie" "11ème Division d'Infanterie" "13ème Division d'Infanterie" "16ème Division d'Infanterie" "18ème Division d'Infanterie" 
-		"19ème Division d'Infanterie" "20ème Division d'Infanterie" "21ème Division d'Infanterie" "22ème Division d'Infanterie" "23ème Division d'Infanterie" "24ème Division d'Infanterie" "26ème Division d'Infanterie" "28ème Division d'Infanterie" "29ème Division d'Infanterie" "32ème Division d'Infanterie" "35ème Division d'Infanterie" 
-		"36ème Division d'Infanterie" "41ème Division d'Infanterie" "42ème Division d'Infanterie" "43ème Division d'Infanterie" "44ème Division d'Infanterie" "45ème Division d'Infanterie" "47ème Division d'Infanterie" "51ème Division d'Infanterie" "52ème Division d'Infanterie" "53ème Division d'Infanterie" "54ème Division d'Infanterie" 
-		"55ème Division d'Infanterie" "56ème Division d'Infanterie" "57ème Division d'Infanterie" "58ème Division d'Infanterie" "60ème Division d'Infanterie" "61ème Division d'Infanterie" "62ème Division d'Infanterie" "63ème Division d'Infanterie" "67ème Division d'Infanterie" "68ème Division d'Infanterie" "70ème Division d'Infanterie" 
-		"71ème Division d'Infanterie" "14ème Division d'Infanterie" "17ème Division d'Infanterie" "33ème Division d'Infanterie" "34ème Division d'Infanterie" "37ème Division d'Infanterie" "38ème Division d'Infanterie" "39ème Division d'Infanterie" "40ème Division d'Infanterie" "46ème Division d'Infanterie" "48ème Division d'Infanterie" 
-		"49ème Division d'Infanterie" "50ème Division d'Infanterie" "59ème Division d'Infanterie" "72ème Division d'Infanterie" "73ème Division d'Infanterie" "74ème Division d'Infanterie" "75ème Division d'Infanterie" 
+		"µÚ2²½±øÊ¦" "µÚ4²½±øÊ¦" "µÚ6²½±øÊ¦" "µÚ7²½±øÊ¦" "µÚ8²½±øÊ¦" "µÚ14²½±øÊ¦" "µÚ10²½±øÊ¦" "µÚ11²½±øÊ¦" "µÚ13²½±øÊ¦" "µÚ16²½±øÊ¦" "µÚ18²½±øÊ¦" 
+		"µÚ19²½±øÊ¦" "µÚ20²½±øÊ¦" "µÚ21²½±øÊ¦" "µÚ22²½±øÊ¦" "µÚ23²½±øÊ¦" "µÚ24²½±øÊ¦" "µÚ26²½±øÊ¦" "µÚ28²½±øÊ¦" "µÚ29²½±øÊ¦" "µÚ32²½±øÊ¦" "µÚ35²½±øÊ¦" 
+		"µÚ36²½±øÊ¦" "µÚ41²½±øÊ¦" "µÚ42²½±øÊ¦" "µÚ43²½±øÊ¦" "µÚ44²½±øÊ¦" "µÚ45²½±øÊ¦" "µÚ47²½±øÊ¦" "µÚ51²½±øÊ¦" "µÚ52²½±øÊ¦" "µÚ53²½±øÊ¦" "µÚ54²½±øÊ¦" 
+		"µÚ55²½±øÊ¦" "µÚ56²½±øÊ¦" "µÚ57²½±øÊ¦" "µÚ58²½±øÊ¦" "µÚ60²½±øÊ¦" "µÚ61²½±øÊ¦" "µÚ62²½±øÊ¦" "µÚ63²½±øÊ¦" "µÚ67²½±øÊ¦" "µÚ68²½±øÊ¦" "µÚ70²½±øÊ¦" 
+		"µÚ71²½±øÊ¦" "µÚ14²½±øÊ¦" "µÚ17²½±øÊ¦" "µÚ33²½±øÊ¦" "µÚ34²½±øÊ¦" "µÚ37²½±øÊ¦" "µÚ38²½±øÊ¦" "µÚ39²½±øÊ¦" "µÚ40²½±øÊ¦" "µÚ46²½±øÊ¦" "µÚ48²½±øÊ¦" 
+		"µÚ49²½±øÊ¦" "µÚ50²½±øÊ¦" "µÚ59²½±øÊ¦" "µÚ72²½±øÊ¦" "µÚ73²½±øÊ¦" "µÚ74²½±øÊ¦" "µÚ75²½±øÊ¦" 
 	}
 	cavalry_brigade = {
-		"1ère Division Légère de Cavalerie" "2ème Division Légère de Cavalerie" "3ème Division Légère de Cavalerie" "4ème Division Légère de Cavalerie" "5ème Division Légère de Cavalerie" "6ème Division Légère de Cavalerie" "7ème Division Légère de Cavalerie" "8ème Division Légère de Cavalerie" "9ème Division Légère de Cavalerie" "10ème Division Légère de Cavalerie" "11ème Division Légère de Cavalerie" 
-		"12ème Division Légère de Cavalerie" "13ème Division Légère de Cavalerie" "14ème Division Légère de Cavalerie" "15ème Division Légère de Cavalerie" "16ème Division Légère de Cavalerie" "17ème Division Légère de Cavalerie" "18ème Division Légère de Cavalerie" "19ème Division Légère de Cavalerie" "20ème Division Légère de Cavalerie" 
+		"µÚ1Æï±øÊ¦" "µÚ2Æï±øÊ¦" "µÚ3Æï±øÊ¦" "µÚ4Æï±øÊ¦" "µÚ5Æï±øÊ¦" "µÚ6Æï±øÊ¦" "µÚ7Æï±øÊ¦" "µÚ8Æï±øÊ¦" "µÚ9Æï±øÊ¦" "µÚ10Æï±øÊ¦" "µÚ11Æï±øÊ¦" 
+		"µÚ12Æï±øÊ¦" "µÚ13Æï±øÊ¦" "µÚ14Æï±øÊ¦" "µÚ15Æï±øÊ¦" "µÚ16Æï±øÊ¦" "µÚ17Æï±øÊ¦" "µÚ18Æï±øÊ¦" "µÚ19Æï±øÊ¦" "µÚ20Æï±øÊ¦" 
 	}
 	motorized_brigade = {
-		"1ère Division d'Infanterie Motorisée" "3ème Division d'Infanterie Motorisée" "5ème Division d'Infanterie Motorisée" "9ème Division d'Infanterie Motorisée" "12ème Division d'Infanterie Motorisée" "15ème Division d'Infanterie Motorisée" "25ème Division d'Infanterie Motorisée" "90ème Division d'Infanterie Motorisée" "91ème Division d'Infanterie Motorisée" "92ème Division d'Infanterie Motorisée" "93ème Division d'Infanterie Motorisée" 
-		"94ème Division d'Infanterie Motorisée" "95ème Division d'Infanterie Motorisée" "96ème Division d'Infanterie Motorisée" "97ème Division d'Infanterie Motorisée" "98ème Division d'Infanterie Motorisée" "100ème Division d'Infanterie Motorisée" "101ème Division d'Infanterie Motorisée" "102ème Division d'Infanterie Motorisée" "103ème Division d'Infanterie Motorisée" "104ème Division d'Infanterie Motorisée" "105ème Division d'Infanterie Motorisée" 
-		"106ème Division d'Infanterie Motorisée" "107ème Division d'Infanterie Motorisée" "108ème Division d'Infanterie Motorisée" 
+		"µÚ1Ä¦ÍĞ»¯²½±øÊ¦" "µÚ3Ä¦ÍĞ»¯²½±øÊ¦" "µÚ5Ä¦ÍĞ»¯²½±øÊ¦" "µÚ9Ä¦ÍĞ»¯²½±øÊ¦" "µÚ12Ä¦ÍĞ»¯²½±øÊ¦" "µÚ15Ä¦ÍĞ»¯²½±øÊ¦" "µÚ25Ä¦ÍĞ»¯²½±øÊ¦" "µÚ90Ä¦ÍĞ»¯²½±øÊ¦" "µÚ91Ä¦ÍĞ»¯²½±øÊ¦" "µÚ92Ä¦ÍĞ»¯²½±øÊ¦" "µÚ93Ä¦ÍĞ»¯²½±øÊ¦" 
+		"µÚ94Ä¦ÍĞ»¯²½±øÊ¦" "µÚ95Ä¦ÍĞ»¯²½±øÊ¦" "µÚ96Ä¦ÍĞ»¯²½±øÊ¦" "µÚ97Ä¦ÍĞ»¯²½±øÊ¦" "µÚ98Ä¦ÍĞ»¯²½±øÊ¦" "µÚ100Ä¦ÍĞ»¯²½±øÊ¦" "µÚ101Ä¦ÍĞ»¯²½±øÊ¦" "µÚ102Ä¦ÍĞ»¯²½±øÊ¦" "µÚ103Ä¦ÍĞ»¯²½±øÊ¦" "µÚ104Ä¦ÍĞ»¯²½±øÊ¦" "µÚ105Ä¦ÍĞ»¯²½±øÊ¦" 
+		"µÚ106Ä¦ÍĞ»¯²½±øÊ¦" "µÚ107Ä¦ÍĞ»¯²½±øÊ¦" "µÚ108Ä¦ÍĞ»¯²½±øÊ¦" 
 	}
 	mechanized_brigade = {
-		"1ère Division Légère Mécanisée" "2ème Division Légère Mécanisée" "3ème Division Légère Mécanisée" "4ème Division Légère Mécanisée" "5ème Division Légère Mécanisée" "6ème Division Légère Mécanisée" "7ème Division Légère Mécanisée" "8ème Division Légère Mécanisée" "9ème Division Légère Mécanisée" "10ème Division Légère Mécanisée" "11ème Division Légère Mécanisée" 
-		"12ème Division Légère Mécanisée" "13ème Division Légère Mécanisée" "14ème Division Légère Mécanisée" "15ème Division Légère Mécanisée" "16ème Division Légère Mécanisée" "17ème Division Légère Mécanisée" "18ème Division Légère Mécanisée" "19ème Division Légère Mécanisée" "20ème Division Légère Mécanisée" "21ème Division Légère Mécanisée" "22ème Division Légère Mécanisée" 
-		"23ème Division Légère Mécanisée" "24ème Division Légère Mécanisée" "25ème Division Légère Mécanisée" 
+		"µÚ1»ú²½Ê¦" "µÚ2»ú²½Ê¦" "µÚ3»ú²½Ê¦" "µÚ4»ú²½Ê¦" "µÚ5»ú²½Ê¦" "µÚ6»ú²½Ê¦" "µÚ7»ú²½Ê¦" "µÚ8»ú²½Ê¦" "µÚ9»ú²½Ê¦" "µÚ10»ú²½Ê¦" "µÚ11»ú²½Ê¦" 
+		"µÚ12»ú²½Ê¦" "µÚ13»ú²½Ê¦" "µÚ14»ú²½Ê¦" "µÚ15»ú²½Ê¦" "µÚ16»ú²½Ê¦" "µÚ17»ú²½Ê¦" "µÚ18»ú²½Ê¦" "µÚ19»ú²½Ê¦" "µÚ20»ú²½Ê¦" "µÚ21»ú²½Ê¦" "µÚ22»ú²½Ê¦" 
+		"µÚ23»ú²½Ê¦" "µÚ24»ú²½Ê¦" "µÚ25»ú²½Ê¦" 
 	}
 	light_armor_brigade = {
-		"1ère Division Cuirassée de Réserve" "2ème Division Cuirassée de Réserve" "3ème Division Cuirassée de Réserve" "4ème Division Cuirassée de Réserve" "4ème Division Cuirassée de Réserve" "6ème Division Cuirassée de Réserve" "7ème Division Cuirassée de Réserve" "8ème Division Cuirassée de Réserve" "9ème Division Cuirassée de Réserve" "10ème Division Cuirassée de Réserve" "11ème Division Cuirassée de Réserve" 
-		"12ème Division Cuirassée de Réserve" "13ème Division Cuirassée de Réserve" "14ème Division Cuirassée de Réserve" "14ème Division Cuirassée de Réserve" "16ème Division Cuirassée de Réserve" "17ème Division Cuirassée de Réserve" "18ème Division Cuirassée de Réserve" "19ème Division Cuirassée de Réserve" "20ème Division Cuirassée de Réserve" "21ème Division Cuirassée de Réserve" "22ème Division Cuirassée de Réserve" 
-		"23ème Division Cuirassée de Réserve" "24ème Division Cuirassée de Réserve" "24ème Division Cuirassée de Réserve" "26ème Division Cuirassée de Réserve" "27ème Division Cuirassée de Réserve" "28ème Division Cuirassée de Réserve" "29ème Division Cuirassée de Réserve" "30ème Division Cuirassée de Réserve" 
+		"µÚ1ÇáĞÍ×°¼×Ê¦" "µÚ2ÇáĞÍ×°¼×Ê¦" "µÚ3ÇáĞÍ×°¼×Ê¦" "µÚ4ÇáĞÍ×°¼×Ê¦" "µÚ4ÇáĞÍ×°¼×Ê¦" "µÚ6ÇáĞÍ×°¼×Ê¦" "µÚ7ÇáĞÍ×°¼×Ê¦" "µÚ8ÇáĞÍ×°¼×Ê¦" "µÚ9ÇáĞÍ×°¼×Ê¦" "µÚ10ÇáĞÍ×°¼×Ê¦" "µÚ11ÇáĞÍ×°¼×Ê¦" 
+		"µÚ12ÇáĞÍ×°¼×Ê¦" "µÚ13ÇáĞÍ×°¼×Ê¦" "µÚ14ÇáĞÍ×°¼×Ê¦" "µÚ14ÇáĞÍ×°¼×Ê¦" "µÚ16ÇáĞÍ×°¼×Ê¦" "µÚ17ÇáĞÍ×°¼×Ê¦" "µÚ18ÇáĞÍ×°¼×Ê¦" "µÚ19ÇáĞÍ×°¼×Ê¦" "µÚ20ÇáĞÍ×°¼×Ê¦" "µÚ21ÇáĞÍ×°¼×Ê¦" "µÚ22ÇáĞÍ×°¼×Ê¦" 
+		"µÚ23ÇáĞÍ×°¼×Ê¦" "µÚ24ÇáĞÍ×°¼×Ê¦" "µÚ24ÇáĞÍ×°¼×Ê¦" "µÚ26ÇáĞÍ×°¼×Ê¦" "µÚ27ÇáĞÍ×°¼×Ê¦" "µÚ28ÇáĞÍ×°¼×Ê¦" "µÚ29ÇáĞÍ×°¼×Ê¦" "µÚ30ÇáĞÍ×°¼×Ê¦" 
 	}
 	armor_brigade = {
-		"1ère Division Cuirassée de Réserve" "2ème Division Cuirassée de Réserve" "3ème Division Cuirassée de Réserve" "1ère Division Légère Mécanisée" "2ème Division Légère Mécanisée" "3ème Division Légère Mécanisée" "4ème Division Cuirassée de Réserve" "5ème Division Cuirassée de Réserve" "6ème Division Cuirassée de Réserve" "7ème Division Cuirassée" "8ème Division Cuirassée" 
-		"9ème Division Cuirassée" "10ème Division Cuirassée" "11ème Division Cuirassée" "12ème Division Cuirassée" "13ème Division Cuirassée" "14ème Division Cuirassée" "15ème Division Cuirassée" "16ème Division Cuirassée" "17ème Division Cuirassée" "18ème Division Cuirassée" "19ème Division Cuirassée" 
-		"20ème Division Cuirassée" "21ème Division Cuirassée" "22ème Division Cuirassée" "23ème Division Cuirassée" "24ème Division Cuirassée" "25ème Division Cuirassée" "26ème Division Cuirassée" "27ème Division Cuirassée" "28ème Division Cuirassée" "29ème Division Cuirassée" "30ème Division Cuirassée" 
-		"31ème Division Cuirassée" "32ème Division Cuirassée" "33ème Division Cuirassée" "34ème Division Cuirassée" "35ème Division Cuirassée" "36ème Division Cuirassée" "37ème Division Cuirassée" "38ème Division Cuirassée" "39ème Division Cuirassée" "40ème Division Cuirassée" 
+		"µÚ1×°¼×Ê¦" "µÚ2×°¼×Ê¦" "µÚ3×°¼×Ê¦" "µÚ1×°¼×Ê¦" "µÚ2×°¼×Ê¦" "µÚ3×°¼×Ê¦" "µÚ4×°¼×Ê¦" "µÚ5×°¼×Ê¦" "µÚ6×°¼×Ê¦" "µÚ7×°¼×Ê¦" "µÚ8×°¼×Ê¦" 
+		"µÚ9×°¼×Ê¦" "µÚ10×°¼×Ê¦" "µÚ11×°¼×Ê¦" "µÚ12×°¼×Ê¦" "µÚ13×°¼×Ê¦" "µÚ14×°¼×Ê¦" "µÚ15×°¼×Ê¦" "µÚ16×°¼×Ê¦" "µÚ17×°¼×Ê¦" "µÚ18×°¼×Ê¦" "µÚ19×°¼×Ê¦" 
+		"µÚ20×°¼×Ê¦" "µÚ21×°¼×Ê¦" "µÚ22×°¼×Ê¦" "µÚ23×°¼×Ê¦" "µÚ24×°¼×Ê¦" "µÚ25×°¼×Ê¦" "µÚ26×°¼×Ê¦" "µÚ27×°¼×Ê¦" "µÚ28×°¼×Ê¦" "µÚ29×°¼×Ê¦" "µÚ30×°¼×Ê¦" 
+		"µÚ31×°¼×Ê¦" "µÚ32×°¼×Ê¦" "µÚ33×°¼×Ê¦" "µÚ34×°¼×Ê¦" "µÚ35×°¼×Ê¦" "µÚ36×°¼×Ê¦" "µÚ37×°¼×Ê¦" "µÚ38×°¼×Ê¦" "µÚ39×°¼×Ê¦" "µÚ40×°¼×Ê¦" 
 	}
 	paratrooper_brigade = {
-		"1re Divsion Aéroportée" "2ème Divsion Aéroportée" "3ème Divsion Aéroportée" "4ème Divsion Aéroportée" "5ème Divsion Aéroportée" "6ème Divsion Aéroportée" "7ème Divsion Aéroportée" "8ème Divsion Aéroportée" "9ème Divsion Aéroportée" "10ème Divsion Aéroportée" 
+		"µÚ1É¡±øÊ¦" "µÚ2É¡±øÊ¦" "µÚ3É¡±øÊ¦" "µÚ4É¡±øÊ¦" "µÚ5É¡±øÊ¦" "µÚ6É¡±øÊ¦" "µÚ7É¡±øÊ¦" "µÚ8É¡±øÊ¦" "µÚ9É¡±øÊ¦" "µÚ10É¡±øÊ¦" 
 	}
 	marine_brigade = {
-		"1ère Division d'Infanterie de Marine" "2ème Division d'Infanterie de Marine" "3ème Division d'Infanterie de Marine" "4ème Division d'Infanterie de Marine" "5ème Division d'Infanterie de Marine" "6ème Division d'Infanterie de Marine" "7ème Division d'Infanterie de Marine" "8ème Division d'Infanterie de Marine" "9ème Division d'Infanterie de Marine" "10ème Division d'Infanterie de Marine" 
+		"µÚ1º£¾üÂ½Õ½Ê¦" "µÚ2º£¾üÂ½Õ½Ê¦" "µÚ3º£¾üÂ½Õ½Ê¦" "µÚ4º£¾üÂ½Õ½Ê¦" "µÚ5º£¾üÂ½Õ½Ê¦" "µÚ6º£¾üÂ½Õ½Ê¦" "µÚ7º£¾üÂ½Õ½Ê¦" "µÚ8º£¾üÂ½Õ½Ê¦" "µÚ9º£¾üÂ½Õ½Ê¦" "µÚ10º£¾üÂ½Õ½Ê¦" 
 	}
 	bergsjaeger_brigade = {
-		"27ème Division d'Infanterie" "30ème Division d'Infanterie" "31ème Division d'Infanterie" "64ème Division d'Infanterie" "66ème Division d'Infanterie" "65ème Division d'Infanterie" "200ème Division d'Infanterie" "201ème Division d'Infanterie" "202ème Division d'Infanterie" "203ème Division d'Infanterie" "204ème Division d'Infanterie" 
-		"205ème Division d'Infanterie" "150ème Division d'Infanterie" "151ème Division d'Infanterie" "152ème Division d'Infanterie" "153ème Division d'Infanterie" "154ème Division d'Infanterie" "155ème Division d'Infanterie" "156ème Division d'Infanterie" "157ème Division d'Infanterie" "158ème Division d'Infanterie" "159ème Division d'Infanterie" 
-		"160ème Division d'Infanterie" "161ème Division d'Infanterie" "162ème Division d'Infanterie" "163ème Division d'Infanterie" "164ème Division d'Infanterie" "165ème Division d'Infanterie" 
+		"µÚ27É½µØÊ¦" "µÚ30É½µØÊ¦" "µÚ31É½µØÊ¦" "µÚ64É½µØÊ¦" "µÚ66É½µØÊ¦" "µÚ65É½µØÊ¦" "µÚ200É½µØÊ¦" "µÚ201É½µØÊ¦" "µÚ202É½µØÊ¦" "µÚ203É½µØÊ¦" "µÚ204É½µØÊ¦" 
+		"µÚ205É½µØÊ¦" "µÚ150É½µØÊ¦" "µÚ151É½µØÊ¦" "µÚ152É½µØÊ¦" "µÚ153É½µØÊ¦" "µÚ154É½µØÊ¦" "µÚ155É½µØÊ¦" "µÚ156É½µØÊ¦" "µÚ157É½µØÊ¦" "µÚ158É½µØÊ¦" "µÚ159É½µØÊ¦" 
+		"µÚ160É½µØÊ¦" "µÚ161É½µØÊ¦" "µÚ162É½µØÊ¦" "µÚ163É½µØÊ¦" "µÚ164É½µØÊ¦" "µÚ165É½µØÊ¦" 
 	}
 	garrison_brigade = {
-		"2ème Division d'Garnison" "4ème Division d'Garnison" "6ème Division d'Garnison" "7ème Division d'Garnison" "8ème Division d'Garnison" "14ème Division d'Garnison" "10ème Division d'Garnison" "11ème Division d'Garnison" "13ème Division d'Garnison" "16ème Division d'Garnison" "18ème Division d'Garnison" 
-		"19ème Division d'Garnison" "20ème Division d'Garnison" "21ème Division d'Garnison" "22ème Division d'Garnison" "23ème Division d'Garnison" "24ème Division d'Garnison" "26ème Division d'Garnison" "28ème Division d'Garnison" "29ème Division d'Garnison" "32ème Division d'Garnison" "35ème Division d'Garnison" 
-		"36ème Division d'Garnison" "41ème Division d'Garnison" "42ème Division d'Garnison" "43ème Division d'Garnison" 
+		"µÚ2ÎÀÊùÊ¦" "µÚ4ÎÀÊùÊ¦" "µÚ6ÎÀÊùÊ¦" "µÚ7ÎÀÊùÊ¦" "µÚ8ÎÀÊùÊ¦" "µÚ14ÎÀÊùÊ¦" "µÚ10ÎÀÊùÊ¦" "µÚ11ÎÀÊùÊ¦" "µÚ13ÎÀÊùÊ¦" "µÚ16ÎÀÊùÊ¦" "µÚ18ÎÀÊùÊ¦" 
+		"µÚ19ÎÀÊùÊ¦" "µÚ20ÎÀÊùÊ¦" "µÚ21ÎÀÊùÊ¦" "µÚ22ÎÀÊùÊ¦" "µÚ23ÎÀÊùÊ¦" "µÚ24ÎÀÊùÊ¦" "µÚ26ÎÀÊùÊ¦" "µÚ28ÎÀÊùÊ¦" "µÚ29ÎÀÊùÊ¦" "µÚ32ÎÀÊùÊ¦" "µÚ35ÎÀÊùÊ¦" 
+		"µÚ36ÎÀÊùÊ¦" "µÚ41ÎÀÊùÊ¦" "µÚ42ÎÀÊùÊ¦" "µÚ43ÎÀÊùÊ¦" 
 	}
 	hq_brigade = {
-		"1ère Armée" "2ème Armée" "3ème Armée" "4ème Armée" "4ème Armée" "6ème Armée" "7ème Armée" "8ème Armée" "9ème Armée" "10ème Armée" 
+		"µÚ1·¨¹úÂ½¾ü" "µÚ2·¨¹úÂ½¾ü" "µÚ3·¨¹úÂ½¾ü" "µÚ4·¨¹úÂ½¾ü" "µÚ4·¨¹úÂ½¾ü" "µÚ6·¨¹úÂ½¾ü" "µÚ7·¨¹úÂ½¾ü" "µÚ8·¨¹úÂ½¾ü" "µÚ9·¨¹úÂ½¾ü" "µÚ10·¨¹úÂ½¾ü" 
 	}
 	militia_brigade = {
-		"1ère Division d'Infanterie de Réserve" "2ème Division d'Infanterie de Réserve" "3ème Division d'Infanterie de Réserve" "4ème Division d'Infanterie de Réserve" "5ème Division d'Infanterie de Réserve" "6ème Division d'Infanterie de Réserve" "7ème Division d'Infanterie de Réserve" "8ème Division d'Infanterie de Réserve" "9ème Division d'Infanterie de Réserve" "10ème Division d'Infanterie de Réserve" "11ème Division d'Infanterie de Réserve" 
-		"12ème Division d'Infanterie de Réserve" "13ème Division d'Infanterie de Réserve" "14ème Division d'Infanterie de Réserve" "15ème Division d'Infanterie de Réserve" "16ème Division d'Infanterie de Réserve" "17ème Division d'Infanterie de Réserve" "18ème Division d'Infanterie de Réserve" "19ème Division d'Infanterie de Réserve" "20ème Division d'Infanterie de Réserve" "21ème Division d'Infanterie de Réserve" "22ème Division d'Infanterie de Réserve" 
-		"23ème Division d'Infanterie de Réserve" "24ème Division d'Infanterie de Réserve" "25ème Division d'Infanterie de Réserve" 
+		"µÚ1Ãñ±øÊ¦" "µÚ2Ãñ±øÊ¦" "µÚ3Ãñ±øÊ¦" "µÚ4Ãñ±øÊ¦" "µÚ5Ãñ±øÊ¦" "µÚ6Ãñ±øÊ¦" "µÚ7Ãñ±øÊ¦" "µÚ8Ãñ±øÊ¦" "µÚ9Ãñ±øÊ¦" "µÚ10Ãñ±øÊ¦" "µÚ11Ãñ±øÊ¦" 
+		"µÚ12Ãñ±øÊ¦" "µÚ13Ãñ±øÊ¦" "µÚ14Ãñ±øÊ¦" "µÚ15Ãñ±øÊ¦" "µÚ16Ãñ±øÊ¦" "µÚ17Ãñ±øÊ¦" "µÚ18Ãñ±øÊ¦" "µÚ19Ãñ±øÊ¦" "µÚ20Ãñ±øÊ¦" "µÚ21Ãñ±øÊ¦" "µÚ22Ãñ±øÊ¦" 
+		"µÚ23Ãñ±øÊ¦" "µÚ24Ãñ±øÊ¦" "µÚ25Ãñ±øÊ¦" 
 	}
 	multi_role = {
-		"Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" "Groupe de Chasse de Nuit" "Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" 
-		"Groupe de Chasse 6" "Groupe de Chasse 7" "Groupe de Chasse 8" "Groupe de Chasse 9" "Groupe de Chasse 10" "Groupe de Chasse 11" "Groupe de Chasse 12" "Groupe de Chasse 13" "Groupe de Chasse 14" "Groupe de Chasse 15" "Groupe de Chasse 16" 
-		"Groupe de Chasse 17" "Groupe de Chasse 18" "Groupe de Chasse 19" "Groupe de Chasse 20" "Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" 
+		"Õ½¶·»ú´ó¶Ó21" "Õ½¶·»ú´ó¶Ó22" "Õ½¶·»ú´ó¶Ó23" "Õ½¶·»ú´ó¶Ó24" "Õ½¶·»ú´ó¶Ó25" "Õ½¶·»ú´ó¶Ó26" "Õ½¶·»ú´ó¶Ó1" "Õ½¶·»ú´ó¶Ó2" "Õ½¶·»ú´ó¶Ó3" "Õ½¶·»ú´ó¶Ó4" "Õ½¶·»ú´ó¶Ó5" 
+		"Õ½¶·»ú´ó¶Ó6" "Õ½¶·»ú´ó¶Ó7" "Õ½¶·»ú´ó¶Ó8" "Õ½¶·»ú´ó¶Ó9" "Õ½¶·»ú´ó¶Ó10" "Õ½¶·»ú´ó¶Ó11" "Õ½¶·»ú´ó¶Ó12" "Õ½¶·»ú´ó¶Ó13" "Õ½¶·»ú´ó¶Ó14" "Õ½¶·»ú´ó¶Ó15" "Õ½¶·»ú´ó¶Ó16" 
+		"Õ½¶·»ú´ó¶Ó17" "Õ½¶·»ú´ó¶Ó18" "Õ½¶·»ú´ó¶Ó19" "Õ½¶·»ú´ó¶Ó20" "Õ½¶·»ú´ó¶Ó21" "Õ½¶·»ú´ó¶Ó22" "Õ½¶·»ú´ó¶Ó23" "Õ½¶·»ú´ó¶Ó24" "Õ½¶·»ú´ó¶Ó25" 
 	}
 	interceptor = {
-		"Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" "Groupe de Chasse de Nuit" "Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" "Groupe de Chasse 6" 
-		"Groupe de Chasse 7" "Groupe de Chasse 8" "Groupe de Chasse 9" "Groupe de Chasse 10" "Groupe de Chasse 11" "Groupe de Chasse 12" "Groupe de Chasse 13" "Groupe de Chasse 14" "Groupe de Chasse 15" "Groupe de Chasse 16" "Groupe de Chasse 17" 
-		"Groupe de Chasse 18" "Groupe de Chasse 19" "Groupe de Chasse 20" "Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" 
-	}
-	jet_int = {
-		"Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" "Groupe de Chasse de Nuit" "Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" "Groupe de Chasse 6" 
-		"Groupe de Chasse 7" "Groupe de Chasse 8" "Groupe de Chasse 9" "Groupe de Chasse 10" "Groupe de Chasse 11" "Groupe de Chasse 12" "Groupe de Chasse 13" "Groupe de Chasse 14" "Groupe de Chasse 15" "Groupe de Chasse 16" "Groupe de Chasse 17" 
-		"Groupe de Chasse 18" "Groupe de Chasse 19" "Groupe de Chasse 20" "Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" 
-	}
-	jet_mr = {
-		"Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" "Groupe de Chasse de Nuit" "Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" "Groupe de Chasse 6" 
-		"Groupe de Chasse 7" "Groupe de Chasse 8" "Groupe de Chasse 9" "Groupe de Chasse 10" "Groupe de Chasse 11" "Groupe de Chasse 12" "Groupe de Chasse 13" "Groupe de Chasse 14" "Groupe de Chasse 15" "Groupe de Chasse 16" "Groupe de Chasse 17" 
-		"Groupe de Chasse 18" "Groupe de Chasse 19" "Groupe de Chasse 20" "Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" 
+		"À¹½Ø»ú´ó¶Ó22" "À¹½Ø»ú´ó¶Ó23" "À¹½Ø»ú´ó¶Ó24" "À¹½Ø»ú´ó¶Ó25" "À¹½Ø»ú´ó¶Óde Nuit" "À¹½Ø»ú´ó¶Ó1" "À¹½Ø»ú´ó¶Ó2" "À¹½Ø»ú´ó¶Ó3" "À¹½Ø»ú´ó¶Ó4" "À¹½Ø»ú´ó¶Ó5" "À¹½Ø»ú´ó¶Ó6" 
+		"À¹½Ø»ú´ó¶Ó7" "À¹½Ø»ú´ó¶Ó8" "À¹½Ø»ú´ó¶Ó9" "À¹½Ø»ú´ó¶Ó10" "À¹½Ø»ú´ó¶Ó11" "À¹½Ø»ú´ó¶Ó12" "À¹½Ø»ú´ó¶Ó13" "À¹½Ø»ú´ó¶Ó14" "À¹½Ø»ú´ó¶Ó15" "À¹½Ø»ú´ó¶Ó16" "À¹½Ø»ú´ó¶Ó17" 
+		"À¹½Ø»ú´ó¶Ó18" "À¹½Ø»ú´ó¶Ó19" "À¹½Ø»ú´ó¶Ó20" "À¹½Ø»ú´ó¶Ó21" "À¹½Ø»ú´ó¶Ó22" "À¹½Ø»ú´ó¶Ó23" "À¹½Ø»ú´ó¶Ó24" "À¹½Ø»ú´ó¶Ó25" 
 	}
 	strategic_bomber = {
-		"Groupe de Bombardement 1" "Groupe de Bombardement 2" "Groupe de Bombardement 3" "Groupe de Bombardement 6" "Groupe de Bombardement 7" "Groupe de Bombardement 8" "Groupe de Bombardement 9" "Groupe de Bombardement 10" "Groupe de Bombardement 11" "Groupe de Bombardement 12" "Groupe de Bombardement 13" 
-		"Groupe de Bombardement 14" "Groupe de Bombardement 15" "Groupe de Bombardement 16" "Groupe de Bombardement 17" "Groupe de Bombardement 20" "Groupe de Bombardement 40" "Groupe de Bombardement 41" "Groupe de Bombardement 42" "Groupe de Bombardement 43" "Groupe de Bombardement 44" "Groupe de Bombardement 45" 
-		"Groupe de Bombardement 46" "Groupe de Bombardement 47" "Groupe de Bombardement 48" "Groupe de Bombardement 49" "Groupe de Bombardement 50" "Groupe de Bombardement 51" "Groupe de Bombardement 52" "Groupe de Bombardement 53" "Groupe de Bombardement 54" "Groupe de Bombardement 55" 
+		"Õ½ÂÔºäÕ¨»úÁª¶Ó1" "Õ½ÂÔºäÕ¨»úÁª¶Ó2" "Õ½ÂÔºäÕ¨»úÁª¶Ó3" "Õ½ÂÔºäÕ¨»úÁª¶Ó6" "Õ½ÂÔºäÕ¨»úÁª¶Ó7" "Õ½ÂÔºäÕ¨»úÁª¶Ó8" "Õ½ÂÔºäÕ¨»úÁª¶Ó9" "Õ½ÂÔºäÕ¨»úÁª¶Ó10" "Õ½ÂÔºäÕ¨»úÁª¶Ó11" "Õ½ÂÔºäÕ¨»úÁª¶Ó12" "Õ½ÂÔºäÕ¨»úÁª¶Ó13" 
+		"Õ½ÂÔºäÕ¨»úÁª¶Ó14" "Õ½ÂÔºäÕ¨»úÁª¶Ó15" "Õ½ÂÔºäÕ¨»úÁª¶Ó16" "Õ½ÂÔºäÕ¨»úÁª¶Ó17" "Õ½ÂÔºäÕ¨»úÁª¶Ó20" "Õ½ÂÔºäÕ¨»úÁª¶Ó40" "Õ½ÂÔºäÕ¨»úÁª¶Ó41" "Õ½ÂÔºäÕ¨»úÁª¶Ó42" "Õ½ÂÔºäÕ¨»úÁª¶Ó43" "Õ½ÂÔºäÕ¨»úÁª¶Ó44" "Õ½ÂÔºäÕ¨»úÁª¶Ó45" 
+		"Õ½ÂÔºäÕ¨»úÁª¶Ó46" "Õ½ÂÔºäÕ¨»úÁª¶Ó47" "Õ½ÂÔºäÕ¨»úÁª¶Ó48" "Õ½ÂÔºäÕ¨»úÁª¶Ó49" "Õ½ÂÔºäÕ¨»úÁª¶Ó50" "Õ½ÂÔºäÕ¨»úÁª¶Ó51" "Õ½ÂÔºäÕ¨»úÁª¶Ó52" "Õ½ÂÔºäÕ¨»úÁª¶Ó53" "Õ½ÂÔºäÕ¨»úÁª¶Ó54" "Õ½ÂÔºäÕ¨»úÁª¶Ó55" 
 	}
 	tactical_bomber = {
-		"Groupe de Bombardement 1" "Groupe de Bombardement 2" "Groupe de Bombardement 3" "Groupe de Bombardement 6" "Groupe de Bombardement 7" "Groupe de Bombardement 8" "Groupe de Bombardement 9" "Groupe de Bombardement 10" "Groupe de Bombardement 11" "Groupe de Bombardement 12" "Groupe de Bombardement 13" 
-		"Groupe de Bombardement 14" "Groupe de Bombardement 15" "Groupe de Bombardement 16" "Groupe de Bombardement 17" "Groupe de Bombardement 20" "Groupe de Bombardement 40" "Groupe de Bombardement 41" "Groupe de Bombardement 42" "Groupe de Bombardement 43" "Groupe de Bombardement 44" "Groupe de Bombardement 45" 
-		"Groupe de Bombardement 46" "Groupe de Bombardement 47" "Groupe de Bombardement 48" "Groupe de Bombardement 49" "Groupe de Bombardement 50" "Groupe de Bombardement 51" "Groupe de Bombardement 52" "Groupe de Bombardement 53" "Groupe de Bombardement 54" "Groupe de Bombardement 55" 
-	}
-	jet_bomber = {
-		"Groupe de Bombardement 1" "Groupe de Bombardement 2" "Groupe de Bombardement 3" "Groupe de Bombardement 6" "Groupe de Bombardement 7" "Groupe de Bombardement 8" "Groupe de Bombardement 9" "Groupe de Bombardement 10" "Groupe de Bombardement 11" "Groupe de Bombardement 12" "Groupe de Bombardement 13" 
-		"Groupe de Bombardement 14" "Groupe de Bombardement 15" "Groupe de Bombardement 16" "Groupe de Bombardement 17" "Groupe de Bombardement 20" "Groupe de Bombardement 40" "Groupe de Bombardement 41" "Groupe de Bombardement 42" "Groupe de Bombardement 43" "Groupe de Bombardement 44" "Groupe de Bombardement 45" 
-		"Groupe de Bombardement 46" "Groupe de Bombardement 47" "Groupe de Bombardement 48" "Groupe de Bombardement 49" "Groupe de Bombardement 50" "Groupe de Bombardement 51" "Groupe de Bombardement 52" "Groupe de Bombardement 53" "Groupe de Bombardement 54" "Groupe de Bombardement 55" 
+		"Õ½ÊõºäÕ¨»úÁª¶Ó1" "Õ½ÊõºäÕ¨»úÁª¶Ó2" "Õ½ÊõºäÕ¨»úÁª¶Ó3" "Õ½ÊõºäÕ¨»úÁª¶Ó6" "Õ½ÊõºäÕ¨»úÁª¶Ó7" "Õ½ÊõºäÕ¨»úÁª¶Ó8" "Õ½ÊõºäÕ¨»úÁª¶Ó9" "Õ½ÊõºäÕ¨»úÁª¶Ó10" "Õ½ÊõºäÕ¨»úÁª¶Ó11" "Õ½ÊõºäÕ¨»úÁª¶Ó12" "Õ½ÊõºäÕ¨»úÁª¶Ó13" 
+		"Õ½ÊõºäÕ¨»úÁª¶Ó14" "Õ½ÊõºäÕ¨»úÁª¶Ó15" "Õ½ÊõºäÕ¨»úÁª¶Ó16" "Õ½ÊõºäÕ¨»úÁª¶Ó17" "Õ½ÊõºäÕ¨»úÁª¶Ó20" "Õ½ÊõºäÕ¨»úÁª¶Ó40" "Õ½ÊõºäÕ¨»úÁª¶Ó41" "Õ½ÊõºäÕ¨»úÁª¶Ó42" "Õ½ÊõºäÕ¨»úÁª¶Ó43" "Õ½ÊõºäÕ¨»úÁª¶Ó44" "Õ½ÊõºäÕ¨»úÁª¶Ó45" 
+		"Õ½ÊõºäÕ¨»úÁª¶Ó46" "Õ½ÊõºäÕ¨»úÁª¶Ó47" "Õ½ÊõºäÕ¨»úÁª¶Ó48" "Õ½ÊõºäÕ¨»úÁª¶Ó49" "Õ½ÊõºäÕ¨»úÁª¶Ó50" "Õ½ÊõºäÕ¨»úÁª¶Ó51" "Õ½ÊõºäÕ¨»úÁª¶Ó52" "Õ½ÊõºäÕ¨»úÁª¶Ó53" "Õ½ÊõºäÕ¨»úÁª¶Ó54" "Õ½ÊõºäÕ¨»úÁª¶Ó55" 
 	}
 	naval_bomber = {
-		"Groupe de Bombardement Naval 1" "Groupe de Bombardement Naval 2" "Groupe de Bombardement Naval 3" "Groupe de Bombardement Naval 4" "Groupe de Bombardement Naval 5" "Groupe de Bombardement Naval 6" "Groupe de Bombardement Naval 7" "Groupe de Bombardement Naval 8" "Groupe de Bombardement Naval 9" "Groupe de Bombardement Naval 10" "Groupe de Torpilleur 1" 
-		"Groupe de Torpilleur 2" "Groupe de Torpilleur 3" "Groupe de Torpilleur 4" "Groupe de Torpilleur 5" "Groupe de Torpilleur 6" "Groupe de Torpilleur 7" "Groupe de Torpilleur 8" "Groupe de Torpilleur 9" "Groupe de Torpilleur 10" 
+		"º£¾üºäÕ¨»ú¶Ó1" "º£¾üºäÕ¨»ú¶Ó2" "º£¾üºäÕ¨»ú¶Ó3" "º£¾üºäÕ¨»ú¶Ó4" "º£¾üºäÕ¨»ú¶Ó5" "º£¾üºäÕ¨»ú¶Ó6" "º£¾üºäÕ¨»ú¶Ó7" "º£¾üºäÕ¨»ú¶Ó8" "º£¾üºäÕ¨»ú¶Ó9" "º£¾üºäÕ¨»ú¶Ó10" "ÓãÀ×ºäÕ¨»ú¶Ó 1" 
+		"ÓãÀ×ºäÕ¨»ú¶Ó 2" "ÓãÀ×ºäÕ¨»ú¶Ó 3" "ÓãÀ×ºäÕ¨»ú¶Ó 4" "ÓãÀ×ºäÕ¨»ú¶Ó 5" "ÓãÀ×ºäÕ¨»ú¶Ó 6" "ÓãÀ×ºäÕ¨»ú¶Ó 7" "ÓãÀ×ºäÕ¨»ú¶Ó 8" "ÓãÀ×ºäÕ¨»ú¶Ó 9" "ÓãÀ×ºäÕ¨»ú¶Ó 10" 
 	}
 	cas = {
-		"Groupe de Bombardement d'Assaut 18" "Groupe de Bombardement d'Assaut 19" "Groupe de Bombardement d'Assaut 21" "Groupe de Bombardement d'Assaut 22" "Groupe de Bombardement d'Assaut 23" "Groupe de Bombardement d'Assaut 24" "Groupe de Bombardement d'Assaut 25" "Groupe de Bombardement d'Assaut 26" "Groupe de Bombardement d'Assaut 27" "Groupe de Bombardement d'Assaut 28" "Groupe de Bombardement d'Assaut 29" 
-		"Groupe de Bombardement d'Assaut 30" 
+		"¸©³åºäÕ¨»ú¶Ó18" "¸©³åºäÕ¨»ú¶Ó19" "¸©³åºäÕ¨»ú¶Ó21" "¸©³åºäÕ¨»ú¶Ó22" "¸©³åºäÕ¨»ú¶Ó23" "¸©³åºäÕ¨»ú¶Ó24" "¸©³åºäÕ¨»ú¶Ó25" "¸©³åºäÕ¨»ú¶Ó26" "¸©³åºäÕ¨»ú¶Ó27" "¸©³åºäÕ¨»ú¶Ó28" "¸©³åºäÕ¨»ú¶Ó29" 
+		"¸©³åºäÕ¨»ú¶Ó30" 
 	}
 	transport_plane = {
-		"1er Groupe de Transport Aérien" "2ème Groupe de Transport Aérien" "3ème Groupe de Transport Aérien" "4ème Groupe de Transport Aérien" "5ème Groupe de Transport Aérien" "6ème Groupe de Transport Aérien" "7ème Groupe de Transport Aérien" "8ème Groupe de Transport Aérien" "9ème Groupe de Transport Aérien" "10ème Groupe de Transport Aérien" 
+		"µÚ1ÔËÊä»ú´ó¶Ó" "µÚ2ÔËÊä»ú´ó¶Ó" "µÚ3ÔËÊä»ú´ó¶Ó" "µÚ4ÔËÊä»ú´ó¶Ó" "µÚ5ÔËÊä»ú´ó¶Ó" "µÚ6ÔËÊä»ú´ó¶Ó" "µÚ7ÔËÊä»ú´ó¶Ó" "µÚ8ÔËÊä»ú´ó¶Ó" "µÚ9ÔËÊä»ú´ó¶Ó" "µÚ10ÔËÊä»ú´ó¶Ó" 
 	}
 	battleship = {
-		"Richelieu" "Jean Bart" "Clemenceau" "Gascoigne"
-		"Gascoigne" "Clemenceau" "Languedoc"
-		"Alsace" "Normandie" "Flandre" "Bourgogne" 
-		"Courbet" "France" "Jean Bart" "Paris"
-		"Bretagne" "Lorraine" "Provence"
-		"Normandie" "Flandre" "Languedoc" "Gascoigne" "Bearn"
-		"Lyon" "Tourville" "Duquesne" "Lille"
+		"¿â¶û±´" "°ÍÀè" "Ó¢¹ú" "ÆÕÂŞÍúË¹" "ÂåÁÖ" "¶Ø¿Ë¶û¿Ë" "Ë¹ÌØÀ­Ë¹±¤" "ÀèÈûÁô" "ÈÃ°ÍÌØ" "¿ËÀïÃÉËó" "±ÈË¹¿ª" 
+		"ÀÊ¸ñ¶à¿Ë" "ÏãéÄ" "°¢¶ûÈøË¹" "ÅµÂüµ×" "¸¥À¼µÂ" "ôŞ" "Æ¤¿¨" "İ®" "Â³Î÷" "°Â¸¥Äù" "¶à·Ò"
+		"¸¥ÀÊÊ²¿×Ì©"
 	}
 	light_cruiser = {
-		"Georges Leygues"
-		"Mogador" "Volta"
-		"Bayard" "Lahire" "Turenne" "D'auvergne" "Vaudreuil" "Bugeaud"
-		"De Grasse" "Chateaurenault" "Guichen"
-		"Hoche" "Desaix" "Kleber" "Marceau"  
-		"Lamotte-Picquet" "Colmar" "Mulhouse"
-		"Duguay Trouin" "Lamotte-Picquet" "Primaguet"
-		"Pluton"
-		"Jeanne d'Arc"
-		"Émile Bertin"
-		"Le Fantasque" "Le Malin" "Le Terrible" "L'Indomptable" "L'Audacieux" "Le Triomphant"
-		"La Galissonniére" "Jean de Vienne" "Marseillaise" "Gloire" "Montcalm" "Georges Leygues"
-		"Marseillaise" "Gloire" "Montcalm" "Georges Leygues" "De Grasse" "Chateaurenault" "Guichen" "Colbert" "Colmar" "Mulhouse" "Strasbourg" 
-		"Metz" "Thionville" "Duguay Trouin" "Lamotte-Picquet" "Primaguet" "Duquesne" "Tourville" "Suffren" "Foch" "Dupleix" "Pluton" 
-		"Jeanne d'Arc" "Algerié" "Émile Bertin" "La Galissonniére" "Jean de Vienne" 
-	}
+		"¶Å¹ÅÑÇ-ÌØÈğÒò" "À­ÄªÌØ-Æ¤¿üÌØ" "ÅåÀïÂê¸ñÌØ" "Í¼¶ûÎ¬¶û" "¶Å¿Ï" "ËÕ·Ò" "¿Æ¶û²®ÌØ" "¸£ìã" "¶ÅÆ¤À×¿Ë" "°¢¶û¼°ÀûÑÇ" "Ú¤ÍõĞÇ" 
+		"Ê¥Å®ÕêµÂ" "°£Ã×¶û±´¶ûÌ¹" "À­¸ÇÁ¢É­" "ÈÃµÂÎ¬°£ÄÉ" "ÇÇÖÎ" "ÂíÈüÇú" "ÈÙÒ«" "ÃÉ¿¨¶ûÄ·" "µÂ¸ñÀ­Ë¹" "¹ğ³Ç" "²éÌØ°ÂÂ×¶ûÌØ" 
+		"Ë÷ÂŞ¿ËÜ½" "¶Å¿¨Ë¹" "ÊæÍßÉª¶û" "°²Çú¿­Ë¹ÌØ°Â" "°ÂÀÕÎ¬¶û" "µÂË¹Ì¹" 
 	heavy_cruiser = {
-		"Saint Louis" "Victor Hugo" "Léon Gambetta"
-		"Edgar Quinet" "Waldeck-Rousseau"
-		"Duquesne" "Tourville"
-		"Suffren" "Colbert" "Foch" "Dupleix"
-		"Algerié"
-		"Dupuy de LmeÜ" "Amiral Charner" "Bruix" "Chanzy" "Latouche-Tréville" "Pothuau" "Dupetit-Thouars" "Gueydon" "Montcalm" "Desaix" 
-		"Dupleix" "Kléber" "Amiral Aube" "Condé" "Gloire" "Marseillaise" "Léon Gambetta" "Jules Ferry" "Victor Hugo" "Jules Michelet" "Ernest Renan" 
-		"Edgar Quinet" "Waldeck-Rousseau" 
+		"¶Å¹ÅÑÇ-ÌØÈğÒò" "À­ÄªÌØ-Æ¤¿üÌØ" "ÅåÀïÂê¸ñÌØ" "Í¼¶ûÎ¬¶û" "¶Å¿Ï" "ËÕ·Ò" "¿Æ¶û²®ÌØ" "¸£ìã" "¶ÅÆ¤À×¿Ë" "°¢¶û¼°ÀûÑÇ" "Ú¤ÍõĞÇ" 
+		"Ê¥Å®ÕêµÂ" "°£Ã×¶û±´¶ûÌ¹" "À­¸ÇÁ¢É­" "ÈÃµÂÎ¬°£ÄÉ" "ÇÇÖÎ" "ÂíÈüÇú" "ÈÙÒ«" "ÃÉ¿¨¶ûÄ·" "µÂ¸ñÀ­Ë¹" "¹ğ³Ç" "²éÌØ°ÂÂ×¶ûÌØ" 
+		"Ë÷ÂŞ¿ËÜ½" "¶Å¿¨Ë¹" "ÊæÍßÉª¶û" "°²Çú¿­Ë¹ÌØ°Â" "°ÂÀÕÎ¬¶û" "µÂË¹Ì¹" 
 	}
 	battlecruiser = {
-		"Dunkerque" "Strasbourg" 
-		"Gille" "Durand-Viel"
-		"Democratié" "Liberté" "Égalité" "Fraternité"
+		"°Â¸¥ÄùµÂ" "º£ëà" "¸¥ÀÊÊ²¿×Ì©" "ÀÊ¸ñ" "ÏãéÄ" "°¢¶ûÈøË¹" "ÅµÂüµ×" "¸¥À¼µÂ" "ôŞ" "Æ¤¿¨" "İ®" 
+		"Â³Î÷" "¿â¶û±´" "°ÍÀè" "Ó¢¹ú" "ÆÕÂŞÍúË¹" "ÂåÁÖ" 
 	}
 	destroyer = {
-		"1ère Divisionde Torpilleurs" "2ème Divisionde Torpilleurs" "3ème Divisionde Torpilleurs" "4ème Divisionde Torpilleurs" "5ème Divisionde Torpilleurs" "6ème Divisionde Torpilleurs" "7ème Divisionde Torpilleurs" "8ème Divisionde Torpilleurs" "9ème Divisionde Torpilleurs" "10ème Divisionde Torpilleurs" "11ème Divisionde Torpilleurs" 
-		"12ème Divisionde Torpilleurs" "13ème Divisionde Torpilleurs" "14ème Divisionde Torpilleurs" "15ème Divisionde Torpilleurs" "16ème Divisionde Torpilleurs" "17ème Divisionde Torpilleurs" "18ème Divisionde Torpilleurs" "19ème Divisionde Torpilleurs" "20ème Divisionde Torpilleurs" 
+		"µÚ1ÇıÖğ½¢´ó¶Ó" "µÚ2ÇıÖğ½¢´ó¶Ó" "µÚ3ÇıÖğ½¢´ó¶Ó" "µÚ4ÇıÖğ½¢´ó¶Ó" "µÚ5ÇıÖğ½¢´ó¶Ó" "µÚ6ÇıÖğ½¢´ó¶Ó" "µÚ7ÇıÖğ½¢´ó¶Ó" "µÚ8ÇıÖğ½¢´ó¶Ó" "µÚ9ÇıÖğ½¢´ó¶Ó" "µÚ10ÇıÖğ½¢´ó¶Ó" "µÚ11ÇıÖğ½¢´ó¶Ó" 
+		"µÚ12ÇıÖğ½¢´ó¶Ó" "µÚ13ÇıÖğ½¢´ó¶Ó" "µÚ14ÇıÖğ½¢´ó¶Ó" "µÚ15ÇıÖğ½¢´ó¶Ó" "µÚ16ÇıÖğ½¢´ó¶Ó" "µÚ17ÇıÖğ½¢´ó¶Ó" "µÚ18ÇıÖğ½¢´ó¶Ó" "µÚ19ÇıÖğ½¢´ó¶Ó" "µÚ20ÇıÖğ½¢´ó¶Ó" 
 	}
 	carrier = {
-		"Joffre" "Painlevé" "Foudre"
-		"Clemenceau" "Foch"
-		"Bearn" "Normandie" "Flandre" "Languedoc" "Gascogne" 
-	}
-	escort_carrier = {
-		"Lafayette" "Bois Belleau"
-		"Arromanches"
-		"Duquesne" "Tourville"
+		"Áº" "Èô·ò¶û" "ÅÉÄáÀÕÜ½" "µÏ¿ËÄÂµÂ" "°¢ÂŞÂü³¹Ë¹" "À­ì³ÌØ" "±È°ÂË¹²¼¶ûÀÍ" "·²¶ûµÇ" 
 	}
 	submarine = {
-		"1ère Flottille sous-marine" "2ème Flottille sous-Marine" "3ème Flottille sous-Marine" "4ème Flottille sous-Marine" "5ème Flottille sous-Marine" "6ème Flottille sous-Marine" "7ème Flottille sous-Marine" "8ème Flottille sous-Marine" "9ème Flottille sous-Marine" "10ème Flottille sous-Marine" "11ème Flottille sous-Marine" 
-		"12ème Flottille sous-Marine" "13ème Flottille sous-Marine" "14ème Flottille sous-Marine" "15ème Flottille sous-Marine" "16ème Flottille sous-Marine" "17ème Flottille sous-Marine" "18ème Flottille sous-Marine" "19ème Flottille sous-Marine" "20ème Flottille sous-Marine" 
+		"µÚ1Ç±Í§´ó¶Ó" "µÚ2Ç±Í§´ó¶Ó" "µÚ3Ç±Í§´ó¶Ó" "µÚ4Ç±Í§´ó¶Ó" "µÚ5Ç±Í§´ó¶Ó" "µÚ6Ç±Í§´ó¶Ó" "µÚ7Ç±Í§´ó¶Ó" "µÚ8Ç±Í§´ó¶Ó" "µÚ9Ç±Í§´ó¶Ó" "µÚ10Ç±Í§´ó¶Ó" "µÚ11Ç±Í§´ó¶Ó" 
+		"µÚ12Ç±Í§´ó¶Ó" "µÚ13Ç±Í§´ó¶Ó" "µÚ14Ç±Í§´ó¶Ó" "µÚ15Ç±Í§´ó¶Ó" "µÚ16Ç±Í§´ó¶Ó" "µÚ17Ç±Í§´ó¶Ó" "µÚ18Ç±Í§´ó¶Ó" "µÚ19Ç±Í§´ó¶Ó" "µÚ20Ç±Í§´ó¶Ó" 
 	}
 	transport_ship = {
-		"1ère Flottille de Transport" "2ème Flottille de Transport" "3ème Flottille de Transport" "4ème Flottille de Transport" "5ème Flottille de Transport" "6ème Flottille de Transport" "7ème Flottille de Transport" "8ème Flottille de Transport" "9ème Flottille de Transport" "10ème Flottille de Transport" "11ème Flottille de Transport" 
-		"12ème Flottille de Transport" "13ème Flottille de Transport" "14ème Flottille de Transport" "15ème Flottille de Transport" "16ème Flottille de Transport" "17ème Flottille de Transport" "18ème Flottille de Transport" "19ème Flottille de Transport" "20ème Flottille de Transport" "21ème Flottille de Transport" "22ème Flottille de Transport" 
-		"23ème Flottille de Transport" "24ème Flottille de Transport" "25ème Flottille de Transport" "26ème Flottille de Transport" "27ème Flottille de Transport" "28ème Flottille de Transport" "29ème Flottille de Transport" "30ème Flottille de Transport" "31ème Flottille de Transport" "32ème Flottille de Transport" "33ème Flottille de Transport" 
-		"34ème Flottille de Transport" "35ème Flottille de Transport" "36ème Flottille de Transport" "37ème Flottille de Transport" "38ème Flottille de Transport" "39ème Flottille de Transport" "40ème Flottille de Transport" 
+		"µÚ1ÔËÊä´¬´ó¶Ó" "µÚ2ÔËÊä´¬´ó¶Ó" "µÚ3ÔËÊä´¬´ó¶Ó" "µÚ4ÔËÊä´¬´ó¶Ó" "µÚ5ÔËÊä´¬´ó¶Ó" "µÚ6ÔËÊä´¬´ó¶Ó" "µÚ7ÔËÊä´¬´ó¶Ó" "µÚ8ÔËÊä´¬´ó¶Ó" "µÚ9ÔËÊä´¬´ó¶Ó" "µÚ10ÔËÊä´¬´ó¶Ó" "µÚ11ÔËÊä´¬´ó¶Ó" 
+		"µÚ12ÔËÊä´¬´ó¶Ó" "µÚ13ÔËÊä´¬´ó¶Ó" "µÚ14ÔËÊä´¬´ó¶Ó" "µÚ15ÔËÊä´¬´ó¶Ó" "µÚ16ÔËÊä´¬´ó¶Ó" "µÚ17ÔËÊä´¬´ó¶Ó" "µÚ18ÔËÊä´¬´ó¶Ó" "µÚ19ÔËÊä´¬´ó¶Ó" "µÚ20ÔËÊä´¬´ó¶Ó" "µÚ21ÔËÊä´¬´ó¶Ó" "µÚ22ÔËÊä´¬´ó¶Ó" 
+		"µÚ23ÔËÊä´¬´ó¶Ó" "µÚ24ÔËÊä´¬´ó¶Ó" "µÚ25ÔËÊä´¬´ó¶Ó" "µÚ26ÔËÊä´¬´ó¶Ó" "µÚ27ÔËÊä´¬´ó¶Ó" "µÚ28ÔËÊä´¬´ó¶Ó" "µÚ29ÔËÊä´¬´ó¶Ó" "µÚ30ÔËÊä´¬´ó¶Ó" "µÚ31ÔËÊä´¬´ó¶Ó" "µÚ32ÔËÊä´¬´ó¶Ó" "µÚ33ÔËÊä´¬´ó¶Ó" 
+		"µÚ34ÔËÊä´¬´ó¶Ó" "µÚ35ÔËÊä´¬´ó¶Ó" "µÚ36ÔËÊä´¬´ó¶Ó" "µÚ37ÔËÊä´¬´ó¶Ó" "µÚ38ÔËÊä´¬´ó¶Ó" "µÚ39ÔËÊä´¬´ó¶Ó" "µÚ40ÔËÊä´¬´ó¶Ó" 
 	}
 
 }
 
 ministers = {
 	57001 = {
-		name = "Phillipe Petain"
+		name = "·ÆÀûÆÖ±´µ±"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M57001
@@ -235,7 +160,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	57002 = {
-		name = "Jean-Francois Darlan"
+		name = "ÈÃ¸¥ÀÊË÷Íß´ïÀ¼"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M57002
@@ -247,7 +172,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	57003 = {
-		name = "Paul Baudouin"
+		name = "±£ÂŞ±«µÂÎÂ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57003
@@ -255,7 +180,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	57004 = {
-		name = "Marius Berliet"
+		name = "ÂíÂÀË¹±´Àû°£"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57004
@@ -263,7 +188,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	57005 = {
-		name = "Joseph Barthélemy"
+		name = "Ô¼Éª·ò°ÍÈûÂåçÑ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57005
@@ -271,7 +196,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	57006 = {
-		name = "Rene Bousquet"
+		name = "ÀÕÄÚ²¼Ë¹¿­"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57006
@@ -279,7 +204,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	57007 = {
-		name = "Charles Huntziger"
+		name = "ÏÄ¶û ºàĞÁ¸ñ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57007
@@ -287,7 +212,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	57008 = {
-		name = "Maxime Weygand"
+		name = "Âí¿ËÎ÷Ä· Îº¸Õ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57008
@@ -295,7 +220,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	57010 = {
-		name = "Jean Marie Bergeret"
+		name = "ÈÃ ÂíÀï°£ ±´¶ûÈÈÀ×"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57010
@@ -303,7 +228,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	57011 = {
-		name = "Pierre Laval"
+		name = "Æ¤°£¶ûÀ­Íß¶û"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M57011
@@ -314,7 +239,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	57013 = {
-		name = "Charles André Weiss"
+		name = "²é¶ûË¹°²µÂÁÒÎºË¹"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M57013
@@ -322,7 +247,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	57014 = {
-		name = "Albert Thomas"
+		name = "°¬²®ÌØÍĞÂíË¹"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M57014
@@ -330,7 +255,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	57016 = {
-		name = "Gabriel Hanoteaux"
+		name = "¼Ó²¼Àï°£¶û ¹şÅµÍĞ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57016
@@ -338,7 +263,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	57017 = {
-		name = "Henri de Jouvenel"
+		name = "ºàÀû µÂ Èå¸¥"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57017
@@ -347,7 +272,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	57018 = {
-		name = "Arne Leroy"
+		name = "°¢¶÷ÀÕÂŞÒÁ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57018
@@ -355,7 +280,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	57019 = {
-		name = "Tulio Franco Franco"
+		name = "Í¼ÂÔ ·ğÀÊ¸ç ·ğÀÊ¸ç"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57019
@@ -363,7 +288,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	57020 = {
-		name = "Lucien Lacaze"
+		name = "ÂÀÎ÷°² À­¿¨×È"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57020
@@ -371,7 +296,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	57021 = {
-		name = "Robert Haas"
+		name = "ÂŞ²®ÌØ¹şË¹"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57021
@@ -379,7 +304,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	57022 = {
-		name = "Stephane Auphan"
+		name = "Ë¹µÙ·Ò °Â·Ò"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57022
@@ -387,7 +312,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	57023 = {
-		name = "Paul Painleve"
+		name = "±£ÂŞ ÅÓÀÕÎ¬"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57023
@@ -395,7 +320,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	57024 = {
-		name = "Paul Mantoux"
+		name = "±£¶ûÃ¢Í¼"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57024
@@ -403,7 +328,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	57026 = {
-		name = "Eduard Herriot"
+		name = "°®µÂ»ªºÕÀï°ÂÌØ"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M57026
@@ -411,7 +336,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	57028 = {
-		name = "Marius Viple"
+		name = "ÂíÂÀË¹ Î¬ÆÕÀÕ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57028
@@ -419,7 +344,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	57029 = {
-		name = "René Bousquet"
+		name = "ÈÎ ²¼Ë¹¿­"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57006
@@ -427,7 +352,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	57030 = {
-		name = "Raphael Alibert"
+		name = "À­ì³¶û °¢Àû±´¶û"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57030
@@ -435,7 +360,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	57031 = {
-		name = "Gouffre de Lapradelle"
+		name = "¸ß¸¥ µÂ À­ÅÁÈğµÂ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57031
@@ -444,7 +369,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	57034 = {
-		name = "Eugene Bridoux"
+		name = "Å·ÈÊ ²¼Àï¶Å"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57034
@@ -453,7 +378,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	57036 = {
-		name = "Jean Esteva"
+		name = "ÈÃ °£Ë¹ÌØÍß"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57036
@@ -461,54 +386,19 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	57037 = {
-		name = "Jean Marie Abrial"
+		name = "ÈÃ ÂíÀï°£ °¢²¼Àû¶û"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57037
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1943.1.1
 	}
 	57038 = {
-		name = "Maurice Jannekeyn"
+		name = "ÄªÈğË¹ ÑïÄÚ¿Ï"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M57038
 		chief_of_air = carpet_bombing_doctrine
 		start_date = 1942.1.1
 	}
-	# Generic dummy ministers
-	96026 = {
-		name = "Nameless Clerk"
-		ideology = national_socialist
-		loyalty = 1.0
-		picture = MNationalSocialist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	96027 = {
-		name = "Nameless Clerk"
-		ideology = fascistic
-		loyalty = 1.0
-		picture = MFascistic
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}	
 }

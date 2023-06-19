@@ -1,8 +1,6 @@
 color = { 130  206  113 }
 graphical_culture = Japanese
 
-
-
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -19,121 +17,111 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
-	generic_garrison = {
-		garrison_brigade
-		garrison_brigade
-		garrison_brigade
-	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
 	}
-	generic_alpine = {
-		bergsjaeger_brigade
-		bergsjaeger_brigade
-	}
-	generic_marine = {
-		marine_brigade
-		marine_brigade
-	}	
 }
-
 unit_names = {
 	infantry_brigade = {
-		"2ème Division d'Infanterie" "4ème Division d'Infanterie" "6ème Division d'Infanterie" "7ème Division d'Infanterie" "8ème Division d'Infanterie" "14ème Division d'Infanterie" "10ème Division d'Infanterie" "11ème Division d'Infanterie" "13ème Division d'Infanterie" "16ème Division d'Infanterie" "18ème Division d'Infanterie" 
-		"19ème Division d'Infanterie" "20ème Division d'Infanterie" 
+		"²½±øµÚ1Ê¦" "²½±øµÚ2Ê¦" "²½±øµÚ3Ê¦" "²½±øµÚ4Ê¦" "²½±øµÚ5Ê¦" "²½±øµÚ6Ê¦" "²½±øµÚ7Ê¦" "²½±øµÚ8Ê¦" "²½±øµÚ9Ê¦" "²½±øµÚ10Ê¦" "²½±øµÚ12Ê¦" 
+		"²½±øµÚ14Ê¦" "²½±øµÚ15Ê¦" "²½±øµÚ17Ê¦" "²½±øµÚ19Ê¦" "²½±øµÚ21Ê¦" "²½±øµÚ22Ê¦" "²½±øµÚ25Ê¦" "²½±øµÚ28Ê¦" "²½±øµÚ29Ê¦" "²½±øµÚ30Ê¦" "²½±øµÚ35Ê¦" 
+		"²½±øµÚ38Ê¦" "²½±øµÚ40Ê¦" "²½±øµÚ42Ê¦" "²½±øµÚ46Ê¦" "²½±øµÚ47Ê¦" "²½±øµÚ49Ê¦" "²½±øµÚ50Ê¦" "²½±øµÚ51Ê¦" "²½±øµÚ57Ê¦" "²½±øµÚ58Ê¦" "²½±øµÚ61Ê¦" 
+		"²½±øµÚ62Ê¦" "²½±øµÚ63Ê¦" "²½±øµÚ64Ê¦" "²½±øµÚ65Ê¦" "²½±øµÚ66Ê¦" "²½±øµÚ69Ê¦" "²½±øµÚ70Ê¦" "²½±øµÚ76Ê¦" "²½±øµÚ78Ê¦" "²½±øµÚ79Ê¦" "²½±øµÚ80Ê¦" 
+		"²½±øµÚ81Ê¦" "²½±øµÚ82Ê¦" "²½±øµÚ83Ê¦" "²½±øµÚ89Ê¦" "²½±øµÚ91Ê¦" "²½±øµÚ93Ê¦" "²½±øµÚ96Ê¦" "²½±øµÚ98Ê¦" "²½±øµÚ100Ê¦" 
 	}
 	cavalry_brigade = {
-		"1ère Division Légère de Cavalerie" "2ème Division Légère de Cavalerie" "3ème Division Légère de Cavalerie" "4ème Division Légère de Cavalerie" "5ème Division Légère de Cavalerie" 
+		"Æï±øµÚ1Ê¦" "Æï±øµÚ2Ê¦" "Æï±øµÚ3Ê¦" "Æï±øµÚ4Ê¦" "Æï±øµÚ5Ê¦" "Æï±øµÚ6Ê¦" "Æï±øµÚ7Ê¦" "Æï±øµÚ8Ê¦" "Æï±øµÚ9Ê¦" "Æï±øµÚ10Ê¦" "Æï±øµÚ11Ê¦" 
+		"Æï±øµÚ12Ê¦" "Æï±øµÚ13Ê¦" "Æï±øµÚ14Ê¦" "Æï±øµÚ15Ê¦" "Æï±øµÚ16Ê¦" "Æï±øµÚ17Ê¦" "Æï±øµÚ18Ê¦" "Æï±øµÚ19Ê¦" "Æï±øµÚ20Ê¦" 
 	}
 	motorized_brigade = {
-		"1ère Division d'Infanterie Motorisée" "3ème Division d'Infanterie Motorisée" "5ème Division d'Infanterie Motorisée" 
+		"Ä¦²½µÚ1Ê¦" "Ä¦²½µÚ2Ê¦" "Ä¦²½µÚ3Ê¦" "Ä¦²½µÚ4Ê¦" "Ä¦²½µÚ5Ê¦" "Ä¦²½µÚ6Ê¦" "Ä¦²½µÚ7Ê¦" "Ä¦²½µÚ8Ê¦" "Ä¦²½µÚ9Ê¦" "Ä¦²½µÚ10Ê¦" 
 	}
 	mechanized_brigade = {
-		"1ère Division Légère Mécanisée" "2ème Division Légère Mécanisée" "3ème Division Légère Mécanisée" "4ème Division Légère Mécanisée" "5ème Division Légère Mécanisée" 
-	}
+		"»ú²½µÚ1Ê¦" "»ú²½µÚ2Ê¦" "»ú²½µÚ3Ê¦" "»ú²½µÚ4Ê¦" "»ú²½µÚ5Ê¦" "»ú²½µÚ6Ê¦" "»ú²½µÚ7Ê¦" "»ú²½µÚ8Ê¦" "»ú²½µÚ9Ê¦" "»ú²½µÚ10Ê¦" "»ú²½µÚ12Ê¦" 
+			}
 	light_armor_brigade = {
-		"1ere Division Cuirassée de Réserve" "2ème Division Cuirassée de Réserve" "3ème Division Cuirassée de Réserve" "4ème Division Cuirassée de Réserve" "5ème Division Cuirassée de Réserve" 
+		"µÚ1×°¼×Ô¤±¸Ê¦" "µÚ2×°¼×Ô¤±¸Ê¦" "µÚ3×°¼×Ô¤±¸Ê¦" "µÚ4×°¼×Ô¤±¸Ê¦" "µÚ5×°¼×Ô¤±¸Ê¦" "µÚ6×°¼×Ô¤±¸Ê¦" "µÚ7×°¼×Ô¤±¸Ê¦" "µÚ8×°¼×Ô¤±¸Ê¦" "µÚ9×°¼×Ô¤±¸Ê¦" "µÚ10×°¼×Ô¤±¸Ê¦" 
 	}
 	armor_brigade = {
-		"1ère Division Cuirassée de Réserve" "2ème Division Cuirassée de Réserve" "3ème Division Cuirassée de Réserve" "4ème Division Cuirassée de Réserve" "5ème Division Cuirassée de Réserve" "6ème Division Cuirassée de Réserve" 
+		"µÚ1×°¼×Ô¤±¸Ê¦" "µÚ2×°¼×Ô¤±¸Ê¦" "µÚ3×°¼×Ô¤±¸Ê¦" "µÚ4×°¼×Ô¤±¸Ê¦" "µÚ5×°¼×Ô¤±¸Ê¦" "µÚ6×°¼×Ô¤±¸Ê¦" "µÚ7×°¼×Ô¤±¸Ê¦" "µÚ8×°¼×Ô¤±¸Ê¦" "µÚ9×°¼×Ô¤±¸Ê¦" "µÚ10×°¼×Ô¤±¸Ê¦" 
 	}
 	paratrooper_brigade = {
-		"1re Divsion Aéroportée" "2ème Divsion Aéroportée" "3ème Divsion Aéroportée" "4ème Divsion Aéroportée" "5ème Divsion Aéroportée" 
+		"½µÂäÉ¡±ø1Ê¦" "½µÂäÉ¡±ø2Ê¦" "½µÂäÉ¡±ø3Ê¦" "½µÂäÉ¡±ø4Ê¦" "½µÂäÉ¡±ø5Ê¦" 
 	}
 	marine_brigade = {
-		"1ère Division d'Infanterie de Marine" "2ème Division d'Infanterie de Marine" "3ème Division d'Infanterie de Marine" "4ème Division d'Infanterie de Marine" 
+		"º£¾üÂ½Õ½¶ÓµÚ1Ê¦" "º£¾üÂ½Õ½¶ÓµÚ2Ê¦" "º£¾üÂ½Õ½¶ÓµÚ3Ê¦" "º£¾üÂ½Õ½¶ÓµÚ4Ê¦" "º£¾üÂ½Õ½¶ÓµÚ5Ê¦" 
 	}
 	bergsjaeger_brigade = {
-		"27ème Division d'Infanterie" "30ème Division d'Infanterie" "31ème Division d'Infanterie" 
+		"É½µØµÚ1Ê¦" "É½µØµÚ2Ê¦" "É½µØµÚ3Ê¦" "É½µØµÚ4Ê¦" "É½µØµÚ5Ê¦" "É½µØµÚ6Ê¦" "É½µØµÚ7Ê¦" "É½µØµÚ8Ê¦" "É½µØµÚ9Ê¦" "É½µØµÚ10Ê¦" 
 	}
 	garrison_brigade = {
-		"2ème Division d'Garnison" "4ème Division d'Garnison" "6ème Division d'Garnison" "7ème Division d'Garnison" "8ème Division d'Garnison" "14ème Division d'Garnison" 
+	        "µÚ1·ÀÎÀÍÅ" "µÚ2·ÀÎÀÍÅ" "µÚ3·ÀÎÀÍÅ" "µÚ4·ÀÎÀÍÅ" "µÚ5·ÀÎÀÍÅ" "µÚ6·ÀÎÀÍÅ" "µÚ7·ÀÎÀÍÅ" "µÚ8·ÀÎÀÍÅ" "µÚ9·ÀÎÀÍÅ" "µÚ10·ÀÎÀÍÅ" "µÚ11·ÀÎÀÍÅ"
+                "µÚ12·ÀÎÀÍÅ" "µÚ13·ÀÎÀÍÅ" "µÚ14·ÀÎÀÍÅ" "µÚ15·ÀÎÀÍÅ"
 	}
 	hq_brigade = {
-		"1ère Armée Indochinois" "2ème Armée Indochinois" "3ème Armée Indochinois" 
+		"µÚ1Ó¡¶ÈÖ§ÄÇ¾ü" "µÚ2Ó¡¶ÈÖ§ÄÇ¾ü" "µÚ3Ó¡¶ÈÖ§ÄÇ¾ü" 
 	}
 	militia_brigade = {
-		"1ère Division d'Infanterie de Réserve" "2ème Division d'Infanterie de Réserve" "3ème Division d'Infanterie de Réserve" "4ème Division d'Infanterie de Réserve" "5ème Division d'Infanterie de Réserve" "6ème Division d'Infanterie de Réserve" "7ème Division d'Infanterie de Réserve" "8ème Division d'Infanterie de Réserve" "9ème Division d'Infanterie de Réserve" "10ème Division d'Infanterie de Réserve" "11ème Division d'Infanterie de Réserve" 
-		"12ème Division d'Infanterie de Réserve" "13ème Division d'Infanterie de Réserve" 
+		"µÚ1ÊØ±¸Ê¦" "µÚ2ÊØ±¸Ê¦" "µÚ3ÊØ±¸Ê¦" "µÚ4ÊØ±¸Ê¦" "µÚ5ÊØ±¸Ê¦" "µÚ6ÊØ±¸Ê¦" "µÚ7ÊØ±¸Ê¦" "µÚ8ÊØ±¸Ê¦" "µÚ9ÊØ±¸Ê¦" "µÚ10ÊØ±¸Ê¦" "µÚ11ÊØ±¸Ê¦"
+		"µÚ12ÊØ±¸Ê¦" "µÚ13ÊØ±¸Ê¦" 
 	}
 	multi_role = {
-		"Groupe de Chasse 21" "Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" 
+		"µÚ1¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ2¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ3¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ4¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ5¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ6¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ7¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ8¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ9¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ10¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ11¶àÈÎÎñÕ½¶·»ú´ó¶Ó" 
+		"µÚ12¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ13¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ14¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ15¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ16¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ17¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ18¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ19¶àÈÎÎñÕ½¶·»ú´ó¶Ó" "µÚ20¶àÈÎÎñÕ½¶·»ú´ó¶Ó" 
 	}
 	interceptor = {
-		"Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" 
-	}
-	jet_int = {
-		"Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" 
-	}
-	jet_mr = {
-		"Groupe de Chasse 22" "Groupe de Chasse 23" "Groupe de Chasse 24" "Groupe de Chasse 25" 
+		"µÚ1½Ø»÷»ú´ó¶Ó" "µÚ2½Ø»÷»ú´ó¶Ó" "µÚ3½Ø»÷»ú´ó¶Ó" "µÚ4½Ø»÷»ú´ó¶Ó" "µÚ5½Ø»÷»ú´ó¶Ó" "µÚ6½Ø»÷»ú´ó¶Ó" "µÚ7½Ø»÷»ú´ó¶Ó" "µÚ8½Ø»÷»ú´ó¶Ó" "µÚ9½Ø»÷»ú´ó¶Ó" "µÚ10½Ø»÷»ú´ó¶Ó" "µÚ11½Ø»÷»ú´ó¶Ó" 
+		"µÚ12½Ø»÷»ú´ó¶Ó" "µÚ13½Ø»÷»ú´ó¶Ó" "µÚ14½Ø»÷»ú´ó¶Ó" "µÚ15½Ø»÷»ú´ó¶Ó" "µÚ16½Ø»÷»ú´ó¶Ó" "µÚ17½Ø»÷»ú´ó¶Ó" "µÚ18½Ø»÷»ú´ó¶Ó" "µÚ19½Ø»÷»ú´ó¶Ó" "µÚ20½Ø»÷»ú´ó¶Ó" 
 	}
 	strategic_bomber = {
-		"Groupe de Bombardèment 1" "Groupe de Bombardèment 2" "Groupe de Bombardèment 3" "Groupe de Bombardèment 6" "Groupe de Bombardèment 7" "Groupe de Bombardèment 8" 
+		"µÚ1Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ2Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ3Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ4Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ5Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ6Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ7Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ8Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ9Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ10Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ11Õ½ÂÔºäÕ¨»ú´ó¶Ó" 
+		"µÚ12Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ13Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ14Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ15Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ16Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ17Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ18Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ19Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ20Õ½ÂÔºäÕ¨»ú´ó¶Ó" 
 	}
 	tactical_bomber = {
-		"Groupe de Bombardèment 1" "Groupe de Bombardèment 2" "Groupe de Bombardèment 3" "Groupe de Bombardèment 6" "Groupe de Bombardèment 7" "Groupe de Bombardèment 8" "Groupe de Bombardèment 9" "Groupe de Bombardèment 10" 
-	}
-	jet_bomber = {
-		"Groupe de Bombardèment 1" "Groupe de Bombardèment 2" "Groupe de Bombardèment 3" "Groupe de Bombardèment 6" "Groupe de Bombardèment 7" "Groupe de Bombardèment 8" "Groupe de Bombardèment 9" "Groupe de Bombardèment 10" 
+		" µÚ1Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ2Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ3Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ4Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ5Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ6Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ7Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ8Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ9Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ10Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ11Õ½ÊõºäÕ¨»ú´ó¶Ó" 
+		" µÚ12Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ13Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ14Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ15Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ16Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ17Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ18Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ19Õ½ÊõºäÕ¨»ú´ó¶Ó" " µÚ20Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ21Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ22Õ½ÊõºäÕ¨»ú´ó¶Ó" 
+		"µÚ23Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ24Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ25Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ26Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ27Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ28Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ29Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ30Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ31Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ32Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ33Õ½ÊõºäÕ¨»ú´ó¶Ó" 
+		"µÚ34Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ35Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ36Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ37Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ38Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ39Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ40Õ½ÊõºäÕ¨»ú´ó¶Ó" 
 	}
 	naval_bomber = {
-		"Groupe de Bombardèment Naval 1" "Groupe de Bombardèment Naval 2" "Groupe de Bombardèment Naval 3" "Groupe de Bombardèment Naval 4" "Groupe de Bombardèment Naval 5" "Groupe de Torpilleur 1" "Groupe de Torpilleur 2" "Groupe de Torpilleur 3" "Groupe de Torpilleur 4" "Groupe de Torpilleur 5" 
+		"µÚ1º£¾üºäÕ¨»ú´ó¶Ó" "µÚ2º£¾üºäÕ¨»ú´ó¶Ó" "µÚ3º£¾üºäÕ¨»ú´ó¶Ó" "µÚ4º£¾üºäÕ¨»ú´ó¶Ó" "µÚ5º£¾üºäÕ¨»ú´ó¶Ó" "µÚ6º£¾üºäÕ¨»ú´ó¶Ó" "µÚ7º£¾üºäÕ¨»ú´ó¶Ó" "µÚ8º£¾üºäÕ¨»ú´ó¶Ó" "µÚ9º£¾üºäÕ¨»ú´ó¶Ó" "µÚ10º£¾üºäÕ¨»ú´ó¶Ó" "µÚ11º£¾üºäÕ¨»ú´ó¶Ó" 
+		"µÚ12º£¾üºäÕ¨»ú´ó¶Ó" "µÚ13º£¾üºäÕ¨»ú´ó¶Ó" "µÚ14º£¾üºäÕ¨»ú´ó¶Ó" "µÚ15º£¾üºäÕ¨»ú´ó¶Ó" "µÚ16º£¾üºäÕ¨»ú´ó¶Ó" "µÚ17º£¾üºäÕ¨»ú´ó¶Ó" "µÚ18º£¾üºäÕ¨»ú´ó¶Ó" "µÚ19º£¾üºäÕ¨»ú´ó¶Ó" "µÚ20º£¾üºäÕ¨»ú´ó¶Ó" 
 	}
 	cas = {
-		"Groupe de Bombardèment d'Assaut 18" "Groupe de Bombardèment d'Assaut 19" "Groupe de Bombardèment d'Assaut 21" "Groupe de Bombardèment d'Assaut 22" "Groupe de Bombardèment d'Assaut 23" "Groupe de Bombardèment d'Assaut 24" 
+		"µÚ1½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ2½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ3½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ4½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ5½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ6½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ7½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ8½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ9½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ10½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ11½ü¾àÀë¿ÕÔ®´ó¶Ó" 
+		"µÚ12½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ13½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ14½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ15½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ16½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ17½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ18½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ19½ü¾àÀë¿ÕÔ®´ó¶Ó" "µÚ20½ü¾àÀë¿ÕÔ®´ó¶Ó" 
 	}
 	transport_plane = {
-		"1er Groupe de Transport Aérien" "2ème Groupe de Transport Aérien" "3ème Groupe de Transport Aérien" "4ème Groupe de Transport Aérien" "5ème Groupe de Transport Aérien" 
+		"µÚ1¿ÕÔË»ú´ó¶Ó" "µÚ2¿ÕÔË»ú´ó¶Ó" "µÚ3¿ÕÔË»ú´ó¶Ó" "µÚ4¿ÕÔË»ú´ó¶Ó" "µÚ5¿ÕÔË»ú´ó¶Ó" "µÚ6¿ÕÔË»ú´ó¶Ó" "µÚ7¿ÕÔË»ú´ó¶Ó" "µÚ8¿ÕÔË»ú´ó¶Ó" "µÚ9¿ÕÔË»ú´ó¶Ó" "µÚ10¿ÕÔË»ú´ó¶Ó" 
 	}
 	battleship = {
-		"Indépendance" "Liberté" "Egalité" "Fraternité" "Nation" 
+		"²½±øºÅ" "×ÔÓÉºÅ" "Æ½µÈºÅ" "²©°®ºÅ" "×æ¹úºÅ" 
 	}
 	light_cruiser = {
-		"Indépendance" "Liberté" "Egalité" "Fraternité" "Nation" 
+		"²½±øºÅ" "×ÔÓÉºÅ" "Æ½µÈºÅ" "²©°®ºÅ" "×æ¹úºÅ" 
 	}
 	heavy_cruiser = {
-		"Indépendance" "Liberté" "Egalité" "Fraternité" "Nation" "Indépendance" "Liberté" "Egalité" "Fraternité" "Nation" 
+		"²½±øºÅ" "×ÔÓÉºÅ" "Æ½µÈºÅ" "²©°®ºÅ" "×æ¹úºÅ" 
 	}
 	battlecruiser = {
-		"Indépendance" "Liberté" "Egalité" "Fraternité" "Nation" 
+		"²½±øºÅ" "×ÔÓÉºÅ" "Æ½µÈºÅ" "²©°®ºÅ" "×æ¹úºÅ"  
 	}
 	destroyer = {
-		"1ère Divisionde Torpilleurs" "2ème Divisionde Torpilleurs" "3ème Divisionde Torpilleurs" "4ème Divisionde Torpilleurs" "5ème Divisionde Torpilleurs" 
+		"µÚ1ÇıÖğ½¢´ó¶Ó" "µÚ2ÇıÖğ½¢´ó¶Ó" "µÚ3ÇıÖğ½¢´ó¶Ó" "µÚ4ÇıÖğ½¢´ó¶Ó" "µÚ5ÇıÖğ½¢´ó¶Ó" 
 	}
 	submarine = {
-		"1ère Flottille sous-marine" "2ème Flottille sous-Marine" "3ème Flottille sous-Marine" "4ème Flottille sous-Marine" "5ème Flottille sous-Marine" 
+		"µÚ1Ç±Í§±à¶Ó" "µÚ2Ç±Í§±à¶Ó" "µÚ3Ç±Í§±à¶Ó" "µÚ4Ç±Í§±à¶Ó" "µÚ5Ç±Í§±à¶Ó"  
 	}
 	transport_ship = {
-		"1ère Flottille de Transport" "2ème Flottille de Transport" "3ème Flottille de Transport" "4ème Flottille de Transport" "5ème Flottille de Transport" 
+		"µÚ1ÔËÊä´ó¶Ó" "µÚ2ÔËÊä´ó¶Ó" "µÚ3ÔËÊä´ó¶Ó" "µÚ4ÔËÊä´ó¶Ó" "µÚ5ÔËÊä´ó¶Ó"  
 	}
 
 }
 
 ministers = {
 	543001 = {
-		name = "H.M. Bao Dai"
+		name = "H.M.±£´ó"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M542001
@@ -141,15 +129,16 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543002 = {
-		name = "Ngo Dinh Diem"
+		name = "ÎâÍ¥ÑŞ"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M542018
+		head_of_government = political_protege
 		head_of_government = flamboyant_tough_guy
 		start_date = 1936.1.1
 	}
 	543003 = {
-		name = "Tong Doc Phuong"
+		name = "¶«µÂ·¼"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M542003
@@ -157,7 +146,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543004 = {
-		name = "Nguyen Van Tam"
+		name = "ÈîÎÄº£"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M542004
@@ -165,7 +154,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543005 = {
-		name = "Ho Dac Trung"
+		name = "ºúµÂÖĞ"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M542005
@@ -173,7 +162,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543006 = {
-		name = "Tran Gia Thoai"
+		name = "³Â¼ÓÈğ"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M542032
@@ -181,7 +170,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543007 = {
-		name = "Le Quan"
+		name = "Àè¹â"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M542042
@@ -189,16 +178,17 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543008 = {
-		name = "Duong Van Minh"
+		name = "ÑîÎÄÃ÷"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M542046
+		chief_of_army = armoured_spearhead_doctrine
 		chief_of_army = decisive_battle_doctrine
 		chief_of_air = naval_aviation_doctrine
 		start_date = 1936.1.1
 	}
 	543009 = {
-		name = "Nguyen Van Thinh"
+		name = "ÈîÎÄÌü"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M542025
@@ -206,7 +196,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543010 = {
-		name = "Nguyen Van Xuan"
+		name = "ÈîÓÀ´º"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M542023
@@ -215,7 +205,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543011 = {
-		name = "Pol Pot"
+		name = "²¨²¼"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M541014
@@ -224,7 +214,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543012 = {
-		name = "Ho Chi Minh"
+		name = "ºúÖ¾Ã÷"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M542012
@@ -233,17 +223,17 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543013 = {
-		name = "H.R.H. Souphanou Vong"
+		name = "H.R.H.ËÕ·¢Å¬·ë"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M540012
 		head_of_state = die_hard_reformer
 		chief_of_staff = school_of_psychology
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1936.1.1
 	}
 	543014 = {
-		name = "H.M. Sisowath Monivong"
+		name = "H.M.Î÷Ë÷Íß¡¤ÄªÄáÍú"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M541001
@@ -251,7 +241,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543015 = {
-		name = "Norodom Suramarit"
+		name = "ÅµÂŞ¶Ø¡¤ËÕÀ­ÂêÀïÌØ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M541012
@@ -259,7 +249,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543016 = {
-		name = "H.M. Sasiavong Vong"
+		name = "H.M.ËÕÈø·ë·ë"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M540001
@@ -267,7 +257,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543017 = {
-		name = "Sisowath Monipong"
+		name = "Î÷Ë÷Íß¡¤Ä¦ÄáÅî"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M541003
@@ -276,7 +266,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543018 = {
-		name = "H.R.H. Khai Dinh"
+		name = "H.R.H.Æô¶¨"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M542011
@@ -284,7 +274,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543019 = {
-		name = "H.R.H. Savang Vatana"
+		name = "H.R.H¡¤Î÷ÈøÍú¡¤ºãÄÇ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M540011
@@ -292,7 +282,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543020 = {
-		name = "Khieu Samphan"
+		name = "ÇÇÉ­ÅË"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M541022
@@ -300,7 +290,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543021 = {
-		name = "Truong Tchin"
+		name = "ÕÅÕğ"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M542019
@@ -308,7 +298,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543022 = {
-		name = "Khambulatom Oomau"
+		name = "¹ş²¼À­¶à¡¤°ÂÂíÎÚ"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M540019
@@ -317,7 +307,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543023 = {
-		name = "H.R.H. Norodom Sihanouk"
+		name = "H.R.H.¡¤ÅµÂŞ¶Ø¡¤Î÷¹şÅ¬¿Ë"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M541011
@@ -325,7 +315,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543024 = {
-		name = "Son Sann"
+		name = "ËÎË«"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M541020
@@ -333,7 +323,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543025 = {
-		name = "H.R.H. Phaya Khammao"
+		name = "H.R.H.¿²Ã²"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M540003
@@ -341,7 +331,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543026 = {
-		name = "Sisowath Sirik Matak"
+		name = "Î÷Ë÷Íß¡¤ÂíËş¿Ë"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M541021
@@ -349,7 +339,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543028 = {
-		name = "Phetsarath Mahaouphatat"
+		name = "·ÆÈøÀ­Ë¹¡¤ÂêºÆ·¨ËşÌØ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M540008
@@ -359,7 +349,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543029 = {
-		name = "Leng Sary"
+		name = "ÈøÀû"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M541027
@@ -367,7 +357,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543030 = {
-		name = "Pham Van Dong"
+		name = "·¶ÎÄÍ¬"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M542024
@@ -375,7 +365,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543031 = {
-		name = "Phomvihanh Kaysone"
+		name = "·áÍşºº¡¤¿­É½"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M540020
@@ -384,7 +374,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543033 = {
-		name = "Phan Sina"
+		name = "·¶¡¤Î÷ÄÉ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M541025
@@ -392,7 +382,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543034 = {
-		name = "Sasorith Kataydon"
+		name = "É³ËÕÈğË¹¡¤¿²´ú"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M540021
@@ -400,7 +390,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543035 = {
-		name = "Krisan Cheda"
+		name = "¼ÓÄÉ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M541026
@@ -408,7 +398,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543037 = {
-		name = "H.R.H. Boun Oum"
+		name = "H.R.H.¡¤Å·Äª"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M540010
@@ -418,7 +408,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543038 = {
-		name = "Nuon Chea"
+		name = "ÅµÆõ¶û"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M541033
@@ -426,7 +416,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543039 = {
-		name = "Le Duan"
+		name = "ÀèËñ"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M542030
@@ -434,7 +424,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543041 = {
-		name = "Sisowath Monireth"
+		name = "Î÷Ë÷Íß¡¤ÄªÈğË¹"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M541004
@@ -444,7 +434,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543042 = {
-		name = "Sam An"
+		name = "É½°²"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M541031
@@ -452,16 +442,17 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543043 = {
-		name = "H.R.H. Souvanna Rath"
+		name = "H.R.H.ËÕ·²ÄÇ¡¤À­"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M540009
 		armament_minister = laissez_faires_capitalist
+		armament_minister = administrative_genius
 		chief_of_navy = power_projection_doctrine
 		start_date = 1936.1.1
 	}
 	543044 = {
-		name = "Norodom Phanouvong"
+		name = "ÅµÂŞ¶Ø¡¤ËÕ·¢·ë"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M541032
@@ -469,7 +460,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543045 = {
-		name = "Le Van Hoac"
+		name = "Àè·¶»ª"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M542027
@@ -477,7 +468,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543048 = {
-		name = "The Lu"
+		name = "ÀÕÂ³"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M542035
@@ -485,7 +476,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543050 = {
-		name = "Sisowath Youtevong"
+		name = "Î÷Ë÷Íß¡¤ÓÈµÂ°î"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M541005
@@ -495,7 +486,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543051 = {
-		name = "Sisowath Monirak"
+		name = "Î÷Ë÷Íß¡¤ÄªÄá¿¨"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M541023
@@ -503,7 +494,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543052 = {
-		name = "Aphay Khou"
+		name = "öÇ°¢ÅÉ¡¤¿â"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M540034
@@ -513,7 +504,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543053 = {
-		name = "Sakiwat Phirun"
+		name = "Èø¿¨Íß¡¤Æ¤Â×"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M541037
@@ -521,7 +512,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543054 = {
-		name = "Ngo Dinh Nhu"
+		name = "Îâ¶¨Èç"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M542033
@@ -529,7 +520,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543056 = {
-		name = "Tea Banh"
+		name = "µÏ°à"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M541043
@@ -537,7 +528,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543057 = {
-		name = "Phan Huy Quat"
+		name = "ÅËİxÀ¨"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M542039
@@ -545,7 +536,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543059 = {
-		name = "Son Ngoc Thanh"
+		name = "É½Óñ³É"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M541006
@@ -553,7 +544,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543060 = {
-		name = "Hy Weng"
+		name = "ºÆÓî"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M541041
@@ -562,7 +553,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543061 = {
-		name = "Savang Vong"
+		name = "Î÷ÈøÍú"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M540037
@@ -571,7 +562,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543063 = {
-		name = "Pham Toc Quia"
+		name = "·¶×åÈ¨"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M542038
@@ -579,7 +570,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543064 = {
-		name = "Phousannani Kone"
+		name = "·¶ÈøÀï¡¤¿ÍÅµ"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M540031
@@ -587,7 +578,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543065 = {
-		name = "Kieng Vang"
+		name = "½ğÍú"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M541047
@@ -595,7 +586,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543066 = {
-		name = "Vo Nguyen Giap"
+		name = "ÎäÔª¼×"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M542044
@@ -603,7 +594,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543067 = {
-		name = "Phichith Douangchai"
+		name = "ì³Õı¾õ"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M540035
@@ -611,17 +602,17 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543068 = {
-		name = "Norodom Sihanouk"
+		name = "ÅµÂŞ¶Ø¡¤Î÷¹şÅ¬¿Ë"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M541044
 		chief_of_staff = school_of_manoeuvre
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		chief_of_air = army_aviation_doctrine
 		start_date = 1936.1.1
 	}
 	543069 = {
-		name = "Chhun Lim"
+		name = "´ºÁÖ"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M541045
@@ -629,7 +620,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543072 = {
-		name = "Nguyen Huu Coo"
+		name = "Èîºş¿â"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M542043
@@ -637,7 +628,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543074 = {
-		name = "Son Sen"
+		name = "ËÎÏÈ"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M541051
@@ -645,7 +636,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543076 = {
-		name = "Vang Pao"
+		name = "Íõ±¦"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M540038
@@ -654,7 +645,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543078 = {
-		name = "Sisowath Watchayavong"
+		name = "Î÷Ë÷Íß¡¤ÍßÎ÷ÑÇ·ë"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M541049
@@ -662,7 +653,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543080 = {
-		name = "Lon Nol"
+		name = "ÁúÅµ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M541035
@@ -671,7 +662,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543083 = {
-		name = "You Hok Kry"
+		name = "Óıºú»ù"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M541055
@@ -679,7 +670,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543084 = {
-		name = "Thrang Tun Doc"
+		name = "×¯Í¼¶à"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M542052
@@ -687,7 +678,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543090 = {
-		name = "Ho Tan Quyen"
+		name = "ºú½úÈª"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M542051
@@ -695,7 +686,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543092 = {
-		name = "Proum Sokha"
+		name = "Ë÷¿¨"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M541059
@@ -703,7 +694,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543093 = {
-		name = "Nguyen Huu Tho"
+		name = "ÈîÓÑÊÙ"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M542055
@@ -711,7 +702,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543095 = {
-		name = "Chai Saing Yun"
+		name = "²ÌÏãÔª"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M541029
@@ -719,74 +710,12 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	543100 = {
-		name = "Sourith Sasorith"
+		name = "É³ËÕÈğË¹"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M540043
 		chief_of_air = carpet_bombing_doctrine
 		start_date = 1936.1.1
 	}
-	# Generic dummy ministers
-	95410 = {
-		name = "Nameless Clerk"
-		ideology = national_socialist
-		loyalty = 1.0
-		picture = MNationalSocialist
-		chief_of_staff = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		start_date = 1936.1.1
-	}
-	95411 = {
-		name = "Nameless Clerk"
-		ideology = fascistic
-		loyalty = 1.0
-		picture = MFascistic
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95412 = {
-		name = "Nameless Clerk"
-		ideology = paternal_autocrat
-		loyalty = 1.0
-		picture = MPaternalAutocrat
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95413 = {
-		name = "Nameless Clerk"
-		ideology = social_conservative
-		loyalty = 1.0
-		picture = MSocialConservative
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95414 = {
-		name = "Nameless Clerk"
-		ideology = market_liberal
-		loyalty = 1.0
-		picture = MMarketLiberal
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95415 = {
-		name = "Nameless Clerk"
-		ideology = social_democrat
-		loyalty = 1.0
-		picture = MSocialDemocrat
-		foreign_minister = mostly_harmless
-		start_date = 1936.1.1
-	}
-	95416 = {
-		name = "Nameless Clerk"
-		ideology = left_wing_radical
-		loyalty = 1.0
-		picture = MLeftWingRadical
-		foreign_minister = mostly_harmless
-		start_date = 1936.1.1
-	}	
 }
+

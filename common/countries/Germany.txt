@@ -1,4 +1,4 @@
-color = { 116  116  116 }
+color = { 180  180  180 }
 graphical_culture = German
 
 major = yes
@@ -8,13 +8,11 @@ default_templates = {
 		light_armor_brigade
 		light_armor_brigade
 		motorized_brigade
-		truck_towed_support_brigade
 	}
 	GER_Infantry_1936 = {
 		infantry_brigade
 		infantry_brigade
 		infantry_brigade
-		horse_towed_support_brigade
 	}
 	GER_bergsjaeger = {
 		bergsjaeger_brigade
@@ -25,28 +23,24 @@ default_templates = {
 		paratrooper_brigade
 		paratrooper_brigade
 	}
-	GER_marine = {
-		marine_brigade
-		marine_brigade
-	}	
 	GER_volksgrenadier = {
 		militia_brigade
 		militia_brigade
+		tank_destroyer_brigade
 	}
 	GER_motorised = {
 		motorized_brigade
 		motorized_brigade
-		truck_towed_support_brigade
 	}
 	GER_panzergrenadier = {
 		mechanized_brigade
 		mechanized_brigade
-		self_propelled_support_brigade
+		tank_destroyer_brigade
 	}
 	GER_Infantry_1942 = {
 		infantry_brigade
 		infantry_brigade
-		horse_towed_support_brigade
+		anti_tank_brigade	
 	}
 	GER_panzer_1941 = {
 		armor_brigade
@@ -62,364 +56,346 @@ default_templates = {
 
 
 unit_names = {
+	waffen_brigade = {
+                 "µ³ÎÀ¾ü'°¢µÀ·ò¡¤Ï£ÌØÀÕÎÀ¶Ó'" "µ³ÎÀ¾ü'µÛ¹ú'Ê¦" "µ³ÎÀ¾ü'÷¼÷Ã'Ê¦" "µ³ÎÀ¾ü'Î¬¾©'Ê¦" "µ³ÎÀ¾üµÚ9'»ôºàË¹ÌÕ·Ò'×°¼×ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ10'¸£Â¡µÂË¹²®¸ñ'×°¼×ÖÀµ¯±øÊ¦" "µ³ÎÀ¾ü'±±Å·'Ö¾Ô¸×°¼×ÖÀµ¯±øÊ¦" "µ³ÎÀ¾ü'Ï£ÌØÀÕÇàÄê'×°¼×ÖÀµ¯±øÊ¦"
+        }
 	infantry_brigade = {
-		"1. Infanterie-Division" "5. Infanterie-Division" "6. Infanterie-Division" "7. Infanterie-Division" "8. Infanterie-Division" "9. Infanterie-Division" "10. Infanterie-Division" "11. Infanterie-Division" "12. Infanterie-Division" "15. Infanterie-Division" "17. Infanterie-Division" 
-		"18. Infanterie-Division" "21. Infanterie-Division" "23. Infanterie-Division" "24. Infanterie-Division" "25. Infanterie-Division" "26. Infanterie-Division" "28. Infanterie-Division" "30. Infanterie-Division" "31. Infanterie-Division" "32. Infanterie-Division" "34. Infanterie-Division" 
-		"35. Infanterie-Division" "36. Infanterie-Division" "44. Infanterie-Division" "45. Infanterie-Division" "46. Infanterie-Division" "50. Infanterie-Division" "52. Infanterie-Division" "56. Infanterie-Division" "57. Infanterie-Division" "58. Infanterie-Division" "60. Infanterie-Division" 
-		"61. Infanterie-Division" "62. Infanterie-Division" "68. Infanterie-Division" "69. Infanterie-Division" "71. Infanterie-Division" "72. Infanterie-Division" "73. Infanterie-Division" "75. Infanterie-Division" "76. Infanterie-Division" "78. Infanterie-Division" "79. Infanterie-Division" 
-		"81. Infanterie-Division" "82. Infanterie-Division" "83. Infanterie-Division" "86. Infanterie-Division" "87. Infanterie-Division" "88. Infanterie-Division" "93. Infanterie-Division" "94. Infanterie-Division" "95. Infanterie-Division" "96. Infanterie-Division" "98. Infanterie-Division" 
-		"143. Infanterie-Division" "161. Infanterie-Division" "162. Infanterie-Division" "163. Infanterie-Division" "164. Infanterie-Division" "167. Infanterie-Division" "168. Infanterie-Division" "169. Infanterie-Division" "170. Infanterie-Division" "181. Infanterie-Division" "183. Infanterie-Division" 
-		"196. Infanterie-Division" "197. Infanterie-Division" "206. Infanterie-Division" "207. Infanterie-Division" "208. Infanterie-Division" "209. Infanterie-Division" "211. Infanterie-Division" "212. Infanterie-Division" "213. Infanterie-Division" "214. Infanterie-Division" "215. Infanterie-Division" 
-		"216. Infanterie-Division" "217. Infanterie-Division" "218. Infanterie-Division" "221. Infanterie-Division" "223. Infanterie-Division" "225. Infanterie-Division" "227. Infanterie-Division" "228. Infanterie-Division" "231. Infanterie-Division" "239. Infanterie-Division" "246. Infanterie-Division" 
-		"251. Infanterie-Division" "252. Infanterie-Division" "253. Infanterie-Division" "254. Infanterie-Division" "255. Infanterie-Division" "256. Infanterie-Division" "257. Infanterie-Division" "258. Infanterie-Division" "260. Infanterie-Division" "262. Infanterie-Division" "263. Infanterie-Division" 
-		"267. Infanterie-Division" "268. Infanterie-Division" "269. Infanterie-Division" "521. Infanterie-Division" "526. Infanterie-Division" "102. Infanterie-Division" "106. Infanterie-Division" "110. Infanterie-Division" "111. Infanterie-Division" "112. Infanterie-Division" "113. Infanterie-Division" 
-		"121. Infanterie-Division" "122. Infanterie-Division" "123. Infanterie-Division" "125. Infanterie-Division" "126. Infanterie-Division" "129. Infanterie-Division" "131. Infanterie-Division" "132. Infanterie-Division" "134. Infanterie-Division" "137. Infanterie-Division" "198. Infanterie-Division" 
-		"199. Infanterie-Division" "205. Infanterie-Division" "272. Infanterie-Division" "278. Infanterie-Division" "279. Infanterie-Division" "290. Infanterie-Division" "291. Infanterie-Division" "292. Infanterie-Division" "293. Infanterie-Division" "294. Infanterie-Division" "295. Infanterie-Division" 
-		"297. Infanterie-Division" "298. Infanterie-Division" "299. Infanterie-Division" "302. Infanterie-Division" "304. Infanterie-Division" "305. Infanterie-Division" "306. Infanterie-Division" "319. Infanterie-Division" "320. Infanterie-Division" "321. Infanterie-Division" "323. Infanterie-Division" 
-		"327. Infanterie-Division" "332. Infanterie-Division" "333. Infanterie-Division" "335. Infanterie-Division" "336. Infanterie-Division" "337. Infanterie-Division" "338. Infanterie-Division" "339. Infanterie-Division" "340. Infanterie-Division" "351. Infanterie-Division" "358. Infanterie-Division" 
-		"365. Infanterie-Division" "379. Infanterie-Division" "393. Infanterie-Division" "395. Infanterie-Division" "399. Infanterie-Division" "554. Infanterie-Division" "555. Infanterie-Division" "556. Infanterie-Division" "557. Infanterie-Division" "296. Infanterie-Division" "328. Infanterie-Division" 
-		"329. Infanterie-Division" "330. Infanterie-Division" "331. Infanterie-Division" "342. Infanterie-Division" "416. Infanterie-Division" "702. Infanterie-Division" "707. Infanterie-Division" "708. Infanterie-Division" "709. Infanterie-Division" "710. Infanterie-Division" "711. Infanterie-Division" 
-		"712. Infanterie-Division" "713. Infanterie-Division" "715. Infanterie-Division" "716. Infanterie-Division" "38. Infanterie-Division" "39. Infanterie-Division" "65. Infanterie-Division" "19. Luftwaffen-Sturm-Division" "20. Luftwaffen-Sturm-Division" "189. Infanterie-Division" "270. Infanterie-Division" 
-		"280. Infanterie-Division" "326. Infanterie-Division" "334. Infanterie-Division" "343. Infanterie-Division" "344. Infanterie-Division" "346. Infanterie-Division" "347. Infanterie-Division" "348. Infanterie-Division" "349. Infanterie-Division" "370. Infanterie-Division" "371. Infanterie-Division" 
-		"376. Infanterie-Division" "377. Infanterie-Division" "383. Infanterie-Division" "384. Infanterie-Division" "385. Infanterie-Division" "387. Infanterie-Division" "389. Infanterie-Division" "162. Infanterie-Div. 'Turkestan'" "242. Infanterie-Division" "243. Infanterie-Division" "244. Infanterie-Division" 
-		"245. Infanterie-Division" "264. Infanterie-Division" "265. Infanterie-Division" "266. Infanterie-Division" "271. Infanterie-Division" "274. Infanterie-Division" "275. Infanterie-Division" "276. Infanterie-Division" "277. Infanterie-Division" "282. Infanterie-Division" "352. Infanterie-Division" 
-		"353. Infanterie-Division" "355. Infanterie-Division" "Division 'Hermann Göring'" "Sturm-Division Rhodos" "356. Infanterie-Division" "357. Infanterie-Division" "359. Infanterie-Division" "361. Infanterie-Division" "362. Infanterie-Division" "363. Infanterie-Division" "364. Infanterie-Division" 
-		"367. Infanterie-Division" "540. Infanterie-Division" "Infanterie-Div. 'Milowitz'" "48. Infanterie-Division" "49. Infanterie-Division" "59. Infanterie-Division" "64. Infanterie-Division" "170. Infanterie-Division" "177. Infanterie-Division" "184. Infanterie-Division" "185. Infanterie-Division" 
-		"189. Infanterie-Division" "192. Infanterie-Division" "148. Infanterie-Division" "159. Infanterie-Division" "176. Infanterie-Division" "180. Infanterie-Division" "190. Infanterie-Division" "203. Infanterie-Division" "237. Infanterie-Division" "286. Infanterie-Division" "301. Infanterie-Division" 
-		"462. Infanterie-Division" "469. Infanterie-Division" "539. Infanterie-Division" "542. Infanterie-Division" "560. Infanterie-Division" "600. Russische Infanterie-Div." "141. Infanterie-Division" "154. Infanterie-Division" "155. Infanterie-Division" "156. Infanterie-Division" "158. Infanterie-Division" 
-		"650. Russische Infanterie-Div." "160. Infanterie-Division" "166. Infanterie-Division" "182. Infanterie-Division" "219. Infanterie-Division" "226. Infanterie-Division" "232. Infanterie-Division" "236. Infanterie-Division" "249. Infanterie-Division" "281. Infanterie-Division" "303. Infanterie-Division" 
-		"309. Infanterie-Division" "324. Infanterie-Division" "Infanterie-Div. 'Jütland'" "Infanterie-Div. 'Woldenberg'" "Infanterie-Div. 'Mielau'" "Infanterie-Div. 'Döberitz'" "Infanterie-Div. 'Berlin'" "Infanterie-Div. 'Hamburg'" "703. Infanterie-Division" "719. Infanterie-Division" "Infanterie-Div. 'Potsdam'" 
-		"Infanterie-Div. 'Scharnhorst'" "Infanterie-Div. 'Ulrich v. Hutten'" "Infanterie-Div. 'Ferdinand v. Schill'" "Infanterie-Div. 'Ostpreußen'" "827. Infanterie-Division" "Infanterie-Div. 'Böhmen'" "Infanterie-Div. 'Breslau'" "Infanterie-Div. 'Demba'" "Infanterie-Div. 'Döllersheim'" "Infanterie-Div. 'Dresden'" "Infanterie-Div. 'Donau'" 
-		"Infanterie-Div. 'Fried. L. Jahn'" "Infanterie-Div. 'Generalgouvernement'" "Infanterie-Div. 'Grafenwöhr'" "Infanterie-Div. 'Groß Born'" "Infanterie-Div. 'Güstrow'" "Infanterie-Div. 'Hamburg'" "Infanterie-Div. 'Hannover'" "Infanterie-Div. 'Kurland'" "Infanterie-Div. 'Mähren'" "Infanterie-Div. 'Münsingen'" "Infanterie-Div. 'Neuhammer'" 
-		"Infanterie-Div. 'Schlesien'" "Infanterie-Div. 'Seeland'" "Infanterie-Div. 'Wahn'" "Infanterie-Div. 'Wildflecken'" 
+		"¹ú·À¾üµÚ1²½±øÊ¦" "¹ú·À¾üµÚ5²½±øÊ¦" "¹ú·À¾üµÚ6²½±øÊ¦" "¹ú·À¾üµÚ7²½±øÊ¦" "¹ú·À¾üµÚ8²½±øÊ¦" "¹ú·À¾üµÚ9²½±øÊ¦" "¹ú·À¾üµÚ10²½±øÊ¦" "¹ú·À¾üµÚ11²½±øÊ¦" "¹ú·À¾üµÚ12²½±øÊ¦" "¹ú·À¾üµÚ15²½±øÊ¦" "¹ú·À¾üµÚ17²½±øÊ¦" 
+		"¹ú·À¾üµÚ18²½±øÊ¦" "¹ú·À¾üµÚ21²½±øÊ¦" "¹ú·À¾üµÚ23²½±øÊ¦" "¹ú·À¾üµÚ24²½±øÊ¦" "¹ú·À¾üµÚ25²½±øÊ¦" "¹ú·À¾üµÚ26²½±øÊ¦" "¹ú·À¾üµÚ28²½±øÊ¦" "¹ú·À¾üµÚ30²½±øÊ¦" "¹ú·À¾üµÚ31²½±øÊ¦" "¹ú·À¾üµÚ32²½±øÊ¦" "¹ú·À¾üµÚ34²½±øÊ¦" 
+		"¹ú·À¾üµÚ35²½±øÊ¦" "¹ú·À¾üµÚ36²½±øÊ¦" "¹ú·À¾üµÚ44²½±øÊ¦" "¹ú·À¾üµÚ45²½±øÊ¦" "¹ú·À¾üµÚ46²½±øÊ¦" "¹ú·À¾üµÚ50²½±øÊ¦" "¹ú·À¾üµÚ52²½±øÊ¦" "¹ú·À¾üµÚ56²½±øÊ¦" "¹ú·À¾üµÚ57²½±øÊ¦" "¹ú·À¾üµÚ58²½±øÊ¦" "¹ú·À¾üµÚ60²½±øÊ¦" 
+		"¹ú·À¾üµÚ61²½±øÊ¦" "¹ú·À¾üµÚ62²½±øÊ¦" "¹ú·À¾üµÚ68²½±øÊ¦" "¹ú·À¾üµÚ69²½±øÊ¦" "¹ú·À¾üµÚ71²½±øÊ¦" "¹ú·À¾üµÚ72²½±øÊ¦" "¹ú·À¾üµÚ73²½±øÊ¦" "¹ú·À¾üµÚ75²½±øÊ¦" "¹ú·À¾üµÚ76²½±øÊ¦" "¹ú·À¾üµÚ78²½±øÊ¦" "¹ú·À¾üµÚ79²½±øÊ¦" 
+		"¹ú·À¾üµÚ81²½±øÊ¦" "¹ú·À¾üµÚ82²½±øÊ¦" "¹ú·À¾üµÚ83²½±øÊ¦" "¹ú·À¾üµÚ86²½±øÊ¦" "¹ú·À¾üµÚ87²½±øÊ¦" "¹ú·À¾üµÚ88²½±øÊ¦" "¹ú·À¾üµÚ93²½±øÊ¦" "¹ú·À¾üµÚ94²½±øÊ¦" "¹ú·À¾üµÚ95²½±øÊ¦" "¹ú·À¾üµÚ96²½±øÊ¦" "¹ú·À¾üµÚ98²½±øÊ¦" 
+		"¹ú·À¾üµÚ143²½±øÊ¦" "¹ú·À¾üµÚ161²½±øÊ¦" "¹ú·À¾üµÚ162²½±øÊ¦" "¹ú·À¾üµÚ163²½±øÊ¦" "¹ú·À¾üµÚ164²½±øÊ¦" "¹ú·À¾üµÚ167²½±øÊ¦" "¹ú·À¾üµÚ168²½±øÊ¦" "¹ú·À¾üµÚ169²½±øÊ¦" "¹ú·À¾üµÚ170²½±øÊ¦" "¹ú·À¾üµÚ181²½±øÊ¦" "¹ú·À¾üµÚ183²½±øÊ¦" 
+		"¹ú·À¾üµÚ196²½±øÊ¦" "¹ú·À¾üµÚ197²½±øÊ¦" "¹ú·À¾üµÚ206²½±øÊ¦" "¹ú·À¾üµÚ207²½±øÊ¦" "¹ú·À¾üµÚ208²½±øÊ¦" "¹ú·À¾üµÚ209²½±øÊ¦" "¹ú·À¾üµÚ211²½±øÊ¦" "¹ú·À¾üµÚ212²½±øÊ¦" "¹ú·À¾üµÚ213²½±øÊ¦" "¹ú·À¾üµÚ214²½±øÊ¦" "¹ú·À¾üµÚ215²½±øÊ¦" 
+		"¹ú·À¾üµÚ216²½±øÊ¦" "¹ú·À¾üµÚ217²½±øÊ¦" "¹ú·À¾üµÚ218²½±øÊ¦" "¹ú·À¾üµÚ221²½±øÊ¦" "¹ú·À¾üµÚ223²½±øÊ¦" "¹ú·À¾üµÚ225²½±øÊ¦" "¹ú·À¾üµÚ227²½±øÊ¦" "¹ú·À¾üµÚ228²½±øÊ¦" "¹ú·À¾üµÚ231²½±øÊ¦" "¹ú·À¾üµÚ239²½±øÊ¦" "¹ú·À¾üµÚ246²½±øÊ¦" 
+		"¹ú·À¾üµÚ251²½±øÊ¦" "¹ú·À¾üµÚ252²½±øÊ¦" "¹ú·À¾üµÚ253²½±øÊ¦" "¹ú·À¾üµÚ254²½±øÊ¦" "¹ú·À¾üµÚ255²½±øÊ¦" "¹ú·À¾üµÚ256²½±øÊ¦" "¹ú·À¾üµÚ257²½±øÊ¦" "¹ú·À¾üµÚ258²½±øÊ¦" "¹ú·À¾üµÚ260²½±øÊ¦" "¹ú·À¾üµÚ262²½±øÊ¦" "¹ú·À¾üµÚ263²½±øÊ¦" 
+		"¹ú·À¾üµÚ267²½±øÊ¦" "¹ú·À¾üµÚ268²½±øÊ¦" "¹ú·À¾üµÚ269²½±øÊ¦" "¹ú·À¾üµÚ521²½±øÊ¦" "¹ú·À¾üµÚ526²½±øÊ¦" "¹ú·À¾üµÚ102²½±øÊ¦" "¹ú·À¾üµÚ106²½±øÊ¦" "¹ú·À¾üµÚ110²½±øÊ¦" "¹ú·À¾üµÚ111²½±øÊ¦" "¹ú·À¾üµÚ112²½±øÊ¦" "¹ú·À¾üµÚ113²½±øÊ¦" 
+		"¹ú·À¾üµÚ121²½±øÊ¦" "¹ú·À¾üµÚ122²½±øÊ¦" "¹ú·À¾üµÚ123²½±øÊ¦" "¹ú·À¾üµÚ125²½±øÊ¦" "¹ú·À¾üµÚ126²½±øÊ¦" "¹ú·À¾üµÚ129²½±øÊ¦" "¹ú·À¾üµÚ131²½±øÊ¦" "¹ú·À¾üµÚ132²½±øÊ¦" "¹ú·À¾üµÚ134²½±øÊ¦" "¹ú·À¾üµÚ137²½±øÊ¦" "¹ú·À¾üµÚ198²½±øÊ¦" 
+		"¹ú·À¾üµÚ199²½±øÊ¦" "¹ú·À¾üµÚ205²½±øÊ¦" "¹ú·À¾üµÚ272²½±øÊ¦" "¹ú·À¾üµÚ278²½±øÊ¦" "¹ú·À¾üµÚ279²½±øÊ¦" "¹ú·À¾üµÚ290²½±øÊ¦" "¹ú·À¾üµÚ291²½±øÊ¦" "¹ú·À¾üµÚ292²½±øÊ¦" "¹ú·À¾üµÚ293²½±øÊ¦" "¹ú·À¾üµÚ294²½±øÊ¦" "¹ú·À¾üµÚ295²½±øÊ¦" 
+		"¹ú·À¾üµÚ297²½±øÊ¦" "¹ú·À¾üµÚ298²½±øÊ¦" "¹ú·À¾üµÚ299²½±øÊ¦" "¹ú·À¾üµÚ302²½±øÊ¦" "¹ú·À¾üµÚ304²½±øÊ¦" "¹ú·À¾üµÚ305²½±øÊ¦" "¹ú·À¾üµÚ306²½±øÊ¦" "¹ú·À¾üµÚ319²½±øÊ¦" "¹ú·À¾üµÚ320²½±øÊ¦" "¹ú·À¾üµÚ321²½±øÊ¦" "¹ú·À¾üµÚ323²½±øÊ¦" 
+		"¹ú·À¾üµÚ327²½±øÊ¦" "¹ú·À¾üµÚ332²½±øÊ¦" "¹ú·À¾üµÚ333²½±øÊ¦" "¹ú·À¾üµÚ335²½±øÊ¦" "¹ú·À¾üµÚ336²½±øÊ¦" "¹ú·À¾üµÚ337²½±øÊ¦" "¹ú·À¾üµÚ338²½±øÊ¦" "¹ú·À¾üµÚ339²½±øÊ¦" "¹ú·À¾üµÚ340²½±øÊ¦" "¹ú·À¾üµÚ351²½±øÊ¦" "¹ú·À¾üµÚ358²½±øÊ¦" 
+		"¹ú·À¾üµÚ365²½±øÊ¦" "¹ú·À¾üµÚ379²½±øÊ¦" "¹ú·À¾üµÚ393²½±øÊ¦" "¹ú·À¾üµÚ395²½±øÊ¦" "¹ú·À¾üµÚ399²½±øÊ¦" "¹ú·À¾üµÚ554²½±øÊ¦" "¹ú·À¾üµÚ555²½±øÊ¦" "¹ú·À¾üµÚ556²½±øÊ¦" "¹ú·À¾üµÚ557²½±øÊ¦" "¹ú·À¾üµÚ296²½±øÊ¦" "¹ú·À¾üµÚ328²½±øÊ¦" 
+		"¹ú·À¾üµÚ329²½±øÊ¦" "¹ú·À¾üµÚ330²½±øÊ¦" "¹ú·À¾üµÚ331²½±øÊ¦" "¹ú·À¾üµÚ342²½±øÊ¦" "¹ú·À¾üµÚ416²½±øÊ¦" "¹ú·À¾üµÚ702²½±øÊ¦" "¹ú·À¾üµÚ707²½±øÊ¦" "¹ú·À¾üµÚ708²½±øÊ¦" "¹ú·À¾üµÚ709²½±øÊ¦" "¹ú·À¾üµÚ710²½±øÊ¦" "¹ú·À¾üµÚ711²½±øÊ¦" 
+		"¹ú·À¾üµÚ712²½±øÊ¦" "¹ú·À¾üµÚ713²½±øÊ¦" "¹ú·À¾üµÚ715²½±øÊ¦" "¹ú·À¾üµÚ716²½±øÊ¦" "¹ú·À¾üµÚ38²½±øÊ¦" "¹ú·À¾üµÚ39²½±øÊ¦" "¹ú·À¾üµÚ65²½±øÊ¦" "¹ú·À¾üµÚ19¿Õ¾üÒ°Õ½Ê¦" "¹ú·À¾üµÚ20¿Õ¾üÒ°Õ½Ê¦" "¹ú·À¾üµÚ189²½±øÊ¦" "¹ú·À¾üµÚ270²½±øÊ¦" 
+		"¹ú·À¾üµÚ280²½±øÊ¦" "¹ú·À¾üµÚ326²½±øÊ¦" "¹ú·À¾üµÚ334²½±øÊ¦" "¹ú·À¾üµÚ343²½±øÊ¦" "¹ú·À¾üµÚ344²½±øÊ¦" "¹ú·À¾üµÚ346²½±øÊ¦" "¹ú·À¾üµÚ347²½±øÊ¦" "¹ú·À¾üµÚ348²½±øÊ¦" "¹ú·À¾üµÚ349²½±øÊ¦" "¹ú·À¾üµÚ370²½±øÊ¦" "¹ú·À¾üµÚ371²½±øÊ¦" 
+		"¹ú·À¾üµÚ376²½±øÊ¦" "¹ú·À¾üµÚ377²½±øÊ¦" "¹ú·À¾üµÚ383²½±øÊ¦" "¹ú·À¾üµÚ384²½±øÊ¦" "¹ú·À¾üµÚ385²½±øÊ¦" "¹ú·À¾üµÚ387²½±øÊ¦" "¹ú·À¾üµÚ389²½±øÊ¦" "¹ú·À¾üµÚ162²½±øÊ¦'ÍÁ¶úÆäË¹Ì¹''" "¹ú·À¾üµÚ242²½±øÊ¦" "¹ú·À¾üµÚ243²½±øÊ¦" "¹ú·À¾üµÚ244²½±øÊ¦" 
+		"¹ú·À¾üµÚ245²½±øÊ¦" "¹ú·À¾üµÚ264²½±øÊ¦" "¹ú·À¾üµÚ265²½±øÊ¦" "¹ú·À¾üµÚ266²½±øÊ¦" "¹ú·À¾üµÚ271²½±øÊ¦" "¹ú·À¾üµÚ274²½±øÊ¦" "¹ú·À¾üµÚ275²½±øÊ¦" "¹ú·À¾üµÚ276²½±øÊ¦" "¹ú·À¾üµÚ277²½±øÊ¦" "¹ú·À¾üµÚ282²½±øÊ¦" "¹ú·À¾üµÚ352²½±øÊ¦" 
+		"¹ú·À¾üµÚ353²½±øÊ¦" "¹ú·À¾üµÚ355²½±øÊ¦" "¹ú·À¾ü'ºÕ¶ûÂü¡¤¸êÁÖ'Ê¦" "¹ú·À¾üÂŞµÃµº·ç±©Ê¦" "¹ú·À¾üµÚ356²½±øÊ¦" "¹ú·À¾üµÚ357²½±øÊ¦" "¹ú·À¾üµÚ359²½±øÊ¦" "¹ú·À¾üµÚ361²½±øÊ¦" "¹ú·À¾üµÚ362²½±øÊ¦" "¹ú·À¾üµÚ363²½±øÊ¦" "¹ú·À¾üµÚ364²½±øÊ¦" 
+		"¹ú·À¾üµÚ367²½±øÊ¦" "¹ú·À¾üµÚ540²½±øÊ¦" "¹ú·À¾ü'Ã×ÂåÎ¬×È'Ê¦'" "¹ú·À¾üµÚ48²½±øÊ¦" "¹ú·À¾üµÚ49²½±øÊ¦" "¹ú·À¾üµÚ59²½±øÊ¦" "¹ú·À¾üµÚ64²½±øÊ¦" "¹ú·À¾üµÚ170²½±øÊ¦" "¹ú·À¾üµÚ177²½±øÊ¦" "¹ú·À¾üµÚ184²½±øÊ¦" "¹ú·À¾üµÚ185²½±øÊ¦" 
+		"¹ú·À¾üµÚ189²½±øÊ¦" "¹ú·À¾üµÚ192²½±øÊ¦" "¹ú·À¾üµÚ148²½±øÊ¦" "¹ú·À¾üµÚ159²½±øÊ¦" "¹ú·À¾üµÚ176²½±øÊ¦" "¹ú·À¾üµÚ180²½±øÊ¦" "¹ú·À¾üµÚ190²½±øÊ¦" "¹ú·À¾üµÚ203²½±øÊ¦" "¹ú·À¾üµÚ237²½±øÊ¦" "286²½±øÊ¦" "301²½±øÊ¦" 
+		"¹ú·À¾üµÚ462²½±øÊ¦" "¹ú·À¾üµÚ469²½±øÊ¦" "¹ú·À¾üµÚ539²½±øÊ¦" "¹ú·À¾üµÚ542²½±øÊ¦" "¹ú·À¾üµÚ560²½±øÊ¦" "¹ú·À¾üµÚ600¶íÂŞË¹²½±øÊ¦" "¹ú·À¾üµÚ141²½±øÊ¦" "¹ú·À¾üµÚ154²½±øÊ¦" "¹ú·À¾üµÚ155²½±øÊ¦" "¹ú·À¾üµÚ156²½±øÊ¦" "¹ú·À¾üµÚ158²½±øÊ¦" 
+		"¹ú·À¾üµÚ650¶íÂŞË¹²½±øÊ¦" "¹ú·À¾üµÚ160²½±øÊ¦" "¹ú·À¾üµÚ166²½±øÊ¦" "¹ú·À¾üµÚ182²½±øÊ¦" "¹ú·À¾üµÚ219²½±øÊ¦" "¹ú·À¾üµÚ226²½±øÊ¦" "¹ú·À¾üµÚ232²½±øÊ¦" "¹ú·À¾üµÚ236²½±øÊ¦" "¹ú·À¾üµÚ49²½±øÊ¦" "¹ú·À¾üµÚ281²½±øÊ¦" "¹ú·À¾üµÚ303²½±øÊ¦" 
+		"¹ú·À¾üµÚ309²½±øÊ¦" "¹ú·À¾üµÚ324²½±øÊ¦" "¹ú·À¾ü'¸ñÁêÀ¼'²½±øÊ¦" "¹ú·À¾ü'ÎÖµÇ±¤'²½±øÊ¦" "¹ú·À¾ü'Ã×Ò®Â³'²½±øÊ¦" "¹ú·À¾ü'µÏÌØ¶û´Ä'²½±øÊ¦" "¹ú·À¾ü'°ØÁÖ'²½±øÊ¦" "¹ú·À¾ü'ºº±¤'²½±øÊ¦" "¹ú·À¾üµÚ703²½±øÊ¦" "719²½±øÊ¦" "¹ú·À¾ü'²¨´ÄÌ¹'²½±øÊ¦" 
+		"¹ú·À¾ü'É³¶÷ºÀË¹ÌØ'²½±øÊ¦" "¹ú·À¾ü'Íş¶ûÀïÏ£¡¤¹şÌÚ'²½±øÊ¦" "¹ú·À¾ü'·ÑµÏÄÏµÂ¡¤Íş¡¤Êæ¶û'²½±øÊ¦" "¹ú·À¾ü'°ÂË¹ÌØ²¼Â³¶÷'²½±øÊ¦" "¹ú·À¾üµÚ827²½±øÊ¦" "¹ú·À¾ü'²»À³Ã·'²½±øÊ¦'" "¹ú·À¾ü'²¼À×Ë¹ÀÍ'²½±øÊ¦" "¹ú·À¾ü'µÂ°Í'²½±øÊ¦" "¹ú·À¾ü'µÂÀÕĞ»Ä·'²½±øÊ¦" "¹ú·À¾ü'ÔÀÛË¹ëø'²½±øÊ¦" "¹ú·À¾ü'¶àè§ºÓ'²½±øÊ¦" 
+		"¹ú·À¾ü'¸¥À×µÂ¡¤À­¡¤¹ş¶÷'²½±øÊ¦" "¹ú·À¾ü'ÔªË§¸®'²½±øÊ¦" "¹ú·À¾ü'¸ñÂŞ¶û'²½±øÊ¦" "¹ú·À¾ü'¸ñ¶û²¼À¼'²½±øÊ¦" "¹ú·À¾ü'¸ñÌØ'²½±øÊ¦" "¹ú·À¾ü'ºº±¤'²½±øÊ¦'" "¹ú·À¾ü'ººÅµÍş'²½±øÊ¦" "¹ú·À¾ü'¿â¶ûÀ¼'²½±øÊ¦" "¹ú·À¾ü'Äª·òÈÊ'²½±øÊ¦" "¹ú·À¾ü'Ã×ĞÁ¸ñÉ­'²½±øÊ¦" "¹ú·À¾ü'Åµ¹şÄ·'²½±øÊ¦" 
+		"¹ú·À¾ü'ÊæÀÕá¯'²½±øÊ¦" "¹ú·À¾ü'Ï£À¼'²½±øÊ¦" "¹ú·À¾ü'Íß¶÷'²½±øÊ¦" "¹ú·À¾ü'Î¬¶ûµÂ¸¥À³¿Ï'²½±øÊ¦" 
 	}
 	cavalry_brigade = {
-		"1. Kavallerie-Division" "8. SS-Kav.Div. 'Florian Geyer'" "1. Kossaken-Kavallerie-Division" "22. SS-Kav.Div. 'Maria Theresia'" "2. Kossaken-Kavallerie-Division" "3. Kavallerie-Division" "37. SS-Freiw.Kav.Div. 'Lützow'" "4. Kavallerie-Division" "5. Kavallerie-Division" "6. Kavallerie-Division" "7. Kavallerie-Division" 
-		"8. Kavallerie-Division" "9. Kavallerie-Division" "10. Kavallerie-Division" "11. Kavallerie-Division" "12. Kavallerie-Division" "13. Kavallerie-Division" "14. Kavallerie-Division" "15. Kavallerie-Division" "16. Kavallerie-Division" "17. Kavallerie-Division" "18. Kavallerie-Division" 
-		"19. Kavallerie-Division" "20. Kavallerie-Division" 
+		"¹ú·À¾üµÚ1Æï±øÊ¦" "µ³ÎÀ¾üµÚ8'¸¥ÂåÀï°² ¸ÇÒÀ'Æï±øÊ¦ " "¹ú·À¾üµÚ1¸çÈø¿ËÆï±øÊ¦" "µ³ÎÀ¾üµÚ22'Âê¡¤ÌØÀ×Î÷ÑÇ'Ö¾Ô¸Æï±øÊ¦" "¹ú·À¾üµÚ2¸çÈø¿ËÆï±øÊ¦" "¹ú·À¾üµÚ3Æï±øÊ¦" "µ³ÎÀ¾üµÚ37'ÂÀ×ô'Ö¾Ô¸Æï±øÊ¦" "¹ú·À¾üµÚ4Æï±øÊ¦" "¹ú·À¾üµÚ5Æï±øÊ¦" "¹ú·À¾üµÚ6Æï±øÊ¦" "¹ú·À¾üµÚ7Æï±øÊ¦" 
+		"¹ú·À¾üµÚ8Æï±øÊ¦" "¹ú·À¾üµÚ9Æï±øÊ¦" "¹ú·À¾üµÚ10Æï±øÊ¦" "¹ú·À¾üµÚ11Æï±øÊ¦" "¹ú·À¾üµÚ12Æï±øÊ¦" "¹ú·À¾üµÚ13Æï±øÊ¦" "¹ú·À¾üµÚ14Æï±øÊ¦" "¹ú·À¾üµÚ15Æï±øÊ¦" "¹ú·À¾üµÚ16Æï±øÊ¦" "¹ú·À¾üµÚ17Æï±øÊ¦" "¹ú·À¾üµÚ18Æï±øÊ¦" 
+		"¹ú·À¾üµÚ19Æï±øÊ¦" "¹ú·À¾üµÚ20Æï±øÊ¦" 
 	}
 	motorized_brigade = {
-		"2. Infanterie-Division (mot)" "3. Infanterie-Division (mot)" "13. Infanterie-Division (mot)" "20. Infanterie-Division (mot)" "29. Infanterie-Division (mot)" "60. Infanterie-Division (mot)" "36. Infanterie-Division (mot)" "10. Infanterie-Division (mot)" "14. Infanterie-Division (mot)" "16. Infanterie-Division (mot)" "18. Infanterie-Division (mot)" 
-		"25. Infanterie-Division (mot)" "345. Infanterie-Division (mot)" "386. Infanterie-Division (mot)" "1. Infanterie-Division" "5. Infanterie-Division" "6. Infanterie-Division" "7. Infanterie-Division" "8. Infanterie-Division" "9. Infanterie-Division" "10. Infanterie-Division" "11. Infanterie-Division" 
-		"12. Infanterie-Division" "15. Infanterie-Division" "17. Infanterie-Division" "18. Infanterie-Division" "21. Infanterie-Division" "23. Infanterie-Division" "24. Infanterie-Division" "25. Infanterie-Division" "26. Infanterie-Division" "28. Infanterie-Division" "30. Infanterie-Division" 
-		"31. Infanterie-Division" "32. Infanterie-Division" "34. Infanterie-Division" "35. Infanterie-Division" "36. Infanterie-Division" "44. Infanterie-Division" "45. Infanterie-Division" "46. Infanterie-Division" "50. Infanterie-Division" "52. Infanterie-Division" "56. Infanterie-Division" 
-		"57. Infanterie-Division" "58. Infanterie-Division" "60. Infanterie-Division" "61. Infanterie-Division" "62. Infanterie-Division" "68. Infanterie-Division" "69. Infanterie-Division" "71. Infanterie-Division" "72. Infanterie-Division" "73. Infanterie-Division" "75. Infanterie-Division" 
-		"76. Infanterie-Division" "78. Infanterie-Division" "79. Infanterie-Division" "81. Infanterie-Division" "82. Infanterie-Division" "83. Infanterie-Division" "86. Infanterie-Division" "87. Infanterie-Division" "88. Infanterie-Division" "93. Infanterie-Division" "94. Infanterie-Division" 
-		"95. Infanterie-Division" "96. Infanterie-Division" "98. Infanterie-Division" "143. Infanterie-Division" "161. Infanterie-Division" "162. Infanterie-Division" "163. Infanterie-Division" "164. Infanterie-Division" "167. Infanterie-Division" "168. Infanterie-Division" "169. Infanterie-Division" 
-		"170. Infanterie-Division" "181. Infanterie-Division" "183. Infanterie-Division" "196. Infanterie-Division" "197. Infanterie-Division" "206. Infanterie-Division" "207. Infanterie-Division" "208. Infanterie-Division" "209. Infanterie-Division" "211. Infanterie-Division" "212. Infanterie-Division" 
-		"213. Infanterie-Division" "214. Infanterie-Division" "215. Infanterie-Division" "216. Infanterie-Division" "217. Infanterie-Division" "218. Infanterie-Division" "221. Infanterie-Division" "223. Infanterie-Division" "225. Infanterie-Division" "227. Infanterie-Division" "228. Infanterie-Division" 
-		"231. Infanterie-Division" "239. Infanterie-Division" "246. Infanterie-Division" "251. Infanterie-Division" "252. Infanterie-Division" "253. Infanterie-Division" "254. Infanterie-Division" "255. Infanterie-Division" "256. Infanterie-Division" "257. Infanterie-Division" "258. Infanterie-Division" 
-		"260. Infanterie-Division" "262. Infanterie-Division" "263. Infanterie-Division" "267. Infanterie-Division" "14. Galizische SS-Freiw.-Div." "15. Lettische SS-Freiw.-Div." "20. Estische SS-Freiw.-Div." "19. Lettische SS-Freiw.-Div." "29. Italien. Waffen-Div. d. SS" "30. SS-Freiw. Div. 'Walküre'" "31. SS-Freiwilligen-Grenadier-Div." 
-		"25. Waffen-Gr.Div. d. SS 'Hunyadi'" "26. Waffen-Gr.Div. d. SS 'Hungaria'" "27. SS-Freiw.-Div. 'Langemark'" "28. SS-Freiw.-Div. 'Wallonien'" "33. Waffen-Gr.Div. d. SS 'Charlemagne'" "32. SS-Freiw.Div. '30. Januar'" "34. SS-Freiw.Div. 'Landstorm Nederland'" "35. SS-Polizei-Grenadier-Div." "36. SS-Gren. Div. 'Wotan'" "38. SS-Grenadier-Div. 'Nibelungen'" "Führer-Grenadier-Division" 
-		"463. Infanterie-Division (mot)" "464. Infanterie-Division (mot)" "465. Infanterie-Division (mot)" "466. Infanterie-Division (mot)" "468. Infanterie-Division (mot)" "470. Infanterie-Division (mot)" "471. Infanterie-Division (mot)" "472. Infanterie-Division (mot)" "473. Infanterie-Division (mot)" "474. Infanterie-Division (mot)" "475. Infanterie-Division (mot)" 
-		"476. Infanterie-Division (mot)" "477. Infanterie-Division (mot)" "478. Infanterie-Division (mot)" "479. Infanterie-Division (mot)" "480. Infanterie-Division (mot)" "481. Infanterie-Division (mot)" "482. Infanterie-Division (mot)" "483. Infanterie-Division (mot)" "484. Infanterie-Division (mot)" "485. Infanterie-Division (mot)" "486. Infanterie-Division (mot)" 
-		"487. Infanterie-Division (mot)" "242. Infanterie-Division (mot)" "243. Infanterie-Division (mot)" "244. Infanterie-Division (mot)" "245. Infanterie-Division (mot)" "264. Infanterie-Division (mot)" "265. Infanterie-Division (mot)" "Division 'Hermann Göring'" "Sturm-Division Rhodos" "266. Infanterie-Division (mot)" "271. Infanterie-Division (mot)" 
-		"274. Infanterie-Division (mot)" "275. Infanterie-Division (mot)" "276. Infanterie-Division (mot)" "277. Infanterie-Division (mot)" "282. Infanterie-Division (mot)" "352. Infanterie-Division (mot)" "353. Infanterie-Division (mot)" "355. Infanterie-Division (mot)" "356. Infanterie-Division (mot)" "357. Infanterie-Division (mot)" "359. Infanterie-Division (mot)" 
-		"361. Infanterie-Division (mot)" "362. Infanterie-Division (mot)" "363. Infanterie-Division (mot)" "364. Infanterie-Division (mot)" "367. Infanterie-Division (mot)" "540. Infanterie-Division (mot)" "Infanterie-Div. 'Milowitz'" "48. Infanterie-Division (mot)" "49. Infanterie-Division (mot)" "59. Infanterie-Division (mot)" "64. Infanterie-Division (mot)" 
-		"170. Infanterie-Division (mot)" "177. Infanterie-Division (mot)" "184. Infanterie-Division (mot)" "185. Infanterie-Division (mot)" "189. Infanterie-Division (mot)" "192. Infanterie-Division (mot)" "148. Infanterie-Division (mot)" "159. Infanterie-Division (mot)" "176. Infanterie-Division (mot)" "180. Infanterie-Division (mot)" "190. Infanterie-Division (mot)" 
-		"203. Infanterie-Division (mot)" "237. Infanterie-Division (mot)" "286. Infanterie-Division (mot)" "301. Infanterie-Division (mot)" "462. Infanterie-Division (mot)" "469. Infanterie-Division (mot)" "539. Infanterie-Division (mot)" "542. Infanterie-Division (mot)" "560. Infanterie-Division (mot)" "600. Russische Infanterie-Div." "141. Infanterie-Division (mot)" 
-		"154. Infanterie-Division (mot)" "155. Infanterie-Division (mot)" "156. Infanterie-Division (mot)" "Marine-Division 'Gotenhafen'" "158. Infanterie-Division (mot)" "650. Russische Infanterie-Div." "160. Infanterie-Division (mot)" "166. Infanterie-Division (mot)" "182. Infanterie-Division (mot)" "219. Infanterie-Division (mot)" "226. Infanterie-Division (mot)" 
-		"232. Infanterie-Division (mot)" "236. Infanterie-Division (mot)" "249. Infanterie-Division (mot)" "281. Infanterie-Division (mot)" "303. Infanterie-Division (mot)" "309. Infanterie-Division (mot)" "324. Infanterie-Division (mot)" "Infanterie-Div. 'Jütland'" "Infanterie-Div. 'Woldenberg'" "Infanterie-Div. 'Mielau'" "Infanterie-Div. 'Döberitz'" 
-		"Infanterie-Div. 'Berlin'" "Infanterie-Div. 'Hamburg'" "703. Infanterie-Division (mot)" "719. Infanterie-Division (mot)" "Infanterie-Div. 'Potsdam'" "Infanterie-Div. 'Scharnhorst'" "Infanterie-Div. 'Ulrich v. Hutten'" "Infanterie-Div. 'Ferdinand v. Schill'" "Infanterie-Div. 'Ostpreußen'" "827. Infanterie-Division (mot)" "Infanterie-Div. 'Böhmen'" 
-		"Infanterie-Div. 'Breslau'" "Infanterie-Div. 'Demba'" "Infanterie-Div. 'Döllersheim'" "Infanterie-Div. 'Dresden'" "Infanterie-Div. 'Donau'" "Infanterie-Div. 'Fried. L. Jahn'" "Infanterie-Div. 'Generalgouvernement'" "Infanterie-Div. 'Grafenwöhr'" "Infanterie-Div. 'Groß Born'" "Infanterie-Div. 'Güstrow'" "Infanterie-Div. 'Hamburg'" 
-		"Infanterie-Div. 'Hannover'" "Infanterie-Div. 'Kurland'" "Infanterie-Div. 'Mähren'" "Infanterie-Div. 'Münsingen'" "Infanterie-Div. 'Neuhammer'" "Infanterie-Div. 'Schlesien'" "Infanterie-Div. 'Seeland'" "Infanterie-Div. 'Wahn'" "Infanterie-Div. 'Wildflecken'" 
+		"¹ú·À¾üµÚ2Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ3Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ13Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ20Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ29Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ60Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ36Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ10Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ14Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ16Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ18Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ25Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ345Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ386Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ1Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ5Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ6Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ7Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ8Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ9Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ11Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ12Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ15Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ17Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ18Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ21Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ23Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ24Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ25Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ26Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ28Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ30Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ31Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ32Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ34Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ35Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ36Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ44Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ45Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ46Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ50Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ52Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ56Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ57Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ58Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ60Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ61Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ62Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ68Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ69Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ71Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ72Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ73Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ75Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ76Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ78Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ79Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ81Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ82Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ83Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ86Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ87Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ88Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ93Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ94Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ95Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ96Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ98Ä¦ÍĞ»¯²½±øÊ¦" "µ³ÎÀ¾üµÚ14Îä×°ÖÀµ¯±øÊ¦£¨ÎÚ¿ËÀ¼µÚÒ»£©" "µ³ÎÀ¾üµÚ15Îä×°ÖÀµ¯±øÊ¦£¨À­ÍÑÎ¬ÑÇµÚÒ»£©" "µ³ÎÀ¾üµÚ20Îä×°ÖÀµ¯±øÊ¦£¨°®É³ÄáÑÇµÚÒ»£©" 
+		"µ³ÎÀ¾üµÚ19Îä×°ÖÀµ¯±øÊ¦£¨À­ÍÑÎ¬ÑÇµÚ¶ş£©" "µ³ÎÀ¾üµÚ29Îä×°ÖÀµ¯±øÊ¦£¨Òâ´óÀûµÚÒ»£©" "µ³ÎÀ¾üµÚ30Îä×°ÖÀµ¯Ê¦" "µ³ÎÀ¾üµÚ31Ö¾Ô¸ÖÀµ¯Ê¦" "µ³ÎÀ¾üµÚ25'ĞÙÑÀÌá'Îä×°ÖÀµ¯±øÊ¦" 
+		"µ³ÎÀ¾üµÚ26'ĞÙÑÀÀûÈË'Îä×°ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ27'À¼¸ñÂí¿Ë'Ö¾Ô¸ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ28'ÍßÂ¡ÈË'Ö¾Ô¸×°¼×ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ33'²éÀïÂü´óµÛ'Îä×°ÖÀµ¯±øÊ¦" 
+		"µ³ÎÀ¾üµÚ32'1ÔÂ30ÈÕ'Ö¾Ô¸ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ34'ÄáµÂÀ¼Â½µØ·ç±©'Ö¾Ô¸ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ35¾¯²ìÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ36'µüÀÕÍô¸ñ'Îä×°ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ38'Äá²®Áú¸ù'×°¼×ÖÀµ¯±øÊ¦" 
+		"'ÔªÊ×'ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ143Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ161Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ162Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ163Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ164Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ167Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ168Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ169Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ170Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ181Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ183Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ196Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ197Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ206Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ207Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ298Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ209Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ211Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ212Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ213Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ214Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ215Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ216Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ217Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ218Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ221Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ223Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ225Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ227Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ228Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ231Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ239Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ246Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ251Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ252Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ253Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ254Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ255Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ256Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ257Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ258Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ260Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ262Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ263Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ267Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ463Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ464Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ465Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ466Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ468Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ470Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ471Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ472Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ473Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ474Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ475Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ476Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ477Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ478Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ479Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ480Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ481Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ482Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ483Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ484Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ485Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ486Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ487Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ242Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ243Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ244Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ245Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ264Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ265Ä¦ÍĞ»¯²½±øÊ¦" "'ºÕ¶ûÂü¡¤¸êÁÖ'Ê¦" "¹ú·À¾ü'ÂŞµÂµº'Ê¦" 
+		"¹ú·À¾üµÚ266Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ271Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ274Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ275Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ276Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ277Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ282Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ352Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ353Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ355Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ356Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ357Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ359Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ361Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ362Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ363Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ364Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ367Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ540Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾ü'Ã×¶ûÎÖ×È'Ê¦" "¹ú·À¾üµÚ48Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ49Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ59Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ64Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ177Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ184Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ185Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ189Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ192Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ148Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ159Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ176Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ180Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ190Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ202Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ237Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ286Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ301Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ462Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ469Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ539Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ542Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ560Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ600¶íÂŞË¹²½±øÊ¦" "¹ú·À¾üµÚ141Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ154Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ155Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ156Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾ü'¸êµÇ¹ş·Ò'Ê¦" "¹ú·À¾üµÚ158Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ650¶íÂŞË¹²½±øÊ¦" "¹ú·À¾üµÚ160Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ166Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ182Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ219Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ226Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ232Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ236Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ249Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ281Ä¦ÍĞ»¯²½±øÊ¦" 
+		"¹ú·À¾üµÚ303Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ309Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾üµÚ324Ä¦ÍĞ»¯²½±øÊ¦" "¹ú·À¾ü'¼ªÀ¼'Ê¦" "¹ú·À¾ü'ÎÖµÇ±¤'Ê¦" "¹ú·À¾ü'Ã×Ò®Â³'Ê¦" "¹ú·À¾ü'µÂÀ××È'Ê¦" 
+		"¹ú·À¾ü'°ØÁÖ'Ê¦" "¹ú·À¾ü'ºº±¤'Ê¦" "¹ú·À¾ü'²¨´ÄÌ¹'Ê¦" "¹ú·À¾ü'Ë¹¿²ºÀË¹'Ê¦" "¹ú·À¾ü'ÎÚ¶ûÀû¿Ë'Ê¦" "¹ú·À¾ü'ì³µÏÄÏ'Ê¦" "¹ú·À¾ü'°ÂË¹ÌØÂåÆÖ'Ê¦" 
+		"¹ú·À¾ü'²»À´Ã·'Ê¦" "¹ú·À¾ü'²¼À×Ë¹Â³'Ê¦" "¹ú·À¾ü'µÇ°Í'Ê¦" "¹ú·À¾ü'µÂÀ×ÉªÄ·'Ê¦" "¹ú·À¾ü'µÂÀÛË¹¶Ù'Ê¦" "¹ú·À¾ü'¶àè§ºÓ'Ê¦" "¹ú·À¾ü'¸¥À³µÂ'Ê¦" "¹ú·À¾ü'ÔªË§¸®'Ê¦" 
+		"¹ú·À¾ü'¸ñÀ­·Ò'Ê¦" "¹ú·À¾ü'¸ñÂå²¼À¼'Ê¦" "¹ú·À¾ü'¸ñÂŞ¶û'Ê¦" "¹ú·À¾ü'ºº±¤'Ê¦" "¹ú·À¾ü'ººÅµÍş'Ê¦" "¹ú·À¾ü'¿â¶ûÀ¼'Ê¦" "¹ú·À¾ü'Ä¦Àâ'Ê¦" "¹ú·À¾ü'ÂüĞÁôŞ'Ê¦" 
+		"¹ú·À¾ü'Å¦ººÄ·'Ê¦" "¹ú·À¾ü'Î÷ÀïÎ÷ÑÇ'Ê¦" "¹ú·À¾ü'Î÷À¼'Ê¦" "¹ú·À¾ü'ÍßÄ·'Ê¦" "¹ú·À¾ü'»³ÌØ¸¥À¼¿Ï'Ê¦" 
 	}
 	mechanized_brigade = {
-		"1. Pz.Gr. SS-Leibst. Adolf Hitler" "16. Panzergrenadier-Division" "233. Panzergrenadier-Division" "11. SS-Pz.Gr.Freiw.Div. 'Nordland'" "3. Panzergrenadier-Division" "Pz.Gren.-Div. 'Großdeutschland'" "29. Panzergrenadier-Division" "10. Panzergrenadier-Division" "18. Panzergrenadier-Division" "25. Panzergrenadier-Division" "15. Panzergrenadier-Division" 
-		"90. Panzergrenadier-Division" "20. Panzergrenadier-Division" "16. SS-Pz.Gr.Div. 'Reichsführer SS'" "17. SS-Pz.Gr.Div. 'Götz Berlichingen'" "18. SS-Pz.Gr.Div. 'Horst Wessel'" "Panzergrenadier-Div. 'Brandenburg'" "28. SS-Freiw.Pz.Gr.Div. 'Wallonien'" "23. SS-Freiw.Pz.Gr.Div. 'Nederland'" "40. SS-Freiw.Pz.Gr.Div. 'Feldhernhalle'" "41. Waffen-Pz.Gr.Div. d. SS 'Kalevala'" "42. SS-Pz.Gr.Div. 'Niedersachsen'" 
-		"43. SS-Pz.Gr.Div. 'Reichsmarschall'" "44. SS-Pz.Gr.Div. 'Wallenstein'" "45. SS-Pz.Gr.Div. 'Waräger'" "46. SS-Pz.Gr.Div. 'Walhalla'" "488. Panzergrenadier-Division" "489. Panzergrenadier-Division" "490. Panzergrenadier-Division" "491. Panzergrenadier-Division" "492. Panzergrenadier-Division" "493. Panzergrenadier-Division" "494. Panzergrenadier-Division" 
-		"495. Panzergrenadier-Division" "496. Panzergrenadier-Division" "497. Panzergrenadier-Division" "498. Panzergrenadier-Division" "499. Panzergrenadier-Division" "500. Panzergrenadier-Division" "501. Panzergrenadier-Division" "502. Panzergrenadier-Division" "503. Panzergrenadier-Division" "504. Panzergrenadier-Division" "505. Panzergrenadier-Division" 
-		"506. Panzergrenadier-Division" "507. Panzergrenadier-Division" "508. Panzergrenadier-Division" "509. Panzergrenadier-Division" "510. Panzergrenadier-Division" "511. Panzergrenadier-Division" "512. Panzergrenadier-Division" "513. Panzergrenadier-Division" "514. Panzergrenadier-Division" "515. Panzergrenadier-Division" "516. Panzergrenadier-Division" 
-		"517. Panzergrenadier-Division" "518. Panzergrenadier-Division" "519. Panzergrenadier-Division" "520. Panzergrenadier-Division" "522. Panzergrenadier-Division" "523. Panzergrenadier-Division" "524. Panzergrenadier-Division" "525. Panzergrenadier-Division" "242. Panzergrenadier-Division" "243. Panzergrenadier-Division" "244. Panzergrenadier-Division" 
-		"245. Panzergrenadier-Division" "264. Panzergrenadier-Division" "265. Panzergrenadier-Division" "266. Panzergrenadier-Division" "271. Panzergrenadier-Division" "274. Panzergrenadier-Division" "275. Panzergrenadier-Division" "276. Panzergrenadier-Division" "277. Panzergrenadier-Division" "282. Panzergrenadier-Division" "352. Panzergrenadier-Division" 
-		"353. Panzergrenadier-Division" "355. Panzergrenadier-Division" "356. Panzergrenadier-Division" "357. Panzergrenadier-Division" "359. Panzergrenadier-Division" "361. Panzergrenadier-Division" "362. Panzergrenadier-Division" "363. Panzergrenadier-Division" "364. Panzergrenadier-Division" "367. Panzergrenadier-Division" "540. Panzergrenadier-Division" 
-		"Infanterie-Div. 'Milowitz'" "48. Panzergrenadier-Division" "49. Panzergrenadier-Division" "59. Panzergrenadier-Division" "64. Panzergrenadier-Division" "Division 'Hermann Göring'" "Sturm-Division Rhodos" "170. Panzergrenadier-Division" "177. Panzergrenadier-Division" "184. Panzergrenadier-Division" "185. Panzergrenadier-Division" 
-		"189. Panzergrenadier-Division" "192. Panzergrenadier-Division" "148. Panzergrenadier-Division" "159. Panzergrenadier-Division" "176. Panzergrenadier-Division" "180. Panzergrenadier-Division" "190. Panzergrenadier-Division" "203. Panzergrenadier-Division" "237. Panzergrenadier-Division" "286. Panzergrenadier-Division" "301. Panzergrenadier-Division" 
-		"462. Panzergrenadier-Division" "469. Panzergrenadier-Division" "539. Panzergrenadier-Division" "542. Panzergrenadier-Division" "560. Panzergrenadier-Division" "600. Russische Infanterie-Div." "141. Panzergrenadier-Division" "154. Panzergrenadier-Division" "155. Panzergrenadier-Division" "156. Panzergrenadier-Division" "Marine-Division 'Gotenhafen'" 
-		"650. Russische Infanterie-Div." "160. Panzergrenadier-Division" "166. Panzergrenadier-Division" "182. Panzergrenadier-Division" "219. Panzergrenadier-Division" "226. Panzergrenadier-Division" "232. Panzergrenadier-Division" "236. Panzergrenadier-Division" "249. Panzergrenadier-Division" "281. Panzergrenadier-Division" "303. Panzergrenadier-Division" 
-		"309. Panzergrenadier-Division" "324. Panzergrenadier-Division" "Infanterie-Div. 'Jütland'" "Infanterie-Div. 'Woldenberg'" "Infanterie-Div. 'Mielau'" "Infanterie-Div. 'Döberitz'" "Infanterie-Div. 'Berlin'" "Infanterie-Div. 'Hamburg'" "703. Panzergrenadier-Division" "719. Panzergrenadier-Division" "Infanterie-Div. 'Potsdam'" 
-		"Infanterie-Div. 'Scharnhorst'" "Infanterie-Div. 'Ulrich v. Hutten'" "Infanterie-Div. 'Ferdinand v. Schill'" "Infanterie-Div. 'Ostpreußen'" "827. Panzergrenadier-Division" "Infanterie-Div. 'Böhmen'" "Infanterie-Div. 'Breslau'" "Infanterie-Div. 'Demba'" "Infanterie-Div. 'Döllersheim'" "Infanterie-Div. 'Dresden'" "Infanterie-Div. 'Donau'" 
-		"Infanterie-Div. 'Fried. L. Jahn'" "Infanterie-Div. 'Generalgouvernement'" "Infanterie-Div. 'Grafenwöhr'" "Infanterie-Div. 'Groß Born'" "Infanterie-Div. 'Güstrow'" "Infanterie-Div. 'Hamburg'" "Infanterie-Div. 'Hannover'" "Infanterie-Div. 'Kurland'" "Infanterie-Div. 'Mähren'" "Infanterie-Div. 'Münsingen'" "Infanterie-Div. 'Neuhammer'" 
-		"Infanterie-Div. 'Schlesien'" "Infanterie-Div. 'Seeland'" "Infanterie-Div. 'Wahn'" "Infanterie-Div. 'Wildflecken'" 
-	}
-	super_heavy_armor_brigade = {
-		"1. Panzer-Division" "2. Panzer-Division" "3. Panzer-Division" "4. Panzer-Division" "5. Panzer-Division" "10. Panzer-Division" "6. Panzer-Division" "2. SS-Panzer-Div. 'Das Reich'" "7. Panzer-Division" "8. Panzer-Division" "3. SS-Panzer-Div. 'Totenkopf'" 
-		"9. Panzer-Division" "11. Panzer-Division" "14. Panzer-Division" "12. Panzer-Division" "13. Panzer-Division" "15. Panzer-Division" "16. Panzer-Division" "17. Panzer-Division" "18. Panzer-Division" "19. Panzer-Division" "20. Panzer-Division" 
-		"5. SS-Panzer-Div. 'Wiking'" "1. SS-Leibstandarte Adolf Hitler" "21. Panzer-Division" "22. Panzer-Division" "Fallschirm Pz-Div. 'Hermann Goering'" "23. Panzer-Division" "24. Panzer-Division" "25. Panzer-Division" "26. Panzer-Division" "27. Panzer-Division" "9. SS-Panzer-Div. 'Hohenstaufen'" 
-		"10. SS-Panzer-Div. 'Frundsberg'" "11. SS-Panzer-Div. 'Vorwärts'" "12. SS-Panzer-Div. 'Hitlerjugend'" "178. Reserve-Panzer-Division" "179. Reserve-Panzer-Division" "155. Reserve-Panzer-Division" "233. Reserve-Panzer-Division" "130. Panzer-Lehr-Division" "Panzer-Division 'Norwegen'" "116. Panzer-Division" "Panzer-Division 'Tatra'" 
-		"Panzer-Division 'Feldherrnhalle'" "232. Panzer-Division" "Panzer-Division 'Clausewitz'" "Panzer-Division 'Schlesien'" "Panzer-Division 'Holstein'" "Panzer-Division 'Juterbog'" "Panzer-Division 'Kurmark'" "Panzer-Division 'Muncheberg'" "Panzer-Division 'Kempf'" "Panzer-Division 'Döberitz'" "28. Panzer-Division" 
-		"29. Panzer-Division" "30. Panzer-Division" "31. Panzer-Division" "32. Panzer-Division" "33. Panzer-Division" "34. Panzer-Division" "35. Panzer-Division" "36. Panzer-Division" "37. Panzer-Division" "38. Panzer-Division" "39. Panzer-Division" 
-		"40. Panzer-Division" "41. Panzer-Division" "42. Panzer-Division" "43. Panzer-Division" "44. Panzer-Division" "45. Panzer-Division" "46. Panzer-Division" "47. Panzer-Division" "48. Panzer-Division" "49. Panzer-Division" "50. Panzer-Division" 
-		"51. Panzer-Division" "52. Panzer-Division" "53. Panzer-Division" "54. Panzer-Division" "55. Panzer-Division" "56. Panzer-Division" "57. Panzer-Division" "58. Panzer-Division" "59. Panzer-Division" "60. Panzer-Division" "61. Panzer-Division" 
-		"62. Panzer-Division" "63. Panzer-Division" "64. Panzer-Division" "65. Panzer-Division" "66. Panzer-Division" "67. Panzer-Division" "68. Panzer-Division" "69. Panzer-Division" "70. Panzer-Division" "71. Panzer-Division" "72. Panzer-Division" 
-		"73. Panzer-Division" "74. Panzer-Division" "75. Panzer-Division" "76. Panzer-Division" "77. Panzer-Division" "78. Panzer-Division" "79. Panzer-Division" "80. Panzer-Division" "81. Panzer-Division" "82. Panzer-Division" "83. Panzer-Division" 
-		"84. Panzer-Division" "85. Panzer-Division" "86. Panzer-Division" "87. Panzer-Division" "88. Panzer-Division" "89. Panzer-Division" "90. Panzer-Division" "91. Panzer-Division" "92. Panzer-Division" "93. Panzer-Division" "94. Panzer-Division" 
-		"95. Panzer-Division" "96. Panzer-Division" "97. Panzer-Division" "98. Panzer-Division" "99. Panzer-Division" "100. Panzer-Division" 
+		"¹ú·À¾üµÚ16×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ233×°¼×ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ4'¾¯²ì'×°¼×ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ11'±±Å·'Ö¾Ô¸×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ3×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ29×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ10×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ18×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ25×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ15×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ90×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ20×°¼×ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ16'µ³ÎÀ¶ÓÈ«¹úÁìĞä'×°¼×ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ17'¹Å×È¡¤²®ÀûĞÁ¸ù'×°¼×ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ18'»ô¶ûË¹ÌØ¡¤ÍşÈû¶û'Ö¾Ô¸×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾ü'²ªÀ¼µÇ±¤'×°¼×ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ40'Í³Ë§ÌÃ'Ö¾Ô¸×°¼×ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ41'¿¨ÀÕÍßÀ­'Îä×°ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ42'ÏÂÈø¿ËÉ­'Ê¦" "µ³ÎÀ¾üµÚ43'µÛ¹úÔªË§'×°¼×Ê¦" 
+		"µ³ÎÀ¾üµÚ44'Íß¶÷Ë¹Ì¹'×°¼×ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ45'ÍßÀ­¸ñ'Ê¦" "µ³ÎÀ¾üµÚ46'Íß¶û¹şÀ­'×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ488×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ489×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ490×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ491×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ492×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ493×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ494×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ495×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ496×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ497×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ498×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ499×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ500×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ501×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ502×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ503×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ504×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ505×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ506×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ507×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ508×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ509×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ510×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ511×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ512×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ513×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ514×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ515×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ516×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ517×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ518×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ519×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ520×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ522×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ523×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ524×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ525×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ242×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ243×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ244×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ245×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ264×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ265×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ266×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ271×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ274×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ275×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ276×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ277×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ282×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ352×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ353×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ355×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ356×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ357×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ359×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ361×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ362×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ363×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ364×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ367×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ540×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾ü'Ã×¶ûÎÖ×È'²½±øÊ¦" "¹ú·À¾üµÚ48×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ49×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ59×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ64×°¼×ÖÀµ¯±øÊ¦" 
+		"'ºÕ¶ûÂü¡¤¸êÁÖ'Ê¦" "¹ú·À¾ü'ÂŞµÂµº'Ê¦" "¹ú·À¾üµÚ170×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ177×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ184×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ185×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ189×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ192×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ148×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ159×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ176×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ180×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ190×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ203×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ237×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ286×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ301×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ462×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ469×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ539×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ542×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ560×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ600¶íÂŞË¹²½±øÊ¦" "¹ú·À¾üµÚ141×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ154×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ155×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ156×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾ü'¸êµÇ¹ş·Ò'Ê¦" "¹ú·À¾üµÚ650¶íÂŞË¹²½±øÊ¦" "¹ú·À¾üµÚ160×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ166×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ182×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ219×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ226×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ232×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ236×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ249×°¼×ÖÀµ¯±øÊ¦" 
+		"¹ú·À¾üµÚ281×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ303×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ309×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ324×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾ü'¼ªÀ¼'Ê¦" "¹ú·À¾ü'ÎÖµÇ±¤'Ê¦" "¹ú·À¾ü'Ã×Ò®Â³'Ê¦" 
+		"¹ú·À¾ü'µÂÀ××È'Ê¦" "¹ú·À¾ü'°ØÁÖ'Ê¦" "¹ú·À¾ü'ºº±¤'Ê¦" "¹ú·À¾üµÚ703×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾üµÚ719×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾ü'²¨´ÄÌ¹'Ê¦" "¹ú·À¾ü'Ë¹¿²ºÀË¹'Ê¦" "¹ú·À¾ü'ÎÚ¶ûÀû¿Ë'Ê¦" 
+		"¹ú·À¾ü'ì³µÏÄÏ'Ê¦" "¹ú·À¾ü'°ÂË¹ÌØÂåÆÖ'Ê¦" "¹ú·À¾üµÚ827×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾ü'²»À´Ã·'Ê¦" "¹ú·À¾ü'²¼À×Ë¹Â³'Ê¦" "¹ú·À¾ü'µÇ°Í'Ê¦" 
+		"¹ú·À¾ü'µÂÀ×ÉªÄ·'Ê¦" "¹ú·À¾ü'µÂÀÛË¹¶Ù'Ê¦" "¹ú·À¾ü'¶àè§ºÓ'Ê¦" "¹ú·À¾ü'¸¥À³µÂ'Ê¦" "¹ú·À¾ü'ÔªË§¸®'Ê¦" "¹ú·À¾ü'¸ñÀ­·Ò'Ê¦" "¹ú·À¾ü'¸ñÂå²¼À¼'Ê¦" 
+		"¹ú·À¾ü'¸ñÂŞ¶û'Ê¦" "¹ú·À¾ü'ºº±¤'Ê¦" "¹ú·À¾ü'ººÅµÍş'Ê¦" "¹ú·À¾ü'¿â¶ûÀ¼'Ê¦" "¹ú·À¾ü'Ä¦Àâ'Ê¦" "¹ú·À¾ü'ÂüĞÁôŞ'Ê¦" "¹ú·À¾ü'Å¦ººÄ·'Ê¦" "¹ú·À¾ü'Î÷ÀïÎ÷ÑÇ'Ê¦" 
+		"¹ú·À¾ü'Î÷À¼'Ê¦" "¹ú·À¾ü'ÍßÄ·'Ê¦" "¹ú·À¾ü'»³ÌØ¸¥À¼¿Ï'Ê¦" 
 	}
 	light_armor_brigade = {
-		"1. Panzer-Division" "2. Panzer-Division" "3. Panzer-Division" "4. Panzer-Division" "5. Panzer-Division" "10. Panzer-Division" "6. Panzer-Division" "7. Panzer-Division" "8. Panzer-Division" "9. Panzer-Division" "11. Panzer-Division" 
-		"14. Panzer-Division" "12. Panzer-Division" "13. Panzer-Division" "15. Panzer-Division" "16. Panzer-Division" "17. Panzer-Division" "18. Panzer-Division" "19. Panzer-Division" "20. Panzer-Division" "21. Panzer-Division" "22. Panzer-Division" 
-		"Fallschirm Pz-Div. 'Hermann Goering'" "23. Panzer-Division" "24. Panzer-Division" "25. Panzer-Division" "26. Panzer-Division" "27. Panzer-Division" "178. Reserve-Panzer-Division" "179. Reserve-Panzer-Division" "155. Reserve-Panzer-Division" "233. Reserve-Panzer-Division" "130. Panzer-Lehr-Division" 
-		"Panzer-Division 'Norwegen'" "116. Panzer-Division" "Panzer-Division 'Tatra'" "Panzer-Division 'Feldherrnhalle'" "232. Panzer-Division" "Panzer-Division 'Clausewitz'" "Panzer-Division 'Schlesien'" "Panzer-Division 'Holstein'" "Panzer-Division 'Juterbog'" "Panzer-Division 'Kurmark'" "Panzer-Division 'Muncheberg'" 
-		"Panzer-Division 'Kempf'" "Panzer-Division 'Döberitz'" "28. Panzer-Division" "29. Panzer-Division" "30. Panzer-Division" "31. Panzer-Division" "32. Panzer-Division" "33. Panzer-Division" "34. Panzer-Division" "35. Panzer-Division" "36. Panzer-Division" 
-		"37. Panzer-Division" "38. Panzer-Division" "39. Panzer-Division" "40. Panzer-Division" "41. Panzer-Division" "42. Panzer-Division" "43. Panzer-Division" "44. Panzer-Division" "45. Panzer-Division" "46. Panzer-Division" "47. Panzer-Division" 
-		"48. Panzer-Division" "49. Panzer-Division" "50. Panzer-Division" "51. Panzer-Division" "52. Panzer-Division" "53. Panzer-Division" "54. Panzer-Division" "55. Panzer-Division" "56. Panzer-Division" "57. Panzer-Division" "58. Panzer-Division" 
-		"59. Panzer-Division" "60. Panzer-Division" "61. Panzer-Division" "62. Panzer-Division" "63. Panzer-Division" "64. Panzer-Division" "65. Panzer-Division" "66. Panzer-Division" "67. Panzer-Division" "68. Panzer-Division" "69. Panzer-Division" 
-		"70. Panzer-Division" "71. Panzer-Division" "72. Panzer-Division" "73. Panzer-Division" "74. Panzer-Division" "75. Panzer-Division" "76. Panzer-Division" "77. Panzer-Division" "78. Panzer-Division" "79. Panzer-Division" "80. Panzer-Division" 
-		"81. Panzer-Division" "82. Panzer-Division" "83. Panzer-Division" "84. Panzer-Division" "85. Panzer-Division" "86. Panzer-Division" "87. Panzer-Division" "88. Panzer-Division" "89. Panzer-Division" "90. Panzer-Division" "91. Panzer-Division" 
-		"92. Panzer-Division" "93. Panzer-Division" "94. Panzer-Division" "95. Panzer-Division" "96. Panzer-Division" "97. Panzer-Division" "98. Panzer-Division" "99. Panzer-Division" "100. Panzer-Division" 
+		"¹ú·À¾üµÚ1×°¼×Ê¦" "¹ú·À¾üµÚ2×°¼×Ê¦" "¹ú·À¾üµÚ3×°¼×Ê¦" "¹ú·À¾üµÚ4×°¼×Ê¦" "¹ú·À¾üµÚ5×°¼×Ê¦" "¹ú·À¾üµÚ10×°¼×Ê¦" "¹ú·À¾üµÚ6×°¼×Ê¦" "¹ú·À¾üµÚ7×°¼×Ê¦" 
+		"¹ú·À¾üµÚ8×°¼×Ê¦" "¹ú·À¾üµÚ9×°¼×Ê¦" "¹ú·À¾üµÚ11×°¼×Ê¦" "¹ú·À¾üµÚ14×°¼×Ê¦" "¹ú·À¾üµÚ12×°¼×Ê¦" "¹ú·À¾üµÚ13×°¼×Ê¦" "¹ú·À¾üµÚ15×°¼×Ê¦" "¹ú·À¾üµÚ16×°¼×Ê¦" "¹ú·À¾üµÚ17×°¼×Ê¦" 
+		"¹ú·À¾üµÚ18×°¼×Ê¦" "¹ú·À¾üµÚ19×°¼×Ê¦" "¹ú·À¾üµÚ20×°¼×Ê¦" "¹ú·À¾üµÚ21×°¼×Ê¦" "¹ú·À¾üµÚ22×°¼×Ê¦" "'ºÕ¶ûÂü¡¤¸êÁÖ'É¡±ø×°¼×Ê¦" "¹ú·À¾üµÚ23×°¼×Ê¦" "¹ú·À¾üµÚ24×°¼×Ê¦" "¹ú·À¾üµÚ25×°¼×Ê¦" 
+		"¹ú·À¾üµÚ26×°¼×Ê¦" "¹ú·À¾üµÚ27×°¼×Ê¦" "¹ú·À¾üµÚ178Ô¤±¸ÒÛ×°¼×Ê¦" "¹ú·À¾üµÚ179Ô¤±¸ÒÛ×°¼×Ê¦" "¹ú·À¾üµÚ155Ô¤±¸ÒÛ×°¼×Ê¦" "¹ú·À¾üµÚ233Ô¤±¸ÒÛ×°¼×Ê¦" "¹ú·À¾üµÚ130×°¼×½Ìµ¼Ê¦" "¹ú·À¾ü'Å²Íş'×°¼×Ê¦" 
+		"¹ú·À¾üµÚ116×°¼×Ê¦" "¹ú·À¾ü'ËşÌØÀ­'×°¼×Ê¦" "¹ú·À¾ü'ëèÌØÁÒ'×°¼×Ê¦" "¹ú·À¾üµÚ232×°¼×Ê¦" "¹ú·À¾ü'¿ËÀÍÎ¬×È'×°¼×Ê¦" "¹ú·À¾ü'Î÷ÀïÎ÷ÑÇ'×°¼×Ê¦" "¹ú·À¾ü'ºÕË¹¶¡'×°¼×Ê¦" "¹ú·À¾ü'¿¤ÌØ±¤'×°¼×Ê¦" 
+		"¹ú·À¾ü'¿âÂí¿Ë'×°¼×Ê¦" "¹ú·À¾ü'Âü¿Ë±¤'×°¼×Ê¦" "¹ú·À¾ü'¿²¸¥'×°¼×Ê¦" "¹ú·À¾ü'µÂÀ××È'×°¼×Ê¦" "¹ú·À¾üµÚ28×°¼×Ê¦" "¹ú·À¾üµÚ29×°¼×Ê¦" "¹ú·À¾üµÚ30×°¼×Ê¦" "¹ú·À¾üµÚ31×°¼×Ê¦" 
+		"¹ú·À¾üµÚ32×°¼×Ê¦" "¹ú·À¾üµÚ33×°¼×Ê¦" "¹ú·À¾üµÚ34×°¼×Ê¦" "¹ú·À¾üµÚ35×°¼×Ê¦" "¹ú·À¾üµÚ36×°¼×Ê¦" "¹ú·À¾üµÚ37×°¼×Ê¦" "¹ú·À¾üµÚ38×°¼×Ê¦" "¹ú·À¾üµÚ39×°¼×Ê¦" "¹ú·À¾üµÚ40×°¼×Ê¦" 
+		"¹ú·À¾üµÚ41×°¼×Ê¦" "¹ú·À¾üµÚ42×°¼×Ê¦" "¹ú·À¾üµÚ43×°¼×Ê¦" "¹ú·À¾üµÚ44×°¼×Ê¦" "¹ú·À¾üµÚ45×°¼×Ê¦" "¹ú·À¾üµÚ46×°¼×Ê¦" "¹ú·À¾üµÚ47×°¼×Ê¦" "¹ú·À¾üµÚ48×°¼×Ê¦" "¹ú·À¾üµÚ49×°¼×Ê¦" 
+		"¹ú·À¾üµÚ50×°¼×Ê¦" "¹ú·À¾üµÚ51×°¼×Ê¦" "¹ú·À¾üµÚ52×°¼×Ê¦" "¹ú·À¾üµÚ53×°¼×Ê¦" "¹ú·À¾üµÚ54×°¼×Ê¦" "¹ú·À¾üµÚ55×°¼×Ê¦" "¹ú·À¾üµÚ56×°¼×Ê¦" "¹ú·À¾üµÚ57×°¼×Ê¦" "¹ú·À¾üµÚ58×°¼×Ê¦" 
+		"¹ú·À¾üµÚ59×°¼×Ê¦" "¹ú·À¾üµÚ60×°¼×Ê¦" "¹ú·À¾üµÚ61×°¼×Ê¦" "¹ú·À¾üµÚ62×°¼×Ê¦" "¹ú·À¾üµÚ63×°¼×Ê¦" "¹ú·À¾üµÚ64×°¼×Ê¦" "¹ú·À¾üµÚ65×°¼×Ê¦" "¹ú·À¾üµÚ66×°¼×Ê¦" "¹ú·À¾üµÚ67×°¼×Ê¦" 
+		"¹ú·À¾üµÚ68×°¼×Ê¦" "¹ú·À¾üµÚ69×°¼×Ê¦" "¹ú·À¾üµÚ70×°¼×Ê¦" "¹ú·À¾üµÚ71×°¼×Ê¦" "¹ú·À¾üµÚ72×°¼×Ê¦" "¹ú·À¾üµÚ73×°¼×Ê¦" "¹ú·À¾üµÚ74×°¼×Ê¦" "¹ú·À¾üµÚ75×°¼×Ê¦" "¹ú·À¾üµÚ76×°¼×Ê¦" 
+		"¹ú·À¾üµÚ77×°¼×Ê¦" "¹ú·À¾üµÚ78×°¼×Ê¦" "¹ú·À¾üµÚ79×°¼×Ê¦" "¹ú·À¾üµÚ80×°¼×Ê¦" "¹ú·À¾üµÚ81×°¼×Ê¦" "¹ú·À¾üµÚ82×°¼×Ê¦" "¹ú·À¾üµÚ83×°¼×Ê¦" "¹ú·À¾üµÚ84×°¼×Ê¦" 
+		"¹ú·À¾üµÚ85×°¼×Ê¦" "¹ú·À¾üµÚ86×°¼×Ê¦" "¹ú·À¾üµÚ87×°¼×Ê¦" "¹ú·À¾üµÚ88×°¼×Ê¦" "¹ú·À¾üµÚ89×°¼×Ê¦" "¹ú·À¾üµÚ90×°¼×Ê¦" "¹ú·À¾üµÚ91×°¼×Ê¦" "¹ú·À¾üµÚ92×°¼×Ê¦" 
+		"¹ú·À¾üµÚ93×°¼×Ê¦" "¹ú·À¾üµÚ94×°¼×Ê¦" "¹ú·À¾üµÚ95×°¼×Ê¦" "¹ú·À¾üµÚ96×°¼×Ê¦" "¹ú·À¾üµÚ97×°¼×Ê¦" "¹ú·À¾üµÚ98×°¼×Ê¦" "¹ú·À¾üµÚ99×°¼×Ê¦" "¹ú·À¾üµÚ100×°¼×Ê¦" 
 	}
 	armor_brigade = {
-		"1. Panzer-Division" "2. Panzer-Division" "3. Panzer-Division" "4. Panzer-Division" "5. Panzer-Division" "10. Panzer-Division" "6. Panzer-Division" "2. SS-Panzer-Div. 'Das Reich'" "7. Panzer-Division" "8. Panzer-Division" "3. SS-Panzer-Div. 'Totenkopf'" 
-		"9. Panzer-Division" "11. Panzer-Division" "14. Panzer-Division" "12. Panzer-Division" "13. Panzer-Division" "15. Panzer-Division" "16. Panzer-Division" "17. Panzer-Division" "18. Panzer-Division" "19. Panzer-Division" "20. Panzer-Division" 
-		"5. SS-Panzer-Div. 'Wiking'" "1. SS-Leibstandarte Adolf Hitler" "21. Panzer-Division" "22. Panzer-Division" "Fallschirm Pz-Div. 'Hermann Goering'" "23. Panzer-Division" "24. Panzer-Division" "25. Panzer-Division" "26. Panzer-Division" "27. Panzer-Division" "9. SS-Panzer-Div. 'Hohenstaufen'" 
-		"10. SS-Panzer-Div. 'Frundsberg'" "11. SS-Panzer-Div. 'Vorwärts'" "12. SS-Panzer-Div. 'Hitlerjugend'" "178. Reserve-Panzer-Division" "179. Reserve-Panzer-Division" "155. Reserve-Panzer-Division" "233. Reserve-Panzer-Division" "130. Panzer-Lehr-Division" "Panzer-Division 'Norwegen'" "116. Panzer-Division" "Panzer-Division 'Tatra'" 
-		"Panzer-Division 'Feldherrnhalle'" "232. Panzer-Division" "Panzer-Division 'Clausewitz'" "Panzer-Division 'Schlesien'" "Panzer-Division 'Holstein'" "Panzer-Division 'Juterbog'" "Panzer-Division 'Kurmark'" "Panzer-Division 'Muncheberg'" "Panzer-Division 'Kempf'" "Panzer-Division 'Döberitz'" "28. Panzer-Division" 
-		"29. Panzer-Division" "30. Panzer-Division" "31. Panzer-Division" "32. Panzer-Division" "33. Panzer-Division" "34. Panzer-Division" "35. Panzer-Division" "36. Panzer-Division" "37. Panzer-Division" "38. Panzer-Division" "39. Panzer-Division" 
-		"40. Panzer-Division" "41. Panzer-Division" "42. Panzer-Division" "43. Panzer-Division" "44. Panzer-Division" "45. Panzer-Division" "46. Panzer-Division" "47. Panzer-Division" "48. Panzer-Division" "49. Panzer-Division" "50. Panzer-Division" 
-		"51. Panzer-Division" "52. Panzer-Division" "53. Panzer-Division" "54. Panzer-Division" "55. Panzer-Division" "56. Panzer-Division" "57. Panzer-Division" "58. Panzer-Division" "59. Panzer-Division" "60. Panzer-Division" "61. Panzer-Division" 
-		"62. Panzer-Division" "63. Panzer-Division" "64. Panzer-Division" "65. Panzer-Division" "66. Panzer-Division" "67. Panzer-Division" "68. Panzer-Division" "69. Panzer-Division" "70. Panzer-Division" "71. Panzer-Division" "72. Panzer-Division" 
-		"73. Panzer-Division" "74. Panzer-Division" "75. Panzer-Division" "76. Panzer-Division" "77. Panzer-Division" "78. Panzer-Division" "79. Panzer-Division" "80. Panzer-Division" "81. Panzer-Division" "82. Panzer-Division" "83. Panzer-Division" 
-		"84. Panzer-Division" "85. Panzer-Division" "86. Panzer-Division" "87. Panzer-Division" "88. Panzer-Division" "89. Panzer-Division" "90. Panzer-Division" "91. Panzer-Division" "92. Panzer-Division" "93. Panzer-Division" "94. Panzer-Division" 
-		"95. Panzer-Division" "96. Panzer-Division" "97. Panzer-Division" "98. Panzer-Division" "99. Panzer-Division" "100. Panzer-Division" 
-	}
-	heavy_armor_brigade = {
-		"1. Panzer-Division" "2. Panzer-Division" "3. Panzer-Division" "4. Panzer-Division" "5. Panzer-Division" "10. Panzer-Division" "6. Panzer-Division" "2. SS-Panzer-Div. 'Das Reich'" "7. Panzer-Division" "8. Panzer-Division" "3. SS-Panzer-Div. 'Totenkopf'" 
-		"9. Panzer-Division" "11. Panzer-Division" "14. Panzer-Division" "12. Panzer-Division" "13. Panzer-Division" "15. Panzer-Division" "16. Panzer-Division" "17. Panzer-Division" "18. Panzer-Division" "19. Panzer-Division" "20. Panzer-Division" 
-		"5. SS-Panzer-Div. 'Wiking'" "1. SS-Leibstandarte Adolf Hitler" "21. Panzer-Division" "22. Panzer-Division" "Fallschirm Pz-Div. 'Hermann Goering'" "23. Panzer-Division" "24. Panzer-Division" "25. Panzer-Division" "26. Panzer-Division" "27. Panzer-Division" "9. SS-Panzer-Div. 'Hohenstaufen'" 
-		"10. SS-Panzer-Div. 'Frundsberg'" "11. SS-Panzer-Div. 'Vorwärts'" "12. SS-Panzer-Div. 'Hitlerjugend'" "178. Reserve-Panzer-Division" "179. Reserve-Panzer-Division" "155. Reserve-Panzer-Division" "233. Reserve-Panzer-Division" "130. Panzer-Lehr-Division" "Panzer-Division 'Norwegen'" "116. Panzer-Division" "Panzer-Division 'Tatra'" 
-		"Panzer-Division 'Feldherrnhalle'" "232. Panzer-Division" "Panzer-Division 'Clausewitz'" "Panzer-Division 'Schlesien'" "Panzer-Division 'Holstein'" "Panzer-Division 'Juterbog'" "Panzer-Division 'Kurmark'" "Panzer-Division 'Muncheberg'" "Panzer-Division 'Kempf'" "Panzer-Division 'Döberitz'" "28. Panzer-Division" 
-		"29. Panzer-Division" "30. Panzer-Division" "31. Panzer-Division" "32. Panzer-Division" "33. Panzer-Division" "34. Panzer-Division" "35. Panzer-Division" "36. Panzer-Division" "37. Panzer-Division" "38. Panzer-Division" "39. Panzer-Division" 
-		"40. Panzer-Division" "41. Panzer-Division" "42. Panzer-Division" "43. Panzer-Division" "44. Panzer-Division" "45. Panzer-Division" "46. Panzer-Division" "47. Panzer-Division" "48. Panzer-Division" "49. Panzer-Division" "50. Panzer-Division" 
-		"51. Panzer-Division" "52. Panzer-Division" "53. Panzer-Division" "54. Panzer-Division" "55. Panzer-Division" "56. Panzer-Division" "57. Panzer-Division" "58. Panzer-Division" "59. Panzer-Division" "60. Panzer-Division" "61. Panzer-Division" 
-		"62. Panzer-Division" "63. Panzer-Division" "64. Panzer-Division" "65. Panzer-Division" "66. Panzer-Division" "67. Panzer-Division" "68. Panzer-Division" "69. Panzer-Division" "70. Panzer-Division" "71. Panzer-Division" "72. Panzer-Division" 
-		"73. Panzer-Division" "74. Panzer-Division" "75. Panzer-Division" "76. Panzer-Division" "77. Panzer-Division" "78. Panzer-Division" "79. Panzer-Division" "80. Panzer-Division" "81. Panzer-Division" "82. Panzer-Division" "83. Panzer-Division" 
-		"84. Panzer-Division" "85. Panzer-Division" "86. Panzer-Division" "87. Panzer-Division" "88. Panzer-Division" "89. Panzer-Division" "90. Panzer-Division" "91. Panzer-Division" "92. Panzer-Division" "93. Panzer-Division" "94. Panzer-Division" 
-		"95. Panzer-Division" "96. Panzer-Division" "97. Panzer-Division" "98. Panzer-Division" "99. Panzer-Division" "100. Panzer-Division" 
+		"¹ú·À¾üµÚ1×°¼×Ê¦" "¹ú·À¾üµÚ2×°¼×Ê¦" "¹ú·À¾üµÚ3×°¼×Ê¦" "¹ú·À¾üµÚ4×°¼×Ê¦" "¹ú·À¾üµÚ5×°¼×Ê¦" "¹ú·À¾üµÚ10×°¼×Ê¦" "¹ú·À¾üµÚ6×°¼×Ê¦" 
+		"¹ú·À¾üµÚ7×°¼×Ê¦" "¹ú·À¾üµÚ8×°¼×Ê¦" "¹ú·À¾üµÚ9×°¼×Ê¦" "¹ú·À¾üµÚ11×°¼×Ê¦" "¹ú·À¾üµÚ14×°¼×Ê¦" "¹ú·À¾üµÚ12×°¼×Ê¦" "¹ú·À¾üµÚ13×°¼×Ê¦" "¹ú·À¾üµÚ15×°¼×Ê¦" 
+		"¹ú·À¾üµÚ16×°¼×Ê¦" "¹ú·À¾üµÚ17×°¼×Ê¦" "¹ú·À¾üµÚ18×°¼×Ê¦" "¹ú·À¾üµÚ19×°¼×Ê¦" "¹ú·À¾üµÚ20×°¼×Ê¦" "¹ú·À¾üµÚ21×°¼×Ê¦" 
+		"¹ú·À¾üµÚ22×°¼×Ê¦" "'ºÕ¶ûÂü¡¤¸êÁÖ'É¡±ø×°¼×Ê¦" "¹ú·À¾üµÚ23×°¼×Ê¦" "¹ú·À¾üµÚ24×°¼×Ê¦" "¹ú·À¾üµÚ25×°¼×Ê¦" "¹ú·À¾üµÚ26×°¼×Ê¦" "¹ú·À¾üµÚ27×°¼×Ê¦" 
+		"µ³ÎÀ¾üµÚ12'Ï£ÌØÀÕÇàÄê'×°¼×Ê¦" "¹ú·À¾üµÚ178Ô¤±¸ÒÛ×°¼×Ê¦" "¹ú·À¾üµÚ179Ô¤±¸ÒÛ×°¼×Ê¦" "¹ú·À¾üµÚ155Ô¤±¸ÒÛ×°¼×Ê¦" "¹ú·À¾üµÚ233Ô¤±¸ÒÛ×°¼×Ê¦" 
+		"¹ú·À¾üµÚ130×°¼×½Ìµ¼Ê¦" "¹ú·À¾ü'´óµÂÒâÖ¾'×°¼×ÖÀµ¯±øÊ¦" "¹ú·À¾ü'Å²Íş'×°¼×Ê¦" "¹ú·À¾üµÚ116×°¼×Ê¦" "¹ú·À¾ü'Ëş¶ûÌØ'×°¼×Ê¦" "¹ú·À¾ü'ëèÌØÁÒ'×°¼×Ê¦" "¹ú·À¾üµÚ232×°¼×Ê¦" 
+		"¹ú·À¾ü'¿ËÀÍÎ¬×È'×°¼×Ê¦" "¹ú·À¾ü'Î÷ÀïÎ÷ÑÇ'×°¼×Ê¦" "¹ú·À¾ü'ºÕË¹¶¡'×°¼×Ê¦" "¹ú·À¾ü'¿¤ÌØ±¤'×°¼×Ê¦" "¹ú·À¾ü'¿âÂí¿Ë'×°¼×Ê¦" "¹ú·À¾ü'Âü¿Ë±¤'×°¼×Ê¦" "¹ú·À¾ü'¿²¸¥'×°¼×Ê¦" 
+		"¹ú·À¾ü'µÂÀ××È'×°¼×Ê¦" "¹ú·À¾üµÚ28×°¼×Ê¦" "¹ú·À¾üµÚ29×°¼×Ê¦" "¹ú·À¾üµÚ30×°¼×Ê¦" "¹ú·À¾üµÚ31×°¼×Ê¦" "¹ú·À¾üµÚ32×°¼×Ê¦" "¹ú·À¾üµÚ33×°¼×Ê¦" "¹ú·À¾üµÚ34×°¼×Ê¦" "¹ú·À¾üµÚ35×°¼×Ê¦" 
+		"¹ú·À¾üµÚ36×°¼×Ê¦" "¹ú·À¾üµÚ37×°¼×Ê¦" "¹ú·À¾üµÚ38×°¼×Ê¦" "¹ú·À¾üµÚ39×°¼×Ê¦" "¹ú·À¾üµÚ40×°¼×Ê¦" "¹ú·À¾üµÚ41×°¼×Ê¦" "¹ú·À¾üµÚ42×°¼×Ê¦" "¹ú·À¾üµÚ43×°¼×Ê¦" "¹ú·À¾üµÚ44×°¼×Ê¦" 
+		"¹ú·À¾üµÚ45×°¼×Ê¦" "¹ú·À¾üµÚ46×°¼×Ê¦" "¹ú·À¾üµÚ47×°¼×Ê¦" "¹ú·À¾üµÚ48×°¼×Ê¦" "¹ú·À¾üµÚ49×°¼×Ê¦" "¹ú·À¾üµÚ50×°¼×Ê¦" "¹ú·À¾üµÚ51×°¼×Ê¦" "¹ú·À¾üµÚ52×°¼×Ê¦" "¹ú·À¾üµÚ53×°¼×Ê¦" 
+		"¹ú·À¾üµÚ54×°¼×Ê¦" "¹ú·À¾üµÚ55×°¼×Ê¦" "¹ú·À¾üµÚ56×°¼×Ê¦" "¹ú·À¾üµÚ57×°¼×Ê¦" "¹ú·À¾üµÚ58×°¼×Ê¦" "¹ú·À¾üµÚ59×°¼×Ê¦" "¹ú·À¾üµÚ60×°¼×Ê¦" "¹ú·À¾üµÚ61×°¼×Ê¦" "¹ú·À¾üµÚ62×°¼×Ê¦" 
+		"¹ú·À¾üµÚ63×°¼×Ê¦" "¹ú·À¾üµÚ64×°¼×Ê¦" "¹ú·À¾üµÚ65×°¼×Ê¦" "¹ú·À¾üµÚ66×°¼×Ê¦" "¹ú·À¾üµÚ67×°¼×Ê¦" "¹ú·À¾üµÚ68×°¼×Ê¦" "¹ú·À¾üµÚ69×°¼×Ê¦" "¹ú·À¾üµÚ70×°¼×Ê¦" "¹ú·À¾üµÚ71×°¼×Ê¦" 
+		"¹ú·À¾üµÚ72×°¼×Ê¦" "¹ú·À¾üµÚ73×°¼×Ê¦" "¹ú·À¾üµÚ74×°¼×Ê¦" "¹ú·À¾üµÚ75×°¼×Ê¦" "¹ú·À¾üµÚ76×°¼×Ê¦" "¹ú·À¾üµÚ77×°¼×Ê¦" "¹ú·À¾üµÚ78×°¼×Ê¦" "¹ú·À¾üµÚ79×°¼×Ê¦" "¹ú·À¾üµÚ80×°¼×Ê¦" 
+		"¹ú·À¾üµÚ81×°¼×Ê¦" "¹ú·À¾üµÚ82×°¼×Ê¦" "¹ú·À¾üµÚ83×°¼×Ê¦" "¹ú·À¾üµÚ84×°¼×Ê¦" "¹ú·À¾üµÚ85×°¼×Ê¦" "¹ú·À¾üµÚ86×°¼×Ê¦" "¹ú·À¾üµÚ87×°¼×Ê¦" "¹ú·À¾üµÚ88×°¼×Ê¦" "¹ú·À¾üµÚ89×°¼×Ê¦" 
+		"¹ú·À¾üµÚ90×°¼×Ê¦" "¹ú·À¾üµÚ91×°¼×Ê¦" "¹ú·À¾üµÚ92×°¼×Ê¦" "¹ú·À¾üµÚ93×°¼×Ê¦" "¹ú·À¾üµÚ94×°¼×Ê¦" "¹ú·À¾üµÚ95×°¼×Ê¦" "¹ú·À¾üµÚ96×°¼×Ê¦" "¹ú·À¾üµÚ97×°¼×Ê¦" "¹ú·À¾üµÚ98×°¼×Ê¦" "¹ú·À¾üµÚ99×°¼×Ê¦" "¹ú·À¾üµÚ100×°¼×Ê¦" 
 	}
 	paratrooper_brigade = {
-		"1. Fallschirmjäger Division" "2. Fallschirmjäger Division" "3. Fallschirmjäger Division" "4. Fallschirmjäger Division" "5. Fallschirmjäger Division" "6. Fallschirmjäger Division" "Fallschirm-Jäger Div. 'Erdmann'" "7. Fallschirmjäger Division" "9. Fallschirmjäger Division" "Fall.-Jäger-Ausb.-u.Ersatz-Div." "8. Fallschirmjäger Division" 
-		"10. Fallschirmjäger Division" "11. Fallschirmjäger Division" "20. Fallschirmjäger Division" "21. Fallschirmjäger Division" "22. Fallschirmjäger Division" "23. Fallschirmjäger Division" "24. Fallschirmjäger Division" "25. Fallschirmjäger Division" "26. Fallschirmjäger Division" 
+		"µÚ1¿Õ½µÊ¦" "µÚ2¿Õ½µÊ¦" "µÚ3¿Õ½µÊ¦" "µÚ4¿Õ½µÊ¦" "µÚ5¿Õ½µÊ¦" "µÚ6¿Õ½µÊ¦" "¹ú·À¾ü'°£µÂÂü'¿Õ½µÊ¦" "µÚ7¿Õ½µÊ¦" "µÚ9¿Õ½µÊ¦" "¹ú·À¾ü'°£Ë¹Ëş'¿Õ½µÊ¦" "µÚ8¿Õ½µÊ¦" 
+		"µÚ10¿Õ½µÊ¦" "µÚ11¿Õ½µÊ¦" "µÚ20¿Õ½µÊ¦" "µÚ21¿Õ½µÊ¦" "µÚ22¿Õ½µÊ¦" "µÚ23¿Õ½µÊ¦" "µÚ24¿Õ½µÊ¦" "µÚ25¿Õ½µÊ¦" "µÚ26¿Õ½µÊ¦" 
 	}
 	marine_brigade = {
-		"1. Marine-Sturm-Division" "2. Marine-Sturm-Division" "3. Marine-Sturm-Division" "3. Marine-Sturm-Division" "4. Marine-Sturm-Division" "5. Marine-Sturm-Division" "6. Marine-Sturm-Division" "7. Marine-Sturm-Division" "8. Marine-Sturm-Division" "9. Marine-Sturm-Division" "10. Marine-Sturm-Division" 
-		"11. Marine-Sturm-Division" "12. Marine-Sturm-Division" "13. Marine-Sturm-Division" "14. Marine-Sturm-Division" "15. Marine-Sturm-Division" "16. Marine-Sturm-Division" "17. Marine-Sturm-Division" "18. Marine-Sturm-Division" "19. Marine-Sturm-Division" "20. Marine-Sturm-Division" 
+		"µÚ1º£¾üÂ½Õ½Ê¦" "µÚ2º£¾üÂ½Õ½Ê¦" "µÚ3º£¾üÂ½Õ½Ê¦" "µÚ4º£¾üÂ½Õ½Ê¦" "µÚ5º£¾üÂ½Õ½Ê¦" "µÚ6º£¾üÂ½Õ½Ê¦" "µÚ7º£¾üÂ½Õ½Ê¦" "µÚ8º£¾üÂ½Õ½Ê¦" "µÚ9º£¾üÂ½Õ½Ê¦" "µÚ10º£¾üÂ½Õ½Ê¦" 
+		"µÚ11º£¾üÂ½Õ½Ê¦" "µÚ12º£¾üÂ½Õ½Ê¦" "µÚ13º£¾üÂ½Õ½Ê¦" "µÚ14º£¾üÂ½Õ½Ê¦" "µÚ15º£¾üÂ½Õ½Ê¦" "µÚ16º£¾üÂ½Õ½Ê¦" "µÚ17º£¾üÂ½Õ½Ê¦" "µÚ18º£¾üÂ½Õ½Ê¦" "µÚ19º£¾üÂ½Õ½Ê¦" "µÚ20º£¾üÂ½Õ½Ê¦" 
 	}
 	bergsjaeger_brigade = {
-		"1. Gebirgsjäger-Division" "2. Gebirgsjäger-Division" "3. Gebirgsjäger-Division" "6. Gebirgsjäger-Division" "4. Gebirgsjäger-Division" "5. Gebirgsjäger-Division" "6. SS-Freiw.-Geb.Div. 'Nord'" "7. Gebirgsjäger-Division" "7. SS-Freiw.-Geb.Div. 'Prinz Eugen'" "13. Waffen-SS Geb.Div. 'Handschar'" "188. Gebirgsjäger-Division" 
-		"21. Waffen-SS Geb.Div. 'Skanderbeg'" "23. Waffen-SS Geb.Div. 'Kama'" "24. Waffen-SS Geb.Div. 'Karstjäger'" "157. Gebirgsjäger-Division" "9. Gebirgsjäger-Division" "8. Gebirgsjäger-Division" "1. Skijäger-Division" "39. SS-Freiw.-Geb.Div. 'Andreas Höfer'" "10. Gebirgsjäger-Division" "11. Gebirgsjäger-Division" "12. Gebirgsjäger-Division" 
-		"13. Gebirgsjäger-Division" "14. Gebirgsjäger-Division" "15. Gebirgsjäger-Division" "16. Gebirgsjäger-Division" "17. Gebirgsjäger-Division" "18. Gebirgsjäger-Division" "19. Gebirgsjäger-Division" "20. Gebirgsjäger-Division" "6. Gebirgsjäger-Division" "158. Gebirgsjäger-Division" "189. Gebirgsjäger-Division" 
-		"190. Gebirgsjäger-Division" "191. Gebirgsjäger-Division" "192. Gebirgsjäger-Division" "193. Gebirgsjäger-Division" "194. Gebirgsjäger-Division" "195. Gebirgsjäger-Division" 
+		"µÚ1É½µØÊ¦" "µÚ2É½µØÊ¦" "µÚ3É½µØÊ¦" "µÚ6É½µØÊ¦" "µÚ4É½µØÊ¦" "µÚ5É½µØÊ¦" "µ³ÎÀ¾üµÚ6'±±·½'É½µØÊ¦" "µÚ7É½µØÊ¦" "µ³ÎÀ¾üµÚ7'Å·¸ùÇ×Íõ'Ö¾Ô¸É½µØÊ¦" "µ³ÎÀ¾üµÚ13'Íäµ¶'Îä×°É½µØÊ¦" "µÚ188É½µØÊ¦" 
+		"µ³ÎÀ¾üµÚ21'Ë¹¿²µÂÅà'Îä×°ÖÀµ¯±øÊ¦" "µ³ÎÀ¾üµÚ23'¿¨Âí'Îä×°É½µØÊ¦" "µ³ÎÀ¾üµÚ24'¿¨Ë¹ÌØÁÔÊÖ'Îä×°É½µØÊ¦" "µÚ157É½µØÊ¦" "µÚ9É½µØÊ¦" "µÚ8É½µØÊ¦" "¹ú·À¾üµÚ1É½µØÊ¦" "µ³ÎÀ¾üµÚ39'°²µÂÈğË¹ »ô·Æ'É½µØÊ¦" "µÚ10É½µØÊ¦" "µÚ11É½µØÊ¦" "µÚ12É½µØÊ¦" 
+		"µÚ13É½µØÊ¦" "µÚ14É½µØÊ¦" "µÚ15É½µØÊ¦" "µÚ16É½µØÊ¦" "µÚ17É½µØÊ¦" "µÚ18É½µØÊ¦" "µÚ19É½µØÊ¦" "µÚ20É½µØÊ¦" "µÚ6É½µØÊ¦" "µÚ158É½µØÊ¦" "µÚ189É½µØÊ¦" 
+		"µÚ190É½µØÊ¦" "µÚ191É½µØÊ¦" "µÚ192É½µØÊ¦" "µÚ193É½µØÊ¦" "µÚ194É½µØÊ¦" "µÚ195É½µØÊ¦" 
 	}
 	garrison_brigade = {
-		"52. Sicherungs-Division" "201. Sicherungs-Division" "203. Sicherungs-Division" "207. Sicherungs-Division" "213. Sicherungs-Division" "141. Reserve-Division" "221. Sicherungs-Division" "143. Reserve-Division" "281. Sicherungs-Division" "285. Sicherungs-Division" "147. Reserve-Division" 
-		"286. Sicherungs-Division" "325. Sicherungs-Division" "400. Ersatz-Division" "390. Sicherungs-Division" "391. Sicherungs-Division" "148. Reserve-Division" "403. Sicherungs-Division" "444. Sicherungs-Division" "151. Reserve-Division" "454. Sicherungs-Division" "41. Festungs-Division" 
-		"717. Sicherungs-Division" "133. Festungs-Division" "718. Sicherungs-Division" "153. Reserve-Division" "719. Sicherungs-Division" "402. Ausbildungs-Division" "720. Sicherungs-Division" "721. Sicherungs-Division" "154. Reserve-Division" "722. Sicherungs-Division" "723. Sicherungs-Division" 
-		"724. Sicherungs-Division" "156. Reserve-Division" "725. Sicherungs-Division" "726. Sicherungs-Division" "157. Reserve-Division" "727. Sicherungs-Division" "158. Reserve-Division" "159. Reserve-Division" "856. Sicherungs-Division" "859. Sicherungs-Division" "160. Reserve-Division" 
-		"877. Sicherungs-Division" "735. Sicherungs-Division" "165. Reserve-Division" "812. Sicherungs-Division" "895. Sicherungs-Division" "166. Reserve-Division" "742. Sicherungs-Division" "171. Reserve-Division" "785. Sicherungs-Division" "172. Reserve-Division" "173. Reserve-Division" 
-		"182. Reserve-Division" "188. Reserve-Gebirgs-Division" "160. Infanterie-Division" "166. Infanterie-Division" "182. Infanterie-Division" "219. Infanterie-Division" "226. Infanterie-Division" "Infanterie-Div. 'Jütland'" "232. Infanterie-Division" "Infanterie-Div. 'Woldenberg'" "236. Infanterie-Division" 
-		"249. Infanterie-Division" "Infanterie-Div. 'Mielau'" "281. Infanterie-Division" "303. Infanterie-Division" "Infanterie-Div. 'Döberitz'" "309. Infanterie-Division" "324. Infanterie-Division" "Infanterie-Div. 'Berlin'" "Infanterie-Div. 'Hamburg'" "703. Infanterie-Division" "719. Infanterie-Division" 
-		"Infanterie-Div. 'Potsdam'" "Infanterie-Div. 'Scharnhorst'" "Infanterie-Div. 'Ulrich v. Hutten'" "Infanterie-Div. 'Ferdinand v. Schill'" "Infanterie-Div. 'Ostpreußen'" "827. Infanterie-Division" "Infanterie-Div. 'Böhmen'" "Infanterie-Div. 'Breslau'" "Infanterie-Div. 'Demba'" "Infanterie-Div. 'Döllersheim'" "Infanterie-Div. 'Dresden'" 
-		"Infanterie-Div. 'Donau'" "Infanterie-Div. 'Fried. L. Jahn'" "Infanterie-Div. 'Generalgouvernement'" "Infanterie-Div. 'Grafenwöhr'" "Infanterie-Div. 'Groß Born'" "Infanterie-Div. 'Güstrow'" "Infanterie-Div. 'Hamburg'" "Infanterie-Div. 'Hannover'" "Infanterie-Div. 'Kurland'" "Infanterie-Div. 'Mähren'" "Infanterie-Div. 'Münsingen'" 
-		"Infanterie-Div. 'Neuhammer'" "Infanterie-Div. 'Schlesien'" "Infanterie-Div. 'Seeland'" "Infanterie-Div. 'Wahn'" "Infanterie-Div. 'Wildflecken'" 
-	}
+		"µ³ÎÀ¾üµÚ52±£°²Ê¦" "µ³ÎÀ¾üµÚ201±£°²Ê¦" "µ³ÎÀ¾üµÚ203±£°²Ê¦" "µ³ÎÀ¾üµÚ207±£°²Ê¦" "µ³ÎÀ¾üµÚ213±£°²Ê¦" "¹ú·À¾üµÚ355²½±øÊ¦" "µ³ÎÀ¾üµÚ221±£°²Ê¦" "¹ú·À¾üµÚ343²½±øÊ¦" 
+		"µ³ÎÀ¾üµÚ281±£°²Ê¦" "µ³ÎÀ¾üµÚ285±£°²Ê¦" "¹ú·À¾üµÚ347²½±øÊ¦" "µ³ÎÀ¾üµÚ286±£°²Ê¦" "µ³ÎÀ¾üµÚ325±£°²Ê¦" "µ³ÎÀ¾üµÚ400±£°²Ê¦" "µ³ÎÀ¾üµÚ390±£°²Ê¦" "µ³ÎÀ¾üµÚ391±£°²Ê¦" "¹ú·À¾üµÚ148Ô¤±¸ÒÛÊ¦" 
+		"µ³ÎÀ¾üµÚ403±£°²Ê¦" "µ³ÎÀ¾üµÚ444±£°²Ê¦" "¹ú·À¾üµÚ351²½±øÊ¦" "µ³ÎÀ¾üµÚ454±£°²Ê¦" "µ³ÎÀ¾üµÚ41±£°²Ê¦" "µ³ÎÀ¾üµÚ717±£°²Ê¦" "µ³ÎÀ¾üµÚ133±£°²Ê¦" 
+		"µ³ÎÀ¾üµÚ718±£°²Ê¦" "¹ú·À¾üµÚ353²½±øÊ¦" "µ³ÎÀ¾üµÚ719±£°²Ê¦" "µ³ÎÀ¾üµÚ402±£°²Ê¦" "µ³ÎÀ¾üµÚ720±£°²Ê¦" "µ³ÎÀ¾üµÚ721±£°²Ê¦" "¹ú·À¾üµÚ154Ô¤±¸ÒÛÊ¦" "µ³ÎÀ¾üµÚ722±£°²Ê¦" "µ³ÎÀ¾üµÚ723±£°²Ê¦" 
+		"µ³ÎÀ¾üµÚ724±£°²Ê¦" "¹ú·À¾üµÚ356²½±øÊ¦" "µ³ÎÀ¾üµÚ725±£°²Ê¦" "µ³ÎÀ¾üµÚ726±£°²Ê¦" "¹ú·À¾üµÚ357²½±øÊ¦" "µ³ÎÀ¾üµÚ727±£°²Ê¦" "¹ú·À¾üµÚ358²½±øÊ¦" "¹ú·À¾üµÚ359²½±øÊ¦" 
+		"µ³ÎÀ¾üµÚ856±£°²Ê¦" "µ³ÎÀ¾üµÚ859±£°²Ê¦" "¹ú·À¾üµÚ160Ô¤±¸ÒÛÊ¦" "µ³ÎÀ¾üµÚ877±£°²Ê¦" "µ³ÎÀ¾üµÚ735±£°²Ê¦" "¹ú·À¾üµÚ165Ô¤±¸ÒÛÊ¦" "µ³ÎÀ¾üµÚ812±£°²Ê¦" "µ³ÎÀ¾üµÚ895±£°²Ê¦" 
+		"¹ú·À¾üµÚ166Ô¤±¸ÒÛÊ¦" "µ³ÎÀ¾üµÚ742±£°²Ê¦" "¹ú·À¾üµÚ171Ô¤±¸ÒÛÊ¦" "µ³ÎÀ¾üµÚ785±£°²Ê¦" "¹ú·À¾üµÚ172Ô¤±¸ÒÛÊ¦" "¹ú·À¾üµÚ173Ô¤±¸ÒÛÊ¦" "¹ú·À¾üµÚ182Ô¤±¸ÒÛÊ¦" "¹ú·À¾üµÚ188Ô¤±¸ÒÛÊ¦" 
+		"¹ú·À¾üµÚ219²½±øÊ¦" "¹ú·À¾üµÚ226²½±øÊ¦" "¹ú·À¾üµÚ227²½±øÊ¦" "¹ú·À¾üµÚ232²½±øÊ¦" "¹ú·À¾üµÚ235²½±øÊ¦" "¹ú·À¾üµÚ236²½±øÊ¦" "¹ú·À¾üµÚ249²½±øÊ¦" "¹ú·À¾üµÚ262²½±øÊ¦" 
+		"¹ú·À¾üµÚ303²½±øÊ¦" "¹ú·À¾üµÚ305²½±øÊ¦" "¹ú·À¾üµÚ309²½±øÊ¦" "¹ú·À¾üµÚ324²½±øÊ¦" "¹ú·À¾üµÚ654²½±øÊ¦" "¹ú·À¾üµÚ703²½±øÊ¦" "¹ú·À¾üµÚ827²½±øÊ¦" "¹ú·À¾üµÚ192²½±øÊ¦" 
+		"¹ú·À¾üµÚ176²½±øÊ¦" "¹ú·À¾üµÚ180²½±øÊ¦" "¹ú·À¾üµÚ190²½±øÊ¦" "¹ú·À¾üµÚ202²½±øÊ¦" "¹ú·À¾üµÚ237²½±øÊ¦" "¹ú·À¾üµÚ286²½±øÊ¦" "¹ú·À¾üµÚ301²½±øÊ¦" "¹ú·À¾üµÚ462²½±øÊ¦" 
+		"¹ú·À¾üµÚ469²½±øÊ¦" "µ³ÎÀ¾ü'¼ªÀ¼'Ê¦" "µ³ÎÀ¾ü'ÎÖµÇ±¤'Ê¦" "µ³ÎÀ¾ü'Ã×Ò®Â³'Ê¦" "µ³ÎÀ¾ü'µÂÀ××È'Ê¦" "µ³ÎÀ¾ü'°ØÁÖ'Ê¦" "µ³ÎÀ¾ü'ºº±¤'Ê¦" "µ³ÎÀ¾ü'Î¬¾©'Ê¦" "µ³ÎÀ¾ü'¶«ÆÕÂ³Ê¿'Ê¦" 
+		"µ³ÎÀ¾ü'²¨´ÄÌ¹'Ê¦" "µ³ÎÀ¾ü'Ë¹¿²ºÀË¹'Ê¦" "µ³ÎÀ¾ü'ÎÚ¶ûÀû¿Ë'Ê¦" "µ³ÎÀ¾ü'ì³µÏÄÏ'Ê¦" "µ³ÎÀ¾ü'°ÂË¹ÌØÂåÆÖ'Ê¦" "µ³ÎÀ¾ü'²¨À¼'Ê¦" "µ³ÎÀ¾ü'²»À´Ã·'Ê¦" "µ³ÎÀ¾ü'²¼À×Ë¹Â³'Ê¦" 
+		"µ³ÎÀ¾ü'µÇ°Í'Ê¦" "µ³ÎÀ¾ü'µÂÀ×ÉªÄ·'Ê¦" "µ³ÎÀ¾ü'µÂÀÛË¹¶Ù'Ê¦" "µ³ÎÀ¾ü'¶àè§ºÓ'Ê¦" "µ³ÎÀ¾ü'¸¥À³µÂ'Ê¦" "µ³ÎÀ¾ü'ÔªË§¸®'Ê¦" "µ³ÎÀ¾ü'¸ñÀ­·Ò'Ê¦" "µ³ÎÀ¾ü'¸ñ¶û²¼À¼'Ê¦" 
+		"µ³ÎÀ¾ü'¸ñÂŞ¶û'Ê¦" "µ³ÎÀ¾ü'ºº±¤'Ê¦" "µ³ÎÀ¾ü'ººÅµÍş'Ê¦" "µ³ÎÀ¾ü'¿â¶ûÀ¼'Ê¦" "µ³ÎÀ¾ü'Ä¦Àâ'Ê¦" "µ³ÎÀ¾ü'ÂüĞÁôŞ'Ê¦" "µ³ÎÀ¾ü'Å¦ººÄ·'Ê¦" "µ³ÎÀ¾ü'Î÷ÀïÎ÷ÑÇ'Ê¦" "µ³ÎÀ¾ü'Î÷À¼'Ê¦" "µ³ÎÀ¾ü'ÍßÄ·'Ê¦" "µ³ÎÀ¾ü'»³ÌØ¸¥À¼¿Ï'Ê¦" 
+        }
 	hq_brigade = {
-		"1. Armee" "2. Armee" "3. Armee" "Heeresgruppe A" "4. Armee" "5. Armee" "6. Armee" "Heeresgruppe B" "7. Armee" "8. Armee" "9. Armee" 
-		"Heeresgruppe C" "10. Armee" "11. Armee" "12. Armee" "Heeresgruppe D" "14. Armee" "15. Armee" "16. Armee" "Heeresgruppe E" "17. Armee" "18. Armee" 
-		"19. Armee" "Heeresgruppe F" "21. Armee" "Heeresgruppe G" "24. Armee" "25. Armee" "Heeresgruppe H" 
+		"µÚ1¼¯ÍÅ¾üÖ¸»Ó²¿" "µÚ2¼¯ÍÅ¾üÖ¸»Ó²¿" "µÚ3¼¯ÍÅ¾üÖ¸»Ó²¿" "A¼¯ÍÅ¾üÈºË¾Áî²¿" "µÚ4¼¯ÍÅ¾üÖ¸»Ó²¿" "µÚ5¼¯ÍÅ¾üÖ¸»Ó²¿" "µÚ6¼¯ÍÅ¾üÖ¸»Ó²¿" "B¼¯ÍÅ¾üÈºË¾Áî²¿" "µÚ7¼¯ÍÅ¾üÖ¸»Ó²¿" "µÚ8¼¯ÍÅ¾üÖ¸»Ó²¿" "µÚ9¼¯ÍÅ¾üÖ¸»Ó²¿" 
+		"C¼¯ÍÅ¾üÈºË¾Áî²¿" "µÚ10¼¯ÍÅ¾üÖ¸»Ó²¿" "µÚ11¼¯ÍÅ¾üÖ¸»Ó²¿" "µÚ12¼¯ÍÅ¾üÖ¸»Ó²¿" "D¼¯ÍÅ¾üÈºË¾Áî²¿" "µÚ14¼¯ÍÅ¾üÖ¸»Ó²¿" "µÚ15¼¯ÍÅ¾üÖ¸»Ó²¿" "µÚ16¼¯ÍÅ¾üÖ¸»Ó²¿" "E¼¯ÍÅ¾üÈºË¾Áî²¿" "µÚ17¼¯ÍÅ¾üÖ¸»Ó²¿" "µÚ18¼¯ÍÅ¾üÖ¸»Ó²¿" 
+		"µÚ19¼¯ÍÅ¾üÖ¸»Ó²¿" "F¼¯ÍÅ¾üÈºË¾Áî²¿" "21¼¯ÍÅ¾üÖ¸»Ó²¿" "G¼¯ÍÅ¾üÈºË¾Áî²¿" "µÚ24¼¯ÍÅ¾üÖ¸»Ó²¿" "µÚ25¼¯ÍÅ¾üÖ¸»Ó²¿" "H¼¯ÍÅ¾üÈºË¾Áî²¿" 
 	}
 	militia_brigade = {
-		"1. Luftwaffen-Feld-Division" "2. Luftwaffen-Feld-Division" "3. Luftwaffen-Feld-Division" "4. Luftwaffen-Feld-Division" "5. Luftwaffen-Feld-Division" "6. Luftwaffen-Feld-Division" "7. Luftwaffen-Feld-Division" "8. Luftwaffen-Feld-Division" "9. Luftwaffen-Feld-Division" "10. Luftwaffen-Feld-Division" "6. Volksgrenadier Division" 
-		"9. Volksgrenadier Division" "12. Volksgrenadier Division" "16. Volksgrenadier Division" "18. Volksgrenadier Division" "19. Volksgrenadier Division" "22. Volksgrenadier Division" "26. Volksgrenadier Division" "31. Volksgrenadier Division" "36. Volksgrenadier Division" "45. Volksgrenadier Division" "47. Volksgrenadier Division" 
-		"62. Volksgrenadier Division" "78. Volks Sturm Division" "79. Volksgrenadier Division" "167. Volksgrenadier Division" "183. Volksgrenadier Division" "211. Volksgrenadier Division" "212. Volksgrenadier Division" "246. Volksgrenadier Division" "256. Volksgrenadier Division" "257. Volksgrenadier Division" "271. Volksgrenadier Division" 
-		"272. Volksgrenadier Division" "276. Volksgrenadier Division" "277. Volksgrenadier Division" "320. Volksgrenadier Division" "326. Volksgrenadier Division" "337. Volksgrenadier Division" "340. Volksgrenadier Division" "347. Volksgrenadier Division" "349. Volksgrenadier Division" "352. Volksgrenadier Division" "361. Volksgrenadier Division" 
-		"363. Volksgrenadier Division" "462. Volksgrenadier Division" "541. Volksgrenadier Division" "542. Volksgrenadier Division" "544. Volksgrenadier Division" "545. Volksgrenadier Division" "547. Volksgrenadier Division" "548. Volksgrenadier Division" "549. Volksgrenadier Division" "551. Volksgrenadier Division" "553. Volksgrenadier Division" 
-		"558. Volksgrenadier Division" "559. Volksgrenadier Division" "560. Volksgrenadier Division" "561. Volksgrenadier Division" "562. Volksgrenadier Division" "563. Volksgrenadier Division" "565. Volksgrenadier Division" "566. Volksgrenadier Division" "567. Volksgrenadier Division" "568. Volksgrenadier Division" "569. Volksgrenadier Division" 
-		"570. Volksgrenadier Division" "571. Volksgrenadier Division" "572. Volksgrenadier Division" "573. Volksgrenadier Division" "574. Volksgrenadier Division" "575. Volksgrenadier Division" "576. Volksgrenadier Division" "577. Volksgrenadier Division" "578. Volksgrenadier Division" "579. Volksgrenadier Division" "580. Volksgrenadier Division" 
-		"581. Volksgrenadier Division" "582. Volksgrenadier Division" "583. Volksgrenadier Division" "584. Volksgrenadier Division" "585. Volksgrenadier Division" "586. Volksgrenadier Division" "587. Volksgrenadier Division" "588. Volksgrenadier Division" "708. Volksgrenadier Division" 
+		"µ³ÎÀ¾üµÚ1¿Õ¾üÒ°Õ½Ê¦" "µ³ÎÀ¾üµÚ2¿Õ¾üÒ°Õ½Ê¦" "µ³ÎÀ¾üµÚ3¿Õ¾üÒ°Õ½Ê¦" "µ³ÎÀ¾üµÚ4¿Õ¾üÒ°Õ½Ê¦" "µ³ÎÀ¾üµÚ5¿Õ¾üÒ°Õ½Ê¦" "µ³ÎÀ¾üµÚ6¿Õ¾üÒ°Õ½Ê¦" "µ³ÎÀ¾üµÚ7¿Õ¾üÒ°Õ½Ê¦" "µ³ÎÀ¾üµÚ8¿Õ¾üÒ°Õ½Ê¦" "µ³ÎÀ¾üµÚ9¿Õ¾üÒ°Õ½Ê¦" "µ³ÎÀ¾üµÚ10¿Õ¾üÒ°Õ½Ê¦" "µ³ÎÀ¾üµÚ6ÈËÃñÍ»»÷Ê¦" 
+		"µ³ÎÀ¾üµÚ9ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ12ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ16ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ18ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ19ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ22ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ26ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ31ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ36ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ45ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ47ÈËÃñÍ»»÷Ê¦" 
+		"µ³ÎÀ¾üµÚ62ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ78ÎÖ¶û¿ËÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ79ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ167ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ183ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ211ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ212ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ246ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ256ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ257ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ271ÈËÃñÍ»»÷Ê¦" 
+		"µ³ÎÀ¾üµÚ272ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ276ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ277ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ320ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ326ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ337ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ340ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ347ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ349ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ352ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ361ÈËÃñÍ»»÷Ê¦" 
+		"µ³ÎÀ¾üµÚ363ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ462ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ541ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ542ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ544ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ545ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ547ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ548ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ549ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ551ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ553ÈËÃñÍ»»÷Ê¦" 
+		"µ³ÎÀ¾üµÚ558ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ559ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ560ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ561ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ562ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ563ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ565ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ566ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ567ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ568ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ569ÈËÃñÍ»»÷Ê¦" 
+		"µ³ÎÀ¾üµÚ570ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ571ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ572ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ573ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ574ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ575ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ576ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ577ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ578ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ579ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ580ÈËÃñÍ»»÷Ê¦" 
+		"µ³ÎÀ¾üµÚ581ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ582ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ583ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ584ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ585ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ586ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ587ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ588ÈËÃñÍ»»÷Ê¦" "µ³ÎÀ¾üµÚ708ÈËÃñÍ»»÷Ê¦" 
 	}
 	multi_role = {
-		"JG 2 'Richthofen'" "JG 3 'Udet'" "JG 26 'Schlageter'" "JG 53 'Pik As'" "Jagdgeschwader 20" "Jagdgeschwader 21" "Jagdgeschwader 70" "Jagdgeschwader 71" "Jagdgeschwader 72" "Jagdgeschwader 52" "JG 77 'Herz As'" 
-		"Jagdgeschwader 27" "Jagdgeschwader 433" "JG 51 'Mölders'" "JG 1 'Oesau'" "JG 54 'Grünherz'" "Jagdgeschwader 28" "JG 5 'Eismeer'" "JG 7 'Nowotny'" "Jagdgeschwader 103" "Jagdgeschwader 101" "Jagdgeschwader 107" 
-		"Jagdgeschwader 102" "Jagdgeschwader 105" "Jagdgeschwader 104" "Jagdgeschwader 106" "Jagdgeschwader 11" "Jagdgeschwader 300" "Jagdgeschwader 50" "Jagdgeschwader 108" "Jagdgeschwader 25" "Jagdgeschwader 301" "Jagdgeschwader 110" 
-		"Jagdgeschwader 302" "Jagdgeschwader zbV" "Jagdgeschwader 109" "Jagdgeschwader 4" "JG 6 'Horst Wessel'" "Jagdgeschwader 112" "Jagdgeschwader 113" "Jagdgeschwader 111" "Jagdgeschwader 76" "Jagdgeschwader 117" "Jagdgeschwader 114" 
-		"Jagdgeschwader 115" "Jagdgeschwader 116" "Jagdgeschwader 400" "Jagdgeschwader 401" "Jagdgeschwader 402" "Jagdgeschwader 403" "Jagdgeschwader 404" "Jagdgeschwader 405" "Jagdgeschwader 406" "Jagdgeschwader 407" "Jagdgeschwader 408" 
-		"Jagdgeschwader 409" "Jagdgeschwader 410" "Jagdgeschwader 411" "Jagdgeschwader 412" "Jagdgeschwader 413" "Jagdgeschwader 414" "Jagdgeschwader 415" "Jagdgeschwader 416" "Jagdgeschwader 417" "Jagdgeschwader 418" "Jagdgeschwader 419" 
-		"Jagdgeschwader 420" "Jagdgeschwader 421" "Jagdgeschwader 422" "Jagdgeschwader 423" "Jagdgeschwader 424" "Jagdgeschwader 425" "Jagdgeschwader 426" "Jagdgeschwader 427" "Jagdgeschwader 428" "Jagdgeschwader 429" "Jagdgeschwader 430" 
-		"Jagdgeschwader 431" "Jagdgeschwader 441" "Jagdgeschwader 451" "Jagdgeschwader 461" "Jagdgeschwader 471" "Jagdgeschwader 481" "Jagdgeschwader 491" "Jagdgeschwader 501" "Jagdgeschwader 511" "Jagdgeschwader 521" 
+		"µÚ2'ÀïÏ£ÌØ»ô·Ò'Õ½¶·º½¿ÕÍÅ" "µÚ3'ÎÚµÂÌØ'Õ½¶·º½¿ÕÍÅ'" "µÚ26'Ê©À­¸ñÌØ'Õ½¶·º½¿ÕÍÅ" "µÚ53'ºÚÌÒ'Õ½¶·º½¿ÕÍÅ" "Í¨ÓÃ´ó¶Ó20" "Í¨ÓÃ´ó¶Ó21" "Í¨ÓÃ´ó¶Ó70" "Í¨ÓÃ´ó¶Ó71" "Í¨ÓÃ´ó¶Ó72" "Í¨ÓÃ´ó¶Ó52" "µÚ77'ºìĞÄ'Õ½¶·º½¿ÕÍÅ" 
+		"Í¨ÓÃ´ó¶Ó27" "Í¨ÓÃ´ó¶Ó433" "µÚ51'ÄªµÂË¹'Õ½¶·º½¿ÕÍÅ" "µÚ1'ÓàÉÜ'Õ½¶·º½¿ÕÍÅ" "µÚ54'ÂÌĞÄ'Õ½¶·º½¿ÕÍÅ" "Í¨ÓÃ´ó¶Ó28" "µÚ5'±±±ùÑó'Õ½¶·º½¿ÕÍÅ" "µÚ7'ÅµÎÖÌØÄá'Õ½¶·º½¿ÕÍÅ" "Í¨ÓÃ´ó¶Ó103" "Í¨ÓÃ´ó¶Ó101" "Í¨ÓÃ´ó¶Ó107" 
+		"Í¨ÓÃ´ó¶Ó102" "Í¨ÓÃ´ó¶Ó105" "Í¨ÓÃ´ó¶Ó104" "Í¨ÓÃ´ó¶Ó106" "Í¨ÓÃ´ó¶Ó11" "Í¨ÓÃ´ó¶Ó300" "Í¨ÓÃ´ó¶Ó50" "Í¨ÓÃ´ó¶Ó108" "Í¨ÓÃ´ó¶Ó25" "Í¨ÓÃ´ó¶Ó301" "Í¨ÓÃ´ó¶Ó110" 
+		"Í¨ÓÃ´ó¶Ó302" "Í¨ÓÃ´ó¶ÓzbV" "Í¨ÓÃ´ó¶Ó109" "Í¨ÓÃ´ó¶Ó4" "µÚ6'»ô¶ûË¹ÌØ¡¤ÍşÈû¶û'Õ½¶·º½¿ÕÍÅ" "Í¨ÓÃ´ó¶Ó112" "Í¨ÓÃ´ó¶Ó113" "Í¨ÓÃ´ó¶Ó111" "Í¨ÓÃ´ó¶Ó76" "Í¨ÓÃ´ó¶Ó117" "Í¨ÓÃ´ó¶Ó114" 
+		"Í¨ÓÃ´ó¶Ó115" "Í¨ÓÃ´ó¶Ó116" "Í¨ÓÃ´ó¶Ó400" "Í¨ÓÃ´ó¶Ó401" "Í¨ÓÃ´ó¶Ó402" "Í¨ÓÃ´ó¶Ó403" "Í¨ÓÃ´ó¶Ó404" "Í¨ÓÃ´ó¶Ó405" "Í¨ÓÃ´ó¶Ó406" "Í¨ÓÃ´ó¶Ó407" "Í¨ÓÃ´ó¶Ó408" 
+		"Í¨ÓÃ´ó¶Ó409" "Í¨ÓÃ´ó¶Ó410" "Í¨ÓÃ´ó¶Ó411" "Í¨ÓÃ´ó¶Ó412" "Í¨ÓÃ´ó¶Ó413" "Í¨ÓÃ´ó¶Ó414" "Í¨ÓÃ´ó¶Ó415" "Í¨ÓÃ´ó¶Ó416" "Í¨ÓÃ´ó¶Ó417" "Í¨ÓÃ´ó¶Ó418" "Í¨ÓÃ´ó¶Ó419" 
+		"Í¨ÓÃ´ó¶Ó420" "Í¨ÓÃ´ó¶Ó421" "Í¨ÓÃ´ó¶Ó422" "Í¨ÓÃ´ó¶Ó423" "Í¨ÓÃ´ó¶Ó424" "Í¨ÓÃ´ó¶Ó425" "Í¨ÓÃ´ó¶Ó426" "Í¨ÓÃ´ó¶Ó427" "Í¨ÓÃ´ó¶Ó428" "Í¨ÓÃ´ó¶Ó429" "Í¨ÓÃ´ó¶Ó430" 
+		"Í¨ÓÃ´ó¶Ó431" "Í¨ÓÃ´ó¶Ó441" "Í¨ÓÃ´ó¶Ó451" "Í¨ÓÃ´ó¶Ó461" "Í¨ÓÃ´ó¶Ó471" "Í¨ÓÃ´ó¶Ó481" "Í¨ÓÃ´ó¶Ó491" "Í¨ÓÃ´ó¶Ó501" "Í¨ÓÃ´ó¶Ó511" "Í¨ÓÃ´ó¶Ó521" 
 	}
 	interceptor = {
-		"JG 2 'Richthofen'" "JG 3 'Udet'" "JG 26 'Schlageter'" "JG 53 'Pik As'" "Jagdgeschwader 20" "Jagdgeschwader 21" "Jagdgeschwader 70" "Jagdgeschwader 71" "Jagdgeschwader 72" "Jagdgeschwader 52" "JG 77 'Herz As'" 
-		"Jagdgeschwader 27" "Jagdgeschwader 433" "JG 51 'Mölders'" "JG 1 'Oesau'" "JG 54 'Grünherz'" "Jagdgeschwader 28" "JG 5 'Eismeer'" "JG 7 'Nowotny'" "Jagdgeschwader 103" "Jagdgeschwader 101" "Jagdgeschwader 107" 
-		"Jagdgeschwader 102" "Jagdgeschwader 105" "Jagdgeschwader 104" "Jagdgeschwader 106" "Jagdgeschwader 11" "Jagdgeschwader 300" "Jagdgeschwader 50" "Jagdgeschwader 108" "Jagdgeschwader 25" "Jagdgeschwader 301" "Jagdgeschwader 110" 
-		"Jagdgeschwader 302" "Jagdgeschwader zbV" "Jagdgeschwader 109" "Jagdgeschwader 4" "JG 6 'Horst Wessel'" "Jagdgeschwader 112" "Jagdgeschwader 113" "Jagdgeschwader 111" "Jagdgeschwader 76" "Jagdgeschwader 117" "Jagdgeschwader 114" 
-		"Jagdgeschwader 115" "Jagdgeschwader 116" "Jagdgeschwader 400" "Jagdgeschwader 401" "Jagdgeschwader 402" "Jagdgeschwader 403" "Jagdgeschwader 404" "Jagdgeschwader 405" "Jagdgeschwader 406" "Jagdgeschwader 407" "Jagdgeschwader 408" 
-		"Jagdgeschwader 409" "Jagdgeschwader 410" "Jagdgeschwader 411" "Jagdgeschwader 412" "Jagdgeschwader 413" "Jagdgeschwader 414" "Jagdgeschwader 415" "Jagdgeschwader 416" "Jagdgeschwader 417" "Jagdgeschwader 418" "Jagdgeschwader 419" 
-		"Jagdgeschwader 420" "Jagdgeschwader 421" "Jagdgeschwader 422" "Jagdgeschwader 423" "Jagdgeschwader 424" "Jagdgeschwader 425" "Jagdgeschwader 426" "Jagdgeschwader 427" "Jagdgeschwader 428" "Jagdgeschwader 429" "Jagdgeschwader 430" 
-		"Jagdgeschwader 431" "Jagdgeschwader 441" "Jagdgeschwader 451" "Jagdgeschwader 461" "Jagdgeschwader 471" "Jagdgeschwader 481" "Jagdgeschwader 491" "Jagdgeschwader 501" "Jagdgeschwader 511" "Jagdgeschwader 521" 
-	}
-	jet_int = {
-		"JG 2 'Richthofen'" "JG 3 'Udet'" "JG 26 'Schlageter'" "JG 53 'Pik As'" "Jagdgeschwader 20" "Jagdgeschwader 21" "Jagdgeschwader 70" "Jagdgeschwader 71" "Jagdgeschwader 72" "Jagdgeschwader 52" "JG 77 'Herz As'" 
-		"Jagdgeschwader 27" "Jagdgeschwader 433" "JG 51 'Mölders'" "JG 1 'Oesau'" "JG 54 'Grünherz'" "Jagdgeschwader 28" "JG 5 'Eismeer'" "JG 7 'Nowotny'" "Jagdgeschwader 103" "Jagdgeschwader 101" "Jagdgeschwader 107" 
-		"Jagdgeschwader 102" "Jagdgeschwader 105" "Jagdgeschwader 104" "Jagdgeschwader 106" "Jagdgeschwader 11" "Jagdgeschwader 300" "Jagdgeschwader 50" "Jagdgeschwader 108" "Jagdgeschwader 25" "Jagdgeschwader 301" "Jagdgeschwader 110" 
-		"Jagdgeschwader 302" "Jagdgeschwader zbV" "Jagdgeschwader 109" "Jagdgeschwader 4" "JG 6 'Horst Wessel'" "Jagdgeschwader 112" "Jagdgeschwader 113" "Jagdgeschwader 111" "Jagdgeschwader 76" "Jagdgeschwader 117" "Jagdgeschwader 114" 
-		"Jagdgeschwader 115" "Jagdgeschwader 116" "Jagdgeschwader 400" "Jagdgeschwader 401" "Jagdgeschwader 402" "Jagdgeschwader 403" "Jagdgeschwader 404" "Jagdgeschwader 405" "Jagdgeschwader 406" "Jagdgeschwader 407" "Jagdgeschwader 408" 
-		"Jagdgeschwader 409" "Jagdgeschwader 410" "Jagdgeschwader 411" "Jagdgeschwader 412" "Jagdgeschwader 413" "Jagdgeschwader 414" "Jagdgeschwader 415" "Jagdgeschwader 416" "Jagdgeschwader 417" "Jagdgeschwader 418" "Jagdgeschwader 419" 
-		"Jagdgeschwader 420" "Jagdgeschwader 421" "Jagdgeschwader 422" "Jagdgeschwader 423" "Jagdgeschwader 424" "Jagdgeschwader 425" "Jagdgeschwader 426" "Jagdgeschwader 427" "Jagdgeschwader 428" "Jagdgeschwader 429" "Jagdgeschwader 430" 
-		"Jagdgeschwader 431" "Jagdgeschwader 441" "Jagdgeschwader 451" "Jagdgeschwader 461" "Jagdgeschwader 471" "Jagdgeschwader 481" "Jagdgeschwader 491" "Jagdgeschwader 501" "Jagdgeschwader 511" "Jagdgeschwader 521" 
-	}
-	jet_mr = {
-		"JG 2 'Richthofen'" "JG 3 'Udet'" "JG 26 'Schlageter'" "JG 53 'Pik As'" "Jagdgeschwader 20" "Jagdgeschwader 21" "Jagdgeschwader 70" "Jagdgeschwader 71" "Jagdgeschwader 72" "Jagdgeschwader 52" "JG 77 'Herz As'" 
-		"Jagdgeschwader 27" "Jagdgeschwader 433" "JG 51 'Mölders'" "JG 1 'Oesau'" "JG 54 'Grünherz'" "Jagdgeschwader 28" "JG 5 'Eismeer'" "JG 7 'Nowotny'" "Jagdgeschwader 103" "Jagdgeschwader 101" "Jagdgeschwader 107" 
-		"Jagdgeschwader 102" "Jagdgeschwader 105" "Jagdgeschwader 104" "Jagdgeschwader 106" "Jagdgeschwader 11" "Jagdgeschwader 300" "Jagdgeschwader 50" "Jagdgeschwader 108" "Jagdgeschwader 25" "Jagdgeschwader 301" "Jagdgeschwader 110" 
-		"Jagdgeschwader 302" "Jagdgeschwader zbV" "Jagdgeschwader 109" "Jagdgeschwader 4" "JG 6 'Horst Wessel'" "Jagdgeschwader 112" "Jagdgeschwader 113" "Jagdgeschwader 111" "Jagdgeschwader 76" "Jagdgeschwader 117" "Jagdgeschwader 114" 
-		"Jagdgeschwader 115" "Jagdgeschwader 116" "Jagdgeschwader 400" "Jagdgeschwader 401" "Jagdgeschwader 402" "Jagdgeschwader 403" "Jagdgeschwader 404" "Jagdgeschwader 405" "Jagdgeschwader 406" "Jagdgeschwader 407" "Jagdgeschwader 408" 
-		"Jagdgeschwader 409" "Jagdgeschwader 410" "Jagdgeschwader 411" "Jagdgeschwader 412" "Jagdgeschwader 413" "Jagdgeschwader 414" "Jagdgeschwader 415" "Jagdgeschwader 416" "Jagdgeschwader 417" "Jagdgeschwader 418" "Jagdgeschwader 419" 
-		"Jagdgeschwader 420" "Jagdgeschwader 421" "Jagdgeschwader 422" "Jagdgeschwader 423" "Jagdgeschwader 424" "Jagdgeschwader 425" "Jagdgeschwader 426" "Jagdgeschwader 427" "Jagdgeschwader 428" "Jagdgeschwader 429" "Jagdgeschwader 430" 
-		"Jagdgeschwader 431" "Jagdgeschwader 441" "Jagdgeschwader 451" "Jagdgeschwader 461" "Jagdgeschwader 471" "Jagdgeschwader 481" "Jagdgeschwader 491" "Jagdgeschwader 501" "Jagdgeschwader 511" "Jagdgeschwader 521" 
+		"µÚ2'ÀïÏ£ÌØ»ô·Ò'Õ½¶·º½¿ÕÍÅ" "µÚ3'ÎÚµÂÌØ'Õ½¶·º½¿ÕÍÅ'" "µÚ26'Ê©À­¸ñÌØ'Õ½¶·º½¿ÕÍÅ" "µÚ53'ºÚÌÒ'Õ½¶·º½¿ÕÍÅ" "Í¨ÓÃ´ó¶Ó20" "Í¨ÓÃ´ó¶Ó21" "Í¨ÓÃ´ó¶Ó70" "Í¨ÓÃ´ó¶Ó71" "Í¨ÓÃ´ó¶Ó72" "Í¨ÓÃ´ó¶Ó52" "µÚ77'ºìĞÄ'Õ½¶·º½¿ÕÍÅ" 
+		"½Ø»÷»ú´ó¶Ó27" "½Ø»÷»ú´ó¶Ó433" "µÚ51'ÄªµÂË¹'Õ½¶·º½¿ÕÍÅ" "µÚ1'ÓàÉÜ'Õ½¶·º½¿ÕÍÅ" "µÚ54'ÂÌĞÄ'Õ½¶·º½¿ÕÍÅ" "½Ø»÷»ú´ó¶Ó28" "µÚ5'±±±ùÑó'Õ½¶·º½¿ÕÍÅ" "µÚ7'ÅµÎÖÌØÄá'Õ½¶·º½¿ÕÍÅ" "½Ø»÷»ú´ó¶Ó103" "½Ø»÷»ú´ó¶Ó101" "½Ø»÷»ú´ó¶Ó107" 
+		"½Ø»÷»ú´ó¶Ó102" "½Ø»÷»ú´ó¶Ó105" "½Ø»÷»ú´ó¶Ó104" "½Ø»÷»ú´ó¶Ó106" "½Ø»÷»ú´ó¶Ó11" "½Ø»÷»ú´ó¶Ó300" "½Ø»÷»ú´ó¶Ó50" "½Ø»÷»ú´ó¶Ó108" "½Ø»÷»ú´ó¶Ó25" "½Ø»÷»ú´ó¶Ó301" "½Ø»÷»ú´ó¶Ó110" 
+		"½Ø»÷»ú´ó¶Ó302" "½Ø»÷»ú´ó¶ÓzbV" "½Ø»÷»ú´ó¶Ó109" "½Ø»÷»ú´ó¶Ó4" "µÚ6'»ô¶ûË¹ÌØ¡¤ÍşÈû¶û'Õ½¶·º½¿ÕÍÅ" "½Ø»÷»ú´ó¶Ó112" "½Ø»÷»ú´ó¶Ó113" "½Ø»÷»ú´ó¶Ó111" "½Ø»÷»ú´ó¶Ó76" "½Ø»÷»ú´ó¶Ó117" "½Ø»÷»ú´ó¶Ó114" 
+		"½Ø»÷»ú´ó¶Ó115" "½Ø»÷»ú´ó¶Ó116" "½Ø»÷»ú´ó¶Ó400" "½Ø»÷»ú´ó¶Ó401" "½Ø»÷»ú´ó¶Ó402" "½Ø»÷»ú´ó¶Ó403" "½Ø»÷»ú´ó¶Ó404" "½Ø»÷»ú´ó¶Ó405" "½Ø»÷»ú´ó¶Ó406" "½Ø»÷»ú´ó¶Ó407" "½Ø»÷»ú´ó¶Ó408" 
+		"½Ø»÷»ú´ó¶Ó409" "½Ø»÷»ú´ó¶Ó410" "½Ø»÷»ú´ó¶Ó411" "½Ø»÷»ú´ó¶Ó412" "½Ø»÷»ú´ó¶Ó413" "½Ø»÷»ú´ó¶Ó414" "½Ø»÷»ú´ó¶Ó415" "½Ø»÷»ú´ó¶Ó416" "½Ø»÷»ú´ó¶Ó417" "½Ø»÷»ú´ó¶Ó418" "½Ø»÷»ú´ó¶Ó419" 
+		"½Ø»÷»ú´ó¶Ó420" "½Ø»÷»ú´ó¶Ó421" "½Ø»÷»ú´ó¶Ó422" "½Ø»÷»ú´ó¶Ó423" "½Ø»÷»ú´ó¶Ó424" "½Ø»÷»ú´ó¶Ó425" "½Ø»÷»ú´ó¶Ó426" "½Ø»÷»ú´ó¶Ó427" "½Ø»÷»ú´ó¶Ó428" "½Ø»÷»ú´ó¶Ó429" "½Ø»÷»ú´ó¶Ó430" 
+		"½Ø»÷»ú´ó¶Ó431" "½Ø»÷»ú´ó¶Ó441" "½Ø»÷»ú´ó¶Ó451" "½Ø»÷»ú´ó¶Ó461" "½Ø»÷»ú´ó¶Ó471" "½Ø»÷»ú´ó¶Ó481" "½Ø»÷»ú´ó¶Ó491" "½Ø»÷»ú´ó¶Ó501" "½Ø»÷»ú´ó¶Ó511" "½Ø»÷»ú´ó¶Ó521" 
 	}
 	strategic_bomber = {
-		"KG 1 'Hindenburg'" "KG 4 'General Wever'" "KG 26 'Löwen'" "KG 27 'Boelcke'" "Kampfgeschwader 28" "KG 51 'Edelweiß'" "KG 53 'Legion Condor'" "KG 54 'Totenkopf'" "KG 55 'Greif'" "Kampfgeschwader 100" "Kampfgeschwader 6" 
-		"Ergänzungskampfgruppe 2" "Ergänzungskampfgruppe 3" "Ergänzungskampfgruppe 4" "Ergänzungskampfgruppe 5" "Ergänzungskampfgruppe 6" "Kampfgeschwader 103" "Kampfgeschwader 104" "Kampfgeschwader 105" "Kampfgeschwader 106" "Kampfgeschwader 107" "Kampfgeschwader 108" 
-		"Kampfgeschwader 109" "Kampfgeschwader 110" "Kampfgeschwader 111" "Kampfgeschwader 112" "Kampfgeschwader 113" "Kampfgeschwader 114" "Kampfgeschwader 115" "Kampfgeschwader 116" "Kampfgeschwader 117" "Kampfgeschwader 118" "Kampfgeschwader 119" 
-		"Kampfgeschwader 120" "Kampfgeschwader 121" "Kampfgeschwader 122" "Kampfgeschwader 123" "Kampfgeschwader 124" "Kampfgeschwader 125" "Kampfgeschwader 126" "Kampfgeschwader 127" "Kampfgeschwader 128" "Kampfgeschwader 129" "Kampfgeschwader 130" 
-		"Kampfgeschwader 131" "Kampfgeschwader 132" "Kampfgeschwader 133" "Kampfgeschwader 134" "Kampfgeschwader 135" "Kampfgeschwader 136" "Kampfgeschwader 137" "Kampfgeschwader 138" "Kampfgeschwader 139" "Kampfgeschwader 140" "Kampfgeschwader 141" 
-		"Kampfgeschwader 142" "Kampfgeschwader 143" "Kampfgeschwader 144" 
+		"µÚ1'º£µÇ±¤'ºäÕ¨º½¿ÕÍÅ" "µÚ4'Î¬¸£½«¾ü'ºäÕ¨º½¿ÕÍÅ" "µÚ26'Ê¨×Ó'ºäÕ¨º½¿ÕÍÅ" "µÚ27'²¼¶û¿Æ'ºäÕ¨º½¿ÕÍÅ" "Õ½ÂÔºäÕ¨»ú´ó¶Ó28" "µÚ51'°£µÂÎ¬'ºäÕ¨º½¿ÕÍÅ" "µÚ53'ÍºÓ¥¾üÍÅ'ºäÕ¨º½¿ÕÍÅ" "µÚ54'÷¼÷Ã'ºäÕ¨º½¿ÕÍÅ" "µÚ55'Ê¨Í·Ó¥'ºäÕ¨º½¿ÕÍÅ" "Õ½ÂÔºäÕ¨»ú´ó¶Ó100" "Õ½ÂÔºäÕ¨»ú´ó¶Ó6" 
+		"µÚ2ÑµÁ·´ó¶Ó" "µÚ3ÑµÁ·´ó¶Ó" "µÚ4ÑµÁ·´ó¶Ó" "µÚ5ÑµÁ·´ó¶Ó" "µÚ62ÑµÁ·´ó¶Ó" "Õ½ÂÔºäÕ¨»ú´ó¶Ó103" "Õ½ÂÔºäÕ¨»ú´ó¶Ó104" "Õ½ÂÔºäÕ¨»ú´ó¶Ó105" "Õ½ÂÔºäÕ¨»ú´ó¶Ó106" "Õ½ÂÔºäÕ¨»ú´ó¶Ó107" "Õ½ÂÔºäÕ¨»ú´ó¶Ó108" 
+		"Õ½ÂÔºäÕ¨»ú´ó¶Ó109" "Õ½ÂÔºäÕ¨»ú´ó¶Ó110" "Õ½ÂÔºäÕ¨»ú´ó¶Ó111" "Õ½ÂÔºäÕ¨»ú´ó¶Ó112" "Õ½ÂÔºäÕ¨»ú´ó¶Ó113" "Õ½ÂÔºäÕ¨»ú´ó¶Ó114" "Õ½ÂÔºäÕ¨»ú´ó¶Ó115" "Õ½ÂÔºäÕ¨»ú´ó¶Ó116" "Õ½ÂÔºäÕ¨»ú´ó¶Ó117" "Õ½ÂÔºäÕ¨»ú´ó¶Ó118" "Õ½ÂÔºäÕ¨»ú´ó¶Ó119" 
+		"Õ½ÂÔºäÕ¨»ú´ó¶Ó120" "Õ½ÂÔºäÕ¨»ú´ó¶Ó121" "Õ½ÂÔºäÕ¨»ú´ó¶Ó122" "Õ½ÂÔºäÕ¨»ú´ó¶Ó123" "Õ½ÂÔºäÕ¨»ú´ó¶Ó124" "Õ½ÂÔºäÕ¨»ú´ó¶Ó125" "Õ½ÂÔºäÕ¨»ú´ó¶Ó126" "Õ½ÂÔºäÕ¨»ú´ó¶Ó127" "Õ½ÂÔºäÕ¨»ú´ó¶Ó128" "Õ½ÂÔºäÕ¨»ú´ó¶Ó129" "Õ½ÂÔºäÕ¨»ú´ó¶Ó130" 
+		"Õ½ÂÔºäÕ¨»ú´ó¶Ó131" "Õ½ÂÔºäÕ¨»ú´ó¶Ó132" "Õ½ÂÔºäÕ¨»ú´ó¶Ó133" "Õ½ÂÔºäÕ¨»ú´ó¶Ó134" "Õ½ÂÔºäÕ¨»ú´ó¶Ó135" "Õ½ÂÔºäÕ¨»ú´ó¶Ó136" "Õ½ÂÔºäÕ¨»ú´ó¶Ó137" "Õ½ÂÔºäÕ¨»ú´ó¶Ó138" "Õ½ÂÔºäÕ¨»ú´ó¶Ó139" "Õ½ÂÔºäÕ¨»ú´ó¶Ó140" "Õ½ÂÔºäÕ¨»ú´ó¶Ó141" 
+		"Õ½ÂÔºäÕ¨»ú´ó¶Ó142" "Õ½ÂÔºäÕ¨»ú´ó¶Ó143" "Õ½ÂÔºäÕ¨»ú´ó¶Ó144" 
 	}
 	tactical_bomber = {
-		"KG 2 'Holzhammer'" "KG 3 'Blitz'" "Kampfgeschwader 25" "KG 30 'Adler'" "KG 1 'Hindenburg'" "KG 4 'General Wever'" "KG 26 'Löwen'" "KG 27 'Boelcke'" "Kampfgeschwader 28" "KG 51 'Edelweiß'" "KG 53 'Legion Condor'" 
-		"KG 54 'Totenkopf'" "KG 55 'Greif'" "Kampfgeschwader 50" "Kampfgeschwader 40" "Kampfgeschwader 76" "Kampfgeschwader 77" "Kampfgeschwader 60" "Kampfgeschwader 101" "Kampfgeschwader 102" "Kampfgeschwader 66" "Kampfgeschwader 200" 
-		"Kampfgeschwader 201" "Kampfgeschwader 202" "Kampfgeschwader 203" "Kampfgeschwader 204" "Kampfgeschwader 205" "Kampfgeschwader 206" "Kampfgeschwader 207" "Kampfgeschwader 208" "Kampfgeschwader 209" "Kampfgeschwader 210" "Kampfgeschwader 211" 
-		"Kampfgeschwader 212" "Kampfgeschwader 213" "Kampfgeschwader 214" "Kampfgeschwader 215" "Kampfgeschwader 216" "Kampfgeschwader 217" "Kampfgeschwader 218" "Kampfgeschwader 219" "Kampfgeschwader 220" "Kampfgeschwader 221" 
-	}
-	jet_bomber = {
-		"KG 2 'Holzhammer'" "KG 3 'Blitz'" "Kampfgeschwader 25" "KG 30 'Adler'" "KG 1 'Hindenburg'" "KG 4 'General Wever'" "KG 26 'Löwen'" "KG 27 'Boelcke'" "Kampfgeschwader 28" "KG 51 'Edelweiß'" "KG 53 'Legion Condor'" 
-		"KG 54 'Totenkopf'" "KG 55 'Greif'" "Kampfgeschwader 50" "Kampfgeschwader 40" "Kampfgeschwader 76" "Kampfgeschwader 77" "Kampfgeschwader 60" "Kampfgeschwader 101" "Kampfgeschwader 102" "Kampfgeschwader 66" "Kampfgeschwader 200" 
-		"Kampfgeschwader 201" "Kampfgeschwader 202" "Kampfgeschwader 203" "Kampfgeschwader 204" "Kampfgeschwader 205" "Kampfgeschwader 206" "Kampfgeschwader 207" "Kampfgeschwader 208" "Kampfgeschwader 209" "Kampfgeschwader 210" "Kampfgeschwader 211" 
-		"Kampfgeschwader 212" "Kampfgeschwader 213" "Kampfgeschwader 214" "Kampfgeschwader 215" "Kampfgeschwader 216" "Kampfgeschwader 217" "Kampfgeschwader 218" "Kampfgeschwader 219" "Kampfgeschwader 220" "Kampfgeschwader 221" 
+		"µÚ2'Ìú´¸'ºäÕ¨º½¿ÕÍÅ" "µÚ3'ÉÁµç'ºäÕ¨º½¿ÕÍÅ" "µÚ25ÌØ±ğºäÕ¨º½¿ÕÍÅ" "µÚ30'ÀÏÓ¥'ºäÕ¨º½¿ÕÍÅ" "µÚ1'º£µÇ±¤'ºäÕ¨º½¿ÕÍÅ" "µÚ4'Î¬¸£½«¾ü'ºäÕ¨º½¿ÕÍÅ" "µÚ26'Ê¨×Ó'ºäÕ¨º½¿ÕÍÅ'" "µÚ27'²¼¶û¿Æ'ºäÕ¨º½¿ÕÍÅ" "Õ½ÊõºäÕ¨»ú´ó¶Ó28" "µÚ51'°£µÂÎ¬'ºäÕ¨º½¿ÕÍÅ" "µÚ53'ÍºÓ¥¾üÍÅ'ºäÕ¨º½¿ÕÍÅ" 
+		"µÚ54'÷¼÷Ã'ºäÕ¨º½¿ÕÍÅ" "µÚ55'Ê¨Í·Ó¥'ºäÕ¨º½¿ÕÍÅ" "Õ½ÊõºäÕ¨»ú´ó¶Ó50" "Õ½ÊõºäÕ¨»ú´ó¶Ó40" "Õ½ÊõºäÕ¨»ú´ó¶Ó76" "Õ½ÊõºäÕ¨»ú´ó¶Ó77" "Õ½ÊõºäÕ¨»ú´ó¶Ó60" "Õ½ÊõºäÕ¨»ú´ó¶Ó101" "Õ½ÊõºäÕ¨»ú´ó¶Ó102" "Õ½ÊõºäÕ¨»ú´ó¶Ó66" "Õ½ÊõºäÕ¨»ú´ó¶Ó200" 
+		"Õ½ÊõºäÕ¨»ú´ó¶Ó201" "Õ½ÊõºäÕ¨»ú´ó¶Ó202" "Õ½ÊõºäÕ¨»ú´ó¶Ó203" "Õ½ÊõºäÕ¨»ú´ó¶Ó204" "Õ½ÊõºäÕ¨»ú´ó¶Ó205" "Õ½ÊõºäÕ¨»ú´ó¶Ó206" "Õ½ÊõºäÕ¨»ú´ó¶Ó207" "Õ½ÊõºäÕ¨»ú´ó¶Ó208" "Õ½ÊõºäÕ¨»ú´ó¶Ó209" "Õ½ÊõºäÕ¨»ú´ó¶Ó210" "Õ½ÊõºäÕ¨»ú´ó¶Ó211" 
+		"Õ½ÊõºäÕ¨»ú´ó¶Ó212" "Õ½ÊõºäÕ¨»ú´ó¶Ó213" "Õ½ÊõºäÕ¨»ú´ó¶Ó214" "Õ½ÊõºäÕ¨»ú´ó¶Ó215" "Õ½ÊõºäÕ¨»ú´ó¶Ó216" "Õ½ÊõºäÕ¨»ú´ó¶Ó217" "Õ½ÊõºäÕ¨»ú´ó¶Ó218" "Õ½ÊõºäÕ¨»ú´ó¶Ó219" "Õ½ÊõºäÕ¨»ú´ó¶Ó220" "Õ½ÊõºäÕ¨»ú´ó¶Ó221" 
 	}
 	naval_bomber = {
-		"Seeaufklärungsgruppe 125" "Seeaufklärungsgruppe 126" "Seeaufklärungsgruppe 127" "Seeaufklärungsgruppe 128" "Seeaufklärungsgruppe 129" "Seeaufklärungsgruppe 130" "Seeaufklärungsgruppe 131" "Seeaufklärungsgruppe 128" "Seeaufklärungsgruppe 129" "Seeaufklärungsgruppe 130" "Seeaufklärungsgruppe 131" 
-		"Seeaufklärungsgruppe 132" "Seeaufklärungsgruppe 133" "Seeaufklärungsgruppe 134" "Seeaufklärungsgruppe 135" "Seeaufklärungsgruppe 136" "Seeaufklärungsgruppe 137" "Seeaufklärungsgruppe 138" "Küstenfliegergruppe 106" "Küstenfliegergruppe 206" "Küstenfliegergruppe 306" "Küstenfliegergruppe 406" 
-		"Küstenfliegergruppe 506" "Küstenfliegergruppe 606" "Küstenfliegergruppe 706" "Küstenfliegergruppe 806" "Küstenfliegergruppe 906" "Küstenfliegergruppe 206" "Küstenfliegergruppe 306" "Küstenfliegergruppe 806" 
+		"º£¾üºäÕ¨»ú125" "º£¾üºäÕ¨»ú126" "º£¾üºäÕ¨»ú127" "º£¾üºäÕ¨»ú128" "º£¾üºäÕ¨»ú129" "º£¾üºäÕ¨»ú130" "º£¾üºäÕ¨»ú131" "º£¾üºäÕ¨»ú128" "º£¾üºäÕ¨»ú129" "º£¾üºäÕ¨»ú130" "º£¾üºäÕ¨»ú131" 
+		"º£¾üºäÕ¨»ú132" "º£¾üºäÕ¨»ú133" "º£¾üºäÕ¨»ú134" "º£¾üºäÕ¨»ú135" "º£¾üºäÕ¨»ú136" "º£¾üºäÕ¨»ú137" "º£¾üºäÕ¨»ú138" "º£¾üºäÕ¨»ú106" "º£¾üºäÕ¨»ú206" "º£¾üºäÕ¨»ú306" "º£¾üºäÕ¨»ú406" 
+		"º£¾üºäÕ¨»ú506" "º£¾üºäÕ¨»ú606" "º£¾üºäÕ¨»ú706" "º£¾üºäÕ¨»ú806" "º£¾üºäÕ¨»ú906" "º£¾üºäÕ¨»ú206" "º£¾üºäÕ¨»ú306" "º£¾üºäÕ¨»ú806" 
 	}
 	cas = {
-		"Sturzkampfgeschwader 51" "Stukageschwader 2 'Immelmann'" "Sturzkampfgeschwader 76" "Sturzkampfgeschwader 77" "Sturzkampfgeschwader 1" "Sturzkampfgeschwader 3" "Schnellkampfgeschwader 210" "Schlachtgeschwader 1" "Sturzkampfgeschwader 5" "Schnellkampfgeschwader 10" "Sturzkampfgeschwader 101" 
-		"Schlachtgeschwader 2" "Schlachtgeschwader 101" "Sturzkampfgeschwader 102" "Sturzkampfgeschwader 151" "Schlachtgeschwader 152" "Schlachtgeschwader 104" "Sturzkampfgeschwader 160" "Sturzkampfgeschwader 162" "Sturzkampfgeschwader 163" "Sturzkampfgeschwader 165" "Sturzkampfgeschwader 167" 
-		"Sturzkampfgeschwader 168" "Sturzkampfgeschwader 169" "Sturzkampfgeschwader 170" "Sturzkampfgeschwader 171" "Sturzkampfgeschwader 172" "Sturzkampfgeschwader 182" "Sturzkampfgeschwader 183" "Sturzkampfgeschwader 184" "Sturzkampfgeschwader 186" "Sturzkampfgeschwader 192" "Sturzkampfgeschwader 195" 
-			}
+		"µÚ51¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ2'ÒóÂóÂü'¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ76¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ77¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ1¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ3¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ210¸©³åºäÕ¨º½¿ÕÍÅ" 
+                "µÚ1¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ5¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ10¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ101¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ2¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ101¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ102¸©³åºäÕ¨º½¿ÕÍÅ" 
+                "µÚ151¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ152¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ104¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ160¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ162¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ163¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ165¸©³åºäÕ¨º½¿ÕÍÅ" 
+		"µÚ167¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ168¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ169¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ170¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ171¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ172¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ182¸©³åºäÕ¨º½¿ÕÍÅ" 
+		"µÚ183¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ184¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ186¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ192¸©³åºäÕ¨º½¿ÕÍÅ" "µÚ195¸©³åºäÕ¨º½¿ÕÍÅ" 
+	}
 	transport_plane = {
-		"Kampfgruppe zbV 9" "Kampfgeschwader zbV 1" "Kampfgeschwader zbV 2" "Kampfgeschwader zbV 4" "Kampfgeschwader zbV 5" "Kampfgeschwader zbV 9" "Kampfgeschwader zbV 172" "Transportgeschwader 1" "Transportgeschwader 2" "Transportgeschwader 3" "Transportgeschwader 4" 
-		"Transportgeschwader 5" "Transportgeschwader 10" "Transportgeschwader 20" "Transportgeschwader 30" "Transportgeschwader 110" "Kampfgruppe zbV 106" "Kampfgruppe zbV 108" "Kampfgruppe zbV 50" "Kampfgruppe zbV 102" "Kampfgruppe zbV 104" "Kampfgruppe zbV 105" 
-		"Kampfgruppe zbV 400" "Kampfgruppe zbV 500" "Kampfgruppe zbV 600" "Kampfgruppe zbV 700" "Kampfgruppe zbV 800" "Kampfgruppe zbV 900" "Kampfgruppe zbV 100" "Kampfgruppe zbV 200" "Kampfgruppe zbV 300" 
+		"¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó9" "ÔËÊä»ú´ó¶Ó1" "ÔËÊä»ú´ó¶Ó2" "ÔËÊä»ú´ó¶Ó4" "ÔËÊä»ú´ó¶Ó5" "ÔËÊä»ú´ó¶Ó9" "ÔËÊä»ú´ó¶Ó172" "ÔËÊä»ú´ó¶Ó1" "ÔËÊä»ú´ó¶Ó2" "ÔËÊä»ú´ó¶Ó3" "ÔËÊä»ú´ó¶Ó4" 
+		"ÔËÊä»ú´ó¶Ó5" "ÔËÊä»ú´ó¶Ó10" "ÔËÊä»ú´ó¶Ó20" "ÔËÊä»ú´ó¶Ó30" "ÔËÊä»ú´ó¶Ó110" "¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó106" "¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó108" "¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó50" "¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó102" "¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó104" "¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó105" 
+		"¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó400" "¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó500" "¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó600" "¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó700" "¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó800" "¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó900" "¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó100" "¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó200" "¿¨ÆÕÂ¡ÄáÔËÊä»ú´ó¶Ó300" 
 	}
 	battleship = {
-		"KMS Bismarck" "KMS Tirpitz"
-		"KMS Hindenburg" "KMS Friedrich der Große" "KMS Großdeutschland" "KMS Ludendorff" "KMS Mainfranken" "KMS Sudetenland"
-		"KMS Deutschland" "KMS Hannover" "KMS Pommern" "KMS Schlesien" "KMS Schleswig-Holstein"
-		"KMS Bayern" "KMS Baden" "KMS Württemberg"  "KMS Sachsen"
-		"KMS Lothringen" "KMS Elsaß" "KMS Salzburg" "KMS Hessen-Nassau"
-		"KMS Moltke" "KMS Schleswig-Holstein" "KMS Mark Brandenburg" "KMS Südhannover-Braunschweig" "KMS Thüringen" 
-		"KMS Mecklenburg" "KMS München-Oberbayern" "KMS Magdeburg-Anhalt" "KMS Weser-Ems" "KMS Halle-Merseburg" "KMS Hamburg" "KMS Pommern" "KMS Bayreuth" "KMS Ostpreußen" "KMS Niederschlesien" "KMS Essen" 
-		"KMS Düsseldorf" "KMS Westfalen-Nord" "KMS Köln-Aachen" "KMS Kurhessen" "KMS Oberdonau" "KMS Hessen-Nassau" "KMS Moselland" "KMS Oberschlesien" "KMS Osthannover" "KMS Elsaß" "KMS Westmark" 
-		"KMS Berlin" "KMS Sudetenland" "KMS Westfalen-Süd" "KMS Mainfranken" "KMS Danzig-Westpreußen" "KMS Franken" "KMS Würtemberg Hohenzollern" "KMS Baden" "KMS Schwaben" "KMS Salzburg" "KMS Lothringen" 
-		"KMS Niederdonau" "KMS Wien" "KMS Steiermark" "KMS Kärnten" "KMS Tirol-Voralberg" "KMS Wartheland" 
+		"ÙÂË¹ÂóºÅ" "Ìá¶ûÆ¤×ÈºÅ" "ĞËµÇ±¤ºÅ" "Â³µÇµÀ·ò ´óµÂÒâÖ¾ºÅ" "µÛ¹úºÅ" "¿­ÈöºÅ" "ëèÌØÁÒ´óµÛºÅ" "°¢¶û²®ÌØ¹úÍõºÅ" "¿­ÈøÁÕ»ÊºóºÅ" "Â·Ò×ÌØ²¨¶ûµÂÉãÕşÍõºÅ" "¹úÍõºÅ" 
+		"´óÑ¡µÛºîºÅ" "±ß¾³×Ü¶½ºÅ" "ÍşÁ®Íõ´¢ºÅ" "Ô¼º² ÇÇÖÎ¶şÊÀºÅ" "ëèÌØÁÒ¶şÊÀºÅ" "Â³²®Ï£ÌØÍõ´¢ºÅ" "°¢¶û²¼À×Ï£ÌØ´ó¹«ºÅ" "ÍşÁ®¶şÊÀºÅ" "Â·µÂÎ¬Ï£Ç×ÍõºÅ" "°Â¹ÅË¹ÌØÈıÊÀºÅ" 
+		"ÑÇÉªÇ×ÍõºÅ" "¸ñ°Â¶û¸ñÍõ´¢ºÅ" "Àû°Â²¨µÂÒ»ÊÀºÅ" "º£ÒòÀïÏ£ÁùÊÀºÅ" "Ô¼º² °¢µÀ·ò¶şÊÀºÅ" "ì³µÏÄÏ¹«¾ôºÅ" 
 	}
 	light_cruiser = {
-		"KMS Münster" "KMS Mönchengladbach" "KMS Mannheim" "KMS Magdeburg" "KMS Oberhausen" "KMS Gelsenkirchen"
-		"KMS Z 23" "KMS Z 24" "KMS Z 25" "KMS Z 26" "KMS Z 27" "KMS Z 28" "KMS Z 29" "KMS Z 30"
-		"KMS Z 31" "KMS Z 32" "KMS Z 33" "KMS Z 34" "KMS Z 35" "KMS Z 36" "KMS Z 37" "KMS Z 38" "KMS Z 39" "KMS Z 40" "KMS Z 41" "KMS Z 42"
-		"KMS Z 40" "KMS Z 41" "KMS Z 42"
-		"KMS Oberhausen" "KMS Lübeck" "KMS Freiburg" "KMS Hagen" "KMS Erfurt" "KMS Kassel"
-		"KMS Brummer" "KMS Bremse"
- 		"KMS Köln" "KMS Wiesbaden" "KMS Dresden" "KMS Magdeburg" "KMS Leipzig" "KMS Rostock" "KMS Frauenlob" "KMS Stralsund" "KMS Emden" "KMS Karlsruhe"
-		"KMS Emden"
-		"KMS Königsberg" "KMS Karlsruhe" "KMS Köln" 
-		"KMS Leipzig" "KMS Nürnberg"
-		"KMS Emden" "KMS Königsberg" "KMS Karlsruhe" "KMS Köln" "KMS Leipzig" "KMS Nürnberg" "KMS Stuttgart" "KMS Stettin" "KMS Dresden" "KMS Nautilus" "KMS Albatross" 
-		"KMS Kolberg" "KMS Mainz" "KMS Köln" "KMS Augsburg" "KMS Magdeburg" "KMS Breslau" "KMS Strassburg" "KMS Stralsund" "KMS Rostock" "KMS Graudenz" "KMS Regensburg" 
-		"KMS Pillau" "KMS Elbing" "KMS Brummer" "KMS Bremse" "KMS Wiesbaden" "KMS Frankfurt" "KMS Blücher" "KMS Prinz Eugen" "KMS Lützow" "KMS Friedrich Carl" "KMS Roon" 
-		"KMS Yorck" "KMS Deutschland" "KMS Graf Spee" "KMS Beowulf" "KMS Frithjof" "KMS Heimdall" "KMS Düsseldorf" "KMS Duisberg" "KMS Bochum" "KMS Wuppertal" "KMS Bielefeld" 
-		"KMS Bonn" "KMS Mannheim" "KMS Gelsenkirchen" "KMS Münster" "KMS Mönchengladbach" "KMS Chemnitz" "KMS Braunschweig" "KMS Aachen" "KMS Krefeld" "KMS Halle" "KMS Kiel" 
-		"KMS Hamm" "KMS Saarbrücken" "KMS Herne" "KMS Mülheim" "KMS Solingen" 
-		"KMS Osnabrück" "KMS Ludwigshafen" "KMS Leverkusen" "KMS Oldenburg" "KMS Neuss" "KMS Paderborn" "KMS Heidelberg" "KMS Darmstadt" "KMS Potsdam" "KMS Würzburg" "KMS Göttingen" 
-		"KMS Recklinghausen" "KMS Bottrop" "KMS Wolfsburg" "KMS Heilbronn" "KMS Ingolstadt" 
-		"KMS Bochum" "KMS Bielefeld" "KMS Bonn" "KMS Breslau"
+		"ºº±¤ºÅ" "º£Ä·´ï¶ûºÅ" "Ï£¶ûµÂ²¼À¼ºÅ" "¹ş¸ùºÅ" "Ä½ÄáºÚºÅ" "°£Ä·µÇºÅ" "¿ÆÄáË¹±¤ºÅ" "¿¨¶ûË¹Â³¶òºÅ" "¿Æ¶÷ºÅ" "À³±ÈÎıºÅ" "Å¦Â×±¤ºÅ" "Ë¹Í¼¼ÓÌØºÅ" "Ë¹µÂ¶¡ºÅ" 
+		"µÂÀÛË¹¶ÙºÅ" "è§ÌáÂ³Ë¹ºÅ" "°¢¶û°ÍÌØÂåË¹ºÅ" "¿Æ¶û±´¸ñºÅ" "ÃÀÒğ´ÄºÅ" "°Â¸ñË¹±¤ºÅ" "Âí¸ñµÂ±¤ºÅ" "²¼À×Ë¹ÀÍºÅ" "Ë¹ÌØÀ­Ë¹±¤" "¶ÅÈû¶û¶à·òºÅ" "¶àÌØÃÉµÂºÅ" 
+		"Ë¹ÌØÀ­¶ûËÉºÅ" "¿¨¶ûË¹Â³¶òºÅ" "ÂŞË¹ÍĞ¿ËºÅ" "¸ñÀÍµÇ´ÄºÅ" "À×¸ùË¹±¤ºÅ" "Æ¤ÀÍºÅ" "°£¶û±öºÅ" "ÍşË¹°ÍµÇºÅ" "·¨À¼¿Ë¸£ºÅ" "¿­ÔóË¹ÀÍëøºÅ" "ººÅµÍşºÅ" "¶ÅÒÁË¹±¤ºÅ" "²¨ºèºÅ" 
+		"ÎÚ²¼Ëş¶ûºÅ" "±ÈÀÕ·Æ¶ûµÂºÅ" "²¨¶÷ºÅ" "Âüº£Ä·ºÅ" "¸Ç¶ûÉ­»ùĞËºÅ" "Ã÷Ë¹ÌØºÅ" "ÃÅĞË¸ñÀ­µÂ°ÍºÕºÅ" "¿­Ä·Äá´ÄºÅ" "²¼Â×Èğ¿ËºÅ" "ÑÇè¡ºÅ" "¿ËÀ×·Æ¶ûµÂºÅ" "¹şÀÕºÅ" "»ù¶ûºÅ" "°Â²®ºÀÉ­ºÅ" 
+		"Â¬±´¿ËºÅ" "¸¥À³±¤ºÅ" "°®¶û¸£ÌØºÅ" "¿¨Èû¶ûºÅ" "¹şÄ·ºÅ" "Ë÷¶û²¼ÂÀ¿ÏºÅ" "º£¶ûÄÉºÅ" "ÄÂÀÕº£Ä·ºÅ" "Ë÷ÁÖ¸ùºÅ" "°ÂË¹ÄÉ²¼ÂÀ¿ËºÅ" "Â·µÂÎ¬Ï£¹ş·ÒºÅ" 
+		"ÀÕÎÖ¿âÉ­ºÅ" "°Â¶ûµÇ±¤ºÅ" "ÅµÒÁË¹ºÅ" "ÅÉÌØ²©¶÷ºÅ" "º£µÂ±¤ºÅ" "´ïÄ·Ê©ËşÌØºÅ" "²¨´ÄÌ¹ºÅ" "Î¬¶û´Ä±¤ºÅ" "¸çÍ¢¸ùºÅ" "À×¿ËÁÖºÀÉ­ºÅ" "²¨ÌØÂåÆÕºÅ" "ÎÖ¶û·òË¹±¤ºÅ" "º£¶û²¼Â¡ºÅ" "Òò¸ê¶ûË¹ËşµÂºÅ" 
 	}
 	heavy_cruiser = {
-		"KMS Admiral Graf Spee"
-		"KMS Admiral Hipper" "KMS Blücher" "KMS Prinz Eugen" "KMS Seydlitz" "KMS Lützow"
-		"KMS Paul Behncke" "KMS Admiral Pohl" "KMS Admiral Heeringen" "KMS Hans Zenker" "KMS Admiral Scheer" "KMS Felix Funke" "KMS Admiral Reuter" "KMS Wilhem Souchon" "KMS Admiral Stosch" "KMS William Michaelis" "KMS Admiral Müller" "KMS Admiral Ingenohl"
-		"KMS Blücher"
-		"KMS Deutschland" "KMS Admiral Scheer" "KMS Admiral Graf Spee" "KMS Elsass" "KMS Lothringen" "KMS Preussen" "KMS Hessen" "KMS Braunschweig"
-		"KMS Elsass" "KMS Lothringen" "KMS Preussen" "KMS Hessen" "KMS Braunschweig"
+		"Ï£Åå¶ûº£¾üÉÏ½«ºÅ" "Éá¶ûº£¾üÉÏ½«ºÅ" "²¼ÂÀĞª¶ûºÅ" "ÂÀ×ôºÅ" "Ê©Åå²®¾ôºÅ" "Å·¸ùÇ×ÍõºÅ" "ëèÌØÁÒ ¿¨¶ûºÅ" "ÂŞ¶÷ºÅ" "µÂÒâÖ¾ºÅ" "±´°ÂÎé¶û·òºÅ" "¸¥ÈğÌØÓÈ·òºÅ" "ºÕ¶û¸êÀ¼ºÅ" 
+		"¶«¸¥ÀïË¹À¼ºÅ" "Ê¯ÀÕËÕÒæ¸ñ" "ºÉ¶ûË¹Ì©ÒòºÅ" "ºº±¤ºÅ" "²¨À­ÃÀÄáÑÇºÅ" "ÄÏººÅµÍş ²¼Â×Èğ¿ËºÅ" "Ã·¿ËÂ×±¤ºÅ" "Ä½ÄáºÚ ÉÏ°İ¶÷ºÅ" "Âí¸ñµÂ±¤ °²¹ş¶ûÌØºÅ" "¹şÀ× Ã·¶ûÉª±¤ºÅ" "Èø¿ËÉ­ºÅ" 
+		"°İÂŞÒÁÌØºÅ" "¶«ÆÕÂ³Ê¿ºÅ" "ÏÂÎ÷ÀïÎ÷ÑÇºÅ" "°£É­ºÅ" "¶ÅÈû¶û¶à·òºÅ" "±±ÍşË¹ÌØ·¨Â×ºÅ" "¿ÆÂ¡ ÑÇè¡ºÅ" "¿â¶ûºÚÉ­ºÅ" "ÉÏ¶àè§ºÅ" "ºÚÉ­ ÄÃÉ§ºÅ" "ÄªË¹À¼ºÅ" "ÉÏÎ÷ÀïÎ÷ÑÇºÅ" "¶«ººÅµÍşºÅ" 
+		"°¬¶ûÉ¯ºÅ" "Î¤Ë¹ÌØÂí¿ËºÅ" "°ØÁÖºÅ" "ËÕÌ¨µÂºÅ" "ÄÏÍşË¹ÌØ·¨Â×ºÅ" "ÃÀÒğ¸¥À¼¿ÏºÅ" "µ«Ôó Î÷ÆÕÂ³Ê¿ºÅ" "¸¥À¼¿ÏºÅ" "Î¬ÌÚ±¤ »ôºàË÷Â×ºÅ" "°ÍµÇºÅ" "Ê©Íß±¾ºÅ" "Èø¶û×È±¤ºÅ" "ÂŞË¹ÁÖ¸ùºÅ" 
+		"ÏÂ¶àè§ºÅ" "Î¬Ò²ÄÉºÅ" "Ë¹Ì©¶ûÂí¿ËºÅ" "µÏÂ·¡¤¸£À­¶û±´¸ñºÅ" "Íß¶ûÌØÀ¼ºÅ" 
 	}
 	battlecruiser = {
-		"KMS Scharnhorst" "KMS Gneisenau"
-		"KMS Von der Tann" "KMS Moltke"
-		"KMS Oberdonau" "KMS Mecklenburg" "KMS Goeben"
-		"KMS Derfflinger" "KMS Lützow" "KMS Hindenburg"
-		"KMS Mackensen" "KMS Graf Spee" "KMS Prinz Eitel Friedrich" "KMS Fürst Bismarck"
-		"KMS Yorck" "KMS Gneisenau" "KMS Scharnhorst"
-		"KMS Roon" "KMS Röder"
+		"É³¶÷»ôË¹ÌØºÅ" "¸ñÄÎÉ­è§ºÅ" "·ë¡¤µÂ¡¤Ì¹¶÷ºÅ" "Ã«ÆæºÅ" "¸ê¶û±¾ºÅ" "»ªÂ×Ë¹Ì¹ºÅ" "Èû¿ÏµÀ·ò²®¾ôºÅ" "·ë¡¤Ê©°Í¶ûºÅ" "µÂ¸¥ÁÖ¸ñÄĞ¾ôºÅ" "¸¥À³Ã÷²®¾ôºÅ" "¸ñË¹ÀÕ²®¾ôºÅ" 
+		"¿¨ÌØ²®¾ôºÅ" "Ê©Î¬ÁÖ²®¾ôºÅ" "Ê©Ã·ÌÕ²®¾ôºÅ" "·ë¡¤ÉáÄşºÅ" "·ë¡¤Ê©ÅÁ¶÷ºÅ" "ÍßëøË¹ÀÕ±¾²®¾ôºÅ" "·Ò¿ÏÊ©Ì©Òò²®¾ôºÅ" "ÄÉ´ÄÄ¬¶ûºÅ" "·ë¡¤ÂŞµÂ¶ûºÅ" "¸ñÀ­É­ÄÉÆÕºÅ" "¿ËÀ³Ë¹ÌØºÅ" "²¼µÇ²¼ÂŞ¿ËºÅ" "¿¨¶û¿ËÊ©Ì©ÒòºÅ" 
+		"·ë¡¤ÁĞÍß¶ûµÂºÅ" "·ë¡¤Ä¬Â×¶à·òºÅ" "¿ËÅµ²®Ë¹¶à·òºÅ" "²¼ÁÖÄá¿ËºÅ" "ÅµÂ×¶à·ò²®¾ôºÅ" "ºÕ¶ûÂü¡¤·ë¡¤²©¶÷ºÅ" "ÄÂ¸¥ÁÖºÅ" 
 	}
 	destroyer = {
-		"5. Zerstörergeschwader" "6. Zerstörergeschwader" "7. Zerstörergeschwader" "8. Zerstörergeschwader" "9. Zerstörergeschwader" "10. Zerstörergeschwader" "11. Zerstörergeschwader" 
-		"12. Zerstörergeschwader" "13. Zerstörergeschwader" "14. Zerstörergeschwader" "15. Zerstörergeschwader" "16. Zerstörergeschwader" "17. Zerstörergeschwader" "18. Zerstörergeschwader" "19. Zerstörergeschwader" "20. Zerstörergeschwader" "21. Zerstörergeschwader" "22. Zerstörergeschwader" 
-		"23. Zerstörergeschwader" "24. Zerstörergeschwader" "25. Zerstörergeschwader" "26. Zerstörergeschwader" "27. Zerstörergeschwader" "28. Zerstörergeschwader" "29. Zerstörergeschwader" "30. Zerstörergeschwader" "31. Zerstörergeschwader" "32. Zerstörergeschwader" "33. Zerstörergeschwader" 
-		"34. Zerstörergeschwader" "35. Zerstörergeschwader" "36. Zerstörergeschwader" "37. Zerstörergeschwader" "38. Zerstörergeschwader" "39. Zerstörergeschwader" "40. Zerstörergeschwader" "41. Zerstörergeschwader" "42. Zerstörergeschwader" "43. Zerstörergeschwader" "44. Zerstörergeschwader" 
-		"45. Zerstörergeschwader" "46. Zerstörergeschwader" "47. Zerstörergeschwader" "48. Zerstörergeschwader" "49. Zerstörergeschwader" "50. Zerstörergeschwader" "51. Zerstörergeschwader" "52. Zerstörergeschwader" "53. Zerstörergeschwader" "54. Zerstörergeschwader" "55. Zerstörergeschwader" 
-		"56. Zerstörergeschwader" "57. Zerstörergeschwader" "58. Zerstörergeschwader" "59. Zerstörergeschwader" "60. Zerstörergeschwader" "61. Zerstörergeschwader" "62. Zerstörergeschwader" "63. Zerstörergeschwader" "64. Zerstörergeschwader" "65. Zerstörergeschwader" "66. Zerstörergeschwader" 
-		"67. Zerstörergeschwader" "68. Zerstörergeschwader" "69. Zerstörergeschwader" "70. Zerstörergeschwader" "71. Zerstörergeschwader" "72. Zerstörergeschwader" "73. Zerstörergeschwader" "74. Zerstörergeschwader" "75. Zerstörergeschwader" "76. Zerstörergeschwader" "77. Zerstörergeschwader" 
-		"78. Zerstörergeschwader" "79. Zerstörergeschwader" "80. Zerstörergeschwader" "81. Zerstörergeschwader" "82. Zerstörergeschwader" "83. Zerstörergeschwader" "84. Zerstörergeschwader" "85. Zerstörergeschwader" "86. Zerstörergeschwader" "87. Zerstörergeschwader" "88. Zerstörergeschwader" 
-		"89. Zerstörergeschwader" "90. Zerstörergeschwader" "91. Zerstörergeschwader" "92. Zerstörergeschwader" "93. Zerstörergeschwader" "94. Zerstörergeschwader" "95. Zerstörergeschwader" "96. Zerstörergeschwader" "97. Zerstörergeschwader" "98. Zerstörergeschwader" "99. Zerstörergeschwader" 
-		"100. Zerstörergeschwader" "1. Zerstörergeschwader" "2. Zerstörergeschwader" "3. Zerstörergeschwader" "4. Zerstörergeschwader"
+		"µÚ1ÇıÖğ´ó¶Ó" "µÚ2ÇıÖğ´ó¶Ó" "µÚ3ÇıÖğ´ó¶Ó" "µÚ4ÇıÖğ´ó¶Ó" "µÚ5ÇıÖğ´ó¶Ó" "µÚ6ÇıÖğ´ó¶Ó" "µÚ7ÇıÖğ´ó¶Ó" "µÚ8ÇıÖğ´ó¶Ó" "µÚ9ÇıÖğ´ó¶Ó" "µÚ10ÇıÖğ´ó¶Ó" "µÚ11ÇıÖğ´ó¶Ó" 
+		"µÚ12ÇıÖğ´ó¶Ó" "µÚ13ÇıÖğ´ó¶Ó" "µÚ14ÇıÖğ´ó¶Ó" "µÚ15ÇıÖğ´ó¶Ó" "µÚ16ÇıÖğ´ó¶Ó" "µÚ17ÇıÖğ´ó¶Ó" "µÚ18ÇıÖğ´ó¶Ó" "µÚ19ÇıÖğ´ó¶Ó" "µÚ20ÇıÖğ´ó¶Ó" "µÚ21ÇıÖğ´ó¶Ó" "µÚ22ÇıÖğ´ó¶Ó" 
+		"µÚ23ÇıÖğ´ó¶Ó" "µÚ24ÇıÖğ´ó¶Ó" "µÚ25ÇıÖğ´ó¶Ó" "µÚ26ÇıÖğ´ó¶Ó" "µÚ27ÇıÖğ´ó¶Ó" "µÚ28ÇıÖğ´ó¶Ó" "µÚ29ÇıÖğ´ó¶Ó" "µÚ30ÇıÖğ´ó¶Ó" "µÚ31ÇıÖğ´ó¶Ó" "µÚ32ÇıÖğ´ó¶Ó" "µÚ33ÇıÖğ´ó¶Ó" 
+		"µÚ34ÇıÖğ´ó¶Ó" "µÚ35ÇıÖğ´ó¶Ó" "µÚ36ÇıÖğ´ó¶Ó" "µÚ37ÇıÖğ´ó¶Ó" "µÚ38ÇıÖğ´ó¶Ó" "µÚ39ÇıÖğ´ó¶Ó" "µÚ40ÇıÖğ´ó¶Ó" "µÚ41ÇıÖğ´ó¶Ó" "µÚ42ÇıÖğ´ó¶Ó" "µÚ43ÇıÖğ´ó¶Ó" "µÚ44ÇıÖğ´ó¶Ó" 
+		"µÚ45ÇıÖğ´ó¶Ó" "µÚ46ÇıÖğ´ó¶Ó" "µÚ47ÇıÖğ´ó¶Ó" "µÚ48ÇıÖğ´ó¶Ó" "µÚ49ÇıÖğ´ó¶Ó" "µÚ50ÇıÖğ´ó¶Ó" "µÚ51ÇıÖğ´ó¶Ó" "µÚ52ÇıÖğ´ó¶Ó" "µÚ53ÇıÖğ´ó¶Ó" "µÚ54ÇıÖğ´ó¶Ó" "µÚ55ÇıÖğ´ó¶Ó" 
+		"µÚ56ÇıÖğ´ó¶Ó" "µÚ57ÇıÖğ´ó¶Ó" "µÚ58ÇıÖğ´ó¶Ó" "µÚ59ÇıÖğ´ó¶Ó" "µÚ60ÇıÖğ´ó¶Ó" "µÚ61ÇıÖğ´ó¶Ó" "µÚ62ÇıÖğ´ó¶Ó" "µÚ63ÇıÖğ´ó¶Ó" "µÚ64ÇıÖğ´ó¶Ó" "µÚ65ÇıÖğ´ó¶Ó" "µÚ66ÇıÖğ´ó¶Ó" 
+		"µÚ67ÇıÖğ´ó¶Ó" "µÚ68ÇıÖğ´ó¶Ó" "µÚ69ÇıÖğ´ó¶Ó" "µÚ70ÇıÖğ´ó¶Ó" "µÚ71ÇıÖğ´ó¶Ó" "µÚ72ÇıÖğ´ó¶Ó" "µÚ73ÇıÖğ´ó¶Ó" "µÚ74ÇıÖğ´ó¶Ó" "µÚ75ÇıÖğ´ó¶Ó" "µÚ76ÇıÖğ´ó¶Ó" "µÚ77ÇıÖğ´ó¶Ó" 
+		"µÚ78ÇıÖğ´ó¶Ó" "µÚ79ÇıÖğ´ó¶Ó" "µÚ80ÇıÖğ´ó¶Ó" "µÚ81ÇıÖğ´ó¶Ó" "µÚ82ÇıÖğ´ó¶Ó" "µÚ83ÇıÖğ´ó¶Ó" "µÚ84ÇıÖğ´ó¶Ó" "µÚ85ÇıÖğ´ó¶Ó" "µÚ86ÇıÖğ´ó¶Ó" "µÚ87ÇıÖğ´ó¶Ó" "µÚ88ÇıÖğ´ó¶Ó" 
+		"µÚ89ÇıÖğ´ó¶Ó" "µÚ90ÇıÖğ´ó¶Ó" "µÚ91ÇıÖğ´ó¶Ó" "µÚ92ÇıÖğ´ó¶Ó" "µÚ93ÇıÖğ´ó¶Ó" "µÚ94ÇıÖğ´ó¶Ó" "µÚ95ÇıÖğ´ó¶Ó" "µÚ96ÇıÖğ´ó¶Ó" "µÚ97ÇıÖğ´ó¶Ó" "µÚ98ÇıÖğ´ó¶Ó" "µÚ99ÇıÖğ´ó¶Ó" 
+		"µÚ100ÇıÖğ´ó¶Ó" 
 	}
 	carrier = {
-		"KMS Graf Zeppelin" "KMS Peter Strasser"
-		"KMS Europa" "KMS Germania" "KMS Amerika" "KMS Barbarossa"
-		"KMS Clausewitz" "KMS Barbarossa" "KMS Seelöwe"
-		"KMS Amerika" "KMS Rheingold" "KMS Siegfried" "KMS Parsifal" "KMS Lohengrin" 
-		"KMS Germania" "KMS Richthofen" "KMS Otto Lilienthal" "KMS Hermann Göring" "KMS Hugo Junkers" "KMS Claude Dornier" "KMS Ernst Heinkel" "KMS Wilhelm Messerschmitt" "KMS Hans Klemm" "KMS Richard Wagner" "KMS Johann Wolfgang von Goethe" 
-		"KMS Friedrich Schiller" 
+		"Æë°ØÁÖ²®¾ôºÅ" "±ËµÃ¡¤Ë¹ÌØÀ­ÈûºÅ" "ÈûµÂÀû´ÄºÅ" "¿ËÀÍÈûÎ¬´ÄºÅ" "°Í°ÍÂŞÈøºÅ" "º£Ê¨ºÅ" "°¢ÃÀÀû¼ÓºÅ" "À³Òò»Æ½ğºÅ" "Æë¸ñ¸¥À×µÂºÅ" "ÅÁÎ÷·¨¶ûºÅ" "ÂŞ¶÷¸ñÁÖºÅ" "ÈÕ¶ûÂüºÅ" 
+		"ÀïÏ£ÌØ»ô·ÒºÅ" "°ÂÍĞ¡¤ÀîÁÖËş¶ûºÅ" "ºÕ¶ûÂü¡¤¸êÁÖºÅ" "Óê¹û¡¤Èİ¿ËË¹ºÅ" "¿ËÀÍµÂ¡¤µÀÄá¶ûºÅ" "¶÷Ë¹ÌØ¡¤ºà¶û¿ËºÅ" "ÍşÁ®¡¤Ã·ÈûÊ©ÃÜÌØºÅ" "ººË¹¡¤¿ËÁÖºÅ" "Àí²é¡¤Íß¸ñÄÉºÅ" "¸èµÂºÅ" "Ï¯ÀÕºÅ" 
 	}
 	escort_carrier = {
-		"KMS Weser" "KMS Rhein" "KMS Saale"
-		"KMS Seydlitz"
-		"KMS Jade" "KMS Scharnhorst" "KMS Gneisenau"
-		"KMS Potsdam" "KMS Elbe" "KMS Weser" 
-		"KMS De Grasse" "KMS Clausewitz" "KMS Richard Wagner" "KMS Johann Wolfgang von Goethe"
-		"KMS Ausonia"
-		"KMS Weser" "KMS Main" "KMS Neckar" "KMS Lahn" "KMS Rhein" "KMS Saale"
+		"ÍşÉª¶ûºÅ" "°£¶û±ÈºÅ" "ÑÅµÂºÅ" "Ö÷Á¦ºÅ" "ÄÍ¿Ë¿¨ºÅ" "À­¶÷ºÅ" "¿ËÀ³ÒòºÅ" "ÈøÌØºÅ" 
 	}
 	submarine = {
-		"4. Unterseebootsflottille" "5. Unterseebootsflottille" "6. Unterseebootsflottille" "7. Unterseebootsflottille" "9. Unterseebootsflottille" "10. Unterseebootsflottille" "11. Unterseebootsflottille" "12. Unterseebootsflottille" "13. Unterseebootsflottille" 
-		"14. Unterseebootsflottille" "23. Unterseebootsflottille" "29. Unterseebootsflottille" "30. Unterseebootsflottille" "33. Unterseebootsflottille" "35. Unterseebootsflottille" "36. Unterseebootsflottille" "37. Unterseebootsflottille" "38. Unterseebootsflottille" "39. Unterseebootsflottille" "40. Unterseebootsflottille" 
-		"41. Unterseebootsflottille" "42. Unterseebootsflottille" "43. Unterseebootsflottille" "44. Unterseebootsflottille" "45. Unterseebootsflottille" "18. Unterseebootsflottille" "19. Unterseebootsflottille" "20. Unterseebootsflottille" "21. Unterseebootsflottille" "22. Unterseebootsflottille" "23. Unterseebootsflottille" 
-		"24. Unterseebootsflottille" "25. Unterseebootsflottille" "26. Unterseebootsflottille" "27. Unterseebootsflottille" "31. Unterseebootsflottille" "32. Unterseebootsflottille" "46. Unterseebootsflottille" "47. Unterseebootsflottille" "48. Unterseebootsflottille" "49. Unterseebootsflottille" "50. Unterseebootsflottille" 
-		"51. Unterseebootsflottille" "52. Unterseebootsflottille" "53. Unterseebootsflottille" "54. Unterseebootsflottille" "55. Unterseebootsflottille" "56. Unterseebootsflottille" "57. Unterseebootsflottille" "58. Unterseebootsflottille" "59. Unterseebootsflottille" "60. Unterseebootsflottille" "61. Unterseebootsflottille" 
-		"62. Unterseebootsflottille" "63. Unterseebootsflottille" "64. Unterseebootsflottille" "65. Unterseebootsflottille" "66. Unterseebootsflottille" "67. Unterseebootsflottille" "68. Unterseebootsflottille" "69. Unterseebootsflottille" "70. Unterseebootsflottille" "71. Unterseebootsflottille" "72. Unterseebootsflottille" 
-		"73. Unterseebootsflottille" "74. Unterseebootsflottille" "75. Unterseebootsflottille" "76. Unterseebootsflottille" "77. Unterseebootsflottille" "78. Unterseebootsflottille" "79. Unterseebootsflottille" "80. Unterseebootsflottille" "81. Unterseebootsflottille" "82. Unterseebootsflottille" "83. Unterseebootsflottille" 
-		"84. Unterseebootsflottille" "85. Unterseebootsflottille" "86. Unterseebootsflottille" "87. Unterseebootsflottille" "88. Unterseebootsflottille" "89. Unterseebootsflottille" "90. Unterseebootsflottille" "91. Unterseebootsflottille" "92. Unterseebootsflottille" "93. Unterseebootsflottille" "94. Unterseebootsflottille" 
-		"95. Unterseebootsflottille" "96. Unterseebootsflottille" "97. Unterseebootsflottille" "98. Unterseebootsflottille" "99. Unterseebootsflottille" "100. Unterseebootsflottille" "1. Unterseebootsflottille" "2. Unterseebootsflottille" "3. Unterseebootsflottille"
+		"µÚ1Ç±Í§´ó¶Ó" "µÚ2Ç±Í§´ó¶Ó" "µÚ3Ç±Í§´ó¶Ó" "µÚ4Ç±Í§´ó¶Ó" "µÚ5Ç±Í§´ó¶Ó" "µÚ6Ç±Í§´ó¶Ó" "µÚ7Ç±Í§´ó¶Ó" "µÚ8Ç±Í§´ó¶Ó" "µÚ9Ç±Í§´ó¶Ó" "µÚ10Ç±Í§´ó¶Ó" "µÚ11Ç±Í§´ó¶Ó" 
+		"µÚ12Ç±Í§´ó¶Ó" "µÚ13Ç±Í§´ó¶Ó" "µÚ14Ç±Í§´ó¶Ó" "µÚ15Ç±Í§´ó¶Ó" "µÚ16Ç±Í§´ó¶Ó" "µÚ17Ç±Í§´ó¶Ó" "µÚ18Ç±Í§´ó¶Ó" "µÚ19Ç±Í§´ó¶Ó" "µÚ20Ç±Í§´ó¶Ó" "µÚ21Ç±Í§´ó¶Ó" "µÚ22Ç±Í§´ó¶Ó" 
+		"µÚ23Ç±Í§´ó¶Ó" "µÚ24Ç±Í§´ó¶Ó" "µÚ25Ç±Í§´ó¶Ó" "µÚ26Ç±Í§´ó¶Ó" "µÚ27Ç±Í§´ó¶Ó" "µÚ28Ç±Í§´ó¶Ó" "µÚ29Ç±Í§´ó¶Ó" "µÚ30Ç±Í§´ó¶Ó" "µÚ31Ç±Í§´ó¶Ó" "µÚ32Ç±Í§´ó¶Ó" "µÚ33Ç±Í§´ó¶Ó" 
+		"µÚ34Ç±Í§´ó¶Ó" "µÚ35Ç±Í§´ó¶Ó" "µÚ36Ç±Í§´ó¶Ó" "µÚ37Ç±Í§´ó¶Ó" "µÚ38Ç±Í§´ó¶Ó" "µÚ39Ç±Í§´ó¶Ó" "µÚ40Ç±Í§´ó¶Ó" "µÚ41Ç±Í§´ó¶Ó" "µÚ42Ç±Í§´ó¶Ó" "µÚ43Ç±Í§´ó¶Ó" "µÚ44Ç±Í§´ó¶Ó" 
+		"µÚ45Ç±Í§´ó¶Ó" "µÚ46Ç±Í§´ó¶Ó" "µÚ47Ç±Í§´ó¶Ó" "µÚ48Ç±Í§´ó¶Ó" "µÚ49Ç±Í§´ó¶Ó" "µÚ50Ç±Í§´ó¶Ó" "µÚ51Ç±Í§´ó¶Ó" "µÚ52Ç±Í§´ó¶Ó" "µÚ53Ç±Í§´ó¶Ó" "µÚ54Ç±Í§´ó¶Ó" "µÚ55Ç±Í§´ó¶Ó" 
+		"µÚ56Ç±Í§´ó¶Ó" "µÚ57Ç±Í§´ó¶Ó" "µÚ58Ç±Í§´ó¶Ó" "µÚ59Ç±Í§´ó¶Ó" "µÚ60Ç±Í§´ó¶Ó" "µÚ61Ç±Í§´ó¶Ó" "µÚ62Ç±Í§´ó¶Ó" "µÚ63Ç±Í§´ó¶Ó" "µÚ64Ç±Í§´ó¶Ó" "µÚ65Ç±Í§´ó¶Ó" "µÚ66Ç±Í§´ó¶Ó" 
+		"µÚ67Ç±Í§´ó¶Ó" "µÚ68Ç±Í§´ó¶Ó" "µÚ69Ç±Í§´ó¶Ó" "µÚ70Ç±Í§´ó¶Ó" "µÚ71Ç±Í§´ó¶Ó" "µÚ72Ç±Í§´ó¶Ó" "µÚ73Ç±Í§´ó¶Ó" "µÚ74Ç±Í§´ó¶Ó" "µÚ75Ç±Í§´ó¶Ó" "µÚ76Ç±Í§´ó¶Ó" "µÚ77Ç±Í§´ó¶Ó" 
+		"µÚ78Ç±Í§´ó¶Ó" "µÚ79Ç±Í§´ó¶Ó" "µÚ80Ç±Í§´ó¶Ó" "µÚ81Ç±Í§´ó¶Ó" "µÚ82Ç±Í§´ó¶Ó" "µÚ83Ç±Í§´ó¶Ó" "µÚ84Ç±Í§´ó¶Ó" "µÚ85Ç±Í§´ó¶Ó" "µÚ86Ç±Í§´ó¶Ó" "µÚ87Ç±Í§´ó¶Ó" "µÚ88Ç±Í§´ó¶Ó" 
+		"µÚ89Ç±Í§´ó¶Ó" "µÚ90Ç±Í§´ó¶Ó" "µÚ91Ç±Í§´ó¶Ó" "µÚ92Ç±Í§´ó¶Ó" "µÚ93Ç±Í§´ó¶Ó" "µÚ94Ç±Í§´ó¶Ó" "µÚ95Ç±Í§´ó¶Ó" "µÚ96Ç±Í§´ó¶Ó" "µÚ97Ç±Í§´ó¶Ó" "µÚ98Ç±Í§´ó¶Ó" "µÚ99Ç±Í§´ó¶Ó" 
+		"µÚ100Ç±Í§´ó¶Ó" 
 	}
 	transport_ship = {
-		"1. Truppentransporterflottille" "2. Truppentransporterflottille" "3. Truppentransporterflottille" "4. Truppentransporterflottille" "5. Truppentransporterflottille" "6. Truppentransporterflottille" "7. Truppentransporterflottille" "8. Truppentransporterflottille" "9. Truppentransporterflottille" "10. Truppentransporterflottille" "11. Truppentransporterflottille" 
-		"12. Truppentransporterflottille" "13. Truppentransporterflottille" "14. Truppentransporterflottille" "15. Truppentransporterflottille" "16. Truppentransporterflottille" "17. Truppentransporterflottille" "18. Truppentransporterflottille" "19. Truppentransporterflottille" "20. Truppentransporterflottille" "21. Truppentransporterflottille" "22. Truppentransporterflottille" 
-		"23. Truppentransporterflottille" "24. Truppentransporterflottille" "25. Truppentransporterflottille" "26. Truppentransporterflottille" "27. Truppentransporterflottille" "28. Truppentransporterflottille" "29. Truppentransporterflottille" "30. Truppentransporterflottille" "31. Truppentransporterflottille" "32. Truppentransporterflottille" "33. Truppentransporterflottille" 
-		"34. Truppentransporterflottille" "35. Truppentransporterflottille" "36. Truppentransporterflottille" "37. Truppentransporterflottille" "38. Truppentransporterflottille" "39. Truppentransporterflottille" "40. Truppentransporterflottille" "41. Truppentransporterflottille" "42. Truppentransporterflottille" "43. Truppentransporterflottille" "44. Truppentransporterflottille" 
-		"45. Truppentransporterflottille" "46. Truppentransporterflottille" "47. Truppentransporterflottille" "48. Truppentransporterflottille" "49. Truppentransporterflottille" "50. Truppentransporterflottille" "51. Truppentransporterflottille" "52. Truppentransporterflottille" "53. Truppentransporterflottille" "54. Truppentransporterflottille" "55. Truppentransporterflottille" 
-		"56. Truppentransporterflottille" "57. Truppentransporterflottille" "58. Truppentransporterflottille" "59. Truppentransporterflottille" "60. Truppentransporterflottille" "61. Truppentransporterflottille" "62. Truppentransporterflottille" "63. Truppentransporterflottille" "64. Truppentransporterflottille" "65. Truppentransporterflottille" "66. Truppentransporterflottille" 
-		"67. Truppentransporterflottille" "68. Truppentransporterflottille" "69. Truppentransporterflottille" "70. Truppentransporterflottille" "71. Truppentransporterflottille" "72. Truppentransporterflottille" "73. Truppentransporterflottille" "74. Truppentransporterflottille" "75. Truppentransporterflottille" "76. Truppentransporterflottille" "77. Truppentransporterflottille" 
-		"78. Truppentransporterflottille" "79. Truppentransporterflottille" "80. Truppentransporterflottille" "81. Truppentransporterflottille" "82. Truppentransporterflottille" "83. Truppentransporterflottille" "84. Truppentransporterflottille" "85. Truppentransporterflottille" "86. Truppentransporterflottille" "87. Truppentransporterflottille" "88. Truppentransporterflottille" 
-		"89. Truppentransporterflottille" "90. Truppentransporterflottille" "91. Truppentransporterflottille" "92. Truppentransporterflottille" "93. Truppentransporterflottille" "94. Truppentransporterflottille" "95. Truppentransporterflottille" "96. Truppentransporterflottille" "97. Truppentransporterflottille" "98. Truppentransporterflottille" "99. Truppentransporterflottille" 
-		"100. Truppentransporterflottille" 
+		"µÚ1ÔËÊä½¢¶Ó" "µÚ2ÔËÊä½¢¶Ó" "µÚ3ÔËÊä½¢¶Ó" "µÚ4ÔËÊä½¢¶Ó" "µÚ5ÔËÊä½¢¶Ó" "µÚ6ÔËÊä½¢¶Ó" "µÚ7ÔËÊä½¢¶Ó" "µÚ8ÔËÊä½¢¶Ó" "µÚ9ÔËÊä½¢¶Ó" "µÚ10ÔËÊä½¢¶Ó" "µÚ11ÔËÊä½¢¶Ó" 
+		"µÚ12ÔËÊä½¢¶Ó" "µÚ13ÔËÊä½¢¶Ó" "µÚ14ÔËÊä½¢¶Ó" "µÚ15ÔËÊä½¢¶Ó" "µÚ16ÔËÊä½¢¶Ó" "µÚ17ÔËÊä½¢¶Ó" "µÚ18ÔËÊä½¢¶Ó" "µÚ19ÔËÊä½¢¶Ó" "µÚ20ÔËÊä½¢¶Ó" "µÚ21ÔËÊä½¢¶Ó" "µÚ22ÔËÊä½¢¶Ó" 
+		"µÚ23ÔËÊä½¢¶Ó" "µÚ24ÔËÊä½¢¶Ó" "µÚ25ÔËÊä½¢¶Ó" "µÚ26ÔËÊä½¢¶Ó" "µÚ27ÔËÊä½¢¶Ó" "µÚ28ÔËÊä½¢¶Ó" "µÚ29ÔËÊä½¢¶Ó" "µÚ30ÔËÊä½¢¶Ó" "µÚ31ÔËÊä½¢¶Ó" "µÚ32ÔËÊä½¢¶Ó" "µÚ33ÔËÊä½¢¶Ó" 
+		"µÚ34ÔËÊä½¢¶Ó" "µÚ35ÔËÊä½¢¶Ó" "µÚ36ÔËÊä½¢¶Ó" "µÚ37ÔËÊä½¢¶Ó" "µÚ38ÔËÊä½¢¶Ó" "µÚ39ÔËÊä½¢¶Ó" "µÚ40ÔËÊä½¢¶Ó" "µÚ41ÔËÊä½¢¶Ó" "µÚ42ÔËÊä½¢¶Ó" "µÚ43ÔËÊä½¢¶Ó" "µÚ44ÔËÊä½¢¶Ó" 
+		"µÚ45ÔËÊä½¢¶Ó" "µÚ46ÔËÊä½¢¶Ó" "µÚ47ÔËÊä½¢¶Ó" "µÚ48ÔËÊä½¢¶Ó" "µÚ49ÔËÊä½¢¶Ó" "µÚ50ÔËÊä½¢¶Ó" "µÚ51ÔËÊä½¢¶Ó" "µÚ52ÔËÊä½¢¶Ó" "µÚ53ÔËÊä½¢¶Ó" "µÚ54ÔËÊä½¢¶Ó" "µÚ55ÔËÊä½¢¶Ó" 
+		"µÚ56ÔËÊä½¢¶Ó" "µÚ57ÔËÊä½¢¶Ó" "µÚ58ÔËÊä½¢¶Ó" "µÚ59ÔËÊä½¢¶Ó" "µÚ60ÔËÊä½¢¶Ó" "µÚ61ÔËÊä½¢¶Ó" "µÚ62ÔËÊä½¢¶Ó" "µÚ63ÔËÊä½¢¶Ó" "µÚ64ÔËÊä½¢¶Ó" "µÚ65ÔËÊä½¢¶Ó" "µÚ66ÔËÊä½¢¶Ó" 
+		"µÚ67ÔËÊä½¢¶Ó" "µÚ68ÔËÊä½¢¶Ó" "µÚ69ÔËÊä½¢¶Ó" "µÚ70ÔËÊä½¢¶Ó" "µÚ71ÔËÊä½¢¶Ó" "µÚ72ÔËÊä½¢¶Ó" "µÚ73ÔËÊä½¢¶Ó" "µÚ74ÔËÊä½¢¶Ó" "µÚ75ÔËÊä½¢¶Ó" "µÚ76ÔËÊä½¢¶Ó" "µÚ77ÔËÊä½¢¶Ó" 
+		"µÚ78ÔËÊä½¢¶Ó" "µÚ79ÔËÊä½¢¶Ó" "µÚ80ÔËÊä½¢¶Ó" "µÚ81ÔËÊä½¢¶Ó" "µÚ82ÔËÊä½¢¶Ó" "µÚ83ÔËÊä½¢¶Ó" "µÚ84ÔËÊä½¢¶Ó" "µÚ85ÔËÊä½¢¶Ó" "µÚ86ÔËÊä½¢¶Ó" "µÚ87ÔËÊä½¢¶Ó" "µÚ88ÔËÊä½¢¶Ó" 
+		"µÚ89ÔËÊä½¢¶Ó" "µÚ90ÔËÊä½¢¶Ó" "µÚ91ÔËÊä½¢¶Ó" "µÚ92ÔËÊä½¢¶Ó" "µÚ93ÔËÊä½¢¶Ó" "µÚ94ÔËÊä½¢¶Ó" "µÚ95ÔËÊä½¢¶Ó" "µÚ96ÔËÊä½¢¶Ó" "µÚ97ÔËÊä½¢¶Ó" "µÚ98ÔËÊä½¢¶Ó" "µÚ99ÔËÊä½¢¶Ó" 
+		"µÚ100ÔËÊä½¢¶Ó" 
+	}
+	invasion_transport_ship = {
+		"µÚ1ÔËÊä½¢¶Ó" "µÚ2ÔËÊä½¢¶Ó" "µÚ3ÔËÊä½¢¶Ó" "µÚ4ÔËÊä½¢¶Ó" "µÚ5ÔËÊä½¢¶Ó" "µÚ6ÔËÊä½¢¶Ó" "µÚ7ÔËÊä½¢¶Ó" "µÚ8ÔËÊä½¢¶Ó" "µÚ9ÔËÊä½¢¶Ó" "µÚ10ÔËÊä½¢¶Ó" "µÚ11ÔËÊä½¢¶Ó" 
+		"µÚ12ÔËÊä½¢¶Ó" "µÚ13ÔËÊä½¢¶Ó" "µÚ14ÔËÊä½¢¶Ó" "µÚ15ÔËÊä½¢¶Ó" "µÚ16ÔËÊä½¢¶Ó" "µÚ17ÔËÊä½¢¶Ó" "µÚ18ÔËÊä½¢¶Ó" "µÚ19ÔËÊä½¢¶Ó" "µÚ20ÔËÊä½¢¶Ó" "µÚ21ÔËÊä½¢¶Ó" "µÚ22ÔËÊä½¢¶Ó" 
+		"µÚ23ÔËÊä½¢¶Ó" "µÚ24ÔËÊä½¢¶Ó" "µÚ25ÔËÊä½¢¶Ó" "µÚ26ÔËÊä½¢¶Ó" "µÚ27ÔËÊä½¢¶Ó" "µÚ28ÔËÊä½¢¶Ó" "µÚ29ÔËÊä½¢¶Ó" "µÚ30ÔËÊä½¢¶Ó" "µÚ31ÔËÊä½¢¶Ó" "µÚ32ÔËÊä½¢¶Ó" "µÚ33ÔËÊä½¢¶Ó" 
+		"µÚ34ÔËÊä½¢¶Ó" "µÚ35ÔËÊä½¢¶Ó" "µÚ36ÔËÊä½¢¶Ó" "µÚ37ÔËÊä½¢¶Ó" "µÚ38ÔËÊä½¢¶Ó" "µÚ39ÔËÊä½¢¶Ó" "µÚ40ÔËÊä½¢¶Ó" "µÚ41ÔËÊä½¢¶Ó" "µÚ42ÔËÊä½¢¶Ó" "µÚ43ÔËÊä½¢¶Ó" "µÚ44ÔËÊä½¢¶Ó" 
+		"µÚ45ÔËÊä½¢¶Ó" "µÚ46ÔËÊä½¢¶Ó" "µÚ47ÔËÊä½¢¶Ó" "µÚ48ÔËÊä½¢¶Ó" "µÚ49ÔËÊä½¢¶Ó" "µÚ50ÔËÊä½¢¶Ó" "µÚ51ÔËÊä½¢¶Ó" "µÚ52ÔËÊä½¢¶Ó" "µÚ53ÔËÊä½¢¶Ó" "µÚ54ÔËÊä½¢¶Ó" "µÚ55ÔËÊä½¢¶Ó" 
+		"µÚ56ÔËÊä½¢¶Ó" "µÚ57ÔËÊä½¢¶Ó" "µÚ58ÔËÊä½¢¶Ó" "µÚ59ÔËÊä½¢¶Ó" "µÚ60ÔËÊä½¢¶Ó" "µÚ61ÔËÊä½¢¶Ó" "µÚ62ÔËÊä½¢¶Ó" "µÚ63ÔËÊä½¢¶Ó" "µÚ64ÔËÊä½¢¶Ó" "µÚ65ÔËÊä½¢¶Ó" "µÚ66ÔËÊä½¢¶Ó" 
+		"µÚ67ÔËÊä½¢¶Ó" "µÚ68ÔËÊä½¢¶Ó" "µÚ69ÔËÊä½¢¶Ó" "µÚ70ÔËÊä½¢¶Ó" "µÚ71ÔËÊä½¢¶Ó" "µÚ72ÔËÊä½¢¶Ó" "µÚ73ÔËÊä½¢¶Ó" "µÚ74ÔËÊä½¢¶Ó" "µÚ75ÔËÊä½¢¶Ó" "µÚ76ÔËÊä½¢¶Ó" "µÚ77ÔËÊä½¢¶Ó" 
+		"µÚ78ÔËÊä½¢¶Ó" "µÚ79ÔËÊä½¢¶Ó" "µÚ80ÔËÊä½¢¶Ó" "µÚ81ÔËÊä½¢¶Ó" "µÚ82ÔËÊä½¢¶Ó" "µÚ83ÔËÊä½¢¶Ó" "µÚ84ÔËÊä½¢¶Ó" "µÚ85ÔËÊä½¢¶Ó" "µÚ86ÔËÊä½¢¶Ó" "µÚ87ÔËÊä½¢¶Ó" "µÚ88ÔËÊä½¢¶Ó" 
+		"µÚ89ÔËÊä½¢¶Ó" "µÚ90ÔËÊä½¢¶Ó" "µÚ91ÔËÊä½¢¶Ó" "µÚ92ÔËÊä½¢¶Ó" "µÚ93ÔËÊä½¢¶Ó" "µÚ94ÔËÊä½¢¶Ó" "µÚ95ÔËÊä½¢¶Ó" "µÚ96ÔËÊä½¢¶Ó" "µÚ97ÔËÊä½¢¶Ó" "µÚ98ÔËÊä½¢¶Ó" "µÚ99ÔËÊä½¢¶Ó" 
+		"µÚ100ÔËÊä½¢¶Ó" 
+	}
+	assault_ship = {
+		"µÚ1ÔËÊä½¢¶Ó" "µÚ2ÔËÊä½¢¶Ó" "µÚ3ÔËÊä½¢¶Ó" "µÚ4ÔËÊä½¢¶Ó" "µÚ5ÔËÊä½¢¶Ó" "µÚ6ÔËÊä½¢¶Ó" "µÚ7ÔËÊä½¢¶Ó" "µÚ8ÔËÊä½¢¶Ó" "µÚ9ÔËÊä½¢¶Ó" "µÚ10ÔËÊä½¢¶Ó" "µÚ11ÔËÊä½¢¶Ó" 
+		"µÚ12ÔËÊä½¢¶Ó" "µÚ13ÔËÊä½¢¶Ó" "µÚ14ÔËÊä½¢¶Ó" "µÚ15ÔËÊä½¢¶Ó" "µÚ16ÔËÊä½¢¶Ó" "µÚ17ÔËÊä½¢¶Ó" "µÚ18ÔËÊä½¢¶Ó" "µÚ19ÔËÊä½¢¶Ó" "µÚ20ÔËÊä½¢¶Ó" "µÚ21ÔËÊä½¢¶Ó" "µÚ22ÔËÊä½¢¶Ó" 
+		"µÚ23ÔËÊä½¢¶Ó" "µÚ24ÔËÊä½¢¶Ó" "µÚ25ÔËÊä½¢¶Ó" "µÚ26ÔËÊä½¢¶Ó" "µÚ27ÔËÊä½¢¶Ó" "µÚ28ÔËÊä½¢¶Ó" "µÚ29ÔËÊä½¢¶Ó" "µÚ30ÔËÊä½¢¶Ó" "µÚ31ÔËÊä½¢¶Ó" "µÚ32ÔËÊä½¢¶Ó" "µÚ33ÔËÊä½¢¶Ó" 
+		"µÚ34ÔËÊä½¢¶Ó" "µÚ35ÔËÊä½¢¶Ó" "µÚ36ÔËÊä½¢¶Ó" "µÚ37ÔËÊä½¢¶Ó" "µÚ38ÔËÊä½¢¶Ó" "µÚ39ÔËÊä½¢¶Ó" "µÚ40ÔËÊä½¢¶Ó" "µÚ41ÔËÊä½¢¶Ó" "µÚ42ÔËÊä½¢¶Ó" "µÚ43ÔËÊä½¢¶Ó" "µÚ44ÔËÊä½¢¶Ó" 
+		"µÚ45ÔËÊä½¢¶Ó" "µÚ46ÔËÊä½¢¶Ó" "µÚ47ÔËÊä½¢¶Ó" "µÚ48ÔËÊä½¢¶Ó" "µÚ49ÔËÊä½¢¶Ó" "µÚ50ÔËÊä½¢¶Ó" "µÚ51ÔËÊä½¢¶Ó" "µÚ52ÔËÊä½¢¶Ó" "µÚ53ÔËÊä½¢¶Ó" "µÚ54ÔËÊä½¢¶Ó" "µÚ55ÔËÊä½¢¶Ó" 
+		"µÚ56ÔËÊä½¢¶Ó" "µÚ57ÔËÊä½¢¶Ó" "µÚ58ÔËÊä½¢¶Ó" "µÚ59ÔËÊä½¢¶Ó" "µÚ60ÔËÊä½¢¶Ó" "µÚ61ÔËÊä½¢¶Ó" "µÚ62ÔËÊä½¢¶Ó" "µÚ63ÔËÊä½¢¶Ó" "µÚ64ÔËÊä½¢¶Ó" "µÚ65ÔËÊä½¢¶Ó" "µÚ66ÔËÊä½¢¶Ó" 
+		"µÚ67ÔËÊä½¢¶Ó" "µÚ68ÔËÊä½¢¶Ó" "µÚ69ÔËÊä½¢¶Ó" "µÚ70ÔËÊä½¢¶Ó" "µÚ71ÔËÊä½¢¶Ó" "µÚ72ÔËÊä½¢¶Ó" "µÚ73ÔËÊä½¢¶Ó" "µÚ74ÔËÊä½¢¶Ó" "µÚ75ÔËÊä½¢¶Ó" "µÚ76ÔËÊä½¢¶Ó" "µÚ77ÔËÊä½¢¶Ó" 
+		"µÚ78ÔËÊä½¢¶Ó" "µÚ79ÔËÊä½¢¶Ó" "µÚ80ÔËÊä½¢¶Ó" "µÚ81ÔËÊä½¢¶Ó" "µÚ82ÔËÊä½¢¶Ó" "µÚ83ÔËÊä½¢¶Ó" "µÚ84ÔËÊä½¢¶Ó" "µÚ85ÔËÊä½¢¶Ó" "µÚ86ÔËÊä½¢¶Ó" "µÚ87ÔËÊä½¢¶Ó" "µÚ88ÔËÊä½¢¶Ó" 
+		"µÚ89ÔËÊä½¢¶Ó" "µÚ90ÔËÊä½¢¶Ó" "µÚ91ÔËÊä½¢¶Ó" "µÚ92ÔËÊä½¢¶Ó" "µÚ93ÔËÊä½¢¶Ó" "µÚ94ÔËÊä½¢¶Ó" "µÚ95ÔËÊä½¢¶Ó" "µÚ96ÔËÊä½¢¶Ó" "µÚ97ÔËÊä½¢¶Ó" "µÚ98ÔËÊä½¢¶Ó" "µÚ99ÔËÊä½¢¶Ó" 
+		"µÚ100ÔËÊä½¢¶Ó" 
 	}
 }
 
 ministers = {
 	1 = {
-		name = "Adolf Hitler"
+		name = "°¢µÀ·ò¡¤Ï£ÌØÀÕ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M1
@@ -429,7 +405,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	2 = {
-		name = "Rudolf Hess"
+		name = "Â³µÀ·ò¡¤ºÕË¹"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M40
@@ -438,15 +414,16 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	3 = {
-		name = "Constantin von Neurath"
+		name = "¿µË¹Ì¹¶¡¡¤·ë¡¤Å£ÀµÌØ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M3
 		foreign_minister = great_compromiser
+		foreign_minister = great_compromiser
 		start_date = 1936.1.1
 	}
 	4 = {
-		name = "Werner von Blomberg"
+		name = "Î¬¶ûÄÉ¡¤·ë¡¤²¼Â¡±´¸ñ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M4
@@ -455,7 +432,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	5 = {
-		name = "Wilhelm Frick"
+		name = "ÍşÁ®¡¤¸¥Àï¿Ë"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M5
@@ -464,32 +441,33 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	6 = {
-		name = "Wilhelm Canaris"
+		name = "ÍşÁ®¡¤¿¨ÄÉÀïË¹"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M6
 		minister_of_intelligence = dismal_enigma
+		minister_of_intelligence = dismal_enigma
 		start_date = 1936.1.1
 	}
 	7 = {
-		name = "Ludwig Beck"
+		name = "Â·µÂÎ¬¸ñ¡¤±´¿Ë"
 		ideology = paternal_autocrat
-		loyalty = 0.75
+		loyalty = 1.00
 		picture = M7
-		chief_of_staff = school_of_fire_support
+		chief_of_staff = school_of_manoeuvre
 		head_of_state = resigned_generalissimo
 		start_date = 1936.1.1
 	}
 	8 = {
-		name = "Werner von Fritsch"
+		name = "Î¬¶ûÄÉ¡¤·ë¡¤¸¥ÀïÆæ"
 		ideology = paternal_autocrat
-		loyalty = 0.75
+		loyalty = 1.00
 		picture = M8
-		chief_of_army = decisive_battle_doctrine
+		chief_of_army = armoured_spearhead_doctrine
 		start_date = 1936.1.1
 	}
 	9 = {
-		name = "Erich Raeder"
+		name = "°£ÀïÏ£¡¤À×µÂ¶û"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M9
@@ -497,7 +475,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	10 = {
-		name = "Hermann Göring"
+		name = "ºÕ¶ûÂü¡¤¸êÁÖ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M10
@@ -508,7 +486,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	246 = {
-		name = "Joseph Goebbels"
+		name = "Ô¼Éª·ò¡¤¸êÅà¶û"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M56
@@ -518,7 +496,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	32 = {
-		name = "Karl Dönitz"
+		name = "¿¨¶û¡¤µËÄá´Ä"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M32
@@ -528,7 +506,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	33 = {
-		name = "Oskar von Hindenburg"
+		name = "°ÂË¹¿¨¡¤·ë¡¤ĞËµÇ±¤"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M33
@@ -537,16 +515,17 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	35 = {
-		name = "Hjalmar Schacht"
+		name = "ÑÇ¶ûÂí¡¤É³ºÕÌØ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M14
+		armament_minister = administrative_genius
 		armament_minister = administrative_genius
 		minister_of_intelligence = industrial_specialist
 		start_date = 1936.1.1
 	}
 	36 = {
-		name = "Wilhelm II"
+		name = "ÍşÁ®¶şÊÀ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M36
@@ -554,15 +533,33 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	37 = {
-		name = "Wilhelm III"
+		name = "ÍşÁ®ÈıÊÀ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M37
 		head_of_state = benevolent_gentleman
 		start_date = 1942.1.1
 	}
+	38 = {
+		name = "ÌØ°Â¶à¶û¡¤»ôÒÁË¹"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M38
+		head_of_state = die_hard_reformer
+		foreign_minister = apologetic_clerk
+		start_date = 1946.1.1
+	}
+	39 = {
+		name = "Â·µÂÎ¬¸ñ¡¤À×¶÷"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M21
+		head_of_state = insignificant_layman
+		minister_of_security = efficient_sociopath
+		start_date = 1936.1.1
+	}
 	42 = {
-		name = "Martin Bormann"
+		name = "Âí¶¡¡¤±«Âü"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M42
@@ -571,16 +568,17 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	43 = {
-		name = "Albert Speer"
+		name = "°¢¶û²®ÌØ¡¤Ê©Åå¶û"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M43
 		head_of_government = corporate_suit
 		armament_minister = administrative_genius
+		armament_minister = administrative_genius
 		start_date = 1942.1.1
 	}
 	44 = {
-		name = "Oskar Meissner"
+		name = "°ÂË¹¿¨¡¤ÂõË¹ÄÉ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M44
@@ -589,15 +587,16 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45 = {
-		name = "Ludwig Fulda"
+		name = "Â·µÂÎ¬¸ñ¡¤¸»¶û´ï"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M45
 		head_of_government = happy_amateur
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1936.1.1
 	}
 	46 = {
-		name = "Albert Dufour-Feronce"
+		name = "°¢¶û²®ÌØ¡¤µÏ¸»¶û-·ÑÁúË¹"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M46
@@ -606,17 +605,18 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	47 = {
-		name = "Franz von Papen"
+		name = "¸¥ÀÊ´Ä¡¤·ë¡¤°Í±¾"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M47
 		head_of_government = happy_amateur
 		foreign_minister = great_compromiser
 		minister_of_security = compassionate_gentleman
+		minister_of_security = compassionate_gentleman
 		start_date = 1936.1.1
 	}
 	48 = {
-		name = "Carl Friedrich Goerdeler"
+		name = "¿¨¶û¡¤¸¥ÀïµÂÀï¿Ë¡¤¸ñµÂÀÕ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M12
@@ -625,17 +625,55 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	49 = {
-		name = "Johann Schwerin von Krosigk"
+		name = "Ô¼º²¡¤Ê²Î´ÁÖ¡¤·ë¡¤¿ËÂŞÎ÷¿Ë"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M49
 		head_of_government = silent_workhorse
 		foreign_minister = apologetic_clerk
+		foreign_minister = apologetic_clerk
 		armament_minister = resource_industrialist
 		start_date = 1944.1.1
 	}
+	50 = {
+		name = "¿µÀ­µÂ¡¤°¢µÇÄÉ"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M50
+		head_of_government = silent_workhorse
+		foreign_minister = great_compromiser
+		start_date = 1946.1.1
+	}
+	51 = {
+		name = "¶÷Ë¹ÌØ¡¤Ì¨¶ûÂü"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M22
+		head_of_government = backroom_backstabber
+		minister_of_intelligence = industrial_specialist
+		start_date = 1936.1.1
+	}
+	52 = {
+		name = "¶÷Ë¹ÌØ¡¤ÍĞÀÕ"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M25
+		head_of_government = ambitious_union_boss
+		minister_of_security = man_of_the_people
+		start_date = 1939.1.1
+	}
+	53 = {
+		name = "Íß¶ûÌØ¡¤ÎÚ²¼ÀûÏ£"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M53
+		head_of_government = backroom_backstabber
+		foreign_minister = the_cloak_n_dagger_schemer
+		minister_of_security = prince_of_terror
+		start_date = 1946.1.1
+	}
 	55 = {
-		name = "Joachim von Ribbentrop"
+		name = "Ô¼°¢Ï£Ä·¡¤·ë¡¤Àï±öÌØÂå¸¦"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M55
@@ -643,7 +681,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	57 = {
-		name = "Alfred Rosenberg"
+		name = "°¢¶û¸¥À×µÂ¡¤ÂŞÉ­±´¸ñ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M57
@@ -651,7 +689,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	58 = {
-		name = "Arthur Seyss-Inquart"
+		name = "ÑÇÉª¡¤ÈüË¹-Ó¢¿äÌØ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M58
@@ -660,15 +698,23 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	60 = {
-		name = "Ludwig Kastl"
+		name = "Â·µÂÎ¬¸ñ¡¤¿¨Ë¹ÌØ¶û"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M60
 		foreign_minister = biased_intellectual
 		start_date = 1936.1.1
 	}
+	64 = {
+		name = "ÍĞÂíË¹¡¤Âü"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M64
+		foreign_minister = general_staffer
+		start_date = 1936.1.1
+	}
 	66 = {
-		name = "Wilhelm Waetzoldt"
+		name = "ÍşÁ®¡¤Î¤´ë¶ûÌØ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M66
@@ -676,7 +722,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	68 = {
-		name = "Friedrich-Werner von der Schulenberg"
+		name = "¸¥ÀïµÂÀï¿Ë-Î¬¶ûÄÉ¡¤·ë¡¤µÂ¶û¡¤ÊæÂ×±´¸ñ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M68
@@ -684,7 +730,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	69 = {
-		name = "Ulrich von Hassel"
+		name = "ÎÚ¶ûÀïÏ£¡¤·ë¡¤¹şÈû¶û"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M13
@@ -692,15 +738,23 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	70 = {
-		name = "Carl Melchior"
+		name = "¿¨¶û¡¤Ã·¶û»ù°Â¶û"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M70
 		foreign_minister = ideological_crusader
 		start_date = 1945.1.1
 	}
+	74 = {
+		name = "ºÕ¶ûÄÂÌØ¡¤ºÕ´Ä·Æ¶ûµÂ"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M23
+		foreign_minister = ideological_crusader
+		start_date = 1940.1.1
+	}
 	78 = {
-		name = "Friedrich Flick"
+		name = "¸¥ÀïµÂÀï¿Ë¡¤¸¥Àû¿Ë"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M78
@@ -708,7 +762,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	80 = {
-		name = "Walter Funk"
+		name = "Íß¶ûÌØ¡¤·á¿Ë"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M80
@@ -716,7 +770,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	81 = {
-		name = "Walter Darré"
+		name = "Íß¶ûÌØ¡¤´ïÀ×"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M81
@@ -724,7 +778,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	82 = {
-		name = "Kurt Daluege"
+		name = "¿â¶ûÌØ¡¤´ïÂÔ¸ñ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M82
@@ -733,7 +787,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	83 = {
-		name = "Max Amann"
+		name = "Âí¿ËË¹¡¤°¢Âü"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M83
@@ -741,7 +795,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	84 = {
-		name = "Franz Xavier-Schwarz"
+		name = "¸¥ÀÊ´Ä¡¤ÔóÎ¬¶û-Ê©Íß´Ä"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M84
@@ -749,7 +803,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	87 = {
-		name = "Oswald Pohl"
+		name = "°ÂË¹Íß¶ûµÂ¡¤²¨¶û"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M87
@@ -757,7 +811,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	88 = {
-		name = "Robert Ley"
+		name = "ÂŞ²®ÌØ¡¤À³"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M88
@@ -765,7 +819,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	89 = {
-		name = "Karl Otto Saur"
+		name = "¿¨¶û¡¤°ÂÍĞ¡¤ÉÜ¶û"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M89
@@ -773,7 +827,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	90 = {
-		name = "Fritz Thyssen"
+		name = "¸¥Àï´Ä¡¤µÙÉ­"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M90
@@ -781,7 +835,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	91 = {
-		name = "Fritz Todt"
+		name = "¸¥Àï´Ä¡¤ÍĞÌØ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M91
@@ -789,17 +843,17 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	93 = {
-		name = "Hans-Georg von Friedeburg"
+		name = "ººË¹-¸ñ°Â¶û¸ñ¡¤·ë¡¤¸¥ÀïµÂ±¤"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M93
 		armament_minister = submarine_proponent
 		minister_of_intelligence = naval_intelligence_specialist
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1942.1.1
 	}
 	94 = {
-		name = "Fritz Tornow"
+		name = "¸¥Àï´Ä¡¤ÍĞ¶ûÅµ"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M94
@@ -807,7 +861,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	95 = {
-		name = "Julius Curtius"
+		name = "ÓÈÀûÎÚË¹¡¤¿â¶ûÌáÎÚË¹"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M95
@@ -815,7 +869,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	96 = {
-		name = "Paul Lejeune-Jung"
+		name = "±£ÂŞ¡¤ÀÕÈÈÄÉ-Èİ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M96
@@ -823,7 +877,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	97 = {
-		name = "Alfried Krupp"
+		name = "°¢¶û¸¥À×µÂ¡¤¿ËÂ²²®"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M97
@@ -831,7 +885,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	98 = {
-		name = "Georg Thomas"
+		name = "¸ñ°Â¶û¸ñ¡¤ÍĞÂíË¹"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M98
@@ -839,7 +893,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	101 = {
-		name = "Johannes Popitz"
+		name = "Ô¼º²ÄÚË¹¡¤²¨Æ¤´Ä"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M101
@@ -847,15 +901,47 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	102 = {
-		name = "Claus von Stauffenberg"
+		name = "¿ËÀÍË¹¡¤·ë¡¤Ê©ÌÕ·Ò±´¸ñ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M102
 		armament_minister = infantry_proponent
 		start_date = 1944.1.1
 	}
+	103 = {
+		name = "¸¥Àï´Ä¡¤Éá·Ñ¶û"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M103
+		armament_minister = resource_industrialist
+		start_date = 1946.1.1
+	}
+	104 = {
+		name = "Â·µÂÎ¬¸ñ¡¤°£¹şµÂ"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M104
+		armament_minister = administrative_genius
+		start_date = 1947.1.1
+	}
+	105 = {
+		name = "°¢¶û²®ÌØ¡¤¿×´Ä"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M105
+		armament_minister = resource_industrialist
+		start_date = 1936.1.1
+	}
+	106 = {
+		name = "Î¬Àû¡¤Ã÷á¯±´¸ñ"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M24
+		armament_minister = administrative_genius
+		start_date = 1942.1.1
+	}
 	108 = {
-		name = "Heinrich Himmler"
+		name = "º£ÒòÀïÏ£¡¤Ï£Ä·À³"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M108
@@ -863,7 +949,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	109 = {
-		name = "Viktor Lutze"
+		name = "Î¬¿ËÍĞ¡¤Â¬²ß"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M109
@@ -871,16 +957,17 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	111 = {
-		name = "Heinrich Müller"
+		name = "º£ÒòÀïÏ£¡¤Ã×ÀÕ"
 		ideology = national_socialist
 		loyalty = 0.25
 		picture = M26
 		minister_of_security = prince_of_terror
+		minister_of_security = efficient_sociopath
 		minister_of_intelligence = political_specialist
 		start_date = 1943.1.1
 	}
 	113 = {
-		name = "Karl Hanke"
+		name = "¿¨¶û¡¤ºº¿Ë"
 		ideology = national_socialist
 		loyalty = 0.25
 		picture = M113
@@ -888,7 +975,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	114 = {
-		name = "Otto Georg Thierack"
+		name = "°ÂÍĞ¡¤¸ñ°Â¶û¸ñ¡¤µÙ°£À­¿Ë"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M114
@@ -896,7 +983,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	116 = {
-		name = "Ernst Trendelenburg"
+		name = "¶÷Ë¹ÌØ¡¤ÌØÂ×µÂÂ×±¤"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M116
@@ -904,7 +991,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	117 = {
-		name = "Alfred Hugenberg"
+		name = "°¢¶û¸¥À×µÂ¡¤ºú¸ù±´¸ñ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M117
@@ -913,7 +1000,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	119 = {
-		name = "Arthur Nebe"
+		name = "ÑÇÉª¡¤ÄÚ±´"
 		ideology = fascistic
 		loyalty = 0.50
 		picture = M119
@@ -921,7 +1008,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	120 = {
-		name = "Arthur Axmann"
+		name = "ÑÇÉª¡¤°¢¿ËË¹Âü"
 		ideology = fascistic
 		loyalty = 0.50
 		picture = M120
@@ -929,7 +1016,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	121 = {
-		name = "Johann von Bernstorff"
+		name = "Ô¼º²¡¤·ë¡¤²®¶÷Ë¹ÍĞ·ò"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M121
@@ -937,7 +1024,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	122 = {
-		name = "Karl Sack"
+		name = "¿¨¶û¡¤Èø¿Ë"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M122
@@ -945,7 +1032,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	123 = {
-		name = "Wilhelm von Gayl"
+		name = "ÍşÁ®¡¤·ë¡¤¸Ç¶û"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M15
@@ -953,7 +1040,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	124 = {
-		name = "Walter Schellenberg"
+		name = "Íß¶ûÌØ¡¤ÉáÂ×±´¸ñ¶û"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M124
@@ -962,7 +1049,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	125 = {
-		name = "Josef Wirmer"
+		name = "Ô¼Éª·ò¡¤Î¬¶ûÄ¬"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M125
@@ -970,7 +1057,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	126 = {
-		name = "Fritz von Schulenburg"
+		name = "¸¥Àï´Ä¡¤·ë¡¤ÊæÂ×±¤"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M126
@@ -978,15 +1065,39 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	127 = {
-		name = "Henning von Tresckow"
+		name = "ºàÄş¡¤·ë¡¤ÌØÀ×Ë¹¿Æ"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M127
 		minister_of_security = crime_fighter
 		start_date = 1944.1.1
 	}
+	129 = {
+		name = "¿¨¶û¡¤°¢ÅµµÂ"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M129
+		minister_of_security = crime_fighter
+		start_date = 1946.1.1
+	}
+	130 = {
+		name = "¹ÅË¹Ëş·ò¡¤º£ÄùÂü"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M130
+		minister_of_security = man_of_the_people
+		start_date = 1947.1.1
+	}
+	133 = {
+		name = "ÓÈÀûÎÚË¹¡¤À³±´¶û"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M133
+		minister_of_security = compassionate_gentleman
+		start_date = 1942.1.1
+	}
 	138 = {
-		name = "Ernst Kaltenbrunner"
+		name = "¶÷Ë¹ÌØ¡¤¿¨¶ûëø²¼Â×ÄÉ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M138
@@ -994,7 +1105,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	143 = {
-		name = "Baldur von Schirach"
+		name = "°Í¶û¶Å¶û¡¤·ë¡¤Ï¯À­ºÕ"
 		ideology = fascistic
 		loyalty = 0.50
 		picture = M143
@@ -1002,7 +1113,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	144 = {
-		name = "Carl von Schubert"
+		name = "¿¨¶û¡¤·ë¡¤Êæ²®ÌØ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M144
@@ -1010,7 +1121,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	145 = {
-		name = "Otto Strasser"
+		name = "°ÂÍĞ¡¤Ê©ÌØÀ­Èû¶û"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M145
@@ -1018,7 +1129,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	146 = {
-		name = "Hans Oster"
+		name = "ººË¹¡¤°ÂË¹ÌØ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M146
@@ -1026,23 +1137,40 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	147 = {
-		name = "Georg Hansen"
+		name = "¸ñ°Â¶û¸ñ¡¤ººÉ­"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M147
 		minister_of_intelligence = technical_specialist
 		start_date = 1940.1.1
 	}
-	153 = {
-		name = "Friedrich Paulus"
-		ideology = national_socialist
+	149 = {
+		name = "ººË¹¡¤°£¹şµÂ"
+		ideology = social_conservative
 		loyalty = 1.00
-		picture = L215
-		chief_of_staff = school_of_manoeuvre
+		picture = M149
+		minister_of_intelligence = political_specialist
+		start_date = 1946.1.1
+	}
+	150 = {
+		name = "À³Òò¹şµÂ¡¤¸ñÂ×"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M150
+		minister_of_intelligence = dismal_enigma
+		start_date = 1947.1.1
+	}
+	152 = {
+		name = "°£ÀïÏ£¡¤ÎºÄÉÌØ"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M152
+		minister_of_intelligence = research_specialist
+		chief_of_staff = school_of_psychology
 		start_date = 1938.1.1
 	}
 	155 = {
-		name = "Franz Halder"
+		name = "¸¥ÀÊ´Ä¡¤¹şµÂ¶û"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M155
@@ -1050,7 +1178,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	156 = {
-		name = "Alfred Jodl"
+		name = "°¢¶û¸¥À×µÂ¡¤Ô¼µÂ¶û"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M156
@@ -1058,7 +1186,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	157 = {
-		name = "Heinz Guderian"
+		name = "º£Òò´Ä¡¤¹ÅµÂÀï°²"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M157
@@ -1066,7 +1194,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	158 = {
-		name = "Hans Krebs"
+		name = "ººË¹¡¤¿ËÀ×²¼Ë¹"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M158
@@ -1074,7 +1202,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	159 = {
-		name = "Fritz Bayerlein"
+		name = "¸¥Àï´Ä¡¤°İ¶ûÀ³Òò"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M159
@@ -1082,7 +1210,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	160 = {
-		name = "Erich Hoepner"
+		name = "°£ÀïÏ£¡¤ºÕÆÕÄÉ"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M18
@@ -1091,7 +1219,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	162 = {
-		name = "Erwin von Witzleben"
+		name = "Å·ÎÄ¡¤·ë¡¤Î¬´ÄÀ³±¾"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M17
@@ -1100,7 +1228,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	163 = {
-		name = "Kurt Zeitzler"
+		name = "¿â¶ûÌØ¡¤²Ì´ÄÀÕ"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M163
@@ -1108,7 +1236,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	165 = {
-		name = "Erwin Rommel"
+		name = "Å·ÎÄ¡¤Â¡ÃÀ¶û"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M165
@@ -1116,7 +1244,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	166 = {
-		name = "Wilhelm Grüner"
+		name = "ÍşÁ®¡¤¸ñÂÀÄÉ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M166
@@ -1124,7 +1252,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	168 = {
-		name = "Adolf Heusinger"
+		name = "°¢µÀ·ò¡¤»ôÒÁĞÁ¸ñ"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M168
@@ -1132,7 +1260,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	169 = {
-		name = "Julius Ringel"
+		name = "ÓÈÀûÎÚË¹¡¤ÁÖ¸ñ¶û"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M169
@@ -1140,8 +1268,26 @@ ministers = {
 		chief_of_army = guns_and_butter_doctrine
 		start_date = 1944.1.1
 	}
+	170 = {
+		name = "ººË¹¡¤Ê©ÅÉµÂ¶û"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M170
+		chief_of_staff = school_of_mass_combat
+		chief_of_army = decisive_battle_doctrine
+		start_date = 1946.1.1
+	}
+	171 = {
+		name = "¶÷Ë¹ÌØ¡¤ÎÖ¶ûÎ¤²®"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M27
+		chief_of_staff = school_of_mass_combat
+		minister_of_intelligence = industrial_specialist
+		start_date = 1936.1.1
+	}
 	174 = {
-		name = "Walther von Brauchitsch"
+		name = "Íß¶ûÌØ¡¤·ë¡¤²¼ÀÍÏ£Ææ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M174
@@ -1149,7 +1295,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	175 = {
-		name = "Kurt von Hammerstein-Equord"
+		name = "¿â¶ûÌØ¡¤·ë¡¤¹şÄ¬Ê©Ì©Òò-°£¿ËÎÖµÂ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M175
@@ -1157,7 +1303,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	176 = {
-		name = "Wilhelm Keitel"
+		name = "ÍşÁ®¡¤¿­ÌØ¶û"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M176
@@ -1165,7 +1311,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	178 = {
-		name = "Ferdinand Schörner"
+		name = "·ÑµÏÄÏµÂ¡¤Éá¶ûÄÉ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M178
@@ -1173,23 +1319,15 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	179 = {
-		name = "Erich Ludendorff"
+		name = "°£ÀïÏ£¡¤Â³µÇµÀ·ò"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M179
 		chief_of_army = elastic_defence_doctrine
 		start_date = 1936.1.1
 	}
-	181 = {
-		name = "Gerd von Rundstedt"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = L335
-		chief_of_army = armoured_spearhead_doctrine
-		start_date = 1938.1.1
-	}
 	182 = {
-		name = "Fedor von Bock"
+		name = "·Ñ¶à¶û¡¤·ë¡¤²©¿Ë"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M182
@@ -1197,15 +1335,31 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	185 = {
-		name = "Walter von Lüttwitz"
+		name = "Íß¶ûÌØ¡¤·ë¡¤ÂÀÌØÎ¬´Ä"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M185
 		chief_of_army = decisive_battle_doctrine
 		start_date = 1936.1.1
 	}
+	188 = {
+		name = "ÌØ°Â¶à¶û¡¤²¼À¼¿Ë"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M188
+		chief_of_army = armoured_spearhead_doctrine
+		start_date = 1946.1.1
+	}
+	190 = {
+		name = "ººË¹¡¤¿¨ÀÕ"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M28
+		chief_of_army = decisive_battle_doctrine
+		start_date = 1936.1.1
+	}
 	194 = {
-		name = "Kurt Freiwald"
+		name = "¿â¶ûÌØ¡¤¸¥ÀµÍß¶ûµÂ"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M194
@@ -1213,31 +1367,47 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	195 = {
-		name = "Alfred Saalwächter"
+		name = "°¢¶û¸¥À×µÂ¡¤Èø¶ûÍßÆæÌØ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M195
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1936.1.1
 	}
 	198 = {
-		name = "Conrad Albrecht"
+		name = "¿µÀ­µÂ¡¤°¢¶û²¼À×¿ËÌØ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M198
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1939.1.1
 	}
 	199 = {
-		name = "Gustav Kieseritzky"
+		name = "¹ÅË¹Ëş·ò¡¤»ùÔóÀï´Ä»ù"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M199
 		chief_of_navy = base_control_doctrine
 		start_date = 1940.1.1
 	}
+	200 = {
+		name = "°£ÀïÏ£¡¤±´"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M200
+		chief_of_navy = open_seas_doctrine
+		start_date = 1946.1.1
+	}
+	201 = {
+		name = "¸¥Àï´Ä¡¤ÉáÂ×"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M29
+		chief_of_navy = base_control_doctrine
+		start_date = 1936.1.1
+	}
 	203 = {
-		name = "Hugo Sperrle"
+		name = "ºú¸ê¡¤Ë¹Åå¶ûÀÕ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M203
@@ -1245,7 +1415,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	204 = {
-		name = "Robert Ritter von Greim"
+		name = "ÂŞ²®ÌØ¡¤ÀïÌØ¶û¡¤·ë¡¤¸ñÀ×Ä·"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M204
@@ -1253,7 +1423,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	205 = {
-		name = "Karl Koller"
+		name = "¿¨¶û¡¤¿ÆÀÕ"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M205
@@ -1261,7 +1431,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	206 = {
-		name = "Erhard Milch"
+		name = "°£²®¹şµÂ¡¤Ã×¶ûÏ£"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M206
@@ -1269,7 +1439,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	207 = {
-		name = "Albert Kesselring"
+		name = "°¢¶û²®ÌØ¡¤¿­ÈûÁÖ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M207
@@ -1277,15 +1447,15 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	208 = {
-		name = "Carl Friedrich von Siemens"
+		name = "¿¨¶û¡¤¸¥ÀïµÂÀï¿Ë¡¤·ë¡¤Î÷ÃÅ×Ó"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M208
-		armament_minister = resource_industrialist
+		chief_of_air = air_superiority_doctrine
 		start_date = 1936.1.1
 	}
 	209 = {
-		name = "Ernst Udet"
+		name = "¶÷Ë¹ÌØ¡¤ÎÚµÂÌØ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M20
@@ -1293,15 +1463,23 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	210 = {
-		name = "Wilhelm Oxenius"
+		name = "ÍşÁ®¡¤°Â¿ËË¹Å¦Ë¹"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M210
 		chief_of_air = naval_aviation_doctrine
 		start_date = 1945.1.1
 	}
+	23 = {
+		name = "ºÚ¶ûÃ·ÌØ¡¤ºÕ´Ä·Æ¶ûµÂ"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M23
+		foreign_minister = ideological_crusader
+		start_date = 1936.1.1
+	}
 	214 = {
-		name = "Franz Xaver Ritter von Epp"
+		name = "¸¥ÀÊ´Ä¡¤¿ËÈøÎ¤¶û¡¤ÀïÌØ¶û¡¤·ë¡¤°£ÆÕ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M214
@@ -1310,7 +1488,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	216 = {
-		name = "Hans Heinrich Lammers"
+		name = "ººË¹¡¤º£ÒòÀïÏ£¡¤À­Ä¬Ë¹"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M216
@@ -1318,7 +1496,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	217 = {
-		name = "Friedrich Wilhelm Kritzinger"
+		name = "¸¥ÀïµÂÀï¿Ë¡¤ÍşÁ®¡¤¿ËÀïÇÕ¸ñ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M217
@@ -1326,7 +1504,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	220 = {
-		name = "Franz Seldte"
+		name = "¸¥ÀÊ´Ä¡¤Ôó¶ûÌØ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M220
@@ -1334,7 +1512,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	221 = {
-		name = "Konstantin Hierl"
+		name = "¿µË¹Ì¹¶¡¡¤Ï£Ò®¶û"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M221
@@ -1342,7 +1520,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	222 = {
-		name = "Xaver Dorsch"
+		name = "¿ËÈøÎ¤¶û¡¤¶àÊ©"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M222
@@ -1350,7 +1528,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	223 = {
-		name = "Franz Gürtner"
+		name = "¸¥ÀÊ´Ä¡¤¾ÓÌØÄÉ"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M223
@@ -1358,7 +1536,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	226 = {
-		name = "Walter Buch"
+		name = "Íß¶ûÌØ¡¤²¼ºÕ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M226
@@ -1366,7 +1544,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	227 = {
-		name = "Hans Frank"
+		name = "ººË¹¡¤¸¥À¼¿Ë"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M227
@@ -1374,7 +1552,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	228 = {
-		name = "Roland Freisler"
+		name = "ÂŞÀ¼¡¤¸¥ÀµË¹ÀÕ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M228
@@ -1382,15 +1560,15 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	229 = {
-		name = "Erich von Manstein"
+		name = "°£ÀïÏ£¡¤·ë¡¤ÂüÊ©Ì©Òò"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = L324
 		chief_of_staff = school_of_manoeuvre
-		start_date = 1938.1.1
+		start_date = 1942.1.1
 	}
 	230 = {
-		name = "Ernst Busch"
+		name = "¶÷Ë¹ÌØ¡¤²¼Ê©"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = L33
@@ -1398,7 +1576,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	231 = {
-		name = "Günther von Kluge"
+		name = "ÔÆÌØ¡¤·ë¡¤¿ËÂ¬¸ñ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = L311
@@ -1406,7 +1584,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	232 = {
-		name = "Paul Hausser"
+		name = "±£ÂŞ¡¤ºÀÈû¶û"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = L503
@@ -1414,15 +1592,15 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	233 = {
-		name = "Wilhelm Marschall"
+		name = "ÍşÁ®¡¤ÂíÉ³¶û"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = L407
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1941.1.1
 	}
 	234 = {
-		name = "Walter Warzecha"
+		name = "Íß¶ûÌØ¡¤ÍßÈÈ¹ş"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = L891
@@ -1430,7 +1608,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	235 = {
-		name = "Otto Dessloch"
+		name = "°ÂÍĞ¡¤µÂË¹ÂŞÆæ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = L434
@@ -1438,7 +1616,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	236 = {
-		name = "Ulrich Grauert"
+		name = "ÎÚ¶ûÀïÏ£¡¤¸ñÀÍ¶ûÌØ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = L439
@@ -1446,7 +1624,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	237 = {
-		name = "Hans-Jürgen Stumpff"
+		name = "ººË¹-ÓÚ¶û¸ù¡¤Ê©Í¨ÆÕ·ò"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = L471
@@ -1454,15 +1632,15 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	238 = {
-		name = "Walter von Reichenau"
+		name = "Íß¶ûÌØ¡¤·ë¡¤ÀµĞªè§"
 		ideology = national_socialist
-		loyalty = 0.75
+		loyalty = 1.00
 		picture = L334
-		chief_of_army = armoured_spearhead_doctrine
-		start_date = 1938.1.1
+		chief_of_staff = school_of_fire_support
+		start_date = 1941.1.1
 	}
 	241 = {
-		name = "Lutz von Schwerin-Krosigk"
+		name = "Â¬´Ä¡¤·ë¡¤Ê²Î´ÁÖ-¿ËÂŞÎ÷¿Ë"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M241
@@ -1470,7 +1648,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	242 = {
-		name = "Paul Giesler"
+		name = "±£ÂŞ¡¤¼ªË¹ÀÕ"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M242
@@ -1478,7 +1656,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	243 = {
-		name = "Werner Naumann"
+		name = "Î¬¶ûÄÉ¡¤è§Âü"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M243
@@ -1486,15 +1664,40 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	244 = {
-		name = "Reinhard Heydrich"
+		name = "À³Òò¹şµÂ¡¤º£µÂÀïÏ£"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M244
 		minister_of_security = prince_of_terror
 		start_date = 1936.1.1
 	}
+	254 = {
+		name = "ºÕ¶ûÄÂÌØ¡¤·ë¡¤Äª¶ûÌØ¿Ë"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M246
+		minister_of_security = compassionate_gentleman
+		start_date = 1939.1.1
+	}
+	247 = {
+		name = "ººË¹¡¤¼ªÔó·ÆÎÚË¹"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M247
+		minister_of_intelligence = dismal_enigma
+		start_date = 1939.1.1
+	}
+	248 = {
+		name = "ººË¹¡¤¶àÄÉÄá"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M248
+		minister_of_security = silent_lawyer
+		minister_of_intelligence = political_specialist
+		start_date = 1936.1.1
+	}
 	250 = {
-		name = "Rudolf Diels"
+		name = "Â³µÀ·ò¡¤µÏ¶ûË¹"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M250
@@ -1502,7 +1705,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	251 = {
-		name = "Gustav Krupp"
+		name = "¹ÅË¹Ëş·ò¡¤¿ËÂ²²®"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M251
@@ -1510,7 +1713,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	252 = {
-		name = "Fritz Saukel"
+		name = "¸¥Àï´Ä¡¤ÉÜ¿Ë¶û"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M252
@@ -1518,36 +1721,11 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	255 = {
-		name = "Hans Ulrich Rudel"
+		name = "ººË¹¡¤ÎÚ¶ûÀïÏ£¡¤Â³µÂ¶û"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M210
 		chief_of_air = air_superiority_doctrine
 		start_date = 1949.1.1
-	}
-	256 = {
-		name = "Rudolf von Moreau"
-		ideology = fascistic
-		loyalty = 1.00
-		picture = M10269
-		chief_of_air = carpet_bombing_doctrine
-		start_date = 1938.1.1
-	}
-	# Generic dummy ministers
-	95329 = {
-		name = "Nameless Clerk"
-		ideology = fascistic
-		loyalty = 1.0
-		picture = MFascistic
-		head_of_government = mostly_harmless
-		start_date = 1936.1.1
-	}
-	95330 = {
-		name = "Nameless Clerk"
-		ideology = paternal_autocrat
-		loyalty = 1.0
-		picture = MPaternalAutocrat
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
 	}
 }

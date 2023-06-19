@@ -1,23 +1,21 @@
 color = { 119  48  39 }
-graphical_culture = British
+graphical_culture = Us
 
 last_election = 1935.10.14
 duration = 60
 
 default_templates = {
 	ENG_infantry = {
-		infnatry_brigade
-		infnatry_brigade
-		infnatry_brigade
-		horse_towed_support_brigade
+		motorized_brigade
+		motorized_brigade
+		motorized_brigade
 	}
 	ENG_motorized = {
 		motorized_brigade
 		motorized_brigade
-		motorized_brigade
-		truck_towed_support_brigade		
 	}
 	ENG_armoured_1936 = {
+		armor_brigade
 		light_armor_brigade
 		light_armor_brigade
 		motorized_brigade
@@ -26,190 +24,152 @@ default_templates = {
 		armor_brigade
 		armor_brigade
 		motorized_brigade
-		self_propelled_towed_support_brigade		
 	}
 	ENG_airborne = {
 		paratrooper_brigade
 		paratrooper_brigade
 		paratrooper_brigade
 	}
-	ENG_marine = {
-		marine_brigade
-		marine_brigade
-		marine_brigade		
-	}
-	ENG_alpine = {
-		bergsjaeger_brigade
-		bergsjaeger_brigade
-	}	
-	ENG_garrison = {
-		garrison_brigade
-		garrison_brigade
-		garrison_brigade		
-	}
-	ENG_militia = {
-		militia_brigade
-		militia_brigade
-		militia_brigade		
-	}	
 }
 
 unit_names = {
 	infantry_brigade = {
-		"1st Canadian Infantry Div." "2nd Canadian Infantry Div." "3rd Canadian Infantry Div." "6th Canadian Infantry Div." "7th Canadian Infantry Div." "8th Canadian Infantry Div." "12th Canadian Infantry Div." "14th Canadian Infantry Div." "15th Canadian Infantry Div." "18th Canadian Infantry Div." "19th Canadian Infantry Div." 
-		"20th Canadian Infantry Div." "24th Canadian Infantry Div." "25th Canadian Infantry Div." "26th Canadian Infantry Div." "29th Canadian Infantry Div." "30th Canadian Infantry Div." "31st Canadian Infantry Div." "35th Canadian Infantry Div." "36th Canadian Infantry Div." "37th Canadian Infantry Div." "40th Canadian Infantry Div." 
-		"41st Canadian Infantry Div." "42nd Canadian Infantry Div." "43rd Canadian Infantry Division" "44th Canadian Infantry Division" "45th Canadian Infantry Division" "46th Canadian Infantry Division" "47th Canadian Infantry Division" "48th Canadian Infantry Division" "49th Canadian Infantry Division" "50th Canadian Infantry Division" "51st Canadian Infantry Division" 
-		"52nd Canadian Infantry Division" "53rd Canadian Infantry Division" "54th Canadian Infantry Division" "55th Canadian Infantry Division" "56th Canadian Infantry Division" "57th Canadian Infantry Division" "58th Canadian Infantry Division" "59th Canadian Infantry Division" "60th Canadian Infantry Division" "61st Canadian Infantry Division" "62nd Canadian Infantry Division" 
-		"63rd Canadian Infantry Division" "64th Canadian Infantry Division" "65th Canadian Infantry Division" "66th Canadian Infantry Division" "67th Canadian Infantry Division" "68th Canadian Infantry Division" "69th Canadian Infantry Division" "70th Canadian Infantry Division" "71st Canadian Infantry Division" "72nd Canadian Infantry Division" "73rd Canadian Infantry Division" 
-		"74th Canadian Infantry Division" "75th Canadian Infantry Division" "76th Canadian Infantry Division" "77th Canadian Infantry Division" "78th Canadian Infantry Division" "79th Canadian Infantry Division" "80th Canadian Infantry Division" "81st Canadian Infantry Division" "82nd Canadian Infantry Division" "83rd Canadian Infantry Division" "84th Canadian Infantry Division" 
-		"85th Canadian Infantry Division" "86th Canadian Infantry Division" "87th Canadian Infantry Division" "88th Canadian Infantry Division" "89th Canadian Infantry Division" "90th Canadian Infantry Division" "91st Canadian Infantry Division" "92nd Canadian Infantry Division" "93rd Canadian Infantry Division" "94th Canadian Infantry Division" "95th Canadian Infantry Division" 
-		"96th Canadian Infantry Division" "97th Canadian Infantry Division" "98th Canadian Infantry Division" "99th Canadian Infantry Division" "100th Canadian Infantry Division" 
+		"µÚ1¼ÓÄÃ´ó²½±øÊ¦" "µÚ2¼ÓÄÃ´ó²½±øÊ¦" "µÚ3¼ÓÄÃ´ó²½±øÊ¦" "µÚ6¼ÓÄÃ´ó²½±øÊ¦" "µÚ7¼ÓÄÃ´ó²½±øÊ¦" "µÚ8¼ÓÄÃ´ó²½±øÊ¦" "µÚ12¼ÓÄÃ´ó²½±øÊ¦" "µÚ14¼ÓÄÃ´ó²½±øÊ¦" "µÚ15¼ÓÄÃ´ó²½±øÊ¦" "µÚ18¼ÓÄÃ´ó²½±øÊ¦" "µÚ19¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ20¼ÓÄÃ´ó²½±øÊ¦" "µÚ24¼ÓÄÃ´ó²½±øÊ¦" "µÚ25¼ÓÄÃ´ó²½±øÊ¦" "µÚ26¼ÓÄÃ´ó²½±øÊ¦" "µÚ29¼ÓÄÃ´ó²½±øÊ¦" "µÚ30¼ÓÄÃ´ó²½±øÊ¦" "µÚ31¼ÓÄÃ´ó²½±øÊ¦" "µÚ35¼ÓÄÃ´ó²½±øÊ¦" "µÚ36¼ÓÄÃ´ó²½±øÊ¦" "µÚ37¼ÓÄÃ´ó²½±øÊ¦" "µÚ40¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ41¼ÓÄÃ´ó²½±øÊ¦" "µÚ42¼ÓÄÃ´ó²½±øÊ¦" "µÚ43¼ÓÄÃ´ó²½±øÊ¦" "µÚ44¼ÓÄÃ´ó²½±øÊ¦" "µÚ45¼ÓÄÃ´ó²½±øÊ¦" "µÚ46¼ÓÄÃ´ó²½±øÊ¦" "µÚ47¼ÓÄÃ´ó²½±øÊ¦" "µÚ48¼ÓÄÃ´ó²½±øÊ¦" "µÚ49¼ÓÄÃ´ó²½±øÊ¦" "µÚ50¼ÓÄÃ´ó²½±øÊ¦" "µÚ51¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ52¼ÓÄÃ´ó²½±øÊ¦" "µÚ53¼ÓÄÃ´ó²½±øÊ¦" "µÚ54¼ÓÄÃ´ó²½±øÊ¦" "µÚ55¼ÓÄÃ´ó²½±øÊ¦" "µÚ56¼ÓÄÃ´ó²½±øÊ¦" "µÚ57¼ÓÄÃ´ó²½±øÊ¦" "µÚ58¼ÓÄÃ´ó²½±øÊ¦" "µÚ59¼ÓÄÃ´ó²½±øÊ¦" "µÚ60¼ÓÄÃ´ó²½±øÊ¦" "µÚ61¼ÓÄÃ´ó²½±øÊ¦" "µÚ62¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ63¼ÓÄÃ´ó²½±øÊ¦" "µÚ64¼ÓÄÃ´ó²½±øÊ¦" "µÚ65¼ÓÄÃ´ó²½±øÊ¦" "µÚ66¼ÓÄÃ´ó²½±øÊ¦" "µÚ67¼ÓÄÃ´ó²½±øÊ¦" "µÚ68¼ÓÄÃ´ó²½±øÊ¦" "µÚ69¼ÓÄÃ´ó²½±øÊ¦" "µÚ70¼ÓÄÃ´ó²½±øÊ¦" "µÚ71¼ÓÄÃ´ó²½±øÊ¦" "µÚ72¼ÓÄÃ´ó²½±øÊ¦" "µÚ73¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ74¼ÓÄÃ´ó²½±øÊ¦" "µÚ75¼ÓÄÃ´ó²½±øÊ¦" "µÚ76¼ÓÄÃ´ó²½±øÊ¦" "µÚ77¼ÓÄÃ´ó²½±øÊ¦" "µÚ78¼ÓÄÃ´ó²½±øÊ¦" "µÚ79¼ÓÄÃ´ó²½±øÊ¦" "µÚ80¼ÓÄÃ´ó²½±øÊ¦" "µÚ81¼ÓÄÃ´ó²½±øÊ¦" "µÚ82¼ÓÄÃ´ó²½±øÊ¦" "µÚ83¼ÓÄÃ´ó²½±øÊ¦" "µÚ84¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ85¼ÓÄÃ´ó²½±øÊ¦" "µÚ86¼ÓÄÃ´ó²½±øÊ¦" "µÚ87¼ÓÄÃ´ó²½±øÊ¦" "µÚ88¼ÓÄÃ´ó²½±øÊ¦" "µÚ89¼ÓÄÃ´ó²½±øÊ¦" "µÚ90¼ÓÄÃ´ó²½±øÊ¦" "µÚ91¼ÓÄÃ´ó²½±øÊ¦" "µÚ92¼ÓÄÃ´ó²½±øÊ¦" "µÚ93¼ÓÄÃ´ó²½±øÊ¦" "µÚ94¼ÓÄÃ´ó²½±øÊ¦" "µÚ95¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ96¼ÓÄÃ´ó²½±øÊ¦" "µÚ97¼ÓÄÃ´ó²½±øÊ¦" "µÚ98¼ÓÄÃ´ó²½±øÊ¦" "µÚ99¼ÓÄÃ´ó²½±øÊ¦" "µÚ100¼ÓÄÃ´ó²½±øÊ¦" 
 	}
 	cavalry_brigade = {
-		"1st Royal Mounted Division" "2nd Royal Mounted Division" "3rd Royal Mounted Division" "4th Royal Mounted Division" "5th Royal Mounted Division" "6th Royal Mounted Division" "7th Royal Mounted Division" "8th Royal Mounted Division" "9th Royal Mounted Division" "10th Royal Mounted Division" 
+		"µÚ1»Ê¼ÒÆï±øÊ¦" "µÚ2»Ê¼ÒÆï±øÊ¦" "µÚ3»Ê¼ÒÆï±øÊ¦" "µÚ4»Ê¼ÒÆï±øÊ¦" "µÚ5»Ê¼ÒÆï±øÊ¦" "µÚ6»Ê¼ÒÆï±øÊ¦" "µÚ7»Ê¼ÒÆï±øÊ¦" "µÚ8»Ê¼ÒÆï±øÊ¦" "µÚ9»Ê¼ÒÆï±øÊ¦" "µÚ10»Ê¼ÒÆï±øÊ¦" 
 	}
 	motorized_brigade = {
-		"1st Canadian Infantry Div." "2nd Canadian Infantry Div." "3rd Canadian Infantry Div." "6th Canadian Infantry Div." "7th Canadian Infantry Div." "8th Canadian Infantry Div." "12th Canadian Infantry Div." "14th Canadian Infantry Div." "15th Canadian Infantry Div." "18th Canadian Infantry Div." "19th Canadian Infantry Div." 
-		"20th Canadian Infantry Div." "24th Canadian Infantry Div." "25th Canadian Infantry Div." "26th Canadian Infantry Div." "29th Canadian Infantry Div." "30th Canadian Infantry Div." "31st Canadian Infantry Div." "35th Canadian Infantry Div." "36th Canadian Infantry Div." "37th Canadian Infantry Div." "40th Canadian Infantry Div." 
-		"41st Canadian Infantry Div." "42nd Canadian Infantry Div." "43rd Canadian Infantry Division" "44th Canadian Infantry Division" "45th Canadian Infantry Division" "46th Canadian Infantry Division" "47th Canadian Infantry Division" "48th Canadian Infantry Division" "49th Canadian Infantry Division" "50th Canadian Infantry Division" "51st Canadian Infantry Division" 
-		"52nd Canadian Infantry Division" "53rd Canadian Infantry Division" "54th Canadian Infantry Division" "55th Canadian Infantry Division" "56th Canadian Infantry Division" "57th Canadian Infantry Division" "58th Canadian Infantry Division" "59th Canadian Infantry Division" "60th Canadian Infantry Division" "61st Canadian Infantry Division" "62nd Canadian Infantry Division" 
-		"63rd Canadian Infantry Division" "64th Canadian Infantry Division" "65th Canadian Infantry Division" "66th Canadian Infantry Division" "67th Canadian Infantry Division" "68th Canadian Infantry Division" "69th Canadian Infantry Division" "70th Canadian Infantry Division" "71st Canadian Infantry Division" "72nd Canadian Infantry Division" "73rd Canadian Infantry Division" 
-		"74th Canadian Infantry Division" "75th Canadian Infantry Division" "76th Canadian Infantry Division" "77th Canadian Infantry Division" "78th Canadian Infantry Division" "79th Canadian Infantry Division" "80th Canadian Infantry Division" "81st Canadian Infantry Division" "82nd Canadian Infantry Division" "83rd Canadian Infantry Division" "84th Canadian Infantry Division" 
-		"85th Canadian Infantry Division" "86th Canadian Infantry Division" "87th Canadian Infantry Division" "88th Canadian Infantry Division" "89th Canadian Infantry Division" "90th Canadian Infantry Division" "91st Canadian Infantry Division" "92nd Canadian Infantry Division" "93rd Canadian Infantry Division" "94th Canadian Infantry Division" "95th Canadian Infantry Division" 
-		"96th Canadian Infantry Division" "97th Canadian Infantry Division" "98th Canadian Infantry Division" "99th Canadian Infantry Division" "100th Canadian Infantry Division" 
+		"µÚ1¼ÓÄÃ´ó²½±øÊ¦" "µÚ2¼ÓÄÃ´ó²½±øÊ¦" "µÚ3¼ÓÄÃ´ó²½±øÊ¦" "µÚ6¼ÓÄÃ´ó²½±øÊ¦" "µÚ7¼ÓÄÃ´ó²½±øÊ¦" "µÚ8¼ÓÄÃ´ó²½±øÊ¦" "µÚ12¼ÓÄÃ´ó²½±øÊ¦" "µÚ14¼ÓÄÃ´ó²½±øÊ¦" "µÚ15¼ÓÄÃ´ó²½±øÊ¦" "µÚ18¼ÓÄÃ´ó²½±øÊ¦" "µÚ19¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ20¼ÓÄÃ´ó²½±øÊ¦" "µÚ24¼ÓÄÃ´ó²½±øÊ¦" "µÚ25¼ÓÄÃ´ó²½±øÊ¦" "µÚ26¼ÓÄÃ´ó²½±øÊ¦" "µÚ29¼ÓÄÃ´ó²½±øÊ¦" "µÚ30¼ÓÄÃ´ó²½±øÊ¦" "µÚ31¼ÓÄÃ´ó²½±øÊ¦" "µÚ35¼ÓÄÃ´ó²½±øÊ¦" "µÚ36¼ÓÄÃ´ó²½±øÊ¦" "µÚ37¼ÓÄÃ´ó²½±øÊ¦" "µÚ40¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ41¼ÓÄÃ´ó²½±øÊ¦" "µÚ42¼ÓÄÃ´ó²½±øÊ¦" "µÚ43¼ÓÄÃ´ó²½±øÊ¦" "µÚ44¼ÓÄÃ´ó²½±øÊ¦" "µÚ45¼ÓÄÃ´ó²½±øÊ¦" "µÚ46¼ÓÄÃ´ó²½±øÊ¦" "µÚ47¼ÓÄÃ´ó²½±øÊ¦" "µÚ48¼ÓÄÃ´ó²½±øÊ¦" "µÚ49¼ÓÄÃ´ó²½±øÊ¦" "µÚ50¼ÓÄÃ´ó²½±øÊ¦" "µÚ51¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ52¼ÓÄÃ´ó²½±øÊ¦" "µÚ53¼ÓÄÃ´ó²½±øÊ¦" "µÚ54¼ÓÄÃ´ó²½±øÊ¦" "µÚ55¼ÓÄÃ´ó²½±øÊ¦" "µÚ56¼ÓÄÃ´ó²½±øÊ¦" "µÚ57¼ÓÄÃ´ó²½±øÊ¦" "µÚ58¼ÓÄÃ´ó²½±øÊ¦" "µÚ59¼ÓÄÃ´ó²½±øÊ¦" "µÚ60¼ÓÄÃ´ó²½±øÊ¦" "µÚ61¼ÓÄÃ´ó²½±øÊ¦" "µÚ62¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ63¼ÓÄÃ´ó²½±øÊ¦" "µÚ64¼ÓÄÃ´ó²½±øÊ¦" "µÚ65¼ÓÄÃ´ó²½±øÊ¦" "µÚ66¼ÓÄÃ´ó²½±øÊ¦" "µÚ67¼ÓÄÃ´ó²½±øÊ¦" "µÚ68¼ÓÄÃ´ó²½±øÊ¦" "µÚ69¼ÓÄÃ´ó²½±øÊ¦" "µÚ70¼ÓÄÃ´ó²½±øÊ¦" "µÚ71¼ÓÄÃ´ó²½±øÊ¦" "µÚ72¼ÓÄÃ´ó²½±øÊ¦" "µÚ73¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ74¼ÓÄÃ´ó²½±øÊ¦" "µÚ75¼ÓÄÃ´ó²½±øÊ¦" "µÚ76¼ÓÄÃ´ó²½±øÊ¦" "µÚ77¼ÓÄÃ´ó²½±øÊ¦" "µÚ78¼ÓÄÃ´ó²½±øÊ¦" "µÚ79¼ÓÄÃ´ó²½±øÊ¦" "µÚ80¼ÓÄÃ´ó²½±øÊ¦" "µÚ81¼ÓÄÃ´ó²½±øÊ¦" "µÚ82¼ÓÄÃ´ó²½±øÊ¦" "µÚ83¼ÓÄÃ´ó²½±øÊ¦" "µÚ84¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ85¼ÓÄÃ´ó²½±øÊ¦" "µÚ86¼ÓÄÃ´ó²½±øÊ¦" "µÚ87¼ÓÄÃ´ó²½±øÊ¦" "µÚ88¼ÓÄÃ´ó²½±øÊ¦" "µÚ89¼ÓÄÃ´ó²½±øÊ¦" "µÚ90¼ÓÄÃ´ó²½±øÊ¦" "µÚ91¼ÓÄÃ´ó²½±øÊ¦" "µÚ92¼ÓÄÃ´ó²½±øÊ¦" "µÚ93¼ÓÄÃ´ó²½±øÊ¦" "µÚ94¼ÓÄÃ´ó²½±øÊ¦" "µÚ95¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ96¼ÓÄÃ´ó²½±øÊ¦" "µÚ97¼ÓÄÃ´ó²½±øÊ¦" "µÚ98¼ÓÄÃ´ó²½±øÊ¦" "µÚ99¼ÓÄÃ´ó²½±øÊ¦" "µÚ100¼ÓÄÃ´ó²½±øÊ¦" 
 	}
 	mechanized_brigade = {
-		"1st Canadian Infantry Div." "2nd Canadian Infantry Div." "3rd Canadian Infantry Div." "6th Canadian Infantry Div." "7th Canadian Infantry Div." "8th Canadian Infantry Div." "12th Canadian Infantry Div." "14th Canadian Infantry Div." "15th Canadian Infantry Div." "18th Canadian Infantry Div." "19th Canadian Infantry Div." 
-		"20th Canadian Infantry Div." "24th Canadian Infantry Div." "25th Canadian Infantry Div." "26th Canadian Infantry Div." "29th Canadian Infantry Div." "30th Canadian Infantry Div." "31st Canadian Infantry Div." "35th Canadian Infantry Div." "36th Canadian Infantry Div." "37th Canadian Infantry Div." "40th Canadian Infantry Div." 
-		"41st Canadian Infantry Div." "42nd Canadian Infantry Div." "43rd Canadian Infantry Division" "44th Canadian Infantry Division" "45th Canadian Infantry Division" "46th Canadian Infantry Division" "47th Canadian Infantry Division" "48th Canadian Infantry Division" "49th Canadian Infantry Division" "50th Canadian Infantry Division" "51st Canadian Infantry Division" 
-		"52nd Canadian Infantry Division" "53rd Canadian Infantry Division" "54th Canadian Infantry Division" "55th Canadian Infantry Division" "56th Canadian Infantry Division" "57th Canadian Infantry Division" "58th Canadian Infantry Division" "59th Canadian Infantry Division" "60th Canadian Infantry Division" "61st Canadian Infantry Division" "62nd Canadian Infantry Division" 
-		"63rd Canadian Infantry Division" "64th Canadian Infantry Division" "65th Canadian Infantry Division" "66th Canadian Infantry Division" "67th Canadian Infantry Division" "68th Canadian Infantry Division" "69th Canadian Infantry Division" "70th Canadian Infantry Division" "71st Canadian Infantry Division" "72nd Canadian Infantry Division" "73rd Canadian Infantry Division" 
-		"74th Canadian Infantry Division" "75th Canadian Infantry Division" "76th Canadian Infantry Division" "77th Canadian Infantry Division" "78th Canadian Infantry Division" "79th Canadian Infantry Division" "80th Canadian Infantry Division" "81st Canadian Infantry Division" "82nd Canadian Infantry Division" "83rd Canadian Infantry Division" "84th Canadian Infantry Division" 
-		"85th Canadian Infantry Division" "86th Canadian Infantry Division" "87th Canadian Infantry Division" "88th Canadian Infantry Division" "89th Canadian Infantry Division" "90th Canadian Infantry Division" "91st Canadian Infantry Division" "92nd Canadian Infantry Division" "93rd Canadian Infantry Division" "94th Canadian Infantry Division" "95th Canadian Infantry Division" 
-		"96th Canadian Infantry Division" "97th Canadian Infantry Division" "98th Canadian Infantry Division" "99th Canadian Infantry Division" "100th Canadian Infantry Division" 
+		"µÚ1¼ÓÄÃ´ó²½±øÊ¦" "µÚ2¼ÓÄÃ´ó²½±øÊ¦" "µÚ3¼ÓÄÃ´ó²½±øÊ¦" "µÚ6¼ÓÄÃ´ó²½±øÊ¦" "µÚ7¼ÓÄÃ´ó²½±øÊ¦" "µÚ8¼ÓÄÃ´ó²½±øÊ¦" "µÚ12¼ÓÄÃ´ó²½±øÊ¦" "µÚ14¼ÓÄÃ´ó²½±øÊ¦" "µÚ15¼ÓÄÃ´ó²½±øÊ¦" "µÚ18¼ÓÄÃ´ó²½±øÊ¦" "µÚ19¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ20¼ÓÄÃ´ó²½±øÊ¦" "µÚ24¼ÓÄÃ´ó²½±øÊ¦" "µÚ25¼ÓÄÃ´ó²½±øÊ¦" "µÚ26¼ÓÄÃ´ó²½±øÊ¦" "µÚ29¼ÓÄÃ´ó²½±øÊ¦" "µÚ30¼ÓÄÃ´ó²½±øÊ¦" "µÚ31¼ÓÄÃ´ó²½±øÊ¦" "µÚ35¼ÓÄÃ´ó²½±øÊ¦" "µÚ36¼ÓÄÃ´ó²½±øÊ¦" "µÚ37¼ÓÄÃ´ó²½±øÊ¦" "µÚ40¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ41¼ÓÄÃ´ó²½±øÊ¦" "µÚ42¼ÓÄÃ´ó²½±øÊ¦" "µÚ43¼ÓÄÃ´ó²½±øÊ¦" "µÚ44¼ÓÄÃ´ó²½±øÊ¦" "µÚ45¼ÓÄÃ´ó²½±øÊ¦" "µÚ46¼ÓÄÃ´ó²½±øÊ¦" "µÚ47¼ÓÄÃ´ó²½±øÊ¦" "µÚ48¼ÓÄÃ´ó²½±øÊ¦" "µÚ49¼ÓÄÃ´ó²½±øÊ¦" "µÚ50¼ÓÄÃ´ó²½±øÊ¦" "µÚ51¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ52¼ÓÄÃ´ó²½±øÊ¦" "µÚ53¼ÓÄÃ´ó²½±øÊ¦" "µÚ54¼ÓÄÃ´ó²½±øÊ¦" "µÚ55¼ÓÄÃ´ó²½±øÊ¦" "µÚ56¼ÓÄÃ´ó²½±øÊ¦" "µÚ57¼ÓÄÃ´ó²½±øÊ¦" "µÚ58¼ÓÄÃ´ó²½±øÊ¦" "µÚ59¼ÓÄÃ´ó²½±øÊ¦" "µÚ60¼ÓÄÃ´ó²½±øÊ¦" "µÚ61¼ÓÄÃ´ó²½±øÊ¦" "µÚ62¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ63¼ÓÄÃ´ó²½±øÊ¦" "µÚ64¼ÓÄÃ´ó²½±øÊ¦" "µÚ65¼ÓÄÃ´ó²½±øÊ¦" "µÚ66¼ÓÄÃ´ó²½±øÊ¦" "µÚ67¼ÓÄÃ´ó²½±øÊ¦" "µÚ68¼ÓÄÃ´ó²½±øÊ¦" "µÚ69¼ÓÄÃ´ó²½±øÊ¦" "µÚ70¼ÓÄÃ´ó²½±øÊ¦" "µÚ71¼ÓÄÃ´ó²½±øÊ¦" "µÚ72¼ÓÄÃ´ó²½±øÊ¦" "µÚ73¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ74¼ÓÄÃ´ó²½±øÊ¦" "µÚ75¼ÓÄÃ´ó²½±øÊ¦" "µÚ76¼ÓÄÃ´ó²½±øÊ¦" "µÚ77¼ÓÄÃ´ó²½±øÊ¦" "µÚ78¼ÓÄÃ´ó²½±øÊ¦" "µÚ79¼ÓÄÃ´ó²½±øÊ¦" "µÚ80¼ÓÄÃ´ó²½±øÊ¦" "µÚ81¼ÓÄÃ´ó²½±øÊ¦" "µÚ82¼ÓÄÃ´ó²½±øÊ¦" "µÚ83¼ÓÄÃ´ó²½±øÊ¦" "µÚ84¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ85¼ÓÄÃ´ó²½±øÊ¦" "µÚ86¼ÓÄÃ´ó²½±øÊ¦" "µÚ87¼ÓÄÃ´ó²½±øÊ¦" "µÚ88¼ÓÄÃ´ó²½±øÊ¦" "µÚ89¼ÓÄÃ´ó²½±øÊ¦" "µÚ90¼ÓÄÃ´ó²½±øÊ¦" "µÚ91¼ÓÄÃ´ó²½±øÊ¦" "µÚ92¼ÓÄÃ´ó²½±øÊ¦" "µÚ93¼ÓÄÃ´ó²½±øÊ¦" "µÚ94¼ÓÄÃ´ó²½±øÊ¦" "µÚ95¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ96¼ÓÄÃ´ó²½±øÊ¦" "µÚ97¼ÓÄÃ´ó²½±øÊ¦" "µÚ98¼ÓÄÃ´ó²½±øÊ¦" "µÚ99¼ÓÄÃ´ó²½±øÊ¦" "µÚ100¼ÓÄÃ´ó²½±øÊ¦" 
 	}
 	light_armor_brigade = {
-		"4th Canadian Armoured Division" "5th Canadian Armoured Division" "10th Canadian Armoured Division" "11th Canadian Armoured Division" "16th Canadian Armoured Division" "17th Canadian Armoured Division" "22nd Canadian Armoured Division" "23rd Canadian Armoured Division" "27th Canadian Armoured Division" "28th Canadian Armoured Division" "33rd Canadian Armoured Division" 
-		"34th Canadian Armoured Division" "38th Canadian Armoured Division" "39th Canadian Armoured Division" "43rd Canadian Armoured Division" "44th Canadian Armoured Division" "45th Canadian Armoured Division" "46th Canadian Armoured Division" "47th Canadian Armoured Division" "48th Canadian Armoured Division" "49th Canadian Armoured Division" "50th Canadian Armoured Division" 
-		"51st Canadian Armoured Division" "52nd Canadian Armoured Division" "53rd Canadian Armoured Division" "54th Canadian Armoured Division" "55th Canadian Armoured Division" "56th Canadian Armoured Division" "57th Canadian Armoured Division" "58th Canadian Armoured Division" "59th Canadian Armoured Division" "60th Canadian Armoured Division" 
+		"µÚ4×°¼×Ê¦" "µÚ5×°¼×Ê¦" "µÚ10×°¼×Ê¦" "µÚ11×°¼×Ê¦" "µÚ16×°¼×Ê¦" "µÚ17×°¼×Ê¦" "µÚ22×°¼×Ê¦" "µÚ23×°¼×Ê¦" "µÚ27×°¼×Ê¦" "µÚ28×°¼×Ê¦" "µÚ33×°¼×Ê¦" 
+		"µÚ34×°¼×Ê¦" "µÚ38×°¼×Ê¦" "µÚ39×°¼×Ê¦" "µÚ43×°¼×Ê¦" "µÚ44×°¼×Ê¦" "µÚ45×°¼×Ê¦" "µÚ46×°¼×Ê¦" "µÚ47×°¼×Ê¦" "µÚ48×°¼×Ê¦" "µÚ49×°¼×Ê¦" "µÚ50×°¼×Ê¦" 
+		"µÚ51×°¼×Ê¦" "µÚ52×°¼×Ê¦" "µÚ53×°¼×Ê¦" "µÚ54×°¼×Ê¦" "µÚ55×°¼×Ê¦" "µÚ56×°¼×Ê¦" "µÚ57×°¼×Ê¦" "µÚ58×°¼×Ê¦" "µÚ59×°¼×Ê¦" "µÚ60×°¼×Ê¦" 
 	}
 	armor_brigade = {
-		"4th Canadian Armoured Division" "5th Canadian Armoured Division" "10th Canadian Armoured Division" "11th Canadian Armoured Division" "16th Canadian Armoured Division" "17th Canadian Armoured Division" "22nd Canadian Armoured Division" "23rd Canadian Armoured Division" "27th Canadian Armoured Division" "28th Canadian Armoured Division" "33rd Canadian Armoured Division" 
-		"34th Canadian Armoured Division" "38th Canadian Armoured Division" "39th Canadian Armoured Division" "43rd Canadian Armoured Division" "44th Canadian Armoured Division" "45th Canadian Armoured Division" "46th Canadian Armoured Division" "47th Canadian Armoured Division" "48th Canadian Armoured Division" "49th Canadian Armoured Division" "50th Canadian Armoured Division" 
-		"51st Canadian Armoured Division" "52nd Canadian Armoured Division" "53rd Canadian Armoured Division" "54th Canadian Armoured Division" "55th Canadian Armoured Division" "56th Canadian Armoured Division" "57th Canadian Armoured Division" "58th Canadian Armoured Division" "59th Canadian Armoured Division" "60th Canadian Armoured Division" 
+		"µÚ4×°¼×Ê¦" "µÚ5×°¼×Ê¦" "µÚ10×°¼×Ê¦" "µÚ11×°¼×Ê¦" "µÚ16×°¼×Ê¦" "µÚ17×°¼×Ê¦" "µÚ22×°¼×Ê¦" "µÚ23×°¼×Ê¦" "µÚ27×°¼×Ê¦" "µÚ28×°¼×Ê¦" "µÚ33×°¼×Ê¦" 
+		"µÚ34×°¼×Ê¦" "µÚ38×°¼×Ê¦" "µÚ39×°¼×Ê¦" "µÚ43×°¼×Ê¦" "µÚ44×°¼×Ê¦" "µÚ45×°¼×Ê¦" "µÚ46×°¼×Ê¦" "µÚ47×°¼×Ê¦" "µÚ48×°¼×Ê¦" "µÚ49×°¼×Ê¦" "µÚ50×°¼×Ê¦" 
+		"µÚ51×°¼×Ê¦" "µÚ52×°¼×Ê¦" "µÚ53×°¼×Ê¦" "µÚ54×°¼×Ê¦" "µÚ55×°¼×Ê¦" "µÚ56×°¼×Ê¦" "µÚ57×°¼×Ê¦" "µÚ58×°¼×Ê¦" "µÚ59×°¼×Ê¦" "µÚ60×°¼×Ê¦" 
 	}
 	paratrooper_brigade = {
-		"9th Canadian Airborne Division" "21st Canadian Airborne Division" "32nd Canadian Airborne Division" "44th Canadian Airborne Division" "45th Canadian Airborne Division" "45th Canadian Airborne Division" "46th Canadian Airborne Division" 
+		"µÚ9¼ÓÄÃ´óÉ¡±øÊ¦" "µÚ21¼ÓÄÃ´óÉ¡±øÊ¦" "µÚ32¼ÓÄÃ´óÉ¡±øÊ¦" "µÚ44¼ÓÄÃ´óÉ¡±øÊ¦" "µÚ45¼ÓÄÃ´óÉ¡±øÊ¦" "µÚ45¼ÓÄÃ´óÉ¡±øÊ¦" "µÚ46¼ÓÄÃ´óÉ¡±øÊ¦" 
 	}
 	marine_brigade = {
-		"1st Royal Canadian Marine Div." "2nd Royal Canadian Marine Div." "3rd Royal Canadian Marine Div." "4th Royal Canadian Marine Div." "5th Royal Canadian Marine Div." "6th Royal Canadian Marine Div." "7th Royal Canadian Marine Div." "8th Royal Canadian Marine Div." "9th Royal Canadian Marine Div." "10th Royal Canadian Marine Div." 
+		"µÚ1»Ê¼Ò¼ÓÄÃ´óº£¾üÂ½Õ½Ê¦" "µÚ2»Ê¼Ò¼ÓÄÃ´óº£¾üÂ½Õ½Ê¦" "µÚ3»Ê¼Ò¼ÓÄÃ´óº£¾üÂ½Õ½Ê¦" "µÚ4»Ê¼Ò¼ÓÄÃ´óº£¾üÂ½Õ½Ê¦" "µÚ5»Ê¼Ò¼ÓÄÃ´óº£¾üÂ½Õ½Ê¦" "µÚ6»Ê¼Ò¼ÓÄÃ´óº£¾üÂ½Õ½Ê¦" "µÚ7»Ê¼Ò¼ÓÄÃ´óº£¾üÂ½Õ½Ê¦" "µÚ8»Ê¼Ò¼ÓÄÃ´óº£¾üÂ½Õ½Ê¦" "µÚ9»Ê¼Ò¼ÓÄÃ´óº£¾üÂ½Õ½Ê¦" "µÚ10»Ê¼Ò¼ÓÄÃ´óº£¾üÂ½Õ½Ê¦" 
 	}
 	bergsjaeger_brigade = {
-		"1st Canadian Mountain Division" "2nd Canadian Mountain Division" "3rd Canadian Mountain Division" "6th Canadian Mountain Division" "7th Canadian Mountain Division" "8th Canadian Mountain Division" "12th Canadian Mountain Division" "14th Canadian Mountain Division" "15th Canadian Mountain Division" "18th Canadian Mountain Division" "19th Canadian Mountain Division" 
-		"20th Canadian Mountain Division" "24th Canadian Mountain Division" "25th Canadian Mountain Division" "26th Canadian Mountain Division" "29th Canadian Mountain Division" "30th Canadian Mountain Division" "31st Canadian Mountain Division" "35th Canadian Mountain Division" "36th Canadian Mountain Division" "37th Canadian Mountain Division" "40th Canadian Mountain Division" 
-		"41st Canadian Mountain Division" "42nd Canadian Mountain Division" 
+		"µÚ1¼ÓÄÃ´óÉ½µØÊ¦" "µÚ2¼ÓÄÃ´óÉ½µØÊ¦" "µÚ3¼ÓÄÃ´óÉ½µØÊ¦" "µÚ6¼ÓÄÃ´óÉ½µØÊ¦" "µÚ7¼ÓÄÃ´óÉ½µØÊ¦" "µÚ8¼ÓÄÃ´óÉ½µØÊ¦" "µÚ12¼ÓÄÃ´óÉ½µØÊ¦" "µÚ14¼ÓÄÃ´óÉ½µØÊ¦" "µÚ15¼ÓÄÃ´óÉ½µØÊ¦" "µÚ18¼ÓÄÃ´óÉ½µØÊ¦" "µÚ19¼ÓÄÃ´óÉ½µØÊ¦" 
+		"µÚ20¼ÓÄÃ´óÉ½µØÊ¦" "µÚ24¼ÓÄÃ´óÉ½µØÊ¦" "µÚ25¼ÓÄÃ´óÉ½µØÊ¦" "µÚ26¼ÓÄÃ´óÉ½µØÊ¦" "µÚ29¼ÓÄÃ´óÉ½µØÊ¦" "µÚ30¼ÓÄÃ´óÉ½µØÊ¦" "µÚ31¼ÓÄÃ´óÉ½µØÊ¦" "µÚ35¼ÓÄÃ´óÉ½µØÊ¦" "µÚ36¼ÓÄÃ´óÉ½µØÊ¦" "µÚ37¼ÓÄÃ´óÉ½µØÊ¦" "µÚ40¼ÓÄÃ´óÉ½µØÊ¦" 
+		"µÚ41¼ÓÄÃ´óÉ½µØÊ¦" "µÚ42¼ÓÄÃ´óÉ½µØÊ¦" 
 	}
 	garrison_brigade = {
-		"12th Canadian Infantry Div." "14th Canadian Infantry Div." "15th Canadian Infantry Div." "18th Canadian Infantry Div." "19th Canadian Infantry Div." "20th Canadian Infantry Div." "24th Canadian Infantry Div." "25th Canadian Infantry Div." "26th Canadian Infantry Div." "29th Canadian Infantry Div." "30th Canadian Infantry Div." 
-		"31st Canadian Infantry Div." "35th Canadian Infantry Div." "36th Canadian Infantry Div." "37th Canadian Infantry Div." "40th Canadian Infantry Div." "41st Canadian Infantry Div." "42nd Canadian Infantry Div." "43rd Canadian Infantry Division" "44th Canadian Infantry Division" "45th Canadian Infantry Division" "46th Canadian Infantry Division" 
-		"47th Canadian Infantry Division" "48th Canadian Infantry Division" "49th Canadian Infantry Division" "50th Canadian Infantry Division" "51st Canadian Infantry Division" "52nd Canadian Infantry Division" "53rd Canadian Infantry Division" "54th Canadian Infantry Division" "55th Canadian Infantry Division" "56th Canadian Infantry Division" "57th Canadian Infantry Division" 
-		"58th Canadian Infantry Division" "59th Canadian Infantry Division" "60th Canadian Infantry Division" "61st Canadian Infantry Division" "62nd Canadian Infantry Division" "63rd Canadian Infantry Division" "64th Canadian Infantry Division" "65th Canadian Infantry Division" "66th Canadian Infantry Division" "67th Canadian Infantry Division" "68th Canadian Infantry Division" 
-		"69th Canadian Infantry Division" "70th Canadian Infantry Division" "71st Canadian Infantry Division" "72nd Canadian Infantry Division" "73rd Canadian Infantry Division" "74th Canadian Infantry Division" "75th Canadian Infantry Division" "76th Canadian Infantry Division" "77th Canadian Infantry Division" "78th Canadian Infantry Division" "79th Canadian Infantry Division" 
-		"80th Canadian Infantry Division" "81st Canadian Infantry Division" "82nd Canadian Infantry Division" "83rd Canadian Infantry Division" "84th Canadian Infantry Division" "85th Canadian Infantry Division" "86th Canadian Infantry Division" "87th Canadian Infantry Division" "88th Canadian Infantry Division" "89th Canadian Infantry Division" "90th Canadian Infantry Division" 
-		"91st Canadian Infantry Division" "92nd Canadian Infantry Division" "93rd Canadian Infantry Division" "94th Canadian Infantry Division" "95th Canadian Infantry Division" "96th Canadian Infantry Division" "97th Canadian Infantry Division" "98th Canadian Infantry Division" "99th Canadian Infantry Division" "100th Canadian Infantry Division" 
+		"µÚ12¼ÓÄÃ´ó²½±øÊ¦" "µÚ14¼ÓÄÃ´ó²½±øÊ¦" "µÚ15¼ÓÄÃ´ó²½±øÊ¦" "µÚ18¼ÓÄÃ´ó²½±øÊ¦" "µÚ19¼ÓÄÃ´ó²½±øÊ¦" "µÚ20¼ÓÄÃ´ó²½±øÊ¦" "µÚ24¼ÓÄÃ´ó²½±øÊ¦" "µÚ25¼ÓÄÃ´ó²½±øÊ¦" "µÚ26¼ÓÄÃ´ó²½±øÊ¦" "µÚ29¼ÓÄÃ´ó²½±øÊ¦" "µÚ30¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ31¼ÓÄÃ´ó²½±øÊ¦" "µÚ35¼ÓÄÃ´ó²½±øÊ¦" "µÚ36¼ÓÄÃ´ó²½±øÊ¦" "µÚ37¼ÓÄÃ´ó²½±øÊ¦" "µÚ40¼ÓÄÃ´ó²½±øÊ¦" "µÚ41¼ÓÄÃ´ó²½±øÊ¦" "µÚ42¼ÓÄÃ´ó²½±øÊ¦" "µÚ43¼ÓÄÃ´ó²½±øÊ¦" "µÚ44¼ÓÄÃ´ó²½±øÊ¦" "µÚ45¼ÓÄÃ´ó²½±øÊ¦" "µÚ46¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ47¼ÓÄÃ´ó²½±øÊ¦" "µÚ48¼ÓÄÃ´ó²½±øÊ¦" "µÚ49¼ÓÄÃ´ó²½±øÊ¦" "µÚ50¼ÓÄÃ´ó²½±øÊ¦" "µÚ51¼ÓÄÃ´ó²½±øÊ¦" "µÚ52¼ÓÄÃ´ó²½±øÊ¦" "µÚ53¼ÓÄÃ´ó²½±øÊ¦" "µÚ54¼ÓÄÃ´ó²½±øÊ¦" "µÚ55¼ÓÄÃ´ó²½±øÊ¦" "µÚ56¼ÓÄÃ´ó²½±øÊ¦" "µÚ57¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ58¼ÓÄÃ´ó²½±øÊ¦" "µÚ59¼ÓÄÃ´ó²½±øÊ¦" "µÚ60¼ÓÄÃ´ó²½±øÊ¦" "µÚ61¼ÓÄÃ´ó²½±øÊ¦" "µÚ62¼ÓÄÃ´ó²½±øÊ¦" "µÚ63¼ÓÄÃ´ó²½±øÊ¦" "µÚ64¼ÓÄÃ´ó²½±øÊ¦" "µÚ65¼ÓÄÃ´ó²½±øÊ¦" "µÚ66¼ÓÄÃ´ó²½±øÊ¦" "µÚ67¼ÓÄÃ´ó²½±øÊ¦" "µÚ68¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ69¼ÓÄÃ´ó²½±øÊ¦" "µÚ70¼ÓÄÃ´ó²½±øÊ¦" "µÚ71¼ÓÄÃ´ó²½±øÊ¦" "µÚ72¼ÓÄÃ´ó²½±øÊ¦" "µÚ73¼ÓÄÃ´ó²½±øÊ¦" "µÚ74¼ÓÄÃ´ó²½±øÊ¦" "µÚ75¼ÓÄÃ´ó²½±øÊ¦" "µÚ76¼ÓÄÃ´ó²½±øÊ¦" "µÚ77¼ÓÄÃ´ó²½±øÊ¦" "µÚ78¼ÓÄÃ´ó²½±øÊ¦" "µÚ79¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ80¼ÓÄÃ´ó²½±øÊ¦" "µÚ81¼ÓÄÃ´ó²½±øÊ¦" "µÚ82¼ÓÄÃ´ó²½±øÊ¦" "µÚ83¼ÓÄÃ´ó²½±øÊ¦" "µÚ84¼ÓÄÃ´ó²½±øÊ¦" "µÚ85¼ÓÄÃ´ó²½±øÊ¦" "µÚ86¼ÓÄÃ´ó²½±øÊ¦" "µÚ87¼ÓÄÃ´ó²½±øÊ¦" "µÚ88¼ÓÄÃ´ó²½±øÊ¦" "µÚ89¼ÓÄÃ´ó²½±øÊ¦" "µÚ90¼ÓÄÃ´ó²½±øÊ¦" 
+		"µÚ91¼ÓÄÃ´ó²½±øÊ¦" "µÚ92¼ÓÄÃ´ó²½±øÊ¦" "µÚ93¼ÓÄÃ´ó²½±øÊ¦" "µÚ94¼ÓÄÃ´ó²½±øÊ¦" "µÚ95¼ÓÄÃ´ó²½±øÊ¦" "µÚ96¼ÓÄÃ´ó²½±øÊ¦" "µÚ97¼ÓÄÃ´ó²½±øÊ¦" "µÚ98¼ÓÄÃ´ó²½±øÊ¦" "µÚ99¼ÓÄÃ´ó²½±øÊ¦" "µÚ100¼ÓÄÃ´ó²½±øÊ¦" 
 	}
 	hq_brigade = {
-		"1st Canadian Army" "2nd Canadian Army" "1st Canadian Army Group" "3rd Canadian Army" "4th Canadian Army" "2nd Canadian Army Group" 
+		"µÚ1¼ÓÄÃ´ó¼¯ÍÅ¾ü" "µÚ2¼ÓÄÃ´ó¼¯ÍÅ¾ü" "µÚ1¼ÓÄÃ´ó¼¯ÍÅ¾üÈº" "µÚ3¼ÓÄÃ´ó¼¯ÍÅ¾ü" "µÚ4¼ÓÄÃ´ó¼¯ÍÅ¾ü" "µÚ2¼ÓÄÃ´ó¼¯ÍÅ¾üÈº" 
 	}
 	militia_brigade = {
-		"1st General Service Division" "2nd General Service Division" "3rd General Service Division" "4th General Service Division" "5th General Service Division" "6th General Service Division" "7th General Service Division" "8th General Service Division" "9th General Service Division" "10th General Service Division" "11th General Service Division" 
-		"12th General Service Division" "13th General Service Division" "14th General Service Division" "15th General Service Division" "16th General Service Division" "17th General Service Division" "18th General Service Division" "19th General Service Division" "20th General Service Division" "21st General Service Division" "22nd General Service Division" 
-		"23rd General Service Division" "24th General Service Division" "25th General Service Division" "26th General Service Division" "27th General Service Division" "28th General Service Division" "29th General Service Division" "30th General Service Division" 
+		"µÚ1Ãñ±øÊ¦" "µÚ2Ãñ±øÊ¦" "µÚ3Ãñ±øÊ¦" "µÚ4Ãñ±øÊ¦" "µÚ5Ãñ±øÊ¦" "µÚ6Ãñ±øÊ¦" "µÚ7Ãñ±øÊ¦" "µÚ8Ãñ±øÊ¦" "µÚ9Ãñ±øÊ¦" "µÚ10Ãñ±øÊ¦" "µÚ11Ãñ±øÊ¦" 
+		"µÚ12Ãñ±øÊ¦" "µÚ13Ãñ±øÊ¦" "µÚ14Ãñ±øÊ¦" "µÚ15Ãñ±øÊ¦" "µÚ16Ãñ±øÊ¦" "µÚ17Ãñ±øÊ¦" "µÚ18Ãñ±øÊ¦" "µÚ19Ãñ±øÊ¦" "µÚ20Ãñ±øÊ¦" "µÚ21Ãñ±øÊ¦" "µÚ22Ãñ±øÊ¦" 
+		"µÚ23Ãñ±øÊ¦" "µÚ24Ãñ±øÊ¦" "µÚ25Ãñ±øÊ¦" "µÚ26Ãñ±øÊ¦" "µÚ27Ãñ±øÊ¦" "µÚ28Ãñ±øÊ¦" "µÚ29Ãñ±øÊ¦" "µÚ30Ãñ±øÊ¦" 
 	}
 	multi_role = {
-		"No.1 RCAF Fighter Group" "No.2 RCAF Fighter Group" "No.3 RCAF Fighter Group" "No.4 RCAF Fighter Group" "No.5 RCAF Fighter Group" "No.7 RCAF Fighter Group" "No.8 RCAF Fighter Group" "No.9 RCAF Fighter Group" "No.10 RCAF Fighter Group" "No.11 RCAF Fighter Group" "No.12 RCAF Fighter Group" 
-		"No.13 RCAF Fighter Group" "No.14 RCAF Fighter Group" "No.15 RCAF Fighter Group" "No.16 RCAF Fighter Group" "No.17 RCAF Fighter Group" "No.18 RCAF Fighter Group" "No.19 RCAF Fighter Group" "No.20 RCAF Fighter Group" 
+		"µÚ1Õ½¶·»ú´ó¶Ó" "µÚ2Õ½¶·»ú´ó¶Ó" "µÚ3Õ½¶·»ú´ó¶Ó" "µÚ4Õ½¶·»ú´ó¶Ó" "µÚ5Õ½¶·»ú´ó¶Ó" "µÚ7Õ½¶·»ú´ó¶Ó" "µÚ8Õ½¶·»ú´ó¶Ó" "µÚ9Õ½¶·»ú´ó¶Ó" "µÚ10Õ½¶·»ú´ó¶Ó" "µÚ11Õ½¶·»ú´ó¶Ó" "µÚ12Õ½¶·»ú´ó¶Ó" 
+		"µÚ13Õ½¶·»ú´ó¶Ó" "µÚ14Õ½¶·»ú´ó¶Ó" "µÚ15Õ½¶·»ú´ó¶Ó" "µÚ16Õ½¶·»ú´ó¶Ó" "µÚ17Õ½¶·»ú´ó¶Ó" "µÚ18Õ½¶·»ú´ó¶Ó" "µÚ19Õ½¶·»ú´ó¶Ó" "µÚ20Õ½¶·»ú´ó¶Ó" 
 	}
 	interceptor = {
-		"No.1 RCAF Fighter Group" "No.2 RCAF Fighter Group" "No.3 RCAF Fighter Group" "No.4 RCAF Fighter Group" "No.5 RCAF Fighter Group" "No.7 RCAF Fighter Group" "No.8 RCAF Fighter Group" "No.9 RCAF Fighter Group" "No.10 RCAF Fighter Group" "No.11 RCAF Fighter Group" "No.12 RCAF Fighter Group" 
-		"No.13 RCAF Fighter Group" "No.14 RCAF Fighter Group" "No.15 RCAF Fighter Group" "No.16 RCAF Fighter Group" "No.17 RCAF Fighter Group" "No.18 RCAF Fighter Group" "No.19 RCAF Fighter Group" "No.20 RCAF Fighter Group" 
-	}
-	jet_int = {
-		"No.1 RCAF Fighter Group" "No.2 RCAF Fighter Group" "No.3 RCAF Fighter Group" "No.4 RCAF Fighter Group" "No.5 RCAF Fighter Group" "No.7 RCAF Fighter Group" "No.8 RCAF Fighter Group" "No.9 RCAF Fighter Group" "No.10 RCAF Fighter Group" "No.11 RCAF Fighter Group" "No.12 RCAF Fighter Group" 
-		"No.13 RCAF Fighter Group" "No.14 RCAF Fighter Group" "No.15 RCAF Fighter Group" "No.16 RCAF Fighter Group" "No.17 RCAF Fighter Group" "No.18 RCAF Fighter Group" "No.19 RCAF Fighter Group" "No.20 RCAF Fighter Group" 
-	}
-	jet_mr = {
-		"No.1 RCAF Fighter Group" "No.2 RCAF Fighter Group" "No.3 RCAF Fighter Group" "No.4 RCAF Fighter Group" "No.5 RCAF Fighter Group" "No.7 RCAF Fighter Group" "No.8 RCAF Fighter Group" "No.9 RCAF Fighter Group" "No.10 RCAF Fighter Group" "No.11 RCAF Fighter Group" "No.12 RCAF Fighter Group" 
-		"No.13 RCAF Fighter Group" "No.14 RCAF Fighter Group" "No.15 RCAF Fighter Group" "No.16 RCAF Fighter Group" "No.17 RCAF Fighter Group" "No.18 RCAF Fighter Group" "No.19 RCAF Fighter Group" "No.20 RCAF Fighter Group" 
+		"µÚ1Õ½¶·»ú´ó¶Ó" "µÚ2Õ½¶·»ú´ó¶Ó" "µÚ3Õ½¶·»ú´ó¶Ó" "µÚ4Õ½¶·»ú´ó¶Ó" "µÚ5Õ½¶·»ú´ó¶Ó" "µÚ7Õ½¶·»ú´ó¶Ó" "µÚ8Õ½¶·»ú´ó¶Ó" "µÚ9Õ½¶·»ú´ó¶Ó" "µÚ10Õ½¶·»ú´ó¶Ó" "µÚ11Õ½¶·»ú´ó¶Ó" "µÚ12Õ½¶·»ú´ó¶Ó" 
+		"µÚ13Õ½¶·»ú´ó¶Ó" "µÚ14Õ½¶·»ú´ó¶Ó" "µÚ15Õ½¶·»ú´ó¶Ó" "µÚ16Õ½¶·»ú´ó¶Ó" "µÚ17Õ½¶·»ú´ó¶Ó" "µÚ18Õ½¶·»ú´ó¶Ó" "µÚ19Õ½¶·»ú´ó¶Ó" "µÚ20Õ½¶·»ú´ó¶Ó" 
 	}
 	strategic_bomber = {
-		"No.1 RCAF Strategic Group" "No.2 RCAF Strategic Group" "No.6 RCAF Strategic Group" "No.3 RCAF Strategic Group" "No.4 RCAF Strategic Group" "No.7 RCAF Strategic Group" "No.8 RCAF Strategic Group" "No.9 RCAF Strategic Group" "No.10 RCAF Strategic Group" "No.11 RCAF Strategic Group" "No.12 RCAF Strategic Group" 
-		"No.13 RCAF Strategic Group" "No.14 RCAF Strategic Group" "No.15 RCAF Strategic Group" "No.16 RCAF Strategic Group" "No.17 RCAF Strategic Group" "No.18 RCAF Strategic Group" "No.19 RCAF Strategic Group" "No.20 RCAF Strategic Group" 
+		"µÚ1Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ2Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ6Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ3Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ4Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ7Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ8Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ9Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ10Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ11Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ12Õ½ÂÔºäÕ¨»ú´ó¶Ó" 
+		"µÚ13Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ14Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ15Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ16Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ17Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ18Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ19Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ20Õ½ÂÔºäÕ¨»ú´ó¶Ó" 
 	}
 	tactical_bomber = {
-		"No.1 RCAF Tactical Group" "No.2 RCAF Tactical Group" "No.6 RCAF Tactical Group" "No.3 RCAF Tactical Group" "No.4 RCAF Tactical Group" "No.7 RCAF Tactical Group" "No.8 RCAF Tactical Group" "No.9 RCAF Tactical Group" "No.10 RCAF Tactical Group" "No.11 RCAF Tactical Group" "No.12 RCAF Tactical Group" 
-		"No.13 RCAF Tactical Group" "No.14 RCAF Tactical Group" "No.15 RCAF Tactical Group" "No.16 RCAF Tactical Group" "No.17 RCAF Tactical Group" "No.18 RCAF Tactical Group" "No.19 RCAF Tactical Group" "No.20 RCAF Tactical Group" 
-	}
-	jet_bomber = {
-		"No.1 RCAF Tactical Group" "No.2 RCAF Tactical Group" "No.6 RCAF Tactical Group" "No.3 RCAF Tactical Group" "No.4 RCAF Tactical Group" "No.7 RCAF Tactical Group" "No.8 RCAF Tactical Group" "No.9 RCAF Tactical Group" "No.10 RCAF Tactical Group" "No.11 RCAF Tactical Group" "No.12 RCAF Tactical Group" 
-		"No.13 RCAF Tactical Group" "No.14 RCAF Tactical Group" "No.15 RCAF Tactical Group" "No.16 RCAF Tactical Group" "No.17 RCAF Tactical Group" "No.18 RCAF Tactical Group" "No.19 RCAF Tactical Group" "No.20 RCAF Tactical Group" 
+		"µÚ1Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ2Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ6Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ3Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ4Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ7Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ8Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ9Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ10Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ11Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ12Õ½ÊõºäÕ¨»ú´ó¶Ó" 
+		"µÚ13Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ14Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ15Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ16Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ17Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ18Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ19Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ20Õ½ÊõºäÕ¨»ú´ó¶Ó" 
 	}
 	naval_bomber = {
-		"No.1 RCAF Navy Bomber Group" "No.2 RCAF Navy Bomber Group" "No.3 RCAF Navy Bomber Group" "No.4 RCAF Navy Bomber Group" "No.5 RCAF Navy Bomber Group" "No.7 RCAF Navy Bomber Group" "No.8 RCAF Navy Bomber Group" "No.9 RCAF Navy Bomber Group" "No.10 RCAF Navy Bomber Group" "No.11 RCAF Navy Bomber Group" "No.12 RCAF Navy Bomber Group" 
-		"No.13 RCAF Navy Bomber Group" "No.14 RCAF Navy Bomber Group" "No.15 RCAF Navy Bomber Group" "No.16 RCAF Navy Bomber Group" "No.17 RCAF Navy Bomber Group" "No.18 RCAF Navy Bomber Group" "No.19 RCAF Navy Bomber Group" "No.20 RCAF Navy Bomber Group" "No.1 RCAF Torpedo Group" "No.2 RCAF Torpedo Group" "No.3 RCAF Torpedo Group" 
-		"No.4 RCAF Torpedo Group" "No.5 RCAF Torpedo Group" "No.7 RCAF Torpedo Group" "No.8 RCAF Torpedo Group" "No.9 RCAF Torpedo Group" "No.10 RCAF Torpedo Group" "No.11 RCAF Torpedo Group" "No.12 RCAF Torpedo Group" "No.13 RCAF Torpedo Group" "No.14 RCAF Torpedo Group" "No.15 RCAF Torpedo Group" 
-		"No.16 RCAF Torpedo Group" "No.17 RCAF Torpedo Group" "No.18 RCAF Torpedo Group" "No.19 RCAF Torpedo Group" "No.20 RCAF Torpedo Group" 
+		"µÚ1º£¾üºäÕ¨»ú´ó¶Ó" "µÚ2º£¾üºäÕ¨»ú´ó¶Ó" "µÚ3º£¾üºäÕ¨»ú´ó¶Ó" "µÚ4º£¾üºäÕ¨»ú´ó¶Ó" "µÚ5º£¾üºäÕ¨»ú´ó¶Ó" "µÚ7º£¾üºäÕ¨»ú´ó¶Ó" "µÚ8º£¾üºäÕ¨»ú´ó¶Ó" "µÚ9º£¾üºäÕ¨»ú´ó¶Ó" "µÚ10º£¾üºäÕ¨»ú´ó¶Ó" "µÚ11º£¾üºäÕ¨»ú´ó¶Ó" "µÚ12º£¾üºäÕ¨»ú´ó¶Ó" 
+		"µÚ13º£¾üºäÕ¨»ú´ó¶Ó" "µÚ14º£¾üºäÕ¨»ú´ó¶Ó" "µÚ15º£¾üºäÕ¨»ú´ó¶Ó" "µÚ16º£¾üºäÕ¨»ú´ó¶Ó" "µÚ17º£¾üºäÕ¨»ú´ó¶Ó" "µÚ18º£¾üºäÕ¨»ú´ó¶Ó" "µÚ19º£¾üºäÕ¨»ú´ó¶Ó" "µÚ20º£¾üºäÕ¨»ú´ó¶Ó" "µÚ1ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ2ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ3ÓãÀ×ºäÕ¨»ú´ó¶Ó" 
+		"µÚ4ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ5ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ7ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ8ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ9ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ10ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ11ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ12ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ13ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ14ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ15ÓãÀ×ºäÕ¨»ú´ó¶Ó" 
+		"µÚ16ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ17ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ18ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ19ÓãÀ×ºäÕ¨»ú´ó¶Ó" "µÚ20ÓãÀ×ºäÕ¨»ú´ó¶Ó" 
 	}
 	cas = {
-		"No.1 RCAF Dive Bomber Group" "No.2 RCAF Dive Bomber Group" "No.6 RCAF Dive Bomber Group" "No.3 RCAF Dive Bomber Group" "No.4 RCAF Dive Bomber Group" "No.7 RCAF Dive Bomber Group" "No.8 RCAF Dive Bomber Group" "No.9 RCAF Dive Bomber Group" "No.10 RCAF Dive Bomber Group" "No.11 RCAF Dive Bomber Group" "No.12 RCAF Dive Bomber Group" 
-		"No.13 RCAF Dive Bomber Group" "No.14 RCAF Dive Bomber Group" "No.15 RCAF Dive Bomber Group" "No.16 RCAF Dive Bomber Group" "No.17 RCAF Dive Bomber Group" "No.18 RCAF Dive Bomber Group" "No.19 RCAF Dive Bomber Group" "No.20 RCAF Dive Bomber Group" 
+		"µÚ1¸©³åºäÕ¨»ú´ó¶Ó" "µÚ2¸©³åºäÕ¨»ú´ó¶Ó" "µÚ6¸©³åºäÕ¨»ú´ó¶Ó" "µÚ3¸©³åºäÕ¨»ú´ó¶Ó" "µÚ4¸©³åºäÕ¨»ú´ó¶Ó" "µÚ7¸©³åºäÕ¨»ú´ó¶Ó" "µÚ8¸©³åºäÕ¨»ú´ó¶Ó" "µÚ9¸©³åºäÕ¨»ú´ó¶Ó" "µÚ10¸©³åºäÕ¨»ú´ó¶Ó" "µÚ11¸©³åºäÕ¨»ú´ó¶Ó" "µÚ12¸©³åºäÕ¨»ú´ó¶Ó" 
+		"µÚ13¸©³åºäÕ¨»ú´ó¶Ó" "µÚ14¸©³åºäÕ¨»ú´ó¶Ó" "µÚ15¸©³åºäÕ¨»ú´ó¶Ó" "µÚ16¸©³åºäÕ¨»ú´ó¶Ó" "µÚ17¸©³åºäÕ¨»ú´ó¶Ó" "µÚ18¸©³åºäÕ¨»ú´ó¶Ó" "µÚ19¸©³åºäÕ¨»ú´ó¶Ó" "µÚ20¸©³åºäÕ¨»ú´ó¶Ó" 
 	}
 	transport_plane = {
-		"No.1 RCAF Transport Group" "No.2 RCAF Transport Group" "No.3 RCAF Transport Group" "No.4 RCAF Transport Group" "No.5 RCAF Transport Group" "No.7 RCAF Transport Group" "No.8 RCAF Transport Group" "No.9 RCAF Transport Group" "No.10 RCAF Transport Group" "No.11 RCAF Transport Group" "No.12 RCAF Transport Group" 
-		"No.13 RCAF Transport Group" "No.14 RCAF Transport Group" "No.15 RCAF Transport Group" "No.16 RCAF Transport Group" "No.17 RCAF Transport Group" "No.18 RCAF Transport Group" "No.19 RCAF Transport Group" "No.20 RCAF Transport Group" 
+		"µÚ1ÔËÊä»ú´ó¶Ó" "µÚ2ÔËÊä»ú´ó¶Ó" "µÚ3ÔËÊä»ú´ó¶Ó" "µÚ4ÔËÊä»ú´ó¶Ó" "µÚ5ÔËÊä»ú´ó¶Ó" "µÚ7ÔËÊä»ú´ó¶Ó" "µÚ8ÔËÊä»ú´ó¶Ó" "µÚ9ÔËÊä»ú´ó¶Ó" "µÚ10ÔËÊä»ú´ó¶Ó" "µÚ11ÔËÊä»ú´ó¶Ó" "µÚ12ÔËÊä»ú´ó¶Ó" 
+		"µÚ13ÔËÊä»ú´ó¶Ó" "µÚ14ÔËÊä»ú´ó¶Ó" "µÚ15ÔËÊä»ú´ó¶Ó" "µÚ16ÔËÊä»ú´ó¶Ó" "µÚ17ÔËÊä»ú´ó¶Ó" "µÚ18ÔËÊä»ú´ó¶Ó" "µÚ19ÔËÊä»ú´ó¶Ó" "µÚ20ÔËÊä»ú´ó¶Ó" 
 	}
 	battleship = {
-		"HMCS Canada"
-		"HMCS Dominion" "HMCS Nova Scotia" "HMCS Manitoba"
-		"HMCS Ontario" "HMCS Québec" "HMCS British Columbia" "HMCS New Brunswick" "HMCS Alberta" "HMCS Saskatchewan" "HMCS Prince Edward Island"
+		"¼ÓÄÃ´óºÅ" "°²´óÂÔºÅ" "¿ı±±¿ËºÅ" "²»ÁĞµß¸çÂ×±ÈÑÇºÅ" "ĞÂË¹¿ÆÉáºÅ" "ĞÂ²¼Â×Èğ¿ËºÅ" "ÂüÄáÍĞ°ÍºÅ" "°¬²®ËşºÅ" "ÈøË¹¿¦³¹ÎÂºÅ" "°®µÂ»ªÍõ×ÓµººÅ" "µÀÃ÷ºÅ" 
 			}
 	light_cruiser = {
-		"HMCS Québec"
-		"HMCS Ontario"
-		"HMCS Niobe" "HMCS Rainbow"
-		"HMCS Aurora"
-		"HMCS British Columbia" "HMCS Nova Scotia" "HMCS New Brunswick" "HMCS Manitoba" "HMCS Alberta" "HMCS Saskatchewan" "HMCS Prince Edward Island" "HMCS Toronto" "HMCS Montréal" 
-		"HMCS Vancouver" "HMCS Ottawa" "HMCS Calgary" "HMCS Edmonton" "HMCS Ile de Québec" "HMCS Winnipeg" "HMCS Hamilton" "HMCS London" "HMCS Kitchener" "HMCS St. Catharines" "HMCS Halifax" 
-		"HMCS Victoria" "HMCS Windsor" "HMCS Oshawa" "HMCS Saskatoon" "HMCS Regina" "HMCS Sherbrooke" "HMCS Barrie" "HMCS Kelowna" "HMCS Abbotsford" "HMCS Kingston" "HMCS Trois-Rivieres" 
+		"°²´óÂÔºÅ" "¿ı±±¿ËºÅ" "²»ÁĞµß¸çÂ×±ÈÑÇºÅ" "ĞÂË¹¿ÆÉáºÅ" "ĞÂ²¼Â×Èğ¿ËºÅ" "ÂüÄáÍĞ°ÍºÅ" "°¬²®ËşºÅ" "ÈøË¹¿¦³¹ÎÂºÅ" "°®µÂ»ªÍõ×ÓµººÅ" "¶àÂ×¶àºÅ" "ÃÉÌØÀû¶ûºÅ" 
+		"ÎÂ¸ç»ªºÅ" "ä×Ì«»ªºÅ" "¿¨¶û¼ÓÀïºÅ" "°£µÂÃÉ¶ÙºÅ" "¿ı±±¿ËµººÅ" "ÎÂÄá²´ºÅ" "ººÃÜ¶û¶ÙºÅ" "Â×¶ØºÅ" "»ù½ğÄÉºÅ" "Ê¥¿­ÉªÁÕºÅ" "¹şÀû·¨¿ËË¹ºÅ" 
+		"Î¬¶àÀûÑÇºÅ" "ÎÂÉ¯ºÅ" "°ÂÉ³ÍßºÅ" "ÈøË¹¿¨Í¨ºÅ" "Àï¼ÖÄÉºÅ" "Éá²¼Â³¿ËºÅ" "°ÍÀïºÅ" "¿ÆÂ¡ÄÇºÅ" "°¢²¨×È¸£µÂºÅ" "½ğË¹¶ÙºÅ" "ÈıºÓºÅ" 
+		"Ê¥Ô¼º²ºÅ" "ÃÉ¿Ë¶ÙºÅ" 
 	}
 	heavy_cruiser = {
-		"HMCS Kingston" "HMCS Ontario" "HMCS Québec" "HMCS British Columbia" "HMCS Nova Scotia" "HMCS New Brunswick" "HMCS Manitoba" "HMCS Alberta" "HMCS Saskatchewan" "HMCS Prince Edward Island" "HMCS Niobe" 
-		"HMCS Rainbow" "HMCS Toronto" "HMCS Montréal" "HMCS Vancouver" "HMCS Ottawa" "HMCS Calgary" "HMCS Edmonton" "HMCS Ile de Québec" "HMCS Winnipeg" "HMCS Hamilton" "HMCS London" 
-		"HMCS Kitchener" "HMCS St. Catharines" "HMCS Halifax" "HMCS Victoria" "HMCS Windsor" "HMCS Oshawa" "HMCS Saskatoon" "HMCS Regina" "HMCS Sherbrooke" "HMCS Barrie" "HMCS Kelowna" 
-		"HMCS Abbotsford" "HMCS Kingson" "HMCS Trois-Rivières" "HMCS Saint John" "HMCS Moncton" 
+		"½ğË¹¶ÙºÅ" "°²´óÂÔºÅ" "¿ı±±¿ËºÅ" "²»ÁĞµß¸çÂ×±ÈÑÇºÅ" "ĞÂË¹¿ÆÉáºÅ" "ĞÂ²¼Â×Èğ¿ËºÅ" "ÂüÄáÍĞ°ÍºÅ" "°¬²®ËşºÅ" "ÈøË¹¿¦³¹ÎÂºÅ" "°®µÂ»ªÍõ×ÓµººÅ" "Äá°Â±ÈºÅ" 
+		"²ÊºçºÅ" "¶àÂ×¶àºÅ" "ÃÉÌØÀû¶ûºÅ" "ÎÂ¸ç»ªºÅ" "ä×Ì«»ªºÅ" "¿¨¶û¼ÓÀïºÅ" "°£µÂÃÉ¶ÙºÅ" "¿ı±±¿ËµººÅ" "ÎÂÄá²´ºÅ" "ººÃÜ¶û¶ÙºÅ" "Â×¶ØºÅ" "»ù½ğÄÉºÅ" "Ê¥¿­ÉªÁÕºÅ" "¹şÀû·¨¿ËË¹ºÅ" 
+		"Î¬¶àÀûÑÇºÅ" "ÎÂÉ¯ºÅ" "°ÂÉ³ÍßºÅ" "ÈøË¹¿¨Í¨ºÅ" "Àï¼ÖÄÉºÅ" "Éá²¼Â³¿ËºÅ" "°ÍÀïºÅ" "¿ÆÂ¡ÄÇºÅ" "°¢²¨×È¸£µÂºÅ" "½ğË¹¶ÙºÅ" "ÈıºÓºÅ" 
+		"Ê¥Ô¼º²ºÅ" "ÃÉ¿Ë¶ÙºÅ" 
 	}
 	battlecruiser = {
-		"HMCS Canada" "HMCS Dominion" "HMCS Ontario" "HMCS Québec" "HMCS British Columbia" "HMCS Nova Scotia" "HMCS New Brunswick" "HMCS Manitoba" "HMCS Alberta" "HMCS Saskatchewan" "HMCS Prince Edward Island" 
+		"¼ÓÄÃ´óºÅ" "µÀÃ÷ºÅ" "°²´óÂÔºÅ" "¿ı±±¿ËºÅ" "²»ÁĞµß¸çÂ×±ÈÑÇºÅ" "ĞÂË¹¿ÆÉáºÅ" "ĞÂ²¼Â×Èğ¿ËºÅ" "ÂüÄáÍĞ°ÍºÅ" "°¬²®ËşºÅ" "ÈøË¹¿¦³¹ÎÂºÅ" "°®µÂ»ªÍõ×ÓµººÅ" 
 			}
 	destroyer = {
-		"Destroyer Flotilla 1" "Destroyer Flotilla 2" "Destroyer Flotilla 3" "Destroyer Flotilla 4" "Destroyer Flotilla 5" "Destroyer Flotilla 6" "Destroyer Flotilla 7" "Destroyer Flotilla 8" "Destroyer Flotilla 9" "Destroyer Flotilla 10" "Destroyer Flotilla 11" 
-		"Destroyer Flotilla 12" "Destroyer Flotilla 13" "Destroyer Flotilla 14" "Destroyer Flotilla 15" "Destroyer Flotilla 16" "Destroyer Flotilla 17" "Destroyer Flotilla 18" "Destroyer Flotilla 19" "Destroyer Flotilla 20" 
+		"µÚ1ÇıÖğ½¢¶Ó" "µÚ2ÇıÖğ½¢¶Ó" "µÚ3ÇıÖğ½¢¶Ó" "µÚ4ÇıÖğ½¢¶Ó" "µÚ5ÇıÖğ½¢¶Ó" "µÚ6ÇıÖğ½¢¶Ó" "µÚ7ÇıÖğ½¢¶Ó" "µÚ8ÇıÖğ½¢¶Ó" "µÚ9ÇıÖğ½¢¶Ó" "µÚ10ÇıÖğ½¢¶Ó" "µÚ11ÇıÖğ½¢¶Ó" 
+		"µÚ12ÇıÖğ½¢¶Ó" "µÚ13ÇıÖğ½¢¶Ó" "µÚ14ÇıÖğ½¢¶Ó" "µÚ15ÇıÖğ½¢¶Ó" "µÚ16ÇıÖğ½¢¶Ó" "µÚ17ÇıÖğ½¢¶Ó" "µÚ18ÇıÖğ½¢¶Ó" "µÚ19ÇıÖğ½¢¶Ó" "µÚ20ÇıÖğ½¢¶Ó" 
 	}
 	carrier = {
-		"HMCS Warrior" "HMCS Magnificent" "HMCS Bonaventure" "HMCS Nabob" "HMCS Puncher" 
+		"ÓÂÊ¿ºÅ" "×³ÀöºÅ" "Ã°ÏÕºÅ" "µØ·½×Ü¶½ºÅ" "×ê¿×ÕßºÅ" 
 	}
 	escort_carrier = {
-		"HMCS Warrior"
-		"HMCS Magnificent" "HMCS Bonaventure"
+		"ÓÂÊ¿ºÅ" "×³ÀöºÅ" "Ã°ÏÕºÅ" "µØ·½×Ü¶½ºÅ" "×ê¿×ÕßºÅ" 
 	}
 	submarine = {
-		"Submarine Flotilla 1" "Submarine Flotilla 2" "Submarine Flotilla 3" "Submarine Flotilla 4" "Submarine Flotilla 5" "Submarine Flotilla 6" "Submarine Flotilla 7" "Submarine Flotilla 8" "Submarine Flotilla 9" "Submarine Flotilla 10" "Submarine Flotilla 11" 
-		"Submarine Flotilla 12" "Submarine Flotilla 13" "Submarine Flotilla 14" "Submarine Flotilla 15" 
+		"µÚ1Ç±Í§±à¶Ó" "µÚ2Ç±Í§±à¶Ó" "µÚ3Ç±Í§±à¶Ó" "µÚ4Ç±Í§±à¶Ó" "µÚ5Ç±Í§±à¶Ó" "µÚ6Ç±Í§±à¶Ó" "µÚ7Ç±Í§±à¶Ó" "µÚ8Ç±Í§±à¶Ó" "µÚ9Ç±Í§±à¶Ó" "µÚ10Ç±Í§±à¶Ó" "µÚ11Ç±Í§±à¶Ó" 
+		"µÚ12Ç±Í§±à¶Ó" "µÚ13Ç±Í§±à¶Ó" "µÚ14Ç±Í§±à¶Ó" "µÚ15Ç±Í§±à¶Ó" "µÚ16Ç±Í§±à¶Ó" "µÚ17Ç±Í§±à¶Ó" "µÚ18Ç±Í§±à¶Ó" "µÚ19Ç±Í§±à¶Ó" "µÚ20Ç±Í§±à¶Ó" 
 	}
 	transport_ship = {
-		"'Empress of Japan' Flotilla" "'Empress of Australia' Flotilla" "'Empress of Britain' Flotilla" "'Empress of Canada' Flotilla" "'Empress of Russia' Flotilla" "'Empress of Asia' Flotilla" "'Duchess of Richmond' Flotilla" "'Duchess of Bedford' Flotilla" "'Duchess of York' Flotilla" "'Duchess of Atholl' Flotilla" "'Prince David' Flotilla" 
-		"'Prince Henry' Flotilla" "'Prince Robert' Flotilla" "1st Transport Detachment" "2nd Transport Detachment" "3rd Transport Detachment" "4th Transport Detachment" "5th Transport Detachment" "6th Transport Detachment" "7th Transport Detachment" "8th Transport Detachment" "9th Transport Detachment" 
-		"10th Transport Detachment" "11th Transport Detachment" "12th Transport Detachment" "13th Transport Detachment" "14th Transport Detachment" "15th Transport Detachment" "16th Transport Detachment" "17th Transport Detachment" "18th Transport Detachment" "19th Transport Detachment" "20th Transport Detachment" 
+		"'ÈÕ±¾Å®»Ê'ÔËÊä½¢¶Ó" "'°ÂµØÀûÅ®»Ê'ÔËÊä½¢¶Ó" "'²»ÁĞµßÅ®»Ê'ÔËÊä½¢¶Ó" "'¼ÓÄÃ´óÅ®»Ê'ÔËÊä½¢¶Ó" "'¶í¹úÅ®»Ê'ÔËÊä½¢¶Ó" "'ÑÇÖŞÅ®»Ê'ÔËÊä½¢¶Ó" "'ÀïÆæÃÉÅ®¹«¾ô'ÔËÊä½¢¶Ó" "'±´µÂ¸£µÂÅ®¹«¾ô'ÔËÊä½¢¶Ó" "'Ô¼¿ËÅ®¹«¾ô'ÔËÊä½¢¶Ó" "'°¢Ë÷¶ûÅ®¹«¾ô'ÔËÊä½¢¶Ó" "'´óÎÀÍõ×Ó'ÔËÊä½¢¶Ó" 
+		"'ºàÀûÍõ×Ó'ÔËÊä½¢¶Ó" "'ÂŞ²®ÌØÍõ×Ó'ÔËÊä½¢¶Ó" "µÚ1ÔËÊä½¢¶Ó" "µÚ2ÔËÊä½¢¶Ó" "µÚ3ÔËÊä½¢¶Ó" "µÚ4ÔËÊä½¢¶Ó" "µÚ5ÔËÊä½¢¶Ó" "µÚ6ÔËÊä½¢¶Ó" "µÚ7ÔËÊä½¢¶Ó" "µÚ8ÔËÊä½¢¶Ó" "µÚ9ÔËÊä½¢¶Ó" "µÚ10ÔËÊä½¢¶Ó" "µÚ11ÔËÊä½¢¶Ó" 
+		"µÚ12ÔËÊä½¢¶Ó" "µÚ13ÔËÊä½¢¶Ó" "µÚ14ÔËÊä½¢¶Ó" "µÚ15ÔËÊä½¢¶Ó" "µÚ16ÔËÊä½¢¶Ó" "µÚ17ÔËÊä½¢¶Ó" "µÚ18ÔËÊä½¢¶Ó" "µÚ19ÔËÊä½¢¶Ó" "µÚ20ÔËÊä½¢¶Ó" 
 			}
 
 }
@@ -217,15 +177,16 @@ unit_names = {
 
 ministers = {
 	45001 = {
-		name = "John Baron Tweedsmuir"
+		name = "ÌØÍş×ÈÄÂ¶ûÄĞ¾ô"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45001
 		head_of_state = benevolent_gentleman
+		head_of_state = benevolent_gentleman
 		start_date = 1936.1.1
 	}
 	45002 = {
-		name = "Mackenzie King"
+		name = "Âó¿ÏÆë¡¤½ğ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45002
@@ -234,7 +195,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45004 = {
-		name = "Ian A. MacKenzie"
+		name = "ÒÁ°²¡¤Âó¿ÏÆë"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45004
@@ -242,7 +203,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45005 = {
-		name = "Ernest Lapointe"
+		name = "Å·ÄÚË¹ÌØ¡¤À­ÅíÌØ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45005
@@ -250,7 +211,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45006 = {
-		name = "Henry Crerar"
+		name = "ºàÀû¡¤¿ËÀïÀÕ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45006
@@ -260,7 +221,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45007 = {
-		name = "Ernest Ashton"
+		name = "Å·ÄÚË¹ÌØ¡¤°¢Ê²¶Ù"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45007
@@ -269,15 +230,15 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45009 = {
-		name = "Percy Nelles"
+		name = "ÅåÎ÷¡¤ÄÚ¶ûË¹"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45009
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1936.1.1
 	}
 	45010 = {
-		name = "George Croil"
+		name = "ÇÇÖÎ¡¤¿ËÂŞÒÁ¶û"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45010
@@ -285,8 +246,8 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45033 = {
-		name = "Adrien Arcand"
-		ideology = national_socialist
+		name = "ÑÇµÂÀï°²¡¤°¢¿²µÂ"
+		ideology = fascistic
 		loyalty = 1.00
 		picture = M45011
 		head_of_state = barking_buffoon
@@ -295,7 +256,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45034 = {
-		name = "Tim Buck"
+		name = "µÙÄ·¡¤²¼¿Ë"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M45021
@@ -304,17 +265,8 @@ ministers = {
 		foreign_minister = the_cloak_n_dagger_schemer
 		start_date = 1936.1.1
 	}
-	45035 = {
-		name = "Henry Herbert Stevens"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = M45035
-		head_of_government = silent_workhorse
-		minister_of_security = crime_fighter
-		start_date = 1936.1.1
-	}
 	45036 = {
-		name = "R.B. Bennett"
+		name = "±¾ÄÚÌØ"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45036
@@ -323,33 +275,25 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45037 = {
-		name = "Robert Manion"
+		name = "ÂŞ²®ÌØ¡¤ÂíÄá°º"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45037
 		head_of_government = naive_optimist
 		foreign_minister = apologetic_clerk
-		start_date = 1938.1.1
+		start_date = 1940.1.1
 	}
 	45038 = {
-		name = "John Bracken"
+		name = "Ô¼º²¡¤²¼À­¿Ï"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45038
 		head_of_government = smiling_oilman
 		foreign_minister = biased_intellectual
-		start_date = 1940.1.1
-	}
-	45039 = {
-		name = "Richard Hanson"
-		ideology = social_conservative
-		loyalty = 1.00
-		picture = M45039
-		head_of_government = happy_amateur
-		start_date = 1940.1.1
+		start_date = 1944.1.1
 	}
 	45042 = {
-		name = "Louis St. Laurent"
+		name = "Â·Ò×¡¤Ê¥ÀÍÂ×"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45042
@@ -357,24 +301,16 @@ ministers = {
 		head_of_government = old_general
 		start_date = 1946.1.1
 	}
-	45045 = {
-		name = "J.S. Woodsworth"
-		ideology = social_democrat
+	45044 = {
+		name = "Å£¶Ù¡¤ÂåÎ¬¶û"
+		ideology = social_conservative
 		loyalty = 1.00
-		picture = M45045
-		head_of_government = silent_workhorse
-		start_date = 1936.1.1
-	}
-	45046 = {
-		name = "M.J. Coldwell"
-		ideology = social_democrat
-		loyalty = 1.00
-		picture = M45046
-		head_of_government = political_protege
-		start_date = 1940.1.1
+		picture = M45044
+		foreign_minister = ideological_crusader
+		start_date = 1938.1.1
 	}
 	45048 = {
-		name = "Andrew Greene Carnell"
+		name = "°²µÂÂ³¡¤¿¨ÄÚ¶û"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M45016
@@ -383,7 +319,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	45050 = {
-		name = "Armand Lavassieux"
+		name = "°¢ÂüµÂ¡¤À­ÍßÎı"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M45050
@@ -391,7 +327,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	45051 = {
-		name = "John Lethbridge"
+		name = "Ô¼º²¡¤À³Ë¹²¼ÀïÆæ"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M45028
@@ -401,7 +337,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	45053 = {
-		name = "James Ralston"
+		name = "Õ²Ä·Ë¹¡¤À³Ë¹¶Ù"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45053
@@ -409,7 +345,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	45054 = {
-		name = "Douglas S. Abbott"
+		name = "µÀ¸ñÀ­Ë¹¡¤°¢²®ÌØ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45054
@@ -417,7 +353,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	45055 = {
-		name = "Raoul Dandurand"
+		name = "ÀÍ¶û¡¤µ¤¶ÅÀ¼µÂ"
 		ideology = market_liberal
 		loyalty = 0.50
 		picture = M45055
@@ -425,32 +361,31 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45056 = {
-		name = "Arthur Meighen"
+		name = "°¢Éª¡¤Ã×¶÷"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45056
-		head_of_government = naive_optimist
 		armament_minister = resource_industrialist
 		start_date = 1940.1.1
 	}
 	45057 = {
-		name = "C.D. Howe"
-		ideology = market_liberal
+		name = "ºÀ"
+		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45057
 		armament_minister = administrative_genius
 		start_date = 1940.1.1
 	}
 	45058 = {
-		name = "John Ross Taylor"
-		ideology = fascistic
+		name = "Ô¼º²¡¤ÂŞË¹¡¤Ì©ÀÕ"
+		ideology = paternal_autocrat
 		loyalty = 0.25
 		picture = M45014
 		armament_minister = corrupt_kleptocrat
 		start_date = 1936.1.1
 	}
 	45059 = {
-		name = "Tasker Cook"
+		name = "ËûË¼¿Æ¡¤¿â¿Ë"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M45059
@@ -458,7 +393,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	45060 = {
-		name = "Charles J. Howlett"
+		name = "²éÀí¡¤»ô·òÀ³ÌØ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M45060
@@ -466,7 +401,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	45061 = {
-		name = "René St. Pierre"
+		name = "Ê¥Æ¤°£¶û"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M45061
@@ -475,7 +410,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	45062 = {
-		name = "Pierre Gagnon"
+		name = "Æ¤°£¶û¡¤¼ÓÅ©"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M45062
@@ -484,7 +419,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	45063 = {
-		name = "Matthew Popovich"
+		name = "ÂíĞŞ¡¤²¨²¨Î¬Ææ"
 		ideology = left_wing_radical
 		loyalty = 0.50
 		picture = M45024
@@ -492,7 +427,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45064 = {
-		name = "William Kashtan"
+		name = "ÍşÁ®¡¤¿¨Ê²Ì¹"
 		ideology = leninist
 		loyalty = 0.50
 		picture = M45064
@@ -500,7 +435,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	45065 = {
-		name = "Robert M. Edwards"
+		name = "ÂŞ²®ÌØ¡¤°®µÂ»ª"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M45065
@@ -509,7 +444,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	45066 = {
-		name = "Bob Mann"
+		name = "±«²ª¡¤Âü¶÷"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M45030
@@ -518,7 +453,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	45069 = {
-		name = "George W. Stephens"
+		name = "ÇÇÖÎ¡¤Ê·µÙ·Ò"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M45069
@@ -526,7 +461,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	45070 = {
-		name = "Thomas A. Crerar"
+		name = "ÍĞÂíË¹¡¤¿ËÀïÀÕ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45070
@@ -534,7 +469,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45071 = {
-		name = "Gordon Graydon"
+		name = "¸êµÇ¡¤¸ñÀ³¶Ù"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45071
@@ -543,7 +478,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	45072 = {
-		name = "Louis St. Laurent"
+		name = "Â·Ò×¡¤Ê¥ÀÍÂ×Ë¹"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45042
@@ -551,7 +486,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	45073 = {
-		name = "John Diefenbaker"
+		name = "Ô¼º²¡¤µÏ·Ò±´¿Ë"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45073
@@ -560,17 +495,15 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	45074 = {
-		name = "Chuck Crate"
-		ideology = fascistic
+		name = "³ş¿Ë¡¤¿ËÀ³ÌØ"
+		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M45015
-		head_of_state = barking_buffoon
-		head_of_government = backroom_backstabber
 		minister_of_security = prince_of_terror
 		start_date = 1936.1.1
 	}
 	45075 = {
-		name = "Pierre St. Pierre"
+		name = "Æ¤°£¶û¡¤Ê¥Æ¤°£¶û"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M45075
@@ -578,7 +511,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	45076 = {
-		name = "Thomas Adams"
+		name = "ÍĞÂíË¹¡¤ÑÇµ±Ë¹"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M45076
@@ -586,7 +519,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	45078 = {
-		name = "Jean Couillard"
+		name = "ÈÃ¡¤¿âÑÇ¶û"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M45078
@@ -596,7 +529,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	45079 = {
-		name = "William G. Adams"
+		name = "ÍşÁ®¡¤ÑÇµ±Ë¹"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M45079
@@ -605,7 +538,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	45080 = {
-		name = "Tom McEwan"
+		name = "ÌÀÄ·¡¤Âó¿ËÎÄ"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M45025
@@ -613,7 +546,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45081 = {
-		name = "Robert Blackhawk"
+		name = "ÂŞ²®ÌØ¡¤²¼À³¿Ë»ô¿Ë"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M45081
@@ -621,7 +554,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	45082 = {
-		name = "Gino Verchiella"
+		name = "Î¬ÇĞ¶û"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M45082
@@ -630,15 +563,23 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	45083 = {
-		name = "Quentin Piggott"
+		name = "Æ¤¸ñÌØ"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M45083
 		minister_of_security = compassionate_gentleman
 		start_date = 1943.1.1
 	}
+	45085 = {
+		name = "ºÕ²®ÌØ¡¤²¼ÀÊ¡¤°¢Ã·Ë¹"
+		ideology = market_liberal
+		loyalty = 1.00
+		picture = M45085
+		minister_of_intelligence = dismal_enigma
+		start_date = 1937.1.1
+	}
 	45086 = {
-		name = "Kenneth Stuart"
+		name = "¿ÏÄáË¹¡¤Ë¹Í¼ÑÇÌØ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45086
@@ -648,7 +589,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	45087 = {
-		name = "Ralph Gibson"
+		name = "À­¶û·ò¡¤¼ª²¼É­"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45087
@@ -656,7 +597,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	45088 = {
-		name = "Maurice Pope"
+		name = "ÄªÀïË¹¡¤²¨ÆÕ"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45088
@@ -664,7 +605,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45091 = {
-		name = "Pierre Berton"
+		name = "Æ¤¶ûË¹¡¤±´¶Ù"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M45091
@@ -672,7 +613,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	45094 = {
-		name = "Jacques Robert"
+		name = "ÑÅ¿Ë¡¤ÂŞ²®ÌØ"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M45094
@@ -681,7 +622,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45096 = {
-		name = "Jacques Richard"
+		name = "ÑÅ¿Ë¡¤Àí²éµÂ"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M45096
@@ -690,7 +631,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	45097 = {
-		name = "William Dees"
+		name = "ÍşÁ®¡¤µÏË¹"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M45026
@@ -698,16 +639,17 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	45099 = {
-		name = "Thomas Anderson"
+		name = "ÍĞÂíË¹¡¤°²µÂÉ­"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45099
 		chief_of_staff = school_of_defence
 		chief_of_army = static_defence_doctrine
+		chief_of_navy = base_control_doctrine
 		start_date = 1940.1.1
 	}
 	45102 = {
-		name = "John Murchie"
+		name = "Ô¼º²¡¤ÄÂÇĞ"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45102
@@ -716,7 +658,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	45103 = {
-		name = "Charles Foulkes"
+		name = "²éÀí¡¤¸£¿ËË¹"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45103
@@ -725,7 +667,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	45104 = {
-		name = "Frederick M.W. Harvey"
+		name = "¸¥À×µÂÀï¿Ë¡¤¹şÎ¬"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M45017
@@ -734,7 +676,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45106 = {
-		name = "Samuel Cino"
+		name = "ÈøçÑ¶û¡¤ÆæÅµ"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M45027
@@ -742,7 +684,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	45118 = {
-		name = "Alasdair Murray"
+		name = "°¢À­Ë¹´ú¶û¡¤ÄÂÀ×"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M45019
@@ -750,7 +692,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45120 = {
-		name = "John F. King"
+		name = "Ô¼º²¡¤½ğ"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M45029
@@ -758,7 +700,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45123 = {
-		name = "Joseph Roméo Vachon"
+		name = "Ô¼Éª·ò¡¤Íß¿×"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M45123
@@ -766,7 +708,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45124 = {
-		name = "P.W. Oland"
+		name = "°ÂÀ¼µÂ"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M45020
@@ -774,31 +716,34 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	45129 = {
-		name = "Sir Lyman Poore Duff"
+		name = "¶Å·ò¾ôÊ¿"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45129
 		head_of_state = popular_figurehead
+		head_of_state = popular_figurehead
 		start_date = 1940.1.1
 	}
 	45131 = {
-		name = "Alexander Earl of Athlone"
+		name = "°¢Ë÷Â¡²®¾ô°Â¹ÅË¹ÌØ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45131
 		head_of_state = stern_imperialist
+		head_of_state = stern_imperialist
 		start_date = 1940.1.1
 	}
 	45133 = {
-		name = "Harold Viscount Alexander"
+		name = "Í»ÄáË¹×Ó¾ô¹şÂŞµÂ"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45133
 		head_of_state = resigned_generalissimo
+		head_of_state = resigned_generalissimo
 		start_date = 1946.1.1
 	}
 	45137 = {
-		name = "J.L. Isley"
+		name = "ÒÁË¹À×"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45137
@@ -806,7 +751,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	45138 = {
-		name = "Lester B. Pearson"
+		name = "À³Ë¹ÌØ¡¤Æ¤¶ûÉ­"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45138
@@ -815,7 +760,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	45139 = {
-		name = "Robert Stanfield"
+		name = "ÂŞ²®ÌØ¡¤Ë¹Ì¹·Æ¶ûµÂ"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45139
@@ -823,7 +768,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	45140 = {
-		name = "Brooke Claxton"
+		name = "²¼Â³¿Ë¡¤¿ËÀ­¿ËË¹¶Ù"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45140
@@ -831,7 +776,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	45141 = {
-		name = "Ralph Osbourne Campney"
+		name = "À­¶û·ò¡¤¿²ÆÕÄá"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45141
@@ -839,7 +784,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	45142 = {
-		name = "Stuart Sinclair Garson"
+		name = "Ë¹Í¼ÑÇÌØ¡¤¼Ó¶ûÉ­"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45142
@@ -847,7 +792,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	45143 = {
-		name = "Edmond David Fulton"
+		name = "°£µÂÃÉ¡¤¸»¶Ù"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45143
@@ -855,7 +800,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	45144 = {
-		name = "Walter Edward Harris"
+		name = "ÎÖ¶ûÌØ¡¤¹şÀïË¹"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45144
@@ -863,7 +808,7 @@ ministers = {
 		start_date = 1948.1.1
 	}
 	45145 = {
-		name = "Bill Newson"
+		name = "±È¶û¡¤Å¦É­"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45145
@@ -871,23 +816,25 @@ ministers = {
 		start_date = 1951.1.1
 	}
 	45146 = {
-		name = "Vincent Massey"
+		name = "ÎÄÉ­ÌØ¡¤ÂíÈû"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45146
 		head_of_state = autocratic_charmer
+		head_of_state = autocratic_charmer
 		start_date = 1952.1.1
 	}
 	45170 = {
-		name = "George P. Vanier"
+		name = "ÇÇÖÎ¡¤ÍßÄá¶û"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45170
 		head_of_state = popular_figurehead
+		head_of_state = popular_figurehead
 		start_date = 1959.1.1
 	}
 	45150 = {
-		name = "Howard Charles Green"
+		name = "»ô»ªµÂ¡¤¸ñÁÖ"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45150
@@ -895,7 +842,7 @@ ministers = {
 		start_date = 1957.1.1
 	}
 	45151 = {
-		name = "Paul Joseph Martin sr."
+		name = "±£ÂŞ¡¤Âí¶¡"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45151
@@ -903,7 +850,7 @@ ministers = {
 		start_date = 1963.1.1
 	}
 	45152 = {
-		name = "George Pearkes"
+		name = "ÇÇÖÎ¡¤Æ¤¿ËË¹"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45152
@@ -911,7 +858,7 @@ ministers = {
 		start_date = 1957.1.1
 	}
 	45153 = {
-		name = "Doug Harkness"
+		name = "µÀ¸ñ¡¤¹ş¿ËÄáË¹"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45153
@@ -919,7 +866,7 @@ ministers = {
 		start_date = 1960.1.1
 	}
 	45154 = {
-		name = "Gordon M. Churchill"
+		name = "¸êµÇ¡¤Çğ¼ª¶û"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45154
@@ -927,7 +874,7 @@ ministers = {
 		start_date = 1963.1.1
 	}
 	45155 = {
-		name = "Paul Hellyer"
+		name = "±£ÂŞ¡¤º£Ò®¶û"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45155
@@ -935,7 +882,7 @@ ministers = {
 		start_date = 1963.1.1
 	}
 	45156 = {
-		name = "Donald M. Fleming"
+		name = "ÌÆÄÉµÂ¡¤¸¥À³Ã÷"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45156
@@ -944,7 +891,7 @@ ministers = {
 		start_date = 1962.1.1
 	}
 	45157 = {
-		name = "Lionel Chevrier"
+		name = "ÇĞ·òÀï¶û"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45157
@@ -952,7 +899,7 @@ ministers = {
 		start_date = 1963.1.1
 	}
 	45158 = {
-		name = "Douglas C. Abbott"
+		name = "µÀ¸ñÀ­Ë¹¡¤°¢²®ÌØ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45158
@@ -960,7 +907,7 @@ ministers = {
 		start_date = 1949.1.1
 	}
 	45160 = {
-		name = "George Nowlan"
+		name = "ÇÇÖÎ¡¤ÅµÀ¼"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45160
@@ -968,7 +915,7 @@ ministers = {
 		start_date = 1963.1.1
 	}
 	45161 = {
-		name = "Guy Simonds"
+		name = "¾ÓÒÁ¡¤Î÷ÃÉµÂË¹"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L52065
@@ -976,7 +923,7 @@ ministers = {
 		start_date = 1951.1.1
 	}
 	45162 = {
-		name = "Howard Graham"
+		name = "»ô»ªµÂ¡¤¸ñÀ­ºº"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M45162
@@ -984,7 +931,7 @@ ministers = {
 		start_date = 1955.1.1
 	}
 	45163 = {
-		name = "Geoffrey Walsh"
+		name = "Íß¶ûÊ²"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45163
@@ -992,7 +939,7 @@ ministers = {
 		start_date = 1958.1.1
 	}
 	45164 = {
-		name = "Ralph Keefler"
+		name = "À­¶û·ò¡¤»ù·òÀ×"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L52030
@@ -1000,7 +947,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	45165 = {
-		name = "Edward Plow"
+		name = "°®µÂ»ª¡¤ÆÕÂŞ"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = L52054
@@ -1008,7 +955,7 @@ ministers = {
 		start_date = 1956.1.1
 	}
 	45166 = {
-		name = "Clarence Harpell"
+		name = "¿ÆÀ­Â×Ë¹¡¤¹şÅå¶û"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M45166
@@ -1016,15 +963,15 @@ ministers = {
 		start_date = 1961.1.1
 	}
 	45167 = {
-		name = "Daniel Hanington"
+		name = "µ¤Äá¶û¡¤ººÄş¶Ù"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M45167
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1957.1.1
 	}
 	45168 = {
-		name = "Lloyd Breadner"
+		name = "ÂŞÒÁµÂ¡¤²¼ÀïµÂÄÚ"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M45168
@@ -1032,137 +979,11 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	45169 = {
-		name = "Robert Leckie"
+		name = "ÂŞ²®ÌØ¡¤ÀÕ¼ª"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M45169
 		chief_of_air = naval_aviation_doctrine
 		start_date = 1953.1.1
-	}
-	# Generic dummy ministers
-	95150 = {
-		name = "Nameless Clerk"
-		ideology = national_socialist
-		loyalty = 1.0
-		picture = MNationalSocialist
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95151 = {
-		name = "Nameless Clerk"
-		ideology = fascistic
-		loyalty = 1.0
-		picture = MFascistic
-		foreign_minister = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95152 = {
-		name = "Nameless Clerk"
-		ideology = paternal_autocrat
-		loyalty = 1.0
-		picture = MPaternalAutocrat
-		head_of_state = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		start_date = 1936.1.1
-	}
-	95153 = {
-		name = "Nameless Clerk"
-		ideology = social_conservative
-		loyalty = 1.0
-		picture = MSocialConservative
-		head_of_state = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		start_date = 1936.1.1
-	}
-	95154 = {
-		name = "Nameless Clerk"
-		ideology = social_liberal
-		loyalty = 1.0
-		picture = MSocialLiberal
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95155 = {
-		name = "Nameless Clerk"
-		ideology = social_democrat
-		loyalty = 1.0
-		picture = MSocialDemocrat
-		head_of_state = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95156 = {
-		name = "Nameless Clerk"
-		ideology = left_wing_radical
-		loyalty = 1.0
-		picture = MLeftWingRadical
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95157 = {
-		name = "Nameless Clerk"
-		ideology = leninist
-		loyalty = 1.0
-		picture = MLeninist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95158 = {
-		name = "Nameless Clerk"
-		ideology = stalinist
-		loyalty = 1.0
-		picture = MStalinist
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
 	}
 }

@@ -1,56 +1,23 @@
-theatre = {
-	name = "Alto Mando de Cuba"
+corps = {
+	name = "古巴军"
 	location = 7576
-	regiment = { type = hq_brigade name = "La Habana HQ" historical_model = 0 }
-	corps = {
-		name = "Ejercito de Cuba"
+	regiment = { type = hq_brigade name = "古巴军指挥部" historical_model = 0 }
+	division= {
+		name = "第1陆军旅"
 		location = 7576
-		regiment = { type = hq_brigade name = "Ejercito de Cuba HQ" historical_model = 0 }
-		division= {
-			name = "1a Brigada de Ejercito"
-			location = 7576
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "1. Brigada de Infanter韆" experience = 0 historical_model = 1 }
-			regiment = { type = infantry_brigade name = "2. Brigada de Infanter韆" experience = 0 historical_model = 1 }
-			regiment = { type = infantry_brigade name = "3. Brigada de Infanter韆" experience = 0 historical_model = 1 }
-		}
-		division= {
-			name = "1a Brigada de Caballer韆 'Floridita'"
-			location = 7576
-			is_reserve = yes
-			regiment = { type = cavalry_brigade name = "1. Brigada de Caballer韆" experience = 0 historical_model = 1 }
-			regiment = { type = cavalry_brigade name = "2. Brigada de Caballer韆" experience = 0 historical_model = 1 }
-			regiment = { type = cavalry_brigade name = "3. Brigada de Caballer韆" experience = 0 historical_model = 1 }			
-		}
+		is_reserve = yes
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = infantry_brigade historical_model = 0 }
+	}
+	division= {
+		name = "第1'福罗里达'骑兵旅"
+		location = 7576
+		is_reserve = yes
+		regiment = { type = cavalry_brigade historical_model = 0 }
+		regiment = { type = cavalry_brigade historical_model = 0 }
 	}
 }
 
-convoy_construction=
-{
-	country = CUB
-	id=
-	{
-		id=15312
-		type=4713
-	}
-	size=1
-	cost=0.000 #you can put any number here and the engine will use it
-	progress=90.000
-	duration=0.000 #you can put any number here and the engine will use it
-	status=no #No means you get a convoy.  Yes means you get an escort
-}
-convoy_construction=
-{
-	country = CUB
-	id=
-	{
-		id=15313
-		type=4713
-	}
-	size=1
-	cost=0.000 #you can put any number here and the engine will use it
-	progress=90.000
-	duration=0.000 #you can put any number here and the engine will use it
-	status=no #No means you get a convoy.  Yes means you get an escort	
-}
+
 

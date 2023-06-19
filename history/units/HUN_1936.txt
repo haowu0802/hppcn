@@ -1,175 +1,145 @@
-theatre= {
-	name = "Honvédelmi Fõparancsnokság"
+armygroup = {
+	name = "Â½¾ü×ÜË¾Áî²¿"
 	location = 3164
-	regiment = { type = hq_brigade name = "Honvédelmi Minisztérium" experience = 5 historical_model = 0 } 	
-	armygroup = {   name = "Magyar Királyi Honvédség"
-		location = 3164 # Budapest, Budapest Region in Hungary 
-		regiment = { type = hq_brigade name = "Honvéd Vezérkar" experience = 5 historical_model = 0 }		
-		corps = {   name = "Gyorshadtest"
-			location = 3164 # Budapest, Budapest Region in Hungary 
-			regiment = { type = hq_brigade name = "Gyorshadtest HQ" historical_model = 0 }	
-			division = {    name = "1. Motorizált Hadosztály"
+	regiment = { type = hq_brigade name = "×ÜË¾Áî²¿" historical_model = 0 }
+	army = {
+		name = "µÚ1±øÍÅ"
+		location = 3164
+		regiment = { type = hq_brigade name = "µÚ1¾üÖ¸»Ó²¿" historical_model = 0 }
+		corps = {
+			name = "µÚI¾ü"
+			location = 3164
+			regiment = { type = hq_brigade name = "µÚI¾üÖ¸»Ó²¿" historical_model = 0 }
+			division = { 
+				name = "µÚ1²½±øÊ¦"
 				location = 3164
 				is_reserve = yes
-				regiment = { type = motorized_brigade name = "1. Motorizált Gyalogezred" experience = 5 historical_model = 0 }
-				regiment = { type = cavalry_brigade name = "1. Biciklis Gyalogezred" experience = 5 historical_model = 2 }
-				regiment = { type = light_armor_brigade name = "1. Harckocsi Ezred" experience = 5 historical_model = 2 }				
-				regiment = { type = truck_towed_support_brigade name = "1. Motorizált Tüzérosztály" experience = 5 historical_model = 3 }				
+				regiment = { type = infantry_brigade name = "µÚ1²½±øÍÅ" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "µÚ31²½±øÍÅ" historical_model = 0 }
 			}
-			division = {    name = "2. Motorizált Hadosztály"
-				location = 3166
+			division = { 
+				name = "µÚ2²½±øÊ¦"
+				location = 3164
 				is_reserve = yes
-				regiment = { type = motorized_brigade name = "2. Motorizált Gyalogezred" experience = 5 historical_model = 0 }
-				regiment = { type = cavalry_brigade name = "2. Biciklis Gyalogezred" experience = 5 historical_model = 2 }
-				regiment = { type = truck_towed_support_brigade name = "2. Motorizált Tüzérosztály" experience = 5 historical_model = 3 }
-			}			
-			division = {    name = "1. Huszárhadosztály"
-				location = 3166
+				regiment = { type = infantry_brigade name = "µÚ2²½±øÍÅ" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "µÚ32²½±øÍÅ" historical_model = 0 }
+			}
+			division = { 
+				name = "µÚ3²½±øÊ¦"
+				location = 3164
 				is_reserve = yes
-				regiment = { type = cavalry_brigade name = "3. Huszárezred" experience = 5 historical_model = 2 }
-				regiment = { type = cavalry_brigade name = "4. Huszárezred" experience = 5 historical_model = 2 }
-				regiment = { type = truck_towed_support_brigade name = "3. Motorizált Tüzérosztály" experience = 5 historical_model = 3 }
-			}
-			division = {    name = "2. Huszárhadosztály"
-				location = 3164 # Budapest, Budapest Region in Hungary 
-				is_reserve = yes
-				regiment = { type = cavalry_brigade name = "1. Huszárezred" experience = 5 historical_model = 2 }
-				regiment = { type = cavalry_brigade name = "2. Huszárezred" experience = 5 historical_model = 2 }
-				regiment = { type = truck_towed_support_brigade name = "4. Motorizált Tüzérosztály" experience = 5 historical_model = 3 }
-			}	
-		}	
-		army = {
-			name = "1. Hadsereg"
-			location = 3164 # Budapest, Budapest Region in Hungary 
-			regiment = { type = hq_brigade name = "1. Hadsereg HQ" historical_model = 0 }			
-			corps = {   name = "I Hadtest"
-				location = 3164 # Budapest, Budapest Region in Hungary 
-				regiment = { type = hq_brigade name = "I Hadtest HQ" historical_model = 0 }
-				division = {    name = "1. Gyaloghadosztály"
-					location = 3164 # Budapest, Budapest Region in Hungary 
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "1. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = infantry_brigade name = "31. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = horse_towed_support_brigade name = "1. Tüzérosztály" experience = 5 historical_model = 1 }
-				}
-				division = {    name = "2. Gyaloghadosztály"
-					location = 3164 # Budapest, Budapest Region in Hungary 
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "2. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = infantry_brigade name = "32. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = horse_towed_support_brigade name = "2. Tüzérosztály" experience = 5 historical_model = 2 }
-				}
-				division = {    name = "3. Gyaloghadosztály"
-					location = 3164 # Budapest, Budapest Region in Hungary 
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "15. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = infantry_brigade name = "45. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = horse_towed_support_brigade name = "3. Tüzérosztály" experience = 5 historical_model = 1 }
-				}
-			}
-			corps = {   name = "II Hadtest"
-				location = 3164 # Budapest, Budapest Region in Hungary 
-				regiment = { type = hq_brigade name = "II Hadtest HQ" historical_model = 0 }
-				division = {    name = "4. Gyaloghadosztály"
-					location = 3164 # Budapest, Budapest Region in Hungary 
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "3. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = infantry_brigade name = "33. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = horse_towed_support_brigade name = "4. Tüzérosztály" experience = 5 historical_model = 2 }
-				}
-				division = {    name = "5. Gyaloghadosztály"
-					location = 3164 # Budapest, Budapest Region in Hungary 
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "16. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = infantry_brigade name = "52. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = horse_towed_support_brigade name = "5. Tüzérosztály" experience = 5 historical_model = 1 }
-				}
-				division= {   name = "6. Gyaloghadosztály"
-					location = 3164 # Budapest, Budapest Region in Hungary 
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "22. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = infantry_brigade name = "52. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = horse_towed_support_brigade name = "6. Tüzérosztály" experience = 5 historical_model = 2 }
-				}
-			}
-			corps = {   name = "III Hadtest"
-				location = 3164 # Budapest, Budapest Region in Hungary 
-				regiment = { type = hq_brigade name = "III Hadtest HQ" historical_model = 0 }
-				division= {   name = "7. Gyaloghadosztály"
-					location = 3164 # Budapest, Budapest Region in Hungary 
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "4. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = infantry_brigade name = "34. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = horse_towed_support_brigade name = "7. Tüzérosztály" experience = 5 historical_model = 1 }					
-				}
-				division= {   name = "8. Gyaloghadosztály"
-					location = 3164 # Budapest, Budapest Region in Hungary 
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "5. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = infantry_brigade name = "35. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = horse_towed_support_brigade name = "8. Tüzérosztály" experience = 5 historical_model = 2 }
-				}
-				division= {   name = "9. Gyaloghadosztály"
-					location = 3164 # Budapest, Budapest Region in Hungary 
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "17. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = infantry_brigade name = "47. Gyalogezred" experience = 5 historical_model = 2 }	
-					regiment = { type = horse_towed_support_brigade name = "9. Tüzérosztály" experience = 5 historical_model = 1 }					
-				}
+				regiment = { type = infantry_brigade name = "µÚ15²½±øÍÅ" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "µÚ45²½±øÍÅ" historical_model = 0 }
 			}
 		}
-		army = {   name = "2. Hadsereg"
-			location = 3569 # Pécs, Kaposvár Region in Hungary 
-			regiment = { type = hq_brigade name = "2. Hadsereg HQ" historical_model = 0 }			
-			corps = {   name = "IV Hadtest"
-				location = 3569 # Pécs, Kaposvár Region in Hungary 
-				regiment = { type = hq_brigade name = "IV Hadtest HQ" historical_model = 0 }
-				division= {   name = "10. Gyaloghadosztály"
-					location = 3569 # Pécs, Kaposvár Region in Hungary 
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "6. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = infantry_brigade name = "36. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = horse_towed_support_brigade name = "10. Tüzérosztály" experience = 5 historical_model = 2 }
-				}
-				division= {   name = "11. Gyaloghadosztály"
-					location = 3569 # Pécs, Kaposvár Region in Hungary 
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "8. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = infantry_brigade name = "38. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = horse_towed_support_brigade name = "11. Tüzérosztály" experience = 5 historical_model = 1 }
-				}
-				division= {   name = "12. Gyaloghadosztály"
-					location = 3569 # Pécs, Kaposvár Region in Hungary 
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "18. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = infantry_brigade name = "48. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = horse_towed_support_brigade name = "12. Tüzérosztály" experience = 5 historical_model = 2 }
-				}
+		corps = {
+			name = "µÚII¾ü"
+			location = 3164
+			regiment = { type = hq_brigade name = "µÚII¾üÖ¸»Ó²¿" historical_model = 0 }
+			division = { 
+				name = "µÚ4²½±øÊ¦"
+				location = 3164
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "µÚ3²½±øÍÅ" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "µÚ33²½±øÍÅ" historical_model = 0 }
 			}
-			corps = {   name = "V Hadtest"
-				location = 3569 # Pécs, Kaposvár Region in Hungary 
-				regiment = { type = hq_brigade name = "V Hadtest HQ" historical_model = 0 }
-				division= {   name = "13. Gyaloghadosztály"
-					location = 3569 # Pécs, Kaposvár Region in Hungary 
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "7. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = infantry_brigade name = "37. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = horse_towed_support_brigade name = "13. Tüzérosztály" experience = 5 historical_model = 1 }
-				}
-				division= {   name = "14. Gyaloghadosztály"
-					location = 3569 # Pécs, Kaposvár Region in Hungary 
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "9. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = infantry_brigade name = "39. Gyalogezred" experience = 5 historical_model = 2 }
-					regiment = { type = horse_towed_support_brigade name = "14. Tüzérosztály" experience = 5 historical_model = 2 }
-				}
+			division = { 
+				name = "µÚ5²½±øÊ¦"
+				location = 3164
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "µÚ16²½±øÍÅ" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "µÚ52²½±øÍÅ" historical_model = 0 }
+			}
+			division= {
+				name = "µÚ6²½±øÊ¦"
+				location = 3164
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "µÚ22²½±øÍÅ" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "µÚ52²½±øÍÅ" historical_model = 0 }
+			}
+		}
+		corps = {
+			name = "µÚIII¾ü"
+			location = 3164
+			regiment = { type = hq_brigade name = "µÚIII¾üÖ¸»Ó²¿" historical_model = 0 }
+			division= {
+				name = "µÚ7²½±øÊ¦"
+				location = 3164
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "µÚ4²½±øÍÅ" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "µÚ34²½±øÍÅ" historical_model = 0 }		
+			}
+			division= {
+				name = "µÚ8²½±øÊ¦"
+				location = 3164
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "µÚ5²½±øÍÅ" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "µÚ35²½±øÍÅ" historical_model = 0 }
+			}
+			division= {
+				name = "µÚ9²½±øÊ¦"
+				location = 3164
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "µÚ17²½±øÍÅ" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "µÚ47²½±øÍÅ" historical_model = 0 }		
 			}
 		}
 	}
-	air = {	   name = "Magyar Királyi Légierõ"
-		base = 3164 # Budapest, Budapest Region in Hungary 
-		location = 3164	 # , 
-		wing = { type = interceptor name = "I. Vadászosztály" experience = 5 historical_model = 0 }
-		wing = { type = cas name = "I. Zuhanóbombázó Osztály" experience = 5 historical_model = 0 }
+	army = {
+		name = "µÚ2±øÍÅ"
+		location = 3569
+		regiment = { type = hq_brigade name = "µÚ2¾üÖ¸»Ó²¿" historical_model = 0 }
+		corps = {
+			name = "µÚIV¾ü"
+			location = 3569
+			regiment = { type = hq_brigade name = "µÚIV¾üÖ¸»Ó²¿" historical_model = 0 }
+			division= {
+				name = "µÚ10²½±øÊ¦"
+				location = 3569
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "µÚ6ÍÅ" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "µÚ36ÍÅ" historical_model = 0 }
+			}
+			division= {
+				name = "µÚ11²½±øÊ¦"
+				location = 3569
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "µÚ8²½±øÍÅ" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "µÚ38²½±øÍÅ" historical_model = 0 }
+			}
+			division= {
+				name = "µÚ12²½±øÊ¦"
+				location = 3569
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "µÚ18²½±øÍÅ" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "µÚ48²½±øÍÅ" historical_model = 0 }
+			}
+		}
+		corps = {
+			name = "µÚV¾ü"
+			location = 3569
+			regiment = { type = hq_brigade name = "µÚV¾üÖ¸»Ó²¿" historical_model = 0 }
+			division= {
+				name = "µÚ13²½±øÊ¦"
+				location = 3569
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "µÚ7²½±øÍÅ" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "µÚ37²½±øÍÅ" historical_model = 0 }		
+			}
+			division= {
+				name = "µÚ14²½±øÊ¦"
+				location = 3569
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "µÚ9²½±øÍÅ" historical_model = 0 }
+				regiment = { type = infantry_brigade name = "µÚ39²½±øÍÅ" historical_model = 0 }
+			}
+		}
 	}
+}
+air = {	
+	name = "µÚIº½¿Õ¶Ó"
+	base = 3164
+	location = 3164	
+	wing = { type = interceptor name = "µÚIÕ½¶·»úÁª¶Ó" historical_model = 0 }
+	wing = { type = tactical_bomber name = "µÚIºäÕ¨»úÁª¶Ó" historical_model = 0 }
 }

@@ -1,8 +1,6 @@
 color = { 183  182  138 }
 graphical_culture = Japanese
 
-
-
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -19,140 +17,118 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
-	generic_garrison = {
-		garrison_brigade
-		garrison_brigade
-		garrison_brigade
-	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
-	}
-	generic_alpine = {
-		bergsjaeger_brigade
-		bergsjaeger_brigade
-	}
-	generic_marine = {
-		marine_brigade
-		marine_brigade
 	}
 }
 
 unit_names = {
 	infantry_brigade = {
-		"Di'1 Shi" "Di'2 Shi" "Di'3 Shi" "Di'4 Shi" "Di'5 Shi" "Di'6 Shi" "Di'7 Shi" "Di'8 Shi" "Di'9 Shi" "Di'10 Shi" "Di'12 Shi" 
-		"Di'14 Shi" "Di'15 Shi" "Di'17 Shi" "Di'19 Shi" "Di'21 Shi" "Di'22 Shi" "Di'25 Shi" "Di'28 Shi" "Di'29 Shi" "Di'30 Shi" "Di'35 Shi" 
-		"Di'38 Shi" "Di'40 Shi" "Di'42 Shi" "Di'46 Shi" "Di'47 Shi" "Di'49 Shi" "Di'50 Shi" "Di'51 Shi" "Di'57 Shi" "Di'58 Shi" "Di'61 Shi" 
-		"Di'62 Shi" "Di'63 Shi" "Di'64 Shi" "Di'65 Shi" "Di'66 Shi" "Di'69 Shi" 
+		"第1师" "第2师" "第3师" "第4师" "第5师" "第6师" "第7师" "第8师" "第9师" "第10师" "第12师" 
+		"第14师" "第15师" "第17师" "第19师" "第21师" "第22师" "第25师" "第28师" "第29师" "第30师" "第35师" 
+		"第38师" "第40师" "第42师" "第46师" "第47师" "第49师" "第50师" "第51师" "第57师" "第58师" "第61师" 
+		"第62师" "第63师" "第64师" "第65师" "第66师" "第69师" 
 	}
 	cavalry_brigade = {
-		"Qibing Di'1 Shi" "Qibing Di'2 Shi" "Qibing Di'3 Shi" "Qibing Di'4 Shi" "Qibing Di'5 Shi" "Qibing Di'6 Shi" "Qibing Di'7 Shi" "Qibing Di'8 Shi" "Qibing Di'9 Shi" "Qibing Di'10 Shi" "Qibing Di'11 Shi" 
-		"Qibing Di'12 Shi" "Qibing Di'13 Shi" "Qibing Di'14 Shi" "Qibing Di'15 Shi" 
+		"骑兵第1师" "骑兵第2师" "骑兵第3师" "骑兵第4师" "骑兵第5师" "骑兵第6师" "骑兵第7师" "骑兵第8师" "骑兵第9师" "骑兵第10师" "骑兵第11师" 
+		"骑兵第12师" "骑兵第13师" "骑兵第14师" "骑兵第15师" 
 	}
 	motorized_brigade = {
-		"Motuohua Bubing Di'1 Shi" "Motuohua Bubing Di'2 Shi" "Motuohua Bubing Di'3 Shi" "Motuohua Bubing Di'4 Shi" "Motuohua Bubing Di'5 Shi" "Motuohua Bubing Di'6 Shi" "Motuohua Bubing Di'7 Shi" "Motuohua Bubing Di'8 Shi" "Motuohua Bubing Di'9 Shi" "Motuohua Bubing Di'10 Shi" "Motuohua Bubing Di'12 Shi" 
-		"Motuohua Bubing Di'14 Shi" "Motuohua Bubing Di'15 Shi" 
+		"摩托化步兵第1师" "摩托化步兵第2师" "摩托化步兵第3师" "摩托化步兵第4师" "摩托化步兵第5师" "摩托化步兵第6师" "摩托化步兵第7师" "摩托化步兵第8师" "摩托化步兵第9师" "摩托化步兵第10师" "摩托化步兵第12师" 
+		"摩托化步兵第14师" "摩托化步兵第15师" 
 	}
 	mechanized_brigade = {
-		"Jixiehua Di'1 Shi" "Jixiehua Di'2 Shi" "Jixiehua Di'3 Shi" "Jixiehua Di'4 Shi" "Jixiehua Di'5 Shi" "Jixiehua Di'6 Shi" "Jixiehua Di'7 Shi" "Jixiehua Di'8 Shi" "Jixiehua Di'9 Shi" "Jixiehua Di'10 Shi" "Jixiehua Di'12 Shi" 
-		"Jixiehua Di'14 Shi" "Jixiehua Di'15 Shi" 
+		"机械化第1师" "机械化第2师" "机械化第3师" "机械化第4师" "机械化第5师" "机械化第6师" "机械化第7师" "机械化第8师" "机械化第9师" "机械化第10师" "机械化第12师" 
+		"机械化第14师" "机械化第15师" 
 	}
 	light_armor_brigade = {
-		"Zhuangjiabing Di'1 Shi" "Zhuangjiabing Di'2 Shi" "Zhuangjiabing Di'3 Shi" "Zhuangjiabing Di'4 Shi" "Zhuangjiabing Di'5 Shi" "Zhuangjiabing Di'6 Shi" "Zhuangjiabing Di'7 Shi" "Zhuangjiabing Di'8 Shi" "Zhuangjiabing Di'9 Shi" "Zhuangjiabing Di'10 Shi" "Zhuangjiabing Di'11 Shi" 
-		"Zhuangjiabing Di'12 Shi" "Zhuangjiabing Di'13 Shi" "Zhuangjiabing Di'14 Shi" "Zhuangjiabing Di'15 Shi" "Zhuangjiabing Di'16 Shi" "Zhuangjiabing Di'17 Shi" "Zhuangjiabing Di'18 Shi" "Zhuangjiabing Di'19 Shi" "Zhuangjiabing Di'20 Shi" 
+		"装甲兵第1师" "装甲兵第2师" "装甲兵第3师" "装甲兵第4师" "装甲兵第5师" "装甲兵第6师" "装甲兵第7师" "装甲兵第8师" "装甲兵第9师" "装甲兵第10师" "装甲兵第11师" 
+		"装甲兵第12师" "装甲兵第13师" "装甲兵第14师" "装甲兵第15师" "装甲兵第16师" "装甲兵第17师" "装甲兵第18师" "装甲兵第19师" "装甲兵第20师" 
 	}
 	armor_brigade = {
-		"Zhuangjiabing Di'1 Shi" "Zhuangjiabing Di'2 Shi" "Zhuangjiabing Di'3 Shi" "Zhuangjiabing Di'4 Shi" "Zhuangjiabing Di'5 Shi" "Zhuangjiabing Di'6 Shi" "Zhuangjiabing Di'7 Shi" "Zhuangjiabing Di'8 Shi" "Zhuangjiabing Di'9 Shi" "Zhuangjiabing Di'10 Shi" "Zhuangjiabing Di'11 Shi" 
-		"Zhuangjiabing Di'12 Shi" "Zhuangjiabing Di'13 Shi" "Zhuangjiabing Di'14 Shi" "Zhuangjiabing Di'15 Shi" "Zhuangjiabing Di'16 Shi" "Zhuangjiabing Di'17 Shi" "Zhuangjiabing Di'18 Shi" "Zhuangjiabing Di'19 Shi" "Zhuangjiabing Di'20 Shi" 
+		"装甲兵第1师" "装甲兵第2师" "装甲兵第3师" "装甲兵第4师" "装甲兵第5师" "装甲兵第6师" "装甲兵第7师" "装甲兵第8师" "装甲兵第9师" "装甲兵第10师" "装甲兵第11师" 
+		"装甲兵第12师" "装甲兵第13师" "装甲兵第14师" "装甲兵第15师" "装甲兵第16师" "装甲兵第17师" "装甲兵第18师" "装甲兵第19师" "装甲兵第20师" 
 	}
 	paratrooper_brigade = {
-		"1 Jiang'luo'san'bu" "Jiangluo Sanbu Di'2 Shi" "Jiangluo Sanbu Di'3 Shi" "Jiangluo Sanbu Di'4 Shi" "Jiangluo Sanbu Di'5 Shi" "Jiangluo Sanbu Di'6 Shi" "Jiangluo Sanbu Di'7 Shi" "Jiangluo Sanbu Di'8 Shi" "Jiangluo Sanbu Di'9 Shi" "Jiangluo Sanbu Di'10 Shi" "Jiangluo Sanbu Di'11 Shi" 
-		"Jiangluo Sanbu Di'12 Shi" "Jiangluo Sanbu Di'13 Shi" "Jiangluo Sanbu Di'14 Shi" "Jiangluo Sanbu Di'15 Shi" 
+		"第1空降部队" "空降部队第2师" "空降部队第3师" "空降部队第4师" "空降部队第5师" "空降部队第6师" "空降部队第7师" "空降部队第8师" "空降部队第9师" "空降部队第10师" "空降部队第11师" 
+		"空降部队第12师" "空降部队第13师" "空降部队第14师" "空降部队第15师" 
 	}
 	marine_brigade = {
-		"Luzhan Dui Di'1 Shi" "Luzhan Dui Di'2 Shi" "Luzhan Dui Di'3 Shi" "Luzhan Dui Di'4 Shi" "Luzhan Dui Di'5 Shi" "Luzhan Dui Di'6 Shi" "Luzhan Dui Di'7 Shi" "Luzhan Dui Di'8 Shi" "Luzhan Dui Di'9 Shi" "Luzhan Dui Di'10 Shi" "Luzhan Dui Di'11 Shi" 
-		"Luzhan Dui Di'12 Shi" "Luzhan Dui Di'13 Shi" "Luzhan Dui Di'14 Shi" "Luzhan Dui Di'15 Shi" 
+		"陆战队第1师" "陆战队第2师" "陆战队第3师" "陆战队第4师" "陆战队第5师" "陆战队第6师" "陆战队第7师" "陆战队第8师" "陆战队第9师" "陆战队第10师" "陆战队第11师" 
+		"陆战队第12师" "陆战队第13师" "陆战队第14师" "陆战队第15师" 
 	}
 	bergsjaeger_brigade = {
-		"Pabing Di'1 Shi" "Pabing Di'2 Shi" "Pabing Di'3 Shi" "Pabing Di'4 Shi" "Pabing Di'5 Shi" "Pabing Di'6 Shi" "Pabing Di'7 Shi" "Pabing Di'8 Shi" "Pabing Di'9 Shi" "Pabing Di'10 Shi" "Pabing Di'12 Shi" 
-		"Pabing Di'14 Shi" "Pabing Di'15 Shi" "Pabing Di'17 Shi" "Pabing Di'19 Shi" 
+		"山地第1师" "山地第2师" "山地第3师" "山地第4师" "山地第5师" "山地第6师" "山地第7师" "山地第8师" "山地第9师" "山地第10师" "山地第12师" 
+		"山地第14师" "山地第15师" "山地第17师" "山地第19师" 
 	}
 	garrison_brigade = {
-		"Urumqi-Shi Baoan Zongdui" "Di'1 Shi" "Di'2 Shi" "Di'3 Shi" "Di'4 Shi" "Di'5 Shi" "Di'6 Shi" "Di'7 Shi" "Di'8 Shi" "Di'10 Shi" "Di'12 Shi" 
-		"Di'14 Shi" "Di'15 Shi" "Di'17 Shi" "Di'19 Shi" "Di'21 Shi" "Di'22 Shi" "Di'25 Shi" "Di'28 Shi" "Di'29 Shi" "Di'30 Shi" "Di'35 Shi" 
-		"Di'38 Shi" "Di'40 Shi" "Di'42 Shi" "Di'46 Shi" "Di'47 Shi" "Di'49 Shi" "Di'50 Shi" 
+		"乌鲁木齐保安中队" "第1师" "第2师" "第3师" "第4师" "第5师" "第6师" "第7师" "第8师" "第10师" "第12师" 
+		"第14师" "第15师" "第17师" "第19师" "第21师" "第22师" "第25师" "第28师" "第29师" "第30师" "第35师" 
+		"第38师" "第40师" "第42师" "第46师" "第47师" "第49师" "第50师" 
 	}
 	hq_brigade = {
-		"Di'1 Zhandou Silingbu" "Di'2 Zhandou Silingbu" "Di'3 Zhandou Silingbu" "Di'4 Zhandou Silingbu" "Di'5 Zhandou Silingbu" "Di'6 Zhandou Silingbu" "Di'7 Zhandou Silingbu" "Di'8 Zhandou Silingbu" "Di'9 Zhandou Silingbu" 
+		"第1战斗司令部" "第2战斗司令部" "第3战斗司令部" "第4战斗司令部" "第5战斗司令部" "第6战斗司令部" "第7战斗司令部" "第8战斗司令部" "第9战斗司令部" 
 	}
 	militia_brigade = {
-		"Xinjiang Baoan Zongdui" "8. Min Shi" "9. Min Shi" "10. Min Shi" "12. Min Shi" "14. Min Shi" "15. Min Shi" "17. Min Shi" "19. Min Shi" "21. Min Shi" "22. Min Shi" 
-		"25. Min Shi" "28. Min Shi" "29. Min Shi" "30. Min Shi" "35. Min Shi" "38. Min Shi" "40. Min Shi" "42. Min Shi" "46. Min Shi" "47. Min Shi" "49. Min Shi" 
-		"50. Min Shi" "51. Min Shi" 
+		"新疆保安中队" "第8民兵师" "第9民兵师" "第10民兵师" "第12民兵师" "第14民兵师" "第15民兵师" "第17民兵师" "第19民兵师" "第21民兵师" "第22民兵师" 
+		"第25民兵师" "第28民兵师" "第29民兵师" "第30民兵师" "第35民兵师" "第38民兵师" "第40民兵师" "第42民兵师" "第46民兵师" "第47民兵师" "第49民兵师" 
+		"第50民兵师" "第51民兵师" 
 	}
 	multi_role = {
-		"1. Qianjiji Dadui" "2. Qianjiji Dadui" "3. Qianjiji Dadui" "4. Qianjiji Dadui" "5. Qianjiji Dadui" "6. Qianjiji Dadui" "7. Qianjiji Dadui" "8. Qianjiji Dadui" "9. Qianjiji Dadui" "10. Qianjiji Dadui" 
+		"第1歼击机大队" "第2歼击机大队" "第3歼击机大队" "第4歼击机大队" "第5歼击机大队" "第6歼击机大队" "第7歼击机大队" "第8歼击机大队" "第9歼击机大队" "第10歼击机大队" 
 	}
 	interceptor = {
-		"1. Zhandouji Dadui" "2. Zhandouji Dadui" "3. Zhandouji Dadui" "4. Zhandouji Dadui" "5. Zhandouji Dadui" "6. Zhandouji Dadui" "7. Zhandouji Dadui" "8. Zhandouji Dadui" "9. Zhandouji Dadui" "10. Zhandouji Dadui" 
-	}
-	jet_int = {
-		"1. Zhandouji Dadui" "2. Zhandouji Dadui" "3. Zhandouji Dadui" "4. Zhandouji Dadui" "5. Zhandouji Dadui" "6. Zhandouji Dadui" "7. Zhandouji Dadui" "8. Zhandouji Dadui" "9. Zhandouji Dadui" "10. Zhandouji Dadui" 
-	}
-	jet_mr = {
-		"1. Zhandouji Dadui" "2. Zhandouji Dadui" "3. Zhandouji Dadui" "4. Zhandouji Dadui" "5. Zhandouji Dadui" "6. Zhandouji Dadui" "7. Zhandouji Dadui" "8. Zhandouji Dadui" "9. Zhandouji Dadui" "10. Zhandouji Dadui" 
+		"第1战斗机大队" "第2战斗机大队" "第3战斗机大队" "第4战斗机大队" "第5战斗机大队" "第6战斗机大队" "第7战斗机大队" "第8战斗机大队" "第9战斗机大队" "第10战斗机大队" 
 	}
 	strategic_bomber = {
-		"1. STR Hongzhaji Dadui" "2. STR Hongzhaji Dadui" "3. STR Hongzhaji Dadui" "4. STR Hongzhaji Dadui" "5. STR Hongzhaji Dadui" "6. STR Hongzhaji Dadui" "7. STR Hongzhaji Dadui" "8. STR Hongzhaji Dadui" "9. STR Hongzhaji Dadui" "10. STR Hongzhaji Dadui" 
+		"第1战略轰炸机大队" "第2战略轰炸机大队" "第3战略轰炸机大队" "第4战略轰炸机大队" "第5战略轰炸机大队" "第6战略轰炸机大队" "第7战略轰炸机大队" "第8战略轰炸机大队" "第9战略轰炸机大队" "第10战略轰炸机大队" 
 	}
 	tactical_bomber = {
-		"1. TAC Hongzhaji Dadui" "2. TAC Hongzhaji Dadui" "3. TAC Hongzhaji Dadui" "4. TAC Hongzhaji Dadui" "5. TAC Hongzhaji Dadui" "6. TAC Hongzhaji Dadui" "7. TAC Hongzhaji Dadui" "8. TAC Hongzhaji Dadui" "9. TAC Hongzhaji Dadui" "10. TAC Hongzhaji Dadui" 
-	}
-	jet_bomber = {
-		"1. TAC Hongzhaji Dadui" "2. TAC Hongzhaji Dadui" "3. TAC Hongzhaji Dadui" "4. TAC Hongzhaji Dadui" "5. TAC Hongzhaji Dadui" "6. TAC Hongzhaji Dadui" "7. TAC Hongzhaji Dadui" "8. TAC Hongzhaji Dadui" "9. TAC Hongzhaji Dadui" "10. TAC Hongzhaji Dadui" 
+		"第1战术轰炸机大队" "第2战术轰炸机大队" "第3战术轰炸机大队" "第4战术轰炸机大队" "第5战术轰炸机大队" "第6战术轰炸机大队" "第7战术轰炸机大队" "第8战术轰炸机大队" "第9战术轰炸机大队" "第10战术轰炸机大队" 
 	}
 	naval_bomber = {
-		"1. MAR Hongzhaji Dadui" "2. MAR Hongzhaji Dadui" "3. MAR Hongzhaji Dadui" "4. MAR Hongzhaji Dadui" "5. MAR Hongzhaji Dadui" "6. MAR Hongzhaji Dadui" "7. MAR Hongzhaji Dadui" "8. MAR Hongzhaji Dadui" "9. MAR Hongzhaji Dadui" "10. MAR Hongzhaji Dadui" "1. TOR Hongzhaji Dadui" 
-		"2. TOR Hongzhaji Dadui" "3. TOR Hongzhaji Dadui" "4. TOR Hongzhaji Dadui" "5. TOR Hongzhaji Dadui" "6. TOR Hongzhaji Dadui" "7. TOR Hongzhaji Dadui" "8. TOR Hongzhaji Dadui" "9. TOR Hongzhaji Dadui" "10. TOR Hongzhaji Dadui" 
+		"第1海军轰炸机大队" "第2海军轰炸机大队" "第3海军轰炸机大队" "第4海军轰炸机大队" "第5海军轰炸机大队" "第6海军轰炸机大队" "第7海军轰炸机大队" "第8海军轰炸机大队" "第9海军轰炸机大队" "第10海军轰炸机大队" "第11海军轰炸机大队" 
+		"第12海军轰炸机大队" "第13海军轰炸机大队" "第14海军轰炸机大队" "第15海军轰炸机大队" "第16海军轰炸机大队" "第17海军轰炸机大队" "第18海军轰炸机大队" "第19海军轰炸机大队" "第20海军轰炸机大队" 
 	}
 	cas = {
-		"1. DIV Hongzhaji Dadui" "2. DIV Hongzhaji Dadui" "3. DIV Hongzhaji Dadui" "4. DIV Hongzhaji Dadui" "5. DIV Hongzhaji Dadui" "6. DIV Hongzhaji Dadui" "7. DIV Hongzhaji Dadui" "8. DIV Hongzhaji Dadui" "9. DIV Hongzhaji Dadui" "10. DIV Hongzhaji Dadui" 
+		"第1俯冲轰炸机大队" "第2俯冲轰炸机大队" "第3俯冲轰炸机大队" "第4俯冲轰炸机大队" "第5俯冲轰炸机大队" "第6俯冲轰炸机大队" "第7俯冲轰炸机大队" "第8俯冲轰炸机大队" "第9俯冲轰炸机大队" "第10俯冲轰炸机大队" 
 	}
 	transport_plane = {
-		"1. Kongyunji Dadui" "2. Kongyunji Dadui" "3. Kongyunji Dadui" "4. Kongyunji Dadui" "5. Kongyunji Dadui" "6. Kongyunji Dadui" "7. Kongyunji Dadui" "8. Kongyunji Dadui" "9. Kongyunji Dadui" 
+		"第1空运机大队" "第2空运机大队" "第3空运机大队" "第4空运机大队" "第5空运机大队" "第6空运机大队" "第7空运机大队" "第8空运机大队" "第9空运机大队" 
 	}
 	battleship = {
-		"Nan'Shin" "Pao'Nim" "Ying'Ching" "Ton'Chi" "Hai'Yung" "Hai'Shew" "Hai'Shen" "Ying'Swei" 
+		"南星" "宝宁" "盈清" "同治" "海韵" "海蛇" "海神" "赢威" 
 	}
 	light_cruiser = {
-		"Hai'Shen" "Ying'Swei" "Fei'Hung" "Chao'Ho" "Hai'Chi" "Ying'Swei" "Chao'Ho" "Ning'Hai" "Ping'Hai" 
+		"海神" "赢威" "飞鸿" "潮合" "海韵" "赢威" "潮宏" "宁海" "平海" 
 	}
 	heavy_cruiser = {
-		"Ping'hai" "Ning'hai" "Chung'king" "Nan'Shin" "Pao'Nim" "Ying'Ching" "Ton'Chi" "Hai'Yung" "Hai'Shew" 
+		"平海" "宁海" "春庆" "南星" "宝宁" "盈清" "同治" "海韵" "海蛇" 
 	}
 	battlecruiser = {
-		"Fei'Hung" "Chao'Ho" "Hai'Chi" "Ying'Swei" "Chao'Ho" "Ning'Hai" "Ping'Hai" 
+		"飞鸿" "潮合" "海治" "赢威" "潮宏" "宁海" "平海" 
 	}
 	destroyer = {
-		"1. Quzujian Dadui" "2. Quzujian Dadui" "3. Quzujian Dadui" "4. Quzujian Dadui" "5. Quzujian Dadui" "6. Quzujian Dadui" "7. Quzujian Dadui" "8. Quzujian Dadui" "9. Quzujian Dadui" "10. Quzujian Dadui" 
+		"第1驱逐舰大队" "第2驱逐舰大队" "第3驱逐舰大队" "第4驱逐舰大队" "第5驱逐舰大队" "第6驱逐舰大队" "第7驱逐舰大队" "第8驱逐舰大队" "第9驱逐舰大队" "第10驱逐舰大队" 
 	}
 	carrier = {
-		"Nan'Shin" "Pao'Nim" "Ying'Ching" "Ton'Chi" "Hai'Yung" "Hai'Shew" "Hai'Shen" "Ying'Swei" "Fei'Hung" "Chao'Ho" "Hai'Chi" 
-		"Ying'Swei" "Chao'Ho" "Ning'Hai" "Ping'Hai" 
+		"南星" "宝宁" "盈清" "同治" "海韵" "海蛇" "海神" "赢威" "飞鸿" "潮宏" "海治" 
+		"赢威" "潮宏" "宁海" "平海" 
 	}
 	submarine = {
-		"1. Qianting Budui" "2. Qianting Budui" "3. Qianting Budui" "4. Qianting Budui" "5. Qianting Budui" "6. Qianting Budui" "7. Qianting Budui" "8. Qianting Budui" "9. Qianting Budui" "10. Qianting Budui" 
+		"第1潜艇部队" "第2潜艇部队" "第3潜艇部队" "第4潜艇部队" "第5潜艇部队" "第6潜艇部队" "第7潜艇部队" "第8潜艇部队" "第9潜艇部队" "第10潜艇部队" 
 	}
 	transport_ship = {
-		"1. Yunshuji Dadui" "2. Yunshuji Dadui" "3. Yunshuji Dadui" "4. Yunshuji Dadui" "5. Yunshuji Dadui" "6. Yunshuji Dadui" "7. Yunshuji Dadui" "8. Yunshuji Dadui" "9. Yunshuji Dadui" "10. Yunshuji Dadui" 
+		"第1运输大队" "第2运输大队" "第3运输大队" "第4运输大队" "第5运输大队" "第6运输大队" "第7运输大队" "第8运输大队" "第9运输大队" "第10运输大队" 
 	}
 
 }
 
 ministers = {
 	72001 = {
-		name = "Sheng Shicai"
-		ideology = left_wing_radical
+		name = "盛世才"
+		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M72001
 		head_of_state = resigned_generalissimo
@@ -162,24 +138,24 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	72002 = {
-		name = "Khoja Neyaze"
-		ideology = left_wing_radical
+		name = "霍加·聂雅泽"
+		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M72002
 		head_of_government = naive_optimist
 		start_date = 1936.1.1
 	}
 	72004 = {
-		name = "Habibullah Huseinov"
-		ideology = left_wing_radical
+		name = "哈比杜拉·胡塞诺夫"
+		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M72004
 		armament_minister = infantry_proponent
 		start_date = 1936.1.1
 	}
 	72005 = {
-		name = "Zhang Xiliang"
-		ideology = left_wing_radical
+		name = "张希良"
+		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M72005
 		minister_of_security = crooked_kleptocrat
@@ -187,40 +163,52 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	72006 = {
-		name = "Viktor A.F. Polinov"
-		ideology = left_wing_radical
+		name = "维柯托·伯利诺夫"
+		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M72006
 		minister_of_intelligence = industrial_specialist
 		start_date = 1936.1.1
 	}
 	72009 = {
-		name = "Sa Zhenbing"
-		ideology = left_wing_radical
+		name = "萨镇冰"
+		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M72009
+		chief_of_navy = indirect_approach_doctrine
 		chief_of_navy = indirect_approach_doctrine
 		start_date = 1936.1.1
 	}
 	72010 = {
-		name = "Piotr Orlov"
-		ideology = left_wing_radical
+		name = "皮奥特·奥尔洛夫"
+		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M72010
 		chief_of_air = army_aviation_doctrine
+		chief_of_air = army_aviation_doctrine
 		start_date = 1936.1.1
 	}
+	72031 = {
+		name = "伊萨·雅瑟夫·阿尔佩特金"
+		ideology = social_conservative
+		loyalty = 0.50
+		picture = M72012
+		foreign_minister = apologetic_clerk
+		minister_of_security = infantry_proponent
+		head_of_government = corporate_suit
+		start_date = 1938.1.1
+	}
 	72032 = {
-		name = "A.V. Fedyunskij"
+		name = "费德云斯基"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M72024
 		armament_minister = infantry_proponent
-		start_date = 1937.1.1
+		start_date = 1938.1.1
 	}
 	72034 = {
-		name = "Kunimu Khan"
-		ideology = paternal_autocrat
+		name = "卡尼姆·卡罕"
+		ideology = social_conservative
 		loyalty = 1.00
 		picture = M72014
 		minister_of_security = compassionate_gentleman
@@ -228,324 +216,44 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	72035 = {
-		name = "Ishakjan Monhakiyev"
-		ideology = paternal_autocrat
+		name = "伊斯哈金·莫哈基耶夫"
+		ideology = social_conservative
 		loyalty = 0.75
 		picture = M72025
 		minister_of_security = man_of_the_people
 		start_date = 1936.1.1
 	}
 	72037 = {
-		name = "Dalerim Khan"
+		name = "达莱利姆·卡罕"
 		ideology = paternal_autocrat
 		loyalty = 0.75
-		picture = L160003
+		picture = M72016
 		minister_of_intelligence = political_specialist
-		start_date = 1937.1.1
+		start_date = 1938.1.1
 	}
 	72038 = {
-		name = "Liu Ben"
+		name = "刘本"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M72026
 		minister_of_intelligence = technical_specialist
-		start_date = 1937.1.1
+		start_date = 1939.1.1
 	}
 	72039 = {
-		name = "Yol Bars"
+		name = "尤尔·巴尔茨"
 		ideology = paternal_autocrat
 		loyalty = 0.25
 		picture = M72017
 		chief_of_staff = school_of_mass_combat
 		chief_of_army = elastic_defence_doctrine
-		start_date = 1937.1.1
+		start_date = 1941.1.1
 	}
-	
-	#East Turkestan Ministers
 	72011 = {
-		name = "Makhmud Sabri"
-		ideology = social_conservative
+		name = "马科姆德萨布里"
+		ideology = social_liberal
 		loyalty = 1.00
 		picture = M72011
 		head_of_state = insignificant_layman
-		minister_of_security = man_of_the_people
 		start_date = 1936.1.1
 	}
-	72012 = {
-		name = "Hoja Niyaz Haji"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = M72002
-		head_of_government = insignificant_layman
-		chief_of_staff = school_of_mass_combat
-		chief_of_army = elastic_defence_doctrine
-		start_date = 1936.1.1
-	}
-	72013 = {
-		name = "Muhammad Amin Bughra"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = muhammad_a_bughra
-		foreign_minister = ideological_crusader
-		minister_of_intelligence = political_specialist
-		start_date = 1936.1.1
-	}
-	72014 = {
-		name = "Mahmud Sijang"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = no_pic
-		armament_minister = laissez_faires_capitalist
-		start_date = 1936.1.1
-	}
-	72015 = {
-		name = "Isa Yusuf Alptekin"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = isa_alptekin
-		foreign_minister = apologetic_clerk
-		minister_of_security = infantry_proponent
-		head_of_government = die_hard_reformer
-		start_date = 1936.1.1
-	}
-	72016 = {
-		name = "Ehmetjan Qasim"
-		ideology = stalinist
-		loyalty = 1.00
-		picture = ehmetjan_qasim
-		head_of_state = weary_stiff_neck
-		head_of_government = die_hard_reformer
-		start_date = 1936.1.1
-	}
-	72017 = {
-		name = "Ali Khan T黵e"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = alihan_ture
-		head_of_government = die_hard_reformer
-		chief_of_army = decisive_battle_doctrine
-		start_date = 1936.1.1
-	}
-	72018 = {
-		name = "Yulbars Khan"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = yulbars_khan
-		chief_of_staff = school_of_psychology
-		start_date = 1936.1.1
-	}
-	72019 = {
-		name = "Burhan Shahidi"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = burhan_shahidi
-		foreign_minister = biased_intellectual
-		armament_minister = administrative_genius
-		start_date = 1936.1.1
-	}
-	72020 = {
-		name = "Zhang Zhizhong"
-		ideology = social_conservative
-		loyalty = 1.00
-		picture = L50004
-		head_of_state = resigned_generalissimo
-		chief_of_staff = school_of_psychology
-		chief_of_army = decisive_battle_doctrine
-		start_date = 1936.1.1
-	}
-	72021 = {
-		name = "Liu Mengchun"
-		ideology = social_conservative
-		loyalty = 1.00
-		picture = liu_mengchun
-		head_of_government = old_general
-		start_date = 1936.1.1
-	}
-	72022 = {
-		name = "Abd al-Karim Abbas"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = abbas
-		head_of_government = old_general
-		chief_of_staff = school_of_fire_support
-		start_date = 1936.1.1
-	}
-	72023 = {
-		name = "Saif al-Din Aziz"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = aziz
-		chief_of_army = guns_and_butter_doctrine
-		start_date = 1936.1.1
-	}
-	72024 = {
-		name = "Lu Yuwen"
-		ideology = social_conservative
-		loyalty = 1.00
-		picture = lu_yuwen
-		armament_minister = administrative_genius
-		start_date = 1936.1.1
-	}
-	72025 = {
-		name = "Zhong Dihua"
-		ideology = social_conservative
-		loyalty = 1.00
-		picture = no_pic
-		foreign_minister = apologetic_clerk
-		start_date = 1936.1.1
-	}
-	72026 = {
-		name = "Qu Wu"
-		ideology = social_conservative
-		loyalty = 1.00
-		picture = qu_wu
-		minister_of_security = crime_fighter
-		start_date = 1936.1.1
-	}
-	72027 = {
-		name = "H.M. Nasir Shah"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = no_pic
-		head_of_state = autocratic_charmer
-		start_date = 1936.1.1
-	}
-	# Generic dummy ministers
-	95862 = {
-		name = "Nameless Clerk"
-		ideology = national_socialist
-		loyalty = 1.0
-		picture = MNationalSocialist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95863 = {
-		name = "Nameless Clerk"
-		ideology = fascistic
-		loyalty = 1.0
-		picture = MFascistic
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95864 = {
-		name = "Nameless Clerk"
-		ideology = paternal_autocrat
-		loyalty = 1.0
-		picture = MPaternalAutocrat
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95865 = {
-		name = "Nameless Clerk"
-		ideology = social_conservative
-		loyalty = 1.0
-		picture = MSocialConservative
-		minister_of_intelligence = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95866 = {
-		name = "Nameless Clerk"
-		ideology = market_liberal
-		loyalty = 1.0
-		picture = MMarketLiberal
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95867 = {
-		name = "Nameless Clerk"
-		ideology = social_liberal
-		loyalty = 1.0
-		picture = MSocialLiberal
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95868 = {
-		name = "Nameless Clerk"
-		ideology = social_democrat
-		loyalty = 1.0
-		picture = MSocialDemocrat
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95869 = {
-		name = "Nameless Clerk"
-		ideology = leninist
-		loyalty = 1.0
-		picture = MLeninist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95870 = {
-		name = "Nameless Clerk"
-		ideology = stalinist
-		loyalty = 1.0
-		picture = MStalinist
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	
 }

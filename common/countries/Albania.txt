@@ -1,8 +1,6 @@
 color = { 152  130  191 }
 graphical_culture = Italian
 
-
-
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -19,122 +17,103 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
-	generic_garrison = {
-		garrison_brigade
-		garrison_brigade
-		garrison_brigade
-	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
 	}
-	generic_alpine = {
-		bergsjaeger_brigade
-		bergsjaeger_brigade
-	}	
-	generic_marine = {
-		marine_brigade
-		marine_brigade
-	}		
 }
 
 unit_names = {
 	infantry_brigade = {
-		"I Këmbësori Pjesëtim" "II Këmbësori Pjesëtim" "III Këmbësori Pjesëtim" "IV Këmbësori Pjesëtim" "V Këmbësori Pjesëtim" "VI Këmbësori Pjesëtim" "VII Këmbësori Pjesëtim" "VIII Këmbësori Pjesëtim" "IX Këmbësori Pjesëtim" "X Këmbësori Pjesëtim" "XI Këmbësori Pjesëtim" 
-		"XII Këmbësori Pjesëtim" 
+		"µÚI²½±øÊ¦" "µÚII²½±øÊ¦" "µÚIII²½±øÊ¦" "µÚIV²½±øÊ¦" "µÚV²½±øÊ¦" "µÚVI²½±øÊ¦" "µÚVII²½±øÊ¦" "µÚVIII²½±øÊ¦" "µÚIX²½±øÊ¦" "µÚX²½±øÊ¦" "µÚXI²½±øÊ¦" 
+		"µÚXII²½±øÊ¦" 
 	}
 	cavalry_brigade = {
-		"I Kavaleri Pjesëtim" "II Kavaleri Pjesëtim" "III Kavaleri Pjesëtim" "IV Kavaleri Pjesëtim" "V Kavaleri Pjesëtim" "VI Kavaleri Pjesëtim" "VII Kavaleri Pjesëtim" "VIII Kavaleri Pjesëtim" 
+		"µÚIÆï±øÊ¦" "µÚIIÆï±øÊ¦" "µÚIIIÆï±øÊ¦" "µÚIVÆï±øÊ¦" "µÚVÆï±øÊ¦" "µÚVIÆï±øÊ¦" "µÚVIIÆï±øÊ¦" "µÚVIIIÆï±øÊ¦" 
 	}
 	motorized_brigade = {
-		"I Këmbësori Pje. përdor Kamion" "II Këmbësori Pje. përdor Kamion" "III Këmbësori Pje. përdor Kamion" "IV Këmbësori Pje. përdor Kamion" "V Këmbësori Pje. përdor Kamion" 
+		"µÚIÄ¦²½Ê¦" "µÚIIÄ¦²½Ê¦" "µÚIIIÄ¦²½Ê¦" "µÚIVÄ¦²½Ê¦" "µÚVÄ¦²½Ê¦" 
 	}
 	mechanized_brigade = {
-		"I Këmb. Pje. për. Kamion Mekanik" "II Këmb. Pje. për. Kamion Mekanik" "III Këmb. Pje. për. Kamion Mekanik" "IV Këmb. Pje. për. Kamion Mekanik" "V Këmb. Pje. për. Kamion Mekanik" 
+		"µÚI»ú²½Ê¦" "µÚII»ú²½Ê¦" "µÚIII»ú²½Ê¦" "µÚIV»ú²½Ê¦" "µÚV»ú²½Ê¦" 
 	}
 	light_armor_brigade = {
-		"I Koracë Pjesëtim" "II Koracë Pjesëtim" "III Koracë Pjesëtim" "IV Koracë Pjesëtim" "V Koracë Pjesëtim" 
+		"µÚI×°¼×Ê¦" "µÚII×°¼×Ê¦" "µÚIII×°¼×Ê¦" "µÚIV×°¼×Ê¦" "µÚV×°¼×Ê¦" 
 	}
 	armor_brigade = {
-		"I Koracë Pjesëtim" "II Koracë Pjesëtim" "III Koracë Pjesëtim" "IV Koracë Pjesëtim" "V Koracë Pjesëtim" 
+		"µÚI×°¼×Ê¦" "µÚII×°¼×Ê¦" "µÚIII×°¼×Ê¦" "µÚIV×°¼×Ê¦" "µÚV×°¼×Ê¦" 
 	}
 	paratrooper_brigade = {
-		"I Ushtar përdor Aviacion Pjesëtim" "II Ushtar përdor Aviacion Pjesëtim" "III Ushtar përdor Aviacion Pjesëtim" "IV Ushtar përdor Aviacion Pjesëtim" "V Ushtar përdor Aviacion Pjesëtim" 
+		"µÚI¿Õ½µÊ¦" "µÚII¿Õ½µÊ¦" "µÚIII¿Õ½µÊ¦" "µÚIV¿Õ½µÊ¦" "µÚV¿Õ½µÊ¦" 
 	}
 	marine_brigade = {
-		"I Marinë Këmbësori Pjesëtim" "II Marinë Këmbësori Pjesëtim" "III Marinë Këmbësori Pjesëtim" "IV Marinë Këmbësori Pjesëtim" "V Marinë Këmbësori Pjesëtim" 
+		"µÚIº£¾üÂ½Õ½Ê¦" "µÚIIº£¾üÂ½Õ½Ê¦" "µÚIIIº£¾üÂ½Õ½Ê¦" "µÚIVº£¾üÂ½Õ½Ê¦" "µÚVº£¾üÂ½Õ½Ê¦" 
 	}
 	bergsjaeger_brigade = {
-		"I Bjeshkë Këmbësori Pjesëtim" "II Bjeshkë Këmbësori Pjesëtim" "III Bjeshkë Këmbësori Pjesëtim" "IV Bjeshkë Këmbësori Pjesëtim" "V Bjeshkë Këmbësori Pjesëtim" 
+		"µÚIÉ½µØÊ¦" "µÚIIÉ½µØÊ¦" "µÚIIIÉ½µØÊ¦" "µÚIVÉ½µØÊ¦" "µÚVÉ½µØÊ¦" 
 	}
 	garrison_brigade = {
-		"I Këmbësori Pjesëtim" "II Këmbësori Pjesëtim" "III Këmbësori Pjesëtim" "IV Këmbësori Pjesëtim" "V Këmbësori Pjesëtim" "VI Këmbësori Pjesëtim" "VII Këmbësori Pjesëtim" "VIII Këmbësori Pjesëtim" "IX Këmbësori Pjesëtim" "X Këmbësori Pjesëtim" "XI Këmbësori Pjesëtim" 
-		"XII Këmbësori Pjesëtim" 
+		"µÚIÎÀÊùÊ¦" "µÚIIÎÀÊùÊ¦" "µÚIIIÎÀÊùÊ¦" "µÚIVÎÀÊùÊ¦" "µÚVÎÀÊùÊ¦" "µÚVIÎÀÊùÊ¦" "µÚVIIÎÀÊùÊ¦" "µÚVIIIÎÀÊùÊ¦" "µÚIXÎÀÊùÊ¦" "µÚXÎÀÊùÊ¦" "µÚXIÎÀÊùÊ¦" 
+		"µÚXIIÎÀÊùÊ¦" 
 	}
 	hq_brigade = {
-		"I. Shqiperia Armé" "II. Shqiperia Armé" "III. Shqiperia Armé" "IV. Shqiperia Armé" "V. Shqiperia Armé" "VI. Shqiperia Armé" "VII. Shqiperia Armé" "VIII. Shqiperia Armé" "IX. Shqiperia Armé" "X. Shqiperia Armé" 
+		"°¢¶û°ÍÄáÑÇµÚI¼¯ÍÅ¾ü" "°¢¶û°ÍÄáÑÇµÚII¼¯ÍÅ¾ü" "°¢¶û°ÍÄáÑÇµÚIII¼¯ÍÅ¾ü" "°¢¶û°ÍÄáÑÇµÚIV¼¯ÍÅ¾ü" "°¢¶û°ÍÄáÑÇµÚV¼¯ÍÅ¾ü" "°¢¶û°ÍÄáÑÇµÚVI¼¯ÍÅ¾ü" "°¢¶û°ÍÄáÑÇµÚVII¼¯ÍÅ¾ü" "°¢¶û°ÍÄáÑÇµÚVIII¼¯ÍÅ¾ü" "°¢¶û°ÍÄáÑÇµÚIX¼¯ÍÅ¾ü" "°¢¶û°ÍÄáÑÇµÚX¼¯ÍÅ¾ü" 
 	}
 	militia_brigade = {
-		"I Polici Këmbësori Pjesëtim" "II Polici Këmbësori Pjesëtim" "III Polici Këmbësori Pjesëtim" "IV Polici Këmbësori Pjesëtim" "V Polici Këmbësori Pjesëtim" "VI Polici Këmbësori Pjesëtim" "VII Polici Këmbësori Pjesëtim" "VIII Polici Këmbësori Pjesëtim" "IX Polici Këmbësori Pjesëtim" "X Polici Këmbësori Pjesëtim" 
+		"µÚI¾¯±¸²½±øÊ¦" "µÚII¾¯±¸²½±øÊ¦" "µÚIII¾¯±¸²½±øÊ¦" "µÚIV¾¯±¸²½±øÊ¦" "µÚV¾¯±¸²½±øÊ¦" "µÚVI¾¯±¸²½±øÊ¦" "µÚVII¾¯±¸²½±øÊ¦" "µÚVIII¾¯±¸²½±øÊ¦" "µÚIX¾¯±¸²½±øÊ¦" "µÚX¾¯±¸²½±øÊ¦" 
 	}
 	multi_role = {
-		"1. Avion Luftarak Grup" "2. Avion Luftarak Grup" "3. Avion Luftarak Grup" "4. Avion Luftarak Grup" "5. Avion Luftarak Grup" 
+		"µÚ1Õ½¶·»úÁª¶Ó" "µÚ2Õ½¶·»úÁª¶Ó" "µÚ3Õ½¶·»úÁª¶Ó" "µÚ4Õ½¶·»úÁª¶Ó" "µÚ5Õ½¶·»úÁª¶Ó" 
 	}
 	interceptor = {
-		"1. Avion Luftarak Grup" "2. Avion Luftarak Grup" "3. Avion Luftarak Grup" "4. Avion Luftarak Grup" "5. Avion Luftarak Grup" 
-	}
-	jet_int = {
-		"1. Avion Luftarak Grup" "2. Avion Luftarak Grup" "3. Avion Luftarak Grup" "4. Avion Luftarak Grup" "5. Avion Luftarak Grup" 
-	}
-	jet_mr = {
-		"1. Avion Luftarak Grup" "2. Avion Luftarak Grup" "3. Avion Luftarak Grup" "4. Avion Luftarak Grup" "5. Avion Luftarak Grup" 
+		"µÚ1½Ø»÷»úÁª¶Ó" "µÚ2½Ø»÷»úÁª¶Ó" "µÚ3½Ø»÷»úÁª¶Ó" "µÚ4½Ø»÷»úÁª¶Ó" "µÚ5½Ø»÷»úÁª¶Ó" 
 	}
 	strategic_bomber = {
-		"1. Grup Avion Luftarak Strategejik" "2. Grup Avion Luftarak Strategejik" "3. Grup Avion Luftarak Strategejik" "4. Grup Avion Luftarak Strategejik" "5. Grup Avion Luftarak Strategejik" 
+		"µÚ1Õ½ÂÔºäÕ¨Áª¶Ó" "µÚ2Õ½ÂÔºäÕ¨Áª¶Ó" "µÚ3Õ½ÂÔºäÕ¨Áª¶Ó" "µÚ4Õ½ÂÔºäÕ¨Áª¶Ó" "µÚ5Õ½ÂÔºäÕ¨Áª¶Ó" 
 	}
 	tactical_bomber = {
-		"1. Grup Avion Luftarak Taktikë" "2. Grup Avion Luftarak Taktikë" "3. Grup Avion Luftarak Taktikë" "4. Grup Avion Luftarak Taktikë" "5. Grup Avion Luftarak Taktikë" 
-	}
-	jet_bomber = {
-		"1. Grup Avion Luftarak Taktikë" "2. Grup Avion Luftarak Taktikë" "3. Grup Avion Luftarak Taktikë" "4. Grup Avion Luftarak Taktikë" "5. Grup Avion Luftarak Taktikë" 
+		"µÚ1Õ½ÊõºäÕ¨Áª¶Ó" "µÚ2Õ½ÊõºäÕ¨Áª¶Ó" "µÚ3Õ½ÊõºäÕ¨Áª¶Ó" "µÚ4Õ½ÊõºäÕ¨Áª¶Ó" "µÚ5Õ½ÊõºäÕ¨Áª¶Ó" 
 	}
 	naval_bomber = {
-		"1. Naval Bombardoj Avion Grup" "2. Naval Bombardoj Avion Grup" "3. Naval Bombardoj Avion Grup" "4. Naval Bombardoj Avion Grup" "5. Naval Bombardoj Avion Grup" "1. Naval Torpetz Avion Grup" "2. Naval Torpetz Avion Grup" "3. Naval Torpetz Avion Grup" "4. Naval Torpetz Avion Grup" "5. Naval Torpetz Avion Grup" 
+		"µÚ1º£¾üºäÕ¨Áª¶Ó" "µÚ2º£¾üºäÕ¨Áª¶Ó" "µÚ3º£¾üºäÕ¨Áª¶Ó" "µÚ4º£¾üºäÕ¨Áª¶Ó" "µÚ5º£¾üºäÕ¨Áª¶Ó" "µÚ1ÓãÀ×ºäÕ¨Áª¶Ó" "µÚ2ÓãÀ×ºäÕ¨Áª¶Ó" "µÚ3ÓãÀ×ºäÕ¨Áª¶Ó" "µÚ4ÓãÀ×ºäÕ¨Áª¶Ó" "µÚ5ÓãÀ×ºäÕ¨Áª¶Ó" 
 	}
 	cas = {
-		"1. Zhujtem Bombardoj Avion Grup" "2. Zhujtem Bombardoj Avion Grup" "3. Zhujtem Bombardoj Avion Grup" "4. Zhujtem Bombardoj Avion Grup" "5. Zhujtem Bombardoj Avion Grup" 
+		"µÚ1¸©³åºäÕ¨Áª¶Ó" "µÚ2¸©³åºäÕ¨Áª¶Ó" "µÚ3¸©³åºäÕ¨Áª¶Ó" "µÚ4¸©³åºäÕ¨Áª¶Ó" "µÚ5¸©³åºäÕ¨Áª¶Ó" 
 	}
 	transport_plane = {
-		"1. Transportoj Avion Grup" "2. Transportoj Avion Grup" "3. Transportoj Avion Grup" 
+		"µÚ1ÔËÊä»úÁª¶Ó" "µÚ2ÔËÊä»úÁª¶Ó" "µÚ3ÔËÊä»úÁª¶Ó" 
 	}
 	battleship = {
-		"Shqipëri" "Tiranë" 
+		"°¢¶û°ÍÄáÑÇºÅ" "µØÀ­ÄÇºÅ" 
 	}
 	light_cruiser = {
-		"Vlora" "Korca" "Berati" "Durresi" "Elbasani" 
+		"·¢ÂŞÀ­ºÅ" "¿Æ¶û²ìºÅ" "ÅàÀ­ÌØºÅ" "¶¼À­Ë¹ºÅ" "°®¶û°ÍÉ£ºÅ" 
 	}
 	heavy_cruiser = {
-		"Vlora" "Korca" "Berati" "Durresi" "Elbasani" 
+		"·¢ÂŞÀ­ºÅ" "¿Æ¶û²ìºÅ" "ÅàÀ­ÌØºÅ" "¶¼À­Ë¹ºÅ" "°®¶û°ÍÉ£ºÅ" 
 	}
 	battlecruiser = {
-		"Shqipëri" "Tiranë" 
+		"°¢¶û°ÍÄáÑÇºÅ" "µØÀ­ÄÇºÅ" 
 	}
 	destroyer = {
-		"Gjirokastra edhe Grup" "Corovoda edhe Grup" "Cakrani edhe Grup" "Vithkuni edhe Grup" "Pogradeci edhe Grup" "Oriku edhe Grup" "Himara edhe Grup" 
+		"¼ªÅµ¿¨Ë¹ÌØÇıÖğ½¢±à¶Ó" "¿ËÂŞ·ò´ïÇıÖğ½¢±à¶Ó" "²ì¿ËÀ­ÄáÇıÖğ½¢±à¶Ó" "Î¬¿ÆÄáÇıÖğ½¢±à¶Ó" "²¨¸ñÀ­µÂ´ÄÇıÖğ½¢±à¶Ó" "°ÂÀï¿âÇıÖğ½¢±à¶Ó" "Ï£ÂíÀ­ÇıÖğ½¢±à¶Ó" 
 	}
 	carrier = {
-		"Skanderbej" 
+		"ÇÇÖÎ¡¤¿¨Ë¹ÌØÀï°ÂµÙ¡¤Ë¹¿²µÂÅàºÅ" 
 	}
 	submarine = {
-		"Delfin edhe Grup" "Salmon edhe Grup" "Ngjalë edhe Grup" "Troftë edhe Grup" "Midhje edhe Grup" "Gaforre edhe Grup" "1. Nendetëse Flöte" "2. Nendetëse Flöte" 
+		"µÚ1Ç±Í§±à¶Ó 'º£ëà'" "µÚ2Ç±Í§±à¶Ó 'öÙÓã'" "µÚ3Ç±Í§±à¶Ó '÷©Óã'" "µÚ4Ç±Í§±à¶Ó '÷®Óã '" "µÚ5Ç±Í§±à¶Ó 'êİ±´'" "µÚ6Ç±Í§±à¶Ó 'Ğ·'" "µÚ7Ç±Í§±à¶Ó" "µÚ8Ç±Í§±à¶Ó" 
 	}
 	transport_ship = {
-		"1. Transportoj Marinë Naval" "2. Transportoj Marinë Naval" "3. Transportoj Marinë Naval" "4. Transportoj Marinë Naval" "5. Transportoj Marinë Naval" "6. Transportoj Marinë Naval" 
+		"µÚ1ÔËÊä½¢±à¶Ó" "µÚ2ÔËÊä½¢±à¶Ó" "µÚ3ÔËÊä½¢±à¶Ó" "µÚ4ÔËÊä½¢±à¶Ó" "µÚ5ÔËÊä½¢±à¶Ó" "µÚ6ÔËÊä½¢±à¶Ó" 
 	}
+
 }
+
+
 ministers = {
 	32001 = {
-		name = "King Zog I Skanderbeg III"
+		name = "Ë÷¹ÅÒ»ÊÀ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M32001
@@ -143,7 +122,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	32002 = {
-		name = "Midhat Frashëri"
+		name = "ÂõÔúÌØ ¸¥À­Ğ»Àï"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M32002
@@ -151,7 +130,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	32003 = {
-		name = "Fuat Aslam"
+		name = "¸£°¢µÂ °¢Ë¹À­Ä·"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M32003
@@ -160,7 +139,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	32004 = {
-		name = "Ruok Geraj"
+		name = "ÂŞ¿Ë ¸ñÀ­"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M32004
@@ -168,7 +147,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	32005 = {
-		name = "Jocelyn Percy"
+		name = "ÇÇË¹ÁÖ Åå¶ûÎ÷"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M32005
@@ -178,7 +157,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	32007 = {
-		name = "Qemal Komani"
+		name = "ÇĞÂí¶û ¿ÆÂíÄá"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M32007
@@ -188,7 +167,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	32008 = {
-		name = "Stefkhi Shatun"
+		name = "Ë¹ÌØ·òÏ£ É³Í¼¶÷"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M32008
@@ -196,7 +175,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	32009 = {
-		name = "Quamar Pakazi"
+		name = "¿äÂí¶û ÅÁ¿¨¼Ã"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M32009
@@ -206,7 +185,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	32041 = {
-		name = "Tefik Mborja"
+		name = "ÌÕ·Æ¿Ë Ä·²©ÑÇ"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M32021
@@ -215,7 +194,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	32042 = {
-		name = "Ibrahim Bicaku"
+		name = "Ò×²·À­ĞÀ ±È¿¨¿â"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M32042
@@ -224,7 +203,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	32043 = {
-		name = "Fiqri Dine"
+		name = "·ÆÆõÀï ´÷¶÷"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M32043
@@ -235,7 +214,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	32044 = {
-		name = "Theofan Noli"
+		name = "Ì©°Â·² ÅµÀû"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M32011
@@ -244,7 +223,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	32045 = {
-		name = "Llazar Fundua"
+		name = "ÀûÑÇÈø ·á¶Å°¢"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M32013
@@ -253,7 +232,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	32046 = {
-		name = "Rexhep Mitrovica"
+		name = "À×½ÜÆÕ Ã×ÌØÂŞÎ¬¿¨"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M32046
@@ -266,7 +245,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	32047 = {
-		name = "Shefqet Vërlaci"
+		name = "Ğ»·ò¿ËÌØ Î¤À­Ææ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M32047
@@ -277,7 +256,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	32048 = {
-		name = "Eqrem Libohova"
+		name = "°£¿ËÀ×Ä· Àû²©»ôÍß"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M32048
@@ -289,7 +268,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	32049 = {
-		name = "Omer Nishani"
+		name = "°ÂÃ· ÄáÉ³Äá"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M32032
@@ -300,7 +279,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	32050 = {
-		name = "Sejfulla Malëshova"
+		name = "Èû¸»À­ ÂíÀÕË¹»ôÍß"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M32050
@@ -310,19 +289,19 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	32051 = {
-		name = "Enver Hoxha"
+		name = "¶÷Î¬¶û »ô²é"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M32051
 		head_of_state = ruthless_powermonger
 		head_of_government = backroom_backstabber
 		armament_minister = infantry_proponent
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		chief_of_air = carpet_bombing_doctrine
 		start_date = 1947.1.1
 	}
 	32052 = {
-		name = "Kostaq Kota"
+		name = "¿ÆË¹Ëş¿Ë ¿ÆËş"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M32052
@@ -332,7 +311,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	32053 = {
-		name = "Jup Kazazi"
+		name = "ÓÈÆÕ ¿¨ÔúÆë"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M32015
@@ -342,7 +321,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	32054 = {
-		name = "Mehdi Frashëri"
+		name = "ÂõºÕµÏ ¸¥À­Ğ»Àï"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M32054
@@ -351,7 +330,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	32056 = {
-		name = "Xhafer Ypi"
+		name = "²é·Ñ¶û ÒÁÆ¤"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M32056
@@ -361,7 +340,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	32057 = {
-		name = "Mustafa Mërlika"
+		name = "ÄÂË¹Ëş·¨ Ã·Àû¿¨"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M32057
@@ -371,7 +350,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	32066 = {
-		name = "Nazim Dedolli"
+		name = "ÄÉÆëÄ· µÂ¶àÀû"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M32066
@@ -382,7 +361,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	32068 = {
-		name = "Theofan Stilian Noli"
+		name = "Ì©°Â·² S. ÅµÀû"
 		ideology = social_conservative
 		loyalty = 0.25
 		picture = M32068
@@ -390,7 +369,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	32069 = {
-		name = "Ali Kelmendi"
+		name = "°¢Àï ¿­¶ûÃÅµÏ"
 		ideology = social_conservative
 		loyalty = 0.50
 		picture = M32031
@@ -398,7 +377,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	32071 = {
-		name = "Shefqet Shkupi"
+		name = "Ğ»·ò¿ËÌØ Ê²¿âÆ¤"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M32071
@@ -408,7 +387,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	32073 = {
-		name = "Hasan Begolli"
+		name = "¹şÉ£ ±´¸êÀû"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M32073
@@ -419,7 +398,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	32074 = {
-		name = "Kol Bibë Mirakaj"
+		name = "¿Æ¶û ±È±´ Ã×À­¿¨ÒÁ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M32074
@@ -430,7 +409,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	32075 = {
-		name = "Nuhi Berisha"
+		name = "Å¬Ï£ ±´ÀïÉ³"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M32075
@@ -441,7 +420,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	32077 = {
-		name = "Hassan Shqabi"
+		name = "¹şÉ£ Ê²¿¨±È"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M32077
@@ -451,7 +430,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	32078 = {
-		name = "Essad Pacha"
+		name = "°£ÈøµÂ ÅÁÏÄ"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M32036
@@ -461,7 +440,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	32081 = {
-		name = "Sthfphen Delvinë"
+		name = "Ë¹ÌØ·Ò µÂ¶ûÎ¬Äù"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M32020
@@ -471,16 +450,16 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	32082 = {
-		name = "Ismael Ghaxa"
+		name = "ÒÁË¹Ã·¶û ¼Ó¿ËÈø"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M32029
 		armament_minister = battle_fleet_proponent
-		chief_of_navy = decisive_naval_battle_doctrine
+		chief_of_navy = open_seas_doctrine
 		start_date = 1942.1.1
 	}
 	32085 = {
-		name = "Haxhi Lleshi"
+		name = "¹şÆæ ÁĞÏ£"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M32014
@@ -489,7 +468,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	32090 = {
-		name = "Hajrë Dizdari"
+		name = "¹şÒÁÀ× µÏ×È´ïÀï"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M32090
@@ -501,7 +480,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	32091 = {
-		name = "Xhelal Mitrovica"
+		name = "½ÜÀ­¶û Ã×ÌØÂŞÎ¬¿¨"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M32091
@@ -515,7 +494,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	32092 = {
-		name = "Maliq Bushati"
+		name = "ÂíÀûÆæ ²¼É³µÙ"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M32024
@@ -525,7 +504,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	32094 = {
-		name = "Omer Bikacu"
+		name = "°ÂÃ· ±È¿¨¿â"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M32084
@@ -533,7 +512,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	32098 = {
-		name = "Nano Xhana"
+		name = "ÄÚÅµ ÔúÄÉ"
 		ideology = stalinist
 		loyalty = 0.50
 		picture = M32098
@@ -542,15 +521,16 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	32102 = {
-		name = "Midhat Bej Frashëri"
+		name = "ÂõÔúÌØ ±´ÈÕ ¸¥À­Ğ»Àï"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M32002
 		minister_of_security = compassionate_gentleman
+		minister_of_security = compassionate_gentleman
 		start_date = 1940.1.1
 	}
 	32107 = {
-		name = "Nexhip Deva"
+		name = "ÄÚ¿ËÏ£ÆÕ µÂÍß"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M32107
@@ -560,7 +540,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	32109 = {
-		name = "Halil Nergutti"
+		name = "¹şÀûÀÕ ÄÚ¹ÅµÙ"
 		ideology = social_liberal
 		loyalty = 0.50
 		picture = M32109
@@ -569,7 +549,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	32118 = {
-		name = "Pandi Kristo"
+		name = "ÅËµÏ ¿ËÀïË¹ÍĞ"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M32035
@@ -577,7 +557,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	32121 = {
-		name = "Zuhdi Shabani"
+		name = "×æºÕµÏ É³°ÍÄá"
 		ideology = stalinist
 		loyalty = 0.50
 		picture = M32121
@@ -588,7 +568,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	32122 = {
-		name = "Aziz Sulejmani"
+		name = "°¢Æë×È ËÕÀ³ÂüÄá"
 		ideology = stalinist
 		loyalty = 0.50
 		picture = M32040
@@ -598,7 +578,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	32123 = {
-		name = "Hajrë Fetahu"
+		name = "¹şÒÁÀ× ·ÑËşºú"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M32039
@@ -608,7 +588,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	32127 = {
-		name = "Ahmad Zhahir"
+		name = "°¬¹şÂõµÂ ÔúÏ£¶û"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M32127
@@ -617,7 +597,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	32140 = {
-		name = "Abaz Kupi"
+		name = "°¢°Í×È ¿âÆ¤"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M32129
@@ -625,7 +605,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	32149 = {
-		name = "Sokrat Agolli"
+		name = "Ë÷¿ËÀ­ÌØ °¢¸êÀû"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M32149
@@ -635,7 +615,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	32153 = {
-		name = "Kristo Cajupi"
+		name = "¿ËÀïË¹ÍĞ ¿¨ÓÈ±È"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M32145
@@ -644,7 +624,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	32154 = {
-		name = "Mehmet Shehu"
+		name = "ÄÂº±Ä¬µÂ Ğ»ºú"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M32017
@@ -653,7 +633,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	32156 = {
-		name = "Prenk Pervizi"
+		name = "ÆÕÂ×¿Ë Åå¶ûÎ¬×È"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M32156
@@ -663,7 +643,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	32157 = {
-		name = "Selim Moishiou"
+		name = "ÈûÀûÄ· ÄªÒÁÏ£Å·"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M32018
@@ -671,150 +651,12 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	32161 = {
-		name = "Alexander Mori"
+		name = "ÑÇÀúÉ½´ó ÄªÀï"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M32161
 		chief_of_army = decisive_battle_doctrine
 		start_date = 1944.1.1
 	}
-	
-	# Generic dummy ministers
-	95009 = {
-		name = "Nameless Clerk"
-		ideology = national_socialist
-		loyalty = 1.0
-		picture = MNationalSocialist
-		foreign_minister = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95010 = {
-		name = "Nameless Clerk"
-		ideology = fascistic
-		loyalty = 1.0
-		picture = MFascistic
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95011 = {
-		name = "Nameless Clerk"
-		ideology = social_conservative
-		loyalty = 1.0
-		picture = MSocialConservative
-		foreign_minister = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95012 = {
-		name = "Nameless Clerk"
-		ideology = market_liberal
-		loyalty = 1.0
-		picture = MMarketLiberal
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95013 = {
-		name = "Nameless Clerk"
-		ideology = social_liberal
-		loyalty = 1.0
-		picture = MSocialLiberal
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95014 = {
-		name = "Nameless Clerk"
-		ideology = social_democrat
-		loyalty = 1.0
-		picture = MSocialDemocrat
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95015 = {
-		name = "Nameless Clerk"
-		ideology = left_wing_radical
-		loyalty = 1.0
-		picture = MLeftWingRadical
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95016 = {
-		name = "Nameless Clerk"
-		ideology = leninist
-		loyalty = 1.0
-		picture = MLeninist
-		head_of_state = mostly_harmless
-		head_of_government = mostly_harmless
-		foreign_minister = mostly_harmless
-		armament_minister = mostly_harmless_armament
-		minister_of_security = mostly_harmless
-		minister_of_intelligence = mostly_harmless
-		chief_of_staff = mostly_harmless
-		chief_of_army = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
-	95017 = {
-		name = "Nameless Clerk"
-		ideology = stalinist
-		loyalty = 1.0
-		picture = MStalinist
-		armament_minister = mostly_harmless_armament
-		minister_of_intelligence = mostly_harmless
-		chief_of_navy = mostly_harmless_naval
-		chief_of_air = mostly_harmless	
-		start_date = 1936.1.1
-	}
 }
+

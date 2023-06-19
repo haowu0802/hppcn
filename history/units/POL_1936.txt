@@ -1,469 +1,438 @@
-theatre = {   name = "Sztab Generalny Wojska Polskiego"
-	location = 1928 # Warszawa
-	leader = 8128 # Rydz-Smigly
-	regiment = { type = hq_brigade name = "Kwatera Gl體na Naczelnego Wodza HQ" historical_model = 0 }	
-	division= {   name = "Krakowska B.K."
-		location = 2445 # Krak體
-		leader = 8096 # Piasecki
+army = {
+	name = "克拉科夫集团军"
+	location = 2445
+	regiment = { type = hq_brigade name = "克拉科夫集团军指挥部" historical_model = 0 }
+	division= {
+		name = "第6步兵师"
+		location = 2445
 		is_reserve = yes
-		regiment = { type = cavalry_brigade name = "3. Pulk Ulan體 Slaskich" experience = 5 historical_model = 3 }
-		regiment = { type = cavalry_brigade name = "8. Pulk Ulan體 Ksiecia Poniatowskiego" experience = 5 historical_model = 3 }
-		regiment = { type = super_heavy_armor_brigade name = "1. Pancerny Batalion" experience = 5 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第12步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第16步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第20步兵团" historical_model = 0 }
 	}
-	division= {   name = "Mazowiecka B.K."
-		location = 1928 # Warszawa
-		leader = 8150 # Wieniawa
+	division= {
+		name = "第7步兵师"
+		location = 2445
 		is_reserve = yes
-		regiment = { type = cavalry_brigade name = "1. Pulk Szwolezer體 Pilsudskiego" experience = 5 historical_model = 3 }
-		regiment = { type = cavalry_brigade name = "4. Leczycki Pulk Strzelc體 Konnych" experience = 5 historical_model = 3 }
-		regiment = { type = super_heavy_armor_brigade name = "2. Pancerny Batalion" experience = 5 historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第25步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第27步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第74步兵团" historical_model = 0 }
 	}
-	army = {   name = "Armia Pomorze"
-		location = 1805 # Bydgoszcz
-		regiment = { type = hq_brigade name = "Dow骴ztwo Armii Pomorze HQ" historical_model = 0 }		
-		division= {   name = "4. Dywizja Piechoty"
-			location = 1867 # Wloclawek
-			leader = 8006 # Boltuc
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "14. Kujawski Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "63. Korunski Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "67. Pulk Piechoty wielkopolskiej" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "4. Pu砶u Artylerii" experience = 5 historical_model = 1 }
-		}
-		division= {   name = "15. Dywizja Piechoty"
-			location = 1805 # Bydgoszcz
-			leader = 8017 # Chmurowicz
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "59. Pulk Piechoty Wielkopolskiej" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "61. Pulk Piechoty Wielkopolskiej" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "62. Pulk Piechoty Wielkopolskiej" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "15. Pu砶u Artylerii" experience = 5 historical_model = 2 }
-		}
-		division= {   name = "16. Pomorska Dywizja Piechoty"
-			location = 1866 # Torun
-			leader = 8119 # Sawicki
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "64. Grudziadzki Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "65. Starogardzki Pulk Piechoty" experience = 5 historical_model =3 }
-			regiment = { type = infantry_brigade name = "66. Kaszubski Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = truck_towed_support_brigade name = "16. Pu砶u Artylerii" experience = 5 historical_model = 3 }
-		}
-	}
-	army = {   name = "Armia Poznan"
-		location = 1924 # Poznan
-		regiment = { type = hq_brigade name = "Dow骴ztwo Armii Poznan HQ" historical_model = 0 }		
-		division= {   name = "14. Dywizja Piechoty"
-			location = 1924 # Poznan
-			leader = 8153 # Wlad
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "55. Poznanski Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "57. Pulk Piechoty Wielkopolskiej" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "58. Pulk Piechoty Wielkopolskiej" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "14. Pu砶u Artylerii" experience = 5 historical_model = 2 }
-		}
-		division= {   name = "17. Dywizja Piechoty"
-			location = 2038 # Jarocin
-			leader = 8077 # Malinowski
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "68. Pulk Piechoty Wielkopolskiej" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "69. Pulk Piechoty Wielkopolskiej" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "70. Pulk Piechoty Wielkopolskiej" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "17. Pu砶u Artylerii" experience = 5 historical_model = 1 }
-		}
-		division= {   name = "25. Dywizja Piechoty"
-			location = 2097 # Kalisz
-			leader = 8001 # Alter
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "29. Pulk Strzelc體 Kaniowskich" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "56. Pulk Piechoty Wielkopolskiej" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "60. Pulk Piechoty Wielkopolskiej" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "25. Pu砶u Artylerii" experience = 5 historical_model = 2 }
-		}
-	}
-	army = {   name = "Armia L骴z"
-		location = 2098 # Lodz
-		regiment = { type = hq_brigade name = "Dow骴ztwo Armii Lodz HQ" historical_model = 0 }		
-		division= {   name = "2. Dywizja Piechoty Legion體"
-			location = 2272 # Kielce
-			leader = 8164 # Zulauf
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "2. Pulk Piechoty Legion體" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "3. Pulk Piechoty Legion體" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "4. Pulk Piechoty Legion體" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "2. Pu砶u Artylerii" experience = 5 historical_model = 3 }
-		}
-		division= {   name = "7. Dywizja Piechoty"
-			location = 2270 # Czestochowa
-			leader = 8037 # Gasiorowski
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "25. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "27. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "74. G髍noslaski Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "7. Pu砶u Artylerii" experience = 5 historical_model = 2 }
-		}
-		division= {   name = "10. Dywizja Piechoty"
-			location = 2098 # L骴z
-			leader = 8024 # Dindorf
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "28. Pulk Strzelc體 Kaniowskich" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "30. Pulk Strzelc體 Kaniowskich" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "31. Pulk Strzelc體 Kaniowskich" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "10. Pu砶u Artylerii" experience = 5 historical_model = 1 }
-		}
-	}
-	army = {   name = "Armia Modlin"
-		location = 1983 # Modlin
-		regiment = { type = hq_brigade name = "Armia Modlin HQ" historical_model = 0 }		
-		division= {   name = "8. Dywizja Piechoty"
-			location = 1983 # Modlin
-			leader = 8140 # Szylling
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "13. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "21. Pulk Piechoty Dzieci Warszawy" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "32. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "8. Pu砶u Artylerii" experience = 5 historical_model = 2 }
-		}
-		division= {   name = "26. Dywizja Piechoty"
-			location = 2040 # Lowicz
-			leader = 2065 # Kozicki
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "10. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "18. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "37. Leczycki Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "26. Pu砶u Artylerii" experience = 5 historical_model = 3 }
-		}
-		division= {   name = "28. Dywizja Piechoty"
-			location = 1928 # Warszawa
-			leader = 8007 # Boncza-Uzdowski
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "15. Pulk Piechoty Wilk體" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "36. Pulk Legii Akademickiej" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "72. Pulk Piechoty Im. Czachowskiego" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "28. Pu砶u Artylerii" experience = 5 historical_model = 2 }
-		}
-	}
-	army = {   name = "Armia Krak體"
-		location = 2445 # Krak體
-		regiment = { type = hq_brigade name = "Army Krak體 HQ" historical_model = 0 }		
-		division= {   name = "6. Dywizja Piechoty"
-			location = 2569 # Tarn體
-			leader = 8079 # Mond
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "12. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "16. Pulk Piechoty Ziemi Tarnowskiej" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "20. Pulk Piechoty Ziemi Krakowskiej" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "6. Pu砶u Artylerii" experience = 5 historical_model = 1 }
-		}
-		division= {   name = "23. G髍noslaska D. Piechoty"
-			location = 2504 # Katowice
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "11. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "73. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "75. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "23. Pu砶u Artylerii" experience = 5 historical_model = 2 }
-		}
-		division= {   name = "55. D. Piechoty (Rezerwowa)"
-			location = 2504 # Katowice
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "201. Pulk Piechoty (rezerwowy)" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "203. Pulk Piechoty (rezerwowy)" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "204. Pulk Piechoty (rezerwowy)" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "55. Pu砶u Artylerii" experience = 5 historical_model = 3 }
-		}
-		division= {   name = "21. Dywizja Piechoty G髍skiej"
-			location = 2700 # Nowy Sacz
-			leader = 8069 # Kustron
-			is_reserve = yes
-			regiment = { type = bergsjaeger_brigade name = "3. Pulk Strzelc體 Podhalanskich" experience = 5 historical_model = 3 }
-			regiment = { type = bergsjaeger_brigade name = "4. Pulk Strzelc體 Podhalanskich" experience = 5 historical_model = 3 }
-			regiment = { type = bergsjaeger_brigade name = "202. Rezerwowy Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = truck_towed_support_brigade name = "21. Pu砶u Artylerii" experience = 5 historical_model = 2 }
-		}
-	}
-	corps = {   name = "GO Lublin"
-		location = 2217 # Lublin
-		regiment = { type = hq_brigade name = "Dow骴ztwo GO Lublin HQ" historical_model = 0 }
-		division= {   name = "9. Dywizja Piechoty"
-			location = 1985 # Siedlce
-			leader = 8090 # Orlik-Rueckemann
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "22. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "34. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "35. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "9. Pu砶u Artylerii" experience = 5 historical_model = 1 }
-		}
-		division= {   name = "30. Dywizja Piechoty"
-			location = 1986 # Brzesc
-			leader = 8107 # Przedrzymirski-Krukowicz
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "82. syberyjski Pulk Strzelc體" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "83. Pulk Strzelc體 Poleskich" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "84. Pulk Strzelc體 Poleskich" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "30. Pu砶u Artylerii" experience = 5 historical_model = 2 }
-		}
-	}
-	corps = {   name = "SGO Narew"
-		location = 1809 # Lomza
-		regiment = { type = hq_brigade name = "SGO Narew HQ" historical_model = 0 }
-		division= {   name = "18. Dywizja Piechoty"
-			location = 1809 # Lomza
-			leader = 8078 # Mlot-Fijalkowski
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "33. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "42. Pulk Piechoty Dabrowskiego" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "71. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "18. Pu砶u Artylerii" experience = 5 historical_model = 3 }
-		}
-		division= {   name = "29. Dywizja Piechoty"
-			location = 1691 # Grodno
-			leader = 8097 # Piekarski
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "41. Suwalski Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "76. Lidzki Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "81. Pulk Strzelc體 Grodzienskich" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "29. Pu砶u Artylerii" experience = 5 historical_model = 2 }
-		}
-	}
-	division= {   name = "Suwalska B.K."
-		location = 1630 # Suwalki
-		leader = 8027 # Rudolf Dreszer
+	division= {
+		name = "第22地步兵师"
+		location = 2445
 		is_reserve = yes
-		regiment = { type = cavalry_brigade name = "3. Pulk Szwolezer體 Mazowieckich" experience = 5 historical_model = 3 }
-		regiment = { type = cavalry_brigade name = "1. Pulk Ulan體 Krechowieckich" experience = 5 historical_model = 3 }
-		regiment = { type = light_armor_brigade name = "3. Pancerny Batalion" experience = 5 historical_model = 0 }
+		regiment = { type = bergsjaeger_brigade name = "第2山地步兵团" historical_model = 0 }
+		regiment = { type = bergsjaeger_brigade name = "第5山地步兵团" historical_model = 0 }
+		regiment = { type = bergsjaeger_brigade name = "第6山地步兵团" historical_model = 0 }
 	}
-	division= {   name = "Pomorska B.K."
-		location = 1805 # Bydgoszcz
-		leader = 8000 # Abraham
+	division= {
+		name = "克拉科夫骑兵师"
+		location = 2445
 		is_reserve = yes
-		regiment = { type = cavalry_brigade name = "2. Pulk szwolezer體 rokitnianskich" experience = 5 historical_model =3 }
-		regiment = { type = cavalry_brigade name = "16. Pulk Ulan體 wielkopolskich" experience = 5 historical_model = 3 }
-		regiment = { type = light_armor_brigade name = "4. Pancerny Batalion" experience = 5 historical_model = 2 }
+		regiment = { type = cavalry_brigade name = "第5山地步兵团" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "第3枪骑兵团" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "第8枪骑兵团" historical_model = 0 }
 	}
-	division= {   name = "Wielkopolska B.K."
-		location = 1805 # Bydgoszcz
-		leader = 8155 # Zahorski
-		is_reserve = yes
-		regiment = { type = cavalry_brigade name = "15. Pulk Ulan體 poznanskich" experience = 5 historical_model = 3 }
-		regiment = { type = cavalry_brigade name = "17. Pulk Ulan體 wielkopolskich" experience = 5 historical_model = 3 }
-		regiment = { type = light_armor_brigade name = "5. Pancerny Batalion" experience = 5 historical_model = 3 }
+	corps = {
+		name = "山地军"
+		location = 2505
+		regiment = { type = hq_brigade name = "山地指挥部" historical_model = 0 }
+		division= {
+			name = "第21地步兵师"
+			location = 2505
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "第3山地步兵团" historical_model = 0 }
+			regiment = { type = bergsjaeger_brigade name = "第4山地步兵团" historical_model = 0 }
+			regiment = { type = bergsjaeger_brigade name = "第202后备团" historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "斯拉斯科军"
+		location = 2386
+		regiment = { type = hq_brigade name = "斯拉斯科军指挥部" historical_model = 0 }
+		division= {
+			name = "第23步兵师"
+			location = 2445
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第11步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第73步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第75步兵团" historical_model = 0 }
+		}
 	}
 }
-theatre = {   name = "Front Wschodni"
-	location = 2161 # Pow髍sk (should be Brzesc, the historical reserve HQ, but the AI will disband it and recreate a new theatre in Pow髍sk)
-	regiment = { type = hq_brigade name = "Kwatera Zapasowa Naczelnego Wodza HQ" historical_model = 0 }	
-	army = {   name = "Korpus Ochrony Pogranicza"
-		location = 2044 # Maloryta (should be 1986 Brzesc, but Theatre ai screws the OOB up)
-		leader = 8141 # Szyszko
-		regiment = { type = hq_brigade name = "Dow骴ztwo KOP HQ" historical_model = 0 }		
-		division = {   name = "Brygada KOP 'Grodno'"
-			location = 1632 # Lida, should be Grodno
-			regiment = { type = garrison_brigade name = "Brygada KOP 'Grodno'" experience = 5 historical_model = 3 }
-			regiment = { type = self_propelled_support_brigade name = "1. Tancik Batalion" experience = 5 historical_model = 4 }			
-		}
-		division = {   name = "Brygada KOP 'Wilno'"
-			location = 1532 # Wilno
-			leader = 8208 # Kardaszewicz
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "Pulk KOP 'Glebokie'" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "Pulk KOP 'Wilejka'" experience = 5 historical_model = 3 }
-			regiment = { type = garrison_brigade name = "Bataliony Graniczne 'Wilno'" experience = 5 historical_model = 3 }			
-		}
-		division = {   name = "Brygada KOP 'Nowogr骴ek'"
-			location = 1692 # Nowogr骴ek
-			is_reserve = yes
-			regiment = { type = garrison_brigade name = "Pulk KOP 'Wolozyn'" experience = 5 historical_model = 3 }
-			regiment = { type = garrison_brigade name = "Bataliony Graniczne 'Nowogr骴ek'" experience = 5 historical_model = 3 }			
-		}
-		division = {   name = "Brygada KOP 'Polesie'"
-			location = 2105 # Sarny
-			leader = 8215 # Rozycki-Kolodziejczyk
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "Pulk KOP 'Sarny'" experience = 5 historical_model = 3}
-			regiment = { type = garrison_brigade name = "Bataliony Graniczne 'Polesie'" experience = 5 historical_model = 3 }			
-		}
-		division = {   name = "Brygada KOP 'Wolyn'"
-			location = 2335 # R體ne
-			leader = 8216 # Kramczynski
-			is_reserve = yes
-			regiment = { type = garrison_brigade name = "Pulk KOP 'Wolyn'" experience = 5 historical_model = 3 }
-			regiment = { type = garrison_brigade name= "Bataliony Graniczne 'Wolyn'" experience = 5 historical_model = 3 }			
-		}
-		division = {   name = "Brygada KOP 'Podole'"
-			location = 2835 # Czortk體
-			leader = 8209 # Kotarba
-			is_reserve = yes
-			regiment = { type = garrison_brigade name = "Pulk KOP 'Czortk體'" experience = 5 historical_model = 3 }
-			regiment = { type = garrison_brigade name = "Bataliony Odwodowe 'Podole'" experience = 5 historical_model = 3 }			
-		}
-	}
-	division= {   name = "Nowogr骴zka B.K."
-		location = 1813 # Baranowicze
-		leader = 8043 # Grzmot-Skotnicki
+army = {
+	name = "罗兹集团军"
+	location = 2040
+	regiment = { type = hq_brigade name = "罗兹集团军指挥部" historical_model = 0 }
+	division= {
+		name = "第2步兵师"
+		location = 2040
 		is_reserve = yes
-		regiment = { type = cavalry_brigade name = "25. Pulk Ulan體 Wielkopolskich" experience = 5 historical_model = 3 }
-		regiment = { type = cavalry_brigade name = "26. Pulk Ulan體 Wielkopolskich" experience = 5 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "第2步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第3步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第4步兵团" historical_model = 0 }
 	}
-	division= {   name = "Kresowa B.K."
-		location = 2570 # Rzesz體
-		leader = 8002 # Anders
+	division= {
+		name = "第10步兵师"
+		location = 2040
 		is_reserve = yes
-		regiment = { type = cavalry_brigade name = "20. Pulk Ulan體 Sobieskiego" experience = 5 historical_model = 3 }
-		regiment = { type = cavalry_brigade name = "22. Pulk Ulan體 Podkarpackich" experience = 5 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "第28步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第30步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第31步兵团" historical_model = 0 }
 	}
-	army = {   name = "Armia Wilno"
-		location = 1532 # Wilno
-		regiment = { type = hq_brigade name = "Dow骴ztwo Armii Wilno HQ" historical_model = 0 }
-		
-		division= {   name = "1. DP Legion體 im. Pilsudskiego"
-			location = 1532 # Wilno
-			leader = 8126 # Skwarczynski
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "1. Pulk Piechoty Legion體" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "5. Pulk Piechoty Legion體" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "6. Pulk Piechoty Legion體" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "1 Pu砶u Artylerii" experience = 5 historical_model = 1 }
-		}
-		division= {   name = "19. Dywizja Piechoty"
-			location = 1532 # Wilno
-			leader = 8207 # Kwaciszewski
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "77. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "85. Pulk Strzelc體 wilenskich" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "86. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "19. Pu砶u Artylerii" experience = 5 historical_model = 1 }
-		}
-		division= {   name = "20. Dywizja Piechoty"
-			location = 1813 # Baranowicze
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "78. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "79. Pulk Strzelc體 Slonimskich" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "80. Pulk Strzelc體 Nowogr骴zkich" experience = 5 historical_model = 3 }
-			regiment = { type = truck_towed_support_brigade name = "20. Pu砶u Artylerii" experience = 5 historical_model = 2 }
-		}
-	}
-	army = {   name = "Armia Wolyn"
-		location = 2334 # Luck
-		regiment = { type = hq_brigade name = "Dow骴ztwo Armii Wolyn HQ" historical_model = 0 }
-		
-		corps = {   name = "GO Podole"
-			location = 2704 # Brzezany
-			regiment = { type = hq_brigade name = "Dow骴ztwo GO Podole HQ" historical_model = 0 }
-			division= {   name = "11. Karpacka Dywizja Piechoty"
-				location = 2834 # Stanislawow
-				leader = 8089 # Orlik-Lukoski
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "48. Pulk Strzelc體 Kresowych" experience = 5 historical_model = 3 }
-				regiment = { type = infantry_brigade name = "49. Huculski Pulk Strzelc體" experience = 5 historical_model = 3 }
-				regiment = { type = infantry_brigade name = "53. Pulk Strzelc體 Kresowych" experience = 5 historical_model = 3 }
-				regiment = { type = truck_towed_support_brigade name = "11. Pu砶u Artylerii" experience = 5 historical_model = 3 }
-			}
-			division= {   name = "12. Dywizja Piechoty"
-				location = 2639 # Tarnopol
-				leader = 8094 # Paszkiewicz
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "51. Pulk Strzelc體 Kresowych" experience = 5 historical_model = 3 }
-				regiment = { type = infantry_brigade name = "52. Pulk Strzelc體 Kresowych" experience = 5 historical_model = 3 }
-				regiment = { type = infantry_brigade name = "54. Pulk Strzelc體 Kresowych" experience = 5 historical_model = 3 }
-				regiment = { type = truck_towed_support_brigade name = "12. Pu砶u Artylerii" experience = 5 historical_model = 2 }
-			}
-		}
-		division= {   name = "3. Dywizja Piechoty Legion體"
-			location = 2332 # Zamosc
-			leader = 8086 # Olbrycht
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "7. Pulk Piechoty Legion體" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "8. Pulk Piechoty Legion體" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "9. Pulk Piechoty Legion體" experience = 5 historical_model = 3 }
-			regiment = { type = truck_towed_support_brigade name = "3. Pu砶u Artylerii" experience = 5 historical_model = 2 }
-		}
-		division= {   name = "24. Dywizja Piechoty"
-			location = 2448 # Jaroslaw
-			leader = 8067 # Krzyzanowski
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "17. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "38. Pulk Strzelc體 Lwowskich" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "39. Pulk Strzelc體 Lwowskich" experience = 5 historical_model = 3 }
-			regiment = { type = horse_towed_support_brigade name = "24. Pu砶u Artylerii" experience = 5 historical_model = 1 }
-		}
-	}
-	corps = {   name = "SGO Polesie"
-		location = 1987 # Kobryn
-		regiment = { type = hq_brigade name = "Dow骴ztwo SGO Polesie HQ" historical_model = 0 }
-		division= {   name = "13. Dywizja Piechoty"
-			location = 2335 # R體ne
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "43. Pulk Legionu Bajonczyk體" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "44. Pulk Legii Amerykanskiej" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "45. Pulk Strzelc體 Kresowych" experience = 5 historical_model = 3 }
-			regiment = { type = truck_towed_support_brigade name = "13. Pu砶u Artylerii" experience = 5 historical_model = 2 }
-		}
-		division= {   name = "27. Dywizja Piechoty"
-			location = 2219 # Kowel
-			leader = 8026 # Drapella
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "23. Pulk Piechoty Lisa-Kuli" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "24. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "50. Pulk Strzelc體 Kresowych" experience = 5 historical_model = 3 }
-			regiment = { type = truck_towed_support_brigade name = "27. Pu砶u Artylerii" experience = 5 historical_model = 3 }
-		}
-	}
-	corps = {   name = "SGO Lw體"
-		location = 2572 # Lw體
-		regiment = { type = hq_brigade name = "Dow骴ztwo SGO Lw體 HQ" historical_model = 0 }
-		division= {   name = "5. Dywizja Piechoty"
-			location = 2572 # Lw體
-			leader = 8018 # Czuma
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "19. Pulk Piechoty Odsieczy Lwowa" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "26. Pulk Piechoty" experience = 5 historical_model = 3 }
-			regiment = { type = infantry_brigade name = "40. Pulk Piechoty Dzieci Lwowskich" experience = 5 historical_model = 3 }
-			regiment = { type = truck_towed_support_brigade name = "5. Pu砶u Artylerii" experience = 5 historical_model = 2 }
-		}
-		division= {   name = "22. Dywizja Piechoty G髍skiej"
-			location = 2571 # Przemysl
-			leader = 8009 # Boruta-Spiechowicz
-			is_reserve = yes
-			regiment = { type = bergsjaeger_brigade name = "2. Pulk Strzelc體 Podhalanskich" experience = 5 historical_model = 3 }
-			regiment = { type = bergsjaeger_brigade name = "5. Pulk Strzelc體 Podhalanskich" experience = 5 historical_model = 3 }
-			regiment = { type = bergsjaeger_brigade name = "6. Pulk Strzelc體 Podhalanskich" experience = 5 historical_model = 3 }
-			regiment = { type = truck_towed_support_brigade name = "22. Pu砶u Artylerii" experience = 5 historical_model = 3 }			
-		}
-	}
-	division= {   name = "Podolska B.K."
-		location = 2834 # Stanislaw體
-		leader = 8057 # Kleeberg
+	division= {
+		name = "第28步兵师"
+		location = 2040
 		is_reserve = yes
-		regiment = { type = cavalry_brigade name = "6. Pulk Ulan體 kaniowskich" experience = 5 historical_model = 3 }
-		regiment = { type = cavalry_brigade name = "9. Pulk Ulan體 malopolskich" experience = 5 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "第15步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第36步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第72步兵团" historical_model = 0 }
 	}
-	division= {   name = "Wilenska B.K."
-		location = 1532 # Wilno
-		leader = 8108 # Przewlocki
+	division= {
+		name = "边疆师"
+		location = 2040
 		is_reserve = yes
-		regiment = { type = cavalry_brigade name = "4. Pulk Ulan體 Zaniemenskich" experience = 5 historical_model = 3 }
-		regiment = { type = cavalry_brigade name = "13. Pulk Ulan體 Wilenskich" experience = 5 historical_model = 3 }
+		regiment = { type = cavalry_brigade name = "第6骑马步兵团" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "第20枪骑兵团" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "第22枪骑兵团" historical_model = 0 }
 	}
-	division= {   name = "Wolynska B.K."
-		location = 2335 # R體ne
-		leader = 8148 # Korytowski A.
-		is_reserve = yes
-		regiment = { type = cavalry_brigade name = "19. Pulk Ulan體 Wolynskich" experience = 5 historical_model = 3 }
-		regiment = { type = cavalry_brigade name = "21. Pulk Ulan體 Nadwislanskich" experience = 5 historical_model = 3 }
-	}
-	navy = {   name = "Marynarka Wojenna"
-		base = 1626 	# Danzig, Danzig Poland  Region in  
-		location = 1626 # Danzig, Danzig Poland  Region in  
-		ship = { type = destroyer name = "1. Dywizjon Kontrtorpedowc體" experience = 5 historical_model = 5 }
-		ship = { type = submarine name = "1. Dywizjon Okret體 Podwodnych" experience = 5 historical_model = 5 }
-	}
-	# The air OOB is dummy. It reflects the number of planes (100 per unit), but not the actual 1936 OOB
-	air = {   name = "Wojska Lotnicze i Obrony Powietrzne"
-		base = 1928 	# Warszawa
-		location = 1928 # Pultusk, Warsaw Poland  Region in  
-		wing = { type = interceptor name = "III/1 Dywizjon Mysliwski" experience = 5 historical_model = 0 }
-		wing = { type = interceptor name = "III/2 Dywizjon Mysliwski" experience = 5 historical_model = 0 }
-		wing = { type = interceptor name = "III/3 Dywizjon Mysliwski" experience = 5 historical_model = 0 }	
-		wing = { type = tactical_bomber name = "1. Dywizjon Bombowy" experience = 5 historical_model = 0 }
+	corps = {
+		name = "彼得罗科夫军"
+		location = 2099
+		regiment = { type = hq_brigade name = "彼得罗科夫军指挥部" historical_model = 0 }
+		division= {
+			name = "第30步兵师"
+			location = 2099
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第82步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第83步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第84步兵团" historical_model = 0 }
+		}
 	}
 }
+army = {
+	name = "纳热瓦集团军"
+	location = 1871
+	regiment = { type = hq_brigade name = "纳热瓦集团军指挥部" historical_model = 0 }
+	division= {
+		name = "第18步兵师"
+		location = 1871
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第33步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第42步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第71步兵团" historical_model = 0 }
+	}
+}
+army = {
+	name = "莫德林集团军"
+	location = 1809
+	regiment = { type = hq_brigade name = "莫德林集团军指挥部" historical_model = 0 }
+	division= {
+		name = "第8步兵师"
+		location = 1809
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第13步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第21步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第32步兵团" historical_model = 0 }
+	}
+	division= {
+		name = "第20步兵师"
+		location = 1809
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第78步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第79步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第80步兵团" historical_model = 0 }
+	}
+	division= {
+		name = "独立骑兵师"
+		location = 1809
+		is_reserve = yes
+		regiment = { type = cavalry_brigade name = "第4骑马步兵团" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "第25枪骑团" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "第26枪骑团" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "第27枪骑团" historical_model = 0 }
+	}
+	division= {
+		name = "马佐夫卡骑兵师"
+		location = 1928
+		is_reserve = yes
+		regiment = { type = cavalry_brigade name = "第1轻骑兵师" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "第7枪骑兵团" historical_model = 0 }
+		regiment = { type = cavalry_brigade name = "第11枪骑兵团" historical_model = 0 }
+	}
+}
+army = {
+	name = "波美拉尼亚集团军"
+	location = 1626
+	regiment = { type = hq_brigade name = "波美拉尼亚集团军指挥部" historical_model = 0 }
+	corps = {
+		name = "东线陆军"
+		location = 1805
+		regiment = { type = hq_brigade name = "东线陆军指挥部" historical_model = 0 }
+		division= {
+			name = "第4步兵师"
+			location = 1805
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第14步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第63步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第67步兵团" historical_model = 0 }
+		}
+		division= {
+			name = "第16步兵师"
+			location = 1805
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第64步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第65步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第66步兵团" historical_model = 0 }
+		}
+	}
+	division= {
+		name = "第9步兵师"
+		location = 1626
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第22步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第34步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第35步兵团" historical_model = 0 }
+	}
+	division= {
+		name = "第15步兵师"
+		location = 1626
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第59步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第61步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第62步兵团" historical_model = 0 }
+	}
+	division= {
+		name = "第27步兵师"
+		location = 1626
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第23步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第24步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第50步兵团" historical_model = 0 }
+	}
+}
+army = {
+	name = "波兹南集团军"
+	location = 1924
+	regiment = { type = hq_brigade name = "波兹南集团军指挥部" historical_model = 0 }
+	division= {
+		name = "第14步兵师"
+		location = 1924
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第55步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第57步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第58步兵团" historical_model = 0 }
+	}
+	division= {
+		name = "第17步兵师"
+		location = 1924
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第68步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第69步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第70步兵团" historical_model = 0 }
+	}
+	division= {
+		name = "第25步兵师"
+		location = 1924
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第29步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第56步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第60步兵团" historical_model = 0 }
+	}
+	division= {
+		name = "第26步兵师"
+		location = 1924
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第10步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第18步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第37步兵团" historical_model = 0 }
+	}
+}
+army = {
+	name = "普鲁士集团军"
+	location = 1866
+	regiment = { type = hq_brigade name = "普鲁士集团军指挥部" historical_model = 0 }
+	corps = {
+		name = "Skwarczynski军"
+		location = 1866
+		regiment = { type = hq_brigade name = "Skwarczynski军指挥部" historical_model = 0 }
+		division= {
+			name = "第3山地步兵师"
+			location = 1866
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第7步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第8步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第9步兵团" historical_model = 0 }
+		}
+		division= {
+			name = "第12步兵师"
+			location = 1866
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第51步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第52步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第54步兵团" historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "Kruszewski军"
+		location = 1867
+		regiment = { type = hq_brigade name = "Kruszewski军指挥部" historical_model = 0 }	
+		division= {
+			name = "第13步兵师"
+			location = 1867
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第43步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第44步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第45步兵团" historical_model = 0 }
+		}
+		division= {
+			name = "第19步兵师"
+			location = 1867
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第77步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第85步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第86步兵团" historical_model = 0 }
+		}
+		division= {
+			name = "第29步兵师"
+			location = 2158
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "第41步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第76步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "第81步兵团" historical_model = 0 }
+		}
+	}
+}
+army = {
+	name = "华沙集团军"
+	location = 1928
+	regiment = { type = hq_brigade name = "华沙集团军指挥部" historical_model = 0 }
+	division= {
+		name = "'毕苏斯基'第1军团"
+		location = 1928
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第1步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第5步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第6步兵团" historical_model = 0 }
+	}
+	division= {
+		name = "第5步兵师"
+		location = 1928
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第19步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第26步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第40步兵团" historical_model = 0 }
+	}
+	division= {
+		name = "喀尔巴阡第11步兵师"
+		location = 1928
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第48步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第49步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第53步兵团" historical_model = 0 }
+	}
+	division= {
+		name = "第24步兵师"
+		location = 1928
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第17步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第38步兵团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第39步兵团" historical_model = 0 }
+	}
+}
+army = {
+	name = "后备集团军"
+	location = 2158
+	regiment = { type = hq_brigade name = "后备集团军指挥部" historical_model = 0 }
+	division= {
+		name = "第33步兵师(预备)"
+		location = 2158
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第233后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第234后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第235后备团" historical_model = 0 }
+	}
+	division= {
+		name = "第35步兵师(预备)"
+		location = 2158
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第205后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第206后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第207后备团" historical_model = 0 }
+	}
+	division= {
+		name = "第36步兵师(预备)"
+		location = 2158
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第163后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第164后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第165后备团" historical_model = 0 }
+	}
+	division= {
+		name = "第38步兵师(预备)"
+		location = 2158
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第96后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第97后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第98后备团" historical_model = 0 }
+	}
+	division= {
+		name = "第39步兵师(预备)"
+		location = 2158
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第93后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第94后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第95后备团" historical_model = 0 }
+	}
+	division= {
+		name = "第41步兵师(预备)"
+		location = 2158
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第114后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第115后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第116后备团" historical_model = 0 }
+	}
+	division= {
+		name = "第44步兵师(预备)"
+		location = 2158
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第144后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第145后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第146后备团" historical_model = 0 }
+	}
+	division= {
+		name = "第45步兵师(预备)"
+		location = 2158
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第154后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第155后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第156后备团" historical_model = 0 }
+	}
+	division= {
+		name = "第55步兵师(预备)"
+		location = 2158
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "第201后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第203后备团" historical_model = 0 }
+		regiment = { type = infantry_brigade name = "第204后备团" historical_model = 0 }
+	}
+}
+navy = {
+	name = "波兰海军"
+	base = 1626
+	location = 1626
+	ship = { type = destroyer name = "第1驱逐舰舰队" historical_model = 1 }
+	ship = { type = submarine name = "第1潜艇舰队" historical_model = 0 }
+}
+air = {
+	name = "波兰第1航空大队"
+	base = 1928
+	location = 1928
+	wing = { type = interceptor name = "波兰第1航空大队" historical_model = 0 }
+	wing = { type = interceptor name = "截击机第1编队" historical_model = 0 }
+	wing = { type = tactical_bomber name = "第1重型轰炸编队" historical_model = 0 }
+}
+
+
+
