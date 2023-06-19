@@ -20,135 +20,154 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
+	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
 	}
 }
 
 unit_names = {
 	infantry_brigade = {
-		"µÚ1'¸¥ÀÊÎ÷Ë¹¿ÆÄªÀ­É£'²½±øÊ¦" "µÚ2²½±øÊ¦" "µÚ3²½±øÊ¦" "µÚ4²½±øÊ¦" "µÚ5²½±øÊ¦" "µÚ6²½±øÊ¦" "µÚ7²½±øÊ¦" "µÚ8²½±øÊ¦" "µÚ9²½±øÊ¦" "µÚ10²½±øÊ¦" "µÚ11²½±øÊ¦" 
+		"1a Div. de Inf. 'Francisco Morazán'" "2a División de Infantería" "3a División de Infantería" "4a División de Infantería" "5a División de Infantería" "6a División de Infantería" "7a División de Infantería" "8a División de Infantería" "9a División de Infantería" "10a División de Infantería" "11a División de Infantería" 
 			}
 	cavalry_brigade = {
-		"µÚ1Æï±øÊ¦" "µÚ2Æï±øÊ¦" "µÚ3Æï±øÊ¦" "µÚ4Æï±øÊ¦" "µÚ5Æï±øÊ¦" 
+		"1a División de Caballería" "2a División de Caballería" "3a División de Caballería" "4a División de Caballería" "5a División de Caballería" 
 	}
 	motorized_brigade = {
-		"µÚ1Ä¦ÍĞ»¯²½±øÊ¦" "µÚ2Ä¦ÍĞ»¯²½±øÊ¦" "µÚ3Ä¦ÍĞ»¯²½±øÊ¦" "µÚ4Ä¦ÍĞ»¯²½±øÊ¦" "µÚ5Ä¦ÍĞ»¯²½±øÊ¦" 
+		"1a División de Inf. Móvil" "2a División de Inf. Móvil" "3a División de Inf. Móvil" "4a División de Inf. Móvil" "5a División de Inf. Móvil" 
 	}
 	mechanized_brigade = {
-		"µÚ1»úĞµ»¯Ê¦" "µÚ2»úĞµ»¯Ê¦" "µÚ3»úĞµ»¯Ê¦" "µÚ4»úĞµ»¯Ê¦" "µÚ5»úĞµ»¯Ê¦" 
+		"1a División Mecanizada" "2a División Mecanizada" "3a División Mecanizada" "4a División Mecanizada" "5a División Mecanizada" 
 	}
 	light_armor_brigade = {
-		"ºé¶¼À­Ë¹µÚ1×°¼×Ê¦" "ºé¶¼À­Ë¹µÚ2×°¼×Ê¦" "ºé¶¼À­Ë¹µÚ3×°¼×Ê¦" "ºé¶¼À­Ë¹µÚ4×°¼×Ê¦" "ºé¶¼À­Ë¹µÚ5×°¼×Ê¦" 
+		"1a División Blindada de Honduras" "2a División Blindada de Honduras" "3a División Blindada de Honduras" "4a División Blindada de Honduras" "5a División Blindada de Honduras" 
 	}
 	armor_brigade = {
-		"ºé¶¼À­Ë¹µÚ1×°¼×Ê¦" "ºé¶¼À­Ë¹µÚ2×°¼×Ê¦" "ºé¶¼À­Ë¹µÚ3×°¼×Ê¦" "ºé¶¼À­Ë¹µÚ4×°¼×Ê¦" "ºé¶¼À­Ë¹µÚ5×°¼×Ê¦" 
+		"1a División Blindada de Honduras" "2a División Blindada de Honduras" "3a División Blindada de Honduras" "4a División Blindada de Honduras" "5a División Blindada de Honduras" 
 	}
 	paratrooper_brigade = {
-		"µÚ1¿Õ½µÊ¦" "µÚ2¿Õ½µÊ¦" "µÚ3¿Õ½µÊ¦" "µÚ4¿Õ½µÊ¦" "µÚ5¿Õ½µÊ¦" 
+		"1a División de Paracaidistas" "2a División de Paracaidistas" "3a División de Paracaidistas" "4a División de Paracaidistas" "5a División de Paracaidistas" 
 	}
 	marine_brigade = {
-		"µÚ1º£¾üÂ½Õ½Ê¦" "µÚ2º£¾üÂ½Õ½Ê¦" "µÚ3º£¾üÂ½Õ½Ê¦" "µÚ4º£¾üÂ½Õ½Ê¦" "µÚ5º£¾üÂ½Õ½Ê¦" 
+		"1a División de Infantería de Marina" "2a División de Infantería de Marina" "3a División de Infantería de Marina" "4a División de Infantería de Marina" "5a División de Infantería de Marina" 
 	}
 	bergsjaeger_brigade = {
-		"µÚ1É½µØÊ¦" "µÚ2É½µØÊ¦" "µÚ3É½µØÊ¦" "µÚ4É½µØÊ¦" "µÚ5É½µØÊ¦" 
+		"1a División de Montaña" "2a División de Montaña" "3a División de Montaña" "4a División de Montaña" "5a División de Montaña" 
 	}
 	garrison_brigade = {
-		"µÚ11ÎÀÊùÊ¦" "µÚ12ÎÀÊùÊ¦" "µÚ13ÎÀÊùÊ¦" "µÚ14ÎÀÊùÊ¦" "µÚ15ÎÀÊùÊ¦" "µÚ16ÎÀÊùÊ¦" "µÚ17ÎÀÊùÊ¦" "µÚ18ÎÀÊùÊ¦" "µÚ19ÎÀÊùÊ¦" "µÚ20ÎÀÊùÊ¦" 
+		"11a División de Infantería" "12a División de Infantería" "13a División de Infantería" "14a División de Infantería" "15a División de Infantería" "16a División de Infantería" "17a División de Infantería" "18a División de Infantería" "19a División de Infantería" "20a División de Infantería" 
 	}
 	hq_brigade = {
-		"µÚ1Ö¸»Ó²¿" "µÚ2Ö¸»Ó²¿" "µÚ3Ö¸»Ó²¿" "µÚ4Ö¸»Ó²¿" "µÚ5Ö¸»Ó²¿" "µÚ6Ö¸»Ó²¿" "µÚ7Ö¸»Ó²¿" "µÚ8Ö¸»Ó²¿" "µÚ9Ö¸»Ó²¿" "µÚ10Ö¸»Ó²¿" 
+		"Cuartel General 1er Ejército" "Cuartel General 2o Ejército" "Cuartel General 3er Ejército" "Cuartel General 4o Ejército" "Cuartel General 5o Ejército" "Cuartel General 6o Ejército" "Cuartel General 7o Ejército" "Cuartel General 8o Ejército" "Cuartel General 9o Ejército" "Cuartel General 10o Ejército" 
 	}
 	militia_brigade = {
-		"µÚ1¹úÃñ¾¯ÎÀÊ¦" "µÚ2¹úÃñ¾¯ÎÀÊ¦" "µÚ3¹úÃñ¾¯ÎÀÊ¦" "µÚ4¹úÃñ¾¯ÎÀÊ¦" "µÚ5¹úÃñ¾¯ÎÀÊ¦" "µÚ6¹úÃñ¾¯ÎÀÊ¦" "µÚ7¹úÃñ¾¯ÎÀÊ¦" "µÚ8¹úÃñ¾¯ÎÀÊ¦" "µÚ9¹úÃñ¾¯ÎÀÊ¦" "µÚ10¹úÃñ¾¯ÎÀÊ¦" "µÚ11¹úÃñ¾¯ÎÀÊ¦" 
-		"µÚ12¹úÃñ¾¯ÎÀÊ¦" "µÚ13¹úÃñ¾¯ÎÀÊ¦" "µÚ14¹úÃñ¾¯ÎÀÊ¦" "µÚ15¹úÃñ¾¯ÎÀÊ¦" 
+		"1a Fuerza de Seguridad Publica" "2a Fuerza de Seguridad Publica" "3a Fuerza de Seguridad Publica" "4a Fuerza de Seguridad Publica" "5a Fuerza de Seguridad Publica" "6a Fuerza de Seguridad Publica" "7a Fuerza de Seguridad Publica" "8a Fuerza de Seguridad Publica" "9a Fuerza de Seguridad Publica" "10a Fuerza de Seguridad Publica" "11a Fuerza de Seguridad Publica" 
+		"12a Fuerza de Seguridad Publica" "13a Fuerza de Seguridad Publica" "14a Fuerza de Seguridad Publica" "15a Fuerza de Seguridad Publica" 
 	}
 	multi_role = {
-		"µÚ1Õ½¶·»úÁª¶Ó" "µÚ2Õ½¶·»úÁª¶Ó" "µÚ3Õ½¶·»úÁª¶Ó" "µÚ4Õ½¶·»úÁª¶Ó" "µÚ5Õ½¶·»úÁª¶Ó" 
+		"1. Grupo Aéreo de Caza" "2. Grupo Aéreo de Caza" "3. Grupo Aéreo de Caza" "4. Grupo Aéreo de Caza" "5. Grupo Aéreo de Caza" 
 	}
 	interceptor = {
-		"µÚ1½Ø»÷»úÁª¶Ó" "µÚ2½Ø»÷»úÁª¶Ó" "µÚ3½Ø»÷»úÁª¶Ó" "µÚ4½Ø»÷»úÁª¶Ó" "µÚ5½Ø»÷»úÁª¶Ó" 
+		"1. Grupo Aéreo de Caza" "2. Grupo Aéreo de Caza" "3. Grupo Aéreo de Caza" "4. Grupo Aéreo de Caza" "5. Grupo Aéreo de Caza" 
+	}
+	jet_int = {
+		"1. Grupo Aéreo de Caza" "2. Grupo Aéreo de Caza" "3. Grupo Aéreo de Caza" "4. Grupo Aéreo de Caza" "5. Grupo Aéreo de Caza" 
+	}
+	jet_mr = {
+		"1. Grupo Aéreo de Caza" "2. Grupo Aéreo de Caza" "3. Grupo Aéreo de Caza" "4. Grupo Aéreo de Caza" "5. Grupo Aéreo de Caza" 
 	}
 	strategic_bomber = {
-		"µÚ1Õ½ÂÔºäÕ¨»úÁª¶Ó" "µÚ2Õ½ÂÔºäÕ¨»úÁª¶Ó" "µÚ3Õ½ÂÔºäÕ¨»úÁª¶Ó" "µÚ4Õ½ÂÔºäÕ¨»úÁª¶Ó" "µÚ5Õ½ÂÔºäÕ¨»úÁª¶Ó" 
+		"1. Grupo Aéreo Estratégico" "2. Grupo Aéreo Estratégico" "3. Grupo Aéreo Estratégico" "4. Grupo Aéreo Estratégico" "5. Grupo Aéreo Estratégico" 
 	}
 	tactical_bomber = {
-		"µÚ1Õ½ÊõºäÕ¨»úÁª¶Ó" "µÚ2Õ½ÊõºäÕ¨»úÁª¶Ó" "µÚ3Õ½ÊõºäÕ¨»úÁª¶Ó" "µÚ4Õ½ÊõºäÕ¨»úÁª¶Ó" "µÚ5Õ½ÊõºäÕ¨»úÁª¶Ó" 
+		"1. Grupo Aéreo Táctico" "2. Grupo Aéreo Táctico" "3. Grupo Aéreo Táctico" "4. Grupo Aéreo Táctico" "5. Grupo Aéreo Táctico" 
+	}
+	jet_bomber = {
+		"1. Grupo Aéreo Táctico" "2. Grupo Aéreo Táctico" "3. Grupo Aéreo Táctico" "4. Grupo Aéreo Táctico" "5. Grupo Aéreo Táctico" 
 	}
 	naval_bomber = {
-		"µÚ1º£¾üºäÕ¨»úÁª¶Ó" "µÚ2º£¾üºäÕ¨»úÁª¶Ó" "µÚ3º£¾üºäÕ¨»úÁª¶Ó" "µÚ4º£¾üºäÕ¨»úÁª¶Ó" "µÚ5º£¾üºäÕ¨»úÁª¶Ó" "µÚ1ÓãÀ×ºäÕ¨»úÁª¶Ó" "µÚ2ÓãÀ×ºäÕ¨»úÁª¶Ó" "µÚ3ÓãÀ×ºäÕ¨»úÁª¶Ó" "µÚ4ÓãÀ×ºäÕ¨»úÁª¶Ó" "µÚ5ÓãÀ×ºäÕ¨»úÁª¶Ó" 
+		"1. Grupo Aéreo de la Marina" "2. Grupo Aéreo de la Marina" "3. Grupo Aéreo de la Marina" "4. Grupo Aéreo de la Marina" "5. Grupo Aéreo de la Marina" "1. Grupo Aéreo Torpedero" "2. Grupo Aéreo Torpedero" "3. Grupo Aéreo Torpedero" "4. Grupo Aéreo Torpedero" "5. Grupo Aéreo Torpedero" 
 	}
 	cas = {
-		"µÚ1¸©³åºäÕ¨»úÁª¶Ó" "µÚ2¸©³åºäÕ¨»úÁª¶Ó" "µÚ3¸©³åºäÕ¨»úÁª¶Ó" "µÚ4¸©³åºäÕ¨»úÁª¶Ó" "µÚ5¸©³åºäÕ¨»úÁª¶Ó" 
+		"1. Grupo Aéreo de Asalto" "2. Grupo Aéreo de Asalto" "3. Grupo Aéreo de Asalto" "4. Grupo Aéreo de Asalto" "5. Grupo Aéreo de Asalto" 
 	}
 	transport_plane = {
-		"µÚ1ÔËÊä»úÁª¶Ó" "µÚ2ÔËÊä»úÁª¶Ó" "µÚ3ÔËÊä»úÁª¶Ó" "µÚ4ÔËÊä»úÁª¶Ó" "µÚ5ÔËÊä»úÁª¶Ó" 
+		"Transportes Aéreos Nacionales nro. 1" "Transportes Aéreos Nacionales nro. 2" "Transportes Aéreos Nacionales nro. 3" "Transportes Aéreos Nacionales nro. 4" "Transportes Aéreos Nacionales nro. 5" 
 	}
 	battleship = {
-		"ARH ÌØ¹ÅÎ÷¼Ó¶û°ÍºÅ" "ARH Ê¥ÅåµÂÂŞËÕÀ­ºÅ" 
+		"ARH Tegucigalpa" "ARH San Pedro Sula" 
 	}
 	light_cruiser = {
-		"ARH Ê¥°²¶«Äá¿Æ¶ûÌØË¹ºÅ" "ARH ½øÕ¹ºÅ" "ARH ¿Æ¶ûÌØË¹¸ÛºÅ" "ARH °¬ÈÕÄÇºÅ" "ARH À­ÈûÍßºÅ" 
+		"ARH San Antonio de Cortes" "ARH El Progreso" "ARH Puerto Cortés" "ARH Iriona" "ARH La Ceiba" 
 	}
 	heavy_cruiser = {
-		"ARH Ê¥°²¶«Äá¿Æ¶ûÌØË¹ºÅ" "ARH ½øÕ¹ºÅ" "ARH ¿Æ¶ûÌØË¹¸ÛºÅ" "ARH °¬ÈÕÄÇºÅ" "ARH À­ÈûÍßºÅ" 
+		"ARH San Antonio de Cortes" "ARH El Progreso" "ARH Puerto Cortés" "ARH Iriona" "ARH La Ceiba" 
 	}
 	battlecruiser = {
-		"ARH ÌØ¹ÅÎ÷¼Ó¶û°ÍºÅ" "ARH Ê¥ÅåµÂÂŞËÕÀ­ºÅ" 
+		"ARH Tegucigalpa" "ARH San Pedro Sula" 
 	}
 	destroyer = {
-		"µÚ1ÇıÖğ½¢Ö§¶Ó" "µÚ2ÇıÖğ½¢Ö§¶Ó" "µÚ3ÇıÖğ½¢Ö§¶Ó" "µÚ4ÇıÖğ½¢Ö§¶Ó" "µÚ5ÇıÖğ½¢Ö§¶Ó" 
+		"Flotilla de Destructores nro. 1" "Flotilla de Destructores nro. 2" "Flotilla de Destructores nro. 3" "Flotilla de Destructores nro. 4" "Flotilla de Destructores nro. 5" 
 	}
 	carrier = {
-		"ARH ºé¶¼À­Ë¹¹²ºÍ¹úºÅ" "ARH À­ÅÁÂåÂíºÅ" 
+		"ARH República de Honduras" "ARH La Paloma" 
 	}
 	submarine = {
-		"µÚ1Ç±Í§·Ö¶Ó" "µÚ2Ç±Í§·Ö¶Ó" "µÚ3Ç±Í§·Ö¶Ó" "µÚ4Ç±Í§·Ö¶Ó" "µÚ5Ç±Í§·Ö¶Ó" 
+		"1a Flotilla de Submarinos" "2a Flotilla de Submarinos" "3a Flotilla de Submarinos" "4a Flotilla de Submarinos" "5a Flotilla de Submarinos" 
 	}
 	transport_ship = {
-		"µÚ1ÔËÊä·Ö¶Ó" "µÚ2ÔËÊä·Ö¶Ó" "µÚ3ÔËÊä·Ö¶Ó" "µÚ4ÔËÊä·Ö¶Ó" "µÚ5ÔËÊä·Ö¶Ó" 
+		"1. Transporte Naval del Ejército" "2. Transporte Naval del Ejército" "3. Transporte Naval del Ejército" "4. Transporte Naval del Ejército" "5. Transporte Naval del Ejército" 
 	}
 
 }
 
 ministers = {
 	79001 = {
-		name = "µÏ²¼ĞŞ ¿¨À­Ë¹ °²µÏÄÉ"
+		name = "Tiburcio Carias Andina"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M79001
 		head_of_state = pig_headed_isolationist
 		foreign_minister = iron_fisted_brute
 		chief_of_staff = school_of_psychology
-		head_of_state = popular_figurehead
 		head_of_government = old_general
 		minister_of_intelligence = political_specialist
 		start_date = 1936.1.1
 	}
 	79002 = {
-		name = "¿¨ÂåË¹ °¢¶û²®ÌØ °²¿¼Ë¹"
+		name = "Carlos Alberto Ucles"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M79002
 		head_of_government = silent_workhorse
 		minister_of_security = silent_lawyer
-		head_of_government = silent_workhorse
 		armament_minister = military_entrepreneur
 		start_date = 1936.1.1
 	}
 	79004 = {
-		name = "ÂŞ²®ÌØ Ã×ĞªÌá °İ¶÷"
+		name = "Roberto Michelleti Bain"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M79004
 		armament_minister = laissez_faires_capitalist
 		foreign_minister = great_compromiser
-		armament_minister = resource_industrialist
 		start_date = 1936.1.1
 	}
 	79006 = {
-		name = "À³ÃÉµÂ Ë¹ÍĞÀÕ ¼ÓÀ­Ôú"
+		name = "Raimundo Stochler Garcia"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M79006
@@ -158,17 +177,15 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	79009 = {
-		name = "¿¨ÂåË¹ ÍßÅå¶û ¿ËÃÉÔú"
+		name = "Carlos Vaupel Comeza"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M79009
 		chief_of_navy = indirect_approach_doctrine
-		chief_of_navy = indirect_approach_doctrine
-		chief_of_navy = indirect_approach_doctrine
 		start_date = 1936.1.1
 	}
 	79010 = {
-		name = "¹ÅË¹Ëş·ò Ë¹Ã×µÂÌØ"
+		name = "Gustavo Schmidt"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M79010
@@ -176,7 +193,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	79032 = {
-		name = "Ô¼Éª ×æÄá¼Ó ºÕÌØ"
+		name = "José Zuñiga Huete"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M79032
@@ -186,7 +203,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	79033 = {
-		name = "Öì°² B. ÍßÀ­´ïÈğË¹"
+		name = "Juan B. Valladares"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M79011
@@ -196,7 +213,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	79034 = {
-		name = "À­¶û É£ÇĞË¹ °ÍÄÉ¶¼Ë¹"
+		name = "Raul Sanchez Banados"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M79021
@@ -205,7 +222,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	79036 = {
-		name = "°ÂÀ¼µÂ ÂŞµÂÈğ¸ñ×È ¼ªÃ×Åµ"
+		name = "Orlando Rodriguez Jimino"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M79036
@@ -214,7 +231,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	79039 = {
-		name = "ÑÇ²®À­º² ÍşÁ®Ä·Ë¹ ¿¨¶ûµÂÂ¡"
+		name = "Abraham Williams Calderon"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M79039
@@ -223,7 +240,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	79040 = {
-		name = "Öì°² ÂíÅ¬¶û ¼Ó¶ûÎÂ×È"
+		name = "Juan Manuel Galvez"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M79017
@@ -236,7 +253,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	79042 = {
-		name = "ÖìÀûÅ· ÂåÔúÅµ µÏ×È"
+		name = "Julio Lozano Díaz"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M79042
@@ -246,18 +263,17 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	79043 = {
-		name = "ºÕ¶ûÄÉ ¸¥ÄÉµÂ×È Ë¹ÀûÍß"
+		name = "Hernan Fernandez Silva"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M79043
 		head_of_government = silent_workhorse
 		foreign_minister = great_compromiser
 		minister_of_intelligence = industrial_specialist
-		head_of_government = corporate_suit
 		start_date = 1937.1.1
 	}
 	79044 = {
-		name = "Öì°² ¿ËµÏ¸ñ À­Ã×Èğ×È"
+		name = "Juan Codigo Ramirez"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M79022
@@ -266,7 +282,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	79045 = {
-		name = "¸¥ÀÉ¿ÆË¹¿Ë S. ËşÆ¤Å· ÍĞÅµ"
+		name = "Francisco S. Tapio Toro"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M79045
@@ -276,7 +292,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	79046 = {
-		name = "ÀÍÈğ°²Å· À³Äá×È °¬Ë¹Æ¤ÅµÈø"
+		name = "Laureano Laínez Espinoza"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M79046
@@ -284,7 +300,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	79048 = {
-		name = "ÈøÀ­Íß¶à¶û °¢¸ñÈğ"
+		name = "Salvador Aguirre"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M79048
@@ -292,7 +308,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	79049 = {
-		name = "Ë¹ÀûÎ¬Åµ À³Äá×È ÍşÁ®Ã÷"
+		name = "Silverio Laínez Villamin"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M79049
@@ -300,7 +316,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	79051 = {
-		name = "ÈøÀ­Íß¶à¶û °¢¸ñÈğ"
+		name = "Salvador Aguirre Osana"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M79051
@@ -308,7 +324,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	79053 = {
-		name = "¼ÓÌáÍĞ °¬Ë¹¿âµÂÂå °ÂÒÁÈø´ïµÂ¶û"
+		name = "Jacinto Escudero Oycandadel"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M79023
@@ -316,7 +332,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	79056 = {
-		name = "Ã×¹Å¶û A. ÄÉÍßÂŞ"
+		name = "Miguel A. Navarro"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M79056
@@ -325,7 +341,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	79058 = {
-		name = "À­·¨¶û °¢¶ûÍßÀ­¶à ¹ÅÈğÅµ"
+		name = "Rafael Alvarado Guerrero"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M79058
@@ -334,7 +350,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	79059 = {
-		name = "µÏµÏ¶û ÂíÉ­"
+		name = "Didier Masson"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M79059
@@ -343,7 +359,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	79060 = {
-		name = "·¨Ë¹ÍĞ ´÷Î¬ÀÕ"
+		name = "Fausto Davilá"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M79014
@@ -351,7 +367,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	79061 = {
-		name = "ÂŞ²®ÌØ °ÂÈğÌá×È ÑÇÃÉ´ïÈğË¹"
+		name = "Roberto Ortíz Almendares"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M79015
@@ -361,7 +377,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	79064 = {
-		name = "°ÂË¹Íß¶à ÂŞÅå×È °¢ÈğÀ­Åµ"
+		name = "Oswaldo López Arellano"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M79064
@@ -371,7 +387,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	79066 = {
-		name = "dr. À­ÃÉ ÍşÁ®´ï ÄªÀ­ÀÕË¹"
+		name = "dr. Ramon Villeda Morales"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M79066
@@ -379,7 +395,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	79067 = {
-		name = "°Â¹ÅË¹Í¡ °¬Ë¹Æ¤ÅµÈø ÈğÒÁË¹"
+		name = "Augustin Espinoza Reyes"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M79024
@@ -388,7 +404,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	79068 = {
-		name = "Ã×Èø¶û ±´¿Ë Î¬À­Åµ¶û"
+		name = "Misael Becker Villarroel"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M79068
@@ -396,7 +412,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	79069 = {
-		name = "¿¨ÂåË¹ ÄªÀïÄÉ µÂ¼Ó¼ª"
+		name = "Carlos Molina Dejonje"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M79069
@@ -405,7 +421,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	79070 = {
-		name = "½ÜÃ· ºÕÀ­´ï ¼ÓÈğ¿¨"
+		name = "Jaime Herda Garcia"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M79070
@@ -414,7 +430,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	79084 = {
-		name = "Î¬É­ÌØ ËşÆ¤ÑÇ ÂŞ²®"
+		name = "Vicente Tapia Lobo"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M79026
@@ -424,7 +440,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	79085 = {
-		name = "°²Àï¿ü ¶à¶û Âå¼ÓË¹"
+		name = "Enrique Doll Rojas"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M79027
@@ -434,7 +450,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	79090 = {
-		name = "°²Àï¿ü °ÂÌá×È Æ¤ÄÚ¶û"
+		name = "Enrique Ortiz Pinel"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M79090
@@ -443,7 +459,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	79106 = {
-		name = "Ã×¹Å¶û °²¼ª¶û ÉªÎ¬À­"
+		name = "Miguel Ángel Sevilla"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M79106
@@ -451,11 +467,145 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	79108 = {
-		name = "°²¶«Äá ±´ÄÂµÂ×È Ã·Ôú"
+		name = "Antonio Bermúdez Meza"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M79108
 		foreign_minister = ideological_crusader
+		start_date = 1936.1.1
+	}
+	# Generic dummy ministers
+	95373 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95374 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95375 = {
+		name = "Nameless Clerk"
+		ideology = paternal_autocrat
+		loyalty = 1.0
+		picture = MPaternalAutocrat
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95376 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		start_date = 1936.1.1
+	}
+	95377 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		minister_of_security = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95378 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		minister_of_security = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95379 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95380 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		chief_of_army = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95381 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95382 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
 		start_date = 1936.1.1
 	}
 }

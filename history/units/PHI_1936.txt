@@ -1,11 +1,49 @@
-division = {
-	name = "马尼拉卫戍部队"
+theatre = {
+	name = "Philippine High Command"
 	location = 6142
-	is_reserve = yes 
-	regiment = { type = garrison_brigade historical_model = 0 }
-	regiment = { type = garrison_brigade historical_model = 0 }
-	regiment = { type = garrison_brigade historical_model = 0 }
+	regiment = { type = hq_brigade name = "Manila HQ" historical_model = 0 }
+	division = {
+		name = "Manila Garrison"
+		location = 6142
+		is_reserve = yes 
+		regiment = { type = garrison_brigade name = "1st Garrison Regiment" experience = 0 historical_model = 2 }
+		regiment = { type = garrison_brigade name = "2nd Garrison Regiment" experience = 0 historical_model = 2 }
+		regiment = { type = garrison_brigade name = "3rd Garrison Regiment" experience = 0 historical_model = 2 }
+	}
+	division = {
+		name = "Phillippine Force"
+		location = 6142
+		expeditionary_owner = USA
+		regiment = { type = infantry_brigade name = "31st Infantry Regiment" experience = 0 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "45st Infantry Regiment" experience = 0 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "57th Infantry Regiment" experience = 0 historical_model = 2 }
+	}
 }
-
-
-
+convoy_construction=
+{
+	country = PHL
+	id=
+	{
+		id=15900
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = PHL
+	id=
+	{
+		id=15901
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

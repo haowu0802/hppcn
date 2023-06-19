@@ -1,6 +1,8 @@
 color = { 69  119  82 }
 graphical_culture = Generic
 
+
+
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -17,106 +19,132 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
 	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
+	}
 }
 
 unit_names = {
-        infantry_brigade = {
-		"µÚ1²½±øÊ¦" "µÚ2²½±øÊ¦" "µÚ3²½±øÊ¦" "µÚ4²½±øÊ¦" "µÚ5²½±øÊ¦" "µÚ6²½±øÊ¦" "µÚ7²½±øÊ¦" "µÚ8²½±øÊ¦" "µÚ9²½±øÊ¦" "µÚ10²½±øÊ¦" "µÚ12²½±øÊ¦"
-		"µÚ13²½±øÊ¦" "µÚ14²½±øÊ¦" "µÚ15²½±øÊ¦" "µÚ16²½±øÊ¦" "µÚ17²½±øÊ¦" "µÚ18²½±øÊ¦" "µÚ19²½±øÊ¦" "µÚ20²½±øÊ¦" 
+	infantry_brigade = {
+		"al-Mushati al-1i" "al-Mushati al-2i" "al-Mushati al-3i" "al-Mushati al-4i" "al-Mushati al-5i" "al-Mushati al-6i" "al-Mushati al-7i" "al-Mushati al-8i" "al-Mushati al-9i" "al-Mushati al-10i" "al-Mushati al-12r" 
+		"al-Mushati al-13r" "al-Mushati al-14r" "al-Mushati al-15r" "al-Mushati al-16r" "al-Mushati al-17r" "al-Mushati al-18r" "al-Mushati al-19r" "al-Mushati al-20r" 
 	}
 	cavalry_brigade = {
-		"µÚ1Æï±øÊ¦" "µÚ2Æï±øÊ¦" "µÚ3Æï±øÊ¦" "µÚ4Æï±øÊ¦" "µÚ5Æï±øÊ¦" "µÚ6Æï±øÊ¦" "µÚ7Æï±øÊ¦" "µÚ8Æï±øÊ¦" "µÚ9Æï±øÊ¦" "µÚ10Æï±øÊ¦" "µÚ11Æï±øÊ¦" 
-		"µÚ12Æï±øÊ¦" "µÚ13Æï±øÊ¦" "µÚ14Æï±øÊ¦" "µÚ15Æï±øÊ¦" 
+		"Sipahis al-1i 'Medina'" "Sipahis al-2i" "Sipahis al-3i" "Sipahis al-4i" "Sipahis al-5i" "Sipahis al-6i" "Sipahis al-7i" "Sipahis al-8i" "Sipahis al-9i" "Sipahis al-10i" "Sipahis al-11r" 
+		"Sipahis al-12r" "Sipahis al-13r" "Sipahis al-14r" "Sipahis al-15r" 
 	}
 	motorized_brigade = {
-		"µÚ1Ä¦²½Ê¦" "µÚ2Ä¦²½Ê¦" "µÚ3Ä¦²½Ê¦" "µÚ4Ä¦²½Ê¦" "µÚ5Ä¦²½Ê¦" "µÚ6Ä¦²½Ê¦" "µÚ7Ä¦²½Ê¦" "µÚ8Ä¦²½Ê¦" "µÚ9Ä¦²½Ê¦" "µÚ10Ä¦²½Ê¦"  
-		"µÚ12Ä¦²½Ê¦" "µÚ13Ä¦²½Ê¦" "µÚ14Ä¦²½Ê¦" "µÚ15Ä¦²½Ê¦" "µÚ16Ä¦²½Ê¦" "µÚ17Ä¦²½Ê¦" "µÚ18Ä¦²½Ê¦" "µÚ19Ä¦²½Ê¦" "µÚ20Ä¦²½Ê¦"
+		"al-Mushati al-1i" "al-Mushati al-2i" "al-Mushati al-3i" "al-Mushati al-4i" "al-Mushati al-5i" "al-Mushati al-6i" "al-Mushati al-7i" "al-Mushati al-8i" "al-Mushati al-9i" "al-Mushati al-10i" "al-Mushati al-12r" 
+		"al-Mushati al-13r" "al-Mushati al-14r" "al-Mushati al-15r" "al-Mushati al-16r" "al-Mushati al-17r" "al-Mushati al-18r" "al-Mushati al-19r" "al-Mushati al-20r" 
 	}
 	mechanized_brigade = {
-		"µÚ1»ú²½Ê¦" "µÚ2»ú²½Ê¦" "µÚ3»ú²½Ê¦" "µÚ4»ú²½Ê¦" "µÚ5»ú²½Ê¦" "µÚ6»ú²½Ê¦" "µÚ7»ú²½Ê¦" "µÚ8»ú²½Ê¦" "µÚ9»ú²½Ê¦" "µÚ10»ú²½Ê¦" "µÚ12»ú²½Ê¦" 
-		"µÚ13»ú²½Ê¦" "µÚ14»ú²½Ê¦" "µÚ15»ú²½Ê¦" "µÚ16»ú²½Ê¦" "µÚ17»ú²½Ê¦" "µÚ18»ú²½Ê¦" "µÚ19»ú²½Ê¦" "µÚ20»ú²½Ê¦" 
+		"al-Mushati al-1i" "al-Mushati al-2i" "al-Mushati al-3i" "al-Mushati al-4i" "al-Mushati al-5i" "al-Mushati al-6i" "al-Mushati al-7i" "al-Mushati al-8i" "al-Mushati al-9i" "al-Mushati al-10i" "al-Mushati al-12r" 
+		"al-Mushati al-13r" "al-Mushati al-14r" "al-Mushati al-15r" "al-Mushati al-16r" "al-Mushati al-17r" "al-Mushati al-18r" "al-Mushati al-19r" "al-Mushati al-20r" 
 	}
 	light_armor_brigade = {
-		"µÚ1Çá×°¼×Ê¦" "µÚ2Çá×°¼×Ê¦" "µÚ3Çá×°¼×Ê¦" "µÚ4Çá×°¼×Ê¦" "µÚ5Çá×°¼×Ê¦" "µÚ6Çá×°¼×Ê¦" "µÚ7Çá×°¼×Ê¦" "µÚ8Çá×°¼×Ê¦" "µÚ9Çá×°¼×Ê¦" "µÚ10Çá×°¼×Ê¦"
+		"Sipahis al-1i" "Sipahis al-2i" "Sipahis al-3i" "Sipahis al-4i" "Sipahis al-5i" "Sipahis al-6i" "Sipahis al-7i" "Sipahis al-8i" "Sipahis al-9i" "Sipahis al-10i" 
+	}
 	armor_brigade = {
-		"µÚ1×°¼×Ê¦" "µÚ2×°¼×Ê¦" "µÚ3×°¼×Ê¦" "µÚ4×°¼×Ê¦" "µÚ5×°¼×Ê¦" "µÚ6×°¼×Ê¦" "µÚ7×°¼×Ê¦" "µÚ8×°¼×Ê¦" "µÚ9×°¼×Ê¦" "µÚ10×°¼×Ê¦" 
+		"Sipahis al-1i" "Sipahis al-2i" "Sipahis al-3i" "Sipahis al-4i" "Sipahis al-5i" "Sipahis al-6i" "Sipahis al-7i" "Sipahis al-8i" "Sipahis al-9i" "Sipahis al-10i" 
 	}
 	paratrooper_brigade = {
-		"µÚ21¿Õ½µÊ¦" "µÚ22¿Õ½µÊ¦" "µÚ23¿Õ½µÊ¦" "µÚ24¿Õ½µÊ¦" "µÚ25¿Õ½µÊ¦" "µÚ26¿Õ½µÊ¦" "µÚ27¿Õ½µÊ¦" "µÚ28¿Õ½µÊ¦" "µÚ29¿Õ½µÊ¦" "µÚ30¿Õ½µÊ¦" "µÚ31¿Õ½µÊ¦" 
+		"al-Mushati al-20r" "al-Mushati al-21r" "al-Mushati al-22r" "al-Mushati al-23r" "al-Mushati al-24r" "al-Mushati al-25r" "al-Mushati al-26r" "al-Mushati al-27r" "al-Mushati al-28r" "al-Mushati al-29r" "al-Mushati al-30r" 
 			}
 	marine_brigade = {
-		"µÚ20º£¾üÂ½Õ½Ê¦" "µÚ21º£¾üÂ½Õ½Ê¦" "µÚ22º£¾üÂ½Õ½Ê¦" "µÚ23º£¾üÂ½Õ½Ê¦" "µÚ24º£¾üÂ½Õ½Ê¦" "µÚ25º£¾üÂ½Õ½Ê¦" "µÚ26º£¾üÂ½Õ½Ê¦" "µÚ27º£¾üÂ½Õ½Ê¦" "µÚ28º£¾üÂ½Õ½Ê¦" "µÚ29º£¾üÂ½Õ½Ê¦" "µÚ30º£¾üÂ½Õ½Ê¦" 
+		"al-Mushati al-20r" "al-Mushati al-21r" "al-Mushati al-22r" "al-Mushati al-23r" "al-Mushati al-24r" "al-Mushati al-25r" "al-Mushati al-26r" "al-Mushati al-27r" "al-Mushati al-28r" "al-Mushati al-29r" "al-Mushati al-30r" 
 			}
 	bergsjaeger_brigade = {
-		"µÚ20É½µØÊ¦" "µÚ21É½µØÊ¦" "µÚ22É½µØÊ¦" "µÚ23É½µØÊ¦" "µÚ24É½µØÊ¦" "µÚ25É½µØÊ¦" "µÚ26É½µØÊ¦" "µÚ27É½µØÊ¦" "µÚ28É½µØÊ¦" "µÚ29É½µØÊ¦" "µÚ30É½µØÊ¦" 
+		"al-Mushati al-20r" "al-Mushati al-21r" "al-Mushati al-22r" "al-Mushati al-23r" "al-Mushati al-24r" "al-Mushati al-25r" "al-Mushati al-26r" "al-Mushati al-27r" "al-Mushati al-28r" "al-Mushati al-29r" "al-Mushati al-30r" 
 			}
 	garrison_brigade = {
-		"µÚ1ÎÀÊùÊ¦" "µÚ2ÎÀÊùÊ¦" "µÚ3ÎÀÊùÊ¦" "µÚ4ÎÀÊùÊ¦" "µÚ5ÎÀÊùÊ¦" "µÚ6ÎÀÊùÊ¦" "µÚ7ÎÀÊùÊ¦" "µÚ8ÎÀÊùÊ¦" "µÚ9ÎÀÊùÊ¦" "µÚ10ÎÀÊùÊ¦" "µÚ12ÎÀÊùÊ¦" 
-		"µÚ13ÎÀÊùÊ¦" "µÚ14ÎÀÊùÊ¦" "µÚ15ÎÀÊùÊ¦" "µÚ16ÎÀÊùÊ¦" "µÚ17ÎÀÊùÊ¦" "µÚ18ÎÀÊùÊ¦" "µÚ19ÎÀÊùÊ¦" "µÚ20ÎÀÊùÊ¦" 
+		"al-Mushati al-1i" "al-Mushati al-2i" "al-Mushati al-3i" "al-Mushati al-4i" "al-Mushati al-5i" "al-Mushati al-6i" "al-Mushati al-7i" "al-Mushati al-8i" "al-Mushati al-9i" "al-Mushati al-10i" "al-Mushati al-12r" 
+		"al-Mushati al-13r" "al-Mushati al-14r" "al-Mushati al-15r" "al-Mushati al-16r" "al-Mushati al-17r" "al-Mushati al-18r" "al-Mushati al-19r" "al-Mushati al-20r" 
 	}
 	hq_brigade = {
-		"É³ÌØµÚ1¾ü" "É³ÌØµÚ2¾ü" "É³ÌØµÚ3¾ü" "É³ÌØµÚ4¾ü" "É³ÌØµÚ5¾ü" 
+		"1st Saudi Army" "2nd Saudi Army" "3rd Saudi Army" "4th Saudi Army" "5th Saudi Army" 
 	}
 	militia_brigade = {
-		"µÚ1Ãñ±øÊ¦" "µÚ2Ãñ±øÊ¦" "µÚ3Ãñ±øÊ¦" "µÚ4Ãñ±øÊ¦" "µÚ5Ãñ±øÊ¦" "µÚ6Ãñ±øÊ¦" "µÚ7Ãñ±øÊ¦" "µÚ8Ãñ±øÊ¦" "µÚ9Ãñ±øÊ¦" "µÚ10Ãñ±øÊ¦" "µÚ11Ãñ±øÊ¦" 
-		"µÚ12Ãñ±øÊ¦" "µÚ13Ãñ±øÊ¦" "µÚ14Ãñ±øÊ¦" "µÚ15Ãñ±øÊ¦" "µÚ16Ãñ±øÊ¦" "µÚ17Ãñ±øÊ¦" "µÚ18Ãñ±øÊ¦" "µÚ19Ãñ±øÊ¦" "µÚ20Ãñ±øÊ¦" "µÚ21Ãñ±øÊ¦" "µÚ22Ãñ±øÊ¦" 
-		"µÚ23Ãñ±øÊ¦" "µÚ24Ãñ±øÊ¦" "µÚ25Ãñ±ø" 
+		"al-Milishiya al-1i" "al-Milishiya al-2i" "al-Milishiya al-3i" "al-Milishiya al-4i" "al-Milishiya al-5i" "al-Milishiya al-6i" "al-Milishiya al-7i" "al-Milishiya al-8i" "al-Milishiya al-9i" "al-Milishiya al-10i" "al-Milishiya al-11r" 
+		"al-Milishiya al-12r" "al-Milishiya al-13r" "al-Milishiya al-14r" "al-Milishiya al-15r" "al-Milishiya al-16r" "al-Milishiya al-17r" "al-Milishiya al-18r" "al-Milishiya al-19r" "al-Milishiya al-20r" "al-Milishiya al-21r" "al-Milishiya al-22r" 
+		"al-Milishiya al-23r" "al-Milishiya al-24r" "al-Milishiya al-25r" 
 	}
 	multi_role = {
-		"µÚ1Í¨ÓÃÕ½¶·»ú´ó¶Ó " "µÚ2Í¨ÓÃÕ½¶·»ú´ó¶Ó" "µÚ3Í¨ÓÃÕ½¶·»ú´ó¶Ó" "µÚ4Í¨ÓÃÕ½¶·»ú´ó¶Ó" "µÚ5Í¨ÓÃÕ½¶·»ú´ó¶Ó" "µÚ6Í¨ÓÃÕ½¶·»ú´ó¶Ó" "µÚ7Í¨ÓÃÕ½¶·»ú´ó¶Ó" "µÚ8Í¨ÓÃÕ½¶·»ú´ó¶Ó" "µÚ9Í¨ÓÃÕ½¶·»ú´ó¶Ó" 
+		"1. RSAF Fighter Group" "2. RSAF Fighter Group" "3. RSAF Fighter Group" "4. RSAF Fighter Group" "5. RSAF Fighter Group" "6. RSAF Fighter Group" "7. RSAF Fighter Group" "8. RSAF Fighter Group" "9. RSAF Fighter Group" "10. RSAF Fighter Group" 
 	}
 	interceptor = {
-		"µÚ1½Ø»÷»ú´ó¶Ó" "µÚ2½Ø»÷»ú´ó¶Ó" "µÚ3½Ø»÷»ú´ó¶Ó" "µÚ4½Ø»÷»ú´ó¶Ó" "µÚ5½Ø»÷»ú´ó¶Ó" "µÚ6½Ø»÷»ú´ó¶Ó" "µÚ7½Ø»÷»ú´ó¶Ó" "µÚ8½Ø»÷»ú´ó¶Ó" "µÚ9½Ø»÷»ú´ó¶Ó" "µÚ10½Ø»÷»ú´ó¶Ó" "µÚ11½Ø»÷»ú´ó¶Ó" 
-		"µÚ12½Ø»÷»ú´ó¶Ó" "µÚ13½Ø»÷»ú´ó¶Ó" "µÚ14½Ø»÷»ú´ó¶Ó" "µÚ15½Ø»÷»ú´ó¶Ó" "µÚ16½Ø»÷»ú´ó¶Ó" "µÚ17½Ø»÷»ú´ó¶Ó" "µÚ18½Ø»÷»ú´ó¶Ó" "µÚ19½Ø»÷»ú´ó¶Ó" "µÚ20½Ø»÷»ú´ó¶Ó" 
+		"1. RSAF Fighter Group" "2. RSAF Fighter Group" "3. RSAF Fighter Group" "4. RSAF Fighter Group" "5. RSAF Fighter Group" "6. RSAF Fighter Group" "7. RSAF Fighter Group" "8. RSAF Fighter Group" "9. RSAF Fighter Group" "10. RSAF Fighter Group" "1. RSAF Fighter Group" 
+		"2. RSAF Fighter Group" "3. RSAF Fighter Group" "4. RSAF Fighter Group" "5. RSAF Fighter Group" "6. RSAF Fighter Group" "7. RSAF Fighter Group" "8. RSAF Fighter Group" "9. RSAF Fighter Group" "10. RSAF Fighter Group" 
+	}
+	jet_int = {
+		"1. RSAF Fighter Group" "2. RSAF Fighter Group" "3. RSAF Fighter Group" "4. RSAF Fighter Group" "5. RSAF Fighter Group" "6. RSAF Fighter Group" "7. RSAF Fighter Group" "8. RSAF Fighter Group" "9. RSAF Fighter Group" "10. RSAF Fighter Group" "1. RSAF Fighter Group" 
+		"2. RSAF Fighter Group" "3. RSAF Fighter Group" "4. RSAF Fighter Group" "5. RSAF Fighter Group" "6. RSAF Fighter Group" "7. RSAF Fighter Group" "8. RSAF Fighter Group" "9. RSAF Fighter Group" "10. RSAF Fighter Group" 
+	}
+	jet_mr = {
+		"1. RSAF Fighter Group" "2. RSAF Fighter Group" "3. RSAF Fighter Group" "4. RSAF Fighter Group" "5. RSAF Fighter Group" "6. RSAF Fighter Group" "7. RSAF Fighter Group" "8. RSAF Fighter Group" "9. RSAF Fighter Group" "10. RSAF Fighter Group" "1. RSAF Fighter Group" 
+		"2. RSAF Fighter Group" "3. RSAF Fighter Group" "4. RSAF Fighter Group" "5. RSAF Fighter Group" "6. RSAF Fighter Group" "7. RSAF Fighter Group" "8. RSAF Fighter Group" "9. RSAF Fighter Group" "10. RSAF Fighter Group" 
 	}
 	strategic_bomber = {
-		"µÚ11Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ12Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ13Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ14Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ15Õ½ÂÔºäÕ¨»ú´ó¶Ó" "µÚ16Õ½ÂÔºäÕ¨»ú´ó¶Ó" 
+		"11. RSAF Strategic Bomb Group" "12. RSAF Strategic Bomb Group" "13. RSAF Strategic Bomb Group" "14. RSAF Strategic Bomb Group" "15. RSAF Strategic Bomb Group" "16. RSAF Strategic Bomb Group" "17. RSAF Strategic Bomb Group" "18. RSAF Strategic Bomb Group" "19. RSAF Strategic Bomb Group" "20. RSAF Strategic Bomb Group" 
 	}
 	tactical_bomber = {
-		"µÚ21Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ22Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ23Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ24Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ25Õ½ÊõºäÕ¨»ú´ó¶Ó" "µÚ26Õ½ÊõºäÕ¨»ú´ó¶Ó" 
+		"21. RSAF Tactical Bomb Group" "22. RSAF Tactical Bomb Group" "23. RSAF Tactical Bomb Group" "24. RSAF Tactical Bomb Group" "25. RSAF Tactical Bomb Group" "26. RSAF Tactical Bomb Group" "27. RSAF Tactical Bomb Group" "28. RSAF Tactical Bomb Group" "29. RSAF Tactical Bomb Group" "30. RSAF Tactical Bomb Group" 
+	}
+	jet_bomber = {
+		"21. RSAF Tactical Bomb Group" "22. RSAF Tactical Bomb Group" "23. RSAF Tactical Bomb Group" "24. RSAF Tactical Bomb Group" "25. RSAF Tactical Bomb Group" "26. RSAF Tactical Bomb Group" "27. RSAF Tactical Bomb Group" "28. RSAF Tactical Bomb Group" "29. RSAF Tactical Bomb Group" "30. RSAF Tactical Bomb Group" 
 	}
 	naval_bomber = {
-		"µÚ41º£¾üºäÕ¨»ú´ó¶Ó" "µÚ42º£¾üºäÕ¨»ú´ó¶Ó" "µÚ43º£¾üºäÕ¨»ú´ó¶Ó" "µÚ44º£¾üºäÕ¨»ú´ó¶Ó" "µÚ45º£¾üºäÕ¨»ú´ó¶Ó" "µÚ51º£¾üºäÕ¨»ú´ó¶Ó" "µÚ52º£¾üºäÕ¨»ú´ó¶Ó" "µÚ53º£¾üºäÕ¨»ú´ó¶Ó" "µÚ54º£¾üºäÕ¨»ú´ó¶Ó" "µÚ55º£¾üºäÕ¨»ú´ó¶Ó" "µÚ56º£¾üºäÕ¨»ú´ó¶Ó" 
-			}
+		"41. RSAF Marine Bomb Group" "42. RSAF Marine Bomb Group" "43. RSAF Marine Bomb Group" "44. RSAF Marine Bomb Group" "45. RSAF Marine Bomb Group" "46. RSAF Marine Bomb Group" "47. RSAF Marine Bomb Group" "48. RSAF Marine Bomb Group" "49. RSAF Marine Bomb Group" "50. RSAF Marine Bomb Group" 
+	}
 	cas = {
-		"µÚ31¸©³å´ó¶Ó" "µÚ32¸©³å´ó¶Ó" "µÚ33¸©³å´ó¶Ó" "µÚ34¸©³å´ó¶Ó" "µÚ35¸©³å´ó¶Ó" 
+		"31. RSAF Dive Bomb Group" "32. RSAF Dive Bomb Group" "33. RSAF Dive Bomb Group" "34. RSAF Dive Bomb Group" "35. RSAF Dive Bomb Group" "36. RSAF Dive Bomb Group" "37. RSAF Dive Bomb Group" "38. RSAF Dive Bomb Group" "39. RSAF Dive Bomb Group" "40. RSAF Dive Bomb Group" 
 	}
 	transport_plane = {
-		"µÚ61ÔËÊä»ú´ó¶Ó" "µÚ62ÔËÊä»ú´ó¶Ó" "µÚ63ÔËÊä»ú´ó¶Ó" "µÚ64ÔËÊä»ú´ó¶Ó" 
+		"61. RSAF Airtransport" "62. RSAF Airtransport" "63. RSAF Airtransport" "64. RSAF Airtransport" 
 	}
 	battleship = {
-		"'Âí¿¨ºÕ'ºÅÕ½½¢" "'°¢¶û Âí¶¡ÄÇºÕ'ºÅÕ½½¢"
+		"RSNS Makkah" "RSNS al Madinah" 
 	}
 	light_cruiser = {
-		"'¼ª´ï'ºÅÇáÑ²" "'°¢µÂ ´ïÂü'ºÅÇáÑ²" "'°¢¶û ºú·ò'ºÅÇáÑ²" "'°¢ÌØ Ìá·ò'ºÅÇáÑ²" "'ÄÉºôÀ¼'ºÅÇáÑ²"
+		"RSNS Jiddah" "RSNS Ad Damman" "RSNS Al Hufüf" "RSNS At Tä'if" "RSNS Najran" 
 	}
 	heavy_cruiser = {
-		"'¼ª´ï'ºÅÖØÑ²" "'°¢µÂ ´ïÂü'ºÅÖØÑ²" "'°¢¶û ºú·ò'ºÅÖØÑ²" "'°¢ÌØ Ìá·ò'ºÅÖØÑ²" "'ÄÉºôÀ¼'ºÅÖØÑ²" 
+		"RSNS Jiddah" "RSNS Ad Damman" "RSNS Al Hufüf" "RSNS At Tä'if" "RSNS Najran" 
 	}
 	battlecruiser = {
-		"'Âí¿¨'ºÅÕ½Ñ²" "'°¢¶û Âí¶¡'ºÅÕ½Ñ²"  
+		"RSNS Makkah" "RSNS al Madinah" 
 	}
 	destroyer = {
-		"'°¢¶û¡¤±ÈÀ­'ÇýÖð´ó¶Ó" "'Ëþ²¼¿Ë'ÇýÖð´ó¶Ó" "'°¢Å¬¹þ'ÇýÖð´ó¶Ó" "'´ï¶û°£ÌØ¡¤°¢¶û¡¤°¢¿¨´ï¶û'ÇýÖð´ó¶Ó" "'°¢¶û¡¤¿¨Àï°Í¹þ'ÇýÖð´ó¶Ó" "'Æë°Í'ÇýÖð´ó¶Ó" "'°¢¶û¡¤Íß¼Ö'ÇýÖð´ó¶Ó" "'ººÄÉ¿Ë'ÇýÖð´ó¶Ó" "'¿â·ò'ÇýÖð´ó¶Ó" "'ÎÚÄ·¡¤À­¼Ö'ÇýÖð´ó¶Ó"
+		"Flotille Al Bi'ra" "Flotille Tabuk" "Flotille Aynunah" "Flotille Dal'at al Akhdar" "Flotille Al Qalibah" "Flotille Ziba" "Flotille Al Wajh" "Flotille Hanak" "Flotille Khuff" "Flotille Umm Lajj" 
 	}
 	carrier = {
-		"'°¢¶û°¢À­±ÈÑÇ¡¤ËÕµÏ¼Ó'ºÅº½Ä¸" "'°¢Æë×È¡¤±¾¡¤ÈüµÂ'ºÅº½Ä¸" 
+		"RSNS Al 'Arabiyah as Su'udiyah" "RSNS Aziz ibn Saud" 
 	}
 	submarine = {
-		"'°¢²¼¡¤ÂüºÕ±È'Ç±Í§´ó¶Ó" "'¼Ö²¼'Ç±Í§´ó¶Ó" "'°ÍµÂ¶û¡¤ºúÄÈÑÇ'Ç±Í§´ó¶Ó" "'À­±ÈºÕ'Ç±Í§´ó¶Ó" "'°¢¶û¡¤¿¨µÏÂü'Ç±Í§´ó¶Ó" "'À­Ë¹¡¤°¢Ìá°Í¹þ'Ç±Í§´ó¶Ó" "'°¢¶û¡¤ÀïË¹'Ç±Í§´ó¶Ó" "'ÔúÀûÄ·'Ç±Í§´ó¶Ó" "'Í¼À­°Í'Ç±Í§´ó¶Ó" 
+		"Flotille Abu Mahbe" "Flotille Janbu" "Flotille Badr Hunayn" "Flotille Rabiqh" "Flotille Al Qadimah" "Flotille Ra's Atibah" "Flotille Al Lith" "Flotille Az Zam" "Flotille Zalim" "Flotille Turabah" 
 	}
-        transport_ship = {
-		"µÚ1ÔËÊä´ó¶Ó" "µÚ2ÔËÊä´ó¶Ó" "µÚ3ÔËÊä´ó¶Ó" "µÚ4ÔËÊä´ó¶Ó" "µÚ5ÔËÊä´ó¶Ó" "µÚ6ÔËÊä´ó¶Ó" "µÚ7ÔËÊä´ó¶Ó" "µÚ8ÔËÊä´ó¶Ó" "µÚ9ÔËÊä´ó¶Ó" "µÚ10ÔËÊä´ó¶Ó" 
-	}	
+	transport_ship = {
+		"Ustul al-Hamli al-1i" "Ustul al-Hamli al-2i" "Ustul al-Hamli al-3i" "Ustul al-Hamli al-4i" "Ustul al-Hamli al-5i" "Ustul al-Hamli al-6i" "Ustul al-Hamli al-7i" "Ustul al-Hamli al-8i" "Ustul al-Hamli al-9i" "Ustul al-Hamli al-10i" 
+	}
+
 }
 
 ministers = {
 	63001 = {
-		name = "°¢Æë×È¡¤°¢¶û¡¤É³ÌØ"
+		name = "Abdul Aziz al Saud"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M63001
@@ -124,7 +152,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	63002 = {
-		name = "É³ÌØ¡¤°¢¶û¡¤É³ÌØ"
+		name = "Saud al Saud"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M63002
@@ -134,21 +162,20 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	63003 = {
-		name = "·ÑÈø¶û¡¤°¢¶û¡¤É³ÌØ"
+		name = "Faisal al Saud"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M63003
 		foreign_minister = apologetic_clerk
 		armament_minister = resource_industrialist
 		chief_of_army = guns_and_butter_doctrine
-		chief_of_navy = open_seas_doctrine
-		chief_of_air = army_aviation_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		minister_of_intelligence = industrial_specialist
 		chief_of_staff = school_of_manoeuvre
 		start_date = 1936.1.1
 	}
 	63005 = {
-		name = "¿¨Á¢µÂ¡¤°¢¶û¡¤É³ÌØ"
+		name = "Khalid al Saud"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M63005
@@ -157,7 +184,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	63031 = {
-		name = "ÐÝ²®ÌØ¡¤Ë¹¿ÆÌØ¡¤Åå¶÷"
+		name = "Hubert Scott-Paine"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M63031
@@ -167,7 +194,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	63032 = {
-		name = "²é¶ûË¹¡¤ÅÁÄÉ¶û¸óÏÂ"
+		name = "Charles Lord Parmoor"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M63032
@@ -175,7 +202,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	63033 = {
-		name = "¹þÀï¡¤Ê¥Ô¼º²¡¤·Ñ¶û±Ï"
+		name = "Harry St.John Philby"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M63033
@@ -186,7 +213,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	63035 = {
-		name = "G.G. °£Ã×¡¤Ä¬Àï"
+		name = "G.G. Aime-Murray"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M63035
@@ -194,7 +221,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	63037 = {
-		name = "ÑÇÉª¡¤½Ü¡¤É³¶ûÌØ"
+		name = "Arthur J. Salter"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M63037
@@ -202,7 +229,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	63038 = {
-		name = "Âí¶û¿ÆÄ·¡¤µÂ¡¤ÀÕ¡¤Î¬¸ù"
+		name = "Malcolm de le Vingne"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M63038
@@ -210,7 +237,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	63039 = {
-		name = "½Ü¸¥Àï¡¤ÇÇÖÎ¡¤Åµ¿ËË¹"
+		name = "Geoffrey George Knox"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M63039
@@ -218,7 +245,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	63040 = {
-		name = "ÈöÀû¹þ¡¤°¢¶û¡¤À­¼ªºÕ"
+		name = "Salih al Rajihi"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M63040
@@ -226,7 +253,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	63043 = {
-		name = "Õ²Ä·Ë¹¡¤ÅÁÎÖ¡¤¿¨ÄÅ"
+		name = "James Power Carne"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M63043
@@ -234,7 +261,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	63044 = {
-		name = "°¢¶ûÎÄ¡¤ÅÁ¿Ë"
+		name = "Alwyn Parker"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M63044
@@ -242,7 +269,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	63045 = {
-		name = "ËÕÀ³Âü¡¤°¢¶û¡¤°Â¶ûÑï"
+		name = "Suleiman al Olyan"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M63045
@@ -250,7 +277,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	63046 = {
-		name = "°£Àï¿Ë¡¤¸»ÀÕ¶Ù¾ôÊ¿"
+		name = "Sir Eric Fullerton"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M63046
@@ -261,7 +288,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	63051 = {
-		name = "ÍþÁ®¡¤¿²±´¶û¡¤ÀµË¹"
+		name = "William Campbell-Rice"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M63051
@@ -270,7 +297,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	63052 = {
-		name = "ÌØ. Ð¤Âð"
+		name = "T.E. Shaw"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M63052
@@ -280,7 +307,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	63053 = {
-		name = "ÌØÀ×Ë¹¡¤Ê·ÃÜË¹¡¤¿âçê"
+		name = "T.R.S. Smythe-Cooper"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M63053
@@ -289,15 +316,15 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	63060 = {
-		name = "·ÆÀûÆÕ¡¤¸êµÇ¡¤Àî"
+		name = "Philip Gordon-Lee"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M63060
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1941.1.1
 	}
 	63064 = {
-		name = "ÑÇÉª¡¤µÀ½ðË¹"
+		name = "Arthur Dawkins"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M63064
@@ -305,11 +332,167 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	63065 = {
-		name = "°ÍÈøÄ·¡¤°¢²¼¡¤¿¨´ï¶û"
+		name = "Bassam Abu Khadar"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M63065
 		chief_of_air = vertical_envelopment_doctrine
 		start_date = 1945.1.1
 	}
+	
+	# Generic dummy ministers
+	95826 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95827 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95828 = {
+		name = "Nameless Clerk"
+		ideology = paternal_autocrat
+		loyalty = 1.0
+		picture = MPaternalAutocrat
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95829 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		start_date = 1936.1.1
+	}
+	95830 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95831 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95832 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95833 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95834 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95835 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}	
 }

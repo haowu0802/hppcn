@@ -1,6 +1,8 @@
 color = { 255  244  190 }
 graphical_culture = Japanese
 
+
+
 default_templates = {
 	binary_infantry = {
 		infantry_brigade
@@ -18,220 +20,240 @@ default_templates = {
 		cavalry_brigade
 		cavalry_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+	}	
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
+	}	
 }
 
 unit_names = {
 	infantry_brigade = {
-		"步兵第1师" "步兵第2师" "步兵第3师" "步兵第4师" "步兵第5师" "步兵第6师" "步兵第7师" "步兵第8师" "步兵第9师" "步兵第10师" "步兵第11师" 
-		"步兵第12师" "步兵第13师" "步兵第14师" "步兵第15师" "步兵第16师" "步兵第17师" "步兵第18师" "步兵第19师" "步兵第20师" "步兵第21师" "步兵第22师" 
-		"步兵第23师" "步兵第24师" "步兵第25师" "步兵第26师" "步兵第27师" "步兵第28师" "步兵第29师" "步兵第30师" "步兵第31师" "步兵第32师" "步兵第33师" 
-		"步兵第34师" "步兵第35师" "步兵第36师" "步兵第37师" "步兵第38师" "步兵第39师" "步兵第40师" "步兵第41师" "步兵第42师" "步兵第43师" "步兵第44师" 
-		"步兵第45师" "步兵第46师" "步兵第47师" "步兵第48师" "步兵第49师" "步兵第50师" "步兵第51师" "步兵第52师" "步兵第53师" "步兵第54师" "步兵第55师" 
-		"步兵第56师" "步兵第57师" "步兵第58师" "步兵第59师" "步兵第60师" "步兵第61师" "步兵第62师" "步兵第63师" "步兵第64师" "步兵第65师" "步兵第66师" 
-		"步兵第67师" "步兵第68师" "步兵第69师" "步兵第70师" "步兵第71师" "步兵第72师" "步兵第73师" "步兵第74师" "步兵第75师" "步兵第76师" "步兵第77师" 
-		"步兵第78师" "步兵第79师" "步兵第80师" "步兵第81师" "步兵第82师" "步兵第83师" "步兵第84师" "步兵第85师" "步兵第86师" "步兵第87师" "步兵第88师" 
-		"步兵第89师" "步兵第90师" "步兵第91师" "步兵第92师" "步兵第93师" "步兵第94师" "步兵第95师" "步兵第96师" "步兵第97师" "步兵第98师" "步兵第99师" 
-		"步兵第100师" "步兵第101师" "步兵第102师" "步兵第103师" "步兵第104师" "步兵第105师" "步兵第106师" "步兵第107师" "步兵第108师" "步兵第109师" "步兵第110师" 
-		"步兵第111师" "步兵第112师" "步兵第113师" "步兵第114师" "步兵第115师" "步兵第116师" "步兵第117师" "步兵第118师" "步兵第119师" "步兵第120师" "步兵第121师" 
-		"步兵第122师" "步兵第123师" "步兵第124师" "步兵第125师" "步兵第126师" "步兵第127师" "步兵第128师" "步兵第129师" "步兵第130师" "步兵第131师" "步兵第132师" 
-		"步兵第133师" "步兵第134师" "步兵第135师" "步兵第136师" "步兵第137师" "步兵第138师" "步兵第139师" "步兵第140师" "步兵第141师" "步兵第142师" "步兵第143师" 
-		"步兵第144师" "步兵第145师" "步兵第146师" "步兵第147师" "步兵第148师" "步兵第149师" "步兵第150师" "步兵第151师" "步兵第152师" "步兵第153师" "步兵第154师" 
-		"步兵第155师" "步兵第156师" "步兵第157师" "步兵第158师" "步兵第159师" "步兵第160师" "步兵第161师" "步兵第162师" "步兵第163师" "步兵第164师" "步兵第165师" 
-		"步兵第166师" "步兵第167师" "步兵第168师" "步兵第169师" "步兵第170师" "步兵第171师" "步兵第172师" "步兵第173师" "步兵第174师" "步兵第175师" "步兵第176师" 
-		"步兵第177师" "步兵第178师" "步兵第179师" "步兵第180师" "步兵第181师" "步兵第182师" "步兵第183师" "步兵第184师" "步兵第185师" "步兵第186师" "步兵第187师" 
-		"步兵第188师" "步兵第189师" "步兵第190师" "步兵第191师" "步兵第192师" "步兵第193师" "步兵第194师" "步兵第195师" "步兵第196师" "步兵第197师" "步兵第198师" 
-		"步兵第199师" "步兵第200师" "步兵第201师" "步兵第202师" "步兵第203师" "步兵第204师" "步兵第205师" "步兵第206师" "步兵第207师" "步兵第208师" "步兵第209师" 
-		"步兵第210师" "步兵第211师" "步兵第212师" "步兵第213师" "步兵第214师" "步兵第215师" "步兵第216师" "步兵第217师" "步兵第218师" "步兵第219师" "步兵第220师" 
-		"步兵第221师" "步兵第222师" "步兵第223师" "步兵第224师" "步兵第225师" "步兵第226师" "步兵第227师" "步兵第228师" "步兵第229师" "步兵第230师" "步兵第231师" 
-		"步兵第232师" "步兵第233师" "步兵第234师" "步兵第235师" "步兵第236师" "步兵第237师" "步兵第238师" "步兵第239师" "步兵第240师" "步兵第241师" "步兵第242师" 
-		"步兵第243师" "步兵第244师" "步兵第245师" "步兵第246师" "步兵第247师" "步兵第248师" "步兵第249师" "步兵第250师" "步兵第251师" "步兵第252师" "步兵第253师" 
-		"步兵第254师" "步兵第255师" "步兵第256师" "步兵第257师" "步兵第258师" "步兵第259师" "步兵第260师" "步兵第261师" "步兵第262师" "步兵第263师" "步兵第264师" 
-		"步兵第265师" "步兵第266师" "步兵第267师" "步兵第268师" "步兵第269师" "步兵第270师" "步兵第271师" "步兵第272师" "步兵第273师" "步兵第274师" "步兵第275师" 
-		"步兵第276师" "步兵第277师" "步兵第278师" "步兵第279师" "步兵第280师" "步兵第281师" "步兵第282师" "步兵第283师" "步兵第284师" "步兵第285师" "步兵第286师" 
-		"步兵第287师" "步兵第288师" "步兵第289师" "步兵第290师" "步兵第291师" "步兵第292师" "步兵第293师" "步兵第294师" "步兵第295师" "步兵第296师" "步兵第297师" 
-		"步兵第298师" "步兵第299师" 
+		"Bubing Di 1 Shi" "Bubing Di 2 Shi" "Bubing Di 3 Shi" "Bubing Di 4 Shi" "Bubing Di 5 Shi" "Bubing Di 6 Shi" "Bubing Di 7 Shi" "Bubing Di 8 Shi" "Bubing Di 9 Shi" "Bubing Di 10 Shi" "Bubing Di 11 Shi" 
+		"Bubing Di 12 Shi" "Bubing Di 13 Shi" "Bubing Di 14 Shi" "Bubing Di 15 Shi" "Bubing Di 16 Shi" "Bubing Di 17 Shi" "Bubing Di 18 Shi" "Bubing Di 19 Shi" "Bubing Di 20 Shi" "Bubing Di 21 Shi" "Bubing Di 22 Shi" 
+		"Bubing Di 23 Shi" "Bubing Di 24 Shi" "Bubing Di 25 Shi" "Bubing Di 26 Shi" "Bubing Di 27 Shi" "Bubing Di 28 Shi" "Bubing Di 29 Shi" "Bubing Di 30 Shi" "Bubing Di 31 Shi" "Bubing Di 32 Shi" "Bubing Di 33 Shi" 
+		"Bubing Di 34 Shi" "Bubing Di 35 Shi" "Bubing Di 36 Shi" "Bubing Di 37 Shi" "Bubing Di 38 Shi" "Bubing Di 39 Shi" "Bubing Di 40 Shi" "Bubing Di 41 Shi" "Bubing Di 42 Shi" "Bubing Di 43 Shi" "Bubing Di 44 Shi" 
+		"Bubing Di 45 Shi" "Bubing Di 46 Shi" "Bubing Di 47 Shi" "Bubing Di 48 Shi" "Bubing Di 49 Shi" "Bubing Di 50 Shi" "Bubing Di 51 Shi" "Bubing Di 52 Shi" "Bubing Di 53 Shi" "Bubing Di 54 Shi" "Bubing Di 55 Shi" 
+		"Bubing Di 56 Shi" "Bubing Di 57 Shi" "Bubing Di 58 Shi" "Bubing Di 59 Shi" "Bubing Di 60 Shi" "Bubing Di 61 Shi" "Bubing Di 62 Shi" "Bubing Di 63 Shi" "Bubing Di 64 Shi" "Bubing Di 65 Shi" "Bubing Di 66 Shi" 
+		"Bubing Di 67 Shi" "Bubing Di 68 Shi" "Bubing Di 69 Shi" "Bubing Di 70 Shi" "Bubing Di 71 Shi" "Bubing Di 72 Shi" "Bubing Di 73 Shi" "Bubing Di 74 Shi" "Bubing Di 75 Shi" "Bubing Di 76 Shi" "Bubing Di 77 Shi" 
+		"Bubing Di 78 Shi" "Bubing Di 79 Shi" "Bubing Di 80 Shi" "Bubing Di 81 Shi" "Bubing Di 82 Shi" "Bubing Di 83 Shi" "Bubing Di 84 Shi" "Bubing Di 85 Shi" "Bubing Di 86 Shi" "Bubing Di 87 Shi" "Bubing Di 88 Shi" 
+		"Bubing Di 89 Shi" "Bubing Di 90 Shi" "Bubing Di 91 Shi" "Bubing Di 92 Shi" "Bubing Di 93 Shi" "Bubing Di 94 Shi" "Bubing Di 95 Shi" "Bubing Di 96 Shi" "Bubing Di 97 Shi" "Bubing Di 98 Shi" "Bubing Di 99 Shi" 
+		"Bubing Di 100 Shi" "Bubing Di 101 Shi" "Bubing Di 102 Shi" "Bubing Di 103 Shi" "Bubing Di 104 Shi" "Bubing Di 105 Shi" "Bubing Di 106 Shi" "Bubing Di 107 Shi" "Bubing Di 108 Shi" "Bubing Di 109 Shi" "Bubing Di 110 Shi" 
+		"Bubing Di 111 Shi" "Bubing Di 112 Shi" "Bubing Di 113 Shi" "Bubing Di 114 Shi" "Bubing Di 115 Shi" "Bubing Di 116 Shi" "Bubing Di 117 Shi" "Bubing Di 118 Shi" "Bubing Di 119 Shi" "Bubing Di 120 Shi" "Bubing Di 121 Shi" 
+		"Bubing Di 122 Shi" "Bubing Di 123 Shi" "Bubing Di 124 Shi" "Bubing Di 125 Shi" "Bubing Di 126 Shi" "Bubing Di 127 Shi" "Bubing Di 128 Shi" "Bubing Di 129 Shi" "Bubing Di 130 Shi" "Bubing Di 131 Shi" "Bubing Di 132 Shi" 
+		"Bubing Di 133 Shi" "Bubing Di 134 Shi" "Bubing Di 135 Shi" "Bubing Di 136 Shi" "Bubing Di 137 Shi" "Bubing Di 138 Shi" "Bubing Di 139 Shi" "Bubing Di 140 Shi" "Bubing Di 141 Shi" "Bubing Di 142 Shi" "Bubing Di 143 Shi" 
+		"Bubing Di 144 Shi" "Bubing Di 145 Shi" "Bubing Di 146 Shi" "Bubing Di 147 Shi" "Bubing Di 148 Shi" "Bubing Di 149 Shi" "Bubing Di 150 Shi" "Bubing Di 151 Shi" "Bubing Di 152 Shi" "Bubing Di 153 Shi" "Bubing Di 154 Shi" 
+		"Bubing Di 155 Shi" "Bubing Di 156 Shi" "Bubing Di 157 Shi" "Bubing Di 158 Shi" "Bubing Di 159 Shi" "Bubing Di 160 Shi" "Bubing Di 161 Shi" "Bubing Di 162 Shi" "Bubing Di 163 Shi" "Bubing Di 164 Shi" "Bubing Di 165 Shi" 
+		"Bubing Di 166 Shi" "Bubing Di 167 Shi" "Bubing Di 168 Shi" "Bubing Di 169 Shi" "Bubing Di 170 Shi" "Bubing Di 171 Shi" "Bubing Di 172 Shi" "Bubing Di 173 Shi" "Bubing Di 174 Shi" "Bubing Di 175 Shi" "Bubing Di 176 Shi" 
+		"Bubing Di 177 Shi" "Bubing Di 178 Shi" "Bubing Di 179 Shi" "Bubing Di 180 Shi" "Bubing Di 181 Shi" "Bubing Di 182 Shi" "Bubing Di 183 Shi" "Bubing Di 184 Shi" "Bubing Di 185 Shi" "Bubing Di 186 Shi" "Bubing Di 187 Shi" 
+		"Bubing Di 188 Shi" "Bubing Di 189 Shi" "Bubing Di 190 Shi" "Bubing Di 191 Shi" "Bubing Di 192 Shi" "Bubing Di 193 Shi" "Bubing Di 194 Shi" "Bubing Di 195 Shi" "Bubing Di 196 Shi" "Bubing Di 197 Shi" "Bubing Di 198 Shi" 
+		"Bubing Di 199 Shi" "Bubing Di 200 Shi" "Bubing Di 201 Shi" "Bubing Di 202 Shi" "Bubing Di 203 Shi" "Bubing Di 204 Shi" "Bubing Di 205 Shi" "Bubing Di 206 Shi" "Bubing Di 207 Shi" "Bubing Di 208 Shi" "Bubing Di 209 Shi" 
+		"Bubing Di 210 Shi" "Bubing Di 211 Shi" "Bubing Di 212 Shi" "Bubing Di 213 Shi" "Bubing Di 214 Shi" "Bubing Di 215 Shi" "Bubing Di 216 Shi" "Bubing Di 217 Shi" "Bubing Di 218 Shi" "Bubing Di 219 Shi" "Bubing Di 220 Shi" 
+		"Bubing Di 221 Shi" "Bubing Di 222 Shi" "Bubing Di 223 Shi" "Bubing Di 224 Shi" "Bubing Di 225 Shi" "Bubing Di 226 Shi" "Bubing Di 227 Shi" "Bubing Di 228 Shi" "Bubing Di 229 Shi" "Bubing Di 230 Shi" "Bubing Di 231 Shi" 
+		"Bubing Di 232 Shi" "Bubing Di 233 Shi" "Bubing Di 234 Shi" "Bubing Di 235 Shi" "Bubing Di 236 Shi" "Bubing Di 237 Shi" "Bubing Di 238 Shi" "Bubing Di 239 Shi" "Bubing Di 240 Shi" "Bubing Di 241 Shi" "Bubing Di 242 Shi" 
+		"Bubing Di 243 Shi" "Bubing Di 244 Shi" "Bubing Di 245 Shi" "Bubing Di 246 Shi" "Bubing Di 247 Shi" "Bubing Di 248 Shi" "Bubing Di 249 Shi" "Bubing Di 250 Shi" "Bubing Di 251 Shi" "Bubing Di 252 Shi" "Bubing Di 253 Shi" 
+		"Bubing Di 254 Shi" "Bubing Di 255 Shi" "Bubing Di 256 Shi" "Bubing Di 257 Shi" "Bubing Di 258 Shi" "Bubing Di 259 Shi" "Bubing Di 260 Shi" "Bubing Di 261 Shi" "Bubing Di 262 Shi" "Bubing Di 263 Shi" "Bubing Di 264 Shi" 
+		"Bubing Di 265 Shi" "Bubing Di 266 Shi" "Bubing Di 267 Shi" "Bubing Di 268 Shi" "Bubing Di 269 Shi" "Bubing Di 270 Shi" "Bubing Di 271 Shi" "Bubing Di 272 Shi" "Bubing Di 273 Shi" "Bubing Di 274 Shi" "Bubing Di 275 Shi" 
+		"Bubing Di 276 Shi" "Bubing Di 277 Shi" "Bubing Di 278 Shi" "Bubing Di 279 Shi" "Bubing Di 280 Shi" "Bubing Di 281 Shi" "Bubing Di 282 Shi" "Bubing Di 283 Shi" "Bubing Di 284 Shi" "Bubing Di 285 Shi" "Bubing Di 286 Shi" 
+		"Bubing Di 287 Shi" "Bubing Di 288 Shi" "Bubing Di 289 Shi" "Bubing Di 290 Shi" "Bubing Di 291 Shi" "Bubing Di 292 Shi" "Bubing Di 293 Shi" "Bubing Di 294 Shi" "Bubing Di 295 Shi" "Bubing Di 296 Shi" "Bubing Di 297 Shi" 
+		"Bubing Di 298 Shi" "Bubing Di 299 Shi" 
 	}
 	cavalry_brigade = {
-		"骑兵第1师" "骑兵第2师" "骑兵第3师" "骑兵第4师" "骑兵第5师" "骑兵第6师" "骑兵第7师" "骑兵第8师" "骑兵第9师" "骑兵第10师" "骑兵第11师" 
-		"骑兵第12师" "骑兵第13师" "骑兵第14师" "骑兵第15师" "骑兵第16师" "骑兵第17师" "骑兵第18师" "骑兵第19师" "骑兵第20师" "骑兵第21师" "骑兵第22师" 
-		"骑兵第23师" "骑兵第24师" "骑兵第25师" "骑兵第26师" "骑兵第27师" "骑兵第28师" "骑兵第29师" "骑兵第30师" 
+		"Qibing Di 1 Shi" "Qibing Di 2 Shi" "Qibing Di 3 Shi" "Qibing Di 4 Shi" "Qibing Di 5 Shi" "Qibing Di 6 Shi" "Qibing Di 7 Shi" "Qibing Di 8 Shi" "Qibing Di 9 Shi" "Qibing Di 10 Shi" "Qibing Di 11 Shi" 
+		"Qibing Di 12 Shi" "Qibing Di 13 Shi" "Qibing Di 14 Shi" "Qibing Di 15 Shi" "Qibing Di 16 Shi" "Qibing Di 17 Shi" "Qibing Di 18 Shi" "Qibing Di 19 Shi" "Qibing Di 20 Shi" "Qibing Di 21 Shi" "Qibing Di 22 Shi" 
+		"Qibing Di 23 Shi" "Qibing Di 24 Shi" "Qibing Di 25 Shi" "Qibing Di 26 Shi" "Qibing Di 27 Shi" "Qibing Di 28 Shi" "Qibing Di 29 Shi" "Qibing Di 30 Shi" 
 	}
 	motorized_brigade = {
-		"机动化步兵第1师" "机动化步兵第2师" "机动化步兵第3师" "机动化步兵第4师" "机动化步兵第5师" "机动化步兵第6师" "机动化步兵第7师" "机动化步兵第8师" "机动化步兵第9师" "机动化步兵第10师" "机动化步兵第11师" 
-		"机动化步兵第12师" "机动化步兵第13师" "机动化步兵第14师" "机动化步兵第15师" "机动化步兵第16师" "机动化步兵第17师" "机动化步兵第18师" "机动化步兵第19师" "机动化步兵第20师" "机动化步兵第21师" "机动化步兵第22师" 
-		"机动化步兵第23师" "机动化步兵第24师" "机动化步兵第25师" "机动化步兵第26师" "机动化步兵第27师" "机动化步兵第28师" "机动化步兵第29师" "机动化步兵第30师" "机动化步兵第31师" "机动化步兵第32师" "机动化步兵第33师" 
-		"机动化步兵第34师" "机动化步兵第35师" "机动化步兵第36师" "机动化步兵第37师" "机动化步兵第38师" "机动化步兵第39师" "机动化步兵第40师" 
+		"Jidonghua Bubing Di 1 Shi" "Jidonghua Bubing Di 2 Shi" "Jidonghua Bubing Di 3 Shi" "Jidonghua Bubing Di 4 Shi" "Jidonghua Bubing Di 5 Shi" "Jidonghua Bubing Di 6 Shi" "Jidonghua Bubing Di 7 Shi" "Jidonghua Bubing Di 8 Shi" "Jidonghua Bubing Di 9 Shi" "Jidonghua Bubing Di 10 Shi" "Jidonghua Bubing Di 11 Shi" 
+		"Jidonghua Bubing Di 12 Shi" "Jidonghua Bubing Di 13 Shi" "Jidonghua Bubing Di 14 Shi" "Jidonghua Bubing Di 15 Shi" "Jidonghua Bubing Di 16 Shi" "Jidonghua Bubing Di 17 Shi" "Jidonghua Bubing Di 18 Shi" "Jidonghua Bubing Di 19 Shi" "Jidonghua Bubing Di 20 Shi" "Jidonghua Bubing Di 21 Shi" "Jidonghua Bubing Di 22 Shi" 
+		"Jidonghua Bubing Di 23 Shi" "Jidonghua Bubing Di 24 Shi" "Jidonghua Bubing Di 25 Shi" "Jidonghua Bubing Di 26 Shi" "Jidonghua Bubing Di 27 Shi" "Jidonghua Bubing Di 28 Shi" "Jidonghua Bubing Di 29 Shi" "Jidonghua Bubing Di 30 Shi" "Jidonghua Bubing Di 31 Shi" "Jidonghua Bubing Di 32 Shi" "Jidonghua Bubing Di 33 Shi" 
+		"Jidonghua Bubing Di 34 Shi" "Jidonghua Bubing Di 35 Shi" "Jidonghua Bubing Di 36 Shi" "Jidonghua Bubing Di 37 Shi" "Jidonghua Bubing Di 38 Shi" "Jidonghua Bubing Di 39 Shi" "Jidonghua Bubing Di 40 Shi" 
 	}
 	mechanized_brigade = {
-		"机械化步兵第1师" "机械化步兵第2师" "机械化步兵第3师" "机械化步兵第4师" "机械化步兵第5师" "机械化步兵第6师" "机械化步兵第7师" "机械化步兵第8师" "机械化步兵第9师" "机械化步兵第10师" "机械化步兵第11师" 
-		"机械化步兵第12师" "机械化步兵第13师" "机械化步兵第14师" "机械化步兵第15师" "机械化步兵第16师" "机械化步兵第17师" "机械化步兵第18师" "机械化步兵第19师" "机械化步兵第20师" "机械化步兵第21师" "机械化步兵第22师" 
-		"机械化步兵第23师" "机械化步兵第24师" "机械化步兵第25师" "机械化步兵第26师" "机械化步兵第27师" "机械化步兵第28师" "机械化步兵第29师" "机械化步兵第30师" "机械化步兵第31师" "机械化步兵第32师" "机械化步兵第33师" 
-		"机械化步兵第34师" "机械化步兵第35师" "机械化步兵第36师" "机械化步兵第37师" "机械化步兵第38师" "机械化步兵第39师" "机械化步兵第40师" "机械化步兵第41师" "机械化步兵第42师" "机械化步兵第43师" "机械化步兵第44师" 
-		"机械化步兵第45师" "机械化步兵第46师" "机械化步兵第47师" "机械化步兵第48师" "机械化步兵第49师" "机械化步兵第50师" "机械化步兵第51师" "机械化步兵第52师" "机械化步兵第53师" "机械化步兵第54师" "机械化步兵第55师" 
-		"机械化步兵第56师" "机械化步兵第57师" "机械化步兵第58师" "机械化步兵第59师" "机械化步兵第60师" "机械化步兵第61师" "机械化步兵第62师" "机械化步兵第63师" "机械化步兵第64师" "机械化步兵第65师" "机械化步兵第66师" 
-		"机械化步兵第67师" "机械化步兵第68师" "机械化步兵第69师" "机械化步兵第70师" "机械化步兵第71师" "机械化步兵第72师" "机械化步兵第73师" "机械化步兵第74师" "机械化步兵第75师" "机械化步兵第76师" "机械化步兵第77师" 
-		"机械化步兵第78师" "机械化步兵第79师" "机械化步兵第80师" "机械化步兵第81师" "机械化步兵第82师" "机械化步兵第83师" "机械化步兵第84师" "机械化步兵第85师" "机械化步兵第86师" "机械化步兵第87师" "机械化步兵第88师" 
-		"机械化步兵第89师" "机械化步兵第90师" "机械化步兵第91师" "机械化步兵第92师" "机械化步兵第93师" "机械化步兵第94师" "机械化步兵第95师" "机械化步兵第96师" "机械化步兵第97师" "机械化步兵第98师" "机械化步兵第99师" 
-		"机械化步兵第100师" 
+		"Jixiehua Bubing Di 1 Shi" "Jixiehua Bubing Di 2 Shi" "Jixiehua Bubing Di 3 Shi" "Jixiehua Bubing Di 4 Shi" "Jixiehua Bubing Di 5 Shi" "Jixiehua Bubing Di 6 Shi" "Jixiehua Bubing Di 7 Shi" "Jixiehua Bubing Di 8 Shi" "Jixiehua Bubing Di 9 Shi" "Jixiehua Bubing Di 10 Shi" "Jixiehua Bubing Di 11 Shi" 
+		"Jixiehua Bubing Di 12 Shi" "Jixiehua Bubing Di 13 Shi" "Jixiehua Bubing Di 14 Shi" "Jixiehua Bubing Di 15 Shi" "Jixiehua Bubing Di 16 Shi" "Jixiehua Bubing Di 17 Shi" "Jixiehua Bubing Di 18 Shi" "Jixiehua Bubing Di 19 Shi" "Jixiehua Bubing Di 20 Shi" "Jixiehua Bubing Di 21 Shi" "Jixiehua Bubing Di 22 Shi" 
+		"Jixiehua Bubing Di 23 Shi" "Jixiehua Bubing Di 24 Shi" "Jixiehua Bubing Di 25 Shi" "Jixiehua Bubing Di 26 Shi" "Jixiehua Bubing Di 27 Shi" "Jixiehua Bubing Di 28 Shi" "Jixiehua Bubing Di 29 Shi" "Jixiehua Bubing Di 30 Shi" "Jixiehua Bubing Di 31 Shi" "Jixiehua Bubing Di 32 Shi" "Jixiehua Bubing Di 33 Shi" 
+		"Jixiehua Bubing Di 34 Shi" "Jixiehua Bubing Di 35 Shi" "Jixiehua Bubing Di 36 Shi" "Jixiehua Bubing Di 37 Shi" "Jixiehua Bubing Di 38 Shi" "Jixiehua Bubing Di 39 Shi" "Jixiehua Bubing Di 40 Shi" "Jixiehua Bubing Di 41 Shi" "Jixiehua Bubing Di 42 Shi" "Jixiehua Bubing Di 43 Shi" "Jixiehua Bubing Di 44 Shi" 
+		"Jixiehua Bubing Di 45 Shi" "Jixiehua Bubing Di 46 Shi" "Jixiehua Bubing Di 47 Shi" "Jixiehua Bubing Di 48 Shi" "Jixiehua Bubing Di 49 Shi" "Jixiehua Bubing Di 50 Shi" "Jixiehua Bubing Di 51 Shi" "Jixiehua Bubing Di 52 Shi" "Jixiehua Bubing Di 53 Shi" "Jixiehua Bubing Di 54 Shi" "Jixiehua Bubing Di 55 Shi" 
+		"Jixiehua Bubing Di 56 Shi" "Jixiehua Bubing Di 57 Shi" "Jixiehua Bubing Di 58 Shi" "Jixiehua Bubing Di 59 Shi" "Jixiehua Bubing Di 60 Shi" "Jixiehua Bubing Di 61 Shi" "Jixiehua Bubing Di 62 Shi" "Jixiehua Bubing Di 63 Shi" "Jixiehua Bubing Di 64 Shi" "Jixiehua Bubing Di 65 Shi" "Jixiehua Bubing Di 66 Shi" 
+		"Jixiehua Bubing Di 67 Shi" "Jixiehua Bubing Di 68 Shi" "Jixiehua Bubing Di 69 Shi" "Jixiehua Bubing Di 70 Shi" "Jixiehua Bubing Di 71 Shi" "Jixiehua Bubing Di 72 Shi" "Jixiehua Bubing Di 73 Shi" "Jixiehua Bubing Di 74 Shi" "Jixiehua Bubing Di 75 Shi" "Jixiehua Bubing Di 76 Shi" "Jixiehua Bubing Di 77 Shi" 
+		"Jixiehua Bubing Di 78 Shi" "Jixiehua Bubing Di 79 Shi" "Jixiehua Bubing Di 80 Shi" "Jixiehua Bubing Di 81 Shi" "Jixiehua Bubing Di 82 Shi" "Jixiehua Bubing Di 83 Shi" "Jixiehua Bubing Di 84 Shi" "Jixiehua Bubing Di 85 Shi" "Jixiehua Bubing Di 86 Shi" "Jixiehua Bubing Di 87 Shi" "Jixiehua Bubing Di 88 Shi" 
+		"Jixiehua Bubing Di 89 Shi" "Jixiehua Bubing Di 90 Shi" "Jixiehua Bubing Di 91 Shi" "Jixiehua Bubing Di 92 Shi" "Jixiehua Bubing Di 93 Shi" "Jixiehua Bubing Di 94 Shi" "Jixiehua Bubing Di 95 Shi" "Jixiehua Bubing Di 96 Shi" "Jixiehua Bubing Di 97 Shi" "Jixiehua Bubing Di 98 Shi" "Jixiehua Bubing Di 99 Shi" 
+		"Jixiehua Bubing Di 100 Shi" 
 	}
 	light_armor_brigade = {
-		"轻型装甲第1师" "轻型装甲第2师" "轻型装甲第3师" "轻型装甲第4师" "轻型装甲第5师" "轻型装甲第6师" "轻型装甲第7师" "轻型装甲第8师" "轻型装甲第9师" "轻型装甲第10师" 
+		"Qingjia Di 1 Shi" "Qingjia Di 2 Shi" "Qingjia Di 3 Shi" "Qingjia Di 4 Shi" "Qingjia Di 5 Shi" "Qingjia Di 6 Shi" "Qingjia Di 7 Shi" "Qingjia Di 8 Shi" "Qingjia Di 9 Shi" "Qingjia Di 10 Shi" 
 	}
 	armor_brigade = {
-		"装甲兵第1师" "装甲兵第2师" "装甲兵第3师" "装甲兵第4师" "装甲兵第5师" "装甲兵第6师" "装甲兵第7师" "装甲兵第8师" "装甲兵第9师" "装甲兵第10师" "装甲兵第11师" 
-		"装甲兵第12师" "装甲兵第13师" "装甲兵第14师" "装甲兵第15师" "装甲兵第16师" "装甲兵第17师" "装甲兵第18师" "装甲兵第19师" "装甲兵第20师" "装甲兵第21师" "装甲兵第22师" 
-		"装甲兵第23师" "装甲兵第24师" "装甲兵第25师" "装甲兵第26师" "装甲兵第27师" "装甲兵第28师" "装甲兵第29师" "装甲兵第30师" "装甲第1师" "装甲第2师" "装甲第3师" 
-		"装甲第4师" "装甲第5师" "装甲第6师" "装甲第7师" "装甲第8师" "装甲第9师" "装甲第10师" "装甲第11师" "装甲第12师" "装甲第13师" "装甲第14师" 
-		"装甲第15师" "装甲第16师" "装甲第17师" "装甲第18师" "装甲第19师" "装甲第20师" "装甲第21师" "装甲第22师" "装甲第23师" "装甲第24师" "装甲第25师" 
-		"装甲第26师" "装甲第27师" "装甲第28师" "装甲第29师" "装甲第30师" 
+		"Zhuangjiabing Di 1 Shi" "Zhuangjiabing Di 2 Shi" "Zhuangjiabing Di 3 Shi" "Zhuangjiabing Di 4 Shi" "Zhuangjiabing Di 5 Shi" "Zhuangjiabing Di 6 Shi" "Zhuangjiabing Di 7 Shi" "Zhuangjiabing Di 8 Shi" "Zhuangjiabing Di 9 Shi" "Zhuangjiabing Di 10 Shi" "Zhuangjiabing Di 11 Shi" 
+		"Zhuangjiabing Di 12 Shi" "Zhuangjiabing Di 13 Shi" "Zhuangjiabing Di 14 Shi" "Zhuangjiabing Di 15 Shi" "Zhuangjiabing Di 16 Shi" "Zhuangjiabing Di 17 Shi" "Zhuangjiabing Di 18 Shi" "Zhuangjiabing Di 19 Shi" "Zhuangjiabing Di 20 Shi" "Zhuangjiabing Di 21 Shi" "Zhuangjiabing Di 22 Shi" 
+		"Zhuangjiabing Di 23 Shi" "Zhuangjiabing Di 24 Shi" "Zhuangjiabing Di 25 Shi" "Zhuangjiabing Di 26 Shi" "Zhuangjiabing Di 27 Shi" "Zhuangjiabing Di 28 Shi" "Zhuangjiabing Di 29 Shi" "Zhuangjiabing Di 30 Shi" "Zhuangjia Di 1 Shi" "Zhuangjia Di 2 Shi" "Zhuangjia Di 3 Shi" 
+		"Zhuangjia Di 4 Shi" "Zhuangjia Di 5 Shi" "Zhuangjia Di 6 Shi" "Zhuangjia Di 7 Shi" "Zhuangjia Di 8 Shi" "Zhuangjia Di 9 Shi" "Zhuangjia Di 10 Shi" "Zhuangjia Di 11 Shi" "Zhuangjia Di 12 Shi" "Zhuangjia Di 13 Shi" "Zhuangjia Di 14 Shi" 
+		"Zhuangjia Di 15 Shi" "Zhuangjia Di 16 Shi" "Zhuangjia Di 17 Shi" "Zhuangjia Di 18 Shi" "Zhuangjia Di 19 Shi" "Zhuangjia Di 20 Shi" "Zhuangjia Di 21 Shi" "Zhuangjia Di 22 Shi" "Zhuangjia Di 23 Shi" "Zhuangjia Di 24 Shi" "Zhuangjia Di 25 Shi" 
+		"Zhuangjia Di 26 Shi" "Zhuangjia Di 27 Shi" "Zhuangjia Di 28 Shi" "Zhuangjia Di 29 Shi" "Zhuangjia Di 30 Shi" 
 	}
 	paratrooper_brigade = {
-		"伞兵第1师" "伞兵第2师" "伞兵第3师" "伞兵第4师" "伞兵第5师" "伞兵第6师" "伞兵第7师" "伞兵第8师" "伞兵第9师" "伞兵第10师" "伞兵第11师" 
-		"伞兵第12师" "伞兵第13师" "伞兵第14师" "伞兵第15师" "伞兵第16师" "伞兵第17师" "伞兵第18师" "伞兵第19师" "伞兵第20师" 
+		"Sanbing Di 1 Shi" "Sanbing Di 2 Shi" "Sanbing Di 3 Shi" "Sanbing Di 4 Shi" "Sanbing Di 5 Shi" "Sanbing Di 6 Shi" "Sanbing Di 7 Shi" "Sanbing Di 8 Shi" "Sanbing Di 9 Shi" "Sanbing Di 10 Shi" "Sanbing Di 11 Shi" 
+		"Sanbing Di 12 Shi" "Sanbing Di 13 Shi" "Sanbing Di 14 Shi" "Sanbing Di 15 Shi" "Sanbing Di 16 Shi" "Sanbing Di 17 Shi" "Sanbing Di 18 Shi" "Sanbing Di 19 Shi" "Sanbing Di 20 Shi" 
 	}
 	marine_brigade = {
-		"陆战队第1师" "陆战队第2师" "陆战队第3师" "陆战队第4师" "陆战队第5师" "陆战队第6师" "陆战队第7师" "陆战队第8师" "陆战队第9师" "陆战队第10师" "陆战队第11师" 
-		"陆战队第12师" "陆战队第13师" "陆战队第14师" "陆战队第15师" "陆战队第16师" "陆战队第17师" "陆战队第18师" "陆战队第19师" "陆战队第20师" 
+		"Luzhan Dui Di 1 Shi" "Luzhan Dui Di 2 Shi" "Luzhan Dui Di 3 Shi" "Luzhan Dui Di 4 Shi" "Luzhan Dui Di 5 Shi" "Luzhan Dui Di 6 Shi" "Luzhan Dui Di 7 Shi" "Luzhan Dui Di 8 Shi" "Luzhan Dui Di 9 Shi" "Luzhan Dui Di 10 Shi" "Luzhan Dui Di 11 Shi" 
+		"Luzhan Dui Di 12 Shi" "Luzhan Dui Di 13 Shi" "Luzhan Dui Di 14 Shi" "Luzhan Dui Di 15 Shi" "Luzhan Dui Di 16 Shi" "Luzhan Dui Di 17 Shi" "Luzhan Dui Di 18 Shi" "Luzhan Dui Di 19 Shi" "Luzhan Dui Di 20 Shi" 
 	}
 	bergsjaeger_brigade = {
-		"山地第1师" "山地第2师" "山地第3师" "山地第4师" "山地第5师" "山地第6师" "山地第7师" "山地第8师" "山地第9师" "山地第10师" "山地第11师" 
-		"山地第12师" "山地第13师" "山地第14师" "山地第15师" "山地第16师" "山地第17师" "山地第18师" "山地第19师" "山地第20师" "山地第21师" "山地第22师" 
-		"山地第23师" "山地第24师" "山地第25师" "山地第26师" "山地第27师" "山地第28师" "山地第29师" "山地第30师" "山地第31师" "山地第32师" "山地第33师" 
-		"山地第34师" "山地第35师" "山地第36师" "山地第37师" "山地第38师" "山地第39师" "山地第40师" "山地第41师" "山地第42师" "山地第43师" "山地第44师" 
-		"山地第45师" "山地第46师" "山地第47师" "山地第48师" "山地第49师" "山地第50师" 
+		"Pabing Di 1 Shi" "Pabing Di 2 Shi" "Pabing Di 3 Shi" "Pabing Di 4 Shi" "Pabing Di 5 Shi" "Pabing Di 6 Shi" "Pabing Di 7 Shi" "Pabing Di 8 Shi" "Pabing Di 9 Shi" "Pabing Di 10 Shi" "Pabing Di 11 Shi" 
+		"Pabing Di 12 Shi" "Pabing Di 13 Shi" "Pabing Di 14 Shi" "Pabing Di 15 Shi" "Pabing Di 16 Shi" "Pabing Di 17 Shi" "Pabing Di 18 Shi" "Pabing Di 19 Shi" "Pabing Di 20 Shi" "Pabing Di 21 Shi" "Pabing Di 22 Shi" 
+		"Pabing Di 23 Shi" "Pabing Di 24 Shi" "Pabing Di 25 Shi" "Pabing Di 26 Shi" "Pabing Di 27 Shi" "Pabing Di 28 Shi" "Pabing Di 29 Shi" "Pabing Di 30 Shi" "Pabing Di 31 Shi" "Pabing Di 32 Shi" "Pabing Di 33 Shi" 
+		"Pabing Di 34 Shi" "Pabing Di 35 Shi" "Pabing Di 36 Shi" "Pabing Di 37 Shi" "Pabing Di 38 Shi" "Pabing Di 39 Shi" "Pabing Di 40 Shi" "Pabing Di 41 Shi" "Pabing Di 42 Shi" "Pabing Di 43 Shi" "Pabing Di 44 Shi" 
+		"Pabing Di 45 Shi" "Pabing Di 46 Shi" "Pabing Di 47 Shi" "Pabing Di 48 Shi" "Pabing Di 49 Shi" "Pabing Di 50 Shi" 
 	}
 	garrison_brigade = {
-		"保安第1纵队" "保安第2纵队" "保安第3纵队" "保安第4纵队" "保安第5纵队" "保安第6纵队" "保安第7纵队" "保安第8纵队" "保安第9纵队" "保安第10纵队" "保安第11纵队" 
-		"保安第12纵队" "保安第13纵队" "保安第14纵队" "保安第15纵队" "保安第16纵队" "保安第17纵队" "保安第18纵队" "保安第19纵队" "保安第20纵队" "保安第21纵队" "保安第22纵队" 
-		"保安第23纵队" "保安第24纵队" "保安第25纵队" "保安第26纵队" "保安第27纵队" "保安第28纵队" "保安第29纵队" "保安第30纵队" "保安第31纵队" "保安第32纵队" "保安第33纵队" 
-		"保安第34纵队" "保安第35纵队" "保安第36纵队" "保安第37纵队" "保安第38纵队" "保安第39纵队" "保安第40纵队" "保安第41纵队" "保安第42纵队" "保安第43纵队" "保安第44纵队" 
-		"保安第45纵队" "保安第46纵队" "保安第47纵队" "保安第48纵队" "保安第49纵队" "保安第50纵队" "保安第51纵队" "保安第52纵队" "保安第53纵队" "保安第54纵队" "保安第55纵队" 
-		"保安第56纵队" "保安第57纵队" "保安第58纵队" "保安第59纵队" "保安第60纵队" "保安第61纵队" "保安第62纵队" "保安第63纵队" "保安第64纵队" "保安第65纵队" "保安第66纵队" 
-		"保安第67纵队" "保安第68纵队" "保安第69纵队" "保安第70纵队" "保安第71纵队" "保安第72纵队" "保安第73纵队" "保安第74纵队" "保安第75纵队" "保安第76纵队" "保安第77纵队" 
-		"保安第78纵队" "保安第79纵队" "保安第80纵队" "保安第81纵队" "保安第82纵队" "保安第83纵队" "保安第84纵队" "保安第85纵队" "保安第86纵队" "保安第87纵队" "保安第88纵队" 
-		"保安第89纵队" "保安第90纵队" "保安第91纵队" "保安第92纵队" "保安第93纵队" "保安第94纵队" "保安第95纵队" "保安第96纵队" "保安第97纵队" "保安第98纵队" "保安第99纵队" 
-		"保安第100纵队" "保安第101纵队" "保安第102纵队" "保安第103纵队" "保安第104纵队" "保安第105纵队" "保安第106纵队" "保安第107纵队" "保安第108纵队" "保安第109纵队" "保安第110纵队" 
-		"保安第111纵队" "保安第112纵队" "保安第113纵队" "保安第114纵队" "保安第115纵队" "保安第116纵队" "保安第117纵队" "保安第118纵队" "保安第119纵队" "保安第120纵队" "保安第121纵队" 
-		"保安第122纵队" "保安第123纵队" "保安第124纵队" "保安第125纵队" "保安第126纵队" "保安第127纵队" "保安第128纵队" "保安第129纵队" "保安第130纵队" "保安第131纵队" "保安第132纵队" 
-		"保安第133纵队" "保安第134纵队" "保安第135纵队" "保安第136纵队" "保安第137纵队" "保安第138纵队" "保安第139纵队" "保安第140纵队" "保安第141纵队" "保安第142纵队" "保安第143纵队" 
-		"保安第144纵队" "保安第145纵队" "保安第146纵队" "保安第147纵队" "保安第148纵队" "保安第149纵队" "保安第150纵队" "保安第151纵队" "保安第152纵队" "保安第153纵队" "保安第154纵队" 
-		"保安第155纵队" "保安第156纵队" "保安第157纵队" "保安第158纵队" "保安第159纵队" "保安第160纵队" "保安第161纵队" "保安第162纵队" "保安第163纵队" "保安第164纵队" "保安第165纵队" 
-		"保安第166纵队" "保安第167纵队" "保安第168纵队" "保安第169纵队" "保安第170纵队" "保安第171纵队" "保安第172纵队" "保安第173纵队" "保安第174纵队" "保安第175纵队" "保安第176纵队" 
-		"保安第177纵队" "保安第178纵队" "保安第179纵队" "保安第180纵队" "保安第181纵队" "保安第182纵队" "保安第183纵队" "保安第184纵队" "保安第185纵队" "保安第186纵队" "保安第187纵队" 
-		"保安第188纵队" "保安第189纵队" "保安第190纵队" "保安第191纵队" "保安第192纵队" "保安第193纵队" "保安第194纵队" "保安第195纵队" "保安第196纵队" "保安第197纵队" "保安第198纵队" 
-		"保安第199纵队" "保安第200纵队" "保安第201纵队" "保安第202纵队" "保安第203纵队" "保安第204纵队" "保安第205纵队" "保安第206纵队" "保安第207纵队" "保安第208纵队" "保安第209纵队" 
-		"保安第210纵队" "保安第211纵队" "保安第212纵队" "保安第213纵队" "保安第214纵队" "保安第215纵队" "保安第216纵队" "保安第217纵队" "保安第218纵队" "保安第219纵队" "保安第220纵队" 
-		"保安第221纵队" "保安第222纵队" "保安第223纵队" "保安第224纵队" "保安第225纵队" "保安第226纵队" "保安第227纵队" "保安第228纵队" "保安第229纵队" "保安第230纵队" "保安第231纵队" 
-		"保安第232纵队" "保安第233纵队" "保安第234纵队" "保安第235纵队" "保安第236纵队" "保安第237纵队" "保安第238纵队" "保安第239纵队" "保安第240纵队" "保安第241纵队" "保安第242纵队" 
-		"保安第243纵队" "保安第244纵队" "保安第245纵队" "保安第246纵队" "保安第247纵队" "保安第248纵队" "保安第249纵队" "保安第250纵队" "保安第251纵队" "保安第252纵队" "保安第253纵队" 
-		"保安第254纵队" "保安第255纵队" "保安第256纵队" "保安第257纵队" "保安第258纵队" "保安第259纵队" "保安第260纵队" "保安第261纵队" "保安第262纵队" "保安第263纵队" "保安第264纵队" 
-		"保安第265纵队" "保安第266纵队" "保安第267纵队" "保安第268纵队" "保安第269纵队" "保安第270纵队" "保安第271纵队" "保安第272纵队" "保安第273纵队" "保安第274纵队" "保安第275纵队" 
-		"保安第276纵队" "保安第277纵队" "保安第278纵队" "保安第279纵队" "保安第280纵队" "保安第281纵队" "保安第282纵队" "保安第283纵队" "保安第284纵队" "保安第285纵队" "保安第286纵队" 
-		"保安第287纵队" "保安第288纵队" "保安第289纵队" "保安第290纵队" "保安第291纵队" "保安第292纵队" "保安第293纵队" "保安第294纵队" "保安第295纵队" "保安第296纵队" "保安第297纵队" 
-		"保安第298纵队" "保安第299纵队" 
+		"Baoan Di 1 Zongdui" "Baoan Di 2 Zongdui" "Baoan Di 3 Zongdui" "Baoan Di 4 Zongdui" "Baoan Di 5 Zongdui" "Baoan Di 6 Zongdui" "Baoan Di 7 Zongdui" "Baoan Di 8 Zongdui" "Baoan Di 9 Zongdui" "Baoan Di 10 Zongdui" "Baoan Di 11 Zongdui" 
+		"Baoan Di 12 Zongdui" "Baoan Di 13 Zongdui" "Baoan Di 14 Zongdui" "Baoan Di 15 Zongdui" "Baoan Di 16 Zongdui" "Baoan Di 17 Zongdui" "Baoan Di 18 Zongdui" "Baoan Di 19 Zongdui" "Baoan Di 20 Zongdui" "Baoan Di 21 Zongdui" "Baoan Di 22 Zongdui" 
+		"Baoan Di 23 Zongdui" "Baoan Di 24 Zongdui" "Baoan Di 25 Zongdui" "Baoan Di 26 Zongdui" "Baoan Di 27 Zongdui" "Baoan Di 28 Zongdui" "Baoan Di 29 Zongdui" "Baoan Di 30 Zongdui" "Baoan Di 31 Zongdui" "Baoan Di 32 Zongdui" "Baoan Di 33 Zongdui" 
+		"Baoan Di 34 Zongdui" "Baoan Di 35 Zongdui" "Baoan Di 36 Zongdui" "Baoan Di 37 Zongdui" "Baoan Di 38 Zongdui" "Baoan Di 39 Zongdui" "Baoan Di 40 Zongdui" "Baoan Di 41 Zongdui" "Baoan Di 42 Zongdui" "Baoan Di 43 Zongdui" "Baoan Di 44 Zongdui" 
+		"Baoan Di 45 Zongdui" "Baoan Di 46 Zongdui" "Baoan Di 47 Zongdui" "Baoan Di 48 Zongdui" "Baoan Di 49 Zongdui" "Baoan Di 50 Zongdui" "Baoan Di 51 Zongdui" "Baoan Di 52 Zongdui" "Baoan Di 53 Zongdui" "Baoan Di 54 Zongdui" "Baoan Di 55 Zongdui" 
+		"Baoan Di 56 Zongdui" "Baoan Di 57 Zongdui" "Baoan Di 58 Zongdui" "Baoan Di 59 Zongdui" "Baoan Di 60 Zongdui" "Baoan Di 61 Zongdui" "Baoan Di 62 Zongdui" "Baoan Di 63 Zongdui" "Baoan Di 64 Zongdui" "Baoan Di 65 Zongdui" "Baoan Di 66 Zongdui" 
+		"Baoan Di 67 Zongdui" "Baoan Di 68 Zongdui" "Baoan Di 69 Zongdui" "Baoan Di 70 Zongdui" "Baoan Di 71 Zongdui" "Baoan Di 72 Zongdui" "Baoan Di 73 Zongdui" "Baoan Di 74 Zongdui" "Baoan Di 75 Zongdui" "Baoan Di 76 Zongdui" "Baoan Di 77 Zongdui" 
+		"Baoan Di 78 Zongdui" "Baoan Di 79 Zongdui" "Baoan Di 80 Zongdui" "Baoan Di 81 Zongdui" "Baoan Di 82 Zongdui" "Baoan Di 83 Zongdui" "Baoan Di 84 Zongdui" "Baoan Di 85 Zongdui" "Baoan Di 86 Zongdui" "Baoan Di 87 Zongdui" "Baoan Di 88 Zongdui" 
+		"Baoan Di 89 Zongdui" "Baoan Di 90 Zongdui" "Baoan Di 91 Zongdui" "Baoan Di 92 Zongdui" "Baoan Di 93 Zongdui" "Baoan Di 94 Zongdui" "Baoan Di 95 Zongdui" "Baoan Di 96 Zongdui" "Baoan Di 97 Zongdui" "Baoan Di 98 Zongdui" "Baoan Di 99 Zongdui" 
+		"Baoan Di 100 Zongdui" "Baoan Di 101 Zongdui" "Baoan Di 102 Zongdui" "Baoan Di 103 Zongdui" "Baoan Di 104 Zongdui" "Baoan Di 105 Zongdui" "Baoan Di 106 Zongdui" "Baoan Di 107 Zongdui" "Baoan Di 108 Zongdui" "Baoan Di 109 Zongdui" "Baoan Di 110 Zongdui" 
+		"Baoan Di 111 Zongdui" "Baoan Di 112 Zongdui" "Baoan Di 113 Zongdui" "Baoan Di 114 Zongdui" "Baoan Di 115 Zongdui" "Baoan Di 116 Zongdui" "Baoan Di 117 Zongdui" "Baoan Di 118 Zongdui" "Baoan Di 119 Zongdui" "Baoan Di 120 Zongdui" "Baoan Di 121 Zongdui" 
+		"Baoan Di 122 Zongdui" "Baoan Di 123 Zongdui" "Baoan Di 124 Zongdui" "Baoan Di 125 Zongdui" "Baoan Di 126 Zongdui" "Baoan Di 127 Zongdui" "Baoan Di 128 Zongdui" "Baoan Di 129 Zongdui" "Baoan Di 130 Zongdui" "Baoan Di 131 Zongdui" "Baoan Di 132 Zongdui" 
+		"Baoan Di 133 Zongdui" "Baoan Di 134 Zongdui" "Baoan Di 135 Zongdui" "Baoan Di 136 Zongdui" "Baoan Di 137 Zongdui" "Baoan Di 138 Zongdui" "Baoan Di 139 Zongdui" "Baoan Di 140 Zongdui" "Baoan Di 141 Zongdui" "Baoan Di 142 Zongdui" "Baoan Di 143 Zongdui" 
+		"Baoan Di 144 Zongdui" "Baoan Di 145 Zongdui" "Baoan Di 146 Zongdui" "Baoan Di 147 Zongdui" "Baoan Di 148 Zongdui" "Baoan Di 149 Zongdui" "Baoan Di 150 Zongdui" "Baoan Di 151 Zongdui" "Baoan Di 152 Zongdui" "Baoan Di 153 Zongdui" "Baoan Di 154 Zongdui" 
+		"Baoan Di 155 Zongdui" "Baoan Di 156 Zongdui" "Baoan Di 157 Zongdui" "Baoan Di 158 Zongdui" "Baoan Di 159 Zongdui" "Baoan Di 160 Zongdui" "Baoan Di 161 Zongdui" "Baoan Di 162 Zongdui" "Baoan Di 163 Zongdui" "Baoan Di 164 Zongdui" "Baoan Di 165 Zongdui" 
+		"Baoan Di 166 Zongdui" "Baoan Di 167 Zongdui" "Baoan Di 168 Zongdui" "Baoan Di 169 Zongdui" "Baoan Di 170 Zongdui" "Baoan Di 171 Zongdui" "Baoan Di 172 Zongdui" "Baoan Di 173 Zongdui" "Baoan Di 174 Zongdui" "Baoan Di 175 Zongdui" "Baoan Di 176 Zongdui" 
+		"Baoan Di 177 Zongdui" "Baoan Di 178 Zongdui" "Baoan Di 179 Zongdui" "Baoan Di 180 Zongdui" "Baoan Di 181 Zongdui" "Baoan Di 182 Zongdui" "Baoan Di 183 Zongdui" "Baoan Di 184 Zongdui" "Baoan Di 185 Zongdui" "Baoan Di 186 Zongdui" "Baoan Di 187 Zongdui" 
+		"Baoan Di 188 Zongdui" "Baoan Di 189 Zongdui" "Baoan Di 190 Zongdui" "Baoan Di 191 Zongdui" "Baoan Di 192 Zongdui" "Baoan Di 193 Zongdui" "Baoan Di 194 Zongdui" "Baoan Di 195 Zongdui" "Baoan Di 196 Zongdui" "Baoan Di 197 Zongdui" "Baoan Di 198 Zongdui" 
+		"Baoan Di 199 Zongdui" "Baoan Di 200 Zongdui" "Baoan Di 201 Zongdui" "Baoan Di 202 Zongdui" "Baoan Di 203 Zongdui" "Baoan Di 204 Zongdui" "Baoan Di 205 Zongdui" "Baoan Di 206 Zongdui" "Baoan Di 207 Zongdui" "Baoan Di 208 Zongdui" "Baoan Di 209 Zongdui" 
+		"Baoan Di 210 Zongdui" "Baoan Di 211 Zongdui" "Baoan Di 212 Zongdui" "Baoan Di 213 Zongdui" "Baoan Di 214 Zongdui" "Baoan Di 215 Zongdui" "Baoan Di 216 Zongdui" "Baoan Di 217 Zongdui" "Baoan Di 218 Zongdui" "Baoan Di 219 Zongdui" "Baoan Di 220 Zongdui" 
+		"Baoan Di 221 Zongdui" "Baoan Di 222 Zongdui" "Baoan Di 223 Zongdui" "Baoan Di 224 Zongdui" "Baoan Di 225 Zongdui" "Baoan Di 226 Zongdui" "Baoan Di 227 Zongdui" "Baoan Di 228 Zongdui" "Baoan Di 229 Zongdui" "Baoan Di 230 Zongdui" "Baoan Di 231 Zongdui" 
+		"Baoan Di 232 Zongdui" "Baoan Di 233 Zongdui" "Baoan Di 234 Zongdui" "Baoan Di 235 Zongdui" "Baoan Di 236 Zongdui" "Baoan Di 237 Zongdui" "Baoan Di 238 Zongdui" "Baoan Di 239 Zongdui" "Baoan Di 240 Zongdui" "Baoan Di 241 Zongdui" "Baoan Di 242 Zongdui" 
+		"Baoan Di 243 Zongdui" "Baoan Di 244 Zongdui" "Baoan Di 245 Zongdui" "Baoan Di 246 Zongdui" "Baoan Di 247 Zongdui" "Baoan Di 248 Zongdui" "Baoan Di 249 Zongdui" "Baoan Di 250 Zongdui" "Baoan Di 251 Zongdui" "Baoan Di 252 Zongdui" "Baoan Di 253 Zongdui" 
+		"Baoan Di 254 Zongdui" "Baoan Di 255 Zongdui" "Baoan Di 256 Zongdui" "Baoan Di 257 Zongdui" "Baoan Di 258 Zongdui" "Baoan Di 259 Zongdui" "Baoan Di 260 Zongdui" "Baoan Di 261 Zongdui" "Baoan Di 262 Zongdui" "Baoan Di 263 Zongdui" "Baoan Di 264 Zongdui" 
+		"Baoan Di 265 Zongdui" "Baoan Di 266 Zongdui" "Baoan Di 267 Zongdui" "Baoan Di 268 Zongdui" "Baoan Di 269 Zongdui" "Baoan Di 270 Zongdui" "Baoan Di 271 Zongdui" "Baoan Di 272 Zongdui" "Baoan Di 273 Zongdui" "Baoan Di 274 Zongdui" "Baoan Di 275 Zongdui" 
+		"Baoan Di 276 Zongdui" "Baoan Di 277 Zongdui" "Baoan Di 278 Zongdui" "Baoan Di 279 Zongdui" "Baoan Di 280 Zongdui" "Baoan Di 281 Zongdui" "Baoan Di 282 Zongdui" "Baoan Di 283 Zongdui" "Baoan Di 284 Zongdui" "Baoan Di 285 Zongdui" "Baoan Di 286 Zongdui" 
+		"Baoan Di 287 Zongdui" "Baoan Di 288 Zongdui" "Baoan Di 289 Zongdui" "Baoan Di 290 Zongdui" "Baoan Di 291 Zongdui" "Baoan Di 292 Zongdui" "Baoan Di 293 Zongdui" "Baoan Di 294 Zongdui" "Baoan Di 295 Zongdui" "Baoan Di 296 Zongdui" "Baoan Di 297 Zongdui" 
+		"Baoan Di 298 Zongdui" "Baoan Di 299 Zongdui" 
 	}
 	hq_brigade = {
-		"第1战区" "第2战区" "第3战区" "第4战区" "第5战区" "第6战区" "第7战区" "第8战区" "第9战区" "第10战区" "第11战区" 
-		"第12战区" "第13战区" "第14战区" "第15战区" "第16战区" "第17战区" "第18战区" "第19战区" "第20战区" "第21战区" "第22战区" 
-		"第23战区" "第24战区" "第25战区" "第26战区" "第27战区" "第28战区" "第29战区" "第30战区" 
+		"Di 1 Zhanqu" "Di 2 Zhanqu" "Di 3 Zhanqu" "Di 4 Zhanqu" "Di 5 Zhanqu" "Di 6 Zhanqu" "Di 7 Zhanqu" "Di 8 Zhanqu" "Di 9 Zhanqu" "Di 10 Zhanqu" "Di 11 Zhanqu" 
+		"Di 12 Zhanqu" "Di 13 Zhanqu" "Di 14 Zhanqu" "Di 15 Zhanqu" "Di 16 Zhanqu" "Di 17 Zhanqu" "Di 18 Zhanqu" "Di 19 Zhanqu" "Di 20 Zhanqu" "Di 21 Zhanqu" "Di 22 Zhanqu" 
+		"Di 23 Zhanqu" "Di 24 Zhanqu" "Di 25 Zhanqu" "Di 26 Zhanqu" "Di 27 Zhanqu" "Di 28 Zhanqu" "Di 29 Zhanqu" "Di 30 Zhanqu" 
 	}
 	militia_brigade = {
-		"江苏省保安总队" "浙江省保安总队" "福建省保安总队" "安徽省保安总队" "河南省保安总队" "湖北省保安总队" "江西省保安总队" "湖南省保安总队" "陕西省保安总队" "贵州省保安总队" "四川省保安总队" 
-		"江苏省警察总队" "浙江省警察总队" "福建省警察总队" "安徽省警察总队" "河南省警察总队" "湖北省警察总队" "江西省警察总队" "湖南省警察纵队" "陕西省警察纵队" "贵州省警察纵队" "四川省警察纵队" 
-		"江苏省民防总队" "浙江省民防总队" "福建省民防总队" "安徽省民防总队" "河南省民防总队" "湖北省民防总队" "江西省民防总队" "湖南省民防总队" "陕西省民防总队" "贵州省民防总队" "四川省民防总队" 
-		"民兵第1师" "民兵第2师" "民兵第3师" "民兵第4师" "民兵第5师" "民兵第6师" "民兵第7师" "民兵第8师" "民兵第9师" "民兵第10师" "民兵第11师" 
-		"民兵第12师" "民兵第13师" "民兵第14师" "民兵第15师" "民兵第16师" "民兵第17师" "民兵第18师" "民兵第19师" "民兵第20师" "民兵第21师" "民兵第22师" 
-		"民兵第23师" "民兵第24师" "民兵第25师" "民兵第26师" "民兵第27师" "民兵第28师" "民兵第29师" "民兵第30师" "民兵第31师" "民兵第32师" "民兵第33师" 
-		"民兵第34师" "民兵第35师" "民兵第36师" "民兵第37师" "民兵第38师" "民兵第39师" "民兵第40师" "民兵第41师" "民兵第42师" "民兵第43师" "民兵第44师" 
-		"民兵第45师" "民兵第46师" "民兵第47师" "民兵第48师" "民兵第49师" "民兵第50师" "民兵第51师" "民兵第52师" "民兵第53师" "民兵第54师" "民兵第55师" 
-		"民兵第56师" "民兵第57师" "民兵第58师" "民兵第59师" "民兵第60师" "民兵第61师" "民兵第62师" "民兵第63师" "民兵第64师" "民兵第65师" "民兵第66师" 
-		"民兵第67师" "民兵第68师" "民兵第69师" "民兵第70师" "民兵第71师" "民兵第72师" "民兵第73师" "民兵第74师" "民兵第75师" "民兵第76师" "民兵第77师" 
-		"民兵第78师" "民兵第79师" "民兵第80师" "民兵第81师" "民兵第82师" "民兵第83师" "民兵第84师" "民兵第85师" "民兵第86师" "民兵第87师" "民兵第88师" 
-		"民兵第89师" "民兵第90师" "民兵第91师" "民兵第92师" "民兵第93师" "民兵第94师" "民兵第95师" "民兵第96师" "民兵第97师" "民兵第98师" "民兵第99师" 
-		"民兵第100师" 
+		"Jiangsu Sheng Baoan Zongdui" "Zhejiang Sheng Baoan Zongdui" "Fujian Sheng Baoan Zongdui" "Anhui Sheng Baoan Zongdui" "Henan Sheng Baoan Zongdui" "Hubei Sheng Baoan Zongdui" "Jiangxi Sheng Baoan Zongdui" "Hunan Sheng Baoan Zongdui" "Shaanxi Sheng Baoan Zongdui" "Guizhou Sheng Baoan Zongdui" "Sichuan Sheng Baoan Zongdui" 
+		"Jiangsu Sheng Jingcai Zongdui" "Zhejiang Sheng Jingcai Zongdui" "Fujian Sheng Jingcai Zongdui" "Anhui Sheng Jingcai Zongdui" "Henan Sheng Jingcai Zongdui" "Hubei Sheng Jingcai Zongdui" "Jiangxi Sheng Jingcai Zongdui" "Hunan Sheng Jingcai Zongdui" "Shaanxi Sheng Jingcai Zongdui" "Guizhou Sheng Jingcai Zongdui" "Sichuan Sheng Jingcai Zongdui" 
+		"Jiangsu Sheng Minfang Zongdui" "Zhejiang Sheng Minfang Zongdui" "Fujian Sheng Minfang Zongdui" "Anhui Sheng Minfang Zongdui" "Henan Sheng Minfang Zongdui" "Hubei Sheng Minfang Zongdui" "Jiangxi Sheng Minfang Zongdui" "Hunan Sheng Minfang Zongdui" "Shaanxi Sheng Minfang Zongdui" "Guizhou Sheng Minfang Zongdui" "Sichuan Sheng Minfang Zongdui" 
+		"Minbing Di 1 Shi" "Minbing Di 2 Shi" "Minbing Di 3 Shi" "Minbing Di 4 Shi" "Minbing Di 5 Shi" "Minbing Di 6 Shi" "Minbing Di 7 Shi" "Minbing Di 8 Shi" "Minbing Di 9 Shi" "Minbing Di 10 Shi" "Minbing Di 11 Shi" 
+		"Minbing Di 12 Shi" "Minbing Di 13 Shi" "Minbing Di 14 Shi" "Minbing Di 15 Shi" "Minbing Di 16 Shi" "Minbing Di 17 Shi" "Minbing Di 18 Shi" "Minbing Di 19 Shi" "Minbing Di 20 Shi" "Minbing Di 21 Shi" "Minbing Di 22 Shi" 
+		"Minbing Di 23 Shi" "Minbing Di 24 Shi" "Minbing Di 25 Shi" "Minbing Di 26 Shi" "Minbing Di 27 Shi" "Minbing Di 28 Shi" "Minbing Di 29 Shi" "Minbing Di 30 Shi" "Minbing Di 31 Shi" "Minbing Di 32 Shi" "Minbing Di 33 Shi" 
+		"Minbing Di 34 Shi" "Minbing Di 35 Shi" "Minbing Di 36 Shi" "Minbing Di 37 Shi" "Minbing Di 38 Shi" "Minbing Di 39 Shi" "Minbing Di 40 Shi" "Minbing Di 41 Shi" "Minbing Di 42 Shi" "Minbing Di 43 Shi" "Minbing Di 44 Shi" 
+		"Minbing Di 45 Shi" "Minbing Di 46 Shi" "Minbing Di 47 Shi" "Minbing Di 48 Shi" "Minbing Di 49 Shi" "Minbing Di 50 Shi" "Minbing Di 51 Shi" "Minbing Di 52 Shi" "Minbing Di 53 Shi" "Minbing Di 54 Shi" "Minbing Di 55 Shi" 
+		"Minbing Di 56 Shi" "Minbing Di 57 Shi" "Minbing Di 58 Shi" "Minbing Di 59 Shi" "Minbing Di 60 Shi" "Minbing Di 61 Shi" "Minbing Di 62 Shi" "Minbing Di 63 Shi" "Minbing Di 64 Shi" "Minbing Di 65 Shi" "Minbing Di 66 Shi" 
+		"Minbing Di 67 Shi" "Minbing Di 68 Shi" "Minbing Di 69 Shi" "Minbing Di 70 Shi" "Minbing Di 71 Shi" "Minbing Di 72 Shi" "Minbing Di 73 Shi" "Minbing Di 74 Shi" "Minbing Di 75 Shi" "Minbing Di 76 Shi" "Minbing Di 77 Shi" 
+		"Minbing Di 78 Shi" "Minbing Di 79 Shi" "Minbing Di 80 Shi" "Minbing Di 81 Shi" "Minbing Di 82 Shi" "Minbing Di 83 Shi" "Minbing Di 84 Shi" "Minbing Di 85 Shi" "Minbing Di 86 Shi" "Minbing Di 87 Shi" "Minbing Di 88 Shi" 
+		"Minbing Di 89 Shi" "Minbing Di 90 Shi" "Minbing Di 91 Shi" "Minbing Di 92 Shi" "Minbing Di 93 Shi" "Minbing Di 94 Shi" "Minbing Di 95 Shi" "Minbing Di 96 Shi" "Minbing Di 97 Shi" "Minbing Di 98 Shi" "Minbing Di 99 Shi" 
+		"Minbing Di 100 Shi" 
 	}
 	multi_role = {
-		"第1多任务战斗机大队" "第2多任务战斗机大队" "第3多任务战斗机大队" "第4多任务战斗机大队" "第5多任务战斗机大队" "第6多任务战斗机大队" "第7多任务战斗机大队" "第8多任务战斗机大队" "第9多任务战斗机大队" "第10多任务战斗机大队" "第11多任务战斗机大队" 
-		"第12多任务战斗机大队" "第13多任务战斗机大队" "第14多任务战斗机大队" "第15多任务战斗机大队" "第16多任务战斗机大队" "第17多任务战斗机大队" "第18多任务战斗机大队" "第19多任务战斗机大队" "第20多任务战斗机大队" 
+		"Di 1 Zhandouji Dadui" "Di 2 Zhandouji Dadui" "Di 3 Zhandouji Dadui" "Di 4 Zhandouji Dadui" "Di 5 Zhandouji Dadui" "Di 6 Zhandouji Dadui" "Di 7 Zhandouji Dadui" "Di 8 Zhandouji Dadui" "Di 9 Zhandouji Dadui" "Di 10 Zhandouji Dadui" "Di 11 Zhandouji Dadui" 
+		"Di 12 Zhandouji Dadui" "Di 13 Zhandouji Dadui" "Di 14 Zhandouji Dadui" "Di 15 Zhandouji Dadui" "Di 16 Zhandouji Dadui" "Di 17 Zhandouji Dadui" "Di 18 Zhandouji Dadui" "Di 19 Zhandouji Dadui" "Di 20 Zhandouji Dadui" 
 	}
 	interceptor = {
-		"第1截击机大队" "第2截击机大队" "第3截击机大队" "第4截击机大队" "第5截击机大队" "第6截击机大队" "第7截击机大队" "第8截击机大队" "第9截击机大队" "第10截击机大队" "第11截击机大队" 
-		"第12截击机大队" "第13截击机大队" "第14截击机大队" "第15截击机大队" "第16截击机大队" "第17截击机大队" "第18截击机大队" "第19截击机大队" "第20截击机大队" 
+		"Di 1 Jianjiji Dadui" "Di 2 Jianjiji Dadui" "Di 3 Jianjiji Dadui" "Di 4 Jianjiji Dadui" "Di 5 Jianjiji Dadui" "Di 6 Jianjiji Dadui" "Di 7 Jianjiji Dadui" "Di 8 Jianjiji Dadui" "Di 9 Jianjiji Dadui" "Di 10 Jianjiji Dadui" "Di 11 Jianjiji Dadui" 
+		"Di 12 Jianjiji Dadui" "Di 13 Jianjiji Dadui" "Di 14 Jianjiji Dadui" "Di 15 Jianjiji Dadui" "Di 16 Jianjiji Dadui" "Di 17 Jianjiji Dadui" "Di 18 Jianjiji Dadui" "Di 19 Jianjiji Dadui" "Di 20 Jianjiji Dadui" 
+	}
+	jet_int = {
+		"Di 1 Jianjiji Dadui" "Di 2 Jianjiji Dadui" "Di 3 Jianjiji Dadui" "Di 4 Jianjiji Dadui" "Di 5 Jianjiji Dadui" "Di 6 Jianjiji Dadui" "Di 7 Jianjiji Dadui" "Di 8 Jianjiji Dadui" "Di 9 Jianjiji Dadui" "Di 10 Jianjiji Dadui" "Di 11 Jianjiji Dadui" 
+		"Di 12 Jianjiji Dadui" "Di 13 Jianjiji Dadui" "Di 14 Jianjiji Dadui" "Di 15 Jianjiji Dadui" "Di 16 Jianjiji Dadui" "Di 17 Jianjiji Dadui" "Di 18 Jianjiji Dadui" "Di 19 Jianjiji Dadui" "Di 20 Jianjiji Dadui" 
+	}
+	jet_mr = {
+		"Di 1 Jianjiji Dadui" "Di 2 Jianjiji Dadui" "Di 3 Jianjiji Dadui" "Di 4 Jianjiji Dadui" "Di 5 Jianjiji Dadui" "Di 6 Jianjiji Dadui" "Di 7 Jianjiji Dadui" "Di 8 Jianjiji Dadui" "Di 9 Jianjiji Dadui" "Di 10 Jianjiji Dadui" "Di 11 Jianjiji Dadui" 
+		"Di 12 Jianjiji Dadui" "Di 13 Jianjiji Dadui" "Di 14 Jianjiji Dadui" "Di 15 Jianjiji Dadui" "Di 16 Jianjiji Dadui" "Di 17 Jianjiji Dadui" "Di 18 Jianjiji Dadui" "Di 19 Jianjiji Dadui" "Di 20 Jianjiji Dadui" 
 	}
 	strategic_bomber = {
-		"第1战略轰炸机大队" "第2战略轰炸机大队" "第3战略轰炸机大队" "第4战略轰炸机大队" "第5战略轰炸机大队" "第6战略轰炸机大队" "第7战略轰炸机大队" "第8战略轰炸机大队" "第9战略轰炸机大队" "第10战略轰炸机大队" "第11战略轰炸机大队" 
-		"第12战略轰炸机大队" "第13战略轰炸机大队" "第14战略轰炸机大队" "第15战略轰炸机大队" "第16战略轰炸机大队" "第17战略轰炸机大队" "第18战略轰炸机大队" "第19战略轰炸机大队" "第20战略轰炸机大队" 
+		"Di 1 Zhanlue Hongzhaji Dadui" "Di 2 Zhanlue Hongzhaji Dadui" "Di 3 Zhanlue Hongzhaji Dadui" "Di 4 Zhanlue Hongzhaji Dadui" "Di 5 Zhanlue Hongzhaji Dadui" "Di 6 Zhanlue Hongzhaji Dadui" "Di 7 Zhanlue Hongzhaji Dadui" "Di 8 Zhanlue Hongzhaji Dadui" "Di 9 Zhanlue Hongzhaji Dadui" "Di 10 Zhanlue Hongzhaji Dadui" "Di 11 Zhanlue Hongzhaji Dadui" 
+		"Di 12 Zhanlue Hongzhaji Dadui" "Di 13 Zhanlue Hongzhaji Dadui" "Di 14 Zhanlue Hongzhaji Dadui" "Di 15 Zhanlue Hongzhaji Dadui" "Di 16 Zhanlue Hongzhaji Dadui" "Di 17 Zhanlue Hongzhaji Dadui" "Di 18 Zhanlue Hongzhaji Dadui" "Di 19 Zhanlue Hongzhaji Dadui" "Di 20 Zhanlue Hongzhaji Dadui" 
 	}
 	tactical_bomber = {
-		" 第1战术轰炸机大队" " 第2战术轰炸机大队" " 第3战术轰炸机大队" " 第4战术轰炸机大队" " 第5战术轰炸机大队" " 第6战术轰炸机大队" " 第7战术轰炸机大队" " 第8战术轰炸机大队" " 第9战术轰炸机大队" " 第10战术轰炸机大队" " 第11战术轰炸机大队" 
-		" 第12战术轰炸机大队" " 第13战术轰炸机大队" " 第14战术轰炸机大队" " 第15战术轰炸机大队" " 第16战术轰炸机大队" " 第17战术轰炸机大队" " 第18战术轰炸机大队" " 第19战术轰炸机大队" " 第20战术轰炸机大队" "第21 Zhanshu Hongzhaji Dadui" "第22 Zhanshu Hongzhaji Dadui" 
-		"第23战术轰炸机大队" "第24战术轰炸机大队" "第25战术轰炸机大队" "第26战术轰炸机大队" "第27战术轰炸机大队" "第28战术轰炸机大队" "第29战术轰炸机大队" "第30战术轰炸机大队" "第31战术轰炸机大队" "第32战术轰炸机大队" "第33战术轰炸机大队" 
-		"第34战术轰炸机大队" "第35战术轰炸机大队" "第36战术轰炸机大队" "第37战术轰炸机大队" "第38战术轰炸机大队" "第39战术轰炸机大队" "第40战术轰炸机大队" 
+		" Di 1 Huweiji Dadui" " Di 2 Huweiji Dadui" " Di 3 Huweiji Dadui" " Di 4 Huweiji Dadui" " Di 5 Huweiji Dadui" " Di 6 Huweiji Dadui" " Di 7 Huweiji Dadui" " Di 8 Huweiji Dadui" " Di 9 Huweiji Dadui" " Di 10 Huweiji Dadui" " Di 11 Huweiji Dadui" 
+		" Di 12 Huweiji Dadui" " Di 13 Huweiji Dadui" " Di 14 Huweiji Dadui" " Di 15 Huweiji Dadui" " Di 16 Huweiji Dadui" " Di 17 Huweiji Dadui" " Di 18 Huweiji Dadui" " Di 19 Huweiji Dadui" " Di 20 Huweiji Dadui" "Di 1 Zhanshu Hongzhaji Dadui" "Di 2 Zhanshu Hongzhaji Dadui" 
+		"Di 3 Zhanshu Hongzhaji Dadui" "Di 4 Zhanshu Hongzhaji Dadui" "Di 5 Zhanshu Hongzhaji Dadui" "Di 6 Zhanshu Hongzhaji Dadui" "Di 7 Zhanshu Hongzhaji Dadui" "Di 8 Zhanshu Hongzhaji Dadui" "Di 9 Zhanshu Hongzhaji Dadui" "Di 10 Zhanshu Hongzhaji Dadui" "Di 11 Zhanshu Hongzhaji Dadui" "Di 12 Zhanshu Hongzhaji Dadui" "Di 13 Zhanshu Hongzhaji Dadui" 
+		"Di 14 Zhanshu Hongzhaji Dadui" "Di 15 Zhanshu Hongzhaji Dadui" "Di 16 Zhanshu Hongzhaji Dadui" "Di 17 Zhanshu Hongzhaji Dadui" "Di 18 Zhanshu Hongzhaji Dadui" "Di 19 Zhanshu Hongzhaji Dadui" "Di 20 Zhanshu Hongzhaji Dadui" 
+	}
+	jet_bomber = {
+		" Di 1 Huweiji Dadui" " Di 2 Huweiji Dadui" " Di 3 Huweiji Dadui" " Di 4 Huweiji Dadui" " Di 5 Huweiji Dadui" " Di 6 Huweiji Dadui" " Di 7 Huweiji Dadui" " Di 8 Huweiji Dadui" " Di 9 Huweiji Dadui" " Di 10 Huweiji Dadui" " Di 11 Huweiji Dadui" 
+		" Di 12 Huweiji Dadui" " Di 13 Huweiji Dadui" " Di 14 Huweiji Dadui" " Di 15 Huweiji Dadui" " Di 16 Huweiji Dadui" " Di 17 Huweiji Dadui" " Di 18 Huweiji Dadui" " Di 19 Huweiji Dadui" " Di 20 Huweiji Dadui" "Di 1 Zhanshu Hongzhaji Dadui" "Di 2 Zhanshu Hongzhaji Dadui" 
+		"Di 3 Zhanshu Hongzhaji Dadui" "Di 4 Zhanshu Hongzhaji Dadui" "Di 5 Zhanshu Hongzhaji Dadui" "Di 6 Zhanshu Hongzhaji Dadui" "Di 7 Zhanshu Hongzhaji Dadui" "Di 8 Zhanshu Hongzhaji Dadui" "Di 9 Zhanshu Hongzhaji Dadui" "Di 10 Zhanshu Hongzhaji Dadui" "Di 11 Zhanshu Hongzhaji Dadui" "Di 12 Zhanshu Hongzhaji Dadui" "Di 13 Zhanshu Hongzhaji Dadui" 
+		"Di 14 Zhanshu Hongzhaji Dadui" "Di 15 Zhanshu Hongzhaji Dadui" "Di 16 Zhanshu Hongzhaji Dadui" "Di 17 Zhanshu Hongzhaji Dadui" "Di 18 Zhanshu Hongzhaji Dadui" "Di 19 Zhanshu Hongzhaji Dadui" "Di 20 Zhanshu Hongzhaji Dadui" 
 	}
 	naval_bomber = {
-		"第1海军轰炸机大队" "第2海军轰炸机大队" "第3海军轰炸机大队" "第4海军轰炸机大队" "第5海军轰炸机大队" "第6海军轰炸机大队" "第7海军轰炸机大队" "第8海军轰炸机大队" "第9海军轰炸机大队" "第10海军轰炸机大队" "第11海军轰炸机大队" 
-		"第12海军轰炸机大队" "第13海军轰炸机大队" "第14海军轰炸机大队" "第15海军轰炸机大队" "第16海军轰炸机大队" "第17海军轰炸机大队" "第18海军轰炸机大队" "第19海军轰炸机大队" "第20海军轰炸机大队" 
+		"Di 1 Haijun Hongzhaji Dadui" "Di 2 Haijun Hongzhaji Dadui" "Di 3 Haijun Hongzhaji Dadui" "Di 4 Haijun Hongzhaji Dadui" "Di 5 Haijun Hongzhaji Dadui" "Di 6 Haijun Hongzhaji Dadui" "Di 7 Haijun Hongzhaji Dadui" "Di 8 Haijun Hongzhaji Dadui" "Di 9 Haijun Hongzhaji Dadui" "Di 10 Haijun Hongzhaji Dadui" "Di 11 Haijun Hongzhaji Dadui" 
+		"Di 12 Haijun Hongzhaji Dadui" "Di 13 Haijun Hongzhaji Dadui" "Di 14 Haijun Hongzhaji Dadui" "Di 15 Haijun Hongzhaji Dadui" "Di 16 Haijun Hongzhaji Dadui" "Di 17 Haijun Hongzhaji Dadui" "Di 18 Haijun Hongzhaji Dadui" "Di 19 Haijun Hongzhaji Dadui" "Di 20 Haijun Hongzhaji Dadui" 
 	}
 	cas = {
-		"第1近距离空援大队" "第2近距离空援大队" "第3近距离空援大队" "第4近距离空援大队" "第5近距离空援大队" "第6近距离空援大队" "第7近距离空援大队" "第8近距离空援大队" "第9近距离空援大队" "第10近距离空援大队" "第11近距离空援大队" 
-		"第12近距离空援大队" "第13近距离空援大队" "第14近距离空援大队" "第15近距离空援大队" "第16近距离空援大队" "第17近距离空援大队" "第18近距离空援大队" "第19近距离空援大队" "第20近距离空援大队" 
+		"Di 1 Jinjuli Kongyuan Dadui" "Di 2 Jinjuli Kongyuan Dadui" "Di 3 Jinjuli Kongyuan Dadui" "Di 4 Jinjuli Kongyuan Dadui" "Di 5 Jinjuli Kongyuan Dadui" "Di 6 Jinjuli Kongyuan Dadui" "Di 7 Jinjuli Kongyuan Dadui" "Di 8 Jinjuli Kongyuan Dadui" "Di 9 Jinjuli Kongyuan Dadui" "Di 10 Jinjuli Kongyuan Dadui" "Di 11 Jinjuli Kongyuan Dadui" 
+		"Di 12 Jinjuli Kongyuan Dadui" "Di 13 Jinjuli Kongyuan Dadui" "Di 14 Jinjuli Kongyuan Dadui" "Di 15 Jinjuli Kongyuan Dadui" "Di 16 Jinjuli Kongyuan Dadui" "Di 17 Jinjuli Kongyuan Dadui" "Di 18 Jinjuli Kongyuan Dadui" "Di 19 Jinjuli Kongyuan Dadui" "Di 20 Jinjuli Kongyuan Dadui" 
 	}
 	transport_plane = {
-		"第1空运机大队" "第2空运机大队" "第3空运机大队" "第4空运机大队" "第5空运机大队" "第6空运机大队" "第7空运机大队" "第8空运机大队" "第9空运机大队" "第10空运机大队" 
+		"Di 1 Kongyunji Dadui" "Di 2 Kongyunji Dadui" "Di 3 Kongyunji Dadui" "Di 4 Kongyunji Dadui" "Di 5 Kongyunji Dadui" "Di 6 Kongyunji Dadui" "Di 7 Kongyunji Dadui" "Di 8 Kongyunji Dadui" "Di 9 Kongyunji Dadui" "Di 10 Kongyunji Dadui" 
 	}
 	battleship = {
-		"威靖" "福靖" "扬武" "宣武" "定波" "伏波" "建威" "建安" "无畏" "无当" "龙威" 
-		"虎威" "靖远" "威远" "潮宏" 
+		"ROCS Chih Yang" "ROCS Fen Yang" "ROCS Heng Hai" "ROCS Kee Lung" "ROCS Kuan Chuan" "ROCS Lan Yang" "ROCS Lien Ching" "ROCS Mei Yuan" "ROCS Shang Tung" "ROCS Si Ning" "ROCS Tiong Sing" "ROCS Ton Chi" "ROCS Ts'Ao Chiang" "ROCS Tse Tien" "ROCS Tso Ying" "ROCS Tung Chi"
 	}
 	light_cruiser = {
-		"宁海号" "平海号" "憧憬号" "南新号" "茂名号" "宜昌号" "同弛号" "海云号" "海琛号" "海神号" "英伟号" 
-		"飞鸿号" 
+		"ROCS Chungking"
+		"ROCS Ying Swei" "ROCS Chao Ho" "ROCS Fei Hung" "ROCS Chang" "ROCS Chang Feng" "ROCS Chang Chien" "ROCS Chao Ho" "ROCS Chao Wu" "ROCS Chao Yung" "ROCS Chen" "ROCS Chen Chung" "ROCS Chen De" "ROCS Chen Hai" "ROCS Chen Nan" "ROCS Chen Pei" "ROCS Chen Pien" "ROCS Chen Tsi" "ROCS Chen Tung" "ROCS Chen Wei" "ROCS Chen Yuan" "ROCS Cheng Ho" "ROCS Cheng Kung" "ROCS Chi An" "ROCS Chi Kuang" "ROCS Chi Yuan" "ROCS Chien An" "ROCS Chien Chung" "ROCS Chien Wei" "ROCS Ching Ch'Ing" "ROCS Ching Yuan" "ROCS Hai An" "ROCS Hai Chen" "ROCS Hai Chi" "ROCS Hai Chou" "ROCS Hai Fu" "ROCS Hai Ho" "ROCS Hai Hola" "ROCS Hai Hung" "ROCS Hai Ku" "ROCS Hai Lung" "ROCS Hai Nju" "ROCS Hai Ou" "ROCS Hai Peng" "ROCS Hai Shen" "ROCS Hai Shew" "ROCS Hai Tien" "ROCS Hai Yen" "ROCS Hai Ying" "ROCS Hai Yung" "ROCS Kang Chi" "ROCS Kang Ding" "ROCS Kuang Chia" "ROCS Kuang P'Ing" "ROCS Kuang Ting" "ROCS Kuang Yi" "ROCS Li Chien" "ROCS Li Sui" "ROCS Wu Chang" "ROCS Wu Feng"
 	}
 	heavy_cruiser = {
-		"文俊号" "正熙号" "憧憬号" "威远号" "奋斗号" "讨虏号" "光明号" "征东号" "征南号" "海琛号" "英伟号" 
-		"飞鸿号" "憧憬号" "南新号" "宜昌号" "飞鸿号" "宁海号" "平海号" 
+		"ROCS Chiang Chen" "ROCS Chiang Hsi" "ROCS Chiang Hung" "ROCS Chiang Kun" "ROCS Chiang Kung" "ROCS Chiang Li" "ROCS Chiang Tai" "ROCS Chiang Yuan" "ROCS Chu Chien" "ROCS Chu Kuan" "ROCS Chu Tai" "ROCS Chu Tung" "ROCS Chu Yiu" "ROCS Chu Yu" "ROCS Fei Hung" "ROCS Fei Ting" "ROCS Fei Ying" "ROCS Fei Yuan" "ROCS Hu Chung" "ROCS Hu Ngo" "ROCS Hu Peng" "ROCS Hu Wei" "ROCS Hu Ying" "ROCS King Ch'Ing" "ROCS King Yuan" "ROCS Lung Hsiang" "ROCS Lung Wei" "ROCS Nan Thin" "ROCS Nan Shin" "ROCS Nan Shuin" "ROCS Ning Hai" "ROCS Ning Yang" "ROCS Pao Min" "ROCS Pao Nim" "ROCS Ping Hai" "ROCS Ping Yuen" "ROCS Teng Ch'Ing" "ROCS Teng Ying Chen" "ROCS Wei Yuen" "ROCS Yang Wei" "ROCS Yang Wu" "ROCS Ying Ching" "ROCS Ying Swei" "ROCS Yu Yuen" "ROCS Yuan Kai" "ROCS Yueh Fei" "ROCS Yung An" "ROCS Yung Chi" "ROCS Yung Chien" "ROCS Yung Feng" "ROCS Yung Hsiang"
 	}
 	battlecruiser = {
-		"文俊号" "正熙号" "憧憬号" "威远号" "奋斗号" "讨虏号" "光明号" "征东号" "征南号" "海琛号" "英伟号" 
-		"飞鸿号" "憧憬号" "南新号" "宜昌号" "飞鸿号" "宁海号" "平海号" 
+		"ROCS Chih Yang" "ROCS Fen Yang" "ROCS Heng Hai" "ROCS Kee Lung" "ROCS Kuan Chuan" "ROCS Lan Yang" "ROCS Lien Ching" "ROCS Mei Yuan" "ROCS Shang Tung" "ROCS Si Ning" "ROCS Tiong Sing" "ROCS Ton Chi" "ROCS Ts'Ao Chiang" "ROCS Tse Tien" "ROCS Tso Ying" "ROCS Tung Chi"
 	}
 	destroyer = {
-		"第1驱逐舰大队" "第2驱逐舰大队" "第3驱逐舰大队" "第4驱逐舰大队" "第5驱逐舰大队" "第6驱逐舰大队" "第7驱逐舰大队" "第8驱逐舰大队" "第9驱逐舰大队" "第10驱逐舰大队" "第11驱逐舰大队" 
-		"第12驱逐舰大队" "第13驱逐舰大队" "第14驱逐舰大队" "第15驱逐舰大队" 
-	}
+		"Di 1 Quzujian Dadui" "Di 2 Quzujian Dadui" "Di 3 Quzujian Dadui" "Di 4 Quzujian Dadui" "Di 5 Quzujian Dadui" "Di 6 Quzujian Dadui" "Di 7 Quzujian Dadui" "Di 8 Quzujian Dadui" "Di 9 Quzujian Dadui" "Di 10 Quzujian Dadui" "Di 11 Quzujian Dadui" "Di 12 Quzujian Dadui" "Di 13 Quzujian Dadui" "Di 14 Quzujian Dadui" "Di 15 Quzujian Dadui" "Di 16 Quzujian Dadui" "Di 17 Quzujian Dadui" "Di 18 Quzujian Dadui" "Di 19 Quzujian Dadui" "Di 20 Quzujian Dadui" "Di 21 Quzujian Dadui" "Di 22 Quzujian Dadui" "Di 23 Quzujian Dadui" "Di 24 Quzujian Dadui" "Di 25 Quzujian Dadui" "Di 26 Quzujian Dadui" "Di 27 Quzujian Dadui" "Di 28 Quzujian Dadui" "Di 29 Quzujian Dadui" "Di 30 Quzujian Dadui" "Di 31 Quzujian Dadui" "Di 32 Quzujian Dadui" "Di 33 Quzujian Dadui" "Di 34 Quzujian Dadui" "Di 35 Quzujian Dadui" "Di 36 Quzujian Dadui" "Di 37 Quzujian Dadui" "Di 38 Quzujian Dadui" "Di 39 Quzujian Dadui"
+		"Di 40 Quzujian Dadui" "Di 41 Quzujian Dadui" "Di 42 Quzujian Dadui" "Di 43 Quzujian Dadui" "Di 44 Quzujian Dadui" "Di 45 Quzujian Dadui" "Di 46 Quzujian Dadui" "Di 47 Quzujian Dadui" "Di 48 Quzujian Dadui" "Di 49 Quzujian Dadui" "Di 50 Quzujian Dadui" "Di 51 Quzujian Dadui" "Di 52 Quzujian Dadui" "Di 53 Quzujian Dadui" "Di 54 Quzujian Dadui" "Di 55 Quzujian Dadui" "Di 56 Quzujian Dadui" "Di 57 Quzujian Dadui" "Di 58 Quzujian Dadui" "Di 59 Quzujian Dadui" "Di 60 Quzujian Dadui" "Di 61 Quzujian Dadui" "Di 62 Quzujian Dadui" "Di 63 Quzujian Dadui" "Di 64 Quzujian Dadui" "Di 65 Quzujian Dadui" "Di 66 Quzujian Dadui" "Di 67 Quzujian Dadui" "Di 68 Quzujian Dadui" "Di 69 Quzujian Dadui" "Di 70 Quzujian Dadui" "Di 71 Quzujian Dadui" "Di 72 Quzujian Dadui" "Di 73 Quzujian Dadui" "Di 74 Quzujian Dadui" "Di 75 Quzujian Dadui" "Di 76 Quzujian Dadui" "Di 77 Quzujian Dadui" "Di 78 Quzujian Dadui"
+		"Di 79 Quzujian Dadui" "Di 80 Quzujian Dadui" "Di 81 Quzujian Dadui" "Di 82 Quzujian Dadui" "Di 83 Quzujian Dadui" "Di 84 Quzujian Dadui" "Di 85 Quzujian Dadui" "Di 86 Quzujian Dadui" "Di 87 Quzujian Dadui" "Di 88 Quzujian Dadui" "Di 89 Quzujian Dadui" "Di 90 Quz	ujian Dadui" "Di 91 Quzujian Dadui" "Di 92 Quzujian Dadui" "Di 93 Quzujian Dadui" "Di 94 Quzujian Dadui" "Di 95 Quzujian Dadui" "Di 96 Quzujian Dadui" "Di 97 Quzujian Dadui" "Di 98 Quzujian Dadui" "Di 99 Quzujian Dadui" "Di 100 Quzujian Dadui"
+	} 
 	carrier = {
-		"震澜" "安澜" "建康" "建翼" "平远" "扬威" "振威" "海宁" "海靖" "自强" "共和" 
-		"中正" "威凤" "舞凤" "自由" 
+		"ROCS An Feng" "ROCS An Lan" "ROCS Di Hua" "ROCS Fein Hung" "ROCS Fong Yang" "ROCS Hae Yang" "ROCS Hoi Tung Hung" "ROCS Huan T'ai" "ROCS Hwai Yang" "ROCS Kai Che" "ROCS Ki Yang" "ROCS Kun Ming" "ROCS Kung Chen" "ROCS Kwang Tung" "ROCS Lai Yuan" "ROCS Lieh" "ROCS Ma Kong" "ROCS Pan Chao" "ROCS Peng Chao Hai" "ROCS Su" "ROCS Su Ao" "ROCS T'Ai An" "ROCS Tian Dan" "ROCS Tien Tsiw" "ROCS Ting Yuen" "ROCS Tzu I" "ROCS Wan Nien Ch'Ing" "ROCS Wei Hai Wei"
 	}
 	escort_carrier = {
-		"长宁" "绥宁" "正宁" "抚宁" "大同" "逸仙" "永翔" "镜清" "统驰" "寰泰" "坚如" 
-		"坚如" "仲元" "光华" "翔麟" 
+		"ROCS Fu An" "ROCS Fu Hsing" "ROCS Fu Ch'ing" "ROCS Fu Lung" "ROCS Fu Po" "ROCS Fu Sheng" "ROCS Fu Zhou"
 	}
 	submarine = {
-		"第1潜艇编队" "第2潜艇编队" "第3潜艇编队" "第4潜艇编队" "第5潜艇编队" "第6潜艇编队" "第7潜艇编队" "第8潜艇编队" "第9潜艇编队" "第10潜艇编队" "第11潜艇编队" 
-		"第12潜艇编队" "第13潜艇编队" "第14潜艇编队" "第15潜艇编队" 
+		"Di 1 Qianting Budui" "Di 2 Qianting Budui" "Di 3 Qianting Budui" "Di 4 Qianting Budui" "Di 5 Qianting Budui" "Di 6 Qianting Budui" "Di 7 Qianting Budui" "Di 8 Qianting Budui" "Di 9 Qianting Budui" "Di 10 Qianting Budui" "Di 11 Qianting Budui" "Di 12 Qianting Budui" "Di 13 Qianting Budui" "Di 14 Qianting Budui" "Di 15 Qianting Budui" "Di 16 Qianting Budui" "Di 17 Qianting Budui" "Di 18 Qianting Budui" "Di 19 Qianting Budui" "Di 20 Qianting Budui" "Di 21 Qianting Budui" "Di 22 Qianting Budui" "Di 23 Qianting Budui" "Di 24 Qianting Budui" "Di 25 Qianting Budui" "Di 26 Qianting Budui" "Di 27 Qianting Budui" "Di 28 Qianting Budui" "Di 29 Qianting Budui" "Di 30 Qianting Budui" "Di 31 Qianting Budui" "Di 32 Qianting Budui" "Di 33 Qianting Budui" "Di 34 Qianting Budui" "Di 35 Qianting Budui" "Di 36 Qianting Budui" "Di 37 Qianting Budui" "Di 38 Qianting Budui" "Di 39 Qianting Budui"
+		"Di 40 Qianting Budui" "Di 41 Qianting Budui" "Di 42 Qianting Budui" "Di 43 Qianting Budui" "Di 44 Qianting Budui" "Di 45 Qianting Budui" "Di 46 Qianting Budui" "Di 47 Qianting Budui" "Di 48 Qianting Budui" "Di 49 Qianting Budui" "Di 50 Qianting Budui" "Di 75 Qianting Budui" "Di 76 Qianting Budui" "Di 77 Qianting Budui" "Di 78 Qianting Budui" "Di 79 Qianting Budui" "Di 80 Qianting Budui" "Di 81 Qianting Budui" "Di 82 Qianting Budui" "Di 83 Qianting Budui" "Di 84 Qianting Budui" "Di 85 Qianting Budui" "Di 86 Qianting Budui" "Di 87 Qianting Budui" "Di 88 Qianting Budui" "Di 89 Qianting Budui" "Di 90 Qianting Budui" "Di 91 Qianting Budui" "Di 92 Qianting Budui" "Di 93 Qianting Budui" "Di 94 Qianting Budui" "Di 95 Qianting Budui" "Di 96 Qianting Budui" "Di 97 Qianting Budui" "Di 98 Qianting Budui" "Di 99 Qianting Budui" "Di 100 Qianting Budui"
 	}
 	transport_ship = {
-		"第1运输船大队" "第2运输船大队" "第3运输船大队" "第4运输船大队" "第5运输船大队" "第6运输船大队" "第7运输船大队" "第8运输船大队" "第9运输船大队" "第10运输船大队" "第11运输船大队" 
-		"第12运输船大队" "第13运输船大队" "第14运输船大队" "第15运输船大队" "第16运输船大队" "第17运输船大队" "第18运输船大队" "第19运输船大队" "第20运输船大队" 
-	}
-
+		"Di 1 Yunshuji Dadui" "Di 2 Yunshuji Dadui" "Di 3 Yunshuji Dadui" "Di 4 Yunshuji Dadui" "Di 5 Yunshuji Dadui" "Di 6 Yunshuji Dadui" "Di 7 Yunshuji Dadui" "Di 8 Yunshuji Dadui" "Di 9 Yunshuji Dadui" "Di 10 Yunshuji Dadui" "Di 11 Yunshuji Dadui" "Di 12 Yunshuji Dadui" "Di 13 Yunshuji Dadui" "Di 14 Yunshuji Dadui" "Di 15 Yunshuji Dadui" "Di 16 Yunshuji Dadui" "Di 17 Yunshuji Dadui" "Di 18 Yunshuji Dadui" "Di 19 Yunshuji Dadui" "Di 20 Yunshuji Dadui" "Di 21 Yunshuji Dadui" "Di 22 Yunshuji Dadui" "Di 23 Yunshuji Dadui" "Di 24 Yunshuji Dadui" "Di 25 Yunshuji Dadui" "Di 26 Yunshuji Dadui" "Di 27 Yunshuji Dadui" "Di 28 Yunshuji Dadui" "Di 29 Yunshuji Dadui" "Di 30 Yunshuji Dadui" "Di 31 Yunshuji Dadui" "Di 32 Yunshuji Dadui" "Di 33 Yunshuji Dadui" "Di 34 Yunshuji Dadui" "Di 35 Yunshuji Dadui" "Di 36 Yunshuji Dadui" "Di 37 Yunshuji Dadui" "Di 38 Yunshuji Dadui" "Di 39 Yunshuji Dadui"
+		"Di 40 Yunshuji Dadui" "Di 41 Yunshuji Dadui" "Di 42 Yunshuji Dadui" "Di 43 Yunshuji Dadui" "Di 44 Yunshuji Dadui" "Di 45 Yunshuji Dadui" "Di 46 Yunshuji Dadui" "Di 47 Yunshuji Dadui" "Di 48 Yunshuji Dadui" "Di 49 Yunshuji Dadui" "Di 50 Yunshuji Dadui" "Di 75 Yunshuji Dadui" "Di 76 Yunshuji Dadui" "Di 77 Yunshuji Dadui" "Di 78 Yunshuji Dadui" "Di 79 Yunshuji Dadui" "Di 80 Yunshuji Dadui" "Di 81 Yunshuji Dadui" "Di 82 Yunshuji Dadui" "Di 83 Yunshuji Dadui" "Di 84 Yunshuji Dadui" "Di 85 Yunshuji Dadui" "Di 86 Yunshuji Dadui" "Di 87 Yunshuji Dadui" "Di 88 Yunshuji Dadui" "Di 89 Yunshuji Dadui" "Di 90 Yunshuji Dadui" "Di 91 Yunshuji Dadui" "Di 92 Yunshuji Dadui" "Di 93 Yunshuji Dadui" "Di 94 Yunshuji Dadui" "Di 95 Yunshuji Dadui" "Di 96 Yunshuji Dadui" "Di 97 Yunshuji Dadui" "Di 98 Yunshuji Dadui" "Di 99 Yunshuji Dadui" "Di 100 Yunshuji Dadui"
+	} 
 }
 
 
 ministers = {
 	52001 = {
-		name = "林森"
+		name = "Lin Sen"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52001
-		head_of_state = weary_stiff_neck
 		head_of_state = weary_stiff_neck
 		foreign_minister = ideological_crusader
 		start_date = 1936.1.1
 	}
 	52002 = {
-		name = "蒋介石"
+		name = "Chiang Kai-shek"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52002
@@ -241,7 +263,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	52003 = {
-		name = "张群"
+		name = "Zhang Zun"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52003
@@ -250,7 +272,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	52004 = {
-		name = "阎锡山"
+		name = "Yan Xishan"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M52004
@@ -258,7 +280,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	52005 = {
-		name = "陈果夫"
+		name = "Chen Guofu"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52005
@@ -268,7 +290,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	52006 = {
-		name = "陈立夫"
+		name = "Chen Lifu"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52006
@@ -277,7 +299,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	52008 = {
-		name = "张学良"
+		name = "Zhang Xueliang"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M52008
@@ -286,7 +308,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	52009 = {
-		name = "陈绍宽"
+		name = "Chen Shaokuan"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M52009
@@ -295,7 +317,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	52010 = {
-		name = "周至柔"
+		name = "Zhou Zhirou"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52010
@@ -303,7 +325,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	52024 = {
-		name = "宋子文"
+		name = "T. V. Soong"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M52024
@@ -313,7 +335,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	52025 = {
-		name = "汪精卫"
+		name = "Wang Jingwei"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M52011
@@ -322,7 +344,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52026 = {
-		name = "王宠惠"
+		name = "Wang Chonghui"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52026
@@ -331,7 +353,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	52030 = {
-		name = "孔祥熙"
+		name = "Kong Xiangxi"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52030
@@ -340,7 +362,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	52031 = {
-		name = "李宗仁"
+		name = "Li Zongren"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M52031
@@ -349,7 +371,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	52032 = {
-		name = "王克敏"
+		name = "Wang Kemin"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M52012
@@ -358,7 +380,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52035 = {
-		name = "林蔚"
+		name = "Lin Wei"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52035
@@ -367,7 +389,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52036 = {
-		name = "沈醉"
+		name = "Shen Zui"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52036
@@ -375,7 +397,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	52038 = {
-		name = "王世杰"
+		name = "Wang Shijie"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M52038
@@ -383,7 +405,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	52042 = {
-		name = "陈群"
+		name = "Chen Lu"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M52013
@@ -391,7 +413,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	52043 = {
-		name = "杨鲁昌"
+		name = "Yang Luchang"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M52043
@@ -400,7 +422,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	52045 = {
-		name = "白崇禧"
+		name = "Bai Chongxi"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M52045
@@ -409,7 +431,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	52046 = {
-		name = "徐永昌"
+		name = "Xu Yongchang"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52046
@@ -417,7 +439,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	52047 = {
-		name = "黄辰左"
+		name = "Huang Chenzuo"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52047
@@ -426,17 +448,16 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52048 = {
-		name = "何应钦"
+		name = "He Yingqin"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52048
-		armament_minister = air_superiority_proponent
 		armament_minister = infantry_proponent
 		chief_of_army = elastic_defence_doctrine
 		start_date = 1939.1.1
 	}
 	52050 = {
-		name = "蔡文治"
+		name = "Cai Wenzhi"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52050
@@ -444,7 +465,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	52051 = {
-		name = "贺国光"
+		name = "He Guoguang"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52051
@@ -452,7 +473,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	52053 = {
-		name = "于飞鹏"
+		name = "Yu Feipeng"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52053
@@ -460,7 +481,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	52054 = {
-		name = "王树铭"
+		name = "Wang Shuming"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52054
@@ -469,7 +490,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	52055 = {
-		name = "蒋经国"
+		name = "Jiang Jingguo"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52055
@@ -478,7 +499,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	52056 = {
-		name = "杜建时"
+		name = "Du Jianshi"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52056
@@ -486,7 +507,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	52057 = {
-		name = "翁文灏"
+		name = "Weng Wenhao"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M52057
@@ -494,7 +515,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52059 = {
-		name = "陈公博"
+		name = "Chen Gongbo"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M52014
@@ -502,7 +523,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52061 = {
-		name = "陈策"
+		name = "Chan Chak"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M52061
@@ -510,7 +531,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	52063 = {
-		name = "戴笠"
+		name = "Dai Li"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52063
@@ -519,7 +540,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	52064 = {
-		name = "瓦尔特·斯滕内斯"
+		name = "Walther Stennes"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52064
@@ -527,7 +548,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	52065 = {
-		name = "吴忠信"
+		name = "Wu Zhongxin"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52065
@@ -535,7 +556,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	52066 = {
-		name = "黄慕松"
+		name = "Huang Musong"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52066
@@ -543,7 +564,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52067 = {
-		name = "谷正轮"
+		name = "Gu Zhenglun"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52067
@@ -551,7 +572,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	52068 = {
-		name = "刘斐"
+		name = "Liu Fei"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M52068
@@ -559,7 +580,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	52072 = {
-		name = "康泽"
+		name = "Kang Ze"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M52072
@@ -567,7 +588,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	52073 = {
-		name = "蔡元培"
+		name = "Cai Yuanpei"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M52073
@@ -575,7 +596,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	52074 = {
-		name = "丁莫屯"
+		name = "Ding Motun"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M52015
@@ -583,7 +604,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52076 = {
-		name = "陈宏山"
+		name = "Chan Hon-sam"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M52076
@@ -591,7 +612,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	52077 = {
-		name = "陈飞克"
+		name = "Chen Fake"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M52077
@@ -600,7 +621,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	52079 = {
-		name = "贺耀祖"
+		name = "He Yaozu"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M52079
@@ -608,7 +629,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52080 = {
-		name = "毛人凤"
+		name = "Mao Renfeng"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52080
@@ -616,7 +637,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	52081 = {
-		name = "蒋一英"
+		name = "Jiang Yiying"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52064
@@ -624,7 +645,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	52082 = {
-		name = "杨玄城"
+		name = "Yang Xuancheng"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52082
@@ -632,7 +653,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	52083 = {
-		name = "郑介民"
+		name = "Zheng Jiemin"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52083
@@ -640,7 +661,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	52085 = {
-		name = "李世群"
+		name = "Li Shiqun"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M52016
@@ -648,7 +669,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52089 = {
-		name = "蒋百里"
+		name = "Jiang Baili"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52089
@@ -657,7 +678,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52090 = {
-		name = "蒋百里"
+		name = "Qian Dajun"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52090
@@ -666,7 +687,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	52092 = {
-		name = "萧毅肃"
+		name = "Xiao Yishu"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52092
@@ -674,7 +695,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	52093 = {
-		name = "傅作义"
+		name = "Xu Zuyi"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M52093
@@ -682,7 +703,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52094 = {
-		name = "齐燮元"
+		name = "Qi Xieyuan"
 		ideology = fascistic
 		loyalty = 0.50
 		picture = M52017
@@ -690,7 +711,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52097 = {
-		name = "顾祝同"
+		name = "Gu Zhutong"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M52097
@@ -698,7 +719,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52098 = {
-		name = "徐庭瑶"
+		name = "Xu Tingyao"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52098
@@ -706,7 +727,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	52100 = {
-		name = "鲍文樾"
+		name = "Bao Wenyue"
 		ideology = fascistic
 		loyalty = 0.50
 		picture = M52018
@@ -714,15 +735,15 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52101 = {
-		name = "欧阳格"
+		name = "Ouyang Ge"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52101
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1937.1.1
 	}
 	52102 = {
-		name = "曾以鼎"
+		name = "Zeng Yiding"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M52102
@@ -730,7 +751,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	52103 = {
-		name = "陈季良"
+		name = "Chen Jiliang"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M52103
@@ -738,7 +759,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	52104 = {
-		name = "桂永清"
+		name = "Gui Yongqing"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52104
@@ -746,7 +767,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	52105 = {
-		name = "陈诚"
+		name = "Chen Cheng"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52105
@@ -754,23 +775,23 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	52106 = {
-		name = "任寿旭"
+		name = "Ren Shouxu"
 		ideology = social_conservative
 		loyalty = 0.50
 		picture = M52106
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1939.1.1
 	}
 	52107 = {
-		name = "任援道"
+		name = "Ren Yuandao"
 		ideology = fascistic
 		loyalty = 0.50
 		picture = M52019
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1939.1.1
 	}
 	52109 = {
-		name = "沈鸿烈"
+		name = "Shen Honglie"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52109
@@ -778,27 +799,102 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	52113 = {
-		name = "陈昌祖"
+		name = "Chen Changchu"
 		ideology = fascistic
 		loyalty = 0.50
 		picture = M52020
 		chief_of_air = army_aviation_doctrine
 		start_date = 1939.1.1
 	}
-	52114 = {
-		name = "阎锡山"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = M52114
-		head_of_government = old_general
-		start_date = 1949.1.1
-	}
 	52115 = {
-		name = "陈诚"
+		name = "Ch'en Ch'eng"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M52115
 		head_of_government = political_protege
-		start_date = 1950.1.1
+		start_date = 1949.1.1
 	}
+	# Generic dummy ministers
+	95652 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95653 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95654 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95655 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95656 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}	
 }

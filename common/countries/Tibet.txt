@@ -1,6 +1,8 @@
 color = { 177  207  205 }
 graphical_culture = Japanese
 
+
+
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -17,335 +19,651 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
 	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
+	}	
 }
 
 unit_names = {
 	infantry_brigade = {
-		"第1师" "第2师" "第3师" "第4师" "第5师" "第6师" "第7师" "第8师" "第9师" "第10师" "第12师" 
-		"第14师" "第15师" "第17师" "第19师" "第21师" "第22师" "第25师" "第28师" "第29师" "第30师" "第35师" 
-		"第38师" "第40师" "第42师" "第46师" "第47师" "第49师" "第50师" "第51师" "第57师" "第58师" "第61师" 
-		"第62师" "第63师" "第64师" "第65师" "第66师" "第69师" 
+		"Di'1 Shi" "Di'2 Shi" "Di'3 Shi" "Di'4 Shi" "Di'5 Shi" "Di'6 Shi" "Di'7 Shi" "Di'8 Shi" "Di'9 Shi" "Di'10 Shi" "Di'12 Shi" 
+		"Di'14 Shi" "Di'15 Shi" "Di'17 Shi" "Di'19 Shi" "Di'21 Shi" "Di'22 Shi" "Di'25 Shi" "Di'28 Shi" "Di'29 Shi" "Di'30 Shi" "Di'35 Shi" 
+		"Di'38 Shi" "Di'40 Shi" "Di'42 Shi" "Di'46 Shi" "Di'47 Shi" "Di'49 Shi" "Di'50 Shi" "Di'51 Shi" "Di'57 Shi" "Di'58 Shi" "Di'61 Shi" 
+		"Di'62 Shi" "Di'63 Shi" "Di'64 Shi" "Di'65 Shi" "Di'66 Shi" "Di'69 Shi" 
 	}
 	cavalry_brigade = {
-		"骑兵第1师" "骑兵第2师" "骑兵第3师" "骑兵第4师" "骑兵第5师" "骑兵第6师" "骑兵第7师" "骑兵第8师" "骑兵第9师" "骑兵第10师" "骑兵第11师" 
-		"骑兵第12师" "骑兵第13师" "骑兵第14师" "骑兵第15师" 
+		"Qibing Di'1 Shi" "Qibing Di'2 Shi" "Qibing Di'3 Shi" "Qibing Di'4 Shi" "Qibing Di'5 Shi" "Qibing Di'6 Shi" "Qibing Di'7 Shi" "Qibing Di'8 Shi" "Qibing Di'9 Shi" "Qibing Di'10 Shi" "Qibing Di'11 Shi" 
+		"Qibing Di'12 Shi" "Qibing Di'13 Shi" "Qibing Di'14 Shi" "Qibing Di'15 Shi" 
 	}
 	motorized_brigade = {
-		"摩托化步兵第1师" "摩托化步兵第2师" "摩托化步兵第3师" "摩托化步兵第4师" "摩托化步兵第5师" "摩托化步兵第6师" "摩托化步兵第7师" "摩托化步兵第8师" "摩托化步兵第9师" "摩托化步兵第10师" "摩托化步兵第12师" 
-		"摩托化步兵第14师" "摩托化步兵第15师" 
+		"Motuohua Bubing Di'1 Shi" "Motuohua Bubing Di'2 Shi" "Motuohua Bubing Di'3 Shi" "Motuohua Bubing Di'4 Shi" "Motuohua Bubing Di'5 Shi" "Motuohua Bubing Di'6 Shi" "Motuohua Bubing Di'7 Shi" "Motuohua Bubing Di'8 Shi" "Motuohua Bubing Di'9 Shi" "Motuohua Bubing Di'10 Shi" "Motuohua Bubing Di'12 Shi" 
+		"Motuohua Bubing Di'14 Shi" "Motuohua Bubing Di'15 Shi" 
 	}
 	mechanized_brigade = {
-		"机械化第1师" "机械化第2师" "机械化第3师" "机械化第4师" "机械化第5师" "机械化第6师" "机械化第7师" "机械化第8师" "机械化第9师" "机械化第10师" "机械化第12师" 
-		"机械化第14师" "机械化第15师" 
+		"Jixiehua Di'1 Shi" "Jixiehua Di'2 Shi" "Jixiehua Di'3 Shi" "Jixiehua Di'4 Shi" "Jixiehua Di'5 Shi" "Jixiehua Di'6 Shi" "Jixiehua Di'7 Shi" "Jixiehua Di'8 Shi" "Jixiehua Di'9 Shi" "Jixiehua Di'10 Shi" "Jixiehua Di'12 Shi" 
+		"Jixiehua Di'14 Shi" "Jixiehua Di'15 Shi" 
 	}
 	light_armor_brigade = {
-		"装甲兵第1师" "装甲兵第2师" "装甲兵第3师" "装甲兵第4师" "装甲兵第5师" "装甲兵第6师" "装甲兵第7师" "装甲兵第8师" "装甲兵第9师" "装甲兵第10师" "装甲兵第11师" 
-		"装甲兵第12师" "装甲兵第13师" "装甲兵第14师" "装甲兵第15师" "装甲兵第16师" "装甲兵第17师" "装甲兵第18师" "装甲兵第19师" "装甲兵第20师" 
+		"Zhuangjiabing Di'1 Shi" "Zhuangjiabing Di'2 Shi" "Zhuangjiabing Di'3 Shi" "Zhuangjiabing Di'4 Shi" "Zhuangjiabing Di'5 Shi" "Zhuangjiabing Di'6 Shi" "Zhuangjiabing Di'7 Shi" "Zhuangjiabing Di'8 Shi" "Zhuangjiabing Di'9 Shi" "Zhuangjiabing Di'10 Shi" "Zhuangjiabing Di'11 Shi" 
+		"Zhuangjiabing Di'12 Shi" "Zhuangjiabing Di'13 Shi" "Zhuangjiabing Di'14 Shi" "Zhuangjiabing Di'15 Shi" "Zhuangjiabing Di'16 Shi" "Zhuangjiabing Di'17 Shi" "Zhuangjiabing Di'18 Shi" "Zhuangjiabing Di'19 Shi" "Zhuangjiabing Di'20 Shi" 
 	}
 	armor_brigade = {
-		"装甲兵第1师" "装甲兵第2师" "装甲兵第3师" "装甲兵第4师" "装甲兵第5师" "装甲兵第6师" "装甲兵第7师" "装甲兵第8师" "装甲兵第9师" "装甲兵第10师" "装甲兵第11师" 
-		"装甲兵第12师" "装甲兵第13师" "装甲兵第14师" "装甲兵第15师" "装甲兵第16师" "装甲兵第17师" "装甲兵第18师" "装甲兵第19师" "装甲兵第20师" 
+		"Zhuangjiabing Di'1 Shi" "Zhuangjiabing Di'2 Shi" "Zhuangjiabing Di'3 Shi" "Zhuangjiabing Di'4 Shi" "Zhuangjiabing Di'5 Shi" "Zhuangjiabing Di'6 Shi" "Zhuangjiabing Di'7 Shi" "Zhuangjiabing Di'8 Shi" "Zhuangjiabing Di'9 Shi" "Zhuangjiabing Di'10 Shi" "Zhuangjiabing Di'11 Shi" 
+		"Zhuangjiabing Di'12 Shi" "Zhuangjiabing Di'13 Shi" "Zhuangjiabing Di'14 Shi" "Zhuangjiabing Di'15 Shi" "Zhuangjiabing Di'16 Shi" "Zhuangjiabing Di'17 Shi" "Zhuangjiabing Di'18 Shi" "Zhuangjiabing Di'19 Shi" "Zhuangjiabing Di'20 Shi" 
 	}
 	paratrooper_brigade = {
-		"第1空降部队" "空降部队第2师" "空降部队第3师" "空降部队第4师" "空降部队第5师" "空降部队第6师" "空降部队第7师" "空降部队第8师" "空降部队第9师" "空降部队第10师" "空降部队第11师" 
-		"空降部队第12师" "空降部队第13师" "空降部队第14师" "空降部队第15师" 
+		"1 Jiang'luo'san'bu" "Jiangluo Sanbu Di'2 Shi" "Jiangluo Sanbu Di'3 Shi" "Jiangluo Sanbu Di'4 Shi" "Jiangluo Sanbu Di'5 Shi" "Jiangluo Sanbu Di'6 Shi" "Jiangluo Sanbu Di'7 Shi" "Jiangluo Sanbu Di'8 Shi" "Jiangluo Sanbu Di'9 Shi" "Jiangluo Sanbu Di'10 Shi" "Jiangluo Sanbu Di'11 Shi" 
+		"Jiangluo Sanbu Di'12 Shi" "Jiangluo Sanbu Di'13 Shi" "Jiangluo Sanbu Di'14 Shi" "Jiangluo Sanbu Di'15 Shi" 
 	}
 	marine_brigade = {
-		"陆战队第1师" "陆战队第2师" "陆战队第3师" "陆战队第4师" "陆战队第5师" "陆战队第6师" "陆战队第7师" "陆战队第8师" "陆战队第9师" "陆战队第10师" "陆战队第11师" 
-		"陆战队第12师" "陆战队第13师" "陆战队第14师" "陆战队第15师" 
+		"Luzhan Dui Di'1 Shi" "Luzhan Dui Di'2 Shi" "Luzhan Dui Di'3 Shi" "Luzhan Dui Di'4 Shi" "Luzhan Dui Di'5 Shi" "Luzhan Dui Di'6 Shi" "Luzhan Dui Di'7 Shi" "Luzhan Dui Di'8 Shi" "Luzhan Dui Di'9 Shi" "Luzhan Dui Di'10 Shi" "Luzhan Dui Di'11 Shi" 
+		"Luzhan Dui Di'12 Shi" "Luzhan Dui Di'13 Shi" "Luzhan Dui Di'14 Shi" "Luzhan Dui Di'15 Shi" 
 	}
 	bergsjaeger_brigade = {
-		"山地第1师" "山地第2师" "山地第3师" "山地第4师" "山地第5师" "山地第6师" "山地第7师" "山地第8师" "山地第9师" "山地第10师" "山地第12师" 
-		"山地第14师" "山地第15师" "山地第17师" "山地第19师" 
+		"Pabing Di'1 Shi" "Pabing Di'2 Shi" "Pabing Di'3 Shi" "Pabing Di'4 Shi" "Pabing Di'5 Shi" "Pabing Di'6 Shi" "Pabing Di'7 Shi" "Pabing Di'8 Shi" "Pabing Di'9 Shi" "Pabing Di'10 Shi" "Pabing Di'12 Shi" 
+		"Pabing Di'14 Shi" "Pabing Di'15 Shi" "Pabing Di'17 Shi" "Pabing Di'19 Shi" 
 	}
 	garrison_brigade = {
-		"乌鲁木齐保安中队" "第1师" "第2师" "第3师" "第4师" "第5师" "第6师" "第7师" "第8师" "第10师" "第12师" 
-		"第14师" "第15师" "第17师" "第19师" "第21师" "第22师" "第25师" "第28师" "第29师" "第30师" "第35师" 
-		"第38师" "第40师" "第42师" "第46师" "第47师" "第49师" "第50师" 
+		"Di'1 Shi" "Di'2 Shi" "Di'3 Shi" "Di'4 Shi" "Di'5 Shi" "Di'6 Shi" "Di'7 Shi" "Di'8 Shi" "Di'10 Shi" "Di'12 Shi" "Di'14 Shi" 
+		"Di'15 Shi" "Di'17 Shi" "Di'19 Shi" "Di'21 Shi" "Di'22 Shi" "Di'25 Shi" "Di'28 Shi" "Di'29 Shi" "Di'30 Shi" "Di'35 Shi" "Di'38 Shi" 
+		"Di'40 Shi" "Di'42 Shi" "Di'46 Shi" "Di'47 Shi" "Di'49 Shi" "Di'50 Shi" 
 	}
 	hq_brigade = {
-		"第1战斗司令部" "第2战斗司令部" "第3战斗司令部" "第4战斗司令部" "第5战斗司令部" "第6战斗司令部" "第7战斗司令部" "第8战斗司令部" "第9战斗司令部" 
+		"Di'1 Zhandou Silingbu" "Di'2 Zhandou Silingbu" "Di'3 Zhandou Silingbu" "Di'4 Zhandou Silingbu" "Di'5 Zhandou Silingbu" "Di'6 Zhandou Silingbu" "Di'7 Zhandou Silingbu" "Di'8 Zhandou Silingbu" "Di'9 Zhandou Silingbu" 
 	}
 	militia_brigade = {
-		"西藏保安中队" "第8民兵师" "第9民兵师" "第10民兵师" "第12民兵师" "第14民兵师" "第15民兵师" "第17民兵师" "第19民兵师" "第21民兵师" "第22民兵师" 
-		"第25民兵师" "第28民兵师" "第29民兵师" "第30民兵师" "第35民兵师" "第38民兵师" "第40民兵师" "第42民兵师" "第46民兵师" "第47民兵师" "第49民兵师" 
-		"第50民兵师" "第51民兵师" 
+		"Xinjiang Baoan Zongdui" "8. Min Shi" "9. Min Shi" "10. Min Shi" "12. Min Shi" "14. Min Shi" "15. Min Shi" "17. Min Shi" "19. Min Shi" "21. Min Shi" "22. Min Shi" 
+		"25. Min Shi" "28. Min Shi" "29. Min Shi" "30. Min Shi" "35. Min Shi" "38. Min Shi" "40. Min Shi" "42. Min Shi" "46. Min Shi" "47. Min Shi" "49. Min Shi" 
+		"50. Min Shi" "51. Min Shi" 
 	}
 	multi_role = {
-		"第1歼击机大队" "第2歼击机大队" "第3歼击机大队" "第4歼击机大队" "第5歼击机大队" "第6歼击机大队" "第7歼击机大队" "第8歼击机大队" "第9歼击机大队" "第10歼击机大队" 
+		"1. Qianjiji Dadui" "2. Qianjiji Dadui" "3. Qianjiji Dadui" "4. Qianjiji Dadui" "5. Qianjiji Dadui" 
 	}
 	interceptor = {
-		"第1战斗机大队" "第2战斗机大队" "第3战斗机大队" "第4战斗机大队" "第5战斗机大队" "第6战斗机大队" "第7战斗机大队" "第8战斗机大队" "第9战斗机大队" "第10战斗机大队" 
+		"1. Zhandouji Dadui" "2. Zhandouji Dadui" "3. Zhandouji Dadui" "4. Zhandouji Dadui" "5. Zhandouji Dadui" 
+	}
+	jet_int = {
+		"1. Zhandouji Dadui" "2. Zhandouji Dadui" "3. Zhandouji Dadui" "4. Zhandouji Dadui" "5. Zhandouji Dadui" 
+	}
+	jet_mr = {
+		"1. Zhandouji Dadui" "2. Zhandouji Dadui" "3. Zhandouji Dadui" "4. Zhandouji Dadui" "5. Zhandouji Dadui" 
 	}
 	strategic_bomber = {
-		"第1战略轰炸机大队" "第2战略轰炸机大队" "第3战略轰炸机大队" "第4战略轰炸机大队" "第5战略轰炸机大队" "第6战略轰炸机大队" "第7战略轰炸机大队" "第8战略轰炸机大队" "第9战略轰炸机大队" "第10战略轰炸机大队" 
+		"1. STR Hongzhaji Dadui" "2. STR Hongzhaji Dadui" "3. STR Hongzhaji Dadui" "4. STR Hongzhaji Dadui" "5. STR Hongzhaji Dadui" 
 	}
 	tactical_bomber = {
-		"第1战术轰炸机大队" "第2战术轰炸机大队" "第3战术轰炸机大队" "第4战术轰炸机大队" "第5战术轰炸机大队" "第6战术轰炸机大队" "第7战术轰炸机大队" "第8战术轰炸机大队" "第9战术轰炸机大队" "第10战术轰炸机大队" 
+		"1. TAC Hongzhaji Dadui" "2. TAC Hongzhaji Dadui" "3. TAC Hongzhaji Dadui" "4. TAC Hongzhaji Dadui" "5. TAC Hongzhaji Dadui" 
+	}
+	jet_bomber = {
+		"1. TAC Hongzhaji Dadui" "2. TAC Hongzhaji Dadui" "3. TAC Hongzhaji Dadui" "4. TAC Hongzhaji Dadui" "5. TAC Hongzhaji Dadui" 
 	}
 	naval_bomber = {
-		"第1海军轰炸机大队" "第2海军轰炸机大队" "第3海军轰炸机大队" "第4海军轰炸机大队" "第5海军轰炸机大队" "第6海军轰炸机大队" "第7海军轰炸机大队" "第8海军轰炸机大队" "第9海军轰炸机大队" "第10海军轰炸机大队" "第11海军轰炸机大队" 
-		"第12海军轰炸机大队" "第13海军轰炸机大队" "第14海军轰炸机大队" "第15海军轰炸机大队" "第16海军轰炸机大队" "第17海军轰炸机大队" "第18海军轰炸机大队" "第19海军轰炸机大队" "第20海军轰炸机大队" 
+		"1. MAR Hongzhaji Dadui" "2. MAR Hongzhaji Dadui" "3. MAR Hongzhaji Dadui" "4. MAR Hongzhaji Dadui" "5. MAR Hongzhaji Dadui" "6. MAR Hongzhaji Dadui" "7. MAR Hongzhaji Dadui" "8. MAR Hongzhaji Dadui" "9. MAR Hongzhaji Dadui" "10. MAR Hongzhaji Dadui" 
 	}
 	cas = {
-		"第1俯冲轰炸机大队" "第2俯冲轰炸机大队" "第3俯冲轰炸机大队" "第4俯冲轰炸机大队" "第5俯冲轰炸机大队" "第6俯冲轰炸机大队" "第7俯冲轰炸机大队" "第8俯冲轰炸机大队" "第9俯冲轰炸机大队" "第10俯冲轰炸机大队" 
+		"1. DIV Hongzhaji Dadui" "2. DIV Hongzhaji Dadui" "3. DIV Hongzhaji Dadui" "4. DIV Hongzhaji Dadui" "5. DIV Hongzhaji Dadui" 
 	}
 	transport_plane = {
-		"第1空运机大队" "第2空运机大队" "第3空运机大队" "第4空运机大队" "第5空运机大队" "第6空运机大队" "第7空运机大队" "第8空运机大队" "第9空运机大队" 
+		"1. Kongyunji Dadui" "2. Kongyunji Dadui" "3. Kongyunji Dadui" "4. Kongyunji Dadui" "5. Kongyunji Dadui" 
 	}
 	battleship = {
-		"南星" "宝宁" 
+		"Nan'Shin" "Pao'Nim" 
 	}
 	light_cruiser = {
-		"海神" "赢威" 
+		"Hai'Shen" "Ying'Swei" 
 	}
 	heavy_cruiser = {
-		"平海" "宁海" 
+		"Ping'hai" "Ning'hai" 
 	}
 	battlecruiser = {
-		"飞鸿" "潮合" 
+		"Fei'Hung" "Chao'Ho" 
 	}
 	destroyer = {
-		"第1驱逐舰大队" "第2驱逐舰大队" "第3驱逐舰大队" 
+		"1. Quzujian Dadui" "2. Quzujian Dadui" "3. Quzujian Dadui" 
 	}
 	carrier = {
-		"南星" "宝宁" 
+		"Nan'Shin" "Pao'Nim" 
 	}
 	submarine = {
-		"第1潜艇部队" "第2潜艇部队" 
+		"1. Qianting Budui" "2. Qianting Budui" 
 	}
 	transport_ship = {
-		"第1运输大队" "第2运输大队" "第3运输大队" 
+		"1. Yunshuji Dadui" "2. Yunshuji Dadui" "3. Yunshuji Dadui" 
 	}
-
 }
 
-
 ministers = {
+	73000 = {
+		name = "Dalai Lama Tenzin Gyatso"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M73023_Dalai_Lama_jeune
+		head_of_state = benevolent_gentleman
+		start_date = 1936.1.1
+	}
 	73001 = {
-		name = "达赖十四世丹增嘉错"
+	 name = "Andruk Gonpo Tashi"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 chief_of_staff = school_of_psychology
+	 chief_of_army = elastic_defence_doctrine
+	 chief_of_navy = power_projection_doctrine
+	 start_date = 1946.1.1
+	 picture = M73072_Gompo_Tashi_Andrugtsang
+}
+73002 = {
+	 name = "Bapa Yeshe"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 chief_of_army = armoured_spearhead_doctrine
+	 start_date = 1946.1.1
+	 picture = M73020
+}
+73003 = {
+	 name = "Changlochen"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 foreign_minister = biased_intellectual
+	 start_date = 1936.1.1
+	 picture = M73021_Changlochen
+}
+73004 = {
+	 name = "Changra Depon"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 chief_of_staff = school_of_defence
+	 chief_of_army = static_defence_doctrine
+	 chief_of_navy = decisive_naval_battle_doctrine
+	 chief_of_air = army_aviation_doctrine
+	 start_date = 1936.1.1
+	 picture = M73022_Changra_Depon
+}
+73006 = {
+	 name = "Dingja"
+	 ideology = leninist
+	 loyalty = 1.00
+	 minister_of_security = man_of_the_people
+	 start_date = 1941.1.1
+	 picture = M73024_Dingja
+}
+73007 = {
+	 name = "Dodewa"
+	 ideology = leninist
+	 loyalty = 1.00
+	 armament_minister = infantry_proponent
+	 start_date = 1940.1.1
+	 picture = M73025_Dodewa
+}
+73008 = {
+	 name = "Gedun Choephel"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 foreign_minister = ideological_crusader
+	 start_date = 1936.1.1
+	 picture = M73026_Gedun_Choephel
+}
+73009 = {
+	 name = "George Tsarong"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 minister_of_intelligence = industrial_specialist
+	 start_date = 1942.1.1
+	 picture = M73027_George_Tsarong
+}
+73010 = {
+	 name = "Gyalo Dhondup"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 foreign_minister = ideological_crusader
+	 chief_of_staff = school_of_manoeuvre
+	 start_date = 1944.1.1
+	 picture = M73028_Gyalo_Dhondup
+}
+73011 = {
+	 name = "Gyato Wangdu"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 chief_of_staff = school_of_psychology
+	 chief_of_air = vertical_envelopment_doctrine
+	 start_date = 1946.1.1
+	 picture = M73029_Gyato_Wangdu
+}
+73012 = {
+	 name = "Jigme Taring"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 minister_of_intelligence = technical_specialist
+	 chief_of_staff = school_of_fire_support
+	 chief_of_army = elastic_defence_doctrine
+	 chief_of_air = air_superiority_doctrine
+	 chief_of_navy = decisive_naval_battle_doctrine
+	 start_date = 1936.1.1
+	 picture = M73029_Jigme_Taring_tradi
+}
+73013 = {
+	 name = "Kapshoba"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 minister_of_security = prince_of_terror
+	 start_date = 1937.1.1
+	 picture = M73031_Kapshoba
+}
+73014 = {
+	 name = "Kunphela"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 head_of_government = die_hard_reformer
+	 armament_minister = administrative_genius
+	 start_date = 1936.1.1
+	 picture = M73032_Kunphela
+}
+73015 = {
+	 name = "Kyibu"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 minister_of_security = compassionate_gentleman
+	 start_date = 1937.1.1
+	 picture = M73033_Kyibu
+}
+73016 = {
+	 name = "Langdun"
+	 ideology = fascistic
+	 loyalty = 1.00
+	 head_of_government = political_protege
+	 start_date = 1938.1.1
+	 picture = M73034_Langdun
+}
+73017 = {
+	 name = "Lhalu Se"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 minister_of_security = back_stabber
+	 start_date = 1936.1.1
+	 picture = M73035_Lhalu_Se
+}
+73018 = {
+	 name = "Lhawang Tobgyal Surkhang"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 foreign_minister = general_staffer
+	 start_date = 1936.1.1
+	 picture = M73036_Lhawang_Tobgyal
+}
+73019 = {
+	 name = "Liushar"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 foreign_minister = apologetic_clerk
+	 start_date = 1946.1.1
+	 picture = M73037_Liushar
+}
+73020 = {
+	 name = "Lukhangnga"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 minister_of_security = silent_lawyer
+	 start_date = 1938.1.1
+	 picture = M73038_Lukangnga
+}
+73021 = {
+	 name = "Mondo "
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 armament_minister = theoretical_scientist
+	 start_date = 1936.1.1
+	 picture = M73039_Mondo
+}
+73022 = {
+	 name = "Ngagchen Rinpoche"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 foreign_minister = ideological_crusader
+	 start_date = 1936.1.1
+	 picture = M73040_Ngagchen_Rinpoche
+}
+73023 = {
+	 name = "Ngapo Ngawang Jigme"
+	 ideology = stalinist
+	 loyalty = 1.00
+	 head_of_government = silent_workhorse
+	 start_date = 1936.1.1
+	 picture = M73051_Ngapoi_Ngawang_Jigme
+}
+73024 = {
+	 name = "Ngawang Gyaltsen"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 foreign_minister = great_compromiser
+	 start_date = 1938.1.1
+	 picture = M73057_Ngawang_Gyaltsen
+}
+73025 = {
+	 name = "Panchen Lama Choekyi Gyaltsen "
+	 ideology = stalinist
+	 loyalty = 1.00
+	 head_of_state = popular_figurehead
+	 start_date = 1944.1.1
+	 picture = M73058_Panchen_Lama
+}
+73026 = {
+	 name = "Phalha"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 minister_of_intelligence = dismal_enigma
+	 start_date = 1940.1.1
+	 picture = M73059_Phalha
+}
+73027 = {
+	 name = "Phunwang"
+	 ideology = left_wing_radical
+	 loyalty = 1.00
+	 head_of_government = naive_optimist
+	 start_date = 1936.1.1
+	 picture = M73055_Phunwang
+}
+73028 = {
+	 name = "Rabga Pangdatsang"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 minister_of_intelligence = political_specialist
+	 minister_of_security = crime_fighter
+	 start_date = 1936.1.1
+	 picture = M73056_Rabga_Pangdatsang
+}
+73029 = {
+	 name = "Ragashar"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 chief_of_staff = school_of_mass_combat
+	 chief_of_army = guns_and_butter_doctrine
+	 start_date = 1940.1.1
+	 picture = M73060_Ragashar
+}
+73030 = {
+	 name = "Rampa"
+	 ideology = leninist
+	 loyalty = 1.00
+	 minister_of_intelligence = political_specialist
+	 start_date = 1936.1.1
+	 picture = M73061_Rampa
+}
+73031 = {
+	 name = "Reginald Fox"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 minister_of_intelligence = logistics_specialist
+	 start_date = 1938.1.1
+	 picture = M73062_Reginald_Fox
+}
+73032 = {
+	 name = "Reting Rimpoche"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 head_of_government = pig_headed_isolationist
+	 start_date = 1936.1.1
+	 picture = M73002
+}
+73033 = {
+	 name = "Ringang"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 armament_minister = resource_industrialist
+	 start_date = 1937.1.1
+	 picture = M73063_Ringang
+}
+73034 = {
+	 name = "Seksing"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 minister_of_security = crooked_kleptocrat
+	 start_date = 1936.1.1
+	 picture = M73065_Seksing
+}
+73035 = {
+	 name = "Taktra Rinpoche"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 head_of_government = backroom_backstabber
+	 start_date = 1941.1.1
+	 picture = M73066_Taktra
+}
+#73036 = {
+#	 name = "Tashi Dorje Phunkhang"
+#	 ideology = paternal_autocrat
+#	 loyalty = 1.00
+#	 foreign_minister = iron_fisted_brute
+#	 start_date = 1938.1.1
+#	 picture = 
+#}
+73037 = {
+	 name = "Tendong Shappe"
+	 ideology = paternal_autocrat
+	 loyalty = 1.00
+	 chief_of_army = decisive_battle_doctrine
+	 chief_of_air = air_superiority_doctrine
+	 chief_of_navy = base_control_doctrine
+	 start_date = 1938.1.1
+	 picture = M73067_Tendong_Shappe
+}
+73038 = {
+	 name = "Tobgyal Pangdatsang"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 chief_of_staff = school_of_fire_support
+	 chief_of_army = guns_and_butter_doctrine
+	 chief_of_air = army_aviation_doctrine
+	 chief_of_navy = power_projection_doctrine
+	 start_date = 1936.1.1
+	 picture = MSocialDemocrat
+}
+73039 = {
+	 name = "Tsarong Dzasa"
+	 ideology = social_conservative
+	 loyalty = 1.00
+	 armament_minister = infantry_proponent
+	 chief_of_staff = school_of_defence
+	 chief_of_army = static_defence_doctrine
+	 chief_of_air = army_aviation_doctrine
+	 chief_of_navy = decisive_naval_battle_doctrine
+	 start_date = 1936.1.1
+	 picture = M73068_Tsarong
+}
+73040 = {
+	 name = "Yarphel Pangdatsang"
+	 ideology = social_liberal
+	 loyalty = 1.00
+	 armament_minister = laissez_faires_capitalist
+	 start_date = 1936.1.1
+	 picture = M73069_Yarphel_Pangdatsang
+}
+73041 = {
+	 name = "Yuthok"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 chief_of_staff = school_of_manoeuvre
+	 chief_of_army = decisive_battle_doctrine
+	 chief_of_air = air_superiority_doctrine
+	 chief_of_navy = base_control_doctrine
+	 start_date = 1936.1.1
+	 picture = M73070_Yuthok
+}
+73042 = {
+		name = "Dalai Lama Tenzin Gyatso"
 		ideology = paternal_autocrat
 		loyalty = 1.00
-		picture = M73001
-		head_of_state = pig_headed_isolationist
-		start_date = 1936.1.1
-	}
-	73002 = {
-		name = "五世热振活佛"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = M73002
-		head_of_government = old_general
-		foreign_minister = apologetic_clerk
-		minister_of_security = compassionate_gentleman
-		armament_minister = laissez_faires_capitalist
-		start_date = 1936.1.1
-	}
-	73004 = {
-		name = "孜本夏格巴"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = M73004
-		armament_minister = corrupt_kleptocrat
-		minister_of_security = prince_of_terror
-		start_date = 1936.1.1
-	}
-	73006 = {
-		name = "W.G·昆德林"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = M73006
-		minister_of_intelligence = research_specialist
-		armament_minister = administrative_genius
-		start_date = 1936.1.1
-	}
-	73007 = {
-		name = "甲多旺堆"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = M73007
-		chief_of_staff = school_of_manoeuvre
-		foreign_minister = general_staffer
-		armament_minister = tank_proponent
-		chief_of_army = armoured_spearhead_doctrine
-		chief_of_air = army_aviation_doctrine
-		start_date = 1936.1.1
-	}
-	73008 = {
-		name = "丹巴絳央"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = M73008
-		chief_of_army = elastic_defence_doctrine
-		armament_minister = infantry_proponent
-		minister_of_intelligence = research_specialist
-		chief_of_staff = school_of_fire_support
-		start_date = 1936.1.1
-	}
-	73009 = {
-		name = "嘉瑪桑佩"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = M73009
-		chief_of_navy = decisive_naval_battle_doctrine
-		armament_minister = battle_fleet_proponent
-		minister_of_security = efficient_sociopath
-		minister_of_intelligence = political_specialist
-		start_date = 1936.1.1
-	}
-	73010 = {
-		name = "桑颇·才旺仁增"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = M73010
-		chief_of_air = army_aviation_doctrine
-		armament_minister = air_to_ground_proponent
-		start_date = 1936.1.1
-	}
-	73041 = {
-		name = "大扎·阿旺松绕旦白坚参"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M73041
-		head_of_government = backroom_backstabber
-		foreign_minister = great_compromiser
-		minister_of_security = compassionate_gentleman
-		start_date = 1941.1.1
-	}
-	73042 = {
-		name = "根敦群培"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M73012
-		foreign_minister = biased_intellectual
-		minister_of_security = silent_lawyer
-		start_date = 1936.1.1
+		head_of_state = autocratic_charmer
+		picture = M73071_Dalai_Lama_adulte
+		start_date = 1946.1.1
 	}
 	73043 = {
-		name = "克特西格·萨马尔·里莫波切"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M73043
-		foreign_minister = ideological_crusader
-		start_date = 1936.1.1
+		name = "Dalai Lama Tenzin Gyatso"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M73071_Dalai_Lama_adulte
+		head_of_state = benevolent_gentleman
+		start_date = 1946.1.1
+	}
+	73044 = {
+	 name = "Ngapo Ngawang Jigme"
+	 ideology = leninist
+	 loyalty = 1.00
+	 foreign_minister = great_compromiser
+	 chief_of_staff = school_of_psychology
+	 chief_of_army = elastic_defence_doctrine
+	 chief_of_air = air_superiority_doctrine
+	 chief_of_navy = decisive_naval_battle_doctrine
+	 start_date = 1936.1.1
+	 picture = M73051_Ngapoi_Ngawang_Jigme
 	}
 	73045 = {
-		name = "吉姆·塔尔林"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M73045
-		foreign_minister = apologetic_clerk
-		armament_minister = military_entrepreneur
-		start_date = 1943.1.1
-	}
-	73047 = {
-		name = "甘霍吉姆·卡奇恩"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M73047
-		foreign_minister = the_cloak_n_dagger_schemer
-		start_date = 1944.1.1
-	}
-	73048 = {
-		name = "敦珠活佛"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M73048
-		foreign_minister = iron_fisted_brute
-		start_date = 1945.1.1
-	}
-	73050 = {
-		name = "卡霍西恩·特卡塞尔"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M73050
-		armament_minister = theoretical_scientist
-		minister_of_intelligence = technical_specialist
-		start_date = 1938.1.1
-	}
-	73052 = {
-		name = "拉鲁·才旺多吉"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M73019
-		armament_minister = submarine_proponent
-		chief_of_navy = indirect_approach_doctrine
-		start_date = 1939.1.1
-	}
-	73053 = {
-		name = "土普西恩·林根"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M73014
-		armament_minister = resource_industrialist
-		minister_of_intelligence = industrial_specialist
-		start_date = 1940.1.1
-	}
-	73055 = {
-		name = "巴巴益西"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M73020
-		armament_minister = air_superiority_proponent
-		minister_of_security = man_of_the_people
-		chief_of_staff = school_of_manoeuvre
-		chief_of_army = elastic_defence_doctrine
-		chief_of_air = air_superiority_doctrine
-		start_date = 1942.1.1
-	}
-	73060 = {
-		name = "嘉瑪桑佩"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M73016
-		minister_of_security = back_stabber
-		minister_of_intelligence = dismal_enigma
+	 name = "Changlochen"
+	 ideology = social_democrat
+	 loyalty = 1.00
+	 minister_of_intelligence = logistics_specialist
+	 minister_of_security = man_of_the_people
+	 start_date = 1936.1.1
+	 picture = M73021_Changlochen
+}
+	# Generic dummy ministers
+	95944 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
 		start_date = 1936.1.1
 	}
-	73064 = {
-		name = "肯帕·里拉波伊"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M73064
-		minister_of_security = crime_fighter
-		start_date = 1939.1.1
+	95945 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
 	}
-	73073 = {
-		name = "恩珠·贡布扎西"
+	95946 = {
+		name = "Nameless Clerk"
 		ideology = social_conservative
-		loyalty = 0.75
-		picture = M73017
-		chief_of_staff = school_of_psychology
-		start_date = 1938.1.1
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		start_date = 1936.1.1
 	}
-	73074 = {
-		name = "津巴嘉措"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M73018
-		chief_of_staff = school_of_defence
-		chief_of_army = static_defence_doctrine
-		start_date = 1939.1.1
+	95947 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
 	}
-	73078 = {
-		name = "夏格·朗吉多杰"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M73078
-		chief_of_army = decisive_battle_doctrine
-		chief_of_navy = open_seas_doctrine
-		start_date = 1942.1.1
+	95948 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		foreign_minister = mostly_harmless
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
 	}
-	73081 = {
-		name = "凯墨·索南旺堆"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M73081
-		chief_of_army = guns_and_butter_doctrine
-		start_date = 1943.1.1
+	95949 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_government = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		start_date = 1936.1.1
+	}
+	95950 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95951 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		start_date = 1936.1.1
+	}
+	95952 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
 	}
 }

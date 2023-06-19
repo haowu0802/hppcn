@@ -1,39 +1,141 @@
-division = {
-	name = "挪威陆军"
+theatre = {
+	name = "Kongelige Norwegan Overkommando"
 	location = 812
-	is_reserve = yes
-	regiment = { type = infantry_brigade name = "第1步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第2步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第4步兵旅" historical_model = 0 }
+	regiment = { type = hq_brigade name = "Oslo HQ" historical_model = 0 }	
+	division = {
+		name = "1. Divisjon"
+		location = 899
+		is_reserve = yes 
+		regiment = { type = infantry_brigade name = "Infanteriregiment 1" experience = 0 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "Infanteriregiment 2" experience = 0 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "Infanteriregiment 3" experience = 0 historical_model = 2 }
+		regiment = { type = horse_towed_support_brigade name = "Artilleri regiment 1" experience = 0 historical_model = 0 }
+	}	
+	division = {
+		name = "2. Divisjon"
+		location = 812
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "Infanteriregiment 4" experience = 0 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "Infanteriregiment 5" experience = 0 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "Infanteriregiment 6" experience = 0 historical_model = 2 }
+		regiment = { type = horse_towed_support_brigade name = "Artilleri regiment 2" experience = 0 historical_model = 2 }
+	}
+	division = {
+		name = "3. Divisjon"
+		location = 1018
+		is_reserve = yes 
+		regiment = { type = infantry_brigade name = "Infanteriregiment 7" experience = 0 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "Infanteriregiment 8" experience = 0 historical_model = 2 }
+		regiment = { type = horse_towed_support_brigade name = "Artilleri regiment 3" experience = 0 historical_model = 0 }
+	}
+	division = {
+		name = "4. Divisjon"
+		location = 808
+		is_reserve = yes 
+		regiment = { type = infantry_brigade name = "Infanteriregiment 9" experience = 0 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "Infanteriregiment 10" experience = 0 historical_model = 2 }
+		regiment = { type = horse_towed_support_brigade name = "Artilleri regiment 4" experience = 0 historical_model = 2 }
+	}	
+	division = {
+		name = "5. Divisjon"
+		location = 291
+		is_reserve = yes 
+		regiment = { type = infantry_brigade name = "Infanteriregiment 11" experience = 0 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "Infanteriregiment 12" experience = 0 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "Infanteriregiment 13" experience = 0 historical_model = 2 }
+		regiment = { type = horse_towed_support_brigade name = "Artilleri regiment 5" experience = 0 historical_model = 0 }
+	}	
+	division = {
+		name = "6. Divisjon"
+		location = 65
+		is_reserve = yes 
+		regiment = { type = infantry_brigade name = "Infanteriregiment 14" experience = 0 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "Infanteriregiment 15" experience = 0 historical_model = 2 }
+		regiment = { type = infantry_brigade name = "Infanteriregiment 16" experience = 0 historical_model = 2 }
+		regiment = { type = horse_towed_support_brigade name = "Artilleri regiment 6" experience = 0 historical_model = 2 }
+	}
+	division = {
+		name = "Hans Majestet Kongens Garde"
+		location = 812
+		is_reserve = no
+		regiment = { type = garrison_brigade name = "Garderegiment 1" experience = 0 historical_model = 2 experience = 30.000}
+		regiment = { type = militia_brigade name = "Garderegiment 2" experience = 0 historical_model = 2 experience = 30.000}		
+	}
+	division = {
+		name = "1. Dragonregiment"
+		location = 687
+		is_reserve = yes
+		regiment = { type = cavalry_brigade name = "Dragonregiment 1" experience = 0 historical_model = 2}
+		regiment = { type = cavalry_brigade name = "Dragonregiment 2" experience = 0 historical_model = 2}		
+	}
+	navy = {
+		name = "Ub錿v錺enet"
+		base = 808
+		location = 808
+		ship = { type = submarine name = "1. Undervannsb錿eskadre" experience = 0 historical_model = 0 }
+		ship = { type = submarine name = "2. Undervannsb錿eskadre" experience = 0 historical_model = 2 }
+	}
+	navy = {
+		name = "1. Sjoeforsvarsdistrikt"
+		base = 812
+		location = 812
+		ship = { type = heavy_cruiser name = "KNM Norge" experience = 0 historical_model = 0 pride = yes }
+		ship = { type = heavy_cruiser name = "KNM Eidsvold" experience = 0 historical_model = 0 }		
+		ship = { type = destroyer name = "1. Jagereskadre" experience = 0 historical_model = 0 }
+	}
+	navy = {
+		name = "2. Sj鴉orsvarsdistrikt"
+		base = 65
+		location = 65
+		ship = { type = heavy_cruiser name = "KNM Harald Haarfagre" experience = 0 historical_model = 0 }
+		ship = { type = heavy_cruiser name = "KNM Tordenskjold" experience = 0 historical_model = 0 }
+	}
+	air = {	   
+		name = "Luftforsvaret"
+		base = 812
+		location = 812
+		wing = { type = cas name = "H鎟ens 1. Bombeflygruppe" experience = 0 historical_model = 0 }
+	}
 }
-division = {
-	name = "第6军团"
-	location = 65
-	is_reserve = yes 
-	regiment = { type = infantry_brigade name = "第3步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第5步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第6步兵旅" historical_model = 0 }
+convoy_construction=
+{
+	country = NOR
+	id=
+	{
+		id=15220
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
 }
-navy = {
-	name = "第1海军编队"
-	base = 812
-	location = 812
-	ship = { type = submarine name = "第1潜艇支队" historical_model = 0 }
-	ship = { type = submarine name = "第2潜艇支队" historical_model = 0 }
+convoy_construction=
+{
+	country = NOR
+	id=
+	{
+		id=15221
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
 }
-
-navy = {
-	name = "第2海军编队"
-	base = 812
-	location = 812
-	ship = { type = destroyer name = "第1驱逐舰支队" historical_model = 0 }
-	ship = { type = destroyer name = "第2驱逐舰支队" historical_model = 0 }
-}
-
-navy = {
-	name = "第3海军编队"
-	base = 65
-	location = 65
-	ship = { type = heavy_cruiser name = "KNM 挪威号" historical_model = 0 pride = yes }
-	ship = { type = heavy_cruiser name = "KNM 艾德森沃尔德号" historical_model = 0 }
+convoy_construction=
+{
+	country = NOR
+	id=
+	{
+		id=15222
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
 }

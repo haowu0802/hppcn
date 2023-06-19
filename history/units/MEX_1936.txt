@@ -1,65 +1,73 @@
-corps = {
-	name = "墨西哥军团"
+theatre = {
+	name = "Alto Mando de M閤ico"
 	location = 9604
-	regiment = { type = hq_brigade name = "墨西哥军团指挥部" historical_model = 0 }
-	division= {
-		name = "总统卫队"
+	regiment = { type = hq_brigade name = "Mexico City HQ" historical_model = 0 }
+	corps = {
+		name = "Ejercito de Mexico"
 		location = 9604
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 1 }
-		regiment = { type = infantry_brigade historical_model = 1 }
-		regiment = { type = infantry_brigade historical_model = 1 }
+		regiment = { type = hq_brigade name = "Ejercito de Mexico HQ" historical_model = 0 }
+		division= {
+			name = "Guardia del Presidente"
+			location = 9604
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1. Regimiento de Infanter韆" experience = 0 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "2. Regimiento de Infanter韆" experience = 0 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "3. Regimiento de Infanter韆" experience = 0 historical_model = 2 }
+		}
+		division= {
+			name = "I Divisi髇 de Infanter韆"
+			location = 9604
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "4. Regimiento de Infanter韆" experience = 0 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "5. Regimiento de Infanter韆" experience = 0 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "6. Regimiento de Infanter韆" experience = 0 historical_model = 2 }
+		}
+		division= {
+			name = "II Divisi髇 de Infanter韆"
+			location = 9604
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "7. Regimiento de Infanter韆" experience = 0 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "8. Regimiento de Infanter韆" experience = 0 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "9. Regimiento de Infanter韆" experience = 0 historical_model = 2 }
+		}
+		division= {
+			name = "III Divisi髇 de Infanter韆"
+			location = 9604
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "10. Regimiento de Infanter韆" experience = 0 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "11. Regimiento de Infanter韆" experience = 0 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "12. Regimiento de Infanter韆" experience = 0 historical_model = 2 }
+		}
 	}
-	division= {
-		name = "第I步兵师"
-		location = 9604
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division= {
-		name = "第II步兵师"
-		location = 9604
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division= {
-		name = "第III步兵师"
-		location = 9604
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-}
-corps = {
-	name = "墨西哥骑兵"
-	location = 9238
-	regiment = { type = hq_brigade name = "墨西哥骑兵指挥部" historical_model = 0 }
-	division= {
-		name = "第I骑兵师"
+	corps = {
+		name = "Caballer韆 de Mexico"
 		location = 9238
-		is_reserve = yes
-		regiment = { type = cavalry_brigade historical_model = 0 }
-		regiment = { type = cavalry_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "Caballer韆 de Mexico HQ" historical_model = 0 }
+		division= {
+			name = "I Divisi髇 de Caballer韆"
+			location = 9238
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1. Regimiento de Caballer韆" experience = 0 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "2. Regimiento de Caballer韆" experience = 0 historical_model = 2 }
+		}
+		division= {
+			name = "II Divisi髇 de Caballer韆"
+			location = 9238
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "3. Regimiento de Caballer韆" experience = 0 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "4. Regimiento de Caballer韆" experience = 0 historical_model = 2 }
+		}
 	}
-	division= {
-		name = "第II骑兵师"
-		location = 9238
-		is_reserve = yes
-		regiment = { type = cavalry_brigade historical_model = 0 }
-		regiment = { type = cavalry_brigade historical_model = 0 }
+	navy = {
+		name = "Armada de M閤ico"
+		base = 9658
+		location = 9658
+		ship = { type = heavy_cruiser name = "ARM Anahuac" experience = 0 historical_model = 0 pride = yes }
+	}	
+	air = {
+		name = "Fuerza A閞ea Mexicana"
+		base = 9658
+		location = 9658
+		wing = { type = interceptor name = "1a Grupo A閞eo de Caza" experience = 0 historical_model = 0 }
 	}
 }
-air = {
-	name = "墨西哥航空部队"
-	base = 9658
-	location = 9658
-	wing = { type = interceptor name = "第1歼击机编队" historical_model = 0 }
-}
-
-
-

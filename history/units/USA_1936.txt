@@ -1,673 +1,687 @@
-last_election = 1932.11.8
-armygroup= {
-	name = "美国大陆指挥部"
-	location = 3658
-	regiment = { type = hq_brigade name = "美国大陆指挥部" historical_model = 0 }
+theatre = {
+	name = "East Coast High Command"
+	location = 4530 #Washington
+	regiment = { type = hq_brigade name = "East Coast High Command HQ" historical_model = 1 }
 	corps = {
-		name = "第1军团"
-		location = 7387
-		regiment = { type = hq_brigade name = "第1军指挥部" historical_model = 0 }
+		name = "I Corps"
+		location = 4016 #Boston
+		regiment = { type = hq_brigade name = "I Corps HQ" historical_model = 1 }
 		division = {
-			name = "第30'老山胡桃'师"
-			location = 7387
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第118步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第117步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第120步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第121步兵团" historical_model = 0 }
-		}
-	}
-	corps = {
-		name = "第2军团"
-		location = 4532
-		regiment = { type = hq_brigade name = "第2军指挥部" historical_model = 0 }
-		division= {
-			name = "国民警卫队第28'拱心石'师"
-			location = 4532
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第109步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第110步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第111步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第112步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "第29'蓝色和灰色'师"
-			location = 4467
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第115步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第116步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第175步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第176步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "国民警卫队第44师"
-			location = 4342
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第71步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第113步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第114步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第172步兵团" historical_model = 0 }
-		}
-	}
-	corps = {
-		name = "第3军团"
-		location = 7350
-		regiment = { type = hq_brigade name = "第3军指挥部" historical_model = 0 }
-		division = {
-			name = "国民警卫队第40'阳光'师"
-			location = 7350
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第159步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第160步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第184步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第185步兵团" historical_model = 0 }
-		}
-	}
-	corps = {
-	name = "第4军团"
-		location = 7482
-		regiment = { type = hq_brigade name = "第4军指挥部" historical_model = 0 }
-		division= {
-			name = "国民警卫队第31'大锅'师"
-			location = 7482
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第154步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第155步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第156步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第167步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "国民警卫队第43'胜利女神'师"
-			location = 4082
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第102步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第103步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第169步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第172步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "第1'第一队'骑兵师"
-			location = 7494
-			regiment = { type = cavalry_brigade name = "第1骑兵旅" historical_model = 0 }
-			regiment = { type = cavalry_brigade name = "第2骑兵旅" historical_model = 0 }
-		}
-	}
-	corps = {
-		name = "第5军团"
-		location = 3797
-		regiment = { type = hq_brigade name = "第5军指挥部" historical_model = 0 }
-			division= {
-			name = "国民警卫队第32'红箭'师"
-			location = 3797
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第125步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第126步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第127步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第128步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "第34'红牛'机械化师"
-			location = 8706
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第133步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第135步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第164步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第168步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "国民警卫队第37'七叶树'师"
-			location = 4333
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第145步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第146步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第147步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第166步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "国民警卫队第38'旋风'师"
-			location = 7197
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第149步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第150步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第151步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第152步兵团" historical_model = 0 }
-		}
-	}
-	corps = {
-		name = "第6军团"
-		location = 4016
-		regiment = { type = hq_brigade name = "第6军指挥部" historical_model = 0 }
-		division= {
-			name = "第1'红一纵队'师"
-			location = 4016
-			regiment = { type = infantry_brigade name = "第16步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第18步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第26步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "国民警卫队第26'美国人'师"
+			name = "9th Infantry Division"
 			location = 4016
 			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第101步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第104步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第181步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第182步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "36th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "37th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "5th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "13rd Infantry Regiment" experience = 10 historical_model = 2 }
+		}			
+		division = {
+			name = "26th 'Yankee' NG Division"
+			location = 4016
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "101st Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "182nd Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "104th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "181st Infantry Regiment" experience = 10 historical_model = 2 }
+		}
+		division = {
+			name = "43rd 'Winged Victory' NG Division"
+			location = 4016
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "169th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "170th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "103th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "172th Infantry Regiment" experience = 10 historical_model = 2 }
 		}
 	}
 	corps = {
-		name = "第7军团"
-		location = 4279
-		regiment = { type = hq_brigade name = "第7军指挥部" historical_model = 0 }
-		division= {
-			name = "国民警卫队第27'纽约'师"
+		name = "II Corps"
+		location = 4279 #Manhattan
+		regiment = { type = hq_brigade name = "II Corps HQ" historical_model = 1 }
+		division = {
+			name = "1st 'Big Red One' Division"
 			location = 4279
 			is_reserve = yes
-			regiment = { type = infantry_brigade  name = "第105步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade  name = "第106步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade  name = "第108步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade  name = "第165步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "16th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "18th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "26th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "28th Infantry Regiment" experience = 10 historical_model = 2 }				
+		}			
+		division = {
+			name = "27th 'Empire' NG Division"
+			location = 4279
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "105th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "106th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "107th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "108th Infantry Regiment" experience = 10 historical_model = 2 }
 		}
-		division= {
-			name = "国民警卫队第33'黄金十字'师"
+		division = {
+			name = "44th Infantry NG Division"
+			location = 4279
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "113rd Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "114th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "165th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "174th Infantry Regiment" experience = 10 historical_model = 2 }
+		}			
+	}	
+	corps = {
+		name = "III Corps"
+		location = 4467 #Baltimore
+		regiment = { type = hq_brigade name = "III Corps HQ" historical_model = 1 }
+		division = {
+			name = "8th 'Pathfinders' Division"
+			location = 4532
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "40th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "41st Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "12nd Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "34th Infantry Regiment" experience = 10 historical_model = 2 }
+		}			
+		division = {
+			name = "28th 'Keystone' NG Division"
+			location = 4532
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "109th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "110th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "111st Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "112nd Infantry Regiment" experience = 10 historical_model = 2 }
+		}
+		division = {
+			name = "29th 'Blue and Gray' NG Division"
+			location = 4530
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "1st Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "5th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "116th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "183rd Infantry Regiment" experience = 10 historical_model = 2 }
+		}			
+	}	
+	corps = {
+		name = "IV Corps"
+		location = 4333 #Atlanta
+		regiment = { type = hq_brigade name = "IV Corps HQ" historical_model = 1 }
+		division = {
+			name = "4th 'Ivy' Division"
+			location = 4333
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "39th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "48th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "8th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "22nd Infantry Regiment" experience = 10 historical_model = 2 }
+		}			
+		division = {
+			name = "30th 'Old Hickory' NG Division"
+			location = 7168
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "118th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "122nd Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "117th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "120th Infantry Regiment" experience = 10 historical_model = 2 }
+		}
+		division = {
+			name = "31st 'Dixie' NG Division"
+			location = 9389
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "155th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "156th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "154th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "167th Infantry Regiment" experience = 10 historical_model = 2 }
+		}			
+	}	
+	corps = {
+		name = "V Corps"
+		location = 4333 #Columbus
+		regiment = { type = hq_brigade name = "V Corps HQ" historical_model = 1 }
+		division = {
+			name = "5th 'Red Diamond' Division"
+			location = 4333
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "60th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "61st Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "10th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "11st Infantry Regiment" experience = 10 historical_model = 2 }
+		}			
+		division = {
+			name = "37th 'Buckeye' NG Division"
+			location = 4333
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "145th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "148th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "144th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "166th Infantry Regiment" experience = 10 historical_model = 2 }
+		}
+		division = {
+			name = "38th 'Cyclone Division' NG Division"
+			location = 7197
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "149th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "150th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "151st Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "152nd Infantry Regiment" experience = 10 historical_model = 2 }
+		}			
+	}
+	corps = {
+		name = "VI Corps"
+		location = 3538 #Fort Sheridan
+		regiment = { type = hq_brigade name = "VI Corps HQ" historical_model = 1 }
+		division = {
+			name = "6th 'Sightseeing Sixth' Division"
 			location = 7104
 			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第129步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第130步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第131步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第132步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "51st Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "52nd Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "2nd Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "6th Infantry Regiment" experience = 10 historical_model = 2 }
+		}			
+		division = {
+			name = "32nd 'Red Arrow' NG Division"
+			location = 3600
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "125th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "126th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "127th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "128th Infantry Regiment" experience = 10 historical_model = 2 }
 		}
-		division= {
-			name = "国民警卫队第35'圣菲'师"
+		division = {
+			name = "33rd 'Prairie' NG Division"
+			location = 7104
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "129th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "130th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "131th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "132th Infantry Regiment" experience = 10 historical_model = 2 }
+		}				
+	}
+	corps = {
+		name = "VII Corps"
+		location = 7281 #St louis
+		regiment = { type = hq_brigade name = "VII Corps HQ" historical_model = 1 }
+		division = {
+			name = "7th 'Bayonet' Division"
+			location = 7281
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "53rd Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "54th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "3rd Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "17th Infantry Regiment" experience = 10 historical_model = 2 }
+		}			
+		division = {
+			name = "34th 'Red Bull' NG Division"
+			location = 8783
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "133rd Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "168th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "135th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "165th Infantry Regiment" experience = 10 historical_model = 2 }
+		}
+		division = {
+			name = "35th 'Santa Fe' NG Division"
 			location = 8943
 			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第134步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第137步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第138步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第140步兵团" historical_model = 0 }
+			regiment = { type = militia_brigade name = "134th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "137th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "138th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "140th Infantry Regiment" experience = 10 historical_model = 2 }
+		}				
+	}		
+	corps = {
+		name = "VIII Corps"
+		location = 9329 #San Antonio
+		regiment = { type = hq_brigade name = "VIII Corps HQ" historical_model = 1 }
+		division = {
+			name = "2nd 'Indianhead' Division"
+			location = 9329
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1st Infantry Regiment" experience = 10 historical_model = 2 }			
+			regiment = { type = infantry_brigade name = "9th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "20th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "23rd Infantry Regiment" experience = 10 historical_model = 2 }
+		}			
+		division = {
+			name = "36th 'Texas' NG Division"
+			location = 7494
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "141st Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "142nd Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "143rd Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "144th Infantry Regiment" experience = 10 historical_model = 2 }
 		}
+		division = {
+			name = "45th NG Division"
+			location = 9016
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "157th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "158th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "179th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "180th Infantry Regiment" experience = 10 historical_model = 2 }
+		}
+		division = {
+			name = "1st Cavalry Division"
+			location = 9151
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1st Cavalry Brigade" experience = 10 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "2nd Cavalry Brigade" experience = 10 historical_model = 2 }
+			regiment = { type = truck_towed_support_brigade name = "82nd Field Artillery Regiment" experience = 10 historical_model = 3 }
+		}
+		division = {
+			name = "2nd Cavalry Division"
+			location = 8879
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "3rd Cavalry Brigade" experience = 10 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "4th Cavalry Brigade" experience = 10 historical_model = 2 }
+			regiment = { type = truck_towed_support_brigade name = "3rd Field Artillery Regiment" experience = 10 historical_model = 3 }
+		}		
 	}
 	corps = {
-		name = "第8军团"
-		location = 4342
-		regiment = { type = hq_brigade name = "第8军指挥部" historical_model = 0 }
-		division= {
-			name = "第2'印第安头像'师"
-			location = 4342
-			regiment = { type = infantry_brigade name = "第9步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第23步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第26步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "国民警卫队第36'德克萨斯'师"
-			location = 9121
+		name = "Panama Canal Department"
+		location = 7717
+		regiment = { type = hq_brigade name = "Panama Canal Department HQ" historical_model = 1 }	
+		division = {
+			name = "Panama Canal Division"
+			location = 7717
 			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第141步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第142步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第143步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第144步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "国民警卫队第45'雷鸟'师"
-			location = 8854
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第157步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第158步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第179步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第180步兵团" historical_model = 0 }
+			regiment = { type = garrison_brigade name = "14th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = garrison_brigade name = "33rd Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = garrison_brigade name = "42th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = garrison_brigade name = "65th Infantry Regiment" experience = 10 historical_model = 2 }
 		}
 	}
+	navy = {
+		name = "USN Carribean Fleet"
+		base = 7717
+		location = 7717
+		ship = { type = destroyer name = "1st Destroyer Division" experience = 10 historical_model = 0 }
+		ship = { type = destroyer name = "2nd Destroyer Division" experience = 10 historical_model = 0 }
+		ship = { type = destroyer name = "3rd Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = submarine name = "1st Submarine Division" experience = 10 historical_model = 2 }
+	}
+	navy = {
+		name = "USN Battleship Fleet 3"
+		base = 4900
+		location = 4900
+		ship = { type = battleship name = "USS New Mexico" experience = 10 historical_model = 3 }
+		ship = { type = battleship name = "USS Mississippi" experience = 10 historical_model = 3 }
+		ship = { type = battleship name = "USS Idaho" experience = 10 historical_model = 3 }
+		ship = { type = destroyer name = "4th Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "5th Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "6th Destroyer Division" experience = 10 historical_model = 1 }
+	}
+	navy = {
+		name = "USN Battleship Fleet 5"
+		base = 4900
+		location = 4900
+		ship = { type = battleship name = "USS Arkansas" experience = 10 historical_model = 0 }		
+		ship = { type = battleship name = "USS New York" experience = 10 historical_model = 1 }
+		ship = { type = battleship name = "USS Texas" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "36th Destroyer Division" experience = 10 historical_model = 7 }	
+		ship = { type = destroyer name = "37th Destroyer Division" experience = 10 historical_model = 7 }	
+	}
+	navy = {
+		name = "USN Cruiser Fleet 2"
+		base = 4900
+		location = 4900
+		ship = { type = light_cruiser name = "USS Omaha" experience = 10 historical_model = 2 }
+		ship = { type = light_cruiser name = "USS Milwaukee" experience = 10 historical_model = 2 }
+		ship = { type = light_cruiser name = "USS Cincinnati" experience = 10 historical_model = 2 }
+		ship = { type = light_cruiser name = "USS Memphis" experience = 10 historical_model = 2 }
+	}
+	navy = {
+		name = "USN Cruiser Fleet 7"
+		base = 4900
+		location = 4900
+		ship = { type = heavy_cruiser name = "USS Augusta" experience = 10 historical_model = 7 }
+		ship = { type = heavy_cruiser name = "USS Tuscaloosa" experience = 10 historical_model = 8 }
+	}
+	navy = {
+		name = "USS Ranger Taskforce"
+		base = 4900
+		location = 4900
+		ship = { type = carrier name = "USS Ranger" experience = 10 historical_model = 6 air = { location = 4900 wing = { type = cag experience = 10 historical_model = 1 }  wing = { type = cag experience = 10 historical_model = 1 } } }
+		ship = { type = destroyer name = "7th Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "8th Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "9th Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "10th Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "11st Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "12nd Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "13rd Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "14th Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "15th Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "16th Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "17th Destroyer Division" experience = 10 historical_model = 1 }
+	}
+	navy = {
+		name = "Atlantic Submarine Fleet"
+		base = 4900
+		location = 4900
+		ship = { type = submarine name = "2nd Submarine Division" experience = 10 historical_model = 2 }
+		ship = { type = submarine name = "3rd Submarine Division" experience = 10 historical_model = 2 }
+		ship = { type = submarine name = "4th Submarine Division" experience = 10 historical_model = 3 }
+		ship = { type = submarine name = "5th Submarine Division" experience = 10 historical_model = 3 }
+		ship = { type = submarine name = "6th Submarine Division" experience = 10 historical_model = 3 }
+		ship = { type = submarine name = "7th Submarine Division" experience = 10 historical_model = 3 }
+	}
+	navy = {
+		name = "Atlantic Transport Fleet"
+		base = 4900
+		location = 4900
+		ship = { type = transport_ship name = "Abner Doubleday Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Brigham Young Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "William B. Travis Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Peter Stuyvesant Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Henry L. Benning Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Casimir Pulaski Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Sam Houston Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Francis Scott Key Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Walter Reed Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Dolly Madison Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Frederick Douglass Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Clara Barton Flotilla" experience = 10 historical_model = 0 }
+	}
+
+	air = {
+		name = "1st USAAF Bombardment Wing"
+		base = 4530
+		location = 4530
+		wing = { type = cas name = "1st USAAF Dive Bomb. Wing" experience = 10 historical_model = 0 }
+		wing = { type = cas name = "2nd USAAF Dive Bomb. Wing" experience = 10 historical_model = 1 }
+		wing = { type = cas name = "3rd USAAF Dive Bomb. Wing" experience = 10 historical_model = 1 }
+	}
+	air = {
+		name = "5th USAAF Bombardment Wing"
+		base = 7717
+		location = 7717
+		wing = { type = tactical_bomber name = "5th USAAF Tactical Bomb. Wing" experience = 10 historical_model = 1 }
+	}
+	air = {
+		name = "US Army Airforce"
+		base = 4900
+		location = 4900
+		wing = { type = interceptor name = "9th USAAF Fighter Wing" experience = 10 historical_model = 1 }
+		wing = { type = tactical_bomber name = "2nd USAAF Tactical Bomb. Wing" experience = 10 historical_model = 0 }
+		wing = { type = transport_plane name = "1st USAAF Troop Carrier Wing" experience = 10 historical_model = 0 }
+		wing = { type = transport_plane name = "2nd USAAF Troop Carrier Wing" experience = 10 historical_model = 1 }
+	}
+	air = {
+		name = "USN Patrol Bombing Wing 1"
+		base = 4016
+		location = 4016
+		wing = { type = naval_bomber name = "USN Patrol Bombing Wing 1" experience = 10 historical_model = 0 }
+	}	
+}	
+theatre = {
+	name = "West Coast High Command"
+	location = 3658 #San Francisco
+	regiment = { type = hq_brigade name = "West Coast High Command HQ" historical_model = 1 }	
 	corps = {
-		name = "第9军团"
-		location = 7465
-		regiment = { type = hq_brigade name = "第9军指挥部" historical_model = 0 }
-		division= {
-			name = "第3'马林石'师"
-			location = 7465
-			regiment = { type = infantry_brigade name = "第7步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第15步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第30步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "国民警卫队第41'落日'师"
+		name = "IX Corps"
+		location = 6697 #Seattle
+		regiment = { type = hq_brigade name = "IX Corps HQ" historical_model = 1 }
+		division = {
+			name = "3rd 'Marne' Division"
 			location = 6697
 			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第161步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第162步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第163步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第187步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "4th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "7th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "30th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "38th Infantry Regiment" experience = 10 historical_model = 2 }
+		}			
+		division = {
+			name = "40th 'Sunburst' NG Division"
+			location = 3931
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "159th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "160th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "184th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "185th Infantry Regiment" experience = 10 historical_model = 2 }
 		}
+		division = {
+			name = "41st 'Sunset' NG Division"
+			location = 6774
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "161st Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "186th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "162nd Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = militia_brigade name = "163rd Infantry Regiment" experience = 10 historical_model = 2 }
+		}			
 	}
-}
-division= {
-	name = "波多黎各驻军"
-	location = 7670
-	regiment = { type = garrison_brigade name = "波多黎各步兵团" historical_model = 0 }
-}
-division= {
-	name = "檀香山驻军"
-	location = 5825
-	regiment = { type = garrison_brigade name = "檀香山步兵团" historical_model = 0 }
-}
-division= {
-	name = "圣诞节岛驻军"
-	location = 10667
-	regiment = { type = garrison_brigade name = "圣诞节岛步兵团" historical_model = 0 }
-}
-division= {
-	name = "贾维斯岛驻军"
-	location = 10666
-	regiment = { type = garrison_brigade name = "贾维斯岛步兵团" historical_model = 0 }
-}
-division= {
-	name = "巴尔米拉驻军"
-	location = 10665
-	regiment = { type = garrison_brigade name = "巴尔米拉步兵团" historical_model = 0 }
-}
-division= {
-	name = "凤凰岛驻军"
-	location = 10670
-	regiment = { type = garrison_brigade name = "凤凰岛步兵团" historical_model = 0 }
-}
-division= {
-	name = "中途岛驻军"
-	location = 10669
-	regiment = { type = garrison_brigade name = "中途岛步兵团" historical_model = 0 }
-}
-division= {
-	name = "阿图岛驻军"
-	location = 10684
-	regiment = { type = garrison_brigade name = "阿图岛步兵团" historical_model = 0 }
-}
-division= {
-	name = "约翰逊岛驻军"
-	location = 10668
-	regiment = { type = garrison_brigade name = "约翰逊岛步兵团" historical_model = 0 }
-}
-division= {
-	name = "威克岛驻军"
-	location = 10664
-	regiment = { type = garrison_brigade name = "威克岛步兵团" historical_model = 0 }
-}
-division= {
-	name = "关岛驻军"
-	location = 6119
-	regiment = { type = garrison_brigade name = "关岛步兵团" historical_model = 0 }
-}
-division = {
-	name = "菲律宾部队"
-	location = 6142
-	regiment = { type = infantry_brigade name = "第31步兵团" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第45步兵团" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第57步兵团" historical_model = 0 }
-}
-division = {
-	name = "巴拿马运河部队"
-	location = 7717
-	regiment = { type = garrison_brigade name = "第5步兵团" historical_model = 0 }
-	regiment = { type = garrison_brigade name = "第14步兵团" historical_model = 0 }
-	regiment = { type = garrison_brigade name = "第33步兵团" historical_model = 0 }
-}
-navy = {
-	name = "美国海军第1战列舰舰队"
-	base = 7350
-	location = 7350
-	ship = { type = carrier name = "列克星敦号" historical_model = 1 air = { location = 7350 wing = { type = cag historical_model = 1 } } air = { location = 7350 wing = { type = cag historical_model = 1 } } }
-	ship = { type = battleship name = "内华达号" historical_model = 1 }
-	ship = { type = battleship name = "亚利桑那号" historical_model = 1 }
-	ship = { type = battleship name = "宾夕法尼亚号" historical_model = 1 }
-}
-navy = {
-	name = "美国海军第2战列舰舰队"
-	base = 7350
-	location = 7350
-	ship = { type = carrier name = "萨拉托加号" historical_model = 1 air = { location = 7350 wing = { type = cag historical_model = 1 } } air = { location = 7350 wing = { type = cag historical_model = 1 } } }
-	ship = { type = battleship name = "俄克拉荷马号" historical_model = 1 }
-	ship = { type = battleship name = "田纳西号" historical_model = 1 pride = yes }
-	ship = { type = battleship name = "加利福尼亚号" historical_model = 1 }
-}
-navy = {
-	name = "美国海军第4战列舰舰队"
-	base = 7350
-	location = 7350
-	ship = { type = battleship name = "科罗拉多号" historical_model = 2 }
-	ship = { type = battleship name = "西弗吉尼亚号" historical_model = 2 }
-	ship = { type = battleship name = "马里兰号" historical_model = 2 }
-}
-navy = {
-	name = "美国海军第3巡洋舰舰队"
-	base = 7350
-	location = 7350
-	ship = { type = light_cruiser name = "里士满号" historical_model = 1 }
-	ship = { type = light_cruiser name = "特伦顿号" historical_model = 1 }
-	ship = { type = light_cruiser name = "康科德号" historical_model = 1 }
-	ship = { type = light_cruiser name = "罗利号" historical_model = 1 }
-	ship = { type = light_cruiser name = "底特律号" historical_model = 1 }
-}
-navy = {
-	name = "美国海军第4巡洋舰舰队"
-	base = 7350
-	location = 7350
-	ship = { type = heavy_cruiser name = "彭萨科拉号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "盐湖城号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "芝加哥号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "印第安纳波利斯号" historical_model = 1 }
-}
-navy = {
-	name = "美国海军第5巡洋舰舰队"
-	base = 7350
-	location = 7350
-	ship = { type = heavy_cruiser name = "北安普敦号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "切斯特号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "路易斯维尔号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "波特兰号" historical_model = 1 }
-}
-navy = {
-	name = "美国海军第6巡洋舰舰队"
-	base = 7350
-	location = 7350
-	ship = { type = heavy_cruiser name = "新奥尔良号" historical_model = 2 }
-	ship = { type = heavy_cruiser name = "阿斯托里亚号" historical_model = 2 }
-	ship = { type = heavy_cruiser name = "明尼阿波利斯号" historical_model = 2 }
-	ship = { type = heavy_cruiser name = "旧金山号" historical_model = 2 }
-}
-navy = {
-	name = "太平洋驱逐舰舰队"
-	base = 7350
-	location = 7350
-	ship = { type = destroyer name = "第1驱逐舰队" historical_model = 1 }
-	ship = { type = destroyer name = "第2驱逐舰队" historical_model = 1 }
-	ship = { type = destroyer name = "第3驱逐舰队" historical_model = 1 }
-}
-navy = {
-	name = "第1太平洋潜艇部队"
-	base = 7350
-	location = 7350
-	ship = { type = submarine name = "第1潜艇编队" historical_model = 1 }
-	ship = { type = submarine name = "第2潜艇编队" historical_model = 1 }
-	ship = { type = submarine name = "第3潜艇编队" historical_model = 1 }
-	ship = { type = submarine name = "第4潜艇编队" historical_model = 1 }
-}
-navy = {
-	name = "第2太平洋潜艇部队"
-	base = 7350
-	location = 7350
-	ship = { type = submarine name = "第5潜艇编队" historical_model = 0 }
-	ship = { type = submarine name = "第6潜艇编队" historical_model = 0 }
-}
-navy = {
-	name = "亚洲舰队"
-	base = 6142
-	location = 6142
-	ship = { type = destroyer name = "第13驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第14驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第15驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第31驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第32驱逐舰队" historical_model = 0 }
-	ship = { type = submarine name = "第7潜艇编队" historical_model = 1 }
-	ship = { type = submarine name = "第8潜艇编队" historical_model = 1 }
-}
-navy = {
-	name = "美国海军第2潜艇部队"
-	base = 6142
-	location = 6142
-	ship = { type = submarine name = "第9潜艇编队" historical_model = 1 }
-}
-navy = {
-	name = "西雅图舰队"
-	base = 6697
-	location = 6697
-	ship = { type = light_cruiser name = "马布尔号" historical_model = 1 }
-	ship = { type = destroyer name = "第16驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第47驱逐舰队" historical_model = 0 }
-}
-navy = {
-	name = "哥伦比亚舰队"
-	base = 6697
-	location = 6697
-	ship = { type = heavy_cruiser name = "休斯顿号" historical_model = 1 }
-	ship = { type = destroyer name = "第43驱逐舰队" historical_model = 0 }
-	ship = { type = submarine name = "第10潜艇编队" historical_model = 1 }
-}
-navy = {
-	name = "加勒比海舰队"
-	base = 7717
-	location = 7717
-	ship = { type = destroyer name = "第17驱逐舰队" historical_model = 0 }
-	ship = { type = submarine name = "第11潜艇编队" historical_model = 1 }
-	ship = { type = destroyer name = "第41驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第42驱逐舰队" historical_model = 0 }
-}
-navy = {
-	name = "美国海军第3战列舰舰队"
-	base = 4900
-	location = 4900
-	ship = { type = battleship name = "新墨西哥号" historical_model = 1 }
-	ship = { type = battleship name = "密西西比号" historical_model = 1 }
-	ship = { type = battleship name = "爱达荷号" historical_model = 1 }
-	ship = { type = destroyer name = "第44驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第45驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第46驱逐舰队" historical_model = 0 }
-}
-navy = {
-	name = "美国海军第5战列舰舰队"
-	base = 4900
-	location = 4900
-	ship = { type = battleship name = "阿肯色号" historical_model = 0 }
-	ship = { type = battleship name = "纽约号" historical_model = 1 }
-	ship = { type = battleship name = "德克萨斯号" historical_model = 1 }
-}
-navy = {
-	name = "美国海军第2巡洋舰舰队"
-	base = 4900
-	location = 4900
-	ship = { type = light_cruiser name = "奥马哈号" historical_model = 1 }
-	ship = { type = light_cruiser name = "密尔沃基号" historical_model = 1 }
-	ship = { type = light_cruiser name = "辛辛那提号" historical_model = 1 }
-	ship = { type = light_cruiser name = "孟菲斯号" historical_model = 1 }
-}
-navy = {
-	name = "美国海军第7巡洋舰舰队"
-	base = 4900
-	location = 4900
-	ship = { type = heavy_cruiser name = "奥古斯塔号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "塔斯卡卢萨号" historical_model = 2 }
-}
-navy = {
-	name = "巡逻任务部队"
-	base = 4900
-	location = 4900
-	ship = { type = carrier name = "巡逻号" historical_model = 2 air = { location = 4900 wing = { type = cag historical_model = 1 } } air = { location = 4900 wing = { type = cag historical_model = 1 } } }
-	ship = { type = destroyer name = "第18驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第19驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第20驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第21驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第22驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第23驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第24驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第25驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第26驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第27驱逐舰队" historical_model = 0 }
-	ship = { type = destroyer name = "第28驱逐舰队" historical_model = 0 }
-}
-navy = {
-	name = "大西洋底1潜艇部队"
-	base = 4900
-	location = 4900
-	ship = { type = submarine name = "第12潜艇编队" historical_model = 1 }
-	ship = { type = submarine name = "第13潜艇编队" historical_model = 1 }
-	ship = { type = submarine name = "第14潜艇编队" historical_model = 1 }
-	ship = { type = submarine name = "第15潜艇编队" historical_model = 1 }
-}
-navy = {
-	name = "大西洋底2潜艇部队"
-	base = 4900
-	location = 4900
-	ship = { type = submarine name = "第16潜艇编队" historical_model = 2 }
-	ship = { type = submarine name = "第17潜艇编队" historical_model = 2 }
-}
-navy = {
-	name = "大西洋运输舰队"
-	base = 4900
-	location = 4900
-	ship = { type = transport_ship name = "押尼珥布尔迪运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "杨百翰运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "威廉 特拉维斯运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "彼得斯泰弗森特运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "亨利 本宁运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "卡西米尔普拉斯基运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "萨姆休斯敦运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "弗朗西斯斯科特基运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "瓦尔特雷德运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "多利麦迪逊运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "弗雷德里克道格拉斯运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "克拉拉巴顿运输队" historical_model = 0 }
-}
-navy = {
-	name = "太平洋运输舰队"
-	base = 7350
-	location = 7350
-	ship = { type = transport_ship name = "查尔斯固特异运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "安东尼韦恩运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "约翰汉考克运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "塞缪尔德克斯特运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "克莱恩运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "威廉麦金利运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "乔治 A.卡斯特运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "贝尔蒙特运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "狄金森运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "莫利皮彻运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "德沃夏克运输队" historical_model = 0 }
-	ship = { type = transport_ship name = "斯图尔特运输队" historical_model = 0 }
-}
-air = {
-	name = "美国陆军航空队第1战斗机联队"
-	base = 7350
-	location = 7350
-	wing = { type = interceptor name = "美国陆军航空队第6战斗机联队" historical_model = 1 }
-}
-air = {
-	name = "美国陆军航空队第1轰炸机联队"
-	base = 4530
-	location = 4530
-	wing = { type = tactical_bomber name = "第1轰炸机联队" historical_model = 0 }
-}
-air = {
-	name = "美国陆军航空队第5轰炸机联队"
-	base = 7717
-	location = 7717
-	wing = { type = tactical_bomber name = "第5轰炸机联队" historical_model = 0 }
-}
-air = {
-	name = "美国陆军航空队第7轰炸机联队"
-	base = 6697
-	location = 6697
-	wing = { type = tactical_bomber name = "第1轰炸机联队" historical_model = 0 }
-}
-air = {
-	name = "美国空军"
-	base = 4279
-	location = 4279
-	wing = { type = interceptor name = "美国陆军航空队第9战斗机联队" historical_model = 1 }
-	wing = { type = tactical_bomber name = "第2轰炸机联队" historical_model = 0 }
-}
-
-military_construction = {
-	country = USA
-	carrier = {
-		name = "企业号"
-		historical_model = 1
+	navy = {
+		name = "USN Battleship Fleet 1"
+		base = 7350
+		location = 7350
+		ship = { type = carrier name = "USS Lexington" experience = 10 historical_model = 3 air = { location = 7350 wing = { type = cag experience = 10 historical_model = 1 } wing = { type = cag experience = 10 historical_model = 1 } } }
+		ship = { type = battleship name = "USS Nevada" experience = 10 historical_model = 2 }
+		ship = { type = battleship name = "USS Arizona" experience = 10 historical_model = 3 }
+		ship = { type = battleship name = "USS Pennsylvania" experience = 10 historical_model = 3 }
 	}
-	cost = 7.43
-	progress = 0
-	duration = 277
-}
-military_construction = {
-	country = USA
-	cag = {
-		name = "企业号舰载机第1连队"
-		historical_model = 1
+	navy = {
+		name = "USN Battleship Fleet 2"
+		base = 7350
+		location = 7350
+		ship = { type = carrier name = "USS Saratoga" experience = 10 historical_model = 3 air = { location = 7350 wing = { type = cag experience = 10 historical_model = 1 } wing = { type = cag experience = 10 historical_model = 1 } } }
+		ship = { type = battleship name = "USS Oklahoma" experience = 10 historical_model = 2 }
+		ship = { type = battleship name = "USS Tennessee" experience = 10 historical_model = 4 }
+		ship = { type = battleship name = "USS California" experience = 10 historical_model = 4 }
 	}
-	cost = 13.92
-	progress = 0
-	duration = 264
-}
-military_construction = {
-	country = USA
-	cag = {
-		name = "企业号舰载机第2连队"
-		historical_model = 1
+	navy = {
+		name = "USN Battleship Fleet 4"
+		base = 7350
+		location = 7350
+		ship = { type = battleship name = "USS Colorado" experience = 10 historical_model = 5 }
+		ship = { type = battleship name = "USS West Virginia" experience = 10 historical_model = 5 }
+		ship = { type = battleship name = "USS Maryland" experience = 10 historical_model = 5 }
 	}
-	cost = 13.92
-	progress = 0
-	duration = 264
-}
-military_construction = {
-	country = USA
-	carrier = {
-		name = "约克敦号"
-		historical_model = 2
+	navy = {
+		name = "USN Cruiser Fleet 3"
+		base = 7350
+		location = 7350
+		ship = { type = light_cruiser name = "USS Richmond" experience = 10 historical_model = 2 }
+		ship = { type = light_cruiser name = "USS Trenton" experience = 10 historical_model = 2 }
+		ship = { type = light_cruiser name = "USS Concord" experience = 10 historical_model = 2 }
+		ship = { type = light_cruiser name = "USS Raleigh" experience = 10 historical_model = 2 }
+		ship = { type = light_cruiser name = "USS Detroit" experience = 10 historical_model = 2 }
 	}
-	cost = 4.80
-	progress = 0
-	duration = 269
-}
-military_construction = {
-	country = USA
-	cag = {
-		name = "约克敦号舰载机第1连队"
-		historical_model = 1
+	navy = {
+		name = "USN Cruiser Fleet 4"
+		base = 7350
+		location = 7350
+		ship = { type = heavy_cruiser name = "USS Pensacola" experience = 10 historical_model = 5 }
+		ship = { type = heavy_cruiser name = "USS Salt Lake City" experience = 10 historical_model = 5 }
+		ship = { type = heavy_cruiser name = "USS Chicago" experience = 10 historical_model = 6 }
+		ship = { type = heavy_cruiser name = "USS Indianapolis" experience = 10 historical_model = 7 }
 	}
-	cost = 13.92
-	progress = 0
-	duration = 269
-}
-military_construction = {
-	country = USA
-	cag = {
-		name = "约克敦号舰载机第2连队"
-		historical_model = 1
+	navy = {
+		name = "USN Cruiser Fleet 5"
+		base = 7350
+		location = 7350
+		ship = { type = heavy_cruiser name = "USS Northampton" experience = 10 historical_model = 6 }
+		ship = { type = heavy_cruiser name = "USS Chester" experience = 10 historical_model = 6 }
+		ship = { type = heavy_cruiser name = "USS Louisville" experience = 10 historical_model = 6 }
+		ship = { type = heavy_cruiser name = "USS Portland" experience = 10 historical_model = 7 }
 	}
-	cost = 13.92
-	progress = 0
-	duration = 269
+	navy = {
+		name = "USN Cruiser Fleet 6"
+		base = 7350
+		location = 7350
+		ship = { type = heavy_cruiser name = "USS New Orleans" experience = 10 historical_model = 8 }
+		ship = { type = heavy_cruiser name = "USS Astoria" experience = 10 historical_model = 8 }
+		ship = { type = heavy_cruiser name = "USS Minneapolis" experience = 10 historical_model = 8 }
+		ship = { type = heavy_cruiser name = "USS San Francisco" experience = 10 historical_model = 8 }
+	}
+	navy = {
+		name = "Pacific Destroyer Fleet"
+		base = 7350
+		location = 7350
+		ship = { type = destroyer name = "18th Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "19th Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "20th Destroyer Division" experience = 10 historical_model = 1 }		
+	}
+	navy = {
+		name = "Pacific Submarine Fleet"
+		base = 7350
+		location = 7350
+		ship = { type = submarine name = "8th Submarine Division" experience = 10 historical_model = 3 }
+		ship = { type = submarine name = "9th Submarine Division" experience = 10 historical_model = 3 }
+		ship = { type = submarine name = "10th Submarine Division" experience = 10 historical_model = 5 }
+		ship = { type = submarine name = "11st Submarine Division" experience = 10 historical_model = 6 }
+	}
+	navy = {
+		name = "Asiatic Fleet"
+		base = 6142
+		location = 6142
+		ship = { type = destroyer name = "21st Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "22nd Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "23rd Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "24th Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "25th Destroyer Division" experience = 10 historical_model = 1 }
+	}
+	navy = {
+		name = "Asiatic Submarine Fleet"
+		base = 6142
+		location = 6142
+		ship = { type = submarine name = "12nd Submarine Division" experience = 10 historical_model = 7 }
+		ship = { type = submarine name = "13rd Submarine Division" experience = 10 historical_model = 8 }
+	}
+	navy = {
+		name = "USN Seattle Fleet"
+		base = 6697
+		location = 6697
+		ship = { type = heavy_cruiser name = "USS Houston" experience = 10 historical_model = 6 }			
+		ship = { type = light_cruiser name = "USS Marblehead" experience = 10 historical_model = 2 }
+		ship = { type = destroyer name = "28th Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "29th Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "30th Destroyer Division" experience = 10 historical_model = 1 }		
+	}
+	navy = {
+		name = "Pacific Transport Fleet"
+		base = 7350
+		location = 7350
+		ship = { type = destroyer name = "31st Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "32nd Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "33rd Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "34th Destroyer Division" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "35th Destroyer Division" experience = 10 historical_model = 1 }		
+		ship = { type = transport_ship name = "Charles Goodyear Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Anthony Wayne Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "John Hancock Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Samuel Dexter Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Stephen C. Crane Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "William McKinley Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "George A. Custer Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "August Belmont Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Emily Dickinson Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Molly Pitcher Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Antonin Dvorak Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "J. E. B. Stuart Flotilla" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "1st USAAF Fighter Wing"
+		base = 7350
+		location = 7350
+		wing = { type = interceptor name = "1st USAAF Fighter Wing" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "2nd USAAF Fighter Wing"
+		base = 7350
+		location = 7350
+		wing = { type = interceptor name = "2nd USAAF Fighter Wing" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "3rd USAAF Fighter Wing"
+		base = 7350
+		location = 7350
+		wing = { type = interceptor name = "3rd USAAF Fighter Wing" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "4th USAAF Fighter Wing"
+		base = 7350
+		location = 7350
+		wing = { type = interceptor name = "4th USAAF Fighter Wing" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "5th USAAF Fighter Wing"
+		base = 7350
+		location = 7350
+		wing = { type = interceptor name = "5th USAAF Fighter Wing" experience = 10 historical_model = 1 }
+	}
+	air = {
+		name = "7th USAAF Bombardment Wing"
+		base = 6697
+		location = 6697
+		wing = { type = tactical_bomber name = "1st USAAF Tactical Bomb. Wing" experience = 10 historical_model = 0 }
+	}
+}	
+theatre = {
+	name = "Pacific High Command"
+	location = 5825 #Pearl Harbour
+	regiment = { type = hq_brigade name = "Pacific High Command HQ" historical_model = 1 }
+	corps = {
+		name = "Hawaiian Department"
+		location = 5825
+		regiment = { type = hq_brigade name = "Hawaiian Department HQ" historical_model = 1 }	
+		division = {
+			name = "Hawaiian Division"
+			location = 5825
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "19th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = garrison_brigade name = "21st Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = garrison_brigade name = "27th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = garrison_brigade name = "35th Infantry Regiment" experience = 10 historical_model = 2 }
+		}
+	}	
+	corps = {
+		name = "Philippine Department"
+		location = 6124
+		regiment = { type = hq_brigade name = "Philippine Department HQ" historical_model = 1 }	
+		division = {
+			name = "Philippine Division"
+			location = 6124
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "45th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = garrison_brigade name = "57th Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = garrison_brigade name = "43rd Infantry Regiment" experience = 10 historical_model = 2 }
+			regiment = { type = garrison_brigade name = "44th Infantry Regiment" experience = 10 historical_model = 2 }
+		}	
+	}
 }
 military_construction = {
 	country = USA
 	heavy_cruiser = {
-		name = "昆西号"
-		historical_model = 2
+		name = "USS Quincy"
+		historical_model = 8
 	}
 	cost = 4.80
-	progress = 0
-	duration = 159
+	progress = 55
+	duration = 161
 }
 military_construction = {
 	country = USA
 	destroyer = {
-		name = "第4驱逐舰队"
-		historical_model = 1
+		name = "38th Destroyer Division"
+		historical_model = 8
 	}
 	cost = 1.60
-	progress = 0
-	duration = 31
+	progress = 8
+	duration = 238
 }
 military_construction = {
 	country = USA
 	destroyer = {
-		name = "第29驱逐舰队"
-		historical_model = 1
+		name = "39th Destroyer Division"
+		historical_model = 8
 	}
 	cost = 1.60
-	progress = 0
-	duration = 61
+	progress = 23
+	duration = 262
 }
 military_construction = {
 	country = USA
 	submarine = {
-		name = "第18潜艇编队"
-		historical_model = 2
+		name = "14th Submarine Division"
+		historical_model = 9
 	}
 	cost = 1.60
-	progress = 0
-	duration = 121
+	progress = 62
+	duration = 72
 }

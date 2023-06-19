@@ -1,72 +1,87 @@
-corps = {
-	name = "阿富汗皇家军队"
+theatre = {
+	name = "Afghanistan"
 	location = 9191
-	regiment = { type = hq_brigade name = "阿富汗皇家军队指挥部" historical_model = 0 }
-	division= {
-		name = "皇家卫队"
+	regiment = { type = hq_brigade name = "Kabul HQ" historical_model = 0 }
+	corps = {
+		name = "Royal Afghani Army"
 		location = 9191
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "Royal Afghani Army HQ" historical_model = 0 }
+		division= {
+			name = "Royal Afghan Household Division"
+			location = 9191
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1st Royal Guards Cavalry Regiment" historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "2nd Royal Guards Cavalry Regiment" historical_model = 3 }
+			regiment = { type = infantry_brigade name = "1st Royal Guards Infantry Regiment" historical_model = 3 }
+			regiment = { type = super_heavy_armor_brigade name = "1st Royal Tank Brigade" historical_model = 0 }
+					}
+		division= {
+			name = "Farah Military District"
+			location = 9191
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "South District Cavalry Regiment" historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "Farah Cavalry Regiment" historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Center District Infantry Regiment" historical_model = 3 }
+			regiment = { type = engineer_brigade name = "Farah District Engineer Battalion" historical_model = 0 }
+		}		
+		division= {
+			name = "Ghazni Militia"
+			location = 9191
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "Ghazni Cavalry Regiment" historical_model = 3 }
+			regiment = { type = militia_brigade name = "1st Ghazni Militia Regiment" historical_model = 3 }
+		}		
+		division= {
+			name = "Faizabad Militia"
+			location = 9191
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "Faizabad Cavalry Regiment" historical_model = 3 }
+			regiment = { type = militia_brigade name = "1st Faizabad Militia Regiment" historical_model = 3 }
+		}
 	}
-	division= {
-		name = "法扎巴德民兵"
-		location = 9191
-		is_reserve = yes
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
+	corps = {
+		name = "Herat Army"
+		location = 9189
+		regiment = { type = hq_brigade name = "Herat Army HQ" historical_model = 0 }
+		division= {
+			name = "Herat Militia"
+			location = 9189
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "Herat Cavalry Regiment" historical_model = 3 }
+			regiment = { type = militia_brigade name = "1st Herat Militia Regiment" historical_model = 3 }
+		}
+		division= {
+			name = "Mazar-e Shar Militia"
+			location = 9189
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "Mazar-e Shar Cavalry Regiment" historical_model = 3 }
+			regiment = { type = militia_brigade name = "1st Mazar-e Shar Militia Regiment" historical_model = 3 }
+		}
+		division= {
+			name = "Maymeneh Militia"
+			location = 9189
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "Maymeneh Cavalry Regiment" historical_model = 3 }
+			regiment = { type = militia_brigade name = "1st Maymeneh Militia Regiment" historical_model = 3 }
+		}		
 	}
-	division= {
-		name = "加兹尼民兵"
-		location = 9191
-		is_reserve = yes
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-	}
-}
-corps = {
-	name = "赫拉特军"
-	location = 9191
-	regiment = { type = hq_brigade name = "赫拉特军指挥部" historical_model = 0 }
-	division= {
-		name = "赫拉特民兵"
-		location = 9191
-		is_reserve = yes
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-	}
-	division= {
-		name = "赫拉特骑兵"
-		location = 9191
-		is_reserve = yes
-		regiment = { type = cavalry_brigade historical_model = 0 }
-		regiment = { type = cavalry_brigade historical_model = 0 }
-		regiment = { type = cavalry_brigade historical_model = 0 }
-	}
-}
-corps = {
-	name = "坎大哈军"
-	location = 9316
-	regiment = { type = hq_brigade name = "坎大哈军指挥部" historical_model = 0 }
-	division= {
-		name = "贾拉拉巴德民兵"
+	corps = {
+		name = "Kandahar Army"
 		location = 9316
-		is_reserve = yes
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-	}
-	division= {
-		name = "坎大哈民兵"
-		location = 9316
-		is_reserve = yes
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "Kandahar Army HQ" historical_model = 0 }
+		division= {
+			name = "Kandahar Militia"
+			location = 9316
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "Kandahar Cavalry Regiment" historical_model = 3 }
+			regiment = { type = militia_brigade name = "1st Kandahar Militia Regiment" historical_model = 3 }
+		}		
+		division= {
+			name = "Jalalabad Militia"
+			location = 9316
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "Jalalabad Cavalry Regiment" historical_model = 3 }
+			regiment = { type = militia_brigade name = "1st Jalalabad Militia Regiment" historical_model = 3 }
+		}
 	}
 }
-
-

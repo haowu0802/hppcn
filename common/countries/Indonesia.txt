@@ -1,6 +1,8 @@
 color = { 86  106  135 }
 graphical_culture = Japanese
 
+
+
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -17,130 +19,160 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
 	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
+	}	
 }
 
 unit_names = {
 	infantry_brigade = {
-		"第1师" "第2师" "第3师" "第4师" "第5师" "第6师" "第7师" "第8师" "果皮师" "第9师" "第10师" 
-		"第11师" "第12师" "第13师" "第14师" "第15师" "第16师" "第17师" "第18师" "第19师" "第20师" "第21师" 
-		"第22师" "第23师" "第24师" "第25师" "第26师" "第27师" "第28师" "第29师" "第30师" 
+		"1e Divisie" "2e Divisie" "3e Divisie" "4e Divisie" "5e Divisie" "6e Divisie" "7e Divisie" "8e Divisie" "Peel Divisie" "9e Divisie" "10e Divisie" 
+		"11e Divisie" "12e Divisie" "13e Divisie" "14e Divisie" "15e Divisie" "16e Divisie" "17e Divisie" "18e Divisie" "19e Divisie" "20e Divisie" "21e Divisie" 
+		"22e Divisie" "23e Divisie" "24e Divisie" "25e Divisie" "26e Divisie" "27e Divisie" "28e Divisie" "29e Divisie" "30e Divisie" 
 	}
 	cavalry_brigade = {
-		"第1骑兵师" "第2骑兵师" "第3骑兵师" "第4骑兵师" "第5骑兵师" "第6骑兵师" "第7骑兵师" "第8骑兵师" "第9骑兵师" "第10骑兵师" 
+		"1e Huzaren te Paard" "2e Huzaren te Paard" "3e Huzaren te Paard" "4e Huzaren te Paard" "5e Huzaren te Paard" "6e Huzaren te Paard" "7e Huzaren te Paard" "8e Huzaren te Paard" "9e Huzaren te Paard" "10e Huzaren te Paard" 
 	}
 	motorized_brigade = {
-		"第1摩托化师" "第2摩托化师" "第3摩托化师" "第4摩托化师" "第5摩托化师" "第6摩托化师" "第7摩托化师" "第8摩托化师" "第9摩托化师" "第10摩托化师" "第11摩托化师" 
-		"第12摩托化师" "第13摩托化师" "第14摩托化师" "第15摩托化师" "第16摩托化师" "第17摩托化师" "第18摩托化师" "第19摩托化师" "第20摩托化师" 
+		"1e Gemotoriseerde Huzaren" "2e Gemotoriseerde Huzaren" "3e Gemotoriseerde Huzaren" "4e Gemotoriseerde Huzaren" "5e Gemotoriseerde Huzaren" "6e Gemotoriseerde Huzaren" "7e Gemotoriseerde Huzaren" "8e Gemotoriseerde Huzaren" "9e Gemotoriseerde Huzaren" "10e Gemotoriseerde Huzaren" "11e Gemotoriseerde Huzaren" 
+		"12e Gemotoriseerde Huzaren" "13e Gemotoriseerde Huzaren" "14e Gemotoriseerde Huzaren" "15e Gemotoriseerde Huzaren" "16e Gemotoriseerde Huzaren" "17e Gemotoriseerde Huzaren" "18e Gemotoriseerde Huzaren" "19e Gemotoriseerde Huzaren" "20e Gemotoriseerde Huzaren" 
 	}
 	mechanized_brigade = {
-		"第1机械化师" "第2机械化师" "第3机械化师" "第4机械化师" "第5机械化师" "第6机械化师" "第7机械化师" "第8机械化师" "第9机械化师" "第10机械化师" "第11机械化师" 
-		"第12机械化师" "第13机械化师" "第14机械化师" "第15机械化师" "第16机械化师" "第17机械化师" "第18机械化师" "第19机械化师" "第20机械化师" 
+		"1e Lichte Divisie" "2e Lichte Divisie" "3e Lichte Divisie" "4e Lichte Divisie" "5e Lichte Divisie" "6e Lichte Divisie" "7e Lichte Divisie" "8e Lichte Divisie" "9e Lichte Divisie" "10e Lichte Divisie" "11e Lichte Divisie" 
+		"12e Lichte Divisie" "13e Lichte Divisie" "14e Lichte Divisie" "15e Lichte Divisie" "16e Lichte Divisie" "17e Lichte Divisie" "18e Lichte Divisie" "19e Lichte Divisie" "20e Lichte Divisie" 
 	}
 	light_armor_brigade = {
-		"第1装甲师" "第2装甲师" "第3装甲师" "第4装甲师" "第5装甲师" "第6装甲师" "第7装甲师" "第8装甲师" "第9装甲师" "第10装甲师" "第11装甲师" 
-		"第12装甲师" "第13装甲师" "第14装甲师" "第15装甲师" 
+		"1e Pantser Division" "2e Pantser Division" "3e Pantser Division" "4e Pantser Division" "5e Pantser Division" "6e Pantser Division" "7e Pantser Division" "8e Pantser Division" "9e Pantser Division" "10e Pantser Division" "11e Pantser Division" 
+		"12e Pantser Division" "13e Pantser Division" "14e Pantser Division" "15e Pantser Division" 
 	}
 	armor_brigade = {
-		"第1装甲师" "第2装甲师" "第3装甲师" "第4装甲师" "第5装甲师" "第6装甲师" "第7装甲师" "第8装甲师" "第9装甲师" "第10装甲师" "第11装甲师" 
-		"第12装甲师" "第13装甲师" "第14装甲师" "第15装甲师" 
+		"1e Pantser Division" "2e Pantser Division" "3e Pantser Division" "4e Pantser Division" "5e Pantser Division" "6e Pantser Division" "7e Pantser Division" "8e Pantser Division" "9e Pantser Division" "10e Pantser Division" "11e Pantser Division" 
+		"12e Pantser Division" "13e Pantser Division" "14e Pantser Division" "15e Pantser Division" 
 	}
 	paratrooper_brigade = {
-		"第1伞兵师" "第2伞兵师" "第3伞兵师" "第4伞兵师" "第5伞兵师" "第6伞兵师" "第7伞兵师" "第8伞兵师" "第9伞兵师" "第10伞兵师" 
+		"1e Parachutisten Divisie" "2e Parachutisten Divisie" "3e Parachutisten Divisie" "4e Parachutisten Divisie" "5e Parachutisten Divisie" "6e Parachutisten Divisie" "7e Parachutisten Divisie" "8e Parachutisten Divisie" "9e Parachutisten Divisie" "10e Parachutisten Divisie" 
 	}
 	marine_brigade = {
-		"第1海军陆战师" "第2海军陆战师" "第3海军陆战师" "第4海军陆战师" "第5海军陆战师" "第6海军陆战师" "第7海军陆战师" "第8海军陆战师" "第9海军陆战师" "第10海军陆战师" "第11海军陆战师" 
-		"第12海军陆战师" "第13海军陆战师" "第14海军陆战师" "第15海军陆战师" "第16海军陆战师" "第17海军陆战师" "第18海军陆战师" "第19海军陆战师" "第20海军陆战师" 
+		"1e Mariniers Divisie" "2e Mariniers Divisie" "3e Mariniers Divisie" "4e Mariniers Divisie" "5e Mariniers Divisie" "6e Mariniers Divisie" "7e Mariniers Divisie" "8e Mariniers Divisie" "9e Mariniers Divisie" "10e Mariniers Divisie" "11e Mariniers Divisie" 
+		"12e Mariniers Divisie" "13e Mariniers Divisie" "14e Mariniers Divisie" "15e Mariniers Divisie" "16e Mariniers Divisie" "17e Mariniers Divisie" "18e Mariniers Divisie" "19e Mariniers Divisie" "20e Mariniers Divisie" 
 	}
 	bergsjaeger_brigade = {
-		"第1山地师" "第2山地师" "第3山地师" "第4山地师" "第5山地师" "第6山地师" "第7山地师" "第8山地师" "第9山地师" "第10山地师" 
+		"1e Jager Divisie" "2e Jager Divisie" "3e Jager Divisie" "4e Jager Divisie" "5e Jager Divisie" "6e Jager Divisie" "7e Jager Divisie" "8e Jager Divisie" "9e Jager Divisie" "10e Jager Divisie" 
 	}
 	garrison_brigade = {
-		"第1师" "第2师" "第3师" "第4师" "第5师" "第6师" "第7师" "第8师" "第9师" "第10师" "第11师" 
-		"第12师" "第13师" "第14师" "第15师" "第16师" "第17师" "第18师" "第19师" "第20师" 
+		"1e Divisie" "2e Divisie" "3e Divisie" "4e Divisie" "5e Divisie" "6e Divisie" "7e Divisie" "8e Divisie" "9e Divisie" "10e Divisie" "11e Divisie" 
+		"12e Divisie" "13e Divisie" "14e Divisie" "15e Divisie" "16e Divisie" "17e Divisie" "18e Divisie" "19e Divisie" "20e Divisie" 
 	}
 	hq_brigade = {
-		"第1指挥部" "第2指挥部" "O.L.Z." "第3指挥部" "第4指挥部" 
+		"1e Veldeger" "2e Veldeger" "O.L.Z." "3e Veldeger" "4e Veldeger" 
 	}
 	militia_brigade = {
-		"'弗里斯兰'民兵师" "'艾瑟尔'民兵师" "'努尔德-布拉邦'民兵师" "'林堡'民兵师" "'泽兰'民兵师" "'斯特林·海尔登'民兵师" "第1民兵师" "第2民兵师" "第3民兵师" "第4民兵师" "第5民兵师" 
-		"第6民兵师" "第7民兵师" "第8民兵师" "第9民兵师" "第10民兵师" "第11民兵师" "第12民兵师" "第13民兵师" "第14民兵师" "第15民兵师" "第16民兵师" 
-		"第17民兵师" "第18民兵师" "第19民兵师" "第20民兵师" 
+		"Territoriaal Bevel Friesland" "Territoriaal Bevel Overijssel" "Territoriaal Bevel Noord-Brabant" "Territoriaal Bevel Limburg" "Commando Zeeland" "Stelling Den Helder" "1e Militie Divisie" "2e Militie Divisie" "3e Militie Divisie" "4e Militie Divisie" "5e Militie Divisie" 
+		"6e Militie Divisie" "7e Militie Divisie" "8e Militie Divisie" "9e Militie Divisie" "10e Militie Divisie" "11e Militie Divisie" "12e Militie Divisie" "13e Militie Divisie" "14e Militie Divisie" "15e Militie Divisie" "16e Militie Divisie" 
+		"17e Militie Divisie" "18e Militie Divisie" "19e Militie Divisie" "20e Militie Divisie" 
 	}
 	multi_role = {
-		"第1战斗机联队" "第2战斗机联队" "第3战斗机联队" "第4战斗机联队" "第5战斗机联队" "第6战斗机联队" "第7战斗机联队" "第8战斗机联队" "第9战斗机联队" "第10战斗机联队" "第11战斗机联队" 
-		"第12战斗机联队" "第13战斗机联队" "第14战斗机联队" "第15战斗机联队" "第16战斗机联队" "第17战斗机联队" "第18战斗机联队" "第19战斗机联队" "第20战斗机联队" 
+		"1e Jachtvliegtuig Groep" "2e Jachtvliegtuig Groep" "3e Jachtvliegtuig Groep" "4e Jachtvliegtuig Groep" "5e Jachtvliegtuig Groep" "6e Jachtvliegtuig Groep" "7e Jachtvliegtuig Groep" "8e Jachtvliegtuig Groep" "9e Jachtvliegtuig Groep" "10e Jachtvliegtuig Groep" "11e Jachtvliegtuig Groep" 
+		"12e Jachtvliegtuig Groep" "13e Jachtvliegtuig Groep" "14e Jachtvliegtuig Groep" "15e Jachtvliegtuig Groep" "16e Jachtvliegtuig Groep" "17e Jachtvliegtuig Groep" "18e Jachtvliegtuig Groep" "19e Jachtvliegtuig Groep" "20e Jachtvliegtuig Groep" 
 	}
 	interceptor = {
-		"第1截击机联队" "第2截击机联队" "第3截击机联队" "第4截击机联队" "第5截击机联队" "第6截击机联队" "第7截击机联队" "第8截击机联队" "第9截击机联队" "第10截击机联队" "第11截击机联队" 
-		"第12截击机联队" "第13截击机联队" "第14截击机联队" "第15截击机联队" "第16截击机联队" "第17截击机联队" "第18截击机联队" "第19截击机联队" "第20截击机联队" 
+		"1e Jachtvliegtuig Groep" "2e Jachtvliegtuig Groep" "3e Jachtvliegtuig Groep" "4e Jachtvliegtuig Groep" "5e Jachtvliegtuig Groep" "6e Jachtvliegtuig Groep" "7e Jachtvliegtuig Groep" "8e Jachtvliegtuig Groep" "9e Jachtvliegtuig Groep" "10e Jachtvliegtuig Groep" "11e Jachtvliegtuig Groep" 
+		"12e Jachtvliegtuig Groep" "13e Jachtvliegtuig Groep" "14e Jachtvliegtuig Groep" "15e Jachtvliegtuig Groep" "16e Jachtvliegtuig Groep" "17e Jachtvliegtuig Groep" "18e Jachtvliegtuig Groep" "19e Jachtvliegtuig Groep" "20e Jachtvliegtuig Groep" 
+	}
+	jet_int = {
+		"1e Jachtvliegtuig Groep" "2e Jachtvliegtuig Groep" "3e Jachtvliegtuig Groep" "4e Jachtvliegtuig Groep" "5e Jachtvliegtuig Groep" "6e Jachtvliegtuig Groep" "7e Jachtvliegtuig Groep" "8e Jachtvliegtuig Groep" "9e Jachtvliegtuig Groep" "10e Jachtvliegtuig Groep" "11e Jachtvliegtuig Groep" 
+		"12e Jachtvliegtuig Groep" "13e Jachtvliegtuig Groep" "14e Jachtvliegtuig Groep" "15e Jachtvliegtuig Groep" "16e Jachtvliegtuig Groep" "17e Jachtvliegtuig Groep" "18e Jachtvliegtuig Groep" "19e Jachtvliegtuig Groep" "20e Jachtvliegtuig Groep" 
+	}
+	jet_mr = {
+		"1e Jachtvliegtuig Groep" "2e Jachtvliegtuig Groep" "3e Jachtvliegtuig Groep" "4e Jachtvliegtuig Groep" "5e Jachtvliegtuig Groep" "6e Jachtvliegtuig Groep" "7e Jachtvliegtuig Groep" "8e Jachtvliegtuig Groep" "9e Jachtvliegtuig Groep" "10e Jachtvliegtuig Groep" "11e Jachtvliegtuig Groep" 
+		"12e Jachtvliegtuig Groep" "13e Jachtvliegtuig Groep" "14e Jachtvliegtuig Groep" "15e Jachtvliegtuig Groep" "16e Jachtvliegtuig Groep" "17e Jachtvliegtuig Groep" "18e Jachtvliegtuig Groep" "19e Jachtvliegtuig Groep" "20e Jachtvliegtuig Groep" 
 	}
 	strategic_bomber = {
-		"第1战略轰炸机联队" "第2战略轰炸机联队" "第3战略轰炸机联队" "第第4战略轰炸机联队" "第5战略轰炸机联队" "6战略轰炸机联队" "第7战略轰炸机联队" "第8战略轰炸机联队" "第9战略轰炸机联队" "第10战略轰炸机联队" "第11战略轰炸机联队" 
-		"第12战略轰炸机联队" "第13战略轰炸机联队" "第14战略轰炸机联队" "第15战略轰炸机联队" "第16战略轰炸机联队" "第17战略轰炸机联队" "第18战略轰炸机联队" "第19战略轰炸机联队" "第20战略轰炸机联队" 
+		"1e Zware Bombardeervliegtuig Groep" "2e Zware Bombardeervliegtuig Groep" "3e Zware Bombardeervliegtuig Groep" "4e Zware Bombardeervliegtuig Groep" "5e Zware Bombardeervliegtuig Groep" "6e Zware Bombardeervliegtuig Groep" "7e Zware Bombardeervliegtuig Groep" "8e Zware Bombardeervliegtuig Groep" "9e Zware Bombardeervliegtuig Groep" "10e Zware Bombardeervliegtuig Groep" "11e Zware Bombardeervliegtuig Groep" 
+		"12e Zware Bombardeervliegtuig Groep" "13e Zware Bombardeervliegtuig Groep" "14e Zware Bombardeervliegtuig Groep" "15e Zware Bombardeervliegtuig Groep" "16e Zware Bombardeervliegtuig Groep" "17e Zware Bombardeervliegtuig Groep" "18e Zware Bombardeervliegtuig Groep" "19e Zware Bombardeervliegtuig Groep" "20e Zware Bombardeervliegtuig Groep" 
 	}
 	tactical_bomber = {
-		"第1战术轰炸机联队" "第2战术轰炸机联队" "第3战术轰炸机联队" "第4战术轰炸机联队" "第5战术轰炸机联队" "第6战术轰炸机联队" "第7战术轰炸机联队" "第8战术轰炸机联队" "第9战术轰炸机联队" "第10战术轰炸机联队" "第11战术轰炸机联队" 
-		"第12战术轰炸机联队" "第13战术轰炸机联队" "第14战术轰炸机联队" "第15战术轰炸机联队" "第16战术轰炸机联队" "第17战术轰炸机联队" "第18战术轰炸机联队" "19e Tac. Bombardeervliegtuig Groep" "20e Tac. Bombardeervliegtuig Groep" 
+		"1e Licht Bombardeervliegtuig Groep" "2e Licht Bombardeervliegtuig Groep" "3e Licht Bombardeervliegtuig Groep" "4e Licht Bombardeervliegtuig Groep" "5e Licht Bombardeervliegtuig Groep" "6e Licht Bombardeervliegtuig Groep" "7e Licht Bombardeervliegtuig Groep" "8e Licht Bombardeervliegtuig Groep" "9e Licht Bombardeervliegtuig Groep" "10e Licht Bombardeervliegtuig Groep" "11e Licht Bombardeervliegtuig Groep" 
+		"12e Licht Bombardeervliegtuig Groep" "13e Licht Bombardeervliegtuig Groep" "14e Licht Bombardeervliegtuig Groep" "15e Licht Bombardeervliegtuig Groep" "16e Licht Bombardeervliegtuig Groep" "17e Licht Bombardeervliegtuig Groep" "18e Licht Bombardeervliegtuig Groep" "19e Tac. Bombardeervliegtuig Groep" "20e Tac. Bombardeervliegtuig Groep" 
+	}
+	jet_bomber = {
+		"1e Licht Bombardeervliegtuig Groep" "2e Licht Bombardeervliegtuig Groep" "3e Licht Bombardeervliegtuig Groep" "4e Licht Bombardeervliegtuig Groep" "5e Licht Bombardeervliegtuig Groep" "6e Licht Bombardeervliegtuig Groep" "7e Licht Bombardeervliegtuig Groep" "8e Licht Bombardeervliegtuig Groep" "9e Licht Bombardeervliegtuig Groep" "10e Licht Bombardeervliegtuig Groep" "11e Licht Bombardeervliegtuig Groep" 
+		"12e Licht Bombardeervliegtuig Groep" "13e Licht Bombardeervliegtuig Groep" "14e Licht Bombardeervliegtuig Groep" "15e Licht Bombardeervliegtuig Groep" "16e Licht Bombardeervliegtuig Groep" "17e Licht Bombardeervliegtuig Groep" "18e Licht Bombardeervliegtuig Groep" "19e Tac. Bombardeervliegtuig Groep" "20e Tac. Bombardeervliegtuig Groep" 
 	}
 	naval_bomber = {
-		"第1海军轰炸机联队" "第2海军轰炸机联队" "第3海军轰炸机联队" "第4海军轰炸机联队" "第5海军轰炸机联队" "第6海军轰炸机联队" "第7海军轰炸机联队" "第8海军轰炸机联队" "第9海军轰炸机联队" "第10海军轰炸机联队" "第11海军轰炸机联队" 
-		"第第12海军轰炸机联队" "第13海军轰炸机联队" "第14海军轰炸机联队" "第15海军轰炸机联队" "第16海军轰炸机联队" "第17海军轰炸机联队" "第18海军轰炸机联队" "第19海军轰炸机联队" "第20海军轰炸机联队" "1鱼雷轰炸机联队" "第2鱼雷轰炸机联队" 
-		"第3鱼雷轰炸机联队" "第4鱼雷轰炸机联队" "第5鱼雷轰炸机联队" "第6鱼雷轰炸机联队" "第7鱼雷轰炸机联队" "第8鱼雷轰炸机联队" "第9鱼雷轰炸机联队" "第10鱼雷轰炸机联队" "第11鱼雷轰炸机联队" "第12鱼雷轰炸机联队" "第13鱼雷轰炸机联队" 
-		"第14鱼雷轰炸机联队" "第15鱼雷轰炸机联队" "第16鱼雷轰炸机联队" "第17鱼雷轰炸机联队" "第18鱼雷轰炸机联队" "第19鱼雷轰炸机联队" "第20鱼雷轰炸机联队" 
+		"1e Marine Bombardeervliegtuig Groep" "2e Marine Bombardeervliegtuig Groep" "3e Marine Bombardeervliegtuig Groep" "4e Marine Bombardeervliegtuig Groep" "5e Marine Bombardeervliegtuig Groep" "6e Marine Bombardeervliegtuig Groep" "7e Marine Bombardeervliegtuig Groep" "8e Marine Bombardeervliegtuig Groep" "9e Marine Bombardeervliegtuig Groep" "10e Marine Bombardeervliegtuig Groep" "11e Marine Bombardeervliegtuig Groep" 
+		"12e Marine Bombardeervliegtuig Groep" "13e Marine Bombardeervliegtuig Groep" "14e Marine Bombardeervliegtuig Groep" "15e Marine Bombardeervliegtuig Groep" "16e Marine Bombardeervliegtuig Groep" "17e Marine Bombardeervliegtuig Groep" "18e Marine Bombardeervliegtuig Groep" "19e Marine Bombardeervliegtuig Groep" "20e Marine Bombardeervliegtuig Groep" "1e Marine Torpedovliegtuig Groep" "2e Marine Torpedovliegtuig Groep" 
+		"3e Marine Torpedovliegtuig Groep" "4e Marine Torpedovliegtuig Groep" "5e Marine Torpedovliegtuig Groep" "6e Marine Torpedovliegtuig Groep" "7e Marine Torpedovliegtuig Groep" "8e Marine Torpedovliegtuig Groep" "9e Marine Torpedovliegtuig Groep" "10e Marine Torpedovliegtuig Groep" "11e Marine Torpedovliegtuig Groep" "12e Marine Torpedovliegtuig Groep" "13e Marine Torpedovliegtuig Groep" 
+		"14e Marine Torpedovliegtuig Groep" "15e Marine Torpedovliegtuig Groep" "16e Marine Torpedovliegtuig Groep" "17e Marine Torpedovliegtuig Groep" "18e Marine Torpedovliegtuig Groep" "19e Marine Torpedovliegtuig Groep" "20e Marine Torpedovliegtuig Groep" 
 	}
 	cas = {
-		"第1俯冲轰炸机联队" "第2俯冲轰炸机联队" "第3俯冲轰炸机联队" "第4俯冲轰炸机联队" "第5俯冲轰炸机联队" "第6俯冲轰炸机联队" "第7俯冲轰炸机联队" "第8俯冲轰炸机联队" "第9俯冲轰炸机联队" "第10俯冲轰炸机联队" "第11俯冲轰炸机联队" 
-		"第12俯冲轰炸机联队" "第13俯冲轰炸机联队" "第14俯冲轰炸机联队" "第15俯冲轰炸机联队" "第16俯冲轰炸机联队" "第17俯冲轰炸机联队" "第18俯冲轰炸机联队" "第19俯冲轰炸机联队" "第20俯冲轰炸机联队" 
+		"1e Duik Bombardeervliegtuig Groep" "2e Duik Bombardeervliegtuig Groep" "3e Duik Bombardeervliegtuig Groep" "4e Duik Bombardeervliegtuig Groep" "5e Duik Bombardeervliegtuig Groep" "6e Duik Bombardeervliegtuig Groep" "7e Duik Bombardeervliegtuig Groep" "8e Duik Bombardeervliegtuig Groep" "9e Duik Bombardeervliegtuig Groep" "10e Duik Bombardeervliegtuig Groep" "11e Duik Bombardeervliegtuig Groep" 
+		"12e Duik Bombardeervliegtuig Groep" "13e Duik Bombardeervliegtuig Groep" "14e Duik Bombardeervliegtuig Groep" "15e Duik Bombardeervliegtuig Groep" "16e Duik Bombardeervliegtuig Groep" "17e Duik Bombardeervliegtuig Groep" "18e Duik Bombardeervliegtuig Groep" "19e Duik Bombardeervliegtuig Groep" "20e Duik Bombardeervliegtuig Groep" 
 	}
 	transport_plane = {
-		"第1运输机联队" "第2运输机联队" "第3运输机联队" "第4运输机联队" "第5运输机联队" "第6运输机联队" "第7运输机联队" "第8运输机联队" "第9运输机联队" "第10运输机联队" "第11运输机联队" 
-		"第12运输机联队" "第13运输机联队" "第14运输机联队" "第15运输机联队" "第16运输机联队" "第17运输机联队" "第18运输机联队" "第19运输机联队" "第20运输机联队" 
+		"1e Transportvliegtuig Groep" "2e Transportvliegtuig Groep" "3e Transportvliegtuig Groep" "4e Transportvliegtuig Groep" "5e Transportvliegtuig Groep" "6e Transportvliegtuig Groep" "7e Transportvliegtuig Groep" "8e Transportvliegtuig Groep" "9e Transportvliegtuig Groep" "10e Transportvliegtuig Groep" "11e Transportvliegtuig Groep" 
+		"12e Transportvliegtuig Groep" "13e Transportvliegtuig Groep" "14e Transportvliegtuig Groep" "15e Transportvliegtuig Groep" "16e Transportvliegtuig Groep" "17e Transportvliegtuig Groep" "18e Transportvliegtuig Groep" "19e Transportvliegtuig Groep" "20e Transportvliegtuig Groep" 
 	}
 	battleship = {
-		"HNMS 七省号" "HNMS 鲁耶特号" "HNMS 长鼻号" "HNMS 海恩号" "HNMS 亨利公爵号" "HNMS 摄政王后号" "HNMS 爪哇号" "HNMS 苏门答腊号" "HNMS 凡·斯贝克号" "HNMS 维特德号" 
+		"HrMs Reinier Claeszen" "HrMs Evertsen" "HrMs Piet Hein" "HrMs Kortenaer" "HrMs Koningen Regentes" "HrMs Hertog Hendrik" "HrMs Van Speijk" "HrMs Witte de With" "HrMs Van Amstel"
 	}
 	light_cruiser = {
-		"HNMS 长鼻号" "HNMS 雅各布·万·海姆斯卡克号" "HNMS 鲁耶特号" "HNMS 爪哇号" "HNMS 苏门答腊号" "HNMS 西里伯斯号" "HNMS 和睦号" "HNMS 基克顿号" "HNMS 凡·盖伦号" "HNMS 凡·尼斯号" "HNMS 凡·金斯伯根号" 
-		"HNMS 成功号" "HNMS 提迦克·海德斯号" "HNMS 班克特号" "HNMS 克隆提娜号" "HNMS 凡·斯贝克号" "HNMS 维特德号" "HNMS 亚伯拉罕·克里金森号" "HNMS 菲利普·凡·阿拉莫德号" "HNMS 布卢瓦·凡·特斯隆号" "HNMS 扬·凡·布拉克尔号" "HNMS 彼得·佛罗斯号" 
-		"HNMS 威廉凡德赞号" "HNMS 亚伯拉罕·凡·胡斯特号" "HNMS 马尼克斯号" "HNMS 约翰玛提斯·凡·拿骚号" "HNMS 苦号" "HNMS 凡·阿姆斯泰尔号" "HNMS 凡·爱威吉克号" "HNMS 杜波依斯号" "HNMS 新西兰人号" "HNMS 万·兹吉儿号" "HNMS 艾萨克·斯威尔号" 
-		"HNMS 加伦布鲁号" "HNMS 泗水号" "HNMS 巴特号" "HNMS 陶瓷号" "HNMS 安汶号" "HNMS 班达号" "HNMS 特尔纳特号" "HNMS 布鲁号" "HNMS 莫罗塔伊号" "HNMS 蒂多雷号" "HNMS 弗里斯兰号" 
-		"HNMS 荷兰号" "HNMS 德伦特号" "HNMS 格罗宁根号" "HNMS 艾瑟尔号" "HNMS 格尔德兰号" "HNMS 西兰号" "HNMS 乌得勒支号" "HNMS 布拉班特号" "HNMS 林堡号" 
+		"HrMs De Ruyter"
+		"HrMs Tromp" "HrMs Jacob van Heemskerck"
+		"HrMs Eendracht" "HrMs De Zeven Provinci雗"
+		"HrMs Java" "HrMs Sumatra" "HrMs Celebes"
+		"HrMs Batjan" "HrMs Ceram" "HrMs Ambon" "HrMs Banda" "HrMs Ternate" "HrMs Boeroe" "HrMs Morotai" "HrMs Tidore" 
 	}
 	heavy_cruiser = {
-		"HNMS 七省号" "HNMS 长鼻号" "HNMS 雅各布·万·海姆斯卡克号" "HNMS 鲁耶特号" "HNMS 爪哇号" "HNMS 苏门答腊号" "HNMS 西里伯斯号" "HNMS 和睦号" "HNMS 基克顿号" "HNMS 凡·盖伦号" "HNMS 凡·尼斯号" 
-		"HNMS 凡·金斯伯根号" "HNMS 成功号" "HNMS 提迦克·海德斯号" "HNMS 班克特号" "HNMS 克隆提娜号" "HNMS 凡·斯贝克号" "HNMS 维特德号" "HNMS 亚伯拉罕·克里金森号" "HNMS 菲利普·凡·阿拉莫德号" "HNMS 布卢瓦·凡·特斯隆号" "HNMS 扬·凡·布拉克尔号" 
-		"HNMS 彼得·佛罗斯号" "HNMS 威廉凡德赞号" "HNMS 亚伯拉罕·凡·胡斯特号" "HNMS 马尼克斯号" "HNMS 约翰玛提斯·凡·拿骚号" "HNMS 苦号" "HNMS 凡·阿姆斯泰尔号" "HNMS 凡·爱威吉克号" "HNMS 杜波依斯号" "HNMS 新西兰人号" "HNMS 万·兹吉儿号" 
-		"HNMS 艾萨克·斯威尔号" "HNMS 加伦布鲁号" "HNMS 泗水号" "HNMS 巴特号" "HNMS 陶瓷号" "HNMS 安汶号" "HNMS 班达号" "HNMS 特尔纳特号" "HNMS 布鲁号" "HNMS 莫罗塔伊号" "HNMS 蒂多雷号" 
-		"HNMS 弗里斯兰号" "HNMS 荷兰号" "HNMS 德伦特号" "HNMS 格罗宁根号" "HNMS 艾瑟尔号" "HNMS 格尔德兰号" "HNMS 西兰号" "HNMS 乌得勒支号" "HNMS 布拉班特号" "HNMS 林堡号" 
+		"HrMs De Zeven Provinci雗"
+ 		"HrMs Holland" "HrMs Zeeland" "HrMs Friesland" "HrMs Gelderland" "HrMs Noord Brabant" "HrMs Utrecht" "HrMs Drenthe" "HrMs Brabant" "HrMs Limburg"
 	}
 	battlecruiser = {
-		"HNMS 七省号" "HNMS 和睦号" "HNMS 长鼻号" "HNMS 雅各布·万·海姆斯卡克号" "HNMS 鲁耶特号" 
+		"HrMs K鰊igin Wilhelmina" "HrMs K鰊ig William III" "HrMs Prinzessin Juliana"
+		"HrMs Van Speijk" "HrMs Witte de With" "HrMs Piet Hein" "HrMs Kortenaer" "HrMs Koningen Regentes" "HrMs Hertog Hendrik" 
 	}
 	destroyer = {
-		"第1驱逐舰支队" "第2驱逐舰支队" "第3驱逐舰支队" "第4驱逐舰支队" "第5驱逐舰支队" "第6驱逐舰支队" "第7驱逐舰支队" "第8驱逐舰支队" "第9驱逐舰支队" "第10驱逐舰支队" "第11驱逐舰支队" 
-		"第12驱逐舰支队" "第13驱逐舰支队" "第14驱逐舰支队" "第15驱逐舰支队" "第16驱逐舰支队" "第17驱逐舰支队" "第18驱逐舰支队" "第19驱逐舰支队" "第20驱逐舰支队" 
+		"1e Torpedobootjager Smaldeel" "2e Torpedobootjager Smaldeel" "3e Torpedobootjager Smaldeel" "4e Torpedobootjager Smaldeel" "5e Torpedobootjager Smaldeel" "6e Torpedobootjager Smaldeel" "7e Torpedobootjager Smaldeel" "8e Torpedobootjager Smaldeel" "9e Torpedobootjager Smaldeel" "10e Torpedobootjager Smaldeel" "11e Torpedobootjager Smaldeel" 
+		"12e Torpedobootjager Smaldeel" "13e Torpedobootjager Smaldeel" "14e Torpedobootjager Smaldeel" "15e Torpedobootjager Smaldeel" "16e Torpedobootjager Smaldeel" "17e Torpedobootjager Smaldeel" "18e Torpedobootjager Smaldeel" "19e Torpedobootjager Smaldeel" "20e Torpedobootjager Smaldeel" "21e Torpedobootjager Smaldeel" "22e Torpedobootjager Smaldeel" 
+		"23e Torpedobootjager Smaldeel" "24e Torpedobootjager Smaldeel" "25e Torpedobootjager Smaldeel" "26e Torpedobootjager Smaldeel" "27e Torpedobootjager Smaldeel" "28e Torpedobootjager Smaldeel" "29e Torpedobootjager Smaldeel" "30e Torpedobootjager Smaldeel" 
 	}
 	carrier = {
-		"HNMS 七省号" "HNMS 鲁耶特号" "HNMS 长鼻号" "HNMS 海恩号" 
+		"HrMs Karel Doorman"
+		"HrMs De Zeven Provinci雗" "HrMs De Ruyter" "HrMs Tromp" "HrMs Piet Hein" 
+	}
+	escort_carrier = {
+		"HrMs Karel Doorman" "HrMs De Zeven Provinci雗" "HrMs De Ruyter" "HrMs Tromp" "HrMs Piet Hein" 
 	}
 	submarine = {
-		"第1潜艇支队" "第2潜艇支队" "第3潜艇支队" "第4潜艇支队" "第5潜艇支队" "第6潜艇支队" "第7潜艇支队" "第8潜艇支队" "第9潜艇支队" "第10潜艇支队" "第11潜艇支队" 
-		"第12潜艇支队" "第13潜艇支队" "第14潜艇支队" "第15潜艇支队" "第16潜艇支队" "第17潜艇支队" "第18潜艇支队" "第19潜艇支队" "第20潜艇支队" 
+		"1e Onderzeeboot Smaldeel" "2e Onderzeeboot Smaldeel" "3e Onderzeeboot Smaldeel" "4e Onderzeeboot Smaldeel" "5e Onderzeeboot Smaldeel" "6e Onderzeeboot Smaldeel" "7e Onderzeeboot Smaldeel" "8e Onderzeeboot Smaldeel" "9e Onderzeeboot Smaldeel" "10e Onderzeeboot Smaldeel" "11e Onderzeeboot Smaldeel" 
+		"12e Onderzeeboot Smaldeel" "13e Onderzeeboot Smaldeel" "14e Onderzeeboot Smaldeel" "15e Onderzeeboot Smaldeel" "16e Onderzeeboot Smaldeel" "17e Onderzeeboot Smaldeel" "18e Onderzeeboot Smaldeel" "19e Onderzeeboot Smaldeel" "20e Onderzeeboot Smaldeel" "21e Onderzeeboot Smaldeel" "22e Onderzeeboot Smaldeel" 
+		"23e Onderzeeboot Smaldeel" "24e Onderzeeboot Smaldeel" "25e Onderzeeboot Smaldeel" "26e Onderzeeboot Smaldeel" "27e Onderzeeboot Smaldeel" "28e Onderzeeboot Smaldeel" "29e Onderzeeboot Smaldeel" "30e Onderzeeboot Smaldeel" 
 	}
 	transport_ship = {
-		"第1运输支队" "第2运输支队" "第3运输支队" "第4运输支队" "第5运输支队" "第6运输支队" "第7运输支队" "第8运输支队" "第9运输支队" "第10运输支队" "第11运输支队" 
-		"第12运输支队" "第13运输支队" "第14运输支队" "第15运输支队" "第16运输支队" "第17运输支队" "第18运输支队" "第19运输支队" "第20运输支队" 
+		"1e Transport Smaldeel" "2e Transport Smaldeel" "3e Transport Smaldeel" "4e Transport Smaldeel" "5e Transport Smaldeel" "6e Transport Smaldeel" "7e Transport Smaldeel" "8e Transport Smaldeel" "9e Transport Smaldeel" "10e Transport Smaldeel" "11e Transport Smaldeel" 
+		"12e Transport Smaldeel" "13e Transport Smaldeel" "14e Transport Smaldeel" "15e Transport Smaldeel" "16e Transport Smaldeel" "17e Transport Smaldeel" "18e Transport Smaldeel" "19e Transport Smaldeel" "20e Transport Smaldeel" "21e Transport Smaldeel" "22e Transport Smaldeel" 
+		"23e Transport Smaldeel" "24e Transport Smaldeel" "25e Transport Smaldeel" "26e Transport Smaldeel" "27e Transport Smaldeel" "28e Transport Smaldeel" "29e Transport Smaldeel" "30e Transport Smaldeel" 
 	}
 
 }
 
 ministers = {
 	577001 = {
-		name = "威廉明娜"
+		name = "Wilhelmina"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M8001
@@ -148,7 +180,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577002 = {
-		name = "塔基克·凡·斯塔肯布朗-斯塔基豪威尔"
+		name = "Tjarda van Starkenborgh-Stachouwer"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M577002
@@ -156,7 +188,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577003 = {
-		name = "哈伯特斯·凡·穆克"
+		name = "Hubertus Van Mook"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M577003
@@ -164,7 +196,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577004 = {
-		name = "穆罕默德三世"
+		name = "Muhammad III Pontiak"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M577004
@@ -172,7 +204,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577005 = {
-		name = "费得· 撒忽儿"
+		name = "Fedde Schurer"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M8113
@@ -180,7 +212,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577006 = {
-		name = "雷蒙德·威斯特林"
+		name = "Raymond Westerling"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M577006
@@ -188,7 +220,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577007 = {
-		name = "穆克·波斯塔"
+		name = "Murk Boerstra"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = L7802
@@ -196,7 +228,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577008 = {
-		name = "赫拉尔杜斯·伯伦"
+		name = "Gerardus Berenschot"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = L7801
@@ -205,7 +237,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577009 = {
-		name = "康拉德·海尔弗里奇"
+		name = "Conrad Helfrich"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = L7839
@@ -213,7 +245,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577010 = {
-		name = "鲁道夫·凡·欧也"
+		name = "Ludolph van Oyen"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = L7859
@@ -221,7 +253,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577011 = {
-		name = "艾哈迈德·苏加诺"
+		name = "Achmed Sukarno"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M577011
@@ -230,7 +262,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577012 = {
-		name = "费迪南德·鲁姆班·托宾"
+		name = "Ferdinand Lumban Tobing"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M577012
@@ -238,7 +270,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577013 = {
-		name = "加湾·马斯"
+		name = "Kawan Musso"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M577013
@@ -246,7 +278,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577014 = {
-		name = "穆罕默德·哈达"
+		name = "Muhammad Hatta"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M577014
@@ -255,7 +287,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577015 = {
-		name = "穆罕默德·坦林"
+		name = "Muhammad Thamrin"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M577015
@@ -263,7 +295,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577016 = {
-		name = "阿米尔·萨迦尔苻丁"
+		name = "Amir Sjarifuddin"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M577016
@@ -271,7 +303,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577017 = {
-		name = "艾哈迈德·萨班得瑞"
+		name = "Ahmad Subandrio"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M577017
@@ -279,7 +311,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577018 = {
-		name = "汗姆库伯温九世"
+		name = "Hamengkubowono IX Yopgya"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M577018
@@ -287,7 +319,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	577019 = {
-		name = "苏坦·斯加海尔"
+		name = "Sutan Sjahrir"
 		ideology = social_democrat
 		loyalty = 0.50
 		picture = M577019
@@ -295,7 +327,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577020 = {
-		name = "苏卡·维日帕纳多"
+		name = "Sukarjo Wiryopranato"
 		ideology = social_democrat
 		loyalty = 0.50
 		picture = M577020
@@ -303,7 +335,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	577021 = {
-		name = "苏瑞诺·苏里皮诺"
+		name = "Suryono Suripno"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M577021
@@ -311,7 +343,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577022 = {
-		name = "斯迦艾弗丁·帕拉维兰格拉"
+		name = "Sjarifudin Prawiranegara"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M577022
@@ -319,7 +351,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577023 = {
-		name = "多德斯莫·德答"
+		name = "Dodechismo Djuanda"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M577023
@@ -327,7 +359,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	577024 = {
-		name = "阿古斯·萨利姆"
+		name = "Haj Agus Salim"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M577024
@@ -335,7 +367,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	577025 = {
-		name = "阿曼乌八世"
+		name = "Amangwu VIII Jogarta"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M577025
@@ -343,7 +375,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	577026 = {
-		name = "丹德迦·萨提布迪"
+		name = "Danudirjia Setiabudi"
 		ideology = social_democrat
 		loyalty = 0.50
 		picture = M577026
@@ -351,7 +383,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577027 = {
-		name = "鲁克曼·丹·萨拉丁"
+		name = "Lukman Dan Sardjono"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M577027
@@ -359,7 +391,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577028 = {
-		name = "D.W. 克罗阿明洛德"
+		name = "D.W. Cokroaminoto"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M577028
@@ -367,7 +399,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577029 = {
-		name = "那迦贝·凡·甘卡特"
+		name = "Ngabehi van Jogakarta"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M577029
@@ -375,7 +407,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	577030 = {
-		name = "阿里·弗雷德里克"
+		name = "Arie Frederick Lasut"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M577030
@@ -383,7 +415,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577031 = {
-		name = "阿达姆·马利克"
+		name = "Adam Malik"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M577031
@@ -391,7 +423,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	577032 = {
-		name = "S.M. 卡图索维尔"
+		name = "S.M. Kartosuwirjo"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M577032
@@ -399,7 +431,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577033 = {
-		name = "D.N. 艾迪特"
+		name = "D.N. Aidit"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M577033
@@ -407,7 +439,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	577034 = {
-		name = "苏迪曼贝"
+		name = "Besar Sudirman"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M577034
@@ -416,7 +448,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577035 = {
-		name = "卡彼特·曼根库斯莫博士"
+		name = "Dr. Cipto Mangunkusomo"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M577035
@@ -424,7 +456,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	577036 = {
-		name = "穆罕默德·亚敏"
+		name = "Mohammed Yamin"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M577036
@@ -432,7 +464,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577037 = {
-		name = "T.N. 苏普瑞特曼"
+		name = "T.N. Supratman"
 		ideology = leninist
 		loyalty = 0.50
 		picture = M577037
@@ -440,7 +472,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577040 = {
-		name = "海因泰尔盖茨"
+		name = "Hein Ter Poorten"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = L7819
@@ -449,7 +481,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	577041 = {
-		name = "哈米德二世"
+		name = "Hamid II Pontiak"
 		ideology = social_democrat
 		loyalty = 0.50
 		picture = M577041
@@ -457,7 +489,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577042 = {
-		name = "谭·马拉卡"
+		name = "Tan Malaka"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M577042
@@ -466,7 +498,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577043 = {
-		name = "阿卜杜勒·哈里斯·纳苏蒂安"
+		name = "Abdul Harris Nasution"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M577043
@@ -474,7 +506,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577045 = {
-		name = "鲁道夫·贝克"
+		name = "Rudolph Bakker"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = L7800
@@ -482,7 +514,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	577046 = {
-		name = "西蒙·斯颇"
+		name = "Simon Spoor"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = L7817
@@ -490,7 +522,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	577047 = {
-		name = "乌里普·苏默海"
+		name = "Uyrip Sumoharjo"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M577047
@@ -498,15 +530,15 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577049 = {
-		name = "阿曼乌九世"
+		name = "Amangwu IX Jogarta"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M577049
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1936.1.1
 	}
 	577050 = {
-		name = "维·约翰内斯"
+		name = "We Yohannes"
 		ideology = social_democrat
 		loyalty = 0.50
 		picture = M577050
@@ -514,7 +546,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577051 = {
-		name = "艾哈迈德·阿里明"
+		name = "Ahmad Alimin"
 		ideology = leninist
 		loyalty = 0.50
 		picture = M577051
@@ -522,7 +554,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577053 = {
-		name = "莫罕默德·杰斯夫"
+		name = "Mohammed Jusf"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M577053
@@ -530,7 +562,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	577054 = {
-		name = "R.M. 苏瑞"
+		name = "R.M. Suryo"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M577054
@@ -538,7 +570,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577055 = {
-		name = "I.M. 纳吉"
+		name = "I.M. Najoan"
 		ideology = leninist
 		loyalty = 0.50
 		picture = M577055
@@ -546,7 +578,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	577056 = {
-		name = "阿卜杜勒·哈利姆"
+		name = "Abdul Halim"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M577056
@@ -555,7 +587,7 @@ ministers = {
 		start_date = 1950.1.1
 	}
 	577057 = {
-		name = "穆罕默德· 纳特"
+		name = "Mohammed Natsir"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M577057
@@ -563,7 +595,7 @@ ministers = {
 		start_date = 1950.1.1
 	}
 	577058 = {
-		name = "索库曼·维尔简森德"
+		name = "Sukoman Wirjosandjojo"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M577058
@@ -571,7 +603,7 @@ ministers = {
 		start_date = 1951.1.1
 	}
 	577059 = {
-		name = "斯万特·威里颇"
+		name = "Siswanto Wilopo"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M577059
@@ -579,7 +611,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	577060 = {
-		name = "阿里·赛斯特罗姆"
+		name = "Ali Sastromidjojo"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M577060
@@ -587,11 +619,114 @@ ministers = {
 		start_date = 1953.1.1
 	}
 	577063 = {
-		name = "瓦基勒·帕克门哈撒"
+		name = "Wakil Pakmehasan"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M577063
 		chief_of_staff = school_of_manoeuvre
 		start_date = 1950.1.1
+	}
+	# Generic dummy ministers
+	95417 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95418 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95419 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95420 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95421 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95422 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
 	}
 }

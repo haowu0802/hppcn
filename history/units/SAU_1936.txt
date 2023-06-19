@@ -1,32 +1,101 @@
-corps = {
-	name = "沙特皇家陆军"
+theatre = {
+	name = "Royal Saudi Arabian Military Command"
 	location = 9613
-	regiment = { type = hq_brigade name = "沙特皇家陆军指挥部" historical_model = 0 }
+	regiment = { type = hq_brigade name = "Al Riyad HQ" historical_model = 0 }
 	division= {
-		name = "沙特第1皇家陆军师"
+		name = "Ar Riyad Infantry Division"
 		location = 9613
 		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division= {
-		name = "皇家卫队"
+		regiment = { type = garrison_brigade name = "1st Infantry Brigade" experience = 0 historical_model = 2 }
+		regiment = { type = militia_brigade name = "Ar Riyad Military Police" experience = 0 historical_model = 2 }
+	}	
+	army = {
+		name = "Royal Saudi Army"
+		location = 9553
+		regiment = { type = hq_brigade name = "Royal Saudi Army HQ" historical_model = 0 }
+		division= {
+			name = "Jiddah Infantry Division"
+			location = 9630
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "2nd Infantry Brigade" experience = 0 historical_model = 2 }
+			regiment = { type = militia_brigade name = "Jiddah Military Police" experience = 0 historical_model = 2 }			
+		}		
+		division= {
+			name = "Makkah Infantry Division"
+			location = 9611
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "3rd Infantry Brigade" experience = 0 historical_model = 2 }
+			regiment = { type = militia_brigade name = "Makkah Military Police" experience = 0 historical_model = 2 }			
+		}		
+		division= {
+			name = "Al Madinah Infantry Division"
+			location = 9553
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "4th Infantry Brigade" experience = 0 historical_model = 2 }
+			regiment = { type = militia_brigade name = "Al Madinah Military Police" experience = 0 historical_model = 2 }			
+		}		
+		division= {
+			name = "Ad Dammam Infantry Division"
+			location = 9538
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "5th Infantry Brigade" experience = 0 historical_model = 2 }
+			regiment = { type = militia_brigade name = "Ad Dammam Military Police" experience = 0 historical_model = 2 }			
+		}
+		division= {
+			name = "Tabuk Infantry Division"
+			location = 5689
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "6th Infantry Brigade" experience = 0 historical_model = 2 }
+			regiment = { type = militia_brigade name = "Tabuk Military Police" experience = 0 historical_model = 2 }			
+		}
+	}	
+	corps = {
+		name = "Royal Saudi Cavalry"
 		location = 9613
-		is_reserve = yes
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-	}
-	division= {
-		name = "沙特皇家'梅迪纳'骑兵师"
-		location = 9613
-		is_reserve = yes
-		regiment = { type = cavalry_brigade historical_model = 0 }
-		regiment = { type = cavalry_brigade historical_model = 0 }
-		regiment = { type = cavalry_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "Royal Saudi Army HQ" historical_model = 0 }		
+		division= {
+			name = "Royal Saudi Cavalry 'Medina'"
+			location = 9613
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1st Camel Brigade" experience = 30 experience = 0 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "2nd Camel Brigade" experience = 30 experience = 0 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "3rd Camel Brigade" experience = 30 experience = 0 historical_model = 1 }
+		}
+		division= {
+			name = "2nd Royal Saudi Cavalry Division"
+			location = 9613
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "3rd Camel Brigade" experience = 30 experience = 0 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "4th Camel Brigade" experience = 30 experience = 0 historical_model = 1 }
+			regiment = { type = light_armor_brigade name = "Royal Saudi Tank Company" experience = 0 historical_model = 1 }
+		}		
 	}
 }
-
-
-
+convoy_construction=
+{
+	country = SAU
+	id=
+	{
+		id=15440
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = SAU
+	id=
+	{
+		id=15441
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

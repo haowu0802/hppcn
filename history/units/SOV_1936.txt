@@ -1,1688 +1,2523 @@
 theatre = {
-	name = "莫斯科最高统帅部大本营"
+	name = "STAVKA"
 	location = 1409
-	regiment = { type = hq_brigade name = "莫斯科最高统帅部大本营" historical_model = 0 }
+	regiment = { type = hq_brigade name = "STAVKA HQ" experience = 10 historical_model = 1 }		
 	armygroup = {
-		name = "列宁格勒方面军"
-		location = 782
-		regiment = { type = hq_brigade name = "列宁格勒方面军" historical_model = 0 }
-		division= {
-			name = "第177步兵师"
-			location = 699
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第483步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第486步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第502步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "第191步兵师"
-			location = 741
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第546步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第552步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第559步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "第8'明斯克'步兵师"
-			location = 782
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第151步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第229步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第310步兵团" historical_model = 0 }
-		}
-		corps = {
-			name = "第1机械化军"
-			location = 782
-			regiment = { type = hq_brigade name = "第1机械化军司令部" historical_model = 0 }
-			division= {
-				name = "第163摩托化步兵师"
-				location = 782
-				is_reserve = yes
-				regiment = { type = light_armor_brigade name = "第25坦克团" historical_model = 0 }
-				regiment = { type = motorized_brigade name = "第529摩托化步兵团" historical_model = 0 }
-				regiment = { type = motorized_brigade name = "第729摩托化步兵团" historical_model = 0 }
-			}
-		}
-		army = {
-			name = "第7集团军"
-			location = 742
-			regiment = { type = hq_brigade name = "第7集团军司令部" historical_model = 0 }
-			division= {
-				name = "第54步兵师"
-				location = 582
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第81步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第118步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第337步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第71步兵师"
-				location = 508
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第52步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第126步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第467步兵团" historical_model = 0 }
-			}
-		}
-		army = {
-			name = "第14集团军"
-			location = 46
-			regiment = { type = hq_brigade name = "第14集团军司令部" historical_model = 0 }
-			corps = {
-				name = "第42军"
-				location = 127 
-				regiment = { type = hq_brigade name = "第42军指挥部" historical_model = 0 }
-				division= {
-					name = "第122步兵师"
-					location = 145
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第420步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第596步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第715步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第104步兵师"
-					location = 91
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第217步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第242步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第273步兵团" historical_model = 0 }
-				}
-			}
-			division= {
-				name = "第14步兵师"
-				location = 59
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第95步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第135步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第325步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第1坦克师"
-				location = 46
-				is_reserve = yes
-				regiment = { type = light_armor_brigade name = "第1坦克团" historical_model = 0 }
-				regiment = { type = light_armor_brigade name = "第2坦克团" historical_model = 0 }
-				regiment = { type = motorized_brigade name = "第1摩托化步兵团" historical_model = 0 }
-			}
-		}
-		army = {
-			name = "第23集团军"
-			location = 821
-			regiment = { type = hq_brigade name = "第23集团军司令部" historical_model = 0 }
-			corps = {
-				name ="第19军"
-				location = 781
-				regiment = { type = hq_brigade name = "第19军指挥部" historical_model = 0 }
-				division= {
-					name = "第142步兵师"
-					location = 784
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第461步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第588步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第701步兵团" historical_model = 0 }
-				}
-			}
-			corps = {
-				name = "第50军" 
-				location = 865
-				regiment = { type = hq_brigade name = "第50军指挥部" historical_model = 0 }
-				division= {
-					name = "第43步兵师"
-					location = 865
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第65步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第147步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第181步兵团" historical_model = 0 }
-				}
-			}
-			corps = {
-				name = "第10机械化军"
-				location = 821
-				regiment = { type = hq_brigade name = "第10机械化军司令部" historical_model = 0}
-				division= {
-					name = "第198摩托化步兵师"
-					location = 821
-					is_reserve = yes
-					regiment = { type = light_armor_brigade name = "第146坦克团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第150 Motorised Rifle Brigade" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第452 Motorised Rifile Brigade" historical_model = 0 }
-				}
-			}
-		}
-	}
-	armygroup = {
-		name = "波罗的海方面军"
+		name = "Baltiiskogo Okrug"
 		location = 1102
-		regiment = { type = hq_brigade name = "波罗的海方面军" }
+		regiment = { type = hq_brigade name = "Baltiiskogo Okrug HQ" historical_model = 1 }
 		army = {
-			name = "第8集团军"
+			name = "8ya Armiya"
 			location = 1027
-			regiment = { type = hq_brigade name = "第8集团军司令部" historical_model = 0 }
+			regiment = { type = hq_brigade name = "8ya Armiya HQ" historical_model = 1 }
 			corps = {
-				name = "第10军"
-				location = 989
-				regiment = { type = hq_brigade name = "第10军指挥部" historical_model = 0 }
+				name = "5ya Korpus"
+				location = 1064
+				regiment = { type = hq_brigade name = "5ya Corps HQ" historical_model = 1 }
 				division= {
-					name = "第10步兵师"
-					location = 989
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第62步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第98步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第204步兵团" historical_model = 0 }	
-				}
-				division= {
-					name = "第48步兵师"
+					name = "5. 'Vitebsksaya' Strelkovaya Diviziya"	
 					location = 1063
 					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第268步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第301步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第328步兵团" historical_model = 0 }
+					regiment = { type = infantry_brigade name = "142y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "190y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "336y Strelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "5y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }
 				}
-			}
-			corps = {
-				name = "第12机械化军"
-				location = 1101
-				regiment = { type = hq_brigade name = "第12机械化军司令部" historical_model = 0 }
 				division= {
-					name = "第202摩托化步兵师"
-					location = 1101
-					is_reserve = yes
-					regiment = { type = light_armor_brigade name = "第125坦克团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第645摩托化步兵团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第682摩托化步兵团" historical_model = 0 }
-				}
-			}
-		}
-		army = {
-			name = "第11集团军"
-			location = 1225	
-			regiment = { type = hq_brigade name = "第11集团军司令部" historical_model = 0 }
-			corps = {
-				name = "第16军"
-				location = 1182
-				regiment = { type = hq_brigade name = "第16军指挥部" historical_model = 0 }
-				division= {
-					name = "第5'维特彼'步兵师"	
+					name = "48. 'M.I. Kalinin' Strelkovaya Diviziya"
 					location = 1141
 					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第142步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第190步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第336步兵团" historical_model = 0 }
+					regiment = { type = infantry_brigade name = "268y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "301y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "328y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "48y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
 				}
 				division= {
-					name = "第33步兵师"
+					name = "42. Strelkovaya Diviziya"
+					location = 989
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "44y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "140y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "180y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = horse_towed_support_brigade name = "42y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				}				
+			}
+			corps = {
+				name = "2ya Kavaleriyskaya Korpus"
+				location = 1357 
+				regiment = { type = hq_brigade name = "2ya Kavaleriyskaya Korpus HQ" historical_model = 1 }
+				division= {
+					name = "4. Kavaleriyskaya Diviziya"
 					location = 1182
 					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第73步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第82步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第164步兵团" historical_model = 0 }
-				}
-			}
-			corps  = {
-				name = "第29军"
-				location = 1267
-				regiment = { type = hq_brigade name = "第29军指挥部" historical_model = 0 }
-				division= {
-					name = "第179步兵师"
-					location = 1267
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第215步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第234步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第259步兵团" historical_model = 0 }
+					regiment = { type = cavalry_brigade name = "6y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = cavalry_brigade name = "23y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }	
 				}
 				division= {
-					name = "第184步兵师"
-					location = 1312
+					name = "87. Kavaleriyskaya Diviziya"
+					location = 1182
 					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第262步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第294步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第297步兵团" historical_model = 0 }
+					regiment = { type = cavalry_brigade name = "87y Kavaleriyskiy Polk" experience = 10 historical_model = 3 }	
+					regiment = { type = self_propelled_support_brigade name = "87y Batallion Broneavtomobilei" experience = 10 historical_model = 3 }
 				}
-			}
-			corps = {
-				name = "第3机械化军"	
-				location = 1225
-				regiment = { type = hq_brigade name = "第3机械化军司令部" historical_model = 0 }
-				division= {
-					name = "第2坦克师"
-					location = 1225	
-					is_reserve = yes
-					regiment = { type = light_armor_brigade name = "第3坦克团" historical_model = 0 }
-					regiment = { type = light_armor_brigade name = "第4坦克团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第2摩托化步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第84机械化师"
-					location = 1225
-					is_reserve = yes
-					regiment = { type = light_armor_brigade name = "第46坦克团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第41摩托化步兵团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第201摩托化步兵团" historical_model = 0 }	
-				}
+			}	
+		}
+		corps = {
+			name = "10ya Territorialnyi Korpus"
+			location = 1231
+			regiment = { type = hq_brigade name = "10ya Territorialnyi Korpus HQ" historical_model = 1 is_reserve = yes }
+			division= {
+				name = "14. 'Krivorogsckaya' Strelkovaya Diviziya"
+				location = 1231
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "95y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "135y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "325y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "102y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }	
+				regiment = { type = horse_towed_support_brigade name = "12y Protivotankovoiy Polk" experience = 10 historical_model = 1 is_reserve = yes }					
 			}
 		}
-		army = {
-			name = "第27集团军"
-			location = 1357
-			regiment = { type = hq_brigade name = "第27集团军司令部" historical_model = 0 }
+		corps = {
+			name = "2ya NKVD Korpus"
+			location = 1357 
+			regiment = { type = hq_brigade name = "2ya NKVD Korpus HQ" historical_model = 1 }		
 			division= {
-				name = "第16'乌尔扬'步兵师"
+				name = "2. NKVD Strelkovaya Diviziya"
+				location = 989
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "21y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "22y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			}
+			division= {
+				name = "3. NKVD Strelkovaya Diviziya"
+				location = 989
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "29y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "30y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			}
+			division= {
+				name = "9. NKVD Strelkovaya Diviziya"
 				location = 1357
 				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第156步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第167步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第249步兵团" historical_model = 0 }	
+				regiment = { type = infantry_brigade name = "52y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "53y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			}
+		}	
+		air = {
+			name = "Riga II. AD"
+			base = 1182
+			location = 1182
+			wing = { type = interceptor name = "4. IAD" experience = 10 historical_model = 1 }
+		}			
+	}
+	armygroup = {	
+		name = "Moskovskii Okrug"
+		location = 1409
+		regiment = { type = hq_brigade name = "Moskovskii Okrug HQ" historical_model = 1 }
+		army = {
+			name = "10ya Armiya"
+			location = 1409
+			regiment = { type = hq_brigade name = "10ya Armiya HQ" historical_model = 1 }
+			division= {
+				name = "'Moskva Proletarskaya' Strelkovaya Diviziya"
+				location = 1409
+				is_reserve = yes
+				regiment = { type = motorized_brigade name = "6y MotoStrelkoviy Polk" experience = 10 historical_model = 0 }
+				regiment = { type = infantry_brigade name = "175y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "236y Strelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "1y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }
 			}
 			division= {
-				name = "第3'提霍坎'步兵师"
-				location = 1313
+				name = "4. Tankovaya Diviziya"
+				location = 1409
 				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第8步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第18步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第70步兵团" historical_model = 0 }
+				regiment = { type = heavy_armor_brigade name = "3y Tankoviy Polk" experience = 10 historical_model = 0 }		
+				regiment = { type = light_armor_brigade name = "12y Tankoviy Polk" experience = 10 historical_model = 4 }
+				regiment = { type = self_propelled_support_brigade name = "16y Batallion Broneavtomobilei" experience = 10 historical_model = 2 }
+				regiment = { type = self_propelled_support_brigade name = "17y Batallion Broneavtomobilei" experience = 10 historical_model = 3 }
 			}
-			corps = {
-				name = "第22军"
-				location = 1401
-				regiment = { type = hq_brigade name = "第22军指挥部" historical_model = 0 }
-				division= {
-					name = "第180步兵师"
-					location = 1401
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第21步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第42步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第86步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第183 步兵师"
-					location = 1401
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第227步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第285步兵团" historical_model = 0 }	
-					regiment = { type = infantry_brigade name = "第295步兵团" historical_model = 0 }
-				}
-			}
-			corps = {
-				name = "第24军"
-				location = 1491
-				regiment = { type = hq_brigade name ="第24军指挥部" historical_model = 0 }
-				division= {
-					name = "第181步兵师"
-					location = 1491
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第186步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第195步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第243步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第182步兵师"
-					location = 1401	
-					is_reserve = yes	
-					regiment = { type = infantry_brigade name = "第140步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第171步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第232步兵团" historical_model = 0 }
-				}
-			}
+			division= {
+				name = "1. Vozdushno-Desantnaya Diviziya"
+				location = 1409
+				is_reserve = yes
+				regiment = { type = paratrooper_brigade name = "1y Vozdushno-Desantnayi Polk" experience = 10 historical_model = 0 }
+				regiment = { type = engineer_brigade name = "28y Ingenernaia Brigada" experience = 10 historical_model = 0 is_reserve = yes }	
+			}	
+		}	
+		air = {
+			name = "Mockba IV. AD"
+			base = 1409
+			location = 1409
+			wing = { type = transport_plane name = "1. TrAD" experience = 10 historical_model = 0 }
 		}		
-	}
-	armygroup = {
-		name = "西方方面军"
-		location = 1695
-		regiment = { type = hq_brigade name = "西方方面军" historical_model = 0 }
-		corps = {
-			name = "第47集团军军"
-			location = 1695
-			regiment = { type = hq_brigade name = "第47集团军军司令部" historical_model = 0 }
-			division= {
-				name = "第143步兵师"
-				location = 1695
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第487步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第635步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第800步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第121步兵师"
-				location = 1695
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第383步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第574步兵团" historical_model = 0 }	
-				regiment = { type = infantry_brigade name = "第705步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第55步兵师"
-				location = 1695
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第107步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第111步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第228步兵团" historical_model = 0 }
-			}
-		}
-		corps = {
-			name = "第17机械化军"
-			location = 1695
-			regiment = { type = hq_brigade name = "第17机械化军司令部" historical_model = 0 }
-			division = {
-				name = "第209摩托化师"
-				location = 1695
-				is_reserve = yes
-				regiment = { type = light_armor_brigade name = "第129坦克团" historical_model = 0 }
-				regiment = { type = motorized_brigade name = "第754摩托化步兵团" historical_model = 0 }
-				regiment = { type = motorized_brigade name = "第770摩托化步兵团" historical_model = 0 }
-			}
-		}
-		army  = {
-			name = "第3集团军"
-			location = 1694
-			regiment = { type = hq_brigade name = "第3集团军司令部" historical_model = 0 }
-			corps = {
-				name = "第4军"
-				location = 1694
-				regiment = { type = hq_brigade name = "第4军指挥部" historical_model = 0 }
-				division= {
-					name = "第27'奥马斯卡亚'步兵师"
-					location = 1581
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第132步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第239步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第345步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第56'莫斯科'步兵师"
-					location = 1694	
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第37步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第184步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第213步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第85步兵师"
-					location = 1694
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第59步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第103步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第141步兵团" historical_model = 0 }
-				}
-			}
-			corps = {
-				name = "第21军"
-				location = 1814
-				regiment = { type = hq_brigade name ="第21军指挥部" historical_model = 0 }
-				division= {
-					name = "第24步兵师"
-					location = 1814
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第7步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第168步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第274步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第17'高尔科夫'步兵师"
-					location = 1875
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第55步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第271步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第278步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第50'塔曼'步兵师"
-					location = 1814
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第2步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第49步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第359步兵团" historical_model = 0 }
-				}
-			}
+		air = {
+			name = "Mockba V. AD"
+			base = 1409
+			location = 1409
+			wing = { type = interceptor name = "6. IAD" experience = 10 historical_model = 1 }
+			wing = { type = interceptor name = "17. IAD" experience = 10 historical_model = 1 }
+			wing = { type = interceptor name = "18. IAD" experience = 10 historical_model = 1 }
 		}		
-		army = {
-			name = "第4集团军"
-			location = 2278
-			regiment = { type = hq_brigade name = "第4集团军司令部" historical_model = 0 }
-			corps = {
-				name = "第28军"
-				location = 1990
-				regiment = { type = hq_brigade name = "第28军指挥部" historical_model = 0 }
-				division= {
-					name = "第6'奥尔洛夫'步兵师"
-					location = 1990
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第84步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第125步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第333步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第42步兵师"
-					location = 2164
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第44步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第455步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第459步兵团" historical_model = 0 }
-				}
-			}
-			division= {
-				name = "第49步兵师"
-				location = 2222
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第15步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第212步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第222步兵团" historical_model = 0 }
-			}
-			corps = {
-				name = "第14机械化军"
-				location = 2278
-				regiment = { type = hq_brigade name = "第14机械化军司令部" historical_model = 0 }
-				division= {
-					name = "第205摩托化步兵师"
-					location = 2278
-					is_reserve = yes
-					regiment = { type = light_armor_brigade name = "第127坦克团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第226摩托化步兵团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第721摩托化步兵团" historical_model = 0 }
-				}
-			}
-		}
-		army = {
-			name = "第10集团军"
-			location = 2452
-			regiment = { type = hq_brigade name = "第10集团军司令部" historical_model = 0 }
-			corps = {
-				name = "第5军"
-				location = 2393
-				regiment = { type = hq_brigade name = "第5军指挥部" historical_model = 0 }
-				division= {
-					name = "第86步兵师"
-					location = 2278
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第169步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第284步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第330步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第13'达吉斯坦'步兵师"
-					location = 2393
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第119步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第172步兵团" historical_model = 0 }	
-					regiment = { type = infantry_brigade name = "第296步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第113步兵师"
-					location = 2511
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第513步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第679步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第725步兵团" historical_model = 0 }
-				}
-			}
-			corps = {
-				name = "第1军"
-				location = 2574
-				regiment = { type = hq_brigade name = "第1军指挥部" historical_model = 0 }
-				division= {
-					name = "第2步兵师"
-					location = 2574
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第13步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第200步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第261步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第8'明斯克'步兵师"
-					location = 2705
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第151步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第229步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第310步兵团" historical_model = 0 }
-				}
-			}
-			corps = {
-				name = "第6骑兵军"
-				location = 1875
-				regiment = { type = hq_brigade name = "第6骑兵军指挥部" historical_model = 0 }
-				division= {
-					name = "第6骑兵师"
-					location = 1875
-					is_reserve = yes
-					regiment = { type = cavalry_brigade historical_model = 0 }
-					regiment = { type = cavalry_brigade historical_model = 0 }	
-					regiment = { type = armored_car_brigade historical_model = 0 }
-				}
-			}
-			corps = {
-				name = "第6机械化军"
-				location = 1875
-				regiment = { type = hq_brigade name = "第6机械化军司令部" historical_model = 0 }
-				division= {
-					name = "第4坦克师"
-					location = 1875
-					is_reserve = yes
-					regiment = { type = light_armor_brigade name = "第7坦克团" historical_model = 0 }
-					regiment = { type = light_armor_brigade name = "第8坦克团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第4摩托化步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第29摩托化步兵师"
-					location = 1875
-					is_reserve = yes
-					regiment = { type = light_armor_brigade name = "第47坦克团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第106摩托化步兵团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第128摩托化步兵团" historical_model = 0 }
-				}
-			}
-		}
-		army = {
-			name = "第13集团军"
-			location = 2706
-			regiment = { type = hq_brigade name = "第13集团军司令部" historical_model = 0 }
-			corps = {
-				name = "第2军"
-				location = 2771
-				regiment = { type = hq_brigade name = "第2军指挥部" historical_model = 0 }
-				division= {
-					name = "第161步兵师"
-					location = 2771
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第477步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第542步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第603步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第100步兵师"
-					location = 2771
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第85步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第331步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第355步兵团" historical_model = 0 }
-				}
-			}
-		}
-	}
+	}	
+}
+theatre = {
+	name = "Severnoie Napravlenie"
+	location = 311
+	regiment = { type = hq_brigade name = "Severnoie Napravlenie HQ" historical_model = 1 }
 	armygroup = {
-		name = "西南方面军"
-		location = 2341
-		regiment = { type = hq_brigade name = "西南方面军司令部" historical_model = 0 }
-		corps = {
-			name = "第31集团军军"
-			location = 2341
-			regiment = { type = hq_brigade name = "第31集团军军司令部" historical_model = 0 }
-			division= {
-				name = "第193步兵师"
-				location = 2341
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第685步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第883步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第895步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第195步兵师"
-				location = 2341
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第564步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第573步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第604步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第200步兵师"
-				location = 2341
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第642步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第648步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第661步兵团" historical_model = 0 }
-			}
-		}
-		corps = {
-			name = "第36集团军军"
-			location = 2643
-			regiment = { type = hq_brigade name = "第36集团军军司令部" historical_model = 0 }
-			division= {
-				name = "第140步兵师"
-				location = 2643
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第445步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第637步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第798步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第146步兵师"
-				location = 2643
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第512步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第608步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第698步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第228步兵师"
-				location = 2643
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第767步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第795步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第799步兵团" historical_model = 0 }
-			}
-		}
-		corps = {
-			name = "第49集团军军"
-			location = 2776	
-			regiment = { type = hq_brigade name = "第49集团军军司令部" historical_model = 0 }
-			division= {
-				name = "第199步兵师"
-				location = 2776
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第492步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第584步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第617步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第197'基辅'步兵师"
-				location = 2776
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第828步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第862步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第889步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第190步兵师"
-				location = 2776
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第587步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第621步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第890步兵团" historical_model = 0 }
-			}
-		}
-		corps = {
-			name = "第55集团军军"
-			location = 2455
-			regiment = { type = hq_brigade name = "第55集团军军司令部" historical_model = 0 }
-			division= {
-				name = "第189步兵师"
-				location = 2455
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第864步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第880步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第891步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第169步兵师"
-				location = 2455
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第434步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第556步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第680步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第130步兵师"
-				location = 2455
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第371步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第528步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第664步兵团" historical_model = 0 }
-			}
-		}
-		corps = {
-			name = "第15机械化军"
-			location = 2647
-			regiment = { type = hq_brigade name = "第15机械化军司令部" historical_model = 0  }
-			division = {
-				name = "第212机械化师"
-				location = 2647
-				is_reserve = yes
-				regiment = { type = light_armor_brigade name = "第131坦克团" historical_model = 0 }
-				regiment = { type = motorized_brigade name = "第669摩托化步兵团" historical_model = 0 }
-				regiment = { type = motorized_brigade name = "第692摩托化步兵团" historical_model = 0 }
-			}
-		}
-		corps = {
-			name = "第24机械化军"
-			location = 2645
-			regiment = { type =hq_brigade name = "第24机械化军司令部" historical_model = 0 }
-			division = {
-				name = "第216机械化师"
-				location = 2645
-				is_reserve = yes
-				regiment = { type = light_armor_brigade name = "第134坦克团" historical_model = 0 }
-				regiment = { type = motorized_brigade name = "第647摩托化步兵团" historical_model = 0 }
-				regiment = { type = motorized_brigade name = "第665摩托化步兵团" historical_model = 0 }
-			}
-		}
-		army = {
-			name = "第5集团军"
-			location = 2455
-			regiment = { type = hq_brigade name = "第5集团军司令部" historical_model = 0 }
-			corps = {	
-				name = "第15军"
-				location = 2455
-				regiment = { type = hq_brigade name = "第15军指挥部" historical_model = 0 }
-				division= {
-					name = "第45步兵师"
-					location = 2455
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第10步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第61步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第253步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第62'土耳其斯坦'步兵师"
-					location = 2455
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第104步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第123步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第306步兵团" historical_model = 0 }
-				}
-			}
-			corps = {
-				name = "第27军"
-				location = 2396
-				regiment = { type = hq_brigade name = "第27军指挥部" historical_model = 0 }
-				division= {
-					name = "第87步兵师"
-					location = 2396
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第16步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第96步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第283步兵团" historical_model = 0 }
-				}
-			}
-		}
-		army = {
-			name = "第6集团军"
-			location = 2579
-			regiment = { type = hq_brigade name = "第6集团军司令部" historical_model = 0 }
-			corps = {
-				name = "第6军"
-				location = 2579
-				regiment = { type = hq_brigade name = "第6军指挥部" historical_model = 0 }
-				division= {
-					name = "第159步兵师"
-					location = 2579
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第491步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第558步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第631步兵团" historical_model = 0 }
-				}
-			}
-			corps = {
-				name = "第37军"
-				location = 2456
-				regiment = { type = hq_brigade name = "第37军指挥部" historical_model = 0 }
-				division= {
-					name = "第139步兵师"
-					location = 2456
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第371步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第528步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第664步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第141步兵师"
-					location = 2456
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第687步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第541步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第733步兵团" historical_model = 0 }
-				}
-			}
-			corps = {
-				name = "第5骑兵军"
-				location = 2517
-				regiment = { type = hq_brigade name = "第5骑兵军指挥部" historical_model = 0 }
-				division= {
-					name = "第3骑兵师"
-					location = 2517
-					is_reserve = yes
-					regiment = { type = cavalry_brigade historical_model = 0 }
-					regiment = { type = cavalry_brigade historical_model = 0 }
-					regiment = { type = armored_car_brigade historical_model = 0 }
-				}
-			}
-			corps = {
-				name = "第4机械化军"
-				location = 2516
-				regiment = { type = hq_brigade name = "第4机械化军" historical_model = 0 }
-				division= {
-					name = "第81摩托化步兵师"
-					location = 2516
-					is_reserve = yes
-					regiment = { type = light_armor_brigade name = "第53坦克团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第202摩托化步兵团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第323摩托化步兵团" historical_model = 0 }
-				}
-			}
-		}
-		army = {
-			name = "第12集团军"
-			location = 2519
-			regiment = { type = hq_brigade name = "第12集团军司令部" historical_model = 0 }
-			corps = {
-				name = "第17军"
-				location = 2519
-				regiment = { type = hq_brigade name = "第17军指挥部" historical_model = 0 }
-				division= {
-					name = "第164步兵师"
-					location = 2519
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第531步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第620步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第742步兵团" historical_model = 0 }	
-				}
-				division= {
-					name = "第60步兵师"
-					location = 2519
-					is_reserve = yes
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }
-				}
-				division= {
-					name = "第69步兵师"
-					location = 2519
-					is_reserve = yes
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade historical_model = 0 }
-				}
-			}
-		}
-		army = {
-			name = "第26集团军"
-			location = 2642
-			regiment = { type = hq_brigade name = "第26集团军司令部" historical_model = 0 }
-			corps = {
-				name = "第8军"
-				location = 2642
-				regiment = { type = hq_brigade name = "第8军指挥部" historical_model = 0 }
-				division= {
-					name = "第99步兵师"
-					location = 2642
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第1步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第197步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第206步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第173步兵师"
-					location = 2642
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第378步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第490步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第567步兵团" historical_model = 0 }
-				}
-			}
-			corps = {
-				name = "第8机械化军"
-				location = 2708
-				regiment = { type = hq_brigade name = "第8机械化军司令部" historical_model = 0 }
-				division= {
-					name = "第7摩托化步兵师"
-					location = 2708
-					is_reserve = yes
-					regiment = { type = light_armor_brigade name = "第23坦克团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第12摩托化步兵团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第27摩托化步兵团" historical_model = 0 }
-				}
-			}
-		}
-	}
-	armygroup = {
-		name = "南方方面军"
-		location = 3309
-		regiment = { type = hq_brigade name = "南方方面军司令部" historical_model = 0 }
-		corps = {
-			name = "第7集团军军"
-			location = 3108
-			regiment = { type = hq_brigade name = "第7集团军军司令部" historical_model = 0 }
-			division= {
-				name = "第116步兵师"
-				location = 3108
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第441步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第548步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第656步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第196步兵师"
-				location = 3174
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第863步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第884步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第893步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第206步兵师"
-				location = 3242
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第722步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第737步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第748步兵团" historical_model = 0 }
-			}
-		}
-		corps = {
-			name = "第9集团军军"
-			location = 2971
-			regiment = { type = hq_brigade name = "第9集团军军司令部" historical_model = 0 }	
-			division= {
-				name = "第156步兵师"
-				location = 3039
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第361步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第417步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第530步兵团" historical_model = 0 }
-			}
-			division= {	
-				name = "第106步兵师"
-				location = 3107
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第397步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第442步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第534步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第32骑兵师"
-				location = 2971
-				is_reserve = yes
-				regiment = { type = cavalry_brigade historical_model = 0 }
-				regiment = { type = cavalry_brigade historical_model = 0 }
-				regiment = { type = armored_car_brigade historical_model = 0 }
-			}
-		}
-		division= {		
-			name = "第47步兵师"
-			location = 3309
+		name = "Arhangelsk Okrug"
+		location = 311
+		regiment = { type = hq_brigade name = "Arhangelsk Okrug HQ" historical_model = 1 }
+		division = {
+			name = "88. 'Arkhangelsk' Strelkovaya Diviziya"
+			location = 311
 			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第268步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第301步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第328步兵团" historical_model = 0 }
+			regiment = { type = infantry_brigade name = "257y Strelkoviy Polk" experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "264y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			regiment = { type = infantry_brigade name = "330y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			regiment = { type = horse_towed_support_brigade name = "88y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+		}
+		division= {
+			name = "3. Pribrezhnye Kreposti Diviziya" # coastal Fortifified Area brigade / Division
+			location = 311 # Archangelsk
+			regiment = { type = garrison_brigade name = "3. Pribrezhnye Kreposti Polk" experience = 10 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "134y Artilleriiskiy Polk" experience = 10 historical_model = 3 }			
+		}		
+		corps = {
+			name = "1ya Korpus"
+			location = 544
+			regiment = { type = hq_brigade name = "1ya Strelkovaya Korpus HQ" historical_model = 1}
+			division= {
+				name = "11. 'Valginskaya' Strelkovaya Diviziya"
+				location = 435
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "163y Strelkoviy Polk" experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade name = "219y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "320y Strelkoviy Polk" experience = 10 historical_model = 1 }
+				regiment = { type = horse_towed_support_brigade name = "11y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+			}
+			division= {
+				name = "54. 'Turkestanskaya' Strelkovaya Diviziya"
+				location = 582
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "81y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "118y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "337y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "54y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			}
+		}
+		air = {
+			name = "Archangelsk XIV. AD"
+			base = 311
+			location = 311
+			wing = { type = interceptor name = "20. IAD" experience = 10 historical_model = 2 }
+		}		
+	}
+	navy = {
+		name = "Severnyy Flot"
+		base = 46
+		location = 46
+		ship = { type = destroyer name = "1. Flotiliya Esmintsev" experience = 10 historical_model = 0 }
+		ship = { type = submarine name = "1. Flotiliya Podlodok" experience = 10 historical_model = 1 }
+		ship = { type = submarine name = "2. Flotiliya Podlodok" experience = 10 historical_model = 5 }
+		ship = { type = submarine name = "3. Flotiliya Podlodok" experience = 10 historical_model = 6 }
+		ship = { type = submarine name = "4. Flotiliya Podlodok" experience = 10 historical_model = 7 }
+	}	
+}	
+theatre = {
+	name = "Leningradskoie Napravlenie"
+	location = 782 # Leningrad
+	regiment = { type = hq_brigade name = "Leningradskoie Napravlenie HQ" historical_model = 1 }
+	armygroup = {
+		name = "Leningradskii Okrug"
+		location = 782
+		regiment = { type = hq_brigade name = "Leningradskii Okrug HQ" historical_model = 1 }				
+		army = {
+			name = "6ya Armiya"
+			location = 782
+			regiment = { type = hq_brigade name = "6ya Armiya HQ" historical_model = 1 }					
+			corps = {
+				name = "1ya Leningradskii Korpus"
+				location = 782
+				regiment = { type = hq_brigade name = "1ya Leningradskii Korpus HQ" historical_model = 1 }			
+				division = {
+					name = "1. Leningradskii Tankovaya Diviziya"
+					location = 782
+					is_reserve = yes
+					regiment = { type = light_armor_brigade name = "9y Tankoviy Polk" experience = 10 historical_model = 2 }
+					regiment = { type = super_heavy_armor_brigade name = "11y Tankoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = self_propelled_support_brigade name = "50y Batallion Broneavtomobilei" experience = 10 historical_model = 3 }
+					regiment = { type = engineer_brigade name = "12y Ingenernaia Brigada" experience = 10 historical_model = 0 }
+				}		
+				division = {
+					name = "2. Leningradskii Tankovaya Diviziya"
+					location = 782
+					is_reserve = yes
+					regiment = { type = armor_brigade name = "2y Tankoviy Polk" experience = 10 historical_model = 2 }
+					regiment = { type = engineer_brigade name = "29y Ingenernaia Brigada" experience = 10 historical_model = 0 is_reserve = yes  }
+					regiment = { type = self_propelled_support_brigade name = "1y Batallion Broneavtomobilei" experience = 10 historical_model = 4 }
+					}		
+				division= {
+					name = "18. 'Yaroslavlskaya' Strelkovaya Diviziya"
+					location = 782
+					is_reserve = yes		
+					regiment = { type = infantry_brigade name = "97y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "208y Strelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "316y Strelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "18y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "19y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }			
+				}
+				division= {
+					name = "10. 'Novgorodskaya' Strelkovaya Diviziya"
+					location = 782	
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "62y Polk Narodnogo Opolcheniya" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "98y Polk Narodnogo Opolcheniya" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "204y Polk Narodnogo Opolcheniya" experience = 10 historical_model = 3 is_reserve = yes }
+				}
+				air = {
+					name = "Leningrad I. AD"
+					base = 782
+					location = 782
+					wing = { type = interceptor name = "1. IAD" experience = 10 historical_model = 0 }
+					wing = { type = interceptor name = "2. IAD" experience = 10 historical_model = 0 }
+				}			
+			}
+			corps = {
+				name = "33ya Strelkovaya Korpus"
+				location = 741
+				regiment = { type = hq_brigade name = "33ya Strelkovaya Korpus HQ" historical_model = 0 is_reserve = yes }
+				division= {
+					name = "56. 'Moskovskaya' Strelkovaya Diviziya"
+					location = 741
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "37y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "184y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "213y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "56y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+				}
+				division= {
+					name = "90. 'Ropshinskaya' Strelkovaya Diviziya"
+					location = 699
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "19y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "173y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "286y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "90y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				}
+			}		
+			corps = {
+				name = "Leningradskii Kreposti Korpus"
+				location = 781
+				regiment = { type = hq_brigade name = "Leningradskii Kreposti Korpus HQ" historical_model = 1	}	
+				division= {
+					name = "21. Kreposti Diviziya" # Fortifified Area Division
+					location = 781 # Leningrad
+					is_reserve = yes				
+					regiment = { type = garrison_brigade name = "121y Krepost Polk" experience = 10 historical_model = 3 }
+					regiment = { type = garrison_brigade name = "221y Krepost Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "130y Artilleriiskiy Polk" experience = 10 historical_model = 3 }					
+				}
+				division= {
+					name = "22. Kreposti Diviziya" # Fortifified Area Division
+					location = 699 # Leningrad
+					is_reserve = yes				
+					regiment = { type = garrison_brigade name = "122y Krepost Polk" experience = 10 historical_model = 3 }
+					regiment = { type = garrison_brigade name = "222y Krepost Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "131y Artilleriiskiy Polk" experience = 10 historical_model = 3 }
+				}
+				division= {
+					name = "1. Pribrezhnye Kreposti Diviziya" # Coastal Fortifified Area Brigade/division
+					location = 782 # leningrad
+					is_reserve = yes				
+					regiment = { type = garrison_brigade name = "1y Pribrezhnye Kreposti Polk" experience = 10 historical_model = 3 }
+					regiment = { type = horse_towed_support_brigade name = "132y Artilleriiskiy Polk" experience = 10 historical_model = 3 }
+				}
+			}
 		}	
 		army = {
-			name = "第9集团军"	
-			location = 2837
-			regiment = { type = hq_brigade name = "第9集团军司令部" historical_model = 0 }
+			name = "7ya Armiya"
+			location = 165
+			regiment = { type = hq_brigade name = "7ya Armiya HQ" historical_model = 1 }
 			corps = {
-				name = "第35军"
-				location = 2970
-				regiment = { type = hq_brigade name = "第35军指挥部" historical_model = 0 }
+				name = "19ya Strelkovaya Korpus"
+				location = 165
+				regiment = { type = hq_brigade name = "19ya Strelkovaya Korpus HQ" historical_model = 1 }
 				division= {
-					name = "第176步兵师"
-					location = 2970
+					name = "16. 'V.I. Kikvidze' Strelkovaya Diviziya"
+					location = 145
 					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第389步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第404步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第591步兵团" historical_model = 0 }
-				}
+					regiment = { type = infantry_brigade name = "156y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "167y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "249y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "16y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+					}
 				division= {
-					name = "第95'莫尔得夫'步兵师"
-					location = 2970
+					name = "70. 'Kuybyshevskaya' Strelkovaya Diviziya"
+					location = 183
 					is_reserve = yes
-					regiment = { type = bergsjaeger_brigade name = "第90步兵团" historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade name = "第161步兵团" historical_model = 0 }
-					regiment = { type = bergsjaeger_brigade name = "第241步兵团" historical_model = 0 }
+					regiment = { type = infantry_brigade name = "68y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "252y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "329y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "70y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
 				}
 			}
 			corps = {
-				name = "第14军"
-				location = 2903
-				regiment = { type = hq_brigade name = "第14军司令部" historical_model = 0 }
+				name = "1ya Murmanskii Korpus"
+				location = 46
+				regiment = { type = hq_brigade name = "1ya Murmanskii Korpus HQ" historical_model = 1 }				
 				division= {
-					name = "第25步兵师"
-					location = 2903
-					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第31步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第54步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第263步兵团" historical_model = 0 }
+					name = "67. 'Murmanskaya' Strelkovaya Diviziya"
+					location = 46
+					is_reserve = yes			
+					regiment = { type = infantry_brigade name = "56y Strelkoviy Polk" experience = 10 historical_model = 2 }
+					regiment = { type = infantry_brigade name = "114y Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "281y Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "67y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }		
 				}
 				division= {
-					name = "第51步兵师"
-					location = 2903
+					name = "2. Pribrezhnye Kreposti Diviziya" # Coastal Fortifified Area Brigade/division
+					location = 46 # murmansk
 					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第23步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第287步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第348步兵团" historical_model = 0 }
+					regiment = { type = garrison_brigade name = "2y Pribrezhnye Kreposti Polk" experience = 10 historical_model = 3 }
+					regiment = { type = horse_towed_support_brigade name = "133y Artilleriiskiy Polk" experience = 10 historical_model = 3 }					
+				}
+			}			
+		}		
+		army = {
+			name = "23ya Armiya"
+			location = 821
+			regiment = { type = hq_brigade name = "23ya Armiya HQ" historical_model = 1 }
+			corps = {
+				name = "1ya Kavaleriyskaya Korpus"
+				location = 822
+				regiment = { type = hq_brigade name = "1ya Kavaleriyskaya Korpus HQ" historical_model = 1 }		
+				division= {
+					name = "16. Kavaleriyskaya Diviziya"
+					location = 822
+					is_reserve = yes
+					regiment = { type = cavalry_brigade name = "16y Kavaleriyskaya Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = cavalry_brigade name = "36y Kavaleriyskaya Polk" experience = 10 historical_model = 3 is_reserve = yes }	
+				}
+				division= {
+					name = "25. Kavaleriyskaya Diviziya"
+					location = 821
+					is_reserve = yes
+					regiment = { type = cavalry_brigade name = "25y Kavaleriyskaya Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = cavalry_brigade name = "47y Kavaleriyskaya Polk" experience = 10 historical_model = 3 is_reserve = yes }	
+				}		
+			}
+			corps = {
+				name = "1ya NKVD Korpus"
+				location = 822
+				regiment = { type = hq_brigade name = "1ya NKVD Strelkovaya Korpus HQ" historical_model = 1	}	
+				division= {
+					name = "1. NKVD Strelkovaya Diviziya"
+					location = 782
+					is_reserve = yes					
+					regiment = { type = infantry_brigade name = "16y NKVD Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "19y NKVD Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "2y NKVD Protivotankovoiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+				}
+				division= {
+					name = "20. NKVD Strelkovaya Diviziya"
+					location = 782
+					is_reserve = yes					
+					regiment = { type = infantry_brigade name = "115y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "116y NKVD Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "3y NKVD Protivotankovoiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				}
+				division= {
+					name = "21. NKVD Motostrelkovaya Diviziya"
+					location = 782
+					is_reserve = yes					
+					regiment = { type = motorized_brigade name = "118y NKVD MotoStrelkoviy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+					regiment = { type = motorized_brigade name = "119y NKVD MotoStrelkoviy Polk" experience = 10 historical_model = 0 is_reserve = yes }
 				}
 			}
 			corps = {
-				name = "第48军"
-				location = 2836
-				regiment = { type = hq_brigade name = "第48军指挥部" historical_model = 0 }
+				name = "7ya Mehanizirovanaya Korpus"
+				location = 822
+				regiment = { type = hq_brigade name = "7ya Mehanizirovanaya Korpus HQ" historical_model = 1}
 				division= {
-					name = "第74步兵师"
-					location = 2836
+					name = "7. Mehanizirovanaya Diviziya"
+					location = 822
 					is_reserve = yes
-					regiment = { type = infantry_brigade name = "第78步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第109步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第360步兵团" historical_model = 0 }
+					regiment = { type = light_armor_brigade name = "19y Tankoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = light_armor_brigade name = "31y Tankoviy Polk" experience = 10 historical_model = 4 }					
+					regiment = { type = motorized_brigade name = "33y MotoStrelkoviy Polk" experience = 10 historical_model = 0 }
+					regiment = { type = self_propelled_support_brigade name = "7y Batallion Broneavtomobilei" experience = 10 historical_model = 3 }
 				}
 			}
 			corps = {
-				name = "第2骑兵军"
+				name = "11ya Mehanizirovanaya Korpus"
+				location = 821
+				regiment = { type = hq_brigade name = "11ya Mehanizirovanaya Korpus HQ" historical_model = 1}
+				division= {
+					name = "11. Mehanizirovanaya Diviziya"
+					location = 821
+					is_reserve = yes
+					regiment = { type = light_armor_brigade name = "6y Tankoviy Polk" experience = 10 historical_model = 0 }
+					regiment = { type = light_armor_brigade name = "32y Tankoviy Polk" experience = 10 historical_model = 0 }	
+					regiment = { type = self_propelled_support_brigade name = "11y Batallion Broneavtomobilei" experience = 10 historical_model = 2 }				
+				}
+			}
+		}	
+		army = {
+			name = "Krasnoznamyonnyy Baltiyskiy Flot"
+			location = 782
+			regiment = { type = hq_brigade name = "Krasnoznamyonnyy Baltiyskiy Flot HQ" historical_model = 1}
+			division= {
+				name = "1. Diviziya Morskoi Pekhoty"
+				location = 782
+				is_reserve = yes			
+				regiment = { type = marine_brigade name = "1. 'Mozyr' Morskoi Pekhoty Polk" experience = 10 historical_model = 0 }
+				regiment = { type = engineer_brigade name = "1y Ingenernaia Brigada" experience = 10 historical_model = 0 }
+				}
+			navy = {
+				name = "Krasnoznamyonnyy Baltiyskiy Flot"
+				base = 782
+				location = 782
+				ship = { type = battleship name = "Marat" experience = 10 historical_model = 0 }
+				ship = { type = battleship name = "Oktyabrskaya Revolyutsiya" experience = 10 historical_model = 0 pride = yes }
+				ship = { type = destroyer name = "4. Flotiliya Esmintsev" experience = 10 historical_model = 1 }
+				ship = { type = submarine name = "8. Flotiliya Podlodok" experience = 10 historical_model = 9 }
+				ship = { type = submarine name = "9. Flotiliya Podlodok" experience = 10 historical_model = 9 }
+			}
+			air = {
+				name = "Krasnoznamyonnyy Baltiyskiy Flot AD"
+				base = 782
+				location = 782
+				wing = { type = naval_bomber name = "4. MBAD" experience = 10 historical_model = 0 }
+				wing = { type = naval_bomber name = "5. MBAD" experience = 10 historical_model = 0 }
+				wing = { type = naval_bomber name = "6. MBAD" experience = 10 historical_model = 1 }
+			}			
+		}
+	}
+}
+theatre = {
+	name = "Belorusskoie Napravlenie"
+	location = 1694 # Minsk
+	regiment = { type = hq_brigade name = "Belorusskoie Napravlenie HQ" historical_model = 1 }
+	armygroup = {
+		name = "Belorusskii Okrug"
+		location = 1694
+		regiment = { type = hq_brigade name = "Belorusskii Okrug HQ" historical_model = 1 }
+		corps = {
+			name = "5ya Mehanizirovanaya Korpus"
+			location = 1695
+			regiment = { type = hq_brigade name = "5ya Mehanizirovanaya Korpus HQ" historical_model = 1 }
+			division = {
+				name = "209. Motorizovannaya Diviziya"
+				location = 1695
+				is_reserve = yes
+				regiment = { type = super_heavy_armor_brigade name = "13y Tankoviy Polk" experience = 10 historical_model = 1 }
+				regiment = { type = light_armor_brigade name = "14y Tankoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = motorized_brigade name = "50y MotoStrelkoviy Polk" experience = 10 historical_model = 0 }
+				regiment = { type = self_propelled_support_brigade name = "209y Batallion Broneavtomobilei" experience = 10 historical_model = 3 }
+			}			
+		}	
+		army  = {
+			name = "3ya Armiya"
+			location = 1694
+			regiment = { type = hq_brigade name = "3ya Armiya HQ" historical_model = 1 }
+			corps = {
+				name = "1ya Tankovaya Korpus"
+				location = 1694 
+				regiment = { type = hq_brigade name = "1ya Tankovaya Korpus HQ" historical_model = 1 }	
+				division= {
+					name = "1. Tankovaya Diviziya"
+					location = 1694
+					is_reserve = yes
+					regiment = { type = super_heavy_armor_brigade name = "3y Tankoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = light_armor_brigade name = "4y Tankoviy Polk" experience = 10 historical_model = 0 }			
+					regiment = { type = self_propelled_support_brigade name = "2y Batallion Broneavtomobilei" experience = 10 historical_model = 3 }
+					regiment = { type = engineer_brigade name = "10y Ingenernaia Brigada" experience = 10 historical_model = 0 }
+				}	
+				division= {
+					name = "2. Tankovaya Diviziya"
+					location = 1694
+					is_reserve = yes
+					regiment = { type = light_armor_brigade name = "5y Tankoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = light_armor_brigade name = "10y Tankoviy Polk" experience = 10 historical_model = 4 is_reserve = yes }
+					regiment = { type = light_armor_brigade name = "16y Tankoviy Polk" experience = 10 historical_model = 0 is_reserve = yes }	
+					regiment = { type = self_propelled_support_brigade name = "3y Batallion Broneavtomobilei" experience = 10 historical_model = 2 }
+					regiment = { type = engineer_brigade name = "23y Ingenernaia Brigada" experience = 10 historical_model = 0 is_reserve = yes }			
+				}
+				division= {
+					name = "3. Tankovaya Diviziya"
+					location = 1694
+					is_reserve = yes
+					regiment = { type = super_heavy_armor_brigade name = "18y Tankoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = light_armor_brigade name = "21y Tankoviy Polk" experience = 10 historical_model = 4 is_reserve = yes }			
+					regiment = { type = armor_brigade name = "1y Tankoviy Polk" experience = 10 historical_model = 2 }
+					regiment = { type = self_propelled_support_brigade name = "4y Batallion Broneavtomobilei" experience = 10 historical_model = 3 }
+					regiment = { type = engineer_brigade name = "25y Ingenernaia Brigada" experience = 10 historical_model = 0 is_reserve = yes }			
+				}
+			}
+			corps = {
+				name = "11ya Korpus"
+				location = 1581
+				regiment = { type = hq_brigade name = "11ya Korpus HQ" historical_model = 1 }
+				division= {
+					name = "2. 'Belorusskaya' Strelkovaya Diviziya"
+					location = 1581
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "13y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "200y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "227y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "261y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = horse_towed_support_brigade name = "2y Artilleriiskiy Polk" experience = 10 historical_model = 2 }
+				}
+				division= {
+					name = "8. 'Minskskaya' Strelkovaya Diviziya"
+					location = 1694
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "151y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "229y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "270y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "8y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+				}
+			}
+			corps = {
+				name = "16ya Korpus"
+				location = 1815
+				regiment = { type = hq_brigade name = "16ya Korpus HQ" historical_model = 1 }				
+				division= {
+					name = "4. 'Smolenskskaya' Strelkovaya Diviziya"	
+					location = 1815
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "39y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "101y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "220y Strelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "4y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				}
+				division= {
+					name = "81. 'Kalugaskaya' Strelkovaya Diviziya"
+					location = 1815
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "171y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "202y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "323y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "81y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				}
+			}		
+		}		
+		army = {
+			name = "47ya Armiya"
+			location = 1695
+			regiment = { type = hq_brigade name = "47ya Armiya HQ" historical_model = 1 }
+			division= {
+				name = "29. 'Sibirskaya' Strelkovaya Diviziya"
+				location = 1491
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "106y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "128y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "238y Strelkoviy Polk" experience = 10 historical_model = 1 }
+				regiment = { type = horse_towed_support_brigade name = "29y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+			}	
+			division= {
+				name = "29. 'Sibirskaya' Strelkovaya Diviziya"
+				location = 1534
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "106y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "128y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "238y Strelkoviy Polk" experience = 10 historical_model = 1 }
+				regiment = { type = horse_towed_support_brigade name = "29y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			}	
+			division= {
+				name = "52. 'Pechangskaya' Strelkovaya Diviziya"
+				location = 1534
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "58y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "112y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "205y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "52y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+			}
+			division= {
+				name = "64. 'Smolenskaya' Strelkovaya Diviziya"
+				location = 1536
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "30y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "159y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "288y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "64y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+			}			
+			corps = {
+				name = "6ya Kavaleriyskaya Korpus"
+				location = 1875
+				regiment = { type = hq_brigade name = "6ya Kavaleriyskaya Korpus HQ" historical_model = 1 }
+				division= {
+					name = "6. 'Chongarskaya' Kavaleriyskaya Diviziya"
+					location = 1875
+					is_reserve = yes
+					regiment = { type = light_armor_brigade name = "35y Tankoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+					regiment = { type = cavalry_brigade name = "3y Kavaleriyskiy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = cavalry_brigade name = "48y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }	
+					regiment = { type = self_propelled_support_brigade name = "6y Batallion Broneavtomobilei" experience = 10 historical_model = 3 }
+				}
+				division= {
+					name = "36. Kavaleriyskaya Diviziya"
+					location = 1875
+					is_reserve = yes
+					regiment = { type = light_armor_brigade name = "8y Tankoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = cavalry_brigade name = "24y Kavaleriyskiy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = cavalry_brigade name = "42y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }	
+					regiment = { type = self_propelled_support_brigade name = "36y Batallion Broneavtomobilei" experience = 10 historical_model = 2 }
+				}
+			}	
+		}		
+	}
+	armygroup = {
+		name = "Zapadnoi Okrug"
+		location = 1695
+		regiment = { type = hq_brigade name = "Zapadnoi Okrug HQ" historical_model = 1 }
+		army = {
+			name = "9ya Armiya"
+			location = 1695
+			regiment = { type = hq_brigade name = "9ya Armiya HQ" historical_model = 1 }
+			corps  = {
+				name = "4ya Korpus"
+				location = 1695
+				regiment = { type = hq_brigade name = "4ya Korpus HQ" historical_model = 1 }
+				division= {
+					name = "27. 'Omskaya' Strelkovaya Diviziya"
+					location = 1695
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "132y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "239y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "345y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "27y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+				}
+				division= {
+					name = "50. 'Kirovogradskaya' Strelkovaya Diviziya"
+					location = 1695
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "2y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "49y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "359y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "50y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				}
+			}
+		}
+	}
+	armygroup = {
+		name = "Tulaski Okrug"
+		location = 1941
+		regiment = { type = hq_brigade name = "Tulaski Okrug HQ" historical_model = 1 }
+		army = {
+			name = "27ya Armiya"
+			location = 1546
+			regiment = { type = hq_brigade name = "27ya Armiya HQ" historical_model = 1 }
+			corps = {
+				name = "20ya Rezervnyi Korpus" # Reserve Corps
+				location = 1546
+				regiment = { type = hq_brigade name = "20ya Rezervnyi Korpuss HQ" historical_model = 1 is_reserve = yes }
+				division= {
+					name = "17. 'Nizhniy-Novgorodskaya' Strelkovaya Diviziya"
+					location = 1546
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "55y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "271y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "278y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "17y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				}
+			}
+			corps = {
+				name = "21ya Rezervnyi Korpus" # Reserve Corps
+				location = 1546
+				regiment = { type = hq_brigade name = "21ya Rezervnyi Korpus HQ" historical_model = 1 is_reserve = yes }
+				division= {
+					name = "6. 'Oryolskaya' Strelkovaya Diviziya"
+					location = 1546
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "84y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "125y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "333y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "6y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+				}
+			}
+			corps = {
+				name = "30ya Rezervnyi Korpus" # Reserve Corps
+				location = 1941
+				regiment = { type = hq_brigade name = "30ya Rezervnyi Korpus HQ" historical_model = 1 is_reserve = yes }
+				division= {
+					name = "19. 'Voronezskaya' Strelkovaya Diviziya"
+					location = 1941
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "32y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "282y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "315y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "19y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }	
+				}
+			}
+			corps = {
+				name = "40ya Rezervnyi Korpus" # Reserve Corps
+				location = 1941
+				regiment = { type = hq_brigade name = "40ya Rezervnyi Korpus HQ" historical_model = 1 is_reserve = yes }
+				division= {
+					name = "55. 'Kurskaya' Strelkovaya Diviziya"
+					location = 1941
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "107y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "111y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "228y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "55y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				}
+			}	
+		}
+		army = {
+			name = "11ya Armiya"
+			location = 1498	
+			regiment = { type = hq_brigade name = "11ya Armiya HQ" historical_model = 1 }
+			corps = {
+				name = "2ya Territorialnyi Korpus"
+				location = 1498
+				regiment = { type = hq_brigade name = "2ya Territorialnyi Korpus HQ" historical_model = 1 is_reserve = yes }
+				division= {
+					name = "49. Strelkovaya Diviziya"
+					location = 1498
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "15. Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "212. Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "222. Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "100y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }	
+					regiment = { type = horse_towed_support_brigade name = "10y Protivotankovoiy Polk" experience = 10 historical_model = 0 is_reserve = yes }					
+				}
+			}			
+			corps = {
+				name = "3ya Territorialnyi Korpus"
+				location = 1589
+				regiment = { type = hq_brigade name = "3ya Territorialnyi Korpus HQ" historical_model = 1 is_reserve = yes }
+				division= {
+					name = "84. 'Tulaskaya' Strelkovaya Diviziya"
+					location = 1589
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "41y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "201y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "298y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "101y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }	
+					regiment = { type = horse_towed_support_brigade name = "11y Protivotankovoiy Polk" experience = 10 historical_model = 2 is_reserve = yes }					
+				}
+			}
+		}		
+		corps = {
+			name = "3ya NKVD Korpus"
+			location = 1498 
+			regiment = { type = hq_brigade name = "3ya NKVD Korpus HQ" historical_model = 1 }		
+			division= {
+				name = "14. NKVD Strelkovaya Diviziya"
+				location = 1498
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "68y NKVD Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "69y NKVD Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "4y NKVD Protivotankovoiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+			}
+			division= {
+				name = "15. NKVD Strelkovaya Diviziya"
+				location = 1498
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "71y NKVD Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "74y NKVD Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			}
+			division= {
+				name = "17. NKVD Strelkovaya Diviziya"
+				location = 1498
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "81y NKVD Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "99y NKVD Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "5y NKVD Protivotankovoiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			}
+		}			
+	}	
+}	
+theatre = {
+	name = "Ukrainskoie Napravlenie"
+	location = 2338
+	regiment = { type = hq_brigade name = "Ukrainskoie Napravlenie HQ" historical_model = 1 }
+	armygroup = {
+		name = "Kievskii Okrug"
+		location = 2223
+		regiment = { type = hq_brigade name = "Kievskii Okrug HQ" historical_model = 1 }
+		division= {
+			name = "1. Kreposti Diviziya" # Fortifified Area Division
+			location = 2223 # kiev
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "11y Krepost Polk" experience = 10 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "21y Krepost Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			regiment = { type = horse_towed_support_brigade name = "135y Artilleriiskiy Polk" experience = 10 historical_model = 3 }			
+		}		
+		corps = {
+			name = "Kievskii Tankovaya Korpus"
+			location = 2223
+			regiment = { type = hq_brigade name = "Kievskii Tankovaya Korpus HQ" historical_model = 1 }			
+			division = {
+				name = "1. Kievskii Tankovaya Diviziya"
+				location = 2223
+				is_reserve = yes		
+				regiment = { type = light_armor_brigade name = "2y Tankoviy Polk" experience = 10 historical_model = 0 }
+				regiment = { type = super_heavy_armor_brigade name = "8y Tankoviy Polk" experience = 10 historical_model = 0 }
+				regiment = { type = self_propelled_support_brigade name = "11y Batallion Broneavtomobilei" experience = 10 historical_model = 2 }
+				regiment = { type = engineer_brigade name = "8y Ingenernaia Brigada" experience = 10 historical_model = 0 }
+			}
+			division = {
+				name = "2. Kievskii Tankovaya Diviziya"
+				location = 2223
+				is_reserve = yes
+				regiment = { type = light_armor_brigade name = "15y Tankoviy Polk" experience = 10 historical_model = 0 }
+				regiment = { type = light_armor_brigade name = "17y Tankoviy Polk" experience = 10 historical_model = 4 }
+				regiment = { type = self_propelled_support_brigade name = "12y Batallion Broneavtomobilei" experience = 10 historical_model = 3 }
+				regiment = { type = engineer_brigade name = "9y Ingenernaia Brigada" experience = 10 historical_model = 0 }
+			}	
+			division = {
+				name = "3. Kievskii Tankovaya Diviziya"
+				location = 2223
+				is_reserve = yes		
+				regiment = { type = light_armor_brigade name = "22y Tankoviy Polk" experience = 10 historical_model = 0 }
+				regiment = { type = armor_brigade name = "4y Tankoviy Polk" experience = 10 historical_model = 1 }
+				regiment = { type = self_propelled_support_brigade name = "13y Batallion Broneavtomobilei" experience = 10 historical_model = 2 }
+				regiment = { type = engineer_brigade name = "45y Ingenernaia Brigada" experience = 10 historical_model = 0 is_reserve = yes }		
+			}
+		}
+		army = {
+			name = "1ya Armiya"
+			location = 2279
+			regiment = { type = hq_brigade name = "1ya Armiya HQ" historical_model = 1 }
+			corps = {
+				name = "26ya Rezervnyi Korpus"
+				location = 2279
+				regiment = { type = hq_brigade name = "26ya Rezervnyi Korpus HQ" historical_model = 1 }
+				division= {
+					name = "7. 'Chernigovskaya' Strelkovaya Diviziya"
+					location = 2279
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "12y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "27y Strelkoviy Polk" experience = 10 historical_model = 1  is_reserve = yes }
+					regiment = { type = infantry_brigade name = "300y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "7y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				}
+				division= {
+					name = "45. 'Volynskaya' Strelkovaya Diviziya"
+					location = 2279
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "10y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "61y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "253y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "7y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				}
+			}
+			corps = {
+				name = "35ya Rezervnyi Korpus"
+				location = 2519
+				regiment = { type = hq_brigade name = "35ya Rezervnyi Korpus HQ" historical_model = 1 is_reserve = yes }
+				division= {
+					name = "30. 'Irkutskaya' Strelkovaya Diviziya"
+					location = 2582
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "35y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "71y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "256y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "369y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				}
+				division= {
+					name = "75. 'Chapaevskaya' Strelkovaya Diviziya"
+					location = 2582
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "28y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "34y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "115y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "108y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }	
+					regiment = { type = horse_towed_support_brigade name = "18y Protivotankovoiy Polk" experience = 10 historical_model = 2 is_reserve = yes }				
+				}
+			}			
+		}
+		army = {
+			name = "2ya Armiya"
+			location = 2513
+			regiment = { type = hq_brigade name = "2ya Armiya HQ" historical_model = 1 }
+			corps = {
+				name = "5ya Kavaleriyskaya Korpus"
+				location = 2513
+				regiment = { type = hq_brigade name = "5ya Kavaleriyskaya Korpus HQ" historical_model = 1 }	
+				division= {
+					name = "1. 'Chernigovskaya' Kavaleriyskaya Diviziya"
+					location = 2513
+					is_reserve = yes
+					regiment = { type = cavalry_brigade name = "1y Kavaleriyskiy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = cavalry_brigade name = "2y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				}
+				division= {
+					name = "3. 'Bessarabskaya' Kavaleriyskaya Diviziya"
+					location = 2513
+					is_reserve = yes
+					regiment = { type = cavalry_brigade name = "34y Kavaleriyskiy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = cavalry_brigade name = "60y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				}
+			}
+			corps = {
+				name = "8ya Korpus"
+				location = 2336
+				regiment = { type = hq_brigade name = "8ya Korpus HQ" historical_model = 1 }				
+				division= {
+					name = "24. 'Samara-Ulyanov Zheleznyi' Strelkovaya Diviziya"
+					location = 2278
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "7y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "168y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "274y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "280y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = horse_towed_support_brigade name = "24y Artilleriiskiy Polk" experience = 10 historical_model = 1 }
+				}
+				division= {
+					name = "99. Strelkovaya Diviziya"
+					location = 2393
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "1y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "197y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "206y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "95y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				}
+			}		
+			corps = {
+				name = "15ya Korpus"
+				location = 2451
+				regiment = { type = hq_brigade name = "15ya Korpus HQ" historical_model = 1 }
+				division= {
+					name = "51. 'Perekopskaya' Strelkovaya Diviziya"
+					location = 2574
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "23y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "287y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "348y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "46. Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+				}
+				division= {
+					name = "96. 'F.J. Fabritsrua' Strelkovaya Diviziya"
+					location = 2511
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "43y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "155y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "209y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "272y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "96y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				}
+			}
+			corps = {
+				name = "17ya Korpus"
+				location = 2640
+				regiment = { type = hq_brigade name = "17ya Korpus HQ" historical_model = 1 }
+				division= {
+					name = "60. 'Kavkazskaya' Strelkovaya Diviziya"
+					location = 2705
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "194y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "224y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "350y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "358y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "60y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				}
+				division= {
+					name = "100. Strelkovaya Diviziya"
+					location = 2705
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "85y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "260y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "355y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "60y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+				}
+			}			
+		}	
+	}
+	armygroup = {
+		name = "Kharkovskii Okrug"
+		location = 2223
+		regiment = { type = hq_brigade name = "Kharkovskii Okrug HQ" historical_model = 1 }
+		army = {
+			name = "29ya Armiya"
+			location = 2344
+			regiment = { type = hq_brigade name = "29ya Armiya HQ" historical_model = 1 }
+			division= {
+				name = "3. 'Krymskaya' Strelkovaya Diviziya"
+				location = 2344
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "8y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "18y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "70y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "3y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+			}	
+			division= {
+				name = "32. Kavaleriyskaya Diviziya"
+				location = 2344
+				is_reserve = yes
+				regiment = { type = heavy_armor_brigade name = "5y Tankovyi Polk" experience = 10 historical_model = 0 }			
+				regiment = { type = super_heavy_armor_brigade name = "18y Tankovyi Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "65y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "86y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = self_propelled_support_brigade name = "32y Batallion Broneavtomobilei" experience = 10 historical_model = 2 }
+			}	
+			division= {
+				name = "48. Kavaleriyskaya Diviziya"
+				location = 2344
+				is_reserve = yes
+				regiment = { type = cavalry_brigade name = "43y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "78y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			}
+			division= {
+				name = "5. NKVD Strelkovaya Diviziya"
+				location = 2344
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "40y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "41y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			}
+			division= {
+				name = "10. Pribrezhnye Kreposti Diviziya"
+				location = 2344
+				is_reserve = yes
+				regiment = { type = garrison_brigade name = "10y Pribrezhnye Kreposti Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "139y Artilleriiskiy Polk" experience = 10 historical_model = 3 }				
+			}
+		}	
+		corps = {
+			name = "14ya Territorialnyi Korpus"
+			location = 2227
+			regiment = { type = hq_brigade name = "14ya Territorialnyi Korpus HQ" historical_model = 1 is_reserve = yes }
+			division= {
+				name = "23. 'Kharkovskaya' Strelkovaya Diviziya"
+				location = 2227
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "89y Strelkoviy Polk" experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade name = "117y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "225y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "23y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			}
+			division= {
+				name = "80. 'Donbass' Strelkovaya Diviziya"
+				location = 2227
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "77y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "153y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "218y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "107y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }	
+				regiment = { type = horse_towed_support_brigade name = "17y Protivotankovoiy Polk" experience = 10 historical_model = 0 is_reserve = yes }				
+			}
+		}	
+	}	
+}
+theatre = {
+	name = "Yuzhnoie Napravlenie"
+	location = 3309
+	regiment = { type = hq_brigade name = "Yuzhnoie Napravlenie HQ" experience = 10 historical_model = 1 }
+	armygroup = {
+		name = "Odesskii Okrug"
+		location = 3309 # Odessa
+		regiment = { type = hq_brigade name = "Odesskii Okrug HQ" historical_model = 1 }
+		army = {
+			name = "4ya Armiya"
+			location = 2517
+			regiment = { type = hq_brigade name = "4ya Armiya HQ" historical_model = 1 }
+			division= {
+				name = "34. Kavaleriyskaya Diviziya"
+				location = 3515
+				is_reserve = yes
+				regiment = { type = cavalry_brigade name = "35y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "64y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }	
+			}			
+			corps = {
+				name = "4ya NKVD Korpus"
+				location = 2643 
+				regiment = { type = hq_brigade name = "4ya NKVD Korpus HQ" historical_model = 1 }	
+				division= {
+					name = "4. NKVD Strelkovaya Diviziya"
+					location = 2643
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "37y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "38y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				}
+				division= {
+					name = "10. NKVD Strelkovaya Diviziya"
+					location = 2643
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "55y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "56y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				}
+				division= {
+					name = "13. NKVD Strelkovaya Diviziya"
+					location = 2643
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "64y NKVD Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "65y NKVD Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "7y NKVD Protivotankovoiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				}
+			}
+			corps = {
+				name = "Sevastopolskii Pribrezhnye Kreposti Korpus"
+				location = 3581 
+				regiment = { type = hq_brigade name = "Sevastopolskii Pribrezhnye Kreposti Korpus HQ" historical_model = 1 }			
+				division= {
+					name = "4. Pribrezhnye Kreposti Diviziya" # Coastal Fortifified Area Brigade / division
+					location = 3309 # Odessa
+					is_reserve = yes
+					regiment = { type = garrison_brigade name = "4y Pribrezhnye Krepost Polk" experience = 10 historical_model = 3 }
+					regiment = { type = horse_towed_support_brigade name = "136y Artilleriiskiy Polk" experience = 10 historical_model = 3 }					
+				}
+				division= {
+					name = "5. Pribrezhnye Kreposti Diviziya" # Coastal Fortifified Area Brigade / division
+					location = 3581 # sevastopol
+					is_reserve = yes
+					regiment = { type = garrison_brigade name = "5y Pribrezhnye Krepost Polk" experience = 10 historical_model = 3 }
+					regiment = { type = horse_towed_support_brigade name = "137y Artilleriiskiy Polk" experience = 10 historical_model = 3 }					
+				}
+				division= {
+					name = "6. Pribrezhnye Kreposti Diviziya" # Coastal Fortifified Area Brigade / division
+					location = 3449
+					is_reserve = yes
+					regiment = { type = garrison_brigade name = "6y Pribrezhnye Krepost Polk" experience = 10 historical_model = 3 }
+					regiment = { type = horse_towed_support_brigade name = "138y Artilleriiskiy Polk" experience = 10 historical_model = 3 }					
+				}
+			}
+		}	
+		army = {
+			name = "1ya Kavaleriyskaya Armiya"
+			location = 2517
+			regiment = { type = hq_brigade name = "1ya Kavaleriyskaya Armiya HQ" historical_model = 1 }			
+			corps = {
+				name = "7ya Kavaleriyskaya Korpus"
 				location = 2837
-				regiment = { type = hq_brigade name = "第2骑兵军指挥部" historical_model = 0 }	
+				regiment = { type = hq_brigade name = "7ya Kavaleriyskaya Korpus HQ" historical_model = 1 }	
 				division= {
-					name = "第9骑兵师"
+					name = "2. 'Zaporozh'yeskaya' Kavaleriyskaya Diviziya"
 					location = 2837
 					is_reserve = yes
-					regiment = { type = cavalry_brigade historical_model = 0 }
-					regiment = { type = cavalry_brigade historical_model = 0 }
-					regiment = { type = armored_car_brigade historical_model = 0 }
+					regiment = { type = light_armor_brigade name = "44y Tankovyi Polk" experience = 10 historical_model = 2 is_reserve = yes }
+					regiment = { type = cavalry_brigade name = "9y Kavaleriyskiy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = cavalry_brigade name = "10y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = self_propelled_support_brigade name = "20y Batallion Broneavtomobilei" experience = 10 historical_model = 3 }
+				}	
+				division= {
+					name = "9. 'Krymskaya' Kavaleriyskaya Diviziya"
+					location = 2837
+					is_reserve = yes
+					regiment = { type = light_armor_brigade name = "30y Tankovyi Polk" experience = 10 historical_model = 2 is_reserve = yes }
+					regiment = { type = cavalry_brigade name = "5y Kavaleriyskiy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = cavalry_brigade name = "72y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = self_propelled_support_brigade name = "21y Batallion Broneavtomobilei" experience = 10 historical_model = 2 }
 				}
 			}
 			corps = {
-				name = "第2机械化军" 
-				location = 2837
-				regiment = { type = hq_brigade name = "第2骑兵军" historical_model = 0 }
+				name = "8ya Kavaleriyskaya Korpus"
+				location = 3041
+				regiment = { type = hq_brigade name = "8ya Kavaleriyskaya Korpus HQ" historical_model = 1 }
 				division= {
-					name = "第15摩托化步兵师"
-					location = 2837
+					name = "5. 'Bleanovskaya' Kavaleriyskaya Diviziya"
+					location = 3041
 					is_reserve = yes
-					regiment = { type = light_armor_brigade name = "第14坦克团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第321摩托化步兵团" historical_model = 0 }
-					regiment = { type = armored_car_brigade name = "第77装甲车团" historical_model = 0 }
+					regiment = { type = light_armor_brigade name = "32y Tankovyi Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = cavalry_brigade name = "11y Kavaleriyskiy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = cavalry_brigade name = "96y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = self_propelled_support_brigade name = "22y Batallion Broneavtomobilei" experience = 10 historical_model = 3 }
+				}
+				division= {
+					name = "14. Kavaleriyskaya Diviziya"
+					location = 3041
+					is_reserve = yes
+					regiment = { type = light_armor_brigade name = "29y Tankovyi Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = cavalry_brigade name = "31y Kavaleriyskiy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = cavalry_brigade name = "76y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = self_propelled_support_brigade name = "23y Batallion Broneavtomobilei" experience = 10 historical_model = 2 }
+				}
+			}			
+		}	
+	}		
+	armygroup = {
+		name = "Dnipropetrovskii Okrug"
+		location = 2843 # Dnipropetrovsk
+		regiment = { type = hq_brigade name = "Dnipropetrovskii Okrug HQ" historical_model = 1 }
+		division= {
+			name = "46. 'Dnepropetrovskaya' Strelkovaya Diviziya"
+			location = 2843
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "176y Strelkoviy Polk" experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "314y Strelkoviy Polk" experience = 10 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "340y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			regiment = { type = horse_towed_support_brigade name = "46y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+		}	
+		army = {
+			name = "12ya Armiya"
+			location = 3242
+			regiment = { type = hq_brigade name = "12ya Armiya HQ" historical_model = 1 }
+			corps = {
+				name = "45ya Mehanizirovanaya Korpus"
+				location = 3242
+				regiment = { type = hq_brigade name = "45ya Mehanizirovanaya Korpus HQ" historical_model = 1  }
+				division= {
+					name = "45. Motostrelkovaya Diviziya"
+					location = 3242		
+					is_reserve = yes
+					regiment = { type = super_heavy_armor_brigade name = "133y Tankoviy Polk" experience = 10 historical_model = 0 }
+					regiment = { type = super_heavy_armor_brigade name = "134y Tankoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = motorized_brigade name = "135y Motostrelkovyi Polk" experience = 10 historical_model = 0 }
+					regiment = { type = self_propelled_support_brigade name = "45y Batallion Broneavtomobilei" experience = 10 historical_model = 3 }
+				}
+			}
+			corps = {
+				name = "6ya Korpus"
+				location = 3108
+				regiment = { type = hq_brigade name = "6ya Korpus HQ" historical_model = 1 }
+				division= {
+					name = "44. 'Kievskaya' Strelkovaya Diviziya"
+					location = 3242
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "25y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "146y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "305y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "319y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = horse_towed_support_brigade name = "44y Artilleriiskiy Polk" experience = 10 historical_model = 2 }
+				}
+				division= {
+					name = "95. 'Moldavskaya' Strelkovaya Diviziya"
+					location = 3174
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "90y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "161y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "241y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "95y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+				}
+			}
+			corps = {
+				name = "27ya Rezervnyi Korpus"
+				location = 3176
+				regiment = { type = hq_brigade name = "27ya Rezervnyi Korpus HQ" historical_model = 1 }
+				division= {
+					name = "62. 'Turkestanskaya' Strelkovaya Diviziya"
+					location = 3176
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "104y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "123y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "306y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "62y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+					}
+				division= {
+					name = "87. Strelkovaya Diviziya"
+					location = 3309
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "16y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "96y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "283y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "87y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				}
+			}
+			corps = {
+				name = "36ya Rezervnyi Korpus"
+				location = 2517
+				regiment = { type = hq_brigade name = "36ya Rezervnyi Korpus HQ" historical_model = 1 }
+				division= {
+					name = "15. 'Seavaskaya' Strelkovaya Diviziya"
+					location = 2517
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "47y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "262y Strelkoviy Polk" experience = 10 historical_model = 1  is_reserve = yes }
+					regiment = { type = infantry_brigade name = "321y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "15y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				}
+				division= {
+					name = "58. Krasnoznamyonnyy Strelkovaya Diviziya"
+					location = 2517
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "170y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "279y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "335y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "358y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "58y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+				}
+			}
+			corps = {
+				name = "37ya Rezervnyi Korpus"
+				location = 2643
+				regiment = { type = hq_brigade name = "37ya Rezervnyi Korpus HQ" historical_model = 1 }
+				division= {
+					name = "38. 'Mikoyanskaya' Strelkovaya Diviziya"
+					location = 2575
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "29y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "48y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "343y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "38y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				}
+				division= {
+					name = "97. Strelkovaya Diviziya"
+					location = 2641
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "69y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "136y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "233y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "97y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				}
+			}			
+		}		
+		corps = {
+			name = "7ya Territorialnyi Korpus"
+			location = 2911
+			regiment = { type = hq_brigade name = "7ya Territorialnyi Korpus HQ" historical_model = 1 is_reserve = yes }
+			division= {
+				name = "25. 'Chapaevskaya' Strelkovaya Diviziya"
+				location = 2911
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "31y Strelkoviy Polk" experience = 10 historical_model = 1 }
+				regiment = { type = infantry_brigade name = "54y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "263y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "25y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			}
+			division= {
+				name = "41. Strelkovaya Diviziya"
+				location = 3046
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "102y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "139y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "244y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "106y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }	
+				regiment = { type = horse_towed_support_brigade name = "16y Protivotankovoiy Polk" experience = 10 historical_model = 0 is_reserve = yes }				
+			}
+		}
+			
+	}
+	navy = {
+		name = "Tschernomorski Flot"
+		base = 3581
+		location = 3581
+		ship = { type = battleship name = "Parizhskaya Kommuna" experience = 10 historical_model = 0 }
+		ship = { type = light_cruiser name = "Krasni Kavkaz" experience = 10 historical_model = 5 }
+		ship = { type = light_cruiser name = "Profintern" experience = 10 historical_model = 4 }
+		ship = { type = light_cruiser name = "Komintern" experience = 10 historical_model = 3 }
+		ship = { type = light_cruiser name = "Krasnaya Ukraina" experience = 10 historical_model = 5 }
+		ship = { type = submarine name = "10. Flotiliya Podlodok" experience = 10 historical_model = 9 }
+		ship = { type = submarine name = "11. Flotiliya Podlodok" experience = 10 historical_model = 9 }
+	}
+	air = {
+		name = "Odessa IX. AD"
+		base = 3309
+		location = 3309
+		wing = { type = tactical_bomber name = "12. BAD" experience = 10 historical_model = 1 }
+		wing = { type = tactical_bomber name = "13. BAD" experience = 10 historical_model = 1 }
+		wing = { type = interceptor name = "9. IAD" experience = 10 historical_model = 0 }
+		wing = { type = interceptor name = "10. IAD" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "Kiev IV. AD"
+		base = 2338
+		location = 2338
+		wing = { type = interceptor name = "14. IAD" experience = 10 historical_model = 1 }
+		wing = { type = interceptor name = "15. IAD" experience = 10 historical_model = 1 }
+		wing = { type = interceptor name = "19. IAD" experience = 10 historical_model = 1 }
+	}	
+}	
+theatre = {
+	name = "Sredne Aziatskoie Napravlenie"
+	location = 7307 #Baku
+	regiment = { type = hq_brigade name = "Sredne Aziatskoie Napravlenie HQ" historical_model = 1 }
+	armygroup = {
+		name = "Srednyaya Aziya Okrug"
+		location = 8999
+		regiment = { type = hq_brigade name = "Srednyaya Aziya Okrug HQ" historical_model = 1 }
+		division= {
+			name = "68. 'Turkestanskaya' Gornostrelkovaya Diviziya"
+			location = 8999
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "100y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			regiment = { type = bergsjaeger_brigade name = "182y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			regiment = { type = bergsjaeger_brigade name = "230y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			regiment = { type = bergsjaeger_brigade name = "309y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+		}
+		division= {
+			name = "83. 'Turkestanskaya' Gornostrelkovaya Diviziya"
+			location = 8975
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "45y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			regiment = { type = bergsjaeger_brigade name = "150y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			regiment = { type = bergsjaeger_brigade name = "255y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			regiment = { type = bergsjaeger_brigade name = "310y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+		}
+		division= {
+			name = "30. Kavaleriyskaya Diviziya"
+			location = 9025
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "28y Cavalry Brigade" experience = 10 historical_model = 3 is_reserve = yes }
+			regiment = { type = cavalry_brigade name = "61y Cavalry Brigade" experience = 10 historical_model = 3 is_reserve = yes }
+			regiment = { type = engineer_brigade name = "20y Ingenernaia Brigada" experience = 10 historical_model = 0 is_reserve = yes }
+		}
+		division= {
+			name = "16. NKVD Strelkovaya Diviziya"
+			location = 9080
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "76y NKVD Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			regiment = { type = bergsjaeger_brigade name = "77y NKVD Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+		}
+		corps = {
+			name = "4ya Kavaleriyskaya Korpus"
+			location = 9024
+			regiment = { type = hq_brigade name = "4ya Kavaleriyskaya Korpus HQ" historical_model = 1 }			
+			division= {
+				name = "18. 'Turkmenskaya' Gornokavaleriyskaya Diviziya"
+				location = 9052
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "46y Gornokavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "97y Gornokavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "135y Gornokavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			}			
+			division= {
+				name = "20. 'Tadzhikskaya' Gornokavaleriyskaya Diviziya"
+				location = 9107
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "22y Gornokavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "103y Gornokavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "124y Gornokavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			}			
+			division= {
+				name = "21. 'Ferganskaya' Gornokavaleriyskaya Diviziya"
+				location = 9053
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "17y Gornokavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "67y Gornokavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "112y Gornokavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			}
+		}
+	}	
+	armygroup = {	
+		name = "Privolgskii Okrug"
+		location = 2068
+		regiment = { type = hq_brigade name = "Privolgskii Okrug HQ" historical_model = 1 }
+		division= {
+			name = "46. Kavaleriyskaya Diviziya"
+			location = 2068
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "41y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			regiment = { type = cavalry_brigade name = "74y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }	
+		}
+		division= {
+			name = "12. NKVD Strelkovaya Diviziya"
+			location = 2857
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "61y NKVD Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+			regiment = { type = infantry_brigade name = "62y NKVD Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+			regiment = { type = horse_towed_support_brigade name = "6y NKVD Protivotankovoiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+		}
+		corps = {
+			name = "12ya Territorialnyi Korpus"
+			location = 2857
+			regiment = { type = hq_brigade name = "12ya Territorialnyi Korpus HQ" historical_model = 1 is_reserve = yes }
+			division= {
+				name = "31. 'Stalingradskaya' Strelkovaya Diviziya"
+				location = 2857
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "75y Strelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "177y Strelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "248y Strelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			}
+		}
+		corps = {
+			name = "13ya Territorialnyi Korpus"
+			location = 2127
+			regiment = { type = hq_brigade name = "13ya Territorialnyi Korpus HQ" historical_model = 1 is_reserve = yes }
+			division= {
+				name = "53. 'Novoukrainy' Strelkovaya Diviziya"
+				location = 2127
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "110y Strelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "223y Strelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "245y Strelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			}
+		}
+		army = {
+			name = "28ya Armiya"
+			location = 1554
+			regiment = { type = hq_brigade name = "28ya Armiya HQ" historical_model = 1 }
+			corps = {
+				name = "26ya Rezervnyi Korpus"
+				location = 1554
+				regiment = { type = hq_brigade name = "26ya Rezervnyi Korpus HQ" historical_model = 1 is_reserve = yes }
+				division= {
+					name = "61. Strelkovaya Diviziya"
+					location = 1554
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "66y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "211y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "307y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "103y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }	
+					regiment = { type = horse_towed_support_brigade name = "13y Protivotankovoiy Polk" experience = 10 historical_model = 2 is_reserve = yes }					
+				}
+			}
+			corps = {
+				name = "34ya Rezervnyi Korpus"
+				location = 2299
+				regiment = { type = hq_brigade name = "34ya Rezervnyi Korpus HQ" historical_model = 1 is_reserve = yes }
+				division= {
+					name = "98. Strelkovaya Diviziya"
+					location = 2299
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "4y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "166y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "308y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "104y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }	
+					regiment = { type = horse_towed_support_brigade name = "14y Protivotankovoiy Polk" experience = 10 historical_model = 1 is_reserve = yes }					
 				}
 			}
 		}	
 	}	
 	armygroup = {
-		name = "外高加索方面军"
-		location = 7307
-		regiment = { type = hq_brigade name = "外高加索方面军" historical_model = 0 }
-		corps = {
-			name = "第23军"
-			location = 4059
-			regiment = { type = hq_brigade name = "第23军指挥部" historical_model = 0 }
+		name = "Uralskii Okrug"
+		location = 8211
+		regiment = { type = hq_brigade name = "Uralskii Okrug HQ" historical_model = 1 }
+		division= {
+			name = "5. Tankovaya Diviziya"
+			location = 8211
+			is_reserve = yes		
+			regiment = { type = armor_brigade name = "6y Tankoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }	
+			regiment = { type = self_propelled_support_brigade name = "33y Batallion Broneavtomobilei" experience = 10 historical_model = 2 }
+			regiment = { type = engineer_brigade name = "22y Ingenernaia Brigada" experience = 10 historical_model = 0 is_reserve = yes }
+		}	
+		division= {
+			name = "65. 'Tyumenskaya' Strelkovaya Diviziya"
+			location = 8151
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "38y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			regiment = { type = infantry_brigade name = "60y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			regiment = { type = infantry_brigade name = "311y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			regiment = { type = horse_towed_support_brigade name = "109y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }	
+			regiment = { type = horse_towed_support_brigade name = "19y Protivotankovoiy Polk" experience = 10 historical_model = 1 is_reserve = yes }			
+		}
+		division= {
+			name = "82. Strelkovaya Diviziya"
+			location = 8234
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "210y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			regiment = { type = infantry_brigade name = "250y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			regiment = { type = infantry_brigade name = "313y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			regiment = { type = horse_towed_support_brigade name = "110y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }	
+			regiment = { type = horse_towed_support_brigade name = "20y Protivotankovoiy Polk" experience = 10 historical_model = 0 is_reserve = yes }			
+		}
+		division= {
+			name = "85. Strelkovaya Diviziya"
+			location = 8191
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "59y Strelkoviy Polk" experience = 10 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "103y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			regiment = { type = infantry_brigade name = "141y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			regiment = { type = horse_towed_support_brigade name = "85y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+		}			
+		division= {
+			name = "'Bashkirskaya' Kazachya Diviziya"
+			location = 6669
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "51y Kazachiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			regiment = { type = cavalry_brigade name = "73y Kazachiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+		}
+	}
+	armygroup = {
+		name = "Severnyi Kavkaz Okrug"
+		location = 2913
+		regiment = { type = hq_brigade name = "North Caucasus MD HQ" historical_model = 1 }
+		army = {
+			name = "5ya Armiya"
+			location = 3313
+			regiment = { type = hq_brigade name = "5ya Armiya HQ" historical_model = 1 }
 			division= {
-				name = "第136步兵师"
-				location = 4059
+				name = "28. 'V.M. Azina' Gornostrelkovaya Diviziya"
+				location = 3584
 				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第387步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第541步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第733步兵团" historical_model = 0 }
+				regiment = { type = bergsjaeger_brigade name = "88y Gornostrelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = bergsjaeger_brigade name = "137y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "144y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "235y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
 			}	
 			division= {
-				name = "第138步兵师"
-				location = 4059
+				name = "11. NKVD Strelkovaya Diviziya"
+				location = 3313
 				is_reserve = yes
-				regiment = { type = bergsjaeger_brigade historical_model = 0 }
-				regiment = { type = bergsjaeger_brigade historical_model = 0 }
-				regiment = { type = bergsjaeger_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade name = "58y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "59y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
 			}
-		}
-		corps = {
-			name = "第3军"
-			location = 7173
-			regiment = { type = hq_brigade name = "第3军指挥部" historical_model = 0 }
 			division= {
-				name = "第47步兵师"
-				location = 7173
+				name = "19. NKVD Strelkovaya Diviziya"
+				location = 3386
 				is_reserve = yes
-				regiment = { type = bergsjaeger_brigade historical_model = 0 }
-				regiment = { type = bergsjaeger_brigade historical_model = 0 }
-				regiment = { type = bergsjaeger_brigade historical_model = 0 }
+				regiment = { type = infantry_brigade name = "111y NKVD Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "112y NKVD Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "8y NKVD Protivotankovoiy Polk" experience = 10 historical_model = 2 is_reserve = yes }
 			}
 		}
-		division= {
-			name = "第17'高尔科夫'步兵师"
-			location = 7356
-			is_reserve = yes
-			regiment = { type = bergsjaeger_brigade historical_model = 0 }
-			regiment = { type = bergsjaeger_brigade historical_model = 0 }
-			regiment = { type = bergsjaeger_brigade historical_model = 0 }
-		}
-		division= {
-			name = "第63步兵师"
-			location = 9021
-			is_reserve = yes
-			regiment = { type = bergsjaeger_brigade historical_model = 0 }
-			regiment = { type = bergsjaeger_brigade historical_model = 0 }
-			regiment = { type = bergsjaeger_brigade historical_model = 0 }
-		}
-		division= {
-			name = "第24骑兵师"
-			location = 8996
-			is_reserve = yes
-			regiment = { type = cavalry_brigade historical_model = 0 }
-			regiment = { type = cavalry_brigade historical_model = 0 }
-			regiment = { type = armored_car_brigade historical_model = 0 }
-		}
 		corps = {
-			name = "第28机械化军"
-			location = 7307
-			regiment = { type = hq_brigade name = "第28机械化军司令部" historical_model = 0 }
-			division = {
-				name = "第6坦克师"
-				location = 7307
-				is_reserve = yes
-				regiment = { type = light_armor_brigade name = "第11坦克团" historical_model = 0 }
-				regiment = { type = light_armor_brigade name = "第12坦克团" historical_model = 0 }
-				regiment = { type = motorized_brigade name = "第6摩托化步兵团" historical_model = 0 }
-			}
-		}
-	}
-	armygroup = {
-		name = "阿尔汉格尔斯科方面军"
-		location = 311
-		regiment = { type = hq_brigade name = "Arkhangelsk Front司令部" historical_model = 0 }
-		division = {
-			name = "第88步兵师"
-			location = 311
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第426步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第611步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第758步兵团" historical_model = 0 }
-		}
-	}
-	armygroup = {	
-		name = "莫斯科方面军"
-		location = 1409
-		regiment = { type = hq_brigade name = "莫斯科方面军" historical_model = 0 }
-		division= {
-			name = "第118步兵师"
-			location = 1409
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第398步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第463步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第527步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "第235步兵师"
-			location = 1409
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第732步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第801步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第806步兵团" historical_model = 0 }
-		}
-	}
-	armygroup = {
-		name = "北高加索方面军"
-		location = 3380
-		regiment = { type = hq_brigade name = "北高加索方面军" historical_model = 0 }
-		division= {
-			name = "第157步兵师"
-			location = 3380
-			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第384步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第633步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第716步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "第28步兵师"
-			location = 3380
-			is_reserve = yes
-			regiment = { type = bergsjaeger_brigade historical_model = 0 }
-			regiment = { type = bergsjaeger_brigade historical_model = 0 }
-			regiment = { type = bergsjaeger_brigade historical_model = 0 }
-		}
-		corps = {
-			name = "第26机械化军"
-			location = 2913
-			regiment = { type = hq_brigade name = "第26 Mechanised Corp司令部" historical_model = 0 }
+			name = "9ya Kavaleriyskaya Korpus"
+			location = 3382
+			regiment = { type = hq_brigade name = "9ya Kavaleriyskaya Korpus HQ" historical_model = 1 }			
 			division= {
-				name = "第203摩托化步兵师"
+				name = "'Kabardino-Balkarskaya' Kazachya Diviziya"
+				location = 3184
+				is_reserve = yes
+				regiment = { type = cavalry_brigade name = "50y Kazachiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "71y Kazachiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			}			
+			division= {
+				name = "'Kalmyskaya' Kazachya Diviziya"
+				location = 3382
+				is_reserve = yes
+				regiment = { type = cavalry_brigade name = "20y Kazachiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "52y Kazachiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			}			
+			division= {
+				name = "'Chechen-Inguchskaya' Kazachya Diviziya"
+				location = 3520
+				is_reserve = yes
+				regiment = { type = cavalry_brigade name = "38y Kazachiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "54y Kazachiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			}
+			division= {
+				name = "23. Kavaleriyskaya Diviziya"
 				location = 2913
 				is_reserve = yes
-				regiment = { type = motorized_brigade historical_model = 0 }
-				regiment = { type = motorized_brigade historical_model = 0 }
-				regiment = { type = motorized_brigade historical_model = 0 }
+				regiment = { type = cavalry_brigade name = "21y Kavaleriyskaya Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "53y Kavaleriyskaya Polk" experience = 10 historical_model = 3 is_reserve = yes }
 			}
-		}
-	}
-	armygroup = {
-		name = "奥廖尔方面军"
-		location = 1941
-		regiment = { type = hq_brigade name = "奥廖尔方面军" historical_model = 0 }
-		corps = {
-			name = "第30军"
-			location = 1941
-			regiment = { type = hq_brigade name = "第30军指挥部" historical_model = 0 }
-			division= {
-				name = "第19'沃罗涅日'步兵师"
-				location = 1941
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第32步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第282步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第315步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第217步兵师"
-				location = 1941
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第740步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第755步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第766步兵团" historical_model = 0 }
-			}
-		}
-		corps = {
-			name = "第33军"
-			location = 1944
-			regiment = { type = hq_brigade name = "第33军指挥部" historical_model = 0 }
-			division= {
-				name = "第89步兵师"
-				location = 1944
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第390步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第400步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第526步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第120步兵师"
-				location = 1944
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第401步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第474步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第540步兵团" historical_model = 0 }
-			}
-		}
-	}
-	armygroup = {
-		name = "中亚方面军"
-		location = 9025
-		regiment = { type = hq_brigade name = "中亚方面军" historical_model = 0 }
-		corps = {
-			name = "第58军"
-			location = 9025
-			regiment = { type = hq_brigade name = "第58军指挥部" historical_model = 0 }
-			division= {
-				name = "第68步兵师"
-				location = 9025
-				is_reserve = yes
-				regiment = { type = bergsjaeger_brigade historical_model = 0 }
-				regiment = { type = bergsjaeger_brigade historical_model = 0 }
-				regiment = { type = bergsjaeger_brigade historical_model = 0 }
-			}
-			division= {
-				name = "第83山地师"
-				location = 9080
-				is_reserve = yes
-				regiment = { type = bergsjaeger_brigade historical_model = 0 }
-				regiment = { type = bergsjaeger_brigade historical_model = 0 }
-				regiment = { type = bergsjaeger_brigade historical_model = 0 }
-			}
-		}
-	}
-	armygroup = {
-		name = "外贝加尔方面军"
-		location = 8719
-		regiment = { type = hq_brigade name = "外贝加尔方面军" historical_model = 0 }
-		corps = {
-			name = "第12军"
-			location = 8847
-			regiment = { type = hq_brigade name = "第12军指挥部" historical_model = 0 }
-			division= {
-				name = "第65步兵师"
-				location = 8847
-				regiment = { type = infantry_brigade name = "第38步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第60步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第311步兵团" historical_model = 0 }
-			}
-			division= {
-				name = "第94步兵师"
-				location = 8847
-				regiment = { type = infantry_brigade name = "第9步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第64步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第152步兵团" historical_model = 0 }
-			}
-		}
-		division= {
-			name = "第114步兵师"
-			location = 8719
-			regiment = { type = infantry_brigade name = "第363步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第536步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第763步兵团" historical_model = 0 }
-		}
-		division= {
-			name = "第93'西伯利亚'步兵师"
-			location = 8743
-			regiment = { type = infantry_brigade name = "第51步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第129步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第266步兵团" historical_model = 0 }
 		}
 		army = {
-			name = "第17集团军"
-			location = 8721
-			regiment = { type = hq_brigade name = "第17集团军司令部" historical_model = 0 }
-			division = {
-				name = "第82摩托化师"
-				location = 8721
-				regiment = { type = motorized_brigade name = "第210摩托化步兵团" historical_model = 0 }
-				regiment = { type = motorized_brigade name = "第250摩托化步兵团" historical_model = 0 }
-				regiment = { type = motorized_brigade name = "第601摩托化步兵团" historical_model = 0 }
+			name = "13ya Armiya"
+			location = 3380
+			regiment = { type = hq_brigade name = "13ya Armiya HQ" historical_model = 1 }					
+			division= {
+				name = "7. Pribrezhnye Kreposti Diviziya"
+				location = 2913 # Rostov
+				is_reserve = yes
+				regiment = { type = garrison_brigade name = "7y Pribrezhnye Kreposti Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "140y Artilleriiskiy Polk" experience = 10 historical_model = 3 }				
+			}
+			division= {
+				name = "8. Pribrezhnye Kreposti Diviziya"
+				location = 3380
+				is_reserve = yes
+				regiment = { type = garrison_brigade name = "8y Pribrezhnye Kreposti Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "141y Artilleriiskiy Polk" experience = 10 historical_model = 3 }				
+			}
+			division= {
+				name = "9. Pribrezhnye Kreposti Diviziya"
+				location = 4059 # Batumi
+				is_reserve = yes
+				regiment = { type = garrison_brigade name = "9y Pribrezhnye Kreposti Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "142y Artilleriiskiy Polk" experience = 10 historical_model = 3 }				
+			}
+		}
+		army = {
+			name = "14ya Armiya"
+			location = 2979
+			regiment = { type = hq_brigade name = "14ya Armiya HQ" historical_model = 1 }
+			corps = {
+				name = "9ya Territorialnyi Korpus"
+				location = 2979
+				regiment = { type = hq_brigade name = "9ya Territorialnyi Korpus HQ" historical_model = 1 }
+				division= {
+					name = "74. 'Tamanskaya' Strelkovaya Diviziya"
+					location = 2979
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "78y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "109y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "360y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "111y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }	
+					regiment = { type = horse_towed_support_brigade name = "21y Protivotankovoiy Polk" experience = 10 historical_model = 2 is_reserve = yes }					
+				}
+				division= {
+					name = "86. 'Tatarskaya' Strelkovaya Diviziya"
+					location = 2913
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "169y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "284y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "330y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "112y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }	
+					regiment = { type = horse_towed_support_brigade name = "22y Protivotankovoiy Polk" experience = 10 historical_model = 1 is_reserve = yes }					
+				}
+			}
+			corps = {
+				name = "38ya Rezervnyi Korpus"
+				location = 3380
+				regiment = { type = hq_brigade name = "38ye Reserve Corps HQ" historical_model = 1 }
+				division= {
+					name = "13. 'Dagestanskaya' Strelkovaya Diviziya"
+					location = 3380
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "119y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "172y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }	
+					regiment = { type = infantry_brigade name = "296y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "113y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }	
+					regiment = { type = horse_towed_support_brigade name = "23y Protivotankovoiy Polk" experience = 10 historical_model = 0 is_reserve = yes }					
+				}
+				division= {
+					name = "22. 'Krasnodarskaya' Strelkovaya Diviziya"
+					location = 3313
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "211y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = infantry_brigade name = "246y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }	
+					regiment = { type = infantry_brigade name = "204y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = horse_towed_support_brigade name = "114y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }	
+					regiment = { type = horse_towed_support_brigade name = "24y Protivotankovoiy Polk" experience = 10 historical_model = 2 is_reserve = yes }					
+				}
+			}
+			corps = {
+				name = "3ya Kavaleriyskaya Korpus"
+				location = 2783
+				regiment = { type = hq_brigade name = "3ya Kavaleriyskaya Korpus HQ" historical_model = 1 }			
+				division= {
+					name = "12. 'Kuban' Kavaleriyskaya Diviziya"
+					location = 2783
+					is_reserve = yes
+					regiment = { type = cavalry_brigade name = "12y Kavaleriyskaya Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = cavalry_brigade name = "32y Kavaleriyskaya Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				}
+				division= {
+					name = "13. 'Kuban' Kavaleriyskaya Diviziya"
+					location = 2783
+					is_reserve = yes
+					regiment = { type = cavalry_brigade name = "19y Kavaleriyskaya Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = cavalry_brigade name = "33y Kavaleriyskaya Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				}
+				division= {
+					name = "15. 'Dons' Kavaleriyskaya Diviziya"
+					location = 2718
+					is_reserve = yes
+					regiment = { type = cavalry_brigade name = "15y Kavaleriyskaya Polk" experience = 10 historical_model = 3 is_reserve = yes }
+					regiment = { type = cavalry_brigade name = "37y Kavaleriyskaya Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				}
 			}	
 		}
 	}
-}
-
-division= {
-	name = "第1卫戍师"
-	location = 1409 # Moscow
-	regiment = { type = garrison_brigade name = "第1卫戍步兵团" historical_model = 0 }
-	regiment = { type = garrison_brigade name = "第2卫戍步兵团" historical_model = 0 }
-	regiment = { type = garrison_brigade name = "第3卫戍步兵团" historical_model = 0 }
-	regiment = { type = artillery_brigade name = "第1卫戍炮兵团" historical_model = 0 }
-}
-
-division= {
-	name = "第2卫戍师"
-	location = 782 # Leningrad
-	regiment = { type = garrison_brigade name = "第3卫戍步兵团" historical_model = 0 }
-	regiment = { type = garrison_brigade name = "第4卫戍步兵团" historical_model = 0 }
-	regiment = { type = garrison_brigade name = "第5卫戍步兵团" historical_model = 0 }
-	regiment = { type = artillery_brigade name = "第2卫戍炮兵团" historical_model = 0 }
-}
-
-division= {
-	name = "第3卫戍师"
-	location = 2857 # Stalingrad
-	regiment = { type = garrison_brigade name = "第6卫戍步兵团" historical_model = 0 }
-	regiment = { type = garrison_brigade name = "第7卫戍步兵团" historical_model = 0 }
-	regiment = { type = garrison_brigade name = "第8卫戍步兵团" historical_model = 0 }
-	regiment = { type = artillery_brigade name = "第3卫戍炮兵团" historical_model = 0 }
-}
-
-division= {
-	name = "第4卫戍师"
-	location = 4390 # Vladivostok
-	regiment = { type = garrison_brigade name = "第9卫戍步兵团" historical_model = 0 }
-	regiment = { type = garrison_brigade name = "第10卫戍步兵团" historical_model = 0 }
-	regiment = { type = garrison_brigade name = "第11卫戍步兵团" historical_model = 0 }
-	regiment = { type = artillery_brigade name = "第4卫戍炮兵团" historical_model = 0 }
-}
-
-theatre = {
-	name = "远东方面军"
-	location = 4390
-	regiment = { type = hq_brigade name = "远东方面军司令部" historical_model = 0 }
-	armygroup = { 
-		name = "远东方面军"
-		location = 4390
-		regiment = { type = hq_brigade name = "远东方面军司令部" historical_model = 0 }
-		division= {
-			name = "第35'西伯利亚'步兵师"
-			location = 8572
-			regiment = { type = infantry_brigade name = "第183步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第196步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第352步兵团" historical_model = 0 }
+	armygroup = {
+		name = "Zakavkazskii Okrug"
+		location = 3254 #Tblisi
+		regiment = { type = hq_brigade name = "Zakavkazskii Okrug HQ" historical_model = 1 }
+		corps = {
+			name = "23ya Korpus"
+			location = 3922
+			regiment = { type = hq_brigade name = "23ya Korpus HQ" historical_model = 1	}
+			division= {		
+				name = "9. 'Kavkazskaya' Gornostrelkovaya Diviziya"
+				location = 4059
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "36y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "121y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "193y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "291y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			}
+			division= {
+				name = "20. 'Donbass' Gornostrelkovaya Diviziya"
+				location = 3781
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "67y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "174y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "265y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "379y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			}
+			division= {
+				name = "47. 'Gruzinskaya' Gornostrelkovaya Diviziya"
+				location = 3254
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "145y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "148y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "334y Gornostrelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "353y Gornostrelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			}
+		}	
+		army = {
+			name = "24ya Armiya"
+			location = 7249
+			regiment = { type = hq_brigade name = "24ya Armiya HQ" historical_model = 1}
+			division= {
+				name = "63. 'Gruzinskaya' Strelkovaya Diviziya"
+				location = 3254
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "63y Rifle Regiment" experience = 10 historical_model = 2 }
+				regiment = { type = infantry_brigade name = "226y Rifle Regiment" experience = 10 historical_model = 2 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "251y Rifle Regiment" experience = 10 historical_model = 2 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "63y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+			}
+			division= {
+				name = "76. 'Armyanskaya' Gornostrelkovaya Diviziya"
+				location = 7249
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "93y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "207y Gornostrelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "216y Gornostrelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			}
+			division= {
+				name = "77. 'Azerbaidzhanskaya' Gornostrelkovaya Diviziya"
+				location = 7307
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "11y Gornostrelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "105y Gornostrelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "137y Gornostrelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = bergsjaeger_brigade name = "276y Gornostrelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			}
+			division= {
+				name = "39. Gornokavaleriyskaya Diviziya"
+				location = 7251
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "39y Gornokavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "69y Gornokavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "98y Gornokavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = engineer_brigade name = "21y Ingenernaia Brigada" experience = 10 historical_model = 0 is_reserve = yes }			
+				
+			}
 		}
 		division= {
-			name = "第66步兵师"
-			location = 8467
-			regiment = { type = infantry_brigade name = "第33步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第108步兵团" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第341步兵团" historical_model = 0 }
-		}
-		army = { 
-			name = "第1集团军"
-			location = 4390
-			regiment = { type = hq_brigade name = "第1集团军司令部" historical_model = 0 }
-			corps = { 
-				name = "第59军"
-				location = 4390
-				regiment = { type = hq_brigade name = "第59军指挥部" historical_model = 0 }
-				division= {
-					name = "第39步兵师"
-					location = 4390
-					regiment = { type = infantry_brigade name = "第50步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第199步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第254步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第59步兵师"
-					location = 4390
-					regiment = { type = infantry_brigade name = "第107步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第111步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第228步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第22'克拉斯诺达尔'步兵师"
-					location = 4390
-					regiment = { type = infantry_brigade name = "第211步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第246步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第304步兵团" historical_model = 0 }
-				}
-			}
-			corps = {
-				name = "第26军"
-				location = 4262
-				regiment = { type = hq_brigade name = "第26军指挥部" historical_model = 0 }
-				division= {
-					name = "第26步兵师"
-					location = 4262
-					regiment = { type = infantry_brigade name = "第87步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第312步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第349步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第21步兵师"
-					location = 4195
-					regiment = { type = infantry_brigade name = "第94步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第116步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第326步兵团" historical_model = 0 }
-				}
-			}
-			division= {
-				name = "第1步兵团"
-				location = 4063
-				regiment = { type = infantry_brigade historical_model = 0 }
-			}
-			
-			division= {
-				name = "第4步兵团"
-				location = 3995
-				regiment = { type = infantry_brigade historical_model = 0 }
-			}
-			division= {
-				name = "第5步兵团"
-				location = 3928
-				regiment = { type = infantry_brigade historical_model = 0 }
-			}
-			corps =  {
-				name = "第30摩托化军"
-				location = 3857
-				regiment = { type = hq_brigade name = "第30摩托化军司令部" historical_model = 0 }
-				division= {
-					name = "第239摩托化步兵师"
-					location = 3857
-					regiment = { type = light_armor_brigade name = "第122坦克团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第813摩托化步兵团" historical_model = 0 }
-					regiment = { type = motorized_brigade name = "第817摩托化步兵团" historical_model = 0 }
-				}
-			}
+			name = "18. NKVD Strelkovaya Diviziya"
+			location = 3254
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "108y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			regiment = { type = infantry_brigade name = "109y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
 		}
 		corps = {
-			name = "远东特别部队"
-			location = 8404
-			regiment = { type = hq_brigade name = "远东特别部队司令部" historical_model = 0 }
+			name = "15ya Kavaleriyskaya Korpus"
+			location = 7199
+			regiment = { type = hq_brigade name = "15ya Kavaleriyskaya Korpus HQ" historical_model = 1 }
 			division= {
-				name = "第101步兵师"
-				location = 8404
-				regiment = { type = bergsjaeger_brigade historical_model = 0 }
-				regiment = { type = bergsjaeger_brigade historical_model = 0 }
-				regiment = { type = bergsjaeger_brigade historical_model = 0 }
+				name = "17. Gornokavaleriyskaya Diviziya"
+				location = 7173
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "13y Gornokavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "45y Gornokavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "91y Gornokavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+			}
+			division= {
+				name = "24. Krasnoznamyonnyy Kavaleriyskaya Diviziya"
+				location = 7199
+				is_reserve = yes
+				regiment = { type = light_armor_brigade name = "24y Tankoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "14y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "56y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = self_propelled_support_brigade name = "24y Batallion Broneavtomobilei" experience = 10 historical_model = 3 }
+			}
+		}
+	}	
+}
+theatre = {
+	name = "Dal'nevostochnyi Tyeatr"
+	location = 4390
+	regiment = { type = hq_brigade name = "Dal'nevostochnyi Tyeatr HQ" historical_model = 1 }
+	division= {
+		name = "13. Pribrezhnye Kreposti Diviziya"
+		location = 8468
+		is_reserve = yes
+		regiment = { type = garrison_brigade name = "13y Pribrezhnye Krepost Polk" experience = 10 historical_model = 3 }
+		regiment = { type = horse_towed_support_brigade name = "143y Artilleriiskiy Polk" experience = 10 historical_model = 3 }		
+	}	
+	armygroup = { 
+		name = "Dal'nevostochnyi Okrug"
+		location = 4390
+		regiment = { type = hq_brigade name = "Dal'nevostochnyi Okrug HQ" historical_model = 1 }
+		army = {
+			name = "24ya Armiya"
+			location = 4195
+			regiment = { type = hq_brigade name = "24ya Armiya HQ" historical_model = 1 }
+			division= {
+				name = "21. 'Permskaya' Strelkovaya Diviziya"
+				location = 4195
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "94y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "116y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "326y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "21y Artilleriiskiy Polk" experience = 10 historical_model = 2 }
+			}
+			division= {
+				name = "26. 'Zlatouskaya' Strelkovaya Diviziya"
+				location = 4262
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "87y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "312y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "349y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "356y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "26y Artilleriiskiy Polk" experience = 10 historical_model = 0 }
+			}
+			division= {
+				name = "32. 'Saratovskaya' Strelkovaya Diviziya"
+				location = 3857
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "17y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "113y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "322y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "331y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "32y Artilleriiskiy Polk" experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "6. Tankovaya Diviziya"
+				location = 4390
+				is_reserve = yes			
+				regiment = { type = light_armor_brigade name = "23y Tankoviy Polk" experience = 10 historical_model = 0 }
+				regiment = { type = self_propelled_support_brigade name = "41y Batallion Broneavtomobilei" experience = 10 historical_model = 3 }
+			}
+			division= {
+				name = "40. 'S. Ordzherikdze' Strelkovaya Diviziya"
+				location = 6989	
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "3y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "178y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "231y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "303y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "40y Artilleriiskiy Polk" experience = 10 historical_model = 2 }
+			}			
+		}
+		army = {
+			name = "25ya Armiya"
+			location = 8542
+			regiment = { type = hq_brigade name = "25ya Armiya HQ" historical_model = 1 }				
+			division= {
+				name = "12. 'Amurskaya' Strelkovaya Diviziya."
+				location = 8542
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "57y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "192y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "214y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "240y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "12y Artilleriiskiy Polk" experience = 10 historical_model = 0 }
+			}			
+			division= {
+				name = "79. 'Shakalinskaya' Strelkovaya Diviziya"
+				location = 8545
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "157y Gornostrelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = bergsjaeger_brigade name = "165y Gornostrelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "179y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "324y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			}
+			division= {
+				name = "92. Strelkovaya Diviziya"
+				location = 8697
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "22y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "203y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "317y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "92y Artilleriiskiy Polk" experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "101. 'Kamchatskaya' Strelkovaya Diviziya"
+				location = 8254
+				is_reserve = yes
+				regiment = { type = bergsjaeger_brigade name = "138y Gornostrelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = bergsjaeger_brigade name = "198y Gornostrelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "302y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "373y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
 			}
 		}
 		army = {
-			name = "第2集团军"
-			location = 8574
-			regiment = { type = hq_brigade name = "第2集团军司令部" historical_model = 0 }
+			name = "26ya Armiya"
+			location = 4328
+			regiment = { type = hq_brigade name = "26ya Armiya HQ" historical_model = 1 }
 			division= {
-				name = "第12步兵师"
-				location = 8574
-				regiment = { type = infantry_brigade name = "第57步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第192步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第214步兵团" historical_model = 0 }
+				name = "106. Strelkovaya Diviziya"
+				location = 4063
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "318y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = engineer_brigade name = "32y Ingenernaia Brigada" experience = 10 historical_model = 0	}				
 			}
 			division= {
-				name = "第3'提霍坎'步兵师"
-				location = 8638
-				regiment = { type = infantry_brigade name = "第8步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第18步兵团" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第70步兵团" historical_model = 0 }
+				name = "8. 'Dal'nevostochnyi' Kavaleriyskaya Diviziya"
+				location = 4328
+				is_reserve = yes
+				regiment = { type = light_armor_brigade name = "7y Tankoviy Polk" experience = 10 historical_model = 2 }
+				regiment = { type = cavalry_brigade name = "49y Kavaleriyskiy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = cavalry_brigade name = "115y Kavaleriyskiy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = self_propelled_support_brigade name = "8y Batallion Broneavtomobilei" experience = 10 historical_model = 2 }
+			}
+			division= {
+				name = "6. NKVD Strelkovaya Diviziya"
+				location = 7045
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "43y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "44y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
 			}
 		}
 		army = {
-			name = "第25集团军"
-			location = 8724
-			regiment = { type = hq_brigade name = "第25集团军司令部" historical_model = 0 }
+			name = "31ya Armiya"
+			location = 4327
+			regiment = { type = hq_brigade name = "31ya Armiya HQ" historical_model = 1 }
+			corps = { 
+				name = "18ya Korpus"
+				location = 4327
+				regiment = { type = hq_brigade name = "18ya Korpus HQ" historical_model = 1 }
+				division= {
+					name = "39. 'Tihiskaya' Strelkovaya Diviziya"
+					location = 4327
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "50y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "199y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = infantry_brigade name = "254y Strelkoviy Polk" experience = 10 historical_model = 3 }
+					regiment = { type = horse_towed_support_brigade name = "39y Artilleriiskiy Polk" experience = 10 historical_model = 2 }
+				}
+			}
 			corps = {
-				name = "第39军"
+				name = "Kolhoz Korpus"
 				location = 8724
-				regiment = { type = hq_brigade name = "第39军指挥部" historical_model = 0 }
+				regiment = { type = hq_brigade name = "Kolhoz Korpus HQ" historical_model = 1 }
 				division= {
-					name = "第92步兵师"
+					name = "59. Kolhoz Strelkovaya Diviziya"
+					location = 8776
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "5y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "99y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "124y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = horse_towed_support_brigade name = "59y Artilleriiskiy Polk" experience = 10 historical_model = 1 }
+				}
+				division= {
+					name = "66. Kolhoz Strelkovaya Diviziya"
+					location = 8574
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "33y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "108y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "341y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = horse_towed_support_brigade name = "59y Artilleriiskiy Polk" experience = 10 historical_model = 0 }
+				}
+				division= {
+					name = "69. Kolhoz Strelkovaya Diviziya"
+					location = 7027
+					is_reserve = yes
+					regiment = { type = infantry_brigade name = "120y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "237y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = infantry_brigade name = "290y Strelkoviy Polk" experience = 10 historical_model = 1 }
+					regiment = { type = horse_towed_support_brigade name = "59y Artilleriiskiy Polk" experience = 10 historical_model = 1 }
+				}
+				division= {
+					name = "67. Kolhoz Kavaleriyskaya Diviziya"
 					location = 8724
-					regiment = { type = infantry_brigade name = "第22步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第203步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第317步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第32'萨拉托夫'步兵师"
-					location = 8697
-					regiment = { type = infantry_brigade name = "第17步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第113步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第322步兵团" historical_model = 0 }
-				}
-				division= {
-					name = "第40步兵师"
-					location = 8776	
-					regiment = { type = infantry_brigade name = "第3步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第178步兵团" historical_model = 0 }
-					regiment = { type = infantry_brigade name = "第231步兵团" historical_model = 0 }
+					is_reserve = yes
+					regiment = { type = cavalry_brigade name = "57. Cavalry Brigade" experience = 10 historical_model = 1 is_reserve = yes }
+					regiment = { type = cavalry_brigade name = "79. Cavalry Brigade" experience = 10 historical_model = 1 is_reserve = yes }
 				}
 			}
+		}
+		army = {
+			name = "40ya Armiya"
+			location = 3857
+			regiment = { type = hq_brigade name = "40ya Armiya HQ" historical_model = 1 }
+			division= {
+				name = "101. Kreposti Diviziya"
+				location = 4327 # Vladivostok
+				is_reserve = yes
+				regiment = { type = garrison_brigade name = "301y Krepost Polk" experience = 10 historical_model = 3 }
+				regiment = { type = garrison_brigade name = "401y Krepost Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "144y Artilleriiskiy Polk" experience = 10 historical_model = 3 }
+			}
+			division= {
+				name = "102. Kreposti Diviziya"
+				location = 4262 # Vladivostok
+				is_reserve = yes
+				regiment = { type = garrison_brigade name = "302y Krepost Polk" experience = 10 historical_model = 3 }
+				regiment = { type = garrison_brigade name = "402y Krepost Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "145y Artilleriiskiy Polk" experience = 10 historical_model = 3 }
+			}
+			division= {
+				name = "11. Pribrezhnye Kreposti Diviziya"
+				location = 4390 # Vladivostok
+				is_reserve = yes
+				regiment = { type = garrison_brigade name = "11y Pribrezhnye Krepost Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "146y Artilleriiskiy Polk" experience = 10 historical_model = 3 }
+			}
+			division= {
+				name = "12. Pribrezhnye Kreposti Diviziya"
+				location = 3466
+				is_reserve = yes
+				regiment = { type = garrison_brigade name = "12y Pribrezhnye Krepost Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "147y Artilleriiskiy Polk" experience = 10 historical_model = 3 }				
+			}
+		}		
+	}
+	armygroup = {
+		name = "Sibirskii Okrug"
+		location = 8594
+		regiment = { type = hq_brigade name = "Sibirskii Okrug HQ" historical_model = 1 }
+		army = {
+			name = "33ya Armiya"
+			location = 8594
+			regiment = { type = hq_brigade name = "33ya Armiya HQ" historical_model = 1 }	
+				division= {
+				name = "71. 'Kuzbaskaya' Strelkovaya Diviziya"
+				location = 8594
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "52y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "126y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "131y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "115y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }	
+				regiment = { type = horse_towed_support_brigade name = "25y Protivotankovoiy Polk" experience = 10 historical_model = 1 is_reserve = yes }				
+			}
+			division= {
+				name = "73. Strelkovaya Diviziya"
+				location = 8595
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "14y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "133y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "187y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "116y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }	
+				regiment = { type = horse_towed_support_brigade name = "26y Protivotankovoiy Polk" experience = 10 historical_model = 0 is_reserve = yes }				
+			}
+			division= {
+				name = "78. Strelkovaya Diviziya"
+				location = 8529
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "40y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "258y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "292y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "117y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }	
+				regiment = { type = horse_towed_support_brigade name = "27y Protivotankovoiy Polk" experience = 10 historical_model = 2 is_reserve = yes }				
+			}
+			division= {
+				name = "94. Strelkovaya Diviziya"
+				location = 8658
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "9y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "64y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "152y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "118y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }	
+				regiment = { type = horse_towed_support_brigade name = "28y Protivotankovoiy Polk" experience = 10 historical_model = 1 is_reserve = yes }				
+			}
+			division= {
+				name = "7. NKVD Strelkovaya Diviziya"
+				location = 8638
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "46y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "47y NKVD Strelkoviy Polk" experience = 10 historical_model = 2 is_reserve = yes }
+				regiment = { type = engineer_brigade name = "27y NKVD Ingenernaia Brigada" experience = 10 historical_model = 0 is_reserve = yes }				
+			}
+		}	
+	}	
+	navy = {
+		name = "Tikhookeanskiy Flot"
+		base = 4390
+		location = 4390
+		ship = { type = destroyer name = "2. Flotiliya Esmintsev" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "3. Flotiliya Esmintsev" experience = 10 historical_model = 1 }
+		ship = { type = transport_ship name = "1. Transportnaya Flotiliya" experience = 10 historical_model = 0 }
+	}
+	navy = {
+		name = "CCCP 10ya Flot"
+		base = 4390
+		location = 4390
+		ship = { type = submarine name = "5. Flotiliya Podlodok" experience = 10 historical_model = 8 }		
+		ship = { type = submarine name = "6. Flotiliya Podlodok" experience = 10 historical_model = 8 }
+		ship = { type = submarine name = "7. Flotiliya Podlodok" experience = 10 historical_model = 8 }
+	}
+	air = {
+		name = "Kamchatski VII. AD"
+		base = 8254
+		location = 8254
+		wing = { type = interceptor name = "29. IAD" experience = 10 historical_model = 1 }
+		wing = { type = tactical_bomber name = "33. BAD" experience = 10 historical_model = 2 }
+		wing = { type = strategic_bomber name = "2. DBAD" experience = 10 historical_model = 0 }
+		wing = { type = strategic_bomber name = "4. DBAD" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "Vladivostock I. AD"
+		base = 4390
+		location = 4390
+		wing = { type = naval_bomber name = "1. MBAD" experience = 10 historical_model = 0 }
+		wing = { type = naval_bomber name = "2. MBAD" experience = 10 historical_model = 0 }
+		wing = { type = naval_bomber name = "3. MBAD" experience = 10 historical_model = 0 }
+	}
+	armygroup = {
+		name = "Zabaikal'eskii Okrug"
+		location = 8719
+		regiment = { type = hq_brigade name = "Zabaikal'eskii Okrug HQ" historical_model = 1 }		
+		division= {
+			name = "8. NKVD Strelkovaya Diviziya"
+			location = 8719
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "49y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			regiment = { type = infantry_brigade name = "50y NKVD Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+		}		
+		army = {
+			name = "32ya Armiya"
+			location = 8770
+			regiment = { type = hq_brigade name = "32ya Armiya HQ" historical_model = 1 }
+			division= {
+				name = "36. 'Zabaikal'eskaya' Strelkovaya Diviziya"
+				location = 8746
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "24y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "76y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "149y Strelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "36y Artilleriiskiy Polk" experience = 10 historical_model = 0 is_reserve = yes }
+			}
+			division= {
+				name = "57. 'Uralskaya' Strelkovaya Diviziya"
+				location = 8822
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "80y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "127y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "293y Strelkoviy Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "57y Artilleriiskiy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+			}
+			division= {
+				name = "93. 'Vostochno-Sibirskaya' Strelkovaya Diviziya"
+				location = 8743
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "51y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "129y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = infantry_brigade name = "266y Strelkoviy Polk" experience = 10 historical_model = 1 is_reserve = yes }
+				regiment = { type = horse_towed_support_brigade name = "119y Artilleriiskiy Polk" experience = 10 historical_model = 2 is_reserve = yes }	
+				regiment = { type = horse_towed_support_brigade name = "29y Protivotankovoiy Polk" experience = 10 historical_model = 0 is_reserve = yes }				
+			}
+			division= {
+				name = "59. Kavaleriyskaya Diviziya"
+				location = 8770
+				is_reserve = yes
+				regiment = { type = cavalry_brigade name = "59y Kavaleriyskaya Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = cavalry_brigade name = "80y Kavaleriyskaya Polk" experience = 10 historical_model = 3 is_reserve = yes }
+				regiment = { type = engineer_brigade name = "31y Ingenernaia Brigada" experience = 10 historical_model = 0 is_reserve = yes }
+			}			
+		}
+		army = {
+			name = "35ya Armiya"
+			location = 8572
+			regiment = { type = hq_brigade name = "35ya Armiya HQ" historical_model = 1 }
+			division= {
+				name = "34. 'B. Kuybysheva' Strelkovaya Diviziya"
+				location = 8572
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "83y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "134y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "327y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "332y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "34y Artilleriiskiy Polk" experience = 10 historical_model = 1 }
+			}
+			division= {
+				name = "35. 'Sibirskaya' Strelkovaya Diviziya"
+				location = 8572
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "183y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "196y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "352y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "357y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "35y Artilleriiskiy Polk" experience = 10 historical_model = 2 }
+			}			
+			division= {
+				name = "104. Strelkovaya Diviziya"
+				location = 8572
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "217y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "242y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "273y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "104y Artilleriiskiy Polk" experience = 10 historical_model = 0 }
+			}
+			division= {
+				name = "105. Strelkovaya Diviziya"
+				location = 8668
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "53y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "130y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "267y Strelkoviy Polk" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "105y Artilleriiskiy Polk" experience = 10 historical_model = 1 }
+			}			
+		}		
+		air = {
+			name = "Transbaikal VI. AD"
+			base = 4390
+			location = 4390
+			wing = { type = tactical_bomber name = "30. BAD" experience = 10 historical_model = 0 }
+			wing = { type = strategic_bomber name = "1. DBAD" experience = 10 historical_model = 0 }
+			wing = { type = strategic_bomber name = "3. DBAD" experience = 10 historical_model = 0 }
+			wing = { type = strategic_bomber name = "5. DBAD" experience = 10 historical_model = 0 }
 		}
 	}
 }
-navy = {
-	name = "北海舰队"
-	base = 46
-	location = 46
-	ship = { type = destroyer name = "第1驱逐舰" historical_model = 0 }
-	ship = { type = submarine name = "第1潜艇" historical_model = 1 }
-	ship = { type = submarine name = "第2潜艇" historical_model = 1 }
-	ship = { type = submarine name = "第18潜艇" historical_model = 0 }
-	ship = { type = submarine name = "第19潜艇" historical_model = 0 }
-	ship = { type = submarine name = "第20潜艇" historical_model = 0 }
+convoy_construction=
+{
+	country = SOV
+	id=
+	{
+		id=15600
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
 }
-navy = {
-	name = "红旗波罗的海舰队"
-	base = 782
-	location = 782
-	ship = { type = battleship name = "萨芬" historical_model = 0 }
-	ship = { type = battleship name = "阿克特雅巴尔" historical_model = 0 pride = yes }
-	ship = { type = destroyer name = "第4驱逐舰" historical_model = 1 }
-	ship = { type = submarine name = "第3潜艇" historical_model = 1 }
-	ship = { type = submarine name = "第4潜艇" historical_model = 1 }
-	ship = { type = submarine name = "第5潜艇" historical_model = 1 }
-	ship = { type = submarine name = "第6潜艇" historical_model = 1 }
-	ship = { type = submarine name = "第7潜艇" historical_model = 1 }
-	ship = { type = submarine name = "第21潜艇" historical_model = 0 }
-	ship = { type = submarine name = "第22潜艇" historical_model = 0 }
-	ship = { type = submarine name = "第23潜艇" historical_model = 0 }
+convoy_construction=
+{
+	country = SOV
+	id=
+	{
+		id=15601
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
 }
-navy = {
-	name = "黑海舰队"
-	base = 3581
-	location = 3581
-	ship = { type = battleship name = "巴黎公社号" historical_model = 0 }
-	ship = { type = heavy_cruiser name = "高加索" historical_model = 0 }
-	ship = { type = light_cruiser name = "普拉芬特尔" historical_model = 0 }
-	ship = { type = light_cruiser name = "巴米扬" historical_model = 0 }
-	ship = { type = light_cruiser name = "契尔芙那" historical_model = 0 }
-	ship = { type = destroyer name = "第5驱逐舰" historical_model = 0 }
-	ship = { type = submarine name = "第11潜艇" historical_model = 0 }
-	ship = { type = submarine name = "第24潜艇" historical_model = 0 }
-	ship = { type = submarine name = "第25潜艇" historical_model = 0 }
+convoy_construction=
+{
+	country = SOV
+	id=
+	{
+		id=15602
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
 }
-navy = {
-	name = "太平洋舰队"
-	base = 4390
-	location = 4390
-	ship = { type = destroyer name = "第7驱逐舰" historical_model = 0 }
-	ship = { type = transport_ship name = "第1运输舰" historical_model = 0 }
+convoy_construction=
+{
+	country = SOV
+	id=
+	{
+		id=15603
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
 }
-air = {
-	name = "列宁格勒第I航空师"
-	base = 782
-	location = 782
-	wing = { type = interceptor name = "第1截击机师" historical_model = 0 }
-	wing = { type = interceptor name = "第2截击机师" historical_model = 0 }
+convoy_construction=
+{
+	country = SOV
+	id=
+	{
+		id=15604
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
 }
-air = {
-	name = "里加第II航空师"
-	base = 1182
-	location = 1182
-	wing = { type = interceptor name = "第4截击机师" historical_model = 0 }
+convoy_construction=
+{
+	country = SOV
+	id=
+	{
+		id=15605
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
 }
-air = {
-	name = "第III航空师"
-	base = 1536
-	location = 1536
-	wing = { type = tactical_bomber name = "第12轰炸机师" historical_model = 0 }
-	wing = { type = tactical_bomber name = "第13轰炸机师" historical_model = 0 }
-	wing = { type = interceptor name = "第9截击机师" historical_model = 0 }
-	wing = { type = interceptor name = "第10截击机师" historical_model = 0 }
+convoy_construction=
+{
+	country = SOV
+	id=
+	{
+		id=15606
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
 }
-air = {
-	name = "基辅第IV航空师"
-	base = 2223
-	location = 2223
-	wing = { type = interceptor name = "第14截击机师" historical_model = 0 }
+convoy_construction=
+{
+	country = SOV
+	id=
+	{
+		id=15607
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
 }
-air = {
-	name = "莫斯科第5航空师"
-	base = 1409
-	location = 1409
-	wing = { type = interceptor name = "第6截击机师" historical_model = 0 }
+convoy_construction=
+{
+	country = SOV
+	id=
+	{
+		id=15608
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
 }
-air = {
-	name = "外贝加尔第VI航空师"
-	base = 4390
-	location = 4390
-	wing = { type = tactical_bomber name = "第30轰炸机师" historical_model = 0 }
+convoy_construction=
+{
+	country = SOV
+	id=
+	{
+		id=15609
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
 }
-air = {
-	name = "堪察加第VII航空师"
-	base = 8254
-	location = 8254
-	wing = { type = interceptor name = "第29截击机师" historical_model = 0 }
-	wing = { type = tactical_bomber name = "第33轰炸机师" historical_model = 0 }
-}
-navy = {
-	name = "苏联第10舰队"
-	base = 4390
-	location = 4390
-	ship = { type = submarine name = "第12潜艇" historical_model = 2 }
-	ship = { type = submarine name = "第13潜艇" historical_model = 2 }
-	ship = { type = submarine name = "第14潜艇" historical_model = 2 }
-	ship = { type = submarine name = "第17潜艇" historical_model = 0 }
-	ship = { type = submarine name = "第26潜艇" historical_model = 0 }
-}
-
-
 
 military_construction = {
 	country = SOV
 	destroyer = {
-		name = "第8驱逐舰"
-		historical_model = 1
+		name = "5. Flotiliya Esmintsev"
+		historical_model = 8
 	}
 	cost = 2.00
-	progress = 0
-	duration = 91
+	progress = 69
+	duration = 341
 }
 military_construction = {
 	country = SOV
 	submarine = {
-		name = "第29潜艇"
-		historical_model = 1
+		name = "12. Flotiliya Podlodok"
+		historical_model = 8
 	}
-	cost = 1.90
-	progress = 0
-	duration = 31
+	cost = 1.80
+	progress = 31
+	duration = 324
 }
 military_construction = {
 	country = SOV
 	submarine = {
-		name = "第30潜艇"
-		historical_model = 1
+		name = "13. Flotiliya Podlodok"
+		historical_model = 9
 	}
-	cost = 1.90
-	progress = 0
-	duration = 61
+	cost = 1.80
+	progress = 35
+	duration = 197
+}
+military_construction = {
+	country = SOV
+	submarine = {
+		name = "14. Flotiliya Podlodok"
+		historical_model = 10
+	}
+	cost = 1.80
+	progress = 36
+	duration = 255
+}
+military_construction = {
+	country = SOV
+	submarine = {
+		name = "15. Flotiliya Podlodok"
+		historical_model = 11
+	}
+	cost = 1.80
+	progress = 41
+	duration = 291
+}
+military_construction = {
+	country = SOV
+	submarine = {
+		name = "16. Flotiliya Podlodok"
+		historical_model = 12
+	}
+	cost = 1.80
+	progress = 26
+	duration = 364
 }

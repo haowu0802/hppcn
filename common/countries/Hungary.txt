@@ -1,6 +1,8 @@
 color = { 138  163  117 }
 graphical_culture = German
 
+
+
 default_templates = {
 	binary_infantry = {
 		infantry_brigade
@@ -14,898 +16,1169 @@ default_templates = {
 		armor_brigade
 		motorized_brigade
 	}
-	binary_cavalry = {
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+	}	
+	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
+	}
+	HUN_motorized_cavalry = {
+		cavalry_brigade
+		motorized_brigade
+	}	
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
 	}
 }
 
 unit_names = {
 	infantry_brigade = {
-		"µÚ6²½±øÊ¦" "µÚ7²½±øÊ¦" "µÚ10²½±øÊ¦" "µÚ12²½±øÊ¦" "µÚ13²½±øÊ¦" "µÚ16²½±øÊ¦" "µÚ20²½±øÊ¦" "µÚ24²½±øÊ¦" "µÚ25²½±øÊ¦" "µÚ27Èû¿ËÀÕ²½±øÊ¦" "À­µÏË¹À­Ë¹Ê¦" 
-		"µÚ2Ò°Õ½²¹³äÊ¦" "µÚ3Ò°Õ½²¹³äÊ¦" "µÚ4Ò°Õ½²¹³äÊ¦" "µÚ5Ò°Õ½²¹³äÊ¦" "µÚ6Ò°Õ½²¹³äÊ¦" "µÚ7Ò°Õ½²¹³äÊ¦" "µÚ8Ò°Õ½²¹³äÊ¦" "µÚ9Ò°Õ½²¹³äÊ¦" "µÚ28Ò°Õ½²¹³äÊ¦" "µÚ29Ò°Õ½²¹³äÊ¦" "µÚ30Ò°Õ½²¹³äÊ¦" 
-		"µÚ31Ò°Õ½²¹³äÊ¦" "µÚ32Ò°Õ½²¹³äÊ¦" "µÚ33Ò°Õ½²¹³äÊ¦" "µÚ34Ò°Õ½²¹³äÊ¦" "µÚ35Ò°Õ½²¹³äÊ¦" "µÚ36Ò°Õ½²¹³äÊ¦" "µÚ37Ò°Õ½²¹³äÊ¦" "µÚ38Ò°Õ½²¹³äÊ¦" "µÚ39Ò°Õ½²¹³äÊ¦" "µÚ40Ò°Õ½²¹³äÊ¦" "µÚ41Ò°Õ½²¹³äÊ¦" 
-		"µÚ42Ò°Õ½²¹³äÊ¦" "µÚ43Ò°Õ½²¹³äÊ¦" "µÚ44Ò°Õ½²¹³äÊ¦" "µÚ45Ò°Õ½²¹³äÊ¦" "µÚ46Ò°Õ½²¹³äÊ¦" "µÚ47Ò°Õ½²¹³äÊ¦" "µÚ48Ò°Õ½²¹³äÊ¦" "µÚ49Ò°Õ½²¹³äÊ¦" "µÚ50Ò°Õ½²¹³äÊ¦" "µÚ51Ò°Õ½²¹³äÊ¦" "µÚ52Ò°Õ½²¹³äÊ¦" 
-		"µÚ53Ò°Õ½²¹³äÊ¦" "µÚ54Ò°Õ½²¹³äÊ¦" "µÚ55Ò°Õ½²¹³äÊ¦" "µÚ56Ò°Õ½²¹³äÊ¦" "µÚ57Ò°Õ½²¹³äÊ¦" "µÚ58Ò°Õ½²¹³äÊ¦" "µÚ59Ò°Õ½²¹³äÊ¦" "µÚ60Ò°Õ½²¹³äÊ¦" 
+		"6. Gyaloghadosztály" "7. Gyaloghadosztály" "10. Gyaloghadosztály" "12. Gyaloghadosztály" "13. Gyaloghadosztály" "16. Gyaloghadosztály" "20. Gyaloghadosztály" "24. Gyaloghadosztály" "25. Gyaloghadosztály" "27. 'Székely' Gyaloghadosztály" "'Szent László' Hadosztály" 
+		"2. Tábori Tartalék Hadosztály" "3. Tábori Tartalék Hadosztály" "4. Tábori Tartalék Hadosztály" "5. Tábori Tartalék Hadosztály" "6. Tábori Tartalék Hadosztály" "7. Tábori Tartalék Hadosztály" "8. Tábori Tartalék Hadosztály" "9. Tábori Tartalék Hadosztály" "28. Tábori Tartalék Hadosztály" "29. Tábori Tartalék Hadosztály" "30. Tábori Tartalék Hadosztály" 
+		"31. Tábori Tartalék Hadosztály" "32. Tábori Tartalék Hadosztály" "33. Tábori Tartalék Hadosztály" "34. Tábori Tartalék Hadosztály" "35. Tábori Tartalék Hadosztály" "36. Tábori Tartalék Hadosztály" "37. Tábori Tartalék Hadosztály" "38. Tábori Tartalék Hadosztály" "39. Tábori Tartalék Hadosztály" "40. Tábori Tartalék Hadosztály" "41. Tábori Tartalék Hadosztály" 
+		"42. Tábori Tartalék Hadosztály" "43. Tábori Tartalék Hadosztály" "44. Tábori Tartalék Hadosztály" "45. Tábori Tartalék Hadosztály" "46. Tábori Tartalék Hadosztály" "47. Tábori Tartalék Hadosztály" "48. Tábori Tartalék Hadosztály" "49. Tábori Tartalék Hadosztály" "50. Tábori Tartalék Hadosztály" "51. Tábori Tartalék Hadosztály" "52. Tábori Tartalék Hadosztály" 
+		"53. Tábori Tartalék Hadosztály" "54. Tábori Tartalék Hadosztály" "55. Tábori Tartalék Hadosztály" "56. Tábori Tartalék Hadosztály" "57. Tábori Tartalék Hadosztály" "58. Tábori Tartalék Hadosztály" "59. Tábori Tartalék Hadosztály" "60. Tábori Tartalék Hadosztály" 
 	}
 	cavalry_brigade = {
-		"µÚ1Æï±øÊ¦" "µÚ1Æï±øÊ¦" "µÚ2Æï±øÊ¦" "µÚ3Æï±øÊ¦" "µÚ4Æï±øÊ¦" "µÚ5Æï±øÊ¦" "µÚ6Æï±øÊ¦" "µÚ7Æï±øÊ¦" "µÚ8Æï±øÊ¦" "µÚ9Æï±øÊ¦" "µÚ10Æï±øÊ¦" 
-		"µÚ11Æï±øÊ¦" "µÚ12Æï±øÊ¦" "µÚ13Æï±øÊ¦" 
+		"1. lovashadosztály" "2. Lovashadosztály" "3. Lovashadosztály" "4. Lovashadosztály" "5. Lovashadosztály" "6. Lovashadosztály" "7. Lovashadosztály" "8. Lovashadosztály" "9. Lovashadosztály" "10. Lovashadosztály" 
+		"11. Lovashadosztály" "12. Lovashadosztály" "13. Lovashadosztály" 
 	}
 	motorized_brigade = {
-		"µÚ1Ä¦ÍÐ»¯Ê¦" "µÚ2Ä¦ÍÐ»¯Ê¦" "µÚ3Ä¦ÍÐ»¯Ê¦" "µÚ4Ä¦ÍÐ»¯Ê¦" "µÚ5Ä¦ÍÐ»¯Ê¦" "µÚ6Ä¦ÍÐ»¯Ê¦" "µÚ7Ä¦ÍÐ»¯Ê¦" "µÚ8Ä¦ÍÐ»¯Ê¦" "µÚ9Ä¦ÍÐ»¯Ê¦" "µÚ10Ä¦ÍÐ»¯Ê¦" "µÚ11Ä¦ÍÐ»¯Ê¦" 
-		"µÚ12Ä¦ÍÐ»¯Ê¦" "µÚ13Ä¦ÍÐ»¯Ê¦" "µÚ14Ä¦ÍÐ»¯Ê¦" "µÚ15Ä¦ÍÐ»¯Ê¦" 
+		"1. Gépkocsizó Dandár" "2. Gépkocsizó Dandár" "3. Gépkocsizó Dandár" "4. Gépkocsizó Dandár" "5. Gépkocsizó Dandár" "6. Gépkocsizó Dandár" "7. Gépkocsizó Dandár" "8. Gépkocsizó Dandár" "9. Gépkocsizó Dandár" "10. Gépkocsizó Dandár" "11. Gépkocsizó Dandár" 
+		"12. Gépkocsizó Dandár" "13. Gépkocsizó Dandár" "14. Gépkocsizó Dandár" "15. Gépkocsizó Dandár" 
 	}
 	mechanized_brigade = {
-		"µÚ6×°¼×ÖÀµ¯±øÊ¦" "µÚ2×°¼×ÖÀµ¯±øÊ¦" "µÚ3×°¼×ÖÀµ¯±øÊ¦" "µÚ4×°¼×ÖÀµ¯±øÊ¦" "µÚ5×°¼×ÖÀµ¯±øÊ¦" "µÚ6×°¼×ÖÀµ¯±øÊ¦" "µÚ7×°¼×ÖÀµ¯±øÊ¦" "µÚ8×°¼×ÖÀµ¯±øÊ¦" "µÚ9×°¼×ÖÀµ¯±øÊ¦" "µÚ10×°¼×ÖÀµ¯±øÊ¦" "µÚ11×°¼×ÖÀµ¯±øÊ¦" 
-		"µÚ12×°¼×ÖÀµ¯±øÊ¦" "µÚ13×°¼×ÖÀµ¯±øÊ¦" "µÚ14×°¼×ÖÀµ¯±øÊ¦" "µÚ15×°¼×ÖÀµ¯±øÊ¦" "µÚ16×°¼×ÖÀµ¯±øÊ¦" "µÚ17×°¼×ÖÀµ¯±øÊ¦" "µÚ18×°¼×ÖÀµ¯±øÊ¦" "µÚ19×°¼×ÖÀµ¯±øÊ¦" "µÚ20×°¼×ÖÀµ¯±øÊ¦" 
+		"6. Páncélgránátos Hadosztály" "2. Páncélgránátos Hadosztály" "3. Páncélgránátos Hadosztály" "4. Páncélgránátos Hadosztály" "5. Páncélgránátos Hadosztály" "6. Páncélgránátos Hadosztály" "7. Páncélgránátos Hadosztály" "8. Páncélgránátos Hadosztály" "9. Páncélgránátos Hadosztály" "10. Páncélgránátos Hadosztály" "11. Páncélgránátos Hadosztály" 
+		"12. Páncélgránátos Hadosztály" "13. Páncélgránátos Hadosztály" "14. Páncélgránátos Hadosztály" "15. Páncélgránátos Hadosztály" "16. Páncélgránátos Hadosztály" "17. Páncélgránátos Hadosztály" "18. Páncélgránátos Hadosztály" "19. Páncélgránátos Hadosztály" "20. Páncélgránátos Hadosztály" 
 	}
 	light_armor_brigade = {
-		"µÚ1×°¼×Ê¦" "µÚ2×°¼×Ê¦" "µÚ1Ò°Õ½×°¼×Ê¦" "µÚ2Ò°Õ½×°¼×Ê¦" "µÚ3Ò°Õ½×°¼×Ê¦" "µÚ4Ò°Õ½×°¼×Ê¦" "µÚ5Ò°Õ½×°¼×Ê¦" "µÚ6Ò°Õ½×°¼×Ê¦" "µÚ7Ò°Õ½×°¼×Ê¦" "µÚ8Ò°Õ½×°¼×Ê¦" "µÚ9Ò°Õ½×°¼×Ê¦" 
-		"µÚ10Ò°Õ½×°¼×Ê¦" "µÚ11Ò°Õ½×°¼×Ê¦" "µÚ12Ò°Õ½×°¼×Ê¦" "µÚ13Ò°Õ½×°¼×Ê¦" "µÚ14Ò°Õ½×°¼×Ê¦" "µÚ15Ò°Õ½×°¼×Ê¦" "µÚ16Ò°Õ½×°¼×Ê¦" "µÚ17Ò°Õ½×°¼×Ê¦" "µÚ18Ò°Õ½×°¼×Ê¦" "µÚ19Ò°Õ½×°¼×Ê¦" "µÚ20Ò°Õ½×°¼×Ê¦" 
-		"µÚ21Ò°Õ½×°¼×Ê¦" "µÚ22Ò°Õ½×°¼×Ê¦" "µÚ23Ò°Õ½×°¼×Ê¦" "µÚ24Ò°Õ½×°¼×Ê¦" "µÚ25Ò°Õ½×°¼×Ê¦" "µÚ26Ò°Õ½×°¼×Ê¦" "µÚ27Ò°Õ½×°¼×Ê¦" "µÚ28Ò°Õ½×°¼×Ê¦" "µÚ29Ò°Õ½×°¼×Ê¦" "µÚ30Ò°Õ½×°¼×Ê¦" 
+		"1. Páncéloshadosztály" "2. Páncéloshadosztály"  "3. Páncéloshadosztály"  "4. Páncéloshadosztály"  "5. Páncéloshadosztály"  "6. Páncéloshadosztály"  "7. Páncéloshadosztály"  "8. Páncéloshadosztály"  "9. Páncéloshadosztály"  "10. Páncéloshadosztály"  "11. Páncéloshadosztály"  "12. Páncéloshadosztály"  "13. Páncéloshadosztály"  "14. Páncéloshadosztály"  "15. Páncéloshadosztály"  "16. Páncéloshadosztály"  "17. Páncéloshadosztály" "18. Páncéloshadosztály" "19. Páncéloshadosztály" "20. Páncéloshadosztály" 
 	}
 	armor_brigade = {
-		"µÚ1×°¼×Ê¦" "µÚ2×°¼×Ê¦" "µÚ1Ò°Õ½×°¼×Ê¦" "µÚ2Ò°Õ½×°¼×Ê¦" "µÚ3Ò°Õ½×°¼×Ê¦" "µÚ4Ò°Õ½×°¼×Ê¦" "µÚ5Ò°Õ½×°¼×Ê¦" "µÚ6Ò°Õ½×°¼×Ê¦" "µÚ7Ò°Õ½×°¼×Ê¦" "µÚ8Ò°Õ½×°¼×Ê¦" "µÚ9Ò°Õ½×°¼×Ê¦" 
-		"µÚ10Ò°Õ½×°¼×Ê¦" "µÚ11Ò°Õ½×°¼×Ê¦" "µÚ12Ò°Õ½×°¼×Ê¦" "µÚ13Ò°Õ½×°¼×Ê¦" "µÚ14Ò°Õ½×°¼×Ê¦" "µÚ15Ò°Õ½×°¼×Ê¦" "µÚ16Ò°Õ½×°¼×Ê¦" "µÚ17Ò°Õ½×°¼×Ê¦" "µÚ18Ò°Õ½×°¼×Ê¦" "µÚ19Ò°Õ½×°¼×Ê¦" "µÚ20Ò°Õ½×°¼×Ê¦" 
-		"µÚ21Ò°Õ½×°¼×Ê¦" "µÚ22Ò°Õ½×°¼×Ê¦" "µÚ23Ò°Õ½×°¼×Ê¦" "µÚ24Ò°Õ½×°¼×Ê¦" "µÚ25Ò°Õ½×°¼×Ê¦" "µÚ26Ò°Õ½×°¼×Ê¦" "µÚ27Ò°Õ½×°¼×Ê¦" "µÚ28Ò°Õ½×°¼×Ê¦" "µÚ29Ò°Õ½×°¼×Ê¦" "µÚ30Ò°Õ½×°¼×Ê¦" 
+		"1. Páncéloshadosztály" "2. Páncéloshadosztály"  "3. Páncéloshadosztály"  "4. Páncéloshadosztály"  "5. Páncéloshadosztály"  "6. Páncéloshadosztály"  "7. Páncéloshadosztály"  "8. Páncéloshadosztály"  "9. Páncéloshadosztály"  "10. Páncéloshadosztály"  "11. Páncéloshadosztály"  "12. Páncéloshadosztály"  "13. Páncéloshadosztály"  "14. Páncéloshadosztály"  "15. Páncéloshadosztály"  "16. Páncéloshadosztály"  "17. Páncéloshadosztály" "18. Páncéloshadosztály" "19. Páncéloshadosztály" "20. Páncéloshadosztály" 
 	}
 	paratrooper_brigade = {
-		"À­µÏË¹À­Ë¹Ê¦" "µÚ2¿Õ½µÊ¦" "µÚ3¿Õ½µÊ¦" "µÚ4¿Õ½µÊ¦" "µÚ5¿Õ½µÊ¦" "µÚ6¿Õ½µÊ¦" "µÚ7¿Õ½µÊ¦" "µÚ8¿Õ½µÊ¦" "µÚ9¿Õ½µÊ¦" "µÚ10¿Õ½µÊ¦" "µÚ11¿Õ½µÊ¦" 
-		"µÚ12¿Õ½µÊ¦" "µÚ13¿Õ½µÊ¦" "µÚ14¿Õ½µÊ¦" "µÚ15¿Õ½µÊ¦" "µÚ16¿Õ½µÊ¦" "µÚ17¿Õ½µÊ¦" "µÚ18¿Õ½µÊ¦" "µÚ19¿Õ½µÊ¦" "µÚ20¿Õ½µÊ¦" 
+		"1. Ejtöernyös Hadosztály" "2. Ejtöernyös Hadosztály" "3. Ejtöernyös Hadosztály" "4. Ejtöernyös Hadosztály" "5. Ejtöernyös Hadosztály" "6. Ejtöernyös Hadosztály" "7. Ejtöernyös Hadosztály" "8. Ejtöernyös Hadosztály" "9. Ejtöernyös Hadosztály" "10. Ejtöernyös Hadosztály" "11. Ejtöernyös Hadosztály" 
+		"12. Ejtöernyös Hadosztály" "13. Ejtöernyös Hadosztály" "14. Ejtöernyös Hadosztály" "15. Ejtöernyös Hadosztály" "16. Ejtöernyös Hadosztály" "17. Ejtöernyös Hadosztály" "18. Ejtöernyös Hadosztály" "19. Ejtöernyös Hadosztály" "20. Ejtöernyös Hadosztály" 
 	}
 	marine_brigade = {
-		"µÚ1º£¾üÂ½Õ½Ê¦" "µÚ2º£¾üÂ½Õ½Ê¦" "µÚ3º£¾üÂ½Õ½Ê¦" "µÚ4º£¾üÂ½Õ½Ê¦" "µÚ5º£¾üÂ½Õ½Ê¦" "µÚ6º£¾üÂ½Õ½Ê¦" "µÚ7º£¾üÂ½Õ½Ê¦" "µÚ8º£¾üÂ½Õ½Ê¦" "µÚ9º£¾üÂ½Õ½Ê¦" "µÚ10º£¾üÂ½Õ½Ê¦" "µÚ11º£¾üÂ½Õ½Ê¦" 
-		"µÚ12º£¾üÂ½Õ½Ê¦" "µÚ13º£¾üÂ½Õ½Ê¦" "µÚ14º£¾üÂ½Õ½Ê¦" "µÚ15º£¾üÂ½Õ½Ê¦" "µÚ16º£¾üÂ½Õ½Ê¦" "µÚ17º£¾üÂ½Õ½Ê¦" "µÚ18º£¾üÂ½Õ½Ê¦" "µÚ19º£¾üÂ½Õ½Ê¦" "µÚ20º£¾üÂ½Õ½Ê¦" 
+		"1. Folyamdandár" "2. Folyamdandár" "3. Folyamdandár" "4. Folyamdandár" "5. Folyamdandár" "6. Folyamdandár" "7. Folyamdandár" "8. Folyamdandár" "9. Folyamdandár" "10. Folyamdandár" "11. Folyamdandár" 
+		"12. Folyamdandár" "13. Folyamdandár" "14. Folyamdandár" "15. Folyamdandár" "16. Folyamdandár" "17. Folyamdandár" "18. Folyamdandár" "19. Folyamdandár" "20. Folyamdandár" 
 	}
 	bergsjaeger_brigade = {
-		"µÚ1É½µØÊ¦" "µÚ2É½µØÊ¦" "µÚ3É½µØÊ¦" "µÚ4É½µØÊ¦" "µÚ5É½µØÊ¦" "µÚ6É½µØÊ¦" "µÚ7É½µØÊ¦" "µÚ8É½µØÊ¦" "µÚ9É½µØÊ¦" "µÚ10É½µØÊ¦" "µÚ11É½µØÊ¦" 
-		"µÚ12É½µØÊ¦" "µÚ13É½µØÊ¦" "µÚ14É½µØÊ¦" "µÚ15É½µØÊ¦" "µÚ16É½µØÊ¦" "µÚ17É½µØÊ¦" "µÚ18É½µØÊ¦" "µÚ19É½µØÊ¦" "µÚ20É½µØÊ¦" 
+		"1. Hegyidandár" "2. Hegyidandár" "3. Hegyidandár" "4. Hegyidandár" "5. Hegyidandár" "6. Hegyidandár" "7. Hegyidandár" "8. Hegyidandár" "9. Hegyidandár" "10. Hegyidandár" "11. Hegyidandár" 
+		"12. Hegyidandár" "13. Hegyidandár" "14. Hegyidandár" "15. Hegyidandár" "16. Hegyidandár" "17. Hegyidandár" "18. Hegyidandár" "19. Hegyidandár" "20. Hegyidandár" 
 	}
 	garrison_brigade = {
-		"µÚ46Ò°Õ½²¹³äÊ¦" "µÚ47Ò°Õ½²¹³äÊ¦" "µÚ48Ò°Õ½²¹³äÊ¦" "µÚ49Ò°Õ½²¹³äÊ¦" "µÚ50Ò°Õ½²¹³äÊ¦" "µÚ51Ò°Õ½²¹³äÊ¦" "µÚ52Ò°Õ½²¹³äÊ¦" "µÚ53Ò°Õ½²¹³äÊ¦" "µÚ54Ò°Õ½²¹³äÊ¦" "µÚ55Ò°Õ½²¹³äÊ¦" "µÚ56Ò°Õ½²¹³äÊ¦" 
-		"µÚ57Ò°Õ½²¹³äÊ¦" "µÚ58Ò°Õ½²¹³äÊ¦" "µÚ59Ò°Õ½²¹³äÊ¦" "µÚ60Ò°Õ½²¹³äÊ¦" 
+		"46. Helyõrség" "47. Helyõrség" "48. Helyõrség" "49. Helyõrség" "50. Helyõrség" "51. Helyõrség" "52. Helyõrség" "53. Helyõrség" "54. Helyõrség" "55. Helyõrség" "56. Helyõrség" 
+		"57. Helyõrség" "58. Helyõrség" "59. Helyõrség" "60. Helyõrség" 
 	}
 	hq_brigade = {
-		"µÚÒ»¼¯ÍÅ¾ü" "µÚ¶þ¼¯ÍÅ¾ü" "µÚÈý¼¯ÍÅ¾ü" "µÚËÄ¼¯ÍÅ¾ü" "µÚÎå¼¯ÍÅ¾ü" "µÚÁù¼¯ÍÅ¾ü" "µÚÆß¼¯ÍÅ¾ü" 
+		"1. Hadsereg" "2. Hadsereg" "3. Hadsereg" "4. Hadsereg" "5. Hadsereg" "6. Hadsereg" "7. Hadsereg" 
 	}
 	militia_brigade = {
-		"µÚ1Ãñ±øÊ¦" "µÚ4Ãñ±øÊ¦" "µÚ5Ãñ±øÊ¦" "µÚ6Ãñ±øÊ¦" "µÚ7Ãñ±øÊ¦" "µÚ9Ãñ±øÊ¦" "µÚ10Ãñ±øÊ¦" "µÚ11Ãñ±øÊ¦" "µÚ12Ãñ±øÊ¦" "µÚ13Ãñ±øÊ¦" "µÚ14Ãñ±øÊ¦" 
-		"µÚ15Ãñ±øÊ¦" "µÚ16Ãñ±øÊ¦" "µÚ17Ãñ±øÊ¦" "µÚ18Ãñ±øÊ¦" "µÚ19Ãñ±øÊ¦" "µÚ20Ãñ±øÊ¦" "µÚ21Ãñ±øÊ¦" "µÚ22Ãñ±øÊ¦" "µÚ23Ãñ±øÊ¦" "µÚ25Ãñ±øÊ¦" "µÚ26Ãñ±øÊ¦" 
-		"µÚ27Ãñ±øÊ¦" "µÚ102Ãñ±øÊ¦" "µÚ105Ãñ±øÊ¦" "µÚ108Ãñ±øÊ¦" "µÚ121Ãñ±øÊ¦" "µÚ124Ãñ±øÊ¦" "µÚ9¹ú¾³ÊØ±¸Ê¦" "µÚµÚ126Ãñ±øÊ¦" "µÚ127Ãñ±øÊ¦" "µÚ128Ãñ±øÊ¦" "µÚ129Ãñ±øÊ¦" 
-		"µÚ130Ãñ±øÊ¦" "µÚ131Ãñ±øÊ¦" "µÚ132Ãñ±øÊ¦" "µÚ133Ãñ±øÊ¦" 
+		"1. Nemzetõr Hadosztály" "4. Nemzetõr Hadosztály" "5. Nemzetõr Hadosztály" "6. Nemzetõr Hadosztály" "7. Nemzetõr Hadosztály" "9. Nemzetõr Hadosztály" "10. Nemzetõr Hadosztály" "11. Nemzetõr Hadosztály" "12. Nemzetõr Hadosztály" "13. Nemzetõr Hadosztály" "14. Nemzetõr Hadosztály" 
+		"15. Nemzetõr Hadosztály" "16. Nemzetõr Hadosztály" "17. Nemzetõr Hadosztály" "18. Nemzetõr Hadosztály" "19. Nemzetõr Hadosztály" "20. Nemzetõr Hadosztály" "21. Nemzetõr Hadosztály" "22. Nemzetõr Hadosztály" "23. Nemzetõr Hadosztály" "25. Nemzetõr Hadosztály" "26. Nemzetõr Hadosztály" 
+		"27. Nemzetõr Hadosztály" "102. Határõr Hadosztály" "105. Határõr Hadosztály" "108. Határõr Hadosztály" "121. Határõr Hadosztály" "124. Határõr Hadosztály" "9. határ orség Hadosztály" "126. Határõr Hadosztály" "127. Határõr Hadosztály" "128. Határõr Hadosztály" "129. Határõr Hadosztály" 
+		"130. Határõr Hadosztály" "131. Határõr Hadosztály" "132. Határõr Hadosztály" "133. Határõr Hadosztály" 
 	}
 	multi_role = {
-		"µÚIÕ½¶·»ú´ó¶Ó" "µÚIIÕ½¶·»ú´ó¶Ó" "µÚIIIÕ½¶·»ú´ó¶Ó" "µÚIVÕ½¶·»ú´ó¶Ó" "µÚVÕ½¶·»ú´ó¶Ó" "µÚVIÕ½¶·»ú´ó¶Ó" "µÚVIIÕ½¶·»ú´ó¶Ó" "µÚVIIIÕ½¶·»ú´ó¶Ó" "µÚIXÕ½¶·»ú´ó¶Ó" "µÚXÕ½¶·»ú´ó¶Ó" "µÚXIÕ½¶·»ú´ó¶Ó" 
-		"µÚXIIÕ½¶·»ú´ó¶Ó" "µÚXIIIÕ½¶·»ú´ó¶Ó" "µÚXIVÕ½¶·»ú´ó¶Ó" "µÚXVÕ½¶·»ú´ó¶Ó" "µÚXVIÕ½¶·»ú´ó¶Ó" "µÚXVIIÕ½¶·»ú´ó¶Ó" "µÚXVIIIÕ½¶·»ú´ó¶Ó" "µÚXIXÕ½¶·»ú´ó¶Ó" "µÚXXÕ½¶·»ú´ó¶Ó" "µÚXXIÕ½¶·»ú´ó¶Ó" "µÚXXIIÕ½¶·»ú´ó¶Ó" 
-		"µÚXXIIIÕ½¶·»ú´ó¶Ó" "µÚXXIVÕ½¶·»ú´ó¶Ó" "µÚXXVÕ½¶·»ú´ó¶Ó" 
+		"I. Vadászosztály" "II. Vadászosztály" "III. Vadászosztály" "IV. Vadászosztály" "V. Vadászosztály" "VI. Vadászosztály" "VII. Vadászosztály" "VIII. Vadászosztály" "IX. Vadászosztály" "X. Vadászosztály" "XI. Vadászosztály" 
+		"XII. Vadászosztály" "XIII. Vadászosztály" "XIV. Vadászosztály" "XV. Vadászosztály" "XVI. Vadászosztály" "XVII. Vadászosztály" "XVIII. Vadászosztály" "XIX. Vadászosztály" "XX. Vadászosztály" "XXI. Vadászosztály" "XXII. Vadászosztály" 
+		"XXIII. Vadászosztály" "XXIV. Vadászosztály" "XXV. Vadászosztály" 
+	}
+	jet_mr = {
+		"I. Vadászosztály" "II. Vadászosztály" "III. Vadászosztály" "IV. Vadászosztály" "V. Vadászosztály" "VI. Vadászosztály" "VII. Vadászosztály" "VIII. Vadászosztály" "IX. Vadászosztály" "X. Vadászosztály" "XI. Vadászosztály" 
+		"XII. Vadászosztály" "XIII. Vadászosztály" "XIV. Vadászosztály" "XV. Vadászosztály" "XVI. Vadászosztály" "XVII. Vadászosztály" "XVIII. Vadászosztály" "XIX. Vadászosztály" "XX. Vadászosztály" "XXI. Vadászosztály" "XXII. Vadászosztály" 
+		"XXIII. Vadászosztály" "XXIV. Vadászosztály" "XXV. Vadászosztály" 
 	}
 	interceptor = {
-		"µÚIÕ½¶·»ú´ó¶Ó" "µÚIIÕ½¶·»ú´ó¶Ó" "µÚIIIÕ½¶·»ú´ó¶Ó" "µÚIVÕ½¶·»ú´ó¶Ó" "µÚVÕ½¶·»ú´ó¶Ó" "µÚVIÕ½¶·»ú´ó¶Ó" "µÚVIIÕ½¶·»ú´ó¶Ó" "µÚVIIIÕ½¶·»ú´ó¶Ó" "µÚIXÕ½¶·»ú´ó¶Ó" "µÚXÕ½¶·»ú´ó¶Ó" "µÚXIÕ½¶·»ú´ó¶Ó" 
-		"µÚXIIÕ½¶·»ú´ó¶Ó" "µÚXIIIÕ½¶·»ú´ó¶Ó" "µÚXIVÕ½¶·»ú´ó¶Ó" "µÚXVÕ½¶·»ú´ó¶Ó" "µÚXVIÕ½¶·»ú´ó¶Ó" "µÚXVIIÕ½¶·»ú´ó¶Ó" "µÚXVIIIÕ½¶·»ú´ó¶Ó" "µÚXIXÕ½¶·»ú´ó¶Ó" "µÚXXÕ½¶·»ú´ó¶Ó" "µÚXXIÕ½¶·»ú´ó¶Ó" "µÚXXIIÕ½¶·»ú´ó¶Ó" 
-		"µÚXXIIIÕ½¶·»ú´ó¶Ó" "µÚXXIVÕ½¶·»ú´ó¶Ó" "µÚXXVÕ½¶·»ú´ó¶Ó" 
+		"I. Elfogóvadászosztály" "II. Elfogóvadászosztály" "III. Elfogóvadászosztály" "IV. Elfogóvadászosztály" "V. Elfogóvadászosztály" "VI. Elfogóvadászosztály" "VII. Elfogóvadászosztály" "VIII. Elfogóvadászosztály" "IX. Elfogóvadászosztály" "X. Elfogóvadászosztály" "XI. Elfogóvadászosztály" 
+		"XII. Elfogóvadászosztály" "XIII. Elfogóvadászosztály" "XIV. Elfogóvadászosztály" "XV. Elfogóvadászosztály" "XVI. Elfogóvadászosztály" "XVII. Elfogóvadászosztály" "XVIII. Elfogóvadászosztály" "XIX. Elfogóvadászosztály" "XX. Elfogóvadászosztály" "XXI. Elfogóvadászosztály" "XXII. Elfogóvadászosztály" 
+		"XXIII. Elfogóvadászosztály" "XXIV. Elfogóvadászosztály" "XXV. Elfogóvadászosztály" 
+	}
+	jet_int = {
+		"I. Elfogóvadászosztály" "II. Elfogóvadászosztály" "III. Elfogóvadászosztály" "IV. Elfogóvadászosztály" "V. Elfogóvadászosztály" "VI. Elfogóvadászosztály" "VII. Elfogóvadászosztály" "VIII. Elfogóvadászosztály" "IX. Elfogóvadászosztály" "X. Elfogóvadászosztály" "XI. Elfogóvadászosztály" 
+		"XII. Elfogóvadászosztály" "XIII. Elfogóvadászosztály" "XIV. Elfogóvadászosztály" "XV. Elfogóvadászosztály" "XVI. Elfogóvadászosztály" "XVII. Elfogóvadászosztály" "XVIII. Elfogóvadászosztály" "XIX. Elfogóvadászosztály" "XX. Elfogóvadászosztály" "XXI. Elfogóvadászosztály" "XXII. Elfogóvadászosztály" 
+		"XXIII. Elfogóvadászosztály" "XXIV. Elfogóvadászosztály" "XXV. Elfogóvadászosztály" 
 	}
 	strategic_bomber = {
-		"µÚIºäÕ¨´ó¶Ó" "µÚIIºäÕ¨´ó¶Ó" "µÚIIIºäÕ¨´ó¶Ó" "µÚIVºäÕ¨´ó¶Ó" "µÚVºäÕ¨´ó¶Ó" "µÚVIºäÕ¨´ó¶Ó" "µÚVIIºäÕ¨´ó¶Ó" "µÚVIIIºäÕ¨´ó¶Ó" "µÚIXºäÕ¨´ó¶Ó" "µÚXºäÕ¨´ó¶Ó" "µÚXIºäÕ¨´ó¶Ó" 
-		"µÚXIIºäÕ¨´ó¶Ó" "µÚXIIIºäÕ¨´ó¶Ó" "µÚXIVºäÕ¨´ó¶Ó" "µÚXVºäÕ¨´ó¶Ó" 
+		"I. Stratégiaibombázó osztály" "II. Stratégiaibombázó osztály" "III. Stratégiaibombázó osztály" "IV. Stratégiaibombázó osztály" "V. Stratégiaibombázó osztály" "VI. Stratégiaibombázó osztály" "VII. Stratégiaibombázó osztály" "VIII. Stratégiaibombázó osztály" "IX. Stratégiaibombázó osztály" "X. Stratégiaibombázó osztály" "XI. Stratégiaibombázó osztály" 
+		"XII. Stratégiaibombázó osztály" "XIII. Stratégiaibombázó osztály" "XIV. Stratégiaibombázó osztály" "XV. Stratégiaibombázó osztály" 
 	}
 	tactical_bomber = {
-		"µÚIÕ½¶·ºäÕ¨´ó¶Ó" "µÚI¿ìËÙºäÕ¨´ó¶Ó" "µÚIIÕ½¶·ºäÕ¨´ó¶Ó" "µÚIII¿ìËÙºäÕ¨´ó¶Ó" "µÚIV¿ìËÙºäÕ¨´ó¶Ó" "µÚV¿ìËÙºäÕ¨´ó¶Ó" "µÚVI¿ìËÙºäÕ¨´ó¶Ó" "µÚVII¿ìËÙºäÕ¨´ó¶Ó" "µÚVIII¿ìËÙºäÕ¨´ó¶Ó" "µÚIX¿ìËÙºäÕ¨´ó¶Ó" "µÚX¿ìËÙºäÕ¨´ó¶Ó" 
-		"µÚXI¿ìËÙºäÕ¨´ó¶Ó" "µÚXII¿ìËÙºäÕ¨´ó¶Ó" "µÚXIII¿ìËÙºäÕ¨´ó¶Ó" "µÚXIV¿ìËÙºäÕ¨´ó¶Ó" "µÚXV¿ìËÙºäÕ¨´ó¶Ó" "µÚXVI¿ìËÙºäÕ¨´ó¶Ó" "µÚXVII¿ìËÙºäÕ¨´ó¶Ó" "µÚXVIII¿ìËÙºäÕ¨´ó¶Ó" "µÚXIX¿ìËÙºäÕ¨´ó¶Ó" "µÚXX¿ìËÙºäÕ¨´ó¶Ó" 
+		"I. Bombázóosztály" "II. Bombázóosztály" "III. Bombázóosztály" "IV. Bombázóosztály" "V. Bombázóosztály" "VI. Bombázóosztály" "VII. Bombázóosztály" "VIII. Bombázóosztály" "IX. Bombázóosztály" "X. Bombázóosztály" 
+		"XI. Bombázóosztály" "XII. Bombázóosztály" "XIII. Bombázóosztály" "XIV. Bombázóosztály" "XV. Bombázóosztály" "XVI. Bombázóosztály" "XVII. Bombázóosztály" "XVIII. Bombázóosztály" "XIX. Bombázóosztály" "XX. Bombázóosztály" 
+	}
+	jet_bomber = {
+		"I. Bombázóosztály" "II. Bombázóosztály" "III. Bombázóosztály" "IV. Bombázóosztály" "V. Bombázóosztály" "VI. Bombázóosztály" "VII. Bombázóosztály" "VIII. Bombázóosztály" "IX. Bombázóosztály" "X. Bombázóosztály" 
+		"XI. Bombázóosztály" "XII. Bombázóosztály" "XIII. Bombázóosztály" "XIV. Bombázóosztály" "XV. Bombázóosztály" "XVI. Bombázóosztály" "XVII. Bombázóosztály" "XVIII. Bombázóosztály" "XIX. Bombázóosztály" "XX. Bombázóosztály" 
 	}
 	naval_bomber = {
-		"µÚI¹¥»÷ºäÕ¨´ó¶Ó" "µÚII¹¥»÷ºäÕ¨´ó¶Ó" "µÚIII¹¥»÷ºäÕ¨´ó¶Ó" "µÚIV¹¥»÷ºäÕ¨´ó¶Ó" "µÚV¹¥»÷ºäÕ¨´ó¶Ó" "µÚVI¹¥»÷ºäÕ¨´ó¶Ó" "µÚVII¹¥»÷ºäÕ¨´ó¶Ó" "µÚVIII¹¥»÷ºäÕ¨´ó¶Ó" "µÚIX¹¥»÷ºäÕ¨´ó¶Ó" "µÚX¹¥»÷ºäÕ¨´ó¶Ó" "µÚXI¹¥»÷ºäÕ¨´ó¶Ó" 
-		"µÚXII¹¥»÷ºäÕ¨´ó¶Ó" "µÚXIII¹¥»÷ºäÕ¨´ó¶Ó" "µÚXIV¹¥»÷ºäÕ¨´ó¶Ó" "µÚXV¹¥»÷ºäÕ¨´ó¶Ó" "µÚXVI¹¥»÷ºäÕ¨´ó¶Ó" "µÚXVII¹¥»÷ºäÕ¨´ó¶Ó" "µÚXVIII¹¥»÷ºäÕ¨´ó¶Ó" "µÚIÓãÀ×¹¥»÷´ó¶Ó" "µÚIIÓãÀ×¹¥»÷´ó¶Ó" "µÚIIIÓãÀ×¹¥»÷´ó¶Ó" "µÚÓãÀ×¹¥»÷´ó¶Ó" 
-		"µÚVÓãÀ×¹¥»÷´ó¶Ó" "µÚVIÓãÀ×¹¥»÷´ó¶Ó" "µÚVIIÓãÀ×¹¥»÷´ó¶Ó" "µÚVIIIÓãÀ×¹¥»÷´ó¶Ó" "µÚIXÓãÀ×¹¥»÷´ó¶Ó" "µÚXÓãÀ×¹¥»÷´ó¶Ó" "µÚXIÓãÀ×¹¥»÷´ó¶Ó" "µÚXIIÓãÀ×¹¥»÷´ó¶Ó" "µÚXIIIÓãÀ×¹¥»÷´ó¶Ó" "µÚXIVÓãÀ×¹¥»÷´ó¶Ó" "µÚXVÓãÀ×¹¥»÷´ó¶Ó" 
-		"µÚXVIÓãÀ×¹¥»÷´ó¶Ó" "µÚXVIIÓãÀ×¹¥»÷´ó¶Ó" "µÚXVIIIÓãÀ×¹¥»÷´ó¶Ó" 
+		"I.  Tengerészetibombázó osztály" "II.  Tengerészetibombázó osztály" "III.  Tengerészetibombázó osztály" "IV.  Tengerészetibombázó osztály" "V.  Tengerészetibombázó osztály" "VI.  Tengerészetibombázó osztály" "VII.  Tengerészetibombázó osztály" "VIII.  Tengerészetibombázó osztály" "IX.  Tengerészetibombázó osztály" "X.  Tengerészetibombázó osztály" "XI.  Tengerészetibombázó osztály" 
+		"XII.  Tengerészetibombázó osztály" "XIII.  Tengerészetibombázó osztály" "XIV.  Tengerészetibombázó osztály" "XV.  Tengerészetibombázó osztály" "XVI.  Tengerészetibombázó osztály" "XVII.  Tengerészetibombázó osztály" "XVIII.  Tengerészetibombázó osztály"
 	}
 	cas = {
-		"µÚI¸©³åºäÕ¨´ó¶Ó" "µÚII¸©³åºäÕ¨´ó¶Ó" "µÚIII¸©³åºäÕ¨´ó¶Ó" "µÚIV¸©³åºäÕ¨´ó¶Ó" "µÚV¸©³åºäÕ¨´ó¶Ó" "µÚVI¸©³åºäÕ¨´ó¶Ó" "µÚVII¸©³åºäÕ¨´ó¶Ó" "µÚVIII¸©³åºäÕ¨´ó¶Ó" "µÚIX¸©³åºäÕ¨´ó¶Ó" "µÚX¸©³åºäÕ¨´ó¶Ó" "µÚXI¸©³åºäÕ¨´ó¶Ó" 
-		"µÚXII¸©³åºäÕ¨´ó¶Ó" "µÚXIII¸©³åºäÕ¨´ó¶Ó" "µÚXIV¸©³åºäÕ¨´ó¶Ó" "µÚXV¸©³åºäÕ¨´ó¶Ó" "µÚXVI¸©³åºäÕ¨´ó¶Ó" "µÚXVII¸©³åºäÕ¨´ó¶Ó" 
+		"I. Zuhanóbombázó osztály" "II. Zuhanóbombázó osztály" "III. Zuhanóbombázó osztály" "IV. Zuhanóbombázó osztály" "V. Zuhanóbombázó osztály" "VI. Zuhanóbombázó osztály" "VII. Zuhanóbombázó osztály" "VIII. Zuhanóbombázó osztály" "IX. Zuhanóbombázó osztály" "X. Zuhanóbombázó osztály" "XI. Zuhanóbombázó osztály" 
+		"XII. Zuhanóbombázó osztály" "XIII. Zuhanóbombázó osztály" "XIV. Zuhanóbombázó osztály" "XV. Zuhanóbombázó osztály" "XVI. Zuhanóbombázó osztály" "XVII. Zuhanóbombázó osztály" 
 	}
 	transport_plane = {
-		"µÚI¿ÕÔË´ó¶Ó" "µÚII¿ÕÔË´ó¶Ó" "µÚIII¿ÕÔË´ó¶Ó" "µÚIV¿ÕÔË´ó¶Ó" "µÚV¿ÕÔË´ó¶Ó" "µÚVI¿ÕÔË´ó¶Ó" "µÚVII¿ÕÔË´ó¶Ó" "µÚVIII¿ÕÔË´ó¶Ó" "µÚIX¿ÕÔË´ó¶Ó" "µÚX¿ÕÔË´ó¶Ó" "µÚXI¿ÕÔË´ó¶Ó"
-		"µÚXII¿ÕÔË´ó¶Ó" "µÚXIII¿ÕÔË´ó¶Ó" 
+		"I. Légiszállítás osztály" "II. Légiszállítás osztály" "III. Légiszállítás osztály" "IV. Légiszállítás osztály" "V. Légiszállítás osztály" "VI. Légiszállítás osztály" "VII. Légiszállítás osztály" "VIII. Légiszállítás osztály" "IX. Légiszállítás osztály" "X. Légiszállítás osztály" "XI. Légiszállítás osztály" 
+		"XII. Légiszállítás osztály" "XIII. Légiszállítás osztály" 
 	}
 	battleship = {
-		"À­µÏË¹À­Ë¹ºÅ" "Ê¥ÒÁË¹ÌØÍòºÅ" "ÐÙÑÅÌáºÅ" "¿ÆËÕÌØºÅ" "°¢ÅÁµÂºÅ" 
+		"MKH Szent István" "MKH Szent László" "MKH Árpád"
+		"MKH Budapest" "MKH Hunyadi Mátyás" "MKH IV. Béla"
+		"MKH Kossuth" "MKH Nagy Lajos" "MKH Zsigmond" 
 	}
 	light_cruiser = {
-		"°¬Ë¹ÌØ¸ùºÅ" "°£¶ûµÂºÅ" "ËÉ²©¶ûºÅ" "ÎÚÈÕ¸çÂÞµÂºÅ" "Î¬À­ÄáºÅ" "ÐÙÑÀÀûºÅ" "±´¶û¸ñÀ³µÂºÅ" "»Æ½ðÚ¯ÊéºÅ" "¼ýÊ®×ÖºÅ" "¶àè§ºÓºÅ" "À­°üºÓºÅ" 
-		"µÂÀ­ÍßºÓºÅ" "ÌØ¿ËÒÁ¡¤ÒÁÄ·À×ºÅ" 
+		"MKH Zenta" "MKH Esztergom" "MKH Székelyudvarhely"
+		"MKH Szigetvár" "MKH Visegrád" "MKH Csongrád"
+		"MKH Nógrád" "MKH Komárom" "MKH Hajdú" "MKH Eger" "MKH Veszprém" "MKH Ungvár" "MKH Eperjes" "MKH Zsolna" "MKH Szolnok" "MKH Tatbánya" "MKH Tokaj" "MKH Marosvásárhely" "MKH Nándorfehérvár" "MKH Brassó" "MKH Temesvár" "MKH Zombor" "MKH Villány" "MKH Kecskemét" 
 	}
 	heavy_cruiser = {
-		"²¼´ïÅåË¹ºÅ" "Ë÷ÆÕÀÊºÅ" "°ÍÀ¼ÄáÑÇºÅ" "Åµ¸ñÀ­µÂºÅ" "¿ÆÂíÂÞÄ·ºÅ" "ÍÐ¶ûè§ºÅ" "ºÀÒÁ¶ÅºÅ" "Çí¸ñÀ­µÂºÅ" "À­¿ÆÆæºÅ" "ÈüÇÐÄáºÅ" "ÎÚÀ­Ë¹ÂåÒ»ÊÀºÅ" 
-		"¿¨¶ûÂüºÅ" "Î¤Ë¹ÆÕÀ×Ã×ºÅ" 
+		"MKH Szent György"
+		"MKH Budapest" "MKH Debrecen" "MKH Györ" "MKH Szeged" "MKH Arad" "MKH Pécs" "MKH Miskolc" "MKH Kolozsvár" "MKH Újvidék" "MKH Sopron" "MKH Szombathely" "MKH Pozsony" "MKH Kassa" "MKH Besztercebánya" "MKH Eszék" "MKH Munkács"
 	}
 	battlecruiser = {
-		"¿Æ·ÆÅ¬Ë¹ºÅ" "×ÈÀïÄá¡¤Ã×¿ËÂåÊ²ºÅ" "ÌØ¿ËÒÁ¡¤ÒÁÄ·À×ºÅ" "ÐÙÑÀÀûºÅ" "±´¶û¸ñÀ³µÂºÅ" 
+		"MKH Kossuth" "MKH Széchenyi" "MKH Thököly Imre" "MKH Rákóczi" "MKH Bethlen" "MKH Zrínyi" "MKH Dobó" "MKH Klapka" "MKH Bem"
 	}
 	destroyer = {
-		"µÚ1ÇýÖð½¢±à¶Ó" "µÚ2ÇýÖð½¢±à¶Ó" "µÚ3ÇýÖð½¢±à¶Ó" "µÚ4ÇýÖð½¢±à¶Ó" "µÚ5ÇýÖð½¢±à¶Ó" 
+		"1. Romboló Flottila" "2. Romboló Flottila" "3. Romboló Flottila" "4. Romboló Flottila" "5. Romboló Flottila"  "6. Romboló Flottila" "7. Romboló Flottila" "8. Romboló Flottila" "9. Romboló Flottila" "10. Romboló Flottila" "11. Romboló Flottila" "12. Romboló Flottila" "13. Romboló Flottila" "14. Romboló Flottila" "15. Romboló Flottila" "16. Romboló Flottila" "17. Romboló Flottila" "18. Romboló Flottila" "19. Romboló Flottila" "20. Romboló Flottila"
 	}
 	carrier = {
-		"ÐÙÑÀÀûºÅ" "±´¶û¸ñÀ³µÂºÅ" "»Æ½ðÚ¯ÊéºÅ" "¼ýÊ®×ÖºÅ" 
+		"MKH Pannónia" "MKH Erdély" "MKH Felvidék" "MKH Vajdaság" "MKH Alföld" "MKH Kárpátalja"
 	}
 	submarine = {
-		"µÚ1Ç±Í§±à¶Ó" "µÚ2Ç±Í§±à¶Ó" "µÚ3Ç±Í§±à¶Ó" "µÚ4Ç±Í§±à¶Ó" "µÚ5Ç±Í§±à¶Ó" 
+		"1. Tengeralattjáró Flottila" "2. Tengeralattjáró Flottila" "3. Tengeralattjáró Flottila" "4. Tengeralattjáró Flottila" "5. Tengeralattjáró Flottila" "6. Tengeralattjáró Flottila" "7. Tengeralattjáró Flottila" "8. Tengeralattjáró Flottila" "9. Tengeralattjáró Flottila" "10. Tengeralattjáró Flottila" "11. Tengeralattjáró Flottila" "12. Tengeralattjáró Flottila" "13. Tengeralattjáró Flottila" "14. Tengeralattjáró Flottila" "15. Tengeralattjáró Flottila" "16. Tengeralattjáró Flottila" "17. Tengeralattjáró Flottila" "18. Tengeralattjáró Flottila" "19. Tengeralattjáró Flottila" "20. Tengeralattjáró Flottila"
 	}
 	transport_ship = {
-		"µÚ1ÔËÊä´¬±à¶Ó" "µÚ2ÔËÊä´¬±à¶Ó" "µÚ3ÔËÊä´¬±à¶Ó" "µÚ4ÔËÊä´¬±à¶Ó" "µÚ5ÔËÊä´¬±à¶Ó" 
+		"1. Haditengerészeti Szállítóhajó Flottila" "2. Haditengerészeti Szállítóhajó Flottila" "3. Haditengerészeti Szállítóhajó Flottila" "4. Haditengerészeti Szállítóhajó Flottila" "5. Haditengerészeti Szállítóhajó Flottila" 
 	}
-
 }
 
 ministers = {
+################
+#Heads of State#
+################
 	21001 = {
-		name = "»ô¶ûµÙ¡¤Ã×¿ËÂåÊ²"
-		ideology = fascistic
+		name = "Vitéz Nagybányai Horthy Miklós"
+		ideology = paternal_autocrat
 		loyalty = 1.00
-		picture = M21001
+		picture = M_HUN_Horthy_Miklos
 		head_of_state = resigned_generalissimo
 		chief_of_navy = decisive_naval_battle_doctrine
-		head_of_state = resigned_generalissimo
-		head_of_state = resigned_generalissimo
-		start_date = 1936.1.1
-	}
-	21002 = {
-		name = "¸ñÄ·²®Ê²¡¤¾ÃÂå"
-		ideology = fascistic
-		loyalty = 1.00
-		picture = M21002
-		head_of_government = flamboyant_tough_guy
-		minister_of_intelligence = political_specialist
-		start_date = 1936.1.1
-	}
-	21003 = {
-		name = "¿¨Äá°Â¡¤¿¨¶ûÂü"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21003
-		foreign_minister = great_compromiser
-		start_date = 1936.1.1
-	}
-	21004 = {
-		name = "¸£±ÈÄá¡¤µÙºÀÃ·¶û"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21004
-		armament_minister = military_entrepreneur
-		start_date = 1936.1.1
-	}
-	21005 = {
-		name = "¿Æ×ÈÂí¡¤Ã×¿ËÂåÊ²"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21005
-		minister_of_security = prince_of_terror
-		start_date = 1936.1.1
-	}
-	21007 = {
-		name = "ºàÄá¡¤¹ÅË¹Ëþ·ò"
-		ideology = fascistic
-		loyalty = 1.00
-		picture = M21007
-		chief_of_staff = school_of_mass_combat
-		foreign_minister = general_staffer
-		start_date = 1936.1.1
-	}
-	21008 = {
-		name = "Ê²ÎÖÒÁ¡¤ÒÁË¹ÌØÍò"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21008
-		chief_of_army = decisive_battle_doctrine
-		start_date = 1936.1.1
-	}
-	21010 = {
-		name = "À­Ê²Âå¡¤ÍÐÄª¶û"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21010
-		chief_of_air = air_superiority_doctrine
 		start_date = 1936.1.1
 	}
 	21041 = {
-		name = "ÈøÂåÏ£¡¤·ÑÂ×´Ä"
+		name = "Szálasi Ferenc"
 		ideology = national_socialist
 		loyalty = 1.00
-		picture = M21021
+		picture = M_HUN_Szallasi_Ferenc
 		head_of_state = power_hungry_demagogue
-		chief_of_air = naval_aviation_doctrine
-		foreign_minister = iron_fisted_brute
+		head_of_government = flamboyant_tough_guy
 		start_date = 1944.1.1
 	}
 	21044 = {
-		name = "°ÂÍÐÒ»ÊÀ¡¤¹þ²¼Ë¹±¤"
+		name = "Habsburg Ottó I"
 		ideology = paternal_autocrat
 		loyalty = 1.00
-		picture = M21044
+		picture = M_HUN_Habsburg_Otto
 		head_of_state = benevolent_gentleman
-		chief_of_navy = indirect_approach_doctrine
-		start_date = 1945.1.1
-	}
-	21045 = {
-		name = "ÅÉ¶û¡¤¿¨ÂÞÒÁ"
-		ideology = social_democrat
-		loyalty = 1.00
-		picture = M21045
-		head_of_state = insignificant_layman
-		minister_of_intelligence = industrial_specialist
-		start_date = 1945.1.1
-	}
-	21046 = {
-		name = "µÙ¶ûµÏ¡¤×ô¶ûÌ¹"
-		ideology = social_conservative
-		loyalty = 1.00
-		picture = M21011
-		head_of_state = autocratic_charmer
-		head_of_state = autocratic_charmer
-		head_of_government = silent_workhorse
-		minister_of_intelligence = dismal_enigma
-		start_date = 1945.1.1
-	}
-	21048 = {
-		name = "ÈÈ´úÄá¡¤±´À­"
-		ideology = stalinist
-		loyalty = 1.00
-		picture = M21031
-		head_of_state = stern_imperialist
-		armament_minister = infantry_proponent
 		start_date = 1936.1.1
 	}
-	21049 = {
-		name = "À­ÒÀ¿Ë¡¤À­Ë¹Âå"
-		ideology = stalinist
+	21046 = {
+		name = "Tildy Zoltán"
+		ideology = social_conservative
 		loyalty = 1.00
-		picture = M21035
+		picture = M_HUN_Tildy_Zoltan
 		head_of_state = autocratic_charmer
-		start_date = 1939.1.1
+		head_of_government = silent_workhorse
+		start_date = 1936.1.1
 	}
-	21050 = {
-		name = "À­¿ÆÎ÷¡¤Âí¼ÓÊ²"
+	21061 = {
+		name = "Szakasits Árpád"
+		ideology = leninist
+		loyalty = 1.00
+		picture = M_HUN_Szakasits_Arpad
+		head_of_state = insignificant_layman
+		start_date = 1945.1.1
+	}
+	21181 = {
+		name = "Rónai Sándor"
 		ideology = stalinist
 		loyalty = 1.00
-		picture = M21032
-		head_of_state = power_hungry_demagogue
-		minister_of_security = crooked_kleptocrat
-		start_date = 1944.1.1
+		picture = M_HUN_Ronai_Sandor
+		head_of_state = popular_figurehead
+		start_date = 1950.1.1
 	}
-	21051 = {
-		name = "Ë¹ÍÐÒ¢ÒÁ¡¤µÂÂõ"
-		ideology = national_socialist
+	21182 = {
+		name = "Dobi István"
+		ideology = leninist
 		loyalty = 1.00
-		picture = M21051
-		head_of_government = happy_amateur
-		foreign_minister = ideological_crusader
-		start_date = 1939.1.1
+		picture = M_HUN_Dobi_Istvan
+		head_of_state = autocratic_charmer
+		head_of_government = ambitious_union_boss
+		start_date = 1947.6.3
 	}
-	21052 = {
-		name = "À­´Ä¡¤Ò®Åµ"
-		ideology = national_socialist
+	21048 = {
+		name = "Zsedényi Béla"
+		ideology = paternal_autocrat
 		loyalty = 1.00
-		picture = M21022
-		head_of_government = political_protege
-		armament_minister = laissez_faires_capitalist
-		start_date = 1944.1.1
+		picture = M_HUN_Zsedenyi_Bela
+		head_of_state = corporate_suit
+		start_date = 1936.1.1
 	}
-	21053 = {
-		name = "µÀÀ­Äá¡¤¿¨¶ûÂü"
+	21045 = {
+		name = "Peyer Károly"
+		ideology = social_democrat
+		loyalty = 1.00
+		picture = M_HUN_Peyer_Karoly
+		head_of_state = insignificant_layman
+		start_date = 1936.1.1
+	}
+#####################
+#Heads of Government#
+#####################
+	21002 = {
+		name = "Vitéz Jákfai Gömbös Gyula"
 		ideology = fascistic
 		loyalty = 1.00
-		picture = M21053
+		picture = M_HUN_Gombos_Gyula
+		head_of_government = flamboyant_tough_guy
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1936.1.1
+	}
+	21053 = {
+		name = "Pusztaszentgyörgyi és Tetétleni Darányi Kálmán"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M_HUN_Daranyi_Kalman
 		head_of_government = smiling_oilman
 		minister_of_security = back_stabber
 		start_date = 1936.1.1
 	}
 	21054 = {
-		name = "ÒÁÄ·À×µÏ¡¤±´À­"
-		ideology = fascistic
+		name = "Vitéz Ómoraviczai Imrédy Béla"
+		ideology = paternal_autocrat
 		loyalty = 1.00
-		picture = M21024
+		picture = M_HUN_Imredy_Bela
 		head_of_government = corporate_suit
 		foreign_minister = ideological_crusader
+		armament_minister = infantry_proponent
 		start_date = 1938.1.1
 	}
 	21055 = {
-		name = "Ì©À³»ù¡¤ÅÁ¶û"
-		ideology = fascistic
+		name = "Széki Gróf Teleki Pál"
+		ideology = paternal_autocrat
 		loyalty = 1.00
-		picture = M21055
+		picture = M_HUN_Teleki_Pal
 		head_of_government = naive_optimist
 		minister_of_security = compassionate_gentleman
-		foreign_minister = great_compromiser
-		start_date = 1939.1.1
+		foreign_minister = apologetic_clerk
+		start_date = 1936.1.1
 	}
 	21056 = {
-		name = "°Í¶û¶àÏ£¡¤À­Ê²Âå"
-		ideology = fascistic
+		name = "Bárdossy László"
+		ideology = paternal_autocrat
 		loyalty = 1.00
-		picture = M21056
+		picture = M_HUN_Bardossy_Laszlo
 		head_of_government = silent_workhorse
-		foreign_minister = iron_fisted_brute
-		start_date = 1941.1.1
-	}
-	21057 = {
-		name = "¿¨ÂÞÒÁ¡¤Ã×¿ËÂåÊ²"
-		ideology = fascistic
-		loyalty = 1.00
-		picture = M21057
-		head_of_government = happy_amateur
-		minister_of_security = man_of_the_people
-		foreign_minister = general_staffer
-		start_date = 1942.1.1
-	}
-	21058 = {
-		name = "À­¿¨ÍÐË¹¡¤¸Ç×ô"
-		ideology = fascistic
-		loyalty = 1.00
-		picture = M21058
-		head_of_government = old_general
-		chief_of_army = elastic_defence_doctrine
-		head_of_state = resigned_generalissimo
-		start_date = 1944.1.1
-	}
-	21059 = {
-		name = "´ï¶ûÅµ»ù¡¤Ã×¿ËÂåÊ²¡¤±´À­"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = M21059
-		head_of_government = corporate_suit
-		chief_of_army = static_defence_doctrine
-		start_date = 1944.1.1
-	}
-	21060 = {
-		name = "´ï¶ûÅµ¿Ë·¨¸¥ÄÐ¾ô¡¤¿¨ÂÞÀû"
-		ideology = paternal_autocrat
-		loyalty = 1.00
-		picture = M21060
-		head_of_government = old_general
-		chief_of_staff = school_of_psychology
-		start_date = 1945.1.1
-	}
-	21061 = {
-		name = "Èø¿¨Ï£Ææ¡¤°¢¶ûÅÁµÂ"
-		ideology = social_democrat
-		loyalty = 1.00
-		picture = M21061
-		head_of_government = happy_amateur
-		foreign_minister = biased_intellectual
-		head_of_state = insignificant_layman
-		start_date = 1945.1.1
-	}
-	21063 = {
-		name = "ÄÉ¼ª¡¤·ÑÂ×´Ä"
-		ideology = social_conservative
-		loyalty = 1.00
-		picture = M21012
-		head_of_government = happy_amateur
-		foreign_minister = great_compromiser
-		start_date = 1946.1.1
-	}
-	21064 = {
-		name = "À­ÒÀ¿Ë¡¤À­Ë¹Âå"
-		ideology = stalinist
-		loyalty = 1.00
-		picture = M21035
-		head_of_government = flamboyant_tough_guy
-		foreign_minister = iron_fisted_brute
-		minister_of_security = crime_fighter
-		minister_of_intelligence = political_specialist
-		start_date = 1936.1.1
-	}
-	21065 = {
-		name = "À­¿ÆÎ÷¡¤Âí¼ÓÊ²"
-		ideology = stalinist
-		loyalty = 1.00
-		picture = M21032
-		head_of_government = backroom_backstabber
-		start_date = 1944.1.1
-	}
-	21067 = {
-		name = "¿­Ã·Äá¡¤¼Ó²©¶û"
-		ideology = national_socialist
-		loyalty = 0.75
-		picture = M21067
-		foreign_minister = great_compromiser
-		start_date = 1944.1.1
-	}
-	21070 = {
-		name = "Ç¡»ù¡¤ÒÁË¹ÌØÍò"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21070
 		foreign_minister = the_cloak_n_dagger_schemer
-		start_date = 1939.1.1
-	}
-	21073 = {
-		name = "¿­¿ËË¹¡¤°£µÂ¼Ó"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M21073
-		foreign_minister = iron_fisted_brute
-		armament_minister = corrupt_kleptocrat
-		minister_of_security = crooked_kleptocrat
-		minister_of_intelligence = naval_intelligence_specialist
-		chief_of_army = guns_and_butter_doctrine
-		chief_of_navy = base_control_doctrine
-		chief_of_air = air_superiority_doctrine
-		start_date = 1944.1.1
-	}
-	21074 = {
-		name = "¶÷µÂÀ×¡¤±«ÒÁÆæ-ÈÕÁÖË¹»ù"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M21074
-		foreign_minister = general_staffer
-		start_date = 1945.1.1
-	}
-	21076 = {
-		name = "¸¥ÀÉË÷Íß¡¤µÏÑÇ¿Ë"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M21076
-		foreign_minister = apologetic_clerk
-		chief_of_navy = power_projection_doctrine
-		start_date = 1936.1.1
-	}
-	21078 = {
-		name = "ÕæÕÜÎ÷¡¤ÑÇÅµÊ²"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M21013
-		foreign_minister = great_compromiser
-		start_date = 1944.1.1
-	}
-	21079 = {
-		name = "Äª¶ûÄÉ¡¤°£Àï¿Ë"
-		ideology = stalinist
-		loyalty = 0.75
-		picture = M21079
-		foreign_minister = ideological_crusader
-		start_date = 1936.1.1
-	}
-	21080 = {
-		name = "Ôú¶û¿¨¡¤ÂíËþ"
-		ideology = stalinist
-		loyalty = 0.75
-		picture = M21037
-		foreign_minister = general_staffer
-		chief_of_staff = school_of_psychology
-		start_date = 1944.1.1
-	}
-	21083 = {
-		name = "ÒÁÄ·À×µÏ¡¤±´À­"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21024
-		armament_minister = infantry_proponent
-		start_date = 1936.1.1
-	}
-	21084 = {
-		name = "À­Ô¼Ê²¡¤ÀµÃ·Äá-Ê©ÄÚÀÕ¶û"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21084
-		armament_minister = administrative_genius
 		start_date = 1938.1.1
 	}
-	21085 = {
-		name = "¶÷µÂÀ×¡¤À­Ë¹Âå"
+	21057 = {
+		name = "Vitéz Nagykállói Kállay Miklós"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M_HUN_Kallay_Miklos
+		head_of_government = happy_amateur
+		minister_of_security = man_of_the_people
+		foreign_minister = the_cloak_n_dagger_schemer
+		start_date = 1942.1.1
+	}
+	21051 = {
+		name = "Sztójay Döme"
 		ideology = fascistic
-		loyalty = 0.75
-		picture = M21085
-		armament_minister = strategic_air_proponent
-		start_date = 1944.1.1
-	}
-	21086 = {
-		name = "Å·¶ûÌØÍßÄá¡¤ÒÁÄ·À×"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M21086
-		armament_minister = administrative_genius
-		start_date = 1944.1.1
-	}
-	21088 = {
-		name = "°¬µÙ°²¡¤µÂÎÂ¿ËÀÕ"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M21088
-		armament_minister = resource_industrialist
-		start_date = 1946.1.1
-	}
-	21089 = {
-		name = "¿¨Ë¹ÌØÄÉ¡¤À×ÈÈ"
-		ideology = social_democrat
-		loyalty = 0.75
-		picture = M21089
-		armament_minister = administrative_genius
-		chief_of_navy = base_control_doctrine
-		start_date = 1945.1.1
-	}
-	21090 = {
-		name = "°Â²¨Äá¡¤°¢¶û²®ÌØ"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M21090
-		armament_minister = strategic_air_proponent
-		start_date = 1936.1.1
-	}
-	21091 = {
-		name = "Å·¶û½¹ÒÁ¡¤Ã×¿ËÂåÊ²"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M21014
-		armament_minister = resource_industrialist
-		start_date = 1939.1.1
-	}
-	21093 = {
-		name = "¸ñÂÞ¡¤°£¶ûÅµ"
-		ideology = stalinist
-		loyalty = 0.75
-		picture = M21093
-		armament_minister = resource_industrialist
+		loyalty = 1.00
+		picture = M_HUN_Sztojay_Dome
+		head_of_government = old_general
+		foreign_minister = ideological_crusader
 		minister_of_intelligence = research_specialist
 		start_date = 1939.1.1
 	}
-	21094 = {
-		name = "ÎÖÊ²¡¤×ô¶ûÌ¹"
+	21058 = {
+		name = "Vitéz Lófõ Csíkszentsimoni Lakatos Géza"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M_HUN_Lakatos_Geza
+		head_of_government = old_general
+		chief_of_army = elastic_defence_doctrine
+		start_date = 1944.1.1
+	}
+	21059 = {
+		name = "Vitéz Lófõ Dálnoki Miklós Béla"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M_HUN_Miklos_Bela
+		head_of_government = old_general
+		chief_of_army = static_defence_doctrine
+		start_date = 1943.1.1
+	}
+	21065 = {
+		name = "Rákosi Mátyás"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M_HUN_Rakosi_Matyas
+		head_of_government = backroom_backstabber
+		start_date = 1944.1.1
+	}
+	21063 = {
+		name = "Nagy Ferenc"
+		ideology = social_conservative
+		loyalty = 1.00
+		picture = M_HUN_Nagy_Ferenc
+		head_of_government = happy_amateur
+		start_date = 1939.1.1
+	}
+	21183 = {
+		name = "Dinnyés Lajos"
+		ideology = leninist
+		loyalty = 1.00
+		picture = M_HUN_Dinnyes_Lajos
+		head_of_government = happy_amateur
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1947.1.1
+	}
+	21113 = {
+		name = "Nagy Imre"
+		ideology = leninist
+		loyalty = 0.75
+		picture = M_HUN_Nagy_Imre
+		minister_of_security = back_stabber
+		head_of_government = naive_optimist
+		start_date = 1945.1.1
+	}
+	21189 = {
+		name = "Kádár János"
+		ideology = leninist
+		loyalty = 1.00
+		picture = M_HUN_Kadar_Janos
+		minister_of_security = back_stabber
+		head_of_government = political_protege
+		start_date = 1948.1.1
+	}
+	21153 = {
+		name = "Kéthly Anna"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M_HUN_Kethly_Anna
+		head_of_government = political_protege
+   		minister_of_security = compassionate_gentleman
+    	start_date = 1936.1.1
+	}
+	21191 = {
+		name = "Rassay Károly"
+		ideology = social_liberal
+		loyalty = 1
+		picture = M_HUN_Rassay_Károly
+		head_of_government = naive_optimist
+		minister_of_security = silent_lawyer
+		start_date = 1936.1.1
+	}
+	
+	
+#######################
+#Minister of Armaments#
+#######################
+	21004 = {
+		name = "Fabinyi Tihamér"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M_HUN_Fabinyi_Tihamer
+		armament_minister = military_entrepreneur
+		start_date = 1936.1.1
+	}
+	21084 = {
+		name = "Reményi-Schneller Lajos"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M_HUN_Remenyi-Schneller_Lajos
+		armament_minister = administrative_genius
+		start_date = 1938.1.1
+	}
+	21086 = {
+		name = "Oltványi Imre"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M_HUN_Oltvanyi_Imre
+		armament_minister = administrative_genius
+		start_date = 1936.1.1
+	}
+	21093 = {
+		name = "Gerõ Ernõ"
 		ideology = stalinist
 		loyalty = 0.75
-		picture = M21034
+		picture = M_HUN_Gero_Erno
+		armament_minister = resource_industrialist
+		minister_of_intelligence = research_specialist
+		minister_of_security = prince_of_terror
+		start_date = 1939.1.1
+	}
+  	21184 = {
+		name = "Kossa István"
+		ideology = stalinist
+		loyalty = 1
+		picture = M_HUN_Kossa_Istvan
+		armament_minister = resource_industrialist
+  	  	start_date = 1948.1.1
+  	}
+  	21185 = {
+		name = "Olt Károly"
+		ideology = stalinist
+		loyalty = 1
+		picture = M_HUN_Olt_Karoly
+		armament_minister = military_entrepreneur
+		start_date = 1947.1.1
+  	}
+  	21178 = {
+		name = "Nyárádi Miklós"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M_HUN_Nyaradi_Miklos
+		armament_minister = military_entrepreneur
+		start_date = 1946.4.6
+  	}
+  	21176 = {
+		name = "Antos István"
+		ideology = stalinist
+		loyalty = 1
+		picture = M_HUN_Antos_Istvan
+		armament_minister = laissez_faires_capitalist
+		start_date = 1945.1.1
+  	}
+	21085 = {
+		name = "Vitéz Endre László"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M_HUN_Endre_Laszlo
+		armament_minister = strategic_air_proponent
+		start_date = 1944.1.1
+	}
+	21094 = {
+		name = "Vas Zoltán"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M_HUN_Vas_Zoltan
 		armament_minister = military_entrepreneur
 		start_date = 1946.1.1
 	}
-	21095 = {
-		name = "ÑÇÂÞÊ²¡¤°²ÍÐ¶û"
-		ideology = national_socialist
-		loyalty = 0.75
-		picture = M21025
-		minister_of_security = prince_of_terror
-		minister_of_intelligence = political_specialist
-		start_date = 1939.1.1
-	}
-	21096 = {
-		name = "ÍßÒÁè§¡¤¼Ó²©¶û"
-		ideology = national_socialist
-		loyalty = 0.75
-		picture = M21096
-		minister_of_security = man_of_the_people
-		start_date = 1944.1.1
-	}
-	21100 = {
-		name = "¿­ÀµË¹Ì©Ê²-·ÑÉá¶û¡¤·ÑÂ×´Ä"
-		ideology = fascistic
-		loyalty = 1.00
-		picture = M21100
-		minister_of_security = silent_lawyer
-		minister_of_intelligence = industrial_specialist
-		chief_of_air = air_superiority_doctrine
-		head_of_government = happy_amateur
-		foreign_minister = apologetic_clerk
-		start_date = 1941.1.1
-	}
-	21103 = {
-		name = "Èû¶û¡¤¿¨¶ûÂü"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21103
-		minister_of_security = crime_fighter
-		start_date = 1944.1.1
-	}
-	21105 = {
-		name = "±«»ù¡¤À­Ë¹Âå"
+	21088 = {
+		name = "Winchkler István"
 		ideology = paternal_autocrat
 		loyalty = 0.75
-		picture = M21105
-		minister_of_security = crime_fighter
-		start_date = 1945.1.1
+		picture = M_HUN_Winchkler_Istvan
+		armament_minister = resource_industrialist
+		start_date = 1936.1.1
 	}
-	21107 = {
-		name = "À×Î¤¡¤Ô¼Éª·ò"
-		ideology = social_democrat
+######################
+#Minister of Security#
+######################
+	21005 = {
+		name = "Vitéz Leveldi Kozma Miklós"
+		ideology = fascistic
 		loyalty = 0.75
-		picture = M21107
-		minister_of_security = crime_fighter
-		start_date = 1945.1.1
+		picture = M_HUN_Kozma_Miklos
+		minister_of_security = prince_of_terror
+		start_date = 1936.1.1
 	}
 	21108 = {
-		name = "Èû¶û¡¤Ô¼Éª·ò"
+		name = "Széll József"
 		ideology = social_conservative
 		loyalty = 0.75
-		picture = M21108
+		picture = M_HUN_Szell_Jozsef
 		minister_of_security = efficient_sociopath
 		minister_of_intelligence = political_specialist
 		start_date = 1936.1.1
 	}
-	21109 = {
-		name = "°î´ëÊ²¡¤Ã×¿ËÂåÊ²"
-		ideology = social_conservative
+	21100 = {
+		name = "Keresztes-Fischer Ferenc"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M_HUN_Keresztes-Fischer_Ferenc
+		minister_of_security = silent_lawyer
+		minister_of_intelligence = industrial_specialist
+		foreign_minister = ideological_crusader
+		start_date = 1938.1.1
+	}
+	21096 = {
+		name = "Vajna Gábor"
+		ideology = national_socialist
 		loyalty = 0.75
-		picture = M21109
+		picture = M_HUN_Vajna_Gabor
+		minister_of_security = man_of_the_people
+		start_date = 1944.1.1
+	}
+	21114 = {
+		name = "Erdei Ferenc"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M_HUN_Erdei_Ferenc
+		minister_of_security = compassionate_gentleman
+		start_date = 1944.1.1
+	}
+	21064 = {
+		name = "Rajk László"
+		ideology = stalinist
+		loyalty = 1.00
+		picture = M_HUN_Rajk_Laszlo
+		foreign_minister = iron_fisted_brute
+		minister_of_security = prince_of_terror
+		minister_of_intelligence = political_specialist
+		start_date = 1945.1.1
+	}
+	21175 = {
+		name = "Münich Ferenc"
+		ideology = stalinist
+		loyalty = 1
+		picture = M_HUN_Munich_Ferenc
+		minister_of_security = crime_fighter
+		minister_of_intelligence = political_specialist
+    	start_date = 1936.1.1
+	}
+	21109 = {
+		name = "Bonczos Miklós"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M_HUN_Bonczos_Miklos
 		minister_of_security = silent_lawyer
 		start_date = 1944.1.1
 	}
-	21110 = {
-		name = "·¨¶û¿¨Ê²¡¤Ã×¹þÒÁ"
-		ideology = stalinist
+	21095 = {
+		name = "Jaross Andor"
+		ideology = national_socialist
 		loyalty = 0.75
-		picture = M21110
+		picture = M_HUN_Jaross_Andor
 		minister_of_security = prince_of_terror
-		start_date = 1936.1.1
-	}
-	21113 = {
-		name = "ÄÉ¼ª¡¤ÒÁÄ·À×"
-		ideology = stalinist
-		loyalty = 0.75
-		picture = M21113
-		minister_of_security = back_stabber
-		head_of_government = naive_optimist
-		start_date = 1945.1.1
-	}
-	21114 = {
-		name = "°¬¶û´úÒÁ¡¤·ÑÂ×´Ä"
-		ideology = stalinist
-		loyalty = 0.75
-		picture = M21114
-		minister_of_security = compassionate_gentleman
-		start_date = 1947.1.1
-	}
-	21115 = {
-		name = "ÀµÄáÊ²¡¤·ÑÂ×´Ä"
-		ideology = national_socialist
-		loyalty = 0.75
-		picture = M21115
-		minister_of_intelligence = dismal_enigma
-		start_date = 1944.1.1
-	}
-	21117 = {
-		name = "ÎÌ¶à¶û¿¼¡¤À×ÈÈ"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21117
-		minister_of_intelligence = technical_specialist
-		start_date = 1936.1.1
-	}
-	21118 = {
-		name = "ÎÚÒÁÍßÀï¡¤Ã×¹þÒÁ"
-		ideology = fascistic
-		loyalty = 1.00
-		picture = M21118
-		minister_of_intelligence = research_specialist
-		start_date = 1939.1.1
-	}
-	21119 = {
-		name = "Ôú¿Æ¡¤°²µÂÁÒ"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21119
 		minister_of_intelligence = political_specialist
-		start_date = 1941.1.1
-	}
-	21120 = {
-		name = "¾ÃÂå¡¤¿¨´ï¶û"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21120
-		minister_of_intelligence = dismal_enigma
-		start_date = 1943.1.1
-	}
-	21128 = {
-		name = "À­Ô¼Ê²¡¤ÇÇÌÕÒÁ¡¤·ë¡¤ÇÇÌÕÒÁ"
-		ideology = national_socialist
-		loyalty = 0.75
-		picture = M21128
-		chief_of_staff = school_of_manoeuvre
-		chief_of_army = armoured_spearhead_doctrine
 		start_date = 1939.1.1
 	}
-	21129 = {
-		name = "°ÝÀµ¸ñ·Æ¡¤¿¨ÂÞÒÁ"
+	21105 = {
+		name = "Baky László"
 		ideology = national_socialist
 		loyalty = 0.75
-		picture = M21129
-		chief_of_staff = school_of_manoeuvre
-		chief_of_army = guns_and_butter_doctrine
-		start_date = 1944.1.1
-	}
-	21132 = {
-		name = "ÄÉ¼ª¡¤Î¬¶ûÄªÊ²"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21132
-		chief_of_staff = school_of_defence
-		start_date = 1942.1.1
-	}
-	21133 = {
-		name = "ËÕ¶ûÃ«ÒÁ¡¤É½¶à¶û"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21133
-		chief_of_staff = school_of_fire_support
-		start_date = 1944.1.1
-	}
-	21135 = {
-		name = "ÀÕµÂ¶û¡¤Î¬¶ûÄªÊ²"
-		ideology = paternal_autocrat
-		loyalty = 0.75
-		picture = M21135
-		chief_of_staff = school_of_fire_support
+		picture = M_HUN_Baky_Laszlo
+		minister_of_security = crime_fighter
 		start_date = 1945.1.1
 	}
-	21137 = {
-		name = "ÎÖÀÕÊ²¡¤ÑÇÅµÊ²"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M21017
-		chief_of_staff = school_of_manoeuvre
-		chief_of_army = elastic_defence_doctrine
-		start_date = 1936.1.1
-	}
-	21142 = {
-		name = "Î¤ÌØ¡¤ºàÀï¿Ë"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21142
-		chief_of_army = static_defence_doctrine
-		start_date = 1938.1.1
-	}
-	21146 = {
-		name = "ÉÜÄá¡¤ºú¸ê"
+##################
+#Foreign Minister#
+##################
+	21003 = {
+		name = "Kánya Kálmán"
 		ideology = paternal_autocrat
 		loyalty = 0.75
-		picture = M21146
-		chief_of_army = decisive_battle_doctrine
-		start_date = 1945.1.1
-	}
-	21147 = {
-		name = "Î÷Ë¹¿¨À­Ì©¡¤¼Ó²©¶û"
-		ideology = social_democrat
-		loyalty = 0.75
-		picture = M21136
-		chief_of_army = guns_and_butter_doctrine
-		chief_of_staff = school_of_psychology
-		start_date = 1945.1.1
-	}
-	21148 = {
-		name = "ËÉ±«ÌØº£ÒÁ¡¤·ÑÂ×´Ä"
-		ideology = social_conservative
-		loyalty = 1.00
-		picture = M21148
-		chief_of_army = static_defence_doctrine
+		picture = M_HUN_Kanya_Kalman
+		foreign_minister = apologetic_clerk
 		start_date = 1936.1.1
 	}
-	21150 = {
-		name = "²®½ò¡¤Äá¹ÅÀ³"
-		ideology = stalinist
-		loyalty = 0.75
-		picture = M21038
-		chief_of_army = decisive_battle_doctrine
-		start_date = 1936.1.1
-	}
-	21151 = {
-		name = "Ææ°Â¡¤É½¶à¶û"
-		ideology = national_socialist
-		loyalty = 0.75
-		picture = M21151
-		chief_of_navy = base_control_doctrine
-		minister_of_intelligence = industrial_specialist
-		start_date = 1939.1.1
-	}
-	21157 = {
-		name = "¹þµÏ¡¤¿¨¶ûÂü"
-		ideology = stalinist
-		loyalty = 0.75
-		picture = M21039
-		chief_of_navy = decisive_naval_battle_doctrine
-		start_date = 1936.1.1
-	}
-	21158 = {
-		name = "Âí¼ÓÂåÊ²¡¤É½¶à¶û"
-		ideology = national_socialist
-		loyalty = 0.75
-		picture = M21030
-		chief_of_air = army_aviation_doctrine
-		start_date = 1939.1.1
-	}
-	21161 = {
-		name = "·Ñ¿ËÌØ¹þÃ×-²ÉÒÁµÂÄÉ¡¤·ÑÂ×´Ä"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21161
-		chief_of_air = army_aviation_doctrine
-		chief_of_army = elastic_defence_doctrine
-		start_date = 1938.1.1
-	}
-	21162 = {
-		name = "µÂ²¼ÂÞµÏ¡¤½Ý¶ûÏ£"
-		ideology = fascistic
-		loyalty = 0.75
-		picture = M21040
-		chief_of_air = vertical_envelopment_doctrine
-		chief_of_air = air_superiority_doctrine
-		start_date = 1941.1.1
-	}
-	21163 = {
-		name = "ÌØÄÚ¸ñ-À­´Ä¡¤¿¨¶ûÂü"
+	21070 = {
+		name = "Körösszegi és Adorjáni Gróf Csáky István"
 		ideology = paternal_autocrat
 		loyalty = 0.75
-		picture = M21163
-		chief_of_air = army_aviation_doctrine
-		start_date = 1944.1.1
-	}
-	21166 = {
-		name = "À­¿ÆÎ÷¡¤±´À­"
-		ideology = social_conservative
-		loyalty = 0.75
-		picture = M21020
-		chief_of_air = vertical_envelopment_doctrine
+		picture = M_HUN_Csaky_Istvan
+		foreign_minister = iron_fisted_brute
 		start_date = 1936.1.1
 	}
 	21179 = {
-		name = "¼ªÆë¡¤Ò®Åµ"
-		ideology = fascistic
+		name = "Ghiczi, Assa- és Ablánczkürti Ghyczy Jenö"
+		ideology = paternal_autocrat
 		loyalty = 1.00
-		picture = M21179
+		picture = M_HUN_Ghyczy_Jeno
 		foreign_minister = apologetic_clerk
 		start_date = 1943.1.1
 	}
-	21181 = {
-		name = "ÂÞÄÉÒÁ¡¤É½¶à¶û"
-		ideology = stalinist
+	21007 = {
+		name = "Hennyey Gusztáv"
+		ideology = paternal_autocrat
 		loyalty = 1.00
-		picture = M21181
-		head_of_state = popular_figurehead
-		start_date = 1950.1.1
+		picture = M_HUN_Hennyey_Gusztav
+		chief_of_staff = school_of_mass_combat
+		foreign_minister = general_staffer
+		start_date = 1936.1.1
 	}
-	21182 = {
-		name = "µÀ±È¡¤ÒÁË¹ÌØÍò"
-		ideology = stalinist
-		loyalty = 1.00
-		picture = M21182
-		head_of_state = autocratic_charmer
-		head_of_government = ambitious_union_boss
-		start_date = 1952.1.1
+	21067 = {
+		name = "Kemény Gábor"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M_HUN_Kemeny_Gabor
+		foreign_minister = great_compromiser
+		start_date = 1944.1.1
 	}
-	21183 = {
-		name = "µÙÄùÊ²¡¤À­Ô¼Ê²"
-		ideology = stalinist
-		loyalty = 1.00
-		picture = M21183
-		head_of_government = happy_amateur
-		start_date = 1947.1.1
+	21078 = {
+		name = "Gyöngyösi János"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M_HUN_Gyongyosi_Janos
+		foreign_minister = apologetic_clerk
+		start_date = 1944.1.1
+	}
+  	21174 = {
+		name = "Mihályfi Ernö"
+		ideology = left_wing_radical
+		loyalty = 0.75
+		picture = M_HUN_Mihalyfi_Erno
+		foreign_minister = biased_intellectual
+		start_date = 1945.1.1
+  	}
+	21079 = {
+		name = "Molnár Erik"
+		ideology = leninist
+		loyalty = 0.75
+		picture = M_HUN_Molnar_Erik
+		foreign_minister = ideological_crusader
+		start_date = 1936.1.1
 	}
 	21186 = {
-		name = "¿¨À­ÒÁ¡¤¾ÃÂå"
-		ideology = stalinist
+		name = "Kállai Gyula"
+		ideology = leninist
 		loyalty = 0.75
-		picture = M21186
+		picture = M_HUN_Kallai_Gyula
 		foreign_minister = the_cloak_n_dagger_schemer
-		start_date = 1948.1.1
+		start_date = 1945.1.1
 	}
 	21187 = {
-		name = "»ùË¹¡¤¿¨ÂÞÒÁ"
+		name = "Kiss Károly"
 		ideology = stalinist
 		loyalty = 0.75
-		picture = M21187
-		foreign_minister = apologetic_clerk
-		start_date = 1952.1.1
+		picture = M_HUN_Kiss_Karoly
+		foreign_minister = ideological_crusader
+		start_date = 1948.1.1
 	}
 	21188 = {
-		name = "»ôÍßÌØ¡¤ÒÁÄ·À×"
+		name = "Horváth Imre"
+		ideology = leninist
+		loyalty = 0.75
+		picture = M_HUN_Horvath_Imre
+		foreign_minister = theoretical_scientist
+		start_date = 1952.1.1
+	}
+	21074 = {
+		name = "Bajcsy-Zsilinszky Endre"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M_HUN_Bajcsy-Zsilinszky_Endre
+		foreign_minister = general_staffer
+		start_date = 1936.1.1
+	}
+################
+#Chief of Staff#
+################
+	21052 = {
+		name = "Rátz Jenõ"
+		ideology = national_socialist
+		loyalty = 1.00
+		picture = M_HUN_Ratz_Jeno
+		chief_of_staff = school_of_psychology
+		chief_of_army = armoured_spearhead_doctrine
+		start_date = 1936.1.1
+	}
+	21142 = {
+		name = "Werth Henrik"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M_HUN_Werth_Henrik
+		chief_of_staff = school_of_mass_combat
+		chief_of_army = static_defence_doctrine
+		start_date = 1938.1.1
+	}
+	21148 = {
+		name = "Vitéz Szombathelyi Ferenc"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M_HUN_Szombathelyi_Ferenc
+		chief_of_staff = school_of_manoeuvre
+		start_date = 1939.1.1
+	}
+	21137 = {
+		name = "Vörös János"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M_HUN_Voros_Janos
+		chief_of_staff = school_of_fire_support
+		chief_of_army = elastic_defence_doctrine
+		start_date = 1943.1.1
+	}
+	21129 = {
+		name = "Beregfy Károly"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M_HUN_Beregfy_Karoly
+		chief_of_staff = school_of_defence
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1944.1.1
+	}
+	21156 = {
+		name = "Sólyom László"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M_HUN_Solyom_Laszlo
+		chief_of_staff = school_of_psychology
+		start_date = 1956.1.1
+	}
+	21154 = {
+		name = "Kiss János"
+		ideology = social_democrat
+		loyalty = 0.75
+		picture = M_HUN_Kiss_Janos
+		chief_of_staff = school_of_mass_combat
+		start_date = 1945.1.1
+	}
+###############
+#Chief of Army#
+###############
+	21008 = {
+		name = "Vitéz Shvoy István"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M_HUN_Shvoy_Istvan
+		chief_of_army = decisive_battle_doctrine
+		start_date = 1936.1.1
+	}
+	21146 = {
+		name = "Vitéz Sónyi Hugó"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M_HUN_Sonyi_Hugo
+		chief_of_army = decisive_battle_doctrine
+		start_date = 1936.1.1
+	}
+	21135 = {
+		name = "Rõder Vilmos"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M_HUN_Roder_Vilmos
+		chief_of_army = armoured_spearhead_doctrine
+		start_date = 1936.1.1
+	}
+	21060 = {
+		name = "Vitéz Dálnokfalvi Bartha Károly"
+		ideology = paternal_autocrat
+		loyalty = 1.00
+		picture = M_HUN_Bartha_Karoly
+		chief_of_army = logistics_specialist
+		start_date = 1938.1.1
+	}
+	21132 = {
+		name = "Vitéz Nagybaczoni Nagy Vilmos"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M_HUN_Nagy_Vilmos
+		chief_of_army = static_defence_doctrine
+		start_date = 1942.1.1
+	}
+	21128 = {
+		name = "Vitéz Csataji Csatay Lajos"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M_HUN_Csatay_Lajos
+		chief_of_staff = school_of_manoeuvre
+		chief_of_army = decisive_battle_doctrine
+		start_date = 1943.1.1
+	}
+	21110 = {
+		name = "Farkas Mihály"
 		ideology = stalinist
 		loyalty = 0.75
-		picture = M21188
-		armament_minister = theoretical_scientist
-		start_date = 1952.1.1
+		picture = M_HUN_Farkas_Mihaly
+		chief_of_army = logistics_specialist
+		start_date = 1945.1.1
 	}
-	21189 = {
-		name = "¿¨´ï¶û¡¤ÑÇÅµÊ²"
+  	21167 = {
+		name = "Tombor Jenõ"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M_HUN_Tombor_Jeno
+		chief_of_army = decisive_battle_doctrine
+		start_date = 1936.1.1
+  	}
+  	21193 = {
+		name = "Bartha Albert"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M_HUN_Bartha_Albert
+		chief_of_army = static_defence_doctrine
+		start_date = 1936.1.1
+  	}
+  	21165 = {
+		name = "Veres Péter"
+		ideology = leninist
+		loyalty = 0.75
+		picture = M_HUN_Veres_Peter
+		chief_of_army = guns_and_butter_doctrine
+		start_date = 1936.1.1
+  	}
+  	21160 = {
+		name = "Bata István"
 		ideology = stalinist
-		loyalty = 1.00
-		picture = M21189
-		minister_of_security = back_stabber
-		start_date = 1952.1.1
+		loyalty = 0.75
+		picture = M_HUN_Bata_Istvan
+		chief_of_army = static_defence_doctrine
+		chief_of_staff = school_of_fire_support
+		chief_of_air = vertical_envelopment_doctrine
+		start_date = 1950.1.1
+  	}
+  	21159 = {
+		name = "Janza Károly"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M_HUN_Janza_Karoly
+		chief_of_army = decisive_battle_doctrine
+		start_date = 1951.1.1
+  	}
+  	21192 = {
+		name = "Maléter Pál"
+		ideology = leninist
+		loyalty = 0.75
+		picture = M_HUN_Maleter_Pal
+		chief_of_army = elastic_defence_doctrine
+		start_date = 1956.1.1
+  	}
+  	21194 = {
+		name = "Révész Géza"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M_HUN_Revesz_Geza
+		chief_of_army = static_defence_doctrine
+		start_date = 1956.1.1
+  	}
+  	21155 = {
+		name = "Almásy Pál"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M_HUN_Almasy_Pal
+		chief_of_army = logistics_specialist
+		start_date = 1946.1.1
+  	}
+##############
+#Chief of Air#
+##############
+	21171 = {
+		name = "Vitéz Háry László"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M_HUN_Hary_Laszlo
+		chief_of_air = army_aviation_doctrine
+		start_date = 1936.1.1
+	}
+	21170 = {
+		name = "Vitéz Kenese Waldemár"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M_HUN_Kenese_Waldemar
+		chief_of_air = air_superiority_doctrine
+		start_date = 1936.1.1
+	}
+	21166 = {
+		name = "Rákosi Béla"
+		ideology = social_conservative
+		loyalty = 0.75
+		picture = M_HUN_Rakosi_Bela
+		chief_of_air = vertical_envelopment_doctrine
+		start_date = 1936.1.1
+	}
+	21158 = {
+		name = "Magyarosy Sándor"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M_HUN_Magyarosy_Sandor
+		chief_of_air = army_aviation_doctrine
+		start_date = 1939.1.1
+	}
+  	21169 = {
+   		 name = "Vitéz Bánfalvy István"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M_HUN_Banfalvy_Istvan
+		chief_of_air = air_superiority_doctrine 
+		start_date = 1939.1.1
+  	}
+  	21168 = {
+    	name = "Justy Emil"
+   		ideology = national_socialist
+   		loyalty = 0.75
+		picture = M_HUN_Justy_Emil
+		chief_of_air = air_superiority_doctrine
+		start_date = 1940.1.1
+  	}
+	21163 = {
+		name = "Ternegg Kálmán"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M_HUN_Ternegg_Kálmán
+		chief_of_air = army_aviation_doctrine
+		start_date = 1944.1.1
+	}
+	21010 = {
+		name = "Tomor László"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M_HUN_Tomor_Laszlo
+		chief_of_air = air_superiority_doctrine
+		start_date = 1944.1.1
+	}
+	21162 = {
+		name = "Vitéz Debrödy György"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M_HUN_Debrody_Gyorgy
+		chief_of_air = vertical_envelopment_doctrine
+		start_date = 1944.1.1
+	}
+	21073 = {
+		name = "Keksz Edgár"
+		ideology = fascistic
+		loyalty = 0.75
+		picture = M_HUN_Keksz_Edgar
+		minister_of_intelligence = naval_intelligence_specialist
+		chief_of_air = air_superiority_doctrine 
+		start_date = 1944.1.1
+	}
+###############
+#Chief of Navy#
+###############
+	21157 = {
+		name = "Hardy Kálmán"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M_HUN_Hardy_Kalman
+		chief_of_navy = decisive_naval_battle_doctrine
+		start_date = 1936.1.1
+	}
+
+##########################
+#Minister of Intelligence#
+##########################
+	21117 = {
+		name = "Andorka Rudolf Rezsõ"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M_HUN_Andorka_Rezso
+		minister_of_intelligence = technical_specialist
+		start_date = 1936.1.1
+	}
+  	21173 = {
+  		name = "Ujszászy István"
+		ideology = paternal_autocrat
+		loyalty = 1
+		picture = M_HUN_Ujszaszy_Istvan
+		minister_of_intelligence = efficient_sociopath
+		start_date = 1939.1.1
+  	}
+	21120 = {
+		name = "Kádár Gyula"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M_HUN_Kadar_Gyula
+		minister_of_intelligence = dismal_enigma
+		start_date = 1943.1.1
+	}
+	21172 = {
+		name = "Vitéz Gertenyesi Hollósy-Kuthy László"
+		ideology = paternal_autocrat
+		loyalty = 1
+		picture = M_HUN_Kuthy_Laszlo
+		minister_of_intelligence = efficient_sociopath
+		start_date = 1944.1.1
+	}
+	21119 = {
+		name = "Reszneki Zákó András"
+		ideology = paternal_autocrat
+		loyalty = 0.75
+		picture = M_HUN_Zako_Andras
+		minister_of_intelligence = research_specialist
+		start_date = 1944.1.1
+	}
+	21151 = {
+		name = "Csia Sándor"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M_HUN_Csia_Sandor
+		minister_of_intelligence = industrial_specialist
+		start_date = 1939.1.1
+	}
+	21115 = {
+		name = "Rajniss Ferenc"
+		ideology = national_socialist
+		loyalty = 0.75
+		picture = M_HUN_Rajniss_Ferenc
+		minister_of_intelligence = dismal_enigma
+		start_date = 1944.1.1
+	}
+	21152 = {
+		name = "Péter Gábor"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M_HUN_Peter_Gabor
+		minister_of_intelligence = political_specialist
+		start_date = 1936.1.1
+		
+	}
+	21150 = {
+		name = "Szücs Ernö"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M_HUN_Szucs_Erno
+		minister_of_intelligence = research_specialist
+		start_date = 1945.1.1
+		
+	}
+	21149 = {
+		name = "Piros László"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M_HUN_Piros_Laszlo
+		minister_of_intelligence = industrial_specialist
+		start_date = 1945.1.1	
+	}
+
+	21190 = {
+		name = "Pálffy György"
+		ideology = stalinist
+		loyalty = 0.75
+		picture = M_HUN_Palffy_Gyorgy
+		minister_of_intelligence = dismal_enigma
+		start_date = 1945.1.1	
+	}
+	# Generic dummy ministers
+	95383 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		chief_of_navy = mostly_harmless_naval
+		start_date = 1936.1.1
+	}
+	95384 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95385 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		chief_of_staff = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		start_date = 1936.1.1
+	}
+	95386 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95387 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95388 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95389 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95390 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95391 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
 	}
 }
-

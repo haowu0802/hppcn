@@ -1,29 +1,62 @@
-corps = {
-	name = "¸çÂ×±ÈÑÇ¾ü"
+theatre = {
+	name = "Alto Mando de Colombiana"
 	location = 9930
-	regiment = { type = hq_brigade name = "¸çÂ×±ÈÑÇ¾üÖ¸»Ó²¿" historical_model = 0 }
-	division= {
-		name = "µÚ1Ê¦"
+	regiment = { type = hq_brigade name = "Bogotá HQ" historical_model = 0 }
+	corps = {
+		name = "Ejercito de Colombia"
 		location = 9930
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "Ejercito de Colombia HQ" historical_model = 0 }
+		division= {
+			name = "1a División de Infantería"
+			location = 9930
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1. Brigada de Infantería" experience = 3 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "2. Brigada de Infantería" experience = 3 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "3. Brigada de Infantería" experience = 3 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "1. Brigada de Artillería" experience = 3 historical_model = 1 }
+
+		}
+		division= {
+			name = "1a División de Caballería 'Montería'"
+			location = 9930
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1. Brigada de Caballería" experience = 3 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "2. Brigada de Caballería" experience = 3 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "3. Brigada de Caballería" experience = 3 historical_model = 2 }			
+		}
 	}
-	division= {
-		name = "µÚ1'ÃÉÌØÀïÑÇ'Æï±øÂÃ"
-		location = 9930
-		is_reserve = yes
-		regiment = { type = cavalry_brigade historical_model = 0 }
-		regiment = { type = cavalry_brigade historical_model = 0 }
+#	navy = {
+#		name = "Armada de Colombia"
+#		base = 9790
+#		location = 9790
+#		ship = { type = destroyer name = "1a Flotilla de Torpedillos" experience = 0 historical_model = 0 }
+#	}
+}
+convoy_construction=
+{
+	country = COL
+	id=
+	{
+		id=15611
+		type=4713
 	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
 }
-navy = {
-	name = "¸çÂ×±ÈÑÇº£¾ü"
-	base = 9790
-	location = 9790
-	ship = { type = destroyer name = "µÚ1ÔËÊä½¢¶Ó" historical_model = 0 }
+convoy_construction=
+{
+	country = COL
+	id=
+	{
+		id=15612
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort	
 }
-
-
-

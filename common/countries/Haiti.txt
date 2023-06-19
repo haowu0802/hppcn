@@ -1,6 +1,8 @@
 color = { 145  188  196 }
 graphical_culture = Generic
 
+
+
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -17,100 +19,122 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
+	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
 	}
 }
 
 unit_names = {
 	infantry_brigade = {
-		"º£µØµÚ1²½±øÊ¦" "º£µØµÚ2²½±øÊ¦" "º£µØµÚ3²½±øÊ¦" "º£µØµÚ4²½±øÊ¦" "º£µØµÚ6²½±øÊ¦" 
+		"1ère Division d'Infanterie Haitien" "2ème Division d'Infanterie Haitien" "3ème Division d'Infanterie Haitien" "4ème Division d'Infanterie Haitien" "6ème Division d'Infanterie Haitien" 
 	}
 	cavalry_brigade = {
-		"µÚ1'ÂŞ²®Ë¹±Ó¶û'Æï±øÊ¦" "º£µØµÚ2Æï±øÊ¦" "º£µØµÚ3Æï±øÊ¦" "º£µØµÚ4Æï±øÊ¦" "º£µØµÚ5Æï±øÊ¦" 
+		"1ère Division de Cavalerie 'Robespierre'" "2ème Division de Cavalerie Haitien" "3ème Division de Cavalerie Haitien" "4ème Division de Cavalerie Haitien" "5ème Division de Cavalerie Haitien" 
 	}
 	motorized_brigade = {
-		"µÚ1Ä¦ÍĞ»¯Ê¦" "µÚ2Ä¦ÍĞ»¯Ê¦" "µÚ3Ä¦ÍĞ»¯Ê¦" "µÚ4Ä¦ÍĞ»¯Ê¦" "µÚ5Ä¦ÍĞ»¯Ê¦" 
+		"1ère Div. d'Infanterie avec Camion" "2ème Div. d'Infanterie avec Camion" "3ème Div. d'Infanterie avec Camion" "4ème Div. d'Infanterie avec Camion" "5ème Div. d'Infanterie avec Camion" 
 	}
 	mechanized_brigade = {
-		"º£µØµÚ1»úĞµ»¯Ê¦" "º£µØµÚ2»úĞµ»¯Ê¦" "º£µØµÚ3»úĞµ»¯Ê¦" "º£µØµÚ4»úĞµ»¯Ê¦" "º£µØµÚ5»úĞµ»¯Ê¦" 
+		"1ère Division Mécanisée Haitien" "2ème Division Mécanisée Haitien" "3ème Division Mécanisée Haitien" "4ème Division Mécanisée Haitien" "5ème Division Mécanisée Haitien" 
 	}
 	light_armor_brigade = {
-		"µÚ1'Èø·Ò'×°¼×Ê¦" "º£µØµÚ2×°¼×Ê¦" "º£µØµÚ3×°¼×Ê¦" "º£µØµÚ4×°¼×Ê¦" "º£µØµÚ5×°¼×Ê¦" "º£µØµÚ6×°¼×Ê¦" 
+		"1ère Division Cuirassée 'Marat'" "2ème Division Cuirassée Haitien" "3ème Division Cuirassée Haitien" "4ème Division Cuirassée Haitien" "5ème Division Cuirassée Haitien" "6ème Division Cuirassée Haitien" 
 	}
 	armor_brigade = {
-		"µÚ1'Èø·Ò'×°¼×Ê¦'" "º£µØµÚ2×°¼×Ê¦" "º£µØµÚ3×°¼×Ê¦" "º£µØµÚ4×°¼×Ê¦" "º£µØµÚ5×°¼×Ê¦" "º£µØµÚ6×°¼×Ê¦" 
+		"1ère Division Cuirassée 'Marat'" "2ème Division Cuirassée Haitien" "3ème Division Cuirassée Haitien" "4ème Division Cuirassée Haitien" "5ème Division Cuirassée Haitien" "6ème Division Cuirassée Haitien" 
 	}
 	paratrooper_brigade = {
-		"µÚ1¿Õ½µÊ¦" "µÚ2¿Õ½µÊ¦" "µÚ3¿Õ½µÊ¦" "µÚ4¿Õ½µÊ¦" "µÚ5¿Õ½µÊ¦" 
+		"1ère Division Parachutistes" "2ème Division Parachutistes" "3ème Division Parachutistes" "4ème Division Parachutistes" "5ème Division Parachutistes" 
 	}
 	marine_brigade = {
-		"µÚ1º£¾üÂ½Õ½Ê¦" "µÚ2º£¾üÂ½Õ½Ê¦" "µÚ3º£¾üÂ½Õ½Ê¦" "µÚ4º£¾üÂ½Õ½Ê¦" "µÚ5º£¾üÂ½Õ½Ê¦" 
+		"1ère Division d'Infanterie Maritimes" "2ème Division d'Infanterie Maritimes" "3ème Division d'Infanterie Maritimes" "4ème Division d'Infanterie Maritimes" "5ème Division d'Infanterie Maritimes" 
 	}
 	bergsjaeger_brigade = {
-		"µÚ27'À³Ë¹ÑÅ¸÷±ö'É½µØÊ¦" "µÚ30É½µØÊ¦" "µÚ31É½µØÊ¦" "µÚ64É½µØÊ¦" "µÚ66É½µØÊ¦" "µÚ65É½µØÊ¦" 
+		"27ème Div. de Montagné 'Les Jacobins'" "30ème Division de Montagné" "31ème Division de Montagné" "64ème Division de Montagné" "66ème Division de Montagné" "65ème Division de Montagné" 
 	}
 	garrison_brigade = {
-		"º£µØµÚ10ÎÀÊùÊ¦" "º£µØµÚ11ÎÀÊùÊ¦" "º£µØµÚ13ÎÀÊùÊ¦" "º£µØµÚ16ÎÀÊùÊ¦" "º£µØµÚ18ÎÀÊùÊ¦" "º£µØµÚ19ÎÀÊùÊ¦" "º£µØµÚ20ÎÀÊùÊ¦" 
+		"10ème Division d'Infanterie Haitien" "11ème Division d'Infanterie Haitien" "13ème Division d'Infanterie Haitien" "16ème Division d'Infanterie Haitien" "18ème Division d'Infanterie Haitien" "19ème Division d'Infanterie Haitien" "20ème Division d'Infanterie Haitien" 
 	}
 	hq_brigade = {
-		"º£µØµÚ1Ö¸»Ó²¿" "º£µØµÚ2Ö¸»Ó²¿" "º£µØµÚ3Ö¸»Ó²¿" 
+		"1ère Armée Haitien" "2ème Armée Haitien" "3ème Armée Haitien" 
 	}
 	militia_brigade = {
-		"º£µØµÚ1¹úÃñ¾¯ÎÀÊ¦" "º£µØµÚ2¹úÃñ¾¯ÎÀÊ¦" "º£µØµÚ3¹úÃñ¾¯ÎÀÊ¦" "º£µØµÚ4¹úÃñ¾¯ÎÀÊ¦" "º£µØµÚ5¹úÃñ¾¯ÎÀÊ¦" "º£µØµÚ6¹úÃñ¾¯ÎÀÊ¦" "º£µØµÚ7¹úÃñ¾¯ÎÀÊ¦" 
+		"1ère Division de Citoyens du Haiti" "2ème Division de Citoyens du Haiti" "3ème Division de Citoyens du Haiti" "4ème Division de Citoyens du Haiti" "5ème Division de Citoyens du Haiti" "6ème Division de Citoyens du Haiti" "7ème Division de Citoyens du Haiti" 
 	}
 	multi_role = {
-		"µÚ1Õ½¶·»úÁª¶Ó" "µÚ2Õ½¶·»úÁª¶Ó" "µÚ3Õ½¶·»úÁª¶Ó" "µÚ4Õ½¶·»úÁª¶Ó" "µÚ5Õ½¶·»úÁª¶Ó" 
+		"Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" 
 	}
 	interceptor = {
-		"µÚ1½Ø»÷»úÁª¶Ó" "µÚ2½Ø»÷»úÁª¶Ó" "µÚ3½Ø»÷»úÁª¶Ó" "µÚ4½Ø»÷»úÁª¶Ó" "µÚ5½Ø»÷»úÁª¶Ó" 
+		"Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" 
+	}
+	jet_mr = {
+		"Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" 
+	}
+	jet_int = {
+		"Groupe de Chasse 1" "Groupe de Chasse 2" "Groupe de Chasse 3" "Groupe de Chasse 4" "Groupe de Chasse 5" 
 	}
 	strategic_bomber = {
-		"µÚ1Õ½ÂÔºäÕ¨»úÁª¶Ó" "µÚ2Õ½ÂÔºäÕ¨»ú" "µÚ3Õ½ÂÔºäÕ¨»ú" "µÚ6Õ½ÂÔºäÕ¨»ú" 
+		"Groupe de Bombardèment Stratégique 1" "Groupe de Bombardèment Stratégique 2" "Groupe de Bombardèment Stratégique 3" "Groupe de Bombardèment Stratégique 6" 
 	}
 	tactical_bomber = {
-		"µÚ1Õ½ÊõºäÕ¨»úÁª¶Ó" "µÚ2Õ½ÊõºäÕ¨»úÁª¶Ó" "µÚ3Õ½ÊõºäÕ¨»úÁª¶Ó" "µÚ6Õ½ÊõºäÕ¨»úÁª¶Ó" "µÚ10Õ½ÊõºäÕ¨»úÁª¶Ó" 
+		"Groupe de Bombardèment Tactique 1" "Groupe de Bombardèment Tactique 2" "Groupe de Bombardèment Tactique 3" "Groupe de Bombardèment Tactique 6" "Groupe de Bombardèment Tactique 10" 
+	}
+	jet_bomber = {
+		"Groupe de Bombardèment Tactique 1" "Groupe de Bombardèment Tactique 2" "Groupe de Bombardèment Tactique 3" "Groupe de Bombardèment Tactique 6" "Groupe de Bombardèment Tactique 10" 
 	}
 	naval_bomber = {
-		"µÚ1º£¾üºäÕ¨»úÁª¶Ó" "µÚ2º£¾üºäÕ¨»úÁª¶Ó" "µÚ3º£¾üºäÕ¨»úÁª¶Ó" "µÚ4º£¾üºäÕ¨»úÁª¶Ó" "µÚ5º£¾üºäÕ¨»úÁª¶Ó" 
+		"Groupe de Bombardèment Naval 1" "Groupe de Bombardèment Naval 2" "Groupe de Bombardèment Naval 3" "Groupe de Bombardèment Naval 4" "Groupe de Bombardèment Naval 5" 
 	}
 	cas = {
-		"µÚ18¸©³åºäÕ¨»úÁª¶Ó" "µÚ19¸©³åºäÕ¨»úÁª¶Ó" "µÚ21¸©³åºäÕ¨»úÁª¶Ó" "µÚ22¸©³åºäÕ¨»úÁª¶Ó" "µÚ23¸©³åºäÕ¨»úÁª¶Ó" 
+		"Groupe de Bombardèment d'Assaut 18" "Groupe de Bombardèment d'Assaut 19" "Groupe de Bombardèment d'Assaut 21" "Groupe de Bombardèment d'Assaut 22" "Groupe de Bombardèment d'Assaut 23" 
 	}
 	transport_plane = {
-		"µÚ1ÔËÊä»úÁª¶Ó" "µÚ2ÔËÊä»úÁª¶Ó" "µÚ3ÔËÊä»úÁª¶Ó" "µÚ4ÔËÊä»úÁª¶Ó" "µÚ5ÔËÊä»úÁª¶Ó" 
+		"1ère Groupe de Transport Aérien" "2ème Groupe de Transport Aérien" "3ème Groupe de Transport Aérien" "4ème Groupe de Transport Aérien" "5ème Groupe de Transport Aérien" 
 	}
 	battleship = {
-		"º£µØºÅ" "Ì«×Ó¸ÛºÅ" 
+		"Citoyens de Haiti" "Port au Prince" 
 	}
 	light_cruiser = {
-		"ÈÈÀ×Ã×ºÅ" "ÈøÀû¸ÛºÅ" "º£µØ½ÇºÅ" "ºÍÆ½¸ÛºÅ" "ÈÃÀ­±´¶ûºÅ" 
+		"Jérémie" "Port Sali" "Cap Haitien" "Port de Paix" "Jean Rabel" 
 	}
 	heavy_cruiser = {
-		"ÈÈÀ×Ã×ºÅ" "ÈøÀû¸ÛºÅ" "º£µØ½ÇºÅ" "ºÍÆ½¸ÛºÅ" "ÈÃÀ­±´¶ûºÅ" 
+		"Jérémie" "Port Sali" "Cap Haitien" "Port de Paix" "Jean Rabel" 
 	}
 	battlecruiser = {
-		"º£µØºÅ" "Ì«×Ó¸ÛºÅ" 
+		"Citoyens de Haiti" "Port au Prince" 
 	}
 	destroyer = {
-		"'ÈøÄ·µÂÇıÖğ½¢Ö§¶Ó'" "'¿¨ÀûÆÕË÷'ÇıÖğ½¢Ö§¶Ó" "'ÈğÒòÃÉ½Ü'ÇıÖğ½¢Ö§¶Ó" "'°¢Î¬'ÇıÖğ½¢Ö§¶Ó" "'Ô¼º²²©Ê¿'ÇıÖğ½¢Ö§¶Ó" 
+		"Baron Samedi et Groupe" "Calypso et Groupe" "Reine Mojo et Groupe" "Aywe et Groupe" "Dr.John et Groupe" 
 	}
 	carrier = {
-		"º£µØ¹²ºÍ¹úºÅ" "ÄÃÆÆÂØºÅ" 
+		"Republique de Haiti" "Napoleon" 
 	}
 	submarine = {
-		"'°Í¿¨'Ç±Í§·Ö¶Ó" "'°ÂËï'Ç±Í§·Ö¶Ó" "'´ïÄ·°ÍÀ­'Ç±Í§·Ö¶Ó" "'°Â¹Å²®´ï¸çÀ­Ë¹'Ç±Í§·Ö¶Ó" "'¶÷ÀïÈÈ'Ç±Í§·Ö¶Ó" 
+		"Baka et Groupe" "Osun et Groupe" "Dambala et Groupe" "Ogu Bodagris et Groupe" "Erinle et Groupe" 
 	}
 	transport_ship = {
-		"µÚ1ÔËÊä½¢·Ö¶Ó" "µÚ2ÔËÊä½¢·Ö¶Ó" "µÚ3ÔËÊä½¢·Ö¶Ó" "µÚ4ÔËÊä½¢·Ö¶Ó" "µÚ5ÔËÊä½¢·Ö¶Ó" 
+		"1ère Flottille de Transport" "2ème Flottille de Transport" "3ème Flottille de Transport" "4ème Flottille de Transport" "5ème Flottille de Transport" 
 	}
 
 }
 
 ministers = {
 	78001 = {
-		name = "ÄÉĞÅ¡¤Ë¹Í¼¶ûÌØ"
+		name = "Stenio Vincent"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M78001
@@ -120,17 +144,16 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	78003 = {
-		name = "°¬²®ÌØ¡¤²¼À¼ÇĞÌØ"
+		name = "Albert Blanchet"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M78003
 		foreign_minister = apologetic_clerk
 		head_of_government = happy_amateur
-		foreign_minister = apologetic_clerk
 		start_date = 1936.1.1
 	}
 	78004 = {
-		name = "Ã·À¼Äá¡¤ÀÕ¿Â"
+		name = "Emilie Lescot"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M78004
@@ -144,7 +167,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	78005 = {
-		name = "Â·Ò×Ë¹¡¤±´ÀÕ¼ÓµÂ"
+		name = "Luis Dabtes Bellegarde"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M78005
@@ -154,7 +177,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	78006 = {
-		name = "Â·Ò× °¢¼ÓµÂ"
+		name = "Sebastien de Arrondé"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M78006
@@ -163,15 +186,15 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	78009 = {
-		name = "°¢¶û¸¥À×µÂ¡¤ÄÉÄÂ¶ûË¹"
+		name = "Alfred Nemours"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M78009
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1936.1.1
 	}
 	78010 = {
-		name = "°®µÂ»ª¡¤ÂŞÒÁ"
+		name = "G.Edouard Roy"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M78010
@@ -179,7 +202,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	78033 = {
-		name = "·ÆÄá°ÂÀÕ¡¤Ê¥-Î÷¶û"
+		name = "Louis Dejoie"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M78033
@@ -189,7 +212,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	78034 = {
-		name = "µÏÂíÉª¡¤°£Ë¹µÙÃ·"
+		name = "Dumarsais Estimé"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M78034
@@ -199,18 +222,17 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	78035 = {
-		name = "¸¥À¼¿Ë¡¤À­°Â"
+		name = "Franck Lavaud"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M78035
 		head_of_state = resigned_generalissimo
 		chief_of_staff = school_of_psychology
 		chief_of_army = elastic_defence_doctrine
-		chief_of_army = elastic_defence_doctrine
 		start_date = 1946.1.1
 	}
 	78036 = {
-		name = "°Â¶ûÁ¼ ÖìË¹ÌØ"
+		name = "F. d'Orleans Juste Constant"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M78021
@@ -221,7 +243,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	78037 = {
-		name = "µÏÄ¦Î÷ÄáË¹ ¿¨Àû¿ËË¹ÌØ"
+		name = "Demosthenes Calixte"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M78037
@@ -230,7 +252,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	78043 = {
-		name = "±£ÂŞ¡¤Âí¸ñÂåÒÁ¶û"
+		name = "Paul Magloire"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M78043
@@ -241,7 +263,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	78045 = {
-		name = "°²ÍĞÍò¡¤¿­²¼ÂŞ"
+		name = "Daniel Fignole"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M78045
@@ -250,7 +272,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	78046 = {
-		name = "ÇÇÖÎ ÖìË¹ÂŞ"
+		name = "Georges Léger"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M78046
@@ -259,7 +281,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	78047 = {
-		name = "ÂíÈû¶û¸¥²¼Â×"
+		name = "Marcel Fombrun"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M78013
@@ -267,7 +289,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	78049 = {
-		name = "dr.ÇÇÖÎÀï¹È"
+		name = "dr. Georges Rigaud"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M78049
@@ -276,7 +298,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	78051 = {
-		name = "ÑÅ¿Ë¡¤ÍßµÃ"
+		name = "Jacques Wadestrand"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M78051
@@ -284,7 +306,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	78052 = {
-		name = "°²µÂÁÒ¡¤¶àÃÉ"
+		name = "Andre Dumont"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M78052
@@ -295,16 +317,15 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	78053 = {
-		name = "ÈûÈø¶û ²¼Â³ÍĞË¹"
+		name = "Timoléon Cesar Brutus"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M78053
 		foreign_minister = ideological_crusader
-		foreign_minister = ideological_crusader
 		start_date = 1946.1.1
 	}
 	78055 = {
-		name = "Ã×¶û¿Æ¡¤Ç®µÂÀÕ"
+		name = "Mirko Chandler"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M78023
@@ -312,7 +333,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	78057 = {
-		name = "¿ËÀ³ÃÉÌØ ×ôÃ·¶û"
+		name = "Clement Jumelle"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M78057
@@ -321,7 +342,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	78059 = {
-		name = "ÂÀ¿Ë¡¤¶àÃ×Äá¿Ë"
+		name = "Luc Dominique"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M78014
@@ -329,7 +350,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	78060 = {
-		name = "¼ò¡¤¸¥À¼¿ËË¹¡¤¶Å»ªÀû"
+		name = "Jean Francois Duvalier"
 		ideology = social_conservative
 		loyalty = 0.50
 		picture = M78015
@@ -338,7 +359,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	78062 = {
-		name = "Âí¿ËË¹¡¤²éÃÉË¹"
+		name = "Max Charlmes"
 		ideology = social_liberal
 		loyalty = 0.50
 		picture = M78062
@@ -348,7 +369,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	78063 = {
-		name = "¸£ÀïµÂÈğ¿Ë ¶àÀïÌØ"
+		name = "Frederic Doret"
 		ideology = social_liberal
 		loyalty = 0.50
 		picture = M78063
@@ -356,7 +377,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	78064 = {
-		name = "°¢¶ûÃ·µÂ °ÂÀïÌØ"
+		name = "Armand Ouellet"
 		ideology = social_liberal
 		loyalty = 0.50
 		picture = M78064
@@ -364,7 +385,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	78067 = {
-		name = "Ã×Ğª¶û ¿¨ÎÄ¶Ù À­ÄªµÂ"
+		name = "Michel Corvington Raymond"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M78024
@@ -372,7 +393,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	78069 = {
-		name = "°¢¹ÅË¹ÌØ ²©ÄÆÃ×"
+		name = "Auguste Bonamy"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M78069
@@ -380,7 +401,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	78071 = {
-		name = "¹ÅË¹Àï Î¬¶àÀï"
+		name = "Gusley Vildrouin"
 		ideology = social_conservative
 		loyalty = 0.50
 		picture = M78071
@@ -389,7 +410,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	78075 = {
-		name = "°²¶«Äá ÀïÎ¬ÌØ"
+		name = "Antoine Levelt"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M78075
@@ -401,7 +422,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	78076 = {
-		name = "±´¶ûÃ× Âí¿ËË¹-Æ¤¶û"
+		name = "Belmeau Max-Pierre"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M78076
@@ -411,7 +432,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	78077 = {
-		name = "Î¬¶àÀûÑÇ Íş¶÷"
+		name = "Victor Vivian"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M78025
@@ -419,7 +440,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	78079 = {
-		name = "¶à·Æ Â·ÒÁË¹ ²®¶ûÅµ"
+		name = "Joseph Louis Borno"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M78079
@@ -427,7 +448,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	78086 = {
-		name = "ÂŞ¿Ë ´÷ÀÕÎ÷Ë¹"
+		name = "Rock Desroses"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M78026
@@ -435,7 +456,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	78096 = {
-		name = "°²ÌØÀû ±´ÍĞ"
+		name = "Antioche Benot"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M78027
@@ -443,7 +464,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	78103 = {
-		name = "¶÷Ë¹ÌØ Î÷Î¬Àï"
+		name = "Ernst Severe"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M78028
@@ -451,7 +472,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	78106 = {
-		name = "¶÷À´ÌØ ÀïÍşÌØ"
+		name = "André Sainté Frederic"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M78106
@@ -460,7 +481,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	78107 = {
-		name = "ÂŞÂíÍş °¢¼ÓµÂ"
+		name = "Raymond Gassner"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M78029
@@ -468,7 +489,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	78110 = {
-		name = "ÅÁË¹¿¨ B.G. ¹ÅÀïÃ·"
+		name = "Pascalé B.G. Guillaume"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M78020
@@ -476,7 +497,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	78113 = {
-		name = "²é¶ûË¹ H. ·ğ±ö"
+		name = "Charles H. Forbin"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M78030
@@ -484,11 +505,141 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	78115 = {
-		name = "Àï°Â À­ÀÕ°Â"
+		name = "Leon Laleau"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M78115
 		foreign_minister = ideological_crusader
 		start_date = 1938.1.1
+	}
+	# Generic dummy ministers
+	95365 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95366 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95367 = {
+		name = "Nameless Clerk"
+		ideology = paternal_autocrat
+		loyalty = 1.0
+		picture = MPaternalAutocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95368 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95369 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		foreign_minister = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		start_date = 1936.1.1
+	}
+	95370 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95371 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95372 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
 	}
 }

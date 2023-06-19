@@ -1,266 +1,240 @@
-corps = {
-	name = "µÚ1¾üÍÅ"
+armygroup = {
+	name = "Guangdong Sheng Jun" #An invented unit for game purposes.
 	location = 5834
-	regiment = { type = hq_brigade name = "µÚ1¾üÍÅË¾Áî²¿" historical_model = 0 }
-	division= {
-		name = "½Ìµ¼²½±øÊ¦"
+	regiment = { type = hq_brigade name = "Guangdong Sheng Silìngbù" historical_model = 1 }
+army = {
+	name = "Dì 1 Jítuánjun"
+	location = 5834 #For now I'll put all units in Guangzhou
+	regiment = { type = hq_brigade name = "Dì 1 Jítuánjun Silìngbù" historical_model = 1 } #Chen Jitang's HQs had fully modern radio equipment.
+	corps = {
+		name = "Dì 1 Jun"
 		location = 5834
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "Dì 1 Jun Silìngbù" historical_model = 1 }
+		division= {
+			name = "Dì 1 Shi"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 1 Bùbing Tuán" historical_model = 2 experience = 10.000 } #Well-equipped. I'd say lvl 3 but I'll save that for elites
+			regiment = { type = infantry_brigade name = "Dì 2 Bùbing Tuán" historical_model = 2 experience = 10.000 }
+			regiment = { type = infantry_brigade name = "Dì 3 Bùbing Tuán" historical_model = 2 experience = 10.000 }
+			regiment = { type = infantry_brigade name = "Dì 4 Bùbing Tuán" historical_model = 2 experience = 10.000 }
+			regiment = { type = horse_towed_support_brigade name = "Dì 1 Huopào Tuán" historical_model = 2 experience = 10.000 } #All units had artillery, not necessarily modern.
+		}
+		division= {
+			name = "Dì 2 Shi"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 5 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = infantry_brigade name = "Dì 6 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = infantry_brigade name = "Dì 7 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = infantry_brigade name = "Dì 8 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = horse_towed_support_brigade name = "Dì 2 Huopào Tuán" historical_model = 1 experience = 9.000 } #Older artillery. 2nd, 5th and 8th were new-ish.
+		}
+		division= {
+			name = "Dì 3 Shi" #If CGX gets too overpowered, 3rd, 6th and 9th divisions can be removed.
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 9 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 10 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 11 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 12 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = horse_towed_support_brigade name = "Dì 3 Huopào Tuán" historical_model = 0 experience = 8.000 } #Older artillery. 3rd, 6th and 9th were new.
+		}
 	}
-	division= {
-		name = "¶ÀÁ¢µÚ1²½±øÊ¦"
+	corps = {
+		name = "Dì 2 Jun"
 		location = 5834
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-	}
-	division= {
-		name = "¾¯±¸ÂÃ"
+		regiment = { type = hq_brigade name = "Dì 2 Jun Silìngbù" historical_model = 1 }
+		division= {
+			name = "Dì 4 Shi"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 13 Bùbing Tuán" historical_model = 2 experience = 10.000 }
+			regiment = { type = infantry_brigade name = "Dì 14 Bùbing Tuán" historical_model = 2 experience = 10.000 }
+			regiment = { type = infantry_brigade name = "Dì 15 Bùbing Tuán" historical_model = 2 experience = 10.000 }
+			regiment = { type = infantry_brigade name = "Dì 16 Bùbing Tuán" historical_model = 2 experience = 10.000 }
+			regiment = { type = horse_towed_support_brigade name = "Dì 4 Huopào Tuán" historical_model = 2 experience = 10.000 }
+		}
+		division= {
+			name = "Dì 5 Shi"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 17 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = infantry_brigade name = "Dì 18 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = infantry_brigade name = "Dì 19 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = infantry_brigade name = "Dì 20 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = horse_towed_support_brigade name = "Dì 5 Huopào Tuán" historical_model = 1 experience = 9.000 }
+		}
+		division= {
+			name = "Dì 6 Shi"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 21 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 22 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 23 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 24 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = horse_towed_support_brigade name = "Dì 6 Huopào Tuán" historical_model = 0 experience = 8.000 }
+		}
+	}	
+	corps = {
+		name = "Dì 3 Jun"
 		location = 5834
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "Dì 3 Jun Silìngbù" historical_model = 1 }
+		division= {
+			name = "Dì 7 Shi"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 25 Bùbing Tuán" historical_model = 2 experience = 10.000 }
+			regiment = { type = infantry_brigade name = "Dì 26 Bùbing Tuán" historical_model = 2 experience = 10.000 }
+			regiment = { type = infantry_brigade name = "Dì 27 Bùbing Tuán" historical_model = 2 experience = 10.000 }
+			regiment = { type = infantry_brigade name = "Dì 28 Bùbing Tuán" historical_model = 2 experience = 10.000 }
+			regiment = { type = horse_towed_support_brigade name = "Dì 7 Huopào Tuán" historical_model = 2 experience = 10.000 }
+		}
+		division= {
+			name = "Dì 8 Shi"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 29 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = infantry_brigade name = "Dì 30 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = infantry_brigade name = "Dì 31 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = infantry_brigade name = "Dì 32 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = horse_towed_support_brigade name = "Dì 8 Huopào Tuán" historical_model = 1 experience = 9.000 }
+		}
+		division= {
+			name = "Dì 9 Shi"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 33 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 34 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 35 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 36 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = horse_towed_support_brigade name = "Dì 9 Huopào Tuán" historical_model = 0 experience = 8.000 }
+		}
 	}
-}
-corps = {
-	name = "µÚ1¾ü"
-	location = 5789
-	regiment = { type = hq_brigade name = "µÚ1¾üË¾Áî²¿" historical_model = 0 }
-	division= {
-		name = "µÚ1²½±øÊ¦"
-		location = 5763
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division= {
-		name = "µÚ2²½±øÊ¦"
-		location = 5773
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division= {
-		name = "µÚ3²½±øÊ¦"
-		location = 5802
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-	}
-}
-corps = {
-	name = "µÚ2¾ü"
-	location = 5807
-	regiment = { type = hq_brigade name = "µÚ2¾üË¾Áî²¿" historical_model = 0 }
-	division= {
-		name = "µÚ4²½±øÊ¦"
-		location = 5808
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
 	}
 	division= {
-		name = "µÚ5²½±øÊ¦"
-		location = 5793
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division= {
-		name = "µÚ6²½±øÊ¦"
-		location = 5777
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-	}
-}
-corps = {
-	name = "µÚ3¾ü"
-	location = 5834
-	regiment = { type = hq_brigade name = "µÚ3¾üË¾Áî²¿" historical_model = 0 }
-	division= {
-		name = "µÚ7²½±øÊ¦"
+		name = "Dúlì Yídòng Lu"
 		location = 5834
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
+		is_reserve = yes
+		regiment = { type = motorized_brigade name = "Yídòng Tuán" historical_model = 2 experience = 11.000 } #special unit
+		regiment = { type = light_armor_brigade name = "Tankè Tuán" historical_model = 1 experience = 8.000 } #new equipment, not very familiar with it
+		regiment = { type = truck_towed_support_brigade name = "Zhuangjiache Tuán" historical_model = 1 experience = 8.000 } #new equipment, not very familiar with it
+		}
 	division= {
-		name = "µÚ8²½±øÊ¦"
-		location = 5903
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
+			name = "Dúlì Dì 1 Shi"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 37 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = infantry_brigade name = "Dì 38 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = infantry_brigade name = "Dì 39 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = infantry_brigade name = "Dì 40 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = horse_towed_support_brigade name = "Dì 10 Huopào Tuán" historical_model = 1 experience = 9.000 }
+		}
 	division= {
-		name = "µÚ9²½±øÊ¦"
-		location = 5902
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-	}
-}
-division = {
-	name = "µÚ4¾üÍÅ"
-	location = 5787
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-corps = {
-	name = "µÚ7¾ü"
-	location = 5805
-	regiment = { type = hq_brigade name = "µÚ7¾üË¾Áî²¿" historical_model = 0 }
+			name = "Dúlì Dì 2 Shi"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 41 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = infantry_brigade name = "Dì 42 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = infantry_brigade name = "Dì 43 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = infantry_brigade name = "Dì 44 Bùbing Tuán" historical_model = 2 experience = 9.000 }
+			regiment = { type = horse_towed_support_brigade name = "Dì 11 Huopào Tuán" historical_model = 1 experience = 9.000 }
+		}
 	division= {
-		name = "µÚ19²½±øÊ¦"
-		location = 5774
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
+			name = "Xùnliàn Shi"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 1 Xùnliàn Tuán" historical_model = 0 experience = 5.000 }
+			regiment = { type = infantry_brigade name = "Dì 2 Xùnliàn Tuán" historical_model = 0 experience = 5.000 }
+			regiment = { type = infantry_brigade name = "Dì 3 Xùnliàn Tuán" historical_model = 0 experience = 5.000 }
+			regiment = { type = infantry_brigade name = "Dì 4 Xùnliàn Tuán" historical_model = 0 experience = 5.000 }
+			regiment = { type = horse_towed_support_brigade name = "Dì 5 Xùnliàn Tuán" historical_model = 0 experience = 5.000 }
+		}
 	division= {
-		name = "µÚ21²½±øÊ¦"
-		location = 5764
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
+			name = "Dúlì Wèibing Lu"
+			location = 5834
+			is_reserve = no #Elite unit, makes sense.
+			regiment = { type = infantry_brigade name = "Dì 1 Wèibing Tuán" historical_model = 3 experience = 12.000 }
+			regiment = { type = infantry_brigade name = "Dì 2 Wèibing Tuán" historical_model = 3 experience = 12.000 }
+		}
 	division= {
-		name = "µÚ22²½±øÊ¦"
-		location = 5775
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-	}
+			name = "Dúlì Dì 1 Lu"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 45 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 46 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+		}
 	division= {
-		name = "µÚ24²½±øÊ¦"
-		location = 5776
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-	}
-}
-corps = {
-	name = "µÚ15¾ü"
-	location = 5881
-	regiment = { type = hq_brigade name = "µÚ15¾üË¾Áî²¿" historical_model = 0 }
+			name = "Dúlì Dì 2 Lu"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 47 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 48 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+		}
 	division= {
-		name = "µÚ42²½±øÊ¦"
-		location = 5918
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
+			name = "Dúlì Dì 3 Lu"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 49 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 50 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+		}
 	division= {
-		name = "µÚ43²½±øÊ¦"
-		location = 5899
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
+			name = "Dúlì Dì 4 Lu"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 51 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 52 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+		}
 	division= {
-		name = "µÚ44²½±øÊ¦"
-		location = 5862
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-	}
+			name = "Dúlì Dì 5 Lu"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 53 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 54 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+		}
 	division= {
-		name = "µÚ45²½±øÊ¦"
-		location = 5861
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-	}
-}
-division = {
-	name = "¹ã¶«¾¯±¸"
-	location = 5834
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-corps = {
-	name = "¹ãÎ÷¾¯±¸"
-	location = 7553
-	regiment = { type = hq_brigade name = "¹ãÎ÷¾¯±¸Ë¾Áî²¿" historical_model = 0 }
+			name = "Dúlì Dì 6 Lu"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 55 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 56 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+		}
 	division= {
-		name = "¹ã¶«±£°²¶Ó"
-		location = 7553
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
+			name = "Dúlì Dì 7 Lu"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 57 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 58 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+		}
 	division= {
-		name = "¹ã¶«²½±ø¶Ó"
-		location = 7564
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
+			name = "Dúlì Dì 8 Lu"
+			location = 5834
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Dì 59 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+			regiment = { type = infantry_brigade name = "Dì 60 Bùbing Tuán" historical_model = 1 experience = 8.000 }
+		}
+	navy = {
+		name = "Guangdong Kongjun Zhàndòuqún"
+		base = 5834
+		location = 5834
+		ship = { type = destroyer name = "Zhàndòuqún" historical_model = 0 experience = 8.000 } #Well-trained small navy
+	}
+	navy = {
+		name = "Guangdong Kongjun Yùnshuqún"
+		base = 5834
+		location = 5834
+		ship = { type = transport_ship name = "Yùnshuqún" historical_model = 0 experience = 5.000 } #Many converted merchants under army officers
+	}
+	air = {
+		name = "Guangdong Haijun Zhàndòujiqún"
+		base = 5834
+		location = 5834
+		wing = { type = interceptor name = "Zhàndòujiqún" historical_model = 1 experience = 9.000 } #No actual air-to-air combat experience
+	}
+	air = {
+		name = "Guangdong Haijun Hongzhàjiqún"
+		base = 5834
+		location = 5834
+		wing = { type = cas name = "Hongzhàjiqún" historical_model = 0 experience = 11.000 } #Experienced/veteran pilots
 	}
 }
-division = {
-	name = "º£ÄÏ¾¯±¸"
-	location = 5965
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "µÚ9¾ü"
-	location = 7586
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "µÚ28¾ü"
-	location = 7573
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "Ïæ¶«¾¯±¸"
-	location = 7553
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "Äþ²¨¾¯±¸"
-	location = 5833
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "µÚ20¾ü"
-	location = 5763
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "µÚ2¾ü"
-	location = 7563
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "µÚ16¾ü"
-	location = 5792
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "µÚ36¾ü"
-	location = 5823
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "µÚ14¾üÍÅ"
-	location = 7586
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "µÚ18¾ü"
-	location = 7574
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "µÚ26¾ü"
-	location = 7553
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-navy = {
-	name = "¹ã¶«º£¾ü"
-	base = 5834
-	location = 5834
-	ship = { type = transport_ship name = "µÚ1ÔËÊä´ó¶Ó" historical_model = 0 }
-}
-air = {
-	name = "¹ãÎ÷¿Õ¾ü"
-	base = 5834
-	location = 5834
-	wing = { type = interceptor name = "¹ãÎ÷º½¿Õ¶Ó" historical_model = 0 }
-}
-
-
-

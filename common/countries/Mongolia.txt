@@ -1,6 +1,8 @@
 color = { 146  154  198 }
 graphical_culture = Japanese
 
+
+
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -17,103 +19,125 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
+	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
 	}
 }
 
 unit_names = {
 	infantry_brigade = {
-		"蒙古第1步兵师" "蒙古第2步兵师" "蒙古第3步兵师" "蒙古第4步兵师" "蒙古第5步兵师" "蒙古第6步兵师" "蒙古第8步兵师" "蒙古第10步兵师" "蒙古第11步兵师" "蒙古第12步兵师" "蒙古第13步兵师" 
-		"蒙古第14步兵师" "蒙古第16步兵师" "蒙古第17步兵师" "蒙古第19步兵师" "蒙古第21步兵师" "蒙古第22步兵师" "蒙古第23步兵师" "蒙古第24步兵师" "蒙古第25步兵师" 
+		"1. Mongol Strelkovaya Div." "2. Mongol Strelkovaya Div." "3. Mongol Strelkovaya Div." "4. Mongol Strelkovaya Div." "5. Mongol Strelkovaya Div." "6. Mongol Strelkovaya Div." "8. Mongol Strelkovaya Div." "10. Mongol Strelkovaya Div." "11. Mongol Strelkovaya Div." "12. Mongol Strelkovaya Div." "13. Mongol Strelkovaya Div." 
+		"14. Mongol Strelkovaya Div." "16. Mongol Strelkovaya Div." "17. Mongol Strelkovaya Div." "19. Mongol Strelkovaya Div." "21. Mongol Strelkovaya Div." "22. Mongol Strelkovaya Div." "23. Mongol Strelkovaya Div." "24. Mongol Strelkovaya Div." "25. Mongol Strelkovaya Div." 
 	}
 	cavalry_brigade = {
-		"蒙古第1骑兵师" "蒙古第2骑兵师" "蒙古第3骑兵师" "蒙古第4骑兵师" "蒙古第5骑兵师" "蒙古第6骑兵师" "蒙古第7骑兵师" "蒙古第8骑兵师" "蒙古第9骑兵师" "蒙古第10骑兵师" 
+		"1. Nayramdakh Kavaleriyskaya Div." "2. Nayramdakh Kavaleriyskaya Div." "3. Nayramdakh Kavaleriyskaya Div." "4. Nayramdakh Kavaleriyskaya Div." "5. Nayramdakh Kavaleriyskaya Div." "6. Nayramdakh Kavaleriyskaya Div." "7. Nayramdakh Kavaleriyskaya Div." "8. Nayramdakh Kavaleriyskaya Div." "9. Nayramdakh Kavaleriyskaya Div." "10. Nayramdakh Kavaleriyskaya Div." 
 	}
 	motorized_brigade = {
-		"蒙古第1摩步师" "蒙古第2摩步师" "蒙古第3摩步师" "蒙古第4摩步师" "蒙古第5摩步师" "蒙古第6摩步师" "蒙古第8摩步师" "蒙古第10摩步师" "蒙古第11摩步师" "蒙古第12摩步师" 
+		"1. Mongol Motorizovannaya Div." "2. Mongol Motorizovannaya Div." "3. Mongol Motorizovannaya Div." "4. Mongol Motorizovannaya Div." "5. Mongol Motorizovannaya Div." "6. Mongol Motorizovannaya Div." "8. Mongol Motorizovannaya Div." "10. Mongol Motorizovannaya Div." "11. Mongol Motorizovannaya Div." "12. Mongol Motorizovannaya Div." 
 	}
 	mechanized_brigade = {
-		"蒙古第1机步师" "蒙古第2机步师" "蒙古第3机步师" "蒙古第4机步师" "蒙古第5机步师" "蒙古第6机步师" "蒙古第8机步师" "蒙古第10机步师" "蒙古第11机步师" "蒙古第12机步师" "蒙古第13机步师" 
+		"1. Mongol Motostrelkovaya Div." "2. Mongol Motostrelkovaya Div." "3. Mongol Motostrelkovaya Div." "4. Mongol Motostrelkovaya Div." "5. Mongol Motostrelkovaya Div." "6. Mongol Motostrelkovaya Div." "8. Mongol Motostrelkovaya Div." "10. Mongol Motostrelkovaya Div." "11. Mongol Motostrelkovaya Div." "12. Mongol Motostrelkovaya Div." "13. Mongol Motostrelkovaya Div." 
 			}
 	light_armor_brigade = {
-		"蒙古第1坦克师" "蒙古第2坦克师" "蒙古第3坦克师" "蒙古第4坦克师" "蒙古第5坦克师" "蒙古第6坦克师" "蒙古第7坦克师" "蒙古第8坦克师" "蒙古第9坦克师" "蒙古第10坦克师" 
+		"1. Mongol Tankovaya Div." "2. Mongol Tankovaya Div." "3. Mongol Tankovaya Div." "4. Mongol Tankovaya Div." "5. Mongol Tankovaya Div." "6. Mongol Tankovaya Div." "7. Mongol Tankovaya Div." "8. Mongol Tankovaya Div." "9. Mongol Tankovaya Div." "10. Mongol Tankovaya Div." 
 	}
 	armor_brigade = {
-		"蒙古第1坦克师" "蒙古第2坦克师" "蒙古第3坦克师" "蒙古第4坦克师" "蒙古第5坦克师" "蒙古第6坦克师" "蒙古第7坦克师" "蒙古第8坦克师" "蒙古第9坦克师" "蒙古第10坦克师" 
+		"1. Mongol Tankovaya Div." "2. Mongol Tankovaya Div." "3. Mongol Tankovaya Div." "4. Mongol Tankovaya Div." "5. Mongol Tankovaya Div." "6. Mongol Tankovaya Div." "7. Mongol Tankovaya Div." "8. Mongol Tankovaya Div." "9. Mongol Tankovaya Div." "10. Mongol Tankovaya Div." 
 	}
 	paratrooper_brigade = {
-		"蒙古第1空降师" "蒙古第2空降师" "蒙古第3空降师" "蒙古第4空降师" "蒙古第5空降师" "蒙古第6空降师" "蒙古第7空降师" "蒙古第8空降师" "蒙古第9空降师" "蒙古第10空降师" 
+		"1. Mongol Vozdushno-Desantnaya Div." "2. Mongol Vozdushno-Desantnaya Div." "3. Mongol Vozdushno-Desantnaya Div." "4. Mongol Vozdushno-Desantnaya Div." "5. Mongol Vozdushno-Desantnaya Div." "6. Mongol Vozdushno-Desantnaya Div." "7. Mongol Vozdushno-Desantnaya Div." "8. Mongol Vozdushno-Desantnaya Div." "9. Mongol Vozdushno-Desantnaya Div." "10. Mongol Vozdushno-Desantnaya Div." 
 	}
 	marine_brigade = {
-		"蒙古第1海军陆战师" "蒙古第2海军陆战师" "蒙古第3海军陆战师" "蒙古第4海军陆战师" "蒙古第5海军陆战师" "蒙古第6海军陆战师" "蒙古第7海军陆战师" "蒙古第8海军陆战师" "蒙古第9海军陆战师" "蒙古第10海军陆战师" 
+		"1. Div. Mongol Morskoi Pekhoty" "2. Div. Mongol Morskoi Pekhoty" "3. Div. Mongol Morskoi Pekhoty" "4. Div. Mongol Morskoi Pekhoty" "5. Div. Mongol Morskoi Pekhoty" "6. Div. Mongol Morskoi Pekhoty" "7. Div. Mongol Morskoi Pekhoty" "8. Div. Mongol Morskoi Pekhoty" "9. Div. Mongol Morskoi Pekhoty" "10. Div. Mongol Morskoi Pekhoty" 
 	}
 	bergsjaeger_brigade = {
-		"蒙古第1山地师" "蒙古第2山地师" "蒙古第3山地师" "蒙古第4山地师" "蒙古第5山地师" "蒙古第6山地师" "蒙古第8山地师" "蒙古第10山地师" "蒙古第11山地师" "蒙古第12山地师" 
+		"1. Mongol Gornostrelkovaya Div." "2. Mongol Gornostrelkovaya Div." "3. Mongol Gornostrelkovaya Div." "4. Mongol Gornostrelkovaya Div." "5. Mongol Gornostrelkovaya Div." "6. Mongol Gornostrelkovaya Div." "8. Mongol Gornostrelkovaya Div." "10. Mongol Gornostrelkovaya Div." "11. Mongol Gornostrelkovaya Div." "12. Mongol Gornostrelkovaya Div." 
 	}
 	garrison_brigade = {
-		"蒙古第1卫戍师" "蒙古第2卫戍师" "蒙古第3卫戍师" "蒙古第4卫戍师" "蒙古第5卫戍师" "蒙古第6卫戍师" "蒙古第8卫戍师" "蒙古第10卫戍师" "蒙古第11卫戍师" "蒙古第12卫戍师" "蒙古第13卫戍师" 
-		"蒙古第14卫戍师" "蒙古第16卫戍师" "蒙古第17卫戍师" "蒙古第19卫戍师" "蒙古第21卫戍师" "蒙古第22卫戍师" "蒙古第23卫戍师" "蒙古第24卫戍师" "蒙古第25卫戍师" 
+		"1. Mongol Strelkovaya Div." "2. Mongol Strelkovaya Div." "3. Mongol Strelkovaya Div." "4. Mongol Strelkovaya Div." "5. Mongol Strelkovaya Div." "6. Mongol Strelkovaya Div." "8. Mongol Strelkovaya Div." "10. Mongol Strelkovaya Div." "11. Mongol Strelkovaya Div." "12. Mongol Strelkovaya Div." "13. Mongol Strelkovaya Div." 
+		"14. Mongol Strelkovaya Div." "16. Mongol Strelkovaya Div." "17. Mongol Strelkovaya Div." "19. Mongol Strelkovaya Div." "21. Mongol Strelkovaya Div." "22. Mongol Strelkovaya Div." "23. Mongol Strelkovaya Div." "24. Mongol Strelkovaya Div." "25. Mongol Strelkovaya Div." 
 	}
 	hq_brigade = {
-		"蒙古第1集团军" "蒙古第2集团军" "蒙古第3集团军" "蒙古第4集团军" "蒙古第5集团军" 
+		"1ya Mongol Armiya" "2ya Mongol Armiya" "3ya Mongol Armiya" "4ya Mongol Armiya" "5ya Mongol Armiya" 
 	}
 	militia_brigade = {
-		"蒙古第1民兵师" "蒙古第2民兵师" "蒙古第3民兵师" "蒙古第4民兵师" "蒙古第5民兵师" "蒙古第6民兵师" "蒙古第8民兵师" "蒙古第10民兵师" "蒙古第11民兵师" "蒙古第12民兵师" "蒙古第13民兵师" 
-		"蒙古第14民兵师" "蒙古第16民兵师" "蒙古第17民兵师" "蒙古第19民兵师" "蒙古第21民兵师" "蒙古第22民兵师" "蒙古第23民兵师" "蒙古第24民兵师" "蒙古第25民兵师" 
+		"1. Nayramdakh Opolcheniya Div." "2. Nayramdakh Opolcheniya Div." "3. Nayramdakh Opolcheniya Div." "4. Nayramdakh Opolcheniya Div." "5. Nayramdakh Opolcheniya Div." "6. Nayramdakh Opolcheniya Div." "8. Nayramdakh Opolcheniya Div." "10. Nayramdakh Opolcheniya Div." "11. Nayramdakh Opolcheniya Div." "12. Nayramdakh Opolcheniya Div." "13. Nayramdakh Opolcheniya Div." 
+		"14. Nayramdakh Opolcheniya Div." "16. Nayramdakh Opolcheniya Div." "17. Nayramdakh Opolcheniya Div." "19. Nayramdakh Opolcheniya Div." "21. Nayramdakh Opolcheniya Div." "22. Nayramdakh Opolcheniya Div." "23. Nayramdakh Opolcheniya Div." "24. Nayramdakh Opolcheniya Div." "25. Nayramdakh Opolcheniya Div." 
 	}
 	multi_role = {
-		"蒙古第1战斗机联队" "蒙古第2战斗机联队" "蒙古第3战斗机联队" "蒙古第4战斗机联队" "蒙古第5战斗机联队" 
+		"1. Mongol IAD" "2. Mongol IAD" "3. Mongol IAD" "4. Mongol IAD" "5. Mongol IAD" 
 	}
 	interceptor = {
-		"蒙古第1歼击机联队" "蒙古第2歼击机联队" "蒙古第3歼击机联队" "蒙古第4歼击机联队" "蒙古第5歼击机联队" 
+		"1. Mongol IAD" "2. Mongol IAD" "3. Mongol IAD" "4. Mongol IAD" "5. Mongol IAD" 
+	}
+	jet_int = {
+		"1. Mongol IAD" "2. Mongol IAD" "3. Mongol IAD" "4. Mongol IAD" "5. Mongol IAD" 
+	}
+	jet_mr = {
+		"1. Mongol IAD" "2. Mongol IAD" "3. Mongol IAD" "4. Mongol IAD" "5. Mongol IAD" 
 	}
 	strategic_bomber = {
-		"蒙古第1战略轰炸联队" "蒙古第2战略轰炸联队" "蒙古第3战略轰炸联队" "蒙古第4战略轰炸联队" "蒙古第5战略轰炸联队" 
+		"1. Mongol DBAD" "2. Mongol DBAD" "3. Mongol DBAD" "4. Mongol DBAD" "5. Mongol DBAD" 
 	}
 	tactical_bomber = {
-		"蒙古第1战术轰炸联队" "蒙古第2战术轰炸联队" "蒙古第3战术轰炸联队" "蒙古第4战术轰炸联队" "蒙古第5战术轰炸联队" "蒙古第10战术轰炸联队" 
+		"1. Mongol BAD" "2. Mongol BAD" "3. Mongol BAD" "4. Mongol BAD" "5. Mongol BAD" "10. Mongol BAD" 
+	}
+	jet_bomber = {
+		"1. Mongol BAD" "2. Mongol BAD" "3. Mongol BAD" "4. Mongol BAD" "5. Mongol BAD" "10. Mongol BAD" 
 	}
 	naval_bomber = {
-		"蒙古第1海军轰炸联队" "蒙古第2海军轰炸联队" "蒙古第3海军轰炸联队" "蒙古第4海军轰炸联队" "蒙古第5海军轰炸联队" 
+		"1. Mongol MBAD" "2. Mongol MBAD" "3. Mongol MBAD" "4. Mongol MBAD" "5. Mongol MBAD" 
 	}
 	cas = {
-		"蒙古第23攻击机联队" "蒙古第46攻击机联队" "蒙古第77攻击机联队" "蒙古第25攻击机联队" 
+		"23. Mongol ShAD" "46. Mongol ShAD" "77. Mongol ShAD" "25. Mongol ShAD" 
 	}
 	transport_plane = {
-		"蒙古第1运输机联队" "蒙古第2运输机联队" "蒙古第3运输机联队" "蒙古第4运输机联队" "蒙古第5运输机联队" 
+		"1. Mongol TrAD" "2. Mongol TrAD" "3. Mongol TrAD" "4. Mongol TrAD" "5. Mongol TrAD" 
 	}
 	battleship = {
-		"蒙古人民共和国号" "乌兰巴托号" 
+		"Mongol Nayramdakh Ard Uls" "Ulan Bator" 
 	}
 	light_cruiser = {
-		"列宁号" "巴恰安号Ba·Cagan" "杰尔加兰号Dzargalant" "巴彦乌拉号" "巴彦洪戈尔号" 
+		"Lenin" "Ba-Cagan" "Dzargalant" "Bajan-Ula" "Arbaj-Here" 
 	}
 	heavy_cruiser = {
-		"列宁号" "巴恰安号Ba·Cagan" "杰尔加兰Dzargalant" "巴彦乌拉号" "巴彦洪戈尔号" 
+		"Lenin" "Ba-Cagan" "Dzargalant" "Bajan-Ula" "Arbaj-Here" 
 	}
 	battlecruiser = {
-		"蒙古人民共和国号" "乌兰巴托号" 
+		"Mongol Nayramdakh Ard Uls" "Ulan Bator" 
 	}
 	destroyer = {
-		"蒙古第1驱逐舰编队" "蒙古第2驱逐舰编队" "蒙古第3驱逐舰编队" "蒙古第4驱逐舰编队" "蒙古第5驱逐舰编队" 
+		"1. Mongol Flotiliya Esmintsev" "2. Mongol Flotiliya Esmintsev" "3. Mongol Flotiliya Esmintsev" "4. Mongol Flotiliya Esmintsev" "5. Mongol Flotiliya Esmintsev" 
 	}
 	carrier = {
-		"乔巴山号" "斯大林号" 
+		"Choibalsan" "Stalin" 
 	}
 	submarine = {
-		"蒙古第1潜艇编队" "蒙古第2潜艇编队" "蒙古第3潜艇编队" "蒙古第4潜艇编队" "蒙古第5潜艇编队" 
+		"1. Mongol Flotiliya Podlodok" "2. Mongol Flotiliya Podlodok" "3. Mongol Flotiliya Podlodok" "4. Mongol Flotiliya Podlodok" "5. Mongol Flotiliya Podlodok" 
 	}
 	transport_ship = {
-		"蒙古第1运输舰编队" "蒙古第2运输舰编队" "蒙古第3运输舰编队" "蒙古第4运输舰编队" "蒙古第5运输舰编队" 
+		"1. Mongol Transportnaya Flotiliya" "2. Mongol Transportnaya Flotiliya" "3. Mongol Transportnaya Flotiliya" "4. Mongol Transportnaya Flotiliya" "5. Mongol Transportnaya Flotiliya" 
 	}
 
 }
 
 ministers = {
 	94001 = {
-		name = "阿格登布·阿马尔"
+		name = "Agdanbuugiyn Amar"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M94001
@@ -121,7 +145,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	94002 = {
-		name = "道尔给扎布·鲁布桑沙拉布"
+		name = "Dogijavyn Luvsanshara"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M94002
@@ -131,7 +155,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	94003 = {
-		name = "泼勒吉德·根登"
+		name = "Peljidiyn Genden"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M94003
@@ -139,7 +163,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	94004 = {
-		name = "姜巴·勒呼木别"
+		name = "Jambyn Lh黰be"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M94004
@@ -147,7 +171,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	94005 = {
-		name = "曾德·达木丁苏伦"
+		name = "Jamtsangryin Damdins黵en"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M94005
@@ -155,12 +179,11 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	94006 = {
-		name = "霍尔洛·乔巴山"
+		name = "Horloogiyn Choybalsan"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M94006
 		minister_of_intelligence = research_specialist
-		head_of_government = old_general
 		head_of_government = old_general
 		foreign_minister = general_staffer
 		armament_minister = resource_industrialist
@@ -169,7 +192,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	94007 = {
-		name = "其米德"
+		name = "Chimid"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M94007
@@ -178,15 +201,15 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	94009 = {
-		name = "V·G·彼尔谢洛夫"
+		name = "V.G. Pyrselov"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M94009
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1936.1.1
 	}
 	94010 = {
-		name = "乌兰夫"
+		name = "Ulanhu"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M94010
@@ -194,16 +217,16 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	94031 = {
-		name = "云端旺楚克"
+		name = "Yundunwangcug"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M94011
 		head_of_state = resigned_generalissimo
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1937.1.1
 	}
 	94032 = {
-		name = "白云梯"
+		name = "Pai Yun-ti"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M94021
@@ -213,7 +236,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	94033 = {
-		name = "丹斯朗毕力格·道格索木"
+		name = "Dansrabilegyin Dogsam"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M94025
@@ -222,7 +245,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	94034 = {
-		name = "冈其格·布曼曾德"
+		name = "Gomgchigryn Bumtsend"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M94034
@@ -233,7 +256,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	94035 = {
-		name = "布玛·曾德"
+		name = "Buma Tsende"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M94035
@@ -242,7 +265,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	94036 = {
-		name = "德穆楚克栋鲁普"
+		name = "Demcuydungrub"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M94012
@@ -251,7 +274,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	94038 = {
-		name = "达希·丹巴"
+		name = "Dashiyin Damba"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M94038
@@ -260,7 +283,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	94041 = {
-		name = "尤睦佳·泽登巴尔"
+		name = "Jumdjaagijn Tsedenbal"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M94041
@@ -269,7 +292,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	94043 = {
-		name = "曾古巴尔·巴德拉赫"
+		name = "Tsengubal Badrach"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M94023
@@ -278,7 +301,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	94045 = {
-		name = "班扎尔扎布·巴桑扎布"
+		name = "Banzarjavyn Baasanjav"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M94045
@@ -286,7 +309,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	94047 = {
-		name = "马塞尔·罗森伯格"
+		name = "Marcel Rosenberg"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M94047
@@ -294,16 +317,15 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	94050 = {
-		name = "策沃勒索德诺姆"
+		name = "Tsevelsodnom"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M94014
 		armament_minister = military_entrepreneur
-		armament_minister = military_entrepreneur
 		start_date = 1937.1.1
 	}
 	94054 = {
-		name = "扎勒本格·色热特尔"
+		name = "Zalbengryin Sereeter"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M94024
@@ -311,7 +333,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	94055 = {
-		name = "巴特尔"
+		name = "Battur"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M94055
@@ -319,7 +341,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	94057 = {
-		name = "扎木斯朗·桑布"
+		name = "Jamsrangyin Sambuu"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M94057
@@ -328,17 +350,16 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	94059 = {
-		name = "苏赫巴托尔·扬吉玛"
+		name = "S黭hbaataryn Yanjmaa"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M94020
 		armament_minister = administrative_genius
 		chief_of_air = naval_aviation_doctrine
-		chief_of_air = naval_aviation_doctrine
 		start_date = 1947.1.1
 	}
 	94060 = {
-		name = "博彦满都"
+		name = "Buyanmandu"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M94015
@@ -346,7 +367,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	94062 = {
-		name = "达格瓦"
+		name = "Dagva"
 		ideology = leninist
 		loyalty = 0.50
 		picture = M94028
@@ -355,7 +376,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	94064 = {
-		name = "布彦讷莫赫"
+		name = "Buyannmeh"
 		ideology = left_wing_radical
 		loyalty = 0.25
 		picture = M94064
@@ -365,7 +386,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	94065 = {
-		name = "达希道洛布"
+		name = "Dashdoorov"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M94065
@@ -373,7 +394,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	94067 = {
-		name = "亚历山德拉·米哈伊洛夫娜·柯伦泰"
+		name = "Mikhailovna Kollontay"
 		ideology = stalinist
 		loyalty = 0.50
 		picture = M94067
@@ -381,7 +402,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	94068 = {
-		name = "宁布"
+		name = "Nyambuu"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M94068
@@ -390,16 +411,15 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	94069 = {
-		name = "伊青浩尔罗"
+		name = "Ichinhorloo"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M94016
 		minister_of_intelligence = research_specialist
-		minister_of_intelligence = research_specialist
 		start_date = 1937.1.1
 	}
 	94071 = {
-		name = "道尔给扎布·鲁布桑桑布"
+		name = "Dorgijavyn Luvsansambuu"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M94071
@@ -407,7 +427,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	94073 = {
-		name = "达希尼雅木"
+		name = "Dashnyam"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M94073
@@ -415,7 +435,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	94075 = {
-		name = "达希道尔吉"
+		name = "Dashdorj"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M94075
@@ -424,7 +444,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	94076 = {
-		name = "达希哲格布"
+		name = "Dashzegve"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M94076
@@ -432,7 +452,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	94078 = {
-		name = "李守信"
+		name = "Lee Shou-hsin"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M94017
@@ -441,7 +461,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	94082 = {
-		name = "沃勒吉特·巴特拉赫"
+		name = "謑ziytrygyn Badrak"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M94082
@@ -450,7 +470,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	94093 = {
-		name = "海达布"
+		name = "Haidav"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M94093
@@ -459,7 +479,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	94094 = {
-		name = "冈巴塔尔"
+		name = "Ganbaatar"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M94029
@@ -467,4 +487,128 @@ ministers = {
 		chief_of_air = vertical_envelopment_doctrine
 		start_date = 1937.1.1
 	}
+	# Generic dummy ministers
+	95628 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95629 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95630 = {
+		name = "Nameless Clerk"
+		ideology = paternal_autocrat
+		loyalty = 1.0
+		picture = MPaternalAutocrat
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95631 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95632 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95633 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95634 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95635 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	
 }

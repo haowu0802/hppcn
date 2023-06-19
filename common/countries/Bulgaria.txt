@@ -1,6 +1,8 @@
 color = { 66  113  69 }
 graphical_culture = Generic
 
+
+
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -17,102 +19,124 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
 	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
+	}		
 }
 
 unit_names = {
 	infantry_brigade = {
-		"第1步兵师 '索菲亚'" "第2步兵师 '色雷斯'" "第3步兵师 '巴尔干'" "第4步兵师 '普雷斯拉夫'" "第5步兵师 '多瑙河'" "第6步兵师 '维丁'" "第7步兵师 '里拉'" "第8步兵师 '登萨'" "第9步兵师 '普列文'" "第10步兵师 '多罗彼'" "第11步兵师" 
-		"第12步兵师 '多布罗加'" "第14步兵师 '斯科普里'" "1第5步兵师 '奥赫里德'" "第16步兵师 '白海'" "第17步兵师 '比托拉'" "第20后备步兵师" "第21后备步兵师" "第22后备步兵师" "第24后备步兵师" "第25后备步兵师" "第27后备步兵师" 
-		"第13后备步兵师" "第18步兵师" "第20步兵师" "第23步兵师" "第26步兵师" "第28步兵师" "第29步兵师" "第30步兵师" 
+		"1-va Sofiiska pekhotna divizija" "2-ra Trakiiska pekhotna divizija" "3-ta Balkanska pekhotna divizija" "4-ta Preslavska pekhotna divizija" "5-ta Dunavska pekhotna divizija" "6-ta Bdinska pekhotna divizija" "7-ma Rilska pekhotna divizija" "8-a Tundzhanska pekhotna divizija" "9-ta Plevenska pekhotna divizija" "10-ta Rodopska pekhotna divizija" "11-va zapasna pekhotna divizija" 
+		"12-ra Dobrudjanska pekhotna divizija" "14-ta Skopska pekhotna divizija" "15-ta Ohridska pekhotna divizija" "16-ta Belomorska pekhotna divizija" "17-ma Bitolska pekhotna divizija" "20-ta zapasna pekhotna divizija" "21-va zapasna pekhotna divizija" "22-ra zapasna pekhotna divizija" "24-ta zapasna pekhotna divizija" "25-ta zapasna pekhotna divizija" "27-ma zapasna pekhotna divizija" 
+		"13-ta zapasna pekhotna divizija" "18-a pekhotna divizija" "20-ta pekhotna divizija" "23-ta pekhotna divizija" "26-ta pekhotna divizija" "28-ta pekhotna divizija" "29-ta pekhotna divizija" "30-ta pekhotna divizija" 
 	}
 	cavalry_brigade = {
-		"第1骑兵师" "第2骑兵师" "第3骑兵师" "第4骑兵师" "第5骑兵师" "第6骑兵师" "第7骑兵师" "第8骑兵师" "第9骑兵师" "第10骑兵师" 
+		"1-va Konna divizija" "2-ra Konna divizija" "3-ta Konna divizija" "4-ta Konna divizija" "5-ta Konna divizija" "6-ta Konna divizija" "7-ma Konna divizija" "8-a Konna divizija" "9-ta Konna divizija" "10-ta Konna divizija" 
 	}
 	motorized_brigade = {
-		"第1摩步师" "第2摩步师" "第3摩步师" "第4摩步师" "第5摩步师" "第6摩步师" "第7摩步师" "第8摩步师" "第9摩步师" 
+		"1-va Brza divizija" "2-ra Brza divizija" "3-ta Brza divizija" "4-ta Brza divizija" "5-ta Brza divizija" "6-ta Brza divizija" "7-ma Brza divizija" "8-a Brza divizija" "9-ta Brza divizija" 
 	}
 	mechanized_brigade = {
-		"第1机步师" "第2机步师" "第3机步师" "第4机步师" "第5机步师" "第6机步师" "第7机步师" "第8机步师" "第9机步师" 
+		"1-va Mekhanizirana divizija" "2-ra Mekhanizirana divizija" "3-ta Mekhanizirana divizija" "4-ta Mekhanizirana divizija" "5-ta Mekhanizirana divizija" "6-ta Mekhanizirana divizija" "7-ma Mekhanizirana divizija" "8-a Mekhanizirana divizija" "9-ta Mekhanizirana divizija" 
 	}
 	light_armor_brigade = {
-		"第1装甲师" "第2装甲师" "第3装甲师" "第4坦克师" "第5坦克师" "第6坦克师" "第7装甲师" "第8装甲师" "第9装甲师" "第10装甲师" 
+		"1-va Bronirana Divisi髇" "2-ra Bronirana Divisi髇" "3-ta Bronirana Divisi髇" "4-ta Tankova Divisi髇" "5-ta Tankova Divisi髇" "6-ta Tankova Divisi髇" "7-ma Bronirana Divisi髇" "8-a Bronirana Divisi髇" "9-ta Bronirana Divisi髇" "10-ta Bronirana Divisi髇" 
 	}
 	armor_brigade = {
-		"第1装甲师" "第2装甲师" "第3装甲师" "第4坦克师" "第5坦克师" "第6坦克师" "第7装甲师" "第8装甲师" "第9装甲师" "第10装甲师" 
+		"1-va Bronirana Divisi髇" "2-ra Bronirana Divisi髇" "3-ta Bronirana Divisi髇" "4-ta Tankova Divisi髇" "5-ta Tankova Divisi髇" "6-ta Tankova Divisi髇" "7-ma Bronirana Divisi髇" "8-a Bronirana Divisi髇" "9-ta Bronirana Divisi髇" "10-ta Bronirana Divisi髇" 
 	}
 	paratrooper_brigade = {
-		"第1伞兵师" "第2伞兵师" "第3伞兵师" "第4伞兵师" "第5伞兵师" "第6伞兵师" 
+		"1-va Parashutna Divisi髇" "2-ra Parashutna Divisi髇" "3-ta Parashutna Divisi髇" "4-ta Parashutna Divisi髇" "5-ta Parashutna Divisi髇" "6-ta Parashutna Divisi髇" 
 	}
 	marine_brigade = {
-		"第1海军陆战师" "第2海军陆战师" "第3海军陆战师" "第4海军陆战师" "第5海军陆战师" "第6海军陆战师" 
+		"1-va Divizija morska pekhotna" "2-ra Divizija morska pekhotna" "3-ta Divizija morska pekhotna" "4-ta Divizija morska pekhotna" "5-ta Divizija morska pekhotna" "6-ta Divizija morska pekhotna" 
 	}
 	bergsjaeger_brigade = {
-		"第1机动师" "第2机动师" "第3山地师" "第4山地师" "第5山地师" "第6山地师" "第7山地师" "第8山地师" 
+		"3-ta Granichna Divisi髇" "4-ta Granichna Divisi髇" "1-va Planinska divizija" "2-ra Planinska divizija" "5-ta Planinska divizija" "6-ta Planinska divizija" "7-ma Planinska divizija" "8-a Planinska divizija" 
 	}
 	garrison_brigade = {
-		"第1步兵师 '索菲亚'" "第2步兵师 '色雷斯'" "第3步兵师 '巴尔干'" "第4步兵师 '普雷斯拉夫'" "第5步兵师 '多瑙河'" "第6步兵师 '维丁'" "第7步兵师 '里拉'" "第8步兵师 '登萨'" "第9步兵师 '普列文'" "第10步兵师 '多罗彼'" "第11步兵师" 
-		"第12步兵师 '多布罗加'" "第14步兵师 '斯科普里'" "1第5步兵师 '奥赫里德'" "第16步兵师 '白海'" "第17步兵师 '比托拉'" "第20后备步兵师" "第21后备步兵师" "第22后备步兵师" "第24后备步兵师" "第25后备步兵师" "第27后备步兵师" 
-		"第13后备步兵师" "第18步兵师" "第20步兵师" "第23步兵师" "第26步兵师" "第28步兵师" "第29步兵师" "第30步兵师" 
+		"1-va Sofiiska pekhotna divizija" "2-ra Trakiiska pekhotna divizija" "3-ta Balkanska pekhotna divizija" "4-ta Preslavska pekhotna divizija" "5-ta Dunavska pekhotna divizija" "6-ta Bdinska pekhotna divizija" "7-ma Rilska pekhotna divizija" "8-a Tundzhanska pekhotna divizija" "9-ta Plevenska pekhotna divizija" "10-ta Rodopska pekhotna divizija" "11-va zapasna pekhotna divizija" 
+		"12-ra Dobrudjanska pekhotna divizija" "14-ta Skopska pekhotna divizija" "15-ta Ohridska pekhotna divizija" "16-ta Belomorska pekhotna divizija" "17-ma Bitolska pekhotna divizija" "20-ta zapasna pekhotna divizija" "21-va zapasna pekhotna divizija" "22-ra zapasna pekhotna divizija" "24-ta zapasna pekhotna divizija" "25-ta zapasna pekhotna divizija" "27-ma zapasna pekhotna divizija" 
+		"13-ta zapasna pekhotna divizija" "18-a pekhotna divizija" "20-ta pekhotna divizija" "23-ta pekhotna divizija" "26-ta pekhotna divizija" "28-ta pekhotna divizija" "29-ta pekhotna divizija" "30-ta pekhotna divizija" 
 	}
 	hq_brigade = {
-		"保加利亚陆军总参谋部" "第1集团军" "第2集团军" "第3集团军" "第4集团军" "第5集团军" "第6集团军" "第7集团军" "第8集团军" "第9集团军" "第10集团军" 
-		"第15集团军" 
+		"Bulgarian glavni 歵ab" "1. armija" "2. armija" "3. armija" "4. armija" "5. armija" "6. armija" "7. armija" "8. armija" "9. armija" "10. armija" 
+		"15. armija" 
 	}
 	militia_brigade = {
-		"第20后备步兵师" "第21后备步兵师" "第22后备步兵师" "第24后备步兵师" "第25后备步兵师" "第27后备步兵师" "第29后备步兵师" "第'索伯纳'后备步兵师" "第23后备步兵师" "第26后备步兵师" "第28后备步兵师" 
+		"20-ta Zapasna pekhotna divizija" "21-va Zapasna pekhotna divizija" "22-ra Zapasna pekhotna divizija" "24-ta Zapasna pekhotna divizija" "25-ta Zapasna pekhotna divizija" "27-ma Zapasna pekhotna divizija" "29-ta Zapasna pekhotna divizija" "Sborna pekhotna divizija" "23-ta Pekhotna Divizija" "26-ta Pekhotna Divizija" "28-a Pekhotna Divizija" 
 			}
 	multi_role = {
-		"第6战斗机联队" "第1战斗机联队" "第2战斗机联队" "第3战斗机联队" "第4战斗机联队" "第5战斗机联队" "第7战斗机联队" "第8战斗机联队" "第9战斗机联队" "第10战斗机联队" 
+		"6-ti Iztrebitelen polk" "1-vi Vyzdushen polk" "2-ri Vyzdushen polk" "3-ti Vyzdushen polk" "4-ti Vyzdushen polk" "5-ti Iztrebitelen polk" "7-mi Iztrebitelen polk" "8-i Iztrebitelen polk" "9-ti Iztrebitelen polk" "10-ti Iztrebitelen polk" 
 	}
 	interceptor = {
-		"第6截击机联队" "第1截击机联队" "第2截击机联队" "第3截击机联队" "第4截击机联队" "第5截击机联队" "第7截击机联队" "第8截击机联队" "第9截击机联队" "第10截击机联队" 
+		"6-ti Iztrebitelen polk" "1-vi Vyzdushen polk" "2-ri Vyzdushen polk" "3-ti Vyzdushen polk" "4-ti Vyzdushen polk" "5-ti Iztrebitelen polk" "7-mi Iztrebitelen polk" "8-i Iztrebitelen polk" "9-ti Iztrebitelen polk" "10-ti Iztrebitelen polk" 
+	}
+	jet_int = {
+		"6-ti Iztrebitelen polk" "1-vi Vyzdushen polk" "2-ri Vyzdushen polk" "3-ti Vyzdushen polk" "4-ti Vyzdushen polk" "5-ti Iztrebitelen polk" "7-mi Iztrebitelen polk" "8-i Iztrebitelen polk" "9-ti Iztrebitelen polk" "10-ti Iztrebitelen polk" 
+	}
+	jet_mr = {
+		"6-ti Iztrebitelen polk" "1-vi Vyzdushen polk" "2-ri Vyzdushen polk" "3-ti Vyzdushen polk" "4-ti Vyzdushen polk" "5-ti Iztrebitelen polk" "7-mi Iztrebitelen polk" "8-i Iztrebitelen polk" "9-ti Iztrebitelen polk" "10-ti Iztrebitelen polk" 
 	}
 	strategic_bomber = {
-		"第1战略轰炸联队" "第2战略轰炸联队" "第3战略轰炸联队" "第4战略轰炸联队" "第5战略轰炸联队" "第6战略轰炸联队" "第7战略轰炸联队" "第8战略轰炸联队" "第9战略轰炸联队" "第10战略轰炸联队" 
+		"1-vi Vyzdushna napadatelna Divisi髇" "2-ri Vyzdushna napadatelna Divisi髇" "3-ti Vyzdushna napadatelna Divisi髇" "4-ti Vyzdushna napadatelna Divisi髇" "5-ti Vyzdushna napadatelna Divisi髇" "6-ti Vyzdushna napadatelna Divisi髇" "7-mi Vyzdushna napadatelna Divisi髇" "8-i Vyzdushna napadatelna Divisi髇" "9-ti Vyzdushna napadatelna Divisi髇" "10-ti Vyzdushna napadatelna Divisi髇" 
 	}
 	tactical_bomber = {
-		"第2战术轰炸联队" "第5战术轰炸联队" "第1战术轰炸联队" "第3战术轰炸联队" "第4战术轰炸联队" "第6战术轰炸联队" "第7战术轰炸联队" "第8战术轰炸联队" "第9战术轰炸联队" "第10战术轰炸联队" 
+		"2-ri Lineen polk" "5-ti Bombardirovatchen polk" "1-vi Bombardirovatchen polk" "3-ti Bombardirovatchen polk" "4-ti Lineen polk" "6-ti Lineen polk" "7-mi Bombardirovatchen polk" "8-i Lineen polk" "9-ti Bombardirovatchen polk" "10-ti Lineen polk" 
+	}
+	jet_bomber = {
+		"2-ri Lineen polk" "5-ti Bombardirovatchen polk" "1-vi Bombardirovatchen polk" "3-ti Bombardirovatchen polk" "4-ti Lineen polk" "6-ti Lineen polk" "7-mi Bombardirovatchen polk" "8-i Lineen polk" "9-ti Bombardirovatchen polk" "10-ti Lineen polk" 
 	}
 	naval_bomber = {
-		"第1海军轰炸联队" "第2海军轰炸联队" "第3海军轰炸联队" "第4海军轰炸联队" "第5海军轰炸联队" "第6海军轰炸联队" "第7海军轰炸联队" "第8海军轰炸联队" "第9海军轰炸联队" "第10海军轰炸联队" "第1鱼雷轰炸联队" 
-		"第2鱼雷轰炸联队" "第3鱼雷轰炸联队" "第4鱼雷轰炸联队" "第5鱼雷轰炸联队" "第8鱼雷轰炸联队" "第6鱼雷轰炸联队" "第7鱼雷轰炸联队" "第9鱼雷轰炸联队" "第10鱼雷轰炸联队" 
+		"1-vi Vodosamoleten orljak" "2-ri Vodosamoleten orljak" "3-ti Vodosamoleten orljak" "4-ti Vodosamoleten orljak" "5-ti Vodosamoleten orljak" "6-ti Vodosamoleten orljak" "7-mi Vodosamoleten orljak" "8-i Vodosamoleten orljak" "9-ti Vodosamoleten orljak" "10-ti Vodosamoleten orljak" "1-vi Vodosamoleten polk" 
+		"2-ri Vodosamoleten polk" "3-ti Vodosamoleten polk" "4-ti Vodosamoleten polk" "5-ti Vodosamoleten polk" "8-i Vodosamoleten polk" "6-ti Vodosamoleten polk" "7-mi Vodosamoleten polk" "9-ti Vodosamoleten polk" "10-ti Vodosamoleten polk" 
 	}
 	cas = {
-		"第2攻击机联队" "第1攻击机联队" "第3攻击机联队" "第4攻击机联队" "第5攻击机联队" "第6攻击机联队" "第7攻击机联队" "第8攻击机联队" "第9攻击机联队" "第10攻击机联队" 
+		"2-ri Shturmovi polk" "1-vi Shturmovi polk" "3-ti Shturmovi polk" "4-ti Shturmovi polk" "5-ti Shturmovi polk" "6-ti Shturmovi polk" "7-mi Shturmovi polk" "8-i Shturmovi polk" "9-ti Shturmovi polk" "10-ti Shturmovi polk" 
 	}
 	transport_plane = {
-		"第1运输机联队" "第2运输机联队" "第3运输机联队" "第4运输机联队" "第5运输机联队" 
+		"1-vi Transportno jato" "2-ri Transportno jato" "3-ti Transportno jato" "4-ti Transportno jato" "5-ti Transportno jato" 
 	}
 	battleship = {
-		"德尔日奇号" "热列兹尼亚科夫号" 
+		"Drzki" "Zheleznjakov" 
 	}
 	light_cruiser = {
-		"索菲亚号" "佩尔尼克号" "斯沃盖号" "斯利夫尼察号" "布雷兹尼克号" "拉多米号" 
+		"Sofija" "Pernik" "Svoge" "Slivnica" "Breznik" "Radomir" 
 	}
 	heavy_cruiser = {
-		"索菲亚号" "佩尔尼克号" "斯沃盖号" "斯利夫尼察号" "布雷兹尼克号" "拉多米号"
+		"Sofija" "Pernik" "Svoge" "Slivnica" "Breznik" "Radomir" 
 	}
 	battlecruiser = {
-		"德尔日奇号" "热列兹尼亚科夫号" 
+		"Drzki" "Zheleznjakov" 
 	}
 	destroyer = {
-		"第1驱逐舰编队" "第2驱逐舰编队" "第3驱逐舰编队" "第4驱逐舰编队" "第5驱逐舰编队" "第6驱逐舰编队" "第7驱逐舰编队" "第8驱逐舰编队" "第9驱逐舰编队" "第10驱逐舰编队" 
+		"1-va Podvodnikova flotilija" "2-ri Podvodnikova flotilija" "3-ta Podvodnikova flotilija" "4-ta Podvodnikova flotilija" "5-ta Podvodnikova flotilija" "6-ta Podvodnikova flotilija" "7-ma Podvodnikova flotilija" "8-a Podvodnikova flotilija" "9-ta Podvodnikova flotilija" "10-ta Podvodnikova flotilija" 
 	}
 	carrier = {
-		"娜杰日达号" "斯特鲁玛号" 
+		"Nadezhda" "Struma" 
 	}
 	escort_carrier = {
-		"索菲亚号" "普罗夫迪夫号" "瓦尔纳号" "布尔加斯号" "鲁塞号" "旧札戈拉号" "普列文号" 
+		"Sofija" "Plovdiv" "Varna" "Burgas" "Ruse" "Stara Zagora" "Pleven" 
 	}
 	submarine = {
-		"第1潜艇编队" "第2潜艇编队" "第3潜艇编队" "第4潜艇编队" "第5潜艇编队" "第6潜艇编队" "第7潜艇编队" "第8潜艇编队" "第9潜艇编队" "第10潜艇编队" 
+		"1-va Flotilija podvonici" "2-ra Flotilija podvonici" "3-ta Flotilija podvonici" "4-ta Flotilija podvonici" "5-ta Flotilija podvonici" "6-ta Flotilija podvonici" "7-ma Flotilija podvonici" "8-a Flotilija podvonici" "9-ta Flotilija podvonici" "10-ta Flotilija podvonici" 
 	}
 	transport_ship = {
-		"第1运输舰编队" "第2运输舰编队" "第3运输舰编队" "第4运输舰编队" "第5运输舰编队" "第6运输舰编队" "第7运输舰编队" "第8运输舰编队" "第9运输舰编队" "第10运输舰编队" 
+		"1-va Transportna Flotilija" "2-ra Transportna Flotilija" "3-ta Transportna Flotilija" "4-ta Transportna Flotilija" "5-ta Transportna Flotilija" "6-ta Transportna Flotilija" "7-ma Transportna Flotilija" "8-a Transportna Flotilija" "9-ta Transportna Flotilija" "10-ta Transportna Flotilija" 
 	}
 
 }
@@ -120,16 +144,15 @@ unit_names = {
 
 ministers = {
 	19001 = {
-		name = "鲍里斯 三世"
+		name = "Boris III"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M19001
 		head_of_state = autocratic_charmer
-		head_of_government = backroom_backstabber
 		start_date = 1936.1.1
 	}
 	19002 = {
-		name = "格奥尔基 基奥塞瓦诺夫"
+		name = "Georgi Kioseivanov"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M19002
@@ -138,7 +161,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	19004 = {
-		name = "基里尔 古内夫"
+		name = "Kiril Gounev"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19004
@@ -147,7 +170,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	19005 = {
-		name = "格奥尔基 萨波夫"
+		name = "Georgi Sapov"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M19005
@@ -156,7 +179,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	19006 = {
-		name = "迪米塔尔 佩舍夫"
+		name = "Dimitar Peshev"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19006
@@ -165,7 +188,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	19007 = {
-		name = "赫里斯托 卢科夫"
+		name = "Hristo Lukov"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M19007
@@ -174,7 +197,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	19008 = {
-		name = "托多尔 格奥尔基耶夫"
+		name = "Todor Georgiev"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19008
@@ -183,15 +206,15 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	19009 = {
-		name = "萨瓦 伊万诺夫"
+		name = "Sava Ivanov"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19009
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1936.1.1
 	}
 	19010 = {
-		name = "瓦西尔 博伊戴夫"
+		name = "Vasil Boydev"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19010
@@ -200,17 +223,15 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	19042 = {
-		name = "基里尔 德 普雷斯拉夫"
+		name = "Kiril de Preslav"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M19042
 		head_of_state = stern_imperialist
-		head_of_state = stern_imperialist
-		head_of_state = stern_imperialist
 		start_date = 1943.1.1
 	}
 	19044 = {
-		name = "亚历山杜尔 灿科夫"
+		name = "Aleksandur Tsankov"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M19021
@@ -220,7 +241,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	19047 = {
-		name = "尼古拉 佩特科夫"
+		name = "Nikola Petkov"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M19047
@@ -230,7 +251,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	19049 = {
-		name = "科姆雷德 鲍里斯 科堡"
+		name = "Comrade Boris Coburg"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M19001
@@ -238,7 +259,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19050 = {
-		name = "格奥尔基 迪米特罗夫"
+		name = "Georgi Dimitrov"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M19032
@@ -248,18 +269,17 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	19051 = {
-		name = "瓦西尔 科拉罗夫"
+		name = "Vasil Kolarov"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M19031
 		head_of_state = weary_stiff_neck
 		foreign_minister = ideological_crusader
-		foreign_minister = ideological_crusader
 		head_of_government = flamboyant_tough_guy
 		start_date = 1945.1.1
 	}
 	19052 = {
-		name = "波格丹 菲洛夫"
+		name = "Bogdan Filov"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M19024
@@ -269,7 +289,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19053 = {
-		name = "多布里 博伊洛夫"
+		name = "Dobri Bojilov"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M19053
@@ -278,7 +298,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	19054 = {
-		name = "伊万 巴格莱恩诺夫"
+		name = "Ivan Bagrianov"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M19054
@@ -287,7 +307,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19056 = {
-		name = "彼得 加布罗夫斯基"
+		name = "Petur Gabrovski"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M19022
@@ -296,7 +316,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	19057 = {
-		name = "康斯坦丁 穆拉维耶夫"
+		name = "Konstantin Muraviev"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M19012
@@ -305,7 +325,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19059 = {
-		name = "基蒙 格奥尔基耶夫"
+		name = "Kimon Georgiev"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M19059
@@ -314,7 +334,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19061 = {
-		name = "伊万 波波夫"
+		name = "Ivan Popov"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19061
@@ -322,7 +342,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19062 = {
-		name = "亚历山大 尼古拉耶夫"
+		name = "Aleksander Nikolaiev"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19062
@@ -330,7 +350,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19064 = {
-		name = "迪米塔尔 希什马诺夫"
+		name = "Dimitar Shishmanov"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19064
@@ -338,7 +358,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	19066 = {
-		name = "皮尔万 德拉加诺夫"
+		name = "Pyrvan Draganov"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M19066
@@ -346,7 +366,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19068 = {
-		name = "阿塔纳斯 布罗夫"
+		name = "Atanas Burov"
 		ideology = social_conservative
 		loyalty = 0.50
 		picture = M19068
@@ -356,7 +376,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19069 = {
-		name = "格奥尔基 布拉索夫"
+		name = "Georgi Brasov"
 		ideology = social_conservative
 		loyalty = 0.50
 		picture = M19069
@@ -364,7 +384,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	19072 = {
-		name = "佩特科 斯塔伊诺夫"
+		name = "Petko Stainov"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M19072
@@ -372,7 +392,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19073 = {
-		name = "格奥尔基 库利切夫"
+		name = "Georgi Kulichev"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M19073
@@ -384,7 +404,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	19075 = {
-		name = "格奥尔基 达米亚诺夫"
+		name = "Georgi Damianov"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M19075
@@ -392,7 +412,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19079 = {
-		name = "萨瓦 基洛夫"
+		name = "Sava Kirov"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M19079
@@ -401,7 +421,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	19080 = {
-		name = "斯坦科 尼古拉多罗夫"
+		name = "Stanko Nikoladorov"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M19080
@@ -409,7 +429,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19082 = {
-		name = "亚历山大 格尔吉诺夫"
+		name = "Aleksandar Gerginov"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M19014
@@ -418,7 +438,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19084 = {
-		name = "迪米塔尔 萨沃夫"
+		name = "Dimitar Savov"
 		ideology = social_conservative
 		loyalty = 0.50
 		picture = M19084
@@ -426,7 +446,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19085 = {
-		name = "伊万 盖迪米特里夫"
+		name = "Ivan Gaidimitriv"
 		ideology = social_conservative
 		loyalty = 0.50
 		picture = M19085
@@ -434,7 +454,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	19086 = {
-		name = "佩特科 斯托亚诺夫"
+		name = "Petko Stoyanov"
 		ideology = left_wing_radical
 		loyalty = 0.50
 		picture = M19086
@@ -442,7 +462,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19087 = {
-		name = "斯坦乔 乔拉科夫"
+		name = "Stancho Cholakov"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M19087
@@ -450,7 +470,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	19089 = {
-		name = "伊万 斯特凡诺夫"
+		name = "Ivan Stefanov"
 		ideology = leninist
 		loyalty = 0.50
 		picture = M19034
@@ -458,7 +478,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19090 = {
-		name = "佩特科 库宁"
+		name = "Petko Kounin"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M19090
@@ -466,7 +486,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	19091 = {
-		name = "伊万 克拉斯诺夫斯基"
+		name = "Ivan Krasnovski"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19091
@@ -474,7 +494,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	19092 = {
-		name = "尼古拉 尼古拉耶夫"
+		name = "Nikolay Nikolaev"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19092
@@ -482,7 +502,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	19093 = {
-		name = "尼古拉 内德夫"
+		name = "Nikola Nedev"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19093
@@ -490,7 +510,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19094 = {
-		name = "多霍 赫里斯托夫"
+		name = "Docho Hristov"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19094
@@ -498,7 +518,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	19095 = {
-		name = "亚历山代尔 斯塔尼舍夫"
+		name = "Aleksandyr Stanishev"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19095
@@ -506,7 +526,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19099 = {
-		name = "赖茨霍 佩基莫夫"
+		name = "Rajcho Pekimov"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M19099
@@ -514,19 +534,17 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	19100 = {
-		name = "弗吉尔 迪莫夫"
+		name = "Vergil Dimov"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M19100
 		minister_of_security = man_of_the_people
 		head_of_state = insignificant_layman
-		head_of_state = insignificant_layman
-		head_of_government = silent_workhorse
 		head_of_government = silent_workhorse
 		start_date = 1944.1.1
 	}
 	19101 = {
-		name = "尼古拉 穆沙诺夫"
+		name = "Nikola Mushanov"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M19015
@@ -534,7 +552,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	19103 = {
-		name = "武尔科 切尔文科夫"
+		name = "Vulko Chervenkov"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M19103
@@ -544,7 +562,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19104 = {
-		name = "安东 尤戈夫"
+		name = "Anton Yugov"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M19035
@@ -552,7 +570,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19106 = {
-		name = "斯特凡 诺伊科夫"
+		name = "Stefan Noikov"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M19106
@@ -560,7 +578,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	19108 = {
-		name = "基里尔 斯坦切夫"
+		name = "Kiril Stanchev"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M19026
@@ -569,7 +587,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19109 = {
-		name = "伊万 罗格扎尔斯基"
+		name = "Ivan Rogosarski"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M19109
@@ -577,7 +595,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19110 = {
-		name = "鲍里斯 博坦"
+		name = "Boris Botan"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M19110
@@ -585,7 +603,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19113 = {
-		name = "特莱乔 科斯托夫"
+		name = "Traicho Kostov"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M19036
@@ -593,7 +611,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19114 = {
-		name = "明乔 奈切夫"
+		name = "Mincho Neychev"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M19114
@@ -602,7 +620,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	19115 = {
-		name = "特奥多西 达斯卡洛夫"
+		name = "Teodosi Daskalov"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19115
@@ -610,7 +628,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19116 = {
-		name = "尼古拉 米霍夫"
+		name = "Nikola Mihov"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19116
@@ -618,7 +636,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	19117 = {
-		name = "鲁西 鲁塞夫"
+		name = "Russi Russev"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M19117
@@ -626,7 +644,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	19119 = {
-		name = "伊万 沃尔科夫"
+		name = "Ivan Vulkov"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M19027
@@ -634,7 +652,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19120 = {
-		name = "伊万 马里诺夫"
+		name = "Ivan Marinov"
 		ideology = social_conservative
 		loyalty = 0.25
 		picture = M19017
@@ -643,7 +661,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19121 = {
-		name = "格奥尔基 佩佐夫"
+		name = "Georgi Petsov"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M19019
@@ -652,7 +670,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	19122 = {
-		name = "达米扬 韦尔切尔"
+		name = "Damjan Velchev"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M19122
@@ -660,7 +678,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19123 = {
-		name = "赫里斯托 米哈伊洛夫"
+		name = "Hristo Mikhailov"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M19037
@@ -668,7 +686,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19124 = {
-		name = "阿森 格列科夫"
+		name = "Assen Grekov"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M19124
@@ -676,7 +694,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	19125 = {
-		name = "约尔丹 佩耶夫"
+		name = "Iordan Peev"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19125
@@ -684,7 +702,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	19126 = {
-		name = "尼古拉 哈齐佩科夫"
+		name = "Nikola Hadjipetkov"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M19126
@@ -692,7 +710,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19128 = {
-		name = "康斯坦丁 卢卡什"
+		name = "Konstantin Lukash"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19128
@@ -700,7 +718,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	19131 = {
-		name = "特里丰 特里福诺夫"
+		name = "Trifon Trifonov"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M19131
@@ -708,7 +726,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19133 = {
-		name = "赖茨霍 斯拉夫科夫"
+		name = "Rajcho Slavkov"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M19018
@@ -716,7 +734,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19134 = {
-		name = "米哈伊尔 明采夫"
+		name = "Mikhail Mintchev"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M19134
@@ -724,16 +742,15 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19135 = {
-		name = "米哈伊尔 明采夫"
+		name = "Tsvjatko Radojnov"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M19038
 		chief_of_army = decisive_battle_doctrine
-		chief_of_army = decisive_battle_doctrine
 		start_date = 1939.1.1
 	}
 	19136 = {
-		name = "伊万 基诺夫"
+		name = "Ivan Kinov"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M19136
@@ -741,7 +758,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19137 = {
-		name = "伊万 瓦里克列什科夫"
+		name = "Ivan Variclechkov"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M19137
@@ -749,15 +766,15 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	19138 = {
-		name = "阿森 托舍夫v"
+		name = "Asen Toshev"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M19138
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1939.1.1
 	}
 	19139 = {
-		name = "阿塔纳斯 沙拉帕托夫"
+		name = "Atanas Shalapatov"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M19029
@@ -765,15 +782,15 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19141 = {
-		name = "拉乔 巴塔诺夫"
+		name = "Racho Batanov"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M19141
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1944.1.1
 	}
 	19142 = {
-		name = "基里尔 哈拉采夫"
+		name = "Kiril Khalatchev"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M19039
@@ -781,7 +798,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19143 = {
-		name = "斯特凡 查涅夫"
+		name = "Stefan Tzanev"
 		ideology = stalinist
 		loyalty = 0.25
 		picture = M19143
@@ -789,7 +806,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	19145 = {
-		name = "迪米塔尔 艾尔亚诺夫"
+		name = "Dimitar Ayrjanov"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M19145
@@ -797,7 +814,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	19146 = {
-		name = "丘多米尔 托普洛多尔斯基"
+		name = "Chudomir Toplodolski"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M19030
@@ -805,7 +822,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19147 = {
-		name = "丘多米尔 托普洛多尔斯基"
+		name = "Stoyan Stoyanov"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M19020
@@ -813,7 +830,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19148 = {
-		name = "格奥尔基 德雷尼科夫"
+		name = "Georgi Drenikov"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M19148
@@ -821,7 +838,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19149 = {
-		name = "瓦西尔 维尔科夫"
+		name = "Vasil Vylkov"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M19149
@@ -829,7 +846,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	19150 = {
-		name = "扎哈里 扎哈里耶夫"
+		name = "Zakhari Zakhariev"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M19150
@@ -837,7 +854,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	19159 = {
-		name = "弗拉迪米尔 波普托莫夫"
+		name = "Vladimir Poptomov"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M19159
@@ -845,7 +862,7 @@ ministers = {
 		start_date = 1949.1.1
 	}
 	19161 = {
-		name = "格奥尔基 达米扬诺夫"
+		name = "Georgi Damyanov"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M19161
@@ -853,7 +870,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	19162 = {
-		name = "彼得 潘切夫斯基"
+		name = "Petur Panchevski"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M19162
@@ -861,7 +878,7 @@ ministers = {
 		start_date = 1949.1.1
 	}
 	19163 = {
-		name = "鲁西 赫里斯托佐夫"
+		name = "Rusi Hristozov"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M19163
@@ -869,7 +886,7 @@ ministers = {
 		start_date = 1949.1.1
 	}
 	19164 = {
-		name = "格奥尔基 昌科夫"
+		name = "Georgi Chankov"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M19164
@@ -877,12 +894,166 @@ ministers = {
 		start_date = 1951.1.1
 	}
 	19165 = {
-		name = "佩特科 库宁"
+		name = "Petko Kunin"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M19165
 		minister_of_intelligence = industrial_specialist
 		start_date = 1950.1.1
+	}
+	# Generic dummy ministers
+	95121 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95122 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95123 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95124 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95125 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95126 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95127 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95128 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95129 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
 	}
 }
 

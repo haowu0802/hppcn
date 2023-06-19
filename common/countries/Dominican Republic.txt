@@ -1,6 +1,8 @@
 color = { 168  183  128 }
 graphical_culture = Generic
 
+
+
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -17,96 +19,118 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
 	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
+	}		
 }
 
 unit_names = {
 	infantry_brigade = {
-		"第I步兵师" "第II步兵师" "第III步兵师" "第IV步兵师" "第V步兵师" "第VI步兵师" "第VII步兵师" "第VIII步兵师" "第IX步兵师" "第X步兵师" 
+		"I Divisi髇 de Infanter韆" "II Divisi髇 de Infanter韆" "III Divisi髇 de Infanter韆" "IV Divisi髇 de Infanter韆" "V Divisi髇 de Infanter韆" "VI Divisi髇 de Infanter韆" "VII Divisi髇 de Infanter韆" "VIII Divisi髇 de Infanter韆" "IX Divisi髇 de Infanter韆" "X Divisi髇 de Infanter韆" 
 	}
 	cavalry_brigade = {
-		"第I骑兵师 'Leonidas'" "第II骑兵师" "第III骑兵师" "第IV骑兵师" "第V骑兵师" 
+		"I Divisi髇 de Caballer韆 'Leonidas'" "II Divisi髇 de Caballer韆" "III Divisi髇 de Caballer韆" "IV Divisi髇 de Caballer韆" "V Divisi髇 de Caballer韆" 
 	}
 	motorized_brigade = {
-		"第I摩托化师" "第II摩托化师" "第III摩托化师" "第IV摩托化师" "第V摩托化师" "第X摩托化师" 
+		"I Divisi髇 Motorizada" "II Divisi髇 Motorizada" "III Divisi髇 Motorizada" "IV Divisi髇 Motorizada" "V Divisi髇 Motorizada" "X Divisi髇 Motorizada" 
 	}
 	mechanized_brigade = {
-		"第I机械化师" "第II机械化师" "第III机械化师" "第IV机械化师" "第V机械化师" 
+		"I Divisi髇 Mecanizada" "II Divisi髇 Mecanizada" "III Divisi髇 Mecanizada" "IV Divisi髇 Mecanizada" "V Divisi髇 Mecanizada" 
 	}
 	light_armor_brigade = {
-		"第I轻装甲师" "第II轻装甲师" "第III轻装甲师" "第IV轻装甲师" "第V轻装甲师" 
+		"I Divisi髇 Blindada" "II Divisi髇 Blindada" "III Divisi髇 Blindada" "IV Divisi髇 Blindada" "V Divisi髇 Blindada" 
 	}
 	armor_brigade = {
-		"第I装甲师" "第II装甲师" "第III装甲师" "第IV装甲师" "第V装甲师" 
+		"I Divisi髇 Blindada" "II Divisi髇 Blindada" "III Divisi髇 Blindada" "IV Divisi髇 Blindada" "V Divisi髇 Blindada" 
 	}
 	paratrooper_brigade = {
-		"第I伞兵师" "第II伞兵师" "第III伞兵师" "第IV伞兵师" "第V伞兵师" "第X伞兵师" 
+		"I Divisi髇 de Paracaidistas" "II Divisi髇 de Paracaidistas" "III Divisi髇 de Paracaidistas" "IV Divisi髇 de Paracaidistas" "V Divisi髇 de Paracaidistas" "X Divisi髇 de Paracaidistas" 
 	}
 	marine_brigade = {
-		"第I海军陆战师" "第II海军陆战师" "第III海军陆战师" "第IV海军陆战师" "第V海军陆战师" 
+		"I Divisi髇 de Comandos Marinos" "II Divisi髇 de Comandos Marinos" "III Divisi髇 de Comandos Marinos" "IV Divisi髇 de Comandos Marinos" "V Divisi髇 de Comandos Marinos" 
 	}
 	bergsjaeger_brigade = {
-		"第I山地师'拉斯·莱欧尼德斯'" "第II山地师" "第III山地师" "第IV山地师" "第V山地师" 
+		"I Divisi髇 de Monta馻 'Las Leonides'" "II Divisi髇 de Monta馻" "III Divisi髇 de Monta馻" "IV Divisi髇 de Monta馻" "V Divisi髇 de Monta馻" 
 	}
 	garrison_brigade = {
-		"第XI卫戍师" "第XII卫戍师" "第XIII卫戍师" "第XIV卫戍师" "第XV卫戍师" 
+		"XI Divisi髇 de Infanter韆" "XII Divisi髇 de Infanter韆" "XIII Divisi髇 de Infanter韆" "XIV Divisi髇 de Infanter韆" "XV Divisi髇 de Infanter韆" 
 	}
 	hq_brigade = {
-		"第1指挥军团" "第2指挥军团" "第3指挥军团" "第4指挥军团" "第5指挥军团" "第6指挥军团" "第7指挥军团" "第8指挥军团" "第9指挥军团" 
+		"Cuartel General 1er Ej閞cito" "Cuartel General 2o Ej閞cito" "Cuartel General 3er Ej閞cito" "Cuartel General 4o Ej閞cito" "Cuartel General 5o Ej閞cito" "Cuartel General 6o Ej閞cito" "Cuartel General 7o Ej閞cito" "Cuartel General 8o Ej閞cito" "Cuartel General 9o Ej閞cito" "Cuartel General 10o Ej閞cito" 
 	}
 	militia_brigade = {
-		"第1民兵师" "第2民兵师" "第3民兵师" "第4民兵师" "第5民兵师" "第6民兵师" "第7民兵师" "第8民兵师" "第9民兵师" "第10民兵师" 
+		"1a Divisi髇 de Milic韆 PTDR" "2a Divisi髇 de Milic韆 PTDR" "3a Divisi髇 de Milic韆 PTDR" "4a Divisi髇 de Milic韆 PTDR" "5a Divisi髇 de Milic韆 PTDR" "6a Divisi髇 de Milic韆 PTDR" "7a Divisi髇 de Milic韆 PTDR" "8a Divisi髇 de Milic韆 PTDR" "9a Divisi髇 de Milic韆 PTDR" "10a Divisi髇 de Milic韆 PTDR" 
 	}
 	multi_role = {
-		"第1通用大队" "第2通用大队" "第3通用大队" "第4通用大队" "第5通用大队" 
+		"1. Grupo A閞eo de Caza" "2. Grupo A閞eo de Caza" "3. Grupo A閞eo de Caza" "4. Grupo A閞eo de Caza" "5. Grupo A閞eo de Caza" 
 	}
 	interceptor = {
-		"第1截击大队" "第2截击大队" "第3截击大队" "第4截击大队" "第5截击大队" 
+		"1. Grupo A閞eo de Caza" "2. Grupo A閞eo de Caza" "3. Grupo A閞eo de Caza" "4. Grupo A閞eo de Caza" "5. Grupo A閞eo de Caza" 
+	}
+	jet_int = {
+		"1. Grupo A閞eo de Caza" "2. Grupo A閞eo de Caza" "3. Grupo A閞eo de Caza" "4. Grupo A閞eo de Caza" "5. Grupo A閞eo de Caza" 
+	}
+	jet_mr = {
+		"1. Grupo A閞eo de Caza" "2. Grupo A閞eo de Caza" "3. Grupo A閞eo de Caza" "4. Grupo A閞eo de Caza" "5. Grupo A閞eo de Caza" 
 	}
 	strategic_bomber = {
-		"第1战略轰炸机大队" "第2战略轰炸机大队" "第3战略轰炸机大队" "第4战略轰炸机大队" "第5战略轰炸机大队" 
+		"1. Grupo A閞eo Estrat間ico" "2. Grupo A閞eo Estrat間ico" "3. Grupo A閞eo Estrat間ico" "4. Grupo A閞eo Estrat間ico" "5. Grupo A閞eo Estrat間ico" 
 	}
 	tactical_bomber = {
-		"第1战术轰炸机大队" "第2战术轰炸机大队" "第1战术轰炸机大队" "第4战术轰炸机大队" "第5战术轰炸机大队" 
+		"1. Grupo A閞eo T醕tico" "2. Grupo A閞eo T醕tico" "3. Grupo A閞eo T醕tico" "4. Grupo A閞eo T醕tico" "5. Grupo A閞eo T醕tico" 
+	}
+	jet_bomber = {
+		"1. Grupo A閞eo T醕tico" "2. Grupo A閞eo T醕tico" "3. Grupo A閞eo T醕tico" "4. Grupo A閞eo T醕tico" "5. Grupo A閞eo T醕tico" 
 	}
 	naval_bomber = {
-		"第1海军轰炸机大队" "第2海军轰炸机大队" "第3海军轰炸机大队" "第4海军轰炸机大队" "第5海军轰炸机大队" 
+		"1. Grupo A閞eo de la Armada" "2. Grupo A閞eo de la Armada" "3. Grupo A閞eo de la Armada" "4. Grupo A閞eo de la Armada" "5. Grupo A閞eo de la Armada" 
 	}
 	cas = {
-		"第1俯冲大队" "第2俯冲大队" "第3俯冲大队" "第4俯冲大队" "第5俯冲大队" 
+		"1. Grupo A閞eo del Ej閞cito" "2. Grupo A閞eo del Ej閞cito" "3. Grupo A閞eo del Ej閞cito" "4. Grupo A閞eo del Ej閞cito" "5. Grupo A閞eo del Ej閞cito" 
 	}
 	transport_plane = {
-		"第1运输机大队" "第2运输机大队" "第3运输机大队" "第4运输机大队" "第5运输机大队" 
+		"1. Grupo Aerotransportado del Ej閞cito" "2. Grupo Aerotransportado del Ej閞cito" "3. Grupo Aerotransportado del Ej閞cito" "4. Grupo Aerotransportado del Ej閞cito" "5. Grupo Aerotransportado del Ej閞cito" 
 	}
 	battleship = {
-		"'唐'号战舰" "'埃利欧诺拉'号战舰" 
+		"ARD Don Raf閘 Trujillo" "ARD Eleonora Trujillo" 
 	}
 	light_cruiser = {
-		"'艾尔·本尼法克特'号轻巡" "'圣多明戈'号轻巡" "'圣地亚哥'号轻巡" "'圣佩德罗'号轻巡" "'拉·罗玛娜'号轻巡" 
+		"ARD El Benefactor" "ARD Santo Domingo" "ARD Santiago" "ARD San Pedro" "ARD La Romana" 
 	}
 	heavy_cruiser = {
-		"'艾尔·本尼法克特'号重巡" "'圣多明戈'号重巡" "'圣地亚哥'号重巡" "'圣佩德罗'号重巡" "'拉·罗玛娜'号重巡" 
+		"ARD El Benefactor" "ARD Santo Domingo" "ARD Santiago" "ARD San Pedro" "ARD La Romana" 
 	}
 	battlecruiser = {
-		"'唐'号战巡" "'埃利欧诺拉'号战巡" 
+		"ARD Don Raf閘 Trujillo" "ARD Eleonora Trujillo" 
 	}
 	destroyer = {
-		"第1驱逐大队" "第2驱逐大队" "第3驱逐大队" "第4驱逐大队" "第5驱逐大队" 
+		"1. Flotilla de Destructores" "2. Flotilla de Destructores" "3. Flotilla de Destructores" "4. Flotilla de Destructores" "5. Flotilla de Destructores" 
 	}
 	carrier = {
-		"'多米尼加娜'号航母" "'伊斯拉·卡塔丽娜'号航母" 
+		"ARD Rep鷅lica Dominicana" "ARD Isla Catalina" 
 	}
 	escort_carrier = {
-		"'雅克·德尔·诺特'号轻型航母" "'拉哥·恩里奎罗'号轻型航母" 
+		"ARD Yaque del Norte" "ARD Lago Enriquillo" 
 	}
 	submarine = {
-		"第1潜艇大队" "第2潜艇大队" "第3潜艇大队" "第4潜艇大队" "第5潜艇大队" 
+		"1. Flotilla de Submarinos" "2. Flotilla de Submarinos" "3. Flotilla de Submarinos" "4. Flotilla de Submarinos" "5. Flotilla de Submarinos" 
 	}
 	transport_ship = {
-		"第1运输舰队" "第2运输舰队 " "第3运输舰队" "第4运输舰队" "第5运输舰队" 
+		"1. Flotilla de Transporte" "2. Flotilla de Transporte" "3. Flotilla de Transporte" "4. Flotilla de Transporte" "5. Flotilla de Transporte" 
 	}
 
 }
@@ -114,7 +138,7 @@ unit_names = {
 
 ministers = {
 	49001 = {
-		name = "拉夫科·特鲁西略"
+		name = "Raf閘 Trujillo"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M49001
@@ -125,11 +149,10 @@ ministers = {
 		head_of_government = backroom_backstabber
 		armament_minister = corrupt_kleptocrat
 		chief_of_navy = base_control_doctrine
-		head_of_state = barking_buffoon
 		start_date = 1936.1.1
 	}
 	49002 = {
-		name = "贾辛托·比恩维尼多·佩那多"
+		name = "Jacinto Bienvenido Peynado"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M49002
@@ -139,7 +162,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	49003 = {
-		name = "伊莱亚斯·布拉奇"
+		name = "Elias Brache"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M49003
@@ -148,7 +171,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	49004 = {
-		name = "曼努埃尔·德·赫苏斯·特隆科索"
+		name = "Manuel de Jes鷖 Troncoso"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M49004
@@ -159,7 +182,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	49006 = {
-		name = "赫苏斯·达·科斯塔·鲁兹"
+		name = "Jesus da Costa Ruiz"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M49006
@@ -167,7 +190,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	49009 = {
-		name = "亨伯特·罗加斯"
+		name = "Humberto Rojas"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M49009
@@ -175,7 +198,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	49010 = {
-		name = "阿尼巴·瓦莱约·索萨"
+		name = "Anibal Vallejo Sosa"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M49010
@@ -183,7 +206,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	49035 = {
-		name = "拉斐尔·伊斯佩拉特"
+		name = "Rafael Espaillat"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M49035
@@ -193,7 +216,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	49036 = {
-		name = "弗兰克·费里兹·米兰达"
+		name = "Frank Feliz Miranda"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M49030
@@ -202,7 +225,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	49037 = {
-		name = "弗朗西斯科·普拉茨·拉米雷斯"
+		name = "Francisco Prats Ramirez"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M49037
@@ -212,7 +235,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	49040 = {
-		name = "阿尔贝托·加西亚·万达"
+		name = "Alberto Garcia Vienda"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M49015
@@ -222,7 +245,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	49042 = {
-		name = "拉斐尔·波奈利·方德尔"
+		name = "Rafael Bonelly Fondeur"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M49042
@@ -231,7 +254,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	49044 = {
-		name = "马里奥·英伯特·麦格雷戈"
+		name = "Mario Imbert McGregor"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M49026
@@ -241,7 +264,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	49045 = {
-		name = "胡安·波什"
+		name = "Juan Bosch"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M49021
@@ -251,7 +274,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	49046 = {
-		name = "欧内斯特·波内蒂·伯格斯"
+		name = "Ernesto Bonetti-Burgos"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M49046
@@ -259,7 +282,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	49047 = {
-		name = "朱利奥·奥特加·弗莱尔"
+		name = "Julio Ortega Frier"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M49047
@@ -268,7 +291,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	49048 = {
-		name = "阿尔图罗·代斯普莱代尔"
+		name = "Arturo Despradel"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M49048
@@ -276,7 +299,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	49049 = {
-		name = "曼努埃尔·佩纳·巴托"
+		name = "Manuel Pe馻 Battle"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M49049
@@ -285,7 +308,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	49051 = {
-		name = "赫苏斯·德·加林德斯"
+		name = "Jesus de Galindez"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M49013
@@ -295,7 +318,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	49052 = {
-		name = "艾米利奥·德·罗斯·桑托斯"
+		name = "Emilio de los Santos"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M49052
@@ -303,7 +326,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	49053 = {
-		name = "安东尼奥·莱巴·普尔"
+		name = "Antonio Leyba Pou"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M49025
@@ -312,7 +335,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	49056 = {
-		name = "伊格纳西奥·贝杰尔多"
+		name = "Ignacio Bajordo"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M49056
@@ -320,7 +343,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	49058 = {
-		name = "路易斯·阿迈莫·提奥"
+		name = "Luis Amiamo Tio"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M49058
@@ -328,7 +351,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	49061 = {
-		name = "乔治·巴拉格尔"
+		name = "Jorge Balaguer"
 		ideology = social_conservative
 		loyalty = 0.50
 		picture = M49014
@@ -337,7 +360,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	49062 = {
-		name = "弗朗西斯科·库特里格斯"
+		name = "Francisco Cutricos"
 		ideology = social_democrat
 		loyalty = 0.50
 		picture = M49024
@@ -345,7 +368,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	49066 = {
-		name = "唐纳德·里德·凯布勒尔"
+		name = "Donald Reid Cabral"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M49066
@@ -353,7 +376,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	49067 = {
-		name = "赫克托·特鲁希略"
+		name = "Hector Trujillo"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M49067
@@ -363,7 +386,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	49081 = {
-		name = "赫苏斯·达·科斯塔·鲁兹"
+		name = "Jesus da Costa-Ruiz"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M49006
@@ -371,7 +394,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	49082 = {
-		name = "维克多·维纳斯·罗曼"
+		name = "Victor Vi馻s Roman"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M49027
@@ -380,7 +403,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	49084 = {
-		name = "多明戈·德·罗斯·桑托斯·奥尔蒂斯"
+		name = "Domingo de los Santos Ortiz"
 		ideology = social_conservative
 		loyalty = 0.50
 		picture = M49018
@@ -388,15 +411,15 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	49087 = {
-		name = "霍诺拉西奥·尤纳·罗布莱斯"
+		name = "Honoracio Yuna Robles"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M49087
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1940.1.1
 	}
 	49090 = {
-		name = "埃德加·马丁内斯"
+		name = "Edgar Martinez"
 		ideology = left_wing_radical
 		loyalty = 0.25
 		picture = M49029
@@ -405,11 +428,152 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	49094 = {
-		name = "迭戈·特拉巴约·鲁兹"
+		name = "Diego Trabajo R鷌z"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M49094
 		chief_of_air = carpet_bombing_doctrine
 		start_date = 1942.1.1
+	}
+	# Generic dummy ministers
+	95252 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95253 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95254 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95255 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95256 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95257 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95258 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_government = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		start_date = 1936.1.1
+	}
+	95259 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95260 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
 	}
 }

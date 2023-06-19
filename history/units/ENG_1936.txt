@@ -1,747 +1,793 @@
 theatre = {
-	name = "本土指挥部"
+	name = "Home Command"
 	location = 1964
-	regiment = { type = hq_brigade name = "本土指挥部" historical_model = 0 }
-	army = { 
-		name = "奥尔德肖特指挥部"
-		location = 2020
-		regiment = { type = hq_brigade name = "奥尔德肖特指挥部" historical_model = 0 }	
-		division= {
-			name = "第1步兵师"
-			location = 2020
-			regiment = { type = infantry_brigade name = "本土警备第1步兵旅" historical_model = 1 }
-			regiment = { type = infantry_brigade name = "第2步兵旅" historical_model = 1 }
-			regiment = { type = infantry_brigade name = "第3步兵旅" historical_model = 1 }
-		}
-		division= {
-			name = "第2步兵师"
-			location = 2020
-			regiment = { type = infantry_brigade name = "第4步兵旅" historical_model = 1 }
-			regiment = { type = infantry_brigade name = "第5步兵旅" historical_model = 1 }
-			regiment = { type = infantry_brigade name = "第6步兵旅" historical_model = 1 }
-		}
-	}
-	army = {
-		name = "东部指挥部"
+	regiment = { type = hq_brigade name = "Home Command HQ" historical_model = 1 }
+	corps = {
+		name = "London District"
 		location = 1964
-		regiment = { type = hq_brigade name = "东部指挥部" historical_model = 0 }
+		regiment = { type = hq_brigade name = "London District HQ" historical_model = 1 }	
 		division= {
-			name = "第4步兵师"
-			location = 1850
-			regiment = { type = infantry_brigade name = "第10步兵旅" historical_model = 2 }
-			regiment = { type = infantry_brigade name = "第11步兵旅" historical_model = 2 }
-			regiment = { type = infantry_brigade name = "第12步兵旅" historical_model = 2 }
-		}
-		corps = {
-			name = "东英吉利地区部队"
-			location = 1849
-			regiment = { type = hq_brigade name = "东英吉利地区指挥部" historical_model = 0 }
-			division= {
-				name = "第18步兵师"
-				location = 1849
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第35步兵旅" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第36步兵旅" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第37步兵旅" historical_model = 0 }
-			}
-		}
-		corps = {
-			name = "中央地区部队"
+			name = "London Disrict Division"
 			location = 1964
-			regiment = { type = hq_brigade name = "中央地区指挥部" historical_model = 0 }
-			division= {
-				name = "第12东方师"
-				location = 1964
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第35步兵旅" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第36步兵旅" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第37步兵旅" historical_model = 0 }
-			}
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "4th Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "3rd Cavalry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = engineer_brigade name = "1st London Royal Engineers" experience = 10 historical_model = 0 }
+			regiment = { type = self_propelled_support_brigade name = "23rd London Armoured Car Brigade" experience = 10 historical_model = 1 }	
+		}		
+		division= {
+			name = "The London Division"
+			location = 1964
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1st 'London' Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "2nd 'London' Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "3rd 'London' Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "The London Divisional Royal Artillery" experience = 10 historical_model = 1 }
 		}
 	}
 	corps = {
-		name = "伦敦地区部队"
-		location = 1964
-		regiment = { type = hq_brigade name = "伦敦地区指挥部" historical_model = 0 }
+		name = "Northern Ireland District"
+		location = 1341
+		regiment = { type = hq_brigade name = "Northern Ireland District HQ" historical_model = 1 }	
 		division= {
-			name = "第1伦敦师"
-			location = 1964
+			name = "Northern Ireland Division"
+			location = 1341
 			is_reserve = yes
-			regiment = { type = infantry_brigade name = "第1伦敦步兵旅" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第2伦敦步兵旅" historical_model = 0 }
+			regiment = { type = garrison_brigade name = "1st Irish Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "2nd Irish Infantry Brigade" experience = 10 historical_model = 3 }
+		}
+	}
+	army = { 
+		name = "Aldershot Command"
+		location = 2020
+		regiment = { type = hq_brigade name = "Aldershot Command HQ" historical_model = 1 }			
+		division= {
+			name = "Aldershot Command Division"
+			location = 2020
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1st Cavalry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = light_armor_brigade name = "2nd Royal Tank Corps" experience = 10 historical_model = 0 }
+			regiment = { type = light_armor_brigade name = "4th Royal Tank Corps" experience = 10 historical_model = 2 }
+		}		
+		division= {
+			name = "1st Infantry Division"
+			location = 2020
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1st Guards Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "2nd Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "3rd Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "1st Divisional Royal Artillery" experience = 10 historical_model = 3 }
+			}
+		division= {
+			name = "2nd Infantry Division"
+			location = 2020
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "4th Guards Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "5th Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "6th Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "2nd Divisional Royal Artillery" experience = 10 historical_model = 2 }
 		}
 	}
 	army = {
-		name = "北方指挥部"
-		location = 1433
-		regiment = { type = hq_brigade name = "北方指挥部" historical_model = 0 }
-		division = {
-			name = "第5步兵师"
-			location = 1128
-			regiment = { type = infantry_brigade name = "第13步兵旅" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第15步兵旅" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第17步兵旅" historical_model = 0 }
-		}
-		corps = {
-			name = "诺森伯兰地区部队"
-			location = 1017
-			regiment = { type = hq_brigade name = "诺森伯兰地区指挥部" historical_model = 0 }
-			division= {
-				name = "第23诺森伯兰师"
-				location = 1255
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第69步兵旅" historical_model = 1 }
-				regiment = { type = infantry_brigade name = "第70步兵旅" historical_model = 1 }
-			}
-		}
-		corps = {
-			name = "西莱丁地区部队"
-			location = 1433
-			regiment = { type = hq_brigade name = "西莱丁地区指挥部" historical_model = 0 }
-			division= {
-				name = "第46北中部地区师"
-				location = 1433
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第137步兵旅" historical_model = 1 }
-				regiment = { type = infantry_brigade name = "第138步兵旅" historical_model = 1 }
-				regiment = { type = infantry_brigade name = "第139步兵旅"historical_model = 1 }
-			}
-		}
-	}
-	army = {
-		name = "苏格兰指挥部"
+		name = "Scottish Command"
 		location = 1128
-		regiment = { type = hq_brigade name = "苏格兰指挥部" historical_model = 0 }
+		regiment = { type = hq_brigade name = "Scottish Command HQ" historical_model = 1 }
 		corps = {
-			name = "高地地区部队"
+			name = "Highland Area"
 			location = 1017
-			regiment = { type = hq_brigade name = "高地地区指挥部" historical_model = 0 }
+			regiment = { type = hq_brigade name = "Highland Area HQ" historical_model = 1 }
 			division= {
-				name = "第51高地师"
+				name = "51st 'Highland' Infantry Division"
 				location = 1017
 				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第152步兵旅" historical_model = 2 }
-				regiment = { type = infantry_brigade name = "第153步兵旅" historical_model = 2 }
-				regiment = { type = infantry_brigade name = "第154步兵旅" historical_model = 2 }
+				regiment = { type = infantry_brigade name = "152nd '1st Highland' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "153rd '2nd Highland' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "154th '3rd Highland' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "51st 'Highland' Divisional Royal Artillery" experience = 10 historical_model = 1 }
 			}
 		}
 		corps = {
-			name = "低地地区部队"
+			name = "Lowland Area"
 			location = 1127
-			regiment = { type = hq_brigade name = "低地地区指挥部" historical_model = 0 }
+			regiment = { type = hq_brigade name = "Lowland Area HQ" historical_model = 1 }
 			division= {
-				name = "第52低地师"
+				name = "52nd 'Lowland' Division"
 				location = 1127
 				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第155步兵旅" historical_model = 2 }
-				regiment = { type = infantry_brigade name = "第156步兵旅" historical_model = 2 }
-				regiment = { type = infantry_brigade name = "第157步兵旅" historical_model = 2 }
-			}
-		}
-	}
-	army = {
-		name = "南方指挥部"
-		location = 2077
-		regiment = { type = hq_brigade name = "南方指挥部" historical_model = 0 }
-		division = {
-			name = "第3步兵师"
-			location = 2019	
-			regiment = { type = infantry_brigade name = "第8步兵旅" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第9步兵旅" historical_model = 0 }
-			regiment = { type = infantry_brigade name = "第10步兵旅" historical_model = 0 }
-		}
-		corps = {
-			name = "西南指挥部"
-			location = 2250
-			regiment = { type = hq_brigade name = "西南指挥部" historical_model = 0 }
-			division= {
-				name = "第43威塞克斯师"
-				location = 2077
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第128步兵旅" historical_model = 1 }
-				regiment = { type = infantry_brigade name = "第129步兵旅" historical_model = 1 }
-				regiment = { type = infantry_brigade name = "第130步兵旅" historical_model = 1 }
-			}
-		}
-		corps = {
-			name = "南中部地区地区部队"
-			location = 1907
-			regiment = { type = hq_brigade name = "南中部地区地区指挥部" historical_model = 0 }
-			division= {
-				name = "第48南中部地区师"
-				location = 1907
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第143步兵旅" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第144步兵旅" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第145步兵旅" historical_model = 0 }
-			}
-		}
-	}
-		army = {
-		name = "西部指挥部"
-		location = 1613
-		regiment = { type = hq_brigade name = "西部指挥部" historical_model = 0 }
-		corps = {
-			name = "威尔士地区指挥部"
-			location = 1727
-			regiment = { type = hq_brigade name = "威尔士地区指挥部" historical_model = 0 }
-			division= {
-				name = "第38威尔士师"
-				location = 1727
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第113步兵旅" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第114步兵旅" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第115步兵旅" historical_model = 0 }
-			}
-		}
-		corps = {
-			name = "西兰开夏地区部队"
-			location = 1521
-			regiment = { type = hq_brigade name = "西兰开夏地区指挥部" historical_model = 0 }
-			division= {
-				name = "第55西兰开夏师"
-				location = 1521
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第164步兵旅" historical_model = 0 }
-				regiment = { type = infantry_brigade name = "第164步兵旅" historical_model = 0 }
-			}
-		}
-		corps = {
-			name = "东兰开夏地区部队"
-			location = 1522
-			regiment = { type = hq_brigade name = "东兰开夏指挥部" historical_model = 0 }
-			division= {
-				name = "第42东兰开夏师"
-				location = 1522
-				is_reserve = yes
-				regiment = { type = infantry_brigade name = "第125步兵旅" historical_model = 1 }
-				regiment = { type = infantry_brigade name = "第126步兵旅" historical_model = 1 }
-				regiment = { type = infantry_brigade name = "第127步兵旅" historical_model = 1 }
+				regiment = { type = infantry_brigade name = "155th 'East Scottish' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "156th 'West Scottish' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "157th 'Highland Light Infantry' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "52nd 'Lowland' Divisional Royal Artillery" experience = 10 historical_model = 0 }
 			}
 		}
 	}	
-}
-division = {
-	name = "香港指挥部"
-	location = 5868
-	regiment = { type = garrison_brigade name = "九龙卫戍旅" historical_model = 0 }
-	regiment = { type = garrison_brigade name = "香港卫戍旅" historical_model = 0 }
-}
-division = {
-	name = "新加坡指挥部"
-	location = 6394
-	regiment = { type = garrison_brigade name = "马拉西亚卫戍旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第12印度步兵旅" historical_model = 0 }
-	regiment = { type = garrison_brigade name = "海峡殖民地志愿者部队" historical_model = 0 }
-}
-division = {
-	name = "直布罗陀指挥部"
-	location = 5191
-	regiment = { type = garrison_brigade name = "直布罗陀卫戍旅" historical_model = 0 }
-}
-division = {
-	name = "锡兰指挥部"
-	location = 6320
-	regiment = { type = garrison_brigade name = "锡兰卫戍旅" historical_model = 0 }
-}
-division = {
-	name = "马耳他指挥部"
-	location = 5359
-	regiment = { type = garrison_brigade name = "马耳他卫戍旅" historical_model = 0 }
-}
-corps = {
-	name = "中东指挥部"
-	location = 5567
-	regiment = { type = hq_brigade name = "中东指挥部" historical_model = 0 }
-	division= {
-		name = "第7步兵师"
-		location = 5567
-		regiment = { type = infantry_brigade name = "第22步兵旅" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第14步兵旅" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第16步兵旅" historical_model = 0 }
+	army = {
+		name = "Northern Command"
+		location = 1433
+		regiment = { type = hq_brigade name = "Northern Command HQ" historical_model = 1 }
+		division= {
+			name = "Northern Command Division"
+			location = 1433
+			is_reserve = yes
+			regiment = { type = light_armor_brigade name = "7th Royal Tank Corps" experience = 10 historical_model = 2 }
+			regiment = { type = truck_towed_support_brigade name = "Northern Command Divisional Royal Artillery" experience = 10 historical_model = 3 }
+		}		
+		division = {
+			name = "5th Infantry Division"
+			location = 1128
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "13th Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "15th Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "17th Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = self_propelled_support_brigade name = "5th Reconnaissance Regiment" experience = 10 historical_model = 1 }	
+		}
+		corps = {
+			name = "Northumbrian Area"
+			location = 1255
+			regiment = { type = hq_brigade name = "Northumbrian Area HQ" historical_model = 1 }
+			division= {
+				name = "50th 'Northumbrian' Motorized Division"
+				location = 1255
+				is_reserve = yes
+				regiment = { type = motorized_brigade name = "150th Infantry Brigade" historical_model = 0 }
+				regiment = { type = motorized_brigade name = "151st Infantry Brigade" historical_model = 0 }
+			}
+		}
+		corps = {
+			name = "West Riding Area"
+			location = 1433
+			regiment = { type = hq_brigade name = "West Riding Area HQ" historical_model = 1 }
+			division= {
+				name = "49th 'West Riding' Infantry Division"
+				location = 1433
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "146th Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "147th Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "148th Infantry Brigade" experience = 10 historical_model = 3 }
+			}
+		}
+	}	
+	army = {
+		name = "Eastern Command"
+		location = 1964
+		regiment = { type = hq_brigade name = "Eastern Command HQ" historical_model = 1 }		
+		division= {
+			name = "Eastern Command Division"
+			location = 2020
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "2nd Cavalry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = light_armor_brigade name = "3rd Royal Tank Corps" experience = 10 historical_model = 1 }
+			regiment = { type = truck_towed_support_brigade name = "Eastern Command Divisional Royal Artillery" experience = 10 historical_model = 3 }
+		}			
+		division= {
+			name = "4th Infantry Division"
+			location = 1850
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "10th Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "11th Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "12th Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "4th Divisional Royal Artillery" experience = 10 historical_model = 1 }
+		}
+		corps = {
+			name = "Home Counties Area"
+			location = 1964
+			regiment = { type = hq_brigade name = "Home Counties Area HQ" historical_model = 1 }
+			division= {
+				name = "44th 'Home Counties' Infantry Division"
+				location = 1850
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "131st 'Surrey' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "132nd 'Middlesex & Kent' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "133rd 'Sussex & Kent' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "44th 'Home Counties' Divisional Royal Artillery" experience = 10 historical_model = 0 }
+			}
+		}		
+		corps = {
+			name = "East Anglia Area"
+			location = 1849
+			regiment = { type = hq_brigade name = "East Anglia Area HQ" historical_model = 1 }
+			division= {
+				name = "54th 'East Anglia' Infantry Division"
+				location = 1849
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "161st 'Essex'Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "162nd 'East Midland' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "163rd 'Norfolk & Suffolk' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "54th 'East Anglian' Divisional Royal Artillery" experience = 10 historical_model = 2 }
+			}
+		}
 	}
-	division= {
-		name = "第8步兵师"
-		location = 5567
-		regiment = { type = infantry_brigade name = "第13步兵旅" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第15步兵旅" historical_model = 0 }
+	army = {
+		name = "Western Command"
+		location = 1613
+		regiment = { type = hq_brigade name = "Western Command HQ" historical_model = 1 }
+		corps = {
+			name = "East Lancashire Area"
+			location = 1522
+			regiment = { type = hq_brigade name = "East Lanacashire Area HQ" historical_model = 1 }
+			division= {
+				name = "42nd 'East Lancashire' Infantry Division"
+				location = 1522
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "125th 'Lancashire Fusiliers' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "126th 'East Lancashire' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "127th 'Manchester' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "42nd 'East Lancashire' Divisional Royal Artillery" experience = 10 historical_model = 2 }
+			}
+		}		
+		corps = {
+			name = "Welsh Area"
+			location = 1727
+			regiment = { type = hq_brigade name = "Welsh Area HQ" historical_model = 1 }
+			division= {
+				name = "53rd 'Welsh' Infantry Division"
+				location = 1727
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "158th 'Royal Welch' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "159th 'Welsh Border' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "160th 'South Wales' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "53rd 'Welsh' Divisional Royal Artillery" experience = 10 historical_model = 1 }
+			}
+		}
+		corps = {
+			name = "West Lancashire Area"
+			location = 1521
+			regiment = { type = hq_brigade name = "West Lanacashire Area HQ" historical_model = 1 }
+			division= {
+				name = "55th 'West Lancashire' Infantry Division"
+				location = 1521
+				is_reserve = yes
+				regiment = { type = motorized_brigade name = "164th 'North Lancashire' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = motorized_brigade name = "165th 'Liverpool' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = motorized_brigade name = "166th 'South Lancashire & Cheshire' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "55th 'West Lancashire' Royal Artillery" experience = 10 historical_model = 0 }
+			}
+		}
+	}
+	army = {
+		name = "Southern Command"
+		location = 2077
+		regiment = { type = hq_brigade name = "Southern Command HQ" historical_model = 1 }
+		division = {
+			name = "Southern Command Division"
+			location = 2019	
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "2nd Cavalry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = armor_brigade name = "1st Tank Brigade" experience = 10 historical_model = 0 }
+			regiment = { type = truck_towed_support_brigade name = "Southern Command Divisional Royal Artillery" experience = 10 historical_model = 3 }
+		}
+		division = {
+			name = "3rd Infantry Division"
+			location = 2019	
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "7th Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "8th Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "9th Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "The Royal Horse Guards" experience = 10 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "3rd Divisional Royal Artillery" experience = 10 historical_model = 1 }
+		}
+		corps = {
+			name = "South-Western Area"
+			location = 2250
+			regiment = { type = hq_brigade name = "South-Western Area HQ" historical_model = 1 }
+			division= {
+				name = "43rd 'Wessex' Infantry Division"
+				location = 2077
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "128th 'Hampshire' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "129th 'South Western' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "130th 'Devon & Cornwall' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "43rd 'Wessex' Divisional Royal Artillery" experience = 10 historical_model = 0 }
+			}
+		}
+		corps = {
+			name = "South Midland Area"
+			location = 1907
+			regiment = { type = hq_brigade name = "South Midland Area HQ" historical_model = 1 }
+			division= {
+				name = "48th 'South Midland' Infantry Division"
+				location = 1907
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "143rd 'Warwickshire' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "144th 'Gloucestershire & Worcestershire' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "145th 'South Midland' Infantry Brigade" experience = 10 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "48th 'South Midland' Divisional Royal Artillery" experience = 10 historical_model = 2 }
+			}
+		}
+	}	
+	navy = {
+		name = "Home Fleet"
+		base = 604
+		location = 604
+		ship = { type = carrier name = "HMS Furious" experience = 10 historical_model = 5 air = { location = 604 wing = { type = cag experience = 10 historical_model = 0 } wing = { type = cag experience = 10 historical_model = 0 } } }		
+		ship = { type = battleship name = "HMS Nelson" experience = 10 historical_model = 6 }
+		ship = { type = battleship name = "HMS Rodney" experience = 10 historical_model = 6 }
+		ship = { type = battleship name = "HMS Royal Sovereign" experience = 10 historical_model = 3 }
+		ship = { type = battleship name = "HMS Royal Oak" experience = 10 historical_model = 3 }
+		ship = { type = battleship name = "HMS Ramillies" experience = 10 historical_model = 3 }
+		ship = { type = battlecruiser name = "HMS Hood" experience = 10 historical_model = 4 }
+		ship = { type = battlecruiser name = "HMS Renown" experience = 10 historical_model = 2 }
+		ship = { type = battlecruiser name = "HMS Repulse" experience = 10 historical_model = 2 }
+		ship = { type = heavy_cruiser name = "HMS Norfolk" experience = 10 historical_model = 6 }	
+		ship = { type = light_cruiser name = "HMS Calcutta" experience = 10 historical_model = 1 }
+		ship = { type = light_cruiser name = "HMS Emerald" experience = 10 historical_model = 3 }
+		ship = { type = light_cruiser name = "HMS Enterprise" experience = 10 historical_model = 3 }
+		ship = { type = destroyer name = "11st Destroyer Flotilla" experience = 10 historical_model = 1 }		
+		ship = { type = destroyer name = "12nd Destroyer Flotilla" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "15th Destroyer Flotilla" experience = 10 historical_model = 5 }
+		ship = { type = destroyer name = "16th Destroyer Flotilla" experience = 10 historical_model = 5 }		
+		}
+	navy = {
+		name = "Reserve Fleet"
+		base = 2078
+		location = 2078
+		ship = { type = escort_carrier name = "HMS Argus" experience = 10 historical_model = 2 air = { location = 2078 wing = { type = cag experience = 10 historical_model = 0 } } }		
+		ship = { type = battleship name = "HMS Queen Elizabeth" experience = 10 historical_model = 2 }
+		ship = { type = battleship name = "HMS Valiant" experience = 10 historical_model = 2 }			
+		ship = { type = heavy_cruiser name = "HMS Frobisher" experience = 10 historical_model = 1 }
+		ship = { type = heavy_cruiser name = "HMS Hawkins" experience = 10 historical_model = 1 }
+		ship = { type = light_cruiser name = "HMS Carlisle" experience = 10 historical_model = 1 }
+		ship = { type = light_cruiser name = "HMS Curlew" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "10th Destroyer Flotilla" experience = 10 historical_model = 1 }
+	}
+	navy = {	
+		name = "Channel Force"
+		base = 2078
+		location = 2078
+		ship = { type = carrier name = "HMS Courageous" experience = 10 historical_model = 5 air = { location = 2078 wing = { type = cag experience = 10 historical_model = 0 } wing = { type = cag experience = 10 historical_model = 0 } } }
+		ship = { type = escort_carrier name = "HMS Hermes" experience = 10 historical_model = 5 air = { location = 2078 wing = { type = cag experience = 10 historical_model = 0 } } }
+		ship = { type = battleship name = "HMS Revenge" experience = 10 historical_model = 3 }
+		ship = { type = battleship name = "HMS Resolution" experience = 10 historical_model = 3 }	
+		ship = { type = light_cruiser name = "HMS Ceres" experience = 10 historical_model = 1 }
+		ship = { type = light_cruiser name = "HMS Caradoc" experience = 10 historical_model = 1 }
+		ship = { type = light_cruiser name = "HMS Cairo" experience = 10 historical_model = 1 }
+		
+	}	
+	navy = {
+		name = "Humber Force"
+		base = 1524
+		location = 1524
+		ship = { type = destroyer name = "13rd Destroyer Flotilla" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "14th Destroyer Flotilla" experience = 10 historical_model = 5 }		
+	}
+	navy = {	
+		name = "7th Cruiser Squadron"
+		base = 604
+		location = 604
+		ship = { type = light_cruiser name = "HMS Diomede" experience = 10 historical_model = 2 }		
+		ship = { type = light_cruiser name = "HMS Dragon" experience = 10 historical_model = 2 }
+	}	
+	navy = {	
+		name = "12th Cruiser Squadron"
+		base = 604
+		location = 604
+		ship = { type = heavy_cruiser name = "HMS Effingham" experience = 10 historical_model = 1 }
+		ship = { type = light_cruiser name = "HMS Cardiff" experience = 10 historical_model = 1 }	
+		ship = { type = light_cruiser name = "HMS Delhi" experience = 10 historical_model = 2 }
+		ship = { type = light_cruiser name = "HMS Dunedin" experience = 10 historical_model = 2 }		
+	}	
+	navy = {	
+		name = "Rosyth Escort Force"
+		base = 1053
+		location = 1053
+		ship = { type = destroyer name = "5th Destroyer Flotilla" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "6th Destroyer Flotilla" experience = 10 historical_model = 1 }
+	}	
+	navy = {	
+		name = "Nore Fleet"
+		base = 2021
+		location = 2021
+		ship = { type = heavy_cruiser name = "HMS London" experience = 10 historical_model = 5 }		
+		ship = { type = light_cruiser name = "HMS Curacao" experience = 10 historical_model = 1 }		
+		ship = { type = destroyer name = "3rd Destroyer Flotilla" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "4th Destroyer Flotilla" experience = 10 historical_model = 1 }
+	}	
+	navy = {	
+		name = "Portsmouth Fleet"
+		base = 2078
+		location = 2078
+		ship = { type = heavy_cruiser name = "HMS Suffolk" experience = 10 historical_model = 4 }		
+		ship = { type = destroyer name = "17th Destroyer Flotilla" experience = 10 historical_model = 6 }
+		ship = { type = destroyer name = "18th Destroyer Flotilla" experience = 10 historical_model = 6 }	
+		ship = { type = destroyer name = "19th Destroyer Flotilla" experience = 10 historical_model = 6 }		
+	}	
+	navy = {	
+		name = "Western Approaches Fleet"
+		base = 2250
+		location = 2250
+		ship = { type = destroyer name = "20th Destroyer Flotilla" experience = 10 historical_model = 7 }
+		ship = { type = destroyer name = "21st Destroyer Flotilla" experience = 10 historical_model = 7 }
+		ship = { type = destroyer name = "22nd Destroyer Flotilla" experience = 10 historical_model = 7 }
+		ship = { type = destroyer name = "23rd Destroyer Flotilla" experience = 10 historical_model = 7 }		
+	}	
+	navy = {
+		name = "2nd Submarine Squadron"
+		base = 604
+		location = 604
+		ship = { type = submarine name = "3rd Submarine Flotilla" experience = 10 historical_model = 7 }
+		ship = { type = submarine name = "4th Submarine Flotilla" experience = 10 historical_model = 8 }
+		ship = { type = submarine name = "5th Submarine Flotilla" experience = 10 historical_model = 8 }
+		ship = { type = submarine name = "6th Submarine Flotilla" experience = 10 historical_model = 8 }
+		ship = { type = submarine name = "7th Submarine Flotilla" experience = 10 historical_model = 9 }
+	}
+	navy = {
+		name = "1st Transport Ship Squadron"
+		base = 6394
+		location = 6394
+		ship = { type = transport_ship name = "Suffolk Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Trojan Star Flotilla" experience = 10 historical_model = 0 }
+	}
+	navy = {
+		name = "2nd Transport Ship Squadron"
+		base = 2078
+		location = 2078
+		ship = { type = transport_ship name = "Empire Arquebus Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Hororata Flotilla" experience = 10 historical_model = 0 }
+	}
+	navy = {
+		name = "3rd Transport Ship Squadron"
+		base = 2078
+		location = 2078
+		ship = { type = transport_ship name = "Clan Macauley Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Empire Captain Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Andes Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Empire Charmain Flotilla" experience = 10 historical_model = 0 }
+	}
+	navy = {
+		name = "4th Transport Ship Squadron"
+		base = 604
+		location = 604
+		ship = { type = transport_ship name = "Essex Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Maloja Flotilla" experience = 10 historical_model = 0 }
+	}
+	navy = {
+		name = "5th Transport Ship Squadron"
+		base = 2250
+		location = 2250
+		ship = { type = transport_ship name = "Empire Splendour Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Sam Torch Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = transport_ship name = "Resolution Flotilla" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "1st Tactical Wing"
+		base = 1521
+		location = 1521
+		wing = { type = tactical_bomber name = "No.1 RAF Tactical Group" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "RAF Coastal Naval Command"
+		base = 1521
+		location = 1521
+		wing = { type = naval_bomber name = "No.15 RN Coastal Naval Patrol Group" experience = 10 historical_model = 1 }
+	}
+	air = {
+		name = "1st Fighter Wing"
+		base = 1521
+		location = 1521
+		wing = { type = interceptor name = "No.11 RAF Fighter Group" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "RAF Strategic Bomber Command"
+		base = 1731
+		location = 1731
+		wing = { type = strategic_bomber name = "no.2 RAF Strategic Group" experience = 10 historical_model = 0 }
+		wing = { type = strategic_bomber name = "no.3 RAF Strategic Group" experience = 10 historical_model = 0 }
+		wing = { type = strategic_bomber name = "no.4 RAF Strategic Group" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "RAF Air Combat Support Command"
+		base = 2078
+		location = 2078
+		wing = { type = cas name = "No.1 RAF Dive Bomber Group" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "2nd Fighter Wing"
+		base = 2078
+		location = 2078
+		wing = { type = interceptor name = "No.12 RAF Fighter Group" experience = 10 historical_model = 0 }
+	}
+	air = {
+		name = "3rd Fighter Wing"
+		base = 2078
+		location = 2078
+		wing = { type = interceptor name = "No.13 RAF Fighter Group" experience = 10 historical_model = 0 }
 	}
 }
-division = {
-	name = "第4印度步兵师"
-	location = 9406
-	regiment = { type = infantry_brigade name = "第5印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第7印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第11印度步兵旅" historical_model = 0 }
+theatre = {
+	name = "North Africa Command"
+	location = 5563
+	regiment = { type = hq_brigade name = "North Africa Command HQ" historical_model = 1 }	
+	corps = {
+		name = "Middle East Command"
+		location = 5563
+		regiment = { type = hq_brigade name = "Middle East Command HQ" historical_model = 1 }
+		division = {
+			name = "7th Infantry Division"
+			location = 5563
+			is_reserve = yes
+			regiment = { type = garrison_brigade name = "14th Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "16th Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = garrison_brigade name = "23rd Infantry Brigade" experience = 10 historical_model = 3 }
+			regiment = { type = engineer_brigade name = "2nd Royal Engineers" experience = 10 historical_model = 0 }
+		}
+	}
+	corps = {
+		name = "Trans-Jordan and Palestine Command"
+		location = 7496
+		regiment = { type = hq_brigade name = "Trans-Jordan and Palestine Command HQ" historical_model = 1 }		
+		division = {
+			name = "Trans-Jordan and Palestine Infantry Division"
+			location = 7496
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1st Northamptonshire Regiment" experience = 10 builder = "ENG" historical_model = 3 }
+			regiment = { type = infantry_brigade name = "2nd South Staffordshire Regiment" experience = 10 builder = "ENG" historical_model = 3 }
+			regiment = { type = self_propelled_support_brigade name = "4th Armoured Car Squadron" builder = "ENG" experience = 10 historical_model = 2 }
+		}	
+	}	
+	division = {
+		name = "Gibraltar Command"
+		location = 5191
+		is_reserve = yes
+		regiment = { type = militia_brigade name = "1st King抯 Own Yorkshire Regiment" experience = 10 historical_model = 3 }
+		regiment = { type = garrison_brigade name = "2nd Royal Norfolk Regiment" experience = 10 historical_model = 3 }
+	}
+	division = {
+		name = "Malta Command"
+		location = 5359
+		is_reserve = yes
+		regiment = { type = garrison_brigade name = "1st Malta Brigade" experience = 10 historical_model = 3 }
+		regiment = { type = garrison_brigade name = "2nd Malta Brigade" experience = 10 historical_model = 3 }
+	}
+	division = {
+		name = "Sudan Colonial Territory"
+		location = 9904
+		is_reserve = yes
+		regiment = { type = militia_brigade name = "Sudan Defence Force" experience = 10 historical_model = 3 }
+		regiment = { type = truck_towed_support_brigade name = "Sudan Mixed Royal Artillery" experience = 10 historical_model = 0 }
+	}
+	division = {
+		name = "Uganda Colonial Territory"
+		location = 9988
+		is_reserve = yes
+		regiment = { type = militia_brigade name = "Uganda Territorial Force" experience = 10 historical_model = 3 }
+		regiment = { type = self_propelled_support_brigade name = "2nd Royal Armoured Car Brigade" experience = 10 historical_model = 0 }
+	}
+	division = {
+		name = "Kenya Colonial Territory"
+		location = 9988
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "The Northern Brigade" experience = 10 historical_model = 3 }
+		regiment = { type = self_propelled_support_brigade name = "3rd Royal Armoured Car Brigade" experience = 10 historical_model = 0 }
+	}
+	navy = {
+		name = "Mediterranean Fleet"
+		base = 5359
+		location = 5359
+		ship = { type = carrier name = "HMS Glorious" experience = 10 historical_model = 5 air = { location = 5359 wing = { type = cag experience = 10 historical_model = 0 } wing = { type = cag experience = 10 historical_model = 0 } } }	
+		ship = { type = battleship name = "HMS Barham" experience = 10 historical_model = 2 }
+		ship = { type = battleship name = "HMS Malaya" experience = 10 historical_model = 2 }
+#		ship = { type = battleship name = "HMS Warspite" experience = 10 historical_model = 2 }
+		ship = { type = heavy_cruiser name = "HMS Devonshire" experience = 10 historical_model = 5 }
+		ship = { type = heavy_cruiser name = "HMS Shropshire" experience = 10 historical_model = 5 }
+		ship = { type = heavy_cruiser name = "HMS Sussex" experience = 10 historical_model = 5 }
+		ship = { type = light_cruiser name = "HMS Arethusa" experience = 10 historical_model = 8 }
+		ship = { type = light_cruiser name = "HMS Galatea" experience = 10 historical_model = 8 }
+		ship = { type = light_cruiser name = "HMS Coventry" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "1st Destroyer Flotilla" experience = 10 historical_model = 0 }
+		ship = { type = destroyer name = "2nd Destroyer Flotilla" experience = 10 historical_model = 0 }	
+		ship = { type = destroyer name = "1st Destroyer Flotilla" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "2nd Destroyer Flotilla" experience = 10 historical_model = 1 }		
+		ship = { type = destroyer name = "3rd Destroyer Flotilla" experience = 10 historical_model = 1 }		
+		ship = { type = destroyer name = "5th Destroyer Flotilla" experience = 10 historical_model = 1 }		
+		ship = { type = destroyer name = "6th Destroyer Flotilla" experience = 10 historical_model = 1 }
+		ship = { type = destroyer name = "7th Destroyer Flotilla" experience = 10 historical_model = 1 }		
+		ship = { type = destroyer name = "8th Destroyer Flotilla" experience = 10 historical_model = 1 }	
+		ship = { type = destroyer name = "9th Destroyer Flotilla" experience = 10 historical_model = 1 }
+	}
+	navy = {
+		name = "1st Submarine Squadron"
+		base = 5359
+		location = 5359
+		ship = { type = submarine name = "1st Submarine Flotilla" experience = 10 historical_model = 1 }
+		ship = { type = submarine name = "2nd Submarine Flotilla" experience = 10 historical_model = 3 }
+	}
+	air = {
+		name = "Mediterranean Air Command"
+		base = 5359
+		location = 5359
+		wing = { type = cas name = "Middle East Group" experience = 10 historical_model = 0 }
+		wing = { type = transport_plane name = "No.46 Military Transport Group" experience = 10 historical_model = 1 }
+	}
 }
-division = {
-	name = "第5印度步兵师"	
-	location = 5843
-	regiment = { type = infantry_brigade name = "第9印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第10印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第29印度步兵旅" historical_model = 0 }
+theatre = {
+	name = "West Africa Command"
+	location = 9920
+	regiment = { type = hq_brigade name = "West Africa Command HQ" historical_model = 1 }
+	division = {
+		name = "Lagos Colonial Army"
+		location = 9920
+		is_reserve = yes
+		regiment = { type = militia_brigade name = "1st Lagos Colonial Forces" experience = 10 historical_model = 3 }
+		regiment = { type = militia_brigade name = "2nd Lagos Colonial Forces" experience = 10 historical_model = 3 }
+	}
+	division = {
+		name = "Accra Colonial Army"
+		location = 9969
+		is_reserve = yes
+		regiment = { type = militia_brigade name = "1st Accra Colonial Forces" experience = 10 historical_model = 3 }
+		regiment = { type = militia_brigade name = "2nd Accra Colonial Forces" experience = 10 historical_model = 3 }
+	}
+	division = {
+		name = "Freetown Colonial Army"
+		location = 9915
+		is_reserve = yes
+		regiment = { type = militia_brigade name = "1st Freetown Colonial Forces" experience = 10 historical_model = 3 }
+		regiment = { type = militia_brigade name = "2nd Freetown Colonial Forces" experience = 10 historical_model = 3 }
+	}	
+	navy = {	
+		name = "North Atlantic Fleet"
+		base = 5191
+		location = 5191
+		ship = { type = light_cruiser name = "HMS Capetown" experience = 10 historical_model = 1 }		
+		ship = { type = light_cruiser name = "HMS Colombo" experience = 10 historical_model = 1 }	
+	}
 }
-division = {
-	name = "第6印度步兵师"
-	location = 6070
-	regiment = { type = infantry_brigade name = "第26印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第27印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第28印度步兵旅" historical_model = 0 }
+theatre = {
+	name = "South Africa Command"
+	location = 10130
+	regiment = { type = hq_brigade name = "South Africa Command HQ" historical_model = 1 }
+	division = {
+		name = "Tanganyika Colonial Territory"
+		location = 10130
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "The Southern Brigade" experience = 10 historical_model = 3 }
+		regiment = { type = militia_brigade name = "Southern Rhodesia Forces" experience = 10 historical_model = 3 }
+	}
+	navy = {	
+		name = "South Atlantic Fleet"
+		base = 9915
+		location = 9915
+		ship = { type = light_cruiser name = "HMS Neptune" experience = 10 historical_model = 6 }
+		ship = { type = light_cruiser name = "HMS Dauntless" experience = 10 historical_model = 2 }	
+		ship = { type = destroyer name = "4th Destroyer Flotilla" experience = 10 historical_model = 1 }	
+	}	
 }
-division = {
-	name = "第7印度步兵师"
-	location = 5762
-	regiment = { type = infantry_brigade name = "第33印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第89印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第114印度步兵旅" historical_model = 0 }
+theatre = {
+	name = "Caribbean Command"
+	location = 10628
+	regiment = { type = hq_brigade name = "Caribbbean Command HQ" historical_model = 1 }
+	division = {
+		name = "Guayana Colonial Army"
+		location = 9896
+		is_reserve = yes
+		regiment = { type = militia_brigade name = "1st Guayana Colonial Forces" experience = 10 historical_model = 3 }
+		regiment = { type = militia_brigade name = "2nd Guayana Colonial Forces" experience = 10 historical_model = 3 }
+	}
+	division = {
+		name = "Bahama Colonial Army"
+		location = 7521
+		is_reserve = yes
+		regiment = { type = militia_brigade name = "1st Bahama Colonial Forces" experience = 10 historical_model = 3 }
+		regiment = { type = militia_brigade name = "2nd Bahama Colonial Forces" experience = 10 historical_model = 3 }
+	}
+	navy = {	
+		name = "America and West Indies Fleet"
+		base = 10628
+		location = 10628
+		ship = { type = heavy_cruiser name = "HMS Berwick" experience = 10 historical_model = 4 }
+		ship = { type = heavy_cruiser name = "HMS York" experience = 10 historical_model = 7 }			
+		ship = { type = light_cruiser name = "HMS Orion" experience = 10 historical_model = 6 }			
+	}				
+	navy = {	
+		name = "South America Squadron"
+		base = 10479
+		location = 10479
+		ship = { type = heavy_cruiser name = "HMS Exeter" experience = 10 historical_model = 7 }
+		ship = { type = heavy_cruiser name = "HMS Cumberland" experience = 10 historical_model = 4 }
+		ship = { type = light_cruiser name = "HMS Ajax" experience = 10 historical_model = 6 }		
+	}	
 }
-division = {
-	name = "第8印度步兵师"
-	location = 9405
-	regiment = { type = infantry_brigade name = "第17印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第18印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第19印度步兵旅" historical_model = 0 }
-}
-division = {
-	name = "第10印度步兵师"
-	location = 6008
-	regiment = { type = infantry_brigade name = "第10印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第20印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第25印度步兵旅" historical_model = 0 }
-}
-division = {
-	name = "第11印度步兵部队"
-	location = 6005
-	regiment = { type = infantry_brigade name = "第6印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第15印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第28印度步兵旅" historical_model = 0 }
-}
-division = {
-	name = "第14印度步兵师"
-	location = 6182
-	regiment = { type = infantry_brigade name = "第47印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第55印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第88印度步兵旅" historical_model = 0 }
-}
-division = {
-	name = "第19印度步兵师"
-	location = 6134
-	regiment = { type = infantry_brigade name = "第62印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第64印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第98印度步兵旅" historical_model = 0 }
-}
-division = {
-	name = "第20印度步兵师"
-	location = 6255
-	regiment = { type = infantry_brigade name = "第32印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第80印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第100印度步兵旅" historical_model = 0 }
-}
-division = {
-	name = "第23印度步兵师"
-	location = 6206
-	regiment = { type = infantry_brigade name = "第1印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第37印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第49印度步兵旅" historical_model = 0 }
-}
-division = {
-	name = "第25印度步兵师"
-	location = 6283
-	regiment = { type = infantry_brigade name = "第51印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第53印度步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "第74印度步兵旅" historical_model = 0 }
-}
-division = {
-	name = "苏丹卫戍军"
-	location = 9904
-	regiment = { type = militia_brigade name = "苏丹防卫部队" historical_model = 0 }
-}
-division = {
-	name = "乌干达殖民军"
-	location = 10074
-	regiment = { type = militia_brigade name = "乌干达地方部队" historical_model = 0 }
-}
-division = {
-	name = "肯尼亚殖民军"
-	location = 10074
-	regiment = { type = infantry_brigade name = "第1东非步兵旅" historical_model = 0 }
-	regiment = { type = militia_brigade name = "肯尼亚地方部队" historical_model = 0 }
-}
-division = {
-	name = "坦干伊克殖民军"
-	location = 10066
-	regiment = { type = infantry_brigade name = "南方步兵旅" historical_model = 0 }
-	regiment = { type = militia_brigade name = "坦干伊克地方部队" historical_model = 0 }
-}
-
-navy = {
-	name = "本土舰队"
-	base = 604
-	location = 604
-	ship = { type = battleship name = "HMS 纳尔逊号" historical_model = 2 }
-	ship = { type = battleship name = "HMS 罗德尼号" historical_model = 2 }
-	ship = { type = battleship name = "HMS 君权号" historical_model = 1 }
-	ship = { type = battleship name = "HMS 皇家橡树号" historical_model = 1 }
-	ship = { type = battleship name = "HMS 决心号" historical_model = 1 }
-	ship = { type = battleship name = "HMS 拉米利斯号" historical_model = 1 }
-	ship = { type = battlecruiser name = "HMS 胡德号" historical_model = 2 pride = yes }
-	ship = { type = battlecruiser name = "HMS 声望号" historical_model = 1 }
-	ship = { type = battlecruiser name = "HMS 反击号" historical_model = 1 }
-	ship = { type = carrier name = "HMS 暴怒号" historical_model = 1 air = { location = 604 wing = { type = cag historical_model = 1 } } air = { location = 604 wing = { type = cag historical_model = 1 } } }
-	ship = { type = light_cruiser name = "HMS 开罗号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 加拉蒂亚号" historical_model = 2 }
-	ship = { type = light_cruiser name = "HMS 达尼丁号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 海王星号" historical_model = 2 }
-	ship = { type = light_cruiser name = "HMS 猎户座号" historical_model = 2 }
-	ship = { type = destroyer name = "第1驱逐支队" historical_model = 1 }
-	ship = { type = destroyer name = "第2驱逐支队" historical_model = 1 }
-	ship = { type = destroyer name = "第3驱逐支队" historical_model = 1 }
-	ship = { type = destroyer name = "第4驱逐支队" historical_model = 0 }
-}
-navy = {
-	name = "HMS 百眼巨人号"
-	base = 604
-	location = 604
-	ship = { type = escort_carrier name = "HMS 百眼巨人号" historical_model = 0 air = { location = 5586 wing = { type = cag historical_model = 1 } } }
-}
-navy = {
-	name = "第2潜艇舰队"
-	base = 604
-	location = 604
-	ship = { type = submarine name = "第3潜艇分队" historical_model = 1 }
-	ship = { type = submarine name = "第4潜艇分队" historical_model = 1 }
-	ship = { type = submarine name = "第5潜艇分队" historical_model = 1 }
-	ship = { type = submarine name = "第6潜艇分队" historical_model = 1 }
-	ship = { type = submarine name = "第7潜艇分队" historical_model = 1 }
-}
-navy = {
-	name = "第1运输舰队"
-	base = 6005
-	location = 6005
-	ship = { type = transport_ship name = "'萨福克'运输分队" historical_model = 0 }
-	ship = { type = transport_ship name = "'木马之星'运输分队" historical_model = 0 }
-}
-navy = {
-	name = "第2运输舰队"
-	base = 2078
-	location = 2078
-	ship = { type = transport_ship name = "'帝国火绳枪'运输分队" historical_model = 0 }
-	ship = { type = transport_ship name = "'霍瑞塔'运输分队" historical_model = 0 }
-}
-navy = {
-	name = "第3运输舰队"
-	base = 2078
-	location = 2078
-	ship = { type = transport_ship name = "'迈考利家族'运输分队" historical_model = 0 }
-	ship = { type = transport_ship name = "'帝国船长'运输分队" historical_model = 0 }
-	ship = { type = transport_ship name = "'安第斯山脉'运输分队" historical_model = 0 }
-	ship = { type = transport_ship name = "'查曼帝国'运输分队" historical_model = 0 }
-}
-navy = {
-	name = "第4运输舰队"
-	base = 604
-	location = 604
-	ship = { type = transport_ship name = "'埃塞克斯'运输分队" historical_model = 0 }
-	ship = { type = transport_ship name = "'马洛亚'运输分队" historical_model = 0 }
-}
-navy = {
-	name = "第5运输舰队"
-	base = 2250
-	location = 2250
-	ship = { type = transport_ship name = "'帝国辉煌'运输分队" historical_model = 0 }
-	ship = { type = transport_ship name = "'山姆火炬'运输分队" historical_model = 0 }
-	ship = { type = transport_ship name = "'决议'运输分队" historical_model = 0 }
-}
-navy = {
-	name = "第1驱逐舰舰队"
-	base = 2250
-	location = 2250
-	ship = { type = destroyer name = "第5驱逐支队" historical_model = 0 }
-	ship = { type = destroyer name = "第6驱逐支队" historical_model = 1 }
-	ship = { type = destroyer name = "第7驱逐支队" historical_model = 1 }
-}
-navy = {
-	name = "第2驱逐舰舰队"
-	base = 1521
-	location = 1521
-	ship = { type = destroyer name = "第8驱逐支队" historical_model = 0 }
-	ship = { type = destroyer name = "第9驱逐支队" historical_model = 1 }
-}
-navy = {
-	name = "第3驱逐舰舰队"
-	base = 1521
-	location = 1521
-	ship = { type = destroyer name = "第10驱逐支队" historical_model = 0 }
-	ship = { type = destroyer name = "第11驱逐支队" historical_model = 1 }
-}
-navy = {
-	name = "第4驱逐舰舰队"
-	base = 2078
-	location = 2078
-	ship = { type = destroyer name = "第12驱逐支队" historical_model = 0 }
-	ship = { type = destroyer name = "第13驱逐支队" historical_model = 1 }
-}
-navy = {
-	name = "第5驱逐舰舰队"
-	base = 2078
-	location = 2078
-	ship = { type = destroyer name = "第14驱逐支队" historical_model = 0 }
-	ship = { type = destroyer name = "第15驱逐支队" historical_model = 1 }
-	ship = { type = destroyer name = "第16驱逐支队" historical_model = 1 }
-}
-navy = {
-	name = "地中海舰队"
-	base = 5586
-	location = 5586
-	ship = { type = battleship name = "HMS 伊丽莎白女王号" historical_model = 1 }
-	ship = { type = battleship name = "HMS 巴勒姆号" historical_model = 1 }
-	ship = { type = battleship name = "HMS 勇士号" historical_model = 1 }
-	ship = { type = battleship name = "HMS 马来亚号" historical_model = 1 }
-	ship = { type = battleship name = "HMS 厌战号" historical_model = 1 }
-	ship = { type = battleship name = "HMS 复仇号" historical_model = 1 }
-	ship = { type = carrier name = "HMS 勇敢号" historical_model = 1 air = { location = 5586 wing = { type = cag historical_model = 1 } } air = { location = 5586 wing = { type = cag historical_model = 1 } } }
-	ship = { type = carrier name = "HMS 光荣号" historical_model = 1 air = { location = 5586 wing = { type = cag historical_model = 1 } } air = { location = 5586 wing = { type = cag historical_model = 1 } } }
-	ship = { type = heavy_cruiser name = "HMS 德文郡号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "HMS 伦敦号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "HMS 什罗普郡号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "HMS 萨塞克斯号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "HMS 埃克塞特号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "HMS 约克号" historical_model = 1 }
-	ship = { type = light_cruiser name = "HMS 考文垂号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 科留号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 德里号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 黛丝帕茨号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 德班号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 阿雷瑟萨号" historical_model = 2 }
-	ship = { type = destroyer name = "第17驱逐支队" historical_model = 1 }
-	ship = { type = destroyer name = "第18驱逐支队" historical_model = 0 }
-	ship = { type = destroyer name = "第19驱逐支队" historical_model = 0 }
-	ship = { type = destroyer name = "第20驱逐支队" historical_model = 0 }
-	ship = { type = destroyer name = "第21驱逐支队" historical_model = 0 }
-	ship = { type = destroyer name = "第22驱逐支队" historical_model = 0 }
-}
-navy = {
-	name = "第1潜艇舰队"
-	base = 5586
-	location = 5586
-	ship = { type = submarine name = "第1潜艇分队" historical_model = 2 }
-	ship = { type = submarine name = "第2潜艇分队" historical_model = 2 }
-}
-navy = {
-	name = "美洲及西印度群岛舰队"
-	base = 8734
-	location = 8734
-	ship = { type = light_cruiser name = "HMS 龙号" historical_model = 0 }	
-	ship = { type = light_cruiser name = "HMS 阿贾克斯号" historical_model = 2 }
-	ship = { type = destroyer name = "第23驱逐支队" historical_model = 0 }
-	ship = { type = destroyer name = "第24驱逐支队" historical_model = 0 }
-}
-navy = {
-	name = "非洲基地"
-	base = 9915
-	location = 9915
-	ship = { type = light_cruiser name = "HMS 利安德号" historical_model = 2 }
-	ship = { type = light_cruiser name = "HMS 卡莱尔号" historical_model = 0 }
-	ship = { type = destroyer name = "第25驱逐支队" historical_model = 0 }
-	ship = { type = destroyer name = "第26驱逐支队" historical_model = 0 }
-}
-navy = {
-	name = "东印度基地"
-	base = 6320
-	location = 6320
-	ship = { type = heavy_cruiser name = "HMS 诺福克号" historical_model = 1 }
-	ship = { type = light_cruiser name = "HMS 迪奥梅德号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 翡翠号" historical_model = 1 }
-	ship = { type = light_cruiser name = "HMS 企业号" historical_model = 1 }
-	ship = { type = destroyer name = "第27驱逐支队" historical_model = 0 }
-	ship = { type = destroyer name = "第28驱逐支队" historical_model = 0 }
-}
-navy = {
-	name = "中国基地"
-	base = 5868
-	location = 5868
-	ship = { type = escort_carrier name = "HMS 鹰号" historical_model = 1 air = { location = 5868 wing = { type = cag historical_model = 1 } } }
-	ship = { type = light_cruiser name = "HMS 开普敦号" historical_model = 0 }
-	ship = { type = destroyer name = "第29驱逐支队" historical_model = 0 }
-	ship = { type = destroyer name = "第30驱逐支队" historical_model = 0 }
-}
-navy = {
-	name = "第3潜艇舰队"
-	base = 5868
-	location = 5868
-	ship = { type = submarine name = "第8潜艇分队" historical_model = 2 }
-	ship = { type = submarine name = "第9潜艇分队" historical_model = 2 }
-}
-navy = {
-	name = "预备舰队"
-	base = 2078
-	location = 2078
-	ship = { type = escort_carrier name = "HMS 竞技神号" historical_model = 0 air = { location = 5586 wing = { type = cag historical_model = 1 } } }
-	ship = { type = heavy_cruiser name = "HMS 埃芬汉号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "HMS 弗罗比舍号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "HMS 多塞特郡号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "HMS 霍金斯号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "HMS 伯威克号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "HMS 康沃尔号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "HMS 坎伯兰号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "HMS 萨福克号" historical_model = 1 }
-	ship = { type = heavy_cruiser name = "HMS 肯特号" historical_model = 1 }
-	ship = { type = light_cruiser name = "HMS 阿基里斯号" historical_model = 2 }
-	ship = { type = light_cruiser name = "HMS 卡利登号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 卡利普索号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 卡拉多克号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 加尔各答号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 科伦坡号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 加的夫号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 谷神星号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 库拉索号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 达娜厄号" historical_model = 0 }
-	ship = { type = light_cruiser name = "HMS 多特利斯号" historical_model = 0 }
-	ship = { type = destroyer name = "第31驱逐支队" historical_model = 0 }
-	ship = { type = destroyer name = "第32驱逐支队" historical_model = 0 }
-}
-air = {
-	
-	name = "第1轰炸机编队"
-
-	base = 1521
-
-	location = 1521
-
-	wing = { type = tactical_bomber name = "第1皇家轰炸机联队" historical_model = 0 }
-
-}
-
-air = {
-
-	name = "皇家战略轰炸机司令部"
-
-	base = 1731
-
-	location = 1731
-
-	wing = { type = strategic_bomber name = "第2皇家战略轰炸机联队" historical_model = 0 }
-
-	wing = { type = strategic_bomber name = "第3皇家战略轰炸机联队" historical_model = 0 }
-
-	wing = { type = strategic_bomber name = "第4皇家战略轰炸机联队" historical_model = 0 }
-
-}
-
-air = {
-
-	name = "第2轰炸机编队"
-
-	base = 2078
-
-	location = 2078
-
-	wing = { type = tactical_bomber name = "第5皇家轰炸机联队" historical_model = 0 }
-
-}
-
-air = {
-
-	name = "第1战斗机编队"
-
-	base = 1521
-
-	location = 1521
-
-	wing = { type = interceptor name = "第11皇家战斗机联队" historical_model = 0 }
-
-}
-
-air = {
-
-	name = "第2战斗机编队"
-
-	base = 2078
-
-	location = 2078
-
-	wing = { type = interceptor name = "第12皇家战斗机联队" historical_model = 0 }
-
-}
-
-air = {
-
-	name = "第3战斗机编队"
-
-	base = 2078
-
-	location = 2078
-
-	wing = { type = interceptor name = "第13皇家战斗机联队" historical_model = 0 }
-
-}
-
-air = {
-
-	name = "中东空军指挥部"
-
-	base = 5535
-
-	location = 5535
-
-	wing = { type = tactical_bomber name = "中东空军编队" historical_model = 0 }
-
-}
-
-air = {
-
-	name = "印度空军司令部"
-
-	base = 6005
-
-	location = 6005
-
-	wing = { type = tactical_bomber name = "印度空军编队" historical_model = 0 }
-
-}
-
-air = {
-
-	name = "远东空军司令部"
-
-	base = 6394
-
+theatre = {
+	name = "Asia Command"
 	location = 6394
-
-	wing = { type = tactical_bomber name = "远东空军编队" historical_model = 0 }
-
+	regiment = { type = hq_brigade name = "Asia HQ" historical_model = 1 }
+	division = {
+		name = "Hong Kong Command"
+		location = 5868
+		is_reserve = yes
+		regiment = { type = garrison_brigade name = "Kowloon Brigade" experience = 10 historical_model = 3 }
+		regiment = { type = garrison_brigade name = "Hong Kong Brigade" experience = 10 historical_model = 3 }
+	}
+	division = {
+		name = "Singapore Command"
+		location = 6394
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "12th Indian Brigade" experience = 10 historical_model = 3 }
+		regiment = { type = garrison_brigade name = "Malaya Brigade" experience = 10 historical_model = 3 }
+		regiment = { type = garrison_brigade name = "Straits Settlements Volunteer Force" experience = 10 historical_model = 3 }
+	}
+	navy = {	
+		name = "East Indies Fleet"
+		base = 6320
+		location = 6320
+		ship = { type = light_cruiser name = "HMS Danae" experience = 10 historical_model = 2 }
+		ship = { type = light_cruiser name = "HMS Durban" experience = 10 historical_model = 2 }		
+		ship = { type = light_cruiser name = "HMS Despatch" experience = 10 historical_model = 2 }
+	}	
+	navy = {	
+		name = "China Fleet"
+		base = 5868
+		location = 5868
+		ship = { type = escort_carrier name = "HMS Eagle" experience = 10 historical_model = 4 air = { location = 5868 wing = { type = cag experience = 10 historical_model = 0 } } }
+		ship = { type = heavy_cruiser name = "HMS Kent" experience = 10 historical_model = 4 }
+		ship = { type = heavy_cruiser name = "HMS Cornwall" experience = 10 historical_model = 4 }	
+		ship = { type = heavy_cruiser name = "HMS Dorsetshire" experience = 10 historical_model = 6 }
+		ship = { type = light_cruiser name = "HMS Caledon" experience = 10 historical_model = 1 }
+		ship = { type = light_cruiser name = "HMS Calypso" experience = 10 historical_model = 1 }	
+		ship = { type = destroyer name = "15th Destroyer Flotilla" experience = 10 historical_model = 5 }
+		ship = { type = destroyer name = "16th Destroyer Flotilla" experience = 10 historical_model = 6 }		
+	}	
+	navy = {	
+		name = "New Zealand Division"
+		base = 10673
+		location = 10673 # Fongfale
+		ship = { type = light_cruiser name = "HMS Achilles" experience = 10 historical_model = 6 }		
+		ship = { type = light_cruiser name = "HMS Leander" experience = 10 historical_model = 6 }
+	}	
+	navy = {
+		name = "3rd Submarine Squadron"
+		base = 5868
+		location = 5868
+		ship = { type = submarine name = "8th Submarine Flotilla" experience = 10 historical_model = 10 }
+		ship = { type = submarine name = "9th Submarine Flotilla" experience = 10 historical_model = 11 }
+		ship = { type = submarine name = "10th Submarine Flotilla" experience = 10 historical_model = 12 }		
+	}
+	air = {
+		name = "Far East Air Command"
+		base = 6394
+		location = 6394
+		wing = { type = cas name = "Far East Group" experience = 10 historical_model = 0 }
+		wing = { type = cas name = "Indian Group" experience = 10 historical_model = 0 }
+	}
 }
-
-
-
-
+# Modernization!
+military_construction = {
+	country = ENG
+	battleship = {
+		name = "HMS Warspite"
+		historical_model = 11
+	}
+	cost = 2.25
+	progress = 56
+	duration = 518
+}
 military_construction = {
 	country = ENG
 	destroyer = {
-		name = "第33驱逐支队"
-		historical_model = 1
+		name = "24th Destroyer Flotilla"
+		historical_model = 8
 	}
 	cost = 1.50
-	progress = 0
-	duration = 61
+	progress = 52
+	duration = 63
 }
 military_construction = {
 	country = ENG
 	destroyer = {
-		name = "第34驱逐支队"
-		historical_model = 1
+		name = "25th Destroyer Flotilla"
+		historical_model = 8
 	}
 	cost = 1.50
-	progress = 0
-	duration = 91
+	progress = 43
+	duration = 183
 }
 military_construction = {
 	country = ENG
-	submarine = {
-		name = "第10潜艇分队"
-		historical_model = 2
+	light_cruiser = {
+		name = "HMS Penelope"
+		historical_model = 8
 	}
-	cost = 1.50
-	progress = 0
-	duration = 61
+	cost = 3.50
+	progress = 20
+	duration = 317
 }

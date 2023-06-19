@@ -1,133 +1,423 @@
-corps = {
-	name = "µÚ1¾ü"
-
+theatre = {
+	name = "OLZ Nederland"
 	location = 1910
-	regiment = { type = hq_brigade name = "µÚ1¾üÖ¸»Ó²¿" historical_model = 0 }
-	division= {
-		name = "µÚ1Ê¦"
+	regiment = { type = hq_brigade name = "OLZ Nederland HQ" historical_model = 0 }
+	army = {
+		name = "Veldleger"
 		location = 1910
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "ÖÀµ¯±øÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "ÑÅ¸ñÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ4²½±øÍÅ" historical_model = 0 }
+		regiment = { type = hq_brigade name = "Veldleger HQ" historical_model = 0 }		
+		corps = {
+			name = "1e Legerkorps"
+			location = 1910
+			regiment = { type = hq_brigade name = "1e Legerkorps HQ" historical_model = 0 }
+			division= {
+				name = "1e Divisie"
+				location = 1910
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "Regiment Grenadiers" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "Regiment Jagers" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "4e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "2e Artillerieregiment" experience = 5 historical_model = 0 }
+			}
+			division= {
+				name = "2e Divisie"
+				location = 1910
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "10e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "15e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "22e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "4e Artillerieregiment" experience = 5 historical_model = 0 }
+			}
+		}
+		corps = {
+			name = "2e Legerkorps"
+			location = 2083
+			regiment = { type = hq_brigade name = "2e Legerkorps HQ" historical_model = 0 }
+			division= {
+				name = "3e Divisie"
+				location = 2083
+				is_reserve = yes
+				regiment = { type = infantry_brigade name ="1e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "9e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "12e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "6e Artillerieregiment" experience = 5 historical_model = 1 }
+			}
+			division= {
+				name = "4e Divisie"
+				location = 2083
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "8e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "11e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "19e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "8e Artillerieregiment" experience = 5 historical_model = 1 }
+			}
+		}
+		corps = {
+			name = "3e Legerkorps"
+			location = 2198
+			regiment = { type = hq_brigade name = "Hoofdkwartier 3e Legerkorps" experience = 5 historical_model = 0 }
+			division= {
+				name = "5e Divisie"
+				location = 2198
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "2e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "13e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "17e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "3e Artillerieregiment" experience = 5 historical_model = 1 }
+			}
+			division= {
+				name = "6e Divisie"
+				location = 2198
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "3e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "6e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "14e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "7e Artillerieregiment" experience = 5 historical_model = 0 }
+			}
+		}
+		corps = {
+			name = "4e Legerkorps"
+			location = 1673
+			regiment = { type = hq_brigade name = "4e Legerkorps HQ" historical_model = 0 }
+			division= {
+				name = "7e Divisie"
+				location = 1673
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "7e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "18e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "20e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "1e Artillerieregiment" experience = 5 historical_model = 1 }
+			}
+			division= {
+				name = "8e Divisie"
+				location = 1673
+				is_reserve = yes
+				regiment = { type = infantry_brigade name = "5e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "16e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = infantry_brigade name = "21e Regiment Infanterie" experience = 5 historical_model = 3 }
+				regiment = { type = horse_towed_support_brigade name = "5e Artillerieregiment" experience = 5 historical_model = 0 }
+			}
+		}
 	}
-	division= {
-		name = "µÚ2Ê¦"
+	navy = {
+		name = "Koninklijke Marine"
+		base = 1910
 		location = 1910
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "µÚ10²½±øÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ15²½±øÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ22²½±øÍÅ" historical_model = 0 }
+		ship = { type = heavy_cruiser name = "HrMs Hertog Hendrik" experience = 5 historical_model = 0 }
+		ship = { type = heavy_cruiser name = "HrMs Jacob van Heemskerck" experience = 5 historical_model = 0 }		
+		ship = { type = light_cruiser name = "HrMs Java" experience = 5 historical_model = 2 pride = yes }
+		ship = { type = light_cruiser name = "HrMs Sumatra" experience = 5 historical_model = 2 }
+		ship = { type = light_cruiser name = "HrMs Gelderland" experience = 5 historical_model = 0 }
+		ship = { type = destroyer name = "1e Torpedobootjager Smaldeel" experience = 5 historical_model = 4 }
+		ship = { type = destroyer name = "2e Torpedobootjager Smaldeel" experience = 5 historical_model = 4 }
+		ship = { type = submarine name = "1e Onderzeeboot Smaldeel" experience = 5 historical_model = 0 }
+		ship = { type = submarine name = "6e Onderzeeboot Smaldeel" experience = 5 historical_model = 5 }
+		ship = { type = submarine name = "7e Onderzeeboot Smaldeel" experience = 5 historical_model = 7 }
+		ship = { type = transport_ship name = "1e Transportsmaldeel" experience = 5 historical_model = 0 }
+		ship = { type = transport_ship name = "2e Transportsmaldeel" experience = 5 historical_model = 0 }
+		ship = { type = transport_ship name = "3e Transportsmaldeel" experience = 5 historical_model = 0 }
+		ship = { type = transport_ship name = "4e Transportsmaldeel" experience = 5 historical_model = 0 }		
+	}
+	air = {
+		name = "Luchtvaartafdeeling"
+		base = 1910
+		location = 1910
+		wing = { type = interceptor name = "1e Jachtvliegtuiggroep" experience = 5 experience = 5 historical_model = 0 }
+		wing = { type = cas name = "1e Duikbommenwerpergroep" experience = 5 experience = 5 historical_model = 0 }
 	}
 }
-corps = {
-	name = "µÚ2¾ü"
-	location = 2083
-	regiment = { type = hq_brigade name = "µÚ2¾üÖ¸»Ó²¿" historical_model = 0 }
-	division= {
-		name = "µÚ3Ê¦"
-		location = 2083
-		is_reserve = yes
-		regiment = { type = infantry_brigade name ="µÚ1²½±øÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ9²½±øÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ12²½±øÍÅ" historical_model = 0 }
-	}
-	division= {
-		name = "µÚ4Ê¦"
-		location = 2083
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "µÚ8²½±øÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ11²½±øÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ19²½±øÍÅ" historical_model = 0 }
-	}
-}
-corps = {
-	name = "µÚ3¾ü"
-	location = 2198
-	regiment = { type = hq_brigade name = "µÚ3¾üÖ¸»Ó²¿" historical_model = 0 }
-	division= {
-		name = "µÚ5Ê¦"
-		location = 2198
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "µÚ2²½±øÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ13²½±øÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ17²½±øÍÅ" historical_model = 0 }
-	}
-	division= {
-		name = "µÚ6Ê¦"
-		location = 2198
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "µÚ3²½±øÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ13²½±øÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ17²½±øÍÅ" historical_model = 0 }
-	}
-}
-corps = {
-	name = "µÚ4¾ü"
-	location = 1673
-	regiment = { type = hq_brigade name = "µÚ4¾üÖ¸»Ó²¿" historical_model = 0 }
-	division= {
-		name = "µÚ7Ê¦"
-		location = 1673
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "µÚ7²½±øÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ18²½±øÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ20²½±øÍÅ" historical_model = 0 }
-	}
-	division= {
-		name = "µÚ8Ê¦"
-		location = 1673
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "µÚ5²½±øÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ16²½±øÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ21²½±øÍÅ" historical_model = 0 }
-	}
-}
-corps = {
-	name = "ºÉÀ¼Ö³Ãñ¾ü"
+theatre = {
+	name = "OLZ Indië"
 	location = 6507
-	regiment = { type = hq_brigade name = "ºÉÀ¼Ö³Ãñ¾üÖ¸»Ó²¿" historical_model = 0 }
-	division= {
-		name = "×¦ÍÛµÚIÊ¦"
-		location = 6530
-		regiment = { type = infantry_brigade name = "µÚ1ÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "µÚ2ÍÅ" historical_model = 0 }
+	regiment = { type = hq_brigade name = "OLZ Indië HQ" historical_model = 0 }
+	army = {
+		name = "Koninklijk Nederlands-Indisch Leger"
+		location = 6507
+		regiment = { type = hq_brigade name = "KNIL HQ" historical_model = 0 }		
+		division= {
+			name = "Ie Divisie 'Java'"
+			location = 6530
+			regiment = { type = infantry_brigade name = "1e NI Regiment" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "2e NI Regiment" experience = 5 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "NI Artillerieregiment" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "IIe Divisie 'Java'"
+			location = 6531
+			regiment = { type = infantry_brigade name = "4e NI Regiment"  experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Tjilatjap Regiment" experience = 5 historical_model = 3 }
+		}
+		division= {
+			name = "IIIe Divisie 'Java'"
+			location = 7799
+			regiment = { type = infantry_brigade name = "6e NI Regiment" experience = 5 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "VBS Regiment" experience = 5 historical_model = 3 }
+		}
 	}
-	division= {
-		name = "×¦ÍÛµÚIIÊ¦"
-		location = 6531
-		regiment = { type = infantry_brigade name = "µÚ4ÍÅ"  historical_model = 0 }
-		regiment = { type = infantry_brigade name = "²½±øÂÃ" historical_model = 0 }
+	navy = {
+		name = "Nederlands-Indisch Marine"
+		base = 6507
+		location = 6507
+		ship = { type = heavy_cruiser name = "HrMs Soerabaja" experience = 5 historical_model = 1 }		
+		ship = { type = submarine name = "2e Onderzeeboot Smaldeel" experience = 5 historical_model = 1 }
+		ship = { type = submarine name = "3e Onderzeeboot Smaldeel" experience = 5 historical_model = 2 }	
+		ship = { type = submarine name = "4e Onderzeeboot Smaldeel" experience = 5 historical_model = 3 }
+		ship = { type = submarine name = "5e Onderzeeboot Smaldeel" experience = 5 historical_model = 4 }	
+		ship = { type = submarine name = "8e Onderzeeboot Smaldeel" experience = 5 historical_model = 8 }		
+	}	
+	air = {
+		name = "LA-KNIL"
+		base = 6507
+		location = 6507
+		wing = { type = naval_bomber name = "1e Marine-Bommenwerpergroep" experience = 5 experience = 5 historical_model = 0 }
+		wing = { type = cas name = "2e Duik Bombardeervliegtuig Groep" experience = 5 experience = 5 historical_model = 0 }
+		}
+}
+theatre = {
+	name = "OLZ Borneo"
+	location = 6434
+	regiment = { type = hq_brigade name = "OLZ Borneo HQ" historical_model = 0 }
+		division= {
+			name = "Ie Divisie 'Borneo'"
+			location = 6420
+			regiment = { type = garrison_brigade name = "West-Borneo Garnizoen Regiment"  experience = 5 historical_model = 3 }
+			regiment = { type = militia_brigade name = "Stadswacht Regiment" experience = 5 historical_model = 3 }
+		}	
+		division= {
+			name = "IIe Divisie 'Borneo'"
+			location = 6434
+			regiment = { type = garrison_brigade name = "Zuid-en Oost-Borneo Garnizoen Regiment"  experience = 5 historical_model = 3 }
+			regiment = { type = militia_brigade name = "Landwacht Regiment" experience = 5 historical_model = 3 }
+		}			
+}
+theatre = {
+	name = "OLZ Celebes en Nieuw-Guinea"
+	location = 7764
+	regiment = { type = hq_brigade name = "OLZ Celebes en Nieuw-Guinea HQ" historical_model = 0 }
+		division= {
+			name = "Ie Divisie 'Nieuw-Guinea'"
+			location = 7764
+			regiment = { type = militia_brigade name = "1e Samarinda Regiment"  experience = 5 historical_model = 3 }
+			regiment = { type = militia_brigade name = "2e Samarinda Regiment" experience = 5 historical_model = 3 }
+		}		
+}
+convoy_construction=
+{
+	country = HOL
+	id=
+	{
+		id=15260
+		type=4713
 	}
-	division= {
-		name = "×¦ÍÛµÚIIIÊ¦"
-		location = 7799
-		regiment = { type = infantry_brigade name = "µÚ6ÍÅ" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "VBSÂÃ" historical_model = 0 }
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = HOL
+	id=
+	{
+		id=15261
+		type=4713
 	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort	
 }
-navy = {
-	name = "»Ê¼Ò½¢¶Ó"
-	base = 1910
-	location = 1910
-	ship = { type = light_cruiser name = "HrMs µÂÂ³ÌØ¶û" historical_model = 1 }
-	ship = { type = light_cruiser name = "HrMs ×¦ÍÛ" historical_model = 1 pride = yes }
-	ship = { type = transport_ship name = "µÚ1ÔËÊä´ó¶Ó" historical_model = 0 }
-	ship = { type = transport_ship name = "µÚ2ÔËÊä´ó¶Ó" historical_model = 0 }
-	ship = { type = transport_ship name = "µÚ3ÔËÊä´ó¶Ó" historical_model = 0 }
-	ship = { type = transport_ship name = "µÚ4ÔËÊä´ó¶Ó" historical_model = 0 }
+convoy_construction=
+{
+	country = HOL
+	id=
+	{
+		id=15262
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
 }
-navy = {
-	name = "»Ê¼ÒµÚ3½¢¶Ó"
-	base = 1910
-	location = 1910
-	ship = { type = light_cruiser name = "HrMs ËÕÃÅ´ðÀ°" historical_model = 1 }
-	ship = { type = destroyer name = "µÚ1ÇýÖð½¢´ó¶Ó" historical_model = 1 }
-	ship = { type = destroyer name = "µÚ2ÇýÖð½¢´ó¶Ó" historical_model = 1 }
-	ship = { type = submarine name = "µÚ1Ç±Í§´ó¶Ó" historical_model = 0 }
-	ship = { type = submarine name = "µÚ2Ç±Í§´ó¶Ó" historical_model = 1 }
-	ship = { type = submarine name = "µÚ3Ç±Í§´ó¶Ó" historical_model = 2 }
+convoy_construction=
+{
+	country = HOL
+	id=
+	{
+		id=15263
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort	
 }
-
-
-
+convoy_construction=
+{
+	country = HOL
+	id=
+	{
+		id=15264
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = HOL
+	id=
+	{
+		id=15265
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort	
+}
+convoy_construction=
+{
+	country = HOL
+	id=
+	{
+		id=15266
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = HOL
+	id=
+	{
+		id=15267
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort	
+}
+convoy_construction=
+{
+	country = HOL
+	id=
+	{
+		id=15268
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = HOL
+	id=
+	{
+		id=15269
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort	
+}
+convoy_construction=
+{
+	country = HOL
+	id=
+	{
+		id=15270
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort	
+}
+convoy_construction=
+{
+	country = HOL
+	id=
+	{
+		id=15271
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = HOL
+	id=
+	{
+		id=15272
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort	
+}
+convoy_construction=
+{
+	country = HOL
+	id=
+	{
+		id=15273
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = HOL
+	id=
+	{
+		id=15274
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=yes #No means you get a convoy.  Yes means you get an escort	
+}
+military_construction = {
+	country = HOL
+	light_cruiser = {
+		name = "HrMs De Ruyter"
+		historical_model = 7
+	}
+	cost = 3.60
+	progress = 52
+	duration = 277
+}

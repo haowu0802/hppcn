@@ -1,8 +1,46 @@
-division = {
-	name = "Äá¼ÓÀ­¹ÏÂ½¾ü"
+theatre = {
+	name = "Alto Mando de Nicaragüense"
 	location = 9739
-	is_reserve = yes
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
+	regiment = { type = hq_brigade name = "Managua HQ" historical_model = 0 }
+	division = {
+		name = "Ejercito de Nicaragua"
+		location = 9739
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "1. Regimiento de Infantería" experience = 0 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "2. Regimiento de Infantería" experience = 0 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "3. Regimiento de Infantería" experience = 0 historical_model = 1 }
+	}
+	air = {	   name = "Fuerza Aérea de Nicaragua"
+		base = 9739
+		location = 9739
+		wing = { type = interceptor name = "1. Grupo Aéreo de Caza" experience = 0 historical_model = 0 }
+	}	
+}
+convoy_construction=
+{
+	country = NIC
+	id=
+	{
+		id=15316
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = NIC
+	id=
+	{
+		id=15317
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort	
 }

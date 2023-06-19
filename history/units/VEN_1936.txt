@@ -1,31 +1,63 @@
-corps = {
-	name = "委内瑞拉陆军"
+theatre = {
+	name = "Alto Mando de Venezuela"
 	location = 9792
-	regiment = { type = hq_brigade name = "委内瑞拉陆军指挥部" historical_model = 0 }
-	division= {
-		name = "第1'爱德华多·布兰科'步兵师"
+	regiment = { type = hq_brigade name = "Caracas HQ" historical_model = 0 }
+	
+	corps = {
+		name = "Ejercito de Venezuela"
 		location = 9792
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division= {
-		name = "第1国民警卫师"
-		location = 9792
-		is_reserve = yes
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-	}
-	division= {
-		name = "委内瑞拉骑兵部队"
-		location = 9792
-		is_reserve = yes
-		regiment = { type = cavalry_brigade historical_model = 0 }
-		regiment = { type = cavalry_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "Ejercito de Venezuela HQ" historical_model = 0 }
+		division= {
+			name = "1a Div. de Inf. 'Eduardo Blanco'"
+			location = 9792
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1. Regimiento de Infanter韆" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "2. Regimiento de Infanter韆" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "3. Regimiento de Infanter韆" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Los Caballos de Venezuela"
+			location = 9792
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1. Regimiento de Caballer韆" experience = 5 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "2. Regimiento de Caballer韆" experience = 5 historical_model = 1 }
+			regiment = { type = self_propelled_support_brigade name = "Regimiento de Furgones Blindados" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "1a Divisi髇 de Guardia Naci髇al"
+			location = 9740
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "4. Regimiento de Infanter韆" experience = 5 historical_model = 1 }
+			regiment = { type = militia_brigade name = "5. Regimiento de Infanter韆" experience = 5 historical_model = 1 }
+			regiment = { type = militia_brigade name = "6. Regimiento de Infanter韆" experience = 5 historical_model = 1 }
+		}
 	}
 }
-
-
-
+convoy_construction=
+{
+	country = VEN
+	id=
+	{
+		id=15619
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = VEN
+	id=
+	{
+		id=15618
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort	
+}

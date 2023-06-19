@@ -20,124 +20,139 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
+	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
 	}
 }
 
 unit_names = {
 	infantry_brigade = {
-		"第1步兵师" "第2步兵师" "第3步兵师" "第4步兵师" "第5步兵师" "第6步兵师" "第7步兵师" "第8步兵师" "第9步兵师" "第10步兵师" 
-		"第11步兵师" "第12步兵师" "第13步兵师" "第14步兵师" "第15步兵师" "第16步兵师" "第17步兵师" "第18步兵师" "第19步兵师" "第20步兵师" 
-		"第21步兵师" "第22步兵师" "第23步兵师" "第24步兵师" "第25步兵师" "第26步兵师" "第27步兵师" "第28步兵师" "第29步兵师" "第30步兵师" 
+		"1. Stratiotis Merarkhia" "2. Stratiotis Merarkhia" "3. Stratiotis Merarkhia" "4. Stratiotis Merarkhia" "5. Stratiotis Merarkhia" "6. Stratiotis Merarkhia" "7. Stratiotis Merarkhia" "8. Stratiotis Merarkhia" "9. Stratiotis Merarkhia" "10. Stratiotis Merarkhia" "11. Stratiotis Merarkhia" 
+		"12. Stratiotis Merarkhia" "13. Stratiotis Merarkhia" "14. Stratiotis Merarkhia" "15. Stratiotis Merarkhia" "16. Stratiotis Merarkhia" "17. Stratiotis Merarkhia" "18. Stratiotis Merarkhia" "19. Stratiotis Merarkhia" "20. Stratiotis Merarkhia" "21. Stratiotis Merarkhia" "22. Stratiotis Merarkhia" 
+		"23. Stratiotis Merarkhia" "24. Stratiotis Merarkhia" "25. Stratiotis Merarkhia" "26. Stratiotis Merarkhia" "27. Stratiotis Merarkhia" "28. Stratiotis Merarkhia" "29. Stratiotis Merarkhia" "30. Stratiotis Merarkhia" 
 	}
 	cavalry_brigade = {
-		"第1骑兵师" "第2骑兵师" "第3骑兵师" "第4骑兵师" "第5骑兵师" "第6骑兵师" "第7骑兵师" "第8骑兵师" "第9骑兵师" "第10骑兵师" 
+		"1. Ippiko Merarkhia" "2. Ippiko Merarkhia" "3. Ippiko Merarkhia" "4. Ippiko Merarkhia" "5. Ippiko Merarkhia" "6. Ippiko Merarkhia" "7. Ippiko Merarkhia" "8. Ippiko Merarkhia" "9. Ippiko Merarkhia" "10. Ippiko Merarkhia" 
 	}
 	motorized_brigade = {
-		"第1摩托化步兵师" "第2摩托化步兵师" "第3摩托化步兵师" "第4摩托化步兵师" "第5摩托化步兵师" "第6摩托化步兵师" "第7摩托化步兵师" "第8摩托化步兵师" "第9摩托化步兵师" "第10摩托化步兵师"  
+		"1. Aftokinito Stratiotis Taxiarchia" "2. Aftokinito Stratiotis Taxiarchia" "3. Aftokinito Stratiotis Taxiarchia" "4. Aftokinito Stratiotis Taxiarchia" "5. Aftokinito Stratiotis Taxiarchia" "6. Aftokinito Stratiotis Taxiarchia" "7. Aftokinito Stratiotis Taxiarchia" "8. Aftokinito Stratiotis Taxiarchia" "9. Aftokinito Stratiotis Taxiarchia" "10. Aftokinito Stratiotis Taxiarchia" 
 	}
 	mechanized_brigade = {
-		"第1机械化步兵师" "第2机械化步兵师" "第3机械化步兵师" "第4机械化步兵师" "第5机械化步兵师" "第6机械化步兵师" "第7机械化步兵师" "第8机械化步兵师" "第9机械化步兵师" "第10机械化步兵师" 
+		"1. Stratiotis Mechanikos Taxiarchia" "2. Stratiotis Mechanikos Taxiarchia" "3. Stratiotis Mechanikos Taxiarchia" "4. Stratiotis Mechanikos Taxiarchia" "5. Stratiotis Mechanikos Taxiarchia" "6. Stratiotis Mechanikos Taxiarchia" "7. Stratiotis Mechanikos Taxiarchia" "8. Stratiotis Mechanikos Taxiarchia" "9. Stratiotis Mechanikos Taxiarchia" "10. Stratiotis Mechanikos Taxiarchia" 
 	}
 	light_armor_brigade = {
-		"第1装甲师" "第2装甲师" "第3装甲师" "第4装甲师" "第5装甲师" "第6装甲师" "第7装甲师" "第8装甲师" "第9装甲师" "第10装甲师" 
+		"1. Tethorakismeno Taxiarchia" "2. Tethorakismeno Taxiarchia" "3. Tethorakismeno Taxiarchia" "4. Tethorakismeno Taxiarchia" "5. Tethorakismeno Taxiarchia" "6. Tethorakismeno Taxiarchia" "7. Tethorakismeno Taxiarchia" "8. Tethorakismeno Taxiarchia" "9. Tethorakismeno Taxiarchia" "10. Tethorakismeno Taxiarchia" 
 	}
 	armor_brigade = {
-		"第1装甲师" "第2装甲师" "第3装甲师" "第4装甲师" "第5装甲师" "第6装甲师" "第7装甲师" "第8装甲师" "第9装甲师" "第10装甲师" 
+		"1. Tethorakismeno Taxiarchia" "2. Tethorakismeno Taxiarchia" "3. Tethorakismeno Taxiarchia" "4. Tethorakismeno Taxiarchia" "5. Tethorakismeno Taxiarchia" "6. Tethorakismeno Taxiarchia" "7. Tethorakismeno Taxiarchia" "8. Tethorakismeno Taxiarchia" "9. Tethorakismeno Taxiarchia" "10. Tethorakismeno Taxiarchia" 
 	}
 	paratrooper_brigade = {
-		"第1空降师" "第2空降师" "第3空降师" "第4空降师" "第5空降师" "第6空降师" "第7空降师" "第8空降师" "第9空降师" "第10空降师" 
+		"1. Stratiotis Aereas Taxiarchia" "2. Stratiotis Aereas Taxiarchia" "3. Stratiotis Aereas Taxiarchia" "4. Stratiotis Aereas Taxiarchia" "5. Stratiotis Aereas Taxiarchia" "6. Stratiotis Aereas Taxiarchia" "7. Stratiotis Aereas Taxiarchia" "8. Stratiotis Aereas Taxiarchia" "9. Stratiotis Aereas Taxiarchia" "10. Stratiotis Aereas Taxiarchia" 
 	}
 	marine_brigade = {
-		"第1海军陆战师" "第2海军陆战师" "第3海军陆战师" "第4海军陆战师" "第5海军陆战师" "第6海军陆战师" "第7海军陆战师" "第8海军陆战师" "第9海军陆战师" "第10海军陆战师" 
-		"第11海军陆战师" "第12海军陆战师" "第13海军陆战师" "第14海军陆战师" "第15海军陆战师" 
+		"1. Stratiotis Naftikos Taxiarchia" "2. Stratiotis Naftikos Taxiarchia" "3. Stratiotis Naftikos Taxiarchia" "4. Stratiotis Naftikos Taxiarchia" "5. Stratiotis Naftikos Taxiarchia" "6. Stratiotis Naftikos Taxiarchia" "7. Stratiotis Naftikos Taxiarchia" "8. Stratiotis Naftikos Taxiarchia" "9. Stratiotis Naftikos Taxiarchia" "10. Stratiotis Naftikos Taxiarchia" 
 	}
 	bergsjaeger_brigade = {
-		"第1山地师" "第2山地师" "第3山地师" "第4山地师" "第5山地师" "第6山地师" "第7山地师" "第8山地师" "第9山地师" "第10山地师" 
-		"第11山地师" "第12山地师" "第13山地师" "第14山地师" "第15山地师" 
+		"1. Stratiotis Bouno Taxiarchia" "2. Stratiotis Bouno Taxiarchia" "3. Stratiotis Bouno Taxiarchia" "4. Stratiotis Bouno Taxiarchia" "5. Stratiotis Bouno Taxiarchia" "6. Stratiotis Bouno Taxiarchia" "7. Stratiotis Bouno Taxiarchia" "8. Stratiotis Bouno Taxiarchia" "9. Stratiotis Bouno Taxiarchia" "10. Stratiotis Bouno Taxiarchia" 
 	}
 	garrison_brigade = {
-		"第1步兵师" "第2步兵师" "第3步兵师" "第4步兵师" "第5步兵师" "第6步兵师" "第7步兵师" "第8步兵师" "第9步兵师" "第10步兵师" 
-		"第11步兵师" "第12步兵师" "第13步兵师" "第14步兵师" "第15步兵师" "第16步兵师" "第17步兵师" "第18步兵师" "第19步兵师" "第20步兵师" 
-		"第21步兵师" "第22步兵师" "第23步兵师" "第24步兵师" "第25步兵师" "第26步兵师" "第27步兵师" "第28步兵师" "第29步兵师" "第30步兵师" 
+		"1. Stratiotis Merarkhia" "2. Stratiotis Merarkhia" "3. Stratiotis Merarkhia" "4. Stratiotis Merarkhia" "5. Stratiotis Merarkhia" "6. Stratiotis Merarkhia" "7. Stratiotis Merarkhia" "8. Stratiotis Merarkhia" "9. Stratiotis Merarkhia" "10. Stratiotis Merarkhia" "11. Stratiotis Merarkhia" 
+		"12. Stratiotis Merarkhia" "13. Stratiotis Merarkhia" "14. Stratiotis Merarkhia" "15. Stratiotis Merarkhia" "16. Stratiotis Merarkhia" "17. Stratiotis Merarkhia" "18. Stratiotis Merarkhia" "19. Stratiotis Merarkhia" "20. Stratiotis Merarkhia" "21. Stratiotis Merarkhia" "22. Stratiotis Merarkhia" 
+		"23. Stratiotis Merarkhia" "24. Stratiotis Merarkhia" "25. Stratiotis Merarkhia" "26. Stratiotis Merarkhia" "27. Stratiotis Merarkhia" "28. Stratiotis Merarkhia" "29. Stratiotis Merarkhia" "30. Stratiotis Merarkhia" 
 	}
 	hq_brigade = {
-		"第1战区" "第2战区" "第3战区" "第4战区" "第5战区" "第6战区" "第7战区" "第8战区" "第9战区" "第10战区" 
+		"Ellinikos stratos archigeio" "1. Elliniki stratos" "2. Elliniki stratos" "3. Elliniki stratos" "4. Elliniki stratos" "5. Elliniki stratos" "6. Elliniki stratos" "7. Elliniki stratos" "8. Elliniki stratos" "9. Elliniki stratos" "10. Elliniki stratos" 
 			}
 	militia_brigade = {
-		"第1民兵师" "第2民兵师" "第3民兵师" "第4民兵师" "第5民兵师" "第6民兵师" "第7民兵师" "第8民兵师" "第9民兵师" "第10民兵师" 
-		"第11民兵师" "第12民兵师" "第13民兵师" "第14民兵师" "第15民兵师" "第16民兵师" "第17民兵师" "第18民兵师" "第19民兵师" "第20民兵师"
+		"1. Astynomia Merarkhia" "2. Astynomia Merarkhia" "3. Astynomia Merarkhia" "4. Astynomia Merarkhia" "5. Astynomia Merarkhia" "6. Astynomia Merarkhia" "7. Astynomia Merarkhia" "8. Astynomia Merarkhia" "9. Astynomia Merarkhia" "10. Astynomia Merarkhia" "11. Astynomia Merarkhia" 
+		"12. Astynomia Merarkhia" "13. Astynomia Merarkhia" "14. Astynomia Merarkhia" "15. Astynomia Merarkhia" "16. Astynomia Merarkhia" "17. Astynomia Merarkhia" "18. Astynomia Merarkhia" "19. Astynomia Merarkhia" "20. Astynomia Merarkhia" 
 	}
 	multi_role = {
-		"第1歼击机联队" "第2歼击机联队" "第3歼击机联队" "第4歼击机联队" "第5歼击机联队" "第6歼击机联队" "第7歼击机联队" "第8歼击机联队" "第9歼击机联队" "第10歼击机联队" 
+		"1. Machitis Sygkrotima" "2. Machitis Sygkrotima" "3. Machitis Sygkrotima" "4. Machitis Sygkrotima" "5. Machitis Sygkrotima" "6. Machitis Sygkrotima" "7. Machitis Sygkrotima" "8. Machitis Sygkrotima" "9. Machitis Sygkrotima" "10. Machitis Sygkrotima" 
 	}
 	interceptor = {
-		"第1歼击机联队" "第2歼击机联队" "第3歼击机联队" "第4歼击机联队" "第5歼击机联队" "第6歼击机联队" "第7歼击机联队" "第8歼击机联队" "第9歼击机联队" "第10歼击机联队" 
+		"1. Machitis Sygkrotima" "2. Machitis Sygkrotima" "3. Machitis Sygkrotima" "4. Machitis Sygkrotima" "5. Machitis Sygkrotima" "6. Machitis Sygkrotima" "7. Machitis Sygkrotima" "8. Machitis Sygkrotima" "9. Machitis Sygkrotima" "10. Machitis Sygkrotima" 
+	}
+	jet_int = {
+		"1. Machitis Sygkrotima" "2. Machitis Sygkrotima" "3. Machitis Sygkrotima" "4. Machitis Sygkrotima" "5. Machitis Sygkrotima" "6. Machitis Sygkrotima" "7. Machitis Sygkrotima" "8. Machitis Sygkrotima" "9. Machitis Sygkrotima" "10. Machitis Sygkrotima" 
+	}
+	jet_mr = {
+		"1. Machitis Sygkrotima" "2. Machitis Sygkrotima" "3. Machitis Sygkrotima" "4. Machitis Sygkrotima" "5. Machitis Sygkrotima" "6. Machitis Sygkrotima" "7. Machitis Sygkrotima" "8. Machitis Sygkrotima" "9. Machitis Sygkrotima" "10. Machitis Sygkrotima" 
 	}
 	strategic_bomber = {
-		"第1战略轰炸联队" "第2战略轰炸联队" "第3战略轰炸联队" "第4战略轰炸联队" "第5战略轰炸联队" "第6战略轰炸联队" "第7战略轰炸联队" "第8战略轰炸联队" "第9战略轰炸联队" "第10战略轰炸联队" 
+		"1. Bombardistiko Strategiki Sygkrotima" "2. Bombardistiko Strategiki Sygkrotima" "3. Bombardistiko Strategiki Sygkrotima" "4. Bombardistiko Strategiki Sygkrotima" "5. Bombardistiko Strategiki Sygkrotima" "6. Bombardistiko Strategiki Sygkrotima" "7. Bombardistiko Strategiki Sygkrotima" "8. Bombardistiko Strategiki Sygkrotima" "9. Bombardistiko Strategiki Sygkrotima" "10. Bombardistiko Strategiki Sygkrotima" 
 	}
 	tactical_bomber = {
-		"第1战术轰炸联队" "第2战术轰炸联队" "第3战术轰炸联队" "第4战术轰炸联队" "第5战术轰炸联队" "第6战术轰炸联队" "第7战术轰炸联队" "第8战术轰炸联队" "第9战术轰炸联队" "第10战术轰炸联队" 
+		"1. Bombardistiko Taktikos Sygkrotima" "2. Bombardistiko Taktikos Sygkrotima" "3. Bombardistiko Taktikos Sygkrotima" "4. Bombardistiko Taktikos Sygkrotima" "5. Bombardistiko Taktikos Sygkrotima" "6. Bombardistiko Taktikos Sygkrotima" "7. Bombardistiko Taktikos Sygkrotima" "8. Bombardistiko Taktikos Sygkrotima" "9. Bombardistiko Taktikos Sygkrotima" "10. Bombardistiko Taktikos Sygkrotima" 
+	}
+	jet_bomber = {
+		"1. Bombardistiko Taktikos Sygkrotima" "2. Bombardistiko Taktikos Sygkrotima" "3. Bombardistiko Taktikos Sygkrotima" "4. Bombardistiko Taktikos Sygkrotima" "5. Bombardistiko Taktikos Sygkrotima" "6. Bombardistiko Taktikos Sygkrotima" "7. Bombardistiko Taktikos Sygkrotima" "8. Bombardistiko Taktikos Sygkrotima" "9. Bombardistiko Taktikos Sygkrotima" "10. Bombardistiko Taktikos Sygkrotima" 
 	}
 	naval_bomber = {
-		"第1海军轰炸联队" "第2海军轰炸联队" "第3海军轰炸联队" "第4海军轰炸联队" "第5海军轰炸联队" "第6海军轰炸联队" "第7海军轰炸联队" "第8海军轰炸联队" "第9海军轰炸联队" "第10海军轰炸联队" 
-		"第1鱼雷轰炸联队" "第2鱼雷轰炸联队" "第3鱼雷轰炸联队" "第4鱼雷轰炸联队" "第5鱼雷轰炸联队" "第6鱼雷轰炸联队" "第7鱼雷轰炸联队" "第8鱼雷轰炸联队" "第9鱼雷轰炸联队" "第10鱼雷轰炸联队" 
+		"1. Bombardistiko Naftikos Sygkrotima" "2. Bombardistiko Naftikos Sygkrotima" "3. Bombardistiko Naftikos Sygkrotima" "4. Bombardistiko Naftikos Sygkrotima" "5. Bombardistiko Naftikos Sygkrotima" "6. Bombardistiko Naftikos Sygkrotima" "7. Bombardistiko Naftikos Sygkrotima" "8. Bombardistiko Naftikos Sygkrotima" "9. Bombardistiko Naftikos Sygkrotima" "10. Bombardistiko Naftikos Sygkrotima" "1. Bombardistiki Torpilli Sygkrotima" 
+		"2. Bombardistiki Torpilli Sygkrotima" "3. Bombardistiki Torpilli Sygkrotima" "4. Bombardistiki Torpilli Sygkrotima" "5. Bombardistiki Torpilli Sygkrotima" "6. Bombardistiki Torpilli Sygkrotima" "7. Bombardistiki Torpilli Sygkrotima" "8. Bombardistiki Torpilli Sygkrotima" "9. Bombardistiki Torpilli Sygkrotima" "10. Bombardistiki Torpilli Sygkrotima" 
 	}
 	cas = {
-		"第1俯冲轰炸联队" "第2俯冲轰炸联队" "第3俯冲轰炸联队" "第4俯冲轰炸联队" "第5俯冲轰炸联队" "第6俯冲轰炸联队" "第7俯冲轰炸联队" "第8俯冲轰炸联队" "第9俯冲轰炸联队" "第10俯冲轰炸联队" 
+		"1. Bombardistiko Bouto Sygkrotima" "2. Bombardistiko Bouto Sygkrotima" "3. Bombardistiko Bouto Sygkrotima" "4. Bombardistiko Bouto Sygkrotima" "5. Bombardistiko Bouto Sygkrotima" "6. Bombardistiko Bouto Sygkrotima" "7. Bombardistiko Bouto Sygkrotima" "8. Bombardistiko Bouto Sygkrotima" "9. Bombardistiko Bouto Sygkrotima" "10. Bombardistiko Bouto Sygkrotima" 
 	}
 	transport_plane = {
-		"第1运输机联队" "第2运输机联队" "第3运输机联队" "第4运输机联队" "第5运输机联队" "第6运输机联队" "第7运输机联队" "第8运输机联队" "第9运输机联队" "第10运输机联队"  
+		"1. Aereas Metafero Sygkrotima" "2. Aereas Metafero Sygkrotima" "3. Aereas Metafero Sygkrotima" "4. Aereas Metafero Sygkrotima" "5. Aereas Metafero Sygkrotima" 
 	}
 	battleship = {
-		"BEN 基尔基斯号" "BEN 雅典号" "BEN 色萨利号" "BEN 伊庇鲁斯号" "BEN 伯罗奔尼撒号" 
+		"BEN Kilkis" "BEN Athinai" "BEN Thessalia" "BEN Ipiros" "BEN Peloponnisos" 
 	}
 	light_cruiser = {
-		"BEN 阿珀斯托里斯号" "BEN 卡纳里斯号" "BEN 萨奇图里斯号" "BEN 汤姆巴兹斯号" "BEN 埃利斯号" "BEN 比雷埃夫斯号" "BEN 基克拉泽斯号" "BEN 亚历桑德罗斯号" "BEN 帕特累号" 
+		"BEN Apostolis" "BEN Kriezis" "BEN Sakhtouris" "BEN Tompazis" "BEN Ellis" "BEN Piraievs" "BEN Kikladhes" "BEN Alexandros" "BEN P醫rai" 
 	}
 	heavy_cruiser = {
-		"BEN 阿韦罗夫号" "BEN 埃利斯号" "BEN 比雷埃夫斯号" "BEN 基克拉泽斯号" "BEN 亚历桑德罗斯号" "BEN 帕特累号" "BEN 克里特号" "BEN 爱琴号" "BEN 基西拉号" "BEN 凯法利尼亚号" 
+		"BEN Georgios Averof" "BEN Ellis" "BEN Piraievs" "BEN Kikladhes" "BEN Alexandros" "BEN P醫rai" "BEN Kr韙i" "BEN N韘oi Aiya韔u" "BEN Kithira" "BEN Kefallinia" 
 	}
 	battlecruiser = {
-		"BEN 基尔基斯号" "BEN 雅典号" "BEN 色萨利号" "BEN 伊庇鲁斯号" "BEN 伯罗奔尼撒号" 
+		"BEN Kilkis" "BEN Athinai" "BEN Thessalia" "BEN Ipiros" "BEN Peloponnisos" 
 	}
 	destroyer = {
-		"第1驱逐舰编队" "第2驱逐舰编队" "第3驱逐舰编队" "第4驱逐舰编队" "第5驱逐舰编队" "第6驱逐舰编队" "第7驱逐舰编队" "第8驱逐舰编队" "第9驱逐舰编队" "第10驱逐舰编队"
+		"1. Torpilli Naftiko" "2. Torpilli Naftiko" "3. Torpilli Naftiko" "4. Torpilli Naftiko" "5. Torpilli Naftiko" "6. Torpilli Naftiko" "7. Torpilli Naftiko" "8. Torpilli Naftiko" "9. Torpilli Naftiko" "10. Torpilli Naftiko" 
 	}
 	carrier = {
-		"BEN 希腊号" "BEN 苏格拉底号 " 
+		"BEN Ellas" "BEN Socrates" 
 	}
 	escort_carrier = {
-		"BEN 瓦西利乌斯·乔治奥斯号" "BEN 瓦西利萨 奥尔加号" "BEN 海德拉号" "BEN 斯柏特赛号" "BEN 萨拉号" 
+		"BEN Vasilefs Georgios" "BEN Vasilissa Olga" "BEN Hydra" "BEN Spetsai" "BEN Psara" 
 	}
 	submarine = {
-		"第1潜艇编队" "第2潜艇编队" "第3潜艇编队" "第4潜艇编队" "第5潜艇编队" "第6潜艇编队" "第7潜艇编队" "第8潜艇编队" "第9潜艇编队" "第10潜艇编队"  
+		"1. Ypobrychio Naftiko" "2. Ypobrychio Naftiko" "3. Ypobrychio Naftiko" "4. Ypobrychio Naftiko" "5. Ypobrychio Naftiko" "6. Ypobrychio Naftiko" "7. Ypobrychio Naftiko" "8. Ypobrychio Naftiko" "9. Ypobrychio Naftiko" "10. Ypobrychio Naftiko" 
 	}
 	transport_ship = {
-		"第1运输舰编队" "第2运输舰编队" "第3运输舰编队" "第4运输舰编队" "第5运输舰编队" "第6运输舰编队" "第7运输舰编队" "第8运输舰编队" "第9运输舰编队" "第10运输舰编队" 
+		"1. Metafero Naftiko" "2. Metafero Naftiko" "3. Metafero Naftiko" "4. Metafero Naftiko" "5. Metafero Naftiko" "6. Metafero Naftiko" "7. Metafero Naftiko" "8. Metafero Naftiko" "9. Metafero Naftiko" "10. Metafero Naftiko" 
 	}
 
 }
 
 ministers = {
 	18001 = {
-		name = "乔治二世"
+		name = "Georgios II"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M18001
 		head_of_state = insignificant_layman
-		head_of_state = insignificant_layman
-		head_of_state = insignificant_layman
-		head_of_state = insignificant_layman
-		head_of_state = insignificant_layman
-		head_of_state = insignificant_layman
 		start_date = 1936.1.1
 	}
 	18002 = {
-		name = "康斯坦丁·迪莫茨"
+		name = "Constantinos Demertzis"
 		ideology = paternal_autocrat
 		loyalty = 0.25
 		picture = M18002
@@ -146,7 +161,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18004 = {
-		name = "乔治·曼扎维诺斯"
+		name = "Georgios Mantzavinos"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M18004
@@ -154,7 +169,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18005 = {
-		name = "乔治·勒古特提"
+		name = "Georgios Logothetis"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M18005
@@ -163,7 +178,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18007 = {
-		name = "特奥多尔·潘加洛斯"
+		name = "Theodor Pangalos"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M18007
@@ -172,7 +187,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18008 = {
-		name = "亚历山大·帕普哥斯"
+		name = "Alexandros Papagos"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M18008
@@ -182,15 +197,15 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18009 = {
-		name = "阿纳斯塔西奥·萨凯拉里欧"
+		name = "Anastassio Sakellariou"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M18009
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1936.1.1
 	}
 	18010 = {
-		name = "艾莱夫希里奥斯·维尼泽洛斯"
+		name = "Eleftherios Venizelos"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M18010
@@ -199,31 +214,25 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18032 = {
-		name = "达马斯基诺斯·大主教"
+		name = "Archbishop Damaskinos"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M18032
 		head_of_state = barking_buffoon
-		head_of_state = barking_buffoon
-		head_of_state = barking_buffoon
 		head_of_government = flamboyant_tough_guy
 		minister_of_security = efficient_sociopath
-		head_of_state = barking_buffoon
-		head_of_state = barking_buffoon
 		start_date = 1941.1.1
 	}
 	18033 = {
-		name = "帕夫洛斯一世"
+		name = "Pavlos I"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M18033
 		head_of_state = die_hard_reformer
-		head_of_state = die_hard_reformer
-		head_of_state = die_hard_reformer
 		start_date = 1947.1.1
 	}
 	18040 = {
-		name = "格里高利·莫诺夫"
+		name = "Grigoriev Murnov"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M18040
@@ -232,7 +241,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	18041 = {
-		name = "马里奥·维塞里诺"
+		name = "Mario Vercellino"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M18041
@@ -241,7 +250,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	18042 = {
-		name = "赖因哈德·阿登堡"
+		name = "Reinhard Altenburg"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M18042
@@ -250,7 +259,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	18044 = {
-		name = "吉奥吉斯·先托斯"
+		name = "Giorgis Siantos"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M18021
@@ -259,7 +268,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18045 = {
-		name = "尼科斯·扎哈里亚迪斯"
+		name = "Nikos Zahariadis"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M18022
@@ -269,7 +278,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	18046 = {
-		name = "地米斯托克利·索夫卢斯"
+		name = "Themistocles Sophoulis"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M18014
@@ -280,19 +289,18 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18047 = {
-		name = "乔治·帕潘德里欧"
+		name = "Georgios Papandreou"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M18015
 		head_of_government = silent_workhorse
-		foreign_minister = biased_intellectual
 		foreign_minister = biased_intellectual
 		minister_of_security = efficient_sociopath
 		minister_of_intelligence = political_specialist
 		start_date = 1944.1.1
 	}
 	18048 = {
-		name = "帕纳吉奥里斯·波利萨斯"
+		name = "Panagiolis Poulitsas"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M18048
@@ -301,8 +309,8 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	18049 = {
-		name = "艾欧尼斯·迈塔克瑟斯"
-		ideology = social_conservative
+		name = "Ioannis Metaxas"
+		ideology = fascistic
 		loyalty = 1.00
 		picture = M18049
 		head_of_government = old_general
@@ -310,7 +318,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18050 = {
-		name = "亚历山大·科里希斯"
+		name = "Alexandros Korizis"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M18050
@@ -319,7 +327,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	18051 = {
-		name = "以马利·特索德洛斯"
+		name = "Emmanouel Tsouderos"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M18051
@@ -328,7 +336,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	18052 = {
-		name = "索法克里斯·文兹洛斯"
+		name = "Sophocles Venizelos"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M18012
@@ -337,18 +345,17 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	18053 = {
-		name = "康斯坦丁·查達里斯"
+		name = "Konstantinos Tsaldaris"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M18053
-		head_of_government = old_general
 		foreign_minister = the_cloak_n_dagger_schemer
 		minister_of_security = man_of_the_people
 		head_of_government = corporate_suit
 		start_date = 1946.1.1
 	}
 	18054 = {
-		name = "迪米特里奥斯·马克西莫斯"
+		name = "Dimitrios Maximos"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M18054
@@ -357,7 +364,7 @@ ministers = {
 		start_date = 1947.1.1
 	}
 	18055 = {
-		name = "帕纳吉斯·查达里斯"
+		name = "Panagis Tsaldaris"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M18055
@@ -366,7 +373,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18056 = {
-		name = "乔治·特索拉古洛"
+		name = "Georgias Tsolakoglou"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M18056
@@ -377,7 +384,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	18057 = {
-		name = "康斯坦丁·罗格拉瑟托普洛斯"
+		name = "Konstantinos Logothetopoulos"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M18057
@@ -386,7 +393,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	18058 = {
-		name = "艾欧尼斯·洛里斯"
+		name = "Ioannis Rallis"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M18058
@@ -395,7 +402,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	18060 = {
-		name = "尼古拉斯·普拉斯提拉斯"
+		name = "Nikolaos Plastiras"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M18060
@@ -406,7 +413,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	18061 = {
-		name = "佩特罗斯·沃尔加里斯"
+		name = "Petros Voulgaris"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M18061
@@ -416,7 +423,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	18062 = {
-		name = "帕纳吉奥提斯·卡纳洛普洛斯"
+		name = "Panagiotis Kanellopoulos"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M18062
@@ -425,7 +432,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	18063 = {
-		name = "米利提达斯·波凡拉金斯"
+		name = "Militiades Porphyrogins"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M18029
@@ -435,7 +442,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18065 = {
-		name = "厄里皮蒂斯·巴吉尔奎斯"
+		name = "Evripidis Bakirtris"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M18065
@@ -444,7 +451,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	18066 = {
-		name = "马科斯·瓦普哈蒂斯"
+		name = "Markos Vaphiadis"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M18066
@@ -453,16 +460,15 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	18068 = {
-		name = "艾欧尼斯·萨芬诺普洛斯"
+		name = "Ioannis Safianopoulos"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M18068
 		foreign_minister = great_compromiser
-		foreign_minister = the_cloak_n_dagger_schemer
 		start_date = 1945.1.1
 	}
 	18069 = {
-		name = "康斯坦丁·伦提斯"
+		name = "Constantinos Rentis"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M18069
@@ -470,7 +476,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	18075 = {
-		name = "德摩斯梯尼·尼古拉斯"
+		name = "Demosthenes Nicoladis"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M18075
@@ -478,7 +484,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18080 = {
-		name = "艾欧尼斯·苏格拉底·普里茨"
+		name = "Ioannes Socrates Politis"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M18080
@@ -486,7 +492,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	18082 = {
-		name = "帕纳吉奥提奥斯·塔麦斯提查斯"
+		name = "Panagiotios Demestichas"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M18082
@@ -494,7 +500,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	18085 = {
-		name = "佩特罗斯·卢梭斯"
+		name = "Petros Rousos"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M18085
@@ -502,7 +508,7 @@ ministers = {
 		start_date = 1947.1.1
 	}
 	18086 = {
-		name = "马科斯·阿甘诺梭斯"
+		name = "Markos Aganossos"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M18086
@@ -511,7 +517,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18087 = {
-		name = "特奥多罗斯·马萨尔"
+		name = "Theodoros Marsal"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M18087
@@ -519,7 +525,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	18089 = {
-		name = "亚历山大·索沃罗斯"
+		name = "Alexandros Svolos"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M18089
@@ -527,7 +533,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	18090 = {
-		name = "塔麦乔斯·高西斯"
+		name = "Demetrios Gousis"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M18090
@@ -536,7 +542,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	18091 = {
-		name = "阿莱西奥·塔萨莫托斯"
+		name = "Alexiou Tsamotos"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M18091
@@ -545,7 +551,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18092 = {
-		name = "安托万·弗兰古里斯"
+		name = "Antoine Frangulis"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18092
@@ -554,7 +560,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	18093 = {
-		name = "萨纳梭斯·艾科斯哈里斯"
+		name = "Thanassos Exaharis"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18093
@@ -562,7 +568,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	18094 = {
-		name = "塔基斯·皮潘内里斯"
+		name = "Takis Pipenelis"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18094
@@ -570,7 +576,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	18096 = {
-		name = "加西亚·基纳多斯"
+		name = "Gaecia Geanados"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18096
@@ -579,7 +585,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	18097 = {
-		name = "阿纳斯塔西奥斯·巴迪维利亚斯s"
+		name = "Anastassios Bardivilias"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18097
@@ -589,7 +595,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	18098 = {
-		name = "阿纳塔西奥斯·卡纳洛普洛斯"
+		name = "Anatasios Kanellopoulos"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M18098
@@ -598,7 +604,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	18099 = {
-		name = "吉奥吉奥斯·拉乌达斯"
+		name = "Giorgios Lavdas"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M18099
@@ -608,7 +614,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	18100 = {
-		name = "阿奇比亚德斯·史蒂芬诺普洛斯"
+		name = "Alchibiades Stephanopoulos"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18100
@@ -618,7 +624,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	18103 = {
-		name = "帕沃斯·梅尔奇蒂斯"
+		name = "Pavlos Milziadis"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M18103
@@ -626,7 +632,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	18104 = {
-		name = "克里斯托斯·辛加特斯"
+		name = "Christos Tsigantes"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M18104
@@ -636,7 +642,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	18105 = {
-		name = "尼古拉斯·沃特西纳里斯"
+		name = "Nicholaos Voutsinaris"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M18105
@@ -644,7 +650,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	18106 = {
-		name = "艾欧尼斯·维尼泽洛斯"
+		name = "Ioannis Venizelos"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M18106
@@ -652,7 +658,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	18111 = {
-		name = "埃利亚斯·帕纳吉里斯"
+		name = "Elias Panakilis"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M18111
@@ -660,7 +666,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	18112 = {
-		name = "伊万基洛斯·帕帕诺德索斯"
+		name = "Evangelos Papanoutsos"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M18112
@@ -668,7 +674,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	18114 = {
-		name = "吉奥吉奥斯·尼古拉蒂斯"
+		name = "Giorgios Nicolaidis"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18114
@@ -676,7 +682,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18115 = {
-		name = "劳尔·比比卡·罗塞蒂"
+		name = "Raul Bibica Rosetti"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18115
@@ -684,7 +690,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	18118 = {
-		name = "萨纳西斯·阿尼德斯"
+		name = "Thanassis Aghnides"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18118
@@ -692,7 +698,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	18119 = {
-		name = "帕纳吉奥蒂斯·卡凡塔里斯"
+		name = "Panagiotis Kafantaris"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18119
@@ -700,7 +706,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	18120 = {
-		name = "史蒂芬诺斯·拉金托斯"
+		name = "Stephanos Lakiantos"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18120
@@ -708,7 +714,7 @@ ministers = {
 		start_date = 1947.1.1
 	}
 	18128 = {
-		name = "克里斯托斯·乔塔菲利蒂斯"
+		name = "Christos Triantafyllidis"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M18128
@@ -717,7 +723,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	18129 = {
-		name = "吉安内斯·伊奥内德斯"
+		name = "Giannes Ioannides"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M18025
@@ -726,7 +732,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18131 = {
-		name = "斯特拉托斯·佩奥姆斯"
+		name = "Stratos Payioumtzis"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M18131
@@ -734,7 +740,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	18133 = {
-		name = "科斯塔·莫拉斯"
+		name = "Costas Moulas"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M18133
@@ -742,7 +748,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	18135 = {
-		name = "乔治·德罗索普洛斯"
+		name = "Georgios Drossopoulos"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M18135
@@ -750,7 +756,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	18136 = {
-		name = "乔治·斯瑞特"
+		name = "Georgios Streit"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M18136
@@ -759,7 +765,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	18138 = {
-		name = "亚历山大·普洛帕尼斯"
+		name = "Alexandros Propanis"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18138
@@ -767,7 +773,7 @@ ministers = {
 		start_date = 1947.1.1
 	}
 	18142 = {
-		name = "塞万斯蒂安·弗利蒂斯"
+		name = "Sevastianos Foulidis"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M18142
@@ -775,7 +781,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	18143 = {
-		name = "拿破仑·泽瓦斯"
+		name = "Napoleon Zervas"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M18143
@@ -783,7 +789,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	18152 = {
-		name = "帕拉斯克斯·梅里斯诺斯"
+		name = "Paraskos Melissinos"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18152
@@ -791,7 +797,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	18153 = {
-		name = "瓦希里奥斯·特索诺卡斯"
+		name = "Vassilios Tsounoukas"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18153
@@ -800,7 +806,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	18154 = {
-		name = "阿纳斯塔西奥斯·萨凯拉里欧"
+		name = "Anastassios Sakellariou"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18009
@@ -808,7 +814,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	18155 = {
-		name = "吉奥吉奥斯·坎迪里斯"
+		name = "Giorgios Kondylis"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M18155
@@ -816,7 +822,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18159 = {
-		name = "莱昂尼达斯·帕拉斯克沃普洛斯"
+		name = "Leonidas Paraskevopoulos"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M18159
@@ -824,7 +830,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	18160 = {
-		name = "史蒂芬诺斯·萨拉菲斯"
+		name = "Stephanos Sarafis"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M18027
@@ -832,7 +838,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18162 = {
-		name = "吉奥吉奥斯·卢梭普洛斯"
+		name = "Giorgios Roussoupoulos"
 		ideology = social_liberal
 		loyalty = 0.50
 		picture = M18162
@@ -840,7 +846,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	18172 = {
-		name = "阿里斯·维勒奇奥蒂斯"
+		name = "Aris Velouchiotis"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M18028
@@ -848,7 +854,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18173 = {
-		name = "尼古拉斯·沃西斯"
+		name = "Nikolaos Votsis"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M18019
@@ -856,15 +862,15 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18179 = {
-		name = "亚历山大·奥科诺莫"
+		name = "Alexandros Oikonomou"
 		ideology = national_socialist
 		loyalty = 0.25
 		picture = M18179
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1941.1.1
 	}
 	18184 = {
-		name = "尤索纳索斯·佩里克斯"
+		name = "Euthanassos Perrikos"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M18184
@@ -872,7 +878,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	18185 = {
-		name = "帕纳高迪斯·帕帕尼古拉"
+		name = "Panagotis Papanikolaou"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M18182
@@ -880,7 +886,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18191 = {
-		name = "尼科斯·贝罗亚尼斯"
+		name = "Nikos Beloyannis"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M18030
@@ -888,7 +894,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	18202 = {
-		name = "亚历山大迪奥米蒂斯"
+		name = "Alexandros Diomidis"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M18202
@@ -896,7 +902,7 @@ ministers = {
 		start_date = 1949.1.1
 	}
 	18203 = {
-		name = "艾欧尼斯·索托基斯"
+		name = "Ioannis Theotokis"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M18203
@@ -904,7 +910,7 @@ ministers = {
 		start_date = 1950.1.1
 	}
 	18204 = {
-		name = "迪米特里奥斯·吉奥索普洛斯"
+		name = "Dimitrios Kiousopoulos"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M18204
@@ -912,7 +918,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	18206 = {
-		name = "帕纳奥提斯·皮潘内里斯"
+		name = "Panaiotis Pipenelis"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M18206
@@ -920,12 +926,134 @@ ministers = {
 		start_date = 1950.1.1
 	}
 	18207 = {
-		name = "史蒂芬诺斯·史蒂芬诺普洛斯"
+		name = "Stephanos Stephanopoulos"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M18207
 		foreign_minister = biased_intellectual
 		start_date = 1952.1.1
 	}
+	# Generic dummy ministers
+	95331 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95332 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95333 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		start_date = 1936.1.1
+	}
+	95334 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95335 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95336 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95337 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95338 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}	
 }
-

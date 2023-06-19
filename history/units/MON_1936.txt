@@ -1,37 +1,32 @@
-corps = {
-	name = "蒙古军团"
+theatre = {
+	name = "Mongolskii Verhovnoe Komandovanie"
 	location = 8892
-	regiment = { type = hq_brigade name = "蒙古军团指挥部" historical_model = 0 }
-	division= {
-		name = "第1蒙古步兵师"
+	regiment = { type = hq_brigade name = "Ulaanbaatar HQ" historical_model = 0 }
+	corps = {
+		name = "Armija Mongol Nayramdakh"
 		location = 8892
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division= {
-		name = "第2蒙古骑兵师"
-		location = 8892
-		is_reserve = yes
-		regiment = { type = cavalry_brigade historical_model = 0 }
-		regiment = { type = cavalry_brigade historical_model = 0 }
-	}
-	division= {
-		name = "第3蒙古民兵师"
-		location = 8892
-		is_reserve = yes
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-	}
-	division= {
-		name = "第4蒙古民兵师"
-		location = 8892
-		is_reserve = yes
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "Armija Mongol Nayramdakh HQ" historical_model = 0 }
+		division= {
+			name = "1ya Nayramdakh Kavaleriyskaya Div."
+			location = 8892
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1y Kavaleriyskiy Polk" experience = 0 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "2y Kavaleriyskiy Polk" experience = 0 historical_model = 2 }
+		}
+		division= {
+			name = "2ya Nayramdakh Kavaleriyskaya Div."
+			location = 8892
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "3y Kavaleriyskiy Polk" experience = 0 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "3y Strelkovyi Polk" experience = 0 historical_model = 2 }
+		}
+		division= {
+			name = "1ya Nayramdakh Strelkovaya Diviziya."
+			location = 8892
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1y Strelkovyi Polk" experience = 0 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "2y Strelkovyi Polk" experience = 0 historical_model = 2 }
+		}
 	}
 }
 

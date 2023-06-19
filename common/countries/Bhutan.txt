@@ -1,6 +1,8 @@
 color = { 225  131  148 }
 graphical_culture = Japanese
 
+
+
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -17,100 +19,122 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
 	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
+	}		
 }
 
 unit_names = {
 	infantry_brigade = {
-		"王室卫队" "皇家卫队" "第1 不丹步兵师" "第2 不丹步兵师" "第3 不丹步兵师" "第4 不丹步兵师" "第5 不丹步兵师" "第6 不丹步兵师" "第7 不丹步兵师" "第8 不丹步兵师" "第9 不丹步兵师" 
-		"第10 不丹步兵师" "第11 不丹步兵师" "第12 不丹步兵师" "第13 不丹步兵师" "1第4 不丹步兵师" "1第5 不丹步兵师" "1第6 不丹步兵师" "1第7 不丹步兵师" "1第8 不丹步兵师" "1第9 不丹步兵师" "20th 不丹步兵师" 
+		"Household Division" "Royal Division" "1st Bhutanese Infantry Div." "2nd Bhutanese Infantry Div." "3rd Bhutanese Infantry Div." "4th Bhutanese Infantry Div." "5th Bhutanese Infantry Div." "6th Bhutanese Infantry Div." "7th Bhutanese Infantry Div." "8th Bhutanese Infantry Div." "9th Bhutanese Infantry Div." 
+		"10th Bhutanese Infantry Div." "11th Bhutanese Infantry Div." "12th Bhutanese Infantry Div." "13th Bhutanese Infantry Div." "14th Bhutanese Infantry Div." "15th Bhutanese Infantry Div." "16th Bhutanese Infantry Div." "17th Bhutanese Infantry Div." "18th Bhutanese Infantry Div." "19th Bhutanese Infantry Div." "20th Bhutanese Infantry Div." 
 			}
 	cavalry_brigade = {
-		"第1 不丹骑兵师" "第2 不丹骑兵师" "第3 不丹骑兵师" "第4 不丹骑兵师" "第5 不丹骑兵师" "第6 不丹骑兵师" "第7 不丹骑兵师" "第8 不丹骑兵师" "第9 不丹骑兵师" "第10 不丹骑兵师" 
+		"1st Bhutanese Cavalry Div." "2nd Bhutanese Cavalry Div." "3rd Bhutanese Cavalry Div." "4th Bhutanese Cavalry Div." "5th Bhutanese Cavalry Div." "6th Bhutanese Cavalry Div." "7th Bhutanese Cavalry Div." "8th Bhutanese Cavalry Div." "9th Bhutanese Cavalry Div." "10th Bhutanese Cavalry Div." 
 	}
 	motorized_brigade = {
-		"第1 不丹摩步师" "第2 不丹摩步师" "第3 不丹摩步师" "第4 不丹摩步师" "第5 不丹摩步师" "第6 不丹摩步师" "第7 不丹摩步师" "第8 不丹摩步师" "第9 不丹摩步师" "第10 不丹摩步师" 
+		"1st Bhutanese Motorized Div." "2nd Bhutanese Motorized Div." "3rd Bhutanese Motorized Div." "4th Bhutanese Motorized Div." "5th Bhutanese Motorized Div." "6th Bhutanese Motorized Div." "7th Bhutanese Motorized Div." "8th Bhutanese Motorized Div." "9th Bhutanese Motorized Div." "10th Bhutanese Motorized Div." 
 	}
 	mechanized_brigade = {
-		"第1 不丹机步师" "第2 不丹机步师" "第3 不丹机步师" "第4 不丹机步师" "第5 不丹机步师" "第6 不丹机步师" "第7 不丹机步师" "第8 不丹机步师" "第9 不丹机步师" "第10 不丹机步师" 
+		"1st Bhutanese Mechanized Div." "2nd Bhutanese Mechanized Div." "3rd Bhutanese Mechanized Div." "4th Bhutanese Mechanized Div." "5th Bhutanese Mechanized Div." "6th Bhutanese Mechanized Div." "7th Bhutanese Mechanized Div." "8th Bhutanese Mechanized Div." "9th Bhutanese Mechanized Div." "10th Bhutanese Mechanized Div." 
 	}
 	light_armor_brigade = {
-		"第1 不丹轻装甲师" "第2 不丹轻装甲师" "第3 不丹轻装甲师" "第4 不丹轻装甲师" "第5 不丹轻装甲师" "第6 不丹轻装甲师" "第7 不丹轻装甲师" "第8 不丹轻装甲师" "第9 不丹轻装甲师" "第10 不丹轻装甲师" "第11 不丹轻装甲师" 
-		"第12 不丹轻装甲师" "1第4 不丹轻装甲师" "1第5 不丹轻装甲师" 
+		"1st Bhutanese Armoured Div." "2nd Bhutanese Armoured Div." "3rd Bhutanese Armoured Div." "4th Bhutanese Armoured Div." "5th Bhutanese Armoured Div." "6th Bhutanese Armoured Div." "7th Bhutanese Armoured Div." "8th Bhutanese Armoured Div." "9th Bhutanese Armoured Div." "10th Bhutanese Armoured Div." "11th Bhutanese Armoured Div." 
+		"12th Bhutanese Armoured Div." "14th Bhutanese Armoured Div." "15th Bhutanese Armoured Div." 
 	}
 	armor_brigade = {
-		"第1 不丹装甲师" "第2 不丹装甲师" "第3 不丹装甲师" "第4 不丹装甲师" "第5 不丹装甲师" "第6 不丹装甲师" "第7 不丹装甲师" "第8 不丹装甲师" "第9 不丹装甲师" "第10 不丹装甲师" "第11 不丹装甲师" 
-		"第12 不丹装甲师" "1第4 不丹装甲师" "1第5 不丹装甲师" 
+		"1st Bhutanese Armoured Div." "2nd Bhutanese Armoured Div." "3rd Bhutanese Armoured Div." "4th Bhutanese Armoured Div." "5th Bhutanese Armoured Div." "6th Bhutanese Armoured Div." "7th Bhutanese Armoured Div." "8th Bhutanese Armoured Div." "9th Bhutanese Armoured Div." "10th Bhutanese Armoured Div." "11th Bhutanese Armoured Div." 
+		"12th Bhutanese Armoured Div." "14th Bhutanese Armoured Div." "15th Bhutanese Armoured Div." 
 	}
 	paratrooper_brigade = {
-		"第1 不丹空降师" "第2 不丹空降师" "第3 不丹空降师" "第4 不丹空降师" "第5 不丹空降师" "第6 不丹空降师" "第7 不丹空降师" "第8 不丹空降师" "第9 不丹空降师" "第10 不丹空降师" 
+		"1st Bhutanese Airborne Div." "2nd Bhutanese Airborne Div." "3rd Bhutanese Airborne Div." "4th Bhutanese Airborne Div." "5th Bhutanese Airborne Div." "6th Bhutanese Airborne Div." "7th Bhutanese Airborne Div." "8th Bhutanese Airborne Div." "9th Bhutanese Airborne Div." "10th Bhutanese Airborne Div." 
 	}
 	marine_brigade = {
-		"第1 不丹海军陆战师" "第2 不丹海军陆战师" "第3 不丹海军陆战师" "第4 不丹海军陆战师" "第5 不丹海军陆战师" "第6 不丹海军陆战师" "第7 不丹海军陆战师" "第8 不丹海军陆战师" "第9 不丹海军陆战师" "第10 不丹海军陆战师" 
+		"1st Bhutanese Marine Div." "2nd Bhutanese Marine Div." "3rd Bhutanese Marine Div." "4th Bhutanese Marine Div." "5th Bhutanese Marine Div." "6th Bhutanese Marine Div." "7th Bhutanese Marine Div." "8th Bhutanese Marine Div." "9th Bhutanese Marine Div." "10th Bhutanese Marine Div." 
 	}
 	bergsjaeger_brigade = {
-		"第1 廓尔喀山地师" "第2 廓尔喀山地师" "第3 廓尔喀山地师" "第4 廓尔喀山地师" "第5 廓尔喀山地师" "第8 廓尔喀山地师" "第10 廓尔喀山地师" "第11 廓尔喀山地师" "第12 廓尔喀山地师" 
+		"1st Gurkha Division" "2nd Gurkha Division" "3rd Gurkha Division" "4th Gurkha Division" "5th Gurkha Division" "8th Gurkha Division" "10th Gurkha Division" "11th Gurkha Division" "12th Gurkha Division" 
 	}
 	garrison_brigade = {
-		"第1 不丹卫戍师" "第2 不丹卫戍师" "第3 不丹卫戍师" "第4 不丹卫戍师" "第5 不丹卫戍师" "第6 不丹卫戍师" "第7 不丹卫戍师" "第8 不丹卫戍师" "第9 不丹卫戍师" "第10 不丹卫戍师" "第11 不丹卫戍师" 
-		"第12 不丹卫戍师" "第13 不丹卫戍师" "1第4 不丹卫戍师" "1第5 不丹卫戍师" "1第6 不丹卫戍师" 
+		"1st Bhutanese Garrison Div." "2nd Bhutanese Garrison Div." "3rd Bhutanese Garrison Div." "4th Bhutanese Garrison Div." "5th Bhutanese Garrison Div." "6th Bhutanese Garrison Div." "7th Bhutanese Garrison Div." "8th Bhutanese Garrison Div." "9th Bhutanese Garrison Div." "10th Bhutanese Garrison Div." "11th Bhutanese Garrison Div." 
+		"12th Bhutanese Garrison Div." "13th Bhutanese Garrison Div." "14th Bhutanese Garrison Div." "15th Bhutanese Garrison Div." "16th Bhutanese Garrison Div." 
 	}
 	hq_brigade = {
-		"第1军" "第2军" "第3军" "第4军" "第5军" "第6军" "第7军" "第8军" "第9军" "第10军" "1第5军" 
+		"1st Army" "2nd Army" "3rd Army" "4th Army" "5th Army" "6th Army" "7th Army" "8th Army" "9th Army" "10th Army" "15th Army" 
 			}
 	militia_brigade = {
-		"第1 不丹民兵师" "第2 不丹民兵师" "第3 不丹民兵师" "第4 不丹民兵师" "第5 不丹民兵师" "第6 不丹民兵师" "第7 不丹民兵师" "第8 不丹民兵师" "第9 不丹民兵师" "第10 不丹民兵师" "第11 不丹民兵师" 
-		"第12 不丹民兵师" "第13 不丹民兵师" "1第4 不丹民兵师" "1第5 不丹民兵师" "1第6 不丹民兵师" "1第7 不丹民兵师" "1第8 不丹民兵师" "1第9 不丹民兵师" "20th 不丹民兵师" "2第1 不丹民兵师" "2第2 不丹民兵师" 
-		"2第3 不丹民兵师" "2第4 不丹民兵师" "2第5 不丹民兵师" "2第6 不丹民兵师" "2第7 不丹民兵师" "2第8 不丹民兵师" "2第9 不丹民兵师" "30th 不丹民兵师" 
+		"1st Bhutanese Militia Div." "2nd Bhutanese Militia Div." "3rd Bhutanese Militia Div." "4th Bhutanese Militia Div." "5th Bhutanese Militia Div." "6th Bhutanese Militia Div." "7th Bhutanese Militia Div." "8th Bhutanese Militia Div." "9th Bhutanese Militia Div." "10th Bhutanese Militia Div." "11th Bhutanese Militia Div." 
+		"12th Bhutanese Militia Div." "13th Bhutanese Militia Div." "14th Bhutanese Militia Div." "15th Bhutanese Militia Div." "16th Bhutanese Militia Div." "17th Bhutanese Militia Div." "18th Bhutanese Militia Div." "19th Bhutanese Militia Div." "20th Bhutanese Militia Div." "21st Bhutanese Militia Div." "22nd Bhutanese Militia Div." 
+		"23rd Bhutanese Militia Div." "24th Bhutanese Militia Div." "25th Bhutanese Militia Div." "26th Bhutanese Militia Div." "27th Bhutanese Militia Div." "28th Bhutanese Militia Div." "29th Bhutanese Militia Div." "30th Bhutanese Militia Div." 
 	}
 	multi_role = {
-		"No.1战斗机联队" "No.2战斗机联队" "No.3战斗机联队" "No.4战斗机联队" "No.5战斗机联队" "No.7战斗机联队" "No.8战斗机联队" "No.9战斗机联队" "No.10战斗机联队" 
+		"No.1 Fighter Wing" "No.2 Fighter Wing" "No.3 Fighter Wing" "No.4 Fighter Wing" "No.5 Fighter Wing" "No.7 Fighter Wing" "No.8 Fighter Wing" "No.9 Fighter Wing" "No.10 Fighter Wing" 
 	}
 	interceptor = {
-		"No.1截击机联队" "No.2截击机联队" "No.3截击机联队" "No.4截击机联队" "No.5截击机联队" "No.7截击机联队" "No.8截击机联队" "No.9截击机联队" "No.10截击机联队" 
+		"No.1 Fighter Wing" "No.2 Fighter Wing" "No.3 Fighter Wing" "No.4 Fighter Wing" "No.5 Fighter Wing" "No.7 Fighter Wing" "No.8 Fighter Wing" "No.9 Fighter Wing" "No.10 Fighter Wing" 
+	}
+	jet_int = {
+		"No.1 Fighter Wing" "No.2 Fighter Wing" "No.3 Fighter Wing" "No.4 Fighter Wing" "No.5 Fighter Wing" "No.7 Fighter Wing" "No.8 Fighter Wing" "No.9 Fighter Wing" "No.10 Fighter Wing" 
+	}
+	jet_mr = {
+		"No.1 Fighter Wing" "No.2 Fighter Wing" "No.3 Fighter Wing" "No.4 Fighter Wing" "No.5 Fighter Wing" "No.7 Fighter Wing" "No.8 Fighter Wing" "No.9 Fighter Wing" "No.10 Fighter Wing" 
 	}
 	strategic_bomber = {
-		"No.1战略轰炸联队" "No.2战略轰炸联队" "No.6战略轰炸联队" "No.3战略轰炸联队" "No.4战略轰炸联队" "No.7战略轰炸联队" "No.8战略轰炸联队" "No.9战略轰炸联队" "No.10战略轰炸联队" 
+		"No.1 Strategic Wing" "No.2 Strategic Wing" "No.6 Strategic Wing" "No.3 Strategic Wing" "No.4 Strategic Wing" "No.7 Strategic Wing" "No.8 Strategic Wing" "No.9 Strategic Wing" "No.10 Strategic Wing" 
 	}
 	tactical_bomber = {
-		"No.1战术轰炸联队" "No.2战术轰炸联队" "No.6战术轰炸联队" "No.3战术轰炸联队" "No.4战术轰炸联队" "No.7战术轰炸联队" "No.8战术轰炸联队" "No.9战术轰炸联队" "No.10战术轰炸联队" 
+		"No.1 Tactical Bomb Wing" "No.2 Tactical Bomb Wing" "No.6 Tactical Bomb Wing" "No.3 Tactical Bomb Wing" "No.4 Tactical Bomb Wing" "No.7 Tactical Bomb Wing" "No.8 Tactical Bomb Wing" "No.9 Tactical Bomb Wing" "No.10 Tactical Bomb Wing" 
+	}
+	jet_bomber = {
+		"No.1 Tactical Bomb Wing" "No.2 Tactical Bomb Wing" "No.6 Tactical Bomb Wing" "No.3 Tactical Bomb Wing" "No.4 Tactical Bomb Wing" "No.7 Tactical Bomb Wing" "No.8 Tactical Bomb Wing" "No.9 Tactical Bomb Wing" "No.10 Tactical Bomb Wing" 
 	}
 	naval_bomber = {
-		"No.1海军轰炸联队" "No.2海军轰炸联队" "No.3海军轰炸联队" "No.4海军轰炸联队" "No.5海军轰炸联队" "No.7海军轰炸联队" "No.8海军轰炸联队" "No.9海军轰炸联队" "No.10海军轰炸联队" "No.1海军鱼雷机联队" "No.2海军鱼雷机联队" 
-		"No.3海军鱼雷机联队" "No.4海军鱼雷机联队" "No.5海军鱼雷机联队" "No.7海军鱼雷机联队" "No.8海军鱼雷机联队" "No.9海军鱼雷机联队" "No.10海军鱼雷机联队" 
+		"No.1 Naval Bomber Wing" "No.2 Naval Bomber Wing" "No.3 Naval Bomber Wing" "No.4 Naval Bomber Wing" "No.5 Naval Bomber Wing" "No.7 Naval Bomber Wing" "No.8 Naval Bomber Wing" "No.9 Naval Bomber Wing" "No.10 Naval Bomber Wing" "No.1 Torpedo Wing" "No.2 Torpedo Wing" 
+		"No.3 Torpedo Wing" "No.4 Torpedo Wing" "No.5 Torpedo Wing" "No.7 Torpedo Wing" "No.8 Torpedo Wing" "No.9 Torpedo Wing" "No.10 Torpedo Wing" 
 	}
 	cas = {
-		"No.1俯冲轰炸机联队" "No.2俯冲轰炸机联队" "No.6俯冲轰炸机联队" "No.3俯冲轰炸机联队" "No.4俯冲轰炸机联队" "No.7俯冲轰炸机联队" "No.8俯冲轰炸机联队" "No.9俯冲轰炸机联队" "No.10俯冲轰炸机联队" 
+		"No.1 Dive Bomber Wing" "No.2 Dive Bomber Wing" "No.6 Dive Bomber Wing" "No.3 Dive Bomber Wing" "No.4 Dive Bomber Wing" "No.7 Dive Bomber Wing" "No.8 Dive Bomber Wing" "No.9 Dive Bomber Wing" "No.10 Dive Bomber Wing" 
 	}
 	transport_plane = {
-		"No.1运输机联队" "No.2运输机联队" "No.3运输机联队" "No.4运输机联队" "No.5运输机联队" 
+		"No.1 Transport Wing" "No.2 Transport Wing" "No.3 Transport Wing" "No.4 Transport Wing" "No.5 Transport Wing" 
 	}
 	battleship = {
-		"不丹" "拉吉 森德纳瓦" 
+		"Bhutan" "Raj Sendrava" 
 	}
 	light_cruiser = {
-		"安路那查尔" "帕登思" "伯姆迪拉" "伊塔拉贾" "廷布" 
+		"Arunachal" "Pradesh" "Bomdila" "Itanagar" "Thimphu" 
 	}
 	heavy_cruiser = {
-		"Arunachal" "帕登思" "伯姆迪拉" "伊塔拉贾" "廷布" 
+		"Arunachal" "Pradesh" "Bomdila" "Itanagar" "Thimphu" 
 	}
 	battlecruiser = {
-		"不丹" "拉吉 森德纳瓦" 
+		"Bhutan" "Raj Sendrava" 
 	}
 	destroyer = {
-		"第1驱逐舰大队" "第2驱逐舰大队" "第3驱逐舰大队" "第4驱逐舰大队" "第5驱逐舰大队" "第6驱逐舰大队" "第7驱逐舰大队" "第8驱逐舰大队" "第9驱逐舰大队" "第10驱逐舰大队" 
+		"1st Destroyer Flotilla" "2nd Destroyer Flotilla" "3rd Destroyer Flotilla" "4th Destroyer Flotilla" "5th Destroyer Flotilla" "6th Destroyer Flotilla" "7th Destroyer Flotilla" "8th Destroyer Flotilla" "9th Destroyer Flotilla" "10th Destroyer Flotilla" 
 	}
 	carrier = {
 		"Druk" 
 	}
 	submarine = {
-		"第1潜艇大队" "第2潜艇大队" "第3潜艇大队" "第4潜艇大队" "第5潜艇大队" "第6潜艇大队" "第7潜艇大队" "第8潜艇大队" "第9潜艇大队" "第10潜艇大队" 
+		"1st Submarine Flotilla" "2nd Submarine Flotilla" "3rd Submarine Flotilla" "4th Submarine Flotilla" "5th Submarine Flotilla" "6th Submarine Flotilla" "7th Submarine Flotilla" "8th Submarine Flotilla" "9th Submarine Flotilla" "10th Submarine Flotilla" 
 	}
 	transport_ship = {
-		"第1运输船队" "第2运输船队" "第3运输船队" "第4运输船队" "第5运输船队" "第6运输船队" "第7运输船队" "第8运输船队" "第9运输船队" "第10运输船队" 
+		"1st Troop Transport Flotilla" "2nd Troop Transport Flotilla" "3rd Troop Transport Flotilla" "4th Troop Transport Flotilla" "5th Troop Transport Flotilla" "6th Troop Transport Flotilla" "7th Troop Transport Flotilla" "8th Troop Transport Flotilla" "9th Troop Transport Flotilla" "10th Troop Transport Flotilla" 
 	}
 
 }
@@ -118,7 +142,7 @@ unit_names = {
 
 ministers = {
 	74001 = {
-		name = "吉美·旺彻克"
+		name = "Jigme Wangchuk"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M74001
@@ -128,7 +152,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	74002 = {
-		name = "索南·托布加伊·多杰"
+		name = "Sonam Tobgay Dorji"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M74002
@@ -139,7 +163,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	74004 = {
-		name = "阿马德·亚哈斯"
+		name = "Ahmad Akhaz"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M74004
@@ -150,7 +174,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	74005 = {
-		name = "芒·珀斯·布尔·巴伊·日戈亚尔珀"
+		name = "Mang-pos Bhur-ba'i Rgyalpo"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M74005
@@ -159,7 +183,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	74006 = {
-		name = "雷吉诺德·B.·斯蒂文斯"
+		name = "Reginald B. Stevens"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M74006
@@ -169,7 +193,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	74007 = {
-		name = "兰戈亚尔·巴哈杜尔"
+		name = "Namgyal Bahadur"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M74007
@@ -182,7 +206,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	74008 = {
-		name = "菲利普·托泽伊"
+		name = "Philip Toozey"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M74008
@@ -191,7 +215,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	74009 = {
-		name = "汤米·古尔德"
+		name = "Tommy Gould"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M74009
@@ -202,7 +226,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	74010 = {
-		name = "尼基·巴尔"
+		name = "Nicky Barr"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M74010
@@ -211,7 +235,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	74011 = {
-		name = "巴西尔·古尔德爵士"
+		name = "Sir Basil Gould"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M74011
@@ -220,7 +244,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	74015 = {
-		name = "威廉·斯蒂文森·梅耶尔"
+		name = "William Stevenson Meyer"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M74015
@@ -230,7 +254,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	74016 = {
-		name = "亚瑟·约翰·霍普金森"
+		name = "Arthur John Hopkinson"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M74016
@@ -240,7 +264,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	74017 = {
-		name = "爱德华·库克"
+		name = "Edward Cook"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M74017
@@ -251,7 +275,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	74019 = {
-		name = "卡尔马·S.·巴哈杜尔"
+		name = "Karma S. Bahadur"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M74019
@@ -261,7 +285,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	74026 = {
-		name = "比尔·科勒特"
+		name = "Bill Collett"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M74026
@@ -270,7 +294,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	74029 = {
-		name = "索南·帕拉杜哈"
+		name = "Sonam Pradukha"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M74029
@@ -280,7 +304,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	74040 = {
-		name = "亨利·威东·古尔德"
+		name = "Henry Weedon-Gould"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M74040
@@ -290,7 +314,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	74056 = {
-		name = "多吉·吉格梅·旺楚克"
+		name = "Jigme Dorji Wangchuk"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M74056
@@ -298,11 +322,165 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	74057 = {
-		name = "吉格梅·帕尔登·多杰"
+		name = "Jigme Palden Dorji"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M74057
 		head_of_government = corporate_suit
 		start_date = 1952.1.1
+	}
+	# Generic dummy ministers
+	95088 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95089 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95090 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95091 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95092 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95093 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95094 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95095 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95096 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
 	}
 }

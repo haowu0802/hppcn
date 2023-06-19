@@ -1,6 +1,8 @@
 color = { 84  119  168 }
 graphical_culture = Generic
 
+
+
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -17,115 +19,140 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
 	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
+	}	
 }
 
 unit_names = {
 	infantry_brigade = {
-		"第1步兵师" "第2步兵师" "第3步兵师" "第4步兵师" "第5步兵师" "第6步兵师" "第7步兵师" "第8步兵师" "第9步兵师" "第10步兵师" 
-		"第11步兵师" "第12步兵师" "第13步兵师" "第14步兵师" "第15步兵师" "第16步兵师" "第17步兵师" "第18步兵师" "第19步兵师" "第20步兵师" 
+		"1st Israeli Infantry Division" "2nd Israeli Infantry Division" "3rd Israeli Infantry Division" "4th Israeli Infantry Division" "5th Israeli Infantry Division" "6th Israeli Infantry Division" "7th Israeli Infantry Division" "8th Israeli Infantry Division" "9th Israeli Infantry Division" "10th Israeli Infantry Division" "11th Israeli Infantry Division" 
+		"12th Israeli Infantry Division" "13th Israeli Infantry Division" "14th Israeli Infantry Division" "15th Israeli Infantry Division" "16th Israeli Infantry Division" "17th Israeli Infantry Division" "18th Israeli Infantry Division" "19th Israeli Infantry Division" "20th Israeli Infantry Division" 
 	}
 	cavalry_brigade = {
-		"第1骑兵师" "第2骑兵师" "第3骑兵师" "第4骑兵师" "第5骑兵师" "第6骑兵师" "第7骑兵师" "第8骑兵师" "第9骑兵师" "第10骑兵师" 
+		"1st Israeli Cavalry Division" "2nd Israeli Cavalry Division" "3rd Israeli Cavalry Division" "4th Israeli Cavalry Division" "5th Israeli Cavalry Division" "6th Israeli Cavalry Division" "7th Israeli Cavalry Division" "8th Israeli Cavalry Division" "9th Israeli Cavalry Division" "10th Israeli Cavalry Division" 
 	}
 	motorized_brigade = {
-		"第1摩托化步兵师" "第2摩托化步兵师" "第3摩托化步兵师" "第4摩托化步兵师" "第5摩托化步兵师" "第6摩托化步兵师" "第7摩托化步兵师" "第8摩托化步兵师" "第9摩托化步兵师" "第10摩托化步兵师" 
+		"1st Israeli Infantry Division" "2nd Israeli Infantry Division" "3rd Israeli Infantry Division" "1st Israeli Infantry Division" "2nd Israeli Infantry Division" "3rd Israeli Infantry Division" "4th Israeli Infantry Division" "5th Israeli Infantry Division" "6th Israeli Infantry Division" 
 	}
 	mechanized_brigade = {
-		"第1机械化步兵师" "第2机械化步兵师" "第3机械化步兵师" "第4机械化步兵师" "第5机械化步兵师" "第6机械化步兵师" "第7机械化步兵师" "第8机械化步兵师" "第9机械化步兵师" "第10机械化步兵师" 
+		"1st Israeli Infantry Division" "2nd Israeli Infantry Division" "3rd Israeli Infantry Division" "1st Israeli Infantry Division" "2nd Israeli Infantry Division" "3rd Israeli Infantry Division" "4th Israeli Infantry Division" "5th Israeli Infantry Division" "6th Israeli Infantry Division" "7th Israeli Infantry Division" "8th Israeli Infantry Division" 
+		"9th Israeli Infantry Division" "10th Israeli Infantry Division" 
 	}
 	light_armor_brigade = {
-		"第1装甲师" "第2装甲师" "第3装甲师" "第4装甲师" "第5装甲师" "第6装甲师" "第7装甲师" "第8装甲师" "第9装甲师" "第10装甲师"  
+		"1st Israeli Armoured Division" "2nd Israeli Armoured Division" "3rd Israeli Armoured Division" "4th Israeli Armoured Division" "5th Israeli Armoured Division" "6th Israeli Armoured Division" "7th Israeli Armoured Division" "8th Israeli Armoured Division" "9th Israeli Armoured Division" "10th Israeli Armoured Division" "11th Israeli Armoured Division" 
+		"12th Israeli Armoured Division" "14th Israeli Armoured Division" "15th Israeli Armoured Division" 
 	}
 	armor_brigade = {
-		"第1装甲师" "第2装甲师" "第3装甲师" "第4装甲师" "第5装甲师" "第6装甲师" "第7装甲师" "第8装甲师" "第9装甲师" "第10装甲师" 
+		"1st Armoured Division" "2nd Israeli Armoured Division" "3rd Israeli Armoured Division" "4th Israeli Armoured Division" "5th Israeli Armoured Division" "6th Israeli Armoured Division" "7th Israeli Armoured Division" "8th Israeli Armoured Division" "9th Israeli Armoured Division" "10th Israeli Armoured Division" "11th Israeli Armoured Division" 
+		"12th Israeli Armoured Division" "14th Israeli Armoured Division" "15th Israeli Armoured Division" 
 	}
 	paratrooper_brigade = {
-		"第1空降师" "第2空降师" "第3空降师" "第4空降师" "第5空降师" "第6空降师" "第7空降师" "第8空降师" "第9空降师" "第10空降师" 
+		"1st Israeli Airborne Division" "2nd Israeli Airborne Division" "3rd Israeli Airborne Division" "4th Israeli Airborne Division" "5th Israeli Airborne Division" "6th Israeli Airborne Division" "7th Israeli Airborne Division" "8th Israeli Airborne Division" "9th Israeli Airborne Division" "10th Israeli Airborne Division" 
 	}
 	marine_brigade = {
-		"第1海军陆战师" "第2海军陆战师" "第3海军陆战师" "第4海军陆战师" "第5海军陆战师" "第6海军陆战师" "第7海军陆战师" "第8海军陆战师" "第9海军陆战师" "第10海军陆战师" 
+		"1st Israeli Marine Division" "2nd Israeli Marine Division" "3rd Israeli Marine Division" "4th Israeli Marine Division" "5th Israeli Marine Division" "6th Israeli Marine Division" "7th Israeli Marine Division" "8th Israeli Marine Division" "9th Israeli Marine Division" "10th Israeli Marine Division" 
 	}
 	bergsjaeger_brigade = {
-		"第1山地师“帕斯塔斯”" "第2山地师" "第3山地师" "第4山地师" "第5山地师" "第6山地师" "第7山地师" "第8山地师" "第9山地师" "第10山地师" 
-		"第11山地师" "第12山地师" "第13山地师" "第14山地师" "第15山地师" 
+		"1st Israeli Mountain Division" "2nd Israeli Mountain Division" "3rd Israeli Mountain Division" "4th Israeli Mountain Division" "5th Israeli Mountain Division" "8th Israeli Mountain Division" "10th Israeli Mountain Division" "11th Israeli Mountain Division" "12th Israeli Mountain Division" 
 	}
 	garrison_brigade = {
-		"第1卫戍师" "第2卫戍师" "第3卫戍师" "第4卫戍师" "第5卫戍师" "第6卫戍师" "第7卫戍师" "第8卫戍师" "第9卫戍师" "第10卫戍师" 
-		"第11卫戍师" "第12卫戍师" "第13卫戍师" "第14卫戍师" "第15卫戍师" "第16卫戍师" "第17卫戍师" "第18卫戍师" "第19卫戍师" "第20卫戍师" 
+		"1st Israeli Garrison Division" "2nd Israeli Garrison Division" "3rd Israeli Garrison Division" "4th Israeli Garrison Division" "5th Israeli Garrison Division" "6th Israeli Garrison Division" "7th Israeli Garrison Division" "8th Israeli Garrison Division" "9th Israeli Garrison Division" "10th Israeli Garrison Division" "11th Israeli Garrison Division" 
+		"12th Israeli Garrison Division" "13th Israeli Garrison Division" "14th Israeli Garrison Division" "15th Israeli Garrison Division" "16th Israeli Garrison Division" "17th Israeli Garrison Division" "18th Israeli Garrison Division" "19th Israeli Garrison Division" "20th Israeli Garrison Division" 
 	}
 	hq_brigade = {
-		"第1集团军" "第2集团军" "第3集团军" "第4集团军" "第5集团军" "第6集团军" "第7集团军" "第8集团军" "第9集团军" "第10集团军" 
+		"1st Israeli Army" "2nd Israeli Army" "3rd Israeli Army" "4th Israeli Army" "5th Israeli Army" "6th Israeli Army" "7th Israeli Army" "8th Israeli Army" 
 	}
 	militia_brigade = {
-		"第1步兵师" "第2步兵师" "第3步兵师" "第4步兵师" "第5步兵师" "第6步兵师" "第7步兵师" "第8步兵师" "第9步兵师" "第10步兵师" 
-		"第11步兵师" "第12步兵师" "第13步兵师" "第14步兵师" "第15步兵师" "第16步兵师" "第17步兵师" "第18步兵师" "第19步兵师" "第20步兵师" 
-		"第21步兵师" "第22步兵师" "第23步兵师" "第24步兵师" "第25步兵师" "第26步兵师" "第27步兵师" "第28步兵师" "第29步兵师" "第30步兵师" 
+		"1st Infantry Division" "2nd Infantry Division" "3rd Infantry Division" "4th Infantry Division" "5th Infantry Division" "6th Infantry Division" "7th Infantry Division" "8th Infantry Division" "9th Infantry Division" "10th Infantry Division" "11th Infantry Division" 
+		"12th Infantry Division" "13th Infantry Division" "14th Infantry Division" "15th Infantry Division" "16th Infantry Division" "17th Infantry Division" "18th Infantry Division" "19th Infantry Division" "20th Infantry Division" "21st Infantry Division" "22nd Infantry Division" 
+		"23rd Infantry Division" "24th Infantry Division" "25th Infantry Division" "26th Infantry Division" "27th Infantry Division" "28th Infantry Division" "29th Infantry Division" "30th Infantry Division" 
 	}
 	multi_role = {
-		"IAF第1联队" "IAF第2联队" "IAF第3联队" "IAF第4联队" "IAF第5联队" "IAF第6联队" "IAF第7联队" "IAF第8联队" "IAF第9联队" "IAF第10联队" 
-		"IAF第11联队" "IAF第12联队" "IAF第13联队" "IAF第14联队" "IAF第15联队" "IAF第16联队" "IAF第17联队" "IAF第18联队" "IAF第19联队" "IAF第20联队" 
+		"No.1 Group IAF" "No.2 Group IAF" "No.3 Group IAF" "No.4 Group IAF" "No.5 Group IAF" "No.7 Group IAF" "No.8 Group IAF" "No.9 Group IAF" "No.10 Group IAF" "No.11 Group IAF" "No.12 Group IAF" 
+		"No.13 Group IAF" "No.14 Group IAF" "No.15 Group IAF" "No.16 Group IAF" "No.17 Group IAF" "No.18 Group IAF" "No.19 Group IAF" "No.20 Group IAF" 
 	}
 	interceptor = {
-		"IAF第1联队" "IAF第2联队" "IAF第3联队" "IAF第4联队" "IAF第5联队" "IAF第6联队" "IAF第7联队" "IAF第8联队" "IAF第9联队" "IAF第10联队" 
-		"IAF第11联队" "IAF第12联队" "IAF第13联队" "IAF第14联队" "IAF第15联队" "IAF第16联队" "IAF第17联队" "IAF第18联队" "IAF第19联队" "IAF第20联队" 
+		"No.1 Group IAF" "No.2 Group IAF" "No.3 Group IAF" "No.4 Group IAF" "No.5 Group IAF" "No.7 Group IAF" "No.8 Group IAF" "No.9 Group IAF" "No.10 Group IAF" "No.11 Group IAF" "No.12 Group IAF" 
+		"No.13 Group IAF" "No.14 Group IAF" "No.15 Group IAF" "No.16 Group IAF" "No.17 Group IAF" "No.18 Group IAF" "No.19 Group IAF" "No.20 Group IAF" 
+	}
+	jet_int = {
+		"No.1 Group IAF" "No.2 Group IAF" "No.3 Group IAF" "No.4 Group IAF" "No.5 Group IAF" "No.7 Group IAF" "No.8 Group IAF" "No.9 Group IAF" "No.10 Group IAF" "No.11 Group IAF" "No.12 Group IAF" 
+		"No.13 Group IAF" "No.14 Group IAF" "No.15 Group IAF" "No.16 Group IAF" "No.17 Group IAF" "No.18 Group IAF" "No.19 Group IAF" "No.20 Group IAF" 
+	}
+	jet_mr = {
+		"No.1 Group IAF" "No.2 Group IAF" "No.3 Group IAF" "No.4 Group IAF" "No.5 Group IAF" "No.7 Group IAF" "No.8 Group IAF" "No.9 Group IAF" "No.10 Group IAF" "No.11 Group IAF" "No.12 Group IAF" 
+		"No.13 Group IAF" "No.14 Group IAF" "No.15 Group IAF" "No.16 Group IAF" "No.17 Group IAF" "No.18 Group IAF" "No.19 Group IAF" "No.20 Group IAF" 
 	}
 	strategic_bomber = {
-		"IAF第1联队" "IAF第2联队" "IAF第3联队" "IAF第4联队" "IAF第5联队" "IAF第6联队" "IAF第7联队" "IAF第8联队" "IAF第9联队" "IAF第10联队" 
-		"IAF第11联队" "IAF第12联队" "IAF第13联队" "IAF第14联队" "IAF第15联队" "IAF第16联队" "IAF第17联队" "IAF第18联队" "IAF第19联队" "IAF第20联队" 
+		"No.1 Group IAF" "No.2 Group IAF" "No.6 Group IAF" "No.3 Group IAF" "No.4 Group IAF" "No.7 Group IAF" "No.8 Group IAF" "No.9 Group IAF" "No.10 Group IAF" "No.11 Group IAF" "No.12 Group IAF" 
+		"No.13 Group IAF" "No.14 Group IAF" "No.15 Group IAF" "No.16 Group IAF" "No.17 Group IAF" "No.18 Group IAF" "No.19 Group IAF" "No.20 Group IAF" 
 	}
 	tactical_bomber = {
-		"IAF第1联队" "IAF第2联队" "IAF第3联队" "IAF第4联队" "IAF第5联队" "IAF第6联队" "IAF第7联队" "IAF第8联队" "IAF第9联队" "IAF第10联队" 
-		"IAF第11联队" "IAF第12联队" "IAF第13联队" "IAF第14联队" "IAF第15联队" "IAF第16联队" "IAF第17联队" "IAF第18联队" "IAF第19联队" "IAF第20联队" 
+		"No.1 Group IAF" "No.2 Group IAF" "No.6 Group IAF" "No.3 Group IAF" "No.4 Group IAF" "No.7 Group IAF" "No.8 Group IAF" "No.9 Group IAF" "No.10 Group IAF" "No.11 Group IAF" "No.12 Group IAF" 
+		"No.13 Group IAF" "No.14 Group IAF" "No.15 Group IAF" "No.16 Group IAF" "No.17 Group IAF" "No.18 Group IAF" "No.19 Group IAF" "No.20 Group IAF" 
+	}
+	jet_bomber = {
+		"No.1 Group IAF" "No.2 Group IAF" "No.6 Group IAF" "No.3 Group IAF" "No.4 Group IAF" "No.7 Group IAF" "No.8 Group IAF" "No.9 Group IAF" "No.10 Group IAF" "No.11 Group IAF" "No.12 Group IAF" 
+		"No.13 Group IAF" "No.14 Group IAF" "No.15 Group IAF" "No.16 Group IAF" "No.17 Group IAF" "No.18 Group IAF" "No.19 Group IAF" "No.20 Group IAF" 
 	}
 	naval_bomber = {
-		"IAF第1联队" "IAF第2联队" "IAF第3联队" "IAF第4联队" "IAF第5联队" "IAF第6联队" "IAF第7联队" "IAF第8联队" "IAF第9联队" "IAF第10联队" 
-		"IAF第11联队" "IAF第12联队" "IAF第13联队" "IAF第14联队" "IAF第15联队" "IAF第16联队" "IAF第17联队" "IAF第18联队" "IAF第19联队" "IAF第20联队" 
+		"No.1 Group IAF" "No.2 Group IAF" "No.3 Group IAF" "No.4 Group IAF" "No.5 Group IAF" "No.7 Group IAF" "No.8 Group IAF" "No.9 Group IAF" "No.10 Group IAF" 
 	}
 	cas = {
-		"IAF第1联队" "IAF第2联队" "IAF第3联队" "IAF第4联队" "IAF第5联队" "IAF第6联队" "IAF第7联队" "IAF第8联队" "IAF第9联队" "IAF第10联队" 
-		"IAF第11联队" "IAF第12联队" "IAF第13联队" "IAF第14联队" "IAF第15联队" "IAF第16联队" "IAF第17联队" "IAF第18联队" "IAF第19联队" "IAF第20联队" 
+		"No.1 Group IAF" "No.2 Group IAF" "No.6 Group IAF" "No.3 Group IAF" "No.4 Group IAF" "No.7 Group IAF" "No.8 Group IAF" "No.9 Group IAF" "No.10 Group IAF" "No.11 Group IAF" "No.12 Group IAF" 
+		"No.13 Group IAF" "No.14 Group IAF" "No.15 Group IAF" "No.16 Group IAF" "No.17 Group IAF" "No.18 Group IAF" "No.19 Group IAF" "No.20 Group IAF" 
 	}
 	transport_plane = {
-		"IAF第1联队" "IAF第2联队" "IAF第3联队" "IAF第4联队" "IAF第5联队" "IAF第6联队" "IAF第7联队" "IAF第8联队" "IAF第9联队" "IAF第10联队" 
-		"IAF第11联队" "IAF第12联队" "IAF第13联队" "IAF第14联队" "IAF第15联队" "IAF第16联队" "IAF第17联队" "IAF第18联队" "IAF第19联队" "IAF第20联队" 
+		"No.1 Group IAF" "No.2 Group IAF" "No.3 Group IAF" "No.4 Group IAF" "No.5 Group IAF" "No.7 Group IAF" "No.8 Group IAF" "No.9 Group IAF" "No.10 Group IAF" 
 	}
 	battleship = {
-		"INS 独立号" "INS 自由号" "INS 解放号" "INS 胜利号" 
+		"INS Independence" "INS Freedom" "INS Liberty" "INS Victory" 
 	}
 	light_cruiser = {
-		"INS 独立号" "INS 自由号" "INS 解放号" "INS 胜利号" 
+		"INS Independence" "INS Freedom" "INS Liberty" "INS Victory" 
 	}
 	heavy_cruiser = {
-		"INS 独立号" "INS 自由号" "INS 解放号" "INS 胜利号" 
+		"INS Independence" "INS Freedom" "INS Liberty" "INS Victory" 
 	}
 	battlecruiser = {
-		"INS 独立号" "INS 自由号" "INS 解放号" "INS 胜利号" 
+		"INS Independence" "INS Freedom" "INS Liberty" "INS Victory" 
 	}
 	destroyer = {
-		"第1驱逐舰师" "第2驱逐舰师" "第3驱逐舰师" "第4驱逐舰师" "第5驱逐舰师" "第6驱逐舰师" "第7驱逐舰师" "第8驱逐舰师" "第9驱逐舰师" "第10驱逐舰师"
+		"1st Israeli Destroyer Division" "2nd Israeli Destroyer Division" "3rd Israeli Destroyer Division" "4th Israeli Destroyer Division" "5th Israeli Destroyer Division" "6th Israeli Destroyer Division" "7th Israeli Destroyer Division" "8th Israeli Destroyer Division" "9th Israeli Destroyer Division" "10th Israeli Destroyer Division" 
 	}
 	carrier = {
-		"INS 独立号" "INS 自由号" "INS 解放号" "INS 胜利号" 
+		"INS Independence" "INS Freedom" "INS Liberty" "INS Victory" 
 	}
 	escort_carrier = {
-		"INS 罗马奇号" "INS 史米丽蒂号" "INS 德沃拉号" 
+		"INS Romach" "INS Shimrit" "INS Dvora" 
 	}
 	submarine = {
-		"第1潜艇师" "第2潜艇师" "第3潜艇师" "第4潜艇师" "第5潜艇师" "第6潜艇师" "第7潜艇师" "第8潜艇师" "第9潜艇师" "第10潜艇师"  
+		"1st Israeli Submarine Division" "2nd Israeli Submarine Division" "3rd Israeli Submarine Division" "4th Israeli Submarine Division" "5th Israeli Submarine Division" "6th Israeli Submarine Division" "7th Israeli Submarine Division" "8th Israeli Submarine Division" "9th Israeli Submarine Division" "10th Israeli Submarine Division" 
 	}
 	transport_ship = {
-		"第1运输舰师" "第2运输舰师" "第3运输舰师" "第4运输舰师" "第5运输舰师" "第6运输舰师" "第7运输舰师" "第8运输舰师" "第9运输舰师" "第10运输舰师" 
+		"1st Israeli Transport Division" "2nd Israeli Transport Division" "3rd Israeli Transport Division" "4th Israeli Transport Division" "5th Israeli Transport Division" "6th Israeli Transport Division" "7th Israeli Transport Division" "8th Israeli Transport Division" "9th Israeli Transport Division" "10th Israeli Transport Division" 
 	}
 
 }
 
 ministers = {
 	559001 = {
-		name = "查姆·魏滋曼"
+		name = "Chaim Weizmann"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M559001
@@ -133,7 +160,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559002 = {
-		name = "戴维·本·古瑞恩"
+		name = "David Ben Gurion"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M559002
@@ -142,7 +169,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559003 = {
-		name = "莫希·萨瑞特"
+		name = "Moshe Sharett"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M559003
@@ -150,7 +177,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559004 = {
-		name = "勒维·艾希科勒"
+		name = "Levi Eshkol"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M559004
@@ -158,7 +185,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559005 = {
-		name = "格兰达·梅瑞"
+		name = "Golda Meir"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M559005
@@ -166,7 +193,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559006 = {
-		name = "伊加勒·亚隆"
+		name = "Yigal Allon"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M559006
@@ -175,7 +202,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559007 = {
-		name = "伊加艾尔·亚丁"
+		name = "Yigael Yadin"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M559007
@@ -183,7 +210,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559009 = {
-		name = "耶迪迪亚·亚阿瑞"
+		name = "Yedidia Ya'ari"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M559009
@@ -191,7 +218,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559010 = {
-		name = "海姆·拉斯科夫"
+		name = "Haim Laskov"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M559010
@@ -199,7 +226,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559011 = {
-		name = "玛瑟·萨伊皮亚"
+		name = "Mashe Shaypira"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M559011
@@ -207,7 +234,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559012 = {
-		name = "查姆·阿洛索罗夫"
+		name = "Chaim Arlosoroff"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M559012
@@ -215,7 +242,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559013 = {
-		name = "丹尼尔·奥斯特"
+		name = "Daniel Auster"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M559013
@@ -223,7 +250,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559014 = {
-		name = "Dr.·亚伯拉罕·海瑟尔"
+		name = "Dr. Abrahan Herschel"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M559014
@@ -231,7 +258,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559015 = {
-		name = "泽拉奇·瓦纳弗汀"
+		name = "Zerach Warnaftig"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M559015
@@ -239,7 +266,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559016 = {
-		name = "皮恩哈斯·勒冯"
+		name = "Pinhas Levon"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M559016
@@ -247,7 +274,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	559017 = {
-		name = "伊特扎克·本·兹维"
+		name = "Yitzhak Ben Zvi"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M559017
@@ -256,7 +283,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559018 = {
-		name = "伊特扎克·塔本金"
+		name = "Yitzhak Tabenkin"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M559018
@@ -264,7 +291,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	559019 = {
-		name = "瓦迪亚·约瑟夫"
+		name = "Vadia Yosef"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M559019
@@ -272,7 +299,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559020 = {
-		name = "曼彻海姆·尤西金"
+		name = "Mencahem Ussiskin"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M559020
@@ -280,7 +307,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	559021 = {
-		name = "瓦查加·梅托尼安"
+		name = "Vatchagan Meltonian"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M559021
@@ -288,7 +315,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	559022 = {
-		name = "卡迪西·鲁兹"
+		name = "Kadish Luz"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M559022
@@ -296,7 +323,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	559023 = {
-		name = "约瑟夫·斯普林扎克"
+		name = "Yosef Sprinzak"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M559023
@@ -305,7 +332,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	559024 = {
-		name = "艾里泽·卡普兰"
+		name = "Eliezer Kaplan"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M559024
@@ -313,7 +340,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	559025 = {
-		name = "帕沃罗斯·勒万"
+		name = "Pavlos Levan"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M559025
@@ -321,7 +348,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559026 = {
-		name = "纳赫姆·尼尔·拉法勒克斯"
+		name = "Nahum Nir-Rafalkes"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M559026
@@ -329,7 +356,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559027 = {
-		name = "曼彻海姆·巴斯汀"
+		name = "Menachem Baskind"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M559027
@@ -337,7 +364,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	559028 = {
-		name = "曼彻海姆·本金"
+		name = "Mencahem Begin"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M559028
@@ -345,7 +372,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	559029 = {
-		name = "穆瑟·海姆·萨皮瑞亚"
+		name = "Moshe Haim Shapira"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M559029
@@ -353,7 +380,7 @@ ministers = {
 		start_date = 1949.1.1
 	}
 	559030 = {
-		name = "伊斯拉尔·罗卡西"
+		name = "Israel Rokach"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M559030
@@ -361,7 +388,7 @@ ministers = {
 		start_date = 1952.1.1
 	}
 	559031 = {
-		name = "穆瑟·卡特泽森"
+		name = "Moshe Katznelson"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M559031
@@ -369,7 +396,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	559032 = {
-		name = "伊司拉尔·巴尔·耶胡达"
+		name = "Israel Bar-Yehuda"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M559032
@@ -377,7 +404,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559033 = {
-		name = "麦纳西姆·门德尔·利普斯特兹"
+		name = "Menachem Mendel Lipschutz"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M559033
@@ -385,7 +412,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	559034 = {
-		name = "皮恩哈斯·萨皮瑞"
+		name = "Pinhas Sapir"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M559034
@@ -393,7 +420,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	559035 = {
-		name = "伊特扎克·格鲁恩巴姆"
+		name = "Yitzhak Gr黱baum"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M559035
@@ -402,7 +429,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	559036 = {
-		name = "瑞尔·卡特兹尼森"
+		name = "Rerl Katznelson"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M559036
@@ -410,7 +437,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559037 = {
-		name = "梅纳彻姆·彻尼森"
+		name = "Menachem Schneerson"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M559037
@@ -418,7 +445,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	559038 = {
-		name = "罗曼·扎克哈瑞"
+		name = "Roman Zakhari"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M559038
@@ -426,7 +453,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559039 = {
-		name = "吉罗萨哈弗特·哈瑞卡比"
+		name = "Jiloshahaft Harkabi"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M559039
@@ -434,7 +461,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	559040 = {
-		name = "里查德·斯利文森"
+		name = "Richard Silverstein"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M559040
@@ -442,7 +469,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559041 = {
-		name = "皮恩查斯·罗森加藤"
+		name = "Pinchas Rosengarten"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M559041
@@ -450,7 +477,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559042 = {
-		name = "穆瑟·达扬"
+		name = "Moshe Dayan"
 		ideology = social_liberal
 		loyalty = 0.75
 		picture = M559042
@@ -458,7 +485,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	559043 = {
-		name = "阿莫斯·佐瑞夫"
+		name = "Amos Zoref"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M559043
@@ -466,7 +493,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559044 = {
-		name = "查姆·古瓦德"
+		name = "Chaim Grunwald"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M559044
@@ -474,7 +501,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559045 = {
-		name = "莫瑟·科里兹"
+		name = "Moshe Krelitz"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M559045
@@ -482,7 +509,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559046 = {
-		name = "瑟里斯·马格恩"
+		name = "Chris Magee"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M559046
@@ -490,11 +517,97 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	559047 = {
-		name = "鲁恩·沃夫"
+		name = "Reuven Woolf"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M559047
 		chief_of_air = air_superiority_doctrine
+		start_date = 1936.1.1
+	}
+	# Generic dummy ministers
+	95441 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95442 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95443 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95444 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95445 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
 		start_date = 1936.1.1
 	}
 }

@@ -1,8 +1,41 @@
-division = {
-	name = "°ÍÄÃÂíÂ½¾ü"
+theatre = {
+	name = "Panama High Command"
 	location = 7722
-	is_reserve = yes
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
+	regiment = { type = hq_brigade name = "Panamá HQ" historical_model = 0 }
+	division = {
+		name = "Army of Panama"
+		location = 7722
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "1st Infantry Brigade" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "2nd Infantry Brigade" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "3rd Infantry Brigade" experience = 5 historical_model = 1 }
+	}
+}
+convoy_construction=
+{
+	country = PNM
+	id=
+	{
+		id=15318
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = PNM
+	id=
+	{
+		id=15319
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort	
 }

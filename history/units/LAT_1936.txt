@@ -1,46 +1,63 @@
-corps = {
-	name = "拉脱维亚军"
+theatre = {
+	name = "Latvijas Augstas Komandu"
 	location = 1178
-	regiment = { type = hq_brigade name = "拉脱维亚军指挥部" historical_model = 0 }
-	division= {
-		name = "库尔兰步兵师"
+	regiment = { type = hq_brigade name = "Riga HQ" historical_model = 0 }		
+	corps = {
+		name = "Latvijas Armija"
 		location = 1178
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "Latvijas Armija HQ" historical_model = 0 }
+		division= {
+			name = "1. Kurzemes Divizija"
+			location = 1178
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1. Kajnieku Pulks" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "2. Kajnieku Pulks" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "3. Kajnieku Pulks" experience = 5 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "1. Jatnieku Pulks" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "2. Vidzemes Divizija"
+			location = 1178
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "4. Kajnieku Pulks" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "5. Kajnieku Pulks" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "6. Kajnieku Pulks" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "3. Zemgales Divizija"
+			location = 1178
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "7. Kajnieku Pulks" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "8. Kajnieku Pulks" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "9. Kajnieku Pulks" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "4. Latgales Divizija"
+			location = 1178
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "10. Kajnieku Pulks" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "11. Kajnieku Pulks" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "12. Kajnieku Pulks" experience = 5 historical_model = 1 }
+		}
 	}
-	division= {
-		name = "维德泽美斯步兵师"
+	navy = {
+		name = "Latvijas Juras Speki"
+		base = 1178
 		location = 1178
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division= {
-		name = "泽高斯步兵师"
-		location = 1178
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division= {
-		name = "兰盖奥斯步兵师"
-		location = 1178
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
+		ship = { type = submarine name = "1. Zemudens Flotile" experience = 5 historical_model = 4 }
 	}
 }
-navy = {
-	name = "拉脱维亚海军"
-	base = 1178
-	location = 1178
-	ship = { type = submarine name = "第1潜艇分队" historical_model = 0 }
+convoy_construction=
+{
+	country = LAT
+	id=
+	{
+		id=15232
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
 }
-
-
-

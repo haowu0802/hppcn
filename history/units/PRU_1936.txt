@@ -1,49 +1,85 @@
-corps = {
-	name = "ÃØÂ³Â½¾ü"
+theatre = {
+	name = "Alto Mando de Peruano"
 	location = 10079
-	regiment = { type = hq_brigade name = "ÃØÂ³Â½¾üÖ¸»Ó²¿" historical_model = 0 }
-	division= {
-		name = "µÚ1'²©ÂåÄáË¹'Ê¦"
+	regiment = { type = hq_brigade name = "Lima HQ" historical_model = 0 }	
+	corps = {
+		name = "Ejercito del Peru"
 		location = 10079
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "Ejercito del Peru HQ" historical_model = 0 }
+		division= {
+			name = "1a Div. de Inf. del Peru 'Bolognesi'"
+			location = 10079
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1. Regimiento de Infantería" experience = 8 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "2. Regimiento de Infantería" experience = 8 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "3. Regimiento de Infantería" experience = 8 historical_model = 3 }
+		}
+		division= {
+			name = "2a Div. de Infantería del Peru"
+			location = 10079
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "4. Regimiento de Infantería" experience = 8 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "5. Regimiento de Infantería" experience = 8 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "6. Regimiento de Infantería" experience = 8 historical_model = 3 }
+		}
+		division= {
+			name = "3a Div. de Infantería del Peru"
+			location = 10079
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "7. Regimiento de Infantería" experience = 8 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "8. Regimiento de Infantería" experience = 8 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "9. Regimiento de Infantería" experience = 8 historical_model = 3 }
+		}
+		division= {
+			name = "1a Brigada Fuerzas Especiales"
+			location = 10079
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "1. Regimiento de Infantería de Montana" experience = 8 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "2. Regimiento de Infantería de Montana" experience = 8 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "3. Regimiento de Infantería de Montana" experience = 8 historical_model = 3 }
+		}
 	}
-	division= {
-		name = "ÃØÂ³µÚ2Ê¦"
+	air = {
+		name = "Fuerza Aérea del Perú"
+		base = 10079
 		location = 10079
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
+		wing = { type = interceptor name = "1. Grupo PFA de Caza" experience = 5 historical_model = 0 }
+		wing = { type = cas name = "1. Grupo PFA de Asalto" experience = 5 historical_model = 0 }		
 	}
-	division= {
-		name = "ÃØÂ³µÚ3Ê¦"
+	navy = {
+		name = "Marina del Guerra del Peru"
+		base = 10079
 		location = 10079
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division= {
-		name = "µÚ1ÌØÖÖ×÷Õ½ÂÃ"
-		location = 10079
-		is_reserve = yes
-		regiment = { type = bergsjaeger_brigade historical_model = 0 }
-		regiment = { type = bergsjaeger_brigade historical_model = 0 }
-		regiment = { type = bergsjaeger_brigade historical_model = 0 }
+		ship = { type = light_cruiser name = "BAP Almirante Grau" experience = 5 historical_model = 0 pride = yes }
+		ship = { type = light_cruiser name = "BAP Coronel Bolognesi" experience = 5 historical_model = 0 }
+		ship = { type = submarine name = "Tacna é Flotilla" experience = 5 historical_model = 4 }
 	}
 }
-navy = {
-	name = "ÃØÂ³º£¾ü"
-	base = 10079
-	location = 10079
-	ship = { type = destroyer name = "ËÕÀïÑÇÄÉ±à¶Ó" historical_model = 0 }
-	ship = { type = heavy_cruiser name = "¸ñÀÍº£¾üÉÏ½«ºÅ" historical_model = 0 }
-	ship = { type = heavy_cruiser name = "²©ÂåÄáË¹ÉÏÐ£ºÅ" historical_model = 0 }
-	ship = { type = submarine name = "Ëþ¿ËÄÉ±à¶Ó" historical_model = 1 }
+convoy_construction=
+{
+	country = PRU
+	id=
+	{
+		id=15620
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
 }
-
-
-
+convoy_construction=
+{
+	country = PRU
+	id=
+	{
+		id=15621
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort	
+}

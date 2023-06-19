@@ -1,82 +1,99 @@
-corps = {
-	name = "第I军"
+theatre = {
+	name = "謘terreichischen Oberkommando"
 	location = 2958
-	regiment = { type = hq_brigade name = "第I军指挥部" historical_model = 0 }
-	division= {
-		name = "第1骑兵师"
+	regiment = { type = hq_brigade name = "Wienna HQ" historical_model = 0 }
+	
+	corps = {
+		name = "I. Korps"
 		location = 2958
-		regiment = { type = cavalry_brigade historical_model = 0 }
-		regiment = { type = cavalry_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "I. Korps HQ" historical_model = 0 }
+		division= {
+			name = "1. Kavalleriedivision"
+			location = 2958
+			regiment = { type = cavalry_brigade name = "Dragonerregiment Nr.1" experience = 6 historical_model = 3 }
+			regiment = { type = cavalry_brigade name = "Dragonerregiment Nr.2" experience = 6 historical_model = 3 }
+			regiment = { type = light_armor_brigade name = "Panzerwagenbataillon" experience = 5 historical_model = 1 }
+			regiment = { type = engineer_brigade name = "Pioneerbatallion Nr.1" experience = 3 historical_model = 0 }			
+		}
+		division= {
+			name = "1. Infantriedivision"
+			location = 2958
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterieregiment Nr.1" experience = 6 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterieregiment Nr.2" experience = 6 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterieregiment Nr.13" experience = 6 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "Leichtes Artilleriergt. Nr.1" experience = 3 historical_model = 1 }
+		}
+		division= {
+			name = "2. Infantriedivision"
+			location = 2958
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterieregiment Nr.3" experience = 6 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterieregiment Nr.4" experience = 6 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterieregiment Nr.15" experience = 6 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "Leichtes Artilleriergt. Nr.2" experience = 3 historical_model = 1 }
+		}
+		division= {
+			name = "3. Infantriedivision"
+			location = 2958
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterieregiment Nr.4" experience = 6 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterieregiment Nr.6" experience = 6 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterieregiment Nr.16" experience = 6 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "Leichtes Artilleriergt. Nr.3" experience = 3 historical_model = 1 }
+		}
 	}
-	division= {
-		name = "第1步兵师"
+	corps = {
+		name = "II. Korps"
 		location = 2958
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "II. Korps HQ" historical_model = 0 }
+		division = {
+			name = "4. Infantriedivision"
+			location = 2958
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "Alpenj鋑erregiment Nr.8" experience = 6 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterieregiment Nr.14" experience = 6 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterieregiment Nr.17" experience = 6 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "Leichtes Artilleriergt. Nr.4" experience = 3 historical_model = 1 }
+		}
+		division = {
+			name = "5. Infantriedivision"
+			location = 2958
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "Alpenj鋑erregiment Nr.9" experience = 6 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Alpenj鋑erregiment Nr.10" experience = 6 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Infanterieregiment Nr.11" experience = 6 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "Leichtes Artilleriergt. Nr.5" experience = 3 historical_model = 1 }
+		}
+		division = {
+			name = "6. Infantriedivision"
+			location = 2958
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Tiroler J鋑erregiment" experience = 6 historical_model = 3 }
+			regiment = { type = infantry_brigade name = "Tiroler Landessch黷zenregiment" experience = 6 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "Leichtes Artilleriergt. Nr.6" experience = 3 historical_model = 1 }
+			regiment = { type = engineer_brigade name = "Pioneerbatallion Nr.2" experience = 3 historical_model = 0 }
+		}
+		division = {
+			name = "7. Infantriedivision"
+			location = 2958
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "Infanterieregiment Nr.7" experience = 6 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Alpenj鋑erregiment Nr.6" experience = 6 historical_model = 3 }
+			regiment = { type = bergsjaeger_brigade name = "Alpenj鋑erregiment Nr.7" experience = 6 historical_model = 3 }
+			regiment = { type = horse_towed_support_brigade name = "Leichtes Artilleriergt. Nr.7" experience = 3 historical_model = 1 }
+		}
 	}
-	division= {
-		name = "第2步兵师"
-		location = 2958
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
+	air = {
+		name = "Fliegerregiment Nr.1"
+		base = 3026
+		location = 3026
+		wing = { type = interceptor name = "Fliegergruppe 1" experience = 5 historical_model = 0 }
 	}
-	division= {
-		name = "第3步兵师"
-		location = 2958
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
+	air = {
+		name = "Fliegerregiment Nr.2"
+		base = 3026
+		location = 3026
+		wing = { type = interceptor name = "Fliegergruppe 2" experience = 5 historical_model = 0 }
 	}
 }
-corps = {
-	name = "第II军"
-	location = 2958
-	regiment = { type = hq_brigade name = "第II军指挥部" historical_model = 0 }
-	division = {
-		name = "第4步兵师"
-		location = 2958
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division = {
-		name = "第5步兵师"
-		location = 2958
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division = {
-		name = "第6步兵师"
-		location = 2958
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division = {
-		name = "第7步兵师"
-		location = 2958
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division = {
-		name = "第1阿尔卑斯猎兵师"
-		location = 2958
-		regiment = { type = bergsjaeger_brigade historical_model = 0 }
-		regiment = { type = bergsjaeger_brigade historical_model = 0 }
-		regiment = { type = bergsjaeger_brigade historical_model = 0 }
-	}
-}
-
-
-

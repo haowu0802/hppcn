@@ -1,6 +1,8 @@
 color = { 219  219  119 }
 graphical_culture = Generic
 
+
+
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -17,109 +19,131 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
+	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
 	}
 }
 
 unit_names = {
 	infantry_brigade = {
-		"第I步兵师" "第II步兵师" "第III步兵师" "第IV步兵师" "第V步兵师" "第VI步兵师" "第VII步兵师" "第VIII步兵师" "第IX步兵师" "第X步兵师" "XI步兵师" 
-		"第XII步兵师" "第XIII步兵师" "第XIV步兵师" "第XV步兵师" "第XVI步兵师" "第XVII步兵师" "第XVIII步兵师" "第XIX步兵师" "第XX步兵师" 
+		"I Pestininkai Divizija" "II Pestininkai Divizija" "III Pestininkai Divizija" "IV Pestininkai Divizija" "V Pestininkai Divizija" "VI Pestininkai Divizija" "VII Pestininkai Divizija" "VIII Pestininkai Divizija" "IX Pestininkai Divizija" "X Pestininkai Divizija" "XI Pestininkai Divizija" 
+		"XII Pestininkai Divizija" "XIII Pestininkai Divizija" "XIV Pestininkai Divizija" "XV Pestininkai Divizija" "XVI Pestininkai Divizija" "XVII Pestininkai Divizija" "XVIII Pestininkai Divizija" "XIX Pestininkai Divizija" "XX Pestininkai Divizija" 
 	}
 	cavalry_brigade = {
-		"第I骑兵师" "第II骑兵师" "第III骑兵师" "第IV骑兵师" "第V骑兵师" "第VI骑兵师" "第VII骑兵师" "第VIII骑兵师" "第IX骑兵师" "第X骑兵师" 
+		"I Kavalerija Divizija" "II Kavalerija Divizija" "III Kavalerija Divizija" "IV Kavalerija Divizija" "V Kavalerija Divizija" "VI Kavalerija Divizija" "VII Kavalerija Divizija" "VIII Kavalerija Divizija" "IX Kavalerija Divizija" "X Kavalerija Divizija" 
 	}
 	motorized_brigade = {
-		"第I摩托化步兵师" "第II摩托化步兵师" "第III摩托化步兵师" "第IV摩托化步兵师" "第V摩托化步兵师" "第VI摩托化步兵师" "第VII摩托化步兵师" "第VIII摩托化步兵师" "第IX摩托化步兵师" "第X摩托化步兵师" 
+		"I Motorizavimas Divizija" "II Motorizavimas Divizija" "III Motorizavimas Divizija" "IV Motorizavimas Divizija" "V Motorizavimas Divizija" "VI Motorizavimas Divizija" "VII Motorizavimas Divizija" "VIII Motorizavimas Divizija" "IX Motorizavimas Divizija" "X Motorizavimas Divizija" 
 	}
 	mechanized_brigade = {
-		"第I机械化步兵师" "第II机械化步兵师" "第III机械化步兵师" "第IV机械化步兵师" "第V机械化步兵师" "第VI机械化步兵师" "第VII机械化步兵师" "第VIII机械化步兵师" "第IX机械化步兵师" "第X机械化步兵师" 
+		"I Mechanizavimas Divizija" "II Mechanizavimas Divizija" "III Mechanizavimas Divizija" "IV Mechanizavimas Divizija" "V Mechanizavimas Divizija" "VI Mechanizavimas Divizija" "VII Mechanizavimas Divizija" "VIII Mechanizavimas Divizija" "IX Mechanizavimas Divizija" "X Mechanizavimas Divizija" 
 	}
 	light_armor_brigade = {
-		"第I轻装甲师" "第II轻装甲师" "第III轻装甲师" "第IV轻装甲师" "第V轻装甲师" "第VI轻装甲师" "第VII轻装甲师" "第VIII轻装甲师" "第IX轻装甲师" "第X轻装甲师" 
+		"I Apsisarvavimas Divizija" "II Apsisarvavimas Divizija" "III Apsisarvavimas Divizija" "IV Apsisarvavimas Divizija" "V Apsisarvavimas Divizija" "VI Apsisarvavimas Divizija" "VII Apsisarvavimas Divizija" "VIII Apsisarvavimas Divizija" "IX Apsisarvavimas Divizija" "X Apsisarvavimas Divizija" 
 	}
 	armor_brigade = {
-		"第I装甲师" "第II装甲师" "第III装甲师" "第IV装甲师" "第V装甲师" "第VI装甲师" "第VII装甲师" "第VIII装甲师" "第IX装甲师" "第X装甲师" 
+		"I Apsisarvavimas Divizija" "II Apsisarvavimas Divizija" "III Apsisarvavimas Divizija" "IV Apsisarvavimas Divizija" "V Apsisarvavimas Divizija" "VI Apsisarvavimas Divizija" "VII Apsisarvavimas Divizija" "VIII Apsisarvavimas Divizija" "IX Apsisarvavimas Divizija" "X Apsisarvavimas Divizija" 
 	}
 	paratrooper_brigade = {
-		"第I空降师" "第II空降师" "第III空降师" "第IV空降师" "第V空降师" "第VI空降师" "第VII空降师" "第VIII空降师" "第IX空降师" "第X空降师" 
+		"I Gabenamas Divizija" "II Gabenamas Divizija" "III Gabenamas Divizija" "IV Gabenamas Divizija" "V Gabenamas Divizija" "VI Gabenamas Divizija" "VII Gabenamas Divizija" "VIII Gabenamas Divizija" "IX Gabenamas Divizija" "X Gabenamas Divizija" 
 	}
 	marine_brigade = {
-		"第I海军陆战师" "第II海军陆战师" "第III海军陆战师" "第IV海军陆战师" "第V海军陆战师" "第VI海军陆战师" "第VII海军陆战师" "第VIII海军陆战师" "第IX海军陆战师" "第X海军陆战师" 
+		"I Juras Peizazas Divizija" "II Juras Peizazas Divizija" "III Juras Peizazas Divizija" "IV Juras Peizazas Divizija" "V Juras Peizazas Divizija" "VI Juras Peizazas Divizija" "VII Juras Peizazas Divizija" "VIII Juras Peizazas Divizija" "IX Juras Peizazas Divizija" "X Juras Peizazas Divizija" 
 	}
 	bergsjaeger_brigade = {
-		"第I山地师" "第II山地师" "第III山地师" "第IV山地师" "第V山地师" "第VI山地师" "第VII山地师" "第VIII山地师" "第IX山地师" "第X山地师" 
+		"I Kalnu Pestininkai Divizija" "II Kalnu Pestininkai Divizija" "III Kalnu Pestininkai Divizija" "IV Kalnu Pestininkai Divizija" "V Kalnu Pestininkai Divizija" "VI Kalnu Pestininkai Divizija" "VII Kalnu Pestininkai Divizija" "VIII Kalnu Pestininkai Divizija" "IX Kalnu Pestininkai Divizija" "X Kalnu Pestininkai Divizija" 
 	}
 	garrison_brigade = {
-		"第I卫戍师" "第II卫戍师" "第III卫戍师" "第IV卫戍师" "第V卫戍师" "第VI卫戍师" "第VII卫戍师" "第VIII卫戍师" "第IX卫戍师" "第X卫戍师" "第XI卫戍师" 
-		"第XII卫戍师" "第XIII卫戍师" "第XIV卫戍师" "第XV卫戍师" "第XVI卫戍师" "第XVII卫戍师" "第XVIII卫戍师" "第XIX卫戍师" "第XX卫戍师" 
+		"I Pestininkai Divizija" "II Pestininkai Divizija" "III Pestininkai Divizija" "IV Pestininkai Divizija" "V Pestininkai Divizija" "VI Pestininkai Divizija" "VII Pestininkai Divizija" "VIII Pestininkai Divizija" "IX Pestininkai Divizija" "X Pestininkai Divizija" "XI Pestininkai Divizija" 
+		"XII Pestininkai Divizija" "XIII Pestininkai Divizija" "XIV Pestininkai Divizija" "XV Pestininkai Divizija" "XVI Pestininkai Divizija" "XVII Pestininkai Divizija" "XVIII Pestininkai Divizija" "XIX Pestininkai Divizija" "XX Pestininkai Divizija" 
 	}
 	hq_brigade = {
-		"第I集团军" "第II集团军" "第III集团军" "第IV集团军" "第V集团军" 
+		"I Lietuva Armiya" "II Lietuva Armiya" "III Lietuva Armiya" "IV Lietuva Armiya" "V Lietuva Armiya" 
 	}
 	militia_brigade = {
-		"第I警备师" "第II警备师" "第III警备师" "第IV警备师" "第V警备师" "第VI警备师" "第VII警备师" "第VIII警备师" "第IX警备师" "第X警备师" "第XI警备师" 
-		"第XII警备师" "第XIII警备师" "第XIV警备师" "第XV警备师" "第XVI警备师" "第XVII警备师" "第XVIII警备师" "第XIX警备师" "第XX警备师" 
+		"I Karo Policija Divizija" "II Karo Policija Divizija" "III Karo Policija Divizija" "IV Karo Policija Divizija" "V Karo Policija Divizija" "VI Karo Policija Divizija" "VII Karo Policija Divizija" "VIII Karo Policija Divizija" "IX Karo Policija Divizija" "X Karo Policija Divizija" "XI Karo Policija Divizija" 
+		"XII Karo Policija Divizija" "XIII Karo Policija Divizija" "XIV Karo Policija Divizija" "XV Karo Policija Divizija" "XVI Karo Policija Divizija" "XVII Karo Policija Divizija" "XVIII Karo Policija Divizija" "XIX Karo Policija Divizija" "XX Karo Policija Divizija" 
 	}
 	multi_role = {
-		"第1战斗机大队" "第2战斗机大队" "第3战斗机大队" "第4战斗机大队" "第5战斗机大队" "第6战斗机大队" "第7战斗机大队" "第8战斗机大队" "第10战斗机大队" "第12战斗机大队" 
+		"1. Naikintuvas Aviacijos Grupo" "2. Naikintuvas Aviacijos Grupo" "3. Naikintuvas Aviacijos Grupo" "4. Naikintuvas Aviacijos Grupo" "5. Naikintuvas Aviacijos Grupo" "6. Naikintuvas Aviacijos Grupo" "7. Naikintuvas Aviacijos Grupo" "8. Naikintuvas Aviacijos Grupo" "10. Naikintuvas Aviacijos Grupo" "12. Naikintuvas Aviacijos Grupo" 
 	}
 	interceptor = {
-		"第1截击机联队" "第2截击机联队" "第3截击机联队" "第4截击机联队" "第5截击机联队" "第6截击机联队" "第7截击机联队" "第8截击机联队" "第10截击机联队" "第12截击机联队" 
+		"1. Naikintuvas Aviacijos Grupo" "2. Naikintuvas Aviacijos Grupo" "3. Naikintuvas Aviacijos Grupo" "4. Naikintuvas Aviacijos Grupo" "5. Naikintuvas Aviacijos Grupo" "6. Naikintuvas Aviacijos Grupo" "7. Naikintuvas Aviacijos Grupo" "8. Naikintuvas Aviacijos Grupo" "10. Naikintuvas Aviacijos Grupo" "12. Naikintuvas Aviacijos Grupo" 
+	}
+	jet_int = {
+		"1. Naikintuvas Aviacijos Grupo" "2. Naikintuvas Aviacijos Grupo" "3. Naikintuvas Aviacijos Grupo" "4. Naikintuvas Aviacijos Grupo" "5. Naikintuvas Aviacijos Grupo" "6. Naikintuvas Aviacijos Grupo" "7. Naikintuvas Aviacijos Grupo" "8. Naikintuvas Aviacijos Grupo" "10. Naikintuvas Aviacijos Grupo" "12. Naikintuvas Aviacijos Grupo" 
+	}
+	jet_mr = {
+		"1. Naikintuvas Aviacijos Grupo" "2. Naikintuvas Aviacijos Grupo" "3. Naikintuvas Aviacijos Grupo" "4. Naikintuvas Aviacijos Grupo" "5. Naikintuvas Aviacijos Grupo" "6. Naikintuvas Aviacijos Grupo" "7. Naikintuvas Aviacijos Grupo" "8. Naikintuvas Aviacijos Grupo" "10. Naikintuvas Aviacijos Grupo" "12. Naikintuvas Aviacijos Grupo" 
 	}
 	strategic_bomber = {
-		"第1战略轰炸机联队" "第2战略轰炸机联队" "第3战略轰炸机联队" "第4战略轰炸机联队" "第5战略轰炸机联队" "第6战略轰炸机联队" "第7战略轰炸机联队" "第8战略轰炸机联队" "第9战略轰炸机联队" "第10战略轰炸机联队" 
+		"1. Strateginis Bombonesis Avia. Gr." "2. Strateginis Bombonesis Avia. Gr." "3. Strateginis Bombonesis Avia. Gr." "4. Strateginis Bombonesis Avia. Gr." "5. Strateginis Bombonesis Avia. Gr." "6. Strateginis Bombonesis Avia. Gr." "7. Strateginis Bombonesis Avia. Gr." "8. Strateginis Bombonesis Avia. Gr." "9. Strateginis Bombonesis Avia. Gr." "10. Strateginis Bombonesis Avia. Gr." 
 	}
 	tactical_bomber = {
-		"第1战术轰炸机联队" "第2战术轰炸机联队" "第3战术轰炸机联队" "第4战术轰炸机联队" "第5战术轰炸机联队" "第6战术轰炸机联队" "第7战术轰炸机联队" "第8战术轰炸机联队" "第9战术轰炸机联队" "第10战术轰炸机联队" 
+		"1. Taktinis Bombonesis Avia. Gr." "2. Taktinis Bombonesis Avia. Gr." "3. Taktinis Bombonesis Avia. Gr." "4. Taktinis Bombonesis Avia. Gr." "5. Taktinis Bombonesis Avia. Gr." "6. Taktinis Bombonesis Avia. Gr." "7. Taktinis Bombonesis Avia. Gr." "8. Taktinis Bombonesis Avia. Gr." "9. Taktinis Bombonesis Avia. Gr." "10. Taktinis Bombonesis Avia. Gr." 
+	}
+	jet_bomber = {
+		"1. Taktinis Bombonesis Avia. Gr." "2. Taktinis Bombonesis Avia. Gr." "3. Taktinis Bombonesis Avia. Gr." "4. Taktinis Bombonesis Avia. Gr." "5. Taktinis Bombonesis Avia. Gr." "6. Taktinis Bombonesis Avia. Gr." "7. Taktinis Bombonesis Avia. Gr." "8. Taktinis Bombonesis Avia. Gr." "9. Taktinis Bombonesis Avia. Gr." "10. Taktinis Bombonesis Avia. Gr." 
 	}
 	naval_bomber = {
-		"第1海军轰炸机联队" "第2海军轰炸机联队" "第3海军轰炸机联队" "第4海军轰炸机联队" "第5海军轰炸机联队" "第6海军轰炸机联队" "第7海军轰炸机联队" "第8海军轰炸机联队" "第9海军轰炸机联队" "第10海军轰炸机联队" "第1鱼雷攻击机联队" 
-		"第2鱼雷攻击机联队" "第3鱼雷攻击机联队" "第4鱼雷攻击机联队" "第5鱼雷攻击机联队" "第6鱼雷攻击机联队" "第7鱼雷攻击机联队" "第8鱼雷攻击机联队" "第9鱼雷攻击机联队" "第10鱼雷攻击机联队" 
+		"1. Karinio Juro Bombonesis Avia. Gr." "2. Karinio Juro Bombonesis Avia. Gr." "3. Karinio Juro Bombonesis Avia. Gr." "4. Karinio Juro Bombonesis Avia. Gr." "5. Karinio Juro Bombonesis Avia. Gr." "6. Karinio Juro Bombonesis Avia. Gr." "7. Karinio Juro Bombonesis Avia. Gr." "8. Karinio Juro Bombonesis Avia. Gr." "9. Karinio Juro Bombonesis Avia. Gr." "10. Karinio Juro Bombonesis Avia. Gr." "1. Torpeda Bombonesis Avia. Gr." 
+		"2. Torpeda Bombonesis Avia. Gr." "3. Torpeda Bombonesis Avia. Gr." "4. Torpeda Bombonesis Avia. Gr." "5. Torpeda Bombonesis Avia. Gr." "6. Torpeda Bombonesis Avia. Gr." "7. Torpeda Bombonesis Avia. Gr." "8. Torpeda Bombonesis Avia. Gr." "9. Torpeda Bombonesis Avia. Gr." "10. Torpeda Bombonesis Avia. Gr." 
 	}
 	cas = {
-		"第1俯冲轰炸机联队" "第2俯冲轰炸机联队" "第3俯冲轰炸机联队" "第4俯冲轰炸机联队" "第5俯冲轰炸机联队" "第6俯冲轰炸机联队" "第7俯冲轰炸机联队" "第8俯冲轰炸机联队" "第9俯冲轰炸机联队" "第10俯冲轰炸机联队" 
+		"1. Puolimas Bombonesis Avia. Gr." "2. Puolimas Bombonesis Avia. Gr." "3. Puolimas Bombonesis Avia. Gr." "4. Puolimas Bombonesis Avia. Gr." "5. Puolimas Bombonesis Avia. Gr." "6. Puolimas Bombonesis Avia. Gr." "7. Puolimas Bombonesis Avia. Gr." "8. Puolimas Bombonesis Avia. Gr." "9. Puolimas Bombonesis Avia. Gr." "10. Puolimas Bombonesis Avia. Gr." 
 	}
 	transport_plane = {
-		"第1航空运输联队" "第2航空运输联队" "第3航空运输联队" "第4航空运输联队" "第5航空运输联队" 
+		"1. Oro Transportu Grupo" "2. Oro Transportu Grupo" "3. Oro Transportu Grupo" "4. Oro Transportu Grupo" "5. Oro Transportu Grupo" 
 	}
 	battleship = {
-		"考纳斯" "摩勒泰" "维尔纽斯" "希奥利艾" "普兰" "帕兰加" 
+		"Kaunas" "Moletai" "Vilnius" "Siauliai" "Plunge" "Palanga" 
 	}
 	light_cruiser = {
-		"斯鲁特" "陶拉盖" "哲本卡斯" "阿利图斯" "特拉凯" "达斯科英凯" 
+		"Silute" "Taurage" "Jurbarkas" "Alytus" "Trakai" "Druskininkai" 
 	}
 	heavy_cruiser = {
-		"考纳斯" "摩勒泰" "维尔纽斯" "希奥利艾" "普兰" "帕兰加" 
+		"Kaunas" "Moletai" "Vilnius" "Siauliai" "Plunge" "Palanga" 
 	}
 	battlecruiser = {
-		"斯鲁特" "陶拉盖" "哲本卡斯" "阿利图斯" "特拉凯" "达斯科英凯" 
+		"Silute" "Taurage" "Jurbarkas" "Alytus" "Trakai" "Druskininkai" 
 	}
 	destroyer = {
-		"第1驱逐舰队" "第2驱逐舰队" "第3驱逐舰队" "第4驱逐舰队" "第5驱逐舰队" "第6驱逐舰队" "第7驱逐舰队" "第8驱逐舰队" "第9驱逐舰队" "第10驱逐舰队" "第11驱逐舰队" 
-		"第12驱逐舰队" "第13驱逐舰队" "第14驱逐舰队" "第15驱逐舰队" 
+		"1. Nakintojas Eskadra" "2. Nakintojas Eskadra" "3. Nakintojas Eskadra" "4. Nakintojas Eskadra" "5. Nakintojas Eskadra" "6. Nakintojas Eskadra" "7. Nakintojas Eskadra" "8. Nakintojas Eskadra" "9. Nakintojas Eskadra" "10. Nakintojas Eskadra" "11. Nakintojas Eskadra" 
+		"12. Nakintojas Eskadra" "13. Nakintojas Eskadra" "14. Nakintojas Eskadra" "15. Nakintojas Eskadra" 
 	}
 	carrier = {
-		"斯鲁特" "陶拉盖" "哲本卡斯" "阿利图斯" "特拉凯" "达斯科英凯" 
+		"Silute" "Taurage" "Jurbarkas" "Alytus" "Trakai" "Druskininkai" 
 	}
 	escort_carrier = {
-		"迪斯卡斯" "瑟莱斯" "斯凯奥利斯" 
+		"Dzkas" "Slis" "Skalvis" 
 	}
 	submarine = {
-		"第1潜艇编队" "第2潜艇编队" "第3潜艇编队" "第4潜艇编队" "第5潜艇编队" "第6潜艇编队" "第7潜艇编队" "第8潜艇编队" "第9潜艇编队" "第10潜艇编队" "第11潜艇编队" 
-		"第12潜艇编队" "第13潜艇编队" "第14潜艇编队" "第15潜艇编队" 
+		"1. Povandeninis Eskadra" "2. Povandeninis Eskadra" "3. Povandeninis Eskadra" "4. Povandeninis Eskadra" "5. Povandeninis Eskadra" "6. Povandeninis Eskadra" "7. Povandeninis Eskadra" "8. Povandeninis Eskadra" "9. Povandeninis Eskadra" "10. Povandeninis Eskadra" "11. Povandeninis Eskadra" 
+		"12. Povandeninis Eskadra" "13. Povandeninis Eskadra" "14. Povandeninis Eskadra" "15. Povandeninis Eskadra" 
 	}
 	transport_ship = {
-		"第1运输编队" "第2运输编队" "第3运输编队" "第4运输编队" "第5运输编队" "第6运输编队" "第7运输编队" "第8运输编队" "第9运输编队" "第10运输编队" 
+		"1. Transportavimas" "2. Transportavimas" "3. Transportavimas" "4. Transportavimas" "5. Transportavimas" "6. Transportavimas" "7. Transportavimas" "8. Transportavimas" "9. Transportavimas" "10. Transportavimas" 
 	}
 
 }
 
 ministers = {
 	28001 = {
-		name = "安塔纳斯·斯梅托纳"
+		name = "Antanas Smetona"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M28001
@@ -129,7 +153,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	28002 = {
-		name = "尤奥扎斯·图博莱斯"
+		name = "Juozas Tubelis"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M28002
@@ -138,17 +162,16 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	28003 = {
-		name = "苏菲 洛佐赖蒂斯"
+		name = "Stasys Lozoraitis"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M28003
-		foreign_minister = ideological_crusader
 		head_of_government = happy_amateur
 		foreign_minister = apologetic_clerk
 		start_date = 1936.1.1
 	}
 	28004 = {
-		name = "瓦尔德马瑞斯 维陶塔斯-卡耐科斯"
+		name = "Valdemaras Vytautas-Carneckis"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M28004
@@ -157,7 +180,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	28006 = {
-		name = "佐瓦斯 达宁纽斯"
+		name = "Dovas Zaunius"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M28006
@@ -166,7 +189,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	28007 = {
-		name = "约翰 科尔维德斯-拜卡斯克斯"
+		name = "Jonas Galvydis-Bykauskas"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M28007
@@ -175,7 +198,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	28008 = {
-		name = "斯塔西斯 万斯提克斯"
+		name = "Stasys Rastikis"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M28008
@@ -184,15 +207,15 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	28009 = {
-		name = "噶尔尼斯 德尔南德斯"
+		name = "Garnis Dirmantas"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M28009
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1936.1.1
 	}
 	28010 = {
-		name = "安塔纳斯 古斯泰蒂斯"
+		name = "Antanas Gustaitis"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M28010
@@ -200,7 +223,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	28031 = {
-		name = "奥古斯丁纳斯·沃利迭马罗斯"
+		name = "Augustinas Voldemaras"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M28031
@@ -209,7 +232,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	28032 = {
-		name = "卡济斯 斯伽帕"
+		name = "Kazys Skirpa"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M28032
@@ -219,7 +242,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	28033 = {
-		name = "西奥多 冯 伦特恩"
+		name = "Theodor von Renteln"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M28033
@@ -228,7 +251,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	28035 = {
-		name = "安塔纳斯 摩科斯"
+		name = "Antanas Merkys"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M28035
@@ -238,7 +261,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	28036 = {
-		name = "乔纳斯 泽麦蒂斯"
+		name = "Jonas Zemaitis"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M28036
@@ -247,7 +270,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28037 = {
-		name = "尤珀萨斯 梅西奴纳斯"
+		name = "Jupozas Maciusnas"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M28011
@@ -256,7 +279,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	28038 = {
-		name = "约萨斯 安博瑞西波斯尤斯"
+		name = "Juozas Ambrazevicius"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M28020
@@ -266,7 +289,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	28039 = {
-		name = "阿纳托利 凯瑞斯"
+		name = "Anatolijus Kairys"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M28019
@@ -276,7 +299,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28040 = {
-		name = "胡斯塔斯 派尔勒佩斯"
+		name = "Justas Paleckis"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M28021
@@ -286,7 +309,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28041 = {
-		name = "安塔纳斯 斯尼克斯"
+		name = "Antanas Snieckus"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M28041
@@ -298,7 +321,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28042 = {
-		name = "派瑞西斯科斯 尼西尤纳斯"
+		name = "Pranciskis Misiunas"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M28042
@@ -307,7 +330,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28043 = {
-		name = "彼得拉斯 柯博尤尼斯"
+		name = "Petras Kubiliunas"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M28043
@@ -317,7 +340,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	28044 = {
-		name = "弗拉达斯 马诺内斯"
+		name = "Vladas Mironas"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M28044
@@ -326,7 +349,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28045 = {
-		name = "乔纳斯 瑟尼纽斯"
+		name = "Jonas Cernius"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M28014
@@ -336,7 +359,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	28048 = {
-		name = "科斯尼诺斯 塞勒斯可因"
+		name = "Kasimiras Zilenskiene"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M28048
@@ -345,7 +368,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28049 = {
-		name = "里纳斯 伯德威斯克斯"
+		name = "Linas Brodovskis"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M28015
@@ -354,7 +377,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28053 = {
-		name = "维丘斯 克雷韦-密茨凯维奇"
+		name = "Vincas Kreve-Mickevicius"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M28053
@@ -363,7 +386,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	28055 = {
-		name = "佩特拉斯 敦马卡斯"
+		name = "Petras Domarkas"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M28055
@@ -371,7 +394,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28056 = {
-		name = "厄尤勒斯 库山特"
+		name = "Azuolas Kuschat"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M28056
@@ -380,7 +403,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	28058 = {
-		name = "约萨斯 厄伯西斯"
+		name = "Juozas Urbsys"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M28058
@@ -388,7 +411,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28059 = {
-		name = "欧内斯特 科尔尼奥斯克斯"
+		name = "Ernestas Galvanauskas"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M28059
@@ -396,7 +419,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	28061 = {
-		name = "卡罗利斯 费恩维斯"
+		name = "Karolis Vinewicz"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M28061
@@ -404,7 +427,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28062 = {
-		name = "杰德瑞斯 格利戛斯"
+		name = "Giedrius Grigas"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M28062
@@ -412,7 +435,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28063 = {
-		name = "乔纳斯 维洛卡迪斯"
+		name = "Jonas Vailokaitis"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M28063
@@ -420,7 +443,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	28067 = {
-		name = "卡罗利斯 德资鲁斯-格罗斯曼斯"
+		name = "Karolis Didzilus-Grosmanas"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28067
@@ -428,7 +451,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	28068 = {
-		name = "梅森斯罗尔斯 格德维拉斯"
+		name = "Mecislovas Gedvilas"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28024
@@ -438,7 +461,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28070 = {
-		name = "维森特斯 兰特威特"
+		name = "Vincentas Latozaite"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M28070
@@ -446,7 +469,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	28071 = {
-		name = "佩特拉斯 皮兰舍维森斯"
+		name = "Petras Plechavicius"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M28071
@@ -455,7 +478,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	28072 = {
-		name = "弗拉德 哲格尤迪斯"
+		name = "Vladas Jurgutis"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M28072
@@ -463,7 +486,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28075 = {
-		name = "阿拉斯 安布罗迪斯"
+		name = "Aras Abrutis"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M28075
@@ -471,7 +494,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28076 = {
-		name = "乔纳斯 皮尔缇斯"
+		name = "Juozas Purickis"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M28076
@@ -479,7 +502,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28077 = {
-		name = "莱昂纳斯 比斯特阿斯"
+		name = "Leonas Bistras"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M28077
@@ -487,7 +510,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	28078 = {
-		name = "贞泰瑞 克朗比特"
+		name = "Gintare Klumbyte"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M28078
@@ -495,7 +518,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28079 = {
-		name = "维陶塔斯 马丁奈蒂斯"
+		name = "Vytautas Martinaitis"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28079
@@ -503,7 +526,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28081 = {
-		name = "艾斯卡斯 梅斯库帕斯-阿多马斯"
+		name = "Icikas Meskupas-Adomas"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28081
@@ -511,7 +534,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	28082 = {
-		name = "安东纳 散纳金"
+		name = "Antonas Sanrkiene"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28082
@@ -519,7 +542,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28084 = {
-		name = "威廉 库贝"
+		name = "Wilhelm Kube"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M28084
@@ -527,7 +550,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	28085 = {
-		name = "米科拉斯 什莱扎维丘斯"
+		name = "Mykolas Slezevicius"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M28085
@@ -535,7 +558,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28088 = {
-		name = "吉格斯 维特列耶秋"
+		name = "Jurgis Wintelaichuite"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M28088
@@ -543,7 +566,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	28089 = {
-		name = "乔纳斯 安德罗斯尤斯"
+		name = "Jonas Endrasius"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M28089
@@ -551,7 +574,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	28090 = {
-		name = "梅森斯罗尔斯 瑞尼斯"
+		name = "Micislovas Reinys"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M28090
@@ -559,7 +582,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28091 = {
-		name = "普拉纳斯 迪瓦蒂斯"
+		name = "Pranas Dovydaitis"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M28091
@@ -567,7 +590,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28093 = {
-		name = "米科拉斯 菲利帕浦西尤斯"
+		name = "Mykolas Filipavicius"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M28093
@@ -576,7 +599,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28094 = {
-		name = "多玛斯 罗西斯"
+		name = "Domas Rocius"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28094
@@ -584,7 +607,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28095 = {
-		name = "波维拉斯 派卡克雷斯"
+		name = "Povilas Pakarklis"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28025
@@ -592,7 +615,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	28097 = {
-		name = "乔纳斯 库斯卡斯"
+		name = "Juozas Kupcinkas"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28097
@@ -600,7 +623,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28098 = {
-		name = "吉格斯 克兰卡斯"
+		name = "Jurgis Terleckas"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28098
@@ -609,7 +632,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	28102 = {
-		name = "乔纳斯 巴尔塔基斯"
+		name = "Juozas Baltakis"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M28102
@@ -617,7 +640,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	28103 = {
-		name = "弗兰西斯科斯 艾维斯基斯"
+		name = "Franciskus Ivinskis"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M28103
@@ -625,7 +648,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	28105 = {
-		name = "乔纳斯 埃尔扫斯克斯"
+		name = "Juozas Alsauskas"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M28105
@@ -633,7 +656,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28107 = {
-		name = "吉格斯 瑟里斯"
+		name = "Jurgis Saulys"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M28107
@@ -642,7 +665,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	28108 = {
-		name = "阿塔纳斯 西坡纳斯"
+		name = "Atanas Ceponis"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M28108
@@ -650,7 +673,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28109 = {
-		name = "维特内斯 莱斯金"
+		name = "Vincentas Leskien"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28109
@@ -658,7 +681,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28110 = {
-		name = "维陶塔斯 阿伯萨斯"
+		name = "Vytautas Ambrazas"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28110
@@ -666,7 +689,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	28111 = {
-		name = "彻马斯 艾泽内斯"
+		name = "Chaimas Aizenas"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28111
@@ -674,7 +697,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	28112 = {
-		name = "普拉纳斯 泽波达斯"
+		name = "Pranas Zibertas"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28026
@@ -682,7 +705,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28118 = {
-		name = "卓菲亚 巴泽达-布拉道斯卡斯"
+		name = "Juoza Barzda-Bradauskas"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M28017
@@ -690,7 +713,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28119 = {
-		name = "艾泽拉斯 亚库斯"
+		name = "Azuolas Jakus"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M28119
@@ -698,7 +721,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28121 = {
-		name = "亚历山德拉斯 高斯莫瑟斯"
+		name = "Aleksandras Guzevicius"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28030
@@ -707,7 +730,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	28122 = {
-		name = "阿尔宾纳 塞帕斯-赛帕乌斯卡斯"
+		name = "Albinas Cepas-Cepauskas"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M28122
@@ -715,7 +738,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28126 = {
-		name = "盖德维尤斯 派尤奈斯"
+		name = "Gedrivius Palionis"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M28126
@@ -723,7 +746,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28127 = {
-		name = "卡济斯 卡拉汉"
+		name = "Kazys Musteikis"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M28125
@@ -731,7 +754,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28129 = {
-		name = "阿道法斯 拉玛-瓦纳嘎斯"
+		name = "Adolfas Ramanasukas-Vanagas"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M28018
@@ -739,7 +762,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	28137 = {
-		name = "弗拉德 卡文莱斯"
+		name = "Vladas Karvelis"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28029
@@ -747,12 +770,144 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	28145 = {
-		name = "乔纳斯 巴库斯卡斯"
+		name = "Juozas Baukarskas"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M28145
 		chief_of_air = army_aviation_doctrine
 		start_date = 1945.1.1
 	}
+	# Generic dummy ministers
+	95548 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		minister_of_security = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95549 = {
+		name = "Nameless Clerk"
+		ideology = paternal_autocrat
+		loyalty = 1.0
+		picture = MPaternalAutocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95550 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95551 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95552 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95553 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95554 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95555 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95556 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
 }
-

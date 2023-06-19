@@ -1,264 +1,314 @@
-corps = {
-	name = "第7军团"
-	location = 3706
-	regiment = { type = hq_brigade name = "第7军团指挥部" historical_model = 0 }
-	division= {
-		name = "第1师"
-		location = 3706
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第5猎兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第85步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第93步兵团" historical_model = 0 }
-	}
-	division= {
-		name = "第18师"
-		location = 3706
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第18步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第90步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第92步兵团" historical_model = 0 }
-	}
-	division= {
-		name = "第19师"
-		location = 3706
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第94步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第95步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第96步兵团" historical_model = 0 }
-	}
-}
-corps = {
-	name = "第1军团"
-	location = 3987
-	regiment = { type = hq_brigade name = "第1军团指挥部" historical_model = 0 }
-	division= {
-		name = "第2师"
-		location = 3987
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第3步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第26步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第31步兵团" historical_model = 0 }
-	}
-	division= {
-		name = "第3师"
-		location = 3987
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第1猎兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第4步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第30步兵团" historical_model = 0 }
-	}
-	division= {
-		name = "第4师"
-		location = 3987
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第5步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第20步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第21步兵团" historical_model = 0 }
-	}
-	division= {
-		name = "第11师"
-		location = 3987
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第2多罗班蒂团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第3多罗班蒂团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第19步兵团" historical_model = 0 }
-	}
-}
-corps = {
-	name = "第5军团"
-	location = 3577
-	regiment = { type = hq_brigade name = "第5军团指挥部" historical_model = 0 }
-	division= {
-		name = "第5师"
-		location = 3577
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第8步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第9步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第32步兵团" historical_model = 0 }
-	}
-	division= {
-		name = "第6师"
-		location = 3577
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第10步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第15步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第27步兵团" historical_model = 0 }
-	}
-	division= {
-		name = "第13师"
-		location = 3577
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第7步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第22步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第89步兵团" historical_model = 0 }
-	}
-}
-corps = {
-	name = "第4军团"
+theatre = {
+	name = "De Oriental Rom鈔e 蝞altul Comandament"
 	location = 3917
-	regiment = { type = hq_brigade name = "第4军团指挥部" historical_model = 0 }
-	division= {
-		name = "第7师"
-		location = 3917
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第3步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第14步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第16步兵团" historical_model = 0 }
-	}
-	division= {
-		name = "第8师"
-		location = 3917
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第7猎兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第8猎兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第29步兵团" historical_model = 0 }
-	}
-	division= {
-		name = "第14师"
-		location = 3917
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第6猎兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第13多罗班蒂团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第39步兵团" historical_model = 0 }
-	}
-	division= {
-		name = "第1装甲师"
-		location = 3917
-		is_reserve = yes
-		regiment = { type = light_armor_brigade name = "第1坦克团" historical_model = 0 }
-		regiment = { type = light_armor_brigade name = "第2坦克团" historical_model = 0 }
-		regiment = { type = motorized_brigade name = "第3猎兵团" historical_model = 0 }
-		regiment = { type = motorized_brigade name = "第4猎兵团" historical_model = 0 }
-	}
-}
-corps = {
-	name = "第2军团"
-	location = 3778
-	regiment = { type = hq_brigade name = "第2军团指挥部" historical_model = 0 }
-	division= {
-		name = "第9师"
+	regiment = { type = hq_brigade name = "Bucuresti HQ" historical_model = 0 }
+	
+	corps = {
+		name = "Corp 2 Armata"
 		location = 3778
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第34步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第36步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第40步兵团" historical_model = 0 }
+		regiment = { type = hq_brigade name = "Corp 2 Armata HQ" historical_model = 0 }
+		division= {
+			name = "Divizia 9 Infanterie"
+			location = 3778
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "34 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "36 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "40 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "13 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Divizia 10 Infanterie"
+			location = 3778
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "23 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "33 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "38 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "3 Regiment de Artilerie" experience = 5 historical_model = 2 }
+		}
 	}
-	division= {
-		name = "第10师"
-		location = 3778
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第23步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第33步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第38步兵团" historical_model = 0 }
-	}
-}
-corps = {
-	name = "第3军团"
-	location = 3445
-	regiment = { type = hq_brigade name = "第3军团指挥部" historical_model = 0 }
-	division= {
-		name = "第20师"
-		location = 3306
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第82步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第83步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第91步兵团" historical_model = 0 }
-	}
-	division= {
-		name = "第15师"
+	corps = {
+		name = "Corp 3 Armata"
 		location = 3445
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第10猎兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第25步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第35步兵团" historical_model = 0 }
+		regiment = { type = hq_brigade name = "Corp 3 Armata HQ" historical_model = 0 }
+		division= {
+			name = "Divizia 20 Infanterie"
+			location = 3306
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "82 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "83 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "91 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "39 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Divizia 15 Infanterie"
+			location = 3445
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "10 Vanatori Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "25 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "35 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "23 Regiment de Artilerie" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Divizia 21 Infanterie"
+			location = 3445
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "11 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "12 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "24 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "5 Regiment de Artilerie" experience = 5 historical_model = 3 }
+		}
 	}
-	division= {
-		name = "第21师"
-		location = 3445
-		is_reserve = yes
-		regiment = { type = infantry_brigade name = "第11步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第12步兵团" historical_model = 0 }
-		regiment = { type = infantry_brigade name = "第24步兵团" historical_model = 0 }
+	corps = {
+		name = "Corp 4 Armata"
+		location = 3917
+		regiment = { type = hq_brigade name = "Corp 4 Armata HQ" historical_model = 0 }
+		division= {
+			name = "Divizia 7 Infanterie"
+			location = 3917
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "3 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "14 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "16 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "4 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Divizia 8 Infanterie"
+			location = 3917
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "7 Vanatori Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "8 Vanatori Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "29 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "12 Regiment de Artilerie" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Divizia 14 Infanterie"
+			location = 3917
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "6 Vanatori Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "13 Dorobanti Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "39 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "24 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Divizia 1 Blindate"
+			location = 3917
+			is_reserve = yes
+			regiment = { type = light_armor_brigade name = "1 Tank Regimentul" experience = 5 historical_model = 1 }
+			regiment = { type = super_heavy_armor_brigade name = "2 Tank Regimentul" experience = 5 historical_model = 0 }
+			regiment = { type = motorized_brigade name = "3 Vanatori Regiment" experience = 5 historical_model = 0 }
+			regiment = { type = motorized_brigade name = "4 Vanatori Regiment" experience = 5 historical_model = 0 }
+		}
 	}
-}
-corps = {
-	name = "山地军"
-	location = 3444
-	regiment = { type = hq_brigade name = "山地军指挥部" historical_model = 0 }
-	division= {
-		name = "第1山地步兵师"
+	corps = {
+		name = "Corp Alpinisti"
 		location = 3444
-		is_reserve = yes
-		regiment = { type = bergsjaeger_brigade name = "第1山地步兵团" historical_model = 0 }
-		regiment = { type = bergsjaeger_brigade name = "第2山地步兵团" historical_model = 0 }
-		regiment = { type = artillery_brigade name = "第1山地炮兵团" historical_model = 0 }
+		regiment = { type = hq_brigade name = "Corp Alpinisti HQ" historical_model = 0 }
+		division= {
+			name = "Div. 1 Infanterie Alpinisti"
+			location = 3444
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "1 Regimentul de Munte" experience = 5 historical_model = 2 }
+			regiment = { type = bergsjaeger_brigade name = "2 Regimentul de Munte" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Div. 2 Infanterie Alpinisti"
+			location = 3444
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "4 Regimentul de Munte" experience = 5 historical_model = 2 }
+			regiment = { type = bergsjaeger_brigade name = "5 Regimentul de Munte" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Div. 3 Infanterie Alpinisti"
+			location = 3444
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "3 Regimentul de Munte" experience = 5 historical_model = 2 }
+			regiment = { type = bergsjaeger_brigade name = "6 Regimentul de Munte" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Div. 4 Infanterie Alpinisti"
+			location = 3444
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "7 Regimentul de Munte" experience = 5 historical_model = 2 }
+			regiment = { type = bergsjaeger_brigade name = "8 Regimentul de Munte" experience = 5 historical_model = 2 }
+		}
 	}
-	division= {
-		name = "第2山地步兵师"
-		location = 3444
-		is_reserve = yes
-		regiment = { type = bergsjaeger_brigade name = "第4山地步兵团" historical_model = 0 }
-		regiment = { type = bergsjaeger_brigade name = "第5山地步兵团" historical_model = 0 }
-		regiment = { type = artillery_brigade name = "第2山地炮兵团" historical_model = 0 }
-	}
-	division= {
-		name = "第3山地步兵师"
-		location = 3444
-		is_reserve = yes
-		regiment = { type = bergsjaeger_brigade name = "第3山地步兵团" historical_model = 0 }
-		regiment = { type = bergsjaeger_brigade name = "第6山地步兵团" historical_model = 0 }
-		regiment = { type = artillery_brigade name = "第3山地炮兵团" historical_model = 0 }
-	}
-	division= {
-		name = "第4山地步兵师"
-		location = 3444
-		is_reserve = yes
-		regiment = { type = bergsjaeger_brigade name = "第7山地步兵团" historical_model = 0 }
-		regiment = { type = bergsjaeger_brigade name = "第8山地步兵团" historical_model = 0 }
-		regiment = { type = artillery_brigade name = "第4山地炮兵团" historical_model = 0 }
-	}
-}
-corps = {
-	name = "罗马尼亚骑兵军"
-	location = 3778
-	regiment = { type = hq_brigade name = "罗马尼亚骑兵军指挥部" historical_model = 0 }
-	division= {
-		name = "第1骑兵师"
+	corps = {
+		name = "Corp Cavalerie Romania"
 		location = 3778
-		is_reserve = yes
-		regiment = { type = cavalry_brigade name = "第1骑兵旅" historical_model = 0 }
-		regiment = { type = cavalry_brigade name = "第7骑兵旅" historical_model = 0 }
+		regiment = { type = hq_brigade name = "Corp Cavalerie Romania HQ" historical_model = 0 }
+		division= {
+			name = "Divizia 1 Cavalerie"
+			location = 3778
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1 Cavalerie Brigada" experience = 5 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "7 Cavalerie Brigada" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Divizia 5 Cavalerie"
+			location = 3778
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "5 Cavalerie Brigada" experience = 5 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "8 Cavalerie Brigada" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Divizia 6 Cavalerie"
+			location = 3778
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "6 Cavalerie Brigada" experience = 5 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "9 Cavalerie Brigada" experience = 5 historical_model = 2 }
+		}
 	}
-	division= {
-		name = "第5骑兵师"
-		location = 3778
-		is_reserve = yes
-		regiment = { type = cavalry_brigade name = "第5骑兵旅" historical_model = 0 }
-		regiment = { type = cavalry_brigade name = "第8骑兵旅" historical_model = 0 }
+	navy = {
+		name = "Flota Romania de Mare"
+		base = 3919
+		location = 3919
+		ship = { type = destroyer name = "1. Distrug鉻or Flotila" experience = 5 historical_model = 2 }
+		ship = { type = destroyer name = "2. Distrug鉻or Flotila" experience = 5 historical_model = 5 }
+		ship = { type = submarine name = "1. Submarin Flotila" experience = 5 historical_model = 7 }
 	}
-	division= {
-		name = "第6骑兵师"
-		location = 3778
-		is_reserve = yes
-		regiment = { type = cavalry_brigade name = "第6骑兵旅" historical_model = 0 }
-		regiment = { type = cavalry_brigade name = "第9骑兵旅" historical_model = 0 }
+	air = {
+		name = "Gruparea Aeriana de Lupta"
+		base = 3917
+		location = 3917
+		wing = { type = interceptor name = "Grup 1 Avion de Vanatoare" experience = 5 historical_model = 0 }
+		wing = { type = cas name = "Grup 1 Asalt" experience = 5 historical_model = 0 }
 	}
 }
-navy = {
-	name = "罗马尼亚海军舰队"
-	base = 3919
-	location = 3919
-	ship = { type = destroyer name = "斐迪南国王号" historical_model = 0 }
-	ship = { type = submarine name = "海豚号" historical_model = 0 }
+theatre = {
+	name = "De Occidentul Rom鈔e 蝞altul Comandament"
+	location = 3441
+	regiment = { type = hq_brigade name = "Cluj HQ" historical_model = 0 }	
+	corps = {
+		name = "Corp 1 Armata"
+		location = 3987
+		regiment = { type = hq_brigade name = "Corp 1 Armata HQ" historical_model = 0 }
+		division= {
+			name = "Divizia 2 Infanterie"
+			location = 3987
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "3 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "26 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "31 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "9 Regiment de Artilerie" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Divizia 3 Infanterie"
+			location = 3987
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1 Vanatori Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "4 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "30 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "6 Regiment de Artilerie" experience = 5 historical_model = 3 }
+		}
+		division= {
+			name = "Divizia 4 Infanterie"
+			location = 3987
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "5 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "20 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "21 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "2 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Divizia 11 Infanterie"
+			location = 3987
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "2 Dorobanti Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "3 Dorobanti Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "19 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "11 Regiment de Artilerie" experience = 5 historical_model = 2 }
+		}
+	}
+	corps = {
+		name = "Corp 5 Armata"
+		location = 3577
+		regiment = { type = hq_brigade name = "Corp 5 Armata HQ" historical_model = 0 }
+		division= {
+			name = "Divizia 5 Infanterie"
+			location = 3577
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "8 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "9 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "32 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "7 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Divizia 6 Infanterie"
+			location = 3577
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "10 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "15 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "27 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "11 Regiment de Artilerie" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Divizia 13 Infanterie"
+			location = 3577
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "7 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "22 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "89 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "19 Regiment de Artilerie" experience = 5 historical_model = 3 }
+		}
+	}
+	corps = {
+		name = "Corp 7 Armata"
+		location = 3706
+		regiment = { type = hq_brigade name = "Corp 7 Armata HQ" historical_model = 0 }
+		division= {
+			name = "Divizia 1 Infanterie"
+			location = 3706
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "5 Vanatori Regiment" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "85 Regimentul de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "93 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "1 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "Divizia 18 Infanterie"
+			location = 3706
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "18 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "90 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "92 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "35 Regiment de Artilerie" experience = 5 historical_model = 2 }
+		}
+		division= {
+			name = "Divizia 19 Infanterie"
+			location = 3706
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "94 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "95 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "96 Regiment de Infanterie" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "37 Regiment de Artilerie" experience = 5 historical_model = 1 }
+		}
+	}	
 }
-air = {
-	name = "战斗航空集群"
-	base = 3917
-	location = 3917
-	wing = { type = interceptor name = "第1战斗机大队" historical_model = 0 }
-	wing = { type = tactical_bomber name = "第1战术轰炸机大队" historical_model = 0 }
-	wing = { type = naval_bomber name = "第1海军轰炸机大队" historical_model = 0 }
+convoy_construction=
+{
+	country = ROM
+	id=
+	{
+		id=15300
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
 }
-
-
-
+convoy_construction=
+{
+	country = ROM
+	id=
+	{
+		id=15301
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

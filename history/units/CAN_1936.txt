@@ -1,29 +1,80 @@
-division = {
-	name = "加拿大第1师"
-	location = 3342
-	is_reserve = yes
-	regiment = { type = infantry_brigade name = "加拿大第1步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "加拿大第2步兵旅" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "加拿大第3步兵旅" historical_model = 0 }
+theatre = {
+	name = "Royal Canadian High Command"
+	location = 3271
+	regiment = { type = hq_brigade name = "Ottawa HQ" historical_model = 0 }
+	division = {
+		name = "1st Canadian Division"
+		location = 3271
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "The King's Own Rifles of Canada" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "The Regina Rifle Regiment" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "The South Saskatchewan Regiment" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "1st Field Artillery Regiment" experience = 2.5 historical_model = 1 }
+	}
+	division = {
+		name = "2nd Canadian Division"
+		location = 3271
+		is_reserve = yes
+		regiment = { type = militia_brigade name = "The Saskatoon Light Infantry" experience = 5 historical_model = 1 }
+		regiment = { type = militia_brigade name = "The Prince Albert Volunteers" experience = 5 historical_model = 1 }
+		regiment = { type = militia_brigade name = "The Battleford Light Infantry" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "2nd Field Artillery Regiment" experience = 2.5 historical_model = 1 }
+	}
+	division = {
+		name = "1st Canadian Cavalry Division"
+		location = 3271
+		is_reserve = yes
+		regiment = { type = cavalry_brigade name = "The Saskatchewan Mounted Rifles" experience = 5 historical_model = 1 }
+		regiment = { type = cavalry_brigade name = "16th Canadian Light Horse" experience = 5 historical_model = 1 }
+		regiment = { type = cavalry_brigade name = "14th Canadian Light Horse" experience = 5 historical_model = 1 }
+		regiment = { type = self_propelled_support_brigade name = "The Royal Canadian Dragoons" experience = 2.5 historical_model = 1 }		
+	}	
+	navy = {
+		name = "Canadian Transport Fleet"
+		base = 6997
+		location = 6997
+		ship = { type = transport_ship name = "1st Transport Ship Flotilla" experience = 0 historical_model = 0 }
+		ship = { type = transport_ship name = "2nd Transport Ship Flotilla" experience = 0 historical_model = 0 }
+	}
+	navy = {
+		name = "Royal Canadian Navy"
+		base = 6997
+		location = 6997
+		ship = { type = destroyer name = "Destroyer Flotilla 1" experience = 5 historical_model = 1 }
+		ship = { type = destroyer name = "Destroyer Flotilla 2" experience = 5 historical_model = 5 }		
+	}
+	air = {
+		name = "Royal Canadian Air Force"
+		base = 3342
+		location = 3342
+		wing = { type = cas name = "No.1 RCAF Dive Bomber Group" experience = 5 historical_model = 0 }
+	}
 }
-
-navy = {
-	name = "加拿大运输舰队"
-	base = 6997
-	location = 6997
-	ship = { type = transport_ship name = "'日本皇后' 运输支队" historical_model = 0 }
-	ship = { type = transport_ship name = "'澳大利亚皇后' 运输支队" historical_model = 0 }
-	ship = { type = transport_ship name = "'不列颠皇后' 运输支队" historical_model = 0 }
-	ship = { type = transport_ship name = "'加拿大皇后' 运输支队" historical_model = 0 }
-	ship = { type = transport_ship name = "'俄国皇后' 运输支队" historical_model = 0 }
-	ship = { type = transport_ship name = "'亚洲皇后' 运输支队" historical_model = 0 }
+convoy_construction=
+{
+	country = CAN
+	id=
+	{
+		id=15280
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
 }
-navy = {
-	name = "加拿大皇家海军"
-	base = 6997
-	location = 6997
-	ship = { type = destroyer name = "第1驱逐舰支队" historical_model = 0 }
+convoy_construction=
+{
+	country = CAN
+	id=
+	{
+		id=15281
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort	
 }
-
-
-

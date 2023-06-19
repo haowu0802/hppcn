@@ -1,104 +1,224 @@
-last_election = 1932.9.8
-division = {
-	name = "第1军"
-	location = 317
-	is_reserve = yes
-	regiment = { type = infantry_brigade name = "北斯坎雅团" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "南斯坎雅团" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "克鲁努贝里团" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "延雪平-卡玛尔团" historical_model = 0 }
-}
-division = {
-	name = "第2军"
-	location = 613
-	is_reserve = yes
-	regiment = { type = infantry_brigade name = "约特兰来复枪团" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "海尔辛团" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "西诺兰团" historical_model = 0 }
-}
-division = {
-	name = "第3军"
-	location = 1056
-	is_reserve = yes
-	regiment = { type = infantry_brigade name = "艾尔夫斯堡团" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "哈兰团" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "博斯兰团" historical_model = 0 }
-}
-division = {
-	name = "第4军"
+theatre = {
+	name = "H鰃kvarteret"
 	location = 862
-	is_reserve = yes
-	regiment = { type = infantry_brigade name = "斯维雅-利夫加德团" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "利夫掷弹猎兵团" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "乌普兰团" historical_model = 0 }
+	regiment = { type = hq_brigade name = "H鰃kvarteret HQ" historical_model = 0 }
+	corps = {
+		name = "S鰀ra Milit鋜omraadet"
+		location = 1438
+		regiment = { type = hq_brigade name = "S鰀ra Milit鋜omraadet HQ" historical_model = 0 }	
+		division = {
+			name = "I.Arm閒鰎delningen"
+			location = 1438
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "I6 Norra Skaanska Regementet" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "I7 S鰀ra Skaanska Regementet" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "A3 Wendes Artilleriregemente" experience = 5 historical_model = 2 }
+		}
+		division = {
+			name = "II.Arm閒鰎delningen"
+			location = 1349
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "I11 Kronobergs Regemente" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "I16 Hallands Regemente" experience = 5 historical_model = 2 }
+		}
+		division = {
+			name = "XIII.Arm閒鰎delningen"
+			location = 1349
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "K2 Skaanska Kavalleriregementet" experience = 5 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "K3 Livregementets Husarer" experience = 5 historical_model = 2 }		
+			regiment = { type = truck_towed_support_brigade name = "A6 Smalands Arm閍rtilleriregemente" experience = 5 historical_model = 3 }				
+		}		
+	}
+	corps = {
+		name = "Norra Milit鋜omraadet"
+		location = 193
+		regiment = { type = hq_brigade name = "Norra Milit鋜omraadet HQ" historical_model = 0 }		
+		division = {
+			name = "III.Arm閒鰎delningen"
+			location = 193
+			is_reserve = yes
+			regiment = { type = bergsjaeger_brigade name = "I5 J鋗tlands F鋖tj鋑arregemente" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "I21 V鋝ternorrlands Regemente" experience = 5 historical_model = 2 }
+		}
+		division = {
+			name = "IV.Arm閒鰎delningen"
+			location = 193
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "I13 V鋝ternorrlands Regemente" experience = 5 historical_model = 2 }			
+			regiment = { type = infantry_brigade name = "I14 H鋖singe Regemente" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "A4 Norrlands Artilleriregemente" experience = 5 historical_model = 2 }
+		}		
+	}
+	corps = {
+		name = "V鋝tra Milit鋜omraadet"
+		location = 1171
+		regiment = { type = hq_brigade name = "V鋝tra Milit鋜omraadet HQ" historical_model = 0 }		
+		division = {
+			name = "V.Arm閒鰎delningen"
+			location = 1171
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "I19 Norrbottens regemente" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "I20 V鋝terbottens regemente" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "A5 Norrbottens Artilleriregemente" experience = 5 historical_model = 3 }
+		}	
+		division = {
+			name = "VI.Arm閒鰎delningen"
+			location = 1021
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "K1 Livregementet Till H鋝t" experience = 5 historical_model = 2 }
+			regiment = { type = cavalry_brigade name = "K4 Norrlands Dargonregemente" experience = 5 historical_model = 2 }			
+			regiment = { type = truck_towed_support_brigade name = "A8 Bodens Artilleriregemente" experience = 5 historical_model = 3 }		
+		}
+	}	
+	corps = {
+		name = "謘tra Milit鋜omraadet"
+		location = 862
+		regiment = { type = hq_brigade name = "謘tra Milit鋜omraadet HQ" historical_model = 0 }	
+		division = {
+			name = "VII.Arm閒鰎delningen"
+			location = 862
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "I9 Skaraborgs Regemente" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "I17 Bohusl鋘s Regemente" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "A1 G鰐a Artilleriregemente" experience = 5 historical_model = 2 }			
+		}
+		division = {
+			name = "VIII.Arm閒鰎delningen"
+			location = 862
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "I3 Livregementets Grenadj鋜er" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "I22 V鋜mlands Regemente" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "A9 Karlsborgs Artilleriregemente" experience = 5 historical_model = 2 }
+		}
+	}	
+	corps = {
+		name = "講re Norrlands Milit鋜omraade"
+		location = 463
+		regiment = { type = hq_brigade name = "講re Norrlands Milit鋜omraade HQ" historical_model = 0 }	
+		division = {
+			name = "IX.Arm閒鰎delningen"
+			location = 463
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "I8 Upplands Regemente" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "I10 S鰀ermanlands Regemente" experience = 5 historical_model = 2 }
+		}
+		division = {
+			name = "X.Arm閒鰎delningen"
+			location = 463
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "I1 Svea Livgarde" experience = 5 historical_model = 2 }
+			regiment = { type = infantry_brigade name = "I2 G鰐a Livgarde" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "A1 Svea Artilleriregemente" experience = 5 historical_model = 2 }
+		}		
+	}	
+	corps = {
+		name = "Gotlands Milit鋜omraade"
+		location = 1135
+		regiment = { type = hq_brigade name = "Gotlands Milit鋜omraade HQ" historical_model = 0 }		
+		division = {
+			name = "XI.Arm閒鰎delningen"
+			location = 1135
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "I4 Livgrenadj鋜regementet" experience = 5 historical_model = 2 }			
+			regiment = { type = infantry_brigade name = "I18 Gotlands Regemente" experience = 5 historical_model = 2 }
+			regiment = { type = horse_towed_support_brigade name = "A7 Gotlands Artillerikaar" experience = 5 historical_model = 3 }		
+		}
+		division = {
+			name = "XII.Arm閒鰎delningen"
+			location = 1135
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "I18 Smaalands Regemente" experience = 5 historical_model = 2 }			
+			regiment = { type = infantry_brigade name = "I18 膌vsborgs Regemente" experience = 5 historical_model = 2 }		
+		}
+	}
+	navy = {
+		name = "Kustflottan"
+		base = 862
+		location = 862
+		ship = { type = destroyer name = "2. Jagarflottiljen" experience = 5 historical_model = 1 }
+		ship = { type = transport_ship name = "1. Tr鋘gflottiljen" experience = 5 historical_model = 0 }
+	}
+	navy = {
+		name = "Aalandshavseskader"
+		base = 862
+		location = 862
+		ship = { type = heavy_cruiser name = "HMS 膔an" experience = 5 historical_model = 1 }
+		ship = { type = heavy_cruiser name = "HMS Tapperheten" experience = 5 historical_model = 1 }		
+		ship = { type = destroyer name = "3. Jagarflottiljen" experience = 5 historical_model = 4 }
+		ship = { type = destroyer name = "4. Jagarflottiljen" experience = 5 historical_model = 7 }
+	}
+	navy = {
+		name = "Karlskronaavdelningen"
+		base = 1349
+		location = 1349
+		ship = { type = heavy_cruiser name = "HMS Wasa" experience = 5 historical_model = 1 }
+		ship = { type = heavy_cruiser name = "HMS Manligheten" experience = 5 historical_model = 1 }
+		ship = { type = submarine name = "1. Ubatsflottiljen" experience = 5 historical_model = 2 }
+	}
+	navy = {
+		name = "G鰐eborgseskadern"
+		base = 1171
+		location = 1171
+		ship = { type = heavy_cruiser name = "HMS Fylgia" experience = 5 historical_model = 0 }
+		ship = { type = heavy_cruiser name = "HMS Oscar II" experience = 5 historical_model = 1 }		
+		ship = { type = submarine name = "2. Ubatsflottiljen" experience = 5 historical_model = 3 }
+		ship = { type = submarine name = "3. Ubatsflottiljen" experience = 5 historical_model = 6 }
+	}
+	navy = {
+		name = "1a Eskadern"
+		base = 862
+		location = 862
+		ship = { type = heavy_cruiser name = "HMS Sverige" experience = 5 historical_model = 2 pride = yes  }
+		ship = { type = heavy_cruiser name = "HMS Drottning Victoria" experience = 5 historical_model = 2 }
+		ship = { type = heavy_cruiser name = "HMS Gustav V" experience = 5 historical_model = 2 }
+		ship = { type = light_cruiser name = "HMS Clas Flemming" experience = 5 historical_model = 0 }
+		ship = { type = light_cruiser name = "HMS Gotland" experience = 5 historical_model = 6 }
+		ship = { type = destroyer name = "1. Jagarflottiljen" experience = 5 historical_model = 0 }
+	}
+	air = {
+		name = "1a Flygkaren"
+		base = 862
+		location = 862
+		wing = { type = cas name = "1. Dykbombflyggruppen" experience = 5 historical_model = 0 }
+		wing = { type = interceptor name = "1. Jaktflyggruppen" experience = 5 historical_model = 0 }
+	}
 }
-division = {
-	name = "第5军"
-	location = 901
-	is_reserve = yes
-	regiment = { type = infantry_brigade name = "韦姆兰团" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "利夫掷弹猎兵团" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "达尔团" historical_model = 0 }
+convoy_construction=
+{
+	country = SWE
+	id=
+	{
+		id=15213
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
 }
-division = {
-	name = "第6军"
-	location = 193
-	is_reserve = yes
-	regiment = { type = infantry_brigade name = "北博滕团" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "斯基德团" historical_model = 0 }
-	regiment = { type = infantry_brigade name = "西博滕团" historical_model = 0 }
+convoy_construction=
+{
+	country = SWE
+	id=
+	{
+		id=15214
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
 }
-division = {
-	name = "第7军"
-	location = 1135
-	is_reserve = yes
-	regiment = { type = infantry_brigade name = "哥特兰团" historical_model = 0 }
+military_construction = {
+	country = SWE
+	submarine = {
+		name = "4. Ubaatsflottiljen"
+		historical_model = 8
+	}
+	cost = 1.40
+	progress = 53
+	duration = 290
 }
-navy = {
-	name = "本土舰队"
-	base = 862
-	location = 862
-	ship = { type = light_cruiser name = "弗莱芒人号" historical_model = 0 }
-	ship = { type = transport_ship name = "第1运输舰队" historical_model = 0 }
-}
-navy = {
-	name = "奥兰海舰队"
-	base = 862
-	location = 862
-	ship = { type = heavy_cruiser name = "荣誉号" historical_model = 0 pride = yes }
-	ship = { type = heavy_cruiser name = "刚毅号" historical_model = 0 }
-}
-navy = {
-	name = "卡尔斯克鲁纳舰队"
-	base = 1349
-	location = 1349
-	ship = { type = heavy_cruiser name = "奥斯卡二世号" historical_model = 0 }
-	ship = { type = submarine name = "第1潜艇编队" historical_model = 0 }
-}
-navy = {
-	name = "哥特堡舰队"
-	base = 1171
-	location = 1171
-	ship = { type = heavy_cruiser name = "勇敢号" historical_model = 0 }
-	ship = { type = submarine name = "第2潜艇编队" historical_model = 1 }
-}
-air = {
-	name = "第1空军联队"
-	base = 862
-	location = 862
-	wing = { type = tactical_bomber name = "第1战术轰炸机大队" historical_model = 0 }
-	wing = { type = naval_bomber name = "第1海军轰炸机大队" historical_model = 0 }
-}
-navy = {
-	name = "第1舰队"
-	base = 862
-	location = 862
-	ship = { type = battlecruiser name = "瑞典号" historical_model = 0 }
-	ship = { type = battlecruiser name = "维多利亚公主号" historical_model = 0 }
-	ship = { type = battlecruiser name = "古斯塔夫五世号" historical_model = 0 }
-	ship = { type = light_cruiser name = "哥特兰号" historical_model = 1 }
-	ship = { type = destroyer name = "第1驱逐舰队" historical_model = 0 }
-}
-
-
-

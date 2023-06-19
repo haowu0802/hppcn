@@ -20,125 +20,146 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
+	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
 	}
 }
 
 unit_names = {
 	infantry_brigade = {
-		"µÚ1²½±øÊ¦" "µÚ2²½±øÊ¦" "µÚ3²½±øÊ¦" "µÚ4²½±øÊ¦" "µÚ5²½±øÊ¦" "µÚ6²½±øÊ¦" "µÚ7²½±øÊ¦" "µÚ8²½±øÊ¦" "µÚ9²½±øÊ¦" "µÚ10²½±øÊ¦" 
-		"µÚ11²½±øÊ¦" "µÚ12²½±øÊ¦" "µÚ13²½±øÊ¦" "µÚ14²½±øÊ¦" "µÚ15²½±øÊ¦" "µÚ16²½±øÊ¦" "µÚ17²½±øÊ¦" "µÚ18²½±øÊ¦" "µÚ19²½±øÊ¦" "µÚ20²½±øÊ¦" 
+		"1. Thai Infantry Div." "2. Thai Infantry Div." "3. Thai Infantry Div." "4. Thai Infantry Div." "5. Thai Infantry Div." "6. Thai Infantry Div." "7. Thai Infantry Div." "8. Thai Infantry Div." "9. Thai Infantry Div." "10. Thai Infantry Div." "11. Thai Infantry Div." 
+		"12. Thai Infantry Div." "13. Thai Infantry Div." "14. Thai Infantry Div." "15. Thai Infantry Div." "16. Thai Infantry Div." "17. Thai Infantry Div." "18. Thai Infantry Div." "19. Thai Infantry Div." "20. Thai Infantry Div." "21. Thai Infantry Div." "22. Thai Infantry Div." 
+		"23. Thai Infantry Div." "24. Thai Infantry Div." "25. Thai Infantry Div." "26. Thai Infantry Div." "27. Thai Infantry Div." "28. Thai Infantry Div." "29. Thai Infantry Div." "30. Thai Infantry Div." 
 	}
 	cavalry_brigade = {
-		"»Ê¼ÒµÚ1Æï±øÊ¦" "»Ê¼ÒµÚ2Æï±øÊ¦" "»Ê¼ÒµÚ3Æï±øÊ¦" "»Ê¼ÒµÚ4Æï±øÊ¦" "»Ê¼ÒµÚ5Æï±øÊ¦" "»Ê¼ÒµÚ6Æï±øÊ¦" "»Ê¼ÒµÚ7Æï±øÊ¦" "»Ê¼ÒµÚ8Æï±øÊ¦" "»Ê¼ÒµÚ9Æï±øÊ¦" "»Ê¼ÒµÚ10Æï±øÊ¦" 
+		"1. Royal Thai Cavalry" "2. Royal Thai Cavalry" "3. Royal Thai Cavalry" "4. Royal Thai Cavalry" "5. Royal Thai Cavalry" "6. Royal Thai Cavalry" "7. Royal Thai Cavalry" "8. Royal Thai Cavalry" "9. Royal Thai Cavalry" "10. Royal Thai Cavalry" 
 	}
 	motorized_brigade = {
-		"µÚ1Ä¦ÍĞ»¯²½±øÊ¦" "µÚ2Ä¦ÍĞ»¯²½±øÊ¦" "µÚ3Ä¦ÍĞ»¯²½±øÊ¦" "µÚ4Ä¦ÍĞ»¯²½±øÊ¦" "µÚ5Ä¦ÍĞ»¯²½±øÊ¦" "µÚ6Ä¦ÍĞ»¯²½±øÊ¦" "µÚ7Ä¦ÍĞ»¯²½±øÊ¦" "µÚ8Ä¦ÍĞ»¯²½±øÊ¦" "µÚ9Ä¦ÍĞ»¯²½±øÊ¦" "µÚ10Ä¦ÍĞ»¯²½±øÊ¦" 
+		"1. Thai Infantry Motordiv." "2. Thai Infantry Motordiv." "3. Thai Infantry Motordiv." "4. Thai Infantry Motordiv." "5. Thai Infantry Motordiv." "6. Thai Infantry Motordiv." "7. Thai Infantry Motordiv." "8. Thai Infantry Motordiv." "9. Thai Infantry Motordiv." "10. Thai Infantry Motordiv." 
 	}
 	mechanized_brigade = {
-		"µÚ1»úĞµ»¯²½±øÊ¦" "µÚ2»úĞµ»¯²½±øÊ¦" "µÚ3»úĞµ»¯²½±øÊ¦" "µÚ4»úĞµ»¯²½±øÊ¦" "µÚ5»úĞµ»¯²½±øÊ¦" "µÚ6»úĞµ»¯²½±øÊ¦" "µÚ7»úĞµ»¯²½±øÊ¦" "µÚ8»úĞµ»¯²½±øÊ¦" "µÚ9»úĞµ»¯²½±øÊ¦" "µÚ10»úĞµ»¯²½±øÊ¦"  
+		"1. Thai Mechanized Div." "2. Thai Mechanized Div." "3. Thai Mechanized Div." "4. Thai Mechanized Div." "5. Thai Mechanized Div." "6. Thai Mechanized Div." "7. Thai Mechanized Div." "8. Thai Mechanized Div." "9. Thai Mechanized Div." "10. Thai Mechanized Div." 
 	}
 	light_armor_brigade = {
-		"»Ê¼ÒµÚ1Ì¹¿ËÊ¦" "»Ê¼ÒµÚ2Ì¹¿ËÊ¦" "»Ê¼ÒµÚ3Ì¹¿ËÊ¦" "»Ê¼ÒµÚ4Ì¹¿ËÊ¦" "»Ê¼ÒµÚ5Ì¹¿ËÊ¦" "»Ê¼ÒµÚ6Ì¹¿ËÊ¦" "»Ê¼ÒµÚ7Ì¹¿ËÊ¦" "»Ê¼ÒµÚ8Ì¹¿ËÊ¦" "»Ê¼ÒµÚ9Ì¹¿ËÊ¦" "»Ê¼ÒµÚ10Ì¹¿ËÊ¦" 
+		"1. Royal Thai Tank Division" "2. Royal Thai Tank Division" "3. Royal Thai Tank Division" "4. Royal Thai Tank Division" "5. Royal Thai Tank Division" "6. Royal Thai Tank Division" "7. Royal Thai Tank Division" "8. Royal Thai Tank Division" "9. Royal Thai Tank Division" "10. Royal Thai Tank Division" 
 	}
 	armor_brigade = {
-		"»Ê¼ÒµÚ1Ì¹¿ËÊ¦" "»Ê¼ÒµÚ2Ì¹¿ËÊ¦" "»Ê¼ÒµÚ3Ì¹¿ËÊ¦" "»Ê¼ÒµÚ4Ì¹¿ËÊ¦" "»Ê¼ÒµÚ5Ì¹¿ËÊ¦" "»Ê¼ÒµÚ6Ì¹¿ËÊ¦" "»Ê¼ÒµÚ7Ì¹¿ËÊ¦" "»Ê¼ÒµÚ8Ì¹¿ËÊ¦" "»Ê¼ÒµÚ9Ì¹¿ËÊ¦" "»Ê¼ÒµÚ10Ì¹¿ËÊ¦" 
+		"1. Royal Thai Tank Division" "2. Royal Thai Tank Division" "3. Royal Thai Tank Division" "4. Royal Thai Tank Division" "5. Royal Thai Tank Division" "6. Royal Thai Tank Division" "7. Royal Thai Tank Division" "8. Royal Thai Tank Division" "9. Royal Thai Tank Division" "10. Royal Thai Tank Division" 
 	}
 	paratrooper_brigade = {
-		"µÚ1¿Õ½µÊ¦" "µÚ2¿Õ½µÊ¦" "µÚ3¿Õ½µÊ¦" "µÚ4¿Õ½µÊ¦" "µÚ5¿Õ½µÊ¦" "µÚ6¿Õ½µÊ¦" "µÚ7¿Õ½µÊ¦" "µÚ8¿Õ½µÊ¦" "µÚ9¿Õ½µÊ¦" "µÚ10¿Õ½µÊ¦" 
+		"1. Thai Paracommando Division" "2. Thai Paracommando Division" "3. Thai Paracommando Division" "4. Thai Paracommando Division" "5. Thai Paracommando Division" "6. Thai Paracommando Division" "7. Thai Paracommando Division" "8. Thai Paracommando Division" "9. Thai Paracommando Division" "10. Thai Paracommando Division" 
 	}
 	marine_brigade = {
-		"µÚ1º£¾üÂ½Õ½Ê¦" "µÚ2º£¾üÂ½Õ½Ê¦" "µÚ3º£¾üÂ½Õ½Ê¦" "µÚ4º£¾üÂ½Õ½Ê¦" "µÚ5º£¾üÂ½Õ½Ê¦" "µÚ6º£¾üÂ½Õ½Ê¦" "µÚ7º£¾üÂ½Õ½Ê¦" "µÚ8º£¾üÂ½Õ½Ê¦" "µÚ9º£¾üÂ½Õ½Ê¦" "µÚ10º£¾üÂ½Õ½Ê¦" 
+		"1. Thai Marine Inf. Division" "2. Thai Marine Inf. Division" "3. Thai Marine Inf. Division" "4. Thai Marine Inf. Division" "5. Thai Marine Inf. Division" "6. Thai Marine Inf. Division" "7. Thai Marine Inf. Division" "8. Thai Marine Inf. Division" "9. Thai Marine Inf. Division" "10. Thai Marine Inf. Division" 
 	}
 	bergsjaeger_brigade = {
-		"µÚ1É½µØÊ¦¡°ÅÁË¹ËşË¹¡±" "µÚ2É½µØÊ¦" "µÚ3É½µØÊ¦" "µÚ4É½µØÊ¦" "µÚ5É½µØÊ¦" "µÚ6É½µØÊ¦" "µÚ7É½µØÊ¦" "µÚ8É½µØÊ¦" "µÚ9É½µØÊ¦" "µÚ10É½µØÊ¦" 
+		"1. Thai Monpak Division" "2. Thai Monpak Division" "3. Thai Monpak Division" "4. Thai Monpak Division" "5. Thai Monpak Division" "6. Thai Monpak Division" "7. Thai Monpak Division" "8. Thai Monpak Division" "9. Thai Monpak Division" "10. Thai Monpak Division" 
 	}
 	garrison_brigade = {
-		"µÚ1²½±øÊ¦" "µÚ2²½±øÊ¦" "µÚ3²½±øÊ¦" "µÚ4²½±øÊ¦" "µÚ5²½±øÊ¦" "µÚ6²½±øÊ¦" "µÚ7²½±øÊ¦" "µÚ8²½±øÊ¦" "µÚ9²½±øÊ¦" "µÚ10²½±øÊ¦" 
-		"µÚ11²½±øÊ¦" "µÚ12²½±øÊ¦" "µÚ13²½±øÊ¦" "µÚ14²½±øÊ¦" "µÚ15²½±øÊ¦" "µÚ16²½±øÊ¦" "µÚ17²½±øÊ¦" "µÚ18²½±øÊ¦" "µÚ19²½±øÊ¦" "µÚ20²½±øÊ¦" 
+		"1. Thai Infantry Div." "2. Thai Infantry Div." "3. Thai Infantry Div." "4. Thai Infantry Div." "5. Thai Infantry Div." "6. Thai Infantry Div." "7. Thai Infantry Div." "8. Thai Infantry Div." "9. Thai Infantry Div." "10. Thai Infantry Div." "11. Thai Infantry Div." 
+		"12. Thai Infantry Div." "13. Thai Infantry Div." "14. Thai Infantry Div." "15. Thai Infantry Div." "16. Thai Infantry Div." "17. Thai Infantry Div." "18. Thai Infantry Div." "19. Thai Infantry Div." "20. Thai Infantry Div." "21. Thai Infantry Div." "22. Thai Infantry Div." 
+		"23. Thai Infantry Div." "24. Thai Infantry Div." "25. Thai Infantry Div." "26. Thai Infantry Div." "27. Thai Infantry Div." "28. Thai Infantry Div." "29. Thai Infantry Div." "30. Thai Infantry Div." 
 	}
 	hq_brigade = {
-		"µÚ1¼¯ÍÅ¾ü" "µÚ2¼¯ÍÅ¾ü" "µÚ3¼¯ÍÅ¾ü" "µÚ4¼¯ÍÅ¾ü" "µÚ5¼¯ÍÅ¾ü" 
+		"1st Thai Army" "2nd Thai Army" "3rd Thai Army" "4th Thai Army" "5th Thai Army" 
 	}
 	militia_brigade = {
-		"»Ê¼ÒµÚ1¾¯²ìÊ¦" "»Ê¼ÒµÚ2¾¯²ìÊ¦" "»Ê¼ÒµÚ3¾¯²ìÊ¦" "»Ê¼ÒµÚ4¾¯²ìÊ¦" "»Ê¼ÒµÚ5¾¯²ìÊ¦" "»Ê¼ÒµÚ6¾¯²ìÊ¦" "»Ê¼ÒµÚ7¾¯²ìÊ¦" "»Ê¼ÒµÚ8¾¯²ìÊ¦" "»Ê¼ÒµÚ9¾¯²ìÊ¦" "»Ê¼ÒµÚ10¾¯²ìÊ¦" 
-		"»Ê¼ÒµÚ11¾¯²ìÊ¦" "»Ê¼ÒµÚ12¾¯²ìÊ¦" "»Ê¼ÒµÚ13¾¯²ìÊ¦" "»Ê¼ÒµÚ14¾¯²ìÊ¦" "»Ê¼ÒµÚ15¾¯²ìÊ¦" "»Ê¼ÒµÚ16¾¯²ìÊ¦" "»Ê¼ÒµÚ17¾¯²ìÊ¦" "»Ê¼ÒµÚ18¾¯²ìÊ¦" "»Ê¼ÒµÚ19¾¯²ìÊ¦" "»Ê¼ÒµÚ20¾¯²ìÊ¦" 
+		"1. Royal Thai Police Div." "2. Royal Thai Police Div." "3. Royal Thai Police Div." "4. Royal Thai Police Div." "5. Royal Thai Police Div." "6. Royal Thai Police Div." "7. Royal Thai Police Div." "8. Royal Thai Police Div." "9. Royal Thai Police Div." "10. Royal Thai Police Div." "11. Royal Thai Police Div." 
+		"12. Royal Thai Police Div." "13. Royal Thai Police Div." "14. Royal Thai Police Div." "15. Royal Thai Police Div." "16. Royal Thai Police Div." "17. Royal Thai Police Div." "18. Royal Thai Police Div." "19. Royal Thai Police Div." "20. Royal Thai Police Div." 
 	}
 	multi_role = {
-		"RTAFµÚ1Õ½¶·»úÁª¶Ó" "RTAFµÚ2Õ½¶·»úÁª¶Ó" "RTAFµÚ3Õ½¶·»úÁª¶Ó" "RTAFµÚ4Õ½¶·»úÁª¶Ó" "RTAFµÚ5Õ½¶·»úÁª¶Ó" "RTAFµÚ6Õ½¶·»úÁª¶Ó" "RTAFµÚ7Õ½¶·»úÁª¶Ó" "RTAFµÚ8Õ½¶·»úÁª¶Ó" "RTAFµÚ9Õ½¶·»úÁª¶Ó" "RTAFµÚ10Õ½¶·»úÁª¶Ó" 
+		"1. RTAF Fighter Group" "2. RTAF Fighter Group" "3. RTAF Fighter Group" "4. RTAF Fighter Group" "5. RTAF Fighter Group" "6. RTAF Fighter Group" "7. RTAF Fighter Group" "8. RTAF Fighter Group" "9. RTAF Fighter Group" "10. RTAF Fighter Group" 
 	}
 	interceptor = {
-		"RTAFµÚ1Õ½¶·»úÁª¶Ó" "RTAFµÚ2Õ½¶·»úÁª¶Ó" "RTAFµÚ3Õ½¶·»úÁª¶Ó" "RTAFµÚ4Õ½¶·»úÁª¶Ó" "RTAFµÚ5Õ½¶·»úÁª¶Ó" "RTAFµÚ6Õ½¶·»úÁª¶Ó" "RTAFµÚ7Õ½¶·»úÁª¶Ó" "RTAFµÚ8Õ½¶·»úÁª¶Ó" "RTAFµÚ9Õ½¶·»úÁª¶Ó" "RTAFµÚ10Õ½¶·»úÁª¶Ó" 
+		"1. RTAF Fighter Group" "2. RTAF Fighter Group" "3. RTAF Fighter Group" "4. RTAF Fighter Group" "5. RTAF Fighter Group" "6. RTAF Fighter Group" "7. RTAF Fighter Group" "8. RTAF Fighter Group" "9. RTAF Fighter Group" "10. RTAF Fighter Group" 
+	}
+	jet_int = {
+		"1. RTAF Fighter Group" "2. RTAF Fighter Group" "3. RTAF Fighter Group" "4. RTAF Fighter Group" "5. RTAF Fighter Group" "6. RTAF Fighter Group" "7. RTAF Fighter Group" "8. RTAF Fighter Group" "9. RTAF Fighter Group" "10. RTAF Fighter Group" 
+	}
+	jet_mr = {
+		"1. RTAF Fighter Group" "2. RTAF Fighter Group" "3. RTAF Fighter Group" "4. RTAF Fighter Group" "5. RTAF Fighter Group" "6. RTAF Fighter Group" "7. RTAF Fighter Group" "8. RTAF Fighter Group" "9. RTAF Fighter Group" "10. RTAF Fighter Group" 
 	}
 	strategic_bomber = {
-		"RTAFµÚ1Õ½ÂÔºäÕ¨Áª¶Ó" "RTAFµÚ2Õ½ÂÔºäÕ¨Áª¶Ó" "RTAFµÚ3Õ½ÂÔºäÕ¨Áª¶Ó" "RTAFµÚ4Õ½ÂÔºäÕ¨Áª¶Ó" "RTAFµÚ5Õ½ÂÔºäÕ¨Áª¶Ó" "RTAFµÚ6Õ½ÂÔºäÕ¨Áª¶Ó" "RTAFµÚ7Õ½ÂÔºäÕ¨Áª¶Ó" "RTAFµÚ8Õ½ÂÔºäÕ¨Áª¶Ó" "RTAFµÚ9Õ½ÂÔºäÕ¨Áª¶Ó" "RTAFµÚ10Õ½ÂÔºäÕ¨Áª¶Ó" 
+		"1. RTAF Strategic Bomb Group" "2. RTAF Strategic Bomb Group" "3. RTAF Strategic Bomb Group" "4. RTAF Strategic Bomb Group" "5. RTAF Strategic Bomb Group" "6. RTAF Strategic Bomb Group" "7. RTAF Strategic Bomb Group" "8. RTAF Strategic Bomb Group" "9. RTAF Strategic Bomb Group" "10. RTAF Strategic Bomb Group" 
 	}
 	tactical_bomber = {
-		"RTAFµÚ1Õ½ÊõºäÕ¨Áª¶Ó" "RTAFµÚ2Õ½ÊõºäÕ¨Áª¶Ó" "RTAFµÚ3Õ½ÊõºäÕ¨Áª¶Ó" "RTAFµÚ4Õ½ÊõºäÕ¨Áª¶Ó" "RTAFµÚ5Õ½ÊõºäÕ¨Áª¶Ó" "RTAFµÚ6Õ½ÊõºäÕ¨Áª¶Ó" "RTAFµÚ7Õ½ÊõºäÕ¨Áª¶Ó" "RTAFµÚ8Õ½ÊõºäÕ¨Áª¶Ó" "RTAFµÚ9Õ½ÊõºäÕ¨Áª¶Ó" "RTAFµÚ10Õ½ÊõºäÕ¨Áª¶Ó" 
+		"1. RTAF Tactic Bomb Group" "2. RTAF Tactic Bomb Group" "3. RTAF Tactic Bomb Group" "4. RTAF Tactic Bomb Group" "5. RTAF Tactic Bomb Group" "6. RTAF Tactic Bomb Group" "7. RTAF Tactic Bomb Group" "8. RTAF Tactic Bomb Group" "9. RTAF Tactic Bomb Group" "10. RTAF Tactic Bomb Group" 
+	}
+	jet_bomber = {
+		"1. RTAF Tactic Bomb Group" "2. RTAF Tactic Bomb Group" "3. RTAF Tactic Bomb Group" "4. RTAF Tactic Bomb Group" "5. RTAF Tactic Bomb Group" "6. RTAF Tactic Bomb Group" "7. RTAF Tactic Bomb Group" "8. RTAF Tactic Bomb Group" "9. RTAF Tactic Bomb Group" "10. RTAF Tactic Bomb Group" 
 	}
 	naval_bomber = {
-		"RTAFµÚ1º£¾üºäÕ¨Áª¶Ó" "RTAFµÚ2º£¾üºäÕ¨Áª¶Ó" "RTAFµÚ3º£¾üºäÕ¨Áª¶Ó" "RTAFµÚ4º£¾üºäÕ¨Áª¶Ó" "RTAFµÚ5º£¾üºäÕ¨Áª¶Ó" "RTAFµÚ6º£¾üºäÕ¨Áª¶Ó" "RTAFµÚ7º£¾üºäÕ¨Áª¶Ó" "RTAFµÚ8º£¾üºäÕ¨Áª¶Ó" "RTAFµÚ9º£¾üºäÕ¨Áª¶Ó" "RTAFµÚ10º£¾üºäÕ¨Áª¶Ó" 
-		"RTAFµÚ1ÓãÀ×»úÁª¶Ó" "RTAFµÚ2ÓãÀ×»úÁª¶Ó" "RTAFµÚ3ÓãÀ×»úÁª¶Ó" "RTAFµÚ4ÓãÀ×»úÁª¶Ó" "RTAFµÚ5ÓãÀ×»úÁª¶Ó" "RTAFµÚ6ÓãÀ×»úÁª¶Ó" "RTAFµÚ7ÓãÀ×»úÁª¶Ó" "RTAFµÚ8ÓãÀ×»úÁª¶Ó" "RTAFµÚ9ÓãÀ×»úÁª¶Ó" "RTAFµÚ10ÓãÀ×»úÁª¶Ó" 
+		"1. RTAF Marine Bomb Group" "2. RTAF Marine Bomb Group" "3. RTAF Marine Bomb Group" "4. RTAF Marine Bomb Group" "5. RTAF Marine Bomb Group" "6. RTAF Marine Bomb Group" "7. RTAF Marine Bomb Group" "8. RTAF Marine Bomb Group" "9. RTAF Marine Bomb Group" "10. RTAF Marine Bomb Group" "1. RTAF Torpedo Group" 
+		"2. RTAF Torpedo Group" "3. RTAF Torpedo Group" "4. RTAF Torpedo Group" "5. RTAF Torpedo Group" "6. RTAF Torpedo Group" "7. RTAF Torpedo Group" "8. RTAF Torpedo Group" "9. RTAF Torpedo Group" "10. RTAF Torpedo Group" 
 	}
 	cas = {
-		"RTAFµÚ1¸©³åºäÕ¨Áª¶Ó" "RTAFµÚ2¸©³åºäÕ¨Áª¶Ó" "RTAFµÚ3¸©³åºäÕ¨Áª¶Ó" "RTAFµÚ4¸©³åºäÕ¨Áª¶Ó" "RTAFµÚ5¸©³åºäÕ¨Áª¶Ó" "RTAFµÚ6¸©³åºäÕ¨Áª¶Ó" "RTAFµÚ7¸©³åºäÕ¨Áª¶Ó" "RTAFµÚ8¸©³åºäÕ¨Áª¶Ó" "RTAFµÚ9¸©³åºäÕ¨Áª¶Ó" "RTAFµÚ10¸©³åºäÕ¨Áª¶Ó" 
+		"1. RTAF Dive Bomb Group" "2. RTAF Dive Bomb Group" "3. RTAF Dive Bomb Group" "4. RTAF Dive Bomb Group" "5. RTAF Dive Bomb Group" "6. RTAF Dive Bomb Group" "7. RTAF Dive Bomb Group" "8. RTAF Dive Bomb Group" "9. RTAF Dive Bomb Group" "10. RTAF Dive Bomb Group" 
 	}
 	transport_plane = {
-		"RTAFµÚ1ÔËÊä»úÁª¶Ó" "RTAFµÚ2ÔËÊä»úÁª¶Ó" "RTAFµÚ3ÔËÊä»úÁª¶Ó" "RTAFµÚ4ÔËÊä»úÁª¶Ó" "RTAFµÚ5ÔËÊä»úÁª¶Ó" 
+		"1. RTAF Air Transport" "2. RTAF Air Transport" "3. RTAF Air Transport" "4. RTAF Air Transport" "5. RTAF Air Transport" 
 	}
 	battleship = {
-		"RTNS Âü¹ÈºÅ" "RTNS öÇºşºÅ" "RTNS ËÕÃÀµººÅ" 
+		"HTMS Krung Thep" "HTMS Thale Luang" "HTMS Ko Samui" 
 	}
 	light_cruiser = {
-		"RTNS Ëş¿ËĞÁºÅ" "RTNS ÄÉÈğĞûºÅ" "RTNS °¢è¤ÍÓºÅ" "RTNS ÍÌ¸®ºÅ" 
+		"HTMS Taksin" "HTMS Naresuan" "HTMS Sri Ayuthia" "HTMS Dhonburi" 
 	}
 	heavy_cruiser = {
-		"RTNS °¢è¤ÍÓºÅ" "RTNS ÍÌ¸®ºÅ" "RTNS ´ºÎäÀï¸® ºÅ" "RTNS ±±é­¸®ºÅ" "RTNS À­²îºÅ" "RTNS ÂŞÓÂºÅ" "RTNS ¼âÖñãë¸®ºÅ" "RTNS ËØß·ºÅ" 
+		"HTMS Sri Ayuthia" "HTMS Dhonburi" "HTMS Chon Buri" "HTMS Samut Phrakan" "HTMS Si Racha" "HTMS Rayong" "HTMS Chanthaburi" "HTMS Khao Saming" 
 	}
 	destroyer = {
-		"ÅÁÂÍÍõ±à¶Ó" "¿Æ²ı±à¶Ó" "Ò²À­±à¶Ó" "±±À¿±à¶Ó" "À­ÎäÀï±à¶Ó" "ÅåÌØ²¼Àï±à¶Ó" "ÆßÑÒ±à¶Ó" "»ªĞÀ±à¶Ó" "°ÍÊñ±à¶Ó" "É«¾ü±à¶Ó" "°ÍÍÌËûÄá±à¶Ó" 
+		"1. Phû Sanghár Flotille" "2. Phû Sanghár Flotille" "3. Phû Sanghár Flotille" "4. Phû Sanghár Flotille" "5. Phû Sanghár Flotille" "6. Phû Sanghár Flotille" "7. Phû Sanghár Flotille" "8. Phû Sanghár Flotille" "9. Phû Sanghár Flotille" "10. Phû Sanghár Flotille" "11. Phû Sanghár Flotille"
 			}
 	carrier = {
-		"RTNS ÄÂÍûÌ©ºÅ" "RTNS Ì©¹úºÅ" 
+		"HTMS Muang Thai" "HTMS Ao Thai" 
 	}
 	escort_carrier = {
-		"RTNS ²î¿ËÀï ÄÉÂÀ±´ÌØºÅ" "RTNS ÄÂÍûÌ©ºÅ" "RTNS Ì©¹úºÅ" 
+		"HTMS Chakri Nareubet" "HTMS Muang Thai" "HTMS Ao Thai" 
 	}
 	submarine = {
-		"ËØ¿ÉÌ©±à¶Ó" "´ºÅî±à¶Ó" "¿ËÀ­ÎäÀï±à¶Ó" "ÀÈ¿ª±à¶Ó" "ÂŞÓÂ±à¶Ó" "ÀÊËã±à¶Ó" "ËÕÃÀ±à¶Ó" "ËØß·±à¶Ó" "ÄÇ¿ÕÅÄÙ¯±à¶Ó" "ËÍÍù´ï¿ÂÅÁ±à¶Ó" " Ò¹·áËÌ±à¶Ó" 
+		"1. Reüx da ná Flotille" "2. Reüx da ná Flotille" "3. Reüx da ná Flotille" "4. Reüx da ná Flotille" "5. Reüx da ná Flotille" "6. Reüx da ná Flotille" "7. Reüx da ná Flotille" "8. Reüx da ná Flotille" "9. Reüx da ná Flotille" "10. Reüx da ná Flotille" "11. Reüx da ná Flotille" 
 			}
 	transport_ship = {
-		"ÅíÊÀÂåÔËÊä±à¶Ó" "ÂåÀ¤¸®ÔËÊä±à¶Ó" "ÅÁÅçÁîÔËÊä±à¶Ó" "ºìÍ³ÔËÊä±à¶Ó" "²©´ïÂ×ÔËÊä±à¶Ó" "¸Éµ±ÔËÊä±à¶Ó" "ÆÕ¼ªÔËÊä±à¶Ó" "À¼ËşÔËÊä±à¶Ó" "ºÏ°¬ÔËÊä±à¶Ó" "ËØ¿ÉÌ©ÔËÊä±à¶Ó" 
+		"Khan Loung Flotille" "Nakhon Si Thammarat Flotille" "Pak Phanang Flotille" "Thung Song Flotille" "Pattalung Flotille" "Kantang Flotille" "Phuket Flotille" "Ko Lanta Ya Flotille" "Hat Yai Flotille" "Songkhia Flotille" 
 	}
 
 }
 
 ministers = {
 	62001 = {
-		name = "À­Âí°ËÊÀ"
+		name = "Rama VIII"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M62001
 		head_of_state = popular_figurehead
-		head_of_state = popular_figurehead
-		head_of_state = popular_figurehead
 		start_date = 1936.1.1
 	}
 	62002 = {
-		name = "·ëÌØ¡¤°Í¹ş¹şÔ¼¶¡"
+		name = "Phot Bhahalyodin"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M62002
 		head_of_government = happy_amateur
 		armament_minister = corrupt_kleptocrat
-		head_of_government = happy_amateur
 		minister_of_security = crime_fighter
 		start_date = 1936.1.1
 	}
 	62003 = {
-		name = "¹ş¡¤É½Ä·ÅåËşÎ÷Àï"
+		name = "Ha Samptasiri"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M62003
@@ -147,7 +168,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	62005 = {
-		name = "±ÈÀï¡¤ÅÁÒÀÈÙ"
+		name = "Pridi Phanomyong"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M62005
@@ -156,13 +177,12 @@ ministers = {
 		chief_of_navy = base_control_doctrine
 		head_of_government = old_admiral
 		foreign_minister = iron_fisted_brute
-		armament_minister = tank_proponent
 		armament_minister = air_to_ground_proponent
 		start_date = 1936.1.1
 	}
 	62007 = {
-		name = "öÇÅûãë¡¤ËÌ¿°"
-		ideology = paternal_autocrat
+		name = "Plaek Pibulsonggram"
+		ideology = fascistic
 		loyalty = 0.75
 		picture = M62007
 		chief_of_staff = school_of_mass_combat
@@ -171,11 +191,10 @@ ministers = {
 		foreign_minister = general_staffer
 		minister_of_security = efficient_sociopath
 		minister_of_intelligence = research_specialist
-		head_of_government = backroom_backstabber
 		start_date = 1936.1.1
 	}
 	62010 = {
-		name = "·ÑÀ­¡¤Íß²éÑïÀÊÈøÀïÌØ"
+		name = "Phra Vechayanrangsarit"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M62010
@@ -184,7 +203,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	62031 = {
-		name = "H.R.H.¡¤À¼Êµ¡¤²ÂÄÏµÂ¡¤Íõ×Ó"
+		name = "H.R.H. Prince Rangsit of Chainand"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M62031
@@ -192,7 +211,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	62033 = {
-		name = "À­Âí¾ÅÊÀ"
+		name = "Rama IX"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M62011
@@ -200,17 +219,16 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	62036 = {
-		name = "¿í¡¤°¢²¼¹şÑÇÎÄÉ³"
+		name = "Kuang Abhayavongsa"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M62036
-		head_of_government = silent_workhorse
 		head_of_government = silent_workhorse
 		armament_minister = infantry_proponent
 		start_date = 1944.1.1
 	}
 	62037 = {
-		name = "ËûÎ¬¡¤ÅíÑÇ¿ÆÍ¼"
+		name = "Thawee Punyaketu"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M62015
@@ -220,7 +238,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	62038 = {
-		name = "ÉªÄá¡¤ÅÁÀ­Äª¼Ó"
+		name = "Seni Pramoja"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M62012
@@ -230,7 +248,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	62041 = {
-		name = "ËûÍú¡¤Ì½Â¡ÄÇÍßÉ³Íß"
+		name = "Thawon Thamrongnawasawat"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M62029
@@ -238,11 +256,11 @@ ministers = {
 		foreign_minister = the_cloak_n_dagger_schemer
 		minister_of_security = crime_fighter
 		chief_of_staff = school_of_manoeuvre
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1946.1.1
 	}
 	62043 = {
-		name = "°ØÒ¬¡¤ÇĞÌØÄÉËÎ¹şÀ­"
+		name = "Phraya Chitnasongkhla"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M62026
@@ -252,7 +270,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	62044 = {
-		name = "Î¢²îÌØ¡¤Î¬ÆëËûÍßÈø¿¨"
+		name = "Wichit Wichitwathakarn"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M62044
@@ -260,7 +278,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	62047 = {
-		name = "°¡Ëş¹şŒ¡µÙ¡¤°ÍÅ©Óº"
+		name = "Atthakitti Banomyong"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M62047
@@ -268,7 +286,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	62050 = {
-		name = "µÏÀÕ¿Ë¡¤·¢¼ÓÑÇÄÉÂí"
+		name = "Direk Phajayanama"
 		ideology = market_liberal
 		loyalty = 0.50
 		picture = M62014
@@ -277,7 +295,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	62051 = {
-		name = "ÌìÁÁ¡¤»ë²é¿â"
+		name = "Tianliang Huntrakool"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M62051
@@ -287,7 +305,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	62054 = {
-		name = "·ÑÑÇ¡¤±È´ï¹ş¿âÉ³"
+		name = "Phya Bidadhkosha"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M62054
@@ -295,7 +313,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	62055 = {
-		name = "°ØÒ¬¡¤Î¬³şÌØ²ÜÀ­É³"
+		name = "Phraya Wichcitcholathai"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M62055
@@ -304,7 +322,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	62057 = {
-		name = "ÉªÄ·¡¤¹şÀïÉ³ÄÉÂíÀ­"
+		name = "Serm Khrishnamra"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M62057
@@ -313,7 +331,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	62059 = {
-		name = "·ÑÑÇ¡¤²¼ÀïÄÉÍßÀ­Ë¹"
+		name = "Phya Burinavarasth"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M62059
@@ -321,7 +339,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	62060 = {
-		name = "H.R.H.¡¤¿¨Â³ÄÉÍõ×Ó"
+		name = "H.R.H. Prince Charoon"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M62060
@@ -329,7 +347,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	62061 = {
-		name = "°ØÒ¬¡¤²éÀÕÂê°¢ÌØ"
+		name = "Phraya Chalermarkiart"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M62061
@@ -338,7 +356,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	62062 = {
-		name = "°ØÒ¬¡¤ÆÕÀï²é³éÀ­Óô¹ş"
+		name = "Phraya Preechacholayudha"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M62019
@@ -347,7 +365,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	62063 = {
-		name = "°ØÒ¬¡¤É³ÑÇÄÉÆ¤¿¨ÌØ"
+		name = "Phraya Thayarnpikart"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M62063
@@ -356,7 +374,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	62067 = {
-		name = "A.G.¡¤°£ÀûË¹"
+		name = "A.G. Ellis"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M62016
@@ -365,7 +383,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	62069 = {
-		name = "¿í¡¤ĞÁËÕËÎ¹şÀÊ²Â"
+		name = "Luang Sinthusongkhramchai"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M62069
@@ -374,7 +392,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	62070 = {
-		name = "ÕÑ¡¤Æ¤À­À³ÌØ"
+		name = "Phao Peeralert"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M62024
@@ -382,7 +400,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	62072 = {
-		name = "´¨¡¤Âê¸ñ¼°¹şÎ¬·òÀ­ÑÇ"
+		name = "Chuei Maghaviphulaya"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M62072
@@ -390,7 +408,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	62075 = {
-		name = "Ë¹ÀïÉ­ÄÉ¡¤É³Ä·ÅÁµÙÎ÷Àï"
+		name = "Srisena Sampatisiri"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M62075
@@ -398,7 +416,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	62079 = {
-		name = "ÆëÌØ¡¤ÄÂÎ÷ÅÁ¡¤Î÷ÄÉµÂÔ¼µÂ¹şÀ­¿ÆÉ³"
+		name = "Chit Munsilpa Sinadyodharaksa"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M62079
@@ -407,7 +425,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	62081 = {
-		name = "ÕÅ¡¤²éÎÄÉ£ËÎ¿¨À¼Ä·"
+		name = "Chuang Chawengsangsongkram"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M62081
@@ -416,7 +434,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	62083 = {
-		name = "±ü¡¤ËÕ·¨²éÀ­Èû"
+		name = "Bung Suphachahlasai"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M62083
@@ -424,7 +442,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	62086 = {
-		name = "Ë¹ÍßÌØ¡¤¸¥Â³µÏÄÉµÂË¹"
+		name = "Sawat Phutianands"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M62086
@@ -433,7 +451,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	62091 = {
-		name = "ÂüÀ¤¡¤¸¥Â³ÄªÔ¼Ë¹"
+		name = "Mangkon Phromyothi"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M62025
@@ -441,7 +459,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	62092 = {
-		name = "ĞÁµÂºú¡¤¿¨ÂêÀ¼ÄÉÎÄ"
+		name = "Sindhu Kamalanavin"
 		ideology = paternal_autocrat
 		loyalty = 0.50
 		picture = M62017
@@ -450,7 +468,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	62094 = {
-		name = "¼ªÀû¡¤Î¬ÆæÌØËÎ¿¨À­Ä·"
+		name = "Jiri Wichitsongkram"
 		ideology = market_liberal
 		loyalty = 0.50
 		picture = M62094
@@ -458,7 +476,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	62095 = {
-		name = "ËÕ¿É¡¤ÄÉ¿ËÂ³²¨"
+		name = "Suk Nakrob"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M62095
@@ -466,7 +484,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	62097 = {
-		name = "Âü·ÑÑÇ¡¤¿Éº¹·¨Áú"
+		name = "Manphya Khanphialong"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M62097
@@ -474,7 +492,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	62098 = {
-		name = "ÈøÎ¬¡¤²¼ÑÅ¿ÆÌØ"
+		name = "Thawi Bunyaket"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M62098
@@ -482,7 +500,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	62105 = {
-		name = "¿í¡¤²éÄ·ÄÉÄÉÉ³ÓôÉ³"
+		name = "Luang Chamnanarthayutha"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M62105
@@ -490,7 +508,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	62110 = {
-		name = "·ÑÀ­¡¤Î÷ÅÁÉ³¿âÀ­À¤"
+		name = "Phra Silpasakrakorn"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M62110
@@ -498,7 +516,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	62111 = {
-		name = "¿í¡¤¿¨¼ªËÎ¿¨À­Ä·"
+		name = "Luang Kajsongkram"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M62111
@@ -506,11 +524,166 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	62114 = {
-		name = "²¨ÌØ¡¤ÈøÀ­ĞÁ"
+		name = "Pote Sarasin"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M62114
 		foreign_minister = great_compromiser
 		start_date = 1948.1.1
 	}
+	# Generic dummy ministers
+	95852 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95853 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95854 = {
+		name = "Nameless Clerk"
+		ideology = paternal_autocrat
+		loyalty = 1.0
+		picture = MPaternalAutocrat
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		start_date = 1936.1.1
+	}
+	95855 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		minister_of_security = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95856 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95857 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95858 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95859 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95860 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95861 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}	
 }

@@ -1,32 +1,34 @@
-corps = {
-	name = "西藏第1军"
+theatre = {
+	name = "Xi'zang Zuigao Tongshuai Bu"
 	location = 9377
-	regiment = { type = hq_brigade name = "西藏第1军指挥部" historical_model = 0 }
-	division= {
-		name = "藏军第1师"
+	regiment = { type = hq_brigade name = "Lhasa HQ" historical_model = 0 }
+	corps = {
+		name = "Xi'zang J黱tuan 1"
 		location = 9377
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division= {
-		name = "藏军第10旅"
-		location = 9377
-		is_reserve = yes
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-	}
-	division= {
-		name = "藏军第17旅"
-		location = 9377
-		is_reserve = yes
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
-		regiment = { type = militia_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "Xi'zang J黱tuan 1 HQ" historical_model = 0 }
+		division= {
+			name = "1 Xi'zang Qibing Shi"
+			location = 9377
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1. M韓bing Tu醤" experience = 3 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "2. M韓bing Tu醤" experience = 3 historical_model = 0 }
+			regiment = { type = infantry_brigade name = "3. M韓bing Tu醤" experience = 3 historical_model = 0 }
+		}
+		division= {
+			name = "10 Xi'zang Qibing Shi"
+			location = 9377
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "4. M韓bing Tu醤" experience = 3 historical_model = 0 }
+			regiment = { type = militia_brigade name = "5. M韓bing Tu醤" experience = 3 historical_model = 0 }
+			regiment = { type = militia_brigade name = "6. M韓bing Tu醤" experience = 3 historical_model = 0 }
+		}
+		division= {
+			name = "17 Xi'zang Qibing Shi"
+			location = 9377
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "7. M韓bing Tu醤" experience = 3 historical_model = 0 }
+			regiment = { type = militia_brigade name = "8. M韓bing Tu醤" experience = 3 historical_model = 0 }
+			regiment = { type = militia_brigade name = "9. M韓bing Tu醤" experience = 3 historical_model = 0 }
+		}
 	}
 }
-
-
-

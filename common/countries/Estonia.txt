@@ -1,6 +1,8 @@
 color = { 76  157  195 }
 graphical_culture = Generic
 
+
+
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -17,96 +19,109 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
 	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
+	}		
 }
 
 unit_names = {
 	infantry_brigade = {
-		"第I步兵师" "第II步兵师" "第III步兵师" "第IV步兵师" "第V步兵师" "第VI步兵师" "第VII步兵师" "第VIII步兵师" "第IX步兵师" "第X步兵师" "第XI步兵师" 
-		"第XII步兵师" "第XIII步兵师" "第XIV步兵师" "第XV步兵师" "第XVI步兵师" "第XVII步兵师" "第XVIII步兵师" "第XIX步兵师" "第XX步兵师" 
+		"I Jalav鋏diviis" "II Jalav鋏diviis" "III Jalav鋏diviis" "IV Jalav鋏diviis" "V Jalav鋏diviis" "VI Jalav鋏diviis" "VII Jalav鋏diviis" "VIII Jalav鋏diviis" "IX Jalav鋏diviis" "X Jalav鋏diviis" "XI Jalav鋏diviis" 
+		"XII Jalav鋏diviis" "XIII Jalav鋏diviis" "XIV Jalav鋏diviis" "XV Jalav鋏diviis" "XVI Jalav鋏diviis" "XVII Jalav鋏diviis" "XVIII Jalav鋏diviis" "XIX Jalav鋏diviis" "XX Jalav鋏diviis" 
 	}
 	cavalry_brigade = {
-		"第XXI骑兵师" "第XXII骑兵师" "第XXIII骑兵师" "第XXIV骑兵师" "第XXV骑兵师" "第XXVI骑兵师" "第XXVII骑兵师" "第XXVIII骑兵师" "第XXIX骑兵师" "第XXX骑兵师" 
+		"XXI Ratsav鋏diviis" "XXII Ratsav鋏diviis" "XXIII Ratsav鋏diviis" "XXIV Ratsav鋏diviis" "XXV Ratsav鋏diviis" "XXVI Ratsav鋏diviis" "XXVII Ratsav鋏diviis" "XXVIII Ratsav鋏diviis" "XXIX Ratsav鋏diviis" "XXX Ratsav鋏diviis" 
 	}
 	motorized_brigade = {
-		"第XXXI摩托化师" "第XXXII摩托化师" "第XXXIII摩托化师" "第XXXIV摩托化师" "第XXXV摩托化师" "第XXXVI摩托化师" "第XXXVII摩托化师" "第XXXVIII摩托化师" "第XXXIX摩托化师" "第XL摩托化师" 
+		"XXXI Motoriseeritud diviis" "XXXII Motoriseeritud diviis" "XXXIII Motoriseeritud diviis" "XXXIV Motoriseeritud diviis" "XXXV Motoriseeritud diviis" "XXXVI Motoriseeritud diviis" "XXXVII Motoriseeritud diviis" "XXXVIII Motoriseeritud diviis" "XXXIX Motoriseeritud diviis" "XL Motoriseeritud diviis" 
 	}
 	mechanized_brigade = {
-		"第XLI机械化师" "第XLII机械化师" "第XLIII机械化师" "第XLIV机械化师" "第XLV机械化师" "第XLVI机械化师" "第XLVII机械化师" "第XLVIII机械化师" "第XLIX机械化师" "第L机械化师" 
+		"XLI Mehhaniseeritud diviis" "XLII Mehhaniseeritud diviis" "XLIII Mehhaniseeritud diviis" "XLIV Mehhaniseeritud diviis" "XLV Mehhaniseeritud diviis" "XLVI Mehhaniseeritud diviis" "XLVII Mehhaniseeritud diviis" "XLVIII Mehhaniseeritud diviis" "XLIX Mehhaniseeritud diviis" "L Mehhaniseeritud diviis" 
 	}
 	light_armor_brigade = {
-		"第LI装甲师" "第LII装甲师" "第LIII装甲师" "第LIV装甲师" "第LV装甲师" "第LVI装甲师" "第LVII装甲师" "第LVIII装甲师" "第LIX装甲师" "第LX装甲师" 
+		"LI Tankidiviis" "LII Tankidiviis" "LIII Tankidiviis" "LIV Tankidiviis" "LV Tankidiviis" "LVI Tankidiviis" "LVII Tankidiviis" "LVIII Tankidiviis" "LIX Tankidiviis" "LX Tankidiviis" 
 	}
 	armor_brigade = {
-		"第LI装甲师" "第LII装甲师" "第LIII装甲师" "第LIV装甲师" "第LV装甲师" "第LVI装甲师" "第LVII装甲师" "第LVIII装甲师" "第LIX装甲师" "第LX装甲师" 
+		"LI Tankidiviis" "LII Tankidiviis" "LIII Tankidiviis" "LIV Tankidiviis" "LV Tankidiviis" "LVI Tankidiviis" "LVII Tankidiviis" "LVIII Tankidiviis" "LIX Tankidiviis" "LX Tankidiviis" 
 	}
 	paratrooper_brigade = {
-		"第LXI空降师" "第LXII空降师" "第LXIII空降师" "第LXIV空降师" "第LXV空降师" "第LXVI空降师" "第LXVII空降师" "第LXVIII空降师" "第LXIX空降师" "第LXX空降师" 
+		"LXI 説udessantdiviis" "LXII 説udessantdiviis" "LXIII 説udessantdiviis" "LXIV 説udessantdiviis" "LXV 説udessantdiviis" "LXVI 説udessantdiviis" "LXVII 説udessantdiviis" "LXVIII 説udessantdiviis" "LXIX 説udessantdiviis" "LXX 説udessantdiviis" 
 	}
 	marine_brigade = {
-		"第LXXI海军陆战师" "第LXXII海军陆战师" "第LXXIII海军陆战师" "第LXXIV海军陆战师" "第LXXV海军陆战师" "第LXXVI海军陆战师" "第LXXVII海军陆战师" "第LXXVIII海军陆战师" "第LXXIX海军陆战师" "第LXXX海军陆战师" 
+		"LXXI Merejalav鋏diviis" "LXXII Merejalav鋏diviis" "LXXIII Merejalav鋏diviis" "LXXIV Merejalav鋏diviis" "LXXV Merejalav鋏diviis" "LXXVI Merejalav鋏diviis" "LXXVII Merejalav鋏diviis" "LXXVIII Merejalav鋏diviis" "LXXIX Merejalav鋏diviis" "LXXX Merejalav鋏diviis" 
 	}
 	bergsjaeger_brigade = {
-		"第LXXXI山地师" "第LXXXII山地师" "第LXXXIII山地师" "第LXXXIV山地师" "第LXXXV山地师" "第LXXXVI山地师" "第LXXXVII山地师" "第LXXXVIII山地师" "第LXXXIX山地师" "第XC山地师" 
+		"LXXXI M鋑idiviis" "LXXXII M鋑idiviis" "LXXXIII M鋑idiviis" "LXXXIV M鋑idiviis" "LXXXV M鋑idiviis" "LXXXVI M鋑idiviis" "LXXXVII M鋑idiviis" "LXXXVIII M鋑idiviis" "LXXXIX M鋑idiviis" "XC M鋑idiviis" 
 	}
 	garrison_brigade = {
-		"第I步兵师" "第II步兵师" "第III步兵师" "第IV步兵师" "第V步兵师" "第VI步兵师" "第VII步兵师" "第VIII步兵师" "第IX步兵师" "第X步兵师" "第XI步兵师" 
-		"第XII步兵师" "第XIII步兵师" "第XIV步兵师" "第XV步兵师" "第XVI步兵师" "第XVII步兵师" "第XVIII步兵师" "第XIX步兵师" "第XX步兵师" 
+		"I Jalav鋏diviis" "II Jalav鋏diviis" "III Jalav鋏diviis" "IV Jalav鋏diviis" "V Jalav鋏diviis" "VI Jalav鋏diviis" "VII Jalav鋏diviis" "VIII Jalav鋏diviis" "IX Jalav鋏diviis" "X Jalav鋏diviis" "XI Jalav鋏diviis" 
+		"XII Jalav鋏diviis" "XIII Jalav鋏diviis" "XIV Jalav鋏diviis" "XV Jalav鋏diviis" "XVI Jalav鋏diviis" "XVII Jalav鋏diviis" "XVIII Jalav鋏diviis" "XIX Jalav鋏diviis" "XX Jalav鋏diviis" 
 	}
 	hq_brigade = {
-		"总指挥部" "爱沙尼亚第I集团军指挥部" "爱沙尼亚第II集团军指挥部" "爱沙尼亚第III集团军指挥部" "爱沙尼亚第IV集团军指挥部" "爱沙尼亚第V集团军指挥部" "爱沙尼亚第VI集团军指挥部" "爱沙尼亚第VII集团军指挥部" 
+		"P滗esikunta" "I Eesti Armeija" "II Eesti Armeija" "III Eesti Armeija" "IV Eesti Armeija" "V Eesti Armeija" "VI Eesti Armeija" "VII Eesti Armeija" 
 	}
 	militia_brigade = {
-		"XCI民兵师" "第XCII民兵师" "第XCIII民兵师" "第XCIV民兵师" "第XCV民兵师" "第XCVI民兵师" "第XCVII民兵师" "第XCVIII民兵师" "第XCIX民兵师" "第C民兵师" "第CI民兵师" 
-		"CII民兵师" "第CIII民兵师" "第CIV民兵师" "第CV民兵师" 
+		"XCI Miilitsadiviis" "XCII Miilitsadiviis" "XCIII Miilitsadiviis" "XCIV Miilitsadiviis" "XCV Miilitsadiviis" "XCVI Miilitsadiviis" "XCVII Miilitsadiviis" "XCVIII Miilitsadiviis" "XCIX Miilitsadiviis" "C Miilitsadiviis" "CI Miilitsadiviis" 
+		"CII Miilitsadiviis" "CIII Miilitsadiviis" "CIV Miilitsadiviis" "CV Miilitsadiviis" 
 	}
 	multi_role = {
-		"第1驱逐大队" "第2驱逐大队" "第3驱逐大队" "第4驱逐大队" "第5驱逐大队" "第6驱逐大队" "第7驱逐大队" "第8驱逐大队" "第9驱逐大队" "第10驱逐大队" 
+		"1. H鋠itajate grupp" "2. H鋠itajate grupp" "3. H鋠itajate grupp" "4. H鋠itajate grupp" "5. H鋠itajate grupp" "6. H鋠itajate grupp" "7. H鋠itajate grupp" "8. H鋠itajate grupp" "9. H鋠itajate grupp" "10. H鋠itajate grupp" 
 	}
 	strategic_bomber = {
-		"第1战略轰炸大队" "第2战略轰炸大队" "第3战略轰炸大队" "第4战略轰炸大队" "第5战略轰炸大队" "第6战略轰炸大队" "第7战略轰炸大队" "第8战略轰炸大队" "第9战略轰炸大队" "第10战略轰炸大队" 
+		"1. Strateegiliste pommitajate grupp" "2. Strateegiliste pommitajate grupp" "3. Strateegiliste pommitajate grupp" "4. Strateegiliste pommitajate grupp" "5. Strateegiliste pommitajate grupp" "6. Strateegiliste pommitajate grupp" "7. Strateegiliste pommitajate grupp" "8. Strateegiliste pommitajate grupp" "9. Strateegiliste pommitajate grupp" "10. Strateegiliste pommitajate grupp" 
 	}
 	tactical_bomber = {
-		"第1战术轰炸大队" "第2战术轰炸大队" "第3战术轰炸大队" "第4战术轰炸大队" "第5战术轰炸大队" "第6战术轰炸大队" "第7战术轰炸大队" "第8战术轰炸大队" "第9战术轰炸大队" "第10战术轰炸大队" 
+		"1. Taktikaliste pommitajate grupp" "2. Taktikaliste pommitajate grupp" "3. Taktikaliste pommitajate grupp" "4. Taktikaliste pommitajate grupp" "5. Taktikaliste pommitajate grupp" "6. Taktikaliste pommitajate grupp" "7. Taktikaliste pommitajate grupp" "8. Taktikaliste pommitajate grupp" "9. Taktikaliste pommitajate grupp" "10. Taktikaliste pommitajate grupp" 
 	}
 	naval_bomber = {
-		"第1鱼雷大队" "第2鱼雷大队" "第3鱼雷大队" "第4鱼雷大队" "第5鱼雷大队" "第6鱼雷大队" "第7鱼雷大队" "第8鱼雷大队" "第9鱼雷大队" "第10鱼雷大队" 
+		"1. Torpeedolennukite grupp" "2. Torpeedolennukite grupp" "3. Torpeedolennukite grupp" "4. Torpeedolennukite grupp" "5. Torpeedolennukite grupp" "6. Torpeedolennukite grupp" "7. Torpeedolennukite grupp" "8. Torpeedolennukite grupp" "9. Torpeedolennukite grupp" "10. Torpeedolennukite grupp" 
 	}
 	cas = {
-		"第1俯冲轰炸大队" "第2俯冲轰炸大队" "第3俯冲轰炸大队" "第4俯冲轰炸大队" "第5俯冲轰炸大队" "第6俯冲轰炸大队" "第7俯冲轰炸大队" "第8俯冲轰炸大队" "第9.俯冲轰炸大队" "第10.俯冲轰炸大队" 
+		"1 S鲻stpommitajate grupp" "2 S鲻stpommitajate grupp" "3 S鲻stpommitajate grupp" "4 S鲻stpommitajate grupp" "5 S鲻stpommitajate grupp" "6 S鲻stpommitajate grupp" "7 S鲻stpommitajate grupp" "8 S鲻stpommitajate grupp" "9. S鲻stpommitajate grupp" "10. S鲻stpommitajate grupp" 
 	}
 	transport_plane = {
-		"第1空军大队" "第2空军大队" "第3空军大队" "第4空军大队" "第5空军大队" "第6空军大队" "第7空军大队" "第8空军大队" "第9空军大队" "第10空军大队" 
+		"1st 説utranspordi grupp" "2nd 説utranspordi grupp" "3rd 説utranspordi grupp" "4th 説utranspordi grupp" "5th 説utranspordi grupp" "6th 説utranspordi grupp" "7th 説utranspordi grupp" "8th 説utranspordi grupp" "9th 説utranspordi grupp" "10th 説utranspordi grupp" 
 	}
 	battleship = {
-		"EML塔林号" "EML瓦尔加号" "EML塔尔图号" "EML穆斯特韦号" "EML哈普萨卢号" "EML拉普拉号" 
+		"EML Tallinn" "EML Valga" "EML Tartu" "EML Mustvee" "EML Haapsalu" "EML Rapla" 
 	}
 	light_cruiser = {
-		"EML穆胡号" "EML希乌马号" "EML萨雷马号" "EML阿布鲁卡号" 
+		"EML Muhu" "EML Hiiumaa" "EML Saaremaa" "EML Abruka" 
 	}
 	heavy_cruiser = {
-		"EML塔林号" "EML瓦尔加号" "EML塔尔图号" "EML穆斯特韦号" "EML哈普萨卢号" "EML拉普拉号" "EML帕尔迪斯基号" "EML基努号" "EML沃尔姆西号" 
+		"EML Tallinn" "EML Valga" "EML Tartu" "EML Mustvee" "EML Haapsalu" "EML Rapla" "EML Paldiski" "EML Kihnu" "EML Vormsi" 
 	}
 	battlecruiser = {
-		"EML帕尔迪斯基号" "EML穆胡号" "EML希乌马号" "EML萨雷马号" "EML阿布鲁卡号" "EML基努号" "EML沃尔姆西号" 
+		"EML Paldiski" "EML Muhu" "EML Hiiumaa" "EML Saaremaa" "EML Abruka" "EML Kihnu" "EML Vormsi" 
 	}
 	destroyer = {
-		"第1鱼雷艇编队" "第2鱼雷艇编队" "第3鱼雷艇编队" "第4鱼雷艇编队" "第5鱼雷艇编队" "第6鱼雷艇编队" "第7鱼雷艇编队" "第8鱼雷艇编队" "第9鱼雷艇编队" "第10鱼雷艇编队" 
+		"1. Torpeedopaatide flotill" "2. Torpeedopaatide flotill" "3. Torpeedopaatide flotill" "4. Torpeedopaatide flotill" "5. Torpeedopaatide flotill" "6. Torpeedopaatide flotill" "7. Torpeedopaatide flotill" "8. Torpeedopaatide flotill" "9. Torpeedopaatide flotill" "10. Torpeedopaatide flotill" 
 	}
 	carrier = {
-		"EML塔林号" "EML瓦尔加号" "EML塔尔图号" "EML穆斯特韦号" "EML哈普萨卢号" "EML拉普拉号" "EML帕尔迪斯基号" "EML基努号" "EML沃尔姆西号" 
+		"EML Tallinn" "EML Valga" "EML Tartu" "EML Muhu" "EML Hiiumaa" "EML Saaremaa" "EML Abruka" "EML Kihnu" "EML Vormsi" 
 	}
 	escort_carrier = {
-		"EML苏列夫号" "EML万博拉号" "EML瓦因德罗号" "EML奥列夫号" 
+		"EML Sulev" "EML Wambola" "EML Vaindlo" "EML Olev" 
 	}
 	submarine = {
-		"第1潜艇编队" "第2潜艇编队" "第3潜艇编队" "第4潜艇编队" "第5潜艇编队" "第6潜艇编队" "第7潜艇编队" "第8潜艇编队" "第9潜艇编队" "第10潜艇编队" 
+		"1. Allveelaevade flotill" "2. Allveelaevade flotill" "3. Allveelaevade flotill" "4. Allveelaevade flotill" "5. Allveelaevade flotill" "6. Allveelaevade flotill" "7. Allveelaevade flotill" "8. Allveelaevade flotill" "9. Allveelaevade flotill" "10. Allveelaevade flotill" 
 	}
 	transport_ship = {
-		"第1运输船编队" "第2运输船编队" "第3运输船编队" "第4运输船编队" "第5运输船编队" "第6运输船编队" "第7运输船编队" "第8运输船编队" "第9运输船编队" "第10运输船编队" 
+		"1. Transpordilaevade flotill" "2. Transpordilaevade flotill" "3. Transpordilaevade flotill" "4. Transpordilaevade flotill" "5. Transpordilaevade flotill" "6. Transpordilaevade flotill" "7. Transpordilaevade flotill" "8. Transpordilaevade flotill" "9. Transpordilaevade flotill" "10. Transpordilaevade flotill" 
 	}
 
 }
@@ -114,7 +129,7 @@ unit_names = {
 
 ministers = {
 	26001 = {
-		name = "康斯坦丁·佩茨"
+		name = "Konstantin P鋞s"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M26001
@@ -124,7 +139,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26003 = {
-		name = "尤利乌斯·塞利亚马"
+		name = "Julius Seljamaa"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M26003
@@ -133,7 +148,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26004 = {
-		name = "卡尔·泽尔特"
+		name = "Karl Selter"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M26004
@@ -142,7 +157,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26005 = {
-		name = "卡雷尔·埃恩帕鲁"
+		name = "Kaarel Eenpalu"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M26005
@@ -152,7 +167,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26007 = {
-		name = "尼古拉·雷克"
+		name = "Nikolai Reek"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M26007
@@ -160,7 +175,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26008 = {
-		name = "约翰·莱多纳"
+		name = "Johan Laidoner"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M26008
@@ -168,15 +183,15 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26009 = {
-		name = "沃尔德马尔·梅雷"
+		name = "Voldemar Mere"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M26009
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1936.1.1
 	}
 	26010 = {
-		name = "理查德·通贝格"
+		name = "Richard Tomberg"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M26010
@@ -184,7 +199,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26031 = {
-		name = "奥古斯特·雷伊"
+		name = "August Rei"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M26031
@@ -194,18 +209,17 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26032 = {
-		name = "尤里·乌卢奥茨"
+		name = "J黵i Uluots"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M26032
 		head_of_state = die_hard_reformer
 		head_of_government = smiling_oilman
 		minister_of_intelligence = industrial_specialist
-		head_of_government = smiling_oilman
 		start_date = 1940.1.1
 	}
 	26034 = {
-		name = "亚尔马·梅"
+		name = "Hjalmar M鋏"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M26011
@@ -215,7 +229,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26035 = {
-		name = "卡尔·西吉斯蒙德·利茨曼"
+		name = "Karl Sigismund Litzmann"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M26035
@@ -224,7 +238,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	26036 = {
-		name = "约翰内斯·瓦列斯-巴巴鲁斯"
+		name = "Johannes Vares-Barbaruse"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M26021
@@ -235,7 +249,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26038 = {
-		name = "奥托·蒂夫"
+		name = "Otto Tief"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M26038
@@ -244,7 +258,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	26039 = {
-		name = "卡雷尔·利达克"
+		name = "Kaarel Liidak"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M26039
@@ -253,7 +267,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	26044 = {
-		name = "约翰内斯·劳里斯金"
+		name = "Johannes Lauristin"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M26044
@@ -262,7 +276,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	26045 = {
-		name = "奥斯卡·谢普雷"
+		name = "Oskar Sepre"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M26044
@@ -271,7 +285,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	26046 = {
-		name = "阿诺德·魏默"
+		name = "Arnold Veimer"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M26046
@@ -280,7 +294,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	26048 = {
-		name = "安茨·皮普"
+		name = "Ants Piip"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M26048
@@ -288,7 +302,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	26050 = {
-		name = "弗里德里克·卡尔·阿克尔"
+		name = "Friedrich Karl Akel"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M26050
@@ -296,7 +310,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26054 = {
-		name = "尼戈尔·安德烈森"
+		name = "Nigol Andresen"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M26023
@@ -304,7 +318,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	26055 = {
-		name = "汉斯·克鲁斯"
+		name = "Hans Kruus"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M26055
@@ -312,7 +326,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	26056 = {
-		name = "利奥·泽普"
+		name = "Leo Sepp"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M26056
@@ -321,7 +335,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26057 = {
-		name = "胡戈·帕特尔波伊格"
+		name = "Hugo P鋜telpoeg"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M26057
@@ -329,7 +343,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	26061 = {
-		name = "阿尔弗雷德·芬特"
+		name = "Alfred Vendt"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M26014
@@ -338,7 +352,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26062 = {
-		name = "朱安·纳尔马-尼赫蒂格"
+		name = "Juhan Narma-Nihtig"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M26024
@@ -346,7 +360,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26063 = {
-		name = "保罗·基尔多"
+		name = "Paul Keerdo"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M26063
@@ -354,7 +368,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	26064 = {
-		name = "尼古劳斯·皮兰科尔"
+		name = "Nikolaus Pilankor"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M26064
@@ -362,7 +376,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	26065 = {
-		name = "理查德·费尔马"
+		name = "Richard Veermaa"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M26065
@@ -371,7 +385,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26066 = {
-		name = "奥古斯特·于里马"
+		name = "August J黵ima"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M26066
@@ -379,7 +393,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	26067 = {
-		name = "约翰内斯·克勒斯门特"
+		name = "Johannes Klesment"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M26067
@@ -387,7 +401,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	26070 = {
-		name = "奥斯卡·安杰勒斯"
+		name = "Oskar Angelus"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M26015
@@ -396,7 +410,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26072 = {
-		name = "安德烈·穆罗"
+		name = "Andrei Murro"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M26072
@@ -404,7 +418,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26073 = {
-		name = "马克西姆·温特"
+		name = "Maksim Unt"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M26025
@@ -412,7 +426,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	26074 = {
-		name = "鲍里斯·库姆"
+		name = "Boris Kumm"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M26074
@@ -421,7 +435,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	26075 = {
-		name = "亚历山大·鲁塞夫"
+		name = "Aleksander Rusev"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M26075
@@ -429,7 +443,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	26083 = {
-		name = "亚历山大·雅克松"
+		name = "Alexander Jaakson"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M26083
@@ -437,7 +451,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26084 = {
-		name = "约翰·霍尔贝格"
+		name = "Johan Holberg"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M26084
@@ -445,7 +459,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	26086 = {
-		name = "约翰内斯·索德拉"
+		name = "Johannes Soodla"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M26017
@@ -453,7 +467,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26087 = {
-		name = "尼古拉·G·卡罗塔姆"
+		name = "Nikolay G. Karotamm"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M26027
@@ -462,7 +476,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26091 = {
-		name = "朱安·图林"
+		name = "Juhan Tuuling"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M26018
@@ -471,7 +485,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26092 = {
-		name = "阿尔方斯·列巴涅"
+		name = "Alfons Rebane"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M26092
@@ -479,7 +493,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	26094 = {
-		name = "亚历克斯·尼尔克"
+		name = "Alex Nirk"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M26094
@@ -487,13 +501,131 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	26101 = {
-		name = "奥斯卡·埃里克松"
+		name = "Oskar Eiriksson"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M26030
 		chief_of_air = carpet_bombing_doctrine
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1936.1.1
 	}
+	# Generic dummy ministers
+	95289 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		chief_of_navy = mostly_harmless_naval
+		start_date = 1936.1.1
+	}
+	95290 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95291 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95292 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_government = mostly_harmless
+		start_date = 1936.1.1
+	}
+	95293 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95294 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95295 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95296 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}	
 }
 

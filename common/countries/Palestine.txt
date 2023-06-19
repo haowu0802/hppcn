@@ -1,5 +1,7 @@
-color = { 179  207  219 }
+color = { 219  209  192 }
 graphical_culture = Generic
+
+
 
 default_templates = {
 	generic_infantry = {
@@ -17,108 +19,132 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
+	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
 	}
 }
 
 unit_names = {
 	infantry_brigade = {
-		"第1步兵师" "第2步兵师" "第3步兵师" "第4步兵师" "第5步兵师" "第6步兵师" "第7步兵师" "第8步兵师" "第9步兵师" "第10步兵师" "第12步兵师" 
-		"第13步兵师" "第14步兵师" "第15步兵师" "第16步兵师" "第17步兵师" "第18步兵师" "第19步兵师" "第20步兵师" 
+		"al-Mushati al-1i" "al-Mushati al-2i" "al-Mushati al-3i" "al-Mushati al-4i" "al-Mushati al-5i" "al-Mushati al-6i" "al-Mushati al-7i" "al-Mushati al-8i" "al-Mushati al-9i" "al-Mushati al-10i" "al-Mushati al-12r" 
+		"al-Mushati al-13r" "al-Mushati al-14r" "al-Mushati al-15r" "al-Mushati al-16r" "al-Mushati al-17r" "al-Mushati al-18r" "al-Mushati al-19r" "al-Mushati al-20r" 
 	}
 	cavalry_brigade = {
-		"第1骑兵师" "第2骑兵师" "第3骑兵师" "第4骑兵师" "第5骑兵师" "第6骑兵师" "第7骑兵师" "第8骑兵师" "第9骑兵师" "第10骑兵师" "第11骑兵师" 
-		"第12骑兵师" "第13骑兵师" "第14骑兵师" "第15骑兵师" 
+		"Sipahis al-1i" "Sipahis al-2i" "Sipahis al-3i" "Sipahis al-4i" "Sipahis al-5i" "Sipahis al-6i" "Sipahis al-7i" "Sipahis al-8i" "Sipahis al-9i" "Sipahis al-10i" "Sipahis al-11r" 
+		"Sipahis al-12r" "Sipahis al-13r" "Sipahis al-14r" "Sipahis al-15r" 
 	}
 	motorized_brigade = {
-		"第1摩步师" "第2摩步师" "第3摩步师" "第4摩步师" "第5摩步师" "第6摩步师" "第7摩步师" "第8摩步师" "第9摩步师" "第10摩步师" "第12摩步师" 
-		"第13摩步师" "第14摩步师" "第15摩步师" "第16摩步师" "第17摩步师" "第18摩步师" "第19摩步师" "第20摩步师" 
+		"al-Mushati al-1i" "al-Mushati al-2i" "al-Mushati al-3i" "al-Mushati al-4i" "al-Mushati al-5i" "al-Mushati al-6i" "al-Mushati al-7i" "al-Mushati al-8i" "al-Mushati al-9i" "al-Mushati al-10i" "al-Mushati al-12r" 
+		"al-Mushati al-13r" "al-Mushati al-14r" "al-Mushati al-15r" "al-Mushati al-16r" "al-Mushati al-17r" "al-Mushati al-18r" "al-Mushati al-19r" "al-Mushati al-20r" 
 	}
 	mechanized_brigade = {
-		"第1机步师" "第2机步师" "第3机步师" "第4机步师" "第5机步师" "第6机步师" "第7机步师" "第8机步师" "第9机步师" "第10机步师" "第12机步师" 
-		"第13机步师" "第14机步师" "第15机步师" "第16机步师" "第17机步师" "第18机步师" "第19机步师" "第20机步师" 
+		"al-Mushati al-1i" "al-Mushati al-2i" "al-Mushati al-3i" "al-Mushati al-4i" "al-Mushati al-5i" "al-Mushati al-6i" "al-Mushati al-7i" "al-Mushati al-8i" "al-Mushati al-9i" "al-Mushati al-10i" "al-Mushati al-12r" 
+		"al-Mushati al-13r" "al-Mushati al-14r" "al-Mushati al-15r" "al-Mushati al-16r" "al-Mushati al-17r" "al-Mushati al-18r" "al-Mushati al-19r" "al-Mushati al-20r" 
 	}
 	light_armor_brigade = {
-		"第1轻装甲师" "第2轻装甲师" "第3轻装甲师" "第4轻装甲师" "第5轻装甲师" "第6轻装甲师" "第7轻装甲师" "第8轻装甲师" "第9轻装甲师" "第10轻装甲师" 
+		"Sipahis al-1i" "Sipahis al-2i" "Sipahis al-3i" "Sipahis al-4i" "Sipahis al-5i" "Sipahis al-6i" "Sipahis al-7i" "Sipahis al-8i" "Sipahis al-9i" "Sipahis al-10i" 
 	}
 	armor_brigade = {
-		"第1装甲师" "第2装甲师" "第3装甲师" "第4装甲师" "第5装甲师" "第6装甲师" "第7装甲师" "第8装甲师" "第9装甲师" "第10装甲师" 
+		"Sipahis al-1i" "Sipahis al-2i" "Sipahis al-3i" "Sipahis al-4i" "Sipahis al-5i" "Sipahis al-6i" "Sipahis al-7i" "Sipahis al-8i" "Sipahis al-9i" "Sipahis al-10i" 
 	}
 	paratrooper_brigade = {
-		"第20空降师" "第21空降师" "第22空降师" "第23空降师" "第24空降师" "第25空降师" "第26空降师" "第27空降师" "第28空降师" "第29空降师" "第30空降师" 
+		"al-Mushati al-20r" "al-Mushati al-21r" "al-Mushati al-22r" "al-Mushati al-23r" "al-Mushati al-24r" "al-Mushati al-25r" "al-Mushati al-26r" "al-Mushati al-27r" "al-Mushati al-28r" "al-Mushati al-29r" "al-Mushati al-30r" 
 			}
 	marine_brigade = {
-		"第20海军陆战师" "第21海军陆战师" "第22海军陆战师" "第23海军陆战师" "第24海军陆战师" "第25海军陆战师" "第26海军陆战师" "第27海军陆战师" "第28海军陆战师" "第29海军陆战师" "第30海军陆战师" 
+		"al-Mushati al-20r" "al-Mushati al-21r" "al-Mushati al-22r" "al-Mushati al-23r" "al-Mushati al-24r" "al-Mushati al-25r" "al-Mushati al-26r" "al-Mushati al-27r" "al-Mushati al-28r" "al-Mushati al-29r" "al-Mushati al-30r" 
 			}
 	bergsjaeger_brigade = {
-		"第20山地师" "第21山地师" "第22山地师" "第23山地师" "第24山地师" "第25山地师" "第26山地师" "第27山地师" "第28山地师" "第29山地师" "第30山地师" 
+		"al-Mushati al-20r" "al-Mushati al-21r" "al-Mushati al-22r" "al-Mushati al-23r" "al-Mushati al-24r" "al-Mushati al-25r" "al-Mushati al-26r" "al-Mushati al-27r" "al-Mushati al-28r" "al-Mushati al-29r" "al-Mushati al-30r" 
 			}
 	garrison_brigade = {
-		"第1卫戍师" "第2卫戍师" "第3卫戍师" "第4卫戍师" "第5卫戍师" "第6卫戍师" "第7卫戍师" "第8卫戍师" "第9卫戍师" "第10卫戍师" "第12卫戍师" 
-		"第13卫戍师" "第14卫戍师" "第15卫戍师" "第16卫戍师" "第17卫戍师" "第18卫戍师" "第19卫戍师" "第20卫戍师" 
+		"al-Mushati al-1i" "al-Mushati al-2i" "al-Mushati al-3i" "al-Mushati al-4i" "al-Mushati al-5i" "al-Mushati al-6i" "al-Mushati al-7i" "al-Mushati al-8i" "al-Mushati al-9i" "al-Mushati al-10i" "al-Mushati al-12r" 
+		"al-Mushati al-13r" "al-Mushati al-14r" "al-Mushati al-15r" "al-Mushati al-16r" "al-Mushati al-17r" "al-Mushati al-18r" "al-Mushati al-19r" "al-Mushati al-20r" 
 	}
 	hq_brigade = {
-		"巴勒斯坦第1集团军" "巴勒斯坦第2集团军" "巴勒斯坦第3集团军" "巴勒斯坦第4集团军" "巴勒斯坦第5集团军" 
+		"1st Palestinian Army" "2nd Palestinian Army" "3rd Palestinian Army" "4th Palestinian Army" "5th Palestinian Army" 
 	}
 	militia_brigade = {
-		"第1民兵师" "第2民兵师" "第3民兵师" "第4民兵师" "第5民兵师" "第6民兵师" "第7民兵师" "第8民兵师" "第9民兵师" "第10民兵师" "第11民兵师" 
-		"第12民兵师" "第13民兵师" "第14民兵师" "第15民兵师" "第16民兵师" "第17民兵师" "第18民兵师" "第19民兵师" "第20民兵师" "第21民兵师" "第22民兵师" 
-		"第23民兵师" "第24民兵师" "第25民兵师" 
+		"al-Milishiya al-1i" "al-Milishiya al-2i" "al-Milishiya al-3i" "al-Milishiya al-4i" "al-Milishiya al-5i" "al-Milishiya al-6i" "al-Milishiya al-7i" "al-Milishiya al-8i" "al-Milishiya al-9i" "al-Milishiya al-10i" "al-Milishiya al-11r" 
+		"al-Milishiya al-12r" "al-Milishiya al-13r" "al-Milishiya al-14r" "al-Milishiya al-15r" "al-Milishiya al-16r" "al-Milishiya al-17r" "al-Milishiya al-18r" "al-Milishiya al-19r" "al-Milishiya al-20r" "al-Milishiya al-21r" "al-Milishiya al-22r" 
+		"al-Milishiya al-23r" "al-Milishiya al-24r" "al-Milishiya al-25r" 
 	}
 	multi_role = {
-		"第1战斗机联队" "第2战斗机联队" "第3战斗机联队" "第4战斗机联队" "第5战斗机联队" "第6战斗机联队" "第7战斗机联队" "第8战斗机联队" "第9战斗机联队" "第10战斗机联队" 
+		"1. PalAF Fighter Group" "2. PalAF Fighter Group" "3. PalAF Fighter Group" "4. PalAF Fighter Group" "5. PalAF Fighter Group" "6. PalAF Fighter Group" "7. PalAF Fighter Group" "8. PalAF Fighter Group" "9. PalAF Fighter Group" "10. PalAF Fighter Group" 
 	}
 	interceptor = {
-		"第1歼击机联队" "第2歼击机联队" "第3歼击机联队" "第4歼击机联队" "第5歼击机联队" "第6歼击机联队" "第7歼击机联队" "第8歼击机联队" "第9歼击机联队" "第10歼击机联队" "第1歼击机联队" 
-		"第2歼击机联队" "第3歼击机联队" "第4歼击机联队" "第5歼击机联队" "第6歼击机联队" "第7歼击机联队" "第8歼击机联队" "第9歼击机联队" "第10歼击机联队" 
+		"1. PalAF Fighter Group" "2. PalAF Fighter Group" "3. PalAF Fighter Group" "4. PalAF Fighter Group" "5. PalAF Fighter Group" "6. PalAF Fighter Group" "7. PalAF Fighter Group" "8. PalAF Fighter Group" "9. PalAF Fighter Group" "10. PalAF Fighter Group" "1. PalAF Fighter Group" 
+		"2. PalAF Fighter Group" "3. PalAF Fighter Group" "4. PalAF Fighter Group" "5. PalAF Fighter Group" "6. PalAF Fighter Group" "7. PalAF Fighter Group" "8. PalAF Fighter Group" "9. PalAF Fighter Group" "10. PalAF Fighter Group" 
+	}
+	jet_int = {
+		"1. PalAF Fighter Group" "2. PalAF Fighter Group" "3. PalAF Fighter Group" "4. PalAF Fighter Group" "5. PalAF Fighter Group" "6. PalAF Fighter Group" "7. PalAF Fighter Group" "8. PalAF Fighter Group" "9. PalAF Fighter Group" "10. PalAF Fighter Group" "1. PalAF Fighter Group" 
+		"2. PalAF Fighter Group" "3. PalAF Fighter Group" "4. PalAF Fighter Group" "5. PalAF Fighter Group" "6. PalAF Fighter Group" "7. PalAF Fighter Group" "8. PalAF Fighter Group" "9. PalAF Fighter Group" "10. PalAF Fighter Group" 
+	}
+	jet_mr = {
+		"1. PalAF Fighter Group" "2. PalAF Fighter Group" "3. PalAF Fighter Group" "4. PalAF Fighter Group" "5. PalAF Fighter Group" "6. PalAF Fighter Group" "7. PalAF Fighter Group" "8. PalAF Fighter Group" "9. PalAF Fighter Group" "10. PalAF Fighter Group" "1. PalAF Fighter Group" 
+		"2. PalAF Fighter Group" "3. PalAF Fighter Group" "4. PalAF Fighter Group" "5. PalAF Fighter Group" "6. PalAF Fighter Group" "7. PalAF Fighter Group" "8. PalAF Fighter Group" "9. PalAF Fighter Group" "10. PalAF Fighter Group" 
 	}
 	strategic_bomber = {
-		"第11战略轰炸联队" "第12战略轰炸联队" "第13战略轰炸联队" "第14战略轰炸联队" "第15战略轰炸联队" "第16战略轰炸联队" 
+		"11. PalAF Strategic Bomb Group" "12. PalAF Strategic Bomb Group" "13. PalAF Strategic Bomb Group" "14. PalAF Strategic Bomb Group" "15. PalAF Strategic Bomb Group" "16. PalAF Strategic Bomb Group" 
 	}
 	tactical_bomber = {
-		"第21战术轰炸联队" "第22战术轰炸联队" "第23战术轰炸联队" "第24战术轰炸联队" "第25战术轰炸联队" "第26战术轰炸联队" 
+		"21. PalAF Tactical Bomb Group" "22. PalAF Tactical Bomb Group" "23. PalAF Tactical Bomb Group" "24. PalAF Tactical Bomb Group" "25. PalAF Tactical Bomb Group" "26. PalAF Tactical Bomb Group" 
+	}
+	jet_bomber = {
+		"21. PalAF Tactical Bomb Group" "22. PalAF Tactical Bomb Group" "23. PalAF Tactical Bomb Group" "24. PalAF Tactical Bomb Group" "25. PalAF Tactical Bomb Group" "26. PalAF Tactical Bomb Group" 
 	}
 	naval_bomber = {
-		"第41海军轰炸联队" "第42海军轰炸联队" "第43海军轰炸联队" "第44海军轰炸联队" "第45海军轰炸联队" "第51鱼雷轰炸联队" "第52鱼雷轰炸联队" "第53鱼雷轰炸联队" "第54鱼雷轰炸联队" "第55鱼雷轰炸联队" "第56鱼雷轰炸联队" 
+		"41. PalAF Marine Bomb Group" "42. PalAF Marine Bomb Group" "43. PalAF Marine Bomb Group" "44. PalAF Marine Bomb Group" "45. PalAF Marine Bomb Group" "51. PalAF Torpedo Group" "52. PalAF Torpedo Group" "53. PalAF Torpedo Group" "54. PalAF Torpedo Group" "55. PalAF Torpedo Group" "56. PalAF Torpedo Group" 
 			}
 	cas = {
-		"第31俯冲轰炸联队" "第32俯冲轰炸联队" "第33俯冲轰炸联队" "第34俯冲轰炸联队" "第35俯冲轰炸联队" 
+		"31. PalAF Dive Bomb Group" "32. PalAF Dive Bomb Group" "33. PalAF Dive Bomb Group" "34. PalAF Dive Bomb Group" "35. PalAF Dive Bomb Group" 
 	}
 	transport_plane = {
-		"第61运输机联队" "第62运输机联队" "第63运输机联队" "第64运输机联队" 
+		"61. PalAF Airtransport" "62. PalAF Airtransport" "63. PalAF Airtransport" "64. PalAF Airtransport" 
 	}
 	battleship = {
-		"开罗号" "萨拉丁号" "穆罕穆德 阿里号" 
+		"al-Qahira" "Salah al-Din" "Mehemet Ali" 
 	}
 	light_cruiser = {
-		"萨法加号" "古尔代盖号" "陶菲克号" "马特鲁号" 
+		"Bur Safajah" "Al Ghardaqah" "Bur Tawfiq" "Marsa Matruh" 
 	}
 	heavy_cruiser = {
-		"萨法加号" "古尔代盖号" "陶菲克号" "马特鲁号" 
+		"Bur Safajah" "Al Ghardaqah" "Bur Tawfiq" "Marsa Matruh" 
 	}
 	battlecruiser = {
-		"萨法加号" "古尔代盖号" "陶菲克号" 
+		"Bur Safajah" "Al Ghardaqah" "Bur Tawfiq" 
 	}
 	destroyer = {
-		"拉马拉驱逐舰编队" "泰布克驱逐舰编队" "阿奴纳驱逐舰编队" "绿带省驱逐舰编队" "开罗驱逐舰编队" "奇巴驱逐舰编队" "阿瓦贾驱逐舰编队" "阿尔达汉驱逐舰编队" "胡夫驱逐舰编队" "乌姆拉驱逐舰编队" 
+		"Flotille Al Bi'ra" "Flotille Tabuk" "Flotille Aynunah" "Flotille Dal'at al Akhdar" "Flotille Al Qalibah" "Flotille Ziba" "Flotille Al Wajh" "Flotille Hanak" "Flotille Khuff" "Flotille Umm Lajj" 
 	}
 	carrier = {
-		"穆罕穆德 阿里号" "萨拉丁号" 
+		"Muhammad 'Ali" "Salah al-Din" 
 	}
 	submarine = {
-		"第1潜艇编队" "第2潜艇编队" "第3潜艇编队" "第4潜艇编队" "第5潜艇编队" "第6潜艇编队" "第7潜艇编队" "第8潜艇编队" "第9潜艇编队" "第10潜艇编队" 
+		"Ustul al-Ghawwasati al-1i" "Ustul al-Ghawwasati al-2i" "Ustul al-Ghawwasati al-3i" "Ustul al-Ghawwasati al-4i" "Ustul al-Ghawwasati al-5i" "Ustul al-Ghawwasati al-6i" "Ustul al-Ghawwasati al-7i" "Ustul al-Ghawwasati al-8i" "Ustul al-Ghawwasati al-9i" "Ustul al-Ghawwasati al-10i" 
 	}
 	transport_ship = {
-		"第1运输舰编队" "第2运输舰编队" "第3运输舰编队" "第4运输舰编队" "第5运输舰编队" "第6运输舰编队" "第7运输舰编队" "第8运输舰编队" "第9运输舰编队" "第10运输舰编队" 
+		"Ustul al-Hamli al-1i" "Ustul al-Hamli al-2i" "Ustul al-Hamli al-3i" "Ustul al-Hamli al-4i" "Ustul al-Hamli al-5i" "Ustul al-Hamli al-6i" "Ustul al-Hamli al-7i" "Ustul al-Hamli al-8i" "Ustul al-Hamli al-9i" "Ustul al-Hamli al-10i" 
 	}
 
 }
 
 ministers = {
 	557001 = {
-		name = "哈罗德·麦克迈克尔·爵士"
+		name = "Sir Harold McMichael"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M550005
@@ -126,7 +152,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557002 = {
-		name = "约翰·R·钱塞勒·爵士"
+		name = "Sir John R. Chancellor"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M557002
@@ -134,7 +160,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557003 = {
-		name = "纳齐夫·阿尔·哈立迪"
+		name = "Nazif al-Khalidi"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M557003
@@ -142,7 +168,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557004 = {
-		name = "乔治·胡姆西"
+		name = "George Humsi"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M557004
@@ -150,7 +176,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557005 = {
-		name = "穆萨·卡西姆·阿尔·侯赛尼"
+		name = "Musa Qassem al-Husseini"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M557005
@@ -158,7 +184,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557006 = {
-		name = "弗雷德里克·G.皮克"
+		name = "Frederic G.Peake"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M91008
@@ -166,7 +192,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557007 = {
-		name = "赫伯特·萨穆埃尔·爵士"
+		name = "Sir Herbert Samuel"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M557007
@@ -175,7 +201,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557008 = {
-		name = "G·H·C·斯平尔斯"
+		name = "G.H.C. Spinls"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = L320014
@@ -183,7 +209,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557009 = {
-		name = "F·B·图尔斯"
+		name = "F.B. Tours"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = L1396
@@ -191,7 +217,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557010 = {
-		name = "J·T·富尔哈德"
+		name = "J.T. Fullhard"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = L1441
@@ -199,7 +225,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557011 = {
-		name = "哈吉·阿明·阿尔·侯赛尼"
+		name = "Haj Amin al Husseini"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M557011
@@ -207,7 +233,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557013 = {
-		name = "法伊德·阿尔·阿拉米"
+		name = "Faid al-Alami"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M557013
@@ -215,7 +241,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557014 = {
-		name = "鲁希·阿尔·哈立迪"
+		name = "Ruhi al-Khalidi"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M557014
@@ -223,7 +249,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557015 = {
-		name = "优素福·帕夏·阿尔·哈立迪"
+		name = "Yussef Pasha al-Khalidi"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M557015
@@ -231,7 +257,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557016 = {
-		name = "赫伯特·普卢默·爵士"
+		name = "Sir Herbert Plumer"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M557016
@@ -240,7 +266,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557017 = {
-		name = "艾哈迈德·舒凯里"
+		name = "Ahmad Shukairy"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M557017
@@ -248,7 +274,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557018 = {
-		name = "哈吉·穆斯塔法·阿布希"
+		name = "Haj Mustafa Abboushi"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M557018
@@ -256,7 +282,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557019 = {
-		name = "拉吉德·纳沙斯比比"
+		name = "Ragheed Nashasbibi"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M557019
@@ -264,7 +290,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557020 = {
-		name = "西尔·格林菲尔德·沃科普·爵士"
+		name = "Sir Greenfell Wauchope"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M557020
@@ -273,7 +299,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557021 = {
-		name = "哈里·C·卢克"
+		name = "Harry C. Luke"
 		ideology = social_democrat
 		loyalty = 1.00
 		picture = M557021
@@ -281,7 +307,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557022 = {
-		name = "哈菲兹·帕夏·阿卜杜勒·哈迪"
+		name = "Hafiz Pasha Abdul Hadi"
 		ideology = left_wing_radical
 		loyalty = 1.00
 		picture = M557022
@@ -289,7 +315,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557023 = {
-		name = "阿尔弗雷德·罗赫"
+		name = "Alfred Roch"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M557023
@@ -297,7 +323,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557024 = {
-		name = "阿卜杜拉·加法尔·达拉赫"
+		name = "Abdullah Jaffer Dalal"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M557024
@@ -306,7 +332,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557025 = {
-		name = "鲁希·阿卜杜勒·哈迪"
+		name = "Ruhi Abdul Hadi"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M557025
@@ -314,7 +340,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557026 = {
-		name = "谢里夫·纳西尔·阿尔·卡格利"
+		name = "Sharif Nasir al-Qagli"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M557026
@@ -323,7 +349,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557027 = {
-		name = "奥尼·阿卜杜勒·哈迪i"
+		name = "Awni Abdul Hadi"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M557027
@@ -331,7 +357,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557028 = {
-		name = "乔治·安蒂诺斯"
+		name = "George Antinous"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M557028
@@ -339,7 +365,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557029 = {
-		name = "尼古拉斯·阿布多"
+		name = "Nicolas Abdo"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M557029
@@ -347,7 +373,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557030 = {
-		name = "德克尔·舒凯里"
+		name = "Dekel Shukri"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M557030
@@ -355,7 +381,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557031 = {
-		name = "阿布·索·奥德·博士"
+		name = "Dr. Abu So'oud"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M557031
@@ -363,7 +389,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557032 = {
-		name = "马苏德·阿尔·真纳"
+		name = "Massoud al-Jinnah"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M557032
@@ -371,7 +397,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557033 = {
-		name = "法鲁克·海达尔"
+		name = "Faruk Haydar"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M557033
@@ -380,7 +406,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557034 = {
-		name = "马吉德·阿布德·埃尔·哈克"
+		name = "Majid Abd-el-Haqq"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M557034
@@ -388,7 +414,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557035 = {
-		name = "阿里·杰马尔·帕夏"
+		name = "Ali Djemal Pasha"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M557035
@@ -397,7 +423,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557037 = {
-		name = "阿兰·G·库宁汉姆"
+		name = "Alan G. Cunningham"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = M557037
@@ -405,7 +431,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	557039 = {
-		name = "加弗拉·帕夏"
+		name = "Jaafra Pasha"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M557039
@@ -413,7 +439,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557040 = {
-		name = "阿利·阿尔·穆塔利布"
+		name = "Aly al-Muttalib"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M557040
@@ -421,7 +447,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557042 = {
-		name = "约翰·戈特·勋爵"
+		name = "Lord John Gort"
 		ideology = market_liberal
 		loyalty = 0.75
 		picture = L1138
@@ -429,7 +455,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	557043 = {
-		name = "利瓦·阿尔·莫瓦维"
+		name = "Liwa al-Mawawiyi"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M557043
@@ -437,7 +463,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557046 = {
-		name = "罗德尼·塔顿·赛克斯"
+		name = "Rodney Tatton-Sykes"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = L300023
@@ -445,15 +471,15 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557047 = {
-		name = "阿尔弗雷德·霍华德"
+		name = "Alfred Howard"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M557047
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1936.1.1
 	}
 	557048 = {
-		name = "艾哈迈德·瓦西·帕夏"
+		name = "Ahmad Wasi Pasha"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M557048
@@ -461,7 +487,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557049 = {
-		name = "穆罕默德·阿兹米·帕夏"
+		name = "Mohammed Azmy Pasha"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M512096
@@ -469,7 +495,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557051 = {
-		name = "詹姆斯·罗杰斯"
+		name = "James Rogers"
 		ideology = social_democrat
 		loyalty = 0.75
 		picture = M557051
@@ -477,11 +503,106 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	557052 = {
-		name = "穆罕默德·阿尔·塔伊夫"
+		name = "Muhammed al-Taif"
 		ideology = left_wing_radical
 		loyalty = 0.75
 		picture = M557052
 		chief_of_air = naval_aviation_doctrine
 		start_date = 1936.1.1
 	}
+	# Generic dummy ministers
+	95736 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95737 = {
+		name = "Nameless Clerk"
+		ideology = paternal_autocrat
+		loyalty = 1.0
+		picture = MPaternalAutocrat
+		head_of_state = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		start_date = 1936.1.1
+	}
+	95738 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95739 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95740 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95741 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}	
 }

@@ -1,10 +1,27 @@
-division = {
-	name = "¶ò¹Ï¶à¶ûÂ½¾ü"
+theatre = {
+	name = "Comando Militar del Ecuador"
 	location = 9974
-	is_reserve = yes
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
+	regiment = { type = hq_brigade name = "Quito HQ" historical_model = 0 }
+	division = {
+		name = "Ejercito de Ecuador"
+		location = 9974
+		is_reserve = yes
+		regiment = { type = bergsjaeger_brigade name = "1. Regimiento de Infantería de Montana" experience = 0 historical_model = 3 }
+		regiment = { type = bergsjaeger_brigade name = "2. Regimiento de Infantería de Montana" experience = 0 historical_model = 3 }
+		regiment = { type = bergsjaeger_brigade name = "3. Regimiento de Infantería de Montana" experience = 0 historical_model = 3 }
+	}
 }
-
-
+convoy_construction=
+{
+	country = ECU
+	id=
+	{
+		id=15624
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

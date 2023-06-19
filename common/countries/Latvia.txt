@@ -1,6 +1,8 @@
 color = { 112  90  87 }
 graphical_culture = Generic
 
+
+
 default_templates = {
 	generic_infantry = {
 		infantry_brigade
@@ -17,112 +19,120 @@ default_templates = {
 		motorized_brigade
 		motorized_brigade
 	}
+	generic_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade
+	}	
 	generic_cavalry = {
 		cavalry_brigade
 		cavalry_brigade
+	}
+	generic_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}
+	generic_marine = {
+		marine_brigade
+		marine_brigade
 	}
 }
 
 unit_names = {
 	infantry_brigade = {
-		"¿â¶ûÀ¼Ê¦" "À­ÌØ¼Ó¶ûÊ¦" "ÉªÃ×ÀûÑÇÊ¦" "Î¬µÂÔóÄ·Ê¦" "µÚ1²½±øÊ¦" "µÚ2²½±øÊ¦" "µÚ3²½±øÊ¦" "µÚ4²½±øÊ¦" "µÚ5²½±øÊ¦" "µÚ6²½±øÊ¦" "µÚ7²½±øÊ¦" 
-		"µÚ8²½±øÊ¦" "µÚ9²½±øÊ¦" "µÚ10²½±øÊ¦" "µÚ11²½±øÊ¦" "µÚ12²½±øÊ¦" "µÚ13²½±øÊ¦" "µÚ14²½±øÊ¦" "µÚ16²½±øÊ¦" "µÚ17²½±øÊ¦" "µÚ19²½±øÊ¦"  
+		"Kurzemes divizija" "Latgales divizija" "Zemgales divizija" "Vidzemes divizija" "1. Kajnieku divizija" "2. Kajnieku divizija" "3. Kajnieku divizija" "4. Kajnieku divizija" "5. Kajnieku divizija" "6. Kajnieku divizija" "7. Kajnieku divizija" 
+		"8. Kajnieku divizija" "9. Kajnieku divizija" "10. Kajnieku divizija" "11. Kajnieku divizija" "12. Kajnieku divizija" "13. Kajnieku divizija" "14. Kajnieku divizija" "16. Kajnieku divizija" "17. Kajnieku divizija" "19. Kajnieku divizija" "1. Transportlidmasinu grupa" 
+		"2. Transportlidmasinu grupa" "3. Transportlidmasinu grupa" "4. Transportlidmasinu grupa" "5. Transportlidmasinu grupa" 
 	}
 	cavalry_brigade = {
-		"µÚ3Æï±øÊ¦" "µÚ5Æï±øÊ¦" "µÚ6Æï±øÊ¦" "µÚ8Æï±øÊ¦" "µÚ9Æï±øÊ¦" "µÚ14Æï±øÊ¦" "µÚ24Æï±øÊ¦" "µÚ32Æï±øÊ¦" "µÚ36Æï±øÊ¦" "µÚ37Æï±øÊ¦" 
+		"3. Kavalerijas divizija" "5. Kavalerijas divizija" "6. Kavalerijas divizija" "8. Kavalerijas divizija" "9. Kavalerijas divizija" "14. Kavalerijas divizija" "24. Kavalerijas divizija" "32. Kavalerijas divizija" "36. Kavalerijas divizija" "37. Kavalerijas divizija" 
 	}
 	motorized_brigade = {
-		"µÚ7Ä¦²½Ê¦" "µÚ29Ä¦²½Ê¦" "µÚ36Ä¦²½Ê¦" "µÚ57Ä¦²½Ê¦" "µÚ81Ä¦²½Ê¦" "µÚ84Ä¦²½Ê¦" "µÚ163Ä¦²½Ê¦" "µÚ198Ä¦²½Ê¦" "µÚ202Ä¦²½Ê¦" "µÚ204Ä¦²½Ê¦" "µÚ205Ä¦²½Ê¦" 
-		"µÚ208Ä¦²½Ê¦" "µÚ209Ä¦²½Ê¦" "µÚ210Ä¦²½Ê¦" "µÚ212Ä¦²½Ê¦" "µÚ213Ä¦²½Ê¦" "µÚ215Ä¦²½Ê¦" "µÚ216Ä¦²½Ê¦" "µÚ240Ä¦²½Ê¦" 
+		"7. Motorizeto strelnieku divizija" "29. Motorizeto strelnieku divizija" "36. Motorizeto strelnieku divizija" "57. Motorizeto strelnieku divizija" "81. Motorizeto strelnieku divizija" "84. Motorizeto strelnieku divizija" "163. Motorizeto strelnieku divizija" "198. Motorizeto strelnieku divizija" "202. Motorizeto strelnieku divizija" "204. Motorizeto strelnieku divizija" "205. Motorizeto strelnieku divizija" 
+		"208. Motorizeto strelnieku divizija" "209. Motorizeto strelnieku divizija" "210. Motorizeto strelnieku divizija" "212. Motorizeto strelnieku divizija" "213. Motorizeto strelnieku divizija" "215. Motorizeto strelnieku divizija" "216. Motorizeto strelnieku divizija" "240. Motorizeto strelnieku divizija" 
 	}
 	mechanized_brigade = {
-		"µÚ1»ú²½Ê¦" "µÚ15»ú²½Ê¦" "µÚ69»ú²½Ê¦" "µÚ82»ú²½Ê¦" "µÚ103»ú²½Ê¦" "µÚ109»ú²½Ê¦" "µÚ185»ú²½Ê¦" "µÚ218»ú²½Ê¦" "µÚ219»ú²½Ê¦" "µÚ220»ú²½Ê¦" "µÚ221»ú²½Ê¦" 
-		"µÚ236»ú²½Ê¦" "µÚ239»ú²½Ê¦" 
+		"1. Mehanizeto strelnieku divizija" "15. Mehanizeto strelnieku divizija" "69. Mehanizeto strelnieku divizija" "82. Mehanizeto strelnieku divizija" "103. Mehanizeto strelnieku divizija" "109. Mehanizeto strelnieku divizija" "185. Mehanizeto strelnieku divizija" "218. Mehanizeto strelnieku divizija" "219. Mehanizeto strelnieku divizija" "220. Mehanizeto strelnieku divizija" "221. Mehanizeto strelnieku divizija" 
+		"236. Mehanizeto strelnieku divizija" "239. Mehanizeto strelnieku divizija" 
 	}
 	light_armor_brigade = {
-		"µÚ1×°¼×Ê¦" "µÚ2×°¼×Ê¦" "µÚ3×°¼×Ê¦" "µÚ4×°¼×Ê¦" "µÚ5×°¼×Ê¦" "µÚ6×°¼×Ê¦" "µÚ7×°¼×Ê¦" "µÚ8×°¼×Ê¦" "µÚ9×°¼×Ê¦" "µÚ10×°¼×Ê¦" 
+		"1. Autotanku divizija" "2. Autotanku divizija" "3. Autotanku divizija" "4. Autotanku divizija" "5. Autotanku divizija" "6. Autotanku divizija" "7. Autotanku divizija" "8. Autotanku divizija" "9. Autotanku divizija" "10. Autotanku divizija" 
 	}
 	armor_brigade = {
-		"µÚ1×°¼×Ê¦" "µÚ2×°¼×Ê¦" "µÚ3×°¼×Ê¦" "µÚ4×°¼×Ê¦" "µÚ5×°¼×Ê¦" "µÚ6×°¼×Ê¦" "µÚ7×°¼×Ê¦" "µÚ8×°¼×Ê¦" "µÚ9×°¼×Ê¦" "µÚ10×°¼×Ê¦" 
+		"1. Autotanku divizija" "2. Autotanku divizija" "3. Autotanku divizija" "4. Autotanku divizija" "5. Autotanku divizija" "6. Autotanku divizija" "7. Autotanku divizija" "8. Autotanku divizija" "9. Autotanku divizija" "10. Autotanku divizija" 
 	}
 	paratrooper_brigade = {
-		"µÚ1¿Õ½µÊ¦" "µÚ2¿Õ½µÊ¦" "µÚ3¿Õ½µÊ¦" "µÚ4¿Õ½µÊ¦" "µÚ5¿Õ½µÊ¦" "µÚ6¿Õ½µÊ¦" "µÚ7¿Õ½µÊ¦" "µÚ8¿Õ½µÊ¦" "µÚ9¿Õ½µÊ¦" "µÚ10¿Õ½µÊ¦" 
+		"1. Aviodesanta divizija" "2. Aviodesanta divizija" "3. Aviodesanta divizija" "4. Aviodesanta divizija" "5. Aviodesanta divizija" "6. Aviodesanta divizija" "7. Aviodesanta divizija" "8. Aviodesanta divizija" "9. Aviodesanta divizija" "10. Aviodesanta divizija" 
 	}
 	marine_brigade = {
-		"µÚ1º£¾üÂ½Õ½Ê¦" "µÚ2º£¾üÂ½Õ½Ê¦" "µÚ3º£¾üÂ½Õ½Ê¦" "µÚ4º£¾üÂ½Õ½Ê¦" "µÚ5º£¾üÂ½Õ½Ê¦" "µÚ6º£¾üÂ½Õ½Ê¦" "µÚ7º£¾üÂ½Õ½Ê¦" "µÚ8º£¾üÂ½Õ½Ê¦" "µÚ9º£¾üÂ½Õ½Ê¦" "µÚ10º£¾üÂ½Õ½Ê¦" 
+		"1. Juras kajnieku divizija" "2. Juras kajnieku divizija" "3. Juras kajnieku divizija" "4. Juras kajnieku divizija" "5. Juras kajnieku divizija" "6. Juras kajnieku divizija" "7. Juras kajnieku divizija" "8. Juras kajnieku divizija" "9. Juras kajnieku divizija" "10. Juras kajnieku divizija" 
 	}
 	bergsjaeger_brigade = {
-		"µÚ9É½µØÊ¦" "µÚ20É½µØÊ¦" "µÚ28É½µØÊ¦" "µÚ30É½µØÊ¦" "µÚ44É½µØÊ¦" "µÚ47É½µØÊ¦" "µÚ58É½µØÊ¦" "µÚ60É½µØÊ¦" 
+		"9. Kalnu kajnieku divizija" "20. Kalnu kajnieku divizija" "28. Kalnu kajnieku divizija" "30. Kalnu kajnieku divizija" "44. Kalnu kajnieku divizija" "47. Kalnu kajnieku divizija" "58. Kalnu kajnieku divizija" "60. Kalnu kajnieku divizija" 
 	}
 	garrison_brigade = {
-		"µÚ10ÎÀÊùÊ¦" "µÚ11ÎÀÊùÊ¦" "µÚ12ÎÀÊùÊ¦" "µÚ13ÎÀÊùÊ¦" "µÚ14ÎÀÊùÊ¦" "µÚ16ÎÀÊùÊ¦" "µÚ17ÎÀÊùÊ¦" "µÚ19ÎÀÊùÊ¦" 
+		"10. Kajnieku divizija" "11. Kajnieku divizija" "12. Kajnieku divizija" "13. Kajnieku divizija" "14. Kajnieku divizija" "16. Kajnieku divizija" "17. Kajnieku divizija" "19. Kajnieku divizija" 
 	}
 	hq_brigade = {
-		"À­ÍÑÎ¬ÑÇ1¼¯ÍÅ¾ü" "À­ÍÑÎ¬ÑÇ2¼¯ÍÅ¾ü" "À­ÍÑÎ¬ÑÇ3¼¯ÍÅ¾ü" "À­ÍÑÎ¬ÑÇ4¼¯ÍÅ¾ü" 
+		"1. Latvija Armiya" "2. Latvija Armiya" "3. Latvija Armiya" "4. Latvija Armiya" 
 	}
 	militia_brigade = {
-		"µÚ2¾¯ÎÀÊ¦" "µÚ3¾¯ÎÀÊ¦" "µÚ4¾¯ÎÀÊ¦" "µÚ5¾¯ÎÀÊ¦" "µÚ6¾¯ÎÀÊ¦" "µÚ8¾¯ÎÀÊ¦" "µÚ10¾¯ÎÀÊ¦" "µÚ11¾¯ÎÀÊ¦" "µÚ12¾¯ÎÀÊ¦" "µÚ13¾¯ÎÀÊ¦" "µÚ14¾¯ÎÀÊ¦" 
-		"µÚ16¾¯ÎÀÊ¦" "µÚ17¾¯ÎÀÊ¦" "µÚ19¾¯ÎÀÊ¦" "µÚ21¾¯ÎÀÊ¦" "µÚ22¾¯ÎÀÊ¦" "µÚ23¾¯ÎÀÊ¦" "µÚ24¾¯ÎÀÊ¦" "µÚ25¾¯ÎÀÊ¦" "µÚ26¾¯ÎÀÊ¦" "µÚ27¾¯ÎÀÊ¦" 
+		"2. Aizsargu divizija" "3. Aizsargu divizija" "4. Aizsargu divizija" "5. Aizsargu divizija" "6. Aizsargu divizija" "8. Aizsargu divizija" "10. Aizsargu divizija" "11. Aizsargu divizija" "12. Aizsargu divizija" "13. Aizsargu divizija" "14. Aizsargu divizija" 
+		"16. Aizsargu divizija" "17. Aizsargu divizija" "19. Aizsargu divizija" "21. Aizsargu divizija" "22. Aizsargu divizija" "23. Aizsargu divizija" "24. Aizsargu divizija" "25. Aizsargu divizija" "26. Aizsargu divizija" "27. Aizsargu divizija" 
 	}
 	multi_role = {
-		"µÚ1Õ½¶·»úÁª¶Ó" "µÚ2Õ½¶·»úÁª¶Ó" "µÚ3Õ½¶·»úÁª¶Ó" "µÚ4Õ½¶·»úÁª¶Ó" "µÚ5Õ½¶·»úÁª¶Ó" "µÚ6Õ½¶·»úÁª¶Ó" "µÚ7Õ½¶·»úÁª¶Ó" "µÚ8Õ½¶·»úÁª¶Ó" "µÚ10Õ½¶·»úÁª¶Ó" 
-	}
-	interceptor = {
-		"µÚ1½Ø»÷»úÁª¶Ó" "µÚ2½Ø»÷»úÁª¶Ó" "µÚ3½Ø»÷»úÁª¶Ó" "µÚ4½Ø»÷»úÁª¶Ó" "µÚ5½Ø»÷»úÁª¶Ó" "µÚ6½Ø»÷»úÁª¶Ó" "µÚ7½Ø»÷»úÁª¶Ó" "µÚ8½Ø»÷»úÁª¶Ó" "µÚ10½Ø»÷»úÁª¶Ó" 
+		"1. Iznicinataju grupa" "2. Iznicinataju grupa" "3. Iznicinataju grupa" "4. Iznicinataju grupa" "5. Iznicinataju grupa" "6. Iznicinataju grupa" "7. Iznicinataju grupa" "8. Iznicinataju grupa" "10. Iznicinataju grupa" 
 	}
 	strategic_bomber = {
-		"µÚ1Õ½ÂÔºäÕ¨Áª¶Ó" "µÚ2Õ½ÂÔºäÕ¨Áª¶Ó" "µÚ3Õ½ÂÔºäÕ¨Áª¶Ó" "µÚ4Õ½ÂÔºäÕ¨Áª¶Ó" "µÚ5Õ½ÂÔºäÕ¨Áª¶Ó" "µÚ6Õ½ÂÔºäÕ¨Áª¶Ó" "µÚ7Õ½ÂÔºäÕ¨Áª¶Ó" "µÚ8Õ½ÂÔºäÕ¨Áª¶Ó" "µÚ9Õ½ÂÔºäÕ¨Áª¶Ó" "µÚ10Õ½ÂÔºäÕ¨Áª¶Ó" 
+		"1. Strategisko bumbvedeju grupa" "2. Strategisko bumbvedeju grupa" "3. Strategisko bumbvedeju grupa" "4. Strategisko bumbvedeju grupa" "5. Strategisko bumbvedeju grupa" "6. Strategisko bumbvedeju grupa" "7. Strategisko bumbvedeju grupa" "8. Strategisko bumbvedeju grupa" "9. Strategisko bumbvedeju grupa" "10. Strategisko bumbvedeju grupa" 
 	}
 	tactical_bomber = {
-		"µÚ1Õ½ÊõºäÕ¨Áª¶Ó" "µÚ2Õ½ÊõºäÕ¨Áª¶Ó" "µÚ3Õ½ÊõºäÕ¨Áª¶Ó" "µÚ4Õ½ÊõºäÕ¨Áª¶Ó" "µÚ5Õ½ÊõºäÕ¨Áª¶Ó" "µÚ6Õ½ÊõºäÕ¨Áª¶Ó" "µÚ7Õ½ÊõºäÕ¨Áª¶Ó" "µÚ8Õ½ÊõºäÕ¨Áª¶Ó" "µÚ9Õ½ÊõºäÕ¨Áª¶Ó" "µÚ10Õ½ÊõºäÕ¨Áª¶Ó" 
+		"1. Taktisko bumbvedeju grupa" "2. Taktisko bumbvedeju grupa" "3. Taktisko bumbvedeju grupa" "4. Taktisko bumbvedeju grupa" "5. Taktisko bumbvedeju grupa" "6. Taktisko bumbvedeju grupa" "7. Taktisko bumbvedeju grupa" "8. Taktisko bumbvedeju grupa" "9. Taktisko bumbvedeju grupa" "10. Taktisko bumbvedeju grupa" 
 	}
 	naval_bomber = {
-		"µÚ1º£¾üºäÕ¨Áª¶Ó" "µÚ2º£¾üºäÕ¨Áª¶Ó" "µÚ3º£¾üºäÕ¨Áª¶Ó" "µÚ4º£¾üºäÕ¨Áª¶Ó" "µÚ5º£¾üºäÕ¨Áª¶Ó" "µÚ6º£¾üºäÕ¨Áª¶Ó" "µÚ7º£¾üºäÕ¨Áª¶Ó" "µÚ8º£¾üºäÕ¨Áª¶Ó" "µÚ9º£¾üºäÕ¨Áª¶Ó" "µÚ10º£¾üºäÕ¨Áª¶Ó" 
+		"1. Juras bumbvedeju grupa" "2. Juras bumbvedeju grupa" "3. Juras bumbvedeju grupa" "4. Juras bumbvedeju grupa" "5. Juras bumbvedeju grupa" "6. Juras bumbvedeju grupa" "7. Juras bumbvedeju grupa" "8. Juras bumbvedeju grupa" "9. Juras bumbvedeju grupa" "10. Juras bumbvedeju grupa" 
 	}
 	cas = {
-		"µÚ23¸©³åºäÕ¨Áª¶Ó" "µÚ46¸©³åºäÕ¨Áª¶Ó" "µÚ77¸©³åºäÕ¨Áª¶Ó" "µÚ25¸©³åºäÕ¨Áª¶Ó" "µÚ72¸©³åºäÕ¨Áª¶Ó" "µÚ9¸©³åºäÕ¨Áª¶Ó" "µÚ10¸©³åºäÕ¨Áª¶Ó" "µÚ11¸©³åºäÕ¨Áª¶Ó" "µÚ1¸©³åºäÕ¨Áª¶Ó" "µÚ2¸©³åºäÕ¨Áª¶Ó" "µÚ5¸©³åºäÕ¨Áª¶Ó" 
-		"µÚ55¸©³åºäÕ¨Áª¶Ó" 
-	}
-	transport_plane = {
-		"µÚ1ÔËÊä»úÁª¶Ó" "µÚ2ÔËÊä»úÁª¶Ó" "µÚ3ÔËÊä»úÁª¶Ó" "µÚ4ÔËÊä»úÁª¶Ó" "µÚ5ÔËÊä»úÁª¶Ó"
+		"23. Triecienlidmasinu grupa" "46. Triecienlidmasinu grupa" "77. Triecienlidmasinu grupa" "25. Triecienlidmasinu grupa" "72. Triecienlidmasinu grupa" "9. Triecienlidmasinu grupa" "10. Triecienlidmasinu grupa" "11. Triecienlidmasinu grupa" "1. Triecienlidmasinu grupa" "2. Triecienlidmasinu grupa" "5. Triecienlidmasinu grupa" 
+		"55. Triecienlidmasinu grupa" 
 	}
 	battleship = {
-		"Àï¼ÓºÅ" "ÂíÈøÀ­¿¨ºÅ" "¶Ø´ï¼ÓºÅ" "°üË¹¿¨ºÅ" "ÓÈ¶ûÂíÀ­ºÅ" "¿â¶ûµÏ¼ÓºÅ" "Âí¶àÄÉºÅ" "À×Ôó¿ËÄÚºÅ" 
+		"Riga" "Mazsalaca" "Dundaga" "Bauska" "Jurmala" "Kuldiga" "Madona" "Rezekne" 
 	}
 	light_cruiser = {
-		"²ÉÎ÷Ë¹ºÅ" "ÀûÒ®ÅÁÑÇºÅ" "ÆÕÀïÒ®¿âÀ³ºÅ" "ÌÕ¸ñ·òÆ¥¶ûË¹ºÅ" "°¢¸ñÂ¡ÄÇºÅ" "°ÂÌØºÅ" 
+		"Cesis" "Liepaja" "Priekule" "Daugavpils" "Aglona" "Auce" 
 	}
 	heavy_cruiser = {
-		"Àï¼ÓºÅ" "ÂíÈøÀ­¿¨ºÅ" "¶Ø´ï¼ÓºÅ" "°üË¹¿¨ºÅ" "ÓÈ¶ûÂíÀ­ºÅ" "¿â¶ûµÏ¼ÓºÅ" "Âí¶àÄÉºÅ" "À×Ôó¿ËÄÚºÅ" "Íß¶ûÃ×Ò®À­ºÅ" 
+		"Riga" "Mazsalaca" "Dundaga" "Bauska" "Jurmala" "Kuldiga" "Madona" "Rezekne" "Valmiera" 
 	}
 	battlecruiser = {
-		"Íß¶ûÃ×Ò®À­ºÅ" "²ÉÎ÷Ë¹ºÅ" "ÀûÒ®ÅÁÑÇºÅ" "ÆÕÀïÒ®¿âÀ³ºÅ" "ÌÕ¸ñ·òÆ¥¶ûË¹ºÅ" "°¢¸ñÂ¡ÄÇºÅ" "°ÂÌØºÅ" 
+		"Valmiera" "Cesis" "Liepaja" "Priekule" "Daugavpils" "Aglona" "Auce" 
 	}
 	destroyer = {
-		"µÚ1ÇıÖğ½¢±à¶Ó" "µÚ2ÇıÖğ½¢±à¶Ó" "µÚ3ÇıÖğ½¢±à¶Ó" "µÚ4ÇıÖğ½¢±à¶Ó" "µÚ5ÇıÖğ½¢±à¶Ó" "µÚ6ÇıÖğ½¢±à¶Ó" "µÚ7ÇıÖğ½¢±à¶Ó" "µÚ8ÇıÖğ½¢±à¶Ó" "µÚ9ÇıÖğ½¢±à¶Ó" "µÚ10ÇıÖğ½¢±à¶Ó" "µÚ11ÇıÖğ½¢±à¶Ó" 
-		"µÚ12ÇıÖğ½¢±à¶Ó" "µÚ13ÇıÖğ½¢±à¶Ó" "µÚ14ÇıÖğ½¢±à¶Ó" "µÚ15ÇıÖğ½¢±à¶Ó" "µÚ16ÇıÖğ½¢±à¶Ó" "µÚ17ÇıÖğ½¢±à¶Ó" "µÚ18ÇıÖğ½¢±à¶Ó" "µÚ19ÇıÖğ½¢±à¶Ó" "µÚ20ÇıÖğ½¢±à¶Ó" 
+		"1. Minukugu flotile" "2. Minukugu flotile" "3. Minukugu flotile" "4. Minukugu flotile" "5. Minukugu flotile" "6. Minukugu flotile" "7. Minukugu flotile" "8. Minukugu flotile" "9. Minukugu flotile" "10. Minukugu flotile" "11. Minukugu flotile" 
+		"12. Minukugu flotile" "13. Minukugu flotile" "14. Minukugu flotile" "15. Minukugu flotile" "16. Minukugu flotile" "17. Minukugu flotile" "18. Minukugu flotile" "19. Minukugu flotile" "20. Minukugu flotile" 
 	}
 	carrier = {
-		"Àï¼ÓºÅ" "ÂíÈøÀ­¿¨ºÅ" "¶Ø´ï¼ÓºÅ" "°üË¹¿¨ºÅ" "ÓÈ¶ûÂíÀ­ºÅ" "¿â¶ûµÏ¼ÓºÅ" "Âí¶àÄÉºÅ" "À×Ôó¿ËÄÚºÅ" "Íß¶ûÃ×Ò®À­ºÅ" "²ÉÎ÷Ë¹ºÅ" "ÀûÒ®ÅÁÑÇºÅ"
-		"ÆÕÀïÒ®¿âÀ³ºÅ" "ÌÕ¸ñ·òÆ¥¶ûË¹ºÅ" "°¢¸ñÂ¡ÄÇºÅ" "°ÂÌØºÅ"
+		"Riga" "Mazsalaca" "Dundaga" "Bauska" "Jurmala" "Kuldiga" "Madona" "Rezekne" "Valmiera" "Cesis" "Liepaja" 
+		"Priekule" "Daugavpils" "Aglona" "Auce" 
 	}
 	escort_carrier = {
-		"Çõ³¤ºÅ" "À×Ä·½ÜË¹ºÅ"
+		"Virsaitis" "Namejs" 
 	}
 	submarine = {
-		"ÂŞÄá Ë¹Æ¤¶àÀ­ºÅ" "µÚ2Ç±Í§±à¶Ó" "µÚ3Ç±Í§±à¶Ó" "µÚ4Ç±Í§±à¶Ó" "µÚ5Ç±Í§±à¶Ó" "µÚ6Ç±Í§±à¶Ó" "µÚ7Ç±Í§±à¶Ó" "µÚ8Ç±Í§±à¶Ó" "µÚ9Ç±Í§±à¶Ó" "µÚ10Ç±Í§±à¶Ó" "µÚ11Ç±Í§±à¶Ó" 
-		"µÚ12Ç±Í§±à¶Ó" "µÚ13Ç±Í§±à¶Ó" "µÚ14Ç±Í§±à¶Ó" "µÚ15Ç±Í§±à¶Ó" 
+		"Ronis  SpidolaÜ" "2. Zemudens flotile" "3. Zemudens flotile" "4. Zemudens flotile" "5. Zemudens flotile" "6. Zemudens flotile" "7. Zemudens flotile" "8. Zemudens flotile" "9. Zemudens flotile" "10. Zemudens flotile" "11. Zemudens flotile" 
+		"12. Zemudens flotile" "13. Zemudens flotile" "14. Zemudens flotile" "15. Zemudens flotile" 
 	}
 	transport_ship = {
-		"µÚ1ÔËÊä½¢±à¶Ó" "µÚ2ÔËÊä½¢±à¶Ó" "µÚ3ÔËÊä½¢±à¶Ó" "µÚ4ÔËÊä½¢±à¶Ó" "µÚ5ÔËÊä½¢±à¶Ó" "µÚ6ÔËÊä½¢±à¶Ó" "µÚ7ÔËÊä½¢±à¶Ó" "µÚ8ÔËÊä½¢±à¶Ó" "µÚ9ÔËÊä½¢±à¶Ó" "µÚ10ÔËÊä½¢±à¶Ó" "µÚ11ÔËÊä½¢±à¶Ó" 
-		"µÚ12ÔËÊä½¢±à¶Ó" "µÚ13ÔËÊä½¢±à¶Ó" "µÚ14ÔËÊä½¢±à¶Ó" "µÚ15ÔËÊä½¢±à¶Ó" 
+		"1. Transportkugu flotile" "2. Transportkugu flotile" "3. Transportkugu flotile" "4. Transportkugu flotile" "5. Transportkugu flotile" "6. Transportkugu flotile" "7. Transportkugu flotile" "8. Transportkugu flotile" "9. Transportkugu flotile" "10. Transportkugu flotile" "11. Transportkugu flotile" 
+		"12. Transportkugu flotile" "13. Transportkugu flotile" "14. Transportkugu flotile" "15. Transportkugu flotile" 
 	}
 
 }
 
 ministers = {
 	27001 = {
-		name = "°¢¶û±´´Ä ¿ËÎ¬Ò®Î÷Ë¹"
+		name = "Alberts Kviesis"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M27001
@@ -131,7 +141,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27002 = {
-		name = "¿¨¶ûÀûË¹ ÎÚ¶ûÂíÄáË¹"
+		name = "Kàrlis Ulmanis"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M27002
@@ -142,7 +152,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27004 = {
-		name = "Â·µÂÎ¬Ï£Ë¹ ¿ËµÙË¹"
+		name = "Ludvigs Ctis"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M27004
@@ -150,7 +160,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27005 = {
-		name = "Î¬ÀûË¹ ¹Å¶û±ÈË¹"
+		name = "Vilis Gulbis"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M27005
@@ -159,7 +169,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27006 = {
-		name = "°£¶ûÂíÄáË¹ °¢ÆÕÎ÷ÌáË¹"
+		name = "Hermanis Apsitis"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M27006
@@ -168,7 +178,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27007 = {
-		name = "Ò®ÄáË¹ °ÍÂåµÏË¹"
+		name = "Jànis Balodis"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M27007
@@ -177,7 +187,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27008 = {
-		name = "Â³µÀ·òË¹ °à¸ñË¹»ùË¹"
+		name = "Rudolfs Bangerskis"
 		ideology = fascistic
 		loyalty = 0.50
 		picture = M27008
@@ -187,7 +197,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27009 = {
-		name = "ÍĞÂíË¹ Ë¹ÅåµÂ"
+		name = "Tomas Spade"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M27009
@@ -195,7 +205,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27010 = {
-		name = "¼ÖÄáË¹ Òòµ¤Ë¹"
+		name = "Janis Indans"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M27010
@@ -203,7 +213,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27031 = {
-		name = "ººË¹ º£ÒòÀïÏ£ ÂåÔó"
+		name = "Hans Heinrich Lohse"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M27031
@@ -212,7 +222,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	27033 = {
-		name = "¼ÖÄáË¹ °²µÂËÉË¹"
+		name = "Janis Andersons"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M27033
@@ -222,7 +232,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	27034 = {
-		name = "±£¶ûË¹ ¿¨¶ûÄşË¹"
+		name = "Pauls Kalniñs"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M27011
@@ -232,7 +242,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27035 = {
-		name = "¼ÖÔóÆÕË¹ À¼¿²Ë¹"
+		name = "Jazeps Rancans"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M27035
@@ -241,18 +251,18 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	27036 = {
-		name = "°Â¹ÅË¹ÌØË¹ »ù¶ûĞËÊ©Ì©Òò"
+		name = "Augusts Kirchensteins"
 		ideology = leninist
 		loyalty = 1.00
 		picture = M27021
 		head_of_state = weary_stiff_neck
 		head_of_government = silent_workhorse
 		foreign_minister = ideological_crusader
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		start_date = 1936.1.1
 	}
 	27037 = {
-		name = "°£ÄÚË¹ÌØ ¿ËÀµË¹ÂíÄáË¹s"
+		name = "Ernests Kreismanis"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M27037
@@ -261,7 +271,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	27038 = {
-		name = "°¢¶û¸¥À×Ë¹ Íß¶ûµÂÂíÄáË¹"
+		name = "Alfreds Valdmanis"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M27038
@@ -272,7 +282,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	27039 = {
-		name = "°ÂË¹¿¨Ë¹ µ¤¿Ë"
+		name = "Oskars Dankers"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M27039
@@ -281,7 +291,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	27041 = {
-		name = "Ò®ÄáË¹ ¿¨Ã÷Ë¹»ùË¹"
+		name = "Jànis Kaminskis"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M27041
@@ -291,7 +301,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	27044 = {
-		name = "À³Òò»ô¶ûµÂ K. ÔúÀïÄáË¹"
+		name = "Reinhold K. Zariñs"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M27012
@@ -301,7 +311,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	27046 = {
-		name = "ÂŞ²®´Ä °ÂÎ÷Ë¹"
+		name = "Roberts Osis"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M27046
@@ -310,7 +320,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	27047 = {
-		name = "Î¬ÀûË¹ À­ÆæË¹"
+		name = "Vilis Làcis"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M27025
@@ -320,7 +330,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	27050 = {
-		name = "Âí¶¡Ë¹ ÆÕÀïÂíÄáË¹s"
+		name = "Màrtiñs Prïmanis"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M27050
@@ -328,7 +338,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	27051 = {
-		name = "ÍşÁ®Ë¹ ÃÉÌØË¹"
+		name = "Vilhelms Munters"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M27051
@@ -336,7 +346,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27054 = {
-		name = "°¢¶û¸¥À×Ë¹ ±È¶ûÂíÄáË¹"
+		name = "Alfreds Bïlmanis"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M27054
@@ -344,7 +354,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	27055 = {
-		name = "ÓÈÀûÑÇ¿ËË¹ À­ÆæË¹"
+		name = "Julijcs Lacis"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M27029
@@ -353,7 +363,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27057 = {
-		name = "°¢ÅµµÂË¹ Ë¹¿ËÁĞ²®Ë¹"
+		name = "Arnolds Skrebers"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M27057
@@ -361,7 +371,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	27058 = {
-		name = "±ËµÃÀïË¹ ÍßÁĞË¹¿¨¶û¶÷Ë¹"
+		name = "Peteris Valeskalns"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M27058
@@ -369,7 +379,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	27060 = {
-		name = "°£ÍßµÂË¹ °²µÂËÉË¹"
+		name = "Evalds Andersons"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M27060
@@ -377,7 +387,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	27061 = {
-		name = "Ò®ÄáË¹ Ë¹¿âÒ®Î¬Ææ"
+		name = "Jànis Skujevics"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M27061
@@ -385,7 +395,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	27062 = {
-		name = "Ò®ÄáË¹ Ã×¼ÃË¹"
+		name = "Jànis Miezis"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M27062
@@ -393,7 +403,7 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	27064 = {
-		name = "¿Æ¶ûÄÚÀûÑÇË¹ ÎºµÂÄáÑÇ¿ËË¹"
+		name = "Kornelijs Veidnieks"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M27064
@@ -401,7 +411,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	27068 = {
-		name = "±ËµÃÂ³Ë¹ °¢ÆÕË¹Ù¤¶÷Ë¹"
+		name = "Petrus Apskalns"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M27068
@@ -409,7 +419,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27069 = {
-		name = "°£µÂ¼ÓË¹ °²µÂËÉË¹"
+		name = "Edgars Andersons"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M27014
@@ -418,7 +428,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	27070 = {
-		name = "ÂŞ²®´Ä µ¤±ÈµÙË¹"
+		name = "Roberts Dambïtis"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M27070
@@ -428,7 +438,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27071 = {
-		name = "¿¨¶ûÀûË¹ ¿¨¶ûÉ­Ë¹"
+		name = "Kàrlis Karlsons"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M27024
@@ -436,7 +446,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	27072 = {
-		name = "ÑÇÀúÉ½µÂË¹ ±ÈÀÕ"
+		name = "Aleksandrs Bulle"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M27072
@@ -444,7 +454,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	27073 = {
-		name = "°¢ÅµµÂË¹ Ëş°Í¿ËË¹"
+		name = "Arnolds Tabaks"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M27073
@@ -452,7 +462,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	27075 = {
-		name = "ÌØ°Â¶à¶ûË¹ ×ÈÎ¤ÄáÑÇ¿ËË¹"
+		name = "Teodors Zvejnieks"
 		ideology = national_socialist
 		loyalty = 0.50
 		picture = M27075
@@ -462,7 +472,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	27082 = {
-		name = "ÓÈÀïË¹ À­²®¶û´Ä"
+		name = "Jurijs Rabersz"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M27082
@@ -471,7 +481,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27084 = {
-		name = "ÂŞ¶à¶û¸¥Ë¹ ÂŞĞÀ"
+		name = "Rodolfs Rocin"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M27084
@@ -479,7 +489,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	27085 = {
-		name = "°²µÂÁÒË¹ ÑÅ²¼Â¡Ë¹»ùË¹"
+		name = "Andrejs Jablonskis"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M27085
@@ -487,7 +497,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	27087 = {
-		name = "°£ÀïÏ£ ¿ÆºÕ"
+		name = "Erich Koch"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M27087
@@ -495,7 +505,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	27091 = {
-		name = "·ÑÀû¿ËË¹ Ğ»ÀâË¹"
+		name = "Felix Cielens"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M27091
@@ -503,7 +513,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27092 = {
-		name = "¸¥ÀïÎ÷Ë¹ Èû¶ûÃ÷Ë¹"
+		name = "Fricis Celmins"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M27016
@@ -512,7 +522,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	27097 = {
-		name = "¿µË¹Ì¹¶¡Ë¹ Ç¡¿ËË¹ÌØ"
+		name = "Konstantins Cakste"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M27097
@@ -522,7 +532,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	27098 = {
-		name = "°¢Í¼¶ûË¹ M. Î÷¶û¸ÇÀûË¹"
+		name = "Arturs M. Silgailis"
 		ideology = national_socialist
 		loyalty = 1.00
 		picture = M27098
@@ -530,7 +540,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	27100 = {
-		name = "¿ËÀïÎ÷ÑÇÄáË¹ ±´¶û»ùË¹"
+		name = "Krisjànis Berkis"
 		ideology = fascistic
 		loyalty = 0.75
 		picture = M27100
@@ -538,7 +548,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	27101 = {
-		name = "Â³µÀ·òË¹ ¿ÆÇÕË¹"
+		name = "Rudolfs Kociñs"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M27101
@@ -547,7 +557,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	27102 = {
-		name = "Î¤¶ûÄÉË¹ ÌØ·òÅåË¹"
+		name = "Verners Tefpers"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M27017
@@ -555,7 +565,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27103 = {
-		name = "¼ÖÄáË¹ ²®½òË¹"
+		name = "Janis Berzins"
 		ideology = leninist
 		loyalty = 0.75
 		picture = M27027
@@ -564,7 +574,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	27105 = {
-		name = "ÒÁ×È¸ñÀûµÙ°ÍË¹ ÌÕËşË¹"
+		name = "Izglitibas Tautas"
 		ideology = stalinist
 		loyalty = 0.75
 		picture = M27030
@@ -573,7 +583,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	27106 = {
-		name = "°¢Í¼¶ûË¹ Ë¹ÆÕÂŞ¼ªË¹"
+		name = "Arturs Sprogis"
 		ideology = stalinist
 		loyalty = 1.00
 		picture = M27106
@@ -582,7 +592,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	27107 = {
-		name = "°ÂÍĞ ºÚ¶ûÃ×Ï£"
+		name = "Otto Hellmich"
 		ideology = national_socialist
 		loyalty = 0.75
 		picture = M27107
@@ -590,11 +600,148 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	27128 = {
-		name = "Èã¿âÄ·Ë¹ ÍßÆë¶ûµÙË¹"
+		name = "Jucums Vacietis"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M27126
 		chief_of_air = air_superiority_doctrine
+		start_date = 1936.1.1
+	}
+	# Generic dummy ministers
+	95512 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95513 = {
+		name = "Nameless Clerk"
+		ideology = paternal_autocrat
+		loyalty = 1.0
+		picture = MPaternalAutocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95514 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		foreign_minister = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		start_date = 1936.1.1
+	}
+	95515 = {
+		name = "Nameless Clerk"
+		ideology = market_liberal
+		loyalty = 1.0
+		picture = MMarketLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95516 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95517 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95518 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95519 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95520 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
 		start_date = 1936.1.1
 	}
 }

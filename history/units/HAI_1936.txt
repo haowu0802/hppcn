@@ -1,11 +1,27 @@
-division = {
-	name = "º£µØÂ½¾ü"
+theatre = {
+	name = "Haut Commandement d'Haiti"
 	location = 7661
-	is_reserve = yes
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
+	regiment = { type = hq_brigade name = "Port-au-Prince HQ" historical_model = 0 }
+	division = {
+		name = "La Grandé Armée du Haiti"
+		location = 7661
+		is_reserve = yes
+		regiment = { type = garrison_brigade name = "1er Régiment d'Infanterie" experience = 0 historical_model = 3 }
+		regiment = { type = garrison_brigade name = "2e Régiment d'Infanterie" experience = 0 historical_model = 3 }
+		regiment = { type = garrison_brigade name = "3e Régiment d'Infanterie" experience = 0 historical_model = 3 }
+	}
 }
-
-
-
+convoy_construction=
+{
+	country = HAI
+	id=
+	{
+		id=15610
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

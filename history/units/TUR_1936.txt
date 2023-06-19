@@ -1,145 +1,184 @@
-corps = {
-	name = "第I军"
+theatre = {
+	name = "T黵k Y黭sek Komutanligi"
 	location = 4619
-	regiment = { type = hq_brigade name = "第I军指挥部" historical_model = 0 }
-	division= {
-		name = "第1步兵师"
+	regiment = { type = hq_brigade name = "Ankara HQ" historical_model = 0 }
+		corps = {
+		name = "I. Topluluk"
 		location = 4619
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "I. Topluluk HQ" historical_model = 0 }
+		division= {
+			name = "1. Piyade Dagitim"
+			location = 4619
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "1. Piyade Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "2. Piyade Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "3. Piyade Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = horse_towed_support_brigade name = "1. Top鐄 Alayinda" experience = 5 historical_model = 1 }			
+		}
+		division= {
+			name = "3. Piyade Dagitim"
+			location = 4619
+			is_reserve = yes
+			regiment = { type = infantry_brigade name = "4. Piyade Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "5. Piyade Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = infantry_brigade name = "6. Piyade Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = horse_towed_support_brigade name = "3. Top鐄 Alayinda" experience = 5 historical_model = 2 }				
+		}
 	}
-	division= {
-		name = "第3步兵师"
+	division = {
+		name = "5. Piyade Dagitim"
+		location = 4503
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "7. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "8. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "9. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "5. Top鐄 Alayinda" experience = 5 historical_model = 3 }			
+	}
+	division = {
+		name = "7. Piyade Dagitim"
+		location = 4615
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "10. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "11. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "12. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "7. Top鐄 Alayinda" experience = 5 historical_model = 1 }			
+	}
+	division = {
+		name = "9. Piyade Dagitim"
+		location = 4883
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "13. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "14. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "15. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "9. Top鐄 Alayinda" experience = 5 historical_model = 2 }		
+	}
+	division = {
+		name = "11. Piyade Dagitim"
+		location = 4188
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "16. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "17. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "18. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "11. Top鐄 Alayinda" experience = 5 historical_model = 1 }		
+	}
+	division = {
+		name = "13. Piyade Dagitim"
+		location = 7269
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "19. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "20. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "21. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "13. Top鐄 Alayinda" experience = 5 historical_model = 1 }
+	}
+	division = {
+		name = "15. Piyade Dagitim"
+		location = 7304
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "22. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "23. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "24. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "15. Top鐄 Alayinda" experience = 5 historical_model = 2 }		
+	}
+	division = {
+		name = "17. Piyade Dagitim"
+		location = 7332
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "25. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "26. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "27. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "17. Top鐄 Alayinda" experience = 5 historical_model = 3 }	
+	}
+	division = {
+		name = "19. Piyade Dagitim"
+		location = 4513
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "28. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "29. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = infantry_brigade name = "30. Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = horse_towed_support_brigade name = "19. Top鐄 Alayinda" experience = 5 historical_model = 1 }		
+	}
+	division = {
+		name = "1. Dagci Tugay"
+		location = 4624
+		is_reserve = yes
+		regiment = { type = bergsjaeger_brigade name = "1. Dag Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = bergsjaeger_brigade name = "2. Dag Piyade Alayi" experience = 5 historical_model = 1 }
+		regiment = { type = bergsjaeger_brigade name = "3. Dag Piyade Alayi" experience = 5 historical_model = 1 }
+	}
+	corps = {
+		name = "T黵kce S黺ari Topluluk"
+		location = 4927
+		regiment = { type = hq_brigade name = "T黵kce S黺ari Topluluk HQ" historical_model = 0 }
+		division= {
+			name = "1. S黺ari Dagitim"
+			location = 4927
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "1. S黺ari Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "2. S黺ari Alayi" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "3. S黺ari Dagitim"
+			location = 4927
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "3. S黺ari Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "4. S黺ari Alayi" experience = 5 historical_model = 1 }
+		}
+		division= {
+			name = "5. Yedek S黺ari Dagitim"
+			location = 4927
+			is_reserve = yes
+			regiment = { type = cavalry_brigade name = "5. S黺ari Alayi" experience = 5 historical_model = 1 }
+			regiment = { type = cavalry_brigade name = "6. S黺ari Alayi" experience = 5 historical_model = 1 }
+		}
+	}
+	navy = {
+		name = "T黵kce Deniz Filosu"
+		base = 4441
+		location = 4441
+		ship = { type = light_cruiser name = "TDT Hamidieh" experience = 5 historical_model = 0 }
+		ship = { type = transport_ship name = "Reschid Pasha K點黭 Filotilla" experience = 5 historical_model = 0 }
+	}
+	navy = {
+		name = "1. T黵k Dz. Kuvvetleri Filosu"
+		base = 4441
+		location = 4441
+		ship = { type = battlecruiser name = "TDT Yavuz" experience = 5 historical_model = 0 pride = yes }
+		ship = { type = light_cruiser name = "TDT Medjidieh" experience = 5 historical_model = 0 }
+		ship = { type = destroyer name = "1. Filotilla Torpido Ve Denizalti" experience = 5 historical_model = 6 }
+		ship = { type = submarine name = "1. Filotilla Denizalti K點黭" experience = 5 historical_model = 4 }
+	}
+	air = {
+		name = "I. T黵kce Hava Topluluk"
+		base = 4619
 		location = 4619
-		is_reserve = yes
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
+		wing = { type = interceptor name = "1. Avci Ucagi Grup" experience = 5 historical_model = 0 }
 	}
 }
-division = {
-	name = "第5步兵师"
-	location = 4503
-	is_reserve = yes
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第7步兵师"
-	location = 4615
-	is_reserve = yes
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第9步兵师"
-	location = 4883
-	is_reserve = yes
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第11步兵师"
-	location = 4188
-	is_reserve = yes
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第13步兵师"
-	location = 7269
-	is_reserve = yes
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第15步兵师"
-	location = 7304
-	is_reserve = yes
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第17步兵师"
-	location = 7332
-	is_reserve = yes
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第19步兵师"
-	location = 4513
-	is_reserve = yes
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第1山地师"
-	location = 4624
-	is_reserve = yes
-	regiment = { type = bergsjaeger_brigade historical_model = 0 }
-	regiment = { type = bergsjaeger_brigade historical_model = 0 }
-	regiment = { type = bergsjaeger_brigade historical_model = 0 }
-}
-corps = {
-	name = "土耳其骑兵军"
-	location = 4927
-	regiment = { type = hq_brigade name = "土耳其骑兵军指挥部" historical_model = 0 }
-	division= {
-		name = "第1骑兵师"
-		location = 4927
-		is_reserve = yes
-		regiment = { type = cavalry_brigade historical_model = 0 }
-		regiment = { type = cavalry_brigade historical_model = 0 }
+convoy_construction=
+{
+	country = TUR
+	id=
+	{
+		id=15100
+		type=4713
 	}
-	division= {
-		name = "第3骑兵师"
-		location = 4927
-		is_reserve = yes
-		regiment = { type = cavalry_brigade historical_model = 0 }
-		regiment = { type = cavalry_brigade historical_model = 0 }
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = TUR
+	id=
+	{
+		id=15101
+		type=4713
 	}
-	division= {
-		name = "第5骑兵师"
-		location = 4927
-		is_reserve = yes
-		regiment = { type = cavalry_brigade historical_model = 0 }
-		regiment = { type = cavalry_brigade historical_model = 0 }
-	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
 }
-navy = {
-	name = "土耳其舰队"
-	base = 4441
-	location = 4441
-	ship = { type = light_cruiser name = "TDT '哈米迪'号" historical_model = 0 }
-	ship = { type = transport_ship name = "运输舰分队" historical_model = 0 }
-}
-air = {
-	name = "土耳其第I空军编队"
-	base = 4619
-	location = 4619
-	wing = { type = interceptor name = "第1战斗机联队" historical_model = 0 }
-	wing = { type = tactical_bomber name = "第1战术轰炸联队" historical_model = 0 }
-}
-navy = {
-	name = "土耳其第1海军舰队"
-	base = 4441
-	location = 4441
-	ship = { type = battlecruiser name = "TDT '亚乌'号" historical_model = 0 pride = yes }
-	ship = { type = light_cruiser name = "TDT '梅得几迪'号" historical_model = 0 }
-	ship = { type = destroyer name = "第1.驱逐舰队" historical_model = 0 }
-	ship = { type = submarine name = "第1潜艇分队" historical_model = 0 }
-}
-
-
-

@@ -1,21 +1,21 @@
 color = { 180  158  127 }
-graphical_culture = Generic
+graphical_culture = British
 
 last_election = 1932.5.17
 duration = 60
 
 default_templates = {
 	ENG_infantry = {
-		motorized_brigade
-		motorized_brigade
-		motorized_brigade
+		infnatry_brigade
+		infnatry_brigade
+		infnatry_brigade
 	}
 	ENG_motorized = {
 		motorized_brigade
 		motorized_brigade
+		motorized_brigade		
 	}
 	ENG_armoured_1936 = {
-		armor_brigade
 		light_armor_brigade
 		light_armor_brigade
 		motorized_brigade
@@ -30,113 +30,144 @@ default_templates = {
 		paratrooper_brigade
 		paratrooper_brigade
 	}
+	ENG_marine = {
+		marine_brigade
+		marine_brigade
+		marine_brigade		
+	}
+	ENG_alpine = {
+		bergsjaeger_brigade
+		bergsjaeger_brigade
+	}	
+	ENG_garrison = {
+		garrison_brigade
+		garrison_brigade
+		garrison_brigade		
+	}
+	ENG_militia = {
+		militia_brigade
+		militia_brigade
+		militia_brigade		
+	}	
 }
 
 
 unit_names = {
 	infantry_brigade = {
-		"南非第1步兵师" "南非第2步兵师" "南非第3步兵师" "南非第4步兵师" "南非第5步兵师" "南非第6步兵师" "南非第7步兵师" "南非第8步兵师" "南非第9步兵师" "南非第10步兵师" "南非第11步兵师" 
-		"南非第12步兵师" "南非第13步兵师" "南非第14步兵师" "南非第15步兵师" "南非第16步兵师" "南非第17步兵师" "南非第18步兵师" "南非第19步兵师" "南非第20步兵师" 
+		"1st SA Infantry Division" "2nd SA Infantry Division" "3rd SA Infantry Division" "4th SA Infantry Division" "5th SA Infantry Division" "6th SA Infantry Division" "7th SA Infantry Division" "8th SA Infantry Division" "9th SA Infantry Division" "10th SA Infantry Division" "11th SA Infantry Division" 
+		"12th SA Infantry Division" "13th SA Infantry Division" "14th SA Infantry Division" "15th SA Infantry Division" "16th SA Infantry Division" "17th SA Infantry Division" "18th SA Infantry Division" "19th SA Infantry Division" "20th SA Infantry Division" 
 	}
 	cavalry_brigade = {
-		"南非第1骑兵师" "南非第2骑兵师" "南非第3骑兵师" "南非第4骑兵师" "南非第5骑兵师" "南非第6骑兵师" "南非第7骑兵师" "南非第8骑兵师" "南非第9骑兵师" "南非第10骑兵师" 
+		"1st SA Cavalry Division" "2nd SA Cavalry Division" "3rd SA Cavalry Division" "4th SA Cavalry Division" "5th SA Cavalry Division" "6th SA Cavalry Division" "7th SA Cavalry Division" "8th SA Cavalry Division" "9th SA Cavalry Division" "10th SA Cavalry Division" 
 	}
 	motorized_brigade = {
-		"南非第1摩托化步兵师" "南非第2摩托化步兵师" "南非第3摩托化步兵师" "南非第4摩托化步兵师" "南非第5摩托化步兵师" "南非第6摩托化步兵师" "南非第7摩托化步兵师" "南非第8摩托化步兵师" "南非第9摩托化步兵师" "南非第10摩托化步兵师" "南非第11摩托化步兵师" 
-		"南非第12摩托化步兵师" "南非第13摩托化步兵师" "南非第14摩托化步兵师" "南非第15摩托化步兵师" 
+		"1st SA Motorized Inf. Div." "2nd SA Motorized Inf. Div." "3rd SA Motorized Inf. Div." "4th SA Motorized Inf. Div." "5th SA Motorized Inf. Div." "6th SA Motorized Inf. Div." "7th SA Motorized Inf. Div." "8th SA Motorized Inf. Div." "9th SA Motorized Inf. Div." "10th SA Motorized Inf. Div." "11th SA Motorized Inf. Div." 
+		"12th SA Motorized Inf. Div." "13th SA Motorized Inf. Div." "14th SA Motorized Inf. Div." "15th SA Motorized Inf. Div." 
 	}
 	mechanized_brigade = {
-		"南非第1机械化步兵师" "南非第2机械化步兵师" "南非第3机械化步兵师" "南非第4机械化步兵师" "南非第5机械化步兵师" "南非第6机械化步兵师" "南非第7机械化步兵师" "南非第8机械化步兵师" "南非第9机械化步兵师" "南非第10机械化步兵师" "南非第11机械化步兵师" 
-		"南非第12机械化步兵师" "南非第13机械化步兵师" "南非第14机械化步兵师" "南非第15机械化步兵师" 
+		"1st SA Half-Track Inf. Div." "2nd SA Half-Track Inf. Div." "3rd SA Half-Track Inf. Div." "4th SA Half-Track Inf. Div." "5th SA Half-Track Inf. Div." "6th SA Half-Track Inf. Div." "7th SA Half-Track Inf. Div." "8th SA Half-Track Inf. Div." "9th SA Half-Track Inf. Div." "10th SA Half-Track Inf. Div." "11th SA Half-Track Inf. Div." 
+		"12th SA Half-Track Inf. Div." "13th SA Half-Track Inf. Div." "14th SA Half-Track Inf. Div." "15th SA Half-Track Inf. Div." 
 	}
 	light_armor_brigade = {
-		"南非第6轻装甲师" "南非第1轻装甲师" "南非第2轻装甲师" "南非第3轻装甲师" "南非第4轻装甲师" "南非第5轻装甲师" "南非第6轻装甲师" "南非第7轻装甲师" "南非第8轻装甲师" "南非第9轻装甲师" "南非第10轻装甲师" 
+		"6th SA Armoured Division" "1st SA Armoured Division" "2nd SA Armoured Division" "3rd SA Armoured Division" "4th SA Armoured Division" "5th SA Armoured Division" "6th SA Armoured Division" "7th SA Armoured Division" "8th SA Armoured Division" "9th SA Armoured Division" "10th SA Armoured Division" 
 			}
 	armor_brigade = {
-		"南非第6装甲师" "南非第1装甲师" "南非第2装甲师" "南非第3装甲师" "南非第4装甲师" "南非第5装甲师" "南非第6装甲师" "南非第7装甲师" "南非第8装甲师" "南非第9装甲师" "南非第10装甲师" 
+		"6th SA Armoured Division" "1st SA Armoured Division" "2nd SA Armoured Division" "3rd SA Armoured Division" "4th SA Armoured Division" "5th SA Armoured Division" "6th SA Armoured Division" "7th SA Armoured Division" "8th SA Armoured Division" "9th SA Armoured Division" "10th SA Armoured Division" 
 			}
 	paratrooper_brigade = {
-		"南非第1空降师" "南非第2空降师" "南非第3空降师" "南非第4空降师" "南非第5空降师" "南非第6空降师" "南非第7空降师" "南非第8空降师" "南非第9空降师" "南非第10空降师" 
+		"1st SA Airborne Commando Division" "2nd SA Airborne Commando Division" "3rd SA Airborne Commando Division" "4th SA Airborne Commando Division" "5th SA Airborne Commando Division" "6th SA Airborne Commando Division" "7th SA Airborne Commando Division" "8th SA Airborne Commando Division" "9th SA Airborne Commando Division" "10th SA Airborne Commando Division" 
 	}
 	marine_brigade = {
-		"南非第1海军陆战师" "南非第2海军陆战师" "南非第3海军陆战师" "南非第4海军陆战师" "南非第5海军陆战师" "南非第6海军陆战师" "南非第7海军陆战师" "南非第8海军陆战师" "南非第9海军陆战师" "南非第10海军陆战师" 
+		"1st SA Marine Commando Division" "2nd SA Marine Commando Division" "3rd SA Marine Commando Division" "4th SA Marine Commando Division" "5th SA Marine Commando Division" "6th SA Marine Commando Division" "7th SA Marine Commando Division" "8th SA Marine Commando Division" "9th SA Marine Commando Division" "10th SA Marine Commando Division" 
 	}
 	bergsjaeger_brigade = {
-		"南非第1山地师" "南非第2山地师" "南非第3山地师" "南非第4山地师" "南非第5山地师" "南非第6山地师" "南非第7山地师" "南非第8山地师" "南非第9山地师" "南非第10山地师" "南非第11山地师" 
-		"南非第12山地师" "南非第13山地师" "南非第14山地师" "南非第15山地师" 
+		"1st SA Mountain Rangers Div." "2nd SA Mountain Rangers Div." "3rd SA Mountain Rangers Div." "4th SA Mountain Rangers Div." "5th SA Mountain Rangers Div." "6th SA Mountain Rangers Div." "7th SA Mountain Rangers Div." "8th SA Mountain Rangers Div." "9th SA Mountain Rangers Div." "10th SA Mountain Rangers Div." "11th SA Mountain Rangers Div." 
+		"12th SA Mountain Rangers Div." "13th SA Mountain Rangers Div." "14th SA Mountain Rangers Div." "15th SA Mountain Rangers Div." 
 	}
 	garrison_brigade = {
-		"南非第1卫戍师" "南非第2卫戍师" "南非第3卫戍师" "南非第4卫戍师" "南非第5卫戍师" "南非第6卫戍师" "南非第7卫戍师" "南非第8卫戍师" "南非第9卫戍师" "南非第10卫戍师" "南非第11卫戍师" 
-		"南非第12卫戍师" "南非第13卫戍师" "南非第14卫戍师" "南非第15卫戍师" "南非第16卫戍师" "南非第17卫戍师" "南非第18卫戍师" "南非第19卫戍师" "南非第20卫戍师" 
+		"1st SA Infantry Division" "2nd SA Infantry Division" "3rd SA Infantry Division" "4th SA Infantry Division" "5th SA Infantry Division" "6th SA Infantry Division" "7th SA Infantry Division" "8th SA Infantry Division" "9th SA Infantry Division" "10th SA Infantry Division" "11th SA Infantry Division" 
+		"12th SA Infantry Division" "13th SA Infantry Division" "14th SA Infantry Division" "15th SA Infantry Division" "16th SA Infantry Division" "17th SA Infantry Division" "18th SA Infantry Division" "19th SA Infantry Division" "20th SA Infantry Division" 
 	}
 	hq_brigade = {
-		"服役民兵部队" "南非机动部队" "南非第1军" "南非第2军" "南非第1集团军" "南非第3军" "南非第4军" "南非第2集团军" 
+		"Active Citizen Force" "South African Mobile Field Force" "1st South African Army" "2nd South African Army" "1st South African Army Group" "3rd South African Army" "4th South African Army" "2nd South African Army Group" 
 	}
 	militia_brigade = {
-		"南非第1警备师" "南非第2警备师" "南非第3警备师" "南非第4警备师" "南非第5警备师" "南非第6警备师" "南非第7警备师" "南非第8警备师" "南非第9警备师" "南非第10警备师" "南非第11警备师" 
-		"南非第12警备师" "南非第13警备师" "南非第14警备师" "南非第15警备师" "南非第16警备师" "南非第17警备师" "南非第18警备师" "南非第19警备师" "南非第20警备师" 
+		"1st Active Citizen Force" "2nd Active Citizen Force" "3rd Active Citizen Force" "4th Active Citizen Force" "5th Active Citizen Force" "6th Active Citizen Force" "7th Active Citizen Force" "8th Active Citizen Force" "9th Active Citizen Force" "10th Active Citizen Force" "11th Active Citizen Force" 
+		"12th Active Citizen Force" "13th Active Citizen Force" "14th Active Citizen Force" "15th Active Citizen Force" "16th Active Citizen Force" "17th Active Citizen Force" "18th Active Citizen Force" "19th Active Citizen Force" "20th Active Citizen Force" 
 	}
 	multi_role = {
-		"南非第1战斗机大队" "南非第2战斗机大队" "南非第3战斗机大队" "南非第4战斗机大队" "南非第5战斗机大队" "南非第7战斗机大队" "南非第8战斗机大队" "南非第9战斗机大队" "南非第10战斗机大队" "南非第11战斗机大队" "南非第12战斗机大队" 
-		"南非第13战斗机大队" "南非第14战斗机大队" "南非第15战斗机大队" "南非第16战斗机大队" "南非第17战斗机大队" "南非第18战斗机大队" "南非第19战斗机大队" "南非第20战斗机大队" 
+		"No.1 SAAF Fighter Group" "No.2 SAAF Fighter Group" "No.3 SAAF Fighter Group" "No.4 SAAF Fighter Group" "No.5 SAAF Fighter Group" "No.7 SAAF Fighter Group" "No.8 SAAF Fighter Group" "No.9 SAAF Fighter Group" "No.10 SAAF Fighter Group" "No.11 SAAF Fighter Group" "No.12 SAAF Fighter Group" 
+		"No.13 SAAF Fighter Group" "No.14 SAAF Fighter Group" "No.15 SAAF Fighter Group" "No.16 SAAF Fighter Group" "No.17 SAAF Fighter Group" "No.18 SAAF Fighter Group" "No.19 SAAF Fighter Group" "No.20 SAAF Fighter Group" 
 	}
 	interceptor = {
-		"南非第1截击机联队" "南非第2截击机联队" "南非第3截击机联队" "南非第4截击机联队" "南非第5截击机联队" "南非第7截击机联队" "南非第8截击机联队" "南非第9截击机联队" "南非第10截击机联队" "南非第11截击机联队" "南非第12截击机联队" 
-		"南非第13截击机联队" "南非第14截击机联队" "南非第15截击机联队" "南非第16截击机联队" "南非第17截击机联队" "南非第18截击机联队" "南非第19截击机联队" "南非第20截击机联队" 
+		"No.1 SAAF Fighter Group" "No.2 SAAF Fighter Group" "No.3 SAAF Fighter Group" "No.4 SAAF Fighter Group" "No.5 SAAF Fighter Group" "No.7 SAAF Fighter Group" "No.8 SAAF Fighter Group" "No.9 SAAF Fighter Group" "No.10 SAAF Fighter Group" "No.11 SAAF Fighter Group" "No.12 SAAF Fighter Group" 
+		"No.13 SAAF Fighter Group" "No.14 SAAF Fighter Group" "No.15 SAAF Fighter Group" "No.16 SAAF Fighter Group" "No.17 SAAF Fighter Group" "No.18 SAAF Fighter Group" "No.19 SAAF Fighter Group" "No.20 SAAF Fighter Group" 
+	}
+	jet_int = {
+		"No.1 SAAF Fighter Group" "No.2 SAAF Fighter Group" "No.3 SAAF Fighter Group" "No.4 SAAF Fighter Group" "No.5 SAAF Fighter Group" "No.7 SAAF Fighter Group" "No.8 SAAF Fighter Group" "No.9 SAAF Fighter Group" "No.10 SAAF Fighter Group" "No.11 SAAF Fighter Group" "No.12 SAAF Fighter Group" 
+		"No.13 SAAF Fighter Group" "No.14 SAAF Fighter Group" "No.15 SAAF Fighter Group" "No.16 SAAF Fighter Group" "No.17 SAAF Fighter Group" "No.18 SAAF Fighter Group" "No.19 SAAF Fighter Group" "No.20 SAAF Fighter Group" 
+	}
+	jet_mr = {
+		"No.1 SAAF Fighter Group" "No.2 SAAF Fighter Group" "No.3 SAAF Fighter Group" "No.4 SAAF Fighter Group" "No.5 SAAF Fighter Group" "No.7 SAAF Fighter Group" "No.8 SAAF Fighter Group" "No.9 SAAF Fighter Group" "No.10 SAAF Fighter Group" "No.11 SAAF Fighter Group" "No.12 SAAF Fighter Group" 
+		"No.13 SAAF Fighter Group" "No.14 SAAF Fighter Group" "No.15 SAAF Fighter Group" "No.16 SAAF Fighter Group" "No.17 SAAF Fighter Group" "No.18 SAAF Fighter Group" "No.19 SAAF Fighter Group" "No.20 SAAF Fighter Group" 
 	}
 	strategic_bomber = {
-		"南非第1战略轰炸机联队" "南非第2战略轰炸机联队" "南非第6战略轰炸机联队" "南非第3战略轰炸机联队" "南非第4战略轰炸机联队" "南非第7战略轰炸机联队" "南非第8战略轰炸机联队" "南非第9战略轰炸机联队" "南非第10战略轰炸机联队" "南非第11战略轰炸机联队" "南非第12战略轰炸机联队" 
-		"南非第13战略轰炸机联队" "南非第14战略轰炸机联队" "南非第15战略轰炸机联队" "南非第16战略轰炸机联队" "南非第17战略轰炸机联队" "南非第18战略轰炸机联队" "南非第19战略轰炸机联队" "南非第20战略轰炸机联队" 
+		"No.1 SAAF Strategic Bomb Group" "No.2 SAAF Strategic Bomb Group" "No.6 SAAF Strategic Bomb Group" "No.3 SAAF Strategic Bomb Group" "No.4 SAAF Strategic Bomb Group" "No.7 SAAF Strategic Bomb Group" "No.8 SAAF Strategic Bomb Group" "No.9 SAAF Strategic Bomb Group" "No.10 SAAF Strategic Bomb Group" "No.11 SAAF Strategic Bomb Group" "No.12 SAAF Strategic Bomb Group" 
+		"No.13 SAAF Strategic Bomb Group" "No.14 SAAF Strategic Bomb Group" "No.15 SAAF Strategic Bomb Group" "No.16 SAAF Strategic Bomb Group" "No.17 SAAF Strategic Bomb Group" "No.18 SAAF Strategic Bomb Group" "No.19 SAAF Strategic Bomb Group" "No.20 SAAF Strategic Bomb Group" 
 	}
 	tactical_bomber = {
-		"南非第1战术轰炸机联队" "南非第2战术轰炸机联队" "南非第6战术轰炸机联队" "南非第3战术轰炸机联队" "南非第4战术轰炸机联队" "南非第7战术轰炸机联队" "南非第8战术轰炸机联队" "南非第9战术轰炸机联队" "南非第10战术轰炸机联队" "南非第11战术轰炸机联队" "南非第12战术轰炸机联队" 
-		"南非第13战术轰炸机联队" "南非第14战术轰炸机联队" "南非第15战术轰炸机联队" "南非第16战术轰炸机联队" "南非第17战术轰炸机联队" "南非第18战术轰炸机联队" "南非第19战术轰炸机联队" "南非第20战术轰炸机联队" 
+		"No.1 SAAF Tactical Bomb Group" "No.2 SAAF Tactical Bomb Group" "No.6 SAAF Tactical Bomb Group" "No.3 SAAF Tactical Bomb Group" "No.4 SAAF Tactical Bomb Group" "No.7 SAAF Tactical Bomb Group" "No.8 SAAF Tactical Bomb Group" "No.9 SAAF Tactical Bomb Group" "No.10 SAAF Tactical Bomb Group" "No.11 SAAF Tactical Bomb Group" "No.12 SAAF Tactical Bomb Group" 
+		"No.13 SAAF Tactical Bomb Group" "No.14 SAAF Tactical Bomb Group" "No.15 SAAF Tactical Bomb Group" "No.16 SAAF Tactical Bomb Group" "No.17 SAAF Tactical Bomb Group" "No.18 SAAF Tactical Bomb Group" "No.19 SAAF Tactical Bomb Group" "No.20 SAAF Tactical Bomb Group" 
+	}
+	jet_bomber = {
+		"No.1 SAAF Tactical Bomb Group" "No.2 SAAF Tactical Bomb Group" "No.6 SAAF Tactical Bomb Group" "No.3 SAAF Tactical Bomb Group" "No.4 SAAF Tactical Bomb Group" "No.7 SAAF Tactical Bomb Group" "No.8 SAAF Tactical Bomb Group" "No.9 SAAF Tactical Bomb Group" "No.10 SAAF Tactical Bomb Group" "No.11 SAAF Tactical Bomb Group" "No.12 SAAF Tactical Bomb Group" 
+		"No.13 SAAF Tactical Bomb Group" "No.14 SAAF Tactical Bomb Group" "No.15 SAAF Tactical Bomb Group" "No.16 SAAF Tactical Bomb Group" "No.17 SAAF Tactical Bomb Group" "No.18 SAAF Tactical Bomb Group" "No.19 SAAF Tactical Bomb Group" "No.20 SAAF Tactical Bomb Group" 
 	}
 	naval_bomber = {
-		"南非第1海军轰炸机联队" "南非第2海军轰炸机联队" "南非第3海军轰炸机联队" "南非第4海军轰炸机联队" "南非第5海军轰炸机联队" "南非第7海军轰炸机联队" "南非第8海军轰炸机联队" "南非第9海军轰炸机联队" "南非第10海军轰炸机联队" "南非第11海军轰炸机联队" "南非第12海军轰炸机联队" 
-		"南非第13海军轰炸机联队" "南非第14海军轰炸机联队" "南非第15海军轰炸机联队" "南非第16海军轰炸机联队" "南非第17海军轰炸机联队" "南非第18海军轰炸机联队" "南非第19海军轰炸机联队" "南非第20海军轰炸机联队" "南非第1鱼雷攻击机联队" "南非第2鱼雷攻击机联队" "南非第3鱼雷攻击机联队" 
-		"南非第4鱼雷攻击机联队" "南非第5鱼雷攻击机联队" "南非第7鱼雷攻击机联队" "南非第8鱼雷攻击机联队" "南非第9鱼雷攻击机联队" "南非第10鱼雷攻击机联队" "南非第11鱼雷攻击机联队" "南非第12鱼雷攻击机联队" "南非第13鱼雷攻击机联队" "南非第14鱼雷攻击机联队" "南非第15鱼雷攻击机联队" 
-		"南非第16鱼雷攻击机联队" "南非第17鱼雷攻击机联队" "南非第18鱼雷攻击机联队" "南非第19鱼雷攻击机联队" "南非第20鱼雷攻击机联队" 
+		"No.1 SAAF Marine Bomb Group" "No.2 SAAF Marine Bomb Group" "No.3 SAAF Marine Bomb Group" "No.4 SAAF Marine Bomb Group" "No.5 SAAF Marine Bomb Group" "No.7 SAAF Marine Bomb Group" "No.8 SAAF Marine Bomb Group" "No.9 SAAF Marine Bomb Group" "No.10 SAAF Marine Bomb Group" "No.11 SAAF Marine Bomb Group" "No.12 SAAF Marine Bomb Group" 
+		"No.13 SAAF Marine Bomb Group" "No.14 SAAF Marine Bomb Group" "No.15 SAAF Marine Bomb Group" "No.16 SAAF Marine Bomb Group" "No.17 SAAF Marine Bomb Group" "No.18 SAAF Marine Bomb Group" "No.19 SAAF Marine Bomb Group" "No.20 SAAF Marine Bomb Group" "No.1 SAAF Torpedo Attack Group" "No.2 SAAF Torpedo Attack Group" "No.3 SAAF Torpedo Attack Group" 
+		"No.4 SAAF Torpedo Attack Group" "No.5 SAAF Torpedo Attack Group" "No.7 SAAF Torpedo Attack Group" "No.8 SAAF Torpedo Attack Group" "No.9 SAAF Torpedo Attack Group" "No.10 SAAF Torpedo Attack Group" "No.11 SAAF Torpedo Attack Group" "No.12 SAAF Torpedo Attack Group" "No.13 SAAF Torpedo Attack Group" "No.14 SAAF Torpedo Attack Group" "No.15 SAAF Torpedo Attack Group" 
+		"No.16 SAAF Torpedo Attack Group" "No.17 SAAF Torpedo Attack Group" "No.18 SAAF Torpedo Attack Group" "No.19 SAAF Torpedo Attack Group" "No.20 SAAF Torpedo Attack Group" 
 	}
 	cas = {
-		"南非第1俯冲轰炸机联队" "南非第2俯冲轰炸机联队" "南非第3俯冲轰炸机联队" "南非第4俯冲轰炸机联队" "南非第6俯冲轰炸机联队" "南非第7俯冲轰炸机联队" "南非第8俯冲轰炸机联队" "南非第9俯冲轰炸机联队" "南非第10俯冲轰炸机联队" "南非第11俯冲轰炸机联队" "南非第12俯冲轰炸机联队" 
-		"南非第13俯冲轰炸机联队" "南非第14俯冲轰炸机联队" "南非第15俯冲轰炸机联队" "南非第16俯冲轰炸机联队" "南非第17俯冲轰炸机联队" "南非第18俯冲轰炸机联队" "南非第19俯冲轰炸机联队" "南非第20俯冲轰炸机联队" 
+		"No.1 SAAF Dive Bomb Group" "No.2 SAAF Dive Bomb Group" "No.3 SAAF Dive Bomb Group" "No.4 SAAF Dive Bomb Group" "No.6 SAAF Dive Bomb Group" "No.7 SAAF Dive Bomb Group" "No.8 SAAF Dive Bomb Group" "No.9 SAAF Dive Bomb Group" "No.10 SAAF Dive Bomb Group" "No.11 SAAF Dive Bomb Group" "No.12 SAAF Dive Bomb Group" 
+		"No.13 SAAF Dive Bomb Group" "No.14 SAAF Dive Bomb Group" "No.15 SAAF Dive Bomb Group" "No.16 SAAF Dive Bomb Group" "No.17 SAAF Dive Bomb Group" "No.18 SAAF Dive Bomb Group" "No.19 SAAF Dive Bomb Group" "No.20 SAAF Dive Bomb Group" 
 	}
 	transport_plane = {
-		"南非第1航空运输联队" "南非第2航空运输联队" "南非第3航空运输联队" "南非第4航空运输联队" "南非第5航空运输联队" "南非第7航空运输联队" "南非第8航空运输联队" "南非第9航空运输联队" "南非第10航空运输联队" 
+		"No.1 SAAF Army Transport" "No.2 SAAF Army Transport" "No.3 SAAF Army Transport" "No.4 SAAF Army Transport" "No.5 SAAF Army Transport" "No.7 SAAF Army Transport" "No.8 SAAF Army Transport" "No.9 SAAF Army Transport" "No.10 SAAF Army Transport" 
 	}
 	battleship = {
-		"HMSAS南非" "HMSAS好望角" "HMSAS纳塔尔" "HMSAS德兰士瓦" "HMSAS奥兰治自由邦" "HMSAS开普敦" "HMSAS约翰内斯堡" "HMSAS伊丽萨白港" "HMSAS东伦敦" "HMSAS布隆方丹" "HMSAS德班" 
-		"HMSAS比勒陀利亚" 
+		"HMSAS South Africa" "HMSAS Good Hope" "HMSAS Natal" "HMSAS Transvaal" "HMSAS Orange Free State" "HMSAS Cape Town" "HMSAS Johannesburg" "HMSAS Port Elizabeth" "HMSAS East London" "HMSAS Bloemfontein" "HMSAS Durban" 
+		"HMSAS Pretoria" 
 	}
 	light_cruiser = {
-		"HMSAS好望角" "HMSAS纳塔尔" "HMSAS德兰士瓦" "HMSAS奥兰治自由邦" "HMSAS开普敦" "HMSAS约翰内斯堡" "HMSAS伊丽萨白港" "HMSAS东伦敦" "HMSAS布隆方丹" "HMSAS德班" "HMSAS比勒陀利亚" 
+		"HMSAS Good Hope" "HMSAS Natal" "HMSAS Transvaal" "HMSAS Orange Free State" "HMSAS Cape Town" "HMSAS Johannesburg" "HMSAS Port Elizabeth" "HMSAS East London" "HMSAS Bloemfontein" "HMSAS Durban" "HMSAS Pretoria" 
 			}
 	heavy_cruiser = {
-		"HMSAS好望角" "HMSAS纳塔尔" "HMSAS德兰士瓦" "HMSAS奥兰治自由邦" "HMSAS开普敦" "HMSAS约翰内斯堡" "HMSAS伊丽萨白港" "HMSAS东伦敦" "HMSAS布隆方丹" "HMSAS德班" "HMSAS比勒陀利亚" 
+		"HMSAS Good Hope" "HMSAS Natal" "HMSAS Transvaal" "HMSAS Orange Free State" "HMSAS Cape Town" "HMSAS Johannesburg" "HMSAS Port Elizabeth" "HMSAS East London" "HMSAS Bloemfontein" "HMSAS Durban" "HMSAS Pretoria" 
 			}
 	battlecruiser = {
-		"HMSAS南非" "HMSAS好望角" "HMSAS纳塔尔" "HMSAS德兰士瓦" "HMSAS奥兰治自由邦" "HMSAS开普敦" "HMSAS约翰内斯堡" "HMSAS伊丽萨白港" "HMSAS东伦敦" "HMSAS布隆方丹" "HMSAS德班" 
-		"HMSAS比勒陀利亚" 
+		"HMSAS South Africa" "HMSAS Good Hope" "HMSAS Natal" "HMSAS Transvaal" "HMSAS Orange Free State" "HMSAS Cape Town" "HMSAS Johannesburg" "HMSAS Port Elizabeth" "HMSAS East London" "HMSAS Bloemfontein" "HMSAS Durban" 
+		"HMSAS Pretoria" 
 	}
 	destroyer = {
-		"第1驱逐舰队" "第2驱逐舰队" "第3驱逐舰队" "第4驱逐舰队" "第5驱逐舰队" "第6驱逐舰队" "第7驱逐舰队" "第8驱逐舰队" "第9驱逐舰队" "第10驱逐舰队" "第11驱逐舰队" 
-		"第12驱逐舰队" "第13驱逐舰队" "第14驱逐舰队" "第15驱逐舰队" "第16驱逐舰队" "第17驱逐舰队" "第18驱逐舰队" "第19驱逐舰队" "第20驱逐舰队" 
+		"1st SAN Destroyer Flotilla" "2nd SAN Destroyer Flotilla" "3rd SAN Destroyer Flotilla" "4th SAN Destroyer Flotilla" "5th SAN Destroyer Flotilla" "6th SAN Destroyer Flotilla" "7th SAN Destroyer Flotilla" "8th SAN Destroyer Flotilla" "9th SAN Destroyer Flotilla" "10th SAN Destroyer Flotilla" "11th SAN Destroyer Flotilla" 
+		"12th SAN Destroyer Flotilla" "13th SAN Destroyer Flotilla" "14th SAN Destroyer Flotilla" "15th SAN Destroyer Flotilla" "16th SAN Destroyer Flotilla" "17th SAN Destroyer Flotilla" "18th SAN Destroyer Flotilla" "19th SAN Destroyer Flotilla" "20th SAN Destroyer Flotilla" 
 	}
 	carrier = {
-		"HMSAS南非" "HMSAS好望角" "HMSAS纳塔尔" "HMSAS德兰士瓦" "HMSAS奥兰治自由邦" "HMSAS开普敦" "HMSAS约翰内斯堡" "HMSAS伊丽萨白港" "HMSAS东伦敦" "HMSAS布隆方丹" "HMSAS德班" 
-		"HMSAS比勒陀利亚" 
+		"HMSAS South Africa" "HMSAS Good Hope" "HMSAS Natal" "HMSAS Transvaal" "HMSAS Orange Free State" "HMSAS Cape Town" "HMSAS Johannesburg" "HMSAS Port Elizabeth" "HMSAS East London" "HMSAS Bloemfontein" "HMSAS Durban" 
+		"HMSAS Pretoria" 
 	}
 	escort_carrier = {
-		"HMSAS狮子" "HMSAS猎豹" "HMSAS花豹" "HMSAS薮猫" "HMSAS猞猁" "HMSAS麝猫" "HMSAS胡狼" "HMSAS猫鼬" "HMSAS鬣狗" "HMSAS野狗" 
+		"HMSAS Lion" "HMSAS Cheetah" "HMSAS Leopard" "HMSAS Serval" "HMSAS Caracal" "HMSAS Genet" "HMSAS Jackal" "HMSAS Mongoose" "HMSAS Hyena" "HMSAS Wild Dog" 
 	}
 	submarine = {
-		"第1潜艇编队" "第2潜艇编队" "第3潜艇编队" "第4潜艇编队" "第5潜艇编队" "第6潜艇编队" "第7潜艇编队" "第8潜艇编队" "第9潜艇编队" "第10潜艇编队" "第11潜艇编队" 
-		"第12潜艇编队" "第13潜艇编队" "第14潜艇编队" "第15潜艇编队" 
+		"1st SAN Submarine Flotilla" "2nd SAN Submarine Flotilla" "3rd SAN Submarine Flotilla" "4th SAN Submarine Flotilla" "5th SAN Submarine Flotilla" "6th SAN Submarine Flotilla" "7th SAN Submarine Flotilla" "8th SAN Submarine Flotilla" "9th SAN Submarine Flotilla" "10th SAN Submarine Flotilla" "11th SAN Submarine Flotilla" 
+		"12th SAN Submarine Flotilla" "13th SAN Submarine Flotilla" "14th SAN Submarine Flotilla" "15th SAN Submarine Flotilla" 
 	}
 	transport_ship = {
-		"第1运输编队" "第2运输编队" "第3运输编队" "第4运输编队" "第5运输编队" "第6运输编队" "第7运输编队" "第8运输编队" "第9运输编队" "第10运输编队" "第11运输编队" 
-		"第12运输编队" "第13运输编队" "第14运输编队" "第15运输编队" 
+		"1st SAN Transport Flotilla" "2nd SAN Transport Flotilla" "3rd SAN Transport Flotilla" "4th SAN Transport Flotilla" "5th SAN Transport Flotilla" "6th SAN Transport Flotilla" "7th SAN Transport Flotilla" "8th SAN Transport Flotilla" "9th SAN Transport Flotilla" "10th SAN Transport Flotilla" "11th SAN Transport Flotilla" 
+		"12th SAN Transport Flotilla" "13th SAN Transport Flotilla" "14th SAN Transport Flotilla" "15th SAN Transport Flotilla" 
 	}
 
 }
@@ -144,16 +175,15 @@ unit_names = {
 
 ministers = {
 	70001 = {
-		name = "G.H.H.维来尔斯·克拉伦登勋爵"
+		name = "G.H.H. Villiers Lord Clarendon"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70001
 		head_of_state = stern_imperialist
-		head_of_state = stern_imperialist
 		start_date = 1936.1.1
 	}
 	70002 = {
-		name = "詹姆斯·赫尔佐格"
+		name = "James Hertzog"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70002
@@ -163,7 +193,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	70004 = {
-		name = "尼科拉斯·哈凡嘉"
+		name = "Nicolaas Havenga"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70004
@@ -172,7 +202,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	70005 = {
-		name = "扬·克里斯蒂安·史末资"
+		name = "Jan C. Smuts"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70005
@@ -186,7 +216,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	70007 = {
-		name = "皮埃尔·范·赖尼维尔德"
+		name = "Pierre van Ryneveld"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70007
@@ -197,43 +227,40 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	70009 = {
-		name = "皮埃尔·奥利弗-诺尔"
+		name = "Pierre Oliver-Knoll"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70009
-		chief_of_navy = open_seas_doctrine
+		chief_of_navy = decisive_naval_battle_doctrine
 		armament_minister = battle_fleet_proponent
 		start_date = 1936.1.1
 	}
 	70023 = {
-		name = "帕德里克·邓肯爵士"
+		name = "Sir Patrick Duncan"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70023
 		head_of_state = autocratic_charmer
-		head_of_state = autocratic_charmer
 		start_date = 1937.1.1
 	}
 	70025 = {
-		name = "尼古拉斯·扬·德伟"
+		name = "Nicolaas J. de Wet"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M70025
 		head_of_state = insignificant_layman
-		head_of_state = insignificant_layman
 		start_date = 1943.1.1
 	}
 	70027 = {
-		name = "吉迪恩·布·范·兹"
+		name = "Gideon B. van Zyl"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70027
 		head_of_state = pig_headed_isolationist
-		head_of_state = pig_headed_isolationist
 		start_date = 1947.1.1
 	}
 	70029 = {
-		name = "D.F.马伦"
+		name = "D. F. Malan"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M70029
@@ -243,7 +270,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	70031 = {
-		name = "戈特·克龙涅"
+		name = "Gert Cronje"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M70031
@@ -251,7 +278,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	70032 = {
-		name = "埃里克·赫·卢"
+		name = "Eric H. Louw"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M70032
@@ -259,7 +286,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	70033 = {
-		name = "雷金纳德·布兰肯贝格"
+		name = "Reginald Blankenberg"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M70033
@@ -267,7 +294,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	70034 = {
-		name = "格雷厄姆·博萨"
+		name = "Graham Botha"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70034
@@ -275,18 +302,17 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	70036 = {
-		name = "E.G.詹森 "
+		name = "E.G. Jansen"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70036
 		foreign_minister = great_compromiser
 		minister_of_security = silent_lawyer
 		head_of_state = autocratic_charmer
-		head_of_state = autocratic_charmer
 		start_date = 1941.1.1
 	}
 	70038 = {
-		name = "L.J.杜·普莱西斯"
+		name = "L. J. du Plessis"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M70013
@@ -294,7 +320,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	70040 = {
-		name = "C.德·韦恩巴格·杜·托伊特"
+		name = "C. de Weenburg du Toit"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M70015
@@ -305,7 +331,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	70041 = {
-		name = "约翰内斯·格哈杜斯·斯特赖敦"
+		name = "J. G. Strijdom"
 		ideology = paternal_autocrat
 		loyalty = 1.00
 		picture = M70041
@@ -315,7 +341,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	70043 = {
-		name = "S.P.莱·鲁"
+		name = "S.P. Le Roux"
 		ideology = market_liberal
 		loyalty = 0.50
 		picture = M70043
@@ -324,7 +350,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	70045 = {
-		name = "H.J.范·德尔·拜尔"
+		name = "H. J. van der Byl"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70045
@@ -332,7 +358,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	70046 = {
-		name = "W.E.马德莱"
+		name = "W. E. Madeley"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70046
@@ -340,7 +366,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	70047 = {
-		name = "阿道夫·马伦"
+		name = "Adolf Malan"
 		ideology = market_liberal
 		loyalty = 0.50
 		picture = M70047
@@ -349,7 +375,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	70048 = {
-		name = "查尔斯·托·特·沃特"
+		name = "Charles T. te Water"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70048
@@ -357,7 +383,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	70049 = {
-		name = "奥斯瓦德·彼若"
+		name = "Oswald Pirow"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M70014
@@ -365,7 +391,7 @@ ministers = {
 		start_date = 1941.1.1
 	}
 	70050 = {
-		name = "科内利斯·范·泽根伯格"
+		name = "Cornelis van Zuigenbrogge"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M70050
@@ -374,7 +400,7 @@ ministers = {
 		start_date = 1942.1.1
 	}
 	70052 = {
-		name = "P.O.萨奥尔"
+		name = "P.O. Sauer"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M70052
@@ -382,7 +408,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	70053 = {
-		name = "马里努斯·范·欧斯特康"
+		name = "Marinus van Osterkamp"
 		ideology = social_conservative
 		loyalty = 0.50
 		picture = M70053
@@ -391,7 +417,7 @@ ministers = {
 		start_date = 1945.1.1
 	}
 	70055 = {
-		name = "亨德里克·弗·费武尔德"
+		name = "Hendrik F. Verwoerd"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M70055
@@ -400,7 +426,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	70056 = {
-		name = "N.J.范·德尔·梅尔维"
+		name = "N. J. van der Merwe"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M70056
@@ -408,18 +434,17 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	70057 = {
-		name = "查尔斯·罗伯特斯·斯瓦特"
+		name = "C. R. Swart"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M70057
 		minister_of_security = silent_lawyer
 		minister_of_intelligence = dismal_enigma
 		head_of_state = pig_headed_isolationist
-		head_of_state = pig_headed_isolationist
 		start_date = 1937.1.1
 	}
 	70058 = {
-		name = "C.F.斯托拉德"
+		name = "C. F. Stallard"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70058
@@ -427,7 +452,7 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	70059 = {
-		name = "特奥菲卢斯·爱本黑泽·顿格斯"
+		name = "T.E. D鰊ges"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M70059
@@ -435,17 +460,16 @@ ministers = {
 		start_date = 1938.1.1
 	}
 	70063 = {
-		name = "F.C.伊拉斯谟"
+		name = "F.C. Erasmus"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M70063
 		minister_of_security = efficient_sociopath
-		armament_minister = submarine_proponent
 		armament_minister = laissez_faires_capitalist
 		start_date = 1941.1.1
 	}
 	70065 = {
-		name = "B.J.斯库曼"
+		name = "B.J. Schoeman"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M70065
@@ -453,7 +477,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	70066 = {
-		name = "让诺·德·拉·图尼尔"
+		name = "Jeannot de la Tourier"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M70066
@@ -462,7 +486,7 @@ ministers = {
 		start_date = 1939.1.1
 	}
 	70067 = {
-		name = "西莫·杰克林"
+		name = "Seymour Jacklin"
 		ideology = paternal_autocrat
 		loyalty = 0.75
 		picture = M70016
@@ -470,7 +494,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	70068 = {
-		name = "埃里克·鲁"
+		name = "Eric Louw"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M70032
@@ -478,7 +502,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	70071 = {
-		name = "詹姆斯·米歇尔-贝克"
+		name = "James Mitchell-Baker"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M70071
@@ -487,7 +511,7 @@ ministers = {
 		start_date = 1937.1.1
 	}
 	70072 = {
-		name = "伦纳德·拜尔"
+		name = "Leonard Beyers"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M70072
@@ -496,7 +520,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	70075 = {
-		name = "罗伯特·帕尔默"
+		name = "Robert Palmer"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M70075
@@ -504,17 +528,16 @@ ministers = {
 		start_date = 1944.1.1
 	}
 	70076 = {
-		name = "乔舒亚·弗朗西斯·诺德"
+		name = "Jozua F. Naude"
 		ideology = social_conservative
 		loyalty = 1.00
 		picture = M70076
 		chief_of_army = guns_and_butter_doctrine
-		minister_of_security = compassionate_gentleman
 		minister_of_security = man_of_the_people
 		start_date = 1936.1.1
 	}
 	70081 = {
-		name = "弗兰索瓦·塞隆"
+		name = "Francois Theron"
 		ideology = social_conservative
 		loyalty = 0.75
 		picture = M70081
@@ -522,7 +545,7 @@ ministers = {
 		start_date = 1946.1.1
 	}
 	70084 = {
-		name = "克里斯多夫·文特"
+		name = "Christoffel Venter"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70084
@@ -530,7 +553,7 @@ ministers = {
 		start_date = 1940.1.1
 	}
 	70011 = {
-		name = "J.F.范·伦斯堡"
+		name = "J. F. van Rensburg"
 		ideology = fascistic
 		loyalty = 1.00
 		picture = M70011
@@ -539,7 +562,7 @@ ministers = {
 		start_date = 1936.1.1
 	}
 	70092 = {
-		name = "H.G.劳伦斯"
+		name = "H.G. Lawrence"
 		ideology = market_liberal
 		loyalty = 1.00
 		picture = M70092
@@ -547,7 +570,7 @@ ministers = {
 		start_date = 1943.1.1
 	}
 	70097 = {
-		name = "德·维来尔斯·格拉夫男爵"
+		name = "Baron de Villiers Graaf"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M70097
@@ -555,7 +578,7 @@ ministers = {
 		start_date = 1950.1.1
 	}
 	70098 = {
-		name = "雅各布·德·比尔"
+		name = "Jacobus de Beer"
 		ideology = social_liberal
 		loyalty = 1.00
 		picture = M70098
@@ -563,7 +586,7 @@ ministers = {
 		start_date = 1950.1.1
 	}
 	70100 = {
-		name = "雅各布斯·约翰尼斯·福歇"
+		name = "Johannes J. Fouche"
 		ideology = social_conservative
 		loyalty = 0.50
 		picture = M70100
@@ -571,11 +594,149 @@ ministers = {
 		start_date = 1959.1.1
 	}
 	70102 = {
-		name = " 约翰尼斯·德·克勒克"
+		name = "Johannes de Klerk"
 		ideology = social_conservative
 		loyalty = 0.50
 		picture = M70102
 		minister_of_security = silent_lawyer
 		start_date = 1961.1.1
 	}
+	# Generic dummy ministers
+	95898 = {
+		name = "Nameless Clerk"
+		ideology = national_socialist
+		loyalty = 1.0
+		picture = MNationalSocialist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	965899 = {
+		name = "Nameless Clerk"
+		ideology = fascistic
+		loyalty = 1.0
+		picture = MFascistic
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95900 = {
+		name = "Nameless Clerk"
+		ideology = paternal_autocrat
+		loyalty = 1.0
+		picture = MPaternalAutocrat
+		head_of_state = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95901 = {
+		name = "Nameless Clerk"
+		ideology = social_conservative
+		loyalty = 1.0
+		picture = MSocialConservative
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95902 = {
+		name = "Nameless Clerk"
+		ideology = social_liberal
+		loyalty = 1.0
+		picture = MSocialLiberal
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95903 = {
+		name = "Nameless Clerk"
+		ideology = social_democrat
+		loyalty = 1.0
+		picture = MSocialDemocrat
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95904 = {
+		name = "Nameless Clerk"
+		ideology = left_wing_radical
+		loyalty = 1.0
+		picture = MLeftWingRadical
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95905 = {
+		name = "Nameless Clerk"
+		ideology = leninist
+		loyalty = 1.0
+		picture = MLeninist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	95906 = {
+		name = "Nameless Clerk"
+		ideology = stalinist
+		loyalty = 1.0
+		picture = MStalinist
+		head_of_state = mostly_harmless
+		head_of_government = mostly_harmless
+		foreign_minister = mostly_harmless
+		armament_minister = mostly_harmless_armament
+		minister_of_security = mostly_harmless
+		minister_of_intelligence = mostly_harmless
+		chief_of_staff = mostly_harmless
+		chief_of_army = mostly_harmless
+		chief_of_navy = mostly_harmless_naval
+		chief_of_air = mostly_harmless	
+		start_date = 1936.1.1
+	}
+	
 }

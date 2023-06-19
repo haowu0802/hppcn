@@ -1,3 +1,42 @@
-
-
-
+theatre = {
+	name = "Ushtria Shqipëtarë"
+	location = 4663
+	regiment = { type = hq_brigade name = "Tirane HQ" historical_model = 0 }
+	division= {
+		name = "I Këmbësori Pjesëtim"
+		location = 4663
+		is_reserve = yes
+		regiment = { type = infantry_brigade name = "1. Këmbsorisë Brigadë" experience = 5 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "2. Këmbsorisë Brigadë" experience = 5 historical_model = 3 }
+		regiment = { type = infantry_brigade name = "3. Këmbsorisë Brigadë" experience = 5 historical_model = 3 }
+		regiment = { type = super_heavy_armor_brigade name = "Skuadriljë e Automjesh dhë Tankesh" experience = 2.5 historical_model = 0 }
+	}
+}
+convoy_construction=
+{
+	country = ALB
+	id=
+	{
+		id=15110
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}
+convoy_construction=
+{
+	country = ALB
+	id=
+	{
+		id=15111
+		type=4713
+	}
+	size=1
+	cost=0.000 #you can put any number here and the engine will use it
+	progress=90.000
+	duration=0.000 #you can put any number here and the engine will use it
+	status=no #No means you get a convoy.  Yes means you get an escort
+}

@@ -1,112 +1,76 @@
-corps = {
-	name = "云南警备"
+theatre = {
+	name = "Yunnan Zuigao Tongshuai Bu"
 	location = 7561
-	regiment = { type = hq_brigade name = "云南警备司令部" historical_model = 0 }
-	division= {
-		name = "第21独立旅"
+	regiment = { type = hq_brigade name = "Kunming HQ" historical_model = 0 }
+	corps = {
+		name = "1. Yunnan Juntu醤"
 		location = 7561
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "1. Yunnan Juntu醤 HQ" historical_model = 0 }
+		division = {
+			name = "1. Guizhou Baoantui Shi"
+			location = 7561
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "1. M韓bing Tu醤" experience = 0 historical_model = 0 }
+			regiment = { type = militia_brigade name = "2. M韓bing Tu醤" experience = 0 historical_model = 0 }
+		}
+		division = {
+			name = "2. Guizhou Baoantui Shi"
+			location = 7561
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "3. M韓bing Tu醤" experience = 0 historical_model = 0 }
+			regiment = { type = militia_brigade name = "4. M韓bing Tu醤" experience = 0 historical_model = 0 }
+		}
 	}
-	division= {
-		name = "第22独立旅"
+	corps = {
+		name = "2. Yunnan Juntu醤"
 		location = 7561
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division= {
-		name = "第23独立旅"
+		regiment = { type = hq_brigade name = "2. Yunnan Juntu醤 HQ" historical_model = 0 }
+		division= {
+			name = "1. Bubing Shi"
+			location = 7561
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "5. M韓bing Tu醤" experience = 0 historical_model = 0 }
+			regiment = { type = militia_brigade name = "6. M韓bing Tu醤" experience = 0 historical_model = 0 }
+		}
+		division= {
+			name = "2. Bubing Shi"
+			location = 7561
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "7. M韓bing Tu醤" experience = 0 historical_model = 0 }
+			regiment = { type = militia_brigade name = "8. M韓bing Tu醤" experience = 0 historical_model = 0 }
+		}
+		division= {
+			name = "3. Bubing Shi"
+			location = 7561
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "9. M韓bing Tu醤" experience = 0 historical_model = 0 }
+			regiment = { type = militia_brigade name = "10. M韓bing Tu醤" experience = 0 historical_model = 0 }
+		}		
+	}	
+	corps = {
+		name = "3. Yunnan Juntu醤"
 		location = 7561
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
+		regiment = { type = hq_brigade name = "3. Yunnan Juntu醤 HQ" historical_model = 0 }
+		division= {
+			name = "4. Bubing Shi"
+			location = 7561
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "11. M韓bing Tu醤" experience = 0 historical_model = 0 }
+			regiment = { type = militia_brigade name = "12. M韓bing Tu醤" experience = 0 historical_model = 0 }
+		}
+		division= {
+			name = "5. Bubing Shi"
+			location = 7561
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "13. M韓bing Tu醤" experience = 0 historical_model = 0 }
+			regiment = { type = militia_brigade name = "14. M韓bing Tu醤" experience = 0 historical_model = 0 }
+		}
+		division= {
+			name = "6. Bubing Shi"
+			location = 7561
+			is_reserve = yes
+			regiment = { type = militia_brigade name = "15. M韓bing Tu醤" experience = 0 historical_model = 0 }
+			regiment = { type = militia_brigade name = "16. M韓bing Tu醤" experience = 0 historical_model = 0 }
+		}
 	}
-}
-corps = {
-	name = "第24军"
-	location = 9322
-	regiment = { type = hq_brigade name = "第24军司令部" historical_model = 0 }
-	division= {
-		name = "第136步兵师"
-		location = 9322
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-	division= {
-		name = "第137步兵师"
-		location = 9322
-		regiment = { type = infantry_brigade historical_model = 0 }
-		regiment = { type = infantry_brigade historical_model = 0 }
-	}
-}
-division = {
-	name = "四川保安队"
-	location = 9548
-	regiment = { type = militia_brigade historical_model = 0 }
-	regiment = { type = militia_brigade historical_model = 0 }
-}
-division = {
-	name = "第47军"
-	location = 9548
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第21军"
-	location = 9548
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第23军"
-	location = 5816
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第44军"
-	location = 5816
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第45军"
-	location = 5816
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第7军团"
-	location = 5880
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第4军"
-	location = 5880
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第5军"
-	location = 5880
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "第20军"
-	location = 7561
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "贵州司令部"
-	location = 7561
-	regiment = { type = infantry_brigade historical_model = 0 }
-	regiment = { type = infantry_brigade historical_model = 0 }
-}
-division = {
-	name = "贵州保安队"
-	location = 7561
-	regiment = { type = militia_brigade historical_model = 0 }
-	regiment = { type = militia_brigade historical_model = 0 }
 }
